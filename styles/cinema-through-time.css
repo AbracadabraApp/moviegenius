@@ -1,0 +1,107 @@
+/* Cinema Through Time Parallax Component Styles */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+#cinema-container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#cinema-container .era-content {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+#cinema-container .film-item {
+  animation: fadeInUp 0.6s ease-out;
+  animation-fill-mode: both;
+}
+
+#cinema-container .film-item:nth-child(1) { animation-delay: 0.1s; }
+#cinema-container .film-item:nth-child(2) { animation-delay: 0.2s; }
+#cinema-container .film-item:nth-child(3) { animation-delay: 0.3s; }
+
+#cinema-container .progress-dot {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+#cinema-container .progress-dot:hover {
+  transform: scale(1.2);
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  #cinema-container {
+    padding: 0 16px;
+  }
+  
+  #cinema-container .era-title {
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+  
+  #cinema-container .era-years {
+    font-size: 1.2rem;
+  }
+  
+  #cinema-container .era-description {
+    font-size: 1rem;
+  }
+  
+  #cinema-container .film-list-title {
+    font-size: 1.3rem;
+  }
+  
+  #cinema-container .film-item {
+    font-size: 0.95rem;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  #cinema-container .background {
+    background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  #cinema-container .background {
+    transform: none !important;
+  }
+  
+  #cinema-container .era-content,
+  #cinema-container .film-item {
+    animation: none;
+  }
+  
+  #cinema-container .progress-dot {
+    transition: background-color 0.3s ease;
+  }
+}
+
+/* Focus states for accessibility */
+#cinema-container .progress-dot:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}

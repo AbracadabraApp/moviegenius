@@ -1,0 +1,64 @@
+{
+  "timestamp": "2025-06-08T01:48:17.355Z",
+  "summary": {},
+  "movieCoverage": {
+    "totalMovies": 2612,
+    "moviesWithAnalysis": 231,
+    "moviesWithoutAnalysis": 2381,
+    "analysisPercentage": "8.8",
+    "moviesWithSlugs": 2612,
+    "moviesMissingSlugs": 0,
+    "slugPercentage": "100.0",
+    "moviesWithTmdbIds": 2556,
+    "tmdbPercentage": "97.9",
+    "averageWordCount": 313
+  },
+  "entityCoverage": {
+    "personDatabaseSize": 11,
+    "entitiesDiscoveredInAnalyses": 53,
+    "moviesDiscovered": 6,
+    "peopleDiscovered": 47,
+    "averageStructuralScore": 78,
+    "sectionCompleteness": {
+      "PLOT & THEMES": "100.0%",
+      "CAST & CREW": "100.0%",
+      "FILM ANALYSIS": "100.0%",
+      "CONTEXT & CONNECTIONS": "71.4%",
+      "PERSONNEL CONNECTIONS": "0.0%",
+      "LEGACY & REFERENCES": "57.1%"
+    },
+    "entityLinkingConfigured": true,
+    "confidenceThresholds": {
+      "people": "unknown",
+      "movies": "unknown"
+    }
+  },
+  "databaseMetrics": {
+    "movieListsCount": 224,
+    "listAnalysesCount": 21,
+    "listAnalysisPercentage": "9.4"
+  },
+  "recommendations": [
+    {
+      "priority": "HIGH",
+      "category": "Content Coverage",
+      "issue": "Only 8.8% of movies have analysis",
+      "action": "Generate analysis for 2381 movies",
+      "estimatedCost": "$47.62",
+      "impact": "Critical for content discovery and entity linking"
+    },
+    {
+      "priority": "HIGH",
+      "category": "Entity Linking",
+      "issue": "Person database has only 11 records",
+      "action": "Populate person database from existing analyses",
+      "estimatedCost": "$0.50",
+      "impact": "Unlocks entity linking functionality"
+    }
+  ],
+  "batchStatus": {
+    "lastPopulationRun": "Unknown",
+    "estimatedCostForFullCoverage": "47.62",
+    "estimatedCostForMissingSlugs": "0.00"
+  }
+}

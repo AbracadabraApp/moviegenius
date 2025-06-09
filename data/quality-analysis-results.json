@@ -1,0 +1,280 @@
+{
+  "totalAnalyses": 7,
+  "averageWordCount": 528.2857142857143,
+  "averageCharCount": 3722.1428571428573,
+  "structuralScores": [
+    0.8777777777777778,
+    0.8444444444444444,
+    0.8444444444444444,
+    0.6666666666666666,
+    0.6611111111111111,
+    0.8777777777777778,
+    0.6833333333333332
+  ],
+  "totalMoviesFound": 6,
+  "totalPeopleFound": 47,
+  "totalYearsFound": 13,
+  "sectionCompleteness": {
+    "PLOT & THEMES": "100.0%",
+    "CAST & CREW": "100.0%",
+    "FILM ANALYSIS": "100.0%",
+    "CONTEXT & CONNECTIONS": "71.4%",
+    "PERSONNEL CONNECTIONS": "0.0%",
+    "LEGACY & REFERENCES": "57.1%"
+  },
+  "qualityByMovie": [
+    {
+      "movie": "Apocalypse Now (1979)",
+      "wordCount": 483,
+      "structuralScore": 0.6833333333333332,
+      "sectionsFound": 3,
+      "moviesDiscovered": 1,
+      "peopleDiscovered": 9,
+      "topMovieReferences": [
+        {
+          "title": "Here's a comprehensive analysis of Apocalypse Now",
+          "year": 1979,
+          "pattern": "title_with_year",
+          "confidence": "medium"
+        }
+      ],
+      "topPeopleReferences": [
+        {
+          "name": "establishing himself",
+          "role": "actor",
+          "pattern": "([A-Z][a-z]+ [A-Z][a-z]+) as ",
+          "confidence": "high"
+        },
+        {
+          "name": "River journey",
+          "role": "actor",
+          "pattern": "([A-Z][a-z]+ [A-Z][a-z]+) as ",
+          "confidence": "high"
+        },
+        {
+          "name": "Martin Sheen",
+          "role": "actor",
+          "pattern": "([A-Z][a-z]+ [A-Z][a-z]+) as ",
+          "confidence": "high"
+        }
+      ],
+      "hasAllSections": false
+    },
+    {
+      "movie": "Vertigo (1958)",
+      "wordCount": 554,
+      "structuralScore": 0.8444444444444444,
+      "sectionsFound": 5,
+      "moviesDiscovered": 1,
+      "peopleDiscovered": 8,
+      "topMovieReferences": [
+        {
+          "title": "VERTIGO",
+          "year": 1958,
+          "pattern": "title_with_year",
+          "confidence": "medium"
+        }
+      ],
+      "topPeopleReferences": [
+        {
+          "name": "impersonate Madeleine",
+          "role": "actor",
+          "pattern": "([A-Z][a-z]+ [A-Z][a-z]+) as ",
+          "confidence": "high"
+        },
+        {
+          "name": "James Stewart",
+          "role": "actor",
+          "pattern": "([A-Z][a-z]+ [A-Z][a-z]+) as ",
+          "confidence": "high"
+        },
+        {
+          "name": "Kim Novak",
+          "role": "actor",
+          "pattern": "([A-Z][a-z]+ [A-Z][a-z]+) as ",
+          "confidence": "high"
+        }
+      ],
+      "hasAllSections": false
+    },
+    {
+      "movie": "The Godfather (1972)",
+      "wordCount": 529,
+      "structuralScore": 0.6666666666666666,
+      "sectionsFound": 3,
+      "moviesDiscovered": 1,
+      "peopleDiscovered": 8,
+      "topMovieReferences": [
+        {
+          "title": "Here's a comprehensive analysis of The Godfather",
+          "year": 1972,
+          "pattern": "title_with_year",
+          "confidence": "medium"
+        }
+      ],
+      "topPeopleReferences": [
+        {
+          "name": "and dining",
+          "role": "actor",
+          "pattern": "([A-Z][a-z]+ [A-Z][a-z]+) as ",
+          "confidence": "high"
+        },
+        {
+          "name": "Baptism sequence",
+          "role": "actor",
+          "pattern": "([A-Z][a-z]+ [A-Z][a-z]+) as ",
+          "confidence": "high"
+        },
+        {
+          "name": "Marlon Brando",
+          "role": "actor",
+          "pattern": "([A-Z][a-z]+ [A-Z][a-z]+) as ",
+          "confidence": "high"
+        }
+      ],
+      "hasAllSections": false
+    },
+    {
+      "movie": "Citizen Kane (1941)",
+      "wordCount": 578,
+      "structuralScore": 0.8777777777777778,
+      "sectionsFound": 5,
+      "moviesDiscovered": 1,
+      "peopleDiscovered": 7,
+      "topMovieReferences": [
+        {
+          "title": "Here's a comprehensive analysis of Citizen Kane",
+          "year": 1941,
+          "pattern": "title_with_year",
+          "confidence": "medium"
+        }
+      ],
+      "topPeopleReferences": [
+        {
+          "name": "Orson Welles",
+          "role": "actor",
+          "pattern": "([A-Z][a-z]+ [A-Z][a-z]+) as ",
+          "confidence": "high"
+        },
+        {
+          "name": "Joseph Cotten",
+          "role": "actor",
+          "pattern": "([A-Z][a-z]+ [A-Z][a-z]+) as ",
+          "confidence": "high"
+        },
+        {
+          "name": "Dorothy Comingore",
+          "role": "actor",
+          "pattern": "([A-Z][a-z]+ [A-Z][a-z]+) as ",
+          "confidence": "high"
+        }
+      ],
+      "hasAllSections": false
+    },
+    {
+      "movie": "Pulp Fiction (1994)",
+      "wordCount": 517,
+      "structuralScore": 0.8777777777777778,
+      "sectionsFound": 5,
+      "moviesDiscovered": 1,
+      "peopleDiscovered": 7,
+      "topMovieReferences": [
+        {
+          "title": "PULP FICTION",
+          "year": 1994,
+          "pattern": "title_with_year",
+          "confidence": "medium"
+        }
+      ],
+      "topPeopleReferences": [
+        {
+          "name": "John Travolta",
+          "role": "actor",
+          "pattern": "([A-Z][a-z]+ [A-Z][a-z]+) as ",
+          "confidence": "high"
+        },
+        {
+          "name": "Uma Thurman",
+          "role": "actor",
+          "pattern": "([A-Z][a-z]+ [A-Z][a-z]+) as ",
+          "confidence": "high"
+        },
+        {
+          "name": "Bruce Willis",
+          "role": "actor",
+          "pattern": "([A-Z][a-z]+ [A-Z][a-z]+) as ",
+          "confidence": "high"
+        }
+      ],
+      "hasAllSections": false
+    },
+    {
+      "movie": "2001: A Space Odyssey (1968)",
+      "wordCount": 511,
+      "structuralScore": 0.8444444444444444,
+      "sectionsFound": 5,
+      "moviesDiscovered": 1,
+      "peopleDiscovered": 4,
+      "topMovieReferences": [
+        {
+          "title": "A Space Odyssey",
+          "year": 1968,
+          "pattern": "title_with_year",
+          "confidence": "medium"
+        }
+      ],
+      "topPeopleReferences": [
+        {
+          "name": "Keir Dullea",
+          "role": "actor",
+          "pattern": "([A-Z][a-z]+ [A-Z][a-z]+) as ",
+          "confidence": "high"
+        },
+        {
+          "name": "Gary Lockwood",
+          "role": "actor",
+          "pattern": "([A-Z][a-z]+ [A-Z][a-z]+) as ",
+          "confidence": "high"
+        },
+        {
+          "name": "William Sylvester",
+          "role": "actor",
+          "pattern": "([A-Z][a-z]+ [A-Z][a-z]+) as ",
+          "confidence": "high"
+        }
+      ],
+      "hasAllSections": false
+    },
+    {
+      "movie": "8½ (1963)",
+      "wordCount": 526,
+      "structuralScore": 0.6611111111111111,
+      "sectionsFound": 4,
+      "moviesDiscovered": 0,
+      "peopleDiscovered": 4,
+      "topMovieReferences": [],
+      "topPeopleReferences": [
+        {
+          "name": "Marcello Mastroianni",
+          "role": "actor",
+          "pattern": "([A-Z][a-z]+ [A-Z][a-z]+) as ",
+          "confidence": "high"
+        },
+        {
+          "name": "Sandra Milo",
+          "role": "actor",
+          "pattern": "([A-Z][a-z]+ [A-Z][a-z]+) as ",
+          "confidence": "high"
+        },
+        {
+          "name": "Claudia Cardinale",
+          "role": "actor",
+          "pattern": "([A-Z][a-z]+ [A-Z][a-z]+) as ",
+          "confidence": "high"
+        }
+      ],
+      "hasAllSections": false
+    }
+  ],
+  "averageStructuralScore": 0.7793650793650794
+}

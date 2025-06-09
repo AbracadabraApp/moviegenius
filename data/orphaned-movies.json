@@ -1,0 +1,98 @@
+[
+  {
+    "movie": {
+      "title": "12 Angry Men",
+      "year": 1957,
+      "slug": "Jury room drama",
+      "streaming": "Amazon Prime",
+      "poster": "https://image.tmdb.org/t/p/w500/ow3wq89wM8qd5X7hWKxiRfsFf9C.jpg",
+      "id": "12-angry-men-1957",
+      "discoveredAt": "2025-05-28T07:04:48.985Z",
+      "tmdbId": 389,
+      "officialTitle": "12 Angry Men",
+      "releaseDate": "1957-04-10"
+    },
+    "reason": "TMDB ID already used",
+    "conflictingTMDBId": 389
+  },
+  {
+    "movie": {
+      "title": "A Star Is Born",
+      "year": 1954,
+      "slug": "Musical drama about fame and addiction",
+      "streaming": "HBO Max",
+      "poster": "https://image.tmdb.org/t/p/w500/zpg2SzpYhZk1D1seDfIIlwaqAxT.jpg",
+      "id": "a-star-is-born-1954",
+      "discoveredAt": "2025-05-28T06:46:02.728Z",
+      "tmdbId": 3111,
+      "officialTitle": "A Star Is Born",
+      "releaseDate": "1954-10-01"
+    },
+    "reason": "TMDB ID already used",
+    "conflictingTMDBId": 3111
+  },
+  {
+    "movie": {
+      "title": "Life of Brian",
+      "year": 1979,
+      "slug": "Religious satire about a man mistaken for the Messiah",
+      "streaming": "Amazon Prime",
+      "poster": "https://image.tmdb.org/t/p/w500/lSSA64WF0M0BXnjwr2quMh6shCl.jpg",
+      "id": "life-of-brian-1979",
+      "discoveredAt": "2025-05-29T21:13:35.641Z",
+      "tmdbId": 583,
+      "officialTitle": "Life of Brian",
+      "releaseDate": "1979-08-17"
+    },
+    "reason": "TMDB ID already used",
+    "conflictingTMDBId": 583
+  },
+  {
+    "movie": {
+      "title": "Once Upon a Time in America",
+      "year": 1984,
+      "slug": "Epic spanning decades of Jewish gangsters in New York",
+      "streaming": "Prime Video",
+      "poster": "https://image.tmdb.org/t/p/w500/i0enkzsL5dPeneWnjl1fCWm6L7k.jpg",
+      "id": "once-upon-a-time-in-america-1984",
+      "discoveredAt": "2025-05-30T05:33:11.947Z",
+      "tmdbId": 311,
+      "officialTitle": "Once Upon a Time in America",
+      "releaseDate": "1984-05-23"
+    },
+    "reason": "TMDB ID already used",
+    "conflictingTMDBId": 311
+  },
+  {
+    "movie": {
+      "title": "Tree of Life",
+      "year": 2011,
+      "slug": "Experimental drama with floating camera work",
+      "streaming": "Hulu",
+      "poster": "https://image.tmdb.org/t/p/w500/l8cwuB5WJSoj4uMAsnzuHBOMaSJ.jpg",
+      "id": "tree-of-life-2011",
+      "discoveredAt": "2025-05-31T04:57:30.601Z",
+      "tmdbId": 8967,
+      "officialTitle": "The Tree of Life",
+      "releaseDate": "2011-05-17"
+    },
+    "reason": "TMDB ID already used",
+    "conflictingTMDBId": 8967
+  },
+  {
+    "movie": {
+      "title": "Youth of the Beast",
+      "year": 1963,
+      "slug": "Double agent infiltrates gangs",
+      "streaming": "Criterion",
+      "poster": "https://image.tmdb.org/t/p/w500/dWHa0JT3Syj6WbiwpXBbZMHoKEv.jpg",
+      "id": "youth-of-the-beast-1963",
+      "discoveredAt": "2025-05-29T00:42:21.968Z",
+      "tmdbId": 37939,
+      "officialTitle": "Youth of the Beast",
+      "releaseDate": "1963-04-21"
+    },
+    "reason": "TMDB ID already used",
+    "conflictingTMDBId": 37939
+  }
+]

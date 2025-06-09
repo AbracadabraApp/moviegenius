@@ -1,0 +1,211 @@
+[
+  {
+    "slug": "christopher-nolan",
+    "name": "Christopher Nolan",
+    "category": "director",
+    "subCategories": ["screenwriter", "producer"],
+    "birthYear": 1970,
+    "nationality": "British-American",
+    "knownFor": [
+      "Inception",
+      "The Dark Knight",
+      "Interstellar",
+      "Dunkirk",
+      "Tenet",
+      "Oppenheimer"
+    ],
+    "tmdbId": 525,
+    "imdbId": "nm0634240",
+    "bio": "Christopher Nolan is a British-American filmmaker known for his complex narratives and innovative visual techniques. His films often explore themes of time, memory, and identity.",
+    "avatar": "/people/christopher-nolan.jpg",
+    "createdAt": "2025-01-01T00:00:00.000Z",
+    "updatedAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "slug": "meryl-streep", 
+    "name": "Meryl Streep",
+    "category": "actor",
+    "subCategories": ["producer"],
+    "birthYear": 1949,
+    "nationality": "American",
+    "knownFor": [
+      "The Devil Wears Prada",
+      "Sophie's Choice", 
+      "Kramer vs. Kramer",
+      "The Iron Lady",
+      "Doubt",
+      "Julie & Julia"
+    ],
+    "tmdbId": 5064,
+    "imdbId": "nm0000658",
+    "bio": "Meryl Streep is an American actress often regarded as one of the greatest actresses of all time. She has received numerous accolades and holds the record for most Academy Award nominations.",
+    "avatar": "/people/meryl-streep.jpg",
+    "createdAt": "2025-01-01T00:00:00.000Z",
+    "updatedAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "slug": "martin-scorsese",
+    "name": "Martin Scorsese",
+    "category": "director",
+    "subCategories": ["producer", "screenwriter"],
+    "birthYear": 1942,
+    "nationality": "American",
+    "knownFor": [
+      "Goodfellas",
+      "Taxi Driver",
+      "The Departed",
+      "The Wolf of Wall Street",
+      "Casino",
+      "Mean Streets"
+    ],
+    "tmdbId": 1032,
+    "imdbId": "nm0000217",
+    "bio": "Martin Scorsese is an American filmmaker and historian. He is a recipient of an Academy Award and has been honored with numerous accolades for his contributions to cinema.",
+    "avatar": "/people/martin-scorsese.jpg",
+    "createdAt": "2025-01-01T00:00:00.000Z",
+    "updatedAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "slug": "quentin-tarantino",
+    "name": "Quentin Tarantino",
+    "category": "director",
+    "subCategories": ["screenwriter", "producer", "actor"],
+    "birthYear": 1963,
+    "nationality": "American",
+    "knownFor": [
+      "Pulp Fiction",
+      "Kill Bill",
+      "Django Unchained",
+      "Inglourious Basterds",
+      "Once Upon a Time in Hollywood",
+      "Reservoir Dogs"
+    ],
+    "tmdbId": 138,
+    "imdbId": "nm0000233",
+    "bio": "Quentin Tarantino is an American filmmaker known for his stylized violence, nonlinear storylines, and pop culture references. His films are characterized by satirical subject matter and an aesthetic of violence.",
+    "avatar": "/people/quentin-tarantino.jpg",
+    "createdAt": "2025-01-01T00:00:00.000Z",
+    "updatedAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "slug": "leonardo-dicaprio",
+    "name": "Leonardo DiCaprio",
+    "category": "actor",
+    "subCategories": ["producer"],
+    "birthYear": 1974,
+    "nationality": "American",
+    "knownFor": [
+      "Titanic",
+      "Inception",
+      "The Revenant",
+      "The Wolf of Wall Street",
+      "Django Unchained",
+      "Once Upon a Time in Hollywood"
+    ],
+    "tmdbId": 6193,
+    "imdbId": "nm0000138",
+    "bio": "Leonardo DiCaprio is an American actor and producer known for his work in biopics and period films. He has received numerous accolades including an Academy Award for Best Actor.",
+    "avatar": "/people/leonardo-dicaprio.jpg",
+    "createdAt": "2025-01-01T00:00:00.000Z",
+    "updatedAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "slug": "greta-gerwig",
+    "name": "Greta Gerwig",
+    "category": "director",
+    "subCategories": ["screenwriter", "actor"],
+    "birthYear": 1983,
+    "nationality": "American",
+    "knownFor": [
+      "Lady Bird",
+      "Little Women",
+      "Barbie",
+      "Frances Ha",
+      "Mistress America"
+    ],
+    "tmdbId": 45400,
+    "imdbId": "nm0315174",
+    "bio": "Greta Gerwig is an American actress, screenwriter, and director. She has emerged as a prominent figure in contemporary American cinema, known for her coming-of-age stories.",
+    "avatar": "/people/greta-gerwig.jpg",
+    "createdAt": "2025-01-01T00:00:00.000Z",
+    "updatedAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "slug": "jordan-peele",
+    "name": "Jordan Peele",
+    "category": "director",
+    "subCategories": ["screenwriter", "producer", "actor"],
+    "birthYear": 1979,
+    "nationality": "American",
+    "knownFor": [
+      "Get Out",
+      "Us",
+      "Nope",
+      "Key & Peele"
+    ],
+    "tmdbId": 291263,
+    "imdbId": "nm1443502",
+    "bio": "Jordan Peele is an American filmmaker and comedian. He is known for his horror films that explore social and racial themes through a thriller genre framework.",
+    "avatar": "/people/jordan-peele.jpg",
+    "createdAt": "2025-01-01T00:00:00.000Z",
+    "updatedAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "slug": "ari-aster",
+    "name": "Ari Aster",
+    "category": "director",
+    "subCategories": ["screenwriter"],
+    "birthYear": 1986,
+    "nationality": "American",
+    "knownFor": [
+      "Hereditary",
+      "Midsommar"
+    ],
+    "tmdbId": 1625558,
+    "imdbId": "nm4170048",
+    "bio": "Ari Aster is an American writer and director known for his horror films. His work is characterized by elaborate production design and disturbing imagery.",
+    "avatar": "/people/ari-aster.jpg",
+    "createdAt": "2025-01-01T00:00:00.000Z",
+    "updatedAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "slug": "denis-villeneuve",
+    "name": "Denis Villeneuve",
+    "category": "director",
+    "subCategories": ["producer"],
+    "birthYear": 1967,
+    "nationality": "Canadian",
+    "knownFor": [
+      "Arrival",
+      "Blade Runner 2049",
+      "Dune",
+      "Sicario",
+      "Prisoners"
+    ],
+    "tmdbId": 108916,
+    "imdbId": "nm0898288",
+    "bio": "Denis Villeneuve is a Canadian filmmaker known for his science fiction films and thrillers. His work often explores themes of communication, time, and human nature.",
+    "avatar": "/people/denis-villeneuve.jpg",
+    "createdAt": "2025-01-01T00:00:00.000Z",
+    "updatedAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "slug": "robert-eggers",
+    "name": "Robert Eggers",
+    "category": "director",
+    "subCategories": ["screenwriter"],
+    "birthYear": 1983,
+    "nationality": "American",
+    "knownFor": [
+      "The Witch",
+      "The Lighthouse",
+      "The Northman"
+    ],
+    "tmdbId": 1208719,
+    "imdbId": "nm4738517",
+    "bio": "Robert Eggers is an American filmmaker known for his period horror films. His work is characterized by meticulous historical research and atmospheric storytelling.",
+    "avatar": "/people/robert-eggers.jpg",
+    "createdAt": "2025-01-01T00:00:00.000Z",
+    "updatedAt": "2025-01-01T00:00:00.000Z"
+  }
+]
