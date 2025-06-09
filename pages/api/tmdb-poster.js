@@ -1,0 +1,64 @@
+// pages/api/tmdb-poster.js
+/**
+ * TMDB Poster API Route
+ * 
+ * Fetches movie poster from TMDB API using title and year.
+ */
+
+export default async function handler(req, res) {
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: 'Only POST method allowed' });
+  }
+
+  const { title, year } = req.body;
+
+  if (!title || !year) {
+    return res.status(400).json({ error: 'Movie title and year are required' });
+  }
+
+  if (!process.env.TMDB_API_KEY) {
+    return res.status(500).json({ error: 'TMDB API key not configured' });
+  }
+
+  try {
+    const tmdbResponse = await fetch(
+      `https://api.themoviedb.org/3/search/movie?api_key=${process.env.TMDB_API_KEY}&query=${encodeURIComponent(title)}&year=${year}`
+    );
+    
+    if (!tmdbResponse.ok) {
+      throw new Error('TMDB API request failed');
+    }
+
+    const tmdbData = await tmdbResponse.json();
+    const movie = tmdbData.results?.[0];
+    
+    if (movie) {
+      const posterUrl = movie.poster_path ? 
+        `https://image.tmdb.org/t/p/w500${movie.poster_path}` : 
+        '/images/placeholder-poster.jpg';
+      
+      // Cache TMDB data for 7 days - movie metadata rarely changes
+      res.setHeader('Cache-Control', 'public, s-maxage=604800, stale-while-revalidate=1209600');
+      res.status(200).json({ 
+        poster: posterUrl,
+        tmdb_id: movie.id,
+        overview: movie.overview || null
+      });
+    } else {
+      // Cache "not found" results for 1 hour 
+      res.setHeader('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=7200');
+      res.status(200).json({ 
+        poster: '/images/placeholder-poster.jpg',
+        overview: null
+      });
+    }
+
+  } catch (error) {
+    console.error('Error fetching TMDB poster:', error);
+    res.status(500).json({ 
+      error: 'Failed to fetch poster',
+      poster: '/images/placeholder-poster.jpg', // Fallback
+      overview: null
+    });
+  }
+}

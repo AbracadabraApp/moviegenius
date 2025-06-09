@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Chris Nolan",
+    "canonicalSlug": "christopher-nolan",
+    "confidence": 0.95,
+    "context": "film-discussion"
+  },
+  {
+    "name": "Nolan",
+    "canonicalSlug": "christopher-nolan", 
+    "confidence": 0.85,
+    "context": "film-discussion",
+    "requireContext": true
+  },
+  {
+    "name": "Leo DiCaprio",
+    "canonicalSlug": "leonardo-dicaprio",
+    "confidence": 0.90
+  },
+  {
+    "name": "DiCaprio",
+    "canonicalSlug": "leonardo-dicaprio",
+    "confidence": 0.85,
+    "context": "film-discussion",
+    "requireContext": true
+  },
+  {
+    "name": "Leo",
+    "canonicalSlug": "leonardo-dicaprio",
+    "confidence": 0.75,
+    "context": "film-discussion",
+    "requireContext": true
+  },
+  {
+    "name": "Scorsese",
+    "canonicalSlug": "martin-scorsese",
+    "confidence": 0.85,
+    "context": "film-discussion",
+    "requireContext": true
+  },
+  {
+    "name": "Marty Scorsese",
+    "canonicalSlug": "martin-scorsese",
+    "confidence": 0.90
+  },
+  {
+    "name": "Tarantino",
+    "canonicalSlug": "quentin-tarantino",
+    "confidence": 0.85,
+    "context": "film-discussion",
+    "requireContext": true
+  },
+  {
+    "name": "QT",
+    "canonicalSlug": "quentin-tarantino",
+    "confidence": 0.70,
+    "context": "film-discussion",
+    "requireContext": true
+  },
+  {
+    "name": "Streep",
+    "canonicalSlug": "meryl-streep",
+    "confidence": 0.85,
+    "context": "film-discussion",
+    "requireContext": true
+  },
+  {
+    "name": "Villeneuve",
+    "canonicalSlug": "denis-villeneuve",
+    "confidence": 0.85,
+    "context": "film-discussion",
+    "requireContext": true
+  },
+  {
+    "name": "Eggers",
+    "canonicalSlug": "robert-eggers",
+    "confidence": 0.80,
+    "context": "film-discussion",
+    "requireContext": true
+  },
+  {
+    "name": "Peele",
+    "canonicalSlug": "jordan-peele",
+    "confidence": 0.80,
+    "context": "film-discussion",
+    "requireContext": true
+  },
+  {
+    "name": "Aster",
+    "canonicalSlug": "ari-aster",
+    "confidence": 0.80,
+    "context": "film-discussion",
+    "requireContext": true
+  },
+  {
+    "name": "Gerwig",
+    "canonicalSlug": "greta-gerwig",
+    "confidence": 0.80,
+    "context": "film-discussion",
+    "requireContext": true
+  }
+]

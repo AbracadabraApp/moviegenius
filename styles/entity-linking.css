@@ -1,0 +1,122 @@
+/* Entity Linking Styles */
+
+/* Base entity link styling - lighter color with heavy weight for contrast */
+.entity-link {
+  color: #777777;                    /* Even lighter grey - very soft */
+  text-decoration: underline;
+  text-decoration-color: #e0e0e0;    /* Perfect medium grey underline */
+  text-decoration-thickness: 1px;    /* Light weight underline */
+  text-underline-offset: 2px;        /* Subtle spacing */
+  font-weight: 700;                  /* Bold weight - strong contrast */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.entity-link:hover {
+  color: #1a1a1a;                    /* Slightly darker on hover */
+  text-decoration-color: #c0c0c0;    /* More visible underline on hover */
+}
+
+/* Entity type specific styling (optional subtle differences) */
+.entity-link.entity-movie {
+  /* Movies can have same styling or slight variation */
+}
+
+.entity-link.entity-person {
+  /* People can have same styling or slight variation */
+}
+
+/* Styling variants for different modes */
+
+/* Subtle mode (default) - lighter color with more weight */
+.entity-linked-text.subtle .entity-link {
+  color: #777777;                    /* Even lighter grey - very soft */
+  text-decoration-color: #e0e0e0;    /* Perfect medium grey underline */
+  text-decoration-thickness: 1px;
+  font-weight: 700;                  /* Bold weight - strong contrast */
+}
+
+/* Minimal mode - even more subtle */
+.entity-linked-text.minimal .entity-link {
+  color: #404040;
+  text-decoration: none;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.entity-linked-text.minimal .entity-link:hover {
+  color: #2a2a2a;
+  border-bottom-color: #e0e0e0;
+}
+
+/* Bold mode - more prominent for accessibility */
+.entity-linked-text.bold .entity-link {
+  color: #1a1a1a;
+  text-decoration-color: #c0c0c0;
+  text-decoration-thickness: 1.5px;
+  font-weight: 500;
+}
+
+.entity-linked-text.bold .entity-link:hover {
+  color: #000000;
+  text-decoration-color: #a0a0a0;
+}
+
+/* Off mode - no styling */
+.entity-linked-text.off .entity-link {
+  color: inherit;
+  text-decoration: none;
+  cursor: default;
+}
+
+/* Confidence-based styling (optional) */
+.entity-link[data-confidence] {
+  /* Base styling already applied */
+}
+
+/* High confidence entities can be slightly more prominent */
+.entity-link[data-confidence="1.00"],
+.entity-link[data-confidence^="0.9"] {
+  text-decoration-thickness: 1px;
+}
+
+/* Medium confidence entities stay as default */
+.entity-link[data-confidence^="0.8"] {
+  /* Default styling */
+}
+
+/* Lower confidence entities can be more subtle */
+.entity-link[data-confidence^="0.7"],
+.entity-link[data-confidence^="0.6"] {
+  text-decoration-color: #f5f5f5;
+}
+
+/* Responsive considerations */
+@media (max-width: 768px) {
+  .entity-link {
+    text-underline-offset: 1px;  /* Tighter spacing on mobile */
+  }
+}
+
+/* Print styles */
+@media print {
+  .entity-link {
+    color: #000000;
+    text-decoration: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .entity-link {
+    color: #000000;
+    text-decoration-color: #666666;
+    text-decoration-thickness: 2px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .entity-link {
+    transition: none;
+  }
+}

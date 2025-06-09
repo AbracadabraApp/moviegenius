@@ -1,0 +1,78 @@
+# 🔒 MediaCard Component Lock
+
+**CRITICAL COMPONENT - DO NOT MODIFY WITHOUT APPROVAL**
+
+## ⚠️ Why This Component is Locked
+
+MediaCard is the **core component** used throughout the entire application:
+- Movie recommendation pages
+- Search results  
+- List displays
+- Ask page results
+- Genius tab content
+- iOS mobile app
+
+**Changes to MediaCard break multiple parts of the site.**
+
+## 🚫 Prohibited Changes
+
+**DO NOT:**
+- Modify component props or interface
+- Change styling or layout significantly  
+- Remove or alter click/navigation behavior
+- Modify poster loading or caching logic
+- Change favorites/bookmark functionality
+- Alter slug/text display logic
+- Add new dependencies or imports
+
+## ✅ Approved Changes Only
+
+**ONLY MAKE CHANGES FOR:**
+- Critical security fixes
+- Performance optimizations (with testing)
+- Bug fixes that don't change interface
+- Changes approved by senior developer
+
+## 🔧 Safe Change Process
+
+1. **Create feature branch**: `git checkout -b mediacard-fix-description`
+2. **Test thoroughly**: All pages that use MediaCard
+3. **Document changes**: What changed and why
+4. **Get approval**: Before merging to main
+5. **Test in production**: Verify no regressions
+
+## 📋 Component Usage Locations
+
+MediaCard is used in:
+- `/pages/ask.js` - Ask results display
+- `/pages/genius/list/[id].js` - Genius list content  
+- `/pages/movie/[id].js` - Related movies
+- `/pages/recs.js` - Recommendation engine
+- `/pages/you.js` - User favorites
+- Mobile app via Capacitor
+
+## 🎯 Current Stable State
+
+**Last Known Good Version:** Committed on 2025-06-06
+**Key Features Working:**
+- ✅ Click navigation to movie pages
+- ✅ Poster loading with TMDB integration
+- ✅ Favorites/bookmark functionality
+- ✅ Slug enhancement (when needed)
+- ✅ Streaming placeholder display
+- ✅ Performance optimizations
+
+## 🔄 Backup & Recovery
+
+**Stable backup saved as:** `MediaCard.js.STABLE`
+
+**To restore stable version:**
+```bash
+cp components/MediaCard.js.STABLE components/MediaCard.js
+git add components/MediaCard.js
+git commit -m "Restore stable MediaCard version"
+```
+
+---
+
+**🛡️ This lock file must remain in the repository to prevent breaking changes.**
