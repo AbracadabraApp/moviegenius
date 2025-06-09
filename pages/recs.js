@@ -567,6 +567,12 @@ const styles = {
     fontSize: '16px',
     margin: 0,
   },
+  stickySeriesHeader: {
+    position: 'sticky',
+    top: '0px', // Stick right at the top, ask bar will overlay it
+    zIndex: 90, // Below ask bar (100) but above content
+    marginTop: '0px', // Remove any default margins
+  },
   seriesHeaderField: {
     padding: '20px 16px',
     background: 'linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%)',
