@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MovieGenius
 
 AI-powered movie recommendations and analysis platform using Claude 3.5 Sonnet and TMDB API.
@@ -52,3 +53,6 @@ This app is configured for Railway deployment with automatic builds from the mai
 ## License
 
 Private - All rights reserved
+=======
+# moviegenius
+>>>>>>> e582629534fc95ce36ea2c3f1d1b5187cf45d552
