@@ -241,131 +241,9 @@ EXPLORE_FURTHER
   }
 }
 
-// TMDB ID mapping for the IMDb Top 250 list
-const IMDB_TOP_250_TMDB_IDS = [
-  238, 278, 240, 424, 389, 129, 19404, 155, 497, 372058,
-  429, 346, 13, 769, 15, 324, 11216, 637, 539, 120737,
-  810, 11, 329, 550, 1255, 680, 103, 12477, 73, 429203,
-  475557, 140607, 16869, 77338, 12096, 630, 18148, 11423, 1422,
-  745, 8587, 207, 406, 105, 637649, 510, 14161, 578, 11024, 862
-  // This is a sample of 50 TMDB IDs - would need the full 250
-];
-
-async function populateImdbTop250List() {
-  const LIST_ID = 'a8c56f19-759f-4583-a519-d97dbe07db1d';
-  
-  try {
-    console.log('🎬 Starting IMDb Top 250 list population...');
-    
-    // Check if list already has movies
-    const { data: existingItems, error: checkError } = await supabase
-      .from('movie_list_items')
-      .select('id')
-      .eq('list_id', LIST_ID);
-    
-    if (checkError) throw checkError;
-    
-    if (existingItems && existingItems.length > 0) {
-      return {
-        success: true,
-        message: `List already has ${existingItems.length} movies - skipping population`,
-        movies_added: 0,
-        already_populated: true
-      };
-    }
-    
-    let moviesAdded = 0;
-    let errors = [];
-    
-    // Process each TMDB ID
-    for (let i = 0; i < IMDB_TOP_250_TMDB_IDS.length; i++) {
-      const tmdbId = IMDB_TOP_250_TMDB_IDS[i];
-      
-      try {
-        // Check if movie exists in our database
-        let { data: movie, error: movieError } = await supabase
-          .from('movies')
-          .select('id')
-          .eq('tmdb_id', tmdbId)
-          .single();
-        
-        // If movie doesn't exist, fetch from TMDB and create it
-        if (!movie) {
-          const tmdbResponse = await fetch(
-            `https://api.themoviedb.org/3/movie/${tmdbId}?api_key=${process.env.NEXT_PUBLIC_TMDB_API_KEY}`
-          );
-          
-          if (tmdbResponse.ok) {
-            const tmdbData = await tmdbResponse.json();
-            
-            // Create movie record
-            const { data: newMovie, error: createError } = await supabase
-              .from('movies')
-              .insert({
-                tmdb_id: tmdbId,
-                title: tmdbData.title,
-                year: new Date(tmdbData.release_date).getFullYear(),
-                poster_url: tmdbData.poster_path ? 
-                  `https://image.tmdb.org/t/p/w500${tmdbData.poster_path}` : null,
-                slug: tmdbData.overview?.substring(0, 100) || 'Classic film',
-                created_at: new Date().toISOString()
-              })
-              .select('id')
-              .single();
-            
-            if (createError) throw createError;
-            movie = newMovie;
-          } else {
-            errors.push(`TMDB fetch failed for ID ${tmdbId}`);
-            continue;
-          }
-        }
-        
-        // Add movie to list
-        const { error: listError } = await supabase
-          .from('movie_list_items')
-          .insert({
-            list_id: LIST_ID,
-            movie_id: movie.id,
-            order_index: i + 1,
-            created_at: new Date().toISOString()
-          });
-        
-        if (listError) throw listError;
-        
-        moviesAdded++;
-        console.log(`✅ Added movie ${i + 1}/${IMDB_TOP_250_TMDB_IDS.length} (TMDB: ${tmdbId})`);
-        
-        // Small delay to respect rate limits
-        await new Promise(resolve => setTimeout(resolve, 100));
-        
-      } catch (error) {
-        errors.push(`Error processing TMDB ID ${tmdbId}: ${error.message}`);
-        console.error(`❌ Error with TMDB ID ${tmdbId}:`, error.message);
-      }
-    }
-    
-    return {
-      success: true,
-      message: `Successfully populated IMDb Top 250 list with ${moviesAdded} movies`,
-      movies_added: moviesAdded,
-      total_attempted: IMDB_TOP_250_TMDB_IDS.length,
-      errors: errors.slice(0, 5), // Only show first 5 errors
-      list_id: LIST_ID
-    };
-    
-  } catch (error) {
-    console.error('❌ List population failed:', error);
-    return {
-      success: false,
-      error: error.message
-    };
-  }
-}
-
 export default async function handler(req, res) {
-  // Allow both GET and POST requests
-  if (req.method !== 'POST' && req.method !== 'GET') {
+  // Only allow POST requests
+  if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
@@ -375,18 +253,7 @@ export default async function handler(req, res) {
     return res.status(401).json({ error: 'Unauthorized' });
   }
 
-  const { action } = req.query;
-
   try {
-    // Handle population action
-    if (action === 'populate') {
-      console.log('🚀 Starting list population...');
-      const result = await populateImdbTop250List();
-      console.log('List population result:', result);
-      return res.status(200).json(result);
-    }
-    
-    // Default behavior - analysis generation
     const processor = new RailwayListBatchProcessor();
     const result = await processor.processBatch();
 
