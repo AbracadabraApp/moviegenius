@@ -1,0 +1,23 @@
+{
+  "name": "moviegenius",
+  "version": "2.0.0",
+  "private": true,
+  "description": "MovieGenius - AI-powered movie recommendations and analysis",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.53.0",
+    "@supabase/supabase-js": "^2.49.8",
+    "next": "^15.3.2",
+    "react": "18.x",
+    "react-dom": "18.x"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^15.3.2"
+  }
+}
