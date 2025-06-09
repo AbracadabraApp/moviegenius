@@ -85,14 +85,14 @@ export default function RecsPage({ featuredList, otherLists, error }) {
   return (
     <PhoneFrame active="recs">
       <div style={styles.container}>
-        {/* Fixed Ask Input Bar */}
+        {/* Fixed Ask Input Bar - Always on top */}
         <div style={styles.fixedInputArea}>
           <AskInputBar onSubmit={handleAsk} />
         </div>
         
-        {/* Scrollable Content */}
+        {/* Scrollable Content - Everything scrolls under ask bar */}
         <div style={styles.scrollableContent}>
-          {/* Hero Image */}
+          {/* Hero Image - Scrolls normally */}
           <div style={styles.heroImageContainer}>
             <img 
               src={`/images/hero-rotation/hero-${currentHeroImage}.jpg`} 
@@ -101,11 +101,13 @@ export default function RecsPage({ featuredList, otherLists, error }) {
             />
           </div>
           
-          {/* Series Header Field - Back under hero image */}
-          <div style={styles.seriesHeaderField}>
-            <div style={styles.seriesLabelPill}>Series</div>
-            <div style={styles.seriesTitle}>Cinema Through Time</div>
-            <div style={styles.seriesSubhead}>Discover how film evolved through the decades</div>
+          {/* Sticky Series Header - Sticks when it hits ask bar */}
+          <div style={styles.stickySeriesHeader}>
+            <div style={styles.seriesHeaderField}>
+              <div style={styles.seriesLabelPill}>Series</div>
+              <div style={styles.seriesTitle}>Cinema Through Time</div>
+              <div style={styles.seriesSubhead}>Discover how film evolved through the decades</div>
+            </div>
           </div>
         
           <div style={styles.content}>
@@ -387,7 +389,7 @@ const styles = {
     top: 0,
     zIndex: 100,
     padding: '16px',
-    background: 'linear-gradient(135deg, #1f2937 0%, #374151 100%)',
+    background: 'linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%)',
   },
   scrollableContent: {
     flex: 1,
@@ -567,31 +569,31 @@ const styles = {
   },
   seriesHeaderField: {
     padding: '20px 16px',
-    backgroundColor: '#ffffff',
+    background: 'linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%)',
   },
   seriesLabelPill: {
     display: 'inline-block',
     fontSize: '12px',
     fontWeight: '600',
-    color: '#ffffff',
+    color: '#000000',
     textTransform: 'uppercase',
     letterSpacing: '0.5px',
     marginBottom: '8px',
     padding: '6px 12px',
-    backgroundColor: '#374151',
+    backgroundColor: '#ffffff',
     borderRadius: '20px',
   },
   seriesTitle: {
     fontSize: '20px',
     fontWeight: '700',
-    color: '#111827',
+    color: '#ffffff',
     margin: 0,
     marginBottom: '6px',
   },
   seriesSubhead: {
     fontSize: '14px',
     fontWeight: '400',
-    color: '#6b7280',
+    color: '#d1d5db',
     margin: 0,
     lineHeight: '1.4',
   },
