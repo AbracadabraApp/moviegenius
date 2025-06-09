@@ -11,76 +11,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Only GET method allowed' });
   }
 
-  const { id, metadata, inspect_tables } = req.query;
-
-  // Special mode to inspect database tables for backup discovery
-  if (inspect_tables === 'true') {
-    try {
-      const { createClient } = await import('@supabase/supabase-js');
-      const supabase = createClient(
-        process.env.NEXT_PUBLIC_SUPABASE_URL,
-        process.env.SUPABASE_SERVICE_ROLE_KEY
-      );
-
-      // Check for backup tables, focusing on movie_list_items connections
-      const knownTables = [
-        'movie_lists', 'movie_list_items', 'movies',
-        'movie_list_items_backup', 'movie_list_items_archive', 'movie_list_items_old',
-        'movie_list_items_2024', 'movie_list_items_original', 'movie_list_items_restore',
-        'list_items_backup', 'list_movies_backup', 'movie_lists_backup', 'movies_backup'
-      ];
-      
-      const tableStatus = [];
-      for (const tableName of knownTables) {
-        try {
-          const { data, error, count } = await supabase
-            .from(tableName)
-            .select('*', { count: 'exact', head: true });
-          
-          if (!error) {
-            tableStatus.push({
-              table_name: tableName,
-              exists: true,
-              row_count: count
-            });
-          }
-        } catch (e) {
-          tableStatus.push({
-            table_name: tableName,
-            exists: false,
-            error: 'Table not found'
-          });
-        }
-      }
-      
-      const backupTables = tableStatus.filter(t => t.exists && (t.table_name.includes('backup') || t.table_name.includes('archive') || t.table_name.includes('old')));
-      const connectionTables = tableStatus.filter(t => t.exists && t.table_name.includes('list_items'));
-      const mainTables = tableStatus.filter(t => t.exists && ['movie_lists', 'movie_list_items', 'movies'].includes(t.table_name));
-      
-      return res.status(200).json({
-        inspection_type: 'backup_table_discovery',
-        summary: {
-          total_tables_found: tableStatus.filter(t => t.exists).length,
-          backup_tables_found: backupTables.length,
-          connection_tables_found: connectionTables.length
-        },
-        main_tables: mainTables,
-        connection_tables: connectionTables,
-        backup_tables: backupTables,
-        all_tables: tableStatus,
-        critical_finding: connectionTables.find(t => t.row_count > 0) ? 
-          'Found populated connection table - restoration possible!' : 
-          'No populated connection tables found',
-        timestamp: new Date().toISOString()
-      });
-      
-    } catch (error) {
-      return res.status(500).json({
-        error: 'Failed to inspect tables',
-        details: error.message
-      });
-    }
-  }
+  const { id, metadata } = req.query;
 
   if (!id) {
     return res.status(400).json({ error: 'List ID is required' });

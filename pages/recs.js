@@ -464,12 +464,18 @@ const styles = {
     lineHeight: '1.3',
     margin: 0,
     marginBottom: '6px',
+    wordWrap: 'break-word',
+    whiteSpace: 'normal',
+    overflow: 'visible',
   },
   episodeSubtitle: {
     fontSize: '14px',
     color: '#6b7280',
     lineHeight: '1.3',
     margin: 0,
+    wordWrap: 'break-word',
+    whiteSpace: 'normal',
+    overflow: 'visible',
   },
   featuredSection: {
     marginBottom: '32px',
@@ -569,7 +575,7 @@ const styles = {
   },
   stickySeriesHeader: {
     position: 'sticky',
-    top: '0px', // Stick right at the top, ask bar will overlay it
+    top: '88px', // Stick right under ask bar (16px + 56px + 16px = 88px)
     zIndex: 90, // Below ask bar (100) but above content
     marginTop: '0px', // Remove any default margins
   },
