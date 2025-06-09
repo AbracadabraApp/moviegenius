@@ -6,11 +6,10 @@ import AskInputBar from '../components/AskInputBar'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
-// Initialize Supabase client
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
-)
+// Initialize Supabase client with build-safe fallbacks
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co'
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key'
+const supabase = createClient(supabaseUrl, supabaseKey)
 
 export default function RecsSupabasePage({ movies, error, stats }) {
   const router = useRouter()
