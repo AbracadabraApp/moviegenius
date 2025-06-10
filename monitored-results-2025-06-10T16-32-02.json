@@ -1,0 +1,169 @@
+{
+  "summary": {
+    "total": 10,
+    "completed": 10,
+    "successful": 10,
+    "failed": 0,
+    "cached": 0,
+    "fresh": 10,
+    "startTime": 1749573050168,
+    "errors": [],
+    "results": [
+      {
+        "success": true,
+        "tmdbId": 11,
+        "title": "Unknown",
+        "url": "https://moviegenius.ai/movie/11",
+        "responseTime": 5761
+      },
+      {
+        "success": true,
+        "tmdbId": 12,
+        "title": "Unknown",
+        "url": "https://moviegenius.ai/movie/12",
+        "responseTime": 5740
+      },
+      {
+        "success": true,
+        "tmdbId": 13,
+        "title": "Unknown",
+        "url": "https://moviegenius.ai/movie/13",
+        "responseTime": 5179
+      },
+      {
+        "success": true,
+        "tmdbId": 14,
+        "title": "Unknown",
+        "url": "https://moviegenius.ai/movie/14",
+        "responseTime": 5179
+      },
+      {
+        "success": true,
+        "tmdbId": 15,
+        "title": "Unknown",
+        "url": "https://moviegenius.ai/movie/15",
+        "responseTime": 5175
+      },
+      {
+        "success": true,
+        "tmdbId": 16,
+        "title": "Unknown",
+        "url": "https://moviegenius.ai/movie/16",
+        "responseTime": 6628
+      },
+      {
+        "success": true,
+        "tmdbId": 19,
+        "title": "Unknown",
+        "url": "https://moviegenius.ai/movie/19",
+        "responseTime": 22581
+      },
+      {
+        "success": true,
+        "tmdbId": 18,
+        "title": "Unknown",
+        "url": "https://moviegenius.ai/movie/18",
+        "responseTime": 22603
+      },
+      {
+        "success": true,
+        "tmdbId": 22,
+        "title": "Unknown",
+        "url": "https://moviegenius.ai/movie/22",
+        "responseTime": 25795
+      },
+      {
+        "success": true,
+        "tmdbId": 21,
+        "title": "Unknown",
+        "url": "https://moviegenius.ai/movie/21",
+        "responseTime": 26509
+      }
+    ],
+    "currentActivity": "Completed"
+  },
+  "timestamp": "2025-06-10T16:32:02.385Z",
+  "config": {
+    "BASE_URL": "https://moviegenius.ai",
+    "CONCURRENT_PAGES": 2,
+    "PAGE_TIMEOUT": 30000,
+    "BATCH_SIZE": 10,
+    "TEST_LIMIT": 10,
+    "WAIT_FOR_ANALYSIS": true,
+    "SAVE_SCREENSHOTS": false,
+    "LOG_FILE": "./content-generation.log",
+    "PROGRESS_FILE": "./content-generation-progress.json"
+  },
+  "results": [
+    {
+      "success": true,
+      "tmdbId": 11,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/11",
+      "responseTime": 5761
+    },
+    {
+      "success": true,
+      "tmdbId": 12,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/12",
+      "responseTime": 5740
+    },
+    {
+      "success": true,
+      "tmdbId": 13,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/13",
+      "responseTime": 5179
+    },
+    {
+      "success": true,
+      "tmdbId": 14,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/14",
+      "responseTime": 5179
+    },
+    {
+      "success": true,
+      "tmdbId": 15,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/15",
+      "responseTime": 5175
+    },
+    {
+      "success": true,
+      "tmdbId": 16,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/16",
+      "responseTime": 6628
+    },
+    {
+      "success": true,
+      "tmdbId": 19,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/19",
+      "responseTime": 22581
+    },
+    {
+      "success": true,
+      "tmdbId": 18,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/18",
+      "responseTime": 22603
+    },
+    {
+      "success": true,
+      "tmdbId": 22,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/22",
+      "responseTime": 25795
+    },
+    {
+      "success": true,
+      "tmdbId": 21,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/21",
+      "responseTime": 26509
+    }
+  ]
+}

@@ -255,7 +255,7 @@ async function generateClaudeResponse(question) {
   });
 
   // Use modular prompt system for ASK context (includes caching and standardized voice)
-  const promptConfig = buildPrompt('ASK', 'End with extensive "More Ideas" list containing up to 50 relevant movies.');
+  const promptConfig = buildPrompt('ASK', 'Include 3-4 accessibly written Explore Further topics for additional explorations. End with extensive "More Ideas" list containing up to 50 relevant movies.');
 
   try {
     const message = await anthropic.messages.create({

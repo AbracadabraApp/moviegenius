@@ -29,14 +29,21 @@ export default function EntityLinkedText({
       return;
     }
 
-    const processedText = processTextWithEntities(text, entities, {
-      linkPeople,
-      linkMovies,
-      currentEntity,
-      linkingStyle
-    });
+    try {
+      const processedText = processTextWithEntities(text, entities, {
+        linkPeople,
+        linkMovies,
+        currentEntity,
+        linkingStyle
+      });
 
-    setProcessedContent(processedText);
+      setProcessedContent(processedText);
+    } catch (error) {
+      console.error('🚨 EntityLinkedText Error:', error);
+      console.error('🚨 Entity data that caused error:', entities);
+      // Fallback to plain text if processing fails
+      setProcessedContent(text);
+    }
   }, [text, entities, linkPeople, linkMovies, currentEntity?.slug, linkingStyle]);
 
   const combinedClassName = `entity-linked-text ${linkingStyle} ${className}`.trim();
@@ -56,25 +63,52 @@ export default function EntityLinkedText({
 function processTextWithEntities(text, entities, options) {
   const { linkPeople, linkMovies, currentEntity, linkingStyle } = options;
   
+  // Debug logging to catch the issue
+  console.log('🐛 EntityLinkedText Debug:', {
+    entities,
+    entitiesType: typeof entities,
+    moviesType: entities?.movies ? typeof entities.movies : 'undefined',
+    moviesIsArray: entities?.movies ? Array.isArray(entities.movies) : false,
+    peopleType: entities?.people ? typeof entities.people : 'undefined', 
+    peopleIsArray: entities?.people ? Array.isArray(entities.people) : false
+  });
+  
   // Collect all entities to process
   const allEntities = [];
   
-  if (linkMovies && entities.movies) {
-    entities.movies.forEach(movie => {
+  if (linkMovies && entities.movies && Array.isArray(entities.movies)) {
+    console.log('🔍 Processing movies array:', entities.movies);
+    entities.movies.forEach((movie, index) => {
+      console.log(`🎬 Movie ${index}:`, movie, 'type:', typeof movie);
+      
+      // Additional safety check for null/undefined movie objects
+      if (!movie || typeof movie !== 'object') {
+        console.warn(`⚠️ Skipping invalid movie at index ${index}:`, movie);
+        return;
+      }
+      
+      // Handle both data formats: { text: "Movie Title" } or { title: "Movie Title" }
+      const movieText = movie.text || movie.title;
+      if (!movieText || typeof movieText !== 'string') {
+        console.warn(`⚠️ Skipping movie with invalid text/title at index ${index}:`, movie);
+        return;
+      }
+      
       // Skip self-reference
-      if (currentEntity && movie.text.toLowerCase() === currentEntity.title?.toLowerCase()) {
+      if (currentEntity && movieText.toLowerCase() === currentEntity.title?.toLowerCase()) {
         return;
       }
       
       allEntities.push({
         ...movie,
+        text: movieText, // Normalize to text property
         type: 'movie',
-        url: `/movies/${createSlug(movie.text)}`
+        url: `/movies/${createSlug(movieText)}`
       });
     });
   }
   
-  if (linkPeople && entities.people) {
+  if (linkPeople && entities.people && Array.isArray(entities.people)) {
     entities.people.forEach(person => {
       // Skip self-reference
       if (currentEntity && person.text.toLowerCase() === currentEntity.name?.toLowerCase()) {

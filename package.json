@@ -22,6 +22,7 @@
     "batch-create": "node scripts/scheduled-batch-analysis.js run",
     "entity-issue": "node scripts/report-entity-issue.js",
     "content-report": "node scripts/generate-content-coverage-report.js",
+    "content-monitor": "node content-coverage-monitor.js",
     "backfill-slugs": "node scripts/backfill-missing-slugs.js",
     "backfill-slugs-test": "node scripts/backfill-missing-slugs.js --limit 5",
     "backfill-slugs-batch": "node scripts/backfill-missing-slugs.js --limit 20",

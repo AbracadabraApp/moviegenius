@@ -8,6 +8,9 @@ import { Heart, Bookmark } from 'lucide-react';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 
+// Import admin data
+import afi100Data from '../data/afi100.json';
+
 export default function YouPage() {
   const router = useRouter();
   const [selectedPlatforms, setSelectedPlatforms] = useState([]);

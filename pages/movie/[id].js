@@ -331,12 +331,7 @@ export default function MovieDetailPage({ title, year, initialSlug, initialPoste
                         ...styles.textSection,
                         marginTop: isFirstTextSection ? '8px' : styles.textSection.marginTop
                       }}>
-                        <EntityLinkedText
-                          text={section.content}
-                          entities={entityData}
-                          currentEntity={{ title, year }}
-                          linkingStyle="subtle"
-                        />
+                        <div>{section.content}</div>
                       </div>
                     )}
                   {section.type === 'movies' && section.movies && (
