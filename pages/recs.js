@@ -193,10 +193,10 @@ export default function RecsPage({ featuredList, otherLists, error }) {
             {featuredList && (
               <div style={styles.featuredSection}>
                 <h2 style={styles.featuredTitle}>{featuredList.name}</h2>
-                {featuredList.claude_description && (
+                {featuredList.description && (
                   <div style={styles.featuredContent}>
                     <div style={styles.textSection}>
-                      {underlineProperNames(featuredList.claude_description)}
+                      {underlineProperNames(featuredList.description)}
                     </div>
                   </div>
                 )}
@@ -281,7 +281,7 @@ export async function getServerSideProps({ res }) {
         id,
         name,
         slug,
-        claude_description,
+        description,
         movies:movie_list_items(
           movies(
             id,
@@ -304,13 +304,19 @@ export async function getServerSideProps({ res }) {
     }
 
     // Get all other lists for grid
-    const { data: otherLists, error: otherError } = await supabase
+    let otherListsQuery = supabase
       .from('movie_lists')
       .select('id, name, slug')
       .eq('is_active', true)
       .eq('content_type', 'declarative')
-      .neq('id', featuredData?.id || 0) // Exclude featured list
       .order('name');
+    
+    // Only exclude featured list if we have a valid ID
+    if (featuredData?.id) {
+      otherListsQuery = otherListsQuery.neq('id', featuredData.id);
+    }
+    
+    const { data: otherLists, error: otherError } = await otherListsQuery;
 
     if (otherError) {
       console.error('Other lists query error:', otherError);
