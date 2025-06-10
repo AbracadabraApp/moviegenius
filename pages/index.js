@@ -1,8 +1,16 @@
 import PhoneFrame from '../components/PhoneFrame'
 import PlatformSelector from '../components/PlatformSelector'
 import CinemaThroughTime from '../components/CinemaThroughTime'
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
 
 export default function HomePage() {
+  const router = useRouter()
+  
+  // Redirect to /recs page
+  useEffect(() => {
+    router.push('/recs')
+  }, [router])
   const handlePlatformSelectionChange = (selectedPlatforms) => {
     // Save to localStorage so You page can access the data
     localStorage.setItem('selectedPlatforms', JSON.stringify(selectedPlatforms))
