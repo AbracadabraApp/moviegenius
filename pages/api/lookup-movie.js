@@ -1,5 +1,6 @@
 // pages/api/lookup-movie.js
 import { createClient } from '@supabase/supabase-js';
+import { getCache } from '../../lib/cache.js';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -50,17 +51,32 @@ export default async function handler(req, res) {
       console.log(`Movie not in database, trying TMDB lookup: ${title} (${year})`);
       
       try {
-        // Look up movie in TMDB
-        const tmdbResponse = await fetch(
-          `https://api.themoviedb.org/3/search/movie?api_key=${process.env.TMDB_API_KEY}&query=${encodeURIComponent(title)}&year=${year}`
-        );
-        
-        if (!tmdbResponse.ok) {
-          throw new Error('TMDB API request failed');
-        }
+        // Look up movie in TMDB with Redis caching
+        const cache = getCache();
+        const tmdbMovie = await cache.cacheTMDBResponse(
+          'search_movie',
+          { title, year },
+          async () => {
+            console.log(`🔄 Cache miss - fetching TMDB data for lookup: ${title} (${year})`);
+            
+            const tmdbResponse = await fetch(
+              `https://api.themoviedb.org/3/search/movie?api_key=${process.env.TMDB_API_KEY}&query=${encodeURIComponent(title)}&year=${year}`
+            );
+            
+            if (!tmdbResponse.ok) {
+              throw new Error('TMDB API request failed');
+            }
 
-        const tmdbData = await tmdbResponse.json();
-        const tmdbMovie = tmdbData.results?.[0];
+            const tmdbData = await tmdbResponse.json();
+            const movie = tmdbData.results?.[0];
+            
+            if (movie) {
+              console.log(`💾 Cached TMDB lookup for: ${title} (${year}) - TMDB ID: ${movie.id}`);
+            }
+            
+            return movie;
+          }
+        );
         
         if (tmdbMovie) {
           // Check if movie with this TMDB ID already exists

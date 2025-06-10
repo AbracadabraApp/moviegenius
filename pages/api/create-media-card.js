@@ -17,6 +17,7 @@
  */
 
 import { createClient } from '@supabase/supabase-js';
+import { getCache } from '../../lib/cache.js';
 import { Anthropic } from '@anthropic-ai/sdk';
 
 const anthropic = new Anthropic({
@@ -88,29 +89,53 @@ export default async function handler(req, res) {
 
     // Step 2: Fetch movie data from TMDB
     let tmdbMovie;
+    const cache = getCache();
     
     if (tmdb_id) {
-      // Fetch by TMDB ID
-      const tmdbResponse = await fetch(
-        `https://api.themoviedb.org/3/movie/${tmdb_id}?api_key=${process.env.TMDB_API_KEY}`
+      // Fetch by TMDB ID with caching
+      tmdbMovie = await cache.cacheTMDBResponse(
+        'movie_details',
+        { tmdb_id },
+        async () => {
+          console.log(`🔄 Cache miss - fetching TMDB movie details for ID: ${tmdb_id}`);
+          
+          const tmdbResponse = await fetch(
+            `https://api.themoviedb.org/3/movie/${tmdb_id}?api_key=${process.env.TMDB_API_KEY}`
+          );
+          
+          if (!tmdbResponse.ok) {
+            throw new Error(`TMDB API failed: ${tmdbResponse.status}`);
+          }
+          
+          const movie = await tmdbResponse.json();
+          console.log(`💾 Cached TMDB movie details for ID: ${tmdb_id} - ${movie.title} (${movie.release_date})`);
+          
+          return movie;
+        }
       );
-      
-      if (!tmdbResponse.ok) {
-        throw new Error(`TMDB API failed: ${tmdbResponse.status}`);
-      }
-      
-      tmdbMovie = await tmdbResponse.json();
     } else {
-      // Search by title and year
-      const tmdbResponse = await fetch(
-        `https://api.themoviedb.org/3/search/movie?api_key=${process.env.TMDB_API_KEY}&query=${encodeURIComponent(title)}&year=${year}`
+      // Search by title and year with caching
+      const searchResults = await cache.cacheTMDBResponse(
+        'search_movie',
+        { title, year },
+        async () => {
+          console.log(`🔄 Cache miss - searching TMDB for: ${title} (${year})`);
+          
+          const tmdbResponse = await fetch(
+            `https://api.themoviedb.org/3/search/movie?api_key=${process.env.TMDB_API_KEY}&query=${encodeURIComponent(title)}&year=${year}`
+          );
+          
+          if (!tmdbResponse.ok) {
+            throw new Error(`TMDB search failed: ${tmdbResponse.status}`);
+          }
+          
+          const data = await tmdbResponse.json();
+          console.log(`💾 Cached TMDB search for: ${title} (${year}) - ${data.results?.length || 0} results`);
+          
+          return data;
+        }
       );
       
-      if (!tmdbResponse.ok) {
-        throw new Error(`TMDB search failed: ${tmdbResponse.status}`);
-      }
-      
-      const searchResults = await tmdbResponse.json();
       tmdbMovie = searchResults.results?.[0];
       
       if (!tmdbMovie) {
