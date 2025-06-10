@@ -334,8 +334,6 @@ const styles = {
     zIndex: 100,
     padding: '16px',
     backgroundColor: '#ffffff',
-    borderBottom: '1px solid #e5e7eb',
-    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
   },
   scrollableContent: {
     flex: 1,

@@ -154,7 +154,7 @@ export default async function handler(req, res) {
     // Step 4: Generate new analysis
     console.log('🤖 Generating new analysis for:', completeMovie.title, completeMovie.year);
     
-    const promptConfig = buildPrompt('MOVIE_ANALYSIS', 'Include 3-5 Explore Further topics for deeper analysis');
+    const promptConfig = buildPrompt('MOVIE_ANALYSIS', 'Include 3-4 accessibly written Explore Further topics for additional explorations');
     const userPrompt = `${completeMovie.title} (${completeMovie.year})`;
 
     const message = await anthropic.messages.create({

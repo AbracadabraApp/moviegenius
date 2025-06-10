@@ -30,8 +30,27 @@ export default function AskInputBar({
   }, []);
 
   return (
-    <form onSubmit={handleSubmit} style={styles.form}>
-      <div id="ask-bar" style={styles.bar}>
+    <>
+      <style jsx>{`
+        .ask-input::placeholder {
+          color: #374151;
+          opacity: 1;
+        }
+        .ask-input::-webkit-input-placeholder {
+          color: #374151;
+          opacity: 1;
+        }
+        .ask-input::-moz-placeholder {
+          color: #374151;
+          opacity: 1;
+        }
+        .ask-input:-ms-input-placeholder {
+          color: #374151;
+          opacity: 1;
+        }
+      `}</style>
+      <form onSubmit={handleSubmit} style={styles.form}>
+        <div id="ask-bar" style={styles.bar}>
         <input
           ref={inputRef}
           type="text"
@@ -39,6 +58,7 @@ export default function AskInputBar({
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
           disabled={isLoading}
+          className="ask-input"
           style={{
             ...styles.input,
             opacity: isLoading ? 0.6 : 1,
@@ -58,6 +78,7 @@ export default function AskInputBar({
         </button>
       </div>
     </form>
+    </>
   );
 }
 
@@ -67,12 +88,12 @@ const styles = {
     paddingTop: '4px',
   },
   bar: {
-    height: '56px',
+    height: '64px',
     display: 'flex',
     alignItems: 'center',
     padding: '0 20px',
     backgroundColor: '#fff',
-    borderRadius: '28px',
+    borderRadius: '32px',
     border: '1px solid #e5e7eb',
     boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
     maxWidth: '100%',
@@ -81,6 +102,7 @@ const styles = {
   input: {
     flex: 1,
     fontSize: '16px',
+    fontWeight: '500',
     border: 'none',
     outline: 'none',
     background: 'transparent',
@@ -96,9 +118,9 @@ const styles = {
     padding: '4px',
   },
   clapperIcon: {
-    width: '20px',
-    height: '20px',
-    opacity: 0.7,
+    width: '24px',
+    height: '24px',
+    opacity: 0.9,
     transition: 'opacity 0.2s ease',
   },
 };
