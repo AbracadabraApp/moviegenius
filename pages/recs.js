@@ -1,4 +1,4 @@
-// pages/recs.js - Curated movie recommendations and series
+// pages/recs.js - Dynamic series page that can display any series OR curated lists
 import { createClient } from '@supabase/supabase-js'
 import PhoneFrame from '../components/PhoneFrame'
 import AskInputBar from '../components/AskInputBar'
@@ -6,79 +6,59 @@ import MediaCard from '../components/MediaCard'
 import { useRouter } from 'next/router'
 import { underlineProperNames } from '../lib/proper-names'
 import { useState, useEffect } from 'react'
+import fs from 'fs'
+import path from 'path'
 
-export default function RecsPage({ featuredList, otherLists, error }) {
+export default function RecsPage({ seriesData, featuredList, otherLists, error, selectedPlatforms: initialPlatforms }) {
   const router = useRouter()
-  const [selectedPlatforms, setSelectedPlatforms] = useState([])
+  const { series: seriesId } = router.query // Check for ?series=2 parameter
+  const [selectedPlatforms, setSelectedPlatforms] = useState(initialPlatforms || [])
   
-  // Template Variables - Easily configurable for reuse
-  const templateConfig = {
+  // Determine if we're showing a specific series or the default lists view
+  const currentSeries = seriesId && seriesData ? seriesData[seriesId] : null
+  
+  // Dynamic configuration based on series or default
+  const pageConfig = currentSeries ? {
+    // Series view configuration
     hero: {
-      imageNumber: 1,
-      alt: "Cinema Through Time"
+      imageNumber: currentSeries.id || 1,
+      alt: currentSeries.title
     },
     series: {
       pillText: "Series",
-      title: "Cinema Through Time",
-      subtitle: "Discover how film evolved through the decades"
+      title: currentSeries.title,
+      subtitle: currentSeries.description
     },
-    episodes: [
-      {
-        id: 1,
-        route: '/recs/series/2/1',
-        title: "1970s: The Auteur Renaissance",
-        subtitle: "When directors became superstars",
-        posters: [
-          "/images/posters/the-godfather.jpg",
-          "/images/posters/taxi-driver.jpg", 
-          "/images/posters/apocalypse-now.jpg",
-          "/images/posters/annie-hall.jpg"
-        ]
-      },
-      {
-        id: 2,
-        route: '/recs/series/2/2',
-        title: "1980s: Blockbuster Revolution",
-        subtitle: "High-concept cinema takes over",
-        posters: [
-          "/images/posters/star-wars.jpg",
-          "/images/posters/raiders-of-the-lost-ark.jpg",
-          "/images/posters/e-t-the-extra-terrestrial.jpg",
-          "/images/posters/blade-runner.jpg"
-        ]
-      },
-      {
-        id: 3,
-        route: '/recs/series/2/3',
-        title: "1990s: Independent Renaissance", 
-        subtitle: "Bold voices outside the system",
-        posters: [
-          "/images/posters/pulp-fiction.jpg",
-          "/images/posters/goodfellas.jpg",
-          "/images/posters/forrest-gump.jpg",
-          "/images/posters/the-silence-of-the-lambs.jpg"
-        ]
-      },
-      {
-        id: 4,
-        route: '/recs/series/2/4',
-        title: "2010s-2020s: Global Cinema Rising",
-        subtitle: "World cinema goes mainstream", 
-        posters: [
-          "/images/posters/the-lord-of-the-rings-the-fellowship-of-the-ring.jpg",
-          "/images/posters/the-sixth-sense.jpg",
-          "/images/posters/saving-private-ryan.jpg",
-          "/images/posters/titanic.jpg"
-        ]
-      }
-    ],
+    episodes: currentSeries.episodes.map(episode => ({
+      id: episode.id,
+      route: `/recs/series/${seriesId}/${episode.id}`,
+      title: episode.title,
+      subtitle: episode.subtitle,
+      posters: episode.posters || []
+    })),
+    streaming: {
+      enabled: true,
+      editRoute: '/you#platforms'
+    }
+  } : {
+    // Default lists view configuration  
+    hero: {
+      imageNumber: 1,
+      alt: "MovieGenius Recommendations"
+    },
+    series: {
+      pillText: "Curated",
+      title: "Film Recommendations",
+      subtitle: "Discover great movies and educational series"
+    },
+    episodes: [], // No episodes in default view
     streaming: {
       enabled: true,
       editRoute: '/you#platforms'
     }
   }
-  
-  const [currentHeroImage, setCurrentHeroImage] = useState(templateConfig.hero.imageNumber)
+
+  const [currentHeroImage, setCurrentHeroImage] = useState(pageConfig.hero.imageNumber)
 
   // Hero image text color settings - adjust per image
   const heroTextSettings = {
@@ -163,59 +143,100 @@ export default function RecsPage({ featuredList, otherLists, error }) {
           {/* Hero Image - Scrolls normally */}
           <div style={styles.heroImageContainer}>
             <img 
-              src={`/images/hero-rotation/hero-${templateConfig.hero.imageNumber}.jpg`} 
-              alt={templateConfig.hero.alt}
+              src={`/images/hero-rotation/hero-${pageConfig.hero.imageNumber}.jpg`} 
+              alt={pageConfig.hero.alt}
               style={styles.heroImage}
             />
           </div>
           
           {/* Series Header - Pill scrolls away */}
           <div style={styles.seriesHeaderField}>
-            <div style={styles.seriesLabelPill}>{templateConfig.series.pillText}</div>
+            <div style={styles.seriesLabelPill}>{pageConfig.series.pillText}</div>
+            {currentSeries && (
+              <div style={styles.backToAllSeries} onClick={() => router.push('/recs/series')}>
+                ← Browse All Series
+              </div>
+            )}
           </div>
           
           {/* Sticky Title Section - Only headline sticks */}
           <div style={styles.stickyTitleHeader}>
             <div style={styles.titleHeaderField}>
-              <div style={styles.seriesTitle}>{templateConfig.series.title}</div>
-              <div style={styles.seriesSubhead}>{templateConfig.series.subtitle}</div>
+              <div style={styles.seriesTitle}>{pageConfig.series.title}</div>
+              <div style={styles.seriesSubhead}>{pageConfig.series.subtitle}</div>
             </div>
           </div>
         
           <div style={styles.content}>
-            {/* Episode Cards - Generated from template config */}
-            <div style={styles.episodesSection}>
-              {templateConfig.episodes.map((episode) => (
-                <div 
-                  key={episode.id}
-                  style={styles.episodeCard}
-                  onClick={() => router.push(episode.route)}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.35)';
-                    e.currentTarget.style.transform = 'translateY(-2px)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
-                    e.currentTarget.style.transform = 'translateY(0)';
-                  }}
-                >
-                  <div style={styles.episodeContent}>
-                    <h3 style={styles.episodeTitle}>{episode.title}</h3>
-                    <p style={styles.episodeSubtitle}>{episode.subtitle}</p>
+            {/* Episode Cards - Only show if we have episodes (series view) */}
+            {pageConfig.episodes.length > 0 && (
+              <div style={styles.episodesSection}>
+                {pageConfig.episodes.map((episode) => (
+                  <div 
+                    key={episode.id}
+                    style={styles.episodeCard}
+                    onClick={() => router.push(episode.route)}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.35)';
+                      e.currentTarget.style.transform = 'translateY(-2px)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
+                      e.currentTarget.style.transform = 'translateY(0)';
+                    }}
+                  >
+                    <div style={styles.episodeContent}>
+                      <h3 style={styles.episodeTitle}>{episode.title}</h3>
+                      <p style={styles.episodeSubtitle}>{episode.subtitle}</p>
+                    </div>
+                    <div style={styles.episodeImageRow}>
+                      {episode.posters.map((poster, index) => (
+                        <img 
+                          key={index}
+                          src={poster} 
+                          alt={`Episode ${episode.id} movie ${index + 1}`} 
+                          style={styles.episodeMovieImage} 
+                        />
+                      ))}
+                    </div>
                   </div>
-                  <div style={styles.episodeImageRow}>
-                    {episode.posters.map((poster, index) => (
-                      <img 
-                        key={index}
-                        src={poster} 
-                        alt={`Episode ${episode.id} movie ${index + 1}`} 
-                        style={styles.episodeMovieImage} 
-                      />
-                    ))}
-                  </div>
+                ))}
+              </div>
+            )}
+
+            {/* Educational Series Section - Only show in default view */}
+            {!currentSeries && seriesData && Object.keys(seriesData).length > 0 && (
+              <div style={styles.seriesOverviewSection}>
+                <h2 style={styles.sectionTitle}>Educational Film Series</h2>
+                <div style={styles.seriesGrid}>
+                  {Object.values(seriesData).slice(0, 3).map((series) => (
+                    <div 
+                      key={series.id}
+                      style={styles.seriesCard}
+                      onClick={() => router.push(`/recs?series=${series.id}`)}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.25)';
+                        e.currentTarget.style.transform = 'translateY(-2px)';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.15)';
+                        e.currentTarget.style.transform = 'translateY(0)';
+                      }}
+                    >
+                      <h3 style={styles.seriesCardTitle}>{series.title}</h3>
+                      <p style={styles.seriesCardDescription}>{series.description}</p>
+                      <div style={styles.episodeCount}>{series.episodes.length} Episodes</div>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+                <button 
+                  style={styles.viewAllSeriesButton}
+                  onClick={() => router.push('/recs/series')}
+                >
+                  View All Educational Series
+                </button>
+              </div>
+            )}
 
             {/* Featured List */}
             {featuredList && (
@@ -279,15 +300,15 @@ export default function RecsPage({ featuredList, otherLists, error }) {
             )}
           </div>
           
-          {/* Streaming Services Box - Conditional based on template config */}
-          {templateConfig.streaming.enabled && (
+          {/* Streaming Services Box - Conditional based on page config */}
+          {pageConfig.streaming.enabled && (
             <div style={styles.streamingBoxBottom}>
               <span style={styles.streamingText}>
                 Your streaming services: {selectedPlatforms.length > 0 ? selectedPlatforms.join(', ') : 'None selected'}
               </span>
               <button 
                 style={styles.editButton}
-                onClick={() => router.push(templateConfig.streaming.editRoute)}
+                onClick={() => router.push(pageConfig.streaming.editRoute)}
               >
                 (edit)
               </button>
@@ -299,14 +320,24 @@ export default function RecsPage({ featuredList, otherLists, error }) {
   )
 }
 
-// Server-Side Rendering: Fetch curated lists from Supabase
-export async function getServerSideProps({ res }) {
+// Server-Side Rendering: Load series data and curated lists
+export async function getServerSideProps({ query, res }) {
   try {
-    // Set cache headers - lists don't change often
+    // Set cache headers
     res.setHeader(
       'Cache-Control',
       'public, s-maxage=1800, stale-while-revalidate=3600'
     );
+    
+    // Load series data from static configuration file
+    let seriesData = {};
+    try {
+      const filePath = path.join(process.cwd(), 'data', 'series-config.json');
+      const fileContent = fs.readFileSync(filePath, 'utf8');
+      seriesData = JSON.parse(fileContent);
+    } catch (seriesError) {
+      console.error('Error loading series config:', seriesError);
+    }
     
     // Server-side Supabase client with service role
     const supabase = createClient(
@@ -314,46 +345,55 @@ export async function getServerSideProps({ res }) {
       process.env.SUPABASE_SERVICE_ROLE_KEY
     )
 
-    // Get one featured list with movies
-    const { data: featuredData, error: featuredError } = await supabase
-      .from('movie_lists')
-      .select(`
-        id,
-        name,
-        slug,
-        claude_description,
-        movies:movie_list_items(
-          movies(
-            id,
-            title,
-            year,
-            slug,
-            poster_url,
-            streaming_data,
-            tmdb_id
+    // Get one featured list with movies (only if not in series view)
+    let featuredData = null;
+    let otherLists = [];
+    
+    if (!query.series) {
+      const { data: featured, error: featuredError } = await supabase
+        .from('movie_lists')
+        .select(`
+          id,
+          name,
+          slug,
+          claude_description,
+          movies:movie_list_items(
+            movies(
+              id,
+              title,
+              year,
+              slug,
+              poster_url,
+              streaming_data,
+              tmdb_id
+            )
           )
-        )
-      `)
-      .eq('is_active', true)
-      .eq('content_type', 'declarative')
-      .limit(1)
-      .single();
+        `)
+        .eq('is_active', true)
+        .eq('content_type', 'declarative')
+        .limit(1)
+        .single();
 
-    if (featuredError && featuredError.code !== 'PGRST116') { // PGRST116 = no rows returned
-      console.error('Featured list query error:', featuredError);
-    }
+      if (featuredError && featuredError.code !== 'PGRST116') {
+        console.error('Featured list query error:', featuredError);
+      } else {
+        featuredData = featured;
+      }
 
-    // Get all other lists for grid
-    const { data: otherLists, error: otherError } = await supabase
-      .from('movie_lists')
-      .select('id, name, slug')
-      .eq('is_active', true)
-      .eq('content_type', 'declarative')
-      .neq('id', featuredData?.id || 0) // Exclude featured list
-      .order('name');
+      // Get all other lists for grid
+      const { data: others, error: otherError } = await supabase
+        .from('movie_lists')
+        .select('id, name, slug')
+        .eq('is_active', true)
+        .eq('content_type', 'declarative')
+        .neq('id', featuredData?.id || 0)
+        .order('name');
 
-    if (otherError) {
-      console.error('Other lists query error:', otherError);
+      if (otherError) {
+        console.error('Other lists query error:', otherError);
+      } else {
+        otherLists = others || [];
+      }
     }
 
     // Transform featured list movies
@@ -364,9 +404,11 @@ export async function getServerSideProps({ res }) {
 
     return {
       props: {
+        seriesData,
         featuredList,
-        otherLists: otherLists || [],
-        error: null
+        otherLists,
+        error: null,
+        selectedPlatforms: [] // Will be loaded client-side
       }
     }
   } catch (error) {
@@ -374,9 +416,11 @@ export async function getServerSideProps({ res }) {
     
     return {
       props: {
+        seriesData: {},
         featuredList: null,
         otherLists: [],
-        error: error.message
+        error: error.message,
+        selectedPlatforms: []
       }
     }
   }
@@ -625,5 +669,73 @@ const styles = {
     backgroundColor: '#fef2f2',
     borderRadius: '8px',
     margin: '16px',
+  },
+  backToAllSeries: {
+    fontSize: '14px',
+    color: '#d1d5db',
+    cursor: 'pointer',
+    marginTop: '8px',
+    padding: '4px 0',
+    transition: 'color 0.2s ease',
+  },
+  seriesOverviewSection: {
+    marginBottom: '32px',
+  },
+  sectionTitle: {
+    fontSize: '20px',
+    fontWeight: '600',
+    color: '#374151',
+    marginBottom: '16px',
+    textAlign: 'left',
+  },
+  seriesGrid: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '16px',
+    marginBottom: '20px',
+  },
+  seriesCard: {
+    padding: '20px',
+    backgroundColor: '#ffffff',
+    borderRadius: '12px',
+    border: '1px solid #d1d5db',
+    boxShadow: '0 4px 15px rgba(0, 0, 0, 0.15)',
+    cursor: 'pointer',
+    transition: 'all 0.3s ease',
+  },
+  seriesCardTitle: {
+    fontSize: '16px',
+    fontWeight: '600',
+    color: '#111827',
+    margin: 0,
+    marginBottom: '6px',
+    lineHeight: '1.3',
+  },
+  seriesCardDescription: {
+    fontSize: '14px',
+    color: '#6b7280',
+    lineHeight: '1.4',
+    margin: 0,
+    marginBottom: '12px',
+  },
+  episodeCount: {
+    fontSize: '12px',
+    fontWeight: '600',
+    color: '#059669',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px',
+  },
+  viewAllSeriesButton: {
+    backgroundColor: '#007AFF',
+    color: 'white',
+    border: 'none',
+    padding: '12px 24px',
+    borderRadius: '8px',
+    fontSize: '16px',
+    fontWeight: '600',
+    cursor: 'pointer',
+    width: '100%',
+    fontFamily: 'inherit',
+    transition: 'background-color 0.2s ease',
   },
 };
