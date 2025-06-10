@@ -358,8 +358,13 @@ export default async function handler(req, res) {
       return res.status(404).json({ error: `Episode ${episodeId} not found in series ${seriesId}` });
     }
 
-    // Generate content dynamically (same pattern as ask page)
-    let rawContent = await generateEpisodeContentFallback(seriesId, episodeId);
+    // Try to load pre-generated content first (for Cinema Through Time episodes)
+    let rawContent = loadEpisodeContent(seriesId, episodeId);
+    
+    // Fallback to dynamic generation if pre-generated content doesn't exist
+    if (!rawContent) {
+      rawContent = await generateEpisodeContentFallback(seriesId, episodeId);
+    }
 
     // Process movies (simplified for now)
     const processedSections = rawContent.sections.map(section => {
