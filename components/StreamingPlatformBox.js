@@ -53,6 +53,18 @@ export default function StreamingPlatformBox() {
 
   return (
     <div style={styles.container}>
+      {/* Expanded State - Platform Selector (appears above when opened) */}
+      {isExpanded && (
+        <div style={styles.expandedView}>
+          <PlatformSelector
+            onSelectionChange={handlePlatformSelectionChange}
+            initialSelected={selectedPlatforms}
+            showSelectedSection={false}
+            showHeader={false}
+          />
+        </div>
+      )}
+      
       {/* Collapsed State - Always Visible */}
       <div style={styles.collapsedView}>
         <span style={styles.streamingText}>
@@ -65,18 +77,6 @@ export default function StreamingPlatformBox() {
           {isExpanded ? 'cancel' : 'edit'}
         </button>
       </div>
-
-      {/* Expanded State - Platform Selector */}
-      {isExpanded && (
-        <div style={styles.expandedView}>
-          <PlatformSelector
-            onSelectionChange={handlePlatformSelectionChange}
-            initialSelected={selectedPlatforms}
-            showSelectedSection={false}
-            showHeader={false}
-          />
-        </div>
-      )}
     </div>
   )
 }
@@ -90,6 +90,8 @@ const styles = {
     boxShadow: '0 2px 6px rgba(0, 0, 0, 0.08)',
     overflow: 'hidden',
     transition: 'all 0.3s ease',
+    display: 'flex',
+    flexDirection: 'column-reverse',
   },
   collapsedView: {
     padding: '16px',
@@ -117,9 +119,9 @@ const styles = {
     transition: 'background-color 0.2s ease',
   },
   expandedView: {
-    borderTop: '1px solid #e5e7eb',
+    borderBottom: '1px solid #e5e7eb',
     padding: '20px',
     backgroundColor: '#ffffff',
-    animation: 'slideDown 0.3s ease-out',
+    animation: 'slideUp 0.3s ease-out',
   },
 }
