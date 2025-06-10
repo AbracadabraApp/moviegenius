@@ -32,13 +32,13 @@ async function visitAllMovieUrls(startOffset = 0) {
                 // Visit the URL
                 await page.goto(movie.url, { 
                     waitUntil: 'networkidle0',
-                    timeout: 60000 
+                    timeout: 90000 
                 });
                 
                 console.log(`✅ Successfully loaded: ${movie.title}`);
                 
-                // Wait 90 seconds after each page visit
-                await new Promise(resolve => setTimeout(resolve, 90000));
+                // Small delay to be respectful, then move to next page
+                await new Promise(resolve => setTimeout(resolve, 2000));
                 
                 visited++;
                 

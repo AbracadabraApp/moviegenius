@@ -5,6 +5,8 @@
  * Fetches person profile image from TMDB API using name and birth year.
  */
 
+import { getCache } from '../../lib/cache.js';
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Only POST method allowed' });
@@ -21,15 +23,29 @@ export default async function handler(req, res) {
   }
 
   try {
-    const tmdbResponse = await fetch(
-      `https://api.themoviedb.org/3/search/person?api_key=${process.env.TMDB_API_KEY}&query=${encodeURIComponent(name)}`
+    // Cache person search with Redis (7-day TTL)
+    const cache = getCache();
+    const tmdbData = await cache.cacheTMDBResponse(
+      'search_person',
+      { name, birthYear },
+      async () => {
+        console.log(`🔄 Cache miss - fetching TMDB person profile for: ${name}${birthYear ? ` (${birthYear})` : ''}`);
+        
+        const tmdbResponse = await fetch(
+          `https://api.themoviedb.org/3/search/person?api_key=${process.env.TMDB_API_KEY}&query=${encodeURIComponent(name)}`
+        );
+        
+        if (!tmdbResponse.ok) {
+          throw new Error('TMDB API request failed');
+        }
+
+        const data = await tmdbResponse.json();
+        console.log(`💾 Cached TMDB person search for: ${name} - ${data.results?.length || 0} results`);
+        
+        return data;
+      }
     );
     
-    if (!tmdbResponse.ok) {
-      throw new Error('TMDB API request failed');
-    }
-
-    const tmdbData = await tmdbResponse.json();
     let person = tmdbData.results?.[0];
     
     // If we have birth year, try to find better match

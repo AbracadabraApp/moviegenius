@@ -13,6 +13,7 @@ import {
   validateRequiredFields,
   checkRateLimit 
 } from '../../lib/api-utils';
+import { getCache } from '../../lib/cache.js';
 
 /**
  * Intelligently saves movie data to Supabase with TMDB integration
@@ -188,34 +189,49 @@ async function saveMovieData(movieData) {
  * // }
  */
 async function fetchFullTMDBData(title, year) {
-  try {
-    const tmdbResponse = await fetch(
-      `https://api.themoviedb.org/3/search/movie?api_key=${process.env.TMDB_API_KEY}&query=${encodeURIComponent(title)}&year=${year}`
-    );
-    
-    if (tmdbResponse.ok) {
-      const tmdbData = await tmdbResponse.json();
-      const movie = tmdbData.results?.[0];
-      
-      if (movie) {
-        return {
-          tmdb_id: movie.id,
-          title: movie.title,
-          year: new Date(movie.release_date).getFullYear() || year,
-          release_date: movie.release_date || null,
-          poster_url: movie.poster_path 
-            ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
-            : null,
-          official_title: movie.title,
-          overview: movie.overview || null
-        };
-      }
-    }
-  } catch (error) {
-    console.error(`Failed to fetch TMDB data for ${title}:`, error);
-  }
+  // Initialize cache service
+  const cache = getCache();
   
-  return null;
+  // Cache TMDB movie search with 7-day TTL
+  return await cache.cacheTMDBResponse(
+    'search_movie',
+    { title, year },
+    async () => {
+      console.log(`🔄 Cache miss - fetching TMDB data for: ${title} (${year})`);
+      
+      try {
+        const tmdbResponse = await fetch(
+          `https://api.themoviedb.org/3/search/movie?api_key=${process.env.TMDB_API_KEY}&query=${encodeURIComponent(title)}&year=${year}`
+        );
+        
+        if (tmdbResponse.ok) {
+          const tmdbData = await tmdbResponse.json();
+          const movie = tmdbData.results?.[0];
+          
+          if (movie) {
+            const result = {
+              tmdb_id: movie.id,
+              title: movie.title,
+              year: new Date(movie.release_date).getFullYear() || year,
+              release_date: movie.release_date || null,
+              poster_url: movie.poster_path 
+                ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+                : null,
+              official_title: movie.title,
+              overview: movie.overview || null
+            };
+            
+            console.log(`💾 Cached TMDB data for: ${title} (${year}) - TMDB ID: ${movie.id}`);
+            return result;
+          }
+        }
+      } catch (error) {
+        console.error(`Failed to fetch TMDB data for ${title}:`, error);
+      }
+      
+      return null;
+    }
+  );
 }
 
 /**
@@ -247,33 +263,47 @@ async function fetchFullTMDBData(title, year) {
  * @throws {Error} When Claude API fails or returns invalid response
  */
 async function generateClaudeResponse(question) {
-  const { Anthropic } = await import('@anthropic-ai/sdk');
-  const { buildPrompt } = await import('../../lib/prompts/builder.js');
+  // Initialize cache service
+  const cache = getCache();
   
-  const anthropic = new Anthropic({
-    apiKey: process.env.ANTHROPIC_API_KEY,
-  });
+  // Try Redis cache first for Claude responses
+  return await cache.cacheClaudeResponse(
+    question, 
+    'claude-3-5-sonnet-20241022',
+    async () => {
+      console.log(`🔄 Cache miss - generating fresh Claude response for: "${question.substring(0, 100)}..."`);
+      
+      const { Anthropic } = await import('@anthropic-ai/sdk');
+      const { buildPrompt } = await import('../../lib/prompts/builder.js');
+      
+      const anthropic = new Anthropic({
+        apiKey: process.env.ANTHROPIC_API_KEY,
+      });
 
-  // Use modular prompt system for ASK context (includes caching and standardized voice)
-  const promptConfig = buildPrompt('ASK', 'Include 3-4 accessibly written Explore Further topics for additional explorations. End with extensive "More Ideas" list containing up to 50 relevant movies.');
+      // Use modular prompt system for ASK context (includes caching and standardized voice)
+      const promptConfig = buildPrompt('ASK', 'Include 3-4 accessibly written Explore Further topics for additional explorations. End with extensive "More Ideas" list containing up to 50 relevant movies.');
 
-  try {
-    const message = await anthropic.messages.create({
-      ...promptConfig,
-      messages: [
-        {
-          role: 'user',
-          content: question
-        }
-      ]
-    });
+      try {
+        const message = await anthropic.messages.create({
+          ...promptConfig,
+          messages: [
+            {
+              role: 'user',
+              content: question
+            }
+          ]
+        });
 
-    return parseClaudeResponse(message.content[0].text);
-  } catch (error) {
-    console.error('Claude API Error:', error);
-    // Fallback to sophisticated response
-    return generateSophisticatedResponse(question);
-  }
+        const parsedResponse = parseClaudeResponse(message.content[0].text);
+        console.log(`💾 Cached fresh Claude response for: "${question.substring(0, 50)}..."`);
+        return parsedResponse;
+      } catch (error) {
+        console.error('🔴 Claude API Error:', error);
+        // Fallback to sophisticated response
+        return generateSophisticatedResponse(question);
+      }
+    }
+  );
 }
 
 /**

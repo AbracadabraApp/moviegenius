@@ -6,6 +6,8 @@
  * Returns organized cast and crew data with hierarchy for key people.
  */
 
+import { getCache } from '../../lib/cache.js';
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Only POST method allowed' });
@@ -22,15 +24,28 @@ export default async function handler(req, res) {
   }
 
   try {
-    const tmdbResponse = await fetch(
-      `https://api.themoviedb.org/3/movie/${tmdbId}/credits?api_key=${process.env.TMDB_API_KEY}`
-    );
-    
-    if (!tmdbResponse.ok) {
-      throw new Error('TMDB API request failed');
-    }
+    // Cache movie credits with Redis (7-day TTL)
+    const cache = getCache();
+    const credits = await cache.cacheTMDBResponse(
+      'movie_credits',
+      { tmdbId },
+      async () => {
+        console.log(`🔄 Cache miss - fetching TMDB credits for movie ID: ${tmdbId}`);
+        
+        const tmdbResponse = await fetch(
+          `https://api.themoviedb.org/3/movie/${tmdbId}/credits?api_key=${process.env.TMDB_API_KEY}`
+        );
+        
+        if (!tmdbResponse.ok) {
+          throw new Error('TMDB API request failed');
+        }
 
-    const credits = await tmdbResponse.json();
+        const creditsData = await tmdbResponse.json();
+        console.log(`💾 Cached TMDB credits for movie ID: ${tmdbId} - ${creditsData.cast?.length || 0} cast, ${creditsData.crew?.length || 0} crew`);
+        
+        return creditsData;
+      }
+    );
     
     // Process cast data
     const allCast = credits.cast?.map(person => ({
