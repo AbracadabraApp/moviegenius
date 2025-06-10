@@ -5,33 +5,29 @@
  * Returns same data structure as ask-claude for consistency.
  */
 
-// Series and episode metadata - will move to database
-const seriesData = {
-  '2': {
-    id: 2,
-    title: "Cinema Through Time - 1970-2025",
-    description: "How film evolved from the auteur renaissance through the present day",
-    episodes: [
-      { id: 1, title: "1970s: The Auteur Renaissance", subtitle: "When directors became superstars" },
-      { id: 2, title: "1980s: Blockbuster Revolution", subtitle: "High-concept cinema takes over" },
-      { id: 3, title: "1990s: Independent Renaissance", subtitle: "Bold voices outside the system" },
-      { id: 4, title: "2010s-2025: Global Cinema Rising", subtitle: "World cinema goes mainstream" }
-    ]
-  },
-  '4': {
-    id: 4,
-    title: "International New Waves - 1950-1980",
-    description: "Revolutionary cinema movements that transformed filmmaking worldwide",
-    episodes: [
-      { id: 1, title: "French New Wave: Breathless Revolution", subtitle: "Godard, Truffaut and the cinema of freedom" },
-      { id: 2, title: "Italian Neorealism: Truth in Cinema", subtitle: "Post-war reality on the streets" },
-      { id: 3, title: "British Kitchen Sink & Social Realism", subtitle: "Working class stories break through" },
-      { id: 4, title: "Japanese New Wave: Oshima & Imamura", subtitle: "Radical voices from the East" },
-      { id: 5, title: "Czech New Wave: Behind Iron Curtain", subtitle: "Artistic rebellion in Communist Europe" },
-      { id: 6, title: "German New Cinema: Herzog & Fassbinder", subtitle: "New German Cinema emerges" }
-    ]
+// Import series configuration
+import fs from 'fs';
+import path from 'path';
+
+// Load series data from static configuration file
+function loadSeriesData() {
+  try {
+    const filePath = path.join(process.cwd(), 'data', 'series-config.json');
+    const fileContent = fs.readFileSync(filePath, 'utf8');
+    return JSON.parse(fileContent);
+  } catch (error) {
+    console.error('Error loading series config:', error);
+    // Fallback to basic structure
+    return {
+      '2': {
+        id: 2,
+        title: "Cinema Through Time - 1970-2025",
+        description: "How film evolved from the auteur renaissance through the present day",
+        episodes: []
+      }
+    };
   }
-};
+}
 
 // Simplified movie data processing for testing
 function processMovieData(movieData) {
@@ -53,6 +49,7 @@ async function generateEpisodeContent(seriesId, episodeId) {
   });
 
   // Get episode metadata for prompt
+  const seriesData = loadSeriesData();
   const series = seriesData[seriesId];
   const episode = series?.episodes.find(ep => ep.id.toString() === episodeId);
   
@@ -64,39 +61,47 @@ async function generateEpisodeContent(seriesId, episodeId) {
   const systemPrompt = `You are a film expert providing thorough, professional analysis. You have encyclopedic knowledge of films from all eras and countries.
 
 CRITICAL REQUIREMENTS:
-- START with OPENER: [one compelling sentence]
-- Keep each PARAGRAPH: to exactly 2-3 sentences maximum
-- Use SUBHEAD: every 2-3 paragraphs when topic shifts
+- START with OPENER: [one compelling sentence that captures the essence]
+- Write EXACTLY 6 PARAGRAPH sections (no more, no less)
+- Each PARAGRAPH: should be 3-4 sentences and include specific film titles
 - ONLY include MOVIES: for films mentioned by title in that paragraph
-- End with extensive MORE_IDEAS: list
+- End with extensive MORE_IDEAS: list (8-10 additional films)
 
 STRUCTURE EXAMPLE:
 OPENER: [one sentence that captures the essence]
-PARAGRAPH: [2-3 sentences with film titles mentioned]
+PARAGRAPH: [3-4 sentences with specific film titles mentioned]
 MOVIES: The Godfather|1972|Coppola's epic family saga|Available on Paramount+
-SUBHEAD: Technical Innovation
-PARAGRAPH: [2-3 sentences about cinematography/sound]
-PARAGRAPH: [2-3 sentences mentioning more films]
+PARAGRAPH: [3-4 sentences about related films/directors]
 MOVIES: Taxi Driver|1976|Scorsese's urban nightmare|Available on multiple platforms
-MORE_IDEAS: Mean Streets|1973|Early Scorsese masterpiece|Criterion Channel
+PARAGRAPH: [3-4 sentences mentioning more films]
+MOVIES: Mean Streets|1973|Early Scorsese masterpiece|Criterion Channel
+PARAGRAPH: [3-4 sentences about techniques/innovations]
+MOVIES: [relevant films for this paragraph]
+PARAGRAPH: [3-4 sentences about cultural impact]
+MOVIES: [relevant films for this paragraph]
+PARAGRAPH: [3-4 sentences about legacy/influence]
+MOVIES: [relevant films for this paragraph]
+MORE_IDEAS: [8-10 additional films with format: Title|Year|Description|Platform]
 
-You MUST follow this exact format. Keep paragraphs short (2-3 sentences). Use subheads to break up topics.`;
+You MUST write exactly 6 paragraphs. Each paragraph should mention specific films by title.`;
 
   const userPrompt = `Create comprehensive educational content for "${series.title}" - Episode: "${episode.title}: ${episode.subtitle}".
 
 CRITICAL FORMATTING REQUIREMENTS:
-- Keep paragraphs to 2-3 sentences maximum
-- Use SUBHEAD: every 2-3 paragraphs when focus shifts
+- Write EXACTLY 6 paragraphs (no more, no less)
+- Each paragraph should be 3-4 sentences
+- Each paragraph MUST mention specific film titles
 - Follow the exact format specified in system prompt
 
-Provide analysis covering:
-- Historical context and significance
-- Key films with specific examples and analysis
-- Technical and artistic innovations
-- Cultural impact and lasting influence
-- Evolution and legacy
+Structure your 6 paragraphs to cover:
+1. Historical context and key breakthrough films
+2. Major directors and their signature works
+3. Technical and artistic innovations with examples
+4. Genre-defining films and their impact
+5. Cultural influence and box office success
+6. Legacy and influence on modern cinema
 
-Write 8-10 SHORT paragraphs (2-3 sentences each) with extensive movie and people examples throughout. Focus on film school level depth and analysis but keep individual paragraphs concise.`;
+Write exactly 6 substantial paragraphs with specific film titles and director names throughout. Focus on film school level depth but keep structure clear and organized.`;
 
   try {
     const message = await anthropic.messages.create({
@@ -307,7 +312,8 @@ export default async function handler(req, res) {
   }
 
   try {
-    // Get series metadata
+    // Get series metadata from static config
+    const seriesData = loadSeriesData();
     const series = seriesData[seriesId];
     if (!series) {
       return res.status(404).json({ error: `Series ${seriesId} not found` });

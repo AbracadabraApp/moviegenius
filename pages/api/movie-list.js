@@ -9,10 +9,71 @@
 import { createClient } from '@supabase/supabase-js';
 
 export default async function handler(req, res) {
-  if (req.method !== 'GET') {
-    return res.status(405).json({ error: 'Only GET method allowed' });
+  if (req.method === 'GET') {
+    return handleGet(req, res);
+  } else if (req.method === 'POST') {
+    return handlePost(req, res);
+  } else {
+    return res.status(405).json({ error: 'Only GET and POST methods allowed' });
+  }
+}
+
+async function handlePost(req, res) {
+  const { name, description, content_type, claude_prompt } = req.body;
+
+  if (!name) {
+    return res.status(400).json({ error: 'List name is required' });
   }
 
+  try {
+    const supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL,
+      process.env.SUPABASE_SERVICE_ROLE_KEY
+    );
+
+    // Generate slug from name
+    const slug = name.toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-|-$/g, '');
+
+    // Create new list
+    const { data: newList, error: createError } = await supabase
+      .from('movie_lists')
+      .insert({
+        name,
+        slug,
+        description: description || null,
+        content_type: content_type || 'declarative',
+        claude_prompt: claude_prompt || null,
+        is_active: true,
+        created_at: new Date().toISOString()
+      })
+      .select()
+      .single();
+
+    if (createError) {
+      if (createError.code === '23505') { // Unique constraint violation
+        return res.status(409).json({ error: 'List with this name already exists' });
+      }
+      throw createError;
+    }
+
+    res.status(201).json({
+      success: true,
+      message: 'List created successfully',
+      list: newList
+    });
+
+  } catch (error) {
+    console.error('Error creating list:', error);
+    res.status(500).json({ 
+      error: 'Failed to create list',
+      details: error.message
+    });
+  }
+}
+
+async function handleGet(req, res) {
   const { slug } = req.query;
 
   if (!slug) {

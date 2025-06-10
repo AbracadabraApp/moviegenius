@@ -233,28 +233,47 @@ export default function SeriesEpisodePage() {
                 </div>
               )}
               
-              {/* Series Navigation */}
+              {/* More Episodes Section */}
               {series && series.episodes && (
-                <div style={styles.seriesNavigation}>
-                  <h3 style={styles.seriesNavTitle}>{series.title}</h3>
-                  <div style={styles.episodesList}>
-                    {series.episodes.map((ep) => (
-                      <div 
-                        key={ep.id}
-                        style={{
-                          ...styles.episodeNavItem,
-                          ...(ep.id.toString() === episodeId ? styles.episodeNavItemActive : {})
-                        }}
-                        onClick={() => {
-                          if (ep.id.toString() !== episodeId) {
+                <div style={styles.moreEpisodesSection}>
+                  <h3 style={styles.moreEpisodesTitle}>More Episodes in Cinema Through Time</h3>
+                  <div style={styles.episodeGrid}>
+                    {series.episodes
+                      .filter(ep => ep.id.toString() !== episodeId)
+                      .map((ep) => (
+                        <div 
+                          key={ep.id}
+                          style={styles.episodeCard}
+                          onClick={() => {
                             router.push(`/recs/series/${seriesId}/${ep.id}`);
-                          }
-                        }}
-                      >
-                        <div style={styles.episodeNavTitle}>{ep.title}</div>
-                        <div style={styles.episodeNavSubtitle}>{ep.subtitle}</div>
-                      </div>
-                    ))}
+                          }}
+                          onMouseEnter={(e) => {
+                            e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.35)';
+                            e.currentTarget.style.transform = 'translateY(-2px)';
+                          }}
+                          onMouseLeave={(e) => {
+                            e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
+                            e.currentTarget.style.transform = 'translateY(0)';
+                          }}
+                        >
+                          <div style={styles.episodeContent}>
+                            <h3 style={styles.episodeCardTitle}>{ep.title}</h3>
+                            <p style={styles.episodeCardSubtitle}>{ep.subtitle}</p>
+                          </div>
+                          {ep.posters && (
+                            <div style={styles.episodeImageRow}>
+                              {ep.posters.map((poster, index) => (
+                                <img
+                                  key={index}
+                                  src={poster}
+                                  alt={`${ep.title} movie ${index + 1}`}
+                                  style={styles.episodeMovieImage}
+                                />
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      ))}
                   </div>
                 </div>
               )}
@@ -299,8 +318,6 @@ const styles = {
     zIndex: 100,
     padding: '16px',
     backgroundColor: '#ffffff',
-    borderBottom: '1px solid #e5e7eb',
-    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
   },
   scrollableContent: {
     flex: 1,
@@ -401,48 +418,20 @@ const styles = {
     textAlign: 'left',
     paddingLeft: '16px',
   },
-  seriesNavigation: {
-    marginTop: '32px',
-    padding: '20px',
-    backgroundColor: '#f8fafc',
-    borderRadius: '12px',
-    border: '1px solid #e2e8f0',
+  moreEpisodesSection: {
+    marginTop: '40px',
   },
-  seriesNavTitle: {
-    fontSize: '16px',
+  moreEpisodesTitle: {
+    fontSize: '18px',
     fontWeight: '600',
     color: '#374151',
     marginBottom: '16px',
     textAlign: 'left',
   },
-  episodesList: {
+  episodeGrid: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '8px',
-  },
-  episodeNavItem: {
-    padding: '12px 16px',
-    backgroundColor: '#ffffff',
-    border: '1px solid #e5e7eb',
-    borderRadius: '8px',
-    cursor: 'pointer',
-    transition: 'all 0.2s ease',
-  },
-  episodeNavItemActive: {
-    backgroundColor: '#f1f5f9',
-    borderColor: '#cbd5e1',
-    borderWidth: '2px',
-  },
-  episodeNavTitle: {
-    fontSize: '14px',
-    fontWeight: '600',
-    color: '#111827',
-    marginBottom: '2px',
-  },
-  episodeNavSubtitle: {
-    fontSize: '12px',
-    color: '#6b7280',
-    lineHeight: '1.3',
+    gap: '12px',
   },
   exploreFurtherSection: {
     marginTop: '32px',
@@ -481,5 +470,56 @@ const styles = {
     borderRadius: '8px',
     lineHeight: '1.4',
     fontStyle: 'italic',
+  },
+  episodeCard: {
+    display: 'flex',
+    flexDirection: 'column',
+    backgroundColor: '#ffffff',
+    borderRadius: '12px',
+    border: '1px solid #d1d5db',
+    boxShadow: '0 6px 20px rgba(0, 0, 0, 0.25)',
+    marginBottom: '30px',
+    cursor: 'pointer',
+    transition: 'all 0.3s ease',
+    overflow: 'hidden',
+  },
+  episodeContent: {
+    padding: '24px',
+    backgroundColor: '#ffffff',
+  },
+  episodeCardTitle: {
+    fontSize: '16px',
+    fontWeight: '600',
+    color: '#111827',
+    marginBottom: '4px',
+    lineHeight: '1.3',
+    margin: 0,
+    marginBottom: '6px',
+    wordWrap: 'break-word',
+    whiteSpace: 'normal',
+    overflow: 'visible',
+  },
+  episodeCardSubtitle: {
+    fontSize: '14px',
+    color: '#6b7280',
+    lineHeight: '1.3',
+    margin: 0,
+    wordWrap: 'break-word',
+    whiteSpace: 'normal',
+    overflow: 'visible',
+  },
+  episodeImageRow: {
+    display: 'flex',
+    width: '100%',
+    height: '80px',
+    overflow: 'hidden',
+  },
+  episodeMovieImage: {
+    flex: 1,
+    height: '100%',
+    objectFit: 'cover',
+    objectPosition: 'center top',
+    filter: 'brightness(0.8) contrast(0.9) saturate(0.7)',
+    opacity: 0.85,
   },
 };
