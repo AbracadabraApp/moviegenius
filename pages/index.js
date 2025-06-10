@@ -1,52 +1,14 @@
-import PhoneFrame from '../components/PhoneFrame'
-import PlatformSelector from '../components/PlatformSelector'
-import CinemaThroughTime from '../components/CinemaThroughTime'
-import { useRouter } from 'next/router'
-import { useEffect } from 'react'
-
 export default function HomePage() {
-  const router = useRouter()
-  
-  // Redirect to /recs page
-  useEffect(() => {
-    router.push('/recs')
-  }, [router])
-  const handlePlatformSelectionChange = (selectedPlatforms) => {
-    // Save to localStorage so You page can access the data
-    localStorage.setItem('selectedPlatforms', JSON.stringify(selectedPlatforms))
-    console.log('Saved platforms to localStorage:', selectedPlatforms)
-    
-    // Dispatch custom event for same-tab updates
-    window.dispatchEvent(new CustomEvent('platformsUpdated'))
-  }
-  
-  return (
-    <PhoneFrame>
-      <div style={styles.container}>
-        {/* Cinema Through Time Parallax Section */}
-        <CinemaThroughTime />
-        
-        <div style={styles.contentSection}>
-          <PlatformSelector 
-            onSelectionChange={handlePlatformSelectionChange}
-            showSelectedSection={false}
-          />
-        </div>
-      </div>
-    </PhoneFrame>
-  )
+  return <div>Redirecting...</div>
 }
 
-export async function getServerSideProps({ res }) {
-  // Cache index page for 1 hour, stale-while-revalidate for 24 hours
-  res.setHeader(
-    'Cache-Control',
-    'public, s-maxage=3600, stale-while-revalidate=86400'
-  );
-  
+export async function getServerSideProps() {
   return {
-    props: {}
-  };
+    redirect: {
+      destination: '/recs',
+      permanent: false,
+    },
+  }
 }
 
 const styles = {

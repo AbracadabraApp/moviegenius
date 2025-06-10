@@ -1,4 +1,4 @@
-// pages/recs.js - Dynamic series page that can display any series OR curated lists
+// pages/recs.js - Curated movie recommendations and series
 import { createClient } from '@supabase/supabase-js'
 import PhoneFrame from '../components/PhoneFrame'
 import AskInputBar from '../components/AskInputBar'
@@ -6,59 +6,11 @@ import MediaCard from '../components/MediaCard'
 import { useRouter } from 'next/router'
 import { underlineProperNames } from '../lib/proper-names'
 import { useState, useEffect } from 'react'
-import fs from 'fs'
-import path from 'path'
+import StreamingPlatformBox from '../components/StreamingPlatformBox'
 
-export default function RecsPage({ seriesData, featuredList, otherLists, error, selectedPlatforms: initialPlatforms }) {
+export default function RecsPage({ featuredList, otherLists, error }) {
   const router = useRouter()
-  const { series: seriesId } = router.query // Check for ?series=2 parameter
-  const [selectedPlatforms, setSelectedPlatforms] = useState(initialPlatforms || [])
-  
-  // Determine if we're showing a specific series or the default lists view
-  const currentSeries = seriesId && seriesData ? seriesData[seriesId] : null
-  
-  // Dynamic configuration based on series or default
-  const pageConfig = currentSeries ? {
-    // Series view configuration
-    hero: {
-      imageNumber: currentSeries.id || 1,
-      alt: currentSeries.title
-    },
-    series: {
-      pillText: "Series",
-      title: currentSeries.title,
-      subtitle: currentSeries.description
-    },
-    episodes: currentSeries.episodes.map(episode => ({
-      id: episode.id,
-      route: `/recs/series/${seriesId}/${episode.id}`,
-      title: episode.title,
-      subtitle: episode.subtitle,
-      posters: episode.posters || []
-    })),
-    streaming: {
-      enabled: true,
-      editRoute: '/you#platforms'
-    }
-  } : {
-    // Default lists view configuration  
-    hero: {
-      imageNumber: 1,
-      alt: "MovieGenius Recommendations"
-    },
-    series: {
-      pillText: "Curated",
-      title: "Film Recommendations",
-      subtitle: "Discover great movies and educational series"
-    },
-    episodes: [], // No episodes in default view
-    streaming: {
-      enabled: true,
-      editRoute: '/you#platforms'
-    }
-  }
-
-  const [currentHeroImage, setCurrentHeroImage] = useState(pageConfig.hero.imageNumber)
+  const [currentHeroImage, setCurrentHeroImage] = useState(1)
 
   // Hero image text color settings - adjust per image
   const heroTextSettings = {
@@ -77,31 +29,6 @@ export default function RecsPage({ seriesData, featuredList, otherLists, error, 
 
   const currentTextStyle = heroTextSettings[currentHeroImage] || 'light'
 
-  // Load selected platforms from localStorage
-  useEffect(() => {
-    const loadSelectedPlatforms = () => {
-      try {
-        const saved = localStorage.getItem('selectedPlatforms')
-        if (saved) {
-          const platforms = JSON.parse(saved)
-          setSelectedPlatforms(platforms)
-        }
-      } catch (error) {
-        console.error('Error loading platforms from localStorage:', error)
-        setSelectedPlatforms([])
-      }
-    }
-
-    loadSelectedPlatforms()
-
-    // Listen for platform updates
-    const handlePlatformUpdate = () => {
-      loadSelectedPlatforms()
-    }
-    
-    window.addEventListener('platformsUpdated', handlePlatformUpdate)
-    return () => window.removeEventListener('platformsUpdated', handlePlatformUpdate)
-  }, [])
 
   const handleAsk = (query) => {
     router.push({
@@ -110,10 +37,6 @@ export default function RecsPage({ seriesData, featuredList, otherLists, error, 
     })
   }
 
-  const handleEditPlatforms = () => {
-    // Navigate to You page with platforms section expanded
-    router.push('/you#platforms')
-  }
 
   if (error) {
     return (
@@ -143,100 +66,124 @@ export default function RecsPage({ seriesData, featuredList, otherLists, error, 
           {/* Hero Image - Scrolls normally */}
           <div style={styles.heroImageContainer}>
             <img 
-              src={`/images/hero-rotation/hero-${pageConfig.hero.imageNumber}.jpg`} 
-              alt={pageConfig.hero.alt}
+              src={`/images/hero-rotation/hero-${currentHeroImage}.jpg`} 
+              alt="Cinema Through Time"
               style={styles.heroImage}
             />
           </div>
           
-          {/* Series Header - Pill scrolls away */}
-          <div style={styles.seriesHeaderField}>
-            <div style={styles.seriesLabelPill}>{pageConfig.series.pillText}</div>
-            {currentSeries && (
-              <div style={styles.backToAllSeries} onClick={() => router.push('/recs/series')}>
-                ← Browse All Series
-              </div>
-            )}
-          </div>
-          
-          {/* Sticky Title Section - Only headline sticks */}
-          <div style={styles.stickyTitleHeader}>
-            <div style={styles.titleHeaderField}>
-              <div style={styles.seriesTitle}>{pageConfig.series.title}</div>
-              <div style={styles.seriesSubhead}>{pageConfig.series.subtitle}</div>
+          {/* Sticky Series Header - Sticks when it hits ask bar */}
+          <div style={styles.stickySeriesHeader}>
+            <div style={styles.seriesHeaderField}>
+              <div style={styles.seriesLabelPill}>Series</div>
+              <div style={styles.seriesTitle}>Cinema Through Time</div>
+              <div style={styles.seriesSubhead}>Discover how film evolved through the decades</div>
             </div>
           </div>
         
           <div style={styles.content}>
-            {/* Episode Cards - Only show if we have episodes (series view) */}
-            {pageConfig.episodes.length > 0 && (
-              <div style={styles.episodesSection}>
-                {pageConfig.episodes.map((episode) => (
-                  <div 
-                    key={episode.id}
-                    style={styles.episodeCard}
-                    onClick={() => router.push(episode.route)}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.35)';
-                      e.currentTarget.style.transform = 'translateY(-2px)';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
-                      e.currentTarget.style.transform = 'translateY(0)';
-                    }}
-                  >
-                    <div style={styles.episodeContent}>
-                      <h3 style={styles.episodeTitle}>{episode.title}</h3>
-                      <p style={styles.episodeSubtitle}>{episode.subtitle}</p>
-                    </div>
-                    <div style={styles.episodeImageRow}>
-                      {episode.posters.map((poster, index) => (
-                        <img 
-                          key={index}
-                          src={poster} 
-                          alt={`Episode ${episode.id} movie ${index + 1}`} 
-                          style={styles.episodeMovieImage} 
-                        />
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-
-            {/* Educational Series Section - Only show in default view */}
-            {!currentSeries && seriesData && Object.keys(seriesData).length > 0 && (
-              <div style={styles.seriesOverviewSection}>
-                <h2 style={styles.sectionTitle}>Educational Film Series</h2>
-                <div style={styles.seriesGrid}>
-                  {Object.values(seriesData).slice(0, 3).map((series) => (
-                    <div 
-                      key={series.id}
-                      style={styles.seriesCard}
-                      onClick={() => router.push(`/recs?series=${series.id}`)}
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.25)';
-                        e.currentTarget.style.transform = 'translateY(-2px)';
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.15)';
-                        e.currentTarget.style.transform = 'translateY(0)';
-                      }}
-                    >
-                      <h3 style={styles.seriesCardTitle}>{series.title}</h3>
-                      <p style={styles.seriesCardDescription}>{series.description}</p>
-                      <div style={styles.episodeCount}>{series.episodes.length} Episodes</div>
-                    </div>
-                  ))}
+            {/* Cinema Through Time Episode Cards */}
+            <div style={styles.episodesSection}>
+              {/* Episode 1 */}
+              <div 
+                style={styles.episodeCard}
+                onClick={() => router.push('/recs/series/2/1')}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.35)';
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                }}
+              >
+                <div style={styles.episodeContent}>
+                  <h3 style={styles.episodeTitle}>1970s: The Auteur Renaissance</h3>
+                  <p style={styles.episodeSubtitle}>When directors became superstars</p>
                 </div>
-                <button 
-                  style={styles.viewAllSeriesButton}
-                  onClick={() => router.push('/recs/series')}
-                >
-                  View All Educational Series
-                </button>
+                <div style={styles.episodeImageRow}>
+                  <img src="/images/posters/the-godfather.jpg" alt="The Godfather" style={styles.episodeMovieImage} />
+                  <img src="/images/posters/taxi-driver.jpg" alt="Taxi Driver" style={styles.episodeMovieImage} />
+                  <img src="/images/posters/apocalypse-now.jpg" alt="Apocalypse Now" style={styles.episodeMovieImage} />
+                  <img src="/images/posters/annie-hall.jpg" alt="Annie Hall" style={styles.episodeMovieImage} />
+                </div>
               </div>
-            )}
+
+              {/* Episode 2 */}
+              <div 
+                style={styles.episodeCard}
+                onClick={() => router.push('/recs/series/2/2')}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.35)';
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                }}
+              >
+                <div style={styles.episodeContent}>
+                  <h3 style={styles.episodeTitle}>1980s: Blockbuster Revolution</h3>
+                  <p style={styles.episodeSubtitle}>High-concept cinema takes over</p>
+                </div>
+                <div style={styles.episodeImageRow}>
+                  <img src="/images/posters/star-wars.jpg" alt="Star Wars" style={styles.episodeMovieImage} />
+                  <img src="/images/posters/raiders-of-the-lost-ark.jpg" alt="Raiders of the Lost Ark" style={styles.episodeMovieImage} />
+                  <img src="/images/posters/e-t-the-extra-terrestrial.jpg" alt="E.T." style={styles.episodeMovieImage} />
+                  <img src="/images/posters/blade-runner.jpg" alt="Blade Runner" style={styles.episodeMovieImage} />
+                </div>
+              </div>
+
+              {/* Episode 3 */}
+              <div 
+                style={styles.episodeCard}
+                onClick={() => router.push('/recs/series/2/3')}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.35)';
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                }}
+              >
+                <div style={styles.episodeContent}>
+                  <h3 style={styles.episodeTitle}>1990s: Independent Renaissance</h3>
+                  <p style={styles.episodeSubtitle}>Bold voices outside the system</p>
+                </div>
+                <div style={styles.episodeImageRow}>
+                  <img src="/images/posters/pulp-fiction.jpg" alt="Pulp Fiction" style={styles.episodeMovieImage} />
+                  <img src="/images/posters/goodfellas.jpg" alt="Goodfellas" style={styles.episodeMovieImage} />
+                  <img src="/images/posters/forrest-gump.jpg" alt="Forrest Gump" style={styles.episodeMovieImage} />
+                  <img src="/images/posters/the-silence-of-the-lambs.jpg" alt="The Silence of the Lambs" style={styles.episodeMovieImage} />
+                </div>
+              </div>
+
+              {/* Episode 4 */}
+              <div 
+                style={styles.episodeCard}
+                onClick={() => router.push('/recs/series/2/4')}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.35)';
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                }}
+              >
+                <div style={styles.episodeContent}>
+                  <h3 style={styles.episodeTitle}>2010s-2020s: Global Cinema Rising</h3>
+                  <p style={styles.episodeSubtitle}>World cinema goes mainstream</p>
+                </div>
+                <div style={styles.episodeImageRow}>
+                  <img src="/images/posters/the-lord-of-the-rings-the-fellowship-of-the-ring.jpg" alt="Lord of the Rings" style={styles.episodeMovieImage} />
+                  <img src="/images/posters/the-sixth-sense.jpg" alt="The Sixth Sense" style={styles.episodeMovieImage} />
+                  <img src="/images/posters/saving-private-ryan.jpg" alt="Saving Private Ryan" style={styles.episodeMovieImage} />
+                  <img src="/images/posters/titanic.jpg" alt="Titanic" style={styles.episodeMovieImage} />
+                </div>
+              </div>
+            </div>
 
             {/* Featured List */}
             {featuredList && (
@@ -300,44 +247,22 @@ export default function RecsPage({ seriesData, featuredList, otherLists, error, 
             )}
           </div>
           
-          {/* Streaming Services Box - Conditional based on page config */}
-          {pageConfig.streaming.enabled && (
-            <div style={styles.streamingBoxBottom}>
-              <span style={styles.streamingText}>
-                Your streaming services: {selectedPlatforms.length > 0 ? selectedPlatforms.join(', ') : 'None selected'}
-              </span>
-              <button 
-                style={styles.editButton}
-                onClick={() => router.push(pageConfig.streaming.editRoute)}
-              >
-                (edit)
-              </button>
-            </div>
-          )}
+          {/* Enhanced Streaming Platform Selector */}
+          <StreamingPlatformBox />
         </div>
       </div>
     </PhoneFrame>
   )
 }
 
-// Server-Side Rendering: Load series data and curated lists
-export async function getServerSideProps({ query, res }) {
+// Server-Side Rendering: Fetch curated lists from Supabase
+export async function getServerSideProps({ res }) {
   try {
-    // Set cache headers
+    // Set cache headers - lists don't change often
     res.setHeader(
       'Cache-Control',
       'public, s-maxage=1800, stale-while-revalidate=3600'
     );
-    
-    // Load series data from static configuration file
-    let seriesData = {};
-    try {
-      const filePath = path.join(process.cwd(), 'data', 'series-config.json');
-      const fileContent = fs.readFileSync(filePath, 'utf8');
-      seriesData = JSON.parse(fileContent);
-    } catch (seriesError) {
-      console.error('Error loading series config:', seriesError);
-    }
     
     // Server-side Supabase client with service role
     const supabase = createClient(
@@ -345,55 +270,46 @@ export async function getServerSideProps({ query, res }) {
       process.env.SUPABASE_SERVICE_ROLE_KEY
     )
 
-    // Get one featured list with movies (only if not in series view)
-    let featuredData = null;
-    let otherLists = [];
-    
-    if (!query.series) {
-      const { data: featured, error: featuredError } = await supabase
-        .from('movie_lists')
-        .select(`
-          id,
-          name,
-          slug,
-          claude_description,
-          movies:movie_list_items(
-            movies(
-              id,
-              title,
-              year,
-              slug,
-              poster_url,
-              streaming_data,
-              tmdb_id
-            )
+    // Get one featured list with movies
+    const { data: featuredData, error: featuredError } = await supabase
+      .from('movie_lists')
+      .select(`
+        id,
+        name,
+        slug,
+        claude_description,
+        movies:movie_list_items(
+          movies(
+            id,
+            title,
+            year,
+            slug,
+            poster_url,
+            streaming_data,
+            tmdb_id
           )
-        `)
-        .eq('is_active', true)
-        .eq('content_type', 'declarative')
-        .limit(1)
-        .single();
+        )
+      `)
+      .eq('is_active', true)
+      .eq('content_type', 'declarative')
+      .limit(1)
+      .single();
 
-      if (featuredError && featuredError.code !== 'PGRST116') {
-        console.error('Featured list query error:', featuredError);
-      } else {
-        featuredData = featured;
-      }
+    if (featuredError && featuredError.code !== 'PGRST116') { // PGRST116 = no rows returned
+      console.error('Featured list query error:', featuredError);
+    }
 
-      // Get all other lists for grid
-      const { data: others, error: otherError } = await supabase
-        .from('movie_lists')
-        .select('id, name, slug')
-        .eq('is_active', true)
-        .eq('content_type', 'declarative')
-        .neq('id', featuredData?.id || 0)
-        .order('name');
+    // Get all other lists for grid
+    const { data: otherLists, error: otherError } = await supabase
+      .from('movie_lists')
+      .select('id, name, slug')
+      .eq('is_active', true)
+      .eq('content_type', 'declarative')
+      .neq('id', featuredData?.id || 0) // Exclude featured list
+      .order('name');
 
-      if (otherError) {
-        console.error('Other lists query error:', otherError);
-      } else {
-        otherLists = others || [];
-      }
+    if (otherError) {
+      console.error('Other lists query error:', otherError);
     }
 
     // Transform featured list movies
@@ -404,11 +320,9 @@ export async function getServerSideProps({ query, res }) {
 
     return {
       props: {
-        seriesData,
         featuredList,
-        otherLists,
-        error: null,
-        selectedPlatforms: [] // Will be loaded client-side
+        otherLists: otherLists || [],
+        error: null
       }
     }
   } catch (error) {
@@ -416,11 +330,9 @@ export async function getServerSideProps({ query, res }) {
     
     return {
       props: {
-        seriesData: {},
         featuredList: null,
         otherLists: [],
-        error: error.message,
-        selectedPlatforms: []
+        error: error.message
       }
     }
   }
@@ -513,18 +425,12 @@ const styles = {
     lineHeight: '1.3',
     margin: 0,
     marginBottom: '6px',
-    wordWrap: 'break-word',
-    whiteSpace: 'normal',
-    overflow: 'visible',
   },
   episodeSubtitle: {
     fontSize: '14px',
     color: '#6b7280',
     lineHeight: '1.3',
     margin: 0,
-    wordWrap: 'break-word',
-    whiteSpace: 'normal',
-    overflow: 'visible',
   },
   featuredSection: {
     marginBottom: '32px',
@@ -623,17 +529,7 @@ const styles = {
     margin: 0,
   },
   seriesHeaderField: {
-    padding: '20px 16px 12px 16px',
-    background: 'linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%)',
-  },
-  stickyTitleHeader: {
-    position: 'sticky',
-    top: '0px', // Stick right to the top of scrollable content
-    zIndex: 90, // Below ask bar (100) but above content
-    marginTop: '0px', // Remove any default margins
-  },
-  titleHeaderField: {
-    padding: '16px 16px 20px 16px',
+    padding: '20px 16px',
     background: 'linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%)',
   },
   seriesLabelPill: {
@@ -669,73 +565,5 @@ const styles = {
     backgroundColor: '#fef2f2',
     borderRadius: '8px',
     margin: '16px',
-  },
-  backToAllSeries: {
-    fontSize: '14px',
-    color: '#d1d5db',
-    cursor: 'pointer',
-    marginTop: '8px',
-    padding: '4px 0',
-    transition: 'color 0.2s ease',
-  },
-  seriesOverviewSection: {
-    marginBottom: '32px',
-  },
-  sectionTitle: {
-    fontSize: '20px',
-    fontWeight: '600',
-    color: '#374151',
-    marginBottom: '16px',
-    textAlign: 'left',
-  },
-  seriesGrid: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '16px',
-    marginBottom: '20px',
-  },
-  seriesCard: {
-    padding: '20px',
-    backgroundColor: '#ffffff',
-    borderRadius: '12px',
-    border: '1px solid #d1d5db',
-    boxShadow: '0 4px 15px rgba(0, 0, 0, 0.15)',
-    cursor: 'pointer',
-    transition: 'all 0.3s ease',
-  },
-  seriesCardTitle: {
-    fontSize: '16px',
-    fontWeight: '600',
-    color: '#111827',
-    margin: 0,
-    marginBottom: '6px',
-    lineHeight: '1.3',
-  },
-  seriesCardDescription: {
-    fontSize: '14px',
-    color: '#6b7280',
-    lineHeight: '1.4',
-    margin: 0,
-    marginBottom: '12px',
-  },
-  episodeCount: {
-    fontSize: '12px',
-    fontWeight: '600',
-    color: '#059669',
-    textTransform: 'uppercase',
-    letterSpacing: '0.5px',
-  },
-  viewAllSeriesButton: {
-    backgroundColor: '#007AFF',
-    color: 'white',
-    border: 'none',
-    padding: '12px 24px',
-    borderRadius: '8px',
-    fontSize: '16px',
-    fontWeight: '600',
-    cursor: 'pointer',
-    width: '100%',
-    fontFamily: 'inherit',
-    transition: 'background-color 0.2s ease',
   },
 };

@@ -13,20 +13,53 @@ import path from 'path';
 function loadSeriesData() {
   try {
     const filePath = path.join(process.cwd(), 'data', 'series-config.json');
+    
+    // Check if file exists first
+    if (!fs.existsSync(filePath)) {
+      console.error('Series config file not found:', filePath);
+      return getFallbackSeriesData();
+    }
+    
     const fileContent = fs.readFileSync(filePath, 'utf8');
-    return JSON.parse(fileContent);
+    
+    // Validate JSON structure
+    const seriesData = JSON.parse(fileContent);
+    
+    // Basic validation - ensure it's an object with at least one series
+    if (!seriesData || typeof seriesData !== 'object' || Object.keys(seriesData).length === 0) {
+      console.error('Invalid series config structure');
+      return getFallbackSeriesData();
+    }
+    
+    console.log(`Loaded ${Object.keys(seriesData).length} series from config`);
+    return seriesData;
+    
   } catch (error) {
-    console.error('Error loading series config:', error);
-    // Fallback to basic structure
-    return {
-      '2': {
-        id: 2,
-        title: "Cinema Through Time - 1970-2025",
-        description: "How film evolved from the auteur renaissance through the present day",
-        episodes: []
-      }
-    };
+    console.error('Error loading series config:', error.message);
+    return getFallbackSeriesData();
   }
+}
+
+// Fallback series data to prevent loops
+function getFallbackSeriesData() {
+  return {
+    '2': {
+      id: 2,
+      title: "Cinema Through Time - 1970-2025",
+      description: "How film evolved from the auteur renaissance through the present day",
+      episodes: [
+        {
+          id: 1,
+          title: "1970s: The Auteur Renaissance",
+          subtitle: "When directors became superstars",
+          posters: [
+            "https://image.tmdb.org/t/p/w200/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+            "https://image.tmdb.org/t/p/w200/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg"
+          ]
+        }
+      ]
+    }
+  };
 }
 
 // Simplified movie data processing for testing
@@ -41,13 +74,29 @@ function processMovieData(movieData) {
   };
 }
 
-async function generateEpisodeContent(seriesId, episodeId) {
-  // Import Claude AI for content generation
-  const { Anthropic } = await import('@anthropic-ai/sdk');
-  const anthropic = new Anthropic({
-    apiKey: process.env.ANTHROPIC_API_KEY,
-  });
+// Load pre-generated episode content
+function loadEpisodeContent(seriesId, episodeId) {
+  try {
+    const episodePath = path.join(process.cwd(), 'data', 'episodes', `series-${seriesId}-episode-${episodeId}.json`);
+    
+    if (fs.existsSync(episodePath)) {
+      const episodeContent = fs.readFileSync(episodePath, 'utf8');
+      const episodeData = JSON.parse(episodeContent);
+      return episodeData.content;
+    } else {
+      console.log(`Pre-generated content not found for Series ${seriesId}, Episode ${episodeId}`);
+      return null;
+    }
+  } catch (error) {
+    console.error(`Error loading pre-generated content for Series ${seriesId}, Episode ${episodeId}:`, error);
+    return null;
+  }
+}
 
+// Generate episode content on-demand using Claude AI
+async function generateEpisodeContentFallback(seriesId, episodeId) {
+  console.log(`Generating content for Series ${seriesId}, Episode ${episodeId}`);
+  
   // Get episode metadata for prompt
   const seriesData = loadSeriesData();
   const series = seriesData[seriesId];
@@ -57,8 +106,18 @@ async function generateEpisodeContent(seriesId, episodeId) {
     throw new Error('Series or episode not found');
   }
 
-  // Enhanced prompt for series episodes with forced structure
-  const systemPrompt = `You are a film expert providing thorough, professional analysis. You have encyclopedic knowledge of films from all eras and countries.
+  try {
+    // Import and use Anthropic API
+    const { Anthropic } = require('@anthropic-ai/sdk');
+    const anthropic = new Anthropic({
+      apiKey: process.env.ANTHROPIC_API_KEY,
+    });
+
+    const response = await anthropic.messages.create({
+      model: 'claude-3-5-sonnet-20241022',
+      max_tokens: 4000,
+      temperature: 0.7,
+      system: `You are a film expert providing thorough, professional analysis. You have encyclopedic knowledge of films from all eras and countries.
 
 CRITICAL REQUIREMENTS:
 - START with OPENER: [one compelling sentence that captures the essence]
@@ -70,27 +129,29 @@ CRITICAL REQUIREMENTS:
 STRUCTURE EXAMPLE:
 OPENER: [one sentence that captures the essence]
 PARAGRAPH: [3-4 sentences with specific film titles mentioned]
-MOVIES: The Godfather|1972|Coppola's epic family saga|Available on Paramount+
+MOVIES: The Godfather|1972|Coppola's epic family saga|tt0068646
 PARAGRAPH: [3-4 sentences about related films/directors]
-MOVIES: Taxi Driver|1976|Scorsese's urban nightmare|Available on multiple platforms
+MOVIES: Taxi Driver|1976|Scorsese's urban nightmare|tt0075314
 PARAGRAPH: [3-4 sentences mentioning more films]
-MOVIES: Mean Streets|1973|Early Scorsese masterpiece|Criterion Channel
+MOVIES: Mean Streets|1973|Early Scorsese masterpiece|tt0070379
 PARAGRAPH: [3-4 sentences about techniques/innovations]
 MOVIES: [relevant films for this paragraph]
 PARAGRAPH: [3-4 sentences about cultural impact]
 MOVIES: [relevant films for this paragraph]
 PARAGRAPH: [3-4 sentences about legacy/influence]
 MOVIES: [relevant films for this paragraph]
-MORE_IDEAS: [8-10 additional films with format: Title|Year|Description|Platform]
+MORE_IDEAS: [8-10 additional films with format: Title|Year|Description|TMDB_ID]
 
-You MUST write exactly 6 paragraphs. Each paragraph should mention specific films by title.`;
-
-  const userPrompt = `Create comprehensive educational content for "${series.title}" - Episode: "${episode.title}: ${episode.subtitle}".
+IMPORTANT: Include TMDB IDs in format ttXXXXXXX for all movies.`,
+      messages: [{
+        role: 'user',
+        content: `Create comprehensive educational content for "${series.title}" - Episode: "${episode.title}: ${episode.subtitle}".
 
 CRITICAL FORMATTING REQUIREMENTS:
 - Write EXACTLY 6 paragraphs (no more, no less)
 - Each paragraph should be 3-4 sentences
 - Each paragraph MUST mention specific film titles
+- Include TMDB IDs for all films mentioned
 - Follow the exact format specified in system prompt
 
 Structure your 6 paragraphs to cover:
@@ -101,63 +162,35 @@ Structure your 6 paragraphs to cover:
 5. Cultural influence and box office success
 6. Legacy and influence on modern cinema
 
-Write exactly 6 substantial paragraphs with specific film titles and director names throughout. Focus on film school level depth but keep structure clear and organized.`;
-
-  try {
-    const message = await anthropic.messages.create({
-      model: 'claude-3-5-sonnet-20241022',
-      max_tokens: 4000,
-      temperature: 0.7,
-      system: systemPrompt,
-      messages: [{
-        role: 'user',
-        content: userPrompt
+Write exactly 6 substantial paragraphs with specific film titles and director names throughout. Focus on film school level depth but keep structure clear and organized.`
       }]
     });
 
-    const responseText = message.content[0].text.trim();
+    const responseText = response.content[0].text;
     return parseClaudeResponse(responseText);
 
   } catch (error) {
-    console.error('Error generating episode content with Claude:', error);
+    console.error('Error generating episode content:', error);
     
-    // Fallback to test content for development
-    if (seriesId === '2' && episodeId === '1') {
-      return {
-        sections: [
-          {
-            type: 'text',
-            content: 'The 1970s marked a revolutionary period in American cinema when directors emerged from the shadows to become the true stars of Hollywood. This auteur renaissance transformed filmmaking from a factory system into a director-driven art form, giving birth to what we now call "New Hollywood." Visionary filmmakers like Francis Ford Coppola, Martin Scorsese, and Steven Spielberg didn\'t just make movies—they created personal statements that reflected their unique artistic visions while achieving unprecedented commercial success.'
-          },
-          {
-            type: 'movies',
-            movies: [
-              { title: 'The Godfather', year: 1972, slug: 'Coppola\'s epic family saga redefined cinematic storytelling' },
-              { title: 'Taxi Driver', year: 1976, slug: 'Scorsese\'s urban nightmare explores isolation and violence' },
-              { title: 'Jaws', year: 1975, slug: 'Spielberg\'s thriller invented the summer blockbuster' }
-            ]
-          }
-        ],
-        moreIdeas: {
-          title: 'More 1970s Auteur Films',
-          movies: [
-            { title: 'Mean Streets', year: 1973, slug: 'Scorsese\'s breakthrough indie about Catholic guilt and street life' },
-            { title: 'The Conversation', year: 1974, slug: 'Coppola\'s paranoid thriller about surveillance and guilt' }
-          ]
-        }
-      };
-    }
-    
-    // Default placeholder
+    // Return more robust fallback content
     return {
+      opener: `${episode.title} represents a pivotal moment in ${series.title.toLowerCase()}, showcasing the evolution of cinematic artistry and storytelling.`,
       sections: [
         {
           type: 'text',
-          content: 'This episode content is being generated. Please check back soon for comprehensive analysis of this crucial period in cinema history.'
+          content: `This episode explores "${episode.title}: ${episode.subtitle}" as part of "${series.title}". This content examines the historical context, artistic innovations, and lasting impact of this important period in cinema history.`
+        },
+        {
+          type: 'text', 
+          content: `The films from this era demonstrate significant technological and narrative advances that continue to influence modern filmmaking. Directors and cinematographers during this period pushed creative boundaries while establishing new cinematic languages.`
+        },
+        {
+          type: 'text',
+          content: `Cultural impact extended far beyond the box office, as these films reflected and shaped societal values. The legacy of this period continues to inform contemporary cinema and inspire new generations of filmmakers.`
         }
       ],
       moreIdeas: {
-        title: 'Related Films',
+        title: 'Related Films to Explore',
         movies: []
       }
     };
@@ -325,8 +358,8 @@ export default async function handler(req, res) {
       return res.status(404).json({ error: `Episode ${episodeId} not found in series ${seriesId}` });
     }
 
-    // Generate episode content
-    const rawContent = await generateEpisodeContent(seriesId, episodeId);
+    // Generate content dynamically (same pattern as ask page)
+    let rawContent = await generateEpisodeContentFallback(seriesId, episodeId);
 
     // Process movies (simplified for now)
     const processedSections = rawContent.sections.map(section => {
