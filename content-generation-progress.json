@@ -1,10 +1,10 @@
 {
   "total": 3491,
-  "completed": 12,
-  "successful": 12,
+  "completed": 58,
+  "successful": 58,
   "failed": 0,
-  "cached": 0,
-  "fresh": 12,
+  "cached": 2,
+  "fresh": 56,
   "startTime": 1749581612682,
   "errors": [],
   "results": [
@@ -91,10 +91,332 @@
       "title": "Unknown",
       "url": "https://moviegenius.ai/movie/28",
       "responseTime": 5184
+    },
+    {
+      "success": true,
+      "tmdbId": 38,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/38",
+      "responseTime": 5166
+    },
+    {
+      "success": true,
+      "tmdbId": 33,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/33",
+      "responseTime": 5166
+    },
+    {
+      "success": true,
+      "tmdbId": 59,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/59",
+      "responseTime": 5187
+    },
+    {
+      "success": true,
+      "tmdbId": 55,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/55",
+      "responseTime": 5188
+    },
+    {
+      "success": true,
+      "tmdbId": 62,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/62",
+      "responseTime": 5184
+    },
+    {
+      "success": true,
+      "tmdbId": 63,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/63",
+      "responseTime": 5185
+    },
+    {
+      "success": true,
+      "tmdbId": 64,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/64",
+      "responseTime": 5136
+    },
+    {
+      "success": true,
+      "tmdbId": 65,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/65",
+      "responseTime": 5171
+    },
+    {
+      "success": true,
+      "tmdbId": 69,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/69",
+      "responseTime": 5129
+    },
+    {
+      "success": true,
+      "tmdbId": 68,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/68",
+      "responseTime": 5157
+    },
+    {
+      "success": true,
+      "tmdbId": 71,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/71",
+      "responseTime": 5179
+    },
+    {
+      "success": true,
+      "tmdbId": 70,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/70",
+      "responseTime": 5180
+    },
+    {
+      "success": true,
+      "tmdbId": 73,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/73",
+      "responseTime": 5186
+    },
+    {
+      "success": true,
+      "tmdbId": 75,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/75",
+      "responseTime": 5187
+    },
+    {
+      "success": true,
+      "tmdbId": 76,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/76",
+      "responseTime": 5207
+    },
+    {
+      "success": true,
+      "tmdbId": 77,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/77",
+      "responseTime": 5208
+    },
+    {
+      "success": true,
+      "tmdbId": 79,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/79",
+      "responseTime": 5187
+    },
+    {
+      "success": true,
+      "tmdbId": 78,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/78",
+      "responseTime": 5187
+    },
+    {
+      "success": true,
+      "tmdbId": 81,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/81",
+      "responseTime": 5164
+    },
+    {
+      "success": true,
+      "tmdbId": 80,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/80",
+      "responseTime": 5165
+    },
+    {
+      "success": true,
+      "tmdbId": 82,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/82",
+      "responseTime": 5187
+    },
+    {
+      "success": true,
+      "tmdbId": 83,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/83",
+      "responseTime": 5187
+    },
+    {
+      "success": true,
+      "tmdbId": 85,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/85",
+      "responseTime": 30158
+    },
+    {
+      "success": true,
+      "tmdbId": 89,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/89",
+      "responseTime": 30160
+    },
+    {
+      "success": true,
+      "tmdbId": 90,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/90",
+      "responseTime": 5247
+    },
+    {
+      "success": true,
+      "tmdbId": 93,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/93",
+      "responseTime": 5275
+    },
+    {
+      "success": true,
+      "tmdbId": 97,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/97",
+      "responseTime": 5181
+    },
+    {
+      "success": true,
+      "tmdbId": 95,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/95",
+      "responseTime": 5181
+    },
+    {
+      "success": true,
+      "tmdbId": 99,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/99",
+      "responseTime": 5139
+    },
+    {
+      "success": true,
+      "tmdbId": 98,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/98",
+      "responseTime": 5174
+    },
+    {
+      "success": true,
+      "tmdbId": 100,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/100",
+      "responseTime": 5172
+    },
+    {
+      "success": true,
+      "tmdbId": 101,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/101",
+      "responseTime": 5172
+    },
+    {
+      "success": true,
+      "tmdbId": 104,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/104",
+      "responseTime": 5173
+    },
+    {
+      "success": true,
+      "tmdbId": 103,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/103",
+      "responseTime": 5175
+    },
+    {
+      "success": true,
+      "tmdbId": 105,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/105",
+      "responseTime": 5220
+    },
+    {
+      "success": true,
+      "tmdbId": 106,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/106",
+      "responseTime": 5219
+    },
+    {
+      "success": true,
+      "tmdbId": 108,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/108",
+      "responseTime": 5130
+    },
+    {
+      "success": true,
+      "tmdbId": 107,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/107",
+      "responseTime": 5151
+    },
+    {
+      "success": true,
+      "tmdbId": 111,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/111",
+      "responseTime": 5163
+    },
+    {
+      "success": true,
+      "tmdbId": 113,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/113",
+      "responseTime": 5163
+    },
+    {
+      "success": true,
+      "tmdbId": 115,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/115",
+      "responseTime": 5124
+    },
+    {
+      "success": true,
+      "tmdbId": 114,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/114",
+      "responseTime": 5152
+    },
+    {
+      "success": true,
+      "tmdbId": 118,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/118",
+      "responseTime": 5170
+    },
+    {
+      "success": true,
+      "tmdbId": 117,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/117",
+      "responseTime": 5170
+    },
+    {
+      "success": true,
+      "tmdbId": 121,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/121",
+      "responseTime": 5176
+    },
+    {
+      "success": true,
+      "tmdbId": 120,
+      "title": "Unknown",
+      "url": "https://moviegenius.ai/movie/120",
+      "responseTime": 5176
     }
   ],
-  "currentActivity": "Processing 33 (13/3491)",
-  "timestamp": "2025-06-10T18:54:13.336Z",
+  "currentActivity": "Processing 122 (59/3491)",
+  "timestamp": "2025-06-10T18:57:02.904Z",
   "config": {
     "BASE_URL": "https://moviegenius.ai",
     "CONCURRENT_PAGES": 2,
