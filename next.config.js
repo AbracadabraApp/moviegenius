@@ -23,6 +23,9 @@ const nextConfig = {
     IS_RAILWAY_BUILD: isRailwayBuild ? 'true' : 'false',
   },
   
+  // Enable compression for all builds
+  compress: true,
+  
   // Mobile-specific configuration
   ...(isMobileBuild ? {
     output: 'export',
@@ -31,19 +34,67 @@ const nextConfig = {
       unoptimized: true
     },
     assetPrefix: '',
-    // Mobile pages - only include static-compatible pages for initial testing
     exportPathMap: async function (defaultPathMap) {
       return {
-        '/': { page: '/ask' }, // Use ask page as home for mobile testing
+        '/': { page: '/ask' },
         '/ask': { page: '/ask' },
         '/you': { page: '/you' },
-        // Movie pages will be handled by getStaticPaths
       };
     },
   } : {
-    // Web-specific configuration (keep all features)
+    // Web-specific configuration - Cloudflare optimized
     images: {
       domains: ['image.tmdb.org'],
+      formats: ['image/webp', 'image/avif'],
+      minimumCacheTTL: 31536000, // 1 year for TMDB images
+      deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
+      imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    },
+    
+    // Cloudflare-optimized headers
+    async headers() {
+      return [
+        // Static assets - cache for 1 year
+        {
+          source: '/_next/static/(.*)',
+          headers: [
+            {
+              key: 'Cache-Control',
+              value: 'public, max-age=31536000, immutable'
+            }
+          ]
+        },
+        // Images - cache for 1 year  
+        {
+          source: '/images/(.*)',
+          headers: [
+            {
+              key: 'Cache-Control',
+              value: 'public, max-age=31536000'
+            }
+          ]
+        },
+        // Movie pages - cache for 1 hour with stale-while-revalidate
+        {
+          source: '/movie/:path*',
+          headers: [
+            {
+              key: 'Cache-Control',
+              value: 'public, s-maxage=3600, stale-while-revalidate=86400'
+            }
+          ]
+        },
+        // API routes - optimized caching
+        {
+          source: '/api/movie-analysis',
+          headers: [
+            {
+              key: 'Cache-Control', 
+              value: 'public, s-maxage=86400, stale-while-revalidate=604800'
+            }
+          ]
+        }
+      ];
     },
   }),
 }
