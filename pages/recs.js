@@ -72,10 +72,14 @@ export default function RecsPage({ featuredList, otherLists, error }) {
             />
           </div>
           
-          {/* Sticky Series Header - Sticks when it hits ask bar */}
-          <div style={styles.stickySeriesHeader}>
-            <div style={styles.seriesHeaderField}>
-              <div style={styles.seriesLabelPill}>Series</div>
+          {/* Series Header - Pill scrolls away */}
+          <div style={styles.seriesHeaderField}>
+            <div style={styles.seriesLabelPill}>Series</div>
+          </div>
+          
+          {/* Sticky Title Section - Only headline sticks */}
+          <div style={styles.stickyTitleHeader}>
+            <div style={styles.titleHeaderField}>
               <div style={styles.seriesTitle}>Cinema Through Time</div>
               <div style={styles.seriesSubhead}>Discover how film evolved through the decades</div>
             </div>
@@ -529,7 +533,17 @@ const styles = {
     margin: 0,
   },
   seriesHeaderField: {
-    padding: '20px 16px',
+    padding: '20px 16px 12px 16px',
+    background: 'linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%)',
+  },
+  stickyTitleHeader: {
+    position: 'sticky',
+    top: '0px', // Stick right to the top of scrollable content
+    zIndex: 90, // Below ask bar (100) but above content
+    marginTop: '0px', // Remove any default margins
+  },
+  titleHeaderField: {
+    padding: '16px 16px 20px 16px',
     background: 'linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%)',
   },
   seriesLabelPill: {
