@@ -10,7 +10,75 @@ import { useState, useEffect } from 'react'
 export default function RecsPage({ featuredList, otherLists, error }) {
   const router = useRouter()
   const [selectedPlatforms, setSelectedPlatforms] = useState([])
-  const [currentHeroImage, setCurrentHeroImage] = useState(1)
+  
+  // Template Variables - Easily configurable for reuse
+  const templateConfig = {
+    hero: {
+      imageNumber: 1,
+      alt: "Cinema Through Time"
+    },
+    series: {
+      pillText: "Series",
+      title: "Cinema Through Time",
+      subtitle: "Discover how film evolved through the decades"
+    },
+    episodes: [
+      {
+        id: 1,
+        route: '/recs/series/2/1',
+        title: "1970s: The Auteur Renaissance",
+        subtitle: "When directors became superstars",
+        posters: [
+          "/images/posters/the-godfather.jpg",
+          "/images/posters/taxi-driver.jpg", 
+          "/images/posters/apocalypse-now.jpg",
+          "/images/posters/annie-hall.jpg"
+        ]
+      },
+      {
+        id: 2,
+        route: '/recs/series/2/2',
+        title: "1980s: Blockbuster Revolution",
+        subtitle: "High-concept cinema takes over",
+        posters: [
+          "/images/posters/star-wars.jpg",
+          "/images/posters/raiders-of-the-lost-ark.jpg",
+          "/images/posters/e-t-the-extra-terrestrial.jpg",
+          "/images/posters/blade-runner.jpg"
+        ]
+      },
+      {
+        id: 3,
+        route: '/recs/series/2/3',
+        title: "1990s: Independent Renaissance", 
+        subtitle: "Bold voices outside the system",
+        posters: [
+          "/images/posters/pulp-fiction.jpg",
+          "/images/posters/goodfellas.jpg",
+          "/images/posters/forrest-gump.jpg",
+          "/images/posters/the-silence-of-the-lambs.jpg"
+        ]
+      },
+      {
+        id: 4,
+        route: '/recs/series/2/4',
+        title: "2010s-2020s: Global Cinema Rising",
+        subtitle: "World cinema goes mainstream", 
+        posters: [
+          "/images/posters/the-lord-of-the-rings-the-fellowship-of-the-ring.jpg",
+          "/images/posters/the-sixth-sense.jpg",
+          "/images/posters/saving-private-ryan.jpg",
+          "/images/posters/titanic.jpg"
+        ]
+      }
+    ],
+    streaming: {
+      enabled: true,
+      editRoute: '/you#platforms'
+    }
+  }
+  
+  const [currentHeroImage, setCurrentHeroImage] = useState(templateConfig.hero.imageNumber)
 
   // Hero image text color settings - adjust per image
   const heroTextSettings = {
@@ -95,123 +163,58 @@ export default function RecsPage({ featuredList, otherLists, error }) {
           {/* Hero Image - Scrolls normally */}
           <div style={styles.heroImageContainer}>
             <img 
-              src={`/images/hero-rotation/hero-${currentHeroImage}.jpg`} 
-              alt="Cinema Through Time"
+              src={`/images/hero-rotation/hero-${templateConfig.hero.imageNumber}.jpg`} 
+              alt={templateConfig.hero.alt}
               style={styles.heroImage}
             />
           </div>
           
-          {/* Sticky Series Header - Sticks when it hits ask bar */}
-          <div style={styles.stickySeriesHeader}>
-            <div style={styles.seriesHeaderField}>
-              <div style={styles.seriesLabelPill}>Series</div>
-              <div style={styles.seriesTitle}>Cinema Through Time</div>
-              <div style={styles.seriesSubhead}>Discover how film evolved through the decades</div>
+          {/* Series Header - Pill scrolls away */}
+          <div style={styles.seriesHeaderField}>
+            <div style={styles.seriesLabelPill}>{templateConfig.series.pillText}</div>
+          </div>
+          
+          {/* Sticky Title Section - Only headline sticks */}
+          <div style={styles.stickyTitleHeader}>
+            <div style={styles.titleHeaderField}>
+              <div style={styles.seriesTitle}>{templateConfig.series.title}</div>
+              <div style={styles.seriesSubhead}>{templateConfig.series.subtitle}</div>
             </div>
           </div>
         
           <div style={styles.content}>
-            {/* Cinema Through Time Episode Cards */}
+            {/* Episode Cards - Generated from template config */}
             <div style={styles.episodesSection}>
-              {/* Episode 1 */}
-              <div 
-                style={styles.episodeCard}
-                onClick={() => router.push('/recs/series/2/1')}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.35)';
-                  e.currentTarget.style.transform = 'translateY(-2px)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
-                  e.currentTarget.style.transform = 'translateY(0)';
-                }}
-              >
-                <div style={styles.episodeContent}>
-                  <h3 style={styles.episodeTitle}>1970s: The Auteur Renaissance</h3>
-                  <p style={styles.episodeSubtitle}>When directors became superstars</p>
+              {templateConfig.episodes.map((episode) => (
+                <div 
+                  key={episode.id}
+                  style={styles.episodeCard}
+                  onClick={() => router.push(episode.route)}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.35)';
+                    e.currentTarget.style.transform = 'translateY(-2px)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
+                    e.currentTarget.style.transform = 'translateY(0)';
+                  }}
+                >
+                  <div style={styles.episodeContent}>
+                    <h3 style={styles.episodeTitle}>{episode.title}</h3>
+                    <p style={styles.episodeSubtitle}>{episode.subtitle}</p>
+                  </div>
+                  <div style={styles.episodeImageRow}>
+                    {episode.posters.map((poster, index) => (
+                      <img 
+                        key={index}
+                        src={poster} 
+                        alt={`Episode ${episode.id} movie ${index + 1}`} 
+                        style={styles.episodeMovieImage} 
+                      />
+                    ))}
+                  </div>
                 </div>
-                <div style={styles.episodeImageRow}>
-                  <img src="/images/posters/the-godfather.jpg" alt="The Godfather" style={styles.episodeMovieImage} />
-                  <img src="/images/posters/taxi-driver.jpg" alt="Taxi Driver" style={styles.episodeMovieImage} />
-                  <img src="/images/posters/apocalypse-now.jpg" alt="Apocalypse Now" style={styles.episodeMovieImage} />
-                  <img src="/images/posters/annie-hall.jpg" alt="Annie Hall" style={styles.episodeMovieImage} />
-                </div>
-              </div>
-
-              {/* Episode 2 */}
-              <div 
-                style={styles.episodeCard}
-                onClick={() => router.push('/recs/series/2/2')}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.35)';
-                  e.currentTarget.style.transform = 'translateY(-2px)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
-                  e.currentTarget.style.transform = 'translateY(0)';
-                }}
-              >
-                <div style={styles.episodeContent}>
-                  <h3 style={styles.episodeTitle}>1980s: Blockbuster Revolution</h3>
-                  <p style={styles.episodeSubtitle}>High-concept cinema takes over</p>
-                </div>
-                <div style={styles.episodeImageRow}>
-                  <img src="/images/posters/star-wars.jpg" alt="Star Wars" style={styles.episodeMovieImage} />
-                  <img src="/images/posters/raiders-of-the-lost-ark.jpg" alt="Raiders of the Lost Ark" style={styles.episodeMovieImage} />
-                  <img src="/images/posters/e-t-the-extra-terrestrial.jpg" alt="E.T." style={styles.episodeMovieImage} />
-                  <img src="/images/posters/blade-runner.jpg" alt="Blade Runner" style={styles.episodeMovieImage} />
-                </div>
-              </div>
-
-              {/* Episode 3 */}
-              <div 
-                style={styles.episodeCard}
-                onClick={() => router.push('/recs/series/2/3')}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.35)';
-                  e.currentTarget.style.transform = 'translateY(-2px)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
-                  e.currentTarget.style.transform = 'translateY(0)';
-                }}
-              >
-                <div style={styles.episodeContent}>
-                  <h3 style={styles.episodeTitle}>1990s: Independent Renaissance</h3>
-                  <p style={styles.episodeSubtitle}>Bold voices outside the system</p>
-                </div>
-                <div style={styles.episodeImageRow}>
-                  <img src="/images/posters/pulp-fiction.jpg" alt="Pulp Fiction" style={styles.episodeMovieImage} />
-                  <img src="/images/posters/goodfellas.jpg" alt="Goodfellas" style={styles.episodeMovieImage} />
-                  <img src="/images/posters/forrest-gump.jpg" alt="Forrest Gump" style={styles.episodeMovieImage} />
-                  <img src="/images/posters/the-silence-of-the-lambs.jpg" alt="The Silence of the Lambs" style={styles.episodeMovieImage} />
-                </div>
-              </div>
-
-              {/* Episode 4 */}
-              <div 
-                style={styles.episodeCard}
-                onClick={() => router.push('/recs/series/2/4')}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.35)';
-                  e.currentTarget.style.transform = 'translateY(-2px)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
-                  e.currentTarget.style.transform = 'translateY(0)';
-                }}
-              >
-                <div style={styles.episodeContent}>
-                  <h3 style={styles.episodeTitle}>2010s-2020s: Global Cinema Rising</h3>
-                  <p style={styles.episodeSubtitle}>World cinema goes mainstream</p>
-                </div>
-                <div style={styles.episodeImageRow}>
-                  <img src="/images/posters/the-lord-of-the-rings-the-fellowship-of-the-ring.jpg" alt="Lord of the Rings" style={styles.episodeMovieImage} />
-                  <img src="/images/posters/the-sixth-sense.jpg" alt="The Sixth Sense" style={styles.episodeMovieImage} />
-                  <img src="/images/posters/saving-private-ryan.jpg" alt="Saving Private Ryan" style={styles.episodeMovieImage} />
-                  <img src="/images/posters/titanic.jpg" alt="Titanic" style={styles.episodeMovieImage} />
-                </div>
-              </div>
+              ))}
             </div>
 
             {/* Featured List */}
@@ -276,18 +279,20 @@ export default function RecsPage({ featuredList, otherLists, error }) {
             )}
           </div>
           
-          {/* Streaming Services Box - Moved to bottom */}
-          <div style={styles.streamingBoxBottom}>
-            <span style={styles.streamingText}>
-              Your streaming services: {selectedPlatforms.length > 0 ? selectedPlatforms.join(', ') : 'None selected'}
-            </span>
-            <button 
-              style={styles.editButton}
-              onClick={handleEditPlatforms}
-            >
-              (edit)
-            </button>
-          </div>
+          {/* Streaming Services Box - Conditional based on template config */}
+          {templateConfig.streaming.enabled && (
+            <div style={styles.streamingBoxBottom}>
+              <span style={styles.streamingText}>
+                Your streaming services: {selectedPlatforms.length > 0 ? selectedPlatforms.join(', ') : 'None selected'}
+              </span>
+              <button 
+                style={styles.editButton}
+                onClick={() => router.push(templateConfig.streaming.editRoute)}
+              >
+                (edit)
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </PhoneFrame>
@@ -573,14 +578,18 @@ const styles = {
     fontSize: '16px',
     margin: 0,
   },
-  stickySeriesHeader: {
+  seriesHeaderField: {
+    padding: '20px 16px 12px 16px',
+    background: 'linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%)',
+  },
+  stickyTitleHeader: {
     position: 'sticky',
-    top: '88px', // Stick right under ask bar (16px + 56px + 16px = 88px)
+    top: '0px', // Stick right to the top of scrollable content
     zIndex: 90, // Below ask bar (100) but above content
     marginTop: '0px', // Remove any default margins
   },
-  seriesHeaderField: {
-    padding: '20px 16px',
+  titleHeaderField: {
+    padding: '16px 16px 20px 16px',
     background: 'linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%)',
   },
   seriesLabelPill: {
