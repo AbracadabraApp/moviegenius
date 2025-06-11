@@ -1,14 +1,11 @@
 // pages/recs.js - Curated movie recommendations and series
-import { createClient } from '@supabase/supabase-js'
 import PhoneFrame from '../components/PhoneFrame'
 import AskInputBar from '../components/AskInputBar'
-import MediaCard from '../components/MediaCard'
 import { useRouter } from 'next/router'
-import { underlineProperNames } from '../lib/proper-names'
 import { useState, useEffect } from 'react'
 import StreamingPlatformBox from '../components/StreamingPlatformBox'
 
-export default function RecsPage({ featuredList, otherLists, error }) {
+export default function RecsPage() {
   const router = useRouter()
   const [currentHeroImage, setCurrentHeroImage] = useState(1)
 
@@ -38,20 +35,6 @@ export default function RecsPage({ featuredList, otherLists, error }) {
   }
 
 
-  if (error) {
-    return (
-      <PhoneFrame active="recs">
-        <div style={styles.container}>
-          <div style={styles.fixedInputArea}>
-            <AskInputBar onSubmit={handleAsk} />
-          </div>
-          <div style={styles.error}>
-            Error loading recommendations: {error}
-          </div>
-        </div>
-      </PhoneFrame>
-    )
-  }
 
   return (
     <PhoneFrame active="recs">
@@ -172,7 +155,32 @@ export default function RecsPage({ featuredList, otherLists, error }) {
                 }}
               >
                 <div style={styles.episodeContent}>
-                  <h3 style={styles.episodeTitle}>2010s-2020s: Global Cinema Rising</h3>
+                  <h3 style={styles.episodeTitle}>2000s: The Streaming Wars</h3>
+                  <p style={styles.episodeSubtitle}>Digital revolution and franchise filmmaking</p>
+                </div>
+                <div style={styles.episodeImageRow}>
+                  <img src="/images/posters/the-lord-of-the-rings-the-fellowship-of-the-ring.jpg" alt="Lord of the Rings" style={styles.episodeMovieImage} />
+                  <img src="/images/posters/the-sixth-sense.jpg" alt="The Sixth Sense" style={styles.episodeMovieImage} />
+                  <img src="/images/posters/saving-private-ryan.jpg" alt="Saving Private Ryan" style={styles.episodeMovieImage} />
+                  <img src="/images/posters/titanic.jpg" alt="Titanic" style={styles.episodeMovieImage} />
+                </div>
+              </div>
+
+              {/* Episode 5 */}
+              <div 
+                style={styles.episodeCard}
+                onClick={() => router.push('/recs/series/2/5')}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.35)';
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                }}
+              >
+                <div style={styles.episodeContent}>
+                  <h3 style={styles.episodeTitle}>2010s: Global Cinema Rising</h3>
                   <p style={styles.episodeSubtitle}>International voices reshape Hollywood and streaming</p>
                 </div>
                 <div style={styles.episodeImageRow}>
@@ -184,66 +192,6 @@ export default function RecsPage({ featuredList, otherLists, error }) {
               </div>
             </div>
 
-            {/* Featured List */}
-            {featuredList && (
-              <div style={styles.featuredSection}>
-                <h2 style={styles.featuredTitle}>{featuredList.name}</h2>
-                {featuredList.description && (
-                  <div style={styles.featuredContent}>
-                    <div style={styles.textSection}>
-                      {underlineProperNames(featuredList.description)}
-                    </div>
-                  </div>
-                )}
-                {featuredList.movies && featuredList.movies.length > 0 && (
-                  <div style={styles.movieList}>
-                    {featuredList.movies.slice(0, 6).map((movie) => (
-                      <MediaCard
-                        key={movie.id}
-                        title={movie.title}
-                        year={movie.year}
-                        initialSlug={movie.slug}
-                        initialPoster={movie.poster_url}
-                        initialStreaming={movie.streaming_data}
-                        tmdbId={movie.tmdb_id}
-                      />
-                    ))}
-                  </div>
-                )}
-                <button 
-                  style={styles.exploreButton}
-                  onClick={() => router.push(`/genius/list/${featuredList.id}`)}
-                >
-                  Explore Full List
-                </button>
-              </div>
-            )}
-
-            {/* Other Lists */}
-            {otherLists && otherLists.length > 0 && (
-              <div style={styles.otherListsSection}>
-                <h3 style={styles.otherListsTitle}>More Curated Lists</h3>
-                <div style={styles.buttonGrid}>
-                  {otherLists.map((list) => (
-                    <button
-                      key={list.id}
-                      style={styles.listButton}
-                      onClick={() => router.push(`/genius/list/${list.id}`)}
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
-                        e.currentTarget.style.transform = 'translateY(-2px)';
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.boxShadow = '0 2px 6px rgba(0, 0, 0, 0.12)';
-                        e.currentTarget.style.transform = 'translateY(0)';
-                      }}
-                    >
-                      {list.name}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            )}
           </div>
           
           {/* Enhanced Streaming Platform Selector */}
@@ -254,94 +202,6 @@ export default function RecsPage({ featuredList, otherLists, error }) {
   )
 }
 
-// Server-Side Rendering: Fetch curated lists from Supabase
-export async function getServerSideProps({ res }) {
-  try {
-    // Set cache headers - lists don't change often
-    res.setHeader(
-      'Cache-Control',
-      'public, s-maxage=1800, stale-while-revalidate=3600'
-    );
-    
-    // Server-side Supabase client with service role
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    )
-
-    // Get one featured list with movies
-    const { data: featuredData, error: featuredError } = await supabase
-      .from('movie_lists')
-      .select(`
-        id,
-        name,
-        slug,
-        description,
-        movies:movie_list_items(
-          movies(
-            id,
-            title,
-            year,
-            slug,
-            poster_url,
-            streaming_data,
-            tmdb_id
-          )
-        )
-      `)
-      .eq('is_active', true)
-      .eq('content_type', 'declarative')
-      .limit(1)
-      .single();
-
-    if (featuredError && featuredError.code !== 'PGRST116') { // PGRST116 = no rows returned
-      console.error('Featured list query error:', featuredError);
-    }
-
-    // Get all other lists for grid
-    let otherListsQuery = supabase
-      .from('movie_lists')
-      .select('id, name, slug')
-      .eq('is_active', true)
-      .eq('content_type', 'declarative')
-      .order('name');
-    
-    // Only exclude featured list if we have a valid ID
-    if (featuredData?.id) {
-      otherListsQuery = otherListsQuery.neq('id', featuredData.id);
-    }
-    
-    const { data: otherLists, error: otherError } = await otherListsQuery;
-
-    if (otherError) {
-      console.error('Other lists query error:', otherError);
-    }
-
-    // Transform featured list movies
-    const featuredList = featuredData ? {
-      ...featuredData,
-      movies: featuredData.movies?.map(item => item.movies).filter(Boolean) || []
-    } : null;
-
-    return {
-      props: {
-        featuredList,
-        otherLists: otherLists || [],
-        error: null
-      }
-    }
-  } catch (error) {
-    console.error('Server-side fetch error:', error)
-    
-    return {
-      props: {
-        featuredList: null,
-        otherLists: [],
-        error: error.message
-      }
-    }
-  }
-}
 
 const styles = {
   container: {
@@ -437,74 +297,6 @@ const styles = {
     lineHeight: '1.3',
     margin: 0,
   },
-  featuredSection: {
-    marginBottom: '32px',
-    paddingTop: '24px',
-  },
-  featuredTitle: {
-    fontSize: '20px',
-    fontWeight: '600',
-    color: '#374151',
-    marginBottom: '12px',
-    textAlign: 'left',
-  },
-  featuredContent: {
-    marginBottom: '16px',
-  },
-  textSection: {
-    fontSize: '15px',
-    lineHeight: '1.6',
-    color: '#374151',
-    marginBottom: '16px',
-  },
-  movieList: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '8px',
-    marginBottom: '16px',
-  },
-  exploreButton: {
-    backgroundColor: '#007AFF',
-    color: 'white',
-    border: 'none',
-    padding: '12px 24px',
-    borderRadius: '8px',
-    fontSize: '16px',
-    fontWeight: '600',
-    cursor: 'pointer',
-    width: '100%',
-    fontFamily: 'inherit',
-  },
-  otherListsSection: {
-    marginTop: '24px',
-  },
-  otherListsTitle: {
-    fontSize: '18px',
-    fontWeight: '600',
-    color: '#374151',
-    marginBottom: '16px',
-    textAlign: 'left',
-  },
-  buttonGrid: {
-    display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
-    gap: '12px',
-  },
-  listButton: {
-    padding: '16px 12px',
-    backgroundColor: '#f3f4f6',
-    borderRadius: '8px',
-    fontSize: '14px',
-    fontWeight: '500',
-    color: '#374151',
-    cursor: 'pointer',
-    transition: 'box-shadow 0.2s ease, transform 0.2s ease',
-    textAlign: 'center',
-    lineHeight: '1.4',
-    fontFamily: 'inherit',
-    boxShadow: '0 2px 6px rgba(0, 0, 0, 0.12)',
-    border: 'none',
-  },
   heroImageContainer: {
     position: 'relative',
     width: '100%',
@@ -556,13 +348,5 @@ const styles = {
     color: '#d1d5db',
     margin: 0,
     lineHeight: '1.4',
-  },
-  error: {
-    padding: '20px',
-    textAlign: 'center',
-    color: '#dc2626',
-    backgroundColor: '#fef2f2',
-    borderRadius: '8px',
-    margin: '16px',
   },
 };

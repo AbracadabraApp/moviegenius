@@ -1,24 +1,52 @@
 // components/AskInputBar.js
 import React, { useState, useRef, useEffect } from 'react';
 import { useRouter } from 'next/router';
-// Removed Mic import, using film clapper icon instead
+import { CircleChevronLeft, CircleChevronRight } from 'lucide-react';
 
 export default function AskInputBar({
   placeholder = 'Ask me about movies...',
   isLoading = false,
 }) {
   const [question, setQuestion] = useState('');
+  const [isFocused, setIsFocused] = useState(false);
   const inputRef = useRef(null);
   const router = useRouter();
 
+  // Check if there's a page to go back to
+  const canGoBack = () => {
+    return typeof window !== 'undefined' && window.history.length > 1;
+  };
+
+  // Check if there's a page to go forward to or if there's text to submit
+  const canGoForward = () => {
+    return question.trim() || (typeof window !== 'undefined' && window.history.state && window.history.state.forward);
+  };
+
+  // Standard browser back navigation
+  const handleBack = () => {
+    if (typeof window !== 'undefined') {
+      window.history.back();
+    }
+  };
+
+  // Standard browser forward navigation or submit question
+  const handleForward = () => {
+    const trimmed = question.trim();
+    if (trimmed) {
+      // If there's text, submit the question
+      router.push(`/ask?q=${encodeURIComponent(trimmed)}`);
+      setQuestion('');
+    } else {
+      // Standard browser forward navigation
+      if (typeof window !== 'undefined') {
+        window.history.forward();
+      }
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    const trimmed = question.trim();
-    if (!trimmed || isLoading) return;
-    
-    // Always navigate to ask page with query parameter
-    router.push(`/ask?q=${encodeURIComponent(trimmed)}`);
-    setQuestion('');
+    handleForward(); // Use the same logic as forward arrow
   };
 
   // Allow clicking anywhere in the bar to focus input
@@ -33,51 +61,88 @@ export default function AskInputBar({
     <>
       <style jsx>{`
         .ask-input::placeholder {
-          color: #374151;
+          color: #6b7280;
           opacity: 1;
         }
         .ask-input::-webkit-input-placeholder {
-          color: #374151;
+          color: #6b7280;
           opacity: 1;
         }
         .ask-input::-moz-placeholder {
-          color: #374151;
+          color: #6b7280;
           opacity: 1;
         }
         .ask-input:-ms-input-placeholder {
-          color: #374151;
+          color: #6b7280;
           opacity: 1;
         }
       `}</style>
       <form onSubmit={handleSubmit} style={styles.form}>
         <div id="ask-bar" style={styles.bar}>
-        <input
-          ref={inputRef}
-          type="text"
-          placeholder={isLoading ? 'Please wait...' : placeholder}
-          value={question}
-          onChange={(e) => setQuestion(e.target.value)}
-          disabled={isLoading}
-          className="ask-input"
-          style={{
-            ...styles.input,
-            opacity: isLoading ? 0.6 : 1,
-            cursor: isLoading ? 'not-allowed' : 'text'
-          }}
-        />
-        <button 
-          type="submit" 
-          style={styles.submitButton}
-          aria-label="Submit question"
-        >
-          <img 
-            src="/icons/loading/chair-director-outline-icon.png" 
-            alt="Submit" 
-            style={styles.clapperIcon}
+          <button 
+            type="button"
+            onClick={handleBack}
+            style={styles.navButton}
+            aria-label="Go back"
+            disabled={isLoading}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'scale(1.1)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'scale(1)';
+            }}
+          >
+            <CircleChevronLeft 
+              size={30} 
+              style={{
+                ...styles.navIcon,
+                opacity: isLoading ? 0.3 : 1,
+                color: isLoading ? '#d1d5db' : (canGoBack() ? '#374151' : '#d1d5db')
+              }}
+            />
+          </button>
+
+          <input
+            ref={inputRef}
+            type="text"
+            placeholder={isLoading ? 'Please wait...' : placeholder}
+            value={question}
+            onChange={(e) => setQuestion(e.target.value)}
+            onFocus={() => setIsFocused(true)}
+            onBlur={() => setIsFocused(false)}
+            disabled={isLoading}
+            className="ask-input"
+            style={{
+              ...styles.input,
+              opacity: isLoading ? 0.6 : 1,
+              cursor: isLoading ? 'not-allowed' : 'text'
+            }}
           />
-        </button>
-      </div>
-    </form>
+
+          <button 
+            type="button"
+            onClick={handleForward}
+            style={styles.navButton}
+            aria-label={question.trim() ? "Submit question" : "Go forward"}
+            disabled={isLoading}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'scale(1.1)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'scale(1)';
+            }}
+          >
+            <CircleChevronRight 
+              size={30} 
+              style={{
+                ...styles.navIcon,
+                opacity: isLoading ? 0.3 : 1,
+                color: isLoading ? '#d1d5db' : (canGoForward() ? '#374151' : '#d1d5db')
+              }}
+            />
+          </button>
+        </div>
+      </form>
     </>
   );
 }
@@ -91,13 +156,13 @@ const styles = {
     height: '64px',
     display: 'flex',
     alignItems: 'center',
-    padding: '0 20px',
+    padding: '15px',
     backgroundColor: '#fff',
     borderRadius: '32px',
     border: '1px solid #e5e7eb',
     boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
-    maxWidth: '100%',
     cursor: 'text',
+    gap: '4px',
   },
   input: {
     flex: 1,
@@ -106,21 +171,23 @@ const styles = {
     border: 'none',
     outline: 'none',
     background: 'transparent',
-    marginRight: '12px',
+    margin: '0 4px',
   },
-  submitButton: {
+  navButton: {
     border: 'none',
     background: 'transparent',
     cursor: 'pointer',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: '4px',
+    padding: '3px',
+    transition: 'transform 0.2s ease',
+    borderRadius: '50%',
+    flexShrink: 0,
+    width: '36px',
+    height: '36px',
   },
-  clapperIcon: {
-    width: '24px',
-    height: '24px',
-    opacity: 0.9,
-    transition: 'opacity 0.2s ease',
+  navIcon: {
+    transition: 'all 0.2s ease',
   },
 };
