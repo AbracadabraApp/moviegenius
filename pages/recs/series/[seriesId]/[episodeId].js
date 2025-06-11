@@ -9,106 +9,66 @@ import { underlineProperNames } from '../../../../lib/proper-names';
 import loadingMessages from '../../../../data/loading-messages.json';
 import seriesConfig from '../../../../data/series-config.json';
 
-export default function SeriesEpisodePage() {
+export default function SeriesEpisodePage({ series, episode, otherEpisodes, seriesId, episodeId, episodeContent }) {
   const router = useRouter();
-  const { seriesId, episodeId } = router.query;
   
-  const [isLoading, setIsLoading] = useState(true);
-  const [loadingMessage, setLoadingMessage] = useState('');
-  const [loadingIcon, setLoadingIcon] = useState('');
-  const [content, setContent] = useState(null);
-  const [series, setSeries] = useState(null);
-  const [episode, setEpisode] = useState(null);
   const [exploreFurther, setExploreFurther] = useState([]);
   const [isLoadingExplore, setIsLoadingExplore] = useState(false);
   const [error, setError] = useState(null);
+
+  // If we're in fallback mode, show loading
+  if (router.isFallback) {
+    return (
+      <PhoneFrame active="recs">
+        <div style={styles.container}>
+          <div style={styles.fixedInputArea}>
+            <AskInputBar onSubmit={() => {}} />
+          </div>
+          <div style={styles.loadingContainer}>
+            <div style={styles.loadingText}>Loading episode...</div>
+          </div>
+        </div>
+      </PhoneFrame>
+    );
+  }
 
   const handleAsk = (question) => {
     router.push(`/ask?q=${encodeURIComponent(question)}`);
   };
 
+  // Only load explore further topics dynamically
   useEffect(() => {
-    if (!seriesId || !episodeId) return;
-
-    const loadEpisodeContent = async () => {
-      // Loading animation setup (same as ask page)
-      const iconFiles = [
-        'film-movie-reel-icon.png',
-        'film-movie-icon.png',
-        'chair-director-outline-icon.png'
-      ];
-      
-      const setRandomLoadingContent = () => {
-        const randomMessage = loadingMessages[Math.floor(Math.random() * loadingMessages.length)];
-        const randomIcon = iconFiles[Math.floor(Math.random() * iconFiles.length)];
-        setLoadingMessage(randomMessage);
-        setLoadingIcon(randomIcon);
-      };
-      
-      setRandomLoadingContent();
-      const cycleInterval = setInterval(setRandomLoadingContent, 5000);
-
+    const loadExploreFurther = async () => {
+      setIsLoadingExplore(true);
       try {
-        // Call API to generate episode content (following ask-claude pattern)
-        const response = await fetch('/api/series-episode', {
+        const exploreResponse = await fetch('/api/generate-explore-topics', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ seriesId, episodeId }),
+          body: JSON.stringify({ 
+            query: `${episode.title}: ${episode.subtitle}` 
+          }),
         });
 
-        if (!response.ok) {
-          throw new Error('Failed to load episode content');
+        if (exploreResponse.ok) {
+          const exploreData = await exploreResponse.json();
+          setExploreFurther(exploreData.topics || []);
         }
-
-        const data = await response.json();
-        
-        // Set content using same structure as ask page
-        setContent(data.data);
-        setSeries(data.series);
-        setEpisode(data.episode);
-
-        // Generate explore further topics
-        setIsLoadingExplore(true);
-        try {
-          const exploreResponse = await fetch('/api/generate-explore-topics', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ 
-              query: `${data.episode.title}: ${data.episode.subtitle}` 
-            }),
-          });
-
-          if (exploreResponse.ok) {
-            const exploreData = await exploreResponse.json();
-            setExploreFurther(exploreData.topics || []);
-          }
-        } catch (exploreError) {
-          console.error('Error generating explore topics:', exploreError);
-          // Continue without explore topics
-        }
-        setIsLoadingExplore(false);
-
-        clearInterval(cycleInterval);
-        setIsLoading(false);
-
-      } catch (error) {
-        console.error('Error loading episode:', error);
-        setError(error.message);
-        clearInterval(cycleInterval);
-        setIsLoading(false);
+      } catch (exploreError) {
+        console.error('Error generating explore topics:', exploreError);
+        // Continue without explore topics
       }
+      setIsLoadingExplore(false);
     };
 
-    loadEpisodeContent();
+    loadExploreFurther();
   }, [seriesId, episodeId]);
+
 
   if (error) {
     return (
-      <PhoneFrame active="ask">
+      <PhoneFrame active="recs">
         <div style={styles.container}>
           <div style={styles.fixedInputArea}>
             <AskInputBar onSubmit={handleAsk} />
@@ -121,32 +81,8 @@ export default function SeriesEpisodePage() {
     );
   }
 
-  if (!content || isLoading) {
-    return (
-      <PhoneFrame active="ask">
-        <div style={styles.container}>
-          <div style={styles.fixedInputArea}>
-            <AskInputBar onSubmit={handleAsk} />
-          </div>
-          <div style={styles.loadingContainer}>
-            <div style={styles.loadingRow}>
-              {loadingIcon && (
-                <img 
-                  src={`/icons/loading/${loadingIcon}`} 
-                  alt="Loading..." 
-                  style={styles.filmIcon}
-                />
-              )}
-              <span style={styles.loadingText}>{loadingMessage}</span>
-            </div>
-          </div>
-        </div>
-      </PhoneFrame>
-    );
-  }
-
   return (
-    <PhoneFrame active="ask">
+    <PhoneFrame active="recs">
       <div style={styles.container}>
         {/* Fixed Ask Input Bar */}
         <div style={styles.fixedInputArea}>
@@ -170,7 +106,7 @@ export default function SeriesEpisodePage() {
                       e.currentTarget.style.backgroundColor = 'transparent';
                     }}
                   >
-                    ← Back to {series.title}
+                    ← Back to {series.title.split(' - ')[0]}
                   </button>
                 </div>
               )}
@@ -185,12 +121,12 @@ export default function SeriesEpisodePage() {
               )}
               
               {/* Opener Sentence */}
-              {content.opener && (
-                <div style={styles.opener}>{content.opener}</div>
+              {episodeContent.opener && (
+                <div style={styles.opener}>{episodeContent.opener}</div>
               )}
               
               {/* Render sections - EXACT same pattern as ask page */}
-              {content.sections && content.sections.map((section, sectionIndex) => (
+              {episodeContent.sections && episodeContent.sections.map((section, sectionIndex) => (
                 <div key={`section-${sectionIndex}`}>
                   {section.type === 'text' && (
                     <div style={styles.answer}>
@@ -203,18 +139,21 @@ export default function SeriesEpisodePage() {
                     </div>
                   )}
                   {section.type === 'movies' && section.movies && (
-                    <div style={styles.movieList}>
-                      {section.movies.map((movie, movieIndex) => (
-                        <MediaCard
-                          key={`${seriesId}-${episodeId}-${sectionIndex}-${movieIndex}`}
-                          title={movie.title}
-                          year={movie.year}
-                          initialSlug={movie.slug}
-                          initialPoster={movie.poster_url}
-                          initialStreaming={movie.streaming}
-                          tmdbId={movie.tmdb_id}
-                        />
-                      ))}
+                    <div style={styles.movieSection}>
+                      <div style={styles.movieSectionHeader}>Movies Mentioned</div>
+                      <div style={styles.movieList}>
+                        {section.movies.map((movie, movieIndex) => (
+                          <MediaCard
+                            key={`${seriesId}-${episodeId}-${sectionIndex}-${movieIndex}`}
+                            title={movie.title}
+                            year={movie.year}
+                            initialSlug={movie.slug}
+                            initialPoster={movie.poster_url}
+                            initialStreaming={movie.streaming}
+                            tmdbId={movie.tmdb_id}
+                          />
+                        ))}
+                      </div>
                     </div>
                   )}
                 </div>
@@ -256,30 +195,28 @@ export default function SeriesEpisodePage() {
 
               
               {/* Other Episodes in Series */}
-              {series && series.episodes && (
+              {otherEpisodes && otherEpisodes.length > 0 && (
                 <div style={styles.moreEpisodesSection}>
-                  <h3 style={styles.moreEpisodesTitle}>Other Episodes in {series.title}</h3>
+                  <h3 style={styles.moreEpisodesTitle}>Other Episodes in {series.title.split(' - ')[0]}</h3>
                   <div style={styles.episodeList}>
-                    {series.episodes
-                      .filter(ep => ep.id.toString() !== episodeId)
-                      .map((ep) => (
-                        <EpisodeCard
-                          key={ep.id}
-                          episode={ep}
-                          seriesId={seriesId}
-                          onClick={() => router.push(`/recs/series/${seriesId}/${ep.id}`)}
-                        />
-                      ))}
+                    {otherEpisodes.map((ep) => (
+                      <EpisodeCard
+                        key={ep.id}
+                        episode={ep}
+                        seriesId={seriesId}
+                        onClick={() => router.push(`/recs/series/${seriesId}/${ep.id}`)}
+                      />
+                    ))}
                   </div>
                 </div>
               )}
               
               {/* More Ideas Section - Moved to bottom */}
-              {content.moreIdeas && content.moreIdeas.movies && content.moreIdeas.movies.length > 0 && (
+              {episodeContent.moreIdeas && episodeContent.moreIdeas.movies && episodeContent.moreIdeas.movies.length > 0 && (
                 <div style={styles.moreIdeasSection}>
-                  <h3 style={styles.moreIdeasTitle}>{content.moreIdeas.title}</h3>
+                  <h3 style={styles.moreIdeasTitle}>{episodeContent.moreIdeas.title}</h3>
                   <div style={styles.movieList}>
-                    {content.moreIdeas.movies.map((movie, index) => (
+                    {episodeContent.moreIdeas.movies.map((movie, index) => (
                       <MediaCard
                         key={`more-${seriesId}-${episodeId}-${index}`}
                         title={movie.title}
@@ -358,16 +295,11 @@ const styles = {
     gap: '12px',
   },
   opener: {
-    fontSize: '16px',
+    fontSize: '15px',
     color: '#374151',
-    fontWeight: '500',
     lineHeight: '1.6',
-    marginBottom: '20px',
-    fontStyle: 'italic',
-    paddingLeft: '16px',
-    borderLeft: '3px solid #007AFF',
-    paddingTop: '4px',
-    paddingBottom: '4px',
+    whiteSpace: 'pre-wrap',
+    marginBottom: '16px',
   },
   backNavigation: {
     marginBottom: '16px',
@@ -402,11 +334,21 @@ const styles = {
     marginTop: '24px',
     marginBottom: '12px',
   },
+  movieSection: {
+    marginTop: '8px',
+    width: '100%',
+  },
+  movieSectionHeader: {
+    fontSize: '12px',
+    color: '#6b7280',
+    marginBottom: '12px',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px',
+  },
   movieList: {
     display: 'flex',
     flexDirection: 'column',
     gap: '8px',
-    marginTop: '12px',
     width: '100%',
   },
   loadingContainer: {
@@ -456,11 +398,6 @@ const styles = {
     marginBottom: '16px',
     textAlign: 'left',
   },
-  episodeGrid: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '12px',
-  },
   exploreFurtherSection: {
     marginTop: '32px',
   },
@@ -499,43 +436,6 @@ const styles = {
     borderRadius: '8px',
     lineHeight: '1.4',
     fontStyle: 'italic',
-  },
-  episodeCard: {
-    display: 'flex',
-    flexDirection: 'column',
-    backgroundColor: '#ffffff',
-    borderRadius: '12px',
-    border: '1px solid #d1d5db',
-    boxShadow: '0 6px 20px rgba(0, 0, 0, 0.25)',
-    marginBottom: '30px',
-    cursor: 'pointer',
-    transition: 'all 0.3s ease',
-    overflow: 'hidden',
-  },
-  episodeContent: {
-    padding: '24px',
-    backgroundColor: '#ffffff',
-  },
-  episodeCardTitle: {
-    fontSize: '16px',
-    fontWeight: '600',
-    color: '#111827',
-    marginBottom: '4px',
-    lineHeight: '1.3',
-    margin: 0,
-    marginBottom: '6px',
-    wordWrap: 'break-word',
-    whiteSpace: 'normal',
-    overflow: 'visible',
-  },
-  episodeCardSubtitle: {
-    fontSize: '14px',
-    color: '#6b7280',
-    lineHeight: '1.3',
-    margin: 0,
-    wordWrap: 'break-word',
-    whiteSpace: 'normal',
-    overflow: 'visible',
   },
   episodeImageRow: {
     display: 'flex',
@@ -587,3 +487,76 @@ const styles = {
     textDecoration: 'none',
   },
 };
+
+// Static generation for all episode pages
+export async function getStaticPaths() {
+  const paths = [];
+  
+  // Generate paths for all series and episodes
+  Object.keys(seriesConfig).forEach(seriesId => {
+    const series = seriesConfig[seriesId];
+    series.episodes.forEach(episode => {
+      paths.push({
+        params: {
+          seriesId: seriesId.toString(),
+          episodeId: episode.id.toString()
+        }
+      });
+    });
+  });
+  
+  return {
+    paths,
+    fallback: false // All paths are pre-generated
+  };
+}
+
+export async function getStaticProps({ params }) {
+  const { seriesId, episodeId } = params;
+  
+  // Get series from config
+  const series = seriesConfig[seriesId];
+  if (!series) {
+    return {
+      notFound: true
+    };
+  }
+  
+  // Find the specific episode
+  const episode = series.episodes.find(ep => ep.id.toString() === episodeId);
+  if (!episode) {
+    return {
+      notFound: true
+    };
+  }
+  
+  // Get other episodes (excluding current one)
+  const otherEpisodes = series.episodes.filter(ep => ep.id.toString() !== episodeId);
+  
+  // Load episode content from static JSON file
+  let episodeContent = null;
+  try {
+    const fs = require('fs');
+    const path = require('path');
+    const contentPath = path.join(process.cwd(), 'data', 'episodes', `series-${seriesId}-episode-${episodeId}.json`);
+    
+    if (fs.existsSync(contentPath)) {
+      const contentData = fs.readFileSync(contentPath, 'utf8');
+      const parsedContent = JSON.parse(contentData);
+      episodeContent = parsedContent.content;
+    }
+  } catch (error) {
+    console.error(`Error loading episode content for series ${seriesId} episode ${episodeId}:`, error);
+  }
+  
+  return {
+    props: {
+      series,
+      episode,
+      otherEpisodes,
+      seriesId,
+      episodeId,
+      episodeContent
+    }
+  };
+}
