@@ -12,6 +12,11 @@ export default {
     }
 
     try {
+      // Homepage Redirect - Handle before any caching
+      if (pathname === '/') {
+        return Response.redirect(new URL('/recs', request.url), 301);
+      }
+
       // Static Assets - Cache for 1 year
       if (isStaticAsset(pathname)) {
         return handleStaticAsset(request, ctx);
