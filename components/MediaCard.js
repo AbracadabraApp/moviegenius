@@ -248,8 +248,8 @@ export default function MediaCard({
       <div style={styles.textContainer}>
         <div style={styles.header}>
           <div style={styles.title}>{title}</div>
-          <div style={styles.year}>({year})</div>
         </div>
+        <div style={styles.year}>({year})</div>
         <div style={styles.slug}>{slug}</div>
         
         {/* Bottom row: streaming left, icons right */}
@@ -337,9 +337,6 @@ const styles = {
     overflow: 'hidden', // Prevent text overflow
   },
   header: {
-    display: 'flex',
-    flexDirection: 'row',
-    gap: '6px',
     fontSize: '18px',
     lineHeight: '1.2',
     fontFamily: 'inherit',
@@ -351,9 +348,12 @@ const styles = {
     color: '#000',
   },
   year: {
-    color: '#666',
-    fontWeight: 'normal',
+    fontSize: '14px',
+    color: '#999',
+    fontWeight: '300',
     fontFamily: 'inherit',
+    marginTop: '2px',
+    marginBottom: '4px',
   },
   slug: {
     fontSize: '14px',
