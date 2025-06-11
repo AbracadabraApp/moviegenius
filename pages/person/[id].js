@@ -611,10 +611,7 @@ export async function getStaticProps({ params }) {
       };
 
       // Add ISR revalidation (24 hours like movie pages)
-      const isMobileBuild = process.env.BUILD_TARGET === 'mobile';
-      if (!isMobileBuild) {
-        response.revalidate = 86400; // 24 hour revalidation for web
-      }
+      response.revalidate = 86400; // 24 hour revalidation
 
       return response;
     } else {
@@ -633,17 +630,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const isMobile = process.env.BUILD_TARGET === 'mobile';
-  
-  // For mobile builds, we still need static export
-  if (isMobile) {
-    return {
-      paths: [],
-      fallback: false
-    };
-  }
-  
-  // Web: Generate all person pages on-demand for fast builds
+  // Generate all person pages on-demand for fast builds
   return {
     paths: [], // No pre-generation
     fallback: 'blocking' // Generate on first request

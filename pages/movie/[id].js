@@ -571,9 +571,6 @@ export async function getStaticProps({ params }) {
       .single();
 
     if (movieEntry && !error) {
-      // Check if this is a mobile build
-      const isMobile = process.env.BUILD_TARGET === 'mobile';
-      
       // Movie found in Supabase - return as props
       const response = {
         props: {
@@ -611,19 +608,7 @@ export async function getStaticProps({ params }) {
 
 // Simplified path generation - no pre-generation, all on-demand
 export async function getStaticPaths() {
-  const isMobile = process.env.BUILD_TARGET === 'mobile';
-  
-  // For mobile builds, we still need static export
-  if (isMobile) {
-    // Mobile: This would need pre-generation for static export
-    // But for now, mobile builds can use server mode
-    return {
-      paths: [],
-      fallback: false
-    };
-  }
-  
-  // Web: Generate all pages on-demand for fast builds
+  // Generate all pages on-demand for fast builds
   return {
     paths: [], // No pre-generation
     fallback: 'blocking' // Generate on first request
