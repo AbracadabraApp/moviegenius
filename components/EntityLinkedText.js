@@ -13,7 +13,7 @@ export default function EntityLinkedText({
   currentEntity = null,
   className = '',
   style = {},
-  linkingStyle = 'subtle'    // 'off' | 'subtle' | 'bold' | 'minimal'
+  linkingStyle = 'off'       // 'off' | 'subtle' | 'bold' | 'minimal' - DEFAULT OFF
 }) {
   const [processedContent, setProcessedContent] = useState(null);
 
@@ -226,7 +226,7 @@ export function MovieAnalysisWithEntities({ analysis, currentMovie, className = 
       currentEntity={currentMovie}
       className={className}
       style={style}
-      linkingStyle="subtle"
+      linkingStyle="off"
     />
   );
 }
