@@ -6,7 +6,7 @@ const path = require('path');
 const CONFIG = {
     concurrency: 4,           // Number of concurrent tabs
     pageTimeout: 120000,      // 2 minutes max per page
-    smartTimeout: 45000,      // Max wait for smart detection
+    smartTimeout: 90000,      // 90 seconds for Claude analysis to complete
     delayBetweenTabs: 500,    // Stagger tab starts
     progressInterval: 5,      // Progress updates every N completions
     retryAttempts: 2,         // Retry failed pages
@@ -19,8 +19,17 @@ async function visitAllMovieUrls(startOffset = 0, options = {}) {
     console.log('🚀 Starting optimized bulk URL visitor...');
     console.log(`⚙️  Config: ${config.concurrency} tabs, smart detection enabled`);
     
-    // Read the extracted URLs
-    const movieData = JSON.parse(fs.readFileSync('extracted-movie-urls.json', 'utf8'));
+    // Read URLs from specified file or default
+    const urlFile = config.urlFile || 'extracted-movie-urls.json';
+    console.log(`📁 Loading URLs from: ${urlFile}`);
+    
+    if (!fs.existsSync(urlFile)) {
+        console.error(`❌ URL file not found: ${urlFile}`);
+        console.log(`💡 Generate clean URLs first: node generate-movie-urls.js`);
+        process.exit(1);
+    }
+    
+    const movieData = JSON.parse(fs.readFileSync(urlFile, 'utf8'));
     console.log(`📊 Found ${movieData.length} URLs to visit`);
     
     // Apply offset if provided
@@ -160,31 +169,99 @@ async function processMovie(page, movie, globalIndex, totalMovies, config) {
  * Smart loading detection - waits for "Explore Further" content
  */
 async function navigateWithSmartDetection(page, url, config) {
+    let navigationSuccess = false;
+    let pageResponse = null;
+    
     try {
-        // Start navigation
-        await page.goto(url, { 
+        // Navigate with detailed error tracking
+        pageResponse = await page.goto(url, { 
             waitUntil: 'domcontentloaded',
             timeout: config.pageTimeout 
         });
         
-        // Smart detection: wait for "Explore Further" content
+        // Check if navigation actually succeeded
+        if (!pageResponse) {
+            return createErrorResult('No response received', 'navigation-failed');
+        }
+        
+        const status = pageResponse.status();
+        if (status >= 400) {
+            return createErrorResult(`HTTP ${status}: ${pageResponse.statusText()}`, 'http-error');
+        }
+        
+        navigationSuccess = true;
+        
+        // Verify basic page structure loaded (more lenient)
+        const hasBasicContent = await page.evaluate(() => {
+            const body = document.body;
+            return body && body.children && body.children.length > 0;
+        });
+        
+        if (!hasBasicContent) {
+            return createErrorResult('Page structure incomplete', 'content-missing');
+        }
+        
+        // Smart detection with better error handling
         const smartDetected = await Promise.race([
             // Wait for high-value content indicator
             page.waitForFunction(
                 () => {
-                    const content = document.body.innerText || '';
-                    return content.includes('Explore Further') || 
-                           content.includes('More Ideas') ||
-                           content.includes('Similar Movies') ||
-                           (content.length > 5000 && content.includes('Analysis'));
+                    try {
+                        const content = document.body.innerText || '';
+                        const hasExploreContent = content.includes('Explore Further') || 
+                                                content.includes('More Ideas') ||
+                                                content.includes('Similar Movies');
+                        const hasRichAnalysis = content.length > 5000 && content.includes('Analysis');
+                        const hasMovieContent = content.includes('MovieGenius') || content.includes('movie');
+                        
+                        return hasExploreContent || hasRichAnalysis || hasMovieContent;
+                    } catch (e) {
+                        return false;
+                    }
                 },
                 { timeout: config.smartTimeout }
-            ).then(() => true),
+            ).then(() => true).catch(() => false),
             
-            // Fallback: wait for network idle
-            new Promise(resolve => setTimeout(resolve, config.smartTimeout))
-                .then(() => false)
-        ]).catch(() => false);
+            // Fallback timeout
+            new Promise(resolve => setTimeout(() => resolve(false), config.smartTimeout))
+        ]);
+        
+        // Final content validation
+        const finalValidation = await page.evaluate(() => {
+            try {
+                const content = document.body.innerText || '';
+                const title = document.title || '';
+                
+                return {
+                    hasContent: content.length > 100,
+                    hasTitle: title.length > 0,
+                    contentLength: content.length,
+                    isErrorPage: content.toLowerCase().includes('error') || 
+                                content.toLowerCase().includes('not found') ||
+                                content.toLowerCase().includes('404'),
+                    hasMovieContent: content.toLowerCase().includes('movie') ||
+                                   content.toLowerCase().includes('film') ||
+                                   title.toLowerCase().includes('movie')
+                };
+            } catch (e) {
+                return { hasContent: false, hasTitle: false, contentLength: 0, isErrorPage: true };
+            }
+        });
+        
+        // Disable strict error page detection - loading states can contain "error" text
+        // if (finalValidation.isErrorPage) {
+        //     return createErrorResult('Error page detected', 'error-page');
+        // }
+        
+        // More lenient content validation
+        if (finalValidation.contentLength < 50) {
+            return createErrorResult(`Too little content: ${finalValidation.contentLength} chars`, 'empty-page');
+        }
+        
+        // Temporarily disable strict movie content validation for debugging
+        // if (!finalValidation.hasMovieContent) {
+        //     return createErrorResult('No movie-related content found', 'wrong-content');
+        // }
         
         // Additional brief wait for any final content loading
         await new Promise(resolve => setTimeout(resolve, 1000));
@@ -192,17 +269,28 @@ async function navigateWithSmartDetection(page, url, config) {
         return {
             success: true,
             smartDetected,
-            method: smartDetected ? 'smart-content' : 'network-idle'
+            method: smartDetected ? 'smart-content' : 'timeout-fallback',
+            contentLength: finalValidation.contentLength,
+            httpStatus: status
         };
         
     } catch (error) {
-        return {
-            success: false,
-            smartDetected: false,
-            error: error.message,
-            method: 'failed'
-        };
+        const errorType = navigationSuccess ? 'content-error' : 'navigation-error';
+        return createErrorResult(error.message, errorType);
     }
+}
+
+/**
+ * Create standardized error result
+ */
+function createErrorResult(message, errorType) {
+    return {
+        success: false,
+        smartDetected: false,
+        error: message,
+        errorType: errorType,
+        method: 'failed'
+    };
 }
 
 /**
@@ -213,10 +301,20 @@ function updateProgress(progress, result, movie, logFile) {
         progress.visited++;
         if (result.smartDetected) {
             progress.smartDetected++;
+        } else {
+            // If successful but NOT smart detected, it hit the timeout fallback
+            progress.timeouts++;
         }
     } else {
         progress.errors++;
-        if (result.error && result.error.includes('timeout')) {
+        
+        // Track different error types
+        const errorType = result.errorType || 'unknown';
+        if (!progress.errorTypes) progress.errorTypes = {};
+        progress.errorTypes[errorType] = (progress.errorTypes[errorType] || 0) + 1;
+        
+        // Some errors are also timeouts
+        if (result.error && (result.error.includes('timeout') || errorType === 'navigation-error')) {
             progress.timeouts++;
         }
     }
@@ -229,8 +327,9 @@ function updateProgress(progress, result, movie, logFile) {
         timestamp: new Date().toISOString()
     });
     
-    // Append to log file
-    const logEntry = `${new Date().toISOString()},${result.globalIndex},${movie.title},${result.success},${result.duration},${result.method}\n`;
+    // Append to log file with enhanced data
+    const errorInfo = result.success ? '' : `|${result.errorType || 'unknown'}|${result.error || ''}`;
+    const logEntry = `${new Date().toISOString()},${result.globalIndex},${movie.title},${result.success},${result.duration},${result.method}${errorInfo}\n`;
     fs.appendFileSync(logFile, logEntry);
 }
 
@@ -247,7 +346,15 @@ function printProgress(progress, startOffset, totalMovies) {
     console.log(`\n📊 Progress Report:`);
     console.log(`   ✅ Completed: ${totalCompleted}/${totalMovies} (${(totalCompleted/totalMovies*100).toFixed(1)}%)`);
     console.log(`   🎯 Smart detection: ${progress.smartDetected}/${progress.visited} (${(progress.smartDetected/progress.visited*100).toFixed(1)}%)`);
-    console.log(`   ❌ Errors: ${progress.errors} | ⏰ Timeouts: ${progress.timeouts}`);
+    console.log(`   ⏰ Timeouts: ${progress.timeouts} | ❌ Errors: ${progress.errors}`);
+    
+    // Show error breakdown if there are errors
+    if (progress.errors > 0 && progress.errorTypes) {
+        const errorBreakdown = Object.entries(progress.errorTypes)
+            .map(([type, count]) => `${type}:${count}`)
+            .join(', ');
+        console.log(`   🔍 Error types: ${errorBreakdown}`);
+    }
     console.log(`   ⚡ Rate: ${rate.toFixed(1)} movies/sec | 🕐 ETA: ${(eta/60).toFixed(1)} min\n`);
 }
 
@@ -276,10 +383,19 @@ function printFinalReport(progress, urlsProcessed, startOffset, totalMovies, log
 
 // Run the bulk visitor
 if (require.main === module) {
-    // Get offset from command line argument (e.g., node bulk-visit-crawler.js 100)
-    const startOffset = parseInt(process.argv[2]) || 0;
+    // Parse command line arguments
+    const args = process.argv.slice(2);
+    const startOffset = parseInt(args[0]) || 0;
     
-    visitAllMovieUrls(startOffset)
+    // Parse options (--urls=filename)
+    const options = {};
+    args.forEach(arg => {
+        if (arg.startsWith('--urls=')) {
+            options.urlFile = arg.split('=')[1];
+        }
+    });
+    
+    visitAllMovieUrls(startOffset, options)
         .then(() => {
             console.log('✅ Bulk visiting completed!');
             process.exit(0);
