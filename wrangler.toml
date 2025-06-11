@@ -7,7 +7,7 @@ compatibility_flags = ["nodejs_compat"]
 # Worker settings optimized for performance
 [env.production]
 name = "moviegenius-production"
-route = { pattern = "moviegenius.ai/*", zone_name = "moviegenius.ai" }
+# route = { pattern = "moviegenius.ai/*", zone_name = "moviegenius.ai" } # DISABLED - bypass worker
 
 [env.staging] 
 name = "moviegenius-staging"
