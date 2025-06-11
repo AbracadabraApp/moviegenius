@@ -606,11 +606,48 @@ export async function getStaticProps({ params }) {
   }
 }
 
-// Simplified path generation - no pre-generation, all on-demand
+// Aggressive pre-generation for all 8k movies - instant loading!
 export async function getStaticPaths() {
-  // Generate all pages on-demand for fast builds
-  return {
-    paths: [], // No pre-generation
-    fallback: 'blocking' // Generate on first request
-  };
+  try {
+    // Initialize Supabase client
+    const supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL,
+      process.env.SUPABASE_SERVICE_ROLE_KEY
+    );
+
+    // Get all movie TMDB IDs from database (8k movies)
+    const { data: movies, error } = await supabase
+      .from('movies')
+      .select('tmdb_id')
+      .order('tmdb_id');
+
+    if (error) {
+      console.error('Failed to fetch movie IDs for static generation:', error);
+      return {
+        paths: [],
+        fallback: 'blocking'
+      };
+    }
+
+    // Generate paths for all 8k movies
+    const paths = movies.map(movie => ({
+      params: { id: movie.tmdb_id.toString() }
+    }));
+
+    console.log(`🚀 Pre-generating ${paths.length} movie pages for instant loading`);
+
+    return {
+      paths,
+      fallback: false // All pages pre-generated, no fallback needed!
+    };
+
+  } catch (error) {
+    console.error('Static paths generation error:', error);
+    
+    // Fallback to on-demand generation if pre-generation fails
+    return {
+      paths: [],
+      fallback: 'blocking'
+    };
+  }
 }
