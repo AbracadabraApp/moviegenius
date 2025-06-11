@@ -233,7 +233,7 @@ const styles = {
   },
   titleHeaderField: {
     padding: '16px 16px 20px 16px',
-    backgroundColor: '#4b5563',
+    background: 'linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%)',
   },
   seriesTitle: {
     fontSize: '20px',
