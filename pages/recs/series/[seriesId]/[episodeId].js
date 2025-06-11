@@ -2,10 +2,12 @@
 import PhoneFrame from '../../../../components/PhoneFrame';
 import AskInputBar from '../../../../components/AskInputBar';
 import MediaCard from '../../../../components/MediaCard';
+import EpisodeCard from '../../../../components/EpisodeCard';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { underlineProperNames } from '../../../../lib/proper-names';
 import loadingMessages from '../../../../data/loading-messages.json';
+import seriesConfig from '../../../../data/series-config.json';
 
 export default function SeriesEpisodePage() {
   const router = useRouter();
@@ -155,12 +157,31 @@ export default function SeriesEpisodePage() {
         <div style={styles.scrollableContent}>
           <div style={styles.conversationArea}>
             <div style={styles.messageGroup}>
+              {/* Back Navigation */}
+              {series && (
+                <div style={styles.backNavigation}>
+                  <button 
+                    style={styles.backButton}
+                    onClick={() => router.push('/recs')}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.backgroundColor = '#f3f4f6';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.backgroundColor = 'transparent';
+                    }}
+                  >
+                    ← Back to {series.title}
+                  </button>
+                </div>
+              )}
+
               {/* Episode Header */}
               {episode && (
-                <>
-                  <div style={styles.questionHeader}>{episode.title}</div>
-                  <div style={styles.episodeSubtitle}>{episode.subtitle}</div>
-                </>
+                <EpisodeCard
+                  episode={episode}
+                  seriesId={seriesId}
+                  onClick={() => {}} // No-op since we're already on this episode
+                />
               )}
               
               {/* Opener Sentence */}
@@ -232,47 +253,22 @@ export default function SeriesEpisodePage() {
                   )}
                 </div>
               )}
+
               
-              {/* More Episodes Section */}
+              {/* Other Episodes in Series */}
               {series && series.episodes && (
                 <div style={styles.moreEpisodesSection}>
-                  <h3 style={styles.moreEpisodesTitle}>More Episodes in Cinema Through Time</h3>
-                  <div style={styles.episodeGrid}>
+                  <h3 style={styles.moreEpisodesTitle}>Other Episodes in {series.title}</h3>
+                  <div style={styles.episodeList}>
                     {series.episodes
                       .filter(ep => ep.id.toString() !== episodeId)
                       .map((ep) => (
-                        <div 
+                        <EpisodeCard
                           key={ep.id}
-                          style={styles.episodeCard}
-                          onClick={() => {
-                            router.push(`/recs/series/${seriesId}/${ep.id}`);
-                          }}
-                          onMouseEnter={(e) => {
-                            e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.35)';
-                            e.currentTarget.style.transform = 'translateY(-2px)';
-                          }}
-                          onMouseLeave={(e) => {
-                            e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
-                            e.currentTarget.style.transform = 'translateY(0)';
-                          }}
-                        >
-                          <div style={styles.episodeContent}>
-                            <h3 style={styles.episodeCardTitle}>{ep.title}</h3>
-                            <p style={styles.episodeCardSubtitle}>{ep.subtitle}</p>
-                          </div>
-                          {ep.posters && (
-                            <div style={styles.episodeImageRow}>
-                              {ep.posters.map((poster, index) => (
-                                <img
-                                  key={index}
-                                  src={poster}
-                                  alt={`${ep.title} movie ${index + 1}`}
-                                  style={styles.episodeMovieImage}
-                                />
-                              ))}
-                            </div>
-                          )}
-                        </div>
+                          episode={ep}
+                          seriesId={seriesId}
+                          onClick={() => router.push(`/recs/series/${seriesId}/${ep.id}`)}
+                        />
                       ))}
                   </div>
                 </div>
@@ -297,6 +293,31 @@ export default function SeriesEpisodePage() {
                   </div>
                 </div>
               )}
+
+              {/* Other Series Footer */}
+              <div style={styles.otherSeriesFooter}>
+                <div style={styles.footerTitle}>Other Series</div>
+                <div style={styles.seriesLinks}>
+                  {Object.entries(seriesConfig)
+                    .filter(([id]) => id !== seriesId)
+                    .slice(0, 4)
+                    .map(([id, series]) => (
+                      <div 
+                        key={id}
+                        style={styles.seriesLink}
+                        onClick={() => router.push(`/recs/series/${id}/1`)}
+                      >
+                        — {series.title.split(':')[0]}
+                      </div>
+                    ))}
+                  <div 
+                    style={styles.moreLink}
+                    onClick={() => router.push('/recs/series')}
+                  >
+                    More →
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -348,22 +369,24 @@ const styles = {
     paddingTop: '4px',
     paddingBottom: '4px',
   },
-  questionHeader: {
-    fontSize: '18px',
-    fontWeight: '600',
-    color: '#374151',
-    marginBottom: '4px',
-    textAlign: 'left',
-    paddingLeft: '0px',
-    lineHeight: '1.3',
+  backNavigation: {
+    marginBottom: '16px',
   },
-  episodeSubtitle: {
+  backButton: {
+    background: 'transparent',
+    border: 'none',
     fontSize: '14px',
     color: '#6b7280',
-    fontWeight: '400',
-    marginBottom: '20px',
-    fontStyle: 'italic',
-    lineHeight: '1.4',
+    cursor: 'pointer',
+    padding: '8px 12px',
+    borderRadius: '6px',
+    transition: 'background-color 0.2s ease',
+    fontFamily: 'inherit',
+  },
+  episodeList: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '0px',
   },
   answer: {
     fontSize: '15px',
@@ -527,5 +550,40 @@ const styles = {
     objectPosition: 'center top',
     filter: 'brightness(0.8) contrast(0.9) saturate(0.7)',
     opacity: 0.85,
+  },
+  otherSeriesFooter: {
+    padding: '20px 16px',
+    backgroundColor: '#f8f9fa',
+    borderTop: '1px solid #e5e7eb',
+    marginTop: '24px',
+  },
+  footerTitle: {
+    fontSize: '16px',
+    fontWeight: '600',
+    color: '#374151',
+    marginBottom: '12px',
+  },
+  seriesLinks: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '8px',
+  },
+  seriesLink: {
+    fontSize: '14px',
+    color: '#6b7280',
+    cursor: 'pointer',
+    padding: '8px 0',
+    transition: 'color 0.2s ease',
+    textDecoration: 'none',
+  },
+  moreLink: {
+    fontSize: '14px',
+    color: '#6b7280',
+    cursor: 'pointer',
+    padding: '8px 0',
+    fontWeight: '500',
+    transition: 'color 0.2s ease',
+    textAlign: 'right',
+    textDecoration: 'none',
   },
 };

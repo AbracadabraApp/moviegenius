@@ -11,6 +11,7 @@ export default function RecsPage() {
   const router = useRouter()
   const [currentHeroImage, setCurrentHeroImage] = useState(1)
   const [currentSeries, setCurrentSeries] = useState(null)
+  const [currentSeriesId, setCurrentSeriesId] = useState(null)
 
   // Get today's series based on daily rotation
   const getTodaysSeries = () => {
@@ -29,11 +30,13 @@ export default function RecsPage() {
     const seriesIndex = Math.abs(hash) % seriesKeys.length
     const selectedSeriesId = seriesKeys[seriesIndex]
     
-    return seriesConfig[selectedSeriesId]
+    return { series: seriesConfig[selectedSeriesId], seriesId: selectedSeriesId }
   }
 
   useEffect(() => {
-    setCurrentSeries(getTodaysSeries())
+    const { series, seriesId } = getTodaysSeries()
+    setCurrentSeries(series)
+    setCurrentSeriesId(seriesId)
   }, [])
 
   // Hero image text color settings - adjust per image
@@ -116,7 +119,7 @@ export default function RecsPage() {
             <div style={styles.footerTitle}>Other Series</div>
             <div style={styles.seriesLinks}>
               {Object.entries(seriesConfig)
-                .filter(([id]) => id !== currentSeries?.id.toString())
+                .filter(([id]) => id !== currentSeriesId)
                 .slice(0, 4)
                 .map(([id, series]) => (
                   <div 
