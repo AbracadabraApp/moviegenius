@@ -9,17 +9,22 @@ export default function AskInputBar({
 }) {
   const [question, setQuestion] = useState('');
   const [isFocused, setIsFocused] = useState(false);
+  const [isClient, setIsClient] = useState(false);
   const inputRef = useRef(null);
   const router = useRouter();
 
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   // Check if there's a page to go back to
   const canGoBack = () => {
-    return typeof window !== 'undefined' && window.history.length > 1;
+    return isClient && window.history.length > 1;
   };
 
   // Check if there's a page to go forward to or if there's text to submit
   const canGoForward = () => {
-    return question.trim() || (typeof window !== 'undefined' && window.history.state && window.history.state.forward);
+    return question.trim() || (isClient && window.history.state && window.history.state.forward);
   };
 
   // Standard browser back navigation
@@ -97,7 +102,7 @@ export default function AskInputBar({
               style={{
                 ...styles.navIcon,
                 opacity: isLoading ? 0.3 : 1,
-                color: isLoading ? '#d1d5db' : (canGoBack() ? '#374151' : '#d1d5db')
+                color: isLoading ? '#d1d5db' : '#d1d5db' // Always disabled color during SSR
               }}
             />
           </button>
@@ -137,7 +142,7 @@ export default function AskInputBar({
               style={{
                 ...styles.navIcon,
                 opacity: isLoading ? 0.3 : 1,
-                color: isLoading ? '#d1d5db' : (canGoForward() ? '#374151' : '#d1d5db')
+                color: isLoading ? '#d1d5db' : (question.trim() || (isClient && canGoForward()) ? '#374151' : '#d1d5db')
               }}
             />
           </button>
