@@ -26,6 +26,7 @@ export default function HomePage() {
 
 // Also do server-side redirect for immediate response
 export async function getServerSideProps() {
+  console.log('🔄 Homepage redirect triggered at:', new Date().toISOString());
   return {
     redirect: {
       destination: '/recs',
