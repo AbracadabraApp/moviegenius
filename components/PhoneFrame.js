@@ -69,12 +69,14 @@ const styles = {
     overflow: 'hidden',
     display: 'flex',
     flexDirection: 'column',
+    position: 'relative',
   },
   content: {
     flex: 1,
     overflowY: 'scroll',
     scrollbarWidth: 'none',
     msOverflowStyle: 'none',
+    paddingBottom: '90px', // Space for sticky navbar
   },
   
   // Mobile layout (full screen)
@@ -96,5 +98,6 @@ const styles = {
     scrollbarWidth: 'none',
     msOverflowStyle: 'none',
     width: '100%',
+    paddingBottom: '90px', // Space for sticky navbar
   },
 };

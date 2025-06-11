@@ -1,9 +1,17 @@
 // components/NavBar.js
 import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 import { Clapperboard, Sparkles, User } from 'lucide-react';
+import { shouldShowPhoneFrame } from '../lib/platform';
 
 export default function NavBar() {
   const router = useRouter();
+  const [showFrame, setShowFrame] = useState(true); // Default to frame for SSR
+
+  useEffect(() => {
+    // Client-side detection
+    setShowFrame(shouldShowPhoneFrame());
+  }, []);
 
   const navItems = [
     { label: 'Movies', icon: Clapperboard, route: '/recs' },
@@ -27,7 +35,10 @@ export default function NavBar() {
   };
 
   return (
-    <nav style={styles.nav}>
+    <nav style={{
+      ...styles.nav,
+      ...(showFrame ? styles.navDesktop : styles.navMobile)
+    }}>
       {navItems.map(({ label, icon: Icon, route }) => {
         const isActive = activeLabel === label;
         return (
@@ -41,10 +52,10 @@ export default function NavBar() {
             onClick={() => handleNavClick(route, isActive)}
           >
             <Icon
-              size={24}
+              size={28}
               style={{
                 ...styles.icon,
-                transform: isActive ? 'scale(1.1)' : 'scale(1)',
+                transform: isActive ? 'scale(1.15)' : 'scale(1)',
               }}
             />
             <span style={styles.labelContainer}>
@@ -64,20 +75,35 @@ const styles = {
     justifyContent: 'space-around',
     alignItems: 'center',
     backgroundColor: '#222',
-    borderTopLeftRadius: '14px',
-    borderTopRightRadius: '14px',
-    padding: '12px 0',
-    boxShadow: '0 -3px 12px rgba(0,0,0,0.3)',
+    borderTopLeftRadius: '20px',
+    borderTopRightRadius: '20px',
+    padding: '16px 0 20px 0',
+    boxShadow: '0 -4px 20px rgba(0,0,0,0.4)',
+  },
+  navMobile: {
+    position: 'fixed',
+    bottom: 0,
+    left: 0,
+    right: 0,
     width: '100%',
+    zIndex: 1000,
+  },
+  navDesktop: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    width: '100%',
+    zIndex: 1000,
   },
   navItem: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    gap: '4px',
+    gap: '6px',
     color: 'white',
     fontFamily: 'sans-serif',
-    fontSize: '13px',
+    fontSize: '14px',
     cursor: 'pointer',
     textDecoration: 'none',
     transition: 'opacity 0.2s ease, transform 0.2s ease',
