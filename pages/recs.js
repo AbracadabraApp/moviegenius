@@ -72,11 +72,6 @@ export default function RecsPage({ featuredList, otherLists, error }) {
             />
           </div>
           
-          {/* Series Header - Pill scrolls away */}
-          <div style={styles.seriesHeaderField}>
-            <div style={styles.seriesLabelPill}>Series</div>
-          </div>
-          
           {/* Sticky Title Section - Only headline sticks */}
           <div style={styles.stickyTitleHeader}>
             <div style={styles.titleHeaderField}>
@@ -103,7 +98,7 @@ export default function RecsPage({ featuredList, otherLists, error }) {
               >
                 <div style={styles.episodeContent}>
                   <h3 style={styles.episodeTitle}>1970s: The Auteur Renaissance</h3>
-                  <p style={styles.episodeSubtitle}>When directors became superstars</p>
+                  <p style={styles.episodeSubtitle}>When directors became superstars and changed cinema forever</p>
                 </div>
                 <div style={styles.episodeImageRow}>
                   <img src="/images/posters/the-godfather.jpg" alt="The Godfather" style={styles.episodeMovieImage} />
@@ -128,7 +123,7 @@ export default function RecsPage({ featuredList, otherLists, error }) {
               >
                 <div style={styles.episodeContent}>
                   <h3 style={styles.episodeTitle}>1980s: Blockbuster Revolution</h3>
-                  <p style={styles.episodeSubtitle}>High-concept cinema takes over</p>
+                  <p style={styles.episodeSubtitle}>High-concept cinema and spectacle filmmaking</p>
                 </div>
                 <div style={styles.episodeImageRow}>
                   <img src="/images/posters/star-wars.jpg" alt="Star Wars" style={styles.episodeMovieImage} />
@@ -153,7 +148,7 @@ export default function RecsPage({ featuredList, otherLists, error }) {
               >
                 <div style={styles.episodeContent}>
                   <h3 style={styles.episodeTitle}>1990s: Independent Renaissance</h3>
-                  <p style={styles.episodeSubtitle}>Bold voices outside the system</p>
+                  <p style={styles.episodeSubtitle}>Bold creative voices emerge from outside the studio system</p>
                 </div>
                 <div style={styles.episodeImageRow}>
                   <img src="/images/posters/pulp-fiction.jpg" alt="Pulp Fiction" style={styles.episodeMovieImage} />
@@ -178,7 +173,7 @@ export default function RecsPage({ featuredList, otherLists, error }) {
               >
                 <div style={styles.episodeContent}>
                   <h3 style={styles.episodeTitle}>2010s-2020s: Global Cinema Rising</h3>
-                  <p style={styles.episodeSubtitle}>World cinema goes mainstream</p>
+                  <p style={styles.episodeSubtitle}>International voices reshape Hollywood and streaming</p>
                 </div>
                 <div style={styles.episodeImageRow}>
                   <img src="/images/posters/the-lord-of-the-rings-the-fellowship-of-the-ring.jpg" alt="Lord of the Rings" style={styles.episodeMovieImage} />
@@ -538,10 +533,6 @@ const styles = {
     fontSize: '16px',
     margin: 0,
   },
-  seriesHeaderField: {
-    padding: '20px 16px 12px 16px',
-    background: 'linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%)',
-  },
   stickyTitleHeader: {
     position: 'sticky',
     top: '0px', // Stick right to the top of scrollable content
@@ -551,18 +542,6 @@ const styles = {
   titleHeaderField: {
     padding: '16px 16px 20px 16px',
     background: 'linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%)',
-  },
-  seriesLabelPill: {
-    display: 'inline-block',
-    fontSize: '12px',
-    fontWeight: '600',
-    color: '#000000',
-    textTransform: 'uppercase',
-    letterSpacing: '0.5px',
-    marginBottom: '8px',
-    padding: '6px 12px',
-    backgroundColor: '#ffffff',
-    borderRadius: '20px',
   },
   seriesTitle: {
     fontSize: '20px',
