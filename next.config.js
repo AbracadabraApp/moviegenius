@@ -32,17 +32,6 @@ const nextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
   
-  // Redirects - homepage to recs (force rebuild)
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/recs',
-        permanent: true, // 301 redirect for SEO
-      }
-    ];
-  },
-  
   // Cloudflare-optimized headers
   async headers() {
     return [
