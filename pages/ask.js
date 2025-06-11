@@ -342,7 +342,7 @@ const styles = {
     msOverflowStyle: 'none',
   },
   conversationArea: {
-    padding: '16px',
+    padding: '4px 16px 16px 16px',
     display: 'flex',
     flexDirection: 'column',
     gap: '24px',
