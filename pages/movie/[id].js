@@ -584,10 +584,8 @@ export async function getStaticProps({ params }) {
         }
       };
       
-      // Add ISR only for web builds (mobile can't use revalidate with export)
-      if (!isMobile) {
-        response.revalidate = 86400; // 24 hour revalidation for web
-      }
+      // Add ISR for web builds (mobile builds deprecated)
+      response.revalidate = 86400; // 24 hour revalidation
       
       return response;
     } else {

@@ -121,12 +121,12 @@ export default function SeriesEpisodePage({ series, episode, otherEpisodes, seri
               )}
               
               {/* Opener Sentence */}
-              {episodeContent.opener && (
+              {episodeContent && episodeContent.opener && (
                 <div style={styles.opener}>{episodeContent.opener}</div>
               )}
               
               {/* Render sections - EXACT same pattern as ask page */}
-              {episodeContent.sections && episodeContent.sections.map((section, sectionIndex) => (
+              {episodeContent && episodeContent.sections && episodeContent.sections.map((section, sectionIndex) => (
                 <div key={`section-${sectionIndex}`}>
                   {section.type === 'text' && (
                     <div style={styles.answer}>
@@ -212,7 +212,7 @@ export default function SeriesEpisodePage({ series, episode, otherEpisodes, seri
               )}
               
               {/* More Ideas Section - Moved to bottom */}
-              {episodeContent.moreIdeas && episodeContent.moreIdeas.movies && episodeContent.moreIdeas.movies.length > 0 && (
+              {episodeContent && episodeContent.moreIdeas && episodeContent.moreIdeas.movies && episodeContent.moreIdeas.movies.length > 0 && (
                 <div style={styles.moreIdeasSection}>
                   <h3 style={styles.moreIdeasTitle}>{episodeContent.moreIdeas.title}</h3>
                   <div style={styles.movieList}>
