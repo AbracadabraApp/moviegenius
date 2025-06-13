@@ -23,10 +23,6 @@ const SERIES_DIRS = {
 
 // Function to get hero image with intelligent directory-based fallback
 function getHeroImage(themeId, seriesId, episodeId) {
-  // TEMPORARY: Use known working image to test display and spacing
-  return '/images/hero-rotation/noir3.jpeg';
-  
-  /* Future implementation:
   const themeDir = THEME_DIRS[themeId];
   const seriesDir = SERIES_DIRS[themeId]?.[seriesId];
   
@@ -42,7 +38,6 @@ function getHeroImage(themeId, seriesId, episodeId) {
   
   // Fall back to theme-level image
   return `/images/hero/${themeDir}/theme.jpg`;
-  */
 }
 
 export default function GeniusEpisodePage({ 
