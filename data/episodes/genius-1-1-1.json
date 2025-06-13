@@ -1,0 +1,237 @@
+{
+  "system": "genius",
+  "themeId": 1,
+  "seriesId": 1,
+  "episodeId": 1,
+  "theme": {
+    "id": 1,
+    "title": "Film Noir & Crime",
+    "description": "Shadows, moral ambiguity, and the dark side of the American Dream",
+    "slug": "film-noir-crime"
+  },
+  "series": {
+    "id": 1,
+    "title": "Classic Film Noir (1940-1958)",
+    "description": "The birth and golden age of film noir"
+  },
+  "episode": {
+    "id": 1,
+    "title": "Double Indemnity",
+    "subtitle": "The template for noir morality"
+  },
+  "content": {
+    "opener": "Double Indemnity (1944) crystallized the film noir template with its fatalistic tone, morally ambiguous characters, and shadowy visual style, establishing conventions that would define the genre for decades to come.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "The early 1940s saw Hollywood embracing darker themes influenced by German Expressionism and hardboiled crime fiction. The Maltese Falcon (1941) marked a crucial turning point, with John Huston directing Humphrey Bogart as the cynical private eye Sam Spade. This was followed by Double Indemnity (1944), which perfected the noir formula through Fred MacMurray's corrupt insurance salesman and Barbara Stanwyck's manipulative femme fatale. The noir movement gained momentum with Murder, My Sweet (1944) and Laura (1944), both exploring themes of obsession and betrayal against shadowy urban backdrops."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Maltese Falcon",
+            "year": 1941,
+            "slug": "Huston's detective classic",
+            "tmdb_id": "tt0033870",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Directors and Style"
+      },
+      {
+        "type": "text",
+        "content": "Otto Preminger emerged as a master of noir style with Where the Sidewalk Ends (1950), utilizing extreme angles and harsh lighting to heighten psychological tension. Fritz Lang brought his German Expressionist expertise to The Big Heat (1953), creating a brutal urban landscape of corruption and revenge. Robert Siodmak crafted The Killers (1946) with innovative flashback structures and complex narrative layers, while Jacques Tourneur's Out of the Past (1947) perfected the doom-laden atmosphere that became synonymous with noir."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Where the Sidewalk Ends",
+            "year": 1950,
+            "slug": "Preminger's urban noir",
+            "tmdb_id": "tt0043137",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Technical Innovation"
+      },
+      {
+        "type": "text",
+        "content": "Cinematographer John Alton revolutionized noir visual style in T-Men (1947) and Raw Deal (1948), using extreme contrast and creative shadow play. The Third Man (1949) pushed visual boundaries with Dutch angles and innovative sewer photography by Robert Krasker. Touch of Evil (1958) showcased Orson Welles's technical mastery with its famous opening tracking shot and complex sound design, while Criss Cross (1949) demonstrated how intricate camera movements could enhance narrative tension."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "T-Men",
+            "year": 1947,
+            "slug": "Mann's stylish thriller",
+            "tmdb_id": "tt0039874",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Genre Impact"
+      },
+      {
+        "type": "text",
+        "content": "The success of The Big Sleep (1946) proved noir's commercial viability while maintaining artistic integrity. Kiss Me Deadly (1955) pushed the genre into more experimental territory, incorporating Cold War paranoia and nuclear anxiety. In a Lonely Place (1950) demonstrated noir's capacity for complex character studies, while Gun Crazy (1950) showed how the genre could tackle social issues through its crime narrative lens."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Big Sleep",
+            "year": 1946,
+            "slug": "Hawks's Chandler adaptation",
+            "tmdb_id": "tt0038355",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Night and the City (1950) expanded noir's geographical reach to London, while Force of Evil (1948) brought social commentary to the forefront. D.O.A. (1950) introduced innovative narrative structures with its \"dead man walking\" premise, becoming a template for countless future thrillers. Sunset Boulevard (1950) merged noir with Hollywood satire, creating a unique hybrid that commented on the film industry itself."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Night and the City",
+            "year": 1950,
+            "slug": "Dassin's London noir",
+            "tmdb_id": "tt0042785",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The influence of classic noir extended well beyond its golden age, inspiring neo-noir films like Chinatown (1974) and modern interpretations such as L.A. Confidential (1997). The genre's visual style and moral ambiguity became fundamental elements of international cinema, from French New Wave to Japanese noir. The period between 1940-1958 established conventions that continue to resonate in contemporary filmmaking, from psychological thrillers to crime dramas."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Chinatown",
+            "year": 1974,
+            "slug": "Polanski's neo-noir classic",
+            "tmdb_id": "tt0071315",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did German Expressionism influence noir's visual style?",
+          "What role did the Production Code play in shaping noir narratives?",
+          "How did post-war anxiety influence noir themes and characters?"
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "This Gun for Hire",
+          "year": 1942,
+          "slug": "Early noir thriller",
+          "tmdb_id": "tt0035432",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Phantom Lady",
+          "year": 1944,
+          "slug": "Psychological noir mystery",
+          "tmdb_id": "tt0037162",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Detour",
+          "year": 1945,
+          "slug": "Low-budget noir classic",
+          "tmdb_id": "tt0037638",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Gilda",
+          "year": 1946,
+          "slug": "Femme fatale noir",
+          "tmdb_id": "tt0038559",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Dark Passage",
+          "year": 1947,
+          "slug": "Bogart-Bacall noir",
+          "tmdb_id": "tt0039302",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "They Live by Night",
+          "year": 1948,
+          "slug": "Romantic noir",
+          "tmdb_id": "tt0040872",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "White Heat",
+          "year": 1949,
+          "slug": "Gangster noir",
+          "tmdb_id": "tt0042041",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "The Asphalt Jungle",
+          "year": 1950,
+          "slug": "Heist noir",
+          "tmdb_id": "tt0042208",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Pickup on South Street",
+          "year": 1953,
+          "slug": "Cold War noir",
+          "tmdb_id": "tt0046187",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Sweet Smell of Success",
+          "year": 1957,
+          "slug": "Media noir",
+          "tmdb_id": "tt0051036",
+          "poster_url": null,
+          "streaming": null
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-13T19:09:25.373Z",
+  "version": "3.0",
+  "type": "educational"
+}
