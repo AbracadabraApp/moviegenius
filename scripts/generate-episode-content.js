@@ -11,6 +11,9 @@ const fs = require('fs');
 const path = require('path');
 const { Anthropic } = require('@anthropic-ai/sdk');
 
+// Load environment variables from .env.local
+require('dotenv').config({ path: path.join(__dirname, '../.env.local') });
+
 // Configuration
 const SERIES_CONFIG_PATH = path.join(__dirname, '../data/series-config.json');
 const OUTPUT_DIR = path.join(__dirname, '../data/episodes');
@@ -45,36 +48,52 @@ function createEpisodePrompt(series, episode) {
 CRITICAL REQUIREMENTS:
 - START with OPENER: [one compelling sentence that captures the essence]
 - Write EXACTLY 6 PARAGRAPH sections (no more, no less)
-- Each PARAGRAPH: should be 3-4 sentences and include specific film titles
+- Each PARAGRAPH: should be 4-6 sentences and include specific film titles
 - ONLY include MOVIES: for films mentioned by title in that paragraph
-- End with extensive MORE_IDEAS: list (8-10 additional films)
+- Add SUBHEAD: sections when changing themes or focus areas
+- Include 3-5 EXPLORE_FURTHER: interactive questions for deeper exploration
+- End with extensive MORE_IDEAS: list (8-10 additional films) 
+- MORE_IDEAS films should complement but not duplicate films mentioned in paragraphs
+- Target approximately 900 words total
 
 STRUCTURE EXAMPLE:
-OPENER: [one sentence that captures the essence]
-PARAGRAPH: [3-4 sentences with specific film titles mentioned]
+OPENER: [one compelling sentence that captures the essence]
+PARAGRAPH: [4-6 sentences with specific film titles mentioned]
 MOVIES: The Godfather|1972|Coppola's epic family saga|tt0068646
-PARAGRAPH: [3-4 sentences about related films/directors]
-MOVIES: Taxi Driver|1976|Scorsese's urban nightmare|tt0075314
-PARAGRAPH: [3-4 sentences mentioning more films]
-MOVIES: Mean Streets|1973|Early Scorsese masterpiece|tt0070379
-PARAGRAPH: [3-4 sentences about techniques/innovations]
+SUBHEAD: Technical Innovation
+PARAGRAPH: [4-6 sentences about techniques/innovations]
 MOVIES: [relevant films for this paragraph]
-PARAGRAPH: [3-4 sentences about cultural impact]
+PARAGRAPH: [4-6 sentences continuing theme]
 MOVIES: [relevant films for this paragraph]
-PARAGRAPH: [3-4 sentences about legacy/influence]
+SUBHEAD: Cultural Impact
+PARAGRAPH: [4-6 sentences about cultural influence]
 MOVIES: [relevant films for this paragraph]
-MORE_IDEAS: [8-10 additional films with format: Title|Year|Description|TMDB_ID]
+PARAGRAPH: [4-6 sentences about legacy/influence]
+MOVIES: [relevant films for this paragraph]
+PARAGRAPH: [4-6 sentences wrapping up]
+MOVIES: [relevant films for this paragraph]
+EXPLORE_FURTHER: How did [specific technique] influence modern filmmaking?
+EXPLORE_FURTHER: What other directors explored similar themes to [topic]?
+EXPLORE_FURTHER: How did [cultural context] shape the narratives in these films?
+MORE_IDEAS: Title|Year|Description|TMDB_ID
+MORE_IDEAS: Title|Year|Description|TMDB_ID
+MORE_IDEAS: Title|Year|Description|TMDB_ID
+[continue with 8-10 total MORE_IDEAS films that complement the episode]
 
-IMPORTANT: Include TMDB IDs in format ttXXXXXXX for all movies.`,
+IMPORTANT: Include TMDB IDs in format ttXXXXXXX for all movies. MORE_IDEAS section is REQUIRED - include 8-10 relevant films.`,
 
     user: `Create comprehensive educational content for "${series.title}" - Episode: "${episode.title}: ${episode.subtitle}".
 
 CRITICAL FORMATTING REQUIREMENTS:
 - Write EXACTLY 6 paragraphs (no more, no less)
-- Each paragraph should be 3-4 sentences
+- Each paragraph should be 4-6 sentences for richer content
 - Each paragraph MUST mention specific film titles
 - Include TMDB IDs for all films mentioned
+- Use SUBHEAD: sections to organize thematic transitions
+- Include 3-5 EXPLORE_FURTHER: questions for interactive exploration
 - Follow the exact format specified in system prompt
+- Target approximately 900 words for comprehensive coverage
+- CRITICAL: Include 8-10 MORE_IDEAS films at the end - this section is mandatory
 
 Structure your 6 paragraphs to cover:
 1. Historical context and key breakthrough films
@@ -84,7 +103,7 @@ Structure your 6 paragraphs to cover:
 5. Cultural influence and box office success
 6. Legacy and influence on modern cinema
 
-Write exactly 6 substantial paragraphs with specific film titles and director names throughout. Focus on film school level depth but keep structure clear and organized.`
+Write substantial paragraphs with specific film titles and director names throughout. Use subheads to organize theme changes and include thought-provoking questions for further exploration.`
   };
 }
 
@@ -147,16 +166,18 @@ async function generateEpisodeContent(series, episode) {
   }
 }
 
-// Parse Claude response (reusing existing logic)
+// Parse Claude response with support for explore_further sections
 function parseClaudeResponse(responseText) {
   const sections = [];
   const moreIdeasMovies = [];
+  const exploreFurtherPrompts = [];
   let opener = null;
   
   const lines = responseText.split('\n');
   let currentSection = null;
   let currentMovies = [];
   let inMoreIdeas = false;
+  let inExploreFurther = false;
   
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
@@ -211,7 +232,7 @@ function parseClaudeResponse(responseText) {
       // Start new section
       currentSection = trimmedLine.substring('PARAGRAPH:'.length).trim();
       
-    } else if (trimmedLine.startsWith('MOVIES:') && !inMoreIdeas) {
+    } else if (trimmedLine.startsWith('MOVIES:') && !inMoreIdeas && !inExploreFurther) {
       const movieData = trimmedLine.substring('MOVIES:'.length).trim();
       const [title, year, description, tmdbId] = movieData.split('|').map(s => s?.trim());
       
@@ -224,6 +245,33 @@ function parseClaudeResponse(responseText) {
           poster_url: null, // Will be populated by MediaCard dynamically
           streaming: null   // Will be populated by MediaCard dynamically
         });
+      }
+      
+    } else if (trimmedLine.startsWith('EXPLORE_FURTHER:')) {
+      if (!inExploreFurther) {
+        inExploreFurther = true;
+        
+        // Save any pending section
+        if (currentSection) {
+          sections.push({
+            type: 'text',
+            content: currentSection
+          });
+          currentSection = null;
+          
+          if (currentMovies.length > 0) {
+            sections.push({
+              type: 'movies',
+              movies: currentMovies
+            });
+            currentMovies = [];
+          }
+        }
+      }
+      
+      const prompt = trimmedLine.substring('EXPLORE_FURTHER:'.length).trim();
+      if (prompt) {
+        exploreFurtherPrompts.push(prompt);
       }
       
     } else if (trimmedLine.startsWith('MORE_IDEAS:')) {
@@ -275,6 +323,14 @@ function parseClaudeResponse(responseText) {
         movies: currentMovies
       });
     }
+  }
+  
+  // Add explore further section if we have prompts
+  if (exploreFurtherPrompts.length > 0) {
+    sections.push({
+      type: 'explore_further',
+      prompts: exploreFurtherPrompts
+    });
   }
   
   return {
