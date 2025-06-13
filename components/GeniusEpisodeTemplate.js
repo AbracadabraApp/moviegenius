@@ -46,7 +46,7 @@ export default function GeniusEpisodeTemplate({
       <header style={styles.heroSection}>
         <div style={styles.heroImageContainer}>
           <img 
-            src="/images/hero-rotation/noir3.jpeg" 
+            src={heroImage} 
             alt={`${episode.title} illustration`}
             style={styles.heroImage}
           />
@@ -87,85 +87,158 @@ export default function GeniusEpisodeTemplate({
 
       {/* Content Sections */}
       <main style={styles.content}>
-        {content?.sections?.map((section, index) => (
-          <section key={index} style={styles.section}>
-            {section.type === 'text' && (
-              <div style={styles.textSection}>
-                <p style={styles.paragraph}>
-                  {section.content}
-                </p>
-              </div>
-            )}
-            
-            {section.type === 'subhead' && (
-              <div style={styles.subheadSection}>
-                <div style={styles.subheadDivider} />
-                <h3 style={styles.subheadTitle}>{section.content}</h3>
-                <div style={styles.subheadUnderline} />
-              </div>
-            )}
-            
-            {section.type === 'movies' && (
-              <div style={styles.movieSection}>
-                <div style={styles.movieSectionHeader}>
-                  <div style={styles.sectionDivider} />
-                  <span style={styles.sectionLabel}>Featured Films</span>
-                  <div style={styles.sectionDivider} />
+        {content?.sections?.map((section, index) => {
+          // Extract explore_further prompts to interleave
+          const exploreFurtherSection = content?.sections?.find(s => s.type === 'explore_further');
+          const prompts = exploreFurtherSection?.prompts || [];
+          
+          // Map subheads to prompts
+          const subheadPromptMap = {
+            'Directors and Style': prompts[0],
+            'Technical Innovation': prompts[1], 
+            'Genre Impact': prompts[2]
+          };
+          
+          return (
+            <section key={index} style={styles.section}>
+              {section.type === 'text' && (
+                <div style={styles.textSection}>
+                  <p style={styles.paragraph}>
+                    {section.content}
+                  </p>
                 </div>
-                <div style={styles.movieGrid}>
-                  {section.movies.map((movie, movieIndex) => (
-                    <div key={movieIndex} style={styles.movieCardWrapper}>
-                      <MediaCard
-                        title={movie.title}
-                        year={movie.year}
-                        initialSlug={movie.slug}
-                        tmdbId={movie.tmdb_id}
-                        initialStreaming={movie.streaming}
-                      />
+              )}
+              
+              {section.type === 'subhead' && (
+                <>
+                  <div style={styles.subheadSection}>
+                    <div style={styles.subheadDivider} />
+                    <h3 style={styles.subheadTitle}>{section.content}</h3>
+                    <div style={styles.subheadUnderline} />
+                  </div>
+                </>
+              )}
+              
+              {section.type === 'movies' && (
+                <>
+                  <div style={styles.movieSection}>
+                    <div style={styles.movieSectionHeader}>
+                      <div style={styles.sectionDivider} />
+                      <span style={styles.sectionLabel}>Featured Films</span>
+                      <div style={styles.sectionDivider} />
                     </div>
-                  ))}
-                </div>
-              </div>
-            )}
-            
-            {section.type === 'explore_further' && (
-              <div style={styles.exploreFurtherSection}>
-                <div style={styles.exploreFurtherHeader}>
-                  <div style={styles.sectionDivider} />
-                  <span style={styles.sectionLabel}>Explore Further</span>
-                  <div style={styles.sectionDivider} />
-                </div>
-                <div style={styles.exploreFurtherGrid}>
-                  {section.prompts?.map((prompt, promptIndex) => (
-                    <div key={promptIndex} style={styles.explorePromptCard}>
-                      <p style={styles.explorePromptText}>{prompt}</p>
-                      <button 
-                        style={styles.explorePromptButton}
-                        onClick={() => {
-                          // Navigate to ask page with this prompt
-                          router.push(`/ask?q=${encodeURIComponent(prompt)}`);
-                        }}
-                      >
-                        Ask Claude
-                      </button>
+                    <div style={styles.movieGrid}>
+                      {section.movies.map((movie, movieIndex) => (
+                        <div key={movieIndex} style={styles.movieCardWrapper}>
+                          <MediaCard
+                            title={movie.title}
+                            year={movie.year}
+                            initialSlug={movie.slug}
+                            tmdbId={movie.tmdb_id}
+                            initialStreaming={movie.streaming}
+                          />
+                        </div>
+                      ))}
                     </div>
-                  ))}
-                </div>
-              </div>
-            )}
-          </section>
-        )) || (
+                  </div>
+                  
+                  {/* Add explore prompt after each movie section (which follows subheads) */}
+                  {(() => {
+                    // Find the previous subhead to match with prompt
+                    for (let i = index - 1; i >= 0; i--) {
+                      if (content.sections[i].type === 'subhead') {
+                        const prompt = subheadPromptMap[content.sections[i].content];
+                        if (prompt) {
+                          return (
+                            <div style={styles.exploreFurtherSection}>
+                              <div style={styles.exploreFurtherHeader}>
+                                <div style={styles.sectionDivider} />
+                                <span style={styles.sectionLabel}>Explore Further</span>
+                                <div style={styles.sectionDivider} />
+                              </div>
+                              <div style={styles.exploreFurtherGrid}>
+                                <div style={styles.explorePromptCard}>
+                                  <p style={styles.explorePromptText}>{prompt}</p>
+                                  <button 
+                                    style={styles.explorePromptButton}
+                                    onClick={() => {
+                                      router.push(`/ask?q=${encodeURIComponent(prompt)}`);
+                                    }}
+                                  >
+                                    →
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          );
+                        }
+                        break;
+                      }
+                    }
+                    return null;
+                  })()}
+                </>
+              )}
+              
+              {/* Skip the original grouped explore_further section */}
+              {section.type === 'explore_further' && null}
+            </section>
+          );
+        }) || (
           <div style={styles.noContentMessage}>
             <p>Content is being generated for this episode. Please check back soon!</p>
           </div>
         )}
+
+        {/* Open-ended Ask Section */}
+        <section style={styles.openEndedAskSection}>
+          <div style={styles.openEndedAskCard}>
+            <p style={styles.openEndedAskText}>Any questions about Double Indemnity?</p>
+            <button 
+              style={styles.explorePromptButton}
+              onClick={() => {
+                router.push(`/ask?q=${encodeURIComponent('Any questions about Double Indemnity?')}`);
+              }}
+            >
+              →
+            </button>
+          </div>
+        </section>
+
+        {/* Series Navigation - More in this Series */}
+        <section style={styles.movieSection}>
+          <div style={styles.movieSectionHeader}>
+            <div style={styles.sectionDivider} />
+            <span style={styles.sectionLabel}>More in {series.title}</span>
+            <div style={styles.sectionDivider} />
+          </div>
+          <div style={styles.seriesGrid}>
+            {/* Show other episodes in this series (excluding current) */}
+            {[
+              { id: 2, title: "The Maltese Falcon", subtitle: "Hard-boiled detective stories" },
+              { id: 3, title: "Sunset Boulevard", subtitle: "Hollywood's dark mirror" },
+              { id: 4, title: "Touch of Evil", subtitle: "Welles's baroque masterpiece" },
+              { id: 5, title: "The Big Sleep", subtitle: "Hawks and Bogart's chemistry" },
+              { id: 6, title: "Out of the Past", subtitle: "Fatalism and femme fatales" }
+            ].map((ep) => (
+              <div 
+                key={ep.id} 
+                style={styles.seriesEpisodeCard}
+                onClick={() => router.push(`/genius/${theme.id}/${series.id}/${ep.id}`)}
+              >
+                <h4 style={styles.seriesEpisodeTitle}>{ep.title}</h4>
+                <p style={styles.seriesEpisodeSubtitle}>{ep.subtitle}</p>
+              </div>
+            ))}
+          </div>
+        </section>
 
         {/* More Ideas Section - Using same style as Featured Films */}
         {content?.moreIdeas && content.moreIdeas.movies?.length > 0 && (
           <section style={styles.movieSection}>
             <div style={styles.movieSectionHeader}>
               <div style={styles.sectionDivider} />
-              <span style={styles.sectionLabel}>If You Loved This</span>
+              <span style={styles.sectionLabel}>Related Films</span>
               <div style={styles.sectionDivider} />
             </div>
             <div style={styles.movieGrid}>
@@ -189,7 +262,7 @@ export default function GeniusEpisodeTemplate({
           <div style={styles.nextEpisodePrompt}>
             <h4 style={styles.nextEpisodeTitle}>What's Next</h4>
             <p style={styles.nextEpisodeDescription}>
-              Dive deeper into {series.title}
+              More episodes
             </p>
             <button 
               onClick={() => router.push(`/genius/${theme.id}/${series.id}`)}
@@ -199,6 +272,38 @@ export default function GeniusEpisodeTemplate({
             </button>
           </div>
         </nav>
+
+        {/* Other Series Footer */}
+        <footer style={styles.otherSeriesSection}>
+          <div style={styles.otherSeriesHeader}>
+            <h4 style={styles.otherSeriesTitle}>Explore Other Series</h4>
+          </div>
+          <div style={styles.otherSeriesGrid}>
+            {[
+              { id: 2, themeId: 1, title: "Neo-Noir Renaissance", description: "Modern noir interpretations" },
+              { id: 1, themeId: 2, title: "Science Fiction Classics", description: "Exploring the impossible" },
+              { id: 1, themeId: 3, title: "European New Waves", description: "Revolutionary cinema movements" },
+              { id: 3, themeId: 1, title: "Crime Epics & Gangster Films", description: "Criminal empires rise and fall" }
+            ].map((seriesData, index) => (
+              <div 
+                key={index} 
+                style={styles.otherSeriesCard}
+                onClick={() => router.push(`/genius/${seriesData.themeId}/${seriesData.id}`)}
+              >
+                <h5 style={styles.otherSeriesCardTitle}>{seriesData.title}</h5>
+                <p style={styles.otherSeriesCardDescription}>{seriesData.description}</p>
+              </div>
+            ))}
+          </div>
+          <div style={styles.viewAllSeriesLink}>
+            <button 
+              onClick={() => router.push('/genius')}
+              style={styles.viewAllButton}
+            >
+              View All Series
+            </button>
+          </div>
+        </footer>
       </main>
     </article>
   );
@@ -336,12 +441,12 @@ const styles = {
     paddingTop: '24px', // Reduced from 32px to bring content higher
   },
 
-  // Sections
+  // Sections - 24px module system
   section: {
-    marginBottom: '32px',
+    marginBottom: '24px', // Standardized to 24px
   },
   textSection: {
-    padding: '0 24px',
+    padding: '0 24px', // Already using 24px
   },
   paragraph: {
     fontSize: '16px', // Optimized for 900-word content
@@ -352,17 +457,17 @@ const styles = {
     fontWeight: '400',
   },
 
-  // Movie Sections
+  // Movie Sections - 24px module system
   movieSection: {
-    padding: '24px',
-    backgroundColor: '#f8f9fa',
-    marginBottom: '24px',
+    padding: '24px', // Already using 24px
+    backgroundColor: '#ffffff', // Changed from grey to white
+    marginBottom: '24px', // Already using 24px
   },
   movieSectionHeader: {
     display: 'flex',
     alignItems: 'center',
-    marginBottom: '20px',
-    gap: '12px',
+    marginBottom: '24px', // Standardized from 20px to 24px
+    gap: '16px', // Standardized from 12px to 16px
   },
   sectionDivider: {
     flex: 1,
@@ -379,7 +484,7 @@ const styles = {
   movieGrid: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '12px',
+    gap: '16px', // Standardized from 12px to 16px
   },
   movieCardWrapper: {
     borderRadius: '12px',
@@ -387,47 +492,101 @@ const styles = {
     boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
   },
 
-  // Explore Further Section
-  exploreFurtherSection: {
+  // Open-ended Ask Section
+  openEndedAskSection: {
     padding: '24px',
-    backgroundColor: '#f8f9fa',
     marginBottom: '24px',
+  },
+  openEndedAskCard: {
+    padding: '24px',
+    backgroundColor: '#ffffff',
+    borderRadius: '12px',
+    border: '2px solid #d4af37',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    boxShadow: '0 2px 8px rgba(212, 175, 55, 0.1)',
+  },
+  openEndedAskText: {
+    fontSize: '16px',
+    fontWeight: '500',
+    color: '#2c3e50',
+    margin: 0,
+    flex: 1,
+  },
+
+  // Series Navigation - 24px module system
+  seriesGrid: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '16px', // Standardized from 12px to 16px
+  },
+  seriesEpisodeCard: {
+    padding: '16px 20px',
+    backgroundColor: '#ffffff',
+    borderRadius: '12px',
+    border: '1px solid #e5e7eb',
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+    boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
+  },
+  seriesEpisodeTitle: {
+    fontSize: '16px',
+    fontWeight: '600',
+    color: '#2c3e50',
+    margin: '0 0 4px 0',
+  },
+  seriesEpisodeSubtitle: {
+    fontSize: '14px',
+    color: '#6c757d',
+    margin: 0,
+    fontStyle: 'italic',
+  },
+
+  // Explore Further Section - 24px module system
+  exploreFurtherSection: {
+    padding: '24px', // Already using 24px
+    backgroundColor: '#ffffff', // Changed from grey to white
+    marginBottom: '24px', // Already using 24px
   },
   exploreFurtherHeader: {
     display: 'flex',
     alignItems: 'center',
-    marginBottom: '20px',
-    gap: '12px',
+    marginBottom: '24px', // Standardized from 20px to 24px
+    gap: '16px', // Standardized from 12px to 16px
   },
   exploreFurtherGrid: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '16px',
+    gap: '16px', // Already using 16px
   },
   explorePromptCard: {
-    padding: '20px',
+    padding: '24px', // Standardized from 20px to 24px
     backgroundColor: '#ffffff',
     borderRadius: '12px',
     border: '1px solid #e5e7eb',
     boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
   explorePromptText: {
     fontSize: '15px',
     lineHeight: '1.5',
     color: '#374151',
-    marginBottom: '16px',
     fontStyle: 'italic',
+    margin: 0,
+    flex: 1,
   },
   explorePromptButton: {
-    padding: '8px 16px',
-    backgroundColor: '#d4af37',
-    color: '#ffffff',
+    padding: '8px 12px',
+    backgroundColor: 'transparent',
+    color: '#d4af37',
     border: 'none',
-    borderRadius: '6px',
-    fontSize: '14px',
-    fontWeight: '500',
+    fontSize: '18px',
     cursor: 'pointer',
     transition: 'all 0.2s ease',
+    marginLeft: '16px',
   },
   
   // Subhead Styles - Enhanced for 900-word content
@@ -533,6 +692,63 @@ const styles = {
     borderRadius: '8px',
     fontSize: '16px',
     fontWeight: '600',
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+  },
+
+  // Other Series Footer
+  otherSeriesSection: {
+    padding: '32px 24px',
+    backgroundColor: '#ffffff', // Changed from grey to white
+    borderTop: '1px solid #e9ecef',
+  },
+  otherSeriesHeader: {
+    textAlign: 'center',
+    marginBottom: '24px',
+  },
+  otherSeriesTitle: {
+    fontSize: '20px',
+    fontWeight: '600',
+    color: '#2c3e50',
+    margin: 0,
+  },
+  otherSeriesGrid: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '12px',
+    marginBottom: '24px',
+  },
+  otherSeriesCard: {
+    padding: '16px 20px',
+    backgroundColor: '#ffffff',
+    borderRadius: '12px',
+    border: '1px solid #e5e7eb',
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+    boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
+  },
+  otherSeriesCardTitle: {
+    fontSize: '16px',
+    fontWeight: '600',
+    color: '#2c3e50',
+    margin: '0 0 4px 0',
+  },
+  otherSeriesCardDescription: {
+    fontSize: '14px',
+    color: '#6c757d',
+    margin: 0,
+  },
+  viewAllSeriesLink: {
+    textAlign: 'center',
+  },
+  viewAllButton: {
+    padding: '8px 16px',
+    backgroundColor: 'transparent',
+    color: '#d4af37',
+    border: '1px solid #d4af37',
+    borderRadius: '6px',
+    fontSize: '14px',
+    fontWeight: '500',
     cursor: 'pointer',
     transition: 'all 0.2s ease',
   },
