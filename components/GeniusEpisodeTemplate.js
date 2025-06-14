@@ -53,37 +53,21 @@ export default function GeniusEpisodeTemplate({
           <div style={styles.heroOverlay} />
         </div>
         
-        {/* Navigation */}
-        <button onClick={handleBack} style={styles.backButton}>
-          <ChevronLeft size={20} />
-          <span>{series.title}</span>
+        {/* Minimal Navigation */}
+        <button onClick={handleBack} style={styles.minimalBackButton}>
+          <ChevronLeft size={18} />
         </button>
-
-        {/* Episode Header */}
-        <div style={styles.headerContent}>
-          <div style={styles.episodeLabel}>
-            Episode {episode.id}
-          </div>
-          <h1 style={styles.episodeTitle}>
-            {episode.title}
-          </h1>
-          <p style={styles.episodeSubtitle}>
-            {episode.subtitle}
-          </p>
-          
-          {/* Metadata */}
-          <div style={styles.metadata}>
-            <span style={styles.metadataItem}>
-              <Clock size={16} />
-              {estimatedReadTime}
-            </span>
-            <span style={styles.metadataItem}>
-              <Film size={16} />
-              {theme.title}
-            </span>
-          </div>
-        </div>
       </header>
+
+      {/* Gradient Header Box */}
+      <div style={styles.gradientHeaderBox}>
+        <p style={styles.episodeSubtitle}>
+          {episode.subtitle}
+        </p>
+        <h1 style={styles.episodeTitle}>
+          {episode.title}
+        </h1>
+      </div>
 
       {/* Content Sections */}
       <main style={styles.content}>
@@ -335,11 +319,11 @@ const styles = {
   // Hero Section
   heroSection: {
     position: 'relative',
-    minHeight: '30vh', // Aggressively reduced to 30vh to test spacing
+    minHeight: '30vh',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
-    padding: '12px', // Further reduced padding
+    padding: '16px',
     color: '#ffffff',
   },
   heroImageContainer: {
@@ -364,81 +348,69 @@ const styles = {
     left: 0,
     right: 0,
     bottom: 0,
-    background: 'linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%)',
-    zIndex: 2, // Above the image
+    background: 'transparent', // No mask on photo
+    zIndex: 2,
   },
 
-  // Navigation
-  backButton: {
+  // Minimal Navigation
+  minimalBackButton: {
     display: 'flex',
     alignItems: 'center',
-    gap: '8px',
-    padding: '8px 12px',
-    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    justifyContent: 'center',
+    width: '36px',
+    height: '36px',
+    backgroundColor: 'rgba(0, 0, 0, 0.3)',
     border: 'none',
-    borderRadius: '20px',
+    borderRadius: '18px',
     color: '#ffffff',
-    fontSize: '14px',
-    fontWeight: '500',
     cursor: 'pointer',
     alignSelf: 'flex-start',
     backdropFilter: 'blur(10px)',
     transition: 'all 0.2s ease',
     position: 'relative',
-    zIndex: 3, // Above image and overlay
+    zIndex: 3,
   },
 
-  // Header Content
-  headerContent: {
-    marginTop: 'auto',
-    paddingTop: '8px', // Minimal padding to test spacing
+  // Gradient Header Box
+  gradientHeaderBox: {
     position: 'relative',
-    zIndex: 3, // Above image and overlay
-  },
-  episodeLabel: {
-    fontSize: '12px',
-    fontWeight: '600',
-    textTransform: 'uppercase',
-    letterSpacing: '1px',
-    color: '#d4af37',
-    marginBottom: '8px',
+    padding: '5px 20px 10px 20px', // 5px top, 20px sides, 10px bottom
+    marginTop: '-25px', // Overlap with hero
+    marginBottom: '-16px', // Overlap with content
+    background: 'linear-gradient(to bottom, rgba(0,0,0,1.0) 0%, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0.7) 100%)',
+    zIndex: 4,
+    borderRadius: '0 0 20px 20px',
   },
   episodeTitle: {
     fontSize: '32px',
     fontWeight: '700',
     lineHeight: '1.1',
-    marginBottom: '12px',
-    textShadow: '0 2px 4px rgba(0,0,0,0.3)',
+    marginTop: '5px', // 5px spacing from subtitle above
+    marginBottom: '0px',
+    color: '#ffffff', // White title
+    textShadow: '0 2px 8px rgba(0,0,0,0.8)',
+    textAlign: 'left',
   },
   episodeSubtitle: {
     fontSize: '18px',
     fontWeight: '400',
     lineHeight: '1.4',
-    opacity: 0.9,
-    marginBottom: '24px',
-  },
-  metadata: {
-    display: 'flex',
-    gap: '20px',
-    alignItems: 'center',
-  },
-  metadataItem: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '6px',
-    fontSize: '14px',
-    opacity: 0.8,
+    color: '#d4af37', // Gold subtitle
+    textShadow: '0 2px 8px rgba(0,0,0,0.8)',
+    marginTop: '0px', // No margin - box provides 5px padding
+    marginBottom: '0px',
+    textAlign: 'left',
   },
 
   // Content
   content: {
     backgroundColor: '#ffffff',
-    borderTopLeftRadius: '24px',
-    borderTopRightRadius: '24px',
-    marginTop: '-24px',
+    borderTopLeftRadius: '20px',
+    borderTopRightRadius: '20px',
+    marginTop: '-20px',
     position: 'relative',
     zIndex: 1,
-    paddingTop: '24px', // Reduced from 32px to bring content higher
+    paddingTop: '5px',
   },
 
   // Sections - 24px module system
