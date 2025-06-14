@@ -103,9 +103,8 @@ const styles = {
     top: 0,
     zIndex: 100,
     padding: '16px',
-    backgroundColor: 'rgba(255, 255, 255, 0.95)',
+    background: 'linear-gradient(to right, rgba(0,0,0,1.0) 0%, rgba(0,0,0,0.7) 100%), linear-gradient(to bottom, rgba(0,0,0,1.0) 0%, rgba(0,0,0,1.0) 50%, rgba(0,0,0,0.3) 100%)',
     backdropFilter: 'blur(10px)',
-    borderBottom: '1px solid rgba(0, 0, 0, 0.1)',
   },
   episodeContainer: {
     flex: 1,
