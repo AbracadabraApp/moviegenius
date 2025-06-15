@@ -6,12 +6,16 @@ import { CircleChevronLeft, CircleChevronRight } from 'lucide-react';
 export default function AskInputBar({
   placeholder = 'Ask me about movies...',
   isLoading = false,
+  episodePrefix = null,
 }) {
   const [question, setQuestion] = useState('');
   const [isFocused, setIsFocused] = useState(false);
   const [isClient, setIsClient] = useState(false);
   const inputRef = useRef(null);
   const router = useRouter();
+  
+  // Generate unique ID for this instance
+  const barId = `ask-bar-${episodePrefix ? 'episode' : 'main'}`;
 
   useEffect(() => {
     setIsClient(true);
@@ -38,8 +42,9 @@ export default function AskInputBar({
   const handleForward = () => {
     const trimmed = question.trim();
     if (trimmed) {
-      // If there's text, submit the question
-      router.push(`/ask?q=${encodeURIComponent(trimmed)}`);
+      // If there's text, submit the question with optional episode prefix
+      const finalQuestion = episodePrefix ? `${episodePrefix}: ${trimmed}` : trimmed;
+      router.push(`/ask?q=${encodeURIComponent(finalQuestion)}`);
       setQuestion('');
     } else {
       // Standard browser forward navigation
@@ -56,11 +61,11 @@ export default function AskInputBar({
 
   // Allow clicking anywhere in the bar to focus input
   useEffect(() => {
-    const bar = document.getElementById('ask-bar');
+    const bar = document.getElementById(barId);
     if (bar && inputRef.current) {
       bar.onclick = () => inputRef.current.focus();
     }
-  }, []);
+  }, [barId]);
 
   return (
     <>
@@ -83,29 +88,31 @@ export default function AskInputBar({
         }
       `}</style>
       <form onSubmit={handleSubmit} style={styles.form}>
-        <div id="ask-bar" style={styles.bar}>
-          <button 
-            type="button"
-            onClick={handleBack}
-            style={styles.navButton}
-            aria-label="Go back"
-            disabled={isLoading}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = 'scale(1.1)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = 'scale(1)';
-            }}
-          >
-            <CircleChevronLeft 
-              size={30} 
-              style={{
-                ...styles.navIcon,
-                opacity: isLoading ? 0.3 : 1,
-                color: isLoading ? '#d1d5db' : '#d1d5db' // Always disabled color during SSR
+        <div id={barId} style={styles.bar}>
+          {!episodePrefix && (
+            <button 
+              type="button"
+              onClick={handleBack}
+              style={styles.navButton}
+              aria-label="Go back"
+              disabled={isLoading}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'scale(1.1)';
               }}
-            />
-          </button>
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'scale(1)';
+              }}
+            >
+              <CircleChevronLeft 
+                size={30} 
+                style={{
+                  ...styles.navIcon,
+                  opacity: isLoading ? 0.3 : 1,
+                  color: isLoading ? '#d1d5db' : '#d1d5db' // Always disabled color during SSR
+                }}
+              />
+            </button>
+          )}
 
           <input
             ref={inputRef}
@@ -124,28 +131,57 @@ export default function AskInputBar({
             }}
           />
 
-          <button 
-            type="button"
-            onClick={handleForward}
-            style={styles.navButton}
-            aria-label={question.trim() ? "Submit question" : "Go forward"}
-            disabled={isLoading}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = 'scale(1.1)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = 'scale(1)';
-            }}
-          >
-            <CircleChevronRight 
-              size={30} 
-              style={{
-                ...styles.navIcon,
-                opacity: isLoading ? 0.3 : 1,
-                color: isLoading ? '#d1d5db' : (question.trim() || (isClient && canGoForward()) ? '#374151' : '#d1d5db')
+          {episodePrefix ? (
+            // Episode context: only show submit button when there's text
+            question.trim() && (
+              <button 
+                type="button"
+                onClick={handleForward}
+                style={styles.navButton}
+                aria-label="Submit question"
+                disabled={isLoading}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'scale(1.1)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'scale(1)';
+                }}
+              >
+                <CircleChevronRight 
+                  size={30} 
+                  style={{
+                    ...styles.navIcon,
+                    opacity: isLoading ? 0.3 : 1,
+                    color: isLoading ? '#d1d5db' : '#374151'
+                  }}
+                />
+              </button>
+            )
+          ) : (
+            // Regular context: show navigation button
+            <button 
+              type="button"
+              onClick={handleForward}
+              style={styles.navButton}
+              aria-label={question.trim() ? "Submit question" : "Go forward"}
+              disabled={isLoading}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'scale(1.1)';
               }}
-            />
-          </button>
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'scale(1)';
+              }}
+            >
+              <CircleChevronRight 
+                size={30} 
+                style={{
+                  ...styles.navIcon,
+                  opacity: isLoading ? 0.3 : 1,
+                  color: isLoading ? '#d1d5db' : (question.trim() || (isClient && canGoForward()) ? '#374151' : '#d1d5db')
+                }}
+              />
+            </button>
+          )}
         </div>
       </form>
     </>

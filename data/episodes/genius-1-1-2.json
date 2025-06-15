@@ -1,0 +1,236 @@
+{
+  "system": "genius",
+  "themeId": 1,
+  "seriesId": 1,
+  "episodeId": 2,
+  "theme": {
+    "id": 1,
+    "title": "Film Noir & Crime",
+    "description": "Shadows, moral ambiguity, and the dark side of the American Dream",
+    "slug": "film-noir-crime"
+  },
+  "series": {
+    "id": 1,
+    "title": "Classic Film Noir (1940-1958)",
+    "description": "The birth and golden age of film noir"
+  },
+  "episode": {
+    "id": 2,
+    "title": "From Novels to Noir",
+    "subtitle": "Hard-boiled detective stories"
+  },
+  "content": {
+    "opener": "The Maltese Falcon (1941) established the hard-boiled detective as noir's central archetype, with John Huston's directorial debut crystallizing Dashiell Hammett's cynical worldview into pure cinematic gold.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "John Huston's adaptation of Dashiell Hammett's novel marked a crucial turning point in American cinema, introducing audiences to the morally ambiguous private detective. Humphrey Bogart's Sam Spade embodied the cynical pragmatism that would define noir protagonists, operating in a world where loyalty is purchased and betrayal is currency. The film's success paved the way for other hard-boiled adaptations, including The Big Sleep (1946) and Murder, My Sweet (1944), each exploring the dark underbelly of American urban life through the detective's jaded perspective."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Big Sleep",
+            "year": 1946,
+            "slug": "Hawks's Chandler adaptation",
+            "tmdb_id": "tt0038355",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Murder, My Sweet",
+            "year": 1944,
+            "slug": "Dmytryk's Philip Marlowe debut",
+            "tmdb_id": "tt0037101",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Visual Style and Characterization"
+      },
+      {
+        "type": "text",
+        "content": "Huston's camera work emphasized the claustrophobic nature of Spade's world, using tight close-ups and strategic lighting to reveal character psychology. The famous scene of Spade searching Brigid's apartment demonstrates how visual storytelling could convey moral complexity without exposition. This approach influenced later detective noirs like Out of the Past (1947) and Kiss Me Deadly (1955), where the investigator's methods reveal as much about their character as the crimes they pursue."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Out of the Past",
+            "year": 1947,
+            "slug": "Tourneur's fatalistic detective story",
+            "tmdb_id": "tt0039323",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "The Femme Fatale Dynamic"
+      },
+      {
+        "type": "text",
+        "content": "Mary Astor's Brigid O'Shaughnessy established the template for the noir femme fatale—beautiful, manipulative, and ultimately destructive. Her relationship with Spade explores themes of desire and betrayal that would become central to the genre. This dynamic reached its peak in later films like Gilda (1946) and The Postman Always Rings Twice (1946), where sexual attraction and criminal conspiracy intertwine to create moral ambiguity that challenges traditional Hollywood morality."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Gilda",
+            "year": 1946,
+            "slug": "Femme fatale masterpiece",
+            "tmdb_id": "tt0038559",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "The Postman Always Rings Twice",
+            "year": 1946,
+            "slug": "Cain's adultery and murder",
+            "tmdb_id": "tt0038854",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Literary Adaptation and Dialogue"
+      },
+      {
+        "type": "text",
+        "content": "Huston's adaptation remained remarkably faithful to Hammett's novel while enhancing its cinematic potential through sharp, economical dialogue. The famous \"stuff that dreams are made of\" line exemplifies how literary hard-boiled fiction translated to screen, influencing adaptations like The Treasure of the Sierra Madre (1948) and Key Largo (1948). This approach demonstrated that complex literary works could retain their sophistication while gaining visual power through cinematic storytelling."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Treasure of the Sierra Madre",
+            "year": 1948,
+            "slug": "Huston's greed and paranoia study",
+            "tmdb_id": "tt0040897",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extended far beyond its immediate success, establishing narrative and visual conventions that would define detective fiction for decades. Modern neo-noir films like Chinatown (1974) and L.A. Confidential (1997) continue to draw inspiration from Spade's moral complexity and the film's exploration of corruption. The Maltese Falcon proved that audiences were ready for morally ambiguous protagonists and complex narratives, setting the stage for noir's golden age throughout the 1940s and 1950s."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "L.A. Confidential",
+            "year": 1997,
+            "slug": "Neo-noir detective ensemble",
+            "tmdb_id": "tt0119488",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did Hammett's hard-boiled style influence noir dialogue?",
+          "What makes Sam Spade different from traditional movie heroes?",
+          "How did the Hays Code affect the portrayal of detective morality?"
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "The Thin Man",
+          "year": 1934,
+          "slug": "Hammett's sophisticated detective",
+          "tmdb_id": "tt0025878",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Dead Reckoning",
+          "year": 1947,
+          "slug": "Bogart's war veteran detective",
+          "tmdb_id": "tt0039302",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Dark Passage",
+          "year": 1947,
+          "slug": "Bogart-Bacall noir reunion",
+          "tmdb_id": "tt0039302",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "The Lady from Shanghai",
+          "year": 1947,
+          "slug": "Welles's funhouse mirror noir",
+          "tmdb_id": "tt0040525",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "I Wake Up Screaming",
+          "year": 1941,
+          "slug": "Early Technicolor noir",
+          "tmdb_id": "tt0033708",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "The Glass Key",
+          "year": 1942,
+          "slug": "Another Hammett adaptation",
+          "tmdb_id": "tt0034798",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Farewell, My Lovely",
+          "year": 1975,
+          "slug": "Neo-noir Chandler revival",
+          "tmdb_id": "tt0073018",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "The Long Goodbye",
+          "year": 1973,
+          "slug": "Altman's deconstructed Marlowe",
+          "tmdb_id": "tt0070334",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Harper",
+          "year": 1966,
+          "slug": "Newman's modern private eye",
+          "tmdb_id": "tt0060490",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "The Drowning Pool",
+          "year": 1975,
+          "slug": "Harper sequel with Newman",
+          "tmdb_id": "tt0072912",
+          "poster_url": null,
+          "streaming": null
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-15T19:45:12.000Z",
+  "version": "3.0",
+  "type": "educational"
+}

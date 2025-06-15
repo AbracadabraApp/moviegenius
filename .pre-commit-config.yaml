@@ -1,0 +1,65 @@
+# Pre-commit configuration for MovieGenius
+# Runs automated checks before each commit to prevent broken builds
+
+repos:
+  # JavaScript/Node.js checks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-merge-conflict
+      - id: check-json
+      - id: check-yaml
+      - id: check-added-large-files
+        args: ['--maxkb=1000']
+      - id: no-commit-to-branch
+        args: ['--branch', 'main', '--branch', 'production']
+
+  # ESLint for code quality
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: v8.57.0
+    hooks:
+      - id: eslint
+        files: \.(js|jsx|ts|tsx)$
+        additional_dependencies:
+          - eslint@^8.57.0
+          - eslint-config-next@^15.3.2
+
+  # Prettier for code formatting
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v3.0.3
+    hooks:
+      - id: prettier
+        files: \.(js|jsx|ts|tsx|json|css|md)$
+        additional_dependencies:
+          - prettier@^3.0.0
+
+  # Custom MovieGenius checks
+  - repo: local
+    hooks:
+      # Prevent API key commits
+      - id: check-secrets
+        name: Check for API keys
+        entry: bash -c 'if grep -r "sk-ant-api\|ANTHROPIC_API_KEY.*=" --include="*.js" --include="*.json" --exclude=".env*" .; then echo "❌ API keys found in code!"; exit 1; fi'
+        language: system
+        pass_filenames: false
+      
+      # Ensure build passes
+      - id: build-check
+        name: Verify build passes
+        entry: npm run build
+        language: system
+        pass_filenames: false
+        stages: [pre-push]
+      
+      # Check for console.log
+      - id: no-console-log
+        name: Check for console.log
+        entry: bash -c 'if grep -r "console\.log" --include="*.js" --include="*.jsx" --exclude-dir=node_modules .; then echo "❌ console.log found - use proper logging"; exit 1; fi'
+        language: system
+        pass_filenames: false
+
+# Configuration
+default_stages: [commit]
+fail_fast: true

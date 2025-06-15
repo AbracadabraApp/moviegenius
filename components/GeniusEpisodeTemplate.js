@@ -138,16 +138,15 @@ export default function GeniusEpisodeTemplate({
                                 <div style={styles.sectionDivider} />
                               </div>
                               <div style={styles.exploreFurtherGrid}>
-                                <div style={styles.explorePromptCard}>
+                                <div 
+                                  style={{...styles.explorePromptCard, cursor: 'pointer'}}
+                                  onClick={() => {
+                                    const prefixedPrompt = `${episode.title}: ${prompt}`;
+                                    router.push(`/ask?q=${encodeURIComponent(prefixedPrompt)}`);
+                                  }}
+                                >
                                   <p style={styles.explorePromptText}>{prompt}</p>
-                                  <button 
-                                    style={styles.explorePromptButton}
-                                    onClick={() => {
-                                      router.push(`/ask?q=${encodeURIComponent(prompt)}`);
-                                    }}
-                                  >
-                                    →
-                                  </button>
+                                  <span style={styles.explorePromptArrow}>→</span>
                                 </div>
                               </div>
                             </div>
@@ -162,7 +161,9 @@ export default function GeniusEpisodeTemplate({
               )}
               
               {/* Skip the original grouped explore_further section */}
-              {section.type === 'explore_further' && null}
+              {section.type === 'explore_further' && (
+                <div key={index}></div>
+              )}
             </section>
           );
         }) || (
@@ -170,21 +171,6 @@ export default function GeniusEpisodeTemplate({
             <p>Content is being generated for this episode. Please check back soon!</p>
           </div>
         )}
-
-        {/* Open-ended Ask Section */}
-        <section style={styles.openEndedAskSection}>
-          <div style={styles.openEndedAskCard}>
-            <p style={styles.openEndedAskText}>Any questions about Double Indemnity?</p>
-            <button 
-              style={styles.explorePromptButton}
-              onClick={() => {
-                router.push(`/ask?q=${encodeURIComponent('Any questions about Double Indemnity?')}`);
-              }}
-            >
-              →
-            </button>
-          </div>
-        </section>
 
         {/* Series Navigation - More in this Series */}
         <section style={styles.movieSection}>
@@ -238,12 +224,12 @@ export default function GeniusEpisodeTemplate({
           </section>
         )}
 
-        {/* Ask More Section */}
+        {/* Ask Section */}
         <section style={styles.askSection}>
-          <h4 style={styles.askSectionTitle}>Ask More about {episode.title}</h4>
           <AskInputBar 
-            placeholder={`Ask about ${episode.title}...`}
+            placeholder="Ask me about the movie"
             isLoading={false}
+            episodePrefix={episode.title}
           />
         </section>
 
@@ -430,29 +416,6 @@ const styles = {
     boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
   },
 
-  // Open-ended Ask Section
-  openEndedAskSection: {
-    padding: '24px',
-    marginBottom: '24px',
-  },
-  openEndedAskCard: {
-    padding: '24px',
-    backgroundColor: '#ffffff',
-    borderRadius: '12px',
-    border: '2px solid #d4af37',
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    boxShadow: '0 2px 8px rgba(212, 175, 55, 0.1)',
-  },
-  openEndedAskText: {
-    fontSize: '16px',
-    fontWeight: '500',
-    color: '#2c3e50',
-    margin: 0,
-    flex: 1,
-  },
-
   // Series Navigation - 24px module system
   seriesGrid: {
     display: 'flex',
@@ -507,6 +470,7 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
+    transition: 'all 0.2s ease',
   },
   explorePromptText: {
     fontSize: '15px',
@@ -516,15 +480,12 @@ const styles = {
     margin: 0,
     flex: 1,
   },
-  explorePromptButton: {
-    padding: '8px 12px',
-    backgroundColor: 'transparent',
+  explorePromptArrow: {
     color: '#d4af37',
-    border: 'none',
     fontSize: '18px',
-    cursor: 'pointer',
-    transition: 'all 0.2s ease',
+    fontWeight: 'bold',
     marginLeft: '16px',
+    transition: 'all 0.2s ease',
   },
   
   // Subhead Styles - Enhanced for 900-word content
@@ -592,15 +553,7 @@ const styles = {
 
   // Next Episode Navigation
   askSection: {
-    padding: '16px 24px 24px',
-    textAlign: 'center',
-  },
-  
-  askSectionTitle: {
-    fontSize: '18px',
-    fontWeight: '600',
-    color: '#2c3e50',
-    marginBottom: '16px',
+    padding: '8px 24px 24px', // Reduced top padding since no title
   },
   
   // No Content Message
