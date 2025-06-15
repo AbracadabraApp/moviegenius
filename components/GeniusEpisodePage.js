@@ -32,7 +32,7 @@ function getHeroImage(themeId, seriesId, episodeId) {
   if (seriesDir) {
     // Known episode-specific images
     if (themeId === '1' && seriesId === '1' && episodeId === '1') {
-      return '/images/hero/theme-1-noir/series-1-classic/1-double-indemnity.jpg';
+      return '/images/hero-rotation/hero-1.jpg'; // Using available hero image
     }
   }
   

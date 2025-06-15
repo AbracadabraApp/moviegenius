@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { ChevronLeft, Clock, Film } from 'lucide-react';
 import MediaCard from './MediaCard';
+import AskInputBar from './AskInputBar';
 
 export default function GeniusEpisodeTemplate({ 
   episodeData, 
@@ -53,10 +54,6 @@ export default function GeniusEpisodeTemplate({
           <div style={styles.heroOverlay} />
         </div>
         
-        {/* Minimal Navigation */}
-        <button onClick={handleBack} style={styles.minimalBackButton}>
-          <ChevronLeft size={18} />
-        </button>
       </header>
 
       {/* Gradient Header Box */}
@@ -241,21 +238,14 @@ export default function GeniusEpisodeTemplate({
           </section>
         )}
 
-        {/* Next Episode Navigation */}
-        <nav style={styles.nextEpisodeSection}>
-          <div style={styles.nextEpisodePrompt}>
-            <h4 style={styles.nextEpisodeTitle}>What's Next</h4>
-            <p style={styles.nextEpisodeDescription}>
-              More episodes
-            </p>
-            <button 
-              onClick={() => router.push(`/genius/${theme.id}/${series.id}`)}
-              style={styles.nextEpisodeButton}
-            >
-              Explore More
-            </button>
-          </div>
-        </nav>
+        {/* Ask More Section */}
+        <section style={styles.askSection}>
+          <h4 style={styles.askSectionTitle}>Ask More about {episode.title}</h4>
+          <AskInputBar 
+            placeholder={`Ask about ${episode.title}...`}
+            isLoading={false}
+          />
+        </section>
 
         {/* Other Series Footer */}
         <footer style={styles.otherSeriesSection}>
@@ -278,14 +268,6 @@ export default function GeniusEpisodeTemplate({
                 <p style={styles.otherSeriesCardDescription}>{seriesData.description}</p>
               </div>
             ))}
-          </div>
-          <div style={styles.viewAllSeriesLink}>
-            <button 
-              onClick={() => router.push('/genius')}
-              style={styles.viewAllButton}
-            >
-              View All Series
-            </button>
           </div>
         </footer>
       </main>
@@ -352,34 +334,16 @@ const styles = {
     zIndex: 2,
   },
 
-  // Minimal Navigation
-  minimalBackButton: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: '36px',
-    height: '36px',
-    backgroundColor: 'rgba(0, 0, 0, 0.3)',
-    border: 'none',
-    borderRadius: '18px',
-    color: '#ffffff',
-    cursor: 'pointer',
-    alignSelf: 'flex-start',
-    backdropFilter: 'blur(10px)',
-    transition: 'all 0.2s ease',
-    position: 'relative',
-    zIndex: 3,
-  },
 
   // Gradient Header Box
   gradientHeaderBox: {
     position: 'relative',
-    padding: '5px 20px 10px 20px', // 5px top, 20px sides, 10px bottom
-    marginTop: '-25px', // Overlap with hero
-    marginBottom: '-16px', // Overlap with content
+    padding: '5px 20px 30px 20px',
+    marginTop: '-25px',
+    marginBottom: '-20px', // Match content overlap
     background: 'linear-gradient(to bottom, rgba(0,0,0,1.0) 0%, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0.7) 100%)',
-    zIndex: 4,
-    borderRadius: '0 0 20px 20px',
+    zIndex: 3, // Lower than content
+    borderRadius: '0',
   },
   episodeTitle: {
     fontSize: '32px',
@@ -405,40 +369,41 @@ const styles = {
   // Content
   content: {
     backgroundColor: '#ffffff',
-    borderTopLeftRadius: '20px',
-    borderTopRightRadius: '20px',
-    marginTop: '-20px',
+    borderTopLeftRadius: '24px',
+    borderTopRightRadius: '24px',
+    marginTop: '-20px', // Match gradient overlap
     position: 'relative',
-    zIndex: 1,
-    paddingTop: '5px',
+    zIndex: 5, // Higher than gradient box
+    paddingTop: '2px',
   },
 
   // Sections - 24px module system
   section: {
-    marginBottom: '24px', // Standardized to 24px
+    marginBottom: '20px', // Reduced from 24px to prevent stacking over 40px
   },
   textSection: {
-    padding: '0 24px', // Already using 24px
+    padding: '0 15px',
+    marginTop: '-5px', // Move first text line up 5px
   },
   paragraph: {
-    fontSize: '16px', // Optimized for 900-word content
+    fontSize: '16px',
     lineHeight: '1.6',
     color: '#2c3e50',
-    marginBottom: '28px', // Slightly more space for longer content
-    textAlign: 'left', // Left-aligned for better readability
+    marginBottom: '20px', // Reduced spacing
+    textAlign: 'left',
     fontWeight: '400',
   },
 
   // Movie Sections - 24px module system
   movieSection: {
-    padding: '24px', // Already using 24px
+    padding: '20px', // Reduced from 24px
     backgroundColor: '#ffffff', // Changed from grey to white
-    marginBottom: '24px', // Already using 24px
+    marginBottom: '20px', // Reduced from 24px
   },
   movieSectionHeader: {
     display: 'flex',
     alignItems: 'center',
-    marginBottom: '24px', // Standardized from 20px to 24px
+    marginBottom: '20px', // Reduced from 24px to keep under 40px total
     gap: '16px', // Standardized from 12px to 16px
   },
   sectionDivider: {
@@ -456,9 +421,10 @@ const styles = {
   movieGrid: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '16px', // Standardized from 12px to 16px
+    gap: '12px', // Reduced from 16px for tighter spacing
   },
   movieCardWrapper: {
+    marginBottom: 0, // Override MediaCard's 8px bottom margin
     borderRadius: '12px',
     overflow: 'hidden',
     boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
@@ -517,14 +483,14 @@ const styles = {
 
   // Explore Further Section - 24px module system
   exploreFurtherSection: {
-    padding: '24px', // Already using 24px
-    backgroundColor: '#ffffff', // Changed from grey to white
-    marginBottom: '24px', // Already using 24px
+    padding: '16px 24px 20px', // Reduced top padding from 24px to 16px
+    backgroundColor: '#ffffff', // Keep background white
+    marginBottom: '20px', // Reduced from 24px
   },
   exploreFurtherHeader: {
     display: 'flex',
     alignItems: 'center',
-    marginBottom: '24px', // Standardized from 20px to 24px
+    marginBottom: '20px', // Reduced from 24px to keep total under 40px
     gap: '16px', // Standardized from 12px to 16px
   },
   exploreFurtherGrid: {
@@ -534,7 +500,7 @@ const styles = {
   },
   explorePromptCard: {
     padding: '24px', // Standardized from 20px to 24px
-    backgroundColor: '#ffffff',
+    background: 'linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%)', // Light gradient interior
     borderRadius: '12px',
     border: '1px solid #e5e7eb',
     boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
@@ -564,8 +530,8 @@ const styles = {
   // Subhead Styles - Enhanced for 900-word content
   subheadSection: {
     padding: '0 24px',
-    marginBottom: '24px', // Increased for better separation
-    marginTop: '40px', // Increased for better visual breaks
+    marginBottom: '16px', // Reduced from 24px
+    marginTop: '24px', // Reduced from 40px to keep total at 40px
     position: 'relative',
   },
   subheadTitle: {
@@ -594,10 +560,10 @@ const styles = {
 
   // More Ideas Section
   moreIdeasSection: {
-    padding: '32px 24px',
+    padding: '24px 24px',
     backgroundColor: '#1a1a1a',
     color: '#ffffff',
-    margin: '32px 0',
+    margin: '20px 0',
   },
   moreIdeasHeader: {
     marginBottom: '24px',
@@ -625,9 +591,16 @@ const styles = {
   },
 
   // Next Episode Navigation
-  nextEpisodeSection: {
-    padding: '32px 24px 48px',
+  askSection: {
+    padding: '16px 24px 24px',
     textAlign: 'center',
+  },
+  
+  askSectionTitle: {
+    fontSize: '18px',
+    fontWeight: '600',
+    color: '#2c3e50',
+    marginBottom: '16px',
   },
   
   // No Content Message
