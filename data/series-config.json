@@ -1,4 +1,53 @@
 {
+  "1": {
+    "id": 1,
+    "title": "Classic Film Noir (1940-1958)",
+    "description": "The birth and golden age of film noir",
+    "episodes": [
+      {
+        "id": 1,
+        "title": "German Expressionism",
+        "subtitle": "The template for noir morality",
+        "posters": [
+          "https://image.tmdb.org/t/p/w200/cGNNLkR6kOD2XKGHYIZbOPSwZzC.jpg",
+          "https://image.tmdb.org/t/p/w200/pJbEELGb9gKNbIk7SfpLELRGP3E.jpg"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "From Novels to Noir",
+        "subtitle": "Hard-boiled detective fiction meets cinema",
+        "posters": [
+          "https://image.tmdb.org/t/p/w200/d6GxmqU6YHUGdR3b9sWBFZF2z8F.jpg",
+          "https://image.tmdb.org/t/p/w200/qj7GtMhGmzqpKYmTqJGQ4bhQPl7.jpg"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Urban Anxiety",
+        "subtitle": "Post-war disillusionment in American cities",
+        "posters": []
+      },
+      {
+        "id": 4,
+        "title": "Femme Fatales",
+        "subtitle": "Dangerous women in a man's world",
+        "posters": []
+      },
+      {
+        "id": 5,
+        "title": "Moral Ambiguity",
+        "subtitle": "Heroes and villains blur together",
+        "posters": []
+      },
+      {
+        "id": 6,
+        "title": "Noir's Legacy",
+        "subtitle": "How shadows shaped modern cinema",
+        "posters": []
+      }
+    ]
+  },
   "2": {
     "id": 2,
     "title": "Cinema Through Time - 1970-2025",

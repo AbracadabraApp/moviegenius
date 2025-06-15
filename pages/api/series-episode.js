@@ -9,6 +9,10 @@
 import fs from 'fs';
 import path from 'path';
 
+// Import modular prompt system
+import { CORE_VOICE } from '../../lib/prompts/core.js';
+import { GENIUS_CONTEXT } from '../../lib/prompts/contexts.js';
+
 // Load series data from static configuration file
 function loadSeriesData() {
   try {
@@ -114,55 +118,31 @@ async function generateEpisodeContentFallback(seriesId, episodeId) {
     });
 
     const response = await anthropic.messages.create({
-      model: 'claude-3-5-sonnet-20241022',
-      max_tokens: 4000,
+      model: process.env.CLAUDE_MODEL || 'claude-3-5-sonnet-20241022',
+      max_tokens: 6000,
       temperature: 0.7,
-      system: `You are a film expert providing thorough, professional analysis. You have encyclopedic knowledge of films from all eras and countries.
+      system: [
+        { 
+          type: "text", 
+          text: `${CORE_VOICE}
 
-CRITICAL REQUIREMENTS:
-- START with OPENER: [one compelling sentence that captures the essence]
-- Write EXACTLY 6 PARAGRAPH sections (no more, no less)
-- Each PARAGRAPH: should be 3-4 sentences and include specific film titles
-- ONLY include MOVIES: for films mentioned by title in that paragraph
-- End with extensive MORE_IDEAS: list (8-10 additional films)
-
-STRUCTURE EXAMPLE:
-OPENER: [one sentence that captures the essence]
-PARAGRAPH: [3-4 sentences with specific film titles mentioned]
-MOVIES: The Godfather|1972|Coppola's epic family saga|tt0068646
-PARAGRAPH: [3-4 sentences about related films/directors]
-MOVIES: Taxi Driver|1976|Scorsese's urban nightmare|tt0075314
-PARAGRAPH: [3-4 sentences mentioning more films]
-MOVIES: Mean Streets|1973|Early Scorsese masterpiece|tt0070379
-PARAGRAPH: [3-4 sentences about techniques/innovations]
-MOVIES: [relevant films for this paragraph]
-PARAGRAPH: [3-4 sentences about cultural impact]
-MOVIES: [relevant films for this paragraph]
-PARAGRAPH: [3-4 sentences about legacy/influence]
-MOVIES: [relevant films for this paragraph]
-MORE_IDEAS: [8-10 additional films with format: Title|Year|Description|TMDB_ID]
-
-IMPORTANT: Include TMDB IDs in format ttXXXXXXX for all movies.`,
+${GENIUS_CONTEXT.structure}`,
+          cache_control: { type: "ephemeral" }
+        }
+      ],
       messages: [{
         role: 'user',
         content: `Create comprehensive educational content for "${series.title}" - Episode: "${episode.title}: ${episode.subtitle}".
 
-CRITICAL FORMATTING REQUIREMENTS:
-- Write EXACTLY 6 paragraphs (no more, no less)
-- Each paragraph should be 3-4 sentences
-- Each paragraph MUST mention specific film titles
-- Include TMDB IDs for all films mentioned
-- Follow the exact format specified in system prompt
+CRITICAL LENGTH REQUIREMENTS:
+- Write NO LESS THAN 1200 words of PARAGRAPH content (this is MANDATORY)
+- Write exactly 10 substantial paragraphs of 120-150 words EACH
+- Each paragraph should be a mini-essay with rich detail and specific examples
+- Treat this as a university-level documentary script - be thorough and comprehensive
+- Do NOT write brief summaries - write detailed, expansive analysis
+- Include extensive discussion of specific films, directors, and techniques throughout
 
-Structure your 6 paragraphs to cover:
-1. Historical context and key breakthrough films
-2. Major directors and their signature works
-3. Technical and artistic innovations with examples
-4. Genre-defining films and their impact
-5. Cultural influence and box office success
-6. Legacy and influence on modern cinema
-
-Write exactly 6 substantial paragraphs with specific film titles and director names throughout. Focus on film school level depth but keep structure clear and organized.`
+This is a comprehensive educational piece requiring substantial depth and length.`
       }]
     });
 
