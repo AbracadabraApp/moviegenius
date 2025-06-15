@@ -306,8 +306,7 @@ export async function getStaticPaths() {
     });
   });
   
-  // Home page
-  paths.push({ params: { params: [] } });
+  // Note: Home page handled by fallback or separate index route
   
   console.log('Generated paths count:', paths.length);
   console.log('Sample paths:', paths.slice(0, 5));
