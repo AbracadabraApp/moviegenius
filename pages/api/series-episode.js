@@ -98,7 +98,7 @@ function loadEpisodeContent(seriesId, episodeId) {
 }
 
 // Generate episode content on-demand using Claude AI
-async function generateEpisodeContentFallback(seriesId, episodeId) {
+async function generateEpisodeContentFallback(seriesId, episodeId, customTopic = null, customContext = null) {
   console.log(`Generating content for Series ${seriesId}, Episode ${episodeId}`);
   
   // Get episode metadata for prompt
@@ -109,6 +109,13 @@ async function generateEpisodeContentFallback(seriesId, episodeId) {
   if (!series || !episode) {
     throw new Error('Series or episode not found');
   }
+  
+  // Use custom topic/context if provided, otherwise use series metadata
+  const topicTitle = customTopic || `${episode.title}: ${episode.subtitle}`;
+  const contextDescription = customContext || `Part of ${series.title} series`;
+  
+  console.log('Topic Title:', topicTitle);
+  console.log('Context Description:', contextDescription);
 
   try {
     // Import and use Anthropic API
@@ -132,7 +139,9 @@ ${GENIUS_CONTEXT.structure}`,
       ],
       messages: [{
         role: 'user',
-        content: `Create comprehensive educational content for "${series.title}" - Episode: "${episode.title}: ${episode.subtitle}".
+        content: `Create comprehensive educational content for "${topicTitle}".
+
+${contextDescription ? `Context: ${contextDescription}` : ''}
 
 CRITICAL LENGTH REQUIREMENTS:
 - Write NO LESS THAN 1200 words of PARAGRAPH content (this is MANDATORY)
@@ -153,20 +162,23 @@ This is a comprehensive educational piece requiring substantial depth and length
     console.error('Error generating episode content:', error);
     
     // Return more robust fallback content
+    const fallbackTitle = customTopic || episode.title;
+    const fallbackContext = customContext || `${series.title.toLowerCase()}`;
+    
     return {
-      opener: `${episode.title} represents a pivotal moment in ${series.title.toLowerCase()}, showcasing the evolution of cinematic artistry and storytelling.`,
+      opener: `${fallbackTitle} represents a pivotal moment in cinema, showcasing the evolution of cinematic artistry and storytelling.`,
       sections: [
         {
           type: 'text',
-          content: `This episode explores "${episode.title}: ${episode.subtitle}" as part of "${series.title}". This content examines the historical context, artistic innovations, and lasting impact of this important period in cinema history.`
+          content: `This episode explores "${fallbackTitle}" within the context of ${fallbackContext}. This content examines the historical context, artistic innovations, and lasting impact of this important aspect of cinema history.`
         },
         {
           type: 'text', 
-          content: `The films from this era demonstrate significant technological and narrative advances that continue to influence modern filmmaking. Directors and cinematographers during this period pushed creative boundaries while establishing new cinematic languages.`
+          content: `The films from this tradition demonstrate significant technological and narrative advances that continue to influence modern filmmaking. Directors and cinematographers working in this style pushed creative boundaries while establishing new cinematic languages.`
         },
         {
           type: 'text',
-          content: `Cultural impact extended far beyond the box office, as these films reflected and shaped societal values. The legacy of this period continues to inform contemporary cinema and inspire new generations of filmmakers.`
+          content: `Cultural impact extended far beyond the box office, as these works reflected and shaped societal values. The legacy of this cinematic tradition continues to inform contemporary cinema and inspire new generations of filmmakers.`
         }
       ],
       moreIdeas: {
@@ -314,14 +326,53 @@ function parseClaudeResponse(responseText) {
   };
 }
 
+// Check if episode content is locked
+function checkEpisodeLock(seriesId, episodeId, forceRegenerate = false) {
+  try {
+    const episodePath = path.join(process.cwd(), 'data', 'episodes', `genius-${seriesId}-${seriesId}-${episodeId}.json`);
+    
+    if (fs.existsSync(episodePath)) {
+      const episodeContent = fs.readFileSync(episodePath, 'utf8');
+      const episodeData = JSON.parse(episodeContent);
+      
+      if (episodeData.locked && !forceRegenerate) {
+        return {
+          isLocked: true,
+          lockedAt: episodeData.lockedAt,
+          lockedBy: episodeData.lockedBy || 'system'
+        };
+      }
+    }
+    
+    return { isLocked: false };
+  } catch (error) {
+    console.error('Error checking episode lock:', error);
+    return { isLocked: false };
+  }
+}
+
 export default async function handler(req, res) {
-  const { seriesId, episodeId } = req.body;
+  const { seriesId, episodeId, forceRegenerate = false, topic, context } = req.body;
   
   // Basic validation
   if (!seriesId || !episodeId) {
     return res.status(400).json({
       error: 'Missing required fields: seriesId and episodeId'
     });
+  }
+
+  // Check if episode is locked (only for new generation, not topic/context based generation)
+  if (topic && context) {
+    const lockStatus = checkEpisodeLock(seriesId, episodeId, forceRegenerate);
+    if (lockStatus.isLocked) {
+      console.log(`Episode ${seriesId}-${seriesId}-${episodeId} is locked, blocking regeneration`);
+      return res.status(409).json({
+        error: 'Episode content is locked to prevent accidental regeneration',
+        lockedAt: lockStatus.lockedAt,
+        lockedBy: lockStatus.lockedBy,
+        message: 'Use forceRegenerate=true to override this protection'
+      });
+    }
   }
 
   try {
@@ -338,12 +389,19 @@ export default async function handler(req, res) {
       return res.status(404).json({ error: `Episode ${episodeId} not found in series ${seriesId}` });
     }
 
-    // Try to load pre-generated content first (for Cinema Through Time episodes)
-    let rawContent = loadEpisodeContent(seriesId, episodeId);
-    
-    // Fallback to dynamic generation if pre-generated content doesn't exist
-    if (!rawContent) {
-      rawContent = await generateEpisodeContentFallback(seriesId, episodeId);
+    // If topic and context are provided, generate new content; otherwise try pre-generated content
+    let rawContent;
+    if (topic && context) {
+      // Generate new content based on provided topic/context
+      rawContent = await generateEpisodeContentFallback(seriesId, episodeId, topic, context);
+    } else {
+      // Try to load pre-generated content first (for Cinema Through Time episodes)
+      rawContent = loadEpisodeContent(seriesId, episodeId);
+      
+      // Fallback to dynamic generation if pre-generated content doesn't exist
+      if (!rawContent) {
+        rawContent = await generateEpisodeContentFallback(seriesId, episodeId, topic, context);
+      }
     }
 
     // Process movies (simplified for now)

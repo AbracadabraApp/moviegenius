@@ -2,219 +2,88 @@
   "themes": {
     "1": {
       "id": 1,
-      "title": "Film Noir & Crime",
-      "description": "Shadows, moral ambiguity, and the dark side of the American Dream",
-      "slug": "film-noir-crime",
+      "title": "Genres",
+      "description": "Film genres and their evolution",
+      "slug": "genres",
       "series": [
         {
           "id": 1,
-          "title": "Classic Film Noir (1940-1958)",
+          "title": "Classic Film Noir",
           "description": "The birth and golden age of film noir",
           "episodes": [
             {"id": 1, "title": "German Expressionism", "subtitle": "The template for noir morality"},
-            {"id": 2, "title": "From Novels to Noir", "subtitle": "Hard-boiled detective fiction meets cinema"},
-            {"id": 3, "title": "Sunset Boulevard", "subtitle": "Hollywood's dark mirror"},
-            {"id": 4, "title": "Touch of Evil", "subtitle": "Welles's baroque masterpiece"},
-            {"id": 5, "title": "The Big Sleep", "subtitle": "Hawks and Bogart's chemistry"},
-            {"id": 6, "title": "Out of the Past", "subtitle": "Fatalism and femme fatales"}
+            {"id": 2, "title": "From Novels to Noir", "subtitle": "Detective fiction meets cinema"},
+            {"id": 3, "title": "Urban Anxiety", "subtitle": "City streets and moral decay"},
+            {"id": 4, "title": "Femme Fatales", "subtitle": "Dangerous women and desire"},
+            {"id": 5, "title": "Moral Ambiguity", "subtitle": "Heroes and villains blur together"},
+            {"id": 6, "title": "Noir's Legacy", "subtitle": "How shadows shaped modern cinema"}
           ]
         },
         {
           "id": 2,
-          "title": "Neo-Noir Renaissance (1970s-1990s)",
-          "description": "Noir influences in modern cinema",
+          "title": "Suspense & Horror",
+          "description": "Fear, tension, and psychological terror",
           "episodes": [
-            {"id": 1, "title": "Chinatown", "subtitle": "Polanski's corruption epic"},
-            {"id": 2, "title": "Taxi Driver", "subtitle": "Urban alienation and violence"},
-            {"id": 3, "title": "Blade Runner", "subtitle": "Sci-fi meets noir aesthetics"},
-            {"id": 4, "title": "Blood Simple", "subtitle": "Coen Brothers' debut masterpiece"},
-            {"id": 5, "title": "The Long Good Friday", "subtitle": "British crime thriller excellence"},
-            {"id": 6, "title": "After Hours", "subtitle": "Scorsese's kafkaesque nightmare"}
+            {"id": 1, "title": "Giallo: Italian Horror Aesthetics", "subtitle": "Argento's stylized violence"},
+            {"id": 2, "title": "Cronenberg's Body Horror", "subtitle": "Flesh and psychological terror"},
+            {"id": 3, "title": "Modern Psychological Thrillers", "subtitle": "Mind games and manipulation"},
+            {"id": 4, "title": "Elevated Horror: A24 & Beyond", "subtitle": "Art house fear"}
           ]
         },
         {
           "id": 3,
-          "title": "Crime Epics & Gangster Films",
-          "description": "The rise and fall of criminal empires",
+          "title": "Comedy Through the Ages",
+          "description": "Laughter and social commentary",
           "episodes": [
-            {"id": 1, "title": "The Godfather Trilogy", "subtitle": "Coppola's American saga"},
-            {"id": 2, "title": "Goodfellas", "subtitle": "Scorsese's kinetic crime energy"},
-            {"id": 3, "title": "Once Upon a Time in America", "subtitle": "Leone's operatic crime epic"},
-            {"id": 4, "title": "Scarface", "subtitle": "De Palma's excess and ambition"},
-            {"id": 5, "title": "The Departed", "subtitle": "Identity and betrayal"},
-            {"id": 6, "title": "Casino", "subtitle": "Vegas empire's corruption"}
-          ]
-        },
-        {
-          "id": 4,
-          "title": "Contemporary Crime (2000s-Present)",
-          "description": "Modern approaches to crime storytelling",
-          "episodes": [
-            {"id": 1, "title": "No Country for Old Men", "subtitle": "Coen Brothers' moral wasteland"},
-            {"id": 2, "title": "There Will Be Blood", "subtitle": "Anderson's capitalist critique"},
-            {"id": 3, "title": "Drive", "subtitle": "Refn's stylized violence"},
-            {"id": 4, "title": "Zodiac", "subtitle": "Fincher's obsessive investigation"},
-            {"id": 5, "title": "Hell or High Water", "subtitle": "Modern Western crime"},
-            {"id": 6, "title": "Parasite", "subtitle": "Class warfare thriller"}
-          ]
-        },
-        {
-          "id": 5,
-          "title": "International Crime Cinema",
-          "description": "Global perspectives on crime and justice",
-          "episodes": [
-            {"id": 1, "title": "Jean-Pierre Melville", "subtitle": "French crime poetry"},
-            {"id": 2, "title": "Hong Kong Heroic Bloodshed", "subtitle": "Woo and the action ballet"},
-            {"id": 3, "title": "Yakuza Films", "subtitle": "Japanese honor and violence"},
-            {"id": 4, "title": "Scandinavian Noir", "subtitle": "Nordic darkness and social critique"},
-            {"id": 5, "title": "Italian Crime Cinema", "subtitle": "Poliziotteschi and social realism"},
-            {"id": 6, "title": "Korean New Wave Crime", "subtitle": "Bong Joon-ho to Park Chan-wook"}
-          ]
-        },
-        {
-          "id": 6,
-          "title": "Crime in Television",
-          "description": "How TV transformed crime storytelling",
-          "episodes": [
-            {"id": 1, "title": "The Sopranos", "subtitle": "Prestige TV crime drama"},
-            {"id": 2, "title": "The Wire", "subtitle": "Institutional critique"},
-            {"id": 3, "title": "Breaking Bad", "subtitle": "Transformation and consequences"},
-            {"id": 4, "title": "True Detective", "subtitle": "Anthology crime poetry"},
-            {"id": 5, "title": "Fargo", "subtitle": "Coen Brothers on television"},
-            {"id": 6, "title": "Mindhunter", "subtitle": "Psychology of serial crime"}
+            {"id": 1, "title": "Silent Comedy Stars", "subtitle": "Chaplin, Keaton, and visual humor"},
+            {"id": 2, "title": "Screwball Comedy: Battle of the Sexes", "subtitle": "Rapid-fire wit and romance"},
+            {"id": 3, "title": "British Comedy: Ealing to Python", "subtitle": "Dry wit and social satire"},
+            {"id": 4, "title": "Saturday Night Live Cinema", "subtitle": "TV comedy goes to movies"},
+            {"id": 5, "title": "Judd Apatow & The New Comedy", "subtitle": "Bromance and improvisation"}
           ]
         }
       ]
     },
     "2": {
       "id": 2,
-      "title": "Science Fiction & Fantasy",
-      "description": "Exploring the impossible and the future",
-      "slug": "sci-fi-fantasy",
+      "title": "Directors",
+      "description": "Visionary filmmakers and their personal cinema",
+      "slug": "directors",
       "series": [
         {
           "id": 1,
-          "title": "Early Sci-Fi Pioneers (1900s-1960s)",
-          "description": "From Méliès to Kubrick",
+          "title": "Women Directors",
+          "description": "Pioneering female voices in cinema",
           "episodes": [
-            {"id": 1, "title": "A Trip to the Moon", "subtitle": "Méliès and early cinema magic"},
-            {"id": 2, "title": "Metropolis", "subtitle": "Lang's dystopian vision"},
-            {"id": 3, "title": "The Day the Earth Stood Still", "subtitle": "Cold War anxieties"},
-            {"id": 4, "title": "Forbidden Planet", "subtitle": "Freudian sci-fi psychology"},
-            {"id": 5, "title": "Invasion of the Body Snatchers", "subtitle": "Paranoia and conformity"},
-            {"id": 6, "title": "2001: A Space Odyssey", "subtitle": "Kubrick's cosmic journey"}
+            {"id": 1, "title": "Silent Era Pioneers: Weber & Pickford", "subtitle": "Early women behind the camera"},
+            {"id": 2, "title": "Ida Lupino: The Forgotten Auteur", "subtitle": "Actor-director breaking barriers"},
+            {"id": 3, "title": "Chantal Akerman: Radical Minimalism", "subtitle": "Feminist time and space"},
+            {"id": 4, "title": "Jane Campion: Feminine Gothic", "subtitle": "New Zealand's poetic vision"},
+            {"id": 5, "title": "Kathryn Bigelow: Action Auteur", "subtitle": "Redefining genre filmmaking"},
+            {"id": 6, "title": "Contemporary Voices: Gerwig to Zhao", "subtitle": "New generation storytellers"}
           ]
         },
         {
           "id": 2,
-          "title": "New Hollywood Sci-Fi (1970s-1980s)",
-          "description": "Blockbuster sci-fi and dystopian futures",
-          "episodes": [
-            {"id": 1, "title": "Star Wars", "subtitle": "Space opera revolution"},
-            {"id": 2, "title": "Alien", "subtitle": "Scott's horror in space"},
-            {"id": 3, "title": "Blade Runner", "subtitle": "Neo-noir sci-fi masterpiece"},
-            {"id": 4, "title": "Close Encounters", "subtitle": "Spielberg's wonder and contact"},
-            {"id": 5, "title": "The Thing", "subtitle": "Carpenter's paranoid isolation"},
-            {"id": 6, "title": "E.T.", "subtitle": "Childhood and alien friendship"}
-          ]
-        },
-        {
-          "id": 3,
-          "title": "Digital Age Sci-Fi (1990s-2000s)",
-          "description": "Virtual reality and cyberpunk visions",
-          "episodes": [
-            {"id": 1, "title": "The Matrix", "subtitle": "Virtual reality revolution"},
-            {"id": 2, "title": "Terminator 2", "subtitle": "Cameron's tech thriller"},
-            {"id": 3, "title": "Ghost in the Shell", "subtitle": "Anime cyberpunk philosophy"},
-            {"id": 4, "title": "eXistenZ", "subtitle": "Cronenberg's reality games"},
-            {"id": 5, "title": "Dark City", "subtitle": "Proyas's memory noir"},
-            {"id": 6, "title": "Minority Report", "subtitle": "Spielberg's pre-crime future"}
-          ]
-        },
-        {
-          "id": 4,
-          "title": "Contemporary Sci-Fi (2010s-Present)",
-          "description": "Modern science fiction storytelling",
-          "episodes": [
-            {"id": 1, "title": "Inception", "subtitle": "Nolan's dream architecture"},
-            {"id": 2, "title": "Her", "subtitle": "Jonze's AI romance"},
-            {"id": 3, "title": "Ex Machina", "subtitle": "Garland's Turing test"},
-            {"id": 4, "title": "Arrival", "subtitle": "Villeneuve's linguistic sci-fi"},
-            {"id": 5, "title": "Annihilation", "subtitle": "Garland's cosmic horror"},
-            {"id": 6, "title": "Dune", "subtitle": "Villeneuve's epic adaptation"}
-          ]
-        },
-        {
-          "id": 5,
-          "title": "Fantasy & Supernatural",
-          "description": "Magic, mythology, and the supernatural",
-          "episodes": [
-            {"id": 1, "title": "The Lord of the Rings", "subtitle": "Jackson's epic fantasy"},
-            {"id": 2, "title": "Pan's Labyrinth", "subtitle": "Del Toro's dark fairy tale"},
-            {"id": 3, "title": "The Shape of Water", "subtitle": "Monster romance poetry"},
-            {"id": 4, "title": "Harry Potter", "subtitle": "Modern magical cinema"},
-            {"id": 5, "title": "The Princess Bride", "subtitle": "Reiner's fairy tale adventure"},
-            {"id": 6, "title": "Spirited Away", "subtitle": "Miyazaki's spiritual journey"}
-          ]
-        },
-        {
-          "id": 6,
-          "title": "Horror & Supernatural Thriller",
-          "description": "Fear, suspense, and the unknown",
-          "episodes": [
-            {"id": 1, "title": "The Exorcist", "subtitle": "Friedkin's possession horror"},
-            {"id": 2, "title": "The Shining", "subtitle": "Kubrick's psychological terror"},
-            {"id": 3, "title": "Rosemary's Baby", "subtitle": "Polanski's paranoid pregnancy"},
-            {"id": 4, "title": "The Babadook", "subtitle": "Kent's metaphorical monster"},
-            {"id": 5, "title": "Hereditary", "subtitle": "Aster's family trauma horror"},
-            {"id": 6, "title": "Get Out", "subtitle": "Peele's social thriller"}
-          ]
-        }
-      ]
-    },
-    "3": {
-      "id": 3,
-      "title": "Auteur Cinema & Art House",
-      "description": "Visionary directors and their personal cinema",
-      "slug": "auteur-art-house",
-      "series": [
-        {
-          "id": 1,
-          "title": "European New Waves",
-          "description": "Revolutionary movements that changed cinema",
-          "episodes": [
-            {"id": 1, "title": "French New Wave", "subtitle": "Godard and Truffaut's revolution"},
-            {"id": 2, "title": "Italian Neorealism", "subtitle": "De Sica and Rossellini's truth"},
-            {"id": 3, "title": "German New Cinema", "subtitle": "Herzog and Wenders's vision"},
-            {"id": 4, "title": "Czech New Wave", "subtitle": "Forman and Němec's freedom"},
-            {"id": 5, "title": "British Social Realism", "subtitle": "Loach and Leigh's working class"},
-            {"id": 6, "title": "Dogme 95", "subtitle": "Von Trier's cinematic manifesto"}
-          ]
-        },
-        {
-          "id": 2,
-          "title": "American Auteurs",
-          "description": "Personal vision in Hollywood",
-          "episodes": [
-            {"id": 1, "title": "Stanley Kubrick", "subtitle": "Perfectionist's cinema"},
-            {"id": 2, "title": "Martin Scorsese", "subtitle": "Urban passion and violence"},
-            {"id": 3, "title": "Terrence Malick", "subtitle": "Poetic transcendence"},
-            {"id": 4, "title": "Paul Thomas Anderson", "subtitle": "Contemporary American epic"},
-            {"id": 5, "title": "The Coen Brothers", "subtitle": "Genre-bending storytellers"},
-            {"id": 6, "title": "David Lynch", "subtitle": "Surreal American dreams"}
-          ]
-        },
-        {
-          "id": 3,
           "title": "International Masters",
           "description": "Global cinematic visionaries",
           "episodes": [
-            {"id": 1, "title": "Akira Kurosawa", "subtitle": "Japanese cinema giant"},
-            {"id": 2, "title": "Ingmar Bergman", "subtitle": "Swedish psychological depth"},
-            {"id": 3, "title": "Federico Fellini", "subtitle": "Italian dream circus"},
-            {"id": 4, "title": "Andrei Tarkovsky", "subtitle": "Soviet spiritual cinema"},
-            {"id": 5, "title": "Wong Kar-wai", "subtitle": "Hong Kong mood master"},
-            {"id": 6, "title": "Abbas Kiarostami", "subtitle": "Iranian poetic realism"}
+            {"id": 1, "title": "Kurosawa's Epic Vision", "subtitle": "Japanese cinema giant"},
+            {"id": 2, "title": "Bergman's Psychological Landscapes", "subtitle": "Swedish introspection"},
+            {"id": 3, "title": "Fellini's Surreal Italy", "subtitle": "Dreams and reality collide"},
+            {"id": 4, "title": "Tarkovsky's Spiritual Cinema", "subtitle": "Soviet poetry in motion"},
+            {"id": 5, "title": "Wong Kar-wai's Romantic Melancholy", "subtitle": "Hong Kong mood master"},
+            {"id": 6, "title": "Bong Joon-ho's Genre Mastery", "subtitle": "Korean social commentary"}
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Documentary Masters",
+          "description": "Truth and reality in cinema",
+          "episodes": [
+            {"id": 1, "title": "Frederick Wiseman: Institutional Observer", "subtitle": "Fly-on-the-wall realism"},
+            {"id": 2, "title": "Errol Morris: Truth Detective", "subtitle": "Investigation through film"},
+            {"id": 3, "title": "Michael Moore: Provocateur Documentarian", "subtitle": "Political activism through cinema"}
           ]
         },
         {
@@ -222,296 +91,100 @@
           "title": "Contemporary Auteurs",
           "description": "Modern visionary filmmakers",
           "episodes": [
-            {"id": 1, "title": "Christopher Nolan", "subtitle": "Time and reality architect"},
-            {"id": 2, "title": "Denis Villeneuve", "subtitle": "Sci-fi poetry master"},
-            {"id": 3, "title": "Ari Aster", "subtitle": "Horror as art"},
-            {"id": 4, "title": "Chloé Zhao", "subtitle": "American nomadic realism"},
-            {"id": 5, "title": "Bong Joon-ho", "subtitle": "Genre-defying Korean master"},
-            {"id": 6, "title": "Céline Sciamma", "subtitle": "French intimacy and identity"}
+            {"id": 1, "title": "The Coen Brothers: Genre Pastiche & Visual Wit", "subtitle": "Postmodern storytellers"},
+            {"id": 2, "title": "Christopher Nolan: Time, Memory & IMAX Spectacle", "subtitle": "Puzzle box narratives"},
+            {"id": 3, "title": "Denis Villeneuve: Sci-Fi Atmosphere & Scale", "subtitle": "Thoughtful spectacle"},
+            {"id": 4, "title": "Jordan Peele: Horror Through Social Commentary", "subtitle": "Genre as activism"}
+          ]
+        }
+      ]
+    },
+    "3": {
+      "id": 3,
+      "title": "Movements",
+      "description": "Revolutionary cinema movements that changed film",
+      "slug": "movements",
+      "series": [
+        {
+          "id": 1,
+          "title": "New Waves",
+          "description": "Revolutionary movements that changed cinema",
+          "episodes": [
+            {"id": 1, "title": "French New Wave: Breathless Revolution", "subtitle": "Godard and Truffaut's innovation"},
+            {"id": 2, "title": "Italian Neorealism: Truth in Cinema", "subtitle": "Post-war authenticity"},
+            {"id": 3, "title": "British Kitchen Sink & Social Realism", "subtitle": "Working class stories"},
+            {"id": 4, "title": "Japanese New Wave: Oshima & Imamura", "subtitle": "Breaking tradition"},
+            {"id": 5, "title": "Czech New Wave: Behind Iron Curtain", "subtitle": "Political allegory and freedom"},
+            {"id": 6, "title": "German New Cinema: Herzog & Fassbinder", "subtitle": "Post-war artistic renewal"}
           ]
         },
         {
-          "id": 5,
-          "title": "Experimental & Avant-Garde",
-          "description": "Cinema as pure art form",
+          "id": 2,
+          "title": "German Cinema Heritage",
+          "description": "From Weimar to Hollywood influence",
           "episodes": [
-            {"id": 1, "title": "Maya Deren", "subtitle": "American avant-garde pioneer"},
-            {"id": 2, "title": "Stan Brakhage", "subtitle": "Pure visual cinema"},
-            {"id": 3, "title": "Kenneth Anger", "subtitle": "Underground occult cinema"},
-            {"id": 4, "title": "Chris Marker", "subtitle": "Essay film master"},
-            {"id": 5, "title": "Chantal Akerman", "subtitle": "Feminist time and space"},
-            {"id": 6, "title": "Apichatpong Weerasethakul", "subtitle": "Thai dream logic"}
-          ]
-        },
-        {
-          "id": 6,
-          "title": "Documentary Masters",
-          "description": "Truth and reality in cinema",
-          "episodes": [
-            {"id": 1, "title": "Frederick Wiseman", "subtitle": "Institutional observation"},
-            {"id": 2, "title": "Errol Morris", "subtitle": "Truth and investigation"},
-            {"id": 3, "title": "Werner Herzog", "subtitle": "Ecstatic truth"},
-            {"id": 4, "title": "Agnes Varda", "subtitle": "Personal documentary poetry"},
-            {"id": 5, "title": "Direct Cinema", "subtitle": "Observational movement"},
-            {"id": 6, "title": "Michael Moore", "subtitle": "Political documentary activism"}
+            {"id": 1, "title": "German Expressionism & Silent Era", "subtitle": "Visual psychology emerges"},
+            {"id": 2, "title": "Murnau's Camera Movement Revolution", "subtitle": "Unchaining the camera"},
+            {"id": 3, "title": "Fritz Lang's Architectural Psychology", "subtitle": "Space as character"},
+            {"id": 4, "title": "From Weimar to Hollywood: The Émigré Influence", "subtitle": "European artistry in America"}
           ]
         }
       ]
     },
     "4": {
       "id": 4,
-      "title": "Genre Evolution & Analysis",
-      "description": "How film genres develop, transform, and influence culture",
-      "slug": "genre-evolution",
+      "title": "Filmmaking",
+      "description": "The craft and technology of cinema",
+      "slug": "filmmaking",
       "series": [
         {
           "id": 1,
-          "title": "Western: Frontier Mythology",
-          "description": "From cowboys to revisionist deconstructions",
+          "title": "Technical Evolution",
+          "description": "How cinema technology shapes storytelling",
           "episodes": [
-            {"id": 1, "title": "Classical Westerns", "subtitle": "Ford and Hawks's frontier"},
-            {"id": 2, "title": "Spaghetti Westerns", "subtitle": "Leone's operatic violence"},
-            {"id": 3, "title": "Revisionist Westerns", "subtitle": "Peckinpah's violent truth"},
-            {"id": 4, "title": "Neo-Westerns", "subtitle": "Modern frontier stories"},
-            {"id": 5, "title": "Acid Westerns", "subtitle": "Psychedelic deconstructions"},
-            {"id": 6, "title": "Contemporary Westerns", "subtitle": "21st century frontier"}
-          ]
-        },
-        {
-          "id": 2,
-          "title": "Horror: Fear Through the Ages",
-          "description": "Evolution of cinematic terror",
-          "episodes": [
-            {"id": 1, "title": "Universal Monsters", "subtitle": "Classic Hollywood horror"},
-            {"id": 2, "title": "Hammer Horror", "subtitle": "British gothic revival"},
-            {"id": 3, "title": "Slasher Films", "subtitle": "Carpenter and Craven's terror"},
-            {"id": 4, "title": "Body Horror", "subtitle": "Cronenberg's flesh fears"},
-            {"id": 5, "title": "J-Horror", "subtitle": "Japanese supernatural dread"},
-            {"id": 6, "title": "Elevated Horror", "subtitle": "Art house fear"}
-          ]
-        },
-        {
-          "id": 3,
-          "title": "Musical: Song and Dance Cinema",
-          "description": "From Busby Berkeley to La La Land",
-          "episodes": [
-            {"id": 1, "title": "Early Musicals", "subtitle": "Berkeley's geometric dreams"},
-            {"id": 2, "title": "MGM Golden Age", "subtitle": "Freed unit's perfection"},
-            {"id": 3, "title": "Integrated Musicals", "subtitle": "Oklahoma! and beyond"},
-            {"id": 4, "title": "Rock Musicals", "subtitle": "Hair and counterculture"},
-            {"id": 5, "title": "Jukebox Musicals", "subtitle": "Popular song cinema"},
-            {"id": 6, "title": "Contemporary Musicals", "subtitle": "Chazelle's modern romance"}
-          ]
-        },
-        {
-          "id": 4,
-          "title": "Comedy: Laughter Evolution",
-          "description": "From slapstick to social satire",
-          "episodes": [
-            {"id": 1, "title": "Silent Comedy", "subtitle": "Chaplin and Keaton's genius"},
-            {"id": 2, "title": "Screwball Comedy", "subtitle": "Hawks and rapid-fire wit"},
-            {"id": 3, "title": "Romantic Comedy", "subtitle": "Love and laughter formula"},
-            {"id": 4, "title": "Satire and Parody", "subtitle": "Brooks and Allen's commentary"},
-            {"id": 5, "title": "Alternative Comedy", "subtitle": "Independent humor"},
-            {"id": 6, "title": "Digital Age Comedy", "subtitle": "Memes and viral humor"}
-          ]
-        },
-        {
-          "id": 5,
-          "title": "Action: Spectacle and Thrills",
-          "description": "Adrenaline and kinetic cinema",
-          "episodes": [
-            {"id": 1, "title": "Early Action", "subtitle": "Stuntwork and danger"},
-            {"id": 2, "title": "Martial Arts Cinema", "subtitle": "Lee and choreographed combat"},
-            {"id": 3, "title": "80s Action Heroes", "subtitle": "Stallone and Schwarzenegger"},
-            {"id": 4, "title": "Hong Kong Action", "subtitle": "Woo's bullet ballet"},
-            {"id": 5, "title": "Digital Action", "subtitle": "CGI spectacle era"},
-            {"id": 6, "title": "Practical Renaissance", "subtitle": "Return to real stunts"}
-          ]
-        },
-        {
-          "id": 6,
-          "title": "Thriller: Suspense Masters",
-          "description": "Tension and psychological manipulation",
-          "episodes": [
-            {"id": 1, "title": "Alfred Hitchcock", "subtitle": "Master of suspense"},
-            {"id": 2, "title": "Conspiracy Thrillers", "subtitle": "70s paranoia cinema"},
-            {"id": 3, "title": "Psychological Thrillers", "subtitle": "Mind games and manipulation"},
-            {"id": 4, "title": "Tech Thrillers", "subtitle": "Digital age paranoia"},
-            {"id": 5, "title": "Political Thrillers", "subtitle": "Power and corruption"},
-            {"id": 6, "title": "Erotic Thrillers", "subtitle": "Desire and danger"}
+            {"id": 1, "title": "Hitchcock's Camera Psychology", "subtitle": "Visual manipulation master"},
+            {"id": 2, "title": "Birth of Cinema: Méliès to Griffith", "subtitle": "Magic and narrative emerge"},
+            {"id": 3, "title": "Studio System & Star Power", "subtitle": "Hollywood's golden age machine"},
+            {"id": 4, "title": "Technicolor Revolution", "subtitle": "Color transforms cinema"},
+            {"id": 5, "title": "Digital Revolution Begins", "subtitle": "CGI changes everything"},
+            {"id": 6, "title": "Virtual Production Revolution", "subtitle": "LED walls and real-time rendering"},
+            {"id": 7, "title": "AI & the Future of Filmmaking", "subtitle": "Artificial intelligence enters cinema"}
           ]
         }
       ]
     },
     "5": {
       "id": 5,
-      "title": "World Cinema & Cultural Movements",
-      "description": "Global film traditions and cultural expressions",
-      "slug": "world-cinema",
+      "title": "Topics",
+      "description": "Cultural and historical contexts in cinema",
+      "slug": "topics",
       "series": [
         {
           "id": 1,
-          "title": "Asian Cinema Masters",
-          "description": "Eastern storytelling traditions",
+          "title": "Decades",
+          "description": "Cinema through the decades",
           "episodes": [
-            {"id": 1, "title": "Japanese Golden Age", "subtitle": "Kurosawa and Ozu's mastery"},
-            {"id": 2, "title": "Hong Kong New Wave", "subtitle": "Woo and To's kinetic style"},
-            {"id": 3, "title": "Korean New Wave", "subtitle": "Bong and Park's social critique"},
-            {"id": 4, "title": "Chinese Sixth Generation", "subtitle": "Jia and Zhang's realism"},
-            {"id": 5, "title": "Indian Parallel Cinema", "subtitle": "Ray and Sen's humanism"},
-            {"id": 6, "title": "Thai New Wave", "subtitle": "Weerasethakul's dream logic"}
+            {"id": 1, "title": "1970s: The Auteur Renaissance", "subtitle": "Directors take control"},
+            {"id": 2, "title": "1980s: Blockbuster Revolution", "subtitle": "High concept and spectacle"},
+            {"id": 3, "title": "1990s: Independent Renaissance", "subtitle": "Sundance and artistic freedom"},
+            {"id": 4, "title": "2000s: The Streaming Wars", "subtitle": "Digital distribution emerges"},
+            {"id": 5, "title": "2010s: Global Cinema Rising", "subtitle": "International voices gain prominence"}
           ]
         },
         {
           "id": 2,
-          "title": "Latin American Cinema",
-          "description": "Revolutionary and magical realism",
+          "title": "Historical Periods",
+          "description": "How cinema reflects and shapes history",
           "episodes": [
-            {"id": 1, "title": "Mexican Golden Age", "subtitle": "Buñuel and Fernández"},
-            {"id": 2, "title": "Cinema Novo", "subtitle": "Brazilian social awakening"},
-            {"id": 3, "title": "New Mexican Cinema", "subtitle": "Iñárritu and del Toro"},
-            {"id": 4, "title": "Argentine New Wave", "subtitle": "Lucrecia Martel's poetry"},
-            {"id": 5, "title": "Chilean Cinema", "subtitle": "Larraín's political memory"},
-            {"id": 6, "title": "Colombian Cinema", "subtitle": "Guerra's intimate stories"}
-          ]
-        },
-        {
-          "id": 3,
-          "title": "African Cinema",
-          "description": "Post-colonial voices and traditions",
-          "episodes": [
-            {"id": 1, "title": "Senegalese Cinema", "subtitle": "Sembène's pioneering voice"},
-            {"id": 2, "title": "Egyptian Cinema", "subtitle": "Arab world's Hollywood"},
-            {"id": 3, "title": "South African Cinema", "subtitle": "Post-apartheid stories"},
-            {"id": 4, "title": "Nollywood", "subtitle": "Nigerian film industry"},
-            {"id": 5, "title": "Maghreb Cinema", "subtitle": "North African perspectives"},
-            {"id": 6, "title": "Contemporary African Voices", "subtitle": "New generation filmmakers"}
-          ]
-        },
-        {
-          "id": 4,
-          "title": "Middle Eastern Cinema",
-          "description": "Stories from the crossroads",
-          "episodes": [
-            {"id": 1, "title": "Iranian New Wave", "subtitle": "Kiarostami's poetic realism"},
-            {"id": 2, "title": "Turkish Cinema", "subtitle": "Ceylan's slow cinema"},
-            {"id": 3, "title": "Palestinian Cinema", "subtitle": "Resistance and identity"},
-            {"id": 4, "title": "Lebanese Cinema", "subtitle": "War and memory"},
-            {"id": 5, "title": "Israeli Cinema", "subtitle": "Complex identity stories"},
-            {"id": 6, "title": "Gulf Cinema", "subtitle": "Emerging voices"}
-          ]
-        },
-        {
-          "id": 5,
-          "title": "European Regional Cinemas",
-          "description": "Distinct national traditions",
-          "episodes": [
-            {"id": 1, "title": "Scandinavian Cinema", "subtitle": "Nordic noir and social realism"},
-            {"id": 2, "title": "Eastern European Cinema", "subtitle": "Post-communist transitions"},
-            {"id": 3, "title": "Spanish Cinema", "subtitle": "Almodóvar's colorful passion"},
-            {"id": 4, "title": "Portuguese Cinema", "subtitle": "Costa's digital minimalism"},
-            {"id": 5, "title": "Greek Cinema", "subtitle": "Lanthimos's absurd reality"},
-            {"id": 6, "title": "Balkan Cinema", "subtitle": "War and reconciliation"}
-          ]
-        },
-        {
-          "id": 6,
-          "title": "Indigenous & First Nations Cinema",
-          "description": "Native voices and traditional stories",
-          "episodes": [
-            {"id": 1, "title": "Native American Cinema", "subtitle": "Eyre and Sherman's voices"},
-            {"id": 2, "title": "Australian Aboriginal Cinema", "subtitle": "Thornton and Sen's stories"},
-            {"id": 3, "title": "Inuit Cinema", "subtitle": "Arctic perspectives"},
-            {"id": 4, "title": "Māori Cinema", "subtitle": "New Zealand indigenous voices"},
-            {"id": 5, "title": "Latin American Indigenous", "subtitle": "Maya and Quechua cinema"},
-            {"id": 6, "title": "Global Indigenous Voices", "subtitle": "Worldwide native filmmakers"}
-          ]
-        }
-      ]
-    },
-    "6": {
-      "id": 6,
-      "title": "Technical Innovation & Film Craft",
-      "description": "The art and science of filmmaking",
-      "slug": "technical-craft",
-      "series": [
-        {
-          "id": 1,
-          "title": "Cinematography Evolution",
-          "description": "The art of visual storytelling",
-          "episodes": [
-            {"id": 1, "title": "Silent Era Innovation", "subtitle": "Griffith and visual language"},
-            {"id": 2, "title": "Deep Focus Masters", "subtitle": "Toland and Welles's depth"},
-            {"id": 3, "title": "Color Revolution", "subtitle": "Technicolor and beyond"},
-            {"id": 4, "title": "Handheld Camera", "subtitle": "Nouvelle Vague freedom"},
-            {"id": 5, "title": "Digital Cinematography", "subtitle": "Lubezki's natural light"},
-            {"id": 6, "title": "Virtual Production", "subtitle": "LED volume and real-time"}
-          ]
-        },
-        {
-          "id": 2,
-          "title": "Editing and Montage",
-          "description": "The rhythm and flow of cinema",
-          "episodes": [
-            {"id": 1, "title": "Soviet Montage Theory", "subtitle": "Eisenstein's dialectical editing"},
-            {"id": 2, "title": "Classical Hollywood Editing", "subtitle": "Invisible continuity system"},
-            {"id": 3, "title": "Jump Cut Revolution", "subtitle": "Godard's radical breaks"},
-            {"id": 4, "title": "MTV Style Editing", "subtitle": "Music video influence"},
-            {"id": 5, "title": "Digital Editing", "subtitle": "Non-linear revolution"},
-            {"id": 6, "title": "Long Take Masters", "subtitle": "Tarr and real-time cinema"}
-          ]
-        },
-        {
-          "id": 3,
-          "title": "Sound Design Evolution",
-          "description": "The audio landscape of cinema",
-          "episodes": [
-            {"id": 1, "title": "Early Sound Cinema", "subtitle": "Talkies and synchronization"},
-            {"id": 2, "title": "Stereo and Surround", "subtitle": "Spatial audio development"},
-            {"id": 3, "title": "Sound Effects Artistry", "subtitle": "Foley and audio design"},
-            {"id": 4, "title": "Music and Score", "subtitle": "Composers as collaborators"},
-            {"id": 5, "title": "Digital Audio Revolution", "subtitle": "Pro Tools and precision"},
-            {"id": 6, "title": "Immersive Audio", "subtitle": "Dolby Atmos and beyond"}
-          ]
-        },
-        {
-          "id": 4,
-          "title": "Special Effects History",
-          "description": "Creating the impossible on screen",
-          "episodes": [
-            {"id": 1, "title": "Practical Effects Masters", "subtitle": "Harryhausen's stop-motion"},
-            {"id": 2, "title": "Makeup and Prosthetics", "subtitle": "Baker and transformation"},
-            {"id": 3, "title": "Miniatures and Models", "subtitle": "Trumbull's space effects"},
-            {"id": 4, "title": "Early CGI Revolution", "subtitle": "ILM and digital pioneers"},
-            {"id": 5, "title": "Motion Capture", "subtitle": "Performance in digital space"},
-            {"id": 6, "title": "Virtual Production", "subtitle": "Real-time rendering"}
-          ]
-        },
-        {
-          "id": 5,
-          "title": "Production Design",
-          "description": "Creating worlds and environments",
-          "episodes": [
-            {"id": 1, "title": "Studio System Design", "subtitle": "Gibbons and MGM glamour"},
-            {"id": 2, "title": "Location and Realism", "subtitle": "Italian Neorealism streets"},
-            {"id": 3, "title": "Science Fiction Worlds", "subtitle": "Blade Runner's future noir"},
-            {"id": 4, "title": "Period Recreation", "subtitle": "Historical accuracy and style"},
-            {"id": 5, "title": "Fantasy Environments", "subtitle": "Lord of the Rings design"},
-            {"id": 6, "title": "Virtual Sets", "subtitle": "Digital environment creation"}
-          ]
-        },
-        {
-          "id": 6,
-          "title": "Acting Techniques",
-          "description": "Performance styles and methods",
-          "episodes": [
-            {"id": 1, "title": "Silent Era Expression", "subtitle": "Chaplin and physical comedy"},
-            {"id": 2, "title": "Method Acting Revolution", "subtitle": "Strasberg and emotional truth"},
-            {"id": 3, "title": "Classical Hollywood Style", "subtitle": "Studio system training"},
-            {"id": 4, "title": "International Acting Styles", "subtitle": "Cultural performance differences"},
-            {"id": 5, "title": "Motion Capture Performance", "subtitle": "Serkis and digital acting"},
-            {"id": 6, "title": "Contemporary Approaches", "subtitle": "Modern acting techniques"}
+            {"id": 1, "title": "WWII & Cinema's War Effort", "subtitle": "Movies as propaganda and art"},
+            {"id": 2, "title": "Independent Film Renaissance", "subtitle": "Breaking free from studios"},
+            {"id": 3, "title": "International Cinema Breaks Through", "subtitle": "World cinema reaches America"},
+            {"id": 4, "title": "Franchise Filmmaking Dominance", "subtitle": "Sequels and shared universes"},
+            {"id": 5, "title": "Streaming Changes Everything", "subtitle": "Netflix revolutionizes distribution"},
+            {"id": 6, "title": "Marvel & the Cinematic Universe", "subtitle": "Superhero storytelling dominates"},
+            {"id": 7, "title": "A24 & Independent Prestige", "subtitle": "Art house meets commercial success"},
+            {"id": 8, "title": "International Streaming Wars", "subtitle": "Global content competition"},
+            {"id": 9, "title": "Post-Pandemic Cinema", "subtitle": "How COVID changed moviegoing"}
           ]
         }
       ]

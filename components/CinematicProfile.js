@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { cinematicProfileGenerator } from '../lib/cinematic-profile';
-import RefreshCw from 'lucide-react/dist/esm/icons/refresh-cw';
+import { RefreshCw } from 'lucide-react/icons';
 
 export default function CinematicProfile({ userData, className = '', onProfileChange }) {
   const [profile, setProfile] = useState(null);

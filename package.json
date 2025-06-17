@@ -6,7 +6,13 @@
     "dev": "next dev",
     "build": "rm -rf .next && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lock-episodes": "node scripts/manage-episode-locks.js lock",
+    "unlock-episodes": "node scripts/manage-episode-locks.js unlock",
+    "lock-series": "node scripts/manage-episode-locks.js lock-series",
+    "unlock-series": "node scripts/manage-episode-locks.js unlock-series",
+    "episode-status": "node scripts/manage-episode-locks.js status",
+    "list-locked": "node scripts/manage-episode-locks.js list-locked"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.53.0",

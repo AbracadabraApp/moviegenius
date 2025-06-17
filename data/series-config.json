@@ -1,697 +1,151 @@
 {
   "1": {
     "id": 1,
-    "title": "Classic Film Noir (1940-1958)",
+    "title": "Classic Film Noir",
     "description": "The birth and golden age of film noir",
     "episodes": [
-      {
-        "id": 1,
-        "title": "German Expressionism",
-        "subtitle": "The template for noir morality",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/cGNNLkR6kOD2XKGHYIZbOPSwZzC.jpg",
-          "https://image.tmdb.org/t/p/w200/pJbEELGb9gKNbIk7SfpLELRGP3E.jpg"
-        ]
-      },
-      {
-        "id": 2,
-        "title": "From Novels to Noir",
-        "subtitle": "Hard-boiled detective fiction meets cinema",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/d6GxmqU6YHUGdR3b9sWBFZF2z8F.jpg",
-          "https://image.tmdb.org/t/p/w200/qj7GtMhGmzqpKYmTqJGQ4bhQPl7.jpg"
-        ]
-      },
-      {
-        "id": 3,
-        "title": "Urban Anxiety",
-        "subtitle": "Post-war disillusionment in American cities",
-        "posters": []
-      },
-      {
-        "id": 4,
-        "title": "Femme Fatales",
-        "subtitle": "Dangerous women in a man's world",
-        "posters": []
-      },
-      {
-        "id": 5,
-        "title": "Moral Ambiguity",
-        "subtitle": "Heroes and villains blur together",
-        "posters": []
-      },
-      {
-        "id": 6,
-        "title": "Noir's Legacy",
-        "subtitle": "How shadows shaped modern cinema",
-        "posters": []
-      }
+      {"id": 1, "title": "German Expressionism", "subtitle": "The template for noir morality", "posters": []},
+      {"id": 2, "title": "From Novels to Noir", "subtitle": "Detective fiction meets cinema", "posters": []},
+      {"id": 3, "title": "Urban Anxiety", "subtitle": "City streets and moral decay", "posters": []},
+      {"id": 4, "title": "Femme Fatales", "subtitle": "Dangerous women and desire", "posters": []},
+      {"id": 5, "title": "Moral Ambiguity", "subtitle": "Heroes and villains blur together", "posters": []},
+      {"id": 6, "title": "Noir's Legacy", "subtitle": "How shadows shaped modern cinema", "posters": []}
     ]
   },
   "2": {
     "id": 2,
-    "title": "Cinema Through Time - 1970-2025",
-    "description": "How film evolved from the auteur renaissance through the present day",
+    "title": "Suspense & Horror",
+    "description": "Fear, tension, and psychological terror",
     "episodes": [
-      {
-        "id": 1,
-        "title": "1970s: The Auteur Renaissance", 
-        "subtitle": "When directors became superstars",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
-          "https://image.tmdb.org/t/p/w200/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
-          "https://image.tmdb.org/t/p/w200/lxM6kqilAdpdhqUl2biYp5frUxE.jpg",
-          "https://image.tmdb.org/t/p/w200/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg"
-        ]
-      },
-      {
-        "id": 2,
-        "title": "1980s: Blockbuster Revolution",
-        "subtitle": "High-concept cinema takes over", 
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
-          "https://image.tmdb.org/t/p/w200/iuAQVI4mvjI83wnirpD8GVNRVuY.jpg",
-          "https://image.tmdb.org/t/p/w200/fxq0gKLqnXx2N8LUuN6w2KiCJaP.jpg",
-          "https://image.tmdb.org/t/p/w200/ridz7OMqff52dLtPdpHIzUB8R6z.jpg"
-        ]
-      },
-      {
-        "id": 3,
-        "title": "1990s: Independent Renaissance",
-        "subtitle": "Bold voices outside the system",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/dM2w364MScsjFf8pfMbaWUcWrR.jpg",
-          "https://image.tmdb.org/t/p/w200/lyQBXzOQSuE59IsHyhrp0qIiPAz.jpg",
-          "https://image.tmdb.org/t/p/w200/aKuFiU82s5ISJpGZp7YkIr3kCUd.jpg",
-          "https://image.tmdb.org/t/p/w200/qi6Edc1OPcyENecGtz8TF0jUVKX.jpg"
-        ]
-      },
-      {
-        "id": 4,
-        "title": "2000s: The Streaming Wars",
-        "subtitle": "Digital revolution and franchise filmmaking",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
-          "https://image.tmdb.org/t/p/w200/6EiRUJpuoeQPghrs3YNktfnqOVh.jpg",
-          "https://image.tmdb.org/t/p/w200/eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg",
-          "https://image.tmdb.org/t/p/w200/c2SQMd00CCGTiDxGXVqA2J9lmzF.jpg"
-        ]
-      },
-      {
-        "id": 5,
-        "title": "2010s: Global Cinema Rising",
-        "subtitle": "International voices reshape Hollywood and streaming",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
-          "https://image.tmdb.org/t/p/w200/zzWGRw277MNoCs3zhyG3YmYQsXv.jpg",
-          "https://image.tmdb.org/t/p/w200/iGkziJ7aNdMGtTRrJBNYl8RrBRP.jpg",
-          "https://image.tmdb.org/t/p/w200/TU9NIjwzjoKPwQHoHshkBhDmiliE.jpg"
-        ]
-      }
-    ]
-  },
-  "4": {
-    "id": 4,
-    "title": "International New Waves - 1950-1980",
-    "description": "Revolutionary cinema movements that transformed filmmaking worldwide",
-    "episodes": [
-      {
-        "id": 1,
-        "title": "French New Wave: Breathless Revolution",
-        "subtitle": "Godard, Truffaut and the cinema of freedom",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/md687zMQi3Y5H4oq5hF1gxX1kTz.jpg",
-          "https://image.tmdb.org/t/p/w200/oZhXnQM10Zf8Xp1QPOd6FJ7Dh7N.jpg",
-          "https://image.tmdb.org/t/p/w200/b4N4SkFKsj6Gj8jvONECGzpLEhO.jpg",
-          "https://image.tmdb.org/t/p/w200/qxgSb0uQaVkVJ8ixpWw6KbmcwJF.jpg"
-        ]
-      },
-      {
-        "id": 2,
-        "title": "Italian Neorealism: Truth in Cinema",
-        "subtitle": "Post-war reality on the streets",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/bAq8TOzOIhhNHWlHEY1o4RtyBQw.jpg",
-          "https://image.tmdb.org/t/p/w200/yDaAWfpqfBj4F05R6OTOoEKl8E2.jpg",
-          "https://image.tmdb.org/t/p/w200/4WF6yt0TzJEOqgJ0lB2Zh7dz5K1.jpg",
-          "https://image.tmdb.org/t/p/w200/qnGFlQJE4dPE0YK8Bq7DlQY6WYm.jpg"
-        ]
-      },
-      {
-        "id": 3,
-        "title": "British Kitchen Sink & Social Realism",
-        "subtitle": "Working class stories break through",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/qX8XVPmyLu4hAB5lJZq96QW8zMl.jpg",
-          "https://image.tmdb.org/t/p/w200/4BMD2XEZW7hRQ5jXWPhJTuBOyaP.jpg",
-          "https://image.tmdb.org/t/p/w200/b8Y8f72n0RKLqMfmkDLzANOGpzR.jpg",
-          "https://image.tmdb.org/t/p/w200/z8M4qHdOK1Gd2Nt7SXOvIlXNOGl.jpg"
-        ]
-      },
-      {
-        "id": 4,
-        "title": "Japanese New Wave: Oshima & Imamura",
-        "subtitle": "Radical voices from the East",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/wK6mZjQNfBGz8F8PtOKNaeCqkmG.jpg",
-          "https://image.tmdb.org/t/p/w200/z5Xg8QlNFqLbUF6Ww5Lk6iWi32D.jpg",
-          "https://image.tmdb.org/t/p/w200/4q2rBKfTaGIUBg7J7bIzCZhz5zf.jpg",
-          "https://image.tmdb.org/t/p/w200/h7d5fUqBXLJl7W6k7MXrpN2LbQm.jpg"
-        ]
-      },
-      {
-        "id": 5,
-        "title": "Czech New Wave: Behind Iron Curtain",
-        "subtitle": "Artistic rebellion in Communist Europe",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/bGKLq5OZDl4qKGcCgF9vPq3w9hC.jpg",
-          "https://image.tmdb.org/t/p/w200/r8g2NKrh2OqFy8z6QE7k3mL8vR4.jpg",
-          "https://image.tmdb.org/t/p/w200/l1nN6QQP8Rz1q8E6X6L5y9E6g8a.jpg",
-          "https://image.tmdb.org/t/p/w200/5g7pA5H9f4F7rR8F8E6z6M7k5R4.jpg"
-        ]
-      },
-      {
-        "id": 6,
-        "title": "German New Cinema: Herzog & Fassbinder",
-        "subtitle": "New German Cinema emerges",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/q8r7F8E6z6L5y9E6g8a4g7pA5H9.jpg",
-          "https://image.tmdb.org/t/p/w200/f4F7rR8F8E6z6M7k5R4l1nN6QQP.jpg",
-          "https://image.tmdb.org/t/p/w200/z6M7k5R4l1nN6QQP8Rz1q8E6X6L.jpg",
-          "https://image.tmdb.org/t/p/w200/A5H9f4F7rR8F8E6z6M7k5R4l1nN.jpg"
-        ]
-      }
+      {"id": 1, "title": "Giallo: Italian Horror Aesthetics", "subtitle": "Argento's stylized violence", "posters": []},
+      {"id": 2, "title": "Cronenberg's Body Horror", "subtitle": "Flesh and psychological terror", "posters": []},
+      {"id": 3, "title": "Modern Psychological Thrillers", "subtitle": "Mind games and manipulation", "posters": []},
+      {"id": 4, "title": "Elevated Horror: A24 & Beyond", "subtitle": "Art house fear", "posters": []}
     ]
   },
   "3": {
     "id": 3,
-    "title": "The Art of the Chase: Action Cinema Evolution",
-    "description": "How action sequences evolved from silent stunts to modern mayhem",
+    "title": "Comedy Through the Ages",
+    "description": "Laughter and social commentary",
     "episodes": [
-      {
-        "id": 1,
-        "title": "Silent Stunts: Buster Keaton's Physics",
-        "subtitle": "Comedy meets danger in the 1920s",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/qJ2UOKb4GMWZKwWLaY8O0LXPSds.jpg",
-          "https://image.tmdb.org/t/p/w200/d7KwOCdNKQNiOOO9QGGEeD9vk9A.jpg",
-          "https://image.tmdb.org/t/p/w200/kxO8w5iKTl8J2qJOmUDBcHvK0Wz.jpg",
-          "https://image.tmdb.org/t/p/w200/8I9fCH6MmCKQcJZWg41yNMqlOUo.jpg"
-        ]
-      },
-      {
-        "id": 2,
-        "title": "French Connection: 70s Gritty Realism",
-        "subtitle": "Car chases get seriously violent",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/aW9yCwWhKCh2g3fArJZaS7RL54H.jpg",
-          "https://image.tmdb.org/t/p/w200/wWt7kszSzo1K8A3cNQS7WEJ3Ew2.jpg",
-          "https://image.tmdb.org/t/p/w200/3F2dJTGWGPVaYMlBlLCFHhWNJgp.jpg",
-          "https://image.tmdb.org/t/p/w200/3x7FPqgdOX1XO5QK5bz1bT6RTWJ.jpg"
-        ]
-      },
-      {
-        "id": 3,
-        "title": "Hong Kong Ballet: Woo & Wire Work",
-        "subtitle": "Action becomes poetry in motion",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/x2Bj7EYtjVIWTdA3xhJu0hNYTb5.jpg",
-          "https://image.tmdb.org/t/p/w200/7lhoOOI0Th5D7aaJ8xLBOnT6vLZ.jpg",
-          "https://image.tmdb.org/t/p/w200/yz5mTzWNfBJTEXHrNEY6Q6JkDRJ.jpg",
-          "https://image.tmdb.org/t/p/w200/2H4L8qJjJNfO1L1gSDFmINP7lLZ.jpg"
-        ]
-      },
-      {
-        "id": 4,
-        "title": "80s Excess: Die Hard Formula",
-        "subtitle": "Single location, maximum carnage",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/mc7MubOLcIw3MDvnuQFrO9psfCa.jpg",
-          "https://image.tmdb.org/t/p/w200/1lfEWSWz5kXayGDrYC1Kcr6lIWs.jpg",
-          "https://image.tmdb.org/t/p/w200/tggaN7ih7uFlKJLpuF4K7V0Bxdm.jpg",
-          "https://image.tmdb.org/t/p/w200/wjdFv7eiWW8U8s1yVAz4b1fVZz6.jpg"
-        ]
-      },
-      {
-        "id": 5,
-        "title": "Matrix Revolution: Bullet Time",
-        "subtitle": "Wire-fu meets digital effects",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
-          "https://image.tmdb.org/t/p/w200/pnXZZ2A5cRnN1Xk09JNKJSKdrSJ.jpg",
-          "https://image.tmdb.org/t/p/w200/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
-          "https://image.tmdb.org/t/p/w200/xMhwczv36TWDJ0PebT8nAGbQVX5.jpg"
-        ]
-      },
-      {
-        "id": 6,
-        "title": "Modern Mayhem: Mission Impossible Practical",
-        "subtitle": "Tom Cruise defies death and CGI",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/dTlnK73UnOZNgJhzJVDJO2cNGAZ.jpg",
-          "https://image.tmdb.org/t/p/w200/kfM7jCM8oWdjgUwOVdLHLHEYAK7.jpg",
-          "https://image.tmdb.org/t/p/w200/lFaR5rJ3lgZnD5OvMbXF7fhFUG0.jpg",
-          "https://image.tmdb.org/t/p/w200/45Y8J1F9SIj5zVTyF8FT4jx2H6f.jpg"
-        ]
-      }
+      {"id": 1, "title": "Silent Comedy Stars", "subtitle": "Chaplin, Keaton, and visual humor", "posters": []},
+      {"id": 2, "title": "Screwball Comedy: Battle of the Sexes", "subtitle": "Rapid-fire wit and romance", "posters": []},
+      {"id": 3, "title": "British Comedy: Ealing to Python", "subtitle": "Dry wit and social satire", "posters": []},
+      {"id": 4, "title": "Saturday Night Live Cinema", "subtitle": "TV comedy goes to movies", "posters": []},
+      {"id": 5, "title": "Judd Apatow & The New Comedy", "subtitle": "Bromance and improvisation", "posters": []}
+    ]
+  },
+  "4": {
+    "id": 4,
+    "title": "Women Directors",
+    "description": "Pioneering female voices in cinema",
+    "episodes": [
+      {"id": 1, "title": "Silent Era Pioneers: Weber & Pickford", "subtitle": "Early women behind the camera", "posters": []},
+      {"id": 2, "title": "Ida Lupino: The Forgotten Auteur", "subtitle": "Actor-director breaking barriers", "posters": []},
+      {"id": 3, "title": "Chantal Akerman: Radical Minimalism", "subtitle": "Feminist time and space", "posters": []},
+      {"id": 4, "title": "Jane Campion: Feminine Gothic", "subtitle": "New Zealand's poetic vision", "posters": []},
+      {"id": 5, "title": "Kathryn Bigelow: Action Auteur", "subtitle": "Redefining genre filmmaking", "posters": []},
+      {"id": 6, "title": "Contemporary Voices: Gerwig to Zhao", "subtitle": "New generation storytellers", "posters": []}
     ]
   },
   "5": {
     "id": 5,
-    "title": "Love Stories That Changed Movies",
-    "description": "Romantic films that redefined how cinema tells love stories",
+    "title": "International Masters",
+    "description": "Global cinematic visionaries",
     "episodes": [
-      {
-        "id": 1,
-        "title": "Casablanca: Romance in Wartime",
-        "subtitle": "Here's looking at you, kid becomes eternal",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/5K7cOHoay2mZusSLezBOY0Qxh8a.jpg",
-          "https://image.tmdb.org/t/p/w200/3dqeJBuLsaZDGGH7gHzaGLd4Qlh.jpg",
-          "https://image.tmdb.org/t/p/w200/4hs8oUY3P5F2hBwM1KGXozTWWmf.jpg",
-          "https://image.tmdb.org/t/p/w200/t0m1P8z8U5QjdKCzJkSTrOL6kms.jpg"
-        ]
-      },
-      {
-        "id": 2,
-        "title": "Annie Hall: Neurotic New York Love",
-        "subtitle": "Woody Allen rewrites romantic comedy",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/3fyDdKzSDxIWYtj1EtyeWqTNL8k.jpg",
-          "https://image.tmdb.org/t/p/w200/1I7T0Y7pCVYPVNMuKgUo3m2XOfG.jpg",
-          "https://image.tmdb.org/t/p/w200/tq4aRhvmFrmPo7kLhwDCnP2Y0N4.jpg",
-          "https://image.tmdb.org/t/p/w200/8K7JBxXbhvKXITtxvWdGWm5YrM4.jpg"
-        ]
-      },
-      {
-        "id": 3,
-        "title": "Before Trilogy: Real-Time Romance",
-        "subtitle": "Love evolves across three decades",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/5N3yQCwdMwHQCPPkUXF5iGaNL7M.jpg",
-          "https://image.tmdb.org/t/p/w200/qd8V9pL4JLxBVHVhcl5Z3ry1QLF.jpg",
-          "https://image.tmdb.org/t/p/w200/mZ57xHNlRz8v6Ej2y2bkE1gzNPq.jpg",
-          "https://image.tmdb.org/t/p/w200/vJHm7rZHVhCr1B5d8QQgEvs0w4r.jpg"
-        ]
-      },
-      {
-        "id": 4,
-        "title": "Eternal Sunshine: Memory and Love",
-        "subtitle": "Charlie Kaufman's relationship autopsy",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/5MwkWH9tYHv3mV9OdYTMR5qreIz.jpg",
-          "https://image.tmdb.org/t/p/w200/9Btq42XuwpE4X3yOVNJmOsJmEj9.jpg",
-          "https://image.tmdb.org/t/p/w200/7W0N7UssIlrJaHT8g1Z5CjNtXN8.jpg",
-          "https://image.tmdb.org/t/p/w200/83bwczJPNAD6QVTHYKqwUhJrlOo.jpg"
-        ]
-      },
-      {
-        "id": 5,
-        "title": "Her: Digital Age Intimacy",
-        "subtitle": "Falling for an operating system",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/lEIaL12hSkqqe83kgADkbUqEnvk.jpg",
-          "https://image.tmdb.org/t/p/w200/5Zev2bOT3LYPQy8JgQJ8CaXJlcR.jpg",
-          "https://image.tmdb.org/t/p/w200/bsj0t48b8PQHGVb3XHlKJhOBRw3.jpg",
-          "https://image.tmdb.org/t/p/w200/g8xLgV2A1D6g8y5GCwSJPQqjdNs.jpg"
-        ]
-      },
-      {
-        "id": 6,
-        "title": "Call Me By Your Name: Coming-of-Age Desire",
-        "subtitle": "Luca Guadagnino's summer awakening",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/tcfZlCaWybhNGXgTHJXF2DSmqbM.jpg",
-          "https://image.tmdb.org/t/p/w200/nHdgPf7nT3CKN3kBIk8QfOTvH5P.jpg",
-          "https://image.tmdb.org/t/p/w200/lLBctS4HgKwAgfzKQF7zGZJaabT.jpg",
-          "https://image.tmdb.org/t/p/w200/xnHZP1lWYt2JH1vCLb2YOWVPjML.jpg"
-        ]
-      }
+      {"id": 1, "title": "Kurosawa's Epic Vision", "subtitle": "Japanese cinema giant", "posters": []},
+      {"id": 2, "title": "Bergman's Psychological Landscapes", "subtitle": "Swedish introspection", "posters": []},
+      {"id": 3, "title": "Fellini's Surreal Italy", "subtitle": "Dreams and reality collide", "posters": []},
+      {"id": 4, "title": "Tarkovsky's Spiritual Cinema", "subtitle": "Soviet poetry in motion", "posters": []},
+      {"id": 5, "title": "Wong Kar-wai's Romantic Melancholy", "subtitle": "Hong Kong mood master", "posters": []},
+      {"id": 6, "title": "Bong Joon-ho's Genre Mastery", "subtitle": "Korean social commentary", "posters": []}
     ]
   },
   "6": {
     "id": 6,
-    "title": "When Movies Broke the Rules",
-    "description": "Revolutionary films that changed cinematic language forever",
+    "title": "Documentary Masters",
+    "description": "Truth and reality in cinema",
     "episodes": [
-      {
-        "id": 1,
-        "title": "Citizen Kane: Deep Focus Revolution",
-        "subtitle": "Orson Welles changes cinematic grammar",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/sav0jxhqiH0bPr2vZFU0Kjt2nZi.jpg",
-          "https://image.tmdb.org/t/p/w200/xt1JCaFR4bXIJ4rkwBfJsVBqKhM.jpg",
-          "https://image.tmdb.org/t/p/w200/5HmjJQF5KFYH2G8JEZy6lYhHJWb.jpg",
-          "https://image.tmdb.org/t/p/w200/zEHMOkq98kD4wH6PBWPZ5NVrE19.jpg"
-        ]
-      },
-      {
-        "id": 2,
-        "title": "Breathless: Jump Cut Freedom",
-        "subtitle": "Godard throws out continuity editing",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/md687zMQi3Y5H4oq5hF1gxX1kTz.jpg",
-          "https://image.tmdb.org/t/p/w200/oZhXnQM10Zf8Xp1QPOd6FJ7Dh7N.jpg",
-          "https://image.tmdb.org/t/p/w200/qSMaFQEV7Oe7y2sSYWYRFV3qJHF.jpg",
-          "https://image.tmdb.org/t/p/w200/tZw2k4Dm3nUGVcR8wKL5kZ7CZ6W.jpg"
-        ]
-      },
-      {
-        "id": 3,
-        "title": "2001: Science Fiction as Art",
-        "subtitle": "Kubrick makes space silent and beautiful",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg",
-          "https://image.tmdb.org/t/p/w200/w6aoK8tFT38GQxd1hxgKFEbm8Hj.jpg",
-          "https://image.tmdb.org/t/p/w200/sSq7QIlA8UtCg1lW8QqNc6fJXTR.jpg",
-          "https://image.tmdb.org/t/p/w200/0xpI8sF3wUb0JKk7gWdKSGh5YME.jpg"
-        ]
-      },
-      {
-        "id": 4,
-        "title": "Pulp Fiction: Non-Linear Storytelling",
-        "subtitle": "Tarantino shuffles narrative time",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/dM2w364MScsjFf8pfMbaWUcWrR.jpg",
-          "https://image.tmdb.org/t/p/w200/qi6Edc1OPcyENecGtz8TF0jUVKX.jpg",
-          "https://image.tmdb.org/t/p/w200/6ksm1sjKMFLbO7UY2i6G1ju9SML.jpg",
-          "https://image.tmdb.org/t/p/w200/6VxEvOF7QDovsG6ro9OVyjH6ZfL.jpg"
-        ]
-      },
-      {
-        "id": 5,
-        "title": "The Blair Witch Project: Found Footage Horror",
-        "subtitle": "$60,000 changes Hollywood forever",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/9XAoFOJZF2vNjh4aNmKlWlmm6hj.jpg",
-          "https://image.tmdb.org/t/p/w200/tHQzZPUddanHMq9UFTrJmI4Nx1H.jpg",
-          "https://image.tmdb.org/t/p/w200/1h6WnY88YJF4xwNUKRlI4wFV6Js.jpg",
-          "https://image.tmdb.org/t/p/w200/8EF8Zl8QvJx0GlU35WUFT3AY2fV.jpg"
-        ]
-      },
-      {
-        "id": 6,
-        "title": "Boyhood: Real-Time Growing Up",
-        "subtitle": "Linklater films actual childhood passing",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/uuUiK9gd6SJ6DfHVJ06FynLjPOp.jpg",
-          "https://image.tmdb.org/t/p/w200/5N3yQCwdMwHQCPPkUXF5iGaNL7M.jpg",
-          "https://image.tmdb.org/t/p/w200/vJHm7rZHVhCr1B5d8QQgEvs0w4r.jpg",
-          "https://image.tmdb.org/t/p/w200/rUaKtZE7tG52GrJxhWwXPXK6dA5.jpg"
-        ]
-      }
+      {"id": 1, "title": "Frederick Wiseman: Institutional Observer", "subtitle": "Fly-on-the-wall realism", "posters": []},
+      {"id": 2, "title": "Errol Morris: Truth Detective", "subtitle": "Investigation through film", "posters": []},
+      {"id": 3, "title": "Michael Moore: Provocateur Documentarian", "subtitle": "Political activism through cinema", "posters": []}
     ]
   },
   "7": {
     "id": 7,
-    "title": "Masters of Suspense",
-    "description": "How cinema perfected the art of tension and psychological thrills",
+    "title": "Contemporary Auteurs",
+    "description": "Modern visionary filmmakers",
     "episodes": [
-      {
-        "id": 1,
-        "title": "Hitchcock's Camera Psychology",
-        "subtitle": "Visual storytelling creates unbearable tension",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/7GsM4mtM0worCtIVeiQt28HieeN.jpg",
-          "https://image.tmdb.org/t/p/w200/bt7L6jtyEPkJaKzB7ROjMwbcfhj.jpg",
-          "https://image.tmdb.org/t/p/w200/8rr5DOaJ4aH6JWJCbhYo0tVKaAG.jpg",
-          "https://image.tmdb.org/t/p/w200/7gTyzJdcvOCm7AyB4nUOSKN6S1G.jpg"
-        ]
-      },
-      {
-        "id": 2,
-        "title": "Film Noir: Shadows & Paranoia",
-        "subtitle": "Post-war anxiety creates a new visual language",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/cGNNLkR6kOD2XKGHYIZbOPSwZzC.jpg",
-          "https://image.tmdb.org/t/p/w200/pJbEELGb9gKNbIk7SfpLELRGP3E.jpg",
-          "https://image.tmdb.org/t/p/w200/d6GxmqU6YHUGdR3b9sWBFZF2z8F.jpg",
-          "https://image.tmdb.org/t/p/w200/qj7GtMhGmzqpKYmTqJGQ4bhQPl7.jpg"
-        ]
-      },
-      {
-        "id": 3,
-        "title": "Giallo: Italian Horror Aesthetics",
-        "subtitle": "Argento and Bava paint fear in vivid colors",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/x8OXtDBqNPYSJp61zIeBQ7lJ7Z1.jpg",
-          "https://image.tmdb.org/t/p/w200/vA8M7mWU4k6k4VWYj5AaUWPCMEc.jpg",
-          "https://image.tmdb.org/t/p/w200/zL4GVOsN2IWwV5YxdvVJJZX2eSB.jpg",
-          "https://image.tmdb.org/t/p/w200/w4M6FbLsUU2F1Rz4zJl0M5P4Fz1.jpg"
-        ]
-      },
-      {
-        "id": 4,
-        "title": "Cronenberg's Body Horror",
-        "subtitle": "Technology transforms flesh into nightmare",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/fCayJrkfRaCRCTh8GqN30f8oyQF.jpg",
-          "https://image.tmdb.org/t/p/w200/d8gUHhUvnSlMKwrjZuBIXDZdLQo.jpg",
-          "https://image.tmdb.org/t/p/w200/2IxC4vJYabEt7NdOtIpfSbTeBhF.jpg",
-          "https://image.tmdb.org/t/p/w200/y9Sw8v3O2DWfwdCb1kPEfg8FuYj.jpg"
-        ]
-      },
-      {
-        "id": 5,
-        "title": "Modern Psychological Thrillers",
-        "subtitle": "Mind games replace monster movies",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg",
-          "https://image.tmdb.org/t/p/w200/7TWzlhJlp8V8pD7VN6DTCGCeRiB.jpg",
-          "https://image.tmdb.org/t/p/w200/lNaNiDJCoMw7lRJVK9hpKJv47Rb.jpg",
-          "https://image.tmdb.org/t/p/w200/3nITNEHMhV0RkkRwmNdRMrqp0kk.jpg"
-        ]
-      },
-      {
-        "id": 6,
-        "title": "Elevated Horror: A24 & Beyond",
-        "subtitle": "Art house meets mainstream horror",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/dZs8FjUWVN0WZQk1A6Ql0fxKrL9.jpg",
-          "https://image.tmdb.org/t/p/w200/7OzpZqWkqQ8LU6e2qP0LJgN7G2b.jpg",
-          "https://image.tmdb.org/t/p/w200/4PZ2W2Lp6xNx3HLCL5X1EaS1mL4.jpg",
-          "https://image.tmdb.org/t/p/w200/vUVqzQ5rNqn0K6LcfhVPPMq85zj.jpg"
-        ]
-      }
+      {"id": 1, "title": "The Coen Brothers: Genre Pastiche & Visual Wit", "subtitle": "Postmodern storytellers", "posters": []},
+      {"id": 2, "title": "Christopher Nolan: Time, Memory & IMAX Spectacle", "subtitle": "Puzzle box narratives", "posters": []},
+      {"id": 3, "title": "Denis Villeneuve: Sci-Fi Atmosphere & Scale", "subtitle": "Thoughtful spectacle", "posters": []},
+      {"id": 4, "title": "Jordan Peele: Horror Through Social Commentary", "subtitle": "Genre as activism", "posters": []}
     ]
   },
   "8": {
     "id": 8,
-    "title": "Comedy Through the Ages",
-    "description": "From slapstick to satire: how movies made us laugh",
+    "title": "New Waves",
+    "description": "Revolutionary movements that changed cinema",
     "episodes": [
-      {
-        "id": 1,
-        "title": "Silent Comedy Gods",
-        "subtitle": "Chaplin, Keaton, and Lloyd perfect physical humor",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/qJ2UOKb4GMWZKwWLaY8O0LXPSds.jpg",
-          "https://image.tmdb.org/t/p/w200/d7KwOCdNKQNiOOO9QGGEeD9vk9A.jpg",
-          "https://image.tmdb.org/t/p/w200/kxO8w5iKTl8J2qJOmUDBcHvK0Wz.jpg",
-          "https://image.tmdb.org/t/p/w200/8I9fCH6MmCKQcJZWg41yNMqlOUo.jpg"
-        ]
-      },
-      {
-        "id": 2,
-        "title": "Screwball Comedy: Battle of the Sexes",
-        "subtitle": "Fast-talking romance in the Great Depression",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/fLgZQi3qf2p9Ue5G7ZFwJ7Kj2nT.jpg",
-          "https://image.tmdb.org/t/p/w200/mFg8pGfPGsUdyMr2Xp6X7VYK2fJ.jpg",
-          "https://image.tmdb.org/t/p/w200/h4J8D1cJ6K3O5tL3FJtY7wNPp3R.jpg",
-          "https://image.tmdb.org/t/p/w200/2K7uN6RfQhR7pL2U6l3cNxP4hOY.jpg"
-        ]
-      },
-      {
-        "id": 3,
-        "title": "British Comedy: Ealing to Python",
-        "subtitle": "Understated wit becomes surreal absurdity",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/7E8p1VH4Z6U4Td5f8z4m9l3a5n3.jpg",
-          "https://image.tmdb.org/t/p/w200/yE8VtjBnP9qCLZgHJx3m2L5pOi2.jpg",
-          "https://image.tmdb.org/t/p/w200/5zR7BnX4m4pP6j8K7l3b3TK6Ap4.jpg",
-          "https://image.tmdb.org/t/p/w200/9h3v8ZrDy8bJbNRcJKJ7tLp2L5P.jpg"
-        ]
-      },
-      {
-        "id": 4,
-        "title": "Saturday Night Live Cinema",
-        "subtitle": "Television comedy conquers the big screen",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/pzJN9O9LHLsI8hUZ2v9qwfb8R8s.jpg",
-          "https://image.tmdb.org/t/p/w200/6kNF8wEhI2fFHKwJ1J9V4L8q2wK.jpg",
-          "https://image.tmdb.org/t/p/w200/3Q8m6v2U4tG9Bt5rV7N5X8O2q8Z.jpg",
-          "https://image.tmdb.org/t/p/w200/u5l9J6F4N3K8q5X7P2k5pS2M3n1.jpg"
-        ]
-      },
-      {
-        "id": 5,
-        "title": "Judd Apatow & The New Comedy",
-        "subtitle": "Improvisation meets emotional truth",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/r7fNRtCb6l3a6H1K2m4Q8i8q6L4.jpg",
-          "https://image.tmdb.org/t/p/w200/8Q4X7t3P3N3k4t3z3D3h3x3M3O3.jpg",
-          "https://image.tmdb.org/t/p/w200/b3r2U8o1f2G9s3P1F2R1J2S1l4P.jpg",
-          "https://image.tmdb.org/t/p/w200/3f4h5T6q7w8Y1x2b3A4y5z6q7s8.jpg"
-        ]
-      },
-      {
-        "id": 6,
-        "title": "Jordan Peele: Horror-Comedy Hybrid",
-        "subtitle": "Social satire with genuine scares",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/dZs8FjUWVN0WZQk1A6Ql0fxKrL9.jpg",
-          "https://image.tmdb.org/t/p/w200/fEyHpOa3yzj4K9F9L8P1J7i9M8K.jpg",
-          "https://image.tmdb.org/t/p/w200/lE2u8S1m2u8P9X3L9J2q4h3v8z1.jpg",
-          "https://image.tmdb.org/t/p/w200/v3M5n6T8q2F1n8L4j7s3K1a2B9x.jpg"
-        ]
-      }
+      {"id": 1, "title": "French New Wave: Breathless Revolution", "subtitle": "Godard and Truffaut's innovation", "posters": []},
+      {"id": 2, "title": "Italian Neorealism: Truth in Cinema", "subtitle": "Post-war authenticity", "posters": []},
+      {"id": 3, "title": "British Kitchen Sink & Social Realism", "subtitle": "Working class stories", "posters": []},
+      {"id": 4, "title": "Japanese New Wave: Oshima & Imamura", "subtitle": "Breaking tradition", "posters": []},
+      {"id": 5, "title": "Czech New Wave: Behind Iron Curtain", "subtitle": "Political allegory and freedom", "posters": []},
+      {"id": 6, "title": "German New Cinema: Herzog & Fassbinder", "subtitle": "Post-war artistic renewal", "posters": []}
     ]
   },
   "9": {
     "id": 9,
-    "title": "Women Behind the Camera",
-    "description": "Female directors who shaped cinema history",
+    "title": "German Cinema Heritage",
+    "description": "From Weimar to Hollywood influence",
     "episodes": [
-      {
-        "id": 1,
-        "title": "Silent Era Pioneers: Weber & Pickford",
-        "subtitle": "Women controlled early Hollywood",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/7K8q5M8L9t2a8s3D1E8H6h7j8K9.jpg",
-          "https://image.tmdb.org/t/p/w200/4j7k8L9M2q3s4T5v6W7X8y9Z1A2.jpg",
-          "https://image.tmdb.org/t/p/w200/b3C4d5E6F7g8H9i1J2K3L4m5N6o.jpg",
-          "https://image.tmdb.org/t/p/w200/P7q8R9s1T2U3v4W5x6Y7z8A9B1c.jpg"
-        ]
-      },
-      {
-        "id": 2,
-        "title": "Ida Lupino: The Forgotten Auteur",
-        "subtitle": "Actress becomes fearless filmmaker",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/D2e3F4g5H6i7J8K9L1m2N3o4P5q.jpg",
-          "https://image.tmdb.org/t/p/w200/6r7S8t9U1v2W3x4Y5z6A7B8c9D1.jpg",
-          "https://image.tmdb.org/t/p/w200/E2f3G4h5I6j7K8L9m1N2o3P4q5R.jpg",
-          "https://image.tmdb.org/t/p/w200/S6t7U8v9W1x2Y3z4A5B6c7D8e9F.jpg"
-        ]
-      },
-      {
-        "id": 3,
-        "title": "Chantal Akerman: Radical Minimalism",
-        "subtitle": "Belgian filmmaker redefines screen time",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/1F2g3H4i5J6k7L8m9N1o2P3q4R5.jpg",
-          "https://image.tmdb.org/t/p/w200/S5t6U7v8W9x1Y2z3A4B5c6D7e8F.jpg",
-          "https://image.tmdb.org/t/p/w200/9g1H2i3J4k5L6m7N8o9P1q2R3s4.jpg",
-          "https://image.tmdb.org/t/p/w200/T4u5V6w7X8y9Z1A2B3c4D5e6F7g.jpg"
-        ]
-      },
-      {
-        "id": 4,
-        "title": "Jane Campion: Feminine Gothic",
-        "subtitle": "New Zealand poet of female desire",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/8H9i1J2k3L4m5N6o7P8q9R1s2T3.jpg",
-          "https://image.tmdb.org/t/p/w200/u4V5w6X7y8Z9a1B2c3D4e5F6g7H.jpg",
-          "https://image.tmdb.org/t/p/w200/8I9j1K2l3M4n5O6p7Q8r9S1t2U3.jpg",
-          "https://image.tmdb.org/t/p/w200/V4w5x6Y7z8A9b1C2d3E4f5G6h7I.jpg"
-        ]
-      },
-      {
-        "id": 5,
-        "title": "Kathryn Bigelow: Action Auteur",
-        "subtitle": "First woman to win Best Director Oscar",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/5W6x7Y8z9A1b2C3d4E5f6G7h8I9.jpg",
-          "https://image.tmdb.org/t/p/w200/j1K2l3M4n5O6p7Q8r9S1t2U3v4W.jpg",
-          "https://image.tmdb.org/t/p/w200/5x6Y7z8A9B1c2D3e4F5g6H7i8J9.jpg",
-          "https://image.tmdb.org/t/p/w200/k1L2m3N4o5P6q7R8s9T1u2V3w4X.jpg"
-        ]
-      },
-      {
-        "id": 6,
-        "title": "Contemporary Voices: Gerwig to Zhao",
-        "subtitle": "New generation claims cinema's future",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/y7Z8a9B1c2D3e4F5g6H7i8J9k1L.jpg",
-          "https://image.tmdb.org/t/p/w200/2M3n4O5p6Q7r8S9t1U2v3W4x5Y6.jpg",
-          "https://image.tmdb.org/t/p/w200/z7A8b9C1d2E3f4G5h6I7j8K9l1M.jpg",
-          "https://image.tmdb.org/t/p/w200/3n4O5P6q7R8s9T1u2V3w4X5y6Z7.jpg"
-        ]
-      }
+      {"id": 1, "title": "German Expressionism & Silent Era", "subtitle": "Visual psychology emerges", "posters": []},
+      {"id": 2, "title": "Murnau's Camera Movement Revolution", "subtitle": "Unchaining the camera", "posters": []},
+      {"id": 3, "title": "Fritz Lang's Architectural Psychology", "subtitle": "Space as character", "posters": []},
+      {"id": 4, "title": "From Weimar to Hollywood: The Émigré Influence", "subtitle": "European artistry in America", "posters": []}
     ]
   },
   "10": {
     "id": 10,
-    "title": "Documentary Revolution",
-    "description": "How non-fiction film became an art form",
+    "title": "Technical Evolution",
+    "description": "How cinema technology shapes storytelling",
     "episodes": [
-      {
-        "id": 1,
-        "title": "Flaherty's Nanook: Birth of Documentary",
-        "subtitle": "Staging reality to reveal truth",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/A8B9c1D2e3F4g5H6i7J8k9L1m2N.jpg",
-          "https://image.tmdb.org/t/p/w200/3O4p5Q6r7S8t9U1v2W3x4Y5z6A7.jpg",
-          "https://image.tmdb.org/t/p/w200/B8c9D1e2F3g4H5i6J7k8L9m1N2o.jpg",
-          "https://image.tmdb.org/t/p/w200/4P5q6R7s8T9u1V2w3X4y5Z6a7B8.jpg"
-        ]
-      },
-      {
-        "id": 2,
-        "title": "Cinéma Vérité: Portable Truth",
-        "subtitle": "Lightweight cameras capture spontaneous life",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/c9D1e2F3g4H5i6J7k8L9m1N2o3P.jpg",
-          "https://image.tmdb.org/t/p/w200/5Q6r7S8t9U1v2W3x4Y5z6A7B8c9.jpg",
-          "https://image.tmdb.org/t/p/w200/D1e2F3g4H5i6J7k8L9m1N2o3P4q.jpg",
-          "https://image.tmdb.org/t/p/w200/6R7s8T9u1V2w3X4y5Z6a7B8c9D1.jpg"
-        ]
-      },
-      {
-        "id": 3,
-        "title": "Frederick Wiseman: Institutional Observer",
-        "subtitle": "America examined through its institutions",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/e2F3g4H5i6J7k8L9m1N2o3P4q5R.jpg",
-          "https://image.tmdb.org/t/p/w200/7S8t9U1v2W3x4Y5z6A7B8c9D1e2.jpg",
-          "https://image.tmdb.org/t/p/w200/F3g4H5i6J7k8L9m1N2o3P4q5R6s.jpg",
-          "https://image.tmdb.org/t/p/w200/8T9u1V2w3X4y5Z6a7B8c9D1e2F3.jpg"
-        ]
-      },
-      {
-        "id": 4,
-        "title": "Errol Morris: Truth Detective",
-        "subtitle": "Stylized techniques reveal hidden realities",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/g4H5i6J7k8L9m1N2o3P4q5R6s7T.jpg",
-          "https://image.tmdb.org/t/p/w200/9U1v2W3x4Y5z6A7B8c9D1e2F3g4.jpg",
-          "https://image.tmdb.org/t/p/w200/H5i6J7k8L9m1N2o3P4q5R6s7T8u.jpg",
-          "https://image.tmdb.org/t/p/w200/1V2w3X4y5Z6a7B8c9D1e2F3g4H5.jpg"
-        ]
-      },
-      {
-        "id": 5,
-        "title": "Michael Moore: Provocateur Documentarian",
-        "subtitle": "Entertainment meets political activism",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/i6J7k8L9m1N2o3P4q5R6s7T8u9V.jpg",
-          "https://image.tmdb.org/t/p/w200/2W3x4Y5z6A7B8c9D1e2F3g4H5i6.jpg",
-          "https://image.tmdb.org/t/p/w200/J7k8L9m1N2o3P4q5R6s7T8u9V1w.jpg",
-          "https://image.tmdb.org/t/p/w200/3X4y5Z6a7B8c9D1e2F3g4H5i6J7.jpg"
-        ]
-      },
-      {
-        "id": 6,
-        "title": "Digital Age Docs: Streaming Reality",
-        "subtitle": "Netflix changes documentary consumption",
-        "posters": [
-          "https://image.tmdb.org/t/p/w200/k8L9m1N2o3P4q5R6s7T8u9V1w2X.jpg",
-          "https://image.tmdb.org/t/p/w200/4Y5z6A7B8c9D1e2F3g4H5i6J7k8.jpg",
-          "https://image.tmdb.org/t/p/w200/L9m1N2o3P4q5R6s7T8u9V1w2X3y.jpg",
-          "https://image.tmdb.org/t/p/w200/5Z6a7B8c9D1e2F3g4H5i6J7k8L9.jpg"
-        ]
-      }
+      {"id": 1, "title": "Hitchcock's Camera Psychology", "subtitle": "Visual manipulation master", "posters": []},
+      {"id": 2, "title": "Birth of Cinema: Méliès to Griffith", "subtitle": "Magic and narrative emerge", "posters": []},
+      {"id": 3, "title": "Studio System & Star Power", "subtitle": "Hollywood's golden age machine", "posters": []},
+      {"id": 4, "title": "Technicolor Revolution", "subtitle": "Color transforms cinema", "posters": []},
+      {"id": 5, "title": "Digital Revolution Begins", "subtitle": "CGI changes everything", "posters": []},
+      {"id": 6, "title": "Virtual Production Revolution", "subtitle": "LED walls and real-time rendering", "posters": []},
+      {"id": 7, "title": "AI & the Future of Filmmaking", "subtitle": "Artificial intelligence enters cinema", "posters": []}
+    ]
+  },
+  "11": {
+    "id": 11,
+    "title": "Decades",
+    "description": "Cinema through the decades",
+    "episodes": [
+      {"id": 1, "title": "1970s: The Auteur Renaissance", "subtitle": "Directors take control", "posters": []},
+      {"id": 2, "title": "1980s: Blockbuster Revolution", "subtitle": "High concept and spectacle", "posters": []},
+      {"id": 3, "title": "1990s: Independent Renaissance", "subtitle": "Sundance and artistic freedom", "posters": []},
+      {"id": 4, "title": "2000s: The Streaming Wars", "subtitle": "Digital distribution emerges", "posters": []},
+      {"id": 5, "title": "2010s: Global Cinema Rising", "subtitle": "International voices gain prominence", "posters": []}
+    ]
+  },
+  "12": {
+    "id": 12,
+    "title": "Historical Periods",
+    "description": "How cinema reflects and shapes history",
+    "episodes": [
+      {"id": 1, "title": "WWII & Cinema's War Effort", "subtitle": "Movies as propaganda and art", "posters": []},
+      {"id": 2, "title": "Independent Film Renaissance", "subtitle": "Breaking free from studios", "posters": []},
+      {"id": 3, "title": "International Cinema Breaks Through", "subtitle": "World cinema reaches America", "posters": []},
+      {"id": 4, "title": "Franchise Filmmaking Dominance", "subtitle": "Sequels and shared universes", "posters": []},
+      {"id": 5, "title": "Streaming Changes Everything", "subtitle": "Netflix revolutionizes distribution", "posters": []},
+      {"id": 6, "title": "Marvel & the Cinematic Universe", "subtitle": "Superhero storytelling dominates", "posters": []},
+      {"id": 7, "title": "A24 & Independent Prestige", "subtitle": "Art house meets commercial success", "posters": []},
+      {"id": 8, "title": "International Streaming Wars", "subtitle": "Global content competition", "posters": []},
+      {"id": 9, "title": "Post-Pandemic Cinema", "subtitle": "How COVID changed moviegoing", "posters": []}
     ]
   }
 }
