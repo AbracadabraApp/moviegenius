@@ -5,7 +5,7 @@
  * Similar functionality to PersonCard but with different visual presentation.
  * Follows the same pattern as MovieHeader.
  */
-import { Heart, Bookmark } from 'lucide-react/icons';
+import { Heart, Bookmark } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { FavoritesManager } from './FavoritesManager';
 

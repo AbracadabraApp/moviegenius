@@ -1,7 +1,7 @@
 // components/NavBar.js
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import { Clapperboard, Sparkles, User } from 'lucide-react/icons';
+import { Clapperboard, Sparkles, User } from 'lucide-react';
 import { shouldShowPhoneFrame } from '../lib/platform';
 
 export default function NavBar() {

@@ -6,7 +6,7 @@ import PhoneFrame from '../../components/PhoneFrame';
 import PersonHeader from '../../components/PersonHeader';
 import MediaCard from '../../components/MediaCard';
 import AskInputBar from '../../components/AskInputBar';
-import { ArrowLeft, Heart, Bookmark } from 'lucide-react/icons';
+import { ArrowLeft, Heart, Bookmark } from 'lucide-react';
 import { FavoritesManager } from '../../components/FavoritesManager';
 import { underlineProperNames } from '../../lib/proper-names';
 import loadingMessages from '../../data/loading-messages.json';
