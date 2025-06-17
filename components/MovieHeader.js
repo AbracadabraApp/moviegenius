@@ -4,7 +4,7 @@
  * Large format movie header for detail pages with flat design.
  * Similar functionality to MediaCard but with different visual presentation.
  */
-import { Heart, Bookmark } from 'lucide-react/icons';
+import { Heart, Bookmark } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { FavoritesManager } from './FavoritesManager';
 // import useStreamingData from '../hooks/useStreamingData'; // Stubbed out

@@ -1,7 +1,7 @@
 // components/AskInputBar.js
 import React, { useState, useRef, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { CircleChevronLeft, CircleChevronRight } from 'lucide-react/icons';
+import { CircleChevronLeft, CircleChevronRight } from 'lucide-react';
 
 export default function AskInputBar({
   placeholder = 'Ask me about movies...',

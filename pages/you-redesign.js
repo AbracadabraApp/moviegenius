@@ -4,7 +4,7 @@ import AskInputBar from '../components/AskInputBar';
 import PlatformSelector from '../components/PlatformSelector';
 import MediaCard from '../components/MediaCard';
 import CinematicProfile from '../components/CinematicProfile';
-import { Heart, Bookmark, ChevronDown, ChevronRight, Tv2, AlertTriangle } from 'lucide-react/icons';
+import { Heart, Bookmark, ChevronDown, ChevronRight, Tv2, AlertTriangle } from 'lucide-react';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 
