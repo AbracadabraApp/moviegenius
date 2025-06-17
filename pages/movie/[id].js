@@ -6,9 +6,7 @@ import PhoneFrame from '../../components/PhoneFrame';
 import MediaCard from '../../components/MediaCard';
 import MovieHeader from '../../components/MovieHeader';
 import AskInputBar from '../../components/AskInputBar';
-import ArrowLeft from 'lucide-react/dist/esm/icons/arrow-left';
-import Heart from 'lucide-react/dist/esm/icons/heart';
-import Bookmark from 'lucide-react/dist/esm/icons/bookmark';
+import { ArrowLeft, Heart, Bookmark } from 'lucide-react/icons';
 import { FavoritesManager } from '../../components/FavoritesManager';
 import dynamic from 'next/dynamic';
 

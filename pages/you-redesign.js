@@ -4,12 +4,7 @@ import AskInputBar from '../components/AskInputBar';
 import PlatformSelector from '../components/PlatformSelector';
 import MediaCard from '../components/MediaCard';
 import CinematicProfile from '../components/CinematicProfile';
-import Heart from 'lucide-react/dist/esm/icons/heart';
-import Bookmark from 'lucide-react/dist/esm/icons/bookmark';
-import ChevronDown from 'lucide-react/dist/esm/icons/chevron-down';
-import ChevronRight from 'lucide-react/dist/esm/icons/chevron-right';
-import Tv2 from 'lucide-react/dist/esm/icons/tv-2';
-import AlertTriangle from 'lucide-react/dist/esm/icons/alert-triangle';
+import { Heart, Bookmark, ChevronDown, ChevronRight, Tv2, AlertTriangle } from 'lucide-react/icons';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 

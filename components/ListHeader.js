@@ -4,8 +4,7 @@
  * Large format list header for detail pages with flat design.
  * Follows the same pattern as MovieHeader and PersonHeader.
  */
-import Heart from 'lucide-react/dist/esm/icons/heart';
-import Bookmark from 'lucide-react/dist/esm/icons/bookmark';
+import { Heart, Bookmark } from 'lucide-react/icons';
 import { useState, useEffect } from 'react';
 import { FavoritesManager } from './FavoritesManager';
 

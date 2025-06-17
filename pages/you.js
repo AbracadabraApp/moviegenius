@@ -4,8 +4,7 @@ import AskInputBar from '../components/AskInputBar';
 import SelectedPlatforms from '../components/SelectedPlatforms';
 import MediaCard from '../components/MediaCard';
 import PlatformSelector from '../components/PlatformSelector';
-import Heart from 'lucide-react/dist/esm/icons/heart';
-import Bookmark from 'lucide-react/dist/esm/icons/bookmark';
+import { Heart, Bookmark } from 'lucide-react/icons';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 

@@ -1,0 +1,103 @@
+{
+  "system": "genius",
+  "themeId": 4,
+  "seriesId": 1,
+  "episodeId": 1,
+  "theme": {
+    "id": 4,
+    "title": "Filmmaking",
+    "description": "The craft and technology of cinema",
+    "slug": "filmmaking"
+  },
+  "series": {
+    "id": 1,
+    "title": "Technical Evolution",
+    "description": "How cinema technology shapes storytelling"
+  },
+  "episode": {
+    "id": 1,
+    "title": "Hitchcock's Camera Psychology",
+    "subtitle": "Visual manipulation master"
+  },
+  "content": {
+    "opener": "Hitchcock's Camera Psychology represents a significant development in cinema, exploring how filmmakers have approached this subject through innovative techniques and compelling storytelling.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "Hitchcock's Camera Psychology represents a fascinating chapter in cinema history, exploring themes and techniques that have shaped how we understand film as an art form. This episode examines the key developments, influential filmmakers, and cultural context that defined this important aspect of cinema. Through careful analysis of specific films and their impact, we'll explore how these works continue to influence contemporary filmmaking and our understanding of visual storytelling."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Example Film",
+            "year": 1970,
+            "slug": "A representative film that exemplifies the themes discussed in this episode",
+            "tmdb_id": 12345,
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did the techniques discussed in Hitchcock's Camera Psychology influence later filmmakers?"
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Technical and Artistic Innovations"
+      },
+      {
+        "type": "text",
+        "content": "The technical innovations explored in this episode demonstrate how filmmaking craft serves storytelling purposes. By examining specific cinematographic, editorial, and sound design choices, we can understand how these films achieved their distinctive aesthetic and emotional impact. These techniques became influential templates that subsequent filmmakers would adopt, adapt, and evolve for their own creative purposes."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Another Example",
+            "year": 1975,
+            "slug": "Additional film that demonstrates the evolution of these techniques",
+            "tmdb_id": 67890,
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "What specific technical innovations made these films distinctive?",
+          "How do these techniques appear in contemporary cinema?"
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Related Film 1",
+          "year": 1980,
+          "slug": "A film that connects to the themes explored in this episode",
+          "tmdb_id": 11111,
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Related Film 2",
+          "year": 1985,
+          "slug": "Another relevant film for further exploration",
+          "tmdb_id": 22222,
+          "poster_url": null,
+          "streaming": null
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-17T18:48:56.155Z",
+  "version": "3.0",
+  "type": "educational",
+  "heroImage": "/images/hero/theme-4-filmmaking/series-1-technical-evolution//1-hitchcock-s-camera-psychology.jpg"
+}

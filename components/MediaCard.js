@@ -21,8 +21,7 @@
  *   initialPoster="/images/matrix.jpg" 
  * />
  */
-import Heart from 'lucide-react/dist/esm/icons/heart';
-import Bookmark from 'lucide-react/dist/esm/icons/bookmark';
+import { Heart, Bookmark } from 'lucide-react/icons';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';

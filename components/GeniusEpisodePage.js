@@ -23,20 +23,33 @@ const SERIES_DIRS = {
 
 // Function to get hero image with intelligent directory-based fallback
 function getHeroImage(themeId, seriesId, episodeId) {
-  // Episode-specific hero images for series 1/1
+  // Episode-specific hero images for series 1/1 (Classic Film Noir)
   if (themeId === '1' && seriesId === '1') {
     const episodeImages = {
       '1': '1-german-expressionism.jpg',
       '2': '2-novel.jpg', 
-      '3': '3-urban-anxiety.jpg',
-      '4': '4-femme-fatales.jpg',
+      '3': '3-mitchum.jpg',
+      '4': '4-femme-fateles.jpg',
       '5': '5-moral-ambiguity.jpg',
-      '6': '6-noir-legacy.jpg'
+      '6': '6-noirs-legacy.jpg'
     };
     
     const imageFile = episodeImages[episodeId];
     if (imageFile) {
       return `/images/hero/theme-1-noir/series-1-classic/${imageFile}`;
+    }
+  }
+  
+  // Episode-specific hero images for series 1/2 (Suspense & Horror)
+  if (themeId === '1' && seriesId === '2') {
+    const episodeImages = {
+      '1': '1-giallo.jpg',
+      '2': '2-cronenberG.jpg'
+    };
+    
+    const imageFile = episodeImages[episodeId];
+    if (imageFile) {
+      return `/images/hero/theme-1-genres/series-2-horror/${imageFile}`;
     }
   }
   
