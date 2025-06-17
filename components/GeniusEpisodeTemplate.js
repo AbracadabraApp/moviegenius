@@ -4,7 +4,8 @@ import { useRouter } from 'next/router';
 import { ChevronLeft, Clock, Film } from 'lucide-react';
 import MediaCard from './MediaCard';
 import AskInputBar from './AskInputBar';
-import { processMovieLinksForReact, extractEpisodeMovies } from '../lib/simple-entity-linker';
+import { processEntityLinksForReact, extractEpisodeMovies } from '../lib/enhanced-entity-linker';
+import { extractEpisodePeople, getEpisodePeopleSummary } from '../lib/episode-people-extractor';
 import LinkedText from './LinkedText';
 
 export default function GeniusEpisodeTemplate({ 
@@ -15,12 +16,38 @@ export default function GeniusEpisodeTemplate({
   const router = useRouter();
   const [scrollProgress, setScrollProgress] = useState(0);
   const [enableLinking, setEnableLinking] = useState(true);
+  const [episodePeople, setEpisodePeople] = useState(null);
+  const [peopleLoading, setPeopleLoading] = useState(true);
   
   const { theme, series, episode, episodeContent } = episodeData;
   const content = episodeContent;
   
   // Extract all movies from episode for linking
   const episodeMovies = extractEpisodeMovies(content);
+
+  // Extract people from episode movies
+  useEffect(() => {
+    async function loadEpisodePeople() {
+      try {
+        setPeopleLoading(true);
+        const people = await extractEpisodePeople(content);
+        setEpisodePeople(people);
+        
+        // Log people summary for debugging
+        const summary = getEpisodePeopleSummary(people);
+        console.log('Episode people loaded:', summary);
+      } catch (error) {
+        console.error('Failed to load episode people:', error);
+        setEpisodePeople({ directors: [], actors: [], writers: [], allPeople: [] });
+      } finally {
+        setPeopleLoading(false);
+      }
+    }
+    
+    if (content) {
+      loadEpisodePeople();
+    }
+  }, [content]);
 
   // Track scroll progress for reading indicator
   useEffect(() => {
@@ -82,7 +109,7 @@ export default function GeniusEpisodeTemplate({
                 <div style={styles.textSection}>
                   <p style={styles.paragraph}>
                     <LinkedText 
-                      parts={processMovieLinksForReact(section.content, episodeMovies)}
+                      parts={processEntityLinksForReact(section.content, episodeMovies, episodePeople)}
                       enableLinking={enableLinking}
                       linkStyle={{
                         color: 'inherit',
