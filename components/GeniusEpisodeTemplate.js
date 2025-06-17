@@ -4,6 +4,8 @@ import { useRouter } from 'next/router';
 import { ChevronLeft, Clock, Film } from 'lucide-react';
 import MediaCard from './MediaCard';
 import AskInputBar from './AskInputBar';
+import { processMovieLinksForReact, extractEpisodeMovies } from '../lib/simple-entity-linker';
+import LinkedText from './LinkedText';
 
 export default function GeniusEpisodeTemplate({ 
   episodeData, 
@@ -12,9 +14,13 @@ export default function GeniusEpisodeTemplate({
 }) {
   const router = useRouter();
   const [scrollProgress, setScrollProgress] = useState(0);
+  const [enableLinking, setEnableLinking] = useState(true);
   
   const { theme, series, episode, episodeContent } = episodeData;
   const content = episodeContent;
+  
+  // Extract all movies from episode for linking
+  const episodeMovies = extractEpisodeMovies(content);
 
   // Track scroll progress for reading indicator
   useEffect(() => {
@@ -68,101 +74,83 @@ export default function GeniusEpisodeTemplate({
 
       {/* Content Sections */}
       <main style={styles.content}>
+        
         {content?.sections?.map((section, index) => {
-          // Extract explore_further prompts to interleave
-          const exploreFurtherSection = content?.sections?.find(s => s.type === 'explore_further');
-          const prompts = exploreFurtherSection?.prompts || [];
-          
-          // Map subheads to prompts
-          const subheadPromptMap = {
-            'Directors and Style': prompts[0],
-            'Technical Innovation': prompts[1], 
-            'Genre Impact': prompts[2]
-          };
-          
           return (
             <section key={index} style={styles.section}>
               {section.type === 'text' && (
                 <div style={styles.textSection}>
                   <p style={styles.paragraph}>
-                    {section.content}
+                    <LinkedText 
+                      parts={processMovieLinksForReact(section.content, episodeMovies)}
+                      enableLinking={enableLinking}
+                      linkStyle={{
+                        color: 'inherit',
+                        textDecoration: 'underline',
+                        textDecorationColor: '#d4af37',
+                        textDecorationThickness: '1px',
+                        textUnderlineOffset: '2px',
+                        fontWeight: '500'
+                      }}
+                    />
                   </p>
                 </div>
               )}
               
               {section.type === 'subhead' && (
-                <>
-                  <div style={styles.subheadSection}>
-                    <div style={styles.subheadDivider} />
-                    <h3 style={styles.subheadTitle}>{section.content}</h3>
-                    <div style={styles.subheadUnderline} />
-                  </div>
-                </>
+                <div style={styles.subheadSection}>
+                  <div style={styles.subheadDivider} />
+                  <h3 style={styles.subheadTitle}>{section.content}</h3>
+                  <div style={styles.subheadUnderline} />
+                </div>
               )}
               
               {section.type === 'movies' && (
-                <>
-                  <div style={styles.movieSection}>
-                    <div style={styles.movieSectionHeader}>
-                      <div style={styles.sectionDivider} />
-                      <span style={styles.sectionLabel}>Featured Films</span>
-                      <div style={styles.sectionDivider} />
-                    </div>
-                    <div style={styles.movieGrid}>
-                      {section.movies.map((movie, movieIndex) => (
-                        <div key={movieIndex} style={styles.movieCardWrapper}>
-                          <MediaCard
-                            title={movie.title}
-                            year={movie.year}
-                            initialSlug={movie.slug}
-                            tmdbId={movie.tmdb_id}
-                            initialStreaming={movie.streaming}
-                          />
-                        </div>
-                      ))}
-                    </div>
+                <div style={styles.movieSection}>
+                  <div style={styles.movieSectionHeader}>
+                    <div style={styles.sectionDivider} />
+                    <span style={styles.sectionLabel}>Featured Films</span>
+                    <div style={styles.sectionDivider} />
                   </div>
-                  
-                  {/* Add explore prompt after each movie section (which follows subheads) */}
-                  {(() => {
-                    // Find the previous subhead to match with prompt
-                    for (let i = index - 1; i >= 0; i--) {
-                      if (content.sections[i].type === 'subhead') {
-                        const prompt = subheadPromptMap[content.sections[i].content];
-                        if (prompt) {
-                          return (
-                            <div style={styles.exploreFurtherSection}>
-                              <div style={styles.exploreFurtherHeader}>
-                                <div style={styles.sectionDivider} />
-                                <span style={styles.sectionLabel}>Explore Further</span>
-                                <div style={styles.sectionDivider} />
-                              </div>
-                              <div style={styles.exploreFurtherGrid}>
-                                <div 
-                                  style={{...styles.explorePromptCard, cursor: 'pointer'}}
-                                  onClick={() => {
-                                    const prefixedPrompt = `${episode.title}: ${prompt}`;
-                                    router.push(`/ask?q=${encodeURIComponent(prefixedPrompt)}`);
-                                  }}
-                                >
-                                  <p style={styles.explorePromptText}>{prompt}</p>
-                                  <span style={styles.explorePromptArrow}>→</span>
-                                </div>
-                              </div>
-                            </div>
-                          );
-                        }
-                        break;
-                      }
-                    }
-                    return null;
-                  })()}
-                </>
+                  <div style={styles.movieGrid}>
+                    {section.movies.map((movie, movieIndex) => (
+                      <div key={movieIndex} style={styles.movieCardWrapper}>
+                        <MediaCard
+                          title={movie.title}
+                          year={movie.year}
+                          initialSlug={movie.slug}
+                          tmdbId={movie.tmdb_id}
+                          initialStreaming={movie.streaming}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
               )}
               
-              {/* Skip the original grouped explore_further section */}
               {section.type === 'explore_further' && (
-                <div key={index}></div>
+                <div style={styles.exploreFurtherSection}>
+                  <div style={styles.exploreFurtherHeader}>
+                    <div style={styles.sectionDivider} />
+                    <span style={styles.sectionLabel}>Explore Further</span>
+                    <div style={styles.sectionDivider} />
+                  </div>
+                  <div style={styles.exploreFurtherGrid}>
+                    {section.prompts?.map((prompt, promptIndex) => (
+                      <div 
+                        key={promptIndex}
+                        style={{...styles.explorePromptCard, cursor: 'pointer'}}
+                        onClick={() => {
+                          const prefixedPrompt = `${episode.title}: ${prompt}`;
+                          router.push(`/ask?q=${encodeURIComponent(prefixedPrompt)}`);
+                        }}
+                      >
+                        <p style={styles.explorePromptText}>{prompt}</p>
+                        <span style={styles.explorePromptArrow}>→</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               )}
             </section>
           );
@@ -181,22 +169,24 @@ export default function GeniusEpisodeTemplate({
           </div>
           <div style={styles.seriesGrid}>
             {/* Show other episodes in this series (excluding current) */}
-            {[
-              { id: 2, title: "The Maltese Falcon", subtitle: "Hard-boiled detective stories" },
-              { id: 3, title: "Sunset Boulevard", subtitle: "Hollywood's dark mirror" },
-              { id: 4, title: "Touch of Evil", subtitle: "Welles's baroque masterpiece" },
-              { id: 5, title: "The Big Sleep", subtitle: "Hawks and Bogart's chemistry" },
-              { id: 6, title: "Out of the Past", subtitle: "Fatalism and femme fatales" }
-            ].map((ep) => (
-              <div 
-                key={ep.id} 
-                style={styles.seriesEpisodeCard}
-                onClick={() => router.push(`/genius/${theme.id}/${series.id}/${ep.id}`)}
-              >
-                <h4 style={styles.seriesEpisodeTitle}>{ep.title}</h4>
-                <p style={styles.seriesEpisodeSubtitle}>{ep.subtitle}</p>
-              </div>
-            ))}
+            {(() => {
+              // Import genius config to get series structure
+              const geniusConfig = require('../data/genius-config.json');
+              const currentTheme = geniusConfig.themes[theme.id];
+              const currentSeries = currentTheme?.series?.find(s => s.id === series.id);
+              const otherEpisodes = currentSeries?.episodes?.filter(ep => ep.id !== episode.id) || [];
+              
+              return otherEpisodes.map((ep) => (
+                <div 
+                  key={ep.id} 
+                  style={styles.seriesEpisodeCard}
+                  onClick={() => router.push(`/genius/${theme.id}/${series.id}/${ep.id}`)}
+                >
+                  <h4 style={styles.seriesEpisodeTitle}>{ep.title}</h4>
+                  <p style={styles.seriesEpisodeSubtitle}>{ep.subtitle}</p>
+                </div>
+              ));
+            })()}
           </div>
         </section>
 
@@ -227,7 +217,7 @@ export default function GeniusEpisodeTemplate({
         {/* Ask Section */}
         <section style={styles.askSection}>
           <AskInputBar 
-            placeholder="Ask me about the movie"
+            placeholder="Ask me about this episode..."
             isLoading={false}
             episodePrefix={episode.title}
           />
@@ -239,21 +229,35 @@ export default function GeniusEpisodeTemplate({
             <h4 style={styles.otherSeriesTitle}>Explore Other Series</h4>
           </div>
           <div style={styles.otherSeriesGrid}>
-            {[
-              { id: 2, themeId: 1, title: "Neo-Noir Renaissance", description: "Modern noir interpretations" },
-              { id: 1, themeId: 2, title: "Science Fiction Classics", description: "Exploring the impossible" },
-              { id: 1, themeId: 3, title: "European New Waves", description: "Revolutionary cinema movements" },
-              { id: 3, themeId: 1, title: "Crime Epics & Gangster Films", description: "Criminal empires rise and fall" }
-            ].map((seriesData, index) => (
-              <div 
-                key={index} 
-                style={styles.otherSeriesCard}
-                onClick={() => router.push(`/genius/${seriesData.themeId}/${seriesData.id}`)}
-              >
-                <h5 style={styles.otherSeriesCardTitle}>{seriesData.title}</h5>
-                <p style={styles.otherSeriesCardDescription}>{seriesData.description}</p>
-              </div>
-            ))}
+            {(() => {
+              const geniusConfig = require('../data/genius-config.json');
+              const allSeries = [];
+              
+              // Collect all series from all themes, excluding current series
+              Object.values(geniusConfig.themes).forEach(themeData => {
+                themeData.series.forEach(seriesData => {
+                  if (!(themeData.id === theme.id && seriesData.id === series.id)) {
+                    allSeries.push({
+                      ...seriesData,
+                      themeId: themeData.id,
+                      themeTitle: themeData.title
+                    });
+                  }
+                });
+              });
+              
+              // Show first 4 other series
+              return allSeries.slice(0, 4).map((seriesData, index) => (
+                <div 
+                  key={`${seriesData.themeId}-${seriesData.id}`} 
+                  style={styles.otherSeriesCard}
+                  onClick={() => router.push(`/genius/${seriesData.themeId}/${seriesData.id}`)}
+                >
+                  <h5 style={styles.otherSeriesCardTitle}>{seriesData.title}</h5>
+                  <p style={styles.otherSeriesCardDescription}>{seriesData.description}</p>
+                </div>
+              ));
+            })()}
           </div>
         </footer>
       </main>
@@ -287,7 +291,7 @@ const styles = {
   // Hero Section
   heroSection: {
     position: 'relative',
-    minHeight: '30vh',
+    minHeight: '25vh',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
@@ -332,7 +336,7 @@ const styles = {
     borderRadius: '0',
   },
   episodeTitle: {
-    fontSize: '32px',
+    fontSize: '24px',
     fontWeight: '700',
     lineHeight: '1.1',
     marginTop: '5px', // 5px spacing from subtitle above
@@ -342,7 +346,7 @@ const styles = {
     textAlign: 'left',
   },
   episodeSubtitle: {
-    fontSize: '18px',
+    fontSize: '16px',
     fontWeight: '400',
     lineHeight: '1.4',
     color: '#d4af37', // Gold subtitle
@@ -650,4 +654,5 @@ const styles = {
     cursor: 'pointer',
     transition: 'all 0.2s ease',
   },
+
 };
