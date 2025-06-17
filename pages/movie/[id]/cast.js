@@ -6,7 +6,7 @@ import PhoneFrame from '../../../components/PhoneFrame';
 import MovieHeader from '../../../components/MovieHeader';
 import PersonCard from '../../../components/PersonCard';
 import AskInputBar from '../../../components/AskInputBar';
-import { ArrowLeft } from 'lucide-react';
+import ArrowLeft from 'lucide-react/dist/esm/icons/arrow-left';
 
 export default function MovieCastPage({ title, year, initialSlug, initialPoster, initialStreaming, tmdbId, error }) {
   const router = useRouter();

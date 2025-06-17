@@ -1,7 +1,9 @@
 // components/GeniusEpisodeTemplate.js
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { ChevronLeft, Clock, Film } from 'lucide-react';
+import ChevronLeft from 'lucide-react/dist/esm/icons/chevron-left';
+import Clock from 'lucide-react/dist/esm/icons/clock';
+import Film from 'lucide-react/dist/esm/icons/film';
 import MediaCard from './MediaCard';
 import AskInputBar from './AskInputBar';
 import { processEntityLinksForReact, extractEpisodeMovies } from '../lib/enhanced-entity-linker';
