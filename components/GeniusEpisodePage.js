@@ -23,21 +23,25 @@ const SERIES_DIRS = {
 
 // Function to get hero image with intelligent directory-based fallback
 function getHeroImage(themeId, seriesId, episodeId) {
-  const themeDir = THEME_DIRS[themeId];
-  const seriesDir = SERIES_DIRS[themeId]?.[seriesId];
-  
-  if (!themeDir) return '/images/hero/default.jpg';
-  
-  // Try episode-specific image first
-  if (seriesDir) {
-    // Known episode-specific images
-    if (themeId === '1' && seriesId === '1' && episodeId === '1') {
-      return '/images/hero-rotation/hero-1.jpg'; // Using available hero image
+  // Episode-specific hero images for series 1/1
+  if (themeId === '1' && seriesId === '1') {
+    const episodeImages = {
+      '1': '1-german-expressionism.jpg',
+      '2': '2-novel.jpg', 
+      '3': '3-urban-anxiety.jpg',
+      '4': '4-femme-fatales.jpg',
+      '5': '5-moral-ambiguity.jpg',
+      '6': '6-noir-legacy.jpg'
+    };
+    
+    const imageFile = episodeImages[episodeId];
+    if (imageFile) {
+      return `/images/hero/theme-1-noir/series-1-classic/${imageFile}`;
     }
   }
   
-  // Fall back to theme-level image
-  return `/images/hero/${themeDir}/theme.jpg`;
+  // Fallback to default
+  return '/images/hero/default.jpg';
 }
 
 export default function GeniusEpisodePage({ 
