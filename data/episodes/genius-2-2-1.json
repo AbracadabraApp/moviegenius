@@ -20,57 +20,141 @@
     "subtitle": "Japanese cinema giant"
   },
   "content": {
-    "opener": "Kurosawa's Epic Vision represents a significant development in cinema, exploring how filmmakers have approached this subject through innovative techniques and compelling storytelling.",
+    "opener": "Akira Kurosawa revolutionized global cinema by masterfully blending Japanese artistic traditions with Western narrative techniques, creating an influential body of work that continues to inspire filmmakers worldwide.",
     "sections": [
       {
         "type": "text",
-        "content": "Kurosawa's Epic Vision represents a fascinating chapter in cinema history, exploring themes and techniques that have shaped how we understand film as an art form. This episode examines the key developments, influential filmmakers, and cultural context that defined this important aspect of cinema. Through careful analysis of specific films and their impact, we'll explore how these works continue to influence contemporary filmmaking and our understanding of visual storytelling."
+        "content": "Kurosawa's emergence in post-war Japan marked a pivotal moment in cinema history. Beginning with \"Drunken Angel\" (1948), he established a distinctive visual style characterized by dynamic composition, multiple cameras, and precise movement. His collaboration with actor Toshiro Mifune, which started with this film, would span 16 movies and define both their careers. The director's meticulous attention to detail and innovative use of telephoto lenses created a depth of field that influenced countless cinematographers, while his approach to action sequences - particularly in samurai films - established new standards for filming combat."
       },
       {
         "type": "movies",
         "movies": [
           {
-            "title": "Example Film",
-            "year": 1970,
-            "slug": "A representative film that exemplifies the themes discussed in this episode",
-            "tmdb_id": 12345,
-            "poster_url": null,
-            "streaming": null
+            "title": "Drunken Angel",
+            "year": 1948,
+            "slug": "Noir-tinged drama about an alcoholic doctor and a gangster with tuberculosis, marking the first Kurosawa-Mifune collaboration",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 25858,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wjMwAY50qB3Vc56O6fQf9QIFCJB.jpg"
+          },
+          {
+            "title": "Stray Dog",
+            "year": 1949,
+            "slug": "Gritty police procedural exploring post-war Japanese society through a detective's search for his stolen gun",
+            "streaming": "HBO Max",
+            "tmdb_id": 30368,
+            "poster_url": "https://image.tmdb.org/t/p/w500/riBzUgeYawBDi2q9PjARjHrQM7Z.jpg"
           }
-        ]
-      },
-      {
-        "type": "explore_further",
-        "prompts": [
-          "How did the techniques discussed in Kurosawa's Epic Vision influence later filmmakers?"
         ]
       },
       {
         "type": "subhead",
-        "content": "Technical and Artistic Innovations"
+        "content": "The Golden Age: 1950-1965"
       },
       {
         "type": "text",
-        "content": "The technical innovations explored in this episode demonstrate how filmmaking craft serves storytelling purposes. By examining specific cinematographic, editorial, and sound design choices, we can understand how these films achieved their distinctive aesthetic and emotional impact. These techniques became influential templates that subsequent filmmakers would adopt, adapt, and evolve for their own creative purposes."
+        "content": "The 1950s marked Kurosawa's ascension to international acclaim, beginning with \"Rashomon\" (1950). This groundbreaking film introduced multiple-perspective storytelling to global cinema, winning the Golden Lion at Venice and the Academy Award for Best Foreign Film. The innovative cinematography by Kazuo Miyagawa, particularly in forest scenes where he pointed the camera directly at the sun (previously considered taboo), created a revolutionary visual language. \"Seven Samurai\" (1954) followed, demonstrating Kurosawa's mastery of epic storytelling, with its sophisticated use of telephoto lenses, multiple-camera setups, and precise editing techniques that would influence action cinema for decades."
       },
       {
         "type": "movies",
         "movies": [
           {
-            "title": "Another Example",
-            "year": 1975,
-            "slug": "Additional film that demonstrates the evolution of these techniques",
-            "tmdb_id": 67890,
-            "poster_url": null,
-            "streaming": null
+            "title": "Rashomon",
+            "year": 1950,
+            "slug": "Revolutionary drama examining truth and human nature through multiple perspectives of a crime",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 548,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vL7Xw04nFMHwnvXRFCmYYAzMUvY.jpg"
+          },
+          {
+            "title": "Seven Samurai",
+            "year": 1954,
+            "slug": "Epic masterpiece about samurai defending a village, revolutionizing action cinema and storytelling",
+            "streaming": "HBO Max",
+            "tmdb_id": 346,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8OKmBV5BUFzmozIC3pPWKHy17kx.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Kurosawa's adaptation of Western literature into Japanese contexts showcased his genius for cultural synthesis. \"Throne of Blood\" (1957) reimagined Shakespeare's Macbeth in feudal Japan, utilizing Noh theater techniques and striking visual metaphors. The famous arrow sequence, shot with real arrows for authenticity, exemplified Kurosawa's commitment to realism. \"The Bad Sleep Well\" (1960) transformed Hamlet into a corporate revenge thriller, reflecting post-war Japan's economic transformation and moral challenges."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Throne of Blood",
+            "year": 1957,
+            "slug": "Masterful adaptation of Macbeth set in feudal Japan, featuring stunning visual imagery",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 3777,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5NdGZpoInkf4wBInNpry6JAjQ3D.jpg"
+          },
+          {
+            "title": "The Bad Sleep Well",
+            "year": 1960,
+            "slug": "Corporate thriller examining corruption in post-war Japanese business world",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 31589,
+            "poster_url": "https://image.tmdb.org/t/p/w500/z0LhZ121uaqa31RUeu1mOnaFb5w.jpg"
           }
         ]
       },
       {
         "type": "explore_further",
         "prompts": [
-          "What specific technical innovations made these films distinctive?",
-          "How do these techniques appear in contemporary cinema?"
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The director's use of color and widescreen format reached its apex in \"Ran\" (1985), his interpretation of King Lear. The film's massive battle sequences, with hundreds of extras and precise color coordination of armies, demonstrated Kurosawa's continued innovation even in his later years. The film's $12 million budget, enormous for Japanese cinema at the time, allowed for unprecedented scale and technical sophistication, including the famous castle siege sequence that took over a month to film."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Ran",
+            "year": 1985,
+            "slug": "Epic adaptation of King Lear featuring stunning battle sequences and bold use of color",
+            "streaming": "HBO Max",
+            "tmdb_id": 11645,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iYQcDhuHrdPOHLUUxXaFChFrc97.jpg"
+          },
+          {
+            "title": "Kagemusha",
+            "year": 1980,
+            "slug": "Historical drama about a thief who becomes a warlord's double, exploring themes of identity and power",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 11953,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fJgqj9s8HNZz9zwX6femVJn8HEB.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Kurosawa's influence on Western cinema cannot be overstated. \"The Hidden Fortress\" (1958) directly inspired George Lucas's \"Star Wars,\" while \"Yojimbo\" (1961) was remade as \"A Fistful of Dollars,\" launching the Spaghetti Western genre. His dynamic action sequences influenced directors from Sam Peckinpah to Martin Scorsese, while his narrative techniques inspired filmmakers like Francis Ford Coppola and Steven Spielberg."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Hidden Fortress",
+            "year": 1958,
+            "slug": "Adventure tale following two peasants escorting a princess, later inspiring Star Wars",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 1059,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1RTp3EZrKg7xj1HJK2x4Rqknnnu.jpg"
+          },
+          {
+            "title": "Yojimbo",
+            "year": 1961,
+            "slug": "Influential samurai film about a crafty ronin playing rival gangs against each other",
+            "streaming": "HBO Max",
+            "tmdb_id": 11878,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tN7kYPjRhDolpui9sc9Eq9n5b2O.jpg"
+          }
         ]
       }
     ],
@@ -78,26 +162,37 @@
       "title": "More Ideas",
       "movies": [
         {
-          "title": "Related Film 1",
-          "year": 1980,
-          "slug": "A film that connects to the themes explored in this episode",
-          "tmdb_id": 11111,
-          "poster_url": null,
-          "streaming": null
+          "title": "Red Beard",
+          "year": 1965,
+          "slug": "Humanist drama about a young doctor learning compassion from his mentor",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 3780,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iYNH3Re0JSypoYaWvZtERUnNaJL.jpg"
         },
         {
-          "title": "Related Film 2",
-          "year": 1985,
-          "slug": "Another relevant film for further exploration",
-          "tmdb_id": 22222,
-          "poster_url": null,
-          "streaming": null
+          "title": "Dreams",
+          "year": 1990,
+          "slug": "Anthology film based on Kurosawa's actual dreams, blending reality and fantasy",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 2323,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vL7F8T9B6r4Uztpe1Hw4o63I1m1.jpg"
+        },
+        {
+          "title": "High and Low",
+          "year": 1963,
+          "slug": "Kidnapping thriller examining class divisions in modern Japan",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 12493,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tgNjemQPG96uIezpiUiXFcer5ga.jpg"
         }
       ]
     }
   },
-  "generatedAt": "2025-06-17T18:48:56.151Z",
+  "generatedAt": "2025-06-17T23:00:23.104Z",
   "version": "3.0",
   "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-17T23:00:23.104Z",
+  "lockedBy": "claude-generation-enhanced",
   "heroImage": "/images/hero/theme-2-directors/series-2-international-masters//1-kurosawa-s-epic-vision.jpg"
 }

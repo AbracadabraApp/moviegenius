@@ -241,14 +241,6 @@ export default function GeniusEpisodeTemplate({
           </section>
         )}
 
-        {/* Ask Section */}
-        <section style={styles.askSection}>
-          <AskInputBar 
-            placeholder="Ask me about this episode..."
-            isLoading={false}
-            episodePrefix={episode.title}
-          />
-        </section>
 
         {/* Other Series Footer */}
         <footer style={styles.otherSeriesSection}>
@@ -365,12 +357,19 @@ const styles = {
   episodeTitle: {
     fontSize: '24px',
     fontWeight: '700',
-    lineHeight: '1.1',
+    lineHeight: '1.3', // Increased from 1.1 for better readability
     marginTop: '5px', // 5px spacing from subtitle above
     marginBottom: '0px',
     color: '#ffffff', // White title
     textShadow: '0 2px 8px rgba(0,0,0,0.8)',
     textAlign: 'left',
+    // Better word breaking and hyphenation
+    wordBreak: 'keep-all', // Prevents awkward mid-word breaks
+    overflowWrap: 'break-word', // Breaks long words when necessary
+    hyphens: 'auto', // Enables hyphenation
+    textWrap: 'pretty', // CSS feature for prettier text wrapping
+    WebkitHyphens: 'auto', // Safari support
+    MozHyphens: 'auto', // Firefox support
   },
   episodeSubtitle: {
     fontSize: '16px',

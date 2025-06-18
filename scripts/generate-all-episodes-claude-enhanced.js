@@ -144,7 +144,7 @@ function checkApiKeys() {
   return true;
 }
 
-// TMDB integration for movie data enrichment
+// TMDB integration using existing site API endpoint
 async function enrichMovieData(movies, episodeNumber) {
   if (!movies || movies.length === 0) return;
   
@@ -152,39 +152,84 @@ async function enrichMovieData(movies, episodeNumber) {
   
   for (const movie of movies) {
     try {
-      // Search for movie on TMDB
-      const searchUrl = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.TMDB_API_KEY}&query=${encodeURIComponent(movie.title)}&year=${movie.year}`;
+      // Use the existing /api/tmdb-poster endpoint that the site already uses
+      const response = await fetch('http://localhost:3000/api/tmdb-poster', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          title: movie.title,
+          year: movie.year
+        })
+      });
       
-      const response = await fetch(searchUrl);
       if (!response.ok) {
         throw new Error(`TMDB API error: ${response.status}`);
       }
       
       const tmdbData = await response.json();
-      const match = tmdbData.results?.[0];
       
-      if (match && Math.abs(match.release_date?.substring(0, 4) - movie.year) <= 1) {
-        movie.tmdb_id = match.id;
-        movie.poster_url = match.poster_path ? 
-          `https://image.tmdb.org/t/p/w500${match.poster_path}` : null;
+      if (tmdbData.tmdb_id) {
+        movie.tmdb_id = tmdbData.tmdb_id;
+        movie.poster_url = tmdbData.poster !== '/images/placeholder-poster.jpg' ? tmdbData.poster : null;
         
         // Enhance description if it was empty
         if (!movie.slug || movie.slug.length < 10) {
-          movie.slug = match.overview || movie.slug;
+          movie.slug = tmdbData.overview || movie.slug;
         }
         
-        console.log(`   ✅ ${movie.title} (${movie.year}) → TMDB ID ${match.id}`);
+        console.log(`   ✅ ${movie.title} (${movie.year}) → TMDB ID ${tmdbData.tmdb_id}`);
       } else {
         console.log(`   ⚠️  No TMDB match for "${movie.title}" (${movie.year})`);
+        // Instead of null, use the /api/lookup-movie endpoint for better fallbacks
+        await tryLookupMovieEndpoint(movie);
       }
       
-      // Rate limiting for TMDB API
+      // Rate limiting for consistency
       await new Promise(resolve => setTimeout(resolve, CONFIG.TMDB_RATE_LIMIT_MS));
       
     } catch (error) {
       console.warn(`   ❌ TMDB lookup failed for "${movie.title}" (${movie.year}):`, error.message);
+      // Try the lookup-movie endpoint as fallback
+      await tryLookupMovieEndpoint(movie);
     }
   }
+}
+
+// Fallback using the /api/lookup-movie endpoint
+async function tryLookupMovieEndpoint(movie) {
+  try {
+    const response = await fetch('http://localhost:3000/api/lookup-movie', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        title: movie.title,
+        year: movie.year
+      })
+    });
+    
+    if (response.ok) {
+      const lookupData = await response.json();
+      if (lookupData.tmdb_id) {
+        movie.tmdb_id = lookupData.tmdb_id;
+        movie.poster_url = lookupData.poster_url;
+        if (!movie.slug || movie.slug.length < 10) {
+          movie.slug = lookupData.slug || movie.slug;
+        }
+        console.log(`   ✅ ${movie.title} (${movie.year}) → TMDB ID ${lookupData.tmdb_id} (via lookup-movie)`);
+        return;
+      }
+    }
+  } catch (error) {
+    console.warn(`   ❌ Lookup-movie fallback failed for "${movie.title}"`);
+  }
+  
+  // Final fallback: set to null and let MediaCard handle it
+  movie.tmdb_id = null;
+  console.log(`   ⚠️  Will rely on MediaCard auto-enhancement for "${movie.title}" (${movie.year})`);
 }
 
 // Retry wrapper for API calls
