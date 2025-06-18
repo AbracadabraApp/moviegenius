@@ -17,45 +17,14 @@
   "episode": {
     "id": 3,
     "title": "Urban Anxiety",
-    "subtitle": "Post-war disillusionment in American cities"
+    "subtitle": "City streets and moral decay"
   },
   "content": {
-    "opener": "The emergence of film noir in the 1940s marked a radical shift in American cinema, reflecting the nation's post-war psychological trauma and urban anxieties.",
+    "opener": "Film noir transformed city streets into shadowy labyrinths of moral corruption, reflecting post-war American anxieties about urban life and societal decay.",
     "sections": [
       {
         "type": "text",
-        "content": "The emergence of film noir in the 1940s marked a radical shift in American cinema, reflecting the nation's post-war psychological trauma and urban anxieties. Following World War II, returning veterans faced a transformed society where traditional values seemed to dissolve in the harsh glare of city lights. Directors like Fritz Lang, Otto Preminger, and Robert Siodmak brought their European expressionist sensibilities to Hollywood, incorporating stark lighting contrasts, canted angles, and fragmented narratives that perfectly captured this cultural unease. \"Double Indemnity\" (1944) exemplifies this transformation, with Billy Wilder's sophisticated direction creating a world of moral ambiguity through venetian blind shadows and confessional voice-over. The film's insurance salesman protagonist, played with desperate charm by Fred MacMurray, represents the corruption of the ordinary man, while Barbara Stanwyck's femme fatale embodies the period's shifting gender dynamics. Cinematographer John Seitz pioneered techniques that would become noir standards, including low-key lighting and deep shadows that suggested the darkness lurking beneath society's respectable surface."
-      },
-      {
-        "type": "movies",
-        "movies": [
-          {
-            "title": "Double Indemnity",
-            "year": 1944,
-            "slug": "A insurance salesman is seduced into a murder scheme by a femme fatale",
-            "tmdb_id": 18,
-            "poster_url": "https://image.tmdb.org/t/p/w500/8j7CVXWJqEWnuPhEokTDfKKN00R.jpg",
-            "streaming": null
-          },
-          {
-            "title": "The Woman in the Window",
-            "year": 1944,
-            "slug": "A professor becomes entangled in murder after meeting a mysterious woman",
-            "tmdb_id": 25742,
-            "poster_url": "https://image.tmdb.org/t/p/w500/6gpmPzSGO2qlAJ3KXZs6tNWjXMZ.jpg",
-            "streaming": null
-          }
-        ]
-      },
-      {
-        "type": "explore_further",
-        "prompts": [
-          "How did post-war trauma manifest in noir's visual style?"
-        ]
-      },
-      {
-        "type": "text",
-        "content": "The architectural landscape of post-war American cities played a crucial role in noir's visual grammar. Towering skyscrapers, rain-slicked streets, and labyrinthine alleyways became characters themselves, creating a concrete jungle that trapped and transformed its inhabitants. Jules Dassin's \"The Naked City\" (1948) revolutionized the genre by shooting entirely on location in New York, its documentary-style approach highlighting the city's impersonal nature and hidden dangers. The film's innovative cinematography by William Daniels captured the geometric patterns of fire escapes and elevated trains, creating visual metaphors for social imprisonment. Meanwhile, Nicholas Musuraca's revolutionary camera work in \"Out of the Past\" (1947) used San Francisco's steep streets and fog-shrouded landscapes to emphasize the protagonist's descent into a world of betrayal and fatalism. These films established the city not merely as a backdrop but as an active force in the characters' psychological deterioration."
+        "content": "The emergence of film noir in the 1940s coincided with America's rapid urbanization and post-war disillusionment. Directors like Jules Dassin and Otto Preminger utilized stark shadows, canted angles, and rain-slicked streets to create a visual language of urban paranoia. In \"The Naked City\" (1948), Dassin pioneered on-location shooting in New York, treating the city itself as a character that looms over its inhabitants. The film's documentary-style approach to urban crime established a template for depicting city life as inherently threatening, while cinematographer William Daniels captured the claustrophobic nature of cramped apartments and narrow alleyways that would become noir staples."
       },
       {
         "type": "movies",
@@ -63,30 +32,53 @@
           {
             "title": "The Naked City",
             "year": 1948,
-            "slug": "A police procedural shot entirely on location in New York City",
-            "tmdb_id": 25697,
-            "poster_url": "https://image.tmdb.org/t/p/w500/lxM6kqilAdpdhqUl2biYp5frUxE.jpg",
-            "streaming": null
+            "slug": "Revolutionary noir filmed entirely on New York streets, following a police investigation through the city's underbelly",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 20482,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rex4oaiSCD8UQg9204R6hQcFrX9.jpg"
           },
           {
-            "title": "Out of the Past",
-            "year": 1947,
-            "slug": "A private eye tries to escape his past but gets pulled back into a web of deceit",
-            "tmdb_id": 27573,
-            "poster_url": "https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
-            "streaming": null
+            "title": "Night and the City",
+            "year": 1950,
+            "slug": "Richard Widmark as a small-time hustler in a nightmarish London, directed by Jules Dassin",
+            "streaming": "Amazon Prime",
+            "tmdb_id": 19119,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2NBmzm8z5fd283eWeECkPrkwta8.jpg"
           }
         ]
       },
       {
-        "type": "explore_further",
-        "prompts": [
-          "What role did urban architecture play in expressing social anxiety?"
+        "type": "subhead",
+        "content": "The Vertical City and Moral Descent"
+      },
+      {
+        "type": "text",
+        "content": "Film noir frequently employed vertical architecture as a metaphor for social and moral hierarchy. In \"The Asphalt Jungle\" (1950), John Huston explores how the city's physical structure mirrors its social stratification, from basement criminal hideouts to penthouse offices. Cinematographer Harold Rosson created compositions that emphasized towering buildings and deep urban canyons, suggesting characters trapped in an architectural maze. This vertical motif reached its apex in Robert Siodmak's \"Criss Cross\" (1949), where the Bradbury Building's iconic stairways and elevators become central to the film's exploration of social mobility and moral descent."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Asphalt Jungle",
+            "year": 1950,
+            "slug": "Meticulous heist film examining urban criminal hierarchy",
+            "streaming": "HBO Max",
+            "tmdb_id": 16958,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8xsUnT0P2fJWQv9jGDhs3i9Zx2l.jpg"
+          },
+          {
+            "title": "Criss Cross",
+            "year": 1949,
+            "slug": "Doomed love triangle set against Los Angeles architecture",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 22112,
+            "poster_url": "https://image.tmdb.org/t/p/w500/AwmyVw6h3nZWvkZUuNpZYDA2Dly.jpg"
+          }
         ]
       },
       {
         "type": "text",
-        "content": "The noir movement's exploration of corruption within law enforcement and civic institutions reflected growing public skepticism toward authority figures. \"The Big Heat\" (1953) delves deep into police corruption, with Glenn Ford's righteous detective discovering that the line between law and criminality has become dangerously blurred. Fritz Lang's direction emphasizes the systemic nature of corruption through careful composition and lighting that suggests the interconnectedness of power structures. Similarly, Robert Aldrich's \"Kiss Me Deadly\" (1955) takes this institutional paranoia to apocalyptic levels, with Mike Hammer's investigation revealing layers of conspiracy that extend beyond mere criminal enterprise into nuclear-age anxieties. The film's innovative use of extreme angles and disorienting close-ups creates a world where traditional moral compass points have lost their meaning, reflecting the era's growing existential uncertainty."
+        "content": "The nocturnal city emerged as noir's defining canvas, with cinematographers like John Alton pioneering techniques to capture urban darkness. In \"The Big Heat\" (1953), Fritz Lang and cinematographer Charles Lang Jr. created a nightmarish vision of urban corruption, where streetlights cast menacing shadows and neon signs illuminate moral compromise. The film's violence erupts in diners, cars, and apartments, suggesting no urban space is safe from corruption. This technique influenced Nicholas Musuraca's work in \"Out of the Past\" (1947), where the city becomes an expressionist nightmare of black shadows and piercing lights."
       },
       {
         "type": "movies",
@@ -94,28 +86,30 @@
           {
             "title": "The Big Heat",
             "year": 1953,
-            "slug": "A cop seeks revenge against a crime syndicate that killed his wife",
-            "tmdb_id": 27307,
-            "poster_url": "https://image.tmdb.org/t/p/w500/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
-            "streaming": null
+            "slug": "Glenn Ford as a cop fighting systemic corruption",
+            "streaming": "TCM",
+            "tmdb_id": 14580,
+            "poster_url": "https://image.tmdb.org/t/p/w500/n1xdAX2g6PU3aqQXmZtY9gXvvEz.jpg"
           },
           {
-            "title": "Kiss Me Deadly",
-            "year": 1955,
-            "slug": "A private detective's investigation leads to a mysterious nuclear conspiracy",
-            "tmdb_id": 25678,
-            "poster_url": "https://image.tmdb.org/t/p/w500/ridz7OMqff52dLtPdpHIzUB8R6z.jpg",
-            "streaming": null
+            "title": "Out of the Past",
+            "year": 1947,
+            "slug": "Private eye trapped in web of urban deceit",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 678,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lnUK6Cg5ARM0qaq0B5SG20VAM0h.jpg"
           }
         ]
       },
       {
-        "type": "subhead",
-        "content": "The Psychology of Urban Alienation"
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
-        "content": "Film noir's treatment of gender roles revealed deep-seated anxieties about changing social dynamics in urban America. The archetype of the femme fatale, exemplified in Jacques Tourneur's \"Out of the Past\" by Jane Greer's performance, represented both male desire and fear of female empowerment in the post-war workplace. These characters operated with unprecedented agency, using their sexuality as a weapon while navigating male-dominated power structures. Robert Siodmak's \"The Killers\" (1946) presents Ava Gardner's Kitty Collins as a complex figure whose motivations remain deliberately ambiguous, suggesting a deeper commentary on gender politics. The film's innovative narrative structure, told through multiple perspectives, underscores the impossibility of truly knowing these women, reflecting male anxiety about female independence and sexual liberation in the modern city."
+        "content": "Urban alienation found its perfect expression in the anonymous hotel room, a recurring noir location that symbolized rootlessness and moral transience. In \"The Killers\" (1946), Robert Siodmak used these temporary spaces to explore how urban life dissolves traditional bonds and values. Cinematographer Elwood Bredell created compositions emphasizing isolation, with characters framed alone in stark rooms or separated by architectural elements. This theme reached its pinnacle in Jacques Tourneur's \"Out of the Past\" (1947), where hotel rooms become stages for betrayal and moral compromise."
       },
       {
         "type": "movies",
@@ -123,16 +117,24 @@
           {
             "title": "The Killers",
             "year": 1946,
-            "slug": "A insurance investigator unravels the mystery of a man who refused to run from his killers",
-            "tmdb_id": 25663,
-            "poster_url": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
-            "streaming": null
+            "slug": "Hemingway adaptation exploring urban violence and betrayal",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 14638,
+            "poster_url": "https://image.tmdb.org/t/p/w500/uXnuc6pW01s1MDwb6QwBWg2JQeX.jpg"
+          },
+          {
+            "title": "D.O.A.",
+            "year": 1950,
+            "slug": "Poisoned man's desperate journey through San Francisco",
+            "streaming": "Public Domain",
+            "tmdb_id": 18995,
+            "poster_url": "https://image.tmdb.org/t/p/w500/m7wZXWOt9XQKJT8r9pbAFo7jB46.jpg"
           }
         ]
       },
       {
         "type": "text",
-        "content": "The visual style of noir cinematography developed a sophisticated language for expressing psychological states through environmental elements. In Carol Reed's \"The Third Man\" (1949), Robert Krasker's Oscar-winning cinematography uses Vienna's bombed-out post-war landscape to create a world of moral decay, with tilted angles and elongated shadows expressing the characters' spiritual distortion. The famous sewer chase sequence combines expressionist lighting with documentary-style location shooting, creating a powerful metaphor for the era's moral underground. This visual approach influenced countless films, including \"Night and the City\" (1950), where cinematographer Max Greene transformed London's nighttime streets into a maze of paranoia and desperation, with Richard Widmark's Harry Fabian pursued through increasingly claustrophobic spaces that mirror his psychological breakdown."
+        "content": "The noir city's public spaces became theaters of paranoia and surveillance. Carol Reed's \"The Third Man\" (1949) transformed Vienna's sewers and ferris wheel into symbols of post-war moral chaos. Cinematographer Robert Krasker won an Oscar for his tilted compositions and expressionist lighting, creating a city where every shadow could hide a betrayer. This influence is evident in \"Kiss Me Deadly\" (1955), where Robert Aldrich and cinematographer Ernest Laszlo depicted Los Angeles as a nuclear-age nightmare of suspicious glances and hidden threats."
       },
       {
         "type": "movies",
@@ -140,100 +142,43 @@
           {
             "title": "The Third Man",
             "year": 1949,
-            "slug": "An American writer in post-war Vienna investigates the mysterious death of a friend",
-            "tmdb_id": 271,
-            "poster_url": "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
-            "streaming": null
+            "slug": "Post-war Vienna as moral wasteland",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 1092,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rO2Fq0AZZx9obs52KJdx4mRE8p5.jpg"
           },
           {
-            "title": "Night and the City",
-            "year": 1950,
-            "slug": "A small-time hustler's ambitious schemes lead to his downfall in London's underworld",
-            "tmdb_id": 25629,
-            "poster_url": "https://image.tmdb.org/t/p/w500/iuAQVI4mvjI83wnirpD8GVNRVuY.jpg",
-            "streaming": null
+            "title": "Kiss Me Deadly",
+            "year": 1955,
+            "slug": "Atomic age noir in Los Angeles",
+            "streaming": "TCM",
+            "tmdb_id": 18030,
+            "poster_url": "https://image.tmdb.org/t/p/w500/z7me91nrpWLHY1mZOB2v20cK0zY.jpg"
           }
         ]
       },
       {
-        "type": "explore_further",
-        "prompts": [
-          "How did noir films reflect changing gender roles in the 1940s?"
-        ]
-      },
-      {
         "type": "text",
-        "content": "The influence of German Expressionism on noir's visual style cannot be overstated, particularly in how it conveyed urban alienation. Otto Preminger's \"Laura\" (1944) demonstrates this through its treatment of domestic spaces, using shadow patterns and reflective surfaces to suggest the illusory nature of social identity. The film's famous portrait of Laura becomes a symbol of projection and desire, while cinematographer Joseph LaShelle's careful manipulation of light and shadow transforms seemingly comfortable upper-class interiors into spaces of psychological tension. This approach reached its apex in Fritz Lang's \"Scarlet Street\" (1945), where Edward G. Robinson's Christopher Cross moves through spaces that become increasingly distorted as his grip on reality loosens, the urban environment reflecting his psychological disintegration."
+        "content": "Female characters in noir often embodied urban moral ambiguity, particularly in their relationship to public spaces. In \"Pickup on South Street\" (1953), Samuel Fuller explored how women navigate the dangerous city, with cinematographer Joe MacDonald creating tense sequences in subway cars and crowded streets. This theme reached its apex in \"The Seventh Victim\" (1943), where Mark Robson and Nicholas Musuraca created a Greenwich Village where female independence leads to supernatural danger."
       },
       {
         "type": "movies",
         "movies": [
           {
-            "title": "Laura",
-            "year": 1944,
-            "slug": "A detective falls in love with a murdered woman's portrait while investigating her death",
-            "tmdb_id": 396,
-            "poster_url": "https://image.tmdb.org/t/p/w500/fxq0gKLqnXx2N8LUuN6w2KiCJaP.jpg",
-            "streaming": null
+            "title": "Pickup on South Street",
+            "year": 1953,
+            "slug": "Cold War noir set in New York's underground",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 25955,
+            "poster_url": "https://image.tmdb.org/t/p/w500/et4fY4BxLyAPwxvUFUbzCUrGsjR.jpg"
           },
           {
-            "title": "Scarlet Street",
-            "year": 1945,
-            "slug": "A mild-mannered cashier falls for a woman who exploits his artistic aspirations",
-            "tmdb_id": 25851,
-            "poster_url": "https://image.tmdb.org/t/p/w500/c2SQMd00CCGTiDxGXVqA2J9lmzF.jpg",
-            "streaming": null
-          }
-        ]
-      },
-      {
-        "type": "text",
-        "content": "The noir movement's exploration of time and memory represented a significant departure from classical Hollywood narratives. Jacques Tourneur's \"Build My Gallows High\" (1947) uses complex flashback structures and voice-over narration to create a sense of predestination and fatalism. The film's innovative approach to chronology influenced later works like \"D.O.A.\" (1950), where Rudolph Maté's direction follows a poisoned man investigating his own murder through a labyrinthine city landscape, the nonlinear narrative reflecting the fragmentation of modern urban experience. These techniques established a new grammar for expressing psychological states through narrative structure, influencing generations of filmmakers in their approach to storytelling and character development."
-      },
-      {
-        "type": "movies",
-        "movies": [
-          {
-            "title": "D.O.A.",
-            "year": 1950,
-            "slug": "A dying man searches for his own murderer in a race against time",
-            "tmdb_id": 25757,
-            "poster_url": "https://image.tmdb.org/t/p/w500/eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg",
-            "streaming": null
-          }
-        ]
-      },
-      {
-        "type": "text",
-        "content": "The role of urban spaces in creating social isolation became a central theme in later noir films. Jules Dassin's \"Night and the City\" (1950) presents London as a maze of competing interests and betrayals, where every relationship is ultimately transactional. The film's extensive use of location shooting created a documentary-like authenticity while maintaining noir's expressionist heritage through careful lighting and composition. Similarly, Alexander Mackendrick's \"Sweet Smell of Success\" (1957) captures the predatory nature of New York's entertainment industry, with James Wong Howe's cinematography emphasizing the city's vertical architecture to suggest power relationships and moral descent. These films established a visual vocabulary for urban alienation that continues to influence contemporary cinema."
-      },
-      {
-        "type": "movies",
-        "movies": [
-          {
-            "title": "Sweet Smell of Success",
-            "year": 1957,
-            "slug": "A powerful columnist manipulates a press agent in New York's entertainment world",
-            "tmdb_id": 26017,
-            "poster_url": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
-            "streaming": null
-          }
-        ]
-      },
-      {
-        "type": "text",
-        "content": "The decline of classical noir coincided with significant changes in American society and filmmaking technology. Orson Welles's \"Touch of Evil\" (1958) represents both the culmination and transformation of noir traditions, its famous opening tracking shot demonstrating how technical innovations could enhance noir's themes of moral complexity and urban decay. The film's border-town setting expanded noir's typical urban environment while maintaining its focus on corruption and existential crisis. This period saw noir's influence spreading internationally, particularly in French New Wave cinema, where directors like Jean-Luc Godard and François Truffaut would reinterpret noir's themes and visual style for a new generation, ensuring its lasting impact on global film culture."
-      },
-      {
-        "type": "movies",
-        "movies": [
-          {
-            "title": "Touch of Evil",
-            "year": 1958,
-            "slug": "A Mexican narcotics officer becomes entangled in corruption on the U.S. border",
-            "tmdb_id": 935,
-            "poster_url": "https://image.tmdb.org/t/p/w500/6EiRUJpuoeQPghrs3YNktfnqOVh.jpg",
-            "streaming": null
+            "title": "The Seventh Victim",
+            "year": 1943,
+            "slug": "Gothic noir exploring female urban independence",
+            "streaming": "HBO Max",
+            "tmdb_id": 20945,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cvck16EWDqWK6x4p78N8KyJyJNJ.jpg"
           }
         ]
       }
@@ -242,17 +187,37 @@
       "title": "More Ideas",
       "movies": [
         {
-          "title": "The Maltese Falcon",
-          "year": 1941,
-          "slug": "A private detective becomes entangled in the search for a priceless statue",
-          "tmdb_id": 248,
-          "poster_url": "https://image.tmdb.org/t/p/w500/6gpmPzSGO2qlAJ3KXZs6tNWjXMZ.jpg",
-          "streaming": null
+          "title": "Force of Evil",
+          "year": 1948,
+          "slug": "Wall Street corruption destroys family bonds",
+          "streaming": "TCM",
+          "tmdb_id": null,
+          "poster_url": null
+        },
+        {
+          "title": "Where the Sidewalk Ends",
+          "year": 1950,
+          "slug": "Cop's moral descent in urban underground",
+          "streaming": "Amazon Prime",
+          "tmdb_id": 17221,
+          "poster_url": "https://image.tmdb.org/t/p/w500/27Q0i6ZjmRnjfvegksunixnLxuG.jpg"
+        },
+        {
+          "title": "In a Lonely Place",
+          "year": 1950,
+          "slug": "Hollywood noir examining urban alienation",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 17057,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vdlCUR7hu7BI8JRl46n66PiG17k.jpg"
         }
       ]
     }
   },
-  "generatedAt": "2025-01-19T22:47:15.000Z",
+  "generatedAt": "2025-06-17T22:05:01.137Z",
   "version": "3.0",
-  "type": "educational"
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-17T22:05:01.137Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-1-genres/series-1-classic-film-noir//3-urban-anxiety.jpg"
 }

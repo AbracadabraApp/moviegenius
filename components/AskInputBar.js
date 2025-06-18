@@ -21,6 +21,30 @@ export default function AskInputBar({
     setIsClient(true);
   }, []);
 
+  // Prevent hydration mismatch by only showing interactive elements after mount
+  if (!isClient) {
+    return (
+      <form style={styles.form}>
+        <div style={styles.bar}>
+          {!episodePrefix && (
+            <div style={styles.navButton}>
+              <div style={{...styles.navIcon, opacity: 0.3, width: 30, height: 30}} />
+            </div>
+          )}
+          <input
+            type="text"
+            placeholder={placeholder}
+            disabled
+            style={{...styles.input, opacity: 0.6}}
+          />
+          <div style={styles.navButton}>
+            <div style={{...styles.navIcon, opacity: 0.3, width: 30, height: 30}} />
+          </div>
+        </div>
+      </form>
+    );
+  }
+
   // Check if there's a page to go back to
   const canGoBack = () => {
     return isClient && window.history.length > 1;

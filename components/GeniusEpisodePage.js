@@ -92,7 +92,11 @@ export default function GeniusEpisodePage({
       <div style={styles.container}>
         {/* Fixed Ask Input Bar */}
         <div style={styles.fixedInputArea}>
-          <AskInputBar onSubmit={handleAsk} />
+          <AskInputBar 
+            placeholder="Ask me about this topic..."
+            episodePrefix={episodeData.episode.title}
+            onSubmit={handleAsk} 
+          />
         </div>
         
         {/* Episode Content */}
