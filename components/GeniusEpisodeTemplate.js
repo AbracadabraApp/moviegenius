@@ -13,6 +13,11 @@ export default function GeniusEpisodeTemplate({
   heroImage, 
   estimatedReadTime = "8 min read" 
 }) {
+  // Guard against undefined episodeData BEFORE any hooks
+  if (!episodeData || !episodeData.theme || !episodeData.series || !episodeData.episode) {
+    return <div>Loading episode...</div>;
+  }
+  
   const router = useRouter();
   const [scrollProgress, setScrollProgress] = useState(0);
   const [enableLinking, setEnableLinking] = useState(true);
