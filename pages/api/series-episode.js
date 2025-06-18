@@ -78,21 +78,60 @@ function processMovieData(movieData) {
   };
 }
 
-// Load pre-generated episode content
-function loadEpisodeContent(seriesId, episodeId) {
+// Load episode content from database (with file system fallback)
+async function loadEpisodeContent(seriesId, episodeId) {
   try {
+    // First try database for Genius episodes (theme determined by series mapping)
+    const { EpisodeService } = await import('../../lib/supabase.js');
+    
+    // Map series ID to theme ID (this mapping should match your genius-config.json)
+    const seriesThemeMapping = {
+      '1': { themeId: 1, seriesId: 1 }, // Classic Film Noir
+      '2': { themeId: 1, seriesId: 2 }, // Suspense & Horror
+      '3': { themeId: 1, seriesId: 3 }, // Comedy Through the Ages
+      '4': { themeId: 2, seriesId: 1 }, // Women Directors
+      '5': { themeId: 2, seriesId: 2 }, // International Masters
+      // Add more mappings as needed
+    };
+    
+    const mapping = seriesThemeMapping[seriesId];
+    if (mapping) {
+      const episodeData = await EpisodeService.getEpisode(mapping.themeId, mapping.seriesId, parseInt(episodeId));
+      if (episodeData) {
+        console.log(`Loaded episode content from database: theme ${mapping.themeId}, series ${mapping.seriesId}, episode ${episodeId}`);
+        return episodeData.content;
+      }
+    }
+    
+    // Fallback to legacy file system for non-Genius episodes
     const episodePath = path.join(process.cwd(), 'data', 'episodes', `series-${seriesId}-episode-${episodeId}.json`);
     
     if (fs.existsSync(episodePath)) {
       const episodeContent = fs.readFileSync(episodePath, 'utf8');
       const episodeData = JSON.parse(episodeContent);
+      console.log(`Loaded episode content from file system: series ${seriesId}, episode ${episodeId}`);
       return episodeData.content;
     } else {
-      console.log(`Pre-generated content not found for Series ${seriesId}, Episode ${episodeId}`);
+      console.log(`Episode content not found in database or file system: series ${seriesId}, episode ${episodeId}`);
       return null;
     }
   } catch (error) {
-    console.error(`Error loading pre-generated content for Series ${seriesId}, Episode ${episodeId}:`, error);
+    console.error(`Error loading episode content for Series ${seriesId}, Episode ${episodeId}:`, error);
+    
+    // Final fallback to file system
+    try {
+      const episodePath = path.join(process.cwd(), 'data', 'episodes', `series-${seriesId}-episode-${episodeId}.json`);
+      
+      if (fs.existsSync(episodePath)) {
+        const episodeContent = fs.readFileSync(episodePath, 'utf8');
+        const episodeData = JSON.parse(episodeContent);
+        console.log(`Loaded episode content from file system as error fallback: series ${seriesId}, episode ${episodeId}`);
+        return episodeData.content;
+      }
+    } catch (fallbackError) {
+      console.error(`File system fallback also failed for series ${seriesId}, episode ${episodeId}:`, fallbackError);
+    }
+    
     return null;
   }
 }
@@ -326,9 +365,34 @@ function parseClaudeResponse(responseText) {
   };
 }
 
-// Check if episode content is locked
-function checkEpisodeLock(seriesId, episodeId, forceRegenerate = false) {
+// Check if episode content is locked (database-first with file fallback)
+async function checkEpisodeLock(seriesId, episodeId, forceRegenerate = false) {
   try {
+    // First try database
+    const { EpisodeService } = await import('../../lib/supabase.js');
+    
+    // Map series ID to theme ID
+    const seriesThemeMapping = {
+      '1': { themeId: 1, seriesId: 1 }, // Classic Film Noir
+      '2': { themeId: 1, seriesId: 2 }, // Suspense & Horror
+      '3': { themeId: 1, seriesId: 3 }, // Comedy Through the Ages
+      '4': { themeId: 2, seriesId: 1 }, // Women Directors
+      '5': { themeId: 2, seriesId: 2 }, // International Masters
+    };
+    
+    const mapping = seriesThemeMapping[seriesId];
+    if (mapping) {
+      const episodeData = await EpisodeService.getEpisode(mapping.themeId, mapping.seriesId, parseInt(episodeId));
+      if (episodeData && episodeData.locked && !forceRegenerate) {
+        return {
+          isLocked: true,
+          lockedAt: episodeData.locked_at,
+          lockedBy: episodeData.locked_by || 'system'
+        };
+      }
+    }
+    
+    // Fallback to file system check
     const episodePath = path.join(process.cwd(), 'data', 'episodes', `genius-${seriesId}-${seriesId}-${episodeId}.json`);
     
     if (fs.existsSync(episodePath)) {
@@ -363,7 +427,7 @@ export default async function handler(req, res) {
 
   // Check if episode is locked (only for new generation, not topic/context based generation)
   if (topic && context) {
-    const lockStatus = checkEpisodeLock(seriesId, episodeId, forceRegenerate);
+    const lockStatus = await checkEpisodeLock(seriesId, episodeId, forceRegenerate);
     if (lockStatus.isLocked) {
       console.log(`Episode ${seriesId}-${seriesId}-${episodeId} is locked, blocking regeneration`);
       return res.status(409).json({
@@ -395,8 +459,8 @@ export default async function handler(req, res) {
       // Generate new content based on provided topic/context
       rawContent = await generateEpisodeContentFallback(seriesId, episodeId, topic, context);
     } else {
-      // Try to load pre-generated content first (for Cinema Through Time episodes)
-      rawContent = loadEpisodeContent(seriesId, episodeId);
+      // Try to load pre-generated content first (from database or file system)
+      rawContent = await loadEpisodeContent(seriesId, episodeId);
       
       // Fallback to dynamic generation if pre-generated content doesn't exist
       if (!rawContent) {

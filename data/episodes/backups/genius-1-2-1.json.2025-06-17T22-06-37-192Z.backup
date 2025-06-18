@@ -1,0 +1,143 @@
+{
+  "system": "genius",
+  "themeId": 1,
+  "seriesId": 2,
+  "episodeId": 1,
+  "theme": {
+    "id": 1,
+    "title": "Genres",
+    "description": "Film genres and their evolution",
+    "slug": "genres"
+  },
+  "series": {
+    "id": 2,
+    "title": "Suspense & Horror",
+    "description": "Fear, tension, and psychological terror"
+  },
+  "episode": {
+    "id": 1,
+    "title": "Giallo: Italian Horror Aesthetics",
+    "subtitle": "Argento's stylized violence"
+  },
+  "content": {
+    "opener": "The giallo genre emerged in 1960s Italy as a unique fusion of horror, thriller, and detective elements, characterized by stylized violence, psychological complexity, and distinctive visual aesthetics that would influence horror filmmaking worldwide.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "The giallo genre emerged in 1960s Italy as a unique fusion of horror, thriller, and detective elements, characterized by stylized violence, psychological complexity, and distinctive visual aesthetics. The term \"giallo\" originated from the yellow-covered mystery novels published by Mondadori, but evolved into a cinematic movement that would influence horror filmmaking worldwide. Mario Bava's \"The Girl Who Knew Too Much\" (1963) is widely considered the first proper giallo film, establishing crucial genre conventions like the amateur detective protagonist, black-gloved killer, and elaborate murder sequences. Bava's follow-up \"Blood and Black Lace\" (1964) further refined the genre's visual language, introducing saturated color schemes, expressionistic lighting, and architectural spaces that would become giallo hallmarks. These early works laid the foundation for a decade of innovative Italian filmmaking that pushed boundaries in both technical execution and narrative complexity."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Girl Who Knew Too Much",
+            "year": 1963,
+            "slug": "Mario Bava's pioneering giallo about an American tourist who witnesses a murder in Rome",
+            "tmdb_id": 45894,
+            "poster_url": null,
+            "streaming": "TBD"
+          },
+          {
+            "title": "Blood and Black Lace",
+            "year": 1964,
+            "slug": "Stylish murder mystery set in a fashion house, featuring Bava's trademark color palette",
+            "tmdb_id": 19317,
+            "poster_url": null,
+            "streaming": "TBD"
+          }
+        ]
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did Mario Bava's color techniques influence modern horror cinematography?"
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Argento's Visual Revolution"
+      },
+      {
+        "type": "text",
+        "content": "Dario Argento's emergence in 1970 with \"The Bird with the Crystal Plumage\" marked a watershed moment for the genre, introducing a more modernist approach to giallo storytelling. Argento's technical innovations included elaborate tracking shots, extreme close-ups of murderous implements, and disorienting point-of-view sequences that would become his signature style. The film's success sparked a prolific period in giallo production, with Argento continuing to refine his approach through masterworks like \"Deep Red\" (1975) and \"Tenebrae\" (1982). His collaboration with cinematographer Luciano Tovoli brought an unprecedented level of visual sophistication to the genre, employing complex camera movements and architectural framing that transformed ordinary locations into labyrinthine spaces of dread and uncertainty."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Bird with the Crystal Plumage",
+            "year": 1970,
+            "slug": "Argento's directorial debut about an American writer who witnesses an attempted murder",
+            "tmdb_id": 17955,
+            "poster_url": null,
+            "streaming": "TBD"
+          },
+          {
+            "title": "Deep Red",
+            "year": 1975,
+            "slug": "Argento's masterpiece featuring elaborate murder sequences and psychological complexity",
+            "tmdb_id": 11201,
+            "poster_url": null,
+            "streaming": "TBD"
+          },
+          {
+            "title": "Suspiria",
+            "year": 1977,
+            "slug": "Supernatural horror masterpiece with vivid Technicolor and Goblin's iconic score",
+            "tmdb_id": 348,
+            "poster_url": null,
+            "streaming": "TBD"
+          }
+        ]
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "What makes Dario Argento's camera work so distinctive in giallo films?",
+          "How do giallo films compare to American slasher movies of the 1980s?"
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Giallo Films to Explore",
+      "movies": [
+        {
+          "title": "The Cat o' Nine Tails",
+          "year": 1971,
+          "slug": "Argento's second giallo featuring a blind puzzle-solver",
+          "tmdb_id": 17956,
+          "poster_url": null,
+          "streaming": "TBD"
+        },
+        {
+          "title": "Four Flies on Grey Velvet",
+          "year": 1971,
+          "slug": "Argento's experimental giallo with innovative photography techniques",
+          "tmdb_id": 40901,
+          "poster_url": null,
+          "streaming": "TBD"
+        },
+        {
+          "title": "Torso",
+          "year": 1973,
+          "slug": "Sergio Martino's influential proto-slasher giallo",
+          "tmdb_id": 46425,
+          "poster_url": null,
+          "streaming": "TBD"
+        },
+        {
+          "title": "Don't Torture a Duckling",
+          "year": 1972,
+          "slug": "Fulci's social commentary disguised as giallo thriller",
+          "tmdb_id": 46426,
+          "poster_url": null,
+          "streaming": "TBD"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-17T17:48:00.000Z",
+  "version": "3.0",
+  "type": "educational",
+  "heroImage": "/images/hero/theme-1-genres/series-2-horror/1-giallo.jpg"
+}
