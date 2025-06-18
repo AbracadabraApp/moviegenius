@@ -20,57 +20,153 @@
     "subtitle": "Post-war authenticity"
   },
   "content": {
-    "opener": "Italian Neorealism: Truth in Cinema represents a significant development in cinema, exploring how filmmakers have approached this subject through innovative techniques and compelling storytelling.",
+    "opener": "In the rubble of post-WWII Italy, a revolutionary film movement emerged that would forever change how cinema captured human truth and social reality.",
     "sections": [
       {
         "type": "text",
-        "content": "Italian Neorealism: Truth in Cinema represents a fascinating chapter in cinema history, exploring themes and techniques that have shaped how we understand film as an art form. This episode examines the key developments, influential filmmakers, and cultural context that defined this important aspect of cinema. Through careful analysis of specific films and their impact, we'll explore how these works continue to influence contemporary filmmaking and our understanding of visual storytelling."
+        "content": "Italian Neorealism arose from the ashes of Fascist-controlled cinema, rejecting artificial studio productions in favor of raw authenticity. Filmmakers like Roberto Rossellini and Vittorio De Sica took their cameras to the streets, filming non-professional actors amid the actual ruins of war-torn Italy. This radical approach was born partly from necessity—with Cinecittà studios damaged by bombing and economic resources scarce—but it evolved into a powerful artistic philosophy. The movement's commitment to social realism and unvarnished truth-telling created a new film language that influenced generations of directors worldwide."
       },
       {
         "type": "movies",
         "movies": [
           {
-            "title": "Example Film",
-            "year": 1970,
-            "slug": "A representative film that exemplifies the themes discussed in this episode",
-            "tmdb_id": 12345,
-            "poster_url": null,
-            "streaming": null
+            "title": "Rome, Open City",
+            "year": 1945,
+            "slug": "Rossellini's groundbreaking resistance drama filmed in actual bombed locations",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 307,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ijGV4v8JxgbNzgEhqKdzHdaZn8a.jpg"
+          },
+          {
+            "title": "Bicycle Thieves",
+            "year": 1948,
+            "slug": "De Sica's masterpiece about a father and son searching for a stolen bicycle",
+            "streaming": "HBO Max",
+            "tmdb_id": 5156,
+            "poster_url": "https://image.tmdb.org/t/p/w500/abmxGiCV04NQj4jngbSQTGLgiC1.jpg"
           }
-        ]
-      },
-      {
-        "type": "explore_further",
-        "prompts": [
-          "How did the techniques discussed in Italian Neorealism: Truth in Cinema influence later filmmakers?"
         ]
       },
       {
         "type": "subhead",
-        "content": "Technical and Artistic Innovations"
+        "content": "Technical Innovation Through Limitation"
       },
       {
         "type": "text",
-        "content": "The technical innovations explored in this episode demonstrate how filmmaking craft serves storytelling purposes. By examining specific cinematographic, editorial, and sound design choices, we can understand how these films achieved their distinctive aesthetic and emotional impact. These techniques became influential templates that subsequent filmmakers would adopt, adapt, and evolve for their own creative purposes."
+        "content": "Neorealist filmmakers developed distinctive technical approaches that became hallmarks of the movement. Working with limited equipment and resources, cinematographers like G.R. Aldo pioneered a documentary-like aesthetic using natural lighting and handheld cameras. Films were often shot without synchronized sound, with dialogue dubbed later—a limitation that paradoxically enhanced the visual storytelling. The use of actual locations rather than sets created a profound sense of place, while long takes and wide shots allowed scenes to unfold with minimal manipulation, establishing a new kind of cinematic truth."
       },
       {
         "type": "movies",
         "movies": [
           {
-            "title": "Another Example",
-            "year": 1975,
-            "slug": "Additional film that demonstrates the evolution of these techniques",
-            "tmdb_id": 67890,
-            "poster_url": null,
-            "streaming": null
+            "title": "La Terra Trema",
+            "year": 1948,
+            "slug": "Visconti's documentary-style drama about Sicilian fishermen",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 43445,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xSaazq8Am0eLjapiAcCXadXZaqZ.jpg"
+          },
+          {
+            "title": "Stromboli",
+            "year": 1950,
+            "slug": "Rossellini's volcanic island drama starring Ingrid Bergman",
+            "streaming": "Prime Video",
+            "tmdb_id": 4173,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tsyyzGSspKsawHocchfokskwbeM.jpg"
           }
         ]
       },
       {
+        "type": "subhead",
+        "content": "Social Commentary and Human Drama"
+      },
+      {
+        "type": "text",
+        "content": "At its core, Neorealism was deeply concerned with examining post-war Italian society's struggles and inequalities. Films focused on ordinary people—workers, peasants, the unemployed—facing daily challenges of survival. Directors like De Sica and Visconti crafted narratives that merged social criticism with profound humanism. The movement rejected melodramatic conventions, instead finding drama in everyday life and dignity in common struggles. This approach revolutionized storytelling, demonstrating how political commentary could be woven naturally into human narratives."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Umberto D.",
+            "year": 1952,
+            "slug": "De Sica's heartbreaking story of an elderly pensioner and his dog",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 833,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5I7SYsNQmZRZpQ2MAarIQYU9vaX.jpg"
+          },
+          {
+            "title": "Ossessione",
+            "year": 1943,
+            "slug": "Visconti's proto-neorealist adaptation of The Postman Always Rings Twice",
+            "streaming": "Mubi",
+            "tmdb_id": 5155,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qgDF8yuJa9eEcfBqEQrqbJuxe5z.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Non-Professional Actors and Authentic Performance"
+      },
+      {
         "type": "explore_further",
         "prompts": [
-          "What specific technical innovations made these films distinctive?",
-          "How do these techniques appear in contemporary cinema?"
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The use of non-professional actors was perhaps Neorealism's most radical innovation. Directors cast ordinary people who naturally embodied their characters' social conditions and experiences. This approach produced performances of startling authenticity, as seen in the work of Lamberto Maggiorani in Bicycle Thieves and Enzo Staiola as his son. The method required directors to develop new techniques for working with untrained performers, often building scenes around their natural behaviors rather than traditional acting methods."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Germany Year Zero",
+            "year": 1948,
+            "slug": "Rossellini's devastating portrait of post-war Berlin youth",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 8016,
+            "poster_url": "https://image.tmdb.org/t/p/w500/sdxegsjrrvujXvv2GLPENyDlWDI.jpg"
+          },
+          {
+            "title": "Shoeshine",
+            "year": 1946,
+            "slug": "De Sica's powerful drama about street children",
+            "streaming": "Kanopy",
+            "tmdb_id": 43469,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qhhbo7rzJ1U8y1jW5cpR2j5GhvR.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Global Influence and Legacy"
+      },
+      {
+        "type": "text",
+        "content": "Italian Neorealism's influence extended far beyond Italy's borders, inspiring new waves of cinema worldwide. The movement's techniques and philosophical approach influenced French New Wave directors like François Truffaut and Jean-Luc Godard, Indian filmmakers like Satyajit Ray, and Latin American directors developing Third Cinema. The emphasis on social reality and authentic representation continues to influence contemporary filmmakers, from Ken Loach to the Dardenne brothers, who carry forward Neorealism's commitment to addressing social issues through cinema."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Paisan",
+            "year": 1946,
+            "slug": "Rossellini's six-part portrait of post-war Italian life",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 8429,
+            "poster_url": "https://image.tmdb.org/t/p/w500/r5IGAFASCXmp8m51vUbER3WwVcB.jpg"
+          },
+          {
+            "title": "Bitter Rice",
+            "year": 1949,
+            "slug": "Giuseppe De Santis's blend of neorealism and melodrama",
+            "streaming": "Mubi",
+            "tmdb_id": 31058,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9vvbZgbkfE7urqQXRNiONmvYTtF.jpg"
+          }
         ]
       }
     ],
@@ -78,26 +174,37 @@
       "title": "More Ideas",
       "movies": [
         {
-          "title": "Related Film 1",
-          "year": 1980,
-          "slug": "A film that connects to the themes explored in this episode",
-          "tmdb_id": 11111,
-          "poster_url": null,
-          "streaming": null
+          "title": "The Children Are Watching Us",
+          "year": 1944,
+          "slug": "Early De Sica film showing transition to neorealism",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 61461,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vEkp2FoxUFpCGeioWdUS4wb7ezh.jpg"
         },
         {
-          "title": "Related Film 2",
-          "year": 1985,
-          "slug": "Another relevant film for further exploration",
-          "tmdb_id": 22222,
-          "poster_url": null,
-          "streaming": null
+          "title": "La Strada",
+          "year": 1954,
+          "slug": "Fellini's bridge between neorealism and new expressionism",
+          "streaming": "HBO Max",
+          "tmdb_id": 405,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rwjbT0zlsUDMztaCcWjlWuxaEL1.jpg"
+        },
+        {
+          "title": "The Earth Trembles",
+          "year": 1948,
+          "slug": "Visconti's study of Sicilian fishing community",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 43445,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xSaazq8Am0eLjapiAcCXadXZaqZ.jpg"
         }
       ]
     }
   },
-  "generatedAt": "2025-06-17T18:48:56.154Z",
+  "generatedAt": "2025-06-18T17:02:26.479Z",
   "version": "3.0",
   "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-18T17:02:26.479Z",
+  "lockedBy": "claude-generation-enhanced",
   "heroImage": "/images/hero/theme-3-movements/series-1-new-waves//2-italian-neorealism-truth-in-cinema.jpg"
 }

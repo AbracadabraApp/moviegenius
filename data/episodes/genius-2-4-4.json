@@ -20,57 +20,126 @@
     "subtitle": "Genre as activism"
   },
   "content": {
-    "opener": "Jordan Peele: Horror Through Social Commentary represents a significant development in cinema, exploring how filmmakers have approached this subject through innovative techniques and compelling storytelling.",
+    "opener": "Jordan Peele revolutionized modern horror by masterfully weaving racial discourse and social commentary into genre filmmaking, creating a new framework for addressing systemic inequality through psychological terror.",
     "sections": [
       {
         "type": "text",
-        "content": "Jordan Peele: Horror Through Social Commentary represents a fascinating chapter in cinema history, exploring themes and techniques that have shaped how we understand film as an art form. This episode examines the key developments, influential filmmakers, and cultural context that defined this important aspect of cinema. Through careful analysis of specific films and their impact, we'll explore how these works continue to influence contemporary filmmaking and our understanding of visual storytelling."
+        "content": "Peele's directorial debut \"Get Out\" (2017) marked a seismic shift in horror cinema, demonstrating how genre films could directly confront racial tensions while maintaining commercial appeal. The film's \"sunken place\" became an immediate cultural touchstone, representing the paralysis of Black voices in white-dominated spaces. Peele's technical precision is evident in his use of symmetric framing and purposeful color theory, particularly in scenes where Chris (Daniel Kaluuya) encounters the Armitage family. The film's genius lies in how it transforms microaggressions and liberal racism into literal horror elements, making white audiences uncomfortable while validating Black viewers' experiences."
       },
       {
         "type": "movies",
         "movies": [
           {
-            "title": "Example Film",
-            "year": 1970,
-            "slug": "A representative film that exemplifies the themes discussed in this episode",
-            "tmdb_id": 12345,
-            "poster_url": null,
-            "streaming": null
+            "title": "Get Out",
+            "year": 2017,
+            "slug": "A young Black photographer uncovers a disturbing plot while visiting his white girlfriend's family estate",
+            "streaming": "Netflix",
+            "tmdb_id": 419430,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tFXcEccSQMf3lfhfXKSU9iRBpa3.jpg"
+          },
+          {
+            "title": "Key & Peele \"Substitute Teacher\"",
+            "year": 2012,
+            "slug": "Comedy sketch that demonstrates Peele's early commentary on racial dynamics",
+            "streaming": "YouTube",
+            "tmdb_id": null,
+            "poster_url": null
           }
-        ]
-      },
-      {
-        "type": "explore_further",
-        "prompts": [
-          "How did the techniques discussed in Jordan Peele: Horror Through Social Commentary influence later filmmakers?"
         ]
       },
       {
         "type": "subhead",
-        "content": "Technical and Artistic Innovations"
+        "content": "Evolution of Style and Technique"
       },
       {
         "type": "text",
-        "content": "The technical innovations explored in this episode demonstrate how filmmaking craft serves storytelling purposes. By examining specific cinematographic, editorial, and sound design choices, we can understand how these films achieved their distinctive aesthetic and emotional impact. These techniques became influential templates that subsequent filmmakers would adopt, adapt, and evolve for their own creative purposes."
+        "content": "\"Us\" (2019) expanded Peele's thematic scope beyond explicit racial commentary to explore broader questions of American identity and class warfare. The film's complex doppelganger metaphor speaks to the suppressed underclass that supports privileged society. Cinematographer Mike Gioulakis employs underground spaces and mirrors to create a distinct visual language for the film's parallel worlds. Lupita Nyong'o's dual performance as Adelaide/Red anchors the film's exploration of privilege and suppression, while Peele's direction maintains tension through careful pacing and symbolic imagery."
       },
       {
         "type": "movies",
         "movies": [
           {
-            "title": "Another Example",
-            "year": 1975,
-            "slug": "Additional film that demonstrates the evolution of these techniques",
-            "tmdb_id": 67890,
-            "poster_url": null,
-            "streaming": null
+            "title": "Us",
+            "year": 2019,
+            "slug": "A family's beach vacation turns terrifying when their doppelgangers appear",
+            "streaming": "Prime Video",
+            "tmdb_id": 458723,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ux2dU1jQ2ACIMShzB3yP93Udpzc.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "With \"Nope\" (2022), Peele merged horror with science fiction while examining Hollywood's exploitation of spectacle and the entertainment industry's historical treatment of marginalized groups. The film's meta-commentary on viewing and being viewed is reinforced through cinematographer Hoyte van Hoytema's IMAX photography, creating vast, threatening skies that loom over the characters. The story of Haywood's ancestor, the unnamed Black jockey in Eadweard Muybridge's first moving pictures, serves as a powerful metaphor for Hollywood's erasure of Black contributions to cinema."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Nope",
+            "year": 2022,
+            "slug": "Siblings discover a mysterious force above their ranch and attempt to capture it on film",
+            "streaming": "Peacock",
+            "tmdb_id": 762504,
+            "poster_url": "https://image.tmdb.org/t/p/w500/AcKVlWaNVVVFQwro3nLXqPljcYA.jpg"
           }
         ]
       },
       {
         "type": "explore_further",
         "prompts": [
-          "What specific technical innovations made these films distinctive?",
-          "How do these techniques appear in contemporary cinema?"
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Peele's mastery of visual storytelling is particularly evident in his use of symbolic objects and recurring motifs. The teacup in \"Get Out,\" the scissors in \"Us,\" and the artificial eyes in \"Nope\" all serve as multifaceted symbols that deepen the films' themes. His collaboration with production designer Ruth De Jong has created distinctive visual worlds that feel both familiar and unsettling, using ordinary spaces to generate extraordinary tension. This attention to detail extends to his sound design, where silence and subtle audio cues build atmosphere as effectively as traditional jump scares."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Get Out Behind the Scenes",
+            "year": 2017,
+            "slug": "Documentary exploring Peele's directorial techniques",
+            "streaming": "YouTube",
+            "tmdb_id": null,
+            "poster_url": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The influence of Peele's approach extends beyond his own films, inspiring a new generation of filmmakers to tackle social issues through genre conventions. His success has opened doors for other Black directors in horror, such as Nia DaCosta's \"Candyman\" (2021), which Peele co-wrote and produced. His production company, Monkeypaw Productions, continues to support projects that blend social commentary with genre elements, demonstrating the commercial viability of politically engaged horror."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Candyman",
+            "year": 2021,
+            "slug": "A visual artist becomes obsessed with the Candyman legend in modern-day Chicago",
+            "streaming": "Prime Video",
+            "tmdb_id": 565028,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qeV15PpR8jFJA9TF9JPXIoqEgp1.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Peele's writing process deserves particular attention, as he spends years developing each screenplay to ensure multiple layers of meaning. His scripts function on both surface and subtextual levels, rewarding repeat viewings with new insights. The dialogue often contains double meanings that resonate differently with various audience demographics, creating a unique viewing experience that changes based on the viewer's social perspective and life experiences."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Twilight Zone",
+            "year": 2019,
+            "slug": "Peele's revival of the classic series showcasing his anthology storytelling",
+            "streaming": "Paramount+",
+            "tmdb_id": 773800,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pJy5wxsx5bb86UfJ7DP08mWTTs3.jpg"
+          }
         ]
       }
     ],
@@ -78,26 +147,37 @@
       "title": "More Ideas",
       "movies": [
         {
-          "title": "Related Film 1",
-          "year": 1980,
-          "slug": "A film that connects to the themes explored in this episode",
-          "tmdb_id": 11111,
-          "poster_url": null,
-          "streaming": null
+          "title": "Keanu",
+          "year": 2016,
+          "slug": "Early example of Peele's directing style in comedy format",
+          "streaming": "HBO Max",
+          "tmdb_id": 342521,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dPWlBmCixh9k3Jjb7c7jkIaxBbL.jpg"
         },
         {
-          "title": "Related Film 2",
-          "year": 1985,
-          "slug": "Another relevant film for further exploration",
-          "tmdb_id": 22222,
-          "poster_url": null,
-          "streaming": null
+          "title": "BlacKkKlansman",
+          "year": 2018,
+          "slug": "Spike Lee film produced by Peele showing his influence on other social commentary films",
+          "streaming": "Netflix",
+          "tmdb_id": 487558,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8jxqAvSDoneSKRczaK8v9X5gqBp.jpg"
+        },
+        {
+          "title": "Lovecraft Country",
+          "year": 2020,
+          "slug": "HBO series produced by Peele mixing horror and racial commentary",
+          "streaming": "HBO Max",
+          "tmdb_id": null,
+          "poster_url": null
         }
       ]
     }
   },
-  "generatedAt": "2025-06-17T18:48:56.153Z",
+  "generatedAt": "2025-06-18T17:01:24.903Z",
   "version": "3.0",
   "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-18T17:01:24.903Z",
+  "lockedBy": "claude-generation-enhanced",
   "heroImage": "/images/hero/theme-2-directors/series-4-contemporary-auteurs//4-jordan-peele-horror-through-social-commentary.jpg"
 }
