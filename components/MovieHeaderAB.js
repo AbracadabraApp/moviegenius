@@ -16,6 +16,7 @@
  */
 
 import { isFeatureEnabled, FLAGS, getFeatureMetadata } from '../lib/featureFlags';
+import { trackVariantRender, trackVariantError, isTestRolledBack } from '../lib/abTestMonitoring';
 import { useState, useEffect } from 'react';
 import MovieHeader from './MovieHeader';       // A variant (original)
 import MovieHeaderB from './MovieHeaderB';     // B variant (new format)
