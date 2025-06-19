@@ -10,6 +10,11 @@ import geniusConfig from '../../data/genius-config.json';
 
 export default function GeniusPage({ pageType, data, themeId, seriesId, episodeId }) {
   const router = useRouter();
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const handleAsk = (query) => {
     router.push({
@@ -17,6 +22,23 @@ export default function GeniusPage({ pageType, data, themeId, seriesId, episodeI
       query: { q: query }
     });
   };
+
+  // Show loading state during hydration or if data is missing
+  if (!isClient || !pageType) {
+    return (
+      <PhoneFrame active="genius">
+        <div style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '100%',
+          fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+        }}>
+          Loading...
+        </div>
+      </PhoneFrame>
+    );
+  }
 
   // Route to appropriate page component
   switch (pageType) {

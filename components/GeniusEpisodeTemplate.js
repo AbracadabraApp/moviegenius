@@ -13,9 +13,25 @@ export default function GeniusEpisodeTemplate({
   heroImage, 
   estimatedReadTime = "8 min read" 
 }) {
+  const [isClient, setIsClient] = useState(false);
+  
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   // Guard against undefined episodeData BEFORE any hooks
-  if (!episodeData || !episodeData.theme || !episodeData.series || !episodeData.episode) {
-    return <div>Loading episode...</div>;
+  if (!isClient || !episodeData || !episodeData.theme || !episodeData.series || !episodeData.episode) {
+    return (
+      <div style={{ 
+        display: 'flex', 
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        height: '100vh',
+        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+      }}>
+        Loading episode...
+      </div>
+    );
   }
   
   const router = useRouter();
