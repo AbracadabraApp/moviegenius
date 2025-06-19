@@ -35,7 +35,16 @@ export default function MovieHeaderAB(props) {
   useEffect(() => {
     if (!isClient) return; // Skip during SSR
 
+    const testName = 'movie_header_format';
+
     try {
+      // Check for emergency rollback first
+      if (isTestRolledBack(testName)) {
+        console.warn('A/B test under emergency rollback, serving A variant');
+        setVariant('A');
+        return;
+      }
+
       const shouldShowB = isFeatureEnabled(FLAGS.HEADER_B_VARIANT);
       const newVariant = shouldShowB ? 'B' : 'A';
       
@@ -46,7 +55,7 @@ export default function MovieHeaderAB(props) {
         if (typeof window !== 'undefined' && window.gtag) {
           window.gtag('event', 'ab_test_variant_shown', {
             event_category: 'A/B Testing',
-            event_label: 'movie_header_format',
+            event_label: testName,
             variant: newVariant,
             custom_parameter_1: getFeatureMetadata(FLAGS.HEADER_B_VARIANT)?.userBucket
           });
@@ -57,14 +66,8 @@ export default function MovieHeaderAB(props) {
       setError(err);
       setVariant('A'); // Always fallback to A variant on error
       
-      // Error tracking
-      if (typeof window !== 'undefined' && window.gtag) {
-        window.gtag('event', 'ab_test_error', {
-          event_category: 'A/B Testing',
-          event_label: 'movie_header_format',
-          error_message: err.message
-        });
-      }
+      // Track error in monitoring system
+      trackVariantError(testName, variant, err, 'feature_flag_logic');
     }
   }, [isClient, variant]);
 
@@ -80,27 +83,35 @@ export default function MovieHeaderAB(props) {
   }
 
   try {
+    const testName = 'movie_header_format';
+    const renderStart = performance.now();
+    
     // Serve the appropriate variant
+    let component;
     switch (variant) {
       case 'B':
-        return <MovieHeaderB {...props} />;
+        component = <MovieHeaderB {...props} />;
+        break;
       case 'A':
       default:
-        return <MovieHeader {...props} />;
+        component = <MovieHeader {...props} />;
+        break;
     }
+    
+    // Track successful render
+    const renderTime = performance.now() - renderStart;
+    trackVariantRender(testName, variant, renderTime);
+    
+    return component;
+    
   } catch (renderError) {
+    const testName = 'movie_header_format';
+    
     // Component-level error boundary
     console.error('Error rendering header variant:', renderError);
     
-    // Track rendering errors
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'ab_test_render_error', {
-        event_category: 'A/B Testing',
-        event_label: 'movie_header_format',
-        variant: variant,
-        error_message: renderError.message
-      });
-    }
+    // Track rendering errors in monitoring system
+    trackVariantError(testName, variant, renderError, 'component_render');
     
     // Always fallback to A variant
     return <MovieHeader {...props} />;
