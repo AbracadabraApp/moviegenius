@@ -375,47 +375,23 @@ export async function getStaticProps({ params }) {
     return { notFound: true };
   }
   
-  // Load episode content from database
+  // Load episode content from JSON files (temporary fix while troubleshooting production database)
   let episodeContent = null;
   try {
-    const { EpisodeService } = await import('../../lib/supabase.js');
-    const episodeData = await EpisodeService.getEpisode(parseInt(themeId), parseInt(seriesId), parseInt(episodeId));
+    const fs = require('fs');
+    const path = require('path');
+    const contentPath = path.join(process.cwd(), 'data', 'episodes', `genius-${themeId}-${seriesId}-${episodeId}.json`);
     
-    if (episodeData) {
-      episodeContent = episodeData.content;
+    if (fs.existsSync(contentPath)) {
+      const contentData = fs.readFileSync(contentPath, 'utf8');
+      const parsedContent = JSON.parse(contentData);
+      episodeContent = parsedContent.content;
+      console.log(`Loaded episode ${themeId}-${seriesId}-${episodeId} from JSON file`);
     } else {
-      // Fallback to file system for backward compatibility during migration
-      console.log(`Episode ${themeId}-${seriesId}-${episodeId} not found in database, trying file system...`);
-      
-      const fs = require('fs');
-      const path = require('path');
-      const contentPath = path.join(process.cwd(), 'data', 'episodes', `genius-${themeId}-${seriesId}-${episodeId}.json`);
-      
-      if (fs.existsSync(contentPath)) {
-        const contentData = fs.readFileSync(contentPath, 'utf8');
-        const parsedContent = JSON.parse(contentData);
-        episodeContent = parsedContent.content;
-        console.log(`Loaded episode ${themeId}-${seriesId}-${episodeId} from file system as fallback`);
-      }
+      console.log(`Episode file not found: ${contentPath}`);
     }
   } catch (error) {
     console.error(`Error loading episode content for genius ${themeId}-${seriesId}-${episodeId}:`, error);
-    
-    // Try file system fallback on database error
-    try {
-      const fs = require('fs');
-      const path = require('path');
-      const contentPath = path.join(process.cwd(), 'data', 'episodes', `genius-${themeId}-${seriesId}-${episodeId}.json`);
-      
-      if (fs.existsSync(contentPath)) {
-        const contentData = fs.readFileSync(contentPath, 'utf8');
-        const parsedContent = JSON.parse(contentData);
-        episodeContent = parsedContent.content;
-        console.log(`Loaded episode ${themeId}-${seriesId}-${episodeId} from file system as error fallback`);
-      }
-    } catch (fallbackError) {
-      console.error(`File system fallback also failed for ${themeId}-${seriesId}-${episodeId}:`, fallbackError);
-    }
   }
   
   // Episode page
