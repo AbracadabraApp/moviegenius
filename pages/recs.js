@@ -12,8 +12,9 @@ export default function RecsPage() {
   const [currentHeroImage, setCurrentHeroImage] = useState(1)
   const [currentSeries, setCurrentSeries] = useState(null)
   const [currentSeriesId, setCurrentSeriesId] = useState(null)
+  const [isClient, setIsClient] = useState(false)
 
-  // Get today's series based on daily rotation
+  // Get today's series based on daily rotation (client-side only)
   const getTodaysSeries = () => {
     const today = new Date().toDateString() // This changes daily
     const seriesKeys = Object.keys(seriesConfig)
@@ -34,10 +35,16 @@ export default function RecsPage() {
   }
 
   useEffect(() => {
-    const { series, seriesId } = getTodaysSeries()
-    setCurrentSeries(series)
-    setCurrentSeriesId(seriesId)
+    setIsClient(true)
   }, [])
+
+  useEffect(() => {
+    if (isClient) {
+      const { series, seriesId } = getTodaysSeries()
+      setCurrentSeries(series)
+      setCurrentSeriesId(seriesId)
+    }
+  }, [isClient])
 
   // Hero image text color settings - adjust per image
   const heroTextSettings = {
@@ -89,17 +96,17 @@ export default function RecsPage() {
           <div style={styles.stickyTitleHeader}>
             <div style={styles.titleHeaderField}>
               <div style={styles.seriesTitle}>
-                {currentSeries ? currentSeries.title : 'Loading...'}
+                {isClient && currentSeries ? currentSeries.title : 'Loading...'}
               </div>
               <div style={styles.seriesSubhead}>
-                {currentSeries ? currentSeries.description : 'Loading educational series content...'}
+                {isClient && currentSeries ? currentSeries.description : 'Loading educational series content...'}
               </div>
             </div>
           </div>
         
           <div style={styles.content}>
             {/* Dynamic Series Episode Cards */}
-            {currentSeries && (
+            {isClient && currentSeries && (
               <div style={styles.episodesSection}>
                 {currentSeries.episodes.map((episode) => (
                   <EpisodeCard
@@ -118,7 +125,7 @@ export default function RecsPage() {
           <div style={styles.otherSeriesFooter}>
             <div style={styles.footerTitle}>Other Series</div>
             <div style={styles.seriesLinks}>
-              {Object.entries(seriesConfig)
+              {isClient ? Object.entries(seriesConfig)
                 .filter(([id]) => id !== currentSeriesId)
                 .slice(0, 4)
                 .map(([id, series]) => (
@@ -129,7 +136,12 @@ export default function RecsPage() {
                   >
                     — {series.title.split(':')[0]} {/* Show just the main title before colon */}
                   </div>
-                ))}
+                )) : [
+                  <div key="loading-1" style={styles.seriesLink}>— Classic Film Noir</div>,
+                  <div key="loading-2" style={styles.seriesLink}>— Suspense & Horror</div>,
+                  <div key="loading-3" style={styles.seriesLink}>— Comedy Through the Ages</div>,
+                  <div key="loading-4" style={styles.seriesLink}>— Women Directors</div>
+                ]}
               <div 
                 style={styles.moreLink}
                 onClick={() => router.push('/recs/series')}
