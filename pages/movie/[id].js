@@ -5,6 +5,7 @@ import { createClient } from '@supabase/supabase-js';
 import PhoneFrame from '../../components/PhoneFrame';
 import MediaCard from '../../components/MediaCard';
 import MovieHeader from '../../components/MovieHeader';
+import MovieHeaderLarge from '../../components/MovieHeaderLarge';
 import AskInputBar from '../../components/AskInputBar';
 import { ArrowLeft, Heart, Bookmark } from 'lucide-react';
 import { FavoritesManager } from '../../components/FavoritesManager';
@@ -292,8 +293,8 @@ export default function MovieDetailPage({ title, year, initialSlug, initialPoste
           <AskInputBar onSubmit={handleAsk} />
         </div>
         
-        {/* Movie header using dedicated MovieHeader component */}
-        <MovieHeader
+        {/* Movie header - using large format */}
+        <MovieHeaderLarge
           title={title}
           year={year}
           initialSlug={initialSlug}
@@ -436,12 +437,12 @@ const styles = {
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   inputArea: {
-    padding: '16px',
+    padding: '5px',
     backgroundColor: '#ffffff',
   },
   claudeSection: {
     flex: 1,
-    padding: '0 16px 24px',
+    padding: '0 36px 24px',
     marginTop: '0px',
   },
   claudeContent: {

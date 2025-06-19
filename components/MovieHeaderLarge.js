@@ -152,7 +152,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center', // Center everything
-    padding: '16px',
+    padding: '0px 16px 16px 16px',
     width: '100%',
     boxSizing: 'border-box',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
@@ -189,11 +189,11 @@ const styles = {
   posterContainer: {
     display: 'flex',
     justifyContent: 'flex-start',
-    marginBottom: '8px',
+    marginBottom: '5px',
     paddingLeft: '20px',
     paddingRight: '20px',
     paddingTop: '4px',
-    paddingBottom: '10px',
+    paddingBottom: '5px',
   },
   largePoster: {
     width: '100%',     // Fill container width
