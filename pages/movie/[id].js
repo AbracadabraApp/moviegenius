@@ -23,7 +23,6 @@ const MovieAnalysisWithEntities = dynamic(() => import('../../components/EntityL
 import loadingMessages from '../../data/loading-messages.json';
 
 export default function MovieDetailPage({ title, year, initialSlug, initialPoster, initialStreaming, tmdbId, error }) {
-  console.log('🚨 MOVIE COMPONENT RENDERING!', { title, year, tmdbId });
   const router = useRouter();
   const { id } = router.query;
   const [isLoadingAnalysis, setIsLoadingAnalysis] = useState(true);
