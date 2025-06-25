@@ -102,18 +102,18 @@ export default function MovieHeaderLarge({
   // Fetch trailer data when component mounts
   useEffect(() => {
     const fetchTrailer = async () => {
-      if (!title) return;
+      if (!tmdbId) return;
       
       setIsLoadingTrailer(true);
       try {
-        const response = await fetch(`/api/youtube-trailer-search?title=${encodeURIComponent(title)}&year=${year}`);
+        const response = await fetch(`/api/tmdb-trailer?tmdbId=${tmdbId}`);
         const data = await response.json();
         
         if (data.videoId) {
           setTrailerVideoId(data.videoId);
-          console.log(`✅ Trailer found for ${title}: ${data.title}`);
+          console.log(`✅ Trailer found for ${title}: ${data.title} (${data.site})`);
         } else {
-          console.log(`❌ No trailer found for ${title}`);
+          console.log(`❌ No trailer found for ${title} (TMDB ID: ${tmdbId})`);
         }
       } catch (error) {
         console.error('Error fetching trailer:', error);
@@ -123,7 +123,7 @@ export default function MovieHeaderLarge({
     };
 
     fetchTrailer();
-  }, [title, year]);
+  }, [tmdbId, title]);
 
   // Handle trailer modal
   const handlePlayTrailer = () => {
@@ -167,21 +167,6 @@ export default function MovieHeaderLarge({
           />
         </button>
         
-        {/* Play Trailer Button - Only show if trailer available */}
-        {trailerVideoId && (
-          <button
-            onClick={handlePlayTrailer}
-            style={styles.actionButton}
-            aria-label="Play trailer"
-          >
-            <PlayCircle
-              size={28}
-              color="#6b7280"
-              fill="none"
-            />
-          </button>
-        )}
-        
         <button
           onClick={() => {
             try {
@@ -201,6 +186,21 @@ export default function MovieHeaderLarge({
             fill={hearted ? '#ef4444' : 'none'}
           />
         </button>
+        
+        {/* Play Trailer Button - Only show if trailer available */}
+        {trailerVideoId && (
+          <button
+            onClick={handlePlayTrailer}
+            style={styles.actionButton}
+            aria-label="Play trailer"
+          >
+            <PlayCircle
+              size={28}
+              color="#6b7280"
+              fill="none"
+            />
+          </button>
+        )}
       </div>
       
       {/* Large poster at top, left-aligned */}
@@ -272,7 +272,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center', // Center everything
-    padding: '0px 16px 8px 16px',
+    padding: '0px 16px 0px 16px',
     width: '100%',
     boxSizing: 'border-box',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
@@ -281,7 +281,7 @@ const styles = {
   actionBarContainer: {
     position: 'absolute',
     right: '16px',
-    bottom: '130px',
+    bottom: '100px',
     display: 'flex',
     flexDirection: 'column',
     gap: '16px',
@@ -312,17 +312,15 @@ const styles = {
     marginBottom: '5px',
     paddingLeft: '20px',
     paddingRight: '20px',
-    paddingTop: '4px',
+    paddingTop: '0px',
     paddingBottom: '5px',
   },
   largePoster: {
     width: '100%',     // Fill container width
-    height: 'auto',   // Maintain aspect ratio
-    objectFit: 'cover',
+    height: '400px',   // Fixed height for consistent layout
+    objectFit: 'cover', // Intelligent center cropping
     borderRadius: '12px',
     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)', // Add some shadow for depth
-    clipPath: 'inset(0 0 30px 0)', // Crop 30px from bottom
-    // Note: Browser fallbacks handled via CSS detection in real implementation
   },
   titleContainer: {
     display: 'flex',
@@ -330,8 +328,8 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'flex-start',
     textAlign: 'left',
-    marginBottom: '7px', // Reduced from 12px to 7px (40% tighter)
-    marginTop: '-30px',
+    marginBottom: '3px',
+    marginTop: '0px',
     gap: '8px',
     width: '100%',
     paddingLeft: '20px',
@@ -364,7 +362,7 @@ const styles = {
     width: '100%',
     textAlign: 'left',
     marginBottom: '0px',
-    marginTop: '-10px', // Move up 10px (was -20px, now -10px = moved down 10px)
+    marginTop: '0px',
     paddingLeft: '20px',
   },
   streamingText: {
