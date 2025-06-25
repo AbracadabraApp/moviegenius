@@ -17,13 +17,24 @@ MediaCard is the **core component** used throughout the entire application:
 ## 🚫 Prohibited Changes
 
 **DO NOT:**
-- Modify component props or interface
+- Modify component props or interface (**ESPECIALLY tmdbId prop**)
 - Change styling or layout significantly  
-- Remove or alter click/navigation behavior
+- Remove or alter click/navigation behavior (**CRITICAL: handleCardClick function**)
 - Modify poster loading or caching logic
 - Change favorites/bookmark functionality
 - Alter slug/text display logic
 - Add new dependencies or imports
+
+## 🚨 **CRITICAL: TMDB ID Navigation** 
+
+**FREQUENTLY BROKEN:** The tmdbId prop and navigation logic are often modified, breaking movie page navigation.
+
+**PROTECTED CODE SECTIONS:**
+1. **Props interface** (Line ~50): `tmdbId` prop must remain unchanged
+2. **Navigation function** (Lines 200-213): `handleCardClick` logic must preserve TMDB ID routing
+3. **State management** (Lines 56, 65-68): `movieTmdbId` state updates must remain intact
+
+**If TMDB ID navigation breaks:** Check that MediaCard receives `tmdbId={movie.tmdb_id}` and that the parsing functions in caller components include `tmdb_id: null` in movie objects.
 
 ## ✅ Approved Changes Only
 

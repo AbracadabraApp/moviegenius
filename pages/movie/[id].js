@@ -171,11 +171,13 @@ export default function MovieDetailPage({ title, year, initialSlug, initialPoste
           
           if (parts.length >= 2) { // At least title and year
             const [title, year, description, streaming] = parts;
+            // 🔒 CRITICAL: Always preserve TMDB ID for navigation
             const movieObj = {
               title: title?.trim() || 'Unknown Title',
               year: parseInt(year?.trim()) || new Date().getFullYear(),
               slug: description?.trim() || 'No description available',
-              poster: '/images/placeholder-poster.jpg' // Default poster
+              poster: '/images/placeholder-poster.jpg', // Default poster
+              tmdb_id: null // Will be fetched by MediaCard if needed
             };
             
             currentMovies.push(movieObj);
@@ -193,11 +195,13 @@ export default function MovieDetailPage({ title, year, initialSlug, initialPoste
           const parts = movieLine.split('|');
           
           const [title, year, description, streaming] = parts;
+          // 🔒 CRITICAL: Always preserve TMDB ID for navigation
           const movieObj = {
             title: title?.trim() || 'Unknown Title',
             year: parseInt(year?.trim()) || new Date().getFullYear(),
             slug: description?.trim() || 'No description available',
-            poster: '/images/placeholder-poster.jpg' // Default poster
+            poster: '/images/placeholder-poster.jpg', // Default poster
+            tmdb_id: null // Will be fetched by MediaCard if needed
           };
           
           moreIdeasMovies.push(movieObj);
@@ -206,11 +210,13 @@ export default function MovieDetailPage({ title, year, initialSlug, initialPoste
         const parts = trimmedLine.split('|');
         
         const [title, year, description, streaming] = parts;
+        // 🔒 CRITICAL: Always preserve TMDB ID for navigation
         const movieObj = {
           title: title?.trim() || 'Unknown Title',
           year: parseInt(year?.trim()) || new Date().getFullYear(),
           slug: description?.trim() || 'No description available',
-          poster: '/images/placeholder-poster.jpg' // Default poster
+          poster: '/images/placeholder-poster.jpg', // Default poster
+          tmdb_id: null // Will be fetched by MediaCard if needed
         };
         
         moreIdeasMovies.push(movieObj);
@@ -589,9 +595,21 @@ export async function getStaticProps({ params }) {
       
       return response;
     } else {
-      // Movie not found - return 404
+      // Movie not found in database - try to create it via load-movie-page API
+      console.log(`Movie ${tmdbId} not found in database, attempting to create...`);
+      
+      // Return a placeholder that will trigger the load-movie-page API
       return {
-        notFound: true
+        props: {
+          title: 'TMDB_FETCH_REQUIRED',
+          year: new Date().getFullYear(),
+          initialSlug: 'Loading movie information...',
+          initialPoster: '/images/placeholder-poster.jpg',
+          initialStreaming: null,
+          tmdbId: tmdbId,
+          error: null
+        },
+        revalidate: 60 // Revalidate quickly for new movies
       };
     }
   } catch (error) {
@@ -636,7 +654,7 @@ export async function getStaticPaths() {
 
     return {
       paths,
-      fallback: false // All pages pre-generated, no fallback needed!
+      fallback: 'blocking' // Allow dynamic generation for movies not in database
     };
 
   } catch (error) {
