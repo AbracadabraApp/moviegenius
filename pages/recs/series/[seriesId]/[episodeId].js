@@ -16,22 +16,6 @@ export default function SeriesEpisodePage({ series, episode, otherEpisodes, seri
   const [isLoadingExplore, setIsLoadingExplore] = useState(false);
   const [error, setError] = useState(null);
 
-  // If we're in fallback mode, show loading
-  if (router.isFallback) {
-    return (
-      <PhoneFrame active="recs">
-        <div style={styles.container}>
-          <div style={styles.fixedInputArea}>
-            <AskInputBar onSubmit={() => {}} />
-          </div>
-          <div style={styles.loadingContainer}>
-            <div style={styles.loadingText}>Loading episode...</div>
-          </div>
-        </div>
-      </PhoneFrame>
-    );
-  }
-
   const handleAsk = (question) => {
     router.push(`/ask?q=${encodeURIComponent(question)}`);
   };
@@ -65,6 +49,21 @@ export default function SeriesEpisodePage({ series, episode, otherEpisodes, seri
     loadExploreFurther();
   }, [seriesId, episodeId]);
 
+  // If we're in fallback mode, show loading
+  if (router.isFallback) {
+    return (
+      <PhoneFrame active="recs">
+        <div style={styles.container}>
+          <div style={styles.fixedInputArea}>
+            <AskInputBar onSubmit={() => {}} />
+          </div>
+          <div style={styles.loadingContainer}>
+            <div style={styles.loadingText}>Loading episode...</div>
+          </div>
+        </div>
+      </PhoneFrame>
+    );
+  }
 
   if (error) {
     return (
