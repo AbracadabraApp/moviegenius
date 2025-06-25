@@ -117,6 +117,29 @@ const LOCKED_COMPONENTS = {
         errorMsg: 'CRITICAL: Loading messages not using film-themed content'
       }
     ]
+  },
+  'components/BackButton.js': {
+    lockFile: null,
+    criticalSections: [
+      {
+        name: 'Smart navigation logic',
+        pattern: /method === 'smart'/,
+        required: true,
+        errorMsg: 'CRITICAL: BackButton smart navigation logic modified'
+      },
+      {
+        name: 'Context-aware fallbacks',
+        pattern: /case 'movie'|case 'person'|case 'list'/,
+        required: true,
+        errorMsg: 'CRITICAL: BackButton context-aware fallbacks removed'
+      },
+      {
+        name: 'Browser history integration',
+        pattern: /window\.history\.length/,
+        required: true,
+        errorMsg: 'CRITICAL: BackButton browser history detection removed'
+      }
+    ]
   }
 };
 

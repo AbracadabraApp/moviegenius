@@ -11,6 +11,7 @@ import { useRouter } from 'next/router';
 import MediaCard from '../../components/MediaCard';
 import PhoneFrame from '../../components/PhoneFrame';
 import AskInputBar from '../../components/AskInputBar';
+import BackButton from '../../components/BackButton';
 
 // Parse Claude content into interleaved sections (like movie page)
 function parseClaudeContentIntoSections(content) {
@@ -207,6 +208,9 @@ export default function MovieListPage() {
     return (
       <PhoneFrame>
         <div style={styles.container}>
+          {/* Back button for navigation */}
+          <BackButton variant="icon" context="list" position="top-left" />
+          
           <div style={styles.inputArea}>
             <AskInputBar />
           </div>
@@ -222,6 +226,9 @@ export default function MovieListPage() {
     return (
       <PhoneFrame>
         <div style={styles.container}>
+          {/* Back button for navigation */}
+          <BackButton variant="icon" context="list" position="top-left" />
+          
           <div style={styles.inputArea}>
             <AskInputBar />
           </div>
@@ -237,6 +244,9 @@ export default function MovieListPage() {
   return (
     <PhoneFrame>
       <div style={styles.container}>
+        {/* Back button for navigation */}
+        <BackButton variant="icon" context="list" position="top-left" />
+        
         <div style={styles.inputArea}>
           <AskInputBar />
         </div>

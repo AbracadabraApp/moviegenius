@@ -7,6 +7,7 @@ import MediaCard from '../../components/MediaCard';
 import MovieHeader from '../../components/MovieHeader';
 import MovieHeaderLarge from '../../components/MovieHeaderLarge';
 import AskInputBar from '../../components/AskInputBar';
+import BackButton from '../../components/BackButton';
 import { ArrowLeft, Heart, Bookmark } from 'lucide-react';
 import { FavoritesManager } from '../../components/FavoritesManager';
 import dynamic from 'next/dynamic';
@@ -294,6 +295,9 @@ export default function MovieDetailPage({ title, year, initialSlug, initialPoste
   return (
     <PhoneFrame>
       <div style={styles.container}>
+        {/* Back button for navigation */}
+        <BackButton variant="icon" context="movie" position="top-left" />
+        
         <div style={styles.inputArea}>
           <AskInputBar onSubmit={handleAsk} />
         </div>

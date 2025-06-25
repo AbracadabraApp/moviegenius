@@ -6,6 +6,7 @@ import PhoneFrame from '../../components/PhoneFrame';
 import PersonHeader from '../../components/PersonHeader';
 import MediaCard from '../../components/MediaCard';
 import AskInputBar from '../../components/AskInputBar';
+import BackButton from '../../components/BackButton';
 import { ArrowLeft, Heart, Bookmark } from 'lucide-react';
 import { FavoritesManager } from '../../components/FavoritesManager';
 import { underlineProperNames } from '../../lib/proper-names';
@@ -326,6 +327,9 @@ export default function PersonDetailPage({ name, birthYear, deathYear, initialBi
     return (
       <PhoneFrame>
         <div style={styles.container}>
+          {/* Back button for navigation */}
+          <BackButton variant="icon" context="person" position="top-left" />
+          
           <div style={styles.inputArea}>
             <AskInputBar onSubmit={handleAsk} />
           </div>
@@ -340,6 +344,9 @@ export default function PersonDetailPage({ name, birthYear, deathYear, initialBi
   return (
     <PhoneFrame>
       <div style={styles.container}>
+        {/* Back button for navigation */}
+        <BackButton variant="icon" context="person" position="top-left" />
+        
         <div style={styles.inputArea}>
           <AskInputBar onSubmit={handleAsk} />
         </div>
