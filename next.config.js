@@ -11,8 +11,9 @@ process.env.ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY || 'placeholder-an
 
 const nextConfig = {
   eslint: {
-    // Disable ESLint during builds for now (warnings block production build)
-    ignoreDuringBuilds: true,
+    // ESLint enabled for production builds - only fail on errors, not warnings
+    ignoreDuringBuilds: false,
+    dirs: ['pages', 'components', 'lib', 'hooks'],
   },
   
   // Environment variables

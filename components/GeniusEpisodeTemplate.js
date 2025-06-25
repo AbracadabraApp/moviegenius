@@ -13,13 +13,56 @@ export default function GeniusEpisodeTemplate({
   heroImage, 
   estimatedReadTime = "8 min read" 
 }) {
+  // ALL HOOKS MUST BE CALLED BEFORE ANY EARLY RETURNS
   const [isClient, setIsClient] = useState(false);
+  const router = useRouter();
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const [enableLinking, setEnableLinking] = useState(true);
+  const [episodePeople, setEpisodePeople] = useState(null);
+  const [peopleLoading, setPeopleLoading] = useState(true);
   
   useEffect(() => {
     setIsClient(true);
   }, []);
 
-  // Guard against undefined episodeData BEFORE any hooks
+  // Extract people from episode movies
+  useEffect(() => {
+    if (!episodeData?.episodeContent) return;
+    
+    async function loadEpisodePeople() {
+      try {
+        setPeopleLoading(true);
+        const people = await extractEpisodePeople(episodeData.episodeContent);
+        setEpisodePeople(people);
+        
+        // Log people summary for debugging
+        const summary = getEpisodePeopleSummary(people);
+        console.log('Episode people loaded:', summary);
+      } catch (error) {
+        console.error('Failed to load episode people:', error);
+        setEpisodePeople({ directors: [], actors: [], writers: [], allPeople: [] });
+      } finally {
+        setPeopleLoading(false);
+      }
+    }
+    
+    loadEpisodePeople();
+  }, [episodeData?.episodeContent]);
+
+  // Track scroll progress for reading indicator
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.scrollY;
+      const maxScroll = document.body.scrollHeight - window.innerHeight;
+      const progress = Math.min(scrolled / maxScroll, 1);
+      setScrollProgress(progress);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Early return - but all hooks are already called above
   if (!isClient || !episodeData || !episodeData.theme || !episodeData.series || !episodeData.episode) {
     return (
       <div style={{ 
@@ -34,54 +77,11 @@ export default function GeniusEpisodeTemplate({
     );
   }
   
-  const router = useRouter();
-  const [scrollProgress, setScrollProgress] = useState(0);
-  const [enableLinking, setEnableLinking] = useState(true);
-  const [episodePeople, setEpisodePeople] = useState(null);
-  const [peopleLoading, setPeopleLoading] = useState(true);
-  
   const { theme, series, episode, episodeContent } = episodeData;
   const content = episodeContent;
   
   // Extract all movies from episode for linking
   const episodeMovies = extractEpisodeMovies(content);
-
-  // Extract people from episode movies
-  useEffect(() => {
-    async function loadEpisodePeople() {
-      try {
-        setPeopleLoading(true);
-        const people = await extractEpisodePeople(content);
-        setEpisodePeople(people);
-        
-        // Log people summary for debugging
-        const summary = getEpisodePeopleSummary(people);
-        console.log('Episode people loaded:', summary);
-      } catch (error) {
-        console.error('Failed to load episode people:', error);
-        setEpisodePeople({ directors: [], actors: [], writers: [], allPeople: [] });
-      } finally {
-        setPeopleLoading(false);
-      }
-    }
-    
-    if (content) {
-      loadEpisodePeople();
-    }
-  }, [content]);
-
-  // Track scroll progress for reading indicator
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrolled = window.scrollY;
-      const maxScroll = document.body.scrollHeight - window.innerHeight;
-      const progress = Math.min(scrolled / maxScroll, 1);
-      setScrollProgress(progress);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const handleBack = () => {
     router.push(`/genius/${theme.id}/${series.id}`);
