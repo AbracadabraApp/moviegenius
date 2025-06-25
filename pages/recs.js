@@ -4,7 +4,7 @@
  * Captures user preferences, explains features, and provides personalized recommendations.
  * Flow: Streaming → Episode Testing → Queue Tutorial → Recommendations → Footer
  */
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import PhoneFrame from '../components/PhoneFrame';
 import { Play, Plus, Heart, ChevronRight, Star } from 'lucide-react';
@@ -20,6 +20,13 @@ export default function Landing() {
     completedTutorial: false
   });
   const [showAllPlatforms, setShowAllPlatforms] = useState(false);
+  const [currentRotation, setCurrentRotation] = useState(0); // Fixed rotation for SSR
+
+  // Set rotation based on time only on client-side
+  useEffect(() => {
+    const rotation = Math.floor(Date.now() / (1000 * 60 * 5)) % 3;
+    setCurrentRotation(rotation);
+  }, []);
 
   // Available streaming services using site structure
   const streamingServices = [
@@ -59,8 +66,6 @@ export default function Landing() {
     ['/images/posters/blade-runner.jpg', '/images/posters/2001-a-space-odyssey.jpg', '/images/posters/e-t-the-extra-terrestrial.jpg'],
     ['/images/posters/psycho.jpg', '/images/posters/the-silence-of-the-lambs.jpg', '/images/posters/vertigo.jpg']
   ];
-  
-  const currentRotation = Math.floor(Date.now() / (1000 * 60 * 5)) % 3; // Rotate every 5 minutes
   
   const testEpisodes = [
     {

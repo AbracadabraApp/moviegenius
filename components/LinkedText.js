@@ -11,8 +11,10 @@ export default function LinkedText({
   linkStyle = {},
   enableLinking = true 
 }) {
+  // ALL HOOKS MUST BE CALLED BEFORE ANY EARLY RETURNS
   const router = useRouter();
 
+  // Early return - but hooks are already called above
   if (!enableLinking || !Array.isArray(parts)) {
     // Fallback to plain text
     const text = Array.isArray(parts) ? parts.join('') : parts;

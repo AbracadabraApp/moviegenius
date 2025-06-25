@@ -79,7 +79,7 @@ export default function MovieAnalysisWithEntities({
     };
 
     const lines = content.split('\n').filter(line => line.trim());
-    let currentSection = 'paragraphs';
+    const currentSection = 'paragraphs';
 
     for (const line of lines) {
       if (line.startsWith('PARAGRAPH:')) {
