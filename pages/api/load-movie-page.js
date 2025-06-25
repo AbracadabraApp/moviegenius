@@ -93,14 +93,39 @@ export default async function handler(req, res) {
     console.log('📄 Loading movie page for TMDB ID:', tmdb_id);
 
     // Step 1: Load movie from database
-    const { data: movie, error: movieError } = await supabase
+    const { data: movieData, error: movieError } = await supabase
       .from('movies')
       .select('*')
       .eq('tmdb_id', tmdb_id)
       .single();
+    
+    let movie = movieData;
 
     if (movieError || !movie) {
-      return res.status(404).json({ error: 'Movie not found in database' });
+      console.log(`Movie ${tmdb_id} not found in database, attempting to create from TMDB...`);
+      
+      // Try to create the movie via create-media-card API
+      try {
+        const mediaCardResponse = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/api/create-media-card`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ tmdb_id: tmdb_id })
+        });
+        
+        if (mediaCardResponse.ok) {
+          const mediaCardData = await mediaCardResponse.json();
+          console.log('✅ Created movie from TMDB:', mediaCardData.movie.title);
+          
+          // Use the newly created movie data
+          movie = mediaCardData.movie;
+        } else {
+          console.error('❌ Failed to create movie from TMDB:', mediaCardResponse.status);
+          return res.status(404).json({ error: 'Movie not found in TMDB' });
+        }
+      } catch (createError) {
+        console.error('❌ Error creating movie from TMDB:', createError);
+        return res.status(404).json({ error: 'Failed to load movie from TMDB' });
+      }
     }
 
     console.log('🎬 Found movie:', movie.title, movie.year);

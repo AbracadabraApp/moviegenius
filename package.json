@@ -26,7 +26,9 @@
     "lock-series": "node scripts/manage-episode-locks.js lock-series",
     "unlock-series": "node scripts/manage-episode-locks.js unlock-series",
     "episode-status": "node scripts/manage-episode-locks.js status",
-    "list-locked": "node scripts/manage-episode-locks.js list-locked"
+    "list-locked": "node scripts/manage-episode-locks.js list-locked",
+    "check-locks": "node scripts/check-locked-components.js",
+    "pre-commit": "npm run check-locks && npm run lint && npm run typecheck"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.53.0",
