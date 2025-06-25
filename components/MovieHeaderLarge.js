@@ -17,7 +17,7 @@
  *   tmdbId={550}
  * />
  */
-import { Heart, Bookmark, CirclePlus, ThumbsUp, ThumbsDown } from 'lucide-react';
+import { Heart, Bookmark, CirclePlus, ThumbsUp, ThumbsDown, PlayCircle } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { FavoritesManager } from './FavoritesManager';
 
@@ -46,6 +46,11 @@ export default function MovieHeaderLarge({
   // Action bar states
   const [addedToList, setAddedToList] = useState(false);
   const [showAddedAnimation, setShowAddedAnimation] = useState(false);
+  
+  // Trailer states
+  const [trailerVideoId, setTrailerVideoId] = useState(null);
+  const [showTrailer, setShowTrailer] = useState(false);
+  const [isLoadingTrailer, setIsLoadingTrailer] = useState(false);
 
   // Generate media ID from title and year
   const mediaId = `${title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${year}`;
@@ -94,6 +99,41 @@ export default function MovieHeaderLarge({
     return () => window.removeEventListener('moviesUpdated', handleMoviesUpdate);
   }, [mediaId]);
 
+  // Fetch trailer data when component mounts
+  useEffect(() => {
+    const fetchTrailer = async () => {
+      if (!title) return;
+      
+      setIsLoadingTrailer(true);
+      try {
+        const response = await fetch(`/api/youtube-trailer-search?title=${encodeURIComponent(title)}&year=${year}`);
+        const data = await response.json();
+        
+        if (data.videoId) {
+          setTrailerVideoId(data.videoId);
+          console.log(`✅ Trailer found for ${title}: ${data.title}`);
+        } else {
+          console.log(`❌ No trailer found for ${title}`);
+        }
+      } catch (error) {
+        console.error('Error fetching trailer:', error);
+      } finally {
+        setIsLoadingTrailer(false);
+      }
+    };
+
+    fetchTrailer();
+  }, [title, year]);
+
+  // Handle trailer modal
+  const handlePlayTrailer = () => {
+    setShowTrailer(true);
+  };
+
+  const handleCloseTrailer = () => {
+    setShowTrailer(false);
+  };
+
   return (
     <>
       <style jsx>{`
@@ -126,6 +166,21 @@ export default function MovieHeaderLarge({
             fill={addedToList ? '#9ca3af' : 'none'}
           />
         </button>
+        
+        {/* Play Trailer Button - Only show if trailer available */}
+        {trailerVideoId && (
+          <button
+            onClick={handlePlayTrailer}
+            style={styles.actionButton}
+            aria-label="Play trailer"
+          >
+            <PlayCircle
+              size={28}
+              color="#6b7280"
+              fill="none"
+            />
+          </button>
+        )}
         
         <button
           onClick={() => {
@@ -179,6 +234,33 @@ export default function MovieHeaderLarge({
           Streaming on TBD
         </span>
       </div>
+      
+      {/* YouTube Trailer Modal */}
+      {showTrailer && trailerVideoId && (
+        <div style={styles.trailerOverlay} onClick={handleCloseTrailer}>
+          <div style={styles.trailerModal} onClick={(e) => e.stopPropagation()}>
+            <button 
+              style={styles.closeButton}
+              onClick={handleCloseTrailer}
+              aria-label="Close trailer"
+            >
+              ×
+            </button>
+            <div style={styles.trailerContainer}>
+              <iframe
+                width="100%"
+                height="100%"
+                src={`https://www.youtube.com/embed/${trailerVideoId}?autoplay=1&rel=0&modestbranding=1`}
+                title="Movie Trailer"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                style={styles.trailerIframe}
+              />
+            </div>
+          </div>
+        </div>
+      )}
       
       </div>
     </>
@@ -305,5 +387,56 @@ const styles = {
     animation: 'fadeInOut 1.5s ease-in-out',
     pointerEvents: 'none',
     zIndex: 10,
+  },
+  // Trailer modal styles
+  trailerOverlay: {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: 2000,
+    padding: '20px',
+  },
+  trailerModal: {
+    position: 'relative',
+    width: '100%',
+    maxWidth: '800px',
+    aspectRatio: '16/9',
+    backgroundColor: '#000',
+    borderRadius: '12px',
+    overflow: 'hidden',
+    boxShadow: '0 25px 50px rgba(0, 0, 0, 0.5)',
+  },
+  closeButton: {
+    position: 'absolute',
+    top: '10px',
+    right: '15px',
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    color: 'white',
+    border: 'none',
+    borderRadius: '50%',
+    width: '35px',
+    height: '35px',
+    fontSize: '20px',
+    cursor: 'pointer',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: 2001,
+    transition: 'background-color 0.2s',
+  },
+  trailerContainer: {
+    position: 'relative',
+    width: '100%',
+    height: '100%',
+  },
+  trailerIframe: {
+    border: 'none',
+    borderRadius: '12px',
   },
 };

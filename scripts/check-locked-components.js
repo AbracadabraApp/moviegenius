@@ -47,28 +47,45 @@ const LOCKED_COMPONENTS = {
         errorMsg: 'CRITICAL: Fallback navigation logic removed'
       },
       {
-        name: 'Slug length validation (not truncated)',
-        pattern: /slug\.length <= 150/,
+        name: 'Marketing slug length validation (75 chars)',
+        pattern: /slug\.length <= 75/,
         required: true,
-        errorMsg: 'CRITICAL: Slug length limit reduced below 150 characters'
+        errorMsg: 'CRITICAL: Marketing slug length limit modified - should be 75 characters'
       },
       {
-        name: 'TMDB summary rejection',
+        name: 'TMDB plot summary rejection',
         pattern: /!slug\.includes\('Plot:'\)/,
         required: true,
-        errorMsg: 'CRITICAL: TMDB plot summary protection removed'
+        errorMsg: 'CRITICAL: TMDB plot summary protection removed - preserves marketing copy'
       },
       {
-        name: 'Concise slug preference',
+        name: 'Concise marketing tagline preference',
         pattern: /preferConcise: true/,
         required: true,
-        errorMsg: 'CRITICAL: Concise slug preference removed from API calls'
+        errorMsg: 'CRITICAL: Concise marketing tagline preference removed from API calls'
       },
       {
-        name: 'Proper slug spacing',
+        name: 'Marketing slug display spacing',
         pattern: /marginTop: '2px'/,
         required: true,
-        errorMsg: 'CRITICAL: Slug spacing modified - should be 2px'
+        errorMsg: 'CRITICAL: Marketing slug spacing modified - should be 2px for taglines'
+      }
+    ]
+  },
+  'components/FilmLoadingMessage.js': {
+    lockFile: null,
+    criticalSections: [
+      {
+        name: 'No technical message exposure',
+        pattern: /film-themed messages from loading-messages\.json/,
+        required: true,
+        errorMsg: 'CRITICAL: FilmLoadingMessage component modified to allow technical messages'
+      },
+      {
+        name: 'Film-themed icons only',
+        pattern: /film-movie-reel-icon\.png/,
+        required: true,
+        errorMsg: 'CRITICAL: Core film icons removed from loading system'
       }
     ]
   },
@@ -86,6 +103,18 @@ const LOCKED_COMPONENTS = {
         pattern: /tmdb_id:\s*(null|data\.tmdb_id)/,
         required: true,
         errorMsg: 'CRITICAL: Movie objects missing tmdb_id field in parsing functions'
+      },
+      {
+        name: 'No TMDB technical messages',
+        pattern: /(?!.*Fetching.*TMDB)/,
+        required: true,
+        errorMsg: 'CRITICAL: Technical TMDB message exposed to users - use film-themed messages'
+      },
+      {
+        name: 'Film-themed loading messages',
+        pattern: /(Consulting the film|Diving into the vault)/,
+        required: true,
+        errorMsg: 'CRITICAL: Loading messages not using film-themed content'
       }
     ]
   }

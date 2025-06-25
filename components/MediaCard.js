@@ -97,7 +97,7 @@ export default function MediaCard({
       // 🔒 LOCKED: Check if slug is actually good (not URL-formatted or corrupted)
       // CRITICAL: Do not modify slug length limits or validation logic
       const isGoodSlug = slug && 
-        slug.length <= 150 && // FIXED: Increased from 35 to 150 for full slugs
+        slug.length <= 75 && // FIXED: 75 chars allows good taglines, blocks TMDB summaries
         slug.length > 5 && 
         !slug.includes('-') && 
         slug !== slug.toLowerCase() &&
@@ -137,7 +137,7 @@ export default function MediaCard({
           if (response.ok) {
             const data = await response.json();
             // FIXED: Only use enhanced slug if it's actually better and concise
-            if (data.slug && data.slug.length <= 150 && !data.slug.includes('Plot:')) {
+            if (data.slug && data.slug.length <= 75 && !data.slug.includes('Plot:')) {
               newSlug = data.slug;
               setSlug(data.slug);
             }

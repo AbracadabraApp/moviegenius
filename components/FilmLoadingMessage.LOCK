@@ -1,0 +1,183 @@
+# FilmLoadingMessage Component Lock File
+# 🔒 CRITICAL LOADING MESSAGE PROTECTION 🔒
+
+## LOCK STATUS: ACTIVE
+- Component: FilmLoadingMessage.js
+- Lock Date: 2025-06-25
+- Lock Reason: Prevents technical message exposure to users
+- Locked By: Senior Systems Engineer
+
+## PROBLEM BEING SOLVED
+
+**Recurring Issue:** Loading messages frequently expose technical details to users:
+- ❌ "Fetching data from TMDB..."
+- ❌ "Loading analysis..."
+- ❌ "Connecting to API..."
+- ❌ Plain "Loading..." messages
+
+**Impact:** Breaks immersive cinema experience and exposes internal architecture.
+
+## CRITICAL SECTIONS - DO NOT MODIFY:
+
+### 1. Film-Themed Message Source (Lines 45-51)
+```javascript
+const getRandomMessage = () => {
+  if (message) return message; // Use specific message if provided
+  
+  // Select from film-themed messages only
+  const randomIndex = Math.floor(Math.random() * loadingMessages.length);
+  return loadingMessages[randomIndex];
+};
+```
+
+### 2. Cinema Icon System (Lines 30-37)
+```javascript
+// 🔒 LOCKED: Film-themed icons - do not add technical icons
+const filmIcons = [
+  'film-movie-reel-icon.png',
+  'film-movie-icon.png',
+  'chair-director-outline-icon.png',
+  'movie-media-player-icon.png',
+  'play-button-round-icon.png'
+];
+```
+
+### 3. Data Source Import (Line 23)
+```javascript
+import loadingMessages from '../data/loading-messages.json';
+```
+
+## APPROVED LOADING MESSAGES ONLY:
+
+### ✅ **Good Examples (Film-Themed)**
+- "Consulting the film critics..."
+- "Diving into the vault..."
+- "Checking the archives..."
+- "Polling the directors..."
+- "Rewinding the film reel..."
+- "Adjusting the projector..."
+- "Scanning the silver screen..."
+
+### ❌ **Prohibited Messages (Technical)**
+- "Fetching data from TMDB..."
+- "Loading from database..."
+- "Connecting to API..."
+- "Processing request..."
+- "Querying server..."
+- Plain "Loading..." without context
+
+## USAGE REQUIREMENTS:
+
+### Standard Implementation
+```javascript
+import FilmLoadingMessage from '../components/FilmLoadingMessage';
+
+// Single message
+<FilmLoadingMessage message="Consulting the film critics..." />
+
+// Cycling messages
+<FilmLoadingMessage cycling={true} interval={5000} />
+
+// Dynamic imports (REQUIRED)
+const Component = dynamic(() => import('./Component'), {
+  loading: () => <FilmLoadingMessage message="Diving into the vault..." />
+});
+```
+
+### Component Replacement Checklist
+- [ ] Replace all "Loading..." with FilmLoadingMessage
+- [ ] Remove technical message exposure
+- [ ] Use film-themed messages from approved list
+- [ ] Include cinema-themed icons
+- [ ] Test cycling functionality
+
+## PROTECTION PATTERNS:
+
+### Integrity Checker Validates:
+1. **No Technical Messages**: Rejects TMDB, API, database references
+2. **Film-Themed Content**: Requires cinema/movie/film keywords
+3. **Icon System**: Validates film-themed icons are preserved
+4. **Data Source**: Ensures loading-messages.json is used
+
+### Common Violation Patterns:
+- Adding technical loading states without FilmLoadingMessage
+- Exposing API endpoint names in loading text
+- Using generic spinners without film context
+- Hardcoding loading messages instead of using data file
+
+## CHANGE PROTOCOL:
+
+### Before Modifying:
+1. **Check this lock file** for restrictions
+2. **Review approved message list** in loading-messages.json
+3. **Test film-themed experience** - no technical details
+4. **Verify icon system** uses cinema-themed graphics
+
+### Adding New Messages:
+1. **Add to data file**: Update loading-messages.json
+2. **Film-themed only**: Must reference cinema/movie industry
+3. **User-friendly**: No technical jargon or API details
+4. **Test integration**: Verify cycling and display
+
+### Emergency Rollback:
+```bash
+# Restore previous loading system
+git checkout HEAD~1 -- components/FilmLoadingMessage.js
+git checkout HEAD~1 -- pages/movie/[id].js
+
+# Verify no technical exposure
+grep -r "TMDB\|API\|database" pages/ components/ | grep -i loading
+```
+
+## INTEGRATION REQUIREMENTS:
+
+### Pages That Must Use FilmLoadingMessage:
+- `/pages/movie/[id].js` - Movie detail loading
+- `/pages/ask.js` - Query processing (already correct)
+- `/pages/person/[id].js` - Person detail loading
+- All dynamic imports with loading states
+- Any component showing loading state to users
+
+### Legacy System Cleanup:
+- Replace plain "Loading..." messages
+- Remove technical API references in loading text
+- Standardize on FilmLoadingMessage component
+- Update all dynamic import loading states
+
+## MONITORING:
+
+### Check for Violations:
+```bash
+# Search for technical loading messages
+grep -r "TMDB\|API\|fetch\|database" --include="*.js" --include="*.jsx" . | grep -i loading
+
+# Search for plain loading messages
+grep -r "Loading\.\.\." --include="*.js" --include="*.jsx" . 
+
+# Verify film-themed usage
+grep -r "FilmLoadingMessage" --include="*.js" --include="*.jsx" .
+```
+
+### User Experience Validation:
+- All loading states show film-themed messages
+- No technical architecture exposed to users
+- Consistent cinema experience throughout app
+- Cycling messages work properly on long loads
+
+## BENEFITS:
+
+### User Experience:
+- **Immersive**: Maintains cinema theme throughout loading
+- **Professional**: No technical details exposed
+- **Engaging**: Film-themed messages are more interesting than "Loading..."
+- **Consistent**: Standardized loading experience across app
+
+### Technical Benefits:
+- **Centralized**: Single component manages all loading states
+- **Maintainable**: Easy to update messages across entire app
+- **Protected**: Automated prevention of technical message exposure
+- **Testable**: Clear patterns for validation and monitoring
+
+---
+
+**🎬 This protection ensures users never see technical details during loading states, maintaining the professional cinema experience throughout MovieGenius.**
