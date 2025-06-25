@@ -36,6 +36,23 @@ MediaCard is the **core component** used throughout the entire application:
 
 **If TMDB ID navigation breaks:** Check that MediaCard receives `tmdbId={movie.tmdb_id}` and that the parsing functions in caller components include `tmdb_id: null` in movie objects.
 
+## 🚨 **SPECIFIC BREAKAGE PATTERNS FIXED:**
+
+### 1. **Slug Length Truncation** (Line ~98)
+**ISSUE:** Slug length limit reduced from 150 to 35 characters, causing good slugs to be rejected.
+**PROTECTION:** `slug.length <= 150` must remain unchanged.
+**IMPACT:** Triggers unnecessary API calls and replaces good slugs with poor ones.
+
+### 2. **TMDB Summaries Replacing Slugs** (Line ~114-128)
+**ISSUE:** TMDB API returns verbose plot summaries instead of concise slugs.
+**PROTECTION:** Must include `preferConcise: true` and reject `Plot:`, `Overview:`, `Synopsis:`.
+**IMPACT:** Replaces curated short descriptions with long technical summaries.
+
+### 3. **Slug Line Spacing Increase** (Line ~361)
+**ISSUE:** `marginTop` increased from 2px to 4px or higher, affecting visual layout.
+**PROTECTION:** `marginTop: '2px'` must remain unchanged.
+**IMPACT:** Creates excessive whitespace and poor visual hierarchy.
+
 ## ✅ Approved Changes Only
 
 **ONLY MAKE CHANGES FOR:**

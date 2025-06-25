@@ -45,6 +45,30 @@ const LOCKED_COMPONENTS = {
         pattern: /router\.push\(`\/media\/\$\{fallbackId\}`\)/,
         required: true,
         errorMsg: 'CRITICAL: Fallback navigation logic removed'
+      },
+      {
+        name: 'Slug length validation (not truncated)',
+        pattern: /slug\.length <= 150/,
+        required: true,
+        errorMsg: 'CRITICAL: Slug length limit reduced below 150 characters'
+      },
+      {
+        name: 'TMDB summary rejection',
+        pattern: /!slug\.includes\('Plot:'\)/,
+        required: true,
+        errorMsg: 'CRITICAL: TMDB plot summary protection removed'
+      },
+      {
+        name: 'Concise slug preference',
+        pattern: /preferConcise: true/,
+        required: true,
+        errorMsg: 'CRITICAL: Concise slug preference removed from API calls'
+      },
+      {
+        name: 'Proper slug spacing',
+        pattern: /marginTop: '2px'/,
+        required: true,
+        errorMsg: 'CRITICAL: Slug spacing modified - should be 2px'
       }
     ]
   },

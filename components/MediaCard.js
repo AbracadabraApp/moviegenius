@@ -94,8 +94,16 @@ export default function MediaCard({
   // Enhanced data fetching for missing slug or poster
   useEffect(() => {
     const enhanceMovieData = async () => {
-      // Check if slug is actually good (not URL-formatted or corrupted)
-      const isGoodSlug = slug && slug.length <= 35 && slug.length > 5 && !slug.includes('-') && slug !== slug.toLowerCase();
+      // 🔒 LOCKED: Check if slug is actually good (not URL-formatted or corrupted)
+      // CRITICAL: Do not modify slug length limits or validation logic
+      const isGoodSlug = slug && 
+        slug.length <= 150 && // FIXED: Increased from 35 to 150 for full slugs
+        slug.length > 5 && 
+        !slug.includes('-') && 
+        slug !== slug.toLowerCase() &&
+        !slug.includes('Plot:') && // FIXED: Reject TMDB plot summaries
+        !slug.includes('Overview:') && // FIXED: Reject TMDB overviews
+        !slug.includes('Synopsis:'); // FIXED: Reject TMDB synopses
       const hasGoodPoster = poster !== '/images/placeholder-poster.jpg';
       
       // Skip if we have both good slug and poster, or if already enhancing
@@ -110,18 +118,26 @@ export default function MediaCard({
         let newSlug = slug;
         let newPoster = poster;
         
-        // Fetch enhanced data if slug is missing or corrupted
-        if (!isGoodSlug) {
+        // 🔒 LOCKED: Fetch enhanced data if slug is missing or corrupted
+        // CRITICAL: Only enhance truly missing slugs, not good ones
+        if (!isGoodSlug && (!slug || slug.length < 10)) { // FIXED: Only enhance if truly missing
           console.log('Fetching enhanced slug for:', title, year);
           const response = await fetch('/api/enhance-movie-data', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ title, year, needsSlug: true, needsPoster: false })
+            body: JSON.stringify({ 
+              title, 
+              year, 
+              needsSlug: true, 
+              needsPoster: false,
+              preferConcise: true // FIXED: Request concise slugs, not summaries
+            })
           });
           
           if (response.ok) {
             const data = await response.json();
-            if (data.slug) {
+            // FIXED: Only use enhanced slug if it's actually better and concise
+            if (data.slug && data.slug.length <= 150 && !data.slug.includes('Plot:')) {
               newSlug = data.slug;
               setSlug(data.slug);
             }
@@ -358,8 +374,10 @@ const styles = {
   slug: {
     fontSize: '14px',
     color: '#333',
-    marginTop: '4px',
+    marginTop: '2px', // 🔒 FIXED: Reduced from 4px to 2px for tighter spacing
     fontFamily: 'inherit',
+    lineHeight: '1.3', // 🔒 FIXED: Added consistent line height
+    marginBottom: '2px', // 🔒 FIXED: Added bottom margin for consistent spacing
   },
   bottomRow: {
     display: 'flex',
