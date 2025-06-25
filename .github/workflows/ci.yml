@@ -116,15 +116,43 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
       - name: Deploy to Railway
         run: |
           echo "🚀 Deployment triggered for Railway"
           echo "Railway will handle deployment automatically via webhook"
           # Railway deployment happens automatically via webhook
       
-      - name: Deployment notification
+      - name: Wait for deployment
         run: |
-          echo "✅ Build passed - Railway deployment in progress"
+          echo "⏳ Waiting for Railway deployment to complete..."
+          sleep 120  # Wait 2 minutes for deployment
+      
+      - name: Verify deployment
+        run: |
+          echo "🔍 Verifying deployment health..."
+          npm run deploy:verify
+        env:
+          NEXT_PUBLIC_BASE_URL: https://moviegenius.ai
+      
+      - name: Performance check
+        run: |
+          echo "📊 Running performance monitoring..."
+          npm run monitor:performance
+        env:
+          NEXT_PUBLIC_BASE_URL: https://moviegenius.ai
+      
+      - name: Deployment success
+        run: |
+          echo "✅ Deployment verified successfully!"
 
   # Notification on failure
   notify-failure:
