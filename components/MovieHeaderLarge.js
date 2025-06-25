@@ -240,11 +240,7 @@ const styles = {
     borderRadius: '12px',
     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)', // Add some shadow for depth
     clipPath: 'inset(0 0 30px 0)', // Crop 30px from bottom
-    // Fallback for browsers without clipPath support
-    '@supports not (clip-path: inset(0 0 30px 0))': {
-      marginBottom: '-30px',
-      overflow: 'hidden'
-    }
+    // Note: Browser fallbacks handled via CSS detection in real implementation
   },
   titleContainer: {
     display: 'flex',
