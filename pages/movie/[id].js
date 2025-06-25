@@ -13,11 +13,11 @@ import dynamic from 'next/dynamic';
 
 // Lazy load heavy analysis components
 const EntityLinkedText = dynamic(() => import('../../components/EntityLinkedText'), {
-  loading: () => <div style={{ padding: '8px', color: '#6b7280', fontSize: '14px' }}>Loading analysis...</div>
+  loading: () => <div style={{ padding: '8px', color: '#6b7280', fontSize: '14px' }}>Consulting the film critics...</div>
 });
 
 const MovieAnalysisWithEntities = dynamic(() => import('../../components/EntityLinkedText').then(mod => ({ default: mod.MovieAnalysisWithEntities })), {
-  loading: () => <div style={{ padding: '8px', color: '#6b7280', fontSize: '14px' }}>Loading analysis...</div>
+  loading: () => <div style={{ padding: '8px', color: '#6b7280', fontSize: '14px' }}>Consulting the film critics...</div>
 });
 // import useStreamingData from '../../hooks/useStreamingData'; // Stubbed out
 import loadingMessages from '../../data/loading-messages.json';
@@ -282,7 +282,7 @@ export default function MovieDetailPage({ title, year, initialSlug, initialPoste
                 style={styles.filmIcon}
               />
               <span style={styles.loadingText}>
-                {isFetchingTMDB ? 'Fetching movie data from TMDB...' : 'Loading movie information...'}
+                {isFetchingTMDB ? 'Consulting the film archives...' : 'Diving into the vault...'}
               </span>
             </div>
           </div>

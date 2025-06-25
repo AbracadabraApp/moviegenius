@@ -26,7 +26,7 @@ const nextConfig = {
   
   // Cloudflare-optimized configuration
   images: {
-    domains: ['image.tmdb.org'],
+    domains: ['image.tmdb.org', 'www.youtube.com', 'youtube.com'],
     formats: ['image/webp', 'image/avif'],
     minimumCacheTTL: 31536000, // 1 year for TMDB images
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],

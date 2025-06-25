@@ -38,20 +38,20 @@ MediaCard is the **core component** used throughout the entire application:
 
 ## 🚨 **SPECIFIC BREAKAGE PATTERNS FIXED:**
 
-### 1. **Slug Length Truncation** (Line ~98)
-**ISSUE:** Slug length limit reduced from 150 to 35 characters, causing good slugs to be rejected.
-**PROTECTION:** `slug.length <= 150` must remain unchanged.
-**IMPACT:** Triggers unnecessary API calls and replaces good slugs with poor ones.
+### 1. **Marketing Slug Length Validation** (Line ~98)
+**ISSUE:** Marketing slug length limit set incorrectly, either too low (35 chars) or too high (150+ chars).
+**PROTECTION:** `slug.length <= 75` must remain unchanged - perfect for quality taglines.
+**IMPACT:** Wrong limits either reject good taglines (too low) or allow verbose summaries (too high).
 
-### 2. **TMDB Summaries Replacing Slugs** (Line ~114-128)
-**ISSUE:** TMDB API returns verbose plot summaries instead of concise slugs.
+### 2. **TMDB Plot Summaries Replacing Marketing Slugs** (Line ~114-128)
+**ISSUE:** TMDB API returns verbose plot summaries instead of concise marketing taglines.
 **PROTECTION:** Must include `preferConcise: true` and reject `Plot:`, `Overview:`, `Synopsis:`.
-**IMPACT:** Replaces curated short descriptions with long technical summaries.
+**IMPACT:** Replaces curated marketing copy with long technical plot descriptions.
 
-### 3. **Slug Line Spacing Increase** (Line ~361)
-**ISSUE:** `marginTop` increased from 2px to 4px or higher, affecting visual layout.
-**PROTECTION:** `marginTop: '2px'` must remain unchanged.
-**IMPACT:** Creates excessive whitespace and poor visual hierarchy.
+### 3. **Marketing Slug Display Spacing** (Line ~361)
+**ISSUE:** `marginTop` increased from 2px to 4px or higher, affecting tagline display.
+**PROTECTION:** `marginTop: '2px'` must remain unchanged for proper marketing copy spacing.
+**IMPACT:** Creates excessive whitespace and poor visual hierarchy for user-facing content.
 
 ## ✅ Approved Changes Only
 
