@@ -1,15 +1,15 @@
 /**
- * MovieHeader Component
+ * MovieHeaderLargePoster Component
  * 
- * Large format movie header for detail pages with flat design.
- * Similar functionality to MediaCard but with different visual presentation.
+ * Large poster format movie header for detail pages.
+ * Preserves original MovieHeader functionality while offering vertical layout with larger poster.
+ * Fallback-safe implementation - if this component fails, pages can revert to MovieHeader.
  */
 import { Heart, Bookmark } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { FavoritesManager } from './FavoritesManager';
-// import useStreamingData from '../hooks/useStreamingData'; // Stubbed out
 
-export default function MovieHeader({ 
+export default function MovieHeaderLargePoster({ 
   title, 
   year, 
   initialSlug, 
@@ -21,15 +21,6 @@ export default function MovieHeader({
   const [bookmarked, setBookmarked] = useState(false);
   const [slug, setSlug] = useState(initialSlug || '');
   const [poster, setPoster] = useState(initialPoster || '/images/placeholder-poster.jpg');
-
-  // Streaming feature stubbed out - will be replaced with real provider
-  // const { 
-  //   hasStreaming, 
-  //   getDisplayText, 
-  //   primaryService,
-  //   freeOptions,
-  //   isLoading: streamingLoading 
-  // } = useStreamingData(title, year, initialStreaming);
 
   // Generate media ID from title and year
   const mediaId = `${title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${year}`;
@@ -69,18 +60,25 @@ export default function MovieHeader({
 
   return (
     <div style={styles.movieHeader}>
-      <div style={styles.contentRow}>
-        <img src={poster} alt={`Poster for ${title}`} style={styles.largePoster} />
-        <div style={styles.textContainer}>
-          <div style={styles.titleColumn}>
-            <div style={styles.title}>b {title}</div>
-            <div style={styles.year}>b ({year})</div>
-          </div>
-          <div style={styles.slug}>{slug}</div>
-        </div>
+      {/* Large poster at top, centered */}
+      <div style={styles.posterContainer}>
+        <img 
+          src={poster} 
+          alt={`Poster for ${title}`} 
+          style={styles.largePoster}
+        />
       </div>
       
-      {/* Bottom row: streaming left, icons right - positioned below poster/text */}
+      {/* Title and year below poster */}
+      <div style={styles.titleContainer}>
+        <div style={styles.title}>{title}</div>
+        <div style={styles.year}>({year})</div>
+      </div>
+      
+      {/* Slug below title */}
+      <div style={styles.slug}>{slug}</div>
+      
+      {/* Bottom row: streaming left, icons right */}
       <div style={styles.bottomRow}>
         <div style={styles.streamingInfo}>
           <span style={styles.streamingText}>
@@ -128,71 +126,78 @@ const styles = {
   movieHeader: {
     display: 'flex',
     flexDirection: 'column',
-    padding: '16px', // Same as MediaCard container padding
+    padding: '16px',
     width: '100%',
     boxSizing: 'border-box',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-    // No shadows, borders, or rounded corners - flat design
+    alignItems: 'center', // Center everything
   },
-  contentRow: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-    gap: '16px',
-    marginBottom: '12px',
+  
+  posterContainer: {
+    marginBottom: '16px',
+    position: 'relative',
   },
+  
   largePoster: {
-    width: '150px',  // 1.5x larger than MediaCard (100px -> 150px)
-    height: '225px', // 1.5x larger than MediaCard (150px -> 225px)
+    width: '200px',  // Larger than standard MovieHeader (150px)
+    height: '300px', // Larger than standard MovieHeader (225px)
     objectFit: 'cover',
-    borderRadius: '12px', // Keep some rounding on the poster itself
+    borderRadius: '12px',
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)', // Add subtle shadow
   },
-  textContainer: {
-    flex: 1,
+  
+  titleContainer: {
     display: 'flex',
     flexDirection: 'column',
-    minWidth: 0,
-    overflow: 'hidden',
-  },
-  titleColumn: {
-    display: 'flex',
-    flexDirection: 'column',
+    alignItems: 'center',
     marginBottom: '8px',
+    textAlign: 'center',
   },
+  
   title: {
-    fontSize: '20px',
-    fontWeight: '600', // Match MediaCard title weight
+    fontSize: '24px', // Larger than standard MovieHeader (20px)
+    fontWeight: '600',
     lineHeight: '1.2',
     fontFamily: 'inherit',
     color: '#000',
-    marginBottom: '2px',
+    marginBottom: '4px',
+    textAlign: 'center',
   },
+  
   year: {
     fontSize: '20px',
     color: '#666',
-    fontWeight: '200', // Lighter than MediaCard for contrast
+    fontWeight: '200',
     fontFamily: 'inherit',
-    marginBottom: '8px', // Add space after year
+    marginBottom: '8px',
+    textAlign: 'center',
   },
+  
   slug: {
     fontSize: '16px',
     color: '#333',
-    marginTop: '4px',
-    marginBottom: '12px',
+    marginBottom: '16px',
     fontFamily: 'inherit',
     lineHeight: '1.4',
+    textAlign: 'center',
+    maxWidth: '400px', // Limit width for readability
   },
+  
   bottomRow: {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
+    width: '100%',
+    maxWidth: '400px', // Match slug width
     paddingTop: '8px',
   },
+  
   streamingInfo: {
     flex: 1,
     minWidth: 0,
     marginRight: '8px',
   },
+  
   streamingText: {
     fontSize: '14px',
     color: '#6b7280',
@@ -201,12 +206,14 @@ const styles = {
     wordWrap: 'break-word',
     lineHeight: '1.3',
   },
+  
   iconRow: {
     display: 'flex',
     flexDirection: 'row',
     gap: '8px',
     alignItems: 'center',
   },
+  
   iconButton: {
     background: 'none',
     border: 'none',

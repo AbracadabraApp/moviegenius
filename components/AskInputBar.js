@@ -21,6 +21,17 @@ export default function AskInputBar({
     setIsClient(true);
   }, []);
 
+  // ALL HOOKS MUST BE CALLED BEFORE ANY EARLY RETURNS
+  // Allow clicking anywhere in the bar to focus input
+  useEffect(() => {
+    if (isClient) {
+      const bar = document.getElementById(barId);
+      if (bar && inputRef.current) {
+        bar.onclick = () => inputRef.current.focus();
+      }
+    }
+  }, [barId, isClient]);
+
   // Prevent hydration mismatch by only showing interactive elements after mount
   if (!isClient) {
     return (
@@ -82,14 +93,6 @@ export default function AskInputBar({
     e.preventDefault();
     handleForward(); // Use the same logic as forward arrow
   };
-
-  // Allow clicking anywhere in the bar to focus input
-  useEffect(() => {
-    const bar = document.getElementById(barId);
-    if (bar && inputRef.current) {
-      bar.onclick = () => inputRef.current.focus();
-    }
-  }, [barId]);
 
   return (
     <>
@@ -218,12 +221,13 @@ const styles = {
     paddingTop: '4px',
   },
   bar: {
-    height: '64px',
+    height: '54px',
     display: 'flex',
     alignItems: 'center',
     padding: '15px',
     backgroundColor: '#fff',
-    borderRadius: '32px',
+    borderRadius: '27px',
+    clipPath: 'polygon(0 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0 calc(100% - 12px))',
     border: '1px solid #e5e7eb',
     boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
     cursor: 'text',

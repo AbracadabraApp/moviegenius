@@ -1,13 +1,35 @@
 /**
- * MovieHeaderLarge Component - Layout B for A/B Testing
+ * MovieHeaderLarge Component - Production Movie Detail Header
  * 
- * Large poster format for movie detail pages.
- * Same functionality as MovieHeader but with vertical layout and larger poster.
+ * Modern large poster format for movie detail pages featuring:
+ * - Vertical layout with prominent poster display
+ * - Floating action bar with favorites and list management
+ * - Interactive poster with double-click functionality
+ * - Optimized spacing and visual hierarchy
+ * 
+ * @component
+ * @example
+ * <MovieHeaderLarge 
+ *   title="Fight Club"
+ *   year={1999}
+ *   initialSlug="An insomniac office worker..."
+ *   initialPoster="https://image.tmdb.org/t/p/w500/..."
+ *   tmdbId={550}
+ * />
  */
 import { Heart, Bookmark, CirclePlus, ThumbsUp, ThumbsDown } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { FavoritesManager } from './FavoritesManager';
 
+/**
+ * @param {Object} props - Component props
+ * @param {string} props.title - Movie title
+ * @param {number} props.year - Movie release year
+ * @param {string} props.initialSlug - Movie description/tagline
+ * @param {string} props.initialPoster - Movie poster URL
+ * @param {string} [props.initialStreaming] - Initial streaming data (currently unused)
+ * @param {number} props.tmdbId - TMDB movie ID for API calls
+ */
 export default function MovieHeaderLarge({ 
   title, 
   year, 
@@ -46,15 +68,26 @@ export default function MovieHeaderLarge({
 
   // Load initial state from localStorage
   useEffect(() => {
-    setHearted(FavoritesManager.isMovieHearted(mediaId));
-    setBookmarked(FavoritesManager.isMovieBookmarked(mediaId));
+    try {
+      setHearted(FavoritesManager.isMovieHearted(mediaId));
+      setBookmarked(FavoritesManager.isMovieBookmarked(mediaId));
+    } catch (error) {
+      console.error('Failed to load favorites state:', error);
+      // Set safe defaults
+      setHearted(false);
+      setBookmarked(false);
+    }
   }, [mediaId]);
 
   // Listen for favorites updates from other components
   useEffect(() => {
     const handleMoviesUpdate = () => {
-      setHearted(FavoritesManager.isMovieHearted(mediaId));
-      setBookmarked(FavoritesManager.isMovieBookmarked(mediaId));
+      try {
+        setHearted(FavoritesManager.isMovieHearted(mediaId));
+        setBookmarked(FavoritesManager.isMovieBookmarked(mediaId));
+      } catch (error) {
+        console.error('Failed to update favorites state:', error);
+      }
     };
 
     window.addEventListener('moviesUpdated', handleMoviesUpdate);
@@ -96,8 +129,13 @@ export default function MovieHeaderLarge({
         
         <button
           onClick={() => {
-            const newState = FavoritesManager.toggleHeart(movieData);
-            setHearted(newState);
+            try {
+              const newState = FavoritesManager.toggleHeart(movieData);
+              setHearted(newState);
+            } catch (error) {
+              console.error('Failed to toggle heart state:', error);
+              // Optionally show user feedback here
+            }
           }}
           style={styles.actionButton}
           aria-label={hearted ? 'Remove from favorites' : 'Add to favorites'}
@@ -152,7 +190,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center', // Center everything
-    padding: '0px 16px 16px 16px',
+    padding: '0px 16px 8px 16px',
     width: '100%',
     boxSizing: 'border-box',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
@@ -201,6 +239,12 @@ const styles = {
     objectFit: 'cover',
     borderRadius: '12px',
     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)', // Add some shadow for depth
+    clipPath: 'inset(0 0 30px 0)', // Crop 30px from bottom
+    // Fallback for browsers without clipPath support
+    '@supports not (clip-path: inset(0 0 30px 0))': {
+      marginBottom: '-30px',
+      overflow: 'hidden'
+    }
   },
   titleContainer: {
     display: 'flex',
@@ -209,6 +253,7 @@ const styles = {
     justifyContent: 'flex-start',
     textAlign: 'left',
     marginBottom: '7px', // Reduced from 12px to 7px (40% tighter)
+    marginTop: '-30px',
     gap: '8px',
     width: '100%',
     paddingLeft: '20px',
@@ -240,7 +285,7 @@ const styles = {
   streamingInfo: {
     width: '100%',
     textAlign: 'left',
-    marginBottom: '5px', // Reduced from 8px to 5px (40% tighter)
+    marginBottom: '0px',
     marginTop: '-10px', // Move up 10px (was -20px, now -10px = moved down 10px)
     paddingLeft: '20px',
   },
