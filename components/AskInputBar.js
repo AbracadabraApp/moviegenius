@@ -7,6 +7,9 @@ export default function AskInputBar({
   placeholder = 'Ask me about movies...',
   isLoading = false,
   episodePrefix = null,
+  style = {},
+  onSubmit = null,
+  showNavigation = true, // New prop to control navigation buttons
 }) {
   const [question, setQuestion] = useState('');
   const [isFocused, setIsFocused] = useState(false);
@@ -73,13 +76,48 @@ export default function AskInputBar({
     }
   };
 
-  // Standard browser forward navigation or submit question
-  const handleForward = () => {
+  // Smart routing with movie detection or submit question
+  const handleForward = async () => {
     const trimmed = question.trim();
     if (trimmed) {
-      // If there's text, submit the question with optional episode prefix
-      const finalQuestion = episodePrefix ? `${episodePrefix}: ${trimmed}` : trimmed;
-      router.push(`/ask?q=${encodeURIComponent(finalQuestion)}`);
+      // For episode context, always go to ask (no movie detection)
+      if (episodePrefix) {
+        const finalQuestion = `${episodePrefix}: ${trimmed}`;
+        router.push(`/ask?q=${encodeURIComponent(finalQuestion)}`);
+        setQuestion('');
+        return;
+      }
+
+      try {
+        // Try movie detection for non-episode queries
+        const detectionResponse = await fetch('/api/detect-movie', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ query: trimmed })
+        });
+
+        if (detectionResponse.ok) {
+          const detection = await detectionResponse.json();
+          
+          if (detection.shouldRedirect && detection.redirectUrl) {
+            // Direct redirect to movie or genius page
+            if (detection.detectionType && detection.detectionType.startsWith('genius_')) {
+              console.log(`🎓 Genius ${detection.detectionType} detected: "${detection.movieTitle}" - redirecting to ${detection.redirectUrl}`);
+            } else {
+              console.log(`🎬 Movie detected: "${detection.movieTitle}" (${detection.movieYear}) - redirecting to ${detection.redirectUrl}`);
+            }
+            setQuestion('');
+            router.push(detection.redirectUrl);
+            return;
+          }
+        }
+      } catch (error) {
+        console.warn('Movie detection failed, falling back to Ask:', error);
+        // Fall through to normal Ask routing
+      }
+
+      // No movie detected or detection failed - normal Ask flow
+      router.push(`/ask?q=${encodeURIComponent(trimmed)}`);
       setQuestion('');
     } else {
       // Standard browser forward navigation
@@ -91,7 +129,17 @@ export default function AskInputBar({
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    handleForward(); // Use the same logic as forward arrow
+    const trimmed = question.trim();
+    if (trimmed) {
+      if (onSubmit) {
+        // Use provided onSubmit callback
+        onSubmit(episodePrefix ? `${episodePrefix}: ${trimmed}` : trimmed);
+        setQuestion('');
+      } else {
+        // Fallback to original handleForward logic
+        handleForward();
+      }
+    }
   };
 
   return (
@@ -115,8 +163,8 @@ export default function AskInputBar({
         }
       `}</style>
       <form onSubmit={handleSubmit} style={styles.form}>
-        <div id={barId} style={styles.bar}>
-          {!episodePrefix && (
+        <div id={barId} style={{...styles.bar, ...style}}>
+          {showNavigation && !episodePrefix && (
             <button 
               type="button"
               onClick={handleBack}
@@ -158,7 +206,7 @@ export default function AskInputBar({
             }}
           />
 
-          {episodePrefix ? (
+          {showNavigation && (episodePrefix ? (
             // Episode context: only show submit button when there's text
             question.trim() && (
               <button 
@@ -208,7 +256,7 @@ export default function AskInputBar({
                 }}
               />
             </button>
-          )}
+          ))}
         </div>
       </form>
     </>
