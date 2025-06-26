@@ -4,6 +4,11 @@
  * Handles movie-related questions using Claude's comprehensive film knowledge.
  * Returns interleaved text/movie content + extensive "More Ideas" section.
  * Uses TMDB for posters only.
+ * 
+ * Performance optimizations:
+ * - Request deduplication to prevent redundant API calls
+ * - Redis caching for Claude responses
+ * - Cost tracking for API usage monitoring
  */
 import { createClient } from '@supabase/supabase-js';
 import { 
@@ -14,6 +19,11 @@ import {
   checkRateLimit 
 } from '../../lib/api-utils';
 import { getCache } from '../../lib/cache.js';
+import { getPerformanceMonitor } from '../../lib/performance-monitor.js';
+
+// Request deduplication cache - prevents duplicate requests within 30 seconds
+const pendingRequests = new Map();
+const REQUEST_DEDUP_TTL = 30000; // 30 seconds
 
 /**
  * Intelligently saves movie data to Supabase with TMDB integration
@@ -235,11 +245,61 @@ async function fetchFullTMDBData(title, year) {
 }
 
 /**
+ * Request deduplication helper - prevents duplicate requests
+ * 
+ * Creates a unique key for each request and checks if an identical request
+ * is already in progress. If so, waits for the existing request to complete
+ * rather than making a redundant API call.
+ * 
+ * @param {string} question - User's question for key generation
+ * @returns {Promise<Object|null>} Existing response or null if no duplicate
+ */
+async function checkRequestDeduplication(question) {
+  const monitor = getPerformanceMonitor();
+  
+  // Create normalized key for request deduplication
+  const requestKey = question.toLowerCase().trim().replace(/\s+/g, '_').substring(0, 100);
+  
+  // Check if identical request is already pending
+  if (pendingRequests.has(requestKey)) {
+    const existingRequest = pendingRequests.get(requestKey);
+    
+    // Track deduplication event
+    monitor.trackMetric('request_deduplication', 1, {
+      question: question.substring(0, 50),
+      requestKey,
+      cost_savings: 'prevented_duplicate_api_call'
+    });
+    
+    console.log(`🔄 Request deduplication: Waiting for existing request: "${question.substring(0, 50)}..."`);
+    
+    try {
+      // Wait for existing request to complete
+      const result = await existingRequest.promise;
+      console.log(`✅ Request deduplication: Got cached result for: "${question.substring(0, 50)}..."`);
+      return result;
+    } catch (error) {
+      // If existing request failed, allow this one to proceed
+      console.log(`⚠️ Request deduplication: Existing request failed, proceeding with new request`);
+      pendingRequests.delete(requestKey);
+      return null;
+    }
+  }
+  
+  return null;
+}
+
+/**
  * Generates film expert response using Claude 3.5 Sonnet API
  * 
  * This function leverages Claude's comprehensive film knowledge to provide
  * professional, structured responses with interleaved text and movie cards.
  * Uses modular prompt system for consistency, caching, and standardized voice.
+ * 
+ * Performance optimizations:
+ * - Request deduplication prevents redundant API calls within 30 seconds
+ * - Redis caching for long-term response storage
+ * - API cost tracking for usage monitoring
  * 
  * @param {string} question - User's film-related question
  * @returns {Promise<Object>} Structured response with sections and movie recommendations
@@ -263,15 +323,34 @@ async function fetchFullTMDBData(title, year) {
  * @throws {Error} When Claude API fails or returns invalid response
  */
 async function generateClaudeResponse(question) {
-  // Initialize cache service
+  const monitor = getPerformanceMonitor();
   const cache = getCache();
   
+  // Check predictive cache first (instant responses for common questions)
+  const { checkPredictiveCache } = await import('../../lib/predictive-cache.js');
+  const predictiveResult = await checkPredictiveCache(question);
+  if (predictiveResult) {
+    console.log('🚀 INSTANT response from predictive cache');
+    return predictiveResult;
+  }
+  
+  // Check for request deduplication second
+  const duplicateResult = await checkRequestDeduplication(question);
+  if (duplicateResult) {
+    return duplicateResult;
+  }
+  
+  // Create normalized key for pending request tracking
+  const requestKey = question.toLowerCase().trim().replace(/\s+/g, '_').substring(0, 100);
+  
   // Try Redis cache first for Claude responses
-  return await cache.cacheClaudeResponse(
+  const cachePromise = cache.cacheClaudeResponse(
     question, 
     'claude-3-5-sonnet-20241022',
     async () => {
       console.log(`🔄 Cache miss - generating fresh Claude response for: "${question.substring(0, 100)}..."`);
+      
+      const startTime = Date.now();
       
       const { Anthropic } = await import('@anthropic-ai/sdk');
       const { buildPrompt } = await import('../../lib/prompts/builder.js');
@@ -280,8 +359,22 @@ async function generateClaudeResponse(question) {
         apiKey: process.env.ANTHROPIC_API_KEY,
       });
 
-      // Use modular prompt system for ASK context (includes caching and standardized voice)
-      const promptConfig = buildPrompt('ASK', 'Include 3-4 accessibly written Explore Further topics for additional explorations. End with extensive "More Ideas" list containing up to 50 relevant movies.');
+      // Detect follow-up questions for quality upgrade strategy
+      const isFollowUp = question.length < 50 || 
+                        question.toLowerCase().includes('what about') ||
+                        question.toLowerCase().includes('and') ||
+                        question.toLowerCase().includes('also') ||
+                        question.toLowerCase().includes('more about');
+
+      // DIRECT STRATEGY: Consistent Haiku 3.5 with no-fluff responses
+      const promptConfig = buildPrompt('ASK', 
+        isFollowUp ? 
+          'Build on the conversation with 4-5 specific films. Skip any setup - jump straight into recommendations with brief reasons why they matter.' : 
+          'Be direct and punchy. Lead with specific films immediately. No "cinema offers" or "the genre explores" - just great movie recommendations with 1-2 word reasons why they rule.',
+        true // Always use Haiku 3.5 now
+      );
+
+      console.log(`🚀 Engagement strategy: Using ${promptConfig.model} for ${isFollowUp ? 'engaged user (quality)' : 'first impression (speed)'}`);
 
       try {
         const message = await anthropic.messages.create({
@@ -294,168 +387,135 @@ async function generateClaudeResponse(question) {
           ]
         });
 
+        // Track API cost and performance
+        const responseTime = Date.now() - startTime;
+        monitor.trackAPICost('claude_sonnet', 'ask-claude', 
+          message.usage?.input_tokens || 0, 
+          message.usage?.output_tokens || 0, 
+          false
+        );
+        monitor.trackMetric('claude_api_response_time', responseTime, {
+          question: question.substring(0, 50),
+          input_tokens: message.usage?.input_tokens || 0,
+          output_tokens: message.usage?.output_tokens || 0
+        });
+
         const parsedResponse = parseClaudeResponse(message.content[0].text);
-        console.log(`💾 Cached fresh Claude response for: "${question.substring(0, 50)}..."`);
+        console.log(`💾 Cached fresh Claude response for: "${question.substring(0, 50)}..." (${responseTime}ms)`);
+        
+        // Cache response for future predictive use (background)
+        const { getPredictiveCacheManager } = await import('../../lib/predictive-cache.js');
+        const predictiveManager = getPredictiveCacheManager();
+        predictiveManager.cachePredictiveResponse(question, parsedResponse).catch(err => {
+          console.warn('Failed to cache predictive response:', err);
+        });
+        
         return parsedResponse;
       } catch (error) {
         console.error('🔴 Claude API Error:', error);
+        // Track API error
+        monitor.trackMetric('claude_api_error', 1, {
+          error: error.message,
+          question: question.substring(0, 50)
+        });
         // Fallback to sophisticated response
         return generateSophisticatedResponse(question);
       }
     }
   );
+  
+  // Register this request for deduplication
+  pendingRequests.set(requestKey, {
+    promise: cachePromise,
+    timestamp: Date.now()
+  });
+  
+  try {
+    const result = await cachePromise;
+    return result;
+  } finally {
+    // Clean up completed request after a delay
+    setTimeout(() => {
+      pendingRequests.delete(requestKey);
+    }, REQUEST_DEDUP_TTL);
+  }
 }
 
 /**
- * Parses Claude's structured PARAGRAPH/MOVIES/MORE_IDEAS response format
+ * Cleanup expired pending requests periodically
+ */
+setInterval(() => {
+  const now = Date.now();
+  for (const [key, request] of pendingRequests.entries()) {
+    if (now - request.timestamp > REQUEST_DEDUP_TTL) {
+      pendingRequests.delete(key);
+    }
+  }
+}, REQUEST_DEDUP_TTL);
+
+/**
+ * Parses Claude's lightweight Ask response format
  * 
- * This parser handles Claude's specific output format, ensuring proper
- * sequencing of text paragraphs followed by their associated movie cards.
- * Critical for maintaining the interleaved content structure.
+ * New format supports:
+ * - Natural paragraphs with embedded *movie titles*
+ * - FOLLOW_UP_QUESTIONS for conversational flow
+ * - Lightweight structure for fast responses
  * 
  * @param {string} responseText - Raw text response from Claude API
  * @returns {Object} Parsed response with structured sections
  * 
  * @returns {Object} parsed
- * @returns {Array<Object>} parsed.sections - Text and movie sections in correct order
- * @returns {Object} parsed.moreIdeas - Extended recommendations section
+ * @returns {Array<Object>} parsed.sections - Text sections with embedded movie links
+ * @returns {Array<string>} parsed.followUpQuestions - Conversational follow-up questions
  * 
  * @example
- * // Input: "PARAGRAPH: Film noir emerged...\nMOVIES: The Maltese Falcon|1941|..."
+ * // Input: "Try *The Matrix* for digital reality...\nFOLLOW_UP_QUESTIONS: What interests you?|..."
  * // Output: {
- * //   sections: [
- * //     { type: 'text', content: 'Film noir emerged...' },
- * //     { type: 'movies', movies: [{ title: 'The Maltese Falcon', year: 1941, ... }] }
- * //   ]
+ * //   sections: [{ type: 'text', content: '...' }],
+ * //   followUpQuestions: ['What interests you?', ...]
  * // }
- * 
- * @see generateClaudeResponse which uses modular prompts from /lib/prompts/ that produce this format
  */
 function parseClaudeResponse(responseText) {
-  console.log('\n=== CLAUDE RESPONSE DEBUG ===');
+  console.log('\n=== LIGHTWEIGHT ASK RESPONSE DEBUG ===');
   console.log('Full response text:', responseText);
   console.log('=== END RESPONSE ===\n');
   
-  const sections = [];
-  const moreIdeasMovies = [];
-  
   const lines = responseText.split('\n');
-  let currentSection = null;
-  let currentMovies = [];
-  let inMoreIdeas = false;
+  const followUpQuestions = [];
+  let mainContent = '';
   
-  console.log('Total lines to parse:', lines.length);
-  
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i];
+  // Separate main content from follow-up questions
+  for (const line of lines) {
     const trimmedLine = line.trim();
     
-    console.log(`Line ${i}: "${trimmedLine}"`);
-    
-    if (!trimmedLine) continue; // Skip empty lines
-    
-    if (trimmedLine.startsWith('PARAGRAPH:')) {
-      console.log('Found PARAGRAPH line');
-      // Push previous text section first
-      if (currentSection) {
-        sections.push(currentSection);
-        console.log('Pushed previous section:', currentSection);
+    if (trimmedLine.startsWith('FOLLOW_UP_QUESTIONS:')) {
+      // Parse follow-up questions
+      const questionsLine = trimmedLine.replace('FOLLOW_UP_QUESTIONS:', '').trim();
+      if (questionsLine) {
+        const questions = questionsLine.split('|').map(q => q.trim()).filter(q => q);
+        followUpQuestions.push(...questions);
       }
-      // Then push any pending movies from previous paragraph
-      if (currentMovies.length > 0) {
-        sections.push({
-          type: 'movies',
-          movies: [...currentMovies]
-        });
-        console.log('Pushed movie section with', currentMovies.length, 'movies');
-        currentMovies = [];
-      }
-      // Start new text section
-      currentSection = {
-        type: 'text',
-        content: trimmedLine.replace('PARAGRAPH:', '').trim()
-      };
-      console.log('Started new text section:', currentSection.content);
-    } else if (trimmedLine.startsWith('MOVIES:')) {
-      const movieLine = trimmedLine.replace('MOVIES:', '').trim();
-      console.log('Found MOVIES line:', movieLine);
-      
-      if (movieLine) {
-        const parts = movieLine.split('|');
-        console.log('Split into parts:', parts);
-        
-        if (parts.length >= 2) { // At least title and year
-          const [title, year, description, streaming] = parts;
-          const movieObj = {
-            title: title?.trim() || 'Unknown Title',
-            year: parseInt(year?.trim()) || new Date().getFullYear(),
-            slug: description?.trim() || 'No description available',
-            streaming: streaming?.trim() || 'Check streaming services'
-          };
-          
-          console.log('Created movie object:', movieObj);
-          currentMovies.push(movieObj);
-        } else {
-          console.warn('Movie line has insufficient parts:', parts);
-        }
-      }
-    } else if (trimmedLine.startsWith('MORE_IDEAS:')) {
-      inMoreIdeas = true;
-      const movieLine = trimmedLine.replace('MORE_IDEAS:', '').trim();
-      if (movieLine) {
-        const parts = movieLine.split('|');
-        console.log('Parsing MORE_IDEAS line:', movieLine);
-        console.log('Split parts:', parts);
-        
-        const [title, year, description, streaming] = parts;
-        const movieObj = {
-          title: title?.trim() || 'Unknown Title',
-          year: parseInt(year?.trim()) || new Date().getFullYear(),
-          slug: description?.trim() || 'No description available',
-          streaming: streaming?.trim() || 'Check streaming services'
-        };
-        
-        console.log('Created MORE_IDEAS movie object:', movieObj);
-        moreIdeasMovies.push(movieObj);
-      }
-    } else if (inMoreIdeas && trimmedLine.includes('|')) {
-      const parts = trimmedLine.split('|');
-      console.log('Parsing additional MORE_IDEAS line:', trimmedLine);
-      console.log('Split parts:', parts);
-      
-      const [title, year, description, streaming] = parts;
-      const movieObj = {
-        title: title?.trim() || 'Unknown Title',
-        year: parseInt(year?.trim()) || new Date().getFullYear(),
-        slug: description?.trim() || 'No description available',
-        streaming: streaming?.trim() || 'Check streaming services'
-      };
-      
-      console.log('Created additional MORE_IDEAS movie object:', movieObj);
-      moreIdeasMovies.push(movieObj);
-    } else if (currentSection && trimmedLine) {
-      currentSection.content += ' ' + trimmedLine;
+    } else if (trimmedLine) {
+      // Add to main content
+      mainContent += (mainContent ? '\n' : '') + trimmedLine;
     }
   }
   
-  // Handle final sections - text first, then movies
-  if (currentSection) {
-    sections.push(currentSection);
-  }
+  // For lightweight Ask format, we return a single text section
+  const sections = mainContent ? [{
+    type: 'text',
+    content: mainContent
+  }] : [];
   
-  if (currentMovies.length > 0) {
-    sections.push({
-      type: 'movies',
-      movies: [...currentMovies]
-    });
-  }
+  console.log('Parsed lightweight response:');
+  console.log('- Main content length:', mainContent.length);
+  console.log('- Follow-up questions:', followUpQuestions.length);
   
   return {
     sections,
-    moreIdeas: {
-      title: 'More Great Films',
-      movies: moreIdeasMovies
-    }
+    followUpQuestions,
+    // For backward compatibility with existing UI
+    moreIdeas: null
   };
 }
 
@@ -660,23 +720,25 @@ async function askClaudeHandler(req, res) {
       }
     }
     
-    // Process "More Ideas" movies and save to database
-    for (let i = 0; i < claudeResponse.moreIdeas.movies.length; i++) {
-      const movie = claudeResponse.moreIdeas.movies[i];
-      
-      // Save to database (handles TMDB lookup internally)
-      const savedMovie = await saveMovieData(movie);
-      
-      // Update moreIdeas with poster and tmdb_id for response (if we got them back)
-      if (savedMovie?.poster_url || savedMovie?.tmdb_id) {
-        claudeResponse.moreIdeas.movies[i] = {
-          ...movie,
-          poster: savedMovie.poster_url || movie.poster,
-          tmdb_id: savedMovie.tmdb_id || movie.tmdb_id
-        };
+    // Process "More Ideas" movies and save to database (if they exist)
+    if (claudeResponse.moreIdeas && claudeResponse.moreIdeas.movies) {
+      for (let i = 0; i < claudeResponse.moreIdeas.movies.length; i++) {
+        const movie = claudeResponse.moreIdeas.movies[i];
+        
+        // Save to database (handles TMDB lookup internally)
+        const savedMovie = await saveMovieData(movie);
+        
+        // Update moreIdeas with poster and tmdb_id for response (if we got them back)
+        if (savedMovie?.poster_url || savedMovie?.tmdb_id) {
+          claudeResponse.moreIdeas.movies[i] = {
+            ...movie,
+            poster: savedMovie.poster_url || movie.poster,
+            tmdb_id: savedMovie.tmdb_id || movie.tmdb_id
+          };
+        }
+        
+        allMovies.push(movie);
       }
-      
-      allMovies.push(movie);
     }
 
     // Debug final response structure
@@ -694,11 +756,36 @@ async function askClaudeHandler(req, res) {
     console.log('More Ideas count:', claudeResponse.moreIdeas?.movies?.length || 0);
     console.log('=== END FINAL RESPONSE DEBUG ===\n');
 
-    // Return structured response for interleaved frontend
+    // Check for relevant genius content to suggest
+    let geniusSuggestions = null;
+    try {
+      const { getQueryDetector } = await import('../../lib/query-detector.js');
+      const detector = getQueryDetector();
+      const geniusResult = await detector.detectSeries(question);
+      
+      if (geniusResult.found && geniusResult.confidence >= 60) {
+        geniusSuggestions = {
+          type: geniusResult.type,
+          title: geniusResult.title,
+          subtitle: geniusResult.subtitle,
+          url: geniusResult.url,
+          confidence: geniusResult.confidence,
+          matchedKeywords: geniusResult.matchedKeywords
+        };
+        console.log(`✨ Found relevant Genius content: ${geniusResult.type} "${geniusResult.title}" (${geniusResult.confidence}% match)`);
+      }
+    } catch (error) {
+      console.warn('Failed to detect genius content for Ask response:', error);
+      // Non-critical, continue without suggestions
+    }
+
+    // Return structured response for lightweight Ask frontend
     const response = successResponse(
       {
         sections: claudeResponse.sections,
+        followUpQuestions: claudeResponse.followUpQuestions || [],
         moreIdeas: claudeResponse.moreIdeas,
+        geniusSuggestions: geniusSuggestions,
         totalMovies: allMovies.length
       },
       'Question processed successfully with Claude AI'
