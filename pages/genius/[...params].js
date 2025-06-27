@@ -2,6 +2,7 @@
 import { useRouter } from 'next/router';
 import PhoneFrame from '../../components/PhoneFrame';
 import AskInputBar from '../../components/AskInputBar';
+import BackButton from '../../components/BackButton';
 import MediaCard from '../../components/MediaCard';
 import EpisodeCard from '../../components/EpisodeCard';
 import GeniusEpisodePage from '../../components/GeniusEpisodePage';
@@ -66,6 +67,9 @@ function ThemePage({ data, handleAsk }) {
   return (
     <PhoneFrame active="genius">
       <div style={styles.container}>
+        {/* Back button for navigation */}
+        <BackButton variant="icon" context="episode" position="top-left" />
+        
         <div style={styles.fixedInputArea}>
           <AskInputBar onSubmit={handleAsk} />
         </div>
@@ -106,6 +110,9 @@ function SeriesPage({ data, themeId, handleAsk }) {
   return (
     <PhoneFrame active="genius">
       <div style={styles.container}>
+        {/* Back button for navigation */}
+        <BackButton variant="icon" context="episode" position="top-left" />
+        
         <div style={styles.fixedInputArea}>
           <AskInputBar onSubmit={handleAsk} />
         </div>
@@ -157,6 +164,9 @@ function EpisodePage({ data, themeId, seriesId, episodeId, handleAsk }) {
   return (
     <PhoneFrame active="genius">
       <div style={styles.container}>
+        {/* Back button for navigation */}
+        <BackButton variant="icon" context="episode" position="top-left" />
+        
         <div style={styles.fixedInputArea}>
           <AskInputBar onSubmit={handleAsk} />
         </div>
@@ -271,6 +281,9 @@ function GeniusHomePage({ handleAsk }) {
   return (
     <PhoneFrame active="genius">
       <div style={styles.container}>
+        {/* Back button for navigation */}
+        <BackButton variant="icon" context="episode" position="top-left" />
+        
         <div style={styles.fixedInputArea}>
           <AskInputBar onSubmit={handleAsk} />
         </div>
@@ -304,8 +317,13 @@ function GeniusHomePage({ handleAsk }) {
   );
 }
 
-// Static Generation
+// Enhanced static generation with demo mode optimizations
 export async function getStaticPaths() {
+  const { getDemoConfig, getDemoSafetyMonitor } = await import('../../lib/demo-config.js');
+  const demoConfig = getDemoConfig();
+  const safetyMonitor = getDemoSafetyMonitor();
+  
+  const buildStartTime = Date.now();
   const paths = [];
   
   // Generate paths for all themes, series, and episodes
@@ -328,10 +346,40 @@ export async function getStaticPaths() {
     });
   });
   
-  // Note: Home page handled by fallback or separate index route
+  // Demo mode: Prioritize popular demo content
+  if (demoConfig.ENABLED) {
+    const popularPaths = [];
+    const otherPaths = [];
+    
+    paths.forEach(path => {
+      const pathString = path.params.params.join('/');
+      const isPopular = demoConfig.DEMO_PATHS.geniusPages.some(popular => 
+        pathString.includes(popular.replace('/', '-'))
+      );
+      
+      if (isPopular) {
+        popularPaths.push(path);
+      } else {
+        otherPaths.push(path);
+      }
+    });
+    
+    // Prioritize popular content for faster demo builds
+    const sortedPaths = [...popularPaths, ...otherPaths];
+    console.log(`🎯 DEMO MODE: Prioritizing ${popularPaths.length} popular genius pages`);
+    
+    const buildTime = Date.now() - buildStartTime;
+    safetyMonitor.recordMetric('genius_static_generation_time', buildTime);
+    
+    return {
+      paths: sortedPaths,
+      fallback: false // All pages pre-generated for instant demo performance
+    };
+  }
   
-  console.log('Generated paths count:', paths.length);
-  console.log('Sample paths:', paths.slice(0, 5));
+  // Production mode
+  const buildTime = Date.now() - buildStartTime;
+  console.log(`🚀 Generated ${paths.length} genius paths in ${buildTime}ms`);
   
   return {
     paths,
@@ -340,17 +388,29 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
+  const { getDemoConfig, getDemoSafetyMonitor } = await import('../../lib/demo-config.js');
+  const demoConfig = getDemoConfig();
+  const safetyMonitor = getDemoSafetyMonitor();
+  
+  const generationStart = Date.now();
   const routeParams = params?.params || [];
   const [themeId, seriesId, episodeId] = routeParams;
   
   // Home page
   if (routeParams.length === 0) {
+    const generationTime = Date.now() - generationStart;
+    safetyMonitor.recordMetric('genius_home_generation_time', generationTime);
+    
     return {
       props: {
         pageType: 'home',
-        data: null
+        data: null,
+        ...(demoConfig.ENABLED && {
+          demoMode: true,
+          generationTime
+        })
       },
-      revalidate: 86400
+      revalidate: demoConfig.ENABLED ? demoConfig.STATIC_GENERATION.revalidationInterval : 86400
     };
   }
   
@@ -362,13 +422,21 @@ export async function getStaticProps({ params }) {
   
   // Theme page
   if (!seriesId) {
+    const generationTime = Date.now() - generationStart;
+    safetyMonitor.recordMetric('genius_theme_generation_time', generationTime);
+    
     return {
       props: {
         pageType: 'theme',
         data: { theme },
-        themeId
+        themeId,
+        ...(demoConfig.ENABLED && {
+          demoMode: true,
+          generationTime,
+          cached: true
+        })
       },
-      revalidate: 86400
+      revalidate: demoConfig.ENABLED ? demoConfig.STATIC_GENERATION.revalidationInterval : 86400
     };
   }
   
@@ -380,14 +448,22 @@ export async function getStaticProps({ params }) {
   
   // Series page
   if (!episodeId) {
+    const generationTime = Date.now() - generationStart;
+    safetyMonitor.recordMetric('genius_series_generation_time', generationTime);
+    
     return {
       props: {
         pageType: 'series',
         data: { theme, series },
         themeId,
-        seriesId
+        seriesId,
+        ...(demoConfig.ENABLED && {
+          demoMode: true,
+          generationTime,
+          cached: true
+        })
       },
-      revalidate: 86400
+      revalidate: demoConfig.ENABLED ? demoConfig.STATIC_GENERATION.revalidationInterval : 86400
     };
   }
   

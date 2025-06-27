@@ -2,6 +2,8 @@
 import { useRouter } from 'next/router';
 import { getMediaById } from '../../lib/media';
 import PhoneFrame from '../../components/PhoneFrame';
+import BackButton from '../../components/BackButton';
+import FilmLoadingMessage from '../../components/FilmLoadingMessage';
 
 export default function MediaDetailPage() {
   const router = useRouter();
@@ -12,8 +14,11 @@ export default function MediaDetailPage() {
   if (!media) {
     return (
       <PhoneFrame>
+        {/* Back button for navigation */}
+        <BackButton variant="icon" context="movie" position="top-left" />
+        
         <div style={styles.loadingContainer}>
-          <div style={styles.loadingText}>Loading...</div>
+          <FilmLoadingMessage message="Diving into the vault..." />
         </div>
       </PhoneFrame>
     );
@@ -21,6 +26,9 @@ export default function MediaDetailPage() {
 
   return (
     <PhoneFrame>
+      {/* Back button for navigation */}
+      <BackButton variant="icon" context="movie" position="top-left" />
+      
       <div style={styles.container}>
         <img src={media.poster} alt={media.title} style={styles.poster} />
         <h1 style={styles.title}>
@@ -47,9 +55,6 @@ const styles = {
     padding: '16px',
     textAlign: 'center',
     color: '#6b7280',
-  },
-  loadingText: {
-    fontSize: '14px',
   },
   poster: {
     width: '100%',

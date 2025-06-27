@@ -16,7 +16,7 @@
  * />
  */
 import { Heart, Bookmark } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect, memo } from 'react';
 import { useRouter } from 'next/router';
 import { FavoritesManager } from './FavoritesManager';
 
@@ -33,7 +33,7 @@ import { FavoritesManager } from './FavoritesManager';
  * @param {boolean} props.isDetailPage - Whether this is on a detail page (optional)
  * @param {number} props.tmdbId - TMDB ID for navigation (optional)
  */
-export default function PersonCard({ 
+function PersonCard({ 
   name, 
   birthYear, 
   deathYear,
@@ -368,3 +368,21 @@ const styles = {
     transition: 'background-color 0.2s ease',
   },
 };
+
+/**
+ * Custom prop comparison for PersonCard memoization
+ * Only re-render if person data actually changes
+ */
+const arePropsEqual = (prevProps, nextProps) => {
+  return prevProps.name === nextProps.name &&
+         prevProps.birthYear === nextProps.birthYear &&
+         prevProps.deathYear === nextProps.deathYear &&
+         prevProps.initialBiography === nextProps.initialBiography &&
+         prevProps.initialProfile === nextProps.initialProfile &&
+         prevProps.knownForDepartment === nextProps.knownForDepartment &&
+         prevProps.tmdbId === nextProps.tmdbId &&
+         prevProps.isDetailPage === nextProps.isDetailPage;
+};
+
+// Export memoized component
+export default memo(PersonCard, arePropsEqual);

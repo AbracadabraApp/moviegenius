@@ -2,7 +2,7 @@
  * Railway Batch Processing API - Slugs
  * 
  * Endpoint for backfilling missing movie slugs in production
- * Generates concise descriptions for MediaCard display
+ * Generates punchy marketing taglines for MediaCard display
  */
 
 import { createClient } from '@supabase/supabase-js';
@@ -62,7 +62,7 @@ class RailwaySlugBatchProcessor {
   }
 
   async generateSlug(title, year) {
-    const prompt = `For the movie "${title}" (${year}), provide a brief, compelling one-sentence description that captures the essence of the film. Keep it under 50 characters and focus on the main plot or what makes it memorable. Just return the description, nothing else.`;
+    const prompt = `For the movie "${title}" (${year}), provide a punchy marketing tagline under 50 characters. Think movie poster tagline - short, memorable, exciting. Examples: "Terror has a new name", "Love conquers all", "Justice is coming". Just return the tagline, nothing else.`;
 
     try {
       const message = await anthropic.messages.create({

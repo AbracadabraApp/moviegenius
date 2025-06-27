@@ -4,7 +4,7 @@
  * A reusable loading indicator with customizable size and color.
  * Provides visual feedback during async operations.
  */
-import React from 'react';
+import React, { memo } from 'react';
 
 /**
  * LoadingSpinner - displays an animated loading indicator
@@ -14,7 +14,7 @@ import React from 'react';
  * @param {string} props.color - Color of the spinner (CSS color value)
  * @param {string} props.className - Additional CSS classes
  */
-export default function LoadingSpinner({ 
+function LoadingSpinner({ 
   size = 'medium', 
   color = '#3b82f6',
   className = '' 
@@ -77,3 +77,8 @@ const styles = {
     transformOrigin: 'center',
   },
 };
+
+/**
+ * LoadingSpinner rarely changes props, so default shallow comparison is sufficient
+ */
+export default memo(LoadingSpinner);
