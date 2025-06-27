@@ -44,7 +44,13 @@
     "demo:health": "node scripts/demo-monitor-dashboard.js health",
     "demo:readiness": "node scripts/demo-monitor-dashboard.js readiness",
     "speed:cache:warm": "node scripts/warm-predictive-cache.js",
-    "speed:test": "node scripts/speed-test.js"
+    "speed:test": "node scripts/speed-test.js",
+    "nuclear:status": "node -e \"fetch('http://localhost:3000/api/nuclear-status').then(r=>r.json()).then(console.log)\"",
+    "nuclear:dashboard": "echo 'Visit http://localhost:3000/nuclear-dashboard'",
+    "nuclear:batch": "node scripts/nuclear-batch.js",
+    "nuclear:test": "node scripts/nuclear-batch.js --count 5 --dry-run",
+    "nuclear:process": "node scripts/nuclear-batch.js --count 50",
+    "nuclear:expand": "node scripts/nuclear-batch.js --count 1000"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.53.0",

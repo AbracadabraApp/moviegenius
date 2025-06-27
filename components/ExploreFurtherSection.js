@@ -1,7 +1,8 @@
 // components/ExploreFurtherSection.js - Reusable Explore Further section with gold dividers
+import { memo } from 'react';
 import ExplorePromptCard from './ExplorePromptCard';
 
-export default function ExploreFurtherSection({ 
+function ExploreFurtherSection({ 
   prompts = [], 
   contextPrefix,
   style = {},
@@ -62,3 +63,24 @@ const styles = {
     gap: '16px',
   },
 };
+
+// Memoized ExploreFurtherSection with intelligent comparison
+const ExploreFurtherSectionMemo = memo(ExploreFurtherSection, (prevProps, nextProps) => {
+  // Quick check for prompts array length
+  if (prevProps.prompts.length !== nextProps.prompts.length) {
+    return false;
+  }
+  
+  // Deep comparison of prompts array
+  const promptsEqual = prevProps.prompts.every((prompt, index) => 
+    prompt === nextProps.prompts[index]
+  );
+  
+  return (
+    promptsEqual &&
+    prevProps.contextPrefix === nextProps.contextPrefix &&
+    prevProps.children === nextProps.children
+  );
+});
+
+export default ExploreFurtherSectionMemo;

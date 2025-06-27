@@ -1,15 +1,16 @@
 // components/AskInputBar.js
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback, memo } from 'react';
 import { useRouter } from 'next/router';
 import { CircleChevronLeft, CircleChevronRight } from 'lucide-react';
 
-export default function AskInputBar({
+function AskInputBar({
   placeholder = 'Ask me about movies...',
   isLoading = false,
   episodePrefix = null,
   style = {},
   onSubmit = null,
   showNavigation = true, // New prop to control navigation buttons
+  multiline = false, // New prop for textarea vs input
 }) {
   const [question, setQuestion] = useState('');
   const [isFocused, setIsFocused] = useState(false);
@@ -35,49 +36,25 @@ export default function AskInputBar({
     }
   }, [barId, isClient]);
 
-  // Prevent hydration mismatch by only showing interactive elements after mount
-  if (!isClient) {
-    return (
-      <form style={styles.form}>
-        <div style={styles.bar}>
-          {!episodePrefix && (
-            <div style={styles.navButton}>
-              <div style={{...styles.navIcon, opacity: 0.3, width: 30, height: 30}} />
-            </div>
-          )}
-          <input
-            type="text"
-            placeholder={placeholder}
-            disabled
-            style={{...styles.input, opacity: 0.6}}
-          />
-          <div style={styles.navButton}>
-            <div style={{...styles.navIcon, opacity: 0.3, width: 30, height: 30}} />
-          </div>
-        </div>
-      </form>
-    );
-  }
-
   // Check if there's a page to go back to
-  const canGoBack = () => {
+  const canGoBack = useCallback(() => {
     return isClient && window.history.length > 1;
-  };
+  }, [isClient]);
 
   // Check if there's a page to go forward to or if there's text to submit
-  const canGoForward = () => {
+  const canGoForward = useCallback(() => {
     return question.trim() || (isClient && window.history.state && window.history.state.forward);
-  };
+  }, [question, isClient]);
 
   // Standard browser back navigation
-  const handleBack = () => {
+  const handleBack = useCallback(() => {
     if (typeof window !== 'undefined') {
       window.history.back();
     }
-  };
+  }, []);
 
   // Smart routing with movie detection or submit question
-  const handleForward = async () => {
+  const handleForward = useCallback(async () => {
     const trimmed = question.trim();
     if (trimmed) {
       // For episode context, always go to ask (no movie detection)
@@ -125,9 +102,9 @@ export default function AskInputBar({
         window.history.forward();
       }
     }
-  };
+  }, [question, episodePrefix, router]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = useCallback((e) => {
     e.preventDefault();
     const trimmed = question.trim();
     if (trimmed) {
@@ -140,7 +117,31 @@ export default function AskInputBar({
         handleForward();
       }
     }
-  };
+  }, [question, episodePrefix, onSubmit, handleForward]);
+
+  // Prevent hydration mismatch by only showing interactive elements after mount
+  if (!isClient) {
+    return (
+      <form style={styles.form}>
+        <div style={styles.bar}>
+          {!episodePrefix && (
+            <div style={styles.navButton}>
+              <div style={{...styles.navIcon, opacity: 0.3, width: 30, height: 30}} />
+            </div>
+          )}
+          <input
+            type="text"
+            placeholder={placeholder}
+            disabled
+            style={{...styles.input, opacity: 0.6}}
+          />
+          <div style={styles.navButton}>
+            <div style={{...styles.navIcon, opacity: 0.3, width: 30, height: 30}} />
+          </div>
+        </div>
+      </form>
+    );
+  }
 
   return (
     <>
@@ -189,22 +190,49 @@ export default function AskInputBar({
             </button>
           )}
 
-          <input
-            ref={inputRef}
-            type="text"
-            placeholder={isLoading ? 'Please wait...' : placeholder}
-            value={question}
-            onChange={(e) => setQuestion(e.target.value)}
-            onFocus={() => setIsFocused(true)}
-            onBlur={() => setIsFocused(false)}
-            disabled={isLoading}
-            className="ask-input"
-            style={{
-              ...styles.input,
-              opacity: isLoading ? 0.6 : 1,
-              cursor: isLoading ? 'not-allowed' : 'text'
-            }}
-          />
+          {multiline ? (
+            <textarea
+              ref={inputRef}
+              placeholder={isLoading ? 'Please wait...' : placeholder}
+              value={question}
+              onChange={(e) => setQuestion(e.target.value)}
+              onFocus={() => setIsFocused(true)}
+              onBlur={() => setIsFocused(false)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  e.preventDefault();
+                  handleSubmit(e);
+                }
+              }}
+              disabled={isLoading}
+              className="ask-input"
+              rows={2}
+              style={{
+                ...styles.input,
+                ...styles.textarea,
+                opacity: isLoading ? 0.6 : 1,
+                cursor: isLoading ? 'not-allowed' : 'text',
+                resize: 'none'
+              }}
+            />
+          ) : (
+            <input
+              ref={inputRef}
+              type="text"
+              placeholder={isLoading ? 'Please wait...' : placeholder}
+              value={question}
+              onChange={(e) => setQuestion(e.target.value)}
+              onFocus={() => setIsFocused(true)}
+              onBlur={() => setIsFocused(false)}
+              disabled={isLoading}
+              className="ask-input"
+              style={{
+                ...styles.input,
+                opacity: isLoading ? 0.6 : 1,
+                cursor: isLoading ? 'not-allowed' : 'text'
+              }}
+            />
+          )}
 
           {showNavigation && (episodePrefix ? (
             // Episode context: only show submit button when there's text
@@ -290,6 +318,10 @@ const styles = {
     background: 'transparent',
     margin: '0 4px',
   },
+  textarea: {
+    fontFamily: 'inherit',
+    lineHeight: '1.4',
+  },
   navButton: {
     border: 'none',
     background: 'transparent',
@@ -308,3 +340,17 @@ const styles = {
     transition: 'all 0.2s ease',
   },
 };
+
+// Memoized AskInputBar with intelligent prop comparison
+const AskInputBarMemo = memo(AskInputBar, (prevProps, nextProps) => {
+  return (
+    prevProps.placeholder === nextProps.placeholder &&
+    prevProps.isLoading === nextProps.isLoading &&
+    prevProps.episodePrefix === nextProps.episodePrefix &&
+    prevProps.showNavigation === nextProps.showNavigation &&
+    prevProps.multiline === nextProps.multiline &&
+    prevProps.onSubmit === nextProps.onSubmit
+  );
+});
+
+export default AskInputBarMemo;

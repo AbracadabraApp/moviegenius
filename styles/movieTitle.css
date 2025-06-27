@@ -1,0 +1,88 @@
+/* Movie Title Global Styles */
+
+/* Base movie title styling - gold underline pattern */
+.movie-title {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #d4af37;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  font-weight: 500;
+  font-style: normal;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.movie-title:hover {
+  text-decoration-color: #b8941f;
+  color: inherit;
+}
+
+/* Italic movie titles (Ask responses) - combines italic with gold underline */
+.movie-title-italic {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #d4af37;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  font-weight: 500;
+  font-style: italic;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.movie-title-italic:hover {
+  text-decoration-color: #b8941f;
+  color: inherit;
+}
+
+/* Movie titles in quotes (Movie pages) */
+.movie-title-quoted {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #d4af37;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  font-weight: 500;
+  font-style: normal;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.movie-title-quoted:hover {
+  text-decoration-color: #b8941f;
+  color: inherit;
+}
+
+.movie-title-quoted:before {
+  content: '"';
+}
+
+.movie-title-quoted:after {
+  content: '"';
+}
+
+/* Non-clickable movie titles (just styling, no interaction) */
+.movie-title-display {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #d4af37;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  font-weight: 500;
+  font-style: italic;
+  cursor: default;
+}
+
+/* Utility classes for different contexts */
+.movie-title--dark-text {
+  color: #2d3748;
+}
+
+.movie-title--light-text {
+  color: #ffffff;
+}
+
+.movie-title--medium-text {
+  color: #4a5568;
+}

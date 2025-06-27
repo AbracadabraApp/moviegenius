@@ -28,7 +28,7 @@ export default async function handler(req, res) {
 
     // Only fetch slug if needed AND if no good slug exists in database
     if (needsSlug) {
-      console.log('Checking for existing slug for:', title, year);
+      // Checking for existing slug
       
       // 🛡️ PROTECTION: Check database first for existing Claude slug
       const { data: existingMovie, error: dbError } = await supabase
@@ -39,7 +39,7 @@ export default async function handler(req, res) {
         .single();
         
       if (!dbError && existingMovie?.slug && existingMovie.slug.length <= 50) {
-        console.log('✅ Found existing good short slug, not overwriting');
+        // Found existing good short slug, not overwriting
         return res.status(200).json({
           slug: existingMovie.slug,
           title: title,
@@ -48,7 +48,7 @@ export default async function handler(req, res) {
         });
       }
       
-      console.log('Generating new short slug for:', title, year);
+      // Generating new short slug
       
       const prompt = `For the movie "${title}" (${year}), provide a punchy marketing tagline under 50 characters. Think movie poster tagline - short, memorable, exciting. Examples: "Terror has a new name", "Love conquers all", "Justice is coming". Just return the tagline, nothing else.`;
 
@@ -70,7 +70,7 @@ export default async function handler(req, res) {
         slug = slug.slice(1, -1);
       }
       
-      console.log('Generated new slug:', slug);
+      // Generated new slug
     }
 
     return res.status(200).json({

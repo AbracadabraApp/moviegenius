@@ -120,7 +120,7 @@ async function fetchStreamingInfoFromClaude(title, year, performanceMonitor) {
   const requestStartTime = performance.now();
   
   try {
-    console.log(`🎬 Fetching streaming info from Claude for: ${title} (${year})`);
+    // Fetching streaming info from Claude
     
     const prompt = `Where can someone stream the movie "${title}" (${year}) right now? List the current streaming services where it's available. Be specific about platform names like Netflix, Hulu, Amazon Prime Video, Disney+, etc. If it's available for rent/purchase, mention that too. Keep your response concise and factual.`;
 
@@ -153,7 +153,7 @@ async function fetchStreamingInfoFromClaude(title, year, performanceMonitor) {
     // Log cost information in development
     if (process.env.NODE_ENV === 'development') {
       const estimatedCost = (inputTokens * 3.0 + outputTokens * 15.0) / 1000000;
-      console.log(`💰 Claude API cost: ~$${estimatedCost.toFixed(4)} (${inputTokens + outputTokens} tokens, ${requestTime.toFixed(0)}ms)`);
+      // Claude API cost tracked
     }
 
     // Validate response quality
@@ -188,7 +188,7 @@ async function fetchStreamingInfoFromClaude(title, year, performanceMonitor) {
     // Provide fallback response for common cases
     const fallbackResponse = getFallbackStreamingInfo(title, year);
     if (fallbackResponse) {
-      console.log(`📺 Using fallback streaming info for: ${title} (${year})`);
+      // Using fallback streaming info
       return {
         streamingText: fallbackResponse,
         title,

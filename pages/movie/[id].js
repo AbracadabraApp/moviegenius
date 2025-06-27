@@ -16,6 +16,8 @@ import FeaturedFilmsSection from '../../components/FeaturedFilmsSection';
 import ExploreFurtherSection from '../../components/ExploreFurtherSection';
 import dynamic from 'next/dynamic';
 import usePredictiveLoading from '../../hooks/usePredictiveLoading';
+import { Anthropic } from '@anthropic-ai/sdk';
+import { buildPrompt } from '../../lib/prompts/builder.js';
 
 // Lazy load heavy analysis components
 const EntityLinkedText = dynamic(() => import('../../components/EntityLinkedText'), {
@@ -26,21 +28,30 @@ const MovieAnalysisWithEntities = dynamic(() => import('../../components/EntityL
   loading: () => <div style={{ padding: '8px', color: '#6b7280', fontSize: '14px' }}>Consulting the film critics...</div>
 });
 // import useStreamingData from '../../hooks/useStreamingData'; // Stubbed out
-import loadingMessages from '../../data/loading-messages.json';
 
-export default function MovieDetailPage({ title, year, initialSlug, initialPoster, initialStreaming, tmdbId, error }) {
+export default function MovieDetailPage({ 
+  title, 
+  year, 
+  initialSlug, 
+  initialPoster, 
+  initialStreaming, 
+  tmdbId, 
+  error,
+  isNuclear,
+  sections: staticSections,
+  exploreFurther: staticExploreFurther,
+  moreIdeas: staticMoreIdeas
+}) {
   const router = useRouter();
   const { id } = router.query;
-  const [isLoadingAnalysis, setIsLoadingAnalysis] = useState(true);
   const [hearted, setHearted] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
-  const [loadingMessage, setLoadingMessage] = useState('');
-  const [loadingIcon, setLoadingIcon] = useState('');
-  const [sections, setSections] = useState([]);
-  const [exploreFurther, setExploreFurther] = useState([]);
-  const [moreIdeas, setMoreIdeas] = useState(null);
-  const [entityData, setEntityData] = useState(null);
-  const [isFetchingTMDB, setIsFetchingTMDB] = useState(false);
+  
+  // NUCLEAR: Use static data from SSG props for nuclear movies, empty for ISR movies
+  const sections = staticSections || [];
+  const exploreFurther = staticExploreFurther || [];
+  const moreIdeas = staticMoreIdeas || null;
+  const entityData = null; // Not implemented in nuclear build yet
 
   // Demo Mode: Predictive content loading
   const { trackInteraction, prefetchContent, isEnabled: isPredictiveEnabled } = usePredictiveLoading(
@@ -57,97 +68,14 @@ export default function MovieDetailPage({ title, year, initialSlug, initialPoste
     });
   }, [router]);
 
-  // Handle complete movie page loading with new clean API
-  useEffect(() => {
-    const loadMoviePage = async () => {
-      if (!tmdbId) return;
-      
-      // Prevent excessive API calls during development
-      if (isFetchingTMDB) return;
-      
-      // Only skip API call if we're in a reload loop scenario
-      // Always call API to get Claude analysis content
-      
-      console.log('📄 Loading movie page for TMDB ID:', tmdbId);
-      setIsFetchingTMDB(true);
-      
-      try {
-        const response = await fetch('/api/load-movie-page', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ tmdb_id: tmdbId })
-        });
-        
-        if (response.ok) {
-          const data = await response.json();
-          console.log('✅ Movie page loaded:', data.movie.title, data.cached ? '(cached)' : '(fresh)');
-          
-          // If we got updated movie data and it's not a TMDB fetch case, refresh once
-          if (data.movie.title !== title && title !== 'TMDB_FETCH_REQUIRED') {
-            console.log('🔄 Movie data updated, refreshing page...');
-            window.location.reload();
-          } else if (title === 'TMDB_FETCH_REQUIRED') {
-            // First time loading with TMDB data - update URL without reload
-            console.log('🔄 Initial TMDB data loaded, updating URL...');
-            window.history.replaceState(null, '', `/movie/${tmdbId}`);
-            // Continue to process the data below
-          }
-          
-          // Process the analysis data (for both TMDB_FETCH_REQUIRED and normal cases)
-          if (data.analysis) {
-            const parsedSections = parseClaudeResponse(data.analysis);
-            console.log('🔍 Parsed sections:', parsedSections.sections.length);
-            console.log('🔍 Explore Further topics:', parsedSections.exploreFurther);
-            console.log('🔍 More Ideas:', parsedSections.moreIdeas);
-            setSections(parsedSections.sections);
-            setExploreFurther(parsedSections.exploreFurther);
-            setMoreIdeas(parsedSections.moreIdeas);
-            setEntityData(data.entityData);
-          }
-          setIsLoadingAnalysis(false);
-        } else {
-          console.error('❌ Movie page loading failed:', response.status);
-          setIsLoadingAnalysis(false);
-        }
-        
-        setIsFetchingTMDB(false);
-      } catch (error) {
-        console.error('❌ Error loading movie page:', error);
-        setIsFetchingTMDB(false);
-        setIsLoadingAnalysis(false);
-      }
-    };
-    
-    loadMoviePage();
-  }, [tmdbId]); // Only depend on tmdbId - title will be updated by API response
+  // Client-side API fetching removed - using SSG props instead
 
-  // Reset state when navigating between movies
+  // Navigation scroll reset
   useEffect(() => {
-    console.log('🎬 Movie page component loaded!', { id, title, year });
-    
-    // Reset analysis state when navigating between movies
     if (id && tmdbId) {
-      console.log('🔄 Resetting state for new movie:', id);
-      setIsLoadingAnalysis(true);
-      setSections([]);
-      setExploreFurther([]);
-      setMoreIdeas(null);
-      setEntityData(null);
-      
-      // Initialize loading message and icon for film-themed loading
-      const iconFiles = [
-        'film-movie-reel-icon.png',
-        'film-movie-icon.png',
-        'chair-director-outline-icon.png'
-      ];
-      const randomMessage = loadingMessages[Math.floor(Math.random() * loadingMessages.length)];
-      const randomIcon = iconFiles[Math.floor(Math.random() * iconFiles.length)];
-      setLoadingMessage(randomMessage);
-      setLoadingIcon(randomIcon);
-      
       window.scrollTo(0, 0);
     }
-  }, [id, tmdbId]); // Reset when either ID or tmdbId changes
+  }, [id, tmdbId]);
 
   // Load favorites state when movie props are available
   useEffect(() => {
@@ -168,127 +96,6 @@ export default function MovieDetailPage({ title, year, initialSlug, initialPoste
   }, [title, year]);
 
 
-  // Parse Claude's structured response (copied from ask-claude.js)
-  function parseClaudeResponse(responseText) {
-    const sections = [];
-    const moreIdeasMovies = [];
-    const exploreFurtherTopics = [];
-    
-    const lines = responseText.split('\n');
-    let currentSection = null;
-    let currentMovies = [];
-    let inMoreIdeas = false;
-    
-    for (let i = 0; i < lines.length; i++) {
-      const line = lines[i];
-      const trimmedLine = line.trim();
-      
-      if (!trimmedLine) continue; // Skip empty lines
-      
-      if (trimmedLine.startsWith('PARAGRAPH:')) {
-        // Push previous text section first
-        if (currentSection) {
-          sections.push(currentSection);
-        }
-        // Then push any pending movies from previous paragraph
-        if (currentMovies.length > 0) {
-          sections.push({
-            type: 'movies',
-            movies: [...currentMovies]
-          });
-          currentMovies = [];
-        }
-        // Start new text section
-        currentSection = {
-          type: 'text',
-          content: trimmedLine.replace('PARAGRAPH:', '').trim()
-        };
-      } else if (trimmedLine.startsWith('MOVIES:')) {
-        const movieLine = trimmedLine.replace('MOVIES:', '').trim();
-        
-        if (movieLine) {
-          const parts = movieLine.split('|');
-          
-          if (parts.length >= 2) { // At least title and year
-            const [title, year, description, streaming] = parts;
-            // 🔒 CRITICAL: Always preserve TMDB ID for navigation
-            // Let MediaCard fetch proper database slugs instead of using Claude's descriptions
-            const movieObj = {
-              title: title?.trim() || 'Unknown Title',
-              year: parseInt(year?.trim()) || new Date().getFullYear(),
-              slug: null, // Let MediaCard fetch proper tagline from database
-              poster: '/images/placeholder-poster.jpg', // Default poster
-              tmdb_id: null // Will be fetched by MediaCard if needed
-            };
-            
-            currentMovies.push(movieObj);
-          }
-        }
-      } else if (trimmedLine.startsWith('EXPLORE_FURTHER:')) {
-        const topic = trimmedLine.replace('EXPLORE_FURTHER:', '').trim();
-        if (topic) {
-          exploreFurtherTopics.push(topic);
-        }
-      } else if (trimmedLine.startsWith('MORE_IDEAS:')) {
-        inMoreIdeas = true;
-        const movieLine = trimmedLine.replace('MORE_IDEAS:', '').trim();
-        if (movieLine) {
-          const parts = movieLine.split('|');
-          
-          const [title, year, description, streaming] = parts;
-          // 🔒 CRITICAL: Always preserve TMDB ID for navigation
-          // Let MediaCard fetch proper database slugs instead of using Claude's descriptions
-          const movieObj = {
-            title: title?.trim() || 'Unknown Title',
-            year: parseInt(year?.trim()) || new Date().getFullYear(),
-            slug: null, // Let MediaCard fetch proper tagline from database
-            poster: '/images/placeholder-poster.jpg', // Default poster
-            tmdb_id: null // Will be fetched by MediaCard if needed
-          };
-          
-          moreIdeasMovies.push(movieObj);
-        }
-      } else if (inMoreIdeas && trimmedLine.includes('|')) {
-        const parts = trimmedLine.split('|');
-        
-        const [title, year, description, streaming] = parts;
-        // 🔒 CRITICAL: Always preserve TMDB ID for navigation
-        // Let MediaCard fetch proper database slugs instead of using Claude's descriptions
-        const movieObj = {
-          title: title?.trim() || 'Unknown Title',
-          year: parseInt(year?.trim()) || new Date().getFullYear(),
-          slug: null, // Let MediaCard fetch proper tagline from database
-          poster: '/images/placeholder-poster.jpg', // Default poster
-          tmdb_id: null // Will be fetched by MediaCard if needed
-        };
-        
-        moreIdeasMovies.push(movieObj);
-      } else if (currentSection && trimmedLine) {
-        currentSection.content += ' ' + trimmedLine;
-      }
-    }
-    
-    // Handle final sections - text first, then movies
-    if (currentSection) {
-      sections.push(currentSection);
-    }
-    
-    if (currentMovies.length > 0) {
-      sections.push({
-        type: 'movies',
-        movies: [...currentMovies]
-      });
-    }
-    
-    return {
-      sections,
-      exploreFurther: exploreFurtherTopics,
-      moreIdeas: {
-        title: 'More Great Films',
-        movies: moreIdeasMovies
-      }
-    };
-  }
 
 
 
@@ -308,31 +115,7 @@ export default function MovieDetailPage({ title, year, initialSlug, initialPoste
     );
   }
 
-  // Show TMDB loading state if fetching movie data
-  if (isFetchingTMDB || title === 'TMDB_FETCH_REQUIRED') {
-    return (
-      <PhoneFrame>
-        <div style={styles.container}>
-          <div style={styles.inputArea}>
-            <AskInputBar onSubmit={handleAsk} />
-          </div>
-          
-          <div style={styles.loadingContainer}>
-            <div style={styles.loadingRow}>
-              <img 
-                src="/icons/loading/film-movie-reel-icon.png" 
-                alt="Loading..." 
-                style={styles.filmIcon}
-              />
-              <span style={styles.loadingText}>
-                {isFetchingTMDB ? 'Consulting the film archives...' : 'Diving into the vault...'}
-              </span>
-            </div>
-          </div>
-        </div>
-      </PhoneFrame>
-    );
-  }
+  // Loading states removed - using SSG for instant load
 
   return (
     <PhoneFrame>
@@ -354,20 +137,8 @@ export default function MovieDetailPage({ title, year, initialSlug, initialPoste
         />
 
         <div style={styles.claudeSection}>
-          {isLoadingAnalysis ? (
-            <div style={styles.loadingContainer}>
-              <div style={styles.loadingRow}>
-                {loadingIcon && (
-                  <img 
-                    src={`/icons/loading/${loadingIcon}`} 
-                    alt="Loading..." 
-                    style={styles.filmIcon}
-                  />
-                )}
-                <span style={styles.loadingText}>{loadingMessage}</span>
-              </div>
-            </div>
-          ) : (
+          {/* NUCLEAR: Show build-time generated content for nuclear movies, placeholder for ISR */}
+          {isNuclear && sections.length > 0 ? (
             <div style={styles.claudeContent}>              
               {/* Render interleaved sections with simple explore further math */}
               {(() => {
@@ -382,6 +153,13 @@ export default function MovieDetailPage({ title, year, initialSlug, initialPoste
                     <div key={`section-${sectionIndex}`}>
                       {section.type === 'text' && (
                         <>
+                          {!isFirstTextSection && (
+                            <div style={styles.textSectionHeader}>
+                              <div style={styles.sectionDivider} />
+                              <span style={styles.sectionLabel}>Analysis</span>
+                              <div style={styles.sectionDivider} />
+                            </div>
+                          )}
                           <div style={{
                             ...styles.textSection,
                             marginTop: isFirstTextSection ? '8px' : styles.textSection.marginTop
@@ -466,6 +244,22 @@ export default function MovieDetailPage({ title, year, initialSlug, initialPoste
                 />
               )}
             </div>
+          ) : (
+            /* ISR movies get placeholder content until client-side analysis loads */
+            <div style={styles.claudeContent}>
+              <div style={{
+                padding: '40px 20px',
+                textAlign: 'center',
+                color: '#6b7280',
+                fontSize: '16px',
+                fontStyle: 'italic'
+              }}>
+                {isNuclear === false 
+                  ? 'Analysis loading for ISR movie...' 
+                  : 'Analysis content will be available once build-time processing is implemented.'
+                }
+              </div>
+            </div>
           )}
         </div>
       </div>
@@ -499,6 +293,25 @@ const styles = {
     lineHeight: '1.6',
     color: '#374151',
     marginBottom: '16px',
+  },
+  textSectionHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    marginBottom: '20px',
+    marginTop: '24px',
+    gap: '16px',
+  },
+  sectionDivider: {
+    flex: 1,
+    height: '1px',
+    backgroundColor: '#d4af37',
+  },
+  sectionLabel: {
+    fontSize: '12px',
+    fontWeight: '600',
+    textTransform: 'uppercase',
+    letterSpacing: '1px',
+    color: '#d4af37',
   },
   movieList: {
     display: 'flex',
@@ -535,7 +348,218 @@ const styles = {
   },
 };
 
-// Enhanced static generation with demo mode optimizations and monitoring
+// Nuclear Prototype: Top 1,000 movie identification system
+async function checkTop1000Movie(supabase, tmdbId) {
+  try {
+    // Query to check if movie is in top 1,000 by popularity metrics
+    // Using a combination of factors: creation date (recency), TMDB popularity, and page views
+    const { data: popularMovies, error } = await supabase
+      .from('movies')
+      .select('tmdb_id')
+      .not('tmdb_id', 'is', null)
+      .order('created_at', { ascending: false }) // Recent additions get priority
+      .limit(1000);
+
+    if (error) {
+      console.warn('Nuclear check failed, defaulting to ISR:', error);
+      return false; // Fallback to ISR if check fails
+    }
+
+    // Check if current movie is in top 1,000
+    return popularMovies.some(movie => movie.tmdb_id === tmdbId);
+  } catch (error) {
+    console.warn('Nuclear check error, defaulting to ISR:', error);
+    return false; // Fallback to ISR on any error
+  }
+}
+
+// Nuclear Build-Time Analysis Generator
+async function generateBuildTimeAnalysis(supabase, movieEntry) {
+  try {
+    // Check if analysis already exists to avoid regenerating during builds
+    const { data: existingAnalysis } = await supabase
+      .from('movie_analyses')
+      .select('claude_response')
+      .eq('movie_id', movieEntry.id)
+      .eq('analysis_type', 'page_analysis')
+      .single();
+
+    if (existingAnalysis) {
+      console.log(`🚀 NUCLEAR: Using cached analysis for ${movieEntry.title}`);
+      return parseClaudeResponse(existingAnalysis.claude_response.raw_content);
+    }
+
+    // Generate new Claude analysis at build time
+    console.log(`🚀 NUCLEAR: Generating build-time analysis for ${movieEntry.title}...`);
+    
+    const anthropic = new Anthropic({
+      apiKey: process.env.ANTHROPIC_API_KEY,
+    });
+
+    const promptConfig = buildPrompt('MOVIE_ANALYSIS', 'Include 3-4 accessibly written Explore Further topics for additional explorations');
+    const userPrompt = `${movieEntry.title} (${movieEntry.year})`;
+
+    const message = await anthropic.messages.create({
+      ...promptConfig,
+      messages: [{ role: 'user', content: userPrompt }]
+    });
+
+    const analysis = message.content[0].text;
+    
+    // Calculate cost estimate
+    const costEstimate = (message.usage.input_tokens * 3 / 1000000) + (message.usage.output_tokens * 15 / 1000000);
+    
+    // Save analysis to database for future builds
+    const analysisData = {
+      raw_content: analysis,
+      generated_at: new Date().toISOString(),
+      cost_estimate: costEstimate,
+      input_tokens: message.usage.input_tokens,
+      output_tokens: message.usage.output_tokens,
+      model: promptConfig.model,
+      entity_data: null // Simplified for nuclear build
+    };
+
+    await supabase
+      .from('movie_analyses')
+      .insert({
+        movie_id: movieEntry.id,
+        analysis_type: 'page_analysis',
+        claude_response: analysisData,
+        query_text: `Nuclear build-time analysis for ${movieEntry.title} (${movieEntry.year})`
+      });
+
+    console.log(`🚀 NUCLEAR: Generated and cached analysis for ${movieEntry.title} (cost: $${costEstimate.toFixed(4)})`);
+    
+    // Parse and return structured analysis
+    return parseClaudeResponse(analysis);
+    
+  } catch (error) {
+    console.warn(`🚀 NUCLEAR: Analysis generation failed for ${movieEntry.title}:`, error);
+    return null; // Fallback to empty analysis for nuclear build
+  }
+}
+
+// Parse Claude response into structured sections (moved from component)
+function parseClaudeResponse(responseText) {
+  const sections = [];
+  const moreIdeasMovies = [];
+  const exploreFurtherTopics = [];
+  
+  const lines = responseText.split('\n');
+  let currentSection = null;
+  let currentMovies = [];
+  let inMoreIdeas = false;
+  
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const trimmedLine = line.trim();
+    
+    if (!trimmedLine) continue; // Skip empty lines
+    
+    if (trimmedLine.startsWith('PARAGRAPH:')) {
+      // Push previous text section first
+      if (currentSection) {
+        sections.push(currentSection);
+      }
+      // Then push any pending movies from previous paragraph
+      if (currentMovies.length > 0) {
+        sections.push({
+          type: 'movies',
+          movies: [...currentMovies]
+        });
+        currentMovies = [];
+      }
+      // Start new text section
+      currentSection = {
+        type: 'text',
+        content: trimmedLine.replace('PARAGRAPH:', '').trim()
+      };
+    } else if (trimmedLine.startsWith('MOVIES:')) {
+      const movieLine = trimmedLine.replace('MOVIES:', '').trim();
+      
+      if (movieLine) {
+        const parts = movieLine.split('|');
+        
+        if (parts.length >= 2) { // At least title and year
+          const [title, year, description, streaming] = parts;
+          const movieObj = {
+            title: title?.trim() || 'Unknown Title',
+            year: parseInt(year?.trim()) || new Date().getFullYear(),
+            slug: description?.trim() || null,
+            poster: '/images/placeholder-poster.jpg',
+            initialStreaming: streaming?.trim() || null,
+            tmdb_id: null
+          };
+          
+          currentMovies.push(movieObj);
+        }
+      }
+    } else if (trimmedLine.startsWith('EXPLORE_FURTHER:')) {
+      const topic = trimmedLine.replace('EXPLORE_FURTHER:', '').trim();
+      if (topic) {
+        exploreFurtherTopics.push(topic);
+      }
+    } else if (trimmedLine.startsWith('MORE_IDEAS:')) {
+      inMoreIdeas = true;
+      const movieLine = trimmedLine.replace('MORE_IDEAS:', '').trim();
+      if (movieLine) {
+        const parts = movieLine.split('|');
+        
+        const [title, year, description, streaming] = parts;
+        const movieObj = {
+          title: title?.trim() || 'Unknown Title',
+          year: parseInt(year?.trim()) || new Date().getFullYear(),
+          slug: description?.trim() || null,
+          poster: '/images/placeholder-poster.jpg',
+          initialStreaming: streaming?.trim() || null,
+          tmdb_id: null
+        };
+        
+        moreIdeasMovies.push(movieObj);
+      }
+    } else if (inMoreIdeas && trimmedLine.includes('|')) {
+      const parts = trimmedLine.split('|');
+      
+      const [title, year, description, streaming] = parts;
+      const movieObj = {
+        title: title?.trim() || 'Unknown Title',
+        year: parseInt(year?.trim()) || new Date().getFullYear(),
+        slug: description?.trim() || null,
+        poster: '/images/placeholder-poster.jpg',
+        initialStreaming: streaming?.trim() || null,
+        tmdb_id: null
+      };
+      
+      moreIdeasMovies.push(movieObj);
+    } else if (currentSection && trimmedLine) {
+      currentSection.content += ' ' + trimmedLine;
+    }
+  }
+  
+  // Handle final sections - text first, then movies
+  if (currentSection) {
+    sections.push(currentSection);
+  }
+  
+  if (currentMovies.length > 0) {
+    sections.push({
+      type: 'movies',
+      movies: [...currentMovies]
+    });
+  }
+  
+  return {
+    sections,
+    exploreFurther: exploreFurtherTopics,
+    moreIdeas: {
+      title: 'More Great Films',
+      movies: moreIdeasMovies
+    }
+  };
+}
+
+// Nuclear Static Generation - Enhanced static generation with top 1,000 movie nuclear approach
 export async function getStaticProps({ params }) {
   const { id } = params;
   const { getDemoConfig, getDemoSafetyMonitor } = await import('../../lib/demo-config.js');
@@ -560,6 +584,9 @@ export async function getStaticProps({ params }) {
       process.env.SUPABASE_SERVICE_ROLE_KEY
     );
 
+    // NUCLEAR PROTOTYPE: Check if this movie is in top 1,000 for nuclear treatment
+    const isNuclearCandidate = await checkTop1000Movie(supabase, tmdbId);
+
     // Query movie from Supabase by TMDB ID
     const { data: movieEntry, error } = await supabase
       .from('movies')
@@ -571,8 +598,15 @@ export async function getStaticProps({ params }) {
       // Movie found in Supabase - return as props
       const generationTime = Date.now() - generationStart;
       
-      // Track generation performance
+      // Track generation performance with nuclear classification
       safetyMonitor.recordMetric('static_props_generation_time', generationTime);
+      safetyMonitor.recordMetric(isNuclearCandidate ? 'nuclear_generation' : 'isr_generation', 1);
+      
+      // NUCLEAR: Generate Claude analysis at build time for nuclear candidates
+      let analysisData = null;
+      if (isNuclearCandidate) {
+        analysisData = await generateBuildTimeAnalysis(supabase, movieEntry);
+      }
       
       const response = {
         props: {
@@ -583,6 +617,13 @@ export async function getStaticProps({ params }) {
           initialStreaming: movieEntry.streaming_data,
           tmdbId: movieEntry.tmdb_id,
           error: null,
+          isNuclear: isNuclearCandidate, // Add nuclear flag for debugging
+          // NUCLEAR: Include Claude analysis in static props
+          ...(analysisData && {
+            sections: analysisData.sections,
+            exploreFurther: analysisData.exploreFurther,
+            moreIdeas: analysisData.moreIdeas
+          }),
           // Add demo mode metadata
           ...(demoConfig.ENABLED && {
             demoMode: true,
@@ -592,12 +633,19 @@ export async function getStaticProps({ params }) {
         }
       };
       
-      // Demo mode: More aggressive ISR for faster demo updates
-      if (demoConfig.ENABLED) {
+      // NUCLEAR IMPLEMENTATION: No revalidation for top 1,000 movies (permanent static)
+      if (isNuclearCandidate) {
+        // Nuclear: Build once, save forever - no revalidation
+        console.log(`🚀 NUCLEAR: ${movieEntry.title} (${movieEntry.year}) - permanent static generation in ${generationTime}ms`);
+        // No revalidate property = permanent static
+      } else if (demoConfig.ENABLED) {
+        // Demo mode: More aggressive ISR for faster demo updates
         response.revalidate = demoConfig.STATIC_GENERATION.revalidationInterval;
-        console.log(`🎯 DEMO: Generated ${movieEntry.title} (${movieEntry.year}) in ${generationTime}ms`);
+        console.log(`🎯 DEMO ISR: Generated ${movieEntry.title} (${movieEntry.year}) in ${generationTime}ms`);
       } else {
-        response.revalidate = 86400; // 24 hour revalidation for production
+        // Standard ISR: 24 hour revalidation for non-nuclear movies
+        response.revalidate = 86400;
+        console.log(`⏰ ISR: Generated ${movieEntry.title} (${movieEntry.year}) in ${generationTime}ms, revalidate 24h`);
       }
       
       return response;
@@ -608,7 +656,7 @@ export async function getStaticProps({ params }) {
       const generationTime = Date.now() - generationStart;
       safetyMonitor.recordMetric('static_props_missing_movie', 1);
       
-      // Return a placeholder that will trigger the load-movie-page API
+      // For missing movies, always use ISR (never nuclear) since they need dynamic creation
       const response = {
         props: {
           title: 'TMDB_FETCH_REQUIRED',
@@ -618,6 +666,7 @@ export async function getStaticProps({ params }) {
           initialStreaming: null,
           tmdbId: tmdbId,
           error: null,
+          isNuclear: false, // Missing movies never get nuclear treatment
           ...(demoConfig.ENABLED && {
             demoMode: true,
             generationTime,
@@ -628,6 +677,7 @@ export async function getStaticProps({ params }) {
       
       // Demo mode: Faster revalidation for missing movies
       response.revalidate = demoConfig.ENABLED ? 300 : 60; // 5 minutes in demo, 1 minute in production
+      console.log(`🔄 MISSING ISR: Movie ${tmdbId} needs creation, revalidate ${response.revalidate}s`);
       
       return response;
     }
@@ -645,7 +695,7 @@ export async function getStaticProps({ params }) {
   }
 }
 
-// Enhanced static generation with demo mode optimizations
+// Nuclear Static Generation - Enhanced static paths with top 1,000 movie nuclear prioritization
 export async function getStaticPaths() {
   const { getDemoConfig, getDemoSafetyMonitor } = await import('../../lib/demo-config.js');
   const demoConfig = getDemoConfig();
@@ -665,17 +715,17 @@ export async function getStaticPaths() {
       .select('tmdb_id, title, year, created_at')
       .not('tmdb_id', 'is', null);
 
-    // Demo mode optimizations
+    // NUCLEAR PROTOTYPE: Prioritize top 1,000 movies for build-time generation
     if (demoConfig.ENABLED && demoConfig.STATIC_GENERATION.preGenerateAllMovies) {
-      // Pre-generate ALL movies for demo (ultra-aggressive)
+      // Demo mode: Pre-generate ALL movies for demo (ultra-aggressive)
       movieQuery = movieQuery.order('created_at', { ascending: false }); // Newest first for demos
       console.log('🎯 DEMO MODE: Pre-generating ALL movies for instant demo performance');
     } else {
-      // Production mode: Generate popular movies + recent additions
+      // NUCLEAR MODE: Pre-generate top 1,000 movies as permanent static + 500 recent for ISR
       movieQuery = movieQuery
         .order('created_at', { ascending: false })
-        .limit(500); // Reasonable limit for production builds
-      console.log('🚀 Production mode: Pre-generating 500 most recent movies');
+        .limit(1500); // Top 1,000 nuclear + 500 ISR candidates
+      console.log('🚀 NUCLEAR MODE: Pre-generating 1,000 nuclear + 500 ISR movies');
     }
 
     const { data: movies, error } = await movieQuery;
@@ -688,9 +738,12 @@ export async function getStaticPaths() {
       };
     }
 
-    // Demo mode: Prioritize popular demo movies
+    // NUCLEAR PROTOTYPE: Prioritize nuclear movies for build-time generation
     let pathMovies = movies;
+    let nuclearCount = 0;
+    
     if (demoConfig.ENABLED) {
+      // Demo mode: Prioritize popular demo movies
       const popularMovies = movies.filter(m => 
         demoConfig.DEMO_PATHS.popularMovies.includes(m.tmdb_id)
       );
@@ -701,6 +754,15 @@ export async function getStaticPaths() {
       // Put popular movies first for priority building
       pathMovies = [...popularMovies, ...otherMovies];
       console.log(`🎯 Prioritizing ${popularMovies.length} popular demo movies`);
+    } else {
+      // NUCLEAR MODE: Top 1,000 get nuclear treatment, rest get ISR
+      const top1000Movies = movies.slice(0, 1000); // First 1,000 by recency
+      const isrMovies = movies.slice(1000); // Remaining movies get ISR
+      
+      // Put nuclear movies first for priority building
+      pathMovies = [...top1000Movies, ...isrMovies];
+      nuclearCount = top1000Movies.length;
+      console.log(`🚀 NUCLEAR: ${nuclearCount} movies will be permanent static, ${isrMovies.length} will use ISR`);
     }
 
     // Generate paths with build monitoring
@@ -717,7 +779,13 @@ export async function getStaticPaths() {
     }
 
     console.log(`🚀 Pre-generating ${paths.length} movie pages in ${buildTime}ms`);
-    console.log(`📊 Mode: ${demoConfig.ENABLED ? 'DEMO' : 'PRODUCTION'}`);
+    console.log(`📊 Mode: ${demoConfig.ENABLED ? 'DEMO' : 'NUCLEAR PROTOTYPE'}`);
+    
+    if (!demoConfig.ENABLED && nuclearCount > 0) {
+      console.log(`🚀 NUCLEAR BREAKDOWN: ${nuclearCount} permanent static, ${paths.length - nuclearCount} ISR`);
+      safetyMonitor.recordMetric('nuclear_paths_generated', nuclearCount);
+      safetyMonitor.recordMetric('isr_paths_generated', paths.length - nuclearCount);
+    }
 
     return {
       paths,

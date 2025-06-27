@@ -15,12 +15,22 @@ export default function AskPage() {
   const [loadingMessage, setLoadingMessage] = useState('');
   const [loadingIcon, setLoadingIcon] = useState('');
   const [hasAskedQuestion, setHasAskedQuestion] = useState(false); // Track if user has asked anything
+  const [showInputAfterFirstResponse, setShowInputAfterFirstResponse] = useState(false); // Track when to show input after first response
   const router = useRouter();
 
   // Restore conversation from localStorage on page load
   useEffect(() => {
     // Only run on client side
     if (typeof window === 'undefined') return;
+    
+    // Check for fresh start parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('fresh')) {
+      localStorage.removeItem('moviegenius_conversation');
+      setConversation([]);
+      setHasAskedQuestion(false);
+      return;
+    }
     
     try {
       const saved = localStorage.getItem('moviegenius_conversation');
@@ -33,10 +43,10 @@ export default function AskPage() {
         if (cleanConversation.length > 0) {
           setConversation(cleanConversation);
           setHasAskedQuestion(true); // Show conversational UI
+          setShowInputAfterFirstResponse(true); // Show input for restored conversations
         }
       }
     } catch (error) {
-      console.warn('Failed to restore conversation:', error);
       // Clear corrupted data
       if (typeof window !== 'undefined') {
         localStorage.removeItem('moviegenius_conversation');
@@ -60,34 +70,50 @@ export default function AskPage() {
     }
   }, [conversation]);
 
-  // Load authoritative lists from database on page load
+  // Load series data for display questions
   useEffect(() => {
-    const loadListsFromDatabase = async () => {
+    const loadSeriesData = async () => {
       try {
-        const response = await fetch('/api/tag-cloud');
+        const response = await fetch('/api/series-episode?action=getAllSeries');
         if (response.ok) {
           const data = await response.json();
-          const shuffled = data.lists.sort(() => 0.5 - Math.random());
-          const selected75 = shuffled.slice(0, 75);
-          const itemsWithSizes = selected75.map((item, index) => ({
-            text: item.name,
-            listId: item.id, // Store the list ID for routing
-            fontSize: index % 3 === 0 ? 'large' : index % 3 === 1 ? 'medium' : 'small'
+          // Convert series data to display format
+          const seriesArray = Object.values(data).map(series => ({
+            text: series.title,
+            seriesId: series.id,
+            fontSize: 'medium'
           }));
           
-          setDisplayQuestions(itemsWithSizes);
+          // Shuffle and limit to 6 for display
+          const shuffled = seriesArray.sort(() => 0.5 - Math.random());
+          setDisplayQuestions(shuffled.slice(0, 6));
         } else {
-          console.error('Failed to load lists from database');
-          // Fallback to empty array
-          setDisplayQuestions([]);
+          // Fallback to static series list
+          const fallbackSeries = [
+            { text: 'Classic Film Noir', seriesId: 1 },
+            { text: 'Contemporary Auteurs', seriesId: 7 },
+            { text: 'International Masters', seriesId: 5 },
+            { text: 'Women Directors', seriesId: 4 },
+            { text: 'New Waves', seriesId: 8 },
+            { text: 'Comedy Through the Ages', seriesId: 3 }
+          ];
+          setDisplayQuestions(fallbackSeries);
         }
       } catch (error) {
-        console.error('Error loading lists:', error);
-        setDisplayQuestions([]);
+        // Fallback to static series list
+        const fallbackSeries = [
+          { text: 'Classic Film Noir', seriesId: 1 },
+          { text: 'Contemporary Auteurs', seriesId: 7 },
+          { text: 'International Masters', seriesId: 5 },
+          { text: 'Women Directors', seriesId: 4 },
+          { text: 'New Waves', seriesId: 8 },
+          { text: 'Comedy Through the Ages', seriesId: 3 }
+        ];
+        setDisplayQuestions(fallbackSeries);
       }
     };
 
-    loadListsFromDatabase();
+    loadSeriesData();
   }, []);
 
   const handleAsk = useCallback(async (query) => {
@@ -130,13 +156,29 @@ export default function AskPage() {
     setIsLoading(true);
 
     try {
+      // Build conversation context from previous messages
+      let conversationContext = null;
+      if (conversation.length > 0) {
+        const lastMessage = conversation[conversation.length - 1];
+        if (lastMessage && !lastMessage.isLoading) {
+          conversationContext = {
+            lastQuestion: lastMessage.question,
+            lastResponse: lastMessage.content,
+            lastFollowUpQuestion: lastMessage.followUpQuestions?.[0] || null
+          };
+        }
+      }
+
       // Single API call for lightweight Ask responses
       const response = await fetch('/api/ask-claude', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ question: query }),
+        body: JSON.stringify({ 
+          question: query,
+          conversationContext 
+        }),
       });
       
       if (!response.ok) {
@@ -172,7 +214,6 @@ export default function AskPage() {
       );
 
     } catch (error) {
-      console.error('Error:', error);
       if (tempMessage.cycleInterval) {
         clearInterval(tempMessage.cycleInterval);
       }
@@ -190,7 +231,7 @@ export default function AskPage() {
     } finally {
       setIsLoading(false);
     }
-  }, []);
+  }, [conversation, isLoading]);
 
   // Handle incoming query from URL
   useEffect(() => {
@@ -199,12 +240,13 @@ export default function AskPage() {
       // Clear the query parameter
       router.replace('/ask', undefined, { shallow: true });
     }
-  }, [router.query.q, handleAsk]);
+  }, [router.query.q, router, handleAsk]);
 
   // Helper function to clear conversation
   const clearConversation = useCallback(() => {
     setConversation([]);
     setHasAskedQuestion(false);
+    setShowInputAfterFirstResponse(false);
     if (typeof window !== 'undefined') {
       localStorage.removeItem('moviegenius_conversation');
     }
@@ -217,10 +259,37 @@ export default function AskPage() {
         {!hasAskedQuestion && (
           <div style={styles.welcomeArea}>
             <div style={styles.welcomeContent}>
-              <StarAnimation size={48} style={styles.welcomeIcon} />
               <h1 style={styles.welcomeTitle}>
-                What movie magic can I help you discover today?
+                Movie Genius
               </h1>
+              <div style={styles.welcomeInput}>
+                <AskInputBar 
+                  placeholder="Ask me about movies..."
+                  style={styles.welcomeInputBar}
+                  onSubmit={handleAsk}
+                  showNavigation={false}
+                  multiline={true}
+                />
+              </div>
+              {displayQuestions.length > 0 && (
+                <div style={styles.welcomeSuggestions}>
+                  <div style={styles.suggestionsLabel}>Or explore:</div>
+                  <div style={styles.suggestionsList}>
+                    {displayQuestions.slice(0, 6).map((item, index) => (
+                      <span
+                        key={index}
+                        style={styles.suggestionLink}
+                        onClick={() => {
+                          router.push(`/recs/series/${item.seriesId}`);
+                        }}
+                      >
+                        {item.text}
+                        {index < 5 && ' • '}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         )}
@@ -228,26 +297,6 @@ export default function AskPage() {
         {/* Scrollable Conversation */}
         <div style={styles.scrollableContent}>
           <div style={styles.conversationArea}>
-            {/* Sample questions only shown on initial load */}
-            {conversation.length === 0 && !hasAskedQuestion && (
-              <div style={styles.sampleQuestionsArea}>
-                {displayQuestions.map((item, index) => (
-                  <span
-                    key={index}
-                    style={{
-                      ...styles.sampleQuestion,
-                      ...styles[`question${item.fontSize.charAt(0).toUpperCase() + item.fontSize.slice(1)}`]
-                    }}
-                    onClick={() => {
-                      router.push(`/genius/list/${item.listId}`);
-                    }}
-                  >
-                    {item.text}
-                    {index < displayQuestions.length - 1 && '\u00A0\u00A0'}
-                  </span>
-                ))}
-              </div>
-            )}
             {/* Conversation Messages */}
             {conversation.map((message) => (
               <div key={message.id} style={styles.messageGroup}>
@@ -276,7 +325,10 @@ export default function AskPage() {
                         speed={30} // Fast for responsiveness
                         style={styles.responseText}
                         onComplete={() => {
-                          // Could trigger follow-up questions animation
+                          // Show input after first response completes
+                          if (conversation.length === 1) {
+                            setShowInputAfterFirstResponse(true);
+                          }
                         }}
                       />
                     </div>
@@ -292,12 +344,12 @@ export default function AskPage() {
                               style={styles.followUpButton}
                               onClick={() => handleAsk(question)}
                               onMouseEnter={(e) => {
-                                e.currentTarget.style.backgroundColor = '#f3f4f6';
-                                e.currentTarget.style.borderColor = '#2563eb';
+                                e.currentTarget.style.textDecorationColor = '#d4af37';
+                                e.currentTarget.style.color = '#b8941f';
                               }}
                               onMouseLeave={(e) => {
-                                e.currentTarget.style.backgroundColor = '#ffffff';
-                                e.currentTarget.style.borderColor = '#d1d5db';
+                                e.currentTarget.style.textDecorationColor = 'transparent';
+                                e.currentTarget.style.color = '#d4af37';
                               }}
                             >
                               {question}
@@ -342,42 +394,50 @@ export default function AskPage() {
                 )}
               </div>
             ))}
-          </div>
-        </div>
-        
-        {/* Bottom Input Area - Always present */}
-        <div style={styles.bottomInputArea}>
-          <div style={styles.inputLabel}>
-            {hasAskedQuestion ? 'Reply to MovieGenius' : 'Ask MovieGenius'}
-          </div>
-          <div style={styles.inputRow}>
-            <button style={styles.plusButton}>+</button>
-            <div style={styles.inputWrapper}>
-              <AskInputBar 
-                placeholder={hasAskedQuestion ? "Ask a follow-up..." : "What movie magic interests you?"}
-                style={styles.bottomInput}
-                onSubmit={handleAsk}
-                showNavigation={false}
-              />
-            </div>
-            <button style={styles.micButton}>🎤</button>
-            {hasAskedQuestion && (
-              <button 
-                style={styles.clearButton}
-                onClick={clearConversation}
-                title="Start new conversation"
-              >
-                ↻
-              </button>
+            
+            {/* Scroll indicator for more content */}
+            {hasAskedQuestion && conversation.length > 2 && (
+              <div style={styles.scrollHint}>
+                <div style={styles.scrollIndicator}>• • •</div>
+              </div>
             )}
+            
           </div>
         </div>
         
-        {/* Claude-style Footer Disclaimer */}
-        <div style={styles.disclaimer}>
-          <StarAnimation size={16} style={styles.disclaimerIcon} />
-          <span>MovieGenius can make mistakes. Please double check responses.</span>
-        </div>
+        {/* Fixed Bottom Input Area - Claude style */}
+        {hasAskedQuestion && (
+          <div style={styles.fixedInputArea}>
+            <div style={styles.inputContainer}>
+              <div style={styles.claudeInputRow}>
+                <div style={styles.leftButtons}>
+                  <button style={styles.iconButton}>+</button>
+                  <button style={styles.iconButton}>≈</button>
+                </div>
+                <div style={styles.inputWrapper}>
+                  <AskInputBar 
+                    placeholder="Reply to MovieGenius..."
+                    style={styles.claudeInput}
+                    onSubmit={handleAsk}
+                    showNavigation={false}
+                    multiline={true}
+                  />
+                </div>
+                <div style={styles.rightButtons}>
+                  <button 
+                    style={styles.clearButton}
+                    onClick={clearConversation}
+                    title="Start new conversation"
+                  >
+                    ↻
+                  </button>
+                  <span style={styles.modelInfo}>MovieGenius</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+        
       </div>
     </PhoneFrame>
   );
@@ -390,8 +450,8 @@ const styles = {
     flexDirection: 'column',
     height: '100%',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-    backgroundColor: '#1a1a1a', // Dark background like Claude
-    color: '#ffffff',
+    backgroundColor: '#e5e7eb', // More visible light grey background
+    color: '#2d3748',
   },
   
   // Welcome area (Claude-style)
@@ -401,54 +461,117 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     flex: 1,
-    padding: '60px 24px',
+    padding: '40px 24px',
     textAlign: 'center',
   },
   welcomeContent: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    gap: '24px',
+    gap: '32px',
+    width: '100%',
+    maxWidth: '400px',
   },
-  welcomeIcon: {
-    marginBottom: '8px',
+  welcomeInput: {
+    width: '100%',
+  },
+  welcomeInputBar: {
+    backgroundColor: '#ffffff',
+    border: '2px solid #d4af37',
+    borderRadius: '12px',
+    padding: '16px',
+    fontSize: '16px',
+    minHeight: '60px',
+    boxShadow: '0 4px 12px rgba(212, 175, 55, 0.1)',
+  },
+  welcomeSuggestions: {
+    textAlign: 'center',
+    maxWidth: '350px',
+  },
+  suggestionsLabel: {
+    fontSize: '14px',
+    color: '#4a5568',
+    marginBottom: '12px',
+  },
+  suggestionsList: {
+    lineHeight: '1.6',
+  },
+  suggestionLink: {
+    fontSize: '14px',
+    color: '#d4af37',
+    cursor: 'pointer',
+    transition: 'color 0.2s ease',
   },
   welcomeTitle: {
-    fontSize: '32px',
-    fontWeight: '400',
-    color: '#ffffff',
-    lineHeight: '1.3',
-    maxWidth: '500px',
+    fontSize: '28px',
+    fontWeight: '300',
+    color: '#2d3748',
+    lineHeight: '1.4',
+    maxWidth: '400px',
+    textAlign: 'center',
   },
   
-  // Bottom input area (Claude-style)
-  bottomInputArea: {
-    padding: '16px 20px 8px',
-    backgroundColor: '#1a1a1a',
-    borderTop: '1px solid #333333',
+  // Fixed input area at bottom (Claude style)
+  fixedInputArea: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    height: '80px',
+    backgroundColor: '#ffffff',
+    borderTop: '1px solid #f0f0f0',
+    zIndex: 1000,
+    display: 'flex',
+    alignItems: 'center',
+  },
+  inputContainer: {
+    padding: '12px 20px',
+    width: '100%',
   },
   inputLabel: {
     fontSize: '14px',
-    color: '#888888',
+    color: '#4a5568',
     marginBottom: '8px',
     textAlign: 'center',
   },
-  inputRow: {
+  claudeInputRow: {
     display: 'flex',
     alignItems: 'center',
     gap: '8px',
-    backgroundColor: '#2a2a2a',
-    borderRadius: '20px',
-    padding: '4px',
+    width: '100%',
   },
-  plusButton: {
+  leftButtons: {
+    display: 'flex',
+    gap: '8px',
+    alignItems: 'center',
+  },
+  rightButtons: {
+    display: 'flex',
+    gap: '12px',
+    alignItems: 'center',
+  },
+  iconButton: {
     width: '32px',
     height: '32px',
+    borderRadius: '6px',
+    backgroundColor: 'transparent',
+    border: '1px solid #e5e7eb',
+    color: '#6b7280',
+    fontSize: '14px',
+    cursor: 'pointer',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    transition: 'all 0.2s ease',
+  },
+  plusButton: {
+    width: '24px',
+    height: '24px',
     borderRadius: '50%',
-    backgroundColor: '#404040',
+    backgroundColor: 'transparent',
     border: 'none',
-    color: '#ffffff',
-    fontSize: '18px',
+    color: '#d4af37',
+    fontSize: '16px',
     cursor: 'pointer',
     display: 'flex',
     alignItems: 'center',
@@ -457,44 +580,51 @@ const styles = {
   inputWrapper: {
     flex: 1,
   },
-  bottomInput: {
-    backgroundColor: 'transparent',
-    border: 'none',
-    color: '#ffffff',
-    fontSize: '16px',
-    padding: '8px 12px',
+  claudeInput: {
+    backgroundColor: '#f9f9f9',
+    border: '1px solid #e5e7eb',
+    borderRadius: '8px',
+    color: '#2d3748',
+    fontSize: '14px',
+    padding: '10px 12px',
+    minHeight: '40px',
   },
-  micButton: {
-    width: '32px',
-    height: '32px',
-    borderRadius: '50%',
-    backgroundColor: 'transparent',
-    border: 'none',
-    fontSize: '16px',
-    cursor: 'pointer',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+  modelInfo: {
+    fontSize: '12px',
+    color: '#9ca3af',
+    fontWeight: '500',
   },
   clearButton: {
     width: '32px',
     height: '32px',
-    borderRadius: '50%',
-    backgroundColor: '#404040',
-    border: 'none',
-    color: '#ffffff',
-    fontSize: '16px',
+    borderRadius: '6px',
+    backgroundColor: 'transparent',
+    border: '1px solid #e5e7eb',
+    color: '#6b7280',
+    fontSize: '12px',
     cursor: 'pointer',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    transition: 'all 0.2s ease',
+  },
+  scrollHint: {
+    textAlign: 'center',
+    padding: '16px 0',
+  },
+  scrollIndicator: {
+    fontSize: '18px',
+    color: '#d4af37',
+    opacity: 0.6,
+    letterSpacing: '4px',
   },
   scrollableContent: {
     flex: 1,
     overflowY: 'scroll',
     scrollbarWidth: 'none',
     msOverflowStyle: 'none',
-    backgroundColor: '#1a1a1a',
+    backgroundColor: '#e5e7eb',
+    paddingBottom: '80px', // Space for fixed input area
   },
   conversationArea: {
     padding: '16px 20px',
@@ -512,14 +642,16 @@ const styles = {
   questionHeader: {
     fontSize: '16px',
     fontWeight: '500',
-    color: '#ffffff',
+    color: '#2d3748',
     marginBottom: '12px',
     textAlign: 'right',
-    backgroundColor: '#2a2a2a',
+    backgroundColor: '#ffffff',
+    border: '1px solid #e2e8f0',
     padding: '12px 16px',
-    borderRadius: '16px',
+    borderRadius: '12px',
     alignSelf: 'flex-end',
     maxWidth: '80%',
+    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
   },
   
   // Response styling
@@ -530,11 +662,13 @@ const styles = {
   },
   responseText: {
     fontSize: '15px',
-    color: '#ffffff',
+    color: '#2d3748',
     lineHeight: '1.6',
-    backgroundColor: '#2a2a2a',
+    backgroundColor: '#ffffff',
+    border: '1px solid #e2e8f0',
     padding: '16px',
-    borderRadius: '16px',
+    borderRadius: '12px',
+    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
   },
   
   // Follow-up questions
@@ -547,7 +681,7 @@ const styles = {
   followUpTitle: {
     fontSize: '14px',
     fontWeight: '600',
-    color: '#888888',
+    color: '#4a5568',
     marginBottom: '12px',
     paddingLeft: '16px',
   },
@@ -557,16 +691,17 @@ const styles = {
     gap: '8px',
   },
   followUpButton: {
-    padding: '12px 16px',
-    backgroundColor: '#333333',
-    border: '1px solid #444444',
-    borderRadius: '12px',
+    padding: '0',
+    backgroundColor: 'transparent',
+    border: 'none',
     fontSize: '14px',
-    color: '#ffffff',
+    color: '#d4af37',
     textAlign: 'left',
     cursor: 'pointer',
     transition: 'all 0.2s ease',
     fontFamily: 'inherit',
+    textDecoration: 'underline',
+    textDecorationColor: 'transparent',
   },
   movieList: {
     display: 'flex',
@@ -584,60 +719,20 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     gap: '12px',
-    backgroundColor: '#2a2a2a',
+    backgroundColor: '#ffffff',
+    border: '1px solid #e2e8f0',
     padding: '16px',
-    borderRadius: '16px',
+    borderRadius: '12px',
+    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
   },
   loadingText: {
     fontSize: '15px',
-    color: '#ffffff',
+    color: '#4a5568',
   },
   loadingIcon: {
     flexShrink: 0,
   },
   
-  // Disclaimer footer
-  disclaimer: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: '8px',
-    padding: '12px 20px',
-    backgroundColor: '#1a1a1a',
-    borderTop: '1px solid #333333',
-    fontSize: '12px',
-    color: '#888888',
-  },
-  disclaimerIcon: {
-    flexShrink: 0,
-  },
-  sampleQuestionsArea: {
-    textAlign: 'justify',
-    padding: '20px 16px',
-    lineHeight: '1.4',
-  },
-  sampleQuestion: {
-    display: 'inline',
-    margin: '0 8px 8px 0',
-    cursor: 'pointer',
-    transition: 'opacity 0.2s ease, color 0.2s ease',
-    color: '#888888',
-  },
-  questionLarge: {
-    fontSize: '20px',
-    fontWeight: '300',
-    color: '#ffffff',
-  },
-  questionMedium: {
-    fontSize: '18px',
-    fontWeight: '600',
-    color: '#cccccc',
-  },
-  questionSmall: {
-    fontSize: '14px',
-    fontWeight: '500',
-    color: '#888888',
-  },
   moreIdeasSection: {
     marginTop: '24px',
     paddingTop: '16px',

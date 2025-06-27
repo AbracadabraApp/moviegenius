@@ -22,7 +22,7 @@
  * />
  */
 import { Heart, Bookmark } from 'lucide-react';
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, memo } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import { FavoritesManager } from './FavoritesManager';
@@ -83,7 +83,7 @@ const streamingCircuitBreaker = {
  * @param {boolean} props.isDetailPage - Whether this is on a detail page (optional)
  * @param {number} props.tmdbId - TMDB ID for navigation (optional)
  */
-export default function MediaCard({ 
+function MediaCard({ 
   title, 
   year, 
   initialSlug, 
@@ -153,12 +153,17 @@ export default function MediaCard({
       slug !== slug.toLowerCase() &&
       !slug.includes('Plot:') && // FIXED: Reject TMDB plot summaries
       !slug.includes('Overview:') && // FIXED: Reject TMDB overviews
-      !slug.includes('Synopsis:'); // FIXED: Reject TMDB synopses
+      !slug.includes('Synopsis:') && // FIXED: Reject TMDB synopses
+      !slug.includes('directed by') && // REJECT: Database descriptions
+      !slug.includes('starring') && // REJECT: Database descriptions
+      !slug.includes('follows') && // REJECT: Generic plot descriptions
+      !slug.includes('tells the story'); // REJECT: Generic plot descriptions
     const hasGoodPoster = poster !== '/images/placeholder-poster.jpg';
     const hasStreamingData = streamingText && streamingText.length > 0;
     
-    // Return true if enhancement is needed (slug, poster, or streaming)
-    return !(isGoodSlug && hasGoodPoster && hasStreamingData) && !isEnhancing;
+    // Return true if enhancement is needed (poster or streaming only - NOT slug)
+    // NEW RULE: No slug enhancement. Show nothing if no good Claude slug.
+    return !(hasGoodPoster && hasStreamingData) && !isEnhancing;
   }, [slug, poster, streamingText, isEnhancing]);
 
   // Enhanced data fetching for missing slug or poster with comprehensive caching
@@ -206,43 +211,9 @@ export default function MediaCard({
         let newStreamingText = streamingText;
         let newTmdbId = movieTmdbId;
         
-        // 🔒 LOCKED: Fetch enhanced data if slug is missing or corrupted
-        // CRITICAL: Only enhance truly missing slugs, not good ones
-        // Note: slug quality check now handled in shouldEnhance memoization
-        if (!slug || slug.length < 10) { // FIXED: Only enhance if truly missing
-          // Check cache for enhancement data first
-          const cachedEnhancement = await cache.getEnhancementData(title, year);
-          if (cachedEnhancement && cachedEnhancement.slug) {
-            newSlug = cachedEnhancement.slug;
-            setSlug(cachedEnhancement.slug);
-            console.log('✅ Used cached enhancement for:', title, year);
-          } else {
-            console.log('Fetching enhanced slug for:', title, year);
-            const response = await fetch('/api/enhance-movie-data', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ 
-                title, 
-                year, 
-                needsSlug: true, 
-                needsPoster: false,
-                preferConcise: true // FIXED: Request concise slugs, not summaries
-              })
-            });
-            
-            if (response.ok) {
-              const data = await response.json();
-              // FIXED: Only use enhanced slug if it's actually better and concise
-              if (data.slug && data.slug.length <= 50 && !data.slug.includes('Plot:')) {
-                newSlug = data.slug;
-                setSlug(data.slug);
-                
-                // Cache the enhancement result
-                await cache.cacheEnhancementData(title, year, { slug: data.slug });
-              }
-            }
-          }
-        }
+        // 🔒 NEW RULE: If no good Claude slug, show nothing. No fallback enhancement.
+        // We now only enhance posters and streaming, NOT slugs.
+        // Bad slugs will remain empty rather than getting replaced with database summaries.
         
         // Fetch TMDB poster if using placeholder (with comprehensive caching)
         if (poster === '/images/placeholder-poster.jpg') {
@@ -257,7 +228,7 @@ export default function MediaCard({
               newTmdbId = cachedPoster.tmdb_id;
               setMovieTmdbId(cachedPoster.tmdb_id);
             }
-            console.log('✅ Used cached poster for:', title, year);
+            // Used cached poster data
           } else {
             const cacheKey = `${title}-${year}`;
             
@@ -274,7 +245,7 @@ export default function MediaCard({
               }
             } else if (!pendingRequests.has(cacheKey)) {
               // Only make request if not already pending
-              console.log('Fetching TMDB poster for:', title, year);
+              // Fetching TMDB poster
               const requestPromise = fetch('/api/tmdb-poster', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -317,14 +288,14 @@ export default function MediaCard({
           if (cachedStreaming && cachedStreaming.streamingText) {
             newStreamingText = cachedStreaming.streamingText;
             setStreamingText(cachedStreaming.streamingText);
-            console.log('✅ Used cached streaming for:', title, year);
+            // Used cached streaming data
           } else if (!streamingCircuitBreaker.canMakeRequest()) {
             // Circuit breaker is open, fallback to TBD immediately
             console.warn('🚨 Streaming circuit breaker OPEN - using TBD fallback for:', title, year);
             newStreamingText = 'TBD';
             setStreamingText('TBD');
           } else {
-            console.log('Fetching streaming info for:', title, year);
+            // Fetching streaming info
             try {
               // Add timeout and abort controller
               const controller = new AbortController();
@@ -355,7 +326,7 @@ export default function MediaCard({
                   // Record success for circuit breaker
                   streamingCircuitBreaker.recordSuccess();
                   
-                  console.log(`✅ Streaming data from ${streamingData.source}: ${title} (${year})`);
+                  // Streaming data retrieved successfully
                 } else {
                   // No streaming text received, fallback to TBD
                   newStreamingText = 'TBD';
@@ -419,7 +390,7 @@ export default function MediaCard({
               cached_tmdb_id: !!newTmdbId
             });
             
-            console.log('✅ Cached comprehensive movie data for:', title, year);
+            // Cached comprehensive movie data
           } catch (cacheError) {
             console.warn('Failed to cache enhanced data:', cacheError);
             // Don't fail the whole operation if caching fails
@@ -461,7 +432,7 @@ export default function MediaCard({
     if (movieTmdbId) {
       router.push(`/movie/${movieTmdbId}`);
     } else {
-      console.warn('MediaCard: Missing TMDB ID, using fallback navigation for:', title, year);
+      console.warn('MediaCard: Missing TMDB ID for navigation');
       // Fallback to media page using title-year format
       const fallbackId = `${title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${year}`;
       router.push(`/media/${fallbackId}`);
@@ -503,7 +474,7 @@ export default function MediaCard({
       </div>
       <div style={styles.textContainer}>
         <div style={styles.header}>
-          <div style={styles.title}>{title}</div>
+          <div style={styles.title} className="movie-title">{title}</div>
         </div>
         <div style={styles.year}>({year})</div>
         <div style={styles.slug}>{slug}</div>
@@ -554,6 +525,20 @@ export default function MediaCard({
     </article>
   );
 }
+
+// Memoized MediaCard with intelligent prop comparison
+const MediaCardMemo = memo(MediaCard, (prevProps, nextProps) => {
+  // Compare essential props that affect rendering
+  return (
+    prevProps.title === nextProps.title &&
+    prevProps.year === nextProps.year &&
+    prevProps.initialSlug === nextProps.initialSlug &&
+    prevProps.initialPoster === nextProps.initialPoster &&
+    prevProps.initialStreaming === nextProps.initialStreaming &&
+    prevProps.isDetailPage === nextProps.isDetailPage &&
+    prevProps.tmdbId === nextProps.tmdbId
+  );
+});
 
 const styles = {
   card: {
@@ -666,3 +651,5 @@ const styles = {
     transition: 'background-color 0.2s ease',
   },
 };
+
+export default MediaCardMemo;

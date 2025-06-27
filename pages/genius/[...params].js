@@ -473,8 +473,11 @@ export async function getStaticProps({ params }) {
     return { notFound: true };
   }
   
-  // Load episode content from JSON files (temporary fix while troubleshooting production database)
+  // Load episode content from JSON files and pre-process at build time
   let episodeContent = null;
+  let episodeMovies = [];
+  let episodePeople = null;
+  
   try {
     const fs = require('fs');
     const path = require('path');
@@ -484,6 +487,22 @@ export async function getStaticProps({ params }) {
       const contentData = fs.readFileSync(contentPath, 'utf8');
       const parsedContent = JSON.parse(contentData);
       episodeContent = parsedContent.content;
+      
+      // Pre-process heavy operations at build time instead of runtime
+      if (episodeContent) {
+        const { extractEpisodeMovies } = await import('../../lib/enhanced-entity-linker');
+        const { extractEpisodePeople } = await import('../../lib/episode-people-extractor');
+        
+        // Extract movies and people at build time
+        episodeMovies = extractEpisodeMovies(episodeContent);
+        try {
+          episodePeople = await extractEpisodePeople(episodeContent);
+        } catch (peopleError) {
+          console.warn('Failed to extract people at build time:', peopleError);
+          episodePeople = { directors: [], actors: [], writers: [], allPeople: [] };
+        }
+      }
+      
       console.log(`Loaded episode ${themeId}-${seriesId}-${episodeId} from JSON file`);
     } else {
       console.log(`Episode file not found: ${contentPath}`);
@@ -493,15 +512,31 @@ export async function getStaticProps({ params }) {
   }
   
   // Episode page
+  const generationTime = Date.now() - generationStart;
+  safetyMonitor.recordMetric('genius_episode_generation_time', generationTime);
+  
   return {
     props: {
       pageType: 'episode',
-      data: { theme, series, episode, episodeContent },
+      data: { 
+        theme, 
+        series, 
+        episode, 
+        episodeContent,
+        // Pre-processed data for instant rendering
+        episodeMovies,
+        episodePeople
+      },
       themeId,
       seriesId,
-      episodeId
+      episodeId,
+      ...(demoConfig.ENABLED && {
+        demoMode: true,
+        generationTime,
+        cached: true
+      })
     },
-    revalidate: 86400
+    revalidate: demoConfig.ENABLED ? demoConfig.STATIC_GENERATION.revalidationInterval : 86400
   };
 }
 
