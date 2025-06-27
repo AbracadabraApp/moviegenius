@@ -26,7 +26,7 @@ function FeaturedFilmsSection({
               year={movie.year}
               initialSlug={movie.slug}
               initialPoster={movie.poster || movie.poster_url}
-              initialStreaming={movie.streaming}
+              initialStreaming={movie.initialStreaming || movie.streaming}
               tmdbId={movie.tmdb_id}
             />
           </div>

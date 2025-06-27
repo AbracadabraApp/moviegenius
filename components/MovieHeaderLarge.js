@@ -111,9 +111,9 @@ export default function MovieHeaderLarge({
         
         if (data.videoId) {
           setTrailerVideoId(data.videoId);
-          console.log(`✅ Trailer found for ${title}: ${data.title} (${data.site})`);
+          // Trailer found and loaded
         } else {
-          console.log(`❌ No trailer found for ${title} (TMDB ID: ${tmdbId})`);
+          // No trailer available
         }
       } catch (error) {
         console.error('Error fetching trailer:', error);
@@ -224,7 +224,7 @@ export default function MovieHeaderLarge({
       
       {/* Title and year below poster */}
       <div style={styles.titleContainer}>
-        <div style={styles.title}>{title}</div>
+        <div style={styles.title} className="movie-title">{title}</div>
         <div style={styles.year}>({year})</div>
       </div>
       

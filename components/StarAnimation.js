@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 export default function StarAnimation({
   size = 40,
-  color = '#ff6b35', // Claude's orange color
+  color = '#d4af37', // Gold color
   className = '',
   style = {}
 }) {

@@ -1,6 +1,7 @@
 // pages/_app.js
 
 import '../styles/globals.css';
+import '../styles/movieTitle.css';
 import ErrorBoundary from '../components/ErrorBoundary';
 import Head from 'next/head';
 

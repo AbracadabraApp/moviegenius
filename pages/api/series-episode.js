@@ -416,6 +416,22 @@ async function checkEpisodeLock(seriesId, episodeId, forceRegenerate = false) {
 }
 
 export default async function handler(req, res) {
+  // Handle GET request for getAllSeries action
+  if (req.method === 'GET' && req.query.action === 'getAllSeries') {
+    try {
+      const seriesData = loadSeriesData();
+      return res.status(200).json(seriesData);
+    } catch (error) {
+      console.error('Error getting all series:', error);
+      return res.status(500).json({ error: 'Failed to load series data' });
+    }
+  }
+  
+  // Handle POST request for episode content
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: 'Only GET and POST methods allowed' });
+  }
+  
   const { seriesId, episodeId, forceRegenerate = false, topic, context } = req.body;
   
   // Basic validation

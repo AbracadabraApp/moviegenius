@@ -1,6 +1,6 @@
 // components/ExplorePromptCard.js - Reusable Explore Further prompt card
 import { useRouter } from 'next/router';
-import { memo } from 'react';
+import { memo, useCallback } from 'react';
 
 function ExplorePromptCard({ 
   prompt, 
@@ -10,7 +10,7 @@ function ExplorePromptCard({
 }) {
   const router = useRouter();
 
-  const handleClick = () => {
+  const handleClick = useCallback(() => {
     if (onClick) {
       onClick(prompt);
     } else {
@@ -24,7 +24,7 @@ function ExplorePromptCard({
       
       router.push(explorePath);
     }
-  };
+  }, [prompt, contextPrefix, onClick, router]);
 
   return (
     <div 

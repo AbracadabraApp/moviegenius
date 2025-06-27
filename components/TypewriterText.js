@@ -1,5 +1,5 @@
 // components/TypewriterText.js
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo, memo } from 'react';
 
 /**
  * TypewriterText Component
@@ -13,7 +13,7 @@ import { useState, useEffect } from 'react';
  * - Pause/resume capability
  * - Respects markdown-style formatting (*text* for emphasis)
  */
-export default function TypewriterText({ 
+function TypewriterText({ 
   text, 
   speed = 50, // milliseconds per word
   onComplete = null,
@@ -27,8 +27,8 @@ export default function TypewriterText({
   const [isPaused, setIsPaused] = useState(!autoStart);
   const [cursorVisible, setCursorVisible] = useState(true);
 
-  // Split text into words for natural chunking
-  const words = text.split(' ');
+  // Memoize words splitting for performance
+  const words = useMemo(() => text.split(' '), [text]);
 
   useEffect(() => {
     if (isPaused || isComplete || currentIndex >= words.length) {
@@ -71,11 +71,18 @@ export default function TypewriterText({
     return () => clearInterval(blinkInterval);
   }, [isComplete]);
 
-  // Parse simple markdown for movie titles (*text*)
-  const parseText = (text) => {
-    // Replace *text* with styled spans for movie titles
-    return text.replace(/\*([^*]+)\*/g, '<em style="font-style: italic; color: #374151;">$1</em>');
-  };
+  // Memoize parseText function for performance
+  const parseText = useMemo(() => (text) => {
+    // Replace *Movie Title* with gold-highlighted movie titles (clickable)
+    let parsed = text.replace(/\*([^*]+)\*/g, '<span class="movie-title-italic">$1</span>');
+    
+    // Replace "Movie Title" with gold-highlighted quoted titles (clickable)
+    parsed = parsed.replace(/"([^"]+)"(?=\s*\(\d{4}\)|\s|[.,!?]|$)/g, '<span class="movie-title-quoted">$1</span>');
+    
+    // Convert newlines to HTML line breaks for scannable formatting
+    parsed = parsed.replace(/\n/g, '<br />');
+    return parsed;
+  }, []);
 
   return (
     <div 
@@ -109,6 +116,19 @@ export default function TypewriterText({
     </div>
   );
 }
+
+// Memoized TypewriterText with custom comparison
+const TypewriterTextMemo = memo(TypewriterText, (prevProps, nextProps) => {
+  return (
+    prevProps.text === nextProps.text &&
+    prevProps.speed === nextProps.speed &&
+    prevProps.autoStart === nextProps.autoStart &&
+    prevProps.className === nextProps.className &&
+    prevProps.onComplete === nextProps.onComplete
+  );
+});
+
+export default TypewriterTextMemo;
 
 /**
  * Utility function to create chunks of text for progressive loading
@@ -183,10 +203,18 @@ export function StreamingTypewriter({
     return () => clearInterval(blinkInterval);
   }, [isComplete]);
 
-  // Parse simple markdown for movie titles (*text*)
-  const parseText = (text) => {
-    return text.replace(/\*([^*]+)\*/g, '<em style="font-style: italic; color: #374151;">$1</em>');
-  };
+  // Memoize parseText function for performance
+  const parseText = useMemo(() => (text) => {
+    // Replace *Movie Title* with gold-highlighted movie titles (clickable)
+    let parsed = text.replace(/\*([^*]+)\*/g, '<span class="movie-title-italic">$1</span>');
+    
+    // Replace "Movie Title" with gold-highlighted quoted titles (clickable)
+    parsed = parsed.replace(/"([^"]+)"(?=\s*\(\d{4}\)|\s|[.,!?]|$)/g, '<span class="movie-title-quoted">$1</span>');
+    
+    // Convert newlines to HTML line breaks for scannable formatting
+    parsed = parsed.replace(/\n/g, '<br />');
+    return parsed;
+  }, []);
 
   return (
     <div 
@@ -220,3 +248,12 @@ export function StreamingTypewriter({
     </div>
   );
 }
+
+// Memoized StreamingTypewriter 
+export const StreamingTypewriterMemo = memo(StreamingTypewriter, (prevProps, nextProps) => {
+  return (
+    prevProps.streamingText === nextProps.streamingText &&
+    prevProps.isComplete === nextProps.isComplete &&
+    prevProps.className === nextProps.className
+  );
+});

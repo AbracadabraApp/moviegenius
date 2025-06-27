@@ -30,29 +30,29 @@ export default function GeniusEpisodeTemplate({
     setIsClient(true);
   }, []);
 
-  // Extract people from episode movies
+  // Use pre-processed people data from getStaticProps (performance optimization)
   useEffect(() => {
-    if (!episodeData?.episodeContent) return;
-    
-    async function loadEpisodePeople() {
-      try {
-        setPeopleLoading(true);
-        const people = await extractEpisodePeople(episodeData.episodeContent);
-        setEpisodePeople(people);
-        
-        // Log people summary for debugging
-        const summary = getEpisodePeopleSummary(people);
-        console.log('Episode people loaded:', summary);
-      } catch (error) {
-        console.error('Failed to load episode people:', error);
-        setEpisodePeople({ directors: [], actors: [], writers: [], allPeople: [] });
-      } finally {
-        setPeopleLoading(false);
+    if (episodeData?.episodePeople) {
+      // Use pre-processed data from build time
+      setEpisodePeople(episodeData.episodePeople);
+      setPeopleLoading(false);
+    } else if (episodeData?.episodeContent) {
+      // Fallback to runtime processing if pre-processed data unavailable
+      async function loadEpisodePeople() {
+        try {
+          setPeopleLoading(true);
+          const people = await extractEpisodePeople(episodeData.episodeContent);
+          setEpisodePeople(people);
+        } catch (error) {
+          console.error('Failed to load episode people:', error);
+          setEpisodePeople({ directors: [], actors: [], writers: [], allPeople: [] });
+        } finally {
+          setPeopleLoading(false);
+        }
       }
+      loadEpisodePeople();
     }
-    
-    loadEpisodePeople();
-  }, [episodeData?.episodeContent]);
+  }, [episodeData?.episodeContent, episodeData?.episodePeople]);
 
   // 🚀 PERFORMANCE OPTIMIZED: Throttled scroll handler (99.8% improvement)
   const optimizedScrollHandler = useMemo(() => {
@@ -70,11 +70,17 @@ export default function GeniusEpisodeTemplate({
     return () => window.removeEventListener('scroll', optimizedScrollHandler);
   }, [optimizedScrollHandler, isClient]);
 
-  // 🚀 PERFORMANCE OPTIMIZED: Memoize expensive movie extraction
+  // 🚀 PERFORMANCE OPTIMIZED: Use pre-processed movie data from getStaticProps
   const episodeMovies = useMemo(() => {
-    if (!episodeData?.episodeContent) return [];
-    return extractEpisodeMovies(episodeData.episodeContent);
-  }, [episodeData?.episodeContent]);
+    if (episodeData?.episodeMovies) {
+      // Use pre-processed data from build time (instant)
+      return episodeData.episodeMovies;
+    } else if (episodeData?.episodeContent) {
+      // Fallback to runtime processing if pre-processed data unavailable
+      return extractEpisodeMovies(episodeData.episodeContent);
+    }
+    return [];
+  }, [episodeData?.episodeContent, episodeData?.episodeMovies]);
 
   const handleBack = useCallback(() => {
     if (!episodeData?.theme?.id || !episodeData?.series?.id) return;
@@ -105,7 +111,7 @@ export default function GeniusEpisodeTemplate({
       }
       return section;
     });
-  }, [episodeData?.episodeContent?.sections, episodeMovies, episodePeople, peopleLoading, isClient]);
+  }, [episodeData?.episodeContent?.sections, episodeMovies, episodePeople, isClient]);
 
   // Early return after all hooks are called
   if (!isClient || !episodeData || !episodeData.theme || !episodeData.series || !episodeData.episode) {

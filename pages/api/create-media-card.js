@@ -44,7 +44,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    console.log('🎬 Creating MediaCard for:', { title, year, tmdb_id });
+    // Creating MediaCard
 
     // Step 1: Check if movie already exists with COMPLETE data (not placeholder)
     let existingMovie = null;
@@ -73,7 +73,7 @@ export default async function handler(req, res) {
       existingMovie.slug?.length > 5;
 
     if (isCompleteMovie) {
-      console.log('✅ Complete movie already exists:', existingMovie.title, existingMovie.year);
+      // Complete movie already exists
       return res.status(200).json({
         success: true,
         movie: existingMovie,
@@ -82,10 +82,10 @@ export default async function handler(req, res) {
     }
 
     if (existingMovie && !isCompleteMovie) {
-      console.log('🔄 Found placeholder movie, will update with TMDB data:', existingMovie.title);
+      // Found placeholder movie, will update with TMDB data
     }
 
-    console.log('🆕 Movie not found, creating new MediaCard...');
+    // Movie not found, creating new MediaCard
 
     // Step 2: Fetch movie data from TMDB
     let tmdbMovie;
@@ -97,7 +97,7 @@ export default async function handler(req, res) {
         'movie_details',
         { tmdb_id },
         async () => {
-          console.log(`🔄 Cache miss - fetching TMDB movie details for ID: ${tmdb_id}`);
+          // Cache miss - fetching TMDB movie details
           
           const tmdbResponse = await fetch(
             `https://api.themoviedb.org/3/movie/${tmdb_id}?api_key=${process.env.TMDB_API_KEY}`
@@ -108,7 +108,7 @@ export default async function handler(req, res) {
           }
           
           const movie = await tmdbResponse.json();
-          console.log(`💾 Cached TMDB movie details for ID: ${tmdb_id} - ${movie.title} (${movie.release_date})`);
+          // Cached TMDB movie details
           
           return movie;
         }
@@ -119,7 +119,7 @@ export default async function handler(req, res) {
         'search_movie',
         { title, year },
         async () => {
-          console.log(`🔄 Cache miss - searching TMDB for: ${title} (${year})`);
+          // Cache miss - searching TMDB
           
           const tmdbResponse = await fetch(
             `https://api.themoviedb.org/3/search/movie?api_key=${process.env.TMDB_API_KEY}&query=${encodeURIComponent(title)}&year=${year}`
@@ -130,7 +130,7 @@ export default async function handler(req, res) {
           }
           
           const data = await tmdbResponse.json();
-          console.log(`💾 Cached TMDB search for: ${title} (${year}) - ${data.results?.length || 0} results`);
+          // Cached TMDB search results
           
           return data;
         }
@@ -149,7 +149,7 @@ export default async function handler(req, res) {
       year;
 
     // Step 3: Generate Claude slug for new MediaCard
-    console.log('🤖 Generating Claude slug...');
+    // Generating Claude slug
     
     const slugPrompt = `For the movie "${tmdbMovie.title}" (${movieYear}), provide a punchy marketing tagline under 50 characters. Think movie poster tagline - short, memorable, exciting. Examples: "Terror has a new name", "Love conquers all", "Justice is coming". Just return the tagline, nothing else.`;
 
@@ -196,7 +196,7 @@ export default async function handler(req, res) {
       throw new Error(`Database save failed: ${saveError.message}`);
     }
 
-    console.log('✅ Created new MediaCard:', savedMovie.title, savedMovie.year);
+    // Created new MediaCard
 
     // Cache for 1 hour since this is fresh data
     res.setHeader('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=7200');

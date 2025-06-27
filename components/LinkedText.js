@@ -1,11 +1,12 @@
 // components/LinkedText.js
 import { useRouter } from 'next/router';
+import { memo, useCallback, useMemo } from 'react';
 
 /**
  * Component to render text with movie links
  * Handles output from processMovieLinksForReact
  */
-export default function LinkedText({ 
+function LinkedText({ 
   parts, 
   style = {},
   linkStyle = {},
@@ -13,6 +14,12 @@ export default function LinkedText({
 }) {
   // ALL HOOKS MUST BE CALLED BEFORE ANY EARLY RETURNS
   const router = useRouter();
+  
+  // Memoize the click handler to prevent re-renders
+  const handleLinkClick = useCallback((e, href) => {
+    e.preventDefault();
+    router.push(href);
+  }, [router]);
 
   // Early return - but hooks are already called above
   if (!enableLinking || !Array.isArray(parts)) {
@@ -20,11 +27,6 @@ export default function LinkedText({
     const text = Array.isArray(parts) ? parts.join('') : parts;
     return <span style={style}>{text}</span>;
   }
-
-  const handleLinkClick = (e, href) => {
-    e.preventDefault();
-    router.push(href);
-  };
 
   return (
     <span style={style}>
@@ -84,3 +86,45 @@ export default function LinkedText({
     </span>
   );
 }
+
+// Memoized LinkedText with custom comparison
+const LinkedTextMemo = memo(LinkedText, (prevProps, nextProps) => {
+  // Compare parts array length first (quick check)
+  if (!Array.isArray(prevProps.parts) || !Array.isArray(nextProps.parts)) {
+    return prevProps.parts === nextProps.parts;
+  }
+  
+  if (prevProps.parts.length !== nextProps.parts.length) {
+    return false;
+  }
+  
+  // Deep comparison of parts array
+  const partsEqual = prevProps.parts.every((part, index) => {
+    const nextPart = nextProps.parts[index];
+    
+    // For string parts
+    if (typeof part === 'string' && typeof nextPart === 'string') {
+      return part === nextPart;
+    }
+    
+    // For link objects
+    if (typeof part === 'object' && typeof nextPart === 'object') {
+      return (
+        part.type === nextPart.type &&
+        part.text === nextPart.text &&
+        part.href === nextPart.href
+      );
+    }
+    
+    return part === nextPart;
+  });
+  
+  return (
+    partsEqual &&
+    prevProps.enableLinking === nextProps.enableLinking &&
+    prevProps.style === nextProps.style &&
+    prevProps.linkStyle === nextProps.linkStyle
+  );
+});
+
+export default LinkedTextMemo;

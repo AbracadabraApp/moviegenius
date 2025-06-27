@@ -13,6 +13,13 @@ import seriesConfig from '../../../../data/series-config.json';
 export default function SeriesEpisodePage({ series, episode, otherEpisodes, seriesId, episodeId, episodeContent }) {
   const router = useRouter();
   
+  // Redirect to the rich episode system that has subheads, movies, and explore further
+  useEffect(() => {
+    if (seriesId && episodeId) {
+      router.replace(`/genius/${seriesId}/1/${episodeId}`);
+    }
+  }, [seriesId, episodeId, router]);
+  
   const [exploreFurther, setExploreFurther] = useState([]);
   const [isLoadingExplore, setIsLoadingExplore] = useState(false);
   const [error, setError] = useState(null);

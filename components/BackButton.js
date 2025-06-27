@@ -15,7 +15,7 @@
  * <BackButton variant="text" context="movie" />
  * <BackButton fallbackRoute="/ask" position="top-right" />
  */
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import { CircleChevronLeft, ArrowLeft, ChevronLeft } from 'lucide-react';
 
@@ -58,8 +58,26 @@ export default function BackButton({
     }
   }, []);
 
+  // 🔒 LOCKED: Context-aware fallback routes
+  const getFallbackRoute = useCallback(() => {
+    if (customText) return fallbackRoute;
+    
+    switch (context) {
+      case 'movie':
+        return '/ask'; // Return to search/ask page
+      case 'person':
+        return '/ask'; // Return to search/ask page  
+      case 'list':
+        return '/recs'; // Return to recommendations
+      case 'episode':
+        return '/recs'; // Return to series list
+      default:
+        return fallbackRoute;
+    }
+  }, [context, customText, fallbackRoute]);
+
   // 🔒 LOCKED: Smart navigation logic
-  const handleBack = () => {
+  const handleBack = useCallback(() => {
     if (onClick) {
       onClick();
       return;
@@ -91,28 +109,10 @@ export default function BackButton({
       // Emergency fallback
       router.push(fallbackRoute);
     }
-  };
-
-  // 🔒 LOCKED: Context-aware fallback routes
-  const getFallbackRoute = () => {
-    if (customText) return fallbackRoute;
-    
-    switch (context) {
-      case 'movie':
-        return '/ask'; // Return to search/ask page
-      case 'person':
-        return '/ask'; // Return to search/ask page  
-      case 'list':
-        return '/recs'; // Return to recommendations
-      case 'episode':
-        return '/recs'; // Return to series list
-      default:
-        return fallbackRoute;
-    }
-  };
+  }, [onClick, isClient, method, router, getFallbackRoute, canGoBack, fallbackRoute]);
 
   // 🔒 LOCKED: Context-aware text generation
-  const getBackText = () => {
+  const getBackText = useCallback(() => {
     if (customText) return customText;
     
     switch (context) {
@@ -127,7 +127,7 @@ export default function BackButton({
       default:
         return 'Back';
     }
-  };
+  }, [context, customText]);
 
   // 🔒 LOCKED: Icon selection based on variant
   const getIcon = () => {

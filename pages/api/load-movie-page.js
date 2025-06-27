@@ -90,7 +90,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    console.log('📄 Loading movie page for TMDB ID:', tmdb_id);
+    // Loading movie page
 
     // Step 1: Load movie from database
     const { data: movieData, error: movieError } = await supabase
@@ -102,7 +102,7 @@ export default async function handler(req, res) {
     let movie = movieData;
 
     if (movieError || !movie) {
-      console.log(`Movie ${tmdb_id} not found in database, attempting to create from TMDB...`);
+      // Movie not found, creating from TMDB
       
       // Try to create the movie via create-media-card API
       try {
@@ -114,7 +114,7 @@ export default async function handler(req, res) {
         
         if (mediaCardResponse.ok) {
           const mediaCardData = await mediaCardResponse.json();
-          console.log('✅ Created movie from TMDB:', mediaCardData.movie.title);
+          // Created movie from TMDB
           
           // Use the newly created movie data
           movie = mediaCardData.movie;
@@ -128,14 +128,14 @@ export default async function handler(req, res) {
       }
     }
 
-    console.log('🎬 Found movie:', movie.title, movie.year);
+    // Found movie
 
     // Step 2: Ensure complete MediaCard data (TMDB + slug)
     let completeMovie = movie;
     
     // Check if movie has placeholder data
     if (movie.title === 'TMDB_FETCH_REQUIRED' || !movie.slug || movie.slug.startsWith('tmdb-')) {
-      console.log('🔄 Movie needs TMDB data, calling create-media-card...');
+      // Movie needs TMDB data, calling create-media-card
       
       // Call our MediaCard creation API to populate TMDB data
       const mediaCardResponse = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/api/create-media-card`, {
@@ -147,9 +147,9 @@ export default async function handler(req, res) {
       if (mediaCardResponse.ok) {
         const mediaCardData = await mediaCardResponse.json();
         completeMovie = mediaCardData.movie;
-        console.log('✅ MediaCard data updated:', completeMovie.title, completeMovie.year);
+        // MediaCard data updated
       } else {
-        console.warn('⚠️ MediaCard update failed, proceeding with existing data');
+        // MediaCard update failed, proceeding with existing data
       }
     }
 
@@ -162,7 +162,7 @@ export default async function handler(req, res) {
       .single();
 
     if (existingAnalysis) {
-      console.log('✅ Using existing analysis for:', completeMovie.title);
+      // Using cached analysis
       
       // Cache for 7 days since analysis is stable
       res.setHeader('Cache-Control', 'public, s-maxage=604800, stale-while-revalidate=1209600');
@@ -177,7 +177,7 @@ export default async function handler(req, res) {
     }
 
     // Step 4: Generate new analysis
-    console.log('🤖 Generating new analysis for:', completeMovie.title, completeMovie.year);
+    // Generating new analysis
     
     const promptConfig = buildPrompt('MOVIE_ANALYSIS', 'Include 3-4 accessibly written Explore Further topics for additional explorations');
     const userPrompt = `${completeMovie.title} (${completeMovie.year})`;
@@ -194,11 +194,11 @@ export default async function handler(req, res) {
     let newMoviesCreated = 0;
     
     try {
-      console.log('🔍 Running Related Movie Discovery...');
+      // Running Related Movie Discovery
       
       // Extract movie mentions from Claude's analysis
       const movieMentions = extractMoviesFromAnalysis(analysis);
-      console.log(`🎬 Found ${movieMentions.length} movie mentions in analysis`);
+      // Found movie mentions in analysis
       
       // Create MediaCards for any movies that don't exist in database
       for (const movieMention of movieMentions) {
@@ -216,7 +216,7 @@ export default async function handler(req, res) {
             const createData = await createResponse.json();
             if (createData.source === 'created') {
               newMoviesCreated++;
-              console.log(`✅ Created MediaCard: ${movieMention.title} (${movieMention.year})`);
+              // Created MediaCard
             }
           }
         } catch (movieError) {
@@ -224,7 +224,7 @@ export default async function handler(req, res) {
         }
       }
       
-      console.log(`✅ Related Movie Discovery: ${newMoviesCreated} new MediaCards created`);
+      // Related Movie Discovery completed
       
       // Set minimal entity data for compatibility
       entityData = {
@@ -263,7 +263,7 @@ export default async function handler(req, res) {
     if (saveError) {
       console.error('❌ Failed to save analysis:', saveError);
     } else {
-      console.log(`✅ Saved analysis for ${completeMovie.title} - Cost: $${costEstimate.toFixed(4)}`);
+      // Saved analysis
     }
 
     // Cache newly generated content for 7 days

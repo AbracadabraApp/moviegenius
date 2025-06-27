@@ -93,7 +93,7 @@ function PersonCard({
         
         // Fetch enhanced data if biography is missing
         if (!biography || biography === '') {
-          console.log('Fetching enhanced biography for:', name);
+          // Fetching enhanced biography
           const response = await fetch('/api/enhance-person-data', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -111,7 +111,7 @@ function PersonCard({
         
         // Fetch TMDB profile if using placeholder
         if (profile.startsWith('data:image/svg+xml')) {
-          console.log('Fetching TMDB profile for:', name);
+          // Fetching TMDB profile
           const response = await fetch('/api/tmdb-person-profile', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -142,7 +142,7 @@ function PersonCard({
                 knownForDepartment
               })
             });
-            console.log('Cached enhanced data for:', name);
+            // Cached enhanced data
           } catch (cacheError) {
             console.warn('Failed to cache enhanced data:', cacheError);
             // Don't fail the whole operation if caching fails
@@ -188,7 +188,7 @@ function PersonCard({
     if (personTmdbId) {
       router.push(`/person/${personTmdbId}`);
     } else {
-      console.error('PersonCard: Missing TMDB ID for person:', name, birthYear);
+      console.error('PersonCard: Missing TMDB ID for person navigation');
     }
   };
 
