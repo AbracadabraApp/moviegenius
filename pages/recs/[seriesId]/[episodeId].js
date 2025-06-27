@@ -2,6 +2,7 @@
 import PhoneFrame from '../../../components/PhoneFrame';
 import AskInputBar from '../../../components/AskInputBar';
 import MediaCard from '../../../components/MediaCard';
+import BackButton from '../../../components/BackButton';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { underlineProperNames } from '../../../lib/proper-names';
@@ -108,6 +109,9 @@ export default function SeriesEpisodePage() {
     return (
       <PhoneFrame active="ask">
         <div style={styles.container}>
+          {/* Back button for navigation */}
+          <BackButton variant="icon" context="episode" position="top-left" />
+          
           <div style={styles.fixedInputArea}>
             <AskInputBar onSubmit={handleAsk} />
           </div>
@@ -123,6 +127,9 @@ export default function SeriesEpisodePage() {
     return (
       <PhoneFrame active="ask">
         <div style={styles.container}>
+          {/* Back button for navigation */}
+          <BackButton variant="icon" context="episode" position="top-left" />
+          
           <div style={styles.fixedInputArea}>
             <AskInputBar onSubmit={handleAsk} />
           </div>
@@ -146,6 +153,9 @@ export default function SeriesEpisodePage() {
   return (
     <PhoneFrame active="ask">
       <div style={styles.container}>
+        {/* Back button for navigation */}
+        <BackButton variant="icon" context="episode" position="top-left" />
+        
         {/* Fixed Ask Input Bar */}
         <div style={styles.fixedInputArea}>
           <AskInputBar onSubmit={handleAsk} />

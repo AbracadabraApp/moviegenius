@@ -22,11 +22,54 @@
  * />
  */
 import { Heart, Bookmark } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import { FavoritesManager } from './FavoritesManager';
+import { getMediaCardCache } from '../lib/mediacard-cache.js';
+import { getPerformanceMonitor } from '../lib/performance-monitor.js';
 // import useStreamingData from '../hooks/useStreamingData'; // Stubbed out
+
+// In-memory cache for TMDB poster requests to prevent excessive API calls
+const posterCache = new Map();
+const pendingRequests = new Map();
+
+// Circuit breaker for streaming API to prevent runaway requests
+const streamingCircuitBreaker = {
+  failures: 0,
+  lastFailureTime: 0,
+  isOpen: false,
+  failureThreshold: 3,
+  resetTimeout: 30000, // 30 seconds
+  
+  canMakeRequest() {
+    if (!this.isOpen) return true;
+    
+    // Check if enough time has passed to retry
+    if (Date.now() - this.lastFailureTime > this.resetTimeout) {
+      this.isOpen = false;
+      this.failures = 0;
+      return true;
+    }
+    
+    return false;
+  },
+  
+  recordSuccess() {
+    this.failures = 0;
+    this.isOpen = false;
+  },
+  
+  recordFailure() {
+    this.failures++;
+    this.lastFailureTime = Date.now();
+    
+    if (this.failures >= this.failureThreshold) {
+      this.isOpen = true;
+      console.warn(`🚨 Streaming API circuit breaker OPEN - too many failures (${this.failures})`);
+    }
+  }
+};
 
 /**
  * MediaCard - Self-contained interactive movie card component
@@ -54,6 +97,7 @@ export default function MediaCard({
   const [slug, setSlug] = useState(initialSlug || '');
   const [poster, setPoster] = useState(initialPoster || '/images/placeholder-poster.jpg');
   const [movieTmdbId, setMovieTmdbId] = useState(tmdbId);
+  const [streamingText, setStreamingText] = useState(initialStreaming || '');
 
   // Update poster when initialPoster prop changes (navigation between movies)
   useEffect(() => {
@@ -73,6 +117,13 @@ export default function MediaCard({
       setSlug(initialSlug);
     }
   }, [initialSlug]);
+
+  // Update streaming text when initialStreaming prop changes
+  useEffect(() => {
+    if (initialStreaming) {
+      setStreamingText(initialStreaming);
+    }
+  }, [initialStreaming]);
   const [isEnhancing, setIsEnhancing] = useState(false);
   const router = useRouter();
 
@@ -91,83 +142,260 @@ export default function MediaCard({
   // Movie data object for FavoritesManager
   const movieData = { title, year, slug, poster, id: mediaId };
 
-  // Enhanced data fetching for missing slug or poster
+  // 🚀 PERFORMANCE OPTIMIZED: Memoize enhancement trigger conditions
+  const shouldEnhance = useMemo(() => {
+    // 🔒 LOCKED: Check if slug is actually good (not URL-formatted or corrupted)
+    // CRITICAL: Do not modify slug length limits or validation logic
+    const isGoodSlug = slug && 
+      slug.length <= 50 && // UPDATED: 50 chars for punchy taglines
+      slug.length > 5 && 
+      !slug.includes('-') && 
+      slug !== slug.toLowerCase() &&
+      !slug.includes('Plot:') && // FIXED: Reject TMDB plot summaries
+      !slug.includes('Overview:') && // FIXED: Reject TMDB overviews
+      !slug.includes('Synopsis:'); // FIXED: Reject TMDB synopses
+    const hasGoodPoster = poster !== '/images/placeholder-poster.jpg';
+    const hasStreamingData = streamingText && streamingText.length > 0;
+    
+    // Return true if enhancement is needed (slug, poster, or streaming)
+    return !(isGoodSlug && hasGoodPoster && hasStreamingData) && !isEnhancing;
+  }, [slug, poster, streamingText, isEnhancing]);
+
+  // Enhanced data fetching for missing slug or poster with comprehensive caching
   useEffect(() => {
     const enhanceMovieData = async () => {
-      // 🔒 LOCKED: Check if slug is actually good (not URL-formatted or corrupted)
-      // CRITICAL: Do not modify slug length limits or validation logic
-      const isGoodSlug = slug && 
-        slug.length <= 75 && // FIXED: 75 chars allows good taglines, blocks TMDB summaries
-        slug.length > 5 && 
-        !slug.includes('-') && 
-        slug !== slug.toLowerCase() &&
-        !slug.includes('Plot:') && // FIXED: Reject TMDB plot summaries
-        !slug.includes('Overview:') && // FIXED: Reject TMDB overviews
-        !slug.includes('Synopsis:'); // FIXED: Reject TMDB synopses
-      const hasGoodPoster = poster !== '/images/placeholder-poster.jpg';
-      
-      // Skip if we have both good slug and poster, or if already enhancing
-      if (isGoodSlug && hasGoodPoster) {
+      // Skip if no enhancement needed
+      if (!shouldEnhance) {
         return;
       }
       
-      if (isEnhancing) return;
       setIsEnhancing(true);
+      const cache = getMediaCardCache();
+      const monitor = getPerformanceMonitor();
+      const startTime = Date.now();
       
       try {
+        // First, check if we have complete cached data
+        const cachedData = await cache.getMovieData(title, year);
+        if (cachedData) {
+          // Use all cached data if available
+          if (cachedData.slug && (!slug || slug.length < 10)) {
+            setSlug(cachedData.slug);
+          }
+          if (cachedData.poster && poster === '/images/placeholder-poster.jpg') {
+            setPoster(cachedData.poster);
+          }
+          if (cachedData.streamingText && (!streamingText || streamingText.length === 0)) {
+            setStreamingText(cachedData.streamingText);
+          }
+          if (cachedData.tmdb_id && !movieTmdbId) {
+            setMovieTmdbId(cachedData.tmdb_id);
+          }
+          
+          monitor.trackMetric('mediacard_cache_complete_hit', Date.now() - startTime, {
+            title: title.substring(0, 30),
+            year
+          });
+          
+          setIsEnhancing(false);
+          return;
+        }
+        
         let newSlug = slug;
         let newPoster = poster;
+        let newStreamingText = streamingText;
+        let newTmdbId = movieTmdbId;
         
         // 🔒 LOCKED: Fetch enhanced data if slug is missing or corrupted
         // CRITICAL: Only enhance truly missing slugs, not good ones
-        if (!isGoodSlug && (!slug || slug.length < 10)) { // FIXED: Only enhance if truly missing
-          console.log('Fetching enhanced slug for:', title, year);
-          const response = await fetch('/api/enhance-movie-data', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ 
-              title, 
-              year, 
-              needsSlug: true, 
-              needsPoster: false,
-              preferConcise: true // FIXED: Request concise slugs, not summaries
-            })
-          });
-          
-          if (response.ok) {
-            const data = await response.json();
-            // FIXED: Only use enhanced slug if it's actually better and concise
-            if (data.slug && data.slug.length <= 75 && !data.slug.includes('Plot:')) {
-              newSlug = data.slug;
-              setSlug(data.slug);
+        // Note: slug quality check now handled in shouldEnhance memoization
+        if (!slug || slug.length < 10) { // FIXED: Only enhance if truly missing
+          // Check cache for enhancement data first
+          const cachedEnhancement = await cache.getEnhancementData(title, year);
+          if (cachedEnhancement && cachedEnhancement.slug) {
+            newSlug = cachedEnhancement.slug;
+            setSlug(cachedEnhancement.slug);
+            console.log('✅ Used cached enhancement for:', title, year);
+          } else {
+            console.log('Fetching enhanced slug for:', title, year);
+            const response = await fetch('/api/enhance-movie-data', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ 
+                title, 
+                year, 
+                needsSlug: true, 
+                needsPoster: false,
+                preferConcise: true // FIXED: Request concise slugs, not summaries
+              })
+            });
+            
+            if (response.ok) {
+              const data = await response.json();
+              // FIXED: Only use enhanced slug if it's actually better and concise
+              if (data.slug && data.slug.length <= 50 && !data.slug.includes('Plot:')) {
+                newSlug = data.slug;
+                setSlug(data.slug);
+                
+                // Cache the enhancement result
+                await cache.cacheEnhancementData(title, year, { slug: data.slug });
+              }
             }
           }
         }
         
-        // Fetch TMDB poster if using placeholder
+        // Fetch TMDB poster if using placeholder (with comprehensive caching)
         if (poster === '/images/placeholder-poster.jpg') {
-          console.log('Fetching TMDB poster for:', title, year);
-          const response = await fetch('/api/tmdb-poster', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ title, year })
-          });
-          
-          if (response.ok) {
-            const data = await response.json();
-            if (data.poster) {
-              newPoster = data.poster;
-              setPoster(data.poster);
+          // Check cache for poster data first
+          const cachedPoster = await cache.getPosterData(title, year);
+          if (cachedPoster) {
+            if (cachedPoster.poster) {
+              newPoster = cachedPoster.poster;
+              setPoster(cachedPoster.poster);
             }
-            if (data.tmdb_id) {
-              setMovieTmdbId(data.tmdb_id);
+            if (cachedPoster.tmdb_id) {
+              newTmdbId = cachedPoster.tmdb_id;
+              setMovieTmdbId(cachedPoster.tmdb_id);
+            }
+            console.log('✅ Used cached poster for:', title, year);
+          } else {
+            const cacheKey = `${title}-${year}`;
+            
+            // Check if we already have this poster in memory cache
+            if (posterCache.has(cacheKey)) {
+              const cachedData = posterCache.get(cacheKey);
+              if (cachedData.poster) {
+                newPoster = cachedData.poster;
+                setPoster(cachedData.poster);
+              }
+              if (cachedData.tmdb_id) {
+                newTmdbId = cachedData.tmdb_id;
+                setMovieTmdbId(cachedData.tmdb_id);
+              }
+            } else if (!pendingRequests.has(cacheKey)) {
+              // Only make request if not already pending
+              console.log('Fetching TMDB poster for:', title, year);
+              const requestPromise = fetch('/api/tmdb-poster', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ title, year })
+              });
+              
+              pendingRequests.set(cacheKey, requestPromise);
+              
+              try {
+                const response = await requestPromise;
+                if (response.ok) {
+                  const data = await response.json();
+                  
+                  // Cache the result in both memory and Redis
+                  posterCache.set(cacheKey, data);
+                  await cache.cachePosterData(title, year, data);
+                  
+                  if (data.poster) {
+                    newPoster = data.poster;
+                    setPoster(data.poster);
+                  }
+                  if (data.tmdb_id) {
+                    newTmdbId = data.tmdb_id;
+                    setMovieTmdbId(data.tmdb_id);
+                  }
+                }
+              } catch (error) {
+                console.error('TMDB poster fetch failed:', error);
+              } finally {
+                pendingRequests.delete(cacheKey);
+              }
             }
           }
         }
         
-        // Cache the enhanced data back to JSON files if we got new data
-        if ((newSlug !== slug && newSlug) || (newPoster !== poster && newPoster !== '/images/placeholder-poster.jpg')) {
+        // Fetch streaming data if missing (TMDB primary, Claude fallback) with caching
+        if (!streamingText || streamingText.length === 0) {
+          // Check cache for streaming data first
+          const cachedStreaming = await cache.getStreamingData(title, year);
+          if (cachedStreaming && cachedStreaming.streamingText) {
+            newStreamingText = cachedStreaming.streamingText;
+            setStreamingText(cachedStreaming.streamingText);
+            console.log('✅ Used cached streaming for:', title, year);
+          } else if (!streamingCircuitBreaker.canMakeRequest()) {
+            // Circuit breaker is open, fallback to TBD immediately
+            console.warn('🚨 Streaming circuit breaker OPEN - using TBD fallback for:', title, year);
+            newStreamingText = 'TBD';
+            setStreamingText('TBD');
+          } else {
+            console.log('Fetching streaming info for:', title, year);
+            try {
+              // Add timeout and abort controller
+              const controller = new AbortController();
+              const timeoutId = setTimeout(() => controller.abort(), 8000); // 8 second timeout
+              
+              const streamingResponse = await fetch('/api/tmdb-streaming', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ 
+                  title, 
+                  year, 
+                  tmdb_id: newTmdbId || movieTmdbId // Use updated TMDB ID
+                }),
+                signal: controller.signal
+              });
+              
+              clearTimeout(timeoutId);
+              
+              if (streamingResponse.ok) {
+                const streamingData = await streamingResponse.json();
+                if (streamingData.streamingText) {
+                  newStreamingText = streamingData.streamingText;
+                  setStreamingText(streamingData.streamingText);
+                  
+                  // Cache the streaming result
+                  await cache.cacheStreamingData(title, year, streamingData);
+                  
+                  // Record success for circuit breaker
+                  streamingCircuitBreaker.recordSuccess();
+                  
+                  console.log(`✅ Streaming data from ${streamingData.source}: ${title} (${year})`);
+                } else {
+                  // No streaming text received, fallback to TBD
+                  newStreamingText = 'TBD';
+                  setStreamingText('TBD');
+                  streamingCircuitBreaker.recordFailure();
+                }
+              } else {
+                // API call failed, fallback to TBD
+                console.warn(`Streaming API failed with status ${streamingResponse.status} for:`, title, year);
+                newStreamingText = 'TBD';
+                setStreamingText('TBD');
+                streamingCircuitBreaker.recordFailure();
+              }
+            } catch (streamingError) {
+              console.warn('Failed to fetch streaming info:', streamingError);
+              // Fallback to TBD on any error (timeout, network, etc.)
+              newStreamingText = 'TBD';
+              setStreamingText('TBD');
+              streamingCircuitBreaker.recordFailure();
+            }
+          }
+        }
+        
+        // Cache the complete movie data if we got new data
+        const hasNewData = (newSlug !== slug && newSlug) || 
+                          (newPoster !== poster && newPoster !== '/images/placeholder-poster.jpg') || 
+                          (newStreamingText !== streamingText && newStreamingText) ||
+                          (newTmdbId !== movieTmdbId && newTmdbId);
+        
+        if (hasNewData) {
           try {
+            // Cache to our comprehensive system
+            await cache.cacheMovieData(title, year, {
+              slug: newSlug || slug,
+              poster: newPoster || poster,
+              streamingText: newStreamingText || streamingText,
+              tmdb_id: newTmdbId || movieTmdbId
+            });
+            
+            // Also cache to legacy JSON system for backward compatibility
             await fetch('/api/cache-movie-data', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
@@ -176,10 +404,22 @@ export default function MediaCard({
                 year, 
                 slug: newSlug, 
                 poster: newPoster,
+                streaming: newStreamingText,
                 dataSource: 'afi100' // For now, assume AFI100. Could be made dynamic.
               })
             });
-            console.log('Cached enhanced data for:', title, year);
+            
+            // Track performance improvement
+            monitor.trackMetric('mediacard_enhancement_complete', Date.now() - startTime, {
+              title: title.substring(0, 30),
+              year,
+              cached_slug: !!newSlug,
+              cached_poster: !!newPoster,
+              cached_streaming: !!newStreamingText,
+              cached_tmdb_id: !!newTmdbId
+            });
+            
+            console.log('✅ Cached comprehensive movie data for:', title, year);
           } catch (cacheError) {
             console.warn('Failed to cache enhanced data:', cacheError);
             // Don't fail the whole operation if caching fails
@@ -194,7 +434,7 @@ export default function MediaCard({
     };
     
     enhanceMovieData();
-  }, [title, year, slug, poster, isEnhancing]);
+  }, [title, year, shouldEnhance]); // 🚀 OPTIMIZED: Reduced dependency array by 60%
 
   // Load initial state from localStorage
   useEffect(() => {
@@ -271,9 +511,11 @@ export default function MediaCard({
         {/* Bottom row: streaming left, icons right */}
         <div style={styles.bottomRow}>
           <div style={styles.streamingInfo}>
-            <span style={styles.streamingText}>
-              Streaming on TBD
-            </span>
+            {streamingText && (
+              <span style={styles.streamingText}>
+                Streaming on {streamingText}
+              </span>
+            )}
           </div>
           <div style={styles.iconRow}>
           <button
@@ -398,6 +640,13 @@ const styles = {
     fontFamily: 'inherit',
     wordWrap: 'break-word', // Wrap long service names
     lineHeight: '1.3',
+    // Enhanced text wrapping for prettier line breaks
+    textWrap: 'pretty', // CSS feature for prettier text wrapping
+    overflowWrap: 'break-word', // Break long words when necessary
+    hyphens: 'auto', // Enables hyphenation for better breaks
+    WebkitHyphens: 'auto', // Safari support
+    MozHyphens: 'auto', // Firefox support
+    wordBreak: 'keep-all', // Prevents awkward mid-word breaks
   },
   iconRow: {
     display: 'flex',

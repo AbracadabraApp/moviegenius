@@ -12,10 +12,11 @@
  *   onClick={() => router.push(`/recs/series/${seriesId}/${episode.id}`)}
  * />
  */
+import React, { memo } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 
-export default function EpisodeCard({ episode, seriesId, onClick }) {
+function EpisodeCard({ episode, seriesId, onClick }) {
   const router = useRouter();
 
   const handleCardClick = (e) => {
@@ -165,3 +166,17 @@ const styles = {
     lineHeight: '1.4',
   },
 };
+
+/**
+ * Custom prop comparison for EpisodeCard memoization
+ */
+const arePropsEqual = (prevProps, nextProps) => {
+  return prevProps.seriesId === nextProps.seriesId &&
+         prevProps.episode?.id === nextProps.episode?.id &&
+         prevProps.episode?.title === nextProps.episode?.title &&
+         prevProps.episode?.subtitle === nextProps.episode?.subtitle &&
+         JSON.stringify(prevProps.episode?.posters) === JSON.stringify(nextProps.episode?.posters);
+};
+
+// Export memoized component
+export default memo(EpisodeCard, arePropsEqual);

@@ -3,6 +3,7 @@ import PhoneFrame from '../../../../components/PhoneFrame';
 import AskInputBar from '../../../../components/AskInputBar';
 import MediaCard from '../../../../components/MediaCard';
 import EpisodeCard from '../../../../components/EpisodeCard';
+import BackButton from '../../../../components/BackButton';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { underlineProperNames } from '../../../../lib/proper-names';
@@ -54,6 +55,9 @@ export default function SeriesEpisodePage({ series, episode, otherEpisodes, seri
     return (
       <PhoneFrame active="recs">
         <div style={styles.container}>
+          {/* Back button for navigation */}
+          <BackButton variant="icon" context="episode" position="top-left" />
+          
           <div style={styles.fixedInputArea}>
             <AskInputBar onSubmit={() => {}} />
           </div>
@@ -69,6 +73,9 @@ export default function SeriesEpisodePage({ series, episode, otherEpisodes, seri
     return (
       <PhoneFrame active="recs">
         <div style={styles.container}>
+          {/* Back button for navigation */}
+          <BackButton variant="icon" context="episode" position="top-left" />
+          
           <div style={styles.fixedInputArea}>
             <AskInputBar onSubmit={handleAsk} />
           </div>
@@ -83,6 +90,9 @@ export default function SeriesEpisodePage({ series, episode, otherEpisodes, seri
   return (
     <PhoneFrame active="recs">
       <div style={styles.container}>
+        {/* Back button for navigation */}
+        <BackButton variant="icon" context="episode" position="top-left" />
+        
         {/* Fixed Ask Input Bar */}
         <div style={styles.fixedInputArea}>
           <AskInputBar onSubmit={handleAsk} />
@@ -92,24 +102,6 @@ export default function SeriesEpisodePage({ series, episode, otherEpisodes, seri
         <div style={styles.scrollableContent}>
           <div style={styles.conversationArea}>
             <div style={styles.messageGroup}>
-              {/* Back Navigation */}
-              {series && (
-                <div style={styles.backNavigation}>
-                  <button 
-                    style={styles.backButton}
-                    onClick={() => router.push('/recs')}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.backgroundColor = '#f3f4f6';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.backgroundColor = 'transparent';
-                    }}
-                  >
-                    ← Back to {series.title.split(' - ')[0]}
-                  </button>
-                </div>
-              )}
-
               {/* Episode Header */}
               {episode && (
                 <EpisodeCard

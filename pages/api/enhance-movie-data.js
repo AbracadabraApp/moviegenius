@@ -38,7 +38,7 @@ export default async function handler(req, res) {
         .eq('year', year)
         .single();
         
-      if (!dbError && existingMovie?.slug && existingMovie.slug.length <= 30) {
+      if (!dbError && existingMovie?.slug && existingMovie.slug.length <= 50) {
         console.log('✅ Found existing good short slug, not overwriting');
         return res.status(200).json({
           slug: existingMovie.slug,
@@ -50,7 +50,7 @@ export default async function handler(req, res) {
       
       console.log('Generating new short slug for:', title, year);
       
-      const prompt = `For the movie "${title}" (${year}), provide a punchy marketing tagline under 30 characters. Think movie poster tagline - short, memorable, exciting. Examples: "Terror has a new name", "Love conquers all", "Justice is coming". Just return the tagline, nothing else.`;
+      const prompt = `For the movie "${title}" (${year}), provide a punchy marketing tagline under 50 characters. Think movie poster tagline - short, memorable, exciting. Examples: "Terror has a new name", "Love conquers all", "Justice is coming". Just return the tagline, nothing else.`;
 
       const message = await anthropic.messages.create({
         model: 'claude-3-5-sonnet-20241022',

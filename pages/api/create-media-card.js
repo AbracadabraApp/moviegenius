@@ -151,7 +151,7 @@ export default async function handler(req, res) {
     // Step 3: Generate Claude slug for new MediaCard
     console.log('🤖 Generating Claude slug...');
     
-    const slugPrompt = `For the movie "${tmdbMovie.title}" (${movieYear}), provide a punchy marketing tagline under 30 characters. Think movie poster tagline - short, memorable, exciting. Examples: "Terror has a new name", "Love conquers all", "Justice is coming". Just return the tagline, nothing else.`;
+    const slugPrompt = `For the movie "${tmdbMovie.title}" (${movieYear}), provide a punchy marketing tagline under 50 characters. Think movie poster tagline - short, memorable, exciting. Examples: "Terror has a new name", "Love conquers all", "Justice is coming". Just return the tagline, nothing else.`;
 
     const message = await Promise.race([
       anthropic.messages.create({

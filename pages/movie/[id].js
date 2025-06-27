@@ -1,6 +1,6 @@
 // pages/movie/[id].js - TMDB ID based movie detail page
 import { useRouter } from 'next/router';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { createClient } from '@supabase/supabase-js';
 import PhoneFrame from '../../components/PhoneFrame';
 import MediaCard from '../../components/MediaCard';
@@ -10,7 +10,12 @@ import AskInputBar from '../../components/AskInputBar';
 import BackButton from '../../components/BackButton';
 import { ArrowLeft, Heart, Bookmark } from 'lucide-react';
 import { FavoritesManager } from '../../components/FavoritesManager';
+import { filterCurrentMovie } from '../../lib/filterCurrentMovie';
+import ExplorePromptCard from '../../components/ExplorePromptCard';
+import FeaturedFilmsSection from '../../components/FeaturedFilmsSection';
+import ExploreFurtherSection from '../../components/ExploreFurtherSection';
 import dynamic from 'next/dynamic';
+import usePredictiveLoading from '../../hooks/usePredictiveLoading';
 
 // Lazy load heavy analysis components
 const EntityLinkedText = dynamic(() => import('../../components/EntityLinkedText'), {
@@ -37,18 +42,31 @@ export default function MovieDetailPage({ title, year, initialSlug, initialPoste
   const [entityData, setEntityData] = useState(null);
   const [isFetchingTMDB, setIsFetchingTMDB] = useState(false);
 
+  // Demo Mode: Predictive content loading
+  const { trackInteraction, prefetchContent, isEnabled: isPredictiveEnabled } = usePredictiveLoading(
+    'movie_detail', 
+    tmdbId, 
+    { title, year, hasAnalysis: sections.length > 0 }
+  );
+
   // Handle ask input
-  const handleAsk = (query) => {
+  const handleAsk = useCallback((query) => {
     router.push({
       pathname: '/ask',
       query: { q: query }
     });
-  };
+  }, [router]);
 
   // Handle complete movie page loading with new clean API
   useEffect(() => {
     const loadMoviePage = async () => {
       if (!tmdbId) return;
+      
+      // Prevent excessive API calls during development
+      if (isFetchingTMDB) return;
+      
+      // Only skip API call if we're in a reload loop scenario
+      // Always call API to get Claude analysis content
       
       console.log('📄 Loading movie page for TMDB ID:', tmdbId);
       setIsFetchingTMDB(true);
@@ -64,21 +82,29 @@ export default function MovieDetailPage({ title, year, initialSlug, initialPoste
           const data = await response.json();
           console.log('✅ Movie page loaded:', data.movie.title, data.cached ? '(cached)' : '(fresh)');
           
-          // If we got updated movie data, refresh the page
-          if (data.movie.title !== title || title === 'TMDB_FETCH_REQUIRED') {
+          // If we got updated movie data and it's not a TMDB fetch case, refresh once
+          if (data.movie.title !== title && title !== 'TMDB_FETCH_REQUIRED') {
             console.log('🔄 Movie data updated, refreshing page...');
             window.location.reload();
-          } else {
-            // Use the analysis data directly without additional fetch
-            if (data.analysis) {
-              const parsedSections = parseClaudeResponse(data.analysis);
-              setSections(parsedSections.sections);
-              setExploreFurther(parsedSections.exploreFurther);
-              setMoreIdeas(parsedSections.moreIdeas);
-              setEntityData(data.entityData);
-            }
-            setIsLoadingAnalysis(false);
+          } else if (title === 'TMDB_FETCH_REQUIRED') {
+            // First time loading with TMDB data - update URL without reload
+            console.log('🔄 Initial TMDB data loaded, updating URL...');
+            window.history.replaceState(null, '', `/movie/${tmdbId}`);
+            // Continue to process the data below
           }
+          
+          // Process the analysis data (for both TMDB_FETCH_REQUIRED and normal cases)
+          if (data.analysis) {
+            const parsedSections = parseClaudeResponse(data.analysis);
+            console.log('🔍 Parsed sections:', parsedSections.sections.length);
+            console.log('🔍 Explore Further topics:', parsedSections.exploreFurther);
+            console.log('🔍 More Ideas:', parsedSections.moreIdeas);
+            setSections(parsedSections.sections);
+            setExploreFurther(parsedSections.exploreFurther);
+            setMoreIdeas(parsedSections.moreIdeas);
+            setEntityData(data.entityData);
+          }
+          setIsLoadingAnalysis(false);
         } else {
           console.error('❌ Movie page loading failed:', response.status);
           setIsLoadingAnalysis(false);
@@ -93,22 +119,35 @@ export default function MovieDetailPage({ title, year, initialSlug, initialPoste
     };
     
     loadMoviePage();
-  }, [tmdbId]); // Only depend on tmdbId
+  }, [tmdbId]); // Only depend on tmdbId - title will be updated by API response
 
-  // Legacy analysis handling - now handled by load-movie-page API
+  // Reset state when navigating between movies
   useEffect(() => {
     console.log('🎬 Movie page component loaded!', { id, title, year });
     
     // Reset analysis state when navigating between movies
-    if (id) {
+    if (id && tmdbId) {
+      console.log('🔄 Resetting state for new movie:', id);
       setIsLoadingAnalysis(true);
       setSections([]);
       setExploreFurther([]);
       setMoreIdeas(null);
       setEntityData(null);
+      
+      // Initialize loading message and icon for film-themed loading
+      const iconFiles = [
+        'film-movie-reel-icon.png',
+        'film-movie-icon.png',
+        'chair-director-outline-icon.png'
+      ];
+      const randomMessage = loadingMessages[Math.floor(Math.random() * loadingMessages.length)];
+      const randomIcon = iconFiles[Math.floor(Math.random() * iconFiles.length)];
+      setLoadingMessage(randomMessage);
+      setLoadingIcon(randomIcon);
+      
       window.scrollTo(0, 0);
     }
-  }, [id]); // Only reset on ID change
+  }, [id, tmdbId]); // Reset when either ID or tmdbId changes
 
   // Load favorites state when movie props are available
   useEffect(() => {
@@ -173,10 +212,11 @@ export default function MovieDetailPage({ title, year, initialSlug, initialPoste
           if (parts.length >= 2) { // At least title and year
             const [title, year, description, streaming] = parts;
             // 🔒 CRITICAL: Always preserve TMDB ID for navigation
+            // Let MediaCard fetch proper database slugs instead of using Claude's descriptions
             const movieObj = {
               title: title?.trim() || 'Unknown Title',
               year: parseInt(year?.trim()) || new Date().getFullYear(),
-              slug: description?.trim() || 'No description available',
+              slug: null, // Let MediaCard fetch proper tagline from database
               poster: '/images/placeholder-poster.jpg', // Default poster
               tmdb_id: null // Will be fetched by MediaCard if needed
             };
@@ -197,10 +237,11 @@ export default function MovieDetailPage({ title, year, initialSlug, initialPoste
           
           const [title, year, description, streaming] = parts;
           // 🔒 CRITICAL: Always preserve TMDB ID for navigation
+          // Let MediaCard fetch proper database slugs instead of using Claude's descriptions
           const movieObj = {
             title: title?.trim() || 'Unknown Title',
             year: parseInt(year?.trim()) || new Date().getFullYear(),
-            slug: description?.trim() || 'No description available',
+            slug: null, // Let MediaCard fetch proper tagline from database
             poster: '/images/placeholder-poster.jpg', // Default poster
             tmdb_id: null // Will be fetched by MediaCard if needed
           };
@@ -212,10 +253,11 @@ export default function MovieDetailPage({ title, year, initialSlug, initialPoste
         
         const [title, year, description, streaming] = parts;
         // 🔒 CRITICAL: Always preserve TMDB ID for navigation
+        // Let MediaCard fetch proper database slugs instead of using Claude's descriptions
         const movieObj = {
           title: title?.trim() || 'Unknown Title',
           year: parseInt(year?.trim()) || new Date().getFullYear(),
-          slug: description?.trim() || 'No description available',
+          slug: null, // Let MediaCard fetch proper tagline from database
           poster: '/images/placeholder-poster.jpg', // Default poster
           tmdb_id: null // Will be fetched by MediaCard if needed
         };
@@ -295,10 +337,9 @@ export default function MovieDetailPage({ title, year, initialSlug, initialPoste
   return (
     <PhoneFrame>
       <div style={styles.container}>
-        {/* Back button for navigation */}
-        <BackButton variant="icon" context="movie" position="top-left" />
-        
         <div style={styles.inputArea}>
+          {/* Back button for navigation */}
+          <BackButton variant="icon" context="movie" position="top-left" />
           <AskInputBar onSubmit={handleAsk} />
         </div>
         
@@ -328,107 +369,101 @@ export default function MovieDetailPage({ title, year, initialSlug, initialPoste
             </div>
           ) : (
             <div style={styles.claudeContent}>              
-              {/* Render interleaved sections exactly like ask page */}
-              {sections && sections.map((section, sectionIndex) => {
-                // Find if this is the first text section
-                const isFirstTextSection = section.type === 'text' && 
-                  sections.findIndex(s => s.type === 'text') === sectionIndex;
+              {/* Render interleaved sections with simple explore further math */}
+              {(() => {
+                let usedExploreFurtherCount = 0;
                 
-                return (
-                  <div key={`section-${sectionIndex}`}>
-                    {section.type === 'text' && (
-                      <div style={{
-                        ...styles.textSection,
-                        marginTop: isFirstTextSection ? '8px' : styles.textSection.marginTop
-                      }}>
-                        <div>{section.content}</div>
-                      </div>
-                    )}
-                  {section.type === 'movies' && section.movies && (
-                    <div style={styles.movieList}>
-                      {section.movies.map((movie, movieIndex) => (
-                        <MediaCard
-                          key={`${movie.title}-${movie.year}-${sectionIndex}-${movieIndex}`}
-                          title={movie.title}
-                          year={movie.year}
-                          initialSlug={movie.slug}
-                          initialPoster={movie.poster}
-                          initialStreaming={movie.streaming}
-                          tmdbId={movie.tmdb_id}
-                        />
-                      ))}
-                    </div>
-                  )}
-                  </div>
-                );
-              })}
-              
-              {/* Render Explore Further section */}
-              {exploreFurther && exploreFurther.length > 0 && (
-                <div style={styles.exploreFurtherSection}>
-                  <h3 style={styles.exploreFurtherTitle}>Explore Further</h3>
-                  <div style={styles.topicList}>
-                    {/* Cast and Crew button */}
-                    <div 
-                      style={styles.topicItem}
-                      onClick={() => {
-                        if (tmdbId) {
-                          router.push(`/movie/${tmdbId}/cast`);
-                        }
-                      }}
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
-                        e.currentTarget.style.transform = 'translateY(-2px)';
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.boxShadow = '0 2px 6px rgba(0, 0, 0, 0.12)';
-                        e.currentTarget.style.transform = 'translateY(0)';
-                      }}
-                    >
-                      Cast and Crew of {title}
-                    </div>
-                    {exploreFurther.map((topic, index) => (
-                      <div 
-                        key={`topic-${index}`} 
-                        style={styles.topicItem}
-                        onClick={() => {
-                          const contextualQuery = `${title} (${year}): ${topic}`;
-                          router.push(`/ask?q=${encodeURIComponent(contextualQuery)}`);
-                        }}
-                        onMouseEnter={(e) => {
-                          e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
-                          e.currentTarget.style.transform = 'translateY(-2px)';
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.boxShadow = '0 2px 6px rgba(0, 0, 0, 0.12)';
-                          e.currentTarget.style.transform = 'translateY(0)';
-                        }}
-                      >
-                        {topic}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-              
-              {/* Render More Ideas section exactly like ask page */}
-              {moreIdeas && (
-                <div style={styles.moreIdeasSection}>
-                  <h3 style={styles.moreIdeasTitle}>More Ideas</h3>
-                  <div style={styles.movieList}>
-                    {moreIdeas.movies.map((movie, index) => (
-                      <MediaCard
-                        key={`${movie.title}-${movie.year}-more-${index}`}
-                        title={movie.title}
-                        year={movie.year}
-                        initialSlug={movie.slug}
-                        initialPoster={movie.poster}
-                        initialStreaming={movie.streaming}
-                        tmdbId={movie.tmdb_id}
+                return sections && sections.map((section, sectionIndex) => {
+                  // Find if this is the first text section
+                  const isFirstTextSection = section.type === 'text' && 
+                    sections.findIndex(s => s.type === 'text') === sectionIndex;
+                  
+                  return (
+                    <div key={`section-${sectionIndex}`}>
+                      {section.type === 'text' && (
+                        <>
+                          <div style={{
+                            ...styles.textSection,
+                            marginTop: isFirstTextSection ? '8px' : styles.textSection.marginTop
+                          }}>
+                            <div>{section.content}</div>
+                          </div>
+                          
+                          {/* Show explore further section if we have unused topics and this is first few paragraphs */}
+                          {exploreFurther && exploreFurther[usedExploreFurtherCount] && sectionIndex < 3 && (() => {
+                            const topic = exploreFurther[usedExploreFurtherCount];
+                            usedExploreFurtherCount++; // Use one topic
+                            return (
+                              <ExploreFurtherSection
+                                prompts={[topic]}
+                                contextPrefix={`${title} (${year})`}
+                                style={{ marginTop: '16px', marginBottom: '8px' }}
+                              />
+                            );
+                          })()}
+                        </>
+                      )}
+                    {section.type === 'movies' && section.movies && (
+                      <FeaturedFilmsSection 
+                        movies={filterCurrentMovie(section.movies, title)}
+                        style={{ marginBottom: '8px' }}
                       />
-                    ))}
-                  </div>
-                </div>
+                    )}
+                    {section.type === 'explore_further' && (() => {
+                      // Use remaining topics for content explore further section
+                      const remainingTopics = exploreFurther ? exploreFurther.slice(usedExploreFurtherCount) : [];
+                      usedExploreFurtherCount = exploreFurther ? exploreFurther.length : 0; // Mark all as used
+                      return (
+                        <ExploreFurtherSection
+                          prompts={remainingTopics}
+                          contextPrefix={`${title} (${year})`}
+                        />
+                      );
+                    })()}
+                    </div>
+                  );
+                });
+              })()}
+              
+              {/* Bottom Explore Further section - Show remaining unused topics + Cast & Crew */}
+              {(() => {
+                // Calculate how many topics were used
+                let usedCount = 0;
+                const textSections = sections ? sections.filter(s => s.type === 'text') : [];
+                const contentHasExploreFurther = sections ? sections.some(s => s.type === 'explore_further') : false;
+                
+                // Count topics used in interleaved cards (max 3 text sections)
+                usedCount = Math.min(textSections.length, 3);
+                
+                // If content has explore_further section, all remaining topics were used there
+                if (contentHasExploreFurther) {
+                  usedCount = exploreFurther ? exploreFurther.length : 0;
+                }
+                
+                const remainingTopics = exploreFurther ? exploreFurther.slice(usedCount) : [];
+                
+                // Show section if we have remaining topics OR cast & crew
+                return (remainingTopics.length > 0 || tmdbId) && (
+                  <ExploreFurtherSection
+                    prompts={remainingTopics}
+                    contextPrefix={`${title} (${year})`}
+                  >
+                    {tmdbId && (
+                      <ExplorePromptCard
+                        prompt={`Cast and Crew of ${title}`}
+                        onClick={() => router.push(`/movie/${tmdbId}/cast`)}
+                      />
+                    )}
+                  </ExploreFurtherSection>
+                );
+              })()}
+              
+              {/* Render Related Films section exactly like episodes */}
+              {moreIdeas && (
+                <FeaturedFilmsSection 
+                  movies={filterCurrentMovie(moreIdeas.movies, title)}
+                  title="Related Films"
+                />
               )}
             </div>
           )}
@@ -498,64 +533,16 @@ const styles = {
     fontSize: '16px',
     color: '#dc2626',
   },
-  moreIdeasSection: {
-    marginTop: '4px',
-    paddingTop: '16px',
-  },
-  moreIdeasTitle: {
-    fontSize: '18px',
-    fontWeight: '600',
-    color: '#374151',
-    marginBottom: '12px',
-    textAlign: 'left',
-    paddingLeft: '0px',
-  },
-  exploreFurtherSection: {
-    marginTop: '2px',
-    paddingTop: '16px',
-  },
-  aboutTheFilmTitle: {
-    fontSize: '18px',
-    fontWeight: '600',
-    color: '#374151',
-    marginTop: '0px',
-    marginBottom: '12px',
-    textAlign: 'left',
-    paddingLeft: '0px',
-  },
-  exploreFurtherTitle: {
-    fontSize: '18px',
-    fontWeight: '600',
-    color: '#374151',
-    marginBottom: '12px',
-    textAlign: 'left',
-    paddingLeft: '0px',
-  },
-  topicList: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '12px',
-    paddingLeft: '0px',
-    paddingRight: '0px',
-  },
-  topicItem: {
-    fontSize: '15px',
-    color: '#111827',
-    padding: '12px 16px',
-    backgroundColor: '#f3f4f6',
-    border: '1px solid #d1d5db',
-    borderRadius: '8px',
-    boxShadow: '0 2px 6px rgba(0, 0, 0, 0.12)',
-    cursor: 'pointer',
-    transition: 'box-shadow 0.2s ease, transform 0.2s ease',
-    lineHeight: '1.4',
-    fontFamily: 'inherit',
-  },
 };
 
-// Environment-aware static generation: ISR for web, regular static for mobile
+// Enhanced static generation with demo mode optimizations and monitoring
 export async function getStaticProps({ params }) {
   const { id } = params;
+  const { getDemoConfig, getDemoSafetyMonitor } = await import('../../lib/demo-config.js');
+  const demoConfig = getDemoConfig();
+  const safetyMonitor = getDemoSafetyMonitor();
+  
+  const generationStart = Date.now();
   
   try {
     const tmdbId = parseInt(id, 10);
@@ -582,6 +569,11 @@ export async function getStaticProps({ params }) {
 
     if (movieEntry && !error) {
       // Movie found in Supabase - return as props
+      const generationTime = Date.now() - generationStart;
+      
+      // Track generation performance
+      safetyMonitor.recordMetric('static_props_generation_time', generationTime);
+      
       const response = {
         props: {
           title: movieEntry.title,
@@ -590,20 +582,34 @@ export async function getStaticProps({ params }) {
           initialPoster: movieEntry.poster_url,
           initialStreaming: movieEntry.streaming_data,
           tmdbId: movieEntry.tmdb_id,
-          error: null
+          error: null,
+          // Add demo mode metadata
+          ...(demoConfig.ENABLED && {
+            demoMode: true,
+            generationTime,
+            cached: true
+          })
         }
       };
       
-      // Add ISR for web builds (mobile builds deprecated)
-      response.revalidate = 86400; // 24 hour revalidation
+      // Demo mode: More aggressive ISR for faster demo updates
+      if (demoConfig.ENABLED) {
+        response.revalidate = demoConfig.STATIC_GENERATION.revalidationInterval;
+        console.log(`🎯 DEMO: Generated ${movieEntry.title} (${movieEntry.year}) in ${generationTime}ms`);
+      } else {
+        response.revalidate = 86400; // 24 hour revalidation for production
+      }
       
       return response;
     } else {
       // Movie not found in database - try to create it via load-movie-page API
       console.log(`Movie ${tmdbId} not found in database, attempting to create...`);
       
+      const generationTime = Date.now() - generationStart;
+      safetyMonitor.recordMetric('static_props_missing_movie', 1);
+      
       // Return a placeholder that will trigger the load-movie-page API
-      return {
+      const response = {
         props: {
           title: 'TMDB_FETCH_REQUIRED',
           year: new Date().getFullYear(),
@@ -611,13 +617,26 @@ export async function getStaticProps({ params }) {
           initialPoster: '/images/placeholder-poster.jpg',
           initialStreaming: null,
           tmdbId: tmdbId,
-          error: null
-        },
-        revalidate: 60 // Revalidate quickly for new movies
+          error: null,
+          ...(demoConfig.ENABLED && {
+            demoMode: true,
+            generationTime,
+            requiresFetch: true
+          })
+        }
       };
+      
+      // Demo mode: Faster revalidation for missing movies
+      response.revalidate = demoConfig.ENABLED ? 300 : 60; // 5 minutes in demo, 1 minute in production
+      
+      return response;
     }
   } catch (error) {
+    const generationTime = Date.now() - generationStart;
     console.error('Static generation fetch error:', error);
+    
+    // Track generation errors
+    safetyMonitor.recordMetric('static_props_error', 1);
     
     // Return 404 for errors during static generation
     return {
@@ -626,8 +645,14 @@ export async function getStaticProps({ params }) {
   }
 }
 
-// Aggressive pre-generation for all 8k movies - instant loading!
+// Enhanced static generation with demo mode optimizations
 export async function getStaticPaths() {
+  const { getDemoConfig, getDemoSafetyMonitor } = await import('../../lib/demo-config.js');
+  const demoConfig = getDemoConfig();
+  const safetyMonitor = getDemoSafetyMonitor();
+  
+  const buildStartTime = Date.now();
+  
   try {
     // Initialize Supabase client
     const supabase = createClient(
@@ -635,11 +660,25 @@ export async function getStaticPaths() {
       process.env.SUPABASE_SERVICE_ROLE_KEY
     );
 
-    // Get all movie TMDB IDs from database (8k movies)
-    const { data: movies, error } = await supabase
+    let movieQuery = supabase
       .from('movies')
-      .select('tmdb_id')
-      .order('tmdb_id');
+      .select('tmdb_id, title, year, created_at')
+      .not('tmdb_id', 'is', null);
+
+    // Demo mode optimizations
+    if (demoConfig.ENABLED && demoConfig.STATIC_GENERATION.preGenerateAllMovies) {
+      // Pre-generate ALL movies for demo (ultra-aggressive)
+      movieQuery = movieQuery.order('created_at', { ascending: false }); // Newest first for demos
+      console.log('🎯 DEMO MODE: Pre-generating ALL movies for instant demo performance');
+    } else {
+      // Production mode: Generate popular movies + recent additions
+      movieQuery = movieQuery
+        .order('created_at', { ascending: false })
+        .limit(500); // Reasonable limit for production builds
+      console.log('🚀 Production mode: Pre-generating 500 most recent movies');
+    }
+
+    const { data: movies, error } = await movieQuery;
 
     if (error) {
       console.error('Failed to fetch movie IDs for static generation:', error);
@@ -649,12 +688,36 @@ export async function getStaticPaths() {
       };
     }
 
-    // Generate paths for all 8k movies
-    const paths = movies.map(movie => ({
+    // Demo mode: Prioritize popular demo movies
+    let pathMovies = movies;
+    if (demoConfig.ENABLED) {
+      const popularMovies = movies.filter(m => 
+        demoConfig.DEMO_PATHS.popularMovies.includes(m.tmdb_id)
+      );
+      const otherMovies = movies.filter(m => 
+        !demoConfig.DEMO_PATHS.popularMovies.includes(m.tmdb_id)
+      );
+      
+      // Put popular movies first for priority building
+      pathMovies = [...popularMovies, ...otherMovies];
+      console.log(`🎯 Prioritizing ${popularMovies.length} popular demo movies`);
+    }
+
+    // Generate paths with build monitoring
+    const paths = pathMovies.map(movie => ({
       params: { id: movie.tmdb_id.toString() }
     }));
 
-    console.log(`🚀 Pre-generating ${paths.length} movie pages for instant loading`);
+    const buildTime = Date.now() - buildStartTime;
+    const isSlowBuild = buildTime > demoConfig.STATIC_GENERATION.buildTimeout;
+    
+    if (isSlowBuild) {
+      console.warn(`⚠️ Slow static generation: ${buildTime}ms (limit: ${demoConfig.STATIC_GENERATION.buildTimeout}ms)`);
+      safetyMonitor.recordMetric('static_generation_time', buildTime);
+    }
+
+    console.log(`🚀 Pre-generating ${paths.length} movie pages in ${buildTime}ms`);
+    console.log(`📊 Mode: ${demoConfig.ENABLED ? 'DEMO' : 'PRODUCTION'}`);
 
     return {
       paths,
@@ -662,7 +725,11 @@ export async function getStaticPaths() {
     };
 
   } catch (error) {
+    const buildTime = Date.now() - buildStartTime;
     console.error('Static paths generation error:', error);
+    
+    // Track build failure
+    safetyMonitor.recordMetric('static_generation_error', 1);
     
     // Fallback to on-demand generation if pre-generation fails
     return {
