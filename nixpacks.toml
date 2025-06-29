@@ -2,7 +2,13 @@
 nixPkgs = ['nodejs_22', 'npm-9_x']
 
 [phases.install]
-cmd = 'npm ci'
+cmd = '''
+# Set memory limit for npm install
+export NODE_OPTIONS="--max-old-space-size=4096"
+
+# Install with verbose output for debugging
+npm ci --verbose
+'''
 
 [phases.build]
 cmd = '''
@@ -13,7 +19,11 @@ export SUPABASE_SERVICE_ROLE_KEY="${SUPABASE_SERVICE_ROLE_KEY:-placeholder-servi
 export NEXT_PUBLIC_TMDB_API_KEY="${NEXT_PUBLIC_TMDB_API_KEY:-placeholder-tmdb-key}"
 export ANTHROPIC_API_KEY="${ANTHROPIC_API_KEY:-placeholder-anthropic-key}"
 
-npm run build
+# Increase Node.js memory limit for large builds
+export NODE_OPTIONS="--max-old-space-size=4096"
+
+# Build with verbose output for debugging
+npm run build --verbose
 '''
 
 [start]
