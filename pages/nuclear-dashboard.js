@@ -13,17 +13,27 @@ import PhoneFrame from '../components/PhoneFrame';
 
 export default function NuclearDashboard() {
   const [status, setStatus] = useState(null);
+  const [autonomousStatus, setAutonomousStatus] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [lastRefresh, setLastRefresh] = useState(null);
 
   useEffect(() => {
     fetchStatus();
+    fetchAutonomousStatus();
+    
+    // Auto-refresh every 30 seconds (disabled when system is stopped)
+    // const interval = setInterval(() => {
+    //   fetchStatus();
+    //   fetchAutonomousStatus();
+    // }, 30000);
+    
+    // return () => clearInterval(interval);
   }, []);
 
   const fetchStatus = async () => {
     try {
-      setLoading(true);
+      if (!status) setLoading(true);
       const response = await fetch('/api/nuclear-status');
       
       if (!response.ok) {
@@ -39,6 +49,42 @@ export default function NuclearDashboard() {
       setError(error.message);
     } finally {
       setLoading(false);
+    }
+  };
+
+  const fetchAutonomousStatus = async () => {
+    try {
+      const response = await fetch('/api/nuclear-autonomous');
+      
+      if (response.ok) {
+        const data = await response.json();
+        setAutonomousStatus(data);
+      }
+    } catch (error) {
+      console.warn('Failed to fetch autonomous status:', error);
+      // Don't set error - autonomous system is optional
+    }
+  };
+
+  const controlAutonomousSystem = async (action) => {
+    try {
+      const response = await fetch('/api/nuclear-autonomous', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action })
+      });
+      
+      if (response.ok) {
+        const data = await response.json();
+        setAutonomousStatus(data);
+        // Refresh main status too
+        setTimeout(() => fetchStatus(), 1000);
+      } else {
+        const error = await response.json();
+        alert(`Failed to ${action} system: ${error.error}`);
+      }
+    } catch (error) {
+      alert(`Failed to ${action} system: ${error.message}`);
     }
   };
 
@@ -71,7 +117,7 @@ export default function NuclearDashboard() {
     );
   }
 
-  const { nuclear_overview, database_overview, recent_activity, processed_movies, pending_movies, next_actions } = status;
+  const { database_overview, recent_activity, processed_movies, pending_movies, next_actions } = status;
 
   return (
     <PhoneFrame>
@@ -86,43 +132,74 @@ export default function NuclearDashboard() {
           </div>
         </div>
 
-        {/* Progress Overview */}
-        <div style={styles.section}>
-          <h2 style={styles.sectionTitle}>Nuclear Progress</h2>
-          <div style={styles.progressContainer}>
-            <div style={styles.progressBar}>
-              <div 
-                style={{
-                  ...styles.progressFill,
-                  width: `${nuclear_overview.completion_percentage}%`
-                }}
-              />
+        {/* Autonomous System Status */}
+        {autonomousStatus && (
+          <div style={styles.section}>
+            <h2 style={styles.sectionTitle}>🤖 Autonomous Nuclear System</h2>
+            <div style={styles.autonomousHeader}>
+              <div style={styles.systemStatus}>
+                Status: <span style={{
+                  color: autonomousStatus.running ? '#10b981' : '#ef4444',
+                  fontWeight: 'bold'
+                }}>
+                  {autonomousStatus.running ? '🟢 Running' : '🔴 Stopped'}
+                </span>
+                {autonomousStatus.pausedUntil && (
+                  <span style={{ color: '#f59e0b', marginLeft: '8px' }}>
+                    (Paused until {new Date(autonomousStatus.pausedUntil).toLocaleTimeString()})
+                  </span>
+                )}
+              </div>
+              <div style={styles.systemControls}>
+                <button 
+                  onClick={() => controlAutonomousSystem(autonomousStatus.running ? 'stop' : 'start')}
+                  style={{
+                    ...styles.controlButton,
+                    backgroundColor: autonomousStatus.running ? '#ef4444' : '#10b981'
+                  }}
+                >
+                  {autonomousStatus.running ? 'Stop' : 'Start'}
+                </button>
+                <button 
+                  onClick={() => controlAutonomousSystem('restart')}
+                  style={styles.controlButton}
+                >
+                  Restart
+                </button>
+              </div>
             </div>
-            <div style={styles.progressText}>
-              {nuclear_overview.completed}/{nuclear_overview.total_nuclear_candidates} movies processed 
-              ({nuclear_overview.completion_percentage}%)
-            </div>
+            
+            {autonomousStatus.stats && (
+              <div style={styles.autonomousStats}>
+                <div style={styles.statItem}>
+                  <span>Processed:</span> <strong>{autonomousStatus.stats.processed}</strong>
+                </div>
+                <div style={styles.statItem}>
+                  <span>Failed:</span> <strong>{autonomousStatus.stats.failed}</strong>
+                </div>
+                <div style={styles.statItem}>
+                  <span>Success Rate:</span> <strong>{(autonomousStatus.stats.successRate * 100).toFixed(1)}%</strong>
+                </div>
+                <div style={styles.statItem}>
+                  <span>Total Cost:</span> <strong>${autonomousStatus.stats.cost.toFixed(4)}</strong>
+                </div>
+                {autonomousStatus.stats.startTime && (
+                  <div style={styles.statItem}>
+                    <span>Uptime:</span> <strong>{Math.round(autonomousStatus.uptime / 1000 / 60)}m</strong>
+                  </div>
+                )}
+              </div>
+            )}
+            
+            {autonomousStatus.currentBatch && (
+              <div style={styles.currentBatch}>
+                <strong>🔄 Processing Batch:</strong> {autonomousStatus.currentBatch.movieCount} movies 
+                (started {new Date(autonomousStatus.currentBatch.startTime).toLocaleTimeString()})
+              </div>
+            )}
           </div>
-          
-          <div style={styles.statsGrid}>
-            <div style={styles.statCard}>
-              <div style={styles.statValue}>{nuclear_overview.completed}</div>
-              <div style={styles.statLabel}>Completed</div>
-            </div>
-            <div style={styles.statCard}>
-              <div style={styles.statValue}>{nuclear_overview.pending}</div>
-              <div style={styles.statLabel}>Pending</div>
-            </div>
-            <div style={styles.statCard}>
-              <div style={styles.statValue}>${nuclear_overview.total_cost.toFixed(2)}</div>
-              <div style={styles.statLabel}>Total Cost</div>
-            </div>
-            <div style={styles.statCard}>
-              <div style={styles.statValue}>${nuclear_overview.average_cost_per_movie}</div>
-              <div style={styles.statLabel}>Avg Cost</div>
-            </div>
-          </div>
-        </div>
+        )}
+
 
         {/* Recent Activity */}
         <div style={styles.section}>
@@ -449,5 +526,51 @@ const styles = {
     borderRadius: '6px',
     cursor: 'pointer',
     marginTop: '16px'
+  },
+  autonomousHeader: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: '16px',
+    flexWrap: 'wrap',
+    gap: '12px'
+  },
+  systemStatus: {
+    fontSize: '14px',
+    color: '#374151'
+  },
+  systemControls: {
+    display: 'flex',
+    gap: '8px'
+  },
+  controlButton: {
+    backgroundColor: '#6b7280',
+    color: 'white',
+    border: 'none',
+    padding: '6px 12px',
+    borderRadius: '4px',
+    fontSize: '12px',
+    cursor: 'pointer',
+    transition: 'background-color 0.2s ease'
+  },
+  autonomousStats: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))',
+    gap: '12px',
+    marginBottom: '16px'
+  },
+  statItem: {
+    fontSize: '14px',
+    color: '#6b7280',
+    display: 'flex',
+    justifyContent: 'space-between'
+  },
+  currentBatch: {
+    backgroundColor: '#f3f4f6',
+    padding: '12px',
+    borderRadius: '6px',
+    fontSize: '14px',
+    color: '#374151',
+    border: '1px solid #e5e7eb'
   }
 };

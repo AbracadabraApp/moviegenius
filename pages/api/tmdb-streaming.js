@@ -31,11 +31,12 @@ async function tmdbStreamingHandler(req, res) {
   }
 
   // Validate required fields
-  const validation = validateRequiredFields(req.body, ['title', 'year']);
-  if (!validation.isValid) {
+  try {
+    validateRequiredFields(req.body, ['title', 'year']);
+  } catch (error) {
     return res.status(400).json({ 
       error: 'Missing required fields', 
-      details: validation.missingFields 
+      details: error.message 
     });
   }
 
@@ -253,30 +254,10 @@ function parseTMDBProviders(usProviders) {
     providers.push(...adServices);
   }
   
-  // Rental/purchase options
-  const rentalOptions = [];
-  if (usProviders.rent && usProviders.rent.length > 0) {
-    const rentServices = usProviders.rent.map(p => p.provider_name);
-    rentalOptions.push(`rent on ${rentServices.join(', ')}`);
-  }
-  
-  if (usProviders.buy && usProviders.buy.length > 0) {
-    const buyServices = usProviders.buy.map(p => p.provider_name);
-    rentalOptions.push(`buy on ${buyServices.join(', ')}`);
-  }
-  
-  // Combine subscription and rental options
+  // Only use subscription and free-with-ads options
   let text = '';
   if (providers.length > 0) {
     text = providers.join(', ');
-  }
-  
-  if (rentalOptions.length > 0) {
-    if (text) {
-      text += ' • ' + rentalOptions.join(' or ');
-    } else {
-      text = rentalOptions.join(' or ');
-    }
   }
   
   return text || null;
@@ -291,7 +272,7 @@ async function fetchClaudeStreamingFallback(title, year, performanceMonitor) {
     apiKey: process.env.ANTHROPIC_API_KEY,
   });
 
-  const prompt = `Where can someone stream the movie "${title}" (${year}) right now in the US? List current streaming services where it's available. Be specific about platform names like Netflix, Hulu, Amazon Prime Video, Disney+, etc. If it's available for rent/purchase, mention that too. Keep response under 50 words and factual.`;
+  const prompt = `Where can someone stream the movie "${title}" (${year}) right now in the US? Only list subscription streaming services (Netflix, Hulu, Amazon Prime Video, Disney+, etc.) or free services with ads (Tubi, Crackle, etc.). Do NOT include rental or purchase options. Keep response under 50 words and factual.`;
 
   const message = await anthropic.messages.create({
     model: 'claude-3-5-sonnet-20241022',

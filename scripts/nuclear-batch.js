@@ -9,6 +9,17 @@
  *   node scripts/nuclear-batch.js --start 1 --end 500
  */
 
+// Load environment variables
+import { config } from 'dotenv';
+import { resolve, dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+// Load .env.local from project root
+config({ path: resolve(__dirname, '../.env.local') });
+
 import { NuclearBatchGenerator } from '../lib/nuclear-batch-generator.js';
 import { createClient } from '@supabase/supabase-js';
 

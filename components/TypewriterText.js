@@ -79,6 +79,14 @@ function TypewriterText({
     // Replace "Movie Title" with gold-highlighted quoted titles (clickable)
     parsed = parsed.replace(/"([^"]+)"(?=\s*\(\d{4}\)|\s|[.,!?]|$)/g, '<span class="movie-title-quoted">$1</span>');
     
+    // Replace Movie Title (1987) pattern with gold-highlighted titles (clickable)
+    // Matches: Capital Case Title (4-digit year) - common in movie page content
+    parsed = parsed.replace(/\b([A-Z][A-Za-z\s&:'-]+?)(\s\(\d{4}\))/g, '<span class="movie-title-with-year">$1$2</span>');
+    
+    // Conservative pattern for standalone movie titles (common movie naming patterns)
+    // Only matches very specific patterns to avoid false positives
+    parsed = parsed.replace(/\b(The [A-Z][A-Za-z\s]{3,25}|[A-Z][A-Za-z\s]{2,25}(?:\s(?:Club|Matrix|Wars|Story|Movie|Film)))(?=\s|[.,!?]|$)/g, '<span class="movie-title-with-year">$1</span>');
+    
     // Convert newlines to HTML line breaks for scannable formatting
     parsed = parsed.replace(/\n/g, '<br />');
     return parsed;
@@ -210,6 +218,14 @@ export function StreamingTypewriter({
     
     // Replace "Movie Title" with gold-highlighted quoted titles (clickable)
     parsed = parsed.replace(/"([^"]+)"(?=\s*\(\d{4}\)|\s|[.,!?]|$)/g, '<span class="movie-title-quoted">$1</span>');
+    
+    // Replace Movie Title (1987) pattern with gold-highlighted titles (clickable)
+    // Matches: Capital Case Title (4-digit year) - common in movie page content
+    parsed = parsed.replace(/\b([A-Z][A-Za-z\s&:'-]+?)(\s\(\d{4}\))/g, '<span class="movie-title-with-year">$1$2</span>');
+    
+    // Conservative pattern for standalone movie titles (common movie naming patterns)
+    // Only matches very specific patterns to avoid false positives
+    parsed = parsed.replace(/\b(The [A-Z][A-Za-z\s]{3,25}|[A-Z][A-Za-z\s]{2,25}(?:\s(?:Club|Matrix|Wars|Story|Movie|Film)))(?=\s|[.,!?]|$)/g, '<span class="movie-title-with-year">$1</span>');
     
     // Convert newlines to HTML line breaks for scannable formatting
     parsed = parsed.replace(/\n/g, '<br />');

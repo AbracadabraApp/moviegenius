@@ -37,15 +37,28 @@ export default async function handler(req, res) {
 }
 
 async function getNuclearStatus() {
-  // 1. Get top 1,000 nuclear candidates (same logic as getStaticProps)
-  const { data: nuclearCandidates } = await supabase
+  // 1. Get top 1,000 nuclear candidates + test movies (same logic as getStaticProps)
+  const { data: topMovies } = await supabase
     .from('movies')
     .select('id, title, year, tmdb_id, created_at, poster_url')
     .not('tmdb_id', 'is', null)
     .order('created_at', { ascending: false })
     .limit(1000);
 
-  // 2. Get analysis status for nuclear candidates
+  // 2. Add test movies (from development hardcoded list)
+  const testNuclearMovies = [550, 603, 680, 238, 27205, 424, 11, 155, 13, 497];
+  const { data: testMovies } = await supabase
+    .from('movies')
+    .select('id, title, year, tmdb_id, created_at, poster_url')
+    .in('tmdb_id', testNuclearMovies);
+
+  // 3. Combine and deduplicate
+  const allNuclearIds = new Set([...(topMovies || []), ...(testMovies || [])].map(m => m.id));
+  const nuclearCandidates = [...topMovies || [], ...(testMovies || [])].filter((movie, index, arr) => 
+    arr.findIndex(m => m.id === movie.id) === index
+  );
+
+  // 4. Get analysis status for nuclear candidates
   const nuclearIds = nuclearCandidates.map(m => m.id);
   const { data: analyses } = await supabase
     .from('movie_analyses')
@@ -58,13 +71,13 @@ async function getNuclearStatus() {
     .eq('analysis_type', 'page_analysis')
     .in('movie_id', nuclearIds);
 
-  // 3. Create analysis lookup
+  // 5. Create analysis lookup
   const analysisLookup = new Map();
   analyses?.forEach(analysis => {
     analysisLookup.set(analysis.movie_id, analysis);
   });
 
-  // 4. Categorize nuclear movies
+  // 6. Categorize nuclear movies
   const processedMovies = [];
   const pendingMovies = [];
   let totalCost = 0;
@@ -107,7 +120,7 @@ async function getNuclearStatus() {
     }
   });
 
-  // 5. Get overall database stats
+  // 7. Get overall database stats
   const { count: totalMovies } = await supabase
     .from('movies')
     .select('*', { count: 'exact', head: true });
@@ -117,7 +130,7 @@ async function getNuclearStatus() {
     .select('*', { count: 'exact', head: true })
     .eq('analysis_type', 'page_analysis');
 
-  // 6. Recent activity (last 24 hours)
+  // 8. Recent activity (last 24 hours)
   const yesterday = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
   const { data: recentAnalyses } = await supabase
     .from('movie_analyses')
@@ -129,13 +142,13 @@ async function getNuclearStatus() {
   const recentCost = recentAnalyses?.reduce((sum, a) => 
     sum + (a.claude_response?.cost_estimate || 0), 0) || 0;
 
-  // 7. Compile status
+  // 9. Compile status
   return {
     nuclear_overview: {
-      total_nuclear_candidates: 1000,
+      total_nuclear_candidates: nuclearCandidates.length,
       completed: processedMovies.length,
       pending: pendingMovies.length,
-      completion_percentage: ((processedMovies.length / 1000) * 100).toFixed(1),
+      completion_percentage: ((processedMovies.length / nuclearCandidates.length) * 100).toFixed(1),
       total_cost: totalCost,
       total_tokens: totalTokens,
       average_cost_per_movie: processedMovies.length > 0 ? 

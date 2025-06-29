@@ -206,10 +206,9 @@ async function processTMDBRequest(request) {
         if (usProviders?.flatrate?.length > 0) {
           const services = usProviders.flatrate.map(provider => provider.provider_name);
           streamingText = services.slice(0, 3).join(', '); // Limit to 3 services
-        } else if (usProviders?.rent?.length > 0) {
-          streamingText = 'Available for rent';
-        } else if (usProviders?.buy?.length > 0) {
-          streamingText = 'Available for purchase';
+        } else if (usProviders?.ads?.length > 0) {
+          const services = usProviders.ads.map(provider => provider.provider_name);
+          streamingText = services.slice(0, 3).join(', ') + ' (with ads)';
         } else {
           streamingText = 'TBD';
         }
@@ -280,19 +279,46 @@ async function cacheResults(results) {
       .map(async (result) => {
         const movieData = result.data;
         
-        // Upsert movie data
+        // 🔒 CRITICAL FIX: Check if movie already exists to preserve Claude slugs
+        // DO NOT overwrite existing Claude-generated slugs with TMDB overview text
+        const { data: existingMovie } = await supabase
+          .from('movies')
+          .select('slug, created_at')
+          .eq('tmdb_id', movieData.tmdb_id)
+          .single();
+
+        // Prepare upsert data - preserve existing slug if it's a good Claude slug
+        const upsertData = {
+          tmdb_id: movieData.tmdb_id,
+          title: movieData.title,
+          year: movieData.year,
+          poster_url: movieData.poster,
+          streaming_data: null, // Will be filled by streaming request
+          updated_at: new Date().toISOString()
+        };
+
+        // Only set slug for new movies - never store TMDB overview text
+        if (!existingMovie) {
+          // New movie - set created_at but leave slug null for Claude generation
+          upsertData.created_at = new Date().toISOString();
+          upsertData.slug = null; // Wait for Claude to generate proper slug
+        } else if (existingMovie.slug && (
+                   existingMovie.slug.includes('directed by') || 
+                   existingMovie.slug.includes('starring') ||
+                   existingMovie.slug.includes('follows') ||
+                   existingMovie.slug.includes('tells the story') ||
+                   existingMovie.slug.includes('Plot:') ||
+                   existingMovie.slug.includes('Overview:') ||
+                   existingMovie.slug.includes('Synopsis:') ||
+                   existingMovie.slug.length > 200)) {
+          // Clear bad TMDB-style slug - wait for Claude generation
+          upsertData.slug = null;
+        }
+        // If existing movie has a good Claude slug, preserve it (don't set slug field)
+
         const { error } = await supabase
           .from('movies')
-          .upsert({
-            tmdb_id: movieData.tmdb_id,
-            title: movieData.title,
-            year: movieData.year,
-            slug: movieData.overview?.substring(0, 200) || null,
-            poster_url: movieData.poster,
-            streaming_data: null, // Will be filled by streaming request
-            created_at: new Date().toISOString(),
-            updated_at: new Date().toISOString()
-          }, {
+          .upsert(upsertData, {
             onConflict: 'tmdb_id',
             ignoreDuplicates: false
           });

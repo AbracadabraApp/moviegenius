@@ -7,7 +7,15 @@ function FeaturedFilmsSection({
   title = "Featured Films",
   style = {} 
 }) {
+  // Debug logging
+  console.log('FeaturedFilmsSection:', { 
+    title, 
+    moviesCount: movies?.length, 
+    movies: movies?.slice(0, 3).map(m => ({ title: m.title, year: m.year, tmdb_id: m.tmdb_id }))
+  });
+  
   if (!movies || movies.length === 0) {
+    console.log('FeaturedFilmsSection: No movies to display');
     return null;
   }
 
@@ -19,7 +27,9 @@ function FeaturedFilmsSection({
         <div style={styles.sectionDivider} />
       </div>
       <div style={styles.movieGrid}>
-        {movies.map((movie, movieIndex) => (
+        {movies
+          .filter(movie => movie.title && movie.year) // Show movies with basic required fields
+          .map((movie, movieIndex) => (
           <div key={`${movie.title}-${movie.year}-${movieIndex}`} style={styles.movieCardWrapper}>
             <MediaCard
               title={movie.title}
@@ -38,7 +48,7 @@ function FeaturedFilmsSection({
 
 const styles = {
   movieSection: {
-    padding: '20px',
+    padding: '0px',
     backgroundColor: '#ffffff',
     marginBottom: '20px',
   },
@@ -51,7 +61,7 @@ const styles = {
   sectionDivider: {
     flex: 1,
     height: '1px',
-    backgroundColor: '#d4af37',
+    background: 'linear-gradient(90deg, transparent, #FFD700, transparent)',
   },
   sectionLabel: {
     fontSize: '12px',
@@ -67,9 +77,6 @@ const styles = {
   },
   movieCardWrapper: {
     marginBottom: 0,
-    borderRadius: '12px',
-    overflow: 'hidden',
-    boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
   },
 };
 
