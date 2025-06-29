@@ -100,7 +100,30 @@ class OptimizedSlugBatchProcessor {
     return await this.batchOptimizer.makeResilientAPICall(
       'claude_slug_generation',
       async () => {
-        const prompt = `For the movie "${title}" (${year}), provide a punchy marketing tagline under 50 characters. Think movie poster tagline - short, memorable, exciting. Examples: "Terror has a new name", "Love conquers all", "Justice is coming". Just return the tagline, nothing else.`;
+        const prompt = `Create a powerful movie poster tagline for "${title}" (${year}).
+
+RULES:
+- Maximum 50 characters
+- NO plot details or story descriptions  
+- NO actor names or character names
+- Focus on EMOTION, STAKES, or MYSTERY
+- Think movie poster marketing copy
+
+GOOD Examples:
+- "Fear has a new address"
+- "Some secrets should stay buried" 
+- "The hunt begins"
+- "Trust no one"
+- "Love is the ultimate sacrifice"
+- "Revenge never felt so good"
+- "The game changes everything"
+
+BAD Examples to AVOID:
+- "A man discovers his wife's secret" (plot detail)
+- "Comedy starring Will Ferrell" (actor name)
+- "Two friends go on adventure" (description)
+
+Return ONLY the tagline, nothing else.`;
 
         const message = await anthropic.messages.create({
           model: 'claude-3-5-sonnet-20241022',

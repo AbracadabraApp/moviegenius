@@ -28,6 +28,7 @@
     "episode-status": "node scripts/manage-episode-locks.js status",
     "list-locked": "node scripts/manage-episode-locks.js list-locked",
     "check-locks": "node scripts/check-locked-components.js",
+    "cleanup-rental": "node scripts/cleanup-rental-streaming.js",
     "pre-commit": "npm run check-locks && npm run lint && npm run typecheck",
     "demo:baseline": "node scripts/measure-demo-baseline.js",
     "demo:enable": "cross-env DEMO_MODE=true DEMO_PREGENERATE_ALL=true npm run build",
@@ -50,7 +51,11 @@
     "nuclear:batch": "node scripts/nuclear-batch.js",
     "nuclear:test": "node scripts/nuclear-batch.js --count 5 --dry-run",
     "nuclear:process": "node scripts/nuclear-batch.js --count 50",
-    "nuclear:expand": "node scripts/nuclear-batch.js --count 1000"
+    "nuclear:expand": "node scripts/nuclear-batch.js --count 1000",
+    "nuclear:start": "curl -X POST http://localhost:3000/api/nuclear-autonomous -H 'Content-Type: application/json' -d '{\"action\":\"start\"}'",
+    "nuclear:stop": "curl -X POST http://localhost:3000/api/nuclear-autonomous -H 'Content-Type: application/json' -d '{\"action\":\"stop\"}'",
+    "nuclear:restart": "curl -X POST http://localhost:3000/api/nuclear-autonomous -H 'Content-Type: application/json' -d '{\"action\":\"restart\"}'",
+    "nuclear:autonomous": "curl -s http://localhost:3000/api/nuclear-autonomous | jq"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.53.0",

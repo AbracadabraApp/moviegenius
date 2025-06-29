@@ -74,6 +74,24 @@
   cursor: default;
 }
 
+/* Movie titles with year pattern (Movie Title (1987)) */
+.movie-title-with-year {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #d4af37;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  font-weight: 500;
+  font-style: normal;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.movie-title-with-year:hover {
+  text-decoration-color: #b8941f;
+  color: inherit;
+}
+
 /* Utility classes for different contexts */
 .movie-title--dark-text {
   color: #2d3748;

@@ -70,10 +70,28 @@ describe('MovieHeaderLarge - Production Component', () => {
       expect(poster).toHaveAttribute('src', mockMovieData.initialPoster);
     });
 
-    test('renders streaming information placeholder', () => {
+    test('does not render streaming info when no streaming data provided', () => {
       render(<MovieHeaderLarge {...mockMovieData} />);
       
-      expect(screen.getByText('Streaming on TBD')).toBeInTheDocument();
+      // Should not show any streaming text when initialStreaming is undefined
+      expect(screen.queryByText(/Streaming on/)).not.toBeInTheDocument();
+      expect(screen.queryByText('TBD')).not.toBeInTheDocument();
+    });
+
+    test('renders streaming info when valid streaming data provided', () => {
+      const dataWithStreaming = { ...mockMovieData, initialStreaming: 'Netflix, Hulu' };
+      render(<MovieHeaderLarge {...dataWithStreaming} />);
+      
+      expect(screen.getByText('Streaming on Netflix, Hulu')).toBeInTheDocument();
+    });
+
+    test('hides streaming info when TBD placeholder provided', () => {
+      const dataWithTBD = { ...mockMovieData, initialStreaming: 'TBD' };
+      render(<MovieHeaderLarge {...dataWithTBD} />);
+      
+      // Should not show TBD or any streaming text
+      expect(screen.queryByText(/Streaming on/)).not.toBeInTheDocument();
+      expect(screen.queryByText('TBD')).not.toBeInTheDocument();
     });
 
     test('renders action buttons with correct accessibility labels', () => {

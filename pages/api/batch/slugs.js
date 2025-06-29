@@ -62,7 +62,30 @@ class RailwaySlugBatchProcessor {
   }
 
   async generateSlug(title, year) {
-    const prompt = `For the movie "${title}" (${year}), provide a punchy marketing tagline under 50 characters. Think movie poster tagline - short, memorable, exciting. Examples: "Terror has a new name", "Love conquers all", "Justice is coming". Just return the tagline, nothing else.`;
+    const prompt = `Create a powerful movie poster tagline for "${title}" (${year}).
+
+RULES:
+- Maximum 50 characters
+- NO plot details or story descriptions  
+- NO actor names or character names
+- Focus on EMOTION, STAKES, or MYSTERY
+- Think movie poster marketing copy
+
+GOOD Examples:
+- "Fear has a new address"
+- "Some secrets should stay buried" 
+- "The hunt begins"
+- "Trust no one"
+- "Love is the ultimate sacrifice"
+- "Revenge never felt so good"
+- "The game changes everything"
+
+BAD Examples to AVOID:
+- "A man discovers his wife's secret" (plot detail)
+- "Comedy starring Will Ferrell" (actor name)
+- "Two friends go on adventure" (description)
+
+Return ONLY the tagline, nothing else.`;
 
     try {
       const message = await anthropic.messages.create({
@@ -81,6 +104,26 @@ class RailwaySlugBatchProcessor {
       // Remove quotes if Claude added them
       if (slug.startsWith('"') && slug.endsWith('"')) {
         slug = slug.slice(1, -1);
+      }
+      
+      // Validate slug quality
+      if (slug.length > 50) {
+        console.warn(`⚠️  Slug too long (${slug.length} chars): "${slug}"`);
+        return null; // Will trigger retry in calling code
+      }
+      
+      // Check for banned content
+      const lowerSlug = slug.toLowerCase();
+      const bannedPatterns = [
+        'starring', 'stars', 'features', 'follows', 'story of', 'about',
+        'when ', 'after ', 'before ', 'during ', 'chronicles', 'depicts'
+      ];
+      
+      for (const pattern of bannedPatterns) {
+        if (lowerSlug.includes(pattern)) {
+          console.warn(`⚠️  Slug contains banned pattern "${pattern}": "${slug}"`);
+          return null; // Will trigger retry in calling code
+        }
       }
       
       return slug;
@@ -134,7 +177,18 @@ class RailwaySlugBatchProcessor {
         try {
           console.log(`🎬 [${processed + 1}/${missingMovies.length}] ${movie.title} (${movie.year})`);
           
-          const slug = await this.generateSlug(movie.title, movie.year);
+          let slug = null;
+          let attempts = 0;
+          const maxAttempts = 3;
+          
+          // Retry up to 3 times if validation fails
+          while (!slug && attempts < maxAttempts) {
+            attempts++;
+            if (attempts > 1) {
+              console.log(`   🔄 Retry ${attempts}/${maxAttempts}`);
+            }
+            slug = await this.generateSlug(movie.title, movie.year);
+          }
           
           if (slug) {
             const updated = await this.updateMovieSlug(movie.id, slug);

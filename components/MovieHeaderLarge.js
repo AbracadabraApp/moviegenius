@@ -43,6 +43,11 @@ export default function MovieHeaderLarge({
   const [slug, setSlug] = useState(initialSlug || '');
   const [poster, setPoster] = useState(initialPoster || '/images/placeholder-poster.jpg');
   
+  // Progressive loading states
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+  const [isImageError, setIsImageError] = useState(false);
+  const [showContent, setShowContent] = useState(false);
+  
   // Action bar states
   const [addedToList, setAddedToList] = useState(false);
   const [showAddedAnimation, setShowAddedAnimation] = useState(false);
@@ -83,6 +88,21 @@ export default function MovieHeaderLarge({
       setBookmarked(false);
     }
   }, [mediaId]);
+
+  // Progressive loading: Show content after a brief delay to allow images to load
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowContent(true);
+    }, 300); // Give 300ms for hero image loading (longer than MediaCard)
+    
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Reset loading state when poster changes
+  useEffect(() => {
+    setIsImageLoaded(false);
+    setIsImageError(false);
+  }, [poster]);
 
   // Listen for favorites updates from other components
   useEffect(() => {
@@ -205,16 +225,52 @@ export default function MovieHeaderLarge({
       
       {/* Large poster at top, left-aligned */}
       <div style={styles.posterContainer}>
-        <img 
-          src={poster} 
-          alt={`Poster for ${title}`} 
-          style={styles.largePoster}
-          onDoubleClick={() => {
-            setAddedToList(!addedToList);
-            setShowAddedAnimation(true);
-            setTimeout(() => setShowAddedAnimation(false), 1500);
-          }}
-        />
+        {showContent && (
+          <img 
+            src={poster} 
+            alt={`Poster for ${title}`} 
+            style={{
+              ...styles.largePoster,
+              opacity: isImageLoaded ? 1 : 0,
+              transition: 'opacity 0.4s ease-in-out'
+            }}
+            onLoad={() => {
+              setIsImageLoaded(true);
+              setIsImageError(false);
+            }}
+            onError={() => {
+              setIsImageError(true);
+              setIsImageLoaded(false);
+            }}
+            onDoubleClick={() => {
+              setAddedToList(!addedToList);
+              setShowAddedAnimation(true);
+              setTimeout(() => setShowAddedAnimation(false), 1500);
+            }}
+          />
+        )}
+        
+        {/* Loading placeholder that shows until image loads */}
+        {showContent && !isImageLoaded && !isImageError && (
+          <div style={styles.headerPlaceholder}>
+            <div style={styles.headerLoadingText}>Loading poster...</div>
+          </div>
+        )}
+        
+        {/* Error fallback */}
+        {isImageError && (
+          <div style={styles.headerPlaceholder}>
+            <div style={styles.headerErrorText}>📷</div>
+            <div style={styles.headerErrorSubtext}>Poster unavailable</div>
+          </div>
+        )}
+        
+        {/* Initial loading state (first 300ms) */}
+        {!showContent && (
+          <div style={styles.headerPlaceholder}>
+            <div style={styles.headerLoadingText}>•••</div>
+          </div>
+        )}
         {showAddedAnimation && (
           <div style={styles.addedAnimation}>
             + added
@@ -224,16 +280,20 @@ export default function MovieHeaderLarge({
       
       {/* Title and year below poster */}
       <div style={styles.titleContainer}>
-        <div style={styles.title} className="movie-title">{title}</div>
+        <div style={styles.title}>{title}</div>
         <div style={styles.year}>({year})</div>
       </div>
       
-      {/* Streaming info directly under title */}
-      <div style={styles.streamingInfo}>
-        <span style={styles.streamingText}>
-          Streaming on TBD
-        </span>
-      </div>
+      {/* Streaming availability - only show if we have valid data (not TBD placeholder) 
+          TBD = placeholder when TMDB/Claude APIs haven't provided streaming data yet */}
+      {initialStreaming && initialStreaming.length > 0 && initialStreaming !== 'TBD' && (
+        <div style={styles.streamingInfo}>
+          <span style={styles.streamingText}>
+            {`Streaming on ${initialStreaming}`}
+          </span>
+          {/* TODO: Add data freshness indicator - track when streaming data was last updated */}
+        </div>
+      )}
       
       {/* YouTube Trailer Modal */}
       {showTrailer && trailerVideoId && (
@@ -436,5 +496,35 @@ const styles = {
   trailerIframe: {
     border: 'none',
     borderRadius: '12px',
+  },
+  // Progressive loading styles
+  headerPlaceholder: {
+    width: '100%',
+    height: '100%',
+    backgroundColor: '#f8fafc',
+    borderRadius: '12px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    border: '2px dashed #e2e8f0',
+  },
+  headerLoadingText: {
+    fontSize: '14px',
+    color: '#94a3b8',
+    fontWeight: '500',
+  },
+  headerErrorText: {
+    fontSize: '48px',
+    opacity: 0.3,
+    marginBottom: '8px',
+  },
+  headerErrorSubtext: {
+    fontSize: '12px',
+    color: '#94a3b8',
+    fontWeight: '500',
   },
 };

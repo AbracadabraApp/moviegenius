@@ -208,13 +208,13 @@ async function fetchStreamingInfoFromClaude(title, year, performanceMonitor) {
  * Risk mitigation for when Claude API is unavailable
  */
 function getFallbackStreamingInfo(title, year) {
-  // Simple fallback for very popular movies
+  // Simple fallback for very popular movies - only subscription services
   const popularMovies = {
-    'the matrix': 'Available for rent on Amazon Prime Video, Apple TV, Google Play',
-    'inception': 'Available for rent on Amazon Prime Video, Apple TV, Google Play',
-    'the godfather': 'Available on Paramount+ and for rent on Amazon Prime Video',
-    'pulp fiction': 'Available for rent on Amazon Prime Video, Apple TV, Google Play',
-    'the dark knight': 'Available for rent on Amazon Prime Video, Apple TV, Google Play'
+    'the matrix': 'Max',
+    'inception': 'Netflix',
+    'the godfather': 'Paramount+',
+    'pulp fiction': 'Prime Video',
+    'the dark knight': 'Max'
   };
 
   const movieKey = title.toLowerCase();
