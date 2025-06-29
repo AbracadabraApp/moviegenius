@@ -1,17 +1,25 @@
 # MovieGenius Production Dockerfile
-FROM node:18-alpine
+FROM node:22-alpine
 
 # Set working directory
 WORKDIR /app
 
-# Install system dependencies for better compatibility
-RUN apk add --no-cache libc6-compat
+# Install system dependencies for better compatibility and Puppeteer
+RUN apk add --no-cache \
+    libc6-compat \
+    chromium \
+    nss \
+    freetype \
+    freetype-dev \
+    harfbuzz \
+    ca-certificates \
+    ttf-freefont
 
 # Copy package files
 COPY package*.json ./
 
-# Install dependencies
-RUN npm ci
+# Install dependencies with verbose logging for debugging
+RUN npm ci --verbose
 
 # Copy source code
 COPY . .
@@ -29,6 +37,8 @@ EXPOSE 3000
 ENV NODE_ENV=production
 ENV PORT=3000
 ENV NEXT_TELEMETRY_DISABLED=1
+ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
 
 # Create non-root user for security
 RUN addgroup --system --gid 1001 nodejs
