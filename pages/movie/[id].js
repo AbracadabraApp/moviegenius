@@ -10,7 +10,6 @@ import { FavoritesManager } from '../../components/FavoritesManager';
 import { filterCurrentMovie } from '../../lib/filterCurrentMovie';
 import ExplorePromptCard from '../../components/ExplorePromptCard';
 import FeaturedFilmsSection from '../../components/FeaturedFilmsSection';
-import FeaturedFilmsSectionExperiment from '../../components/FeaturedFilmsSection.EXPERIMENT';
 import ExploreFurtherSection from '../../components/ExploreFurtherSection';
 import EntityLinkedText from '../../components/EntityLinkedText';
 import usePredictiveLoading from '../../hooks/usePredictiveLoading';
@@ -357,7 +356,7 @@ function MovieContent({ sections, exploreFurther, moreIdeas, title, year, tmdbId
         });
         
         return (
-          <FeaturedFilmsSectionExperiment 
+          <FeaturedFilmsSection 
             movies={filteredRelatedMovies}
             title="Related Films"
           />
