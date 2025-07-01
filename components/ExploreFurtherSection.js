@@ -36,7 +36,6 @@ function ExploreFurtherSection({
 const styles = {
   exploreFurtherSection: {
     padding: '16px 0 20px', // Remove horizontal padding - let container handle it
-    backgroundColor: '#ffffff',
     marginBottom: '20px',
   },
   exploreFurtherHeader: {

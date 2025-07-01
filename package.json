@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "clean": "rm -rf .next && rm -rf node_modules/.cache",
+    "fix:cache": "rm -rf .next && npm run dev",
+    "fix:cache:deep": "rm -rf .next && rm -rf node_modules/.cache && npm run dev", 
+    "fix:cache:nuclear": "rm -rf .next && rm -rf node_modules && npm install && npm run dev",
     "dev": "next dev",
-    "build": "rm -rf .next && next build",
+    "build": "npm run validate:jsx && rm -rf .next && next build",
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
@@ -12,6 +16,7 @@
     "test:coverage": "jest --coverage",
     "test:ci": "jest --ci --coverage --watchAll=false",
     "typecheck": "tsc --noEmit",
+    "validate:jsx": "node scripts/validate-jsx-syntax.js",
     "cache:status": "node scripts/warm-cache.js status",
     "cache:popular": "node scripts/warm-cache.js popular",
     "cache:series": "node scripts/warm-cache.js series",
@@ -29,7 +34,7 @@
     "list-locked": "node scripts/manage-episode-locks.js list-locked",
     "check-locks": "node scripts/check-locked-components.js",
     "cleanup-rental": "node scripts/cleanup-rental-streaming.js",
-    "pre-commit": "npm run check-locks && npm run lint && npm run typecheck",
+    "pre-commit": "npm run validate:jsx && npm run check-locks && npm run lint && npm run typecheck",
     "demo:baseline": "node scripts/measure-demo-baseline.js",
     "demo:enable": "cross-env DEMO_MODE=true DEMO_PREGENERATE_ALL=true npm run build",
     "demo:disable": "cross-env DEMO_MODE=false npm run build",
@@ -69,6 +74,7 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
+    "@babel/parser": "^7.27.7",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@types/jest": "^30.0.0",

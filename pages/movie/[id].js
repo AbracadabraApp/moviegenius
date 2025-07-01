@@ -176,7 +176,6 @@ export default function MovieDetailPage({
                         router={router}
                       />
                     </div>
-                  </>
                 ) : (
                   <ISRPlaceholder 
                     isNuclear={isNuclear} 
@@ -336,59 +335,9 @@ function MovieContent({ sections, exploreFurther, moreIdeas, title, year, tmdbId
 
 // Extracted ISR placeholder
 function ISRPlaceholder({ isNuclear, source, overview, title, year }) {
-  // Handle TMDB discoveries differently
-  if (source === 'tmdb_discovery') {
-    return (
-      <div style={styles.claudeContent}>
-        {/* Show TMDB overview if available */}
-        {overview && (
-          <div style={styles.tmdbOverview}>
-            <h3 style={styles.overviewTitle}>About {title}</h3>
-            <p style={styles.overviewText}>{overview}</p>
-          </div>
-        )}
-        
-        <div style={styles.discoveryNotice}>
-          <div style={styles.discoveryIcon}>🎬</div>
-          <div style={styles.discoveryTitle}>Newly Discovered Movie</div>
-          <div style={styles.discoveryText}>
-            This movie was just discovered from TMDB and added to our collection. 
-            Comprehensive analysis and recommendations are being generated automatically.
-          </div>
-          <div style={styles.discoveryNote}>
-            ⚡ Popular movies become instant-loading static pages through our nuclear system.
-          </div>
-        </div>
-        
-        <div style={{ textAlign: 'center', marginTop: '20px' }}>
-          <button 
-            onClick={() => window.location.href = '/nuclear-dashboard'}
-            style={styles.dashboardButton}
-          >
-            View Nuclear Dashboard
-          </button>
-        </div>
-      </div>
-    );
-  }
-
-  // Original ISR placeholder for database movies
+  // Simple placeholder for all non-nuclear movies
   return (
     <div style={styles.claudeContent}>
-      <div style={styles.isrMessage}>
-        {isNuclear === false 
-          ? '⚡ This movie will be converted to instant-loading static content by our autonomous system.' 
-          : 'Analysis will be generated automatically.'
-        }
-      </div>
-      <div style={{ textAlign: 'center', marginTop: '20px' }}>
-        <button 
-          onClick={() => window.location.href = '/nuclear-dashboard'}
-          style={styles.dashboardButton}
-        >
-          View Nuclear Dashboard
-        </button>
-      </div>
     </div>
   );
 }
@@ -466,71 +415,6 @@ const styles = {
   errorText: {
     fontSize: '16px',
     color: '#dc2626',
-  },
-  // TMDB Discovery styles
-  tmdbOverview: {
-    backgroundColor: '#f8fafc',
-    border: '1px solid #e2e8f0',
-    borderRadius: '8px',
-    padding: '20px',
-    marginBottom: '20px',
-  },
-  overviewTitle: {
-    fontSize: '18px',
-    fontWeight: '600',
-    color: '#1f2937',
-    marginBottom: '12px',
-    margin: '0 0 12px 0',
-  },
-  overviewText: {
-    fontSize: '15px',
-    lineHeight: '1.6',
-    color: '#374151',
-    margin: '0',
-  },
-  discoveryNotice: {
-    backgroundColor: '#f0f9ff',
-    border: '2px solid #0ea5e9',
-    borderRadius: '8px',
-    padding: '20px',
-    textAlign: 'center',
-  },
-  discoveryIcon: {
-    fontSize: '32px',
-    marginBottom: '12px',
-  },
-  discoveryTitle: {
-    fontSize: '18px',
-    fontWeight: '600',
-    color: '#0c4a6e',
-    marginBottom: '12px',
-  },
-  discoveryText: {
-    fontSize: '15px',
-    lineHeight: '1.6',
-    color: '#374151',
-    marginBottom: '12px',
-  },
-  discoveryNote: {
-    fontSize: '14px',
-    color: '#0c4a6e',
-    fontWeight: '500',
-  },
-  isrMessage: {
-    padding: '40px 20px',
-    textAlign: 'center',
-    color: '#6b7280',
-    fontSize: '16px',
-    fontStyle: 'italic'
-  },
-  dashboardButton: {
-    backgroundColor: '#3b82f6',
-    color: 'white',
-    border: 'none',
-    padding: '8px 16px',
-    borderRadius: '6px',
-    fontSize: '14px',
-    cursor: 'pointer'
   },
 };
 

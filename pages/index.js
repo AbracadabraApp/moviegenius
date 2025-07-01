@@ -272,7 +272,7 @@ export default function HomePage() {
                     <div style={styles.moreContainer}>
                       <span
                         onClick={() => setShowAllPlatforms(true)}
-                        style={styles.moreLink}
+                        style={styles.moreLinkSecondary}
                       >
                         More...
                       </span>
@@ -454,8 +454,8 @@ export default function HomePage() {
             <div style={styles.footerSection}>
               <h4 style={styles.footerTitle}>Experience</h4>
               <div style={styles.platformPicker}>
-                <button style={styles.platformButton}>Beginner</button>
-                <button style={{...styles.platformButton, backgroundColor: '#d4af37', color: '#000000'}}>Intermediate</button>
+                <button style={styles.platformButtonLarge}>Beginner</button>
+                <button style={{...styles.platformButtonLarge, backgroundColor: '#d4af37', color: '#000000'}}>Intermediate</button>
               </div>
             </div>
           </div>
@@ -937,7 +937,7 @@ const styles = {
     marginBottom: '32px',
   },
   
-  platformButton: {
+  platformButtonLarge: {
     padding: '12px 8px',
     border: '1px solid #d1d5db',
     borderRadius: '8px',
@@ -958,7 +958,7 @@ const styles = {
     marginBottom: '16px',
   },
   
-  moreLink: {
+  moreLinkSecondary: {
     fontSize: '14px',
     color: '#6b7280',
     cursor: 'pointer',
