@@ -87,7 +87,7 @@ export default function MediaCard({
   useEffect(() => {
     const enhanceMovieData = async () => {
       // Skip if we have both slug and poster, or if already enhancing
-      if ((slug && slug !== '') && poster !== '/images/placeholder-poster.jpg') {
+      if ((slug && slug !== '' && slug.length > 10) && poster !== '/images/placeholder-poster.jpg') {
         return;
       }
       
@@ -98,8 +98,8 @@ export default function MediaCard({
         let newSlug = slug;
         let newPoster = poster;
         
-        // Fetch enhanced data if slug is missing
-        if (!slug || slug === '') {
+        // Only fetch enhanced data if slug is missing or very short (likely bad data)
+        if (!slug || slug === '' || slug.length <= 10) {
           console.log('Fetching enhanced slug for:', title, year);
           const response = await fetch('/api/enhance-movie-data', {
             method: 'POST',
@@ -109,7 +109,7 @@ export default function MediaCard({
           
           if (response.ok) {
             const data = await response.json();
-            if (data.slug) {
+            if (data.slug && data.slug.length > 10) {
               newSlug = data.slug;
               setSlug(data.slug);
             }
@@ -232,9 +232,11 @@ export default function MediaCard({
         {/* Bottom row: streaming left, icons right */}
         <div style={styles.bottomRow}>
           <div style={styles.streamingInfo}>
-            <span style={styles.streamingText}>
-              Streaming on TBD
-            </span>
+            {initialStreaming && initialStreaming !== 'TBD' && (
+              <span style={styles.streamingText}>
+                Streaming on {initialStreaming}
+              </span>
+            )}
           </div>
           <div style={styles.iconRow}>
           <button
