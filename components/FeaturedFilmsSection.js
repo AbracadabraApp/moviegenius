@@ -37,7 +37,7 @@ function FeaturedFilmsSection({
               initialSlug={movie.slug}
               initialPoster={movie.poster || movie.poster_url}
               initialStreaming={movie.initialStreaming || movie.streaming}
-              tmdbId={movie.tmdb_id}
+              tmdbId={movie.tmdb_id || movie.tmdbId}
             />
           </div>
         ))}
