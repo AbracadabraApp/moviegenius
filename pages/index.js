@@ -168,7 +168,12 @@ export default function HomePage() {
           <div style={styles.manifestoOverlay}>
             <div style={styles.manifestoModal}>
               <div style={styles.manifestoContent}>
-                <h2 style={styles.manifestoTitle}>Why now?</h2>
+                <h1 style={styles.manifestoMainTitle}>MovieGenius</h1>
+                <div style={styles.manifestoSubheadSection}>
+                  <div style={styles.manifestoSubheadDivider} />
+                  <h2 style={styles.manifestoSubheadTitle}>WHY NOW?</h2>
+                  <div style={styles.manifestoSubheadDivider} />
+                </div>
                 <p style={styles.manifestoText}>
                   Streaming platforms put great films at our fingertips, then hid them under time-wasting junk. MovieGenius is your intelligence filter—the red pill to break free from their algorithmic matrix. No more mindless scrolling through endless mediocrity. Discover quality cinema and make deliberate choices again.
                 </p>
@@ -719,7 +724,7 @@ const styles = {
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.85)',
+    backgroundColor: 'rgba(0, 0, 0, 0.9),',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -741,12 +746,34 @@ const styles = {
     textAlign: 'center',
   },
   
-  manifestoTitle: {
-    fontSize: '24px',
+  manifestoMainTitle: {
+    fontSize: '28px',
     fontWeight: '700',
     color: '#111827',
-    marginBottom: '20px',
-    margin: '0 0 20px 0',
+    marginBottom: '16px',
+    textAlign: 'center',
+  },
+  
+  manifestoSubheadSection: {
+    display: 'flex',
+    alignItems: 'center',
+    marginBottom: '24px',
+    gap: '12px',
+  },
+  
+  manifestoSubheadDivider: {
+    flex: 1,
+    height: '1px',
+    backgroundColor: '#d4af37',
+  },
+  
+  manifestoSubheadTitle: {
+    fontSize: '16px',
+    fontWeight: '600',
+    color: '#d4af37',
+    textTransform: 'uppercase',
+    letterSpacing: '1px',
+    margin: '0',
   },
   
   manifestoText: {
