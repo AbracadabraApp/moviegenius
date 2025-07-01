@@ -2,18 +2,17 @@
 import PhoneFrame from '../components/PhoneFrame';
 import AskInputBar from '../components/AskInputBar';
 import TypewriterText from '../components/TypewriterText';
-import StarAnimation from '../components/StarAnimation';
+import EntityLinkedText from '../components/EntityLinkedText';
+import FilmLoadingMessage from '../components/FilmLoadingMessage';
+import BlinkingCursor from '../components/BlinkingCursor';
 import { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import { underlineProperNames } from '../lib/proper-names';
-import loadingMessages from '../data/loading-messages.json';
 
 export default function AskPage() {
   const [conversation, setConversation] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [displayQuestions, setDisplayQuestions] = useState([]);
-  const [loadingMessage, setLoadingMessage] = useState('');
-  const [loadingIcon, setLoadingIcon] = useState('');
   const [hasAskedQuestion, setHasAskedQuestion] = useState(false); // Track if user has asked anything
   const [showInputAfterFirstResponse, setShowInputAfterFirstResponse] = useState(false); // Track when to show input after first response
   const router = useRouter();
@@ -125,42 +124,38 @@ export default function AskPage() {
     // Mark that user has asked a question (affects UI layout)
     setHasAskedQuestion(true);
     
-    // Start cycling loading messages and icons
-    const iconFiles = [
-      'film-movie-reel-icon.png',
-      'film-movie-icon.png',
-      'chair-director-outline-icon.png'
-    ];
-    
-    const setRandomLoadingContent = () => {
-      const randomMessage = loadingMessages[Math.floor(Math.random() * loadingMessages.length)];
-      const randomIcon = iconFiles[Math.floor(Math.random() * iconFiles.length)];
-      setLoadingMessage(randomMessage);
-      setLoadingIcon(randomIcon);
-    };
-    
-    setRandomLoadingContent();
-    const cycleInterval = setInterval(setRandomLoadingContent, 5000);
-    
     const tempMessage = {
       id: Date.now(),
       question: query,
       content: '',
       followUpQuestions: [],
       isLoading: true,
-      cycleInterval: cycleInterval,
     };
     
     // Add to conversation (don't replace - build conversation history)
     setConversation(prev => [...prev, tempMessage]);
     setIsLoading(true);
 
+    // Scroll to new question after state update
+    setTimeout(() => {
+      const newMessageElement = document.querySelector(`[data-message-id="${tempMessage.id}"]`);
+      if (newMessageElement) {
+        newMessageElement.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'start',
+          inline: 'nearest'
+        });
+      }
+    }, 100);
+
     try {
-      // Build conversation context from previous messages
+      // Build conversation context from previous completed messages  
       let conversationContext = null;
       if (conversation.length > 0) {
-        const lastMessage = conversation[conversation.length - 1];
-        if (lastMessage && !lastMessage.isLoading) {
+        // Find the last completed message (not loading)
+        const completedMessages = conversation.filter(msg => msg && !msg.isLoading && msg.content);
+        if (completedMessages.length > 0) {
+          const lastMessage = completedMessages[completedMessages.length - 1];
           conversationContext = {
             lastQuestion: lastMessage.question,
             lastResponse: lastMessage.content,
@@ -195,11 +190,6 @@ export default function AskPage() {
       // Get main content from first section
       const mainContent = sections.length > 0 ? sections[0].content : '';
 
-      // Clear interval and update message
-      if (tempMessage.cycleInterval) {
-        clearInterval(tempMessage.cycleInterval);
-      }
-      
       const updatedMessage = {
         ...tempMessage,
         content: mainContent,
@@ -214,9 +204,6 @@ export default function AskPage() {
       );
 
     } catch (error) {
-      if (tempMessage.cycleInterval) {
-        clearInterval(tempMessage.cycleInterval);
-      }
       
       // Update with error message
       const errorMessage = {
@@ -299,37 +286,28 @@ export default function AskPage() {
           <div style={styles.conversationArea}>
             {/* Conversation Messages */}
             {conversation.map((message) => (
-              <div key={message.id} style={styles.messageGroup}>
-                {/* Question */}
-                <div style={styles.questionHeader}>
-                  {message.question.includes(':') ? 
+              <div key={message.id} data-message-id={message.id} style={styles.messageGroup}>
+                {/* Question - left-aligned with prefix */}
+                <div style={styles.questionText}>
+                  {'> '}{message.question.includes(':') ? 
                     message.question.split(':').slice(1).join(':').trim() : 
                     message.question
                   }
                 </div>
 
-                {/* Response */}
+                {/* Response - Claude style full width */}
                 {message.isLoading ? (
                   <div style={styles.loadingContainer}>
-                    <div style={styles.loadingRow}>
-                      <StarAnimation size={32} style={styles.loadingIcon} />
-                      <span style={styles.loadingText}>{loadingMessage}</span>
-                    </div>
+                    <FilmLoadingMessage cycling={true} interval={3000} size="medium" />
                   </div>
                 ) : (
                   <>
-                    {/* Main response with typewriter effect */}
-                    <div style={styles.responseContainer}>
-                      <TypewriterText
-                        text={message.content}
-                        speed={30} // Fast for responsiveness
-                        style={styles.responseText}
-                        onComplete={() => {
-                          // Show input after first response completes
-                          if (conversation.length === 1) {
-                            setShowInputAfterFirstResponse(true);
-                          }
-                        }}
+                    {/* Main response - clean, full width */}
+                    <div style={styles.responseText}>
+                      <EntityLinkedText 
+                        text={message.content} 
+                        linkMovies={true}
+                        linkingStyle="on"
                       />
                     </div>
 
@@ -449,6 +427,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     height: '100%',
+    position: 'relative', // Ensure relative positioning for fixed input area
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     backgroundColor: '#e5e7eb', // More visible light grey background
     color: '#2d3748',
@@ -636,39 +615,30 @@ const styles = {
   messageGroup: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '16px',
+    gap: '12px',
     marginBottom: '32px',
   },
-  questionHeader: {
+  questionText: {
     fontSize: '16px',
     fontWeight: '500',
-    color: '#2d3748',
-    marginBottom: '12px',
-    textAlign: 'right',
-    backgroundColor: '#ffffff',
-    border: '1px solid #e2e8f0',
-    padding: '12px 16px',
-    borderRadius: '12px',
-    alignSelf: 'flex-end',
-    maxWidth: '80%',
-    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
+    color: '#374151',
+    marginBottom: '8px',
+    textAlign: 'left',
+    padding: '0',
+    maxWidth: '100%',
   },
   
-  // Response styling
-  responseContainer: {
-    marginBottom: '16px',
-    alignSelf: 'flex-start',
-    maxWidth: '90%',
-  },
+  // Response styling - Claude style
   responseText: {
-    fontSize: '15px',
+    fontSize: '16px',
     color: '#2d3748',
-    lineHeight: '1.6',
-    backgroundColor: '#ffffff',
-    border: '1px solid #e2e8f0',
-    padding: '16px',
-    borderRadius: '12px',
-    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
+    lineHeight: '1.7',
+    padding: '0',
+    margin: '0',
+    wordWrap: 'break-word',
+    overflowWrap: 'break-word',
+    whiteSpace: 'pre-wrap',
+    width: '100%',
   },
   
   // Follow-up questions
@@ -711,19 +681,8 @@ const styles = {
     width: '100%',
   },
   loadingContainer: {
-    padding: '16px',
-    alignSelf: 'flex-start',
-    maxWidth: '90%',
-  },
-  loadingRow: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '12px',
-    backgroundColor: '#ffffff',
-    border: '1px solid #e2e8f0',
-    padding: '16px',
-    borderRadius: '12px',
-    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
+    padding: '16px 0',
+    width: '100%',
   },
   loadingText: {
     fontSize: '15px',
