@@ -109,7 +109,11 @@ export default function MediaCard({
           
           if (response.ok) {
             const data = await response.json();
-            if (data.slug && data.slug.length > 10) {
+            if (data.slug && data.slug.length > 10 && 
+                !data.slug.includes('Plot:') && 
+                !data.slug.includes('Overview:') && 
+                !data.slug.includes('Synopsis:') &&
+                !data.slug.includes('Summary:')) {
               newSlug = data.slug;
               setSlug(data.slug);
             }
@@ -227,7 +231,13 @@ export default function MediaCard({
           <div style={styles.title}>{title}</div>
           <div style={styles.year}>({year})</div>
         </div>
-        <div style={styles.slug}>{slug}</div>
+        <div style={styles.slug}>
+          {slug && slug.length > 5 && 
+           !slug.includes('Plot:') && 
+           !slug.includes('Overview:') && 
+           !slug.includes('Synopsis:') &&
+           !slug.includes('Summary:') ? slug : ''}
+        </div>
         
         {/* Bottom row: streaming left, icons right */}
         <div style={styles.bottomRow}>
