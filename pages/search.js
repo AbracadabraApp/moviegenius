@@ -37,23 +37,37 @@ export default function SearchPage() {
 
   // Load search results on page load or query change
   useEffect(() => {
-    if (q || category) {
-      const searchQuery = q || categoryQueries[category] || category;
-      setCurrentQuery(searchQuery);
-      performSearch(searchQuery);
+    if (q) {
+      // Text search query
+      setCurrentQuery(q);
+      performSearch(q, false);
+    } else if (category) {
+      // Category search - use TMDB genre search
+      const displayQuery = categoryQueries[category] || category;
+      setCurrentQuery(displayQuery);
+      performSearch(category, true); // Pass category slug to TMDB API
     }
   }, [q, category]);
 
-  const performSearch = async (query) => {
+  const performSearch = async (query, isCategory = false) => {
     if (!query) return;
     
     setLoading(true);
     try {
-      const response = await fetch('/api/simple-search', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query })
-      });
+      let response;
+      
+      if (isCategory) {
+        // Use TMDB genre search for category queries
+        response = await fetch(`/api/tmdb-genre-search?category=${encodeURIComponent(query)}`);
+      } else {
+        // Use text search for regular queries
+        response = await fetch('/api/simple-search', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ query })
+        });
+      }
+      
       if (response.ok) {
         const data = await response.json();
         setSearchResults(data.movies || []);
