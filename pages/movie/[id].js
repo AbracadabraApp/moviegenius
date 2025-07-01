@@ -419,9 +419,6 @@ export async function getStaticProps({ params }) {
       process.env.SUPABASE_SERVICE_ROLE_KEY
     );
 
-    // Check if movie has analysis 
-    let hasAnalysisData = false;
-
     // Get movie from database
     const { data: movieEntry, error } = await supabase
       .from('movies')
@@ -502,22 +499,27 @@ export async function getStaticProps({ params }) {
         initialStreaming: movieEntry.streaming_data,
         tmdbId: movieEntry.tmdb_id,
         error: null,
-        hasAnalysis: hasAnalysisData,
+        hasAnalysis: false, // Will be set to true if analysis exists
       }
     };
 
-    // Check for analysis in database
+    // Simple content check: Does analysis exist for this movie?
     try {
       const analysisData = await AnalysisService.getOrGenerate(movieEntry);
       if (analysisData && analysisData.sections && analysisData.sections.length > 0) {
+        // Analysis exists - show full content
         response.props.sections = analysisData.sections;
         response.props.exploreFurther = analysisData.exploreFurther;
         response.props.moreIdeas = analysisData.moreIdeas;
         response.props.hasAnalysis = true;
+      } else {
+        // No analysis - show clean empty page
+        response.revalidate = 3600; // Revalidate hourly for potential new content
       }
     } catch (error) {
-      console.log('No analysis found for movie:', movieEntry.tmdb_id);
-      response.revalidate = 3600; // 1 hour revalidation for movies without analysis
+      console.log('Analysis generation failed for movie:', movieEntry.tmdb_id, error.message);
+      // Show clean empty page on error
+      response.revalidate = 3600;
     }
 
     return response;
