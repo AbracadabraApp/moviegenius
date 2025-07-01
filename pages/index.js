@@ -21,6 +21,7 @@ export default function HomePage() {
   });
   const [showAllThemes, setShowAllThemes] = useState(false);
   const [currentRotation, setCurrentRotation] = useState(0);
+  const [showManifesto, setShowManifesto] = useState(true);
 
   // Simple test rotation - just pick a random hero image on each reload
   useEffect(() => {
@@ -161,6 +162,26 @@ export default function HomePage() {
   return (
     <PhoneFrame active="genius">
       <div style={styles.container}>
+        
+        {/* Manifesto Modal Overlay */}
+        {showManifesto && (
+          <div style={styles.manifestoOverlay}>
+            <div style={styles.manifestoModal}>
+              <div style={styles.manifestoContent}>
+                <h2 style={styles.manifestoTitle}>Why now?</h2>
+                <p style={styles.manifestoText}>
+                  Streaming platforms put great films at our fingertips, then hid them under time-wasting junk. MovieGenius is your intelligence filter—the red pill to break free from their algorithmic matrix. No more mindless scrolling through endless mediocrity. Discover quality cinema and make deliberate choices again.
+                </p>
+                <button 
+                  onClick={() => setShowManifesto(false)}
+                  style={styles.manifestoContinueButton}
+                >
+                  Continue
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
         
         {/* Theme Selection Section */}
         {currentStep === 'themes' && (
@@ -689,5 +710,67 @@ const styles = {
     fontWeight: '500',
     cursor: 'pointer',
     fontFamily: 'inherit',
+  },
+  
+  // Manifesto Modal Styles
+  manifestoOverlay: {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(0, 0, 0, 0.75)',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: 1000,
+    padding: '20px',
+  },
+  
+  manifestoModal: {
+    backgroundColor: '#ffffff',
+    borderRadius: '16px',
+    padding: '32px 24px',
+    maxWidth: '400px',
+    width: '100%',
+    boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3)',
+    border: '1px solid #e5e7eb',
+  },
+  
+  manifestoContent: {
+    textAlign: 'center',
+  },
+  
+  manifestoTitle: {
+    fontSize: '24px',
+    fontWeight: '700',
+    color: '#111827',
+    marginBottom: '20px',
+    margin: '0 0 20px 0',
+  },
+  
+  manifestoText: {
+    fontSize: '16px',
+    lineHeight: '1.6',
+    color: '#374151',
+    marginBottom: '32px',
+    textAlign: 'left',
+  },
+  
+  manifestoContinueButton: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '100%',
+    backgroundColor: '#d4af37',
+    color: '#000000',
+    border: 'none',
+    borderRadius: '8px',
+    padding: '16px 24px',
+    fontSize: '16px',
+    fontWeight: '600',
+    cursor: 'pointer',
+    fontFamily: 'inherit',
+    transition: 'all 0.2s ease',
   },
 };
