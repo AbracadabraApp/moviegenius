@@ -9,8 +9,7 @@ import { Heart, Bookmark, Star, Film } from 'lucide-react';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 
-// Import admin data
-import afi100Data from '../data/afi100.json';
+// No static data imports - all movie data comes from database/search APIs
 
 export default function YouPage() {
   const router = useRouter();
