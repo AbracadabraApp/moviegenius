@@ -391,7 +391,7 @@ const styles = {
   goldSubtitle: {
     fontSize: '18px',
     color: '#d4af37',
-    margin: '5px 0 8px 0',
+    margin: '5px 0 20px 0',
     lineHeight: '1.3',
     textTransform: 'uppercase',
     letterSpacing: '1px',
