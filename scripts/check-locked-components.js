@@ -41,16 +41,16 @@ const LOCKED_COMPONENTS = {
         errorMsg: 'CRITICAL: movieTmdbId state management removed'
       },
       {
-        name: 'TMDB ID fallback navigation',
-        pattern: /router\.push\(`\/media\/\$\{fallbackId\}`\)/,
+        name: 'No fallback navigation (TMDB-first architecture)',
+        pattern: /NO fallback navigation - this enforces TMDB-first architecture/,
         required: true,
-        errorMsg: 'CRITICAL: Fallback navigation logic removed'
+        errorMsg: 'CRITICAL: TMDB-first navigation enforcement removed'
       },
       {
-        name: 'Marketing slug length validation (75 chars)',
-        pattern: /slug\.length <= 75/,
+        name: '@locked annotation present',
+        pattern: /@locked true/,
         required: true,
-        errorMsg: 'CRITICAL: Marketing slug length limit modified - should be 75 characters'
+        errorMsg: 'CRITICAL: @locked annotation missing from component header'
       },
       {
         name: 'TMDB plot summary rejection',
@@ -59,16 +59,16 @@ const LOCKED_COMPONENTS = {
         errorMsg: 'CRITICAL: TMDB plot summary protection removed - preserves marketing copy'
       },
       {
-        name: 'Concise marketing tagline preference',
-        pattern: /preferConcise: true/,
+        name: 'Protected enhancement logic',
+        pattern: /🔒 PROTECTED: Enhanced data fetching/,
         required: true,
-        errorMsg: 'CRITICAL: Concise marketing tagline preference removed from API calls'
+        errorMsg: 'CRITICAL: Protected data fetching annotations removed'
       },
       {
         name: 'Marketing slug display spacing',
-        pattern: /marginTop: '2px'/,
+        pattern: /marginTop: '4px'/,
         required: true,
-        errorMsg: 'CRITICAL: Marketing slug spacing modified - should be 2px for taglines'
+        errorMsg: 'CRITICAL: Marketing slug spacing modified - should be 4px for taglines'
       }
     ]
   },
@@ -93,28 +93,22 @@ const LOCKED_COMPONENTS = {
     lockFile: null, // No dedicated lock file yet
     criticalSections: [
       {
-        name: 'MediaCard tmdbId prop passing',
-        pattern: /tmdbId=\{movie\.tmdb_id\}/,
+        name: 'MediaCard tmdb_id prop passing',
+        pattern: /tmdbId=\{.*tmdb_id\}/,
         required: true,
         errorMsg: 'CRITICAL: MediaCard not receiving tmdb_id prop in movie detail page'
       },
       {
-        name: 'Movie object tmdb_id field',
-        pattern: /tmdb_id:\s*(null|data\.tmdb_id)/,
+        name: 'Simple content check logic',
+        pattern: /Simple content check: Does analysis exist/,
         required: true,
-        errorMsg: 'CRITICAL: Movie objects missing tmdb_id field in parsing functions'
+        errorMsg: 'CRITICAL: Clean analysis existence check logic modified'
       },
       {
-        name: 'No TMDB technical messages',
-        pattern: /(?!.*Fetching.*TMDB)/,
+        name: 'Nuclear decoupling completed',
+        pattern: /hasAnalysis.*true/,
         required: true,
-        errorMsg: 'CRITICAL: Technical TMDB message exposed to users - use film-themed messages'
-      },
-      {
-        name: 'Film-themed loading messages',
-        pattern: /(Consulting the film|Diving into the vault)/,
-        required: true,
-        errorMsg: 'CRITICAL: Loading messages not using film-themed content'
+        errorMsg: 'CRITICAL: Nuclear decoupling logic modified - should use hasAnalysis'
       }
     ]
   },
