@@ -15,7 +15,7 @@ import PhoneFrame from '../../components/PhoneFrame';
 import AskInputBar from '../../components/AskInputBar';
 import MediaCard from '../../components/MediaCard';
 import BackButton from '../../components/BackButton';
-import TypewriterText from '../../components/TypewriterText';
+import EntityLinkedText from '../../components/EntityLinkedText';
 import { filterCurrentMovie } from '../../lib/filterCurrentMovie';
 
 export default function ExplorePage({ pageData, error, topic, context }) {
@@ -100,10 +100,10 @@ export default function ExplorePage({ pageData, error, topic, context }) {
             <div key={index} style={styles.sectionContainer}>
               {section.type === 'text' && (
                 <div style={styles.textSection}>
-                  <TypewriterText
+                  <EntityLinkedText
                     text={section.content}
-                    speed={40} // Slightly slower for reading
-                    autoStart={index === 0} // Only start first section automatically
+                    linkMovies={true}
+                    linkingStyle="on"
                     style={styles.paragraphText}
                   />
                 </div>

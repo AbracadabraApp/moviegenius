@@ -3,6 +3,9 @@
 /* Import entity linking styles */
 @import './entity-linking.css';
 
+/* Import movie title styles */
+@import './movieTitle.css';
+
 /* Hide all scrollbars globally */
 * {
   scrollbar-width: none; /* Firefox */
