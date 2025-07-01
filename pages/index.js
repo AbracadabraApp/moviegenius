@@ -175,7 +175,7 @@ export default function HomePage() {
                   <div style={styles.manifestoSubheadDivider} />
                 </div>
                 <p style={styles.manifestoText}>
-                  Streaming platforms put great films at our fingertips, then hid them under time-wasting junk. MovieGenius is your intelligence filter—the red pill to break free from their algorithmic matrix. No more mindless scrolling through endless mediocrity. Discover quality cinema and make deliberate choices again.
+                  Streaming platforms put great films at our fingertips, then hid them under time-wasting junk. MovieGenius is your intelligence filter—the red pill to break free from their algorithmic matrix. No more mindless scrolling through endless mediocre "shows". Discover quality cinema and make deliberate choices again.
                 </p>
                 <button 
                   onClick={() => setShowManifesto(false)}
