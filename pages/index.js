@@ -838,7 +838,7 @@ const styles = {
   manifestoModal: {
     backgroundColor: '#ffffff',
     borderRadius: '16px',
-    padding: '8px 24px 32px 24px',
+    padding: '12px 24px 32px 24px',
     maxWidth: '400px',
     width: '100%',
     boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3)',
