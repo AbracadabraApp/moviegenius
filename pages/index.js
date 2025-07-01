@@ -166,7 +166,7 @@ export default function HomePage() {
         {currentStep === 'themes' && (
           <div style={styles.section}>
             <div style={styles.heroSection}>
-              <p style={styles.goldSubtitle}><span style={{fontSize: '30px', color: '#ffffff', letterSpacing: '1px'}}>DON'T BINGE TV</span><br /><span style={{fontSize: '20px'}}>STREAM GREAT CINEMA INSTEAD</span></p>
+              <p style={styles.goldSubtitle}><span style={{fontSize: '30px', color: '#ffffff', letterSpacing: '1px'}}>DON'T BINGE TV</span><br /><span style={{fontSize: '20px'}}>FEAST ON GREAT FILMS INSTEAD</span></p>
               <img src={`/images/hero-rotation/hero-${currentRotation}.jpg`} alt="Film Education Hero" style={styles.heroImage} />
             </div>
 
