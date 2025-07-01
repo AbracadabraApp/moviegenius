@@ -438,7 +438,7 @@ const styles = {
   header: {
     backgroundColor: '#ffffff',
     borderBottom: '1px solid #e5e7eb',
-    padding: '16px',
+    padding: '16px 32px',
     gap: '16px',
   },
   content: {
@@ -480,7 +480,7 @@ const styles = {
   claudeSection: {
     flex: 1,
     padding: '0 16px 24px',
-    marginTop: '0px',
+    marginTop: '3px',
   },
   claudeContent: {
     fontSize: '15px',

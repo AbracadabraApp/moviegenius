@@ -422,7 +422,7 @@ const styles = {
     width: '100%',
     textAlign: 'left',
     marginBottom: '0px',
-    marginTop: '0px',
+    marginTop: '-2px',
     paddingLeft: '20px',
   },
   streamingText: {
