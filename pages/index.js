@@ -23,6 +23,7 @@ export default function HomePage() {
   const [showAllThemes, setShowAllThemes] = useState(false);
   const [currentRotation, setCurrentRotation] = useState(0);
   const [modalStep, setModalStep] = useState('manifesto'); // 'manifesto', 'platforms', null
+  const [showAllPlatforms, setShowAllPlatforms] = useState(false);
 
   // Simple test rotation - just pick a random hero image on each reload
   useEffect(() => {
@@ -248,7 +249,7 @@ export default function HomePage() {
                       </button>
                     ))}
                     
-                    {additionalPlatforms.map(service => (
+                    {showAllPlatforms && additionalPlatforms.map(service => (
                       <button
                         key={service}
                         onClick={() => toggleStreamingService(service)}
@@ -264,6 +265,15 @@ export default function HomePage() {
                         {service}
                       </button>
                     ))}
+                    
+                    {!showAllPlatforms && (
+                      <button
+                        onClick={() => setShowAllPlatforms(true)}
+                        style={styles.moreButton}
+                      >
+                        More...
+                      </button>
+                    )}
                   </div>
                   
                   <button 
@@ -937,5 +947,24 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  
+  moreButton: {
+    padding: '12px 8px',
+    border: '1px solid #6b7280',
+    borderRadius: '8px',
+    fontSize: '13px',
+    fontWeight: '500',
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+    textAlign: 'center',
+    fontFamily: 'inherit',
+    minHeight: '48px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'transparent',
+    color: '#6b7280',
+    gridColumn: 'span 2',
   },
 };
