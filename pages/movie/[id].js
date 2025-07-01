@@ -14,7 +14,6 @@ import ExploreFurtherSection from '../../components/ExploreFurtherSection';
 import EntityLinkedText from '../../components/EntityLinkedText';
 import CategoryBrowse from '../../components/CategoryBrowse';
 import usePredictiveLoading from '../../hooks/usePredictiveLoading';
-import { NUCLEAR_CONFIG } from '../../lib/nuclear-config';
 
 // Simplified component - business logic moved to services
 export default function MovieDetailPage({ 
@@ -25,7 +24,7 @@ export default function MovieDetailPage({
   initialStreaming, 
   tmdbId, 
   error,
-  isNuclear,
+  hasAnalysis,
   sections: staticSections,
   exploreFurther: staticExploreFurther,
   moreIdeas: staticMoreIdeas,
@@ -65,11 +64,6 @@ export default function MovieDetailPage({
     }
   };
 
-  // Handle clear search
-  const handleClearSearch = () => {
-    setSearchResults([]);
-    setShowSearchResults(false);
-  };
 
   // Navigation scroll reset
   useEffect(() => {
@@ -132,13 +126,10 @@ export default function MovieDetailPage({
             <div style={styles.resultsContainer}>
               <div style={styles.resultsHeader}>
                 <span>{searchResults.length} movie{searchResults.length !== 1 ? 's' : ''} found</span>
-                <button onClick={handleClearSearch} style={styles.clearButton}>
-                  Clear
-                </button>
               </div>
               <div style={styles.movieList}>
                 {searchResults.map((movie, index) => (
-                  <div key={`${movie.tmdb_id || movie.title}-${index}`} onClick={() => handleMovieClick(movie)}>
+                  <div key={`${movie.tmdb_id || movie.title}-${index}`} onClick={() => handleMovieClick(movie)} style={styles.movieItem}>
                     <MediaCard
                       title={movie.title}
                       year={movie.year}
@@ -164,7 +155,7 @@ export default function MovieDetailPage({
               />
 
               <div style={styles.claudeSection}>
-                {isNuclear && sections.length > 0 ? (
+                {hasAnalysis && sections.length > 0 ? (
                   <div style={styles.claudeContent}>              
                     <MovieContent 
                         sections={sections}
@@ -177,8 +168,7 @@ export default function MovieDetailPage({
                       />
                     </div>
                 ) : (
-                  <ISRPlaceholder 
-                    isNuclear={isNuclear} 
+                  <ContentPlaceholder 
                     source={source}
                     overview={overview}
                     title={title}
@@ -333,9 +323,8 @@ function MovieContent({ sections, exploreFurther, moreIdeas, title, year, tmdbId
   );
 }
 
-// Extracted ISR placeholder
-function ISRPlaceholder({ isNuclear, source, overview, title, year }) {
-  // Simple placeholder for all non-nuclear movies
+// Content placeholder for movies without analysis
+function ContentPlaceholder({ source, overview, title, year }) {
   return (
     <div style={styles.claudeContent}>
     </div>
@@ -375,21 +364,14 @@ const styles = {
     fontSize: '14px',
     color: '#6b7280',
   },
-  clearButton: {
-    backgroundColor: '#374151',
-    color: 'white',
-    border: 'none',
-    padding: '6px 12px',
-    borderRadius: '6px',
-    fontSize: '12px',
-    cursor: 'pointer',
-    fontFamily: 'inherit',
-  },
   movieList: {
     display: 'flex',
     flexDirection: 'column',
     gap: '1px',
     backgroundColor: '#f3f4f6',
+  },
+  movieItem: {
+    cursor: 'pointer',
   },
   
   claudeSection: {
@@ -419,15 +401,10 @@ const styles = {
 };
 
 // Business logic moved to services - import them here
-import { NuclearService } from '../../lib/services/nuclear-service';
 import { AnalysisService } from '../../lib/services/analysis-service';
-import { validateNuclearConfig } from '../../lib/nuclear-config';
 
 // Simplified getStaticProps - most logic moved to services
 export async function getStaticProps({ params }) {
-  // Validate config on startup
-  validateNuclearConfig();
-  
   const { id } = params;
   const tmdbId = parseInt(id, 10);
   
@@ -442,8 +419,8 @@ export async function getStaticProps({ params }) {
       process.env.SUPABASE_SERVICE_ROLE_KEY
     );
 
-    // Use service to check nuclear status
-    const isNuclearCandidate = await NuclearService.isNuclearCandidate(tmdbId);
+    // Check if movie has analysis 
+    let hasAnalysisData = false;
 
     // Get movie from database
     const { data: movieEntry, error } = await supabase
@@ -457,10 +434,9 @@ export async function getStaticProps({ params }) {
       console.log(`🎬 Movie not in database, attempting TMDB discovery for ID: ${tmdbId}`);
       
       try {
-        // Import TMDB and nuclear promotion services
+        // Import TMDB services
         const { getTMDBMovieDetails } = await import('../../lib/services/tmdb-search');
         const { createBasicMovieEntry } = await import('../../lib/services/database-search');
-        const { flagForNuclearPromotion } = await import('../../lib/services/nuclear-promotion');
         
         // Fetch movie details from TMDB
         const tmdbMovie = await getTMDBMovieDetails(tmdbId);
@@ -472,10 +448,8 @@ export async function getStaticProps({ params }) {
         // Create basic movie entry in database for future reference
         const newMovieEntry = await createBasicMovieEntry(tmdbMovie);
         
-        // Flag for nuclear promotion (pre-launch: immediate)
-        await flagForNuclearPromotion(tmdbId, 'tmdb_discovery', {
-          route: 'movie_page_direct'
-        });
+        // Log discovery for potential analysis generation
+        console.log(`📊 TMDB discovery logged for potential analysis: ${tmdbId}`);
         
         console.log(`✅ TMDB movie discovered: "${tmdbMovie.title}" (${tmdbMovie.release_date?.substring(0, 4)})`);
         
@@ -491,7 +465,7 @@ export async function getStaticProps({ params }) {
             initialStreaming: null, // Will be fetched organically
             tmdbId: tmdbMovie.id,
             error: null,
-            isNuclear: false, // TMDB discoveries start as ISR, can become nuclear
+            hasAnalysis: false, // TMDB discoveries start without analysis
             source: 'tmdb_discovery',
             overview: tmdbMovie.overview
           },
@@ -511,7 +485,7 @@ export async function getStaticProps({ params }) {
             initialStreaming: null,
             tmdbId: tmdbId,
             error: 'Movie not found in database or TMDB',
-            isNuclear: false,
+            hasAnalysis: false,
           },
           revalidate: 60
         };
@@ -528,22 +502,22 @@ export async function getStaticProps({ params }) {
         initialStreaming: movieEntry.streaming_data,
         tmdbId: movieEntry.tmdb_id,
         error: null,
-        isNuclear: isNuclearCandidate,
+        hasAnalysis: hasAnalysisData,
       }
     };
 
-    // Get analysis for nuclear movies
-    if (isNuclearCandidate) {
+    // Check for analysis in database
+    try {
       const analysisData = await AnalysisService.getOrGenerate(movieEntry);
-      if (analysisData) {
+      if (analysisData && analysisData.sections && analysisData.sections.length > 0) {
         response.props.sections = analysisData.sections;
         response.props.exploreFurther = analysisData.exploreFurther;
         response.props.moreIdeas = analysisData.moreIdeas;
+        response.props.hasAnalysis = true;
       }
-      // Nuclear: no revalidation (permanent static)
-    } else {
-      // ISR: revalidation
-      response.revalidate = NUCLEAR_CONFIG.ISR_REVALIDATE_SECONDS;
+    } catch (error) {
+      console.log('No analysis found for movie:', movieEntry.tmdb_id);
+      response.revalidate = 3600; // 1 hour revalidation for movies without analysis
     }
 
     return response;
@@ -569,7 +543,7 @@ export async function getStaticPaths() {
       .select('tmdb_id')
       .not('tmdb_id', 'is', null)
       .order('created_at', { ascending: false })
-      .limit(NUCLEAR_CONFIG.TOP_MOVIE_COUNT + 500); // Nuclear + some ISR
+      .limit(1000); // Generate paths for popular movies
 
     const paths = movies?.map(movie => ({
       params: { id: movie.tmdb_id.toString() }

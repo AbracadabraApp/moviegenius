@@ -24,11 +24,6 @@ export default function MoviesPage() {
     }
   };
 
-  // Handle clear search
-  const handleClearSearch = () => {
-    setSearchResults([]);
-    setShowSearchResults(false);
-  };
 
   return (
     <PhoneFrame active="movies">
@@ -49,13 +44,10 @@ export default function MoviesPage() {
             <div style={styles.resultsContainer}>
               <div style={styles.resultsHeader}>
                 <span>{searchResults.length} movie{searchResults.length !== 1 ? 's' : ''} found</span>
-                <button onClick={handleClearSearch} style={styles.clearButton}>
-                  Clear
-                </button>
               </div>
               <div style={styles.movieList}>
                 {searchResults.map((movie, index) => (
-                  <div key={`${movie.tmdb_id || movie.title}-${index}`} onClick={() => handleMovieClick(movie)}>
+                  <div key={`${movie.tmdb_id || movie.title}-${index}`} onClick={() => handleMovieClick(movie)} style={styles.movieItem}>
                     <MediaCard
                       title={movie.title}
                       year={movie.year}
@@ -119,21 +111,14 @@ const styles = {
     fontSize: '14px',
     color: '#6b7280',
   },
-  clearButton: {
-    backgroundColor: '#374151',
-    color: 'white',
-    border: 'none',
-    padding: '6px 12px',
-    borderRadius: '6px',
-    fontSize: '12px',
-    cursor: 'pointer',
-    fontFamily: 'inherit',
-  },
   movieList: {
     display: 'flex',
     flexDirection: 'column',
     gap: '1px',
     backgroundColor: '#f3f4f6',
+  },
+  movieItem: {
+    cursor: 'pointer',
   },
 
 };

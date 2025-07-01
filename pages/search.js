@@ -49,7 +49,11 @@ export default function SearchPage() {
     
     setLoading(true);
     try {
-      const response = await fetch(`/api/simple-search-v2?q=${encodeURIComponent(query)}`);
+      const response = await fetch('/api/simple-search', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ query })
+      });
       if (response.ok) {
         const data = await response.json();
         setSearchResults(data.movies || []);
