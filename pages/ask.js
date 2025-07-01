@@ -4,7 +4,6 @@ import AskInputBar from '../components/AskInputBar';
 import TypewriterText from '../components/TypewriterText';
 import EntityLinkedText from '../components/EntityLinkedText';
 import FilmLoadingMessage from '../components/FilmLoadingMessage';
-import BlinkingCursor from '../components/BlinkingCursor';
 import { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import { underlineProperNames } from '../lib/proper-names';
