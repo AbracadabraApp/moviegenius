@@ -21,7 +21,7 @@ export default function HomePage() {
   });
   const [showAllThemes, setShowAllThemes] = useState(false);
   const [currentRotation, setCurrentRotation] = useState(0);
-  const [showManifesto, setShowManifesto] = useState(true);
+  const [modalStep, setModalStep] = useState('manifesto'); // 'manifesto', 'platforms', null
 
   // Simple test rotation - just pick a random hero image on each reload
   useEffect(() => {
@@ -163,28 +163,56 @@ export default function HomePage() {
     <PhoneFrame active="genius">
       <div style={styles.container}>
         
-        {/* Manifesto Modal Overlay */}
-        {showManifesto && (
+        {/* Modal System */}
+        {modalStep && (
           <div style={styles.manifestoOverlay}>
-            <div style={styles.manifestoModal}>
-              <div style={styles.manifestoContent}>
-                <h1 style={styles.manifestoMainTitle}>MovieGenius</h1>
-                <div style={styles.manifestoSubheadSection}>
-                  <div style={styles.manifestoSubheadDivider} />
-                  <h2 style={styles.manifestoSubheadTitle}>WHY NOW?</h2>
-                  <div style={styles.manifestoSubheadDivider} />
+            {modalStep === 'manifesto' && (
+              <div style={styles.manifestoModal}>
+                <div style={styles.manifestoContent}>
+                  <h1 style={styles.manifestoMainTitle}>MovieGenius</h1>
+                  <div style={styles.manifestoSubheadSection}>
+                    <div style={styles.manifestoSubheadDivider} />
+                    <h2 style={styles.manifestoSubheadTitle}>WHY NOW?</h2>
+                    <div style={styles.manifestoSubheadDivider} />
+                  </div>
+                  <p style={styles.manifestoText}>
+                    Streaming platforms put great films at our fingertips, then hid them under time-wasting junk. MovieGenius is your intelligence filter—the red pill to break free from their algorithmic matrix. No more mindless scrolling through endless mediocre "shows". Discover quality cinema and make deliberate choices again.
+                  </p>
+                  <button 
+                    onClick={() => setModalStep('platforms')}
+                    style={styles.manifestoContinueButton}
+                  >
+                    Continue
+                  </button>
                 </div>
-                <p style={styles.manifestoText}>
-                  Streaming platforms put great films at our fingertips, then hid them under time-wasting junk. MovieGenius is your intelligence filter—the red pill to break free from their algorithmic matrix. No more mindless scrolling through endless mediocre "shows". Discover quality cinema and make deliberate choices again.
-                </p>
-                <button 
-                  onClick={() => setShowManifesto(false)}
-                  style={styles.manifestoContinueButton}
-                >
-                  Continue
-                </button>
               </div>
-            </div>
+            )}
+            
+            {modalStep === 'platforms' && (
+              <div style={styles.manifestoModal}>
+                <div style={styles.manifestoContent}>
+                  <h1 style={styles.manifestoMainTitle}>Platform Setup</h1>
+                  <div style={styles.manifestoSubheadSection}>
+                    <div style={styles.manifestoSubheadDivider} />
+                    <h2 style={styles.manifestoSubheadTitle}>STREAMING SERVICES</h2>
+                    <div style={styles.manifestoSubheadDivider} />
+                  </div>
+                  <p style={styles.manifestoText}>
+                    Select your streaming services so we can show you what's available to watch right now.
+                  </p>
+                  {/* Placeholder for platform picker - we'll optimize this design */}
+                  <div style={styles.platformPlaceholder}>
+                    Platform picker will go here
+                  </div>
+                  <button 
+                    onClick={() => setModalStep(null)}
+                    style={styles.manifestoContinueButton}
+                  >
+                    Start Exploring
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
         )}
         
@@ -799,5 +827,16 @@ const styles = {
     cursor: 'pointer',
     fontFamily: 'inherit',
     transition: 'all 0.2s ease',
+  },
+  
+  platformPlaceholder: {
+    padding: '32px 16px',
+    backgroundColor: '#f9fafb',
+    borderRadius: '8px',
+    border: '1px solid #e5e7eb',
+    textAlign: 'center',
+    color: '#6b7280',
+    fontSize: '14px',
+    marginBottom: '24px',
   },
 };
