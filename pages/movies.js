@@ -2,6 +2,7 @@
 import PhoneFrame from '../components/PhoneFrame';
 import SimpleSearch from '../components/SimpleSearch';
 import MediaCard from '../components/MediaCard';
+import CategoryBrowse from '../components/CategoryBrowse';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 
@@ -69,16 +70,7 @@ export default function MoviesPage() {
             </div>
           ) : (
             /* Browse Categories */
-            <div style={styles.browseContainer}>
-              <h2 style={styles.browseTitle}>Browse by Category</h2>
-              <div style={styles.categoryGrid}>
-                {browseCategories.map((category, index) => (
-                  <div key={index} style={styles.categoryButton}>
-                    {category}
-                  </div>
-                ))}
-              </div>
-            </div>
+            <CategoryBrowse />
           )}
         </div>
       </div>
@@ -86,21 +78,6 @@ export default function MoviesPage() {
   );
 }
 
-// Static browse categories (not tied to search)
-const browseCategories = [
-  'Action Movies',
-  'Comedy Films', 
-  'Sci-Fi Classics',
-  'Horror Movies',
-  'Drama Films',
-  'Animated Movies',
-  'Thriller Films',
-  'Romance Movies',
-  'Documentary',
-  'Foreign Films',
-  'Marvel Movies',
-  'Film Noir'
-];
 
 const styles = {
   container: {
@@ -159,30 +136,4 @@ const styles = {
     backgroundColor: '#f3f4f6',
   },
 
-  // Browse Categories
-  browseContainer: {
-    
-  },
-  browseTitle: {
-    fontSize: '18px',
-    fontWeight: '600',
-    color: '#374151',
-    margin: '0 0 16px 0',
-  },
-  categoryGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(2, 1fr)',
-    gap: '12px',
-  },
-  categoryButton: {
-    backgroundColor: '#ffffff',
-    border: '1px solid #d1d5db',
-    borderRadius: '8px',
-    padding: '16px',
-    fontSize: '14px',
-    fontWeight: '500',
-    color: '#374151',
-    textAlign: 'center',
-    boxShadow: '0 1px 2px rgba(0, 0, 0, 0.1)',
-  },
 };
