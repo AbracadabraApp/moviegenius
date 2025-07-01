@@ -12,6 +12,7 @@ import ExplorePromptCard from '../../components/ExplorePromptCard';
 import FeaturedFilmsSection from '../../components/FeaturedFilmsSection';
 import ExploreFurtherSection from '../../components/ExploreFurtherSection';
 import EntityLinkedText from '../../components/EntityLinkedText';
+import CategoryBrowse from '../../components/CategoryBrowse';
 import usePredictiveLoading from '../../hooks/usePredictiveLoading';
 import { NUCLEAR_CONFIG } from '../../lib/nuclear-config';
 
@@ -164,14 +165,8 @@ export default function MovieDetailPage({
 
               <div style={styles.claudeSection}>
                 {isNuclear && sections.length > 0 ? (
-                  <>
-                    {/* Nuclear test banner - only in development */}
-                    {NUCLEAR_CONFIG.SHOW_TEST_BANNERS && (
-                      <NuclearTestBanner />
-                    )}
-                    
-                    <div style={styles.claudeContent}>              
-                      <MovieContent 
+                  <div style={styles.claudeContent}>              
+                    <MovieContent 
                         sections={sections}
                         exploreFurther={exploreFurther}
                         moreIdeas={moreIdeas}
@@ -200,37 +195,6 @@ export default function MovieDetailPage({
   );
 }
 
-// Extracted test banner component
-function NuclearTestBanner() {
-  return (
-    <div style={styles.nuclearTestBanner}>
-      <div style={styles.nuclearIndicator}>
-        ⚡ NUCLEAR PAGE - Instant Static Content
-      </div>
-      <div style={styles.testLinks}>
-        <strong>Test Links:</strong>
-        <div style={styles.linkGrid}>
-          <div style={styles.linkSection}>
-            <span style={styles.linkLabel}>Nuclear Pages (instant):</span>
-            {NUCLEAR_CONFIG.TEST_MOVIES.slice(0, 3).map(id => (
-              <Link key={id} href={`/movie/${id}`} style={styles.testLink}>
-                Movie {id}
-              </Link>
-            ))}
-          </div>
-          <div style={styles.linkSection}>
-            <span style={styles.linkLabel}>ISR Pages (cached):</span>
-            <Link href="/movie/12345" style={styles.testLink}>Random 1</Link>
-            <Link href="/movie/99999" style={styles.testLink}>Random 2</Link>
-          </div>
-        </div>
-        <div style={styles.removeNote}>
-          💡 <strong>Note:</strong> This banner is controlled by NUCLEAR_CONFIG.SHOW_TEST_BANNERS
-        </div>
-      </div>
-    </div>
-  );
-}
 
 // Extracted movie content component  
 function MovieContent({ sections, exploreFurther, moreIdeas, title, year, tmdbId, router }) {
@@ -363,6 +327,9 @@ function MovieContent({ sections, exploreFurther, moreIdeas, title, year, tmdbId
         );
       })()}
       
+      {/* Browse by Category Section */}
+      <CategoryBrowse title="Discover More Movies" />
+      
     </>
   );
 }
@@ -437,7 +404,6 @@ const styles = {
   },
   header: {
     backgroundColor: '#ffffff',
-    borderBottom: '1px solid #e5e7eb',
     padding: '16px 32px',
     gap: '16px',
   },
@@ -500,56 +466,6 @@ const styles = {
   errorText: {
     fontSize: '16px',
     color: '#dc2626',
-  },
-  // Nuclear test styles
-  nuclearTestBanner: {
-    backgroundColor: '#f0f9ff',
-    border: '2px solid #0ea5e9',
-    borderRadius: '8px',
-    padding: '16px',
-    marginBottom: '20px',
-    fontSize: '14px'
-  },
-  nuclearIndicator: {
-    fontSize: '16px',
-    fontWeight: 'bold',
-    color: '#0c4a6e',
-    marginBottom: '12px',
-    textAlign: 'center'
-  },
-  testLinks: {
-    color: '#374151'
-  },
-  linkGrid: {
-    display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
-    gap: '16px',
-    margin: '12px 0',
-    fontSize: '13px'
-  },
-  linkSection: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '6px'
-  },
-  linkLabel: {
-    fontWeight: '600',
-    color: '#1f2937',
-    marginBottom: '4px'
-  },
-  testLink: {
-    color: '#2563eb',
-    textDecoration: 'underline',
-    cursor: 'pointer',
-    transition: 'color 0.2s ease'
-  },
-  removeNote: {
-    backgroundColor: '#fef3c7',
-    padding: '8px',
-    borderRadius: '4px',
-    fontSize: '12px',
-    color: '#92400e',
-    marginTop: '8px'
   },
   // TMDB Discovery styles
   tmdbOverview: {
