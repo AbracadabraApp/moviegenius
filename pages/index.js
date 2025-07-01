@@ -17,6 +17,7 @@ export default function HomePage() {
   const [formData, setFormData] = useState({
     selectedThemes: [],
     episodePreferences: [],
+    streamingServices: [],
     completedIntro: false
   });
   const [showAllThemes, setShowAllThemes] = useState(false);
@@ -105,6 +106,33 @@ export default function HomePage() {
     'Visual Storytelling', 'Character Development', 'Narrative Structure', 'Film History'
   ];
 
+  // Available streaming services
+  const streamingServices = [
+    'Netflix',
+    'Amazon Prime Video', 
+    'Disney+',
+    'Apple TV+',
+    'HBO Max',
+    'Hulu',
+    'Paramount+',
+    'Peacock'
+  ];
+
+  const additionalPlatforms = [
+    'YouTube TV',
+    'Crunchyroll',
+    'Showtime',
+    'Starz',
+    'Tubi',
+    'Pluto TV',
+    'IMDb TV',
+    'Vudu',
+    'Kanopy',
+    'Hoopla',
+    'The Criterion Channel',
+    'Shudder'
+  ];
+
   // Handle theme selection and navigation
   const handleThemeClick = (theme) => {
     console.log('Theme clicked:', theme);
@@ -132,6 +160,15 @@ export default function HomePage() {
       console.error('No route found for theme:', theme);
       // Could show an error message or redirect to a sensible default
     }
+  };
+
+  // Handle streaming service selection
+  const toggleStreamingService = (service) => {
+    const newServices = formData.streamingServices.includes(service)
+      ? formData.streamingServices.filter(s => s !== service)
+      : [...formData.streamingServices, service];
+    
+    setFormData({ ...formData, streamingServices: newServices });
   };
 
   // Handle episode preference selection
@@ -189,21 +226,46 @@ export default function HomePage() {
             )}
             
             {modalStep === 'platforms' && (
-              <div style={styles.manifestoModal}>
-                <div style={styles.manifestoContent}>
-                  <h1 style={styles.manifestoMainTitle}>Platform Setup</h1>
-                  <div style={styles.manifestoSubheadSection}>
-                    <div style={styles.manifestoSubheadDivider} />
-                    <h2 style={styles.manifestoSubheadTitle}>STREAMING SERVICES</h2>
-                    <div style={styles.manifestoSubheadDivider} />
+              <div style={styles.platformsModal}>
+                <div style={styles.platformsContent}>
+                  <p style={styles.platformsQuestion}>What streaming services do you use?</p>
+                  
+                  <div style={styles.platformsList}>
+                    {streamingServices.map(service => (
+                      <button
+                        key={service}
+                        onClick={() => toggleStreamingService(service)}
+                        style={{
+                          ...styles.platformButton,
+                          backgroundColor: formData.streamingServices.includes(service) 
+                            ? '#d4af37' 
+                            : '#f3f4f6',
+                          color: formData.streamingServices.includes(service) ? '#000000' : '#374151',
+                          borderColor: formData.streamingServices.includes(service) ? '#d4af37' : '#d1d5db'
+                        }}
+                      >
+                        {service}
+                      </button>
+                    ))}
+                    
+                    {additionalPlatforms.map(service => (
+                      <button
+                        key={service}
+                        onClick={() => toggleStreamingService(service)}
+                        style={{
+                          ...styles.platformButton,
+                          backgroundColor: formData.streamingServices.includes(service) 
+                            ? '#d4af37' 
+                            : '#f3f4f6',
+                          color: formData.streamingServices.includes(service) ? '#000000' : '#374151',
+                          borderColor: formData.streamingServices.includes(service) ? '#d4af37' : '#d1d5db'
+                        }}
+                      >
+                        {service}
+                      </button>
+                    ))}
                   </div>
-                  <p style={styles.manifestoText}>
-                    Select your streaming services so we can show you what's available to watch right now.
-                  </p>
-                  {/* Placeholder for platform picker - we'll optimize this design */}
-                  <div style={styles.platformPlaceholder}>
-                    Platform picker will go here
-                  </div>
+                  
                   <button 
                     onClick={() => setModalStep(null)}
                     style={styles.manifestoContinueButton}
@@ -829,14 +891,51 @@ const styles = {
     transition: 'all 0.2s ease',
   },
   
-  platformPlaceholder: {
-    padding: '32px 16px',
-    backgroundColor: '#f9fafb',
-    borderRadius: '8px',
+  // Platforms Modal Styles
+  platformsModal: {
+    backgroundColor: '#ffffff',
+    borderRadius: '16px',
+    padding: '24px',
+    maxWidth: '400px',
+    width: '100%',
+    maxHeight: '80vh',
+    overflowY: 'auto',
+    boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3)',
     border: '1px solid #e5e7eb',
+  },
+  
+  platformsContent: {
     textAlign: 'center',
-    color: '#6b7280',
-    fontSize: '14px',
+  },
+  
+  platformsQuestion: {
+    fontSize: '18px',
+    fontWeight: '500',
+    color: '#111827',
     marginBottom: '24px',
+    textAlign: 'center',
+  },
+  
+  platformsList: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+    gap: '12px',
+    marginBottom: '32px',
+  },
+  
+  platformButton: {
+    padding: '12px 8px',
+    border: '1px solid #d1d5db',
+    borderRadius: '8px',
+    fontSize: '13px',
+    fontWeight: '500',
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+    textAlign: 'center',
+    fontFamily: 'inherit',
+    minHeight: '48px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 };
