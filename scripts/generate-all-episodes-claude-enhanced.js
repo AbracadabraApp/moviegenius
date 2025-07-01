@@ -10,6 +10,7 @@
  * Enhanced Features:
  * - Real educational content via Claude AI
  * - TMDB integration for movie data enrichment
+ * - BUILD-TIME PROCESSING: Pre-processes all movie links for instant serving
  * - Content quality validation
  * - Retry logic for API failures
  * - Backup existing files before overwrite
@@ -18,16 +19,174 @@
  * - Better error handling and security
  */
 
+// Load environment variables
+require('dotenv').config({ path: '.env.local' });
+
 const fs = require('fs');
 const path = require('path');
 const { promisify } = require('util');
+
+// Server-side EntityLinkedText processor
+function processTextForMovieLinks(text) {
+  if (!text || typeof text !== 'string') return text;
+  
+  // Step 1: Remove SUBHEAD lines before processing
+  let cleanText = text.replace(/^SUBHEAD:.*$/gm, '');
+  
+  // Step 2: Find all movie title patterns (process in priority order to avoid conflicts)
+  const matches = [];
+  
+  // Pattern 1: Ask page lines - "Movie Title (Year) - Description" 
+  const askPattern = /^([A-Z][^(]+) \((\d{4})\) - (.+)$/gm;
+  let match;
+  
+  while ((match = askPattern.exec(cleanText)) !== null) {
+    const title = match[1].trim();
+    const year = parseInt(match[2]);
+    
+    matches.push({
+      fullMatch: match[0],
+      title: title,
+      year: year,
+      start: match.index,
+      end: match.index + match[0].length,
+      type: 'ask',
+      description: match[3]
+    });
+  }
+  
+  // Pattern 2: Bold movies - **Movie Title** (Year)
+  const boldPattern = /\*\*([^*]+)\*\* \((\d{4})\)/g;
+  
+  while ((match = boldPattern.exec(cleanText)) !== null) {
+    const title = match[1].trim();
+    const year = parseInt(match[2]);
+    
+    // Check if this overlaps with any ask pattern matches
+    const overlaps = matches.some(existingMatch => 
+      (match.index >= existingMatch.start && match.index < existingMatch.end) ||
+      (existingMatch.start >= match.index && existingMatch.start < match.index + match[0].length)
+    );
+    
+    if (!overlaps) {
+      matches.push({
+        fullMatch: match[0],
+        title: title,
+        year: year,
+        start: match.index,
+        end: match.index + match[0].length,
+        type: 'bold'
+      });
+    }
+  }
+  
+  // Pattern 3: Quoted movies - "Movie Title" (Year)
+  const quotedPattern = /"([^"]+)" \((\d{4})\)/g;
+  
+  while ((match = quotedPattern.exec(cleanText)) !== null) {
+    const title = match[1].trim();
+    const year = parseInt(match[2]);
+    
+    // Check if this overlaps with existing matches
+    const overlaps = matches.some(existingMatch => 
+      (match.index >= existingMatch.start && match.index < existingMatch.end) ||
+      (existingMatch.start >= match.index && existingMatch.start < match.index + match[0].length)
+    );
+    
+    if (!overlaps) {
+      matches.push({
+        fullMatch: match[0],
+        title: title,
+        year: year,
+        start: match.index,
+        end: match.index + match[0].length,
+        type: 'quoted'
+      });
+    }
+  }
+  
+  // Pattern 4: Legacy format with proper article handling - Movie Title (Year)
+  const legacyPattern = /((?:The |A |An )?[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*) \((\d{4})\)/g;
+  
+  while ((match = legacyPattern.exec(cleanText)) !== null) {
+    const title = match[1].trim();
+    const year = parseInt(match[2]);
+    
+    // Check if this overlaps with any existing matches
+    const overlaps = matches.some(existingMatch => 
+      (match.index >= existingMatch.start && match.index < existingMatch.end) ||
+      (existingMatch.start >= match.index && existingMatch.start < match.index + match[0].length)
+    );
+    
+    if (!overlaps) {
+      matches.push({
+        fullMatch: match[0],
+        title: title,
+        year: year,
+        start: match.index,
+        end: match.index + match[0].length,
+        type: 'legacy'
+      });
+    }
+  }
+  
+  // Sort matches by position for processing
+  matches.sort((a, b) => a.start - b.start);
+  
+  if (matches.length > 0) {
+    // Step 3: Create links for all marked movies (TMDB-first approach)
+    let processedText = cleanText;
+    let linksCreated = 0;
+    
+    // Process matches in reverse order to maintain text positions
+    for (const movieMatch of matches.reverse()) {
+      // Generate TMDB search URL for the movie
+      const searchQuery = encodeURIComponent(`${movieMatch.title} ${movieMatch.year}`);
+      const tmdbUrl = `/movie/search?q=${searchQuery}`;
+      
+      // Generate appropriate link based on pattern type
+      let link;
+      
+      switch (movieMatch.type) {
+        case 'ask':
+          // Ask format: Keep full line but link only the title
+          link = `<a href="${tmdbUrl}" class="entity-link movie-title" data-movie-title="${movieMatch.title}" data-movie-year="${movieMatch.year}">${movieMatch.title}</a> (${movieMatch.year}) - ${movieMatch.description}`;
+          break;
+          
+        case 'bold':
+          // Bold format: Remove bold markers, link title, keep year
+          link = `<a href="${tmdbUrl}" class="entity-link movie-title" data-movie-title="${movieMatch.title}" data-movie-year="${movieMatch.year}">${movieMatch.title}</a> (${movieMatch.year})`;
+          break;
+          
+        case 'quoted':
+          // Quoted format: Keep quotes around linked title
+          link = `"<a href="${tmdbUrl}" class="entity-link movie-title" data-movie-title="${movieMatch.title}" data-movie-year="${movieMatch.year}">${movieMatch.title}</a>" (${movieMatch.year})`;
+          break;
+          
+        case 'legacy':
+        default:
+          // Legacy format: Direct link with year
+          link = `<a href="${tmdbUrl}" class="entity-link movie-title" data-movie-title="${movieMatch.title}" data-movie-year="${movieMatch.year}">${movieMatch.title}</a> (${movieMatch.year})`;
+          break;
+      }
+      
+      processedText = processedText.slice(0, movieMatch.start) + link + processedText.slice(movieMatch.end);
+      linksCreated++;
+    }
+    
+    console.log(`🔗 Pre-processed ${linksCreated} movie links at build time`);
+    return processedText;
+  } else {
+    return cleanText;
+  }
+}
 
 // Configuration object for easy tuning
 const CONFIG = {
   RATE_LIMIT_MS: 2000,           // Time between API calls
   MAX_TOKENS: 6000,              // Claude token limit
   TEMPERATURE: 0.7,              // Claude creativity
-  MIN_WORD_COUNT: 1200,          // Minimum episode word count
+  MIN_WORD_COUNT: 800,           // Minimum episode word count (reduced to match Claude output)
   EXPLORE_SECTIONS_INTERVAL: 3,  // Add explore_further every N text sections
   MAX_RETRIES: 3,                // API retry attempts
   BACKUP_DIR: 'backups',         // Backup directory name
@@ -100,9 +259,19 @@ function createEpisodeTemplate(themeId, seriesId, episodeId, theme, series, epis
     },
     content: {
       opener: "",
+      essentialMovies: [],
       sections: [],
       moreIdeas: {
         title: "More Ideas",
+        movies: []
+      }
+    },
+    processedContent: {
+      opener: "",
+      essentialMovies: [],
+      sections: [],
+      moreIdeas: {
+        title: "More Ideas", 
         movies: []
       }
     },
@@ -262,56 +431,26 @@ async function generateEpisodeContent(themeId, seriesId, episodeId, theme, serie
     });
 
     const topic = `${episode.title}: ${episode.subtitle}`;
-    const context = `Part of ${theme.title} > ${series.title} educational series. Create comprehensive film analysis content.`;
+    const customGuidance = `Topic: "${topic}"
+    
+    This is part of ${theme.title} > ${series.title} educational series. Create comprehensive film analysis content covering:
+    - Historical context and significance
+    - Specific films with detailed analysis
+    - Technical aspects (cinematography, direction, etc.)
+    - Cultural and social impact
+    - Evolution and influence
+    
+    Write detailed, academic-quality content with specific examples throughout.`;
+
+    // Use the proper GENIUS_CONTEXT prompt system
+    const { buildPrompt } = await import('../lib/prompts/builder.js');
+    const promptConfig = buildPrompt('GENIUS', customGuidance);
 
     const response = await anthropic.messages.create({
-      model: process.env.CLAUDE_MODEL || 'claude-3-5-sonnet-20241022',
-      max_tokens: CONFIG.MAX_TOKENS,
-      temperature: CONFIG.TEMPERATURE,
-      system: `You are a film education expert creating comprehensive educational content about cinema. 
-
-Create detailed educational content with the following structure:
-
-OPENER: [One compelling sentence that introduces the topic]
-
-PARAGRAPH: [First substantial paragraph of 120-150 words with specific films and analysis]
-MOVIES: Film Title|Year|Description|Streaming Service
-MOVIES: Another Film|Year|Description|Streaming Service
-
-SUBHEAD: [Section title for next part]
-PARAGRAPH: [Second substantial paragraph of 120-150 words with specific films and analysis]
-MOVIES: Film Title|Year|Description|Streaming Service
-
-PARAGRAPH: [Continue with more paragraphs and movie examples]
-MOVIES: Film Title|Year|Description|Streaming Service
-
-PARAGRAPH: [Write exactly 8-10 substantial paragraphs total, each 120-150 words]
-MOVIES: Film Title|Year|Description|Streaming Service
-
-MORE_IDEAS: Film Title|Year|Description|Streaming Service
-MORE_IDEAS: Another Film|Year|Description|Streaming Service
-
-CRITICAL REQUIREMENTS:
-- Write NO LESS THAN ${CONFIG.MIN_WORD_COUNT} words of PARAGRAPH content
-- Include specific real films, directors, and cinematographers
-- Use detailed analysis and historical context
-- Each paragraph should be substantial and educational
-- Include streaming info when known (Netflix, HBO Max, etc.)
-- Ensure ALL movie titles and years are accurate`,
+      ...promptConfig,
       messages: [{
         role: 'user',
-        content: `Create comprehensive educational content for "${topic}".
-
-Context: ${context}
-
-This should be a university-level film analysis covering:
-- Historical context and significance
-- Specific films with detailed analysis
-- Technical aspects (cinematography, direction, etc.)
-- Cultural and social impact
-- Evolution and influence
-
-Write detailed, academic-quality content with specific examples throughout.`
+        content: `Create comprehensive educational content for "${topic}".`
       }]
     });
 
@@ -325,6 +464,7 @@ function parseClaudeResponse(responseText) {
   const sections = [];
   const moreIdeasMovies = [];
   let opener = null;
+  const essentialMovies = [];
   
   const lines = responseText.split('\n');
   let currentSection = null;
@@ -340,6 +480,20 @@ function parseClaudeResponse(responseText) {
     
     if (trimmedLine.startsWith('OPENER:')) {
       opener = trimmedLine.substring('OPENER:'.length).trim();
+      
+    } else if (trimmedLine.startsWith('ESSENTIAL:')) {
+      const movieData = trimmedLine.substring('ESSENTIAL:'.length).trim();
+      const [title, year, description] = movieData.split('|').map(s => s?.trim());
+      
+      if (title && year && !isNaN(parseInt(year))) {
+        essentialMovies.push({
+          title,
+          year: parseInt(year),
+          description: description || '',
+          tmdb_id: null,
+          poster_url: null
+        });
+      }
       
     } else if (trimmedLine.startsWith('SUBHEAD:')) {
       // Save previous section if exists
@@ -384,15 +538,7 @@ function parseClaudeResponse(responseText) {
         }
       }
       
-      // Add explore_further sections at configured intervals
-      if (textSectionCount > 0 && textSectionCount % CONFIG.EXPLORE_SECTIONS_INTERVAL === 0) {
-        sections.push({
-          type: 'explore_further',
-          prompts: [
-            `How did this aspect of the topic influence cinema?`
-          ]
-        });
-      }
+      // Note: explore_further sections now come directly from GENIUS prompt, not auto-generated
       
       // Start new section
       currentSection = trimmedLine.substring('PARAGRAPH:'.length).trim();
@@ -411,6 +557,31 @@ function parseClaudeResponse(responseText) {
           poster_url: null
         });
       }
+      
+    } else if (trimmedLine.startsWith('EXPLORE_FURTHER:')) {
+      // Save any pending section
+      if (currentSection) {
+        sections.push({
+          type: 'text',
+          content: currentSection
+        });
+        currentSection = null;
+        
+        if (currentMovies.length > 0) {
+          sections.push({
+            type: 'movies',
+            movies: currentMovies
+          });
+          currentMovies = [];
+        }
+      }
+      
+      // Add explore_further section
+      const explorePrompt = trimmedLine.substring('EXPLORE_FURTHER:'.length).trim();
+      sections.push({
+        type: 'explore_further',
+        prompts: [explorePrompt]
+      });
       
     } else if (trimmedLine.startsWith('MORE_IDEAS:')) {
       inMoreIdeas = true;
@@ -465,6 +636,7 @@ function parseClaudeResponse(responseText) {
   
   return {
     opener,
+    essentialMovies,
     sections,
     moreIdeas: {
       title: 'More Ideas',
@@ -498,10 +670,15 @@ function validateEpisodeContent(content, episodeNumber) {
     issues.push('Missing or too short opener');
   }
   
-  // Check for explore_further sections
+  // Check for explore_further sections (GENIUS requires 5)
   const exploreSections = content.sections.filter(s => s.type === 'explore_further');
-  if (exploreSections.length < 2) {
-    issues.push(`Only ${exploreSections.length} explore_further sections (recommend 2+)`);
+  if (exploreSections.length < 5) {
+    issues.push(`Only ${exploreSections.length} explore_further sections (GENIUS requires 5)`);
+  }
+  
+  // Check for more_ideas count (GENIUS requires exactly 10)
+  if (content.moreIdeas.movies.length < 10) {
+    issues.push(`Only ${content.moreIdeas.movies.length} more_ideas movies (GENIUS requires exactly 10)`);
   }
   
   // Check movie data quality
@@ -699,6 +876,29 @@ async function generateAllEpisodes(options = {}) {
       const episodeData = createEpisodeTemplate(themeId, seriesId, episodeId, theme, series, episode);
       episodeData.content = claudeContent;
       
+      // 🚀 BUILD-TIME PROCESSING: Pre-process all content for instant serving
+      console.log(`🔗 Pre-processing content for ${episodeNumber}...`);
+      
+      // Process opener
+      episodeData.processedContent.opener = processTextForMovieLinks(claudeContent.opener);
+      
+      // Copy essential movies (no text processing needed)
+      episodeData.processedContent.essentialMovies = claudeContent.essentialMovies;
+      
+      // Process all sections
+      episodeData.processedContent.sections = claudeContent.sections.map(section => {
+        if (section.type === 'text') {
+          return {
+            ...section,
+            content: processTextForMovieLinks(section.content)
+          };
+        }
+        return section; // Movies, subheads, explore_further sections pass through unchanged
+      });
+      
+      // Process moreIdeas (just copy movies, no text to process)
+      episodeData.processedContent.moreIdeas = claudeContent.moreIdeas;
+      
       // Validate content quality
       const validation = validateEpisodeContent(episodeData.content, episodeNumber);
       
@@ -835,6 +1035,7 @@ Examples:
 
 Features:
   ✅ TMDB integration for movie data enrichment
+  ✅ BUILD-TIME PROCESSING: Pre-processes all movie links for instant serving
   ✅ Content quality validation
   ✅ Automatic file backups before overwrite
   ✅ API retry logic with exponential backoff

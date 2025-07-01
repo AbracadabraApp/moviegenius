@@ -1,11 +1,9 @@
 // components/GeniusEpisodeTemplate.js
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import { useRouter } from 'next/router';
-import { ChevronLeft, Clock, Film } from 'lucide-react';
+import { ChevronLeft, Clock, Film, PlusCircle } from 'lucide-react';
 import MediaCard from './MediaCard';
 import AskInputBar from './AskInputBar';
-import { processEntityLinksForReact, extractEpisodeMovies } from '../lib/enhanced-entity-linker';
-import { extractEpisodePeople, getEpisodePeopleSummary } from '../lib/episode-people-extractor';
 import LinkedText from './LinkedText';
 import ExplorePromptCard from './ExplorePromptCard';
 import ExploreFurtherSection from './ExploreFurtherSection';
@@ -23,36 +21,10 @@ export default function GeniusEpisodeTemplate({
   const router = useRouter();
   const [scrollProgress, setScrollProgress] = useState(0);
   const [enableLinking, setEnableLinking] = useState(true);
-  const [episodePeople, setEpisodePeople] = useState(null);
-  const [peopleLoading, setPeopleLoading] = useState(true);
   
   useEffect(() => {
     setIsClient(true);
   }, []);
-
-  // Use pre-processed people data from getStaticProps (performance optimization)
-  useEffect(() => {
-    if (episodeData?.episodePeople) {
-      // Use pre-processed data from build time
-      setEpisodePeople(episodeData.episodePeople);
-      setPeopleLoading(false);
-    } else if (episodeData?.episodeContent) {
-      // Fallback to runtime processing if pre-processed data unavailable
-      async function loadEpisodePeople() {
-        try {
-          setPeopleLoading(true);
-          const people = await extractEpisodePeople(episodeData.episodeContent);
-          setEpisodePeople(people);
-        } catch (error) {
-          console.error('Failed to load episode people:', error);
-          setEpisodePeople({ directors: [], actors: [], writers: [], allPeople: [] });
-        } finally {
-          setPeopleLoading(false);
-        }
-      }
-      loadEpisodePeople();
-    }
-  }, [episodeData?.episodeContent, episodeData?.episodePeople]);
 
   // 🚀 PERFORMANCE OPTIMIZED: Throttled scroll handler (99.8% improvement)
   const optimizedScrollHandler = useMemo(() => {
@@ -70,17 +42,7 @@ export default function GeniusEpisodeTemplate({
     return () => window.removeEventListener('scroll', optimizedScrollHandler);
   }, [optimizedScrollHandler, isClient]);
 
-  // 🚀 PERFORMANCE OPTIMIZED: Use pre-processed movie data from getStaticProps
-  const episodeMovies = useMemo(() => {
-    if (episodeData?.episodeMovies) {
-      // Use pre-processed data from build time (instant)
-      return episodeData.episodeMovies;
-    } else if (episodeData?.episodeContent) {
-      // Fallback to runtime processing if pre-processed data unavailable
-      return extractEpisodeMovies(episodeData.episodeContent);
-    }
-    return [];
-  }, [episodeData?.episodeContent, episodeData?.episodeMovies]);
+  // Note: episodeMovies extraction removed - using simple pattern matching in EntityLinkedText
 
   const handleBack = useCallback(() => {
     if (!episodeData?.theme?.id || !episodeData?.series?.id) return;
@@ -93,25 +55,67 @@ export default function GeniusEpisodeTemplate({
     return getCachedOtherEpisodes(episodeData.theme.id, episodeData.series.id, episodeData.episode.id);
   }, [episodeData?.theme?.id, episodeData?.series?.id, episodeData?.episode?.id]);
 
-  const otherSeries = useMemo(() => {
-    if (!episodeData?.theme?.id || !episodeData?.series?.id) return [];
-    return getCachedOtherSeries(episodeData.theme.id, episodeData.series.id).slice(0, 4);
-  }, [episodeData?.theme?.id, episodeData?.series?.id]);
+  // 10 Education Themes for Explore More section
+  const allEducationThemes = [
+    'Film Noir',
+    'Horror & Suspense', 
+    'Comedy',
+    'Women Directors',
+    'International Masters',
+    'Acclaimed Directors',
+    'Revolutionary Movements',
+    'The Magic of Moviemaking',
+    'Cinema Through the Decades',
+    'Cinema\'s Cultural Impact'
+  ];
 
-  // 🚀 PERFORMANCE OPTIMIZED: Memoize processed content sections
-  const processedSections = useMemo(() => {
-    if (!episodeData?.episodeContent?.sections || !isClient) return [];
+  // Handle theme navigation
+  const handleThemeClick = useCallback((theme) => {
+    console.log('Theme clicked:', theme);
     
-    return episodeData.episodeContent.sections.map((section, index) => {
-      if (section.type === 'text') {
-        return {
-          ...section,
-          processedParts: processEntityLinksForReact(section.content, episodeMovies || [], episodePeople || null)
-        };
-      }
-      return section;
-    });
-  }, [episodeData?.episodeContent?.sections, episodeMovies, episodePeople, isClient]);
+    // Map themes to simple page routes
+    const themeRoutes = {
+      'Film Noir': '/film-noir',
+      'Horror & Suspense': '/horror-suspense',
+      'Comedy': '/comedy-through-time',
+      'Women Directors': '/women-directors',
+      'International Masters': '/world-cinema',
+      'Acclaimed Directors': '/acclaimed-directors',
+      'Revolutionary Movements': '/avant-garde-film',
+      'The Magic of Moviemaking': '/magic-of-moviemaking',
+      'Cinema Through the Decades': '/cinema-through-decades',
+      'Cinema\'s Cultural Impact': '/cinema-cultural-impact'
+    };
+    
+    const targetRoute = themeRoutes[theme];
+    
+    if (targetRoute) {
+      console.log('Navigating to:', targetRoute);
+      router.push(targetRoute);
+    } else {
+      console.warn('No route found for theme:', theme);
+      router.push('/genius');
+    }
+  }, [router]);
+
+  // 🚀 PERFORMANCE OPTIMIZED: Use pre-processed content sections
+  // Content is already processed at build time - no runtime processing needed
+  const sections = episodeData?.processedContent?.sections || episodeData?.content?.sections || [];
+  const opener = episodeData?.processedContent?.opener || episodeData?.content?.opener || '';
+  const essentialMovies = episodeData?.processedContent?.essentialMovies || episodeData?.content?.essentialMovies || [];
+  const content = episodeData?.processedContent || episodeData?.content;
+
+  // Debug logging
+  console.log('Episode data structure:', {
+    hasProcessedContent: !!episodeData?.processedContent,
+    hasContent: !!episodeData?.content,
+    sectionsLength: sections?.length,
+    hasOpener: !!opener,
+    episodeTitle: episodeData?.episode?.title,
+    dataKeys: Object.keys(episodeData || {}),
+    firstSectionType: sections?.[0]?.type,
+    contentKeys: Object.keys(episodeData?.content || {})
+  });
 
   // Early return after all hooks are called
   if (!isClient || !episodeData || !episodeData.theme || !episodeData.series || !episodeData.episode) {
@@ -129,7 +133,6 @@ export default function GeniusEpisodeTemplate({
   }
   
   const { theme, series, episode, episodeContent } = episodeData;
-  const content = episodeContent;
 
   return (
     <article style={styles.container}>
@@ -167,26 +170,56 @@ export default function GeniusEpisodeTemplate({
       {/* Content Sections */}
       <main style={styles.content}>
         
+        {/* Essential Movies - moved to top above opener */}
+        {essentialMovies && essentialMovies.length > 0 && (
+          <section style={styles.section}>
+            <div style={{...styles.movieSectionHeader, paddingTop: '14px'}}>
+              <div style={styles.sectionDivider} />
+              <span style={styles.sectionLabel}>Essential Viewing</span>
+              <div style={styles.sectionDivider} />
+            </div>
+            <div style={styles.textSection}>
+              <div style={styles.essentialMovies}>
+                {essentialMovies.map((movie, index) => (
+                  <div key={index} style={styles.essentialMovie}>
+                    <div style={styles.essentialMovieTitle}>
+                      <span><strong>{movie.title}</strong> ({movie.year})</span>
+                      <div style={styles.actionGroup}>
+                        <input type="checkbox" style={styles.checkbox} />
+                        <span style={styles.actionText}>seen it</span>
+                        <PlusCircle size={16} style={styles.plusIcon} />
+                        <span style={styles.actionText}>add it</span>
+                      </div>
+                    </div>
+                    <div style={styles.essentialMovieDescription}>
+                      {movie.description}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Opener */}
+        {opener && (
+          <section style={styles.section}>
+            <div style={styles.openerSection}>
+              <p style={styles.opener}>{opener}</p>
+            </div>
+          </section>
+        )}
+        
         {/* 🚀 OPTIMIZED: Use pre-processed content sections */}
-        {processedSections.map((section, index) => {
+        {sections.length > 0 ? sections.map((section, index) => {
           return (
             <section key={index} style={styles.section}>
               {section.type === 'text' && (
                 <div style={styles.textSection}>
-                  <p style={styles.paragraph}>
-                    <LinkedText 
-                      parts={section.processedParts || [section.content]}
-                      enableLinking={enableLinking}
-                      linkStyle={{
-                        color: 'inherit',
-                        textDecoration: 'underline',
-                        textDecorationColor: '#d4af37',
-                        textDecorationThickness: '1px',
-                        textUnderlineOffset: '2px',
-                        fontWeight: '500'
-                      }}
-                    />
-                  </p>
+                  <p 
+                    style={styles.paragraph}
+                    dangerouslySetInnerHTML={{ __html: section.content }}
+                  />
                 </div>
               )}
               
@@ -199,20 +232,23 @@ export default function GeniusEpisodeTemplate({
               )}
               
               {section.type === 'movies' && (
-                <FeaturedFilmsSection movies={section.movies} />
+                <div style={styles.movieSectionWrapper}>
+                  <FeaturedFilmsSection movies={section.movies} />
+                </div>
               )}
               
               {section.type === 'explore_further' && (
                 <ExploreFurtherSection
                   prompts={section.prompts || []}
-                  contextPrefix={episode.title}
+                  contextPrefix={episodeData.episode.title}
                 />
               )}
             </section>
           );
-        }) || (
+        }) : (
           <div style={styles.noContentMessage}>
             <p>Content is being generated for this episode. Please check back soon!</p>
+            <p>Debug: sections.length = {sections.length}, hasContent = {!!content}</p>
           </div>
         )}
 
@@ -240,29 +276,29 @@ export default function GeniusEpisodeTemplate({
 
         {/* More Ideas Section - Using same style as Featured Films */}
         {content?.moreIdeas && content.moreIdeas.movies?.length > 0 && (
-          <FeaturedFilmsSection 
-            movies={content.moreIdeas.movies}
-            title="Related Films"
-          />
+          <div style={styles.movieSectionWrapper}>
+            <FeaturedFilmsSection 
+              movies={content.moreIdeas.movies}
+              title="Related Films"
+            />
+          </div>
         )}
 
 
-        {/* Other Series Footer */}
-        <footer style={styles.otherSeriesSection}>
-          <div style={styles.otherSeriesHeader}>
-            <h4 style={styles.otherSeriesTitle}>Explore Other Series</h4>
+        {/* Explore More Footer */}
+        <footer style={styles.exploreMoreSection}>
+          <div style={styles.exploreMoreHeader}>
+            <h4 style={styles.exploreMoreTitle}>Explore More</h4>
           </div>
-          <div style={styles.otherSeriesGrid}>
-            {/* 🚀 OPTIMIZED: Use cached other series data */}
-            {otherSeries.map((seriesData) => (
-              <div 
-                key={`${seriesData.themeId}-${seriesData.id}`} 
-                style={styles.otherSeriesCard}
-                onClick={() => router.push(`/genius/${seriesData.themeId}/${seriesData.id}`)}
+          <div style={styles.themesGrid}>
+            {allEducationThemes.map(theme => (
+              <button
+                key={theme}
+                onClick={() => handleThemeClick(theme)}
+                style={styles.themeButton}
               >
-                <h5 style={styles.otherSeriesCardTitle}>{seriesData.title}</h5>
-                <p style={styles.otherSeriesCardDescription}>{seriesData.description}</p>
-              </div>
+                {theme}
+              </button>
             ))}
           </div>
         </footer>
@@ -290,7 +326,7 @@ const styles = {
   },
   progressFill: {
     height: '100%',
-    backgroundColor: '#d4af37', // Gold accent
+    backgroundColor: '#2c3e50', // Dark blue accent
     transition: 'width 0.1s ease',
   },
 
@@ -362,7 +398,7 @@ const styles = {
     fontSize: '16px',
     fontWeight: '400',
     lineHeight: '1.4',
-    color: '#d4af37', // Gold subtitle
+    color: '#ffffff', // White subtitle
     textShadow: '0 2px 8px rgba(0,0,0,0.8)',
     marginTop: '0px', // No margin - box provides 5px padding
     marginBottom: '0px',
@@ -385,8 +421,15 @@ const styles = {
     marginBottom: '20px', // Reduced from 24px to prevent stacking over 40px
   },
   textSection: {
-    padding: '0 36px',
+    padding: '0 12px',
     marginTop: '-5px', // Move first text line up 5px
+  },
+  firstTextSection: {
+    padding: '0 36px',
+    marginTop: '-5px',
+    borderLeft: '5px solid #d4af37', // Thicker gold left border for first section
+    paddingLeft: '31px', // Adjust padding to account for border
+    backgroundColor: '#fffef7', // Very light gold background to make it more visible
   },
   paragraph: {
     fontSize: '16px',
@@ -397,6 +440,12 @@ const styles = {
     fontWeight: '400',
   },
 
+  // Movie Section Wrapper - minimal padding for FeaturedFilmsSection
+  movieSectionWrapper: {
+    padding: '0', // No padding to let FeaturedFilmsSection handle its own spacing
+    marginBottom: '20px',
+  },
+  
   // Movie Sections - 24px module system
   movieSection: {
     padding: '20px 36px', // Match movie page container padding
@@ -481,7 +530,7 @@ const styles = {
   
   // Subhead Styles - Enhanced for 900-word content
   subheadSection: {
-    padding: '0 36px', // Match movie page container padding
+    padding: '0 12px', // Match movie page container padding
     marginBottom: '16px', // Reduced from 24px
     marginTop: '24px', // Reduced from 40px to keep total at 40px
     position: 'relative',
@@ -525,7 +574,7 @@ const styles = {
     fontSize: '24px',
     fontWeight: '600',
     marginBottom: '8px',
-    color: '#d4af37',
+    color: '#2c3e50',
   },
   moreIdeasDescription: {
     fontSize: '16px',
@@ -640,6 +689,111 @@ const styles = {
     fontWeight: '500',
     cursor: 'pointer',
     transition: 'all 0.2s ease',
+  },
+
+  // Opener Section
+  openerSection: {
+    padding: '0 12px',
+    marginBottom: '20px',
+  },
+  opener: {
+    fontSize: '16px',
+    fontWeight: '400',
+    color: '#2c3e50',
+    lineHeight: '1.6',
+    textAlign: 'left',
+    margin: 0,
+  },
+
+  essentialTitle: {
+    fontSize: '18px',
+    fontWeight: '600',
+    color: '#2c3e50',
+    marginBottom: '16px',
+    textAlign: 'left',
+    margin: '0 0 16px 0',
+  },
+  essentialMovies: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '8px',
+    marginBottom: '20px',
+  },
+  essentialMovie: {
+    marginBottom: '8px',
+  },
+  essentialMovieTitle: {
+    fontSize: '14px',
+    fontWeight: '600',
+    color: '#2c3e50',
+    marginBottom: '4px',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  essentialMovieDescription: {
+    fontSize: '12px',
+    color: '#6c757d',
+    lineHeight: '1.5',
+  },
+  actionGroup: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '6px',
+  },
+  checkbox: {
+    cursor: 'pointer',
+  },
+  actionText: {
+    fontSize: '12px',
+    color: '#6c757d',
+    fontWeight: '400',
+  },
+  plusIcon: {
+    color: '#2c3e50',
+    cursor: 'pointer',
+  },
+
+  // Explore More Footer
+  exploreMoreSection: {
+    padding: '32px 24px',
+    backgroundColor: '#ffffff',
+    borderTop: '1px solid #e9ecef',
+  },
+  exploreMoreHeader: {
+    textAlign: 'center',
+    marginBottom: '24px',
+  },
+  exploreMoreTitle: {
+    fontSize: '20px',
+    fontWeight: '600',
+    color: '#2c3e50',
+    margin: 0,
+  },
+  themesGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+    gap: '12px',
+    marginBottom: '0px',
+  },
+  themeButton: {
+    padding: '16px 12px',
+    border: '1px solid #e5e7eb',
+    borderRadius: '12px',
+    fontSize: '13px',
+    fontWeight: '600',
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+    textAlign: 'center',
+    fontFamily: 'inherit',
+    lineHeight: '1.3',
+    minHeight: '70px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+    backgroundColor: '#ffffff',
+    color: '#2c3e50',
   },
 
 };
