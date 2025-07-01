@@ -69,7 +69,7 @@ export default async function handler(req, res) {
     const data = await response.json();
     
     // Transform TMDB results to our movie format
-    const movies = await Promise.all(
+    const movies = (await Promise.all(
       data.results.slice(0, 20).map(async (tmdbMovie) => {
         // Check if movie already exists in our database
         const { data: existingMovie } = await supabase
@@ -86,16 +86,16 @@ export default async function handler(req, res) {
           return {
             title: tmdbMovie.title,
             year: tmdbMovie.release_date ? parseInt(tmdbMovie.release_date.substring(0, 4)) : null,
-            slug: tmdbMovie.overview ? tmdbMovie.overview.substring(0, 100) + '...' : null,
+            slug: null, // No TMDB summaries - prefer empty over fallback
             poster_url: tmdbMovie.poster_path 
               ? `https://image.tmdb.org/t/p/w500${tmdbMovie.poster_path}`
               : '/images/placeholder-poster.jpg',
             streaming_data: null, // Will be fetched if needed
-            tmdb_id: tmdbMovie.id
+            tmdb_id: tmdbMovie.id // REQUIRED - all results must have TMDB IDs
           };
         }
       })
-    );
+    )).filter(movie => movie.tmdb_id); // Ensure all results have TMDB IDs
 
     console.log(`✅ Found ${movies.length} movies for genre "${category}"`);
 
