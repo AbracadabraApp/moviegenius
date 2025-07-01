@@ -266,15 +266,18 @@ export default function HomePage() {
                       </button>
                     ))}
                     
-                    {!showAllPlatforms && (
-                      <button
+                  </div>
+                  
+                  {!showAllPlatforms && (
+                    <div style={styles.moreContainer}>
+                      <span
                         onClick={() => setShowAllPlatforms(true)}
-                        style={styles.moreButton}
+                        style={styles.moreLink}
                       >
                         More...
-                      </button>
-                    )}
-                  </div>
+                      </span>
+                    </div>
+                  )}
                   
                   <button 
                     onClick={() => setModalStep(null)}
@@ -950,22 +953,17 @@ const styles = {
     justifyContent: 'center',
   },
   
-  moreButton: {
-    padding: '12px 8px',
-    border: '1px solid #6b7280',
-    borderRadius: '8px',
-    fontSize: '13px',
-    fontWeight: '500',
-    cursor: 'pointer',
-    transition: 'all 0.2s ease',
-    textAlign: 'center',
-    fontFamily: 'inherit',
-    minHeight: '48px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: 'transparent',
+  moreContainer: {
+    textAlign: 'right',
+    marginBottom: '16px',
+  },
+  
+  moreLink: {
+    fontSize: '14px',
     color: '#6b7280',
-    gridColumn: 'span 2',
+    cursor: 'pointer',
+    textDecoration: 'underline',
+    fontWeight: '500',
+    transition: 'color 0.2s ease',
   },
 };
