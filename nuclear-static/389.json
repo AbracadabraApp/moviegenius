@@ -1,0 +1,179 @@
+{
+  "props": {
+    "title": "12 Angry Men",
+    "year": 1957,
+    "initialSlug": "Justice hangs by a single thread.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/ow3wq89wM8qd5X7hWKxiRfsFf9C.jpg",
+    "initialStreaming": null,
+    "tmdbId": 389,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**12 Angry Men** (1957) masterfully demonstrates how to create intense drama in a confined space. Sidney Lumet's directorial debut traps us in a sweltering jury room where prejudice, reason, and justice collide. The film's influence echoes through later single-location thrillers like **Phone Booth** (2002) and **Panic Room** (2002), proving you don't need elaborate sets to create unbearable tension. Henry Fonda's Juror 8 stands as one of cinema's great moral centers, methodically dismantling bias and hasty judgment while the camera closes in tighter and tighter on the increasingly desperate faces."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Verdict",
+            "year": 1982,
+            "slug": "Paul Newman stars as an alcoholic lawyer seeking redemption in a medical malpractice case",
+            "poster": "https://image.tmdb.org/t/p/w500/bAe0telFqAzdV8a7aUiIBMEy9d8.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 24226,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bAe0telFqAzdV8a7aUiIBMEy9d8.jpg"
+          },
+          {
+            "title": "Witness for the Prosecution",
+            "year": 1957,
+            "slug": "Billy Wilder's twist-filled courtroom drama with masterful performances by Charles Laughton and Marlene Dietrich",
+            "poster": "https://image.tmdb.org/t/p/w500/bCj4EfuehAlgBwVd3diyWyhuuau.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 37257,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bCj4EfuehAlgBwVd3diyWyhuuau.jpg"
+          },
+          {
+            "title": "A Few Good Men",
+            "year": 1992,
+            "slug": "Military court drama featuring Tom Cruise and Jack Nicholson's legendary confrontation",
+            "poster": "https://image.tmdb.org/t/p/w500/rLOk4z9zL1tTukIYV56P94aZXKk.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 881,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rLOk4z9zL1tTukIYV56P94aZXKk.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's innovative camera work revolutionized confined-space cinematography. Lumet starts with high-angle shots and eye-level framing, gradually lowering the camera and using wider lenses to create claustrophobia. This technique influenced countless films, from **The Breakfast Club** (1985) to **Reservoir Dogs** (1992), showing how camera positioning can amplify psychological pressure. The approach reached its apex in modern confined thrillers like **Buried** (2010), which traps viewers in a coffin with Ryan Reynolds."
+      },
+      {
+        "type": "text",
+        "content": "Beyond technical brilliance, **12 Angry Men** (1957) pioneered the real-time narrative structure in mainstream cinema. This storytelling approach influenced films like **United 93** (2006) and **High Noon** (1952), where time becomes a character itself. The film's exploration of groupthink and prejudice laid groundwork for social justice dramas like **To Kill a Mockingbird** (1962) and **In the Heat of the Night** (1967). SUBHEAD: The Legacy of Confined Space Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Glengarry Glen Ross",
+            "year": 1992,
+            "slug": "Intense dialogue-driven drama about desperate real estate salesmen confined to their office",
+            "poster": "https://image.tmdb.org/t/p/w500/nGZCeCfNseq1ee3cJLBp0rH0djT.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 9504,
+            "poster_url": "https://image.tmdb.org/t/p/w500/nGZCeCfNseq1ee3cJLBp0rH0djT.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's DNA runs through modern confined-space masterpieces like **Locke** (2013) and **Mass** (2021). These films follow Lumet's principle that limitation breeds creativity. **12 Angry Men**'s influence extends beyond drama into horror with films like **Cube** (1997) and thrillers like **Devil** (2010), where confined spaces amplify human nature's darker aspects."
+      }
+    ],
+    "exploreFurther": [
+      "Sidney Lumet's Evolution of Camera Techniques",
+      "The Impact of Real-Time Storytelling in Cinema",
+      "Single-Location Films Through the Decades",
+      "Courtroom Drama's Golden Age",
+      "Character Development Through Confined Spaces"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Hateful Eight",
+          "year": 2015,
+          "slug": "Tarantino's snow-bound western traps eight suspicious characters in a trading post",
+          "poster": "https://image.tmdb.org/t/p/w500/jIywvdPjia2t3eKYbjVTcwBQlG8.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 273248,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jIywvdPjia2t3eKYbjVTcwBQlG8.jpg"
+        },
+        {
+          "title": "Room",
+          "year": 2015,
+          "slug": "A mother and son are confined to a single room, exploring freedom and captivity",
+          "poster": "https://image.tmdb.org/t/p/w500/pCURNjeomWbMSdiP64gj8NVVHTQ.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 264644,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pCURNjeomWbMSdiP64gj8NVVHTQ.jpg"
+        },
+        {
+          "title": "10 Cloverfield Lane",
+          "year": 2016,
+          "slug": "Psychological thriller set in an underground bunker with uncertain threats",
+          "poster": "https://image.tmdb.org/t/p/w500/84Dhwz93vCin6T1PX6ctSvWEuNE.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 333371,
+          "poster_url": "https://image.tmdb.org/t/p/w500/84Dhwz93vCin6T1PX6ctSvWEuNE.jpg"
+        },
+        {
+          "title": "Rear Window",
+          "year": 1954,
+          "slug": "Hitchcock's masterpiece about a photographer confined to his apartment",
+          "poster": "https://image.tmdb.org/t/p/w500/ILVF0eJxHMddjxeQhswFtpMtqx.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 567,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ILVF0eJxHMddjxeQhswFtpMtqx.jpg"
+        },
+        {
+          "title": "The Thing",
+          "year": 1982,
+          "slug": "Scientists trapped in an Antarctic research station face a shapeshifting alien",
+          "poster": "https://image.tmdb.org/t/p/w500/a9RjXOIIB56k2rGoL3Fk3nRHHHQ.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 1091,
+          "poster_url": "https://image.tmdb.org/t/p/w500/a9RjXOIIB56k2rGoL3Fk3nRHHHQ.jpg"
+        },
+        {
+          "title": "Rope",
+          "year": 1948,
+          "slug": "Hitchcock experiment in real-time narrative about two murderous intellectuals",
+          "poster": "https://image.tmdb.org/t/p/w500/9ar6rxLDB8kagAnXZKn6h9smscr.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 1580,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9ar6rxLDB8kagAnXZKn6h9smscr.jpg"
+        },
+        {
+          "title": "Dog Day Afternoon",
+          "year": 1975,
+          "slug": "Al Pacino leads a bank robbery gone wrong in another Lumet classic",
+          "poster": "https://image.tmdb.org/t/p/w500/mavrhr0ig2aCRR8d48yaxtD5aMQ.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 968,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mavrhr0ig2aCRR8d48yaxtD5aMQ.jpg"
+        },
+        {
+          "title": "The Breakfast Club",
+          "year": 1985,
+          "slug": "Five students from different cliques confined for Saturday detention",
+          "poster": "https://image.tmdb.org/t/p/w500/wM9ErA8UVdcce5P4oefQinN8VVV.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 2108,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wM9ErA8UVdcce5P4oefQinN8VVV.jpg"
+        },
+        {
+          "title": "Lifeboat",
+          "year": 1944,
+          "slug": "Hitchcock strands survivors in a lifeboat, testing human nature",
+          "poster": "https://image.tmdb.org/t/p/w500/2QXpzBMJJtmH7JvVf0ZzENvgc1o.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 13321,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2QXpzBMJJtmH7JvVf0ZzENvgc1o.jpg"
+        },
+        {
+          "title": "Sleuth",
+          "year": 1972,
+          "slug": "Two men engage in deadly games of deception in a manor house",
+          "poster": "https://image.tmdb.org/t/p/w500/jAREYLUnYGwPjbQr0vs1s38QLkH.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 993,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jAREYLUnYGwPjbQr0vs1s38QLkH.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}
