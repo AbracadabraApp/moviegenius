@@ -326,6 +326,9 @@ export async function getStaticPaths() {
   const buildStartTime = Date.now();
   const paths = [];
   
+  // Add home page path for /genius
+  paths.push({ params: { params: ['genius'] } });
+  
   // Generate paths for all themes, series, and episodes
   Object.values(geniusConfig.themes).forEach(theme => {
     // Theme page
@@ -396,8 +399,8 @@ export async function getStaticProps({ params }) {
   const routeParams = params?.params || [];
   const [themeId, seriesId, episodeId] = routeParams;
   
-  // Home page
-  if (routeParams.length === 0) {
+  // Home page - handle both empty params and direct /genius route
+  if (routeParams.length === 0 || (routeParams.length === 1 && routeParams[0] === 'genius')) {
     const generationTime = Date.now() - generationStart;
     safetyMonitor.recordMetric('genius_home_generation_time', generationTime);
     
