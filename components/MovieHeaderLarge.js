@@ -17,7 +17,7 @@
  *   tmdbId={550}
  * />
  */
-import { Heart, Bookmark, CirclePlus, ThumbsUp, ThumbsDown, PlayCircle } from 'lucide-react';
+import { Plus, Check, PlayCircle } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { FavoritesManager } from './FavoritesManager';
 
@@ -119,11 +119,37 @@ export default function MovieHeaderLarge({
     return () => window.removeEventListener('moviesUpdated', handleMoviesUpdate);
   }, [mediaId]);
 
-  // Fetch trailer data when component mounts
+  // No poster enhancement - use provided data only for maximum speed
+
+  // Fetch trailer data on component mount for better UX
   useEffect(() => {
     const fetchTrailer = async () => {
-      if (!tmdbId) return;
-      
+      if (tmdbId && !trailerVideoId && !isLoadingTrailer) {
+        setIsLoadingTrailer(true);
+        try {
+          const response = await fetch(`/api/tmdb-trailer?tmdbId=${tmdbId}`);
+          const data = await response.json();
+          
+          if (data.videoId) {
+            setTrailerVideoId(data.videoId);
+          }
+        } catch (error) {
+          console.error('Error fetching trailer:', error);
+        } finally {
+          setIsLoadingTrailer(false);
+        }
+      }
+    };
+
+    fetchTrailer();
+  }, [tmdbId]);
+
+  // Handle trailer modal - fetch trailer on demand
+  const handlePlayTrailer = async () => {
+    if (!tmdbId) return;
+    
+    // Only fetch if we don't have trailer data yet
+    if (!trailerVideoId && !isLoadingTrailer) {
       setIsLoadingTrailer(true);
       try {
         const response = await fetch(`/api/tmdb-trailer?tmdbId=${tmdbId}`);
@@ -131,23 +157,18 @@ export default function MovieHeaderLarge({
         
         if (data.videoId) {
           setTrailerVideoId(data.videoId);
-          // Trailer found and loaded
+          setShowTrailer(true); // Show trailer after loading
         } else {
-          // No trailer available
+          console.log('No trailer available for this movie');
         }
       } catch (error) {
         console.error('Error fetching trailer:', error);
       } finally {
         setIsLoadingTrailer(false);
       }
-    };
-
-    fetchTrailer();
-  }, [tmdbId, title]);
-
-  // Handle trailer modal
-  const handlePlayTrailer = () => {
-    setShowTrailer(true);
+    } else if (trailerVideoId) {
+      setShowTrailer(true); // Show existing trailer
+    }
   };
 
   const handleCloseTrailer = () => {
@@ -176,15 +197,30 @@ export default function MovieHeaderLarge({
         }}
       >
         <button
-          onClick={() => setAddedToList(!addedToList)}
+          onClick={() => {
+            try {
+              const newState = FavoritesManager.toggleBookmark(movieData);
+              setBookmarked(newState);
+            } catch (error) {
+              console.error('Failed to toggle bookmark state:', error);
+            }
+          }}
           style={styles.actionButton}
-          aria-label="Add to list"
+          aria-label={bookmarked ? 'Remove from list' : 'Add to list'}
         >
-          <CirclePlus
-            size={32}
-            color="#6b7280"
-            fill={addedToList ? '#9ca3af' : 'none'}
-          />
+          <div style={styles.iconWithText}>
+            <Plus
+              size={20}
+              color={bookmarked ? '#374151' : '#9ca3af'}
+            />
+            <span style={{
+              ...styles.iconLabel,
+              color: bookmarked ? '#374151' : '#9ca3af',
+              fontWeight: bookmarked ? '600' : '400'
+            }}>
+              Add
+            </span>
+          </div>
         </button>
         
         <button
@@ -194,31 +230,48 @@ export default function MovieHeaderLarge({
               setHearted(newState);
             } catch (error) {
               console.error('Failed to toggle heart state:', error);
-              // Optionally show user feedback here
             }
           }}
           style={styles.actionButton}
-          aria-label={hearted ? 'Remove from favorites' : 'Add to favorites'}
+          aria-label={hearted ? 'Mark as unseen' : 'Mark as seen'}
         >
-          <Heart
-            size={24}
-            color={hearted ? '#ef4444' : '#6b7280'}
-            fill={hearted ? '#ef4444' : 'none'}
-          />
+          <div style={styles.iconWithText}>
+            <Check
+              size={20}
+              color={hearted ? '#374151' : '#9ca3af'}
+              strokeWidth={hearted ? 2.5 : 1.5}
+            />
+            <span style={{
+              ...styles.iconLabel,
+              color: hearted ? '#374151' : '#9ca3af',
+              fontWeight: hearted ? '600' : '400'
+            }}>
+              Seen
+            </span>
+          </div>
         </button>
         
-        {/* Play Trailer Button - Only show if trailer available */}
+        {/* Play Trailer Button - Only show if trailer exists */}
         {trailerVideoId && (
           <button
             onClick={handlePlayTrailer}
             style={styles.actionButton}
             aria-label="Play trailer"
           >
-            <PlayCircle
-              size={28}
-              color="#6b7280"
-              fill="none"
-            />
+            <div style={styles.iconWithText}>
+              <PlayCircle
+                size={20}
+                color="#374151"
+                fill="none"
+              />
+              <span style={{
+                ...styles.iconLabel,
+                color: "#374151",
+                fontWeight: "600"
+              }}>
+                Play
+              </span>
+            </div>
           </button>
         )}
       </div>
@@ -358,13 +411,25 @@ const styles = {
     background: 'none',
     border: 'none',
     cursor: 'pointer',
-    padding: '2px',
+    padding: '6px 8px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: '50%',
+    borderRadius: '8px',
     transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
     transform: 'scale(1)',
+  },
+  iconWithText: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '6px',
+    flexDirection: 'column',
+  },
+  iconLabel: {
+    fontSize: '11px',
+    lineHeight: '1',
+    userSelect: 'none',
+    textAlign: 'center',
   },
   posterContainer: {
     display: 'flex',

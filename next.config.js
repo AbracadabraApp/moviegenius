@@ -10,6 +10,11 @@ process.env.NEXT_PUBLIC_TMDB_API_KEY = process.env.NEXT_PUBLIC_TMDB_API_KEY || '
 process.env.ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY || 'placeholder-anthropic-key';
 
 const nextConfig = {
+  // Dev performance optimizations
+  experimental: {
+    optimizePackageImports: ['lucide-react', '@supabase/supabase-js'],
+  },
+  
   eslint: {
     // ESLint enabled for production builds - only fail on errors, not warnings
     ignoreDuringBuilds: false,

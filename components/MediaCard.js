@@ -1,15 +1,16 @@
 /**
- * MediaCard Component
+ * MediaCard Component - 🔒 LOCKED FOR ORGANIC SLUG GENERATION 🔒
  * 
- * @locked true
+ * ⚠️  CRITICAL: Only uses organic movie poster taglines
+ * ⚠️  NO plot summaries, NO TMDB overviews, NO story descriptions
+ * ⚠️  ONLY calls /api/generate-organic-slug for marketing copy
  * 
- * Self-contained movie card with intelligent data fetching and caching.
- * Handles its own streaming data, slug enhancement, and favorites management.
- * Provides consistent functionality across all pages.
- * 
- * 🔒 CRITICAL COMPONENT - See MediaCard.LOCK for change protocol
+ * 2-row layout design:
+ * Row 1: Poster | Title (Year) | Organic Slug (marketing tagline)
+ * Row 2: Streaming info | Heart/Bookmark icons
  * 
  * @component
+ * @version LOCKED-2025-07-02
  * @example
  * <MediaCard 
  *   title="The Matrix" 
@@ -19,23 +20,23 @@
  *   tmdbId={603}
  * />
  */
-import { Heart, Bookmark } from 'lucide-react';
+import { Plus, Check } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { FavoritesManager } from './FavoritesManager';
 // import useStreamingData from '../hooks/useStreamingData'; // Stubbed out
 
 /**
- * MediaCard - Self-contained interactive movie card component
+ * MediaCard - Simple movie card with 2-row layout
  * 
  * @param {Object} props
  * @param {string} props.title - Movie title (required)
  * @param {number} props.year - Release year (required)
  * @param {string} props.initialSlug - Initial slug/description (optional)
  * @param {string} props.initialPoster - Initial poster URL (optional)
- * @param {string} props.initialStreaming - Initial streaming text from Claude (optional)
+ * @param {string} props.initialStreaming - Initial streaming text (optional)
  * @param {boolean} props.isDetailPage - Whether this is on a detail page (optional)
- * @param {number} props.tmdbId - TMDB ID for navigation (REQUIRED for navigation)
+ * @param {number} props.tmdbId - TMDB ID for navigation (required)
  */
 export default function MediaCard({ 
   title, 
@@ -48,28 +49,9 @@ export default function MediaCard({
 }) {
   const [hearted, setHearted] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
-  const [slug, setSlug] = useState(initialSlug || '');
   const [poster, setPoster] = useState(initialPoster || '/images/placeholder-poster.jpg');
   const [movieTmdbId, setMovieTmdbId] = useState(tmdbId);
-
-  // Update poster when initialPoster prop changes (navigation between movies)
-  useEffect(() => {
-    if (initialPoster) {
-      setPoster(initialPoster);
-    }
-  }, [initialPoster]);
-
-  // Update tmdbId when prop changes
-  useEffect(() => {
-    setMovieTmdbId(tmdbId);
-  }, [tmdbId]);
-
-  // Update slug when initialSlug prop changes
-  useEffect(() => {
-    if (initialSlug) {
-      setSlug(initialSlug);
-    }
-  }, [initialSlug]);
+  const [slug, setSlug] = useState(initialSlug || '');
 
   const router = useRouter();
 
@@ -79,40 +61,31 @@ export default function MediaCard({
   // Movie data object for FavoritesManager
   const movieData = { title, year, slug, poster, id: mediaId };
 
-  // 🔒 PROTECTED: Enhanced data fetching - only for missing poster, NO TMDB SUMMARIES
+  // 🔒 LOCKED: Only generate organic slug if missing - posters come from analysis service
   useEffect(() => {
-    const enhanceMovieData = async () => {
-      // Only enhance poster if missing - NO slug enhancement to prevent TMDB summaries
-      if (poster !== '/images/placeholder-poster.jpg') {
-        return;
-      }
-      
-      try {
-        // Fetch TMDB poster only
-        console.log('Fetching TMDB poster for:', title, year);
-        const response = await fetch('/api/tmdb-poster', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ title, year })
-        });
-        
-        if (response.ok) {
-          const data = await response.json();
-          if (data.poster) {
-            setPoster(data.poster);
+    const generateOrganicSlug = async () => {
+      // 🔒 LOCKED: Get organic slug if missing - ONLY movie poster taglines
+      if (!slug || slug === '') {
+        try {
+          console.log(`🌱 Generating organic slug for: ${title} (${year})`);
+          const slugRes = await fetch('/api/generate-organic-slug', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ title, year })
+          });
+          const slugData = await slugRes.json();
+          if (slugData.slug) {
+            console.log(`✅ Organic slug generated: "${slugData.slug}"`);
+            setSlug(slugData.slug);
           }
-          if (data.tmdb_id) {
-            setMovieTmdbId(data.tmdb_id);
-          }
+        } catch (e) {
+          console.warn('Organic slug generation failed - no fallback', e);
         }
-        
-      } catch (error) {
-        console.error('Error enhancing movie poster:', error);
       }
     };
     
-    enhanceMovieData();
-  }, [title, year, poster]);
+    generateOrganicSlug();
+  }, []); // 🔒 LOCKED: Only run once per component
 
   // Load initial state from localStorage
   useEffect(() => {
@@ -131,25 +104,23 @@ export default function MediaCard({
     return () => window.removeEventListener('moviesUpdated', handleMoviesUpdate);
   }, [mediaId]);
 
-  // 🔒 PROTECTED: handleCardClick - TMDB-first navigation only
   const handleCardClick = (e) => {
     // Don't navigate if clicking on action buttons or if this is a detail page
     if (e.target.closest('button') || isDetailPage) return;
     
-    // 🔒 CRITICAL: TMDB-first navigation - NO fallback routes
-    if (movieTmdbId) {
-      router.push(`/movie/${movieTmdbId}`);
-    } else {
-      console.warn('MediaCard: Missing TMDB ID - cannot navigate for:', title, year);
-      // NO fallback navigation - this enforces TMDB-first architecture
-    }
+    // Let the <a> tag handle navigation naturally
   };
 
+  const linkUrl = movieTmdbId 
+    ? `/movie/${movieTmdbId}` 
+    : `/movie/search?q=${encodeURIComponent(title + ' ' + year)}`;
+
   return (
-    <article
-      style={styles.card}
-      role="article"
-      onClick={handleCardClick}
+    <a href={linkUrl} style={{ textDecoration: 'none', color: 'inherit' }}>
+      <article
+        style={styles.card}
+        role="article"
+        onClick={handleCardClick}
       onMouseDown={(e) => {
         // Immediate visual feedback on click
         e.currentTarget.style.transform = 'translateY(1px) scale(0.98)';
@@ -166,145 +137,169 @@ export default function MediaCard({
         e.currentTarget.style.transform = 'translateY(0)';
       }}
     >
-      <img src={poster} alt={`Poster for ${title}`} style={styles.poster} />
-      <div style={styles.textContainer}>
-        <div style={styles.header}>
-          <div style={styles.title}>{title}</div>
-          <div style={styles.year}>({year})</div>
-        </div>
-        {/* 🔒 PROTECTED: Slug display with TMDB summary filtering */}
-        <div style={styles.slug}>
-          {slug && slug.length > 5 && 
-           !slug.includes('Plot:') && 
-           !slug.includes('Overview:') && 
-           !slug.includes('Synopsis:') &&
-           !slug.includes('Summary:') ? slug : ''}
-        </div>
-        
-        {/* Bottom row: streaming left, icons right */}
-        <div style={styles.bottomRow}>
-          <div style={styles.streamingInfo}>
-            {initialStreaming && initialStreaming !== 'TBD' && (
-              <span style={styles.streamingText}>
-                Streaming on {initialStreaming}
-              </span>
-            )}
+      {/* Row 1: Poster | Title (Year) with slug flowing below */}
+      <div style={styles.firstRow}>
+        <img src={poster} alt={`Poster for ${title}`} style={styles.poster} />
+        <div style={styles.titleAndSlugSection}>
+          <div style={styles.titleRow}>
+            <span style={styles.title}>{title}</span>
+            <span style={styles.year}>({year})</span>
           </div>
-          <div style={styles.iconRow}>
+          <div style={styles.slugSection}>
+            {slug}
+          </div>
+        </div>
+      </div>
+      
+      {/* Row 2: Streaming info | Heart/Bookmark icons */}
+      <div style={styles.secondRow}>
+        <div style={styles.streamingInfo}>
+          {initialStreaming && initialStreaming !== 'TBD' && (
+            <span style={styles.streamingText}>
+              Streaming on {initialStreaming}
+            </span>
+          )}
+        </div>
+        <div style={styles.iconRow}>
           <button
-            onClick={() => {
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
               const newState = FavoritesManager.toggleHeart(movieData);
               setHearted(newState);
             }}
             style={styles.iconButton}
-            aria-label={hearted ? 'Remove from favorites' : 'Add to favorites'}
+            aria-label={hearted ? 'Mark as unseen' : 'Mark as seen'}
             role="button"
           >
-            <Heart
-              size={18}
-              color={hearted ? '#ef4444' : '#374151'}
-              fill={hearted ? '#ef4444' : 'none'}
-            />
+            <div style={styles.iconWithText}>
+              <Check
+                size={16}
+                color={hearted ? '#374151' : '#9ca3af'}
+                strokeWidth={hearted ? 2.5 : 1.5}
+              />
+              <span style={{
+                ...styles.iconLabel,
+                color: hearted ? '#374151' : '#9ca3af',
+                fontWeight: hearted ? '600' : '400'
+              }}>
+                Seen
+              </span>
+            </div>
           </button>
           <button
-            onClick={() => {
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
               const newState = FavoritesManager.toggleBookmark(movieData);
               setBookmarked(newState);
             }}
             style={styles.iconButton}
-            aria-label={bookmarked ? 'Remove bookmark' : 'Bookmark movie'}
+            aria-label={bookmarked ? 'Remove from list' : 'Add to list'}
             role="button"
           >
-            <Bookmark
-              size={18}
-              color={bookmarked ? '#6b7280' : '#374151'}
-              fill={bookmarked ? '#6b7280' : 'none'}
-            />
+            <div style={styles.iconWithText}>
+              <Plus
+                size={16}
+                color={bookmarked ? '#374151' : '#9ca3af'}
+              />
+              <span style={{
+                ...styles.iconLabel,
+                color: bookmarked ? '#374151' : '#9ca3af',
+                fontWeight: bookmarked ? '600' : '400'
+              }}>
+                Add
+              </span>
+            </div>
           </button>
-          </div>
         </div>
       </div>
     </article>
+    </a>
   );
 }
 
 const styles = {
   card: {
-    position: 'relative',
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'column',
     borderRadius: '12px',
     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.20)',
     padding: '12px',
     backgroundColor: 'white',
-    alignItems: 'flex-start',
     width: '100%',
-    maxWidth: '100%', // Prevent expansion beyond container
-    boxSizing: 'border-box', // Include padding in width calculation
+    maxWidth: '100%',
+    boxSizing: 'border-box',
     transition: 'box-shadow 0.15s ease, transform 0.1s ease',
     cursor: 'pointer',
     marginBottom: '8px',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
+  // Row 1: Poster | Title (Year) with slug flowing below
+  firstRow: {
+    display: 'flex',
+    alignItems: 'flex-start',
+    gap: '12px',
+    marginBottom: '8px',
+  },
   poster: {
-    width: '100px',
-    height: '150px',
+    width: '100px',  // Increased from 80px (25% bigger)
+    height: '150px', // Increased from 120px (25% bigger)
     objectFit: 'cover',
     borderRadius: '8px',
-    marginRight: '12px',
+    flexShrink: 0,
   },
-  textContainer: {
+  titleAndSlugSection: {
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
-    minHeight: '150px', // Restored original working height
-    position: 'relative',
-    minWidth: 0, // Allow flex child to shrink below content size
-    overflow: 'hidden', // Prevent text overflow
+    gap: '4px',
   },
-  header: {
+  titleRow: {
     display: 'flex',
-    flexDirection: 'row',
+    alignItems: 'baseline',
     gap: '6px',
-    fontSize: '18px',
-    lineHeight: '1.2',
-    fontFamily: 'inherit',
+    flexWrap: 'wrap',
   },
   title: {
+    fontSize: '16px',
     fontWeight: '600',
-    lineHeight: '1.2',
-    fontFamily: 'inherit',
     color: '#000',
+    lineHeight: '1.2',
+    wordWrap: 'break-word',
+    overflowWrap: 'break-word',
+    hyphens: 'auto',
   },
   year: {
+    fontSize: '14px',
     color: '#666',
     fontWeight: 'normal',
-    fontFamily: 'inherit',
   },
-  slug: {
+  slugSection: {
     fontSize: '14px',
     color: '#333',
-    marginTop: '4px',
-    fontFamily: 'inherit',
+    lineHeight: '1.3',
+    overflow: 'hidden',
   },
-  bottomRow: {
+  // Row 2: Streaming info | Icons (full width below first row)
+  secondRow: {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginTop: 'auto', // Pushes to bottom of flex container
     paddingTop: '8px',
+    marginTop: '4px',
+    width: '100%',
   },
   streamingInfo: {
     flex: 1,
-    minWidth: 0, // Allow shrinking
-    marginRight: '8px', // Space before icons
+    minWidth: 0,
+    marginRight: '8px',
   },
   streamingText: {
-    fontSize: '14px',
-    color: '#6b7280', // Mid grey
-    fontWeight: '300', // 100 lighter than slug's normal (400)
-    fontFamily: 'inherit',
-    wordWrap: 'break-word', // Wrap long service names
+    fontSize: '13px',
+    color: '#6b7280',
+    fontWeight: '300',
+    wordWrap: 'break-word',
     lineHeight: '1.3',
   },
   iconRow: {
@@ -317,11 +312,21 @@ const styles = {
     background: 'none',
     border: 'none',
     cursor: 'pointer',
-    padding: '4px',
+    padding: '4px 6px',
     borderRadius: '4px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     transition: 'background-color 0.2s ease',
+  },
+  iconWithText: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '4px',
+  },
+  iconLabel: {
+    fontSize: '12px',
+    lineHeight: '1',
+    userSelect: 'none',
   },
 };

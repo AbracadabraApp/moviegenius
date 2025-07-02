@@ -28,8 +28,7 @@ export default function MovieDetailPage({
   sections: staticSections,
   exploreFurther: staticExploreFurther,
   moreIdeas: staticMoreIdeas,
-  source,
-  overview
+  source
 }) {
   const router = useRouter();
   const { id } = router.query;
@@ -65,12 +64,10 @@ export default function MovieDetailPage({
   };
 
 
-  // Navigation scroll reset
+  // Navigation scroll reset - always scroll to top on page load
   useEffect(() => {
-    if (id && tmdbId) {
-      window.scrollTo(0, 0);
-    }
-  }, [id, tmdbId]);
+    window.scrollTo(0, 0);
+  }, [id]); // Reset whenever the movie ID changes
 
   // Load favorites state
   useEffect(() => {
@@ -170,7 +167,6 @@ export default function MovieDetailPage({
                 ) : (
                   <ContentPlaceholder 
                     source={source}
-                    overview={overview}
                     title={title}
                     year={year}
                   />
@@ -324,7 +320,7 @@ function MovieContent({ sections, exploreFurther, moreIdeas, title, year, tmdbId
 }
 
 // Content placeholder for movies without analysis
-function ContentPlaceholder({ source, overview, title, year }) {
+function ContentPlaceholder({ source, title, year }) {
   return (
     <div style={styles.claudeContent}>
     </div>
@@ -389,6 +385,8 @@ const styles = {
     lineHeight: '1.6',
     color: '#374151',
     marginBottom: '16px',
+    paddingLeft: '16px',
+    paddingRight: '12px',
   },
   errorContainer: {
     padding: '40px 16px',
@@ -463,8 +461,8 @@ export async function getStaticProps({ params }) {
             tmdbId: tmdbMovie.id,
             error: null,
             hasAnalysis: false, // TMDB discoveries start without analysis
-            source: 'tmdb_discovery',
-            overview: tmdbMovie.overview
+            source: 'tmdb_discovery'
+            // Note: overview intentionally omitted to prevent TMDB summary contamination
           },
           revalidate: 60 // ISR for TMDB discoveries
         };

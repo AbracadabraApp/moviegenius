@@ -11,7 +11,13 @@ function FeaturedFilmsSection({
   console.log('FeaturedFilmsSection:', { 
     title, 
     moviesCount: movies?.length, 
-    movies: movies?.slice(0, 3).map(m => ({ title: m.title, year: m.year, tmdb_id: m.tmdb_id }))
+    movies: movies?.slice(0, 3).map(m => ({ 
+      title: m.title, 
+      year: m.year, 
+      tmdb_id: m.tmdb_id, 
+      slug: m.slug?.substring(0, 60) + (m.slug?.length > 60 ? '...' : ''),
+      slugLength: m.slug?.length 
+    }))
   });
   
   if (!movies || movies.length === 0) {

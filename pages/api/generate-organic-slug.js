@@ -1,4 +1,10 @@
-// pages/api/generate-organic-slug.js - Organic slug generation for viewed movies
+// pages/api/generate-organic-slug.js - 🔒 LOCKED ORGANIC SLUG GENERATION 🔒
+// 
+// ⚠️  CRITICAL: This API generates ONLY movie poster taglines
+// ⚠️  NO plot summaries, NO story descriptions, NO character names
+// ⚠️  PROTECTED against TMDB summary contamination
+// 
+// @version LOCKED-2025-07-02
 import { createClient } from '@supabase/supabase-js';
 import { Anthropic } from '@anthropic-ai/sdk';
 
@@ -23,9 +29,9 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'Title and year required' });
     }
 
-    console.log(`🌱 Organic slug generation: ${title} (${year})`);
+    console.log(`🌱 🔒 LOCKED Organic slug generation: ${title} (${year})`);
 
-    // Check if we already have a good slug in the database
+    // 🔒 LOCKED: Check if we already have a good slug in the database
     const { data: movie } = await supabase
       .from('movies')
       .select('id, slug')
