@@ -322,7 +322,8 @@ async function enrichMovieData(movies, episodeNumber) {
   for (const movie of movies) {
     try {
       // Use the existing /api/tmdb-poster endpoint that the site already uses
-      const response = await fetch('http://localhost:3000/api/tmdb-poster', {
+      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+      const response = await fetch(`${baseUrl}/api/tmdb-poster`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -369,7 +370,8 @@ async function enrichMovieData(movies, episodeNumber) {
 // Fallback using the /api/lookup-movie endpoint
 async function tryLookupMovieEndpoint(movie) {
   try {
-    const response = await fetch('http://localhost:3000/api/lookup-movie', {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+    const response = await fetch(`${baseUrl}/api/lookup-movie`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

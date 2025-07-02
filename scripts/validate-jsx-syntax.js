@@ -24,7 +24,8 @@ const EXCLUDE_PATTERNS = [
   '.git',
   'coverage',
   'public',
-  'data/episodes/backups'
+  'data/episodes/backups',
+  'archive'
 ];
 
 /**
@@ -90,8 +91,23 @@ function validateJSXSyntax(filePath) {
       let openCount = 0;
       let closeCount = 0;
       
-      // Count JSX fragments from start of function/return block to current line
-      let startIdx = Math.max(0, i - 50); // Look back further but with limit
+      // Find the start of the current function or return block
+      let startIdx = i;
+      for (let j = i - 1; j >= 0; j--) {
+        const checkLine = lines[j].trim();
+        if (checkLine.includes('function ') || 
+            checkLine.includes('return (') || 
+            checkLine.includes('return(') ||
+            checkLine.includes('=> (') ||
+            checkLine.includes('=>(')) {
+          startIdx = j;
+          break;
+        }
+        // Don't go back more than 100 lines for safety
+        if (i - j > 100) break;
+      }
+      
+      // Count JSX fragments from function/return start to current line
       for (let j = startIdx; j <= i; j++) {
         const checkLine = lines[j];
         openCount += (checkLine.match(/<>/g) || []).length;
@@ -100,8 +116,8 @@ function validateJSXSyntax(filePath) {
         }
       }
       
-      // If we have more opens than closes, this closing tag is likely valid
-      if (openCount <= closeCount) {
+      // If we have more closes than opens, this closing tag is orphaned
+      if (closeCount >= openCount) {
         errors.push({
           type: 'orphaned_jsx_closing',
           line: lineNumber,
