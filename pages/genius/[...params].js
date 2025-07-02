@@ -491,21 +491,7 @@ export async function getStaticProps({ params }) {
       const parsedContent = JSON.parse(contentData);
       episodeContent = parsedContent.content;
       
-      // Pre-process heavy operations at build time instead of runtime
-      if (episodeContent) {
-        const { extractEpisodeMovies } = await import('../../lib/enhanced-entity-linker');
-        const { extractEpisodePeople } = await import('../../lib/episode-people-extractor');
-        
-        // Extract movies and people at build time
-        episodeMovies = extractEpisodeMovies(episodeContent);
-        try {
-          episodePeople = await extractEpisodePeople(episodeContent);
-        } catch (peopleError) {
-          console.warn('Failed to extract people at build time:', peopleError);
-          episodePeople = { directors: [], actors: [], writers: [], allPeople: [] };
-        }
-      }
-      
+      // Episode content loaded successfully
       console.log(`Loaded episode ${themeId}-${seriesId}-${episodeId} from JSON file`);
     } else {
       console.log(`Episode file not found: ${contentPath}`);
@@ -525,10 +511,7 @@ export async function getStaticProps({ params }) {
         theme, 
         series, 
         episode, 
-        episodeContent,
-        // Pre-processed data for instant rendering
-        episodeMovies,
-        episodePeople
+        episodeContent
       },
       themeId,
       seriesId,
