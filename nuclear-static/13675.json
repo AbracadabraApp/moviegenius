@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "Frosty the Snowman",
+    "year": 1969,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/gw7ie4W3iW8nefnZ4kuw8dgYNM2.jpg",
+    "initialStreaming": null,
+    "tmdbId": 13675,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Frosty the Snowman** (1969) stands as a defining holiday animation that captured the magic of Rankin/Bass Productions' golden era. Following their success with **Rudolph the Red-Nosed Reindeer** (1964), the studio applied their signature style to bring Gene Autry's 1950 hit song to life. The special's hand-drawn animation marked a departure from Rankin/Bass's usual stop-motion \"Animagic\" technique seen in classics like **Santa Claus Is Comin' to Town** (1970), creating a warmer, more fluid aesthetic that perfectly matched the story's whimsical tone."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Rudolph the Red-Nosed Reindeer",
+            "year": 1964,
+            "slug": "The definitive Rankin/Bass holiday special featuring stop-motion animation and memorable songs",
+            "poster": "https://image.tmdb.org/t/p/w500/xjAElUhXuc7zFJPj3qUHjcySNsE.jpg",
+            "initialStreaming": "Freeform",
+            "tmdb_id": 13382,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xjAElUhXuc7zFJPj3qUHjcySNsE.jpg"
+          },
+          {
+            "title": "Santa Claus Is Comin' to Town",
+            "year": 1970,
+            "slug": "Fred Astaire narrates this origin story of Santa Claus with classic stop-motion animation",
+            "poster": "https://image.tmdb.org/t/p/w500/8BYZEKB0BQkbniS1WRzPaU38cmp.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 13400,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8BYZEKB0BQkbniS1WRzPaU38cmp.jpg"
+          },
+          {
+            "title": "The Year Without a Santa Claus",
+            "year": 1974,
+            "slug": "Features the iconic Heat Miser and Snow Miser in a quest to restore Christmas spirit",
+            "poster": "https://image.tmdb.org/t/p/w500/aG5aIRc4fuKtVXuseoYiNWdNQpC.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 13397,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aG5aIRc4fuKtVXuseoYiNWdNQpC.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Jackie Vernon's warm, jovial voice performance as Frosty created an endearing character that would influence holiday specials for decades. The special's villain, Professor Hinkle, established a template for bumbling antagonists in children's animation, later echoed in shows like **A Garfield Christmas Special** (1987). The friendship between Karen and Frosty touched on themes of loss and impermanence that would later be explored more deeply in holiday films like **The Snowman** (1982). SUBHEAD: Animation Innovation and Legacy"
+      },
+      {
+        "type": "text",
+        "content": "While **Frosty the Snowman** (1969) may appear simple by today's standards, its influence on holiday animation remains significant. The special's success helped establish the template for adapting songs into holiday specials, paving the way for productions like **Jack Frost** (1979) and **The Little Drummer Boy** (1968). The character's enduring popularity led to several sequels, including **Frosty's Winter Wonderland** (1976) and **Frosty Returns** (1992), though none captured the innocent charm of the original."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Rankin/Bass Holiday Specials",
+      "The Art of Adapting Songs into Animated Features",
+      "Voice Acting in Classic Holiday Animation",
+      "The Impact of Holiday Specials on American Pop Culture",
+      "The Technical Innovation of 1960s Television Animation"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Little Drummer Boy",
+          "year": 1968,
+          "slug": "Classic Rankin/Bass special about a boy's gift to baby Jesus",
+          "poster": "https://image.tmdb.org/t/p/w500/oqnVoHW2aCOIFVHUCSxcm1XWeh9.jpg",
+          "initialStreaming": "Freeform",
+          "tmdb_id": 18846,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oqnVoHW2aCOIFVHUCSxcm1XWeh9.jpg"
+        },
+        {
+          "title": "Jack Frost",
+          "year": 1979,
+          "slug": "Rankin/Bass special about winter's guardian seeking to become human",
+          "poster": "https://image.tmdb.org/t/p/w500/rky3WOB9AZ4fELooSKWwmO9qRQq.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 26538,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rky3WOB9AZ4fELooSKWwmO9qRQq.jpg"
+        },
+        {
+          "title": "'Twas the Night Before Christmas",
+          "year": 1974,
+          "slug": "Rankin/Bass adaptation of the classic Christmas poem",
+          "poster": "https://image.tmdb.org/t/p/w500/i5qPfBSeKjNbFPl1CseOUSNqKGe.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 26547,
+          "poster_url": "https://image.tmdb.org/t/p/w500/i5qPfBSeKjNbFPl1CseOUSNqKGe.jpg"
+        },
+        {
+          "title": "The First Christmas: The Story of the First Christmas Snow",
+          "year": 1975,
+          "slug": "Heartwarming tale of a blind shepherd boy",
+          "poster": "https://image.tmdb.org/t/p/w500/80EHZIxm0ljhL7DZB2Q2HTEYJFZ.jpg",
+          "initialStreaming": "DVD",
+          "tmdb_id": 80529,
+          "poster_url": "https://image.tmdb.org/t/p/w500/80EHZIxm0ljhL7DZB2Q2HTEYJFZ.jpg"
+        },
+        {
+          "title": "Cricket on the Hearth",
+          "year": 1967,
+          "slug": "Animated adaptation of Charles Dickens' holiday story",
+          "poster": "https://image.tmdb.org/t/p/w500/3ZRYBDUyGpq3ylyIePvZntvmvHz.jpg",
+          "initialStreaming": "DVD",
+          "tmdb_id": 49743,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3ZRYBDUyGpq3ylyIePvZntvmvHz.jpg"
+        },
+        {
+          "title": "The Life and Adventures of Santa Claus",
+          "year": 1985,
+          "slug": "Rankin/Bass take on L. Frank Baum's Santa origin story",
+          "poster": "https://image.tmdb.org/t/p/w500/8jnmxV604BEzVSP6vf27RxOyGda.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 48880,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8jnmxV604BEzVSP6vf27RxOyGda.jpg"
+        },
+        {
+          "title": "Nestor, the Long-Eared Christmas Donkey",
+          "year": 1977,
+          "slug": "Tale of the donkey who carried Mary to Bethlehem",
+          "poster": "https://image.tmdb.org/t/p/w500/vx9q5vezpk2PJfMartzwHsMNdIw.jpg",
+          "initialStreaming": "Freeform",
+          "tmdb_id": 26537,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vx9q5vezpk2PJfMartzwHsMNdIw.jpg"
+        },
+        {
+          "title": "The Little Drummer Boy Book II",
+          "year": 1976,
+          "slug": "Sequel continuing the story of Aaron and his drum",
+          "poster": "https://image.tmdb.org/t/p/w500/iMv49TndLzHAwSZzxf6xekP6zM3.jpg",
+          "initialStreaming": "DVD",
+          "tmdb_id": 26536,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iMv49TndLzHAwSZzxf6xekP6zM3.jpg"
+        },
+        {
+          "title": "Pinocchio's Christmas",
+          "year": 1980,
+          "slug": "Holiday adventure with the famous wooden puppet",
+          "poster": "https://image.tmdb.org/t/p/w500/46n9xy5tMG74jpepbfISVj03GIh.jpg",
+          "initialStreaming": "DVD",
+          "tmdb_id": 50934,
+          "poster_url": "https://image.tmdb.org/t/p/w500/46n9xy5tMG74jpepbfISVj03GIh.jpg"
+        },
+        {
+          "title": "Mouse on the Mayflower",
+          "year": 1968,
+          "slug": "Rankin/Bass Thanksgiving special about the Pilgrims' journey",
+          "poster": "https://image.tmdb.org/t/p/w500/g4dHOlkxCzqVke8wtbQpMKTzog4.jpg",
+          "initialStreaming": "DVD",
+          "tmdb_id": 280864,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g4dHOlkxCzqVke8wtbQpMKTzog4.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

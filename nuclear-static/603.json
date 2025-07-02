@@ -1,0 +1,187 @@
+{
+  "props": {
+    "title": "The Matrix",
+    "year": 1999,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/p96dm7sCMn4VYAStA6siNz30G1r.jpg",
+    "initialStreaming": "HBO Max",
+    "tmdbId": 603,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Matrix** (1999) revolutionized action cinema with its groundbreaking blend of cyberpunk philosophy and martial arts spectacle. The Wachowskis crafted a defining millennial narrative about reality versus simulation that borrowed from **Ghost in the Shell** (1995) and **Dark City** (1998), while pushing Hollywood effects into new territory. The film's \"bullet time\" sequences, where time appears to freeze while the camera moves around the action, influenced everything from **X-Men** (2000) to **Wanted** (2008). Beyond technical innovation, The Matrix tapped into pre-Y2K anxieties about technology's growing control over human life."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Dark City",
+            "year": 1998,
+            "slug": "A man discovers his reality is an alien experiment in this noir-tinged sci-fi that preceded The Matrix",
+            "poster": "https://image.tmdb.org/t/p/w500/tNPEGju4DpTdbhBphNmZoEi9Bd3.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 2666,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tNPEGju4DpTdbhBphNmZoEi9Bd3.jpg"
+          },
+          {
+            "title": "Ghost in the Shell",
+            "year": 1995,
+            "slug": "Landmark anime about a cyborg cop questioning consciousness and reality",
+            "poster": "https://image.tmdb.org/t/p/w500/9gC88zYUBARRSThcG93MvW14sqx.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 9323,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9gC88zYUBARRSThcG93MvW14sqx.jpg"
+          },
+          {
+            "title": "eXistenZ",
+            "year": 1999,
+            "slug": "Cronenberg's twisted take on virtual reality and gaming addiction",
+            "poster": "https://image.tmdb.org/t/p/w500/kETKF0JhdTPn1knci8CAdYL0d79.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 1946,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kETKF0JhdTPn1knci8CAdYL0d79.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The Matrix's impact extends far beyond action sequences. Its philosophical core - questioning reality and free will - spawned countless imitators. **Inception** (2010) explored nested dream realities, while **Source Code** (2011) played with simulated timelines. The film's religious symbolism and messiah narrative influenced **Children of Men** (2006) and **V for Vendetta** (2005), another Wachowski project. Even its aesthetic - the green-tinted digital rain, black trench coats, and wraparound sunglasses - defined cyberpunk visual style for a generation."
+      },
+      {
+        "type": "text",
+        "content": "The original's success led to an expanded universe including two sequels, **The Matrix Reloaded** (2003) and **The Matrix Revolutions** (2003), animated shorts in **The Animatrix** (2003), and the recent **The Matrix Resurrections** (2021). While these follow-ups received mixed reactions, they further explored the original's themes of choice, control, and the nature of reality. The franchise's influence appears in works like **Ready Player One** (2018) and **Free Guy** (2021), which examine similar questions about virtual worlds and authentic existence. SUBHEAD: Legacy and Cultural Impact"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Inception",
+            "year": 2010,
+            "slug": "Dream-heist thriller exploring layers of reality and consciousness",
+            "poster": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 27205,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg"
+          },
+          {
+            "title": "Ready Player One",
+            "year": 2018,
+            "slug": "Virtual reality adventure celebrating gaming and pop culture",
+            "poster": "https://image.tmdb.org/t/p/w500/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 333339,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The Matrix's examination of simulation theory gained new relevance in the social media era. Films like **Her** (2013) and **Ex Machina** (2014) built on its questions about artificial intelligence and human consciousness. The \"red pill\" metaphor entered popular culture, though often divorced from its original context. Meanwhile, the film's groundbreaking visual effects pipeline revolutionized Hollywood production, paving the way for the digital effects era seen in everything from **Avatar** (2009) to **Doctor Strange** (2016)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Cyberpunk Cinema: From Blade Runner to The Matrix",
+      "Philosophy in The Matrix: Plato's Cave, Simulation Theory, and Free Will",
+      "The Wachowskis' Filmography and Recurring Themes",
+      "The Matrix's Visual Effects Revolution and Industry Impact",
+      "Cyberpunk Anime Influences on The Matrix"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Blade Runner",
+          "year": 1982,
+          "slug": "Noir cyberpunk classic about artificial humans",
+          "poster": "https://image.tmdb.org/t/p/w500/63N9uy8nd9j7Eog2axPQ8lbr3Wj.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 78,
+          "poster_url": "https://image.tmdb.org/t/p/w500/63N9uy8nd9j7Eog2axPQ8lbr3Wj.jpg"
+        },
+        {
+          "title": "Total Recall",
+          "year": 1990,
+          "slug": "Mind-bending sci-fi about implanted memories",
+          "poster": "https://image.tmdb.org/t/p/w500/wVbeL6fkbTKSmNfalj4VoAUUqJv.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 861,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wVbeL6fkbTKSmNfalj4VoAUUqJv.jpg"
+        },
+        {
+          "title": "Minority Report",
+          "year": 2002,
+          "slug": "Pre-crime thriller questioning free will",
+          "poster": "https://image.tmdb.org/t/p/w500/ccqpHq5tk5W4ymbSbuoy4uYOxFI.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 180,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ccqpHq5tk5W4ymbSbuoy4uYOxFI.jpg"
+        },
+        {
+          "title": "The Thirteenth Floor",
+          "year": 1999,
+          "slug": "Virtual reality mystery released same year as Matrix",
+          "poster": "https://image.tmdb.org/t/p/w500/7oaie3ZBc9UuWZLF24crro1pone.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 1090,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7oaie3ZBc9UuWZLF24crro1pone.jpg"
+        },
+        {
+          "title": "Equilibrium",
+          "year": 2002,
+          "slug": "Dystopian action inspired by Matrix's style",
+          "poster": "https://image.tmdb.org/t/p/w500/eW3YrxOh3rd6PnRgMSftYoflvfe.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 7299,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eW3YrxOh3rd6PnRgMSftYoflvfe.jpg"
+        },
+        {
+          "title": "Johnny Mnemonic",
+          "year": 1995,
+          "slug": "Gibson cyberpunk adaptation starring Keanu Reeves",
+          "poster": "https://image.tmdb.org/t/p/w500/iH8Jgi8qvb7pnBfI8fVGaUbyRna.jpg",
+          "initialStreaming": "Pluto",
+          "tmdb_id": 9886,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iH8Jgi8qvb7pnBfI8fVGaUbyRna.jpg"
+        },
+        {
+          "title": "Strange Days",
+          "year": 1995,
+          "slug": "Near-future thriller about memory recording",
+          "poster": "https://image.tmdb.org/t/p/w500/rY5BrDRcYAKE0BYmmT66YG6Uy5Q.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 281,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rY5BrDRcYAKE0BYmmT66YG6Uy5Q.jpg"
+        },
+        {
+          "title": "Videodrome",
+          "year": 1983,
+          "slug": "Cronenberg's prescient media horror",
+          "poster": "https://image.tmdb.org/t/p/w500/qqqkiZSU9EBGZ1KiDmfn07S7qvv.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 837,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qqqkiZSU9EBGZ1KiDmfn07S7qvv.jpg"
+        },
+        {
+          "title": "The Lawnmower Man",
+          "year": 1992,
+          "slug": "Early virtual reality thriller",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Hackers",
+          "year": 1995,
+          "slug": "Stylish tech thriller that influenced Matrix's aesthetic",
+          "poster": "https://image.tmdb.org/t/p/w500/qfx2EENW1sOpKNVKLzr7VOhlxkt.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 10428,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qfx2EENW1sOpKNVKLzr7VOhlxkt.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

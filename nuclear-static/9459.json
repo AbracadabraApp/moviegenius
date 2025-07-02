@@ -1,0 +1,219 @@
+{
+  "props": {
+    "title": "Woodstock",
+    "year": 1970,
+    "initialSlug": "Epic documentary of 1969's legendary music festival",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/cnfhelfQucSb4Y54yFgtnSNhsAT.jpg",
+    "initialStreaming": null,
+    "tmdbId": 9459,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Woodstock** (1970) revolutionized concert documentaries through its immersive split-screen techniques and raw verité style. Director Michael Wadleigh captured the massive counterculture gathering with an unprecedented level of intimacy, deploying multiple 16mm cameras to document both the legendary performances and the sprawling humanity of 400,000 attendees. The film's innovative editing by Thelma Schoonmaker and Martin Scorsese created a hypnotic flow between music and crowd scenes, establishing visual rhythms that influenced decades of music documentaries like **The Last Waltz** (1978) and **Stop Making Sense** (1984)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Monterey Pop",
+            "year": 1968,
+            "slug": "D.A. Pennebaker's groundbreaking festival doc featuring Jimi Hendrix, The Who, and Janis Joplin",
+            "poster": "https://image.tmdb.org/t/p/w500/wEB3c5Y5spAHOQaFWcsfFky3SWb.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 42632,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wEB3c5Y5spAHOQaFWcsfFky3SWb.jpg"
+          },
+          {
+            "title": "Gimme Shelter",
+            "year": 1970,
+            "slug": "The Rolling Stones at Altamont, marking the dark end of the 60s",
+            "poster": "https://image.tmdb.org/t/p/w500/6Cem6KcIClKit3KhKYou4aXFxob.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 132,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6Cem6KcIClKit3KhKYou4aXFxob.jpg"
+          },
+          {
+            "title": "Festival Express",
+            "year": 2003,
+            "slug": "Intimate footage of 1970 train tour with Grateful Dead, Janis Joplin, and The Band",
+            "poster": "https://image.tmdb.org/t/p/w500/5ehULJQMNCdASy2i7jaTbcIvQKA.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 14770,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5ehULJQMNCdASy2i7jaTbcIvQKA.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The cultural impact of Woodstock extends far beyond its technical innovations. The film captured a pivotal moment when the idealistic dreams of the 1960s peaked before fracturing. Later documentaries like **Wattstax** (1973) and **Summer of Soul** (2021) followed Woodstock's template of contextualizing music within larger social movements. The film's candid interviews with locals, festivalgoers, and performers created an oral history of the counterculture that remains vital historical documentation."
+      },
+      {
+        "type": "text",
+        "content": "Woodstock's influence on concert films continues through modern works like **Amazing Grace** (2018) and **Summer of Soul** (2021), which similarly use archival footage to explore watershed musical moments. The film's approach to capturing impromptu moments and audience reactions established a documentary language that evolved through works like **The Kids Are Alright** (1979) and **Dave Chappelle's Block Party** (2005). SUBHEAD: The Legacy of Music Festival Documentation"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Message to Love: The Isle of Wight Festival",
+            "year": 1997,
+            "slug": "The 1970 British festival featuring Hendrix's last major performance",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's technical achievements in capturing live music performances set new standards. The crew's innovative use of multiple cameras and synchronized sound recording influenced countless subsequent concert films. **Stop Making Sense** (1984) built on Woodstock's techniques for capturing stage dynamics, while **Sign o' the Times** (1987) took the split-screen aesthetic to new creative heights. The film's success also helped establish the commercial viability of feature-length concert documentaries."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Concert Film Technology - From 16mm to Digital",
+      "Music Festival Culture Before and After Woodstock",
+      "The Role of Documentary Film in Preserving 1960s Counterculture",
+      "Split-Screen Techniques in Documentary Filmmaking",
+      "The Impact of Woodstock on Modern Music Festival Documentation"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Don't Look Back",
+          "year": 1967,
+          "slug": "Bob Dylan's 1965 UK tour by D.A. Pennebaker",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Let It Be",
+          "year": 1970,
+          "slug": "The Beatles' final public performance",
+          "poster": "https://image.tmdb.org/t/p/w500/rYvoOo6h48xhDGIIaiP8XyEeVVQ.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 20556,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rYvoOo6h48xhDGIIaiP8XyEeVVQ.jpg"
+        },
+        {
+          "title": "The Last Waltz",
+          "year": 1978,
+          "slug": "The Band's farewell concert directed by Scorsese",
+          "poster": "https://image.tmdb.org/t/p/w500/2K7CFH0AIHnGrA4yQjPCoIB5CmQ.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 13963,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2K7CFH0AIHnGrA4yQjPCoIB5CmQ.jpg"
+        },
+        {
+          "title": "Stop Making Sense",
+          "year": 1984,
+          "slug": "Talking Heads at their peak by Jonathan Demme",
+          "poster": "https://image.tmdb.org/t/p/w500/utNpurUe1MMjEaHqvpkfxgfpSnV.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 24128,
+          "poster_url": "https://image.tmdb.org/t/p/w500/utNpurUe1MMjEaHqvpkfxgfpSnV.jpg"
+        },
+        {
+          "title": "Sign o' the Times",
+          "year": 1987,
+          "slug": "Prince concert film directed by Prince himself",
+          "poster": "https://image.tmdb.org/t/p/w500/4XXEb3lv73QXX7zNdqSYoH5CdCO.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 38178,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4XXEb3lv73QXX7zNdqSYoH5CdCO.jpg"
+        },
+        {
+          "title": "Decline of Western Civilization",
+          "year": 1981,
+          "slug": "LA punk scene documentary",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Wattstax",
+          "year": 1973,
+          "slug": "The \"Black Woodstock\" featuring Isaac Hayes",
+          "poster": "https://image.tmdb.org/t/p/w500/gVPZCtlPDLTyEk4rDY1O7mXjqYv.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 2261,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gVPZCtlPDLTyEk4rDY1O7mXjqYv.jpg"
+        },
+        {
+          "title": "Dave Chappelle's Block Party",
+          "year": 2005,
+          "slug": "Hip-hop and comedy in Brooklyn",
+          "poster": "https://image.tmdb.org/t/p/w500/lGS9iKGGRjM049ZGK4J8TvQeBHg.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 292,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lGS9iKGGRjM049ZGK4J8TvQeBHg.jpg"
+        },
+        {
+          "title": "Amazing Grace",
+          "year": 2018,
+          "slug": "Aretha Franklin's 1972 gospel concert",
+          "poster": "https://image.tmdb.org/t/p/w500/eABsBr5TnW8FBSSSsAKFnwDW1BW.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 356199,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eABsBr5TnW8FBSSSsAKFnwDW1BW.jpg"
+        },
+        {
+          "title": "Summer of Soul",
+          "year": 2021,
+          "slug": "The 1969 Harlem Cultural Festival",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Kids Are Alright",
+          "year": 1979,
+          "slug": "The Who documentary spanning their career",
+          "poster": "https://image.tmdb.org/t/p/w500/30KLQduKvVzuYbqHMrWBcDHKs7O.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 22984,
+          "poster_url": "https://image.tmdb.org/t/p/w500/30KLQduKvVzuYbqHMrWBcDHKs7O.jpg"
+        },
+        {
+          "title": "Jazz on a Summer's Day",
+          "year": 1959,
+          "slug": "Newport Jazz Festival documentary",
+          "poster": "https://image.tmdb.org/t/p/w500/ltdAJF4sVIRAOJmHIUzfLylrVRr.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 53434,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ltdAJF4sVIRAOJmHIUzfLylrVRr.jpg"
+        },
+        {
+          "title": "Mad Dogs & Englishmen",
+          "year": 1971,
+          "slug": "Joe Cocker's 1970 tour",
+          "poster": "https://image.tmdb.org/t/p/w500/mV0CSLNLQNhP4QU99JTbSi21kXB.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 68736,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mV0CSLNLQNhP4QU99JTbSi21kXB.jpg"
+        },
+        {
+          "title": "Soul Power",
+          "year": 2008,
+          "slug": "1974 music festival in Zaire",
+          "poster": "https://image.tmdb.org/t/p/w500/wZmNJsfk8zgQNctWScf4a1oo7pv.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 26888,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wZmNJsfk8zgQNctWScf4a1oo7pv.jpg"
+        },
+        {
+          "title": "The Other One",
+          "year": 2014,
+          "slug": "Grateful Dead from Bob Weir's perspective",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

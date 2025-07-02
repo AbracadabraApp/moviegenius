@@ -1,0 +1,176 @@
+{
+  "props": {
+    "title": "Orphée",
+    "year": 1950,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/wcUmMtipWBBx7lpsfpPsUM4Snh1.jpg",
+    "initialStreaming": null,
+    "tmdbId": 4558,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Jean Cocteau's **Orphée** (1950) revolutionized mythological cinema by transplanting the Greek legend of Orpheus into post-war Paris. The film transforms Death into a mysterious princess traveling by Rolls-Royce, while poetry emanates from car radios in cryptic messages. This masterpiece influenced countless directors - you can see its DNA in **Pan's Labyrinth** (2006) and **The Shape of Water** (2017). Cocteau's practical effects, including his famous mercury mirror portals, created surreal magic without CGI that still captivates viewers today."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Beauty and the Beast",
+            "year": 1946,
+            "slug": "Cocteau's other masterpiece uses practical effects and poetic imagery to bring the fairy tale to haunting life",
+            "poster": "https://image.tmdb.org/t/p/w500/iYSe3yrkma0e1B0wWPXgr8w5sDN.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 648,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iYSe3yrkma0e1B0wWPXgr8w5sDN.jpg"
+          },
+          {
+            "title": "Black Orpheus",
+            "year": 1959,
+            "slug": "Relocates the Orpheus myth to Rio de Janeiro's Carnival, with stunning visuals and bossa nova music",
+            "poster": "https://image.tmdb.org/t/p/w500/fJWzdNRnfjcJuaZiKqaSURFV6Lg.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 40423,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fJWzdNRnfjcJuaZiKqaSURFV6Lg.jpg"
+          },
+          {
+            "title": "The Blood of a Poet",
+            "year": 1930,
+            "slug": "Cocteau's first film experiment with surrealism and mythology set the stage for Orphée",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The French New Wave directors worshipped Cocteau's ability to blend reality and fantasy. **Last Year at Marienbad** (1961) borrowed his mirror imagery and dreamlike atmosphere. **Wings of Desire** (1987) echoed Orphée's poetic vision of supernatural beings walking among mortals in a modern city. Even **La La Land** (2016) pays subtle homage to Cocteau's theatrical staging and romantic magical realism."
+      },
+      {
+        "type": "text",
+        "content": "Orphée's influence extends deep into horror and dark fantasy. **Suspiria** (1977) directly references the film's mirror passages, while **A Ghost Story** (2017) echoes its meditation on death and eternal love. The way Cocteau shoots the underworld sequences - all reversed footage and practical effects - influenced **The Wizard of Oz** (1939) and continues to inspire filmmakers like Guillermo del Toro. SUBHEAD: The Legacy of Practical Effects"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Vertigo",
+            "year": 1958,
+            "slug": "Hitchcock's psychological thriller shares Orphée's obsession with death and impossible love",
+            "poster": "https://image.tmdb.org/t/p/w500/15uOEfqBNTVtDUT7hGBVCka0rZz.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 426,
+            "poster_url": "https://image.tmdb.org/t/p/w500/15uOEfqBNTVtDUT7hGBVCka0rZz.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Modern fantasy films still reference Cocteau's innovative techniques. **The Dark Knight** (2008) used similar practical mirror effects for its interrogation scene, while **Doctor Strange** (2016) digitally reimagined Cocteau's reality-bending visuals. **Inception** (2010) director Christopher Nolan has cited Orphée as a major influence on his approach to practical effects over CGI."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Practical Effects in Fantasy Cinema",
+      "Greek Mythology in Modern Film Adaptations",
+      "Jean Cocteau's Influence on the French New Wave",
+      "Surrealism in 1950s European Cinema",
+      "The Legacy of Poetic Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Possession",
+          "year": 1981,
+          "slug": "Surreal horror about a spy's wife who may be possessed",
+          "poster": "https://image.tmdb.org/t/p/w500/lUFZsUuJ0YyhBXH8D2BFUd6wODm.jpg",
+          "initialStreaming": "Metrograph",
+          "tmdb_id": 21484,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lUFZsUuJ0YyhBXH8D2BFUd6wODm.jpg"
+        },
+        {
+          "title": "The Seventh Seal",
+          "year": 1957,
+          "slug": "Bergman's medieval allegory about a knight playing chess with Death",
+          "poster": "https://image.tmdb.org/t/p/w500/wcZ21zrOsy0b52AfAF50XpTiv75.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 490,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wcZ21zrOsy0b52AfAF50XpTiv75.jpg"
+        },
+        {
+          "title": "Cocteau Trilogy",
+          "year": 1930,
+          "slug": "The Blood of a Poet, Beauty and the Beast, and Orphée",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Company of Wolves",
+          "year": 1984,
+          "slug": "Gothic fantasy retelling of Red Riding Hood",
+          "poster": "https://image.tmdb.org/t/p/w500/2g2YPws1MiEWTodUE8u3qOf78XS.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 11905,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2g2YPws1MiEWTodUE8u3qOf78XS.jpg"
+        },
+        {
+          "title": "Valerie and Her Week of Wonders",
+          "year": 1970,
+          "slug": "Surreal Czech New Wave vampire fantasy",
+          "poster": "https://image.tmdb.org/t/p/w500/x9fZJORCZS0DshbxLSdnzyvU94V.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 46315,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x9fZJORCZS0DshbxLSdnzyvU94V.jpg"
+        },
+        {
+          "title": "Dead Man",
+          "year": 1995,
+          "slug": "Jim Jarmusch's poetic Western about a man's journey to the afterlife",
+          "poster": "https://image.tmdb.org/t/p/w500/jX3wGBVoYoAY3IixBpwYk1fjT4z.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 922,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jX3wGBVoYoAY3IixBpwYk1fjT4z.jpg"
+        },
+        {
+          "title": "Holy Motors",
+          "year": 2012,
+          "slug": "Surreal odyssey through Paris paying homage to cinema history",
+          "poster": "https://image.tmdb.org/t/p/w500/4ZuTrrDQhCS9f6KzIX6HfsjjyMd.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 103328,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4ZuTrrDQhCS9f6KzIX6HfsjjyMd.jpg"
+        },
+        {
+          "title": "The Double Life of Veronique",
+          "year": 1991,
+          "slug": "Kieslowski's mysterious tale of identical women",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Enter the Void",
+          "year": 2009,
+          "slug": "Gaspar Noé's psychedelic journey through life and death",
+          "poster": "https://image.tmdb.org/t/p/w500/li3Jrxo6s1gXX0zRhvgtbLfAwIl.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 34647,
+          "poster_url": "https://image.tmdb.org/t/p/w500/li3Jrxo6s1gXX0zRhvgtbLfAwIl.jpg"
+        },
+        {
+          "title": "Cemetery Man",
+          "year": 1994,
+          "slug": "Surreal Italian horror comedy about a cemetery caretaker",
+          "poster": "https://image.tmdb.org/t/p/w500/cI5AV3jCuxmoQp0N7Z16SI2b7Xk.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 21588,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cI5AV3jCuxmoQp0N7Z16SI2b7Xk.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,179 @@
+{
+  "props": {
+    "title": "Stagecoach",
+    "year": 1939,
+    "initialSlug": "Danger rides the Stagecoach West.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/zgMnfnwWZ3nkx4t0bUDEKtW24O8.jpg",
+    "initialStreaming": null,
+    "tmdbId": 995,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Stagecoach** (1939) revolutionized the Western genre through John Ford's masterful direction and John Wayne's breakthrough performance. Shot in Monument Valley's dramatic landscapes, it elevated the Western from B-movie status to serious artistic cinema. The film's influence echoes through later classics like **The Searchers** (1956) and **Once Upon a Time in the West** (1968). Ford's innovative deep focus photography and complex character dynamics inside the stagecoach created a template for ensemble dramas, while the Apache chase sequence set new standards for action choreography that influenced films like **Raiders of the Lost Ark** (1981)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Stagecoach",
+            "year": 1939,
+            "slug": "A diverse group of passengers navigate danger and their own prejudices while traveling through Apache territory. John Wayne's star-making role as the Ringo Kid.",
+            "poster": "https://image.tmdb.org/t/p/w500/zgMnfnwWZ3nkx4t0bUDEKtW24O8.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 995,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zgMnfnwWZ3nkx4t0bUDEKtW24O8.jpg"
+          },
+          {
+            "title": "The Searchers",
+            "year": 1956,
+            "slug": "John Wayne's darkest role as a Civil War veteran obsessively searching for his niece kidnapped by Comanches. Ford's masterpiece of psychological complexity.",
+            "poster": "https://image.tmdb.org/t/p/w500/jLBmgW0epNzJ1N9uzaVCjbyT94v.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 3114,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jLBmgW0epNzJ1N9uzaVCjbyT94v.jpg"
+          },
+          {
+            "title": "Red River",
+            "year": 1948,
+            "slug": "John Wayne leads a massive cattle drive while dealing with a mounting rebellion led by Montgomery Clift. Shows the evolution of Wayne's screen presence.",
+            "poster": "https://image.tmdb.org/t/p/w500/jyNTsAzrIWB441OtvfbgKtx1kFS.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 3089,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jyNTsAzrIWB441OtvfbgKtx1kFS.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's social commentary remains surprisingly relevant, examining class prejudice through its microcosm of American society trapped in the stagecoach. Each character represents a different social stratum, from Dallas the prostitute to the banker Gatewood, creating tensions that influenced later Western classics like **High Noon** (1952) and **The Good, the Bad and the Ugly** (1966). Ford's sympathetic portrayal of outcasts and criticism of respectable society's hypocrisy set a precedent for morally complex Westerns."
+      },
+      {
+        "type": "text",
+        "content": "Technically, **Stagecoach** (1939) pioneered action sequences that still impress. The famous stunt where Yakima Canutt drops beneath the moving stagecoach inspired similar sequences in everything from **Raiders of the Lost Ark** (1981) to **Mad Max: Fury Road** (2015). Ford's use of Monument Valley's epic landscape established visual motifs that defined the genre, influencing directors from Sergio Leone to Quentin Tarantino in **The Hateful Eight** (2015). SUBHEAD: Impact on Modern Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Man Who Shot Liberty Valance",
+            "year": 1962,
+            "slug": "Ford's elegiac Western about the clash between law and violence in the Old West, starring Wayne and James Stewart.",
+            "poster": "https://image.tmdb.org/t/p/w500/4C1R0LEivLjbv3swAzJfzh0tzXl.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 11697,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4C1R0LEivLjbv3swAzJfzh0tzXl.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends far beyond Westerns. Its character-driven narrative structure appears in modern ensemble films like **Reservoir Dogs** (1992) and **The Hateful Eight** (2015), while its chase sequences echo in contemporary action cinema. Directors like Martin Scorsese and Steven Spielberg have cited **Stagecoach** (1939) as a fundamental influence on their understanding of visual storytelling and character development."
+      }
+    ],
+    "exploreFurther": [
+      "John Ford's Visual Style in Monument Valley",
+      "The Evolution of Western Movie Stunts",
+      "Class Commentary in Classic Westerns",
+      "John Wayne's Screen Persona Development",
+      "Native American Representation in Classic Westerns"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "3:10 to Yuma",
+          "year": 1957,
+          "slug": "A rancher must deliver a charismatic outlaw to justice.",
+          "poster": "https://image.tmdb.org/t/p/w500/emYeJVZrpl2WfndJlhbls1e7lzQ.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 14168,
+          "poster_url": "https://image.tmdb.org/t/p/w500/emYeJVZrpl2WfndJlhbls1e7lzQ.jpg"
+        },
+        {
+          "title": "My Darling Clementine",
+          "year": 1946,
+          "slug": "Ford's poetic take on the Wyatt Earp legend.",
+          "poster": "https://image.tmdb.org/t/p/w500/o7G5klSt9i8LQZdUNvrWUJbbxAO.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 3088,
+          "poster_url": "https://image.tmdb.org/t/p/w500/o7G5klSt9i8LQZdUNvrWUJbbxAO.jpg"
+        },
+        {
+          "title": "Fort Apache",
+          "year": 1948,
+          "slug": "First of Ford's cavalry trilogy examining military life.",
+          "poster": "https://image.tmdb.org/t/p/w500/5PqKsWVlyIFuMeV1UkK6Q9Q8y9k.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 37347,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5PqKsWVlyIFuMeV1UkK6Q9Q8y9k.jpg"
+        },
+        {
+          "title": "She Wore a Yellow Ribbon",
+          "year": 1949,
+          "slug": "John Wayne as an aging cavalry captain on his last mission.",
+          "poster": "https://image.tmdb.org/t/p/w500/2IXtuwkTVcDsaa09AiQnlkfxe7I.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 13909,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2IXtuwkTVcDsaa09AiQnlkfxe7I.jpg"
+        },
+        {
+          "title": "Rio Bravo",
+          "year": 1959,
+          "slug": "Howard Hawks' response to High Noon, starring Wayne as a sheriff defending his town.",
+          "poster": "https://image.tmdb.org/t/p/w500/4gI4KKmoi0d3yfsF71YU3S0I5t8.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 301,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4gI4KKmoi0d3yfsF71YU3S0I5t8.jpg"
+        },
+        {
+          "title": "True Grit",
+          "year": 1969,
+          "slug": "Wayne's Oscar-winning performance as one-eyed Marshal Rooster Cogburn.",
+          "poster": "https://image.tmdb.org/t/p/w500/lmexRC57l39elaIcnxhaHpcaIW2.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 17529,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lmexRC57l39elaIcnxhaHpcaIW2.jpg"
+        },
+        {
+          "title": "The Wild Bunch",
+          "year": 1969,
+          "slug": "Peckinpah's violent elegy to the dying West.",
+          "poster": "https://image.tmdb.org/t/p/w500/8j9yEC3xjy1PJDSizIbaxcHaSph.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 576,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8j9yEC3xjy1PJDSizIbaxcHaSph.jpg"
+        },
+        {
+          "title": "The Magnificent Seven",
+          "year": 1960,
+          "slug": "Seven gunfighters defend a Mexican village from bandits.",
+          "poster": "https://image.tmdb.org/t/p/w500/e5ToxOyJwuZD4VOfI0qEn5uIjeJ.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 966,
+          "poster_url": "https://image.tmdb.org/t/p/w500/e5ToxOyJwuZD4VOfI0qEn5uIjeJ.jpg"
+        },
+        {
+          "title": "Unforgiven",
+          "year": 1992,
+          "slug": "Eastwood's dark deconstruction of Western myths.",
+          "poster": "https://image.tmdb.org/t/p/w500/54roTwbX9fltg85zjsmrooXAs12.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 33,
+          "poster_url": "https://image.tmdb.org/t/p/w500/54roTwbX9fltg85zjsmrooXAs12.jpg"
+        },
+        {
+          "title": "Open Range",
+          "year": 2003,
+          "slug": "Modern Western capturing the spirit of classic cavalry films.",
+          "poster": "https://image.tmdb.org/t/p/w500/5bmt52Fijy71W0E72on8xnnYHgP.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 2055,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5bmt52Fijy71W0E72on8xnnYHgP.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

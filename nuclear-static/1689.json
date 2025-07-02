@@ -1,0 +1,159 @@
+{
+  "props": {
+    "title": "Little Buddha",
+    "year": 1993,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/xy70xtdoKZ3PxlKkakwdhL3UFDQ.jpg",
+    "initialStreaming": null,
+    "tmdbId": 1689,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Little Buddha** (1993) marks a fascinating intersection of Eastern spirituality and Western filmmaking by acclaimed director Bernardo Bertolucci. The film weaves together two parallel narratives: the historical story of Prince Siddhartha's transformation into the Buddha, and a contemporary tale of Tibetan monks searching for a reincarnated lama in Seattle. Keanu Reeves' casting as Siddhartha sparked controversy but achieves an otherworldly quality that serves the mythological aspects. Like Bertolucci's earlier **The Last Emperor** (1987), the film employs rich cinematography and careful attention to period detail while exploring cultural bridges between East and West."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Seven Years in Tibet",
+            "year": 1997,
+            "slug": "Brad Pitt stars as Austrian mountaineer Heinrich Harrer who becomes tutor to the young Dalai Lama in Tibet",
+            "poster": "https://image.tmdb.org/t/p/w500/5euQXAgJ34TdUFl1t3O6Jw2lJAs.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 978,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5euQXAgJ34TdUFl1t3O6Jw2lJAs.jpg"
+          },
+          {
+            "title": "Kundun",
+            "year": 1997,
+            "slug": "Martin Scorsese's visually stunning biography of the 14th Dalai Lama",
+            "poster": "https://image.tmdb.org/t/p/w500/yvdFRDoQIQ5PBk4u8x8gJT8NJAw.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 9746,
+            "poster_url": "https://image.tmdb.org/t/p/w500/yvdFRDoQIQ5PBk4u8x8gJT8NJAw.jpg"
+          },
+          {
+            "title": "Spring Summer Fall Winter... and Spring",
+            "year": 2003,
+            "slug": "Korean meditation on Buddhist teachings through the life cycles of a monk",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The 1990s saw a surge of Western films exploring Buddhism and Tibetan culture, partly influenced by China's occupation of Tibet and growing celebrity advocacy. **Kundun** (1997) takes a more historically grounded approach than Little Buddha, while **Seven Years in Tibet** (1997) uses a Western protagonist as an entry point. These films share gorgeous Himalayan landscapes and attempts to translate Buddhist concepts for Western audiences, though Little Buddha remains unique in its parallel ancient/modern structure. SUBHEAD: Buddhist Themes in Contemporary Cinema"
+      },
+      {
+        "type": "text",
+        "content": "Beyond explicit Buddhist subjects, films like **The Matrix** (1999) and **Groundhog Day** (1993) incorporate Buddhist concepts like enlightenment, rebirth, and liberation from illusion. **Lost Horizon** (1937) established many tropes about Westerners encountering Tibetan wisdom that later films both drew from and subverted. Modern works like **Doctor Strange** (2016) continue mining Eastern spirituality, though often superficially. Little Buddha stands out for its sincere attempt to present Buddhist teachings without exoticizing them."
+      }
+    ],
+    "exploreFurther": [
+      "The influence of Buddhism on Western cinema",
+      "Bernardo Bertolucci's cross-cultural epics",
+      "Keanu Reeves' spiritual and philosophical roles",
+      "Representing Eastern religions authentically in film",
+      "The Tibet movement in 1990s Hollywood"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Last Emperor",
+          "year": 1987,
+          "slug": "Bertolucci's Oscar-winning epic about China's final emperor",
+          "poster": "https://image.tmdb.org/t/p/w500/7TILJhdeJAaEyDiwvJZMo9SQBoe.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 746,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7TILJhdeJAaEyDiwvJZMo9SQBoe.jpg"
+        },
+        {
+          "title": "Why Has Bodhi-Dharma Left for the East?",
+          "year": 1989,
+          "slug": "Korean meditation on Zen Buddhism",
+          "poster": "https://image.tmdb.org/t/p/w500/vkdKLYsfIzr1ImacKMQDJmtScky.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 62637,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vkdKLYsfIzr1ImacKMQDJmtScky.jpg"
+        },
+        {
+          "title": "The Cup",
+          "year": 1999,
+          "slug": "Lighthearted tale of young Buddhist monks obsessed with soccer",
+          "poster": "https://image.tmdb.org/t/p/w500/8yh2Pj4o92sF4ceTvzB5qP9szUy.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 14521,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8yh2Pj4o92sF4ceTvzB5qP9szUy.jpg"
+        },
+        {
+          "title": "Samsara",
+          "year": 2011,
+          "slug": "Non-narrative visual meditation filmed over five years",
+          "poster": "https://image.tmdb.org/t/p/w500/qodkea4k0pNUmNTl5TJO2PdTqgW.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 89708,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qodkea4k0pNUmNTl5TJO2PdTqgW.jpg"
+        },
+        {
+          "title": "Milarepa",
+          "year": 2006,
+          "slug": "Biographical film about Tibet's most famous yogi",
+          "poster": "https://image.tmdb.org/t/p/w500/zNYvWtd2t5ZDTomKh0bsJMXIljJ.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 29630,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zNYvWtd2t5ZDTomKh0bsJMXIljJ.jpg"
+        },
+        {
+          "title": "The Life of Buddha",
+          "year": 2007,
+          "slug": "Documentary exploring Buddha's life and teachings",
+          "poster": "https://image.tmdb.org/t/p/w500/2od4De4VQPLozdYLBhCUR7EZQpQ.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 68365,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2od4De4VQPLozdYLBhCUR7EZQpQ.jpg"
+        },
+        {
+          "title": "Wheel of Time",
+          "year": 2003,
+          "slug": "Werner Herzog documentary about Buddhist rituals",
+          "poster": "https://image.tmdb.org/t/p/w500/d26W3zIQXucyHU6s98DVyOVlqV1.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 51311,
+          "poster_url": "https://image.tmdb.org/t/p/w500/d26W3zIQXucyHU6s98DVyOVlqV1.jpg"
+        },
+        {
+          "title": "Words of My Perfect Teacher",
+          "year": 2003,
+          "slug": "Portrait of a Buddhist master and his Western students",
+          "poster": "https://image.tmdb.org/t/p/w500/4kcgDcftO5Fg7ZcgY5d9mwTI3PJ.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 313508,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4kcgDcftO5Fg7ZcgY5d9mwTI3PJ.jpg"
+        },
+        {
+          "title": "The Burmese Harp",
+          "year": 1956,
+          "slug": "Japanese film about a soldier who becomes a Buddhist monk",
+          "poster": "https://image.tmdb.org/t/p/w500/zTKpylld64pjRYgRMK9GN6Jo2bA.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 33319,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zTKpylld64pjRYgRMK9GN6Jo2bA.jpg"
+        },
+        {
+          "title": "Travelers and Magicians",
+          "year": 2003,
+          "slug": "First feature film shot in Bhutan",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,159 @@
+{
+  "props": {
+    "title": "Nostalghia",
+    "year": 1983,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/fCYSidPXp3LpDa9wlLNv0gZvjyF.jpg",
+    "initialStreaming": null,
+    "tmdbId": 1394,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Nostalghia** (1983) represents Andrei Tarkovsky's first film made outside the Soviet Union, shot entirely in Italy with haunting precision. The film follows Russian poet Gorchakov researching a composer's life while battling profound homesickness - a mirror of Tarkovsky's own exile. Its legendary 9-minute single take of Gorchakov carrying a candle across an empty pool distills Tarkovsky's mastery of time, faith, and human endurance. Like his earlier **Stalker** (1979), the film transforms physical journeys into spiritual quests."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Stalker",
+            "year": 1979,
+            "slug": "A guide leads two men through a mysterious \"Zone\" containing a room that grants wishes. Tarkovsky's sci-fi masterpiece about faith and desire.",
+            "poster": "https://image.tmdb.org/t/p/w500/1qhOyf5C4s9ZdvY8d5JDx9DFMeT.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 1398,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1qhOyf5C4s9ZdvY8d5JDx9DFMeT.jpg"
+          },
+          {
+            "title": "The Mirror",
+            "year": 1975,
+            "slug": "Tarkovsky's autobiographical puzzle blends memories, dreams and Russian history into a hypnotic meditation on time.",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": null
+          },
+          {
+            "title": "Solaris",
+            "year": 1972,
+            "slug": "A psychologist investigates strange occurrences on a space station, confronting manifestations of his dead wife.",
+            "poster": "https://image.tmdb.org/t/p/w500/rXPWl3hBbzivmeCEbMD3LwV2Ada.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 593,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rXPWl3hBbzivmeCEbMD3LwV2Ada.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Tarkovsky's signature long takes and metaphysical themes find kindred spirits in other European art cinema giants. Theo Angelopoulos's **Ulysses' Gaze** (1995) shares Nostalghia's preoccupation with exile and cultural memory. Béla Tarr's **Werckmeister Harmonies** (2000) similarly uses extended sequences and stark landscapes to explore faith and despair. These films reject conventional plotting for atmospheric immersion and philosophical weight. SUBHEAD: The Cinema of Exile and Memory"
+      },
+      {
+        "type": "text",
+        "content": "The themes of displacement and nostalgia in Nostalghia resonate through later works like Atom Egoyan's **Calendar** (1993) and Andrey Zvyagintsev's **The Return** (2003). Both films grapple with cultural identity and separation from homeland. The meditative pace and rich symbolism of **The Great Beauty** (2013) by Paolo Sorrentino shows Tarkovsky's enduring influence on contemporary European cinema, especially in its treatment of time and memory as malleable substances."
+      }
+    ],
+    "exploreFurther": [
+      "Tarkovsky's Theory of Time Sculpture - His concept of cinema as \"sculpting in time\"",
+      "Soviet Cinema in Exile - The impact of emigration on Russian filmmakers",
+      "The Religious Symbolism in Tarkovsky's Later Works",
+      "Long Take Cinema - The evolution of extended sequence shooting",
+      "Italian-Soviet Cultural Exchange in Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Sacrifice",
+          "year": 1986,
+          "slug": "Tarkovsky's final film about a man's promise to God to prevent nuclear war",
+          "poster": "https://image.tmdb.org/t/p/w500/8JMh27z075ZHbFE85XYkdXF2QkK.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 24657,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8JMh27z075ZHbFE85XYkdXF2QkK.jpg"
+        },
+        {
+          "title": "Ivan's Childhood",
+          "year": 1962,
+          "slug": "Tarkovsky's debut about a young boy serving as a spy in WWII",
+          "poster": "https://image.tmdb.org/t/p/w500/vmRWSLP1DE9WTta0hfzIafJ0dID.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 31442,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vmRWSLP1DE9WTta0hfzIafJ0dID.jpg"
+        },
+        {
+          "title": "Wings of Desire",
+          "year": 1987,
+          "slug": "Angels watch over Berlin in Wenders' poetic meditation on existence",
+          "poster": "https://image.tmdb.org/t/p/w500/iZQs2vUeCzvS1KfZJ6uYNCGJBBV.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 144,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iZQs2vUeCzvS1KfZJ6uYNCGJBBV.jpg"
+        },
+        {
+          "title": "The Double Life of Veronique",
+          "year": 1991,
+          "slug": "Kieslowski's mysterious tale of identical women in France and Poland",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": null
+        },
+        {
+          "title": "L'Avventura",
+          "year": 1960,
+          "slug": "Antonioni's breakthrough about spiritual emptiness in modern life",
+          "poster": "https://image.tmdb.org/t/p/w500/7kUXAS8K7Ihw1T1mhARjnLuMVk3.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 5165,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7kUXAS8K7Ihw1T1mhARjnLuMVk3.jpg"
+        },
+        {
+          "title": "Last Year at Marienbad",
+          "year": 1961,
+          "slug": "Resnais' enigmatic exploration of memory and time",
+          "poster": "https://image.tmdb.org/t/p/w500/tizZ7JnXRFMvoNegu2CtM2ab9E7.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 4024,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tizZ7JnXRFMvoNegu2CtM2ab9E7.jpg"
+        },
+        {
+          "title": "Andrei Rublev",
+          "year": 1966,
+          "slug": "Tarkovsky's epic about a 15th-century Russian icon painter",
+          "poster": "https://image.tmdb.org/t/p/w500/910xRIUmNJrWH2hkQifBJtoPp5R.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 895,
+          "poster_url": "https://image.tmdb.org/t/p/w500/910xRIUmNJrWH2hkQifBJtoPp5R.jpg"
+        },
+        {
+          "title": "The Turin Horse",
+          "year": 2011,
+          "slug": "Béla Tarr's final film about a farmer and his daughter facing apocalypse",
+          "poster": "https://image.tmdb.org/t/p/w500/2kSElneXSKmMsGL55k0CbPGqLbu.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 81401,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2kSElneXSKmMsGL55k0CbPGqLbu.jpg"
+        },
+        {
+          "title": "Uncle Boonmee Who Can Recall His Past Lives",
+          "year": 2010,
+          "slug": "Thai meditation on memory and reincarnation",
+          "poster": "https://image.tmdb.org/t/p/w500/iZinYNVaBLg3pj4e8IXwvfXAtrI.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 38368,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iZinYNVaBLg3pj4e8IXwvfXAtrI.jpg"
+        },
+        {
+          "title": "Once Upon a Time in Anatolia",
+          "year": 2011,
+          "slug": "Turkish drama about a night-long search for a buried body",
+          "poster": "https://image.tmdb.org/t/p/w500/o08n2xyXGTkzKy122TTNat57SHb.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 74879,
+          "poster_url": "https://image.tmdb.org/t/p/w500/o08n2xyXGTkzKy122TTNat57SHb.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,187 @@
+{
+  "props": {
+    "title": "The Godfather Part III",
+    "year": 1990,
+    "initialSlug": "All debts will be settled.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/lm3pQ2QoQ16pextRsmnUbG2onES.jpg",
+    "initialStreaming": null,
+    "tmdbId": 242,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Godfather Part III** (1990) arrived 16 years after Part II, completing Coppola's epic saga with Michael Corleone's attempt at redemption. While often dismissed as inferior to its predecessors, it's a haunting meditation on guilt, aging, and the impossibility of escaping one's past. The film's connection to **The Godfather** (1972) and **The Godfather Part II** (1974) creates a sweeping 20th-century crime epic spanning from immigrant struggles to corporate corruption. Pacino's weathered performance as an older Michael shows the toll of his choices, while the Vatican banking subplot eerily paralleled real scandals."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Godfather",
+            "year": 1972,
+            "slug": "The definitive mafia epic following the Corleone crime family's rise to power through Michael's tragic transformation",
+            "poster": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 238,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"
+          },
+          {
+            "title": "The Godfather Part II",
+            "year": 1974,
+            "slug": "Parallel narratives of young Vito's rise and Michael's moral descent create the greatest sequel ever made",
+            "poster": "https://image.tmdb.org/t/p/w500/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 240,
+            "poster_url": "https://image.tmdb.org/t/p/w500/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg"
+          },
+          {
+            "title": "Once Upon a Time in America",
+            "year": 1984,
+            "slug": "Sergio Leone's sprawling crime epic spanning decades of Jewish gangsters in New York",
+            "poster": "https://image.tmdb.org/t/p/w500/i0enkzsL5dPeneWnjl1fCWm6L7k.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 311,
+            "poster_url": "https://image.tmdb.org/t/p/w500/i0enkzsL5dPeneWnjl1fCWm6L7k.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's most controversial element - Sofia Coppola's casting as Mary Corleone - overshadowed its ambitious themes about the intersection of crime, religion, and big business. Like **Casino** (1995) and **Miller's Crossing** (1990), it shows organized crime evolving beyond street-level violence into sophisticated financial schemes. The Vatican storyline connects to other films exploring corruption in religious institutions, from **The Name of the Rose** (1986) to **Spotlight** (2015)."
+      },
+      {
+        "type": "text",
+        "content": "While criticized for its complex plot, Part III's operatic finale at Teatro Massimo brilliantly mirrors the baptism massacre from the first film. This kind of symbolic circularity influenced later crime epics like **The Departed** (2006) and **Road to Perdition** (2002). The film's themes of aging criminals facing their legacy can be seen in works like **The Irishman** (2019) and **Unforgiven** (1992). SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Casino",
+            "year": 1995,
+            "slug": "Scorsese's detailed examination of Las Vegas gambling operations and the mob's last glory days",
+            "poster": "https://image.tmdb.org/t/p/w500/gziIkUSnYuj9ChCi8qOu2ZunpSC.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 524,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gziIkUSnYuj9ChCi8qOu2ZunpSC.jpg"
+          },
+          {
+            "title": "The Irishman",
+            "year": 2019,
+            "slug": "Scorsese reunites with De Niro for a melancholic look at a hitman's life of crime and regret",
+            "poster": "https://image.tmdb.org/t/p/w500/mbm8k3GFhXS0ROd9AD1gqYbIFbM.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 398978,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mbm8k3GFhXS0ROd9AD1gqYbIFbM.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Coppola's 2020 re-edit (titled \"The Death of Michael Corleone\") attempts to refocus the narrative on Michael's quest for redemption. This version connects more clearly to themes of Catholic guilt and atonement seen in films like **Mean Streets** (1973) and **True Confessions** (1981). The trilogy's influence extends beyond crime films to any multi-generational saga dealing with power and corruption, from **The Sopranos** to **Succession**."
+      }
+    ],
+    "exploreFurther": [
+      "The real Vatican banking scandal and its influence on the film's plot",
+      "The evolution of Al Pacino's Michael Corleone across all three films",
+      "Francis Ford Coppola's struggle to complete his trilogy",
+      "The use of opera in crime films",
+      "The controversy around Sofia Coppola's casting and its impact"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Goodfellas",
+          "year": 1990,
+          "slug": "Scorsese's kinetic adaptation of Henry Hill's mob life",
+          "poster": "https://image.tmdb.org/t/p/w500/aKuFiU82s5ISJpGZp7YkIr3kCUd.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 769,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aKuFiU82s5ISJpGZp7YkIr3kCUd.jpg"
+        },
+        {
+          "title": "Mean Streets",
+          "year": 1973,
+          "slug": "Early Scorsese crime drama exploring Catholic guilt and loyalty",
+          "poster": "https://image.tmdb.org/t/p/w500/rzVTH9ylCw0owKkMZQVz2Eve97E.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 203,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rzVTH9ylCw0owKkMZQVz2Eve97E.jpg"
+        },
+        {
+          "title": "The Departed",
+          "year": 2006,
+          "slug": "Boston crime thriller about identity and betrayal",
+          "poster": "https://image.tmdb.org/t/p/w500/nT97ifVT2J1yMQmeq20Qblg61T.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 1422,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nT97ifVT2J1yMQmeq20Qblg61T.jpg"
+        },
+        {
+          "title": "Miller's Crossing",
+          "year": 1990,
+          "slug": "Coen Brothers' stylish prohibition-era gangster film",
+          "poster": "https://image.tmdb.org/t/p/w500/ab3pnsTKp3BgcAFy0FgWBFBg9FL.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 379,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ab3pnsTKp3BgcAFy0FgWBFBg9FL.jpg"
+        },
+        {
+          "title": "Road to Perdition",
+          "year": 2002,
+          "slug": "Graphic novel adaptation about a hitman protecting his son",
+          "poster": "https://image.tmdb.org/t/p/w500/loSpBeirRfTPJ3cMIqpQArstGhh.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 4147,
+          "poster_url": "https://image.tmdb.org/t/p/w500/loSpBeirRfTPJ3cMIqpQArstGhh.jpg"
+        },
+        {
+          "title": "Once Upon a Time in America",
+          "year": 1984,
+          "slug": "Epic spanning decades of organized crime",
+          "poster": "https://image.tmdb.org/t/p/w500/i0enkzsL5dPeneWnjl1fCWm6L7k.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 311,
+          "poster_url": "https://image.tmdb.org/t/p/w500/i0enkzsL5dPeneWnjl1fCWm6L7k.jpg"
+        },
+        {
+          "title": "A Bronx Tale",
+          "year": 1993,
+          "slug": "Coming-of-age story set in the world of organized crime",
+          "poster": "https://image.tmdb.org/t/p/w500/sDbO6LmLYtyqAoFTPpRcMgPSCEO.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 1607,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sDbO6LmLYtyqAoFTPpRcMgPSCEO.jpg"
+        },
+        {
+          "title": "State of Grace",
+          "year": 1990,
+          "slug": "Irish mob drama set in Hell's Kitchen",
+          "poster": "https://image.tmdb.org/t/p/w500/dNMeRLY3MeY2FFeh639plHai3F1.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 1662,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dNMeRLY3MeY2FFeh639plHai3F1.jpg"
+        },
+        {
+          "title": "The Last Don",
+          "year": 1997,
+          "slug": "Mario Puzo adaptation about a mafia family's modern struggles",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Little Caesar",
+          "year": 1931,
+          "slug": "Early gangster film that influenced The Godfather series",
+          "poster": "https://image.tmdb.org/t/p/w500/1K3Q1tAHHA5Sdtja2pPALBQevA7.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 27899,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1K3Q1tAHHA5Sdtja2pPALBQevA7.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

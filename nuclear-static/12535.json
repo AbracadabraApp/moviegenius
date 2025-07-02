@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "High Anxiety",
+    "year": 1977,
+    "initialSlug": "A Hitchcock spoof from the mind of Mel Brooks",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/qVuSJaGnomSPon8x3mIYywFGgD8.jpg",
+    "initialStreaming": null,
+    "tmdbId": 12535,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Mel Brooks's loving tribute to Alfred Hitchcock's thriller canon, **High Anxiety** (1977) stands as both parody and homage, directly referencing classics like **Vertigo** (1958), **The Birds** (1963), and **Psycho** (1960). Brooks himself stars as Dr. Richard Thorndyke, a psychiatrist with a fear of heights who becomes entangled in murder and conspiracy. The film's genius lies in how it maintains narrative tension while delivering pitch-perfect comedy, particularly in scenes like the newspaper attack (spoofing The Birds) and the shower scene featuring the deadly newspaper (mocking Psycho's infamous murder)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Vertigo",
+            "year": 1958,
+            "slug": "Hitchcock's masterpiece about obsession and identity, following a detective with acrophobia hired to follow a mysterious woman",
+            "poster": "https://image.tmdb.org/t/p/w500/15uOEfqBNTVtDUT7hGBVCka0rZz.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 426,
+            "poster_url": "https://image.tmdb.org/t/p/w500/15uOEfqBNTVtDUT7hGBVCka0rZz.jpg"
+          },
+          {
+            "title": "Psycho",
+            "year": 1960,
+            "slug": "The groundbreaking psychological horror film featuring the infamous shower scene and Bernard Herrmann's piercing score",
+            "poster": "https://image.tmdb.org/t/p/w500/yz4QVqPx3h1hD1DfqqQkCq3rmxW.jpg",
+            "initialStreaming": "Universal+",
+            "tmdb_id": 539,
+            "poster_url": "https://image.tmdb.org/t/p/w500/yz4QVqPx3h1hD1DfqqQkCq3rmxW.jpg"
+          },
+          {
+            "title": "The Birds",
+            "year": 1963,
+            "slug": "Hitchcock's nature-horror classic about unexplained bird attacks in a California coastal town",
+            "poster": "https://image.tmdb.org/t/p/w500/eClg8QPg8mwB6INIC4pyR5pAbDr.jpg",
+            "initialStreaming": "Universal+",
+            "tmdb_id": 571,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eClg8QPg8mwB6INIC4pyR5pAbDr.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film represents a crucial moment in comedy-thriller hybrids, paving the way for later genre parodies like **Airplane!** (1980) and **Hot Shots!** (1991). Brooks's attention to technical detail - including recreating Hitchcock's signature camera movements and Bernard Herrmann-style musical cues - elevates **High Anxiety** beyond mere spoof into skilled cinematic homage. The film's influence can be seen in later works like **Scary Movie** (1999) and **A Haunted House** (2013), though few achieve Brooks's balance of reverence and ridicule."
+      },
+      {
+        "type": "text",
+        "content": "Worth noting is Brooks's masterful understanding of Hitchcock's visual language. The film's opening shot, tracking through the airport, mirrors **North by Northwest** (1959), while the tower sequences deliberately echo **Vertigo**. Brooks even includes Hitchcock's signature cameo tradition, appearing himself multiple times in a self-referential twist on the master's technique. SUBHEAD: The Art of Cinematic Parody"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "North by Northwest",
+            "year": 1959,
+            "slug": "Hitchcock's classic wrong-man thriller following an ad executive mistaken for a spy",
+            "poster": "https://image.tmdb.org/t/p/w500/kNOFPQrel9YFCVzI0DF8FnCEpCw.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 213,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kNOFPQrel9YFCVzI0DF8FnCEpCw.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**High Anxiety** exemplifies the sophisticated parody style that defined Brooks's best work, including **Young Frankenstein** (1974) and **Blazing Saddles** (1974). Unlike later spoof films that relied primarily on reference humor, Brooks crafted genuine characters and coherent plots while layering in his satirical elements. The film's success influenced decades of genre parody, though few achieved its delicate balance of homage and humor."
+      }
+    ],
+    "exploreFurther": [
+      "Hitchcock's Visual Techniques and Their Parody Applications",
+      "The Evolution of Comedy-Thriller Hybrid Films",
+      "Mel Brooks's Approach to Genre Parody",
+      "Bernard Herrmann's Musical Influence on Thriller Scores",
+      "The Art of Cinematic Homage vs. Simple Spoof"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Spaceballs",
+          "year": 1987,
+          "slug": "Brooks's Star Wars parody featuring interstellar comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/cIbr9JRJX4jENulVETd4cAofTAA.jpg",
+          "initialStreaming": "MGM",
+          "tmdb_id": 957,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cIbr9JRJX4jENulVETd4cAofTAA.jpg"
+        },
+        {
+          "title": "Dead Men Don't Wear Plaid",
+          "year": 1982,
+          "slug": "Film noir parody starring Steve Martin",
+          "poster": "https://image.tmdb.org/t/p/w500/cwYwZBEE73PakUWzbICzxYKlXAz.jpg",
+          "initialStreaming": "Universal",
+          "tmdb_id": 9442,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cwYwZBEE73PakUWzbICzxYKlXAz.jpg"
+        },
+        {
+          "title": "Hot Shots!",
+          "year": 1991,
+          "slug": "Top Gun parody with Charlie Sheen",
+          "poster": "https://image.tmdb.org/t/p/w500/koLIB5263emHxewmwgBBK26vjeS.jpg",
+          "initialStreaming": "Fox",
+          "tmdb_id": 9595,
+          "poster_url": "https://image.tmdb.org/t/p/w500/koLIB5263emHxewmwgBBK26vjeS.jpg"
+        },
+        {
+          "title": "Airplane!",
+          "year": 1980,
+          "slug": "Disaster film parody that launched a genre",
+          "poster": "https://image.tmdb.org/t/p/w500/7Q3efxd3AF1vQjlSxnlerSA7RzN.jpg",
+          "initialStreaming": "Paramount",
+          "tmdb_id": 813,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7Q3efxd3AF1vQjlSxnlerSA7RzN.jpg"
+        },
+        {
+          "title": "Young Frankenstein",
+          "year": 1974,
+          "slug": "Brooks's brilliant Universal horror homage",
+          "poster": "https://image.tmdb.org/t/p/w500/tQJAWbIjvvqVKLLbIZHtwGw2HTf.jpg",
+          "initialStreaming": "Fox",
+          "tmdb_id": 3034,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tQJAWbIjvvqVKLLbIZHtwGw2HTf.jpg"
+        },
+        {
+          "title": "The Naked Gun",
+          "year": 1988,
+          "slug": "Police procedural parody starring Leslie Nielsen",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Paramount",
+          "tmdb_id": null
+        },
+        {
+          "title": "Fatal Instinct",
+          "year": 1993,
+          "slug": "Erotic thriller parody targeting Basic Instinct",
+          "poster": "https://image.tmdb.org/t/p/w500/82HA5CmfmJLaBry4DpT5D4UiFNR.jpg",
+          "initialStreaming": "MGM",
+          "tmdb_id": 91534,
+          "poster_url": "https://image.tmdb.org/t/p/w500/82HA5CmfmJLaBry4DpT5D4UiFNR.jpg"
+        },
+        {
+          "title": "Dracula: Dead and Loving It",
+          "year": 1995,
+          "slug": "Brooks's vampire parody",
+          "poster": "https://image.tmdb.org/t/p/w500/fwdXQU3Dbs2CMHu8K87bAxlWV0t.jpg",
+          "initialStreaming": "Columbia",
+          "tmdb_id": 12110,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fwdXQU3Dbs2CMHu8K87bAxlWV0t.jpg"
+        },
+        {
+          "title": "Top Secret!",
+          "year": 1984,
+          "slug": "Spy movie spoof from the Airplane! team",
+          "poster": "https://image.tmdb.org/t/p/w500/hRTbfR27xghnVMs3ZJ3EhK3zzud.jpg",
+          "initialStreaming": "Paramount",
+          "tmdb_id": 8764,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hRTbfR27xghnVMs3ZJ3EhK3zzud.jpg"
+        },
+        {
+          "title": "Murder by Death",
+          "year": 1976,
+          "slug": "Mystery thriller parody with all-star cast",
+          "poster": "https://image.tmdb.org/t/p/w500/7YGYam05qzHy0ZSzfjBSDkVvvU7.jpg",
+          "initialStreaming": "Columbia",
+          "tmdb_id": 6037,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7YGYam05qzHy0ZSzfjBSDkVvvU7.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

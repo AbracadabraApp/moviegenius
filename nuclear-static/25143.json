@@ -1,0 +1,177 @@
+{
+  "props": {
+    "title": "My Boy Jack",
+    "year": 2007,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/ugsEKXt0VVlUfns0VUUgggFPbmh.jpg",
+    "initialStreaming": null,
+    "tmdbId": 25143,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**My Boy Jack** (2007) powerfully depicts Rudyard Kipling's personal tragedy during WWI through his son John's military service and death. Daniel Radcliffe breaks free from his Harry Potter persona to deliver a haunting performance as John Kipling, while David Haig (who also wrote the screenplay) captures Rudyard's transformation from passionate war supporter to grief-stricken father. The film joins other notable WWI family dramas like **Testament of Youth** (2014) and **War Horse** (2011) in exploring how the Great War tore apart families across social classes."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Gallipoli",
+            "year": 1981,
+            "slug": "Mel Gibson stars in Peter Weir's devastating anti-war film about Australian soldiers in WWI",
+            "poster": "https://image.tmdb.org/t/p/w500/un7VCqTmjrq3u75mQ204a8tofD4.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 11646,
+            "poster_url": "https://image.tmdb.org/t/p/w500/un7VCqTmjrq3u75mQ204a8tofD4.jpg"
+          },
+          {
+            "title": "All Quiet on the Western Front",
+            "year": 2022,
+            "slug": "Brutal German adaptation showing the futility of war through a young soldier's eyes",
+            "poster": "https://image.tmdb.org/t/p/w500/2IRjbi9cADuDMKmHdLK7LaqQDKA.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 49046,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2IRjbi9cADuDMKmHdLK7LaqQDKA.jpg"
+          },
+          {
+            "title": "1917",
+            "year": 2019,
+            "slug": "Two British soldiers race against time to deliver a message that could save 1600 men",
+            "poster": "https://image.tmdb.org/t/p/w500/iZf0KyrE25z1sage4SYFLCCrMi9.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 530915,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iZf0KyrE25z1sage4SYFLCCrMi9.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film particularly excels in showing the intersection between private grief and public duty. Like **The King's Speech** (2010), it reveals the personal struggles behind historical figures - here showing how Kipling's imperial patriotism led him to pull strings getting his severely myopic son into combat, a decision that would haunt him forever. The intimate family scenes between Radcliffe and Kim Cattrall (as Kipling's American wife Caroline) provide devastating emotional weight to the larger historical narrative."
+      },
+      {
+        "type": "text",
+        "content": "Director Brian Kirk brings documentary-like authenticity to the battle sequences while maintaining focus on the human cost of war. This approach aligns with other intimate WWI dramas like **Private Peaceful** (2012) and **Birdsong** (2012), which prioritize personal stories over spectacle. The film's strongest moments come in its quiet scenes of loss and regret, particularly when the Kiplings receive news of their son's fate. SUBHEAD: The Price of Patriotism"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Journey's End",
+            "year": 2017,
+            "slug": "Intimate drama about British officers in the trenches dealing with fear and duty",
+            "poster": "https://image.tmdb.org/t/p/w500/5gGkt84bCPt7XRo35FcsrOeer78.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 438259,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5gGkt84bCPt7XRo35FcsrOeer78.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film serves as a powerful indictment of war-promoting rhetoric and its human cost. Kipling's transformation from jingoistic supporter of the war to broken father mirrors similar character arcs in films like **Paths of Glory** (1957) and **King and Country** (1964). The final scenes, where Kipling confronts his guilt while writing the poem \"My Boy Jack,\" achieve a devastating emotional impact that few war films match."
+      }
+    ],
+    "exploreFurther": [
+      "Rudyard Kipling's transformation from imperial poet to grieving father",
+      "The use of influence and privilege to send unfit soldiers to WWI",
+      "Daniel Radcliffe's post-Harry Potter dramatic roles",
+      "WWI's impact on British literary figures and their families",
+      "The role of propaganda and patriotic poetry in WWI recruitment"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Testament of Youth",
+          "year": 2014,
+          "slug": "True story of Vera Brittain's WWI experiences and losses",
+          "poster": "https://image.tmdb.org/t/p/w500/a6kFsaDCulCLfYHmKLDKTYaddM4.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 284689,
+          "poster_url": "https://image.tmdb.org/t/p/w500/a6kFsaDCulCLfYHmKLDKTYaddM4.jpg"
+        },
+        {
+          "title": "War Horse",
+          "year": 2011,
+          "slug": "Spielberg's epic following a horse through WWI battlefields",
+          "poster": "https://image.tmdb.org/t/p/w500/3aRHhvvngFPJFy5uAjo7GVr3PhL.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 57212,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3aRHhvvngFPJFy5uAjo7GVr3PhL.jpg"
+        },
+        {
+          "title": "Regeneration",
+          "year": 1997,
+          "slug": "Drama about WWI poets Siegfried Sassoon and Wilfred Owen",
+          "poster": "https://image.tmdb.org/t/p/w500/jWNif4E8ZRhqRBItr0FWVMz1ooO.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 49798,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jWNif4E8ZRhqRBItr0FWVMz1ooO.jpg"
+        },
+        {
+          "title": "The Lost Battalion",
+          "year": 2001,
+          "slug": "American unit becomes trapped behind German lines in WWI",
+          "poster": "https://image.tmdb.org/t/p/w500/kNnozLnF3YivsGGyGEgUiKaO4pT.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 35583,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kNnozLnF3YivsGGyGEgUiKaO4pT.jpg"
+        },
+        {
+          "title": "Passchendaele",
+          "year": 2008,
+          "slug": "Canadian soldier falls in love before facing brutal WWI battle",
+          "poster": "https://image.tmdb.org/t/p/w500/2FMtSxzF2fR5dx5was9Kftjag0U.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 14582,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2FMtSxzF2fR5dx5was9Kftjag0U.jpg"
+        },
+        {
+          "title": "Beneath Hill 60",
+          "year": 2010,
+          "slug": "Australian miners tunnel under German lines in WWI",
+          "poster": "https://image.tmdb.org/t/p/w500/5eHtQC77fmILNRd7FG70SOdChs8.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 43418,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5eHtQC77fmILNRd7FG70SOdChs8.jpg"
+        },
+        {
+          "title": "The Trench",
+          "year": 1999,
+          "slug": "Young British soldiers prepare for the Battle of the Somme",
+          "poster": "https://image.tmdb.org/t/p/w500/tEK7lwfMz7Hy3LhuunPH0cjQDXl.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 27123,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tEK7lwfMz7Hy3LhuunPH0cjQDXl.jpg"
+        },
+        {
+          "title": "A Very Long Engagement",
+          "year": 2004,
+          "slug": "French woman searches for her fiancé lost in WWI",
+          "poster": "https://image.tmdb.org/t/p/w500/t73m7lX0eFYDjlB1Gcb7r3S5Yt.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 2841,
+          "poster_url": "https://image.tmdb.org/t/p/w500/t73m7lX0eFYDjlB1Gcb7r3S5Yt.jpg"
+        },
+        {
+          "title": "The Light Between Oceans",
+          "year": 2016,
+          "slug": "WWI veteran becomes lighthouse keeper while dealing with loss",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Birdsong",
+          "year": 2012,
+          "slug": "Romance and war drama spanning pre-war France and WWI trenches",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "PBS",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

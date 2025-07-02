@@ -1,0 +1,188 @@
+{
+  "props": {
+    "title": "Schindler's List",
+    "year": 1993,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg",
+    "initialStreaming": null,
+    "tmdbId": 424,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Schindler's List** (1993) represents Steven Spielberg's masterful shift from blockbuster entertainment to profound historical documentation. Shot primarily in stark black-and-white by cinematographer Janusz Kaminski, the film follows Oskar Schindler's transformation from opportunistic businessman to humanitarian hero during the Holocaust. The film's power comes from its unflinching portrayal of Nazi atrocities contrasted with moments of incredible humanity, like the famous \"girl in the red coat\" sequence. Spielberg's decision to shoot documentary-style with handheld cameras creates an immediate, visceral experience that influenced later Holocaust films like **The Pianist** (2002) and **Son of Saul** (2015)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Pianist",
+            "year": 2002,
+            "slug": "Roman Polanski's haunting survival story of Polish-Jewish musician Władysław Szpilman during WWII",
+            "poster": "https://image.tmdb.org/t/p/w500/2hFvxCCWrTmCYwfy7yum0GKRi3Y.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 423,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2hFvxCCWrTmCYwfy7yum0GKRi3Y.jpg"
+          },
+          {
+            "title": "Life is Beautiful",
+            "year": 1997,
+            "slug": "Roberto Benigni's bittersweet tale of a father shielding his son from Holocaust horrors through imagination",
+            "poster": "https://image.tmdb.org/t/p/w500/74hLDKjD5aGYOotO6esUVaeISa2.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 637,
+            "poster_url": "https://image.tmdb.org/t/p/w500/74hLDKjD5aGYOotO6esUVaeISa2.jpg"
+          },
+          {
+            "title": "Son of Saul",
+            "year": 2015,
+            "slug": "Intense Hungarian drama following a Sonderkommando worker at Auschwitz over 24 hours",
+            "poster": "https://image.tmdb.org/t/p/w500/9ZcX6NjCJam5uwkooXffhHI29Lj.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 336050,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9ZcX6NjCJam5uwkooXffhHI29Lj.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's impact on Holocaust cinema cannot be overstated. Before **Schindler's List**, Holocaust narratives often took more metaphorical approaches, like **The Day the Clown Cried** (1972) or **Sophie's Choice** (1982). Spielberg's direct approach - showing the brutality while maintaining human dignity - created a new language for depicting historical atrocities. This influence extends to films like **The Grey Zone** (2001) and **Defiance** (2008), which similarly balance unflinching reality with stories of resistance and survival."
+      },
+      {
+        "type": "text",
+        "content": "Liam Neeson's portrayal of Schindler set a template for complex moral characters in Holocaust narratives. Unlike the clear heroes of earlier WWII films like **The Great Escape** (1963), Schindler is initially motivated by profit, not altruism. This nuanced character development influenced later films like **The Counterfeiters** (2007) and **In Darkness** (2011), where survival and morality become increasingly complex issues. SUBHEAD: Technical Innovation and Historical Documentation"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Grey Zone",
+            "year": 2001,
+            "slug": "Dark drama about the Sonderkommando revolt at Auschwitz",
+            "poster": "https://image.tmdb.org/t/p/w500/8jRsWnpciWHRy0MC7K5eMDKKqPw.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 15192,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8jRsWnpciWHRy0MC7K5eMDKKqPw.jpg"
+          },
+          {
+            "title": "Defiance",
+            "year": 2008,
+            "slug": "True story of the Bielski brothers who saved Jewish lives through armed resistance",
+            "poster": "https://image.tmdb.org/t/p/w500/cakC5JFMJIlX6lZfsZSgjJkSFjd.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 13813,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cakC5JFMJIlX6lZfsZSgjJkSFjd.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Spielberg's technical choices revolutionized historical filmmaking. The documentary-style cinematography, mixing handheld cameras with careful composition, created a template followed by films like **The Last Days** (1998) and **Uprising** (2001). The decision to bookend the black-and-white narrative with color sequences of real Schindler survivors visiting his grave connects historical past with living memory, a technique later adopted in films like **The Book Thief** (2013)."
+      }
+    ],
+    "exploreFurther": [
+      "Spielberg's Evolution as a Filmmaker - From Entertainment to Historical Documentation",
+      "Holocaust Cinema Before and After Schindler's List",
+      "Documentary Techniques in Historical Drama",
+      "The Role of Music in Holocaust Films - Analyzing John Williams' Score",
+      "Real Schindler Jews and Their Stories"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Sophie's Choice",
+          "year": 1982,
+          "slug": "Meryl Streep's Oscar-winning performance as a Holocaust survivor",
+          "poster": "https://image.tmdb.org/t/p/w500/rZDPbPTFwuKgr5b9jixGFNYkGYt.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 15764,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rZDPbPTFwuKgr5b9jixGFNYkGYt.jpg"
+        },
+        {
+          "title": "The Boy in the Striped Pajamas",
+          "year": 2008,
+          "slug": "Holocaust story told through the eyes of a German officer's son",
+          "poster": "https://image.tmdb.org/t/p/w500/sLwYSEVVV3r047cjrpRAbGgNsfL.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 14574,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sLwYSEVVV3r047cjrpRAbGgNsfL.jpg"
+        },
+        {
+          "title": "The Book Thief",
+          "year": 2013,
+          "slug": "A young girl finds solace in books during WWII Germany",
+          "poster": "https://image.tmdb.org/t/p/w500/wj4U5sMLcJMa3WR9CpRR9e2sdgZ.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 203833,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wj4U5sMLcJMa3WR9CpRR9e2sdgZ.jpg"
+        },
+        {
+          "title": "Judgment at Nuremberg",
+          "year": 1961,
+          "slug": "Powerful courtroom drama about Nazi war crimes trials",
+          "poster": "https://image.tmdb.org/t/p/w500/b6vYatvui1EXeFYfpDX4rcbueuP.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 821,
+          "poster_url": "https://image.tmdb.org/t/p/w500/b6vYatvui1EXeFYfpDX4rcbueuP.jpg"
+        },
+        {
+          "title": "The Counterfeiters",
+          "year": 2007,
+          "slug": "True story of Jewish counterfeiters forced to aid Nazi Germany",
+          "poster": "https://image.tmdb.org/t/p/w500/Af6I9RZF0SIPeNnp8hAleGDTnKd.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 7862,
+          "poster_url": "https://image.tmdb.org/t/p/w500/Af6I9RZF0SIPeNnp8hAleGDTnKd.jpg"
+        },
+        {
+          "title": "Uprising",
+          "year": 2001,
+          "slug": "Story of the Warsaw Ghetto uprising",
+          "poster": "https://image.tmdb.org/t/p/w500/fUJ4gdDalRIoZcFEeYRfyOlBFoJ.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 31010,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fUJ4gdDalRIoZcFEeYRfyOlBFoJ.jpg"
+        },
+        {
+          "title": "The Last Days",
+          "year": 1998,
+          "slug": "Spielberg-produced documentary about Hungarian Jews",
+          "poster": "https://image.tmdb.org/t/p/w500/kWr6QDDcO2HHKqvJvgsJ1hQz4Gs.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 20595,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kWr6QDDcO2HHKqvJvgsJ1hQz4Gs.jpg"
+        },
+        {
+          "title": "In Darkness",
+          "year": 2011,
+          "slug": "Polish sewer worker helps Jews survive in underground tunnels",
+          "poster": "https://image.tmdb.org/t/p/w500/cRm30D0tBvMLXjtoKuaUteBZ4nv.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 73686,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cRm30D0tBvMLXjtoKuaUteBZ4nv.jpg"
+        },
+        {
+          "title": "Conspiracy",
+          "year": 2001,
+          "slug": "Chilling recreation of the Wannsee Conference",
+          "poster": "https://image.tmdb.org/t/p/w500/Onqn8XXyhANuy1LIL7AIN6unQk.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 12900,
+          "poster_url": "https://image.tmdb.org/t/p/w500/Onqn8XXyhANuy1LIL7AIN6unQk.jpg"
+        },
+        {
+          "title": "The Zookeeper's Wife",
+          "year": 2017,
+          "slug": "True story of Warsaw Zoo keepers who saved Jews",
+          "poster": "https://image.tmdb.org/t/p/w500/5TVBtMhwOldZW82g1Ka11IE86wC.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 289222,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5TVBtMhwOldZW82g1Ka11IE86wC.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

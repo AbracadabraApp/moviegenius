@@ -1,0 +1,175 @@
+{
+  "props": {
+    "title": "American Splendor",
+    "year": 2003,
+    "initialSlug": "Life is pretty, splendid, and ordinary.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/rPLMxuk82AiqDiwEUVJ6E7WpjYs.jpg",
+    "initialStreaming": "TBD",
+    "tmdbId": 2771,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**American Splendor** (2003) revolutionized the biographical film by breaking every convention of the genre. Paul Giamatti embodies comic writer Harvey Pekar while the real Pekar comments on the film itself, creating a meta-narrative that perfectly captures the self-referential nature of Pekar's comics. This groundbreaking approach influenced later unconventional biopics like **I'm Not There** (2007) and **The End of the Tour** (2015), proving that life stories don't need to follow a linear \"greatest hits\" format."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Crumb",
+            "year": 1994,
+            "slug": "Intimate documentary about underground comics legend Robert Crumb, featuring the same counter-culture spirit as Pekar's work",
+            "poster": "https://image.tmdb.org/t/p/w500/9ocTHdBCJdwJ65Tubg3lYlfMxEY.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 26564,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9ocTHdBCJdwJ65Tubg3lYlfMxEY.jpg"
+          },
+          {
+            "title": "Ghost World",
+            "year": 2001,
+            "slug": "Terry Zwigoff's adaptation of Daniel Clowes' comic captures the same outsider perspective and dry wit",
+            "poster": "https://image.tmdb.org/t/p/w500/uwKqnUPE4dSM0kKuMW0vXpURh2T.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 1548,
+            "poster_url": "https://image.tmdb.org/t/p/w500/uwKqnUPE4dSM0kKuMW0vXpURh2T.jpg"
+          },
+          {
+            "title": "Private Parts",
+            "year": 1997,
+            "slug": "Howard Stern plays himself in this meta-biographical film that similarly blends reality and performance",
+            "poster": "https://image.tmdb.org/t/p/w500/8nCc9fhXCVvetlqpxkrCTc9NwOz.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 9403,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8nCc9fhXCVvetlqpxkrCTc9NwOz.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's brilliant fusion of documentary footage, animation, and dramatization creates a tapestry that mirrors Pekar's own comic style. Like **Adaptation** (2002) and **Man on the Moon** (1999), it questions the very nature of biographical storytelling. The inclusion of both the real Harvey Pekar and Paul Giamatti's interpretation creates a fascinating dialogue about authenticity and representation in biographical films."
+      },
+      {
+        "type": "text",
+        "content": "Directors Shari Springer Berman and Robert Pulcini brought their documentary background to craft this hybrid narrative, setting a template for later experimental biopics like **The Wolf of Wall Street** (2013) and **Big Short** (2015). Their approach shows how breaking traditional storytelling rules can actually bring us closer to truth than conventional methods. SUBHEAD: The Evolution of Comic Book Films"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Persepolis",
+            "year": 2007,
+            "slug": "Animated autobiography based on Marjane Satrapi's graphic novels about growing up in Iran",
+            "poster": "https://image.tmdb.org/t/p/w500/aU8i2QAdTyRR1nYb36Gq51xXP8p.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 2011,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aU8i2QAdTyRR1nYb36Gq51xXP8p.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While superhero blockbusters dominated comic adaptations, **American Splendor** (2003) proved that graphic narratives could tackle everyday life with profound insight. This paved the way for personal comic adaptations like **Wilson** (2017) and **My Friend Dahmer** (2017), showing how the medium can explore complex human stories beyond capes and powers."
+      }
+    ],
+    "exploreFurther": [
+      "The Underground Comics Movement of the 1960s-70s and its influence on modern graphic narratives",
+      "Meta-narrative techniques in biographical filmmaking",
+      "The evolution of Paul Giamatti's career-defining character performances",
+      "Documentary hybrid films that blur reality and fiction",
+      "Cleveland's influence on independent arts and culture"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Barton Fink",
+          "year": 1991,
+          "slug": "A writer struggles with his identity and creativity in Hollywood",
+          "poster": "https://image.tmdb.org/t/p/w500/oDkp5iClJ9WKJGtKHz8BydodHC3.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 290,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oDkp5iClJ9WKJGtKHz8BydodHC3.jpg"
+        },
+        {
+          "title": "The End of the Tour",
+          "year": 2015,
+          "slug": "Complex portrait of author David Foster Wallace",
+          "poster": "https://image.tmdb.org/t/p/w500/3fEuVd8Xorwtk5kFVvyiNlOtcIw.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 249688,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3fEuVd8Xorwtk5kFVvyiNlOtcIw.jpg"
+        },
+        {
+          "title": "Confessions of a Dangerous Mind",
+          "year": 2002,
+          "slug": "Meta-biopic of Chuck Barris",
+          "poster": "https://image.tmdb.org/t/p/w500/nccluUFM3pRNI9nUyDEcDa6KviO.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 4912,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nccluUFM3pRNI9nUyDEcDa6KviO.jpg"
+        },
+        {
+          "title": "Man on the Moon",
+          "year": 1999,
+          "slug": "Andy Kaufman biopic that plays with reality",
+          "poster": "https://image.tmdb.org/t/p/w500/msOZS07xRIFnapwp3fprGbKEAfT.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1850,
+          "poster_url": "https://image.tmdb.org/t/p/w500/msOZS07xRIFnapwp3fprGbKEAfT.jpg"
+        },
+        {
+          "title": "American Movie",
+          "year": 1999,
+          "slug": "Documentary about an aspiring filmmaker",
+          "poster": "https://image.tmdb.org/t/p/w500/qAoIbQDnbGgiLDBUtOh7JUe5XQX.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 14242,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qAoIbQDnbGgiLDBUtOh7JUe5XQX.jpg"
+        },
+        {
+          "title": "Harvey Pekar's Cleveland",
+          "year": 2012,
+          "slug": "Documentary on Pekar's relationship with his city",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": null
+        },
+        {
+          "title": "Comic Book Confidential",
+          "year": 1988,
+          "slug": "Documentary on alternative comics",
+          "poster": "https://image.tmdb.org/t/p/w500/7XOJXO8qqf9jr5XeBizhY4UrRtn.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 40844,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7XOJXO8qqf9jr5XeBizhY4UrRtn.jpg"
+        },
+        {
+          "title": "Birdman",
+          "year": 2014,
+          "slug": "Meta-commentary on art and identity",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Life and Times of Harvey Pekar",
+          "year": 2009,
+          "slug": "Documentary on the comic writer",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "PBS",
+          "tmdb_id": null
+        },
+        {
+          "title": "Paper Man",
+          "year": 2009,
+          "slug": "Writer finding his voice through unlikely friendship",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

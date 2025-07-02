@@ -1,0 +1,203 @@
+{
+  "props": {
+    "title": "They Live",
+    "year": 1988,
+    "initialSlug": "The truth is out there. Fight it.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/eIEmSJRKe8Vn9iWcFypvbeyQaZZ.jpg",
+    "initialStreaming": null,
+    "tmdbId": 8337,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**They Live** (1988) stands as John Carpenter's sharpest political satire, using sci-fi horror to skewer Reagan-era consumerism and class warfare. The film's genius lies in its brutal simplicity: special sunglasses reveal skull-faced aliens controlling humanity through subliminal messaging. Carpenter crafts this premise into both biting commentary and visceral entertainment, highlighted by the legendary 5-minute alley fight between Roddy Piper and Keith David. The black-and-white scenes showing the aliens' true propaganda (\"OBEY\", \"CONSUME\", \"CONFORM\") have become iconic, influencing everything from street art to social criticism. Like **RoboCop** (1987) and **Brazil** (1985), it captures 80s corporate excess through a genre lens."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Network",
+            "year": 1976,
+            "slug": "TV news satire about media manipulation and corporate control",
+            "poster": "https://image.tmdb.org/t/p/w500/gZ8hhuVEQ78CLND09trZJ45Eiy8.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 10774,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gZ8hhuVEQ78CLND09trZJ45Eiy8.jpg"
+          },
+          {
+            "title": "Videodrome",
+            "year": 1983,
+            "slug": "Cronenberg's hallucinatory take on media control and technology",
+            "poster": "https://image.tmdb.org/t/p/w500/qqqkiZSU9EBGZ1KiDmfn07S7qvv.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 837,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qqqkiZSU9EBGZ1KiDmfn07S7qvv.jpg"
+          },
+          {
+            "title": "The Thing",
+            "year": 1982,
+            "slug": "Another Carpenter masterpiece about paranoia and hidden threats",
+            "poster": "https://image.tmdb.org/t/p/w500/a9RjXOIIB56k2rGoL3Fk3nRHHHQ.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 1091,
+            "poster_url": "https://image.tmdb.org/t/p/w500/a9RjXOIIB56k2rGoL3Fk3nRHHHQ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends far beyond its initial release. The aliens-among-us premise inspired **The Matrix** (1999) and countless imitators, while its anti-consumerist message resonates with films like **Fight Club** (1999) and **Sorry to Bother You** (2018). Street artist Shepard Fairey directly credits They Live for his OBEY clothing line and iconic Obama \"HOPE\" poster. The film's exploration of hidden power structures and media manipulation feels more relevant than ever in our age of targeted advertising and social media algorithms."
+      },
+      {
+        "type": "text",
+        "content": "Carpenter's direction emphasizes working-class authenticity, shooting in gritty Los Angeles locations and casting pro wrestler \"Rowdy\" Roddy Piper as construction worker John Nada. This grounds the fantastic elements in economic reality, similar to how **District 9** (2009) used alien apartheid as metaphor for racial segregation. The film's practical effects and minimal CGI give it a tangible quality missing from many modern sci-fi films. SUBHEAD: Legacy and Modern Relevance"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "In the Mouth of Madness",
+            "year": 1994,
+            "slug": "Carpenter's Lovecraftian horror about reality-bending fiction",
+            "poster": "https://image.tmdb.org/t/p/w500/msh4tEUzbnEqlHcFOUH4O0Zti8r.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 2654,
+            "poster_url": "https://image.tmdb.org/t/p/w500/msh4tEUzbnEqlHcFOUH4O0Zti8r.jpg"
+          },
+          {
+            "title": "Invasion of the Body Snatchers",
+            "year": 1978,
+            "slug": "Classic paranoid thriller about conformity",
+            "poster": "https://image.tmdb.org/t/p/w500/5oNHdVo0vTsaC47Jv2Wb4eeo4V4.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 11850,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5oNHdVo0vTsaC47Jv2Wb4eeo4V4.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's themes of economic inequality and media control have only grown more prescient. Modern films like **Don't Look Up** (2021) and **The Big Short** (2015) share its angry populist energy, while horror-comedies like **Get Out** (2017) similarly use genre elements to explore social issues. They Live's combination of action, horror, and political commentary created a template for smart genre filmmaking that continues to influence directors like Jordan Peele and Boots Riley."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of John Carpenter's Political Commentary",
+      "Reagan-Era Science Fiction and Social Critique",
+      "The Impact of They Live on Street Art and Pop Culture",
+      "Practical Effects vs CGI in 1980s Science Fiction",
+      "Class Warfare Themes in Modern Horror Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Escape from New York",
+          "year": 1981,
+          "slug": "Carpenter's dystopian action classic",
+          "poster": "https://image.tmdb.org/t/p/w500/vH9llaphjAssRGi0k7e75tD40Ce.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1103,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vH9llaphjAssRGi0k7e75tD40Ce.jpg"
+        },
+        {
+          "title": "The Live",
+          "year": 1988,
+          "slug": "Aliens control society through consumerism",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Society",
+          "year": 1989,
+          "slug": "Body horror satire of upper class consumption",
+          "poster": "https://image.tmdb.org/t/p/w500/8Yg51sD6loLBYIlUcMDCO0bUGSh.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 22244,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8Yg51sD6loLBYIlUcMDCO0bUGSh.jpg"
+        },
+        {
+          "title": "V for Vendetta",
+          "year": 2005,
+          "slug": "Dystopian rebellion against media control",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": null
+        },
+        {
+          "title": "Idiocracy",
+          "year": 2006,
+          "slug": "Satire about corporate control and dumbed-down culture",
+          "poster": "https://image.tmdb.org/t/p/w500/q7sn0A3BkBxvzdwVFOGmJGE2vF8.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 7512,
+          "poster_url": "https://image.tmdb.org/t/p/w500/q7sn0A3BkBxvzdwVFOGmJGE2vF8.jpg"
+        },
+        {
+          "title": "Children of Men",
+          "year": 2006,
+          "slug": "Dystopian drama about societal collapse",
+          "poster": "https://image.tmdb.org/t/p/w500/8Xgvmx7WWc7Z9Ws9RAYk7uya2kh.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9693,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8Xgvmx7WWc7Z9Ws9RAYk7uya2kh.jpg"
+        },
+        {
+          "title": "The Host",
+          "year": 2006,
+          "slug": "Korean monster movie with social commentary",
+          "poster": "https://image.tmdb.org/t/p/w500/qJc9na2UN7TvKqDWkxBkocPUUjT.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1255,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qJc9na2UN7TvKqDWkxBkocPUUjT.jpg"
+        },
+        {
+          "title": "Elysium",
+          "year": 2013,
+          "slug": "Sci-fi action about class warfare",
+          "poster": "https://image.tmdb.org/t/p/w500/uiiXHBd9oUrtUa4YqZiAoy05cRz.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 68724,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uiiXHBd9oUrtUa4YqZiAoy05cRz.jpg"
+        },
+        {
+          "title": "Snowpiercer",
+          "year": 2013,
+          "slug": "Class revolution on a train",
+          "poster": "https://image.tmdb.org/t/p/w500/nzccOvhrLGI0nvAknCEAk8bchD9.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 110415,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nzccOvhrLGI0nvAknCEAk8bchD9.jpg"
+        },
+        {
+          "title": "They Look Like People",
+          "year": 2015,
+          "slug": "Psychological horror about paranoia",
+          "poster": "https://image.tmdb.org/t/p/w500/srfpn9OxEOpTpsKAhkbA43RsWqj.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 325302,
+          "poster_url": "https://image.tmdb.org/t/p/w500/srfpn9OxEOpTpsKAhkbA43RsWqj.jpg"
+        },
+        {
+          "title": "High-Rise",
+          "year": 2015,
+          "slug": "Class warfare in a luxury apartment building",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Platform",
+          "year": 2019,
+          "slug": "Vertical prison as capitalism metaphor",
+          "poster": "https://image.tmdb.org/t/p/w500/iXvQnzy6JCAx1PiQEKXuTY04ZHl.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 619264,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iXvQnzy6JCAx1PiQEKXuTY04ZHl.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,196 @@
+{
+  "props": {
+    "title": "The Big Sleep",
+    "year": 1946,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/lraHo9D8c0YWfxsKqT5P5sVqMKN.jpg",
+    "initialStreaming": "Max, Max Amazon Channel, Criterion Channel",
+    "tmdbId": 910,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Big Sleep** (1946) stands as the quintessential film noir, powered by Humphrey Bogart's razor-sharp portrayal of Philip Marlowe and crackling chemistry with Lauren Bacall. Director Howard Hawks crafts a deliberately convoluted mystery that prioritizes mood and character over plot clarity - even Raymond Chandler allegedly couldn't explain who killed the chauffeur. The film established noir conventions that influenced countless others: the cynical private eye, femme fatales, rain-slicked streets, and morally ambiguous characters moving through a corrupt Los Angeles. Its snappy dialogue (\"My, you're a mess, aren't you?\") became a template for hardboiled detective films like **Chinatown** (1974) and **L.A. Confidential** (1997)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Murder, My Sweet",
+            "year": 1944,
+            "slug": "Dick Powell plays Philip Marlowe in this earlier, grittier Chandler adaptation that helped establish noir's visual style",
+            "poster": "https://image.tmdb.org/t/p/w500/tbyzfN1AUKTvzh058L9ZcOpS9Vn.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 1834,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tbyzfN1AUKTvzh058L9ZcOpS9Vn.jpg"
+          },
+          {
+            "title": "The Maltese Falcon",
+            "year": 1941,
+            "slug": "Bogart's Sam Spade hunts a priceless statue in John Huston's noir masterpiece that set the template for the genre",
+            "poster": "https://image.tmdb.org/t/p/w500/bf4o6Uzw5wqLjdKwRuiDrN1xyvl.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 963,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bf4o6Uzw5wqLjdKwRuiDrN1xyvl.jpg"
+          },
+          {
+            "title": "Double Indemnity",
+            "year": 1944,
+            "slug": "Billy Wilder's noir pinnacle about an insurance salesman and femme fatale plotting murder",
+            "poster": "https://image.tmdb.org/t/p/w500/rVNYZZgfhwqVMMWlBmxOfWqnwCj.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 996,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rVNYZZgfhwqVMMWlBmxOfWqnwCj.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Hawks and cinematographer Sid Hickox created a shadowy visual language that defined noir style. Their use of venetian blind shadows, low-key lighting, and Dutch angles influenced directors like Christopher Nolan in **Following** (1998) and **Memento** (2000). The film's complex narrative structure - where the journey matters more than the destination - inspired neo-noirs like **Blade Runner** (1982) and **Body Heat** (1981), which embrace similar narrative ambiguity while exploring themes of corruption and moral decay."
+      },
+      {
+        "type": "text",
+        "content": "The sexual chemistry between Bogart and Bacall, who married shortly after filming, crackles through their double entendre dialogue. Their scenes together, particularly the famous \"horse racing\" conversation, showed how to slip provocative content past the Production Code censors. This subtle approach to adult themes influenced later noir-influenced films like **Basic Instinct** (1992) and **The Last Seduction** (1994), though those films could be more explicit in their sexuality. SUBHEAD: Legacy and Influence on Modern Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "In a Lonely Place",
+            "year": 1950,
+            "slug": "Bogart plays a volatile screenwriter suspected of murder in Nicholas Ray's psychological noir",
+            "poster": "https://image.tmdb.org/t/p/w500/vdlCUR7hu7BI8JRl46n66PiG17k.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 17057,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vdlCUR7hu7BI8JRl46n66PiG17k.jpg"
+          },
+          {
+            "title": "To Have and Have Not",
+            "year": 1944,
+            "slug": "The first pairing of Bogart and Bacall in Hawks' loose adaptation of Hemingway",
+            "poster": "https://image.tmdb.org/t/p/w500/jLOmQ6yHWSKZDrJ2CMuSrXE3t3J.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 22584,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jLOmQ6yHWSKZDrJ2CMuSrXE3t3J.jpg"
+          },
+          {
+            "title": "Key Largo",
+            "year": 1948,
+            "slug": "Bogart and Bacall's final film together, a noir-tinged hurricane thriller",
+            "poster": "https://image.tmdb.org/t/p/w500/rySfmQQZhS7RswOiJcJrww6FcHy.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 11016,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rySfmQQZhS7RswOiJcJrww6FcHy.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The Big Sleep's influence extends beyond traditional noir into modern thrillers and crime dramas. Its labyrinthine plot structure inspired **Mulholland Drive** (2001) and **The Long Goodbye** (1973), while its hardboiled dialogue echoes through **Brick** (2005) and **Drive** (2011). The film's Los Angeles setting - corrupt, glamorous, and dangerous - became a character itself, establishing a tradition carried forward in **Heat** (1995) and **Nightcrawler** (2014)."
+      }
+    ],
+    "exploreFurther": [
+      "Raymond Chandler's Los Angeles - How the author's city shaped noir cinema",
+      "The Bogart-Bacall Dynamic - Hollywood's most electric on-screen partnership",
+      "Film Noir's Visual Language - From German Expressionism to Neo-Noir",
+      "Censorship and Suggestion - How Classic Hollywood conveyed adult themes",
+      "The Art of the Hardboiled Detective Film"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Out of the Past",
+          "year": 1947,
+          "slug": "Robert Mitchum's finest noir hour as a private eye unable to escape his past",
+          "poster": "https://image.tmdb.org/t/p/w500/lnUK6Cg5ARM0qaq0B5SG20VAM0h.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 678,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lnUK6Cg5ARM0qaq0B5SG20VAM0h.jpg"
+        },
+        {
+          "title": "Dark Passage",
+          "year": 1947,
+          "slug": "Experimental noir featuring Bogart and Bacall with subjective camera work",
+          "poster": "https://image.tmdb.org/t/p/w500/dvwmiD6qQ05gojrFQRaFbdhbNDF.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 16227,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dvwmiD6qQ05gojrFQRaFbdhbNDF.jpg"
+        },
+        {
+          "title": "The Lady in the Lake",
+          "year": 1947,
+          "slug": "Another Marlowe adaptation shot entirely from the detective's POV",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": null
+        },
+        {
+          "title": "Farewell, My Lovely",
+          "year": 1975,
+          "slug": "Robert Mitchum as an older Marlowe in neo-noir adaptation",
+          "poster": "https://image.tmdb.org/t/p/w500/ygk9oP5BJM7viLut42RidNB5JPV.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1835,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ygk9oP5BJM7viLut42RidNB5JPV.jpg"
+        },
+        {
+          "title": "Kiss Me Deadly",
+          "year": 1955,
+          "slug": "Ultra-violent Spillane adaptation that pushed noir into atomic age territory",
+          "poster": "https://image.tmdb.org/t/p/w500/z7me91nrpWLHY1mZOB2v20cK0zY.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 18030,
+          "poster_url": "https://image.tmdb.org/t/p/w500/z7me91nrpWLHY1mZOB2v20cK0zY.jpg"
+        },
+        {
+          "title": "The Long Goodbye",
+          "year": 1973,
+          "slug": "Elliott Gould's revisionist take on Marlowe in Altman's neo-noir",
+          "poster": "https://image.tmdb.org/t/p/w500/oBhUK54yBJ0aH6u9zCzSV5iV7OP.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1847,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oBhUK54yBJ0aH6u9zCzSV5iV7OP.jpg"
+        },
+        {
+          "title": "Devil in a Blue Dress",
+          "year": 1995,
+          "slug": "Denzel Washington as Easy Rawlins in noir-influenced period mystery",
+          "poster": "https://image.tmdb.org/t/p/w500/5lcJhwKGavLbPva17QkTBhLfqEk.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 8512,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5lcJhwKGavLbPva17QkTBhLfqEk.jpg"
+        },
+        {
+          "title": "Inherent Vice",
+          "year": 2014,
+          "slug": "Paul Thomas Anderson's psychedelic take on the private eye genre",
+          "poster": "https://image.tmdb.org/t/p/w500/hyan5Uc0lGpPuad94DM1pLxneiP.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 171274,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hyan5Uc0lGpPuad94DM1pLxneiP.jpg"
+        },
+        {
+          "title": "Blade Runner 2049",
+          "year": 2017,
+          "slug": "Noir-influenced sci-fi sequel following a replicant detective",
+          "poster": "https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 335984,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg"
+        },
+        {
+          "title": "Thief",
+          "year": 1981,
+          "slug": "Michael Mann's stylish neo-noir about a professional safecracker",
+          "poster": "https://image.tmdb.org/t/p/w500/bpjRGwfYJ71bU0hNhLIz7g3t6Oy.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 11524,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bpjRGwfYJ71bU0hNhLIz7g3t6Oy.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

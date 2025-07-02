@@ -1,0 +1,186 @@
+{
+  "props": {
+    "title": "Delicatessen",
+    "year": 1991,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/gNtOgQHxE5B8e08zuNRAdDpmK5Z.jpg",
+    "initialStreaming": null,
+    "tmdbId": 892,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Delicatessen** (1991) marks a revolutionary moment in French dark comedy, blending post-apocalyptic survival with surreal humor. Directors Jean-Pierre Jeunet and Marc Caro created a twisted apartment complex where a butcher feeds his tenants human meat, shot with the kind of manic energy that would later influence **City of Lost Children** (1995) and **Amélie** (2001). The film's signature sequence - residents making love in rhythm with squeaking bedsprings - showcases the directors' genius for choreographed chaos. This grotesque fairy tale shares DNA with Terry Gilliam's **Brazil** (1985), both using retro-futuristic production design to create worlds gone madly wrong."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "City of Lost Children",
+            "year": 1995,
+            "slug": "Ron Perlman stars in Jeunet & Caro's dark fantasy about a mad scientist stealing children's dreams",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": null
+          },
+          {
+            "title": "Amélie",
+            "year": 2001,
+            "slug": "Audrey Tautou plays a whimsical Parisian waitress orchestrating happiness for others",
+            "poster": "https://image.tmdb.org/t/p/w500/oTKduWL2tpIKEmkAqF4mFEAWAsv.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 194,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oTKduWL2tpIKEmkAqF4mFEAWAsv.jpg"
+          },
+          {
+            "title": "Brazil",
+            "year": 1985,
+            "slug": "Terry Gilliam's dystopian masterpiece about a bureaucrat escaping into fantasy",
+            "poster": "https://image.tmdb.org/t/p/w500/aewan59WcFThBimkTVVoNf2o5Vb.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 68,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aewan59WcFThBimkTVVoNf2o5Vb.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends deep into modern genre-bending cinema. You can trace its DNA in the cannibalistic class warfare of **Snowpiercer** (2013), the retro-apocalyptic aesthetic of **Mad Max: Fury Road** (2015), and the dark culinary comedy of **The Menu** (2022). Jeunet and Caro's attention to mechanical precision and visual gags created a template for directors like Wes Anderson, whose **The Grand Budapest Hotel** (2014) shares its meticulous attention to timing and architectural space."
+      },
+      {
+        "type": "text",
+        "content": "The film's unique sound design deserves special attention. Unlike typical post-apocalyptic films that emphasize silence or chaos, **Delicatessen** creates musical sequences from everyday sounds - dripping pipes, creaking floors, sawing meat. This approach influenced later works like **The Shape of Water** (2017) and **Sound of Noise** (2010), where mundane sounds transform into orchestrated pieces. SUBHEAD: French New Wave Meets Dark Fantasy"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Snowpiercer",
+            "year": 2013,
+            "slug": "Class warfare erupts on a perpetually moving train carrying Earth's last survivors",
+            "poster": "https://image.tmdb.org/t/p/w500/nzccOvhrLGI0nvAknCEAk8bchD9.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 110415,
+            "poster_url": "https://image.tmdb.org/t/p/w500/nzccOvhrLGI0nvAknCEAk8bchD9.jpg"
+          },
+          {
+            "title": "Sound of Noise",
+            "year": 2010,
+            "slug": "Musical terrorists perform illegal concerts using the city as their instrument",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While **Delicatessen** marks a departure from traditional French New Wave cinema, it maintains that movement's experimental spirit. Like Jean-Luc Godard's **Alphaville** (1965), it uses genre elements to critique society, but with a more playful touch. The film's influence on contemporary French cinema can be seen in **Raw** (2016) and **High Life** (2018), which similarly blend genre elements with art house sensibilities."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of French Dark Comedy Post-1990",
+      "Jeunet & Caro's Visual Style and Production Design Techniques",
+      "Sound Design in Modern Surrealist Cinema",
+      "Post-Apocalyptic Architecture in Film",
+      "Cannibalism as Social Commentary in Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Cook, the Thief, His Wife & Her Lover",
+          "year": 1989,
+          "slug": "Grotesque culinary drama about power and consumption",
+          "poster": "https://image.tmdb.org/t/p/w500/fNkl7o1VQQqy1nEX9x56CDHULmr.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 7452,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fNkl7o1VQQqy1nEX9x56CDHULmr.jpg"
+        },
+        {
+          "title": "Taxidermia",
+          "year": 2006,
+          "slug": "Surreal Hungarian film spanning three generations of bizarre obsessions",
+          "poster": "https://image.tmdb.org/t/p/w500/uRqxKim0Vr1JZPLYcR1rjFtu74p.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 15742,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uRqxKim0Vr1JZPLYcR1rjFtu74p.jpg"
+        },
+        {
+          "title": "Tetsuo: The Iron Man",
+          "year": 1989,
+          "slug": "Japanese cyberpunk body horror masterpiece",
+          "poster": "https://image.tmdb.org/t/p/w500/iucW3kSp5rQSfYCLNlCWPEwYh4h.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 41428,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iucW3kSp5rQSfYCLNlCWPEwYh4h.jpg"
+        },
+        {
+          "title": "The Platform",
+          "year": 2019,
+          "slug": "Vertical prison where food descends floor by floor",
+          "poster": "https://image.tmdb.org/t/p/w500/iXvQnzy6JCAx1PiQEKXuTY04ZHl.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 619264,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iXvQnzy6JCAx1PiQEKXuTY04ZHl.jpg"
+        },
+        {
+          "title": "Perfume: The Story of a Murderer",
+          "year": 2006,
+          "slug": "Dark fantasy about an obsessed perfumer in 18th century France",
+          "poster": "https://image.tmdb.org/t/p/w500/2wrFrUej8ri5EpjgIkjKTAnr686.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 1427,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2wrFrUej8ri5EpjgIkjKTAnr686.jpg"
+        },
+        {
+          "title": "Holy Motors",
+          "year": 2012,
+          "slug": "Surreal journey through various lives in Paris",
+          "poster": "https://image.tmdb.org/t/p/w500/4ZuTrrDQhCS9f6KzIX6HfsjjyMd.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 103328,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4ZuTrrDQhCS9f6KzIX6HfsjjyMd.jpg"
+        },
+        {
+          "title": "The Lobster",
+          "year": 2015,
+          "slug": "Dystopian dark comedy about forced coupling",
+          "poster": "https://image.tmdb.org/t/p/w500/7Y9ILV1unpW9mLpGcqyGQU72LUy.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 254320,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7Y9ILV1unpW9mLpGcqyGQU72LUy.jpg"
+        },
+        {
+          "title": "A Field in England",
+          "year": 2013,
+          "slug": "Psychedelic historical horror in black and white",
+          "poster": "https://image.tmdb.org/t/p/w500/dKhMJr8yoHVyvxyUiAeIn2hKVdL.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 179111,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dKhMJr8yoHVyvxyUiAeIn2hKVdL.jpg"
+        },
+        {
+          "title": "Borgman",
+          "year": 2013,
+          "slug": "Dark Dutch fable about a mysterious stranger",
+          "poster": "https://image.tmdb.org/t/p/w500/kasPhXDk4BI4FUS3ku5Y4GrgBJY.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 186929,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kasPhXDk4BI4FUS3ku5Y4GrgBJY.jpg"
+        },
+        {
+          "title": "Dogtooth",
+          "year": 2009,
+          "slug": "Disturbing Greek drama about isolated siblings",
+          "poster": "https://image.tmdb.org/t/p/w500/7nLuUGlH12cegPfR84QX4xIIH9k.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 38810,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7nLuUGlH12cegPfR84QX4xIIH9k.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

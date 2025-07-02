@@ -1,0 +1,175 @@
+{
+  "props": {
+    "title": "Twilight Zone: The Movie",
+    "year": 1983,
+    "initialSlug": "Darkness falls. The Twilight calls.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/9dKBVzAQQ2Utht2DPdWA654QPFm.jpg",
+    "initialStreaming": null,
+    "tmdbId": 15301,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Twilight Zone: The Movie** (1983) stands as a fascinating anthology adaptation that both honors and reimagines Rod Serling's groundbreaking series. Directed by four heavyweight filmmakers - John Landis, Steven Spielberg, Joe Dante, and George Miller - each segment captures distinct horror-fantasy tones while exploring moral parables. The film's production was tragically marked by the helicopter accident that killed Vic Morrow and two child actors during Landis's segment, leading to major safety reforms in Hollywood. Despite this shadow, the film delivers powerful commentary on racism, aging, childhood trauma, and fear itself - quintessential Twilight Zone themes."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Creepshow",
+            "year": 1982,
+            "slug": "George Romero's horror anthology featuring Stephen King stories brings comic book aesthetics to five macabre tales",
+            "poster": "https://image.tmdb.org/t/p/w500/4SoyTCEpsgLjX6yAyMsx3AsAyRQ.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 16281,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4SoyTCEpsgLjX6yAyMsx3AsAyRQ.jpg"
+          },
+          {
+            "title": "Dead of Night",
+            "year": 1945,
+            "slug": "Influential British horror anthology about guests sharing supernatural stories, featuring the legendary ventriloquist dummy segment",
+            "poster": "https://image.tmdb.org/t/p/w500/oVAlugIkLCkyyXufNDhtr5kl3yB.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 13581,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oVAlugIkLCkyyXufNDhtr5kl3yB.jpg"
+          },
+          {
+            "title": "Tales from the Darkside: The Movie",
+            "year": 1990,
+            "slug": "Horror anthology with stories by Stephen King and Arthur Conan Doyle, featuring early performances by Steve Buscemi and Julianne Moore",
+            "poster": "https://image.tmdb.org/t/p/w500/5q8WK4gW45Knxhpb29IVOCbbfI7.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 20701,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5q8WK4gW45Knxhpb29IVOCbbfI7.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's strongest segments showcase masterful direction - particularly George Miller's \"Nightmare at 20,000 Feet\" remake starring John Lithgow, surpassing even William Shatner's original TV version. Joe Dante's \"It's a Good Life\" transforms the classic episode into a cartoon-infused nightmare, while Spielberg's \"Kick the Can\" offers a gentler, though somewhat saccharine take on aging and youth. The anthology format influenced later films like **Tales from the Hood** (1995) and **V/H/S** (2012), proving the enduring appeal of short-form horror storytelling."
+      },
+      {
+        "type": "text",
+        "content": "The film's opening sequence with Dan Aykroyd and Albert Brooks perfectly captures the series' signature twist endings and dark humor. This approach to anthology horror would later influence shows like **Tales from the Crypt** (1989-1996) and films like **Trick 'r Treat** (2007). The movie's mix of practical effects and early 80s optical work creates a distinctive visual style that bridges classic Twilight Zone aesthetics with modern techniques. SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Body Bags",
+            "year": 1993,
+            "slug": "John Carpenter hosts and directs segments in this horror anthology featuring Mark Hamill and Stacy Keach",
+            "poster": "https://image.tmdb.org/t/p/w500/xRwna1sWDByZs9hsnlabt16INHl.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 31578,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xRwna1sWDByZs9hsnlabt16INHl.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's impact on anthology horror continues today, visible in series like **Black Mirror** (2011-present) and films like **Southbound** (2015). Its combination of social commentary and supernatural terror established a template for intelligent horror that doesn't sacrifice scares for substance. The practical effects work, particularly in Miller's airplane segment, influenced countless horror films and demonstrated how to build tension through psychological fear rather than gore."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of TV-to-Film Adaptations in the 1980s",
+      "George Miller's Horror Work Before Mad Max",
+      "The Impact of the Twilight Zone Accident on Film Safety",
+      "Anthology Horror's Renaissance in Modern Cinema",
+      "Steven Spielberg's Early Genre Work"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Cat's Eye",
+          "year": 1985,
+          "slug": "Stephen King anthology film with three supernatural stories",
+          "poster": "https://image.tmdb.org/t/p/w500/kKyq7izpMkmr8sT2nLic5qAuJPo.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 10552,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kKyq7izpMkmr8sT2nLic5qAuJPo.jpg"
+        },
+        {
+          "title": "Three Cases of Murder",
+          "year": 1955,
+          "slug": "British anthology film with supernatural elements",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Tales of Terror",
+          "year": 1962,
+          "slug": "Roger Corman's Edgar Allan Poe anthology with Vincent Price",
+          "poster": "https://image.tmdb.org/t/p/w500/avAfdcgLZ6ix1j4xjeAs3gGofIS.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 29074,
+          "poster_url": "https://image.tmdb.org/t/p/w500/avAfdcgLZ6ix1j4xjeAs3gGofIS.jpg"
+        },
+        {
+          "title": "Black Sabbath",
+          "year": 1963,
+          "slug": "Mario Bava's influential horror anthology",
+          "poster": "https://image.tmdb.org/t/p/w500/oHd2kOCwIEsZtre00qQ2n9S3doa.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 28043,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oHd2kOCwIEsZtre00qQ2n9S3doa.jpg"
+        },
+        {
+          "title": "Asylum",
+          "year": 1972,
+          "slug": "British horror anthology featuring Peter Cushing",
+          "poster": "https://image.tmdb.org/t/p/w500/bKQ46UYuKKf50rw2jMVyrak4AF2.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 25993,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bKQ46UYuKKf50rw2jMVyrak4AF2.jpg"
+        },
+        {
+          "title": "The Monster Club",
+          "year": 1981,
+          "slug": "Horror anthology hosted by Vincent Price",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Necronomicon",
+          "year": 1993,
+          "slug": "H.P. Lovecraft anthology film",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Tales from the Crypt: Demon Knight",
+          "year": 1995,
+          "slug": "Feature film spinoff from the TV series",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Ghost Stories",
+          "year": 2017,
+          "slug": "British horror anthology with supernatural twists",
+          "poster": "https://image.tmdb.org/t/p/w500/7a0sai9k5jr7YJRP5S3YIDErMVY.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 429417,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7a0sai9k5jr7YJRP5S3YIDErMVY.jpg"
+        },
+        {
+          "title": "XX",
+          "year": 2017,
+          "slug": "Female-directed horror anthology",
+          "poster": "https://image.tmdb.org/t/p/w500/drcIFTEIBnWI4G3OQt6rXOI8hf4.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 297160,
+          "poster_url": "https://image.tmdb.org/t/p/w500/drcIFTEIBnWI4G3OQt6rXOI8hf4.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

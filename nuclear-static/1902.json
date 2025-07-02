@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "Open Your Eyes",
+    "year": 1997,
+    "initialSlug": "Spanish original of Vanilla Sky",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/orjSy9xEGI9jxrtodACH04gANmF.jpg",
+    "initialStreaming": null,
+    "tmdbId": 1902,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Open Your Eyes** (1997) revolutionized psychological thrillers with its mind-bending exploration of reality versus dreams. Director Alejandro Amenábar crafted a labyrinthine narrative that later inspired Cameron Crowe's **Vanilla Sky** (2001), though the original Spanish film cuts deeper. Like **Mulholland Drive** (2001) and **Memento** (2000), it masterfully plays with audience perception, using a disfigured protagonist's fractured memories to question everything we see. The film's influence on contemporary mind-trip cinema can't be overstated."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Vanilla Sky",
+            "year": 2001,
+            "slug": "American remake starring Tom Cruise that follows similar themes of reality distortion and identity",
+            "poster": "https://image.tmdb.org/t/p/w500/cAh2pCiNPftsY3aSqJuIOde7uWr.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 1903,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cAh2pCiNPftsY3aSqJuIOde7uWr.jpg"
+          },
+          {
+            "title": "Mulholland Drive",
+            "year": 2001,
+            "slug": "David Lynch's surreal masterpiece about identity and Hollywood dreams",
+            "poster": "https://image.tmdb.org/t/p/w500/x7A59t6ySylr1L7aubOQEA480vM.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 1018,
+            "poster_url": "https://image.tmdb.org/t/p/w500/x7A59t6ySylr1L7aubOQEA480vM.jpg"
+          },
+          {
+            "title": "eXistenZ",
+            "year": 1999,
+            "slug": "Cronenberg's reality-bending dive into virtual worlds and consciousness",
+            "poster": "https://image.tmdb.org/t/p/w500/kETKF0JhdTPn1knci8CAdYL0d79.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 1946,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kETKF0JhdTPn1knci8CAdYL0d79.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's brilliant handling of consciousness and identity paved the way for later philosophical sci-fi like **Inception** (2010) and **Source Code** (2011). Amenábar's technique of layering reality with dream sequences created a template for exploring the subconscious that continues to influence filmmakers. The psychological horror elements, particularly in scenes featuring César's disfigurement, echo through films like **The Machinist** (2004) and **Black Swan** (2010)."
+      },
+      {
+        "type": "text",
+        "content": "What sets **Open Your Eyes** apart is its grounding in emotional truth despite its complex narrative. Unlike later imitators, it never loses sight of its protagonist's human struggle. This balance between psychological complexity and emotional resonance influenced films like **The Science of Sleep** (2006) and **Eternal Sunshine of the Spotless Mind** (2004), which similarly blur the lines between dreams and reality while maintaining strong character focus. SUBHEAD: Reality Distortion in Modern Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Waking Life",
+            "year": 2001,
+            "slug": "Rotoscoped exploration of dreams and consciousness",
+            "poster": "https://image.tmdb.org/t/p/w500/2MRM4PL6H7yraAkwyUEe2EqoQH3.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 9081,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2MRM4PL6H7yraAkwyUEe2EqoQH3.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's legacy extends beyond direct influence into broader conversations about reality and perception in cinema. Works like **Shutter Island** (2010) and **Enemy** (2013) build on its foundation of unreliable narration and shifting realities. The psychological thriller genre particularly owes a debt to how **Open Your Eyes** handled its reality-bending revelations without sacrificing narrative coherence."
+      }
+    ],
+    "exploreFurther": [
+      "The influence of Spanish cinema on psychological thrillers",
+      "Dream sequences in film - from surrealism to modern techniques",
+      "The philosophy of identity in science fiction cinema",
+      "Comparing original films to their Hollywood remakes",
+      "Visual effects in representing altered states of consciousness"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Cell",
+          "year": 2000,
+          "slug": "Visually stunning journey through a killer's mind",
+          "poster": "https://image.tmdb.org/t/p/w500/kfYVxvDDAJoFq2knHUzAZP09pAc.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 8843,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kfYVxvDDAJoFq2knHUzAZP09pAc.jpg"
+        },
+        {
+          "title": "Perfect Blue",
+          "year": 1997,
+          "slug": "Animated psychological thriller about identity and fame",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Dark City",
+          "year": 1998,
+          "slug": "Neo-noir sci-fi about reality manipulation",
+          "poster": "https://image.tmdb.org/t/p/w500/tNPEGju4DpTdbhBphNmZoEi9Bd3.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 2666,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tNPEGju4DpTdbhBphNmZoEi9Bd3.jpg"
+        },
+        {
+          "title": "The Thirteenth Floor",
+          "year": 1999,
+          "slug": "Virtual reality mystery questioning existence",
+          "poster": "https://image.tmdb.org/t/p/w500/7oaie3ZBc9UuWZLF24crro1pone.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 1090,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7oaie3ZBc9UuWZLF24crro1pone.jpg"
+        },
+        {
+          "title": "Paprika",
+          "year": 2006,
+          "slug": "Anime masterpiece about dream invasion",
+          "poster": "https://image.tmdb.org/t/p/w500/bLUUr474Go1DfeN1HLjE3rnZXBq.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 4977,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bLUUr474Go1DfeN1HLjE3rnZXBq.jpg"
+        },
+        {
+          "title": "Stay",
+          "year": 2005,
+          "slug": "Psychological thriller with reality-bending narrative",
+          "poster": "https://image.tmdb.org/t/p/w500/nrLZVP8jG0KBcabahRPp6UP7Oy2.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 8066,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nrLZVP8jG0KBcabahRPp6UP7Oy2.jpg"
+        },
+        {
+          "title": "Identity",
+          "year": 2003,
+          "slug": "Mind-bending thriller with multiple personality twist",
+          "poster": "https://image.tmdb.org/t/p/w500/bnidwEvWNAVJ3Uco9wWtuzWAfrx.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 2832,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bnidwEvWNAVJ3Uco9wWtuzWAfrx.jpg"
+        },
+        {
+          "title": "Lost Highway",
+          "year": 1997,
+          "slug": "Lynch's surreal identity-swap nightmare",
+          "poster": "https://image.tmdb.org/t/p/w500/fdTtij6H0sX9AzIjUeynh5zbfm7.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 638,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fdTtij6H0sX9AzIjUeynh5zbfm7.jpg"
+        },
+        {
+          "title": "Mr. Nobody",
+          "year": 2009,
+          "slug": "Complex narrative about choice and parallel realities",
+          "poster": "https://image.tmdb.org/t/p/w500/qNkIONc4Rgmzo23ph7qWp9QfVnW.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 31011,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qNkIONc4Rgmzo23ph7qWp9QfVnW.jpg"
+        },
+        {
+          "title": "Coherence",
+          "year": 2013,
+          "slug": "Low-budget reality-bending psychological thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/ezUtb9m5DeLwL2gxi4gktzNCvQv.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 220289,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ezUtb9m5DeLwL2gxi4gktzNCvQv.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

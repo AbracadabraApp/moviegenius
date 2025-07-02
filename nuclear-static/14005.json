@@ -1,0 +1,174 @@
+{
+  "props": {
+    "title": "Terror Firmer",
+    "year": 1999,
+    "initialSlug": "Unleash the terror within.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/gnASuHPWrVwpQdKeyaMspgGCePC.jpg",
+    "initialStreaming": null,
+    "tmdbId": 14005,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Terror Firmer** (1999) stands as Troma Entertainment's ultimate meta-commentary on guerrilla filmmaking, directed by Lloyd Kaufman at the height of his self-referential period. The film follows a blind film director making a Toxic Avenger sequel while a serial killer terrorizes the crew. It's deliberately excessive even by Troma standards, pushing the boundaries of good taste while simultaneously critiquing low-budget film production. Like **Living in Oblivion** (1995) and **Ed Wood** (1994), it pulls back the curtain on indie filmmaking, but through Troma's uniquely deranged lens."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Poultrygeist: Night of the Chicken Dead",
+            "year": 2006,
+            "slug": "Troma's musical horror-comedy about fast food zombies featuring their signature practical effects and social commentary",
+            "poster": "https://image.tmdb.org/t/p/w500/vSeehH4s274kdZXEMKnPE2tlqco.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 17287,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vSeehH4s274kdZXEMKnPE2tlqco.jpg"
+          },
+          {
+            "title": "The Toxic Avenger",
+            "year": 1984,
+            "slug": "The film that put Troma on the map - a janitor becomes a deformed superhero after falling into toxic waste",
+            "poster": "https://image.tmdb.org/t/p/w500/so0CGT1fZe2SlVdYXCewghxUgoj.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 15239,
+            "poster_url": "https://image.tmdb.org/t/p/w500/so0CGT1fZe2SlVdYXCewghxUgoj.jpg"
+          },
+          {
+            "title": "Tromeo and Juliet",
+            "year": 1996,
+            "slug": "Shakespeare adaptation with Troma's trademark gore, sex and punk aesthetic",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film represents a crucial moment in indie horror-comedy, arriving just as digital filmmaking was about to transform low-budget production. **Terror Firmer** draws from Kaufman's book \"All I Need to Know About Filmmaking I Learned From The Toxic Avenger,\" turning real production struggles into grotesque set pieces. It shares DNA with **American Movie** (1999) and **Shadow of the Vampire** (2000) in depicting the chaos of indie film shoots, though with significantly more dismemberment."
+      },
+      {
+        "type": "text",
+        "content": "The practical effects work, overseen by Troma veterans, exemplifies the company's dedication to in-camera gore despite minimal resources. This approach influenced later splatter comedies like **Slither** (2006) and **Hobo with a Shotgun** (2011), which similarly embrace practical effects and excessive violence while maintaining a satirical edge. SUBHEAD: The Legacy of Guerrilla Filmmaking"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Class of Nuke 'Em High",
+            "year": 1986,
+            "slug": "Troma's take on teen movies featuring mutant students at a nuclear-adjacent high school",
+            "poster": "https://image.tmdb.org/t/p/w500/2AljZDgKhzFaKO6i9tgmcytEA2b.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 26554,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2AljZDgKhzFaKO6i9tgmcytEA2b.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Terror Firmer** helped codify many tropes now common in meta-horror comedies. Films like **Behind the Mask: The Rise of Leslie Vernon** (2006) and **What We Do in the Shadows** (2014) similarly blend documentary-style footage with genre conventions, though with considerably higher production values. The film's influence can be seen in modern midnight movies like **The Editor** (2014) and **WolfCop** (2014), which embrace similar tones of knowing schlock."
+      }
+    ],
+    "exploreFurther": [
+      "The History of Troma Entertainment and Independent Cinema",
+      "Practical Effects in Low-Budget Horror Films",
+      "Meta-Commentary in Horror-Comedy",
+      "Lloyd Kaufman's Filmmaking Philosophy",
+      "The Evolution of Guerrilla Filmmaking Techniques"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Return to Nuke 'Em High Volume 1",
+          "year": 2013,
+          "slug": "Modern Troma update of their classic series",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Citizen Toxie: The Toxic Avenger IV",
+          "year": 2000,
+          "slug": "Fourth entry in Troma's flagship series",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Combat Shock",
+          "year": 1986,
+          "slug": "Disturbing Vietnam veteran drama showing Troma's serious side",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Cannibal! The Musical",
+          "year": 1993,
+          "slug": "Trey Parker's pre-South Park Troma musical",
+          "poster": "https://image.tmdb.org/t/p/w500/rECGISVfsWyAtPYoXzzaIWSFgqL.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 13063,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rECGISVfsWyAtPYoXzzaIWSFgqL.jpg"
+        },
+        {
+          "title": "Street Trash",
+          "year": 1987,
+          "slug": "Similar tone splatter film about killer liquor",
+          "poster": "https://image.tmdb.org/t/p/w500/vwy81HbDoSvccWvculRMUVY39dD.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 22172,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vwy81HbDoSvccWvculRMUVY39dD.jpg"
+        },
+        {
+          "title": "The Incredibly Strange Film Show",
+          "year": 1988,
+          "slug": "Documentary series featuring Troma",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": null
+        },
+        {
+          "title": "Basket Case",
+          "year": 1982,
+          "slug": "Low-budget NYC horror that influenced Troma's style",
+          "poster": "https://image.tmdb.org/t/p/w500/ciyzEBzJ1TnafkgGXr6DqEVh1wk.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 27813,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ciyzEBzJ1TnafkgGXr6DqEVh1wk.jpg"
+        },
+        {
+          "title": "Bad Taste",
+          "year": 1987,
+          "slug": "Peter Jackson's splatter comedy debut",
+          "poster": "https://image.tmdb.org/t/p/w500/msttMX3undIiaeJLZbMRq94v1bw.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 9964,
+          "poster_url": "https://image.tmdb.org/t/p/w500/msttMX3undIiaeJLZbMRq94v1bw.jpg"
+        },
+        {
+          "title": "Re-Animator",
+          "year": 1985,
+          "slug": "Influential horror-comedy with similar practical effects",
+          "poster": "https://image.tmdb.org/t/p/w500/1hY6AUl92cL9GdZx031UWFiGETt.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 1694,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1hY6AUl92cL9GdZx031UWFiGETt.jpg"
+        },
+        {
+          "title": "Brain Damage",
+          "year": 1988,
+          "slug": "Frank Henenlotter's drug allegory horror-comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/rN0HSiIdwlA82a0KQ5tOsbyvRiV.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 27814,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rN0HSiIdwlA82a0KQ5tOsbyvRiV.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

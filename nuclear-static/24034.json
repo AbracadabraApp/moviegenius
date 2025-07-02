@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "Teacher's Pet",
+    "year": 2004,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/l6huoaxSDFuyzgmLjxboh5iRiaL.jpg",
+    "initialStreaming": null,
+    "tmdbId": 24034,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Teacher's Pet** (2004) represents Disney's fascinating experiment in translating their Emmy-winning animated series to feature film format. Following Spot Helperman, a talking blue dog who disguises himself as a human boy to attend school, the film amplifies the show's clever wordplay and musical numbers while tackling deeper themes of self-acceptance. Like **Pinocchio** (1940) before it, it explores the desire to transform into something else, but with a modern twist that owes more to the meta-humor of **Who Framed Roger Rabbit** (1988) than classic Disney."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Teacher's Pet",
+            "year": 2004,
+            "slug": "A talking dog who dreams of becoming a real boy travels to Florida with his owner to meet a scientist who might make his wish come true",
+            "poster": "https://image.tmdb.org/t/p/w500/l6huoaxSDFuyzgmLjxboh5iRiaL.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 24034,
+            "poster_url": "https://image.tmdb.org/t/p/w500/l6huoaxSDFuyzgmLjxboh5iRiaL.jpg"
+          },
+          {
+            "title": "Pinocchio",
+            "year": 1940,
+            "slug": "Disney's animated classic about a wooden puppet who wishes to become a real boy",
+            "poster": "https://image.tmdb.org/t/p/w500/bnZJrLRnoQHpzEJdka1KYfsAF3N.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 10895,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bnZJrLRnoQHpzEJdka1KYfsAF3N.jpg"
+          },
+          {
+            "title": "Cats Don't Dance",
+            "year": 1997,
+            "slug": "An ambitious cat tries to make it in Hollywood during the Golden Age of cinema",
+            "poster": "https://image.tmdb.org/t/p/w500/yVeDxSPVh8r8dFqc5XSZ9T8xvHR.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 24662,
+            "poster_url": "https://image.tmdb.org/t/p/w500/yVeDxSPVh8r8dFqc5XSZ9T8xvHR.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's unique animation style, supervised by Gary Baseman, breaks from Disney tradition with its deliberately stylized, almost underground comix aesthetic. This bold choice aligns it more with experimental animated features like **The Triplets of Belleville** (2003) than conventional children's fare. The musical numbers, particularly \"I Wanna Be a Boy\" and \"Small But Mighty,\" showcase the talents of Nathan Lane while maintaining the educational undertones that made the series successful."
+      },
+      {
+        "type": "text",
+        "content": "Despite its limited theatrical release and modest box office performance, **Teacher's Pet** (2004) demonstrates remarkable sophistication in its approach to identity and transformation themes. Like **Big** (1988) and **13 Going on 30** (2004), it explores the \"grass is always greener\" mentality, but through a uniquely anthropomorphic lens that questions what it means to be \"normal\" or \"different.\" SUBHEAD: Musical Innovation and Educational Elements"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Triplets of Belleville",
+            "year": 2003,
+            "slug": "A surreal animated adventure about a grandmother searching for her cyclist grandson",
+            "poster": "https://image.tmdb.org/t/p/w500/enw6C4fDw88g0nOQgIJXjgH3NHi.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 9662,
+            "poster_url": "https://image.tmdb.org/t/p/w500/enw6C4fDw88g0nOQgIJXjgH3NHi.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's musical approach deserves special attention, blending Broadway-style showstoppers with educational content in a way that recalls **Schoolhouse Rock!** (1973) but with more narrative complexity. The songs, written by Randy Petersen and Kevin Quinn, maintain the TV show's commitment to vocabulary enhancement and learning while delivering genuine entertainment value. This sophisticated balance echoes successful educational entertainment like **The Music Man** (1962) and **Mary Poppins** (1964)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Educational Animation in Disney Productions",
+      "Gary Baseman's Influence on Modern Animation Aesthetics",
+      "The Legacy of Disney Channel Original Series to Film Adaptations",
+      "Musical Education in Animated Features",
+      "Anthropomorphic Characters in Children's Media"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Oliver & Company",
+          "year": 1988,
+          "slug": "A modern take on Oliver Twist with animals in New York City",
+          "poster": "https://image.tmdb.org/t/p/w500/x8XqdiZ0Oxu5iXF9SiFub9Lae8J.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 12233,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x8XqdiZ0Oxu5iXF9SiFub9Lae8J.jpg"
+        },
+        {
+          "title": "The Emperor's New Groove",
+          "year": 2000,
+          "slug": "A selfish emperor turned into a llama learns humility",
+          "poster": "https://image.tmdb.org/t/p/w500/xU635vn1lMD9DWDloeuKmuhxxnQ.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 11688,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xU635vn1lMD9DWDloeuKmuhxxnQ.jpg"
+        },
+        {
+          "title": "Chicken Little",
+          "year": 2005,
+          "slug": "A young chicken tries to save his town from an alien invasion",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Aristocats",
+          "year": 1970,
+          "slug": "A family of Parisian cats must find their way home after being abandoned",
+          "poster": "https://image.tmdb.org/t/p/w500/1BVOSmQUhphMgnTxnXyfQ9tL1Sc.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 10112,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1BVOSmQUhphMgnTxnXyfQ9tL1Sc.jpg"
+        },
+        {
+          "title": "An American Tail",
+          "year": 1986,
+          "slug": "A young mouse immigrates to America and searches for his family",
+          "poster": "https://image.tmdb.org/t/p/w500/wjhUy9af89vc9CviKcPgTNTrmIq.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 4978,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wjhUy9af89vc9CviKcPgTNTrmIq.jpg"
+        },
+        {
+          "title": "All Dogs Go to Heaven",
+          "year": 1989,
+          "slug": "A deceased dog returns to Earth for revenge but finds redemption",
+          "poster": "https://image.tmdb.org/t/p/w500/nmWh1NglDinfkHD9zCNqGWyhl7Q.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 11497,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nmWh1NglDinfkHD9zCNqGWyhl7Q.jpg"
+        },
+        {
+          "title": "The Secret Life of Pets",
+          "year": 2016,
+          "slug": "Manhattan pets embark on an adventure when their owners are away",
+          "poster": "https://image.tmdb.org/t/p/w500/5f8rTQq42nQVGGes9SCV9AnD0II.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 328111,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5f8rTQq42nQVGGes9SCV9AnD0II.jpg"
+        },
+        {
+          "title": "101 Dalmatians",
+          "year": 1961,
+          "slug": "Dalmatian parents search for their puppies stolen by Cruella De Vil",
+          "poster": "https://image.tmdb.org/t/p/w500/mRY84MJeWKnp9joev82QtslJFvk.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 12230,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mRY84MJeWKnp9joev82QtslJFvk.jpg"
+        },
+        {
+          "title": "Lady and the Tramp",
+          "year": 1955,
+          "slug": "A pampered cocker spaniel falls in love with a streetwise mutt",
+          "poster": "https://image.tmdb.org/t/p/w500/340NcWz9SQXWQyf4oicMxjbrLOb.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 10340,
+          "poster_url": "https://image.tmdb.org/t/p/w500/340NcWz9SQXWQyf4oicMxjbrLOb.jpg"
+        },
+        {
+          "title": "Bolt",
+          "year": 2008,
+          "slug": "A TV star dog believes his powers are real and embarks on a cross-country adventure",
+          "poster": "https://image.tmdb.org/t/p/w500/v5aC4nrzXFGJDWY4JO1eengXzqk.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 13053,
+          "poster_url": "https://image.tmdb.org/t/p/w500/v5aC4nrzXFGJDWY4JO1eengXzqk.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

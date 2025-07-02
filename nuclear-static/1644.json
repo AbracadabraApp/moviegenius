@@ -1,0 +1,158 @@
+{
+  "props": {
+    "title": "The Vanishing",
+    "year": 1993,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/whCG6TGm3h9AHBkfh5M0MnJ8zT0.jpg",
+    "initialStreaming": null,
+    "tmdbId": 1644,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The American remake of **The Vanishing** (1993) offers a fascinating study in how Hollywood often reshapes foreign films for mainstream audiences. The original Dutch-French film **Spoorloos** (1988) stands as one of the most chilling psychological thrillers ever made, with its unforgettable nihilistic ending. Director George Sluizer helmed both versions, but the 1993 remake with Kiefer Sutherland and Jeff Bridges significantly alters the tone and conclusion to align with American thriller conventions, similar to how **The Ring** (2002) adapted Japan's **Ringu** (1998)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Spoorloos",
+            "year": 1988,
+            "slug": "The haunting Dutch original follows a man's obsessive three-year search for his girlfriend who mysteriously disappeared at a gas station",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": null
+          },
+          {
+            "title": "The Vanishing",
+            "year": 1993,
+            "slug": "Kiefer Sutherland stars in this American remake about a man searching for his girlfriend who vanished at a rest stop, with Jeff Bridges as the calculating kidnapper",
+            "poster": "https://image.tmdb.org/t/p/w500/whCG6TGm3h9AHBkfh5M0MnJ8zT0.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 1644,
+            "poster_url": "https://image.tmdb.org/t/p/w500/whCG6TGm3h9AHBkfh5M0MnJ8zT0.jpg"
+          },
+          {
+            "title": "Memento",
+            "year": 2000,
+            "slug": "A man with short-term memory loss hunts for his wife's killer using an intricate system of notes and tattoos",
+            "poster": "https://image.tmdb.org/t/p/w500/fKTPH2WvH8nHTXeBYBVhawtRqtR.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 77,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fKTPH2WvH8nHTXeBYBVhawtRqtR.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film sits within a broader 1990s trend of American remakes of European thrillers, including **La Femme Nikita** (1990) becoming **Point of No Return** (1993) and **Abre Los Ojos** (1997) transforming into **Vanilla Sky** (2001). These adaptations often smoothed out the moral ambiguity and darkness of their source material, though **The Vanishing** (1993) remains notable for retaining original director Sluizer, similar to Michael Haneke directing both versions of **Funny Games** (1997, 2007). SUBHEAD: Obsession and Loss in Missing Person Thrillers"
+      },
+      {
+        "type": "text",
+        "content": "The theme of obsessive searches for missing loved ones has produced some of cinema's most compelling psychological thrillers. **Gone Girl** (2014) modernized the concept with its media-savvy twist, while **Prisoners** (2013) explored the moral decay of a searching father. The original **The Vanishing** (1988) particularly influenced films like **The Secret in Their Eyes** (2009) and **Zodiac** (2007), where the investigation itself becomes a form of psychological torture for the protagonist."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of European thriller remakes in Hollywood",
+      "Psychological impact of unresolved disappearances in cinema",
+      "Director George Sluizer's contrasting approaches to both versions",
+      "The role of alternate endings in thriller adaptations",
+      "Missing person narratives in modern thrillers"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Breakdown",
+          "year": 1993,
+          "slug": "Kurt Russell searches for his wife who disappeared at a gas station",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": null
+        },
+        {
+          "title": "Gone Baby Gone",
+          "year": 2007,
+          "slug": "Two detectives search for a missing girl in Boston's criminal underworld",
+          "poster": "https://image.tmdb.org/t/p/w500/wZR1dvctqODqNGv6LJBEj6DQ2zK.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 4771,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wZR1dvctqODqNGv6LJBEj6DQ2zK.jpg"
+        },
+        {
+          "title": "L'Avventura",
+          "year": 1960,
+          "slug": "A woman's disappearance during a Mediterranean boating trip leads to an existential mystery",
+          "poster": "https://image.tmdb.org/t/p/w500/7kUXAS8K7Ihw1T1mhARjnLuMVk3.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 5165,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7kUXAS8K7Ihw1T1mhARjnLuMVk3.jpg"
+        },
+        {
+          "title": "The Lady Vanishes",
+          "year": 1938,
+          "slug": "Hitchcock's classic about a woman who goes missing on a train",
+          "poster": "https://image.tmdb.org/t/p/w500/c1t9LB76LvEARPanfEzXmkm7fwY.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 940,
+          "poster_url": "https://image.tmdb.org/t/p/w500/c1t9LB76LvEARPanfEzXmkm7fwY.jpg"
+        },
+        {
+          "title": "Tell No One",
+          "year": 2006,
+          "slug": "A doctor receives evidence his dead wife might be alive years after her disappearance",
+          "poster": "https://image.tmdb.org/t/p/w500/fr2wEeO1H8dzx6EDfzYTRBIvZaE.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 10795,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fr2wEeO1H8dzx6EDfzYTRBIvZaE.jpg"
+        },
+        {
+          "title": "Without a Trace",
+          "year": 1983,
+          "slug": "A mother searches for her missing son in New York City",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Forgotten",
+          "year": 2004,
+          "slug": "A mother insists her missing son existed despite evidence to the contrary",
+          "poster": "https://image.tmdb.org/t/p/w500/gANKh0Vm00CTE1Hf2aTh2IIXn8X.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 10145,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gANKh0Vm00CTE1Hf2aTh2IIXn8X.jpg"
+        },
+        {
+          "title": "Frantic",
+          "year": 1988,
+          "slug": "Harrison Ford searches Paris for his missing wife",
+          "poster": "https://image.tmdb.org/t/p/w500/z0xAa91q6Fq2ljksNV1uS53NoCZ.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 10675,
+          "poster_url": "https://image.tmdb.org/t/p/w500/z0xAa91q6Fq2ljksNV1uS53NoCZ.jpg"
+        },
+        {
+          "title": "What Lies Beneath",
+          "year": 2000,
+          "slug": "A woman uncovers disturbing secrets while investigating a disappearance",
+          "poster": "https://image.tmdb.org/t/p/w500/2L3Cn0CizbSy2E9KJt1SiOSyb6p.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 2655,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2L3Cn0CizbSy2E9KJt1SiOSyb6p.jpg"
+        },
+        {
+          "title": "Angel Heart",
+          "year": 1987,
+          "slug": "A private detective's missing person case leads to supernatural horror",
+          "poster": "https://image.tmdb.org/t/p/w500/h5v3wjJQNB7q2RntEnKDLhKtTFE.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 635,
+          "poster_url": "https://image.tmdb.org/t/p/w500/h5v3wjJQNB7q2RntEnKDLhKtTFE.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

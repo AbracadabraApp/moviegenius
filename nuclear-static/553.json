@@ -1,0 +1,131 @@
+{
+  "props": {
+    "title": "Dogville",
+    "year": 2003,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/lraVawavIXh5geMlVjpzCw9TGwR.jpg",
+    "initialStreaming": null,
+    "tmdbId": 553,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Dogville** (2003) represents Lars von Trier's most audacious experimental film, stripping cinema to its bare essentials on a chalk-outlined soundstage. Nicole Kidman's Grace arrives in a Depression-era Colorado town, depicted entirely through minimal props and theatrical staging. The film's brutal examination of human nature shares DNA with Thornton Wilder's \"Our Town\" but twists into something far darker. Von Trier's rejection of traditional sets amplifies the moral decay, forcing viewers to focus entirely on the deteriorating relationships and power dynamics. The film's influence echoes in later experimental works like **Manderlay** (2005) and **The Humans** (2021). Breaking the Waves|1996|Von Trier's emotional breakthrough film about faith, sacrifice and manipulation in a Scottish coastal village|Criterion Dancer in the Dark|2000|Björk stars in von Trier's devastating musical drama about a factory worker going blind|Prime Melancholia|2011|A meditation on depression and apocalypse featuring Kirsten Dunst's finest performance|Hulu"
+      },
+      {
+        "type": "text",
+        "content": "The film marks a crucial point in von Trier's \"America trilogy,\" though he famously never visited the US due to his fear of flying. This distance creates a heightened, theatrical America that serves as canvas for exploring human cruelty. The minimalist staging draws direct lineage from Bertolt Brecht's alienation effect, seen later in films like **Synecdoche, New York** (2008) and **The Lobster** (2015). The three-hour runtime and chapter structure allow von Trier to slowly tighten the screws, making Grace's eventual revenge feel both shocking and grimly inevitable."
+      },
+      {
+        "type": "text",
+        "content": "Von Trier's provocative filmmaking reached new heights of formal experimentation here, influencing a wave of theatrical adaptations like **Anna Karenina** (2012) and **Birdman** (2014). The film's overhead shots, revealing the town like an architect's model, create an omniscient perspective that implicates the viewer in the town's moral collapse. This technique appears in later works like **Blindness** (2008) and **The White Ribbon** (2009), though few match Dogville's sustained commitment to theatrical abstraction. Antichrist|2009|Von Trier's controversial horror film about grief and gender featuring explicit imagery|Criterion Nymphomaniac|2013|A four-hour sexual odyssey told in eight chapters with Charlotte Gainsbourg|Hulu Europa|1991|Von Trier's hypnotic post-WWII noir about American idealism in Germany|Criterion SUBHEAD: Impact on Contemporary Cinema"
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends beyond its experimental staging. Its exploration of power dynamics and community corruption resonates in works like **The Hunt** (2012) and **Three Billboards Outside Ebbing, Missouri** (2017). Grace's character arc - from innocent refugee to vengeful destroyer - creates a template followed in films like **Mother!** (2017) and **Promising Young Woman** (2020). The use of narration (by John Hurt) to create ironic distance becomes a technique adopted by **The Grand Budapest Hotel** (2014) and **The Favourite** (2018)."
+      }
+    ],
+    "exploreFurther": [
+      "Brechtian Alienation Effect in Modern Cinema",
+      "Lars von Trier's America Trilogy Analysis",
+      "Minimalist Staging in Contemporary Film",
+      "Power Dynamics in Small-Town Cinema",
+      "The Evolution of Theatrical Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Manderlay",
+          "year": 2005,
+          "slug": "Von Trier's direct sequel to Dogville examining racism in the American South",
+          "poster": "https://image.tmdb.org/t/p/w500/6HYoHEcLNgETHlJDyQrC4Y7e01.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 1951,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6HYoHEcLNgETHlJDyQrC4Y7e01.jpg"
+        },
+        {
+          "title": "Festen",
+          "year": 1998,
+          "slug": "Dogme 95 film about family secrets revealed at a birthday party",
+          "poster": "https://image.tmdb.org/t/p/w500/2LRzNq41yrY8EjCnD1S8sCCPvKk.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 309,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2LRzNq41yrY8EjCnD1S8sCCPvKk.jpg"
+        },
+        {
+          "title": "The House That Jack Built",
+          "year": 2018,
+          "slug": "Von Trier's controversial serial killer character study",
+          "poster": "https://image.tmdb.org/t/p/w500/bMUGNkPaHOurcBK9g3XpJx3fxuO.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 398173,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bMUGNkPaHOurcBK9g3XpJx3fxuO.jpg"
+        },
+        {
+          "title": "Funny Games",
+          "year": 1997,
+          "slug": "Haneke's fourth-wall-breaking examination of violence",
+          "poster": "https://image.tmdb.org/t/p/w500/48uCNgdyYIoN4ayWjTpLaqSDcWI.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 10234,
+          "poster_url": "https://image.tmdb.org/t/p/w500/48uCNgdyYIoN4ayWjTpLaqSDcWI.jpg"
+        },
+        {
+          "title": "Persona",
+          "year": 1966,
+          "slug": "Bergman's experimental psychological drama",
+          "poster": "https://image.tmdb.org/t/p/w500/9QlqnRNbzb78lRiRPAP1ufmoZko.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 797,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9QlqnRNbzb78lRiRPAP1ufmoZko.jpg"
+        },
+        {
+          "title": "Edipo Re",
+          "year": 1967,
+          "slug": "Pasolini's theatrical adaptation of Sophocles",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Trial",
+          "year": 1962,
+          "slug": "Orson Welles' Kafkaesque nightmare of bureaucracy",
+          "poster": "https://image.tmdb.org/t/p/w500/v5Kr4MvmqbBwS7a1CXFAsISmQCr.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 172535,
+          "poster_url": "https://image.tmdb.org/t/p/w500/v5Kr4MvmqbBwS7a1CXFAsISmQCr.jpg"
+        },
+        {
+          "title": "Marat/Sade",
+          "year": 1967,
+          "slug": "Peter Brook's filmed play within an asylum",
+          "poster": "https://image.tmdb.org/t/p/w500/7aucmdXXvqB4uW63K6t7P9sTc1f.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 44258,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7aucmdXXvqB4uW63K6t7P9sTc1f.jpg"
+        },
+        {
+          "title": "Our Town",
+          "year": 2003,
+          "slug": "PBS adaptation of Thornton Wilder's minimalist play",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "PBS",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Cook, the Thief, His Wife & Her Lover",
+          "year": 1989,
+          "slug": "Peter Greenaway's theatrical allegory",
+          "poster": "https://image.tmdb.org/t/p/w500/fNkl7o1VQQqy1nEX9x56CDHULmr.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 7452,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fNkl7o1VQQqy1nEX9x56CDHULmr.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

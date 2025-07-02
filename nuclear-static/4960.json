@@ -1,0 +1,196 @@
+{
+  "props": {
+    "title": "Synecdoche, New York",
+    "year": 2008,
+    "initialSlug": "A playwright's life merges with his endless theater project",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/5UwdhrjXhUgsiDhe1dpS9z4yj7q.jpg",
+    "initialStreaming": "TBD",
+    "tmdbId": 4960,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Charlie Kaufman's directorial debut **Synecdoche, New York** (2008) stands as one of cinema's most ambitious explorations of artistic obsession and mortality. Philip Seymour Hoffman delivers a tour-de-force performance as Caden Cotard, a theater director who attempts to recreate his entire life inside a warehouse, building an ever-expanding play that mirrors reality with increasingly bizarre complexity. Like Kaufman's earlier screenwriting work in **Adaptation** (2002) and **Being John Malkovich** (1999), the film fractures reality and identity, but pushes meta-narrative to new extremes."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "8½",
+            "year": 1963,
+            "slug": "Fellini's masterpiece about a film director struggling with creative block and personal crisis",
+            "poster": "https://image.tmdb.org/t/p/w500/2cPK4xKtccKmYsCSpaFGWnfEsZX.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 422,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2cPK4xKtccKmYsCSpaFGWnfEsZX.jpg"
+          },
+          {
+            "title": "Adaptation",
+            "year": 2002,
+            "slug": "Charlie Kaufman's meta-screenplay about writing an adaptation while battling creative demons",
+            "poster": "https://image.tmdb.org/t/p/w500/ffEmHQAiD0m5dEQ6rlsuA9vlllW.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 2757,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ffEmHQAiD0m5dEQ6rlsuA9vlllW.jpg"
+          },
+          {
+            "title": "Birdman",
+            "year": 2014,
+            "slug": "A washed-up actor stages a Broadway play while battling his ego and past fame",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's labyrinthine structure echoes other works about artistic creation consuming its creator, like **8½** (1963) and **All That Jazz** (1979). But where those films maintain some tether to reality, Synecdoche dissolves completely into its own recursive loops. The warehouse becomes a universe unto itself, with actors playing actors playing real people, and replicas containing ever-smaller replicas. This Russian doll structure recalls **Inland Empire** (2006), David Lynch's digital nightmare about an actress losing herself in a role."
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of mortality and time parallels other metaphysical dramas like **The Seventh Seal** (1957) and **Last Year at Marienbad** (1961). As Caden ages and his massive theatrical project sprawls across decades, time becomes increasingly fluid and unreliable. Characters age randomly, die suddenly, or persist unchanged while others decay. This temporal distortion echoes **Eternal Sunshine of the Spotless Mind** (2004), another Kaufman screenplay that manipulates memory and time to explore loss and regret. SUBHEAD: The Architecture of Memory and Identity"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Eternal Sunshine of the Spotless Mind",
+            "year": 2004,
+            "slug": "A man undergoes a procedure to erase memories of his ex-girlfriend",
+            "poster": "https://image.tmdb.org/t/p/w500/5MwkWH9tYHv3mV9OdYTMR5qreIz.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 38,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5MwkWH9tYHv3mV9OdYTMR5qreIz.jpg"
+          },
+          {
+            "title": "The Seventh Seal",
+            "year": 1957,
+            "slug": "A medieval knight plays chess with Death while questioning existence",
+            "poster": "https://image.tmdb.org/t/p/w500/wcZ21zrOsy0b52AfAF50XpTiv75.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 490,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wcZ21zrOsy0b52AfAF50XpTiv75.jpg"
+          },
+          {
+            "title": "Inland Empire",
+            "year": 2006,
+            "slug": "Lynch's surreal nightmare about an actress losing her identity in a cursed film role",
+            "poster": "https://image.tmdb.org/t/p/w500/fw9Bzwel5VkBKy9qLD2MzAMnu5I.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 1730,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fw9Bzwel5VkBKy9qLD2MzAMnu5I.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The warehouse set becomes a physical manifestation of memory and consciousness, similar to the architectural dreamscapes of **Inception** (2010) or the shifting house in **Last Year at Marienbad** (1961). As Caden builds increasingly detailed replicas within replicas, the film visualizes how we construct our identities through remembered experiences and self-reflection. This meta-theatrical approach recalls **The Holy Mountain** (1973) and **Persona** (1966), films that similarly break down the boundaries between performance and reality."
+      }
+    ],
+    "exploreFurther": [
+      "The influence of Theater of the Absurd on meta-cinema",
+      "Kaufman's recurring themes of identity and consciousness",
+      "The role of architecture in representing mental states in film",
+      "Time distortion techniques in contemporary cinema",
+      "Meta-narrative structures in modern filmmaking"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Mulholland Drive",
+          "year": 2001,
+          "slug": "Lynch's Hollywood nightmare about identity and dreams",
+          "poster": "https://image.tmdb.org/t/p/w500/x7A59t6ySylr1L7aubOQEA480vM.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1018,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x7A59t6ySylr1L7aubOQEA480vM.jpg"
+        },
+        {
+          "title": "Being John Malkovich",
+          "year": 1999,
+          "slug": "A puppeteer discovers a portal into an actor's mind",
+          "poster": "https://image.tmdb.org/t/p/w500/xVSvIwRNzwXSs0CLefiiG6A96m4.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 492,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xVSvIwRNzwXSs0CLefiiG6A96m4.jpg"
+        },
+        {
+          "title": "The Holy Mountain",
+          "year": 1973,
+          "slug": "Jodorowsky's surreal spiritual journey",
+          "poster": "https://image.tmdb.org/t/p/w500/nvwbOcV3jJExT090Bb2m7fNjzTN.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 8327,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nvwbOcV3jJExT090Bb2m7fNjzTN.jpg"
+        },
+        {
+          "title": "Persona",
+          "year": 1966,
+          "slug": "Bergman's psychological drama about merged identities",
+          "poster": "https://image.tmdb.org/t/p/w500/9QlqnRNbzb78lRiRPAP1ufmoZko.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 797,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9QlqnRNbzb78lRiRPAP1ufmoZko.jpg"
+        },
+        {
+          "title": "Barton Fink",
+          "year": 1991,
+          "slug": "A playwright struggles with writer's block in a hellish hotel",
+          "poster": "https://image.tmdb.org/t/p/w500/oDkp5iClJ9WKJGtKHz8BydodHC3.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 290,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oDkp5iClJ9WKJGtKHz8BydodHC3.jpg"
+        },
+        {
+          "title": "All That Jazz",
+          "year": 1979,
+          "slug": "Semi-autobiographical musical about a self-destructive director",
+          "poster": "https://image.tmdb.org/t/p/w500/culCEdj4srLljefgn4XKd6k3C5t.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 16858,
+          "poster_url": "https://image.tmdb.org/t/p/w500/culCEdj4srLljefgn4XKd6k3C5t.jpg"
+        },
+        {
+          "title": "Last Year at Marienbad",
+          "year": 1961,
+          "slug": "Surreal French drama playing with memory and time",
+          "poster": "https://image.tmdb.org/t/p/w500/tizZ7JnXRFMvoNegu2CtM2ab9E7.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 4024,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tizZ7JnXRFMvoNegu2CtM2ab9E7.jpg"
+        },
+        {
+          "title": "Providence",
+          "year": 1977,
+          "slug": "An aging writer blends reality and fiction in his final novel",
+          "poster": "https://image.tmdb.org/t/p/w500/QUJfGGPg3LLIQGymrDIuAMFsV7.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 54140,
+          "poster_url": "https://image.tmdb.org/t/p/w500/QUJfGGPg3LLIQGymrDIuAMFsV7.jpg"
+        },
+        {
+          "title": "The Purple Rose of Cairo",
+          "year": 1985,
+          "slug": "A movie character steps off the screen into reality",
+          "poster": "https://image.tmdb.org/t/p/w500/ccsint43E44B7NGceEhVimD93Yt.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10849,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ccsint43E44B7NGceEhVimD93Yt.jpg"
+        },
+        {
+          "title": "Inception",
+          "year": 2010,
+          "slug": "Dream architects construct layered realities",
+          "poster": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 27205,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

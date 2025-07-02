@@ -1,0 +1,187 @@
+{
+  "props": {
+    "title": "Up",
+    "year": 2009,
+    "initialSlug": "A journey beyond imagination.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/mFvoEwSfLqbcWwFsDjQebn9bzFe.jpg",
+    "initialStreaming": null,
+    "tmdbId": 14160,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Up** (2009) masterfully blends heartbreak and adventure in Pixar's most emotionally mature film. The devastating \"Married Life\" sequence rivals any live-action romance, compressing Carl and Ellie's lifetime of love into a wordless 4-minute montage. Like **Wall-E** (2008) and **Toy Story** (2005), Up proves animation can tackle complex adult themes while maintaining childlike wonder. The film's exploration of grief and second chances echoes through later animated features like **Inside Out** (2015) and **Soul** (2020)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Iron Giant",
+            "year": 1999,
+            "slug": "A lonely boy befriends a giant robot in Brad Bird's touching tale about friendship and sacrifice",
+            "poster": "https://image.tmdb.org/t/p/w500/ct04FCFLPImNG5thcPLRnVsZlmS.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 10386,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ct04FCFLPImNG5thcPLRnVsZlmS.jpg"
+          },
+          {
+            "title": "My Neighbor Totoro",
+            "year": 1988,
+            "slug": "Hayao Miyazaki's gentle masterpiece about two sisters who discover magical forest spirits",
+            "poster": "https://image.tmdb.org/t/p/w500/rtGDOeG9LzoerkDGZF9dnVeLppL.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 8392,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rtGDOeG9LzoerkDGZF9dnVeLppL.jpg"
+          },
+          {
+            "title": "Big Hero 6",
+            "year": 2014,
+            "slug": "A young inventor and an inflatable healthcare robot process grief while becoming unlikely heroes",
+            "poster": "https://image.tmdb.org/t/p/w500/2mxS4wUimwlLmI1xp6QW6NSU361.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 177572,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2mxS4wUimwlLmI1xp6QW6NSU361.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Carl's journey mirrors other films about elderly protagonists finding renewed purpose, like **About Schmidt** (2002) and **The Straight Story** (1999). But Up's whimsical elements - talking dogs, a house lifted by balloons, a giant exotic bird - create a unique fusion of magical realism and emotional authenticity. The relationship between Carl and Russell evolves from reluctant partnership to genuine found family, echoing similar dynamics in **The Kid** (1921) and **Paper Moon** (1973)."
+      },
+      {
+        "type": "text",
+        "content": "Director Pete Docter excels at visualizing abstract concepts through concrete metaphors. Carl's house represents both his attachment to the past and his eventual ability to let go, similar to how memories are personified in Docter's later film **Inside Out** (2015). The film's vertical imagery - balloons rising, Paradise Falls descending - creates a visual language for Carl's emotional journey from isolation to connection. SUBHEAD: Redefining Adventure in Animation"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Howl's Moving Castle",
+            "year": 2004,
+            "slug": "An enchanted castle carries a young woman through a magical adventure about aging and love",
+            "poster": "https://image.tmdb.org/t/p/w500/23hUJh7JdO23SpgUB5oiFDQk2wX.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 4935,
+            "poster_url": "https://image.tmdb.org/t/p/w500/23hUJh7JdO23SpgUB5oiFDQk2wX.jpg"
+          },
+          {
+            "title": "Mary Poppins",
+            "year": 1964,
+            "slug": "A magical nanny helps a rigid family rediscover joy and wonder",
+            "poster": "https://image.tmdb.org/t/p/w500/ei8hhYCMfURfPOXKBnyl61be2iV.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 433,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ei8hhYCMfURfPOXKBnyl61be2iV.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Up revolutionized what audiences expect from animated features. While films like **Shrek** (2001) and **The Incredibles** (2004) had already pushed beyond simple kid-friendly narratives, Up demonstrated unprecedented emotional sophistication. Its influence can be seen in later animated works like **Coco** (2017) and **Wolfwalkers** (2020), which similarly balance fantastical elements with profound emotional depth."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Pixar's Emotional Storytelling",
+      "Visual Metaphors in Animated Films",
+      "Aging and Adventure in Cinema",
+      "Found Family Narratives in Animation",
+      "Silent Storytelling in Modern Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "WALL-E",
+          "year": 2008,
+          "slug": "A lonely robot finds love while trying to save humanity",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Ratatouille",
+          "year": 2007,
+          "slug": "A rat with culinary dreams partners with a kitchen worker to become a chef",
+          "poster": "https://image.tmdb.org/t/p/w500/t3vaWRPSf6WjDSamIkKDs1iQWna.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 2062,
+          "poster_url": "https://image.tmdb.org/t/p/w500/t3vaWRPSf6WjDSamIkKDs1iQWna.jpg"
+        },
+        {
+          "title": "Spirited Away",
+          "year": 2001,
+          "slug": "A young girl works in a supernatural bathhouse to save her parents",
+          "poster": "https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 129,
+          "poster_url": "https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg"
+        },
+        {
+          "title": "The Incredibles",
+          "year": 2004,
+          "slug": "A family of superheroes struggles with suburban life",
+          "poster": "https://image.tmdb.org/t/p/w500/2LqaLgk4Z226KkgPJuiOQ58wvrm.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9806,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2LqaLgk4Z226KkgPJuiOQ58wvrm.jpg"
+        },
+        {
+          "title": "Finding Nemo",
+          "year": 2003,
+          "slug": "A overprotective father fish crosses the ocean to find his son",
+          "poster": "https://image.tmdb.org/t/p/w500/eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 12,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg"
+        },
+        {
+          "title": "Toy Story 3",
+          "year": 2010,
+          "slug": "Woody and friends face an uncertain future as Andy grows up",
+          "poster": "https://image.tmdb.org/t/p/w500/AbbXspMOwdvwWZgVN0nabZq03Ec.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 10193,
+          "poster_url": "https://image.tmdb.org/t/p/w500/AbbXspMOwdvwWZgVN0nabZq03Ec.jpg"
+        },
+        {
+          "title": "Monster House",
+          "year": 2006,
+          "slug": "Three kids discover their neighbor's house is alive",
+          "poster": "https://image.tmdb.org/t/p/w500/zCRPr4bkO3ae0U1134vJ39xZnAG.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9297,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zCRPr4bkO3ae0U1134vJ39xZnAG.jpg"
+        },
+        {
+          "title": "Coraline",
+          "year": 2009,
+          "slug": "A girl finds a perfect parallel world that hides sinister secrets",
+          "poster": "https://image.tmdb.org/t/p/w500/4jeFXQYytChdZYE9JYO7Un87IlW.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 14836,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4jeFXQYytChdZYE9JYO7Un87IlW.jpg"
+        },
+        {
+          "title": "The Secret of NIMH",
+          "year": 1982,
+          "slug": "A mouse mother seeks help from mysterious rats to save her home",
+          "poster": "https://image.tmdb.org/t/p/w500/prNrnOKlkV9wl5Sl3zwHu1f3t2z.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 11704,
+          "poster_url": "https://image.tmdb.org/t/p/w500/prNrnOKlkV9wl5Sl3zwHu1f3t2z.jpg"
+        },
+        {
+          "title": "Castle in the Sky",
+          "year": 1986,
+          "slug": "Two children protect a magical crystal from sky pirates",
+          "poster": "https://image.tmdb.org/t/p/w500/41XxSsJc5OrulP0m7TrrUeO2hoz.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10515,
+          "poster_url": "https://image.tmdb.org/t/p/w500/41XxSsJc5OrulP0m7TrrUeO2hoz.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

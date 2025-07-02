@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "The Driver",
+    "year": 1978,
+    "initialSlug": "Pro getaway driver faces off against obsessed cop",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/zSpk2OH4MCgLGB06XDv4YUfBTv6.jpg",
+    "initialStreaming": null,
+    "tmdbId": 2153,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Driver** (1978) revolutionized car chase cinema with Walter Hill's minimalist approach and Ryan O'Neal's nameless getaway expert. It directly influenced later neo-noir films like **Drive** (2011) and **Baby Driver** (2017) with its stripped-down storytelling and emphasis on pure vehicular action. Hill's decision to keep characters unnamed (The Driver, The Detective, The Player) established a noir template that Nicolas Winding Refn would later perfect. The film's Los Angeles nightscape becomes a character itself, with neon-lit streets and empty parking garages creating a haunting urban playground for high-stakes pursuits."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Driver",
+            "year": 1978,
+            "slug": "Ryan O'Neal stars as a skilled getaway driver pursued by a determined detective in this influential neo-noir thriller",
+            "poster": "https://image.tmdb.org/t/p/w500/zSpk2OH4MCgLGB06XDv4YUfBTv6.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 2153,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zSpk2OH4MCgLGB06XDv4YUfBTv6.jpg"
+          },
+          {
+            "title": "Drive",
+            "year": 2011,
+            "slug": "Ryan Gosling plays a stunt driver moonlighting as a getaway wheelman who protects a young mother",
+            "poster": "https://image.tmdb.org/t/p/w500/602vevIURmpDfzbnv5Ubi6wIkQm.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 64690,
+            "poster_url": "https://image.tmdb.org/t/p/w500/602vevIURmpDfzbnv5Ubi6wIkQm.jpg"
+          },
+          {
+            "title": "Bullitt",
+            "year": 1968,
+            "slug": "Steve McQueen's legendary San Francisco car chase set new standards for automotive action",
+            "poster": "https://image.tmdb.org/t/p/w500/2ffzF1WmeXtH420fSUoCrecFvDA.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 916,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2ffzF1WmeXtH420fSUoCrecFvDA.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends beyond just chase sequences. Its economical dialogue and focus on professional criminals doing their jobs without melodrama created a new crime film language. **Thief** (1981) adopted a similar approach with James Caan's safe-cracker, while **Le Samouraï** (1967) had already established the template of the methodical criminal professional. The Driver's technical precision in shooting car sequences - emphasizing real stunts and mechanical authenticity - established benchmarks that influenced everything from **The French Connection** (1971) to **Ronin** (1998)."
+      },
+      {
+        "type": "text",
+        "content": "Hill's direction strips away standard action movie excess, focusing instead on the pure craft of driving and pursuit. This approach influenced a generation of filmmakers, from Michael Mann's methodical professionals in **Heat** (1995) to the wheel work in **The Transporter** (2002). The film's cat-and-mouse game between O'Neal and Bruce Dern's obsessed detective created a template for antagonist relationships that still resonates in modern thrillers. SUBHEAD: Evolution of the Professional Driver Genre"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Ronin",
+            "year": 1998,
+            "slug": "Robert De Niro leads a team of mercenaries in a thriller featuring some of cinema's greatest car chases",
+            "poster": "https://image.tmdb.org/t/p/w500/AirrhRJjHwytOV0pdLu7YZ4DEyr.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 8195,
+            "poster_url": "https://image.tmdb.org/t/p/w500/AirrhRJjHwytOV0pdLu7YZ4DEyr.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The professional driver archetype established in **The Driver** evolved through various interpretations. **To Live and Die in L.A.** (1985) brought a grittier, more morally ambiguous take on pursuit driving, while **Gone in 60 Seconds** (2000) emphasized the pure joy of automotive excellence. The character type reached its artistic peak with **Drive**, which merged European art house sensibilities with American genre conventions, much as Hill's original film blended French New Wave influences with Hollywood action."
+      }
+    ],
+    "exploreFurther": [
+      "The evolution of practical car stunts in cinema from Bullitt to modern era",
+      "Walter Hill's influence on action cinema minimalism",
+      "Neo-noir's relationship with professional criminal protagonists",
+      "The nameless protagonist in crime cinema",
+      "Los Angeles as a character in night-noir films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Thief",
+          "year": 1981,
+          "slug": "James Caan stars as a professional safecracker in Michael Mann's stylish crime thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/bpjRGwfYJ71bU0hNhLIz7g3t6Oy.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 11524,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bpjRGwfYJ71bU0hNhLIz7g3t6Oy.jpg"
+        },
+        {
+          "title": "Le Samourai",
+          "year": 1967,
+          "slug": "Alain Delon plays a methodical hitman in Melville's influential crime masterpiece",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "The French Connection",
+          "year": 1971,
+          "slug": "Gene Hackman stars in this gritty police thriller with legendary car chase",
+          "poster": "https://image.tmdb.org/t/p/w500/5XSGvIKl2yPvOkieFjc3rzLw7x0.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 1051,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5XSGvIKl2yPvOkieFjc3rzLw7x0.jpg"
+        },
+        {
+          "title": "Heat",
+          "year": 1995,
+          "slug": "De Niro and Pacino face off in Mann's epic crime saga",
+          "poster": "https://image.tmdb.org/t/p/w500/umSVjVdbVwtx5ryCA2QXL44Durm.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 949,
+          "poster_url": "https://image.tmdb.org/t/p/w500/umSVjVdbVwtx5ryCA2QXL44Durm.jpg"
+        },
+        {
+          "title": "Baby Driver",
+          "year": 2017,
+          "slug": "A young getaway driver tries to escape his criminal life",
+          "poster": "https://image.tmdb.org/t/p/w500/tYzFuYXmT8LOYASlFCkaPiAFAl0.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 339403,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tYzFuYXmT8LOYASlFCkaPiAFAl0.jpg"
+        },
+        {
+          "title": "To Live and Die in L.A.",
+          "year": 1985,
+          "slug": "William Friedkin's intense thriller about Secret Service agents",
+          "poster": "https://image.tmdb.org/t/p/w500/2iW3pSihBIhXjnBQmUJ0mAiZbB5.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 9846,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2iW3pSihBIhXjnBQmUJ0mAiZbB5.jpg"
+        },
+        {
+          "title": "The Transporter",
+          "year": 2002,
+          "slug": "Jason Statham stars as a professional driver for hire",
+          "poster": "https://image.tmdb.org/t/p/w500/xmuCaJJjGbUns8pwMD7M0C0O1uP.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 4108,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xmuCaJJjGbUns8pwMD7M0C0O1uP.jpg"
+        },
+        {
+          "title": "Point Break",
+          "year": 1991,
+          "slug": "FBI agent infiltrates gang of professional thieves",
+          "poster": "https://image.tmdb.org/t/p/w500/tlbERIghrQ4oofqlbF7H0K0EYnx.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 1089,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tlbERIghrQ4oofqlbF7H0K0EYnx.jpg"
+        },
+        {
+          "title": "Wheelman",
+          "year": 2017,
+          "slug": "Netflix thriller about a getaway driver double-crossed during a bank robbery",
+          "poster": "https://image.tmdb.org/t/p/w500/qitUsN1Ea8Bsg8R0QtBB35H2xgB.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 471014,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qitUsN1Ea8Bsg8R0QtBB35H2xgB.jpg"
+        },
+        {
+          "title": "The Italian Job",
+          "year": 1969,
+          "slug": "Michael Caine leads a team of thieves in Mini Coopers",
+          "poster": "https://image.tmdb.org/t/p/w500/8NOw3HPHkcBndJW2K6ofbcSb7WD.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 10536,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8NOw3HPHkcBndJW2K6ofbcSb7WD.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

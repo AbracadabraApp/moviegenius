@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "The Shadow",
+    "year": 1994,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/xAbFJH3vQYZvUyzzGAtG4OLy492.jpg",
+    "initialStreaming": null,
+    "tmdbId": 8850,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Shadow** (1994) represents a fascinating attempt to revive pulp hero adaptations in the 1990s, following the success of **Batman** (1989). Russell Mulcahy's stylish direction captures the Art Deco glamour of 1930s New York, while Alec Baldwin brings the perfect mix of menace and charm to Lamont Cranston/The Shadow. The film draws heavily from the character's radio drama roots, where \"the power to cloud men's minds\" became a signature element. Like **Dick Tracy** (1990), it embraces its period setting with elaborate practical effects and detailed production design."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Phantom",
+            "year": 1996,
+            "slug": "Billy Zane dons the purple suit of Lee Falk's comic strip hero in this pulp adventure set in 1930s jungle locations",
+            "poster": "https://image.tmdb.org/t/p/w500/8k8RSMkmGR9Lp6FbKtithM3KIQb.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 9826,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8k8RSMkmGR9Lp6FbKtithM3KIQb.jpg"
+          },
+          {
+            "title": "The Rocketeer",
+            "year": 1991,
+            "slug": "A stunt pilot finds a rocket pack and becomes a high-flying hero in this retro adventure starring Bill Campbell",
+            "poster": "https://image.tmdb.org/t/p/w500/2tDFRESFwKww1LHRE8W1Exj9edH.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 10249,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2tDFRESFwKww1LHRE8W1Exj9edH.jpg"
+          },
+          {
+            "title": "Dick Tracy",
+            "year": 1990,
+            "slug": "Warren Beatty directs and stars in this vibrant adaptation of the classic comic strip with an all-star cast",
+            "poster": "https://image.tmdb.org/t/p/w500/AonBXZe8GwnW8f1TWI2KcewOsfS.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 8592,
+            "poster_url": "https://image.tmdb.org/t/p/w500/AonBXZe8GwnW8f1TWI2KcewOsfS.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's visual effects blend practical and early CGI techniques, creating a unique aesthetic that bridges classic noir and modern blockbuster sensibilities. Jerry Goldsmith's sweeping orchestral score echoes both period-appropriate themes and contemporary action dynamics. The Shadow's supernatural abilities, particularly the iconic power to become invisible, influenced later superhero films like **Batman Begins** (2005) in depicting hero training sequences and origin stories."
+      },
+      {
+        "type": "text",
+        "content": "While **The Shadow** failed to launch a franchise like **Batman** did, it maintains a cult following and represents an important bridge between classic pulp heroes and modern superhero films. Its influence can be seen in later period superhero films like **Captain America: The First Avenger** (2011) and neo-noir superhero tales like **The Spirit** (2008), though the latter failed to capture the same magic. SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Dark City",
+            "year": 1998,
+            "slug": "A man with psychic powers awakens in a noir-styled city controlled by mysterious beings",
+            "poster": "https://image.tmdb.org/t/p/w500/tNPEGju4DpTdbhBphNmZoEi9Bd3.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 2666,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tNPEGju4DpTdbhBphNmZoEi9Bd3.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The Shadow's unique blend of noir, supernatural elements, and Art Deco aesthetics helped pave the way for darker superhero adaptations. The film's approach to depicting psychic powers and mind control influenced later works like **Constantine** (2005) and **Doctor Strange** (2016). Its portrayal of a morally ambiguous hero who reformed from evil particularly resonates with modern antihero narratives."
+      }
+    ],
+    "exploreFurther": [
+      "The History of Radio Drama and The Shadow's Original Broadcasts",
+      "Art Deco Architecture in 1930s New York City",
+      "The Evolution of Pulp Heroes in Cinema",
+      "Jerry Goldsmith's Approach to Period Action Scores",
+      "Practical Effects vs CGI in 1990s Superhero Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Batman",
+          "year": 1989,
+          "slug": "Tim Burton's gothic take on the Dark Knight starring Michael Keaton",
+          "poster": "https://image.tmdb.org/t/p/w500/cij4dd21v2Rk2YtUQbV5kW69WB2.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 268,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cij4dd21v2Rk2YtUQbV5kW69WB2.jpg"
+        },
+        {
+          "title": "The Crow",
+          "year": 1994,
+          "slug": "Brandon Lee stars as a supernatural avenger in this gothic action film",
+          "poster": "https://image.tmdb.org/t/p/w500/rMMB3v6jYHjsvXRNJYESacoTD7j.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9495,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rMMB3v6jYHjsvXRNJYESacoTD7j.jpg"
+        },
+        {
+          "title": "The Mask",
+          "year": 1994,
+          "slug": "Jim Carrey becomes a zoot-suited superhero with cartoon powers",
+          "poster": "https://image.tmdb.org/t/p/w500/xbbXp9px4o8Oe7IbGd0yIbla8mZ.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 854,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xbbXp9px4o8Oe7IbGd0yIbla8mZ.jpg"
+        },
+        {
+          "title": "Mystery Men",
+          "year": 1999,
+          "slug": "Quirky superhero comedy about wannabe heroes with unusual powers",
+          "poster": "https://image.tmdb.org/t/p/w500/ciVSbFmDecOIwlxl9F6GhHVgCVJ.jpg",
+          "initialStreaming": "Peacock",
+          "tmdb_id": 9824,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ciVSbFmDecOIwlxl9F6GhHVgCVJ.jpg"
+        },
+        {
+          "title": "Sky Captain and the World of Tomorrow",
+          "year": 2004,
+          "slug": "Retro-futuristic adventure in a stylized 1930s setting",
+          "poster": "https://image.tmdb.org/t/p/w500/4S1pcSuRlfUkJWaZY1hcdzMmPx.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 5137,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4S1pcSuRlfUkJWaZY1hcdzMmPx.jpg"
+        },
+        {
+          "title": "Batman Forever",
+          "year": 1995,
+          "slug": "Joel Schumacher's more colorful take on Batman with Val Kilmer",
+          "poster": "https://image.tmdb.org/t/p/w500/l0wdmQl9TDhMgz1f822yjXHdtlf.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 414,
+          "poster_url": "https://image.tmdb.org/t/p/w500/l0wdmQl9TDhMgz1f822yjXHdtlf.jpg"
+        },
+        {
+          "title": "The Phantom of the Opera",
+          "year": 2004,
+          "slug": "Lavish adaptation of the musical with similar period aesthetics",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Watchmen",
+          "year": 2009,
+          "slug": "Dark superhero epic with similar themes of moral ambiguity",
+          "poster": "https://image.tmdb.org/t/p/w500/aVURelN3pM56lFM7Dgfs5TixcIf.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 13183,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aVURelN3pM56lFM7Dgfs5TixcIf.jpg"
+        },
+        {
+          "title": "The League of Extraordinary Gentlemen",
+          "year": 2003,
+          "slug": "Victorian literary heroes unite in pulp-style adventure",
+          "poster": "https://image.tmdb.org/t/p/w500/kdAuVFP63XXxnb983ry2pLCKd9S.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 8698,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kdAuVFP63XXxnb983ry2pLCKd9S.jpg"
+        },
+        {
+          "title": "The Spirit",
+          "year": 2008,
+          "slug": "Frank Miller's stylized adaptation of Will Eisner's comic hero",
+          "poster": "https://image.tmdb.org/t/p/w500/g9qawfzR3LWRC8r8YZ9w2yaQi5W.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 8285,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g9qawfzR3LWRC8r8YZ9w2yaQi5W.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

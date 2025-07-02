@@ -1,0 +1,159 @@
+{
+  "props": {
+    "title": "Cidade dos Homens",
+    "year": 2007,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/8x7C0WF0oJDnfdeWkuaaHj4BbqL.jpg",
+    "initialStreaming": null,
+    "tmdbId": 7343,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Cidade dos Homens** (2007) emerges as a powerful continuation of the groundbreaking favela narrative established by **City of God** (2002), though with a distinctly more intimate focus. Director Paulo Morelli crafts a compelling coming-of-age story that follows Acerola and Laranjinha, two best friends navigating life in Rio's favelas. The film builds on the successful Brazilian TV series of the same name, maintaining the raw authenticity that made both **Elite Squad** (2007) and **City of God** landmark pieces of Brazilian cinema, while offering a more personal lens on friendship and fatherhood."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "City of God",
+            "year": 2002,
+            "slug": "A violent, kinetic masterpiece following young photographers in Rio's favelas",
+            "poster": "https://image.tmdb.org/t/p/w500/k7eYdWvhYQyRQoU2TB2A2Xu2TfD.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 598,
+            "poster_url": "https://image.tmdb.org/t/p/w500/k7eYdWvhYQyRQoU2TB2A2Xu2TfD.jpg"
+          },
+          {
+            "title": "Elite Squad",
+            "year": 2007,
+            "slug": "Brutal examination of Rio's BOPE police unit and corruption",
+            "poster": "https://image.tmdb.org/t/p/w500/lwIXz785N2fXi8hsBr1IXciFlkM.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 7347,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lwIXz785N2fXi8hsBr1IXciFlkM.jpg"
+          },
+          {
+            "title": "Bus 174",
+            "year": 2002,
+            "slug": "Documentary about a Rio bus hijacking that exposed social inequality",
+            "poster": "https://image.tmdb.org/t/p/w500/30v64yPfBbNSmnYHShExuWlXUJh.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 8439,
+            "poster_url": "https://image.tmdb.org/t/p/w500/30v64yPfBbNSmnYHShExuWlXUJh.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of absent fathers and cycle-breaking resonates with other powerful Latin American coming-of-age narratives like **Y Tu Mamá También** (2001) and **Amores Perros** (2000). Where **Cidade dos Homens** distinguishes itself is in its unflinching look at how young men search for identity in environments where traditional father figures are often missing or destroyed by systemic violence. The cinematography, while less stylized than **City of God**, creates an intimate documentary feel that pulls viewers closer to the emotional core of the story. SUBHEAD: Social Commentary Through Personal Stories"
+      },
+      {
+        "type": "text",
+        "content": "Like **Central Station** (1998) and **Pixote** (1981), **Cidade dos Homens** uses personal narratives to illuminate broader social issues. The film's treatment of gang violence differs significantly from American counterparts like **Boyz n the Hood** (1991), offering a distinctly Brazilian perspective where the violence feels more environmental than plot-driven. Douglas Silva and Darlan Cunha's performances bring remarkable authenticity, having grown up with these characters through the TV series."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Brazilian Favela Cinema from Pixote to Present",
+      "The City of God/Cidade dos Homens Extended Universe",
+      "Coming of Age Stories in Latin American Cinema",
+      "Documentary Techniques in Narrative Filmmaking",
+      "Representation of Fatherhood in Brazilian Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Pixote",
+          "year": 1981,
+          "slug": "Brutal portrayal of street children in São Paulo",
+          "poster": "https://image.tmdb.org/t/p/w500/zaBtclnYKv2JkgRDQ7OiFtWHm4e.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 42148,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zaBtclnYKv2JkgRDQ7OiFtWHm4e.jpg"
+        },
+        {
+          "title": "Last Stop 174",
+          "year": 2008,
+          "slug": "Dramatic retelling of the Bus 174 incident",
+          "poster": "https://image.tmdb.org/t/p/w500/qvSZA7HIJMelYSaQ7ObBCylDnsX.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 20268,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qvSZA7HIJMelYSaQ7ObBCylDnsX.jpg"
+        },
+        {
+          "title": "Lower City",
+          "year": 2005,
+          "slug": "Complex relationship drama set in Salvador",
+          "poster": "https://image.tmdb.org/t/p/w500/qFWvDBCN2LpVczu6ZKQq8B0AIYG.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 8443,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qFWvDBCN2LpVczu6ZKQq8B0AIYG.jpg"
+        },
+        {
+          "title": "Central Station",
+          "year": 1998,
+          "slug": "Moving story of a boy searching for his father",
+          "poster": "https://image.tmdb.org/t/p/w500/zJvp7XjQ2LhPbDVYhFXyucs40vR.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 666,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zJvp7XjQ2LhPbDVYhFXyucs40vR.jpg"
+        },
+        {
+          "title": "Carandiru",
+          "year": 2003,
+          "slug": "Powerful drama about São Paulo's largest prison",
+          "poster": "https://image.tmdb.org/t/p/w500/kKAgIMwQWQ6u4s0c56XKSDX3vAs.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 8440,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kKAgIMwQWQ6u4s0c56XKSDX3vAs.jpg"
+        },
+        {
+          "title": "Elite Squad 2",
+          "year": 2010,
+          "slug": "Sequel examining political corruption in Rio",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "7 Prisoners",
+          "year": 2021,
+          "slug": "Modern slavery drama in São Paulo",
+          "poster": "https://image.tmdb.org/t/p/w500/5svMKCGnR6Yvj8wxldvDvgUi0Jk.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 785538,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5svMKCGnR6Yvj8wxldvDvgUi0Jk.jpg"
+        },
+        {
+          "title": "Trash",
+          "year": 2014,
+          "slug": "Three kids discover political conspiracy in Rio",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Year My Parents Went on Vacation",
+          "year": 2006,
+          "slug": "Coming-of-age during Brazilian dictatorship",
+          "poster": "https://image.tmdb.org/t/p/w500/3lggNTaBwOd4QIKcH3lZMTLDKLj.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 14421,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3lggNTaBwOd4QIKcH3lZMTLDKLj.jpg"
+        },
+        {
+          "title": "The Second Mother",
+          "year": 2015,
+          "slug": "Class divisions in modern São Paulo",
+          "poster": "https://image.tmdb.org/t/p/w500/u1tDQun2iJAzersd94S8P47WEOL.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 310569,
+          "poster_url": "https://image.tmdb.org/t/p/w500/u1tDQun2iJAzersd94S8P47WEOL.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

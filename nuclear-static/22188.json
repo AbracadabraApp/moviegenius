@@ -1,0 +1,141 @@
+{
+  "props": {
+    "title": "Animusic",
+    "year": 2001,
+    "initialSlug": "Computer-animated music brought to spectacular life",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/ldbZG5PuYtPY3OBhb5cGqjILmkx.jpg",
+    "initialStreaming": null,
+    "tmdbId": 22188,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Animusic** (2001) revolutionized computer-animated music visualization with its groundbreaking fusion of MIDI-driven animation and impossible instrumental performances. Unlike traditional music videos, Wayne Lytle's creation featured perfectly synchronized virtual instruments performing complex pieces through physics-based animation. This influenced later works like **Robots** (2005) and **WALL-E** (2008) in their musical sequences. The technical achievement of mapping MIDI data to 3D animation opened new possibilities for visualizing music, predating similar concepts in games like **Guitar Hero** (2005)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Fantasia",
+            "year": 1940,
+            "slug": "Disney's groundbreaking marriage of classical music and animation, featuring abstract and narrative segments",
+            "poster": "https://image.tmdb.org/t/p/w500/5m9njnidjR0syG2gpVPVgcEMB2X.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 756,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5m9njnidjR0syG2gpVPVgcEMB2X.jpg"
+          },
+          {
+            "title": "Yellow Submarine",
+            "year": 1968,
+            "slug": "The Beatles' psychedelic animated musical adventure with innovative visual style",
+            "poster": "https://image.tmdb.org/t/p/w500/cjrGM2QYlwzV6vXz2yF7y6fdTRu.jpg",
+            "initialStreaming": "Apple TV+",
+            "tmdb_id": 12105,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cjrGM2QYlwzV6vXz2yF7y6fdTRu.jpg"
+          },
+          {
+            "title": "Interstella 5555",
+            "year": 2003,
+            "slug": "Daft Punk's anime visual album collaboration with Leiji Matsumoto",
+            "poster": "https://image.tmdb.org/t/p/w500/n0K6mjU8aVnag2mi93FuvJsjZi.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 11049,
+            "poster_url": "https://image.tmdb.org/t/p/w500/n0K6mjU8aVnag2mi93FuvJsjZi.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The direct influence of Animusic can be seen in modern music visualization software and virtual concert experiences. Its \"Future Retro\" and \"Pipe Dream\" sequences particularly showcased how complex musical arrangements could be transformed into mesmerizing mechanical performances. This approach influenced **Tron: Legacy** (2010) with its Daft Punk score and visual integration, and even aspects of **Inside Out** (2015)'s abstract thought sequences. SUBHEAD: Digital Music Visualization Evolution"
+      },
+      {
+        "type": "text",
+        "content": "While **Fantasia 2000** (1999) explored traditional animation with orchestral music, Animusic carved its own niche by creating physically impossible instruments that perfectly executed complex compositions. This concept expanded into modern VR music applications and influenced how we visualize electronic music. The precision of the animation-to-music synchronization set new standards that influenced productions like **The Mitchells vs. the Machines** (2021) and its dynamic musical sequences."
+      }
+    ],
+    "exploreFurther": [
+      "The technical process of converting MIDI data to 3D animation",
+      "Evolution of computer-generated music visualization from 1990s to present",
+      "Impact of Animusic on modern virtual concert experiences",
+      "Relationship between computer animation and musical composition",
+      "Development of physics-based animation in musical contexts"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Sound of Noise",
+          "year": 2010,
+          "slug": "Experimental film about guerrilla musicians using the city as an instrument",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": null
+        },
+        {
+          "title": "Mind Game",
+          "year": 2004,
+          "slug": "Avant-garde Japanese animation with innovative music sequences",
+          "poster": "https://image.tmdb.org/t/p/w500/e5mV1iVcjg7nkpJrskQOnFCR4H9.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 21712,
+          "poster_url": "https://image.tmdb.org/t/p/w500/e5mV1iVcjg7nkpJrskQOnFCR4H9.jpg"
+        },
+        {
+          "title": "The Music Room",
+          "year": 1958,
+          "slug": "Satyajit Ray's classic about a music-obsessed zamindar",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Close Encounters of the Third Kind",
+          "year": 1977,
+          "slug": "Spielberg's sci-fi classic featuring communication through music",
+          "poster": "https://image.tmdb.org/t/p/w500/yaPx3cK9zGFX3SbcKwxWM1QIbUh.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 840,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yaPx3cK9zGFX3SbcKwxWM1QIbUh.jpg"
+        },
+        {
+          "title": "Koyaanisqatsi",
+          "year": 1982,
+          "slug": "Experimental film with Philip Glass score and visual rhythm",
+          "poster": "https://image.tmdb.org/t/p/w500/6zCNciRcob8lwuydVXgq0esla8L.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 11314,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6zCNciRcob8lwuydVXgq0esla8L.jpg"
+        },
+        {
+          "title": "Fantasia",
+          "year": 1940,
+          "slug": "Disney's original marriage of animation and classical music",
+          "poster": "https://image.tmdb.org/t/p/w500/5m9njnidjR0syG2gpVPVgcEMB2X.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 756,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5m9njnidjR0syG2gpVPVgcEMB2X.jpg"
+        },
+        {
+          "title": "The Triplets of Belleville",
+          "year": 2003,
+          "slug": "Quirky animated film with unique musical sequences",
+          "poster": "https://image.tmdb.org/t/p/w500/enw6C4fDw88g0nOQgIJXjgH3NHi.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 9662,
+          "poster_url": "https://image.tmdb.org/t/p/w500/enw6C4fDw88g0nOQgIJXjgH3NHi.jpg"
+        },
+        {
+          "title": "Pink Floyd: The Wall",
+          "year": 1982,
+          "slug": "Animated/live-action hybrid with revolutionary visual music",
+          "poster": "https://image.tmdb.org/t/p/w500/aElHyIdF5jmctFGhlhhaPFsbBJC.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 12104,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aElHyIdF5jmctFGhlhhaPFsbBJC.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

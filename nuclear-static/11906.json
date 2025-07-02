@@ -1,0 +1,187 @@
+{
+  "props": {
+    "title": "Suspiria",
+    "year": 1977,
+    "initialSlug": "Ballet academy conceals a coven's bloody secrets",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/5ya8jTbNZTrCFUx9OwpNBjCivXY.jpg",
+    "initialStreaming": "TBD",
+    "tmdbId": 11906,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Suspiria** (1977) stands as Dario Argento's technicolor nightmare masterpiece, painting psychological horror in bold primary colors. The film's opening 15 minutes deliver one of horror's most striking murder sequences, setting the tone for its relentless visual assault. Argento and cinematographer Luciano Tovoli used expired Technicolor film stock and imbibition printing to achieve those impossibly saturated reds and blues, while Goblin's pounding progressive rock score creates an atmosphere of mounting dread. This approach influenced later stylized horror like **The Neon Demon** (2016) and **Mandy** (2018), which similarly prioritize aesthetic intensity over conventional narrative logic."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Inferno",
+            "year": 1980,
+            "slug": "The second installment in Argento's Three Mothers trilogy continues Suspiria's supernatural themes with aquatic horror and striking color work",
+            "poster": "https://image.tmdb.org/t/p/w500/A92SmwJ4w2GSF6Mp2m8xE9GbG39.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 16395,
+            "poster_url": "https://image.tmdb.org/t/p/w500/A92SmwJ4w2GSF6Mp2m8xE9GbG39.jpg"
+          },
+          {
+            "title": "Phenomena",
+            "year": 1985,
+            "slug": "Jennifer Connelly stars in Argento's surreal tale of a girl who can communicate with insects at a Swiss boarding school",
+            "poster": "https://image.tmdb.org/t/p/w500/8u14C2FLMSCLIT5znmye6RovonO.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 29161,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8u14C2FLMSCLIT5znmye6RovonO.jpg"
+          },
+          {
+            "title": "Opera",
+            "year": 1987,
+            "slug": "Argento's slasher about an opera understudy forced to watch murders features innovative POV shots and elaborate death scenes",
+            "poster": "https://image.tmdb.org/t/p/w500/v5VBvSVu2sWLAmyQhKQwBV5aPJA.jpg",
+            "initialStreaming": "AMC+",
+            "tmdb_id": 20115,
+            "poster_url": "https://image.tmdb.org/t/p/w500/v5VBvSVu2sWLAmyQhKQwBV5aPJA.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's setting - the Tanz Dance Academy in Freiburg - builds on a rich tradition of dance-horror hybrids. While **The Red Shoes** (1948) explored the destructive obsession of artistic pursuit through ballet, Suspiria transforms dance into an explicitly occult practice. This connection between dance and dark forces later emerged in films like **Black Swan** (2010) and the **Suspiria** (2018) remake, where the physical demands of dance become vehicles for supernatural possession and transformation."
+      },
+      {
+        "type": "text",
+        "content": "Argento's use of architecture as a character itself - with the academy's Art Nouveau interiors and impossible geometry - created a template for horror spaces that feel wrong on a fundamental level. **The Shining** (1980) would similarly use impossible window placement and layout to create unease, while **Crimson Peak** (2015) directly references Suspiria's architectural menace and color palette. The film's influence extends beyond horror - **Only God Forgives** (2013) and **In the Mood for Love** (2000) echo its use of saturated color as emotional language. SUBHEAD: The Legacy of Italian Horror"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Deep Red",
+            "year": 1975,
+            "slug": "Argento's giallo masterpiece about a musician investigating a series of murders showcases his trademark stylized violence",
+            "poster": "https://image.tmdb.org/t/p/w500/wq7RxV5gMvgO0EKeWpNhegnpJBh.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 20126,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wq7RxV5gMvgO0EKeWpNhegnpJBh.jpg"
+          },
+          {
+            "title": "Tenebrae",
+            "year": 1982,
+            "slug": "A meta-horror thriller about an author whose violent novels inspire real murders, featuring innovative tracking shots",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Suspiria represents the peak of Italian horror's golden age, when directors like Argento, Mario Bava (**Black Sunday** [1960]), and Lucio Fulci (**The Beyond** [1981]) created distinctively European approaches to horror. Their emphasis on style over coherent plotting, dream logic over traditional narrative, and elaborate murder set-pieces over character development created an alternative to American horror traditions. This Italian horror renaissance influenced filmmakers like Guillermo del Toro (**Crimson Peak** [2015]) and Nicolas Winding Refn (**The Neon Demon** [2016])."
+      }
+    ],
+    "exploreFurther": [
+      "The History and Technique of Technicolor Film Stock",
+      "Giallo Cinema and Its Influence on Modern Horror",
+      "Architecture in Horror Films",
+      "The Use of Progressive Rock in 1970s Horror",
+      "Dance in Horror Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Mother of Tears",
+          "year": 2007,
+          "slug": "The final film in Argento's Three Mothers trilogy",
+          "poster": "https://image.tmdb.org/t/p/w500/lVWIDMSnE6dnTPFPCHpn1Lx84DA.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 15206,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lVWIDMSnE6dnTPFPCHpn1Lx84DA.jpg"
+        },
+        {
+          "title": "Black Sabbath",
+          "year": 1963,
+          "slug": "Mario Bava's influential horror anthology",
+          "poster": "https://image.tmdb.org/t/p/w500/oHd2kOCwIEsZtre00qQ2n9S3doa.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 28043,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oHd2kOCwIEsZtre00qQ2n9S3doa.jpg"
+        },
+        {
+          "title": "Demons",
+          "year": 1985,
+          "slug": "Argento-produced meta-horror about movie demons coming to life",
+          "poster": "https://image.tmdb.org/t/p/w500/ym0mtcSt6i45NIcAoSBQhop0wSP.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 14029,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ym0mtcSt6i45NIcAoSBQhop0wSP.jpg"
+        },
+        {
+          "title": "The House with Laughing Windows",
+          "year": 1976,
+          "slug": "Atmospheric Italian horror about mysterious church paintings",
+          "poster": "https://image.tmdb.org/t/p/w500/zBUJ8pXxnaTalLoX8ElFIxdeAVk.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 57447,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zBUJ8pXxnaTalLoX8ElFIxdeAVk.jpg"
+        },
+        {
+          "title": "Blood and Black Lace",
+          "year": 1964,
+          "slug": "Bava's influential fashion house giallo",
+          "poster": "https://image.tmdb.org/t/p/w500/zYCQjsdktEvlWTRap836iI5paEL.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 28055,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zYCQjsdktEvlWTRap836iI5paEL.jpg"
+        },
+        {
+          "title": "The Bird with the Crystal Plumage",
+          "year": 1970,
+          "slug": "Argento's directorial debut giallo",
+          "poster": "https://image.tmdb.org/t/p/w500/dpALRkwodEIT7TGX9SqTgwVNn0i.jpg",
+          "initialStreaming": "AMC+",
+          "tmdb_id": 20345,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dpALRkwodEIT7TGX9SqTgwVNn0i.jpg"
+        },
+        {
+          "title": "A Lizard in a Woman's Skin",
+          "year": 1971,
+          "slug": "Fulci's psychedelic giallo thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/nxDBBrdybGVJojFXvZysKteY05k.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 63025,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nxDBBrdybGVJojFXvZysKteY05k.jpg"
+        },
+        {
+          "title": "All the Colors of the Dark",
+          "year": 1972,
+          "slug": "Occult giallo with striking color work",
+          "poster": "https://image.tmdb.org/t/p/w500/1O8ZQ9tCIdpT1dAMvwWX9hToW2H.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 30901,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1O8ZQ9tCIdpT1dAMvwWX9hToW2H.jpg"
+        },
+        {
+          "title": "The Church",
+          "year": 1989,
+          "slug": "Argento-produced Gothic horror set in a medieval cathedral",
+          "poster": "https://image.tmdb.org/t/p/w500/i44N7Es8ei8glNwTO0Sjx9rL51k.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 40364,
+          "poster_url": "https://image.tmdb.org/t/p/w500/i44N7Es8ei8glNwTO0Sjx9rL51k.jpg"
+        },
+        {
+          "title": "Stage Fright",
+          "year": 1987,
+          "slug": "Michele Soavi's theatrical slasher",
+          "poster": "https://image.tmdb.org/t/p/w500/rXIMhd4JsEPA3Q9PfHyTmytNO2J.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 20465,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rXIMhd4JsEPA3Q9PfHyTmytNO2J.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

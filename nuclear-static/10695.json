@@ -1,0 +1,186 @@
+{
+  "props": {
+    "title": "The Golem",
+    "year": 1915,
+    "initialSlug": "Unholy creation unleashed",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/vu5KgTbTqeCNu0uqOrESBfnw3EV.jpg",
+    "initialStreaming": null,
+    "tmdbId": 10695,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Golem** (1915) marks a pivotal moment in early horror cinema, establishing crucial foundations for monster movies and German Expressionism. Paul Wegener's portrayal of the clay creature brought Jewish folklore to mainstream audiences while pioneering special effects techniques. The film's influence echoes through later monster classics like **Frankenstein** (1931) and **The Cabinet of Dr. Caligari** (1920), establishing the sympathetic monster archetype that would define horror for decades. Its atmospheric use of shadows and architectural distortion directly shaped the visual language of German Expressionist cinema."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Cabinet of Dr. Caligari",
+            "year": 1920,
+            "slug": "The definitive German Expressionist film following a hypnotist and his somnambulist servant",
+            "poster": "https://image.tmdb.org/t/p/w500/myK9DeIsXWGKgUTZyGXg2IfFk0W.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 234,
+            "poster_url": "https://image.tmdb.org/t/p/w500/myK9DeIsXWGKgUTZyGXg2IfFk0W.jpg"
+          },
+          {
+            "title": "Nosferatu",
+            "year": 1922,
+            "slug": "F.W. Murnau's unauthorized Dracula adaptation featuring Max Schreck's iconic vampire count",
+            "poster": "https://image.tmdb.org/t/p/w500/zv7J85D8CC9qYagAEhPM63CIG6j.jpg",
+            "initialStreaming": "Public Domain",
+            "tmdb_id": 653,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zv7J85D8CC9qYagAEhPM63CIG6j.jpg"
+          },
+          {
+            "title": "Der Golem, wie er in die Welt kam",
+            "year": 1920,
+            "slug": "Wegener's prequel to his 1915 Golem film, showing the creature's origin",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Public Domain",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The Jewish mysticism central to **The Golem** (1915) opened doors for supernatural horror rooted in religious and cultural folklore. This influenced films like **Häxan** (1922) and later works like **Dybbuk** (1937). The Golem's theme of creation turning against creator became a cornerstone of science fiction horror, directly inspiring **Metropolis** (1927) and James Whale's **Frankenstein** (1931)."
+      },
+      {
+        "type": "text",
+        "content": "Wegener's innovative practical effects, particularly in bringing the clay giant to life, established techniques that would influence decades of monster movies. The film's use of forced perspective and elaborate makeup work created a template followed by **The Phantom of the Opera** (1925) and **London After Midnight** (1927). Its atmospheric sets and moody lighting became hallmarks of Universal's monster films of the 1930s. SUBHEAD: Impact on Jewish Cinema and Horror"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Frankenstein",
+            "year": 1931,
+            "slug": "James Whale's definitive monster movie starring Boris Karloff",
+            "poster": "https://image.tmdb.org/t/p/w500/mu6wHwH0IwCCaEYtpqujuPJYat1.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 3035,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mu6wHwH0IwCCaEYtpqujuPJYat1.jpg"
+          },
+          {
+            "title": "Metropolis",
+            "year": 1927,
+            "slug": "Fritz Lang's groundbreaking sci-fi epic about a robot uprising",
+            "poster": "https://image.tmdb.org/t/p/w500/vZIJxGnjcswPCAa52jhbl01FQkV.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 19,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vZIJxGnjcswPCAa52jhbl01FQkV.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While most prints of the 1915 version are lost, **The Golem**'s influence on Jewish cinema cannot be overstated. It paved the way for films exploring Jewish mythology and mysticism, from **The Dybbuk** (1937) to modern works like **A Serious Man** (2009). The film's Prague ghetto setting and exploration of rabbinical magic created a template for incorporating Jewish folklore into mainstream cinema."
+      }
+    ],
+    "exploreFurther": [
+      "German Expressionism and its influence on horror cinema",
+      "The evolution of practical effects in early monster movies",
+      "Jewish folklore in early European cinema",
+      "Paul Wegener's contributions to early horror filmmaking",
+      "Lost films of the silent era and their cultural impact"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Faust",
+          "year": 1926,
+          "slug": "Murnau's demonic masterpiece of German Expressionism",
+          "poster": "https://image.tmdb.org/t/p/w500/rN703hMFxmkZfyEzsXvFtuFhkXE.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 10728,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rN703hMFxmkZfyEzsXvFtuFhkXE.jpg"
+        },
+        {
+          "title": "The Student of Prague",
+          "year": 1913,
+          "slug": "Early doppelganger horror starring Paul Wegener",
+          "poster": "https://image.tmdb.org/t/p/w500/tO2zgNEY0MqtvEyPioTTfHgmN2Q.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": 28627,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tO2zgNEY0MqtvEyPioTTfHgmN2Q.jpg"
+        },
+        {
+          "title": "The Man Who Laughs",
+          "year": 1928,
+          "slug": "Gothic horror that inspired Batman's Joker",
+          "poster": "https://image.tmdb.org/t/p/w500/iQXBMr4NzQst4X0rDU6MII6ZUOM.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 27517,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iQXBMr4NzQst4X0rDU6MII6ZUOM.jpg"
+        },
+        {
+          "title": "Warning Shadows",
+          "year": 1923,
+          "slug": "Expressionist horror about mysterious shadowplay",
+          "poster": "https://image.tmdb.org/t/p/w500/vSQRXcGKVuvNmvAeJZj3Sw42FWi.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": 84956,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vSQRXcGKVuvNmvAeJZj3Sw42FWi.jpg"
+        },
+        {
+          "title": "Der Golem und die Tänzerin",
+          "year": 1917,
+          "slug": "Lost Golem sequel directed by Wegener",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "N/A",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Magician",
+          "year": 1926,
+          "slug": "Rex Ingram's horror about a sinister occultist",
+          "poster": "https://image.tmdb.org/t/p/w500/qjKOJmmIC1rIXw1u2TYHFcyn5Bl.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 29466,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qjKOJmmIC1rIXw1u2TYHFcyn5Bl.jpg"
+        },
+        {
+          "title": "Homunculus",
+          "year": 1916,
+          "slug": "Six-part German series about artificial life",
+          "poster": "https://image.tmdb.org/t/p/w500/9iNYfYfldXlzPdtjJlpbuhYMp6z.jpg",
+          "initialStreaming": "N/A",
+          "tmdb_id": 727199,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9iNYfYfldXlzPdtjJlpbuhYMp6z.jpg"
+        },
+        {
+          "title": "Alraune",
+          "year": 1928,
+          "slug": "Horror film about artificial insemination",
+          "poster": "https://image.tmdb.org/t/p/w500/iiyGr1iO8DEDEOlFKCImUSnqYR6.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": 2969,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iiyGr1iO8DEDEOlFKCImUSnqYR6.jpg"
+        },
+        {
+          "title": "The Hands of Orlac",
+          "year": 1924,
+          "slug": "Wegener stars in this body horror classic",
+          "poster": "https://image.tmdb.org/t/p/w500/40WWy1SSx8rh1r4mn1MNpCKIteF.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 2974,
+          "poster_url": "https://image.tmdb.org/t/p/w500/40WWy1SSx8rh1r4mn1MNpCKIteF.jpg"
+        },
+        {
+          "title": "Waxworks",
+          "year": 1924,
+          "slug": "Anthology horror with expressionist style",
+          "poster": "https://image.tmdb.org/t/p/w500/6n8hkbMUiY3ETNNoQspHwotvHkA.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": 27522,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6n8hkbMUiY3ETNNoQspHwotvHkA.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

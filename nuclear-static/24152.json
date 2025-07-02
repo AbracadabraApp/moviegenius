@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "The Magic Christian",
+    "year": 1969,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/92OHvXPieitIzkmPWbycCvclQ5E.jpg",
+    "initialStreaming": null,
+    "tmdbId": 24152,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Magic Christian** (1969) stands as one of the most acidic satires of capitalism and human greed ever committed to film. Starring Peter Sellers and Ringo Starr, this bizarre British comedy follows eccentric millionaire Guy Grand as he conducts increasingly outrageous social experiments to prove everyone has their price. The film shares DNA with other counterculture classics like **Head** (1968) and **If....** (1968), mercilessly mocking societal institutions through surreal set-pieces. Director Joseph McGrath channels the anarchic spirit of Richard Lester's **A Hard Day's Night** (1964), but with a much darker edge."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Magic Christian",
+            "year": 1969,
+            "slug": "Eccentric millionaire proves money corrupts through elaborate pranks. Stars Peter Sellers and Ringo Starr.",
+            "poster": "https://image.tmdb.org/t/p/w500/92OHvXPieitIzkmPWbycCvclQ5E.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 24152,
+            "poster_url": "https://image.tmdb.org/t/p/w500/92OHvXPieitIzkmPWbycCvclQ5E.jpg"
+          },
+          {
+            "title": "Head",
+            "year": 1968,
+            "slug": "Psychedelic, experimental film starring The Monkees that deconstructs their pop image.",
+            "poster": "https://image.tmdb.org/t/p/w500/pvMy7sTqOEr7faJzDE5UD0zUiHA.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 18193,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pvMy7sTqOEr7faJzDE5UD0zUiHA.jpg"
+          },
+          {
+            "title": "If....",
+            "year": 1968,
+            "slug": "Malcolm McDowell leads violent rebellion at British boarding school. Surreal critique of authority.",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's development was notably chaotic, with multiple writers including Terry Southern (who wrote the source novel), John Cleese, Graham Chapman, and Peter Sellers himself contributing to the screenplay. This resulted in a fractured, episodic structure similar to Southern's work on **Easy Rider** (1969) and **Dr. Strangelove** (1964). The movie's influence can be seen in later works like **Brewster McCloud** (1970) and **MASH** (1970), which similarly used dark humor to challenge institutional power. SUBHEAD: Counterculture Cinema and Social Satire"
+      },
+      {
+        "type": "text",
+        "content": "**The Magic Christian** embodies late 1960s counterculture cinema's rejection of materialist values. Like **Performance** (1970) and **The Ruling Class** (1972), it uses the British upper class as a vehicle for broader social criticism. The film's famous climactic scene - where businessmen dive into a vat of excrement and blood for money - remains one of cinema's most memorable metaphors for capitalism. This influenced later anti-establishment films like **Brazil** (1985) and **They Live** (1988)."
+      }
+    ],
+    "exploreFurther": [
+      "Terry Southern's Impact on 1960s Cinema",
+      "British Counterculture Films 1968-1972",
+      "The Evolution of Peter Sellers' Satirical Characters",
+      "Ringo Starr's Non-Beatles Film Career",
+      "Surrealist Comedy in British Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Dr. Strangelove",
+          "year": 1964,
+          "slug": "Cold War black comedy about nuclear destruction.",
+          "poster": "https://image.tmdb.org/t/p/w500/6x7MzQ6BOMlRzam1StcmPO9v61g.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 935,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6x7MzQ6BOMlRzam1StcmPO9v61g.jpg"
+        },
+        {
+          "title": "Performance",
+          "year": 1970,
+          "slug": "Mick Jagger stars in twisted crime drama about identity.",
+          "poster": "https://image.tmdb.org/t/p/w500/yKuqk84TtTpj0nYZS5m680JmprG.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 26606,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yKuqk84TtTpj0nYZS5m680JmprG.jpg"
+        },
+        {
+          "title": "The Ruling Class",
+          "year": 1972,
+          "slug": "Peter O'Toole as mentally ill British aristocrat who thinks he's Jesus.",
+          "poster": "https://image.tmdb.org/t/p/w500/29EZjwr3jDFWtdj9Lpq2BtCvKga.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 30892,
+          "poster_url": "https://image.tmdb.org/t/p/w500/29EZjwr3jDFWtdj9Lpq2BtCvKga.jpg"
+        },
+        {
+          "title": "Brewster McCloud",
+          "year": 1970,
+          "slug": "Robert Altman's surreal tale of a boy living in the Houston Astrodome.",
+          "poster": "https://image.tmdb.org/t/p/w500/3ASd8z3yn7jMAJS38VcAmIRzKQA.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 26525,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3ASd8z3yn7jMAJS38VcAmIRzKQA.jpg"
+        },
+        {
+          "title": "MASH",
+          "year": 1970,
+          "slug": "Dark comedy set in Korean War medical unit.",
+          "poster": "https://image.tmdb.org/t/p/w500/xZHNAcCVd5gUy68MBc4CmDqmely.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 651,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xZHNAcCVd5gUy68MBc4CmDqmely.jpg"
+        },
+        {
+          "title": "Brazil",
+          "year": 1985,
+          "slug": "Terry Gilliam's dystopian satire of bureaucracy.",
+          "poster": "https://image.tmdb.org/t/p/w500/aewan59WcFThBimkTVVoNf2o5Vb.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 68,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aewan59WcFThBimkTVVoNf2o5Vb.jpg"
+        },
+        {
+          "title": "They Live",
+          "year": 1988,
+          "slug": "John Carpenter's alien invasion critique of consumer culture.",
+          "poster": "https://image.tmdb.org/t/p/w500/eIEmSJRKe8Vn9iWcFypvbeyQaZZ.jpg",
+          "initialStreaming": "Peacock",
+          "tmdb_id": 8337,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eIEmSJRKe8Vn9iWcFypvbeyQaZZ.jpg"
+        },
+        {
+          "title": "What's New Pussycat",
+          "year": 1965,
+          "slug": "Peter Sellers comedy written by Woody Allen.",
+          "poster": "https://image.tmdb.org/t/p/w500/seKbiGx8mjF04Bx4LVBQk741Eqv.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 3681,
+          "poster_url": "https://image.tmdb.org/t/p/w500/seKbiGx8mjF04Bx4LVBQk741Eqv.jpg"
+        },
+        {
+          "title": "Casino Royale",
+          "year": 1967,
+          "slug": "Psychedelic James Bond spoof with multiple James Bonds.",
+          "poster": "https://image.tmdb.org/t/p/w500/9wdw5H018bgIM8bK2HuDvh8BwOh.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 12208,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9wdw5H018bgIM8bK2HuDvh8BwOh.jpg"
+        },
+        {
+          "title": "The Party",
+          "year": 1968,
+          "slug": "Peter Sellers as Indian actor causing chaos at Hollywood party.",
+          "poster": "https://image.tmdb.org/t/p/w500/8d2Msw39YzwkBWfBMauCulp7D0.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 10794,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8d2Msw39YzwkBWfBMauCulp7D0.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

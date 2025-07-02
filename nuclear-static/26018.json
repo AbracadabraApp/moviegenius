@@ -1,0 +1,211 @@
+{
+  "props": {
+    "title": "Food Matters",
+    "year": 2008,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/g1u0Mf4VKKklC8fKsvAh5n5pk8T.jpg",
+    "initialStreaming": null,
+    "tmdbId": 26018,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Food Matters** (2008) launched a wave of hard-hitting food industry documentaries that exposed troubling truths about nutrition and healthcare. Following the path blazed by **Super Size Me** (2004), this Australian documentary tackled the pharmaceutical industry's grip on medical education and the powerful healing potential of proper nutrition. The film shares DNA with later exposés like **Fed Up** (2014) and **What the Health** (2017), focusing on how food choices directly impact chronic disease rates."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Food, Inc.",
+            "year": 2008,
+            "slug": "Eye-opening investigation into corporate farming and the industrialization of our food supply",
+            "poster": "https://image.tmdb.org/t/p/w500/zdwN4o7OGAZGJw9T64lRAGTEP8b.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 18570,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zdwN4o7OGAZGJw9T64lRAGTEP8b.jpg"
+          },
+          {
+            "title": "That Sugar Film",
+            "year": 2014,
+            "slug": "Australian filmmaker documents the effects of a high sugar diet on his body",
+            "poster": "https://image.tmdb.org/t/p/w500/qF1fDtJ1vU3hrLDNJCgRoQekFmM.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 305091,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qF1fDtJ1vU3hrLDNJCgRoQekFmM.jpg"
+          },
+          {
+            "title": "Forks Over Knives",
+            "year": 2011,
+            "slug": "Examines the claim that most degenerative diseases can be controlled by rejecting animal-based and processed foods",
+            "poster": "https://image.tmdb.org/t/p/w500/v3SC1ztIEpo41AvF5frURCdvLOx.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 64288,
+            "poster_url": "https://image.tmdb.org/t/p/w500/v3SC1ztIEpo41AvF5frURCdvLOx.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The movement gained serious momentum with **Fed Up** (2014), produced by Katie Couric, which specifically targeted the sugar industry's influence on American health policy. This sparked a series of nutrition documentaries including **In Defense of Food** (2015) and **Sustainable** (2016) that moved beyond just criticism to explore solutions. These films share a common thread of advocating for whole foods and questioning industrial food production methods."
+      },
+      {
+        "type": "text",
+        "content": "The conversation evolved further with **Rotten** (2018), Netflix's investigative series that dug into food supply corruption, and **Kiss the Ground** (2020), which connected food production to climate change. Unlike early \"shock docs\" that relied heavily on grotesque footage of factory farms, these newer films take a more solutions-oriented approach while maintaining their activist edge. SUBHEAD: From Exposure to Solutions"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Game Changers",
+            "year": 2018,
+            "slug": "Elite athletes prove the power of plant-based eating for optimal performance",
+            "poster": "https://image.tmdb.org/t/p/w500/eufF3xEif5EZ1gTjdubw3KWh9xU.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 463088,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eufF3xEif5EZ1gTjdubw3KWh9xU.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Recent food documentaries have shifted from pure exposé to exploring viable alternatives. **The Biggest Little Farm** (2018) chronicles the eight-year quest of two urban dwellers to create a sustainable farm. **Chef's Table** (2015-2019) showcases chefs who prioritize local, sustainable ingredients while creating world-class cuisine. This evolution reflects growing public awareness and demand for actionable solutions to our food system challenges."
+      }
+    ],
+    "exploreFurther": [
+      "The history of food industry regulation in America",
+      "How nutritional studies are funded and potential conflicts of interest",
+      "The environmental impact of different farming methods",
+      "Global food waste statistics and solutions",
+      "The rise of functional medicine and food as medicine"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Super Size Me",
+          "year": 2004,
+          "slug": "Morgan Spurlock eats only McDonald's for 30 days",
+          "poster": "https://image.tmdb.org/t/p/w500/zYkbqQaCuIHBxqBDGgnQCwJ9jIG.jpg",
+          "initialStreaming": "Pluto TV",
+          "tmdb_id": 9372,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zYkbqQaCuIHBxqBDGgnQCwJ9jIG.jpg"
+        },
+        {
+          "title": "Cooked",
+          "year": 2016,
+          "slug": "Michael Pollan explores how cooking transforms food and shapes our world",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Ingredients",
+          "year": 2009,
+          "slug": "America's local food movement and the people behind it",
+          "poster": "https://image.tmdb.org/t/p/w500/nYu0wIcIKCcXxghyTg1J42mKirU.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 83653,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nYu0wIcIKCcXxghyTg1J42mKirU.jpg"
+        },
+        {
+          "title": "GMO OMG",
+          "year": 2013,
+          "slug": "One father's discovery of GMOs in America's food supply",
+          "poster": "https://image.tmdb.org/t/p/w500/qMCHeiycPoxh8NnJ4YtEDuG1FtE.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 168864,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qMCHeiycPoxh8NnJ4YtEDuG1FtE.jpg"
+        },
+        {
+          "title": "Just Eat It",
+          "year": 2014,
+          "slug": "Exploring the issue of food waste",
+          "poster": "https://image.tmdb.org/t/p/w500/eVQ3XX6MJELZOLIuWuCv1lpM1MW.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 259985,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eVQ3XX6MJELZOLIuWuCv1lpM1MW.jpg"
+        },
+        {
+          "title": "The Future of Food",
+          "year": 2004,
+          "slug": "Early examination of GMOs and corporate control of food",
+          "poster": "https://image.tmdb.org/t/p/w500/1j001mLedx9b95AVguAezMMUthP.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 25465,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1j001mLedx9b95AVguAezMMUthP.jpg"
+        },
+        {
+          "title": "Eating Animals",
+          "year": 2017,
+          "slug": "Investigation of factory farming based on Jonathan Safran Foer's book",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": null
+        },
+        {
+          "title": "A Place at the Table",
+          "year": 2012,
+          "slug": "Examining hunger in America",
+          "poster": "https://image.tmdb.org/t/p/w500/ptli8HtDrapZdVdBnYSN8zxJtw0.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 84198,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ptli8HtDrapZdVdBnYSN8zxJtw0.jpg"
+        },
+        {
+          "title": "Hungry for Change",
+          "year": 2012,
+          "slug": "Exposing the diet industry's deceptive strategies",
+          "poster": "https://image.tmdb.org/t/p/w500/yJfjlt4gVEJu2w4RcISucer9zQq.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 98541,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yJfjlt4gVEJu2w4RcISucer9zQq.jpg"
+        },
+        {
+          "title": "Fresh",
+          "year": 2009,
+          "slug": "Pioneers reinventing our food system",
+          "poster": "https://image.tmdb.org/t/p/w500/dZVkiMi2J2CjikwFLtMJJneckUi.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 52406,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dZVkiMi2J2CjikwFLtMJJneckUi.jpg"
+        },
+        {
+          "title": "King Corn",
+          "year": 2007,
+          "slug": "Two friends grow corn to understand its role in our food system",
+          "poster": "https://image.tmdb.org/t/p/w500/zVHWzV9o2FU1SasNxuiJMW2FY0V.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 15281,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zVHWzV9o2FU1SasNxuiJMW2FY0V.jpg"
+        },
+        {
+          "title": "The Truth About Food",
+          "year": 2017,
+          "slug": "Scientific look at how food affects our bodies",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Discovery+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Sustainable",
+          "year": 2016,
+          "slug": "The economic and environmental instability of America's food system",
+          "poster": "https://image.tmdb.org/t/p/w500/h6ZhcjWgafI5MFLK5GK69cUDKLZ.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 396126,
+          "poster_url": "https://image.tmdb.org/t/p/w500/h6ZhcjWgafI5MFLK5GK69cUDKLZ.jpg"
+        },
+        {
+          "title": "Wasted!",
+          "year": 2017,
+          "slug": "Anthony Bourdain explores the problem of food waste",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

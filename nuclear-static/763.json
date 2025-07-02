@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "Dead Alive",
+    "year": 1992,
+    "initialSlug": "A zombie comedy where love meets lawnmower mayhem",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/pa39D8TQs6aNw3hiUs4jLjHVUB0.jpg",
+    "initialStreaming": null,
+    "tmdbId": 763,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Peter Jackson's **Dead Alive** (1992) - originally titled \"Braindead\" - stands as the goriest zombie comedy ever made. Before crafting Middle-earth epics, Jackson gleefully pushed practical effects to their limits, using 300 liters of fake blood in the legendary lawnmower scene alone. The film follows Lionel Cosgrove battling zombie hordes after his overbearing mother gets bitten by a Sumatran Rat-Monkey. It shares DNA with Sam Raimi's **Evil Dead II** (1987), cranking slapstick horror to absurd extremes. Both films weaponize household items - Ash's chainsaw hand meets Lionel's whirring lawnmower - while pioneering the splatter-comedy genre."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Evil Dead II",
+            "year": 1987,
+            "slug": "Bruce Campbell fights possessed hands and cackling demons in Sam Raimi's manic horror-comedy masterpiece",
+            "poster": "https://image.tmdb.org/t/p/w500/4zqCKJVHUolGs6C5AZwAZqLWixW.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 765,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4zqCKJVHUolGs6C5AZwAZqLWixW.jpg"
+          },
+          {
+            "title": "Re-Animator",
+            "year": 1985,
+            "slug": "Mad scientist Herbert West revives the dead with neon-green serum in this Lovecraft-inspired gore fest",
+            "poster": "https://image.tmdb.org/t/p/w500/1hY6AUl92cL9GdZx031UWFiGETt.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 1694,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1hY6AUl92cL9GdZx031UWFiGETt.jpg"
+          },
+          {
+            "title": "Bad Taste",
+            "year": 1987,
+            "slug": "Peter Jackson's micro-budget debut about aliens harvesting humans for intergalactic fast food",
+            "poster": "https://image.tmdb.org/t/p/w500/msttMX3undIiaeJLZbMRq94v1bw.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 9964,
+            "poster_url": "https://image.tmdb.org/t/p/w500/msttMX3undIiaeJLZbMRq94v1bw.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The early 1990s marked peak practical effects in horror comedy, with films like **Army of Darkness** (1992) and **Demons 2** (1986) pushing physical gore and creature work before CGI took over. **Dead Alive** represents the pinnacle of this approach - every splatter gag, puppet zombie, and mutant creature was achieved through ingenious practical effects by Bob McCarron and Richard Taylor's team. The \"mother monster\" finale required the largest puppet ever built in New Zealand at that time. SUBHEAD: The New Zealand Splatter Film Movement"
+      },
+      {
+        "type": "text",
+        "content": "Jackson's early films helped establish New Zealand's unique splatter movement. While American horror leaned toward slashers, Kiwi films like **Meet the Feebles** (1989) and **The Quiet Earth** (1985) mixed horror with distinctly dark humor and social commentary. This tradition continues in modern films like **Deathgasm** (2015) and **Black Sheep** (2006), which maintain the practical effects-heavy approach while satirizing New Zealand culture."
+      }
+    ],
+    "exploreFurther": [
+      "Peter Jackson's Evolution from Splatter to Fantasy",
+      "Practical Effects in Pre-CGI Horror Comedy",
+      "New Zealand's Horror Cinema Legacy",
+      "The Art of Zombie Comedy",
+      "Influential Splatter Films of the 1980s-90s"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Return of the Living Dead",
+          "year": 1985,
+          "slug": "Punk rockers battle fast zombies craving brains",
+          "poster": "https://image.tmdb.org/t/p/w500/qVTFBabgnWz4jZ8wOQRYZI5EITF.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 10925,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qVTFBabgnWz4jZ8wOQRYZI5EITF.jpg"
+        },
+        {
+          "title": "Society",
+          "year": 1989,
+          "slug": "Beverly Hills body horror satire with shocking practical effects",
+          "poster": "https://image.tmdb.org/t/p/w500/8Yg51sD6loLBYIlUcMDCO0bUGSh.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 22244,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8Yg51sD6loLBYIlUcMDCO0bUGSh.jpg"
+        },
+        {
+          "title": "Street Trash",
+          "year": 1987,
+          "slug": "Mysterious liquor melts homeless people in technicolor splatter",
+          "poster": "https://image.tmdb.org/t/p/w500/vwy81HbDoSvccWvculRMUVY39dD.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 22172,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vwy81HbDoSvccWvculRMUVY39dD.jpg"
+        },
+        {
+          "title": "Basket Case",
+          "year": 1982,
+          "slug": "Man carries his deformed twin brother in a basket seeking revenge",
+          "poster": "https://image.tmdb.org/t/p/w500/ciyzEBzJ1TnafkgGXr6DqEVh1wk.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 27813,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ciyzEBzJ1TnafkgGXr6DqEVh1wk.jpg"
+        },
+        {
+          "title": "The Beyond",
+          "year": 1981,
+          "slug": "Lucio Fulci's surreal zombie masterpiece set in a cursed hotel",
+          "poster": "https://image.tmdb.org/t/p/w500/luLcQdNqaIHRNMRuPgFN68v2Iux.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 19204,
+          "poster_url": "https://image.tmdb.org/t/p/w500/luLcQdNqaIHRNMRuPgFN68v2Iux.jpg"
+        },
+        {
+          "title": "Demons",
+          "year": 1985,
+          "slug": "Moviegoers transform into bloodthirsty monsters",
+          "poster": "https://image.tmdb.org/t/p/w500/ym0mtcSt6i45NIcAoSBQhop0wSP.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 14029,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ym0mtcSt6i45NIcAoSBQhop0wSP.jpg"
+        },
+        {
+          "title": "Cemetery Man",
+          "year": 1994,
+          "slug": "Philosophical Italian zombie comedy with Rupert Everett",
+          "poster": "https://image.tmdb.org/t/p/w500/cI5AV3jCuxmoQp0N7Z16SI2b7Xk.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 21588,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cI5AV3jCuxmoQp0N7Z16SI2b7Xk.jpg"
+        },
+        {
+          "title": "Tokyo Gore Police",
+          "year": 2008,
+          "slug": "Cyberpunk body horror spectacle from Japan",
+          "poster": "https://image.tmdb.org/t/p/w500/smQV5DgyUVho8d1R67XnU1BkJAV.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 16061,
+          "poster_url": "https://image.tmdb.org/t/p/w500/smQV5DgyUVho8d1R67XnU1BkJAV.jpg"
+        },
+        {
+          "title": "Slither",
+          "year": 2006,
+          "slug": "James Gunn's loving tribute to practical effects horror",
+          "poster": "https://image.tmdb.org/t/p/w500/zNlJvCY3Pz7SE09Lf4G7uPs5XFZ.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9035,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zNlJvCY3Pz7SE09Lf4G7uPs5XFZ.jpg"
+        },
+        {
+          "title": "Terrorvision",
+          "year": 1986,
+          "slug": "Family's satellite dish beams in hungry alien monster",
+          "poster": "https://image.tmdb.org/t/p/w500/9s9s2VchHi4gAiVGfFkrQyQLTzH.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 24194,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9s9s2VchHi4gAiVGfFkrQyQLTzH.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

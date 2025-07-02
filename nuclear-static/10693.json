@@ -1,0 +1,188 @@
+{
+  "props": {
+    "title": "Peter Pan",
+    "year": 1953,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/fJJOs1iyrhKfZceANxoPxPwNGF1.jpg",
+    "initialStreaming": null,
+    "tmdbId": 10693,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Disney's animated **Peter Pan** (1953) defined the magical visualization of Neverland that would influence adaptations for generations. The film masterfully captures J.M. Barrie's themes of childhood innocence through vibrant animation, with the flight to Neverland sequence remaining one of Disney's most enchanting moments. This version established many iconic elements - from Tinker Bell's sassy personality to Hook's comedic relationship with the crocodile - that became integral to the Peter Pan mythology. The film's technical achievements in animation were groundbreaking, particularly in the dynamic flying sequences and the ethereal glow effects for Tinker Bell."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Hook",
+            "year": 1991,
+            "slug": "Spielberg's grown-up Peter Pan sequel starring Robin Williams as an adult Peter returning to Neverland",
+            "poster": "https://image.tmdb.org/t/p/w500/a6rB1lGXoGms7gWxRfJneQmAjNV.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 879,
+            "poster_url": "https://image.tmdb.org/t/p/w500/a6rB1lGXoGms7gWxRfJneQmAjNV.jpg"
+          },
+          {
+            "title": "Peter Pan",
+            "year": 2003,
+            "slug": "Live-action adaptation featuring Jeremy Sumpter and Rachel Hurd-Wood with stunning practical effects",
+            "poster": "https://image.tmdb.org/t/p/w500/6QdU3TZZrIvXFzoHOwafZAynFjB.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 10601,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6QdU3TZZrIvXFzoHOwafZAynFjB.jpg"
+          },
+          {
+            "title": "Finding Neverland",
+            "year": 2004,
+            "slug": "Johnny Depp stars as J.M. Barrie in this moving story of how Peter Pan was created",
+            "poster": "https://image.tmdb.org/t/p/w500/5JyDPH4qdr0I6pF7Bjh1Qrf1Jhh.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 866,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5JyDPH4qdr0I6pF7Bjh1Qrf1Jhh.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The legacy of **Peter Pan** (1953) sparked numerous reinterpretations, each exploring different aspects of the story. **Hook** (1991) examined what happens when Peter grows up, while **Finding Neverland** (2004) delved into the poignant origins of the tale. Recent adaptations like **Pan** (2015) attempted to create an origin story for Peter himself, though with mixed results. The enduring appeal of the story has even inspired loose adaptations like **Benh Zeitlin's Beasts of the Southern Wild** (2012), which incorporates themes of childhood resilience and magical realism."
+      },
+      {
+        "type": "text",
+        "content": "The animation techniques used in **Peter Pan** (1953) represented Disney at the height of its classical period. The film came after successes like **Cinderella** (1950) and before **Lady and the Tramp** (1955), showcasing the studio's mastery of character animation and atmospheric effects. The flying sequences in particular influenced later aerial scenes in films like **The Sword in the Stone** (1963) and even modern works like **How to Train Your Dragon** (2010). SUBHEAD: Influence on Modern Fantasy"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Return to Never Land",
+            "year": 2002,
+            "slug": "Disney's animated sequel following Wendy's daughter during WWII",
+            "poster": "https://image.tmdb.org/t/p/w500/wB3r2b8sxUZspqNyr8copMlt7se.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 16690,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wB3r2b8sxUZspqNyr8copMlt7se.jpg"
+          },
+          {
+            "title": "Pan",
+            "year": 2015,
+            "slug": "Origin story prequel with Hugh Jackman as Blackbeard",
+            "poster": "https://image.tmdb.org/t/p/w500/w8i0mZR7MEL7c3bXSsuYg7VJsew.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 266647,
+            "poster_url": "https://image.tmdb.org/t/p/w500/w8i0mZR7MEL7c3bXSsuYg7VJsew.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The DNA of **Peter Pan** (1953) can be found throughout modern fantasy cinema. Films like **Bridge to Terabithia** (2007) and **The Chronicles of Narnia: The Lion, the Witch and the Wardrobe** (2005) draw from its blend of childhood wonder and growing-up themes. Even Pixar's **Inside Out** (2015) echoes Peter Pan's meditation on the bittersweet nature of leaving childhood behind."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Disney Animation Techniques from 1950-1960",
+      "J.M. Barrie's Original Story vs. Disney's Adaptation",
+      "The Cultural Impact of Tinker Bell as a Disney Icon",
+      "Musical Influences of \"You Can Fly\" on Disney Songs",
+      "Portrayal of Native Americans in Peter Pan - Historical Context and Modern Reception"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Little Mermaid",
+          "year": 1989,
+          "slug": "Disney's underwater fantasy with similar themes of growing up",
+          "poster": "https://image.tmdb.org/t/p/w500/plcZXvI310FkbwIptvd6rqk63LP.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 10144,
+          "poster_url": "https://image.tmdb.org/t/p/w500/plcZXvI310FkbwIptvd6rqk63LP.jpg"
+        },
+        {
+          "title": "Pinocchio",
+          "year": 1940,
+          "slug": "Another Disney classic about childhood and growing up",
+          "poster": "https://image.tmdb.org/t/p/w500/bnZJrLRnoQHpzEJdka1KYfsAF3N.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 10895,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bnZJrLRnoQHpzEJdka1KYfsAF3N.jpg"
+        },
+        {
+          "title": "The Kid Who Would Be King",
+          "year": 2019,
+          "slug": "Modern children's fantasy with similar themes of adventure",
+          "poster": "https://image.tmdb.org/t/p/w500/kBuvLX6zynQP0sjyqbXV4jNaZ4E.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 454294,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kBuvLX6zynQP0sjyqbXV4jNaZ4E.jpg"
+        },
+        {
+          "title": "The NeverEnding Story",
+          "year": 1984,
+          "slug": "Classic fantasy about childhood imagination",
+          "poster": "https://image.tmdb.org/t/p/w500/ddYCa91iDXfJCxaqSYzwi2fjfnl.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 34584,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ddYCa91iDXfJCxaqSYzwi2fjfnl.jpg"
+        },
+        {
+          "title": "Mary Poppins",
+          "year": 1964,
+          "slug": "Disney classic with similar magical flying sequences",
+          "poster": "https://image.tmdb.org/t/p/w500/ei8hhYCMfURfPOXKBnyl61be2iV.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 433,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ei8hhYCMfURfPOXKBnyl61be2iV.jpg"
+        },
+        {
+          "title": "Wendy",
+          "year": 2020,
+          "slug": "Modern reimagining of the Peter Pan story",
+          "poster": "https://image.tmdb.org/t/p/w500/nphsStbtAuJ2IaXtCvDXDwMUF5N.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 399363,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nphsStbtAuJ2IaXtCvDXDwMUF5N.jpg"
+        },
+        {
+          "title": "Big",
+          "year": 1988,
+          "slug": "Classic film exploring themes of childhood vs. adulthood",
+          "poster": "https://image.tmdb.org/t/p/w500/eWhCDJiwxvx3YXkAFRiHjimnF0j.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 2280,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eWhCDJiwxvx3YXkAFRiHjimnF0j.jpg"
+        },
+        {
+          "title": "Where the Wild Things Are",
+          "year": 2009,
+          "slug": "Fantasy adaptation exploring childhood imagination",
+          "poster": "https://image.tmdb.org/t/p/w500/sDFV9VEjwTUWF1s5sjOllsb70jk.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 16523,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sDFV9VEjwTUWF1s5sjOllsb70jk.jpg"
+        },
+        {
+          "title": "Alice in Wonderland",
+          "year": 1951,
+          "slug": "Disney's other great childhood fantasy adventure",
+          "poster": "https://image.tmdb.org/t/p/w500/20cvfwfaFqNbe9Fc3VEHJuPRxmn.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 12092,
+          "poster_url": "https://image.tmdb.org/t/p/w500/20cvfwfaFqNbe9Fc3VEHJuPRxmn.jpg"
+        },
+        {
+          "title": "The Last Mimzy",
+          "year": 2007,
+          "slug": "Modern children's fantasy with similar magical elements",
+          "poster": "https://image.tmdb.org/t/p/w500/jnLXcQFx4hSKDNG1P6RMz4v5jje.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 2267,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jnLXcQFx4hSKDNG1P6RMz4v5jje.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

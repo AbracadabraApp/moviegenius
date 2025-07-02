@@ -1,0 +1,185 @@
+{
+  "props": {
+    "title": "Pineapple Express",
+    "year": 2008,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/6E50WjeOYjDZg9HXgPjYdGtY2jG.jpg",
+    "initialStreaming": null,
+    "tmdbId": 10189,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Pineapple Express** (2008) revolutionized the stoner comedy by injecting high-stakes action into the traditionally laid-back genre. Producer Judd Apatow and director David Gordon Green merged the hazy humor of **Up in Smoke** (1978) with the buddy-action intensity of **Lethal Weapon** (1987). Seth Rogen and James Franco's chemistry as Dale and Saul created a new template for action-comedy duos, while Danny McBride's scene-stealing Red became instantly quotable. The film cleverly subverts expectations by turning typically mellow potheads into reluctant action heroes."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Up in Smoke",
+            "year": 1978,
+            "slug": "Cheech and Chong's groundbreaking stoner comedy that established many genre tropes",
+            "poster": "https://image.tmdb.org/t/p/w500/lKXINU3ApbhFPQJ3pqgMzGPCYnH.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 11455,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lKXINU3ApbhFPQJ3pqgMzGPCYnH.jpg"
+          },
+          {
+            "title": "Half Baked",
+            "year": 1998,
+            "slug": "Dave Chappelle leads this cult classic about pot-dealing friends trying to bail out their buddy",
+            "poster": "https://image.tmdb.org/t/p/w500/14TmEac4bquNaEld9t0uIliYoKE.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 9490,
+            "poster_url": "https://image.tmdb.org/t/p/w500/14TmEac4bquNaEld9t0uIliYoKE.jpg"
+          },
+          {
+            "title": "This Is The End",
+            "year": 2013,
+            "slug": "Rogen and Franco reunite in this apocalyptic comedy playing exaggerated versions of themselves",
+            "poster": "https://image.tmdb.org/t/p/w500/7Wdc3etyBJA4432TYtz6n9GQd1c.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 109414,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7Wdc3etyBJA4432TYtz6n9GQd1c.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The success of **Pineapple Express** (2008) sparked a wave of genre-hybrid stoner films. **This Is The End** (2013) took the concept further into apocalyptic territory, while **The Night Before** (2015) merged stoner antics with holiday comedy. These films proved that cannabis comedy could expand beyond simple \"getting high\" plots into more complex narrative territories while maintaining core appeal to both stoner and mainstream audiences."
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends to its technical achievements. Director David Gordon Green, known previously for serious indie dramas like **George Washington** (2000), brought unexpected cinematic flair to the action sequences. This paved the way for more directors crossing between indie and mainstream comedy, like Adam McKay moving from **Talladega Nights** (2006) to **The Big Short** (2015). SUBHEAD: Evolution of Action-Comedy"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Nice Guys",
+            "year": 2016,
+            "slug": "Action-comedy that follows similar buddy dynamics in a noir setting",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": null
+          },
+          {
+            "title": "Game Night",
+            "year": 2018,
+            "slug": "Comedy that successfully blends genuine thrills with consistent laughs",
+            "poster": "https://image.tmdb.org/t/p/w500/85R8LMyn9f2Lev2YPBF8Nughrkv.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 445571,
+            "poster_url": "https://image.tmdb.org/t/p/w500/85R8LMyn9f2Lev2YPBF8Nughrkv.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Pineapple Express** (2008) sits at a crucial intersection between classic buddy comedies like **48 Hrs.** (1982) and modern action-comedies like **21 Jump Street** (2012). The film's success showed studios that R-rated action-comedies could still draw crowds in an era of superhero dominance. Its influence can be seen in later hits like **The Other Guys** (2010) and **Stuber** (2019), which similarly pair unlikely duos in escalating violent situations played for both thrills and laughs."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Stoner Comedy: From Cheech & Chong to Modern Hybrids",
+      "Judd Apatow's Impact on 2000s Comedy",
+      "Genre-Blending in Modern Comedy Films",
+      "The Rise of Seth Rogen: From Freaks and Geeks to Leading Man",
+      "Action-Comedy: The Art of Balancing Laughs and Thrills"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Friday",
+          "year": 1995,
+          "slug": "Ice Cube and Chris Tucker star in this classic neighborhood comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/2lReF53F8trkC68piGSfk0JVwWU.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10634,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2lReF53F8trkC68piGSfk0JVwWU.jpg"
+        },
+        {
+          "title": "Dude Where's My Car",
+          "year": 2000,
+          "slug": "Stoner comedy meets sci-fi mystery",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Harold & Kumar Go to White Castle",
+          "year": 2004,
+          "slug": "Modern stoner comedy classic about an epic fast-food quest",
+          "poster": "https://image.tmdb.org/t/p/w500/5vO7R4xYlDipTp8gzfRbWegO8eb.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 11282,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5vO7R4xYlDipTp8gzfRbWegO8eb.jpg"
+        },
+        {
+          "title": "Superbad",
+          "year": 2007,
+          "slug": "Coming-of-age comedy from the same creative team",
+          "poster": "https://image.tmdb.org/t/p/w500/ek8e8txUyUwd2BNqj6lFEerJfbq.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 8363,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ek8e8txUyUwd2BNqj6lFEerJfbq.jpg"
+        },
+        {
+          "title": "Hot Fuzz",
+          "year": 2007,
+          "slug": "British action-comedy that similarly parodies genre tropes",
+          "poster": "https://image.tmdb.org/t/p/w500/zPib4ukTSdXvHP9pxGkFCe34f3y.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 4638,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zPib4ukTSdXvHP9pxGkFCe34f3y.jpg"
+        },
+        {
+          "title": "Tropic Thunder",
+          "year": 2008,
+          "slug": "Action-comedy satire of Hollywood and war films",
+          "poster": "https://image.tmdb.org/t/p/w500/zAurB9mNxfYRoVrVjAJJwGV3sPg.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 7446,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zAurB9mNxfYRoVrVjAJJwGV3sPg.jpg"
+        },
+        {
+          "title": "The Big Lebowski",
+          "year": 1998,
+          "slug": "Coen Brothers' cult classic stoner noir",
+          "poster": "https://image.tmdb.org/t/p/w500/9mprbw31MGdd66LR0AQKoDMoFRv.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 115,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9mprbw31MGdd66LR0AQKoDMoFRv.jpg"
+        },
+        {
+          "title": "22 Jump Street",
+          "year": 2014,
+          "slug": "Sequel that continues the action-comedy hybrid trend",
+          "poster": "https://image.tmdb.org/t/p/w500/850chzYHYbT3IISl6Q7dbBuFP2B.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 187017,
+          "poster_url": "https://image.tmdb.org/t/p/w500/850chzYHYbT3IISl6Q7dbBuFP2B.jpg"
+        },
+        {
+          "title": "Sausage Party",
+          "year": 2016,
+          "slug": "Rogen's R-rated animated comedy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Long Shot",
+          "year": 2019,
+          "slug": "Rogen combines romance with political comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/1F9AItQ6fhrfhBVQlmC8ReOQAFG.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 459992,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1F9AItQ6fhrfhBVQlmC8ReOQAFG.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

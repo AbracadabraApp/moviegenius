@@ -1,0 +1,177 @@
+{
+  "props": {
+    "title": "Mr. Deeds Goes to Town",
+    "year": 1936,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/nWPUslg7us6CUjm5XtsnsuuGmNr.jpg",
+    "initialStreaming": null,
+    "tmdbId": 24807,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Frank Capra's masterful **Mr. Deeds Goes to Town** (1936) established the template for the \"honest outsider vs corrupt system\" story that would define American populist cinema. Gary Cooper's portrayal of Longfellow Deeds, a small-town poet thrust into New York high society after inheriting $20 million, captures the essence of Capra's \"little guy\" heroes. The film's influence echoes through later works like **Being There** (1979) and **Big** (1988), where naive outsiders expose society's pretensions. Capra's signature mix of comedy, romance, and social commentary reached its peak here, two years before **You Can't Take It With You** (1938)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Mr. Smith Goes to Washington",
+            "year": 1939,
+            "slug": "Capra and Stewart team up for another tale of small-town idealism versus big city corruption",
+            "poster": "https://image.tmdb.org/t/p/w500/nDjg1fbNyq15excNDl3acd2IqAk.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 3083,
+            "poster_url": "https://image.tmdb.org/t/p/w500/nDjg1fbNyq15excNDl3acd2IqAk.jpg"
+          },
+          {
+            "title": "Meet John Doe",
+            "year": 1941,
+            "slug": "Gary Cooper stars in Capra's darker exploration of media manipulation and populist movements",
+            "poster": "https://image.tmdb.org/t/p/w500/dnBZbFE2OGlTGNGBVTn6t83tJtd.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 32574,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dnBZbFE2OGlTGNGBVTn6t83tJtd.jpg"
+          },
+          {
+            "title": "It's a Wonderful Life",
+            "year": 1946,
+            "slug": "Capra's ultimate statement on community values and individual worth in small-town America",
+            "poster": "https://image.tmdb.org/t/p/w500/bSqt9rhDZx1Q7UZ86dBPKdNomp2.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 1585,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bSqt9rhDZx1Q7UZ86dBPKdNomp2.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's courthouse sequence became a blueprint for cinematic justice scenes, influencing everything from **To Kill a Mockingbird** (1962) to **The Verdict** (1982). Deeds' defense of his sanity - proving himself \"sane\" by calling out society's insanity - creates a powerful commentary on social conformity that resonates through later films like **One Flew Over the Cuckoo's Nest** (1975) and **Patch Adams** (1998)."
+      },
+      {
+        "type": "text",
+        "content": "Jean Arthur's portrayal of cynical reporter Babe Bennett set the standard for the \"hard-boiled female journalist who softens\" character type, echoed in **His Girl Friday** (1940) and **Woman of the Year** (1942). Her transformation from manipulator to defender represents Capra's belief in redemption through honest human connection, a theme he would revisit in **It Happened One Night** (1934) and **Meet John Doe** (1941). SUBHEAD: Depression-Era Context and Modern Relevance"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "State of the Union",
+            "year": 1948,
+            "slug": "Spencer Tracy and Katharine Hepburn star in Capra's examination of political idealism versus pragmatism",
+            "poster": "https://image.tmdb.org/t/p/w500/s8opauqGVUdGbgdZgLsVyfKXh9O.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 33792,
+            "poster_url": "https://image.tmdb.org/t/p/w500/s8opauqGVUdGbgdZgLsVyfKXh9O.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's treatment of wealth inequality and social responsibility remains startlingly relevant. Deeds' decision to give away his fortune to struggling farmers mirrors modern discussions about philanthropy and wealth distribution. Contemporary films like **The Big Short** (2015) and **99 Homes** (2014) echo Capra's concern with financial justice, though without his characteristic optimism."
+      }
+    ],
+    "exploreFurther": [
+      "Frank Capra's Evolution of the Common Man Hero",
+      "Depression-Era Hollywood's Social Commentary",
+      "The Influence of Screwball Comedy on Modern Rom-Coms",
+      "Gary Cooper's Transition from Westerns to Social Drama",
+      "Jean Arthur's Impact on Female Character Development"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "You Can't Take It With You",
+          "year": 1938,
+          "slug": "Capra's adaptation of the Pulitzer-winning play about eccentric individualism",
+          "poster": "https://image.tmdb.org/t/p/w500/9JltqbDyWstYW6gnvqDO6L5bOrx.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 34106,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9JltqbDyWstYW6gnvqDO6L5bOrx.jpg"
+        },
+        {
+          "title": "The Talk of the Town",
+          "year": 1942,
+          "slug": "Similar themes of justice and social responsibility with Cary Grant",
+          "poster": "https://image.tmdb.org/t/p/w500/naMSxieb5cD1bGCu0rZ7zLJ6mtA.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 23159,
+          "poster_url": "https://image.tmdb.org/t/p/w500/naMSxieb5cD1bGCu0rZ7zLJ6mtA.jpg"
+        },
+        {
+          "title": "Meet John Doe",
+          "year": 1941,
+          "slug": "Another Capra-Cooper collaboration examining media and democracy",
+          "poster": "https://image.tmdb.org/t/p/w500/dnBZbFE2OGlTGNGBVTn6t83tJtd.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 32574,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dnBZbFE2OGlTGNGBVTn6t83tJtd.jpg"
+        },
+        {
+          "title": "Nothing Sacred",
+          "year": 1937,
+          "slug": "Carole Lombard stars in a similar commentary on media manipulation",
+          "poster": "https://image.tmdb.org/t/p/w500/uqu30x75SjsPNyDN0A5VedoEqyg.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 37650,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uqu30x75SjsPNyDN0A5VedoEqyg.jpg"
+        },
+        {
+          "title": "The Devil and Miss Jones",
+          "year": 1941,
+          "slug": "Jean Arthur in another social commentary comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/spGm2v3Jpg5l5xZS9xjKYNrLYF1.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 43801,
+          "poster_url": "https://image.tmdb.org/t/p/w500/spGm2v3Jpg5l5xZS9xjKYNrLYF1.jpg"
+        },
+        {
+          "title": "The More the Merrier",
+          "year": 1943,
+          "slug": "Jean Arthur shines in this wartime romantic comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/hkwpXQh3rNJWooaFXwZ0tVxmqF2.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 80616,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hkwpXQh3rNJWooaFXwZ0tVxmqF2.jpg"
+        },
+        {
+          "title": "The Farmer's Daughter",
+          "year": 1947,
+          "slug": "Similar themes of rural wisdom versus urban sophistication",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": null
+        },
+        {
+          "title": "Magic Town",
+          "year": 1947,
+          "slug": "James Stewart in a similar story about small-town values",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Born Yesterday",
+          "year": 1950,
+          "slug": "Judy Holliday as another naive character discovering corruption",
+          "poster": "https://image.tmdb.org/t/p/w500/hPiQUhnkgp2O9bQz9KhSyOjLvGl.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 24481,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hPiQUhnkgp2O9bQz9KhSyOjLvGl.jpg"
+        },
+        {
+          "title": "It Should Happen to You",
+          "year": 1954,
+          "slug": "Judy Holliday in a media critique that echoes Deeds' themes",
+          "poster": "https://image.tmdb.org/t/p/w500/pX8geXN3vjvkgi6zNgtxheFpPXg.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 20127,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pX8geXN3vjvkgi6zNgtxheFpPXg.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

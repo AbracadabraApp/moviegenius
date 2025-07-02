@@ -1,0 +1,196 @@
+{
+  "props": {
+    "title": "The Taming of the Shrew",
+    "year": 1967,
+    "initialSlug": "Fiery battle of wits ignites passionate romance",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/2LpU3kyg1PowiQoEHf7oUXOUmVa.jpg",
+    "initialStreaming": null,
+    "tmdbId": 25560,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Franco Zeffirelli's vibrant adaptation **The Taming of the Shrew** (1967) showcases the explosive chemistry between Elizabeth Taylor and Richard Burton at the height of their fame. This version leans hard into the comedy, with Taylor's Katherine throwing furniture and Burton's Petruchio matching her energy with swaggering bravado. Unlike many stuffier Shakespeare adaptations, Zeffirelli embraces the story's slapstick elements while maintaining the Bard's sharp dialogue. The film's sumptuous Italian locations and rich period costumes create an immersive 16th-century world that feels alive rather than staged."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "10 Things I Hate About You",
+            "year": 1999,
+            "slug": "Modern teen adaptation of The Taming of the Shrew with Heath Ledger and Julia Stiles bringing Shakespeare's battle of wits to high school",
+            "poster": "https://image.tmdb.org/t/p/w500/ujERk3aKABXU3NDXOAxEQYTHe9A.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 4951,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ujERk3aKABXU3NDXOAxEQYTHe9A.jpg"
+          },
+          {
+            "title": "Much Ado About Nothing",
+            "year": 1993,
+            "slug": "Kenneth Branagh and Emma Thompson lead this sun-drenched Tuscan adaptation of Shakespeare's romantic comedy",
+            "poster": "https://image.tmdb.org/t/p/w500/tvltGP6vYOkHdURag0jPSjhPUAV.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 11971,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tvltGP6vYOkHdURag0jPSjhPUAV.jpg"
+          },
+          {
+            "title": "Romeo and Juliet",
+            "year": 1968,
+            "slug": "Zeffirelli's other masterful Shakespeare adaptation, capturing young love with documentary-like realism",
+            "poster": "https://image.tmdb.org/t/p/w500/vaBQKLbSWkXGTOlsz9ARdJP4lvg.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 6003,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vaBQKLbSWkXGTOlsz9ARdJP4lvg.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film sparked intense debate about its gender politics, leading to fascinating modern reinterpretations. **Kiss Me Kate** (1953) turned the story into a meta-musical about actors performing Shrew. **10 Things I Hate About You** (1999) brilliantly updated the power dynamics for contemporary teens. Even **McLintock!** (1963) transported the basic plot to the American West. Each version grapples with the thorny questions of power, performance, and partnership at the heart of Shakespeare's play. SUBHEAD: Shakespeare on Screen: The Evolution of Adaptation"
+      },
+      {
+        "type": "text",
+        "content": "Zeffirelli's approach influenced decades of Shakespeare adaptations. While **Hamlet** (1990) with Mel Gibson maintained classical staging, directors increasingly experimented with setting and style. Baz Luhrmann's **Romeo + Juliet** (1996) brought hyperkinetic modern energy, **O** (2001) turned Othello into a high school basketball drama, and **My Own Private Idaho** (1991) wove Henry IV into a story of street hustlers. Each adaptation proves Shakespeare's themes remain relevant across centuries and contexts."
+      }
+    ],
+    "exploreFurther": [
+      "The Taylor-Burton Hollywood Romance and Its Impact on Their Shakespeare Films",
+      "Zeffirelli's Shakespeare Trilogy: Shrew, Romeo and Juliet, and Hamlet",
+      "Gender Politics in Shakespeare Adaptations Through the Decades",
+      "The Evolution of Shakespeare on Film: From Silent Era to Modern Day",
+      "Comedy in Shakespeare: Translating Theatrical Humor to Screen"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Romeo and Juliet",
+          "year": 1996,
+          "slug": "Baz Luhrmann's bold modern adaptation with Leonardo DiCaprio",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Kiss Me Kate",
+          "year": 1953,
+          "slug": "Musical adaptation starring Howard Keel and Kathryn Grayson",
+          "poster": "https://image.tmdb.org/t/p/w500/pbreFjOZHHJowAXVqUFDG1PBCvD.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 34857,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pbreFjOZHHJowAXVqUFDG1PBCvD.jpg"
+        },
+        {
+          "title": "Hamlet",
+          "year": 1996,
+          "slug": "Kenneth Branagh's epic full-text version",
+          "poster": "https://image.tmdb.org/t/p/w500/ilurgUOp6SCl4cuhfjctj1qxlfZ.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10549,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ilurgUOp6SCl4cuhfjctj1qxlfZ.jpg"
+        },
+        {
+          "title": "She's the Man",
+          "year": 2006,
+          "slug": "Gender-swapped Twelfth Night in a teen sports comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/ms9vdHyBLgAj0txnMWI9djGpDGp.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9655,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ms9vdHyBLgAj0txnMWI9djGpDGp.jpg"
+        },
+        {
+          "title": "A Midsummer Night's Dream",
+          "year": 1999,
+          "slug": "Star-studded adaptation with Michelle Pfeiffer and Kevin Kline",
+          "poster": "https://image.tmdb.org/t/p/w500/5KTYh2gXmsHUzsRsrstBGy0QfXf.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 10210,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5KTYh2gXmsHUzsRsrstBGy0QfXf.jpg"
+        },
+        {
+          "title": "Throne of Blood",
+          "year": 1957,
+          "slug": "Kurosawa's masterful Japanese adaptation of Macbeth",
+          "poster": "https://image.tmdb.org/t/p/w500/5NdGZpoInkf4wBInNpry6JAjQ3D.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 3777,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5NdGZpoInkf4wBInNpry6JAjQ3D.jpg"
+        },
+        {
+          "title": "Richard III",
+          "year": 1995,
+          "slug": "Ian McKellen's fascist-era adaptation",
+          "poster": "https://image.tmdb.org/t/p/w500/aN2BcIH6rvGbYiRQCS8lxOdeeVQ.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 31174,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aN2BcIH6rvGbYiRQCS8lxOdeeVQ.jpg"
+        },
+        {
+          "title": "Ran",
+          "year": 1985,
+          "slug": "Kurosawa's King Lear set in feudal Japan",
+          "poster": "https://image.tmdb.org/t/p/w500/iYQcDhuHrdPOHLUUxXaFChFrc97.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 11645,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iYQcDhuHrdPOHLUUxXaFChFrc97.jpg"
+        },
+        {
+          "title": "My Own Private Idaho",
+          "year": 1991,
+          "slug": "Loose adaptation of Henry IV with River Phoenix",
+          "poster": "https://image.tmdb.org/t/p/w500/p9TF90Pb5yg2MNb2UztzyXktMm4.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 468,
+          "poster_url": "https://image.tmdb.org/t/p/w500/p9TF90Pb5yg2MNb2UztzyXktMm4.jpg"
+        },
+        {
+          "title": "O",
+          "year": 2001,
+          "slug": "Modern Othello set in high school",
+          "poster": "https://image.tmdb.org/t/p/w500/bz4IiGxJwcbN4kTLdUuXlcGSMaH.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 11065,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bz4IiGxJwcbN4kTLdUuXlcGSMaH.jpg"
+        },
+        {
+          "title": "Prospero's Books",
+          "year": 1991,
+          "slug": "Experimental take on The Tempest",
+          "poster": "https://image.tmdb.org/t/p/w500/g2Wj7gaGO8gqwTwabfm1FzzdxbT.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 5048,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g2Wj7gaGO8gqwTwabfm1FzzdxbT.jpg"
+        },
+        {
+          "title": "West Side Story",
+          "year": 1961,
+          "slug": "Musical adaptation of Romeo and Juliet",
+          "poster": "https://image.tmdb.org/t/p/w500/nzCMu6D5q60i2bVrIQ0DxlRSgCZ.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 1725,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nzCMu6D5q60i2bVrIQ0DxlRSgCZ.jpg"
+        },
+        {
+          "title": "Looking for Richard",
+          "year": 1996,
+          "slug": "Al Pacino's documentary on performing Richard III",
+          "poster": "https://image.tmdb.org/t/p/w500/qAYYZzO6q7prlt6bmIvqOOwKsXi.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 42314,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qAYYZzO6q7prlt6bmIvqOOwKsXi.jpg"
+        },
+        {
+          "title": "Shakespeare in Love",
+          "year": 1998,
+          "slug": "Fictional account of Shakespeare writing Romeo and Juliet",
+          "poster": "https://image.tmdb.org/t/p/w500/zdW7jdzPi4J9KZR3TyY2jn3Xh5e.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 1934,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zdW7jdzPi4J9KZR3TyY2jn3Xh5e.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

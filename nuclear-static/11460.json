@@ -1,0 +1,177 @@
+{
+  "props": {
+    "title": "Red Eye",
+    "year": 2005,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/j33szyBdJjrmnItyUgPBsqaBECE.jpg",
+    "initialStreaming": null,
+    "tmdbId": 11460,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Red Eye** (2005) marked a fascinating pivot for horror master Wes Craven, trading supernatural scares for a taut airplane thriller that maximizes claustrophobic tension. Like **Phone Booth** (2002) and **Cellular** (2004), it epitomizes the contained-space thrillers of the mid-2000s, but elevates the format through Rachel McAdams' compelling performance as Lisa Reisert and Cillian Murphy's chillingly controlled terrorist Jackson Rippner. The film's genius lies in transforming mundane air travel anxiety into genuine terror."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Flightplan",
+            "year": 2005,
+            "slug": "Jodie Foster stars as a mother whose daughter vanishes mid-flight, but no one believes she was ever on board",
+            "poster": "https://image.tmdb.org/t/p/w500/oNjZFzbe7PfF3TxztNHDkinOPyB.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 9315,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oNjZFzbe7PfF3TxztNHDkinOPyB.jpg"
+          },
+          {
+            "title": "Non-Stop",
+            "year": 2014,
+            "slug": "Liam Neeson plays an air marshal racing against time to stop a terrorist threat on a transatlantic flight",
+            "poster": "https://image.tmdb.org/t/p/w500/Nkgaj3X0W2jHQ1TzHEgWFpN3kJ.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 225574,
+            "poster_url": "https://image.tmdb.org/t/p/w500/Nkgaj3X0W2jHQ1TzHEgWFpN3kJ.jpg"
+          },
+          {
+            "title": "Air Force One",
+            "year": 1997,
+            "slug": "Harrison Ford as the US President must fight back when terrorists hijack Air Force One",
+            "poster": "https://image.tmdb.org/t/p/w500/juRFEbyx5JlNuYrZM50vcZmtN78.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 9772,
+            "poster_url": "https://image.tmdb.org/t/p/w500/juRFEbyx5JlNuYrZM50vcZmtN78.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The confined-space thriller trend reached new heights in the post-9/11 era, with films like **United 93** (2006) and **Flight** (2012) tapping into collective aviation anxieties. **Red Eye** distinguishes itself by maintaining incredible tension without resorting to excessive violence or spectacle. The psychological cat-and-mouse game between McAdams and Murphy drives the narrative, proving that skilled acting and tight scripting can create more suspense than elaborate action sequences."
+      },
+      {
+        "type": "text",
+        "content": "Craven's direction shows remarkable restraint compared to his horror work like **Scream** (1996) or **A Nightmare on Elm Street** (1984). He uses close-ups and subtle blocking to emphasize the cramped airplane cabin, making viewers feel trapped alongside Lisa. The film's swift 85-minute runtime maintains perfect pacing, never letting the tension slack even after the action moves from the plane to the ground. SUBHEAD: The Evolution of Transportation Thrillers"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Snakes on a Plane",
+            "year": 2006,
+            "slug": "Samuel L. Jackson battles deadly snakes released on a passenger plane",
+            "poster": "https://image.tmdb.org/t/p/w500/9wqWQ5rXQG6daMpowqwadGjI768.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 326,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9wqWQ5rXQG6daMpowqwadGjI768.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Red Eye** helped establish a template for transportation-based thrillers that influenced later films like **Source Code** (2011) and **The Commuter** (2018). These films share DNA with classic confined-space thrillers like **Speed** (1994), but add post-9/11 security anxieties and modern technological threats. The genre continues evolving with entries like **7500** (2019), proving the enduring appeal of high-altitude tension."
+      }
+    ],
+    "exploreFurther": [
+      "Wes Craven's Transition from Horror to Thriller",
+      "Post-9/11 Aviation in Cinema",
+      "The Art of Single-Location Thrillers",
+      "Rachel McAdams' Evolution as a Leading Actor",
+      "Psychology of Fear in Confined Spaces"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Panic Room",
+          "year": 2002,
+          "slug": "Jodie Foster and Kristen Stewart hide in a panic room when home invaders break in",
+          "poster": "https://image.tmdb.org/t/p/w500/hANYbvfwxmkC9E4yY6YyJxYxlSJ.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 4547,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hANYbvfwxmkC9E4yY6YyJxYxlSJ.jpg"
+        },
+        {
+          "title": "Con Air",
+          "year": 1997,
+          "slug": "An ex-con must stop dangerous criminals who've hijacked his prison transport plane",
+          "poster": "https://image.tmdb.org/t/p/w500/kOKjgrEzGOP92rVQ6srA9jtp60l.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 1701,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kOKjgrEzGOP92rVQ6srA9jtp60l.jpg"
+        },
+        {
+          "title": "Phone Booth",
+          "year": 2002,
+          "slug": "A man is trapped in a phone booth by a sniper",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Cellular",
+          "year": 2004,
+          "slug": "A random caller must help a kidnapped woman while staying on his cell phone",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": null
+        },
+        {
+          "title": "Buried",
+          "year": 2010,
+          "slug": "Ryan Reynolds plays a man buried alive with only a cell phone",
+          "poster": "https://image.tmdb.org/t/p/w500/splPNB0vAoNlb8l5WYxz2E3FK2G.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 26388,
+          "poster_url": "https://image.tmdb.org/t/p/w500/splPNB0vAoNlb8l5WYxz2E3FK2G.jpg"
+        },
+        {
+          "title": "Locke",
+          "year": 2013,
+          "slug": "Tom Hardy makes life-changing calls during a car journey",
+          "poster": "https://image.tmdb.org/t/p/w500/tTREq5tTyYwmSLDRMhybJ82zXcX.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 210479,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tTREq5tTyYwmSLDRMhybJ82zXcX.jpg"
+        },
+        {
+          "title": "Train to Busan",
+          "year": 2016,
+          "slug": "Passengers must survive a zombie outbreak on a speeding train",
+          "poster": "https://image.tmdb.org/t/p/w500/vNVFt6dtcqnI7hqa6LFBUibuFiw.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 396535,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vNVFt6dtcqnI7hqa6LFBUibuFiw.jpg"
+        },
+        {
+          "title": "The Taking of Pelham 123",
+          "year": 2009,
+          "slug": "A subway dispatcher deals with hijackers demanding ransom",
+          "poster": "https://image.tmdb.org/t/p/w500/rEnyQiBu6goqJfvQXpUZQjpoHVp.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 18487,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rEnyQiBu6goqJfvQXpUZQjpoHVp.jpg"
+        },
+        {
+          "title": "Speed 2: Cruise Control",
+          "year": 1997,
+          "slug": "Sandra Bullock must stop a madman who's taken control of a cruise ship",
+          "poster": "https://image.tmdb.org/t/p/w500/gnK1ocpwUTj24zAktzomOJsD2bu.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 1639,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gnK1ocpwUTj24zAktzomOJsD2bu.jpg"
+        },
+        {
+          "title": "Executive Decision",
+          "year": 1996,
+          "slug": "Kurt Russell leads a team to secretly board a hijacked plane",
+          "poster": "https://image.tmdb.org/t/p/w500/hLjXkFr9fHlWzRVwu1T31QSVHRq.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 2320,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hLjXkFr9fHlWzRVwu1T31QSVHRq.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

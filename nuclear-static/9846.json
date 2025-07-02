@@ -1,0 +1,177 @@
+{
+  "props": {
+    "title": "To Live and Die in L.A.",
+    "year": 1985,
+    "initialSlug": "Corruption never sleeps in L.A.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/2iW3pSihBIhXjnBQmUJ0mAiZbB5.jpg",
+    "initialStreaming": null,
+    "tmdbId": 9846,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "William Friedkin's **To Live and Die in L.A.** (1985) revolutionized the cop thriller with its raw intensity and morally ambiguous characters. Coming off his earlier successes with **The French Connection** (1971) and **The Exorcist** (1973), Friedkin created a neon-noir masterpiece that captured 1980s Los Angeles in all its sun-bleached corruption. The film's legendary car chase - driving against traffic on the L.A. freeway - tops even French Connection's intensity. Willem Dafoe's ruthless counterfeiter and William Petersen's obsessed Treasury agent blur the lines between law and crime in ways that influenced everything from **Heat** (1995) to **The Shield** (2002-2008)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Thief",
+            "year": 1981,
+            "slug": "Michael Mann's stylish neo-noir about a professional safecracker planning one last score, featuring James Caan and a pulsing Tangerine Dream score",
+            "poster": "https://image.tmdb.org/t/p/w500/bpjRGwfYJ71bU0hNhLIz7g3t6Oy.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 11524,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bpjRGwfYJ71bU0hNhLIz7g3t6Oy.jpg"
+          },
+          {
+            "title": "Manhunter",
+            "year": 1986,
+            "slug": "Michael Mann's first Hannibal Lecter film stars William Petersen as an FBI profiler hunting a serial killer, establishing the neon-noir aesthetic",
+            "poster": "https://image.tmdb.org/t/p/w500/6rb24x39vV8n5301IelC8rCPJTH.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 11454,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6rb24x39vV8n5301IelC8rCPJTH.jpg"
+          },
+          {
+            "title": "52 Pick-Up",
+            "year": 1986,
+            "slug": "John Frankenheimer's brutal L.A. noir about a businessman blackmailed over an affair, starring Roy Scheider",
+            "poster": "https://image.tmdb.org/t/p/w500/ru8dtoh6tNi7kKAbLgbaE9J5SGf.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 18588,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ru8dtoh6tNi7kKAbLgbaE9J5SGf.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence on 80s crime cinema can't be overstated. Its mix of neon aesthetics, electronic score by Wang Chung, and unflinching violence created a template for neo-noir. **Miami Vice** (1984-1990) borrowed heavily from its visual style, while films like **Bad Lieutenant** (1992) followed its lead in portraying deeply compromised law enforcement. The film's innovative use of real counterfeiting techniques was so accurate that the Treasury Department initially objected to several scenes. SUBHEAD: The New Wave of L.A. Crime Films"
+      },
+      {
+        "type": "text",
+        "content": "Friedkin's portrayal of Los Angeles as a sun-drenched wasteland of corruption influenced a whole generation of filmmakers. **Colors** (1988) adopted its street-level view of L.A. law enforcement, while **Deep Cover** (1992) explored similar themes of undercover work blurring moral lines. The film's DNA can be seen in later L.A. crime classics like **Training Day** (2001) and **End of Watch** (2012), which maintain its unflinching look at the thin line between cops and criminals."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Car Chase Cinema: From Bullitt to To Live and Die in L.A.",
+      "William Friedkin's Influence on Modern Crime Films",
+      "Neo-Noir in the 1980s: Style and Substance",
+      "The Wang Chung Soundtrack: Redefining Crime Film Music",
+      "Los Angeles as a Character in Crime Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Driver",
+          "year": 1978,
+          "slug": "Walter Hill's minimalist car chase thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/zSpk2OH4MCgLGB06XDv4YUfBTv6.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 2153,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zSpk2OH4MCgLGB06XDv4YUfBTv6.jpg"
+        },
+        {
+          "title": "Cruising",
+          "year": 1980,
+          "slug": "Friedkin's controversial Al Pacino thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/bb9CND0WyfwdHOZY5XmP4Qn8taz.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 27958,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bb9CND0WyfwdHOZY5XmP4Qn8taz.jpg"
+        },
+        {
+          "title": "Year of the Dragon",
+          "year": 1985,
+          "slug": "Michael Cimino's stylish crime epic",
+          "poster": "https://image.tmdb.org/t/p/w500/c8SfIgwR5mfu0c0qTBKbsvBfecJ.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 11018,
+          "poster_url": "https://image.tmdb.org/t/p/w500/c8SfIgwR5mfu0c0qTBKbsvBfecJ.jpg"
+        },
+        {
+          "title": "Running Scared",
+          "year": 1986,
+          "slug": "Chicago cops vs drug dealers thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/tQshSrj0G5o9xElzEnBcMVHAutE.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 15698,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tQshSrj0G5o9xElzEnBcMVHAutE.jpg"
+        },
+        {
+          "title": "Band of the Hand",
+          "year": 1986,
+          "slug": "Miami vigilante action thriller",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": null
+        },
+        {
+          "title": "8 Million Ways to Die",
+          "year": 1986,
+          "slug": "Hal Ashby's L.A. detective noir",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Pluto",
+          "tmdb_id": null
+        },
+        {
+          "title": "Black Rain",
+          "year": 1989,
+          "slug": "Ridley Scott's neo-noir in Japan",
+          "poster": "https://image.tmdb.org/t/p/w500/funhGWt9ee3Uwb6Ar8SGCCvbJdV.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 4105,
+          "poster_url": "https://image.tmdb.org/t/p/w500/funhGWt9ee3Uwb6Ar8SGCCvbJdV.jpg"
+        },
+        {
+          "title": "Internal Affairs",
+          "year": 1990,
+          "slug": "Richard Gere corrupt cop thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/A4pH8DiNFEf2AgXkM4zk3ZpblV.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 11060,
+          "poster_url": "https://image.tmdb.org/t/p/w500/A4pH8DiNFEf2AgXkM4zk3ZpblV.jpg"
+        },
+        {
+          "title": "The Last Boy Scout",
+          "year": 1991,
+          "slug": "Bruce Willis L.A. noir action",
+          "poster": "https://image.tmdb.org/t/p/w500/fNkLz6ITQqTDZHBXqiCrm4kaJKJ.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 9319,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fNkLz6ITQqTDZHBXqiCrm4kaJKJ.jpg"
+        },
+        {
+          "title": "One False Move",
+          "year": 1992,
+          "slug": "Carl Franklin's neo-noir thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/x5xCkGw4jutMcc8nmWLKNzbDKht.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 21128,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x5xCkGw4jutMcc8nmWLKNzbDKht.jpg"
+        },
+        {
+          "title": "Romeo Is Bleeding",
+          "year": 1993,
+          "slug": "Gary Oldman corrupt cop noir",
+          "poster": "https://image.tmdb.org/t/p/w500/ojXNRpHMXU99UFmF9MKKiJCymKr.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 2088,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ojXNRpHMXU99UFmF9MKKiJCymKr.jpg"
+        },
+        {
+          "title": "Strange Days",
+          "year": 1995,
+          "slug": "Kathryn Bigelow's future noir",
+          "poster": "https://image.tmdb.org/t/p/w500/rY5BrDRcYAKE0BYmmT66YG6Uy5Q.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 281,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rY5BrDRcYAKE0BYmmT66YG6Uy5Q.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

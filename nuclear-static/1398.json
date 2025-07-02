@@ -1,0 +1,184 @@
+{
+  "props": {
+    "title": "Stalker",
+    "year": 1979,
+    "initialSlug": "Three men venture into a mysterious forbidden Zone",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/1qhOyf5C4s9ZdvY8d5JDx9DFMeT.jpg",
+    "initialStreaming": "TBD",
+    "tmdbId": 1398,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Stalker** (1979) stands as Andrei Tarkovsky's most enigmatic masterpiece, weaving philosophical meditation with haunting sci-fi elements. The film follows three men - the Stalker, the Writer, and the Professor - venturing into a mysterious restricted area called the Zone, seeking a room that supposedly grants wishes. Shot in decaying industrial locations with sepia-toned exteriors contrasting against the Zone's vivid natural imagery, it creates an atmosphere unlike anything in cinema. The film directly influenced later works like **Annihilation** (2018) and **The Road** (2009) in their portrayal of mysterious restricted zones and psychological journeys."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Solaris",
+            "year": 1972,
+            "slug": "Tarkovsky's other sci-fi masterpiece about a psychologist investigating strange occurrences on a space station",
+            "poster": "https://image.tmdb.org/t/p/w500/rXPWl3hBbzivmeCEbMD3LwV2Ada.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 593,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rXPWl3hBbzivmeCEbMD3LwV2Ada.jpg"
+          },
+          {
+            "title": "Mirror",
+            "year": 1975,
+            "slug": "Tarkovsky's autobiographical film exploring memory and time through poetic imagery",
+            "poster": "https://image.tmdb.org/t/p/w500/5JfpE7WblqirkvJPrpmLzKERNiM.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 137103,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5JfpE7WblqirkvJPrpmLzKERNiM.jpg"
+          },
+          {
+            "title": "Roadside Picnic",
+            "year": 2024,
+            "slug": "Upcoming adaptation of the novel that inspired Stalker",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "TBA",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's deliberate pacing and long takes exemplify Tarkovsky's theory of \"sculpting in time.\" Each shot lingers with purpose, forcing contemplation of both the physical and metaphysical journey. The Zone itself becomes a character - shifting, unpredictable, possibly sentient. This approach influenced later philosophical sci-fi like **Under the Skin** (2013) and **Arrival** (2016), where alien presence manifests through atmosphere rather than spectacle."
+      },
+      {
+        "type": "text",
+        "content": "Stalker's environmental themes feel prophetic today, especially scenes shot in abandoned power plants and chemical factories. The film was made just years before Chernobyl, and its warnings about human interference with nature gained tragic relevance. Recent films like **Chernobyl Diaries** (2012) and **Into Eternity** (2010) directly reference Stalker's visual language when depicting contaminated zones. SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Come and See",
+            "year": 1985,
+            "slug": "Devastating Soviet war film sharing Stalker's themes of corrupted landscapes",
+            "poster": "https://image.tmdb.org/t/p/w500/qNbMsKVzigERgJUbwf8pKyZogpb.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 25237,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qNbMsKVzigERgJUbwf8pKyZogpb.jpg"
+          },
+          {
+            "title": "Hard to Be a God",
+            "year": 2013,
+            "slug": "Russian sci-fi epic with similar metaphysical themes",
+            "poster": "https://image.tmdb.org/t/p/w500/lmqx4l6JVKwtAe7CCoyzwTVcOpy.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 110402,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lmqx4l6JVKwtAe7CCoyzwTVcOpy.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's DNA appears throughout contemporary cinema, from **Blade Runner 2049** (2017)'s irradiated Las Vegas sequence to the mysterious shimmering barrier in **Annihilation** (2018). Video games like S.T.A.L.K.E.R. and Death Stranding directly adapt its concepts of forbidden zones and professional guides. Even non-genre films like **The Sacrifice** (1986), Tarkovsky's final work, continue its themes of faith, purpose, and the price of wishes fulfilled."
+      }
+    ],
+    "exploreFurther": [
+      "Tarkovsky's Theory of Time Pressure - His unique approach to pacing and duration in cinema",
+      "The Strugatsky Brothers' Original Novel \"Roadside Picnic\" and Its Adaptation",
+      "Soviet Science Fiction Cinema of the 1970s",
+      "Environmental Themes in Post-Chernobyl Eastern European Cinema",
+      "The Zone as Metaphor - Religious and Philosophical Interpretations"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Nostalghia",
+          "year": 1983,
+          "slug": "Tarkovsky's Italian exile film about a Russian writer",
+          "poster": "https://image.tmdb.org/t/p/w500/fCYSidPXp3LpDa9wlLNv0gZvjyF.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 1394,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fCYSidPXp3LpDa9wlLNv0gZvjyF.jpg"
+        },
+        {
+          "title": "The Sacrifice",
+          "year": 1986,
+          "slug": "Tarkovsky's final film about faith and nuclear fear",
+          "poster": "https://image.tmdb.org/t/p/w500/8JMh27z075ZHbFE85XYkdXF2QkK.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 24657,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8JMh27z075ZHbFE85XYkdXF2QkK.jpg"
+        },
+        {
+          "title": "Dead Man's Letters",
+          "year": 1986,
+          "slug": "Soviet post-apocalyptic film influenced by Stalker",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": null
+        },
+        {
+          "title": "Solyaris",
+          "year": 1968,
+          "slug": "Earlier Soviet adaptation of Stanislaw Lem's novel",
+          "poster": "https://image.tmdb.org/t/p/w500/v8RUUNC6zyPWgbru30tJVnsi2Q6.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 321130,
+          "poster_url": "https://image.tmdb.org/t/p/w500/v8RUUNC6zyPWgbru30tJVnsi2Q6.jpg"
+        },
+        {
+          "title": "On the Silver Globe",
+          "year": 1988,
+          "slug": "Polish sci-fi philosophical epic",
+          "poster": "https://image.tmdb.org/t/p/w500/fOeMeTdGBlueTPtXgdamH8CkioX.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 27072,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fOeMeTdGBlueTPtXgdamH8CkioX.jpg"
+        },
+        {
+          "title": "Letters from a Dead Man",
+          "year": 1986,
+          "slug": "Soviet post-apocalyptic drama",
+          "poster": "https://image.tmdb.org/t/p/w500/kjwt6T5QJwOsAJCd8cahTkoOhmg.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 73920,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kjwt6T5QJwOsAJCd8cahTkoOhmg.jpg"
+        },
+        {
+          "title": "Cosmos",
+          "year": 2015,
+          "slug": "Experimental film inspired by Stalker's zone concept",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": null
+        },
+        {
+          "title": "Hard to Be a God",
+          "year": 2013,
+          "slug": "Russian sci-fi based on Strugatsky brothers novel",
+          "poster": "https://image.tmdb.org/t/p/w500/lmqx4l6JVKwtAe7CCoyzwTVcOpy.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 110402,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lmqx4l6JVKwtAe7CCoyzwTVcOpy.jpg"
+        },
+        {
+          "title": "The Visitor",
+          "year": 1979,
+          "slug": "Soviet sci-fi with similar themes",
+          "poster": "https://image.tmdb.org/t/p/w500/nO6pEHO2bewFPgDxxdRI2taKLir.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 54013,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nO6pEHO2bewFPgDxxdRI2taKLir.jpg"
+        },
+        {
+          "title": "Test Pilot Pirx",
+          "year": 1979,
+          "slug": "Polish-Soviet philosophical sci-fi",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

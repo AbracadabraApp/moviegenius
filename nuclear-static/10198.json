@@ -1,0 +1,177 @@
+{
+  "props": {
+    "title": "The Princess and the Frog",
+    "year": 2009,
+    "initialSlug": "Waitress kisses frog prince, magic turns her too",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/v6nAUs62OJ4DXmnnmPFeVmMz8H9.jpg",
+    "initialStreaming": null,
+    "tmdbId": 10198,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Princess and the Frog** (2009) marked Disney's triumphant return to hand-drawn animation and their first Black princess. Set in 1920s New Orleans, the film reinvents the classic Grimm fairy tale with jazz-age flair and Creole culture. The movie's soundtrack by Randy Newman captures the era's jazz, zydeco, and blues, while the animation showcases the French Quarter's distinctive architecture and the mysterious bayou. Directors Ron Clements and John Musker, who helmed **The Little Mermaid** (1989) and **Aladdin** (1992), brought their signature mix of romance and comedy while breaking new ground with Tiana's entrepreneurial dreams."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Little Mermaid",
+            "year": 1989,
+            "slug": "Disney's renaissance began with this underwater tale of a mermaid princess, featuring memorable songs by Howard Ashman and Alan Menken",
+            "poster": "https://image.tmdb.org/t/p/w500/plcZXvI310FkbwIptvd6rqk63LP.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 10144,
+            "poster_url": "https://image.tmdb.org/t/p/w500/plcZXvI310FkbwIptvd6rqk63LP.jpg"
+          },
+          {
+            "title": "Beauty and the Beast",
+            "year": 1991,
+            "slug": "The first animated film nominated for Best Picture Oscar, setting the gold standard for Disney's fairy tale adaptations",
+            "poster": "https://image.tmdb.org/t/p/w500/hUJ0UvQ5tgE2Z9WpfuduVSdiCiU.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 10020,
+            "poster_url": "https://image.tmdb.org/t/p/w500/hUJ0UvQ5tgE2Z9WpfuduVSdiCiU.jpg"
+          },
+          {
+            "title": "Aladdin",
+            "year": 1992,
+            "slug": "Arabian fantasy with Robin Williams' iconic Genie performance, showing Disney's mastery of character animation",
+            "poster": "https://image.tmdb.org/t/p/w500/eLFfl7vS8dkeG1hKp5mwbm37V83.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 812,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eLFfl7vS8dkeG1hKp5mwbm37V83.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's themes of hard work versus \"wishing on stars\" represented a sharp departure from traditional Disney princess narratives. Unlike **Snow White and the Seven Dwarfs** (1937) or **Sleeping Beauty** (1959), Tiana's story emphasizes entrepreneurship and self-reliance. This shift reflects broader changes in animated storytelling, similar to the working-class dreams in **An American Tail** (1986) and the career ambitions in **Mulan** (1998)."
+      },
+      {
+        "type": "text",
+        "content": "The villain, Dr. Facilier, joins Disney's pantheon of memorable antagonists, with Keith David's mesmerizing performance and \"Friends on the Other Side\" standing alongside **The Lion King's** (1994) Scar and **The Little Mermaid's** (1989) Ursula. The film's exploration of voodoo and Louisiana folklore brings unique cultural elements rarely seen in mainstream animation, though handled with careful respect similar to the Polynesian mythology in **Moana** (2016). SUBHEAD: Cultural Impact and Animation Legacy"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Pocahontas",
+            "year": 1995,
+            "slug": "Disney's first attempt at incorporating American cultural history into their princess formula",
+            "poster": "https://image.tmdb.org/t/p/w500/kZ1ft0QZ4e3zDUPMBftEkwI9ftd.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 10530,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kZ1ft0QZ4e3zDUPMBftEkwI9ftd.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**The Princess and the Frog** (2009) influenced later Disney films' approach to cultural authenticity, paving the way for **Brave** (2012), **Coco** (2017), and **Encanto** (2021). The film's commercial performance, while solid, led Disney to pivot toward computer animation, making it one of the studio's last hand-drawn features alongside **Winnie the Pooh** (2011). However, its artistic achievement in traditional animation rivals classics like **Bambi** (1942) and **Pinocchio** (1940)."
+      }
+    ],
+    "exploreFurther": [
+      "The History of African American Representation in Disney Animation",
+      "New Orleans Jazz Age and Its Influence on American Music",
+      "The Evolution of Disney Princess Characters",
+      "Traditional Animation Techniques in the Digital Age",
+      "Louisiana Folklore and Voodoo in Popular Culture"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Mulan",
+          "year": 1998,
+          "slug": "Another Disney princess who defied conventions and fought for her dreams",
+          "poster": "https://image.tmdb.org/t/p/w500/5TYgKxYhnhRNNwqnRAKHkgfqi2G.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 10674,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5TYgKxYhnhRNNwqnRAKHkgfqi2G.jpg"
+        },
+        {
+          "title": "Oliver and Company",
+          "year": 1988,
+          "slug": "New York-set animation featuring cultural diversity and jazz music",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Hercules",
+          "year": 1997,
+          "slug": "Greek mythology with gospel-influenced soundtrack and strong character animation",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Atlantis: The Lost Empire",
+          "year": 2001,
+          "slug": "Adventure animation with multicultural cast and detailed world-building",
+          "poster": "https://image.tmdb.org/t/p/w500/8fUEFPUTF7kBMuKPiSQHxPvd8EZ.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 10865,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8fUEFPUTF7kBMuKPiSQHxPvd8EZ.jpg"
+        },
+        {
+          "title": "The Emperor's New Groove",
+          "year": 2000,
+          "slug": "Latin American-influenced comedy with jazz age styling",
+          "poster": "https://image.tmdb.org/t/p/w500/xU635vn1lMD9DWDloeuKmuhxxnQ.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 11688,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xU635vn1lMD9DWDloeuKmuhxxnQ.jpg"
+        },
+        {
+          "title": "Home on the Range",
+          "year": 2004,
+          "slug": "One of Disney's last traditional animations before Princess and the Frog",
+          "poster": "https://image.tmdb.org/t/p/w500/9xIIo4FMquy5SRqn8hppyr2QadR.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 13700,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9xIIo4FMquy5SRqn8hppyr2QadR.jpg"
+        },
+        {
+          "title": "Tangled",
+          "year": 2010,
+          "slug": "The CGI princess film that followed, showing Disney's new direction",
+          "poster": "https://image.tmdb.org/t/p/w500/ym7Kst6a4uodryxqbGOxmewF235.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 38757,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ym7Kst6a4uodryxqbGOxmewF235.jpg"
+        },
+        {
+          "title": "Frozen",
+          "year": 2013,
+          "slug": "Modern princess tale that built on Princess and the Frog's independent heroine theme",
+          "poster": "https://image.tmdb.org/t/p/w500/mbPrrbt8bSLcHSBCHnRclPlMZPl.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 109445,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mbPrrbt8bSLcHSBCHnRclPlMZPl.jpg"
+        },
+        {
+          "title": "Raya and the Last Dragon",
+          "year": 2021,
+          "slug": "Southeast Asian-inspired fantasy continuing Disney's cultural exploration",
+          "poster": "https://image.tmdb.org/t/p/w500/5nVhgCzxKbK47OLIKxCR1syulOn.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 527774,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5nVhgCzxKbK47OLIKxCR1syulOn.jpg"
+        },
+        {
+          "title": "Soul",
+          "year": 2020,
+          "slug": "Another New Orleans-influenced Disney film exploring jazz and African American culture",
+          "poster": "https://image.tmdb.org/t/p/w500/pEz5aROvfy5FBW1OTlrDO3VryWO.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 508442,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pEz5aROvfy5FBW1OTlrDO3VryWO.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,187 @@
+{
+  "props": {
+    "title": "The Magnificent Seven",
+    "year": 1960,
+    "initialSlug": "Seven gunmen unite to defend Mexican village",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/e5ToxOyJwuZD4VOfI0qEn5uIjeJ.jpg",
+    "initialStreaming": null,
+    "tmdbId": 966,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Magnificent Seven** (1960) revolutionized the Western genre by brilliantly adapting Akira Kurosawa's **Seven Samurai** (1954) into the American frontier. Director John Sturges assembled an iconic cast including Yul Brynner, Steve McQueen, and Charles Bronson, creating a template for ensemble action films that still resonates. The film's premise - seven gunfighters defending a Mexican village from bandits - established the \"professionals on a mission\" format that influenced everything from **The Dirty Dozen** (1967) to **Ocean's Eleven** (2001)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Seven Samurai",
+            "year": 1954,
+            "slug": "Kurosawa's masterpiece about samurai protecting a village, which inspired The Magnificent Seven",
+            "poster": "https://image.tmdb.org/t/p/w500/8OKmBV5BUFzmozIC3pPWKHy17kx.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 346,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8OKmBV5BUFzmozIC3pPWKHy17kx.jpg"
+          },
+          {
+            "title": "The Wild Bunch",
+            "year": 1969,
+            "slug": "Peckinpah's violent epic about aging outlaws in the dying West",
+            "poster": "https://image.tmdb.org/t/p/w500/8j9yEC3xjy1PJDSizIbaxcHaSph.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 576,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8j9yEC3xjy1PJDSizIbaxcHaSph.jpg"
+          },
+          {
+            "title": "Once Upon a Time in the West",
+            "year": 1968,
+            "slug": "Sergio Leone's operatic Western about railroad expansion and revenge",
+            "poster": "https://image.tmdb.org/t/p/w500/qbYgqOczabWNn2XKwgMtVrntD6P.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 335,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qbYgqOczabWNn2XKwgMtVrntD6P.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends far beyond Westerns. Its DNA can be found in movies like **The Seven Samurai** (1954), **Three Amigos** (1986), and **A Bug's Life** (1998). The structure - recruiting specialists, training montages, final battle - became a Hollywood staple. Elmer Bernstein's thundering score, especially the main theme, defined the sound of Westerns for decades and has been referenced countless times."
+      },
+      {
+        "type": "text",
+        "content": "What sets **The Magnificent Seven** (1960) apart is its exploration of professional ethics and male camaraderie. Unlike many Westerns focused on lone heroes, this film examines group dynamics and moral choices. Each gunfighter has distinct skills and personalities, yet they form a cohesive unit - a formula later seen in films like **The Professionals** (1966) and **The Wild Bunch** (1969). SUBHEAD: Legacy and Modern Influence"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "For a Few Dollars More",
+            "year": 1965,
+            "slug": "Clint Eastwood and Lee Van Cleef as bounty hunters in Leone's stylish Western",
+            "poster": "https://image.tmdb.org/t/p/w500/ooqASvA7qxlTVKL3KwOzBwy57Dh.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 938,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ooqASvA7qxlTVKL3KwOzBwy57Dh.jpg"
+          },
+          {
+            "title": "The Professionals",
+            "year": 1966,
+            "slug": "Lee Marvin leads specialists on a rescue mission in Mexico",
+            "poster": "https://image.tmdb.org/t/p/w500/sH4Clw7QrtH23xl9o4sOpHNkRIz.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 22383,
+            "poster_url": "https://image.tmdb.org/t/p/w500/sH4Clw7QrtH23xl9o4sOpHNkRIz.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's impact continues in modern cinema. **The Magnificent Seven** (2016) remake with Denzel Washington proves the story's enduring appeal. Contemporary ensemble action films like **The Expendables** (2010) and **Rogue One: A Star Wars Story** (2016) follow its template of assembling skilled warriors for a noble cause. Even **Avengers** (2012) owes a debt to this classic formula of bringing together diverse heroes to protect the vulnerable."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Western Music Scores - From Elmer Bernstein to Ennio Morricone",
+      "Japanese Cinema's Influence on American Westerns",
+      "The Rise of Ensemble Action Films",
+      "Portrayal of Mexican Characters in Classic Westerns",
+      "Remakes and Cultural Adaptation in Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Good, the Bad and the Ugly",
+          "year": 1966,
+          "slug": "Leone's epic Civil War Western with Eastwood",
+          "poster": "https://image.tmdb.org/t/p/w500/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 429,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg"
+        },
+        {
+          "title": "True Grit",
+          "year": 1969,
+          "slug": "John Wayne's Oscar-winning performance as Rooster Cogburn",
+          "poster": "https://image.tmdb.org/t/p/w500/lmexRC57l39elaIcnxhaHpcaIW2.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 17529,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lmexRC57l39elaIcnxhaHpcaIW2.jpg"
+        },
+        {
+          "title": "The Great Escape",
+          "year": 1963,
+          "slug": "Sturges directs McQueen in WWII POW escape thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/gBH4H8UMFxl139HaLz6lRuvsel8.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 5925,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gBH4H8UMFxl139HaLz6lRuvsel8.jpg"
+        },
+        {
+          "title": "Rio Bravo",
+          "year": 1959,
+          "slug": "Howard Hawks' classic with John Wayne defending a jail",
+          "poster": "https://image.tmdb.org/t/p/w500/4gI4KKmoi0d3yfsF71YU3S0I5t8.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 301,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4gI4KKmoi0d3yfsF71YU3S0I5t8.jpg"
+        },
+        {
+          "title": "The Dirty Dozen",
+          "year": 1967,
+          "slug": "Lee Marvin leads criminals on WWII mission",
+          "poster": "https://image.tmdb.org/t/p/w500/tFWWsuhp22zJ6OG6QepJIiPUfeF.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 1654,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tFWWsuhp22zJ6OG6QepJIiPUfeF.jpg"
+        },
+        {
+          "title": "Tombstone",
+          "year": 1993,
+          "slug": "Kurt Russell as Wyatt Earp in stylish Western",
+          "poster": "https://image.tmdb.org/t/p/w500/wGFCvylul8iEQhJOKfwZGGvXMzA.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 11969,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wGFCvylul8iEQhJOKfwZGGvXMzA.jpg"
+        },
+        {
+          "title": "Unforgiven",
+          "year": 1992,
+          "slug": "Eastwood's Oscar-winning deconstruction of Western myths",
+          "poster": "https://image.tmdb.org/t/p/w500/54roTwbX9fltg85zjsmrooXAs12.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 33,
+          "poster_url": "https://image.tmdb.org/t/p/w500/54roTwbX9fltg85zjsmrooXAs12.jpg"
+        },
+        {
+          "title": "Open Range",
+          "year": 2003,
+          "slug": "Costner and Duvall as free-grazers facing corruption",
+          "poster": "https://image.tmdb.org/t/p/w500/5bmt52Fijy71W0E72on8xnnYHgP.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 2055,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5bmt52Fijy71W0E72on8xnnYHgP.jpg"
+        },
+        {
+          "title": "3:10 to Yuma",
+          "year": 2007,
+          "slug": "Christian Bale escorts Russell Crowe's outlaw to justice",
+          "poster": "https://image.tmdb.org/t/p/w500/voMB69AsLnPNmtfbrBl0lbeFKDH.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 5176,
+          "poster_url": "https://image.tmdb.org/t/p/w500/voMB69AsLnPNmtfbrBl0lbeFKDH.jpg"
+        },
+        {
+          "title": "The Assassination of Jesse James",
+          "year": 2007,
+          "slug": "Meditative Western with Brad Pitt",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

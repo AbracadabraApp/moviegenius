@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "Marathon Man",
+    "year": 1976,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/uPNgubSiri2yvBQRPtP77ViYjN.jpg",
+    "initialStreaming": null,
+    "tmdbId": 10518,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Marathon Man** (1976) revolutionized paranoid political thrillers with its brutal intensity and Laurence Olivier's chilling performance as Nazi dentist Christian Szell. Director John Schlesinger masterfully builds tension through the parallel stories of graduate student Babe (Dustin Hoffman) and his mysterious government agent brother Doc (Roy Scheider). The film's infamous dental torture scene remains one of cinema's most visceral moments, influencing countless psychological thrillers like **Se7en** (1995) and **Oldboy** (2003). Like **Three Days of the Condor** (1975) and **The Conversation** (1974), it tapped into post-Watergate paranoia while adding a personal revenge narrative."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Marathon Man",
+            "year": 1976,
+            "slug": "A graduate student becomes entangled in a former Nazi's criminal conspiracy, leading to psychological torture and a deadly chase",
+            "poster": "https://image.tmdb.org/t/p/w500/uPNgubSiri2yvBQRPtP77ViYjN.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 10518,
+            "poster_url": "https://image.tmdb.org/t/p/w500/uPNgubSiri2yvBQRPtP77ViYjN.jpg"
+          },
+          {
+            "title": "The Boys from Brazil",
+            "year": 1978,
+            "slug": "A Nazi hunter pursues a diabolical genetic experiment by Josef Mengele, starring Gregory Peck and Laurence Olivier",
+            "poster": "https://image.tmdb.org/t/p/w500/w7IZT1HJNmWcEj3Axwlwhya02OX.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 16241,
+            "poster_url": "https://image.tmdb.org/t/p/w500/w7IZT1HJNmWcEj3Axwlwhya02OX.jpg"
+          },
+          {
+            "title": "Three Days of the Condor",
+            "year": 1975,
+            "slug": "A CIA researcher goes on the run after his entire office is assassinated",
+            "poster": "https://image.tmdb.org/t/p/w500/zinwtZqdb7gnc4zMu8dfkK1fMN3.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 11963,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zinwtZqdb7gnc4zMu8dfkK1fMN3.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's genius lies in how it meshes real historical trauma with contemporary paranoia. Like **The Boys from Brazil** (1978) and **The Odessa File** (1974), it confronts the lingering specter of Nazi war criminals in the modern world. Hoffman's method acting approach - he actually ran marathons to prepare and stayed awake for days to achieve authentic exhaustion - set new standards for psychological thriller performances, influencing later intense character studies like **Taxi Driver** (1976) and **Raging Bull** (1980). SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "text",
+        "content": "**Marathon Man** created a template for thrillers where ordinary citizens face extraordinary danger, later seen in films like **Enemy of the State** (1998) and **The Fugitive** (1993). William Goldman's screenplay adaptation of his own novel demonstrates how to effectively translate literary suspense to screen, something later mastered in adaptations like **The Silence of the Lambs** (1991). The film's exploration of post-WWII Nazi hunting influenced everything from **Apt Pupil** (1998) to **Munich** (2005), while its dental torture scene became a cultural touchstone referenced in countless films and TV shows."
+      }
+    ],
+    "exploreFurther": [
+      "The Hunt for Nazi War Criminals in Cinema",
+      "Method Acting in 1970s Thriller Films",
+      "William Goldman's Screenplay Adaptations",
+      "Post-Watergate Paranoia in American Cinema",
+      "The Evolution of Psychological Torture in Thrillers"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Day of the Jackal",
+          "year": 1973,
+          "slug": "A meticulous assassin plots to kill Charles de Gaulle",
+          "poster": "https://image.tmdb.org/t/p/w500/vThgcb3JOj99yETg8WChuci4LV2.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 4909,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vThgcb3JOj99yETg8WChuci4LV2.jpg"
+        },
+        {
+          "title": "Klute",
+          "year": 1971,
+          "slug": "A detective protects a call girl from a stalker",
+          "poster": "https://image.tmdb.org/t/p/w500/tVyINAsNGSgD1OIstqwCcs7wyGH.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 466,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tVyINAsNGSgD1OIstqwCcs7wyGH.jpg"
+        },
+        {
+          "title": "The Parallax View",
+          "year": 1974,
+          "slug": "A reporter investigates a conspiracy behind political assassinations",
+          "poster": "https://image.tmdb.org/t/p/w500/5ClPRox438lwK2Eze7X5xySDaYC.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 17365,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5ClPRox438lwK2Eze7X5xySDaYC.jpg"
+        },
+        {
+          "title": "Black Sunday",
+          "year": 1977,
+          "slug": "Terrorists plot an attack at the Super Bowl",
+          "poster": "https://image.tmdb.org/t/p/w500/4rMXQICfFEsSGHCjh3bJj7K33sZ.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 50374,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4rMXQICfFEsSGHCjh3bJj7K33sZ.jpg"
+        },
+        {
+          "title": "The Odessa File",
+          "year": 1974,
+          "slug": "A journalist hunts Nazi war criminals in 1960s Germany",
+          "poster": "https://image.tmdb.org/t/p/w500/j8uFsP2PxDMN3bdo5Ve6fYj0ebN.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 21489,
+          "poster_url": "https://image.tmdb.org/t/p/w500/j8uFsP2PxDMN3bdo5Ve6fYj0ebN.jpg"
+        },
+        {
+          "title": "Nighthawks",
+          "year": 1981,
+          "slug": "NYC cops pursue an international terrorist",
+          "poster": "https://image.tmdb.org/t/p/w500/oqMl9RrdYerO1PYN6InmF91dahc.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 21610,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oqMl9RrdYerO1PYN6InmF91dahc.jpg"
+        },
+        {
+          "title": "Eye of the Needle",
+          "year": 1981,
+          "slug": "A Nazi spy in Britain races to deliver crucial D-Day intelligence",
+          "poster": "https://image.tmdb.org/t/p/w500/nDPnfXCuh280WHPk7xTfG7cDlAh.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 10863,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nDPnfXCuh280WHPk7xTfG7cDlAh.jpg"
+        },
+        {
+          "title": "The Assignment",
+          "year": 1997,
+          "slug": "A CIA operative impersonates a terrorist",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Pluto TV",
+          "tmdb_id": null
+        },
+        {
+          "title": "Munich",
+          "year": 2005,
+          "slug": "Mossad agents hunt the perpetrators of the 1972 Olympics massacre",
+          "poster": "https://image.tmdb.org/t/p/w500/iUekaw96QLInZpsNwRTlRKrZgwm.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 612,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iUekaw96QLInZpsNwRTlRKrZgwm.jpg"
+        },
+        {
+          "title": "The Debt",
+          "year": 2010,
+          "slug": "Israeli agents pursue a Nazi war criminal",
+          "poster": "https://image.tmdb.org/t/p/w500/zlavkPAIzIIQppcU9vcQrKZjfmb.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 48289,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zlavkPAIzIIQppcU9vcQrKZjfmb.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

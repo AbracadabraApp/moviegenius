@@ -1,0 +1,177 @@
+{
+  "props": {
+    "title": "Zodiac",
+    "year": 2007,
+    "initialSlug": "Chasing the Zodiac Killer",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/6YmeO4pB7XTh8P8F960O1uA14JO.jpg",
+    "initialStreaming": null,
+    "tmdbId": 1949,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Zodiac** (2007) revolutionized the true crime thriller by prioritizing procedural authenticity over sensationalism. Director David Fincher meticulously recreated 1970s San Francisco, spending countless hours with case files and survivors to capture the exhausting reality of the unsolved Zodiac killer investigation. The film shares DNA with other obsession-driven detective stories like **All the President's Men** (1976) and **The Silence of the Lambs** (1991), but breaks new ground by focusing on the psychological toll of pursuing an uncatchable killer. Jake Gyllenhaal's Robert Graysmith transforms from curious cartoonist to haunted investigator, mirroring Fincher's own perfectionist drive."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Se7en",
+            "year": 1995,
+            "slug": "Fincher's earlier serial killer masterpiece follows two detectives hunting a murderer staging elaborate deaths based on the seven deadly sins",
+            "poster": "https://image.tmdb.org/t/p/w500/191nKfP0ehp3uIvWqgPbFmI4lv9.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 807,
+            "poster_url": "https://image.tmdb.org/t/p/w500/191nKfP0ehp3uIvWqgPbFmI4lv9.jpg"
+          },
+          {
+            "title": "Memories of Murder",
+            "year": 2003,
+            "slug": "Bong Joon-ho's haunting true crime drama about South Korea's first serial killer investigation",
+            "poster": "https://image.tmdb.org/t/p/w500/rxndHKwUeFgTHx0PuuhZS4dMtrB.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 11423,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rxndHKwUeFgTHx0PuuhZS4dMtrB.jpg"
+          },
+          {
+            "title": "Mindhunter",
+            "year": 2017,
+            "slug": "Fincher-produced series exploring the FBI's early criminal profiling unit and serial killer psychology",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's desaturated digital cinematography by Harris Savides created a new visual language for true crime, influencing everything from **True Detective** (2014) to **Spotlight** (2015). Rather than relying on lurid violence, Zodiac builds tension through information overload - drowning viewers in details, dead ends, and competing theories that mirror the investigators' frustrating journey. This approach revolutionized how filmmakers approach true crime, prioritizing the psychological impact of investigation over shock value."
+      },
+      {
+        "type": "text",
+        "content": "Like **JFK** (1991) and **The Girl with the Dragon Tattoo** (2011), Zodiac explores how obsession with solving a mystery can become its own form of violence. The film's extensive runtime and attention to minute details force viewers to experience the same overwhelming flood of information that consumed its characters. This influenced later procedurals like **Prisoners** (2013) and **Gone Girl** (2014), which similarly examine how investigation can destroy the investigator. SUBHEAD: Impact on Modern True Crime"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Manhunter",
+            "year": 1986,
+            "slug": "Michael Mann's stylish thriller about an FBI profiler hunting a serial killer while fighting his own demons",
+            "poster": "https://image.tmdb.org/t/p/w500/6rb24x39vV8n5301IelC8rCPJTH.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 11454,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6rb24x39vV8n5301IelC8rCPJTH.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Zodiac's influence extends beyond cinema into television and documentary storytelling. Shows like **Making a Murderer** (2015) and **The Jinx** (2015) adopted its methodical approach to evidence presentation and timeline reconstruction. The film's emphasis on the toll of investigation over decades influenced later true crime projects like **I'll Be Gone in the Dark** (2020) and **Don't F**k with Cats** (2019)."
+      }
+    ],
+    "exploreFurther": [
+      "The Real Zodiac Investigation: Examining the actual case files and evidence",
+      "Digital Cinematography Revolution: How Zodiac changed crime film aesthetics",
+      "Serial Killer Cinema Evolution: From exploitation to examination",
+      "Fincher's Obsessive Style: Analyzing his perfectionist filmmaking approach",
+      "True Crime's Cultural Impact: How real cases shape entertainment"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Insomnia",
+          "year": 2002,
+          "slug": "Psychological thriller about a detective losing his grip during an Alaska murder investigation",
+          "poster": "https://image.tmdb.org/t/p/w500/bMq1l0RUf7xr45yMRUKzkU5cDOQ.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 26610,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bMq1l0RUf7xr45yMRUKzkU5cDOQ.jpg"
+        },
+        {
+          "title": "Nightcrawler",
+          "year": 2014,
+          "slug": "Dark thriller exploring media exploitation of crime",
+          "poster": "https://image.tmdb.org/t/p/w500/j9HrX8f7GbZQm1BrBiR40uFQZSb.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 242582,
+          "poster_url": "https://image.tmdb.org/t/p/w500/j9HrX8f7GbZQm1BrBiR40uFQZSb.jpg"
+        },
+        {
+          "title": "Chinatown",
+          "year": 1974,
+          "slug": "Classic noir about corruption in 1930s Los Angeles",
+          "poster": "https://image.tmdb.org/t/p/w500/kZRSP3FmOcq0xnBulqpUQngJUXY.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 829,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kZRSP3FmOcq0xnBulqpUQngJUXY.jpg"
+        },
+        {
+          "title": "L.A. Confidential",
+          "year": 1997,
+          "slug": "Complex neo-noir about police corruption",
+          "poster": "https://image.tmdb.org/t/p/w500/lWCgf5sD5FpMljjpkRhcC8pXcch.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 2118,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lWCgf5sD5FpMljjpkRhcC8pXcch.jpg"
+        },
+        {
+          "title": "The Killing",
+          "year": 2011,
+          "slug": "Methodical series following a single murder investigation",
+          "poster": "https://image.tmdb.org/t/p/w500/si8hSXOzBRQgzMP8aRb6fCrXpvc.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 110204,
+          "poster_url": "https://image.tmdb.org/t/p/w500/si8hSXOzBRQgzMP8aRb6fCrXpvc.jpg"
+        },
+        {
+          "title": "Mystic River",
+          "year": 2003,
+          "slug": "Dark drama about how a murder impacts a community",
+          "poster": "https://image.tmdb.org/t/p/w500/hCHVDbo6XJGj3r2i4hVjKhE0GKF.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 322,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hCHVDbo6XJGj3r2i4hVjKhE0GKF.jpg"
+        },
+        {
+          "title": "Copycat",
+          "year": 1995,
+          "slug": "Thriller about a serial killer targeting other killers' methods",
+          "poster": "https://image.tmdb.org/t/p/w500/oMgwJb016znNZcpDR20eXxZoW8A.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 1710,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oMgwJb016znNZcpDR20eXxZoW8A.jpg"
+        },
+        {
+          "title": "Summer of Sam",
+          "year": 1999,
+          "slug": "Spike Lee's look at how serial killers affect communities",
+          "poster": "https://image.tmdb.org/t/p/w500/yvGGA2CbT6xyFVTZUA9f2ok0q5V.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 10279,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yvGGA2CbT6xyFVTZUA9f2ok0q5V.jpg"
+        },
+        {
+          "title": "Zodiac: The Director's Cut",
+          "year": 2007,
+          "slug": "Extended version with additional investigation scenes",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Monster",
+          "year": 2003,
+          "slug": "True story of female serial killer Aileen Wuornos",
+          "poster": "https://image.tmdb.org/t/p/w500/aevmNtJCNG4ZlfEeEGZ79frMUes.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 504,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aevmNtJCNG4ZlfEeEGZ79frMUes.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

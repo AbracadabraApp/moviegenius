@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "The Reef",
+    "year": 2006,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/38xnsPZiuIYMTsOXhtTIg1dUnRu.jpg",
+    "initialStreaming": null,
+    "tmdbId": 20521,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Reef** (2006) marked a significant entry in the shark survival thriller genre, though it's often confused with the superior 2010 Australian film of the same name. While the 2006 animated version attempted to blend Finding Nemo-style underwater adventure with romance, it failed to capture the magic of classics like **The Little Mermaid** (1989) or the tension of shark films like **Jaws** (1975). This South Korean-American co-production demonstrates the challenges of creating compelling aquatic animation without the resources of major studios like Pixar or DreamWorks."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Deep Blue Sea",
+            "year": 1999,
+            "slug": "Scientists create super-intelligent sharks with devastating consequences in this intense underwater thriller",
+            "poster": "https://image.tmdb.org/t/p/w500/fyn0zyCI4kIlbDoHH0Hzv09hDC5.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 8914,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fyn0zyCI4kIlbDoHH0Hzv09hDC5.jpg"
+          },
+          {
+            "title": "Open Water",
+            "year": 2003,
+            "slug": "Based on true events, a couple gets stranded in shark-infested waters after their diving boat leaves without them",
+            "poster": "https://image.tmdb.org/t/p/w500/85o7BSpumewsd8KoGYvqpGH54yF.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 83,
+            "poster_url": "https://image.tmdb.org/t/p/w500/85o7BSpumewsd8KoGYvqpGH54yF.jpg"
+          },
+          {
+            "title": "The Reef",
+            "year": 2010,
+            "slug": "Australian survivors of a capsized boat must swim through great white shark territory to reach safety",
+            "poster": "https://image.tmdb.org/t/p/w500/s5JGAqmdv1cHlDjMqsmQUkVo2lW.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 49787,
+            "poster_url": "https://image.tmdb.org/t/p/w500/s5JGAqmdv1cHlDjMqsmQUkVo2lW.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The evolution of shark movies since **Jaws** (1975) reveals fascinating shifts in both technical capabilities and storytelling approaches. While **Deep Blue Sea** (1999) embraced genetic modification paranoia and **47 Meters Down** (2017) explored claustrophobic tension, animated attempts like **The Reef** (2006) and **Shark Tale** (2004) struggled to balance family-friendly storytelling with the inherent menace of shark-based narratives. SUBHEAD: Animation vs Reality in Shark Films"
+      },
+      {
+        "type": "text",
+        "content": "The contrast between animated shark films and their live-action counterparts highlights interesting cultural perspectives on marine predators. While **Finding Nemo** (2003) successfully portrayed sharks as reformed characters trying to overcome their nature, **The Reef** (2006) fell into familiar stereotypes. More recent films like **The Meg** (2018) and **The Shallows** (2016) have returned to treating sharks as pure survival thriller antagonists, though with varying degrees of scientific accuracy."
+      }
+    ],
+    "exploreFurther": [
+      "The evolution of CGI in underwater filmmaking from Jaws to modern shark movies",
+      "Cultural impact of Jaws on beach tourism and shark conservation efforts",
+      "Comparing animated underwater films: Technical challenges and innovations",
+      "The science behind shark behavior in films vs reality",
+      "Australian shark films and their unique perspective on marine threats"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Finding Nemo",
+          "year": 2003,
+          "slug": "Pixar's masterpiece about a clownfish searching for his son",
+          "poster": "https://image.tmdb.org/t/p/w500/eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 12,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg"
+        },
+        {
+          "title": "Shark Tale",
+          "year": 2004,
+          "slug": "Will Smith voices a small fish who becomes an unlikely hero",
+          "poster": "https://image.tmdb.org/t/p/w500/r08DpyPyhXcJTfNZAICNGMzcQ8l.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 10555,
+          "poster_url": "https://image.tmdb.org/t/p/w500/r08DpyPyhXcJTfNZAICNGMzcQ8l.jpg"
+        },
+        {
+          "title": "47 Meters Down",
+          "year": 2017,
+          "slug": "Sisters trapped in a shark cage must survive when it drops to the ocean floor",
+          "poster": "https://image.tmdb.org/t/p/w500/2IgdRUTdHyoI3nFORcnnYEKOGIH.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 403119,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2IgdRUTdHyoI3nFORcnnYEKOGIH.jpg"
+        },
+        {
+          "title": "The Shallows",
+          "year": 2016,
+          "slug": "A surfer must outwit a great white shark while stranded near shore",
+          "poster": "https://image.tmdb.org/t/p/w500/bnBV7hZmLuA0Si5Aop481sPF2RY.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 332567,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bnBV7hZmLuA0Si5Aop481sPF2RY.jpg"
+        },
+        {
+          "title": "Bait 3D",
+          "year": 2012,
+          "slug": "Tsunami traps shoppers in a supermarket with great white sharks",
+          "poster": "https://image.tmdb.org/t/p/w500/e2OIr4y90ZZjIRWQ0XBOVzpBn4x.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 118957,
+          "poster_url": "https://image.tmdb.org/t/p/w500/e2OIr4y90ZZjIRWQ0XBOVzpBn4x.jpg"
+        },
+        {
+          "title": "The Meg",
+          "year": 2018,
+          "slug": "Jason Statham battles a prehistoric megalodon shark",
+          "poster": "https://image.tmdb.org/t/p/w500/eyWICPcxOuTcDDDbTMOZawoOn8d.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 345940,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eyWICPcxOuTcDDDbTMOZawoOn8d.jpg"
+        },
+        {
+          "title": "12 Days of Terror",
+          "year": 2004,
+          "slug": "Based on the 1916 New Jersey shark attacks that inspired Jaws",
+          "poster": "https://image.tmdb.org/t/p/w500/5H1p1ljwpDuXQgbzesb5kYoXoVl.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 153102,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5H1p1ljwpDuXQgbzesb5kYoXoVl.jpg"
+        },
+        {
+          "title": "Dark Tide",
+          "year": 2012,
+          "slug": "A shark expert returns to diving after a tragic incident",
+          "poster": "https://image.tmdb.org/t/p/w500/gx56ZanaWd4pG930Z44eDLvnQ8N.jpg",
+          "initialStreaming": "Pluto TV",
+          "tmdb_id": 59963,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gx56ZanaWd4pG930Z44eDLvnQ8N.jpg"
+        },
+        {
+          "title": "Blue Water White Death",
+          "year": 1971,
+          "slug": "Documentary about the search for great white sharks",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Into the Blue",
+          "year": 2005,
+          "slug": "Treasure hunters encounter sharks and drug dealers in the Bahamas",
+          "poster": "https://image.tmdb.org/t/p/w500/peCGSKT5ZSpNkJtww7exYuzcGVO.jpg",
+          "initialStreaming": "Starz",
+          "tmdb_id": 11968,
+          "poster_url": "https://image.tmdb.org/t/p/w500/peCGSKT5ZSpNkJtww7exYuzcGVO.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

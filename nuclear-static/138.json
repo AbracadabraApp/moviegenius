@@ -1,0 +1,197 @@
+{
+  "props": {
+    "title": "Dracula",
+    "year": 1931,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/ueVSPt7vAba0XScHWTDWS5tNxYX.jpg",
+    "initialStreaming": "TBD",
+    "tmdbId": 138,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Tod Browning's **Dracula** (1931) revolutionized horror cinema, establishing Universal's monster movie golden age and cementing Bela Lugosi's iconic portrayal as the definitive vampire count. The film's Gothic atmosphere, achieved through Charles D. Hall's elaborate castle sets and Karl Freund's expressionistic cinematography, created a template that horror films would follow for decades. While earlier vampire films like **Nosferatu** (1922) took a more grotesque approach, Lugosi's sophisticated, seductive Dracula transformed the vampire into a charismatic aristocrat - a characterization that influenced everything from **Horror of Dracula** (1958) to **Interview with the Vampire** (1994)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Nosferatu",
+            "year": 1922,
+            "slug": "F.W. Murnau's unauthorized Dracula adaptation features Max Schreck's rat-like Count Orlok in a haunting German Expressionist masterpiece",
+            "poster": "https://image.tmdb.org/t/p/w500/zv7J85D8CC9qYagAEhPM63CIG6j.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 653,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zv7J85D8CC9qYagAEhPM63CIG6j.jpg"
+          },
+          {
+            "title": "Frankenstein",
+            "year": 1931,
+            "slug": "Universal's other monster masterpiece starring Boris Karloff as the tragic creature",
+            "poster": "https://image.tmdb.org/t/p/w500/mu6wHwH0IwCCaEYtpqujuPJYat1.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 3035,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mu6wHwH0IwCCaEYtpqujuPJYat1.jpg"
+          },
+          {
+            "title": "Horror of Dracula",
+            "year": 1958,
+            "slug": "Christopher Lee's first and finest turn as the Count, with vivid Hammer Horror color and Gothic romance",
+            "poster": "https://image.tmdb.org/t/p/w500/9UHOATvzXQWbElSGygOY1ar3vpp.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 11868,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9UHOATvzXQWbElSGygOY1ar3vpp.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends far beyond vampire movies. Its blend of horror and sophistication paved the way for psychological thrillers like **Cat People** (1942) and **The Innocents** (1961). Lugosi's performance - with his hypnotic stare and precise, theatrical movements - created a new type of screen villain: the monster as aristocrat. This characterization influenced countless subsequent performances, from Vincent Price in **House of Usher** (1960) to Anthony Hopkins in **The Silence of the Lambs** (1991)."
+      },
+      {
+        "type": "text",
+        "content": "The technical innovations in **Dracula** (1931) were groundbreaking for their time. Cinematographer Karl Freund, fresh from German Expressionist masterpieces, brought a shadowy, atmospheric style that would define Universal horror. His techniques - particularly the use of strategically placed lights to illuminate Lugosi's eyes - became standard horror practice. These methods influenced film noir of the 1940s and can be seen in modern Gothic works like **Crimson Peak** (2015) and **The Woman in Black** (2012). SUBHEAD: Legacy and Modern Interpretations"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Cat People",
+            "year": 1942,
+            "slug": "Psychological horror about a woman who fears she transforms into a deadly panther",
+            "poster": "https://image.tmdb.org/t/p/w500/zSNTDd5Q6No5BmY39Zp5BVgl8XE.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 25508,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zSNTDd5Q6No5BmY39Zp5BVgl8XE.jpg"
+          },
+          {
+            "title": "The Black Cat",
+            "year": 1934,
+            "slug": "Lugosi and Karloff's first pairing in a sophisticated Art Deco horror",
+            "poster": "https://image.tmdb.org/t/p/w500/QTH3dkeDGTBRBmsY0A7STpsNN4.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 24106,
+            "poster_url": "https://image.tmdb.org/t/p/w500/QTH3dkeDGTBRBmsY0A7STpsNN4.jpg"
+          },
+          {
+            "title": "Son of Dracula",
+            "year": 1943,
+            "slug": "Lon Chaney Jr.'s turn as the Count brings vampirism to American soil",
+            "poster": "https://image.tmdb.org/t/p/w500/pQTLdJ46WXPIix05EkcHAMDKUIw.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 32023,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pQTLdJ46WXPIix05EkcHAMDKUIw.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's impact on vampire mythology cannot be overstated. While Bram Stoker's novel provided the foundation, **Dracula** (1931) created many of the visual and dramatic conventions we now associate with vampires. The formal evening wear, the aristocratic manner, the Old World charm masking predatory intent - these elements influenced everything from **Dark Shadows** (1966-1971) to **Bram Stoker's Dracula** (1992). Even subversive takes like **Near Dark** (1987) and **Only Lovers Left Alive** (2013) define themselves in opposition to the Lugosi archetype."
+      }
+    ],
+    "exploreFurther": [
+      "Universal Monster Movies and Their Cultural Impact",
+      "German Expressionism's Influence on American Horror",
+      "The Evolution of Vampire Cinema: From Nosferatu to Modern Day",
+      "Bela Lugosi's Career and Cultural Legacy",
+      "Gothic Horror Architecture in Classic Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Bride of Frankenstein",
+          "year": 1935,
+          "slug": "James Whale's masterful sequel featuring Elsa Lanchester",
+          "poster": "https://image.tmdb.org/t/p/w500/5241zUwe7rC17MNc2QpCBKKdp1N.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 229,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5241zUwe7rC17MNc2QpCBKKdp1N.jpg"
+        },
+        {
+          "title": "The Wolf Man",
+          "year": 1941,
+          "slug": "Lon Chaney Jr.'s tragic werewolf tale",
+          "poster": "https://image.tmdb.org/t/p/w500/vG8fu5syTtQLzK1hQXyi3ugOPNF.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 13666,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vG8fu5syTtQLzK1hQXyi3ugOPNF.jpg"
+        },
+        {
+          "title": "White Zombie",
+          "year": 1932,
+          "slug": "Lugosi as a voodoo master in pre-Code horror",
+          "poster": "https://image.tmdb.org/t/p/w500/s5DnfWHGeCExlweIFF4JOHKyx3H.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 26860,
+          "poster_url": "https://image.tmdb.org/t/p/w500/s5DnfWHGeCExlweIFF4JOHKyx3H.jpg"
+        },
+        {
+          "title": "Mark of the Vampire",
+          "year": 1935,
+          "slug": "Tod Browning's pseudo-remake with Lugosi",
+          "poster": "https://image.tmdb.org/t/p/w500/A6JN2kIEYwXEHHmqEa86aMKDJj8.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 28910,
+          "poster_url": "https://image.tmdb.org/t/p/w500/A6JN2kIEYwXEHHmqEa86aMKDJj8.jpg"
+        },
+        {
+          "title": "Vampyr",
+          "year": 1932,
+          "slug": "Dreamy atmospheric vampire tale by Carl Theodor Dreyer",
+          "poster": "https://image.tmdb.org/t/p/w500/yt3JS5JSoZseSohYkhs6FLU9B0O.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 779,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yt3JS5JSoZseSohYkhs6FLU9B0O.jpg"
+        },
+        {
+          "title": "House of Dracula",
+          "year": 1945,
+          "slug": "Universal monsters meet in atmospheric crossover",
+          "poster": "https://image.tmdb.org/t/p/w500/x2HZq0CjGJbU90Q8Bm7jDKBM7ZG.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 30793,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x2HZq0CjGJbU90Q8Bm7jDKBM7ZG.jpg"
+        },
+        {
+          "title": "Abbott and Costello Meet Frankenstein",
+          "year": 1948,
+          "slug": "Horror-comedy with Lugosi's final Dracula role",
+          "poster": "https://image.tmdb.org/t/p/w500/ectRcq1y6EAmz2i72SCRHI6qUK2.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 3073,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ectRcq1y6EAmz2i72SCRHI6qUK2.jpg"
+        },
+        {
+          "title": "London After Midnight",
+          "year": 1927,
+          "slug": "Lost Tod Browning vampire film with Lon Chaney Sr.",
+          "poster": "https://image.tmdb.org/t/p/w500/mDgG0R5XDai0960ICbk4GOMltlw.jpg",
+          "initialStreaming": "Lost Film",
+          "tmdb_id": 64852,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mDgG0R5XDai0960ICbk4GOMltlw.jpg"
+        },
+        {
+          "title": "The Devil Bat",
+          "year": 1940,
+          "slug": "Lugosi as a mad scientist seeking revenge",
+          "poster": "https://image.tmdb.org/t/p/w500/g1boVvNLVKYbP2H7MoGol9sQAIH.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 41021,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g1boVvNLVKYbP2H7MoGol9sQAIH.jpg"
+        },
+        {
+          "title": "Island of Lost Souls",
+          "year": 1932,
+          "slug": "Pre-Code horror adaptation of H.G. Wells",
+          "poster": "https://image.tmdb.org/t/p/w500/g7K7r1FojQC52YHxfmuXgwYBq5Q.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 3031,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g7K7r1FojQC52YHxfmuXgwYBq5Q.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,212 @@
+{
+  "props": {
+    "title": "Dark Water",
+    "year": 2005,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/cm4M9xaBu78IjuAVNG4LCXdXsg.jpg",
+    "initialStreaming": null,
+    "tmdbId": 9009,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Dark Water** (2005) stands as a haunting example of Hollywood remaking Asian horror, following the success of **The Ring** (2002). Based on Koji Suzuki's novel and Hideo Nakata's 2002 Japanese film, the American version stars Jennifer Connelly as a mother fighting for custody while facing supernatural occurrences in a dilapidated apartment building. The film taps into primal fears about motherhood and urban decay, similar to psychological horror masterpieces like **Rosemary's Baby** (1968) and **The Babadook** (2014)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Ringu",
+            "year": 1998,
+            "slug": "The original Japanese horror that sparked the Asian horror remake trend, following a cursed videotape that kills viewers in seven days",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": null
+          },
+          {
+            "title": "Ju-On: The Grudge",
+            "year": 2002,
+            "slug": "A Japanese horror about a cursed house where anyone who enters falls victim to a vengeful spirit",
+            "poster": "https://image.tmdb.org/t/p/w500/6q1hlBC6rudc3mHwXsbMBR2xAT6.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 11838,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6q1hlBC6rudc3mHwXsbMBR2xAT6.jpg"
+          },
+          {
+            "title": "The Others",
+            "year": 2001,
+            "slug": "A Gothic horror focusing on a mother protecting her children in an isolated mansion",
+            "poster": "https://image.tmdb.org/t/p/w500/p8g1vlTvpM6nr2hMMiZ1fUlKF0D.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 1933,
+            "poster_url": "https://image.tmdb.org/t/p/w500/p8g1vlTvpM6nr2hMMiZ1fUlKF0D.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Director Walter Salles brings his arthouse sensibilities to **Dark Water**, emphasizing atmospheric dread over jump scares. The film's waterlogged aesthetics and decaying urban setting echo similar themes in **Session 9** (2001) and **1408** (2007), where architecture itself becomes a character. The constant presence of water - dripping, flooding, seeping - creates a suffocating atmosphere that mirrors the protagonist's psychological deterioration."
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of maternal anxiety aligns it with other psychological horror films like **The Sixth Sense** (1999) and **The Orphanage** (2007). Connelly's performance as Dahlia Williams captures the desperation of a mother trying to protect her child while questioning her own sanity, reminiscent of Nicole Kidman's work in **The Others** (2001). SUBHEAD: The Asian Horror Remake Wave"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "A Tale of Two Sisters",
+            "year": 2003,
+            "slug": "A South Korean psychological horror about family trauma and sisterly bonds",
+            "poster": "https://image.tmdb.org/t/p/w500/l3exwhwyGE0NnHJ3lFQ7eXoBSkH.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 4552,
+            "poster_url": "https://image.tmdb.org/t/p/w500/l3exwhwyGE0NnHJ3lFQ7eXoBSkH.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Dark Water** emerged during a significant period of Asian horror remakes, including **The Grudge** (2004), **Pulse** (2006), and **The Eye** (2008). While many of these adaptations struggled to capture the subtle psychological terror of their sources, Dark Water succeeded by emphasizing emotional depth over spectacle, similar to Gore Verbinski's approach with **The Ring** (2002)."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Asian Horror Cinema Remakes in Hollywood",
+      "Water Symbolism in Horror Films",
+      "Architectural Horror: Buildings as Characters",
+      "Maternal Horror: Motherhood in Genre Films",
+      "Urban Decay in Contemporary Horror"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Ring",
+          "year": 2002,
+          "slug": "American remake of Ringu featuring a deadly videotape curse",
+          "poster": "https://image.tmdb.org/t/p/w500/AeRpUynJKDpJveklBJipOYrVxCS.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 565,
+          "poster_url": "https://image.tmdb.org/t/p/w500/AeRpUynJKDpJveklBJipOYrVxCS.jpg"
+        },
+        {
+          "title": "Pulse",
+          "year": 2001,
+          "slug": "Japanese techno-horror about ghosts invading through the internet",
+          "poster": "https://image.tmdb.org/t/p/w500/c3zEimDraIyMSasPMGDaNOrhnzn.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 27324,
+          "poster_url": "https://image.tmdb.org/t/p/w500/c3zEimDraIyMSasPMGDaNOrhnzn.jpg"
+        },
+        {
+          "title": "The Eye",
+          "year": 2002,
+          "slug": "Hong Kong horror about a blind woman who receives a cornea transplant with terrifying consequences",
+          "poster": "https://image.tmdb.org/t/p/w500/1G2DBIEkoS0JdCiOFIeR3mD8ROE.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 12262,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1G2DBIEkoS0JdCiOFIeR3mD8ROE.jpg"
+        },
+        {
+          "title": "What Lies Beneath",
+          "year": 2000,
+          "slug": "Supernatural thriller about a woman uncovering dark secrets in her home",
+          "poster": "https://image.tmdb.org/t/p/w500/2L3Cn0CizbSy2E9KJt1SiOSyb6p.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 2655,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2L3Cn0CizbSy2E9KJt1SiOSyb6p.jpg"
+        },
+        {
+          "title": "Apartment 1303",
+          "year": 2007,
+          "slug": "Japanese horror about a cursed apartment with a dark history",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Grudge",
+          "year": 2004,
+          "slug": "American remake of Ju-On about a cursed house in Tokyo",
+          "poster": "https://image.tmdb.org/t/p/w500/5AGB8FVELnhMMw3nO372sw1xp58.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1970,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5AGB8FVELnhMMw3nO372sw1xp58.jpg"
+        },
+        {
+          "title": "One Missed Call",
+          "year": 2003,
+          "slug": "Japanese horror about deadly phone calls from the future",
+          "poster": "https://image.tmdb.org/t/p/w500/8ujSEEePCVMyi7Mt1RQMXd6SWmy.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 9694,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8ujSEEePCVMyi7Mt1RQMXd6SWmy.jpg"
+        },
+        {
+          "title": "Shutter",
+          "year": 2004,
+          "slug": "Thai horror about mysterious shadows appearing in photographs",
+          "poster": "https://image.tmdb.org/t/p/w500/zUyaVtyugDaDHtOC6kCMJhbZsWu.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 17111,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zUyaVtyugDaDHtOC6kCMJhbZsWu.jpg"
+        },
+        {
+          "title": "The Devil's Backbone",
+          "year": 2001,
+          "slug": "Spanish ghost story set in an orphanage during civil war",
+          "poster": "https://image.tmdb.org/t/p/w500/iP1z1aJzPnkP8FHg77TS7ukqoEZ.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1433,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iP1z1aJzPnkP8FHg77TS7ukqoEZ.jpg"
+        },
+        {
+          "title": "Lake Mungo",
+          "year": 2008,
+          "slug": "Australian psychological horror about family grief and supernatural occurrences",
+          "poster": "https://image.tmdb.org/t/p/w500/g0zCELYfBfSv8TOGC13buABVN53.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 27374,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g0zCELYfBfSv8TOGC13buABVN53.jpg"
+        },
+        {
+          "title": "Kairo",
+          "year": 2001,
+          "slug": "Original Japanese version of Pulse about technology-based horror",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Acacia",
+          "year": 2003,
+          "slug": "South Korean horror about a family adopting a mysterious child",
+          "poster": "https://image.tmdb.org/t/p/w500/SKnexycVKBKgfLFms3VUPLSLcD.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 37284,
+          "poster_url": "https://image.tmdb.org/t/p/w500/SKnexycVKBKgfLFms3VUPLSLcD.jpg"
+        },
+        {
+          "title": "Into the Mirror",
+          "year": 2003,
+          "slug": "South Korean supernatural horror set in a department store",
+          "poster": "https://image.tmdb.org/t/p/w500/9UhqqdaAkbMuRq9oFUFPszOT2io.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 27316,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9UhqqdaAkbMuRq9oFUFPszOT2io.jpg"
+        },
+        {
+          "title": "Phone",
+          "year": 2002,
+          "slug": "South Korean horror about a cursed cell phone number",
+          "poster": "https://image.tmdb.org/t/p/w500/r6lIwPKVDa6Q76qH2TbIBqPhXL3.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 1817,
+          "poster_url": "https://image.tmdb.org/t/p/w500/r6lIwPKVDa6Q76qH2TbIBqPhXL3.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "The Bridge",
+    "year": 1959,
+    "initialSlug": "Wehrmacht officers plot to destroy strategic bridge",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/jCg5NqSdUFB1S6iJu3jyXwHOE8d.jpg",
+    "initialStreaming": null,
+    "tmdbId": 1566,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Die Brücke** (1959) stands as one of the most devastating anti-war films ever made. Director Bernhard Wicki crafts a gut-wrenching story of seven German teenagers defending a meaningless bridge in the final days of WWII. The film's power comes from showing war through the eyes of naive youth, similar to how **All Quiet on the Western Front** (1930) stripped away military glamour. Like **Come and See** (1985) and **Ivan's Childhood** (1962), it portrays war's destruction of innocence with unflinching clarity."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Die Brücke",
+            "year": 1959,
+            "slug": "Seven German teenagers are drafted to defend a bridge in the final days of WWII, with tragic consequences",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": null
+          },
+          {
+            "title": "All Quiet on the Western Front",
+            "year": 1930,
+            "slug": "Young German soldiers face the brutal reality of WWI trench warfare",
+            "poster": "https://image.tmdb.org/t/p/w500/1wZUB08igw8iLUgF1r4T6aJD65b.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 143,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1wZUB08igw8iLUgF1r4T6aJD65b.jpg"
+          },
+          {
+            "title": "Come and See",
+            "year": 1985,
+            "slug": "Harrowing Soviet film following a teenage boy through Nazi-occupied Belarus",
+            "poster": "https://image.tmdb.org/t/p/w500/qNbMsKVzigERgJUbwf8pKyZogpb.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 25237,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qNbMsKVzigERgJUbwf8pKyZogpb.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Wicki's documentary background shows in the film's stark realism. The final battle sequence, lasting nearly 30 minutes, captures combat chaos with a raw immediacy that influenced later films like **Saving Private Ryan** (1998). The bridge becomes both literal setting and metaphor for the crossing from childhood to death. Each boy's individual personality is carefully established before their inevitable destruction, making their losses feel personal rather than statistical."
+      },
+      {
+        "type": "text",
+        "content": "The film's critique of Nazi fanaticism and military indoctrination remains painfully relevant. Like **Forbidden Games** (1952) and **Germany Year Zero** (1948), it shows how totalitarian regimes exploit youth's idealism. The teacher who questions sending children to die provides the film's moral center, echoing similar voices of reason in **The Last Bridge** (1954) and **The Tin Drum** (1979). SUBHEAD: Impact on War Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Tin Drum",
+            "year": 1979,
+            "slug": "Surreal tale of a boy who refuses to grow up in Nazi Germany",
+            "poster": "https://image.tmdb.org/t/p/w500/tm408GMyQqfqFJ7MKCkwc5uQ3wi.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 659,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tm408GMyQqfqFJ7MKCkwc5uQ3wi.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Die Brücke** revolutionized war films by focusing on victims rather than heroes. Its influence can be seen in later works like **The Boy in the Striped Pajamas** (2008) and **Empire of the Sun** (1987). The film's emphasis on futile sacrifice and waste of youth created a template for anti-war storytelling that continues through modern films like **Jojo Rabbit** (2019)."
+      }
+    ],
+    "exploreFurther": [
+      "German New Cinema and Post-War Processing",
+      "Child Soldiers in World Cinema",
+      "Documentary Techniques in War Films",
+      "The Bridge as Anti-War Symbol in Cinema",
+      "Youth Indoctrination in WWII Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Ivan's Childhood",
+          "year": 1962,
+          "slug": "Tarkovsky's haunting tale of a young Soviet spy during WWII",
+          "poster": "https://image.tmdb.org/t/p/w500/vmRWSLP1DE9WTta0hfzIafJ0dID.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 31442,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vmRWSLP1DE9WTta0hfzIafJ0dID.jpg"
+        },
+        {
+          "title": "The Last Bridge",
+          "year": 1954,
+          "slug": "A German army doctor questions her loyalty while helping Yugoslav partisans",
+          "poster": "https://image.tmdb.org/t/p/w500/euG8g6N9vOiYDjpCghLAhzEnNAg.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 73052,
+          "poster_url": "https://image.tmdb.org/t/p/w500/euG8g6N9vOiYDjpCghLAhzEnNAg.jpg"
+        },
+        {
+          "title": "Germany Year Zero",
+          "year": 1948,
+          "slug": "Neorealist portrait of a boy in post-war Berlin",
+          "poster": "https://image.tmdb.org/t/p/w500/sdxegsjrrvujXvv2GLPENyDlWDI.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 8016,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sdxegsjrrvujXvv2GLPENyDlWDI.jpg"
+        },
+        {
+          "title": "Forbidden Games",
+          "year": 1952,
+          "slug": "Two children create their own ritual world during wartime",
+          "poster": "https://image.tmdb.org/t/p/w500/nby91GNVXQAv1NmKvqlpEEdhcMQ.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 5000,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nby91GNVXQAv1NmKvqlpEEdhcMQ.jpg"
+        },
+        {
+          "title": "The Bridge on the River Kwai",
+          "year": 1957,
+          "slug": "British POWs build a bridge for their Japanese captors",
+          "poster": "https://image.tmdb.org/t/p/w500/7paXMt2e3Tr5dLmEZOGgFEn2Vo7.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 826,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7paXMt2e3Tr5dLmEZOGgFEn2Vo7.jpg"
+        },
+        {
+          "title": "Europa Europa",
+          "year": 1990,
+          "slug": "Jewish teenager poses as elite Hitler Youth to survive",
+          "poster": "https://image.tmdb.org/t/p/w500/hkh3GzBHquwB5nkdEeQUbFSo5Ju.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 8996,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hkh3GzBHquwB5nkdEeQUbFSo5Ju.jpg"
+        },
+        {
+          "title": "Stalingrad",
+          "year": 1993,
+          "slug": "German soldiers face brutal urban warfare",
+          "poster": "https://image.tmdb.org/t/p/w500/rB78VDAOK94KJWp9ofgE3GSQEor.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 11101,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rB78VDAOK94KJWp9ofgE3GSQEor.jpg"
+        },
+        {
+          "title": "Ballad of a Soldier",
+          "year": 1959,
+          "slug": "Young Russian soldier's journey home during WWII",
+          "poster": "https://image.tmdb.org/t/p/w500/9teeqzdIgPkWsykRapYkqhdefmm.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 46592,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9teeqzdIgPkWsykRapYkqhdefmm.jpg"
+        },
+        {
+          "title": "The Cranes Are Flying",
+          "year": 1957,
+          "slug": "Soviet war drama about love and loss",
+          "poster": "https://image.tmdb.org/t/p/w500/foXYOdXEJ0rvtTDo4LLnsUnvPLB.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 38360,
+          "poster_url": "https://image.tmdb.org/t/p/w500/foXYOdXEJ0rvtTDo4LLnsUnvPLB.jpg"
+        },
+        {
+          "title": "Land of Mine",
+          "year": 2015,
+          "slug": "German POWs forced to clear Danish beaches of mines",
+          "poster": "https://image.tmdb.org/t/p/w500/7TOYH2VDnYbXpBKlrkdQZUSC3Du.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 335578,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7TOYH2VDnYbXpBKlrkdQZUSC3Du.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

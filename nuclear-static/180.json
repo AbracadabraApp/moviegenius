@@ -1,0 +1,179 @@
+{
+  "props": {
+    "title": "Minority Report",
+    "year": 2002,
+    "initialSlug": "Cop hunts future crimes until he's the next target",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/ccqpHq5tk5W4ymbSbuoy4uYOxFI.jpg",
+    "initialStreaming": "Netflix",
+    "tmdbId": 180,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Minority Report** (2002) stands as Steven Spielberg's most compelling exploration of free will versus determinism. The film's prescient take on predictive policing and surveillance technology feels more relevant today than on release. Spielberg merges neo-noir aesthetics with groundbreaking visual effects, particularly in the gesture-based computer interfaces that influenced real-world tech development. Like **Blade Runner** (1982) and **Total Recall** (1990), it adapts Philip K. Dick's paranoid worldview while adding sophisticated layers about privacy and accountability in a technologically advanced society."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "A Scanner Darkly",
+            "year": 2006,
+            "slug": "Rotoscoped adaptation of Philip K. Dick's semi-autobiographical novel about surveillance and identity",
+            "poster": "https://image.tmdb.org/t/p/w500/lUKudOpHICDj6A6SO7DdaZM4W48.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 3509,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lUKudOpHICDj6A6SO7DdaZM4W48.jpg"
+          },
+          {
+            "title": "Gattaca",
+            "year": 1997,
+            "slug": "Genetic determinism and free will clash in this elegant sci-fi thriller about a man fighting his predetermined fate",
+            "poster": "https://image.tmdb.org/t/p/w500/eSKr5Fl1MEC7zpAXaLWBWSBjgJq.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 782,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eSKr5Fl1MEC7zpAXaLWBWSBjgJq.jpg"
+          },
+          {
+            "title": "Looper",
+            "year": 2012,
+            "slug": "Time-traveling assassins face moral dilemmas about changing the future",
+            "poster": "https://image.tmdb.org/t/p/w500/sNjL6SqErDBE8OUZlrDLkexfsCj.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 59967,
+            "poster_url": "https://image.tmdb.org/t/p/w500/sNjL6SqErDBE8OUZlrDLkexfsCj.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's visual language revolutionized how we imagine future tech interfaces. Production designer Alex McDowell and John Underkoffler created the gesture-based computing system that later influenced everything from the Xbox Kinect to modern VR controllers. This attention to practical futurism aligns with other technically ambitious sci-fi like **Children of Men** (2006) and **Ex Machina** (2014), where the technology feels both advanced and believable."
+      },
+      {
+        "type": "text",
+        "content": "The PreCrime concept taps into ongoing debates about predictive policing and algorithmic justice. Like **Brazil** (1985) and **THX 1138** (1971), the film questions the human cost of a supposedly perfect system. Tom Cruise's nuanced performance as John Anderton adds emotional weight to these philosophical questions, particularly in scenes exploring his personal trauma and addiction. SUBHEAD: The Impact on Modern Surveillance Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Dark City",
+            "year": 1998,
+            "slug": "A man discovers his reality is controlled by mysterious beings in this neo-noir sci-fi",
+            "poster": "https://image.tmdb.org/t/p/w500/tNPEGju4DpTdbhBphNmZoEi9Bd3.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 2666,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tNPEGju4DpTdbhBphNmZoEi9Bd3.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Minority Report** (2002) predicted many surveillance technologies now commonplace - from targeted advertising to facial recognition. Its influence echoes through films like **Eagle Eye** (2008) and **Person of Interest** (2011-2016), which explore similar themes of predictive technology gone awry. The pristine aesthetic of PreCrime's headquarters inspired countless depictions of high-tech law enforcement facilities, seen in everything from **RoboCop** (2014) to **Captain America: The Winter Soldier** (2014)."
+      }
+    ],
+    "exploreFurther": [
+      "The development of PreCrime's gesture interface and its influence on real-world technology",
+      "Philip K. Dick's original short story versus Spielberg's adaptation",
+      "The film's influence on modern surveillance thriller conventions",
+      "Spielberg's shift from optimistic sci-fi to darker technological critique",
+      "The practical effects and cinematography techniques used to create 2054 Washington D.C."
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Equilibrium",
+          "year": 2002,
+          "slug": "Dystopian society eliminates emotions through mandatory drugs",
+          "poster": "https://image.tmdb.org/t/p/w500/eW3YrxOh3rd6PnRgMSftYoflvfe.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 7299,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eW3YrxOh3rd6PnRgMSftYoflvfe.jpg"
+        },
+        {
+          "title": "The Island",
+          "year": 2005,
+          "slug": "Clones discover the dark truth about their existence",
+          "poster": "https://image.tmdb.org/t/p/w500/juSBGCTK463as9clAea4mE2N3s0.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 1635,
+          "poster_url": "https://image.tmdb.org/t/p/w500/juSBGCTK463as9clAea4mE2N3s0.jpg"
+        },
+        {
+          "title": "Paycheck",
+          "year": 2003,
+          "slug": "Another Philip K. Dick adaptation about memory and predetermined fate",
+          "poster": "https://image.tmdb.org/t/p/w500/icoa6KslkhXKnxLreZ6vXnDimpQ.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9620,
+          "poster_url": "https://image.tmdb.org/t/p/w500/icoa6KslkhXKnxLreZ6vXnDimpQ.jpg"
+        },
+        {
+          "title": "Source Code",
+          "year": 2011,
+          "slug": "Soldier repeatedly relives 8 minutes to prevent a terrorist attack",
+          "poster": "https://image.tmdb.org/t/p/w500/nTr0lvAzeQmUjgSgDEHTJpnrxTz.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 45612,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nTr0lvAzeQmUjgSgDEHTJpnrxTz.jpg"
+        },
+        {
+          "title": "Predestination",
+          "year": 2014,
+          "slug": "Time-traveling agent pursues a terrorist through paradoxical timeline",
+          "poster": "https://image.tmdb.org/t/p/w500/38Xr1JnV1ZcLQ55zmdSp6n475cZ.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 206487,
+          "poster_url": "https://image.tmdb.org/t/p/w500/38Xr1JnV1ZcLQ55zmdSp6n475cZ.jpg"
+        },
+        {
+          "title": "The Adjustment Bureau",
+          "year": 2011,
+          "slug": "Man fights mysterious organization controlling humanity's fate",
+          "poster": "https://image.tmdb.org/t/p/w500/5ZzeR8iz1nEFLp94OBnbakLZawo.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 38050,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5ZzeR8iz1nEFLp94OBnbakLZawo.jpg"
+        },
+        {
+          "title": "In Time",
+          "year": 2011,
+          "slug": "Future society uses time as currency",
+          "poster": "https://image.tmdb.org/t/p/w500/3Mwj2sIONQckOZP3YwsUXF7U5I4.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 49530,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3Mwj2sIONQckOZP3YwsUXF7U5I4.jpg"
+        },
+        {
+          "title": "The Signal",
+          "year": 2014,
+          "slug": "Students encounter mysterious forces during a road trip",
+          "poster": "https://image.tmdb.org/t/p/w500/r5v3gzfxtnO9bKebs5Ujee6LLP1.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 242095,
+          "poster_url": "https://image.tmdb.org/t/p/w500/r5v3gzfxtnO9bKebs5Ujee6LLP1.jpg"
+        },
+        {
+          "title": "Inception",
+          "year": 2010,
+          "slug": "Dream infiltrators question reality and free will",
+          "poster": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 27205,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg"
+        },
+        {
+          "title": "Vanilla Sky",
+          "year": 2001,
+          "slug": "Another Tom Cruise reality-bending thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/cAh2pCiNPftsY3aSqJuIOde7uWr.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 1903,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cAh2pCiNPftsY3aSqJuIOde7uWr.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

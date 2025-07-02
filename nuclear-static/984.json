@@ -1,0 +1,179 @@
+{
+  "props": {
+    "title": "Dirty Harry",
+    "year": 1971,
+    "initialSlug": "The city's only answer.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/scl2JDHzYoIEs5xyYy5ITCfyY0G.jpg",
+    "initialStreaming": null,
+    "tmdbId": 984,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Dirty Harry** (1971) revolutionized the police thriller, establishing Clint Eastwood's Harry Callahan as the definitive rogue cop archetype. The film's gritty San Francisco setting, unflinching violence, and controversial stance on police methods sparked intense debate while creating a new template for urban crime films. Director Don Siegel's taut direction and the iconic .44 Magnum (\"the most powerful handgun in the world\") became instantly memorable elements that influenced decades of cop movies, from **Lethal Weapon** (1987) to **Training Day** (2001)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Magnum Force",
+            "year": 1973,
+            "slug": "The first Dirty Harry sequel sees Callahan investigating vigilante cops within his own department",
+            "poster": "https://image.tmdb.org/t/p/w500/1uX1uzn09seCftG3rTGLPyFXxV6.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 10648,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1uX1uzn09seCftG3rTGLPyFXxV6.jpg"
+          },
+          {
+            "title": "The French Connection",
+            "year": 1971,
+            "slug": "Gene Hackman's brutal cop Popeye Doyle pursues drug dealers through NYC streets",
+            "poster": "https://image.tmdb.org/t/p/w500/5XSGvIKl2yPvOkieFjc3rzLw7x0.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 1051,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5XSGvIKl2yPvOkieFjc3rzLw7x0.jpg"
+          },
+          {
+            "title": "Bullitt",
+            "year": 1968,
+            "slug": "Steve McQueen's San Francisco detective pioneered the gritty cop aesthetic",
+            "poster": "https://image.tmdb.org/t/p/w500/2ffzF1WmeXtH420fSUoCrecFvDA.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 916,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2ffzF1WmeXtH420fSUoCrecFvDA.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's impact on police procedurals can't be overstated. Before Dirty Harry, movie cops largely played by the rules. After Callahan's \"Do you feel lucky, punk?\" moment, antiheroes dominated law enforcement narratives. **The Dead Pool** (1988), **Cobra** (1986), and **Raw Deal** (1986) all followed the Dirty Harry template of the cop who breaks rules to catch criminals. This shift reflected growing urban anxiety and distrust of traditional institutions in 1970s America."
+      },
+      {
+        "type": "text",
+        "content": "Cinematographer Bruce Surtees created a distinctive visual style that influenced crime cinema for decades. His high-contrast lighting and use of shadows established a neo-noir aesthetic that later appeared in films like **To Live and Die in L.A.** (1985) and **Colors** (1988). The chase sequences through San Francisco's steep streets set new standards for urban action, building on what **Bullitt** (1968) started. SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Sudden Impact",
+            "year": 1983,
+            "slug": "The darkest Dirty Harry sequel features Sondra Locke as a rape victim seeking revenge",
+            "poster": "https://image.tmdb.org/t/p/w500/fSADY0EEM7ntpK5IwumcGS4UNNE.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 10650,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fSADY0EEM7ntpK5IwumcGS4UNNE.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While the original spawned four sequels, Dirty Harry's real legacy lives in the countless tough-cop films it inspired. **Walking Tall** (1973) borrowed its vigilante justice themes. **Death Wish** (1974) took the concept even further with Charles Bronson's civilian vigilante. Modern films like **End of Watch** (2012) and **The Dark Knight** (2008) still grapple with questions of justice versus law that Dirty Harry first posed. Even parodies like **Last Action Hero** (1993) specifically reference the film's iconic moments."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Police Brutality in Cinema",
+      "San Francisco as a Character in 1970s Crime Films",
+      "Don Siegel's Influence on Action Direction",
+      "The Cultural Impact of Clint Eastwood's Antihero Persona",
+      "Urban Crime Films of the 1970s"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Enforcer",
+          "year": 1976,
+          "slug": "Third Dirty Harry film pairs Callahan with a female partner",
+          "poster": "https://image.tmdb.org/t/p/w500/l0W85fpnsfnpLSSF3D6bKKlH1dD.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10649,
+          "poster_url": "https://image.tmdb.org/t/p/w500/l0W85fpnsfnpLSSF3D6bKKlH1dD.jpg"
+        },
+        {
+          "title": "48 Hrs.",
+          "year": 1982,
+          "slug": "Tough cop teams with convict in groundbreaking buddy cop film",
+          "poster": "https://image.tmdb.org/t/p/w500/aDzOj4a9HvgRjjAEgwXyztCWVXq.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 150,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aDzOj4a9HvgRjjAEgwXyztCWVXq.jpg"
+        },
+        {
+          "title": "Serpico",
+          "year": 1973,
+          "slug": "Al Pacino stars as real-life honest cop fighting corruption",
+          "poster": "https://image.tmdb.org/t/p/w500/pRagfd10PPWryFRSzLPIivfAXHJ.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 9040,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pRagfd10PPWryFRSzLPIivfAXHJ.jpg"
+        },
+        {
+          "title": "The Seven-Ups",
+          "year": 1973,
+          "slug": "Roy Scheider leads elite NYPD unit in gritty pursuit",
+          "poster": "https://image.tmdb.org/t/p/w500/xmpzuTWUEiVPsRz7kKXijNISUNq.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 32080,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xmpzuTWUEiVPsRz7kKXijNISUNq.jpg"
+        },
+        {
+          "title": "McQ",
+          "year": 1974,
+          "slug": "John Wayne's attempt at Dirty Harry-style cop thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/l2s6ti9dFmqqxd9HvWmegAsC92p.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 26185,
+          "poster_url": "https://image.tmdb.org/t/p/w500/l2s6ti9dFmqqxd9HvWmegAsC92p.jpg"
+        },
+        {
+          "title": "The New Centurions",
+          "year": 1972,
+          "slug": "George C. Scott stars in realistic LAPD drama",
+          "poster": "https://image.tmdb.org/t/p/w500/f0ve9VvbFKo2LA0HhVbLE9vazCm.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 37608,
+          "poster_url": "https://image.tmdb.org/t/p/w500/f0ve9VvbFKo2LA0HhVbLE9vazCm.jpg"
+        },
+        {
+          "title": "The Taking of Pelham One Two Three",
+          "year": 1974,
+          "slug": "NYC transit cop versus subway hijackers",
+          "poster": "https://image.tmdb.org/t/p/w500/vNhywp9w1DVG6BytxKp4kjtaaGC.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 8333,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vNhywp9w1DVG6BytxKp4kjtaaGC.jpg"
+        },
+        {
+          "title": "Report to the Commissioner",
+          "year": 1975,
+          "slug": "Rookie cop navigates corrupt NYPD system",
+          "poster": "https://image.tmdb.org/t/p/w500/k0G33xOTiu4TTGmsRt0basMSck7.jpg",
+          "initialStreaming": "Pluto TV",
+          "tmdb_id": 42262,
+          "poster_url": "https://image.tmdb.org/t/p/w500/k0G33xOTiu4TTGmsRt0basMSck7.jpg"
+        },
+        {
+          "title": "Busting",
+          "year": 1974,
+          "slug": "Vice squad detectives target LA crime boss",
+          "poster": "https://image.tmdb.org/t/p/w500/lNmeicnGq3nvkMQoBwig6Yi1fNn.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 84209,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lNmeicnGq3nvkMQoBwig6Yi1fNn.jpg"
+        },
+        {
+          "title": "The Laughing Policeman",
+          "year": 1973,
+          "slug": "San Francisco detective investigates bus massacre",
+          "poster": "https://image.tmdb.org/t/p/w500/nwA2I2WZOHLNq4gwfPQ5rgxV8uS.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 29735,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nwA2I2WZOHLNq4gwfPQ5rgxV8uS.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

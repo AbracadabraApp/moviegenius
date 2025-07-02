@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "Frida",
+    "year": 2002,
+    "initialSlug": "Painter Frida Kahlo's passionate art and tumultuous life",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/a4hgR6aKoohB6MHni171jbi9BkU.jpg",
+    "initialStreaming": null,
+    "tmdbId": 1360,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Frida** (2002) revolutionized the artist biopic through Salma Hayek's fierce embodiment of Frida Kahlo and Julie Taymor's boldly surreal direction. The film seamlessly weaves Kahlo's artwork into living tableaux, transforming her paintings into breathing cinematography. Like **Loving Vincent** (2017) and **Pollock** (2000), it captures an artist's inner vision while examining their tumultuous personal life. Taymor's theatrical background infuses magical realism throughout, particularly in scenes where Kahlo's pain manifests as haunting visual metaphors."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Frida",
+            "year": 2002,
+            "slug": "Salma Hayek embodies Mexican artist Frida Kahlo in this visually stunning biopic about art, pain, and passion",
+            "poster": "https://image.tmdb.org/t/p/w500/a4hgR6aKoohB6MHni171jbi9BkU.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 1360,
+            "poster_url": "https://image.tmdb.org/t/p/w500/a4hgR6aKoohB6MHni171jbi9BkU.jpg"
+          },
+          {
+            "title": "Basquiat",
+            "year": 1996,
+            "slug": "Jeffrey Wright stars as Jean-Michel Basquiat in this raw look at the 1980s NYC art scene",
+            "poster": "https://image.tmdb.org/t/p/w500/hNjjGGnHrLILwFiEwGESWD6QRCy.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 549,
+            "poster_url": "https://image.tmdb.org/t/p/w500/hNjjGGnHrLILwFiEwGESWD6QRCy.jpg"
+          },
+          {
+            "title": "Big Eyes",
+            "year": 2014,
+            "slug": "Tim Burton directs Amy Adams in the true story of Margaret Keane's fight for recognition of her artwork",
+            "poster": "https://image.tmdb.org/t/p/w500/203HAjJcLMl7xThcTqZx4zmEGcV.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 87093,
+            "poster_url": "https://image.tmdb.org/t/p/w500/203HAjJcLMl7xThcTqZx4zmEGcV.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film revolutionized how cinema portrays female artists, following the path of **Artemisia** (1997) while influencing later works like **Portrait of a Lady on Fire** (2019). Unlike sanitized biopics, **Frida** fearlessly explores sexuality, disability, and political conviction. The complex relationship between Kahlo and Diego Rivera echoes through other artist couple stories like **Georgia O'Keeffe** (2009), showing how creative partnerships can both nurture and destroy. SUBHEAD: Visual Innovation in Artist Biopics"
+      },
+      {
+        "type": "text",
+        "content": "Taymor's direction breaks new ground in representing an artist's imagination on screen. While **Vincent & Theo** (1990) used careful composition to reflect Van Gogh's style, **Frida** literally animates Kahlo's paintings. This technique influenced later films like **At Eternity's Gate** (2018), where Willem Dafoe's Van Gogh experiences reality through an artist's heightened perception. The film's Mexican folk art aesthetics and magical realism created a template for culturally specific artist stories."
+      }
+    ],
+    "exploreFurther": [
+      "The evolution of magical realism in cinema and its roots in Latin American art",
+      "Julie Taymor's theatrical techniques adapted for film",
+      "Representation of chronic pain and disability in biopics",
+      "The challenges of portraying real artists' creative processes",
+      "Mexican modernism and its influence on international cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Surviving Picasso",
+          "year": 1996,
+          "slug": "Anthony Hopkins portrays Pablo Picasso's volatile relationships",
+          "poster": "https://image.tmdb.org/t/p/w500/olcQOdg54uBYDUkZbgw2FFTBaZI.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 41843,
+          "poster_url": "https://image.tmdb.org/t/p/w500/olcQOdg54uBYDUkZbgw2FFTBaZI.jpg"
+        },
+        {
+          "title": "Camille Claudel",
+          "year": 1988,
+          "slug": "Isabelle Adjani stars as Rodin's tragic protégée",
+          "poster": "https://image.tmdb.org/t/p/w500/iE32uvoYS0z1zEMwKFgCOkkDjYk.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 11709,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iE32uvoYS0z1zEMwKFgCOkkDjYk.jpg"
+        },
+        {
+          "title": "Mr. Turner",
+          "year": 2014,
+          "slug": "Timothy Spall embodies British painter J.M.W. Turner",
+          "poster": "https://image.tmdb.org/t/p/w500/rnVhl1PFSOoW5c6UhZJZt5TV98p.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 245700,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rnVhl1PFSOoW5c6UhZJZt5TV98p.jpg"
+        },
+        {
+          "title": "Séraphine",
+          "year": 2008,
+          "slug": "The true story of French primitive painter Séraphine de Senlis",
+          "poster": "https://image.tmdb.org/t/p/w500/nSA2iRp6BxhqDPzJsdk6CXALgjr.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 14415,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nSA2iRp6BxhqDPzJsdk6CXALgjr.jpg"
+        },
+        {
+          "title": "The Danish Girl",
+          "year": 2015,
+          "slug": "Eddie Redmayne portrays transgender artist Lili Elbe",
+          "poster": "https://image.tmdb.org/t/p/w500/mXZZIacI5FC8thzSC0lgQBQ2uAX.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 306819,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mXZZIacI5FC8thzSC0lgQBQ2uAX.jpg"
+        },
+        {
+          "title": "Carrington",
+          "year": 1995,
+          "slug": "Emma Thompson stars as painter Dora Carrington",
+          "poster": "https://image.tmdb.org/t/p/w500/8NmeBTkC4UQa8XT2GGsBN2R8Bqo.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 47018,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8NmeBTkC4UQa8XT2GGsBN2R8Bqo.jpg"
+        },
+        {
+          "title": "Moulin Rouge",
+          "year": 2001,
+          "slug": "Stylized vision of artists in Belle Époque Paris",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Lust for Life",
+          "year": 1956,
+          "slug": "Kirk Douglas portrays Vincent van Gogh",
+          "poster": "https://image.tmdb.org/t/p/w500/rlK3LG3W41eF3N1tk0SEM7Dln2x.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 29592,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rlK3LG3W41eF3N1tk0SEM7Dln2x.jpg"
+        },
+        {
+          "title": "Klimt",
+          "year": 2006,
+          "slug": "John Malkovich stars as Gustav Klimt",
+          "poster": "https://image.tmdb.org/t/p/w500/k23zlYZptToVRMJrG7KdKSGTL6o.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 29291,
+          "poster_url": "https://image.tmdb.org/t/p/w500/k23zlYZptToVRMJrG7KdKSGTL6o.jpg"
+        },
+        {
+          "title": "The Agony and the Ecstasy",
+          "year": 1965,
+          "slug": "Charlton Heston as Michelangelo",
+          "poster": "https://image.tmdb.org/t/p/w500/4ZiwyXtyxYDmMnNiVemCPgxY8X6.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 36815,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4ZiwyXtyxYDmMnNiVemCPgxY8X6.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,158 @@
+{
+  "props": {
+    "title": "Bordertown",
+    "year": 1935,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/uqQiWQwIdD7JydpNglrBlIO4YAT.jpg",
+    "initialStreaming": null,
+    "tmdbId": 26323,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Bordertown** (1935) stands as a pivotal pre-Code film that boldly tackles racial discrimination and class mobility through Paul Muni's powerful portrayal of Johnny Ramirez, a Mexican-American lawyer fighting against systemic prejudice. The film shares thematic DNA with other social justice dramas of the era like **I Am a Fugitive from a Chain Gang** (1932) and anticipates later Mexican-American representation in classics like **Salt of the Earth** (1954). Director Archie Mayo pulls no punches in depicting the xenophobia and barriers faced by Mexican-Americans, though some stereotyping reflects the period's limitations."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Touch of Evil",
+            "year": 1958,
+            "slug": "Orson Welles' noir masterpiece set on the Mexican border, featuring Charlton Heston as a Mexican official",
+            "poster": "https://image.tmdb.org/t/p/w500/1pvRgmfBaoMczIJBOi9gCOZ4FMC.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 1480,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1pvRgmfBaoMczIJBOi9gCOZ4FMC.jpg"
+          },
+          {
+            "title": "Giant",
+            "year": 1956,
+            "slug": "Epic Texas tale addressing prejudice against Mexican-Americans with Rock Hudson and Elizabeth Taylor",
+            "poster": "https://image.tmdb.org/t/p/w500/oQ1Arue52pFLSvvwfcNTy16hTCG.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 1712,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oQ1Arue52pFLSvvwfcNTy16hTCG.jpg"
+          },
+          {
+            "title": "The Ring",
+            "year": 1927,
+            "slug": "Alfred Hitchcock's silent film about a Mexican boxer facing discrimination in London",
+            "poster": "https://image.tmdb.org/t/p/w500/VeNRpyspVlJzkrNAyszdGtmy9e.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 36056,
+            "poster_url": "https://image.tmdb.org/t/p/w500/VeNRpyspVlJzkrNAyszdGtmy9e.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of social mobility through legal profession was groundbreaking for its time, predating similar themes in **Gentleman's Agreement** (1947) and **To Kill a Mockingbird** (1962). Paul Muni's intense performance as Johnny Ramirez builds on his transformative work in **Scarface** (1932), bringing dignity and complexity to a role that could have easily fallen into caricature. Bette Davis delivers a haunting supporting turn that elevates the melodramatic elements. SUBHEAD: Border Cinema and Cultural Identity"
+      },
+      {
+        "type": "text",
+        "content": "**Bordertown** established important visual and narrative templates for depicting the U.S.-Mexico border region that influenced films like **The Treasure of the Sierra Madre** (1948) and **Border Incident** (1949). Its portrayal of cultural hybridity and economic struggles along the border remains relevant, echoing through modern works like **Lone Star** (1996) and **Sin Nombre** (2009). The film's atmospheric nightclub scenes and moody cinematography by Tony Gaudio helped define the visual language of border noir."
+      }
+    ],
+    "exploreFurther": [
+      "Pre-Code Hollywood's Treatment of Race Relations",
+      "Paul Muni's Social Justice Films",
+      "The Evolution of Mexican-American Representation in Classic Hollywood",
+      "Border Noir as a Distinct Film Style",
+      "Archie Mayo's Directorial Techniques"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Blood and Sand",
+          "year": 1941,
+          "slug": "Tyrone Power stars as a Mexican bullfighter facing class prejudice",
+          "poster": "https://image.tmdb.org/t/p/w500/1cp4d9Mwz1IxZWcfKq0D53oVD0x.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 44399,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1cp4d9Mwz1IxZWcfKq0D53oVD0x.jpg"
+        },
+        {
+          "title": "The Lawless",
+          "year": 1950,
+          "slug": "Drama about prejudice against Mexican-American farm workers",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Right Cross",
+          "year": 1950,
+          "slug": "Boxing drama addressing Mexican-American identity with Ricardo Montalban",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Magnificent Seven",
+          "year": 1960,
+          "slug": "Western featuring Mexican villagers and American gunfighters",
+          "poster": "https://image.tmdb.org/t/p/w500/e5ToxOyJwuZD4VOfI0qEn5uIjeJ.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 966,
+          "poster_url": "https://image.tmdb.org/t/p/w500/e5ToxOyJwuZD4VOfI0qEn5uIjeJ.jpg"
+        },
+        {
+          "title": "The Ballad of Gregorio Cortez",
+          "year": 1982,
+          "slug": "True story of Mexican-American farmer's struggle for justice",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "El Norte",
+          "year": 1983,
+          "slug": "Landmark film about Guatemalan siblings seeking American Dream",
+          "poster": "https://image.tmdb.org/t/p/w500/bgpz7gTpWmmBb26CcjVtiPE7Kfo.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 17435,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bgpz7gTpWmmBb26CcjVtiPE7Kfo.jpg"
+        },
+        {
+          "title": "La Bamba",
+          "year": 1987,
+          "slug": "Biopic of Mexican-American rock star Ritchie Valens",
+          "poster": "https://image.tmdb.org/t/p/w500/6Znulqtc7cdqlUC69HGf26Ef5fi.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 16620,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6Znulqtc7cdqlUC69HGf26Ef5fi.jpg"
+        },
+        {
+          "title": "Stand and Deliver",
+          "year": 1988,
+          "slug": "True story of Mexican-American math teacher Jaime Escalante",
+          "poster": "https://image.tmdb.org/t/p/w500/A9pfzwk02iNl6i9wyk8lNcBkvc.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 29154,
+          "poster_url": "https://image.tmdb.org/t/p/w500/A9pfzwk02iNl6i9wyk8lNcBkvc.jpg"
+        },
+        {
+          "title": "Zoot Suit",
+          "year": 1981,
+          "slug": "Musical drama about Mexican-American experience in 1940s LA",
+          "poster": "https://image.tmdb.org/t/p/w500/itSXh6MxBZWvQ7xhSxusk2RwjfM.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 76397,
+          "poster_url": "https://image.tmdb.org/t/p/w500/itSXh6MxBZWvQ7xhSxusk2RwjfM.jpg"
+        },
+        {
+          "title": "My Family",
+          "year": 1995,
+          "slug": "Multi-generational saga of Mexican-American family",
+          "poster": "https://image.tmdb.org/t/p/w500/i6t6QF5QyUd3UAQ8JM8eVU1169D.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 38722,
+          "poster_url": "https://image.tmdb.org/t/p/w500/i6t6QF5QyUd3UAQ8JM8eVU1169D.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

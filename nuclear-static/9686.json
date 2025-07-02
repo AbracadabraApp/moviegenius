@@ -1,0 +1,197 @@
+{
+  "props": {
+    "title": "New York Stories",
+    "year": 1989,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/sB9bLA8WHyhi9sBCFD28pGfewuU.jpg",
+    "initialStreaming": null,
+    "tmdbId": 9686,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**New York Stories** (1989) represents a fascinating anthology experiment uniting three legendary directors - Martin Scorsese, Francis Ford Coppola, and Woody Allen - each delivering their distinct vision of New York City. Scorsese's \"Life Lessons\" stars Nick Nolte as a tortured artist, echoing the intensity of his **After Hours** (1985) while exploring creative obsession. Coppola's \"Life Without Zoe\" channels the whimsy of **The Secret Garden** (1993) through a privileged child's Manhattan adventures. Allen's \"Oedipus Wrecks\" delivers his signature neurotic comedy about an overbearing Jewish mother who magically appears in the sky over Manhattan, reminiscent of his work in **Manhattan** (1979) but with a supernatural twist."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Life Lessons",
+            "year": 1989,
+            "slug": "Scorsese's segment about an aging painter's obsession with his assistant",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": null
+          },
+          {
+            "title": "Life Without Zoe",
+            "year": 1989,
+            "slug": "Coppola's fairy tale about a wealthy young girl in Manhattan",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": null
+          },
+          {
+            "title": "Oedipus Wrecks",
+            "year": 1989,
+            "slug": "Allen's comedy about a lawyer haunted by his mother's ghostly presence",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The anthology format showcases how different filmmakers interpret the same city. Scorsese's segment pulses with the raw energy of downtown's art scene, while Coppola presents an Upper East Side fantasy world. Allen's contribution feels most authentically \"New York,\" continuing themes he explored in **Annie Hall** (1977) and **Hannah and Her Sisters** (1986). Together, they create a time capsule of late 1980s Manhattan, when the city straddled its gritty past and glossier future."
+      },
+      {
+        "type": "text",
+        "content": "Each segment's distinct visual style reflects its director's signature approach. Scorsese employs dynamic camera movements and intense close-ups reminiscent of **Raging Bull** (1980). Coppola opts for dreamy, saturated colors similar to his work in **Rumble Fish** (1983). Allen sticks to his classical composition style but adds surreal elements that would later influence films like **Midnight in Paris** (2011). SUBHEAD: The City as Character"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Manhattan",
+            "year": 1979,
+            "slug": "Allen's black-and-white love letter to New York City",
+            "poster": "https://image.tmdb.org/t/p/w500/k4eT3EvfxW1L9Wmt04UqJqCvCR6.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 696,
+            "poster_url": "https://image.tmdb.org/t/p/w500/k4eT3EvfxW1L9Wmt04UqJqCvCR6.jpg"
+          },
+          {
+            "title": "After Hours",
+            "year": 1985,
+            "slug": "Scorsese's surreal comedy about one night in SoHo",
+            "poster": "https://image.tmdb.org/t/p/w500/eamOBurHBu0MIxohTIVcfxmZ6Z7.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 10843,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eamOBurHBu0MIxohTIVcfxmZ6Z7.jpg"
+          },
+          {
+            "title": "Annie Hall",
+            "year": 1977,
+            "slug": "Allen's groundbreaking romantic comedy set in New York",
+            "poster": "https://image.tmdb.org/t/p/w500/dEtjPywhDbAXYjoFfhBC4U9unU7.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 703,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dEtjPywhDbAXYjoFfhBC4U9unU7.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**New York Stories** joins a rich tradition of films using New York as more than backdrop. Like **Taxi Driver** (1976) and **Wall Street** (1987), it captures specific neighborhoods and social milieus that define the city. The film's triptych structure allows viewers to experience different versions of New York - from the bohemian art world to old money sophistication to Jewish upper middle class life - creating a complex portrait of urban life."
+      },
+      {
+        "type": "text",
+        "content": "The film's influence can be seen in later anthology films like **Paris, je t'aime** (2006) and **New York, I Love You** (2008), which similarly use multiple directors to capture a city's essence. Its exploration of artistic life influenced later New York-set films like **Basquiat** (1996) and **High Art** (1998), while its portrayal of privileged Manhattan childhood echoes in **The Royal Tenenbaums** (2001)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of New York City in Woody Allen's Films",
+      "Scorsese's Artistic Characters: From Life Lessons to Age of Innocence",
+      "The Rise and Fall of the Movie Anthology Format",
+      "How 1980s Cinema Portrayed Manhattan's Social Classes",
+      "Visual Techniques in Portraying Urban Life on Film"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Sweet Smell of Success",
+          "year": 1957,
+          "slug": "Noir classic about Manhattan media manipulation",
+          "poster": "https://image.tmdb.org/t/p/w500/7xfLUISDZ1zZ8vPU5Y7j5mv0Xvc.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 976,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7xfLUISDZ1zZ8vPU5Y7j5mv0Xvc.jpg"
+        },
+        {
+          "title": "Manhattan Murder Mystery",
+          "year": 1993,
+          "slug": "Allen's comedy thriller about Upper West Side intrigue",
+          "poster": "https://image.tmdb.org/t/p/w500/axriUXXcBVZMZT8I9boo07Jgptw.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 10440,
+          "poster_url": "https://image.tmdb.org/t/p/w500/axriUXXcBVZMZT8I9boo07Jgptw.jpg"
+        },
+        {
+          "title": "Metropolitan",
+          "year": 1990,
+          "slug": "Whit Stillman's portrait of Manhattan's young socialites",
+          "poster": "https://image.tmdb.org/t/p/w500/852ZwTRj9tRxkGOT0Pu0Ep8yimk.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 15389,
+          "poster_url": "https://image.tmdb.org/t/p/w500/852ZwTRj9tRxkGOT0Pu0Ep8yimk.jpg"
+        },
+        {
+          "title": "The Squid and the Whale",
+          "year": 2005,
+          "slug": "Noah Baumbach's story of Brooklyn intellectual family",
+          "poster": "https://image.tmdb.org/t/p/w500/h4FMTKrWgwSUQTSbMnSA4ECKzl2.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 10707,
+          "poster_url": "https://image.tmdb.org/t/p/w500/h4FMTKrWgwSUQTSbMnSA4ECKzl2.jpg"
+        },
+        {
+          "title": "Do the Right Thing",
+          "year": 1989,
+          "slug": "Spike Lee's breakthrough about racial tensions in Brooklyn",
+          "poster": "https://image.tmdb.org/t/p/w500/63rmSDPahrH7C1gEFYzRuIBAN9W.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 925,
+          "poster_url": "https://image.tmdb.org/t/p/w500/63rmSDPahrH7C1gEFYzRuIBAN9W.jpg"
+        },
+        {
+          "title": "When Harry Met Sally",
+          "year": 1989,
+          "slug": "Classic romantic comedy across New York City",
+          "poster": "https://image.tmdb.org/t/p/w500/rFOiFUhTMtDetqCGClC9PIgnC1P.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 639,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rFOiFUhTMtDetqCGClC9PIgnC1P.jpg"
+        },
+        {
+          "title": "Downtown 81",
+          "year": 1981,
+          "slug": "Jean-Michel Basquiat in the downtown art scene",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "200 Cigarettes",
+          "year": 1999,
+          "slug": "New Year's Eve comedy in 1980s Manhattan",
+          "poster": "https://image.tmdb.org/t/p/w500/ssbx2Mk5ZCJWpXALuP2AdG0GFIT.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 15256,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ssbx2Mk5ZCJWpXALuP2AdG0GFIT.jpg"
+        },
+        {
+          "title": "Heights",
+          "year": 2005,
+          "slug": "Interconnected stories of Manhattan artists and performers",
+          "poster": "https://image.tmdb.org/t/p/w500/pMXCgZjJiHnXtBCdKM9WbKqYmbK.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 29080,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pMXCgZjJiHnXtBCdKM9WbKqYmbK.jpg"
+        },
+        {
+          "title": "Paris is Burning",
+          "year": 1990,
+          "slug": "Documentary about NYC's underground ball culture",
+          "poster": "https://image.tmdb.org/t/p/w500/90rCWH41mj9hjHUEy2SOHfuAOl3.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 31225,
+          "poster_url": "https://image.tmdb.org/t/p/w500/90rCWH41mj9hjHUEy2SOHfuAOl3.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,159 @@
+{
+  "props": {
+    "title": "Old Joy",
+    "year": 2006,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/AdFKZOf0LtPpGq8be9T8qsNHTbs.jpg",
+    "initialStreaming": null,
+    "tmdbId": 26518,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Old Joy** (2006) represents a pivotal moment in American independent cinema's \"mumblecore\" movement, though it transcends that label. Director Kelly Reichardt crafts a deceptively simple tale of two old friends reuniting for a weekend camping trip in Oregon's Cascade Mountains. Like Reichardt's later **Wendy and Lucy** (2008) and **First Cow** (2019), it explores male friendship and American alienation through careful observation and minimal dialogue. The film shares DNA with European slow cinema like **The Turin Horse** (2011), but remains distinctly Pacific Northwestern in its misty landscapes and ecological undertones."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Meek's Cutoff",
+            "year": 2010,
+            "slug": "Michelle Williams leads Reichardt's stark Western about lost settlers on the Oregon Trail",
+            "poster": "https://image.tmdb.org/t/p/w500/jxjLpZseFdzMBvGfTscTTpM94Yk.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 57120,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jxjLpZseFdzMBvGfTscTTpM94Yk.jpg"
+          },
+          {
+            "title": "Certain Women",
+            "year": 2016,
+            "slug": "Three intersecting stories of Montana women starring Kristen Stewart and Michelle Williams",
+            "poster": "https://image.tmdb.org/t/p/w500/1A5cWPvPnw7vY1Dfg3DSyLG0k96.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 340487,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1A5cWPvPnw7vY1Dfg3DSyLG0k96.jpg"
+          },
+          {
+            "title": "Wendy and Lucy",
+            "year": 2008,
+            "slug": "A woman and her dog struggle to survive on society's margins in the Pacific Northwest",
+            "poster": "https://image.tmdb.org/t/p/w500/cSe2AuFL6hL7EYd3jFAdsPtoaqS.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 8942,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cSe2AuFL6hL7EYd3jFAdsPtoaqS.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence rippled through 2000s independent cinema, inspiring a wave of contemplative character studies like **Into the Wild** (2007) and **All the Real Girls** (2003). Will Oldham's performance as Kurt exemplifies the era's blurring of music and film scenes, similar to Justin Vernon in **Shut Up and Play the Hits** (2012). Reichardt's minimalist approach influenced later directors like Jim Jarmusch's **Paterson** (2016) and Sean Baker's **The Florida Project** (2017). SUBHEAD: The New American Landscape Film"
+      },
+      {
+        "type": "text",
+        "content": "Reichardt pioneered a distinctly American approach to landscape cinema, different from European predecessors. While **Paris, Texas** (1984) used vast spaces to represent emotional isolation, **Old Joy** makes Oregon's forests intimate and claustrophobic. This technique influenced later films like **Leave No Trace** (2018) and **Captain Fantastic** (2016), where nature becomes both refuge and trap. The film's environmental consciousness predates the eco-anxiety of **First Reformed** (2017) and **Dark Waters** (2019)."
+      }
+    ],
+    "exploreFurther": [
+      "Kelly Reichardt's Minimalist Filmmaking Style",
+      "The Rise and Evolution of Mumblecore Cinema",
+      "Landscape as Character in American Independent Film",
+      "Will Oldham's Crossover Between Music and Cinema",
+      "Pacific Northwest as Cinematic Setting"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Drinking Buddies",
+          "year": 2013,
+          "slug": "Natural dialogue drives this story of brewery workers navigating relationships",
+          "poster": "https://image.tmdb.org/t/p/w500/iunbsMWtkwfrtRzU7hdCHhPjjJf.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 172533,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iunbsMWtkwfrtRzU7hdCHhPjjJf.jpg"
+        },
+        {
+          "title": "First Cow",
+          "year": 2019,
+          "slug": "Two friends start a baking business in 1820s Oregon Territory",
+          "poster": "https://image.tmdb.org/t/p/w500/yS41crZ1i0fFxCQbuL7I1Y1VBwm.jpg",
+          "initialStreaming": "Showtime",
+          "tmdb_id": 558582,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yS41crZ1i0fFxCQbuL7I1Y1VBwm.jpg"
+        },
+        {
+          "title": "Into the Wild",
+          "year": 2007,
+          "slug": "True story of Christopher McCandless's Alaskan adventure",
+          "poster": "https://image.tmdb.org/t/p/w500/jnLnLYP5pGDfri04gxtAqAvkHMw.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 5915,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jnLnLYP5pGDfri04gxtAqAvkHMw.jpg"
+        },
+        {
+          "title": "Paterson",
+          "year": 2016,
+          "slug": "A week in the life of a bus-driving poet in New Jersey",
+          "poster": "https://image.tmdb.org/t/p/w500/hhpXV2SntaApx411hObmopQejdV.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 370755,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hhpXV2SntaApx411hObmopQejdV.jpg"
+        },
+        {
+          "title": "The Florida Project",
+          "year": 2017,
+          "slug": "Childhood summer at a motel outside Disney World",
+          "poster": "https://image.tmdb.org/t/p/w500/eE1J6nCMw8UhsAOI6HhhItarWmN.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 394117,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eE1J6nCMw8UhsAOI6HhhItarWmN.jpg"
+        },
+        {
+          "title": "Leave No Trace",
+          "year": 2018,
+          "slug": "Father and daughter live off the grid in Oregon forests",
+          "poster": "https://image.tmdb.org/t/p/w500/sygnLx3sZV5P8M2dyaGRegHdEL1.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 443463,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sygnLx3sZV5P8M2dyaGRegHdEL1.jpg"
+        },
+        {
+          "title": "Wendy and Lucy",
+          "year": 2008,
+          "slug": "Woman and dog face hardship in the Pacific Northwest",
+          "poster": "https://image.tmdb.org/t/p/w500/cSe2AuFL6hL7EYd3jFAdsPtoaqS.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 8942,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cSe2AuFL6hL7EYd3jFAdsPtoaqS.jpg"
+        },
+        {
+          "title": "Night Moves",
+          "year": 2013,
+          "slug": "Eco-terrorists plot to blow up an Oregon dam",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "River of Grass",
+          "year": 1994,
+          "slug": "Reichardt's debut about aimless lovers in Florida",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Hannah Takes the Stairs",
+          "year": 2007,
+          "slug": "Key mumblecore film about post-college relationships",
+          "poster": "https://image.tmdb.org/t/p/w500/hy0wRpAtjed2yV1WE78gWj4BLrJ.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 5761,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hy0wRpAtjed2yV1WE78gWj4BLrJ.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

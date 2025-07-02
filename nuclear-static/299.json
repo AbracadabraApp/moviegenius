@@ -1,0 +1,197 @@
+{
+  "props": {
+    "title": "Ocean's Eleven",
+    "year": 1960,
+    "initialSlug": "Vegas heist unites 11 war buddies for casino score",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/A4R6u7SidBPVXMVzGSysCiRGTRz.jpg",
+    "initialStreaming": null,
+    "tmdbId": 299,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The original **Ocean's Eleven** (1960) defined the sleek heist movie template, showcasing the Rat Pack's effortless cool as they plot to rob five Las Vegas casinos. Frank Sinatra leads an ensemble cast including Dean Martin, Sammy Davis Jr., and Peter Lawford in a film that's more about style and personality than intricate plotting. Its influence echoes through classics like **The Thomas Crown Affair** (1968) and inspired Steven Soderbergh's slicker **Ocean's Eleven** (2001) remake. The 1960 version captures Vegas in its prime - when the Sands, Sahara, and Flamingo were still mob-connected pleasure palaces run by guys who knew Sinatra by name."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Ocean's Eleven",
+            "year": 1960,
+            "slug": "Rat Pack classic with Sinatra leading a casino heist",
+            "poster": "https://image.tmdb.org/t/p/w500/A4R6u7SidBPVXMVzGSysCiRGTRz.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 299,
+            "poster_url": "https://image.tmdb.org/t/p/w500/A4R6u7SidBPVXMVzGSysCiRGTRz.jpg"
+          },
+          {
+            "title": "The Thomas Crown Affair",
+            "year": 1968,
+            "slug": "Sophisticated thief plays cat-and-mouse with insurance investigator",
+            "poster": "https://image.tmdb.org/t/p/w500/oODAwa2AK3fXvK93GCbq7dFLZPi.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 912,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oODAwa2AK3fXvK93GCbq7dFLZPi.jpg"
+          },
+          {
+            "title": "Bob le Flambeur",
+            "year": 1956,
+            "slug": "French noir about an elegant gambler planning a casino heist",
+            "poster": "https://image.tmdb.org/t/p/w500/3CIfIDtD1I1rYY3ooaya8iZHlD8.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 26030,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3CIfIDtD1I1rYY3ooaya8iZHlD8.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The casino heist subgenre exploded after Ocean's success. **Casino** (1995) showed Vegas's darker criminal underbelly, while **Hard Eight** (1996) explored its seedier gambling corners. **Diamonds Are Forever** (1971) brought James Bond to the Strip, matching Ocean's glamorous take on Vegas crime. But the original Ocean's special sauce was its insider's view - Sinatra and crew actually performed at these casinos, lending authenticity to their fictional robbery scheme. SUBHEAD: The Rat Pack's Hollywood Impact"
+      },
+      {
+        "type": "text",
+        "content": "Beyond launching the casino caper film, Ocean's cemented the Rat Pack's Hollywood persona. Their natural chemistry influenced male ensemble films for decades, from **The Magnificent Seven** (1960) to **The Wild Bunch** (1969). The film's \"cool criminals\" archetype shaped characters in **Reservoir Dogs** (1992) and **Heat** (1995). Even the casual sexism and drinking culture depicted reflects a specific moment in American masculinity, making Ocean's as much time capsule as entertainment."
+      }
+    ],
+    "exploreFurther": [
+      "The real Vegas casinos and mob connections of the 1960s",
+      "How the Rat Pack transformed American entertainment culture",
+      "Evolution of the heist film genre from Ocean's to present",
+      "Vegas on film: Comparing 1960s glamour to modern depictions",
+      "Sinatra's acting career and influence on Hollywood"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Killing",
+          "year": 1956,
+          "slug": "Stanley Kubrick's taut racetrack heist thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/lnbuDjMNw2mUeJ2NsGF7HMMTWfU.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 247,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lnbuDjMNw2mUeJ2NsGF7HMMTWfU.jpg"
+        },
+        {
+          "title": "Casino Royale",
+          "year": 2006,
+          "slug": "Bond takes on banker to terrorists in Montenegro casino",
+          "poster": "https://image.tmdb.org/t/p/w500/lMrxYKKhd4lqRzwUHAy5gcx9PSO.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 36557,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lMrxYKKhd4lqRzwUHAy5gcx9PSO.jpg"
+        },
+        {
+          "title": "The Sting",
+          "year": 1973,
+          "slug": "Con men plot elaborate revenge scheme",
+          "poster": "https://image.tmdb.org/t/p/w500/ckmYng37zey8INYf6d10cVgIG93.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9277,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ckmYng37zey8INYf6d10cVgIG93.jpg"
+        },
+        {
+          "title": "Rounders",
+          "year": 1998,
+          "slug": "High-stakes underground poker drama",
+          "poster": "https://image.tmdb.org/t/p/w500/oT6BtjgZj51kLH4z2MpgRtuZJJd.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 10220,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oT6BtjgZj51kLH4z2MpgRtuZJJd.jpg"
+        },
+        {
+          "title": "The Cincinnati Kid",
+          "year": 1965,
+          "slug": "Young poker player challenges reigning champion",
+          "poster": "https://image.tmdb.org/t/p/w500/s4Apy8FcF6a0lR1Qay1atpfwAv9.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 886,
+          "poster_url": "https://image.tmdb.org/t/p/w500/s4Apy8FcF6a0lR1Qay1atpfwAv9.jpg"
+        },
+        {
+          "title": "California Split",
+          "year": 1974,
+          "slug": "Altman's gambling buddy film",
+          "poster": "https://image.tmdb.org/t/p/w500/sohTpACV6S7Af07XKkRUUvLNf4k.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 32044,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sohTpACV6S7Af07XKkRUUvLNf4k.jpg"
+        },
+        {
+          "title": "The Good Thief",
+          "year": 2002,
+          "slug": "Remake of Bob le Flambeur set in Nice",
+          "poster": "https://image.tmdb.org/t/p/w500/TMlSiPuj9LymfwPiKFiRRnhkRq.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 6016,
+          "poster_url": "https://image.tmdb.org/t/p/w500/TMlSiPuj9LymfwPiKFiRRnhkRq.jpg"
+        },
+        {
+          "title": "21",
+          "year": 2008,
+          "slug": "MIT students take on Vegas blackjack",
+          "poster": "https://image.tmdb.org/t/p/w500/BQzE6oTStXIZ5dqjXmRIVp19YB.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 8065,
+          "poster_url": "https://image.tmdb.org/t/p/w500/BQzE6oTStXIZ5dqjXmRIVp19YB.jpg"
+        },
+        {
+          "title": "Vegas Vacation",
+          "year": 1997,
+          "slug": "Comedic look at family Vegas trip",
+          "poster": "https://image.tmdb.org/t/p/w500/jUOreo2AWDnPuRJsUp6T1i66tUe.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 11419,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jUOreo2AWDnPuRJsUp6T1i66tUe.jpg"
+        },
+        {
+          "title": "Bugsy",
+          "year": 1991,
+          "slug": "Gangster builds first Vegas casino",
+          "poster": "https://image.tmdb.org/t/p/w500/hSGncpMByW8zx2aOSXdZB0e70yA.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 10337,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hSGncpMByW8zx2aOSXdZB0e70yA.jpg"
+        },
+        {
+          "title": "Showgirls",
+          "year": 1995,
+          "slug": "Behind the scenes of Vegas entertainment",
+          "poster": "https://image.tmdb.org/t/p/w500/atjtGFIIt9QMGf9ELyboq5cl466.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 10802,
+          "poster_url": "https://image.tmdb.org/t/p/w500/atjtGFIIt9QMGf9ELyboq5cl466.jpg"
+        },
+        {
+          "title": "Honeymoon in Vegas",
+          "year": 1992,
+          "slug": "Romantic comedy set around gambling debt",
+          "poster": "https://image.tmdb.org/t/p/w500/qZPay0VF5Bq2PiUvC09WwM5blmj.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 12518,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qZPay0VF5Bq2PiUvC09WwM5blmj.jpg"
+        },
+        {
+          "title": "Fear and Loathing in Las Vegas",
+          "year": 1998,
+          "slug": "Hunter S. Thompson's Vegas odyssey",
+          "poster": "https://image.tmdb.org/t/p/w500/tisNLcMkxryU2zxhi0PiyDFqhm0.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 1878,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tisNLcMkxryU2zxhi0PiyDFqhm0.jpg"
+        },
+        {
+          "title": "The Cooler",
+          "year": 2003,
+          "slug": "Bad luck charm works for casino",
+          "poster": "https://image.tmdb.org/t/p/w500/gq3cZxo7SS6HAXdaxObLIyw9N1r.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 10744,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gq3cZxo7SS6HAXdaxObLIyw9N1r.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

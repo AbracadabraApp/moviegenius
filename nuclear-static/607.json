@@ -1,0 +1,186 @@
+{
+  "props": {
+    "title": "Men in Black",
+    "year": 1997,
+    "initialSlug": "The galaxy's last line of defense.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/uLOmOF5IzWoyrgIF5MfUnh5pa1X.jpg",
+    "initialStreaming": null,
+    "tmdbId": 607,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Men in Black** (1997) perfectly balances sci-fi spectacle with buddy-cop comedy, launching a franchise that made alien invasion fun. Will Smith and Tommy Lee Jones's chemistry drives this slick adaptation of Lowell Cunningham's comics, with Smith's wise-cracking rookie Agent J playing brilliantly against Jones's deadpan veteran Agent K. The film revolutionized how movies could blend practical creature effects with emerging CGI - Rick Baker's Oscar-winning alien designs still hold up remarkably well. Director Barry Sonnenfeld brought the same quirky visual style he developed in **The Addams Family** (1991), creating a world where the extraordinary hides in plain sight."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Independence Day",
+            "year": 1996,
+            "slug": "Will Smith battles aliens in another blockbuster that defined 90s sci-fi action",
+            "poster": "https://image.tmdb.org/t/p/w500/p0BPQGSPoSa8Ml0DAf2mB2kCU0R.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 602,
+            "poster_url": "https://image.tmdb.org/t/p/w500/p0BPQGSPoSa8Ml0DAf2mB2kCU0R.jpg"
+          },
+          {
+            "title": "Galaxy Quest",
+            "year": 1999,
+            "slug": "Brilliant sci-fi comedy about TV actors recruited for real alien conflict",
+            "poster": "https://image.tmdb.org/t/p/w500/fZXSwgZknp81vmciTb86rw0MejV.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 926,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fZXSwgZknp81vmciTb86rw0MejV.jpg"
+          },
+          {
+            "title": "Evolution",
+            "year": 2001,
+            "slug": "Comedic take on alien invasion from Ghostbusters director Ivan Reitman",
+            "poster": "https://image.tmdb.org/t/p/w500/dwIrP544LxJtXToLpzkEa08pIMm.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 9397,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dwIrP544LxJtXToLpzkEa08pIMm.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The success of **Men in Black** sparked a wave of sci-fi comedy hybrids in the late 90s and early 2000s. Films like **Mars Attacks!** (1996) and **Evolution** (2001) attempted to replicate MIB's winning formula of extraterrestrial threats and laughs, though few achieved its perfect balance. The film also cemented Will Smith's transition from TV star to summer blockbuster king, following his breakout in **Independence Day** (1996)."
+      },
+      {
+        "type": "text",
+        "content": "The film's world-building deserves special praise - it creates a fully realized universe where aliens live secretly among us, managed by a shadowy government agency. This influenced later works like **District 9** (2009) and **Arrival** (2016), which also explored human-alien relations through bureaucratic frameworks. The headquarters scenes, especially the immigrant processing facility, offer clever social commentary while maintaining the film's light touch. SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "District 9",
+            "year": 2009,
+            "slug": "Gritty allegory about alien refugees in South Africa",
+            "poster": "https://image.tmdb.org/t/p/w500/tuGlQkqLxnodDSk6mp5c2wvxUEd.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 17654,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tuGlQkqLxnodDSk6mp5c2wvxUEd.jpg"
+          },
+          {
+            "title": "Paul",
+            "year": 2011,
+            "slug": "Comedy about two geeks helping an alien escape Area 51",
+            "poster": "https://image.tmdb.org/t/p/w500/bX8TP2qRWh2OcmeUHGn1ENDkCu6.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 39513,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bX8TP2qRWh2OcmeUHGn1ENDkCu6.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While later sequels never quite captured the original's magic, **Men in Black**'s influence extends beyond its immediate franchise. The film established a template for effects-driven action-comedy that can be seen in everything from **Thor: Ragnarok** (2017) to **Ghostbusters** (1984). Its depiction of a secret organization managing supernatural phenomena influenced shows like **Warehouse 13** (2009) and films like **R.I.P.D.** (2013)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Practical vs CGI Effects in 90s Sci-fi",
+      "Will Smith's Transformation from TV Star to Movie Star",
+      "Comic Book Adaptations of the 1990s",
+      "The Rise of Sci-fi Comedy as a Genre",
+      "Rick Baker's Revolutionary Creature Design"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Fifth Element",
+          "year": 1997,
+          "slug": "Colorful sci-fi adventure with similar comedic elements",
+          "poster": "https://image.tmdb.org/t/p/w500/fPtlCO1yQtnoLHOwKtWz7db6RGU.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 18,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fPtlCO1yQtnoLHOwKtWz7db6RGU.jpg"
+        },
+        {
+          "title": "Ghostbusters",
+          "year": 1984,
+          "slug": "Another NYC-based supernatural agency comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/7E8nLijS9AwwUEPu2oFYOVKhdFA.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 620,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7E8nLijS9AwwUEPu2oFYOVKhdFA.jpg"
+        },
+        {
+          "title": "The Hidden",
+          "year": 1987,
+          "slug": "Earlier film about cops hunting aliens among us",
+          "poster": "https://image.tmdb.org/t/p/w500/ps7v0QHm9KRoEtMmcVu6eE6NQBJ.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 12476,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ps7v0QHm9KRoEtMmcVu6eE6NQBJ.jpg"
+        },
+        {
+          "title": "They Live",
+          "year": 1988,
+          "slug": "Aliens secretly control society in this cult classic",
+          "poster": "https://image.tmdb.org/t/p/w500/eIEmSJRKe8Vn9iWcFypvbeyQaZZ.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 8337,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eIEmSJRKe8Vn9iWcFypvbeyQaZZ.jpg"
+        },
+        {
+          "title": "Blade",
+          "year": 1998,
+          "slug": "Another comic adaptation mixing action and supernatural",
+          "poster": "https://image.tmdb.org/t/p/w500/oWT70TvbsmQaqyphCZpsnQR7R32.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 36647,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oWT70TvbsmQaqyphCZpsnQR7R32.jpg"
+        },
+        {
+          "title": "Wild Wild West",
+          "year": 1999,
+          "slug": "Smith/Sonnenfeld reunion in sci-fi western",
+          "poster": "https://image.tmdb.org/t/p/w500/1AUzpDzJSecEBIgwUIPzL5KMuTQ.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 8487,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1AUzpDzJSecEBIgwUIPzL5KMuTQ.jpg"
+        },
+        {
+          "title": "The X-Files",
+          "year": 1998,
+          "slug": "Government agents investigate aliens",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": null
+        },
+        {
+          "title": "Hellboy",
+          "year": 2004,
+          "slug": "Another supernatural government agency story",
+          "poster": "https://image.tmdb.org/t/p/w500/21hS8mD8uxBVvf8xVYR30LbbmPO.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 1487,
+          "poster_url": "https://image.tmdb.org/t/p/w500/21hS8mD8uxBVvf8xVYR30LbbmPO.jpg"
+        },
+        {
+          "title": "3rd Rock from the Sun",
+          "year": 1996,
+          "slug": "Aliens hiding among humans comedy series",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Transformers",
+          "year": 2007,
+          "slug": "More aliens in disguise action-comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/lkZ9gqCEjzX85lKR6Jjd1uGAXNp.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 1858,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lkZ9gqCEjzX85lKR6Jjd1uGAXNp.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

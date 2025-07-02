@@ -1,0 +1,200 @@
+{
+  "props": {
+    "title": "Primary",
+    "year": 1960,
+    "initialSlug": "Democracy Raw & Unfiltered",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/gVloWsthHRlw719vzRWRpBqDM20.jpg",
+    "initialStreaming": null,
+    "tmdbId": 133,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Primary** (1960) revolutionized documentary filmmaking through its groundbreaking cinéma vérité approach. Directors Robert Drew, Richard Leacock, D.A. Pennebaker, and Albert Maysles followed John F. Kennedy and Hubert Humphrey during the 1960 Wisconsin Democratic presidential primary, capturing intimate moments with lightweight cameras and synchronized sound. This direct cinema technique influenced countless political documentaries like **The War Room** (1993) and **Weiner** (2016). The film's fly-on-the-wall style showed candidates in unguarded moments, forever changing how we document political campaigns."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Primary",
+            "year": 1960,
+            "slug": "Revolutionary documentary following Kennedy and Humphrey during the Wisconsin primary, pioneering cinéma vérité techniques",
+            "poster": "https://image.tmdb.org/t/p/w500/gVloWsthHRlw719vzRWRpBqDM20.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 133,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gVloWsthHRlw719vzRWRpBqDM20.jpg"
+          },
+          {
+            "title": "Crisis",
+            "year": 1963,
+            "slug": "Drew and team document JFK and RFK handling civil rights standoff at University of Alabama",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": null
+          },
+          {
+            "title": "Don't Look Back",
+            "year": 1967,
+            "slug": "D.A. Pennebaker captures Bob Dylan's 1965 UK tour, building on Primary's intimate style",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The Direct Cinema movement that **Primary** helped launch transformed documentary aesthetics. By abandoning voice-over narration and staged interviews, filmmakers like the Maysles brothers created landmark works like **Salesman** (1969) and **Grey Gardens** (1975). The observational approach let subjects' authentic behavior drive the narrative. This influence extends to modern political docs like **The War Room** (1993) and **Mitt** (2014), which maintain Primary's behind-the-scenes access while adding contemporary production values."
+      },
+      {
+        "type": "text",
+        "content": "Beyond politics, **Primary's** technical innovations enabled more intimate documentary storytelling across genres. Frederick Wiseman adopted similar techniques for institutional critiques like **Titicut Follies** (1967). The Maysles' **Gimme Shelter** (1970) brought cinéma vérité to rock documentaries. Today, films like **The September Issue** (2009) and **The Kingdom of Dreams and Madness** (2013) continue using unobtrusive observation to reveal their subjects' worlds. SUBHEAD: Legacy in Modern Documentary"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Salesman",
+            "year": 1969,
+            "slug": "Maysles brothers follow door-to-door Bible salesmen, perfecting observational documentary",
+            "poster": "https://image.tmdb.org/t/p/w500/gQhe7uWygmAiQ6HNA7Jeys4wdbk.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 27375,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gQhe7uWygmAiQ6HNA7Jeys4wdbk.jpg"
+          },
+          {
+            "title": "The War Room",
+            "year": 1993,
+            "slug": "Inside look at Clinton's 1992 campaign, carrying Primary's political documentary torch",
+            "poster": "https://image.tmdb.org/t/p/w500/qDNOzfkgneIkJHQmP2Bk68LSDqR.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 26408,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qDNOzfkgneIkJHQmP2Bk68LSDqR.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Contemporary filmmakers continue building on **Primary's** foundations while incorporating new technology. **The Queen of Versailles** (2012) uses intimate access to document excess and downfall. **Weiner** (2016) captures a political implosion with remarkable proximity. Even Netflix's **Knock Down the House** (2019) employs Direct Cinema techniques to follow AOC's congressional campaign. The core principle remains unchanged: observe without interference, let reality unfold."
+      }
+    ],
+    "exploreFurther": [
+      "The Development of Portable Sync Sound and its Impact on Documentary",
+      "Robert Drew Associates and the Birth of American Cinéma Vérité",
+      "Evolution of Political Documentary Access from Primary to Present",
+      "Comparing Direct Cinema and French Cinéma Vérité Approaches",
+      "Primary's Influence on Modern Campaign Coverage"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Crisis",
+          "year": 1963,
+          "slug": "Kennedy administration handles civil rights crisis",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Don't Look Back",
+          "year": 1967,
+          "slug": "Bob Dylan's 1965 UK tour",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Monterey Pop",
+          "year": 1968,
+          "slug": "Pennebaker documents legendary music festival",
+          "poster": "https://image.tmdb.org/t/p/w500/wEB3c5Y5spAHOQaFWcsfFky3SWb.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 42632,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wEB3c5Y5spAHOQaFWcsfFky3SWb.jpg"
+        },
+        {
+          "title": "Gimme Shelter",
+          "year": 1970,
+          "slug": "Rolling Stones tour culminating at Altamont",
+          "poster": "https://image.tmdb.org/t/p/w500/6Cem6KcIClKit3KhKYou4aXFxob.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 132,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6Cem6KcIClKit3KhKYou4aXFxob.jpg"
+        },
+        {
+          "title": "Grey Gardens",
+          "year": 1975,
+          "slug": "Eccentric mother and daughter in decaying mansion",
+          "poster": "https://image.tmdb.org/t/p/w500/qFPj6Eh3ijA4ISRujHu4GKKeAWT.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 17346,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qFPj6Eh3ijA4ISRujHu4GKKeAWT.jpg"
+        },
+        {
+          "title": "The War Room",
+          "year": 1993,
+          "slug": "Inside Clinton's 1992 campaign",
+          "poster": "https://image.tmdb.org/t/p/w500/qDNOzfkgneIkJHQmP2Bk68LSDqR.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 26408,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qDNOzfkgneIkJHQmP2Bk68LSDqR.jpg"
+        },
+        {
+          "title": "Bob Dylan: No Direction Home",
+          "year": 2005,
+          "slug": "Scorsese's Dylan documentary using vérité footage",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "The September Issue",
+          "year": 2009,
+          "slug": "Behind scenes at Vogue magazine",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Mitt",
+          "year": 2014,
+          "slug": "Inside Romney's presidential campaigns",
+          "poster": "https://image.tmdb.org/t/p/w500/v1bfKOvTqQDseBAetUpNKn1Iq3q.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 250769,
+          "poster_url": "https://image.tmdb.org/t/p/w500/v1bfKOvTqQDseBAetUpNKn1Iq3q.jpg"
+        },
+        {
+          "title": "Weiner",
+          "year": 2016,
+          "slug": "Anthony Weiner's mayoral campaign implosion",
+          "poster": "https://image.tmdb.org/t/p/w500/56p58BDYpSISNXhRDHfXBV0i7Zj.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 376261,
+          "poster_url": "https://image.tmdb.org/t/p/w500/56p58BDYpSISNXhRDHfXBV0i7Zj.jpg"
+        },
+        {
+          "title": "Get Me Roger Stone",
+          "year": 2017,
+          "slug": "Political operative profile using direct cinema",
+          "poster": "https://image.tmdb.org/t/p/w500/n0FXjHHG4a0apw3X4zggpIC5fih.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 448448,
+          "poster_url": "https://image.tmdb.org/t/p/w500/n0FXjHHG4a0apw3X4zggpIC5fih.jpg"
+        },
+        {
+          "title": "Knock Down the House",
+          "year": 2019,
+          "slug": "AOC and other progressive campaigns",
+          "poster": "https://image.tmdb.org/t/p/w500/uAfixuZIFVbWIsWytzROJDY85D7.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 565312,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uAfixuZIFVbWIsWytzROJDY85D7.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

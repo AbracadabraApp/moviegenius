@@ -1,0 +1,183 @@
+{
+  "props": {
+    "title": "The Devil Wears Prada",
+    "year": 2006,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/8912AsVuS7Sj915apArUFbv6F9L.jpg",
+    "initialStreaming": null,
+    "tmdbId": 350,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Devil Wears Prada** (2006) revolutionized the modern workplace comedy by diving deep into fashion journalism's cutthroat world. Meryl Streep's Miranda Priestly ranks among cinema's most memorable bosses, delivering withering put-downs with surgical precision. The film's influence echoes through later workplace dramas like **Late Night** (2019) and **Morning Glory** (2010), establishing a template for ambitious young professionals navigating toxic work environments while maintaining their integrity. Like **Working Girl** (1988) before it, it examines female power dynamics in corporate America, but with a sharper edge."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Devil Wears Prada",
+            "year": 2006,
+            "slug": "A naive journalism graduate becomes assistant to a ruthless fashion magazine editor",
+            "poster": "https://image.tmdb.org/t/p/w500/8912AsVuS7Sj915apArUFbv6F9L.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 350,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8912AsVuS7Sj915apArUFbv6F9L.jpg"
+          },
+          {
+            "title": "Working Girl",
+            "year": 1988,
+            "slug": "A secretary rises through corporate ranks by posing as her boss",
+            "poster": "https://image.tmdb.org/t/p/w500/q2jfFzZvAzjTaArQR0tjilIZ5aJ.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 3525,
+            "poster_url": "https://image.tmdb.org/t/p/w500/q2jfFzZvAzjTaArQR0tjilIZ5aJ.jpg"
+          },
+          {
+            "title": "Late Night",
+            "year": 2019,
+            "slug": "A diversity hire shakes up a late-night talk show's all-male writers' room",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's costume design by Patricia Field created a seismic shift in how fashion was portrayed in cinema. Following **Breakfast at Tiffany's** (1961) and **Clueless** (1995), it demonstrated how clothing could be a character itself. The transformation of Andy Sachs from frumpy newcomer to fashion insider sparked countless makeover sequences in later films like **Crazy Rich Asians** (2018). The $1 million costume budget created looks that influenced real-world fashion for years."
+      },
+      {
+        "type": "text",
+        "content": "Meryl Streep's performance redefined the \"boss from hell\" trope, moving beyond simple villainy into complex character study. Unlike the overtly antagonistic bosses in **9 to 5** (1980) or **Horrible Bosses** (2011), Miranda Priestly is terrifying precisely because she's excellent at her job. Her \"cerulean blue sweater\" monologue remains a masterclass in establishing power through quiet devastation rather than loud confrontation. SUBHEAD: Fashion in Film and Workplace Evolution"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Horrible Bosses",
+            "year": 2011,
+            "slug": "Three friends conspire to murder their abusive employers",
+            "poster": "https://image.tmdb.org/t/p/w500/uQkUwgyFHAm0jGQERPG6Z9o9Zbj.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 51540,
+            "poster_url": "https://image.tmdb.org/t/p/w500/uQkUwgyFHAm0jGQERPG6Z9o9Zbj.jpg"
+          },
+          {
+            "title": "9 to 5",
+            "year": 1980,
+            "slug": "Three female employees get revenge on their chauvinistic boss",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's examination of work-life balance presaged contemporary discussions about toxic productivity and burnout. Like **Up in the Air** (2009) and **The Intern** (2015), it questions the personal cost of professional success. Emily Blunt's breakthrough role as Emily demonstrated how competition and solidarity among women in the workplace could coexist, influencing later films like **Bombshell** (2019)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Fashion in Cinema: From Breakfast at Tiffany's to The Devil Wears Prada",
+      "Meryl Streep's Career-Defining Antagonist Roles",
+      "The Impact of Workplace Comedies on Corporate Culture",
+      "Female Power Dynamics in Modern Cinema",
+      "The Legacy of Patricia Field's Costume Design"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Breakfast at Tiffany's",
+          "year": 1961,
+          "slug": "A young woman seeks a wealthy husband in New York City",
+          "poster": "https://image.tmdb.org/t/p/w500/79xm4gXw4l7A5D0XukUOJRocFYQ.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 164,
+          "poster_url": "https://image.tmdb.org/t/p/w500/79xm4gXw4l7A5D0XukUOJRocFYQ.jpg"
+        },
+        {
+          "title": "Clueless",
+          "year": 1995,
+          "slug": "A Beverly Hills high school student plays matchmaker",
+          "poster": "https://image.tmdb.org/t/p/w500/8AwVTcgpTnmeOs4TdTWqcFDXEsA.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9603,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8AwVTcgpTnmeOs4TdTWqcFDXEsA.jpg"
+        },
+        {
+          "title": "The September Issue",
+          "year": 2009,
+          "slug": "Documentary about Vogue's Anna Wintour",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Intern",
+          "year": 2015,
+          "slug": "A senior citizen becomes a fashion website's intern",
+          "poster": "https://image.tmdb.org/t/p/w500/9UoAC9tu8kIyRy8AcJnGhnH0gOH.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 257211,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9UoAC9tu8kIyRy8AcJnGhnH0gOH.jpg"
+        },
+        {
+          "title": "13 Going on 30",
+          "year": 2004,
+          "slug": "A teenage girl magically becomes a magazine editor",
+          "poster": "https://image.tmdb.org/t/p/w500/iNZdSIfhSCMtRILDNyhLn8UKeSG.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 10096,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iNZdSIfhSCMtRILDNyhLn8UKeSG.jpg"
+        },
+        {
+          "title": "The Proposal",
+          "year": 2009,
+          "slug": "A publishing executive forces her assistant to marry her",
+          "poster": "https://image.tmdb.org/t/p/w500/aEqtJDj8MvSDQwzggvcOfFTZMw.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 18240,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aEqtJDj8MvSDQwzggvcOfFTZMw.jpg"
+        },
+        {
+          "title": "Swimming with Sharks",
+          "year": 1994,
+          "slug": "A movie executive assistant endures abuse from his boss",
+          "poster": "https://image.tmdb.org/t/p/w500/eMRiIJIEyMLjWjktIqjNfzs9jGX.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 20306,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eMRiIJIEyMLjWjktIqjNfzs9jGX.jpg"
+        },
+        {
+          "title": "The Bold Type",
+          "year": 2017,
+          "slug": "Three friends navigate careers at a women's magazine",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": null
+        },
+        {
+          "title": "How to Lose Friends & Alienate People",
+          "year": 2008,
+          "slug": "A British journalist struggles in New York media",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Confessions of a Shopaholic",
+          "year": 2009,
+          "slug": "A shopping addict becomes a financial advice columnist",
+          "poster": "https://image.tmdb.org/t/p/w500/r17R9OIC0pKDqqsNore6atYLCVZ.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 20048,
+          "poster_url": "https://image.tmdb.org/t/p/w500/r17R9OIC0pKDqqsNore6atYLCVZ.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,220 @@
+{
+  "props": {
+    "title": "The Cave",
+    "year": 2005,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/q7eyZY2Akj68ivnRZ86OduCUexy.jpg",
+    "initialStreaming": null,
+    "tmdbId": 9042,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Cave** (2005) represents a fascinating entry in the underground horror subgenre, following in the footsteps of Neil Marshall's superior **The Descent** (2005) released the same year. Both films tap into our primal fears of dark, enclosed spaces and what might lurk beneath the surface. While The Cave suffers from some derivative elements, it stands as part of a wave of spelunking horror that includes **Sanctum** (2011) and **As Above, So Below** (2014), combining claustrophobic tension with creature feature elements reminiscent of **Aliens** (1986)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Descent",
+            "year": 2005,
+            "slug": "All-female caving expedition encounters humanoid creatures in an uncharted cave system. Sets the gold standard for underground horror.",
+            "poster": "https://image.tmdb.org/t/p/w500/mxFPI4KYBk5ri9cPteIS8jiDFgj.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 9392,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mxFPI4KYBk5ri9cPteIS8jiDFgj.jpg"
+          },
+          {
+            "title": "Sanctum",
+            "year": 2011,
+            "slug": "James Cameron-produced survival thriller about cave divers trapped by a flood. Features stunning underwater cinematography.",
+            "poster": "https://image.tmdb.org/t/p/w500/zRUNv1CbeVtmTCNr6RLHnxV2QYm.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 48340,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zRUNv1CbeVtmTCNr6RLHnxV2QYm.jpg"
+          },
+          {
+            "title": "As Above So Below",
+            "year": 2014,
+            "slug": "Found footage horror following archaeologists into the Paris catacombs. Blends real locations with supernatural terror.",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's strongest elements emerge from its setting and atmosphere. Director Bruce Hunt, known for his second unit work on **The Matrix** (1999), brings technical prowess to the underground sequences. The creature design, while not groundbreaking, builds on a tradition of subterranean monsters seen in classics like **C.H.U.D.** (1984) and **The Host** (2006). The film's parasitic evolution concept predates similar ideas explored in **Prometheus** (2012)."
+      },
+      {
+        "type": "text",
+        "content": "Where The Cave stumbles is in character development and plot originality. Unlike **Dog Soldiers** (2002) or **Pitch Black** (2000), which balanced ensemble casts with creature threats effectively, The Cave's characters feel interchangeable. However, the film's underwater cave sequences showcase impressive practical effects and stunt work that hold up better than many CGI-heavy contemporaries. SUBHEAD: Underground Horror Evolution"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Pitch Black",
+            "year": 2000,
+            "slug": "Survivors crash-land on a planet of darkness and deadly creatures. Launched Vin Diesel's Riddick franchise.",
+            "poster": "https://image.tmdb.org/t/p/w500/3AnlxZ5CZnhKKzjgFyY6EHxmOyl.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 2787,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3AnlxZ5CZnhKKzjgFyY6EHxmOyl.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The Cave arrived during a period when underground horror was evolving beyond simple monster movies. Films like **The Ruins** (2008) and **The Tunnel** (2011) would continue exploring subterranean threats, while **Underwater** (2020) would take similar concepts to the ocean depths. This subgenre consistently taps into archetypal fears while finding new ways to trap characters in confined spaces with unknown threats."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Practical vs CGI Effects in 2000s Horror",
+      "Spelunking in Cinema: From Documentary to Horror",
+      "The Rise of Underground Horror Films 2000-2010",
+      "Creature Design in Modern Horror",
+      "Influence of James Cameron on Underground/Underwater Thrillers"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Host",
+          "year": 2006,
+          "slug": "Korean monster movie masterpiece set in Seoul's sewers",
+          "poster": "https://image.tmdb.org/t/p/w500/qJc9na2UN7TvKqDWkxBkocPUUjT.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 1255,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qJc9na2UN7TvKqDWkxBkocPUUjT.jpg"
+        },
+        {
+          "title": "Aliens",
+          "year": 1986,
+          "slug": "Cameron's sci-fi horror classic with underground hive sequences",
+          "poster": "https://image.tmdb.org/t/p/w500/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 679,
+          "poster_url": "https://image.tmdb.org/t/p/w500/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg"
+        },
+        {
+          "title": "C.H.U.D.",
+          "year": 1984,
+          "slug": "Cult classic about humanoid creatures beneath Manhattan",
+          "poster": "https://image.tmdb.org/t/p/w500/8BVw5RIDBTZwdMAR1VKpAkwrMjj.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 23730,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8BVw5RIDBTZwdMAR1VKpAkwrMjj.jpg"
+        },
+        {
+          "title": "The Ruins",
+          "year": 2008,
+          "slug": "Archaeological horror with organic threats in Mayan ruins",
+          "poster": "https://image.tmdb.org/t/p/w500/6HpicbiT7xmlMjQXOSCeNoLZGpf.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 11152,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6HpicbiT7xmlMjQXOSCeNoLZGpf.jpg"
+        },
+        {
+          "title": "The Tunnel",
+          "year": 2011,
+          "slug": "Australian found footage horror set in abandoned subway tunnels",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Underwater",
+          "year": 2020,
+          "slug": "Deep sea facility faces mysterious creatures",
+          "poster": "https://image.tmdb.org/t/p/w500/gzlbb3yeVISpQ3REd3Ga1scWGTU.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 443791,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gzlbb3yeVISpQ3REd3Ga1scWGTU.jpg"
+        },
+        {
+          "title": "Leviathan",
+          "year": 1989,
+          "slug": "Underwater horror with genetic mutations",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "DeepStar Six",
+          "year": 1989,
+          "slug": "Underwater creature feature",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "PlutoTV",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Thing",
+          "year": 1982,
+          "slug": "Arctic isolation meets shapeshifting horror",
+          "poster": "https://image.tmdb.org/t/p/w500/a9RjXOIIB56k2rGoL3Fk3nRHHHQ.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 1091,
+          "poster_url": "https://image.tmdb.org/t/p/w500/a9RjXOIIB56k2rGoL3Fk3nRHHHQ.jpg"
+        },
+        {
+          "title": "Tremors",
+          "year": 1990,
+          "slug": "Underground creatures terrorize desert town",
+          "poster": "https://image.tmdb.org/t/p/w500/cA4ggkZ3r1d5r9hOAUWC8x5ul2i.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9362,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cA4ggkZ3r1d5r9hOAUWC8x5ul2i.jpg"
+        },
+        {
+          "title": "Deep Rising",
+          "year": 1998,
+          "slug": "Ocean liner attacked by deep sea monsters",
+          "poster": "https://image.tmdb.org/t/p/w500/A1nOnrAlG3EbOvzgZt2ya11OmjQ.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9457,
+          "poster_url": "https://image.tmdb.org/t/p/w500/A1nOnrAlG3EbOvzgZt2ya11OmjQ.jpg"
+        },
+        {
+          "title": "Sphere",
+          "year": 1998,
+          "slug": "Psychological underwater sci-fi thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/reR7C7EYe3DiHm5OYpA0ACUMDld.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10153,
+          "poster_url": "https://image.tmdb.org/t/p/w500/reR7C7EYe3DiHm5OYpA0ACUMDld.jpg"
+        },
+        {
+          "title": "Event Horizon",
+          "year": 1997,
+          "slug": "Space horror with similar confined isolation",
+          "poster": "https://image.tmdb.org/t/p/w500/cHoeg3gAD5w63Et5DImY1Jb7HaO.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 8413,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cHoeg3gAD5w63Et5DImY1Jb7HaO.jpg"
+        },
+        {
+          "title": "Pandorum",
+          "year": 2009,
+          "slug": "Sci-fi horror with evolutionary themes",
+          "poster": "https://image.tmdb.org/t/p/w500/mNMfa6r3pl0EzFIKEkVcxyr6Rc7.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 19898,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mNMfa6r3pl0EzFIKEkVcxyr6Rc7.jpg"
+        },
+        {
+          "title": "Crawl",
+          "year": 2019,
+          "slug": "Survival horror in flooded crawl space",
+          "poster": "https://image.tmdb.org/t/p/w500/4WH6AZd473lRZ3hUp8TYiv2LfZW.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 511987,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4WH6AZd473lRZ3hUp8TYiv2LfZW.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

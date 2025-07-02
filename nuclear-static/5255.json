@@ -1,0 +1,230 @@
+{
+  "props": {
+    "title": "The Polar Express",
+    "year": 2004,
+    "initialSlug": "Believe in the magic of Christmas.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/e2UJ2Y67txlNVGSRU04emZ3GDQw.jpg",
+    "initialStreaming": null,
+    "tmdbId": 5255,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Polar Express** (2004) marked a pivotal moment in motion capture animation, though its ambitious technology created what many call the \"uncanny valley\" effect. Director Robert Zemeckis, fresh from pushing CGI boundaries with **Cast Away** (2000), attempted to translate Chris Van Allsburg's beloved children's book into a holiday spectacle. Tom Hanks performed multiple roles through performance capture, following the path **Final Fantasy: The Spirits Within** (2001) started but with far more sophisticated technology. The film's $165 million budget produced a visual style that, while groundbreaking, left audiences somewhat unsettled by the almost-but-not-quite-human characters."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Elf",
+            "year": 2003,
+            "slug": "Will Ferrell's modern Christmas classic about a human raised as an elf searching for his father in New York City",
+            "poster": "https://image.tmdb.org/t/p/w500/oOleziEempUPu96jkGs0Pj6tKxj.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 10719,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oOleziEempUPu96jkGs0Pj6tKxj.jpg"
+          },
+          {
+            "title": "Miracle on 34th Street",
+            "year": 1947,
+            "slug": "The definitive Santa Claus story about a department store Santa who claims to be the real thing",
+            "poster": "https://image.tmdb.org/t/p/w500/qyAc9X9XHloIqy3oJbbZ44Cw0Hm.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 11881,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qyAc9X9XHloIqy3oJbbZ44Cw0Hm.jpg"
+          },
+          {
+            "title": "Arthur Christmas",
+            "year": 2011,
+            "slug": "Charming animated film about Santa's clumsy son stepping up to save Christmas",
+            "poster": "https://image.tmdb.org/t/p/w500/brELZkSbkLrcCXJ0xt5hQUMXhut.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 51052,
+            "poster_url": "https://image.tmdb.org/t/p/w500/brELZkSbkLrcCXJ0xt5hQUMXhut.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence on holiday cinema can't be overstated. While **A Christmas Story** (1983) and **Miracle on 34th Street** (1947) grounded their Christmas magic in reality, **The Polar Express** fully embraced fantasy spectacle. Its success paved the way for more technically ambitious holiday films like **Rise of the Guardians** (2012) and **Arthur Christmas** (2011). The movie's signature hot chocolate sequence inspired countless holiday marketing campaigns and became as iconic as the leg lamp from **A Christmas Story**."
+      },
+      {
+        "type": "text",
+        "content": "From a technical perspective, **The Polar Express** shares DNA with later motion capture achievements like **Avatar** (2009) and **Dawn of the Planet of the Apes** (2014). While those films solved the uncanny valley problem by focusing on non-human characters, Zemeckis continued pursuing human motion capture with **Beowulf** (2007) and **A Christmas Carol** (2009). These films refined the technology but still struggled with truly convincing human characters. SUBHEAD: The Evolution of Christmas Fantasy Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "A Christmas Carol",
+            "year": 2009,
+            "slug": "Zemeckis and Jim Carrey reunite for another motion capture holiday adaptation",
+            "poster": "https://image.tmdb.org/t/p/w500/goHDZUnqZJ7FN4h48Qh6MzJNExl.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 17979,
+            "poster_url": "https://image.tmdb.org/t/p/w500/goHDZUnqZJ7FN4h48Qh6MzJNExl.jpg"
+          },
+          {
+            "title": "Rise of the Guardians",
+            "year": 2012,
+            "slug": "Holiday legends unite as superheroes to protect children's beliefs",
+            "poster": "https://image.tmdb.org/t/p/w500/sW4qOa9yF0Ikg7lppncQ0n5UhKX.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 81188,
+            "poster_url": "https://image.tmdb.org/t/p/w500/sW4qOa9yF0Ikg7lppncQ0n5UhKX.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**The Polar Express** bridges classic Christmas fantasies like **Santa Claus: The Movie** (1985) with modern technical spectacles. Its dream-like train sequences influenced everything from **Hugo** (2011) to **Snowpiercer** (2013). The film's surreal tone and questioning of belief systems created a template for sophisticated children's entertainment that **The Chronicles of Narnia: The Lion, the Witch and the Wardrobe** (2005) and **Bridge to Terabithia** (2007) would later follow."
+      }
+    ],
+    "exploreFurther": [
+      "The Development of Motion Capture Technology in Cinema",
+      "Chris Van Allsburg's Children's Books Adapted to Film",
+      "Robert Zemeckis's Evolution as a Technical Innovator",
+      "The Psychology Behind the Uncanny Valley Effect",
+      "The History of Train Sequences in Fantasy Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Cast Away",
+          "year": 2000,
+          "slug": "Zemeckis pushes CGI boundaries",
+          "poster": "https://image.tmdb.org/t/p/w500/7lLJgKnAicAcR5UEuo8xhSMj18w.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 8358,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7lLJgKnAicAcR5UEuo8xhSMj18w.jpg"
+        },
+        {
+          "title": "Avatar",
+          "year": 2009,
+          "slug": "Revolutionary motion capture alien world",
+          "poster": "https://image.tmdb.org/t/p/w500/kyeqWdyUXW608qlYkRqosgbbJyK.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 19995,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kyeqWdyUXW608qlYkRqosgbbJyK.jpg"
+        },
+        {
+          "title": "Beowulf",
+          "year": 2007,
+          "slug": "Motion capture medieval epic",
+          "poster": "https://image.tmdb.org/t/p/w500/7QsWYyJAV97N9jOh21pdRIqJeJq.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 2310,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7QsWYyJAV97N9jOh21pdRIqJeJq.jpg"
+        },
+        {
+          "title": "Final Fantasy: The Spirits Within",
+          "year": 2001,
+          "slug": "Early photorealistic animation attempt",
+          "poster": "https://image.tmdb.org/t/p/w500/phYEy6Am7vRlr9KzMb0wbGMHTzz.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 2114,
+          "poster_url": "https://image.tmdb.org/t/p/w500/phYEy6Am7vRlr9KzMb0wbGMHTzz.jpg"
+        },
+        {
+          "title": "How the Grinch Stole Christmas",
+          "year": 2000,
+          "slug": "Live-action adaptation of Dr. Seuss classic",
+          "poster": "https://image.tmdb.org/t/p/w500/1WZbbPApEivA421gCOluuzMMKCk.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 8871,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1WZbbPApEivA421gCOluuzMMKCk.jpg"
+        },
+        {
+          "title": "Monster House",
+          "year": 2006,
+          "slug": "Motion capture haunted house animation",
+          "poster": "https://image.tmdb.org/t/p/w500/zCRPr4bkO3ae0U1134vJ39xZnAG.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 9297,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zCRPr4bkO3ae0U1134vJ39xZnAG.jpg"
+        },
+        {
+          "title": "Mars Needs Moms",
+          "year": 2011,
+          "slug": "Later motion capture experiment",
+          "poster": "https://image.tmdb.org/t/p/w500/g94LNU4pipIUJLkTvYIgNGfT2J2.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 50321,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g94LNU4pipIUJLkTvYIgNGfT2J2.jpg"
+        },
+        {
+          "title": "Christmas Chronicles",
+          "year": 2018,
+          "slug": "Modern Santa adventure",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Klaus",
+          "year": 2019,
+          "slug": "Traditional animation Christmas origin story",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Santa Clause",
+          "year": 1994,
+          "slug": "Modern Christmas classic",
+          "poster": "https://image.tmdb.org/t/p/w500/hvV2rI60qOYELT7tHHLpxtafnBZ.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 11395,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hvV2rI60qOYELT7tHHLpxtafnBZ.jpg"
+        },
+        {
+          "title": "The Nightmare Before Christmas",
+          "year": 1993,
+          "slug": "Stop-motion holiday fantasy",
+          "poster": "https://image.tmdb.org/t/p/w500/oQffRNjK8e19rF7xVYEN8ew0j7b.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9479,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oQffRNjK8e19rF7xVYEN8ew0j7b.jpg"
+        },
+        {
+          "title": "The Christmas Chronicles 2",
+          "year": 2020,
+          "slug": "Santa adventure sequel",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Fred Claus",
+          "year": 2007,
+          "slug": "Comedy about Santa's brother",
+          "poster": "https://image.tmdb.org/t/p/w500/9gATbvoRMxVeoHInwS8nR0KZMVc.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 5375,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9gATbvoRMxVeoHInwS8nR0KZMVc.jpg"
+        },
+        {
+          "title": "Jingle All the Way",
+          "year": 1996,
+          "slug": "Holiday shopping adventure",
+          "poster": "https://image.tmdb.org/t/p/w500/lHLOUt0ZIQLC5asHdIQBoTUvaEp.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9279,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lHLOUt0ZIQLC5asHdIQBoTUvaEp.jpg"
+        },
+        {
+          "title": "The Santa Clause 2",
+          "year": 2002,
+          "slug": "Santa needs a wife sequel",
+          "poster": "https://image.tmdb.org/t/p/w500/2EAMkz0z1pbr9weOY1Y7buy2AxV.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9021,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2EAMkz0z1pbr9weOY1Y7buy2AxV.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

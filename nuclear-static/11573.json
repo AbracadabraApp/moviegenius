@@ -1,0 +1,152 @@
+{
+  "props": {
+    "title": "Inspector Clouseau",
+    "year": 1968,
+    "initialSlug": "Bumbling detective hunts a master thief in London",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/gpL8PDb0dzXkqZaevYvO1hAidS8.jpg",
+    "initialStreaming": null,
+    "tmdbId": 11573,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The 1968 **Inspector Clouseau** marked a curious detour in the Pink Panther franchise, with Alan Arkin replacing Peter Sellers in the iconic role. This oddity sits between **A Shot in the Dark** (1964) and **Return of the Pink Panther** (1975), attempting to capitalize on the character's popularity without its defining star. Arkin's interpretation takes Clouseau in a markedly different direction - less bumbling aristocrat, more determined fool. Director Bud Yorkin aimed for a grittier tone than Blake Edwards' previous entries, resulting in a film that feels somewhat disconnected from the series' established comedy style."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Pink Panther",
+            "year": 1963,
+            "slug": "Peter Sellers debuts as Inspector Clouseau in this sophisticated comedy, establishing the character's signature mix of dignity and incompetence",
+            "poster": "https://image.tmdb.org/t/p/w500/aCjJ0sKayks2uL7MJBzdp2i67NI.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 936,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aCjJ0sKayks2uL7MJBzdp2i67NI.jpg"
+          },
+          {
+            "title": "A Shot in the Dark",
+            "year": 1964,
+            "slug": "The superior second entry focuses entirely on Clouseau, perfecting the formula of slapstick and mistaken identity",
+            "poster": "https://image.tmdb.org/t/p/w500/pR6tNqNLYIbRRYC5TFKWVWaVvvK.jpg",
+            "initialStreaming": "Apple TV",
+            "tmdb_id": 1594,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pR6tNqNLYIbRRYC5TFKWVWaVvvK.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While **Inspector Clouseau** (1968) stumbled, it inadvertently highlighted what made Sellers' portrayal so special. His absence proved how crucial his physical comedy and accent work were to the character's appeal. The film's attempt at a more serious crime plot involving counterfeit money showed why the franchise worked best when embracing pure comedy. When Sellers returned in **The Return of the Pink Panther** (1975), he immediately restored the character's essential charm, leading to three more successful entries including **The Pink Panther Strikes Again** (1976). SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "text",
+        "content": "The Clouseau character's influence extends far beyond this 1968 misfire. The bumbling detective archetype it helped popularize can be seen in everything from **Johnny English** (2003) to **The Naked Gun** (1988). Steve Martin's attempt to reboot the franchise with **The Pink Panther** (2006) and **The Pink Panther 2** (2009) proved again how difficult it was to step into Sellers' shoes. The original series' impact on comedy can't be overstated - its blend of sophistication and slapstick influenced countless films including **Austin Powers: International Man of Mystery** (1997) and **OSS 117: Cairo, Nest of Spies** (2006)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Peter Sellers' Clouseau Character Across Multiple Films",
+      "The Impact of Blake Edwards' Direction on the Pink Panther Series",
+      "Slapstick Comedy Techniques in 1960s Cinema",
+      "The Challenge of Recasting Iconic Comedy Characters",
+      "The Influence of French Crime Films on the Pink Panther Series"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Trail of the Pink Panther",
+          "year": 1982,
+          "slug": "Final Pink Panther film featuring Sellers footage",
+          "poster": "https://image.tmdb.org/t/p/w500/l2Gv4I8CN28aflcqecPgb0NKh63.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 9699,
+          "poster_url": "https://image.tmdb.org/t/p/w500/l2Gv4I8CN28aflcqecPgb0NKh63.jpg"
+        },
+        {
+          "title": "Revenge of the Pink Panther",
+          "year": 1978,
+          "slug": "Sellers' last completed Pink Panther film",
+          "poster": "https://image.tmdb.org/t/p/w500/pvFiI8Kkq6JIf9uxDUU5FEvet7f.jpg",
+          "initialStreaming": "Apple TV",
+          "tmdb_id": 6081,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pvFiI8Kkq6JIf9uxDUU5FEvet7f.jpg"
+        },
+        {
+          "title": "The Party",
+          "year": 1968,
+          "slug": "Blake Edwards directs Sellers in another comedy classic",
+          "poster": "https://image.tmdb.org/t/p/w500/8d2Msw39YzwkBWfBMauCulp7D0.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10794,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8d2Msw39YzwkBWfBMauCulp7D0.jpg"
+        },
+        {
+          "title": "Being There",
+          "year": 1979,
+          "slug": "Sellers' penultimate film showcasing his subtle comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/3RO3jbCKEey2T9bYFkYt9xpwen9.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 10322,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3RO3jbCKEey2T9bYFkYt9xpwen9.jpg"
+        },
+        {
+          "title": "Dr. Strangelove",
+          "year": 1964,
+          "slug": "Sellers plays multiple roles in Kubrick's dark comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/6x7MzQ6BOMlRzam1StcmPO9v61g.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 935,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6x7MzQ6BOMlRzam1StcmPO9v61g.jpg"
+        },
+        {
+          "title": "What's New Pussycat",
+          "year": 1965,
+          "slug": "Sellers stars in this wild 60s comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/seKbiGx8mjF04Bx4LVBQk741Eqv.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 3681,
+          "poster_url": "https://image.tmdb.org/t/p/w500/seKbiGx8mjF04Bx4LVBQk741Eqv.jpg"
+        },
+        {
+          "title": "Casino Royale",
+          "year": 1967,
+          "slug": "Sellers appears in this James Bond spoof",
+          "poster": "https://image.tmdb.org/t/p/w500/9wdw5H018bgIM8bK2HuDvh8BwOh.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 12208,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9wdw5H018bgIM8bK2HuDvh8BwOh.jpg"
+        },
+        {
+          "title": "The Mouse That Roared",
+          "year": 1959,
+          "slug": "Early Sellers comedy with multiple roles",
+          "poster": "https://image.tmdb.org/t/p/w500/dHSIXGVmLHsPeWdfyVe8J1eZCFS.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 12649,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dHSIXGVmLHsPeWdfyVe8J1eZCFS.jpg"
+        },
+        {
+          "title": "The Ladykillers",
+          "year": 1955,
+          "slug": "Classic Ealing comedy featuring Sellers",
+          "poster": "https://image.tmdb.org/t/p/w500/9LJ6ZV59Q92LAJAbmb7xm9dUBGU.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 5506,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9LJ6ZV59Q92LAJAbmb7xm9dUBGU.jpg"
+        },
+        {
+          "title": "The World of Henry Orient",
+          "year": 1964,
+          "slug": "Sellers plays an eccentric pianist",
+          "poster": "https://image.tmdb.org/t/p/w500/tMIRjDgsEj15RXEhMrgSqROUP7u.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 19662,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tMIRjDgsEj15RXEhMrgSqROUP7u.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

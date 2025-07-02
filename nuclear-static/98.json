@@ -1,0 +1,213 @@
+{
+  "props": {
+    "title": "Gladiator",
+    "year": 2000,
+    "initialSlug": "Fallen Roman hero fights for revenge as a gladiator",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
+    "initialStreaming": null,
+    "tmdbId": 98,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Gladiator** (2000) revolutionized the historical epic, injecting new life into a genre that had been dormant since **Spartacus** (1960) and **Ben-Hur** (1959). Ridley Scott's masterpiece combines visceral combat sequences with IMAX-worthy spectacle, while Russell Crowe's Maximus embodies the classic tragic hero. The film's influence sparked a wave of sword-and-sandal epics including **Troy** (2004), **300** (2006), and **Kingdom of Heaven** (2005). The iconic \"Are you not entertained?\" scene captures both the film's raw intensity and its commentary on spectacle and power."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Ben-Hur",
+            "year": 1959,
+            "slug": "Charlton Heston's epic revenge tale features the greatest chariot race in cinema history",
+            "poster": "https://image.tmdb.org/t/p/w500/m4WQ1dBIrEIHZNCoAjdpxwSKWyH.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 665,
+            "poster_url": "https://image.tmdb.org/t/p/w500/m4WQ1dBIrEIHZNCoAjdpxwSKWyH.jpg"
+          },
+          {
+            "title": "Spartacus",
+            "year": 1960,
+            "slug": "Stanley Kubrick directs Kirk Douglas in this definitive slave rebellion story",
+            "poster": "https://image.tmdb.org/t/p/w500/xLPpQlFWE12cbqNJQ5Vf4eJU8ij.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 967,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xLPpQlFWE12cbqNJQ5Vf4eJU8ij.jpg"
+          },
+          {
+            "title": "Braveheart",
+            "year": 1995,
+            "slug": "Mel Gibson's Scottish freedom fighter epic shares Gladiator's themes of revenge and liberty",
+            "poster": "https://image.tmdb.org/t/p/w500/or1gBugydmjToAEq7OZY0owwFk.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 197,
+            "poster_url": "https://image.tmdb.org/t/p/w500/or1gBugydmjToAEq7OZY0owwFk.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's technical achievements set new standards. Ridley Scott's team rebuilt Rome through groundbreaking CGI, creating a template for historical recreations that influenced everything from **Rome** (2005-2007) to **Game of Thrones** (2011-2019). Hans Zimmer's score, blending classical elements with Lisa Gerrard's ethereal vocals, defined epic film music for decades. The combat sequences, with their quick cuts and intimate camera work, transformed how action scenes were shot in historical films."
+      },
+      {
+        "type": "text",
+        "content": "Thematically, **Gladiator** explores power, corruption, and the nature of leadership through Commodus's twisted reign. This political dimension elevates it beyond mere action spectacle, drawing parallels to contemporary political dramas like **House of Cards** (2013-2018). The father-son dynamics between Marcus Aurelius, Commodus, and Maximus echo through later films like **300** (2006) and **Alexander** (2004). SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Kingdom of Heaven",
+            "year": 2005,
+            "slug": "Ridley Scott's crusader epic featuring Orlando Bloom as a blacksmith turned warrior",
+            "poster": "https://image.tmdb.org/t/p/w500/rNaBe4TwbMef71sgscqabpGKsxh.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 1495,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rNaBe4TwbMef71sgscqabpGKsxh.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's impact on combat choreography and historical accuracy created a new standard for historical epics. Later films like **Centurion** (2010) and **The Eagle** (2011) followed Gladiator's gritty, realistic approach to Roman warfare. The character development, particularly Joaquin Phoenix's complex portrayal of Commodus, influenced antagonist roles in subsequent historical dramas like **The King** (2019) and **The Last Duel** (2021)."
+      }
+    ],
+    "exploreFurther": [
+      "Roman Military Tactics in Cinema",
+      "The Historical Accuracy of Gladiator vs Real Roman Life",
+      "Hans Zimmer's Revolutionary Score Analysis",
+      "CGI Innovation in Historical Epics",
+      "Political Themes in Roman Historical Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Last Duel",
+          "year": 2021,
+          "slug": "Ridley Scott returns to historical epic with medieval France tale",
+          "poster": "https://image.tmdb.org/t/p/w500/zjrJE0fpzPvX8saJXj8VNfcjBoU.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 617653,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zjrJE0fpzPvX8saJXj8VNfcjBoU.jpg"
+        },
+        {
+          "title": "The Eagle",
+          "year": 2011,
+          "slug": "Roman soldier searches beyond Hadrian's Wall for lost legion",
+          "poster": "https://image.tmdb.org/t/p/w500/e7rcJQWplGZWz57yGlP87rlPmI.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 49494,
+          "poster_url": "https://image.tmdb.org/t/p/w500/e7rcJQWplGZWz57yGlP87rlPmI.jpg"
+        },
+        {
+          "title": "Centurion",
+          "year": 2010,
+          "slug": "Roman soldiers fight for survival behind enemy lines",
+          "poster": "https://image.tmdb.org/t/p/w500/9ZdfrcP2QCqoRSk7JF06tDWtrhP.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 23759,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9ZdfrcP2QCqoRSk7JF06tDWtrhP.jpg"
+        },
+        {
+          "title": "Troy",
+          "year": 2004,
+          "slug": "Brad Pitt stars in this adaptation of Homer's Iliad",
+          "poster": "https://image.tmdb.org/t/p/w500/a07wLy4ONfpsjnBqMwhlWTJTcm.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 652,
+          "poster_url": "https://image.tmdb.org/t/p/w500/a07wLy4ONfpsjnBqMwhlWTJTcm.jpg"
+        },
+        {
+          "title": "300",
+          "year": 2006,
+          "slug": "Stylized retelling of Spartan last stand at Thermopylae",
+          "poster": "https://image.tmdb.org/t/p/w500/h7Lcio0c9ohxPhSZg42eTlKIVVY.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 1271,
+          "poster_url": "https://image.tmdb.org/t/p/w500/h7Lcio0c9ohxPhSZg42eTlKIVVY.jpg"
+        },
+        {
+          "title": "Alexander",
+          "year": 2004,
+          "slug": "Oliver Stone's ambitious Alexander the Great biopic",
+          "poster": "https://image.tmdb.org/t/p/w500/91QR7ReHg4HiY66avTon185bawQ.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 1966,
+          "poster_url": "https://image.tmdb.org/t/p/w500/91QR7ReHg4HiY66avTon185bawQ.jpg"
+        },
+        {
+          "title": "King Arthur",
+          "year": 2004,
+          "slug": "Gritty take on Arthurian legend with Clive Owen",
+          "poster": "https://image.tmdb.org/t/p/w500/iKLZEAnjzr51Ij7TJtNejc5CN3i.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9477,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iKLZEAnjzr51Ij7TJtNejc5CN3i.jpg"
+        },
+        {
+          "title": "The Fall of the Roman Empire",
+          "year": 1964,
+          "slug": "Epic that inspired Gladiator's plot",
+          "poster": "https://image.tmdb.org/t/p/w500/ggrPUKNYFZ6ogs896ZiT0lQG9Tr.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 17277,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ggrPUKNYFZ6ogs896ZiT0lQG9Tr.jpg"
+        },
+        {
+          "title": "Exodus: Gods and Kings",
+          "year": 2014,
+          "slug": "Ridley Scott's biblical epic",
+          "poster": "https://image.tmdb.org/t/p/w500/uaDj37JtvLan9tihxZ18e6qL33b.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 147441,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uaDj37JtvLan9tihxZ18e6qL33b.jpg"
+        },
+        {
+          "title": "Rome",
+          "year": 2005,
+          "slug": "HBO series about Roman politics and warfare",
+          "poster": "https://image.tmdb.org/t/p/w500/rZeUkq6ztgrtIOQqAawMDYiydcV.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 49723,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rZeUkq6ztgrtIOQqAawMDYiydcV.jpg"
+        },
+        {
+          "title": "Pompeii",
+          "year": 2014,
+          "slug": "Gladiator drama set against volcanic disaster",
+          "poster": "https://image.tmdb.org/t/p/w500/dxxM3lLDjGRC50i5rhvfQziskAN.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 76649,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dxxM3lLDjGRC50i5rhvfQziskAN.jpg"
+        },
+        {
+          "title": "Ben-Hur",
+          "year": 2016,
+          "slug": "Modern remake of the classical epic",
+          "poster": "https://image.tmdb.org/t/p/w500/c9CoGrBA5yw8A7YBMz0hGzfzpNq.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 271969,
+          "poster_url": "https://image.tmdb.org/t/p/w500/c9CoGrBA5yw8A7YBMz0hGzfzpNq.jpg"
+        },
+        {
+          "title": "Risen",
+          "year": 2016,
+          "slug": "Roman tribune investigates Christ's resurrection",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Eagle of the Ninth",
+          "year": 1977,
+          "slug": "BBC adaptation of Roman Britain story",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "Sherlock Holmes",
+    "year": 2009,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/fvnu6QHyR0gSV1JI6lMyXCny21a.jpg",
+    "initialStreaming": null,
+    "tmdbId": 10528,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Guy Ritchie's **Sherlock Holmes** (2009) reinvented Victorian-era detection with kinetic action and gritty style. Robert Downey Jr.'s raw, pugilistic Holmes and Jude Law's capable Watson redefined the duo's dynamic, breaking from Basil Rathbone's refined 1940s portrayal. This version draws from Arthur Conan Doyle's original characterization of Holmes as a boxer and martial artist, while incorporating Ritchie's signature slow-motion fight sequences and London's industrial underbelly. The film follows **The Private Life of Sherlock Holmes** (1970) and **Young Sherlock Holmes** (1985) in exploring the detective's rougher edges."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Sherlock Holmes: A Game of Shadows",
+            "year": 2011,
+            "slug": "The detective faces his nemesis Moriarty in a continent-spanning chess match of wits and warfare",
+            "poster": "https://image.tmdb.org/t/p/w500/y1MYZkwhZK6L0Jy4YMuPktzDOfn.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 58574,
+            "poster_url": "https://image.tmdb.org/t/p/w500/y1MYZkwhZK6L0Jy4YMuPktzDOfn.jpg"
+          },
+          {
+            "title": "The Private Life of Sherlock Holmes",
+            "year": 1970,
+            "slug": "Billy Wilder's melancholic take explores Holmes's personal vulnerabilities",
+            "poster": "https://image.tmdb.org/t/p/w500/vQSYu0DXkqTOEfWF21AzaqXxYCZ.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 5185,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vQSYu0DXkqTOEfWF21AzaqXxYCZ.jpg"
+          },
+          {
+            "title": "Murder by Decree",
+            "year": 1979,
+            "slug": "Holmes investigates Jack the Ripper in this atmospheric Victorian thriller",
+            "poster": "https://image.tmdb.org/t/p/w500/vjuO0XKak8v3uUdNjWr5sNIlJ4b.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 34374,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vjuO0XKak8v3uUdNjWr5sNIlJ4b.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film sparked a renaissance in Holmes adaptations, influencing BBC's **Sherlock** (2010-2017) and CBS's **Elementary** (2012-2019). These modern interpretations share Ritchie's emphasis on Holmes's flaws and addictive personality, though they transpose the setting to contemporary times. The success of Downey Jr.'s portrayal also paved the way for more action-oriented period mysteries like **The Woman in Black** (2012) and **Victor Frankenstein** (2015). SUBHEAD: Victorian Action-Mystery Evolution"
+      },
+      {
+        "type": "text",
+        "content": "Ritchie's Holmes represents a broader trend of reimagining Victorian literature through a modern action lens, seen in **Van Helsing** (2004) and **The League of Extraordinary Gentlemen** (2003). The film's production design by Sarah Greenwood creates a steampunk-tinged London that influenced later period adventures like **The Great Wall** (2016) and **The Irregulars** (2021). Hans Zimmer's score, mixing period instruments with aggressive percussion, established a template for updating classical detective themes."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Sherlock Holmes portrayals from Rathbone to Cumberbatch",
+      "Guy Ritchie's visual style and its influence on period films",
+      "Victorian London in cinema: historical accuracy vs. stylized representation",
+      "The impact of steampunk aesthetics on modern period films",
+      "Hans Zimmer's approach to scoring period action films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Without a Clue",
+          "year": 1988,
+          "slug": "Comedy with Michael Caine as a fraudulent Holmes",
+          "poster": "https://image.tmdb.org/t/p/w500/uZmoKYDfF965UAgPrUSz0FbavsE.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 12582,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uZmoKYDfF965UAgPrUSz0FbavsE.jpg"
+        },
+        {
+          "title": "The Seven-Per-Cent Solution",
+          "year": 1976,
+          "slug": "Holmes meets Sigmund Freud",
+          "poster": "https://image.tmdb.org/t/p/w500/95IzjZIzXVDpojBuMWaeAmJzIDs.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 29578,
+          "poster_url": "https://image.tmdb.org/t/p/w500/95IzjZIzXVDpojBuMWaeAmJzIDs.jpg"
+        },
+        {
+          "title": "They Might Be Giants",
+          "year": 1971,
+          "slug": "Modern Holmes delusion story",
+          "poster": "https://image.tmdb.org/t/p/w500/yzv8J2Vu63AQyEw5D9ckyBgn9Fo.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 27841,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yzv8J2Vu63AQyEw5D9ckyBgn9Fo.jpg"
+        },
+        {
+          "title": "Mr. Holmes",
+          "year": 2015,
+          "slug": "Ian McKellen as an aging detective",
+          "poster": "https://image.tmdb.org/t/p/w500/nNHkoefLcdtaHyG08G8aDn1yFMw.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 280996,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nNHkoefLcdtaHyG08G8aDn1yFMw.jpg"
+        },
+        {
+          "title": "Young Sherlock Holmes",
+          "year": 1985,
+          "slug": "Holmes and Watson's school days",
+          "poster": "https://image.tmdb.org/t/p/w500/aOxVYvQoAfNSns4hW5Ah55GBzgq.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 11904,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aOxVYvQoAfNSns4hW5Ah55GBzgq.jpg"
+        },
+        {
+          "title": "The Great Mouse Detective",
+          "year": 1986,
+          "slug": "Animated Holmes homage",
+          "poster": "https://image.tmdb.org/t/p/w500/9uDr7vfjCFr39KGCcqrk44Cg7fQ.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9994,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9uDr7vfjCFr39KGCcqrk44Cg7fQ.jpg"
+        },
+        {
+          "title": "The Hound of the Baskervilles",
+          "year": 1959,
+          "slug": "Classic Hammer Horror adaptation",
+          "poster": "https://image.tmdb.org/t/p/w500/gJNscfPsBnQRdIjjdrTIHVCRwvY.jpg",
+          "initialStreaming": "Britbox",
+          "tmdb_id": 11791,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gJNscfPsBnQRdIjjdrTIHVCRwvY.jpg"
+        },
+        {
+          "title": "The Adventures of Sherlock Holmes",
+          "year": 1939,
+          "slug": "Rathbone's definitive portrayal",
+          "poster": "https://image.tmdb.org/t/p/w500/oNE3GyeA9ZUCzI9jYTgNy7vYTfO.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 17481,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oNE3GyeA9ZUCzI9jYTgNy7vYTfO.jpg"
+        },
+        {
+          "title": "Enola Holmes",
+          "year": 2020,
+          "slug": "Holmes's teenage sister investigates",
+          "poster": "https://image.tmdb.org/t/p/w500/riYInlsq2kf1AWoGm80JQW5dLKp.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 497582,
+          "poster_url": "https://image.tmdb.org/t/p/w500/riYInlsq2kf1AWoGm80JQW5dLKp.jpg"
+        },
+        {
+          "title": "The Sign of Four",
+          "year": 1983,
+          "slug": "Granada TV's faithful adaptation",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Britbox",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

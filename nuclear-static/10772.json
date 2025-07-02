@@ -1,0 +1,177 @@
+{
+  "props": {
+    "title": "Django",
+    "year": 1966,
+    "initialSlug": "Lone gunslinger seeks revenge in brutal spaghetti west",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/vs4vieNstSEfbgLFEelXXOPvr6h.jpg",
+    "initialStreaming": null,
+    "tmdbId": 10772,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Django** (1966) revolutionized Spaghetti Westerns with Franco Nero's mud-caked, coffin-dragging antihero. Director Sergio Corbucci crafted a brutally violent response to Sergio Leone's **A Fistful of Dollars** (1964), pushing the genre into darker territory. The film's striking opening sequence - Django dragging a mysterious coffin through muddy wasteland - instantly became iconic, inspiring over 30 unofficial sequels and directly influencing Quentin Tarantino's **Django Unchained** (2012). Corbucci's unflinching depiction of violence, particularly the ear-cutting scene, established new boundaries for on-screen brutality in Westerns."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Django",
+            "year": 1966,
+            "slug": "A mysterious gunslinger drags a coffin through the mud, caught between Mexican revolutionaries and racist Confederates",
+            "poster": "https://image.tmdb.org/t/p/w500/vs4vieNstSEfbgLFEelXXOPvr6h.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 10772,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vs4vieNstSEfbgLFEelXXOPvr6h.jpg"
+          },
+          {
+            "title": "The Great Silence",
+            "year": 1968,
+            "slug": "Corbucci's snowbound Western starring Jean-Louis Trintignant as a mute gunslinger",
+            "poster": "https://image.tmdb.org/t/p/w500/3kpxS7SZMyYSXvhDnmxQXOOxiTM.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 9028,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3kpxS7SZMyYSXvhDnmxQXOOxiTM.jpg"
+          },
+          {
+            "title": "Death Rides a Horse",
+            "year": 1967,
+            "slug": "A young man seeks revenge for his family's murder, aided by a mysterious gunfighter",
+            "poster": "https://image.tmdb.org/t/p/w500/qjvb8IYBaqizU1GG1qmGtMJpkBK.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 49397,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qjvb8IYBaqizU1GG1qmGtMJpkBK.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Django's influence rippled through Italian cinema, spawning countless imitators. **Keoma** (1976) starring Franco Nero reimagined the character in a post-apocalyptic setting, while **Django Kill... If You Live, Shoot!** (1967) took the formula into surreal, hallucinatory territory. The film's success helped establish the \"lone gunslinger\" archetype that dominated European Westerns, visible in later works like **Day of Anger** (1967) and **The Big Gundown** (1966)."
+      },
+      {
+        "type": "text",
+        "content": "Technically, Django broke new ground with Luis Bacalov's haunting title song and Giuseppe Ruzzolini's mud-caked cinematography. The film's use of extreme close-ups and dramatic zooms became hallmarks of the Spaghetti Western style, while its political undertones - addressing racism and revolutionary politics - distinguished it from American Westerns of the era like **The Good, the Bad and the Ugly** (1966). SUBHEAD: Legacy and Impact"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Django Unchained",
+            "year": 2012,
+            "slug": "Tarantino's homage follows a freed slave seeking revenge, with Franco Nero cameo",
+            "poster": "https://image.tmdb.org/t/p/w500/7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 68718,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Django's influence extends far beyond Westerns. The character's black-clad appearance inspired Japanese manga and countless video games. The film's brutal violence and moral ambiguity paved the way for revisionist Westerns like **The Wild Bunch** (1969) and modern neo-Westerns such as **No Country for Old Men** (2007). Even the coffin-as-weapon concept has been repeatedly borrowed, appearing in everything from **Desperado** (1995) to various anime series."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Spaghetti Western Violence: From Django to The Wild Bunch",
+      "Sergio Corbucci's Political Westerns: Examining Django and The Great Silence",
+      "Franco Nero's Career Impact on European Genre Cinema",
+      "Django's Musical Legacy: Luis Bacalov and Spaghetti Western Soundtracks",
+      "The Visual Style of Italian Westerns: Comparing Leone and Corbucci"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "A Fistful of Dollars",
+          "year": 1964,
+          "slug": "Clint Eastwood's breakthrough as the Man with No Name",
+          "poster": "https://image.tmdb.org/t/p/w500/lBwOEpwVeUAmrmglcstnaGcJq3Y.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 391,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lBwOEpwVeUAmrmglcstnaGcJq3Y.jpg"
+        },
+        {
+          "title": "The Big Gundown",
+          "year": 1966,
+          "slug": "Lee Van Cleef hunts a Mexican revolutionary",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Day of Anger",
+          "year": 1967,
+          "slug": "Lee Van Cleef teaches a young gunslinger",
+          "poster": "https://image.tmdb.org/t/p/w500/2TYZtE3BXP1LvktbkMb45mbd42G.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 56373,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2TYZtE3BXP1LvktbkMb45mbd42G.jpg"
+        },
+        {
+          "title": "Companeros",
+          "year": 1970,
+          "slug": "Revolutionary Western with Franco Nero",
+          "poster": "https://image.tmdb.org/t/p/w500/aTciHxrvGB5c42PP0soO8V9ZtNj.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 61044,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aTciHxrvGB5c42PP0soO8V9ZtNj.jpg"
+        },
+        {
+          "title": "Django Strike Again",
+          "year": 1987,
+          "slug": "Official sequel with Franco Nero returning",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Once Upon a Time in the West",
+          "year": 1968,
+          "slug": "Leone's epic Western masterpiece",
+          "poster": "https://image.tmdb.org/t/p/w500/qbYgqOczabWNn2XKwgMtVrntD6P.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 335,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qbYgqOczabWNn2XKwgMtVrntD6P.jpg"
+        },
+        {
+          "title": "The Mercenary",
+          "year": 1968,
+          "slug": "Corbucci's revolutionary Western",
+          "poster": "https://image.tmdb.org/t/p/w500/gIRRNEpkZg41syNBw0phpQfXa3C.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 48169,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gIRRNEpkZg41syNBw0phpQfXa3C.jpg"
+        },
+        {
+          "title": "Face to Face",
+          "year": 1967,
+          "slug": "Political Spaghetti Western about corruption",
+          "poster": "https://image.tmdb.org/t/p/w500/svzzrWh6snCRTBUb64E64rPoWWY.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 249553,
+          "poster_url": "https://image.tmdb.org/t/p/w500/svzzrWh6snCRTBUb64E64rPoWWY.jpg"
+        },
+        {
+          "title": "Navajo Joe",
+          "year": 1966,
+          "slug": "Burt Reynolds in violent revenge Western",
+          "poster": "https://image.tmdb.org/t/p/w500/hxrsKfgsPlQozvANkZy84lDRKFv.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 6474,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hxrsKfgsPlQozvANkZy84lDRKFv.jpg"
+        },
+        {
+          "title": "Cemetery Without Crosses",
+          "year": 1969,
+          "slug": "French-Italian Western homage",
+          "poster": "https://image.tmdb.org/t/p/w500/gUJnuwDAAMLudOlVpYsjlNNQz6O.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 20361,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gUJnuwDAAMLudOlVpYsjlNNQz6O.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

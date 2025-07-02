@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "Hud",
+    "year": 1963,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/A168bF52vmAIGkC2Qafj7M2EmaE.jpg",
+    "initialStreaming": null,
+    "tmdbId": 24748,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Hud** (1963) revolutionized the American Western by stripping away romantic myths of the frontier. Paul Newman's portrayal of the amoral, selfish Hud Bannon directly challenged Hollywood's typical heroic cowboy archetype established in films like **The Searchers** (1956) and **Shane** (1953). Director Martin Ritt and cinematographer James Wong Howe used stark black-and-white photography to create a harsh, modern Texas landscape that reflected the moral decay at the story's center. The film's exploration of generational conflict between Hud and his principled father Homer parallels similar family dramas like **East of Eden** (1955), but with a darker, more cynical edge."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Giant",
+            "year": 1956,
+            "slug": "Epic Texas drama exploring similar themes of changing values and family conflict across generations with Rock Hudson and James Dean",
+            "poster": "https://image.tmdb.org/t/p/w500/oQ1Arue52pFLSvvwfcNTy16hTCG.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 1712,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oQ1Arue52pFLSvvwfcNTy16hTCG.jpg"
+          },
+          {
+            "title": "The Last Picture Show",
+            "year": 1971,
+            "slug": "Peter Bogdanovich's nostalgic look at a dying Texas town, sharing Hud's stark visual style and themes of lost innocence",
+            "poster": "https://image.tmdb.org/t/p/w500/7NYePZc0lZrRomtmQsjOJMePTEb.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 25188,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7NYePZc0lZrRomtmQsjOJMePTEb.jpg"
+          },
+          {
+            "title": "The Misfits",
+            "year": 1961,
+            "slug": "Modern Western examining the end of the frontier era, starring Clark Gable and Marilyn Monroe",
+            "poster": "https://image.tmdb.org/t/p/w500/2lzWxT6HIvZMWSQHzk9eCpv3guQ.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 11536,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2lzWxT6HIvZMWSQHzk9eCpv3guQ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence on \"revisionist Westerns\" cannot be overstated. **Hud** paved the way for morally ambiguous anti-heroes in films like **The Wild Bunch** (1969) and **McCabe & Mrs. Miller** (1971). Patricia Neal's Oscar-winning performance as Alma Brown brought unprecedented complexity to a female character in a Western, influencing later roles in films like **Cat Ballou** (1965) and **The Quick and the Dead** (1995). SUBHEAD: The Modern Anti-Hero Legacy"
+      },
+      {
+        "type": "text",
+        "content": "Newman's portrayal of Hud Bannon established a template for the charismatic villain-protagonist that resonated through subsequent decades. Films like **Cool Hand Luke** (1967) and **Butch Cassidy and the Sundance Kid** (1969) built on this foundation, while modern works like **There Will Be Blood** (2007) and **No Country for Old Men** (2007) continue exploring similar themes of moral corruption in the American West. The film's unflinching look at environmental issues - through its cattle disease subplot - also presaged later eco-conscious Westerns like **Dances with Wolves** (1990)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of the American Anti-Hero in Cinema",
+      "James Wong Howe's Revolutionary Black-and-White Cinematography",
+      "The Impact of Method Acting on 1960s Hollywood",
+      "Revisionist Westerns and the Deconstruction of American Myths",
+      "Environmental Themes in Western Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Bad Day at Black Rock",
+          "year": 1955,
+          "slug": "Modern Western thriller about confronting dark secrets",
+          "poster": "https://image.tmdb.org/t/p/w500/8EnhHjU0DyCckmZRtn46s3WXeEf.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 14554,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8EnhHjU0DyCckmZRtn46s3WXeEf.jpg"
+        },
+        {
+          "title": "The Man Who Shot Liberty Valance",
+          "year": 1962,
+          "slug": "Classic Western examining myth versus reality",
+          "poster": "https://image.tmdb.org/t/p/w500/4C1R0LEivLjbv3swAzJfzh0tzXl.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 11697,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4C1R0LEivLjbv3swAzJfzh0tzXl.jpg"
+        },
+        {
+          "title": "Lonely Are the Brave",
+          "year": 1962,
+          "slug": "Modern Western about a cowboy out of time",
+          "poster": "https://image.tmdb.org/t/p/w500/g6wKfhwGPsKgPI77ZiLhL6argMQ.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 43002,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g6wKfhwGPsKgPI77ZiLhL6argMQ.jpg"
+        },
+        {
+          "title": "Junior Bonner",
+          "year": 1972,
+          "slug": "Sam Peckinpah's elegiac rodeo drama",
+          "poster": "https://image.tmdb.org/t/p/w500/qA85YYjQob3gPAFiafuIXFhSZSG.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 5927,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qA85YYjQob3gPAFiafuIXFhSZSG.jpg"
+        },
+        {
+          "title": "The Cowboys",
+          "year": 1972,
+          "slug": "John Wayne Western sharing themes of generational conflict",
+          "poster": "https://image.tmdb.org/t/p/w500/srdRiGV9tYFzWd2C4IjPJNtLrmr.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 15573,
+          "poster_url": "https://image.tmdb.org/t/p/w500/srdRiGV9tYFzWd2C4IjPJNtLrmr.jpg"
+        },
+        {
+          "title": "Thunderbolt and Lightfoot",
+          "year": 1974,
+          "slug": "Modern crime film with Western undertones",
+          "poster": "https://image.tmdb.org/t/p/w500/530RZ2HsxAgKVO4joNFjAgucbri.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 8348,
+          "poster_url": "https://image.tmdb.org/t/p/w500/530RZ2HsxAgKVO4joNFjAgucbri.jpg"
+        },
+        {
+          "title": "The Last American Hero",
+          "year": 1973,
+          "slug": "Based on a true story of a rural rebel",
+          "poster": "https://image.tmdb.org/t/p/w500/1PEOlAC6KDaj0WxWPw87kan3Kmp.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 31605,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1PEOlAC6KDaj0WxWPw87kan3Kmp.jpg"
+        },
+        {
+          "title": "Five Easy Pieces",
+          "year": 1970,
+          "slug": "Character study of alienation and family conflict",
+          "poster": "https://image.tmdb.org/t/p/w500/AciLTjLqyHiEA0lq35CV4Atnm4v.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 26617,
+          "poster_url": "https://image.tmdb.org/t/p/w500/AciLTjLqyHiEA0lq35CV4Atnm4v.jpg"
+        },
+        {
+          "title": "The Great Santini",
+          "year": 1979,
+          "slug": "Father-son conflict drama",
+          "poster": "https://image.tmdb.org/t/p/w500/xvoHFQlSAq0696rvONsEAWj1fcm.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 21887,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xvoHFQlSAq0696rvONsEAWj1fcm.jpg"
+        },
+        {
+          "title": "Country",
+          "year": 1984,
+          "slug": "Modern agricultural drama with similar themes",
+          "poster": "https://image.tmdb.org/t/p/w500/2lcDRkDJVtFt06Z1oueZtobcJJz.jpg",
+          "initialStreaming": "Roku",
+          "tmdb_id": 42087,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2lcDRkDJVtFt06Z1oueZtobcJJz.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

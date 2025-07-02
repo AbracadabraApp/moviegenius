@@ -1,0 +1,187 @@
+{
+  "props": {
+    "title": "Mansfield Park",
+    "year": 1999,
+    "initialSlug": "Patricia Rozema's modernized Austen adaptation",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/bRH3fDkBNAcgkCgQvA1YeZrWcN7.jpg",
+    "initialStreaming": "TBD",
+    "tmdbId": 10399,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Patricia Rozema's **Mansfield Park** (1999) boldly reimagines Jane Austen's most controversial novel with modern feminist sensibilities. Unlike more straightforward Austen adaptations like **Emma** (1996) or **Pride and Prejudice** (2005), Rozema's film infuses the character of Fanny Price with elements of Austen's own personality and writings, creating a more spirited and outspoken heroine. The film daringly addresses the source material's subtle commentary on British colonialism and the slave trade, themes that **Amazing Grace** (2006) would later tackle head-on."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Pride and Prejudice",
+            "year": 2005,
+            "slug": "Joe Wright's sumptuous adaptation starring Keira Knightley captures Austen's wit and romance with stunning cinematography",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": null
+          },
+          {
+            "title": "Emma",
+            "year": 1996,
+            "slug": "Gwyneth Paltrow shines in this playful, colorful take on Austen's matchmaking heroine",
+            "poster": "https://image.tmdb.org/t/p/w500/d6ksCUWYOaweyvGLi1JILYvIybN.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 12254,
+            "poster_url": "https://image.tmdb.org/t/p/w500/d6ksCUWYOaweyvGLi1JILYvIybN.jpg"
+          },
+          {
+            "title": "Sense and Sensibility",
+            "year": 1995,
+            "slug": "Emma Thompson's Oscar-winning screenplay brings Austen's first published novel to vibrant life",
+            "poster": "https://image.tmdb.org/t/p/w500/cBK2yL3HqhFvIVd7lLtazWlRZPR.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 4584,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cBK2yL3HqhFvIVd7lLtazWlRZPR.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Frances O'Connor's portrayal of Fanny Price marks a significant departure from Austen's original character, following a trend of modernized classic heroines that would influence later adaptations like **Becoming Jane** (2007) and **Miss Austen Regrets** (2008). The film's darker elements, including its exploration of slavery and patriarchal oppression, connect it to other period dramas that examine British colonialism, such as **Belle** (2013) and **The Piano** (2003)."
+      },
+      {
+        "type": "text",
+        "content": "The visual style of **Mansfield Park** (1999) eschews the typical sunny aesthetic of Austen adaptations for a more Gothic approach, reminiscent of **Jane Eyre** (2011) and **Bright Star** (2009). Rozema's direction emphasizes shadows and candlelit interiors, creating a psychological depth that would influence later literary adaptations like **The Portrait of a Lady** (1996). SUBHEAD: Breaking Austen Adaptation Conventions"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Becoming Jane",
+            "year": 2007,
+            "slug": "Anne Hathaway portrays young Jane Austen in this romantic biopic about the author's own love story",
+            "poster": "https://image.tmdb.org/t/p/w500/yHA6JEn57MBGp2yGFgYyopJvk2O.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 2977,
+            "poster_url": "https://image.tmdb.org/t/p/w500/yHA6JEn57MBGp2yGFgYyopJvk2O.jpg"
+          },
+          {
+            "title": "Belle",
+            "year": 2013,
+            "slug": "Based on a true story of a mixed-race aristocrat in 18th century England",
+            "poster": "https://image.tmdb.org/t/p/w500/qCK00C3L0bM5jphoYU0gFpG3Hly.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 205601,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qCK00C3L0bM5jphoYU0gFpG3Hly.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While most Austen adaptations like **Persuasion** (1995) and **Northanger Abbey** (2007) maintain strict period accuracy, **Mansfield Park** (1999) takes creative liberties that would influence later experimental adaptations like **Pride and Prejudice and Zombies** (2016). The film's meta-textual elements, incorporating Austen's letters and juvenilia into Fanny's character, create a complex commentary on authorship and female creativity that echoes through films like **Little Women** (2019)."
+      }
+    ],
+    "exploreFurther": [
+      "Jane Austen's Political Commentary in Film Adaptations",
+      "The Evolution of Period Drama Heroines: 1995-2020",
+      "Gothic Elements in Literary Adaptations",
+      "Metafictional Approaches to Classic Literature on Screen",
+      "Colonialism and Slavery in British Period Dramas"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Persuasion",
+          "year": 1995,
+          "slug": "Amanda Root stars in this faithful adaptation of Austen's last completed novel",
+          "poster": "https://image.tmdb.org/t/p/w500/10hycdhFLq3M3y0ONxIMSiY8Mrs.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 17015,
+          "poster_url": "https://image.tmdb.org/t/p/w500/10hycdhFLq3M3y0ONxIMSiY8Mrs.jpg"
+        },
+        {
+          "title": "The Young Victoria",
+          "year": 2009,
+          "slug": "Emily Blunt portrays the early years of Queen Victoria's reign",
+          "poster": "https://image.tmdb.org/t/p/w500/iGyuReyij3bPCtzJdSjTR8PR0pa.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 18320,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iGyuReyij3bPCtzJdSjTR8PR0pa.jpg"
+        },
+        {
+          "title": "Jane Eyre",
+          "year": 2011,
+          "slug": "Mia Wasikowska and Michael Fassbender star in this atmospheric adaptation",
+          "poster": "https://image.tmdb.org/t/p/w500/1j3MacXlWOJg0nrzmBfmlqPoWZp.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 46203,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1j3MacXlWOJg0nrzmBfmlqPoWZp.jpg"
+        },
+        {
+          "title": "Bright Star",
+          "year": 2009,
+          "slug": "Jane Campion's poetic film about John Keats and Fanny Brawne",
+          "poster": "https://image.tmdb.org/t/p/w500/csN6y4nq2kaBiegHaGw0DGp4plf.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 29963,
+          "poster_url": "https://image.tmdb.org/t/p/w500/csN6y4nq2kaBiegHaGw0DGp4plf.jpg"
+        },
+        {
+          "title": "The Piano",
+          "year": 1993,
+          "slug": "Jane Campion's haunting drama about a mute pianist in colonial New Zealand",
+          "poster": "https://image.tmdb.org/t/p/w500/rx8RKXn8OtuS6lqloYsjyrGOUp4.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 713,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rx8RKXn8OtuS6lqloYsjyrGOUp4.jpg"
+        },
+        {
+          "title": "Little Women",
+          "year": 2019,
+          "slug": "Greta Gerwig's fresh take on Louisa May Alcott's classic novel",
+          "poster": "https://image.tmdb.org/t/p/w500/yn5ihODtZ7ofn8pDYfxCmxh8AXI.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 331482,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yn5ihODtZ7ofn8pDYfxCmxh8AXI.jpg"
+        },
+        {
+          "title": "Miss Austen Regrets",
+          "year": 2008,
+          "slug": "BBC film about Jane Austen's later years",
+          "poster": "https://image.tmdb.org/t/p/w500/5r5xDvKTFAlkmwjoghkgVozNR1Z.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 18089,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5r5xDvKTFAlkmwjoghkgVozNR1Z.jpg"
+        },
+        {
+          "title": "Amazing Grace",
+          "year": 2006,
+          "slug": "The story of William Wilberforce's campaign to end slavery",
+          "poster": "https://image.tmdb.org/t/p/w500/zr48JEuwxcYM03NcdJU6qWMHPtq.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 15163,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zr48JEuwxcYM03NcdJU6qWMHPtq.jpg"
+        },
+        {
+          "title": "The Portrait of a Lady",
+          "year": 1996,
+          "slug": "Jane Campion adapts Henry James's novel",
+          "poster": "https://image.tmdb.org/t/p/w500/yoUuMtWTQXzfARYE0nF7Nn7gRuS.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 36758,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yoUuMtWTQXzfARYE0nF7Nn7gRuS.jpg"
+        },
+        {
+          "title": "Northanger Abbey",
+          "year": 2007,
+          "slug": "ITV adaptation of Austen's Gothic parody",
+          "poster": "https://image.tmdb.org/t/p/w500/tmJ0CVnrMMfTXXWwqvVH5a4CqNA.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 18093,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tmJ0CVnrMMfTXXWwqvVH5a4CqNA.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

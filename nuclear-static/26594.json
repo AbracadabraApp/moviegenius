@@ -1,0 +1,175 @@
+{
+  "props": {
+    "title": "The Secret",
+    "year": 2007,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/zLcm3V8tjybWZVbE0MIwJfvmv0g.jpg",
+    "initialStreaming": null,
+    "tmdbId": 26594,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Secret** (2007) sparked a self-help phenomenon by packaging the \"law of attraction\" into slick documentary form, following similar metaphysical films like **What the Bleep Do We Know!?** (2004). Director Drew Heriot borrowed heavily from **The Power of Positive Thinking** (1956), mixing talking head interviews with dramatic reenactments and CGI visualizations. While criticized for oversimplifying complex ideas, it undeniably influenced later manifestation-focused documentaries like **You Can Heal Your Life** (2007) and **The Shift** (2009)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Secret",
+            "year": 2007,
+            "slug": "Self-help documentary about the law of attraction featuring motivational speakers and authors",
+            "poster": "https://image.tmdb.org/t/p/w500/zLcm3V8tjybWZVbE0MIwJfvmv0g.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 26594,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zLcm3V8tjybWZVbE0MIwJfvmv0g.jpg"
+          },
+          {
+            "title": "What the Bleep Do We Know!?",
+            "year": 2004,
+            "slug": "Quantum physics meets spirituality in this documentary-drama hybrid",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": null
+          },
+          {
+            "title": "You Can Heal Your Life",
+            "year": 2007,
+            "slug": "Louise Hay's self-help philosophy adapted to film",
+            "poster": "https://image.tmdb.org/t/p/w500/1zyJ6eZhFwDKuVYrlNfEVyxfzon.jpg",
+            "initialStreaming": "Gaia",
+            "tmdb_id": 115685,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1zyJ6eZhFwDKuVYrlNfEVyxfzon.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's massive success spawned a wave of spiritual documentaries that merged New Age philosophy with pop psychology. **I Am** (2010) directed by Tom Shadyac examined human consciousness and interconnectedness. **Happy** (2011) explored the science of happiness through a similar lens of personal transformation. These films share The Secret's core message that thoughts create reality, though later entries tend toward more scientific grounding."
+      },
+      {
+        "type": "text",
+        "content": "The dramatized segments in **The Secret** (2007) established a template followed by films like **The Shift** (2009) and **The Moses Code** (2008) - mixing expert interviews with historical reenactments showing famous figures supposedly using these principles. This documentary-drama hybrid style became a hallmark of spiritual self-help cinema, though few matched The Secret's cultural impact or box office success. SUBHEAD: Impact on Mainstream Self-Help Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "I Am",
+            "year": 2010,
+            "slug": "Hollywood director explores meaning of life after near-death experience",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": null
+          },
+          {
+            "title": "The Shift",
+            "year": 2009,
+            "slug": "Wayne Dyer's spiritual journey from ambition to meaning",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Gaia",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The Secret's influence extended beyond spiritual documentaries into mainstream self-help films. **Julie & Julia** (2009) and **Eat Pray Love** (2010) incorporated similar themes of manifesting desires through intention and action. Even **The Wolf of Wall Street** (2013) showed the darker side of visualization and manifestation techniques. The film's legacy lives on in countless YouTube videos and streaming documentaries about manifestation, though few maintain its production values or star power."
+      }
+    ],
+    "exploreFurther": [
+      "The History of New Thought Movement in Cinema",
+      "Visual Effects in Self-Help Documentaries",
+      "The Science Behind The Law of Attraction",
+      "Manifestation Films' Impact on Popular Culture",
+      "Evolution of Spiritual Documentary Filmmaking"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Moses Code",
+          "year": 2008,
+          "slug": "Ancient spiritual secrets revealed through dramatic reenactments",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Gaia",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Compass",
+          "year": 2009,
+          "slug": "Following The Secret's format with new spiritual teachers",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Try It On Everything",
+          "year": 2007,
+          "slug": "EFT tapping technique documentary",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Living Matrix",
+          "year": 2009,
+          "slug": "Alternative healing and quantum physics documentary",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Gaia",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Power of the Heart",
+          "year": 2014,
+          "slug": "Baptist de Pape's spiritual journey documentary",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Finding Joe",
+          "year": 2011,
+          "slug": "Joseph Campbell's hero's journey explored",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Cure Is",
+          "year": 2010,
+          "slug": "Mind-body healing documentary",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Spiritual Liberation",
+          "year": 2009,
+          "slug": "Michael Beckwith's teaching documentary",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Gaia",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Tapping Solution",
+          "year": 2007,
+          "slug": "Nick Ortner's EFT documentary",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "3 Magic Words",
+          "year": 2010,
+          "slug": "Self-discovery and consciousness documentary",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

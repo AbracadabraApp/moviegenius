@@ -1,0 +1,169 @@
+{
+  "props": {
+    "title": "The Lion in Winter",
+    "year": 1968,
+    "initialSlug": "A family at war for the throne.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/yMgJnZADJObzfjA70ygXJkjnrFX.jpg",
+    "initialStreaming": null,
+    "tmdbId": 18988,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Lion in Winter** (1968) stands as one of cinema's most electric displays of medieval power politics and family dysfunction. Peter O'Toole and Katharine Hepburn deliver career-defining performances as Henry II and Eleanor of Aquitaine, spitting venom and Shakespeare-worthy dialogue as they scheme over succession to the English throne. The film's confined Christmas setting creates a pressure cooker atmosphere where alliances shift by the minute. Like **Becket** (1964), which also starred O'Toole as Henry II, it transforms historical drama into intimate psychological warfare."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "A Man for All Seasons",
+            "year": 1966,
+            "slug": "Paul Scofield's portrayal of Sir Thomas More facing off against Henry VIII showcases similar themes of power, conscience and medieval politics",
+            "poster": "https://image.tmdb.org/t/p/w500/wK0PqNYRAKKozQvi6M9e1HCH6LA.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 874,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wK0PqNYRAKKozQvi6M9e1HCH6LA.jpg"
+          },
+          {
+            "title": "Anne of the Thousand Days",
+            "year": 1969,
+            "slug": "Richard Burton and Genevieve Bujold bring the Henry VIII-Anne Boleyn tragedy to vivid life with comparable royal intrigue",
+            "poster": "https://image.tmdb.org/t/p/w500/u2p5SspAs1GqeuHXNXywryU3k37.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 22522,
+            "poster_url": "https://image.tmdb.org/t/p/w500/u2p5SspAs1GqeuHXNXywryU3k37.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence echoes through later historical dramas that prioritize psychological complexity over pageantry. **The Madness of King George** (1994) and **Elizabeth** (1998) follow its template of exploring the personal costs of power. But Lion in Winter's particular genius lies in its theatrical roots - like **Mary Queen of Scots** (2018), it treats historical figures as complex characters in a chamber drama rather than distant icons."
+      },
+      {
+        "type": "text",
+        "content": "James Goldman's razor-sharp screenplay transforms medieval history into a savage family therapy session. The film's approach to historical drama influenced everything from **The Crown** (2016-) to **Game of Thrones** (2011-2019). Its depiction of Eleanor of Aquitaine specifically shaped how later films like **Robin Hood: Prince of Thieves** (1991) portrayed medieval women wielding power through cunning rather than just force. SUBHEAD: Legacy and Influence on Modern Historical Drama"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Becket",
+            "year": 1964,
+            "slug": "Peter O'Toole's first outing as Henry II, exploring his complex relationship with Thomas Becket",
+            "poster": "https://image.tmdb.org/t/p/w500/swWmxVbq0pXv4wwsc2O803PiXR7.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 15421,
+            "poster_url": "https://image.tmdb.org/t/p/w500/swWmxVbq0pXv4wwsc2O803PiXR7.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's DNA is evident in modern works that blend historical epic with intimate drama. **The Favourite** (2018) echoes its portrayal of court politics as a vicious game, while series like **Wolf Hall** (2015) adopt its approach of making historical figures frighteningly immediate. The way it uses Christmas as a pressure point for family conflict influenced countless later films, from **Fanny and Alexander** (1982) to **The Royal Tenenbaums** (2001)."
+      }
+    ],
+    "exploreFurther": [
+      "Medieval Power Politics in Cinema - From Becket to Game of Thrones",
+      "The Evolution of Katharine Hepburn's Screen Persona",
+      "Adapting Stage Plays to Film - Theatrical Origins in Historical Drama",
+      "The Plantagenet Dynasty in Popular Culture",
+      "Historical Accuracy vs Dramatic License in Period Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Richard III",
+          "year": 1995,
+          "slug": "Ian McKellen's fascist-era adaptation of Shakespeare's history play",
+          "poster": "https://image.tmdb.org/t/p/w500/aN2BcIH6rvGbYiRQCS8lxOdeeVQ.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 31174,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aN2BcIH6rvGbYiRQCS8lxOdeeVQ.jpg"
+        },
+        {
+          "title": "Mary Queen of Scots",
+          "year": 2018,
+          "slug": "Saoirse Ronan and Margot Robbie as rival queens in Tudor England",
+          "poster": "https://image.tmdb.org/t/p/w500/b5RMzLAyq5QW6GtN9sIeAEMLlBI.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 457136,
+          "poster_url": "https://image.tmdb.org/t/p/w500/b5RMzLAyq5QW6GtN9sIeAEMLlBI.jpg"
+        },
+        {
+          "title": "The King",
+          "year": 2019,
+          "slug": "Timothée Chalamet as young Henry V in Shakespeare adaptation",
+          "poster": "https://image.tmdb.org/t/p/w500/8u0QBGUbZcBW59VEAdmeFl9g98N.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 504949,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8u0QBGUbZcBW59VEAdmeFl9g98N.jpg"
+        },
+        {
+          "title": "The Other Boleyn Girl",
+          "year": 2008,
+          "slug": "Tudor intrigue focusing on the Boleyn sisters",
+          "poster": "https://image.tmdb.org/t/p/w500/q2lgC8mmAltWTkbqPM8n5EYF4XL.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 12184,
+          "poster_url": "https://image.tmdb.org/t/p/w500/q2lgC8mmAltWTkbqPM8n5EYF4XL.jpg"
+        },
+        {
+          "title": "Elizabeth",
+          "year": 1998,
+          "slug": "Cate Blanchett as the young Elizabeth I rising to power",
+          "poster": "https://image.tmdb.org/t/p/w500/qEk48VLOdibXFVIEzE9ETZUBcCs.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 4518,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qEk48VLOdibXFVIEzE9ETZUBcCs.jpg"
+        },
+        {
+          "title": "The Private Lives of Elizabeth and Essex",
+          "year": 1939,
+          "slug": "Bette Davis as Elizabeth I",
+          "poster": "https://image.tmdb.org/t/p/w500/76UbFh03IvO8fwD8MywFpdfUCcj.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 16902,
+          "poster_url": "https://image.tmdb.org/t/p/w500/76UbFh03IvO8fwD8MywFpdfUCcj.jpg"
+        },
+        {
+          "title": "Henry V",
+          "year": 1989,
+          "slug": "Kenneth Branagh's acclaimed Shakespeare adaptation",
+          "poster": "https://image.tmdb.org/t/p/w500/w9R2HsYNnfF3m9uEo2UAmPNJr8a.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10705,
+          "poster_url": "https://image.tmdb.org/t/p/w500/w9R2HsYNnfF3m9uEo2UAmPNJr8a.jpg"
+        },
+        {
+          "title": "The Hollow Crown",
+          "year": 2012,
+          "slug": "Compilation of Shakespeare's history plays",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": null
+        },
+        {
+          "title": "Wolf Hall",
+          "year": 2015,
+          "slug": "Mark Rylance as Thomas Cromwell in Tudor England",
+          "poster": null,
+          "initialStreaming": "PBS",
+          "tmdb_id": 1386374,
+          "poster_url": null
+        },
+        {
+          "title": "The Last Duel",
+          "year": 2021,
+          "slug": "Medieval France tale of power and justice",
+          "poster": "https://image.tmdb.org/t/p/w500/zjrJE0fpzPvX8saJXj8VNfcjBoU.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 617653,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zjrJE0fpzPvX8saJXj8VNfcjBoU.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "Horror of Dracula",
+    "year": 1958,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/9UHOATvzXQWbElSGygOY1ar3vpp.jpg",
+    "initialStreaming": null,
+    "tmdbId": 11868,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Horror of Dracula** (1958) revolutionized vampire cinema through Christopher Lee's commanding performance and Hammer Films' vivid Technicolor gore. Unlike the gothic shadows of **Nosferatu** (1922) and Universal's **Dracula** (1931), Hammer's interpretation explodes with crimson blood and Lee's imposing 6'5\" frame. Director Terence Fisher transforms Bram Stoker's novel into a fast-paced thriller, while Peter Cushing's Van Helsing brings scientific precision to vampire hunting. The film's saturated colors and overt sexuality broke new ground, influencing everything from **Interview with the Vampire** (1994) to **Bram Stoker's Dracula** (1992)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Dracula",
+            "year": 1931,
+            "slug": "Bela Lugosi's iconic portrayal set the template for sophisticated vampire counts",
+            "poster": "https://image.tmdb.org/t/p/w500/ueVSPt7vAba0XScHWTDWS5tNxYX.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 138,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ueVSPt7vAba0XScHWTDWS5tNxYX.jpg"
+          },
+          {
+            "title": "Nosferatu",
+            "year": 1922,
+            "slug": "F.W. Murnau's unauthorized Dracula adaptation remains a masterpiece of German Expressionism",
+            "poster": "https://image.tmdb.org/t/p/w500/zv7J85D8CC9qYagAEhPM63CIG6j.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 653,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zv7J85D8CC9qYagAEhPM63CIG6j.jpg"
+          },
+          {
+            "title": "The Curse of Frankenstein",
+            "year": 1957,
+            "slug": "Hammer's first color horror film paired Cushing and Lee, launching their gothic renaissance",
+            "poster": "https://image.tmdb.org/t/p/w500/r9PDkqKhzdo54aqnOL88wUJY49B.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 3079,
+            "poster_url": "https://image.tmdb.org/t/p/w500/r9PDkqKhzdo54aqnOL88wUJY49B.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Hammer Films transformed horror cinema in the late 1950s by reimagining Universal's monster classics in lurid color. **The Curse of Frankenstein** (1957) proved the formula, but **Horror of Dracula** perfected it. The studio's approach emphasized blood, cleavage, and religious imagery, creating a distinctly British horror style that influenced generations of filmmakers. The Lee-Cushing dynamic would be repeated in numerous Hammer productions, including **The Mummy** (1959) and **The Hound of the Baskervilles** (1959)."
+      },
+      {
+        "type": "text",
+        "content": "The film's climactic confrontation between Dracula and Van Helsing set new standards for horror movie showdowns. The innovative use of sunlight, crosses, and physical combat created a template still followed today in films like **Blade** (1998) and **Van Helsing** (2004). Fisher's direction keeps the action taught while never losing the gothic atmosphere that made Hammer famous. SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Brides of Dracula",
+            "year": 1960,
+            "slug": "Peter Cushing returns as Van Helsing in this stylish Hammer sequel",
+            "poster": "https://image.tmdb.org/t/p/w500/8i0WWZwBh1eQB2KJSSQdYmS2q3C.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 23220,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8i0WWZwBh1eQB2KJSSQdYmS2q3C.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Christopher Lee's interpretation of Dracula became definitive, inspiring countless imitators. His sophisticated menace and physical presence influenced performances from Gary Oldman in **Bram Stoker's Dracula** (1992) to Luke Evans in **Dracula Untold** (2014). The film's success launched a series of Dracula sequels, though Lee grew increasingly frustrated with the diminishing quality, making his final appearance in **The Satanic Rites of Dracula** (1973)."
+      }
+    ],
+    "exploreFurther": [
+      "Hammer Horror's Color Revolution: How Technicolor Changed Horror Cinema",
+      "Christopher Lee and Peter Cushing: The Definitive Horror Double Act",
+      "Adapting Stoker: How Horror of Dracula Reimagined the Novel",
+      "Religious Symbolism in Hammer Horror Films",
+      "The Evolution of Vampire Cinema: From Nosferatu to Modern Day"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Dracula: Prince of Darkness",
+          "year": 1966,
+          "slug": "Lee returns in a sequel focusing on four stranded travelers",
+          "poster": "https://image.tmdb.org/t/p/w500/9uSP0h1jYZSLd3fZw1b4H1w3cPo.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 17102,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9uSP0h1jYZSLd3fZw1b4H1w3cPo.jpg"
+        },
+        {
+          "title": "The Devil Rides Out",
+          "year": 1968,
+          "slug": "Lee switches sides to fight evil in Hammer's occult thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/p1AWO8PIMfT6XGHV8uaa8erencj.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 39891,
+          "poster_url": "https://image.tmdb.org/t/p/w500/p1AWO8PIMfT6XGHV8uaa8erencj.jpg"
+        },
+        {
+          "title": "Taste the Blood of Dracula",
+          "year": 1970,
+          "slug": "Lee's count returns to corrupt Victorian aristocracy",
+          "poster": "https://image.tmdb.org/t/p/w500/3xMrdNnyvYrdJaKq9dWJKkTHGvP.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 29748,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3xMrdNnyvYrdJaKq9dWJKkTHGvP.jpg"
+        },
+        {
+          "title": "The Vampire Lovers",
+          "year": 1970,
+          "slug": "Hammer's adaptation of Carmilla pushes sexual boundaries",
+          "poster": "https://image.tmdb.org/t/p/w500/zPhp6SDQlYXvZYkvHrF3ecmSdQ0.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 31952,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zPhp6SDQlYXvZYkvHrF3ecmSdQ0.jpg"
+        },
+        {
+          "title": "Kiss of the Vampire",
+          "year": 1963,
+          "slug": "Non-Dracula Hammer vampire film with strong atmosphere",
+          "poster": "https://image.tmdb.org/t/p/w500/4RHWz6frLuTxuRW3Kh0YosOhdir.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 39222,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4RHWz6frLuTxuRW3Kh0YosOhdir.jpg"
+        },
+        {
+          "title": "Captain Kronos: Vampire Hunter",
+          "year": 1974,
+          "slug": "Hammer's innovative blend of horror and swashbuckling",
+          "poster": "https://image.tmdb.org/t/p/w500/o7FKicm94YYmAnjsTo3TrUPKa4p.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 18979,
+          "poster_url": "https://image.tmdb.org/t/p/w500/o7FKicm94YYmAnjsTo3TrUPKa4p.jpg"
+        },
+        {
+          "title": "Dracula Has Risen from the Grave",
+          "year": 1968,
+          "slug": "Stylish sequel with memorable cemetery scenes",
+          "poster": "https://image.tmdb.org/t/p/w500/yo7FPlWRAevH0Pz60MHwGodg1NG.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 29778,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yo7FPlWRAevH0Pz60MHwGodg1NG.jpg"
+        },
+        {
+          "title": "Scars of Dracula",
+          "year": 1970,
+          "slug": "Lee's count at his most ruthless in violent entry",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Legend of the 7 Golden Vampires",
+          "year": 1974,
+          "slug": "Hammer meets kung fu in unique horror hybrid",
+          "poster": "https://image.tmdb.org/t/p/w500/xPhesvQhGKxTsiLsdZFvKabVzlp.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 26480,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xPhesvQhGKxTsiLsdZFvKabVzlp.jpg"
+        },
+        {
+          "title": "Vampire Circus",
+          "year": 1972,
+          "slug": "Dark, surreal tale of a cursed traveling circus",
+          "poster": "https://image.tmdb.org/t/p/w500/nHsVRJ1beSQUoJDLXen6QyiayAu.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 29960,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nHsVRJ1beSQUoJDLXen6QyiayAu.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

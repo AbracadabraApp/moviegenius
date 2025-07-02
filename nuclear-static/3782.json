@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "Ikiru",
+    "year": 1952,
+    "initialSlug": "A life illuminated.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/dgNTS4EQDDVfkzJI5msKuHu2Ei3.jpg",
+    "initialStreaming": null,
+    "tmdbId": 3782,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Ikiru** (1952) stands as Akira Kurosawa's most profound meditation on life's meaning, following bureaucrat Kanji Watanabe's journey after his terminal cancer diagnosis. Unlike Kurosawa's samurai epics like **Seven Samurai** (1954), Ikiru strips away spectacle for intimate human drama. The film's structure brilliantly splits into two parts - Watanabe's personal awakening and the post-death reflection on his impact - influencing later works like **After Life** (1998) and **Departures** (2008). Kurosawa's masterful direction includes the haunting scene of Watanabe singing \"Life is Brief\" on a snow-covered swing, a moment that crystallizes the film's core themes."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Tokyo Story",
+            "year": 1953,
+            "slug": "Yasujiro Ozu's masterpiece about aging parents visiting their busy adult children explores similar themes of life's transience",
+            "poster": "https://image.tmdb.org/t/p/w500/g2YbTYKpY7N2yDSk7BfXZ18I5QV.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 18148,
+            "poster_url": "https://image.tmdb.org/t/p/w500/g2YbTYKpY7N2yDSk7BfXZ18I5QV.jpg"
+          },
+          {
+            "title": "Wild Strawberries",
+            "year": 1957,
+            "slug": "Ingmar Bergman's meditation on mortality follows an elderly professor confronting his life choices",
+            "poster": "https://image.tmdb.org/t/p/w500/iyTD2QnySNMPUPE3IedZQipSWfz.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 614,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iyTD2QnySNMPUPE3IedZQipSWfz.jpg"
+          },
+          {
+            "title": "The Seventh Seal",
+            "year": 1957,
+            "slug": "Bergman's iconic film about a knight playing chess with Death examines life's meaning",
+            "poster": "https://image.tmdb.org/t/p/w500/wcZ21zrOsy0b52AfAF50XpTiv75.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 490,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wcZ21zrOsy0b52AfAF50XpTiv75.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The influence of Ikiru on contemporary cinema cannot be overstated. **Living** (2022), starring Bill Nighy, directly remakes Kurosawa's film for modern Britain, while works like **The Bucket List** (2007) and **50/50** (2011) echo its exploration of finding purpose in the face of mortality. The film's examination of bureaucratic inertia versus individual action resonates in later social critiques like **Brazil** (1985) and **Sorry We Missed You** (2019). SUBHEAD: Legacy and Modern Relevance"
+      },
+      {
+        "type": "text",
+        "content": "Ikiru's technical innovations continue to inspire filmmakers. Its non-linear narrative structure and use of multiple perspectives influenced works like **Rashomon** (1950) and **Citizen Kane** (1941). Modern directors like Hirokazu Kore-eda, particularly in **Still Walking** (2008) and **After Life** (1998), carry forward Kurosawa's humanist tradition of examining ordinary lives with extraordinary depth."
+      }
+    ],
+    "exploreFurther": [
+      "Japanese Post-War Cinema and Social Recovery",
+      "Kurosawa's Non-Samurai Films",
+      "Death in World Cinema",
+      "Bureaucracy and Individual Agency in Film",
+      "The Art of Non-Linear Storytelling"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Cleo from 5 to 7",
+          "year": 1962,
+          "slug": "A French New Wave classic about a woman awaiting cancer test results",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Death of Mr. Lazarescu",
+          "year": 2005,
+          "slug": "Dark comedy about a dying man navigating bureaucratic healthcare",
+          "poster": "https://image.tmdb.org/t/p/w500/c3B7GwMYgNi15VMdcKZawgt6mf5.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 31032,
+          "poster_url": "https://image.tmdb.org/t/p/w500/c3B7GwMYgNi15VMdcKZawgt6mf5.jpg"
+        },
+        {
+          "title": "All That Jazz",
+          "year": 1979,
+          "slug": "Autobiographical musical about a director confronting mortality",
+          "poster": "https://image.tmdb.org/t/p/w500/culCEdj4srLljefgn4XKd6k3C5t.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 16858,
+          "poster_url": "https://image.tmdb.org/t/p/w500/culCEdj4srLljefgn4XKd6k3C5t.jpg"
+        },
+        {
+          "title": "Late Spring",
+          "year": 1949,
+          "slug": "Ozu's touching father-daughter story about life changes",
+          "poster": "https://image.tmdb.org/t/p/w500/iNtRSY2AGjW1VDXDR79bKsNUdus.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 20530,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iNtRSY2AGjW1VDXDR79bKsNUdus.jpg"
+        },
+        {
+          "title": "Yi Yi",
+          "year": 2000,
+          "slug": "Taiwanese drama examining life and death across generations",
+          "poster": "https://image.tmdb.org/t/p/w500/mR8dSQZI8X6Z1NClJhFrtJp636z.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 25538,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mR8dSQZI8X6Z1NClJhFrtJp636z.jpg"
+        },
+        {
+          "title": "Amour",
+          "year": 2012,
+          "slug": "Haneke's unflinching look at aging and end-of-life care",
+          "poster": "https://image.tmdb.org/t/p/w500/19hyCudualHxCD0GrEngqsi0wBF.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 86837,
+          "poster_url": "https://image.tmdb.org/t/p/w500/19hyCudualHxCD0GrEngqsi0wBF.jpg"
+        },
+        {
+          "title": "The Barbarian Invasions",
+          "year": 2003,
+          "slug": "A dying professor reconciles with family and friends",
+          "poster": "https://image.tmdb.org/t/p/w500/ekmFbyMgm3SPklSlDUW1wZ33yMP.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 11042,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ekmFbyMgm3SPklSlDUW1wZ33yMP.jpg"
+        },
+        {
+          "title": "The Sweet Hereafter",
+          "year": 1997,
+          "slug": "Small town grapples with loss and meaning",
+          "poster": "https://image.tmdb.org/t/p/w500/gJy7LMq4b5qO5fsSUSoBgm24BHf.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 10217,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gJy7LMq4b5qO5fsSUSoBgm24BHf.jpg"
+        },
+        {
+          "title": "Biutiful",
+          "year": 2010,
+          "slug": "A dying man seeks redemption in Barcelona",
+          "poster": "https://image.tmdb.org/t/p/w500/4BLshBMp8INRDhvfuKwxMlHDIIt.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 45958,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4BLshBMp8INRDhvfuKwxMlHDIIt.jpg"
+        },
+        {
+          "title": "Poetry",
+          "year": 2010,
+          "slug": "Elderly woman discovers poetry while facing Alzheimer's",
+          "poster": "https://image.tmdb.org/t/p/w500/dcefUQ0AIgRvkh9DS76tvetzxc2.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 47909,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dcefUQ0AIgRvkh9DS76tvetzxc2.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

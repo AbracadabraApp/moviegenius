@@ -1,0 +1,195 @@
+{
+  "props": {
+    "title": "Gettysburg",
+    "year": 1993,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/566AVv5fwoQTdFy37JXc8QcyDSy.jpg",
+    "initialStreaming": null,
+    "tmdbId": 10655,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Gettysburg** (1993) stands as the definitive cinematic portrayal of the Civil War's pivotal battle. Director Ronald F. Maxwell adapts Michael Shaara's \"The Killer Angels\" with meticulous attention to historical detail, featuring Jeff Daniels' career-defining performance as Colonel Joshua Chamberlain and Martin Sheen as Robert E. Lee. The film's sprawling 4.5-hour runtime allows for deep character development while capturing the tactical complexity of Pickett's Charge and the desperate defense of Little Round Top. Unlike glossier Civil War films like **Glory** (1989), Gettysburg emphasizes strategic decision-making and the personal conflicts of commanders."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Glory",
+            "year": 1989,
+            "slug": "Follows the first all-black volunteer company in the Civil War, featuring powerful performances from Denzel Washington and Morgan Freeman",
+            "poster": "https://image.tmdb.org/t/p/w500/pGDzBjZvzmSCIEduQBfESLMiwtp.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 9665,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pGDzBjZvzmSCIEduQBfESLMiwtp.jpg"
+          },
+          {
+            "title": "Gods and Generals",
+            "year": 2003,
+            "slug": "Maxwell's prequel to Gettysburg, focusing on Stonewall Jackson's campaigns",
+            "poster": "https://image.tmdb.org/t/p/w500/tvRgz24ZuekCjeOROuN9MgVZLa5.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 16072,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tvRgz24ZuekCjeOROuN9MgVZLa5.jpg"
+          },
+          {
+            "title": "Lincoln",
+            "year": 2012,
+            "slug": "Spielberg's masterful examination of the war's political dimension through Lincoln's fight to pass the 13th Amendment",
+            "poster": "https://image.tmdb.org/t/p/w500/5KeUqW6DpVtf8G9VMuI2l0XIPCo.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 72976,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5KeUqW6DpVtf8G9VMuI2l0XIPCo.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's battle sequences set new standards for historical accuracy in war cinema. Maxwell employed thousands of Civil War reenactors, creating unprecedented authenticity in mass battle scenes that influenced later productions like **Saving Private Ryan** (1998) and **The Patriot** (2000). The attention to period-correct uniforms, weapons, and tactics makes Gettysburg more documentary-like than typical Hollywood war films, while Ted Turner's involvement ensured the budget necessary for such scale."
+      },
+      {
+        "type": "text",
+        "content": "Gettysburg's influence extends beyond Civil War films. Its emphasis on military leadership and strategic planning influenced later war epics like **Black Hawk Down** (2001) and **We Were Soldiers** (2002). The film's approach to showing both sides' perspectives without obvious bias created a template for nuanced historical storytelling, though some critics argue it occasionally sanitizes the war's brutal reality and deeper racial implications. SUBHEAD: Civil War Cinema's Evolution"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Free State of Jones",
+            "year": 2016,
+            "slug": "Matthew McConaughey leads a Civil War drama about Southern farmers who rebel against the Confederacy",
+            "poster": "https://image.tmdb.org/t/p/w500/pKhJLNHu5Aw8BgxOJ90lCmg0j0f.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 316152,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pKhJLNHu5Aw8BgxOJ90lCmg0j0f.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Gettysburg marked a shift from earlier Civil War films like **Gone with the Wind** (1939) and **The Good, the Bad and the Ugly** (1966), which used the war primarily as backdrop. Modern Civil War films like **Cold Mountain** (2003) and **12 Years a Slave** (2013) focus more on civilian experiences and slavery's central role, making Gettysburg's military focus increasingly unique in the genre."
+      }
+    ],
+    "exploreFurther": [
+      "Civil War Battle Tactics and Their Accurate Portrayal in Cinema",
+      "The Role of Civil War Reenactors in Historical Films",
+      "Joshua Lawrence Chamberlain: From History to Screen",
+      "The Evolution of Civil War Cinema from Birth of a Nation to Present",
+      "Military Leadership Themes in War Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Birth of a Nation",
+          "year": 1915,
+          "slug": "Controversial but historically significant Civil War epic",
+          "poster": "https://image.tmdb.org/t/p/w500/f9MkgI1ObRVvJwWgJyWtRbgyWng.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 618,
+          "poster_url": "https://image.tmdb.org/t/p/w500/f9MkgI1ObRVvJwWgJyWtRbgyWng.jpg"
+        },
+        {
+          "title": "Gone with the Wind",
+          "year": 1939,
+          "slug": "Epic Civil War romance from a Southern perspective",
+          "poster": "/images/posters/gone-with-the-wind.jpg",
+          "initialStreaming": "Max",
+          "tmdb_id": 770,
+          "poster_url": "/images/posters/gone-with-the-wind.jpg"
+        },
+        {
+          "title": "Friendly Persuasion",
+          "year": 1956,
+          "slug": "Quaker family struggles with pacifism during Civil War",
+          "poster": "https://image.tmdb.org/t/p/w500/mhsdObvFHoOfgaKAVJUOeK3LiOP.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 43258,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mhsdObvFHoOfgaKAVJUOeK3LiOP.jpg"
+        },
+        {
+          "title": "The Good, the Bad and the Ugly",
+          "year": 1966,
+          "slug": "Civil War serves as backdrop for classic Western",
+          "poster": "https://image.tmdb.org/t/p/w500/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 429,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg"
+        },
+        {
+          "title": "Glory Road",
+          "year": 1990,
+          "slug": "Civil War soldiers face moral challenges",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Ride with the Devil",
+          "year": 1999,
+          "slug": "Civil War guerrilla warfare on the Kansas-Missouri border",
+          "poster": "https://image.tmdb.org/t/p/w500/pH3J5IUzho4ZVaRuTuErzqHHovb.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 22267,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pH3J5IUzho4ZVaRuTuErzqHHovb.jpg"
+        },
+        {
+          "title": "Cold Mountain",
+          "year": 2003,
+          "slug": "Civil War deserter's journey home",
+          "poster": "https://image.tmdb.org/t/p/w500/j0AJeeR5CQPDFh0otyWyCWREHO8.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 2289,
+          "poster_url": "https://image.tmdb.org/t/p/w500/j0AJeeR5CQPDFh0otyWyCWREHO8.jpg"
+        },
+        {
+          "title": "Lincoln",
+          "year": 2012,
+          "slug": "Political struggle to end slavery",
+          "poster": "https://image.tmdb.org/t/p/w500/5KeUqW6DpVtf8G9VMuI2l0XIPCo.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 72976,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5KeUqW6DpVtf8G9VMuI2l0XIPCo.jpg"
+        },
+        {
+          "title": "12 Years a Slave",
+          "year": 2013,
+          "slug": "Free man kidnapped into slavery before Civil War",
+          "poster": "https://image.tmdb.org/t/p/w500/xdANQijuNrJaw1HA61rDccME4Tm.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 76203,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xdANQijuNrJaw1HA61rDccME4Tm.jpg"
+        },
+        {
+          "title": "The Keeping Room",
+          "year": 2014,
+          "slug": "Women defend home during Civil War",
+          "poster": "https://image.tmdb.org/t/p/w500/5hj2RoLiD31AuUfnYKA2HBlIb6n.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 284284,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5hj2RoLiD31AuUfnYKA2HBlIb6n.jpg"
+        },
+        {
+          "title": "Field of Lost Shoes",
+          "year": 2014,
+          "slug": "VMI cadets at Battle of New Market",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Beguiled",
+          "year": 2017,
+          "slug": "Wounded Union soldier disrupts girls' school",
+          "poster": "https://image.tmdb.org/t/p/w500/x4R9jyiZhJzevASus5n6WyHQTdR.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 399019,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x4R9jyiZhJzevASus5n6WyHQTdR.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

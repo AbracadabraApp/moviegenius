@@ -1,0 +1,185 @@
+{
+  "props": {
+    "title": "Jumanji",
+    "year": 1995,
+    "initialSlug": "Deadly board game unleashes jungle chaos in town",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/vgpXmVaVyUL7GGiDeiK1mKEKzcX.jpg",
+    "initialStreaming": null,
+    "tmdbId": 8844,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Jumanji** (1995) revolutionized family adventure films by blending cutting-edge CGI with Robin Williams' magnetic performance. The story of a supernatural board game unleashing jungle chaos into suburban America tapped into primal childhood fantasies while pioneering visual effects that influenced films like **Zathura** (2005) and **Night at the Museum** (2006). Director Joe Johnston, who cut his teeth on **Honey, I Shrunk the Kids** (1989), created a perfect balance of wonder and menace that still holds up today."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Zathura",
+            "year": 2005,
+            "slug": "A space-themed spiritual successor to Jumanji where a mysterious board game launches two brothers into an interstellar adventure",
+            "poster": "https://image.tmdb.org/t/p/w500/shUtIadbOk8BAWk4FR0LinbBUmR.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 6795,
+            "poster_url": "https://image.tmdb.org/t/p/w500/shUtIadbOk8BAWk4FR0LinbBUmR.jpg"
+          },
+          {
+            "title": "The Neverending Story",
+            "year": 1984,
+            "slug": "A young boy discovers a magical book that pulls him into a fantasy realm where his choices affect both worlds",
+            "poster": "https://image.tmdb.org/t/p/w500/ddYCa91iDXfJCxaqSYzwi2fjfnl.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 34584,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ddYCa91iDXfJCxaqSYzwi2fjfnl.jpg"
+          },
+          {
+            "title": "Bridge to Terabithia",
+            "year": 2007,
+            "slug": "Two friends create an imaginary fantasy kingdom to escape their everyday lives, blending reality and imagination",
+            "poster": "https://image.tmdb.org/t/p/w500/3xFxGodKPMFLheS8rujFSmLfcq4.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 1265,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3xFxGodKPMFLheS8rujFSmLfcq4.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The success of Jumanji sparked a wave of films exploring the intersection of fantasy and reality through games. **Goosebumps** (2015) borrowed heavily from Jumanji's formula, bringing R.L. Stine's monsters into the real world. Even darker takes emerged, like **Ready Player One** (2018) and **Tron: Legacy** (2010), examining how games blur the line between real and virtual worlds."
+      },
+      {
+        "type": "text",
+        "content": "Robin Williams' performance as Alan Parrish set a template for adult actors in family adventures. His ability to convey both childlike wonder and deep trauma from being trapped in the game influenced roles like Ben Stiller in **Night at the Museum** (2006) and Dwayne Johnson in **Jumanji: Welcome to the Jungle** (2017), where adult actors must balance comedy with genuine emotional stakes. SUBHEAD: Evolution of the Jumanji Universe"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Last Mimzy",
+            "year": 2007,
+            "slug": "Two siblings discover a mysterious box of toys that gives them extraordinary abilities",
+            "poster": "https://image.tmdb.org/t/p/w500/jnLXcQFx4hSKDNG1P6RMz4v5jje.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 2267,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jnLXcQFx4hSKDNG1P6RMz4v5jje.jpg"
+          },
+          {
+            "title": "The Spiderwick Chronicles",
+            "year": 2008,
+            "slug": "Three children discover a field guide to fairies, thrusting them into a hidden magical world",
+            "poster": "https://image.tmdb.org/t/p/w500/y0zqUbwK8FWIkelnlmnRkntz9F8.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 8204,
+            "poster_url": "https://image.tmdb.org/t/p/w500/y0zqUbwK8FWIkelnlmnRkntz9F8.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The 2017 reboot **Jumanji: Welcome to the Jungle** cleverly updated the premise for the digital age, transforming the board game into a video game while maintaining the original's core themes of personal growth and facing fears. This modernization influenced other game-based films like **Pixels** (2015) and **Ralph Breaks the Internet** (2018), showing how classic concepts can be successfully reimagined for new generations."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of CGI Animals in Film: From Jumanji to Life of Pi",
+      "Robin Williams' Impact on Family Adventure Films",
+      "Board Games in Cinema: From Clue to Ouija",
+      "Joe Johnston's Adventure Film Legacy",
+      "The Art of Adapting Children's Books to Screen"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Chronicles of Narnia",
+          "year": 2005,
+          "slug": "Children enter a magical wardrobe leading to a fantasy realm",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Big",
+          "year": 1988,
+          "slug": "A boy's wish to be grown up comes true with unexpected consequences",
+          "poster": "https://image.tmdb.org/t/p/w500/eWhCDJiwxvx3YXkAFRiHjimnF0j.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 2280,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eWhCDJiwxvx3YXkAFRiHjimnF0j.jpg"
+        },
+        {
+          "title": "Inkheart",
+          "year": 2008,
+          "slug": "A father's ability to bring book characters to life leads to adventure",
+          "poster": "https://image.tmdb.org/t/p/w500/eXFK5aBDzUPSynAhSKMJy7xLxqE.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 2309,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eXFK5aBDzUPSynAhSKMJy7xLxqE.jpg"
+        },
+        {
+          "title": "The Indian in the Cupboard",
+          "year": 1995,
+          "slug": "A boy discovers his cupboard can bring toys to life",
+          "poster": "https://image.tmdb.org/t/p/w500/ozQAmW85tTJu2dhRe3evzyY03Nb.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 11359,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ozQAmW85tTJu2dhRe3evzyY03Nb.jpg"
+        },
+        {
+          "title": "Monster House",
+          "year": 2006,
+          "slug": "Three kids discover their neighbor's house is alive",
+          "poster": "https://image.tmdb.org/t/p/w500/zCRPr4bkO3ae0U1134vJ39xZnAG.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9297,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zCRPr4bkO3ae0U1134vJ39xZnAG.jpg"
+        },
+        {
+          "title": "The Adventures of Baron Munchausen",
+          "year": 1988,
+          "slug": "A legendary adventurer shares fantastic tales",
+          "poster": "https://image.tmdb.org/t/p/w500/9fggcOUgYUxU1ZChI7tcf1CYO5a.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 14506,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9fggcOUgYUxU1ZChI7tcf1CYO5a.jpg"
+        },
+        {
+          "title": "The NeverEnding Story II",
+          "year": 1990,
+          "slug": "A boy returns to the magical world of Fantasia",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Pagemaster",
+          "year": 1994,
+          "slug": "A boy's library adventure brings literary classics to life",
+          "poster": "https://image.tmdb.org/t/p/w500/1NM0W9fwe2IZ4SPdN5OCNKjkrqN.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 15139,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1NM0W9fwe2IZ4SPdN5OCNKjkrqN.jpg"
+        },
+        {
+          "title": "Nine Days",
+          "year": 2020,
+          "slug": "A supernatural being interviews souls for the privilege of life",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Kid",
+          "year": 2000,
+          "slug": "A successful man meets his younger self",
+          "poster": "https://image.tmdb.org/t/p/w500/kMRZhiF08nDiO5aRb81Np5a4d6p.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 4244,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kMRZhiF08nDiO5aRb81Np5a4d6p.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

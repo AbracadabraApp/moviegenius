@@ -1,0 +1,157 @@
+{
+  "props": {
+    "title": "Twelve O'Clock High",
+    "year": 1949,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/g9VeQUobhofLwxSIbKM4ia5biAX.jpg",
+    "initialStreaming": null,
+    "tmdbId": 15497,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Twelve O'Clock High** (1949) revolutionized the war film genre by focusing on psychological combat trauma rather than just aerial action. Gregory Peck delivers a masterful performance as General Frank Savage, taking command of a \"hard luck\" bomber group suffering from low morale. The film's groundbreaking approach influenced later classics like **Paths of Glory** (1957) and **Apocalypse Now** (1979) by examining leadership under extreme pressure and the human cost of maintaining military discipline. The use of actual WWII combat footage, seamlessly integrated with dramatic scenes, set a new standard for war film authenticity. Command Decision|1948|A general must send bombers on dangerous daylight raids, exploring the burden of leadership|TCM The War Lover|1962|Steve McQueen stars as a B-17 pilot whose reckless behavior masks deeper psychological issues|Prime"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Best Years of Our Lives",
+            "year": 1946,
+            "slug": "Three WWII veterans struggle to readjust to civilian life in this powerful study of post-war trauma",
+            "poster": "https://image.tmdb.org/t/p/w500/gd5EoAU4MM57sW3vlWxJ0NMM8cV.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 887,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gd5EoAU4MM57sW3vlWxJ0NMM8cV.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "What sets **Twelve O'Clock High** apart is its unflinching portrayal of combat fatigue, now known as PTSD. The film was revolutionary in showing military leaders breaking down under stress, challenging the stoic warrior stereotype prevalent in 1940s cinema. This psychological realism influenced later films like **The Bridge on the River Kwai** (1957) and **Patton** (1970), establishing a template for examining military leadership's human toll."
+      },
+      {
+        "type": "text",
+        "content": "The film's documentary-style opening and framing device - showing the abandoned airfield in peacetime before flashing back - established techniques later used in films like **Saving Private Ryan** (1998) and **The Hurt Locker** (2008). Director Henry King's decision to focus on the psychological rather than the physical aspects of combat created a new paradigm for war films, emphasizing character development over spectacle. Memphis Belle|1990|A B-17 crew attempts to complete their final mission, highlighting group dynamics under stress|HBO Max SUBHEAD: Impact on Modern War Films"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Strategic Air Command",
+            "year": 1955,
+            "slug": "James Stewart stars in this detailed look at the pressures faced by Cold War bomber pilots",
+            "poster": "https://image.tmdb.org/t/p/w500/ktfJTs7umXxaaLYZPnuzyklSPMQ.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 61880,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ktfJTs7umXxaaLYZPnuzyklSPMQ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The influence of **Twelve O'Clock High** extends well beyond its era, setting standards for authenticity and psychological depth that modern filmmakers still reference. Films like **Black Hawk Down** (2001) and **Dunkirk** (2017) echo its emphasis on leadership under extreme conditions and the psychological impact of sustained combat operations. The film's attention to tactical detail and operational reality, while maintaining emotional resonance, created a blueprint for balancing military accuracy with compelling drama."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Combat Fatigue Portrayal in War Films 1940-2020",
+      "Technical Integration of WWII Combat Footage in Hollywood Films",
+      "Gregory Peck's Military Leadership Roles",
+      "Impact of WWII Veteran Screenwriters on Post-War Cinema",
+      "US Army Air Forces Cooperation with Hollywood During WWII"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Dam Busters",
+          "year": 1955,
+          "slug": "RAF squadrons attempt a daring raid using innovative bombing techniques",
+          "poster": "https://image.tmdb.org/t/p/w500/cU2HgieUMHvCzN0PC66vk75mB61.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 13210,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cU2HgieUMHvCzN0PC66vk75mB61.jpg"
+        },
+        {
+          "title": "30 Seconds Over Tokyo",
+          "year": 1944,
+          "slug": "The true story of the Doolittle Raid on Japan",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": null
+        },
+        {
+          "title": "Air Force",
+          "year": 1943,
+          "slug": "Howard Hawks directs this tale of a B-17 crew in the Pacific Theater",
+          "poster": "https://image.tmdb.org/t/p/w500/mqH4V49GvANYsu1q4SW4CFUTFZe.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 15807,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mqH4V49GvANYsu1q4SW4CFUTFZe.jpg"
+        },
+        {
+          "title": "The War Game",
+          "year": 1965,
+          "slug": "A B-17 crew faces increasingly dangerous missions over Germany",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Flying Leathernecks",
+          "year": 1951,
+          "slug": "John Wayne leads Marine Corps aviators in the Pacific",
+          "poster": "https://image.tmdb.org/t/p/w500/xhT8QtoHibGosDVGBrRI9TxmPEe.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 47555,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xhT8QtoHibGosDVGBrRI9TxmPEe.jpg"
+        },
+        {
+          "title": "Wing and a Prayer",
+          "year": 1944,
+          "slug": "Aircraft carrier operations in the Pacific after Pearl Harbor",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Command and Control",
+          "year": 1958,
+          "slug": "Psychological study of bomber crew dynamics",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": null
+        },
+        {
+          "title": "God Is My Co-Pilot",
+          "year": 1945,
+          "slug": "Biography of fighter ace Robert Lee Scott",
+          "poster": "https://image.tmdb.org/t/p/w500/yeICx3KlTjB1zrfJoiRvbeGEeoE.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 101598,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yeICx3KlTjB1zrfJoiRvbeGEeoE.jpg"
+        },
+        {
+          "title": "The Glenn Miller Story",
+          "year": 1954,
+          "slug": "Famous bandleader serves in Army Air Forces",
+          "poster": "https://image.tmdb.org/t/p/w500/eEuwIMj7jKYaUt0ZG6aVpYxlkrC.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 17729,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eEuwIMj7jKYaUt0ZG6aVpYxlkrC.jpg"
+        },
+        {
+          "title": "Above and Beyond",
+          "year": 1952,
+          "slug": "The story of the Enola Gay and the atomic bomb mission",
+          "poster": "https://image.tmdb.org/t/p/w500/3Un68Q91GhpJGFXEMxIrQ9TBzOu.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 80806,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3Un68Q91GhpJGFXEMxIrQ9TBzOu.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

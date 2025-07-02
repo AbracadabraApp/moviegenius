@@ -1,0 +1,188 @@
+{
+  "props": {
+    "title": "Apocalypse Now",
+    "year": 1979,
+    "initialSlug": "A soldier's nightmarish journey into war's heart of darkness",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/gQB8Y5RCMkv2zwzFHbUJX3kAhvA.jpg",
+    "initialStreaming": null,
+    "tmdbId": 28,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Apocalypse Now** (1979) stands as Francis Ford Coppola's fever-dream meditation on Vietnam War madness. The film transforms Joseph Conrad's \"Heart of Darkness\" into a haunting journey upriver, with Martin Sheen's Captain Willard pursuing the enigmatic Colonel Kurtz (Marlon Brando). Its production was infamously chaotic - typhoons destroyed sets, Sheen suffered a heart attack, and Coppola mortgaged everything he owned to complete it. The resulting film redefined war cinema through its hallucinatory imagery, from the Wagner-scored helicopter attack to the surreal USO show sequence. Like **The Deer Hunter** (1978) and **Platoon** (1986), it captures Vietnam's psychological toll rather than attempting documentary-style realism."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Deer Hunter",
+            "year": 1978,
+            "slug": "Robert De Niro leads this devastating examination of how Vietnam destroyed working-class Pennsylvania friends",
+            "poster": "https://image.tmdb.org/t/p/w500/bbGtogDZOg09bm42KIpCXUXICkh.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 11778,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bbGtogDZOg09bm42KIpCXUXICkh.jpg"
+          },
+          {
+            "title": "Platoon",
+            "year": 1986,
+            "slug": "Oliver Stone's autobiographical Vietnam story follows a young soldier losing his innocence",
+            "poster": "https://image.tmdb.org/t/p/w500/m3mmFkPQKvPZq5exmh0bDuXlD9T.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 792,
+            "poster_url": "https://image.tmdb.org/t/p/w500/m3mmFkPQKvPZq5exmh0bDuXlD9T.jpg"
+          },
+          {
+            "title": "Full Metal Jacket",
+            "year": 1987,
+            "slug": "Kubrick's clinical dissection of military dehumanization and war's absurdity",
+            "poster": "https://image.tmdb.org/t/p/w500/kMKyx1k8hWWscYFnPbnxxN4Eqo4.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 600,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kMKyx1k8hWWscYFnPbnxxN4Eqo4.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends far beyond Vietnam narratives. Its DNA appears in every subsequent war film exploring military insanity and moral corruption. **Heart of Darkness** (1993) directly adapted Conrad's novel, while **Lord of War** (2005) borrowed its river journey structure for arms dealing commentary. The psychological disintegration of authority figures under extreme pressure influenced everything from **Zero Dark Thirty** (2012) to **Jarhead** (2005)."
+      },
+      {
+        "type": "text",
+        "content": "Coppola's technical innovations revolutionized filmmaking. The layered sound design by Walter Murch created a new standard for atmospheric immersion. The film's bold mix of vérité-style footage with surreal sequences influenced later works like **The Thin Red Line** (1998) and **Da 5 Bloods** (2020). Its examination of colonialism's legacy resonates in films like **Beasts of No Nation** (2015). SUBHEAD: Impact on Modern Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Thin Red Line",
+            "year": 1998,
+            "slug": "Terrence Malick's poetic Pacific theater meditation blends philosophy with brutal combat",
+            "poster": "https://image.tmdb.org/t/p/w500/seMydAaoxQP6F0xbE1jOcTmn5Jr.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 8741,
+            "poster_url": "https://image.tmdb.org/t/p/w500/seMydAaoxQP6F0xbE1jOcTmn5Jr.jpg"
+          },
+          {
+            "title": "Da 5 Bloods",
+            "year": 2020,
+            "slug": "Spike Lee explores Black veterans returning to Vietnam to confront past trauma",
+            "poster": "https://image.tmdb.org/t/p/w500/yx4cp1ljJMDSFeEex0Zjv45b55E.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 581859,
+            "poster_url": "https://image.tmdb.org/t/p/w500/yx4cp1ljJMDSFeEex0Zjv45b55E.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's psychological complexity continues influencing contemporary directors. Christopher Nolan cited it as inspiration for **Dunkirk's** (2017) non-linear narrative and immersive sound design. **1917** (2019) borrowed its journey structure, while **Predator** (1987) and **Kong: Skull Island** (2017) repurposed its \"upriver into madness\" template for genre films. The Redux and Final Cut versions released decades later proved its lasting ability to provoke discussion about war's moral ambiguity."
+      }
+    ],
+    "exploreFurther": [
+      "The troubled production history and near-bankruptcy of Coppola",
+      "Walter Murch's revolutionary sound design techniques",
+      "The film's relationship to Conrad's Heart of Darkness",
+      "Vietnam War's impact on New Hollywood cinema",
+      "The different cuts: Theatrical vs Redux vs Final Cut"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Casualties of War",
+          "year": 1989,
+          "slug": "Brian De Palma's brutal examination of war crimes",
+          "poster": "https://image.tmdb.org/t/p/w500/3SerZUDoU9TMCXMsQqiXvSWm0uL.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 10142,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3SerZUDoU9TMCXMsQqiXvSWm0uL.jpg"
+        },
+        {
+          "title": "The Boys in Company C",
+          "year": 1978,
+          "slug": "Early Vietnam war film focusing on Marine recruits",
+          "poster": "https://image.tmdb.org/t/p/w500/9nZyHahR2yrXgkha9IrbAGr3Yni.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 27521,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9nZyHahR2yrXgkha9IrbAGr3Yni.jpg"
+        },
+        {
+          "title": "Good Morning Vietnam",
+          "year": 1987,
+          "slug": "Robin Williams as an Armed Forces Radio DJ in Saigon",
+          "poster": "https://image.tmdb.org/t/p/w500/sreISlFUn5TyR41QNjlfAdX5SEW.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 801,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sreISlFUn5TyR41QNjlfAdX5SEW.jpg"
+        },
+        {
+          "title": "Hamburger Hill",
+          "year": 1987,
+          "slug": "Brutal account of one of Vietnam's bloodiest battles",
+          "poster": "https://image.tmdb.org/t/p/w500/a84FDoIm64qcyKq6BEMB9Ycldpt.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 10652,
+          "poster_url": "https://image.tmdb.org/t/p/w500/a84FDoIm64qcyKq6BEMB9Ycldpt.jpg"
+        },
+        {
+          "title": "Born on the Fourth of July",
+          "year": 1989,
+          "slug": "Tom Cruise as paralyzed Vietnam vet turned activist",
+          "poster": "https://image.tmdb.org/t/p/w500/8P2PlJL9MMR3X2wvFUcTD2Y5BJn.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 2604,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8P2PlJL9MMR3X2wvFUcTD2Y5BJn.jpg"
+        },
+        {
+          "title": "We Were Soldiers",
+          "year": 2002,
+          "slug": "Mel Gibson leads troops in the first major Vietnam battle",
+          "poster": "https://image.tmdb.org/t/p/w500/d5uupBAORxnFNbkNQ2G0Bi2cpY8.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 10590,
+          "poster_url": "https://image.tmdb.org/t/p/w500/d5uupBAORxnFNbkNQ2G0Bi2cpY8.jpg"
+        },
+        {
+          "title": "Jacob's Ladder",
+          "year": 1990,
+          "slug": "Surreal psychological thriller about a Vietnam vet",
+          "poster": "https://image.tmdb.org/t/p/w500/ufLcHIi1aXjjH8MediAMvnwDsVI.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 2291,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ufLcHIi1aXjjH8MediAMvnwDsVI.jpg"
+        },
+        {
+          "title": "The Killing Fields",
+          "year": 1984,
+          "slug": "Journalist's survival story in Khmer Rouge Cambodia",
+          "poster": "https://image.tmdb.org/t/p/w500/cX6Bv7natnZwQjsV9bLL8mmWjkS.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 625,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cX6Bv7natnZwQjsV9bLL8mmWjkS.jpg"
+        },
+        {
+          "title": "Gardens of Stone",
+          "year": 1987,
+          "slug": "Coppola's other Vietnam film about Arlington Cemetery guards",
+          "poster": "https://image.tmdb.org/t/p/w500/bptiOG8kCoq1WUpWEwMyAIaMED4.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 28368,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bptiOG8kCoq1WUpWEwMyAIaMED4.jpg"
+        },
+        {
+          "title": "Coming Home",
+          "year": 1978,
+          "slug": "Jane Fonda and Jon Voight in Vietnam homefront drama",
+          "poster": "https://image.tmdb.org/t/p/w500/jBsYWNBYNEi5EhT1hC8iexcTsWT.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 31657,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jBsYWNBYNEi5EhT1hC8iexcTsWT.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

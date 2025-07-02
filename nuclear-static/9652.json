@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "The Passenger",
+    "year": 1975,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/A8jYH43plz70dNmHy82zAHGTqxN.jpg",
+    "initialStreaming": null,
+    "tmdbId": 9652,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Passenger** (1975) stands as one of Michelangelo Antonioni's most mesmerizing explorations of identity and existential drift. Jack Nicholson delivers a haunting performance as David Locke, a reporter who assumes the identity of a dead man, embarking on a journey that blurs the lines between self and other. The film's legendary penultimate shot - a seven-minute continuous take that moves through a hotel room window - revolutionized what was possible in cinema. It shares DNA with other 1970s identity-crisis masterworks like **The Conversation** (1974) and **Don't Look Now** (1973), where protagonists lose themselves in European landscapes."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Blow-Up",
+            "year": 1966,
+            "slug": "Antonioni's first English-language film follows a photographer who believes he's captured a murder on film",
+            "poster": "https://image.tmdb.org/t/p/w500/iVtUdWsT6Ed2DK762zZxjaQAdHy.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 1052,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iVtUdWsT6Ed2DK762zZxjaQAdHy.jpg"
+          },
+          {
+            "title": "L'Avventura",
+            "year": 1960,
+            "slug": "A woman disappears during a Mediterranean yacht trip, leading to an existential search",
+            "poster": "https://image.tmdb.org/t/p/w500/7kUXAS8K7Ihw1T1mhARjnLuMVk3.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 5165,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7kUXAS8K7Ihw1T1mhARjnLuMVk3.jpg"
+          },
+          {
+            "title": "Zabriskie Point",
+            "year": 1970,
+            "slug": "Antonioni's radical take on American counterculture features stunning Death Valley cinematography",
+            "poster": "https://image.tmdb.org/t/p/w500/uelo2oMg4fM51LAm4eEArEwOHXZ.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 2998,
+            "poster_url": "https://image.tmdb.org/t/p/w500/uelo2oMg4fM51LAm4eEArEwOHXZ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence echoes through later works about assumed identities and moral ambiguity. **The Talented Mr. Ripley** (1999) borrowed its sun-drenched Mediterranean menace, while **Mulholland Drive** (2001) channeled its dreamlike exploration of fractured identity. Antonioni's revolutionary use of landscape as a character itself - from the Sahara Desert to Munich's concrete geometry - established a visual language that directors like Terrence Malick and Claire Denis would later expand upon. SUBHEAD: Visual Innovation and Spatial Psychology"
+      },
+      {
+        "type": "text",
+        "content": "Antonioni and cinematographer Luciano Tovoli created a revolutionary visual approach that treated space as psychological territory. The famous final shot at Hotel de la Gloria isn't just technical brilliance - it's the culmination of the film's exploration of surveillance and escape. This influenced later works like **Cache** (2005) and **The American** (2010), where camera movement itself becomes philosophical statement. The film's use of architectural spaces to convey emotional states predates similar techniques in **Paris, Texas** (1984) and **Lost in Translation** (2003)."
+      }
+    ],
+    "exploreFurther": [
+      "Antonioni's Evolution from Italian Neorealism to International Art Cinema",
+      "The Technical Achievement of The Passenger's Famous Final Shot",
+      "Identity and Existentialism in 1970s European Cinema",
+      "Jack Nicholson's Art House Period",
+      "The Influence of The Passenger on Contemporary Slow Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Red Desert",
+          "year": 1964,
+          "slug": "Antonioni's first color film explores industrial alienation",
+          "poster": "https://image.tmdb.org/t/p/w500/rGcTVdyhaGzMxPPRVApXre6F7SD.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 26638,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rGcTVdyhaGzMxPPRVApXre6F7SD.jpg"
+        },
+        {
+          "title": "The Conformist",
+          "year": 1970,
+          "slug": "Bertolucci's masterpiece about identity and fascism",
+          "poster": "https://image.tmdb.org/t/p/w500/nLJjFRqIJAK8qz0OKYnpKCblZNK.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 8416,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nLJjFRqIJAK8qz0OKYnpKCblZNK.jpg"
+        },
+        {
+          "title": "The American Friend",
+          "year": 1977,
+          "slug": "Wenders' take on identity and alienation",
+          "poster": "https://image.tmdb.org/t/p/w500/jHVe5EHDFj9ac2F2aU86sWTGKnn.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 11222,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jHVe5EHDFj9ac2F2aU86sWTGKnn.jpg"
+        },
+        {
+          "title": "Last Year at Marienbad",
+          "year": 1961,
+          "slug": "Resnais' enigmatic identity puzzle",
+          "poster": "https://image.tmdb.org/t/p/w500/tizZ7JnXRFMvoNegu2CtM2ab9E7.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 4024,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tizZ7JnXRFMvoNegu2CtM2ab9E7.jpg"
+        },
+        {
+          "title": "Persona",
+          "year": 1966,
+          "slug": "Bergman's psychological identity merger",
+          "poster": "https://image.tmdb.org/t/p/w500/9QlqnRNbzb78lRiRPAP1ufmoZko.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 797,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9QlqnRNbzb78lRiRPAP1ufmoZko.jpg"
+        },
+        {
+          "title": "Paris, Texas",
+          "year": 1984,
+          "slug": "Wenders' meditation on identity and landscape",
+          "poster": "https://image.tmdb.org/t/p/w500/mYYdCi54E2xVbUxCr03tMookv9Z.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 655,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mYYdCi54E2xVbUxCr03tMookv9Z.jpg"
+        },
+        {
+          "title": "The Sheltering Sky",
+          "year": 1990,
+          "slug": "Bertolucci's adaptation of Bowles' desert existentialism",
+          "poster": "https://image.tmdb.org/t/p/w500/mcaypmWykltQMLjjSuD2vxylZHV.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 24016,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mcaypmWykltQMLjjSuD2vxylZHV.jpg"
+        },
+        {
+          "title": "Identification of a Woman",
+          "year": 1982,
+          "slug": "Antonioni's later exploration of identity",
+          "poster": "https://image.tmdb.org/t/p/w500/5SOYgzI3CeWgCKlPYkv43C11ZfZ.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 53234,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5SOYgzI3CeWgCKlPYkv43C11ZfZ.jpg"
+        },
+        {
+          "title": "Point Blank",
+          "year": 1967,
+          "slug": "Neo-noir identity crisis",
+          "poster": "https://image.tmdb.org/t/p/w500/5wzZipiC0THdgPpViVV5OqDj3Xr.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 26039,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5wzZipiC0THdgPpViVV5OqDj3Xr.jpg"
+        },
+        {
+          "title": "The Passenger",
+          "year": 2021,
+          "slug": "Documentary about the making of Antonioni's film",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

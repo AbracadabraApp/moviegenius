@@ -1,0 +1,193 @@
+{
+  "props": {
+    "title": "Fist of Fury",
+    "year": 1972,
+    "initialSlug": "Bruce Lee avenges his master in kung fu classic",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/dlcipCOa9hlfBBz7kCAyjsf3q0E.jpg",
+    "initialStreaming": null,
+    "tmdbId": 11713,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Fist of Fury** (1972) marks Bruce Lee's most politically charged and emotionally resonant film, setting a new standard for martial arts cinema. Set in Japanese-occupied Shanghai, Lee plays Chen Zhen, a student seeking vengeance for his master's death. The film revolutionized fight choreography with Lee's explosive speed and power, particularly in the dojo scene where he single-handedly demolishes an entire Japanese karate school. Unlike **The Big Boss** (1971), Lee's character here is more complex - a symbol of Chinese resistance against foreign oppression, making the film resonate deeply with Asian audiences grappling with colonial legacy."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Chinese Connection",
+            "year": 1972,
+            "slug": "Alternative US title for Fist of Fury, showing Chen Zhen fighting Japanese oppressors",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": null
+          },
+          {
+            "title": "The Big Boss",
+            "year": 1971,
+            "slug": "Bruce Lee's first major starring role as a factory worker uncovering corruption",
+            "poster": "https://image.tmdb.org/t/p/w500/9VFYDWYnAhXAgyqgs94lwNmMBbk.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 12481,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9VFYDWYnAhXAgyqgs94lwNmMBbk.jpg"
+          },
+          {
+            "title": "Way of the Dragon",
+            "year": 1972,
+            "slug": "Lee's self-directed film featuring the legendary Chuck Norris fight",
+            "poster": "https://image.tmdb.org/t/p/w500/m7AIITQ624sfldI4SsX4htXPH1f.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 9462,
+            "poster_url": "https://image.tmdb.org/t/p/w500/m7AIITQ624sfldI4SsX4htXPH1f.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence echoes through decades of martial arts cinema. **Jet Li's Fist of Legend** (1994) directly remakes the story with modernized action, while **IP Man** (2008) draws heavily from its themes of Chinese martial arts versus Japanese imperialism. The technical innovation is evident in Lee's fight scenes - his combination of Wing Chun, street fighting, and his own Jeet Kune Do philosophy created a more dynamic, realistic combat style that influenced everything from **Enter the Dragon** (1973) to modern MMA films."
+      },
+      {
+        "type": "text",
+        "content": "Director Lo Wei's decision to frame the martial arts sequences with wider shots and longer takes - contrasting with today's quick-cut style - allows viewers to fully appreciate Lee's physical prowess. This cinematographic approach influenced later classics like **Police Story** (1985) and **The Raid** (2011), where action clarity takes precedence over editing tricks. SUBHEAD: Cultural Impact and Legacy"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Ip Man",
+            "year": 2008,
+            "slug": "Donnie Yen stars as Bruce Lee's real-life mentor during Japanese occupation",
+            "poster": "https://image.tmdb.org/t/p/w500/ggTTUXZg7trvAhsVj3eyd65bAnh.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 14756,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ggTTUXZg7trvAhsVj3eyd65bAnh.jpg"
+          },
+          {
+            "title": "Fist of Legend",
+            "year": 1994,
+            "slug": "Jet Li's remake modernizes the story with enhanced choreography",
+            "poster": "https://image.tmdb.org/t/p/w500/Aqa1Yuog2OFrduwSffxZc2w4Tnk.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 17809,
+            "poster_url": "https://image.tmdb.org/t/p/w500/Aqa1Yuog2OFrduwSffxZc2w4Tnk.jpg"
+          },
+          {
+            "title": "Enter the Dragon",
+            "year": 1973,
+            "slug": "Lee's final completed film combines martial arts with spy thriller elements",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's themes of resistance and national pride spawned numerous spiritual successors. **Once Upon a Time in China** (1991) echoes its anti-colonial message, while **Fearless** (2006) similarly uses martial arts as metaphor for cultural identity. Lee's portrayal of Chen Zhen inspired multiple iterations, including **Legend of the Fist** (2010) with Donnie Yen and a 1995 TV series starring Jet Li."
+      }
+    ],
+    "exploreFurther": [
+      "Bruce Lee's Development of Jeet Kune Do Philosophy",
+      "Chinese Martial Arts Cinema During Colonial Period",
+      "Evolution of Hong Kong Action Choreography",
+      "Japanese Occupation of Shanghai in Chinese Cinema",
+      "Influence of Fist of Fury on Modern Action Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Last Dragon",
+          "year": 1985,
+          "slug": "Martial arts cult classic paying homage to Bruce Lee",
+          "poster": "https://image.tmdb.org/t/p/w500/r5QnLY30gXlZ8luiJE3quDs1WNF.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 13938,
+          "poster_url": "https://image.tmdb.org/t/p/w500/r5QnLY30gXlZ8luiJE3quDs1WNF.jpg"
+        },
+        {
+          "title": "Return of the Dragon",
+          "year": 1972,
+          "slug": "Lee vs Chuck Norris in Rome",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": null
+        },
+        {
+          "title": "Game of Death",
+          "year": 1978,
+          "slug": "Lee's final, unfinished film",
+          "poster": "https://image.tmdb.org/t/p/w500/c6jgLHaQpdIPH1rC94KkjAqgE7O.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 13333,
+          "poster_url": "https://image.tmdb.org/t/p/w500/c6jgLHaQpdIPH1rC94KkjAqgE7O.jpg"
+        },
+        {
+          "title": "The Chinese Boxer",
+          "year": 1970,
+          "slug": "Jimmy Wang Yu's influential kung fu film",
+          "poster": "https://image.tmdb.org/t/p/w500/f4SE13qaIl3rNdsGgZNv6Kv3toL.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 62762,
+          "poster_url": "https://image.tmdb.org/t/p/w500/f4SE13qaIl3rNdsGgZNv6Kv3toL.jpg"
+        },
+        {
+          "title": "Five Fingers of Death",
+          "year": 1972,
+          "slug": "Pioneering martial arts film that predated Lee's success",
+          "poster": "https://image.tmdb.org/t/p/w500/iAEd4aorPPLwbMNTYsQXLelHclo.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 21964,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iAEd4aorPPLwbMNTYsQXLelHclo.jpg"
+        },
+        {
+          "title": "New Fist of Fury",
+          "year": 1976,
+          "slug": "Jackie Chan's early attempt to fill Lee's shoes",
+          "poster": "https://image.tmdb.org/t/p/w500/7Uk4Crwwuz3OHeEtOZIRxFSgSxY.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 18666,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7Uk4Crwwuz3OHeEtOZIRxFSgSxY.jpg"
+        },
+        {
+          "title": "Hero",
+          "year": 2002,
+          "slug": "Artistic martial arts epic with Jet Li",
+          "poster": "https://image.tmdb.org/t/p/w500/1NBtOH3KPU9UUp1vzVHJ8qzdW88.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 79,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1NBtOH3KPU9UUp1vzVHJ8qzdW88.jpg"
+        },
+        {
+          "title": "Drunken Master",
+          "year": 1978,
+          "slug": "Jackie Chan's breakthrough role",
+          "poster": "https://image.tmdb.org/t/p/w500/cf43J2SH8tECZVl9N5n0Q6Ckche.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 11230,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cf43J2SH8tECZVl9N5n0Q6Ckche.jpg"
+        },
+        {
+          "title": "The 36th Chamber of Shaolin",
+          "year": 1978,
+          "slug": "Gordon Liu's classic training film",
+          "poster": "https://image.tmdb.org/t/p/w500/6j1ZnapQPGD9aUcqQWqFYPhWd3B.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 11841,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6j1ZnapQPGD9aUcqQWqFYPhWd3B.jpg"
+        },
+        {
+          "title": "Kill Bill Vol. 1",
+          "year": 2003,
+          "slug": "Tarantino's homage to martial arts cinema",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

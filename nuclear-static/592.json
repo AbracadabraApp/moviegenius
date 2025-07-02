@@ -1,0 +1,176 @@
+{
+  "props": {
+    "title": "The Conversation",
+    "year": 1974,
+    "initialSlug": "Coppola's paranoid masterpiece",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/dHqVBwcv1SGymOpUueRoKzcmdes.jpg",
+    "initialStreaming": null,
+    "tmdbId": 592,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Conversation** (1974) stands as Francis Ford Coppola's masterful paranoia thriller, released between his **Godfather** (1972) and **Godfather Part II** (1974). Gene Hackman delivers his career-best performance as Harry Caul, a surveillance expert whose obsession with privacy ironically mirrors the very invasions he enables. The film's genius lies in its sound design - every audio replay reveals new layers of meaning, making viewers as obsessive as Harry in decoding the titular conversation. This directly influenced later surveillance thrillers like **Enemy of the State** (1998) and **Blow Out** (1981)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Conversation",
+            "year": 1974,
+            "slug": "A surveillance expert becomes increasingly paranoid when he suspects his recordings have revealed a murder plot",
+            "poster": "https://image.tmdb.org/t/p/w500/dHqVBwcv1SGymOpUueRoKzcmdes.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 592,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dHqVBwcv1SGymOpUueRoKzcmdes.jpg"
+          },
+          {
+            "title": "Blow Out",
+            "year": 1981,
+            "slug": "A sound effects technician accidentally records evidence of an assassination",
+            "poster": "https://image.tmdb.org/t/p/w500/weMW1wLzeagP3tw6BfmYf1iL7dz.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 11644,
+            "poster_url": "https://image.tmdb.org/t/p/w500/weMW1wLzeagP3tw6BfmYf1iL7dz.jpg"
+          },
+          {
+            "title": "Enemy of the State",
+            "year": 1998,
+            "slug": "A lawyer becomes targeted by the NSA after receiving evidence of a political murder",
+            "poster": "https://image.tmdb.org/t/p/w500/x9pXrMKLsBGGOFyyZ0Gwt9YpVub.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 9798,
+            "poster_url": "https://image.tmdb.org/t/p/w500/x9pXrMKLsBGGOFyyZ0Gwt9YpVub.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's themes of technology-enabled surveillance feel eerily prescient today. **Snowden** (2016) and **Citizenfour** (2014) echo The Conversation's warnings about privacy invasion, while **The Lives of Others** (2006) explores similar territory through the lens of East German surveillance. Coppola's careful pacing and focus on technical detail created a template for modern tech-paranoia films like **Searching** (2018) and **Open Windows** (2014)."
+      },
+      {
+        "type": "text",
+        "content": "Sound design becomes a character itself, similar to later films like **Sound of Metal** (2020) and **Berberian Sound Studio** (2012). Harry's obsession with his audio equipment mirrors contemporary concerns about digital privacy. The film's famous ending, with Harry tearing apart his apartment searching for bugs, directly inspired scenes in **Klute** (1971) and **The Parallax View** (1974). SUBHEAD: Legacy and Technical Innovation"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Lives of Others",
+            "year": 2006,
+            "slug": "An East German Stasi agent becomes emotionally involved with the subjects he's surveilling",
+            "poster": "https://image.tmdb.org/t/p/w500/cVUDMnskSc01rdbyH0tLATTJUdP.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 582,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cVUDMnskSc01rdbyH0tLATTJUdP.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Coppola's innovative use of surveillance technology influenced countless thrillers. **All the President's Men** (1976) adopted similar techniques for its wiretapping scenes, while **Minority Report** (2002) expanded the surveillance theme into science fiction. The film's focus on professional ethics and personal responsibility echoes through **Michael Clayton** (2007) and **Zero Dark Thirty** (2012)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Surveillance Technology in Cinema",
+      "Francis Ford Coppola's 1970s Masterworks",
+      "Sound Design as Storytelling Device",
+      "Gene Hackman's Character Studies",
+      "Paranoia Thrillers of the 1970s"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Blow Up",
+          "year": 1966,
+          "slug": "A photographer believes he's captured evidence of a murder",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Klute",
+          "year": 1971,
+          "slug": "A detective becomes entangled with a call girl while investigating a disappearance",
+          "poster": "https://image.tmdb.org/t/p/w500/tVyINAsNGSgD1OIstqwCcs7wyGH.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 466,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tVyINAsNGSgD1OIstqwCcs7wyGH.jpg"
+        },
+        {
+          "title": "The Parallax View",
+          "year": 1974,
+          "slug": "A reporter investigates a conspiracy involving political assassinations",
+          "poster": "https://image.tmdb.org/t/p/w500/5ClPRox438lwK2Eze7X5xySDaYC.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 17365,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5ClPRox438lwK2Eze7X5xySDaYC.jpg"
+        },
+        {
+          "title": "Three Days of the Condor",
+          "year": 1975,
+          "slug": "A CIA researcher discovers a plot within his own agency",
+          "poster": "https://image.tmdb.org/t/p/w500/zinwtZqdb7gnc4zMu8dfkK1fMN3.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 11963,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zinwtZqdb7gnc4zMu8dfkK1fMN3.jpg"
+        },
+        {
+          "title": "Coppola's Apocalypse Now",
+          "year": 1979,
+          "slug": "A soldier ventures into the heart of darkness during Vietnam",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Videodrome",
+          "year": 1983,
+          "slug": "A TV executive discovers a sinister broadcast signal",
+          "poster": "https://image.tmdb.org/t/p/w500/qqqkiZSU9EBGZ1KiDmfn07S7qvv.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 837,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qqqkiZSU9EBGZ1KiDmfn07S7qvv.jpg"
+        },
+        {
+          "title": "The Truman Show",
+          "year": 1998,
+          "slug": "A man discovers his entire life is a televised show",
+          "poster": "https://image.tmdb.org/t/p/w500/vuza0WqY239yBXOadKlGwJsZJFE.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 37165,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vuza0WqY239yBXOadKlGwJsZJFE.jpg"
+        },
+        {
+          "title": "Cache",
+          "year": 2005,
+          "slug": "A family receives mysterious surveillance tapes",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "A Scanner Darkly",
+          "year": 2006,
+          "slug": "An undercover cop loses his identity in a surveillance state",
+          "poster": "https://image.tmdb.org/t/p/w500/lUKudOpHICDj6A6SO7DdaZM4W48.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 3509,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lUKudOpHICDj6A6SO7DdaZM4W48.jpg"
+        },
+        {
+          "title": "Tinker Tailor Soldier Spy",
+          "year": 2011,
+          "slug": "A spy hunts for a Soviet mole in British intelligence",
+          "poster": "https://image.tmdb.org/t/p/w500/bsL9UZPCmQKgl88wXwMulKuw9Jh.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 49517,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bsL9UZPCmQKgl88wXwMulKuw9Jh.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

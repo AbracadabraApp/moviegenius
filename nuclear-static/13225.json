@@ -1,0 +1,185 @@
+{
+  "props": {
+    "title": "FernGully: The Last Rainforest",
+    "year": 1992,
+    "initialSlug": "A fairy fights to save her forest from destruction",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/jAD6Ofuz4PiYFV3fd3oBP6aOTyM.jpg",
+    "initialStreaming": null,
+    "tmdbId": 13225,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**FernGully: The Last Rainforest** (1992) blazed the trail for environmentally conscious animation, landing years before similar eco-themed films like **Princess Mononoke** (1997) and **WALL-E** (2008). The film's stark portrayal of rainforest destruction through the villainous Hexxus (Tim Curry) created a template for depicting environmental threats in family films. Its blend of magic and environmental messaging influenced later works like **Avatar** (2009), which borrowed heavily from FernGully's premise of a human joining forest dwellers to fight resource exploitation."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Captain Planet and the Planeteers",
+            "year": 1990,
+            "slug": "Animated series featuring eco-heroes fighting environmental threats",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": null
+          },
+          {
+            "title": "Once Upon a Forest",
+            "year": 1993,
+            "slug": "Woodland creatures journey to save their forest from human pollution",
+            "poster": "https://image.tmdb.org/t/p/w500/aGmed955Bv1ok2YBjjhAA71b7OF.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 33539,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aGmed955Bv1ok2YBjjhAA71b7OF.jpg"
+          },
+          {
+            "title": "The Lorax",
+            "year": 2012,
+            "slug": "Dr. Seuss adaptation about protecting trees from industrial greed",
+            "poster": "https://image.tmdb.org/t/p/w500/tePFnZFw5JvjwjQjaKkqDPNMLPU.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 73723,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tePFnZFw5JvjwjQjaKkqDPNMLPU.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's technical achievements deserve spotlight. The character animation, particularly during Batty's (Robin Williams) manic sequences, showcases the potential for expressing environmental themes through creative movement. The ethereal bioluminescent forest scenes predated similar visual approaches in **Avatar** (2009) and **Epic** (2013), establishing a visual language for magical forest environments that continues to influence animated features."
+      },
+      {
+        "type": "text",
+        "content": "FernGully's soundtrack strategy proved innovative, mixing Celtic-inspired score with pop numbers like \"Toxic Love\" and \"Land of a Thousand Dances.\" This approach of blending traditional scoring with contemporary songs became standard for animated features, seen later in films like **Pocahontas** (1995) and **Happy Feet** (2006). SUBHEAD: Environmental Animation Legacy"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Epic",
+            "year": 2013,
+            "slug": "Tiny forest warriors protect their world from decay forces",
+            "poster": "https://image.tmdb.org/t/p/w500/81cSsWzjTfR3cJSqnTiHwy1eyPK.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 116711,
+            "poster_url": "https://image.tmdb.org/t/p/w500/81cSsWzjTfR3cJSqnTiHwy1eyPK.jpg"
+          },
+          {
+            "title": "A Bug's Life",
+            "year": 1998,
+            "slug": "Microscopic perspective on insect society facing threats",
+            "poster": "https://image.tmdb.org/t/p/w500/Ah3J9OJVc2CNCuH2zMydXy9fmIC.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 9487,
+            "poster_url": "https://image.tmdb.org/t/p/w500/Ah3J9OJVc2CNCuH2zMydXy9fmIC.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "FernGully's influence extends beyond its immediate era. The film's portrayal of forest spirits and ancient tree guardians echoes in works like **The Secret of Kells** (2009) and **Wolfwalkers** (2020). Its depiction of corporate destruction through Hexxus's oily, toxic form created a visual shorthand for environmental threats that persists in modern animation, seen recently in **Moana** (2016) with its corrupted nature goddess Te Kā."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Environmental Themes in Animation: From FernGully to WALL-E",
+      "Robin Williams' Voice Acting Legacy in Animation",
+      "Visual Development of Magical Forests in Animated Films",
+      "Impact of Australian Settings in Western Animation",
+      "Music in Environmental Message Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Over the Hedge",
+          "year": 2006,
+          "slug": "Animals face suburban sprawl threatening their habitat",
+          "poster": "https://image.tmdb.org/t/p/w500/jtZnymorbnHY7mOiBXR14ZDJseM.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 7518,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jtZnymorbnHY7mOiBXR14ZDJseM.jpg"
+        },
+        {
+          "title": "Princess Mononoke",
+          "year": 1997,
+          "slug": "Studio Ghibli's epic about forest spirits versus industrialization",
+          "poster": "https://image.tmdb.org/t/p/w500/cMYCDADoLKLbB83g4WnJegaZimC.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 128,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cMYCDADoLKLbB83g4WnJegaZimC.jpg"
+        },
+        {
+          "title": "The Rescuers Down Under",
+          "year": 1990,
+          "slug": "Australian outback adventure with environmental themes",
+          "poster": "https://image.tmdb.org/t/p/w500/5koTDBmMAkJOgAe4PL4163UKjvG.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 11135,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5koTDBmMAkJOgAe4PL4163UKjvG.jpg"
+        },
+        {
+          "title": "Pocahontas",
+          "year": 1995,
+          "slug": "Native American princess protects nature from colonizers",
+          "poster": "https://image.tmdb.org/t/p/w500/kZ1ft0QZ4e3zDUPMBftEkwI9ftd.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 10530,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kZ1ft0QZ4e3zDUPMBftEkwI9ftd.jpg"
+        },
+        {
+          "title": "WALL-E",
+          "year": 2008,
+          "slug": "Robot love story in pollution-ravaged future Earth",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Rio",
+          "year": 2011,
+          "slug": "Rare birds fight extinction in Brazilian rainforest",
+          "poster": "https://image.tmdb.org/t/p/w500/4nJxhUknKV8Gqdhov8pU1YWDYfb.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 46195,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4nJxhUknKV8Gqdhov8pU1YWDYfb.jpg"
+        },
+        {
+          "title": "The Lorax",
+          "year": 1972,
+          "slug": "Original animated special of Dr. Seuss environmental tale",
+          "poster": "https://image.tmdb.org/t/p/w500/1f2T6PDGXcsCfkeizkwS4O1dyQD.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 38060,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1f2T6PDGXcsCfkeizkwS4O1dyQD.jpg"
+        },
+        {
+          "title": "Legend of the Guardians",
+          "year": 2010,
+          "slug": "Owls protect their forest kingdom",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": null
+        },
+        {
+          "title": "Bambi",
+          "year": 1942,
+          "slug": "Classic forest life story with conservation message",
+          "poster": "https://image.tmdb.org/t/p/w500/wV9e2y4myJ4KMFsyFfWYcUOawyK.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 3170,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wV9e2y4myJ4KMFsyFfWYcUOawyK.jpg"
+        },
+        {
+          "title": "The Last Unicorn",
+          "year": 1982,
+          "slug": "Magical creature faces extinction of her kind",
+          "poster": "https://image.tmdb.org/t/p/w500/2MhDPbadE2ha83qiFwUHPgmKLnV.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 10150,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2MhDPbadE2ha83qiFwUHPgmKLnV.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

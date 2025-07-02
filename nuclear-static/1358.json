@@ -1,0 +1,192 @@
+{
+  "props": {
+    "title": "A Brief History of Time",
+    "year": 1991,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/A3sVrDThz8Xthfq2EglWoypKEfU.jpg",
+    "initialStreaming": null,
+    "tmdbId": 1358,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Errol Morris crafts a mesmerizing portrait of Stephen Hawking in **A Brief History of Time** (1991), interweaving complex cosmology with intimate biography. The film brilliantly adapts Hawking's bestseller while revealing the man behind the science, setting a new standard for intellectual documentaries that influenced later works like **The Theory of Everything** (2014) and **The Mind of Stephen Hawking** (2012). Morris's signature Interrotron interview technique creates unusually direct, personal connections with the subjects, while Philip Glass's hypnotic score perfectly complements the cosmic scope of Hawking's theories."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "A Beautiful Mind",
+            "year": 2001,
+            "slug": "Ron Howard's Oscar-winning drama about mathematician John Nash's brilliant work and struggle with schizophrenia",
+            "poster": "https://image.tmdb.org/t/p/w500/rEIg5yJdNOt9fmX4P8gU9LeNoTQ.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 453,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rEIg5yJdNOt9fmX4P8gU9LeNoTQ.jpg"
+          },
+          {
+            "title": "Particle Fever",
+            "year": 2013,
+            "slug": "Thrilling documentary following physicists during the Large Hadron Collider's search for the Higgs boson",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": null
+          },
+          {
+            "title": "The Theory of Everything",
+            "year": 2014,
+            "slug": "Eddie Redmayne's Oscar-winning portrayal of Stephen Hawking's life, love, and groundbreaking work",
+            "poster": "https://image.tmdb.org/t/p/w500/kJuL37NTE51zVP3eG5aGMyKAIlh.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 266856,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kJuL37NTE51zVP3eG5aGMyKAIlh.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Scientific documentaries experienced a renaissance following Morris's innovative approach. **Particle Fever** (2013) brought similar humanity to physics, while **The Elegant Universe** (2003) translated string theory for mainstream audiences. These films proved complex scientific concepts could engage general audiences when presented through compelling human stories and creative visualization techniques."
+      },
+      {
+        "type": "text",
+        "content": "Morris's visual style particularly stands out - using dramatic recreations and abstract imagery to illustrate abstract concepts, a technique later refined in films like **The Most Unknown** (2018) and **The Farthest** (2017). His approach shows how documentary can transcend mere explanation to create genuine cinematic experiences from scientific material. SUBHEAD: The Human Side of Genius"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Hidden Figures",
+            "year": 2016,
+            "slug": "The untold story of African American women mathematicians at NASA during the Space Race",
+            "poster": "https://image.tmdb.org/t/p/w500/9lfz2W2uGjyow3am00rsPJ8iOyq.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 381284,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9lfz2W2uGjyow3am00rsPJ8iOyq.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While **A Brief History of Time** (1991) explores Hawking's theories, it's equally focused on his personal journey. This dual approach influenced later scientific biopics like **The Imitation Game** (2014) and **The Man Who Knew Infinity** (2015), showing how personal struggles and scientific breakthroughs intertwine. Morris's film demonstrates that the most compelling scientific stories are ultimately human stories."
+      }
+    ],
+    "exploreFurther": [
+      "Errol Morris's Interrotron interview technique and its impact on documentary filmmaking",
+      "The evolution of scientific visualization in documentary film",
+      "Philip Glass's contributions to documentary scoring",
+      "The challenge of translating complex scientific concepts to film",
+      "Stephen Hawking's influence on popular culture and cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Cosmos",
+          "year": 1980,
+          "slug": "Carl Sagan's groundbreaking science documentary series",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "PBS",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Elegant Universe",
+          "year": 2003,
+          "slug": "Brian Greene explores string theory and modern physics",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "PBS",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Story of Science",
+          "year": 2010,
+          "slug": "Michael Mosley examines the history of scientific discovery",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BBC",
+          "tmdb_id": null
+        },
+        {
+          "title": "Einstein and Eddington",
+          "year": 2008,
+          "slug": "Drama about proving Einstein's Theory of Relativity",
+          "poster": "https://image.tmdb.org/t/p/w500/xfjONUpoEakb14m0dRK3Xqc69Xy.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 15044,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xfjONUpoEakb14m0dRK3Xqc69Xy.jpg"
+        },
+        {
+          "title": "Hawking",
+          "year": 2004,
+          "slug": "Benedict Cumberbatch stars as the young Stephen Hawking",
+          "poster": "https://image.tmdb.org/t/p/w500/zqQZ050fNDnKzRWTo6Q0iLdDLMs.jpg",
+          "initialStreaming": "BBC",
+          "tmdb_id": 34843,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zqQZ050fNDnKzRWTo6Q0iLdDLMs.jpg"
+        },
+        {
+          "title": "The Day After Trinity",
+          "year": 1981,
+          "slug": "Documentary about J. Robert Oppenheimer and the atomic bomb",
+          "poster": "https://image.tmdb.org/t/p/w500/yvNoCvCe4F52KumCuoUePsw7dsN.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 59314,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yvNoCvCe4F52KumCuoUePsw7dsN.jpg"
+        },
+        {
+          "title": "Creation",
+          "year": 2009,
+          "slug": "Drama about Charles Darwin writing \"Origin of Species\"",
+          "poster": "https://image.tmdb.org/t/p/w500/vS6ne76vjRH7Z88rAqYLCcQatB4.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 30431,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vS6ne76vjRH7Z88rAqYLCcQatB4.jpg"
+        },
+        {
+          "title": "Tesla",
+          "year": 2020,
+          "slug": "Unconventional biopic of the brilliant inventor Nikola Tesla",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Current War",
+          "year": 2017,
+          "slug": "Drama about Edison and Tesla's electricity rivalry",
+          "poster": "https://image.tmdb.org/t/p/w500/eqTjO8yTaPRSKWj7i6Qnr7R5cls.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 418879,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eqTjO8yTaPRSKWj7i6Qnr7R5cls.jpg"
+        },
+        {
+          "title": "Infinity",
+          "year": 1996,
+          "slug": "Matthew Broderick as physicist Richard Feynman",
+          "poster": "https://image.tmdb.org/t/p/w500/45cU6BNyRGKhDQZKzVSll4eTgwh.jpg",
+          "initialStreaming": "MGM",
+          "tmdb_id": 2033,
+          "poster_url": "https://image.tmdb.org/t/p/w500/45cU6BNyRGKhDQZKzVSll4eTgwh.jpg"
+        },
+        {
+          "title": "Copenhagen",
+          "year": 2002,
+          "slug": "Drama about physicists Bohr and Heisenberg during WWII",
+          "poster": "https://image.tmdb.org/t/p/w500/ioXN2By2HntqlKu2u2Mys2IPATt.jpg",
+          "initialStreaming": "BBC",
+          "tmdb_id": 51016,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ioXN2By2HntqlKu2u2Mys2IPATt.jpg"
+        },
+        {
+          "title": "The Wind Rises",
+          "year": 2013,
+          "slug": "Miyazaki's animated film about aircraft designer Jiro Horikoshi",
+          "poster": "https://image.tmdb.org/t/p/w500/jfwSexzlIzaOgxP9A8bTA6t8YYb.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 149870,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jfwSexzlIzaOgxP9A8bTA6t8YYb.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

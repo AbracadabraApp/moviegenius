@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "Toy Story",
+    "year": 1995,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg",
+    "initialStreaming": null,
+    "tmdbId": 862,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Toy Story** (1995) revolutionized animation and storytelling, marking the first fully computer-animated feature film. Pixar's groundbreaking achievement wasn't just technical - it created a richly imagined world where toys come alive, anchored by the rivalry-turned-friendship between Woody and Buzz Lightyear. The film established Pixar's signature emotional depth, weaving adult themes of obsolescence, identity, and change into a children's story. This approach influenced countless animated films that followed, from **WALL-E** (2008) to **Inside Out** (2015), proving that animation could tackle sophisticated themes while entertaining audiences of all ages."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Small Soldiers",
+            "year": 1998,
+            "slug": "Action figures come to life in this darker take on sentient toys, mixing comedy with mild horror elements",
+            "poster": "https://image.tmdb.org/t/p/w500/2nuUjSzHsoYlRvTPmLo7m7gCQry.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 11551,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2nuUjSzHsoYlRvTPmLo7m7gCQry.jpg"
+          },
+          {
+            "title": "The LEGO Movie",
+            "year": 2014,
+            "slug": "A clever, meta commentary on creativity and play that shares Toy Story's exploration of toy consciousness",
+            "poster": "https://image.tmdb.org/t/p/w500/lbctonEnewCYZ4FYoTZhs8cidAl.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 137106,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lbctonEnewCYZ4FYoTZhs8cidAl.jpg"
+          },
+          {
+            "title": "Child's Play",
+            "year": 1988,
+            "slug": "The horror flip side of living toys, showing how the concept can tap into deep-seated childhood fears",
+            "poster": "https://image.tmdb.org/t/p/w500/wvpgvcWNkF2HLuTEMIM7K83MvZ.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 10585,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wvpgvcWNkF2HLuTEMIM7K83MvZ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The innovative character design and animation in Toy Story created a new visual language for CG animation. While earlier attempts like **Tron** (1982) and **The Last Starfighter** (1984) incorporated computer animation, Toy Story's achievement was making synthetic materials like plastic and metal look appealing and organic. This influenced everything from **Shrek** (2001) to **The Incredibles** (2004), establishing the foundation for modern animation's aesthetic."
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of jealousy and friendship became a template for animated storytelling. Similar themes appear in **Monsters Inc.** (2001) and **How to Train Your Dragon** (2010), where unlikely pairs must overcome their differences. Toy Story's success also proved that original stories could compete with fairy tale adaptations, encouraging studios to take more creative risks. SUBHEAD: Impact on Modern Animation"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Wreck-It Ralph",
+            "year": 2012,
+            "slug": "Video game characters come alive after hours, exploring similar themes of purpose and belonging",
+            "poster": "https://image.tmdb.org/t/p/w500/zWoIgZ7mgmPkaZjG0102BSKFIqQ.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 82690,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zWoIgZ7mgmPkaZjG0102BSKFIqQ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Toy Story's technical innovations opened floodgates for computer animation, but its lasting influence is emotional storytelling. Films like **Coco** (2017) and **Soul** (2020) continue Pixar's tradition of tackling complex themes through accessible stories. The original film's perfect blend of humor, heart, and existential questions about purpose remains the gold standard for all animation, not just computer-generated works."
+      }
+    ],
+    "exploreFurther": [
+      "The Technical Revolution: How Pixar's RenderMan Software Changed Animation",
+      "Character Design in Early CG Animation: Creating Appealing Digital Characters",
+      "John Lasseter's Vision: From Disney Animator to Pixar Pioneer",
+      "The Toy Story Effect: How One Film Changed Studio Animation Strategy",
+      "Voice Acting in Animation: Tom Hanks and Tim Allen's Influence"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Monsters Inc",
+          "year": 2001,
+          "slug": "Another Pixar classic about secret lives of non-human characters",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Big Hero 6",
+          "year": 2014,
+          "slug": "Exploring emotional bonds with non-human companions",
+          "poster": "https://image.tmdb.org/t/p/w500/2mxS4wUimwlLmI1xp6QW6NSU361.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 177572,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2mxS4wUimwlLmI1xp6QW6NSU361.jpg"
+        },
+        {
+          "title": "The Iron Giant",
+          "year": 1999,
+          "slug": "Touching story of boy and robot friendship",
+          "poster": "https://image.tmdb.org/t/p/w500/ct04FCFLPImNG5thcPLRnVsZlmS.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10386,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ct04FCFLPImNG5thcPLRnVsZlmS.jpg"
+        },
+        {
+          "title": "Tangled",
+          "year": 2010,
+          "slug": "Early Disney CGI success following Pixar's example",
+          "poster": "https://image.tmdb.org/t/p/w500/ym7Kst6a4uodryxqbGOxmewF235.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 38757,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ym7Kst6a4uodryxqbGOxmewF235.jpg"
+        },
+        {
+          "title": "Rise of the Guardians",
+          "year": 2012,
+          "slug": "Childhood figures come to life",
+          "poster": "https://image.tmdb.org/t/p/w500/sW4qOa9yF0Ikg7lppncQ0n5UhKX.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 81188,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sW4qOa9yF0Ikg7lppncQ0n5UhKX.jpg"
+        },
+        {
+          "title": "Zootopia",
+          "year": 2016,
+          "slug": "Complex themes in accessible animation",
+          "poster": "https://image.tmdb.org/t/p/w500/hlK0e0wAQ3VLuJcsfIYPvb4JVud.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 269149,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hlK0e0wAQ3VLuJcsfIYPvb4JVud.jpg"
+        },
+        {
+          "title": "The Good Dinosaur",
+          "year": 2015,
+          "slug": "Pixar's exploration of friendship and growing up",
+          "poster": "https://image.tmdb.org/t/p/w500/8RSkxOO80btfKjyiC5ZiTaCHIT8.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 105864,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8RSkxOO80btfKjyiC5ZiTaCHIT8.jpg"
+        },
+        {
+          "title": "Onward",
+          "year": 2020,
+          "slug": "Modern Pixar continuing emotional storytelling tradition",
+          "poster": "https://image.tmdb.org/t/p/w500/f4aul3FyD3jv3v4bul1IrkWZvzq.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 508439,
+          "poster_url": "https://image.tmdb.org/t/p/w500/f4aul3FyD3jv3v4bul1IrkWZvzq.jpg"
+        },
+        {
+          "title": "Brave",
+          "year": 2012,
+          "slug": "Pixar pushing technical boundaries with hair animation",
+          "poster": "https://image.tmdb.org/t/p/w500/1XAuDtMWpL0sYSFK0R6EZate2Ux.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 62177,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1XAuDtMWpL0sYSFK0R6EZate2Ux.jpg"
+        },
+        {
+          "title": "Bolt",
+          "year": 2008,
+          "slug": "Disney's computer animation finding its footing",
+          "poster": "https://image.tmdb.org/t/p/w500/v5aC4nrzXFGJDWY4JO1eengXzqk.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 13053,
+          "poster_url": "https://image.tmdb.org/t/p/w500/v5aC4nrzXFGJDWY4JO1eengXzqk.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

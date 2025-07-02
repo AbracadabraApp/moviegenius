@@ -1,0 +1,184 @@
+{
+  "props": {
+    "title": "Dr. T & the Women",
+    "year": 2000,
+    "initialSlug": "Love's ultimate test.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/vBtKoV5YU4lStxXyBQLvAdYgGej.jpg",
+    "initialStreaming": null,
+    "tmdbId": 10763,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Robert Altman's **Dr. T & the Women** (2000) exemplifies his signature ensemble storytelling style, following Richard Gere as a Dallas gynecologist surrounded by chaos. Like Altman's masterpiece **Nashville** (1975), the film weaves multiple character threads through a distinctly American social setting. The portrayal of upper-class Texas women recalls the sharp social commentary of **The Player** (1992), though with a gentler touch. Gere's Dr. Sullivan Travis navigates a world of privileged female patients while his own family spirals into various crises, creating the kind of controlled chaos Altman perfected."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Nashville",
+            "year": 1975,
+            "slug": "Altman's sprawling masterpiece following 24 characters in the country music capital",
+            "poster": "https://image.tmdb.org/t/p/w500/twl4ovyjb8muFKvZmcCDzPR0hy1.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 3121,
+            "poster_url": "https://image.tmdb.org/t/p/w500/twl4ovyjb8muFKvZmcCDzPR0hy1.jpg"
+          },
+          {
+            "title": "Short Cuts",
+            "year": 1993,
+            "slug": "Interweaving Los Angeles stories based on Raymond Carver's work",
+            "poster": "https://image.tmdb.org/t/p/w500/mbNTvbtWfV4soyErimDTdX67OAr.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 695,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mbNTvbtWfV4soyErimDTdX67OAr.jpg"
+          },
+          {
+            "title": "Gosford Park",
+            "year": 2001,
+            "slug": "Upstairs-downstairs murder mystery with Altman's ensemble touch",
+            "poster": "https://image.tmdb.org/t/p/w500/7r8DeZuaaHCiOEbkqZC6MFmwJ69.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 5279,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7r8DeZuaaHCiOEbkqZC6MFmwJ69.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film sits within Altman's late-career renaissance alongside **Cookie's Fortune** (1999) and **Gosford Park** (2001), where he continued exploring class dynamics and gender roles with his trademark overlapping dialogue and roaming camera work. The mall scenes especially showcase his ability to orchestrate multiple conversations and character interactions simultaneously, a technique that influenced later ensemble films like **Magnolia** (1999) and **Crash** (2004)."
+      },
+      {
+        "type": "text",
+        "content": "Helen Hunt's character offers a fascinating counterpoint to the film's depiction of Dallas society women, representing a more grounded perspective similar to Lily Tomlin's character in **Nashville** (1975). The film's controversial ending, with its magical realist elements, echoes the unexpected tonal shifts of **3 Women** (1977), another Altman film that delved deep into female relationships and identity. SUBHEAD: Late Altman Period Themes"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "3 Women",
+            "year": 1977,
+            "slug": "Dreamlike exploration of female identity and relationship dynamics",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": null
+          },
+          {
+            "title": "Cookie's Fortune",
+            "year": 1999,
+            "slug": "Southern gothic comedy about family secrets and small-town life",
+            "poster": "https://image.tmdb.org/t/p/w500/tskbsm57aWqU4wsf8sX4ClM77Kf.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 9465,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tskbsm57aWqU4wsf8sX4ClM77Kf.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film represents Altman's continued interest in American social structures and gender dynamics, though with less bite than his earlier works like **M*A*S*H** (1970) or **McCabe & Mrs. Miller** (1971). The treatment of wealthy Dallas society recalls the country club world of **A Prairie Home Companion** (2006), his final film, suggesting a softer but no less observant eye toward American social institutions."
+      }
+    ],
+    "exploreFurther": [
+      "Robert Altman's Ensemble Technique: Overlapping Dialogue and Moving Camera",
+      "Gender and Class in Late 20th Century American Cinema",
+      "The Evolution of Richard Gere's Leading Man Persona",
+      "Magical Realism in Contemporary American Film",
+      "The Representation of Texas Society in Modern Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Player",
+          "year": 1992,
+          "slug": "Hollywood satire with Altman's signature style",
+          "poster": "https://image.tmdb.org/t/p/w500/tZ3kDut2dhFVGkWNEn9xoCHCNAx.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 10403,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tZ3kDut2dhFVGkWNEn9xoCHCNAx.jpg"
+        },
+        {
+          "title": "McCabe & Mrs. Miller",
+          "year": 1971,
+          "slug": "Revisionist Western with Warren Beatty",
+          "poster": "https://image.tmdb.org/t/p/w500/eQ9hDaTNpZ4wb7FWdqoJcOCJBve.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 29005,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eQ9hDaTNpZ4wb7FWdqoJcOCJBve.jpg"
+        },
+        {
+          "title": "M*A*S*H",
+          "year": 1970,
+          "slug": "Korean War medical unit dark comedy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": null
+        },
+        {
+          "title": "A Prairie Home Companion",
+          "year": 2006,
+          "slug": "Altman's final film about a radio show's last broadcast",
+          "poster": "https://image.tmdb.org/t/p/w500/7AxXWJYzrFx7LIFP3OvCPecwXGE.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 9526,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7AxXWJYzrFx7LIFP3OvCPecwXGE.jpg"
+        },
+        {
+          "title": "Short Cuts",
+          "year": 1993,
+          "slug": "Los Angeles ensemble drama based on Raymond Carver stories",
+          "poster": "https://image.tmdb.org/t/p/w500/mbNTvbtWfV4soyErimDTdX67OAr.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 695,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mbNTvbtWfV4soyErimDTdX67OAr.jpg"
+        },
+        {
+          "title": "The Company",
+          "year": 2003,
+          "slug": "Behind-the-scenes look at a Chicago ballet company",
+          "poster": "https://image.tmdb.org/t/p/w500/ivmlrYB3adlShuvwXhRETsVBB0z.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 52036,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ivmlrYB3adlShuvwXhRETsVBB0z.jpg"
+        },
+        {
+          "title": "Ready to Wear",
+          "year": 1994,
+          "slug": "Fashion industry satire set in Paris",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Tanner '88",
+          "year": 1988,
+          "slug": "Political mockumentary series",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Kansas City",
+          "year": 1996,
+          "slug": "Jazz-era crime drama",
+          "poster": "https://image.tmdb.org/t/p/w500/deD8SAbQYGvzcpRr50HUb9uj8xJ.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 22479,
+          "poster_url": "https://image.tmdb.org/t/p/w500/deD8SAbQYGvzcpRr50HUb9uj8xJ.jpg"
+        },
+        {
+          "title": "That Cold Day in the Park",
+          "year": 1969,
+          "slug": "Psychological thriller about loneliness",
+          "poster": "https://image.tmdb.org/t/p/w500/tUcTRSXeU6mzlPqQ6i8vfWY3MhP.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 66488,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tUcTRSXeU6mzlPqQ6i8vfWY3MhP.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

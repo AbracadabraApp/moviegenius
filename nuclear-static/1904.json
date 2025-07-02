@@ -1,0 +1,176 @@
+{
+  "props": {
+    "title": "Memoirs of a Geisha",
+    "year": 2005,
+    "initialSlug": "Destiny Unveiled. Passion Ignited.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/9twKlPKD5Qd2EXX8lohW4zL8zQ8.jpg",
+    "initialStreaming": null,
+    "tmdbId": 1904,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Memoirs of a Geisha** (2005) masterfully captures pre-WWII Japan through Western eyes, following Zhang Ziyi's transformation from impoverished child to legendary geisha. Director Rob Marshall infuses every frame with stunning visual poetry, while John Williams' haunting score blends Eastern and Western musical traditions. The film shares DNA with other lavish Asian-set Hollywood productions like **The Last Emperor** (1987) and **Crouching Tiger, Hidden Dragon** (2000), though it sparked controversy for casting Chinese actresses in Japanese roles. Dion Beebe's Oscar-winning cinematography turns rain-slicked streets and cherry blossoms into living paintings."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "House of Flying Daggers",
+            "year": 2004,
+            "slug": "Zhang Yimou's visually spectacular martial arts romance features Zhang Ziyi in another period drama showcasing Asian culture",
+            "poster": "https://image.tmdb.org/t/p/w500/93feGsGiCtG5ymrRcErUgBsdo6v.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 9550,
+            "poster_url": "https://image.tmdb.org/t/p/w500/93feGsGiCtG5ymrRcErUgBsdo6v.jpg"
+          },
+          {
+            "title": "Raise the Red Lantern",
+            "year": 1991,
+            "slug": "Stunning drama about concubines in 1920s China with similar themes of female rivalry and tradition",
+            "poster": "https://image.tmdb.org/t/p/w500/j6MGZpg55cTqlHHwahBtzI2qQg1.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 10404,
+            "poster_url": "https://image.tmdb.org/t/p/w500/j6MGZpg55cTqlHHwahBtzI2qQg1.jpg"
+          },
+          {
+            "title": "The Lover",
+            "year": 1992,
+            "slug": "Sensual period drama about forbidden romance in 1929 French Indochina",
+            "poster": "https://image.tmdb.org/t/p/w500/lgBGy8QaIFD9jQJWgi837czobEp.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 10995,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lgBGy8QaIFD9jQJWgi837czobEp.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of the geisha tradition connects to broader cinematic examinations of Asian cultural practices and modernization. **Lost in Translation** (2003) offers a contemporary view of Japan through Western eyes, while **In the Mood for Love** (2000) captures a similar sense of restrained passion and precise cultural etiquette. The attention to period detail and customs recalls **Farewell My Concubine** (1993), another epic spanning decades of Asian history through the lens of traditional artists."
+      },
+      {
+        "type": "text",
+        "content": "The film's costume design by Colleen Atwood earned an Oscar, creating a sumptuous visual feast that influenced later Asian-set period pieces like **47 Ronin** (2013) and **The Last Samurai** (2003). The training sequences showing the protagonist's transformation mirror other films about artistic discipline like **Black Swan** (2010) and **The Red Shoes** (1948), though with distinctly Japanese cultural elements. SUBHEAD: Cultural Impact and Representation"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "In the Mood for Love",
+            "year": 2000,
+            "slug": "Wong Kar-wai's masterpiece about repressed romance in 1960s Hong Kong",
+            "poster": "https://image.tmdb.org/t/p/w500/iYypPT4bhqXfq1b6EnmxvRt6b2Y.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 843,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iYypPT4bhqXfq1b6EnmxvRt6b2Y.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While **Memoirs of a Geisha** faced criticism for its casting choices, it opened doors for Asian representation in Hollywood, preceding films like **Crazy Rich Asians** (2018) and **The Joy Luck Club** (1993) in exploring Asian cultural traditions for mainstream Western audiences. The film's commercial success proved international audiences would embrace Asian stories, though later films like **Better Luck Tomorrow** (2002) and **The Farewell** (2019) would offer more authentic perspectives."
+      }
+    ],
+    "exploreFurther": [
+      "The History of Geisha Culture in Cinema",
+      "Rob Marshall's Evolution from Chicago to Memoirs",
+      "Controversies in Cross-Cultural Casting",
+      "John Williams' East-Meets-West Film Scores",
+      "Traditional Japanese Arts in Modern Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Farewell My Concubine",
+          "year": 1993,
+          "slug": "Epic drama spanning decades of Chinese history through traditional opera",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Last Emperor",
+          "year": 1987,
+          "slug": "Bernardo Bertolucci's Oscar-winning biography of China's final emperor",
+          "poster": "https://image.tmdb.org/t/p/w500/7TILJhdeJAaEyDiwvJZMo9SQBoe.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 746,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7TILJhdeJAaEyDiwvJZMo9SQBoe.jpg"
+        },
+        {
+          "title": "Crouching Tiger Hidden Dragon",
+          "year": 2000,
+          "slug": "Ang Lee's martial arts masterpiece with similar themes of tradition",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Snow Falling on Cedars",
+          "year": 1999,
+          "slug": "Another Western perspective on Japanese culture and prejudice",
+          "poster": "https://image.tmdb.org/t/p/w500/h1CujbeKvwkR6LMr4jVuMM0C94X.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 10219,
+          "poster_url": "https://image.tmdb.org/t/p/w500/h1CujbeKvwkR6LMr4jVuMM0C94X.jpg"
+        },
+        {
+          "title": "The Painted Veil",
+          "year": 2006,
+          "slug": "Period romance set in 1920s China with themes of cultural clash",
+          "poster": "https://image.tmdb.org/t/p/w500/k41IvHDLgZO2ae7RuU77wQjScIj.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 14202,
+          "poster_url": "https://image.tmdb.org/t/p/w500/k41IvHDLgZO2ae7RuU77wQjScIj.jpg"
+        },
+        {
+          "title": "Empire of the Sun",
+          "year": 1987,
+          "slug": "Spielberg's WWII drama set in Japanese-occupied China",
+          "poster": "https://image.tmdb.org/t/p/w500/gEaCzjwHoPgyQFcwHql7o5YLHAU.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10110,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gEaCzjwHoPgyQFcwHql7o5YLHAU.jpg"
+        },
+        {
+          "title": "The White Countess",
+          "year": 2005,
+          "slug": "Period drama set in 1930s Shanghai",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Indochine",
+          "year": 1992,
+          "slug": "Colonial drama exploring Asian culture through Western lens",
+          "poster": "https://image.tmdb.org/t/p/w500/sAemRfr6mOSwtQ76e4yUQVImo8B.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 2731,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sAemRfr6mOSwtQ76e4yUQVImo8B.jpg"
+        },
+        {
+          "title": "Double Happiness",
+          "year": 1994,
+          "slug": "Story of traditional Asian family values in modern world",
+          "poster": "https://image.tmdb.org/t/p/w500/5sbnCdiFoZLe4G27ERS7wtj1lCY.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 60855,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5sbnCdiFoZLe4G27ERS7wtj1lCY.jpg"
+        },
+        {
+          "title": "Paradise Road",
+          "year": 1997,
+          "slug": "WWII drama exploring cross-cultural connections in Asia",
+          "poster": "https://image.tmdb.org/t/p/w500/mEA7Iv1e6HqpSGMfVUdUfYOusNU.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 77223,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mEA7Iv1e6HqpSGMfVUdUfYOusNU.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,179 @@
+{
+  "props": {
+    "title": "The Future of Food",
+    "year": 2004,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/1j001mLedx9b95AVguAezMMUthP.jpg",
+    "initialStreaming": null,
+    "tmdbId": 25465,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Future of Food** (2004) launched a wave of hard-hitting food industry documentaries that exposed industrial agriculture's dark side. Director Deborah Koons Garcia meticulously traces how corporations gained control of our food supply through genetic engineering and patent law. This sparked similar exposés like **Food, Inc.** (2008) and **Fresh** (2009), creating a subgenre of activist food docs. The film's investigation of GMO contamination of organic crops and corporate strong-arming of small farmers hit like a gut punch, paving the way for **King Corn** (2007) and **Food Evolution** (2016) to further explore biotech's impact on agriculture."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Food, Inc.",
+            "year": 2008,
+            "slug": "Robert Kenner's influential documentary examining corporate farming, industrial food production, and its impact on health and environment",
+            "poster": "https://image.tmdb.org/t/p/w500/zdwN4o7OGAZGJw9T64lRAGTEP8b.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 18570,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zdwN4o7OGAZGJw9T64lRAGTEP8b.jpg"
+          },
+          {
+            "title": "Super Size Me",
+            "year": 2004,
+            "slug": "Morgan Spurlock's personal experiment eating only McDonald's for 30 days while exploring fast food's health effects",
+            "poster": "https://image.tmdb.org/t/p/w500/zYkbqQaCuIHBxqBDGgnQCwJ9jIG.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 9372,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zYkbqQaCuIHBxqBDGgnQCwJ9jIG.jpg"
+          },
+          {
+            "title": "Fed Up",
+            "year": 2014,
+            "slug": "Katie Couric investigates the American obesity epidemic and the food industry's role in the crisis",
+            "poster": "https://image.tmdb.org/t/p/w500/qwsR5gwz6RYch4LtxtN8FdMPATC.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 250657,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qwsR5gwz6RYch4LtxtN8FdMPATC.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The conversation around food ethics and sustainability gained mainstream momentum with **Cowspiracy** (2014) and **What the Health** (2017), both taking cues from The Future of Food's investigative approach. These films connected industrial agriculture to climate change and public health crises, while **Just Eat It** (2014) tackled food waste. The movement expanded beyond pure activism with character-driven narratives like **Chef** (2014) and **Jiro Dreams of Sushi** (2011), celebrating food culture while acknowledging systemic problems."
+      },
+      {
+        "type": "text",
+        "content": "Recent documentaries like **Kiss the Ground** (2020) and **Biggest Little Farm** (2018) have shifted focus toward solutions, showcasing regenerative agriculture and sustainable farming practices. This marks an evolution from The Future of Food's warning cry to actionable alternatives. Meanwhile, **Gather** (2020) explores indigenous food sovereignty, demonstrating how food documentaries now address environmental justice alongside agricultural practices. SUBHEAD: From Exposé to Solutions-Based Storytelling"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Sustainable",
+            "year": 2016,
+            "slug": "Documentary exploring the economic and environmental instability of America's food system",
+            "poster": "https://image.tmdb.org/t/p/w500/h6ZhcjWgafI5MFLK5GK69cUDKLZ.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 396126,
+            "poster_url": "https://image.tmdb.org/t/p/w500/h6ZhcjWgafI5MFLK5GK69cUDKLZ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The impact of **The Future of Food** (2004) continues reverberating through films like **Modified** (2017) and **Seeds of Time** (2013), which investigate seed preservation and biodiversity. These documentaries maintain the original's investigative spirit while incorporating more personal narratives and potential solutions. The genre has matured beyond simple corporate criticism to explore complex interconnections between food systems, climate change, and social justice, as seen in **Theater of Life** (2016) and **Wasted!** (2017)."
+      }
+    ],
+    "exploreFurther": [
+      "The Rise of GMOs and Corporate Agriculture in America",
+      "Legal Battles Over Seed Patents and Farmer Rights",
+      "Evolution of Food Documentary Filmmaking Techniques",
+      "Impact of Food Documentaries on Consumer Behavior",
+      "Sustainable Agriculture Solutions in Modern Farming"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Food Evolution",
+          "year": 2016,
+          "slug": "Science-based look at GMO controversy",
+          "poster": "https://image.tmdb.org/t/p/w500/5F4esKzkhC6lN454SeR5iWsM7pX.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 426546,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5F4esKzkhC6lN454SeR5iWsM7pX.jpg"
+        },
+        {
+          "title": "Food Matters",
+          "year": 2008,
+          "slug": "Nutrition and natural healing investigation",
+          "poster": "https://image.tmdb.org/t/p/w500/g1u0Mf4VKKklC8fKsvAh5n5pk8T.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 26018,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g1u0Mf4VKKklC8fKsvAh5n5pk8T.jpg"
+        },
+        {
+          "title": "Our Daily Bread",
+          "year": 2005,
+          "slug": "Stark visual exploration of industrial food production",
+          "poster": "https://image.tmdb.org/t/p/w500/kdW7HPJqhRQ2HRU9ZurbDbpTyj.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 24565,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kdW7HPJqhRQ2HRU9ZurbDbpTyj.jpg"
+        },
+        {
+          "title": "Fresh",
+          "year": 2009,
+          "slug": "Farmers and thinkers reimagining food systems",
+          "poster": "https://image.tmdb.org/t/p/w500/dZVkiMi2J2CjikwFLtMJJneckUi.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 52406,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dZVkiMi2J2CjikwFLtMJJneckUi.jpg"
+        },
+        {
+          "title": "King Corn",
+          "year": 2007,
+          "slug": "Two friends grow corn to understand industrial agriculture",
+          "poster": "https://image.tmdb.org/t/p/w500/zVHWzV9o2FU1SasNxuiJMW2FY0V.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 15281,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zVHWzV9o2FU1SasNxuiJMW2FY0V.jpg"
+        },
+        {
+          "title": "A Place at the Table",
+          "year": 2012,
+          "slug": "Examining hunger in America",
+          "poster": "https://image.tmdb.org/t/p/w500/ptli8HtDrapZdVdBnYSN8zxJtw0.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 84198,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ptli8HtDrapZdVdBnYSN8zxJtw0.jpg"
+        },
+        {
+          "title": "Ingredients",
+          "year": 2009,
+          "slug": "Local food movement documentary",
+          "poster": "https://image.tmdb.org/t/p/w500/nYu0wIcIKCcXxghyTg1J42mKirU.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 83653,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nYu0wIcIKCcXxghyTg1J42mKirU.jpg"
+        },
+        {
+          "title": "In Defense of Food",
+          "year": 2015,
+          "slug": "Michael Pollan's investigation of modern diet",
+          "poster": "https://image.tmdb.org/t/p/w500/9xtBExrK5Gg2xELuaCd3vMuX6iL.jpg",
+          "initialStreaming": "PBS",
+          "tmdb_id": 375232,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9xtBExrK5Gg2xELuaCd3vMuX6iL.jpg"
+        },
+        {
+          "title": "GMO OMG",
+          "year": 2013,
+          "slug": "Personal journey exploring GMOs in food supply",
+          "poster": "https://image.tmdb.org/t/p/w500/qMCHeiycPoxh8NnJ4YtEDuG1FtE.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 168864,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qMCHeiycPoxh8NnJ4YtEDuG1FtE.jpg"
+        },
+        {
+          "title": "Seed: The Untold Story",
+          "year": 2016,
+          "slug": "Adventure to protect seed diversity",
+          "poster": "https://image.tmdb.org/t/p/w500/8a5qlUwaX95vDJl0TLNqpaCY4sX.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 417417,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8a5qlUwaX95vDJl0TLNqpaCY4sX.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

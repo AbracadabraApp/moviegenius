@@ -1,0 +1,141 @@
+{
+  "props": {
+    "title": "The Man From Snowy River II",
+    "year": 1988,
+    "initialSlug": "A Thunderous Ride Awaits",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/Ac6QsOTHqepD096sWnHeqH6TP3q.jpg",
+    "initialStreaming": null,
+    "tmdbId": 13965,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The sequel to the beloved Australian western **The Man From Snowy River** (1982), this 1988 follow-up continues the rugged frontier romance while expanding the scope of its predecessor. Like **Return to Snowy River** in some markets, the film follows Tom Burlinson reprising his role as Jim Craig, returning to the high country after making his fortune. It taps into the same vein of distinctly Australian western imagery that influenced films like **Quigley Down Under** (1990) and **The Proposition** (2005), with sweeping Victorian highlands replacing the American frontier."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Man From Snowy River",
+            "year": 1982,
+            "slug": "A young horseman proves himself in the Australian high country while falling in love with a wealthy rancher's daughter",
+            "poster": "https://image.tmdb.org/t/p/w500/1alAfoJf7Pjn0QuwzO9wY7SLQCt.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 24266,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1alAfoJf7Pjn0QuwzO9wY7SLQCt.jpg"
+          },
+          {
+            "title": "Quigley Down Under",
+            "year": 1990,
+            "slug": "An American sharpshooter travels to Australia for a job but finds himself defending Aborigines against a ruthless rancher",
+            "poster": "https://image.tmdb.org/t/p/w500/93HWOYFsjLsCJC8RawGLv1ANZwS.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 9588,
+            "poster_url": "https://image.tmdb.org/t/p/w500/93HWOYFsjLsCJC8RawGLv1ANZwS.jpg"
+          },
+          {
+            "title": "The Proposition",
+            "year": 2005,
+            "slug": "A brutal western set in the Australian outback where a criminal must hunt down his psychotic older brother",
+            "poster": "https://image.tmdb.org/t/p/w500/bbSHSJuO5XjrIKMh6QXXLTg3Yzr.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 16608,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bbSHSJuO5XjrIKMh6QXXLTg3Yzr.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Director Geoff Burrowes captures the same majestic mountain scenery that made the original so visually striking, though with a darker emotional core. The sequel deals more explicitly with class warfare and land rights, themes that would later emerge in Australian films like **Australia** (2008) and **Sweet Country** (2017). Sigrid Thornton returns as Jessica, now caught between her love for Jim and her family's expectations, creating dramatic tension that echoes similar conflicts in **Far and Away** (1992). SUBHEAD: Australian Western Identity"
+      },
+      {
+        "type": "text",
+        "content": "The film cements the \"Australian western\" as a distinct subgenre, one that trades cowboys for horsemen and cattle stations for sheep runs. Like **The Overlanders** (1946) and **We of the Never Never** (1982), it portrays the unique challenges of the Australian frontier, where European agricultural traditions clash with the realities of an unforgiving landscape. The high-stakes horse riding sequences, particularly Jim's descent down treacherous mountain slopes, set a standard for practical stunt work that influenced later Australian action films."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Australian Western Cinema 1920-1990",
+      "Horsemanship and Stunt Work in Australian Film",
+      "Banjo Paterson's Poetry in Cinema",
+      "Class Conflict in Colonial Australian Cinema",
+      "The Impact of Location Filming in the Victorian Highlands"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Lighthorsemen",
+          "year": 1987,
+          "slug": "Australian cavalry charges into battle during WWI",
+          "poster": "https://image.tmdb.org/t/p/w500/h0U0l94ILsSb2Wbq8hLvLR92mQA.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 18389,
+          "poster_url": "https://image.tmdb.org/t/p/w500/h0U0l94ILsSb2Wbq8hLvLR92mQA.jpg"
+        },
+        {
+          "title": "We of the Never Never",
+          "year": 1982,
+          "slug": "A woman adapts to life on a remote cattle station in the Australian outback",
+          "poster": "https://image.tmdb.org/t/p/w500/AfOT4cJQNyOnEblh9t3LSqJEh2l.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 41125,
+          "poster_url": "https://image.tmdb.org/t/p/w500/AfOT4cJQNyOnEblh9t3LSqJEh2l.jpg"
+        },
+        {
+          "title": "The Sundowners",
+          "year": 1960,
+          "slug": "A family of sheep drovers faces challenges in the Australian outback",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": null
+        },
+        {
+          "title": "Ned Kelly",
+          "year": 2003,
+          "slug": "The story of Australia's most famous bushranger",
+          "poster": "https://image.tmdb.org/t/p/w500/fS4nIWTMjweqYPHKRhMYLZGaBoW.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 10544,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fS4nIWTMjweqYPHKRhMYLZGaBoW.jpg"
+        },
+        {
+          "title": "The Tracker",
+          "year": 2002,
+          "slug": "An Aboriginal tracker leads police through the outback hunting a murder suspect",
+          "poster": "https://image.tmdb.org/t/p/w500/zNDbpSbjpV0bLVA0mUY1TH2YohT.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 13439,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zNDbpSbjpV0bLVA0mUY1TH2YohT.jpg"
+        },
+        {
+          "title": "Australia",
+          "year": 2008,
+          "slug": "An English aristocrat joins forces with a rough-hewn drover during WWII",
+          "poster": "https://image.tmdb.org/t/p/w500/tFQpccGMTWe24eWxK5U9rb7tK3M.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 6972,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tFQpccGMTWe24eWxK5U9rb7tK3M.jpg"
+        },
+        {
+          "title": "Red Hill",
+          "year": 2010,
+          "slug": "A modern Australian western about a young police officer's first day on the job",
+          "poster": "https://image.tmdb.org/t/p/w500/fLELMBUdDoqJvPDE7CcYn0Ny6y8.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 45569,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fLELMBUdDoqJvPDE7CcYn0Ny6y8.jpg"
+        },
+        {
+          "title": "The Drover's Wife",
+          "year": 2021,
+          "slug": "A woman protects her children in the harsh Australian bush",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,170 @@
+{
+  "props": {
+    "title": "The Hobbit",
+    "year": 1977,
+    "initialSlug": "Bilbo's animated quest for dragon gold and destiny",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/2ohvyMPhvjftLrM6S6Ljr6QrL0u.jpg",
+    "initialStreaming": null,
+    "tmdbId": 1362,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Rankin/Bass Productions' animated adaptation of **The Hobbit** (1977) stands as a fascinating bridge between classic cel animation and modern fantasy filmmaking. This made-for-television film captured Tolkien's world through distinctive Japanese-American collaboration, with animation by Topcraft (which later evolved into Studio Ghibli). The film's folk-art aesthetic and memorable musical numbers like \"The Greatest Adventure\" set it apart from later adaptations like Peter Jackson's **The Hobbit: An Unexpected Journey** (2012). Its economical 77-minute runtime proves you don't need 9 hours to tell Bilbo's tale effectively."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Lord of the Rings",
+            "year": 1978,
+            "slug": "Ralph Bakshi's ambitious rotoscoped adaptation tackles Tolkien's larger trilogy with experimental animation techniques that influenced fantasy filmmaking for decades",
+            "poster": "https://image.tmdb.org/t/p/w500/liW0mjvTyLs7UCumaHhx3PpU4VT.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 123,
+            "poster_url": "https://image.tmdb.org/t/p/w500/liW0mjvTyLs7UCumaHhx3PpU4VT.jpg"
+          },
+          {
+            "title": "The Return of the King",
+            "year": 1980,
+            "slug": "Rankin/Bass's follow-up to The Hobbit concludes Frodo's journey with the same distinctive animation style and musical elements",
+            "poster": "https://image.tmdb.org/t/p/w500/lTwUT4NsSyUQlHV20Mx3C96JHq4.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 1361,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lTwUT4NsSyUQlHV20Mx3C96JHq4.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The success of **The Hobbit** (1977) helped pave the way for animated fantasy films of the 1980s. Its influence can be seen in works like **The Last Unicorn** (1982) and **The Flight of Dragons** (1982), which similarly balanced mature themes with accessibility for younger viewers. The character designs by Lester Abrams and Tsuguyuki Kubo created a unique visual language that neither fully Westernized nor fully Japanese, predating the mainstream anime boom by decades."
+      },
+      {
+        "type": "text",
+        "content": "Voice performance choices were particularly crucial to the film's enduring appeal. Orson Bean's Bilbo captures both the character's reluctance and eventual heroism, while Hans Conried's Thorin maintains gravitas without becoming overly pompous. John Huston's Gandalf set a template for how the wizard would be portrayed that even influenced Ian McKellen's later live-action interpretation in **The Lord of the Rings: The Fellowship of the Ring** (2001). SUBHEAD: Animation Innovation and Legacy"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Dark Crystal",
+            "year": 1982,
+            "slug": "Jim Henson's dark fantasy masterpiece shares The Hobbit's commitment to creating a fully realized fantasy world that doesn't talk down to its audience",
+            "poster": "https://image.tmdb.org/t/p/w500/6g1Kh73qQRosyhRJpL3euQpMxOE.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 11639,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6g1Kh73qQRosyhRJpL3euQpMxOE.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's technical achievements deserve special recognition. While limited by television budgets, the animation team created memorable sequences like the Gollum encounter and Smaug's attack that hold up remarkably well. The watercolor backgrounds and character animation techniques would later influence works like **The Secret of NIMH** (1982) and even Studio Ghibli's **Nausicaä of the Valley of the Wind** (1984). The film demonstrates how creative constraints can sometimes yield more imaginative solutions than unlimited resources."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Tolkien Adaptations - From Rankin/Bass to Peter Jackson",
+      "Japanese-American Animation Collaborations of the 1970s",
+      "Musical Fantasy Films and Their Cultural Impact",
+      "Character Design in Early Fantasy Animation",
+      "The Influence of Limited Animation Techniques on Storytelling"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Watership Down",
+          "year": 1978,
+          "slug": "Animated adaptation of Richard Adams' novel proves animation can tackle serious themes",
+          "poster": "https://image.tmdb.org/t/p/w500/q9ZcNxfquJbMTd6UfhAlJbmLBts.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 11837,
+          "poster_url": "https://image.tmdb.org/t/p/w500/q9ZcNxfquJbMTd6UfhAlJbmLBts.jpg"
+        },
+        {
+          "title": "The Last Unicorn",
+          "year": 1982,
+          "slug": "Rankin/Bass fantasy featuring similar animation style and mature themes",
+          "poster": "https://image.tmdb.org/t/p/w500/2MhDPbadE2ha83qiFwUHPgmKLnV.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 10150,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2MhDPbadE2ha83qiFwUHPgmKLnV.jpg"
+        },
+        {
+          "title": "The Flight of Dragons",
+          "year": 1982,
+          "slug": "Another Rankin/Bass fantasy exploring dragons and magic",
+          "poster": "https://image.tmdb.org/t/p/w500/4ta5lQEOBSxyuoOvgLs6CNQMTN6.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 27273,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4ta5lQEOBSxyuoOvgLs6CNQMTN6.jpg"
+        },
+        {
+          "title": "The Secret of NIMH",
+          "year": 1982,
+          "slug": "Don Bluth's dark animated fantasy showing animation's potential",
+          "poster": "https://image.tmdb.org/t/p/w500/prNrnOKlkV9wl5Sl3zwHu1f3t2z.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 11704,
+          "poster_url": "https://image.tmdb.org/t/p/w500/prNrnOKlkV9wl5Sl3zwHu1f3t2z.jpg"
+        },
+        {
+          "title": "Fire and Ice",
+          "year": 1983,
+          "slug": "Ralph Bakshi's rotoscoped fantasy epic",
+          "poster": "https://image.tmdb.org/t/p/w500/v0fi9KgmdsUsGtopxxRzbtQ5NIX.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 15035,
+          "poster_url": "https://image.tmdb.org/t/p/w500/v0fi9KgmdsUsGtopxxRzbtQ5NIX.jpg"
+        },
+        {
+          "title": "The NeverEnding Story",
+          "year": 1984,
+          "slug": "Live-action fantasy sharing similar themes of unlikely heroes",
+          "poster": "https://image.tmdb.org/t/p/w500/ddYCa91iDXfJCxaqSYzwi2fjfnl.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 34584,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ddYCa91iDXfJCxaqSYzwi2fjfnl.jpg"
+        },
+        {
+          "title": "Nausicaä of the Valley of the Wind",
+          "year": 1984,
+          "slug": "Early Miyazaki fantasy showing Topcraft's evolution",
+          "poster": "https://image.tmdb.org/t/p/w500/tcrkfB8SRPQCgwI88hQScua6nxh.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 81,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tcrkfB8SRPQCgwI88hQScua6nxh.jpg"
+        },
+        {
+          "title": "Castle in the Sky",
+          "year": 1986,
+          "slug": "First official Studio Ghibli film with Topcraft staff",
+          "poster": "https://image.tmdb.org/t/p/w500/41XxSsJc5OrulP0m7TrrUeO2hoz.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10515,
+          "poster_url": "https://image.tmdb.org/t/p/w500/41XxSsJc5OrulP0m7TrrUeO2hoz.jpg"
+        },
+        {
+          "title": "Willow",
+          "year": 1988,
+          "slug": "Live-action fantasy about an unlikely hero's journey",
+          "poster": "https://image.tmdb.org/t/p/w500/pAIRGMIdN7ZdZhflazdV2ezuJ9f.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 847,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pAIRGMIdN7ZdZhflazdV2ezuJ9f.jpg"
+        },
+        {
+          "title": "Princess Mononoke",
+          "year": 1997,
+          "slug": "Studio Ghibli's fantasy epic showing their matured animation style",
+          "poster": "https://image.tmdb.org/t/p/w500/cMYCDADoLKLbB83g4WnJegaZimC.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 128,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cMYCDADoLKLbB83g4WnJegaZimC.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

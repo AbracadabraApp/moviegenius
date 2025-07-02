@@ -1,0 +1,179 @@
+{
+  "props": {
+    "title": "Star Trek V: The Final Frontier",
+    "year": 1989,
+    "initialSlug": "Kirk faces a rogue Vulcan searching for God",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/uiXr41VLYsuug3CZbFrKLSNahuZ.jpg",
+    "initialStreaming": null,
+    "tmdbId": 172,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Star Trek V: The Final Frontier** (1989) represents the most controversial and divisive entry in the original Star Trek film series. Directed by William Shatner himself, the film attempted to blend spiritual questioning with classic Trek adventure, but stumbled in execution. Following the success of **Star Trek IV: The Voyage Home** (1986), Shatner aimed to explore weightier themes like faith, false prophets, and humanity's search for God. The film shares thematic DNA with **Close Encounters of the Third Kind** (1977) in its examination of blind faith and cosmic seeking, though with far less successful results."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Star Trek IV: The Voyage Home",
+            "year": 1986,
+            "slug": "The crew travels to 1986 San Francisco to save Earth's whales in this beloved fish-out-of-water adventure",
+            "poster": "https://image.tmdb.org/t/p/w500/xY5TzGXJOB3L9rhZ1MbbPyVlW5J.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 168,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xY5TzGXJOB3L9rhZ1MbbPyVlW5J.jpg"
+          },
+          {
+            "title": "Star Trek: The Motion Picture",
+            "year": 1979,
+            "slug": "The Enterprise investigates a massive alien cloud heading toward Earth in this cerebral series revival",
+            "poster": "https://image.tmdb.org/t/p/w500/wfiAfNwH6CMKxz4vRaW8CPTabtk.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 152,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wfiAfNwH6CMKxz4vRaW8CPTabtk.jpg"
+          },
+          {
+            "title": "Star Trek II: The Wrath of Khan",
+            "year": 1982,
+            "slug": "Kirk faces off against genetically enhanced superhuman Khan in this action-packed franchise peak",
+            "poster": "https://image.tmdb.org/t/p/w500/uPyLsKl8Z0LOoxeaFXsY5MxhR5s.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 154,
+            "poster_url": "https://image.tmdb.org/t/p/w500/uPyLsKl8Z0LOoxeaFXsY5MxhR5s.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's production was plagued by budget cuts, special effects limitations, and studio interference. Originally envisioned with more ambitious sequences - including a rock monster finale at \"God's\" planet that had to be drastically scaled back - the final product feels compromised. The basic premise of Spock's half-brother Sybok hijacking the Enterprise to find God echoes elements of **2001: A Space Odyssey** (1968) and **Contact** (1997) in exploring humanity's desire to make contact with higher powers, but the execution lacks their philosophical depth."
+      },
+      {
+        "type": "text",
+        "content": "Despite its flaws, the film contains compelling character moments between Kirk, Spock, and McCoy that showcase the core Star Trek themes of friendship and loyalty. The campfire scenes and their confrontations with personal pain demonstrate the chemistry that made the original crew so beloved. These elements would be better utilized in **Star Trek VI: The Undiscovered Country** (1991), which served as a more fitting send-off for the original cast. SUBHEAD: Impact on the Franchise"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Star Trek VI: The Undiscovered Country",
+            "year": 1991,
+            "slug": "The crew must prevent saboteurs from derailing peace talks with the Klingon Empire",
+            "poster": "https://image.tmdb.org/t/p/w500/tvTOJD7Gz668GLy2nNdLRQvpPsv.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 174,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tvTOJD7Gz668GLy2nNdLRQvpPsv.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's poor reception ($52 million box office against a $33 million budget) and critical drubbing nearly ended the film series. It stands as a cautionary tale of what happens when ambitious themes outstrip available resources and execution. While later Trek entries like **Star Trek: Insurrection** (1998) would also tackle faith and mortality, they learned from Final Frontier's missteps. The film's legacy can be seen influencing more successful spiritual sci-fi like **Prometheus** (2012) and **Interstellar** (2014), which better balanced cosmic questions with spectacle."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Special Effects in Star Trek Films",
+      "William Shatner's Directorial Career",
+      "Religious Themes in Science Fiction Cinema",
+      "The Impact of Budget Constraints on Sci-Fi Films",
+      "Star Trek's Shifting Tone Through Different Directors"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Star Trek: Generations",
+          "year": 1994,
+          "slug": "Kirk meets Picard in a time-bending adventure",
+          "poster": "https://image.tmdb.org/t/p/w500/gh0ZZRwSmlzEZTIZee3ZCN9Jssx.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 193,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gh0ZZRwSmlzEZTIZee3ZCN9Jssx.jpg"
+        },
+        {
+          "title": "Star Trek: First Contact",
+          "year": 1996,
+          "slug": "The Enterprise crew battles the Borg in Earth's past",
+          "poster": "https://image.tmdb.org/t/p/w500/iqhHe893Vcf07jNkNQ31tu85dKG.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 199,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iqhHe893Vcf07jNkNQ31tu85dKG.jpg"
+        },
+        {
+          "title": "Mission to Mars",
+          "year": 2000,
+          "slug": "Astronauts discover evidence of alien life on Mars",
+          "poster": "https://image.tmdb.org/t/p/w500/cTKWoBpN5Gvi0vpMb9mLtYlwXqT.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 2067,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cTKWoBpN5Gvi0vpMb9mLtYlwXqT.jpg"
+        },
+        {
+          "title": "Contact",
+          "year": 1997,
+          "slug": "A scientist makes first contact through mysterious signals",
+          "poster": "https://image.tmdb.org/t/p/w500/bCpMIywuNZeWt3i5UMLEIc0VSwM.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 686,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bCpMIywuNZeWt3i5UMLEIc0VSwM.jpg"
+        },
+        {
+          "title": "The Black Hole",
+          "year": 1979,
+          "slug": "A research vessel encounters a massive black hole",
+          "poster": "https://image.tmdb.org/t/p/w500/92fghstMdnJQPxoqWPGtRhbUb8G.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9570,
+          "poster_url": "https://image.tmdb.org/t/p/w500/92fghstMdnJQPxoqWPGtRhbUb8G.jpg"
+        },
+        {
+          "title": "Event Horizon",
+          "year": 1997,
+          "slug": "A rescue crew finds a ship that traveled through hell",
+          "poster": "https://image.tmdb.org/t/p/w500/cHoeg3gAD5w63Et5DImY1Jb7HaO.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 8413,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cHoeg3gAD5w63Et5DImY1Jb7HaO.jpg"
+        },
+        {
+          "title": "2010: The Year We Make Contact",
+          "year": 1984,
+          "slug": "Sequel exploring the mysteries of 2001",
+          "poster": "https://image.tmdb.org/t/p/w500/mEWKXuCMv7mFMxXVSTI3v8UOQuq.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 4437,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mEWKXuCMv7mFMxXVSTI3v8UOQuq.jpg"
+        },
+        {
+          "title": "Solaris",
+          "year": 1972,
+          "slug": "Cosmonauts encounter strange phenomena around a distant planet",
+          "poster": "https://image.tmdb.org/t/p/w500/rXPWl3hBbzivmeCEbMD3LwV2Ada.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 593,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rXPWl3hBbzivmeCEbMD3LwV2Ada.jpg"
+        },
+        {
+          "title": "The Fifth Element",
+          "year": 1997,
+          "slug": "A cab driver helps save the universe from ancient evil",
+          "poster": "https://image.tmdb.org/t/p/w500/fPtlCO1yQtnoLHOwKtWz7db6RGU.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 18,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fPtlCO1yQtnoLHOwKtWz7db6RGU.jpg"
+        },
+        {
+          "title": "Galaxy Quest",
+          "year": 1999,
+          "slug": "TV actors become real space heroes",
+          "poster": "https://image.tmdb.org/t/p/w500/fZXSwgZknp81vmciTb86rw0MejV.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 926,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fZXSwgZknp81vmciTb86rw0MejV.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

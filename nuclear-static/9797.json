@@ -1,0 +1,177 @@
+{
+  "props": {
+    "title": "Ivan the Terrible, Part I",
+    "year": 1944,
+    "initialSlug": "Witness the Rise of a Tyrant",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/rzFWfdq6CXLCnlfXTTZs9W9dMR2.jpg",
+    "initialStreaming": null,
+    "tmdbId": 9797,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Sergei Eisenstein's **Ivan the Terrible, Part I** (1944) stands as a masterwork of psychological portraiture and expressionist cinematography. Shot during WWII and backed by Stalin's regime, Eisenstein crafted a complex study of power that draws clear parallels to **Alexander Nevsky** (1938). The film's striking diagonal compositions, extreme close-ups of eyes, and elaborate shadow work influenced later historical epics like **Andrei Rublev** (1966) and **The Last Emperor** (1987). Nikolai Cherkasov's performance as Ivan IV brings an operatic intensity that would echo in later tortured ruler portrayals like Peter O'Toole in **The Lion in Winter** (1968)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Ivan the Terrible, Part II",
+            "year": 1958,
+            "slug": "The darker, banned sequel explores Ivan's descent into paranoid tyranny",
+            "poster": "https://image.tmdb.org/t/p/w500/9VufNqHN0EIkZAsJIv5vDYIitPo.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 43118,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9VufNqHN0EIkZAsJIv5vDYIitPo.jpg"
+          },
+          {
+            "title": "Alexander Nevsky",
+            "year": 1938,
+            "slug": "Eisenstein's rousing historical epic about the medieval Russian prince",
+            "poster": "https://image.tmdb.org/t/p/w500/lsTJYStIsnddwioD1L4FEmwj4Cx.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 10235,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lsTJYStIsnddwioD1L4FEmwj4Cx.jpg"
+          },
+          {
+            "title": "Andrei Rublev",
+            "year": 1966,
+            "slug": "Tarkovsky's epic about a 15th century Russian icon painter",
+            "poster": "https://image.tmdb.org/t/p/w500/910xRIUmNJrWH2hkQifBJtoPp5R.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 895,
+            "poster_url": "https://image.tmdb.org/t/p/w500/910xRIUmNJrWH2hkQifBJtoPp5R.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's innovative use of sound and music, scored by Sergei Prokofiev, created a new template for historical drama. The ceremonial sequences, particularly Ivan's coronation, demonstrate Eisenstein's theory of vertical montage - the precise synchronization of image and sound. This approach influenced countless films, from **Apocalypse Now** (1979) to **The Godfather Part III** (1990). The way Eisenstein frames power through ritual and ceremony would later be echoed in films like **Barry Lyndon** (1975) and **The Death of Stalin** (2017)."
+      },
+      {
+        "type": "text",
+        "content": "Eisenstein's psychological approach to historical biography broke new ground. Rather than a straightforward chronicle, the film delves into Ivan's inner torment and paranoia through expressionist techniques. This psychological complexity influenced later historical biopics like **Amadeus** (1984) and **The Last Emperor** (1987). The film's exploration of power's corruption would resonate through works like **Nixon** (1995) and **The Favourite** (2018). SUBHEAD: Visual Innovation and Political Subtext"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Last Emperor",
+            "year": 1987,
+            "slug": "Bernardo Bertolucci's sweeping biography of China's final emperor",
+            "poster": "https://image.tmdb.org/t/p/w500/7TILJhdeJAaEyDiwvJZMo9SQBoe.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 746,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7TILJhdeJAaEyDiwvJZMo9SQBoe.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's revolutionary use of light and shadow created a visual language that would influence cinema for decades. Eisenstein's collaboration with cinematographer Eduard Tisse produced chiaroscuro effects that predated film noir, visible in works like **Touch of Evil** (1958). The elaborate costume and set design, emphasizing geometric patterns and Russian Orthodox iconography, established a new standard for historical authenticity that influenced films like **Ran** (1985) and **Elizabeth** (1998)."
+      }
+    ],
+    "exploreFurther": [
+      "Eisenstein's Montage Theory and Its Modern Applications",
+      "The Influence of Russian Orthodox Art on Cinema",
+      "Political Censorship in Soviet Cinema",
+      "Prokofiev's Film Scores and Their Impact",
+      "The Evolution of the Historical Biopic"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Alexander",
+          "year": 2004,
+          "slug": "Oliver Stone's epic about the Macedonian conqueror",
+          "poster": "https://image.tmdb.org/t/p/w500/91QR7ReHg4HiY66avTon185bawQ.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1966,
+          "poster_url": "https://image.tmdb.org/t/p/w500/91QR7ReHg4HiY66avTon185bawQ.jpg"
+        },
+        {
+          "title": "Boris Godunov",
+          "year": 1954,
+          "slug": "Russian historical drama about the infamous tsar",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Throne of Blood",
+          "year": 1957,
+          "slug": "Kurosawa's Macbeth adaptation set in feudal Japan",
+          "poster": "https://image.tmdb.org/t/p/w500/5NdGZpoInkf4wBInNpry6JAjQ3D.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 3777,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5NdGZpoInkf4wBInNpry6JAjQ3D.jpg"
+        },
+        {
+          "title": "The Rise of Catherine the Great",
+          "year": 1934,
+          "slug": "British historical drama about Catherine II",
+          "poster": "https://image.tmdb.org/t/p/w500/tcfc8jgMrmP0R6VD2cSqr58D1IQ.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 43687,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tcfc8jgMrmP0R6VD2cSqr58D1IQ.jpg"
+        },
+        {
+          "title": "Henry V",
+          "year": 1944,
+          "slug": "Laurence Olivier's landmark Shakespeare adaptation",
+          "poster": "https://image.tmdb.org/t/p/w500/eAisr20DvaKJeHvjDN0oHSx0l7u.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 22638,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eAisr20DvaKJeHvjDN0oHSx0l7u.jpg"
+        },
+        {
+          "title": "Richard III",
+          "year": 1955,
+          "slug": "Olivier's powerful portrayal of Shakespeare's villain-king",
+          "poster": "https://image.tmdb.org/t/p/w500/3zp2Kg5bvlFkKmWiQLmuWQAIEgG.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 43323,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3zp2Kg5bvlFkKmWiQLmuWQAIEgG.jpg"
+        },
+        {
+          "title": "Becket",
+          "year": 1964,
+          "slug": "Historical drama about Henry II and Thomas Becket",
+          "poster": "https://image.tmdb.org/t/p/w500/swWmxVbq0pXv4wwsc2O803PiXR7.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 15421,
+          "poster_url": "https://image.tmdb.org/t/p/w500/swWmxVbq0pXv4wwsc2O803PiXR7.jpg"
+        },
+        {
+          "title": "The Lion in Winter",
+          "year": 1968,
+          "slug": "Medieval drama about Henry II's family struggles",
+          "poster": "https://image.tmdb.org/t/p/w500/yMgJnZADJObzfjA70ygXJkjnrFX.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 18988,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yMgJnZADJObzfjA70ygXJkjnrFX.jpg"
+        },
+        {
+          "title": "Marketa Lazarová",
+          "year": 1967,
+          "slug": "Czech historical epic set in the Middle Ages",
+          "poster": "https://image.tmdb.org/t/p/w500/c16ArEPUqb0RdUyZBH6fnO7ZiLL.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 25904,
+          "poster_url": "https://image.tmdb.org/t/p/w500/c16ArEPUqb0RdUyZBH6fnO7ZiLL.jpg"
+        },
+        {
+          "title": "Hamlet",
+          "year": 1964,
+          "slug": "Grigori Kozintsev's acclaimed Russian adaptation",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

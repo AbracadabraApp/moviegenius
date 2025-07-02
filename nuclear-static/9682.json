@@ -1,0 +1,162 @@
+{
+  "props": {
+    "title": "Pulse",
+    "year": 2006,
+    "initialSlug": "Internet ghosts prey on lonely college students",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/9ePdNzKVvGHsMMphfS3HeoMvuEX.jpg",
+    "initialStreaming": null,
+    "tmdbId": 9682,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The American remake of **Pulse** (2006) emerged during the peak J-horror adaptation era, following the success of **The Ring** (2002) and **The Grudge** (2004). While Kiyoshi Kurosawa's original **Pulse/Kairo** (2001) masterfully captured millennial Japanese anxiety about technology and isolation, the remake strips away much of the existential dread in favor of more conventional scares. This shift reflects a broader pattern in early 2000s horror remakes, where atmospheric Asian horror films were repackaged with younger casts and more explicit supernatural threats."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Pulse (Kairo)",
+            "year": 2001,
+            "slug": "The superior Japanese original explores technological alienation and cosmic horror through a haunting internet infection",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": null
+          },
+          {
+            "title": "Dark Water",
+            "year": 2002,
+            "slug": "Another atmospheric J-horror examining loneliness and modern urban isolation",
+            "poster": "https://image.tmdb.org/t/p/w500/u7FIePdOTjboDAjcaA9MabbzAuf.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 12205,
+            "poster_url": "https://image.tmdb.org/t/p/w500/u7FIePdOTjboDAjcaA9MabbzAuf.jpg"
+          },
+          {
+            "title": "One Missed Call",
+            "year": 2003,
+            "slug": "Japanese techno-horror about deadly cell phone messages, later remade for US audiences",
+            "poster": "https://image.tmdb.org/t/p/w500/8ujSEEePCVMyi7Mt1RQMXd6SWmy.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 9694,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8ujSEEePCVMyi7Mt1RQMXd6SWmy.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The 2006 version of **Pulse**, starring Kristen Bell and Ian Somerhalder, attempts to update the technological anxiety for the MySpace era but loses the original's meditation on human disconnection. What's fascinating is how its themes of digital isolation actually become more relevant with time - predicting our current concerns about social media addiction and virtual relationships. Similar themes emerge in films like **Unfriended** (2014) and **Cam** (2018), which more successfully integrate modern internet culture into their horror frameworks."
+      },
+      {
+        "type": "text",
+        "content": "The film's production history reveals the challenges of translating culturally-specific horror. Wes Craven's involvement as screenwriter promised to bring his **Scream** (1996) sensibilities to the material, but the final product feels caught between Japanese atmospheric horror and American jump-scare conventions. This tension plagued many J-horror remakes of the era, including **The Grudge 2** (2006) and **One Missed Call** (2008). SUBHEAD: Technology and Horror Evolution"
+      },
+      {
+        "type": "text",
+        "content": "Modern techno-horror has evolved significantly since **Pulse** (2006), finding more sophisticated ways to explore digital anxiety. Films like **Host** (2020) and **Searching** (2018) demonstrate how screen-life horror can create genuine tension while commenting on our relationship with technology. Even non-horror films like **The Social Network** (2010) and **Ingrid Goes West** (2017) echo **Pulse's** warnings about digital isolation, suggesting its themes were prescient despite its execution."
+      }
+    ],
+    "exploreFurther": [
+      "The Rise and Fall of J-Horror Remakes (2002-2008)",
+      "Evolution of Technology in Horror Cinema",
+      "Kiyoshi Kurosawa's Influence on Modern Horror",
+      "Screen Life Films and Digital Anxiety",
+      "Cultural Translation in Horror Remakes"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Kairo",
+          "year": 2001,
+          "slug": "Original Japanese version of Pulse",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Ring",
+          "year": 2002,
+          "slug": "Landmark J-horror remake about a cursed videotape",
+          "poster": "https://image.tmdb.org/t/p/w500/AeRpUynJKDpJveklBJipOYrVxCS.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 565,
+          "poster_url": "https://image.tmdb.org/t/p/w500/AeRpUynJKDpJveklBJipOYrVxCS.jpg"
+        },
+        {
+          "title": "Unfriended",
+          "year": 2014,
+          "slug": "Horror film taking place entirely on computer screens",
+          "poster": "https://image.tmdb.org/t/p/w500/8byPxREr3BqBNyyij5WHVSOVtYk.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 277685,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8byPxREr3BqBNyyij5WHVSOVtYk.jpg"
+        },
+        {
+          "title": "Host",
+          "year": 2020,
+          "slug": "Zoom-based horror film shot during lockdown",
+          "poster": "https://image.tmdb.org/t/p/w500/h7dZpJDORYs5c56dydbrLFkEXpE.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 723072,
+          "poster_url": "https://image.tmdb.org/t/p/w500/h7dZpJDORYs5c56dydbrLFkEXpE.jpg"
+        },
+        {
+          "title": "Cam",
+          "year": 2018,
+          "slug": "Psychological horror about online identity",
+          "poster": "https://image.tmdb.org/t/p/w500/p7m3sSQhnoT2uuxUsxF4mQX6opr.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 521935,
+          "poster_url": "https://image.tmdb.org/t/p/w500/p7m3sSQhnoT2uuxUsxF4mQX6opr.jpg"
+        },
+        {
+          "title": "The Social Network",
+          "year": 2010,
+          "slug": "Drama about Facebook's creation and digital isolation",
+          "poster": "https://image.tmdb.org/t/p/w500/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 37799,
+          "poster_url": "https://image.tmdb.org/t/p/w500/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg"
+        },
+        {
+          "title": "Searching",
+          "year": 2018,
+          "slug": "Screen-life thriller about missing daughter",
+          "poster": "https://image.tmdb.org/t/p/w500/yuAPCsCGJGSxA7YOW4elF5JNrzK.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 489999,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yuAPCsCGJGSxA7YOW4elF5JNrzK.jpg"
+        },
+        {
+          "title": "Dark Water",
+          "year": 2005,
+          "slug": "Another J-horror remake about urban isolation",
+          "poster": "https://image.tmdb.org/t/p/w500/cm4M9xaBu78IjuAVNG4LCXdXsg.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 9009,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cm4M9xaBu78IjuAVNG4LCXdXsg.jpg"
+        },
+        {
+          "title": "Ringu",
+          "year": 1998,
+          "slug": "Original Japanese Ring film",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": null
+        },
+        {
+          "title": "Fear Dot Com",
+          "year": 2002,
+          "slug": "Early internet horror film",
+          "poster": "https://image.tmdb.org/t/p/w500/phcd5AJvA1S45JMKYoNLhTzFwsE.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 9544,
+          "poster_url": "https://image.tmdb.org/t/p/w500/phcd5AJvA1S45JMKYoNLhTzFwsE.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}
