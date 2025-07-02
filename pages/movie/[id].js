@@ -558,8 +558,10 @@ export async function getStaticPaths() {
     
     console.log(`🚀 Nuclear test build: Generating ${paths.length} static movie pages`);
     console.log(`📋 TMDB IDs: ${testMovieIds.join(', ')}`);
-
     console.log(`✅ Found ${paths.length}/10 test movies with analysis ready for static generation`);
+    
+    // Debug: Show exactly what paths are being generated
+    console.log(`🔍 Generated paths:`, paths.map(p => `/movie/${p.params.id}`));
 
     return {
       paths,
