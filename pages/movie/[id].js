@@ -400,6 +400,35 @@ const styles = {
 // Business logic moved to services - import them here
 import { AnalysisService } from '../../lib/services/analysis-service';
 
+// Nuclear Static Check - check for pre-built static data first
+async function checkNuclearStatic(tmdbId) {
+  try {
+    const fs = await import('fs');
+    const path = await import('path');
+    
+    const nuclearPath = path.default.join(process.cwd(), 'nuclear-static', `${tmdbId}.json`);
+    
+    if (fs.default.existsSync(nuclearPath)) {
+      console.log(`🚀 Nuclear cache HIT for movie ${tmdbId}`);
+      const staticData = fs.default.readFileSync(nuclearPath, 'utf8');
+      const data = JSON.parse(staticData);
+      
+      // Add nuclear identifier and clean up Next.js internal properties
+      data.props.nuclear = true;
+      data.props.source = 'nuclear_static';
+      
+      // Remove Next.js internal properties that can't be returned from getStaticProps
+      delete data.__N_SSG;
+      
+      return data;
+    }
+  } catch (error) {
+    console.log(`Nuclear check failed for ${tmdbId}:`, error.message);
+  }
+  
+  return null;
+}
+
 // Simplified getStaticProps - most logic moved to services
 export async function getStaticProps({ params }) {
   const { id } = params;
@@ -407,6 +436,13 @@ export async function getStaticProps({ params }) {
   
   if (isNaN(tmdbId) || tmdbId <= 0) {
     return { props: { error: 'Invalid movie ID' } };
+  }
+
+  // 🚀 NUCLEAR STRATEGY: Check for pre-built static data first
+  const nuclearData = await checkNuclearStatic(tmdbId);
+  if (nuclearData) {
+    console.log(`⚡ Serving nuclear static data for movie ${tmdbId}`);
+    return nuclearData;
   }
 
   try {
@@ -519,8 +555,8 @@ export async function getStaticProps({ params }) {
       response.revalidate = 3600;
     }
 
-    // 🚀 PERFORMANCE: Aggressive ISR for instant subsequent loads
-    response.revalidate = response.props.hasAnalysis ? 86400 : 3600; // 24h for analyzed movies, 1h for others
+    // 🚀 NUCLEAR STRATEGY: Long revalidation for pre-built nuclear pages
+    response.revalidate = response.props.hasAnalysis ? 86400 : 3600; // 24h for nuclear movies, 1h for others
     
     return response;
 
@@ -565,7 +601,7 @@ export async function getStaticPaths() {
 
     return {
       paths,
-      fallback: 'blocking'
+      fallback: 'blocking' // Allow other movies to be generated dynamically
     };
 
   } catch (error) {
