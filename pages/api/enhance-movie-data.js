@@ -1,9 +1,11 @@
 // pages/api/enhance-movie-data.js
-// 🔒 DEPRECATED API - PROTECTED AGAINST TMDB SUMMARY CONTAMINATION
+// 🔒 DEPRECATED API - LOCKED AGAINST TMDB SUMMARY CONTAMINATION 🔒
 // 
-// This API has been locked to prevent TMDB summary generation that
-// replaces curated marketing copy with verbose plot descriptions.
-// MediaCard should NOT call this API for slug enhancement.
+// ⚠️  CRITICAL: This API is LOCKED and should NOT be used
+// ⚠️  MediaCard uses /api/generate-organic-slug for taglines ONLY
+// ⚠️  NO slug enhancement, NO summary generation allowed
+// 
+// @version LOCKED-2025-07-02 - DO NOT MODIFY
 
 import { createClient } from '@supabase/supabase-js';
 

@@ -87,17 +87,17 @@ export default function FilmLoadingMessage({
     small: {
       container: { padding: '4px 8px' },
       icon: { width: '24px', height: '24px' },
-      text: { fontSize: '12px' }
+      text: { fontSize: '18px' }
     },
     medium: {
       container: { padding: '8px 12px' },
       icon: { width: '32px', height: '32px' },
-      text: { fontSize: '14px' }
+      text: { fontSize: '21px' }
     },
     large: {
       container: { padding: '12px 16px' },
       icon: { width: '48px', height: '48px' },
-      text: { fontSize: '16px' }
+      text: { fontSize: '24px' }
     }
   };
 
@@ -141,8 +141,9 @@ const styles = {
   },
   contentRow: {
     display: 'flex',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     gap: '12px',
+    maxWidth: '320px',
   },
   icon: {
     objectFit: 'contain',
@@ -151,6 +152,13 @@ const styles = {
     color: 'inherit',
     fontFamily: 'inherit',
     fontWeight: '400',
+    wordWrap: 'break-word',
+    overflowWrap: 'break-word',
+    hyphens: 'auto',
+    lineHeight: '1.4',
+    flex: 1,
+    maxWidth: '260px',
+    whiteSpace: 'pre-wrap',
   },
 };
 

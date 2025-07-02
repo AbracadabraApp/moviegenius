@@ -41,15 +41,15 @@ export default async function handler(req, res) {
       res.setHeader('Cache-Control', 'public, s-maxage=604800, stale-while-revalidate=1209600');
       res.status(200).json({ 
         poster: posterUrl,
-        tmdb_id: movie.id,
-        overview: movie.overview || null
+        tmdb_id: movie.id
+        // Note: overview intentionally omitted to prevent TMDB summary contamination
       });
     } else {
       // Cache "not found" results for 1 hour 
       res.setHeader('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=7200');
       res.status(200).json({ 
-        poster: '/images/placeholder-poster.jpg',
-        overview: null
+        poster: '/images/placeholder-poster.jpg'
+        // Note: overview intentionally omitted to prevent TMDB summary contamination
       });
     }
 
@@ -57,8 +57,8 @@ export default async function handler(req, res) {
     console.error('Error fetching TMDB poster:', error);
     res.status(500).json({ 
       error: 'Failed to fetch poster',
-      poster: '/images/placeholder-poster.jpg', // Fallback
-      overview: null
+      poster: '/images/placeholder-poster.jpg' // Fallback
+      // Note: overview intentionally omitted to prevent TMDB summary contamination
     });
   }
 }
