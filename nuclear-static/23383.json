@@ -1,0 +1,188 @@
+{
+  "props": {
+    "title": "Hamlet",
+    "year": 1948,
+    "initialSlug": "Prince seeks revenge for father's murder in court",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/woO9SgU2vTRMZeG0YqOLeoIqlzC.jpg",
+    "initialStreaming": null,
+    "tmdbId": 23383,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Laurence Olivier's **Hamlet** (1948) stands as a landmark Shakespeare adaptation, winning Best Picture and Actor Oscars - the first non-American film to earn top honors. Olivier strips away nearly half of Shakespeare's text but intensifies the psychological elements through expressionistic cinematography and a Freudian lens. The castle's winding staircases and cavernous spaces become extensions of Hamlet's tortured mind. Olivier's innovative use of voiceover for the soliloquies influenced countless subsequent Shakespeare films, from Roman Polanski's **Macbeth** (1971) to Kenneth Branagh's unabridged **Hamlet** (1996)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Hamlet",
+            "year": 1948,
+            "slug": "Olivier directs and stars in this noir-influenced psychological take on Shakespeare's tragedy",
+            "poster": "https://image.tmdb.org/t/p/w500/woO9SgU2vTRMZeG0YqOLeoIqlzC.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 23383,
+            "poster_url": "https://image.tmdb.org/t/p/w500/woO9SgU2vTRMZeG0YqOLeoIqlzC.jpg"
+          },
+          {
+            "title": "Throne of Blood",
+            "year": 1957,
+            "slug": "Kurosawa transposes Macbeth to feudal Japan with stunning visual poetry",
+            "poster": "https://image.tmdb.org/t/p/w500/5NdGZpoInkf4wBInNpry6JAjQ3D.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 3777,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5NdGZpoInkf4wBInNpry6JAjQ3D.jpg"
+          },
+          {
+            "title": "Richard III",
+            "year": 1955,
+            "slug": "Olivier brings Shakespeare's villain to vivid life in Technicolor",
+            "poster": "https://image.tmdb.org/t/p/w500/3zp2Kg5bvlFkKmWiQLmuWQAIEgG.jpg",
+            "initialStreaming": "BritBox",
+            "tmdb_id": 43323,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3zp2Kg5bvlFkKmWiQLmuWQAIEgG.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's stark black-and-white photography by Desmond Dickinson creates a brooding film noir atmosphere that emphasizes the story's mystery elements. This noir influence can be seen in later Shakespeare adaptations like Orson Welles' **Chimes at Midnight** (1965) and even contemporary versions like Michael Almereyda's modern-day **Hamlet** (2000) starring Ethan Hawke. Olivier's decision to foreground Hamlet's Oedipal relationship with Gertrude (Eileen Herlie) sparked decades of psychological interpretations."
+      },
+      {
+        "type": "text",
+        "content": "While some critics objected to the heavy cuts to Shakespeare's text, Olivier's streamlined adaptation helped create a template for making the Bard cinematically accessible. This influence extends through Franco Zeffirelli's **Romeo and Juliet** (1968) to Baz Luhrmann's **Romeo + Juliet** (1996). The film's Gothic atmosphere and emphasis on Hamlet's psychological state also prefigured later horror-tinged Shakespeare films like **Macbeth** (2015) starring Michael Fassbender. SUBHEAD: Innovation in Shakespeare on Screen"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Hamlet",
+            "year": 1996,
+            "slug": "Branagh's epic 4-hour uncut version with an all-star cast",
+            "poster": "https://image.tmdb.org/t/p/w500/ilurgUOp6SCl4cuhfjctj1qxlfZ.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 10549,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ilurgUOp6SCl4cuhfjctj1qxlfZ.jpg"
+          },
+          {
+            "title": "Romeo + Juliet",
+            "year": 1996,
+            "slug": "Luhrmann's bold modern reimagining with DiCaprio and Danes",
+            "poster": "https://image.tmdb.org/t/p/w500/eLf4jclPijOqfEp6bDAmezRFxk5.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 454,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eLf4jclPijOqfEp6bDAmezRFxk5.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Olivier's technical innovations remain striking. His use of deep focus photography and fluid camera movements through Elsinore's spaces created a sense of psychological claustrophobia that influenced directors like Orson Welles in **Macbeth** (1948) and **Othello** (1951). The film's emphasis on architecture as metaphor for mental states can be seen in later adaptations like Julie Taymor's **Titus** (1999) and Justin Kurzel's **Macbeth** (2015)."
+      }
+    ],
+    "exploreFurther": [
+      "The evolution of Shakespeare soliloquies on film from stage conventions to psychological voiceover",
+      "Olivier's influence on subsequent Shakespeare directors from Welles to Branagh",
+      "Film noir elements in Shakespeare adaptations",
+      "The changing role of castles and architecture in Shakespeare films",
+      "Psychological interpretations of Hamlet across different film versions"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Macbeth",
+          "year": 1971,
+          "slug": "Polanski's violent, post-Manson take on the Scottish play",
+          "poster": "https://image.tmdb.org/t/p/w500/35wNrDYuZjVCLurOmTZ5j490iuR.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 11316,
+          "poster_url": "https://image.tmdb.org/t/p/w500/35wNrDYuZjVCLurOmTZ5j490iuR.jpg"
+        },
+        {
+          "title": "Henry V",
+          "year": 1944,
+          "slug": "Olivier's patriotic wartime Shakespeare adaptation",
+          "poster": "https://image.tmdb.org/t/p/w500/eAisr20DvaKJeHvjDN0oHSx0l7u.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 22638,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eAisr20DvaKJeHvjDN0oHSx0l7u.jpg"
+        },
+        {
+          "title": "Chimes at Midnight",
+          "year": 1965,
+          "slug": "Welles combines Henry IV plays to focus on Falstaff",
+          "poster": "https://image.tmdb.org/t/p/w500/5Fjxyz3u2Zdco4WeuC3wQ6O5tYQ.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 986,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5Fjxyz3u2Zdco4WeuC3wQ6O5tYQ.jpg"
+        },
+        {
+          "title": "Ran",
+          "year": 1985,
+          "slug": "Kurosawa's King Lear in feudal Japan",
+          "poster": "https://image.tmdb.org/t/p/w500/iYQcDhuHrdPOHLUUxXaFChFrc97.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 11645,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iYQcDhuHrdPOHLUUxXaFChFrc97.jpg"
+        },
+        {
+          "title": "Looking for Richard",
+          "year": 1996,
+          "slug": "Pacino's documentary exploration of Richard III",
+          "poster": "https://image.tmdb.org/t/p/w500/qAYYZzO6q7prlt6bmIvqOOwKsXi.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 42314,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qAYYZzO6q7prlt6bmIvqOOwKsXi.jpg"
+        },
+        {
+          "title": "Julius Caesar",
+          "year": 1953,
+          "slug": "Star-studded MGM adaptation with Brando as Antony",
+          "poster": "https://image.tmdb.org/t/p/w500/8yWqzGhBso1Gtpc1tcLclmcmF2B.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 18019,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8yWqzGhBso1Gtpc1tcLclmcmF2B.jpg"
+        },
+        {
+          "title": "Titus",
+          "year": 1999,
+          "slug": "Taymor's surreal, violent take on Titus Andronicus",
+          "poster": "https://image.tmdb.org/t/p/w500/82mCeQoeT2C7h7vR6Ot9MQotE1R.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 12524,
+          "poster_url": "https://image.tmdb.org/t/p/w500/82mCeQoeT2C7h7vR6Ot9MQotE1R.jpg"
+        },
+        {
+          "title": "The Bad Sleep Well",
+          "year": 1960,
+          "slug": "Kurosawa's corporate thriller inspired by Hamlet",
+          "poster": "https://image.tmdb.org/t/p/w500/z0LhZ121uaqa31RUeu1mOnaFb5w.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 31589,
+          "poster_url": "https://image.tmdb.org/t/p/w500/z0LhZ121uaqa31RUeu1mOnaFb5w.jpg"
+        },
+        {
+          "title": "My Own Private Idaho",
+          "year": 1991,
+          "slug": "Van Sant's loose Henry IV adaptation with River Phoenix",
+          "poster": "https://image.tmdb.org/t/p/w500/p9TF90Pb5yg2MNb2UztzyXktMm4.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 468,
+          "poster_url": "https://image.tmdb.org/t/p/w500/p9TF90Pb5yg2MNb2UztzyXktMm4.jpg"
+        },
+        {
+          "title": "Prospero's Books",
+          "year": 1991,
+          "slug": "Greenaway's experimental take on The Tempest",
+          "poster": "https://image.tmdb.org/t/p/w500/g2Wj7gaGO8gqwTwabfm1FzzdxbT.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 5048,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g2Wj7gaGO8gqwTwabfm1FzzdxbT.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

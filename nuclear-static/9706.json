@@ -1,0 +1,175 @@
+{
+  "props": {
+    "title": "The Spiral",
+    "year": 1998,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/bRJwuJCkZZMsqzCyiM6frbDXljk.jpg",
+    "initialStreaming": null,
+    "tmdbId": 9706,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Spiral** (1998), directed by Japanese auteur Higuchinsky, stands as a pivotal entry in J-horror's experimental period. Like **Ringu** (1998) released the same year, it taps into technological anxiety but through a more surreal, Lynchian lens. The film adapts Junji Ito's manga \"Uzumaki,\" transforming a small town's spiral-based paranoia into a hypnotic nightmare that influenced later works like **Pulse** (2001) and **Dark Water** (2002). Its practical effects and dizzying camera work create genuine unease without relying on jump scares."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Ringu",
+            "year": 1998,
+            "slug": "A mysterious videotape kills viewers seven days after watching, launching the modern J-horror wave",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": null
+          },
+          {
+            "title": "Pulse",
+            "year": 2001,
+            "slug": "Internet-connected ghosts drive people to suicide in this techno-horror masterpiece",
+            "poster": "https://image.tmdb.org/t/p/w500/c3zEimDraIyMSasPMGDaNOrhnzn.jpg",
+            "initialStreaming": "AMC+",
+            "tmdb_id": 27324,
+            "poster_url": "https://image.tmdb.org/t/p/w500/c3zEimDraIyMSasPMGDaNOrhnzn.jpg"
+          },
+          {
+            "title": "Dark Water",
+            "year": 2002,
+            "slug": "A mother and daughter face supernatural forces in a decrepit apartment building",
+            "poster": "https://image.tmdb.org/t/p/w500/u7FIePdOTjboDAjcaA9MabbzAuf.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 12205,
+            "poster_url": "https://image.tmdb.org/t/p/w500/u7FIePdOTjboDAjcaA9MabbzAuf.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's obsession with spiral imagery predates and likely influenced later horror works about geometric fixation, like **The Ring Virus** (1999) from South Korea and **Marebito** (2004). Director Higuchinsky employs swirling practical effects and body horror that echo earlier experimental Japanese films like **Tetsuo: The Iron Man** (1989), while establishing its own unique visual language of cosmic horror."
+      },
+      {
+        "type": "text",
+        "content": "What sets **The Spiral** (1998) apart is its commitment to psychological dread over conventional scares. Like **Perfect Blue** (1997) and **Cure** (1997), it explores collective madness through a distinctly Japanese lens. The town's descent into spiral-obsessed chaos mirrors anxieties about conformity and social contagion that defined late 90s Japanese cinema. SUBHEAD: Influence on Modern Horror"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Marebito",
+            "year": 2004,
+            "slug": "A cameraman discovers a subterranean world while investigating strange suicide footage",
+            "poster": "https://image.tmdb.org/t/p/w500/c1KyQx8mHwxQHTQgJDra84RfTYx.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 52398,
+            "poster_url": "https://image.tmdb.org/t/p/w500/c1KyQx8mHwxQHTQgJDra84RfTYx.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's DNA can be seen in contemporary works like **Hereditary** (2018) and **The Lighthouse** (2019), where geometric obsession and circular imagery drive characters to madness. Its influence extends beyond horror - **Inception** (2010) borrowed its spiral motifs for dream architecture, while **Mother!** (2017) echoed its cyclical narrative structure."
+      }
+    ],
+    "exploreFurther": [
+      "Junji Ito's Manga Adaptations in Cinema",
+      "Geometric Horror and Visual Obsession in Film",
+      "The Evolution of J-Horror Visual Effects",
+      "Late 1990s Japanese Cinema and Social Commentary",
+      "Practical Effects vs CGI in Asian Horror"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Tetsuo: The Iron Man",
+          "year": 1989,
+          "slug": "Cyberpunk body horror about a man slowly transforming into metal",
+          "poster": "https://image.tmdb.org/t/p/w500/iucW3kSp5rQSfYCLNlCWPEwYh4h.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 41428,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iucW3kSp5rQSfYCLNlCWPEwYh4h.jpg"
+        },
+        {
+          "title": "Perfect Blue",
+          "year": 1997,
+          "slug": "Psychological thriller about a pop idol's descent into madness",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "AMC+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Cure",
+          "year": 1997,
+          "slug": "Detective investigates murders linked by hypnotic suggestion",
+          "poster": "https://image.tmdb.org/t/p/w500/nLZ2AJFLtMoAAAD54mbT4exj1Wp.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 36095,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nLZ2AJFLtMoAAAD54mbT4exj1Wp.jpg"
+        },
+        {
+          "title": "Audition",
+          "year": 1999,
+          "slug": "A widower's search for love leads to disturbing revelations",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Kairo",
+          "year": 2001,
+          "slug": "Technology enables a ghostly invasion that threatens humanity",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": null
+        },
+        {
+          "title": "Noroi: The Curse",
+          "year": 2005,
+          "slug": "Found footage horror about a journalist investigating supernatural events",
+          "poster": "https://image.tmdb.org/t/p/w500/yjXTmyLaOqljI5pFNbrEZ213dSW.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 21506,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yjXTmyLaOqljI5pFNbrEZ213dSW.jpg"
+        },
+        {
+          "title": "Strange Circus",
+          "year": 2005,
+          "slug": "Surreal psychological horror exploring family trauma",
+          "poster": "https://image.tmdb.org/t/p/w500/jsCJAGgfufjgMSpUYgGaKTjXRKh.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": 936652,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jsCJAGgfufjgMSpUYgGaKTjXRKh.jpg"
+        },
+        {
+          "title": "Suicide Club",
+          "year": 2001,
+          "slug": "Detective investigates mass suicides linked by mysterious patterns",
+          "poster": "https://image.tmdb.org/t/p/w500/m8C8DbMawpGpHcYxv8Mkp1BQGjp.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 12720,
+          "poster_url": "https://image.tmdb.org/t/p/w500/m8C8DbMawpGpHcYxv8Mkp1BQGjp.jpg"
+        },
+        {
+          "title": "House",
+          "year": 1977,
+          "slug": "Surreal Japanese horror comedy about schoolgirls in a haunted house",
+          "poster": "https://image.tmdb.org/t/p/w500/tXlEgAJkGQuE9Vm6ppYERUBmdDM.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 25623,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tXlEgAJkGQuE9Vm6ppYERUBmdDM.jpg"
+        },
+        {
+          "title": "Vital",
+          "year": 2004,
+          "slug": "Medical student discovers his ex-girlfriend's body in anatomy class",
+          "poster": "https://image.tmdb.org/t/p/w500/e1qnpnTXYOiLT94b3P8Xf7lF56P.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 36215,
+          "poster_url": "https://image.tmdb.org/t/p/w500/e1qnpnTXYOiLT94b3P8Xf7lF56P.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

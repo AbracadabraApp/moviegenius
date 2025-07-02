@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "Summer of Sam",
+    "year": 1999,
+    "initialSlug": "When the city burns, he ignites.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/yvGGA2CbT6xyFVTZUA9f2ok0q5V.jpg",
+    "initialStreaming": null,
+    "tmdbId": 10279,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Spike Lee's **Summer of Sam** (1999) captures the sweltering paranoia of 1977 New York City during the Son of Sam killings. Like **Do the Right Thing** (1989), Lee masterfully depicts a neighborhood cracking under pressure - this time the Italian-American Bronx community. The film interweaves the serial killer narrative with the explosive cultural shifts of the era: punk rock rebellion, sexual liberation, and disco fever. John Leguizamo and Adrien Brody deliver raw performances as childhood friends torn apart by suspicion and changing times."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Zodiac",
+            "year": 2007,
+            "slug": "David Fincher's meticulous chronicle of the Zodiac killer investigation, featuring Jake Gyllenhaal as an obsessed cartoonist",
+            "poster": "https://image.tmdb.org/t/p/w500/6YmeO4pB7XTh8P8F960O1uA14JO.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 1949,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6YmeO4pB7XTh8P8F960O1uA14JO.jpg"
+          },
+          {
+            "title": "Dog Day Afternoon",
+            "year": 1975,
+            "slug": "Al Pacino stars in this true story of a Brooklyn bank robbery gone wrong during a sweltering summer",
+            "poster": "https://image.tmdb.org/t/p/w500/mavrhr0ig2aCRR8d48yaxtD5aMQ.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 968,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mavrhr0ig2aCRR8d48yaxtD5aMQ.jpg"
+          },
+          {
+            "title": "Mean Streets",
+            "year": 1973,
+            "slug": "Scorsese's breakthrough film about small-time criminals in Little Italy, starring Harvey Keitel and Robert De Niro",
+            "poster": "https://image.tmdb.org/t/p/w500/rzVTH9ylCw0owKkMZQVz2Eve97E.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 203,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rzVTH9ylCw0owKkMZQVz2Eve97E.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film shares DNA with other New York-set crime dramas of the era like **The Warriors** (1979) and **Taxi Driver** (1976), capturing the city's dangerous edge before gentrification. Lee's attention to period detail - from CBGB punk shows to Studio 54-style discos - creates an immersive time capsule. The mounting hysteria mirrors real historical witch hunts, connecting to films like **The Crucible** (1996) and **Good Night, and Good Luck** (2005)."
+      },
+      {
+        "type": "text",
+        "content": "While criticized upon release for its graphic violence and sexuality, **Summer of Sam** stands as a vital examination of how fear divides communities. Its themes of moral panic and scapegoating resonate with later films like **BlacKkKlansman** (2018) and **Detroit** (2017). The film's structure, weaving multiple storylines around a central crisis, influenced works like **25th Hour** (2002) and **Inside Man** (2006). SUBHEAD: Cultural Impact and Historical Context"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Panic in Needle Park",
+            "year": 1971,
+            "slug": "Raw portrayal of heroin addicts in 1970s NYC starring Al Pacino",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Like other period pieces examining American anxiety such as **American Hustle** (2013) and **Boogie Nights** (1997), **Summer of Sam** uses its historical setting to comment on contemporary issues. The film's exploration of media-fueled paranoia presages modern true crime obsessions. Lee's direction brings documentary-like authenticity to scenes of neighborhood life, similar to his approach in **When the Levees Broke** (2006)."
+      }
+    ],
+    "exploreFurther": [
+      "Serial Killer Cinema and Social Commentary",
+      "New York City in 1970s Film",
+      "Spike Lee's Examination of Community Violence",
+      "Punk Rock and Disco Culture in Cinema",
+      "True Crime Adaptations in Film"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Taking of Pelham One Two Three",
+          "year": 1974,
+          "slug": "Tense NYC subway hijacking thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/vNhywp9w1DVG6BytxKp4kjtaaGC.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 8333,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vNhywp9w1DVG6BytxKp4kjtaaGC.jpg"
+        },
+        {
+          "title": "Saturday Night Fever",
+          "year": 1977,
+          "slug": "John Travolta stars in this iconic disco-era drama",
+          "poster": "https://image.tmdb.org/t/p/w500/ylA7E5Md21aqgzxbwa2dFxX8LKV.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 11009,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ylA7E5Md21aqgzxbwa2dFxX8LKV.jpg"
+        },
+        {
+          "title": "Fort Apache, The Bronx",
+          "year": 1981,
+          "slug": "Paul Newman as a cop in the troubled South Bronx",
+          "poster": "https://image.tmdb.org/t/p/w500/lho4wpCxnGOD3DJkKAl0Ri6m373.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 23668,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lho4wpCxnGOD3DJkKAl0Ri6m373.jpg"
+        },
+        {
+          "title": "Gloria",
+          "year": 1980,
+          "slug": "Gena Rowlands protects a boy from the mob in NYC",
+          "poster": "https://image.tmdb.org/t/p/w500/mrYZInXp0JEoZYXs0Z108l2jN0C.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 10889,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mrYZInXp0JEoZYXs0Z108l2jN0C.jpg"
+        },
+        {
+          "title": "Prince of the City",
+          "year": 1981,
+          "slug": "Corrupt NYC cops in the 1970s",
+          "poster": "https://image.tmdb.org/t/p/w500/tdERW77zecB5pkKWWeqbSkns0t4.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 32047,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tdERW77zecB5pkKWWeqbSkns0t4.jpg"
+        },
+        {
+          "title": "Serpico",
+          "year": 1973,
+          "slug": "Al Pacino as a whistleblower cop fighting corruption",
+          "poster": "https://image.tmdb.org/t/p/w500/pRagfd10PPWryFRSzLPIivfAXHJ.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 9040,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pRagfd10PPWryFRSzLPIivfAXHJ.jpg"
+        },
+        {
+          "title": "The French Connection",
+          "year": 1971,
+          "slug": "Gritty NYC cop thriller with Gene Hackman",
+          "poster": "https://image.tmdb.org/t/p/w500/5XSGvIKl2yPvOkieFjc3rzLw7x0.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 1051,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5XSGvIKl2yPvOkieFjc3rzLw7x0.jpg"
+        },
+        {
+          "title": "Looking for Mr. Goodbar",
+          "year": 1977,
+          "slug": "Dark drama about NYC's singles scene",
+          "poster": "https://image.tmdb.org/t/p/w500/j1qKNKRvDEhnl0PQS26PirNF81v.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 37749,
+          "poster_url": "https://image.tmdb.org/t/p/w500/j1qKNKRvDEhnl0PQS26PirNF81v.jpg"
+        },
+        {
+          "title": "Times Square",
+          "year": 1980,
+          "slug": "Two teenage runaways in pre-gentrification Times Square",
+          "poster": "https://image.tmdb.org/t/p/w500/zkZtDpfOfUVz0tFWRrkPp6W2iPd.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 76411,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zkZtDpfOfUVz0tFWRrkPp6W2iPd.jpg"
+        },
+        {
+          "title": "The Pope of Greenwich Village",
+          "year": 1984,
+          "slug": "Mickey Rourke in Little Italy crime drama",
+          "poster": "https://image.tmdb.org/t/p/w500/5U0HNeGoJVK3xic7hK9lz89Ki9i.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 32081,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5U0HNeGoJVK3xic7hK9lz89Ki9i.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

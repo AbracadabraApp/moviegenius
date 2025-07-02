@@ -1,0 +1,175 @@
+{
+  "props": {
+    "title": "Star Trek II: The Wrath of Khan",
+    "year": 1982,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/uPyLsKl8Z0LOoxeaFXsY5MxhR5s.jpg",
+    "initialStreaming": null,
+    "tmdbId": 154,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Star Trek II: The Wrath of Khan** (1982) revolutionized the Trek franchise by embracing naval warfare aesthetics and Shakespearean revenge themes. Director Nicholas Meyer transformed a dying franchise into a compelling submarine thriller in space, with Ricardo Montalban's Khan emerging as one of cinema's greatest villains. The film directly challenged **Star Trek: The Motion Picture** (1979)'s sterile approach by focusing on raw human emotion, aging, death, and sacrifice. Its submarine-style battles, inspired by classics like **Run Silent, Run Deep** (1958), created a template for space combat that influenced countless films, from **The Last Starfighter** (1984) to **Wing Commander** (1999)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Star Trek: The Motion Picture",
+            "year": 1979,
+            "slug": "The first Trek film featuring the original crew investigating a mysterious cloud threatening Earth",
+            "poster": "https://image.tmdb.org/t/p/w500/wfiAfNwH6CMKxz4vRaW8CPTabtk.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 152,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wfiAfNwH6CMKxz4vRaW8CPTabtk.jpg"
+          },
+          {
+            "title": "Space Battleship Yamato",
+            "year": 2010,
+            "slug": "Japanese space opera featuring naval-style space warfare heavily influenced by Wrath of Khan",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": null
+          },
+          {
+            "title": "Master and Commander: The Far Side of the World",
+            "year": 2003,
+            "slug": "Naval warfare drama that shares similar tactical elements and command dynamics",
+            "poster": "https://image.tmdb.org/t/p/w500/s1cVTQEZYn4nSjZLnFbzLP0j8y2.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 8619,
+            "poster_url": "https://image.tmdb.org/t/p/w500/s1cVTQEZYn4nSjZLnFbzLP0j8y2.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of aging and mortality was groundbreaking for science fiction. While **2001: A Space Odyssey** (1968) touched on evolution and **Logan's Run** (1976) dealt with age as dystopian control, Khan confronted mortality personally through Kirk's midlife crisis and Spock's sacrifice. This human element influenced later sci-fi like **Interstellar** (2014) and **Ad Astra** (2019), where space exploration intersects with deeply personal stories."
+      },
+      {
+        "type": "text",
+        "content": "Meyer's direction brought a classical gravitas to science fiction, drawing from **Moby Dick** and Shakespeare's \"King Lear\" and \"A Tale of Two Cities.\" This literary approach elevated the material beyond typical space opera, setting a precedent for thoughtful sci-fi like **Arrival** (2016) and **Ex Machina** (2014). The film's themes of vengeance and obsession parallel classics like **The Count of Monte Cristo** (1934) and modern interpretations like **V for Vendetta** (2005). SUBHEAD: Impact on Modern Science Fiction"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Battlestar Galactica: Blood & Chrome",
+            "year": 2012,
+            "slug": "Prequel film featuring space naval warfare heavily influenced by Khan's battle sequences",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Peacock",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Khan's influence extends far beyond Trek, establishing tropes still used in contemporary sci-fi. The space battles in **Battlestar Galactica** (2003-2009) and **The Expanse** (2015-2022) directly reference Khan's tactical naval combat style. The personal cost of command and sacrifice themes appear in films like **Ender's Game** (2013) and **Sunshine** (2007). Even Marvel's **Guardians of the Galaxy** (2014) borrows from Khan's space naval warfare aesthetics."
+      }
+    ],
+    "exploreFurther": [
+      "Naval Warfare in Space: The influence of maritime combat on science fiction films",
+      "Ricardo Montalban's Khan: Creating the perfect antagonist",
+      "Nicholas Meyer's Classical Influences: Shakespeare and Melville in science fiction",
+      "The Evolution of Star Trek Films: How Khan changed the franchise",
+      "Space Combat on Screen: From Star Trek to modern sci-fi"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Serenity",
+          "year": 2005,
+          "slug": "Space western featuring naval-style combat and personal sacrifice",
+          "poster": "https://image.tmdb.org/t/p/w500/4sqUOaPFoP2W81mq1UYqZqf5WzA.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 16320,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4sqUOaPFoP2W81mq1UYqZqf5WzA.jpg"
+        },
+        {
+          "title": "Balance of Terror",
+          "year": 1966,
+          "slug": "Star Trek episode that influenced Khan's submarine warfare style",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Das Boot",
+          "year": 1981,
+          "slug": "Submarine warfare film that influenced Khan's claustrophobic battles",
+          "poster": "https://image.tmdb.org/t/p/w500/u8FhQPncOAkwcei2OI9orPWhV6K.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 387,
+          "poster_url": "https://image.tmdb.org/t/p/w500/u8FhQPncOAkwcei2OI9orPWhV6K.jpg"
+        },
+        {
+          "title": "The Undiscovered Country",
+          "year": 1991,
+          "slug": "Another Nicholas Meyer Trek film with similar classical influences",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Enemy Mine",
+          "year": 1985,
+          "slug": "Science fiction focusing on personal drama and rivalry",
+          "poster": "https://image.tmdb.org/t/p/w500/a3dr9L8VIjhEvivzQ2M12VQDere.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 11864,
+          "poster_url": "https://image.tmdb.org/t/p/w500/a3dr9L8VIjhEvivzQ2M12VQDere.jpg"
+        },
+        {
+          "title": "Event Horizon",
+          "year": 1997,
+          "slug": "Space horror with similar ship-to-ship dynamics",
+          "poster": "https://image.tmdb.org/t/p/w500/cHoeg3gAD5w63Et5DImY1Jb7HaO.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 8413,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cHoeg3gAD5w63Et5DImY1Jb7HaO.jpg"
+        },
+        {
+          "title": "Starship Troopers",
+          "year": 1997,
+          "slug": "Military sci-fi with naval influences",
+          "poster": "https://image.tmdb.org/t/p/w500/cxCmv23O7p3hyHwqoktHYkZcGsY.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 563,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cxCmv23O7p3hyHwqoktHYkZcGsY.jpg"
+        },
+        {
+          "title": "Wing Commander",
+          "year": 1999,
+          "slug": "Space combat film heavily influenced by Khan's style",
+          "poster": "https://image.tmdb.org/t/p/w500/e3p2vkA4mnFaBlyAIntkZWkzOJW.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 10350,
+          "poster_url": "https://image.tmdb.org/t/p/w500/e3p2vkA4mnFaBlyAIntkZWkzOJW.jpg"
+        },
+        {
+          "title": "Soldier",
+          "year": 1998,
+          "slug": "Kurt Russell sci-fi about aging warriors",
+          "poster": "https://image.tmdb.org/t/p/w500/rYy5m4nnjdlvB6dyGkP9ELZbUZz.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 9425,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rYy5m4nnjdlvB6dyGkP9ELZbUZz.jpg"
+        },
+        {
+          "title": "Pandorum",
+          "year": 2009,
+          "slug": "Space horror with submarine-like tension",
+          "poster": "https://image.tmdb.org/t/p/w500/mNMfa6r3pl0EzFIKEkVcxyr6Rc7.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 19898,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mNMfa6r3pl0EzFIKEkVcxyr6Rc7.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

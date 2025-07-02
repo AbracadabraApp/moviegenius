@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "Die Hard 2",
+    "year": 1990,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/lDFO7D4MdbhjOwaPwe18QG69Rt0.jpg",
+    "initialStreaming": null,
+    "tmdbId": 1573,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Die Hard 2** (1990) amplified the high-stakes action formula established by its predecessor, relocating John McClane's one-man-army heroics to Washington D.C.'s Dulles Airport. The film established a pattern for action sequels - bigger budget, expanded scope, and multiplied threats. While **Die Hard** (1988) confined its action to Nakatomi Plaza, the sequel sprawled across runways, terminal buildings, and snowy forests. This expansion influenced later action sequels like **Speed 2: Cruise Control** (1997) and **Mission: Impossible 2** (2000), which similarly attempted to outdo their originals through scale and spectacle."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Die Hard",
+            "year": 1988,
+            "slug": "The definitive action thriller following cop John McClane fighting terrorists in an LA skyscraper",
+            "poster": "https://image.tmdb.org/t/p/w500/aJCpHDC6RoGz7d1Fzayl019xnxX.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 562,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aJCpHDC6RoGz7d1Fzayl019xnxX.jpg"
+          },
+          {
+            "title": "Die Hard 2",
+            "year": 1990,
+            "slug": "McClane battles mercenaries who've seized control of Dulles Airport on Christmas Eve",
+            "poster": "https://image.tmdb.org/t/p/w500/lDFO7D4MdbhjOwaPwe18QG69Rt0.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 1573,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lDFO7D4MdbhjOwaPwe18QG69Rt0.jpg"
+          },
+          {
+            "title": "Under Siege",
+            "year": 1992,
+            "slug": "Steven Seagal's Navy SEAL fights terrorists on a battleship, following Die Hard's confined-space formula",
+            "poster": "https://image.tmdb.org/t/p/w500/myHxm9p8fhEsXyaLO6DawYJKolg.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 8845,
+            "poster_url": "https://image.tmdb.org/t/p/w500/myHxm9p8fhEsXyaLO6DawYJKolg.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Director Renny Harlin brought his distinctive visual style to Die Hard 2, emphasizing blue-tinted winter environments and practical effects-driven action sequences. The film's snowy airport setting influenced later winter-based action films like **Cliffhanger** (1993) and **The Long Kiss Goodnight** (1996), both also directed by Harlin. The sequel's focus on aviation threats and terrorist takeovers preceded similar plots in films like **Passenger 57** (1992) and **Air Force One** (1997). SUBHEAD: Legacy and Impact on Action Cinema"
+      },
+      {
+        "type": "text",
+        "content": "Die Hard 2's success cemented Bruce Willis as an action superstar and helped establish the \"Die Hard on a...\" subgenre. Films like **Sudden Death** (1995) (Die Hard in a hockey arena), **Speed** (1994) (Die Hard on a bus), and **Con Air** (1997) (Die Hard on a plane) followed its template of a lone hero fighting terrorists in a confined location. The sequel's emphasis on practical stunts and explosions, particularly the ejector seat sequence and airplane crashes, influenced action choreography throughout the 1990s."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Action Movie Sequels in the 1990s",
+      "Renny Harlin's Impact on American Action Cinema",
+      "The Rise of the \"Die Hard on a...\" Subgenre",
+      "Bruce Willis's Transformation into an Action Icon",
+      "Aviation Disaster Films and Terrorism Themes"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Cliffhanger",
+          "year": 1993,
+          "slug": "Mountain rescue expert battles criminals in the Rockies",
+          "poster": "https://image.tmdb.org/t/p/w500/8v2nPPLvhEVlfXu08UZ0djK31be.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9350,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8v2nPPLvhEVlfXu08UZ0djK31be.jpg"
+        },
+        {
+          "title": "Passenger 57",
+          "year": 1992,
+          "slug": "Air marshal fights terrorists aboard a hijacked plane",
+          "poster": "https://image.tmdb.org/t/p/w500/4VBN8pQxGHjeZWcNv1V1xSw0OKC.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10538,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4VBN8pQxGHjeZWcNv1V1xSw0OKC.jpg"
+        },
+        {
+          "title": "Under Siege 2: Dark Territory",
+          "year": 1995,
+          "slug": "Seagal fights terrorists on a train",
+          "poster": "https://image.tmdb.org/t/p/w500/gElwFCQTbSK5hdK0PVyia547nst.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 3512,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gElwFCQTbSK5hdK0PVyia547nst.jpg"
+        },
+        {
+          "title": "Executive Decision",
+          "year": 1996,
+          "slug": "Special forces team must retake hijacked plane",
+          "poster": "https://image.tmdb.org/t/p/w500/hLjXkFr9fHlWzRVwu1T31QSVHRq.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 2320,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hLjXkFr9fHlWzRVwu1T31QSVHRq.jpg"
+        },
+        {
+          "title": "Sudden Death",
+          "year": 1995,
+          "slug": "Fire marshal battles terrorists during Stanley Cup final",
+          "poster": "https://image.tmdb.org/t/p/w500/1pylO6YX5XdOA6QCc5IRxrrffkg.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9091,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1pylO6YX5XdOA6QCc5IRxrrffkg.jpg"
+        },
+        {
+          "title": "Speed",
+          "year": 1994,
+          "slug": "Cop must save bus rigged with bomb that will explode if it slows down",
+          "poster": "https://image.tmdb.org/t/p/w500/o1Zs7VaS9y2GYH9CLeWxaVLWd3x.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 1637,
+          "poster_url": "https://image.tmdb.org/t/p/w500/o1Zs7VaS9y2GYH9CLeWxaVLWd3x.jpg"
+        },
+        {
+          "title": "Air Force One",
+          "year": 1997,
+          "slug": "President fights terrorists who hijack Air Force One",
+          "poster": "https://image.tmdb.org/t/p/w500/juRFEbyx5JlNuYrZM50vcZmtN78.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9772,
+          "poster_url": "https://image.tmdb.org/t/p/w500/juRFEbyx5JlNuYrZM50vcZmtN78.jpg"
+        },
+        {
+          "title": "The Rock",
+          "year": 1996,
+          "slug": "FBI chemist and ex-con infiltrate Alcatraz to stop rogue marines",
+          "poster": "https://image.tmdb.org/t/p/w500/j5mxLNWjUlXUUk8weFBtnF4afIR.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 9802,
+          "poster_url": "https://image.tmdb.org/t/p/w500/j5mxLNWjUlXUUk8weFBtnF4afIR.jpg"
+        },
+        {
+          "title": "Con Air",
+          "year": 1997,
+          "slug": "Parolee trapped on prison transport plane hijacked by inmates",
+          "poster": "https://image.tmdb.org/t/p/w500/kOKjgrEzGOP92rVQ6srA9jtp60l.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 1701,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kOKjgrEzGOP92rVQ6srA9jtp60l.jpg"
+        },
+        {
+          "title": "Broken Arrow",
+          "year": 1996,
+          "slug": "Pilot must stop terrorist who stole nuclear weapons",
+          "poster": "https://image.tmdb.org/t/p/w500/iBPMwYYJFvdCBkXrwV75peo5Lz2.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9208,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iBPMwYYJFvdCBkXrwV75peo5Lz2.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,170 @@
+{
+  "props": {
+    "title": "The Jazz Singer",
+    "year": 1927,
+    "initialSlug": "The Melody That Changed the World",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/wr8Pt1GO87cwB3210TO3JTNDsUc.jpg",
+    "initialStreaming": null,
+    "tmdbId": 939,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Jazz Singer** (1927) revolutionized cinema as the first feature-length film with synchronized dialogue and musical sequences. Al Jolson's immortal line \"You ain't heard nothing yet!\" marked the death knell for silent films. While technically a part-talkie with many silent sequences, its impact was seismic - within three years, Hollywood transformed from silent to sound production. The film's plot about a Jewish cantor's son choosing between religious tradition and jazz performance captured the cultural tensions of 1920s America, though its use of blackface reflects the era's deeply problematic racial attitudes."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Broadway Melody",
+            "year": 1929,
+            "slug": "The first all-talking musical and Best Picture Oscar winner, showcasing vaudeville performers adapting to changing times",
+            "poster": "https://image.tmdb.org/t/p/w500/giq8GJs8YGMzHxeKxNSuwzAdd1c.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 65203,
+            "poster_url": "https://image.tmdb.org/t/p/w500/giq8GJs8YGMzHxeKxNSuwzAdd1c.jpg"
+          },
+          {
+            "title": "Singin' in the Rain",
+            "year": 1952,
+            "slug": "The definitive Hollywood musical that cleverly satirizes the chaotic transition from silent to sound films",
+            "poster": "https://image.tmdb.org/t/p/w500/w03EiJVHP8Un77boQeE7hg9DVdU.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 872,
+            "poster_url": "https://image.tmdb.org/t/p/w500/w03EiJVHP8Un77boQeE7hg9DVdU.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The technical innovations of **The Jazz Singer** (1927) sparked a wave of early sound experiments. **Lights of New York** (1928) became the first 100% all-talking feature, while **On with the Show!** (1929) pioneered both sound and Technicolor. Many silent stars like John Gilbert and Clara Bow saw their careers collapse during this transition, unable to adapt their performances or voices to the new medium. The rush to sound created awkward early talkies with static camera work as directors struggled with noisy equipment and soundproofing."
+      },
+      {
+        "type": "text",
+        "content": "Beyond its technical significance, **The Jazz Singer** (1927) established the template for countless show business stories about generational conflict and assimilation. Films like **Funny Girl** (1968) and **La La Land** (2016) echo its themes of ambitious performers torn between tradition and artistic dreams. The film's use of popular music to drive narrative would influence everything from **A Star Is Born** (1937) to **Walk the Line** (2005). SUBHEAD: Cultural Impact and Legacy"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Artist",
+            "year": 2011,
+            "slug": "Oscar-winning silent film tribute exploring a star's decline during Hollywood's transition to sound",
+            "poster": "https://image.tmdb.org/t/p/w500/z68py0ZqPgeacGPG54AGVRbNBS7.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 74643,
+            "poster_url": "https://image.tmdb.org/t/p/w500/z68py0ZqPgeacGPG54AGVRbNBS7.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While groundbreaking, **The Jazz Singer** (1927) remains controversial for Al Jolson's blackface performances - a common but deeply racist practice in early 20th century entertainment. Later films like **Bamboozled** (2000) and **Hollywood Shuffle** (1987) would critically examine this disturbing aspect of entertainment history. The film's depiction of Jewish immigrant life and intergenerational conflict influenced works like **Crossing Delancey** (1988) and **A Serious Man** (2009)."
+      }
+    ],
+    "exploreFurther": [
+      "The Technical Revolution of Early Sound Film",
+      "Vaudeville's Influence on Early Hollywood",
+      "Jewish Identity in American Cinema",
+      "The Cultural History of Blackface in Entertainment",
+      "Music Biography Films Through the Decades"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Sunset Boulevard",
+          "year": 1950,
+          "slug": "Silent star Norma Desmond can't adapt to talkies",
+          "poster": "https://image.tmdb.org/t/p/w500/sC4Dpmn87oz9AuxZ15Lmip0Ftgr.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 599,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sC4Dpmn87oz9AuxZ15Lmip0Ftgr.jpg"
+        },
+        {
+          "title": "Don Juan",
+          "year": 1926,
+          "slug": "Last major Warner Bros silent film before Jazz Singer",
+          "poster": "https://image.tmdb.org/t/p/w500/lgG2uNEvdmgVs9k8RlTA9JqxsQs.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 89059,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lgG2uNEvdmgVs9k8RlTA9JqxsQs.jpg"
+        },
+        {
+          "title": "Gold Diggers of 1933",
+          "year": 1933,
+          "slug": "Depression-era musical showing mature sound techniques",
+          "poster": "https://image.tmdb.org/t/p/w500/sXsUJsW9fcVT15hfBu9LyU22qmG.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 31511,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sXsUJsW9fcVT15hfBu9LyU22qmG.jpg"
+        },
+        {
+          "title": "Yankee Doodle Dandy",
+          "year": 1942,
+          "slug": "James Cagney as vaudeville star George M. Cohan",
+          "poster": "https://image.tmdb.org/t/p/w500/cqLLIyJFjLr6jGOxWVEHG11WGzB.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 3087,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cqLLIyJFjLr6jGOxWVEHG11WGzB.jpg"
+        },
+        {
+          "title": "42nd Street",
+          "year": 1933,
+          "slug": "Landmark backstage musical about Broadway",
+          "poster": "https://image.tmdb.org/t/p/w500/q4UEd8BL74zVsOOaJkKVMLMmdTg.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 3062,
+          "poster_url": "https://image.tmdb.org/t/p/w500/q4UEd8BL74zVsOOaJkKVMLMmdTg.jpg"
+        },
+        {
+          "title": "Chicago",
+          "year": 2002,
+          "slug": "Modern musical drawing on vaudeville traditions",
+          "poster": "https://image.tmdb.org/t/p/w500/3ED8cWCXY9zkx77Sd0N5qMbsdDP.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 1574,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3ED8cWCXY9zkx77Sd0N5qMbsdDP.jpg"
+        },
+        {
+          "title": "Thoroughly Modern Millie",
+          "year": 1967,
+          "slug": "Jazz Age musical comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/ce8rBGFR0naGsp6mKy9CNKn9iSa.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 32489,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ce8rBGFR0naGsp6mKy9CNKn9iSa.jpg"
+        },
+        {
+          "title": "Cabaret",
+          "year": 1972,
+          "slug": "Musical exploring similar themes of Jewish identity",
+          "poster": "https://image.tmdb.org/t/p/w500/fMhOeJ2TvuY46iYGmsowhgRXfnr.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10784,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fMhOeJ2TvuY46iYGmsowhgRXfnr.jpg"
+        },
+        {
+          "title": "The Great Ziegfeld",
+          "year": 1936,
+          "slug": "Biopic of legendary Broadway producer",
+          "poster": "https://image.tmdb.org/t/p/w500/7wkIYI2r0ICajBcCW0JlIT3zSwc.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 43277,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7wkIYI2r0ICajBcCW0JlIT3zSwc.jpg"
+        },
+        {
+          "title": "All That Jazz",
+          "year": 1979,
+          "slug": "Innovative musical about show business",
+          "poster": "https://image.tmdb.org/t/p/w500/culCEdj4srLljefgn4XKd6k3C5t.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 16858,
+          "poster_url": "https://image.tmdb.org/t/p/w500/culCEdj4srLljefgn4XKd6k3C5t.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

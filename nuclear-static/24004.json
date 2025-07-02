@@ -1,0 +1,177 @@
+{
+  "props": {
+    "title": "We're Not Married!",
+    "year": 1952,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/qH4nL6dylBRsnoXWDKAkjXsBint.jpg",
+    "initialStreaming": null,
+    "tmdbId": 24004,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**We're Not Married!** (1952) represents a fascinating slice of early 1950s Hollywood comedy, featuring an all-star ensemble cast including Ginger Rogers and Marilyn Monroe. The film's premise - five couples discovering their marriages aren't legally valid - brilliantly captured post-war American anxiety about domestic institutions. It shares DNA with other marriage-focused comedies of the era like **The Marrying Kind** (1952) and **Pat and Mike** (1952), but takes a more subversive approach by questioning the very foundation of matrimony itself."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Seven Year Itch",
+            "year": 1955,
+            "slug": "Marilyn Monroe sparkles in this classic comedy about marriage temptation",
+            "poster": "https://image.tmdb.org/t/p/w500/4oLqx0QbjWFzWtkxRmDLGH47CUJ.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 10653,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4oLqx0QbjWFzWtkxRmDLGH47CUJ.jpg"
+          },
+          {
+            "title": "Adam's Rib",
+            "year": 1949,
+            "slug": "Spencer Tracy and Katharine Hepburn battle in court and at home in this marriage comedy",
+            "poster": "https://image.tmdb.org/t/p/w500/k9gT6d2sDT9Jd4dvzHowTt3l6Zg.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 25431,
+            "poster_url": "https://image.tmdb.org/t/p/w500/k9gT6d2sDT9Jd4dvzHowTt3l6Zg.jpg"
+          },
+          {
+            "title": "How to Marry a Millionaire",
+            "year": 1953,
+            "slug": "Monroe, Bacall and Grable scheme to land wealthy husbands",
+            "poster": "https://image.tmdb.org/t/p/w500/dFwefYyEOOZaWVn15xGY6CbYYJ2.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 10297,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dFwefYyEOOZaWVn15xGY6CbYYJ2.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Director Edmund Goulding, who previously directed the dramatic heavyweight **Dark Victory** (1939), brings a light touch to what could have been scandalous material for the time. The episodic structure - showing how different couples react to their \"unmarriage\" - prefigures later anthology films like **Plaza Suite** (1971) and allows for a range of tones from broad farce to gentle romance. Particularly notable is the young Marilyn Monroe's segment as a beauty contest winner, showing her comedic chops just before her breakthrough in **Gentlemen Prefer Blondes** (1953)."
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of marriage as both a legal and emotional contract echoes through later classics like **Marriage Story** (2019) and **The Marriage of Maria Braun** (1979). Its structure of interconnected relationship stories influenced works like **Love Actually** (2003) and **Valentine's Day** (2010), though those films lack the sharp social commentary beneath the comedy. SUBHEAD: Marriage in 1950s Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Gentlemen Prefer Blondes",
+            "year": 1953,
+            "slug": "Monroe and Russell dazzle as gold-digging showgirls",
+            "poster": "https://image.tmdb.org/t/p/w500/fDozhst5HVJJcd3BM8ZOsKniO7Q.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 759,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fDozhst5HVJJcd3BM8ZOsKniO7Q.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film sits at a crucial junction in Hollywood's portrayal of marriage. While pre-war films often treated marriage as the happy ending, post-war cinema began examining it more critically, as in **The Best Years of Our Lives** (1946). **We're Not Married!** uses its high-concept premise to probe deeper questions about what makes a marriage real - legal documents or emotional commitment? This theme would later be explored dramatically in films like **Far From Heaven** (2002) and **Revolutionary Road** (2008)."
+      }
+    ],
+    "exploreFurther": [
+      "Marriage in Post-War Hollywood Cinema (1945-1955)",
+      "Marilyn Monroe's Early Career Roles",
+      "The Evolution of Multi-Story Films",
+      "Edmund Goulding's Directorial Style",
+      "Social Commentary in 1950s Comedy"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Awful Truth",
+          "year": 1937,
+          "slug": "Screwball divorce comedy with Cary Grant",
+          "poster": "https://image.tmdb.org/t/p/w500/2VtsJoxvjpcMpwh0gweS8IMfHxO.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 14675,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2VtsJoxvjpcMpwh0gweS8IMfHxO.jpg"
+        },
+        {
+          "title": "The Palm Beach Story",
+          "year": 1942,
+          "slug": "Preston Sturges marriage farce",
+          "poster": "https://image.tmdb.org/t/p/w500/vl3MVnrUsCa0wRsFTVU0ohbtWy6.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 32255,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vl3MVnrUsCa0wRsFTVU0ohbtWy6.jpg"
+        },
+        {
+          "title": "Married Life",
+          "year": 2007,
+          "slug": "Dark comedy about marriage and murder",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Marrying Kind",
+          "year": 1952,
+          "slug": "Judy Holliday marriage drama",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": null
+        },
+        {
+          "title": "Marriage on the Rocks",
+          "year": 1965,
+          "slug": "Sinatra comedy about accidental divorce",
+          "poster": "https://image.tmdb.org/t/p/w500/iNMyMrCkUw62yBG1pyQFPg0Rxnx.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 98648,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iNMyMrCkUw62yBG1pyQFPg0Rxnx.jpg"
+        },
+        {
+          "title": "Bob & Carol & Ted & Alice",
+          "year": 1969,
+          "slug": "Progressive look at marriage",
+          "poster": "https://image.tmdb.org/t/p/w500/8fDLuB1q3JycYJPK0F65OYO3lAX.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 26520,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8fDLuB1q3JycYJPK0F65OYO3lAX.jpg"
+        },
+        {
+          "title": "Divorce American Style",
+          "year": 1967,
+          "slug": "Dick Van Dyke divorce satire",
+          "poster": "https://image.tmdb.org/t/p/w500/5QLwwLUDkuBCYYGaLZZipalRW95.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 102057,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5QLwwLUDkuBCYYGaLZZipalRW95.jpg"
+        },
+        {
+          "title": "The War of the Roses",
+          "year": 1989,
+          "slug": "Dark comedy about marriage dissolution",
+          "poster": "https://image.tmdb.org/t/p/w500/k2l2df0XlY58wfr7a3RPJ59qmxl.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 249,
+          "poster_url": "https://image.tmdb.org/t/p/w500/k2l2df0XlY58wfr7a3RPJ59qmxl.jpg"
+        },
+        {
+          "title": "Husbands and Wives",
+          "year": 1992,
+          "slug": "Woody Allen marriage drama",
+          "poster": "https://image.tmdb.org/t/p/w500/mb6Hmns0PP2Me9TYpLE9M3GHt7v.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 28384,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mb6Hmns0PP2Me9TYpLE9M3GHt7v.jpg"
+        },
+        {
+          "title": "Mr. & Mrs. Smith",
+          "year": 2005,
+          "slug": "Marriage action-comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/kjD700RtyhveN3ZbOnSvUSne0Qj.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 787,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kjD700RtyhveN3ZbOnSvUSne0Qj.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

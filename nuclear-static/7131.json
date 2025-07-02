@@ -1,0 +1,191 @@
+{
+  "props": {
+    "title": "Van Helsing",
+    "year": 2004,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/gsFun8nATm52aGHeT8ueAel98nE.jpg",
+    "initialStreaming": "TBD",
+    "tmdbId": 7131,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Van Helsing** (2004) represents Universal Pictures' ambitious attempt to revive their classic monster properties in a single, action-packed blockbuster. Following Hugh Jackman's monster hunter through a CGI-heavy Victorian world, it draws direct inspiration from Universal's golden age of horror, particularly **Dracula** (1931) and **Frankenstein** (1931). Director Stephen Sommers applies the same high-energy approach that made **The Mummy** (1999) successful, but cranks up the supernatural elements to create a monster mash-up that's more focused on spectacle than scares."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Mummy",
+            "year": 1999,
+            "slug": "Brendan Fraser leads this energetic remake blending horror, action and adventure in ancient Egypt",
+            "poster": "https://image.tmdb.org/t/p/w500/yhIsVvcUm7QxzLfT6HW2wLf5ajY.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 564,
+            "poster_url": "https://image.tmdb.org/t/p/w500/yhIsVvcUm7QxzLfT6HW2wLf5ajY.jpg"
+          },
+          {
+            "title": "Underworld",
+            "year": 2003,
+            "slug": "Kate Beckinsale stars as a vampire warrior in a stylish action-horror about the war between vampires and werewolves",
+            "poster": "https://image.tmdb.org/t/p/w500/zsnQ41UZ3jo1wEeemF0eA9cAIU0.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 277,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zsnQ41UZ3jo1wEeemF0eA9cAIU0.jpg"
+          },
+          {
+            "title": "League of Extraordinary Gentlemen",
+            "year": 2003,
+            "slug": "Literary characters like Dr. Jekyll and Dorian Gray unite in a Victorian action adventure",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The early 2000s saw a trend of reimagining classic horror properties as big-budget action spectacles. While **Van Helsing** aimed to unite Universal's monster universe, **Underworld** (2003) created its own mythology mixing vampires and werewolves. **Blade** (1998) had earlier proven that horror characters could anchor action franchises. These films prioritized wire-work stunts, CGI creatures, and martial arts over traditional horror atmosphere. SUBHEAD: The Universal Monsters Legacy"
+      },
+      {
+        "type": "text",
+        "content": "Van Helsing's greatest strength lies in its loving references to Universal's classic monster films. The black-and-white prologue directly homages **Frankenstein** (1931) and **The Wolf Man** (1941). Richard Roxburgh's Dracula channels both Bela Lugosi's iconic performance and Gary Oldman's romantic take from **Bram Stoker's Dracula** (1992). While the action-heavy approach disappointed horror purists, the film celebrates Universal's monster legacy through production design, creature effects, and atmospheric Transylvanian settings."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Bram Stoker's Dracula",
+            "year": 1992,
+            "slug": "Francis Ford Coppola's visually stunning and romantic take on the classic vampire tale",
+            "poster": "https://image.tmdb.org/t/p/w500/scFDS0U5uYAjcVTyjNc7GmcZw1q.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 6114,
+            "poster_url": "https://image.tmdb.org/t/p/w500/scFDS0U5uYAjcVTyjNc7GmcZw1q.jpg"
+          },
+          {
+            "title": "The Wolf Man",
+            "year": 1941,
+            "slug": "Lon Chaney Jr.'s iconic performance as the cursed Lawrence Talbot",
+            "poster": "https://image.tmdb.org/t/p/w500/vG8fu5syTtQLzK1hQXyi3ugOPNF.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 13666,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vG8fu5syTtQLzK1hQXyi3ugOPNF.jpg"
+          },
+          {
+            "title": "The Monster Squad",
+            "year": 1987,
+            "slug": "Kids battle Universal's classic monsters in this cult favorite adventure",
+            "poster": "https://image.tmdb.org/t/p/w500/8EVuqCcqFzQvc7X8E3fx3w4B5Td.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 13509,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8EVuqCcqFzQvc7X8E3fx3w4B5Td.jpg"
+          }
+        ]
+      }
+    ],
+    "exploreFurther": [
+      "Universal Studios Monster Movies (1923-1960)",
+      "The Evolution of Vampire Cinema",
+      "CGI's Impact on Modern Horror Films",
+      "Victorian Gothic Literature in Film",
+      "The Action-Horror Hybrid Genre"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Dracula Untold",
+          "year": 2014,
+          "slug": "Another attempt to reboot Universal's vampire franchise",
+          "poster": "https://image.tmdb.org/t/p/w500/vNiGjujwwGP9DxHj5Bga0ctgGaY.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 49017,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vNiGjujwwGP9DxHj5Bga0ctgGaY.jpg"
+        },
+        {
+          "title": "Penny Dreadful",
+          "year": 2014,
+          "slug": "TV series mixing Victorian literary characters and monsters",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Showtime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Abraham Lincoln: Vampire Hunter",
+          "year": 2012,
+          "slug": "Historical fantasy mixing vampire hunting with American history",
+          "poster": "https://image.tmdb.org/t/p/w500/qv8deK0ZmutAuEpejruQKApIy6r.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 72331,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qv8deK0ZmutAuEpejruQKApIy6r.jpg"
+        },
+        {
+          "title": "I, Frankenstein",
+          "year": 2014,
+          "slug": "Modern action take on Frankenstein's monster",
+          "poster": "https://image.tmdb.org/t/p/w500/pQkJ1tNsKRvYhwbC8eztLElKrmS.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 100241,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pQkJ1tNsKRvYhwbC8eztLElKrmS.jpg"
+        },
+        {
+          "title": "The Wolfman",
+          "year": 2010,
+          "slug": "Period horror remake starring Benicio Del Toro",
+          "poster": "https://image.tmdb.org/t/p/w500/fQqPoAHvHicie1ttuiV2q0yv9V7.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 7978,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fQqPoAHvHicie1ttuiV2q0yv9V7.jpg"
+        },
+        {
+          "title": "Hansel & Gretel: Witch Hunters",
+          "year": 2013,
+          "slug": "Fairy tale characters reimagined as action heroes",
+          "poster": "https://image.tmdb.org/t/p/w500/j343Rpj3WeNvP0SV80zveve70io.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 60304,
+          "poster_url": "https://image.tmdb.org/t/p/w500/j343Rpj3WeNvP0SV80zveve70io.jpg"
+        },
+        {
+          "title": "Season of the Witch",
+          "year": 2011,
+          "slug": "Medieval action-horror with Nicolas Cage",
+          "poster": "https://image.tmdb.org/t/p/w500/dNVqi8EsBtnnwfR6TgiWM51JOuS.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 23047,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dNVqi8EsBtnnwfR6TgiWM51JOuS.jpg"
+        },
+        {
+          "title": "Priest",
+          "year": 2011,
+          "slug": "Post-apocalyptic vampire hunting action",
+          "poster": "https://image.tmdb.org/t/p/w500/fYHiA7LPGl9DG7m3DUs0Td1VMcO.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 38321,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fYHiA7LPGl9DG7m3DUs0Td1VMcO.jpg"
+        },
+        {
+          "title": "Solomon Kane",
+          "year": 2009,
+          "slug": "Puritan monster hunter in a dark fantasy setting",
+          "poster": "https://image.tmdb.org/t/p/w500/jwwVNuGRUBXcudG6wOKP9U60BzU.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 32985,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jwwVNuGRUBXcudG6wOKP9U60BzU.jpg"
+        },
+        {
+          "title": "Brotherhood of the Wolf",
+          "year": 2001,
+          "slug": "French period action-horror about a mysterious beast",
+          "poster": "https://image.tmdb.org/t/p/w500/Ahd4F7azhjsxgXYjVyFmVzJu9LB.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 6312,
+          "poster_url": "https://image.tmdb.org/t/p/w500/Ahd4F7azhjsxgXYjVyFmVzJu9LB.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

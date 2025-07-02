@@ -1,0 +1,177 @@
+{
+  "props": {
+    "title": "Air Force",
+    "year": 1943,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/mqH4V49GvANYsu1q4SW4CFUTFZe.jpg",
+    "initialStreaming": null,
+    "tmdbId": 15807,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Howard Hawks' **Air Force** (1943) revolutionized the American war film, arriving at a crucial moment during WWII. Shot with unprecedented access to military aircraft and facilities, it established the template for aviation combat films with its blend of documentary-style realism and dramatic storytelling. The film's depiction of the Pearl Harbor attack and its aftermath marked a significant shift from pre-war Hollywood's more sanitized approach to combat. Hawks, working with cinematographer James Wong Howe, created influential aerial sequences that would impact later classics like **Twelve O'Clock High** (1949) and **Strategic Air Command** (1955)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Thirty Seconds Over Tokyo",
+            "year": 1944,
+            "slug": "Gripping true story of the Doolittle Raid on Tokyo, featuring spectacular aerial combat sequences",
+            "poster": "https://image.tmdb.org/t/p/w500/dvvgU0TwstTtZofAzBA5syt5on7.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 18770,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dvvgU0TwstTtZofAzBA5syt5on7.jpg"
+          },
+          {
+            "title": "Command Decision",
+            "year": 1948,
+            "slug": "Clark Gable leads bombing missions over Germany in this taut psychological drama",
+            "poster": "https://image.tmdb.org/t/p/w500/moCcbMzkfvxBh7QAl5cyehdmeVC.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 23861,
+            "poster_url": "https://image.tmdb.org/t/p/w500/moCcbMzkfvxBh7QAl5cyehdmeVC.jpg"
+          },
+          {
+            "title": "Task Force",
+            "year": 1949,
+            "slug": "Gary Cooper stars in the history of naval aviation from biplanes to WWII",
+            "poster": "https://image.tmdb.org/t/p/w500/av1YqGB6yXTumCq2K3DpbCkP1C1.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 61262,
+            "poster_url": "https://image.tmdb.org/t/p/w500/av1YqGB6yXTumCq2K3DpbCkP1C1.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The success of **Air Force** sparked a wave of aviation-focused WWII films that combined technical authenticity with personal drama. **Flying Tigers** (1942) and **Wing and a Prayer** (1944) followed its documentary-influenced style, while incorporating increasingly sophisticated special effects. These films served dual purposes - as propaganda tools boosting morale on the home front and as realistic portrayals of aerial warfare that honored servicemen's experiences."
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extended well beyond the 1940s. Its technical innovations in filming aerial combat sequences created a visual language that influenced everything from **The War Lover** (1962) to **Top Gun** (1986). Hawks' emphasis on crew dynamics and the psychological pressure of combat missions became standard elements of the genre, visible in later works like **Memphis Belle** (1990) and **Red Tails** (2012). SUBHEAD: Technical Innovation and Combat Reality"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Fighter Squadron",
+            "year": 1948,
+            "slug": "Edmond O'Brien leads daring raids over Nazi Germany in stunning Technicolor",
+            "poster": "https://image.tmdb.org/t/p/w500/nPlTtsMalKWvEgZaA8fIskZtBJa.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 101864,
+            "poster_url": "https://image.tmdb.org/t/p/w500/nPlTtsMalKWvEgZaA8fIskZtBJa.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "What set **Air Force** apart was its groundbreaking combination of actual combat footage with staged sequences, creating a heightened sense of realism that became the gold standard for aviation films. The film's B-17 Flying Fortress sequences influenced combat photography itself, with actual war photographers adopting techniques pioneered by Hawks and his team. This marriage of dramatic storytelling and technical authenticity influenced later classics like **The Dam Busters** (1955) and **633 Squadron** (1964)."
+      }
+    ],
+    "exploreFurther": [
+      "Howard Hawks' Evolution of Combat Film Techniques",
+      "The Role of Military Aviation Films in WWII Propaganda",
+      "Technical Innovations in Filming Aerial Combat 1943-1955",
+      "The B-17 Flying Fortress in Cinema History",
+      "James Wong Howe's Cinematographic Contributions to War Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "God Is My Co-Pilot",
+          "year": 1945,
+          "slug": "True story of Flying Tigers ace Robert Lee Scott",
+          "poster": "https://image.tmdb.org/t/p/w500/yeICx3KlTjB1zrfJoiRvbeGEeoE.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 101598,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yeICx3KlTjB1zrfJoiRvbeGEeoE.jpg"
+        },
+        {
+          "title": "Winged Victory",
+          "year": 1944,
+          "slug": "Army Air Forces show about pilot training",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": null
+        },
+        {
+          "title": "Bombardier",
+          "year": 1943,
+          "slug": "Pat O'Brien trains B-17 bombardiers",
+          "poster": "https://image.tmdb.org/t/p/w500/z5Jy1QjLycT54kmS8w0PZvxrlfh.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 62749,
+          "poster_url": "https://image.tmdb.org/t/p/w500/z5Jy1QjLycT54kmS8w0PZvxrlfh.jpg"
+        },
+        {
+          "title": "A Guy Named Joe",
+          "year": 1943,
+          "slug": "Spencer Tracy as a pilot who returns as a ghost",
+          "poster": "https://image.tmdb.org/t/p/w500/rrdaUol9hZEde4HloyVuG860OH7.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 43306,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rrdaUol9hZEde4HloyVuG860OH7.jpg"
+        },
+        {
+          "title": "The Way to the Stars",
+          "year": 1945,
+          "slug": "British RAF drama about American pilots",
+          "poster": "https://image.tmdb.org/t/p/w500/bBxYrwRZ5YSqQplA2pF80JbyOFC.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 44087,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bBxYrwRZ5YSqQplA2pF80JbyOFC.jpg"
+        },
+        {
+          "title": "Dawn Patrol",
+          "year": 1938,
+          "slug": "Errol Flynn leads WWI fighter pilots",
+          "poster": "https://image.tmdb.org/t/p/w500/ncrQ21mjMTznDZDTmAcT3j5berB.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 46688,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ncrQ21mjMTznDZDTmAcT3j5berB.jpg"
+        },
+        {
+          "title": "Test Pilot",
+          "year": 1938,
+          "slug": "Clark Gable and Spencer Tracy in aviation drama",
+          "poster": "https://image.tmdb.org/t/p/w500/vdZ5rv7Cg6HTM6UaMvjezKO0juk.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 43155,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vdZ5rv7Cg6HTM6UaMvjezKO0juk.jpg"
+        },
+        {
+          "title": "Flight Command",
+          "year": 1940,
+          "slug": "Robert Taylor joins an elite Navy squadron",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": null
+        },
+        {
+          "title": "Dive Bomber",
+          "year": 1941,
+          "slug": "Errol Flynn develops high-altitude flight suits",
+          "poster": "https://image.tmdb.org/t/p/w500/2my6RE1UuD7M3I0gwrToUUosyUQ.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 65587,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2my6RE1UuD7M3I0gwrToUUosyUQ.jpg"
+        },
+        {
+          "title": "I Wanted Wings",
+          "year": 1941,
+          "slug": "Ray Milland trains as an Army Air Corps pilot",
+          "poster": "https://image.tmdb.org/t/p/w500/iiEkitLzTfR1JAeHxR0AyFQTFxf.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 131766,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iiEkitLzTfR1JAeHxR0AyFQTFxf.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

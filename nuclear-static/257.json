@@ -1,0 +1,123 @@
+{
+  "props": {
+    "title": "Oliver Twist",
+    "year": 2005,
+    "initialSlug": "The Pickpocket's Odyssey Begins",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/zhPdYZ3x2uanhM1SyBj4CuL6hSa.jpg",
+    "initialStreaming": null,
+    "tmdbId": 257,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Roman Polanski's **Oliver Twist** (2005) brings Charles Dickens' Victorian London to gritty life, following earlier adaptations like David Lean's **Oliver Twist** (1948) and Carol Reed's musical **Oliver!** (1968). Polanski strips away sentimentality, emphasizing the brutal reality of child poverty and exploitation. Ben Kingsley's Fagin emerges more complex and human than previous portrayals, while Barney Clark's Oliver captures the vulnerable determination of Dickens' protagonist. The film's muted color palette and attention to period detail creates a more naturalistic take on the material than the romanticized **Great Expectations** (1946) or the stylized **Nicholas Nickleby** (2002). Oliver Twist|2005|Roman Polanski's gritty adaptation starring Ben Kingsley as Fagin and Barney Clark as Oliver|Prime Great Expectations|1946|David Lean's atmospheric Dickens adaptation with John Mills and Alec Guinness|Criterion Nicholas Nickleby|2002|Star-studded Victorian drama based on Dickens' novel about a young man protecting his family|Netflix"
+      },
+      {
+        "type": "text",
+        "content": "The tradition of adapting Dickens for film stretches back to cinema's earliest days, with each era reflecting its own social concerns. **A Christmas Carol** (1951) with Alastair Sim remains definitive, while Alfonso Cuarón's modern-set **Great Expectations** (1998) proved Dickens' themes of class mobility and moral corruption translate seamlessly to contemporary settings. Polanski's version stands out for refusing to soften Dickens' social critique, much like Mike Newell's **Great Expectations** (2013) and Douglas McGrath's **Nicholas Nickleby** (2002). SUBHEAD: Visual Style and Social Commentary"
+      },
+      {
+        "type": "text",
+        "content": "Polanski's meticulous recreation of 1830s London shares DNA with other period-accurate literary adaptations like Joe Wright's **Pride & Prejudice** (2005) and Jane Campion's **Bright Star** (2009). Yet the film's unflinching depiction of child exploitation connects it to modern social justice films like Danny Boyle's **Slumdog Millionaire** (2008) and Stephen Daldry's **The Reader** (2008). The workhouse scenes particularly resonate with contemporary concerns about child labor and institutional abuse. A Christmas Carol|1951|Classic adaptation with Alastair Sim as the definitive Scrooge|Prime Slumdog Millionaire|2008|Oscar-winning tale of a Mumbai teen's rise from poverty|HBO Pride & Prejudice|2005|Visually stunning adaptation of Jane Austen's classic romance|Netflix"
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Dickens Adaptations on Screen",
+      "Child Protagonists in Period Films",
+      "Roman Polanski's Literary Adaptations",
+      "Victorian London in Cinema",
+      "Social Realism in Period Dramas"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "David Copperfield",
+          "year": 1999,
+          "slug": "BBC adaptation starring Daniel Radcliffe and Maggie Smith",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": null
+        },
+        {
+          "title": "Little Dorrit",
+          "year": 2008,
+          "slug": "Acclaimed BBC miniseries of Dickens' prison tale",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "PBS",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Personal History of David Copperfield",
+          "year": 2019,
+          "slug": "Dev Patel stars in Armando Iannucci's fresh take on Dickens",
+          "poster": "https://image.tmdb.org/t/p/w500/2epgo9k2Jrs7qrTL1Rork1mDSKT.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 520900,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2epgo9k2Jrs7qrTL1Rork1mDSKT.jpg"
+        },
+        {
+          "title": "Great Expectations",
+          "year": 1998,
+          "slug": "Modern update with Ethan Hawke and Gwyneth Paltrow",
+          "poster": "https://image.tmdb.org/t/p/w500/djLsfl3lm7BZKWsKfVZ2wM1ZMrP.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 9410,
+          "poster_url": "https://image.tmdb.org/t/p/w500/djLsfl3lm7BZKWsKfVZ2wM1ZMrP.jpg"
+        },
+        {
+          "title": "Oliver!",
+          "year": 1968,
+          "slug": "Musical adaptation winning 6 Academy Awards",
+          "poster": "https://image.tmdb.org/t/p/w500/1XJgoaOWKrqxkKeBKWLKSigqG8c.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 17917,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1XJgoaOWKrqxkKeBKWLKSigqG8c.jpg"
+        },
+        {
+          "title": "Hard Times",
+          "year": 1994,
+          "slug": "Alan Bates stars in adaptation of Dickens' industrial novel",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": null
+        },
+        {
+          "title": "A Tale of Two Cities",
+          "year": 1980,
+          "slug": "TV movie of Dickens' French Revolution epic",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Acorn",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Old Curiosity Shop",
+          "year": 2007,
+          "slug": "Derek Jacobi stars in dark Dickens adaptation",
+          "poster": "https://image.tmdb.org/t/p/w500/khLHtUwkieeuOcx2wt3twHcOpXj.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 34873,
+          "poster_url": "https://image.tmdb.org/t/p/w500/khLHtUwkieeuOcx2wt3twHcOpXj.jpg"
+        },
+        {
+          "title": "Bleak House",
+          "year": 2005,
+          "slug": "Gillian Anderson in BBC's acclaimed series",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "PBS",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Mystery of Edwin Drood",
+          "year": 2012,
+          "slug": "Matthew Rhys in unfinished Dickens thriller",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "PBS",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

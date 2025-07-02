@@ -1,0 +1,179 @@
+{
+  "props": {
+    "title": "Pretty Woman",
+    "year": 1990,
+    "initialSlug": "She came. She shopped. She conquered.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/hVHUfT801LQATGd26VPzhorIYza.jpg",
+    "initialStreaming": null,
+    "tmdbId": 114,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Pretty Woman** (1990) revolutionized the romantic comedy genre by modernizing the Cinderella story through the lens of 1990s capitalism. Julia Roberts' star-making performance as Vivian Ward brought depth and humanity to what could have been a one-dimensional character, while Richard Gere's controlled portrayal of Edward Lewis showed the subtle transformation of a corporate raider rediscovering his heart. The film's massive success ($463 million worldwide) spawned countless imitators, but none matched director Garry Marshall's deft balance of comedy, romance, and social commentary."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Working Girl",
+            "year": 1988,
+            "slug": "A secretary from Staten Island poses as her boss to make deals and find love in Manhattan's corporate world",
+            "poster": "https://image.tmdb.org/t/p/w500/q2jfFzZvAzjTaArQR0tjilIZ5aJ.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 3525,
+            "poster_url": "https://image.tmdb.org/t/p/w500/q2jfFzZvAzjTaArQR0tjilIZ5aJ.jpg"
+          },
+          {
+            "title": "Breakfast at Tiffany's",
+            "year": 1961,
+            "slug": "A sophisticated call girl falls for a struggling writer in New York City",
+            "poster": "https://image.tmdb.org/t/p/w500/79xm4gXw4l7A5D0XukUOJRocFYQ.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 164,
+            "poster_url": "https://image.tmdb.org/t/p/w500/79xm4gXw4l7A5D0XukUOJRocFYQ.jpg"
+          },
+          {
+            "title": "Maid in Manhattan",
+            "year": 2002,
+            "slug": "A hotel maid is mistaken for a wealthy socialite by a politician who falls for her",
+            "poster": "https://image.tmdb.org/t/p/w500/gnEuTYH3jhHxl80QyoPfZjEYd0J.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 7303,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gnEuTYH3jhHxl80QyoPfZjEYd0J.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends beyond its Cinderella narrative into fashion and popular culture. The shopping montage on Rodeo Drive became instantly iconic, with costume designer Marilyn Vance creating looks that defined early 90s glamour. This sequence directly inspired similar scenes in **Clueless** (1995), **13 Going on 30** (2004), and **The Devil Wears Prada** (2006), establishing shopping as a transformational character device in modern cinema."
+      },
+      {
+        "type": "text",
+        "content": "The film's success also marked a turning point for the romantic comedy genre. While earlier films like **When Harry Met Sally** (1989) focused on friendship evolving into love, **Pretty Woman** brought back the fairy tale element with a modern edge. This paved the way for aspirational romcoms like **Notting Hill** (1999) and **Sweet Home Alabama** (2002), where class differences and personal transformation drive the narrative. SUBHEAD: The Evolution of the Modern Romantic Comedy"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Notting Hill",
+            "year": 1999,
+            "slug": "A London bookshop owner's life changes when he falls for a famous American actress",
+            "poster": "https://image.tmdb.org/t/p/w500/hHRIf2XHeQMbyRb3HUx19SF5Ujw.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 509,
+            "poster_url": "https://image.tmdb.org/t/p/w500/hHRIf2XHeQMbyRb3HUx19SF5Ujw.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Pretty Woman** established key elements that became romantic comedy staples: the makeover sequence, the fish-out-of-water scenario, and the climactic grand gesture. These tropes influenced films like **She's All That** (1999), **Miss Congeniality** (2000), and **The Proposal** (2009). The film's success also proved that romantic comedies could tackle serious themes while maintaining broad audience appeal, influencing later works like **Bridget Jones's Diary** (2001) and **Crazy Rich Asians** (2018)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Julia Roberts' Career: From Pretty Woman to Erin Brockovich",
+      "Fashion in Film: How Pretty Woman Influenced 90s Style",
+      "The Cinderella Story in Modern Cinema",
+      "Garry Marshall's Impact on Romantic Comedies",
+      "Class Commentary in Romance Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Sabrina",
+          "year": 1954,
+          "slug": "A chauffeur's daughter falls for two wealthy brothers",
+          "poster": "https://image.tmdb.org/t/p/w500/8vvgKw3DbEPNlJAdHe7xXzhb2gN.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 6620,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8vvgKw3DbEPNlJAdHe7xXzhb2gN.jpg"
+        },
+        {
+          "title": "My Fair Lady",
+          "year": 1964,
+          "slug": "A phonetics professor transforms a Cockney flower girl into a lady",
+          "poster": "https://image.tmdb.org/t/p/w500/bTXVc29lGSNclf94VIZ49W4gGKl.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 11113,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bTXVc29lGSNclf94VIZ49W4gGKl.jpg"
+        },
+        {
+          "title": "Ever After",
+          "year": 1998,
+          "slug": "A realistic retelling of Cinderella set in Renaissance France",
+          "poster": "https://image.tmdb.org/t/p/w500/9TspO5dThMBioF0DFrvy6YqrngH.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9454,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9TspO5dThMBioF0DFrvy6YqrngH.jpg"
+        },
+        {
+          "title": "Runaway Bride",
+          "year": 1999,
+          "slug": "A reporter investigates a woman who repeatedly leaves men at the altar",
+          "poster": "https://image.tmdb.org/t/p/w500/wzivR0yWJStVdhcl0A5rQvVdTQ7.jpg",
+          "initialStreaming": "Amazon",
+          "tmdb_id": 4806,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wzivR0yWJStVdhcl0A5rQvVdTQ7.jpg"
+        },
+        {
+          "title": "The Princess Diaries",
+          "year": 2001,
+          "slug": "An awkward teenager discovers she's heir to a European throne",
+          "poster": "https://image.tmdb.org/t/p/w500/wA4lgl8gmoICSShviCkEB61nIBB.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9880,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wA4lgl8gmoICSShviCkEB61nIBB.jpg"
+        },
+        {
+          "title": "Sweet Home Alabama",
+          "year": 2002,
+          "slug": "A fashion designer must confront her past before marrying into high society",
+          "poster": "https://image.tmdb.org/t/p/w500/698cbxq0SRwCdOPG5Bwi7JDk12d.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 11529,
+          "poster_url": "https://image.tmdb.org/t/p/w500/698cbxq0SRwCdOPG5Bwi7JDk12d.jpg"
+        },
+        {
+          "title": "Two Weeks Notice",
+          "year": 2002,
+          "slug": "A millionaire businessman depends too much on his capable lawyer",
+          "poster": "https://image.tmdb.org/t/p/w500/r18hSGAcxWiUysbX6nFShIZyjjP.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 2642,
+          "poster_url": "https://image.tmdb.org/t/p/w500/r18hSGAcxWiUysbX6nFShIZyjjP.jpg"
+        },
+        {
+          "title": "The Devil Wears Prada",
+          "year": 2006,
+          "slug": "An aspiring journalist becomes assistant to a demanding fashion editor",
+          "poster": "https://image.tmdb.org/t/p/w500/8912AsVuS7Sj915apArUFbv6F9L.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 350,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8912AsVuS7Sj915apArUFbv6F9L.jpg"
+        },
+        {
+          "title": "Bride and Prejudice",
+          "year": 2004,
+          "slug": "A modern Bollywood take on Pride and Prejudice",
+          "poster": "https://image.tmdb.org/t/p/w500/yqqo00GZqyG0dijKCqBbdQLUvht.jpg",
+          "initialStreaming": "Amazon",
+          "tmdb_id": 57825,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yqqo00GZqyG0dijKCqBbdQLUvht.jpg"
+        },
+        {
+          "title": "27 Dresses",
+          "year": 2008,
+          "slug": "A perpetual bridesmaid questions her own romantic future",
+          "poster": "https://image.tmdb.org/t/p/w500/rEfourJfgEyKiewwH8ZkUYt9AqE.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 6557,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rEfourJfgEyKiewwH8ZkUYt9AqE.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

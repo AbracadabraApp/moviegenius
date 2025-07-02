@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "Penelope",
+    "year": 2006,
+    "initialSlug": "Curse, love, and the power to change.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/stsGbgMhDo3VjLLsrbeiz0fuj8d.jpg",
+    "initialStreaming": null,
+    "tmdbId": 7985,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Penelope** (2006) reimagines fairy tale tropes through a modern lens, following a cursed young woman born with a pig's snout who can only break free when \"one of her own kind\" accepts her. Christina Ricci's nuanced performance anchors this whimsical romance that shares DNA with **Beauty and the Beast** (1991) and **Edward Scissorhands** (1990). The film cleverly subverts expectations by focusing on self-acceptance rather than traditional transformation narratives, placing it alongside other unconventional fairy tales like **Ella Enchanted** (2004) and **Stardust** (2007)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Shape of Water",
+            "year": 2017,
+            "slug": "A mute janitor falls in love with an amphibian creature in this Oscar-winning fairy tale for adults",
+            "poster": "https://image.tmdb.org/t/p/w500/9zfwPffUXpBrEP26yp0q1ckXDcj.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 399055,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9zfwPffUXpBrEP26yp0q1ckXDcj.jpg"
+          },
+          {
+            "title": "Big Fish",
+            "year": 2003,
+            "slug": "Tim Burton's magical realist story about a father's fantastical life stories and the son trying to separate fact from fiction",
+            "poster": "https://image.tmdb.org/t/p/w500/tjK063yCgaBAluVU72rZ6PKPH2l.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 587,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tjK063yCgaBAluVU72rZ6PKPH2l.jpg"
+          },
+          {
+            "title": "Amélie",
+            "year": 2001,
+            "slug": "A whimsical French romance about a shy waitress secretly improving others' lives while finding her own happiness",
+            "poster": "https://image.tmdb.org/t/p/w500/oTKduWL2tpIKEmkAqF4mFEAWAsv.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 194,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oTKduWL2tpIKEmkAqF4mFEAWAsv.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The mid-2000s saw a surge of modern fairy tale adaptations that challenged traditional beauty standards and \"true love\" narratives. **Enchanted** (2007) brought Disney princesses into contemporary New York, while **The Princess and the Frog** (2009) reimagined classic themes through a hardworking New Orleans chef. **Penelope** stands out for addressing body image and self-worth directly, predating similar themes in films like **Brave** (2012) and **Maleficent** (2014). SUBHEAD: Gothic Romance Meets Modern Comedy"
+      },
+      {
+        "type": "text",
+        "content": "Director Mark Palansky infuses **Penelope** with touches of gothic romance reminiscent of **Corpse Bride** (2005) and **The Phantom of the Opera** (2004), but lightens the mood with contemporary humor and James McAvoy's charming performance. The film's Victorian-meets-modern aesthetic influenced later fairy tale adaptations like **Mirror Mirror** (2012) and **Snow White and the Huntsman** (2012), though **Penelope** maintains a more intimate, character-driven approach."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Fairy Tale Adaptations in Modern Cinema",
+      "Christina Ricci's Career in Gothic and Fantasy Films",
+      "Visual Design in Contemporary Fairy Tales",
+      "Self-Acceptance Themes in Fantasy Cinema",
+      "The Impact of Tim Burton's Aesthetic on Modern Fantasy"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Ever After",
+          "year": 1998,
+          "slug": "A realistic take on Cinderella starring Drew Barrymore",
+          "poster": "https://image.tmdb.org/t/p/w500/9TspO5dThMBioF0DFrvy6YqrngH.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9454,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9TspO5dThMBioF0DFrvy6YqrngH.jpg"
+        },
+        {
+          "title": "The Brothers Grimm",
+          "year": 2005,
+          "slug": "Fantasy adventure about the famous fairy tale collectors",
+          "poster": "https://image.tmdb.org/t/p/w500/v6J7QGCSrtvwvqAt6783BbO3h61.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 4442,
+          "poster_url": "https://image.tmdb.org/t/p/w500/v6J7QGCSrtvwvqAt6783BbO3h61.jpg"
+        },
+        {
+          "title": "Lady in the Water",
+          "year": 2006,
+          "slug": "M. Night Shyamalan's modern fairy tale about a mysterious water nymph",
+          "poster": "https://image.tmdb.org/t/p/w500/ddNmoSy1Jd3PBF5XDZvrrBIfrja.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 9697,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ddNmoSy1Jd3PBF5XDZvrrBIfrja.jpg"
+        },
+        {
+          "title": "MirrorMask",
+          "year": 2005,
+          "slug": "Neil Gaiman's surreal fantasy about a young girl's journey through a magical realm",
+          "poster": "https://image.tmdb.org/t/p/w500/itIJU3NKbdgScA1WPIxXzOlm0Uj.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 14517,
+          "poster_url": "https://image.tmdb.org/t/p/w500/itIJU3NKbdgScA1WPIxXzOlm0Uj.jpg"
+        },
+        {
+          "title": "The Fall",
+          "year": 2006,
+          "slug": "Visually stunning fantasy about a hospitalized girl's imagination",
+          "poster": "https://image.tmdb.org/t/p/w500/jUx4P4Q1VsQ07rLz7sOlSyNm4F3.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 14784,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jUx4P4Q1VsQ07rLz7sOlSyNm4F3.jpg"
+        },
+        {
+          "title": "Coraline",
+          "year": 2009,
+          "slug": "Dark fantasy animation about a girl discovering a parallel world",
+          "poster": "https://image.tmdb.org/t/p/w500/4jeFXQYytChdZYE9JYO7Un87IlW.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 14836,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4jeFXQYytChdZYE9JYO7Un87IlW.jpg"
+        },
+        {
+          "title": "The Secret Garden",
+          "year": 1993,
+          "slug": "Magical realist adaptation of the classic novel",
+          "poster": "https://image.tmdb.org/t/p/w500/zf6h5dJ7wVG7LqMO9dhHGHVejzj.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 11236,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zf6h5dJ7wVG7LqMO9dhHGHVejzj.jpg"
+        },
+        {
+          "title": "The City of Lost Children",
+          "year": 1995,
+          "slug": "Surreal French fantasy about stolen dreams",
+          "poster": "https://image.tmdb.org/t/p/w500/whwT3Q9JxbAYzEc3t7uYYcCbTMf.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 902,
+          "poster_url": "https://image.tmdb.org/t/p/w500/whwT3Q9JxbAYzEc3t7uYYcCbTMf.jpg"
+        },
+        {
+          "title": "Pan's Labyrinth",
+          "year": 2006,
+          "slug": "Dark fairy tale set against Spanish Civil War backdrop",
+          "poster": "https://image.tmdb.org/t/p/w500/s8C4whhKtDaJvMDcyiMvx3BIF5F.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 1417,
+          "poster_url": "https://image.tmdb.org/t/p/w500/s8C4whhKtDaJvMDcyiMvx3BIF5F.jpg"
+        },
+        {
+          "title": "Spirited Away",
+          "year": 2001,
+          "slug": "Studio Ghibli's enchanting tale of a girl in a spirit world",
+          "poster": "https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 129,
+          "poster_url": "https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

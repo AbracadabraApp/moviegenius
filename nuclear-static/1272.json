@@ -1,0 +1,179 @@
+{
+  "props": {
+    "title": "Sunshine",
+    "year": 2007,
+    "initialSlug": "A dying Sun. Eight astronauts. One final chance.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/8kX6xmEwz0RpEJkeWjXTkxbOCAp.jpg",
+    "initialStreaming": null,
+    "tmdbId": 1272,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Danny Boyle's **Sunshine** (2007) stands as one of sci-fi's most visually stunning space missions. The film follows eight astronauts on a desperate voyage to reignite our dying sun, combining the claustrophobic tension of **Alien** (1979) with the philosophical weight of **Solaris** (1972). Boyle and cinematographer Alwin Küchler create a mesmerizing dance of light and shadow, using the sun itself as both savior and antagonist. The film's first two acts deliver pristine hard sci-fi reminiscent of **2001: A Space Odyssey** (1968), before pivoting into psychological horror territory."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Event Horizon",
+            "year": 1997,
+            "slug": "A rescue crew investigates a spaceship that disappeared into a black hole and has now returned...with someone or something new on-board",
+            "poster": "https://image.tmdb.org/t/p/w500/cHoeg3gAD5w63Et5DImY1Jb7HaO.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 8413,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cHoeg3gAD5w63Et5DImY1Jb7HaO.jpg"
+          },
+          {
+            "title": "Moon",
+            "year": 2009,
+            "slug": "An astronaut mining worker nearing the end of his solitary 3-year shift on the moon encounters a personal crisis",
+            "poster": "https://image.tmdb.org/t/p/w500/35IU0Mq0zFsN1mYwDGts5mKc77n.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 17431,
+            "poster_url": "https://image.tmdb.org/t/p/w500/35IU0Mq0zFsN1mYwDGts5mKc77n.jpg"
+          },
+          {
+            "title": "Solaris",
+            "year": 1972,
+            "slug": "A psychologist is sent to a station orbiting a distant planet in order to discover what has caused the crew to go insane",
+            "poster": "https://image.tmdb.org/t/p/w500/rXPWl3hBbzivmeCEbMD3LwV2Ada.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 593,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rXPWl3hBbzivmeCEbMD3LwV2Ada.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's exceptional cast, led by Cillian Murphy, creates a palpable sense of isolation and mounting dread. Like **High Life** (2018) and **Aniara** (2018), **Sunshine** explores how space's infinite void affects human psychology. The crew's debates about sacrificing lives for the greater good echo moral dilemmas found in **Deep Impact** (1998), while the stunning visual effects of the Icarus II's shield reflecting solar radiation set new standards for space cinematography."
+      },
+      {
+        "type": "text",
+        "content": "Alex Garland's screenplay masterfully builds tension through scientific accuracy before embracing more metaphysical themes. The film's controversial third act shift mirrors similar genre-bending moments in **Pandorum** (2009) and **Life** (2017). While some critics found this jarring, it effectively portrays how prolonged exposure to the sun's raw power drives humans to madness, similar to the cosmic horror of **The Black Hole** (1979). SUBHEAD: Visual and Technical Innovation"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Ad Astra",
+            "year": 2019,
+            "slug": "An astronaut undertakes a mission across an unforgiving solar system to uncover the truth about his missing father",
+            "poster": "https://image.tmdb.org/t/p/w500/xBHvZcjRiWyobQ9kxBhO6B2dtRI.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 419704,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xBHvZcjRiWyobQ9kxBhO6B2dtRI.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Sunshine** revolutionized how films depict space travel through its innovative use of practical effects and CGI. The golden spacesuits, designed to reflect the sun's deadly rays, became iconic sci-fi imagery, influencing later films like **Prometheus** (2012) and **Interstellar** (2014). The film's representation of the sun as an almost supernatural force prefigured later space survival films like **Gravity** (2013), where natural phenomena become antagonists."
+      }
+    ],
+    "exploreFurther": [
+      "The Science Behind Sunshine: Solar Physics and Space Travel",
+      "Danny Boyle's Genre-Blending Techniques",
+      "Religious Symbolism in Space Cinema",
+      "The Evolution of Space Horror Films",
+      "Visual Effects Innovation in Modern Sci-Fi"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "2001: A Space Odyssey",
+          "year": 1968,
+          "slug": "Humanity finds a mysterious artifact buried on the moon and sets off to find its origins",
+          "poster": "https://image.tmdb.org/t/p/w500/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 62,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg"
+        },
+        {
+          "title": "Silent Running",
+          "year": 1972,
+          "slug": "In a future where all flora is extinct on Earth, an astronaut is given orders to destroy the last of Earth's botany",
+          "poster": "https://image.tmdb.org/t/p/w500/ahasZ5HILZHtlrl6cbXgpfk0y8H.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 811,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ahasZ5HILZHtlrl6cbXgpfk0y8H.jpg"
+        },
+        {
+          "title": "Alien",
+          "year": 1979,
+          "slug": "A commercial space crew encounters a deadly stowaway on their return voyage",
+          "poster": "https://image.tmdb.org/t/p/w500/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 348,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg"
+        },
+        {
+          "title": "The Black Hole",
+          "year": 1979,
+          "slug": "A research vessel finds a missing ship, commanded by a mysterious scientist, on the edge of a black hole",
+          "poster": "https://image.tmdb.org/t/p/w500/92fghstMdnJQPxoqWPGtRhbUb8G.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9570,
+          "poster_url": "https://image.tmdb.org/t/p/w500/92fghstMdnJQPxoqWPGtRhbUb8G.jpg"
+        },
+        {
+          "title": "Outland",
+          "year": 1981,
+          "slug": "A federal marshal on an outpost on Jupiter's moon discovers a drug conspiracy",
+          "poster": "https://image.tmdb.org/t/p/w500/4pGDri4scooTHWkTfoIf1p2Hh32.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 10540,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4pGDri4scooTHWkTfoIf1p2Hh32.jpg"
+        },
+        {
+          "title": "Europa Report",
+          "year": 2013,
+          "slug": "A contemporary space exploration film documenting the fictional first manned mission to Europa",
+          "poster": "https://image.tmdb.org/t/p/w500/tbsfaBjiAW5vfrV06R8KCOzVOYy.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 174772,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tbsfaBjiAW5vfrV06R8KCOzVOYy.jpg"
+        },
+        {
+          "title": "Gravity",
+          "year": 2013,
+          "slug": "A medical engineer and an astronaut work together to survive after an accident leaves them adrift in space",
+          "poster": "https://image.tmdb.org/t/p/w500/kZ2nZw8D681aphje8NJi8EfbL1U.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 49047,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kZ2nZw8D681aphje8NJi8EfbL1U.jpg"
+        },
+        {
+          "title": "Interstellar",
+          "year": 2014,
+          "slug": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival",
+          "poster": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 157336,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+        },
+        {
+          "title": "The Martian",
+          "year": 2015,
+          "slug": "An astronaut becomes stranded on Mars and must rely on his ingenuity to survive",
+          "poster": "https://image.tmdb.org/t/p/w500/3ndAx3weG6KDkJIRMCi5vXX6Dyb.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 286217,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3ndAx3weG6KDkJIRMCi5vXX6Dyb.jpg"
+        },
+        {
+          "title": "First Man",
+          "year": 2018,
+          "slug": "A biopic focusing on Neil Armstrong and the legendary space mission that led him to become the first man to walk on the Moon",
+          "poster": "https://image.tmdb.org/t/p/w500/i91mfvFcPPlaegcbOyjGgiWfZzh.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 369972,
+          "poster_url": "https://image.tmdb.org/t/p/w500/i91mfvFcPPlaegcbOyjGgiWfZzh.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

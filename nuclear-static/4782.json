@@ -1,0 +1,186 @@
+{
+  "props": {
+    "title": "Heart of Darkness",
+    "year": 1993,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/qfDNlCNsq03fYVnWOU6P9XZWlQG.jpg",
+    "initialStreaming": null,
+    "tmdbId": 4782,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Nicolas Roeg's **Heart of Darkness** (1993) adapts Joseph Conrad's legendary novella with John Malkovich delivering a haunting performance as Kurtz. While less known than **Apocalypse Now** (1979), which famously transported Conrad's story to Vietnam, Roeg's version stays closer to the source material's colonial African setting. The film shares DNA with other colonial-era psychological thrillers like **The Mission** (1986) and **Mountains of the Moon** (1990), diving deep into the darkness of European imperialism."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Heart of Darkness",
+            "year": 1993,
+            "slug": "John Malkovich stars in this faithful adaptation of Conrad's novella about a sailor's journey into colonial Africa",
+            "poster": "https://image.tmdb.org/t/p/w500/qfDNlCNsq03fYVnWOU6P9XZWlQG.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 4782,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qfDNlCNsq03fYVnWOU6P9XZWlQG.jpg"
+          },
+          {
+            "title": "Apocalypse Now",
+            "year": 1979,
+            "slug": "Francis Ford Coppola's Vietnam War epic inspired by Heart of Darkness",
+            "poster": "https://image.tmdb.org/t/p/w500/gQB8Y5RCMkv2zwzFHbUJX3kAhvA.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 28,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gQB8Y5RCMkv2zwzFHbUJX3kAhvA.jpg"
+          },
+          {
+            "title": "The Mission",
+            "year": 1986,
+            "slug": "Robert De Niro leads this story of Jesuit missionaries in colonial South America",
+            "poster": "https://image.tmdb.org/t/p/w500/6K9cG6LOOtySZF4D4xBu1MApC1N.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 11416,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6K9cG6LOOtySZF4D4xBu1MApC1N.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The colonial journey into madness became a powerful template for later films. **The Beach** (2000) transported similar themes to modern Thailand, while **Embrace of the Serpent** (2015) flipped the perspective to indigenous viewpoints. Roeg's signature disorienting style, perfected in films like **Don't Look Now** (1973), serves the hallucinatory narrative perfectly. Tim Roth as Marlow provides our increasingly unreliable window into this world of moral decay."
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends beyond direct adaptations. Werner Herzog's **Aguirre, the Wrath of God** (1972) and **Fitzcarraldo** (1982) explore similar territory of European hubris in foreign lands. More recently, **The Lost City of Z** (2016) and **Kong: Skull Island** (2017) draw from the same well of jungle-bound psychological deterioration. SUBHEAD: Visual and Psychological Horror"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Aguirre, the Wrath of God",
+            "year": 1972,
+            "slug": "Klaus Kinski stars in Herzog's masterpiece about a doomed Spanish expedition",
+            "poster": "https://image.tmdb.org/t/p/w500/qMk93yMo82svW27FEjudgueBMUL.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 2000,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qMk93yMo82svW27FEjudgueBMUL.jpg"
+          },
+          {
+            "title": "Embrace of the Serpent",
+            "year": 2015,
+            "slug": "Colombian film about an Amazonian shaman's encounters with Western explorers",
+            "poster": "https://image.tmdb.org/t/p/w500/t3Lmw8jvm7tpik0lSkub8hU4oRW.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 336808,
+            "poster_url": "https://image.tmdb.org/t/p/w500/t3Lmw8jvm7tpik0lSkub8hU4oRW.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Roeg's version distinguishes itself through nightmarish imagery that rivals **Apocalypse Now** (1979) for pure psychological horror. The director's background in cinematography shows in every frame, creating a feverish atmosphere that later influenced films like **The Proposition** (2005) and **Ravenous** (1999) in their exploration of colonial violence and moral corruption."
+      }
+    ],
+    "exploreFurther": [
+      "Conrad's Heart of Darkness and its multiple film adaptations across decades",
+      "Nicolas Roeg's unique visual style and its influence on psychological thrillers",
+      "Colonial-era films and their treatment of imperialism",
+      "The evolution of Heart of Darkness's themes in modern cinema",
+      "Psychological horror in historical settings"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Mission",
+          "year": 1986,
+          "slug": "Jesuit missionaries face moral choices in colonial South America",
+          "poster": "https://image.tmdb.org/t/p/w500/6K9cG6LOOtySZF4D4xBu1MApC1N.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 11416,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6K9cG6LOOtySZF4D4xBu1MApC1N.jpg"
+        },
+        {
+          "title": "Mountains of the Moon",
+          "year": 1990,
+          "slug": "Story of Burton and Speke's search for the Nile's source",
+          "poster": "https://image.tmdb.org/t/p/w500/uWWrigxf4yU1WmaTkxg3qYNMezG.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 33796,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uWWrigxf4yU1WmaTkxg3qYNMezG.jpg"
+        },
+        {
+          "title": "Fitzcarraldo",
+          "year": 1982,
+          "slug": "Herzog's epic about a man attempting to build an opera house in the Amazon",
+          "poster": "https://image.tmdb.org/t/p/w500/oBCnYEKcg1rMhr5JjDnrRpilvDd.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 9343,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oBCnYEKcg1rMhr5JjDnrRpilvDd.jpg"
+        },
+        {
+          "title": "The Lost City of Z",
+          "year": 2016,
+          "slug": "True story of Percy Fawcett's Amazon exploration",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": null
+        },
+        {
+          "title": "Apocalypse Now Redux",
+          "year": 2001,
+          "slug": "Extended cut of Coppola's Vietnam epic",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Beach",
+          "year": 2000,
+          "slug": "DiCaprio stars in adaptation of Alex Garland's novel",
+          "poster": "https://image.tmdb.org/t/p/w500/4y7LxD8TSi6AtsM2xSYqUm1gu7u.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 1907,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4y7LxD8TSi6AtsM2xSYqUm1gu7u.jpg"
+        },
+        {
+          "title": "Don't Look Now",
+          "year": 1973,
+          "slug": "Roeg's psychological thriller set in Venice",
+          "poster": "https://image.tmdb.org/t/p/w500/mq3TW9GiF9MNlIEjnlL7D9X9tbx.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 931,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mq3TW9GiF9MNlIEjnlL7D9X9tbx.jpg"
+        },
+        {
+          "title": "The Proposition",
+          "year": 2005,
+          "slug": "Nick Cave-penned Australian western about colonial violence",
+          "poster": "https://image.tmdb.org/t/p/w500/bbSHSJuO5XjrIKMh6QXXLTg3Yzr.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 16608,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bbSHSJuO5XjrIKMh6QXXLTg3Yzr.jpg"
+        },
+        {
+          "title": "Ravenous",
+          "year": 1999,
+          "slug": "Cannibalistic horror set in 19th century frontier",
+          "poster": "https://image.tmdb.org/t/p/w500/6tJc9vIVYctNCajC1dU1oVcmIsD.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 10212,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6tJc9vIVYctNCajC1dU1oVcmIsD.jpg"
+        },
+        {
+          "title": "Lord Jim",
+          "year": 1965,
+          "slug": "Another Conrad adaptation starring Peter O'Toole",
+          "poster": "https://image.tmdb.org/t/p/w500/hgoxcPLJYYqDIlFDl7pnndcm9MT.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 11387,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hgoxcPLJYYqDIlFDl7pnndcm9MT.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,179 @@
+{
+  "props": {
+    "title": "Hercules",
+    "year": 2014,
+    "initialSlug": "Demigod turned mercenary fights to reclaim his legend",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/dK9rNoC97tgX3xXg5zdxFisdfcp.jpg",
+    "initialStreaming": null,
+    "tmdbId": 11970,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Hercules** (2014) reimagines the mythological hero as a mercenary commander leading a band of skilled warriors, stripping away the supernatural elements to present a more grounded take. Unlike Disney's animated **Hercules** (1997) or the campy **Hercules: The Legendary Journeys** (1995-1999), Brett Ratner's version stars Dwayne Johnson as a pragmatic soldier who leverages his legendary status for profit. This approach follows a trend of demystifying ancient myths seen in **Troy** (2004) and **Immortals** (2011), where gods and monsters give way to political intrigue and military strategy."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "300",
+            "year": 2006,
+            "slug": "Stylized retelling of the Battle of Thermopylae, featuring Gerard Butler as King Leonidas leading 300 Spartans against the Persian army",
+            "poster": "https://image.tmdb.org/t/p/w500/h7Lcio0c9ohxPhSZg42eTlKIVVY.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 1271,
+            "poster_url": "https://image.tmdb.org/t/p/w500/h7Lcio0c9ohxPhSZg42eTlKIVVY.jpg"
+          },
+          {
+            "title": "Gladiator",
+            "year": 2000,
+            "slug": "Russell Crowe stars as a Roman general forced into gladiatorial combat, seeking revenge against a corrupt emperor",
+            "poster": "https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 98,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg"
+          },
+          {
+            "title": "Clash of the Titans",
+            "year": 2010,
+            "slug": "Perseus must battle mythological monsters to save humanity from the gods' wrath",
+            "poster": "https://image.tmdb.org/t/p/w500/3W6QaC3Vz8UJhr6HRYuGfbNeJCs.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 18823,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3W6QaC3Vz8UJhr6HRYuGfbNeJCs.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's action sequences draw heavily from the visceral combat style popularized by **300** (2006), emphasizing practical effects and brutal hand-to-hand fighting over CGI spectacle. Johnson's portrayal builds on the physical presence demanded by sword-and-sandal epics like **Conan the Barbarian** (1982), while incorporating modern military tactics that would influence later historical action films like **King Arthur: Legend of the Sword** (2017)."
+      },
+      {
+        "type": "text",
+        "content": "This version of Hercules explores themes of truth versus legend, questioning how myths are created and manipulated - a concept also central to **Alexander** (2004) and **Kingdom of Heaven** (2005). The film's treatment of ancient Greek warfare and mercenary culture shows remarkable attention to historical detail, even as it takes creative liberties with the source material. SUBHEAD: The Evolution of Mythological Action Films"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Immortals",
+            "year": 2011,
+            "slug": "Visually stunning interpretation of Greek mythology following Theseus in his battle against King Hyperion",
+            "poster": "https://image.tmdb.org/t/p/w500/4SPPX5KIyaQ9O8n5rLvvUIiIhpF.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 37958,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4SPPX5KIyaQ9O8n5rLvvUIiIhpF.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Hercules** (2014) represents a pivotal shift in how Hollywood approaches classical mythology. While films like **Clash of the Titans** (2010) and **Wrath of the Titans** (2012) relied heavily on CGI monsters and divine intervention, Ratner's film emphasizes human drama and military action. This trend continued with **Gods of Egypt** (2016) and **The Legend of Hercules** (2014), though neither achieved the same balance of spectacle and historical authenticity."
+      }
+    ],
+    "exploreFurther": [
+      "The Historical Accuracy of Ancient Greek Warfare in Modern Cinema",
+      "The Evolution of Dwayne Johnson's Action Hero Persona",
+      "Demythologizing Classical Heroes in Contemporary Film",
+      "The Influence of 300 on Historical Action Cinematography",
+      "Greek Mythology in Modern Cinema: Adaptation Techniques"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Troy",
+          "year": 2004,
+          "slug": "Brad Pitt stars in this adaptation of Homer's Iliad",
+          "poster": "https://image.tmdb.org/t/p/w500/a07wLy4ONfpsjnBqMwhlWTJTcm.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 652,
+          "poster_url": "https://image.tmdb.org/t/p/w500/a07wLy4ONfpsjnBqMwhlWTJTcm.jpg"
+        },
+        {
+          "title": "Ben-Hur",
+          "year": 1959,
+          "slug": "Epic historical drama following a Jewish prince seeking revenge",
+          "poster": "https://image.tmdb.org/t/p/w500/m4WQ1dBIrEIHZNCoAjdpxwSKWyH.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 665,
+          "poster_url": "https://image.tmdb.org/t/p/w500/m4WQ1dBIrEIHZNCoAjdpxwSKWyH.jpg"
+        },
+        {
+          "title": "The Last Legion",
+          "year": 2007,
+          "slug": "Roman adventure following the last emperor of Rome",
+          "poster": "https://image.tmdb.org/t/p/w500/k2jaEoOsTEMqSskBJm3gfcuxNEc.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 9703,
+          "poster_url": "https://image.tmdb.org/t/p/w500/k2jaEoOsTEMqSskBJm3gfcuxNEc.jpg"
+        },
+        {
+          "title": "Pompeii",
+          "year": 2014,
+          "slug": "Gladiator romance set against the eruption of Mount Vesuvius",
+          "poster": "https://image.tmdb.org/t/p/w500/dxxM3lLDjGRC50i5rhvfQziskAN.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 76649,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dxxM3lLDjGRC50i5rhvfQziskAN.jpg"
+        },
+        {
+          "title": "The Eagle",
+          "year": 2011,
+          "slug": "Roman soldier searches for lost legion north of Hadrian's Wall",
+          "poster": "https://image.tmdb.org/t/p/w500/e7rcJQWplGZWz57yGlP87rlPmI.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 49494,
+          "poster_url": "https://image.tmdb.org/t/p/w500/e7rcJQWplGZWz57yGlP87rlPmI.jpg"
+        },
+        {
+          "title": "Centurion",
+          "year": 2010,
+          "slug": "Roman soldiers fight for survival behind enemy lines",
+          "poster": "https://image.tmdb.org/t/p/w500/9ZdfrcP2QCqoRSk7JF06tDWtrhP.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 23759,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9ZdfrcP2QCqoRSk7JF06tDWtrhP.jpg"
+        },
+        {
+          "title": "Alexander",
+          "year": 2004,
+          "slug": "Oliver Stone's epic about Alexander the Great",
+          "poster": "https://image.tmdb.org/t/p/w500/91QR7ReHg4HiY66avTon185bawQ.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 1966,
+          "poster_url": "https://image.tmdb.org/t/p/w500/91QR7ReHg4HiY66avTon185bawQ.jpg"
+        },
+        {
+          "title": "300: Rise of an Empire",
+          "year": 2014,
+          "slug": "Naval battles of the Greco-Persian Wars",
+          "poster": "https://image.tmdb.org/t/p/w500/wYDdWN1McB1Sio4z1dPSkb40Z78.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 53182,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wYDdWN1McB1Sio4z1dPSkb40Z78.jpg"
+        },
+        {
+          "title": "The Scorpion King",
+          "year": 2002,
+          "slug": "Prequel to The Mummy featuring Dwayne Johnson",
+          "poster": "https://image.tmdb.org/t/p/w500/aITIsX20tACn6jgtyDcCYpRT216.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 9334,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aITIsX20tACn6jgtyDcCYpRT216.jpg"
+        },
+        {
+          "title": "Exodus: Gods and Kings",
+          "year": 2014,
+          "slug": "Biblical epic retelling the story of Moses",
+          "poster": "https://image.tmdb.org/t/p/w500/uaDj37JtvLan9tihxZ18e6qL33b.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 147441,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uaDj37JtvLan9tihxZ18e6qL33b.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

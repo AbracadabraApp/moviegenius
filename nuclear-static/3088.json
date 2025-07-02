@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "My Darling Clementine",
+    "year": 1946,
+    "initialSlug": "A legendary showdown awaits.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/o7G5klSt9i8LQZdUNvrWUJbbxAO.jpg",
+    "initialStreaming": null,
+    "tmdbId": 3088,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "John Ford's **My Darling Clementine** (1946) revolutionized the Western by infusing Shakespeare-level dramatic weight into the Wyatt Earp legend. Henry Fonda's portrayal of Earp transforms the typical lawman archetype into a complex figure wrestling with justice and vengeance. The film's influence echoes through later masterpieces like **The Searchers** (1956) and **Unforgiven** (1992), establishing the template for morally ambiguous frontier tales. Ford's use of Monument Valley's stark landscape creates a mythic arena where civilization confronts savagery."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Stagecoach",
+            "year": 1939,
+            "slug": "Ford's earlier Western masterpiece with John Wayne, revolutionizing the genre through complex character dynamics and stunning Monument Valley cinematography",
+            "poster": "https://image.tmdb.org/t/p/w500/zgMnfnwWZ3nkx4t0bUDEKtW24O8.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 995,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zgMnfnwWZ3nkx4t0bUDEKtW24O8.jpg"
+          },
+          {
+            "title": "The Ox-Bow Incident",
+            "year": 1943,
+            "slug": "Henry Fonda leads this dark Western examining mob justice and moral responsibility",
+            "poster": "https://image.tmdb.org/t/p/w500/mAiDUTELbMUJKOTroJLrbYMBk3i.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 980,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mAiDUTELbMUJKOTroJLrbYMBk3i.jpg"
+          },
+          {
+            "title": "Red River",
+            "year": 1948,
+            "slug": "Howard Hawks' epic cattle drive drama starring John Wayne and Montgomery Clift in a father-son power struggle",
+            "poster": "https://image.tmdb.org/t/p/w500/jyNTsAzrIWB441OtvfbgKtx1kFS.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 3089,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jyNTsAzrIWB441OtvfbgKtx1kFS.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's treatment of Doc Holliday (Victor Mature) as a tragic Shakespearean figure influenced countless Western anti-heroes. This sophisticated characterization paved the way for complex antagonists in films like **The Wild Bunch** (1969) and **Once Upon a Time in the West** (1968). Ford's decision to focus on character development over gunfights marked a crucial evolution in Western storytelling, emphasizing psychological drama over simple good-versus-evil narratives."
+      },
+      {
+        "type": "text",
+        "content": "The dance sequence at the church raising remains one of cinema's most poetic moments, demonstrating Ford's genius for mixing social ritual with character development. This technique influenced directors from Sergio Leone to Terrence Malick, particularly visible in **The Assassination of Jesse James by the Coward Robert Ford** (2007) and **Open Range** (2003), where violence and civilization intertwine in similarly meaningful ways. SUBHEAD: The Evolution of the Classic Western"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Fort Apache",
+            "year": 1948,
+            "slug": "Ford's examination of military pride and Native American relations, starring Henry Fonda and John Wayne",
+            "poster": "https://image.tmdb.org/t/p/w500/5PqKsWVlyIFuMeV1UkK6Q9Q8y9k.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 37347,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5PqKsWVlyIFuMeV1UkK6Q9Q8y9k.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**My Darling Clementine** (1946) bridges the gap between early Western adventures and the psychological Westerns of the 1950s. Its influence can be traced through **High Noon** (1952) and **The Man Who Shot Liberty Valance** (1962), establishing the Western as a vehicle for exploring complex moral themes. Ford's attention to historical detail while maintaining mythic resonance created a template followed by films like **Tombstone** (1993) and **3:10 to Yuma** (2007)."
+      }
+    ],
+    "exploreFurther": [
+      "John Ford's Visual Composition Techniques in Monument Valley",
+      "The Historical Wyatt Earp vs. Cinema's Interpretations",
+      "Shakespeare's Influence on Western Film Narratives",
+      "The Evolution of Western Film Music from Traditional to Atmospheric",
+      "Post-War America's Reflection in 1940s Westerns"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Gunfighter",
+          "year": 1950,
+          "slug": "Gregory Peck stars in this psychological Western about a gunslinger trying to escape his reputation",
+          "poster": "https://image.tmdb.org/t/p/w500/5696EpyH0tB8DtKvwNGABMRWknX.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 17409,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5696EpyH0tB8DtKvwNGABMRWknX.jpg"
+        },
+        {
+          "title": "The Man from Laramie",
+          "year": 1955,
+          "slug": "James Stewart in Anthony Mann's revenge Western with psychological depth",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": null
+        },
+        {
+          "title": "She Wore a Yellow Ribbon",
+          "year": 1949,
+          "slug": "Ford's cavalry trilogy masterpiece with John Wayne",
+          "poster": "https://image.tmdb.org/t/p/w500/2IXtuwkTVcDsaa09AiQnlkfxe7I.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 13909,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2IXtuwkTVcDsaa09AiQnlkfxe7I.jpg"
+        },
+        {
+          "title": "Winchester '73",
+          "year": 1950,
+          "slug": "James Stewart tracks a prized rifle through the frontier",
+          "poster": "https://image.tmdb.org/t/p/w500/rqRgjWqSmK9oI6duvigPmn49aVG.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 14551,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rqRgjWqSmK9oI6duvigPmn49aVG.jpg"
+        },
+        {
+          "title": "Rio Bravo",
+          "year": 1959,
+          "slug": "Howard Hawks' masterful Western starring John Wayne as a sheriff defending his town",
+          "poster": "https://image.tmdb.org/t/p/w500/4gI4KKmoi0d3yfsF71YU3S0I5t8.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 301,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4gI4KKmoi0d3yfsF71YU3S0I5t8.jpg"
+        },
+        {
+          "title": "The Magnificent Seven",
+          "year": 1960,
+          "slug": "Classic Western remake of Seven Samurai",
+          "poster": "https://image.tmdb.org/t/p/w500/e5ToxOyJwuZD4VOfI0qEn5uIjeJ.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 966,
+          "poster_url": "https://image.tmdb.org/t/p/w500/e5ToxOyJwuZD4VOfI0qEn5uIjeJ.jpg"
+        },
+        {
+          "title": "3:10 to Yuma",
+          "year": 1957,
+          "slug": "Original version of the classic tale of duty and honor",
+          "poster": "https://image.tmdb.org/t/p/w500/emYeJVZrpl2WfndJlhbls1e7lzQ.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 14168,
+          "poster_url": "https://image.tmdb.org/t/p/w500/emYeJVZrpl2WfndJlhbls1e7lzQ.jpg"
+        },
+        {
+          "title": "The Searchers",
+          "year": 1956,
+          "slug": "Ford's masterpiece about obsession and revenge",
+          "poster": "https://image.tmdb.org/t/p/w500/jLBmgW0epNzJ1N9uzaVCjbyT94v.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 3114,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jLBmgW0epNzJ1N9uzaVCjbyT94v.jpg"
+        },
+        {
+          "title": "Dodge City",
+          "year": 1939,
+          "slug": "Errol Flynn stars in this colorful Warner Bros Western",
+          "poster": "https://image.tmdb.org/t/p/w500/iySSQEAlvr87OYLA5aLzBU8q9lJ.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 17660,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iySSQEAlvr87OYLA5aLzBU8q9lJ.jpg"
+        },
+        {
+          "title": "Heaven's Gate",
+          "year": 1980,
+          "slug": "Controversial epic examining the Johnson County War",
+          "poster": "https://image.tmdb.org/t/p/w500/kW4Vk31nhtKPKGuYMaVATq3wcHC.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 10935,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kW4Vk31nhtKPKGuYMaVATq3wcHC.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

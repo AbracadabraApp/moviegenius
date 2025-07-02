@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "Ugetsu",
+    "year": 1953,
+    "initialSlug": "Spirits haunt the mortal realm.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/r8RiuKTIYIJBjczBVsfeP5C00CJ.jpg",
+    "initialStreaming": null,
+    "tmdbId": 14696,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Ugetsu** (1953) stands as Kenji Mizoguchi's haunting masterpiece of Japanese cinema, blending supernatural folklore with stark war commentary. The film follows two peasant couples whose lives unravel during Japan's civil war period, weaving together ghost stories with human greed and ambition. Mizoguchi's floating camera movements and masterful composition directly influenced later directors like Andrei Tarkovsky in **Solaris** (1972) and **Mirror** (1975). The film's exploration of the supernatural emerging from human suffering creates a template followed by later Japanese horror classics like **Kwaidan** (1964) and **Onibaba** (1964)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Sansho the Bailiff",
+            "year": 1954,
+            "slug": "Mizoguchi's follow-up to Ugetsu follows an aristocratic family torn apart by slavery and corruption in feudal Japan",
+            "poster": "https://image.tmdb.org/t/p/w500/cOBsWxFtEoqXIPx4JZP5E7g1WEo.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 20532,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cOBsWxFtEoqXIPx4JZP5E7g1WEo.jpg"
+          },
+          {
+            "title": "Onibaba",
+            "year": 1964,
+            "slug": "A brutal and erotic ghost story about two women who murder samurai during wartime",
+            "poster": "https://image.tmdb.org/t/p/w500/xyPLG53OodhJtvfQEfcmC43l16O.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 3763,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xyPLG53OodhJtvfQEfcmC43l16O.jpg"
+          },
+          {
+            "title": "Kwaidan",
+            "year": 1964,
+            "slug": "Four supernatural folk tales brought to life with stunning artistic vision and theatrical sets",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The technical achievements of Ugetsu revolutionized how supernatural elements could be portrayed on screen. Mizoguchi's long takes and unbroken camera movements create an otherworldly atmosphere without relying on special effects - a technique later mastered by Guillermo del Toro in **Pan's Labyrinth** (2006) and **The Devil's Backbone** (2001). The famous lake crossing scene, where reality bleeds into fantasy, demonstrates how atmospheric cinematography can achieve supernatural effects through pure filmmaking craft. SUBHEAD: Impact on World Cinema"
+      },
+      {
+        "type": "text",
+        "content": "Ugetsu's influence extends far beyond Japanese cinema. Its portrayal of ghosts as expressions of human desire and regret can be seen in modern classics like **The Others** (2001) and **A Ghost Story** (2017). The film's anti-war message, told through supernatural metaphor, paved the way for later works like **Grave of the Fireflies** (1988) and **Come and See** (1985). Mizoguchi's emphasis on female characters suffering under patriarchal systems influenced feminist cinema worldwide, from **Daughters of the Dust** (1991) to **Portrait of a Lady on Fire** (2019)."
+      }
+    ],
+    "exploreFurther": [
+      "Japanese Ghost Story Cinema and Its Evolution",
+      "Kenji Mizoguchi's Feminist Themes",
+      "Supernatural Elements in Anti-War Films",
+      "Camera Movement Techniques in Japanese Cinema",
+      "The Influence of Japanese Period Films on World Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Rashomon",
+          "year": 1950,
+          "slug": "Kurosawa's breakthrough about multiple perspectives on a violent crime",
+          "poster": "https://image.tmdb.org/t/p/w500/vL7Xw04nFMHwnvXRFCmYYAzMUvY.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 548,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vL7Xw04nFMHwnvXRFCmYYAzMUvY.jpg"
+        },
+        {
+          "title": "Woman in the Dunes",
+          "year": 1964,
+          "slug": "Surreal Japanese masterpiece about a man trapped in a sand pit",
+          "poster": "https://image.tmdb.org/t/p/w500/f0JpsMQ9oEjKBD66Ky3qK3z7LGT.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 16672,
+          "poster_url": "https://image.tmdb.org/t/p/w500/f0JpsMQ9oEjKBD66Ky3qK3z7LGT.jpg"
+        },
+        {
+          "title": "Seven Samurai",
+          "year": 1954,
+          "slug": "Kurosawa's epic about warriors defending a village",
+          "poster": "https://image.tmdb.org/t/p/w500/8OKmBV5BUFzmozIC3pPWKHy17kx.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 346,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8OKmBV5BUFzmozIC3pPWKHy17kx.jpg"
+        },
+        {
+          "title": "The Life of Oharu",
+          "year": 1952,
+          "slug": "Mizoguchi's devastating portrait of a woman's descent through social classes",
+          "poster": "https://image.tmdb.org/t/p/w500/8sIZjJdLrXPxrSERSLese1gUIwt.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 43364,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8sIZjJdLrXPxrSERSLese1gUIwt.jpg"
+        },
+        {
+          "title": "Throne of Blood",
+          "year": 1957,
+          "slug": "Kurosawa adapts Macbeth into a supernatural samurai tale",
+          "poster": "https://image.tmdb.org/t/p/w500/5NdGZpoInkf4wBInNpry6JAjQ3D.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 3777,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5NdGZpoInkf4wBInNpry6JAjQ3D.jpg"
+        },
+        {
+          "title": "Princess Yang Kwei-fei",
+          "year": 1955,
+          "slug": "Mizoguchi's tragic historical romance",
+          "poster": "https://image.tmdb.org/t/p/w500/4QiJiqVmeJ3ExzhBUpof5oCrt1m.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 91426,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4QiJiqVmeJ3ExzhBUpof5oCrt1m.jpg"
+        },
+        {
+          "title": "The Story of the Last Chrysanthemum",
+          "year": 1939,
+          "slug": "Early Mizoguchi masterpiece about kabuki theater",
+          "poster": "https://image.tmdb.org/t/p/w500/m43EBVmYBiNC2RtcMUAag4IWsZS.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 46069,
+          "poster_url": "https://image.tmdb.org/t/p/w500/m43EBVmYBiNC2RtcMUAag4IWsZS.jpg"
+        },
+        {
+          "title": "In the Realm of the Senses",
+          "year": 1976,
+          "slug": "Controversial tale of obsessive love in 1930s Japan",
+          "poster": "https://image.tmdb.org/t/p/w500/AiFQbgjgSXWPfbi9iIYT39iXWMW.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 5879,
+          "poster_url": "https://image.tmdb.org/t/p/w500/AiFQbgjgSXWPfbi9iIYT39iXWMW.jpg"
+        },
+        {
+          "title": "Gate of Hell",
+          "year": 1953,
+          "slug": "Stunning color film about forbidden love in feudal Japan",
+          "poster": "https://image.tmdb.org/t/p/w500/6ceVYhhcIgEauUKdrYoIUWyAqfy.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 43349,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6ceVYhhcIgEauUKdrYoIUWyAqfy.jpg"
+        },
+        {
+          "title": "The Ghost of Yotsuya",
+          "year": 1959,
+          "slug": "Classic Japanese ghost story of betrayal and revenge",
+          "poster": "https://image.tmdb.org/t/p/w500/ZMPk7bZo1YE6eStUebqkYio9xd.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 84508,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ZMPk7bZo1YE6eStUebqkYio9xd.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

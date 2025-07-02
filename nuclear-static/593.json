@@ -1,0 +1,208 @@
+{
+  "props": {
+    "title": "Solaris",
+    "year": 1972,
+    "initialSlug": "The planet that haunts the soul.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/rXPWl3hBbzivmeCEbMD3LwV2Ada.jpg",
+    "initialStreaming": "TBD",
+    "tmdbId": 593,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Solaris** (1972) stands as Andrei Tarkovsky's masterful response to Stanley Kubrick's **2001: A Space Odyssey** (1968), offering a deeply psychological exploration of grief and memory in space. Where Kubrick emphasized technological advancement, Tarkovsky turned inward, using the mysterious planet Solaris to manifest the protagonist's deepest regrets about his dead wife. The film's deliberately slow pacing and lengthy shots, including the famous highway sequence, established a template for contemplative sci-fi later seen in films like **Moon** (2009) and **Arrival** (2016)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Stalker",
+            "year": 1979,
+            "slug": "Tarkovsky's other sci-fi masterpiece about a mysterious Zone that grants wishes",
+            "poster": "https://image.tmdb.org/t/p/w500/1qhOyf5C4s9ZdvY8d5JDx9DFMeT.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 1398,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1qhOyf5C4s9ZdvY8d5JDx9DFMeT.jpg"
+          },
+          {
+            "title": "The Mirror",
+            "year": 1975,
+            "slug": "Tarkovsky's autobiographical meditation on memory and time",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": null
+          },
+          {
+            "title": "Solaris",
+            "year": 2002,
+            "slug": "Steven Soderbergh's remake starring George Clooney",
+            "poster": "https://image.tmdb.org/t/p/w500/drdrB1hEZmzFlK1xtW5HMxK3LUJ.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 2103,
+            "poster_url": "https://image.tmdb.org/t/p/w500/drdrB1hEZmzFlK1xtW5HMxK3LUJ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The 1972 original revolutionized how science fiction could approach human psychology. Rather than focusing on alien encounters or space exploration, Tarkovsky used the genre to examine human consciousness itself. This influence appears in later works like **Inception** (2010) and **High Life** (2018), where space and consciousness become intertwined. The film's emphasis on emotional truth over scientific accuracy created a new pathway for philosophical science fiction."
+      },
+      {
+        "type": "text",
+        "content": "Tarkovsky's use of color, particularly in the Earth sequences versus the space station, established a visual language that continues to influence filmmakers. **Blade Runner 2049** (2017) directly references Solaris's approach to memory and loss, while **Ad Astra** (2019) mirrors its focus on psychological isolation in space. The film's treatment of artificial life - through the recreation of Hari - predates similar explorations in **Ex Machina** (2014) and **Her** (2013). SUBHEAD: Impact on Contemporary Cinema"
+      },
+      {
+        "type": "text",
+        "content": "Modern filmmakers continue drawing from Solaris's wellspring. **Annihilation** (2018) explores similar themes of an alien presence that mirrors human consciousness, while **Under the Skin** (2013) adopts its alienating perspective on human interaction. The film's influence extends beyond science fiction - its meditation on grief and loss echoes in works like **A Ghost Story** (2017) and **Personal Shopper** (2016)."
+      }
+    ],
+    "exploreFurther": [
+      "Soviet Science Fiction Cinema and the Cold War",
+      "Tarkovsky's Visual Philosophy and Long-Take Technique",
+      "Memory and Identity in Science Fiction Film",
+      "The Evolution of Philosophical Science Fiction",
+      "Adaptation Theory: From Lem's Novel to Screen"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "2001: A Space Odyssey",
+          "year": 1968,
+          "slug": "Kubrick's groundbreaking space epic",
+          "poster": "https://image.tmdb.org/t/p/w500/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 62,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg"
+        },
+        {
+          "title": "Stalker",
+          "year": 1979,
+          "slug": "Zone exploration masterpiece",
+          "poster": "https://image.tmdb.org/t/p/w500/1qhOyf5C4s9ZdvY8d5JDx9DFMeT.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1398,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1qhOyf5C4s9ZdvY8d5JDx9DFMeT.jpg"
+        },
+        {
+          "title": "The Mirror",
+          "year": 1975,
+          "slug": "Autobiographical Soviet masterwork",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Inception",
+          "year": 2010,
+          "slug": "Mind-bending dream exploration",
+          "poster": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 27205,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg"
+        },
+        {
+          "title": "Arrival",
+          "year": 2016,
+          "slug": "Linguistic alien contact drama",
+          "poster": "https://image.tmdb.org/t/p/w500/x2FJsf1ElAgr63Y3PNPtJrcmpoe.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 329865,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x2FJsf1ElAgr63Y3PNPtJrcmpoe.jpg"
+        },
+        {
+          "title": "Moon",
+          "year": 2009,
+          "slug": "Isolated lunar base psychological thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/35IU0Mq0zFsN1mYwDGts5mKc77n.jpg",
+          "initialStreaming": "AMC+",
+          "tmdb_id": 17431,
+          "poster_url": "https://image.tmdb.org/t/p/w500/35IU0Mq0zFsN1mYwDGts5mKc77n.jpg"
+        },
+        {
+          "title": "Blade Runner 2049",
+          "year": 2017,
+          "slug": "Existential sci-fi noir sequel",
+          "poster": "https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 335984,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg"
+        },
+        {
+          "title": "Annihilation",
+          "year": 2018,
+          "slug": "Mysterious zone biological horror",
+          "poster": "https://image.tmdb.org/t/p/w500/4YRplSk6BhH6PRuE9gfyw9byUJ6.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 300668,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4YRplSk6BhH6PRuE9gfyw9byUJ6.jpg"
+        },
+        {
+          "title": "Ex Machina",
+          "year": 2014,
+          "slug": "AI consciousness chamber drama",
+          "poster": "https://image.tmdb.org/t/p/w500/dmJW8IAKHKxFNiUnoDR7JfsK7Rp.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 264660,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dmJW8IAKHKxFNiUnoDR7JfsK7Rp.jpg"
+        },
+        {
+          "title": "Under the Skin",
+          "year": 2013,
+          "slug": "Alien perspective on humanity",
+          "poster": "https://image.tmdb.org/t/p/w500/55wmcXJIDYITr7JDijJTdvwSaAv.jpg",
+          "initialStreaming": "AMC+",
+          "tmdb_id": 97370,
+          "poster_url": "https://image.tmdb.org/t/p/w500/55wmcXJIDYITr7JDijJTdvwSaAv.jpg"
+        },
+        {
+          "title": "High Life",
+          "year": 2018,
+          "slug": "Space prison experimental film",
+          "poster": "https://image.tmdb.org/t/p/w500/ftRRIYNzpTDYeTznrAxgT5v1vJY.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 376865,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ftRRIYNzpTDYeTznrAxgT5v1vJY.jpg"
+        },
+        {
+          "title": "The Sacrifice",
+          "year": 1986,
+          "slug": "Tarkovsky's final film",
+          "poster": "https://image.tmdb.org/t/p/w500/8JMh27z075ZHbFE85XYkdXF2QkK.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 24657,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8JMh27z075ZHbFE85XYkdXF2QkK.jpg"
+        },
+        {
+          "title": "Aniara",
+          "year": 2018,
+          "slug": "Swedish space isolation drama",
+          "poster": "https://image.tmdb.org/t/p/w500/pEpEJe8NTmwWL0hwYkZguTzEqzt.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 496743,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pEpEJe8NTmwWL0hwYkZguTzEqzt.jpg"
+        },
+        {
+          "title": "Silent Running",
+          "year": 1972,
+          "slug": "Ecological space drama",
+          "poster": "https://image.tmdb.org/t/p/w500/ahasZ5HILZHtlrl6cbXgpfk0y8H.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 811,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ahasZ5HILZHtlrl6cbXgpfk0y8H.jpg"
+        },
+        {
+          "title": "Memories",
+          "year": 1995,
+          "slug": "Anime anthology influenced by Solaris",
+          "poster": "https://image.tmdb.org/t/p/w500/e0HIBRiKS5dWmXkxWvEh6JQZcc2.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 42994,
+          "poster_url": "https://image.tmdb.org/t/p/w500/e0HIBRiKS5dWmXkxWvEh6JQZcc2.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "The Third Man",
+    "year": 1949,
+    "initialSlug": "A writer uncovers dark secrets in postwar Vienna",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
+    "initialStreaming": "TBD",
+    "tmdbId": 1092,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Third Man** (1949) revolutionized film noir with its tilted Dutch angles and shadowy vision of post-war Vienna. Director Carol Reed and cinematographer Robert Krasker created a visual nightmare where nothing is level, matching the moral ambiguity of Harry Lime's penicillin racket. The film's iconic zither score by Anton Karas defies noir conventions - instead of moody jazz, we get an almost playful Austrian folk sound that makes the darkness even more unsettling. Orson Welles delivers one of cinema's greatest speeches with the \"cuckoo clock\" monologue, despite appearing on screen for only minutes. His Harry Lime joins **Citizen Kane** (1941) and **Touch of Evil** (1958) in Welles' trinity of unforgettable performances."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Third Man",
+            "year": 1949,
+            "slug": "A writer arrives in post-war Vienna to find his friend Harry Lime, only to learn he's supposedly dead and caught in a web of conspiracy",
+            "poster": "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 1092,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg"
+          },
+          {
+            "title": "Touch of Evil",
+            "year": 1958,
+            "slug": "Corrupt border town noir with Welles as a crooked cop and one of cinema's greatest opening tracking shots",
+            "poster": "https://image.tmdb.org/t/p/w500/1pvRgmfBaoMczIJBOi9gCOZ4FMC.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 1480,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1pvRgmfBaoMczIJBOi9gCOZ4FMC.jpg"
+          },
+          {
+            "title": "The Fallen Idol",
+            "year": 1948,
+            "slug": "Carol Reed's other masterpiece about a boy who idolizes his father's butler, only to witness a possible murder",
+            "poster": "https://image.tmdb.org/t/p/w500/qoNRned9ZFgc32OBXEcaBCryPjc.jpg",
+            "initialStreaming": "BritBox",
+            "tmdb_id": 21631,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qoNRned9ZFgc32OBXEcaBCryPjc.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence ripples through subsequent noir and post-war thrillers. **Chinatown** (1974) echoes its themes of corruption in high places and moral rot beneath civilized surfaces. **In the Heat of the Night** (1967) borrowed its structure of an outsider investigating death in hostile territory. The sewers of Vienna became a template for underground chase sequences, notably influencing **The French Connection** (1971) and **Les Diaboliques** (1955). SUBHEAD: Visual Innovation and Cultural Impact"
+      },
+      {
+        "type": "text",
+        "content": "Reed's canted angles and harsh lighting created a template for expressing psychological unease that influenced everything from **Vertigo** (1958) to **The Cabinet of Dr. Caligari** (1920). The film's Vienna setting - divided into occupation zones - prefigured Cold War thrillers like **The Spy Who Came in from the Cold** (1965) and **Bridge of Spies** (2015). Graham Greene's screenplay demonstrates how to reveal character through dialogue, particularly in the iconic Ferris wheel scene that inspired similar confrontations in **The Dark Knight** (2008) and **Skyfall** (2012)."
+      }
+    ],
+    "exploreFurther": [
+      "Post-War Vienna: The Real Setting Behind The Third Man",
+      "Anton Karas and the Revolutionary Zither Score",
+      "Graham Greene's Screenplay Techniques",
+      "Carol Reed's Visual Style and Dutch Angles",
+      "The Influence of The Third Man on Modern Thrillers"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Brief Encounter",
+          "year": 1945,
+          "slug": "British romance in railway station showing similar post-war melancholy",
+          "poster": "https://image.tmdb.org/t/p/w500/jC9EwLJcGhYMSQAHu2LxkKN5v7O.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 851,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jC9EwLJcGhYMSQAHu2LxkKN5v7O.jpg"
+        },
+        {
+          "title": "The Big Sleep",
+          "year": 1946,
+          "slug": "Complex noir mystery with Bogart and Bacall",
+          "poster": "https://image.tmdb.org/t/p/w500/lraHo9D8c0YWfxsKqT5P5sVqMKN.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 910,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lraHo9D8c0YWfxsKqT5P5sVqMKN.jpg"
+        },
+        {
+          "title": "Odd Man Out",
+          "year": 1947,
+          "slug": "Carol Reed's Irish thriller about a wounded IRA man",
+          "poster": "https://image.tmdb.org/t/p/w500/zfNkremz9WlWK5gIaqqFwElc7rz.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 43461,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zfNkremz9WlWK5gIaqqFwElc7rz.jpg"
+        },
+        {
+          "title": "The Lady from Shanghai",
+          "year": 1947,
+          "slug": "Welles noir with famous mirror maze finale",
+          "poster": "https://image.tmdb.org/t/p/w500/whqdqWavNMSoeXTx1X3DauO1LG6.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 3766,
+          "poster_url": "https://image.tmdb.org/t/p/w500/whqdqWavNMSoeXTx1X3DauO1LG6.jpg"
+        },
+        {
+          "title": "Night and the City",
+          "year": 1950,
+          "slug": "Noir set in London's criminal underground",
+          "poster": "https://image.tmdb.org/t/p/w500/2NBmzm8z5fd283eWeECkPrkwta8.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 19119,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2NBmzm8z5fd283eWeECkPrkwta8.jpg"
+        },
+        {
+          "title": "Double Indemnity",
+          "year": 1944,
+          "slug": "Definitive noir about insurance fraud and murder",
+          "poster": "https://image.tmdb.org/t/p/w500/rVNYZZgfhwqVMMWlBmxOfWqnwCj.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 996,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rVNYZZgfhwqVMMWlBmxOfWqnwCj.jpg"
+        },
+        {
+          "title": "Out of the Past",
+          "year": 1947,
+          "slug": "Complex noir with Robert Mitchum",
+          "poster": "https://image.tmdb.org/t/p/w500/lnUK6Cg5ARM0qaq0B5SG20VAM0h.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 678,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lnUK6Cg5ARM0qaq0B5SG20VAM0h.jpg"
+        },
+        {
+          "title": "The Maltese Falcon",
+          "year": 1941,
+          "slug": "Hardboiled detective classic with Bogart",
+          "poster": "https://image.tmdb.org/t/p/w500/bf4o6Uzw5wqLjdKwRuiDrN1xyvl.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 963,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bf4o6Uzw5wqLjdKwRuiDrN1xyvl.jpg"
+        },
+        {
+          "title": "Laura",
+          "year": 1944,
+          "slug": "Elegant noir about obsession with a dead woman",
+          "poster": "https://image.tmdb.org/t/p/w500/j0zEiFFrdbZnMXqD3piOtZBJeNB.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1939,
+          "poster_url": "https://image.tmdb.org/t/p/w500/j0zEiFFrdbZnMXqD3piOtZBJeNB.jpg"
+        },
+        {
+          "title": "Carol Reed's Odd Man Out",
+          "year": 1947,
+          "slug": "Atmospheric thriller in post-war Belfast",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

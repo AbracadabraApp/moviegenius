@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "Little Otik",
+    "year": 2001,
+    "initialSlug": "Baby monster devours family in dark fairy tale feast",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/86uoXmcgXKZQa35V1AsKVXY3NvX.jpg",
+    "initialStreaming": null,
+    "tmdbId": 18939,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Jan Švankmajer's **Little Otik** (2001) stands as a grotesque masterpiece of stop-motion horror, adapting Karel Jaromír Erben's fairy tale into a disturbing commentary on parental obsession. Like Švankmajer's earlier **Alice** (1988), it blends live-action with animation while diving deep into Czech folklore. The film's practical effects recall the visceral body horror of **Eraserhead** (1977), while its fairy tale roots connect to darker adaptations like **Company of Wolves** (1984). The story of a childless couple who adopt a tree stump that transforms into a voracious monster-child speaks to themes of consumption and desire that define modern horror."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Dimensions of Dialogue",
+            "year": 1982,
+            "slug": "Švankmajer's short film exploring human communication through stop-motion objects and clay animation",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": null
+          },
+          {
+            "title": "Faust",
+            "year": 1994,
+            "slug": "Švankmajer's surreal take on the classic tale mixing puppetry, clay animation, and live action",
+            "poster": "https://image.tmdb.org/t/p/w500/pyCHHLEdRJPx0BD22n9Cs7B78Wp.jpg",
+            "initialStreaming": "MUBI",
+            "tmdb_id": 18919,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pyCHHLEdRJPx0BD22n9Cs7B78Wp.jpg"
+          },
+          {
+            "title": "Alice",
+            "year": 1988,
+            "slug": "Dark and surreal adaptation of Alice in Wonderland using stop-motion and live action",
+            "poster": "https://image.tmdb.org/t/p/w500/3AY8Sd3XyhP7XWo8OnCMgKpg3XA.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 976732,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3AY8Sd3XyhP7XWo8OnCMgKpg3XA.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends into contemporary body horror and folk horror movements. Films like **The Babadook** (2014) and **Hereditary** (2018) share similar themes of parental anxiety turned monstrous. The practical effects and stop-motion work directly influenced directors like Guillermo del Toro, particularly in **Pan's Labyrinth** (2006) and **Pinocchio** (2022), where fairy tale elements merge with horror aesthetics. SUBHEAD: Czech New Wave Connections and Modern Folk Horror"
+      },
+      {
+        "type": "text",
+        "content": "**Little Otik** carries forward the tradition of Czech New Wave cinema, particularly the dark absurdism of films like **Valerie and Her Week of Wonders** (1970). Its influence can be seen in modern folk horror films like **Midsommar** (2019) and **The Ritual** (2017), where ancient folklore collides with contemporary anxieties. The film's practical effects and mixed-media approach also influenced experimental animators like the Quay Brothers, whose films **Street of Crocodiles** (1986) and **Institute Benjamenta** (1995) share similar surreal qualities."
+      }
+    ],
+    "exploreFurther": [
+      "The History of Czech Stop-Motion Animation and Its Global Influence",
+      "Folk Horror Revival in Contemporary Cinema",
+      "Švankmajer's Adaptation Techniques and Literary Sources",
+      "Practical Effects vs CGI in Modern Horror",
+      "Parental Anxiety in Horror Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Taxidermia",
+          "year": 2006,
+          "slug": "Hungarian surrealist body horror examining consumption and family",
+          "poster": "https://image.tmdb.org/t/p/w500/uRqxKim0Vr1JZPLYcR1rjFtu74p.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": 15742,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uRqxKim0Vr1JZPLYcR1rjFtu74p.jpg"
+        },
+        {
+          "title": "The Wolf House",
+          "year": 2018,
+          "slug": "Experimental stop-motion horror about a Chilean cult",
+          "poster": "https://image.tmdb.org/t/p/w500/kvgch2e25cd6dWhRJ6G8BCJ1Wcq.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 499537,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kvgch2e25cd6dWhRJ6G8BCJ1Wcq.jpg"
+        },
+        {
+          "title": "Possession",
+          "year": 1981,
+          "slug": "Surreal horror dealing with marital breakdown and monsters",
+          "poster": "https://image.tmdb.org/t/p/w500/lUFZsUuJ0YyhBXH8D2BFUd6wODm.jpg",
+          "initialStreaming": "Metrograph",
+          "tmdb_id": 21484,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lUFZsUuJ0YyhBXH8D2BFUd6wODm.jpg"
+        },
+        {
+          "title": "Raw",
+          "year": 2016,
+          "slug": "French coming-of-age cannibal film",
+          "poster": "https://image.tmdb.org/t/p/w500/kc8jT1MAiKM0iwdjAwC5lQrTNry.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 393519,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kc8jT1MAiKM0iwdjAwC5lQrTNry.jpg"
+        },
+        {
+          "title": "Tetsuo: The Iron Man",
+          "year": 1989,
+          "slug": "Japanese cyberpunk body horror",
+          "poster": "https://image.tmdb.org/t/p/w500/iucW3kSp5rQSfYCLNlCWPEwYh4h.jpg",
+          "initialStreaming": "Arrow",
+          "tmdb_id": 41428,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iucW3kSp5rQSfYCLNlCWPEwYh4h.jpg"
+        },
+        {
+          "title": "The Lure",
+          "year": 2015,
+          "slug": "Polish mermaid horror musical",
+          "poster": "https://image.tmdb.org/t/p/w500/mxdssWM8WyzBFq6pYwBHeTIJK1A.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 375742,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mxdssWM8WyzBFq6pYwBHeTIJK1A.jpg"
+        },
+        {
+          "title": "November",
+          "year": 2017,
+          "slug": "Estonian folk horror with similar dark fairy tale elements",
+          "poster": "https://image.tmdb.org/t/p/w500/yMqtCSzSAB9Aiw8yiuUKBoxEeAm.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": 437583,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yMqtCSzSAB9Aiw8yiuUKBoxEeAm.jpg"
+        },
+        {
+          "title": "Pin",
+          "year": 1988,
+          "slug": "Psychological horror about attachment to inanimate objects",
+          "poster": "https://image.tmdb.org/t/p/w500/ouUfJtdHPkRXFJ0zDLPvgbPHPjd.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 41966,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ouUfJtdHPkRXFJ0zDLPvgbPHPjd.jpg"
+        },
+        {
+          "title": "The Death of Mr. Lazarescu",
+          "year": 2005,
+          "slug": "Romanian New Wave dark comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/c3B7GwMYgNi15VMdcKZawgt6mf5.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": 31032,
+          "poster_url": "https://image.tmdb.org/t/p/w500/c3B7GwMYgNi15VMdcKZawgt6mf5.jpg"
+        },
+        {
+          "title": "Lunacy",
+          "year": 2005,
+          "slug": "Another Švankmajer horror based on Edgar Allan Poe",
+          "poster": "https://image.tmdb.org/t/p/w500/9zNT7QuZDecaQzUnqpmXeIUhUqR.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 21156,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9zNT7QuZDecaQzUnqpmXeIUhUqR.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

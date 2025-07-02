@@ -1,0 +1,195 @@
+{
+  "props": {
+    "title": "Alien",
+    "year": 1979,
+    "initialSlug": "In space, no one can hear you scream.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg",
+    "initialStreaming": null,
+    "tmdbId": 348,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Alien** (1979) revolutionized both horror and sci-fi by combining claustrophobic terror with groundbreaking creature design. Ridley Scott crafted a masterclass in tension, using the Nostromo's cramped industrial corridors to amplify dread. H.R. Giger's biomechanical xenomorph design spawned decades of imitators, while the film's \"truckers in space\" aesthetic influenced everything from **Event Horizon** (1997) to **Sunshine** (2007). The film's feminist undertones, embodied in Sigourney Weaver's Ripley, challenged sci-fi's male-dominated conventions and paved the way for heroines like Sarah Connor in **The Terminator** (1984)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Aliens",
+            "year": 1986,
+            "slug": "James Cameron's action-packed sequel adds military muscle and maternal themes to the horror",
+            "poster": "https://image.tmdb.org/t/p/w500/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 679,
+            "poster_url": "https://image.tmdb.org/t/p/w500/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg"
+          },
+          {
+            "title": "The Thing",
+            "year": 1982,
+            "slug": "John Carpenter's paranoid masterpiece about an alien shapeshifter infiltrating an Antarctic research station",
+            "poster": "https://image.tmdb.org/t/p/w500/a9RjXOIIB56k2rGoL3Fk3nRHHHQ.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 1091,
+            "poster_url": "https://image.tmdb.org/t/p/w500/a9RjXOIIB56k2rGoL3Fk3nRHHHQ.jpg"
+          },
+          {
+            "title": "Pitch Black",
+            "year": 2000,
+            "slug": "Survivors stranded on a hostile planet face nocturnal predators, with Vin Diesel's breakthrough role",
+            "poster": "https://image.tmdb.org/t/p/w500/3AnlxZ5CZnhKKzjgFyY6EHxmOyl.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 2787,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3AnlxZ5CZnhKKzjgFyY6EHxmOyl.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends far beyond its immediate sequels. The \"haunted house in space\" formula inspired countless imitators, from the psychological horror of **Pandorum** (2009) to the survival thriller **Life** (2017). Dan O'Bannon's screenplay established crucial genre tropes: the mysterious distress signal, corporate conspiracy, and the idea that in space, no one can hear you scream. The film's lived-in, industrial aesthetic directly challenged the sleek futurism of **2001: A Space Odyssey** (1968), creating a more relatable vision of space travel."
+      },
+      {
+        "type": "text",
+        "content": "The chestburster scene remains one of cinema's most shocking moments, partly because Scott kept the cast in the dark about exact details. This approach to practical effects and genuine reactions influenced horror directors for decades, seen in films like **The Thing** (1982) and **An American Werewolf in London** (1981). The film's sound design, mixing industrial noise with Jerry Goldsmith's sparse score, created a template for sci-fi horror soundscapes. SUBHEAD: Legacy and Modern Impact"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Event Horizon",
+            "year": 1997,
+            "slug": "A rescue crew investigates a spaceship that disappeared into a hellish dimension",
+            "poster": "https://image.tmdb.org/t/p/w500/cHoeg3gAD5w63Et5DImY1Jb7HaO.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 8413,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cHoeg3gAD5w63Et5DImY1Jb7HaO.jpg"
+          },
+          {
+            "title": "Pandorum",
+            "year": 2009,
+            "slug": "Astronauts awake from hypersleep to find their ship overrun with mutant hunters",
+            "poster": "https://image.tmdb.org/t/p/w500/mNMfa6r3pl0EzFIKEkVcxyr6Rc7.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 19898,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mNMfa6r3pl0EzFIKEkVcxyr6Rc7.jpg"
+          },
+          {
+            "title": "Life",
+            "year": 2017,
+            "slug": "ISS crew discovers hostile alien life in Mars samples",
+            "poster": "https://image.tmdb.org/t/p/w500/wztfli5NgYDgurVgShNflvnyA3Z.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 395992,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wztfli5NgYDgurVgShNflvnyA3Z.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The xenomorph's lifecycle and biological horror influenced a new wave of sci-fi, from **Species** (1995) to **Prometheus** (2012). The film's feminist themes became more apparent over time, with Ripley's character defying genre conventions by surviving through intelligence rather than luck. Modern films like **Annihilation** (2018) and **Under the Skin** (2013) continue exploring Alien's themes of body horror and gender dynamics."
+      }
+    ],
+    "exploreFurther": [
+      "H.R. Giger's Biomechanical Art and Film Design",
+      "Evolution of Practical Effects in Sci-Fi Horror",
+      "Gender Representation in Science Fiction",
+      "Corporate Dystopia in Science Fiction Film",
+      "Sound Design in Horror Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Starship Troopers",
+          "year": 1997,
+          "slug": "Military sci-fi satire with insectoid aliens",
+          "poster": "https://image.tmdb.org/t/p/w500/cxCmv23O7p3hyHwqoktHYkZcGsY.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 563,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cxCmv23O7p3hyHwqoktHYkZcGsY.jpg"
+        },
+        {
+          "title": "Dark Star",
+          "year": 1974,
+          "slug": "John Carpenter's sci-fi comedy that influenced Alien's development",
+          "poster": "https://image.tmdb.org/t/p/w500/aiqLBiH0IWrog2Q78dZTT8Ad9Sp.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 1410,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aiqLBiH0IWrog2Q78dZTT8Ad9Sp.jpg"
+        },
+        {
+          "title": "Galaxy of Terror",
+          "year": 1981,
+          "slug": "Roger Corman's Alien-inspired space horror",
+          "poster": "https://image.tmdb.org/t/p/w500/fPaEadAVgyaCP1AKHKWrQHc9sbO.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 28893,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fPaEadAVgyaCP1AKHKWrQHc9sbO.jpg"
+        },
+        {
+          "title": "Leviathan",
+          "year": 1989,
+          "slug": "Underwater creature feature with similar themes",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Roku",
+          "tmdb_id": null
+        },
+        {
+          "title": "DeepStar Six",
+          "year": 1989,
+          "slug": "Underwater alien horror",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Pluto",
+          "tmdb_id": null
+        },
+        {
+          "title": "Sphere",
+          "year": 1998,
+          "slug": "Psychological sci-fi horror underwater",
+          "poster": "https://image.tmdb.org/t/p/w500/reR7C7EYe3DiHm5OYpA0ACUMDld.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 10153,
+          "poster_url": "https://image.tmdb.org/t/p/w500/reR7C7EYe3DiHm5OYpA0ACUMDld.jpg"
+        },
+        {
+          "title": "Underwater",
+          "year": 2020,
+          "slug": "Deep-sea facility faces ancient horrors",
+          "poster": "https://image.tmdb.org/t/p/w500/gzlbb3yeVISpQ3REd3Ga1scWGTU.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 443791,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gzlbb3yeVISpQ3REd3Ga1scWGTU.jpg"
+        },
+        {
+          "title": "Moon",
+          "year": 2009,
+          "slug": "Isolated space mining facility thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/35IU0Mq0zFsN1mYwDGts5mKc77n.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 17431,
+          "poster_url": "https://image.tmdb.org/t/p/w500/35IU0Mq0zFsN1mYwDGts5mKc77n.jpg"
+        },
+        {
+          "title": "Europa Report",
+          "year": 2013,
+          "slug": "Found footage space exploration horror",
+          "poster": "https://image.tmdb.org/t/p/w500/tbsfaBjiAW5vfrV06R8KCOzVOYy.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 174772,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tbsfaBjiAW5vfrV06R8KCOzVOYy.jpg"
+        },
+        {
+          "title": "Sunshine",
+          "year": 2007,
+          "slug": "Psychological space thriller from Danny Boyle",
+          "poster": "https://image.tmdb.org/t/p/w500/8kX6xmEwz0RpEJkeWjXTkxbOCAp.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 1272,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8kX6xmEwz0RpEJkeWjXTkxbOCAp.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

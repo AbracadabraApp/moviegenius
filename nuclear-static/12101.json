@@ -1,0 +1,187 @@
+{
+  "props": {
+    "title": "Soylent Green",
+    "year": 1973,
+    "initialSlug": "In 2022, a detective uncovers food's horrifying secret",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/5nbkShkOEXUoKVhaX0XG41wyBkq.jpg",
+    "initialStreaming": null,
+    "tmdbId": 12101,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Soylent Green** (1973) stands as a haunting ecological nightmare that was decades ahead of its time. Set in an overcrowded 2022 New York City ravaged by pollution and food shortages, it follows Detective Thorn (Charlton Heston) investigating a murder that unveils the disturbing truth about the processed food company Soylent. The film builds on earlier eco-horror classics like **Silent Running** (1972) but pushes further into urban decay and corporate conspiracy. Its influence echoes through later environmental dystopias like **Children of Men** (2006) and **Snowpiercer** (2013), particularly in depicting class warfare through food access and environmental collapse."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Silent Running",
+            "year": 1972,
+            "slug": "Bruce Dern tends the last forests in space while Earth dies below",
+            "poster": "https://image.tmdb.org/t/p/w500/ahasZ5HILZHtlrl6cbXgpfk0y8H.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 811,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ahasZ5HILZHtlrl6cbXgpfk0y8H.jpg"
+          },
+          {
+            "title": "Logan's Run",
+            "year": 1976,
+            "slug": "In a seeming utopia, everyone must die at 30 to maintain population control",
+            "poster": "https://image.tmdb.org/t/p/w500/v3ILN8ROPcrNRJ8S7GH24JyihH8.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 10803,
+            "poster_url": "https://image.tmdb.org/t/p/w500/v3ILN8ROPcrNRJ8S7GH24JyihH8.jpg"
+          },
+          {
+            "title": "The Omega Man",
+            "year": 1971,
+            "slug": "Another Charlton Heston apocalyptic thriller about being the last normal human alive",
+            "poster": "https://image.tmdb.org/t/p/w500/qlt65C43HeoDm5K5gYBtT20OeA1.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 11234,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qlt65C43HeoDm5K5gYBtT20OeA1.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's most powerful scenes come from Edward G. Robinson's final performance as Sol Roth, an elderly scholar who remembers the world before its collapse. His death scene, watching footage of the lost natural world while classical music plays, carries extra weight knowing Robinson was dying of cancer during filming. This bittersweet farewell to both character and actor parallels the film's larger themes about losing touch with humanity's relationship to nature."
+      },
+      {
+        "type": "text",
+        "content": "Director Richard Fleischer crafts a grimy, sweat-soaked vision of environmental collapse that feels disturbingly prescient today. While some elements like the wooden computers feel dated, the core warnings about overpopulation, corporate control of food supplies, and ecological devastation resonate even stronger now. The film's infamous twist ending - \"Soylent Green is people!\" - transcended mere shock value to become a stark metaphor for capitalism consuming itself. SUBHEAD: Environmental Apocalypse Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Z.P.G.",
+            "year": 1972,
+            "slug": "In a polluted future, having children is banned to control population",
+            "poster": "https://image.tmdb.org/t/p/w500/rAV2ZiU3mAe0fyqGhHp3N8e5XoF.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 52608,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rAV2ZiU3mAe0fyqGhHp3N8e5XoF.jpg"
+          },
+          {
+            "title": "No Blade of Grass",
+            "year": 1970,
+            "slug": "Global crop failure leads to societal collapse and survival horror",
+            "poster": "https://image.tmdb.org/t/p/w500/pJw5cPZHVo2phCIIIxgK0KOvauk.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 21886,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pJw5cPZHVo2phCIIIxgK0KOvauk.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Soylent Green** helped establish key tropes of environmental apocalypse films that would follow, from the wealthy elite hoarding real food while masses subsist on processed alternatives (**Snowpiercer**) to the fetishization of \"real\" nature as a lost luxury (**Wall-E** (2008)). Its influence extends to modern cli-fi films like **The Day After Tomorrow** (2004) and **Geostorm** (2017), though few match its bleak assessment of human nature. Even recent documentaries like **Seaspiracy** (2021) echo its warnings about unsustainable food systems and corporate deception."
+      }
+    ],
+    "exploreFurther": [
+      "Environmental Collapse in 1970s Science Fiction",
+      "Edward G. Robinson's Final Performance",
+      "Food Scarcity in Dystopian Cinema",
+      "Richard Fleischer's Science Fiction Trilogy",
+      "The Evolution of Climate Crisis Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Road",
+          "year": 2009,
+          "slug": "Father and son traverse post-apocalyptic America",
+          "poster": "https://image.tmdb.org/t/p/w500/qLaXnLzqleBWQtjvZ6JGVSaKoC3.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 20766,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qLaXnLzqleBWQtjvZ6JGVSaKoC3.jpg"
+        },
+        {
+          "title": "The Day After Tomorrow",
+          "year": 2004,
+          "slug": "Climate change triggers catastrophic global freeze",
+          "poster": "https://image.tmdb.org/t/p/w500/Wr4HeYQRvwVCxzOV5TmGE7UkXq.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 435,
+          "poster_url": "https://image.tmdb.org/t/p/w500/Wr4HeYQRvwVCxzOV5TmGE7UkXq.jpg"
+        },
+        {
+          "title": "Wall-E",
+          "year": 2008,
+          "slug": "Robot finds love while Earth drowns in consumer waste",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Children of Men",
+          "year": 2006,
+          "slug": "Global infertility leads to societal collapse",
+          "poster": "https://image.tmdb.org/t/p/w500/8Xgvmx7WWc7Z9Ws9RAYk7uya2kh.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 9693,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8Xgvmx7WWc7Z9Ws9RAYk7uya2kh.jpg"
+        },
+        {
+          "title": "Snowpiercer",
+          "year": 2013,
+          "slug": "Class warfare on a train carrying humanity's survivors",
+          "poster": "https://image.tmdb.org/t/p/w500/nzccOvhrLGI0nvAknCEAk8bchD9.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 110415,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nzccOvhrLGI0nvAknCEAk8bchD9.jpg"
+        },
+        {
+          "title": "Mad Max",
+          "year": 1979,
+          "slug": "Post-apocalyptic Australian wasteland",
+          "poster": "https://image.tmdb.org/t/p/w500/5LrI4GiCSrChgkdskVZiwv643Kg.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 9659,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5LrI4GiCSrChgkdskVZiwv643Kg.jpg"
+        },
+        {
+          "title": "A Boy and His Dog",
+          "year": 1975,
+          "slug": "Post-nuclear survivor and his telepathic dog",
+          "poster": "https://image.tmdb.org/t/p/w500/dMbkoFzD5sEQvEaqRsIh4pTBJVq.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 4917,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dMbkoFzD5sEQvEaqRsIh4pTBJVq.jpg"
+        },
+        {
+          "title": "Waterworld",
+          "year": 1995,
+          "slug": "Earth flooded by melted ice caps",
+          "poster": "https://image.tmdb.org/t/p/w500/pBjf3xzi6kClzWXiKMclMUX7dOP.jpg",
+          "initialStreaming": "Peacock",
+          "tmdb_id": 9804,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pBjf3xzi6kClzWXiKMclMUX7dOP.jpg"
+        },
+        {
+          "title": "The Book of Eli",
+          "year": 2010,
+          "slug": "Lone wanderer in post-apocalyptic America",
+          "poster": "https://image.tmdb.org/t/p/w500/1H1y9ZiqNFaLgQiRDDZLA55PviW.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 20504,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1H1y9ZiqNFaLgQiRDDZLA55PviW.jpg"
+        },
+        {
+          "title": "When the Wind Blows",
+          "year": 1986,
+          "slug": "Elderly couple faces nuclear winter",
+          "poster": "https://image.tmdb.org/t/p/w500/sQ7CgHdDcKnnzhCXA7wC2JVL7qq.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 10857,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sQ7CgHdDcKnnzhCXA7wC2JVL7qq.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,176 @@
+{
+  "props": {
+    "title": "Teenage Mutant Ninja Turtles",
+    "year": 1990,
+    "initialSlug": "Four ninja turtles defend NYC from crime syndicate",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/shfAU6xIIEAEtsloIT3n9Fscz2E.jpg",
+    "initialStreaming": null,
+    "tmdbId": 1498,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Teenage Mutant Ninja Turtles** (1990) revolutionized practical creature effects with groundbreaking full-body suits from Jim Henson's Creature Shop. The film brilliantly translated the gritty aesthetic of Kevin Eastman and Peter Laird's original comics while balancing family-friendly humor. It proved darker superhero adaptations could work - arriving a year after **Batman** (1989) and grossing $202 million on a $13.5 million budget. The practical effects hold up remarkably well compared to later CGI attempts like **TMNT** (2007) and **Teenage Mutant Ninja Turtles** (2014)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Teenage Mutant Ninja Turtles",
+            "year": 1990,
+            "slug": "Four teenage mutant turtles trained in ninjutsu battle a crime syndicate in New York City",
+            "poster": "https://image.tmdb.org/t/p/w500/shfAU6xIIEAEtsloIT3n9Fscz2E.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 1498,
+            "poster_url": "https://image.tmdb.org/t/p/w500/shfAU6xIIEAEtsloIT3n9Fscz2E.jpg"
+          },
+          {
+            "title": "Teenage Mutant Ninja Turtles II: The Secret of the Ooze",
+            "year": 1991,
+            "slug": "The turtles face off against mutant creatures while discovering the origin of their mutation",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": null
+          },
+          {
+            "title": "TMNT",
+            "year": 2007,
+            "slug": "Animated revival featuring the turtles reuniting to face an ancient threat",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's success sparked a wave of comic book adaptations aimed at younger audiences while maintaining edge. **The Mask** (1994) and **The Crow** (1994) followed similar templates of dark source material modified for broader appeal. The practical puppet work influenced later films like **Small Soldiers** (1998) and **Theodore Rex** (1995), though few matched TMNT's perfect balance of practical effects and engaging storytelling."
+      },
+      {
+        "type": "text",
+        "content": "Director Steve Barron brought music video sensibilities to the action sequences, particularly in the atmospheric rooftop fights and subway confrontations. This visual style influenced later comic adaptations like **Spawn** (1997) and **Blade** (1998). The film's practical martial arts choreography, performed by stunt actors in 70-pound suits, remains impressive and grounded compared to modern CGI-heavy superhero films. SUBHEAD: Cultural Impact and Legacy"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Mask",
+            "year": 1994,
+            "slug": "A mild-mannered bank clerk transforms into a cartoon-like superhero when wearing a mysterious mask",
+            "poster": "https://image.tmdb.org/t/p/w500/xbbXp9px4o8Oe7IbGd0yIbla8mZ.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 854,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xbbXp9px4o8Oe7IbGd0yIbla8mZ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "TMNT's massive success established a template for merchandising and cross-promotion that superhero films still follow. The film spawned two immediate sequels, an animated series, and countless toys while proving comic properties could appeal to multiple demographics simultaneously. This multi-quadrant approach influenced everything from **Power Rangers: The Movie** (1995) to modern Marvel films."
+      }
+    ],
+    "exploreFurther": [
+      "Jim Henson's Creature Shop practical effects techniques and innovations",
+      "Comic book movie adaptation trends pre and post-TMNT",
+      "Martial arts choreography in heavy costumes and practical effects",
+      "Marketing and merchandising impact on 1990s children's action films",
+      "Evolution of practical vs CGI effects in superhero movies"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Batman",
+          "year": 1989,
+          "slug": "Dark Knight of Gotham battles the Joker",
+          "poster": "https://image.tmdb.org/t/p/w500/cij4dd21v2Rk2YtUQbV5kW69WB2.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 268,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cij4dd21v2Rk2YtUQbV5kW69WB2.jpg"
+        },
+        {
+          "title": "The Crow",
+          "year": 1994,
+          "slug": "Murdered rock musician returns from dead for revenge",
+          "poster": "https://image.tmdb.org/t/p/w500/rMMB3v6jYHjsvXRNJYESacoTD7j.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 9495,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rMMB3v6jYHjsvXRNJYESacoTD7j.jpg"
+        },
+        {
+          "title": "Power Rangers: The Movie",
+          "year": 1995,
+          "slug": "Teenage superheroes battle Ivan Ooze",
+          "poster": "https://image.tmdb.org/t/p/w500/pcLbHqs80dchv0byHivhdwHKEup.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9070,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pcLbHqs80dchv0byHivhdwHKEup.jpg"
+        },
+        {
+          "title": "Small Soldiers",
+          "year": 1998,
+          "slug": "Advanced toy soldiers come alive and wage war",
+          "poster": "https://image.tmdb.org/t/p/w500/2nuUjSzHsoYlRvTPmLo7m7gCQry.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 11551,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2nuUjSzHsoYlRvTPmLo7m7gCQry.jpg"
+        },
+        {
+          "title": "Spawn",
+          "year": 1997,
+          "slug": "Murdered soldier makes deal with devil to return",
+          "poster": "https://image.tmdb.org/t/p/w500/3svvunKXkhRvEKByGDua1Qu0otq.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10336,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3svvunKXkhRvEKByGDua1Qu0otq.jpg"
+        },
+        {
+          "title": "TMNT",
+          "year": 2007,
+          "slug": "CGI revival of the franchise",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": null
+        },
+        {
+          "title": "Blade",
+          "year": 1998,
+          "slug": "Half-vampire hunts the undead",
+          "poster": "https://image.tmdb.org/t/p/w500/oWT70TvbsmQaqyphCZpsnQR7R32.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 36647,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oWT70TvbsmQaqyphCZpsnQR7R32.jpg"
+        },
+        {
+          "title": "Dick Tracy",
+          "year": 1990,
+          "slug": "Comic strip detective fights colorful gangsters",
+          "poster": "https://image.tmdb.org/t/p/w500/AonBXZe8GwnW8f1TWI2KcewOsfS.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 8592,
+          "poster_url": "https://image.tmdb.org/t/p/w500/AonBXZe8GwnW8f1TWI2KcewOsfS.jpg"
+        },
+        {
+          "title": "The Rocketeer",
+          "year": 1991,
+          "slug": "Stunt pilot finds experimental jetpack",
+          "poster": "https://image.tmdb.org/t/p/w500/2tDFRESFwKww1LHRE8W1Exj9edH.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 10249,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2tDFRESFwKww1LHRE8W1Exj9edH.jpg"
+        },
+        {
+          "title": "Mystery Men",
+          "year": 1999,
+          "slug": "Wannabe superheroes protect Champion City",
+          "poster": "https://image.tmdb.org/t/p/w500/ciVSbFmDecOIwlxl9F6GhHVgCVJ.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 9824,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ciVSbFmDecOIwlxl9F6GhHVgCVJ.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

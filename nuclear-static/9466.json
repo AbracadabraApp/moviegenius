@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "Celebrity",
+    "year": 1998,
+    "initialSlug": "Black-and-white satire of fame-obsessed Manhattan",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/3pbcMORRjqYgfx87CXexLw32gk.jpg",
+    "initialStreaming": null,
+    "tmdbId": 9466,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Woody Allen's **Celebrity** (1998) marked a fascinating shift in his exploration of fame, shot in striking black and white by cinematographer Sven Nykvist. Kenneth Branagh channels Allen's trademark neurotic persona as journalist Lee Simon, navigating the vapid world of celebrity culture. The film parallels brilliantly with Federico Fellini's **La Dolce Vita** (1960), both examining the hollow pursuit of fame through the lens of a journalist. Like Robert Altman's **The Player** (1992), it skewers Hollywood's obsession with status while featuring real celebrities playing heightened versions of themselves."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "La Dolce Vita",
+            "year": 1960,
+            "slug": "Marcello Mastroianni plays a tabloid journalist chasing stories through Rome's high society, becoming increasingly disillusioned",
+            "poster": "https://image.tmdb.org/t/p/w500/skFeWHHBwbQNfXep9OEdrQPJKoS.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 439,
+            "poster_url": "https://image.tmdb.org/t/p/w500/skFeWHHBwbQNfXep9OEdrQPJKoS.jpg"
+          },
+          {
+            "title": "Notting Hill",
+            "year": 1999,
+            "slug": "A bookstore owner's life is turned upside down when he falls for a famous American actress",
+            "poster": "https://image.tmdb.org/t/p/w500/hHRIf2XHeQMbyRb3HUx19SF5Ujw.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 509,
+            "poster_url": "https://image.tmdb.org/t/p/w500/hHRIf2XHeQMbyRb3HUx19SF5Ujw.jpg"
+          },
+          {
+            "title": "Lost in Translation",
+            "year": 2003,
+            "slug": "An aging movie star and a neglected young woman form an unlikely bond in Tokyo",
+            "poster": "https://image.tmdb.org/t/p/w500/4k4Yz08WGfbu8ITIjaG99XTeco8.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 153,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4k4Yz08WGfbu8ITIjaG99XTeco8.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's cynical take on fame culture presaged our current social media landscape, sharing DNA with later works like **Great World of Sound** (2007) and Sofia Coppola's **Somewhere** (2010). Leonardo DiCaprio's cameo as a hotel-trashing movie star feels especially prescient, predating similar celebrity meltdown narratives in films like **Birdman** (2014). Allen's decision to cast Judy Davis as Lee's ex-wife provides a fascinating counterpoint, as her character finds unexpected success while rejecting the very celebrity lifestyle Lee desperately pursues."
+      },
+      {
+        "type": "text",
+        "content": "The film's structure, following multiple celebrity encounters, influenced later works like **Notting Hill** (1999) and **Interview** (2007). Its exploration of celebrity journalism connects to films like **Almost Famous** (2000) and **Frost/Nixon** (2008), though Allen's approach is distinctly more satirical. The black-and-white photography emphasizes the timeless nature of fame obsession, while also nodding to classic Hollywood's star system. SUBHEAD: Celebrity Culture and Media Satire"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Birdman",
+            "year": 2014,
+            "slug": "A washed-up actor who once played a famous superhero struggles to mount a Broadway play",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Celebrity** (1998) stands as a precursor to modern examinations of fame like **Ingrid Goes West** (2017) and **Neon Demon** (2016). Its vignette structure and ensemble cast prefigured later media satires like **Maps to the Stars** (2014) and **The Bling Ring** (2013). The film's prescient understanding of celebrity worship has only grown more relevant in the age of influencers and social media stars."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Celebrity Culture in Cinema: From Sunset Boulevard to Social Media",
+      "Woody Allen's Black and White Films: Aesthetic Choices and Thematic Links",
+      "Journalists as Protagonists in Film: From His Girl Friday to Spotlight",
+      "Meta-Celebrity: Stars Playing Themselves on Screen",
+      "The Influence of Federico Fellini on American Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Sunset Boulevard",
+          "year": 1950,
+          "slug": "An aging silent film star descends into madness while clinging to dreams of a comeback",
+          "poster": "https://image.tmdb.org/t/p/w500/sC4Dpmn87oz9AuxZ15Lmip0Ftgr.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 599,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sC4Dpmn87oz9AuxZ15Lmip0Ftgr.jpg"
+        },
+        {
+          "title": "Stardust Memories",
+          "year": 1980,
+          "slug": "A filmmaker reflects on his life and career while attending a retrospective of his work",
+          "poster": "https://image.tmdb.org/t/p/w500/y1EHgpL2hMVRcr6tIOy7VGLxaPs.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 11337,
+          "poster_url": "https://image.tmdb.org/t/p/w500/y1EHgpL2hMVRcr6tIOy7VGLxaPs.jpg"
+        },
+        {
+          "title": "Sweet and Lowdown",
+          "year": 1999,
+          "slug": "A fictional documentary about a jazz guitarist who never quite achieved the fame he desired",
+          "poster": "https://image.tmdb.org/t/p/w500/23S5qa8j3ajYnERcYCqMLfSeOvw.jpg",
+          "initialStreaming": "Apple TV",
+          "tmdb_id": 9684,
+          "poster_url": "https://image.tmdb.org/t/p/w500/23S5qa8j3ajYnERcYCqMLfSeOvw.jpg"
+        },
+        {
+          "title": "State and Main",
+          "year": 2000,
+          "slug": "A film crew disrupts a small town while shooting a movie",
+          "poster": "https://image.tmdb.org/t/p/w500/348hvpWeSGdAQlCrGvKbpC0FpQN.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 21991,
+          "poster_url": "https://image.tmdb.org/t/p/w500/348hvpWeSGdAQlCrGvKbpC0FpQN.jpg"
+        },
+        {
+          "title": "Living in Oblivion",
+          "year": 1995,
+          "slug": "An independent film director struggles with disasters on set",
+          "poster": "https://image.tmdb.org/t/p/w500/b54xDk98oWtEtAso9sj1wjaZDDH.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 9071,
+          "poster_url": "https://image.tmdb.org/t/p/w500/b54xDk98oWtEtAso9sj1wjaZDDH.jpg"
+        },
+        {
+          "title": "To Die For",
+          "year": 1995,
+          "slug": "A weather reporter will do anything to become famous on television",
+          "poster": "https://image.tmdb.org/t/p/w500/whz4bwvqE1OmQHIyqHdZD8jU9CO.jpg",
+          "initialStreaming": "Roku",
+          "tmdb_id": 577,
+          "poster_url": "https://image.tmdb.org/t/p/w500/whz4bwvqE1OmQHIyqHdZD8jU9CO.jpg"
+        },
+        {
+          "title": "The King of Comedy",
+          "year": 1982,
+          "slug": "A failed comedian kidnaps his idol in an attempt to gain fame",
+          "poster": "https://image.tmdb.org/t/p/w500/3BM78deUfeZfShqPTblZuamgC8a.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 262,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3BM78deUfeZfShqPTblZuamgC8a.jpg"
+        },
+        {
+          "title": "Paparazzi",
+          "year": 2004,
+          "slug": "A movie star takes revenge on the photographers who caused his family's accident",
+          "poster": "https://image.tmdb.org/t/p/w500/m9swmQKxrbRTYY3wN2bWmRiebM4.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 15644,
+          "poster_url": "https://image.tmdb.org/t/p/w500/m9swmQKxrbRTYY3wN2bWmRiebM4.jpg"
+        },
+        {
+          "title": "Full Frontal",
+          "year": 2002,
+          "slug": "An ensemble piece about Hollywood players and their interconnected lives",
+          "poster": "https://image.tmdb.org/t/p/w500/7FeoefSYELryi04Kz74xYTayPZk.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 15186,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7FeoefSYELryi04Kz74xYTayPZk.jpg"
+        },
+        {
+          "title": "America's Sweethearts",
+          "year": 2001,
+          "slug": "A publicist tries to manage a press junket for feuding movie star exes",
+          "poster": "https://image.tmdb.org/t/p/w500/4TQOYs8rCWi44O1tNbIQiRqHQkA.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 11467,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4TQOYs8rCWi44O1tNbIQiRqHQkA.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

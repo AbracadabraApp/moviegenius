@@ -1,0 +1,185 @@
+{
+  "props": {
+    "title": "Alexander Nevsky",
+    "year": 1938,
+    "initialSlug": "From Russia's Ice Comes History's Wrath",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/lsTJYStIsnddwioD1L4FEmwj4Cx.jpg",
+    "initialStreaming": null,
+    "tmdbId": 10235,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Alexander Nevsky** (1938) stands as Sergei Eisenstein's triumphant return to filmmaking after years of Stalin-era scrutiny. This medieval epic showcases Eisenstein's mastery of montage, particularly in the legendary Battle on the Ice sequence where the rhythmic cutting perfectly synchronizes with Sergei Prokofiev's thunderous score. The film's timing proved politically crucial - its depiction of Russians defeating German invaders served as clear anti-Nazi propaganda just before WWII. While less experimental than Eisenstein's earlier **Battleship Potemkin** (1925), it demonstrates his evolution from pure montage theory to a more sophisticated integration of sound, movement, and composition."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Battleship Potemkin",
+            "year": 1925,
+            "slug": "Eisenstein's revolutionary masterpiece about a 1905 naval mutiny, featuring the iconic Odessa Steps sequence",
+            "poster": "https://image.tmdb.org/t/p/w500/hZmsRLsCnE9Zshf1YJONUpCOhds.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 643,
+            "poster_url": "https://image.tmdb.org/t/p/w500/hZmsRLsCnE9Zshf1YJONUpCOhds.jpg"
+          },
+          {
+            "title": "Ivan the Terrible Part I",
+            "year": 1944,
+            "slug": "Eisenstein's psychological portrait of the Russian tsar, with striking shadow work and compositions",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": null
+          },
+          {
+            "title": "Strike",
+            "year": 1925,
+            "slug": "Eisenstein's first feature film showcasing his innovative montage techniques in depicting worker uprising",
+            "poster": "https://image.tmdb.org/t/p/w500/mrDTaMxQKxWZ3uEs2G58vJWJDDL.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 44967,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mrDTaMxQKxWZ3uEs2G58vJWJDDL.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends far beyond Soviet cinema. The Battle on the Ice sequence directly inspired countless directors, from Akira Kurosawa's **Seven Samurai** (1954) to Andrei Tarkovsky's **Andrei Rublev** (1966). Modern filmmakers continue drawing from its pioneering battle choreography - Peter Jackson studied it for **The Lord of the Rings** trilogy (2001-2003), while Ridley Scott's **Kingdom of Heaven** (2005) echoes its epic scale and religious themes."
+      },
+      {
+        "type": "text",
+        "content": "Eisenstein's use of close-ups and symbolic imagery set new standards for historical epics. Unlike the static pageantry of films like **The Private Life of Henry VIII** (1933), **Alexander Nevsky** employs dynamic compositions and dramatic angles that influenced everything from Laurence Olivier's **Henry V** (1944) to Orson Welles's **Chimes at Midnight** (1965). The film's marriage of music and image proved especially revolutionary - the Prokofiev score wasn't merely background music but an integral dramatic element. SUBHEAD: Technical Innovation and Propaganda"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Seven Samurai",
+            "year": 1954,
+            "slug": "Kurosawa's definitive samurai epic about warriors defending a village",
+            "poster": "https://image.tmdb.org/t/p/w500/8OKmBV5BUFzmozIC3pPWKHy17kx.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 346,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8OKmBV5BUFzmozIC3pPWKHy17kx.jpg"
+          },
+          {
+            "title": "Andrei Rublev",
+            "year": 1966,
+            "slug": "Tarkovsky's sweeping medieval drama about a Russian icon painter",
+            "poster": "https://image.tmdb.org/t/p/w500/910xRIUmNJrWH2hkQifBJtoPp5R.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 895,
+            "poster_url": "https://image.tmdb.org/t/p/w500/910xRIUmNJrWH2hkQifBJtoPp5R.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's technical achievements were groundbreaking for 1938. Eisenstein pioneered new methods for filming winter scenes, using marble dust and salt for snow effects. The massive scale of the battle sequences, involving hundreds of extras in period armor, set new standards for historical spectacle. Yet the film also serves as a master class in propaganda technique - the German knights are shot from menacing low angles wearing helmets resembling Nazi imagery, while the Russian forces are filmed heroically from below against open skies."
+      }
+    ],
+    "exploreFurther": [
+      "Eisenstein's Montage Theory and its influence on modern editing",
+      "The collaboration between Eisenstein and Prokofiev in creating integrated film scoring",
+      "Soviet historical epics and their role in national mythology",
+      "Medieval warfare depiction in cinema",
+      "Propaganda techniques in WWII-era films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "October",
+          "year": 1928,
+          "slug": "Eisenstein's dramatization of the Russian Revolution",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Private Life of Henry VIII",
+          "year": 1933,
+          "slug": "Charles Laughton's Oscar-winning portrayal of the Tudor king",
+          "poster": "https://image.tmdb.org/t/p/w500/ncQC8U3gGFhCTWlxxn32nkFr2d4.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 43122,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ncQC8U3gGFhCTWlxxn32nkFr2d4.jpg"
+        },
+        {
+          "title": "Henry V",
+          "year": 1944,
+          "slug": "Olivier's groundbreaking Shakespeare adaptation",
+          "poster": "https://image.tmdb.org/t/p/w500/eAisr20DvaKJeHvjDN0oHSx0l7u.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 22638,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eAisr20DvaKJeHvjDN0oHSx0l7u.jpg"
+        },
+        {
+          "title": "Ivan the Terrible Part II",
+          "year": 1958,
+          "slug": "The controversial second part of Eisenstein's Ivan trilogy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Cranes Are Flying",
+          "year": 1957,
+          "slug": "Soviet WWII drama with innovative camera techniques",
+          "poster": "https://image.tmdb.org/t/p/w500/foXYOdXEJ0rvtTDo4LLnsUnvPLB.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 38360,
+          "poster_url": "https://image.tmdb.org/t/p/w500/foXYOdXEJ0rvtTDo4LLnsUnvPLB.jpg"
+        },
+        {
+          "title": "Chimes at Midnight",
+          "year": 1965,
+          "slug": "Welles's masterful compilation of Shakespeare's historical plays",
+          "poster": "https://image.tmdb.org/t/p/w500/5Fjxyz3u2Zdco4WeuC3wQ6O5tYQ.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 986,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5Fjxyz3u2Zdco4WeuC3wQ6O5tYQ.jpg"
+        },
+        {
+          "title": "Prince Igor",
+          "year": 1969,
+          "slug": "Soviet opera film influenced by Alexander Nevsky's battle scenes",
+          "poster": "https://image.tmdb.org/t/p/w500/bkiEedlWZwptrlLhE42uw1lnJJo.jpg",
+          "initialStreaming": "n/a",
+          "tmdb_id": 83457,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bkiEedlWZwptrlLhE42uw1lnJJo.jpg"
+        },
+        {
+          "title": "Kingdom of Heaven",
+          "year": 2005,
+          "slug": "Scott's crusader epic with echoes of Nevsky's religious themes",
+          "poster": "https://image.tmdb.org/t/p/w500/rNaBe4TwbMef71sgscqabpGKsxh.jpg",
+          "initialStreaming": "Amazon",
+          "tmdb_id": 1495,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rNaBe4TwbMef71sgscqabpGKsxh.jpg"
+        },
+        {
+          "title": "Ran",
+          "year": 1985,
+          "slug": "Kurosawa's epic incorporating Eisenstein's battle techniques",
+          "poster": "https://image.tmdb.org/t/p/w500/iYQcDhuHrdPOHLUUxXaFChFrc97.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 11645,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iYQcDhuHrdPOHLUUxXaFChFrc97.jpg"
+        },
+        {
+          "title": "Hard to Be a God",
+          "year": 2013,
+          "slug": "Modern Russian medieval epic influenced by Nevsky's atmosphere",
+          "poster": "https://image.tmdb.org/t/p/w500/lmqx4l6JVKwtAe7CCoyzwTVcOpy.jpg",
+          "initialStreaming": "Amazon",
+          "tmdb_id": 110402,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lmqx4l6JVKwtAe7CCoyzwTVcOpy.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

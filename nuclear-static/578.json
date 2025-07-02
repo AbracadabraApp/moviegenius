@@ -1,0 +1,179 @@
+{
+  "props": {
+    "title": "Jaws",
+    "year": 1975,
+    "initialSlug": "Spielberg's defining summer blockbuster",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/lxM6kqilAdpdhqUl2biYp5frUxE.jpg",
+    "initialStreaming": null,
+    "tmdbId": 578,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Jaws** (1975) revolutionized blockbuster filmmaking through Steven Spielberg's masterful tension-building and John Williams' iconic two-note theme. The film's genius lies in withholding the shark for most of the runtime, forcing viewers to imagine the terror lurking beneath. This technique, born partly from mechanical shark malfunctions, created a template for monster movies like **Alien** (1979) and **The Thing** (1982). The dynamic between Roy Scheider's cautious Chief Brody, Richard Dreyfuss's scientific Hooper, and Robert Shaw's hardened Quint delivers character depth rarely seen in thriller films."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Deep Blue Sea",
+            "year": 1999,
+            "slug": "Genetically enhanced sharks terrorize researchers in an underwater facility",
+            "poster": "https://image.tmdb.org/t/p/w500/fyn0zyCI4kIlbDoHH0Hzv09hDC5.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 8914,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fyn0zyCI4kIlbDoHH0Hzv09hDC5.jpg"
+          },
+          {
+            "title": "The Meg",
+            "year": 2018,
+            "slug": "Jason Statham battles a prehistoric megalodon shark",
+            "poster": "https://image.tmdb.org/t/p/w500/eyWICPcxOuTcDDDbTMOZawoOn8d.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 345940,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eyWICPcxOuTcDDDbTMOZawoOn8d.jpg"
+          },
+          {
+            "title": "Open Water",
+            "year": 2003,
+            "slug": "Stranded scuba divers face sharks in true survival horror",
+            "poster": "https://image.tmdb.org/t/p/w500/85o7BSpumewsd8KoGYvqpGH54yF.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 83,
+            "poster_url": "https://image.tmdb.org/t/p/w500/85o7BSpumewsd8KoGYvqpGH54yF.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The success of Jaws spawned numerous marine horror films, though few matched its psychological complexity. **Deep Blue Sea** (1999) amped up the action with multiple intelligent sharks, while **The Reef** (2010) returned to minimalist survival horror. **47 Meters Down** (2017) trapped its protagonists in a shark cage, proving the subgenre's enduring appeal. But Spielberg's original triumph wasn't just about shark attacks - it explored small-town politics, masculinity, and human responses to invisible threats."
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends beyond horror. **Close Encounters of the Third Kind** (1977) and **Raiders of the Lost Ark** (1981) followed Spielberg's pattern of gradual revelation and character-driven suspense. The beach attack scene, with its innovative dolly zoom on Brody, became a masterclass in conveying psychological shock, later echoed in countless thrillers like **Vertigo** (1958) and **Goodfellas** (1990). SUBHEAD: The Legacy of Practical Effects"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Abyss",
+            "year": 1989,
+            "slug": "James Cameron's deep-sea alien encounter thriller",
+            "poster": "https://image.tmdb.org/t/p/w500/2dCit3XAtv9KWCJvRKdPkJ0FAkH.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 2756,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2dCit3XAtv9KWCJvRKdPkJ0FAkH.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While modern shark films rely heavily on CGI, Jaws proved the power of practical effects and suggestion. The mechanical shark's limitations forced creative solutions that heightened suspense. This approach influenced later practical effects masterpieces like **The Thing** (1982) and **Jurassic Park** (1993), where tangible threats created visceral audience responses. Even modern films like **The Shallows** (2016) combine practical and digital effects to recapture that physical menace."
+      }
+    ],
+    "exploreFurther": [
+      "The Development of the Summer Blockbuster Model",
+      "John Williams' Impact on Film Scoring",
+      "Practical vs CGI Effects in Monster Movies",
+      "Spielberg's Evolution as a Director",
+      "Marine Biology in Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Host",
+          "year": 2006,
+          "slug": "Korean monster movie about a creature in the Han River",
+          "poster": "https://image.tmdb.org/t/p/w500/qJc9na2UN7TvKqDWkxBkocPUUjT.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 1255,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qJc9na2UN7TvKqDWkxBkocPUUjT.jpg"
+        },
+        {
+          "title": "Crawl",
+          "year": 2019,
+          "slug": "Alligators trap people during a hurricane",
+          "poster": "https://image.tmdb.org/t/p/w500/4WH6AZd473lRZ3hUp8TYiv2LfZW.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 511987,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4WH6AZd473lRZ3hUp8TYiv2LfZW.jpg"
+        },
+        {
+          "title": "The Life Aquatic with Steve Zissou",
+          "year": 2004,
+          "slug": "Quirky adventure seeking a jaguar shark",
+          "poster": "https://image.tmdb.org/t/p/w500/qZoFLNBC78jzboWeDH6Ha0qavF2.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 421,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qZoFLNBC78jzboWeDH6Ha0qavF2.jpg"
+        },
+        {
+          "title": "The Reef",
+          "year": 2010,
+          "slug": "Australian survival thriller with real shark footage",
+          "poster": "https://image.tmdb.org/t/p/w500/s5JGAqmdv1cHlDjMqsmQUkVo2lW.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 49787,
+          "poster_url": "https://image.tmdb.org/t/p/w500/s5JGAqmdv1cHlDjMqsmQUkVo2lW.jpg"
+        },
+        {
+          "title": "47 Meters Down",
+          "year": 2017,
+          "slug": "Cage diving disaster leads to shark terror",
+          "poster": "https://image.tmdb.org/t/p/w500/2IgdRUTdHyoI3nFORcnnYEKOGIH.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 403119,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2IgdRUTdHyoI3nFORcnnYEKOGIH.jpg"
+        },
+        {
+          "title": "The Shallows",
+          "year": 2016,
+          "slug": "Surfer stranded by great white shark",
+          "poster": "https://image.tmdb.org/t/p/w500/bnBV7hZmLuA0Si5Aop481sPF2RY.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 332567,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bnBV7hZmLuA0Si5Aop481sPF2RY.jpg"
+        },
+        {
+          "title": "Rogue",
+          "year": 2007,
+          "slug": "Giant crocodile terrorizes tourists",
+          "poster": "https://image.tmdb.org/t/p/w500/abFDVe71e7UE5MpAqjZvUYT2U7M.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 13022,
+          "poster_url": "https://image.tmdb.org/t/p/w500/abFDVe71e7UE5MpAqjZvUYT2U7M.jpg"
+        },
+        {
+          "title": "Lake Placid",
+          "year": 1999,
+          "slug": "Giant crocodile thriller with dark humor",
+          "poster": "https://image.tmdb.org/t/p/w500/pEszakCP8j9E9S0UPLfEa3Cad3O.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9825,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pEszakCP8j9E9S0UPLfEa3Cad3O.jpg"
+        },
+        {
+          "title": "Piranha",
+          "year": 1978,
+          "slug": "Exploitation response to Jaws",
+          "poster": "https://image.tmdb.org/t/p/w500/oaz0Le3fT3R8jzlkXkNV7JAsd7x.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 24831,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oaz0Le3fT3R8jzlkXkNV7JAsd7x.jpg"
+        },
+        {
+          "title": "The Beach",
+          "year": 2000,
+          "slug": "Paradise turns deadly in isolated waters",
+          "poster": "https://image.tmdb.org/t/p/w500/4y7LxD8TSi6AtsM2xSYqUm1gu7u.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 1907,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4y7LxD8TSi6AtsM2xSYqUm1gu7u.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

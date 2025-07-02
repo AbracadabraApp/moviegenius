@@ -1,0 +1,165 @@
+{
+  "props": {
+    "title": "'Twas the Night Before Christmas",
+    "year": 1974,
+    "initialSlug": "Small town races to fix Santa's snubbed Christmas visit",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/i5qPfBSeKjNbFPl1CseOUSNqKGe.jpg",
+    "initialStreaming": null,
+    "tmdbId": 26547,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Rankin/Bass Productions' **'Twas the Night Before Christmas** (1974) stands as a distinctive holiday special that cleverly reimagines Clement Clarke Moore's classic poem. Unlike their signature stop-motion style seen in **Rudolph the Red-Nosed Reindeer** (1964), this special employs traditional cel animation, setting it apart in their catalogue. The story's expansion beyond the original poem - adding a clockmaker, talking mice, and a crisis where Santa might skip an entire town - demonstrates the creative storytelling that marked the golden age of television holiday specials, alongside classics like **A Charlie Brown Christmas** (1965) and **How the Grinch Stole Christmas** (1966)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Year Without a Santa Claus",
+            "year": 1974,
+            "slug": "Heat Miser and Snow Miser steal the show in this Rankin/Bass classic about Mrs. Claus trying to restore Santa's faith in Christmas",
+            "poster": "https://image.tmdb.org/t/p/w500/aG5aIRc4fuKtVXuseoYiNWdNQpC.jpg",
+            "initialStreaming": "AMC+",
+            "tmdb_id": 13397,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aG5aIRc4fuKtVXuseoYiNWdNQpC.jpg"
+          },
+          {
+            "title": "Santa Claus Is Comin' to Town",
+            "year": 1970,
+            "slug": "Fred Astaire narrates this origin story of Kris Kringle, featuring memorable songs and distinctive stop-motion animation",
+            "poster": "https://image.tmdb.org/t/p/w500/8BYZEKB0BQkbniS1WRzPaU38cmp.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 13400,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8BYZEKB0BQkbniS1WRzPaU38cmp.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The special's message about faith and skepticism feels particularly relevant to its 1970s context, when traditional holiday programming began incorporating more complex themes. The character of Albert Mouse, who questions Santa's existence through scientific reasoning, represents a departure from simpler Santa narratives like **Miracle on 34th Street** (1947). This sophisticated approach to belief versus doubt would later influence films like **The Polar Express** (2004) and **Elf** (2003), which similarly explore the tension between childhood wonder and grown-up cynicism. SUBHEAD: Musical Innovation in Holiday Animation"
+      },
+      {
+        "type": "text",
+        "content": "The musical elements of **'Twas the Night Before Christmas** (1974) deserve special attention, particularly \"Even a Miracle Needs a Hand,\" which exemplifies the sophisticated songwriting common to 1970s animated specials. This era produced remarkable original songs, from **The Little Drummer Boy** (1968) to **Frosty the Snowman** (1969), establishing a musical tradition that would influence later holiday animations like **Beauty and the Beast: The Enchanted Christmas** (1997) and **The Nightmare Before Christmas** (1993)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Frosty the Snowman",
+            "year": 1969,
+            "slug": "The beloved tale of a magical snowman brought to life by a silk hat, featuring the voice of Jimmy Durante",
+            "poster": "https://image.tmdb.org/t/p/w500/gw7ie4W3iW8nefnZ4kuw8dgYNM2.jpg",
+            "initialStreaming": "Freeform",
+            "tmdb_id": 13675,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gw7ie4W3iW8nefnZ4kuw8dgYNM2.jpg"
+          }
+        ]
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Rankin/Bass Animation Techniques",
+      "Adapting Classic Christmas Poems for Television",
+      "The Golden Age of Christmas TV Specials (1964-1974)",
+      "Musical Composition in Holiday Animation",
+      "The Influence of 1970s Holiday Specials on Modern Christmas Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Rudolph the Red-Nosed Reindeer",
+          "year": 1964,
+          "slug": "The definitive Rankin/Bass Christmas special about a misfit reindeer",
+          "poster": "https://image.tmdb.org/t/p/w500/xjAElUhXuc7zFJPj3qUHjcySNsE.jpg",
+          "initialStreaming": "Freeform",
+          "tmdb_id": 13382,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xjAElUhXuc7zFJPj3qUHjcySNsE.jpg"
+        },
+        {
+          "title": "Jack Frost",
+          "year": 1979,
+          "slug": "A lesser-known Rankin/Bass special about winter's guardian seeking to become human",
+          "poster": "https://image.tmdb.org/t/p/w500/rky3WOB9AZ4fELooSKWwmO9qRQq.jpg",
+          "initialStreaming": "DVD",
+          "tmdb_id": 26538,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rky3WOB9AZ4fELooSKWwmO9qRQq.jpg"
+        },
+        {
+          "title": "The Little Drummer Boy",
+          "year": 1968,
+          "slug": "A touching stop-motion special about a boy's gift to the newborn Jesus",
+          "poster": "https://image.tmdb.org/t/p/w500/oqnVoHW2aCOIFVHUCSxcm1XWeh9.jpg",
+          "initialStreaming": "DVD",
+          "tmdb_id": 18846,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oqnVoHW2aCOIFVHUCSxcm1XWeh9.jpg"
+        },
+        {
+          "title": "Nestor, the Long-Eared Christmas Donkey",
+          "year": 1977,
+          "slug": "A heartwarming tale of the donkey who carried Mary to Bethlehem",
+          "poster": "https://image.tmdb.org/t/p/w500/vx9q5vezpk2PJfMartzwHsMNdIw.jpg",
+          "initialStreaming": "DVD",
+          "tmdb_id": 26537,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vx9q5vezpk2PJfMartzwHsMNdIw.jpg"
+        },
+        {
+          "title": "The First Christmas: The Story of the First Christmas Snow",
+          "year": 1975,
+          "slug": "A blind shepherd boy experiences Christmas through other senses",
+          "poster": "https://image.tmdb.org/t/p/w500/80EHZIxm0ljhL7DZB2Q2HTEYJFZ.jpg",
+          "initialStreaming": "DVD",
+          "tmdb_id": 80529,
+          "poster_url": "https://image.tmdb.org/t/p/w500/80EHZIxm0ljhL7DZB2Q2HTEYJFZ.jpg"
+        },
+        {
+          "title": "Pinocchio's Christmas",
+          "year": 1980,
+          "slug": "A holiday adventure featuring the famous wooden puppet",
+          "poster": "https://image.tmdb.org/t/p/w500/46n9xy5tMG74jpepbfISVj03GIh.jpg",
+          "initialStreaming": "DVD",
+          "tmdb_id": 50934,
+          "poster_url": "https://image.tmdb.org/t/p/w500/46n9xy5tMG74jpepbfISVj03GIh.jpg"
+        },
+        {
+          "title": "The Life and Adventures of Santa Claus",
+          "year": 1985,
+          "slug": "L. Frank Baum's unique take on Santa's origin story",
+          "poster": "https://image.tmdb.org/t/p/w500/8jnmxV604BEzVSP6vf27RxOyGda.jpg",
+          "initialStreaming": "DVD",
+          "tmdb_id": 48880,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8jnmxV604BEzVSP6vf27RxOyGda.jpg"
+        },
+        {
+          "title": "Rudolph's Shiny New Year",
+          "year": 1976,
+          "slug": "Rudolph must find Baby New Year before midnight",
+          "poster": "https://image.tmdb.org/t/p/w500/v4T0lazUxH5yBjzG5jL90RjXJGB.jpg",
+          "initialStreaming": "DVD",
+          "tmdb_id": 30059,
+          "poster_url": "https://image.tmdb.org/t/p/w500/v4T0lazUxH5yBjzG5jL90RjXJGB.jpg"
+        },
+        {
+          "title": "The Cricket on the Hearth",
+          "year": 1967,
+          "slug": "Rankin/Bass adaptation of Dickens' other Christmas story",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "DVD",
+          "tmdb_id": null
+        },
+        {
+          "title": "Frosty's Winter Wonderland",
+          "year": 1976,
+          "slug": "The sequel to Frosty the Snowman featuring Jack Frost",
+          "poster": "https://image.tmdb.org/t/p/w500/o915rkZ0wwQjrk0UAEQkEkmt1E1.jpg",
+          "initialStreaming": "DVD",
+          "tmdb_id": 26539,
+          "poster_url": "https://image.tmdb.org/t/p/w500/o915rkZ0wwQjrk0UAEQkEkmt1E1.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "Shrek",
+    "year": 2001,
+    "initialSlug": "Grumpy ogre finds love while saving fairy tale kingdom",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/iB64vpL3dIObOtMZgX3RqdVdQDc.jpg",
+    "initialStreaming": null,
+    "tmdbId": 808,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Shrek** (2001) revolutionized animated comedy by skewering Disney fairy tale tropes while creating its own iconic story. The film's genius lies in its dual appeal - kids love the slapstick ogre adventures while adults catch the sharp parody of everything from **Snow White** (1937) to **Robin Hood** (1973). DreamWorks deliberately positioned Shrek as the anti-Disney hero - crude, grumpy, and living in a swamp rather than a castle. The film's groundbreaking CGI animation pushed technical boundaries, particularly in creating realistic fabric movement and facial expressions that would influence **Monsters Inc.** (2001) and **Ice Age** (2002)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Shrek 2",
+            "year": 2004,
+            "slug": "The superior sequel adds Prince Charming and the Fairy Godmother as pitch-perfect antagonists while expanding the fairy tale parody",
+            "poster": "https://image.tmdb.org/t/p/w500/2yYP0PQjG8zVqturh1BAqu2Tixl.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 809,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2yYP0PQjG8zVqturh1BAqu2Tixl.jpg"
+          },
+          {
+            "title": "Puss in Boots",
+            "year": 2011,
+            "slug": "The charismatic feline sidekick gets his own origin story, mixing fairy tales with Zorro-style swashbuckling",
+            "poster": "https://image.tmdb.org/t/p/w500/eufJ36oQCauDc427ewaEvQrhZ6i.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 417859,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eufJ36oQCauDc427ewaEvQrhZ6i.jpg"
+          },
+          {
+            "title": "Madagascar",
+            "year": 2005,
+            "slug": "DreamWorks' next big hit continued their irreverent approach to animation with pop culture jokes and adult humor",
+            "poster": "https://image.tmdb.org/t/p/w500/zMpJY5CJKUufG9OTw0In4eAFqPX.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 953,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zMpJY5CJKUufG9OTw0In4eAFqPX.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's impact on animated comedy can't be overstated. Before Shrek, animated features largely played it safe with traditional heroes and straightforward stories. **Antz** (1998) and **A Bug's Life** (1998) had hints of edgier humor, but Shrek kicked down the door for films like **Chicken Run** (2000) and **The Incredibles** (2004) to blend sophisticated wit with family entertainment. The film's use of pop music, particularly Smash Mouth's \"All Star,\" created a template for animated films to incorporate contemporary songs rather than just original musical numbers."
+      },
+      {
+        "type": "text",
+        "content": "Mike Myers and Eddie Murphy's voice performances set a new standard for celebrity voice acting. Unlike earlier star-powered animations like **Aladdin** (1992), Shrek let its actors improvise and bring their comedic personalities to the roles. This approach influenced everything from **Kung Fu Panda** (2008) to **Frozen** (2013), where the characters became inseparable from their voice actors' personalities. SUBHEAD: The Legacy of Subversive Animation"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "How to Train Your Dragon",
+            "year": 2010,
+            "slug": "DreamWorks' most emotionally mature film maintains Shrek's irreverence while telling a deeper story",
+            "poster": "https://image.tmdb.org/t/p/w500/ygGmAO60t8GyqUo9xYeYxSZAR3b.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 10191,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ygGmAO60t8GyqUo9xYeYxSZAR3b.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Shrek's success spawned countless imitators trying to capture its formula of fairy tale deconstruction and pop culture references. Films like **Hoodwinked!** (2005) and **Happily N'Ever After** (2006) missed the mark by focusing on parody without Shrek's heart. The original film worked because beneath its cynical surface lay a genuine message about self-acceptance and looking past appearances. This blueprint influenced superior films like **Wreck-It Ralph** (2012) and **The Lego Movie** (2014), which balanced satire with sincere storytelling."
+      }
+    ],
+    "exploreFurther": [
+      "The Technical Innovation of Shrek's CGI Animation",
+      "Fairy Tale Subversion in Modern Animation",
+      "The Impact of Celebrity Voice Acting on Animated Films",
+      "DreamWorks vs. Disney: The Animation Studio Rivalry",
+      "The Evolution of Adult Humor in Family Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Monsters vs. Aliens",
+          "year": 2009,
+          "slug": "DreamWorks continues genre parody with B-movie monsters",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": null
+        },
+        {
+          "title": "Over the Hedge",
+          "year": 2006,
+          "slug": "Animals meet suburban life in another DreamWorks hit",
+          "poster": "https://image.tmdb.org/t/p/w500/jtZnymorbnHY7mOiBXR14ZDJseM.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 7518,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jtZnymorbnHY7mOiBXR14ZDJseM.jpg"
+        },
+        {
+          "title": "Megamind",
+          "year": 2010,
+          "slug": "Supervillain comedy with similar theme of judging appearances",
+          "poster": "https://image.tmdb.org/t/p/w500/uZ9ytt3sPTx62XTfN56ILSuYWRe.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 38055,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uZ9ytt3sPTx62XTfN56ILSuYWRe.jpg"
+        },
+        {
+          "title": "Bee Movie",
+          "year": 2007,
+          "slug": "Jerry Seinfeld's attempt at Shrek-style animated comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/rYBaXgvTKFS8iZC7Wr8SMomSauQ.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 5559,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rYBaXgvTKFS8iZC7Wr8SMomSauQ.jpg"
+        },
+        {
+          "title": "Shark Tale",
+          "year": 2004,
+          "slug": "Ocean-set comedy following Shrek's celebrity voice actor model",
+          "poster": "https://image.tmdb.org/t/p/w500/r08DpyPyhXcJTfNZAICNGMzcQ8l.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 10555,
+          "poster_url": "https://image.tmdb.org/t/p/w500/r08DpyPyhXcJTfNZAICNGMzcQ8l.jpg"
+        },
+        {
+          "title": "The Emperor's New Groove",
+          "year": 2000,
+          "slug": "Disney's own attempt at irreverent animation",
+          "poster": "https://image.tmdb.org/t/p/w500/xU635vn1lMD9DWDloeuKmuhxxnQ.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 11688,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xU635vn1lMD9DWDloeuKmuhxxnQ.jpg"
+        },
+        {
+          "title": "Ratatouille",
+          "year": 2007,
+          "slug": "Another unconventional hero story with sophisticated humor",
+          "poster": "https://image.tmdb.org/t/p/w500/t3vaWRPSf6WjDSamIkKDs1iQWna.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 2062,
+          "poster_url": "https://image.tmdb.org/t/p/w500/t3vaWRPSf6WjDSamIkKDs1iQWna.jpg"
+        },
+        {
+          "title": "Tangled",
+          "year": 2010,
+          "slug": "Disney princess film showing Shrek's influence on the genre",
+          "poster": "https://image.tmdb.org/t/p/w500/ym7Kst6a4uodryxqbGOxmewF235.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 38757,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ym7Kst6a4uodryxqbGOxmewF235.jpg"
+        },
+        {
+          "title": "Rise of the Guardians",
+          "year": 2012,
+          "slug": "Fairy tale characters reimagined for modern audiences",
+          "poster": "https://image.tmdb.org/t/p/w500/sW4qOa9yF0Ikg7lppncQ0n5UhKX.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 81188,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sW4qOa9yF0Ikg7lppncQ0n5UhKX.jpg"
+        },
+        {
+          "title": "The Princess and the Frog",
+          "year": 2009,
+          "slug": "Traditional animation with modern sensibilities",
+          "poster": "https://image.tmdb.org/t/p/w500/v6nAUs62OJ4DXmnnmPFeVmMz8H9.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 10198,
+          "poster_url": "https://image.tmdb.org/t/p/w500/v6nAUs62OJ4DXmnnmPFeVmMz8H9.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "The Desert Fox",
+    "year": 1951,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/nqid63zCxtVLmferoP2GYGH6jhB.jpg",
+    "initialStreaming": null,
+    "tmdbId": 26205,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Desert Fox** (1951) marked a pivotal shift in post-WWII cinema, daring to humanize Field Marshal Erwin Rommel just six years after the war. James Mason's nuanced portrayal avoided both demonization and hero worship, instead examining how a celebrated military leader navigated his conscience under the Nazi regime. The film set a template for later German military perspectives like **Cross of Iron** (1977) and **Valkyrie** (2008), focusing on the internal resistance to Hitler rather than combat glory. This approach sparked controversy but opened the door for more complex WWII narratives."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Patton",
+            "year": 1970,
+            "slug": "George C. Scott's iconic portrayal of General Patton, including his North African campaigns against Rommel",
+            "poster": "https://image.tmdb.org/t/p/w500/rLM7jIEPTjj4CF7F1IrzzNjLUCu.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 11202,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rLM7jIEPTjj4CF7F1IrzzNjLUCu.jpg"
+          },
+          {
+            "title": "The Desert Rats",
+            "year": 1953,
+            "slug": "Richard Burton stars in this companion piece about the British forces who fought against Rommel",
+            "poster": "https://image.tmdb.org/t/p/w500/upCaOY9mkgF9tJoiPU8LFbLCkK8.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 36554,
+            "poster_url": "https://image.tmdb.org/t/p/w500/upCaOY9mkgF9tJoiPU8LFbLCkK8.jpg"
+          },
+          {
+            "title": "Five Graves to Cairo",
+            "year": 1943,
+            "slug": "Early wartime thriller featuring Rommel as a character, directed by Billy Wilder",
+            "poster": "https://image.tmdb.org/t/p/w500/sZuSO4VcIzsGWuoQoM6oEyfp1HV.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 60216,
+            "poster_url": "https://image.tmdb.org/t/p/w500/sZuSO4VcIzsGWuoQoM6oEyfp1HV.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extended beyond its immediate subject matter, helping establish a subgenre of WWII films focused on individual German officers' moral choices. **Downfall** (2004) and **Stauffenberg** (2004) followed this tradition, examining the human dimension of historical figures previously portrayed as one-dimensional villains. Mason's performance particularly influenced later depictions of German officers, as seen in **The Eagle Has Landed** (1976) and **Das Boot** (1981). SUBHEAD: The Evolution of Enemy Portrayal in War Films"
+      },
+      {
+        "type": "text",
+        "content": "**The Desert Fox** (1951) arrived at a crucial moment when Hollywood was reconsidering its approach to war narratives. Unlike the straightforward propaganda of films like **Casablanca** (1942), it presented a more nuanced view of the enemy, influencing later works like **Letters from Iwo Jima** (2006) and **The Bridge** (1959). This shift toward humanizing former adversaries reflected both Cold War politics and a maturing approach to historical storytelling."
+      }
+    ],
+    "exploreFurther": [
+      "The real Operation Valkyrie and German resistance to Hitler",
+      "Rommel's actual military campaigns in North Africa",
+      "Evolution of WWII films from propaganda to historical analysis",
+      "James Mason's other historical portrayals",
+      "Post-war Hollywood's changing depiction of German military figures"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Valkyrie",
+          "year": 2008,
+          "slug": "Tom Cruise stars as Colonel von Stauffenberg in this thriller about the plot to kill Hitler",
+          "poster": "https://image.tmdb.org/t/p/w500/8eoRtXswC8IQDsqW7iJWO56NhAv.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 2253,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8eoRtXswC8IQDsqW7iJWO56NhAv.jpg"
+        },
+        {
+          "title": "The Longest Day",
+          "year": 1962,
+          "slug": "Epic D-Day film featuring German perspective alongside Allied forces",
+          "poster": "https://image.tmdb.org/t/p/w500/5zmvEofdIlgXrQl9A7e5IOzlnFU.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9289,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5zmvEofdIlgXrQl9A7e5IOzlnFU.jpg"
+        },
+        {
+          "title": "Cross of Iron",
+          "year": 1977,
+          "slug": "Sam Peckinpah's brutal war film from the German Army's perspective",
+          "poster": "https://image.tmdb.org/t/p/w500/fR6pqh5aFn0fawsn7sR2zC15swx.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 10839,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fR6pqh5aFn0fawsn7sR2zC15swx.jpg"
+        },
+        {
+          "title": "Rommel",
+          "year": 2012,
+          "slug": "German biographical film examining the Field Marshal's final years",
+          "poster": "https://image.tmdb.org/t/p/w500/d61Zqug5ka7Rn0RsTPyQgJA30vO.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 139862,
+          "poster_url": "https://image.tmdb.org/t/p/w500/d61Zqug5ka7Rn0RsTPyQgJA30vO.jpg"
+        },
+        {
+          "title": "The Night of the Generals",
+          "year": 1967,
+          "slug": "Murder mystery set among German high command",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Is Paris Burning?",
+          "year": 1966,
+          "slug": "World War II drama featuring German military leadership",
+          "poster": "https://image.tmdb.org/t/p/w500/17hAYO8RthpCNxnBZGJWNG5sf9u.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 4708,
+          "poster_url": "https://image.tmdb.org/t/p/w500/17hAYO8RthpCNxnBZGJWNG5sf9u.jpg"
+        },
+        {
+          "title": "Battle of Britain",
+          "year": 1969,
+          "slug": "Air war epic showing both RAF and Luftwaffe perspectives",
+          "poster": "https://image.tmdb.org/t/p/w500/98kyEWxcqqNrsaprUtPaQ4adsNG.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 11463,
+          "poster_url": "https://image.tmdb.org/t/p/w500/98kyEWxcqqNrsaprUtPaQ4adsNG.jpg"
+        },
+        {
+          "title": "The Eagle Has Landed",
+          "year": 1976,
+          "slug": "German special forces attempt to kidnap Winston Churchill",
+          "poster": "https://image.tmdb.org/t/p/w500/dxLuj7VIv0ZRdvaIB6eY5fApONF.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 11372,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dxLuj7VIv0ZRdvaIB6eY5fApONF.jpg"
+        },
+        {
+          "title": "Downfall",
+          "year": 2004,
+          "slug": "Hitler's final days in the bunker through German eyes",
+          "poster": "https://image.tmdb.org/t/p/w500/cP1ElGjBhbZAAqmueXjHDKlSwiP.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 613,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cP1ElGjBhbZAAqmueXjHDKlSwiP.jpg"
+        },
+        {
+          "title": "Stalingrad",
+          "year": 1993,
+          "slug": "German perspective of the devastating Eastern Front battle",
+          "poster": "https://image.tmdb.org/t/p/w500/rB78VDAOK94KJWp9ofgE3GSQEor.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 11101,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rB78VDAOK94KJWp9ofgE3GSQEor.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,168 @@
+{
+  "props": {
+    "title": "Here and Elsewhere",
+    "year": 1976,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/psfTGi1OzMjLDotZyZg4Tl0Ws4e.jpg",
+    "initialStreaming": null,
+    "tmdbId": 26298,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Jean-Luc Godard and Anne-Marie Miéville's **Here and Elsewhere** (1976) marks a crucial turning point in political documentary filmmaking. Originally conceived as \"Until Victory\" with the Dziga Vertov Group in 1970, documenting Palestinian fighters, the film transformed after the Black September massacre. Godard and Miéville radically reworked the footage, creating a self-reflexive examination of how Western audiences consume images of conflict. This approach influenced later works like **The Fog of War** (2003) and **5 Broken Cameras** (2011), establishing a new framework for questioning documentary ethics."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Close-Up",
+            "year": 1990,
+            "slug": "Abbas Kiarostami's meta-documentary blurs reality and fiction, following a man who impersonates filmmaker Mohsen Makhmalbaf",
+            "poster": "https://image.tmdb.org/t/p/w500/m9HG2N9ZKCmNN9qOHJTNyy18wn3.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 30017,
+            "poster_url": "https://image.tmdb.org/t/p/w500/m9HG2N9ZKCmNN9qOHJTNyy18wn3.jpg"
+          },
+          {
+            "title": "Level Five",
+            "year": 1997,
+            "slug": "Chris Marker explores memory, history and digital media through the lens of the Battle of Okinawa",
+            "poster": "https://image.tmdb.org/t/p/w500/9C0ntn8RXc9U3La2PjUtpLlIEOo.jpg",
+            "initialStreaming": "MUBI",
+            "tmdb_id": 57563,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9C0ntn8RXc9U3La2PjUtpLlIEOo.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's innovative use of multiple screens and layered commentary directly challenged conventional documentary practices. Like Chris Marker's **Sans Soleil** (1983), it questions the relationship between image and reality, \"here\" (France) and \"elsewhere\" (Palestine). This technique of visual dialectics influenced filmmakers like Harun Farocki, particularly in works like **Images of the World and the Inscription of War** (1989)."
+      },
+      {
+        "type": "text",
+        "content": "The film's examination of media representation and political struggle resonates with later works like **The Battle of Algiers** (1966) and **Notre Musique** (2004). Its critique of how Western media consumes and reproduces images of conflict remains startlingly relevant, prefiguring discussions in films like **The Act of Killing** (2012). SUBHEAD: Impact on Political Documentary"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "F for Fake",
+            "year": 1973,
+            "slug": "Orson Welles' final completed film explores truth, authorship, and artistic authenticity",
+            "poster": "https://image.tmdb.org/t/p/w500/fVeIDxS73CrosoeVOaefQuCUGZg.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 43003,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fVeIDxS73CrosoeVOaefQuCUGZg.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Here and Elsewhere** (1976) revolutionized the political documentary by introducing a self-critical dimension. This influence can be traced through films like **Videograms of a Revolution** (1992) and **The Events in Focus** (1974), where filmmakers actively question their own role in documenting political struggles. The film's technique of using multiple screens and contradictory narratives established a new language for political cinema."
+      }
+    ],
+    "exploreFurther": [
+      "Godard's Evolution from New Wave to Political Cinema",
+      "Palestinian Cinema and Political Representation",
+      "Documentary Ethics and Image Politics",
+      "The Influence of the Dziga Vertov Group",
+      "Multi-Screen Techniques in Political Documentary"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "La Chinoise",
+          "year": 1967,
+          "slug": "Godard's examination of young Maoist revolutionaries",
+          "poster": "https://image.tmdb.org/t/p/w500/hfGzYErvwi8hB38kCsSNy6OjdPv.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1629,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hfGzYErvwi8hB38kCsSNy6OjdPv.jpg"
+        },
+        {
+          "title": "In Girum Imus Nocte et Consumimur Igni",
+          "year": 1978,
+          "slug": "Debord's final film critiquing spectacle society",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Hour of the Furnaces",
+          "year": 1968,
+          "slug": "Revolutionary Argentine documentary",
+          "poster": "https://image.tmdb.org/t/p/w500/750AVmOtNEXAaOzW9ArwbP8IrRv.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 89681,
+          "poster_url": "https://image.tmdb.org/t/p/w500/750AVmOtNEXAaOzW9ArwbP8IrRv.jpg"
+        },
+        {
+          "title": "Far from Vietnam",
+          "year": 1967,
+          "slug": "Collaborative anti-war documentary",
+          "poster": "https://image.tmdb.org/t/p/w500/fwMPDjZKim3BQFomQfPcywwEwOp.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 36140,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fwMPDjZKim3BQFomQfPcywwEwOp.jpg"
+        },
+        {
+          "title": "Tout va bien",
+          "year": 1972,
+          "slug": "Godard's examination of factory workers and media",
+          "poster": "https://image.tmdb.org/t/p/w500/3KLD248mlx8Ea6f6pVm0iDxpw8s.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 8071,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3KLD248mlx8Ea6f6pVm0iDxpw8s.jpg"
+        },
+        {
+          "title": "Letter to Jane",
+          "year": 1972,
+          "slug": "Godard and Gorin analyze a single photograph",
+          "poster": "https://image.tmdb.org/t/p/w500/ekloqDjPlHyix7FkblH5X5h8TmR.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": 156982,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ekloqDjPlHyix7FkblH5X5h8TmR.jpg"
+        },
+        {
+          "title": "The Image Book",
+          "year": 2018,
+          "slug": "Godard's latest essay film on cinema and politics",
+          "poster": "https://image.tmdb.org/t/p/w500/5y1mTTYPVvaPeKIVqy3DymE6osv.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": 414030,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5y1mTTYPVvaPeKIVqy3DymE6osv.jpg"
+        },
+        {
+          "title": "News from Home",
+          "year": 1977,
+          "slug": "Chantal Akerman's personal documentary",
+          "poster": "https://image.tmdb.org/t/p/w500/5LqgIR3npCOswRefM5f437Xx9Hb.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 86814,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5LqgIR3npCOswRefM5f437Xx9Hb.jpg"
+        },
+        {
+          "title": "Handsworth Songs",
+          "year": 1986,
+          "slug": "Black Audio Film Collective's experimental documentary",
+          "poster": "https://image.tmdb.org/t/p/w500/6Ix0vZtj9q98wA2uBmm1FKStYAP.jpg",
+          "initialStreaming": "BFI",
+          "tmdb_id": 124027,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6Ix0vZtj9q98wA2uBmm1FKStYAP.jpg"
+        },
+        {
+          "title": "Riddles of the Sphinx",
+          "year": 1977,
+          "slug": "Laura Mulvey's feminist experimental film",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BFI",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

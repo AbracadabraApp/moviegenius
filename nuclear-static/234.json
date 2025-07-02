@@ -1,0 +1,162 @@
+{
+  "props": {
+    "title": "The Cabinet of Dr. Caligari",
+    "year": 1920,
+    "initialSlug": "Madman manipulates sleepwalker to commit murder",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/myK9DeIsXWGKgUTZyGXg2IfFk0W.jpg",
+    "initialStreaming": "TBD",
+    "tmdbId": 234,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Cabinet of Dr. Caligari** (1920) revolutionized cinema with its expressionist nightmare vision. Director Robert Wiene twisted reality through painted shadows, tilted sets, and geometric distortions that externalized psychological trauma. The film's influence echoes through horror and noir, from **Nosferatu** (1922) to **Metropolis** (1927) to modern psychological thrillers like **Shutter Island** (2010). Its unreliable narrator twist ending predated **Fight Club** (1999) by nearly 80 years, while its asylum-frame story inspired everything from **One Flew Over the Cuckoo's Nest** (1975) to **Sucker Punch** (2011)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Cabinet of Dr. Caligari",
+            "year": 1920,
+            "slug": "A hypnotist uses a sleepwalker to commit murders in this German Expressionist masterpiece",
+            "poster": "https://image.tmdb.org/t/p/w500/myK9DeIsXWGKgUTZyGXg2IfFk0W.jpg",
+            "initialStreaming": "Kanopy",
+            "tmdb_id": 234,
+            "poster_url": "https://image.tmdb.org/t/p/w500/myK9DeIsXWGKgUTZyGXg2IfFk0W.jpg"
+          },
+          {
+            "title": "Nosferatu",
+            "year": 1922,
+            "slug": "Unauthorized Dracula adaptation featuring Max Schreck's iconic vampire count",
+            "poster": "https://image.tmdb.org/t/p/w500/zv7J85D8CC9qYagAEhPM63CIG6j.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 653,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zv7J85D8CC9qYagAEhPM63CIG6j.jpg"
+          },
+          {
+            "title": "M",
+            "year": 1931,
+            "slug": "Fritz Lang's psychological thriller about a child murderer, featuring expressionist techniques",
+            "poster": "https://image.tmdb.org/t/p/w500/7s6zEsOAY3LD5qvzljmKKzjnLiT.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 3007,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7s6zEsOAY3LD5qvzljmKKzjnLiT.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's visual style created a template for cinematic horror. The jagged architecture and harsh angles influenced Universal horror classics like **Dracula** (1931) and **Frankenstein** (1931). German Expressionism's emphasis on psychological states through visual design carried forward to film noir, seen in **Double Indemnity** (1944) and **The Third Man** (1949). Modern directors like Tim Burton explicitly reference Caligari's style - **Edward Scissorhands** (1990) and **The Nightmare Before Christmas** (1993) are direct descendants."
+      },
+      {
+        "type": "text",
+        "content": "Caligari's exploration of authority, madness, and reality's fragility resonates with contemporary films. **Black Swan** (2010) uses similar techniques to portray psychological breakdown, while **Inception** (2010) plays with dream architecture that recalls Caligari's twisted sets. The film's influence on horror extends to **The Babadook** (2014) and **A Cure for Wellness** (2016), which both draw on its asylum imagery and questioning of reality. SUBHEAD: Legacy in Modern Cinema"
+      },
+      {
+        "type": "text",
+        "content": "The film's innovative narrative structure continues to inspire. **Shutter Island** (2010) directly references Caligari's asylum-twist ending, while **The Sixth Sense** (1999) employs similar unreliable narrator techniques. The blurring of reality and madness influences psychological horror like **Jacob's Ladder** (1990) and **Session 9** (2001). Even found-footage horror owes a debt to Caligari's frame narrative structure."
+      }
+    ],
+    "exploreFurther": [
+      "German Expressionism's influence on Film Noir",
+      "The evolution of unreliable narrator techniques in cinema",
+      "Visual design in psychological horror films",
+      "The impact of German cinema on Universal Horror",
+      "Asylum narratives in horror cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Metropolis",
+          "year": 1927,
+          "slug": "Fritz Lang's expressionist sci-fi masterpiece",
+          "poster": "https://image.tmdb.org/t/p/w500/vZIJxGnjcswPCAa52jhbl01FQkV.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 19,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vZIJxGnjcswPCAa52jhbl01FQkV.jpg"
+        },
+        {
+          "title": "The Last Laugh",
+          "year": 1924,
+          "slug": "Murnau's experimental silent drama using subjective camera",
+          "poster": "https://image.tmdb.org/t/p/w500/7Y6Dxr3oYt1w7ew70YNdLLDYEjk.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 5991,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7Y6Dxr3oYt1w7ew70YNdLLDYEjk.jpg"
+        },
+        {
+          "title": "Das Wachsfigurenkabinett",
+          "year": 1924,
+          "slug": "Anthology horror with similar expressionist style",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Hands of Orlac",
+          "year": 1924,
+          "slug": "Psychological horror about a pianist's transplanted hands",
+          "poster": "https://image.tmdb.org/t/p/w500/40WWy1SSx8rh1r4mn1MNpCKIteF.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 2974,
+          "poster_url": "https://image.tmdb.org/t/p/w500/40WWy1SSx8rh1r4mn1MNpCKIteF.jpg"
+        },
+        {
+          "title": "The Golem",
+          "year": 1920,
+          "slug": "Jewish folk horror with expressionist visuals",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Dr. Jekyll and Mr. Hyde",
+          "year": 1920,
+          "slug": "Early horror adaptation showing Caligari's influence",
+          "poster": "https://image.tmdb.org/t/p/w500/u8OL0RbTNzqqB1WmkxroTBXohnv.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": 3016,
+          "poster_url": "https://image.tmdb.org/t/p/w500/u8OL0RbTNzqqB1WmkxroTBXohnv.jpg"
+        },
+        {
+          "title": "The Student of Prague",
+          "year": 1913,
+          "slug": "Early German supernatural tale",
+          "poster": "https://image.tmdb.org/t/p/w500/tO2zgNEY0MqtvEyPioTTfHgmN2Q.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": 28627,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tO2zgNEY0MqtvEyPioTTfHgmN2Q.jpg"
+        },
+        {
+          "title": "Warning Shadows",
+          "year": 1923,
+          "slug": "Expressionist psychological drama",
+          "poster": "https://image.tmdb.org/t/p/w500/vSQRXcGKVuvNmvAeJZj3Sw42FWi.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 84956,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vSQRXcGKVuvNmvAeJZj3Sw42FWi.jpg"
+        },
+        {
+          "title": "Genuine",
+          "year": 1920,
+          "slug": "Robert Wiene's follow-up to Caligari",
+          "poster": "https://image.tmdb.org/t/p/w500/pQZNf7PA0CTJXZFez7NQ3RUgJ0r.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": 84943,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pQZNf7PA0CTJXZFez7NQ3RUgJ0r.jpg"
+        },
+        {
+          "title": "From Morn to Midnight",
+          "year": 1920,
+          "slug": "Radical expressionist experiment",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

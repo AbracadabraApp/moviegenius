@@ -1,0 +1,158 @@
+{
+  "props": {
+    "title": "The Adventures of Tintin",
+    "year": 2011,
+    "initialSlug": "Embark on an unforgettable adventure!",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/fQZ3sLR1Fi63NMsNRbjm9q5qODJ.jpg",
+    "initialStreaming": null,
+    "tmdbId": 17578,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Spielberg's **The Adventures of Tintin** (2011) marks a fascinating leap in motion-capture animation, bringing Hergé's beloved comics to vibrant life. The film channels the kinetic energy of **Raiders of the Lost Ark** (1981) while pushing technical boundaries like **Avatar** (2009). Its breathtaking Morocco chase sequence, rendered in a single \"shot,\" demonstrates how animation can achieve the impossible while maintaining photorealistic detail. The film sits at an interesting crossroads between European comic tradition and Hollywood adventure spectacle."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Rango",
+            "year": 2011,
+            "slug": "Gore Verbinski's weird Western featuring Johnny Depp as a chameleon delivers similarly ambitious animated action sequences",
+            "poster": "https://image.tmdb.org/t/p/w500/A5MP1guV8pbruieG0tnpPIbaJtt.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 44896,
+            "poster_url": "https://image.tmdb.org/t/p/w500/A5MP1guV8pbruieG0tnpPIbaJtt.jpg"
+          },
+          {
+            "title": "How to Train Your Dragon",
+            "year": 2010,
+            "slug": "Another technical marvel blending action-adventure with stunning flight sequences",
+            "poster": "https://image.tmdb.org/t/p/w500/ygGmAO60t8GyqUo9xYeYxSZAR3b.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 10191,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ygGmAO60t8GyqUo9xYeYxSZAR3b.jpg"
+          },
+          {
+            "title": "Asterix and Obelix: Mission Cleopatra",
+            "year": 2002,
+            "slug": "Live-action adaptation of beloved European comics that captures the source material's spirit",
+            "poster": "https://image.tmdb.org/t/p/w500/5gMmVSkY7RAxb5xRk7ej7JVhXyl.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 2899,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5gMmVSkY7RAxb5xRk7ej7JVhXyl.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The motion capture technology in Tintin builds on the foundation laid by **The Polar Express** (2004) and **Beowulf** (2007), but finally overcomes the \"uncanny valley\" that plagued those earlier attempts. Where previous mocap films felt stiff and artificial, Tintin achieves a perfect balance between stylization and realistic movement. This breakthrough influenced later hybrid works like **Ready Player One** (2018) and **The Lion King** (2019). SUBHEAD: The Evolution of Comic Adaptations"
+      },
+      {
+        "type": "text",
+        "content": "Tintin represents a high water mark in comic-to-film adaptations, joining films like **Scott Pilgrim vs. the World** (2010) and **Sin City** (2005) in successfully translating graphic novel aesthetics to screen. While many adaptations like **Cowboys & Aliens** (2011) struggle to capture their source material's essence, Tintin maintains Hergé's clear line style while adding cinematic depth. The film's approach to action and mystery mirrors the comics' globe-trotting appeal while updating the storytelling for modern audiences."
+      }
+    ],
+    "exploreFurther": [
+      "The history of Hergé's Tintin comics and their global influence",
+      "Evolution of motion capture technology in cinema",
+      "Spielberg's approach to action choreography",
+      "European comics' adaptation to Hollywood",
+      "The art of translating comic panel composition to film"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Monster House",
+          "year": 2006,
+          "slug": "Early mocap animation horror-comedy with similar technical ambitions",
+          "poster": "https://image.tmdb.org/t/p/w500/zCRPr4bkO3ae0U1134vJ39xZnAG.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9297,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zCRPr4bkO3ae0U1134vJ39xZnAG.jpg"
+        },
+        {
+          "title": "Mars Needs Moms",
+          "year": 2011,
+          "slug": "Another mocap experiment showing the technology's limitations",
+          "poster": "https://image.tmdb.org/t/p/w500/g94LNU4pipIUJLkTvYIgNGfT2J2.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 50321,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g94LNU4pipIUJLkTvYIgNGfT2J2.jpg"
+        },
+        {
+          "title": "Rise of the Guardians",
+          "year": 2012,
+          "slug": "Stylized animation balancing realism and fantasy",
+          "poster": "https://image.tmdb.org/t/p/w500/sW4qOa9yF0Ikg7lppncQ0n5UhKX.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 81188,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sW4qOa9yF0Ikg7lppncQ0n5UhKX.jpg"
+        },
+        {
+          "title": "The BFG",
+          "year": 2016,
+          "slug": "Spielberg's return to mocap storytelling",
+          "poster": "https://image.tmdb.org/t/p/w500/gjA5u7ZLgwkSoNCGCUfNSMv4fYn.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 15433,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gjA5u7ZLgwkSoNCGCUfNSMv4fYn.jpg"
+        },
+        {
+          "title": "The Adventures of Spirou and Fantasio",
+          "year": 2018,
+          "slug": "Another European comic adaptation with similar tone",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Valerian and the City of a Thousand Planets",
+          "year": 2017,
+          "slug": "European comic adaptation with heavy CGI elements",
+          "poster": "https://image.tmdb.org/t/p/w500/vlc95gl3PtrjxSEuM8RhTtSm2xU.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 339964,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vlc95gl3PtrjxSEuM8RhTtSm2xU.jpg"
+        },
+        {
+          "title": "Captain Haddock's First Adventure",
+          "year": 1947,
+          "slug": "Early Tintin animation attempt",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Archive.org",
+          "tmdb_id": null
+        },
+        {
+          "title": "Peter Jackson's King Kong",
+          "year": 2005,
+          "slug": "Major influence on Tintin's mocap techniques",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": null
+        },
+        {
+          "title": "A Christmas Carol",
+          "year": 2009,
+          "slug": "Robert Zemeckis mocap adaptation showing technology evolution",
+          "poster": "https://image.tmdb.org/t/p/w500/goHDZUnqZJ7FN4h48Qh6MzJNExl.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 17979,
+          "poster_url": "https://image.tmdb.org/t/p/w500/goHDZUnqZJ7FN4h48Qh6MzJNExl.jpg"
+        },
+        {
+          "title": "Final Fantasy: The Spirits Within",
+          "year": 2001,
+          "slug": "Early photorealistic animation attempt",
+          "poster": "https://image.tmdb.org/t/p/w500/phYEy6Am7vRlr9KzMb0wbGMHTzz.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 2114,
+          "poster_url": "https://image.tmdb.org/t/p/w500/phYEy6Am7vRlr9KzMb0wbGMHTzz.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,115 @@
+{
+  "props": {
+    "title": "Get Rich or Die Tryin'",
+    "year": 2005,
+    "initialSlug": "50 Cent's raw journey from dealer to rap stardom",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/aaEJu8vFKtrAoSRtw3xjCf1aM5d.jpg",
+    "initialStreaming": null,
+    "tmdbId": 10060,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Get Rich or Die Tryin'** (2005) marks 50 Cent's semi-autobiographical film debut, following the template of **8 Mile** (2002) but with grittier street elements. Director Jim Sheridan, known for **In the Name of the Father** (1993), brings surprising emotional depth to this story of an orphaned drug dealer pursuing rap stardom. While the film received mixed reviews, it captures the raw energy of early 2000s hip-hop cinema alongside contemporaries like **Hustle & Flow** (2005)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Hustle & Flow",
+            "year": 2005,
+            "slug": "A Memphis pimp struggles to become a rapper while fighting to escape street life",
+            "poster": "https://image.tmdb.org/t/p/w500/9skOqw9sld2MKKqkKKU78e0Jw7W.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 10476,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9skOqw9sld2MKKqkKKU78e0Jw7W.jpg"
+          },
+          {
+            "title": "8 Mile",
+            "year": 2002,
+            "slug": "Eminem stars in this gritty drama about a Detroit rapper battling for respect",
+            "poster": "https://image.tmdb.org/t/p/w500/7BmQj8qE1FLuLTf7Xjf9sdIHzoa.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 65,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7BmQj8qE1FLuLTf7Xjf9sdIHzoa.jpg"
+          },
+          {
+            "title": "Notorious",
+            "year": 2009,
+            "slug": "Biographical drama chronicling the life and death of The Notorious B.I.G.",
+            "poster": "https://image.tmdb.org/t/p/w500/62NsZPgueSiE8y7dqtU3FSLFwYw.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 14410,
+            "poster_url": "https://image.tmdb.org/t/p/w500/62NsZPgueSiE8y7dqtU3FSLFwYw.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The mid-2000s saw a wave of hip-hop films exploring the intersection of music and street life. **ATL** (2006) took a lighter approach focusing on coming-of-age themes, while **Notorious** (2009) dove deep into the East Coast-West Coast rivalry. These films shared common threads about escape through artistic expression and the struggle between street credibility and mainstream success. SUBHEAD: The Evolution of Hip-Hop Cinema"
+      },
+      {
+        "type": "text",
+        "content": "The groundwork for films like Get Rich was laid by earlier classics like **Krush Groove** (1985) and **Beat Street** (1984), which documented hip-hop culture's emergence. By the 2000s, the genre evolved to include more complex narratives about the music industry itself, seen in films like **Brown Sugar** (2002) and **Save the Last Dance** (2001), though often sacrificing authenticity for commercial appeal."
+      }
+    ],
+    "exploreFurther": [
+      "The influence of Jim Sheridan's social realist style on hip-hop films",
+      "Evolution of autobiographical music films from 1970s to 2000s",
+      "Impact of 50 Cent's music on early 2000s cinema",
+      "Street credibility versus Hollywood storytelling in hip-hop films",
+      "Visual style comparisons between Get Rich and classic crime films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Fresh",
+          "year": 1994,
+          "slug": "A young drug dealer faces moral choices",
+          "poster": "https://image.tmdb.org/t/p/w500/uXRIIUzjDZZdWR2cUzPJ9eAqaHv.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 13815,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uXRIIUzjDZZdWR2cUzPJ9eAqaHv.jpg"
+        },
+        {
+          "title": "Belly",
+          "year": 1998,
+          "slug": "Two friends navigate the dangerous world of crime and hip-hop",
+          "poster": "https://image.tmdb.org/t/p/w500/3h84eKRRK0SCW6LVRJ4cnQx4xD.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 12888,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3h84eKRRK0SCW6LVRJ4cnQx4xD.jpg"
+        },
+        {
+          "title": "Above the Rim",
+          "year": 1994,
+          "slug": "A promising basketball player gets caught between two mentors",
+          "poster": "https://image.tmdb.org/t/p/w500/q7CCx8aj8uME1fBa4KzTMdeWxXu.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 19092,
+          "poster_url": "https://image.tmdb.org/t/p/w500/q7CCx8aj8uME1fBa4KzTMdeWxXu.jpg"
+        },
+        {
+          "title": "State Property",
+          "year": 2002,
+          "slug": "A Philadelphia gangster builds a criminal empire while pursuing rap fame",
+          "poster": "https://image.tmdb.org/t/p/w500/eq8ygk2egSs9QnQfrjqE4fJ44OJ.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 25006,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eq8ygk2egSs9QnQfrjqE4fJ44OJ.jpg"
+        },
+        {
+          "title": "Brooklyn's Finest",
+          "year": 2009,
+          "slug": "Three NYPD officers face moral challenges in Brooklyn's streets",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

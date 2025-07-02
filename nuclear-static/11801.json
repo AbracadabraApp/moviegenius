@@ -1,0 +1,196 @@
+{
+  "props": {
+    "title": "Angel",
+    "year": 2007,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/iWJKPVsTvQK04TAZxErMymfEiyB.jpg",
+    "initialStreaming": null,
+    "tmdbId": 11801,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Angel** (2007), François Ozon's stylish melodrama, perfectly channels the lush Technicolor romances of the 1940s and 1950s. The film follows Angel Deverell (Romola Garai), a wildly ambitious young writer who crafts elaborate romantic fantasies, similar to the delusional protagonists in **Sunset Boulevard** (1950) and **Whatever Happened to Baby Jane** (1962). Ozon deliberately employs an artificial, almost camp aesthetic that mirrors Angel's overwrought novels and disconnection from reality, drawing inspiration from classic melodramas like **All That Heaven Allows** (1955)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Sunset Boulevard",
+            "year": 1950,
+            "slug": "Gloria Swanson stars as a faded silent film star living in a fantasy world",
+            "poster": "https://image.tmdb.org/t/p/w500/sC4Dpmn87oz9AuxZ15Lmip0Ftgr.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 599,
+            "poster_url": "https://image.tmdb.org/t/p/w500/sC4Dpmn87oz9AuxZ15Lmip0Ftgr.jpg"
+          },
+          {
+            "title": "The Age of Innocence",
+            "year": 1993,
+            "slug": "Scorsese's sumptuous period drama about repressed passion in 19th century New York",
+            "poster": "https://image.tmdb.org/t/p/w500/5Tuyt26v7qNR8Cl3m7ZRx36rduf.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 10436,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5Tuyt26v7qNR8Cl3m7ZRx36rduf.jpg"
+          },
+          {
+            "title": "Far From Heaven",
+            "year": 2002,
+            "slug": "Todd Haynes' Douglas Sirk-inspired melodrama exploring 1950s social taboos",
+            "poster": "https://image.tmdb.org/t/p/w500/9gQuvFDRPLx39smUvyafm36tp0d.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 10712,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9gQuvFDRPLx39smUvyafm36tp0d.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Ozon's film cleverly subverts the typical \"struggling artist makes good\" narrative by showing how Angel's success feeds her worst impulses. The movie shares DNA with **Swimming Pool** (2003) and **8½** (1963) in its exploration of the creative process and artistic ego. Romola Garai's fearless performance captures Angel's grandiose delusions while maintaining a thread of vulnerability beneath the surface."
+      },
+      {
+        "type": "text",
+        "content": "The film's production design creates a candy-colored fantasy world that grows increasingly claustrophobic, similar to Powell and Pressburger's **The Red Shoes** (1948). This visual approach emphasizes Angel's isolation from reality while nodding to the theatrical artifice of classic Hollywood melodrama. The period details feel deliberately exaggerated, matching Angel's own purple prose writing style. SUBHEAD: The Writer's World vs Reality"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Red Shoes",
+            "year": 1948,
+            "slug": "Powell and Pressburger's stunning technicolor tale of artistic obsession",
+            "poster": "https://image.tmdb.org/t/p/w500/tRpm0MNYoMOgyumL9ePI3wB2P9V.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 19542,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tRpm0MNYoMOgyumL9ePI3wB2P9V.jpg"
+          },
+          {
+            "title": "Possession",
+            "year": 1981,
+            "slug": "Intense psychological drama about artistic passion and madness",
+            "poster": "https://image.tmdb.org/t/p/w500/lUFZsUuJ0YyhBXH8D2BFUd6wODm.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 21484,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lUFZsUuJ0YyhBXH8D2BFUd6wODm.jpg"
+          },
+          {
+            "title": "Black Swan",
+            "year": 2010,
+            "slug": "Psychological thriller about artistic perfection and descent into madness",
+            "poster": "https://image.tmdb.org/t/p/w500/viWheBd44bouiLCHgNMvahLThqx.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 44214,
+            "poster_url": "https://image.tmdb.org/t/p/w500/viWheBd44bouiLCHgNMvahLThqx.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Like **Adaptation** (2002) and **Barton Fink** (1991), **Angel** explores the gap between artistic fantasy and harsh reality. The film's treatment of World War I provides a stark contrast to Angel's romantic illusions, similar to how **The Hours** (2002) uses Virginia Woolf's writing as a lens to examine deeper truths. The movie's tragic elements become more pronounced as Angel's grip on reality loosens, culminating in a finale that recalls the gothic romance of **Rebecca** (1940)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Movie Melodrama from Douglas Sirk to Todd Haynes",
+      "François Ozon's Career and His Homages to Classic Cinema",
+      "The Role of Fantasy vs Reality in Films About Writers",
+      "Visual Excess in Period Films",
+      "The Influence of Powell and Pressburger on Modern Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Atonement",
+          "year": 2007,
+          "slug": "Period drama about a writer's imagination and its consequences",
+          "poster": "https://image.tmdb.org/t/p/w500/hMRIyBjPzxaSXWM06se3OcNjIQa.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 4347,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hMRIyBjPzxaSXWM06se3OcNjIQa.jpg"
+        },
+        {
+          "title": "Bright Star",
+          "year": 2009,
+          "slug": "Jane Campion's film about poet John Keats and his muse",
+          "poster": "https://image.tmdb.org/t/p/w500/csN6y4nq2kaBiegHaGw0DGp4plf.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 29963,
+          "poster_url": "https://image.tmdb.org/t/p/w500/csN6y4nq2kaBiegHaGw0DGp4plf.jpg"
+        },
+        {
+          "title": "The Hours",
+          "year": 2002,
+          "slug": "Three women connected by Virginia Woolf's Mrs. Dalloway",
+          "poster": "https://image.tmdb.org/t/p/w500/4myDtowDJQPQnkEDB1IWGtJR1Fo.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 590,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4myDtowDJQPQnkEDB1IWGtJR1Fo.jpg"
+        },
+        {
+          "title": "Moulin Rouge",
+          "year": 2001,
+          "slug": "Baz Luhrmann's extravagant romantic fantasy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Diving Bell and the Butterfly",
+          "year": 2007,
+          "slug": "True story of a writer overcoming paralysis",
+          "poster": "https://image.tmdb.org/t/p/w500/3MJUo4bCPai5r9zrw7nTS8sVzQ7.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 2013,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3MJUo4bCPai5r9zrw7nTS8sVzQ7.jpg"
+        },
+        {
+          "title": "Swimming Pool",
+          "year": 2003,
+          "slug": "Ozon's thriller about a crime novelist's creative process",
+          "poster": "https://image.tmdb.org/t/p/w500/bwBAUlEXhUKmegdguoFj9grF9t3.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 302,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bwBAUlEXhUKmegdguoFj9grF9t3.jpg"
+        },
+        {
+          "title": "Mrs. Parker and the Vicious Circle",
+          "year": 1994,
+          "slug": "Dorothy Parker biopic set in literary New York",
+          "poster": "https://image.tmdb.org/t/p/w500/avTHiIim0Jm0rs4ehFLck8u3NFW.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 23333,
+          "poster_url": "https://image.tmdb.org/t/p/w500/avTHiIim0Jm0rs4ehFLck8u3NFW.jpg"
+        },
+        {
+          "title": "Midnight in Paris",
+          "year": 2011,
+          "slug": "Writer finds inspiration in fantasy 1920s Paris",
+          "poster": "https://image.tmdb.org/t/p/w500/4wBG5kbfagTQclETblPRRGihk0I.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 59436,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4wBG5kbfagTQclETblPRRGihk0I.jpg"
+        },
+        {
+          "title": "The Purple Rose of Cairo",
+          "year": 1985,
+          "slug": "Fantasy about movies vs reality",
+          "poster": "https://image.tmdb.org/t/p/w500/ccsint43E44B7NGceEhVimD93Yt.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10849,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ccsint43E44B7NGceEhVimD93Yt.jpg"
+        },
+        {
+          "title": "Little Women",
+          "year": 2019,
+          "slug": "Greta Gerwig's meta take on the writing process",
+          "poster": "https://image.tmdb.org/t/p/w500/yn5ihODtZ7ofn8pDYfxCmxh8AXI.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 331482,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yn5ihODtZ7ofn8pDYfxCmxh8AXI.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

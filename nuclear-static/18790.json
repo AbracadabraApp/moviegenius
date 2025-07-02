@@ -1,0 +1,182 @@
+{
+  "props": {
+    "title": "Across the Pacific",
+    "year": 1942,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/Amfvgyd7BpnRVgpMXBrHGNJWvWR.jpg",
+    "initialStreaming": null,
+    "tmdbId": 18790,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Across the Pacific** (1942) reunites the powerhouse team from **The Maltese Falcon** (1941) - Humphrey Bogart, Mary Astor, and director John Huston - in a wartime espionage thriller that captures America's WWII paranoia about Japanese spies. Released just months after Pearl Harbor, the film's plot about preventing a Japanese attack on the Panama Canal resonated deeply with audiences. Huston had to leave during filming to join the war effort, leaving Vincent Sherman to complete the picture, creating an interesting study in shifting directorial styles."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Casablanca",
+            "year": 1942,
+            "slug": "The definitive WWII romantic thriller starring Humphrey Bogart as a cynical expatriate who must choose between love and duty",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": null
+          },
+          {
+            "title": "They Were Expendable",
+            "year": 1945,
+            "slug": "John Ford's powerful naval warfare drama starring John Wayne and Robert Montgomery",
+            "poster": "https://image.tmdb.org/t/p/w500/ejzJHdvEtUVbiLrDE55DRQskYyf.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 18771,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ejzJHdvEtUVbiLrDE55DRQskYyf.jpg"
+          },
+          {
+            "title": "Air Force",
+            "year": 1943,
+            "slug": "Howard Hawks directs this propaganda piece about a B-17 crew in the Pacific Theater",
+            "poster": "https://image.tmdb.org/t/p/w500/mqH4V49GvANYsu1q4SW4CFUTFZe.jpg",
+            "initialStreaming": "Warner Archive",
+            "tmdb_id": 15807,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mqH4V49GvANYsu1q4SW4CFUTFZe.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film fits into a crucial moment in Hollywood's wartime output, alongside propagandistic but artistically significant works like **Wake Island** (1942) and **Destination Tokyo** (1943). These films walked a delicate line between entertainment and patriotic messaging, often depicting Japanese characters as one-dimensional villains - a problematic aspect that reflects the era's widespread racism and wartime attitudes."
+      },
+      {
+        "type": "text",
+        "content": "Bogart's performance as Rick Leland showcases his trademark mix of cynicism and hidden nobility that would define his greatest roles in **Casablanca** (1942) and **To Have and Have Not** (1944). The film's production history reveals fascinating details about Hollywood's rapid pivot to war-themed content after Pearl Harbor, with scripts being hastily rewritten and production schedules accelerated to address the national crisis. SUBHEAD: Wartime Propaganda and Entertainment"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Thirty Seconds Over Tokyo",
+            "year": 1944,
+            "slug": "The true story of the Doolittle Raid, starring Spencer Tracy and Van Johnson",
+            "poster": "https://image.tmdb.org/t/p/w500/dvvgU0TwstTtZofAzBA5syt5on7.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 18770,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dvvgU0TwstTtZofAzBA5syt5on7.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Across the Pacific** represents a unique historical document of Hollywood's wartime transformation. Unlike later WWII films like **The Bridge on the River Kwai** (1957) or **Tora! Tora! Tora!** (1970), it was made during active conflict, reflecting immediate anxieties rather than historical perspective. The film's plot mechanisms - involving secret Japanese agents and elaborate spy networks - mirror similar contemporary productions like **Saboteur** (1942) and **Journey Into Fear** (1943)."
+      },
+      {
+        "type": "text",
+        "content": "The film's Panama Canal setting highlights America's strategic vulnerabilities during WWII, while its spy thriller elements drew from both real wartime concerns and established genre conventions seen in pre-war films like **British Intelligence** (1940) and **Confessions of a Nazi Spy** (1939). The mixed directorial influence of both Huston and Sherman creates an interesting stylistic tension, with Huston's noir sensibilities visible in the early scenes and Sherman's more straightforward approach in the conclusion."
+      }
+    ],
+    "exploreFurther": [
+      "Hollywood's Wartime Transformation: How Pearl Harbor Changed American Cinema",
+      "The Evolution of Humphrey Bogart's Screen Persona: From Supporting Villain to Leading Man",
+      "Depiction of Japanese Characters in 1940s American Cinema",
+      "John Huston's Wartime Service and Its Impact on His Filmmaking",
+      "The Panama Canal in WWII: Strategic Importance and Cultural Impact"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Foreign Correspondent",
+          "year": 1940,
+          "slug": "Hitchcock's thriller about an American reporter uncovering Nazi plots",
+          "poster": "https://image.tmdb.org/t/p/w500/n0WX6eIdIliKB66MI2MWZ3wHsoJ.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 25670,
+          "poster_url": "https://image.tmdb.org/t/p/w500/n0WX6eIdIliKB66MI2MWZ3wHsoJ.jpg"
+        },
+        {
+          "title": "All Through the Night",
+          "year": 1942,
+          "slug": "Bogart battles Nazi spies in New York",
+          "poster": "https://image.tmdb.org/t/p/w500/w6m3b68HSL1tmYoDJBcYxA4yoZX.jpg",
+          "initialStreaming": "Warner Archive",
+          "tmdb_id": 37036,
+          "poster_url": "https://image.tmdb.org/t/p/w500/w6m3b68HSL1tmYoDJBcYxA4yoZX.jpg"
+        },
+        {
+          "title": "Background to Danger",
+          "year": 1943,
+          "slug": "WWII spy thriller with George Raft",
+          "poster": "https://image.tmdb.org/t/p/w500/mepMDzGmh0Fmzq0CuWsNXZTBm6m.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 34944,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mepMDzGmh0Fmzq0CuWsNXZTBm6m.jpg"
+        },
+        {
+          "title": "Watch on the Rhine",
+          "year": 1943,
+          "slug": "Anti-Nazi thriller starring Bette Davis",
+          "poster": "https://image.tmdb.org/t/p/w500/6ZeyGqZEmK4JUbV0o5nBglEODoC.jpg",
+          "initialStreaming": "Warner Archive",
+          "tmdb_id": 68440,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6ZeyGqZEmK4JUbV0o5nBglEODoC.jpg"
+        },
+        {
+          "title": "Action in the North Atlantic",
+          "year": 1943,
+          "slug": "Bogart leads a merchant marine crew",
+          "poster": "https://image.tmdb.org/t/p/w500/laBOmHeo2Iqdmggz1v4gDPrPbO3.jpg",
+          "initialStreaming": "Warner Archive",
+          "tmdb_id": 23051,
+          "poster_url": "https://image.tmdb.org/t/p/w500/laBOmHeo2Iqdmggz1v4gDPrPbO3.jpg"
+        },
+        {
+          "title": "The Cross of Lorraine",
+          "year": 1943,
+          "slug": "French soldiers resist Nazi imprisonment",
+          "poster": "https://image.tmdb.org/t/p/w500/8lxIDocpVEQcWU2PYSQwzk3Dsfk.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 78315,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8lxIDocpVEQcWU2PYSQwzk3Dsfk.jpg"
+        },
+        {
+          "title": "Sahara",
+          "year": 1943,
+          "slug": "Bogart leads tank crew across North Africa",
+          "poster": "https://image.tmdb.org/t/p/w500/roVIPqVLMdvs7uOcqDuwO891t8s.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 18783,
+          "poster_url": "https://image.tmdb.org/t/p/w500/roVIPqVLMdvs7uOcqDuwO891t8s.jpg"
+        },
+        {
+          "title": "Mission to Moscow",
+          "year": 1943,
+          "slug": "Controversial pro-Soviet wartime drama",
+          "poster": "https://image.tmdb.org/t/p/w500/pQ2hj7sfTwUGtz7mulxAc28hKYQ.jpg",
+          "initialStreaming": "Warner Archive",
+          "tmdb_id": 161512,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pQ2hj7sfTwUGtz7mulxAc28hKYQ.jpg"
+        },
+        {
+          "title": "The Conspirators",
+          "year": 1944,
+          "slug": "WWII espionage drama set in Portugal",
+          "poster": "https://image.tmdb.org/t/p/w500/vIxpGK6EAmnfjW5csdD1Tgko4Cj.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 34945,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vIxpGK6EAmnfjW5csdD1Tgko4Cj.jpg"
+        },
+        {
+          "title": "Counter-Attack",
+          "year": 1945,
+          "slug": "Soviet officer matches wits with German captain",
+          "poster": "https://image.tmdb.org/t/p/w500/i74FjsOCfWms8JnszceMHjvNmOx.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 73154,
+          "poster_url": "https://image.tmdb.org/t/p/w500/i74FjsOCfWms8JnszceMHjvNmOx.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

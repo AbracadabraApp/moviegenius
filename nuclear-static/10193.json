@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "Toy Story 3",
+    "year": 2010,
+    "initialSlug": "Friendship Faces Its Final Playtime",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/AbbXspMOwdvwWZgVN0nabZq03Ec.jpg",
+    "initialStreaming": null,
+    "tmdbId": 10193,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Toy Story 3** (2010) masterfully concludes Pixar's original trilogy by confronting mortality and obsolescence head-on. The film's genius lies in how it ages with its audience - those who grew up with **Toy Story** (1995) were college-aged by 2010, exactly like Andy. The incinerator scene ranks among animation's most powerful moments, with the toys facing death while holding hands. It's a direct callback to the unity themes from **Toy Story 2** (1999), but with devastating mature weight that proves animation can tackle complex adult themes."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Iron Giant",
+            "year": 1999,
+            "slug": "Brad Bird's emotional masterpiece about a boy and his robot friend explores similar themes of growing up and letting go",
+            "poster": "https://image.tmdb.org/t/p/w500/ct04FCFLPImNG5thcPLRnVsZlmS.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 10386,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ct04FCFLPImNG5thcPLRnVsZlmS.jpg"
+          },
+          {
+            "title": "Up",
+            "year": 2009,
+            "slug": "Pixar's adventure about an elderly man learning to embrace life again after loss showcases their mature storytelling",
+            "poster": "https://image.tmdb.org/t/p/w500/mFvoEwSfLqbcWwFsDjQebn9bzFe.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 14160,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mFvoEwSfLqbcWwFsDjQebn9bzFe.jpg"
+          },
+          {
+            "title": "Inside Out",
+            "year": 2015,
+            "slug": "Another Pixar triumph that deals with growing up and emotional complexity through brilliant metaphor",
+            "poster": "https://image.tmdb.org/t/p/w500/2H1TmgdfNtsKlU9jKdeNyYL5y8T.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 150540,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2H1TmgdfNtsKlU9jKdeNyYL5y8T.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of abandonment anxiety builds on animation classics like **The Velveteen Rabbit** (1985) and **The Brave Little Toaster** (1987), but adds layers of psychological complexity. Lotso's villain arc mirrors Stinky Pete from **Toy Story 2**, but pushes darker - he's not just bitter, he's broken by trauma. This creates a fascinating parallel with Woody's arc, showing two possible responses to abandonment."
+      },
+      {
+        "type": "text",
+        "content": "The technical achievement cannot be overstated. The animation quality leap from **Toy Story 2** (1999) to this film is staggering - particularly in texture rendering and lighting. The day care center becomes a character itself, shifting from welcoming paradise to prison through masterful environmental storytelling that recalls **The Great Escape** (1963) and **Cool Hand Luke** (1967). SUBHEAD: Legacy and Impact on Animation"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Wreck-It Ralph",
+            "year": 2012,
+            "slug": "A video game villain questions his purpose in life, dealing with similar themes of identity and belonging",
+            "poster": "https://image.tmdb.org/t/p/w500/zWoIgZ7mgmPkaZjG0102BSKFIqQ.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 82690,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zWoIgZ7mgmPkaZjG0102BSKFIqQ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Toy Story 3** (2010) raised the bar for sequel storytelling, proving franchises could mature meaningfully with their audience. Its influence can be seen in films like **How to Train Your Dragon 3** (2019) and **Spider-Man: Across the Spider-Verse** (2023), which similarly refuse to talk down to their audiences about growing up and letting go. The film's commercial and critical success ($1.067 billion worldwide and an Oscar nomination for Best Picture) helped legitimize animation as a medium for sophisticated storytelling."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Pixar's Animation Technology from 1995-2010",
+      "The Psychology of Attachment in Children's Media",
+      "Prison Break Movie Influences in Toy Story 3",
+      "Character Development Across the Toy Story Trilogy",
+      "Impact of Toy Story 3 on Modern Animation Sequels"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Coco",
+          "year": 2017,
+          "slug": "Pixar's meditation on family, memory, and letting go",
+          "poster": "https://image.tmdb.org/t/p/w500/6Ryitt95xrO8KXuqRGm1fUuNwqF.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 354912,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6Ryitt95xrO8KXuqRGm1fUuNwqF.jpg"
+        },
+        {
+          "title": "Monsters University",
+          "year": 2013,
+          "slug": "Pixar prequel exploring friendship and accepting life's limitations",
+          "poster": "https://image.tmdb.org/t/p/w500/y7thwJ7z5Bplv6vwl6RI0yteaDD.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 62211,
+          "poster_url": "https://image.tmdb.org/t/p/w500/y7thwJ7z5Bplv6vwl6RI0yteaDD.jpg"
+        },
+        {
+          "title": "Big Hero 6",
+          "year": 2014,
+          "slug": "Touching story about loss and healing through friendship",
+          "poster": "https://image.tmdb.org/t/p/w500/2mxS4wUimwlLmI1xp6QW6NSU361.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 177572,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2mxS4wUimwlLmI1xp6QW6NSU361.jpg"
+        },
+        {
+          "title": "WALL-E",
+          "year": 2008,
+          "slug": "Environmental fable with profound messages about human connection",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Lego Movie",
+          "year": 2014,
+          "slug": "Meta-commentary on imagination and growing up",
+          "poster": "https://image.tmdb.org/t/p/w500/lbctonEnewCYZ4FYoTZhs8cidAl.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 137106,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lbctonEnewCYZ4FYoTZhs8cidAl.jpg"
+        },
+        {
+          "title": "Kubo and the Two Strings",
+          "year": 2016,
+          "slug": "Stunning stop-motion about family and memory",
+          "poster": "https://image.tmdb.org/t/p/w500/la6QA9tk4Foq8OBH2Dyh5dTcw6H.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 313297,
+          "poster_url": "https://image.tmdb.org/t/p/w500/la6QA9tk4Foq8OBH2Dyh5dTcw6H.jpg"
+        },
+        {
+          "title": "Spirited Away",
+          "year": 2001,
+          "slug": "Miyazaki's masterpiece about childhood's end",
+          "poster": "https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 129,
+          "poster_url": "https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg"
+        },
+        {
+          "title": "Onward",
+          "year": 2020,
+          "slug": "Pixar's fantasy adventure about brotherhood and loss",
+          "poster": "https://image.tmdb.org/t/p/w500/f4aul3FyD3jv3v4bul1IrkWZvzq.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 508439,
+          "poster_url": "https://image.tmdb.org/t/p/w500/f4aul3FyD3jv3v4bul1IrkWZvzq.jpg"
+        },
+        {
+          "title": "The Incredibles 2",
+          "year": 2018,
+          "slug": "Sequel that maintains the original's mature themes",
+          "poster": "https://image.tmdb.org/t/p/w500/9lFKBtaVIhP7E2Pk0IY1CwTKTMZ.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 260513,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9lFKBtaVIhP7E2Pk0IY1CwTKTMZ.jpg"
+        },
+        {
+          "title": "My Neighbor Totoro",
+          "year": 1988,
+          "slug": "Classic meditation on childhood wonder",
+          "poster": "https://image.tmdb.org/t/p/w500/rtGDOeG9LzoerkDGZF9dnVeLppL.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 8392,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rtGDOeG9LzoerkDGZF9dnVeLppL.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

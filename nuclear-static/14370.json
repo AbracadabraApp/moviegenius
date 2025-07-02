@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "Real Genius",
+    "year": 1985,
+    "initialSlug": "Minds Ignite, Genius Strikes",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/5mVimQD1XOMLzbO2Qug0JQxh70S.jpg",
+    "initialStreaming": null,
+    "tmdbId": 14370,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Real Genius** (1985) perfectly captures mid-80s teen science comedy while delivering sharper satire than most of its contemporaries. Val Kilmer's breakout performance as Chris Knight brings charismatic wit to the genius-kids-at-college formula, predating similar themes in **Good Will Hunting** (1997) and **A Beautiful Mind** (2001). Director Martha Coolidge deftly balances slapstick pranks with commentary on military-industrial exploitation of young minds, while the Pacific Tech setting clearly satirizes Caltech's research culture."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "WarGames",
+            "year": 1983,
+            "slug": "A teenage hacker accidentally accesses a military supercomputer, nearly triggering WWIII",
+            "poster": "https://image.tmdb.org/t/p/w500/zZ1rN4LoPxKNfAp67Xl300WxVeD.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 860,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zZ1rN4LoPxKNfAp67Xl300WxVeD.jpg"
+          },
+          {
+            "title": "Weird Science",
+            "year": 1985,
+            "slug": "Two nerdy teens create the perfect woman using their computer in this John Hughes classic",
+            "poster": "https://image.tmdb.org/t/p/w500/jaEauZd2joSAKn42D83gm3S0y3F.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 11814,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jaEauZd2joSAKn42D83gm3S0y3F.jpg"
+          },
+          {
+            "title": "Better Off Dead",
+            "year": 1985,
+            "slug": "A quirky teen comedy about a high school student dealing with romance and ski competition",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film stands apart from other 80s teen movies by centering genuine intellectual achievement rather than just social status. While **Revenge of the Nerds** (1984) played heavily on stereotypes, Real Genius presents its brilliant characters as fully realized people whose intelligence is celebrated rather than mocked. This approach influenced later films like **October Sky** (1999) and **The Social Network** (2010) in showing how young genius can be both blessing and burden."
+      },
+      {
+        "type": "text",
+        "content": "The film's climactic popcorn scene - flooding a house with laser-popped kernels - exemplifies how Real Genius merges scientific concepts with pure entertainment. This blend of smarts and spectacle laid groundwork for later tech-focused comedies like **Sneakers** (1992) and **Pirates of Silicon Valley** (1999), proving that science-based plots could deliver both laughs and thrills. SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Project X",
+            "year": 1987,
+            "slug": "Matthew Broderick stars as an Air Force recruit working with chimps on a secret military project",
+            "poster": "https://image.tmdb.org/t/p/w500/odUw1Th64wqGF8hQLyNJoKWbAXX.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 18410,
+            "poster_url": "https://image.tmdb.org/t/p/w500/odUw1Th64wqGF8hQLyNJoKWbAXX.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Real Genius's influence extends beyond its era, inspiring a wave of films about brilliant young minds fighting against institutional power. **Hackers** (1995) borrowed its anti-military stance and youth rebellion themes, while **21** (2008) echoed its exploration of how institutions exploit student genius. The film's mix of comedy and ethical science dilemmas can be seen in modern works like **Don't Look Up** (2021)."
+      }
+    ],
+    "exploreFurther": [
+      "The Rise of Tech-Focused Teen Films in the 1980s",
+      "Val Kilmer's Early Career and Breakthrough Roles",
+      "Martha Coolidge's Direction and Female Directors in the 1980s",
+      "Military-Industrial Complex in American Cinema",
+      "Evolution of Science-Based Comedy Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Short Circuit",
+          "year": 1986,
+          "slug": "A military robot gains consciousness and escapes",
+          "poster": "https://image.tmdb.org/t/p/w500/e3eimdUK6lLe0iaSlLrYVQF3yeL.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 2605,
+          "poster_url": "https://image.tmdb.org/t/p/w500/e3eimdUK6lLe0iaSlLrYVQF3yeL.jpg"
+        },
+        {
+          "title": "Hidden Figures",
+          "year": 2016,
+          "slug": "True story of female African-American mathematicians at NASA",
+          "poster": "https://image.tmdb.org/t/p/w500/9lfz2W2uGjyow3am00rsPJ8iOyq.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 381284,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9lfz2W2uGjyow3am00rsPJ8iOyq.jpg"
+        },
+        {
+          "title": "The Manhattan Project",
+          "year": 1986,
+          "slug": "Teen builds atomic bomb for science fair",
+          "poster": "https://image.tmdb.org/t/p/w500/65RDHC5fLwuvQG1LmKRoQugBqLl.jpg",
+          "initialStreaming": "Roku",
+          "tmdb_id": 30194,
+          "poster_url": "https://image.tmdb.org/t/p/w500/65RDHC5fLwuvQG1LmKRoQugBqLl.jpg"
+        },
+        {
+          "title": "Tron",
+          "year": 1982,
+          "slug": "Computer programmer gets transported into a digital world",
+          "poster": "https://image.tmdb.org/t/p/w500/zwSFEczP7AzqugAHHIX3zHniT0t.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 97,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zwSFEczP7AzqugAHHIX3zHniT0t.jpg"
+        },
+        {
+          "title": "The Last Starfighter",
+          "year": 1984,
+          "slug": "Video game expert recruited to fight in space war",
+          "poster": "https://image.tmdb.org/t/p/w500/A7oAHTjtYnIEQjJs62IONRufooq.jpg",
+          "initialStreaming": "Roku",
+          "tmdb_id": 11884,
+          "poster_url": "https://image.tmdb.org/t/p/w500/A7oAHTjtYnIEQjJs62IONRufooq.jpg"
+        },
+        {
+          "title": "Iron Man",
+          "year": 2008,
+          "slug": "Genius inventor builds high-tech suit to fight evil",
+          "poster": "https://image.tmdb.org/t/p/w500/78lPtwv72eTNqFW9COBYI0dWDJa.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 1726,
+          "poster_url": "https://image.tmdb.org/t/p/w500/78lPtwv72eTNqFW9COBYI0dWDJa.jpg"
+        },
+        {
+          "title": "October Sky",
+          "year": 1999,
+          "slug": "True story of teenage rocket scientists in coal country",
+          "poster": "https://image.tmdb.org/t/p/w500/1weUnrWqESWoLzMgSs64jd4GEwY.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 13466,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1weUnrWqESWoLzMgSs64jd4GEwY.jpg"
+        },
+        {
+          "title": "Primer",
+          "year": 2004,
+          "slug": "Engineers accidentally invent time travel",
+          "poster": "https://image.tmdb.org/t/p/w500/xEoq2WmDzpzxhkHEsmOYOg6BPg6.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 14337,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xEoq2WmDzpzxhkHEsmOYOg6BPg6.jpg"
+        },
+        {
+          "title": "Ex Machina",
+          "year": 2014,
+          "slug": "Programmer tests revolutionary AI in remote facility",
+          "poster": "https://image.tmdb.org/t/p/w500/dmJW8IAKHKxFNiUnoDR7JfsK7Rp.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 264660,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dmJW8IAKHKxFNiUnoDR7JfsK7Rp.jpg"
+        },
+        {
+          "title": "The Imitation Game",
+          "year": 2014,
+          "slug": "Alan Turing's quest to crack the Nazi Enigma code",
+          "poster": "https://image.tmdb.org/t/p/w500/zSqJ1qFq8NXFfi7JeIYMlzyR0dx.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 205596,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zSqJ1qFq8NXFfi7JeIYMlzyR0dx.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

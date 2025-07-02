@@ -1,0 +1,154 @@
+{
+  "props": {
+    "title": "Beautiful Boxer",
+    "year": 2004,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/2qMi3DvtOBF38aiZy6nlUyBcxnp.jpg",
+    "initialStreaming": null,
+    "tmdbId": 6414,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Beautiful Boxer** (2004) revolutionized LGBTQ+ sports cinema by telling the true story of Parinya Charoenphol, a Thai kickboxer who fought to fund gender confirmation surgery. Unlike Hollywood's often sensationalized trans narratives, director Ekachai Uekrongtham crafts an intimate portrait that puts authentic Thai perspectives first. The film shares DNA with **The Iron Ladies** (2000), another groundbreaking Thai sports film about a transgender volleyball team, but Beautiful Boxer's raw Muay Thai sequences and lead performance by real-life boxer Asanee Suwan set a new standard for trans representation in martial arts cinema."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Iron Ladies",
+            "year": 2000,
+            "slug": "Heartwarming Thai comedy about a volleyball team of gay and trans players competing in the national championships",
+            "poster": "https://image.tmdb.org/t/p/w500/oshXupyCh2hkGfDVtQvZ84wnMNu.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 106230,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oshXupyCh2hkGfDVtQvZ84wnMNu.jpg"
+          },
+          {
+            "title": "A Prayer Before Dawn",
+            "year": 2017,
+            "slug": "True story of British boxer Billy Moore learning Muay Thai in a Thai prison",
+            "poster": "https://image.tmdb.org/t/p/w500/toYs3tZrHbSKJS1hmiTY1fJnPjm.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 448776,
+            "poster_url": "https://image.tmdb.org/t/p/w500/toYs3tZrHbSKJS1hmiTY1fJnPjm.jpg"
+          },
+          {
+            "title": "Warrior",
+            "year": 2011,
+            "slug": "Two estranged brothers compete in an MMA tournament while confronting family trauma",
+            "poster": "https://image.tmdb.org/t/p/w500/iM8n4nZJPR2abpnyZ36FUgHiRjr.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 59440,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iM8n4nZJPR2abpnyZ36FUgHiRjr.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The 2000s marked a crucial shift in trans sports narratives, moving from exploitation to empathy. While **Girl Fight** (2000) and **Million Dollar Baby** (2004) explored women breaking into male-dominated combat sports, Beautiful Boxer went deeper by examining gender identity through Thailand's complex relationship with traditional masculinity and Muay Thai culture. The film paved the way for more nuanced trans athletic stories like **Lady Dragon** (2009) and **52 Tuesdays** (2013). SUBHEAD: Breaking Gender Barriers in Sports Cinema"
+      },
+      {
+        "type": "text",
+        "content": "Beautiful Boxer's influence extends beyond LGBTQ+ cinema into the broader sports genre. Its meditation on identity through martial arts shares themes with **The Next Karate Kid** (1994) and **Girlfight** (2000), while its authentic portrayal of Muay Thai culture influenced later films like **Ong-Bak** (2003) and **Chocolate** (2008). The film's emphasis on character development over action spectacle created a template for humanistic sports dramas like **The Wrestler** (2008)."
+      }
+    ],
+    "exploreFurther": [
+      "The history and evolution of Muay Thai in Thai cinema",
+      "Transgender representation in Asian sports films",
+      "The intersection of martial arts and gender identity in film",
+      "Thailand's New Wave cinema movement of the 2000s",
+      "The influence of true stories on sports film authenticity"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Ong-Bak",
+          "year": 2003,
+          "slug": "Tony Jaa stars in this explosive Muay Thai action film",
+          "poster": "https://image.tmdb.org/t/p/w500/oagqAwp48dMPoCT94yDJUDOCVPi.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 9316,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oagqAwp48dMPoCT94yDJUDOCVPi.jpg"
+        },
+        {
+          "title": "Chocolate",
+          "year": 2008,
+          "slug": "Autistic martial artist fights to save her mother",
+          "poster": "https://image.tmdb.org/t/p/w500/g8CBVNFdJOGINQW2KuOvl5NAPS5.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 15003,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g8CBVNFdJOGINQW2KuOvl5NAPS5.jpg"
+        },
+        {
+          "title": "The Iron Ladies 2",
+          "year": 2003,
+          "slug": "Continuation of the transgender volleyball team's story",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Born to Fight",
+          "year": 2004,
+          "slug": "Thai athletes use their skills to fight terrorists",
+          "poster": "https://image.tmdb.org/t/p/w500/k4YPOpK9L9jHzKFN5Aa9uJuhvCn.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 10254,
+          "poster_url": "https://image.tmdb.org/t/p/w500/k4YPOpK9L9jHzKFN5Aa9uJuhvCn.jpg"
+        },
+        {
+          "title": "Tom Yum Goong",
+          "year": 2005,
+          "slug": "Muay Thai warrior searches for stolen elephants",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Bangkok Boxing",
+          "year": 2010,
+          "slug": "Documentary about female Muay Thai fighters",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Kick",
+          "year": 2011,
+          "slug": "Korean-Thai martial arts family drama",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Raging Phoenix",
+          "year": 2009,
+          "slug": "Female fighter learns hybrid martial art Meiraiyutth",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Beautiful Fighter",
+          "year": 2004,
+          "slug": "Female boxer challenges gender norms",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "AsianCrush",
+          "tmdb_id": null
+        },
+        {
+          "title": "Power Kids",
+          "year": 2009,
+          "slug": "Young Muay Thai fighters save a hospital",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

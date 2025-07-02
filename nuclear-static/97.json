@@ -1,0 +1,187 @@
+{
+  "props": {
+    "title": "Tron",
+    "year": 1982,
+    "initialSlug": "Enter the game. Fight to survive.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/zwSFEczP7AzqugAHHIX3zHniT0t.jpg",
+    "initialStreaming": "Disney+",
+    "tmdbId": 97,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**TRON** (1982) revolutionized visual effects by being one of the first films to extensively use computer animation, paving the way for the digital revolution in cinema. The groundbreaking work of MAGI and Triple-I created a neon-drenched digital world that influenced cyberpunk aesthetics for decades. While **The Last Starfighter** (1984) and **WarGames** (1983) explored early computer capabilities, TRON's ambitious vision of users entering the digital realm set the template for later films like **The Matrix** (1999) and **Ready Player One** (2018)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "TRON",
+            "year": 1982,
+            "slug": "A computer programmer gets digitized into a mainframe where he must fight in gladiatorial games and overthrow an AI dictator",
+            "poster": "https://image.tmdb.org/t/p/w500/zwSFEczP7AzqugAHHIX3zHniT0t.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 97,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zwSFEczP7AzqugAHHIX3zHniT0t.jpg"
+          },
+          {
+            "title": "TRON: Legacy",
+            "year": 2010,
+            "slug": "Sam Flynn enters the digital world to find his long-lost father and faces a corrupted program threatening both worlds",
+            "poster": "https://image.tmdb.org/t/p/w500/vuifSABRpSnxCAOxEnWpNbZSXpp.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 20526,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vuifSABRpSnxCAOxEnWpNbZSXpp.jpg"
+          },
+          {
+            "title": "The Lawnmower Man",
+            "year": 1992,
+            "slug": "A scientist uses virtual reality to enhance a gardener's intelligence, but the experiment spirals out of control",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's impact on computer graphics cannot be overstated. While primitive by today's standards, TRON's light cycles, recognizer ships, and solar sailer sequences demonstrated CGI's potential for creating impossible worlds. This influenced a wave of early digital effects films like **The Last Starfighter** (1984) and **Young Sherlock Holmes** (1985). The film's distinctive visual style - with programs glowing with internal light against dark backgrounds - created an iconic look that influenced everything from **Blade Runner** (1982) to modern works like **Thor: Love and Thunder** (2022)."
+      },
+      {
+        "type": "text",
+        "content": "TRON's exploration of the relationship between creators and their programs was prescient, predating similar themes in films like **Ex Machina** (2014) and **Her** (2013). The concept of anthropomorphized programs fighting for freedom from controlling systems would later be refined in **The Matrix** (1999) and **I, Robot** (2004). The film's religious undertones, with users viewed as gods by their programs, added philosophical depth rarely seen in early 1980s science fiction. SUBHEAD: Legacy and Modern Influence"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Hackers",
+            "year": 1995,
+            "slug": "A group of young hackers uncover a corporate extortion conspiracy while navigating the early internet culture",
+            "poster": "https://image.tmdb.org/t/p/w500/qfx2EENW1sOpKNVKLzr7VOhlxkt.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 10428,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qfx2EENW1sOpKNVKLzr7VOhlxkt.jpg"
+          },
+          {
+            "title": "Johnny Mnemonic",
+            "year": 1995,
+            "slug": "In a cyberpunk future, a data courier with a brain implant must deliver sensitive information before it kills him",
+            "poster": "https://image.tmdb.org/t/p/w500/iH8Jgi8qvb7pnBfI8fVGaUbyRna.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 9886,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iH8Jgi8qvb7pnBfI8fVGaUbyRna.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "TRON's influence extends beyond just visual effects. The film's game-like structure, with clearly defined levels and boss battles, heavily influenced how movies adapt video game concepts, seen in films like **Scott Pilgrim vs. the World** (2010) and **Wreck-It Ralph** (2012). The concept of a digital frontier waiting to be explored has become increasingly relevant with films like **The Social Network** (2010) and **Ralph Breaks the Internet** (2018) examining our relationship with digital spaces."
+      }
+    ],
+    "exploreFurther": [
+      "The Development of CGI in Cinema: From TRON to Modern Blockbusters",
+      "The Rise of Cyberpunk: How TRON Influenced a Genre",
+      "Religious and Philosophical Themes in Digital World Movies",
+      "The Evolution of Human-Computer Interaction in Film",
+      "Video Game Aesthetics in Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Virtuosity",
+          "year": 1995,
+          "slug": "A virtual reality criminal becomes real and terrorizes Los Angeles",
+          "poster": "https://image.tmdb.org/t/p/w500/5emgnXYrXjqyiup2JsvtuENseiV.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 9271,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5emgnXYrXjqyiup2JsvtuENseiV.jpg"
+        },
+        {
+          "title": "Summer Wars",
+          "year": 2009,
+          "slug": "A teenage math prodigy must save the world from an AI threatening the global infrastructure",
+          "poster": "https://image.tmdb.org/t/p/w500/yHy8TrRLnuBZ4t2C0l0pSpRXVHO.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 28874,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yHy8TrRLnuBZ4t2C0l0pSpRXVHO.jpg"
+        },
+        {
+          "title": "Arcade",
+          "year": 1993,
+          "slug": "Teenagers discover a sinister virtual reality game that kills its players in real life",
+          "poster": "https://image.tmdb.org/t/p/w500/4ZC9OZMyrZ4uAIfEOlGIh9e8xkh.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 28790,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4ZC9OZMyrZ4uAIfEOlGIh9e8xkh.jpg"
+        },
+        {
+          "title": "eXistenZ",
+          "year": 1999,
+          "slug": "A game designer must navigate multiple layers of reality to protect her revolutionary new gaming system",
+          "poster": "https://image.tmdb.org/t/p/w500/kETKF0JhdTPn1knci8CAdYL0d79.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1946,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kETKF0JhdTPn1knci8CAdYL0d79.jpg"
+        },
+        {
+          "title": "Ghost in the Shell",
+          "year": 1995,
+          "slug": "A cyborg law enforcer hunts a mysterious hacker in a fully networked future society",
+          "poster": "https://image.tmdb.org/t/p/w500/9gC88zYUBARRSThcG93MvW14sqx.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 9323,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9gC88zYUBARRSThcG93MvW14sqx.jpg"
+        },
+        {
+          "title": "The Thirteenth Floor",
+          "year": 1999,
+          "slug": "A computer scientist discovers his virtual world simulation holds dangerous secrets",
+          "poster": "https://image.tmdb.org/t/p/w500/7oaie3ZBc9UuWZLF24crro1pone.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 1090,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7oaie3ZBc9UuWZLF24crro1pone.jpg"
+        },
+        {
+          "title": "Disclosure",
+          "year": 1994,
+          "slug": "A tech executive encounters industrial espionage and virtual reality corporate intrigue",
+          "poster": "https://image.tmdb.org/t/p/w500/dnA4QkIZZCF9wRtF8HHxWwUXVMf.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 8984,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dnA4QkIZZCF9wRtF8HHxWwUXVMf.jpg"
+        },
+        {
+          "title": "Nirvana",
+          "year": 1997,
+          "slug": "A game programmer must destroy his own creation when an AI becomes self-aware",
+          "poster": "https://image.tmdb.org/t/p/w500/1UXk8P1qY3PadOdSj5qk1qBXWMy.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 8765,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1UXk8P1qY3PadOdSj5qk1qBXWMy.jpg"
+        },
+        {
+          "title": "Spy Kids 3-D: Game Over",
+          "year": 2003,
+          "slug": "Juni Cortez enters a virtual reality game world to save his sister",
+          "poster": "https://image.tmdb.org/t/p/w500/buA8dN4zLNr0dYBeKfHfMnEfdLE.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 12279,
+          "poster_url": "https://image.tmdb.org/t/p/w500/buA8dN4zLNr0dYBeKfHfMnEfdLE.jpg"
+        },
+        {
+          "title": "Avalon",
+          "year": 2001,
+          "slug": "A professional gamer seeks the truth behind a dangerous virtual reality game",
+          "poster": "https://image.tmdb.org/t/p/w500/9c62bG3rt1UoFl04AnaLYCh26ZR.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 10881,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9c62bG3rt1UoFl04AnaLYCh26ZR.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

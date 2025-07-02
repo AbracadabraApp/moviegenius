@@ -1,0 +1,170 @@
+{
+  "props": {
+    "title": "Paris When It Sizzles",
+    "year": 1964,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/aojHngnnK0kTYjvCwtlfAj8xf4B.jpg",
+    "initialStreaming": null,
+    "tmdbId": 22829,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Paris When It Sizzles** (1964) represents a meta-fictional gem where William Holden and Audrey Hepburn dissect the art of screenwriting through a playful, self-aware lens. The film cleverly deconstructs Hollywood tropes while paying homage to the romantic comedies of its era. Like **8½** (1963) and **Sullivan's Travels** (1941), it's a movie about making movies, but with a distinctly romantic twist. The film-within-a-film structure allows for multiple genre parodies, giving Holden and Hepburn chances to play various character types while maintaining their core chemistry."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Funny Face",
+            "year": 1957,
+            "slug": "Audrey Hepburn enchants Paris as a bookstore clerk turned fashion model, with Fred Astaire as her photographer mentor",
+            "poster": "https://image.tmdb.org/t/p/w500/7yFRrAAClKMycrOB4500hqQEx53.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 13320,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7yFRrAAClKMycrOB4500hqQEx53.jpg"
+          },
+          {
+            "title": "Charade",
+            "year": 1963,
+            "slug": "Hepburn and Cary Grant spark in this romantic thriller set in a gorgeously shot Paris",
+            "poster": "https://image.tmdb.org/t/p/w500/qqaPjC5FQidtKY65jbAKZPiOTaS.jpg",
+            "initialStreaming": "Prime Video, YouTube",
+            "tmdb_id": 4808,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qqaPjC5FQidtKY65jbAKZPiOTaS.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's satirical take on Hollywood screenwriting conventions feels remarkably ahead of its time, predating similar meta-commentaries like **The Player** (1992) and **Adaptation** (2002). Director Richard Quine crafts elaborate fantasy sequences that blur the line between the story being written and the reality of the writers, creating a sophisticated commentary on the creative process. The Paris backdrop serves as more than mere scenery - it becomes a character itself, much like in **An American in Paris** (1951) or **Midnight in Paris** (2011)."
+      },
+      {
+        "type": "text",
+        "content": "While the film struggled at its initial release, its influence can be seen in later works that play with narrative structure and reality versus fiction, such as **Living in Oblivion** (1995) and **Ruby Sparks** (2012). The chemistry between Holden and Hepburn, who had previously starred together in **Sabrina** (1954), adds an extra layer of meta-commentary about Hollywood partnerships and on-screen romance. SUBHEAD: The Meta-Romance Evolution"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Sabrina",
+            "year": 1954,
+            "slug": "Audrey Hepburn shines in this romantic triangle with Humphrey Bogart and William Holden",
+            "poster": "https://image.tmdb.org/t/p/w500/8vvgKw3DbEPNlJAdHe7xXzhb2gN.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 6620,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8vvgKw3DbEPNlJAdHe7xXzhb2gN.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's innovative approach to romantic comedy tropes opened doors for later meta-romances like **(500) Days of Summer** (2009) and **Stranger Than Fiction** (2006). Its playful deconstruction of screenplay writing processes and Hollywood clichés feels particularly relevant in today's self-aware cinema landscape, where films like **The French Dispatch** (2021) continue to experiment with nested narratives and genre subversion."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Meta-Cinema from the 1960s to Present",
+      "Audrey Hepburn's Impact on 1960s Hollywood Romance",
+      "The Role of Paris in American Cinema",
+      "William Holden's Career Transformation",
+      "Breaking the Fourth Wall in Classic Hollywood"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Last Holiday",
+          "year": 1950,
+          "slug": "Alec Guinness stars in this meta-commentary on living life to the fullest",
+          "poster": "https://image.tmdb.org/t/p/w500/2rUFvSmkPvMMIhf02uFOfH1TDDA.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 16939,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2rUFvSmkPvMMIhf02uFOfH1TDDA.jpg"
+        },
+        {
+          "title": "The Purple Rose of Cairo",
+          "year": 1985,
+          "slug": "Woody Allen's exploration of cinema magic and reality",
+          "poster": "https://image.tmdb.org/t/p/w500/ccsint43E44B7NGceEhVimD93Yt.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10849,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ccsint43E44B7NGceEhVimD93Yt.jpg"
+        },
+        {
+          "title": "Day for Night",
+          "year": 1973,
+          "slug": "Truffaut's love letter to filmmaking",
+          "poster": "https://image.tmdb.org/t/p/w500/e5xDrSx6zDEUlMe2dWKGhv88PDZ.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1675,
+          "poster_url": "https://image.tmdb.org/t/p/w500/e5xDrSx6zDEUlMe2dWKGhv88PDZ.jpg"
+        },
+        {
+          "title": "State and Main",
+          "year": 2000,
+          "slug": "David Mamet's satire of movie production",
+          "poster": "https://image.tmdb.org/t/p/w500/348hvpWeSGdAQlCrGvKbpC0FpQN.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 21991,
+          "poster_url": "https://image.tmdb.org/t/p/w500/348hvpWeSGdAQlCrGvKbpC0FpQN.jpg"
+        },
+        {
+          "title": "Singin' in the Rain",
+          "year": 1952,
+          "slug": "Classic Hollywood's self-reflexive masterpiece",
+          "poster": "https://image.tmdb.org/t/p/w500/w03EiJVHP8Un77boQeE7hg9DVdU.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 872,
+          "poster_url": "https://image.tmdb.org/t/p/w500/w03EiJVHP8Un77boQeE7hg9DVdU.jpg"
+        },
+        {
+          "title": "The Bad and the Beautiful",
+          "year": 1952,
+          "slug": "Kirk Douglas stars in this inside look at Hollywood",
+          "poster": "https://image.tmdb.org/t/p/w500/ajAXzTiPkL7JxeCRw5lQBqrKNGx.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 32499,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ajAXzTiPkL7JxeCRw5lQBqrKNGx.jpg"
+        },
+        {
+          "title": "Two Weeks in Another Town",
+          "year": 1962,
+          "slug": "Kirk Douglas returns to filmmaking in Rome",
+          "poster": "https://image.tmdb.org/t/p/w500/vjVuuUXNrGgekTmW5ZqL1ujG7b4.jpg",
+          "initialStreaming": "Warner Archive",
+          "tmdb_id": 62655,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vjVuuUXNrGgekTmW5ZqL1ujG7b4.jpg"
+        },
+        {
+          "title": "The Stunt Man",
+          "year": 1980,
+          "slug": "Peter O'Toole leads this meta-commentary on film production",
+          "poster": "https://image.tmdb.org/t/p/w500/n7trpLAThW1h67QAlWMQ6IHS47u.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 42160,
+          "poster_url": "https://image.tmdb.org/t/p/w500/n7trpLAThW1h67QAlWMQ6IHS47u.jpg"
+        },
+        {
+          "title": "Living in Oblivion",
+          "year": 1995,
+          "slug": "Steve Buscemi stars in this indie filmmaking satire",
+          "poster": "https://image.tmdb.org/t/p/w500/b54xDk98oWtEtAso9sj1wjaZDDH.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 9071,
+          "poster_url": "https://image.tmdb.org/t/p/w500/b54xDk98oWtEtAso9sj1wjaZDDH.jpg"
+        },
+        {
+          "title": "Bowfinger",
+          "year": 1999,
+          "slug": "Steve Martin's comedy about guerrilla filmmaking",
+          "poster": "https://image.tmdb.org/t/p/w500/iGuiFYEYwFkaRPl3FgLJYEm6dWq.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 11353,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iGuiFYEYwFkaRPl3FgLJYEm6dWq.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

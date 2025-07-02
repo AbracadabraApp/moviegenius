@@ -1,0 +1,179 @@
+{
+  "props": {
+    "title": "Bride of Frankenstein",
+    "year": 1935,
+    "initialSlug": "Undead bride rejects monster's lonely heart",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/5241zUwe7rC17MNc2QpCBKKdp1N.jpg",
+    "initialStreaming": null,
+    "tmdbId": 229,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Bride of Frankenstein** (1935) stands as James Whale's masterful sequel that surpasses the original **Frankenstein** (1931). Elsa Lanchester's iconic dual role as Mary Shelley and the Bride, with her electric-shocked hair and bird-like movements, created one of horror's most enduring images. The film daringly blends Gothic horror with pitch-black comedy, establishing a template for horror-comedy that influenced everything from **Abbott and Costello Meet Frankenstein** (1948) to **An American Werewolf in London** (1981)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Frankenstein",
+            "year": 1931,
+            "slug": "The original Universal monster classic with Boris Karloff's defining performance as the Monster",
+            "poster": "https://image.tmdb.org/t/p/w500/mu6wHwH0IwCCaEYtpqujuPJYat1.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 3035,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mu6wHwH0IwCCaEYtpqujuPJYat1.jpg"
+          },
+          {
+            "title": "The Old Dark House",
+            "year": 1932,
+            "slug": "James Whale's atmospheric horror featuring Boris Karloff in a different monstrous role",
+            "poster": "https://image.tmdb.org/t/p/w500/t4058MoAiVg8R1aqHNL3nAP48km.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 31592,
+            "poster_url": "https://image.tmdb.org/t/p/w500/t4058MoAiVg8R1aqHNL3nAP48km.jpg"
+          },
+          {
+            "title": "The Invisible Man",
+            "year": 1933,
+            "slug": "Another James Whale Universal horror masterpiece with groundbreaking special effects",
+            "poster": "https://image.tmdb.org/t/p/w500/ewfUA5pMEJrmQCdI4TsHmLlIUbf.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 10787,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ewfUA5pMEJrmQCdI4TsHmLlIUbf.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's queer subtext, driven by director James Whale's own sexuality, revolutionized monster movies by emphasizing sympathy for the outsider. Dr. Pretorius (Ernest Thesiger) emerges as a deliciously camp creation, while the Monster's yearning for companionship adds devastating emotional depth. This humanitarian approach to horror influenced later classics like **The Shape of Water** (2017) and **Edward Scissorhands** (1990)."
+      },
+      {
+        "type": "text",
+        "content": "The technical achievements remain stunning nearly 90 years later. Jack Pierce's makeup designs set the standard for decades of monster movies, while Franz Waxman's score pioneered the use of theremin in horror. The laboratory sequence, with its Tesla coils and crackling electricity, established visual tropes still referenced in films like **Young Frankenstein** (1974) and **Gods and Monsters** (1998). SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Gods and Monsters",
+            "year": 1998,
+            "slug": "Ian McKellen stars as James Whale in his final years, exploring the director's life and legacy",
+            "poster": "https://image.tmdb.org/t/p/w500/xhaZ2nKL9VtqfYQ9Ss4Azxc2E3F.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 3033,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xhaZ2nKL9VtqfYQ9Ss4Azxc2E3F.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Bride of Frankenstein**'s impact extends far beyond horror. Its themes of creation, loneliness, and the search for identity resonated through science fiction landmarks like **Blade Runner** (1982) and **Ex Machina** (2014). The Bride herself became a feminist icon, inspiring characters in films like **Species** (1995) and **The Rocky Horror Picture Show** (1975), while the \"mad scientist\" archetype of Dr. Pretorius influenced countless cinematic successors."
+      }
+    ],
+    "exploreFurther": [
+      "Universal Horror's Golden Age (1923-1945)",
+      "James Whale's Directorial Style and Queer Cinema",
+      "The Evolution of Movie Monster Makeup",
+      "Mary Shelley's Influence on Horror Cinema",
+      "The Science Fiction-Horror Hybrid Genre"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Curse of Frankenstein",
+          "year": 1957,
+          "slug": "Hammer Horror's colorful reimagining with Peter Cushing",
+          "poster": "https://image.tmdb.org/t/p/w500/r9PDkqKhzdo54aqnOL88wUJY49B.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 3079,
+          "poster_url": "https://image.tmdb.org/t/p/w500/r9PDkqKhzdo54aqnOL88wUJY49B.jpg"
+        },
+        {
+          "title": "Mary Shelley's Frankenstein",
+          "year": 1994,
+          "slug": "Kenneth Branagh's faithful adaptation of the novel",
+          "poster": "https://image.tmdb.org/t/p/w500/bOwCAQsZlEKrwhPi1ejY6BS8jpL.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 3036,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bOwCAQsZlEKrwhPi1ejY6BS8jpL.jpg"
+        },
+        {
+          "title": "The Spirit of the Beehive",
+          "year": 1973,
+          "slug": "Spanish masterpiece featuring a child's obsession with Frankenstein",
+          "poster": "https://image.tmdb.org/t/p/w500/p2wx4EWasQaPGxnbS2IsW74ewVN.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 4495,
+          "poster_url": "https://image.tmdb.org/t/p/w500/p2wx4EWasQaPGxnbS2IsW74ewVN.jpg"
+        },
+        {
+          "title": "Mad Love",
+          "year": 1935,
+          "slug": "Peter Lorre stars in this similarly themed horror classic",
+          "poster": "https://image.tmdb.org/t/p/w500/lDD8pKd6jSrFLV3RvE0eDGGGxR0.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 28261,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lDD8pKd6jSrFLV3RvE0eDGGGxR0.jpg"
+        },
+        {
+          "title": "Metropolis",
+          "year": 1927,
+          "slug": "Silent sci-fi featuring a revolutionary female robot",
+          "poster": "https://image.tmdb.org/t/p/w500/vZIJxGnjcswPCAa52jhbl01FQkV.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 19,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vZIJxGnjcswPCAa52jhbl01FQkV.jpg"
+        },
+        {
+          "title": "The Invisible Man",
+          "year": 2020,
+          "slug": "Modern Universal monster reimagining",
+          "poster": "https://image.tmdb.org/t/p/w500/5EufsDwXdY2CVttYOk2WtYhgKpa.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 570670,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5EufsDwXdY2CVttYOk2WtYhgKpa.jpg"
+        },
+        {
+          "title": "Crimson Peak",
+          "year": 2015,
+          "slug": "Gothic horror homage by Guillermo del Toro",
+          "poster": "https://image.tmdb.org/t/p/w500/f9TOb5anVwZeSbYjU1qNxPk3KUk.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 201085,
+          "poster_url": "https://image.tmdb.org/t/p/w500/f9TOb5anVwZeSbYjU1qNxPk3KUk.jpg"
+        },
+        {
+          "title": "Gothic",
+          "year": 1986,
+          "slug": "Story of the night Mary Shelley conceived Frankenstein",
+          "poster": "https://image.tmdb.org/t/p/w500/xGXj6wpJimmWkQMahZryM7xB9EX.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 33516,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xGXj6wpJimmWkQMahZryM7xB9EX.jpg"
+        },
+        {
+          "title": "The Phantom of the Opera",
+          "year": 1925,
+          "slug": "Another influential monster-romance",
+          "poster": "https://image.tmdb.org/t/p/w500/mvaYpAYj957C2tlq3vVJPSzGJXK.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": 964,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mvaYpAYj957C2tlq3vVJPSzGJXK.jpg"
+        },
+        {
+          "title": "Island of Lost Souls",
+          "year": 1932,
+          "slug": "Similar themes of mad science and creation",
+          "poster": "https://image.tmdb.org/t/p/w500/g7K7r1FojQC52YHxfmuXgwYBq5Q.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 3031,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g7K7r1FojQC52YHxfmuXgwYBq5Q.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

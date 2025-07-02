@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "Dr. Jekyll and Mr. Hyde",
+    "year": 1920,
+    "initialSlug": "Man's dark alter ego wreaks terror in London",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/u8OL0RbTNzqqB1WmkxroTBXohnv.jpg",
+    "initialStreaming": null,
+    "tmdbId": 3016,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "John Barrymore's transformative performance in **Dr. Jekyll and Mr. Hyde** (1920) revolutionized horror cinema's approach to physical metamorphosis. Without relying on elaborate makeup or special effects, Barrymore contorted his face and body to create Hyde's monstrous appearance, influencing decades of horror actors. This technique directly inspired Lon Chaney's work in **The Phantom of the Opera** (1925) and laid groundwork for future Jekyll/Hyde adaptations like Fredric March's Oscar-winning turn in **Dr. Jekyll and Mr. Hyde** (1931) and Spencer Tracy's version in **Dr. Jekyll and Mr. Hyde** (1941)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Cabinet of Dr. Caligari",
+            "year": 1920,
+            "slug": "German Expressionist masterpiece about a hypnotist and his sleepwalking servant, featuring distorted sets and shadows",
+            "poster": "https://image.tmdb.org/t/p/w500/myK9DeIsXWGKgUTZyGXg2IfFk0W.jpg",
+            "initialStreaming": "Kanopy",
+            "tmdb_id": 234,
+            "poster_url": "https://image.tmdb.org/t/p/w500/myK9DeIsXWGKgUTZyGXg2IfFk0W.jpg"
+          },
+          {
+            "title": "Nosferatu",
+            "year": 1922,
+            "slug": "Unauthorized Dracula adaptation that defined vampire cinema with Max Schreck's terrifying Count Orlok",
+            "poster": "https://image.tmdb.org/t/p/w500/zv7J85D8CC9qYagAEhPM63CIG6j.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 653,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zv7J85D8CC9qYagAEhPM63CIG6j.jpg"
+          },
+          {
+            "title": "The Phantom of the Opera",
+            "year": 1925,
+            "slug": "Lon Chaney's legendary makeup and performance as the disfigured Phantom haunting the Paris Opera House",
+            "poster": "https://image.tmdb.org/t/p/w500/mvaYpAYj957C2tlq3vVJPSzGJXK.jpg",
+            "initialStreaming": "Public Domain",
+            "tmdb_id": 964,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mvaYpAYj957C2tlq3vVJPSzGJXK.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Director John S. Robertson's atmospheric approach to Victorian London created a template for Gothic horror settings that influenced films like **London After Midnight** (1927) and **Dracula** (1931). The film's innovative use of tinting and early special effects during Jekyll's transformation scenes demonstrated silent cinema's ability to convey psychological horror through purely visual means, a technique later perfected in **The Man Who Laughs** (1928)."
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of duality and repression resonated deeply in post-WWI society, making it one of the first horror films to tackle sophisticated psychological themes. This approach influenced later works like **M** (1931) and **Mad Love** (1935), which similarly explored the darkness lurking beneath respectable surfaces. The movie's success also helped establish Paramount Pictures as a major player in horror cinema, leading to their subsequent supernatural thrillers of the 1920s. SUBHEAD: Impact on Horror Cinema Evolution"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Man Who Laughs",
+            "year": 1928,
+            "slug": "Conrad Veidt stars as a disfigured circus performer in this Gothic romance that inspired Batman's Joker",
+            "poster": "https://image.tmdb.org/t/p/w500/iQXBMr4NzQst4X0rDU6MII6ZUOM.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 27517,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iQXBMr4NzQst4X0rDU6MII6ZUOM.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's groundbreaking practical effects and makeup techniques, achieved through camera tricks and Barrymore's physical performance, established a new standard for horror transformation sequences. This influence can be traced through **Werewolf of London** (1935), **The Wolf Man** (1941), and even modern practical effects masterpieces like **An American Werewolf in London** (1981). The film's psychological complexity also helped legitimize horror as a vehicle for serious artistic expression."
+      }
+    ],
+    "exploreFurther": [
+      "Early Makeup Effects and Transformation Sequences in Silent Horror",
+      "John Barrymore's Impact on Horror Performance Techniques",
+      "Victorian Gothic Literature Adaptations in Silent Cinema",
+      "Development of Psychological Horror in 1920s Cinema",
+      "Robert Louis Stevenson's Novel Adaptations Through Film History"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Dr. Jekyll and Mr. Hyde",
+          "year": 1931,
+          "slug": "Fredric March's Oscar-winning dual performance",
+          "poster": "https://image.tmdb.org/t/p/w500/mZtQORzQWkCSqeeHApH6vJDA1D2.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 3019,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mZtQORzQWkCSqeeHApH6vJDA1D2.jpg"
+        },
+        {
+          "title": "The Wolf Man",
+          "year": 1941,
+          "slug": "Lon Chaney Jr.'s iconic werewolf transformation",
+          "poster": "https://image.tmdb.org/t/p/w500/vG8fu5syTtQLzK1hQXyi3ugOPNF.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 13666,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vG8fu5syTtQLzK1hQXyi3ugOPNF.jpg"
+        },
+        {
+          "title": "Murders in the Rue Morgue",
+          "year": 1932,
+          "slug": "Bela Lugosi's mad scientist thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/juw7PExPZ3JuwiT09fAePulrPoa.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 28435,
+          "poster_url": "https://image.tmdb.org/t/p/w500/juw7PExPZ3JuwiT09fAePulrPoa.jpg"
+        },
+        {
+          "title": "Island of Lost Souls",
+          "year": 1932,
+          "slug": "Early H.G. Wells adaptation about human-animal hybrids",
+          "poster": "https://image.tmdb.org/t/p/w500/g7K7r1FojQC52YHxfmuXgwYBq5Q.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 3031,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g7K7r1FojQC52YHxfmuXgwYBq5Q.jpg"
+        },
+        {
+          "title": "The Black Cat",
+          "year": 1934,
+          "slug": "Psychological horror with Lugosi and Karloff",
+          "poster": "https://image.tmdb.org/t/p/w500/QTH3dkeDGTBRBmsY0A7STpsNN4.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 24106,
+          "poster_url": "https://image.tmdb.org/t/p/w500/QTH3dkeDGTBRBmsY0A7STpsNN4.jpg"
+        },
+        {
+          "title": "White Zombie",
+          "year": 1932,
+          "slug": "First feature zombie film with Bela Lugosi",
+          "poster": "https://image.tmdb.org/t/p/w500/s5DnfWHGeCExlweIFF4JOHKyx3H.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": 26860,
+          "poster_url": "https://image.tmdb.org/t/p/w500/s5DnfWHGeCExlweIFF4JOHKyx3H.jpg"
+        },
+        {
+          "title": "The Hands of Orlac",
+          "year": 1924,
+          "slug": "Silent horror about a pianist's transplanted murderous hands",
+          "poster": "https://image.tmdb.org/t/p/w500/40WWy1SSx8rh1r4mn1MNpCKIteF.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 2974,
+          "poster_url": "https://image.tmdb.org/t/p/w500/40WWy1SSx8rh1r4mn1MNpCKIteF.jpg"
+        },
+        {
+          "title": "The Golem",
+          "year": 1920,
+          "slug": "German silent horror about a clay creature protecting Jewish ghetto",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Monster",
+          "year": 1925,
+          "slug": "Lon Chaney as a mad scientist in an abandoned sanitarium",
+          "poster": "https://image.tmdb.org/t/p/w500/kOyxl0PCoYsZybEZnN32tOR2y0G.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 27502,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kOyxl0PCoYsZybEZnN32tOR2y0G.jpg"
+        },
+        {
+          "title": "Waxworks",
+          "year": 1924,
+          "slug": "German anthology horror with Conrad Veidt",
+          "poster": "https://image.tmdb.org/t/p/w500/6n8hkbMUiY3ETNNoQspHwotvHkA.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 27522,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6n8hkbMUiY3ETNNoQspHwotvHkA.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

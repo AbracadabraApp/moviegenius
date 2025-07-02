@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "Sweet Sweetback's Baadasssss Song",
+    "year": 1971,
+    "initialSlug": "Revolutionary independent Black cinema",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/ykGkbDp1QxQTM3UUrUvowtXLI0i.jpg",
+    "initialStreaming": null,
+    "tmdbId": 5822,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Sweet Sweetback's Baadasssss Song** (1971) revolutionized independent cinema and launched the Blaxploitation era. Director Melvin Van Peebles created this radical film with a $50,000 loan, guerrilla filming techniques, and a mostly Black crew - unheard of in 1971. The raw, experimental style and unflinching portrayal of police brutality against Black Americans sparked intense reactions. The Black Panthers endorsed it as required viewing, while mainstream critics were deeply divided. Its success ($15.2 million on a tiny budget) proved Black audiences were hungry for authentic stories."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Cotton Comes to Harlem",
+            "year": 1970,
+            "slug": "Pioneering Black detective film that helped pave way for Blaxploitation",
+            "poster": "https://image.tmdb.org/t/p/w500/tW30OfbGhe2uFBw4cr6tKsZwCcl.jpg",
+            "initialStreaming": "streaming",
+            "tmdb_id": 59917,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tW30OfbGhe2uFBw4cr6tKsZwCcl.jpg"
+          },
+          {
+            "title": "Shaft",
+            "year": 1971,
+            "slug": "Iconic private eye thriller that defined Blaxploitation style",
+            "poster": "https://image.tmdb.org/t/p/w500/yJChPuu2V339IiDPQDHeIh1SYpA.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 482,
+            "poster_url": "https://image.tmdb.org/t/p/w500/yJChPuu2V339IiDPQDHeIh1SYpA.jpg"
+          },
+          {
+            "title": "Super Fly",
+            "year": 1972,
+            "slug": "Stylish crime drama about a dealer trying to escape the life",
+            "poster": "https://image.tmdb.org/t/p/w500/lCj4IZ9l8NfOEiM4zHq3BRF2LzX.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 21968,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lCj4IZ9l8NfOEiM4zHq3BRF2LzX.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Van Peebles' guerrilla filmmaking techniques influenced later independent directors like Spike Lee and Robert Rodriguez. **She's Gotta Have It** (1986) and **El Mariachi** (1992) followed similar DIY methods - shooting without permits, using innovative financing, and maintaining creative control outside the studio system. The film's experimental narrative style, with its fragmented editing and impressionistic sequences, predated similar techniques in **Killer of Sheep** (1978). SUBHEAD: Cultural Impact and Legacy"
+      },
+      {
+        "type": "text",
+        "content": "The film's success created opportunities for Black filmmakers and changed Hollywood's view of Black audiences. **Blacula** (1972) and **Coffy** (1973) followed, bringing Black leads to horror and action genres. The influence extends to modern films like **Sorry to Bother You** (2018) and **The Last Black Man in San Francisco** (2019), which share its independent spirit and unflinching social commentary."
+      }
+    ],
+    "exploreFurther": [
+      "The DIY Filmmaking Revolution of the 1970s",
+      "Black Independent Cinema Movement",
+      "Evolution of Experimental Narrative Techniques",
+      "Impact of Blaxploitation on Modern Cinema",
+      "Van Peebles' Influence on Independent Filmmakers"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Dolemite",
+          "year": 1975,
+          "slug": "Pioneering Black comedy about a streetwise pimp",
+          "poster": "https://image.tmdb.org/t/p/w500/sc81lG0MdHq1UCY5b2B10c9wSKw.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 19174,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sc81lG0MdHq1UCY5b2B10c9wSKw.jpg"
+        },
+        {
+          "title": "Coffy",
+          "year": 1973,
+          "slug": "Pam Grier stars as a nurse seeking revenge",
+          "poster": "https://image.tmdb.org/t/p/w500/sN00Cvlahl6JLC2TAUBL0jZOqD3.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 22021,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sN00Cvlahl6JLC2TAUBL0jZOqD3.jpg"
+        },
+        {
+          "title": "The Spook Who Sat by the Door",
+          "year": 1973,
+          "slug": "Controversial film about Black CIA agent",
+          "poster": "https://image.tmdb.org/t/p/w500/tWu5IK8Yy0O4ol4KIBbQfetMtuz.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 62330,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tWu5IK8Yy0O4ol4KIBbQfetMtuz.jpg"
+        },
+        {
+          "title": "Blacula",
+          "year": 1972,
+          "slug": "Innovative Black horror film",
+          "poster": "https://image.tmdb.org/t/p/w500/yLqtFeZfRPoUUzzro3ogCdobB6q.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 30566,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yLqtFeZfRPoUUzzro3ogCdobB6q.jpg"
+        },
+        {
+          "title": "Black Caesar",
+          "year": 1973,
+          "slug": "Harlem crime drama with Fred Williamson",
+          "poster": "https://image.tmdb.org/t/p/w500/rmrEMxfDJVkpjOg0pwNJrF20L7a.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 22029,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rmrEMxfDJVkpjOg0pwNJrF20L7a.jpg"
+        },
+        {
+          "title": "Across 110th Street",
+          "year": 1972,
+          "slug": "Gritty police thriller in Harlem",
+          "poster": "https://image.tmdb.org/t/p/w500/2RFefK8DS8eUEuYyiN3tLAyM5IX.jpg",
+          "initialStreaming": "Pluto",
+          "tmdb_id": 23847,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2RFefK8DS8eUEuYyiN3tLAyM5IX.jpg"
+        },
+        {
+          "title": "Three the Hard Way",
+          "year": 1974,
+          "slug": "Action film with Jim Brown",
+          "poster": "https://image.tmdb.org/t/p/w500/1cQiPL80qZuIjHgzQYNVEfkGbFA.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 63340,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1cQiPL80qZuIjHgzQYNVEfkGbFA.jpg"
+        },
+        {
+          "title": "The Mack",
+          "year": 1973,
+          "slug": "Oakland pimp story with social commentary",
+          "poster": "https://image.tmdb.org/t/p/w500/xcS9bxWGFzC3cA7qAOjcIjKajSf.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 29515,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xcS9bxWGFzC3cA7qAOjcIjKajSf.jpg"
+        },
+        {
+          "title": "Gordon's War",
+          "year": 1973,
+          "slug": "Vietnam vet fights drug dealers",
+          "poster": "https://image.tmdb.org/t/p/w500/izNblreK3oqRDQ4fU4HDJrXDmkj.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 43077,
+          "poster_url": "https://image.tmdb.org/t/p/w500/izNblreK3oqRDQ4fU4HDJrXDmkj.jpg"
+        },
+        {
+          "title": "Hell Up in Harlem",
+          "year": 1973,
+          "slug": "Sequel to Black Caesar",
+          "poster": "https://image.tmdb.org/t/p/w500/ae2g3POHhgE2oZF8GcboIawkmRe.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 78076,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ae2g3POHhgE2oZF8GcboIawkmRe.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

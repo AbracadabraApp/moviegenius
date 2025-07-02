@@ -1,0 +1,183 @@
+{
+  "props": {
+    "title": "The Dark Knight",
+    "year": 2008,
+    "initialSlug": "Batman faces his greatest nemesis in the Joker's chaos",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+    "initialStreaming": "TBD",
+    "tmdbId": 155,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Dark Knight** (2008) revolutionized superhero cinema by transcending its genre roots. Christopher Nolan crafted a crime epic more reminiscent of **Heat** (1995) than traditional comic book fare. Heath Ledger's Oscar-winning Joker performance redefined screen villainy - anarchic, terrifying, and philosophically complex. The film's exploration of surveillance, terrorism, and moral compromise in post-9/11 America elevated it beyond typical superhero narratives. Its IMAX sequences, practical effects, and Hans Zimmer's tension-building score set new technical standards."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Batman Begins",
+            "year": 2005,
+            "slug": "Nolan's gritty Batman origin story grounds the superhero in psychological realism and urban decay",
+            "poster": "https://image.tmdb.org/t/p/w500/4MpN4kIEqUjW8OPtOQJXlTdHiJV.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 272,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4MpN4kIEqUjW8OPtOQJXlTdHiJV.jpg"
+          },
+          {
+            "title": "Memento",
+            "year": 2000,
+            "slug": "Nolan's breakthrough thriller showcasing his mastery of nonlinear narrative and moral ambiguity",
+            "poster": "https://image.tmdb.org/t/p/w500/fKTPH2WvH8nHTXeBYBVhawtRqtR.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 77,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fKTPH2WvH8nHTXeBYBVhawtRqtR.jpg"
+          },
+          {
+            "title": "Heat",
+            "year": 1995,
+            "slug": "Michael Mann's influential crime epic that directly inspired The Dark Knight's bank heist and city scope",
+            "poster": "https://image.tmdb.org/t/p/w500/umSVjVdbVwtx5ryCA2QXL44Durm.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 949,
+            "poster_url": "https://image.tmdb.org/t/p/w500/umSVjVdbVwtx5ryCA2QXL44Durm.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's impact rippled through Hollywood immediately. **Logan** (2017), **Black Panther** (2018), and **Joker** (2019) followed its template of genre-bending superhero stories tackling serious themes. The Dark Knight's success proved audiences would embrace complex moral questions within blockbuster frameworks. Its practical effects philosophy influenced films like **Mission: Impossible - Fallout** (2018) and **Inception** (2010), while its brooding tone shaped the entire DC cinematic universe."
+      },
+      {
+        "type": "text",
+        "content": "Nolan's technical innovations were equally groundbreaking. Shooting key sequences in IMAX created an immersive scale that films like **Dunkirk** (2017) and **Tenet** (2020) would later expand upon. The practical effects - flipping the semi truck, destroying the hospital - grounded the spectacle in reality. Wally Pfister's cinematography brought a Michael Mann-inspired urban realism that distinguished it from CGI-heavy contemporaries like **Iron Man** (2008). SUBHEAD: Cultural Impact and Legacy"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Se7en",
+            "year": 1995,
+            "slug": "David Fincher's neo-noir thriller shares The Dark Knight's dark urban atmosphere and philosophical villain",
+            "poster": "https://image.tmdb.org/t/p/w500/191nKfP0ehp3uIvWqgPbFmI4lv9.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 807,
+            "poster_url": "https://image.tmdb.org/t/p/w500/191nKfP0ehp3uIvWqgPbFmI4lv9.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's examination of heroism, terrorism, and surveillance gained deeper resonance in post-9/11 America. Like **V for Vendetta** (2005) and **Children of Men** (2006), it used genre elements to explore contemporary anxieties. The Joker's viral videos and public terror campaign eerily predicted modern concerns about radicalization and chaos. Batman's cell phone surveillance system sparked debates about security versus privacy that presaged Edward Snowden's revelations."
+      },
+      {
+        "type": "text",
+        "content": "Heath Ledger's posthumous Oscar win legitimized superhero films in Hollywood's eyes. His Joker influenced a generation of morally ambiguous villains, from Thanos to Killmonger. The character's popularity helped spawn standalone villain studies like **Joker** (2019) and **Venom** (2018). The Dark Knight proved superhero films could be both commercially successful and critically acclaimed, paving the way for the genre's current cultural dominance."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Batman on Screen: From Adam West to Robert Pattinson",
+      "Christopher Nolan's Practical Effects Philosophy",
+      "Heath Ledger's Method Acting Approach to the Joker",
+      "Post-9/11 Themes in Superhero Cinema",
+      "The Impact of IMAX on Blockbuster Filmmaking"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Inception",
+          "year": 2010,
+          "slug": "Nolan's mind-bending heist thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 27205,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg"
+        },
+        {
+          "title": "The Prestige",
+          "year": 2006,
+          "slug": "Nolan's period drama about rival magicians",
+          "poster": "https://image.tmdb.org/t/p/w500/bdN3gXuIZYaJP7ftKK2sU0nPtEA.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 1124,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bdN3gXuIZYaJP7ftKK2sU0nPtEA.jpg"
+        },
+        {
+          "title": "Batman Returns",
+          "year": 1992,
+          "slug": "Tim Burton's gothic take on Batman",
+          "poster": "https://image.tmdb.org/t/p/w500/jKBjeXM7iBBV9UkUcOXx3m7FSHY.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 364,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jKBjeXM7iBBV9UkUcOXx3m7FSHY.jpg"
+        },
+        {
+          "title": "Zodiac",
+          "year": 2007,
+          "slug": "David Fincher's methodical crime thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/6YmeO4pB7XTh8P8F960O1uA14JO.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 1949,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6YmeO4pB7XTh8P8F960O1uA14JO.jpg"
+        },
+        {
+          "title": "The Town",
+          "year": 2010,
+          "slug": "Boston crime drama influenced by The Dark Knight",
+          "poster": "https://image.tmdb.org/t/p/w500/3NIzyXkfylsjflRKSz8Fts3lXzm.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 23168,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3NIzyXkfylsjflRKSz8Fts3lXzm.jpg"
+        },
+        {
+          "title": "Blade Runner 2049",
+          "year": 2017,
+          "slug": "Visually stunning neo-noir with similar themes of morality",
+          "poster": "https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 335984,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg"
+        },
+        {
+          "title": "Drive",
+          "year": 2011,
+          "slug": "Stylish crime thriller with similar urban nightscape",
+          "poster": "https://image.tmdb.org/t/p/w500/602vevIURmpDfzbnv5Ubi6wIkQm.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 64690,
+          "poster_url": "https://image.tmdb.org/t/p/w500/602vevIURmpDfzbnv5Ubi6wIkQm.jpg"
+        },
+        {
+          "title": "L.A. Confidential",
+          "year": 1997,
+          "slug": "Complex crime drama about corruption and heroism",
+          "poster": "https://image.tmdb.org/t/p/w500/lWCgf5sD5FpMljjpkRhcC8pXcch.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 2118,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lWCgf5sD5FpMljjpkRhcC8pXcch.jpg"
+        },
+        {
+          "title": "The Departed",
+          "year": 2006,
+          "slug": "Scorsese's crime epic about moral compromise",
+          "poster": "https://image.tmdb.org/t/p/w500/nT97ifVT2J1yMQmeq20Qblg61T.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1422,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nT97ifVT2J1yMQmeq20Qblg61T.jpg"
+        },
+        {
+          "title": "The Dark Knight Rises",
+          "year": 2012,
+          "slug": "Nolan's trilogy conclusion",
+          "poster": "https://image.tmdb.org/t/p/w500/hr0L2aueqlP2BYUblTTjmtn0hw4.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 49026,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hr0L2aueqlP2BYUblTTjmtn0hw4.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

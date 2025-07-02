@@ -1,0 +1,155 @@
+{
+  "props": {
+    "title": "The Ten Commandments",
+    "year": 1923,
+    "initialSlug": "Epic tale of Moses leading Hebrews to freedom",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/zCLObhnxHTqIpCMYm63KSsO6sMp.jpg",
+    "initialStreaming": null,
+    "tmdbId": 24805,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Cecil B. DeMille's silent epic **The Ten Commandments** (1923) revolutionized biblical spectacle filmmaking, setting the template that Hollywood would follow for decades. Its massive sets, including a 120-foot-tall Egyptian city gate and life-sized sphinx, established new standards for production design. While less known than DeMille's 1956 remake with Charlton Heston, this original version pioneered many visual effects techniques, particularly in its parting of the Red Sea sequence achieved through gelatin and a split-screen effect. The film actually tells two stories - the biblical Exodus narrative and a modern morality tale about two brothers, demonstrating how DeMille connected ancient religious themes to contemporary social issues."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Ben-Hur",
+            "year": 1925,
+            "slug": "The original silent epic featuring the legendary chariot race sequence that influenced action filmmaking for generations",
+            "poster": "https://image.tmdb.org/t/p/w500/aCohFCJNxPner7VzjzyNN7H8BgV.jpg",
+            "initialStreaming": "Public Domain",
+            "tmdb_id": 31510,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aCohFCJNxPner7VzjzyNN7H8BgV.jpg"
+          },
+          {
+            "title": "Intolerance",
+            "year": 1916,
+            "slug": "D.W. Griffith's ambitious parallel narrative connecting four historical periods, including ancient Babylon",
+            "poster": "https://image.tmdb.org/t/p/w500/lJCabs4TMOsKfnl0BmA5Hf16Ezb.jpg",
+            "initialStreaming": "Public Domain",
+            "tmdb_id": 3059,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lJCabs4TMOsKfnl0BmA5Hf16Ezb.jpg"
+          },
+          {
+            "title": "Noah's Ark",
+            "year": 1928,
+            "slug": "Part biblical epic, part modern story drawing parallels between the Great Flood and World War I",
+            "poster": "https://image.tmdb.org/t/p/w500/lddZe7IPVRUmKHVkZEtA2Quakqh.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 104430,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lddZe7IPVRUmKHVkZEtA2Quakqh.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The success of **The Ten Commandments** (1923) sparked a wave of biblical epics in the silent era. **King of Kings** (1927), also directed by DeMille, brought unprecedented scale to depicting the life of Jesus. These films established a visual language for biblical storytelling: massive sets, thousands of extras, and innovative effects work. The genre's popularity demonstrated early Hollywood's ability to merge spectacle with moral messaging, something that would become crucial to the industry's self-regulation under the later Production Code. SUBHEAD: Technical Innovation and Visual Effects"
+      },
+      {
+        "type": "text",
+        "content": "Silent-era biblical epics pushed technical boundaries out of necessity. **The Ten Commandments** (1923) used groundbreaking practical effects, while **Ben-Hur** (1925) employed early Technicolor sequences. These innovations carried forward into films like **Noah's Ark** (1928), though that production's dangerous flood sequence, which injured many extras, led to stricter safety regulations. DeMille's work particularly influenced **Sign of the Cross** (1932), showing how silent techniques evolved into the sound era."
+      }
+    ],
+    "exploreFurther": [
+      "Early Hollywood Special Effects Techniques",
+      "Cecil B. DeMille's Evolution from Silent to Sound Films",
+      "Religious Themes in Silent Cinema",
+      "The Development of the Biblical Epic Genre",
+      "Silent Film Set Design and Construction Methods"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Quo Vadis",
+          "year": 1913,
+          "slug": "Early Italian epic about Roman persecution of Christians",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": null
+        },
+        {
+          "title": "The King of Kings",
+          "year": 1927,
+          "slug": "DeMille's follow-up biblical epic about Jesus",
+          "poster": "https://image.tmdb.org/t/p/w500/qJThyOfQVeEctEVVtK3LTDVL5S6.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": 49633,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qJThyOfQVeEctEVVtK3LTDVL5S6.jpg"
+        },
+        {
+          "title": "Judith of Bethulia",
+          "year": 1914,
+          "slug": "D.W. Griffith's biblical drama about the siege of Bethulia",
+          "poster": "https://image.tmdb.org/t/p/w500/paLiTzDwYlgVTnbXLaEZSppdD17.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": 98078,
+          "poster_url": "https://image.tmdb.org/t/p/w500/paLiTzDwYlgVTnbXLaEZSppdD17.jpg"
+        },
+        {
+          "title": "The Life of Moses",
+          "year": 1909,
+          "slug": "Early Vitagraph serialized biblical story",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": null
+        },
+        {
+          "title": "Civilization",
+          "year": 1916,
+          "slug": "Thomas Ince's allegorical Christ story set in modern times",
+          "poster": "https://image.tmdb.org/t/p/w500/7IeGb9MLyZP7599FdA5M36nIot7.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": 120664,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7IeGb9MLyZP7599FdA5M36nIot7.jpg"
+        },
+        {
+          "title": "Samson and Delilah",
+          "year": 1922,
+          "slug": "Austrian silent version of the biblical tale",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Queen of Sheba",
+          "year": 1921,
+          "slug": "Biblical epic focusing on Solomon and Sheba",
+          "poster": "https://image.tmdb.org/t/p/w500/uyKT3mMhX3bmPWybW0dFPQZloxi.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": 270897,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uyKT3mMhX3bmPWybW0dFPQZloxi.jpg"
+        },
+        {
+          "title": "Sodom and Gomorrah",
+          "year": 1922,
+          "slug": "Austrian epic mixing biblical story with modern moral tale",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": null
+        },
+        {
+          "title": "David and Goliath",
+          "year": 1908,
+          "slug": "Pioneering short film of the biblical story",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Star of Bethlehem",
+          "year": 1912,
+          "slug": "Early Thanhouser biblical production",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

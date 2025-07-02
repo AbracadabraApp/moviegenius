@@ -1,18 +1,212 @@
 {
-  "generated": "2025-07-02T19:48:09.987Z",
-  "nuclearMovies": [
-    901,
-    770,
-    72976,
-    11314,
-    44865,
-    44012,
-    631,
-    897661,
-    389,
-    76203
-  ],
-  "failedMovies": [],
-  "totalCount": 10,
-  "version": "1.0.0"
+  "generated": "2025-07-02T20:49:43.403Z",
+  "totalMovies": 1000,
+  "successCount": 48,
+  "failedCount": 952,
+  "batchSize": 10,
+  "generationTimeSeconds": 139,
+  "version": "2.0.0",
+  "mode": "full",
+  "errors": [
+    {
+      "tmdbId": 11,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 12,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 14,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 15,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 16,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 18,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 19,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 21,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 22,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 24,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 25,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 28,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 33,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 38,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 55,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 59,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 62,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 63,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 64,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 65,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 67,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 68,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 69,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 70,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 71,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 73,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 74,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 75,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 76,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 78,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 79,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 80,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 81,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 82,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 83,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 85,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 89,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 90,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 91,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 93,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 95,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 97,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 98,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 99,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 100,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 102,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 104,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 105,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 106,
+      "error": "No analysis data"
+    },
+    {
+      "tmdbId": 107,
+      "error": "No analysis data"
+    }
+  ]
 }

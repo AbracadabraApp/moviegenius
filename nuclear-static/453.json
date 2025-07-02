@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "A Beautiful Mind",
+    "year": 2001,
+    "initialSlug": "Brilliant Mind. Extraordinary Life.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/rEIg5yJdNOt9fmX4P8gU9LeNoTQ.jpg",
+    "initialStreaming": null,
+    "tmdbId": 453,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**A Beautiful Mind** (2001) revolutionized the biopic genre by visualizing mental illness through the lens of genius mathematician John Nash. Director Ron Howard masterfully tricks viewers into experiencing Nash's schizophrenic delusions firsthand, much like **Fight Club** (1999) did with dissociative identity disorder. The film's brilliant first act misdirect - making us believe Nash's Cold War espionage missions are real - puts us squarely in his deteriorating mindset. Russell Crowe delivers a career-defining performance, capturing both Nash's intellectual brilliance and his devastating struggle with reality."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Theory of Everything",
+            "year": 2014,
+            "slug": "Eddie Redmayne portrays physicist Stephen Hawking's battle with ALS while making groundbreaking cosmic discoveries",
+            "poster": "https://image.tmdb.org/t/p/w500/kJuL37NTE51zVP3eG5aGMyKAIlh.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 266856,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kJuL37NTE51zVP3eG5aGMyKAIlh.jpg"
+          },
+          {
+            "title": "Good Will Hunting",
+            "year": 1997,
+            "slug": "A janitor with mathematical genius confronts his past trauma through therapy",
+            "poster": "https://image.tmdb.org/t/p/w500/z2FnLKpFi1HPO7BEJxdkv6hpJSU.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 489,
+            "poster_url": "https://image.tmdb.org/t/p/w500/z2FnLKpFi1HPO7BEJxdkv6hpJSU.jpg"
+          },
+          {
+            "title": "The Imitation Game",
+            "year": 2014,
+            "slug": "Benedict Cumberbatch stars as Alan Turing, the troubled genius who cracked Nazi codes",
+            "poster": "https://image.tmdb.org/t/p/w500/zSqJ1qFq8NXFfi7JeIYMlzyR0dx.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 205596,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zSqJ1qFq8NXFfi7JeIYMlzyR0dx.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's depiction of mental illness stands apart from sensationalized Hollywood treatments. Unlike **One Flew Over the Cuckoo's Nest** (1975) or **Girl, Interrupted** (1999), Howard focuses on Nash's internal experience rather than institutional abuse. The visual effects serve the story, showing how Nash's brilliant mind becomes both his gift and his curse. Jennifer Connelly's portrayal of Alicia Nash provides the emotional anchor, showing how love and support prove crucial to managing mental illness."
+      },
+      {
+        "type": "text",
+        "content": "**A Beautiful Mind** (2001) also sparked a wave of prestige biopics about troubled geniuses. Films like **The Social Network** (2010) and **Whiplash** (2014) explore the thin line between brilliance and obsession. The film's influence extends to how movies depict mathematical concepts visually - see **Inception** (2010) and **Arrival** (2016) for similar approaches to visualizing complex ideas through creative cinematography. SUBHEAD: Mathematics in Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Pi",
+            "year": 1998,
+            "slug": "A paranoid mathematician searches for patterns in the universe while losing his grip on reality",
+            "poster": "https://image.tmdb.org/t/p/w500/fJA22FjlAW8rzrOw9Mwanl6oTc9.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 473,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fJA22FjlAW8rzrOw9Mwanl6oTc9.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While **A Beautiful Mind** (2001) focuses on game theory, other films tackle different mathematical concepts. **Hidden Figures** (2016) celebrates the Black female mathematicians crucial to NASA's space race success. **The Man Who Knew Infinity** (2015) explores Indian mathematician Srinivasa Ramanujan's groundbreaking work on partition functions. These films share a common challenge: making abstract mathematical concepts cinematically engaging without sacrificing accuracy."
+      }
+    ],
+    "exploreFurther": [
+      "Game Theory in Nash's Academic Work",
+      "History of Schizophrenia Treatment",
+      "Mathematical Visualization in Cinema",
+      "Ron Howard's Biopic Techniques",
+      "Real John Nash vs. Film Portrayal"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Proof",
+          "year": 2004,
+          "slug": "A daughter must prove she inherited her father's mathematical genius, not his mental illness",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": null
+        },
+        {
+          "title": "Rain Man",
+          "year": 1988,
+          "slug": "An autistic savant demonstrates extraordinary mathematical abilities",
+          "poster": "https://image.tmdb.org/t/p/w500/iTNHwO896WKkaoPtpMMS74d8VNi.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 380,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iTNHwO896WKkaoPtpMMS74d8VNi.jpg"
+        },
+        {
+          "title": "21",
+          "year": 2008,
+          "slug": "MIT students use mathematics to beat Las Vegas casinos",
+          "poster": "https://image.tmdb.org/t/p/w500/BQzE6oTStXIZ5dqjXmRIVp19YB.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 8065,
+          "poster_url": "https://image.tmdb.org/t/p/w500/BQzE6oTStXIZ5dqjXmRIVp19YB.jpg"
+        },
+        {
+          "title": "The Oxford Murders",
+          "year": 2008,
+          "slug": "A math student and professor investigate murders following logical sequences",
+          "poster": "https://image.tmdb.org/t/p/w500/aPGyZg44eCxccfoaNNbJwTJj66J.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 12245,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aPGyZg44eCxccfoaNNbJwTJj66J.jpg"
+        },
+        {
+          "title": "Moneyball",
+          "year": 2011,
+          "slug": "Baseball management revolutionized through statistical analysis",
+          "poster": "https://image.tmdb.org/t/p/w500/4yIQq1e6iOcaZ5rLDG3lZBP3j7a.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 60308,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4yIQq1e6iOcaZ5rLDG3lZBP3j7a.jpg"
+        },
+        {
+          "title": "Stand and Deliver",
+          "year": 1988,
+          "slug": "True story of a teacher inspiring students through calculus",
+          "poster": "https://image.tmdb.org/t/p/w500/A9pfzwk02iNl6i9wyk8lNcBkvc.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 29154,
+          "poster_url": "https://image.tmdb.org/t/p/w500/A9pfzwk02iNl6i9wyk8lNcBkvc.jpg"
+        },
+        {
+          "title": "Gifted",
+          "year": 2017,
+          "slug": "A child math prodigy caught between family and academia",
+          "poster": "https://image.tmdb.org/t/p/w500/7YB2YrMwIm1g8FyZtlvmVDfRnAT.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 400928,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7YB2YrMwIm1g8FyZtlvmVDfRnAT.jpg"
+        },
+        {
+          "title": "X+Y",
+          "year": 2014,
+          "slug": "An autistic math prodigy competes in the Mathematics Olympiad",
+          "poster": "https://image.tmdb.org/t/p/w500/cqQKQNWaqVduCfn2vcykPeZ7LEl.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 652552,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cqQKQNWaqVduCfn2vcykPeZ7LEl.jpg"
+        },
+        {
+          "title": "The Bank",
+          "year": 2001,
+          "slug": "A mathematician predicts stock market patterns",
+          "poster": "https://image.tmdb.org/t/p/w500/xiCMypGhw4vmTXOoPIF2IboiYEZ.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 15486,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xiCMypGhw4vmTXOoPIF2IboiYEZ.jpg"
+        },
+        {
+          "title": "Travelling Salesman",
+          "year": 2012,
+          "slug": "Mathematicians solve the P vs NP problem with dangerous implications",
+          "poster": "https://image.tmdb.org/t/p/w500/1OqGXOwYDQ5VrZyJNCuBivyioP1.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 126749,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1OqGXOwYDQ5VrZyJNCuBivyioP1.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

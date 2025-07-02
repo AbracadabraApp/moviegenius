@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "Robin Hood: Men in Tights",
+    "year": 1993,
+    "initialSlug": "Mel Brooks spoofs Robin Hood with silly laughs",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/woexOLEkUlYsPLLuZRK6LjZaF38.jpg",
+    "initialStreaming": null,
+    "tmdbId": 8005,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Mel Brooks delivers another masterful parody with **Robin Hood: Men in Tights** (1993), gleefully skewering both the Robin Hood legend and specifically **Robin Hood: Prince of Thieves** (1991). Brooks continues his tradition of genre satire established in **Blazing Saddles** (1974) and **Spaceballs** (1987), using Cary Elwes' pitch-perfect comedic timing to mock Kevin Costner's earnest portrayal. The film represents Brooks' last truly memorable comedy, featuring his signature mix of slapstick, wordplay, and anachronistic jokes that break the fourth wall."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Robin Hood: Prince of Thieves",
+            "year": 1991,
+            "slug": "Kevin Costner's serious take on the legend that Men in Tights directly parodies",
+            "poster": "https://image.tmdb.org/t/p/w500/hbRnWUNJkKKVN5mkcuC5ooqjE4e.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 8367,
+            "poster_url": "https://image.tmdb.org/t/p/w500/hbRnWUNJkKKVN5mkcuC5ooqjE4e.jpg"
+          },
+          {
+            "title": "The Princess Bride",
+            "year": 1987,
+            "slug": "Cary Elwes' other beloved comedy adventure role with similar swashbuckling charm",
+            "poster": "https://image.tmdb.org/t/p/w500/dvjqlp2sAhUeFjUOfQDgqwpphHj.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 2493,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dvjqlp2sAhUeFjUOfQDgqwpphHj.jpg"
+          },
+          {
+            "title": "Blazing Saddles",
+            "year": 1974,
+            "slug": "Brooks' Western parody that established his signature satirical style",
+            "poster": "https://image.tmdb.org/t/p/w500/vNw1gOEDdYTDeNMuuq8OmiEHrfH.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 11072,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vNw1gOEDdYTDeNMuuq8OmiEHrfH.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film sits within Brooks' larger body of genre parodies, each targeting specific films while lampooning entire genres. **Young Frankenstein** (1974) lovingly mocked Universal monster movies, while **Spaceballs** (1987) took aim at **Star Wars** (1977) and space opera conventions. **Men in Tights** continues this tradition, with Dave Chappelle's Ahchoo character serving as a knowing wink to Morgan Freeman's Azeem, while Richard Lewis delivers a delightfully neurotic Prince John. SUBHEAD: The Evolution of Comedy Parody Films"
+      },
+      {
+        "type": "text",
+        "content": "While **Airplane!** (1980) and **The Naked Gun** (1988) established the rapid-fire parody style, Brooks' approach in **Men in Tights** maintains his preference for character-driven comedy and musical numbers. The film's influence can be seen in later parodies like **Not Another Teen Movie** (2001) and **Scary Movie** (1999), though few achieved Brooks' balance of pointed satire and genuine affection for the source material. The film's enduring popularity speaks to Brooks' understanding that successful parody requires both knowledge of and respect for the genre being satirized."
+      }
+    ],
+    "exploreFurther": [
+      "Mel Brooks' Evolution of Parody Films Through the Decades",
+      "The Influence of Vaudeville on Brooks' Musical Comedy Numbers",
+      "Dave Chappelle's Early Career in Comedy Films",
+      "The History of Robin Hood in Cinema",
+      "The Rise and Fall of the Comedy Parody Genre"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Young Frankenstein",
+          "year": 1974,
+          "slug": "Brooks' loving parody of classic horror films",
+          "poster": "https://image.tmdb.org/t/p/w500/tQJAWbIjvvqVKLLbIZHtwGw2HTf.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 3034,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tQJAWbIjvvqVKLLbIZHtwGw2HTf.jpg"
+        },
+        {
+          "title": "Spaceballs",
+          "year": 1987,
+          "slug": "Star Wars gets the Brooks treatment",
+          "poster": "https://image.tmdb.org/t/p/w500/cIbr9JRJX4jENulVETd4cAofTAA.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 957,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cIbr9JRJX4jENulVETd4cAofTAA.jpg"
+        },
+        {
+          "title": "History of the World Part I",
+          "year": 1981,
+          "slug": "Brooks tackles historical epics with his signature style",
+          "poster": "https://image.tmdb.org/t/p/w500/6iAl78qZHT65erPXr2YW6Y54wlY.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10156,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6iAl78qZHT65erPXr2YW6Y54wlY.jpg"
+        },
+        {
+          "title": "Hot Shots!",
+          "year": 1991,
+          "slug": "Top Gun parody in the Brooks tradition",
+          "poster": "https://image.tmdb.org/t/p/w500/koLIB5263emHxewmwgBBK26vjeS.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9595,
+          "poster_url": "https://image.tmdb.org/t/p/w500/koLIB5263emHxewmwgBBK26vjeS.jpg"
+        },
+        {
+          "title": "Top Secret!",
+          "year": 1984,
+          "slug": "Early Val Kilmer spy movie spoof",
+          "poster": "https://image.tmdb.org/t/p/w500/hRTbfR27xghnVMs3ZJ3EhK3zzud.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 8764,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hRTbfR27xghnVMs3ZJ3EhK3zzud.jpg"
+        },
+        {
+          "title": "Dracula: Dead and Loving It",
+          "year": 1995,
+          "slug": "Brooks' later vampire parody",
+          "poster": "https://image.tmdb.org/t/p/w500/fwdXQU3Dbs2CMHu8K87bAxlWV0t.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 12110,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fwdXQU3Dbs2CMHu8K87bAxlWV0t.jpg"
+        },
+        {
+          "title": "The Naked Gun",
+          "year": 1988,
+          "slug": "Police procedural parody that influenced the genre",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Hot Shots! Part Deux",
+          "year": 1993,
+          "slug": "Action movie sequel parody",
+          "poster": "https://image.tmdb.org/t/p/w500/zh9EGK970GHo10ETclWBOjZVUOK.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9255,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zh9EGK970GHo10ETclWBOjZVUOK.jpg"
+        },
+        {
+          "title": "Fatal Instinct",
+          "year": 1993,
+          "slug": "Erotic thriller parody from Carl Reiner",
+          "poster": "https://image.tmdb.org/t/p/w500/82HA5CmfmJLaBry4DpT5D4UiFNR.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 91534,
+          "poster_url": "https://image.tmdb.org/t/p/w500/82HA5CmfmJLaBry4DpT5D4UiFNR.jpg"
+        },
+        {
+          "title": "High Anxiety",
+          "year": 1977,
+          "slug": "Brooks' Hitchcock homage",
+          "poster": "https://image.tmdb.org/t/p/w500/qVuSJaGnomSPon8x3mIYywFGgD8.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 12535,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qVuSJaGnomSPon8x3mIYywFGgD8.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

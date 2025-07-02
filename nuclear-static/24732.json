@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "Harrison Bergeron",
+    "year": 1995,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/jc2mINVs86QrreRZw0tlPJp1FlC.jpg",
+    "initialStreaming": "TBD",
+    "tmdbId": 24732,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Harrison Bergeron** (1995) delivers a chilling adaptation of Kurt Vonnegut's dystopian short story, starring Christopher Plummer as a TV producer in a society where intelligence and talent are forcibly suppressed to ensure \"equality.\" Unlike later dystopian films like **Equilibrium** (2002) or **The Giver** (2014), this made-for-TV film maintains an intimate focus that amplifies its horrifying premise. The film expands Vonnegut's brief story into a fuller examination of conformity and mediocrity being enforced as virtues, predating similar themes in **V for Vendetta** (2005)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Harrison Bergeron",
+            "year": 1995,
+            "slug": "In a dystopian future where intelligence is suppressed by law, a gifted teen rebels against forced mediocrity",
+            "poster": "https://image.tmdb.org/t/p/w500/jc2mINVs86QrreRZw0tlPJp1FlC.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 24732,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jc2mINVs86QrreRZw0tlPJp1FlC.jpg"
+          },
+          {
+            "title": "Fahrenheit 451",
+            "year": 1966,
+            "slug": "Dystopian classic about a future where books are banned and \"firemen\" burn any they find",
+            "poster": "https://image.tmdb.org/t/p/w500/k2CTpexoS9MO9lKVFfnzwVdJuM.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 1714,
+            "poster_url": "https://image.tmdb.org/t/p/w500/k2CTpexoS9MO9lKVFfnzwVdJuM.jpg"
+          },
+          {
+            "title": "THX 1138",
+            "year": 1971,
+            "slug": "George Lucas's debut about a drugged society where emotions are illegal",
+            "poster": "https://image.tmdb.org/t/p/w500/25cQH5gZ60BiA5Y91HxoPpnFiY0.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 636,
+            "poster_url": "https://image.tmdb.org/t/p/w500/25cQH5gZ60BiA5Y91HxoPpnFiY0.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's television origins actually work in its favor, creating a claustrophobic atmosphere that mirrors its characters' mental imprisonment. Sean Astin delivers a powerful performance as the titular Harrison, bringing depth to a character that could have easily become a one-dimensional rebel archetype. The film's modest budget forces it to focus on ideas rather than spectacle, similar to how **1984** (1984) used its limitations to create a more psychologically affecting adaptation of Orwell's work. SUBHEAD: Dystopian Social Commentary in the 1990s"
+      },
+      {
+        "type": "text",
+        "content": "**Harrison Bergeron** arrived during a fascinating period for dystopian cinema, between the Cold War-influenced works of the 1980s and the teen-focused dystopias of the 2010s. Its themes of enforced equality through handicapping the gifted resonated differently in 1995 than they do today, but the core warning about the dangers of enforced conformity remains relevant. The film shares DNA with other thoughtful 90s science fiction like **Gattaca** (1997) and **Dark City** (1998), which similarly explored identity and human potential under oppressive systems."
+      }
+    ],
+    "exploreFurther": [
+      "Kurt Vonnegut's influence on science fiction cinema",
+      "The evolution of dystopian films from the 1960s to present",
+      "Made-for-TV science fiction films of the 1990s",
+      "Adaptations of short stories into feature films",
+      "The role of minimalist budgets in dystopian storytelling"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Gattaca",
+          "year": 1997,
+          "slug": "A genetically inferior man assumes another's identity to pursue his dreams in a DNA-obsessed society",
+          "poster": "https://image.tmdb.org/t/p/w500/eSKr5Fl1MEC7zpAXaLWBWSBjgJq.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 782,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eSKr5Fl1MEC7zpAXaLWBWSBjgJq.jpg"
+        },
+        {
+          "title": "The Handmaid's Tale",
+          "year": 1990,
+          "slug": "In a totalitarian future, women are forced into reproductive servitude",
+          "poster": "https://image.tmdb.org/t/p/w500/cnkKQyRzoCMZliMaknTOXHqXKaz.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 20815,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cnkKQyRzoCMZliMaknTOXHqXKaz.jpg"
+        },
+        {
+          "title": "Brazil",
+          "year": 1985,
+          "slug": "A bureaucrat tries to correct an administrative error in a dystopian society",
+          "poster": "https://image.tmdb.org/t/p/w500/aewan59WcFThBimkTVVoNf2o5Vb.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 68,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aewan59WcFThBimkTVVoNf2o5Vb.jpg"
+        },
+        {
+          "title": "Equilibrium",
+          "year": 2002,
+          "slug": "In a future where emotions are outlawed, an enforcer questions his society",
+          "poster": "https://image.tmdb.org/t/p/w500/eW3YrxOh3rd6PnRgMSftYoflvfe.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 7299,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eW3YrxOh3rd6PnRgMSftYoflvfe.jpg"
+        },
+        {
+          "title": "Dark City",
+          "year": 1998,
+          "slug": "A man discovers his city is controlled by mysterious beings who alter reality nightly",
+          "poster": "https://image.tmdb.org/t/p/w500/tNPEGju4DpTdbhBphNmZoEi9Bd3.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 2666,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tNPEGju4DpTdbhBphNmZoEi9Bd3.jpg"
+        },
+        {
+          "title": "The Giver",
+          "year": 2014,
+          "slug": "A young man learns the dark truth about his seemingly perfect community",
+          "poster": "https://image.tmdb.org/t/p/w500/dul62Av4pgi5x8LP7ELHzNyka9Z.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 227156,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dul62Av4pgi5x8LP7ELHzNyka9Z.jpg"
+        },
+        {
+          "title": "Never Let Me Go",
+          "year": 2010,
+          "slug": "Students at a boarding school discover their disturbing purpose in society",
+          "poster": "https://image.tmdb.org/t/p/w500/8F0r5ng9Fp60OhzQfR5v33fppq.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 42188,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8F0r5ng9Fp60OhzQfR5v33fppq.jpg"
+        },
+        {
+          "title": "A Clockwork Orange",
+          "year": 1971,
+          "slug": "A violent delinquent undergoes experimental rehabilitation in a dystopian Britain",
+          "poster": "https://image.tmdb.org/t/p/w500/4sHeTAp65WrSSuc05nRBKddhBxO.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 185,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4sHeTAp65WrSSuc05nRBKddhBxO.jpg"
+        },
+        {
+          "title": "Snowpiercer",
+          "year": 2013,
+          "slug": "Class warfare erupts on a train carrying the last survivors of humanity",
+          "poster": "https://image.tmdb.org/t/p/w500/nzccOvhrLGI0nvAknCEAk8bchD9.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 110415,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nzccOvhrLGI0nvAknCEAk8bchD9.jpg"
+        },
+        {
+          "title": "The Island",
+          "year": 2005,
+          "slug": "Residents of a confined facility discover they're being harvested for organs",
+          "poster": "https://image.tmdb.org/t/p/w500/juSBGCTK463as9clAea4mE2N3s0.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 1635,
+          "poster_url": "https://image.tmdb.org/t/p/w500/juSBGCTK463as9clAea4mE2N3s0.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

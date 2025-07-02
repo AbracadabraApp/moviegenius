@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "Speed Racer",
+    "year": 2008,
+    "initialSlug": "Fuel-Fueled, Pulse-Pounding Thrill",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/fxRIpx9Op9h71q3tvuabx4GryyP.jpg",
+    "initialStreaming": null,
+    "tmdbId": 7459,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The Wachowskis' **Speed Racer** (2008) revolutionized digital filmmaking with its hyper-stylized aesthetic and manga-come-to-life approach. Following their groundbreaking work on **The Matrix** (1999), the directors created a technicolor fever dream that polarized audiences but influenced countless films like **Scott Pilgrim vs. The World** (2010) and **Into the Spider-Verse** (2018). The film's innovative \"car fu\" sequences layer multiple planes of action simultaneously, creating a visual language that feels like reading a comic book in motion."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Speed Racer",
+            "year": 2008,
+            "slug": "The Wachowskis transform the classic anime into a candy-colored visual feast about family, racing, and corporate corruption",
+            "poster": "https://image.tmdb.org/t/p/w500/fxRIpx9Op9h71q3tvuabx4GryyP.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 7459,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fxRIpx9Op9h71q3tvuabx4GryyP.jpg"
+          },
+          {
+            "title": "Redline",
+            "year": 2009,
+            "slug": "Ultra-stylized Japanese racing anime that pushes visual boundaries with hand-drawn animation",
+            "poster": "https://image.tmdb.org/t/p/w500/yUkH0y9OsY7J08Dvfzi1P0di559.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 71883,
+            "poster_url": "https://image.tmdb.org/t/p/w500/yUkH0y9OsY7J08Dvfzi1P0di559.jpg"
+          },
+          {
+            "title": "Tron: Legacy",
+            "year": 2010,
+            "slug": "Sleek digital world meets high-stakes racing with a neon-drenched aesthetic",
+            "poster": "https://image.tmdb.org/t/p/w500/vuifSABRpSnxCAOxEnWpNbZSXpp.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 20526,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vuifSABRpSnxCAOxEnWpNbZSXpp.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Speed Racer's influence extends beyond just racing films. Its revolutionary use of green screen technology and digital backgrounds paved the way for films like **Sin City** (2005) and **300** (2006) to create completely artificial yet immersive worlds. The movie's commitment to recreating anime aesthetics in live action preceded later successful adaptations like **Alita: Battle Angel** (2019) and **Ghost in the Shell** (2017), though Speed Racer remains the most stylistically faithful to its source material."
+      },
+      {
+        "type": "text",
+        "content": "The film's approach to family dynamics and anti-corporate messaging feels surprisingly relevant today. Like **The Lego Movie** (2014) and **Ready Player One** (2018), Speed Racer wraps its critique of capitalism in bright colors and kinetic action. The Racer family's struggle against Royalton Industries mirrors contemporary debates about corporate influence in sports and entertainment. SUBHEAD: Visual Innovation & Technical Achievement"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Cloud Atlas",
+            "year": 2012,
+            "slug": "Another Wachowski visual spectacle exploring interconnected stories across time",
+            "poster": "https://image.tmdb.org/t/p/w500/8naVv2Xu3rWI5JKHz0vCujx6GaJ.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 83542,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8naVv2Xu3rWI5JKHz0vCujx6GaJ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Speed Racer's technical innovations deserve special attention. The film utilized a \"digital sandbox\" approach where multiple cameras captured performances that were then composited into virtual environments. This technique influenced films like **Avatar** (2009) and **Life of Pi** (2012). The movie's unique editing style, which uses wipes and split screens to maintain continuous motion, created a new visual grammar for action sequences."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Digital Backlot Filmmaking: From Speed Racer to Modern Blockbusters",
+      "Anime Adaptations: Challenges of Translating Animation to Live Action",
+      "The Wachowskis' Visual Style: From The Matrix to Speed Racer",
+      "Color Theory in Digital Cinema: Speed Racer's Revolutionary Palette",
+      "Racing Movies: From Grand Prix to Speed Racer"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Death Race 2000",
+          "year": 1975,
+          "slug": "Violent futuristic racing satire that influenced Speed Racer's anti-corporate themes",
+          "poster": "https://image.tmdb.org/t/p/w500/kwM8kkNGtv62gfPWVhD6qFxjDzg.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 13282,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kwM8kkNGtv62gfPWVhD6qFxjDzg.jpg"
+        },
+        {
+          "title": "The Fifth Element",
+          "year": 1997,
+          "slug": "Similarly colorful and stylized sci-fi spectacle",
+          "poster": "https://image.tmdb.org/t/p/w500/fPtlCO1yQtnoLHOwKtWz7db6RGU.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 18,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fPtlCO1yQtnoLHOwKtWz7db6RGU.jpg"
+        },
+        {
+          "title": "Scott Pilgrim vs. The World",
+          "year": 2010,
+          "slug": "Comic book aesthetics brought to vibrant life",
+          "poster": "https://image.tmdb.org/t/p/w500/g5IoYeudx9XBEfwNL0fHvSckLBz.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 22538,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g5IoYeudx9XBEfwNL0fHvSckLBz.jpg"
+        },
+        {
+          "title": "Ready Player One",
+          "year": 2018,
+          "slug": "Virtual racing and pop culture spectacle",
+          "poster": "https://image.tmdb.org/t/p/w500/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 333339,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg"
+        },
+        {
+          "title": "Spy Kids 3D: Game Over",
+          "year": 2003,
+          "slug": "Similar digital world aesthetic and family themes",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Wreck-It Ralph",
+          "year": 2012,
+          "slug": "Colorful racing sequences in a digital world",
+          "poster": "https://image.tmdb.org/t/p/w500/zWoIgZ7mgmPkaZjG0102BSKFIqQ.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 82690,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zWoIgZ7mgmPkaZjG0102BSKFIqQ.jpg"
+        },
+        {
+          "title": "Pacific Rim",
+          "year": 2013,
+          "slug": "Anime-influenced visual spectacle",
+          "poster": "https://image.tmdb.org/t/p/w500/mmznhaQDwlHWpUwKuNxtQiubbmM.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 68726,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mmznhaQDwlHWpUwKuNxtQiubbmM.jpg"
+        },
+        {
+          "title": "Thor: Ragnarok",
+          "year": 2017,
+          "slug": "Similarly bold color palette and retro-future aesthetic",
+          "poster": "https://image.tmdb.org/t/p/w500/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 284053,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg"
+        },
+        {
+          "title": "The Lego Movie",
+          "year": 2014,
+          "slug": "Shares anti-corporate themes and visual energy",
+          "poster": "https://image.tmdb.org/t/p/w500/lbctonEnewCYZ4FYoTZhs8cidAl.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 137106,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lbctonEnewCYZ4FYoTZhs8cidAl.jpg"
+        },
+        {
+          "title": "Valerian and the City of a Thousand Planets",
+          "year": 2017,
+          "slug": "Bold visual style and digital world-building",
+          "poster": "https://image.tmdb.org/t/p/w500/vlc95gl3PtrjxSEuM8RhTtSm2xU.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 339964,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vlc95gl3PtrjxSEuM8RhTtSm2xU.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

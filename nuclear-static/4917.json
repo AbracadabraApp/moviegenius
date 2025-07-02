@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "A Boy and His Dog",
+    "year": 1975,
+    "initialSlug": "A teen and his telepathic dog survive nuclear chaos",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/dMbkoFzD5sEQvEaqRsIh4pTBJVq.jpg",
+    "initialStreaming": null,
+    "tmdbId": 4917,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**A Boy and His Dog** (1975) pioneered post-apocalyptic dark comedy years before **Mad Max** (1979). Don Johnson plays Vic, roaming a nuclear wasteland with his telepathic dog Blood, hunting for food and women. The film's brutal satire targets both the savage surface world and an underground society's false civility. Director L.Q. Jones adapted Harlan Ellison's novella into something uniquely unsettling - mixing juvenile sex comedy with pitch-black commentary on human nature. Its influence echoes through **Six-String Samurai** (1998) and **Turbo Kid** (2015)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Mad Max",
+            "year": 1979,
+            "slug": "Mel Gibson's breakout role launched the post-apocalyptic action genre, following a cop seeking revenge in the Australian outback",
+            "poster": "https://image.tmdb.org/t/p/w500/5LrI4GiCSrChgkdskVZiwv643Kg.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 9659,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5LrI4GiCSrChgkdskVZiwv643Kg.jpg"
+          },
+          {
+            "title": "The Road",
+            "year": 2009,
+            "slug": "Viggo Mortensen leads this bleaker take on post-apocalyptic survival, based on Cormac McCarthy's novel",
+            "poster": "https://image.tmdb.org/t/p/w500/qLaXnLzqleBWQtjvZ6JGVSaKoC3.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 20766,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qLaXnLzqleBWQtjvZ6JGVSaKoC3.jpg"
+          },
+          {
+            "title": "Tank Girl",
+            "year": 1995,
+            "slug": "Comic adaptation starring Lori Petty brings punk attitude to its wasteland setting",
+            "poster": "https://image.tmdb.org/t/p/w500/qohdY3BcJ98sFneOUAWp0FmH4Z6.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 9067,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qohdY3BcJ98sFneOUAWp0FmH4Z6.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's talking dog Blood, voiced by Tim McIntire, established a template for sardonic AI companions that would influence everything from **K-9** (1989) to **I Am Mother** (2019). Blood's sophisticated vocabulary and disdain for human nature provides both comic relief and philosophical weight. This human-animal partnership in a hostile world prefigures later works like **Love and Monsters** (2020)."
+      },
+      {
+        "type": "text",
+        "content": "The underground society sequence savagely parodies 1950s Americana, predating similar commentary in **Pleasantville** (1998) and **Fallout** video games. Its shocking ending - where Vic chooses Blood over his love interest - remains controversial. Yet this pitch-black punchline perfectly caps the film's misanthropic themes about survival versus civilization. SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Cherry 2000",
+            "year": 1987,
+            "slug": "Melanie Griffith tracks robots through the wasteland in this cult classic combining romance and post-apocalyptic action",
+            "poster": "https://image.tmdb.org/t/p/w500/t3uds00MHLsibhKLCL0BbCEGxXb.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 15785,
+            "poster_url": "https://image.tmdb.org/t/p/w500/t3uds00MHLsibhKLCL0BbCEGxXb.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While initially overlooked, the film's DNA appears throughout post-apocalyptic cinema. Its blend of comedy and horror influenced **Six-String Samurai** (1998) and **Turbo Kid** (2015). The telepathic dog concept resurfaced in films like **Rise of the Planet of the Apes** (2011). Even its controversial sexual politics and critique of false civility echo in modern works like **Snowpiercer** (2013)."
+      }
+    ],
+    "exploreFurther": [
+      "Post-Apocalyptic Dark Comedy in 1970s Cinema",
+      "Telepathic Animals in Science Fiction Film",
+      "Harlan Ellison's Impact on Cinema",
+      "Underground Societies in Post-Apocalyptic Fiction",
+      "The Evolution of Post-Nuclear Wasteland Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Zardoz",
+          "year": 1974,
+          "slug": "Sean Connery in a bizarre post-apocalyptic society with flying stone heads",
+          "poster": "https://image.tmdb.org/t/p/w500/6qvQhJhvM7wWPB2LjVpivSNraIv.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 4923,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6qvQhJhvM7wWPB2LjVpivSNraIv.jpg"
+        },
+        {
+          "title": "Hardware",
+          "year": 1990,
+          "slug": "Killer robot terrorizes a wasteland scavenger in her apartment",
+          "poster": "https://image.tmdb.org/t/p/w500/29WnkQ9wlvPCWEuWl7d2gtSZHQX.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 11309,
+          "poster_url": "https://image.tmdb.org/t/p/w500/29WnkQ9wlvPCWEuWl7d2gtSZHQX.jpg"
+        },
+        {
+          "title": "Hell Comes to Frogtown",
+          "year": 1988,
+          "slug": "Roddy Piper must rescue fertile women in a mutant-filled wasteland",
+          "poster": "https://image.tmdb.org/t/p/w500/7ry5Sh2oFBUj8zqWzAx5Xm8j79i.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 22572,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7ry5Sh2oFBUj8zqWzAx5Xm8j79i.jpg"
+        },
+        {
+          "title": "The Blood of Heroes",
+          "year": 1989,
+          "slug": "Rutger Hauer leads post-apocalyptic athletes in brutal games",
+          "poster": "https://image.tmdb.org/t/p/w500/hWIDNOsF1yeGTR7jG42VzS1AHmI.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 21512,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hWIDNOsF1yeGTR7jG42VzS1AHmI.jpg"
+        },
+        {
+          "title": "Damnation Alley",
+          "year": 1977,
+          "slug": "Military survivors cross America in massive vehicle after nuclear war",
+          "poster": "https://image.tmdb.org/t/p/w500/8jSwmklwjSYrxFhLmp1YzYf7hHa.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 25763,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8jSwmklwjSYrxFhLmp1YzYf7hHa.jpg"
+        },
+        {
+          "title": "Glen and Randa",
+          "year": 1971,
+          "slug": "Young couple explores post-apocalyptic America",
+          "poster": "https://image.tmdb.org/t/p/w500/66hppx8GF756ijGVzUvPwdoOS13.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 42494,
+          "poster_url": "https://image.tmdb.org/t/p/w500/66hppx8GF756ijGVzUvPwdoOS13.jpg"
+        },
+        {
+          "title": "The Ultimate Warrior",
+          "year": 1975,
+          "slug": "Yul Brynner protects survivors in devastated New York",
+          "poster": "https://image.tmdb.org/t/p/w500/1RyccpnEHahPtWOoKjwO40pGPmB.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 32053,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1RyccpnEHahPtWOoKjwO40pGPmB.jpg"
+        },
+        {
+          "title": "Def-Con 4",
+          "year": 1985,
+          "slug": "Astronauts return to nuclear-devastated Earth",
+          "poster": "https://image.tmdb.org/t/p/w500/qPQ8gUy228PrCkIFQlUVMppaD5.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 42033,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qPQ8gUy228PrCkIFQlUVMppaD5.jpg"
+        },
+        {
+          "title": "World Gone Wild",
+          "year": 1988,
+          "slug": "Bruce Dern defends water supply in desert wasteland",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Pluto",
+          "tmdb_id": null
+        },
+        {
+          "title": "Metalstorm: The Destruction of Jared-Syn",
+          "year": 1983,
+          "slug": "3D post-apocalyptic adventure with cyborg villains",
+          "poster": "https://image.tmdb.org/t/p/w500/8vxTrg2dik0DQdgGjzyUW321xlM.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 47364,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8vxTrg2dik0DQdgGjzyUW321xlM.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

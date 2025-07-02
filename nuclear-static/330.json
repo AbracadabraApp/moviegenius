@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "The Lost World: Jurassic Park",
+    "year": 1997,
+    "initialSlug": "Dinos rampage on island and through San Diego",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/jElpCJkSaRPYwIMwZY28gOKV7BK.jpg",
+    "initialStreaming": null,
+    "tmdbId": 330,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Lost World: Jurassic Park** (1997) marked Spielberg's darker, more aggressive sequel to his groundbreaking **Jurassic Park** (1993). While lacking the pure wonder of the original, it amplified the action and horror elements, drawing inspiration from classic monster movies like **King Kong** (1933). The film's San Diego sequence, where a T-Rex rampages through a major city, directly echoes the DNA of Japanese kaiju films like **Godzilla** (1954). Spielberg's direction maintains incredible tension, particularly in the dual T-Rex trailer attack sequence, which remains one of the most intense set pieces in dinosaur cinema."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Jurassic Park",
+            "year": 1993,
+            "slug": "The original masterpiece that revolutionized CGI and practical effects while telling a cautionary tale about genetic engineering",
+            "poster": "https://image.tmdb.org/t/p/w500/fjTU1Bgh3KJu4aatZil3sofR2zC.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 329,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fjTU1Bgh3KJu4aatZil3sofR2zC.jpg"
+          },
+          {
+            "title": "King Kong",
+            "year": 2005,
+            "slug": "Peter Jackson's epic remake captures the same sense of wonder and terror when humans encounter prehistoric creatures",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": null
+          },
+          {
+            "title": "Deep Blue Sea",
+            "year": 1999,
+            "slug": "Another cautionary tale about genetic manipulation gone wrong, with intelligent sharks instead of dinosaurs",
+            "poster": "https://image.tmdb.org/t/p/w500/fyn0zyCI4kIlbDoHH0Hzv09hDC5.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 8914,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fyn0zyCI4kIlbDoHH0Hzv09hDC5.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's environmental themes echo strongly through modern creature features. Its messaging about corporate exploitation of nature influenced films like **Avatar** (2009) and **Kong: Skull Island** (2017). Jeff Goldblum's Ian Malcolm serves as the moral center, warning against human hubris - a theme that would later resonate in disaster films like **The Day After Tomorrow** (2004). The \"corporate greed versus environmental preservation\" conflict established here became a template for countless science fiction blockbusters."
+      },
+      {
+        "type": "text",
+        "content": "From a technical standpoint, **The Lost World** (1997) pushed practical effects and CGI integration further than its predecessor. Stan Winston's animatronic dinosaurs set new standards for creature design, influencing works like **Reign of Fire** (2002) and **Peter Jackson's King Kong** (2005). The film's darker color palette and rain-soaked sequences created a more ominous atmosphere that later dinosaur films like **Jurassic World** (2015) would emulate. SUBHEAD: Impact on Modern Blockbuster Filmmaking"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Reign of Fire",
+            "year": 2002,
+            "slug": "Post-apocalyptic dragon thriller that shares similar themes of humanity's hubris in the face of ancient creatures",
+            "poster": "https://image.tmdb.org/t/p/w500/vZVXCj3jXzIPJUHLaQohzt2uTM3.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 6278,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vZVXCj3jXzIPJUHLaQohzt2uTM3.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The Lost World's influence extends beyond just dinosaur movies. Its approach to sequel escalation - bigger threats, more creatures, darker tone - became a blueprint for modern franchise building. Films like **Aliens** (1986) had done this before, but The Lost World's commercial success cemented this as the go-to strategy for blockbuster follow-ups. The film's blend of practical and digital effects influenced countless modern monster movies, from **Cloverfield** (2008) to **Pacific Rim** (2013)."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Practical Effects in 90s Blockbusters",
+      "Spielberg's Approach to Sequel Filmmaking",
+      "Environmental Themes in Monster Movies",
+      "The Impact of Jurassic Park on Modern CGI",
+      "Jeff Goldblum's Career in Science Fiction"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Godzilla",
+          "year": 1954,
+          "slug": "The original kaiju film that influenced all monster movies",
+          "poster": "https://image.tmdb.org/t/p/w500/365zBxfAgBG8iO2miGfVtltUXwt.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 1678,
+          "poster_url": "https://image.tmdb.org/t/p/w500/365zBxfAgBG8iO2miGfVtltUXwt.jpg"
+        },
+        {
+          "title": "Aliens",
+          "year": 1986,
+          "slug": "James Cameron's masterful sequel that set the standard for action-horror follow-ups",
+          "poster": "https://image.tmdb.org/t/p/w500/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 679,
+          "poster_url": "https://image.tmdb.org/t/p/w500/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg"
+        },
+        {
+          "title": "Cloverfield",
+          "year": 2008,
+          "slug": "Modern monster movie using found footage to create intense creature encounters",
+          "poster": "https://image.tmdb.org/t/p/w500/qIegUGJqyMMCRjkKV1s7A9MqdJ8.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 7191,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qIegUGJqyMMCRjkKV1s7A9MqdJ8.jpg"
+        },
+        {
+          "title": "Pacific Rim",
+          "year": 2013,
+          "slug": "Giant monsters versus robots with stunning practical and digital effects",
+          "poster": "https://image.tmdb.org/t/p/w500/mmznhaQDwlHWpUwKuNxtQiubbmM.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 68726,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mmznhaQDwlHWpUwKuNxtQiubbmM.jpg"
+        },
+        {
+          "title": "Congo",
+          "year": 1995,
+          "slug": "Another 90s creature feature about expedition gone wrong",
+          "poster": "https://image.tmdb.org/t/p/w500/hPNSToNIIpRO6y5Rh973leqQqNr.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 10329,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hPNSToNIIpRO6y5Rh973leqQqNr.jpg"
+        },
+        {
+          "title": "Anaconda",
+          "year": 1997,
+          "slug": "Creature feature released the same year as Lost World, sharing similar jungle survival themes",
+          "poster": "https://image.tmdb.org/t/p/w500/33NysOnLpLZY0ewHTcfpalzAsRG.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9360,
+          "poster_url": "https://image.tmdb.org/t/p/w500/33NysOnLpLZY0ewHTcfpalzAsRG.jpg"
+        },
+        {
+          "title": "Predator",
+          "year": 1987,
+          "slug": "Classic sci-fi horror about being hunted by an advanced creature",
+          "poster": "https://image.tmdb.org/t/p/w500/k3mW4qfJo6SKqe6laRyNGnbB9n5.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 106,
+          "poster_url": "https://image.tmdb.org/t/p/w500/k3mW4qfJo6SKqe6laRyNGnbB9n5.jpg"
+        },
+        {
+          "title": "Tremors",
+          "year": 1990,
+          "slug": "Beloved monster movie mixing horror and humor",
+          "poster": "https://image.tmdb.org/t/p/w500/cA4ggkZ3r1d5r9hOAUWC8x5ul2i.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 9362,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cA4ggkZ3r1d5r9hOAUWC8x5ul2i.jpg"
+        },
+        {
+          "title": "Lake Placid",
+          "year": 1999,
+          "slug": "Giant crocodile thriller following Lost World's creature feature revival",
+          "poster": "https://image.tmdb.org/t/p/w500/pEszakCP8j9E9S0UPLfEa3Cad3O.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 9825,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pEszakCP8j9E9S0UPLfEa3Cad3O.jpg"
+        },
+        {
+          "title": "Rogue",
+          "year": 2007,
+          "slug": "Australian crocodile horror taking cues from Jurassic Park's tension building",
+          "poster": "https://image.tmdb.org/t/p/w500/abFDVe71e7UE5MpAqjZvUYT2U7M.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 13022,
+          "poster_url": "https://image.tmdb.org/t/p/w500/abFDVe71e7UE5MpAqjZvUYT2U7M.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

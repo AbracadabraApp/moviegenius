@@ -1,0 +1,194 @@
+{
+  "props": {
+    "title": "Psycho",
+    "year": 1960,
+    "initialSlug": "Hitchcock's revolutionary psychological thriller",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/yz4QVqPx3h1hD1DfqqQkCq3rmxW.jpg",
+    "initialStreaming": null,
+    "tmdbId": 539,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Psycho** (1960) revolutionized horror cinema with its shocking shower scene and groundbreaking narrative structure. Hitchcock's masterpiece broke conventional storytelling rules by killing its apparent protagonist Marion Crane (Janet Leigh) barely halfway through. This bold move, combined with Bernard Herrmann's shrieking violin score and the film's unflinching black-and-white cinematography, created a new template for psychological horror. The influence echoes through films like **Halloween** (1978), which borrowed Psycho's POV stalking shots, and **Dressed to Kill** (1980), which directly homaged the shower scene structure."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Vertigo",
+            "year": 1958,
+            "slug": "Hitchcock's psychological thriller about obsession and identity features James Stewart as a detective haunted by a mysterious woman",
+            "poster": "https://image.tmdb.org/t/p/w500/15uOEfqBNTVtDUT7hGBVCka0rZz.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 426,
+            "poster_url": "https://image.tmdb.org/t/p/w500/15uOEfqBNTVtDUT7hGBVCka0rZz.jpg"
+          },
+          {
+            "title": "Peeping Tom",
+            "year": 1960,
+            "slug": "Released the same year as Psycho, this controversial British thriller about a murderous cameraman explores similar themes of voyeurism",
+            "poster": "https://image.tmdb.org/t/p/w500/kM4AfLIlbcuRZ621vYjyeBFkuba.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 11167,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kM4AfLIlbcuRZ621vYjyeBFkuba.jpg"
+          },
+          {
+            "title": "The Birds",
+            "year": 1963,
+            "slug": "Hitchcock's follow-up to Psycho turns nature itself into a weapon of terror",
+            "poster": "https://image.tmdb.org/t/p/w500/eClg8QPg8mwB6INIC4pyR5pAbDr.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 571,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eClg8QPg8mwB6INIC4pyR5pAbDr.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The character of Norman Bates redefined screen villains, with Anthony Perkins creating a complex portrait of mental illness rarely seen in 1960s cinema. His influence can be traced through **Silence of the Lambs** (1991), **American Psycho** (2000), and countless other psychological thrillers. The film's exploration of split personalities and maternal obsession created a blueprint for character-driven horror that emphasizes psychological complexity over supernatural threats."
+      },
+      {
+        "type": "text",
+        "content": "Technically, Psycho's innovations were equally groundbreaking. The famous shower scene contains 78 camera setups and 52 cuts in just 45 seconds, establishing a new grammar of screen violence without actually showing much gore. This technique influenced directors like Brian De Palma in **Sisters** (1972) and Roman Polanski in **Repulsion** (1965), who understood that suggested violence could be more terrifying than explicit gore. SUBHEAD: Legacy and Modern Impact"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Cape Fear",
+            "year": 1962,
+            "slug": "Robert Mitchum's portrayal of Max Cady shares Norman Bates' ability to shift between charm and menace",
+            "poster": "https://image.tmdb.org/t/p/w500/xDqaHjMbnebtB05QWgAR8wW86sb.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 11349,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xDqaHjMbnebtB05QWgAR8wW86sb.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Modern horror continues drawing from Psycho's well. **Bates Motel** (2013-2017) expanded the mythology, while films like **Split** (2016) and **Get Out** (2017) follow its lead in using psychological horror to explore identity and mental illness. The film's marketing campaign - with Hitchcock insisting no one be seated after the film began - created the modern spoiler culture and event-movie marketing that still dominates Hollywood."
+      }
+    ],
+    "exploreFurther": [
+      "Hitchcock's Revolutionary Marketing Campaigns",
+      "The Psychology of Norman Bates vs Real Split Personality Cases",
+      "Bernard Herrmann's Impact on Horror Film Scores",
+      "Evolution of the \"Psycho Killer\" Character Type in Cinema",
+      "Visual Analysis of the Shower Scene's 78 Cuts"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Diabolique",
+          "year": 1955,
+          "slug": "The French thriller that influenced Psycho's twist ending",
+          "poster": "https://image.tmdb.org/t/p/w500/jE8ygUYBUGyUcM4sR6iinPqYeDK.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 827,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jE8ygUYBUGyUcM4sR6iinPqYeDK.jpg"
+        },
+        {
+          "title": "The Night of the Hunter",
+          "year": 1955,
+          "slug": "Another influential psychological thriller with religious themes",
+          "poster": "https://image.tmdb.org/t/p/w500/rBka0nFWiHxabHRLr0KfIA8Yiaq.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 3112,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rBka0nFWiHxabHRLr0KfIA8Yiaq.jpg"
+        },
+        {
+          "title": "Whatever Happened to Baby Jane",
+          "year": 1962,
+          "slug": "Gothic psychological horror about twisted family dynamics",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": null
+        },
+        {
+          "title": "Repulsion",
+          "year": 1965,
+          "slug": "Polanski's psychological breakdown study",
+          "poster": "https://image.tmdb.org/t/p/w500/dtyCKEPLqv9wxyVazL4b843vtUb.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 11481,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dtyCKEPLqv9wxyVazL4b843vtUb.jpg"
+        },
+        {
+          "title": "Sisters",
+          "year": 1972,
+          "slug": "De Palma's direct homage to Hitchcock",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Carrie",
+          "year": 1976,
+          "slug": "Another landmark film about maternal obsession and psychological horror",
+          "poster": "https://image.tmdb.org/t/p/w500/bJJ3xK4pMnfao0wfzySfC47dp8G.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 7340,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bJJ3xK4pMnfao0wfzySfC47dp8G.jpg"
+        },
+        {
+          "title": "Dressed to Kill",
+          "year": 1980,
+          "slug": "De Palma's most direct Psycho homage",
+          "poster": "https://image.tmdb.org/t/p/w500/oy1m5dd44foNrxV8U9l6Walx82V.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 11033,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oy1m5dd44foNrxV8U9l6Walx82V.jpg"
+        },
+        {
+          "title": "Henry: Portrait of a Serial Killer",
+          "year": 1986,
+          "slug": "Raw character study of a disturbed killer",
+          "poster": "https://image.tmdb.org/t/p/w500/diVMzTarVLgjc3jyODyhZMadfwD.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 10692,
+          "poster_url": "https://image.tmdb.org/t/p/w500/diVMzTarVLgjc3jyODyhZMadfwD.jpg"
+        },
+        {
+          "title": "The Silence of the Lambs",
+          "year": 1991,
+          "slug": "Modern classic influenced by Psycho's psychological depth",
+          "poster": "https://image.tmdb.org/t/p/w500/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 274,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg"
+        },
+        {
+          "title": "Identity",
+          "year": 2003,
+          "slug": "Multiple personality thriller following Psycho's template",
+          "poster": "https://image.tmdb.org/t/p/w500/bnidwEvWNAVJ3Uco9wWtuzWAfrx.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 2832,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bnidwEvWNAVJ3Uco9wWtuzWAfrx.jpg"
+        },
+        {
+          "title": "Black Swan",
+          "year": 2010,
+          "slug": "Psychological horror about splintering identity",
+          "poster": "https://image.tmdb.org/t/p/w500/viWheBd44bouiLCHgNMvahLThqx.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 44214,
+          "poster_url": "https://image.tmdb.org/t/p/w500/viWheBd44bouiLCHgNMvahLThqx.jpg"
+        },
+        {
+          "title": "Mother!",
+          "year": 2017,
+          "slug": "Surreal horror exploring maternal themes",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

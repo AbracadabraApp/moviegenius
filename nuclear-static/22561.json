@@ -1,0 +1,177 @@
+{
+  "props": {
+    "title": "Allegro Non Troppo",
+    "year": 1976,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/xRAnD7yd6Qx8NYXfoW5GN6K5jiC.jpg",
+    "initialStreaming": null,
+    "tmdbId": 22561,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Allegro Non Troppo** (1976) stands as Italy's brilliant, satirical response to Disney's **Fantasia** (1940), with director Bruno Bozzetto crafting a subversive masterpiece that pairs classical music with surreal animation. Where Disney aimed for whimsy and wonder, Bozzetto injects dark humor and social commentary. The film alternates between animated segments and live-action sequences featuring a beleaguered animator, an abusive orchestra conductor, and a group of elderly musicians locked in a dungeon. Each animated piece deconstructs both Disney's approach and classical music visualization with a distinctly European artistic sensibility."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Pink Floyd - The Wall",
+            "year": 1982,
+            "slug": "Groundbreaking animated musical featuring Gerald Scarfe's distinctive artwork set to Pink Floyd's album, exploring themes of isolation and madness",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": null
+          },
+          {
+            "title": "The Fantastic Planet",
+            "year": 1973,
+            "slug": "French animated sci-fi masterpiece with surreal visuals and philosophical themes about human nature and oppression",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": null
+          },
+          {
+            "title": "Yellow Submarine",
+            "year": 1968,
+            "slug": "The Beatles' psychedelic animated adventure with innovative artistic style and musical integration",
+            "poster": "https://image.tmdb.org/t/p/w500/cjrGM2QYlwzV6vXz2yF7y6fdTRu.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 12105,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cjrGM2QYlwzV6vXz2yF7y6fdTRu.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's most famous sequence, set to Ravel's Boléro, presents evolution as a cosmic joke, with life emerging from an abandoned Coca-Cola bottle in a wasteland of consumer debris. This sequence directly challenges **Fantasia's** (1940) \"Rite of Spring\" dinosaur sequence, replacing its grandeur with environmental commentary. Another standout segment, scored to Dvořák's Slavonic Dance No. 7, features a lonely cat wandering through the ruins of its abandoned home, creating a heartbreaking meditation on loss that rivals **Grave of the Fireflies** (1988) in emotional impact."
+      },
+      {
+        "type": "text",
+        "content": "Bozzetto's technical achievements influenced later adult animation like **Heavy Metal** (1981) and **Mind Game** (2004). His blend of comedy and existential themes created a template for sophisticated animation that would later influence works like **Perfect Blue** (1997) and **The Congress** (2013). The live-action segments, featuring slapstick comedy and meta-commentary, presage similar techniques used in **Who Framed Roger Rabbit** (1988) and **The Emperor's New Groove** (2000). SUBHEAD: Musical Animation Evolution"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Mind Game",
+            "year": 2004,
+            "slug": "Masaaki Yuasa's psychedelic Japanese animation about death, life, and second chances",
+            "poster": "https://image.tmdb.org/t/p/w500/e5mV1iVcjg7nkpJrskQOnFCR4H9.jpg",
+            "initialStreaming": "MUBI",
+            "tmdb_id": 21712,
+            "poster_url": "https://image.tmdb.org/t/p/w500/e5mV1iVcjg7nkpJrskQOnFCR4H9.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Allegro Non Troppo** (1976) helped establish a tradition of experimental musical animation that continues through works like **Interstella 5555** (2003) and **Sound & Fury** (2019). Its influence can be seen in the surreal segments of **The Wall** (1982) and the abstract sequences in **Fantasia 2000** (1999), though few films have matched its combination of satirical wit and artistic ambition. The film's willingness to tackle adult themes through animation helped pave the way for works like **Persepolis** (2007) and **Waltz with Bashir** (2008)."
+      }
+    ],
+    "exploreFurther": [
+      "The History of European Animation: From Émile Cohl to Today",
+      "Classical Music in Animation: Beyond Disney",
+      "Bruno Bozzetto's Complete Works and Impact",
+      "Satire in Animation: Breaking Traditional Boundaries",
+      "The Evolution of Adult-Oriented Animation"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Fantasia",
+          "year": 1940,
+          "slug": "Disney's groundbreaking classical music animation anthology",
+          "poster": "https://image.tmdb.org/t/p/w500/5m9njnidjR0syG2gpVPVgcEMB2X.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 756,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5m9njnidjR0syG2gpVPVgcEMB2X.jpg"
+        },
+        {
+          "title": "Wizards",
+          "year": 1977,
+          "slug": "Ralph Bakshi's post-apocalyptic fantasy mixing animation styles",
+          "poster": "https://image.tmdb.org/t/p/w500/jeAxoYepnVirGe0H7pmwviSZYul.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 16220,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jeAxoYepnVirGe0H7pmwviSZYul.jpg"
+        },
+        {
+          "title": "Heavy Metal",
+          "year": 1981,
+          "slug": "Adult animated anthology featuring rock music and sci-fi themes",
+          "poster": "https://image.tmdb.org/t/p/w500/h7j6uKamzHH9p7muvIYnln621IE.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 11827,
+          "poster_url": "https://image.tmdb.org/t/p/w500/h7j6uKamzHH9p7muvIYnln621IE.jpg"
+        },
+        {
+          "title": "When the Wind Blows",
+          "year": 1986,
+          "slug": "Haunting British animated film about nuclear war",
+          "poster": "https://image.tmdb.org/t/p/w500/sQ7CgHdDcKnnzhCXA7wC2JVL7qq.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 10857,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sQ7CgHdDcKnnzhCXA7wC2JVL7qq.jpg"
+        },
+        {
+          "title": "The Triplets of Belleville",
+          "year": 2003,
+          "slug": "Quirky French animated film with minimal dialogue and jazz score",
+          "poster": "https://image.tmdb.org/t/p/w500/enw6C4fDw88g0nOQgIJXjgH3NHi.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 9662,
+          "poster_url": "https://image.tmdb.org/t/p/w500/enw6C4fDw88g0nOQgIJXjgH3NHi.jpg"
+        },
+        {
+          "title": "Paprika",
+          "year": 2006,
+          "slug": "Satoshi Kon's surreal animated exploration of dreams and reality",
+          "poster": "https://image.tmdb.org/t/p/w500/bLUUr474Go1DfeN1HLjE3rnZXBq.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 4977,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bLUUr474Go1DfeN1HLjE3rnZXBq.jpg"
+        },
+        {
+          "title": "Loving Vincent",
+          "year": 2017,
+          "slug": "Innovative animated biography painted in Van Gogh's style",
+          "poster": "https://image.tmdb.org/t/p/w500/56sq57kDm7XgyXBYrgJLumo0Jac.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 339877,
+          "poster_url": "https://image.tmdb.org/t/p/w500/56sq57kDm7XgyXBYrgJLumo0Jac.jpg"
+        },
+        {
+          "title": "The Wolf House",
+          "year": 2018,
+          "slug": "Experimental stop-motion horror animation",
+          "poster": "https://image.tmdb.org/t/p/w500/kvgch2e25cd6dWhRJ6G8BCJ1Wcq.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": 499537,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kvgch2e25cd6dWhRJ6G8BCJ1Wcq.jpg"
+        },
+        {
+          "title": "Genius Party",
+          "year": 2007,
+          "slug": "Anthology of experimental animated shorts from Studio 4°C",
+          "poster": "https://image.tmdb.org/t/p/w500/e0jqLkjEOtfRhugXs84tfZtT9i8.jpg",
+          "initialStreaming": "Crunchyroll",
+          "tmdb_id": 40123,
+          "poster_url": "https://image.tmdb.org/t/p/w500/e0jqLkjEOtfRhugXs84tfZtT9i8.jpg"
+        },
+        {
+          "title": "Angel's Egg",
+          "year": 1985,
+          "slug": "Mamoru Oshii's mysterious philosophical animation",
+          "poster": "https://image.tmdb.org/t/p/w500/dRUB7sDcedqatDfyuRqyQulmW97.jpg",
+          "initialStreaming": "None",
+          "tmdb_id": 15916,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dRUB7sDcedqatDfyuRqyQulmW97.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

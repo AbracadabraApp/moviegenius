@@ -1,0 +1,179 @@
+{
+  "props": {
+    "title": "Jaws 3-D",
+    "year": 1983,
+    "initialSlug": "The ocean's deadliest bite!",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/kqDXj53F9paqVGJLGfHtz7giJ3s.jpg",
+    "initialStreaming": null,
+    "tmdbId": 17692,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Jaws 3-D** (1983) represents one of Hollywood's most notorious sequel cash-grabs, riding both the success of Spielberg's groundbreaking **Jaws** (1975) and the 1980s 3-D revival wave. While the original Jaws revolutionized blockbuster filmmaking with its masterful tension and legendary performances from Roy Scheider and Robert Shaw, Jaws 3-D abandoned that winning formula for cheap thrills at SeaWorld. Director Joe Alves, who served as production designer on the first two Jaws films, couldn't recreate the magic despite having intimate knowledge of what made the original work."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Jaws",
+            "year": 1975,
+            "slug": "Spielberg's breakthrough thriller about a great white shark terrorizing a beach town. Changed summer moviegoing forever.",
+            "poster": "https://image.tmdb.org/t/p/w500/lxM6kqilAdpdhqUl2biYp5frUxE.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 578,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lxM6kqilAdpdhqUl2biYp5frUxE.jpg"
+          },
+          {
+            "title": "Deep Blue Sea",
+            "year": 1999,
+            "slug": "Genetically modified super-intelligent sharks hunt researchers in an underwater facility. Smart B-movie thrills.",
+            "poster": "https://image.tmdb.org/t/p/w500/fyn0zyCI4kIlbDoHH0Hzv09hDC5.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 8914,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fyn0zyCI4kIlbDoHH0Hzv09hDC5.jpg"
+          },
+          {
+            "title": "The Meg",
+            "year": 2018,
+            "slug": "Jason Statham battles a prehistoric megalodon shark. Big-budget Chinese-American co-production with spectacular effects.",
+            "poster": "https://image.tmdb.org/t/p/w500/eyWICPcxOuTcDDDbTMOZawoOn8d.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 345940,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eyWICPcxOuTcDDDbTMOZawoOn8d.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The early 1980s 3-D craze produced several gimmicky horror sequels like **Friday the 13th Part III** (1982) and **Amityville 3-D** (1983), all attempting to capitalize on the technology without focusing on story fundamentals. The murky underwater photography in Jaws 3-D made the 3-D effects particularly ineffective, with the shark often looking more cartoonish than threatening. This technical failure highlighted how the original Jaws succeeded precisely because Spielberg was forced to hide the mechanical shark's limitations through creative filmmaking."
+      },
+      {
+        "type": "text",
+        "content": "Dennis Quaid and Louis Gossett Jr. do their best with the material, but can't elevate a script that trades the original's primal fears and character development for theme park setting contrivances. The film's connection to SeaWorld feels particularly dated now, especially in light of documentaries like **Blackfish** (2013) that exposed concerning practices at marine parks. SUBHEAD: The Legacy of Failed Creature Feature Sequels"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Open Water",
+            "year": 2003,
+            "slug": "Based on true events, a couple is stranded in shark-infested waters after their diving boat leaves without them.",
+            "poster": "https://image.tmdb.org/t/p/w500/85o7BSpumewsd8KoGYvqpGH54yF.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 83,
+            "poster_url": "https://image.tmdb.org/t/p/w500/85o7BSpumewsd8KoGYvqpGH54yF.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Jaws 3-D exemplifies a common pattern in horror franchises where diminishing returns lead to increasingly desperate gimmicks. Like **Piranha 3D** (2010) decades later, it tried to embrace camp value but missed the careful balance of thrills and characterization that made its predecessor special. The film's failure didn't stop Universal from making **Jaws: The Revenge** (1987), which somehow managed even worse reviews and effectively killed the franchise."
+      }
+    ],
+    "exploreFurther": [
+      "The 1980s 3-D Revival: Technology vs Storytelling",
+      "The Evolution of Practical vs CGI Effects in Shark Movies",
+      "SeaWorld in Popular Culture: From Jaws 3-D to Blackfish",
+      "The Art of Sequel Filmmaking: Why Most Fail",
+      "Joe Alves: From Production Designer to Director"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "47 Meters Down",
+          "year": 2017,
+          "slug": "Sisters trapped in a shark cage on the ocean floor.",
+          "poster": "https://image.tmdb.org/t/p/w500/2IgdRUTdHyoI3nFORcnnYEKOGIH.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 403119,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2IgdRUTdHyoI3nFORcnnYEKOGIH.jpg"
+        },
+        {
+          "title": "The Reef",
+          "year": 2010,
+          "slug": "Stranded swimmers try to reach land while stalked by a great white.",
+          "poster": "https://image.tmdb.org/t/p/w500/s5JGAqmdv1cHlDjMqsmQUkVo2lW.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 49787,
+          "poster_url": "https://image.tmdb.org/t/p/w500/s5JGAqmdv1cHlDjMqsmQUkVo2lW.jpg"
+        },
+        {
+          "title": "Crawl",
+          "year": 2019,
+          "slug": "Woman battles alligators during a Category 5 hurricane.",
+          "poster": "https://image.tmdb.org/t/p/w500/4WH6AZd473lRZ3hUp8TYiv2LfZW.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 511987,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4WH6AZd473lRZ3hUp8TYiv2LfZW.jpg"
+        },
+        {
+          "title": "Lake Placid",
+          "year": 1999,
+          "slug": "Giant crocodile terrorizes a Maine lake with dark humor.",
+          "poster": "https://image.tmdb.org/t/p/w500/pEszakCP8j9E9S0UPLfEa3Cad3O.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 9825,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pEszakCP8j9E9S0UPLfEa3Cad3O.jpg"
+        },
+        {
+          "title": "Deep Rising",
+          "year": 1998,
+          "slug": "Sea monsters attack a luxury cruise ship.",
+          "poster": "https://image.tmdb.org/t/p/w500/A1nOnrAlG3EbOvzgZt2ya11OmjQ.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9457,
+          "poster_url": "https://image.tmdb.org/t/p/w500/A1nOnrAlG3EbOvzgZt2ya11OmjQ.jpg"
+        },
+        {
+          "title": "The Host",
+          "year": 2006,
+          "slug": "South Korean monster movie about a creature in Seoul's Han River.",
+          "poster": "https://image.tmdb.org/t/p/w500/qJc9na2UN7TvKqDWkxBkocPUUjT.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1255,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qJc9na2UN7TvKqDWkxBkocPUUjT.jpg"
+        },
+        {
+          "title": "Rogue",
+          "year": 2007,
+          "slug": "Australian crocodile thriller with solid tension.",
+          "poster": "https://image.tmdb.org/t/p/w500/abFDVe71e7UE5MpAqjZvUYT2U7M.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 13022,
+          "poster_url": "https://image.tmdb.org/t/p/w500/abFDVe71e7UE5MpAqjZvUYT2U7M.jpg"
+        },
+        {
+          "title": "The Shallows",
+          "year": 2016,
+          "slug": "Blake Lively versus a persistent great white shark.",
+          "poster": "https://image.tmdb.org/t/p/w500/bnBV7hZmLuA0Si5Aop481sPF2RY.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 332567,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bnBV7hZmLuA0Si5Aop481sPF2RY.jpg"
+        },
+        {
+          "title": "Underwater",
+          "year": 2020,
+          "slug": "Deep sea drilling crew faces unknown horrors.",
+          "poster": "https://image.tmdb.org/t/p/w500/gzlbb3yeVISpQ3REd3Ga1scWGTU.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 443791,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gzlbb3yeVISpQ3REd3Ga1scWGTU.jpg"
+        },
+        {
+          "title": "Bait 3D",
+          "year": 2012,
+          "slug": "Tsunami traps shoppers in a supermarket with sharks.",
+          "poster": "https://image.tmdb.org/t/p/w500/e2OIr4y90ZZjIRWQ0XBOVzpBn4x.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 118957,
+          "poster_url": "https://image.tmdb.org/t/p/w500/e2OIr4y90ZZjIRWQ0XBOVzpBn4x.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,176 @@
+{
+  "props": {
+    "title": "Look, Up in the Sky!",
+    "year": 2006,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/njxYrHZYfYHQ1gia19t2Nt5Bxfp.jpg",
+    "initialStreaming": null,
+    "tmdbId": 24479,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Look, Up in the Sky! The Amazing Story of Superman** (2006) marks a definitive documentary chronicling Superman's cultural impact across media. Released strategically alongside **Superman Returns** (2006), it tracks how Jerry Siegel and Joe Shuster's creation evolved from Depression-era comic hero to multimedia icon. The doc features rare footage from **Superman and the Mole Men** (1951) and George Reeves' iconic **Adventures of Superman** (1952-1958) TV series, building toward Christopher Reeve's career-defining role in **Superman: The Movie** (1978)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Superman: The Movie",
+            "year": 1978,
+            "slug": "Richard Donner's definitive Superman film starring Christopher Reeve, setting the template for modern superhero movies",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": null
+          },
+          {
+            "title": "Superman II",
+            "year": 1980,
+            "slug": "The Man of Steel battles General Zod in this acclaimed sequel featuring both Richard Donner and Richard Lester's direction",
+            "poster": "https://image.tmdb.org/t/p/w500/3xk5cno9BHcnwc97XO9k21aI1Zi.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 8536,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3xk5cno9BHcnwc97XO9k21aI1Zi.jpg"
+          },
+          {
+            "title": "Man of Steel",
+            "year": 2013,
+            "slug": "Zack Snyder's gritty Superman reboot starring Henry Cavill, offering a more serious take on the origin story",
+            "poster": "https://image.tmdb.org/t/p/w500/8GFtkImmK0K1VaUChR0n9O61CFU.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 49521,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8GFtkImmK0K1VaUChR0n9O61CFU.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The documentary excels at examining Superman's evolution through changing American eras. It analyzes how the character reflected post-WWII optimism in the George Reeves era, cultural upheaval during the Bronze Age comics period, and post-9/11 yearning for heroes. Interviews with key creators like Richard Donner and Bryan Singer provide insight into adapting the character for different generations."
+      },
+      {
+        "type": "text",
+        "content": "What sets this documentary apart is its comprehensive look at failed Superman projects, including footage from **Superman Lives** - Tim Burton's unrealized 1998 film starring Nicolas Cage. It also examines the lasting influence of **Superman: The Animated Series** (1996-2000) and smaller screen adaptations like **Lois & Clark: The New Adventures of Superman** (1993-1997). SUBHEAD: Legacy and Cultural Impact"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Superman Lives: The Death of Superman Lives: What Happened?",
+            "year": 2015,
+            "slug": "Documentary exploring Tim Burton's canceled Superman film starring Nicolas Cage",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The documentary makes a compelling case for Superman as the template for all subsequent superhero media. Its examination of **Smallville** (2001-2011) shows how the character's mythology could be reimagined for modern audiences while maintaining core themes. The film's discussion of post-Christopher Reeve adaptations, including **Superman Returns** (2006), demonstrates how each version grapples with making an inherently optimistic character relevant to contemporary viewers."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Superhero Film Special Effects from Superman (1978) to Modern CGI",
+      "Jerry Siegel and Joe Shuster's Creation of Superman and Early Comic History",
+      "Superman's Influence on Comic Book Movie Adaptations",
+      "The Various Actors Who Have Portrayed Superman Across Media",
+      "Failed Superman Projects and Their Impact on the Character's Legacy"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Superman III",
+          "year": 1983,
+          "slug": "Richard Pryor joins Christopher Reeve in this lighter take on the franchise",
+          "poster": "https://image.tmdb.org/t/p/w500/aac3vujaTWRLARNDEcMyGSvJfsx.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 9531,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aac3vujaTWRLARNDEcMyGSvJfsx.jpg"
+        },
+        {
+          "title": "Superman IV: The Quest for Peace",
+          "year": 1987,
+          "slug": "The final Christopher Reeve Superman film tackles nuclear disarmament",
+          "poster": "https://image.tmdb.org/t/p/w500/aQ1d9OB0xtAenIL0Ke3xV17St4S.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 11411,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aQ1d9OB0xtAenIL0Ke3xV17St4S.jpg"
+        },
+        {
+          "title": "Supergirl",
+          "year": 1984,
+          "slug": "Helen Slater stars in this Superman spinoff featuring Superman's cousin",
+          "poster": "https://image.tmdb.org/t/p/w500/6OfuKKCPFclHOj4SSRRpLzF1lfP.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 9651,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6OfuKKCPFclHOj4SSRRpLzF1lfP.jpg"
+        },
+        {
+          "title": "Superman Returns",
+          "year": 2006,
+          "slug": "Brandon Routh dons the cape in Bryan Singer's homage to the Donner films",
+          "poster": "https://image.tmdb.org/t/p/w500/385XwTQZDpRX2d3kxtnpiLrjBXw.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 1452,
+          "poster_url": "https://image.tmdb.org/t/p/w500/385XwTQZDpRX2d3kxtnpiLrjBXw.jpg"
+        },
+        {
+          "title": "Zack Snyder's Justice League",
+          "year": 2021,
+          "slug": "Extended cut featuring Henry Cavill's Superman alongside DC heroes",
+          "poster": "https://image.tmdb.org/t/p/w500/tnAuB8q5vv7Ax9UAEje5Xi4BXik.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 791373,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tnAuB8q5vv7Ax9UAEje5Xi4BXik.jpg"
+        },
+        {
+          "title": "The Death of Superman",
+          "year": 2018,
+          "slug": "Animated adaptation of the landmark comic storyline",
+          "poster": "https://image.tmdb.org/t/p/w500/y0uxSHaSFmt6XaBJgjkeLqe7aM.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 487670,
+          "poster_url": "https://image.tmdb.org/t/p/w500/y0uxSHaSFmt6XaBJgjkeLqe7aM.jpg"
+        },
+        {
+          "title": "All-Star Superman",
+          "year": 2011,
+          "slug": "Adaptation of Grant Morrison's acclaimed Superman comic series",
+          "poster": "https://image.tmdb.org/t/p/w500/30GAgK0SvrRoopHlEcrchXqD0hf.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 56590,
+          "poster_url": "https://image.tmdb.org/t/p/w500/30GAgK0SvrRoopHlEcrchXqD0hf.jpg"
+        },
+        {
+          "title": "Superman vs. The Elite",
+          "year": 2012,
+          "slug": "Animated film exploring Superman's relevance in a darker world",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": null
+        },
+        {
+          "title": "Superman: Doomsday",
+          "year": 2007,
+          "slug": "First DC Universe animated movie adapts Death of Superman",
+          "poster": "https://image.tmdb.org/t/p/w500/itvuWm7DFWWzWgW0xgiaKzzWszP.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 13640,
+          "poster_url": "https://image.tmdb.org/t/p/w500/itvuWm7DFWWzWgW0xgiaKzzWszP.jpg"
+        },
+        {
+          "title": "Superman/Batman: Public Enemies",
+          "year": 2009,
+          "slug": "Animated film pairing DC's biggest heroes",
+          "poster": "https://image.tmdb.org/t/p/w500/izvMc22ywSLFWUXZEIuJJ8dms75.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 22855,
+          "poster_url": "https://image.tmdb.org/t/p/w500/izvMc22ywSLFWUXZEIuJJ8dms75.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

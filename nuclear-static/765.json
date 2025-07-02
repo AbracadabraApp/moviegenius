@@ -1,0 +1,184 @@
+{
+  "props": {
+    "title": "Evil Dead II",
+    "year": 1987,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/4zqCKJVHUolGs6C5AZwAZqLWixW.jpg",
+    "initialStreaming": null,
+    "tmdbId": 765,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Evil Dead II** (1987) revolutionized horror-comedy by cranking both scares and slapstick to 11. Sam Raimi's hyperkinetic camera movements and Bruce Campbell's physical comedy created a totally new horror language. Where **The Evil Dead** (1981) played its cabin-in-the-woods terror straight, the sequel embraced absurdist gore and Three Stooges-style physical humor. That chainsaw-hand sequence? Pure twisted genius. Campbell's Ash Williams fighting his own possessed hand ranks among cinema's greatest comedy sequences, while the practical effects and stop-motion demons still disturb decades later."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Evil Dead",
+            "year": 1981,
+            "slug": "Sam Raimi's raw, ultra-violent cabin horror that launched the franchise",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": null
+          },
+          {
+            "title": "Army of Darkness",
+            "year": 1992,
+            "slug": "Medieval time-travel sequel completing Raimi's original Evil Dead trilogy",
+            "poster": "https://image.tmdb.org/t/p/w500/xsgTuAtR2zSH8Umg3jWZcZjlDpe.jpg",
+            "initialStreaming": "AMC+",
+            "tmdb_id": 766,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xsgTuAtR2zSH8Umg3jWZcZjlDpe.jpg"
+          },
+          {
+            "title": "Dead Alive",
+            "year": 1992,
+            "slug": "Peter Jackson's outrageously gory zombie comedy that took Evil Dead II's spirit to new extremes",
+            "poster": "https://image.tmdb.org/t/p/w500/pa39D8TQs6aNw3hiUs4jLjHVUB0.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 763,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pa39D8TQs6aNw3hiUs4jLjHVUB0.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Evil Dead II's influence exploded across horror. **Cabin in the Woods** (2011) directly references its tropes. **Re-Animator** (1985) and **Dead Alive** (1992) embraced similar gonzo gore-comedy. The film's manic energy and practical effects inspired a generation of horror directors like James Wan and Mike Flanagan. Its DNA lives in everything from **Tucker & Dale vs Evil** (2010) to **Ready or Not** (2019)."
+      },
+      {
+        "type": "text",
+        "content": "Raimi's innovative camera techniques - particularly the \"demon cam\" rushing through the woods - influenced countless horror films. **The Evil Dead** (2013) remake paid direct homage while amping up the gore. Modern horror-comedies like **Drag Me to Hell** (2009) and **Jennifer's Body** (2009) owe their tonal balance to Evil Dead II's perfect blend of screams and laughs. SUBHEAD: The Legacy of Practical Effects"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Drag Me to Hell",
+            "year": 2009,
+            "slug": "Raimi returns to horror-comedy with a cursed loan officer tale",
+            "poster": "https://image.tmdb.org/t/p/w500/fdyejM5Zd6dsa0YyWa02ZAKwQzK.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 16871,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fdyejM5Zd6dsa0YyWa02ZAKwQzK.jpg"
+          },
+          {
+            "title": "Cabin in the Woods",
+            "year": 2011,
+            "slug": "Meta horror-comedy deconstructing Evil Dead II and other genre tropes",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Evil Dead II's practical effects by Mark Shostrom stand as a masterclass in pre-CGI horror. The possessed Linda's stop-motion dance, the laughing deer head, and the grotesque neck-stretching demonstrate an artistry largely lost in modern horror. **The Thing** (1982) and **Hellraiser** (1987) similarly prioritized practical effects, but Evil Dead II's comedic edge made its gore more palatable while no less impressive."
+      }
+    ],
+    "exploreFurther": [
+      "Sam Raimi's Evolution from Horror to Hollywood Blockbusters",
+      "The Rise of Horror-Comedy in the 1980s",
+      "Practical Effects vs CGI in Modern Horror",
+      "Bruce Campbell's Impact on Cult Cinema",
+      "The Evil Dead Franchise's Influence on Modern Horror"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Re-Animator",
+          "year": 1985,
+          "slug": "Mad scientist horror-comedy with similar over-the-top gore",
+          "poster": "https://image.tmdb.org/t/p/w500/1hY6AUl92cL9GdZx031UWFiGETt.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 1694,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1hY6AUl92cL9GdZx031UWFiGETt.jpg"
+        },
+        {
+          "title": "From Dusk Till Dawn",
+          "year": 1996,
+          "slug": "Rodriguez/Tarantino vampire horror-comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/uBoQytp3KTQFaVqTe6d0ECGaKh9.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 755,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uBoQytp3KTQFaVqTe6d0ECGaKh9.jpg"
+        },
+        {
+          "title": "Braindead",
+          "year": 1992,
+          "slug": "Early Peter Jackson zombie gore-fest",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Return of the Living Dead",
+          "year": 1985,
+          "slug": "Punk rock zombie comedy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "AMC+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Night of the Demons",
+          "year": 1988,
+          "slug": "Demon possession with dark humor",
+          "poster": "https://image.tmdb.org/t/p/w500/gPLs4LRu85CBir22j57lXoWAawm.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 24924,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gPLs4LRu85CBir22j57lXoWAawm.jpg"
+        },
+        {
+          "title": "Basket Case",
+          "year": 1982,
+          "slug": "Low-budget horror-comedy about separated conjoined twins",
+          "poster": "https://image.tmdb.org/t/p/w500/ciyzEBzJ1TnafkgGXr6DqEVh1wk.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 27813,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ciyzEBzJ1TnafkgGXr6DqEVh1wk.jpg"
+        },
+        {
+          "title": "The Beyond",
+          "year": 1981,
+          "slug": "Lucio Fulci's surreal gore masterpiece",
+          "poster": "https://image.tmdb.org/t/p/w500/luLcQdNqaIHRNMRuPgFN68v2Iux.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 19204,
+          "poster_url": "https://image.tmdb.org/t/p/w500/luLcQdNqaIHRNMRuPgFN68v2Iux.jpg"
+        },
+        {
+          "title": "Society",
+          "year": 1989,
+          "slug": "Body horror social satire",
+          "poster": "https://image.tmdb.org/t/p/w500/8Yg51sD6loLBYIlUcMDCO0bUGSh.jpg",
+          "initialStreaming": "AMC+",
+          "tmdb_id": 22244,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8Yg51sD6loLBYIlUcMDCO0bUGSh.jpg"
+        },
+        {
+          "title": "Bad Taste",
+          "year": 1987,
+          "slug": "Peter Jackson's alien invasion splatter comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/msttMX3undIiaeJLZbMRq94v1bw.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 9964,
+          "poster_url": "https://image.tmdb.org/t/p/w500/msttMX3undIiaeJLZbMRq94v1bw.jpg"
+        },
+        {
+          "title": "Street Trash",
+          "year": 1987,
+          "slug": "Melting homeless people horror-comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/vwy81HbDoSvccWvculRMUVY39dD.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 22172,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vwy81HbDoSvccWvculRMUVY39dD.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

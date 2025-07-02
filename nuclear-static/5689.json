@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "The Blue Lagoon",
+    "year": 1980,
+    "initialSlug": "Forbidden love. Untamed lust.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/k6KsThCeoxxHDbVnlHLdTlf5wsy.jpg",
+    "initialStreaming": "TBD",
+    "tmdbId": 5689,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Blue Lagoon** (1980) stands as a controversial landmark in coming-of-age cinema, following two children marooned on a tropical island who discover their sexuality as they mature in isolation. Director Randal Kleiser, fresh off **Grease** (1978), sparked intense debate over the film's portrayal of teenage sexuality, particularly regarding 14-year-old Brooke Shields' performance. The film's paradisiacal cinematography by Néstor Almendros (who also shot **Days of Heaven** (1978)) creates a lush visual feast that contrasts sharply with its complex themes of innocence versus instinct."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Paradise",
+            "year": 1982,
+            "slug": "Similar island survival romance starring Phoebe Cates",
+            "poster": "https://image.tmdb.org/t/p/w500/vPWQ02RbO82ijIede7SYHcnhzoT.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 23942,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vPWQ02RbO82ijIede7SYHcnhzoT.jpg"
+          },
+          {
+            "title": "Return to the Blue Lagoon",
+            "year": 1991,
+            "slug": "Direct sequel following a new pair of marooned youngsters",
+            "poster": "https://image.tmdb.org/t/p/w500/jhUTLuPgc3Qcvr5xtji8oiWSfYy.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 13888,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jhUTLuPgc3Qcvr5xtji8oiWSfYy.jpg"
+          },
+          {
+            "title": "The Blue Lagoon: The Awakening",
+            "year": 2012,
+            "slug": "Modern TV movie remake set in contemporary times",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film belongs to a unique subset of survival narratives that focus on youth isolation, like **Lord of the Flies** (1963) and **Cast Away** (2000), but with an emphasis on romantic awakening rather than societal breakdown. Its influence can be seen in later works like **Swept Away** (2002) and **The Beach** (2000), though these films took darker approaches to paradise-found narratives."
+      },
+      {
+        "type": "text",
+        "content": "Beyond controversy, **The Blue Lagoon** (1980) represents a significant technical achievement in location filming. Shot primarily in Fiji with challenging ocean sequences, it pioneered underwater cinematography techniques later used in films like **The Deep** (1977) and **Jaws** (1975). The film's natural lighting and minimal artificial enhancement created a documentary-like authenticity that influenced later island-set films like **Six Days Seven Nights** (1998). SUBHEAD: Cultural Impact and Legacy"
+      },
+      {
+        "type": "text",
+        "content": "While critically divisive, the film's impact on popular culture remains significant. It launched Brooke Shields to international stardom and influenced a generation of romantic adventure films. The movie's Eden-like portrayal of isolation would later be deconstructed in darker works like **Lord of the Flies** (1990) and **The Beach** (2000), which questioned the fantasy of tropical paradise. Its DNA can be found in everything from survival romance films like **The Other Side of Heaven** (2001) to reality TV shows about island survival."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Coming-of-Age Cinema in the 1980s",
+      "Controversy in Youth-Centered Films",
+      "Paradise Lost: Island Survival in Cinema",
+      "Néstor Almendros' Cinematography Techniques",
+      "The Impact of Location Filming on Narrative"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Cast Away",
+          "year": 2000,
+          "slug": "Modern survival drama about a FedEx executive stranded on an island",
+          "poster": "https://image.tmdb.org/t/p/w500/7lLJgKnAicAcR5UEuo8xhSMj18w.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 8358,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7lLJgKnAicAcR5UEuo8xhSMj18w.jpg"
+        },
+        {
+          "title": "Swiss Family Robinson",
+          "year": 1960,
+          "slug": "Classic family adventure about shipwrecked family",
+          "poster": "https://image.tmdb.org/t/p/w500/3ZItm1RcdwNuPnCaaqEFGrbVlcO.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 18444,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3ZItm1RcdwNuPnCaaqEFGrbVlcO.jpg"
+        },
+        {
+          "title": "Lord of the Flies",
+          "year": 1963,
+          "slug": "Dark tale of schoolboys stranded on an island",
+          "poster": "https://image.tmdb.org/t/p/w500/3jhp9oxZpwcWCZ1vfn3PyMWovzq.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 9960,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3jhp9oxZpwcWCZ1vfn3PyMWovzq.jpg"
+        },
+        {
+          "title": "Six Days Seven Nights",
+          "year": 1998,
+          "slug": "Romantic adventure about pair stranded on tropical island",
+          "poster": "https://image.tmdb.org/t/p/w500/fzWrrCzRa16v51TXAUuT6Wendw7.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 6068,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fzWrrCzRa16v51TXAUuT6Wendw7.jpg"
+        },
+        {
+          "title": "The Beach",
+          "year": 2000,
+          "slug": "Dark thriller about isolated island paradise",
+          "poster": "https://image.tmdb.org/t/p/w500/4y7LxD8TSi6AtsM2xSYqUm1gu7u.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 1907,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4y7LxD8TSi6AtsM2xSYqUm1gu7u.jpg"
+        },
+        {
+          "title": "Swept Away",
+          "year": 2002,
+          "slug": "Romantic drama about wealthy woman and sailor stranded together",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Against the Wild",
+          "year": 2013,
+          "slug": "Children survive wilderness plane crash",
+          "poster": "https://image.tmdb.org/t/p/w500/cTs2mJEJMa6WxYt4ZJnlz2xK0VC.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 246449,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cTs2mJEJMa6WxYt4ZJnlz2xK0VC.jpg"
+        },
+        {
+          "title": "The Other Side of Heaven",
+          "year": 2001,
+          "slug": "Missionary survival story set in tropical paradise",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Heaven Knows, Mr. Allison",
+          "year": 1957,
+          "slug": "Marine and nun survive on Pacific island",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": null
+        },
+        {
+          "title": "Beyond the Reef",
+          "year": 1981,
+          "slug": "South Pacific romance in similar style to Blue Lagoon",
+          "poster": "https://image.tmdb.org/t/p/w500/6ekUUdSAzIMxrykGNBcw3IRoFsZ.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 86102,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6ekUUdSAzIMxrykGNBcw3IRoFsZ.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

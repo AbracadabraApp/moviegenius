@@ -1,0 +1,224 @@
+{
+  "props": {
+    "title": "Memento",
+    "year": 2000,
+    "initialSlug": "The truth hides in plain sight.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/fKTPH2WvH8nHTXeBYBVhawtRqtR.jpg",
+    "initialStreaming": "Amazon Prime",
+    "tmdbId": 77,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Memento** (2000) revolutionized nonlinear storytelling through its brilliant reverse-chronological structure. Christopher Nolan's breakthrough film follows Leonard Shelby (Guy Pearce), who can't form new memories, as he hunts his wife's killer. The genius lies in making viewers experience Leonard's confusion - we piece together clues backwards, never quite sure what's true. This sparked a wave of complex narrative films like **Inception** (2010) and **Shutter Island** (2010), but none matched Memento's tight psychological grip."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Mulholland Drive",
+            "year": 2001,
+            "slug": "David Lynch's mind-bending noir about an aspiring actress in Hollywood explores identity and memory through surreal twists",
+            "poster": "https://image.tmdb.org/t/p/w500/x7A59t6ySylr1L7aubOQEA480vM.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 1018,
+            "poster_url": "https://image.tmdb.org/t/p/w500/x7A59t6ySylr1L7aubOQEA480vM.jpg"
+          },
+          {
+            "title": "Primer",
+            "year": 2004,
+            "slug": "Ultra-complex time travel thriller that demands multiple viewings to unravel its intricate plot",
+            "poster": "https://image.tmdb.org/t/p/w500/xEoq2WmDzpzxhkHEsmOYOg6BPg6.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 14337,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xEoq2WmDzpzxhkHEsmOYOg6BPg6.jpg"
+          },
+          {
+            "title": "The Prestige",
+            "year": 2006,
+            "slug": "Nolan's tale of rival magicians uses nonlinear structure to explore obsession and deception",
+            "poster": "https://image.tmdb.org/t/p/w500/bdN3gXuIZYaJP7ftKK2sU0nPtEA.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 1124,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bdN3gXuIZYaJP7ftKK2sU0nPtEA.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's innovative editing technique wasn't just style - it served the story perfectly. Each scene ends where the previous one began, creating a disorienting effect that mirrors Leonard's condition. This influenced later psychological thrillers like **Fight Club** (1999) and **Donnie Darko** (2001), which also play with unreliable narrators and fractured timelines. The Polaroid photos and tattoos become Leonard's external memory system, raising questions about identity and truth that echo through films like **Dark City** (1998) and **Total Recall** (1990)."
+      },
+      {
+        "type": "text",
+        "content": "Nolan's meticulous attention to detail rewards repeated viewing. Small gestures, seemingly throwaway lines, and background elements take on new meaning once you know the full story. This level of craftsmanship inspired similarly intricate mysteries like **Arrival** (2016) and **Predestination** (2014), where every frame contains potential clues. The film's exploration of memory's unreliability influenced later works like **Eternal Sunshine of the Spotless Mind** (2004) and **The Machinist** (2004). SUBHEAD: Impact on Modern Psychological Thrillers"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Following",
+            "year": 1998,
+            "slug": "Nolan's debut feature about a writer who follows strangers shows early signs of his nonlinear storytelling style",
+            "poster": "https://image.tmdb.org/t/p/w500/3bX6VVSMf0dvzk5pMT4ALG5A92d.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 11660,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3bX6VVSMf0dvzk5pMT4ALG5A92d.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Memento** created a template for intelligent psychological thrillers that respect audience intelligence. Its influence can be seen in films like **Source Code** (2011) and **Looper** (2012), which also play with time and memory while maintaining emotional resonance. The film's success proved audiences could handle complex narratives, paving the way for mind-bending features like **Coherence** (2013) and **Triangle** (2009)."
+      }
+    ],
+    "exploreFurther": [
+      "The Science of Memory in Film",
+      "Christopher Nolan's Nonlinear Narratives",
+      "Neo-Noir and Contemporary Thriller Evolution",
+      "Unreliable Narrators in Modern Cinema",
+      "Visual Storytelling Through Editorial Structure"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Inception",
+          "year": 2010,
+          "slug": "Nolan's dream-heist masterpiece about planting ideas in minds",
+          "poster": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 27205,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg"
+        },
+        {
+          "title": "Identity",
+          "year": 2003,
+          "slug": "Murder mystery at a remote motel plays with memory and identity",
+          "poster": "https://image.tmdb.org/t/p/w500/bnidwEvWNAVJ3Uco9wWtuzWAfrx.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 2832,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bnidwEvWNAVJ3Uco9wWtuzWAfrx.jpg"
+        },
+        {
+          "title": "Vanilla Sky",
+          "year": 2001,
+          "slug": "Reality-bending thriller about a man whose life unravels after an accident",
+          "poster": "https://image.tmdb.org/t/p/w500/cAh2pCiNPftsY3aSqJuIOde7uWr.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 1903,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cAh2pCiNPftsY3aSqJuIOde7uWr.jpg"
+        },
+        {
+          "title": "The Usual Suspects",
+          "year": 1995,
+          "slug": "Twisted crime thriller with an unreliable narrator",
+          "poster": "https://image.tmdb.org/t/p/w500/99X2SgyFunJFXGAYnDv3sb9pnUD.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 629,
+          "poster_url": "https://image.tmdb.org/t/p/w500/99X2SgyFunJFXGAYnDv3sb9pnUD.jpg"
+        },
+        {
+          "title": "Oldboy",
+          "year": 2003,
+          "slug": "Korean revenge thriller with shocking memory revelations",
+          "poster": "https://image.tmdb.org/t/p/w500/pWDtjs568ZfOTMbURQBYuT4Qxka.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 670,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pWDtjs568ZfOTMbURQBYuT4Qxka.jpg"
+        },
+        {
+          "title": "Timecrimes",
+          "year": 2007,
+          "slug": "Spanish time-travel thriller with intricate plot mechanics",
+          "poster": "https://image.tmdb.org/t/p/w500/zdxQRP7mzczMJBwKnv8MCPRq7rQ.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 14139,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zdxQRP7mzczMJBwKnv8MCPRq7rQ.jpg"
+        },
+        {
+          "title": "Upstream Color",
+          "year": 2013,
+          "slug": "Abstract sci-fi about identity and shared consciousness",
+          "poster": "https://image.tmdb.org/t/p/w500/zeV2KXaluXjXAq9wBg6Q0LHJjNm.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 145197,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zeV2KXaluXjXAq9wBg6Q0LHJjNm.jpg"
+        },
+        {
+          "title": "Moon",
+          "year": 2009,
+          "slug": "Sci-fi thriller questioning memory and identity",
+          "poster": "https://image.tmdb.org/t/p/w500/35IU0Mq0zFsN1mYwDGts5mKc77n.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 17431,
+          "poster_url": "https://image.tmdb.org/t/p/w500/35IU0Mq0zFsN1mYwDGts5mKc77n.jpg"
+        },
+        {
+          "title": "Trance",
+          "year": 2013,
+          "slug": "Danny Boyle's hypnosis-themed psychological thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/3MVYuyVknNA9yC0Gy6z3zDAiWfX.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 68727,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3MVYuyVknNA9yC0Gy6z3zDAiWfX.jpg"
+        },
+        {
+          "title": "Coherence",
+          "year": 2013,
+          "slug": "Mind-bending dinner party thriller with parallel realities",
+          "poster": "https://image.tmdb.org/t/p/w500/ezUtb9m5DeLwL2gxi4gktzNCvQv.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 220289,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ezUtb9m5DeLwL2gxi4gktzNCvQv.jpg"
+        },
+        {
+          "title": "Dark City",
+          "year": 1998,
+          "slug": "Neo-noir sci-fi about a city where memories are altered nightly",
+          "poster": "https://image.tmdb.org/t/p/w500/tNPEGju4DpTdbhBphNmZoEi9Bd3.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 2666,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tNPEGju4DpTdbhBphNmZoEi9Bd3.jpg"
+        },
+        {
+          "title": "Jacob's Ladder",
+          "year": 1990,
+          "slug": "Psychological horror about a Vietnam vet's fractured reality",
+          "poster": "https://image.tmdb.org/t/p/w500/ufLcHIi1aXjjH8MediAMvnwDsVI.jpg",
+          "initialStreaming": "Pluto TV",
+          "tmdb_id": 2291,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ufLcHIi1aXjjH8MediAMvnwDsVI.jpg"
+        },
+        {
+          "title": "eXistenZ",
+          "year": 1999,
+          "slug": "Cronenberg's reality-bending video game thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/kETKF0JhdTPn1knci8CAdYL0d79.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1946,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kETKF0JhdTPn1knci8CAdYL0d79.jpg"
+        },
+        {
+          "title": "Open Your Eyes",
+          "year": 1997,
+          "slug": "Spanish thriller about perception and reality",
+          "poster": "https://image.tmdb.org/t/p/w500/orjSy9xEGI9jxrtodACH04gANmF.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1902,
+          "poster_url": "https://image.tmdb.org/t/p/w500/orjSy9xEGI9jxrtodACH04gANmF.jpg"
+        },
+        {
+          "title": "The Machinist",
+          "year": 2004,
+          "slug": "Psychological thriller about an insomniac's deteriorating mind",
+          "poster": "https://image.tmdb.org/t/p/w500/diAYqR4xdF9Hnj7qun6DEQhRrT2.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 4553,
+          "poster_url": "https://image.tmdb.org/t/p/w500/diAYqR4xdF9Hnj7qun6DEQhRrT2.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "A Lot Like Love",
+    "year": 2005,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/6xrF9zwEbYiYBOalMO14RAWBLLj.jpg",
+    "initialStreaming": null,
+    "tmdbId": 8976,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**A Lot Like Love** (2005) follows the \"friends-to-lovers over time\" romance template pioneered by **When Harry Met Sally** (1989), but adds a distinctly mid-2000s spin. Ashton Kutcher and Amanda Peet's chemistry drives this time-hopping romance that spans seven years of near-misses and almost-relationships. The film sits perfectly in the post-90s romantic comedy evolution, alongside contemporaries like **Serendipity** (2001) and **13 Going on 30** (2004), where fate and timing become central themes rather than just meet-cute obstacles. Serendipity|2001|Two strangers leave their romance to fate after a magical night in New York|Hulu 13 Going on 30|2004|A teenage girl magically wakes up as her 30-year-old self, discovering her best friend might be her true love|Prime"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "When Harry Met Sally",
+            "year": 1989,
+            "slug": "The gold standard of friends-to-lovers romances following two friends over 12 years",
+            "poster": "https://image.tmdb.org/t/p/w500/rFOiFUhTMtDetqCGClC9PIgnC1P.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 639,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rFOiFUhTMtDetqCGClC9PIgnC1P.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Director Nigel Cole brings the same warmth he showed in **Calendar Girls** (2003) to this non-linear narrative. The film's structure, jumping between years 1998-2005, reflects the era's fascination with fractured timelines popularized by **500 Days of Summer** (2009) and **The Lake House** (2006). Each time period is carefully marked by changing technology - from early cell phones to digital cameras to early social media - creating a nostalgic time capsule of millennial dating culture."
+      },
+      {
+        "type": "text",
+        "content": "The film's strongest moments come from its exploration of career ambitions competing with romantic timing, a theme that would become even more central in later works like **La La Land** (2016). Kutcher's Oliver and Peet's Emily keep missing their moment as they pursue their dreams - he launches an online diaper business during the dot-com boom, she chases a photography career. This adds depth beyond typical romantic comedy fare, placing it alongside more grounded relationship studies like **Before Sunset** (2004). 500 Days of Summer|2009|A non-linear examination of a relationship from beginning to end|Hulu The Lake House|2006|Two people living two years apart fall in love through letters left in a magical mailbox|Prime SUBHEAD: Evolution of the Modern Romance"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Before Sunset",
+            "year": 2004,
+            "slug": "Two former lovers reconnect in Paris nine years after their first meeting",
+            "poster": "https://image.tmdb.org/t/p/w500/94Yl2xVB7YIRK4IgA0RqYGiNgkB.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 80,
+            "poster_url": "https://image.tmdb.org/t/p/w500/94Yl2xVB7YIRK4IgA0RqYGiNgkB.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While **A Lot Like Love** didn't achieve the cultural impact of its predecessors like **You've Got Mail** (1998), it represents a crucial bridge between classic 90s romantic comedies and more realistic relationship films of the 2010s. Its treatment of career-versus-love dilemmas and long-term friendship dynamics paved the way for films like **Friends with Benefits** (2011) and **No Strings Attached** (2011), which further deconstructed romantic comedy tropes."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Technology in 2000s Romance Films",
+      "Ashton Kutcher's Transition from Comedy to Romantic Lead",
+      "Non-Linear Storytelling in Modern Romance",
+      "The Impact of When Harry Met Sally on Friends-to-Lovers Stories",
+      "Dating Culture Changes from 1998-2005 Reflected in Film"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Just Friends",
+          "year": 2005,
+          "slug": "A formerly overweight teen returns home as a successful music producer to win his high school crush",
+          "poster": "https://image.tmdb.org/t/p/w500/yRVTCeuLbVOlknsII5OBJEbl9yg.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 10033,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yRVTCeuLbVOlknsII5OBJEbl9yg.jpg"
+        },
+        {
+          "title": "He's Just Not That Into You",
+          "year": 2009,
+          "slug": "Interconnected stories about reading romantic signals in modern dating",
+          "poster": "https://image.tmdb.org/t/p/w500/jip2ap24Y6JxEgzVRyNqyYssnyR.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10184,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jip2ap24Y6JxEgzVRyNqyYssnyR.jpg"
+        },
+        {
+          "title": "Going the Distance",
+          "year": 2010,
+          "slug": "Long-distance relationship challenges in the digital age",
+          "poster": "https://image.tmdb.org/t/p/w500/tTllmSew3nsizpzWNWKUkOuANhm.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 38073,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tTllmSew3nsizpzWNWKUkOuANhm.jpg"
+        },
+        {
+          "title": "Definitely Maybe",
+          "year": 2008,
+          "slug": "A father tells his daughter the complex story of how he met her mother",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "(500) Days of Summer",
+          "year": 2009,
+          "slug": "A non-linear deconstruction of a modern relationship",
+          "poster": "https://image.tmdb.org/t/p/w500/qXAuQ9hF30sQRsXf40OfRVl0MJZ.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 19913,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qXAuQ9hF30sQRsXf40OfRVl0MJZ.jpg"
+        },
+        {
+          "title": "The Holiday",
+          "year": 2006,
+          "slug": "Two women swap homes and find unexpected romance",
+          "poster": "https://image.tmdb.org/t/p/w500/h1ITOpvJN3Tw4Sy60w2QTfYMvdd.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1581,
+          "poster_url": "https://image.tmdb.org/t/p/w500/h1ITOpvJN3Tw4Sy60w2QTfYMvdd.jpg"
+        },
+        {
+          "title": "Music and Lyrics",
+          "year": 2007,
+          "slug": "A washed-up musician and a quirky lyricist collaborate and fall in love",
+          "poster": "https://image.tmdb.org/t/p/w500/qJeaucfjK3IPqISCrvTM9g3n4g2.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 11172,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qJeaucfjK3IPqISCrvTM9g3n4g2.jpg"
+        },
+        {
+          "title": "Two Weeks Notice",
+          "year": 2002,
+          "slug": "A brilliant lawyer works for a charming but needy millionaire",
+          "poster": "https://image.tmdb.org/t/p/w500/r18hSGAcxWiUysbX6nFShIZyjjP.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 2642,
+          "poster_url": "https://image.tmdb.org/t/p/w500/r18hSGAcxWiUysbX6nFShIZyjjP.jpg"
+        },
+        {
+          "title": "Sweet Home Alabama",
+          "year": 2002,
+          "slug": "A fashion designer must confront her past and first love before moving forward",
+          "poster": "https://image.tmdb.org/t/p/w500/698cbxq0SRwCdOPG5Bwi7JDk12d.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 11529,
+          "poster_url": "https://image.tmdb.org/t/p/w500/698cbxq0SRwCdOPG5Bwi7JDk12d.jpg"
+        },
+        {
+          "title": "Made of Honor",
+          "year": 2008,
+          "slug": "A man realizes he loves his best friend as she's about to marry someone else",
+          "poster": "https://image.tmdb.org/t/p/w500/pDg8D0jNqmz7RbCBgblWvmPswHE.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 10761,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pDg8D0jNqmz7RbCBgblWvmPswHE.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

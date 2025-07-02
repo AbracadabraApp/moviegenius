@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "One Flew Over the Cuckoo's Nest",
+    "year": 1975,
+    "initialSlug": "Mental ward rebel sparks patients' fight for freedom",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/kjWsMh72V6d8KRLV4EOoSJLT1H7.jpg",
+    "initialStreaming": null,
+    "tmdbId": 510,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**One Flew Over the Cuckoo's Nest** (1975) revolutionized the portrayal of mental health institutions in cinema through Jack Nicholson's electric performance as R.P. McMurphy, a criminal who fakes insanity to serve his sentence in a psychiatric hospital rather than prison. Director Milos Forman crafted a masterpiece that swept all five major Academy Awards - a feat matched only by **It Happened One Night** (1934) and **The Silence of the Lambs** (1991). The film's impact resonates through later institutional critiques like **Girl, Interrupted** (1999) and **Shutter Island** (2010), establishing a template for examining power structures and institutional control."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "One Flew Over the Cuckoo's Nest",
+            "year": 1975,
+            "slug": "A criminal fakes mental illness to avoid prison, sparking rebellion in a psychiatric ward",
+            "poster": "https://image.tmdb.org/t/p/w500/kjWsMh72V6d8KRLV4EOoSJLT1H7.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 510,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kjWsMh72V6d8KRLV4EOoSJLT1H7.jpg"
+          },
+          {
+            "title": "Girl, Interrupted",
+            "year": 1999,
+            "slug": "Young woman's journey through a mental institution in the 1960s",
+            "poster": "https://image.tmdb.org/t/p/w500/dOBdatHIVppvmRFw2z7bf9VKJr9.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 3558,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dOBdatHIVppvmRFw2z7bf9VKJr9.jpg"
+          },
+          {
+            "title": "Shutter Island",
+            "year": 2010,
+            "slug": "A U.S. Marshal investigates a disappearance at a psychiatric facility",
+            "poster": "https://image.tmdb.org/t/p/w500/nrmXQ0zcZUL8jFLrakWc90IR8z9.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 11324,
+            "poster_url": "https://image.tmdb.org/t/p/w500/nrmXQ0zcZUL8jFLrakWc90IR8z9.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends beyond mental health narratives into broader examinations of institutional authority and rebellion. Louise Fletcher's portrayal of Nurse Ratched created an archetype of bureaucratic evil that influenced characters like Dolores Umbridge in **Harry Potter and the Order of the Phoenix** (2007). The ward dynamics and power struggles echo through prison dramas like **The Shawshank Redemption** (1994) and **Cool Hand Luke** (1967), where individual spirit clashes with systematic oppression. SUBHEAD: Impact on Mental Health in Cinema"
+      },
+      {
+        "type": "text",
+        "content": "Following Cuckoo's Nest, films began approaching mental health with greater complexity. **Awakenings** (1990) explored treatment breakthroughs with humanity and nuance, while **A Beautiful Mind** (2001) depicted schizophrenia from an intimate first-person perspective. The film's influence can be seen in contemporary works like **Silver Linings Playbook** (2012) and **The Perks of Being a Wallflower** (2012), which treat mental health challenges with greater empathy and understanding rather than exploitation."
+      }
+    ],
+    "exploreFurther": [
+      "The history of mental health portrayal in cinema",
+      "Ken Kesey's novel vs. Milos Forman's adaptation",
+      "Jack Nicholson's method acting approach to McMurphy",
+      "The film's impact on mental health reform",
+      "Analysis of power dynamics in institutional settings"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Awakenings",
+          "year": 1990,
+          "slug": "Doctor discovers drug that awakens catatonic patients",
+          "poster": "https://image.tmdb.org/t/p/w500/9gztZXuHLG6AJ0fgqGd7Q43cWRI.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 11005,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9gztZXuHLG6AJ0fgqGd7Q43cWRI.jpg"
+        },
+        {
+          "title": "The Snake Pit",
+          "year": 1948,
+          "slug": "Groundbreaking drama about mental institution conditions",
+          "poster": "https://image.tmdb.org/t/p/w500/ugT4LqeQnr9G7zKt8XKs7EImFD2.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 62694,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ugT4LqeQnr9G7zKt8XKs7EImFD2.jpg"
+        },
+        {
+          "title": "Ordinary People",
+          "year": 1980,
+          "slug": "Family deals with depression and loss",
+          "poster": "https://image.tmdb.org/t/p/w500/tJVETEDAKgD3fEh88SHOvMvOQue.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 16619,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tJVETEDAKgD3fEh88SHOvMvOQue.jpg"
+        },
+        {
+          "title": "A Beautiful Mind",
+          "year": 2001,
+          "slug": "Mathematician struggles with schizophrenia",
+          "poster": "https://image.tmdb.org/t/p/w500/rEIg5yJdNOt9fmX4P8gU9LeNoTQ.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 453,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rEIg5yJdNOt9fmX4P8gU9LeNoTQ.jpg"
+        },
+        {
+          "title": "The Fisher King",
+          "year": 1991,
+          "slug": "Radio DJ helps homeless man haunted by tragedy",
+          "poster": "https://image.tmdb.org/t/p/w500/hwIYw22HmAUMobV4zsX69MgfVUz.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 177,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hwIYw22HmAUMobV4zsX69MgfVUz.jpg"
+        },
+        {
+          "title": "12 Monkeys",
+          "year": 1995,
+          "slug": "Time traveler questions reality in mental institution",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": null
+        },
+        {
+          "title": "It's Kind of a Funny Story",
+          "year": 2010,
+          "slug": "Teen checks himself into psychiatric ward",
+          "poster": "https://image.tmdb.org/t/p/w500/hQE4q8Szeaae4davgB7o8MTLmwr.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 43923,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hQE4q8Szeaae4davgB7o8MTLmwr.jpg"
+        },
+        {
+          "title": "What's Eating Gilbert Grape",
+          "year": 1993,
+          "slug": "Young man cares for mentally challenged brother",
+          "poster": "https://image.tmdb.org/t/p/w500/8r9yts6XHbB1xNLaPC6ExNAK1Qu.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1587,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8r9yts6XHbB1xNLaPC6ExNAK1Qu.jpg"
+        },
+        {
+          "title": "Rain Man",
+          "year": 1988,
+          "slug": "Road trip with autistic savant brother",
+          "poster": "https://image.tmdb.org/t/p/w500/iTNHwO896WKkaoPtpMMS74d8VNi.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 380,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iTNHwO896WKkaoPtpMMS74d8VNi.jpg"
+        },
+        {
+          "title": "Good Will Hunting",
+          "year": 1997,
+          "slug": "Troubled genius works through trauma with therapist",
+          "poster": "https://image.tmdb.org/t/p/w500/z2FnLKpFi1HPO7BEJxdkv6hpJSU.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 489,
+          "poster_url": "https://image.tmdb.org/t/p/w500/z2FnLKpFi1HPO7BEJxdkv6hpJSU.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,157 @@
+{
+  "props": {
+    "title": "Zatoichi",
+    "year": 2003,
+    "initialSlug": "Blind Justice Strikes Again",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/iCIycswWbX1EDS6PYYBcR9ohrC.jpg",
+    "initialStreaming": null,
+    "tmdbId": 246,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Takeshi Kitano's **Zatoichi** (2003) brilliantly reimagines the beloved blind swordsman character first portrayed by Shintaro Katsu across 26 films from 1962-1989. Kitano's version maintains the core essence of the wandering masseur with lethal sword skills while injecting his signature deadpan humor and sudden bursts of stylized violence. The film's innovative sound design turns everyday rhythms into percussion, culminating in an unforgettable tap-dancing finale that connects to earlier Japanese films like **The Blind Swordsman: Zatoichi** (1962) and **Yojimbo** (1961) while creating something entirely fresh."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Zatoichi",
+            "year": 2003,
+            "slug": "Takeshi Kitano stars as a blind masseur and master swordsman who helps villagers against gangsters, featuring innovative sound design and choreography",
+            "poster": "https://image.tmdb.org/t/p/w500/iCIycswWbX1EDS6PYYBcR9ohrC.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 246,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iCIycswWbX1EDS6PYYBcR9ohrC.jpg"
+          },
+          {
+            "title": "Yojimbo",
+            "year": 1961,
+            "slug": "Akira Kurosawa's influential samurai classic about a crafty ronin playing rival gangs against each other",
+            "poster": "https://image.tmdb.org/t/p/w500/tN7kYPjRhDolpui9sc9Eq9n5b2O.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 11878,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tN7kYPjRhDolpui9sc9Eq9n5b2O.jpg"
+          },
+          {
+            "title": "Seven Samurai",
+            "year": 1954,
+            "slug": "Kurosawa's epic about samurai defending a village, revolutionizing action cinema and storytelling",
+            "poster": "https://image.tmdb.org/t/p/w500/8OKmBV5BUFzmozIC3pPWKHy17kx.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 346,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8OKmBV5BUFzmozIC3pPWKHy17kx.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The blind warrior archetype resonates throughout samurai cinema, from **Crimson Bat** (1969) to **Blind Fury** (1989), an American remake starring Rutger Hauer. But Kitano's version stands apart through its precise balance of violence and humor. The fight sequences employ rapid-cut editing and exaggerated blood sprays that recall both classic chanbara films and modern directors like Takashi Miike in **13 Assassins** (2010). The sound design transforms mundane activities - farmers working, carpenters hammering, rain falling - into rhythmic music that builds to the film's explosive tap-dancing finale. SUBHEAD: Modern Samurai Cinema Revival"
+      },
+      {
+        "type": "text",
+        "content": "**Zatoichi** (2003) helped spark renewed international interest in samurai films, alongside works like **The Twilight Samurai** (2002) and **When the Last Sword is Drawn** (2003). These films brought fresh perspectives to the genre while honoring traditions established by masters like Masaki Kobayashi in **Harakiri** (1962) and **Samurai Rebellion** (1967). The success of Kitano's interpretation showed how classic samurai stories could be reinvented for modern audiences without losing their essential cultural elements."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of the Zatoichi Character Through Japanese Cinema",
+      "Sound Design and Musical Elements in Samurai Films",
+      "Takeshi Kitano's Directorial Style and Genre Innovations",
+      "The Influence of Classical Samurai Cinema on Modern Filmmaking",
+      "Disability Representation in Japanese Action Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Sword of Doom",
+          "year": 1966,
+          "slug": "Dark samurai masterpiece about a sociopathic swordsman",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Blind Swordsman: Zatoichi",
+          "year": 1962,
+          "slug": "The original film that launched the long-running series",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "13 Assassins",
+          "year": 2010,
+          "slug": "Takashi Miike's brutal reimagining of classic samurai cinema",
+          "poster": "https://image.tmdb.org/t/p/w500/yUsVsiVXUwClk4vSCx80vrdO6MV.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 58857,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yUsVsiVXUwClk4vSCx80vrdO6MV.jpg"
+        },
+        {
+          "title": "The Twilight Samurai",
+          "year": 2002,
+          "slug": "Intimate drama about a low-ranking samurai facing change",
+          "poster": "https://image.tmdb.org/t/p/w500/bB2M8UF8wc9flfGWkcgkTTf8Mzr.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 12496,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bB2M8UF8wc9flfGWkcgkTTf8Mzr.jpg"
+        },
+        {
+          "title": "Harakiri",
+          "year": 1962,
+          "slug": "Masterful critique of samurai honor codes",
+          "poster": "https://image.tmdb.org/t/p/w500/5konZnIbcAxZjP616Cz5o9bKEfW.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 14537,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5konZnIbcAxZjP616Cz5o9bKEfW.jpg"
+        },
+        {
+          "title": "Samurai Rebellion",
+          "year": 1967,
+          "slug": "Toshiro Mifune stars in tale of defiance against feudal authority",
+          "poster": "https://image.tmdb.org/t/p/w500/bKySGFUTgsZyn5i7s5htMVy4Xd2.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 27031,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bKySGFUTgsZyn5i7s5htMVy4Xd2.jpg"
+        },
+        {
+          "title": "Lady Snowblood",
+          "year": 1973,
+          "slug": "Revenge tale that influenced Kill Bill",
+          "poster": "https://image.tmdb.org/t/p/w500/wkcbaqCoYEXDUnSQ6NTnB2C7H05.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 2487,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wkcbaqCoYEXDUnSQ6NTnB2C7H05.jpg"
+        },
+        {
+          "title": "The Tale of Zatoichi Continues",
+          "year": 1962,
+          "slug": "First sequel in the original series",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Lone Wolf and Cub: Sword of Vengeance",
+          "year": 1972,
+          "slug": "Influential samurai series starter",
+          "poster": "https://image.tmdb.org/t/p/w500/uxJJIzw3lDM0RbFQMQsTTRyFO2D.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 41471,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uxJJIzw3lDM0RbFQMQsTTRyFO2D.jpg"
+        },
+        {
+          "title": "Kill!",
+          "year": 1968,
+          "slug": "Satirical take on samurai film tropes",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

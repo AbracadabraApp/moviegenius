@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "Simple Plan",
+    "year": 1998,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/iJYGDwZmVEYRkSPbWQdxzvBLTcK.jpg",
+    "initialStreaming": null,
+    "tmdbId": 10223,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Sam Raimi's **Simple Plan** (1998) marks a masterful shift from his horror roots into stark moral thriller territory. Like **Fargo** (1996), it explores how ordinary people spiral into darkness after discovering criminal money. Bill Paxton and Billy Bob Thornton deliver career-best performances as brothers whose lives unravel after finding $4.4 million in crashed plane. The snow-covered Minnesota setting becomes a character itself, with cinematographer Alar Kivilo capturing the bleakness that mirrors the characters' moral decay. The film shares DNA with **A History of Violence** (2005) and **No Country for Old Men** (2007) in examining how quick decisions lead to inescapable consequences."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Fargo",
+            "year": 1996,
+            "slug": "Small-town police chief investigates roadside murders while very pregnant, showcasing the Coen Brothers' dark humor",
+            "poster": "https://image.tmdb.org/t/p/w500/rUjUCT6GvFS475sKJVfHWZUdnv5.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 275,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rUjUCT6GvFS475sKJVfHWZUdnv5.jpg"
+          },
+          {
+            "title": "Blood Simple",
+            "year": 1984,
+            "slug": "The Coen Brothers' debut about a Texas bar owner who hires a private detective to kill his cheating wife",
+            "poster": "https://image.tmdb.org/t/p/w500/svU6pu4lfHn0T5BVZchVxL58HB5.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 11368,
+            "poster_url": "https://image.tmdb.org/t/p/w500/svU6pu4lfHn0T5BVZchVxL58HB5.jpg"
+          },
+          {
+            "title": "A History of Violence",
+            "year": 2005,
+            "slug": "David Cronenberg's thriller about a small-town family man whose violent past catches up with him",
+            "poster": "https://image.tmdb.org/t/p/w500/A26rcvipOqptVs7i5uRmKicXRxE.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 59,
+            "poster_url": "https://image.tmdb.org/t/p/w500/A26rcvipOqptVs7i5uRmKicXRxE.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film represents a crucial moment in 90s neo-noir, alongside **Red Rock West** (1993) and **The Last Seduction** (1994). What sets **Simple Plan** apart is its intimate focus on family bonds and small-town dynamics. The relationship between the brothers - one educated and respected, the other simple but genuine - creates devastating moral complexity. Scott B. Smith adapted his own novel, maintaining the book's crushing sense of inevitability while adding visual poetry to the moral decay. SUBHEAD: The Evolution of Rural Noir"
+      },
+      {
+        "type": "text",
+        "content": "**Simple Plan** helped establish a vital subgenre of rural crime films that continued with **Winter's Bone** (2010) and **Hell or High Water** (2016). These films share an emphasis on economic desperation in forgotten American communities, where crime becomes a twisted form of survival. The film's influence can be seen in recent works like **Wind River** (2017), where the isolation of snow-covered landscapes amplifies moral choices and their consequences."
+      }
+    ],
+    "exploreFurther": [
+      "The Rise of Rural Noir in American Cinema",
+      "Sam Raimi's Evolution from Horror to Drama",
+      "The Impact of Economic Anxiety in 90s Thrillers",
+      "Brotherly Relationships in Crime Films",
+      "The Role of Winter Settings in Thriller Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Winter's Bone",
+          "year": 2010,
+          "slug": "Jennifer Lawrence stars as an Ozark teenager searching for her missing father",
+          "poster": "https://image.tmdb.org/t/p/w500/a0qhPkNlxLfsf5B2jFyI1Pp04XV.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 39013,
+          "poster_url": "https://image.tmdb.org/t/p/w500/a0qhPkNlxLfsf5B2jFyI1Pp04XV.jpg"
+        },
+        {
+          "title": "Before the Devil Knows You're Dead",
+          "year": 2007,
+          "slug": "Brothers plan to rob their parents' jewelry store with devastating results",
+          "poster": "https://image.tmdb.org/t/p/w500/egIP0s1ws6fGHqTsVqVNcaEa5i2.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 7972,
+          "poster_url": "https://image.tmdb.org/t/p/w500/egIP0s1ws6fGHqTsVqVNcaEa5i2.jpg"
+        },
+        {
+          "title": "Blood Brothers",
+          "year": 2021,
+          "slug": "Small-town friends face moral choices after covering up a deadly accident",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": null
+        },
+        {
+          "title": "No Country for Old Men",
+          "year": 2007,
+          "slug": "A man finds drug money and is pursued by a relentless killer",
+          "poster": "https://image.tmdb.org/t/p/w500/bj1v6YKF8yHqA489VFfnQvOJpnc.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 6977,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bj1v6YKF8yHqA489VFfnQvOJpnc.jpg"
+        },
+        {
+          "title": "The Ice Harvest",
+          "year": 2005,
+          "slug": "Crime noir about a lawyer stealing money on Christmas Eve",
+          "poster": "https://image.tmdb.org/t/p/w500/8N2X2u6nPoPEwRLIZbKacJw1xrC.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 9005,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8N2X2u6nPoPEwRLIZbKacJw1xrC.jpg"
+        },
+        {
+          "title": "Transpecos",
+          "year": 2016,
+          "slug": "Border patrol agents face moral decisions after discovering corruption",
+          "poster": "https://image.tmdb.org/t/p/w500/3GglkPWXxHTqf7H2ptPLUb7p3Fb.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 381018,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3GglkPWXxHTqf7H2ptPLUb7p3Fb.jpg"
+        },
+        {
+          "title": "Wind River",
+          "year": 2017,
+          "slug": "An FBI agent and tracker investigate a murder on a Native American reservation",
+          "poster": "https://image.tmdb.org/t/p/w500/pySivdR845Hom4u4T2WNkJxe6Ad.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 395834,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pySivdR845Hom4u4T2WNkJxe6Ad.jpg"
+        },
+        {
+          "title": "Hell or High Water",
+          "year": 2016,
+          "slug": "Brothers rob banks to save their family ranch",
+          "poster": "https://image.tmdb.org/t/p/w500/ljRRxqy2aXIkIBXLmOVifcOR021.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 338766,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ljRRxqy2aXIkIBXLmOVifcOR021.jpg"
+        },
+        {
+          "title": "Killer Joe",
+          "year": 2011,
+          "slug": "Dark thriller about a family hiring a hitman to kill for insurance money",
+          "poster": "https://image.tmdb.org/t/p/w500/6Tt1TQeOI4TpXu1cBUgNGNGeznW.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 73567,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6Tt1TQeOI4TpXu1cBUgNGNGeznW.jpg"
+        },
+        {
+          "title": "Out of the Furnace",
+          "year": 2013,
+          "slug": "Brother seeks justice in rust belt America",
+          "poster": "https://image.tmdb.org/t/p/w500/cOuQQ4eRpSBxb0G9OXzWE1pHPeq.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 164457,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cOuQQ4eRpSBxb0G9OXzWE1pHPeq.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,187 @@
+{
+  "props": {
+    "title": "Red Dragon",
+    "year": 2002,
+    "initialSlug": "A killer's past haunts the future.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/S8ozwficrsdBF1V8glQyCMzGg5.jpg",
+    "initialStreaming": null,
+    "tmdbId": 9533,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Red Dragon** (2002) masterfully adapts Thomas Harris' novel as both prequel and spiritual successor to **The Silence of the Lambs** (1991). Edward Norton's Will Graham pioneered the tortured profiler archetype, hunting the \"Tooth Fairy\" killer while reluctantly consulting his nemesis Hannibal Lecter. Director Brett Ratner crafts a more classical thriller than Jonathan Demme's psychological horror, but maintains the franchise's sophisticated menace. Ralph Fiennes delivers a complex Francis Dolarhyde, while Anthony Hopkins returns with controlled menace as Lecter, though with noticeably less screen time than his Oscar-winning turn."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Manhunter",
+            "year": 1986,
+            "slug": "Michael Mann's stylish first adaptation of Red Dragon with Brian Cox as Lecter",
+            "poster": "https://image.tmdb.org/t/p/w500/6rb24x39vV8n5301IelC8rCPJTH.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 11454,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6rb24x39vV8n5301IelC8rCPJTH.jpg"
+          },
+          {
+            "title": "The Silence of the Lambs",
+            "year": 1991,
+            "slug": "The definitive Hannibal Lecter film that swept the major Oscar categories",
+            "poster": "https://image.tmdb.org/t/p/w500/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 274,
+            "poster_url": "https://image.tmdb.org/t/p/w500/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg"
+          },
+          {
+            "title": "Hannibal",
+            "year": 2001,
+            "slug": "Ridley Scott's operatic sequel following Clarice Starling's continued pursuit of Lecter",
+            "poster": "https://image.tmdb.org/t/p/w500/v5wAZwRqpGWmyAaaJ8BBHYuNXnj.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 9740,
+            "poster_url": "https://image.tmdb.org/t/p/w500/v5wAZwRqpGWmyAaaJ8BBHYuNXnj.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film sits within a rich tradition of FBI profiler thrillers that exploded post-Silence. **Seven** (1995) took the procedural elements to darker extremes, while **Copycat** (1995) and **Taking Lives** (2004) expanded the psychological cat-and-mouse dynamics. **Red Dragon** distinguishes itself through its exploration of family - both Dolarhyde's traumatic past and Graham's endangered present. The film's technical excellence, particularly Dante Spinotti's moody cinematography and Danny Elfman's score, creates a consistent atmosphere of dread."
+      },
+      {
+        "type": "text",
+        "content": "The Hannibal Lecter franchise represents a fascinating evolution in serial killer narratives. From **Manhunter** (1986) through **Hannibal Rising** (2007), the series shifted from procedural thriller to gothic horror to psychological drama. **Red Dragon** benefits from this heritage while maintaining its own identity, particularly in how it handles Dolarhyde's tragic romance with Reba McClane (Emily Watson) and Graham's psychological scars from his previous encounter with Lecter. SUBHEAD: The Evolution of Screen Psychopaths"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Mindhunter",
+            "year": 2017,
+            "slug": "David Fincher's series about the FBI's early behavioral science unit",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": null
+          },
+          {
+            "title": "Zodiac",
+            "year": 2007,
+            "slug": "Meticulous true-crime thriller about the hunt for the Zodiac Killer",
+            "poster": "https://image.tmdb.org/t/p/w500/6YmeO4pB7XTh8P8F960O1uA14JO.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 1949,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6YmeO4pB7XTh8P8F960O1uA14JO.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Red Dragon** marked a turning point in how cinema portrays its monsters. While **Psycho** (1960) and **The Texas Chain Saw Massacre** (1974) presented killers as otherworldly threats, the Lecter series - particularly through Dolarhyde - explored their humanity without excusing their actions. This influenced later works like **Dexter** (2006-2013) and **Bates Motel** (2013-2017), which further complicated audience sympathies."
+      }
+    ],
+    "exploreFurther": [
+      "The FBI's Behavioral Science Unit and its influence on crime fiction",
+      "Thomas Harris' literary techniques in adapting his own work",
+      "The evolution of Anthony Hopkins' Hannibal Lecter across multiple films",
+      "Visual symbolism of William Blake's \"Red Dragon\" painting in the film",
+      "Comparative analysis of Manhunter (1986) and Red Dragon (2002)"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Bone Collector",
+          "year": 1999,
+          "slug": "Paralyzed detective guides rookie cop in serial killer hunt",
+          "poster": "https://image.tmdb.org/t/p/w500/7atMCqRaDpAOnGsteTRm17zmvN3.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9481,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7atMCqRaDpAOnGsteTRm17zmvN3.jpg"
+        },
+        {
+          "title": "Kiss the Girls",
+          "year": 1997,
+          "slug": "Detective tracks pattern killer targeting strong women",
+          "poster": "https://image.tmdb.org/t/p/w500/25h5I3E3ydhazsPDnscWHivq5pn.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 9437,
+          "poster_url": "https://image.tmdb.org/t/p/w500/25h5I3E3ydhazsPDnscWHivq5pn.jpg"
+        },
+        {
+          "title": "Fallen",
+          "year": 1998,
+          "slug": "Detective pursues supernatural entity possessing multiple hosts",
+          "poster": "https://image.tmdb.org/t/p/w500/nEDvTB9cP2oIKY0M1ZdDvuUEJ8d.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 9411,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nEDvTB9cP2oIKY0M1ZdDvuUEJ8d.jpg"
+        },
+        {
+          "title": "Frequency",
+          "year": 2000,
+          "slug": "Detective communicates across time to solve serial murders",
+          "poster": "https://image.tmdb.org/t/p/w500/eu3Hrjj271dnBdNAF0HqfmwWASt.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 10559,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eu3Hrjj271dnBdNAF0HqfmwWASt.jpg"
+        },
+        {
+          "title": "The Cell",
+          "year": 2000,
+          "slug": "Psychologist enters killer's mind through experimental technology",
+          "poster": "https://image.tmdb.org/t/p/w500/kfYVxvDDAJoFq2knHUzAZP09pAc.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 8843,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kfYVxvDDAJoFq2knHUzAZP09pAc.jpg"
+        },
+        {
+          "title": "Insomnia",
+          "year": 2002,
+          "slug": "Detective hunts killer while battling sleep deprivation",
+          "poster": "https://image.tmdb.org/t/p/w500/bMq1l0RUf7xr45yMRUKzkU5cDOQ.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 26610,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bMq1l0RUf7xr45yMRUKzkU5cDOQ.jpg"
+        },
+        {
+          "title": "Identity",
+          "year": 2003,
+          "slug": "Multiple personalities factor into isolated motel murders",
+          "poster": "https://image.tmdb.org/t/p/w500/bnidwEvWNAVJ3Uco9wWtuzWAfrx.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 2832,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bnidwEvWNAVJ3Uco9wWtuzWAfrx.jpg"
+        },
+        {
+          "title": "Twisted",
+          "year": 2004,
+          "slug": "Detective investigates murders linked to her past",
+          "poster": "https://image.tmdb.org/t/p/w500/nfdfU9tYsEnjlFGoY2HabFMdHLi.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 13572,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nfdfU9tYsEnjlFGoY2HabFMdHLi.jpg"
+        },
+        {
+          "title": "The Lovely Bones",
+          "year": 2009,
+          "slug": "Murdered girl watches her family and killer from afterlife",
+          "poster": "https://image.tmdb.org/t/p/w500/sn0iDphRxQ7I6aLd9igIgACITak.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 7980,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sn0iDphRxQ7I6aLd9igIgACITak.jpg"
+        },
+        {
+          "title": "Prisoners",
+          "year": 2013,
+          "slug": "Detective searches for missing children in moral gray areas",
+          "poster": "https://image.tmdb.org/t/p/w500/uhviyknTT5cEQXbn6vWIqfM4vGm.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 146233,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uhviyknTT5cEQXbn6vWIqfM4vGm.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

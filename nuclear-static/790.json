@@ -1,0 +1,188 @@
+{
+  "props": {
+    "title": "The Fog",
+    "year": 1980,
+    "initialSlug": "A deadly mist hides the past.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/12EeSboRofP3CI4SPmMFNNXCbtY.jpg",
+    "initialStreaming": null,
+    "tmdbId": 790,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "John Carpenter's **The Fog** (1980) masterfully blends maritime ghost story with small-town horror. Following his breakthrough with **Halloween** (1978), Carpenter crafted this atmospheric tale of vengeful spirits emerging from a supernatural fog to terrorize a California coastal town. The film established several techniques that would become Carpenter trademarks - wide Panavision shots creating isolation, synthesizer scores building dread, and ensemble casts facing supernatural threats. It shares DNA with other early 80s coastal horror like **Dead & Buried** (1981) and **The Beast Within** (1982), but The Fog's ghostly mariners remain uniquely haunting."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Halloween",
+            "year": 1978,
+            "slug": "Carpenter's iconic slasher about Michael Myers stalking babysitters on Halloween night",
+            "poster": "https://image.tmdb.org/t/p/w500/wijlZ3HaYMvlDTPqJoTCWKFkCPU.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 948,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wijlZ3HaYMvlDTPqJoTCWKFkCPU.jpg"
+          },
+          {
+            "title": "The Thing",
+            "year": 1982,
+            "slug": "Carpenter's masterpiece of paranoid isolation and practical effects horror at an Antarctic research station",
+            "poster": "https://image.tmdb.org/t/p/w500/a9RjXOIIB56k2rGoL3Fk3nRHHHQ.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 1091,
+            "poster_url": "https://image.tmdb.org/t/p/w500/a9RjXOIIB56k2rGoL3Fk3nRHHHQ.jpg"
+          },
+          {
+            "title": "Prince of Darkness",
+            "year": 1987,
+            "slug": "Carpenter tackles metaphysical horror with a story of physics students investigating an ancient evil in a church",
+            "poster": "https://image.tmdb.org/t/p/w500/jjcAOhtGuX4p8XvlVn1WXUT1jWi.jpg",
+            "initialStreaming": "AMC+",
+            "tmdb_id": 8852,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jjcAOhtGuX4p8XvlVn1WXUT1jWi.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's practical effects and atmospheric cinematography by Dean Cundey create a tangible sense of supernatural menace without relying on gore. The glowing fog itself becomes a character, rolling in with malevolent purpose while concealing its vengeful inhabitants. This approach influenced later atmospheric horror like **In the Mouth of Madness** (1994) and **The Mist** (2007). Carpenter regular Adrienne Barbeau leads a strong cast including Jamie Lee Curtis and her mother Janet Leigh, marking their only on-screen collaboration."
+      },
+      {
+        "type": "text",
+        "content": "**The Fog** demonstrates Carpenter's mastery of building tension through suggestion rather than explicit violence. The opening campfire story sets up the historical curse while the gradual reveal of the ghostly Blake and his crew maintains mystery. This restraint influenced films like **Session 9** (2001) and **The Others** (2001) which similarly rely on atmosphere over shock value. The film's themes of historical sins returning to haunt the present resonate through later coastal horror like **Dead Calm** (1989) and **Below** (2002). SUBHEAD: Maritime Horror Legacy"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Dead & Buried",
+            "year": 1981,
+            "slug": "A sheriff investigates mysterious deaths in a coastal town where the dead return to life",
+            "poster": "https://image.tmdb.org/t/p/w500/aMZD57u1M9TQAKf12OYUUcv9hjn.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 24274,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aMZD57u1M9TQAKf12OYUUcv9hjn.jpg"
+          },
+          {
+            "title": "Ghost Ship",
+            "year": 2002,
+            "slug": "Salvage crew discovers a haunted ocean liner with a dark past",
+            "poster": "https://image.tmdb.org/t/p/w500/kIlzZJqV4SCGHrrjoGLBhmsO7z2.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 9645,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kIlzZJqV4SCGHrrjoGLBhmsO7z2.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**The Fog** helped establish maritime horror as a distinct subgenre, influencing films like **Deep Rising** (1998) and **Triangle** (2009). The film's blend of historical revenge with supernatural horror created a template followed by **Mary** (2019) and **Haunted Ship** (2016). Its emphasis on practical effects over CGI maintains its effectiveness, unlike the effects-heavy 2005 remake which failed to capture the original's atmospheric dread."
+      }
+    ],
+    "exploreFurther": [
+      "John Carpenter's Evolution of Horror Techniques",
+      "Maritime Ghost Stories in Cinema",
+      "Practical Effects in 1980s Horror",
+      "Mother-Daughter Acting Duos in Horror",
+      "Coastal Town Horror Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Ward",
+          "year": 2010,
+          "slug": "Carpenter's last feature film about a haunted mental institution",
+          "poster": "https://image.tmdb.org/t/p/w500/x2dqoY5cYop46SKebNXRNL5EXEM.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 45657,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x2dqoY5cYop46SKebNXRNL5EXEM.jpg"
+        },
+        {
+          "title": "Village of the Damned",
+          "year": 1995,
+          "slug": "Carpenter's remake about mysterious children in a small town",
+          "poster": "https://image.tmdb.org/t/p/w500/vnK68SPMQTvLWVYaNMINJOismEr.jpg",
+          "initialStreaming": "Peacock",
+          "tmdb_id": 12122,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vnK68SPMQTvLWVYaNMINJOismEr.jpg"
+        },
+        {
+          "title": "They Live",
+          "year": 1988,
+          "slug": "Carpenter's sci-fi horror about aliens controlling society through media",
+          "poster": "https://image.tmdb.org/t/p/w500/eIEmSJRKe8Vn9iWcFypvbeyQaZZ.jpg",
+          "initialStreaming": "Starz",
+          "tmdb_id": 8337,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eIEmSJRKe8Vn9iWcFypvbeyQaZZ.jpg"
+        },
+        {
+          "title": "Escape from New York",
+          "year": 1981,
+          "slug": "Carpenter's dystopian action film with Kurt Russell",
+          "poster": "https://image.tmdb.org/t/p/w500/vH9llaphjAssRGi0k7e75tD40Ce.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 1103,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vH9llaphjAssRGi0k7e75tD40Ce.jpg"
+        },
+        {
+          "title": "Christine",
+          "year": 1983,
+          "slug": "Carpenter adapts Stephen King's story of a possessed car",
+          "poster": "https://image.tmdb.org/t/p/w500/mMtUJke2TtIoT6JB9hkvERmsSu8.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 8769,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mMtUJke2TtIoT6JB9hkvERmsSu8.jpg"
+        },
+        {
+          "title": "The Lighthouse",
+          "year": 2019,
+          "slug": "Psychological maritime horror with Willem Dafoe",
+          "poster": "https://image.tmdb.org/t/p/w500/f1tIYarTbkBdIT1aW0gzelDwknv.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 503919,
+          "poster_url": "https://image.tmdb.org/t/p/w500/f1tIYarTbkBdIT1aW0gzelDwknv.jpg"
+        },
+        {
+          "title": "Below",
+          "year": 2002,
+          "slug": "Supernatural horror aboard a WWII submarine",
+          "poster": "https://image.tmdb.org/t/p/w500/hpEqhozk3PAExlQrQliX4GC15XS.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 12590,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hpEqhozk3PAExlQrQliX4GC15XS.jpg"
+        },
+        {
+          "title": "Dark Water",
+          "year": 2002,
+          "slug": "Japanese ghost story set in a flooding apartment building",
+          "poster": "https://image.tmdb.org/t/p/w500/u7FIePdOTjboDAjcaA9MabbzAuf.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 12205,
+          "poster_url": "https://image.tmdb.org/t/p/w500/u7FIePdOTjboDAjcaA9MabbzAuf.jpg"
+        },
+        {
+          "title": "In the Mouth of Madness",
+          "year": 1994,
+          "slug": "Carpenter's Lovecraftian horror about reality-bending books",
+          "poster": "https://image.tmdb.org/t/p/w500/msh4tEUzbnEqlHcFOUH4O0Zti8r.jpg",
+          "initialStreaming": "AMC+",
+          "tmdb_id": 2654,
+          "poster_url": "https://image.tmdb.org/t/p/w500/msh4tEUzbnEqlHcFOUH4O0Zti8r.jpg"
+        },
+        {
+          "title": "Dead Calm",
+          "year": 1989,
+          "slug": "Thriller about a couple terrorized at sea",
+          "poster": "https://image.tmdb.org/t/p/w500/hXpav86ZX5N1YIfVfVtzuZLNrjW.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10493,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hXpav86ZX5N1YIfVfVtzuZLNrjW.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

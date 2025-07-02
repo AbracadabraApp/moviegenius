@@ -1,0 +1,155 @@
+{
+  "props": {
+    "title": "Enter the Ninja",
+    "year": 1981,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/2zYvNCPRX4W0s2gNxWqpsdk2OCT.jpg",
+    "initialStreaming": null,
+    "tmdbId": 17205,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Enter the Ninja** (1981) kicked off Cannon Films' ninja craze, flooding 1980s cinema with black-clad martial artists. Director Menahem Golan's exploitation classic stars Franco Nero (bizarrely dubbed despite speaking English) as Cole, a white ninja fighting corporate thugs in the Philippines. The film established key ninja movie tropes: smoke bombs, throwing stars, and elaborate training sequences. It launched Sho Kosugi's career as cinema's definitive ninja actor, though here he plays the villain Hasegawa. The film's success triggered an avalanche of ninja films including **Revenge of the Ninja** (1983) and **American Ninja** (1985)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Ninja III: The Domination",
+            "year": 1984,
+            "slug": "A telephone linewoman becomes possessed by an evil ninja's spirit in this bizarre supernatural martial arts hybrid",
+            "poster": "https://image.tmdb.org/t/p/w500/3zMY3oGopsx0o2HfSR4AZoShAhU.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 28148,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3zMY3oGopsx0o2HfSR4AZoShAhU.jpg"
+          },
+          {
+            "title": "American Ninja",
+            "year": 1985,
+            "slug": "Michael Dudikoff stars as an amnesiac Army private who discovers his ninja training while fighting corrupt arms dealers",
+            "poster": "https://image.tmdb.org/t/p/w500/5fPN6EZHEeJtl1Nh9ZsyG4CSf8V.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 12500,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5fPN6EZHEeJtl1Nh9ZsyG4CSf8V.jpg"
+          },
+          {
+            "title": "Revenge of the Ninja",
+            "year": 1983,
+            "slug": "Sho Kosugi leads this superior sequel as a ninja trying to leave his violent past behind in America",
+            "poster": "https://image.tmdb.org/t/p/w500/qEZ0Av3VvJvIs0zeqntNVUY9n48.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 17386,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qEZ0Av3VvJvIs0zeqntNVUY9n48.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The ninja boom wasn't limited to Cannon Films. Hollywood jumped on the trend with bigger budget productions like **The Octagon** (1980) starring Chuck Norris and **Ninja Assassin** (2009) produced by the Wachowskis. Japanese cinema responded with more serious takes on ninja mythology in films like **Shinobi: Heart Under Blade** (2005). The 80s ninja explosion also influenced kids' entertainment, from **Teenage Mutant Ninja Turtles** (1990) to numerous martial arts video games. SUBHEAD: The Sho Kosugi Era"
+      },
+      {
+        "type": "text",
+        "content": "Sho Kosugi became the face of 80s ninja cinema after **Enter the Ninja**. His authentic martial arts background lent credibility to films like **Pray for Death** (1985) and **Nine Deaths of the Ninja** (1985). Kosugi's intense screen presence and real martial arts skills set him apart from western actors in ninja roles. His influence extends to modern ninja films like **Ninja Assassin** (2009), where he played the villainous clan leader."
+      }
+    ],
+    "exploreFurther": [
+      "The Rise and Fall of Cannon Films' Ninja Empire",
+      "Sho Kosugi's Impact on Martial Arts Cinema",
+      "Historical Accuracy vs. Hollywood Ninja Myths",
+      "The Evolution of Ninja Characters in Western Cinema",
+      "How Enter the Ninja Influenced 80s Action Movies"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "American Ninja 2: The Confrontation",
+          "year": 1987,
+          "slug": "Dudikoff returns to battle super-soldiers on a Caribbean island",
+          "poster": "https://image.tmdb.org/t/p/w500/4a4pASHNv68ZhfKJESekI2b6Dse.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 25678,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4a4pASHNv68ZhfKJESekI2b6Dse.jpg"
+        },
+        {
+          "title": "Ninja Warriors",
+          "year": 1985,
+          "slug": "Japanese ninjas battle in the modern day",
+          "poster": "https://image.tmdb.org/t/p/w500/ddNOt9GA87HK7YltiYwITIsyLmJ.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 81041,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ddNOt9GA87HK7YltiYwITIsyLmJ.jpg"
+        },
+        {
+          "title": "The Master",
+          "year": 1984,
+          "slug": "Lee Van Cleef stars as an aging ninja mentor",
+          "poster": "https://image.tmdb.org/t/p/w500/ykvO8i2qE98lsWXkOlIZnrEufJt.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 25661,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ykvO8i2qE98lsWXkOlIZnrEufJt.jpg"
+        },
+        {
+          "title": "Pray for Death",
+          "year": 1985,
+          "slug": "Sho Kosugi protects his family from criminals",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Nine Deaths of the Ninja",
+          "year": 1985,
+          "slug": "Kosugi leads a special forces team against terrorists",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Octagon",
+          "year": 1980,
+          "slug": "Chuck Norris battles a ninja terror network",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Ninja III: The Domination",
+          "year": 1984,
+          "slug": "Aerobics instructor possessed by ninja spirit",
+          "poster": "https://image.tmdb.org/t/p/w500/3zMY3oGopsx0o2HfSR4AZoShAhU.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 28148,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3zMY3oGopsx0o2HfSR4AZoShAhU.jpg"
+        },
+        {
+          "title": "Rage of Honor",
+          "year": 1987,
+          "slug": "Kosugi as a narcotics agent seeking revenge",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Black Eagle",
+          "year": 1988,
+          "slug": "Sho Kosugi and Jean-Claude Van Damme face off",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Pluto",
+          "tmdb_id": null
+        },
+        {
+          "title": "American Ninja 3: Blood Hunt",
+          "year": 1989,
+          "slug": "New lead Steve James fights ninja bioweapons",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,211 @@
+{
+  "props": {
+    "title": "El Topo",
+    "year": 1970,
+    "initialSlug": "A gunslinger's surreal quest for enlightenment",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/hZuR5zwRQI54hOwoXKIlZbQ4mb7.jpg",
+    "initialStreaming": null,
+    "tmdbId": 13041,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**El Topo** (1970) revolutionized midnight cinema and established Alejandro Jodorowsky as surrealism's wild prophet. This acid western follows a black-clad gunslinger through a hallucinatory desert quest, mixing Buddhist philosophy with Christian symbolism and shocking violence. Its success at New York's Elgin Theater created the midnight movie phenomenon, paving the way for cult classics like **Eraserhead** (1977) and **The Rocky Horror Picture Show** (1975). John Lennon was so impressed he convinced Beatles manager Allen Klein to distribute it, leading to wider recognition of avant-garde cinema."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Holy Mountain",
+            "year": 1973,
+            "slug": "Jodorowsky's follow-up masterpiece about an alchemist's cosmic journey, featuring even more surreal imagery and esoteric symbolism",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": null
+          },
+          {
+            "title": "Santa Sangre",
+            "year": 1989,
+            "slug": "Jodorowsky's psychological horror about a circus performer and his armless mother, blending surrealism with giallo-style violence",
+            "poster": "https://image.tmdb.org/t/p/w500/6VTra0NR4ygRnq3bD922I4rU0Mq.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 19236,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6VTra0NR4ygRnq3bD922I4rU0Mq.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends deep into modern cinema's experimental edges. **Beyond the Black Rainbow** (2010) and **Mandy** (2018) echo its psychedelic violence and mystical themes. Directors like Guillermo del Toro and Nicolas Winding Refn cite El Topo as a major influence, with its fearless mixing of genres and unflinching artistic vision. Even mainstream films like **Django Unchained** (2012) draw from its revisionist western imagery."
+      },
+      {
+        "type": "text",
+        "content": "El Topo's production was as legendary as the film itself. Jodorowsky used real rabbits for death scenes, made actors stay in character for days, and allegedly didn't fake any of the film's violence. This commitment to authenticity influenced later maverick filmmakers like Werner Herzog, whose **Fitzcarraldo** (1982) and **Aguirre, the Wrath of God** (1972) similarly pushed boundaries between filmmaking and reality. SUBHEAD: Legacy and Impact on Modern Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Fando y Lis",
+            "year": 1968,
+            "slug": "Jodorowsky's controversial debut feature about a couple's surreal journey to a mythical city",
+            "poster": "https://image.tmdb.org/t/p/w500/iMN4CydHfJ6h9os7gALUomRrdZV.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 33257,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iMN4CydHfJ6h9os7gALUomRrdZV.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's DNA can be found in everything from **Pan's Labyrinth** (2006) to **A Field in England** (2013). Its blend of western tropes with spiritual questioning influenced **Dead Man** (1995) and **The Good, the Bad, the Weird** (2008). Modern filmmakers like Panos Cosmatos and Ben Wheatley continue mining El Topo's psychedelic territory, proving its lasting impact on boundary-pushing cinema."
+      }
+    ],
+    "exploreFurther": [
+      "The History of Midnight Movies and Counterculture Cinema",
+      "Alejandro Jodorowsky's Unmade Dune Adaptation",
+      "Surrealism in Western Cinema",
+      "Mexican Experimental Film Movement",
+      "Religious Symbolism in Avant-Garde Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Sante Sangre",
+          "year": 1989,
+          "slug": "Jodorowsky's horror masterpiece",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Holy Mountain",
+          "year": 1973,
+          "slug": "Psychedelic spiritual journey",
+          "poster": "https://image.tmdb.org/t/p/w500/nvwbOcV3jJExT090Bb2m7fNjzTN.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 8327,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nvwbOcV3jJExT090Bb2m7fNjzTN.jpg"
+        },
+        {
+          "title": "Fando y Lis",
+          "year": 1968,
+          "slug": "Surreal romance",
+          "poster": "https://image.tmdb.org/t/p/w500/iMN4CydHfJ6h9os7gALUomRrdZV.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 33257,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iMN4CydHfJ6h9os7gALUomRrdZV.jpg"
+        },
+        {
+          "title": "Beyond the Black Rainbow",
+          "year": 2010,
+          "slug": "Psychedelic sci-fi horror",
+          "poster": "https://image.tmdb.org/t/p/w500/uhomcCTQ3lO8L6mLhkCMypsnroO.jpg",
+          "initialStreaming": "AMC+",
+          "tmdb_id": 50037,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uhomcCTQ3lO8L6mLhkCMypsnroO.jpg"
+        },
+        {
+          "title": "Mandy",
+          "year": 2018,
+          "slug": "Psychedelic revenge thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/m0yf7J7HsKeK6E81SMRcX8vx6mH.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 460885,
+          "poster_url": "https://image.tmdb.org/t/p/w500/m0yf7J7HsKeK6E81SMRcX8vx6mH.jpg"
+        },
+        {
+          "title": "Dead Man",
+          "year": 1995,
+          "slug": "Surreal western with Johnny Depp",
+          "poster": "https://image.tmdb.org/t/p/w500/jX3wGBVoYoAY3IixBpwYk1fjT4z.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 922,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jX3wGBVoYoAY3IixBpwYk1fjT4z.jpg"
+        },
+        {
+          "title": "A Field in England",
+          "year": 2013,
+          "slug": "Psychedelic historical horror",
+          "poster": "https://image.tmdb.org/t/p/w500/dKhMJr8yoHVyvxyUiAeIn2hKVdL.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 179111,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dKhMJr8yoHVyvxyUiAeIn2hKVdL.jpg"
+        },
+        {
+          "title": "Enter the Void",
+          "year": 2009,
+          "slug": "Psychedelic death journey",
+          "poster": "https://image.tmdb.org/t/p/w500/li3Jrxo6s1gXX0zRhvgtbLfAwIl.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 34647,
+          "poster_url": "https://image.tmdb.org/t/p/w500/li3Jrxo6s1gXX0zRhvgtbLfAwIl.jpg"
+        },
+        {
+          "title": "Holy Motors",
+          "year": 2012,
+          "slug": "Surreal French odyssey",
+          "poster": "https://image.tmdb.org/t/p/w500/4ZuTrrDQhCS9f6KzIX6HfsjjyMd.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 103328,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4ZuTrrDQhCS9f6KzIX6HfsjjyMd.jpg"
+        },
+        {
+          "title": "The Dance of Reality",
+          "year": 2013,
+          "slug": "Jodorowsky's autobiographical surrealism",
+          "poster": "https://image.tmdb.org/t/p/w500/2qbsG9t943DciYTHITISzXQltqt.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 137698,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2qbsG9t943DciYTHITISzXQltqt.jpg"
+        },
+        {
+          "title": "Endless Poetry",
+          "year": 2016,
+          "slug": "Continuation of Jodorowsky's life story",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Valhalla Rising",
+          "year": 2009,
+          "slug": "Mystical Viking journey",
+          "poster": "https://image.tmdb.org/t/p/w500/7LBMcAx6XHwEduIsBYipvUke9n.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 37861,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7LBMcAx6XHwEduIsBYipvUke9n.jpg"
+        },
+        {
+          "title": "Only God Forgives",
+          "year": 2013,
+          "slug": "Surreal crime thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/84HR8v3vtz91vTouBX3H5eEWJvP.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 77987,
+          "poster_url": "https://image.tmdb.org/t/p/w500/84HR8v3vtz91vTouBX3H5eEWJvP.jpg"
+        },
+        {
+          "title": "The Color Out of Space",
+          "year": 2019,
+          "slug": "Cosmic horror with Nicolas Cage",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": null
+        },
+        {
+          "title": "Zardoz",
+          "year": 1974,
+          "slug": "Post-apocalyptic surreal sci-fi",
+          "poster": "https://image.tmdb.org/t/p/w500/6qvQhJhvM7wWPB2LjVpivSNraIv.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 4923,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6qvQhJhvM7wWPB2LjVpivSNraIv.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

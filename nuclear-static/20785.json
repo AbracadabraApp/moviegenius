@@ -1,0 +1,158 @@
+{
+  "props": {
+    "title": "Emmet Otter's Jug-Band Christmas",
+    "year": 1977,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/jng1wnVzIBdtllpUWQdzkODIB4Z.jpg",
+    "initialStreaming": null,
+    "tmdbId": 20785,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Jim Henson's **Emmet Otter's Jug-Band Christmas** (1977) revolutionized puppet filmmaking with groundbreaking techniques that laid the foundation for **The Dark Crystal** (1982) and **Labyrinth** (1986). The production pioneered radio-controlled mechanisms and featured the first use of a full-length \"double-sided\" set, allowing puppets to be performed from both above and below. This 48-minute special adapts Russell Hoban's children's book into a Depression-era tale that channels **O. Henry's Gift of the Magi** through Henson's signature warmth and musical whimsy."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Muppet Christmas Carol",
+            "year": 1992,
+            "slug": "The gold standard of Muppet literary adaptations, featuring Michael Caine as Scrooge alongside Kermit and company",
+            "poster": "https://image.tmdb.org/t/p/w500/ssrV29QSVVJuemBHho0Qx7pFYak.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 10437,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ssrV29QSVVJuemBHho0Qx7pFYak.jpg"
+          },
+          {
+            "title": "The Christmas Toy",
+            "year": 1986,
+            "slug": "Another Jim Henson holiday special about toys coming to life, predating Toy Story's similar premise",
+            "poster": "https://image.tmdb.org/t/p/w500/jVgC8FJoJ3xDM4GeqLkevjp8Ush.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 47670,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jVgC8FJoJ3xDM4GeqLkevjp8Ush.jpg"
+          },
+          {
+            "title": "A Muppet Family Christmas",
+            "year": 1987,
+            "slug": "Rare special bringing together The Muppets, Sesame Street, and Fraggle Rock characters",
+            "poster": "https://image.tmdb.org/t/p/w500/f31HlNI9e2y9tSvUPcvXZLptr1l.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 13247,
+            "poster_url": "https://image.tmdb.org/t/p/w500/f31HlNI9e2y9tSvUPcvXZLptr1l.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's folk music soundtrack by Paul Williams (who later composed **The Muppet Movie** (1979)) captures the Appalachian setting with authentic instruments like washtub bass and kazoo. Williams' \"When the River Meets the Sea\" became a modern Christmas standard, later covered in **John Denver and the Muppets: A Christmas Together** (1979). The special's handcrafted aesthetic influenced later stop-motion holiday films like **The Nightmare Before Christmas** (1993) and **Coraline** (2009). SUBHEAD: The Jim Henson Holiday Legacy"
+      },
+      {
+        "type": "text",
+        "content": "**Emmet Otter** established Henson's approach to holiday storytelling: emotional depth, musical numbers, and gentle humor that respects young audiences. This template influenced later works like **The Muppet Christmas Carol** (1992) and **Elf** (2003), which similarly balance whimsy with genuine heart. The special's environmental messages and celebration of found family became hallmarks of Henson productions, seen later in **Fraggle Rock** (1983-1987) and **The Dark Crystal: Age of Resistance** (2019)."
+      }
+    ],
+    "exploreFurther": [
+      "Jim Henson's Puppet Building Innovations",
+      "Paul Williams' Musical Impact on Family Entertainment",
+      "Evolution of Holiday Television Specials",
+      "Practical Effects vs CGI in Family Films",
+      "Adaptation Techniques from Children's Literature to Screen"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Dark Crystal",
+          "year": 1982,
+          "slug": "Henson's groundbreaking fantasy epic using only puppets",
+          "poster": "https://image.tmdb.org/t/p/w500/6g1Kh73qQRosyhRJpL3euQpMxOE.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 11639,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6g1Kh73qQRosyhRJpL3euQpMxOE.jpg"
+        },
+        {
+          "title": "The Muppet Movie",
+          "year": 1979,
+          "slug": "The first theatrical Muppet film featuring Paul Williams' songs",
+          "poster": "https://image.tmdb.org/t/p/w500/8LUjnIW5ph6pHoXDE3Zg4iVi6BV.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 11176,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8LUjnIW5ph6pHoXDE3Zg4iVi6BV.jpg"
+        },
+        {
+          "title": "Labyrinth",
+          "year": 1986,
+          "slug": "Henson's puppet masterpiece starring David Bowie",
+          "poster": "https://image.tmdb.org/t/p/w500/hbSdA1DmNA9IlfVoqJkIWYF2oYm.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 13597,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hbSdA1DmNA9IlfVoqJkIWYF2oYm.jpg"
+        },
+        {
+          "title": "The Christmas Toy",
+          "year": 1986,
+          "slug": "Holiday special about toy shop magic",
+          "poster": "https://image.tmdb.org/t/p/w500/jVgC8FJoJ3xDM4GeqLkevjp8Ush.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 47670,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jVgC8FJoJ3xDM4GeqLkevjp8Ush.jpg"
+        },
+        {
+          "title": "The Storyteller",
+          "year": 1987,
+          "slug": "Henson's series combining puppetry with live action",
+          "poster": "https://image.tmdb.org/t/p/w500/Ar83GHoKZQxHKItLNnWSkNYulG0.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 1249975,
+          "poster_url": "https://image.tmdb.org/t/p/w500/Ar83GHoKZQxHKItLNnWSkNYulG0.jpg"
+        },
+        {
+          "title": "The Witches",
+          "year": 1990,
+          "slug": "Henson's final film as director, featuring practical effects",
+          "poster": "https://image.tmdb.org/t/p/w500/mPYBjVkeHakkPGY7WaKyyNU4RWm.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10166,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mPYBjVkeHakkPGY7WaKyyNU4RWm.jpg"
+        },
+        {
+          "title": "Mirror Mask",
+          "year": 2005,
+          "slug": "Jim Henson Company's modern fantasy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Fraggle Rock",
+          "year": 1983,
+          "slug": "Henson's ecological puppet series",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Apple TV+",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Tale of the Bunny Picnic",
+          "year": 1986,
+          "slug": "Lesser-known Henson special about community",
+          "poster": "https://image.tmdb.org/t/p/w500/dZP2d1R9xCPaFMARWBhvDnmkava.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 31615,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dZP2d1R9xCPaFMARWBhvDnmkava.jpg"
+        },
+        {
+          "title": "The Animal Show",
+          "year": 1994,
+          "slug": "Educational Henson series with puppet animals",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

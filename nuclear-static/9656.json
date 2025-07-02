@@ -1,0 +1,159 @@
+{
+  "props": {
+    "title": "Black Christmas",
+    "year": 2006,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/ggxi18MGqi0lucWvfsdYkzSdGUJ.jpg",
+    "initialStreaming": null,
+    "tmdbId": 9656,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The 2006 remake of **Black Christmas** (1974) represents a stark departure from Bob Clark's influential proto-slasher. While the original helped establish slasher conventions with its \"calls are coming from inside the house\" premise, the 2006 version directed by Glen Morgan opts for an excessive backstory involving Billy's yellow skin condition, cannibalistic tendencies, and family trauma. This shift exemplifies mid-2000s horror's obsession with explaining villain origins, similar to Rob Zombie's **Halloween** (2007) and **The Texas Chainsaw Massacre: The Beginning** (2006)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Black Christmas",
+            "year": 1974,
+            "slug": "The original slasher about sorority sisters terrorized by mysterious phone calls during Christmas break. Pioneered many genre tropes.",
+            "poster": "https://image.tmdb.org/t/p/w500/qqO98sdPgptFgCua3Z4uZDuPcmP.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 16938,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qqO98sdPgptFgCua3Z4uZDuPcmP.jpg"
+          },
+          {
+            "title": "Silent Night, Deadly Night",
+            "year": 1984,
+            "slug": "Controversial slasher featuring a killer Santa Claus, banned in multiple countries upon release.",
+            "poster": "https://image.tmdb.org/t/p/w500/ypj2JwAN4vWcc4zSqFCTgUwMbJV.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 27414,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ypj2JwAN4vWcc4zSqFCTgUwMbJV.jpg"
+          },
+          {
+            "title": "P2",
+            "year": 2007,
+            "slug": "Christmas Eve thriller about a woman trapped in a parking garage with an obsessed security guard.",
+            "poster": "https://image.tmdb.org/t/p/w500/3mTtQSKoFNyvhbcqBUJl8tPRqMz.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 13474,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3mTtQSKoFNyvhbcqBUJl8tPRqMz.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The 2006 remake's excessive gore and elaborate death scenes reflect the torture porn era dominated by **Saw** (2004) and **Hostel** (2005). The film's attempts to modernize the material with more graphic violence and dark humor fall flat compared to other successful horror remakes of the period like **The Hills Have Eyes** (2006) and **Dawn of the Dead** (2004). The decision to expand Billy's backstory with incest and murder dilutes the original's effective minimalism. SUBHEAD: Holiday Horror Evolution"
+      },
+      {
+        "type": "text",
+        "content": "**Black Christmas** (2006) sits within a broader trend of holiday-themed horror films that peaked in the mid-2000s. While earlier entries like **Gremlins** (1984) and **Christmas Evil** (1980) balanced horror with dark comedy, the 2006 remake embraces pure shock value. This approach contrasts sharply with later Christmas horror films like **Krampus** (2015) and **Better Watch Out** (2016) that returned to a more balanced mix of scares and seasonal atmosphere."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Slasher Remakes in the 2000s",
+      "The Impact of Torture Porn on Horror Remakes",
+      "Holiday Horror: From Silent Night, Deadly Night to Krampus",
+      "Bob Clark's Original Black Christmas and Its Influence",
+      "The Trend of Villain Origin Stories in Horror Remakes"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Halloween",
+          "year": 2007,
+          "slug": "Rob Zombie's reimagining of the classic slasher with expanded Michael Myers backstory",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": null
+        },
+        {
+          "title": "A Christmas Horror Story",
+          "year": 2015,
+          "slug": "Anthology film featuring multiple Christmas horror tales including Krampus",
+          "poster": "https://image.tmdb.org/t/p/w500/v7GkDorZgmD090U4Uhf0g6gng05.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 311539,
+          "poster_url": "https://image.tmdb.org/t/p/w500/v7GkDorZgmD090U4Uhf0g6gng05.jpg"
+        },
+        {
+          "title": "Sint",
+          "year": 2010,
+          "slug": "Dutch horror film about a murderous Saint Nicholas",
+          "poster": "https://image.tmdb.org/t/p/w500/pEPd4mgMwvz6aRhuWkmPUv98P1O.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 45756,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pEPd4mgMwvz6aRhuWkmPUv98P1O.jpg"
+        },
+        {
+          "title": "Jack Frost",
+          "year": 1997,
+          "slug": "Campy horror about a murderous snowman",
+          "poster": "https://image.tmdb.org/t/p/w500/sXOATwGluNbb9ezfG6DvXCiXvJp.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 27318,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sXOATwGluNbb9ezfG6DvXCiXvJp.jpg"
+        },
+        {
+          "title": "Rare Exports",
+          "year": 2010,
+          "slug": "Finnish horror film about an evil Santa Claus",
+          "poster": "https://image.tmdb.org/t/p/w500/jzaweEESl54ejxo3EE5uNL8lgTn.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 48395,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jzaweEESl54ejxo3EE5uNL8lgTn.jpg"
+        },
+        {
+          "title": "All Through the House",
+          "year": 2015,
+          "slug": "Christmas slasher about a killer in a Santa suit",
+          "poster": "https://image.tmdb.org/t/p/w500/f6SDQW6fH5jojqXkN3fQwPgUWNJ.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 373048,
+          "poster_url": "https://image.tmdb.org/t/p/w500/f6SDQW6fH5jojqXkN3fQwPgUWNJ.jpg"
+        },
+        {
+          "title": "The Children",
+          "year": 2008,
+          "slug": "Horror film set during Christmas about murderous children",
+          "poster": "https://image.tmdb.org/t/p/w500/vTyc2ahe0qq7BVBlPD3L4zAl7WU.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 16342,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vTyc2ahe0qq7BVBlPD3L4zAl7WU.jpg"
+        },
+        {
+          "title": "Wind Chill",
+          "year": 2007,
+          "slug": "Supernatural Christmas horror with Emily Blunt",
+          "poster": "https://image.tmdb.org/t/p/w500/dcic5m8ypA8RUaLlwaIsupPNfGd.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 14223,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dcic5m8ypA8RUaLlwaIsupPNfGd.jpg"
+        },
+        {
+          "title": "Dead End",
+          "year": 2003,
+          "slug": "Surreal Christmas horror about a family's nightmarish road trip",
+          "poster": "https://image.tmdb.org/t/p/w500/mKjYhIvHSN4IP98TUESE1mQtgAv.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 11427,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mKjYhIvHSN4IP98TUESE1mQtgAv.jpg"
+        },
+        {
+          "title": "Santa's Slay",
+          "year": 2005,
+          "slug": "Horror-comedy featuring wrestler Bill Goldberg as evil Santa",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

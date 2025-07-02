@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "Sherlock Holmes and the Secret Weapon",
+    "year": 1942,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/50qLIyhdWrDxcZE0bmHhUaxb2FP.jpg",
+    "initialStreaming": null,
+    "tmdbId": 18706,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Sherlock Holmes and the Secret Weapon** (1942) marks a fascinating wartime adaptation of Conan Doyle's detective, updating Holmes to fight Nazis instead of Victorian criminals. Basil Rathbone's second outing as Holmes for Universal Pictures (after transitioning from Fox's **The Hound of the Baskervilles** (1939)) firmly established his interpretation as the definitive screen Holmes for a generation. The film cleverly adapts \"The Dancing Men\" story while incorporating WWII espionage elements, showcasing how malleable Holmes could be for different eras."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Hound of the Baskervilles",
+            "year": 1939,
+            "slug": "The first Rathbone/Bruce Holmes film, setting the gold standard for Gothic atmosphere and Holmes adaptations",
+            "poster": "https://image.tmdb.org/t/p/w500/61XD1LxA3kXLRrBXat3jN84MtPR.jpg",
+            "initialStreaming": "streaming",
+            "tmdb_id": 27118,
+            "poster_url": "https://image.tmdb.org/t/p/w500/61XD1LxA3kXLRrBXat3jN84MtPR.jpg"
+          },
+          {
+            "title": "The Adventures of Sherlock Holmes",
+            "year": 1939,
+            "slug": "The last Fox Holmes film before Universal took over, featuring George Zucco as Moriarty",
+            "poster": "https://image.tmdb.org/t/p/w500/oNE3GyeA9ZUCzI9jYTgNy7vYTfO.jpg",
+            "initialStreaming": "streaming",
+            "tmdb_id": 17481,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oNE3GyeA9ZUCzI9jYTgNy7vYTfO.jpg"
+          },
+          {
+            "title": "Sherlock Holmes Faces Death",
+            "year": 1943,
+            "slug": "Another wartime Holmes adventure, set in a mansion-turned-military hospital",
+            "poster": "https://image.tmdb.org/t/p/w500/paDmNVK9C7SwAWrfiR32Nh3GvjM.jpg",
+            "initialStreaming": "streaming",
+            "tmdb_id": 50553,
+            "poster_url": "https://image.tmdb.org/t/p/w500/paDmNVK9C7SwAWrfiR32Nh3GvjM.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The wartime Holmes series marked a significant shift in how detective films approached contemporary threats. While **The Woman in Green** (1945) and **Pursuit to Algiers** (1945) continued the wartime themes, they never matched the urgent propaganda purpose of Secret Weapon. Director Roy William Neill established a moody noir style that influenced later detective films like **The Big Sleep** (1946) and **Kiss Me Deadly** (1955)."
+      },
+      {
+        "type": "text",
+        "content": "Rathbone's partnership with Nigel Bruce as Dr. Watson created an enduring dynamic, though Bruce's bumbling interpretation remains controversial among Holmes purists. Their chemistry influenced countless detective duos, from **They Might Be Giants** (1971) to **Without a Clue** (1988), where the Holmes-Watson relationship takes center stage. SUBHEAD: The Evolution of Screen Holmes"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Pearl of Death",
+            "year": 1944,
+            "slug": "Holmes battles a vicious killer known as the Creeper in this loose adaptation of The Six Napoleons",
+            "poster": "https://image.tmdb.org/t/p/w500/36crcUCyyKZritifPJNlXMfsp9a.jpg",
+            "initialStreaming": "streaming",
+            "tmdb_id": 33421,
+            "poster_url": "https://image.tmdb.org/t/p/w500/36crcUCyyKZritifPJNlXMfsp9a.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Sherlock Holmes and the Secret Weapon** represents a crucial evolution in Holmes adaptations, bridging classical Victorian mysteries with modern thriller elements. This approach influenced later reinventions like **The Seven-Per-Cent Solution** (1976) and Guy Ritchie's **Sherlock Holmes** (2009), which similarly placed the detective in action-oriented scenarios while maintaining his deductive brilliance."
+      }
+    ],
+    "exploreFurther": [
+      "The Dancing Men Code - Breaking down the original Conan Doyle story versus the film's adaptation",
+      "Wartime British Cinema - How British films adapted to WWII propaganda needs",
+      "Basil Rathbone's Holmes - Analyzing his 14-film run as the detective",
+      "Universal's Holmes Series - Production history and visual style",
+      "Nazi Villains in 1940s Hollywood - The shift from traditional antagonists to Third Reich threats"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Spider Woman",
+          "year": 1943,
+          "slug": "Holmes investigates a series of \"pajama suicides\"",
+          "poster": "https://image.tmdb.org/t/p/w500/yTbwfGfrJ1opMAIrdltCCf3eRo2.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 2443,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yTbwfGfrJ1opMAIrdltCCf3eRo2.jpg"
+        },
+        {
+          "title": "The House of Fear",
+          "year": 1945,
+          "slug": "Holmes investigates mysterious deaths at a Scottish social club",
+          "poster": "https://image.tmdb.org/t/p/w500/3tHTXEnBmnTX4tJUQ5JAIKosp3d.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 33419,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3tHTXEnBmnTX4tJUQ5JAIKosp3d.jpg"
+        },
+        {
+          "title": "Terror by Night",
+          "year": 1946,
+          "slug": "Murder on a train carrying a famous diamond",
+          "poster": "https://image.tmdb.org/t/p/w500/cjGgLJ2GViKy0bla8OfaAhOBAJw.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 20408,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cjGgLJ2GViKy0bla8OfaAhOBAJw.jpg"
+        },
+        {
+          "title": "Dressed to Kill",
+          "year": 1946,
+          "slug": "The final Rathbone-Bruce Holmes film involving musical boxes",
+          "poster": "https://image.tmdb.org/t/p/w500/oD4z3ON2ciLMv6obEH2K8tGThWG.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 20417,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oD4z3ON2ciLMv6obEH2K8tGThWG.jpg"
+        },
+        {
+          "title": "The Private Life of Sherlock Holmes",
+          "year": 1970,
+          "slug": "Billy Wilder's melancholic take on the detective",
+          "poster": "https://image.tmdb.org/t/p/w500/vQSYu0DXkqTOEfWF21AzaqXxYCZ.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 5185,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vQSYu0DXkqTOEfWF21AzaqXxYCZ.jpg"
+        },
+        {
+          "title": "Murder by Decree",
+          "year": 1979,
+          "slug": "Holmes versus Jack the Ripper with Christopher Plummer",
+          "poster": "https://image.tmdb.org/t/p/w500/vjuO0XKak8v3uUdNjWr5sNIlJ4b.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 34374,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vjuO0XKak8v3uUdNjWr5sNIlJ4b.jpg"
+        },
+        {
+          "title": "Young Sherlock Holmes",
+          "year": 1985,
+          "slug": "Steven Spielberg-produced origin story",
+          "poster": "https://image.tmdb.org/t/p/w500/aOxVYvQoAfNSns4hW5Ah55GBzgq.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 11904,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aOxVYvQoAfNSns4hW5Ah55GBzgq.jpg"
+        },
+        {
+          "title": "Mr. Holmes",
+          "year": 2015,
+          "slug": "Ian McKellen as an aging detective facing memory loss",
+          "poster": "https://image.tmdb.org/t/p/w500/nNHkoefLcdtaHyG08G8aDn1yFMw.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 280996,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nNHkoefLcdtaHyG08G8aDn1yFMw.jpg"
+        },
+        {
+          "title": "Elementary",
+          "year": 2012,
+          "slug": "Modern CBS series with Jonny Lee Miller and Lucy Liu",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": null
+        },
+        {
+          "title": "Sherlock Holmes: A Game of Shadows",
+          "year": 2011,
+          "slug": "Second Ritchie film with Robert Downey Jr.",
+          "poster": "https://image.tmdb.org/t/p/w500/y1MYZkwhZK6L0Jy4YMuPktzDOfn.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 58574,
+          "poster_url": "https://image.tmdb.org/t/p/w500/y1MYZkwhZK6L0Jy4YMuPktzDOfn.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

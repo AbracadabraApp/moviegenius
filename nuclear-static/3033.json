@@ -1,0 +1,177 @@
+{
+  "props": {
+    "title": "Gods and Monsters",
+    "year": 1998,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/xhaZ2nKL9VtqfYQ9Ss4Azxc2E3F.jpg",
+    "initialStreaming": null,
+    "tmdbId": 3033,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Gods and Monsters** (1998) masterfully explores the final days of James Whale, director of **Frankenstein** (1931) and **Bride of Frankenstein** (1935). Ian McKellen delivers a career-defining performance as Whale, capturing both the sophistication and torment of a gay filmmaker in 1950s Hollywood. The film brilliantly weaves Whale's memories of directing his iconic monster movies with his growing relationship with gardener Clayton Boone (Brendan Fraser). Director Bill Condon creates striking parallels between Whale's outsider status as a gay man and the sympathetic monsters he brought to screen, particularly through dreamlike sequences that blur reality and cinema."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Frankenstein",
+            "year": 1931,
+            "slug": "James Whale's groundbreaking horror classic with Boris Karloff as the iconic monster",
+            "poster": "https://image.tmdb.org/t/p/w500/mu6wHwH0IwCCaEYtpqujuPJYat1.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 3035,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mu6wHwH0IwCCaEYtpqujuPJYat1.jpg"
+          },
+          {
+            "title": "Bride of Frankenstein",
+            "year": 1935,
+            "slug": "Whale's superior sequel featuring Elsa Lanchester's iconic bride creation",
+            "poster": "https://image.tmdb.org/t/p/w500/5241zUwe7rC17MNc2QpCBKKdp1N.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 229,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5241zUwe7rC17MNc2QpCBKKdp1N.jpg"
+          },
+          {
+            "title": "Ed Wood",
+            "year": 1994,
+            "slug": "Tim Burton's loving portrait of the infamous B-movie director, starring Johnny Depp",
+            "poster": "https://image.tmdb.org/t/p/w500/2jjFN4BtTSz01J3ZD4iYjf26pWX.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 522,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2jjFN4BtTSz01J3ZD4iYjf26pWX.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of Hollywood's golden age horror parallels other powerful biopics about the era's filmmakers. Like **Ed Wood** (1994), it humanizes a director whose personal life was as compelling as his films. Similar to **Hitchcock** (2012), it reveals the complex psychology behind horror masterpieces. The way Condon frames Whale's sexuality against 1950s repression echoes themes in **Far From Heaven** (2002), another period piece examining social constraints of the era."
+      },
+      {
+        "type": "text",
+        "content": "Through flashbacks to Whale's WWI experiences and his early Hollywood days, **Gods and Monsters** reveals how personal trauma shapes artistic vision. This theme connects to other films about filmmakers like **The Life and Death of Colonel Blimp** (1943) and **Salvatore Giuliano** (1962), where war memories haunt their protagonists. The film's exploration of aging and artistic legacy finds kinship with **The Artist** (2011) and **Sunset Boulevard** (1950). SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Sunset Boulevard",
+            "year": 1950,
+            "slug": "Billy Wilder's noir masterpiece about a faded silent film star's descent into madness",
+            "poster": "https://image.tmdb.org/t/p/w500/sC4Dpmn87oz9AuxZ15Lmip0Ftgr.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 599,
+            "poster_url": "https://image.tmdb.org/t/p/w500/sC4Dpmn87oz9AuxZ15Lmip0Ftgr.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Gods and Monsters** helped pave the way for more nuanced LGBTQ+ stories in Hollywood biopics, influencing films like **Milk** (2008) and **Behind the Candelabra** (2013). Its sophisticated treatment of horror filmmaking's psychological underpinnings can be seen in later works like **Shadow of the Vampire** (2000) and **The Shape of Water** (2017), which similarly explore the humanity within movie monsters."
+      }
+    ],
+    "exploreFurther": [
+      "The Universal Monster Movies Legacy (1931-1954)",
+      "James Whale's Influence on Horror Cinema",
+      "LGBTQ+ Representation in Classic Hollywood",
+      "The Evolution of Horror Director Biopics",
+      "War's Impact on Filmmaker Psychology"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Shadow of the Vampire",
+          "year": 2000,
+          "slug": "Meta-horror about the making of Nosferatu",
+          "poster": "https://image.tmdb.org/t/p/w500/nWm7DWi8X4D87XkM5qr9BhTJHq6.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 10873,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nWm7DWi8X4D87XkM5qr9BhTJHq6.jpg"
+        },
+        {
+          "title": "Hitchcock",
+          "year": 2012,
+          "slug": "Behind-the-scenes look at the making of Psycho",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Celluloid Closet",
+          "year": 1995,
+          "slug": "Documentary about LGBTQ+ representation in Hollywood",
+          "poster": "https://image.tmdb.org/t/p/w500/x0DSh3uMeQk6EG1DHjGJUywN7C0.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 32562,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x0DSh3uMeQk6EG1DHjGJUywN7C0.jpg"
+        },
+        {
+          "title": "Making the Boys",
+          "year": 2011,
+          "slug": "Documentary about the groundbreaking play The Boys in the Band",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Far From Heaven",
+          "year": 2002,
+          "slug": "1950s-set drama about social repression",
+          "poster": "https://image.tmdb.org/t/p/w500/9gQuvFDRPLx39smUvyafm36tp0d.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10712,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9gQuvFDRPLx39smUvyafm36tp0d.jpg"
+        },
+        {
+          "title": "Kinsey",
+          "year": 2004,
+          "slug": "Biopic about sexuality researcher starring Ian McKellen",
+          "poster": "https://image.tmdb.org/t/p/w500/cODCjWNRcZkwe4ONQs1GzRqYtRb.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 11184,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cODCjWNRcZkwe4ONQs1GzRqYtRb.jpg"
+        },
+        {
+          "title": "The Life and Death of Colonel Blimp",
+          "year": 1943,
+          "slug": "Powell and Pressburger's meditation on aging and war",
+          "poster": "https://image.tmdb.org/t/p/w500/kgyd5uyndsXiLYKlVgH0sm7Jfkv.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 25037,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kgyd5uyndsXiLYKlVgH0sm7Jfkv.jpg"
+        },
+        {
+          "title": "The Artist",
+          "year": 2011,
+          "slug": "Silent film about Hollywood's transition to sound",
+          "poster": "https://image.tmdb.org/t/p/w500/z68py0ZqPgeacGPG54AGVRbNBS7.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 74643,
+          "poster_url": "https://image.tmdb.org/t/p/w500/z68py0ZqPgeacGPG54AGVRbNBS7.jpg"
+        },
+        {
+          "title": "Behind the Candelabra",
+          "year": 2013,
+          "slug": "Liberace biopic exploring sexuality in entertainment",
+          "poster": "https://image.tmdb.org/t/p/w500/p3PF7jIUMAyZjGMaTPVbR405a2W.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 119675,
+          "poster_url": "https://image.tmdb.org/t/p/w500/p3PF7jIUMAyZjGMaTPVbR405a2W.jpg"
+        },
+        {
+          "title": "Milk",
+          "year": 2008,
+          "slug": "Biopic of gay rights activist Harvey Milk",
+          "poster": "https://image.tmdb.org/t/p/w500/ot4ImF4b7QbS6XsTdMH3pWxNmX2.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 10139,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ot4ImF4b7QbS6XsTdMH3pWxNmX2.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

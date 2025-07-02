@@ -1,0 +1,176 @@
+{
+  "props": {
+    "title": "The Legend of Hell House",
+    "year": 1973,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/cfs20hKNClCrEWRhgiy0bKEYBtV.jpg",
+    "initialStreaming": null,
+    "tmdbId": 16180,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Legend of Hell House** (1973) stands as one of the most influential haunted house films, bridging the psychological terror of **The Haunting** (1963) with the more visceral supernatural horror that would emerge in **The Amityville Horror** (1979). Richard Matheson adapted his own novel \"Hell House,\" crafting a story that combines scientific investigation with traditional ghost hunting. The film's unique approach of treating paranormal research as a pseudo-scientific endeavor influenced later works like **Poltergeist** (1982) and **Ghostbusters** (1984), while its atmospheric tension and sexual undertones pushed boundaries for early 1970s horror."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Haunting",
+            "year": 1963,
+            "slug": "Robert Wise's masterful adaptation of Shirley Jackson's novel uses psychological terror and suggestion rather than explicit scares",
+            "poster": "https://image.tmdb.org/t/p/w500/fmpTnUKTcrpuxLSY23gQMUf9qu7.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 11772,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fmpTnUKTcrpuxLSY23gQMUf9qu7.jpg"
+          },
+          {
+            "title": "The Innocents",
+            "year": 1961,
+            "slug": "Gothic horror about a governess facing supernatural forces in a Victorian mansion, based on Henry James' \"The Turn of the Screw\"",
+            "poster": "https://image.tmdb.org/t/p/w500/idqvLBmlEHUITMnQ0EJ6Yb5TpVw.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 16372,
+            "poster_url": "https://image.tmdb.org/t/p/w500/idqvLBmlEHUITMnQ0EJ6Yb5TpVw.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Director John Hough's claustrophobic camera work and Roddy McDowall's intense performance as the traumatized medium Benjamin Fischer set a new standard for haunted house films. The Belasco House setting becomes a character itself, with its oppressive Victorian architecture and blood-red lighting creating an atmosphere of perpetual dread. This approach directly influenced later films like **Session 9** (2001) and **The Others** (2001), where the location's history and atmosphere are integral to the horror."
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of psychic phenomena through both scientific and supernatural lenses created a template for countless later horror films. Its team of investigators - physicist, medium, and spiritual cleanser - established character dynamics still used in paranormal investigation narratives like **Grave Encounters** (2011) and **The Conjuring** (2013). The sexual aspects of the haunting, while tame by modern standards, broke new ground in connecting supernatural evil with repressed sexuality. SUBHEAD: Scientific Horror and the Paranormal Investigation Genre"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Burnt Offerings",
+            "year": 1976,
+            "slug": "Karen Black stars in this psychological horror about a family renting a mansion with a dark secret",
+            "poster": "https://image.tmdb.org/t/p/w500/2ipG69lXOjGMX7F7qxJQzUoiUsd.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 13549,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2ipG69lXOjGMX7F7qxJQzUoiUsd.jpg"
+          },
+          {
+            "title": "The Changeling",
+            "year": 1980,
+            "slug": "George C. Scott faces supernatural forces in a haunted mansion while grieving his family's death",
+            "poster": "https://image.tmdb.org/t/p/w500/z4nTYj3JZ5jWAhDgrmEhW2GRAzb.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 13550,
+            "poster_url": "https://image.tmdb.org/t/p/w500/z4nTYj3JZ5jWAhDgrmEhW2GRAzb.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's blend of scientific methodology with supernatural horror created a distinct subgenre that continues today. **Flatliners** (1990) and **Event Horizon** (1997) followed similar patterns of scientists confronting supernatural forces, while modern films like **Insidious** (2010) and **Sinister** (2012) maintain the tradition of combining technical ghost hunting equipment with traditional mediumship."
+      }
+    ],
+    "exploreFurther": [
+      "Richard Matheson's Literary Impact on Horror Cinema",
+      "Evolution of Haunted House Films: 1960s-1970s",
+      "Scientific Approaches to Supernatural Horror",
+      "Victorian Architecture in Horror Cinema",
+      "The Influence of British Horror on American Genre Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "House",
+          "year": 1977,
+          "slug": "Japanese surreal horror masterpiece",
+          "poster": "https://image.tmdb.org/t/p/w500/tXlEgAJkGQuE9Vm6ppYERUBmdDM.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 25623,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tXlEgAJkGQuE9Vm6ppYERUBmdDM.jpg"
+        },
+        {
+          "title": "The Stone Tape",
+          "year": 1972,
+          "slug": "BBC ghost story focusing on scientific investigation of hauntings",
+          "poster": "https://image.tmdb.org/t/p/w500/bnC9NhHps7IAbDvVqn0Xr6qDPIJ.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 41032,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bnC9NhHps7IAbDvVqn0Xr6qDPIJ.jpg"
+        },
+        {
+          "title": "The Entity",
+          "year": 1982,
+          "slug": "Scientific study of supernatural assault based on alleged true events",
+          "poster": "https://image.tmdb.org/t/p/w500/e6fsd6zSJDPaFP4xWAtMkHJOkXU.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 24740,
+          "poster_url": "https://image.tmdb.org/t/p/w500/e6fsd6zSJDPaFP4xWAtMkHJOkXU.jpg"
+        },
+        {
+          "title": "Rose Red",
+          "year": 2002,
+          "slug": "Stephen King's miniseries about paranormal investigators in a cursed mansion",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Hell Night",
+          "year": 1981,
+          "slug": "Gothic horror with Linda Blair investigating haunted Garth Manor",
+          "poster": "https://image.tmdb.org/t/p/w500/gCUksQvJV6hoqvDDyLhxxxicRBd.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 28377,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gCUksQvJV6hoqvDDyLhxxxicRBd.jpg"
+        },
+        {
+          "title": "House on Haunted Hill",
+          "year": 1959,
+          "slug": "Vincent Price classic about a haunted house party",
+          "poster": "https://image.tmdb.org/t/p/w500/g5kdFt3piV3w1pG65W9sSToJ7HB.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 15856,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g5kdFt3piV3w1pG65W9sSToJ7HB.jpg"
+        },
+        {
+          "title": "The House That Would Not Die",
+          "year": 1970,
+          "slug": "Barbara Stanwyck faces colonial ghosts",
+          "poster": "https://image.tmdb.org/t/p/w500/auK8SR6NTr7S7LTXqoQlb025wFR.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 101060,
+          "poster_url": "https://image.tmdb.org/t/p/w500/auK8SR6NTr7S7LTXqoQlb025wFR.jpg"
+        },
+        {
+          "title": "Horror Hotel",
+          "year": 1960,
+          "slug": "Christopher Lee in witchcraft thriller with similar themes",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Evil",
+          "year": 1978,
+          "slug": "Scientists investigate supernatural forces in an old mansion",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Demon Seed",
+          "year": 1977,
+          "slug": "Scientific horror about AI taking over a house",
+          "poster": "https://image.tmdb.org/t/p/w500/1COyCeH7NLNohVd0mRFDSBWt1Yv.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 18775,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1COyCeH7NLNohVd0mRFDSBWt1Yv.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

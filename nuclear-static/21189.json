@@ -1,0 +1,186 @@
+{
+  "props": {
+    "title": "Lost in La Mancha",
+    "year": 2002,
+    "initialSlug": "A quest lost in chaos",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/gPlWNmQOzJ7j8djCxXcc40syVS3.jpg",
+    "initialStreaming": "TBD",
+    "tmdbId": 21189,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Lost in La Mancha** (2002) stands as one of cinema's most gripping documentaries about failed filmmaking, chronicling Terry Gilliam's disastrous attempt to make \"The Man Who Killed Don Quixote.\" Like **Hearts of Darkness: A Filmmaker's Apocalypse** (1991), which captured the chaotic making of Apocalypse Now, La Mancha reveals the fragility of ambitious film productions. Gilliam's curse-plagued project faced everything from flash floods destroying sets to lead actor Jean Rochefort's debilitating health issues, all caught with unprecedented access by directors Keith Fulton and Louis Pepe."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Hearts of Darkness: A Filmmaker's Apocalypse",
+            "year": 1991,
+            "slug": "Documents the troubled production of Apocalypse Now, featuring Francis Ford Coppola's descent into near-madness",
+            "poster": "https://image.tmdb.org/t/p/w500/gJSSzYSLXIM5LQMWTOdsYCgawZ5.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 4539,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gJSSzYSLXIM5LQMWTOdsYCgawZ5.jpg"
+          },
+          {
+            "title": "Burden of Dreams",
+            "year": 1982,
+            "slug": "Les Blank's stunning chronicle of Werner Herzog's epic struggle to complete Fitzcarraldo in the Amazon jungle",
+            "poster": "https://image.tmdb.org/t/p/w500/qJuD9yZ7Mn9QCVqKO9WarNNYo4R.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 42124,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qJuD9yZ7Mn9QCVqKO9WarNNYo4R.jpg"
+          },
+          {
+            "title": "Jodorowsky's Dune",
+            "year": 2013,
+            "slug": "The fascinating story of the greatest sci-fi film never made, as visionary director Alejandro Jodorowsky attempted to adapt Dune",
+            "poster": "https://image.tmdb.org/t/p/w500/kgmwmClQ8tw15G5TJFqz1NrQ0Me.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 191720,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kgmwmClQ8tw15G5TJFqz1NrQ0Me.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The documentary's power lies in watching a veteran director's dream crumble in real-time. Gilliam, fresh from successes like **12 Monkeys** (1995) and **Fear and Loathing in Las Vegas** (1998), approaches Don Quixote with characteristic imagination and optimism. But the film becomes a meta-commentary on Quixote itself - Gilliam transforms into his own kind of Quixote, tilting at windmills as his impossible dream falls apart. The parallel becomes more poignant knowing Gilliam finally completed the project in 2018 with **The Man Who Killed Don Quixote**, starring Adam Driver."
+      },
+      {
+        "type": "text",
+        "content": "Lost in La Mancha birthed a subgenre of \"unmaking-of\" documentaries, joining films like **The Death of Superman Lives: What Happened?** (2015) and **Overnight** (2003) in examining Hollywood's spectacular failures. These films reveal the entertainment industry's harsh realities - where artistic vision collides with practical limitations, egos, and pure bad luck. The genre peaked with **They'll Love Me When I'm Dead** (2018), exploring Orson Welles's unfinished masterpiece The Other Side of the Wind. SUBHEAD: The Impact on Modern Filmmaking"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Death of Superman Lives: What Happened?",
+            "year": 2015,
+            "slug": "Details Tim Burton's abandoned Superman project starring Nicolas Cage",
+            "poster": "https://image.tmdb.org/t/p/w500/oned45Htl78YYkf1ByyodDmLzZ0.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 279144,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oned45Htl78YYkf1ByyodDmLzZ0.jpg"
+          },
+          {
+            "title": "American Movie",
+            "year": 1999,
+            "slug": "A charming look at an amateur filmmaker's struggle to complete his low-budget horror film",
+            "poster": "https://image.tmdb.org/t/p/w500/qAoIbQDnbGgiLDBUtOh7JUe5XQX.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 14242,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qAoIbQDnbGgiLDBUtOh7JUe5XQX.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Lost in La Mancha's influence extends beyond documenting failure - it changed how the industry approaches behind-the-scenes content. Modern productions now routinely document their making-of process, preparing for both success and potential disaster. **The Amazing Spider-Man 3** never materialized, but Sony's documentation of its planned universe exists. Even **Apocalypse Now: Final Cut** (2019) includes extensive restoration of Hearts of Darkness footage, acknowledging the importance of preserving these creative struggles."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Terry Gilliam's Don Quixote Project (1989-2018)",
+      "Famous Unfinished Films in Cinema History",
+      "The Rise of Making-Of Documentaries",
+      "Film Production Insurance and Risk Management",
+      "The Legacy of Lost in La Mancha on Modern Documentary Filmmaking"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Man Who Killed Don Quixote",
+          "year": 2018,
+          "slug": "Gilliam's finally completed Don Quixote project",
+          "poster": "https://image.tmdb.org/t/p/w500/4o4zw2c9sfHvszIb5xpuFagnouR.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 297725,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4o4zw2c9sfHvszIb5xpuFagnouR.jpg"
+        },
+        {
+          "title": "Overnight",
+          "year": 2003,
+          "slug": "The self-destruction of filmmaker Troy Duffy",
+          "poster": "https://image.tmdb.org/t/p/w500/tw0Ozor3NWNAj2r0CJ5Arz0U8Uv.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 27007,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tw0Ozor3NWNAj2r0CJ5Arz0U8Uv.jpg"
+        },
+        {
+          "title": "Full Tilt Boogie",
+          "year": 1997,
+          "slug": "Behind-the-scenes of From Dusk Till Dawn",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": null
+        },
+        {
+          "title": "Lost Soul: The Doomed Journey of Richard Stanley's Island of Dr. Moreau",
+          "year": 2014,
+          "slug": "Chronicle of a troubled production",
+          "poster": "https://image.tmdb.org/t/p/w500/rySKp5esmRPVDMm33mr4szxR6IU.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 279992,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rySKp5esmRPVDMm33mr4szxR6IU.jpg"
+        },
+        {
+          "title": "Making The Shining",
+          "year": 1980,
+          "slug": "Vivian Kubrick's intimate look at her father's process",
+          "poster": "https://image.tmdb.org/t/p/w500/upBsuweJjBftrkJGqVf8PHCdH0l.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 18875,
+          "poster_url": "https://image.tmdb.org/t/p/w500/upBsuweJjBftrkJGqVf8PHCdH0l.jpg"
+        },
+        {
+          "title": "The Battle Over Citizen Kane",
+          "year": 1996,
+          "slug": "The struggle between Orson Welles and William Randolph Hearst",
+          "poster": "https://image.tmdb.org/t/p/w500/tPZ9EioXBZ8j8aUqVdBX3vD8uKS.jpg",
+          "initialStreaming": "PBS",
+          "tmdb_id": 278484,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tPZ9EioXBZ8j8aUqVdBX3vD8uKS.jpg"
+        },
+        {
+          "title": "78/52: Hitchcock's Shower Scene",
+          "year": 2017,
+          "slug": "Deep dive into Psycho's famous sequence",
+          "poster": "https://image.tmdb.org/t/p/w500/mJb3OTY0rc4dTUStQnxSeRacsTV.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 359749,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mJb3OTY0rc4dTUStQnxSeRacsTV.jpg"
+        },
+        {
+          "title": "Side by Side",
+          "year": 2012,
+          "slug": "Digital vs. film debate in modern cinema",
+          "poster": "https://image.tmdb.org/t/p/w500/qeeQ7rfTAXNYh4EqqdolFLkNwKM.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 110354,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qeeQ7rfTAXNYh4EqqdolFLkNwKM.jpg"
+        },
+        {
+          "title": "The Kid Stays in the Picture",
+          "year": 2002,
+          "slug": "Robert Evans's Hollywood journey",
+          "poster": "https://image.tmdb.org/t/p/w500/wQd4tf308KGwbUZeoDLPxgYqhiv.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 29047,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wQd4tf308KGwbUZeoDLPxgYqhiv.jpg"
+        },
+        {
+          "title": "Hitchcock/Truffaut",
+          "year": 2015,
+          "slug": "Examination of famous director interviews",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

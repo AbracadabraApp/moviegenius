@@ -1,0 +1,176 @@
+{
+  "props": {
+    "title": "The Hunchback of Notre Dame",
+    "year": 1923,
+    "initialSlug": "Deformed bell-ringer fights for love in Gothic Paris",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/3oheTQrTuqS1jPUW6GOc65ZbM5u.jpg",
+    "initialStreaming": null,
+    "tmdbId": 18987,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Hunchback of Notre Dame** (1923) stands as one of silent cinema's most ambitious achievements, with Lon Chaney's transformative performance as Quasimodo setting new standards for character makeup and physical acting. The film's massive recreation of 15th century Paris, built on Universal's backlot, influenced epic filmmaking for decades. While earlier adaptations of Victor Hugo's novel existed, including a 1911 Italian version, this Chaney-led production established the definitive visual template that later versions would follow, including the beloved **Disney animated adaptation** (1996) and the French musical **Notre-Dame de Paris** (1999)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Phantom of the Opera",
+            "year": 1925,
+            "slug": "Lon Chaney's other masterpiece of makeup and horror, featuring the iconic unmasking scene that shocked audiences",
+            "poster": "https://image.tmdb.org/t/p/w500/mvaYpAYj957C2tlq3vVJPSzGJXK.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 964,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mvaYpAYj957C2tlq3vVJPSzGJXK.jpg"
+          },
+          {
+            "title": "The Man Who Laughs",
+            "year": 1928,
+            "slug": "German Expressionist adaptation of Victor Hugo with Conrad Veidt's haunting performance that inspired Batman's Joker",
+            "poster": "https://image.tmdb.org/t/p/w500/iQXBMr4NzQst4X0rDU6MII6ZUOM.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 27517,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iQXBMr4NzQst4X0rDU6MII6ZUOM.jpg"
+          },
+          {
+            "title": "Dr. Jekyll and Mr. Hyde",
+            "year": 1920,
+            "slug": "John Barrymore's groundbreaking transformation scenes influenced Chaney's approach to character makeup",
+            "poster": "https://image.tmdb.org/t/p/w500/u8OL0RbTNzqqB1WmkxroTBXohnv.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 3016,
+            "poster_url": "https://image.tmdb.org/t/p/w500/u8OL0RbTNzqqB1WmkxroTBXohnv.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Silent horror cinema of the 1920s reached its artistic peak through elaborate makeup and practical effects. Chaney's self-designed prosthetics for Quasimodo, including a 40-pound rubber hump and facial applications that took hours to apply, established new possibilities for character transformation. This technical innovation paired with emotional depth influenced later monster films like **Frankenstein** (1931) and **The Wolf Man** (1941), where the humanity beneath the makeup became central to the storytelling."
+      },
+      {
+        "type": "text",
+        "content": "Director Wallace Worsley's massive sets and crowd scenes (featuring over 2,000 extras) created a template for historical epics that echoed through films like **Ben-Hur** (1925) and **Metropolis** (1927). The film's elaborate cathedral set piece, standing 226 feet high, demonstrated how architecture could become a character itself, influencing later Gothic productions from **Dracula** (1931) to **Batman** (1989). SUBHEAD: Influence on Horror and Gothic Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Ben-Hur: A Tale of the Christ",
+            "year": 1925,
+            "slug": "Silent epic featuring massive sets and thousands of extras in ancient Rome",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Chaney's sympathetic portrayal of Quasimodo helped establish the \"beautiful monster\" archetype in horror cinema, where physical deformity contrasts with inner nobility. This characterization influenced countless films, from **Beauty and the Beast** (1946) to **The Elephant Man** (1980). The film's Gothic aesthetic, particularly its use of shadow and architectural space, became foundational for Universal's horror cycle of the 1930s and continues to influence modern Gothic cinema like **Crimson Peak** (2015)."
+      }
+    ],
+    "exploreFurther": [
+      "Lon Chaney's Makeup Techniques and Their Impact on Modern Special Effects",
+      "Gothic Architecture in Silent Cinema",
+      "Victor Hugo Adaptations Through Cinema History",
+      "The Evolution of Monster Sympathy in Horror Films",
+      "Silent Film Set Design and Construction Methods"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Nosferatu",
+          "year": 1922,
+          "slug": "German Expressionist vampire classic",
+          "poster": "https://image.tmdb.org/t/p/w500/zv7J85D8CC9qYagAEhPM63CIG6j.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 653,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zv7J85D8CC9qYagAEhPM63CIG6j.jpg"
+        },
+        {
+          "title": "The Cabinet of Dr. Caligari",
+          "year": 1920,
+          "slug": "Landmark German Expressionist horror",
+          "poster": "https://image.tmdb.org/t/p/w500/myK9DeIsXWGKgUTZyGXg2IfFk0W.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 234,
+          "poster_url": "https://image.tmdb.org/t/p/w500/myK9DeIsXWGKgUTZyGXg2IfFk0W.jpg"
+        },
+        {
+          "title": "The Golem",
+          "year": 1920,
+          "slug": "Jewish folklore horror with impressive set design",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Faust",
+          "year": 1926,
+          "slug": "Murnau's demonic masterpiece of German cinema",
+          "poster": "https://image.tmdb.org/t/p/w500/rN703hMFxmkZfyEzsXvFtuFhkXE.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 10728,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rN703hMFxmkZfyEzsXvFtuFhkXE.jpg"
+        },
+        {
+          "title": "The Thief of Bagdad",
+          "year": 1924,
+          "slug": "Douglas Fairbanks' epic with massive sets",
+          "poster": "https://image.tmdb.org/t/p/w500/8t4CJ591N2FATf2yUiQNQk9p0tB.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 28963,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8t4CJ591N2FATf2yUiQNQk9p0tB.jpg"
+        },
+        {
+          "title": "Metropolis",
+          "year": 1927,
+          "slug": "Fritz Lang's influential sci-fi with Gothic elements",
+          "poster": "https://image.tmdb.org/t/p/w500/vZIJxGnjcswPCAa52jhbl01FQkV.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 19,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vZIJxGnjcswPCAa52jhbl01FQkV.jpg"
+        },
+        {
+          "title": "The Unknown",
+          "year": 1927,
+          "slug": "Another Lon Chaney transformation showcase",
+          "poster": "https://image.tmdb.org/t/p/w500/c9R1wE1vMJWMZNdmqXUV8oTaCPQ.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 27503,
+          "poster_url": "https://image.tmdb.org/t/p/w500/c9R1wE1vMJWMZNdmqXUV8oTaCPQ.jpg"
+        },
+        {
+          "title": "London After Midnight",
+          "year": 1927,
+          "slug": "Lost Chaney horror film known through stills",
+          "poster": "https://image.tmdb.org/t/p/w500/mDgG0R5XDai0960ICbk4GOMltlw.jpg",
+          "initialStreaming": "N/A",
+          "tmdb_id": 64852,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mDgG0R5XDai0960ICbk4GOMltlw.jpg"
+        },
+        {
+          "title": "Notre Dame de Paris",
+          "year": 1956,
+          "slug": "French adaptation with Anthony Quinn",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Hunchback of Notre Dame",
+          "year": 1939,
+          "slug": "Charles Laughton's celebrated version",
+          "poster": "https://image.tmdb.org/t/p/w500/m6fsyHeqSQs4tktk9q3awgo7IzF.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 31685,
+          "poster_url": "https://image.tmdb.org/t/p/w500/m6fsyHeqSQs4tktk9q3awgo7IzF.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

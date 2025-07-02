@@ -1,0 +1,173 @@
+{
+  "props": {
+    "title": "Dolls",
+    "year": 1987,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/yEE9Ly5r9o2XR35wKiIlkLfvnx6.jpg",
+    "initialStreaming": null,
+    "tmdbId": 24341,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Stuart Gordon's **Dolls** (1987) marked a distinctive shift in killer doll horror, bridging the gap between earlier Gothic puppet films like **Devil Doll** (1964) and modern franchises like **Child's Play** (1988). Gordon, fresh off **Re-Animator** (1985), brought his signature blend of dark humor and practical effects to this twisted fairy tale. The film's old mansion setting and emphasis on practical puppet effects created a template that influenced countless killer toy movies, from **Puppet Master** (1989) to **Annabelle** (2014)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Dolls",
+            "year": 1987,
+            "slug": "A group of travelers seek shelter in a mansion owned by elderly dollmakers, only to discover their creations are alive and murderous",
+            "poster": "https://image.tmdb.org/t/p/w500/yEE9Ly5r9o2XR35wKiIlkLfvnx6.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 24341,
+            "poster_url": "https://image.tmdb.org/t/p/w500/yEE9Ly5r9o2XR35wKiIlkLfvnx6.jpg"
+          },
+          {
+            "title": "Child's Play",
+            "year": 1988,
+            "slug": "A serial killer transfers his soul into a Good Guy doll, terrorizing a young boy and his mother",
+            "poster": "https://image.tmdb.org/t/p/w500/wvpgvcWNkF2HLuTEMIM7K83MvZ.jpg",
+            "initialStreaming": "AMC+",
+            "tmdb_id": 10585,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wvpgvcWNkF2HLuTEMIM7K83MvZ.jpg"
+          },
+          {
+            "title": "Puppet Master",
+            "year": 1989,
+            "slug": "Psychic researchers investigate a hotel where animated puppets kill intruders",
+            "poster": "https://image.tmdb.org/t/p/w500/6bcRspKbsM21HqLcxIBANbts3X7.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 26953,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6bcRspKbsM21HqLcxIBANbts3X7.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "What sets **Dolls** (1987) apart is its morality play structure. Unlike later killer doll films that relied purely on supernatural evil, Gordon's film punishes the wicked while rewarding innocence. This approach shares DNA with European fairy tales and would later influence films like **Trick 'r Treat** (2007) and **Krampus** (2015), where supernatural forces act as karmic judges."
+      },
+      {
+        "type": "text",
+        "content": "The practical effects in **Dolls** showcase the pinnacle of 1980s puppet animation techniques. Gordon collaborated with effects artists Maurizio Trani and Giannetto De Rossi to create convincingly autonomous dolls through a combination of stop-motion, rod puppetry, and mechanical effects. This craftsmanship influenced later practical effects showcases like **The Devil's Backbone** (2001) and **Coraline** (2009). SUBHEAD: Evolution of Killer Doll Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Demonic Toys",
+            "year": 1992,
+            "slug": "A pregnant police officer faces off against possessed toys in a warehouse",
+            "poster": "https://image.tmdb.org/t/p/w500/AubvQiTwhvI7Fl3DsCNbHat8jzg.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 40649,
+            "poster_url": "https://image.tmdb.org/t/p/w500/AubvQiTwhvI7Fl3DsCNbHat8jzg.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The success of **Dolls** (1987) helped establish key tropes of the killer doll subgenre: the uncanny valley effect of seemingly innocent toys, elaborate death scenes, and dark humor. These elements would become standard in films like **Bride of Chucky** (1998) and **May** (2002). The film's emphasis on practical effects over CGI maintained a tangible creepiness that modern films like **M3GAN** (2023) still attempt to recreate."
+      }
+    ],
+    "exploreFurther": [
+      "The History of Stop-Motion Animation in Horror Films",
+      "Stuart Gordon's Impact on 1980s Horror Cinema",
+      "Practical Effects vs CGI in Killer Doll Movies",
+      "Fairy Tale Elements in Modern Horror",
+      "The Evolution of the Killer Doll Subgenre"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Dead Silence",
+          "year": 2007,
+          "slug": "A murdered ventriloquist's curse haunts a small town",
+          "poster": "https://image.tmdb.org/t/p/w500/rvcUVdATIHKZt7BSSttUkKbeBXN.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 14001,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rvcUVdATIHKZt7BSSttUkKbeBXN.jpg"
+        },
+        {
+          "title": "Pinocchio's Revenge",
+          "year": 1996,
+          "slug": "A lawyer's daughter becomes attached to a murderous puppet",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Blood Dolls",
+          "year": 1999,
+          "slug": "A twisted toymaker creates murderous dolls for revenge",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Magic",
+          "year": 1978,
+          "slug": "A ventriloquist becomes controlled by his increasingly violent dummy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Tourist Trap",
+          "year": 1979,
+          "slug": "Teenagers encounter a museum owner with telekinetic powers over mannequins",
+          "poster": "https://image.tmdb.org/t/p/w500/c19pSkUfNElrmVn0iYtiJys5dK8.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 13570,
+          "poster_url": "https://image.tmdb.org/t/p/w500/c19pSkUfNElrmVn0iYtiJys5dK8.jpg"
+        },
+        {
+          "title": "Pin",
+          "year": 1988,
+          "slug": "A medical dummy becomes the focus of a disturbed young man's obsession",
+          "poster": "https://image.tmdb.org/t/p/w500/ouUfJtdHPkRXFJ0zDLPvgbPHPjd.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 41966,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ouUfJtdHPkRXFJ0zDLPvgbPHPjd.jpg"
+        },
+        {
+          "title": "The Boy",
+          "year": 2016,
+          "slug": "A nanny discovers her charge is actually a porcelain doll",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Annabelle",
+          "year": 2014,
+          "slug": "A couple experiences supernatural events involving a possessed doll",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": null
+        },
+        {
+          "title": "Trilogy of Terror",
+          "year": 1975,
+          "slug": "Features the infamous Zuni fetish doll segment",
+          "poster": "https://image.tmdb.org/t/p/w500/nE4ih0nzpqz0x154Vig0QJUc6Sr.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 38783,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nE4ih0nzpqz0x154Vig0QJUc6Sr.jpg"
+        },
+        {
+          "title": "Living Doll",
+          "year": 1963,
+          "slug": "Classic Twilight Zone episode about a murderous talking doll",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,194 @@
+{
+  "props": {
+    "title": "Kentucky Fried Movie",
+    "year": 1977,
+    "initialSlug": "A wild comedy ride of outrageous movie spoofs",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/qk0iXBQgP6b4xfS2bIUNBSENJAn.jpg",
+    "initialStreaming": null,
+    "tmdbId": 11598,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Kentucky Fried Movie** (1977) launched the careers of comedy titans Jim Abrahams, David Zucker, and Jerry Zucker before they created **Airplane!** (1980). This anarchic sketch comedy film pioneered the rapid-fire spoof format, throwing countless gags at the screen in a frenetic mix of movie parodies, fake commercials, and absurdist segments. The standout \"A Fistful of Yen\" section mercilessly lampoons Bruce Lee's **Enter the Dragon** (1973) while perfectly capturing exploitation cinema's gleeful excess."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Amazon Women on the Moon",
+            "year": 1987,
+            "slug": "Similar sketch comedy film featuring movie/TV parodies directed by John Landis",
+            "poster": "https://image.tmdb.org/t/p/w500/p77UlHHzyBUCKgdbLosrAnltDgw.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 5709,
+            "poster_url": "https://image.tmdb.org/t/p/w500/p77UlHHzyBUCKgdbLosrAnltDgw.jpg"
+          },
+          {
+            "title": "UHF",
+            "year": 1989,
+            "slug": "Weird Al Yankovic's cult comedy featuring TV show parodies and surreal sketches",
+            "poster": "https://image.tmdb.org/t/p/w500/wxx5YQLKVH1WMSRXQAUnC76r4iY.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 11959,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wxx5YQLKVH1WMSRXQAUnC76r4iY.jpg"
+          },
+          {
+            "title": "Top Secret!",
+            "year": 1984,
+            "slug": "ZAZ team's follow-up spoof combining Elvis movies and WWII films",
+            "poster": "https://image.tmdb.org/t/p/w500/hRTbfR27xghnVMs3ZJ3EhK3zzud.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 8764,
+            "poster_url": "https://image.tmdb.org/t/p/w500/hRTbfR27xghnVMs3ZJ3EhK3zzud.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends far beyond its modest budget and initial reception. Modern parody franchises like **Scary Movie** (2000) and **Date Movie** (2006) borrowed heavily from KFM's template of rapid-fire references and genre satire. The film's fearless approach to politically incorrect humor and willingness to break the fourth wall influenced everything from **Monty Python's The Meaning of Life** (1983) to **Family Guy** (1999-present)."
+      },
+      {
+        "type": "text",
+        "content": "What sets **Kentucky Fried Movie** apart is its commitment to recreating the exact look and feel of what it's parodying. The \"Big Jim Slade\" commercial segment nails the overwrought masculinity of 70s sports equipment ads, while \"Catholic High School Girls in Trouble\" perfectly mimics exploitation film trailers. This attention to detail would become a hallmark of the ZAZ team's later work in **The Naked Gun** (1988) and **Hot Shots!** (1991). SUBHEAD: The Evolution of Sketch Comedy Films"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Movie Movie",
+            "year": 1978,
+            "slug": "Double feature parody of classic Hollywood genres directed by Stanley Donen",
+            "poster": "https://image.tmdb.org/t/p/w500/ibbixbVqqAcs2fot7dUcyOALFsD.jpg",
+            "initialStreaming": "NA",
+            "tmdb_id": 85420,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ibbixbVqqAcs2fot7dUcyOALFsD.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While **Kentucky Fried Movie** wasn't the first sketch comedy film - **The Groove Tube** (1974) and **Tunnel Vision** (1976) came before - it perfected the format. Its influence can be seen in later works like **Monty Python's The Meaning of Life** (1983) and **The Kentucky Fried Movie**'s spiritual successor **Amazon Women on the Moon** (1987). The film's mix of high and low humor, combined with its willingness to tackle any target, created a template that sketch comedy shows like **Mr. Show** (1995-1998) would later follow."
+      }
+    ],
+    "exploreFurther": [
+      "The Rise and Fall of Spoof Movies: From Kentucky Fried Movie to Epic Movie",
+      "ZAZ Team's Comedy Revolution: Analyzing Their Transition from Sketch to Narrative",
+      "John Landis's Early Career: From Kentucky Fried Movie to Animal House",
+      "The Art of Movie Parody: Techniques and Evolution",
+      "1970s Exploitation Cinema and Its Influence on Comedy"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Airplane!",
+          "year": 1980,
+          "slug": "The ZAZ team's breakthrough spoof of disaster films",
+          "poster": "https://image.tmdb.org/t/p/w500/7Q3efxd3AF1vQjlSxnlerSA7RzN.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 813,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7Q3efxd3AF1vQjlSxnlerSA7RzN.jpg"
+        },
+        {
+          "title": "The Naked Gun",
+          "year": 1988,
+          "slug": "Leslie Nielsen stars in ZAZ's police procedural parody",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Hot Shots!",
+          "year": 1991,
+          "slug": "Top Gun spoof from Jim Abrahams",
+          "poster": "https://image.tmdb.org/t/p/w500/koLIB5263emHxewmwgBBK26vjeS.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 9595,
+          "poster_url": "https://image.tmdb.org/t/p/w500/koLIB5263emHxewmwgBBK26vjeS.jpg"
+        },
+        {
+          "title": "The Groove Tube",
+          "year": 1974,
+          "slug": "Early sketch comedy film featuring Chevy Chase",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Tunnel Vision",
+          "year": 1976,
+          "slug": "Satirical sketch film about future television",
+          "poster": "https://image.tmdb.org/t/p/w500/hD83vq9BuQ0dmsLnLpUmOClNlPE.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 114255,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hD83vq9BuQ0dmsLnLpUmOClNlPE.jpg"
+        },
+        {
+          "title": "And Now for Something Completely Different",
+          "year": 1971,
+          "slug": "Monty Python's first film",
+          "poster": "https://image.tmdb.org/t/p/w500/ajbdFQLvJTlNu4LnVWGnNMb4mZ8.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9267,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ajbdFQLvJTlNu4LnVWGnNMb4mZ8.jpg"
+        },
+        {
+          "title": "The Blues Brothers",
+          "year": 1980,
+          "slug": "John Landis's musical comedy expansion of SNL characters",
+          "poster": "https://image.tmdb.org/t/p/w500/rhYJKOt6UrQq7JQgLyQcSWW5R86.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 525,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rhYJKOt6UrQq7JQgLyQcSWW5R86.jpg"
+        },
+        {
+          "title": "Trading Places",
+          "year": 1983,
+          "slug": "Another Landis comedy classic",
+          "poster": "https://image.tmdb.org/t/p/w500/8mBuLCOcpWnmYtZc4aqtvDXslv6.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 1621,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8mBuLCOcpWnmYtZc4aqtvDXslv6.jpg"
+        },
+        {
+          "title": "Brain Donors",
+          "year": 1992,
+          "slug": "Marx Brothers-style comedy in the ZAZ tradition",
+          "poster": "https://image.tmdb.org/t/p/w500/r928uiKrN1mvPrqyHy2djLUBlAe.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 32450,
+          "poster_url": "https://image.tmdb.org/t/p/w500/r928uiKrN1mvPrqyHy2djLUBlAe.jpg"
+        },
+        {
+          "title": "Not Another Teen Movie",
+          "year": 2001,
+          "slug": "Self-aware teen film parody",
+          "poster": "https://image.tmdb.org/t/p/w500/9ZaGxvj1mqdKVLpSloq4mzS7SK6.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 11397,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9ZaGxvj1mqdKVLpSloq4mzS7SK6.jpg"
+        },
+        {
+          "title": "Don't Be a Menace...",
+          "year": 1996,
+          "slug": "Wayans brothers' hood movie spoof",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Fatal Instinct",
+          "year": 1993,
+          "slug": "Carl Reiner's noir thriller parody",
+          "poster": "https://image.tmdb.org/t/p/w500/82HA5CmfmJLaBry4DpT5D4UiFNR.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 91534,
+          "poster_url": "https://image.tmdb.org/t/p/w500/82HA5CmfmJLaBry4DpT5D4UiFNR.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

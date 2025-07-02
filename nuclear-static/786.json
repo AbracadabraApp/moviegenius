@@ -1,0 +1,179 @@
+{
+  "props": {
+    "title": "Almost Famous",
+    "year": 2000,
+    "initialSlug": "The Music. The Madness. The Magic.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/3rrkyLYbgLj84AYvjhdcJot4JPx.jpg",
+    "initialStreaming": null,
+    "tmdbId": 786,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Almost Famous** (2000) captures the electric energy of 1970s rock through the eyes of 15-year-old music journalist William Miller. Cameron Crowe drew from his real experiences writing for Rolling Stone, crafting a love letter to an era when rock felt dangerous and transformative. Like **Dazed and Confused** (1993) and **American Graffiti** (1973), it nails the specific cultural moment while telling a universal coming-of-age story. The fictional band Stillwater embodies the raw ambition and dysfunction of groups like Led Zeppelin and The Allman Brothers, while Philip Seymour Hoffman's portrayal of rock critic Lester Bangs provides the film's moral compass."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "High Fidelity",
+            "year": 2000,
+            "slug": "John Cusack stars as a record store owner examining his failed relationships through music, capturing vinyl culture and music obsession",
+            "poster": "https://image.tmdb.org/t/p/w500/e2LZGB62GMhv3Fo8tDZjY87I81a.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 243,
+            "poster_url": "https://image.tmdb.org/t/p/w500/e2LZGB62GMhv3Fo8tDZjY87I81a.jpg"
+          },
+          {
+            "title": "This Is Spinal Tap",
+            "year": 1984,
+            "slug": "The definitive mockumentary about a fictional British heavy metal band, influencing rock comedies for decades",
+            "poster": "https://image.tmdb.org/t/p/w500/z2LA8eBTSuuPC4NBhIZRNIwpimH.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 11031,
+            "poster_url": "https://image.tmdb.org/t/p/w500/z2LA8eBTSuuPC4NBhIZRNIwpimH.jpg"
+          },
+          {
+            "title": "Singles",
+            "year": 1992,
+            "slug": "Cameron Crowe's earlier music-scene film capturing Seattle's grunge explosion through interconnected love stories",
+            "poster": "https://image.tmdb.org/t/p/w500/4T7OKBdkNBorRKWw7VSeuA225z1.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 11068,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4T7OKBdkNBorRKWw7VSeuA225z1.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The \"Band Aid\" archetype that Kate Hudson's Penny Lane represents connects to a larger tradition of films exploring women in male-dominated music spaces. **Ladies and Gentlemen, The Fabulous Stains** (1982) follows teenage punk rockers fighting industry sexism, while **What's Love Got to Do with It** (1993) shows Tina Turner breaking free from Ike's control. These films challenge the \"groupie\" stereotype, showing women as active participants in shaping music culture."
+      },
+      {
+        "type": "text",
+        "content": "Almost Famous sits within a rich tradition of rock journalism films. **Velvet Goldmine** (1998) follows a reporter investigating a glam rock star's disappearance. **Control** (2007) examines Joy Division through photographer Anton Corbijn's lens. These films use journalists as outsiders who can both celebrate and critique music culture, much like William's journey with Stillwater. SUBHEAD: The Evolution of Music Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "24 Hour Party People",
+            "year": 2002,
+            "slug": "The wild true story of Manchester's Factory Records and the rise of Joy Division and New Order",
+            "poster": "https://image.tmdb.org/t/p/w500/8f50NQ1wz6hdxfCISCPV8XQ6DII.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 2750,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8f50NQ1wz6hdxfCISCPV8XQ6DII.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The authenticity of Almost Famous influenced later music films like **Walk the Line** (2005) and **Bohemian Rhapsody** (2018), though these bigger biopics often sacrifice intimacy for spectacle. Recent films like **Inside Llewyn Davis** (2013) return to Almost Famous's personal approach, examining how music shapes identity rather than just chronicling famous lives."
+      }
+    ],
+    "exploreFurther": [
+      "The Real-Life Music Journalists Who Shaped Rock Criticism",
+      "Cameron Crowe's Journey from Rolling Stone to Filmmaker",
+      "The Role of \"Band Aids\" in 1970s Rock Culture",
+      "How Almost Famous Influenced Modern Music Biopics",
+      "The Art of the Original Soundtrack in Film"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Rock Star",
+          "year": 2001,
+          "slug": "Mark Wahlberg leads this story of a tribute band singer who joins his heroes",
+          "poster": "https://image.tmdb.org/t/p/w500/8pRMweo9WA1MvYOLsD2hWyFpZ1V.jpg",
+          "initialStreaming": null,
+          "tmdb_id": 12508,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8pRMweo9WA1MvYOLsD2hWyFpZ1V.jpg"
+        },
+        {
+          "title": "School of Rock",
+          "year": 2003,
+          "slug": "Jack Black teaches prep school kids about rock and roll",
+          "poster": "https://image.tmdb.org/t/p/w500/zXLXaepIBvFVLU25DH3wv4IPSbe.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1584,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zXLXaepIBvFVLU25DH3wv4IPSbe.jpg"
+        },
+        {
+          "title": "That Thing You Do!",
+          "year": 1996,
+          "slug": "Tom Hanks directs this story of a one-hit-wonder band in the 1960s",
+          "poster": "https://image.tmdb.org/t/p/w500/9RmZu33qHdyZFGLfhEOmkTjdNEu.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9591,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9RmZu33qHdyZFGLfhEOmkTjdNEu.jpg"
+        },
+        {
+          "title": "Velvet Goldmine",
+          "year": 1998,
+          "slug": "A reporter investigates a missing glam rock star in this stylized drama",
+          "poster": "https://image.tmdb.org/t/p/w500/bsuSac0PldPFcOtR1Vioe7VBF4l.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 1808,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bsuSac0PldPFcOtR1Vioe7VBF4l.jpg"
+        },
+        {
+          "title": "The Runaways",
+          "year": 2010,
+          "slug": "Biopic of the groundbreaking all-girl rock band",
+          "poster": "https://image.tmdb.org/t/p/w500/aqO3jz1VaunIloF17e3LvNqIkMl.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 27586,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aqO3jz1VaunIloF17e3LvNqIkMl.jpg"
+        },
+        {
+          "title": "A Star Is Born",
+          "year": 2018,
+          "slug": "Modern take on the classic story of music industry romance and tragedy",
+          "poster": "https://image.tmdb.org/t/p/w500/wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 332562,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg"
+        },
+        {
+          "title": "CBGB",
+          "year": 2013,
+          "slug": "The story of New York's legendary punk rock club",
+          "poster": "https://image.tmdb.org/t/p/w500/9xHdRPamTjLG4bosURJju6UYCHp.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 111479,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9xHdRPamTjLG4bosURJju6UYCHp.jpg"
+        },
+        {
+          "title": "The Doors",
+          "year": 1991,
+          "slug": "Oliver Stone's psychedelic Jim Morrison biopic",
+          "poster": "https://image.tmdb.org/t/p/w500/x1LM3dzGuG6xOz0aT2e71o11vhu.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 10537,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x1LM3dzGuG6xOz0aT2e71o11vhu.jpg"
+        },
+        {
+          "title": "Backbeat",
+          "year": 1994,
+          "slug": "Early days of The Beatles focusing on Stuart Sutcliffe",
+          "poster": "https://image.tmdb.org/t/p/w500/1BuFx7P8veAUUZDXqdMNhtdCUSM.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 12635,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1BuFx7P8veAUUZDXqdMNhtdCUSM.jpg"
+        },
+        {
+          "title": "Detroit Rock City",
+          "year": 1999,
+          "slug": "Teen comedy about KISS fans trying to attend a concert",
+          "poster": "https://image.tmdb.org/t/p/w500/jedOctnsD20K4IvOeh5jG811B8L.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 9781,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jedOctnsD20K4IvOeh5jG811B8L.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

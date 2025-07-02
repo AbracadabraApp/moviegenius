@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "It's a Wonderful Life",
+    "year": 1946,
+    "initialSlug": "Holiday classic about second chances",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/bSqt9rhDZx1Q7UZ86dBPKdNomp2.jpg",
+    "initialStreaming": null,
+    "tmdbId": 1585,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**It's a Wonderful Life** (1946) stands as Frank Capra's masterpiece of humanist storytelling, though it initially flopped at the box office. James Stewart delivers his finest performance as George Bailey, a man whose Christmas Eve suicide attempt transforms into a profound journey of self-discovery. The film pioneered the \"life review\" narrative that influenced countless works like **The Family Man** (2000) and **A Christmas Carol** adaptations. Capra's genius lies in building the first two hours as a detailed character study before unleashing the supernatural element through Clarence the angel, making the fantasy element earned rather than gimmicky."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Shop Around the Corner",
+            "year": 1940,
+            "slug": "Jimmy Stewart stars in this charming romance about two feuding shop employees who unknowingly fall in love as pen pals",
+            "poster": "https://image.tmdb.org/t/p/w500/dZ1aEzGYRiqJwPfjS6VL7wUkHmF.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 20334,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dZ1aEzGYRiqJwPfjS6VL7wUkHmF.jpg"
+          },
+          {
+            "title": "Meet John Doe",
+            "year": 1941,
+            "slug": "Another Capra classic about a fake everyman who becomes a symbol of hope during the Depression",
+            "poster": "https://image.tmdb.org/t/p/w500/dnBZbFE2OGlTGNGBVTn6t83tJtd.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 32574,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dnBZbFE2OGlTGNGBVTn6t83tJtd.jpg"
+          },
+          {
+            "title": "The Bishop's Wife",
+            "year": 1947,
+            "slug": "Cary Grant plays an angel helping a bishop reconnect with what matters during Christmas",
+            "poster": "https://image.tmdb.org/t/p/w500/2sMpffmvoJlW7WBcvyHTPR9DEsj.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 19490,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2sMpffmvoJlW7WBcvyHTPR9DEsj.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's dark undertones are often overlooked. Set against the Depression and WWII, it tackles suicide, financial ruin, and crushing disappointment. These themes would later influence seasonal classics like **Bad Santa** (2003) and **Scrooged** (1988) that balance darkness with redemption. The Bailey Building & Loan storyline eerily predicted the 2008 financial crisis, proving the film's continued relevance beyond its holiday message."
+      },
+      {
+        "type": "text",
+        "content": "Cinematographer Joseph Walker created innovative effects for Clarence's heavenly sequences and the nightmarish \"Pottersville\" alternate reality. These techniques influenced later parallel-reality films like **Sliding Doors** (1998) and **The Butterfly Effect** (2004). The contrast between the warm, community-focused Bedford Falls and the noir-tinged Pottersville established a visual language for depicting moral choices in cinema. SUBHEAD: Legacy and Cultural Impact"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Mr. Smith Goes to Washington",
+            "year": 1939,
+            "slug": "Stewart and Capra's earlier collaboration about idealism versus political corruption",
+            "poster": "https://image.tmdb.org/t/p/w500/nDjg1fbNyq15excNDl3acd2IqAk.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 3083,
+            "poster_url": "https://image.tmdb.org/t/p/w500/nDjg1fbNyq15excNDl3acd2IqAk.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film entered public domain in 1974 due to a clerical error, leading to endless TV broadcasts that cemented its status as a Christmas staple. This accidental distribution strategy mirrors how **A Christmas Story** (1983) gained its following through repeated cable showings. The film's themes of community banking and housing directly influenced **Mary Poppins** (1964) and even **The Big Short** (2015), proving its reach beyond holiday fare."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Christmas Movies in American Cinema",
+      "Frank Capra's \"Common Man\" Trilogy Analysis",
+      "Depression-Era Banking in American Film",
+      "James Stewart's Postwar Career Transformation",
+      "Alternate Reality Narratives in Classic Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Greatest Gift",
+          "year": 1944,
+          "slug": "The Philip Van Doren Stern short story that inspired the film",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "N/A",
+          "tmdb_id": null
+        },
+        {
+          "title": "You Can't Take It With You",
+          "year": 1938,
+          "slug": "Earlier Capra-Stewart collaboration about values versus wealth",
+          "poster": "https://image.tmdb.org/t/p/w500/9JltqbDyWstYW6gnvqDO6L5bOrx.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 34106,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9JltqbDyWstYW6gnvqDO6L5bOrx.jpg"
+        },
+        {
+          "title": "Holiday Affair",
+          "year": 1949,
+          "slug": "Post-war Christmas romance dealing with loss and new beginnings",
+          "poster": "https://image.tmdb.org/t/p/w500/aQsQJNiRI8L8pBBrCIGUUXNtv2M.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 24863,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aQsQJNiRI8L8pBBrCIGUUXNtv2M.jpg"
+        },
+        {
+          "title": "Remember the Night",
+          "year": 1940,
+          "slug": "Barbara Stanwyck holiday film mixing romance and social commentary",
+          "poster": "https://image.tmdb.org/t/p/w500/jHGXPEERDrBZpscGbRTP5HHyeOm.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 29617,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jHGXPEERDrBZpscGbRTP5HHyeOm.jpg"
+        },
+        {
+          "title": "Christmas in Connecticut",
+          "year": 1945,
+          "slug": "Holiday comedy about authenticity versus appearance",
+          "poster": "https://image.tmdb.org/t/p/w500/oH1hM9wOZZflPZ5smKqWXvLXcyX.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 13669,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oH1hM9wOZZflPZ5smKqWXvLXcyX.jpg"
+        },
+        {
+          "title": "Miracle on 34th Street",
+          "year": 1947,
+          "slug": "Another post-war Christmas classic about faith and cynicism",
+          "poster": "https://image.tmdb.org/t/p/w500/qyAc9X9XHloIqy3oJbbZ44Cw0Hm.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 11881,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qyAc9X9XHloIqy3oJbbZ44Cw0Hm.jpg"
+        },
+        {
+          "title": "The Bells of St. Mary's",
+          "year": 1945,
+          "slug": "Bing Crosby as a priest helping save a struggling school",
+          "poster": "https://image.tmdb.org/t/p/w500/e2REwGOzsD21acHSRcXcXzkQmUi.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 32430,
+          "poster_url": "https://image.tmdb.org/t/p/w500/e2REwGOzsD21acHSRcXcXzkQmUi.jpg"
+        },
+        {
+          "title": "3 Godfathers",
+          "year": 1948,
+          "slug": "John Ford western reimagining the Christmas story",
+          "poster": "https://image.tmdb.org/t/p/w500/dsVrYIpK2Rcgsr5QrfjBQWee5JE.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 29244,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dsVrYIpK2Rcgsr5QrfjBQWee5JE.jpg"
+        },
+        {
+          "title": "Bachelor Mother",
+          "year": 1939,
+          "slug": "Comedy about mistaken identity and found family during holidays",
+          "poster": "https://image.tmdb.org/t/p/w500/asVj2RpNpr9CSDYdYYu5Osg33A.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 36488,
+          "poster_url": "https://image.tmdb.org/t/p/w500/asVj2RpNpr9CSDYdYYu5Osg33A.jpg"
+        },
+        {
+          "title": "Come to the Stable",
+          "year": 1949,
+          "slug": "Inspiring story of nuns building a children's hospital",
+          "poster": "https://image.tmdb.org/t/p/w500/5S8e0COr9OmIeuy9nGL6x0H1oda.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 120481,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5S8e0COr9OmIeuy9nGL6x0H1oda.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

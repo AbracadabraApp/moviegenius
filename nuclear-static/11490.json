@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "The Child",
+    "year": 2005,
+    "initialSlug": "An evil child's dark reign.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/dk7ZpsVKLt2nwjQZZIde0WP4oQV.jpg",
+    "initialStreaming": null,
+    "tmdbId": 11490,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Child (L'Enfant)** (2005) marks a devastating pinnacle in the Dardenne brothers' exploration of moral crisis in working-class Belgium. The film follows Bruno, a young petty criminal who sells his newborn son on the black market, then must desperately try to undo his horrific choice. Like their earlier masterpiece **Rosetta** (1999), the Dardennes employ their signature documentary-like style - handheld cameras, natural lighting, and zero non-diegetic music. This raw aesthetic amplifies the gut-punch of Bruno's choices. The film shares DNA with other European social realist classics like **Bicycle Thieves** (1948), examining how poverty corrupts fundamental human bonds."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Child",
+            "year": 2005,
+            "slug": "A young hustler sells his newborn baby, then desperately tries to recover him in this Palme d'Or winner",
+            "poster": "https://image.tmdb.org/t/p/w500/dk7ZpsVKLt2nwjQZZIde0WP4oQV.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 11490,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dk7ZpsVKLt2nwjQZZIde0WP4oQV.jpg"
+          },
+          {
+            "title": "Rosetta",
+            "year": 1999,
+            "slug": "An intense portrait of a young woman's fight for stable employment in industrial Belgium",
+            "poster": "https://image.tmdb.org/t/p/w500/buwLjQPPA9FaATvKzeAppLXiGMB.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 11489,
+            "poster_url": "https://image.tmdb.org/t/p/w500/buwLjQPPA9FaATvKzeAppLXiGMB.jpg"
+          },
+          {
+            "title": "Two Days One Night",
+            "year": 2014,
+            "slug": "Marion Cotillard fights to keep her job by convincing coworkers to forfeit their bonuses",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The Dardennes' influence resonates through contemporary social realist cinema. **Fish Tank** (2009) and **The Florida Project** (2017) echo their intimate portrayal of marginalized lives, while **Shoplifters** (2018) similarly interrogates how economic desperation warps family bonds. The handheld urgency of their style has become a grammar for depicting working-class struggle, seen in everything from **American Honey** (2016) to **Never Rarely Sometimes Always** (2020). SUBHEAD: The New Wave of Social Realism"
+      },
+      {
+        "type": "text",
+        "content": "While the Dardennes helped codify modern social realist cinema, filmmakers like Ken Loach and Mike Leigh laid crucial groundwork. **Kes** (1969) and **Naked** (1993) established the brutal honesty and class consciousness that define the genre. Contemporary directors like Andrea Arnold and Sean Baker carry this torch, though with distinctive stylistic flourishes - **American Honey** (2016) infuses its realism with dreamy Americana, while **Tangerine** (2015) brings saturated color and frenetic energy to its street-level story."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Social Realist Cinema from Italian Neorealism to Present",
+      "The Dardenne Brothers' Filmmaking Techniques and Their Influence",
+      "Portrayal of Economic Struggle in Contemporary European Cinema",
+      "Moral Choice and Redemption in Working Class Cinema",
+      "Documentary Techniques in Narrative Filmmaking"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Bicycle Thieves",
+          "year": 1948,
+          "slug": "A father and son search for a stolen bicycle in post-war Rome",
+          "poster": "https://image.tmdb.org/t/p/w500/abmxGiCV04NQj4jngbSQTGLgiC1.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 5156,
+          "poster_url": "https://image.tmdb.org/t/p/w500/abmxGiCV04NQj4jngbSQTGLgiC1.jpg"
+        },
+        {
+          "title": "La Promesse",
+          "year": 1996,
+          "slug": "A teenager grapples with moral choices when his father exploits illegal immigrants",
+          "poster": "https://image.tmdb.org/t/p/w500/pmGx73cJ3gVCCli1JAVQOaLbdnY.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 24183,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pmGx73cJ3gVCCli1JAVQOaLbdnY.jpg"
+        },
+        {
+          "title": "The Kid with a Bike",
+          "year": 2011,
+          "slug": "An abandoned boy forms a bond with a hairdresser while searching for his father",
+          "poster": "https://image.tmdb.org/t/p/w500/5uRiWyYSAYYScTRe9HP7BHpOQvr.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 63831,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5uRiWyYSAYYScTRe9HP7BHpOQvr.jpg"
+        },
+        {
+          "title": "I, Daniel Blake",
+          "year": 2016,
+          "slug": "A carpenter battles bureaucracy to receive disability benefits",
+          "poster": "https://image.tmdb.org/t/p/w500/nu3WVABXz2W85N6JXTZOT1aWS3b.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 374473,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nu3WVABXz2W85N6JXTZOT1aWS3b.jpg"
+        },
+        {
+          "title": "Fish Tank",
+          "year": 2009,
+          "slug": "A teenage girl's life changes when her mother's new boyfriend shows interest in her dancing",
+          "poster": "https://image.tmdb.org/t/p/w500/rI3MKBDsWzQHi9PWDAMKkgmYcff.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 24469,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rI3MKBDsWzQHi9PWDAMKkgmYcff.jpg"
+        },
+        {
+          "title": "The Florida Project",
+          "year": 2017,
+          "slug": "Childhood wonder amid poverty at a motel near Disney World",
+          "poster": "https://image.tmdb.org/t/p/w500/eE1J6nCMw8UhsAOI6HhhItarWmN.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 394117,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eE1J6nCMw8UhsAOI6HhhItarWmN.jpg"
+        },
+        {
+          "title": "Shoplifters",
+          "year": 2018,
+          "slug": "A family of small-time crooks takes in a neglected child",
+          "poster": "https://image.tmdb.org/t/p/w500/4nfRUOv3LX5zLn98WS1WqVBk9E9.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 505192,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4nfRUOv3LX5zLn98WS1WqVBk9E9.jpg"
+        },
+        {
+          "title": "Sorry We Missed You",
+          "year": 2019,
+          "slug": "A delivery driver's family struggles with the gig economy",
+          "poster": "https://image.tmdb.org/t/p/w500/jNvlqNDnXH8aqBeiBxNNP0wWWO3.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 522369,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jNvlqNDnXH8aqBeiBxNNP0wWWO3.jpg"
+        },
+        {
+          "title": "Rosetta",
+          "year": 1999,
+          "slug": "A teenager desperately searches for work and stability",
+          "poster": "https://image.tmdb.org/t/p/w500/buwLjQPPA9FaATvKzeAppLXiGMB.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 11489,
+          "poster_url": "https://image.tmdb.org/t/p/w500/buwLjQPPA9FaATvKzeAppLXiGMB.jpg"
+        },
+        {
+          "title": "Naked",
+          "year": 1993,
+          "slug": "A philosophical drifter wanders through London's underbelly",
+          "poster": "https://image.tmdb.org/t/p/w500/xMYP4uaNeyPmX4FQ2xxWk2eIN6K.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 21450,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xMYP4uaNeyPmX4FQ2xxWk2eIN6K.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

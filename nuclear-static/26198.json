@@ -1,0 +1,175 @@
+{
+  "props": {
+    "title": "The Keep",
+    "year": 1983,
+    "initialSlug": "Evil Dwells Within These Walls",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/yd9wU3oajNxwaFHQ02rtTBuSFJD.jpg",
+    "initialStreaming": null,
+    "tmdbId": 26198,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Michael Mann's **The Keep** (1983) stands as one of cinema's most fascinating misfires - a supernatural WWII horror film that blends Nazi occupation, Jewish mysticism, and ancient evil. Mann's signature visual style emerges in neon-tinged fog and stark architectural compositions, while Tangerine Dream's pulsing electronic score creates an otherworldly atmosphere. Despite studio interference and a troubled production that led to severe editing, the film's ambitious fusion of horror and war movie aesthetics influenced later genre-bending works like **Overlord** (2018) and **Pan's Labyrinth** (2006)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Hellboy",
+            "year": 2004,
+            "slug": "Guillermo del Toro's supernatural WWII adventure follows a demon fighting Nazis and elder gods",
+            "poster": "https://image.tmdb.org/t/p/w500/21hS8mD8uxBVvf8xVYR30LbbmPO.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 1487,
+            "poster_url": "https://image.tmdb.org/t/p/w500/21hS8mD8uxBVvf8xVYR30LbbmPO.jpg"
+          },
+          {
+            "title": "The Devil's Backbone",
+            "year": 2001,
+            "slug": "del Toro's ghost story set in a Spanish Civil War orphanage combines war trauma with supernatural horror",
+            "poster": "https://image.tmdb.org/t/p/w500/iP1z1aJzPnkP8FHg77TS7ukqoEZ.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 1433,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iP1z1aJzPnkP8FHg77TS7ukqoEZ.jpg"
+          },
+          {
+            "title": "Outpost",
+            "year": 2008,
+            "slug": "Nazi zombie horror film about modern mercenaries discovering an underground bunker",
+            "poster": "https://image.tmdb.org/t/p/w500/rwWEsWV1DNCqZudEiHvk1NPeUla.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 9017,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rwWEsWV1DNCqZudEiHvk1NPeUla.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Mann's early career fascination with atmosphere over conventional narrative reaches its apex in **The Keep**. The film shares DNA with other early 80s horror-fantasy hybrids like **The Company of Wolves** (1984) and **Legend** (1985), where mood and visual design take precedence over plot coherence. The Keep's brutalist architecture and cold blue lighting prefigure Mann's later urban nightscapes in **Manhunter** (1986) and **Heat** (1995)."
+      },
+      {
+        "type": "text",
+        "content": "The film's troubled production history mirrors other ambitious genre films of the era like **Blade Runner** (1982) and **Once Upon a Time in America** (1984) - works that suffered studio interference but gained cult followings. The Keep's original 210-minute cut remains lost, making it one of horror cinema's most intriguing \"what-if\" scenarios alongside **Event Horizon** (1997)'s legendary missing footage. SUBHEAD: Gothic Horror and War"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Prince of Darkness",
+            "year": 1987,
+            "slug": "John Carpenter's metaphysical horror about evil imprisoned in a church basement",
+            "poster": "https://image.tmdb.org/t/p/w500/jjcAOhtGuX4p8XvlVn1WXUT1jWi.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 8852,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jjcAOhtGuX4p8XvlVn1WXUT1jWi.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The Keep's fusion of Gothic horror with WWII themes created a unique subgenre template. Films like **Dead Snow** (2009) and **Frankenstein's Army** (2013) followed its lead in combining Nazi occultism with supernatural terror. The Keep's emphasis on ancient evil awakened by human conflict particularly influenced **Hellboy** (2004) and its sequel, where mythological threats emerge from WWII's darkness."
+      }
+    ],
+    "exploreFurther": [
+      "Michael Mann's Visual Style Evolution",
+      "Nazi Occultism in Horror Cinema",
+      "Lost and Incomplete Horror Films",
+      "Tangerine Dream's Horror Soundtracks",
+      "Gothic Architecture in Horror Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Overlord",
+          "year": 2018,
+          "slug": "WWII soldiers discover Nazi zombie experiments",
+          "poster": "https://image.tmdb.org/t/p/w500/l76Rgp32z2UxjULApxGXAPpYdAP.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 438799,
+          "poster_url": "https://image.tmdb.org/t/p/w500/l76Rgp32z2UxjULApxGXAPpYdAP.jpg"
+        },
+        {
+          "title": "Raiders of the Lost Ark",
+          "year": 1981,
+          "slug": "Nazi archeological horror elements",
+          "poster": "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 85,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg"
+        },
+        {
+          "title": "Below",
+          "year": 2002,
+          "slug": "Supernatural horror on WWII submarine",
+          "poster": "https://image.tmdb.org/t/p/w500/hpEqhozk3PAExlQrQliX4GC15XS.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 12590,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hpEqhozk3PAExlQrQliX4GC15XS.jpg"
+        },
+        {
+          "title": "Warhouse",
+          "year": 2013,
+          "slug": "Supernatural time loop horror in WWII",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Dead Snow",
+          "year": 2009,
+          "slug": "Nazi zombies in modern Norway",
+          "poster": "https://image.tmdb.org/t/p/w500/sfwVo5cZJtO8VyDWTILDt4f69IT.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 14451,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sfwVo5cZJtO8VyDWTILDt4f69IT.jpg"
+        },
+        {
+          "title": "Frankenstein's Army",
+          "year": 2013,
+          "slug": "Found footage horror with Nazi experiments",
+          "poster": "https://image.tmdb.org/t/p/w500/tBDuUfnAyN2OTHhyy4xyUrU8C2A.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 153738,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tBDuUfnAyN2OTHhyy4xyUrU8C2A.jpg"
+        },
+        {
+          "title": "Puppet Master III: Toulon's Revenge",
+          "year": 1991,
+          "slug": "Puppet master versus Nazis",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Bunker",
+          "year": 2001,
+          "slug": "Psychological horror with trapped Nazi soldiers",
+          "poster": "https://image.tmdb.org/t/p/w500/vsszyS8OIJDVU9xA9QJkgnmmyq4.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 7454,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vsszyS8OIJDVU9xA9QJkgnmmyq4.jpg"
+        },
+        {
+          "title": "Deathwatch",
+          "year": 2002,
+          "slug": "WWI supernatural horror in the trenches",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Devil's Rock",
+          "year": 2011,
+          "slug": "WWII soldiers encounter demons",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

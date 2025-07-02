@@ -1,0 +1,177 @@
+{
+  "props": {
+    "title": "Papillon",
+    "year": 1973,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/356oqQpug682OERsWV0bGZ0YxwQ.jpg",
+    "initialStreaming": null,
+    "tmdbId": 5924,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Papillon** (1973) stands as one of the greatest prison escape films ever made, powered by Steve McQueen's raw determination as Henri Charrière and Dustin Hoffman's nuanced portrayal of Louis Dega. The film's brutal depiction of the French penal system in French Guiana set new standards for prison dramas, influencing later works like **The Shawshank Redemption** (1994) and **Escape from Alcatraz** (1979). Director Franklin J. Schaffner, fresh off his success with **Patton** (1970), brings a documentary-like authenticity to the hellish conditions while keeping the focus tight on the unbreakable human spirit."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Cool Hand Luke",
+            "year": 1967,
+            "slug": "Paul Newman delivers an iconic performance as a defiant prisoner who refuses to be broken by the system",
+            "poster": "https://image.tmdb.org/t/p/w500/4ykzTiHKLamh3eZJ8orVICtU2Jp.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 903,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4ykzTiHKLamh3eZJ8orVICtU2Jp.jpg"
+          },
+          {
+            "title": "The Great Escape",
+            "year": 1963,
+            "slug": "Steve McQueen leads an all-star cast in this thrilling true story of Allied POWs plotting a massive breakout",
+            "poster": "https://image.tmdb.org/t/p/w500/gBH4H8UMFxl139HaLz6lRuvsel8.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 5925,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gBH4H8UMFxl139HaLz6lRuvsel8.jpg"
+          },
+          {
+            "title": "Bridge on the River Kwai",
+            "year": 1957,
+            "slug": "British POWs are forced to build a railway bridge in Burma, leading to a battle of wills between captive and captor",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence on the prison drama genre cannot be overstated. Its unflinching portrayal of solitary confinement, particularly the scenes of McQueen in the silent cell, set a new standard for depicting psychological torture on screen. Later films like **Midnight Express** (1978) and **In the Name of the Father** (1993) would draw heavily from Papillon's realistic approach to showing the dehumanizing effects of imprisonment."
+      },
+      {
+        "type": "text",
+        "content": "What sets **Papillon** apart is its epic scope combined with intimate character study. Unlike many prison films that focus solely on the escape, Schaffner takes time to explore the complex relationship between Papillon and Dega, creating a friendship narrative that would later influence films like **The Green Mile** (1999) and **Murder in the First** (1995). The film's extensive use of location shooting in Spain and Jamaica lends an authenticity that studio-bound prison films of the era couldn't match. SUBHEAD: The Evolution of the Prison Drama"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Escape from Alcatraz",
+            "year": 1979,
+            "slug": "Clint Eastwood stars in this taut thriller based on the only successful escape attempt from the infamous prison",
+            "poster": "https://image.tmdb.org/t/p/w500/uORr2GXQnyqgBOg6tVsRCJD2qxc.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 10734,
+            "poster_url": "https://image.tmdb.org/t/p/w500/uORr2GXQnyqgBOg6tVsRCJD2qxc.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Papillon** marked a crucial shift in how Hollywood approached prison films. Before its release, many prison movies like **Birdman of Alcatraz** (1962) romanticized incarceration or focused primarily on redemption. Papillon instead emphasized the systematic dehumanization of prisoners and the physical toll of imprisonment, influencing later works like **Hunger** (2008) and **A Prophet** (2009)."
+      }
+    ],
+    "exploreFurther": [
+      "The true story of Henri Charrière and the controversy surrounding his memoirs",
+      "The history of the French penal colony system in French Guiana",
+      "Steve McQueen's method acting approach and physical transformation for the role",
+      "Franklin J. Schaffner's visual techniques and use of location shooting",
+      "The evolution of the prison escape genre in cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Midnight Express",
+          "year": 1978,
+          "slug": "A young American faces the horrors of a Turkish prison after being caught smuggling drugs",
+          "poster": "https://image.tmdb.org/t/p/w500/mW54BtqVRxrPnoO9gQQjTLJlnuU.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 11327,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mW54BtqVRxrPnoO9gQQjTLJlnuU.jpg"
+        },
+        {
+          "title": "The Shawshank Redemption",
+          "year": 1994,
+          "slug": "A wrongfully convicted banker forms a deep friendship while serving a life sentence",
+          "poster": "https://image.tmdb.org/t/p/w500/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 278,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg"
+        },
+        {
+          "title": "Escape from Pretoria",
+          "year": 2020,
+          "slug": "Daniel Radcliffe stars in this true story of political prisoners escaping from a South African prison",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "A Man Escaped",
+          "year": 1956,
+          "slug": "Robert Bresson's masterful telling of a French Resistance member's prison break",
+          "poster": "https://image.tmdb.org/t/p/w500/gkoZ8fFib24zhB2DKpjQ09SK9FU.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 15244,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gkoZ8fFib24zhB2DKpjQ09SK9FU.jpg"
+        },
+        {
+          "title": "Down By Law",
+          "year": 1986,
+          "slug": "Jim Jarmusch's stylish tale of three prisoners planning an escape",
+          "poster": "https://image.tmdb.org/t/p/w500/4IyxoUQ7BB5kcSd7gASe2dTyWu7.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1554,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4IyxoUQ7BB5kcSd7gASe2dTyWu7.jpg"
+        },
+        {
+          "title": "In the Name of the Father",
+          "year": 1993,
+          "slug": "Daniel Day-Lewis stars in this true story of wrongful imprisonment in an Irish prison",
+          "poster": "https://image.tmdb.org/t/p/w500/3NcIkKxaO2SmRVsG1v50XhtmL0f.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 7984,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3NcIkKxaO2SmRVsG1v50XhtmL0f.jpg"
+        },
+        {
+          "title": "The Next Man",
+          "year": 1976,
+          "slug": "Sean Connery leads this tense prison drama",
+          "poster": "https://image.tmdb.org/t/p/w500/nByL99cOHyRK0tTSW1v4y94WIY0.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 86133,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nByL99cOHyRK0tTSW1v4y94WIY0.jpg"
+        },
+        {
+          "title": "Brute Force",
+          "year": 1947,
+          "slug": "Burt Lancaster stars in this noir prison classic",
+          "poster": "https://image.tmdb.org/t/p/w500/lpKW8JG2IEJlz7WIyqLSsPHGnrd.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 28297,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lpKW8JG2IEJlz7WIyqLSsPHGnrd.jpg"
+        },
+        {
+          "title": "Le Trou",
+          "year": 1960,
+          "slug": "Jacques Becker's detailed French prison escape film",
+          "poster": "https://image.tmdb.org/t/p/w500/xyZhiOz5NHVBUKlpioxjwajy7pm.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 29259,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xyZhiOz5NHVBUKlpioxjwajy7pm.jpg"
+        },
+        {
+          "title": "The Hill",
+          "year": 1965,
+          "slug": "Sean Connery in a brutal military prison drama",
+          "poster": "https://image.tmdb.org/t/p/w500/cmBpImAjHJnuHXMVByzqnxtDcae.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 24395,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cmBpImAjHJnuHXMVByzqnxtDcae.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

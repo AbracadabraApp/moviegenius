@@ -1,0 +1,188 @@
+{
+  "props": {
+    "title": "The Big Heat",
+    "year": 1953,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/n1xdAX2g6PU3aqQXmZtY9gXvvEz.jpg",
+    "initialStreaming": null,
+    "tmdbId": 14580,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Big Heat** (1953) stands as Fritz Lang's definitive American noir, delivering brutal violence and moral corruption with clinical precision. Glenn Ford plays Sergeant Dave Bannion, whose investigation into a fellow cop's suicide explodes into a savage war against a crime syndicate. Lang's unflinching direction turns everyday spaces - diners, apartments, cars - into pressure cookers of violence. The infamous coffee-scalding scene with Gloria Grahame and Lee Marvin remains one of noir's most shocking moments, demonstrating how Lang brought his German Expressionist sensibilities to American crime films."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Touch of Evil",
+            "year": 1958,
+            "slug": "Orson Welles' baroque noir masterpiece follows a corrupt cop investigation on the Mexican border, featuring revolutionary tracking shots",
+            "poster": "https://image.tmdb.org/t/p/w500/1pvRgmfBaoMczIJBOi9gCOZ4FMC.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 1480,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1pvRgmfBaoMczIJBOi9gCOZ4FMC.jpg"
+          },
+          {
+            "title": "In a Lonely Place",
+            "year": 1950,
+            "slug": "Humphrey Bogart plays a volatile screenwriter suspected of murder, with Gloria Grahame as his neighbor-turned-alibi",
+            "poster": "https://image.tmdb.org/t/p/w500/vdlCUR7hu7BI8JRl46n66PiG17k.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 17057,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vdlCUR7hu7BI8JRl46n66PiG17k.jpg"
+          },
+          {
+            "title": "Where the Sidewalk Ends",
+            "year": 1950,
+            "slug": "Otto Preminger directs Dana Andrews as a brutal detective whose methods mirror the criminals he hunts",
+            "poster": "https://image.tmdb.org/t/p/w500/27Q0i6ZjmRnjfvegksunixnLxuG.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 17221,
+            "poster_url": "https://image.tmdb.org/t/p/w500/27Q0i6ZjmRnjfvegksunixnLxuG.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of police corruption predates later classics like **Serpico** (1973) and **L.A. Confidential** (1997). Lang portrays law enforcement as a system where moral compromise is inevitable, yet Bannion's righteous fury provides a counterpoint to the endemic corruption. The violence against women - particularly the attacks on Lucy Chapman and Debby Marsh - shocked 1953 audiences but served Lang's critique of masculine power structures and institutional failure."
+      },
+      {
+        "type": "text",
+        "content": "Lang's visual style in **The Big Heat** influenced generations of filmmakers. The stark lighting and claustrophobic framing appear in everything from **Chinatown** (1974) to **Drive** (2011). His unflinching approach to violence, showing both its suddenness and lasting consequences, echoes through **Dirty Harry** (1971) and **The French Connection** (1971), where brutal acts carry moral weight rather than serving as mere spectacle. SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Force of Evil",
+            "year": 1948,
+            "slug": "John Garfield stars in a noir examining the thin line between legitimate business and organized crime",
+            "poster": "https://image.tmdb.org/t/p/w500/x33LVKf4yWdjMeczJkzE5sIw4VG.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 26744,
+            "poster_url": "https://image.tmdb.org/t/p/w500/x33LVKf4yWdjMeczJkzE5sIw4VG.jpg"
+          },
+          {
+            "title": "Kiss Me Deadly",
+            "year": 1955,
+            "slug": "Ralph Meeker's brutal private eye follows a mystery into atomic age paranoia",
+            "poster": "https://image.tmdb.org/t/p/w500/z7me91nrpWLHY1mZOB2v20cK0zY.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 18030,
+            "poster_url": "https://image.tmdb.org/t/p/w500/z7me91nrpWLHY1mZOB2v20cK0zY.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends beyond noir into modern crime thrillers. Michael Mann's **Heat** (1995) and **Thief** (1981) share Lang's meticulous attention to procedure and moral ambiguity. The theme of a lone crusader against systemic corruption resurfaces in films like **The Departed** (2006) and **Dark Knight** (2008), where institutions fail and individual moral choices carry devastating consequences."
+      }
+    ],
+    "exploreFurther": [
+      "Fritz Lang's American Period - How his German Expressionist style transformed Film Noir",
+      "Gloria Grahame in Film Noir - The complex femmes fatales of Hollywood's dark era",
+      "Police Corruption in Cinema - From The Big Heat to Training Day",
+      "Violence in Film Noir - How implied brutality became explicit",
+      "Glenn Ford's Noir Persona - The evolution from good guy to morally compromised hero"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Scarlet Street",
+          "year": 1945,
+          "slug": "Lang's noir about a mild-mannered painter destroyed by femme fatales",
+          "poster": "https://image.tmdb.org/t/p/w500/eGEDor1BWSQGaLtOntPHUSqNzRC.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 17058,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eGEDor1BWSQGaLtOntPHUSqNzRC.jpg"
+        },
+        {
+          "title": "Double Indemnity",
+          "year": 1944,
+          "slug": "Insurance fraud leads to murder in Billy Wilder's noir masterpiece",
+          "poster": "https://image.tmdb.org/t/p/w500/rVNYZZgfhwqVMMWlBmxOfWqnwCj.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 996,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rVNYZZgfhwqVMMWlBmxOfWqnwCj.jpg"
+        },
+        {
+          "title": "The Killers",
+          "year": 1946,
+          "slug": "Burt Lancaster's film debut investigating a man who waited to die",
+          "poster": "https://image.tmdb.org/t/p/w500/uXnuc6pW01s1MDwb6QwBWg2JQeX.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 14638,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uXnuc6pW01s1MDwb6QwBWg2JQeX.jpg"
+        },
+        {
+          "title": "Out of the Past",
+          "year": 1947,
+          "slug": "Robert Mitchum can't escape his criminal history",
+          "poster": "https://image.tmdb.org/t/p/w500/lnUK6Cg5ARM0qaq0B5SG20VAM0h.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 678,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lnUK6Cg5ARM0qaq0B5SG20VAM0h.jpg"
+        },
+        {
+          "title": "Odds Against Tomorrow",
+          "year": 1959,
+          "slug": "Harry Belafonte and Robert Ryan in a heist noir examining racism",
+          "poster": "https://image.tmdb.org/t/p/w500/z5941aC7ttyY2gUfyKZfXVq11Sg.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 26983,
+          "poster_url": "https://image.tmdb.org/t/p/w500/z5941aC7ttyY2gUfyKZfXVq11Sg.jpg"
+        },
+        {
+          "title": "The Set-Up",
+          "year": 1949,
+          "slug": "Real-time noir about an aging boxer's last fight",
+          "poster": "https://image.tmdb.org/t/p/w500/uxE5LZP0RClXKsAqtrHQPiNLHzf.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 17218,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uxE5LZP0RClXKsAqtrHQPiNLHzf.jpg"
+        },
+        {
+          "title": "This Gun for Hire",
+          "year": 1942,
+          "slug": "Alan Ladd's hitman seeks revenge with Veronica Lake",
+          "poster": "https://image.tmdb.org/t/p/w500/wfbRnfY1PQTRlDxZ0XEAw5zSeKn.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 16703,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wfbRnfY1PQTRlDxZ0XEAw5zSeKn.jpg"
+        },
+        {
+          "title": "Raw Deal",
+          "year": 1948,
+          "slug": "Anthony Mann directs escaped con Dennis O'Keefe",
+          "poster": "https://image.tmdb.org/t/p/w500/qLC4VnigxhC4ovSZdH2JUjuXoYY.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 26167,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qLC4VnigxhC4ovSZdH2JUjuXoYY.jpg"
+        },
+        {
+          "title": "99 River Street",
+          "year": 1953,
+          "slug": "Ex-boxer cab driver drawn into murder",
+          "poster": "https://image.tmdb.org/t/p/w500/sJ4kX89iD0Ne8cdlVAFCsAn0kbe.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 36949,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sJ4kX89iD0Ne8cdlVAFCsAn0kbe.jpg"
+        },
+        {
+          "title": "The Narrow Margin",
+          "year": 1952,
+          "slug": "Cop protects witness on claustrophobic train journey",
+          "poster": "https://image.tmdb.org/t/p/w500/kdlCfBmTZ7CoJoCvS1b56Xj1qJi.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 31713,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kdlCfBmTZ7CoJoCvS1b56Xj1qJi.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

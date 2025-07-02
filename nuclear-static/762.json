@@ -1,0 +1,179 @@
+{
+  "props": {
+    "title": "Monty Python and the Holy Grail",
+    "year": 1975,
+    "initialSlug": "A silly quest for God's cup leads to absurd chaos",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/hWx1ANiWEWWyzKPN0us35HCGnhQ.jpg",
+    "initialStreaming": null,
+    "tmdbId": 762,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Monty Python and the Holy Grail** (1975) revolutionized comedy by merging British absurdism with medieval parody. The Python troupe (John Cleese, Graham Chapman, Terry Jones, Terry Gilliam, Eric Idle, Michael Palin) transformed a £229,000 budget into pure anarchic genius. Their deconstruction of Arthurian legend birthed countless quotable moments - from coconut horses to the Knights Who Say \"Ni!\" The film's influence extends through modern comedy, with **Shaun of the Dead** (2004) and **What We Do in the Shadows** (2014) directly channeling its fourth-wall-breaking style and deadpan approach to the absurd."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Life of Brian",
+            "year": 1979,
+            "slug": "The Pythons' satirical masterpiece following a man mistaken for the Messiah, featuring sharper political commentary than Holy Grail",
+            "poster": "https://image.tmdb.org/t/p/w500/lSSA64WF0M0BXnjwr2quMh6shCl.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 583,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lSSA64WF0M0BXnjwr2quMh6shCl.jpg"
+          },
+          {
+            "title": "Time Bandits",
+            "year": 1981,
+            "slug": "Terry Gilliam's fantasy adventure sharing Holy Grail's medieval elements and surreal humor",
+            "poster": "https://image.tmdb.org/t/p/w500/4VZtpwdhHQSa4LUkvujyGAHb1hG.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 36819,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4VZtpwdhHQSa4LUkvujyGAHb1hG.jpg"
+          },
+          {
+            "title": "The Princess Bride",
+            "year": 1987,
+            "slug": "Perfect blend of fantasy adventure and self-aware comedy that follows Holy Grail's genre-bending path",
+            "poster": "https://image.tmdb.org/t/p/w500/dvjqlp2sAhUeFjUOfQDgqwpphHj.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 2493,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dvjqlp2sAhUeFjUOfQDgqwpphHj.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's DIY aesthetic, born of necessity, became a signature style. Terry Gilliam's cut-paper animations bridge scenes with surreal medieval artwork brought to life. This handmade charm influenced countless indie comedies, from **Napoleon Dynamite** (2004) to **Eagle vs Shark** (2007). The minimal effects and creative workarounds (using coconuts for horse hooves) proved that imagination trumps budget - a lesson that shaped comedy filmmaking for decades."
+      },
+      {
+        "type": "text",
+        "content": "Holy Grail's fearless commitment to absurdist premises revolutionized comedy pacing. Whether it's the \"bring out your dead\" scene or the killer rabbit, jokes push past normal endpoints into surreal territory. This influenced everything from **Airplane!** (1980) to **Anchorman: The Legend of Ron Burgundy** (2004). The film's mock-historical approach also paved the way for parodies like **History of the World, Part I** (1981) and **A Knight's Tale** (2001). SUBHEAD: Legacy and Modern Impact"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Jabberwocky",
+            "year": 1977,
+            "slug": "Terry Gilliam's solo directorial debut continues Holy Grail's medieval satire with darker tones",
+            "poster": "https://image.tmdb.org/t/p/w500/kprcqmFxWPU45L1ZnMXO5yPPMVA.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 11834,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kprcqmFxWPU45L1ZnMXO5yPPMVA.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's DNA appears throughout modern comedy. **Spamalot** (2004) adapted it for Broadway, while shows like **Galavant** (2015) and **Miracle Workers: Dark Ages** (2020) channel its irreverent take on medieval settings. The meta-humor and fourth-wall breaks influenced everything from **Deadpool** (2016) to **The Lego Movie** (2014), proving Holy Grail's lasting impact on self-aware comedy."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of British Comedy: From Goon Show to Python",
+      "Terry Gilliam's Animation Techniques",
+      "Medieval Cinema: Historical Accuracy vs. Entertainment",
+      "The Impact of Budget Constraints on Creative Filmmaking",
+      "Comedy Writing: Structure vs. Chaos in Python's Method"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Meaning of Life",
+          "year": 1983,
+          "slug": "Python's sketch comedy film tackling life's big questions",
+          "poster": "https://image.tmdb.org/t/p/w500/9yavZ9WgEZIpWi2EbVW8At9RPdo.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 4543,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9yavZ9WgEZIpWi2EbVW8At9RPdo.jpg"
+        },
+        {
+          "title": "A Fish Called Wanda",
+          "year": 1988,
+          "slug": "John Cleese's heist comedy with Python-esque humor",
+          "poster": "https://image.tmdb.org/t/p/w500/hkSGFNVfEEUXFCxRZDITFHVhUlu.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 623,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hkSGFNVfEEUXFCxRZDITFHVhUlu.jpg"
+        },
+        {
+          "title": "Brazil",
+          "year": 1985,
+          "slug": "Terry Gilliam's dystopian masterpiece with surreal Python DNA",
+          "poster": "https://image.tmdb.org/t/p/w500/aewan59WcFThBimkTVVoNf2o5Vb.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 68,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aewan59WcFThBimkTVVoNf2o5Vb.jpg"
+        },
+        {
+          "title": "Galaxy Quest",
+          "year": 1999,
+          "slug": "Sci-fi parody with Holy Grail's genre-savvy approach",
+          "poster": "https://image.tmdb.org/t/p/w500/fZXSwgZknp81vmciTb86rw0MejV.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 926,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fZXSwgZknp81vmciTb86rw0MejV.jpg"
+        },
+        {
+          "title": "This Is Spinal Tap",
+          "year": 1984,
+          "slug": "Mockumentary sharing Python's commitment to absurdity",
+          "poster": "https://image.tmdb.org/t/p/w500/z2LA8eBTSuuPC4NBhIZRNIwpimH.jpg",
+          "initialStreaming": "AMC+",
+          "tmdb_id": 11031,
+          "poster_url": "https://image.tmdb.org/t/p/w500/z2LA8eBTSuuPC4NBhIZRNIwpimH.jpg"
+        },
+        {
+          "title": "Robin Hood: Men in Tights",
+          "year": 1993,
+          "slug": "Medieval parody heavily influenced by Holy Grail",
+          "poster": "https://image.tmdb.org/t/p/w500/woexOLEkUlYsPLLuZRK6LjZaF38.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 8005,
+          "poster_url": "https://image.tmdb.org/t/p/w500/woexOLEkUlYsPLLuZRK6LjZaF38.jpg"
+        },
+        {
+          "title": "The Grand Budapest Hotel",
+          "year": 2014,
+          "slug": "Shares Holy Grail's meticulous production design and dry humor",
+          "poster": "https://image.tmdb.org/t/p/w500/eWdyYQreja6JGCzqHWXpWHDrrPo.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 120467,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eWdyYQreja6JGCzqHWXpWHDrrPo.jpg"
+        },
+        {
+          "title": "Dark Star",
+          "year": 1974,
+          "slug": "Low-budget sci-fi comedy using similar creative workarounds",
+          "poster": "https://image.tmdb.org/t/p/w500/aiqLBiH0IWrog2Q78dZTT8Ad9Sp.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 1410,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aiqLBiH0IWrog2Q78dZTT8Ad9Sp.jpg"
+        },
+        {
+          "title": "UHF",
+          "year": 1989,
+          "slug": "Weird Al's film channeling Python's sketch comedy style",
+          "poster": "https://image.tmdb.org/t/p/w500/wxx5YQLKVH1WMSRXQAUnC76r4iY.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 11959,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wxx5YQLKVH1WMSRXQAUnC76r4iY.jpg"
+        },
+        {
+          "title": "Your Highness",
+          "year": 2011,
+          "slug": "Medieval comedy adventure with Holy Grail influences",
+          "poster": "https://image.tmdb.org/t/p/w500/bq3gU60TkgBjLUbxSSZVhDhlhmH.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 38319,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bq3gU60TkgBjLUbxSSZVhDhlhmH.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

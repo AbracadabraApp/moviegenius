@@ -1,0 +1,187 @@
+{
+  "props": {
+    "title": "Six Degrees of Separation",
+    "year": 1993,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/oH0bl69uZZA6dAclgFRkm1Vwcry.jpg",
+    "initialStreaming": null,
+    "tmdbId": 23210,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Six Degrees of Separation** (1993) masterfully adapts John Guare's play about a young con man who charms his way into wealthy Manhattan homes by claiming to be Sidney Poitier's son. Will Smith delivers a breakthrough dramatic performance as Paul, while Stockard Channing and Donald Sutherland perfectly embody the privileged art dealers whose lives he disrupts. The film shares DNA with other sophisticated 90s social commentaries like **The Bonfire of the Vanities** (1990) and **Metropolitan** (1990), dissecting class, race, and authenticity in New York's upper echelons."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Talented Mr. Ripley",
+            "year": 1999,
+            "slug": "A charming sociopath infiltrates wealthy social circles in Italy, exploring themes of identity and class",
+            "poster": "https://image.tmdb.org/t/p/w500/6ojHgqtIR41O2qLKa7LFUVj0cZa.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 1213,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6ojHgqtIR41O2qLKa7LFUVj0cZa.jpg"
+          },
+          {
+            "title": "Catch Me If You Can",
+            "year": 2002,
+            "slug": "Based on the true story of Frank Abagnale Jr., a master con artist who assumed multiple identities while being pursued by the FBI",
+            "poster": "https://image.tmdb.org/t/p/w500/ctjEj2xM32OvBXCq8zAdK3ZrsAj.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 640,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ctjEj2xM32OvBXCq8zAdK3ZrsAj.jpg"
+          },
+          {
+            "title": "Metropolitan",
+            "year": 1990,
+            "slug": "Whit Stillman's sharp comedy about Manhattan's young upper class during debutante season",
+            "poster": "https://image.tmdb.org/t/p/w500/852ZwTRj9tRxkGOT0Pu0Ep8yimk.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 15389,
+            "poster_url": "https://image.tmdb.org/t/p/w500/852ZwTRj9tRxkGOT0Pu0Ep8yimk.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of identity fraud connects to a rich tradition of impostor narratives like **Being There** (1979) and **Trading Places** (1983). But what sets **Six Degrees** apart is its deeper examination of how people construct their identities through art, culture, and social connections. The famous \"Kandinsky\" monologue becomes a meditation on how we all perform versions of ourselves, echoing themes later explored in **Velvet Buzzsaw** (2019) and **The Square** (2017)."
+      },
+      {
+        "type": "text",
+        "content": "Director Fred Schepisi brilliantly translates the play's theatrical elements to screen, maintaining its sharp dialogue while adding cinematic layers that enhance the story's exploration of truth versus perception. The film's structure, jumping between perspectives and timeframes, influenced later sophisticated dramas like **The Usual Suspects** (1995) and **Memento** (2000). SUBHEAD: Class and Race in American Society"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "American Hustle",
+            "year": 2013,
+            "slug": "A stylish con artist drama about reinvention and survival in 1970s America",
+            "poster": "https://image.tmdb.org/t/p/w500/koXGRfatN0tURFWMA0Keb0p0Gtg.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 168672,
+            "poster_url": "https://image.tmdb.org/t/p/w500/koXGRfatN0tURFWMA0Keb0p0Gtg.jpg"
+          },
+          {
+            "title": "The Usual Suspects",
+            "year": 1995,
+            "slug": "A twisty crime thriller about identity and unreliable narration",
+            "poster": "https://image.tmdb.org/t/p/w500/99X2SgyFunJFXGAYnDv3sb9pnUD.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 629,
+            "poster_url": "https://image.tmdb.org/t/p/w500/99X2SgyFunJFXGAYnDv3sb9pnUD.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's handling of race relations and class mobility remains startlingly relevant, predating similar themes in films like **Get Out** (2017) and **Sorry to Bother You** (2018). Paul's ability to navigate white upper-class spaces by weaponizing their cultural assumptions and guilt creates uncomfortable truths about privilege and perception that still resonate today."
+      }
+    ],
+    "exploreFurther": [
+      "The evolution of con artist films in American cinema",
+      "Theater-to-film adaptations and their transformation techniques",
+      "Will Smith's transition from sitcom star to dramatic actor",
+      "Representations of New York's upper class in 1990s cinema",
+      "The influence of John Guare's play on contemporary theater and film"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Game",
+          "year": 1997,
+          "slug": "A wealthy banker's life unravels through an elaborate scheme that blurs reality and fiction",
+          "poster": "https://image.tmdb.org/t/p/w500/4UOa079915QjiTA2u5hT2yKVgUu.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 2649,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4UOa079915QjiTA2u5hT2yKVgUu.jpg"
+        },
+        {
+          "title": "White Collar",
+          "year": 2009,
+          "slug": "A sophisticated con artist works with the FBI while maintaining his luxurious facade",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": null
+        },
+        {
+          "title": "Gosford Park",
+          "year": 2001,
+          "slug": "A murder mystery exploring class divisions in British society",
+          "poster": "https://image.tmdb.org/t/p/w500/7r8DeZuaaHCiOEbkqZC6MFmwJ69.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 5279,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7r8DeZuaaHCiOEbkqZC6MFmwJ69.jpg"
+        },
+        {
+          "title": "Match Point",
+          "year": 2005,
+          "slug": "A social climber infiltrates British high society through tennis and romance",
+          "poster": "https://image.tmdb.org/t/p/w500/vHjEVTD8ucuwKSFOZJeyAnTZYli.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 116,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vHjEVTD8ucuwKSFOZJeyAnTZYli.jpg"
+        },
+        {
+          "title": "The Great Gatsby",
+          "year": 2013,
+          "slug": "Exploration of wealth, class, and identity in 1920s New York",
+          "poster": "https://image.tmdb.org/t/p/w500/nimh1rrDDLhgpG8XAYoUZXHYwb6.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 64682,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nimh1rrDDLhgpG8XAYoUZXHYwb6.jpg"
+        },
+        {
+          "title": "Parasite",
+          "year": 2019,
+          "slug": "A poor family schemes their way into a wealthy household",
+          "poster": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 496243,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
+        },
+        {
+          "title": "An Education",
+          "year": 2009,
+          "slug": "A teenage girl is drawn into a sophisticated con man's world",
+          "poster": "https://image.tmdb.org/t/p/w500/29kSosB0jW2ThaJmX6ZY1UQ1pHA.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 24684,
+          "poster_url": "https://image.tmdb.org/t/p/w500/29kSosB0jW2ThaJmX6ZY1UQ1pHA.jpg"
+        },
+        {
+          "title": "The Grifters",
+          "year": 1990,
+          "slug": "A complex tale of professional con artists and their relationships",
+          "poster": "https://image.tmdb.org/t/p/w500/zMpGfkiDIdg5bB7WGcAT3Fdrfpt.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 18129,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zMpGfkiDIdg5bB7WGcAT3Fdrfpt.jpg"
+        },
+        {
+          "title": "House of Games",
+          "year": 1987,
+          "slug": "A psychiatrist becomes entangled with a group of con artists",
+          "poster": "https://image.tmdb.org/t/p/w500/kP3RVWf4N9WR2BLsiW1PkDvnQaV.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 26719,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kP3RVWf4N9WR2BLsiW1PkDvnQaV.jpg"
+        },
+        {
+          "title": "Inside Man",
+          "year": 2006,
+          "slug": "A complex bank heist reveals deeper social commentary",
+          "poster": "https://image.tmdb.org/t/p/w500/ffMUgkDZICNiyaws1Jkv8qG8uFW.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 388,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ffMUgkDZICNiyaws1Jkv8qG8uFW.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

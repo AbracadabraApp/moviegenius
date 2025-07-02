@@ -1,0 +1,235 @@
+{
+  "props": {
+    "title": "The Blair Witch Project",
+    "year": 1999,
+    "initialSlug": "Lost in the woods, terror awaits.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/9050VGrYjYrEjpOvDZVAngLbg1f.jpg",
+    "initialStreaming": null,
+    "tmdbId": 2667,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Blair Witch Project** (1999) revolutionized horror filmmaking and launched the found footage genre into the mainstream. Shot for just $60,000, it grossed $248 million by convincing audiences they were watching real recovered footage. The film's viral marketing campaign - including fake documentaries and missing person posters - created the first major internet movie phenomenon. Directors Daniel Myrick and Eduardo Sánchez proved that shaky cameras, unknown actors, and unseen threats could terrify more effectively than big-budget special effects."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Cannibal Holocaust",
+            "year": 1980,
+            "slug": "The controversial original found footage horror film follows a documentary crew in the Amazon",
+            "poster": "https://image.tmdb.org/t/p/w500/7leESXSdb8mgRLsIjWvIMKCH4Qu.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 8689,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7leESXSdb8mgRLsIjWvIMKCH4Qu.jpg"
+          },
+          {
+            "title": "Paranormal Activity",
+            "year": 2007,
+            "slug": "Security camera footage captures escalating supernatural events in a suburban home",
+            "poster": "https://image.tmdb.org/t/p/w500/tmclkEpjeo4Zu564gf3KrwIOuKw.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 23827,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tmclkEpjeo4Zu564gf3KrwIOuKw.jpg"
+          },
+          {
+            "title": "REC",
+            "year": 2007,
+            "slug": "A Spanish news crew becomes trapped in an apartment building during a viral outbreak",
+            "poster": "https://image.tmdb.org/t/p/w500/8zZQ0UBeA3UbdhgqCURHK0VymIY.jpg",
+            "initialStreaming": "AMC+",
+            "tmdb_id": 13402,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8zZQ0UBeA3UbdhgqCURHK0VymIY.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The success of Blair Witch spawned countless imitators but few captured its raw authenticity. **Cloverfield** (2008) applied the handheld approach to a monster movie, while **Lake Mungo** (2008) used mock documentary interviews to build crushing dread. **Host** (2020) proved the format could still innovate by setting its supernatural horror entirely within a Zoom call during lockdown."
+      },
+      {
+        "type": "text",
+        "content": "Found footage evolved beyond horror with films like **Chronicle** (2012) tackling superhero origin stories and **End of Watch** (2012) bringing visceral immediacy to police drama. But horror remained the genre's sweet spot, with standouts like **Trollhunter** (2010) and **Hell House LLC** (2015) finding fresh angles on familiar monsters. SUBHEAD: Documentary Horror Evolution"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "V/H/S",
+            "year": 2012,
+            "slug": "Anthology horror film combining found footage segments from different directors",
+            "poster": "https://image.tmdb.org/t/p/w500/xVGfCaTwVdZt3lFqtOVhTDqmG58.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 84348,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xVGfCaTwVdZt3lFqtOVhTDqmG58.jpg"
+          },
+          {
+            "title": "Creep",
+            "year": 2014,
+            "slug": "A videographer answers a cryptic Craigslist ad leading to increasingly disturbing encounters",
+            "poster": "https://image.tmdb.org/t/p/w500/qn53D574tT0YRyLgirEFHQwGUXw.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 250574,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qn53D574tT0YRyLgirEFHQwGUXw.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The blurred line between fact and fiction that made **The Blair Witch Project** (1999) so effective inspired a wave of horror films masquerading as documentaries. **Lake Mungo** (2008) uses interviews, photos, and home videos to investigate a drowning death with supernatural undertones. **The Taking of Deborah Logan** (2014) begins as a medical documentary about Alzheimer's before descending into possession horror. These films leverage documentary techniques to ground their supernatural elements in reality."
+      },
+      {
+        "type": "text",
+        "content": "Modern found footage continues to evolve through technological innovation. **Searching** (2018) tells its story entirely through computer screens and smartphones. **Unfriended** (2014) unfolds in real-time via Skype calls and social media. These films reflect how our relationship with recording devices and screens has changed since Blair Witch's camcorder days."
+      }
+    ],
+    "exploreFurther": [
+      "The viral marketing campaign that convinced audiences Blair Witch was real",
+      "Evolution of found footage techniques from handheld to screen life horror",
+      "Documentary horror hybrids and the power of implied terror",
+      "The influence of Blair Witch on low-budget independent filmmaking",
+      "How found footage horror reflects technological anxieties of its era"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "As Above So Below",
+          "year": 2014,
+          "slug": "Found footage horror in the Paris Catacombs",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Grave Encounters",
+          "year": 2011,
+          "slug": "Ghost hunting TV crew trapped in haunted asylum",
+          "poster": "https://image.tmdb.org/t/p/w500/8vnsB3Rg9Gb91UOaecXRb7dYB37.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 50698,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8vnsB3Rg9Gb91UOaecXRb7dYB37.jpg"
+        },
+        {
+          "title": "The Visit",
+          "year": 2015,
+          "slug": "Children document disturbing visit to grandparents",
+          "poster": "https://image.tmdb.org/t/p/w500/hDrToKMpKYTdwdpOhshL8ko6WVp.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 298312,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hDrToKMpKYTdwdpOhshL8ko6WVp.jpg"
+        },
+        {
+          "title": "The Last Exorcism",
+          "year": 2010,
+          "slug": "Documentary crew follows fraudulent exorcist",
+          "poster": "https://image.tmdb.org/t/p/w500/eOo9tgGjxdsQEgqc6g7E1NL8460.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 38358,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eOo9tgGjxdsQEgqc6g7E1NL8460.jpg"
+        },
+        {
+          "title": "The Bay",
+          "year": 2012,
+          "slug": "Ecological disaster through surveillance footage",
+          "poster": "https://image.tmdb.org/t/p/w500/fnmYgr4AOOE09zKa7omPW1FWT8K.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 123105,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fnmYgr4AOOE09zKa7omPW1FWT8K.jpg"
+        },
+        {
+          "title": "The Sacrament",
+          "year": 2013,
+          "slug": "Vice documentary about religious cult",
+          "poster": "https://image.tmdb.org/t/p/w500/thdioQOYqqusDUfT6trgwMIoNaQ.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 211067,
+          "poster_url": "https://image.tmdb.org/t/p/w500/thdioQOYqqusDUfT6trgwMIoNaQ.jpg"
+        },
+        {
+          "title": "The Den",
+          "year": 2013,
+          "slug": "Researcher witnesses murder on video chat",
+          "poster": "https://image.tmdb.org/t/p/w500/iC6Ku4hP613Y55r2yypahsEKdly.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 244610,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iC6Ku4hP613Y55r2yypahsEKdly.jpg"
+        },
+        {
+          "title": "Noroi: The Curse",
+          "year": 2005,
+          "slug": "Japanese found footage about supernatural investigation",
+          "poster": "https://image.tmdb.org/t/p/w500/yjXTmyLaOqljI5pFNbrEZ213dSW.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 21506,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yjXTmyLaOqljI5pFNbrEZ213dSW.jpg"
+        },
+        {
+          "title": "The Tunnel",
+          "year": 2011,
+          "slug": "News team explores abandoned subway tunnels",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Afflicted",
+          "year": 2013,
+          "slug": "Travel vloggers document mysterious illness",
+          "poster": "https://image.tmdb.org/t/p/w500/bMkRWgAvwe0XkpL8swG7UA4N4Q8.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 210947,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bMkRWgAvwe0XkpL8swG7UA4N4Q8.jpg"
+        },
+        {
+          "title": "The Houses October Built",
+          "year": 2014,
+          "slug": "Documentary crew investigates extreme haunts",
+          "poster": "https://image.tmdb.org/t/p/w500/yGTHvZE1ggog8w06kqg1HyTANjT.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 293572,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yGTHvZE1ggog8w06kqg1HyTANjT.jpg"
+        },
+        {
+          "title": "Devil's Pass",
+          "year": 2013,
+          "slug": "Students investigate Dyatlov Pass incident",
+          "poster": "https://image.tmdb.org/t/p/w500/8hyvniwVeSvKbTNKrY44ndMsQht.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 169219,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8hyvniwVeSvKbTNKrY44ndMsQht.jpg"
+        },
+        {
+          "title": "The Conspiracy",
+          "year": 2012,
+          "slug": "Filmmakers infiltrate secret society",
+          "poster": "https://image.tmdb.org/t/p/w500/y0tpJXx8i4jTVMKAUIoXYb7Hv8y.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 133369,
+          "poster_url": "https://image.tmdb.org/t/p/w500/y0tpJXx8i4jTVMKAUIoXYb7Hv8y.jpg"
+        },
+        {
+          "title": "Behind the Mask",
+          "year": 2006,
+          "slug": "Documentary about fictional serial killer",
+          "poster": "https://image.tmdb.org/t/p/w500/xfFXxWpeqyz2sA6MjbDNkAyMamH.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 90793,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xfFXxWpeqyz2sA6MjbDNkAyMamH.jpg"
+        },
+        {
+          "title": "The Poughkeepsie Tapes",
+          "year": 2007,
+          "slug": "Police evidence footage of serial killer",
+          "poster": "https://image.tmdb.org/t/p/w500/8ppkhu3pO3fnXr05YeE7ryKloVd.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 38410,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8ppkhu3pO3fnXr05YeE7ryKloVd.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

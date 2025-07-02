@@ -1,0 +1,187 @@
+{
+  "props": {
+    "title": "October Sky",
+    "year": 1999,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/1weUnrWqESWoLzMgSs64jd4GEwY.jpg",
+    "initialStreaming": null,
+    "tmdbId": 13466,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**October Sky** (1999) brilliantly captures the dawn of the Space Age through the eyes of coal country dreamers. Based on Homer Hickam's memoir \"Rocket Boys,\" the film shows how Sputnik's 1957 launch inspired a generation of American scientists. Jake Gyllenhaal delivers a breakthrough performance as young Homer, whose rocket experiments with fellow high school students clash with his father's coal mining expectations. Like **Apollo 13** (1995) and **The Right Stuff** (1983), it celebrates scientific passion while grounding space dreams in human relationships."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Right Stuff",
+            "year": 1983,
+            "slug": "Epic tale of America's first astronauts and the birth of NASA",
+            "poster": "https://image.tmdb.org/t/p/w500/btqTjNRxecYgQ1FGfVlLqSSNjz.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 9549,
+            "poster_url": "https://image.tmdb.org/t/p/w500/btqTjNRxecYgQ1FGfVlLqSSNjz.jpg"
+          },
+          {
+            "title": "Apollo 13",
+            "year": 1995,
+            "slug": "True story of the near-fatal moon mission that became NASA's finest hour",
+            "poster": "https://image.tmdb.org/t/p/w500/oYUZHYMwNKnE1ef4WE5Hw2a9OAY.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 568,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oYUZHYMwNKnE1ef4WE5Hw2a9OAY.jpg"
+          },
+          {
+            "title": "Hidden Figures",
+            "year": 2016,
+            "slug": "Untold story of African American women mathematicians at NASA",
+            "poster": "https://image.tmdb.org/t/p/w500/9lfz2W2uGjyow3am00rsPJ8iOyq.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 381284,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9lfz2W2uGjyow3am00rsPJ8iOyq.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film excels at showing how scientific inspiration can emerge from unlikely places. Similar to **Stand and Deliver** (1988) and **Dead Poets Society** (1989), a passionate teacher - here played by Laura Dern - helps unlock students' potential. The coal mining town setting creates powerful tension between old and new economies, much like **Norma Rae** (1979) or **Erin Brockovich** (2000) examined working-class struggles during times of change."
+      },
+      {
+        "type": "text",
+        "content": "Director Joe Johnston, who would later helm **Captain America: The First Avenger** (2011), brings a nostalgic yet clear-eyed view to 1950s America. The film's attention to period detail and practical effects in the rocket scenes creates authenticity that CGI-heavy films often lack. Like **The Dish** (2000) and **First Man** (2018), it shows how the space race affected ordinary people far from NASA's control rooms. SUBHEAD: Coming of Age in the Space Age"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "First Man",
+            "year": 2018,
+            "slug": "Intimate portrait of Neil Armstrong's journey to the moon",
+            "poster": "https://image.tmdb.org/t/p/w500/i91mfvFcPPlaegcbOyjGgiWfZzh.jpg",
+            "initialStreaming": "Showtime",
+            "tmdb_id": 369972,
+            "poster_url": "https://image.tmdb.org/t/p/w500/i91mfvFcPPlaegcbOyjGgiWfZzh.jpg"
+          },
+          {
+            "title": "Contact",
+            "year": 1997,
+            "slug": "Scientist Ellie Arroway makes first contact with extraterrestrial intelligence",
+            "poster": "https://image.tmdb.org/t/p/w500/bCpMIywuNZeWt3i5UMLEIc0VSwM.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 686,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bCpMIywuNZeWt3i5UMLEIc0VSwM.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**October Sky** shares DNA with great American coming-of-age films like **Breaking Away** (1979) and **A River Runs Through It** (1992), where sons must forge their own paths against fathers' expectations. The rocket building sequences echo the hands-on learning celebrated in **The World's Fastest Indian** (2005) and **Flash of Genius** (2008), showing how mechanical knowledge transforms dreamers into doers."
+      }
+    ],
+    "exploreFurther": [
+      "The Real Rocket Boys: Homer Hickam's memoir and the true story behind the film",
+      "The Space Race's Impact on American Education and STEM",
+      "Coal Country in American Cinema: From Matewan to October Sky",
+      "Joe Johnston's Direction: From Visual Effects to Character-Driven Drama",
+      "The Evolution of Space Program Films: Technical Accuracy vs. Drama"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Astronaut Farmer",
+          "year": 2006,
+          "slug": "A Texas rancher builds a rocket in his barn",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Matewan",
+          "year": 1987,
+          "slug": "Labor struggles in 1920s West Virginia coal country",
+          "poster": "https://image.tmdb.org/t/p/w500/cESTph19WGOoOPjpqjyl7mPdL3T.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 24276,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cESTph19WGOoOPjpqjyl7mPdL3T.jpg"
+        },
+        {
+          "title": "The Dish",
+          "year": 2000,
+          "slug": "Australian satellite station's role in moon landing",
+          "poster": "https://image.tmdb.org/t/p/w500/4hyYzQkpvC4wfQsZ2fijzZ56FsO.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 5257,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4hyYzQkpvC4wfQsZ2fijzZ56FsO.jpg"
+        },
+        {
+          "title": "Flash of Genius",
+          "year": 2008,
+          "slug": "True story of windshield wiper inventor Robert Kearns",
+          "poster": "https://image.tmdb.org/t/p/w500/cGC0389cF8xbk5CYNzUqEVrw1CG.jpg",
+          "initialStreaming": "Starz",
+          "tmdb_id": 14914,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cGC0389cF8xbk5CYNzUqEVrw1CG.jpg"
+        },
+        {
+          "title": "Infinity",
+          "year": 1996,
+          "slug": "Biography of physicist Richard Feynman's early years",
+          "poster": "https://image.tmdb.org/t/p/w500/45cU6BNyRGKhDQZKzVSll4eTgwh.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 2033,
+          "poster_url": "https://image.tmdb.org/t/p/w500/45cU6BNyRGKhDQZKzVSll4eTgwh.jpg"
+        },
+        {
+          "title": "The Boy Who Harnessed the Wind",
+          "year": 2019,
+          "slug": "African teen builds windmill to save village",
+          "poster": "https://image.tmdb.org/t/p/w500/yOr7RxHw15MMXNxGMXSmngDqHyI.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 491480,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yOr7RxHw15MMXNxGMXSmngDqHyI.jpg"
+        },
+        {
+          "title": "The Theory of Everything",
+          "year": 2014,
+          "slug": "Stephen Hawking's scientific and personal journey",
+          "poster": "https://image.tmdb.org/t/p/w500/kJuL37NTE51zVP3eG5aGMyKAIlh.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 266856,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kJuL37NTE51zVP3eG5aGMyKAIlh.jpg"
+        },
+        {
+          "title": "The Aeronauts",
+          "year": 2019,
+          "slug": "Victorian balloon expedition pushes scientific boundaries",
+          "poster": "https://image.tmdb.org/t/p/w500/kZHnblqmTBUBgzYBIxWIz9txsEi.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 514921,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kZHnblqmTBUBgzYBIxWIz9txsEi.jpg"
+        },
+        {
+          "title": "Rocket Science",
+          "year": 2007,
+          "slug": "Stuttering teen joins high school debate team",
+          "poster": "https://image.tmdb.org/t/p/w500/d5MfQznQKNtTsLFhw4wVXoqfk5y.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 13068,
+          "poster_url": "https://image.tmdb.org/t/p/w500/d5MfQznQKNtTsLFhw4wVXoqfk5y.jpg"
+        },
+        {
+          "title": "Sky Captain and the World of Tomorrow",
+          "year": 2004,
+          "slug": "Retro-futuristic adventure in 1939",
+          "poster": "https://image.tmdb.org/t/p/w500/4S1pcSuRlfUkJWaZY1hcdzMmPx.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 5137,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4S1pcSuRlfUkJWaZY1hcdzMmPx.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

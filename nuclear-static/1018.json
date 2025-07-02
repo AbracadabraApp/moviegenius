@@ -1,0 +1,185 @@
+{
+  "props": {
+    "title": "Mulholland Drive",
+    "year": 2001,
+    "initialSlug": "Lynch's surreal Hollywood nightmare",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/x7A59t6ySylr1L7aubOQEA480vM.jpg",
+    "initialStreaming": "TBD",
+    "tmdbId": 1018,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Mulholland Drive** (2001) stands as David Lynch's masterpiece of Hollywood nightmare fuel. Originally conceived as a TV pilot, Lynch transformed it into a hypnotic puzzle box that defies simple explanation. The film shares DNA with **Sunset Boulevard** (1950) in its dark exploration of Hollywood dreams gone rotten, but Lynch pushes further into surrealist territory. Like his earlier **Lost Highway** (1997), the film fractures into parallel realities, but here the breaks feel more emotionally devastating, centered on Naomi Watts' tour-de-force dual performance."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Inland Empire",
+            "year": 2006,
+            "slug": "Lynch's even more experimental follow-up, starring Laura Dern as an actress losing herself in a role",
+            "poster": "https://image.tmdb.org/t/p/w500/fw9Bzwel5VkBKy9qLD2MzAMnu5I.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 1730,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fw9Bzwel5VkBKy9qLD2MzAMnu5I.jpg"
+          },
+          {
+            "title": "Lost Highway",
+            "year": 1997,
+            "slug": "Lynch's neo-noir identity swap thriller with Bill Pullman and Patricia Arquette",
+            "poster": "https://image.tmdb.org/t/p/w500/fdTtij6H0sX9AzIjUeynh5zbfm7.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 638,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fdTtij6H0sX9AzIjUeynh5zbfm7.jpg"
+          },
+          {
+            "title": "Persona",
+            "year": 1966,
+            "slug": "Ingmar Bergman's psychological drama about merged identities between actress and nurse",
+            "poster": "https://image.tmdb.org/t/p/w500/9QlqnRNbzb78lRiRPAP1ufmoZko.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 797,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9QlqnRNbzb78lRiRPAP1ufmoZko.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's first two-thirds operate in a dreamy Hollywood fantasy mode, with Betty (Watts) as the bright-eyed aspiring actress helping amnesiac Rita (Laura Harring) uncover her identity. Lynch fills this section with his signature uncanny touches - the sinister Winkie's diner scene, the bizarre casting director, Club Silencio. But it's the final act's reality-shattering shift that elevates this beyond mere mystery into profound psychological horror. **Perfect Blue** (1997) and **Black Swan** (2010) would later explore similar territory of performing identities fracturing under pressure."
+      },
+      {
+        "type": "text",
+        "content": "Lynch's technical mastery reaches new heights here. Working with cinematographer Peter Deming, he creates a luminous nightmare version of Los Angeles that feels both vintage and timeless. The sound design by Lynch himself is crucial - notice how the ambient hum changes subtly throughout, creating unease. This approach influenced later films like **Under the Skin** (2013) and **Enemy** (2013) in their surrealist handling of doppelgangers and identity. SUBHEAD: Hollywood Dreams and Nightmares"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Perfect Blue",
+            "year": 1997,
+            "slug": "Satoshi Kon's anime thriller about a pop idol's psychological breakdown",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": null
+          },
+          {
+            "title": "Enemy",
+            "year": 2013,
+            "slug": "Jake Gyllenhaal discovers his exact double in Denis Villeneuve's surreal thriller",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film works brilliantly as a critique of Hollywood's destructive power, following in the tradition of **Sunset Boulevard** (1950) and **The Day of the Locust** (1975). But where those films maintain relatively stable realities, Lynch suggests Hollywood itself operates as a dream factory that fractures our sense of self. The infamous Cowboy scene, the mysterious blue box, and Club Silencio all point to the artificial nature of performance and identity. This theme would later be explored differently in **Synecdoche, New York** (2008) and **Inception** (2010), though neither matches Lynch's emotional devastation."
+      }
+    ],
+    "exploreFurther": [
+      "Lynch's use of dream logic and narrative structure",
+      "The influence of Hollywood noir on surrealist cinema",
+      "Identity and performance in contemporary psychological thrillers",
+      "Sound design as narrative device in Lynch's films",
+      "The legacy of Mulholland Drive in modern surrealist cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Vanilla Sky",
+          "year": 2001,
+          "slug": "Reality-bending Hollywood thriller with Tom Cruise",
+          "poster": "https://image.tmdb.org/t/p/w500/cAh2pCiNPftsY3aSqJuIOde7uWr.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 1903,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cAh2pCiNPftsY3aSqJuIOde7uWr.jpg"
+        },
+        {
+          "title": "In the Mouth of Madness",
+          "year": 1994,
+          "slug": "John Carpenter's reality-warping horror",
+          "poster": "https://image.tmdb.org/t/p/w500/msh4tEUzbnEqlHcFOUH4O0Zti8r.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 2654,
+          "poster_url": "https://image.tmdb.org/t/p/w500/msh4tEUzbnEqlHcFOUH4O0Zti8r.jpg"
+        },
+        {
+          "title": "Adaptation",
+          "year": 2002,
+          "slug": "Charlie Kaufman's meta Hollywood screenplay crisis",
+          "poster": "https://image.tmdb.org/t/p/w500/ffEmHQAiD0m5dEQ6rlsuA9vlllW.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 2757,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ffEmHQAiD0m5dEQ6rlsuA9vlllW.jpg"
+        },
+        {
+          "title": "Videodrome",
+          "year": 1983,
+          "slug": "Cronenberg's reality-distorting media nightmare",
+          "poster": "https://image.tmdb.org/t/p/w500/qqqkiZSU9EBGZ1KiDmfn07S7qvv.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 837,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qqqkiZSU9EBGZ1KiDmfn07S7qvv.jpg"
+        },
+        {
+          "title": "The Player",
+          "year": 1992,
+          "slug": "Robert Altman's acidic Hollywood satire",
+          "poster": "https://image.tmdb.org/t/p/w500/tZ3kDut2dhFVGkWNEn9xoCHCNAx.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10403,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tZ3kDut2dhFVGkWNEn9xoCHCNAx.jpg"
+        },
+        {
+          "title": "Berberian Sound Studio",
+          "year": 2012,
+          "slug": "Sound engineer loses grip on reality",
+          "poster": "https://image.tmdb.org/t/p/w500/sCrLZYF7TU32Vk5bOIJneVAcoKE.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 116811,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sCrLZYF7TU32Vk5bOIJneVAcoKE.jpg"
+        },
+        {
+          "title": "3 Women",
+          "year": 1977,
+          "slug": "Altman's dream-inspired identity merger story",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Paprika",
+          "year": 2006,
+          "slug": "Satoshi Kon's dream-invasion anime masterpiece",
+          "poster": "https://image.tmdb.org/t/p/w500/bLUUr474Go1DfeN1HLjE3rnZXBq.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 4977,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bLUUr474Go1DfeN1HLjE3rnZXBq.jpg"
+        },
+        {
+          "title": "Lost In Translation",
+          "year": 2003,
+          "slug": "Sofia Coppola's dreamy Hollywood adjacent story",
+          "poster": "https://image.tmdb.org/t/p/w500/4k4Yz08WGfbu8ITIjaG99XTeco8.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 153,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4k4Yz08WGfbu8ITIjaG99XTeco8.jpg"
+        },
+        {
+          "title": "Upstream Color",
+          "year": 2013,
+          "slug": "Shane Carruth's experimental identity crisis",
+          "poster": "https://image.tmdb.org/t/p/w500/zeV2KXaluXjXAq9wBg6Q0LHJjNm.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 145197,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zeV2KXaluXjXAq9wBg6Q0LHJjNm.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

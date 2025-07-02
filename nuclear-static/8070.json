@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "The Green Room",
+    "year": 1978,
+    "initialSlug": "A ballet drama set in austere Cold War Russia.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/blJT1L48QaxyTzJ59Q8jsKjQDw5.jpg",
+    "initialStreaming": null,
+    "tmdbId": 8070,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "François Truffaut's intimate backstage drama **The Green Room** (1978) stands as one of cinema's most profound meditations on grief and remembrance. Drawing from Henry James' short stories, Truffaut himself plays Julien Davenne, a WWI veteran and newspaper editor who creates a memorial room filled with photographs and mementos of the dead, including his wife Julie. The film connects deeply to Truffaut's own obsession with preserving memories, much like his earlier work **The 400 Blows** (1959) drew from his childhood. This theme of memory preservation appears differently in later films like **After Life** (1998), where the deceased must choose one memory to take to eternity."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Green Room",
+            "year": 1978,
+            "slug": "A WWI veteran creates a shrine-like room to honor his dead wife and fallen comrades, exploring themes of grief and memory",
+            "poster": "https://image.tmdb.org/t/p/w500/blJT1L48QaxyTzJ59Q8jsKjQDw5.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 8070,
+            "poster_url": "https://image.tmdb.org/t/p/w500/blJT1L48QaxyTzJ59Q8jsKjQDw5.jpg"
+          },
+          {
+            "title": "Vertigo",
+            "year": 1958,
+            "slug": "Hitchcock's masterpiece about obsessive love and the inability to let go of the past",
+            "poster": "https://image.tmdb.org/t/p/w500/15uOEfqBNTVtDUT7hGBVCka0rZz.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 426,
+            "poster_url": "https://image.tmdb.org/t/p/w500/15uOEfqBNTVtDUT7hGBVCka0rZz.jpg"
+          },
+          {
+            "title": "Three Colors: Blue",
+            "year": 1993,
+            "slug": "A woman attempts to isolate herself from the world after losing her husband and daughter",
+            "poster": "https://image.tmdb.org/t/p/w500/33wsWxzsNstI8N7dvuwzFmj1qBd.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 108,
+            "poster_url": "https://image.tmdb.org/t/p/w500/33wsWxzsNstI8N7dvuwzFmj1qBd.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's visual style emphasizes its themes of memory and mortality through careful use of candlelight, shadows, and religious imagery. These techniques would later influence films like **Departures** (2008) and **Still Life** (2013) in their treatment of death rituals. Truffaut's direction creates an almost gothic atmosphere while maintaining the intimate humanism characteristic of French New Wave cinema. The memorial room itself becomes a character, much like the photograph-filled apartment in **Smoke** (1995). SUBHEAD: Memory and Mourning in Cinema"
+      },
+      {
+        "type": "text",
+        "content": "**The Green Room** (1978) represents a unique intersection between European art cinema and the psychological thriller. While less known than Truffaut's **Day for Night** (1973) or **Jules and Jim** (1962), it showcases his masterful ability to blend personal obsession with universal themes. The film's influence can be seen in later works dealing with grief and remembrance, such as **Truly Madly Deeply** (1990) and **Ghost Story** (2017), though few match its intense focus on the ritualistic aspects of mourning."
+      }
+    ],
+    "exploreFurther": [
+      "The influence of Henry James on French New Wave cinema",
+      "Truffaut's personal connection to themes of death and memory",
+      "The evolution of cinematic representations of grief",
+      "Religious symbolism in French cinema of the 1970s",
+      "The role of physical spaces in memory preservation on film"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Cries and Whispers",
+          "year": 1972,
+          "slug": "Bergman's meditation on death and family relationships",
+          "poster": "https://image.tmdb.org/t/p/w500/a1bMgB09YDvvRN9SitCclUYragr.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 10238,
+          "poster_url": "https://image.tmdb.org/t/p/w500/a1bMgB09YDvvRN9SitCclUYragr.jpg"
+        },
+        {
+          "title": "Amour",
+          "year": 2012,
+          "slug": "Elderly couple faces mortality and devotion",
+          "poster": "https://image.tmdb.org/t/p/w500/19hyCudualHxCD0GrEngqsi0wBF.jpg",
+          "initialStreaming": "AMC+",
+          "tmdb_id": 86837,
+          "poster_url": "https://image.tmdb.org/t/p/w500/19hyCudualHxCD0GrEngqsi0wBF.jpg"
+        },
+        {
+          "title": "The Seventh Seal",
+          "year": 1957,
+          "slug": "Medieval knight confronts Death",
+          "poster": "https://image.tmdb.org/t/p/w500/wcZ21zrOsy0b52AfAF50XpTiv75.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 490,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wcZ21zrOsy0b52AfAF50XpTiv75.jpg"
+        },
+        {
+          "title": "All That Jazz",
+          "year": 1979,
+          "slug": "Autobiographical musical about mortality",
+          "poster": "https://image.tmdb.org/t/p/w500/culCEdj4srLljefgn4XKd6k3C5t.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 16858,
+          "poster_url": "https://image.tmdb.org/t/p/w500/culCEdj4srLljefgn4XKd6k3C5t.jpg"
+        },
+        {
+          "title": "Nostalgia",
+          "year": 1983,
+          "slug": "Tarkovsky's exploration of memory and exile",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Sweet Hereafter",
+          "year": 1997,
+          "slug": "Community deals with tragic loss",
+          "poster": "https://image.tmdb.org/t/p/w500/gJy7LMq4b5qO5fsSUSoBgm24BHf.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 10217,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gJy7LMq4b5qO5fsSUSoBgm24BHf.jpg"
+        },
+        {
+          "title": "A Ghost Story",
+          "year": 2017,
+          "slug": "Meditation on grief and time",
+          "poster": "https://image.tmdb.org/t/p/w500/rp5JPIyZi9sMob15l46zNQLe5cO.jpg",
+          "initialStreaming": "Showtime",
+          "tmdb_id": 428449,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rp5JPIyZi9sMob15l46zNQLe5cO.jpg"
+        },
+        {
+          "title": "Still Walking",
+          "year": 2008,
+          "slug": "Family gathering reveals unresolved grief",
+          "poster": "https://image.tmdb.org/t/p/w500/4Are9oV8HjZQWnEajk9LYFxRWom.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 25050,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4Are9oV8HjZQWnEajk9LYFxRWom.jpg"
+        },
+        {
+          "title": "Wild Strawberries",
+          "year": 1957,
+          "slug": "Elderly professor confronts his mortality",
+          "poster": "https://image.tmdb.org/t/p/w500/iyTD2QnySNMPUPE3IedZQipSWfz.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 614,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iyTD2QnySNMPUPE3IedZQipSWfz.jpg"
+        },
+        {
+          "title": "The Vanishing",
+          "year": 1988,
+          "slug": "Obsessive search for truth about a disappearance",
+          "poster": "https://image.tmdb.org/t/p/w500/eE5bbuRJluooG2MjEAsLEYyuJoa.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 8740,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eE5bbuRJluooG2MjEAsLEYyuJoa.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}
