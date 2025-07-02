@@ -1,0 +1,174 @@
+{
+  "props": {
+    "title": "Koyaanisqatsi",
+    "year": 1982,
+    "initialSlug": "Life in chaos: a hypnotic visual symphony",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/6zCNciRcob8lwuydVXgq0esla8L.jpg",
+    "initialStreaming": null,
+    "tmdbId": 11314,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Koyaanisqatsi** (1982) revolutionized experimental documentary filmmaking through its hypnotic fusion of Philip Glass's minimalist score and Godfrey Reggio's time-lapse imagery. The film abandons traditional narrative completely, instead creating a visceral meditation on humanity's relationship with technology and nature. Its influence echoes through later works like **Baraka** (1992) and **Samsara** (2011), establishing a visual language that continues to shape music videos, commercials, and art installations. The title, meaning \"life out of balance\" in Hopi, perfectly captures the film's stark juxtaposition of natural landscapes with industrial decay."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Powaqqatsi",
+            "year": 1988,
+            "slug": "The second film in Reggio's Qatsi trilogy explores the impact of modernization on developing nations, featuring stunning cinematography by Graham Berry",
+            "poster": "https://image.tmdb.org/t/p/w500/xh8Pvtq4dYry9B4uRT3VbmSI4Wi.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 24348,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xh8Pvtq4dYry9B4uRT3VbmSI4Wi.jpg"
+          },
+          {
+            "title": "Naqoyqatsi",
+            "year": 2002,
+            "slug": "Concluding the trilogy, this entry uses digital effects to examine technology's dominance over human life",
+            "poster": "https://image.tmdb.org/t/p/w500/buDo6FcSlOVEQJomKB0IviNV0Do.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 21925,
+            "poster_url": "https://image.tmdb.org/t/p/w500/buDo6FcSlOVEQJomKB0IviNV0Do.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The Qatsi trilogy's visual approach spawned an entire subgenre of non-narrative environmental documentaries. **Chronos** (1985) applied similar techniques to explore humanity's relationship with time, while **Manufactured Landscapes** (2006) used slow, methodical camera movements to document industrial impact. **Into the Void** (2009) borrowed Koyaanisqatsi's city sequences for its hallucinatory opening, proving the film's lasting impact on experimental cinema. SUBHEAD: Visual Poetry and Environmental Commentary"
+      },
+      {
+        "type": "text",
+        "content": "What sets Koyaanisqatsi apart is its prophetic vision of environmental crisis, predating mainstream climate documentaries by decades. Where **An Inconvenient Truth** (2006) relies on graphs and lectures, Reggio's film lets images speak through pure cinema. The famous \"Grid Life\" sequence, showing office workers in time-lapse, inspired similar sequences in **Fight Club** (1999) and **American Beauty** (1999), demonstrating how experimental techniques can infiltrate mainstream filmmaking."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Visitors",
+            "year": 2013,
+            "slug": "Reggio's black-and-white meditation on humanity's relationship with technology, featuring faces watching screens",
+            "poster": "https://image.tmdb.org/t/p/w500/pvdo77M6Np1Jkrneczf7V2xFoKn.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 199423,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pvdo77M6Np1Jkrneczf7V2xFoKn.jpg"
+          },
+          {
+            "title": "Life in a Day",
+            "year": 2011,
+            "slug": "Global documentary using crowd-sourced footage to capture life on Earth in a single day",
+            "poster": "https://image.tmdb.org/t/p/w500/g4Kze731McN2WkcN0OLwi1CMa8u.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 66150,
+            "poster_url": "https://image.tmdb.org/t/p/w500/g4Kze731McN2WkcN0OLwi1CMa8u.jpg"
+          }
+        ]
+      }
+    ],
+    "exploreFurther": [
+      "Philip Glass's Revolutionary Film Scoring Techniques",
+      "The Evolution of Non-Narrative Documentary",
+      "Time-Lapse Photography in Cinema",
+      "Environmental Themes in Experimental Film",
+      "The Legacy of the Qatsi Trilogy"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Baraka",
+          "year": 1992,
+          "slug": "Ron Fricke's stunning visual odyssey across 24 countries",
+          "poster": "https://image.tmdb.org/t/p/w500/ldEuJQ4z7zEvL7iXraESWBUfQcz.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 14002,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ldEuJQ4z7zEvL7iXraESWBUfQcz.jpg"
+        },
+        {
+          "title": "Samsara",
+          "year": 2011,
+          "slug": "A spiritual successor to Baraka exploring life, death and rebirth",
+          "poster": "https://image.tmdb.org/t/p/w500/qodkea4k0pNUmNTl5TJO2PdTqgW.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 89708,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qodkea4k0pNUmNTl5TJO2PdTqgW.jpg"
+        },
+        {
+          "title": "Chronos",
+          "year": 1985,
+          "slug": "Time-lapse journey through European architecture and landscapes",
+          "poster": "https://image.tmdb.org/t/p/w500/ciGeeT92K7wMu8wAJntoizImwvG.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 18493,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ciGeeT92K7wMu8wAJntoizImwvG.jpg"
+        },
+        {
+          "title": "Microcosmos",
+          "year": 1996,
+          "slug": "Nature documentary using macro photography to explore insect life",
+          "poster": "https://image.tmdb.org/t/p/w500/OPoiGrzNr5FWoczXH5Gs1cReec.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 9305,
+          "poster_url": "https://image.tmdb.org/t/p/w500/OPoiGrzNr5FWoczXH5Gs1cReec.jpg"
+        },
+        {
+          "title": "Rivers and Tides",
+          "year": 2001,
+          "slug": "Andy Goldsworthy's environmental art documented in real time",
+          "poster": "https://image.tmdb.org/t/p/w500/nhn5pg3f7f8FD3y0HRZaFIHBJgR.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 30140,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nhn5pg3f7f8FD3y0HRZaFIHBJgR.jpg"
+        },
+        {
+          "title": "The Tree of Life",
+          "year": 2011,
+          "slug": "Terrence Malick's experimental narrative incorporating cosmic imagery",
+          "poster": "https://image.tmdb.org/t/p/w500/l8cwuB5WJSoj4uMAsnzuHBOMaSJ.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 8967,
+          "poster_url": "https://image.tmdb.org/t/p/w500/l8cwuB5WJSoj4uMAsnzuHBOMaSJ.jpg"
+        },
+        {
+          "title": "Fantastic Fungi",
+          "year": 2019,
+          "slug": "Time-lapse exploration of mushroom growth and mycelial networks",
+          "poster": "https://image.tmdb.org/t/p/w500/giIGfFqirPk3I2azp8Ow98oOnzG.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 612654,
+          "poster_url": "https://image.tmdb.org/t/p/w500/giIGfFqirPk3I2azp8Ow98oOnzG.jpg"
+        },
+        {
+          "title": "Planet Earth",
+          "year": 2006,
+          "slug": "BBC nature documentary incorporating Koyaanisqatsi-inspired sequences",
+          "poster": "https://image.tmdb.org/t/p/w500/dW8lvvTmxZ5CTZKRwtqTrO1K1sA.jpg",
+          "initialStreaming": "Discovery+",
+          "tmdb_id": 16067,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dW8lvvTmxZ5CTZKRwtqTrO1K1sA.jpg"
+        },
+        {
+          "title": "Human",
+          "year": 2015,
+          "slug": "Aerial photography and intimate interviews exploring humanity",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": null
+        },
+        {
+          "title": "Our Daily Bread",
+          "year": 2005,
+          "slug": "Wordless examination of industrial food production",
+          "poster": "https://image.tmdb.org/t/p/w500/kdW7HPJqhRQ2HRU9ZurbDbpTyj.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 24565,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kdW7HPJqhRQ2HRU9ZurbDbpTyj.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}
