@@ -397,7 +397,7 @@ const styles = {
     bottom: '100px',
     display: 'flex',
     flexDirection: 'column',
-    gap: '16px',
+    gap: '8px',
     padding: '13px 4.5px',
     backgroundColor: 'rgba(255, 255, 255, 0.6)',
     backdropFilter: 'blur(10px)',
