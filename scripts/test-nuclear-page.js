@@ -54,7 +54,7 @@ async function generateTestNuclearPage(tmdbId) {
 
     if (existingAnalysis) {
       console.log('✅ Analysis already exists! Page is nuclear-ready.');
-      console.log(`🔗 Visit: http://localhost:3001/movie/${tmdbId}`);
+      console.log(`🔗 Visit: ${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/movie/${tmdbId}`);
       return;
     }
 
@@ -106,7 +106,7 @@ async function generateTestNuclearPage(tmdbId) {
     console.log('');
     console.log('🎯 TEST RESULTS:');
     console.log(`📄 Movie: ${movie.title} (${movie.year})`);
-    console.log(`🔗 URL: http://localhost:3001/movie/${tmdbId}`);
+    console.log(`🔗 URL: ${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/movie/${tmdbId}`);
     console.log(`💰 Cost: $${cost.toFixed(4)}`);
     console.log(`📝 Tokens: ${usage.input_tokens + usage.output_tokens}`);
     console.log('');

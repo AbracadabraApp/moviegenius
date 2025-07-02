@@ -250,7 +250,7 @@ function MovieContent({ sections, exploreFurther, moreIdeas, title, year, tmdbId
               const isFirstMovieSection = sections.findIndex(s => s.type === 'movies') === sectionIndex;
               
               return (
-                <>
+                <div key={sectionIndex}>
                   <FeaturedFilmsSection 
                     movies={filteredMovies}
                     style={{ marginBottom: '8px' }}
@@ -268,7 +268,7 @@ function MovieContent({ sections, exploreFurther, moreIdeas, title, year, tmdbId
                       />
                     );
                   })()}
-                </>
+                </div>
               );
             })()}
           </div>
@@ -314,7 +314,6 @@ function MovieContent({ sections, exploreFurther, moreIdeas, title, year, tmdbId
       
       {/* Browse by Category Section */}
       <CategoryBrowse title="Discover More Movies" />
-      
     </>
   );
 }
@@ -520,6 +519,9 @@ export async function getStaticProps({ params }) {
       response.revalidate = 3600;
     }
 
+    // 🚀 PERFORMANCE: Aggressive ISR for instant subsequent loads
+    response.revalidate = response.props.hasAnalysis ? 86400 : 3600; // 24h for analyzed movies, 1h for others
+    
     return response;
 
   } catch (error) {
@@ -537,17 +539,27 @@ export async function getStaticPaths() {
       process.env.SUPABASE_SERVICE_ROLE_KEY
     );
 
-    // Get top movies for pre-generation
+    // Test deployment: Generate only 10 specific movies for testing
+    const testMovieIds = [901, 770, 72976, 11314, 44865, 44012, 631, 897661, 389, 76203];
+    
     const { data: movies } = await supabase
       .from('movies')
-      .select('tmdb_id')
-      .not('tmdb_id', 'is', null)
-      .order('created_at', { ascending: false })
-      .limit(1000); // Generate paths for popular movies
+      .select(`
+        tmdb_id,
+        movie_analyses!inner(analysis_type)
+      `)
+      .eq('movie_analyses.analysis_type', 'page_analysis')
+      .in('tmdb_id', testMovieIds)
+      .not('tmdb_id', 'is', null);
 
     const paths = movies?.map(movie => ({
       params: { id: movie.tmdb_id.toString() }
     })) || [];
+    
+    console.log(`🚀 Nuclear test build: Generating ${paths.length} static movie pages`);
+    console.log(`📋 TMDB IDs: ${testMovieIds.join(', ')}`);
+
+    console.log(`✅ Found ${paths.length}/10 test movies with analysis ready for static generation`);
 
     return {
       paths,

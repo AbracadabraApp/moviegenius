@@ -10,6 +10,7 @@
  * Row 2: Streaming info | Heart/Bookmark icons
  * 
  * @component
+ * @locked true
  * @version LOCKED-2025-07-02
  * @example
  * <MediaCard 
@@ -61,11 +62,19 @@ export default function MediaCard({
   // Movie data object for FavoritesManager
   const movieData = { title, year, slug, poster, id: mediaId };
 
+  // 🔒 LOCKED: Check if slug is good quality - preserves marketing copy
+  const isGoodSlug = slug && 
+    slug.length <= 75 && 
+    slug.length > 5 && 
+    !slug.includes('Plot:') && // FIXED: Reject TMDB plot summaries
+    !slug.includes('Overview:') && // FIXED: Reject TMDB overviews
+    !slug.includes('Synopsis:'); // FIXED: Reject TMDB synopses
+
   // 🔒 LOCKED: Only generate organic slug if missing - posters come from analysis service
   useEffect(() => {
     const generateOrganicSlug = async () => {
       // 🔒 LOCKED: Get organic slug if missing - ONLY movie poster taglines
-      if (!slug || slug === '') {
+      if (!isGoodSlug) {
         try {
           console.log(`🌱 Generating organic slug for: ${title} (${year})`);
           const slugRes = await fetch('/api/generate-organic-slug', {
@@ -74,7 +83,8 @@ export default function MediaCard({
             body: JSON.stringify({ title, year })
           });
           const slugData = await slugRes.json();
-          if (slugData.slug) {
+          // 🔒 PROTECTED: TMDB plot summary rejection - preserves marketing copy
+          if (slugData.slug && !slugData.slug.includes('Plot:') && !slugData.slug.includes('Overview:') && !slugData.slug.includes('Synopsis:') && slugData.slug.length <= 75) {
             console.log(`✅ Organic slug generated: "${slugData.slug}"`);
             setSlug(slugData.slug);
           }
@@ -108,7 +118,11 @@ export default function MediaCard({
     // Don't navigate if clicking on action buttons or if this is a detail page
     if (e.target.closest('button') || isDetailPage) return;
     
-    // Let the <a> tag handle navigation naturally
+    // 🔒 PROTECTED: Enhanced data fetching
+    if (movieTmdbId) {
+      router.push(`/movie/${movieTmdbId}`);
+    }
+    // NO fallback navigation - this enforces TMDB-first architecture
   };
 
   const linkUrl = movieTmdbId 
@@ -280,6 +294,7 @@ const styles = {
     color: '#333',
     lineHeight: '1.3',
     overflow: 'hidden',
+    marginTop: '4px',
   },
   // Row 2: Streaming info | Icons (full width below first row)
   secondRow: {
