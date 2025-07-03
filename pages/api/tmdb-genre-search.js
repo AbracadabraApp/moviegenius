@@ -49,13 +49,13 @@ export default async function handler(req, res) {
     
     if (genreId) {
       // Standard genre discovery
-      tmdbUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.TMDB_API_KEY}&with_genres=${genreId}&sort_by=popularity.desc&page=1`;
+      tmdbUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.NEXT_PUBLIC_TMDB_API_KEY}&with_genres=${genreId}&sort_by=popularity.desc&page=1`;
     } else if (keywordId) {
       // Keyword-based discovery for special categories
-      tmdbUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.TMDB_API_KEY}&with_keywords=${keywordId}&sort_by=popularity.desc&page=1`;
+      tmdbUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.NEXT_PUBLIC_TMDB_API_KEY}&with_keywords=${keywordId}&sort_by=popularity.desc&page=1`;
     } else if (category === 'foreign') {
       // Foreign films: non-English language movies
-      tmdbUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.TMDB_API_KEY}&with_original_language=!en&sort_by=popularity.desc&page=1`;
+      tmdbUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.NEXT_PUBLIC_TMDB_API_KEY}&with_original_language=!en&sort_by=popularity.desc&page=1`;
     } else {
       return res.status(400).json({ error: `Unknown category: ${category}` });
     }
