@@ -148,9 +148,9 @@ export default function YouPage() {
   }, [router.asPath]);
 
   const handleAsk = (query) => {
-    // Navigate to Ask page with the query
+    // Navigate to Genius page with the query
     router.push({
-      pathname: '/ask',
+      pathname: '/genius',
       query: { q: query }
     });
   };
