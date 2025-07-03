@@ -1,0 +1,159 @@
+{
+  "props": {
+    "title": "Into Thin Air: Death on Everest",
+    "year": 1997,
+    "initialSlug": "Climbers face disaster in deadly Everest ascent",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/1lfzyHi7dnBRPYX9Hv7LzYFrlK3.jpg",
+    "initialStreaming": null,
+    "tmdbId": 32648,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The 1997 made-for-TV adaptation of Jon Krakauer's bestselling book captures the devastating 1996 Mount Everest disaster with chilling intensity. While not as visually spectacular as later mountain climbing films like <a href=\"/movie/253412\" class=\"movie-title\">Everest</a> (2015) or **Vertical Limit** (2000), it powerfully conveys the psychological toll and fatal mistakes that led to eight deaths during one of the deadliest climbing seasons. Christopher McDonald delivers a nuanced performance as Krakauer, the journalist-turned-climber who survived to document the tragedy. The film set a new standard for depicting the dangers of high-altitude mountaineering, influencing later works like **North Face** (2008) and **The Summit** (2012)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Everest",
+            "year": 2015,
+            "slug": "Star-studded dramatization of the same 1996 disaster, with Jake Gyllenhaal and Jason Clarke leading an expedition that turns catastrophic",
+            "poster": "https://image.tmdb.org/t/p/w500/2jKOu2bjpLP6NXJcm7Ep14bDGtA.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 253412,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2jKOu2bjpLP6NXJcm7Ep14bDGtA.jpg"
+          },
+          {
+            "title": "Touching the Void",
+            "year": 2003,
+            "slug": "Stunning documentary about Joe Simpson's miraculous survival after a climbing accident in the Peruvian Andes",
+            "poster": "https://image.tmdb.org/t/p/w500/fsydA5H8FSDaYlYWddfMpMpDUX.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 11194,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fsydA5H8FSDaYlYWddfMpMpDUX.jpg"
+          },
+          {
+            "title": "The Summit",
+            "year": 2012,
+            "slug": "Documentary investigating the 2008 K2 disaster where 11 climbers died in 48 hours",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Mountain climbing films evolved significantly through the decades, from early adventure fantasies like **Third Man on the Mountain** (1959) to increasingly realistic portrayals of the sport's dangers. **Cliffhanger** (1993) merged climbing with action-thriller elements, while documentaries like **Meru** (2015) and **Free Solo** (2018) pushed the boundaries of filming at extreme altitudes. The genre consistently explores themes of human endurance, hubris, and nature's raw power. SUBHEAD: The Human Cost of Extreme Adventure"
+      },
+      {
+        "type": "text",
+        "content": "\"Into Thin Air\" marked a crucial shift in how climbing disasters are portrayed on screen. Unlike earlier films that glamorized mountaineering, it unflinchingly examines the commercialization of Everest expeditions and the deadly consequences of pushing human limits. This influenced later works like **The Wildest Dream** (2010) and **Beyond the Edge** (2013), which similarly balance adventure with sobering reality. The film's focus on group dynamics under extreme stress created a template for disaster documentaries like **The Last Mountain** (2021)."
+      }
+    ],
+    "exploreFurther": [
+      "The History of Commercial Climbing on Everest",
+      "High-Altitude Filmmaking Techniques",
+      "Jon Krakauer's Impact on Adventure Journalism",
+      "Psychological Effects of High-Altitude Climbing",
+      "Evolution of Mountain Climbing Safety Protocols"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Vertical Limit",
+          "year": 2000,
+          "slug": "Action thriller about a rescue attempt on K2",
+          "poster": "https://image.tmdb.org/t/p/w500/kpqQUEi8eAyYHMDFACf6YlnPIu7.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 11678,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kpqQUEi8eAyYHMDFACf6YlnPIu7.jpg"
+        },
+        {
+          "title": "North Face",
+          "year": 2008,
+          "slug": "German film about a tragic 1936 attempt to climb the Eiger",
+          "poster": "https://image.tmdb.org/t/p/w500/onTd66RoxdrLKUhtcS1IOwdvjCv.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 16436,
+          "poster_url": "https://image.tmdb.org/t/p/w500/onTd66RoxdrLKUhtcS1IOwdvjCv.jpg"
+        },
+        {
+          "title": "The Dawn Wall",
+          "year": 2017,
+          "slug": "Documentary following Tommy Caldwell's impossible climb",
+          "poster": "https://image.tmdb.org/t/p/w500/bZQCNGb1II5eWASBhEgJBGxOPUM.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 489471,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bZQCNGb1II5eWASBhEgJBGxOPUM.jpg"
+        },
+        {
+          "title": "K2: Siren of the Himalayas",
+          "year": 2012,
+          "slug": "Documentary about expedition to world's second-highest peak",
+          "poster": "https://image.tmdb.org/t/p/w500/h7fJALCIvtzBjxIeMH5UL2AgMZF.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 186079,
+          "poster_url": "https://image.tmdb.org/t/p/w500/h7fJALCIvtzBjxIeMH5UL2AgMZF.jpg"
+        },
+        {
+          "title": "127 Hours",
+          "year": 2010,
+          "slug": "True story of climber Aron Ralston's canyon survival",
+          "poster": "https://image.tmdb.org/t/p/w500/h0RMdn0rfl9l5hWXz3tUh6QVkhi.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 44115,
+          "poster_url": "https://image.tmdb.org/t/p/w500/h0RMdn0rfl9l5hWXz3tUh6QVkhi.jpg"
+        },
+        {
+          "title": "Sherpa",
+          "year": 2015,
+          "slug": "Documentary examining Everest from Sherpa perspective",
+          "poster": "https://image.tmdb.org/t/p/w500/4Xk4vppzaPX2XGwuBTVKLuqsBVG.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 341366,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4Xk4vppzaPX2XGwuBTVKLuqsBVG.jpg"
+        },
+        {
+          "title": "The Alpinist",
+          "year": 2021,
+          "slug": "Portrait of solo climber Marc-André Leclerc",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 682587
+        },
+        {
+          "title": "Mountain",
+          "year": 2017,
+          "slug": "Documentary exploring humanity's fascination with mountains",
+          "poster": "https://image.tmdb.org/t/p/w500/ngqSU3NpsVIGIHIqeqrPSZai2lC.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 462145,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ngqSU3NpsVIGIHIqeqrPSZai2lC.jpg"
+        },
+        {
+          "title": "Valley Uprising",
+          "year": 2014,
+          "slug": "History of rock climbing in Yosemite Valley",
+          "poster": "https://image.tmdb.org/t/p/w500/9wjZdG4K1zkKmlh5DS2xxiEEVPK.jpg",
+          "initialStreaming": "Red Bull TV",
+          "tmdb_id": 294959,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9wjZdG4K1zkKmlh5DS2xxiEEVPK.jpg"
+        },
+        {
+          "title": "14 Peaks: Nothing Is Impossible",
+          "year": 2021,
+          "slug": "Nirmal Purja's quest to climb all 8000m peaks",
+          "poster": "https://image.tmdb.org/t/p/w500/saGMNCD6ayFqmOb9mX2MkkMmW7w.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 890825,
+          "poster_url": "https://image.tmdb.org/t/p/w500/saGMNCD6ayFqmOb9mX2MkkMmW7w.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

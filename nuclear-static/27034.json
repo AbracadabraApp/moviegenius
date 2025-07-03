@@ -1,0 +1,168 @@
+{
+  "props": {
+    "title": "Desert Fury",
+    "year": 1947,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/gNZsrXGmhz1KNMxz5I6Tzu2bthc.jpg",
+    "initialStreaming": null,
+    "tmdbId": 27034,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Desert Fury** (1947) stands as a fascinating Technicolor film noir, breaking conventions by setting its dark tale in the sun-drenched American Southwest. Unlike shadowy urban noirs like **Double Indemnity** (1944) or **The Maltese Falcon** (1941), Desert Fury uses vibrant colors and desert landscapes to create psychological tension. The film's exploration of a complex mother-daughter relationship between Lizabeth Scott and Mary Astor predates similar dynamics in **Mildred Pierce** (1945), while its homoerotic subtext between John Hodiak and Wendell Corey was remarkably bold for its era."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Leave Her to Heaven",
+            "year": 1945,
+            "slug": "A Technicolor noir featuring Gene Tierney as a possessive woman whose love turns murderous, set against stunning natural landscapes",
+            "poster": "https://image.tmdb.org/t/p/w500/aUzQZt2UlaurZ3wlhzVXQb6PQk8.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 17645,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aUzQZt2UlaurZ3wlhzVXQb6PQk8.jpg"
+          },
+          {
+            "title": "Duel in the Sun",
+            "year": 1946,
+            "slug": "Gregory Peck stars in this sexually-charged Western melodrama dubbed \"Lust in the Dust\"",
+            "poster": "https://image.tmdb.org/t/p/w500/dW479xuDWrcuFuxr7yfoReztlzF.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 32275,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dW479xuDWrcuFuxr7yfoReztlzF.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's unique position in noir history stems from its Paramount production values and Hal B. Wallis's decision to shoot in color. This choice influenced later color noirs like **Niagara** (1953) and **Party Girl** (1958), proving that noir's themes of obsession and fate could work outside the typical black-and-white aesthetic. The film's costume design by Edith Head particularly stands out, using bold colors to emphasize character psychology decades before similar techniques in **Vertigo** (1958)."
+      },
+      {
+        "type": "text",
+        "content": "Director Lewis Allen, who previously helmed the supernatural noir **The Uninvited** (1944), brings a gothic sensibility to the desert setting. The film's treatment of small-town corruption and hidden desires connects it to later sun-baked noirs like **Bad Day at Black Rock** (1955) and **Touch of Evil** (1958), while its focus on complex female characters anticipates the psychological westerns of the 1950s. SUBHEAD: Color Noir Innovation"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Johnny Guitar",
+            "year": 1954,
+            "slug": "Joan Crawford leads this psychologically complex western with strong noir elements",
+            "poster": "https://image.tmdb.org/t/p/w500/bap37yOCwcR9x4YDsNUaSo9nIp9.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 26596,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bap37yOCwcR9x4YDsNUaSo9nIp9.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Desert Fury's technical achievements in bringing noir themes to Technicolor opened doors for films like **House of Bamboo** (1955) and **Slightly Scarlet** (1956). The film's cinematographer Charles Lang created a template for how to maintain noir's psychological darkness while working with vibrant colors, influencing later works like **Written on the Wind** (1956) and even contemporary neo-noirs like **Body Heat** (1981)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Color in Film Noir (1945-1959)",
+      "Edith Head's Costume Design Philosophy in Desert Noir",
+      "Queer Subtext in Classical Hollywood Cinema",
+      "Mother-Daughter Relationships in Film Noir",
+      "The Influence of Desert Settings on American Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Violent Men",
+          "year": 1955,
+          "slug": "Technicolor noir-western hybrid",
+          "poster": "https://image.tmdb.org/t/p/w500/v56QMbVu29FCPffQGkkw31Gxuzj.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 60643,
+          "poster_url": "https://image.tmdb.org/t/p/w500/v56QMbVu29FCPffQGkkw31Gxuzj.jpg"
+        },
+        {
+          "title": "Rancho Notorious",
+          "year": 1952,
+          "slug": "Marlene Dietrich in Fritz Lang's western noir",
+          "poster": "https://image.tmdb.org/t/p/w500/nQnO8hMViqSriSGLnYWm14iMykb.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 28894,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nQnO8hMViqSriSGLnYWm14iMykb.jpg"
+        },
+        {
+          "title": "Inferno",
+          "year": 1953,
+          "slug": "3D noir thriller set in the Mojave Desert",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Furies",
+          "year": 1950,
+          "slug": "Barbara Stanwyck western with noir elements",
+          "poster": "https://image.tmdb.org/t/p/w500/kVlgoW4LWj8Uxr5fXuFi6qhpzP0.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 28304,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kVlgoW4LWj8Uxr5fXuFi6qhpzP0.jpg"
+        },
+        {
+          "title": "Beyond the Forest",
+          "year": 1949,
+          "slug": "Bette Davis noir-tinged drama",
+          "poster": "https://image.tmdb.org/t/p/w500/vKVNZQpyGldpYhEudwJmeAWdSW3.jpg",
+          "initialStreaming": "Warner Archive",
+          "tmdb_id": 35896,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vKVNZQpyGldpYhEudwJmeAWdSW3.jpg"
+        },
+        {
+          "title": "Pursued",
+          "year": 1947,
+          "slug": "Robert Mitchum in a psychological western noir",
+          "poster": "https://image.tmdb.org/t/p/w500/5UjUTgSGytAYsU4WCXmaBXLtlSY.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 26761,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5UjUTgSGytAYsU4WCXmaBXLtlSY.jpg"
+        },
+        {
+          "title": "Ruby Gentry",
+          "year": 1952,
+          "slug": "Jennifer Jones in southern noir melodrama",
+          "poster": "https://image.tmdb.org/t/p/w500/bFFDqnL6mK2epcaFb1BNInKpq8N.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 50085,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bFFDqnL6mK2epcaFb1BNInKpq8N.jpg"
+        },
+        {
+          "title": "Track of the Cat",
+          "year": 1954,
+          "slug": "Experimental color western-noir hybrid",
+          "poster": "https://image.tmdb.org/t/p/w500/rRIbBdsERc0yGvHWc5aM81Eyn6O.jpg",
+          "initialStreaming": "Warner Archive",
+          "tmdb_id": 86608,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rRIbBdsERc0yGvHWc5aM81Eyn6O.jpg"
+        },
+        {
+          "title": "Colorado Territory",
+          "year": 1949,
+          "slug": "Western remake of High Sierra",
+          "poster": "https://image.tmdb.org/t/p/w500/sliBPULxtTEit14lFJYLSeHO679.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 28484,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sliBPULxtTEit14lFJYLSeHO679.jpg"
+        },
+        {
+          "title": "Lightning Strikes Twice",
+          "year": 1951,
+          "slug": "Mystery noir set in Texas",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Warner Archive",
+          "tmdb_id": 72479
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

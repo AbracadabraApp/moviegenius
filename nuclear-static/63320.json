@@ -1,0 +1,128 @@
+{
+  "props": {
+    "title": "Lions Love (...and Lies)",
+    "year": 1969,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/ahLU10GZeVLFg1KoC6wblOk8ZlW.jpg",
+    "initialStreaming": null,
+    "tmdbId": 63320,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Agnès Varda's experimental **Lions Love (...and Lies)** (1969) captures a pivotal moment in late-60s counterculture through an audacious blend of fiction and reality. Shot in Los Angeles with Warhol superstar Viva and the creators of Hair - James Rado and Gerome Ragni - the film documents the intersection of East Coast underground culture with Hollywood's fading dream factory. The assassination of Robert Kennedy occurs during filming, lending an eerie prescience to Varda's exploration of media, performance, and American violence. Like her contemporary Jean-Luc Godard's **Sympathy for the Devil** (1968), Varda deconstructs the filmmaking process while capturing the death throes of 60s utopianism."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Medium Cool",
+            "year": 1969,
+            "slug": "A cinematographer gets caught between objectivity and activism during the 1968 Chicago riots in this groundbreaking blend of fiction and documentary",
+            "poster": "https://image.tmdb.org/t/p/w500/uiRU2wJQh5x7q0HU3oBN0VbRMnt.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 42612,
+            "poster_url": "https://image.tmdb.org/t/p/w500/uiRU2wJQh5x7q0HU3oBN0VbRMnt.jpg"
+          },
+          {
+            "title": "Zabriskie Point",
+            "year": 1970,
+            "slug": "Michelangelo Antonioni's hallucinatory vision of late-60s American counterculture, following two young lovers through Death Valley",
+            "poster": "https://image.tmdb.org/t/p/w500/uelo2oMg4fM51LAm4eEArEwOHXZ.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 2998,
+            "poster_url": "https://image.tmdb.org/t/p/w500/uelo2oMg4fM51LAm4eEArEwOHXZ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's experimental nature aligns with other boundary-pushing works of the era like William Greaves' **Symbiopsychotaxiplasm: Take One** (1968) and Jim McBride's **David Holzman's Diary** (1967). These films interrogated documentary truth claims while capturing the improvisational spirit of the times. Varda's decision to cast Shirley Clarke as a version of herself adds another meta layer, as Clarke was herself a pioneering independent filmmaker whose work like **Portrait of Jason** (1967) challenged conventional documentary forms. SUBHEAD: The New Hollywood Context"
+      },
+      {
+        "type": "text",
+        "content": "While mainstream Hollywood was beginning to embrace counterculture with films like **Easy Rider** (1969) and **Alice's Restaurant** (1969), Varda's outsider perspective allowed her to approach American culture with both fascination and skepticism. The film's loose, communal atmosphere reflects contemporary experiments in collective living and artistic creation, while its media critique anticipates later works like **Network** (1976) and Robert Altman's **Nashville** (1975)."
+      }
+    ],
+    "exploreFurther": [
+      "The influence of Andy Warhol's Factory on experimental cinema of the 1960s",
+      "French New Wave directors' perspectives on American culture",
+      "The role of docufiction in capturing political upheaval",
+      "Agnès Varda's unique position between European art cinema and American underground film",
+      "The impact of 1968's political assassinations on counterculture cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Cleo from 5 to 7",
+          "year": 1962,
+          "slug": "Varda's real-time portrait of a pop singer awaiting medical results",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 499
+        },
+        {
+          "title": "The Connection",
+          "year": 1961,
+          "slug": "Shirley Clarke's adaptation of the Living Theatre play about jazz musicians and addiction",
+          "poster": "https://image.tmdb.org/t/p/w500/iWhDxfoEUoBQitVnC2LIrqpyYeM.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 58227,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iWhDxfoEUoBQitVnC2LIrqpyYeM.jpg"
+        },
+        {
+          "title": "Mur Murs",
+          "year": 1981,
+          "slug": "Varda's documentary exploration of Los Angeles murals",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 230048
+        },
+        {
+          "title": "Model Shop",
+          "year": 1969,
+          "slug": "Jacques Demy's melancholic look at late-60s Los Angeles",
+          "poster": "https://image.tmdb.org/t/p/w500/yzwcXSS9vdmEiEr4vMsoc66PBzR.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 85942,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yzwcXSS9vdmEiEr4vMsoc66PBzR.jpg"
+        },
+        {
+          "title": "Diaries, Notes and Sketches",
+          "year": 1969,
+          "slug": "Jonas Mekas' diary films of the New York underground scene",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Chelsea Girls",
+          "year": 1966,
+          "slug": "Andy Warhol's split-screen epic of Factory life",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "MoMA",
+          "tmdb_id": null
+        },
+        {
+          "title": "Uncle Yanco",
+          "year": 1967,
+          "slug": "Varda's short film about meeting her California relative",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 277677
+        },
+        {
+          "title": "Black Panthers",
+          "year": 1968,
+          "slug": "Varda's documentary on the Oakland Black Panthers",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

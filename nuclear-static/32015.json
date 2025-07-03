@@ -1,0 +1,175 @@
+{
+  "props": {
+    "title": "Soy Cuba",
+    "year": 1964,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/qQxv27Lae6Uph7iOEzyZ5BOZxJh.jpg",
+    "initialStreaming": null,
+    "tmdbId": 32015,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Soy Cuba** (1964) represents one of cinema's most extraordinary technical achievements. Soviet director Mikhail Kalatozov and cinematographer Sergei Urusevsky created impossibly fluid long takes that influenced generations of filmmakers, from Martin Scorsese to Paul Thomas Anderson. The film's opening sequence following a beauty pageant onto a hotel rooftop, then diving into a pool, remains one of the most audacious camera movements ever captured. While initially a commercial failure, its rediscovery in the 1990s (championed by **Goodfellas** (1990) director Scorsese) cemented its place in cinema history."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Cranes Are Flying",
+            "year": 1957,
+            "slug": "Kalatozov's earlier masterpiece featuring similarly innovative cinematography",
+            "poster": "https://image.tmdb.org/t/p/w500/foXYOdXEJ0rvtTDo4LLnsUnvPLB.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 38360,
+            "poster_url": "https://image.tmdb.org/t/p/w500/foXYOdXEJ0rvtTDo4LLnsUnvPLB.jpg"
+          },
+          {
+            "title": "Man With A Movie Camera",
+            "year": 1929,
+            "slug": "Revolutionary Soviet documentary with groundbreaking camera techniques",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Kanopy",
+            "tmdb_id": 26317
+          },
+          {
+            "title": "Russian Ark",
+            "year": 2002,
+            "slug": "Single-take tour through Russian history, inspired by Soy Cuba's long takes",
+            "poster": "https://image.tmdb.org/t/p/w500/ceEMxpXrbWo823I3KZlS5t54Nwo.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 16646,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ceEMxpXrbWo823I3KZlS5t54Nwo.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's propagandistic elements - showing pre-revolutionary Cuba's decadence and exploitation - are transformed through pure cinematic virtuosity. Each of the four vignettes pushes camera movement to extremes: a camera floats through sugar cane fields, glides over funeral processions, and scales building facades. **Children of Men** (2006) and **Birdman** (2014) would later echo these techniques, but none match Soy Cuba's raw ingenuity achieved with purely mechanical means."
+      },
+      {
+        "type": "text",
+        "content": "Beyond technical innovation, Soy Cuba pioneered the marriage of social realism with poetic imagery. While Italian Neorealism influenced its portrayal of poverty and struggle, films like **Rome, Open City** (1945) never attempted such lyrical camerawork. This combination created a new film language that would influence Latin American Cinema, particularly the Brazilian Cinema Novo movement and films like **City of God** (2002). SUBHEAD: Impact on Modern Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Letter Never Sent",
+            "year": 1959,
+            "slug": "Another Kalatozov-Urusevsky collaboration with revolutionary camera movement",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends far beyond art house circles. **Boogie Nights** (1997) directly references Soy Cuba's pool sequence, while **Y Tu Mamá También** (2001) channels its fluid documentary-like observation of social conditions. Contemporary directors like Emmanuel Lubezki and Roger Deakins have cited it as a major influence on their cinematographic approach, particularly in films like **The Revenant** (2015) and **1917** (2019)."
+      }
+    ],
+    "exploreFurther": [
+      "Soviet Montage Theory and its influence on global cinema",
+      "The technical achievements of pre-digital long takes",
+      "Cuban cinema before and after the revolution",
+      "The rediscovery and restoration of lost film classics",
+      "The intersection of propaganda and artistic innovation in cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "I Am Cuba: The Siberian Mammoth",
+          "year": 2005,
+          "slug": "Documentary about the making of Soy Cuba",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "N/A",
+          "tmdb_id": 78129
+        },
+        {
+          "title": "Memories of Underdevelopment",
+          "year": 1968,
+          "slug": "Revolutionary Cuban cinema",
+          "poster": "https://image.tmdb.org/t/p/w500/av7zEHpOyzmm86VPRa68zOLaBqf.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 47576,
+          "poster_url": "https://image.tmdb.org/t/p/w500/av7zEHpOyzmm86VPRa68zOLaBqf.jpg"
+        },
+        {
+          "title": "The Battle of Algiers",
+          "year": 1966,
+          "slug": "Influential political cinema with documentary style",
+          "poster": "https://image.tmdb.org/t/p/w500/2p3AFtOHFvP6OeVMqlnL1zLKOqL.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 17295,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2p3AFtOHFvP6OeVMqlnL1zLKOqL.jpg"
+        },
+        {
+          "title": "La Haine",
+          "year": 1995,
+          "slug": "Social realism with innovative camera work",
+          "poster": "https://image.tmdb.org/t/p/w500/iH8saz6s0Z8SPPrKaMI2KrRzTED.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 406,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iH8saz6s0Z8SPPrKaMI2KrRzTED.jpg"
+        },
+        {
+          "title": "Touch of Evil",
+          "year": 1958,
+          "slug": "Famous for its opening long take",
+          "poster": "https://image.tmdb.org/t/p/w500/1pvRgmfBaoMczIJBOi9gCOZ4FMC.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1480,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1pvRgmfBaoMczIJBOi9gCOZ4FMC.jpg"
+        },
+        {
+          "title": "Victoria",
+          "year": 2015,
+          "slug": "Modern single-take film",
+          "poster": "https://image.tmdb.org/t/p/w500/9P8QgfoMcFX7vp2Gj2cYFecHVRZ.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 320007,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9P8QgfoMcFX7vp2Gj2cYFecHVRZ.jpg"
+        },
+        {
+          "title": "Wavelength",
+          "year": 1967,
+          "slug": "Experimental long take cinema",
+          "poster": "https://image.tmdb.org/t/p/w500/jhhODKRyLgweH8JW7g54qpCA6YM.jpg",
+          "initialStreaming": "N/A",
+          "tmdb_id": 88421,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jhhODKRyLgweH8JW7g54qpCA6YM.jpg"
+        },
+        {
+          "title": "The Passenger",
+          "year": 1975,
+          "slug": "Features influential long takes",
+          "poster": "https://image.tmdb.org/t/p/w500/A8jYH43plz70dNmHy82zAHGTqxN.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 9652,
+          "poster_url": "https://image.tmdb.org/t/p/w500/A8jYH43plz70dNmHy82zAHGTqxN.jpg"
+        },
+        {
+          "title": "Wings",
+          "year": 1957,
+          "slug": "Another Kalatozov masterwork",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Z",
+          "year": 1969,
+          "slug": "Political thriller with documentary style",
+          "poster": "https://image.tmdb.org/t/p/w500/dFAJyFNgvOv24f2RQyI9KDxjGr3.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 2721,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dFAJyFNgvOv24f2RQyI9KDxjGr3.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

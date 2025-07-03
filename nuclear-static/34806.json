@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "Backup Plan",
+    "year": 2012,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/fB6PxwdydGzdq5jSWrxwSMEqSFs.jpg",
+    "initialStreaming": null,
+    "tmdbId": 34806,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Back-up Plan** (2010) - not 2012 - falls into the well-worn territory of romantic comedies about pregnancy and unconventional families, following similar beats to **Knocked Up** (2007) and <a href=\"/movie/8780\" class=\"movie-title\">Baby Mama</a> (2008). Jennifer Lopez plays a single woman who gets artificially inseminated, only to meet her perfect match immediately after. The film represents a specific moment in rom-com history when Hollywood was trying to modernize traditional family narratives while still clinging to conventional happy endings. It shares DNA with **The Switch** (2010) and **Life as We Know It** (2010), all exploring how modern reproductive choices intersect with romance."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Nine Months",
+            "year": 1995,
+            "slug": "Hugh Grant navigates impending fatherhood with neurotic charm alongside Julianne Moore",
+            "poster": "https://image.tmdb.org/t/p/w500/y3VwPenHpiuIGb0fhgyt7PXZKLB.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 11472,
+            "poster_url": "https://image.tmdb.org/t/p/w500/y3VwPenHpiuIGb0fhgyt7PXZKLB.jpg"
+          },
+          {
+            "title": "Baby Mama",
+            "year": 2008,
+            "slug": "Tina Fey hires Amy Poehler as a surrogate, leading to an odd-couple comedy about modern parenthood",
+            "poster": "https://image.tmdb.org/t/p/w500/xZOwucsL5NInPyFcmqJzytHkaJR.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 8780,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xZOwucsL5NInPyFcmqJzytHkaJR.jpg"
+          },
+          {
+            "title": "Maybe Baby",
+            "year": 2000,
+            "slug": "Ben Elton directs this British comedy about a couple's struggles with fertility treatments",
+            "poster": "https://image.tmdb.org/t/p/w500/4PLm3BZiOXhDIbbqH8ipVyPVA1M.jpg",
+            "initialStreaming": "BritBox",
+            "tmdb_id": 13966,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4PLm3BZiOXhDIbbqH8ipVyPVA1M.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film sits at an interesting intersection of medical rom-coms like **Junior** (1994) and more serious explorations of modern parenthood like **Juno** (2007). While Lopez brings her trademark charm, the script relies heavily on pregnancy slapstick and sitcom-style misunderstandings that were already feeling dated by 2010. The film's attempts to address serious topics about single motherhood by choice get undermined by its need to fulfill romantic comedy conventions. SUBHEAD: Evolution of Pregnancy in Romance Films"
+      },
+      {
+        "type": "text",
+        "content": "Looking at how pregnancy narratives evolved in romantic films, we see a clear progression from **Look Who's Talking** (1989) through **Knocked Up** (2007) to more nuanced modern takes like **Obvious Child** (2014). **The Back-up Plan** tries to bridge traditional rom-com formulas with contemporary reproductive choices, but struggles to fully commit to either approach. This tension reflects Hollywood's broader challenge in updating romantic comedy tropes for modern audiences."
+      }
+    ],
+    "exploreFurther": [
+      "The evolution of single mother narratives in romantic comedies",
+      "Jennifer Lopez's impact on 2000s romantic comedies",
+      "How artificial insemination and IVF changed family-focused film plots",
+      "The intersection of medical themes and romantic comedy conventions",
+      "Modern parenthood representation in mainstream Hollywood"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Life as We Know It",
+          "year": 2010,
+          "slug": "Katherine Heigl and Josh Duhamel become guardians after their friends' death",
+          "poster": "https://image.tmdb.org/t/p/w500/zLzS2aOqKsS0QvEaY6SfBw4VBqh.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 38408,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zLzS2aOqKsS0QvEaY6SfBw4VBqh.jpg"
+        },
+        {
+          "title": "The Switch",
+          "year": 2010,
+          "slug": "Jennifer Aniston's pregnancy plan gets hijacked by Jason Bateman's drunk mistake",
+          "poster": "https://image.tmdb.org/t/p/w500/oJdMT6RGtbvQ26Tk7EHGfG8xZ6.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 41210,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oJdMT6RGtbvQ26Tk7EHGfG8xZ6.jpg"
+        },
+        {
+          "title": "Juno",
+          "year": 2007,
+          "slug": "Teen pregnancy handled with wit and heart in this Oscar-winning comedy-drama",
+          "poster": "https://image.tmdb.org/t/p/w500/jNIn2tVhpvFD6P9IojldI3mNYcn.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 7326,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jNIn2tVhpvFD6P9IojldI3mNYcn.jpg"
+        },
+        {
+          "title": "Father of the Bride Part II",
+          "year": 1995,
+          "slug": "Double pregnancy complications for Steve Martin's character",
+          "poster": "https://image.tmdb.org/t/p/w500/rj4LBtwQ0uGrpBnCELr716Qo3mw.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 11862,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rj4LBtwQ0uGrpBnCELr716Qo3mw.jpg"
+        },
+        {
+          "title": "What to Expect When You're Expecting",
+          "year": 2012,
+          "slug": "Ensemble comedy following five interconnected pregnancies",
+          "poster": "https://image.tmdb.org/t/p/w500/51kg6CdfwwrBjDDFhT44TwoAZMr.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 76494,
+          "poster_url": "https://image.tmdb.org/t/p/w500/51kg6CdfwwrBjDDFhT44TwoAZMr.jpg"
+        },
+        {
+          "title": "Waitress",
+          "year": 2007,
+          "slug": "Small-town waitress navigates unwanted pregnancy while pursuing dreams",
+          "poster": "https://image.tmdb.org/t/p/w500/ux3SPTHHmJytSjWEaV7xlo9nbOZ.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 10758,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ux3SPTHHmJytSjWEaV7xlo9nbOZ.jpg"
+        },
+        {
+          "title": "Miss Conception",
+          "year": 2008,
+          "slug": "Woman races against biological clock to get pregnant",
+          "poster": "https://image.tmdb.org/t/p/w500/p0p4s1ds3UATUPrTymUZPWIhJoK.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 14847,
+          "poster_url": "https://image.tmdb.org/t/p/w500/p0p4s1ds3UATUPrTymUZPWIhJoK.jpg"
+        },
+        {
+          "title": "Labor Pains",
+          "year": 2009,
+          "slug": "Lindsay Lohan fakes pregnancy to keep her job",
+          "poster": "https://image.tmdb.org/t/p/w500/mIjFpM6pPaGAXSaf2rhvxdj9uhV.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 19794,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mIjFpM6pPaGAXSaf2rhvxdj9uhV.jpg"
+        },
+        {
+          "title": "Storks",
+          "year": 2016,
+          "slug": "Animated take on baby delivery in modern times",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 332210
+        },
+        {
+          "title": "Plan B",
+          "year": 2021,
+          "slug": "Modern comedy about teenage friends seeking emergency contraception",
+          "poster": "https://image.tmdb.org/t/p/w500/5prTX4nyG1f9QdzKYHmBLr6K0om.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 441542,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5prTX4nyG1f9QdzKYHmBLr6K0om.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

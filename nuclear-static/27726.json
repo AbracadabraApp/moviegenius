@@ -1,0 +1,203 @@
+{
+  "props": {
+    "title": "Q: The Winged Serpent",
+    "year": 1982,
+    "initialSlug": "Death Strikes From Above",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/hm5mvCN7IMAFjtkQwL4U1qwoJ4c.jpg",
+    "initialStreaming": null,
+    "tmdbId": 27726,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Q: The Winged Serpent** (1982) stands as one of the most bizarre genre mashups of 1980s B-movies - combining film noir, monster horror, and Aztec mythology in grimy New York City locations. Director Larry Cohen, known for socially conscious exploitation films like **It's Alive** (1974), crafts a uniquely gritty take on the kaiju formula. The film's greatest asset is Michael Moriarty's unhinged performance as Jimmy Quinn, a small-time crook who discovers the nest of an ancient Aztec dragon-god in the Chrysler Building. His manic, improvised scenes create an unsettling counterpoint to David Carradine's stoic police detective."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Beast from 20,000 Fathoms",
+            "year": 1953,
+            "slug": "Ray Harryhausen's stop-motion monster terrorizes New York, heavily influencing later urban creature features",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 35073
+          },
+          {
+            "title": "Them!",
+            "year": 1954,
+            "slug": "Giant irradiated ants invade Los Angeles in this influential atomic age monster movie",
+            "poster": "https://image.tmdb.org/t/p/w500/tP352STF6BvSROi8K3CMM799TVo.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 11071,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tP352STF6BvSROi8K3CMM799TVo.jpg"
+          },
+          {
+            "title": "The Giant Claw",
+            "year": 1957,
+            "slug": "A massive alien bird menaces cities with delightfully cheesy special effects",
+            "poster": "https://image.tmdb.org/t/p/w500/hkFSOt7JRUatFRMB6CkfUtMOOKb.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 36089,
+            "poster_url": "https://image.tmdb.org/t/p/w500/hkFSOt7JRUatFRMB6CkfUtMOOKb.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Cohen's guerrilla filmmaking approach gives Q a raw authenticity missing from polished monster movies. Much of it was shot without permits, capturing genuine reactions from unwitting New Yorkers. The stop-motion effects by David Allen, while dated, have a handmade charm that fits the film's rough-edged style. Cohen uses the monster sparingly, focusing instead on the human drama and corrupt city institutions - themes he explored in films like **God Told Me To** (1976) and **The Stuff** (1985). SUBHEAD: Urban Monster Movies of the 1980s"
+      },
+      {
+        "type": "text",
+        "content": "Q arrived during a wave of city-set creature features that included **C.H.U.D.** (1984), **Alligator** (1980), and **Wolfen** (1981). These films reflected urban anxiety during New York's crime-ridden years, using monsters as metaphors for inner city decay. But while most played it straight, Cohen's film has a darkly comic edge, particularly in scenes of bureaucrats arguing about whether to believe in Aztec gods. The film's influence can be seen in later hybrid horror-comedies like **Tremors** (1990) and **Eight Legged Freaks** (2002)."
+      }
+    ],
+    "exploreFurther": [
+      "Larry Cohen's Guerrilla Filmmaking Techniques",
+      "Stop Motion Effects in 1980s Horror",
+      "Aztec Mythology in Horror Cinema",
+      "New York City as Monster Movie Setting",
+      "The Rise of Urban Horror in the 1980s"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "God Told Me To",
+          "year": 1976,
+          "slug": "Cohen's supernatural thriller about a detective investigating religiously motivated murders",
+          "poster": "https://image.tmdb.org/t/p/w500/nbUjhJGCuSiDiMaNJs2kCtTL7ag.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 31579,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nbUjhJGCuSiDiMaNJs2kCtTL7ag.jpg"
+        },
+        {
+          "title": "The Stuff",
+          "year": 1985,
+          "slug": "Cohen's satirical horror about deadly addictive dessert",
+          "poster": "https://image.tmdb.org/t/p/w500/bT0PxmeePfzX8YrZHGaAXau9RLN.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 18502,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bT0PxmeePfzX8YrZHGaAXau9RLN.jpg"
+        },
+        {
+          "title": "C.H.U.D.",
+          "year": 1984,
+          "slug": "Mutant cannibals emerge from NYC sewers",
+          "poster": "https://image.tmdb.org/t/p/w500/8BVw5RIDBTZwdMAR1VKpAkwrMjj.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 23730,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8BVw5RIDBTZwdMAR1VKpAkwrMjj.jpg"
+        },
+        {
+          "title": "Alligator",
+          "year": 1980,
+          "slug": "Giant reptile stalks Chicago sewers",
+          "poster": "https://image.tmdb.org/t/p/w500/bWANAIIeNPzwEmrYUvZFECTbBX6.jpg",
+          "initialStreaming": "Pluto TV",
+          "tmdb_id": 33518,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bWANAIIeNPzwEmrYUvZFECTbBX6.jpg"
+        },
+        {
+          "title": "Wolfen",
+          "year": 1981,
+          "slug": "Supernatural wolves hunt in decaying NYC",
+          "poster": "https://image.tmdb.org/t/p/w500/hb4TJBeElGyIa7tmF2466iwwItB.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10725,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hb4TJBeElGyIa7tmF2466iwwItB.jpg"
+        },
+        {
+          "title": "Crocodile",
+          "year": 1980,
+          "slug": "Giant croc terrorizes Thailand",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Prophecy",
+          "year": 1979,
+          "slug": "Mutant bear stalks Maine wilderness",
+          "poster": "https://image.tmdb.org/t/p/w500/8jCyz5IRWmu8R5FhRO2BqtQXnCj.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 31915,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8jCyz5IRWmu8R5FhRO2BqtQXnCj.jpg"
+        },
+        {
+          "title": "Food of the Gods",
+          "year": 1976,
+          "slug": "Giant animals attack isolated island",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 42245
+        },
+        {
+          "title": "Empire of the Ants",
+          "year": 1977,
+          "slug": "Giant ants take over Florida resort",
+          "poster": "https://image.tmdb.org/t/p/w500/6cmuKjH92h2wrBlbj0WPaTdnpnl.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 42218,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6cmuKjH92h2wrBlbj0WPaTdnpnl.jpg"
+        },
+        {
+          "title": "Deadly Eyes",
+          "year": 1982,
+          "slug": "Mutated rats terrorize Toronto",
+          "poster": "https://image.tmdb.org/t/p/w500/6lBpTv2bIOZsqxWM4naEqdCMzHH.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 49332,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6lBpTv2bIOZsqxWM4naEqdCMzHH.jpg"
+        },
+        {
+          "title": "Night of the Demon",
+          "year": 1980,
+          "slug": "Bigfoot revenge horror",
+          "poster": "https://image.tmdb.org/t/p/w500/tyOCBfMFX783oPvwp82meUQn4Sw.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 40146,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tyOCBfMFX783oPvwp82meUQn4Sw.jpg"
+        },
+        {
+          "title": "Tentacles",
+          "year": 1977,
+          "slug": "Giant octopus attacks coastal town",
+          "poster": "https://image.tmdb.org/t/p/w500/3VFEXcv6yp4BgEFRgBIcDJ5V0TI.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 49158,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3VFEXcv6yp4BgEFRgBIcDJ5V0TI.jpg"
+        },
+        {
+          "title": "Grizzly",
+          "year": 1976,
+          "slug": "Massive bear hunts park visitors",
+          "poster": "https://image.tmdb.org/t/p/w500/sqZK6sL7T2agJeeiM7jWvBxmDgB.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 55784,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sqZK6sL7T2agJeeiM7jWvBxmDgB.jpg"
+        },
+        {
+          "title": "Day of the Animals",
+          "year": 1977,
+          "slug": "Solar radiation makes animals attack",
+          "poster": "https://image.tmdb.org/t/p/w500/nNR56DXyEocDbeVd5FgW59X73dt.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 64976,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nNR56DXyEocDbeVd5FgW59X73dt.jpg"
+        },
+        {
+          "title": "The Crater Lake Monster",
+          "year": 1977,
+          "slug": "Plesiosaur emerges in modern times",
+          "poster": "https://image.tmdb.org/t/p/w500/iEpdGQaagHhpJDBsLemMF5EGolB.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 37901,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iEpdGQaagHhpJDBsLemMF5EGolB.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

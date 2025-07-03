@@ -1,0 +1,168 @@
+{
+  "props": {
+    "title": "Mountains of the Moon",
+    "year": 1990,
+    "initialSlug": "Uncharted Destiny Awaits",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/uWWrigxf4yU1WmaTkxg3qYNMezG.jpg",
+    "initialStreaming": null,
+    "tmdbId": 33796,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Mountains of the Moon** (1990) stands as one of cinema's most overlooked exploration epics, chronicling the true story of Victorian-era explorers Richard Burton and John Speke's perilous quest to find the source of the Nile. Director Bob Rafelson, better known for **Five Easy Pieces** (1970), crafts a mesmerizing tale of obsession and discovery that shares DNA with Werner Herzog's **Fitzcarraldo** (1982) and **Aguirre, the Wrath of God** (1972). The film's stunning 35mm photography of African landscapes by Roger Deakins creates an immersive experience that rivals David Lean's **Lawrence of Arabia** (1962) in its scope and grandeur."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Man Who Would Be King",
+            "year": 1975,
+            "slug": "Sean Connery and Michael Caine star as British adventurers seeking fortune in remote Kafiristan, based on Rudyard Kipling's story",
+            "poster": "https://image.tmdb.org/t/p/w500/gc5fS9UfNrGm5cBlbAI560YbDSF.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 983,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gc5fS9UfNrGm5cBlbAI560YbDSF.jpg"
+          },
+          {
+            "title": "Zulu",
+            "year": 1964,
+            "slug": "Epic historical drama about the Battle of Rorke's Drift, featuring Michael Caine in his breakthrough role",
+            "poster": "https://image.tmdb.org/t/p/w500/9V7tl1kIb67ZPRRNlUdy3JvqEiA.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 14433,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9V7tl1kIb67ZPRRNlUdy3JvqEiA.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film excels in its portrayal of the complex friendship between Burton (Patrick Bergin) and Speke (Iain Glen), echoing the complicated dynamics found in other exploration duos like those in <a href=\"/movie/314095\" class=\"movie-title\">The Lost City of Z</a> (2016) and **Master and Commander: The Far Side of the World** (2003). Rafelson doesn't shy away from the brutal realities of 19th-century African exploration - disease, tribal conflicts, and the psychological toll of the unknown all feature prominently."
+      },
+      {
+        "type": "text",
+        "content": "What sets **Mountains of the Moon** apart is its unflinching examination of Victorian scientific rivalry and the politics of discovery. The film's latter half, focusing on the bitter dispute between Burton and Speke over the Nile's source, mirrors similar conflicts in **Creation** (2009) and **The Current War** (2017), where personal ambition collides with scientific truth. SUBHEAD: Victorian Era Exploration in Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Lost City of Z",
+            "year": 2016,
+            "slug": "True story of British explorer Percy Fawcett's obsessive quest to find an ancient civilization in the Amazon",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 314095
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film represents a high point in depicting Victorian-era exploration, alongside works like **The English Patient** (1996) and **Out of Africa** (1985). Its attention to period detail and the psychological complexity of its characters elevates it above mere adventure narrative into a meditation on the human drive to explore and the costs of ambition."
+      }
+    ],
+    "exploreFurther": [
+      "The Real Richard Burton - Victorian Explorer and Linguist",
+      "The Great Nile Controversy - Historical Impact of Burton and Speke's Expedition",
+      "Roger Deakins' Cinematography Techniques in Harsh Environments",
+      "Victorian Era Scientific Societies and Exploration",
+      "Bob Rafelson's Transition from New Hollywood to Historical Epics"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Lawrence of Arabia",
+          "year": 1962,
+          "slug": "Peter O'Toole's legendary performance as T.E. Lawrence in David Lean's epic masterpiece",
+          "poster": "https://image.tmdb.org/t/p/w500/AiAm0EtDvyGqNpVoieRw4u65vD1.jpg",
+          "initialStreaming": "Rent",
+          "tmdb_id": 947,
+          "poster_url": "https://image.tmdb.org/t/p/w500/AiAm0EtDvyGqNpVoieRw4u65vD1.jpg"
+        },
+        {
+          "title": "The Mission",
+          "year": 1986,
+          "slug": "Robert De Niro stars in this tale of colonialism and faith in South America",
+          "poster": "https://image.tmdb.org/t/p/w500/6K9cG6LOOtySZF4D4xBu1MApC1N.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 11416,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6K9cG6LOOtySZF4D4xBu1MApC1N.jpg"
+        },
+        {
+          "title": "Fitzcarraldo",
+          "year": 1982,
+          "slug": "Herzog's magnificent obsession about moving a steamship over a mountain",
+          "poster": "https://image.tmdb.org/t/p/w500/oBCnYEKcg1rMhr5JjDnrRpilvDd.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 9343,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oBCnYEKcg1rMhr5JjDnrRpilvDd.jpg"
+        },
+        {
+          "title": "A Passage to India",
+          "year": 1984,
+          "slug": "David Lean's final film exploring British colonialism in India",
+          "poster": "https://image.tmdb.org/t/p/w500/rvBWlGRKte2U6qElHV13h6JvmSe.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 15927,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rvBWlGRKte2U6qElHV13h6JvmSe.jpg"
+        },
+        {
+          "title": "The Four Feathers",
+          "year": 2002,
+          "slug": "Victorian military drama about courage and redemption in the Sudan",
+          "poster": "https://image.tmdb.org/t/p/w500/bfmpeRr9LTXzBC2dpC89FE5uavK.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9093,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bfmpeRr9LTXzBC2dpC89FE5uavK.jpg"
+        },
+        {
+          "title": "Master and Commander",
+          "year": 2003,
+          "slug": "Russell Crowe leads this detailed Napoleonic naval adventure",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 8619
+        },
+        {
+          "title": "55 Days at Peking",
+          "year": 1963,
+          "slug": "Charlton Heston in a tale of the Boxer Rebellion",
+          "poster": "https://image.tmdb.org/t/p/w500/uR0xaqmqlbhatf9014mHuwV1Uly.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 27759,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uR0xaqmqlbhatf9014mHuwV1Uly.jpg"
+        },
+        {
+          "title": "Gunga Din",
+          "year": 1939,
+          "slug": "Classic adventure tale of British soldiers in colonial India",
+          "poster": "https://image.tmdb.org/t/p/w500/n0tcuzMzQJGpTRkGzbg8c4fJ6Ga.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 24965,
+          "poster_url": "https://image.tmdb.org/t/p/w500/n0tcuzMzQJGpTRkGzbg8c4fJ6Ga.jpg"
+        },
+        {
+          "title": "King Solomon's Mines",
+          "year": 1950,
+          "slug": "Stewart Granger leads an African expedition seeking legendary treasures",
+          "poster": "https://image.tmdb.org/t/p/w500/s5T4Da7d3f255YRyaWfhMWfoBKK.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 43388,
+          "poster_url": "https://image.tmdb.org/t/p/w500/s5T4Da7d3f255YRyaWfhMWfoBKK.jpg"
+        },
+        {
+          "title": "The African Queen",
+          "year": 1951,
+          "slug": "Humphrey Bogart and Katharine Hepburn's unforgettable river journey",
+          "poster": "https://image.tmdb.org/t/p/w500/2Ypg0KhQfFYWILelvHGtSHHR0dk.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 488,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2Ypg0KhQfFYWILelvHGtSHHR0dk.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

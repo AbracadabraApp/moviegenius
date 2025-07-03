@@ -1,0 +1,106 @@
+{
+  "props": {
+    "title": "Cocksucker Blues",
+    "year": 1972,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/ohkYXuOmvMRg77ucUODcxeqAwCL.jpg",
+    "initialStreaming": null,
+    "tmdbId": 35922,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The early 1970s marked a revolutionary period for music documentaries, with <a href=\"/movie/132\" class=\"movie-title\">Gimme Shelter</a> (1970) setting a new standard for capturing both the electricity and darkness of rock culture. D.A. Pennebaker's <a href=\"/movie/135\" class=\"movie-title\">Don't Look Back</a> (1967) had earlier established an influential cinéma vérité approach to filming musicians on tour, following Bob Dylan with unprecedented intimacy. These films moved beyond simple performance documentation to reveal complex personalities and cultural tensions."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Gimme Shelter",
+            "year": 1970,
+            "slug": "The Maysles Brothers document The Rolling Stones' 1969 tour culminating at Altamont",
+            "poster": "https://image.tmdb.org/t/p/w500/6Cem6KcIClKit3KhKYou4aXFxob.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 132,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6Cem6KcIClKit3KhKYou4aXFxob.jpg"
+          },
+          {
+            "title": "Don't Look Back",
+            "year": 1967,
+            "slug": "D.A. Pennebaker's groundbreaking documentary following Bob Dylan's 1965 UK tour",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 135
+          },
+          {
+            "title": "The Last Waltz",
+            "year": 1978,
+            "slug": "Martin Scorsese captures The Band's farewell concert with special guests",
+            "poster": "https://image.tmdb.org/t/p/w500/2K7CFH0AIHnGrA4yQjPCoIB5CmQ.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 13963,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2K7CFH0AIHnGrA4yQjPCoIB5CmQ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Martin Scorsese's <a href=\"/movie/13963\" class=\"movie-title\">The Last Waltz</a> (1978) elevated the concert film genre through masterful cinematography and intimate backstage moments. The film demonstrated how thoughtful direction could transform live performance documentation into lasting cinematic art. This influenced later works like Jonathan Demme's **Stop Making Sense** (1984), which brought similar artistic ambition to filming Talking Heads. SUBHEAD: The Evolution of Music Documentary Filmmaking"
+      },
+      {
+        "type": "text",
+        "content": "By the 1980s and 90s, music documentaries expanded beyond just concert footage. **Madonna: Truth or Dare** (1991) mixed performance with behind-the-scenes access, while **Meeting People Is Easy** (1998) captured Radiohead's growing disillusionment with fame. These films revealed how the genre could explore deeper themes about artistry, celebrity, and the toll of public life."
+      }
+    ],
+    "exploreFurther": [
+      "The development of cinéma vérité techniques in music documentaries",
+      "The role of editing and cinematography in concert films",
+      "How music documentaries capture cultural moments",
+      "The evolution from simple concert footage to complex narrative documentaries",
+      "The influence of 1970s rock documentaries on modern music films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Stop Making Sense",
+          "year": 1984,
+          "slug": "Talking Heads concert film directed by Jonathan Demme",
+          "poster": "https://image.tmdb.org/t/p/w500/utNpurUe1MMjEaHqvpkfxgfpSnV.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 24128,
+          "poster_url": "https://image.tmdb.org/t/p/w500/utNpurUe1MMjEaHqvpkfxgfpSnV.jpg"
+        },
+        {
+          "title": "Jazz on a Summer's Day",
+          "year": 1959,
+          "slug": "Documentary of the 1958 Newport Jazz Festival",
+          "poster": "https://image.tmdb.org/t/p/w500/ltdAJF4sVIRAOJmHIUzfLylrVRr.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 53434,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ltdAJF4sVIRAOJmHIUzfLylrVRr.jpg"
+        },
+        {
+          "title": "Monterey Pop",
+          "year": 1968,
+          "slug": "D.A. Pennebaker's chronicle of the 1967 Monterey Pop Festival",
+          "poster": "https://image.tmdb.org/t/p/w500/wEB3c5Y5spAHOQaFWcsfFky3SWb.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 42632,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wEB3c5Y5spAHOQaFWcsfFky3SWb.jpg"
+        },
+        {
+          "title": "Amazing Grace",
+          "year": 2018,
+          "slug": "Sydney Pollack's 1972 footage of Aretha Franklin recording her gospel album",
+          "poster": "https://image.tmdb.org/t/p/w500/eABsBr5TnW8FBSSSsAKFnwDW1BW.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 356199,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eABsBr5TnW8FBSSSsAKFnwDW1BW.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

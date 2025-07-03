@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "Rosa Luxemburg",
+    "year": 1986,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/xsbuAzu2ZsZsV0hROoiarPTOsPv.jpg",
+    "initialStreaming": null,
+    "tmdbId": 55562,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Margarethe von Trotta's **Rosa Luxemburg** (1986) stands as a masterful political biography that avoids typical biopic traps. Barbara Sukowa delivers a fierce, nuanced performance as the revolutionary socialist leader, bringing to mind other powerful political character studies like **Milk** (2008) and **Lincoln** (2012). Von Trotta's approach shares DNA with other European political dramas like **Z** (1969) and **The Conformist** (1970), focusing on both the personal and political dimensions of her subject's life."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Young Karl Marx",
+            "year": 2017,
+            "slug": "Raoul Peck's energetic take on Marx and Engels' early revolutionary partnership",
+            "poster": "https://image.tmdb.org/t/p/w500/4VwBXiCzXKJyHfRdVBb843m23dx.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 400020,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4VwBXiCzXKJyHfRdVBb843m23dx.jpg"
+          },
+          {
+            "title": "Sophie Scholl: The Final Days",
+            "year": 2005,
+            "slug": "Tense drama about the German anti-Nazi resistance fighter",
+            "poster": "https://image.tmdb.org/t/p/w500/aAbxubEzowWJNBWYG82wXcKuzZP.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 2117,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aAbxubEzowWJNBWYG82wXcKuzZP.jpg"
+          },
+          {
+            "title": "Hannah Arendt",
+            "year": 2012,
+            "slug": "Von Trotta's other masterful biopic about the controversial political theorist",
+            "poster": "https://image.tmdb.org/t/p/w500/kB4hUbhIYmx7Xdpo1DGn15pstO3.jpg",
+            "initialStreaming": "Kanopy",
+            "tmdb_id": 121873,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kB4hUbhIYmx7Xdpo1DGn15pstO3.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Von Trotta's filmography consistently examines strong women challenging political systems. Her **Marianne and Juliane** (1981) and **Vision** (2009) share themes with **Rosa Luxemburg** - depicting women who refuse to compromise their ideals despite intense pressure. The film's intimate scenes in prison, showing Luxemburg's letters and private moments, echo similar approaches in **The Lady** (2011) about Aung San Suu Kyi and **Iron Lady** (2011) about Margaret Thatcher."
+      },
+      {
+        "type": "text",
+        "content": "The film's visual style deserves special attention. Von Trotta and cinematographer Franz Rath create a muted color palette that captures both 1910s Germany and Poland while avoiding nostalgic prettification. This approach influenced later historical dramas like **Good Bye, Lenin!** (2003) and **The Lives of Others** (2006) in their portrayal of European socialist movements and states. SUBHEAD: Revolutionary Cinema and Female Political Figures"
+      },
+      {
+        "type": "text",
+        "content": "**Rosa Luxemburg** fits into a vital tradition of films about revolutionary women, including **Reds** (1981) with its portrayal of Louise Bryant and **Land of Silence and Darkness** (1971) examining resistance through a different lens. The film's unflinching look at political violence and state repression connects to works like **The Battle of Algiers** (1966) and more recent films like **Suffragette** (2015)."
+      }
+    ],
+    "exploreFurther": [
+      "German New Wave Cinema and Political Filmmaking",
+      "Women Directors Tackling Historical Subjects",
+      "The Evolution of Political Biopics",
+      "Representing Revolution in Cinema",
+      "Socialist Movements in European Film"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Lost Honor of Katharina Blum",
+          "year": 1975,
+          "slug": "Powerful critique of political persecution and media sensationalism",
+          "poster": "https://image.tmdb.org/t/p/w500/d7Z1gzPkHm29jmiqnjvzXZg2koI.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 4762,
+          "poster_url": "https://image.tmdb.org/t/p/w500/d7Z1gzPkHm29jmiqnjvzXZg2koI.jpg"
+        },
+        {
+          "title": "Die Macht der Männer ist die Geduld der Frauen",
+          "year": 1978,
+          "slug": "Early von Trotta film examining domestic violence and women's liberation",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 274410
+        },
+        {
+          "title": "Rosenstrasse",
+          "year": 2003,
+          "slug": "Von Trotta's examination of German women's resistance to Nazi policies",
+          "poster": "https://image.tmdb.org/t/p/w500/whHyCV08F1C2r7uzTeyHsJ4nIWg.jpg",
+          "initialStreaming": "Amazon",
+          "tmdb_id": 6317,
+          "poster_url": "https://image.tmdb.org/t/p/w500/whHyCV08F1C2r7uzTeyHsJ4nIWg.jpg"
+        },
+        {
+          "title": "The German Sisters",
+          "year": 1981,
+          "slug": "Story of terrorist activism and sisterhood in postwar Germany",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 42142
+        },
+        {
+          "title": "Coup de Grace",
+          "year": 1976,
+          "slug": "Schlöndorff's examination of revolution and romance",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 42226
+        },
+        {
+          "title": "The Marriage of Maria Braun",
+          "year": 1979,
+          "slug": "Fassbinder's examination of postwar German society",
+          "poster": "https://image.tmdb.org/t/p/w500/tXjZEzlf4WQwZ4Dt53gXeJVuO7p.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 661,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tXjZEzlf4WQwZ4Dt53gXeJVuO7p.jpg"
+        },
+        {
+          "title": "Hildegard",
+          "year": 2009,
+          "slug": "Von Trotta's biopic of medieval mystic and composer Hildegard von Bingen",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon",
+          "tmdb_id": 50722
+        },
+        {
+          "title": "The Promise",
+          "year": 1995,
+          "slug": "Epic romance set against the backdrop of divided Berlin",
+          "poster": "https://image.tmdb.org/t/p/w500/pa0g9SFf6LglgrIJ2niDL9v7r6O.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 105045,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pa0g9SFf6LglgrIJ2niDL9v7r6O.jpg"
+        },
+        {
+          "title": "Die Bleierne Zeit",
+          "year": 1981,
+          "slug": "Story of sisters divided by politics in 1970s Germany",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 42142
+        },
+        {
+          "title": "The Third Generation",
+          "year": 1979,
+          "slug": "Fassbinder's satirical take on revolutionary politics",
+          "poster": "https://image.tmdb.org/t/p/w500/i83LSPgoioCuywFQmDrAyoTVUFq.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 122683,
+          "poster_url": "https://image.tmdb.org/t/p/w500/i83LSPgoioCuywFQmDrAyoTVUFq.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

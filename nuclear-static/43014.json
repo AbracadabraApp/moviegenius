@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "Tower of London",
+    "year": 1962,
+    "initialSlug": "Beware the tyrant's iron fist!",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/pcEHgUyuMe20JlyoYM7eNHWcwIu.jpg",
+    "initialStreaming": null,
+    "tmdbId": 43014,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Roger Corman's **Tower of London** (1962) stands as a fascinating gothic reimagining of Shakespeare's Richard III, with Vincent Price delivering a deliciously macabre performance as the murderous Richard of Gloucester. This low-budget but atmospheric horror-history hybrid followed Corman's successful Edgar Allan Poe adaptations like **House of Usher** (1960) and **Pit and the Pendulum** (1961), maintaining their gothic sensibilities while venturing into English historical territory. Price, who had appeared in the 1939 version starring Basil Rathbone, now takes center stage as the power-hungry hunchback, bringing his signature blend of sophistication and menace."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Tower of London",
+            "year": 1939,
+            "slug": "Basil Rathbone stars in this earlier adaptation focusing on Richard III's bloody rise to power",
+            "poster": "https://image.tmdb.org/t/p/w500/glEWt92HOIq7uUoyMyO3JWyzH6K.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 28365,
+            "poster_url": "https://image.tmdb.org/t/p/w500/glEWt92HOIq7uUoyMyO3JWyzH6K.jpg"
+          },
+          {
+            "title": "Richard III",
+            "year": 1955,
+            "slug": "Laurence Olivier's definitive Shakespeare adaptation with stunning VistaVision cinematography",
+            "poster": "https://image.tmdb.org/t/p/w500/3zp2Kg5bvlFkKmWiQLmuWQAIEgG.jpg",
+            "initialStreaming": "BritBox",
+            "tmdb_id": 43323,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3zp2Kg5bvlFkKmWiQLmuWQAIEgG.jpg"
+          },
+          {
+            "title": "The Masque of the Red Death",
+            "year": 1964,
+            "slug": "Another Corman-Price collaboration adapting Poe with striking medieval atmosphere",
+            "poster": "https://image.tmdb.org/t/p/w500/sSYceyGZrWskWDsn3MHtipJ1wFM.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 25319,
+            "poster_url": "https://image.tmdb.org/t/p/w500/sSYceyGZrWskWDsn3MHtipJ1wFM.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film exemplifies the 1960s trend of mixing historical drama with horror elements, seen also in **Witchfinder General** (1968) and **The Conqueror Worm** (1968). Corman's direction emphasizes psychological horror through Richard's guilty hallucinations and supernatural encounters, while maintaining period authenticity within budget constraints. The castle sets, though recycled from previous productions, create an appropriately claustrophobic atmosphere enhanced by Floyd Crosby's moody cinematography. SUBHEAD: Vincent Price's Gothic Period"
+      },
+      {
+        "type": "text",
+        "content": "Price's performance here bridges his earlier classical roles and his horror icon status. Like his work in **The Last Man on Earth** (1964) and **The Abominable Dr. Phibes** (1971), he brings gravitas to genre material while clearly relishing the villainous aspects. The film's dream sequences and ghostly visitations prefigure similar supernatural elements in Roman Polanski's **Macbeth** (1971) and other Shakespeare horror adaptations."
+      }
+    ],
+    "exploreFurther": [
+      "Medieval Horror Films of the 1960s",
+      "Vincent Price's Shakespeare Connections",
+      "Roger Corman's Period Gothic Productions",
+      "Richard III in Cinema History",
+      "Low-Budget Period Film Techniques"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Throne of Blood",
+          "year": 1957,
+          "slug": "Kurosawa's Japanese adaptation of Macbeth",
+          "poster": "https://image.tmdb.org/t/p/w500/5NdGZpoInkf4wBInNpry6JAjQ3D.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 3777,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5NdGZpoInkf4wBInNpry6JAjQ3D.jpg"
+        },
+        {
+          "title": "The War Lord",
+          "year": 1965,
+          "slug": "Medieval drama with Charlton Heston as a Norman knight",
+          "poster": "https://image.tmdb.org/t/p/w500/7fMXFuKQ6ww0fwq854kjWDtsQJ0.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 42664,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7fMXFuKQ6ww0fwq854kjWDtsQJ0.jpg"
+        },
+        {
+          "title": "Becket",
+          "year": 1964,
+          "slug": "Historical drama about Henry II and Thomas Becket",
+          "poster": "https://image.tmdb.org/t/p/w500/swWmxVbq0pXv4wwsc2O803PiXR7.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 15421,
+          "poster_url": "https://image.tmdb.org/t/p/w500/swWmxVbq0pXv4wwsc2O803PiXR7.jpg"
+        },
+        {
+          "title": "The Lion in Winter",
+          "year": 1968,
+          "slug": "Medieval family drama with Katherine Hepburn",
+          "poster": "https://image.tmdb.org/t/p/w500/yMgJnZADJObzfjA70ygXJkjnrFX.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 18988,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yMgJnZADJObzfjA70ygXJkjnrFX.jpg"
+        },
+        {
+          "title": "The Devils",
+          "year": 1971,
+          "slug": "Ken Russell's controversial historical horror",
+          "poster": "https://image.tmdb.org/t/p/w500/y1k7eiOFc6fzm8XeTa1kNGx6JIs.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 31767,
+          "poster_url": "https://image.tmdb.org/t/p/w500/y1k7eiOFc6fzm8XeTa1kNGx6JIs.jpg"
+        },
+        {
+          "title": "Witchfinder General",
+          "year": 1968,
+          "slug": "Vincent Price as a ruthless witch hunter",
+          "poster": "https://image.tmdb.org/t/p/w500/5QuF8YbNtOpLbcTlEFSAokUv5sp.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 31965,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5QuF8YbNtOpLbcTlEFSAokUv5sp.jpg"
+        },
+        {
+          "title": "The Raven",
+          "year": 1963,
+          "slug": "Corman-Price horror comedy with Boris Karloff",
+          "poster": "https://image.tmdb.org/t/p/w500/tt7m22ki1raa0NrvesawJgsQ4Jn.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 29056,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tt7m22ki1raa0NrvesawJgsQ4Jn.jpg"
+        },
+        {
+          "title": "Tales of Terror",
+          "year": 1962,
+          "slug": "Price in Poe anthology film",
+          "poster": "https://image.tmdb.org/t/p/w500/avAfdcgLZ6ix1j4xjeAs3gGofIS.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 29074,
+          "poster_url": "https://image.tmdb.org/t/p/w500/avAfdcgLZ6ix1j4xjeAs3gGofIS.jpg"
+        },
+        {
+          "title": "The Haunted Palace",
+          "year": 1963,
+          "slug": "Lovecraft adaptation disguised as Poe",
+          "poster": "https://image.tmdb.org/t/p/w500/s2nvogtK7ts0BCzMdj9K1yp5PMH.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 30137,
+          "poster_url": "https://image.tmdb.org/t/p/w500/s2nvogtK7ts0BCzMdj9K1yp5PMH.jpg"
+        },
+        {
+          "title": "The Pit and the Pendulum",
+          "year": 1961,
+          "slug": "Classic Corman-Price Poe adaptation",
+          "poster": "https://image.tmdb.org/t/p/w500/6hOTmFaePluI5eicY4XTv6hg0T0.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 28501,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6hOTmFaePluI5eicY4XTv6hg0T0.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

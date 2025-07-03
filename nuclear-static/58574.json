@@ -1,0 +1,177 @@
+{
+  "props": {
+    "title": "Sherlock Holmes: A Game of Shadows",
+    "year": 2011,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/y1MYZkwhZK6L0Jy4YMuPktzDOfn.jpg",
+    "initialStreaming": null,
+    "tmdbId": 58574,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Sherlock Holmes: A Game of Shadows** (2011) amplifies everything that made Guy Ritchie's first Holmes outing distinctive, while pitting Robert Downey Jr.'s eccentric detective against his ultimate nemesis - Professor Moriarty. The film draws clear inspiration from Arthur Conan Doyle's \"The Final Problem,\" but Ritchie's kinetic style transforms the cerebral detective story into an action-packed spectacle. Like **The Dark Knight** (2008), it succeeds by focusing on the compelling antagonist relationship, with Jared Harris delivering a chillingly composed Moriarty who matches Holmes' intellect but lacks any moral compass."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Sherlock Holmes",
+            "year": 2009,
+            "slug": "Ritchie's first Holmes film established the steampunk aesthetic and chemistry between Downey Jr. and Jude Law",
+            "poster": "https://image.tmdb.org/t/p/w500/fvnu6QHyR0gSV1JI6lMyXCny21a.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 10528,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fvnu6QHyR0gSV1JI6lMyXCny21a.jpg"
+          },
+          {
+            "title": "Murder by Decree",
+            "year": 1979,
+            "slug": "Christopher Plummer's Holmes investigates Jack the Ripper in this atmospheric Victorian thriller",
+            "poster": "https://image.tmdb.org/t/p/w500/vjuO0XKak8v3uUdNjWr5sNIlJ4b.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 34374,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vjuO0XKak8v3uUdNjWr5sNIlJ4b.jpg"
+          },
+          {
+            "title": "The Private Life of Sherlock Holmes",
+            "year": 1970,
+            "slug": "Billy Wilder's melancholic take explores Holmes' personal life and vulnerabilities",
+            "poster": "https://image.tmdb.org/t/p/w500/vQSYu0DXkqTOEfWF21AzaqXxYCZ.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 5185,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vQSYu0DXkqTOEfWF21AzaqXxYCZ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's innovative \"Holmes-vision\" sequences - where time slows to show his rapid-fire deductions and combat planning - influenced action choreography in films like **Doctor Strange** (2016) and **Kingsman: The Secret Service** (2014). Ritchie's signature quick-cut editing and period-meets-modern sensibility creates a steampunk Victorian world that feels both authentic and stylized. The brotherly dynamic between Holmes and Watson evolves beyond the first film, with genuine emotional stakes as Holmes' obsession with Moriarty threatens their partnership."
+      },
+      {
+        "type": "text",
+        "content": "Hans Zimmer's score deserves special mention, incorporating Roma fiddle music that both drives the action and underscores the European chase elements. The music becomes a character itself, particularly in the forest escape sequence where the tempo matches Holmes' mathematical prediction of the gunfire patterns. This mathematical precision in action choreography would later influence films like **John Wick** (2014) and **Atomic Blonde** (2017). SUBHEAD: The Evolution of Holmes on Screen"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Young Sherlock Holmes",
+            "year": 1985,
+            "slug": "Barry Levinson's underrated origin story blends mystery with Indiana Jones-style adventure",
+            "poster": "https://image.tmdb.org/t/p/w500/aOxVYvQoAfNSns4hW5Ah55GBzgq.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 11904,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aOxVYvQoAfNSns4hW5Ah55GBzgq.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While **A Game of Shadows** takes an action-heavy approach, it follows a long tradition of reinventing Holmes for new generations. **The Seven-Per-Cent Solution** (1976) explored Holmes' cocaine addiction and psychological demons, while BBC's **Sherlock** (2010-2017) brought him into the modern era. Each adaptation emphasizes different aspects of Conan Doyle's character - from Basil Rathbone's classical portrayal in **The Hound of the Baskervilles** (1939) to Benedict Cumberbatch's \"high-functioning sociopath\" interpretation."
+      }
+    ],
+    "exploreFurther": [
+      "The Victorian Detective Genre in Cinema",
+      "Guy Ritchie's Visual Style Evolution",
+      "Hans Zimmer's Action Score Techniques",
+      "Literary Adaptations in Modern Action Films",
+      "The Moriarty Character Across Media"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Elementary",
+          "year": 2012,
+          "slug": "Modern NYC-set Holmes series with Lucy Liu as Watson",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Great Mouse Detective",
+          "year": 1986,
+          "slug": "Animated Holmes homage with excellent voice work",
+          "poster": "https://image.tmdb.org/t/p/w500/9uDr7vfjCFr39KGCcqrk44Cg7fQ.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9994,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9uDr7vfjCFr39KGCcqrk44Cg7fQ.jpg"
+        },
+        {
+          "title": "Without a Clue",
+          "year": 1988,
+          "slug": "Comedy with Michael Caine as a fraudulent Holmes",
+          "poster": "https://image.tmdb.org/t/p/w500/uZmoKYDfF965UAgPrUSz0FbavsE.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 12582,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uZmoKYDfF965UAgPrUSz0FbavsE.jpg"
+        },
+        {
+          "title": "They Might be Giants",
+          "year": 1971,
+          "slug": "Psychological drama about a man who believes he's Holmes",
+          "poster": "https://image.tmdb.org/t/p/w500/yzv8J2Vu63AQyEw5D9ckyBgn9Fo.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 27841,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yzv8J2Vu63AQyEw5D9ckyBgn9Fo.jpg"
+        },
+        {
+          "title": "Mr. Holmes",
+          "year": 2015,
+          "slug": "Ian McKellen as an aging Holmes facing memory loss",
+          "poster": "https://image.tmdb.org/t/p/w500/nNHkoefLcdtaHyG08G8aDn1yFMw.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 280996,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nNHkoefLcdtaHyG08G8aDn1yFMw.jpg"
+        },
+        {
+          "title": "The Adventure of Sherlock Holmes' Smarter Brother",
+          "year": 1975,
+          "slug": "Gene Wilder's comedy spin on the Holmes mythology",
+          "poster": "https://image.tmdb.org/t/p/w500/vmfJ1IPNRtDooSyiIT85RVZ1YMo.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 29859,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vmfJ1IPNRtDooSyiIT85RVZ1YMo.jpg"
+        },
+        {
+          "title": "Enola Holmes",
+          "year": 2020,
+          "slug": "Fresh take focusing on Holmes' teenage sister",
+          "poster": "https://image.tmdb.org/t/p/w500/riYInlsq2kf1AWoGm80JQW5dLKp.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 497582,
+          "poster_url": "https://image.tmdb.org/t/p/w500/riYInlsq2kf1AWoGm80JQW5dLKp.jpg"
+        },
+        {
+          "title": "The House of Silk",
+          "year": 2022,
+          "slug": "Modern Holmes adaptation set in London's criminal underworld",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BBC",
+          "tmdb_id": null
+        },
+        {
+          "title": "Holmes & Watson",
+          "year": 2018,
+          "slug": "Will Ferrell's comedic take on the detective",
+          "poster": "https://image.tmdb.org/t/p/w500/orEUlKndjV1rEcWqXbbjegjfv97.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 426563,
+          "poster_url": "https://image.tmdb.org/t/p/w500/orEUlKndjV1rEcWqXbbjegjfv97.jpg"
+        },
+        {
+          "title": "Sherlock Holmes in New York",
+          "year": 1976,
+          "slug": "Roger Moore as Holmes in Manhattan",
+          "poster": "https://image.tmdb.org/t/p/w500/bPnlPEt9A4BIpmUWrN7b6cKSvpy.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 27200,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bPnlPEt9A4BIpmUWrN7b6cKSvpy.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,159 @@
+{
+  "props": {
+    "title": "Red Desert",
+    "year": 1964,
+    "initialSlug": "Woman's industrial anxiety sparks mental crisis",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/rGcTVdyhaGzMxPPRVApXre6F7SD.jpg",
+    "initialStreaming": null,
+    "tmdbId": 26638,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Red Desert** (1964) marks Michelangelo Antonioni's first color film, revolutionizing how cinema could express psychological states through visual design. The film follows Giuliana (Monica Vitti), a woman suffering from nervous disorders in a dehumanizing industrial landscape. Antonioni literally painted locations - trees, grass, streets - to achieve his desired emotional effect. This approach influenced later films like **Blade Runner** (1982) and **Safe** (1995), where environment becomes a character itself. The film's innovative sound design, mixing industrial noise with electronic score, established new possibilities for expressing alienation through audio."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "L'Avventura",
+            "year": 1960,
+            "slug": "Antonioni's breakthrough film about wealthy Italians searching for a missing woman, exploring similar themes of alienation",
+            "poster": "https://image.tmdb.org/t/p/w500/7kUXAS8K7Ihw1T1mhARjnLuMVk3.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 5165,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7kUXAS8K7Ihw1T1mhARjnLuMVk3.jpg"
+          },
+          {
+            "title": "The Passenger",
+            "year": 1975,
+            "slug": "Jack Nicholson stars in Antonioni's existential thriller about a reporter who assumes another man's identity",
+            "poster": "https://image.tmdb.org/t/p/w500/A8jYH43plz70dNmHy82zAHGTqxN.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 9652,
+            "poster_url": "https://image.tmdb.org/t/p/w500/A8jYH43plz70dNmHy82zAHGTqxN.jpg"
+          },
+          {
+            "title": "Blow-Up",
+            "year": 1966,
+            "slug": "A fashion photographer believes he's captured a murder on film in mod London",
+            "poster": "https://image.tmdb.org/t/p/w500/iVtUdWsT6Ed2DK762zZxjaQAdHy.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 1052,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iVtUdWsT6Ed2DK762zZxjaQAdHy.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Antonioni's use of color in **Red Desert** transformed art cinema. The sickly yellows and greys of the industrial wasteland contrast with rare moments of saturated color, creating a visual language for Giuliana's psychological state. This technique influenced directors like Andrei Tarkovsky in **Stalker** (1979) and Todd Haynes in **Safe** (1995), who similarly used color to express internal struggles. The film's environmental concerns also proved prescient, predating eco-horror films like **Dark Waters** (2019). SUBHEAD: Industrial Landscapes and Modern Alienation"
+      },
+      {
+        "type": "text",
+        "content": "The film's portrayal of industrial spaces as both threatening and oddly beautiful created a template for depicting modern alienation. **Eraserhead** (1977) borrowed its industrial soundscape, while **Under the Skin** (2013) echoed its portrayal of landscape as psychological space. The relationship between humans and their manufactured environment in **Red Desert** influenced contemporary filmmakers like Jia Zhangke in **Still Life** (2006) and Michael Mann in **Blackhat** (2015)."
+      }
+    ],
+    "exploreFurther": [
+      "Antonioni's Color Theory - How he used painted landscapes and careful color selection to express psychological states",
+      "Industrial Sound Design in 1960s European Cinema",
+      "Monica Vitti's Collaboration with Antonioni - Their four films together",
+      "Environmental Themes in Art House Cinema",
+      "The Influence of Italian Modernist Cinema on New Hollywood"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "La Notte",
+          "year": 1961,
+          "slug": "Antonioni's study of a failing marriage over one night in Milan",
+          "poster": "https://image.tmdb.org/t/p/w500/xkd7wPJSIC76scBRHCFZ85uOH5d.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 41050,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xkd7wPJSIC76scBRHCFZ85uOH5d.jpg"
+        },
+        {
+          "title": "Zabriskie Point",
+          "year": 1970,
+          "slug": "Antonioni's American counterculture film",
+          "poster": "https://image.tmdb.org/t/p/w500/uelo2oMg4fM51LAm4eEArEwOHXZ.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 2998,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uelo2oMg4fM51LAm4eEArEwOHXZ.jpg"
+        },
+        {
+          "title": "Il Grido",
+          "year": 1957,
+          "slug": "Early Antonioni film about a working-class man's descent",
+          "poster": "https://image.tmdb.org/t/p/w500/anUoCgC45XL1nmLJoXD1kVKnwka.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 41054,
+          "poster_url": "https://image.tmdb.org/t/p/w500/anUoCgC45XL1nmLJoXD1kVKnwka.jpg"
+        },
+        {
+          "title": "The Eclipse",
+          "year": 1962,
+          "slug": "Final film in Antonioni's alienation trilogy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 21135
+        },
+        {
+          "title": "Professione: Reporter",
+          "year": 1975,
+          "slug": "Existential thriller about assumed identity",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 9652
+        },
+        {
+          "title": "Identification of a Woman",
+          "year": 1982,
+          "slug": "Late Antonioni film about a director's search",
+          "poster": "https://image.tmdb.org/t/p/w500/5SOYgzI3CeWgCKlPYkv43C11ZfZ.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 53234,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5SOYgzI3CeWgCKlPYkv43C11ZfZ.jpg"
+        },
+        {
+          "title": "Beyond the Clouds",
+          "year": 1995,
+          "slug": "Antonioni's final feature film",
+          "poster": "https://image.tmdb.org/t/p/w500/dFvjnu8NxaGlJUuNHTsaw4Ng5ee.jpg",
+          "initialStreaming": "Film Movement",
+          "tmdb_id": 33517,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dFvjnu8NxaGlJUuNHTsaw4Ng5ee.jpg"
+        },
+        {
+          "title": "Chung Kuo, Cina",
+          "year": 1972,
+          "slug": "Antonioni's documentary about China",
+          "poster": "https://image.tmdb.org/t/p/w500/8WqF1FKQ8c40bSlcSpXoLakHsSP.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 33126,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8WqF1FKQ8c40bSlcSpXoLakHsSP.jpg"
+        },
+        {
+          "title": "Le Amiche",
+          "year": 1955,
+          "slug": "Early Antonioni film about female friendship",
+          "poster": "https://image.tmdb.org/t/p/w500/ksEwRHvYqOyV7JokAhfgtUUTxsA.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 46979,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ksEwRHvYqOyV7JokAhfgtUUTxsA.jpg"
+        },
+        {
+          "title": "Story of a Love Affair",
+          "year": 1950,
+          "slug": "Antonioni's first feature film",
+          "poster": "https://image.tmdb.org/t/p/w500/9afrreOCHzCPF0Zft7ptWVbk3xr.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 49781,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9afrreOCHzCPF0Zft7ptWVbk3xr.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

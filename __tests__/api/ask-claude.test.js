@@ -2,6 +2,45 @@
 import { createMocks } from 'node-mocks-http'
 import handler from '../../pages/api/ask-claude'
 
+// Mock cache service
+jest.mock('../../lib/cache.js', () => ({
+  getCache: jest.fn(() => ({
+    cacheClaudeResponse: jest.fn((key, model, fn) => fn()),
+    cacheTMDBResponse: jest.fn((type, params, fn) => fn()),
+  }))
+}))
+
+// Mock performance monitor  
+jest.mock('../../lib/performance-monitor.js', () => ({
+  getPerformanceMonitor: jest.fn(() => ({
+    trackAPICost: jest.fn(),
+    trackMetric: jest.fn(),
+  }))
+}))
+
+// Mock predictive cache
+jest.mock('../../lib/predictive-cache.js', () => ({
+  checkPredictiveCache: jest.fn(() => Promise.resolve(null)),
+  getPredictiveCacheManager: jest.fn(() => ({
+    cachePredictiveResponse: jest.fn(() => Promise.resolve())
+  }))
+}))
+
+// Mock query detector
+jest.mock('../../lib/query-detector.js', () => ({
+  getQueryDetector: jest.fn(() => ({
+    detectSeries: jest.fn(() => Promise.resolve({ found: false, confidence: 0 }))
+  }))
+}))
+
+// Mock prompts builder
+jest.mock('../../lib/prompts/builder.js', () => ({
+  buildPrompt: jest.fn(() => ({
+    model: 'claude-3-5-sonnet-20241022',
+    max_tokens: 4000
+  }))
+}))
+
 // Mock Anthropic SDK
 jest.mock('@anthropic-ai/sdk', () => ({
   __esModule: true,

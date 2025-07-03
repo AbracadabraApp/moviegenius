@@ -1,0 +1,155 @@
+{
+  "props": {
+    "title": "Love Meetings",
+    "year": 1965,
+    "initialSlug": "Desire, Passion, Scandal Awaits",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/olOuK4gkrYzgo7xJWR1EugZ2vdS.jpg",
+    "initialStreaming": null,
+    "tmdbId": 42733,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Love Meetings** (1965) represents Pier Paolo Pasolini's groundbreaking documentary exploration of Italian sexual attitudes during the economic boom. Shot guerrilla-style across Italy, Pasolini's probing interviews with everyday citizens revealed a nation caught between Catholic tradition and sexual revolution. The film's direct-cinema approach influenced later works like **Husbands and Wives** (1992) and **When Harry Met Sally** (1989), which incorporated documentary-style interviews about relationships. Pasolini's frank discussions of taboo topics like prostitution, homosexuality, and marriage set a new standard for cinematic investigations of sexuality."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Love Meetings",
+            "year": 1965,
+            "slug": "Pasolini's documentary investigation of Italian sexual attitudes and mores",
+            "poster": "https://image.tmdb.org/t/p/w500/olOuK4gkrYzgo7xJWR1EugZ2vdS.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 42733,
+            "poster_url": "https://image.tmdb.org/t/p/w500/olOuK4gkrYzgo7xJWR1EugZ2vdS.jpg"
+          },
+          {
+            "title": "Teorema",
+            "year": 1968,
+            "slug": "Pasolini's surreal drama about a mysterious visitor who seduces an entire family",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 5335
+          },
+          {
+            "title": "Notes on Love",
+            "year": 1977,
+            "slug": "Agnes Varda's documentary exploration of relationships in 1970s France",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "MUBI",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends into modern documentary approaches to sexuality and relationships. **Deuce Bigalow: European Gigolo** (2005) may have played it for laughs, but serious examinations like **The Sessions** (2012) and **Interior. Leather Bar.** (2013) follow Pasolini's lead in breaking down sexual taboos through frank discussion. **Paris Is Burning** (1990) particularly echoes Love Meetings' interest in marginalized sexual identities and subcultures. SUBHEAD: Documentary Innovation and Sexual Politics"
+      },
+      {
+        "type": "text",
+        "content": "Pasolini's interviewing technique - direct, unflinching, yet deeply empathetic - established a template for examining controversial subjects that influenced filmmakers for decades. **Kinsey** (2004) borrowed his approach for dramatizing sexual research, while documentaries like **The Celluloid Closet** (1995) and **This Film Is Not Yet Rated** (2006) continued his tradition of challenging cultural attitudes about sexuality through cinema."
+      }
+    ],
+    "exploreFurther": [
+      "Pasolini's Documentary Techniques and Political Cinema",
+      "Sexual Revolution in 1960s Italian Cinema",
+      "Interview Methods in Documentary Film",
+      "The Influence of Direct Cinema on Modern Documentary",
+      "Representing Sexuality in Documentary Film"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "La Commare Secca",
+          "year": 1962,
+          "slug": "Bertolucci's debut follows a murder investigation through multiple perspectives",
+          "poster": "https://image.tmdb.org/t/p/w500/mRlO7kBLNxG4nUwkzaL5eDT8fK9.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 42999,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mRlO7kBLNxG4nUwkzaL5eDT8fK9.jpg"
+        },
+        {
+          "title": "I Am Curious (Yellow)",
+          "year": 1967,
+          "slug": "Groundbreaking Swedish film mixing documentary and fiction to explore sexuality",
+          "poster": "https://image.tmdb.org/t/p/w500/oE6AI3yXNLjpt8OqmnWZNQhmoqA.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 42695,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oE6AI3yXNLjpt8OqmnWZNQhmoqA.jpg"
+        },
+        {
+          "title": "WR: Mysteries of the Organism",
+          "year": 1971,
+          "slug": "Yugoslav film essay about sexuality and politics",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 42529
+        },
+        {
+          "title": "Not a Love Story",
+          "year": 1981,
+          "slug": "Documentary examination of pornography and feminism",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NFB",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Decline of Western Civilization",
+          "year": 1981,
+          "slug": "Documentary capturing LA punk scene relationships",
+          "poster": "https://image.tmdb.org/t/p/w500/36YfDJQKZfoCn5NLJ7mcrekE511.jpg",
+          "initialStreaming": "Shout Factory",
+          "tmdb_id": 21137,
+          "poster_url": "https://image.tmdb.org/t/p/w500/36YfDJQKZfoCn5NLJ7mcrekE511.jpg"
+        },
+        {
+          "title": "Paris Is Burning",
+          "year": 1990,
+          "slug": "Documentary about NYC drag ball culture",
+          "poster": "https://image.tmdb.org/t/p/w500/90rCWH41mj9hjHUEy2SOHfuAOl3.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 31225,
+          "poster_url": "https://image.tmdb.org/t/p/w500/90rCWH41mj9hjHUEy2SOHfuAOl3.jpg"
+        },
+        {
+          "title": "Sex: The Revolution",
+          "year": 2008,
+          "slug": "Documentary series about sexual revolution",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Sessions",
+          "year": 2012,
+          "slug": "Drama about a sex surrogate helping a disabled man",
+          "poster": "https://image.tmdb.org/t/p/w500/57o1DBc5DfJXVc8wArAblSbZ8sD.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 113947,
+          "poster_url": "https://image.tmdb.org/t/p/w500/57o1DBc5DfJXVc8wArAblSbZ8sD.jpg"
+        },
+        {
+          "title": "Stories We Tell",
+          "year": 2012,
+          "slug": "Sarah Polley's personal documentary about family secrets",
+          "poster": "https://image.tmdb.org/t/p/w500/aVDtDW3qP0je1Cy87GDfijG9W4c.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 128216,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aVDtDW3qP0je1Cy87GDfijG9W4c.jpg"
+        },
+        {
+          "title": "Circus of Books",
+          "year": 2019,
+          "slug": "Documentary about a gay porn shop and its straight owners",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 597594
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

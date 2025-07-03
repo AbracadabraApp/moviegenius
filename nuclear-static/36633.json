@@ -1,0 +1,185 @@
+{
+  "props": {
+    "title": "The Red Danube",
+    "year": 1949,
+    "initialSlug": "Destiny's dance in the Danube.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/x2CtZov7DwoiUZcWNvluk9Wf85h.jpg",
+    "initialStreaming": null,
+    "tmdbId": 36633,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Red Danube** (1949) stands as a crucial Cold War thriller that confronts the Soviet repatriation crisis following World War II. Walter Pidgeon leads as Colonel Nicobar, a British officer in Vienna forced to choose between military duty and moral conscience when dealing with Soviet refugees. The film shares thematic DNA with Carol Reed's <a href=\"/movie/1092\" class=\"movie-title\">The Third Man</a> (1949), both capturing Vienna's postwar atmosphere of paranoia and moral ambiguity. Like <a href=\"/movie/42286\" class=\"movie-title\">Berlin Express</a> (1948), it uses authentic European locations to enhance its immediacy."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Third Man",
+            "year": 1949,
+            "slug": "Orson Welles stars in this noir masterpiece set in postwar Vienna's black market",
+            "poster": "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 1092,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg"
+          },
+          {
+            "title": "Decision Before Dawn",
+            "year": 1951,
+            "slug": "American intelligence officers recruit German POWs for espionage missions",
+            "poster": "https://image.tmdb.org/t/p/w500/wOrzwxmEvPIiD9VDSuN1utgMAxX.jpg",
+            "initialStreaming": "NA",
+            "tmdb_id": 4461,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wOrzwxmEvPIiD9VDSuN1utgMAxX.jpg"
+          },
+          {
+            "title": "Berlin Express",
+            "year": 1948,
+            "slug": "Allied officials on a train mission through postwar Germany face conspiracy",
+            "poster": "https://image.tmdb.org/t/p/w500/eoJHaq8FLu7vJiJZTEs1OsdAjcy.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 42286,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eoJHaq8FLu7vJiJZTEs1OsdAjcy.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Director George Sidney, better known for musicals like **Anchors Aweigh** (1945), brings unexpected emotional depth to this MGM drama. The film's treatment of forced repatriation parallels themes found in later Cold War classics like <a href=\"/movie/76372\" class=\"movie-title\">Night People</a> (1954) and **Torn Curtain** (1966). Janet Leigh's performance as a refugee ballet dancer anticipates similar roles in films like **The Journey** (1959), where Cold War politics intersect with personal drama."
+      },
+      {
+        "type": "text",
+        "content": "The film's religious undertones, with Ethel Barrymore as Mother Superior protecting refugees, add complexity rarely seen in postwar propaganda. This spiritual dimension distinguishes it from contemporary anti-communist films like <a href=\"/movie/26747\" class=\"movie-title\">The Iron Curtain</a> (1948) and **I Was a Communist for the FBI** (1951), offering a more nuanced examination of faith versus political ideology. SUBHEAD: Impact on Cold War Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Iron Curtain",
+            "year": 1948,
+            "slug": "True story of Soviet cipher clerk Igor Gouzenko who defected to Canada",
+            "poster": "https://image.tmdb.org/t/p/w500/ba4sHrzFChD1jvtXdnU553iZ4W5.jpg",
+            "initialStreaming": "NA",
+            "tmdb_id": 26747,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ba4sHrzFChD1jvtXdnU553iZ4W5.jpg"
+          },
+          {
+            "title": "Night People",
+            "year": 1954,
+            "slug": "Gregory Peck stars as an American colonel investigating kidnapping in Berlin",
+            "poster": "https://image.tmdb.org/t/p/w500/dSnj3IUJWTtGCls0glpVnuyLkvU.jpg",
+            "initialStreaming": "NA",
+            "tmdb_id": 76372,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dSnj3IUJWTtGCls0glpVnuyLkvU.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**The Red Danube** influenced later films dealing with Soviet defectors and moral choices, particularly **The Big Lift** (1950) and **Man on a String** (1960). Its Vienna setting established a template for Cold War thrillers, later seen in **The Secret Ways** (1961) and **The Quiller Memorandum** (1966). The film's focus on bureaucratic complicity in human rights violations presages themes in **Judgment at Nuremberg** (1961)."
+      }
+    ],
+    "exploreFurther": [
+      "Post-WWII Vienna in Cinema: The Third Man, The Red Danube, and Four in a Jeep",
+      "Soviet Repatriation Crisis in Film and History",
+      "Religious Themes in Cold War Movies",
+      "MGM's Anti-Communist Films 1947-1954",
+      "Walter Pidgeon's Postwar Career Evolution"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Four in a Jeep",
+          "year": 1951,
+          "slug": "Swiss film about military police in occupied Vienna",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 162339
+        },
+        {
+          "title": "The Journey",
+          "year": 1959,
+          "slug": "Yul Brynner stars as a Soviet officer detaining Western travelers in Hungary",
+          "poster": "https://image.tmdb.org/t/p/w500/9HXN8SKOYnasVRPY1JUYiWzMFia.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 76714,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9HXN8SKOYnasVRPY1JUYiWzMFia.jpg"
+        },
+        {
+          "title": "The Big Lift",
+          "year": 1950,
+          "slug": "American airmen participate in the Berlin Airlift",
+          "poster": "https://image.tmdb.org/t/p/w500/uWF6c1B3QIakDNoYdpVrw8bSf2k.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 37468,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uWF6c1B3QIakDNoYdpVrw8bSf2k.jpg"
+        },
+        {
+          "title": "Decision at Sundown",
+          "year": 1957,
+          "slug": "Cold War tensions in postwar Europe",
+          "poster": "https://image.tmdb.org/t/p/w500/oR7L1RIgN8zHE83E4Z2MU6jYF8r.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 39557,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oR7L1RIgN8zHE83E4Z2MU6jYF8r.jpg"
+        },
+        {
+          "title": "Five Fingers",
+          "year": 1952,
+          "slug": "James Mason as a WWII spy in neutral Turkey",
+          "poster": "https://image.tmdb.org/t/p/w500/bjD5qcUGjQIZUAeyMJBnXDuN6SW.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 59087,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bjD5qcUGjQIZUAeyMJBnXDuN6SW.jpg"
+        },
+        {
+          "title": "The Secret Ways",
+          "year": 1961,
+          "slug": "Richard Widmark attempts to rescue an anti-Communist leader",
+          "poster": "https://image.tmdb.org/t/p/w500/jaiu4EA2ywxw0vubMT9QeTg6sJ8.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 37487,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jaiu4EA2ywxw0vubMT9QeTg6sJ8.jpg"
+        },
+        {
+          "title": "13 Rue Madeleine",
+          "year": 1947,
+          "slug": "James Cagney leads OSS operations in Europe",
+          "poster": "https://image.tmdb.org/t/p/w500/5LWLFo2F618U6nb35PujPuXdEyi.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 18200,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5LWLFo2F618U6nb35PujPuXdEyi.jpg"
+        },
+        {
+          "title": "Operation Secret",
+          "year": 1952,
+          "slug": "Cornel Wilde stars in this WWII espionage drama",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 216108
+        },
+        {
+          "title": "The Man Between",
+          "year": 1953,
+          "slug": "James Mason in Carol Reed's Berlin-set thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/nXKmv6vF17wntw0s1vHVgm2DQze.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 3014,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nXKmv6vF17wntw0s1vHVgm2DQze.jpg"
+        },
+        {
+          "title": "Assignment Paris",
+          "year": 1952,
+          "slug": "American journalist uncovers Soviet conspiracy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 87294
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

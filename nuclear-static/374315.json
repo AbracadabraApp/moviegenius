@@ -1,0 +1,172 @@
+{
+  "props": {
+    "title": "Yellow Cake",
+    "year": 2010,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/voswvICgkPwyogsqnbP4xaTEvPD.jpg",
+    "initialStreaming": null,
+    "tmdbId": 374315,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Yellow Cake** (2010) stands as a haunting documentary exposé of uranium mining's devastating environmental impact. Director Joachim Tschirner spent over a decade documenting the WISMUT mining operations in East Germany, creating a stark parallel to nuclear documentaries like **Into Eternity** (2010) and **The Atomic Cafe** (1982). The film's methodical pacing and detailed investigation style recalls the environmental urgency of **An Inconvenient Truth** (2006), but focuses specifically on the uranium industry's lasting toxic legacy."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Silkwood",
+            "year": 1983,
+            "slug": "Meryl Streep stars in this true story about a whistleblower at a plutonium processing plant who mysterious dies while investigating safety violations",
+            "poster": "https://image.tmdb.org/t/p/w500/7Piz5R5dB6d7v1OWNaIn9GB4qZg.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 12502,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7Piz5R5dB6d7v1OWNaIn9GB4qZg.jpg"
+          },
+          {
+            "title": "The China Syndrome",
+            "year": 1979,
+            "slug": "Jane Fonda and Jack Lemmon uncover safety coverups at a nuclear power plant, released 12 days before Three Mile Island accident",
+            "poster": "https://image.tmdb.org/t/p/w500/uHwwQIlt4XwpTFhX9ZT1A8xSW7F.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 988,
+            "poster_url": "https://image.tmdb.org/t/p/w500/uHwwQIlt4XwpTFhX9ZT1A8xSW7F.jpg"
+          },
+          {
+            "title": "Chernobyl Heart",
+            "year": 2003,
+            "slug": "Oscar-winning short documentary examining the ongoing health effects of the Chernobyl disaster on Belarus children",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 26753
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The nuclear documentary genre gained renewed relevance after Fukushima, with films like **The Atomic States of America** (2012) and **Containment** (2015) joining Yellow Cake in examining nuclear power's hidden costs. Tschirner's film distinguishes itself through its patient, decades-spanning investigation and intimate access to former miners and contaminated communities. The film's stark imagery of abandoned mines and processing facilities creates an eerie post-industrial landscape reminiscent of **Manufactured Landscapes** (2006)."
+      },
+      {
+        "type": "text",
+        "content": "While many nuclear documentaries focus on power plants or weapons, Yellow Cake's examination of uranium mining exposes the industry's often-overlooked first step. This approach aligns with other resource extraction documentaries like **To the Last Drop** (2011) and **Gold Fever** (2013), revealing how environmental damage begins long before uranium reaches any reactor. SUBHEAD: Environmental Impact Documentation"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Pandora's Promise",
+            "year": 2013,
+            "slug": "Controversial documentary making the case for nuclear power as a solution to climate change, featuring converted environmentalists",
+            "poster": "https://image.tmdb.org/t/p/w500/1n6lvmXwmqrz3Jek6sJIO6eR2s4.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 159152,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1n6lvmXwmqrz3Jek6sJIO6eR2s4.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Yellow Cake's methodical documentation techniques influenced later environmental documentaries like **In the Heart of the Machine** (2012) and **Nuclear Nation** (2012). Its combination of historical footage, contemporary interviews, and long-term health impact studies creates a comprehensive indictment of industrial negligence. The film's approach to visualizing invisible contamination particularly resonates with works like **The Invisible War** (2012) about radiation exposure."
+      }
+    ],
+    "exploreFurther": [
+      "The history of uranium mining in East Germany and its environmental legacy",
+      "Documentary techniques for visualizing environmental contamination",
+      "The intersection of Cold War politics and nuclear industry development",
+      "Long-term health impacts of uranium mining on communities",
+      "Modern uranium mining practices and regulations worldwide"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Uranium Drive-In",
+          "year": 2013,
+          "slug": "Small Colorado town debates a new uranium mill",
+          "poster": null,
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 277176,
+          "poster_url": null
+        },
+        {
+          "title": "Dark Circle",
+          "year": 1982,
+          "slug": "Classic documentary examining the human cost of the nuclear age",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 153543
+        },
+        {
+          "title": "Nuclear Nation II",
+          "year": 2014,
+          "slug": "Follow-up examining Fukushima refugees years after disaster",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 372605
+        },
+        {
+          "title": "The Return of Navajo Boy",
+          "year": 2000,
+          "slug": "Uranium mining's impact on Navajo communities",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "PBS",
+          "tmdb_id": 519037
+        },
+        {
+          "title": "If You Love This Planet",
+          "year": 1982,
+          "slug": "Dr. Helen Caldicott's warning about nuclear weapons",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NFB",
+          "tmdb_id": 244415
+        },
+        {
+          "title": "Uranium: Twisting the Dragon's Tail",
+          "year": 2015,
+          "slug": "History and science of uranium",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "PBS",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Atomic Cafe",
+          "year": 1982,
+          "slug": "Cold War nuclear propaganda mashup",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 26851
+        },
+        {
+          "title": "Into Eternity",
+          "year": 2010,
+          "slug": "Finland's nuclear waste burial project",
+          "poster": "https://image.tmdb.org/t/p/w500/hzINyIeovFPMwtwMteSuXdByCby.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 54527,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hzINyIeovFPMwtwMteSuXdByCby.jpg"
+        },
+        {
+          "title": "Countdown to Zero",
+          "year": 2010,
+          "slug": "Nuclear proliferation dangers",
+          "poster": "https://image.tmdb.org/t/p/w500/lJ8EQ4D0x4iPlBxrKGXGtHTwvt6.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 50420,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lJ8EQ4D0x4iPlBxrKGXGtHTwvt6.jpg"
+        },
+        {
+          "title": "The Day After Trinity",
+          "year": 1981,
+          "slug": "Making of the first atomic bomb",
+          "poster": "https://image.tmdb.org/t/p/w500/yvNoCvCe4F52KumCuoUePsw7dsN.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 59314,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yvNoCvCe4F52KumCuoUePsw7dsN.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

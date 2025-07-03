@@ -1,0 +1,159 @@
+{
+  "props": {
+    "title": "State Fair",
+    "year": 1962,
+    "initialSlug": "Young love blooms at a vibrant Midwest fair",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/AqT2aWYOr51Nkm3gDtJkX0w4NkY.jpg",
+    "initialStreaming": null,
+    "tmdbId": 28187,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The 1962 musical adaptation of **State Fair** stands as a vibrant example of Rogers and Hammerstein's later work, following their massive successes with <a href=\"/movie/13936\" class=\"movie-title\">Oklahoma!</a> (1955) and **The King and I** (1956). Pat Boone and Bobby Darin lead this technicolor spectacle that captures the quintessential American heartland experience. While less critically acclaimed than the 1945 version starring Jeanne Crain, this remake showcases the transition of Hollywood musicals into the more modern 1960s style, with broader choreography and more contemporary musical arrangements."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Oklahoma!",
+            "year": 1955,
+            "slug": "Rogers and Hammerstein's groundbreaking musical about love and rivalry in frontier territory",
+            "poster": "https://image.tmdb.org/t/p/w500/ztqT5GmJVI2o8vShGWRVVqykQqA.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 13936,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ztqT5GmJVI2o8vShGWRVVqykQqA.jpg"
+          },
+          {
+            "title": "The Music Man",
+            "year": 1962,
+            "slug": "Robert Preston stars as a charismatic con man who brings music to a small Iowa town",
+            "poster": "https://image.tmdb.org/t/p/w500/4yo6qaqVF1IThXMapo4yW9BRWjV.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 13671,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4yo6qaqVF1IThXMapo4yW9BRWjV.jpg"
+          },
+          {
+            "title": "State Fair",
+            "year": 1945,
+            "slug": "The original adaptation of the Rogers and Hammerstein musical about romance at the Iowa State Fair",
+            "poster": "https://image.tmdb.org/t/p/w500/cmy55K7Qs1WQeGPksHBphjyjh3b.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 27686,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cmy55K7Qs1WQeGPksHBphjyjh3b.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The 1962 version reflects changing American values during a pivotal cultural moment. While **Bye Bye Birdie** (1963) tackled rock and roll's influence on small-town America head-on, **State Fair** (1962) attempts to bridge traditional Americana with early 60s sensibilities. The film's treatment of romance and family dynamics feels caught between the wholesome 1950s and the more complex decade ahead, similar to how **The Parent Trap** (1961) approached changing family dynamics in a transitional way. SUBHEAD: The Evolution of American Musical Films"
+      },
+      {
+        "type": "text",
+        "content": "The early 1960s marked a crucial turning point for Hollywood musicals. While **West Side Story** (1961) pushed boundaries with urban grittiness and social commentary, **State Fair** (1962) maintained the optimistic tradition of **Seven Brides for Seven Brothers** (1954). This tension between modernization and nostalgia would continue through films like **The Unsinkable Molly Brown** (1964) before the genre's dramatic shift with **Cabaret** (1972)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Rogers and Hammerstein's Screen Adaptations",
+      "Agricultural Fairs in American Cinema",
+      "The Transition of Hollywood Musicals: 1950s to 1960s",
+      "Pat Boone's Film Career and Cultural Impact",
+      "Comparing the Three Versions of State Fair (1933, 1945, 1962)"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Carousel",
+          "year": 1956,
+          "slug": "Another Rogers and Hammerstein musical about love and redemption",
+          "poster": "https://image.tmdb.org/t/p/w500/1W7X2rHPTqzfYG5dZbvWcR5MzUs.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 28100,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1W7X2rHPTqzfYG5dZbvWcR5MzUs.jpg"
+        },
+        {
+          "title": "The Pajama Game",
+          "year": 1957,
+          "slug": "Musical romance set against labor disputes in a pajama factory",
+          "poster": "https://image.tmdb.org/t/p/w500/71Q9f7byPqH8trF4BvZOlXnhO2D.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 40867,
+          "poster_url": "https://image.tmdb.org/t/p/w500/71Q9f7byPqH8trF4BvZOlXnhO2D.jpg"
+        },
+        {
+          "title": "Flower Drum Song",
+          "year": 1961,
+          "slug": "Rogers and Hammerstein's groundbreaking Asian-American musical",
+          "poster": "https://image.tmdb.org/t/p/w500/d87EHTG1F1uNOWzu8i0yYssWRX5.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 25105,
+          "poster_url": "https://image.tmdb.org/t/p/w500/d87EHTG1F1uNOWzu8i0yYssWRX5.jpg"
+        },
+        {
+          "title": "Bye Bye Birdie",
+          "year": 1963,
+          "slug": "Musical satire of American teen culture and rock and roll",
+          "poster": "https://image.tmdb.org/t/p/w500/u3m2kU5aFj6V6cNYOd9a22Iia7O.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 25167,
+          "poster_url": "https://image.tmdb.org/t/p/w500/u3m2kU5aFj6V6cNYOd9a22Iia7O.jpg"
+        },
+        {
+          "title": "Summer Holiday",
+          "year": 1963,
+          "slug": "Cliff Richard musical about young people touring Europe",
+          "poster": "https://image.tmdb.org/t/p/w500/b4UwmZrb1ReyTXoAFRXhdgv05Hd.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 43532,
+          "poster_url": "https://image.tmdb.org/t/p/w500/b4UwmZrb1ReyTXoAFRXhdgv05Hd.jpg"
+        },
+        {
+          "title": "The Unsinkable Molly Brown",
+          "year": 1964,
+          "slug": "Debbie Reynolds stars in this musical biopic",
+          "poster": "https://image.tmdb.org/t/p/w500/f0hd12ajjQprxP3V90xfy0iqOvb.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 42797,
+          "poster_url": "https://image.tmdb.org/t/p/w500/f0hd12ajjQprxP3V90xfy0iqOvb.jpg"
+        },
+        {
+          "title": "April Love",
+          "year": 1957,
+          "slug": "Pat Boone stars in this musical romance set in Kentucky",
+          "poster": "https://image.tmdb.org/t/p/w500/64Zay1PxaN2uFNlvlOey2Li84i2.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 106833,
+          "poster_url": "https://image.tmdb.org/t/p/w500/64Zay1PxaN2uFNlvlOey2Li84i2.jpg"
+        },
+        {
+          "title": "South Pacific",
+          "year": 1958,
+          "slug": "Rogers and Hammerstein's wartime romance musical",
+          "poster": "https://image.tmdb.org/t/p/w500/nYNltu2clFoRQGBz9BtZUTcCbUm.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 17352,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nYNltu2clFoRQGBz9BtZUTcCbUm.jpg"
+        },
+        {
+          "title": "Gidget Goes to Rome",
+          "year": 1963,
+          "slug": "Musical comedy about American teens in Italy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 42799
+        },
+        {
+          "title": "Billy Rose's Jumbo",
+          "year": 1962,
+          "slug": "Doris Day stars in this circus-themed musical",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 42991
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

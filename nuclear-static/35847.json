@@ -1,0 +1,156 @@
+{
+  "props": {
+    "title": "Les Mistons",
+    "year": 1957,
+    "initialSlug": "Young hearts run wild",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/rRSWvUqBBxaQ2O8CRdEQFQRqzAs.jpg",
+    "initialStreaming": null,
+    "tmdbId": 35847,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "François Truffaut's **Les Mistons** (1957) marks a pivotal moment in French New Wave cinema, arriving just before his revolutionary <a href=\"/movie/147\" class=\"movie-title\">The 400 Blows</a> (1959). This 18-minute short follows five mischievous boys who torment a young couple, capturing both childhood cruelty and innocence through innovative handheld camerawork and natural performances. The film establishes Truffaut's signature themes of youth, desire, and observation that would define his later masterpieces like **Jules and Jim** (1962) and **Day for Night** (1973)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The 400 Blows",
+            "year": 1959,
+            "slug": "Truffaut's breakthrough feature about a troubled youth in Paris, establishing the French New Wave",
+            "poster": "https://image.tmdb.org/t/p/w500/12PuU23kkDLvTd0nb8hMlE3oShB.jpg",
+            "initialStreaming": "Criterion,HBO Max",
+            "tmdb_id": 147,
+            "poster_url": "https://image.tmdb.org/t/p/w500/12PuU23kkDLvTd0nb8hMlE3oShB.jpg"
+          },
+          {
+            "title": "Small Change",
+            "year": 1976,
+            "slug": "Truffaut returns to themes of childhood with interconnected stories of provincial French kids",
+            "poster": "https://image.tmdb.org/t/p/w500/lBOkXZ2RsL2BO6NlrFgR9yT7J4I.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 1660,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lBOkXZ2RsL2BO6NlrFgR9yT7J4I.jpg"
+          },
+          {
+            "title": "Zero for Conduct",
+            "year": 1933,
+            "slug": "Jean Vigo's influential short about rebellious boarding school boys that inspired Les Mistons",
+            "poster": "https://image.tmdb.org/t/p/w500/oQcGB9BGj9LPTWcEdij47McotKY.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 44494,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oQcGB9BGj9LPTWcEdij47McotKY.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The DNA of **Les Mistons** runs through countless coming-of-age films that followed. Its influence is visible in works like **My Life as a Dog** (1985), where young protagonists navigate the complexities of adult relationships through a lens of childhood confusion. Maurice Pialat's **L'Enfance Nue** (1968) adopts similar documentary-like observations of youth, while **The Spirit of the Beehive** (1973) echoes Les Mistons' exploration of children processing adult mysteries. SUBHEAD: The French New Wave Connection"
+      },
+      {
+        "type": "text",
+        "content": "As one of Truffaut's earliest works, **Les Mistons** demonstrates the emerging stylistic hallmarks of the French New Wave - location shooting, jump cuts, and direct camera address. These techniques would be expanded in contemporaneous works like Jean-Luc Godard's **Breathless** (1960) and Agnès Varda's **La Pointe Courte** (1955). The film's treatment of voyeurism and youth anticipates later New Wave classics like Jacques Rozier's **Adieu Philippine** (1962)."
+      }
+    ],
+    "exploreFurther": [
+      "Truffaut's Evolution of Youth Themes - From Les Mistons to Small Change",
+      "Documentary Techniques in French New Wave Short Films",
+      "The Influence of Jean Vigo on the French New Wave",
+      "Coming-of-Age Stories in European Cinema",
+      "The Role of Children as Observers in Art Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Antoine and Colette",
+          "year": 1962,
+          "slug": "Short film continuation of The 400 Blows following Antoine Doinel",
+          "poster": "https://image.tmdb.org/t/p/w500/nfP8J7pv75KOAliIM3RG7h6Zos5.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 256,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nfP8J7pv75KOAliIM3RG7h6Zos5.jpg"
+        },
+        {
+          "title": "Zazie dans le Métro",
+          "year": 1960,
+          "slug": "Louis Malle's playful adaptation about a young girl loose in Paris",
+          "poster": "https://image.tmdb.org/t/p/w500/hl0loQ9fci2PMdRFuZIYoHTP8x8.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 2546,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hl0loQ9fci2PMdRFuZIYoHTP8x8.jpg"
+        },
+        {
+          "title": "The Wild Child",
+          "year": 1970,
+          "slug": "Truffaut directs and stars in true story of a feral boy's education",
+          "poster": "https://image.tmdb.org/t/p/w500/ivIyyc2VgefJK9LdAogl1BEgmeH.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1627,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ivIyyc2VgefJK9LdAogl1BEgmeH.jpg"
+        },
+        {
+          "title": "Les Quatre Cents Coups",
+          "year": 1959,
+          "slug": "The 400 Blows - Truffaut's semi-autobiographical masterpiece",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 147
+        },
+        {
+          "title": "L'Enfant Sauvage",
+          "year": 1970,
+          "slug": "Alternate title for The Wild Child, exploring childhood development",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1627
+        },
+        {
+          "title": "Stolen Kisses",
+          "year": 1968,
+          "slug": "Third film in Truffaut's Antoine Doinel series",
+          "poster": "https://image.tmdb.org/t/p/w500/5qHh1Vp2TOOX5IaTVt4wyT8OTnR.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 255,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5qHh1Vp2TOOX5IaTVt4wyT8OTnR.jpg"
+        },
+        {
+          "title": "The Story of Adele H",
+          "year": 1975,
+          "slug": "Truffaut examines obsessive love through historical lens",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1829
+        },
+        {
+          "title": "Two English Girls",
+          "year": 1971,
+          "slug": "Truffaut's period romance exploring young love and desire",
+          "poster": "https://image.tmdb.org/t/p/w500/rYwQjI6pteowNZEucvHycGZRqGf.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 42513,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rYwQjI6pteowNZEucvHycGZRqGf.jpg"
+        },
+        {
+          "title": "L'Argent de Poche",
+          "year": 1976,
+          "slug": "Alternative title for Small Change",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1660
+        },
+        {
+          "title": "À bout de souffle",
+          "year": 1960,
+          "slug": "Godard's Breathless - defining French New Wave film",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 269
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

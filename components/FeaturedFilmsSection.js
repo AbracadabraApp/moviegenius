@@ -34,7 +34,7 @@ function FeaturedFilmsSection({
       </div>
       <div style={styles.movieGrid}>
         {movies
-          .filter(movie => movie.title && movie.year) // Show movies with basic required fields
+          .filter(movie => movie.title && movie.year && movie.tmdb_id && movie.tmdb_id !== null && movie.tmdb_id !== 'MISSING') // Show movies with required fields including valid tmdb_id
           .map((movie, movieIndex) => (
           <div key={`${movie.title}-${movie.year}-${movieIndex}`} style={styles.movieCardWrapper}>
             <MediaCard

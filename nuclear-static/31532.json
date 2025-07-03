@@ -1,0 +1,170 @@
+{
+  "props": {
+    "title": "Love Me Tonight",
+    "year": 1932,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/3wjHj3LmmezUsBHxFL8xpRdMxVX.jpg",
+    "initialStreaming": null,
+    "tmdbId": 31532,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Love Me Tonight** (1932) revolutionized the movie musical through Rouben Mamoulian's innovative direction and sound design. The film opens with the groundbreaking \"Symphony of Noise\" sequence, turning Paris street sounds into rhythm years before similar techniques appeared in **An American in Paris** (1951). Mamoulian's camera moves with unprecedented fluidity, predating the sweeping movements Orson Welles would later use in **Citizen Kane** (1941). The integration of songs into the narrative, particularly \"Isn't it Romantic?\" passing from character to character across Paris, created a template that influenced musicals for decades."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Gay Divorcee",
+            "year": 1934,
+            "slug": "Fred Astaire and Ginger Rogers sparkle in this Art Deco musical comedy about mistaken identity at a seaside resort",
+            "poster": "https://image.tmdb.org/t/p/w500/8kTPsctFZVLktaZbCN7isYFfb4T.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 28288,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8kTPsctFZVLktaZbCN7isYFfb4T.jpg"
+          },
+          {
+            "title": "Top Hat",
+            "year": 1935,
+            "slug": "The most beloved Astaire-Rogers partnership featuring \"Cheek to Cheek\" in a venetian-inspired setting",
+            "poster": "https://image.tmdb.org/t/p/w500/qoPBiN6PBs2NsP7BNOJGCnmwruG.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 3080,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qoPBiN6PBs2NsP7BNOJGCnmwruG.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Maurice Chevalier and Jeanette MacDonald's chemistry sparkles with pre-Code playfulness that vanished after 1934's Production Code enforcement. Their performances in songs like \"Mimi\" and \"The Son of a Gun Is Nothing But a Tailor\" showcase how early sound musicals could balance sophistication with accessibility. This approach influenced later works like **The Band Wagon** (1953) and **Singin' in the Rain** (1952), which also used musical numbers to advance plot rather than merely interrupt it."
+      },
+      {
+        "type": "text",
+        "content": "The film's costume design by Travis Banton and art direction by Hans Dreier created a stylized vision of Paris that became a template for Hollywood's European fantasies. This aesthetic lineage can be traced through **Gigi** (1958) and **An American in Paris** (1951), showing how **Love Me Tonight** established enduring visual tropes for depicting romantic European settings. SUBHEAD: Technical Innovation and Sound Design"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Merry Widow",
+            "year": 1934,
+            "slug": "Ernst Lubitsch directs Chevalier and MacDonald in a sophisticated operetta adaptation",
+            "poster": "https://image.tmdb.org/t/p/w500/yjrHjvP5PGxGLmba2Gu6SVPh59I.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 43689,
+            "poster_url": "https://image.tmdb.org/t/p/w500/yjrHjvP5PGxGLmba2Gu6SVPh59I.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Mamoulian's experimental use of sound mixing and tracking shots was revolutionary for 1932. His technique of building the opening sequence from street noise into musical rhythm influenced films like **West Side Story** (1961) and even modern works like **La La Land** (2016). The director's insistence on recording live sound rather than post-dubbing created an immediacy that was rare in early sound films."
+      }
+    ],
+    "exploreFurther": [
+      "Rouben Mamoulian's Sound Innovation - How the opening sequence revolutionized film audio",
+      "Pre-Code Hollywood Musical Freedom - The impact of censorship on subsequent musicals",
+      "Rodgers and Hart's Hollywood Career - Their contribution to early film musicals",
+      "The Evolution of Integrated Musical Numbers in Film",
+      "Maurice Chevalier and Jeanette MacDonald's Partnership in Early Talkies"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "One Hour With You",
+          "year": 1932,
+          "slug": "Lubitsch musical comedy with Chevalier and MacDonald",
+          "poster": "https://image.tmdb.org/t/p/w500/oVDJZXwHKD0NgHaHZrkHuqHsJyF.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 43145,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oVDJZXwHKD0NgHaHZrkHuqHsJyF.jpg"
+        },
+        {
+          "title": "Monte Carlo",
+          "year": 1930,
+          "slug": "Early musical romance with McDonald and European setting",
+          "poster": "https://image.tmdb.org/t/p/w500/eKw9l71pSV2lQpUsfK1pV3KJKaX.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 105067,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eKw9l71pSV2lQpUsfK1pV3KJKaX.jpg"
+        },
+        {
+          "title": "The Smiling Lieutenant",
+          "year": 1931,
+          "slug": "Sophisticated Lubitsch musical with Chevalier",
+          "poster": "https://image.tmdb.org/t/p/w500/6CiCOw0DYgi2Fjn3Bl8O5AAYH17.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 31409,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6CiCOw0DYgi2Fjn3Bl8O5AAYH17.jpg"
+        },
+        {
+          "title": "The Love Parade",
+          "year": 1929,
+          "slug": "First sound film to integrate musical numbers into plot",
+          "poster": "https://image.tmdb.org/t/p/w500/pWAoFnPsH4gYiFGqLwzicyMazdh.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 51759,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pWAoFnPsH4gYiFGqLwzicyMazdh.jpg"
+        },
+        {
+          "title": "Trouble in Paradise",
+          "year": 1932,
+          "slug": "Lubitsch's sophisticated pre-Code comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/FBxuoLRD3Biyul14unT5m3PYNS.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 195,
+          "poster_url": "https://image.tmdb.org/t/p/w500/FBxuoLRD3Biyul14unT5m3PYNS.jpg"
+        },
+        {
+          "title": "42nd Street",
+          "year": 1933,
+          "slug": "Groundbreaking backstage musical",
+          "poster": "https://image.tmdb.org/t/p/w500/q4UEd8BL74zVsOOaJkKVMLMmdTg.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 3062,
+          "poster_url": "https://image.tmdb.org/t/p/w500/q4UEd8BL74zVsOOaJkKVMLMmdTg.jpg"
+        },
+        {
+          "title": "Gold Diggers of 1933",
+          "year": 1933,
+          "slug": "Depression-era Busby Berkeley spectacular",
+          "poster": "https://image.tmdb.org/t/p/w500/sXsUJsW9fcVT15hfBu9LyU22qmG.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 31511,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sXsUJsW9fcVT15hfBu9LyU22qmG.jpg"
+        },
+        {
+          "title": "Flying Down to Rio",
+          "year": 1933,
+          "slug": "First Astaire-Rogers pairing",
+          "poster": "https://image.tmdb.org/t/p/w500/zKBXy84eN6tgwXaYsiFSCgq0GBc.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 28293,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zKBXy84eN6tgwXaYsiFSCgq0GBc.jpg"
+        },
+        {
+          "title": "Footlight Parade",
+          "year": 1933,
+          "slug": "James Cagney leads elaborate musical numbers",
+          "poster": "https://image.tmdb.org/t/p/w500/4mrL1qVnQXjl6NDfhnp1LjGlqis.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 28432,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4mrL1qVnQXjl6NDfhnp1LjGlqis.jpg"
+        },
+        {
+          "title": "The Broadway Melody",
+          "year": 1929,
+          "slug": "First sound film to win Best Picture",
+          "poster": "https://image.tmdb.org/t/p/w500/giq8GJs8YGMzHxeKxNSuwzAdd1c.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 65203,
+          "poster_url": "https://image.tmdb.org/t/p/w500/giq8GJs8YGMzHxeKxNSuwzAdd1c.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

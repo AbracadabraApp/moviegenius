@@ -1,0 +1,170 @@
+{
+  "props": {
+    "title": "The Sword",
+    "year": 1980,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/hm8G4FQJN53MpSGOtXyBAmHGHZ6.jpg",
+    "initialStreaming": null,
+    "tmdbId": 73841,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Sword** (1980) represents a pivotal moment in Hong Kong martial arts cinema, directed by Patrick Li and starring Ti Lung at the height of his Shaw Brothers career. The film elevates traditional wuxia conventions through its focus on a single legendary weapon, similar to how **Heroes Two** (1974) and <a href=\"/movie/26875\" class=\"movie-title\">The Magic Blade</a> (1976) centered their narratives around specific martial arts techniques. Ti Lung's portrayal of a swordsman seeking revenge showcases the Shaw Brothers' signature blend of acrobatic swordplay and dramatic character development."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Magic Blade",
+            "year": 1976,
+            "slug": "Ti Lung stars as a wandering swordsman with a unique weapon in this Shaw Brothers classic",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "NA",
+            "tmdb_id": 26875
+          },
+          {
+            "title": "Have Sword Will Travel",
+            "year": 1969,
+            "slug": "A masterful early Shaw Brothers wuxia featuring the legendary Jimmy Wang Yu",
+            "poster": "https://image.tmdb.org/t/p/w500/yGMISnGy4HdTLRtHw42RnJ6dTM8.jpg",
+            "initialStreaming": "NA",
+            "tmdb_id": 90022,
+            "poster_url": "https://image.tmdb.org/t/p/w500/yGMISnGy4HdTLRtHw42RnJ6dTM8.jpg"
+          },
+          {
+            "title": "The One-Armed Swordsman",
+            "year": 1967,
+            "slug": "The definitive Shaw Brothers sword epic that launched a whole subgenre",
+            "poster": "https://image.tmdb.org/t/p/w500/5uUwl2cB4O7NmDFsKCmZkYTtVGO.jpg",
+            "initialStreaming": "NA",
+            "tmdb_id": 54178,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5uUwl2cB4O7NmDFsKCmZkYTtVGO.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "What sets **The Sword** (1980) apart is its technical sophistication in fight choreography. Fight director Tang Chia, who also choreographed **Five Deadly Venoms** (1978) and **Flag of Iron** (1980), creates intricate sword battles that emphasize the weapon's deadly grace. The film's climactic duel rivals the intensity of **Killer Clans** (1976) while maintaining a focused character study reminiscent of <a href=\"/movie/66013\" class=\"movie-title\">Death Duel</a> (1977)."
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extended beyond Hong Kong, helping establish conventions that would appear in later Japanese samurai films like **Lady Snowblood** (1973) and even modern wuxia revivals like **Crouching Tiger, Hidden Dragon** (2000). The emphasis on the mystical properties of the sword itself created a template for how martial arts films could blend supernatural elements with traditional combat. SUBHEAD: Technical Innovation in Martial Arts Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Death Duel",
+            "year": 1977,
+            "slug": "Derek Yee stars in this tale of a skilled swordsman trying to escape his violent past",
+            "poster": "https://image.tmdb.org/t/p/w500/lmml8nOM7qngn2v4rrSnMKvNado.jpg",
+            "initialStreaming": "NA",
+            "tmdb_id": 66013,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lmml8nOM7qngn2v4rrSnMKvNado.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The cinematography by Cho Wai-kei brings unprecedented attention to the sword itself, treating it almost as a character. This technique would later influence films like **The Blade** (1995) and **Hero** (2002). The film's use of quick-cut editing during fight scenes, while maintaining visual clarity, set new standards for action choreography that influenced directors like Tsui Hark in **The Butterfly Murders** (1979)."
+      }
+    ],
+    "exploreFurther": [
+      "Shaw Brothers' Evolution of Sword Combat Choreography",
+      "Ti Lung's Impact on Martial Arts Cinema",
+      "The Role of Weapons as Characters in Wuxia Films",
+      "Technical Innovations in 1980s Hong Kong Action Cinema",
+      "Cross-Cultural Influence of Hong Kong Sword Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Blood Brothers",
+          "year": 1973,
+          "slug": "Chang Cheh directs this tragic tale of brotherhood and betrayal",
+          "poster": "https://image.tmdb.org/t/p/w500/mURFIZTyqb1utz870qHV0Cm8eRK.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 64363,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mURFIZTyqb1utz870qHV0Cm8eRK.jpg"
+        },
+        {
+          "title": "Clan of the White Lotus",
+          "year": 1980,
+          "slug": "Classic revenge story with exceptional sword fighting",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 41377
+        },
+        {
+          "title": "Legend of the Fox",
+          "year": 1980,
+          "slug": "Another Ti Lung masterpiece from the same year",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 154349
+        },
+        {
+          "title": "The Proud Twins",
+          "year": 1979,
+          "slug": "Alexander Fu Sheng stars in this wuxia adventure",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 174765
+        },
+        {
+          "title": "Return of the Swordsman",
+          "year": 1981,
+          "slug": "Direct spiritual successor to The Sword",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 179631
+        },
+        {
+          "title": "Killer Clans",
+          "year": 1976,
+          "slug": "Complex political intrigue meets martial arts action",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 87036
+        },
+        {
+          "title": "The Swordsman",
+          "year": 1990,
+          "slug": "Modern take on classic sword fighting themes",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 18860
+        },
+        {
+          "title": "New One-Armed Swordsman",
+          "year": 1971,
+          "slug": "Jimmy Wang Yu returns in this acclaimed sequel",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 28039
+        },
+        {
+          "title": "The Swift Sword",
+          "year": 1980,
+          "slug": "Contemporary release showing parallel sword fighting evolution",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 66752
+        },
+        {
+          "title": "Golden Swallow",
+          "year": 1968,
+          "slug": "Chang Pei-pei stars in this influential sword fighting classic",
+          "poster": "https://image.tmdb.org/t/p/w500/zaLzdKioK8IrqN2tjXLmTTA7TVp.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 32388,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zaLzdKioK8IrqN2tjXLmTTA7TVp.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

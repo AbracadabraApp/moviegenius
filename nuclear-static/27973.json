@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "Dead End",
+    "year": 1937,
+    "initialSlug": "Where the road ends, death begins.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/5ZYJY5qZOj7dPfjSdnM7gFk2Ch0.jpg",
+    "initialStreaming": null,
+    "tmdbId": 27973,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Dead End** (1937) marks a pivotal moment in social realism cinema, with director William Wyler and playwright Sidney Kingsley exposing the harsh realities of Depression-era New York. The film's stark portrayal of class divisions, featuring Humphrey Bogart as Baby Face Martin and the first appearance of the \"Dead End Kids,\" influenced urban crime dramas for decades. Its innovative set design by Richard Day created a claustrophobic microcosm where wealthy apartments tower over tenement squalor - a visual metaphor that <a href=\"/movie/13696\" class=\"movie-title\">Angels with Dirty Faces</a> (1938) and **The Public Enemy** (1931) would echo."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Dead End",
+            "year": 1937,
+            "slug": "A gangster returns to his old neighborhood, where poverty and privilege collide along the East River",
+            "poster": "https://image.tmdb.org/t/p/w500/5ZYJY5qZOj7dPfjSdnM7gFk2Ch0.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 27973,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5ZYJY5qZOj7dPfjSdnM7gFk2Ch0.jpg"
+          },
+          {
+            "title": "Angels with Dirty Faces",
+            "year": 1938,
+            "slug": "James Cagney stars as a gangster whose childhood friend became a priest, exploring youth and crime",
+            "poster": "https://image.tmdb.org/t/p/w500/k23E4UAcow8eczLRmVCMdukL4Mx.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 13696,
+            "poster_url": "https://image.tmdb.org/t/p/w500/k23E4UAcow8eczLRmVCMdukL4Mx.jpg"
+          },
+          {
+            "title": "City for Conquest",
+            "year": 1940,
+            "slug": "James Cagney leads this gritty tale of boxers and gangsters in New York's Lower East Side",
+            "poster": "https://image.tmdb.org/t/p/w500/pwWBxZMFfgSEvi82PjR8099lcl9.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 31148,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pwWBxZMFfgSEvi82PjR8099lcl9.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's treatment of juvenile delinquency broke new ground, showing how environment shapes destiny. The Dead End Kids - led by Billy Halop and Huntz Hall - became so popular they spawned multiple film series including the Bowery Boys. Their authentic, unvarnished performances influenced later youth rebellion films like **Rebel Without a Cause** (1955) and **Blackboard Jungle** (1955). SUBHEAD: Social Commentary and Urban Space"
+      },
+      {
+        "type": "text",
+        "content": "Wyler's masterful use of space and architecture makes **Dead End** (1937) a study in urban isolation. The single-set design creates a pressure cooker where social classes must interact, predating similar techniques in **West Side Story** (1961) and **Do the Right Thing** (1989). The film's emphasis on environmental determinism - showing how physical space shapes human behavior - influenced Italian Neorealism and later works like **On the Waterfront** (1954)."
+      }
+    ],
+    "exploreFurther": [
+      "The Dead End Kids' influence on youth culture in American cinema",
+      "William Wyler's techniques for creating social commentary through set design",
+      "The evolution of urban crime drama from Dead End to modern cinema",
+      "How Depression-era New York was portrayed in 1930s Hollywood",
+      "The impact of stage-to-screen adaptations in the 1930s"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Public Enemy",
+          "year": 1931,
+          "slug": "James Cagney's breakthrough role as a ruthless gangster",
+          "poster": "https://image.tmdb.org/t/p/w500/vVxdaRMprQO2DM4AFyJ6C4qZSFO.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 17687,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vVxdaRMprQO2DM4AFyJ6C4qZSFO.jpg"
+        },
+        {
+          "title": "Manhattan Melodrama",
+          "year": 1934,
+          "slug": "Crime drama following two childhood friends on opposite sides of the law",
+          "poster": "https://image.tmdb.org/t/p/w500/gAuBeXANJ0NhlQY7kmas63dFMz7.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 28564,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gAuBeXANJ0NhlQY7kmas63dFMz7.jpg"
+        },
+        {
+          "title": "They Made Me a Criminal",
+          "year": 1939,
+          "slug": "John Garfield stars alongside the Dead End Kids",
+          "poster": "https://image.tmdb.org/t/p/w500/aNiWJ2C8Amrun55JCvuvGEPIXli.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 26378,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aNiWJ2C8Amrun55JCvuvGEPIXli.jpg"
+        },
+        {
+          "title": "The Lower Depths",
+          "year": 1936,
+          "slug": "Jean Renoir's adaptation exploring similar themes of poverty",
+          "poster": "https://image.tmdb.org/t/p/w500/9jKTFaQE4jYeMRqoY1tR1Flp73n.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 45802,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9jKTFaQE4jYeMRqoY1tR1Flp73n.jpg"
+        },
+        {
+          "title": "One Third of a Nation",
+          "year": 1939,
+          "slug": "Depression-era drama about housing conditions",
+          "poster": "https://image.tmdb.org/t/p/w500/utDHmgn0eQL8Sr2mDF81rAHRDcN.jpg",
+          "initialStreaming": "Archive.org",
+          "tmdb_id": 175620,
+          "poster_url": "https://image.tmdb.org/t/p/w500/utDHmgn0eQL8Sr2mDF81rAHRDcN.jpg"
+        },
+        {
+          "title": "Each Dawn I Die",
+          "year": 1939,
+          "slug": "Prison drama featuring similar social commentary",
+          "poster": "https://image.tmdb.org/t/p/w500/tgzSlasazy1rNH4myfAohLY6o9K.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 36342,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tgzSlasazy1rNH4myfAohLY6o9K.jpg"
+        },
+        {
+          "title": "Boys Town",
+          "year": 1938,
+          "slug": "Spencer Tracy as a priest helping troubled youth",
+          "poster": "https://image.tmdb.org/t/p/w500/jGwKOZvPItNSocHFAg1USbhKR6c.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 42390,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jGwKOZvPItNSocHFAg1USbhKR6c.jpg"
+        },
+        {
+          "title": "Crime School",
+          "year": 1938,
+          "slug": "Humphrey Bogart reforms the Dead End Kids",
+          "poster": "https://image.tmdb.org/t/p/w500/711a1AAfFQ5IVlCLUQHWCdI68Pd.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 79129,
+          "poster_url": "https://image.tmdb.org/t/p/w500/711a1AAfFQ5IVlCLUQHWCdI68Pd.jpg"
+        },
+        {
+          "title": "Hell's Kitchen",
+          "year": 1939,
+          "slug": "Another Dead End Kids feature about reform school",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Warner Archive",
+          "tmdb_id": 209830
+        },
+        {
+          "title": "The Roaring Twenties",
+          "year": 1939,
+          "slug": "James Cagney in a defining gangster film",
+          "poster": "https://image.tmdb.org/t/p/w500/nkymdElqwJBm2bl3F6hJp4xJggD.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 37698,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nkymdElqwJBm2bl3F6hJp4xJggD.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

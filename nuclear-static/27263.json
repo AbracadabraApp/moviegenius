@@ -1,0 +1,173 @@
+{
+  "props": {
+    "title": "The Tall Target",
+    "year": 1951,
+    "initialSlug": "Deadly peril on the rails!",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/pqaEknZUGqwDydXeB92KN4OlwFd.jpg",
+    "initialStreaming": null,
+    "tmdbId": 27263,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Tall Target** (1951) stands as one of noir's most gripping historical thrillers, following Detective John Kennedy's desperate attempt to prevent an assassination plot against Abraham Lincoln in 1861. Director Anthony Mann, fresh off noir classics like **Raw Deal** (1948) and **Border Incident** (1949), brings his signature high-contrast style to this claustrophobic train journey. The film pioneered the \"ticking clock\" thriller format later perfected in films like **The Taking of Pelham One Two Three** (1974) and **Source Code** (2011)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Narrow Margin",
+            "year": 1952,
+            "slug": "A cop protects a mob witness during a tense cross-country train journey",
+            "poster": "https://image.tmdb.org/t/p/w500/kdlCfBmTZ7CoJoCvS1b56Xj1qJi.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 31713,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kdlCfBmTZ7CoJoCvS1b56Xj1qJi.jpg"
+          },
+          {
+            "title": "Night Train to Munich",
+            "year": 1940,
+            "slug": "Carol Reed's thrilling espionage tale set aboard a train during WWII",
+            "poster": "https://image.tmdb.org/t/p/w500/fi6Vh72FSrps1eqKG0zj5DIv190.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 41597,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fi6Vh72FSrps1eqKG0zj5DIv190.jpg"
+          },
+          {
+            "title": "The Lady Vanishes",
+            "year": 1938,
+            "slug": "Hitchcock's masterful mystery about a disappearing passenger",
+            "poster": "https://image.tmdb.org/t/p/w500/c1t9LB76LvEARPanfEzXmkm7fwY.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 940,
+            "poster_url": "https://image.tmdb.org/t/p/w500/c1t9LB76LvEARPanfEzXmkm7fwY.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Mann's direction transforms the Baltimore & Ohio Railroad into a pressure cooker of suspicion and paranoia. Dick Powell delivers one of his finest noir performances as Kennedy, continuing the hard-boiled evolution he began in **Murder, My Sweet** (1944). The film's exploration of pre-Civil War tensions eerily parallels Cold War anxieties of the 1950s, making it a fascinating historical document of both eras it portrays."
+      },
+      {
+        "type": "text",
+        "content": "The train thriller subgenre that **The Tall Target** helped establish would influence decades of films, from **Von Ryan's Express** (1965) to **Unstoppable** (2010). Mann's innovative use of confined spaces and rolling motion creates a template for building tension in limited locations, later seen in films like **Silver Streak** (1976) and **Train to Busan** (2016). SUBHEAD: Historical Noir Innovation"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Union Station",
+            "year": 1950,
+            "slug": "A police chief races against time to find a kidnapped blind girl",
+            "poster": "https://image.tmdb.org/t/p/w500/oF9dN6RO2sgAQj1uANJR8ZOTS4T.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 43396,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oF9dN6RO2sgAQj1uANJR8ZOTS4T.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While most noir films of the era explored contemporary crime, **The Tall Target** boldly merged historical drama with noir style. This approach influenced later historical thrillers like **The Day of the Jackal** (1973) and **Munich** (2005). The film's attention to period detail and political intrigue created a blueprint for combining factual events with noir's signature sense of moral ambiguity."
+      }
+    ],
+    "exploreFurther": [
+      "Anthony Mann's Transition from Noir to Westerns",
+      "Train Thrillers in Cinema History",
+      "Historical Events in Film Noir",
+      "Dick Powell's Career Evolution",
+      "Civil War Era Political Thrillers"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "From Hell to Texas",
+          "year": 1958,
+          "slug": "Western thriller about a manhunt",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 57664
+        },
+        {
+          "title": "Night Passage",
+          "year": 1957,
+          "slug": "Railroad security agent battles outlaws",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 25381
+        },
+        {
+          "title": "Terror on a Train",
+          "year": 1953,
+          "slug": "Bomb disposal expert races against time",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Warner Archive",
+          "tmdb_id": 172908
+        },
+        {
+          "title": "Berlin Express",
+          "year": 1948,
+          "slug": "Allied officials face conspiracy on post-war train",
+          "poster": "https://image.tmdb.org/t/p/w500/eoJHaq8FLu7vJiJZTEs1OsdAjcy.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 42286,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eoJHaq8FLu7vJiJZTEs1OsdAjcy.jpg"
+        },
+        {
+          "title": "The Great Train Robbery",
+          "year": 1979,
+          "slug": "Victorian era train heist thriller",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 11583
+        },
+        {
+          "title": "Emperor of the North",
+          "year": 1973,
+          "slug": "Depression-era railroad battle",
+          "poster": "https://image.tmdb.org/t/p/w500/r4i03RQmF50o6T4tP5mhWgPZAGg.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 31943,
+          "poster_url": "https://image.tmdb.org/t/p/w500/r4i03RQmF50o6T4tP5mhWgPZAGg.jpg"
+        },
+        {
+          "title": "Breakheart Pass",
+          "year": 1975,
+          "slug": "Western mystery on a military train",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 8043
+        },
+        {
+          "title": "The Train",
+          "year": 1964,
+          "slug": "WWII resistance fights to save French art",
+          "poster": "https://image.tmdb.org/t/p/w500/bzgPLB7efMohled42PIn6CcOTnO.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 3482,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bzgPLB7efMohled42PIn6CcOTnO.jpg"
+        },
+        {
+          "title": "Runaway Train",
+          "year": 1985,
+          "slug": "Escaped convicts on an unmanned train",
+          "poster": "https://image.tmdb.org/t/p/w500/A9pf9KjhqCGthu6PKAKE5E1qRNn.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 11893,
+          "poster_url": "https://image.tmdb.org/t/p/w500/A9pf9KjhqCGthu6PKAKE5E1qRNn.jpg"
+        },
+        {
+          "title": "Human Traffic",
+          "year": 2016,
+          "slug": "Korean thriller about human trafficking on trains",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

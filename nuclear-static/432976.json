@@ -1,0 +1,166 @@
+{
+  "props": {
+    "title": "Icarus",
+    "year": 2017,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/x5azMi1KvZWbBbfjmGqpHNGqjH.jpg",
+    "initialStreaming": null,
+    "tmdbId": 432976,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Icarus** (2017) starts as a cycling documentary but transforms into an explosive exposé of Russia's state-sponsored doping program. Director Bryan Fogel's accidental friendship with Dr. Grigory Rodchenkov leads to revelations that rival the best spy thrillers. Like **Citizenfour** (2014) and **The Act of Killing** (2012), Icarus captures a historic moment as it unfolds, with the filmmaker becoming an integral part of the story. The documentary's shift from personal experiment to international scandal creates a riveting narrative that earned it the 2018 Academy Award for Best Documentary Feature."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Stop at Nothing: The Lance Armstrong Story",
+            "year": 2014,
+            "slug": "A searing investigation into cycling's most notorious doping scandal, revealing the extent of Armstrong's deception",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 273997
+          },
+          {
+            "title": "The Russian Five",
+            "year": 2018,
+            "slug": "Chronicles how the Detroit Red Wings smuggled five Russian players to the US, highlighting Soviet-era sports politics",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 517686
+          },
+          {
+            "title": "The Program",
+            "year": 2015,
+            "slug": "Drama starring Ben Foster as Lance Armstrong, depicting the cyclist's rise and fall through systematic doping",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Sports documentaries rarely achieve the geopolitical impact of Icarus. The film joins ranks with works like **Athlete A** (2020) and **The Armstrong Lie** (2013) in exposing corruption at the highest levels of international sports. What sets Icarus apart is its accidental nature - Fogel stumbles into a story bigger than himself, similar to how **Finding Vivian Maier** (2013) transformed from a curiosity into a major artistic discovery."
+      },
+      {
+        "type": "text",
+        "content": "The film's structure mirrors great conspiracy thrillers like **All the President's Men** (1976), building tension as each revelation leads to greater implications. Rodchenkov's journey from confident insider to desperate whistleblower echoes the real-life drama of **Snowden** (2016), highlighting how personal choices can have global consequences. The documentary's ability to capture this transformation in real-time makes it uniquely powerful. SUBHEAD: The Impact on Sports Documentary Filmmaking"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Last Gold",
+            "year": 2016,
+            "slug": "Details how the East German swimming team's state-sponsored doping program affected the 1976 Olympics",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Icarus raised the bar for sports documentaries, proving they could tackle complex geopolitical issues. Following its success, films like **At the Heart of Gold** (2019) and **The Weight of Gold** (2020) increasingly focused on systemic issues rather than individual achievements. The film's influence can be seen in how documentarians now approach sports scandals, seeking broader implications beyond the playing field."
+      }
+    ],
+    "exploreFurther": [
+      "The history of Olympic doping scandals and their political implications",
+      "The role of whistleblowers in modern investigative journalism",
+      "Russian sports culture and its relationship with state power",
+      "The evolution of anti-doping measures in professional sports",
+      "Documentary filmmaking techniques for handling unexpected story developments"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Bigger Than Life",
+          "year": 2019,
+          "slug": "Examining steroid use in bodybuilding culture",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 652497
+        },
+        {
+          "title": "Red Army",
+          "year": 2014,
+          "slug": "The story of the Soviet Union's legendary hockey team",
+          "poster": "https://image.tmdb.org/t/p/w500/xFP2rDfvymSAdVLXRUM6xF8RqPz.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 256876,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xFP2rDfvymSAdVLXRUM6xF8RqPz.jpg"
+        },
+        {
+          "title": "9.79*",
+          "year": 2012,
+          "slug": "Examining the 1988 Olympics 100m final and Ben Johnson scandal",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "ESPN+",
+          "tmdb_id": 142161
+        },
+        {
+          "title": "Clean Spirit",
+          "year": 2014,
+          "slug": "Following a cycling team's commitment to racing without doping",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 321373
+        },
+        {
+          "title": "The Dark Side",
+          "year": 2015,
+          "slug": "Al Jazeera's investigation into professional sports doping",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Team Foxcatcher",
+          "year": 2016,
+          "slug": "The tragic story of wrestling patron John du Pont",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 390520
+        },
+        {
+          "title": "The Carter Effect",
+          "year": 2017,
+          "slug": "How Vince Carter impacted Canadian basketball culture",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 475013
+        },
+        {
+          "title": "Pumping Iron",
+          "year": 1977,
+          "slug": "Classic documentary about bodybuilding featuring Arnold Schwarzenegger",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 5205
+        },
+        {
+          "title": "Trophy Kids",
+          "year": 2013,
+          "slug": "Parents pushing their children in youth sports",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 248861
+        },
+        {
+          "title": "The Last Dance",
+          "year": 2020,
+          "slug": "Michael Jordan and the Chicago Bulls' final championship season",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

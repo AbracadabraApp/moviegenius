@@ -1,0 +1,177 @@
+{
+  "props": {
+    "title": "Gertrud",
+    "year": 1964,
+    "initialSlug": "Passion, pain, and purpose.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/bF8Z8Cntr7GRDI5qYGsaOwy7c8Q.jpg",
+    "initialStreaming": null,
+    "tmdbId": 34181,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Carl Theodor Dreyer's final masterpiece **Gertrud** (1964) represents the pinnacle of his austere, emotionally intense filmmaking style. Like his earlier <a href=\"/movie/780\" class=\"movie-title\">The Passion of Joan of Arc</a> (1928), it strips away conventional dramatic elements to focus intensely on a woman's inner spiritual and emotional life. The film's notorious long takes and static compositions - some scenes consist of just two people talking in extended, unbroken shots - created controversy at its premiere but influenced later directors like Andrei Tarkovsky and Béla Tarr in their approach to cinematic time and space."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Gertrud",
+            "year": 1964,
+            "slug": "A former opera singer reflects on love and passion while deciding to leave her husband",
+            "poster": "https://image.tmdb.org/t/p/w500/bF8Z8Cntr7GRDI5qYGsaOwy7c8Q.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 34181,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bF8Z8Cntr7GRDI5qYGsaOwy7c8Q.jpg"
+          },
+          {
+            "title": "The Passion of Joan of Arc",
+            "year": 1928,
+            "slug": "Dreyer's landmark silent film featuring Renée Falconetti's legendary performance",
+            "poster": "https://image.tmdb.org/t/p/w500/plzI7N52uHhERUZLNSVbGGakFwR.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 780,
+            "poster_url": "https://image.tmdb.org/t/p/w500/plzI7N52uHhERUZLNSVbGGakFwR.jpg"
+          },
+          {
+            "title": "Ordet",
+            "year": 1955,
+            "slug": "Dreyer's powerful exploration of faith and miracles in rural Denmark",
+            "poster": "https://image.tmdb.org/t/p/w500/e3oh96Zrqdaku8DoD10pXZHLZoU.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 48035,
+            "poster_url": "https://image.tmdb.org/t/p/w500/e3oh96Zrqdaku8DoD10pXZHLZoU.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's radical formal approach mirrors its thematic focus on absolute devotion to idealistic love. Through Nina Pens Rode's extraordinary performance as Gertrud, Dreyer examines how his protagonist's uncompromising commitment to romantic passion isolates her from society's expectations. The film shares DNA with later intimate character studies like **Scenes from a Marriage** (1973) and **The Piano Teacher** (2001), though Dreyer's style remains uniquely ascetic and demanding."
+      },
+      {
+        "type": "text",
+        "content": "**Gertrud** (1964) marked the end of Dreyer's career but also pointed toward new possibilities in art cinema. Its influence can be traced through **Persona** (1966), **The Mirror** (1975), and other films that prioritize psychological interiority over conventional plotting. The film's infamous 10-minute opening shot established a template for the \"slow cinema\" movement that would emerge decades later. SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Day of Wrath",
+            "year": 1943,
+            "slug": "Dreyer's haunting drama about witch hunts in 17th century Denmark",
+            "poster": "https://image.tmdb.org/t/p/w500/jEOqbGLFo8fxHHgYoZVTMVYMoQG.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 41391,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jEOqbGLFo8fxHHgYoZVTMVYMoQG.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While initially dismissed by many critics, **Gertrud** (1964) has been increasingly recognized as a pivotal work in the development of modernist cinema. Its radical simplification of form and rejection of standard dramatic beats influenced filmmakers like Chantal Akerman, whose **Jeanne Dielman** (1975) shares its interest in female psychology and rejection of conventional pacing. The film's exploration of a woman's emotional truth over social conventions connects it to later feminist cinema."
+      }
+    ],
+    "exploreFurther": [
+      "Dreyer's Evolution: From Silent Film to Sound",
+      "The Long Take in European Art Cinema",
+      "Women's Stories in Nordic Cinema",
+      "Minimalism and Modernism in 1960s Film",
+      "The Influence of Theater on Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Scenes from a Marriage",
+          "year": 1973,
+          "slug": "Bergman's intimate portrait of a dissolving relationship",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Persona",
+          "year": 1966,
+          "slug": "Bergman's psychological drama about identity and performance",
+          "poster": "https://image.tmdb.org/t/p/w500/9QlqnRNbzb78lRiRPAP1ufmoZko.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 797,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9QlqnRNbzb78lRiRPAP1ufmoZko.jpg"
+        },
+        {
+          "title": "The Mirror",
+          "year": 1975,
+          "slug": "Tarkovsky's autobiographical meditation on memory",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Jeanne Dielman",
+          "year": 1975,
+          "slug": "Akerman's landmark feminist film about domestic routine",
+          "poster": "https://image.tmdb.org/t/p/w500/rnbW5VtVxVQVx9ad70SuMbU0Biv.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 308191,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rnbW5VtVxVQVx9ad70SuMbU0Biv.jpg"
+        },
+        {
+          "title": "Cries and Whispers",
+          "year": 1972,
+          "slug": "Bergman's intense chamber drama about sisterly bonds",
+          "poster": "https://image.tmdb.org/t/p/w500/a1bMgB09YDvvRN9SitCclUYragr.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 10238,
+          "poster_url": "https://image.tmdb.org/t/p/w500/a1bMgB09YDvvRN9SitCclUYragr.jpg"
+        },
+        {
+          "title": "The Seventh Seal",
+          "year": 1957,
+          "slug": "Bergman's medieval allegory about faith and death",
+          "poster": "https://image.tmdb.org/t/p/w500/wcZ21zrOsy0b52AfAF50XpTiv75.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 490,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wcZ21zrOsy0b52AfAF50XpTiv75.jpg"
+        },
+        {
+          "title": "Last Year at Marienbad",
+          "year": 1961,
+          "slug": "Resnais's enigmatic exploration of memory and time",
+          "poster": "https://image.tmdb.org/t/p/w500/tizZ7JnXRFMvoNegu2CtM2ab9E7.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 4024,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tizZ7JnXRFMvoNegu2CtM2ab9E7.jpg"
+        },
+        {
+          "title": "Au Hasard Balthazar",
+          "year": 1966,
+          "slug": "Bresson's spiritual drama told through a donkey's life",
+          "poster": "https://image.tmdb.org/t/p/w500/lkLO1HDzzaXpTXtAgnGpVqIQkvF.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 20108,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lkLO1HDzzaXpTXtAgnGpVqIQkvF.jpg"
+        },
+        {
+          "title": "Red Desert",
+          "year": 1964,
+          "slug": "Antonioni's first color film about modern alienation",
+          "poster": "https://image.tmdb.org/t/p/w500/rGcTVdyhaGzMxPPRVApXre6F7SD.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 26638,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rGcTVdyhaGzMxPPRVApXre6F7SD.jpg"
+        },
+        {
+          "title": "Autumn Sonata",
+          "year": 1978,
+          "slug": "Bergman's chamber piece about mother-daughter relationships",
+          "poster": "https://image.tmdb.org/t/p/w500/6beNbtCXv3GkzHkxkGYf38ib7v8.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 12761,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6beNbtCXv3GkzHkxkGYf38ib7v8.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

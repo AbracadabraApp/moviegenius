@@ -1,0 +1,106 @@
+{
+  "props": {
+    "title": "The Ballad of Narayama",
+    "year": 1983,
+    "initialSlug": "Elderly mother's final journey up death mountain",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/ewYZmeoqzE5XsL0Jlcorlu9iwGe.jpg",
+    "initialStreaming": null,
+    "tmdbId": 42113,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Ballad of Narayama** (1983) stands as Shohei Imamura's masterful exploration of ubasute - the ancient Japanese practice of carrying elderly relatives to the mountain to die. Through vibrant cinematography and unflinching naturalism, Imamura contrasts harsh rural traditions with primal human instincts. This version differs markedly from Keisuke Kinoshita's stylized 1958 adaptation, embracing a documentary-like rawness that earned it the Palme d'Or at Cannes."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Tokyo Story",
+            "year": 1953,
+            "slug": "Yasujiro Ozu's meditation on aging parents and changing family dynamics in post-war Japan",
+            "poster": "https://image.tmdb.org/t/p/w500/g2YbTYKpY7N2yDSk7BfXZ18I5QV.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 18148,
+            "poster_url": "https://image.tmdb.org/t/p/w500/g2YbTYKpY7N2yDSk7BfXZ18I5QV.jpg"
+          },
+          {
+            "title": "Still Walking",
+            "year": 2008,
+            "slug": "Hirokazu Kore-eda's intimate portrait of a family gathering to commemorate a death",
+            "poster": "https://image.tmdb.org/t/p/w500/4Are9oV8HjZQWnEajk9LYFxRWom.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 25050,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4Are9oV8HjZQWnEajk9LYFxRWom.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Imamura's fascination with rural Japanese life extends beyond **The Ballad of Narayama** (1983) into films like **Profound Desires of the Gods** (1968) and **The Eel** (1997). His anthropological approach captures communities struggling between tradition and survival, often using nature imagery to reflect human behavior. The director's unflinching camera treats death, sex, and survival instincts as interconnected parts of the human experience. SUBHEAD: Rural Japan in Cinema"
+      },
+      {
+        "type": "text",
+        "content": "Japanese cinema's examination of rural life creates a powerful counterpoint to its urban narratives. While Ozu and Mizoguchi often focused on city-dwelling families, films like **The Village** (1975) and **Dersu Uzala** (1975) delve into traditional village life and humanity's relationship with nature. These works reveal how landscape and environment shape cultural practices and survival strategies."
+      }
+    ],
+    "exploreFurther": [
+      "Japanese New Wave Cinema and its break from traditional storytelling",
+      "Ubasute in Japanese literature and film",
+      "Shohei Imamura's documentary background and its influence on his features",
+      "Rural vs. Urban depictions in Japanese cinema",
+      "Palme d'Or winning films examining cultural traditions"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Woman in the Dunes",
+          "year": 1964,
+          "slug": "A man becomes trapped in a sand pit with a widow, exploring isolation and duty",
+          "poster": "https://image.tmdb.org/t/p/w500/f0JpsMQ9oEjKBD66Ky3qK3z7LGT.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 16672,
+          "poster_url": "https://image.tmdb.org/t/p/w500/f0JpsMQ9oEjKBD66Ky3qK3z7LGT.jpg"
+        },
+        {
+          "title": "The Naked Island",
+          "year": 1960,
+          "slug": "Wordless study of a family farming a remote island",
+          "poster": "https://image.tmdb.org/t/p/w500/rHpQyPBuFyofx5D5UC95ec2sFgV.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 3764,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rHpQyPBuFyofx5D5UC95ec2sFgV.jpg"
+        },
+        {
+          "title": "Onibaba",
+          "year": 1964,
+          "slug": "Medieval tale of survival and moral decay in rural Japan",
+          "poster": "https://image.tmdb.org/t/p/w500/xyPLG53OodhJtvfQEfcmC43l16O.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 3763,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xyPLG53OodhJtvfQEfcmC43l16O.jpg"
+        },
+        {
+          "title": "The Sound of the Mountain",
+          "year": 1954,
+          "slug": "Adaptation of Kawabata's novel about family obligations",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 46492
+        },
+        {
+          "title": "Twenty-Four Eyes",
+          "year": 1954,
+          "slug": "Chronicles a teacher's relationship with her students in rural Japan",
+          "poster": "https://image.tmdb.org/t/p/w500/lHV1b64e42LCYMGUwxSZWPPcuEE.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 43339,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lHV1b64e42LCYMGUwxSZWPPcuEE.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

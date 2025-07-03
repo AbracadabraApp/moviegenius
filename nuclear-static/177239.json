@@ -1,0 +1,154 @@
+{
+  "props": {
+    "title": "The Girl from Mexico",
+    "year": 1939,
+    "initialSlug": "A sizzling south-of-the-border tale!",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/iWm13PJxkeHIkohex9cUj0hAXAS.jpg",
+    "initialStreaming": null,
+    "tmdbId": 177239,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Girl from Mexico** (1939) launched RKO's profitable \"Mexican Spitfire\" series, starring Lupe Velez as the fiery singer Carmelita. The film established a formula that would spawn seven successful sequels, mixing cultural comedy with romantic mishaps. Velez, already known for her dynamic presence in films like **The Gaucho** (1927) and **Where East Is East** (1929), found her signature role here. The film tapped into Hollywood's growing interest in Latin American themes during the Good Neighbor Policy era, alongside productions like **Down Argentine Way** (1940) and **That Night in Rio** (1941)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Girl from Mexico",
+            "year": 1939,
+            "slug": "A New York advertising man falls for a fiery Mexican singer, launching a series of comedic cultural clashes",
+            "poster": "https://image.tmdb.org/t/p/w500/iWm13PJxkeHIkohex9cUj0hAXAS.jpg",
+            "initialStreaming": "not currently streaming",
+            "tmdb_id": 177239,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iWm13PJxkeHIkohex9cUj0hAXAS.jpg"
+          },
+          {
+            "title": "Mexican Spitfire",
+            "year": 1940,
+            "slug": "First official sequel featuring Velez returning as Carmelita, now married and causing chaos in high society",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "TCM On Demand",
+            "tmdb_id": null
+          },
+          {
+            "title": "Mexican Spitfire Out West",
+            "year": 1940,
+            "slug": "Third film in series sending Carmelita to Nevada for more fish-out-of-water comedy",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Classic Film Archive",
+            "tmdb_id": 279841
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The late 1930s saw Hollywood actively courting Latin American audiences through strategic casting and themed productions. **The Girl from Mexico** (1939) rode this wave while establishing Velez as one of the era's most prominent Latina stars, though modern viewers might cringe at some of the cultural stereotyping. The film's success influenced later Latin-themed productions like **Week-End in Havana** (1941) and **Fiesta** (1947), though often perpetuating similar stereotypes."
+      },
+      {
+        "type": "text",
+        "content": "Director Leslie Goodwins, who would helm six of the eight Mexican Spitfire films, established a distinct visual style that emphasized Velez's physical comedy and explosive personality. The series' influence can be traced through later culture-clash comedies like **I Love Lucy** (1951-1957), where Lucille Ball's relationship with Cuban-born Desi Arnaz often mined similar comedic territory, albeit with more nuance. SUBHEAD: Legacy and Cultural Impact"
+      },
+      {
+        "type": "text",
+        "content": "While problematic by modern standards, **The Girl from Mexico** (1939) represents a significant moment in Hollywood's portrayal of Latin American characters. Velez's Carmelita, despite playing into stereotypes, gave audiences a charismatic Latina lead at a time when such roles were rare. The film's success helped pave the way for future Latin American stars, though Hollywood's journey toward authentic representation would take decades."
+      }
+    ],
+    "exploreFurther": [
+      "Hollywood's Good Neighbor Policy and its influence on 1930s-40s cinema",
+      "Lupe Velez's career trajectory and impact on Latina representation in classic Hollywood",
+      "The evolution of cultural comedy in American film",
+      "RKO's series films of the 1930s and 1940s",
+      "The Mexican Spitfire series' influence on subsequent romantic comedies"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Mexican Spitfire's Baby",
+          "year": 1941,
+          "slug": "Carmelita deals with adoption complications",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 245051
+        },
+        {
+          "title": "Mexican Spitfire at Sea",
+          "year": 1942,
+          "slug": "Shipboard mishaps and mistaken identities",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Classic Film Archive",
+          "tmdb_id": 222998
+        },
+        {
+          "title": "Mexican Spitfire's Elephant",
+          "year": 1942,
+          "slug": "Jewel smuggling plot meets cultural comedy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 98515
+        },
+        {
+          "title": "Down Argentine Way",
+          "year": 1940,
+          "slug": "Betty Grable stars in Good Neighbor Policy musical",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 43810
+        },
+        {
+          "title": "That Night in Rio",
+          "year": 1941,
+          "slug": "Carmen Miranda's breakthrough American film",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 43746
+        },
+        {
+          "title": "Flying Down to Rio",
+          "year": 1933,
+          "slug": "Fred Astaire and Ginger Rogers in Rio setting",
+          "poster": "https://image.tmdb.org/t/p/w500/zKBXy84eN6tgwXaYsiFSCgq0GBc.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 28293,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zKBXy84eN6tgwXaYsiFSCgq0GBc.jpg"
+        },
+        {
+          "title": "Week-End in Havana",
+          "year": 1941,
+          "slug": "Alice Faye stars in Cuban-set musical",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Fox Cinema Archives",
+          "tmdb_id": 68013
+        },
+        {
+          "title": "Fiesta",
+          "year": 1947,
+          "slug": "Esther Williams in Mexican-themed musical",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Warner Archive",
+          "tmdb_id": null
+        },
+        {
+          "title": "Latin Lovers",
+          "year": 1953,
+          "slug": "Lana Turner finds romance in Brazil",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "MGM Classics",
+          "tmdb_id": 209970
+        },
+        {
+          "title": "Carnival in Costa Rica",
+          "year": 1947,
+          "slug": "Musical romance set during carnival",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Fox Cinema",
+          "tmdb_id": 242177
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

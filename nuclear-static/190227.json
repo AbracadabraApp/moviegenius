@@ -1,0 +1,174 @@
+{
+  "props": {
+    "title": "Marianne",
+    "year": 1929,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/170CVRvX4XHe8EDcgHdFbGR74y0.jpg",
+    "initialStreaming": null,
+    "tmdbId": 190227,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Marianne** (1929) stands as a fascinating early musical that captures Hollywood's rocky transition from silent to sound films. Released the same year as <a href=\"/movie/65203\" class=\"movie-title\">The Broadway Melody</a> (1929), it showcases Marion Davies at her peak, demonstrating why William Randolph Hearst was so invested in promoting her career. The film's production history mirrors the larger industry upheaval depicted in **Singin' in the Rain** (1952), as studios rushed to adapt to talking pictures. Like many early talkies such as <a href=\"/movie/939\" class=\"movie-title\">The Jazz Singer</a> (1927), Marianne was actually filmed in both silent and sound versions to accommodate theaters not yet equipped for audio."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Broadway Melody",
+            "year": 1929,
+            "slug": "The first sound film to win Best Picture, following the vaudeville adventures of two sisters",
+            "poster": "https://image.tmdb.org/t/p/w500/giq8GJs8YGMzHxeKxNSuwzAdd1c.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 65203,
+            "poster_url": "https://image.tmdb.org/t/p/w500/giq8GJs8YGMzHxeKxNSuwzAdd1c.jpg"
+          },
+          {
+            "title": "The Jazz Singer",
+            "year": 1927,
+            "slug": "Al Jolson stars in this groundbreaking part-talkie that ushered in the sound era",
+            "poster": "https://image.tmdb.org/t/p/w500/wr8Pt1GO87cwB3210TO3JTNDsUc.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 939,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wr8Pt1GO87cwB3210TO3JTNDsUc.jpg"
+          },
+          {
+            "title": "Show People",
+            "year": 1928,
+            "slug": "Marion Davies shines in this silent comedy about Hollywood, directed by King Vidor",
+            "poster": "https://image.tmdb.org/t/p/w500/kMf0YYCNMqUbS9cTJBTCWcvsXEn.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 31404,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kMf0YYCNMqUbS9cTJBTCWcvsXEn.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The French village setting of **Marianne** (1929) established a template for wartime romances that would influence later classics like **Casablanca** (1942). Davies plays a French girl who falls for an American soldier during WWI, a plot device that would be recycled countless times in films like **A Farewell to Arms** (1932) and **The African Queen** (1951). The film's technical limitations - static camera work and primitive sound recording - actually enhance its intimate storytelling, forcing director Robert Z. Leonard to focus on performance and character."
+      },
+      {
+        "type": "text",
+        "content": "Marion Davies's performance deserves special attention, as it contradicts the unflattering portrait painted in <a href=\"/movie/15\" class=\"movie-title\">Citizen Kane</a> (1941). Unlike the talentless Susan Alexander character, Davies shows genuine comic timing and charm, particularly in the musical numbers. Her work here shares DNA with later musical-comedy stars like Judy Garland in **Easter Parade** (1948) and Betty Hutton in **Annie Get Your Gun** (1950). SUBHEAD: Early Sound Film Innovation"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Citizen Kane",
+            "year": 1941,
+            "slug": "Orson Welles's masterpiece loosely based on William Randolph Hearst's life",
+            "poster": "/images/posters/citizen-kane.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 15,
+            "poster_url": "/images/posters/citizen-kane.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The technical achievements of **Marianne** (1929) deserve recognition alongside contemporaries like **The Love Parade** (1929) and **Applause** (1929). While primitive by modern standards, its sound mixing and early attempts at synchronized dialogue demonstrated MGM's commitment to pushing technological boundaries. The film's existence in both silent and sound versions provides a unique historical document of Hollywood's transition period, similar to **Blackmail** (1929), Alfred Hitchcock's film that also exists in both formats."
+      }
+    ],
+    "exploreFurther": [
+      "Hollywood's Silent-to-Sound Transition: Technical Challenges and Solutions",
+      "Marion Davies: Separating the Actress from the Citizen Kane Myth",
+      "Early Sound Musical Production Techniques",
+      "World War I Romance Films Through the Decades",
+      "William Randolph Hearst's Influence on Early Hollywood"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Broadway Melody",
+          "year": 1929,
+          "slug": "First sound film to win Best Picture",
+          "poster": "https://image.tmdb.org/t/p/w500/giq8GJs8YGMzHxeKxNSuwzAdd1c.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 65203,
+          "poster_url": "https://image.tmdb.org/t/p/w500/giq8GJs8YGMzHxeKxNSuwzAdd1c.jpg"
+        },
+        {
+          "title": "Applause",
+          "year": 1929,
+          "slug": "Innovative early talkie directed by Rouben Mamoulian",
+          "poster": "https://image.tmdb.org/t/p/w500/dhcVy77WKN0Mr9kCzRgwbbtkEd3.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 120833,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dhcVy77WKN0Mr9kCzRgwbbtkEd3.jpg"
+        },
+        {
+          "title": "The Love Parade",
+          "year": 1929,
+          "slug": "Ernst Lubitsch musical starring Maurice Chevalier",
+          "poster": "https://image.tmdb.org/t/p/w500/pWAoFnPsH4gYiFGqLwzicyMazdh.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 51759,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pWAoFnPsH4gYiFGqLwzicyMazdh.jpg"
+        },
+        {
+          "title": "Show Boat",
+          "year": 1929,
+          "slug": "Early sound adaptation of the famous musical",
+          "poster": "https://image.tmdb.org/t/p/w500/psMrD853qs9CGITFjFlr5eoycXT.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 237067,
+          "poster_url": "https://image.tmdb.org/t/p/w500/psMrD853qs9CGITFjFlr5eoycXT.jpg"
+        },
+        {
+          "title": "The Hollywood Revue of 1929",
+          "year": 1929,
+          "slug": "Star-studded MGM musical showcase",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 31678
+        },
+        {
+          "title": "Their Own Desire",
+          "year": 1929,
+          "slug": "Another Marion Davies sound film",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 99767
+        },
+        {
+          "title": "The Trespasser",
+          "year": 1929,
+          "slug": "Gloria Swanson's first talkie",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 53796
+        },
+        {
+          "title": "The Cocoanuts",
+          "year": 1929,
+          "slug": "Marx Brothers' first sound film",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 20625
+        },
+        {
+          "title": "The Desert Song",
+          "year": 1929,
+          "slug": "First Technicolor operetta",
+          "poster": "https://image.tmdb.org/t/p/w500/pRnIACpVHsWcYlHxxGB69vhL4OT.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 262260,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pRnIACpVHsWcYlHxxGB69vhL4OT.jpg"
+        },
+        {
+          "title": "Paris Bound",
+          "year": 1929,
+          "slug": "Early romantic talkie with Ann Harding",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 263389
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

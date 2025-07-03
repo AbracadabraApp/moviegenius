@@ -1,0 +1,168 @@
+{
+  "props": {
+    "title": "The Island of Dr. Moreau",
+    "year": 1977,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/q5kWAWxb3eWCkxFNT6WCipAnpQe.jpg",
+    "initialStreaming": null,
+    "tmdbId": 26932,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The 1977 adaptation of H.G. Wells' classic novel stands as a fascinating bridge between classic creature features and modern body horror. While less celebrated than the earlier <a href=\"/movie/3031\" class=\"movie-title\">Island of Lost Souls</a> (1932) or the notoriously troubled **The Island of Dr. Moreau** (1996), this version starring Burt Lancaster and Michael York captures the unsettling essence of Wells' human-animal hybrid narrative. The film follows in the footsteps of other 1970s sci-fi horror like **Phase IV** (1974) and **Demon Seed** (1977), exploring humanity's hubris in manipulating nature."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Island of Lost Souls",
+            "year": 1932,
+            "slug": "The original adaptation starring Charles Laughton as the mad scientist performing vivisection experiments",
+            "poster": "https://image.tmdb.org/t/p/w500/g7K7r1FojQC52YHxfmuXgwYBq5Q.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 3031,
+            "poster_url": "https://image.tmdb.org/t/p/w500/g7K7r1FojQC52YHxfmuXgwYBq5Q.jpg"
+          },
+          {
+            "title": "The Island of Dr. Moreau",
+            "year": 1996,
+            "slug": "Marlon Brando and Val Kilmer star in this troubled production that became notorious for its behind-the-scenes chaos",
+            "poster": "https://image.tmdb.org/t/p/w500/hOJeQXve8W9rNRhdgC1WV3GQJyA.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 9306,
+            "poster_url": "https://image.tmdb.org/t/p/w500/hOJeQXve8W9rNRhdgC1WV3GQJyA.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Director Don Taylor, who also helmed **Escape from the Planet of the Apes** (1971), brings a clinical detachment to the film's most disturbing sequences. The practical effects by John Chambers (famous for his groundbreaking work on **Planet of the Apes** (1968)) create memorably grotesque human-animal hybrids that hold up surprisingly well. Lancaster's measured performance as Moreau provides a different take than Laughton's theatrical madman or Brando's eccentric interpretation, presenting a coldly rational scientist whose calm demeanor makes his actions even more disturbing."
+      },
+      {
+        "type": "text",
+        "content": "The film's themes of genetic manipulation and scientific ethics gained new relevance in the late 1970s amid growing debates about genetic engineering. This version emphasizes the clinical horror of Moreau's experiments more than its predecessors, fitting alongside contemporary films like **Coma** (1978) that explored medical horror. The \"House of Pain\" sequences remain particularly effective, with their sterile laboratory setting contrasting against the primal screams of Moreau's subjects. SUBHEAD: Scientific Horror in the 1970s"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Altered States",
+            "year": 1980,
+            "slug": "Ken Russell's psychedelic horror about a scientist's dangerous self-experimentation",
+            "poster": "https://image.tmdb.org/t/p/w500/1iZBJcFJFupnxrSCwQIrtVgsrkA.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 11542,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1iZBJcFJFupnxrSCwQIrtVgsrkA.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film represents a crucial moment in science fiction horror, bridging the gap between the atomic age monsters of the 1950s and the body horror that would define the 1980s. Like **The Terminal Man** (1974) and **Demon Seed** (1977), it grapples with questions of human enhancement and scientific overreach that would later be explored more graphically in films like **Re-Animator** (1985) and **The Fly** (1986)."
+      }
+    ],
+    "exploreFurther": [
+      "H.G. Wells adaptations in cinema and their varying interpretations across decades",
+      "The evolution of practical effects in 1970s science fiction horror",
+      "Burt Lancaster's late-career science fiction roles",
+      "The influence of genetic engineering debates on 1970s horror cinema",
+      "The three major film adaptations of The Island of Dr. Moreau and their different approaches"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Phase IV",
+          "year": 1974,
+          "slug": "Intelligent ants evolve and challenge humanity in this cerebral sci-fi horror",
+          "poster": "https://image.tmdb.org/t/p/w500/x6fQtAmCD4JlAcUnTfYoinPp1zz.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 59189,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x6fQtAmCD4JlAcUnTfYoinPp1zz.jpg"
+        },
+        {
+          "title": "Demon Seed",
+          "year": 1977,
+          "slug": "A scientist's wife is terrorized by an artificial intelligence",
+          "poster": "https://image.tmdb.org/t/p/w500/1COyCeH7NLNohVd0mRFDSBWt1Yv.jpg",
+          "initialStreaming": "MGM+",
+          "tmdb_id": 18775,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1COyCeH7NLNohVd0mRFDSBWt1Yv.jpg"
+        },
+        {
+          "title": "The Terminal Man",
+          "year": 1974,
+          "slug": "George Segal stars as a man implanted with experimental brain electrodes",
+          "poster": "https://image.tmdb.org/t/p/w500/4kzqHiAe5pB2zaqtbpidVdpbsLY.jpg",
+          "initialStreaming": "Warner Archive",
+          "tmdb_id": 32940,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4kzqHiAe5pB2zaqtbpidVdpbsLY.jpg"
+        },
+        {
+          "title": "Species",
+          "year": 1995,
+          "slug": "Genetic engineering creates a dangerous human-alien hybrid",
+          "poster": "https://image.tmdb.org/t/p/w500/cT5wdyo8kT7dycqjrolJ2sHWkFx.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 9348,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cT5wdyo8kT7dycqjrolJ2sHWkFx.jpg"
+        },
+        {
+          "title": "Splice",
+          "year": 2009,
+          "slug": "Scientists create a human-animal hybrid with devastating consequences",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 37707
+        },
+        {
+          "title": "The Fly",
+          "year": 1986,
+          "slug": "Cronenberg's body horror masterpiece about a teleportation experiment gone wrong",
+          "poster": "https://image.tmdb.org/t/p/w500/8gZWMhJHRvaXdXsNhERtqNHYpH3.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 9426,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8gZWMhJHRvaXdXsNhERtqNHYpH3.jpg"
+        },
+        {
+          "title": "Re-Animator",
+          "year": 1985,
+          "slug": "Mad scientist brings the dead back to life with chaotic results",
+          "poster": "https://image.tmdb.org/t/p/w500/1hY6AUl92cL9GdZx031UWFiGETt.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 1694,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1hY6AUl92cL9GdZx031UWFiGETt.jpg"
+        },
+        {
+          "title": "Frankenstein",
+          "year": 1931,
+          "slug": "The original mad scientist film that influenced all others",
+          "poster": "https://image.tmdb.org/t/p/w500/mu6wHwH0IwCCaEYtpqujuPJYat1.jpg",
+          "initialStreaming": "Universal Classics",
+          "tmdb_id": 3035,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mu6wHwH0IwCCaEYtpqujuPJYat1.jpg"
+        },
+        {
+          "title": "Crimes of the Future",
+          "year": 2022,
+          "slug": "Modern body horror exploring human evolution and modification",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 819876
+        },
+        {
+          "title": "Gattaca",
+          "year": 1997,
+          "slug": "Genetic engineering creates a divided society",
+          "poster": "https://image.tmdb.org/t/p/w500/eSKr5Fl1MEC7zpAXaLWBWSBjgJq.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 782,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eSKr5Fl1MEC7zpAXaLWBWSBjgJq.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

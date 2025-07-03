@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "The Devil's Eye",
+    "year": 1960,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/njgS53DDdtsj5DXaGcEwglwq8z3.jpg",
+    "initialStreaming": null,
+    "tmdbId": 48145,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Ingmar Bergman's **The Devil's Eye** (1960) represents a rare comedic departure from his typically serious explorations of faith and mortality. The film cleverly reworks the Don Juan myth, placing it in a supernatural context where Satan sends Don Juan from Hell to seduce a priest's virtuous daughter. This lighter touch shows Bergman's versatility, though he still weaves in his signature themes of temptation, purity, and religious doubt. The film's connection to earlier Don Juan adaptations like **Adventures of Don Juan** (1948) and **Don Giovanni** (1979) is clear, but Bergman's version adds his distinctive philosophical weight."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Seventh Seal",
+            "year": 1957,
+            "slug": "Bergman's medieval masterpiece about a knight playing chess with Death",
+            "poster": "https://image.tmdb.org/t/p/w500/wcZ21zrOsy0b52AfAF50XpTiv75.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 490,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wcZ21zrOsy0b52AfAF50XpTiv75.jpg"
+          },
+          {
+            "title": "The Devil and Daniel Webster",
+            "year": 1941,
+            "slug": "A farmer sells his soul to the devil in this supernatural morality tale",
+            "poster": "https://image.tmdb.org/t/p/w500/2GUZ0Yg3DKlZpc3HEF5qJz7KqD5.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 29451,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2GUZ0Yg3DKlZpc3HEF5qJz7KqD5.jpg"
+          },
+          {
+            "title": "Faust",
+            "year": 1926,
+            "slug": "F.W. Murnau's haunting adaptation of Goethe's deal-with-the-devil classic",
+            "poster": "https://image.tmdb.org/t/p/w500/rN703hMFxmkZfyEzsXvFtuFhkXE.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 10728,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rN703hMFxmkZfyEzsXvFtuFhkXE.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of temptation and virtue connects it to other supernatural morality tales like **Angel Heart** (1987) and **The Witch** (2015). Bergman's use of comedy to explore serious themes influenced later directors like Woody Allen, particularly in films like **Love and Death** (1975). The theatrical staging and supernatural elements recall Federico Fellini's **Juliet of the Spirits** (1965), showing how European art cinema of the period was wrestling with questions of faith through innovative formal techniques. SUBHEAD: Comedy and Religious Satire"
+      },
+      {
+        "type": "text",
+        "content": "While maintaining his sophisticated visual style, Bergman uses comedy to soften his typically harsh examination of faith and morality. This approach connects to later religious satires like **Monty Python's Life of Brian** (1979) and **Dogma** (1999), though Bergman's touch is more subtle. The film's structure, moving between Hell and Earth, influenced later supernatural comedies like **Heaven Can Wait** (1978) and **Defending Your Life** (1991)."
+      }
+    ],
+    "exploreFurther": [
+      "Bergman's Comedic Works - Exploring the lighter side of the Swedish master",
+      "Don Juan in Cinema - The evolution of the legendary seducer on screen",
+      "Religious Satire in European Art Cinema",
+      "Supernatural Comedy - From Bergman to modern interpretations",
+      "The Influence of Theater on Bergman's Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Smiles of a Summer Night",
+          "year": 1955,
+          "slug": "Bergman's earlier comedy about romantic entanglements",
+          "poster": "https://image.tmdb.org/t/p/w500/wKeV8lKz8k9DDBCw6MJ9MkhvhqF.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 11700,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wKeV8lKz8k9DDBCw6MJ9MkhvhqF.jpg"
+        },
+        {
+          "title": "All These Women",
+          "year": 1964,
+          "slug": "Bergman's satirical comedy about a music critic",
+          "poster": "https://image.tmdb.org/t/p/w500/jOOLYdOUbXL5ufuxP6Xr8llajKr.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 96118,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jOOLYdOUbXL5ufuxP6Xr8llajKr.jpg"
+        },
+        {
+          "title": "Don Juan DeMarco",
+          "year": 1994,
+          "slug": "Modern take on the Don Juan myth with Johnny Depp",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 1909
+        },
+        {
+          "title": "The Phantom of Liberty",
+          "year": 1974,
+          "slug": "Buñuel's surrealist comedy with religious themes",
+          "poster": "https://image.tmdb.org/t/p/w500/f6cON5ebistPm6AS1XcZZMmKpIi.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 5558,
+          "poster_url": "https://image.tmdb.org/t/p/w500/f6cON5ebistPm6AS1XcZZMmKpIi.jpg"
+        },
+        {
+          "title": "The Exterminating Angel",
+          "year": 1962,
+          "slug": "Buñuel's satirical attack on high society",
+          "poster": "https://image.tmdb.org/t/p/w500/qqZXHvBFxUpo8Pfbyvgh4SYMiWm.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 29264,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qqZXHvBFxUpo8Pfbyvgh4SYMiWm.jpg"
+        },
+        {
+          "title": "Through a Glass Darkly",
+          "year": 1961,
+          "slug": "Bergman's chamber drama about faith and madness",
+          "poster": "https://image.tmdb.org/t/p/w500/rYD30Fm4vAcBqk1kTsxHw1s8P29.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 11602,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rYD30Fm4vAcBqk1kTsxHw1s8P29.jpg"
+        },
+        {
+          "title": "Wild Strawberries",
+          "year": 1957,
+          "slug": "Bergman's meditation on life and death",
+          "poster": "https://image.tmdb.org/t/p/w500/iyTD2QnySNMPUPE3IedZQipSWfz.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 614,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iyTD2QnySNMPUPE3IedZQipSWfz.jpg"
+        },
+        {
+          "title": "Cries and Whispers",
+          "year": 1972,
+          "slug": "Bergman's intense drama about suffering and faith",
+          "poster": "https://image.tmdb.org/t/p/w500/a1bMgB09YDvvRN9SitCclUYragr.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 10238,
+          "poster_url": "https://image.tmdb.org/t/p/w500/a1bMgB09YDvvRN9SitCclUYragr.jpg"
+        },
+        {
+          "title": "The Magic Flute",
+          "year": 1975,
+          "slug": "Bergman's adaptation of Mozart's opera",
+          "poster": "https://image.tmdb.org/t/p/w500/3N0L2ijwcVjRLJRSXbv3AKT2Vnt.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 44864,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3N0L2ijwcVjRLJRSXbv3AKT2Vnt.jpg"
+        },
+        {
+          "title": "Hour of the Wolf",
+          "year": 1968,
+          "slug": "Bergman's supernatural horror film",
+          "poster": "https://image.tmdb.org/t/p/w500/jSqTnEP1x1OcOglqrInYvGSF1tL.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 18333,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jSqTnEP1x1OcOglqrInYvGSF1tL.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

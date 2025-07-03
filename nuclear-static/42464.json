@@ -1,0 +1,186 @@
+{
+  "props": {
+    "title": "O Lucky Man!",
+    "year": 1973,
+    "initialSlug": "A wild ride to riches!",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/2xlzrpQF76OCgcKpQZvP6WtlpJy.jpg",
+    "initialStreaming": null,
+    "tmdbId": 42464,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**O Lucky Man!** (1973) stands as Lindsay Anderson's ambitious magnum opus, a sprawling 3-hour satire following Malcolm McDowell's coffee salesman through a surreal version of Britain. Building on their earlier collaboration **If....** (1968), Anderson and McDowell craft a picaresque journey that feels like Candide meets <a href=\"/movie/185\" class=\"movie-title\">A Clockwork Orange</a> (1971). The film's scope is staggering - moving from corporate capitalism to medical experimentation, military conspiracies to religious cults. Alan Price's Greek chorus-like musical interludes provide sardonic commentary, while Anderson's decision to have actors play multiple roles (like **Dr. Strangelove** (1964)) reinforces the film's theatrical artifice."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "If....",
+            "year": 1968,
+            "slug": "Anderson's first film with McDowell about rebellion at a British boarding school",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": null
+          },
+          {
+            "title": "A Clockwork Orange",
+            "year": 1971,
+            "slug": "Kubrick's dystopian masterpiece also starring Malcolm McDowell",
+            "poster": "https://image.tmdb.org/t/p/w500/4sHeTAp65WrSSuc05nRBKddhBxO.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 185,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4sHeTAp65WrSSuc05nRBKddhBxO.jpg"
+          },
+          {
+            "title": "The Magic Christian",
+            "year": 1969,
+            "slug": "Similar British satire starring Peter Sellers and Ringo Starr",
+            "poster": "https://image.tmdb.org/t/p/w500/92OHvXPieitIzkmPWbycCvclQ5E.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 24152,
+            "poster_url": "https://image.tmdb.org/t/p/w500/92OHvXPieitIzkmPWbycCvclQ5E.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "What makes **O Lucky Man!** particularly fascinating is its position between British New Wave realism and the emerging postmodern cinema of the 1970s. Like **Performance** (1970) and **The Devils** (1971), it represents a moment when British cinema was pushing boundaries both narratively and stylistically. Anderson's use of Brechtian techniques - direct address, visible scene changes, actors in multiple roles - creates deliberate alienation effects that force viewers to engage critically rather than passively consume the story."
+      },
+      {
+        "type": "text",
+        "content": "The film's influence can be traced through later works like <a href=\"/movie/68\" class=\"movie-title\">Brazil</a> (1985) and <a href=\"/movie/424781\" class=\"movie-title\">Sorry to Bother You</a> (2018), which similarly use surreal elements to critique capitalism and social structures. McDowell's Mick Travis character, appearing across Anderson's trilogy (**If....**, **O Lucky Man!**, and **Britannia Hospital** (1982)), represents one of cinema's great extended character studies, charting the corruption of idealism through institutional forces. SUBHEAD: Breaking the Fourth Wall"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Brazil",
+            "year": 1985,
+            "slug": "Terry Gilliam's dystopian satire about bureaucracy gone mad",
+            "poster": "https://image.tmdb.org/t/p/w500/aewan59WcFThBimkTVVoNf2o5Vb.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 68,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aewan59WcFThBimkTVVoNf2o5Vb.jpg"
+          },
+          {
+            "title": "Sorry to Bother You",
+            "year": 2018,
+            "slug": "Surreal anti-capitalist comedy about corporate exploitation",
+            "poster": "https://image.tmdb.org/t/p/w500/peTl1V04E9ppvhgvNmSX0r2ALqO.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 424781,
+            "poster_url": "https://image.tmdb.org/t/p/w500/peTl1V04E9ppvhgvNmSX0r2ALqO.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Anderson's meta-theatrical approach culminates in one of cinema's most striking endings, as Mick Travis auditions for the very film we've been watching. This self-reflexive moment connects to other fourth-wall-breaking films of the era like **8½** (1963) and **Stardust Memories** (1980), but serves a deeper purpose in **O Lucky Man!** by completing the protagonist's journey from innocence to understanding."
+      }
+    ],
+    "exploreFurther": [
+      "Lindsay Anderson's Free Cinema Movement and its influence on British New Wave",
+      "The use of Brechtian alienation techniques in political cinema",
+      "Alan Price's soundtrack and the role of musical commentary in film",
+      "Malcolm McDowell's trilogy of Mick Travis characters",
+      "Surrealist satire in 1970s British cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Britannia Hospital",
+          "year": 1982,
+          "slug": "Final film in Anderson's Mick Travis trilogy",
+          "poster": "https://image.tmdb.org/t/p/w500/jbqfoco8nzpaPEHSxQIBTgGpAed.jpg",
+          "initialStreaming": "BFI",
+          "tmdb_id": 26639,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jbqfoco8nzpaPEHSxQIBTgGpAed.jpg"
+        },
+        {
+          "title": "The Ruling Class",
+          "year": 1972,
+          "slug": "Peter O'Toole in satirical attack on British aristocracy",
+          "poster": "https://image.tmdb.org/t/p/w500/29EZjwr3jDFWtdj9Lpq2BtCvKga.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 30892,
+          "poster_url": "https://image.tmdb.org/t/p/w500/29EZjwr3jDFWtdj9Lpq2BtCvKga.jpg"
+        },
+        {
+          "title": "The Bed Sitting Room",
+          "year": 1969,
+          "slug": "Post-apocalyptic British satire",
+          "poster": "https://image.tmdb.org/t/p/w500/q2hbnDZI0R8myBsW0MLuA5et0px.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 26509,
+          "poster_url": "https://image.tmdb.org/t/p/w500/q2hbnDZI0R8myBsW0MLuA5et0px.jpg"
+        },
+        {
+          "title": "Morgan: A Suitable Case for Treatment",
+          "year": 1966,
+          "slug": "British New Wave satire with similar themes",
+          "poster": "https://image.tmdb.org/t/p/w500/xu4awPUFmrFUaX2qk12Lv4QhJSF.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 42724,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xu4awPUFmrFUaX2qk12Lv4QhJSF.jpg"
+        },
+        {
+          "title": "Performance",
+          "year": 1970,
+          "slug": "Surreal British crime film with similar experimental approach",
+          "poster": "https://image.tmdb.org/t/p/w500/yKuqk84TtTpj0nYZS5m680JmprG.jpg",
+          "initialStreaming": "Warner Archive",
+          "tmdb_id": 26606,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yKuqk84TtTpj0nYZS5m680JmprG.jpg"
+        },
+        {
+          "title": "The Devils",
+          "year": 1971,
+          "slug": "Ken Russell's controversial religious satire",
+          "poster": "https://image.tmdb.org/t/p/w500/y1k7eiOFc6fzm8XeTa1kNGx6JIs.jpg",
+          "initialStreaming": "BFI",
+          "tmdb_id": 31767,
+          "poster_url": "https://image.tmdb.org/t/p/w500/y1k7eiOFc6fzm8XeTa1kNGx6JIs.jpg"
+        },
+        {
+          "title": "That'll Be The Day",
+          "year": 1973,
+          "slug": "Another McDowell coming-of-age film from same era",
+          "poster": "https://image.tmdb.org/t/p/w500/oyaHClO0Wt016hWF9I7O6Eui0Lc.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 26831,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oyaHClO0Wt016hWF9I7O6Eui0Lc.jpg"
+        },
+        {
+          "title": "Long Good Friday",
+          "year": 1980,
+          "slug": "British gangster film showing similar social critique",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 14807
+        },
+        {
+          "title": "Time Bandits",
+          "year": 1981,
+          "slug": "Terry Gilliam's satirical fantasy adventure",
+          "poster": "https://image.tmdb.org/t/p/w500/4VZtpwdhHQSa4LUkvujyGAHb1hG.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 36819,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4VZtpwdhHQSa4LUkvujyGAHb1hG.jpg"
+        },
+        {
+          "title": "Jubilee",
+          "year": 1978,
+          "slug": "Derek Jarman's punk critique of British society",
+          "poster": "https://image.tmdb.org/t/p/w500/8HtAaaDZDCCx2F73n41xMDWDhwU.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 41426,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8HtAaaDZDCCx2F73n41xMDWDhwU.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

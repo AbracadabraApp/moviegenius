@@ -1,0 +1,174 @@
+{
+  "props": {
+    "title": "Quartet",
+    "year": 1948,
+    "initialSlug": "A harmonious tale of friendship.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/hCPWlJus4LXWigzsRtJpJwlmD9o.jpg",
+    "initialStreaming": null,
+    "tmdbId": 100257,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Quartet** (1948) marks a fascinating early anthology film adaptation of W. Somerset Maugham's short stories, with the author himself appearing as narrator. This post-war British production established a template for sophisticated literary adaptations that influenced later works like **Dead of Night** (1945) and **Three Cases of Murder** (1955). The film's four distinct segments - \"The Facts of Life,\" \"The Alien Corn,\" \"The Kite,\" and \"The Colonel's Lady\" - showcase different directors tackling Maugham's razor-sharp observations of British society, class tensions, and moral dilemmas."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Brief Encounter",
+            "year": 1945,
+            "slug": "David Lean's masterful romance about forbidden love in wartime Britain",
+            "poster": "https://image.tmdb.org/t/p/w500/jC9EwLJcGhYMSQAHu2LxkKN5v7O.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 851,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jC9EwLJcGhYMSQAHu2LxkKN5v7O.jpg"
+          },
+          {
+            "title": "The Fallen Idol",
+            "year": 1948,
+            "slug": "Carol Reed directs this taut psychological thriller about a boy's misplaced loyalty",
+            "poster": "https://image.tmdb.org/t/p/w500/qoNRned9ZFgc32OBXEcaBCryPjc.jpg",
+            "initialStreaming": "BritBox",
+            "tmdb_id": 21631,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qoNRned9ZFgc32OBXEcaBCryPjc.jpg"
+          },
+          {
+            "title": "Kind Hearts and Coronets",
+            "year": 1949,
+            "slug": "Pitch-black comedy with Alec Guinness playing multiple roles",
+            "poster": "https://image.tmdb.org/t/p/w500/eBvpyRjD3DcCsWgdV6Y9oqPS7dO.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 11898,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eBvpyRjD3DcCsWgdV6Y9oqPS7dO.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The anthology format reached its peak in British cinema during the late 1940s, with **Quartet** leading the charge. The success spawned two follow-ups - **Trio** (1950) and **Encore** (1951) - both also based on Maugham stories. These films provided excellent vehicles for established British actors like Cecil Parker and Mai Zetterling while offering opportunities to emerging talents. The format allowed exploration of complex themes within tightly constructed narratives, each segment functioning as a perfect miniature of storytelling craft."
+      },
+      {
+        "type": "text",
+        "content": "Of particular note is how **Quartet** captures the immediate post-war British mindset. Like <a href=\"/movie/851\" class=\"movie-title\">Brief Encounter</a> (1945) and <a href=\"/movie/1092\" class=\"movie-title\">The Third Man</a> (1949), it reflects a society grappling with changing social norms and moral certainties. The segment \"The Alien Corn\" particularly stands out for its examination of class expectations and artistic ambition, themes that would later be explored in films like **The Red Shoes** (1948). SUBHEAD: Influence on British Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Third Man",
+            "year": 1949,
+            "slug": "Carol Reed's noir masterpiece set in post-war Vienna",
+            "poster": "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 1092,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's success influenced a wave of literary adaptations in British cinema, establishing a high standard for bringing sophisticated prose to the screen. This tradition continued through **The Tales of Hoffman** (1951) and later anthology films like **Dead of Night** (1945), which similarly used multiple directors to create varied yet thematically linked segments. The approach of using established literary works as source material became a hallmark of quality British filmmaking."
+      }
+    ],
+    "exploreFurther": [
+      "W. Somerset Maugham's influence on British Cinema",
+      "The rise and fall of the anthology film format",
+      "Post-war British cinema's social commentary",
+      "The evolution of literary adaptations in film",
+      "Multiple-director anthology films through history"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Dead of Night",
+          "year": 1945,
+          "slug": "Influential horror anthology film",
+          "poster": "https://image.tmdb.org/t/p/w500/oVAlugIkLCkyyXufNDhtr5kl3yB.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 13581,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oVAlugIkLCkyyXufNDhtr5kl3yB.jpg"
+        },
+        {
+          "title": "Trio",
+          "year": 1950,
+          "slug": "Second anthology of Maugham stories",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 134168
+        },
+        {
+          "title": "Encore",
+          "year": 1951,
+          "slug": "Third installment of Maugham adaptations",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 197647
+        },
+        {
+          "title": "The Tales of Hoffman",
+          "year": 1951,
+          "slug": "Powell and Pressburger's operatic anthology",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 44334
+        },
+        {
+          "title": "Three Cases of Murder",
+          "year": 1955,
+          "slug": "Horror anthology with Orson Welles",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 45577
+        },
+        {
+          "title": "The Red Shoes",
+          "year": 1948,
+          "slug": "Powell and Pressburger's ballet drama",
+          "poster": "https://image.tmdb.org/t/p/w500/tRpm0MNYoMOgyumL9ePI3wB2P9V.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 19542,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tRpm0MNYoMOgyumL9ePI3wB2P9V.jpg"
+        },
+        {
+          "title": "The Importance of Being Earnest",
+          "year": 1952,
+          "slug": "Wilde adaptation showing similar wit",
+          "poster": "https://image.tmdb.org/t/p/w500/ahHp1nOjLTWBdLCofxjLYMVqqgs.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 20324,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ahHp1nOjLTWBdLCofxjLYMVqqgs.jpg"
+        },
+        {
+          "title": "The Browning Version",
+          "year": 1951,
+          "slug": "Another literary adaptation from the era",
+          "poster": "https://image.tmdb.org/t/p/w500/fRlXkYgQc6QfwYMAlv2neKhRswl.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 39946,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fRlXkYgQc6QfwYMAlv2neKhRswl.jpg"
+        },
+        {
+          "title": "The Winslow Boy",
+          "year": 1948,
+          "slug": "Period drama exploring similar themes",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 77822
+        },
+        {
+          "title": "The Way Ahead",
+          "year": 1944,
+          "slug": "Carol Reed's wartime anthology",
+          "poster": "https://image.tmdb.org/t/p/w500/rJP2JsLnlyv4pkT7crrJYz0V4pE.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 28916,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rJP2JsLnlyv4pkT7crrJYz0V4pE.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

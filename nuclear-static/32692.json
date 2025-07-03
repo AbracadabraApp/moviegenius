@@ -1,0 +1,159 @@
+{
+  "props": {
+    "title": "Godard's Passion",
+    "year": 1982,
+    "initialSlug": "An artist's unraveling passion.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/hQ1zhDRbuNkN63eWTSKuHLKM6gs.jpg",
+    "initialStreaming": null,
+    "tmdbId": 32692,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Passion** (1982) represents one of Godard's most complex meditations on the relationship between cinema, painting, and labor. The film follows a director struggling to shoot tableaux vivants of classical paintings while a parallel story of factory workers unfolds. Like his earlier **Weekend** (1967) and **Tout va bien** (1972), Godard deliberately disrupts narrative conventions, but here he's specifically interested in how moving images can capture - or fail to capture - the essence of static art. The recreations of works by Rembrandt, Goya, and Delacroix become sites of both visual splendor and ideological tension."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Contempt",
+            "year": 1963,
+            "slug": "Godard's meta-commentary on filmmaking featuring Fritz Lang, exploring the tensions between art and commerce",
+            "poster": "https://image.tmdb.org/t/p/w500/1WhhlenrLjO2XR6foiPWy8v3kI.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 266,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1WhhlenrLjO2XR6foiPWy8v3kI.jpg"
+          },
+          {
+            "title": "Every Man for Himself",
+            "year": 1980,
+            "slug": "Godard's \"second first film\" marking his return to more narrative cinema after his Dziga Vertov period",
+            "poster": "https://image.tmdb.org/t/p/w500/dY8j9gnboI4HxJUF4AZXVhrwf5P.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 186693,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dY8j9gnboI4HxJUF4AZXVhrwf5P.jpg"
+          },
+          {
+            "title": "First Name: Carmen",
+            "year": 1983,
+            "slug": "A radical reimagining of Bizet's opera that continues Godard's exploration of high art and contemporary politics",
+            "poster": "https://image.tmdb.org/t/p/w500/g9Vsu3uoVXgL3Pt2tdC8B2xAbGd.jpg",
+            "initialStreaming": "Mubi",
+            "tmdb_id": 32689,
+            "poster_url": "https://image.tmdb.org/t/p/w500/g9Vsu3uoVXgL3Pt2tdC8B2xAbGd.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Godard's 1980s work marks a distinct shift from his earlier, more politically strident films. While **Passion** (1982) maintains his career-long critique of capitalism and labor relations, it approaches these themes through a more poetic, visually-driven lens. The film shares DNA with **Prénom Carmen** (1983) and **Je vous salue, Marie** (1985) in its investigation of how sacred and profane images collide in modern life. This trilogy represents Godard grappling with questions of beauty and meaning in an increasingly commercialized world."
+      },
+      {
+        "type": "text",
+        "content": "The film's innovative approach to lighting and composition directly influenced later art-focused cinema like Peter Greenaway's **The Cook, the Thief, His Wife & Her Lover** (1989) and Derek Jarman's **Caravaggio** (1986). Godard's technique of recreating classical paintings would be echoed in films like **The Mill and the Cross** (2011) and **Shirley: Visions of Reality** (2013), though none match his political urgency. SUBHEAD: The Politics of Looking"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Histoire(s) du cinéma",
+            "year": 1988,
+            "slug": "Godard's sprawling video essay series examining the history and meaning of cinema",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Through its parallel storylines of film production and factory labor, **Passion** (1982) interrogates who has the power to look and who is forced to be looked at. This theme connects to earlier New Wave examinations of the male gaze like **2 or 3 Things I Know About Her** (1967) but with a new focus on class relations. The film's factory workers, particularly Isabelle Huppert's character, aren't just objects of the camera's gaze but assert their own right to look and judge."
+      }
+    ],
+    "exploreFurther": [
+      "The influence of classical painting on New Wave cinema",
+      "Godard's evolving approach to political filmmaking in the 1980s",
+      "The role of tableaux vivants in art house cinema",
+      "Labor relations and visual pleasure in late Godard",
+      "The intersection of high art and working class struggle in film"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Vivre sa vie",
+          "year": 1962,
+          "slug": "Godard's examination of a woman's life through 12 tableaux",
+          "poster": "https://image.tmdb.org/t/p/w500/lYTAYclvYIa1SR4wRwMW7OwGp86.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1626,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lYTAYclvYIa1SR4wRwMW7OwGp86.jpg"
+        },
+        {
+          "title": "The Draughtsman's Contract",
+          "year": 1982,
+          "slug": "Peter Greenaway's meditation on art, power and perception",
+          "poster": "https://image.tmdb.org/t/p/w500/ljeTWR2kowGXijMc8LMuy72ULM3.jpg",
+          "initialStreaming": "BFI Player",
+          "tmdb_id": 10831,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ljeTWR2kowGXijMc8LMuy72ULM3.jpg"
+        },
+        {
+          "title": "La Belle Noiseuse",
+          "year": 1991,
+          "slug": "Jacques Rivette's four-hour exploration of the artistic process",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 12627
+        },
+        {
+          "title": "The Baby of Mâcon",
+          "year": 1993,
+          "slug": "Greenaway's controversial examination of spectacle and religion",
+          "poster": "https://image.tmdb.org/t/p/w500/lYB5uF36JE61GMLInD3Gp7yCCyL.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 5051,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lYB5uF36JE61GMLInD3Gp7yCCyL.jpg"
+        },
+        {
+          "title": "Institute Benjamenta",
+          "year": 1995,
+          "slug": "Brothers Quay's surreal exploration of power and observation",
+          "poster": "https://image.tmdb.org/t/p/w500/sbAYYXZNY6iofJa1EfylnR9MrkC.jpg",
+          "initialStreaming": "Arrow",
+          "tmdb_id": 40651,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sbAYYXZNY6iofJa1EfylnR9MrkC.jpg"
+        },
+        {
+          "title": "Russian Ark",
+          "year": 2002,
+          "slug": "Sokurov's one-take journey through art history",
+          "poster": "https://image.tmdb.org/t/p/w500/ceEMxpXrbWo823I3KZlS5t54Nwo.jpg",
+          "initialStreaming": "Kino Now",
+          "tmdb_id": 16646,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ceEMxpXrbWo823I3KZlS5t54Nwo.jpg"
+        },
+        {
+          "title": "Exhibition",
+          "year": 2013,
+          "slug": "Joanna Hogg's study of artists and their living space",
+          "poster": "https://image.tmdb.org/t/p/w500/9dbJ2i1JOQju3umd1lgh5tplos9.jpg",
+          "initialStreaming": "BFI Player",
+          "tmdb_id": 208028,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9dbJ2i1JOQju3umd1lgh5tplos9.jpg"
+        },
+        {
+          "title": "The Duke of Burgundy",
+          "year": 2014,
+          "slug": "Peter Strickland's homage to European art cinema",
+          "poster": "https://image.tmdb.org/t/p/w500/fVUvn7boQY0R7F8V31BdgrpCN52.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 250225,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fVUvn7boQY0R7F8V31BdgrpCN52.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

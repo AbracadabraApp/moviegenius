@@ -1,0 +1,169 @@
+{
+  "props": {
+    "title": "Edge of the City",
+    "year": 1957,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/eixbelLNo7TJJf7jMgCKZB22bxq.jpg",
+    "initialStreaming": null,
+    "tmdbId": 35129,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Edge of the City** (1957) marks a groundbreaking moment in American cinema's treatment of race relations, arriving years before the Civil Rights Movement peaked. Sidney Poitier and John Cassavetes deliver powerhouse performances as dock workers whose friendship defies the racial tensions of 1950s New York. Director Martin Ritt, who would later helm **Hud** (1963) and **Norma Rae** (1979), brings his signature social consciousness to this neo-noir, crafting a gritty urban drama that shares DNA with <a href=\"/movie/654\" class=\"movie-title\">On the Waterfront</a> (1954) while charting its own bold territory on racial equality."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "On the Waterfront",
+            "year": 1954,
+            "slug": "Marlon Brando stars in this powerful drama about corruption and redemption on the docks of New Jersey",
+            "poster": "https://image.tmdb.org/t/p/w500/fKjLZy9W8VxMOp5OoyWojmLVCQw.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 654,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fKjLZy9W8VxMOp5OoyWojmLVCQw.jpg"
+          },
+          {
+            "title": "The Defiant Ones",
+            "year": 1958,
+            "slug": "Tony Curtis and Sidney Poitier play escaped convicts chained together, forced to cooperate despite racial tensions",
+            "poster": "https://image.tmdb.org/t/p/w500/tGGNyImEXgedDjrCORbC9cTJp0X.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 11414,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tGGNyImEXgedDjrCORbC9cTJp0X.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's portrayal of interracial friendship was revolutionary for its time, predating similar themes in <a href=\"/movie/11414\" class=\"movie-title\">The Defiant Ones</a> (1958) and **In the Heat of the Night** (1967). Ritt's direction eschews the melodramatic tendencies of the era, instead delivering a raw, almost documentary-like look at working-class life. The film's exploration of labor issues and workplace racism creates a template that later influenced works like **Blue Collar** (1978) and **Matewan** (1987)."
+      },
+      {
+        "type": "text",
+        "content": "Robert Alan Aurthur's screenplay draws from his earlier teleplay \"A Man Is Ten Feet Tall,\" but expands the scope to create a more complex examination of urban life and racial dynamics. The film's visual style, shot by Joseph Brun, captures the stark reality of New York's waterfront with a noir-influenced aesthetic that would later influence the New Hollywood movement of the late 1960s. SUBHEAD: Impact on Social Issue Films"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Nothing But a Man",
+            "year": 1964,
+            "slug": "A dignified portrait of a Black railroad worker facing racism in the American South",
+            "poster": "https://image.tmdb.org/t/p/w500/6vWkmRHsX1yIUJSimDKEJLU4UkD.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 91721,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6vWkmRHsX1yIUJSimDKEJLU4UkD.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Edge of the City** (1957) helped establish a new framework for addressing social issues in American cinema. Its influence can be traced through films like **Pressure Point** (1962), **One Potato, Two Potato** (1964), and even modern works like **Crash** (2004). The film's handling of workplace dynamics and institutional racism created a blueprint for future filmmakers tackling similar themes."
+      }
+    ],
+    "exploreFurther": [
+      "The evolution of Sidney Poitier's roles in addressing racial issues in 1950s-60s Hollywood",
+      "Martin Ritt's career as a socially conscious filmmaker",
+      "The influence of television's Golden Age on 1950s cinema",
+      "New York waterfront films and their impact on American social realism",
+      "The development of interracial friendship narratives in American cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Odds Against Tomorrow",
+          "year": 1959,
+          "slug": "Harry Belafonte stars in this noir about racial tensions during a bank heist",
+          "poster": "https://image.tmdb.org/t/p/w500/z5941aC7ttyY2gUfyKZfXVq11Sg.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 26983,
+          "poster_url": "https://image.tmdb.org/t/p/w500/z5941aC7ttyY2gUfyKZfXVq11Sg.jpg"
+        },
+        {
+          "title": "A Raisin in the Sun",
+          "year": 1961,
+          "slug": "Sidney Poitier leads in this adaptation of Lorraine Hansberry's groundbreaking play",
+          "poster": "https://image.tmdb.org/t/p/w500/fxGAJFfryAgdi4ONkVyrBWKDBbI.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 29478,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fxGAJFfryAgdi4ONkVyrBWKDBbI.jpg"
+        },
+        {
+          "title": "Blackboard Jungle",
+          "year": 1955,
+          "slug": "Glenn Ford stars as a teacher in an inner-city school dealing with racial tensions",
+          "poster": "https://image.tmdb.org/t/p/w500/vPGvWlsMg4niyuGCSzvAiyjYNWC.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 26516,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vPGvWlsMg4niyuGCSzvAiyjYNWC.jpg"
+        },
+        {
+          "title": "The Well",
+          "year": 1951,
+          "slug": "A small town erupts in racial tension when a young girl goes missing",
+          "poster": "https://image.tmdb.org/t/p/w500/spCIIPdOgW5NIMA4evLFBmw1prB.jpg",
+          "initialStreaming": "Archive",
+          "tmdb_id": 29112,
+          "poster_url": "https://image.tmdb.org/t/p/w500/spCIIPdOgW5NIMA4evLFBmw1prB.jpg"
+        },
+        {
+          "title": "No Way Out",
+          "year": 1950,
+          "slug": "Sidney Poitier's debut as a doctor facing racial prejudice in a hospital",
+          "poster": "https://image.tmdb.org/t/p/w500/plRDHhcTwS6Z7ohWP39zgPRm7oX.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 28433,
+          "poster_url": "https://image.tmdb.org/t/p/w500/plRDHhcTwS6Z7ohWP39zgPRm7oX.jpg"
+        },
+        {
+          "title": "Native Son",
+          "year": 1951,
+          "slug": "Richard Wright stars in the adaptation of his own novel about racial inequality",
+          "poster": "https://image.tmdb.org/t/p/w500/ah4FStCZc4NIdt0jST8VYybGw4Q.jpg",
+          "initialStreaming": "Archive",
+          "tmdb_id": 151435,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ah4FStCZc4NIdt0jST8VYybGw4Q.jpg"
+        },
+        {
+          "title": "Cry, the Beloved Country",
+          "year": 1951,
+          "slug": "A powerful story of racial injustice in South Africa",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 173893
+        },
+        {
+          "title": "The Jackie Robinson Story",
+          "year": 1950,
+          "slug": "Jackie Robinson plays himself in this biopic about breaking baseball's color barrier",
+          "poster": "https://image.tmdb.org/t/p/w500/cx13WcbLX3dU7Lo6ZcVwygQpdtO.jpg",
+          "initialStreaming": "Archive",
+          "tmdb_id": 43392,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cx13WcbLX3dU7Lo6ZcVwygQpdtO.jpg"
+        },
+        {
+          "title": "Intruder in the Dust",
+          "year": 1949,
+          "slug": "A southern boy helps defend a black man falsely accused of murder",
+          "poster": "https://image.tmdb.org/t/p/w500/upQaoMXJhglvPhsYXEDatTLiBXy.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 80572,
+          "poster_url": "https://image.tmdb.org/t/p/w500/upQaoMXJhglvPhsYXEDatTLiBXy.jpg"
+        },
+        {
+          "title": "Home of the Brave",
+          "year": 1949,
+          "slug": "One of the first films to address racial discrimination in the military",
+          "poster": "https://image.tmdb.org/t/p/w500/5DCIWBuKVZmJcM61gOcPDzm4sRU.jpg",
+          "initialStreaming": "Archive",
+          "tmdb_id": 90807,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5DCIWBuKVZmJcM61gOcPDzm4sRU.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

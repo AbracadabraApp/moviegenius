@@ -26,7 +26,8 @@ export default function EntityLinkedText({
   const [isProcessing, setIsProcessing] = useState(false);
 
   useEffect(() => {
-    if (!text || linkingStyle === 'off' || !linkMovies) {
+    // DISABLED: Movie linking creates broken search URLs - only use direct tmdb_id links
+    if (!text || linkingStyle === 'off' || !linkMovies || true) {
       setLinkedText(text);
       return;
     }

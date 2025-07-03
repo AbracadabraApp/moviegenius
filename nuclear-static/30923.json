@@ -1,0 +1,186 @@
+{
+  "props": {
+    "title": "Alice in Wonderland",
+    "year": 1999,
+    "initialSlug": "Girl's surreal journey through magical underground",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/kpXmXjqeyuSYCtNuGMytWQLdKX.jpg",
+    "initialStreaming": null,
+    "tmdbId": 30923,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The 1999 NBC television adaptation of **Alice in Wonderland** (1999) marked a fascinating turn in Lewis Carroll adaptations, blending practical effects with early CGI in ways that bridge classic and modern fantasy filmmaking. This version follows the darker, more psychological path laid by Jan Švankmajer's <a href=\"/movie/976732\" class=\"movie-title\">Alice</a> (1988), while maintaining accessibility for family viewing. It's worth comparing to Disney's animated **Alice in Wonderland** (1951), which set many of our cultural expectations for how Wonderland should look and feel."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Alice in Wonderland",
+            "year": 1951,
+            "slug": "Disney's animated classic featuring vibrant colors and memorable songs like \"Unbirthday\"",
+            "poster": "https://image.tmdb.org/t/p/w500/20cvfwfaFqNbe9Fc3VEHJuPRxmn.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 12092,
+            "poster_url": "https://image.tmdb.org/t/p/w500/20cvfwfaFqNbe9Fc3VEHJuPRxmn.jpg"
+          },
+          {
+            "title": "Alice",
+            "year": 1988,
+            "slug": "Švankmajer's surreal stop-motion adaptation mixing live action with animation",
+            "poster": "https://image.tmdb.org/t/p/w500/3AY8Sd3XyhP7XWo8OnCMgKpg3XA.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 976732,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3AY8Sd3XyhP7XWo8OnCMgKpg3XA.jpg"
+          },
+          {
+            "title": "Alice Through the Looking Glass",
+            "year": 1998,
+            "slug": "Kate Beckinsale stars in this Channel 4 adaptation of Carroll's sequel",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "BritBox",
+            "tmdb_id": 15162
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The late 1990s saw a surge in ambitious television fantasy, with **Alice in Wonderland** (1999) joining productions like **Merlin** (1998) and **The 10th Kingdom** (2000). These productions pushed the boundaries of TV special effects while attempting more mature interpretations of classic fantasy material. Tina Majorino's Alice brought a modern sensibility to the role, while Ben Kingsley's Caterpillar and Martin Short's Mad Hatter offered fresh takes on iconic characters."
+      },
+      {
+        "type": "text",
+        "content": "The film's production design deserves special attention, creating a Wonderland that feels both familiar and unsettling. Nick Willing's direction draws from both Victorian aesthetics and contemporary fantasy films like <a href=\"/movie/34584\" class=\"movie-title\">The NeverEnding Story</a> (1984), creating a unique visual language that influenced later adaptations including Tim Burton's **Alice in Wonderland** (2010). SUBHEAD: The Evolution of Alice Adaptations"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The NeverEnding Story",
+            "year": 1984,
+            "slug": "German fantasy film about a boy who becomes part of a magical book's story",
+            "poster": "https://image.tmdb.org/t/p/w500/ddYCa91iDXfJCxaqSYzwi2fjfnl.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 34584,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ddYCa91iDXfJCxaqSYzwi2fjfnl.jpg"
+          },
+          {
+            "title": "Alice in Wonderland",
+            "year": 2010,
+            "slug": "Tim Burton's CGI-heavy reimagining starring Johnny Depp",
+            "poster": "https://image.tmdb.org/t/p/w500/o0kre9wRCZz3jjSjaru7QU0UtFz.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 12155,
+            "poster_url": "https://image.tmdb.org/t/p/w500/o0kre9wRCZz3jjSjaru7QU0UtFz.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The 1999 version stands as a crucial stepping stone between traditional and modern Alice adaptations. While earlier versions like **Alice's Adventures in Wonderland** (1972) relied purely on practical effects and theatrical staging, and later versions like **Alice in Wonderland** (2010) lean heavily on CGI, the 1999 adaptation finds a compelling middle ground. This balance would influence later fantasy television like **The Chronicles of Narnia** (1988) and **Gulliver's Travels** (1996)."
+      }
+    ],
+    "exploreFurther": [
+      "The evolution of practical vs. CGI effects in Alice adaptations",
+      "Victorian literature adaptations in late 1990s television",
+      "The influence of Jan Švankmajer on modern fantasy filmmaking",
+      "The changing portrayal of Alice across different decades",
+      "The impact of NBC's fantasy productions on modern TV"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Merlin",
+          "year": 1998,
+          "slug": "Sam Neill stars in this NBC Hallmark adaptation of Arthurian legend",
+          "poster": "https://image.tmdb.org/t/p/w500/rk3tKEnjUJdXq2nTrsz5ZC2sr4Z.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 689390,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rk3tKEnjUJdXq2nTrsz5ZC2sr4Z.jpg"
+        },
+        {
+          "title": "The 10th Kingdom",
+          "year": 2000,
+          "slug": "Epic fantasy miniseries about parallel fairy tale worlds",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Return to Oz",
+          "year": 1985,
+          "slug": "Dark sequel to Wizard of Oz with similar Wonderland themes",
+          "poster": "https://image.tmdb.org/t/p/w500/prd9KCTa12RDnKgyfR9hWHbMzBI.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 13155,
+          "poster_url": "https://image.tmdb.org/t/p/w500/prd9KCTa12RDnKgyfR9hWHbMzBI.jpg"
+        },
+        {
+          "title": "Labyrinth",
+          "year": 1986,
+          "slug": "Jim Henson fantasy featuring David Bowie and practical effects",
+          "poster": "https://image.tmdb.org/t/p/w500/hbSdA1DmNA9IlfVoqJkIWYF2oYm.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 13597,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hbSdA1DmNA9IlfVoqJkIWYF2oYm.jpg"
+        },
+        {
+          "title": "The Adventures of Baron Munchausen",
+          "year": 1988,
+          "slug": "Terry Gilliam's fantastical adventure",
+          "poster": "https://image.tmdb.org/t/p/w500/9fggcOUgYUxU1ZChI7tcf1CYO5a.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 14506,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9fggcOUgYUxU1ZChI7tcf1CYO5a.jpg"
+        },
+        {
+          "title": "MirrorMask",
+          "year": 2005,
+          "slug": "Neil Gaiman-penned fantasy with similar dream-logic narrative",
+          "poster": "https://image.tmdb.org/t/p/w500/itIJU3NKbdgScA1WPIxXzOlm0Uj.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 14517,
+          "poster_url": "https://image.tmdb.org/t/p/w500/itIJU3NKbdgScA1WPIxXzOlm0Uj.jpg"
+        },
+        {
+          "title": "Pan's Labyrinth",
+          "year": 2006,
+          "slug": "Dark fantasy exploring childhood imagination",
+          "poster": "https://image.tmdb.org/t/p/w500/s8C4whhKtDaJvMDcyiMvx3BIF5F.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 1417,
+          "poster_url": "https://image.tmdb.org/t/p/w500/s8C4whhKtDaJvMDcyiMvx3BIF5F.jpg"
+        },
+        {
+          "title": "Tideland",
+          "year": 2005,
+          "slug": "Terry Gilliam's dark take on Alice-like themes",
+          "poster": "https://image.tmdb.org/t/p/w500/mjCRfmxg7awp5kVIM1lHR0d7S4A.jpg",
+          "initialStreaming": "Pluto TV",
+          "tmdb_id": 11559,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mjCRfmxg7awp5kVIM1lHR0d7S4A.jpg"
+        },
+        {
+          "title": "The Imaginarium of Doctor Parnassus",
+          "year": 2009,
+          "slug": "Gilliam's modern fantasy with similar themes",
+          "poster": "https://image.tmdb.org/t/p/w500/DtrqQHa0wT9AWrk2WA9beROJJx.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 8054,
+          "poster_url": "https://image.tmdb.org/t/p/w500/DtrqQHa0wT9AWrk2WA9beROJJx.jpg"
+        },
+        {
+          "title": "The Fall",
+          "year": 2006,
+          "slug": "Visually stunning fantasy about storytelling",
+          "poster": "https://image.tmdb.org/t/p/w500/jUx4P4Q1VsQ07rLz7sOlSyNm4F3.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 14784,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jUx4P4Q1VsQ07rLz7sOlSyNm4F3.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

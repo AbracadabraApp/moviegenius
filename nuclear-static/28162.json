@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "A Matter of Life and Death",
+    "year": 1946,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/H74LWKnhOeIFSk9gNjBcPjIov3.jpg",
+    "initialStreaming": null,
+    "tmdbId": 28162,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**A Matter of Life and Death** (1946) stands as Powell and Pressburger's masterpiece of romantic fantasy, using revolutionary cinematography techniques to contrast earthly scenes in Technicolor with a monochrome afterlife. The film's groundbreaking visual effects, particularly the iconic moving stairway between heaven and earth, influenced countless films including **What Dreams May Come** (1998) and **Inception** (2010). The story of RAF pilot Peter Carter's appeal against death showcases British cinema at its most ambitious, blending romance, philosophy, and spectacular imagery."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Wings of Desire",
+            "year": 1987,
+            "slug": "Wim Wenders' poetic masterpiece about an angel who falls in love with a mortal and chooses to become human",
+            "poster": "https://image.tmdb.org/t/p/w500/iZQs2vUeCzvS1KfZJ6uYNCGJBBV.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 144,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iZQs2vUeCzvS1KfZJ6uYNCGJBBV.jpg"
+          },
+          {
+            "title": "Orphée",
+            "year": 1950,
+            "slug": "Jean Cocteau's surreal interpretation of the Orpheus myth, featuring innovative special effects and dreamlike passages between life and death",
+            "poster": "https://image.tmdb.org/t/p/w500/wcUmMtipWBBx7lpsfpPsUM4Snh1.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 4558,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wcUmMtipWBBx7lpsfpPsUM4Snh1.jpg"
+          },
+          {
+            "title": "The Seventh Seal",
+            "year": 1957,
+            "slug": "Bergman's medieval allegory where a knight plays chess with Death, exploring mortality and faith",
+            "poster": "https://image.tmdb.org/t/p/w500/wcZ21zrOsy0b52AfAF50XpTiv75.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 490,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wcZ21zrOsy0b52AfAF50XpTiv75.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence on depicting the afterlife reverberates through cinema history. **Defending Your Life** (1991) borrowed its celestial courtroom concept, while **Heaven Can Wait** (1978) echoed its blend of romance and supernatural bureaucracy. The stark visual contrast between worlds - Technicolor for Earth, monochrome for Heaven - established a visual language for parallel realms that influenced everything from **The Wizard of Oz** (1939) to **Pleasantville** (1998). SUBHEAD: Technical Innovation and Visual Legacy"
+      },
+      {
+        "type": "text",
+        "content": "The film's technical achievements were revolutionary for 1946. Jack Cardiff's cinematography, particularly the \"camera obscura\" effect in the operating theater sequence, influenced later films like **2001: A Space Odyssey** (1968) and **Tree of Life** (2011). The massive moving staircase sequence required the largest set ever built in Britain at the time, predating similar grand celestial designs in films like **Stairway to Heaven** (1977) and **Meet Joe Black** (1998)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Special Effects in 1940s British Cinema",
+      "Powell and Pressburger's Color Theory and Visual Storytelling",
+      "The Impact of World War II on British Fantasy Films",
+      "Representations of Heaven in Cinema History",
+      "The Influence of Jack Cardiff's Cinematography"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Here Comes Mr. Jordan",
+          "year": 1941,
+          "slug": "The original celestial bureaucracy comedy that influenced afterlife films",
+          "poster": "https://image.tmdb.org/t/p/w500/k6gmIV3hTSCG2JBh2zPMLogZ5y3.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 38914,
+          "poster_url": "https://image.tmdb.org/t/p/w500/k6gmIV3hTSCG2JBh2zPMLogZ5y3.jpg"
+        },
+        {
+          "title": "It's a Wonderful Life",
+          "year": 1946,
+          "slug": "Capra's holiday classic about divine intervention and second chances",
+          "poster": "https://image.tmdb.org/t/p/w500/bSqt9rhDZx1Q7UZ86dBPKdNomp2.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 1585,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bSqt9rhDZx1Q7UZ86dBPKdNomp2.jpg"
+        },
+        {
+          "title": "The Life and Death of Colonel Blimp",
+          "year": 1943,
+          "slug": "Another Powell & Pressburger masterpiece exploring time and mortality",
+          "poster": "https://image.tmdb.org/t/p/w500/kgyd5uyndsXiLYKlVgH0sm7Jfkv.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 25037,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kgyd5uyndsXiLYKlVgH0sm7Jfkv.jpg"
+        },
+        {
+          "title": "After Life",
+          "year": 1998,
+          "slug": "Japanese meditation on memory and mortality in the afterlife",
+          "poster": "https://image.tmdb.org/t/p/w500/bs2M1hqAQl5LeAOPPRV4drwouZS.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 17962,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bs2M1hqAQl5LeAOPPRV4drwouZS.jpg"
+        },
+        {
+          "title": "Portrait of Jennie",
+          "year": 1948,
+          "slug": "Romantic fantasy with innovative visual effects",
+          "poster": "https://image.tmdb.org/t/p/w500/AuZVFoCOxKKwC6eKWol4NkAFpWi.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 32558,
+          "poster_url": "https://image.tmdb.org/t/p/w500/AuZVFoCOxKKwC6eKWol4NkAFpWi.jpg"
+        },
+        {
+          "title": "Stairway to Heaven",
+          "year": 1977,
+          "slug": "Led Zeppelin concert film influenced by the celestial staircase imagery",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "What Dreams May Come",
+          "year": 1998,
+          "slug": "Robin Williams traverses a painted afterlife to find his wife",
+          "poster": "https://image.tmdb.org/t/p/w500/2gUfJKfJ6LwdqQebiAWuNzIWyp9.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 12159,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2gUfJKfJ6LwdqQebiAWuNzIWyp9.jpg"
+        },
+        {
+          "title": "The Lovely Bones",
+          "year": 2009,
+          "slug": "Peter Jackson's visually striking afterlife fantasy",
+          "poster": "https://image.tmdb.org/t/p/w500/sn0iDphRxQ7I6aLd9igIgACITak.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 7980,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sn0iDphRxQ7I6aLd9igIgACITak.jpg"
+        },
+        {
+          "title": "Ghost",
+          "year": 1990,
+          "slug": "Romantic supernatural drama with innovative special effects",
+          "poster": "https://image.tmdb.org/t/p/w500/w9RaPHov8oM5cnzeE27isnFMsvS.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 251,
+          "poster_url": "https://image.tmdb.org/t/p/w500/w9RaPHov8oM5cnzeE27isnFMsvS.jpg"
+        },
+        {
+          "title": "Made in Heaven",
+          "year": 1987,
+          "slug": "Romance that spans heaven and earth",
+          "poster": "https://image.tmdb.org/t/p/w500/4UKsIsGLNckAQyoF9VlHM07GmVs.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 42010,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4UKsIsGLNckAQyoF9VlHM07GmVs.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

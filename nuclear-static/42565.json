@@ -1,0 +1,169 @@
+{
+  "props": {
+    "title": "Underworld",
+    "year": 1927,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/6ZjgbeCwS7sipil1J221lbjaqGG.jpg",
+    "initialStreaming": null,
+    "tmdbId": 42565,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Underworld** (1927) revolutionized the gangster film genre, establishing conventions that would influence decades of crime cinema. Director Josef von Sternberg crafted a gritty yet stylish portrayal of Chicago's criminal underbelly, following gang leader Bull Weed (George Bancroft) in a story of loyalty, betrayal and urban violence. The film's atmospheric use of shadows, dramatic lighting, and elaborate set pieces created a visual template that directly shaped later noir classics like **The Public Enemy** (1931) and **Little Caesar** (1931). Its success proved audiences had an appetite for morally complex criminal protagonists."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Scarface",
+            "year": 1932,
+            "slug": "Howard Hawks' violent gangster epic follows Tony Camonte's ruthless rise to power, heavily influenced by Underworld's template",
+            "poster": "https://image.tmdb.org/t/p/w500/y4E5oRiHMTFkEB12IIcpbKbKzDW.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 877,
+            "poster_url": "https://image.tmdb.org/t/p/w500/y4E5oRiHMTFkEB12IIcpbKbKzDW.jpg"
+          },
+          {
+            "title": "The Racket",
+            "year": 1928,
+            "slug": "Another early gangster film riding Underworld's success, featuring a crusading police captain against organized crime",
+            "poster": "https://image.tmdb.org/t/p/w500/d0hkMBqYOo4DIdjlUyhBvNI0kJU.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 27777,
+            "poster_url": "https://image.tmdb.org/t/p/w500/d0hkMBqYOo4DIdjlUyhBvNI0kJU.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Von Sternberg's innovative visual style in **Underworld** (1927) merged German Expressionist techniques with American urban realism. His use of canted angles, silhouettes, and atmospheric fog created a dreamlike criminal underworld that influenced film noir's signature look. The film's sophisticated editing and mobile camera work were revolutionary for late silent cinema, establishing techniques that directors like William Wellman would build upon in **The Public Enemy** (1931)."
+      },
+      {
+        "type": "text",
+        "content": "The film's impact extended beyond technical innovation. Its complex characterization of criminals as tragic anti-heroes rather than simple villains created a template followed by countless crime films. This moral ambiguity appears in everything from **White Heat** (1949) to **The Godfather** (1972), tracing directly back to Bull Weed's compelling mix of brutality and honor. SUBHEAD: Impact on Film Noir Development"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "City Streets",
+            "year": 1931,
+            "slug": "Early talkie gangster film directed by Rouben Mamoulian that builds on Underworld's visual style",
+            "poster": "https://image.tmdb.org/t/p/w500/1P2FKo5AgmdIA7ifosxTo8UosED.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 29745,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1P2FKo5AgmdIA7ifosxTo8UosED.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While **Underworld** (1927) predates classic noir by over a decade, its DNA is evident throughout the genre. The film's exploration of urban corruption, doomed romance, and moral compromise established thematic concerns that would become noir staples. Its visual style - particularly the use of shadows and unconventional angles - directly influenced noir cinematography, visible in classics like **Double Indemnity** (1944) and **The Killers** (1946)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Gangster Film Conventions from Silent Era to Sound",
+      "Josef von Sternberg's Visual Style and Its Influence on Film Noir",
+      "German Expressionism's Impact on American Crime Films",
+      "The Development of Anti-Hero Characters in Crime Cinema",
+      "Chicago as a Setting in Early Gangster Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Last Command",
+          "year": 1928,
+          "slug": "Von Sternberg's follow-up exploring power and identity",
+          "poster": "https://image.tmdb.org/t/p/w500/uKb5bFIwEzDtT3km99lqQBGNFCx.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 52679,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uKb5bFIwEzDtT3km99lqQBGNFCx.jpg"
+        },
+        {
+          "title": "The Docks of New York",
+          "year": 1928,
+          "slug": "Another von Sternberg silent masterpiece with similar visual style",
+          "poster": "https://image.tmdb.org/t/p/w500/rCMZpfPAHeuy02nMCttEX3OJt4B.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 885,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rCMZpfPAHeuy02nMCttEX3OJt4B.jpg"
+        },
+        {
+          "title": "The Dragnet",
+          "year": 1928,
+          "slug": "Lost film that was a direct follow-up to Underworld's success",
+          "poster": "https://image.tmdb.org/t/p/w500/yrOojQVqRNIfnQj6dtN8lh02KiA.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 423732,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yrOojQVqRNIfnQj6dtN8lh02KiA.jpg"
+        },
+        {
+          "title": "Little Caesar",
+          "year": 1931,
+          "slug": "Early talkie gangster film heavily influenced by Underworld",
+          "poster": "https://image.tmdb.org/t/p/w500/1K3Q1tAHHA5Sdtja2pPALBQevA7.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 27899,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1K3Q1tAHHA5Sdtja2pPALBQevA7.jpg"
+        },
+        {
+          "title": "The Public Enemy",
+          "year": 1931,
+          "slug": "James Cagney's breakthrough gangster role following Underworld's template",
+          "poster": "https://image.tmdb.org/t/p/w500/vVxdaRMprQO2DM4AFyJ6C4qZSFO.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 17687,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vVxdaRMprQO2DM4AFyJ6C4qZSFO.jpg"
+        },
+        {
+          "title": "Scarface: The Shame of a Nation",
+          "year": 1932,
+          "slug": "Howard Hawks' violent gangster epic",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 877
+        },
+        {
+          "title": "Manhattan Melodrama",
+          "year": 1934,
+          "slug": "Crime film showing Underworld's continued influence",
+          "poster": "https://image.tmdb.org/t/p/w500/gAuBeXANJ0NhlQY7kmas63dFMz7.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 28564,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gAuBeXANJ0NhlQY7kmas63dFMz7.jpg"
+        },
+        {
+          "title": "Angels with Dirty Faces",
+          "year": 1938,
+          "slug": "Classic gangster film building on established conventions",
+          "poster": "https://image.tmdb.org/t/p/w500/k23E4UAcow8eczLRmVCMdukL4Mx.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 13696,
+          "poster_url": "https://image.tmdb.org/t/p/w500/k23E4UAcow8eczLRmVCMdukL4Mx.jpg"
+        },
+        {
+          "title": "High Sierra",
+          "year": 1941,
+          "slug": "Humphrey Bogart crime drama showing evolution of genre",
+          "poster": "https://image.tmdb.org/t/p/w500/fkP6yy25Wja6Sn3AIlZ4F1BWsy0.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 27725,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fkP6yy25Wja6Sn3AIlZ4F1BWsy0.jpg"
+        },
+        {
+          "title": "The Big Heat",
+          "year": 1953,
+          "slug": "Film noir showing lasting impact of Underworld's style",
+          "poster": "https://image.tmdb.org/t/p/w500/n1xdAX2g6PU3aqQXmZtY9gXvvEz.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 14580,
+          "poster_url": "https://image.tmdb.org/t/p/w500/n1xdAX2g6PU3aqQXmZtY9gXvvEz.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

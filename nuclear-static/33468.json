@@ -1,0 +1,153 @@
+{
+  "props": {
+    "title": "The Brain That Wouldn't Die",
+    "year": 1962,
+    "initialSlug": "A Brain Beyond Humanity",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/npg6NH4maZ4NTTWzA71KNCTvQNG.jpg",
+    "initialStreaming": null,
+    "tmdbId": 33468,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Brain That Wouldn't Die** (1962) stands as a delightfully deranged entry in the mad scientist subgenre, following directly in the footsteps of <a href=\"/movie/3035\" class=\"movie-title\">Frankenstein</a> (1931) but with a decidedly sleazier B-movie edge. Director Joseph Green crafted this exploitation gem during the golden age of drive-in horror, when films like **The Thing from Another World** (1951) and **Fiend Without a Face** (1958) were pushing boundaries with grotesque practical effects. The film's premise - a surgeon keeping his decapitated fiancée's head alive while hunting for a new body - exemplifies the atomic age's anxieties about medical ethics and scientific hubris."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Re-Animator",
+            "year": 1985,
+            "slug": "A modern spiritual successor featuring a glowing green serum that reanimates the dead, with Jeffrey Combs as the perfectly unhinged Dr. Herbert West",
+            "poster": "https://image.tmdb.org/t/p/w500/1hY6AUl92cL9GdZx031UWFiGETt.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 1694,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1hY6AUl92cL9GdZx031UWFiGETt.jpg"
+          },
+          {
+            "title": "Eyes Without a Face",
+            "year": 1960,
+            "slug": "French horror masterpiece about a surgeon trying to restore his daughter's disfigured face through facial transplants",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 31417
+          },
+          {
+            "title": "Frankenstein",
+            "year": 1931,
+            "slug": "The original mad scientist tale that established many genre tropes, with Colin Clive's iconic \"It's alive!\" performance",
+            "poster": "https://image.tmdb.org/t/p/w500/mu6wHwH0IwCCaEYtpqujuPJYat1.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 3035,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mu6wHwH0IwCCaEYtpqujuPJYat1.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's practical effects, while crude by today's standards, showcase the ingenuity of low-budget horror filmmaking in the early 1960s. Like **The Tingler** (1959) and **House on Haunted Hill** (1959), it relies heavily on theatrical staging and practical gore effects that would influence later body horror classics like **The Fly** (1986) and **From Beyond** (1986). The film's infamous \"thing in the closet\" sequence demonstrates how suggestion and sound design could create genuine horror even on a shoestring budget. SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "text",
+        "content": "While often dismissed as mere schlock, **The Brain That Wouldn't Die** (1962) helped establish tropes that would become horror staples. Its blend of science fiction and body horror anticipated films like **The Head** (1959) and **They Saved Hitler's Brain** (1968), while its themes of scientific obsession and preservation of life at any cost echo through modern works like **Get Out** (2017) and **Ex Machina** (2014). The film's exploitation elements and practical effects would later influence directors like Stuart Gordon and David Cronenberg in their explorations of body horror."
+      }
+    ],
+    "exploreFurther": [
+      "Mad Scientist Films of the 1950s-60s: Evolution of a Horror Subgenre",
+      "Practical Effects in Low-Budget Horror: From Brain to Re-Animator",
+      "Body Horror's Evolution: Medical Ethics in Genre Cinema",
+      "Virginia Leith: The Head That Wouldn't Die and Her Career",
+      "Drive-In Horror: The Golden Age of B-Movie Science Fiction"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Mad Love",
+          "year": 1935,
+          "slug": "Peter Lorre stars as a surgeon who transplants a murderer's hands onto a pianist",
+          "poster": "https://image.tmdb.org/t/p/w500/lDD8pKd6jSrFLV3RvE0eDGGGxR0.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 28261,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lDD8pKd6jSrFLV3RvE0eDGGGxR0.jpg"
+        },
+        {
+          "title": "The Colossus of New York",
+          "year": 1958,
+          "slug": "A scientist preserves his son's brain in a robotic body",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 56767
+        },
+        {
+          "title": "Donovan's Brain",
+          "year": 1953,
+          "slug": "A scientist keeps a millionaire's brain alive in a tank, with unexpected consequences",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 43342
+        },
+        {
+          "title": "The Man With Two Brains",
+          "year": 1983,
+          "slug": "Steve Martin comedy that parodies brain preservation films",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 11591
+        },
+        {
+          "title": "From Beyond",
+          "year": 1986,
+          "slug": "Lovecraftian tale of scientific experiments gone wrong",
+          "poster": "https://image.tmdb.org/t/p/w500/yNTsbRrkoi4KrCyQg4fRujggfvd.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 14510,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yNTsbRrkoi4KrCyQg4fRujggfvd.jpg"
+        },
+        {
+          "title": "The Head",
+          "year": 1959,
+          "slug": "German horror about a mad doctor keeping a severed head alive",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Fiend Without a Face",
+          "year": 1958,
+          "slug": "Invisible brain creatures terrorize a military base",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 29347
+        },
+        {
+          "title": "The Brain",
+          "year": 1988,
+          "slug": "Parasitic brain creature controls minds through television",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Brain Eaters",
+          "year": 1958,
+          "slug": "Parasitic creatures take over human hosts in small-town America",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 52204
+        },
+        {
+          "title": "X: The Man with the X-Ray Eyes",
+          "year": 1963,
+          "slug": "Scientific experimentation leads to horrifying consequences",
+          "poster": "https://image.tmdb.org/t/p/w500/7YMk1mtTsGYPBC8zj2Kd3K6h3g3.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 32569,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7YMk1mtTsGYPBC8zj2Kd3K6h3g3.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

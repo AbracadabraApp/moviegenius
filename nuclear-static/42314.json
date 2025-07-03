@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "Looking for Richard",
+    "year": 1996,
+    "initialSlug": "Al Pacino dissects Shakespeare's Richard III",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/qAYYZzO6q7prlt6bmIvqOOwKsXi.jpg",
+    "initialStreaming": null,
+    "tmdbId": 42314,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Al Pacino's directorial debut **Looking for Richard** (1996) revolutionized Shakespeare on screen by demystifying **Richard III** through a documentary-style exploration. Pacino brilliantly interweaves rehearsals, street interviews, scholarly discussions, and performed scenes to crack open both the play's complexity and its enduring relevance. This meta-theatrical approach influenced later Shakespeare adaptations like **Shakespeare Behind Bars** (2005) and Michael Almereyda's **Hamlet** (2000), showing how classical texts can be made accessible through contemporary framing."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Richard III",
+            "year": 1955,
+            "slug": "Laurence Olivier's definitive take on Shakespeare's villain, filmed in VistaVision with theatrical grandeur",
+            "poster": "https://image.tmdb.org/t/p/w500/3zp2Kg5bvlFkKmWiQLmuWQAIEgG.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 43323,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3zp2Kg5bvlFkKmWiQLmuWQAIEgG.jpg"
+          },
+          {
+            "title": "Richard III",
+            "year": 1995,
+            "slug": "Ian McKellen's fascist-era adaptation sets the play in 1930s Britain with stunning results",
+            "poster": "https://image.tmdb.org/t/p/w500/aN2BcIH6rvGbYiRQCS8lxOdeeVQ.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 31174,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aN2BcIH6rvGbYiRQCS8lxOdeeVQ.jpg"
+          },
+          {
+            "title": "Throne of Blood",
+            "year": 1957,
+            "slug": "Kurosawa transposes Macbeth to feudal Japan in this haunting masterpiece",
+            "poster": "https://image.tmdb.org/t/p/w500/5NdGZpoInkf4wBInNpry6JAjQ3D.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 3777,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5NdGZpoInkf4wBInNpry6JAjQ3D.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Looking for Richard sparked a wave of experimental Shakespeare films in the 1990s and 2000s. **Titus** (1999) with Anthony Hopkins brought ultra-stylized violence and modern imagery to Titus Andronicus, while **O** (2001) boldly reimagined Othello in an American high school. **My Own Private Idaho** (1991) had already proven Shakespeare's plots could work in contemporary settings by weaving Henry IV into a story of street hustlers. SUBHEAD: Breaking Down the Bard"
+      },
+      {
+        "type": "text",
+        "content": "The genius of Looking for Richard lies in how it democratizes Shakespeare through multiple entry points. Like **Shakespeare in Love** (1998) and **Anonymous** (2011), it examines the cultural context around the plays. But Pacino goes further by showing actors grappling with the text in real-time, similar to the behind-the-scenes revelations in **Al Pacino: King Lear** (2020). His street interviews with everyday New Yorkers about Shakespeare parallel the groundbreaking accessibility of Baz Luhrmann's **Romeo + Juliet** (1996)."
+      }
+    ],
+    "exploreFurther": [
+      "The evolution of Shakespeare adaptations from traditional to experimental",
+      "Al Pacino's career transition from actor to director",
+      "Documentary techniques in narrative filmmaking",
+      "Making classical texts relevant for modern audiences",
+      "The influence of meta-theatrical approaches in cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Henry V",
+          "year": 1989,
+          "slug": "Kenneth Branagh's gritty, mud-and-blood take on Shakespeare's history",
+          "poster": "https://image.tmdb.org/t/p/w500/w9R2HsYNnfF3m9uEo2UAmPNJr8a.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 10705,
+          "poster_url": "https://image.tmdb.org/t/p/w500/w9R2HsYNnfF3m9uEo2UAmPNJr8a.jpg"
+        },
+        {
+          "title": "Much Ado About Nothing",
+          "year": 1993,
+          "slug": "Star-studded romantic comedy proves Shakespeare can be light and accessible",
+          "poster": "https://image.tmdb.org/t/p/w500/tvltGP6vYOkHdURag0jPSjhPUAV.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 11971,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tvltGP6vYOkHdURag0jPSjhPUAV.jpg"
+        },
+        {
+          "title": "Ran",
+          "year": 1985,
+          "slug": "Kurosawa's epic King Lear adaptation set in feudal Japan",
+          "poster": "https://image.tmdb.org/t/p/w500/iYQcDhuHrdPOHLUUxXaFChFrc97.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 11645,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iYQcDhuHrdPOHLUUxXaFChFrc97.jpg"
+        },
+        {
+          "title": "10 Things I Hate About You",
+          "year": 1999,
+          "slug": "The Taming of the Shrew gets a smart teen comedy makeover",
+          "poster": "https://image.tmdb.org/t/p/w500/ujERk3aKABXU3NDXOAxEQYTHe9A.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 4951,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ujERk3aKABXU3NDXOAxEQYTHe9A.jpg"
+        },
+        {
+          "title": "Prospero's Books",
+          "year": 1991,
+          "slug": "Peter Greenaway's avant-garde take on The Tempest",
+          "poster": "https://image.tmdb.org/t/p/w500/g2Wj7gaGO8gqwTwabfm1FzzdxbT.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 5048,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g2Wj7gaGO8gqwTwabfm1FzzdxbT.jpg"
+        },
+        {
+          "title": "The Merchant of Venice",
+          "year": 2004,
+          "slug": "Al Pacino returns to Shakespeare as Shylock in this faithful adaptation",
+          "poster": "https://image.tmdb.org/t/p/w500/bvpPg5oTD1qT7hjY3BOsoniYdHG.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 11162,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bvpPg5oTD1qT7hjY3BOsoniYdHG.jpg"
+        },
+        {
+          "title": "Julius Caesar",
+          "year": 1953,
+          "slug": "Marlon Brando leads an all-star cast in this Roman tragedy",
+          "poster": "https://image.tmdb.org/t/p/w500/8yWqzGhBso1Gtpc1tcLclmcmF2B.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 18019,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8yWqzGhBso1Gtpc1tcLclmcmF2B.jpg"
+        },
+        {
+          "title": "Chimes at Midnight",
+          "year": 1965,
+          "slug": "Orson Welles combines Henry IV parts 1 & 2 into a Falstaff-centered masterpiece",
+          "poster": "https://image.tmdb.org/t/p/w500/5Fjxyz3u2Zdco4WeuC3wQ6O5tYQ.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 986,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5Fjxyz3u2Zdco4WeuC3wQ6O5tYQ.jpg"
+        },
+        {
+          "title": "Scotland, PA",
+          "year": 2001,
+          "slug": "Macbeth reimagined in a 1970s fast-food restaurant",
+          "poster": "https://image.tmdb.org/t/p/w500/xIN1jHBsuJjELaxsX37tWwWZdi1.jpg",
+          "initialStreaming": "Pluto",
+          "tmdb_id": 27593,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xIN1jHBsuJjELaxsX37tWwWZdi1.jpg"
+        },
+        {
+          "title": "She's the Man",
+          "year": 2006,
+          "slug": "Twelfth Night gets a teen comedy treatment with Amanda Bynes",
+          "poster": "https://image.tmdb.org/t/p/w500/ms9vdHyBLgAj0txnMWI9djGpDGp.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9655,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ms9vdHyBLgAj0txnMWI9djGpDGp.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

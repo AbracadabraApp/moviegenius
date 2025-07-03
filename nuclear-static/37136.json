@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "The Naked Gun: From the Files of Police Squad!",
+    "year": 1988,
+    "initialSlug": "Crime has never been this bare.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/zT0mhZqZQJE1gSY5Eg9qcGP4NYo.jpg",
+    "initialStreaming": null,
+    "tmdbId": 37136,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Naked Gun** (1988) revolutionized spoof comedy by perfecting the rapid-fire gag approach pioneered in **Airplane!** (1980). Leslie Nielsen's deadpan portrayal of Lt. Frank Drebin transformed him from dramatic actor to comedy legend, following his scene-stealing turn in Airplane! The film's relentless pace throws dozens of visual puns, slapstick sequences, and absurdist dialogue at viewers, creating a masterclass in comedic density. Directors Zucker, Abrahams, and Zucker (ZAZ) built on their experience from their short-lived series **Police Squad!** (1982), expanding their trademark style while maintaining the perfect balance of smart wordplay and broad physical comedy."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Top Secret!",
+            "year": 1984,
+            "slug": "ZAZ team's spy movie spoof starring Val Kilmer as a rock star caught in international intrigue",
+            "poster": "https://image.tmdb.org/t/p/w500/hRTbfR27xghnVMs3ZJ3EhK3zzud.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 8764,
+            "poster_url": "https://image.tmdb.org/t/p/w500/hRTbfR27xghnVMs3ZJ3EhK3zzud.jpg"
+          },
+          {
+            "title": "Hot Shots!",
+            "year": 1991,
+            "slug": "Charlie Sheen leads this Top Gun parody from Naked Gun writer Pat Proft",
+            "poster": "https://image.tmdb.org/t/p/w500/koLIB5263emHxewmwgBBK26vjeS.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 9595,
+            "poster_url": "https://image.tmdb.org/t/p/w500/koLIB5263emHxewmwgBBK26vjeS.jpg"
+          },
+          {
+            "title": "Police Academy",
+            "year": 1984,
+            "slug": "Slapstick comedy about misfit police recruits that spawned multiple sequels",
+            "poster": "https://image.tmdb.org/t/p/w500/m5a1U549gokC1kxsqgQoRb6XpFg.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 9336,
+            "poster_url": "https://image.tmdb.org/t/p/w500/m5a1U549gokC1kxsqgQoRb6XpFg.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends far beyond its immediate sequels. Its DNA can be found in everything from **Dumb and Dumber** (1994) to **Anchorman: The Legend of Ron Burgundy** (2004), which borrowed its combination of character-driven humor and surreal sight gags. The movie's approach to parody - treating ridiculous situations with complete seriousness - created a template for modern comedy that values commitment to the bit over winking at the audience. SUBHEAD: The Art of the Spoof"
+      },
+      {
+        "type": "text",
+        "content": "While many imitators focused on simple reference humor, The Naked Gun succeeded by building jokes through careful setup and payoff. The baseball sequence finale demonstrates this perfectly, layering visual gags, character-based humor, and plot resolution into a crescendo of comedy. This sophisticated approach influenced later works like **Hot Fuzz** (2007) and **Black Dynamite** (2009), which similarly elevated their genre parodies through meticulous craftsmanship."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Spoof Comedy: From Mel Brooks to ZAZ",
+      "Leslie Nielsen's Career Transformation: From Drama to Comedy",
+      "The Legacy of Police Squad! and Its Translation to Film",
+      "Visual Comedy Techniques in The Naked Gun",
+      "The Impact of ZAZ on Modern Comedy Filmmaking"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Airplane!",
+          "year": 1980,
+          "slug": "The disaster movie spoof that launched the ZAZ style",
+          "poster": "https://image.tmdb.org/t/p/w500/7Q3efxd3AF1vQjlSxnlerSA7RzN.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 813,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7Q3efxd3AF1vQjlSxnlerSA7RzN.jpg"
+        },
+        {
+          "title": "Blazing Saddles",
+          "year": 1974,
+          "slug": "Mel Brooks' groundbreaking Western parody",
+          "poster": "https://image.tmdb.org/t/p/w500/vNw1gOEDdYTDeNMuuq8OmiEHrfH.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 11072,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vNw1gOEDdYTDeNMuuq8OmiEHrfH.jpg"
+        },
+        {
+          "title": "Spy Hard",
+          "year": 1996,
+          "slug": "Leslie Nielsen spoofs James Bond-style spy films",
+          "poster": "https://image.tmdb.org/t/p/w500/yoegp9XEG4YCbJJKR0wvm0BGYpG.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 10535,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yoegp9XEG4YCbJJKR0wvm0BGYpG.jpg"
+        },
+        {
+          "title": "Robin Hood: Men in Tights",
+          "year": 1993,
+          "slug": "Medieval adventure gets the Mel Brooks treatment",
+          "poster": "https://image.tmdb.org/t/p/w500/woexOLEkUlYsPLLuZRK6LjZaF38.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 8005,
+          "poster_url": "https://image.tmdb.org/t/p/w500/woexOLEkUlYsPLLuZRK6LjZaF38.jpg"
+        },
+        {
+          "title": "Austin Powers: International Man of Mystery",
+          "year": 1997,
+          "slug": "Mike Myers' loving spoof of 60s spy films",
+          "poster": "https://image.tmdb.org/t/p/w500/cCrwSLofFvxIKxiM7m0l2s1uKt2.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 816,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cCrwSLofFvxIKxiM7m0l2s1uKt2.jpg"
+        },
+        {
+          "title": "Not Another Teen Movie",
+          "year": 2001,
+          "slug": "Sharp parody of 80s/90s high school films",
+          "poster": "https://image.tmdb.org/t/p/w500/9ZaGxvj1mqdKVLpSloq4mzS7SK6.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 11397,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9ZaGxvj1mqdKVLpSloq4mzS7SK6.jpg"
+        },
+        {
+          "title": "Walk Hard: The Dewey Cox Story",
+          "year": 2007,
+          "slug": "Pitch-perfect mockery of music biopics",
+          "poster": "https://image.tmdb.org/t/p/w500/Aa1IQ4Cuin3d7qIahvPheMmR4E5.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 6575,
+          "poster_url": "https://image.tmdb.org/t/p/w500/Aa1IQ4Cuin3d7qIahvPheMmR4E5.jpg"
+        },
+        {
+          "title": "MacGruber",
+          "year": 2010,
+          "slug": "SNL sketch becomes full action movie spoof",
+          "poster": "https://image.tmdb.org/t/p/w500/4WrSz0dRfq6XwJUQlYvzuhJq8hR.jpg",
+          "initialStreaming": "Peacock",
+          "tmdb_id": 37931,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4WrSz0dRfq6XwJUQlYvzuhJq8hR.jpg"
+        },
+        {
+          "title": "They Came Together",
+          "year": 2014,
+          "slug": "Rom-com parody with Paul Rudd and Amy Poehler",
+          "poster": "https://image.tmdb.org/t/p/w500/ifvKTtvmPYOGed2hP9ogPq98In7.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 180296,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ifvKTtvmPYOGed2hP9ogPq98In7.jpg"
+        },
+        {
+          "title": "A Touch of Cloth",
+          "year": 2012,
+          "slug": "British police procedural spoof series",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

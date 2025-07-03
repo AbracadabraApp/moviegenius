@@ -1,0 +1,159 @@
+{
+  "props": {
+    "title": "Victory at Entebbe",
+    "year": 1976,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/bBa8AZkQTjhf9gLk8yzoEbQg9eI.jpg",
+    "initialStreaming": null,
+    "tmdbId": 30673,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Victory at Entebbe** (1976) launched a wave of urgent, ripped-from-the-headlines terrorism films that included <a href=\"/movie/31690\" class=\"movie-title\">Raid on Entebbe</a> (1977) and <a href=\"/movie/26113\" class=\"movie-title\">Operation Thunderbolt</a> (1977). All three films dramatized Israel's daring July 1976 rescue mission of hijacked Air France passengers held at Uganda's Entebbe Airport. The made-for-TV **Victory at Entebbe** got there first, rushing to air within months of the actual events with an all-star cast including Anthony Hopkins, Burt Lancaster, and Elizabeth Taylor. The film established the template for dramatizing modern counter-terrorism operations that influenced later films like **Munich** (2005) and **Zero Dark Thirty** (2012)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Victory at Entebbe",
+            "year": 1976,
+            "slug": "Star-studded TV movie about Israel's rescue of hijacked airline passengers in Uganda, featuring Anthony Hopkins and Elizabeth Taylor",
+            "poster": "https://image.tmdb.org/t/p/w500/bBa8AZkQTjhf9gLk8yzoEbQg9eI.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 30673,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bBa8AZkQTjhf9gLk8yzoEbQg9eI.jpg"
+          },
+          {
+            "title": "Raid on Entebbe",
+            "year": 1977,
+            "slug": "Charles Bronson leads Israeli commandos in this detailed account of the Entebbe rescue mission",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 31690
+          },
+          {
+            "title": "Operation Thunderbolt",
+            "year": 1977,
+            "slug": "Israeli production focusing on military planning of the Entebbe raid, starring Klaus Kinski",
+            "poster": "https://image.tmdb.org/t/p/w500/qUJIINnuvIrffm5kZYzJf7sjdaL.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 26113,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qUJIINnuvIrffm5kZYzJf7sjdaL.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The rush to dramatize Entebbe sparked a unique moment where three major productions tackled the same events from different angles. While **Victory at Entebbe** (1976) emphasized the hostage drama and international diplomacy, <a href=\"/movie/31690\" class=\"movie-title\">Raid on Entebbe</a> (1977) focused more on military tactics, and <a href=\"/movie/26113\" class=\"movie-title\">Operation Thunderbolt</a> (1977) provided the Israeli perspective. This multi-lens approach to a single incident presaged how modern events like the hunt for Bin Laden would be depicted across films like **Zero Dark Thirty** (2012), **SEAL Team Six** (2012) and **Code Name: Geronimo** (2012). SUBHEAD: Evolution of Aviation Terrorism Films"
+      },
+      {
+        "type": "text",
+        "content": "The Entebbe films marked a crucial shift in how terrorism was portrayed on screen. Earlier hijacking films like **Skyjacked** (1972) treated air piracy more like traditional crime dramas. Post-Entebbe, films like **Delta Force** (1986) and **Executive Decision** (1996) emphasized the political and military response to terrorism. This evolution culminated in post-9/11 films like **United 93** (2006) and **Flight 93** (2006), which like the Entebbe trilogy, offered different perspectives on the same tragic events."
+      }
+    ],
+    "exploreFurther": [
+      "The Real Operation Entebbe: How Israeli intelligence gathered crucial details about the airport layout and Ugandan military positions",
+      "Made-for-TV Movies of the 1970s: How networks rapidly produced \"instant history\" films about current events",
+      "Multiple Perspectives: Comparing how different films depicted the same historical event",
+      "The Evolution of Counter-Terrorism Films: From Entebbe to Zero Dark Thirty",
+      "Israel's Military Operations on Film: How Israeli cinema portrays actual military missions"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Black Sunday",
+          "year": 1977,
+          "slug": "Terrorists plot to attack the Super Bowl using a Goodyear blimp",
+          "poster": "https://image.tmdb.org/t/p/w500/4rMXQICfFEsSGHCjh3bJj7K33sZ.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 50374,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4rMXQICfFEsSGHCjh3bJj7K33sZ.jpg"
+        },
+        {
+          "title": "Munich",
+          "year": 2005,
+          "slug": "Spielberg's account of Israel's revenge mission after the 1972 Olympics",
+          "poster": "https://image.tmdb.org/t/p/w500/iUekaw96QLInZpsNwRTlRKrZgwm.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 612,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iUekaw96QLInZpsNwRTlRKrZgwm.jpg"
+        },
+        {
+          "title": "The Delta Force",
+          "year": 1986,
+          "slug": "Chuck Norris leads elite unit to rescue hijacked airplane passengers",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 16113
+        },
+        {
+          "title": "Air Force One",
+          "year": 1997,
+          "slug": "President fights terrorists who hijack Air Force One",
+          "poster": "https://image.tmdb.org/t/p/w500/juRFEbyx5JlNuYrZM50vcZmtN78.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9772,
+          "poster_url": "https://image.tmdb.org/t/p/w500/juRFEbyx5JlNuYrZM50vcZmtN78.jpg"
+        },
+        {
+          "title": "United 93",
+          "year": 2006,
+          "slug": "Real-time account of the hijacked 9/11 flight that crashed in Pennsylvania",
+          "poster": "https://image.tmdb.org/t/p/w500/r3mdSgsnpoi4UiUufdybhjha68t.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 9829,
+          "poster_url": "https://image.tmdb.org/t/p/w500/r3mdSgsnpoi4UiUufdybhjha68t.jpg"
+        },
+        {
+          "title": "7 Days in Entebbe",
+          "year": 2018,
+          "slug": "Modern retelling of the Entebbe raid focusing on the hijackers' perspective",
+          "poster": "https://image.tmdb.org/t/p/w500/nrC63ikbK4jDp3knvBqxPoWYEMM.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 433627,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nrC63ikbK4jDp3knvBqxPoWYEMM.jpg"
+        },
+        {
+          "title": "The Last King of Scotland",
+          "year": 2006,
+          "slug": "Uganda under Idi Amin during the Entebbe crisis period",
+          "poster": "https://image.tmdb.org/t/p/w500/mTtgpH6UnHUtD8moRJUzfGLOZTj.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 1523,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mTtgpH6UnHUtD8moRJUzfGLOZTj.jpg"
+        },
+        {
+          "title": "Zero Dark Thirty",
+          "year": 2012,
+          "slug": "Hunt for Bin Laden culminating in SEAL Team raid",
+          "poster": "https://image.tmdb.org/t/p/w500/wNSdSSxowM3WIqmPJNg3RagYbwP.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 97630,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wNSdSSxowM3WIqmPJNg3RagYbwP.jpg"
+        },
+        {
+          "title": "Argo",
+          "year": 2012,
+          "slug": "CIA uses fake film production to rescue hostages from Iran",
+          "poster": "https://image.tmdb.org/t/p/w500/m5gPWFZFIp4UJFABgWyLkbXv8GX.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 68734,
+          "poster_url": "https://image.tmdb.org/t/p/w500/m5gPWFZFIp4UJFABgWyLkbXv8GX.jpg"
+        },
+        {
+          "title": "Eye in the Sky",
+          "year": 2015,
+          "slug": "Modern military thriller about drone warfare ethics",
+          "poster": "https://image.tmdb.org/t/p/w500/xMY2XbaRtmto9LXwo83wnYRKN2U.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 333352,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xMY2XbaRtmto9LXwo83wnYRKN2U.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,152 @@
+{
+  "props": {
+    "title": "Space Battleship Yamato",
+    "year": 1977,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/hkCjPG2ljGEXpIbKrw2Wt3bO1RS.jpg",
+    "initialStreaming": null,
+    "tmdbId": 48101,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Space Battleship Yamato** (1977) revolutionized anime sci-fi with its groundbreaking blend of space opera and Japanese naval history. The film, condensed from the influential 1974-75 TV series, follows Earth's last hope - the restored WWII battleship Yamato converted into a spacecraft - on a desperate mission to save humanity. Its visual DNA flows through countless later works, from **Mobile Suit Gundam** (1979) to **The Super Dimension Fortress Macross** (1982). The film's military sci-fi aesthetic, featuring naval-styled space combat and distinctive \"wave motion\" weapons, created a template that influenced **Star Blazers** (1979) in the West and shaped the entire mecha genre."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Macross: Do You Remember Love?",
+            "year": 1984,
+            "slug": "A stunning reimagining of the Macross TV series featuring transforming fighters and interstellar warfare",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Streaming not available",
+            "tmdb_id": 14132
+          },
+          {
+            "title": "Galaxy Express 999",
+            "year": 1979,
+            "slug": "Leiji Matsumoto's epic space fantasy about a boy traveling the galaxy on a steam locomotive-styled space train",
+            "poster": "https://image.tmdb.org/t/p/w500/3NX0cEcfZazJsvTGYVkZDk8sYFx.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 15227,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3NX0cEcfZazJsvTGYVkZDk8sYFx.jpg"
+          },
+          {
+            "title": "Captain Harlock: Space Pirate",
+            "year": 2013,
+            "slug": "Modern CGI adaptation of another classic Leiji Matsumoto space opera featuring the iconic space pirate",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 192577
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's themes of sacrifice, restoration, and hope in the face of extinction resonated deeply with post-war Japanese audiences. Director Leiji Matsumoto's distinctive character designs and epic space vistas established a visual language that defined an era. The success of **Space Battleship Yamato** (1977) proved anime could tackle serious themes while delivering spectacular action, paving the way for mature sci-fi works like **Wings of Honneamise** (1987) and **Akira** (1988). SUBHEAD: Legacy and Modern Influence"
+      },
+      {
+        "type": "text",
+        "content": "The Yamato's influence extends well beyond anime. Its narrative of a restored warship becoming humanity's savior inspired elements of **Battlestar Galactica** (2004-2009) and even **The Last Ship** (2014-2018). The 2010 live-action remake **Space Battleship Yamato** (2010) demonstrated the story's enduring appeal, while series like **Knights of Sidonia** (2014) continue to draw from its military sci-fi framework. The original film's marriage of historical imagery with futuristic technology created a uniquely Japanese approach to space opera that remains influential today."
+      }
+    ],
+    "exploreFurther": [
+      "The historical WWII battleship Yamato and its influence on Japanese pop culture",
+      "Evolution of space opera anime from Yamato to modern works",
+      "Leiji Matsumoto's interconnected space opera universe",
+      "The impact of Yamato's animation techniques on 1970s anime",
+      "Cultural significance of military themes in Japanese science fiction"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Legend of the Galactic Heroes",
+          "year": 1988,
+          "slug": "Epic space opera featuring complex political intrigue and massive fleet battles",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HiDive",
+          "tmdb_id": 154738
+        },
+        {
+          "title": "Mobile Suit Gundam",
+          "year": 1979,
+          "slug": "Seminal real robot anime that revolutionized the mecha genre",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Crunchyroll",
+          "tmdb_id": null
+        },
+        {
+          "title": "Space Pirate Captain Harlock",
+          "year": 1978,
+          "slug": "Another Leiji Matsumoto space opera classic about a noble outlaw",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 394253
+        },
+        {
+          "title": "Royal Space Force: The Wings of Honneamise",
+          "year": 1987,
+          "slug": "Thoughtful exploration of humanity's first steps into space",
+          "poster": "https://image.tmdb.org/t/p/w500/h5naABij9ghj6CLcpBYBkxMGYGX.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 20043,
+          "poster_url": "https://image.tmdb.org/t/p/w500/h5naABij9ghj6CLcpBYBkxMGYGX.jpg"
+        },
+        {
+          "title": "Space Runaway Ideon",
+          "year": 1982,
+          "slug": "Dark space opera about ancient alien technology and human conflict",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Not Available",
+          "tmdb_id": null
+        },
+        {
+          "title": "Space Carrier Blue Noah",
+          "year": 1979,
+          "slug": "Post-apocalyptic series clearly influenced by Yamato's success",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Not Available",
+          "tmdb_id": null
+        },
+        {
+          "title": "They Were Eleven",
+          "year": 1986,
+          "slug": "Classic sci-fi anime thriller set aboard a mysterious spaceship",
+          "poster": "https://image.tmdb.org/t/p/w500/pvjfW8ugP3Z3jjr4F8ANieuNBZg.jpg",
+          "initialStreaming": "Not Available",
+          "tmdb_id": 28214,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pvjfW8ugP3Z3jjr4F8ANieuNBZg.jpg"
+        },
+        {
+          "title": "Toward the Terra",
+          "year": 1980,
+          "slug": "Space opera dealing with evolved humans and discrimination",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "RetroCrush",
+          "tmdb_id": 66628
+        },
+        {
+          "title": "Crusher Joe",
+          "year": 1983,
+          "slug": "Action-packed space adventure with stunning hand-drawn effects",
+          "poster": "https://image.tmdb.org/t/p/w500/rmIvh9qWorbwDDEozCVUrZks3CM.jpg",
+          "initialStreaming": "Not Available",
+          "tmdb_id": 76729,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rmIvh9qWorbwDDEozCVUrZks3CM.jpg"
+        },
+        {
+          "title": "Phoenix 2772: Space Firebird",
+          "year": 1980,
+          "slug": "Osamu Tezuka's epic space adaptation of his Phoenix manga",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Not Available",
+          "tmdb_id": 57635
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

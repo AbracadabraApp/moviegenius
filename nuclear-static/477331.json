@@ -1,0 +1,153 @@
+{
+  "props": {
+    "title": "Long Shot",
+    "year": 2017,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/8LDeHrG8RBluJ7IkPgBaOMkU3fl.jpg",
+    "initialStreaming": null,
+    "tmdbId": 477331,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Long Shot** (2017) sits at a fascinating intersection of political documentary and sports drama, following the incredible true story of Juan Catalan who was wrongly accused of murder. The film's masterstroke comes from its unlikely savior - footage from **Curb Your Enthusiasm** (2000-present). Director Jacob LaMendola crafts a tight 40-minute narrative that exposes flaws in the American justice system while highlighting how random chance and popular culture can impact real lives. The documentary shares DNA with other wrongful conviction films like <a href=\"/movie/14285\" class=\"movie-title\">The Thin Blue Line</a> (1988) and **Making a Murderer** (2015), but its unique baseball-meets-Hollywood angle sets it apart."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Thin Blue Line",
+            "year": 1988,
+            "slug": "Errol Morris's groundbreaking documentary about a wrongly convicted man that actually helped free him from death row",
+            "poster": "https://image.tmdb.org/t/p/w500/4w4BJk3l8y9gYwPPLRs6uPHOmGL.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 14285,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4w4BJk3l8y9gYwPPLRs6uPHOmGL.jpg"
+          },
+          {
+            "title": "Paradise Lost",
+            "year": 1996,
+            "slug": "Documentary following the controversial case of the West Memphis Three, sparking a movement for their release",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 17204
+          },
+          {
+            "title": "The Central Park Five",
+            "year": 2012,
+            "slug": "Ken Burns examines the wrongful conviction of five teenagers in a notorious 1989 Central Park case",
+            "poster": "https://image.tmdb.org/t/p/w500/aKlQ8Sjr07OkCLuYkRYtpVSMm3e.jpg",
+            "initialStreaming": "PBS",
+            "tmdb_id": 124067,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aKlQ8Sjr07OkCLuYkRYtpVSMm3e.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The success of **Long Shot** (2017) helped pave the way for other documentaries exploring wrongful convictions through unexpected angles. **Strong Island** (2017) examines racial justice through an intensely personal lens, while **Time** (2020) chronicles a family's two-decade fight against excessive sentencing. These films share LaMendola's approach of finding the human story within systemic issues, making complex legal matters accessible through individual narratives. SUBHEAD: The Intersection of Sports and Justice"
+      },
+      {
+        "type": "text",
+        "content": "The baseball element in **Long Shot** (2017) connects it to a broader tradition of sports-adjacent legal dramas. While fictional films like **Moneyball** (2011) and **42** (2013) explore baseball's relationship with justice and society, documentaries like **The Two Escobars** (2010) and **O.J.: Made in America** (2016) demonstrate how sports figures become entangled in larger criminal justice narratives."
+      }
+    ],
+    "exploreFurther": [
+      "The evolution of true crime documentaries and their impact on actual cases",
+      "How television footage has been used as legal evidence",
+      "The role of baseball in American legal history",
+      "Documentary techniques for handling sensitive legal material",
+      "The influence of Larry David and Curb Your Enthusiasm on popular culture"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Making a Murderer",
+          "year": 2015,
+          "slug": "Groundbreaking documentary series examining potential police misconduct in Wisconsin",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Jinx",
+          "year": 2015,
+          "slug": "Documentary series that led to real-world arrests and confessions",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": null
+        },
+        {
+          "title": "American Murder: The Family Next Door",
+          "year": 2020,
+          "slug": "True crime documentary told entirely through archival footage",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 743601
+        },
+        {
+          "title": "Dear Zachary",
+          "year": 2008,
+          "slug": "Devastating documentary about a murder case that evolved into a critique of the justice system",
+          "poster": "https://image.tmdb.org/t/p/w500/bVJCQfIfNC01CYOVkvBOtrY1cxy.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 15584,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bVJCQfIfNC01CYOVkvBOtrY1cxy.jpg"
+        },
+        {
+          "title": "The Staircase",
+          "year": 2004,
+          "slug": "Influential documentary series following a complex murder trial",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "When They See Us",
+          "year": 2019,
+          "slug": "Ava DuVernay's dramatic retelling of the Central Park Five case",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 608658
+        },
+        {
+          "title": "Trial 4",
+          "year": 2020,
+          "slug": "Documentary series about a man's fight to prove his innocence",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Murder on a Sunday Morning",
+          "year": 2001,
+          "slug": "Oscar-winning documentary about a teenager's wrongful murder accusation",
+          "poster": "https://image.tmdb.org/t/p/w500/w8mv377RrR9OAUbvp9v9YGm15B3.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 51391,
+          "poster_url": "https://image.tmdb.org/t/p/w500/w8mv377RrR9OAUbvp9v9YGm15B3.jpg"
+        },
+        {
+          "title": "The Confession Tapes",
+          "year": 2017,
+          "slug": "Series examining questionable confession techniques in criminal cases",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "A Murder in the Park",
+          "year": 2014,
+          "slug": "Documentary about a wrongful conviction case with unexpected twists",
+          "poster": "https://image.tmdb.org/t/p/w500/g0wME5TyTTdvUXtp2Qsp4kF7XCC.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 343880,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g0wME5TyTTdvUXtp2Qsp4kF7XCC.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

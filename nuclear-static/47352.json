@@ -1,0 +1,168 @@
+{
+  "props": {
+    "title": "Mr. Lucky",
+    "year": 1943,
+    "initialSlug": "Fate deals him a winning hand.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/bNwlZCUuueYydkgVL5bcfrYKRNl.jpg",
+    "initialStreaming": null,
+    "tmdbId": 47352,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Mr. Lucky** (1943) stands as one of Cary Grant's most intriguing wartime performances, blending romantic comedy with darker undertones of gambling and patriotic duty. Like <a href=\"/movie/289\" class=\"movie-title\">Casablanca</a> (1942), it captures the moral awakening of a cynical opportunist during WWII. Grant plays Joe \"The Greek\" Adams, a gambling ship operator who schemes to exploit a war relief charity, only to find his conscience - and heart - transformed. The film shares DNA with later con-man-turned-good narratives like **The Sting** (1973), while its mix of romance and wartime intrigue influenced films like <a href=\"/movie/22584\" class=\"movie-title\">To Have and Have Not</a> (1944)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Casablanca",
+            "year": 1942,
+            "slug": "Cynical American expatriate Rick Blaine must choose between love and helping the Allied cause in WWII Morocco",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 289
+          },
+          {
+            "title": "To Have and Have Not",
+            "year": 1944,
+            "slug": "Humphrey Bogart plays a boat captain in Martinique who reluctantly aids the French Resistance while romancing Lauren Bacall",
+            "poster": "https://image.tmdb.org/t/p/w500/jLOmQ6yHWSKZDrJ2CMuSrXE3t3J.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 22584,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jLOmQ6yHWSKZDrJ2CMuSrXE3t3J.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Director H.C. Potter crafts a sophisticated balance between light comedy and serious themes, particularly in scenes where Grant's character learns to knit - a seemingly comedic bit that becomes deeply symbolic of his character's transformation. The film's gambling ship setting creates a morally ambiguous playground similar to <a href=\"/movie/3086\" class=\"movie-title\">The Lady Eve</a> (1941) and **Gilda** (1946), where characters navigate between self-interest and redemption."
+      },
+      {
+        "type": "text",
+        "content": "Laraine Day delivers a standout performance as Dorothy Bryant, the charity worker who sees through Grant's schemes. Their chemistry drives the film's emotional core, recalling the sophisticated romantic pairings of **The Philadelphia Story** (1940) and **His Girl Friday** (1940). The wartime propaganda elements are handled with unusual subtlety for the era, making them more effective than heavy-handed contemporaries. SUBHEAD: Wartime Romance and Moral Transformation"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Lady Eve",
+            "year": 1941,
+            "slug": "Barbara Stanwyck cons Henry Fonda's wealthy snake expert in this romantic comedy about deception and true love",
+            "poster": "https://image.tmdb.org/t/p/w500/lJYD3CMgKtv12hazSHc7xt3i2uq.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 3086,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lJYD3CMgKtv12hazSHc7xt3i2uq.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of moral awakening during wartime connects it to a broader category of 1940s films where personal transformation intersects with global conflict. Like **Mrs. Miniver** (1942) and **Since You Went Away** (1944), **Mr. Lucky** shows how WWII affected individual consciences and relationships. The gambling ship setting provides a metaphor for America's initial neutrality - floating above the conflict until circumstances demand engagement."
+      }
+    ],
+    "exploreFurther": [
+      "Cary Grant's Wartime Films: Evolution from Light Comedy to Serious Drama",
+      "Gambling Ships in 1940s Cinema: Floating Spaces of Moral Ambiguity",
+      "World War II's Impact on Hollywood Romantic Comedies",
+      "The Evolution of Con Artist Characters in Classic Hollywood",
+      "H.C. Potter's Directorial Style and Social Commentary"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Philadelphia Story",
+          "year": 1940,
+          "slug": "Sophisticated comedy about a socialite torn between three men",
+          "poster": "https://image.tmdb.org/t/p/w500/dKUubjvxO78XDts6VP1Ggcp4R9O.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 981,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dKUubjvxO78XDts6VP1Ggcp4R9O.jpg"
+        },
+        {
+          "title": "Notorious",
+          "year": 1946,
+          "slug": "Cary Grant and Ingrid Bergman in Hitchcock's romantic spy thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/yUjKnpColooH88BFQJwwgNOQ56N.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 303,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yUjKnpColooH88BFQJwwgNOQ56N.jpg"
+        },
+        {
+          "title": "Night and Day",
+          "year": 1946,
+          "slug": "Biographical film starring Cary Grant as Cole Porter",
+          "poster": "https://image.tmdb.org/t/p/w500/mrlKsBUxPwxGr8M8xupI96qrA8j.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 43485,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mrlKsBUxPwxGr8M8xupI96qrA8j.jpg"
+        },
+        {
+          "title": "Only Angels Have Wings",
+          "year": 1939,
+          "slug": "Grant as a tough airline boss in South America",
+          "poster": "https://image.tmdb.org/t/p/w500/lqcwiWancAkjtAQPHr9V3SfJjBM.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 43832,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lqcwiWancAkjtAQPHr9V3SfJjBM.jpg"
+        },
+        {
+          "title": "Destination Tokyo",
+          "year": 1943,
+          "slug": "Grant leads a submarine mission in WWII",
+          "poster": "https://image.tmdb.org/t/p/w500/irQLva38syoOiAFCJOrFwykq4f4.jpg",
+          "initialStreaming": "Warner Archive",
+          "tmdb_id": 22871,
+          "poster_url": "https://image.tmdb.org/t/p/w500/irQLva38syoOiAFCJOrFwykq4f4.jpg"
+        },
+        {
+          "title": "The Talk of the Town",
+          "year": 1942,
+          "slug": "Legal comedy-drama with Grant as a fugitive",
+          "poster": "https://image.tmdb.org/t/p/w500/naMSxieb5cD1bGCu0rZ7zLJ6mtA.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 23159,
+          "poster_url": "https://image.tmdb.org/t/p/w500/naMSxieb5cD1bGCu0rZ7zLJ6mtA.jpg"
+        },
+        {
+          "title": "In Name Only",
+          "year": 1939,
+          "slug": "Grant and Carole Lombard in romantic drama",
+          "poster": "https://image.tmdb.org/t/p/w500/5hFwlor6k3vow7FVVIQ3L6rI0fN.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 33030,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5hFwlor6k3vow7FVVIQ3L6rI0fN.jpg"
+        },
+        {
+          "title": "None But the Lonely Heart",
+          "year": 1944,
+          "slug": "Grant in rare dramatic role as Cockney drifter",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 52362
+        },
+        {
+          "title": "Once Upon a Honeymoon",
+          "year": 1942,
+          "slug": "Grant and Ginger Rogers in wartime romance",
+          "poster": "https://image.tmdb.org/t/p/w500/aWy7AROU1gtYUK1oa4u8mr1vWh0.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 43779,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aWy7AROU1gtYUK1oa4u8mr1vWh0.jpg"
+        },
+        {
+          "title": "Suspicion",
+          "year": 1941,
+          "slug": "Grant may or may not be plotting to kill his wife",
+          "poster": "https://image.tmdb.org/t/p/w500/clWNlzlbyaEoIK63lcFjqBmXoQz.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 11462,
+          "poster_url": "https://image.tmdb.org/t/p/w500/clWNlzlbyaEoIK63lcFjqBmXoQz.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

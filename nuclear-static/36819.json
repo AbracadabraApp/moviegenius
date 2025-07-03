@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "Time Bandits",
+    "year": 1981,
+    "initialSlug": "Young boy joins time-traveling dwarves on wild quest",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/4VZtpwdhHQSa4LUkvujyGAHb1hG.jpg",
+    "initialStreaming": null,
+    "tmdbId": 36819,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Time Bandits** (1981) stands as Terry Gilliam's masterful blend of dark fantasy and children's adventure, following a young boy who joins six time-traveling dwarfs stealing treasures across history. The film shares DNA with later reality-bending children's films like **Pan's Labyrinth** (2006) and **Coraline** (2009), but with Gilliam's signature Monty Python-esque absurdist humor. Its practical effects and handcrafted feel influenced fantasy filmmaking for decades, seen in works like **The NeverEnding Story** (1984) and **Labyrinth** (1986)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Adventures of Baron Munchausen",
+            "year": 1988,
+            "slug": "Gilliam's spiritual successor to Time Bandits, following an aging adventurer's fantastical tales",
+            "poster": "https://image.tmdb.org/t/p/w500/9fggcOUgYUxU1ZChI7tcf1CYO5a.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 14506,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9fggcOUgYUxU1ZChI7tcf1CYO5a.jpg"
+          },
+          {
+            "title": "Brazil",
+            "year": 1985,
+            "slug": "Gilliam's dystopian masterpiece about a lowly bureaucrat's descent into fantasy",
+            "poster": "https://image.tmdb.org/t/p/w500/aewan59WcFThBimkTVVoNf2o5Vb.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 68,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aewan59WcFThBimkTVVoNf2o5Vb.jpg"
+          },
+          {
+            "title": "The Dark Crystal",
+            "year": 1982,
+            "slug": "Jim Henson's dark fantasy featuring groundbreaking puppetry and practical effects",
+            "poster": "https://image.tmdb.org/t/p/w500/6g1Kh73qQRosyhRJpL3euQpMxOE.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 11639,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6g1Kh73qQRosyhRJpL3euQpMxOE.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of good vs. evil through historical figures prefigured later works like **Bill & Ted's Excellent Adventure** (1989) and **Night at the Museum** (2006). But where those films played history for laughs, Time Bandits injects genuine darkness and philosophical weight. The ending, where evil literally explodes and (spoiler) kills the parents, remains one of the boldest conclusions in children's cinema, matching the narrative courage of **Return to Oz** (1985). SUBHEAD: The Golden Age of Practical Effects Fantasy"
+      },
+      {
+        "type": "text",
+        "content": "Time Bandits arrived during a revolutionary period for practical effects in fantasy cinema. Along with **The Thing** (1982) and **Legend** (1985), it showcased what could be achieved through practical magic before CGI dominated. The film's handmade quality - from the Supreme Being's floating head to the giant emerging from the sea - demonstrates why many modern filmmakers like **Guillermo del Toro** still champion practical effects over digital."
+      }
+    ],
+    "exploreFurther": [
+      "Terry Gilliam's Battle with Studio Systems - From Time Bandits to The Man Who Killed Don Quixote",
+      "The Rise and Fall of Practical Effects in 1980s Fantasy Cinema",
+      "British Children's Fantasy Films - A Dark and Distinctive Tradition",
+      "The Influence of Monty Python on Fantasy Comedy",
+      "Philosophy and Morality in Children's Fantasy Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Princess Bride",
+          "year": 1987,
+          "slug": "Classic fantasy adventure with similar wit and practical effects",
+          "poster": "https://image.tmdb.org/t/p/w500/dvjqlp2sAhUeFjUOfQDgqwpphHj.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 2493,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dvjqlp2sAhUeFjUOfQDgqwpphHj.jpg"
+        },
+        {
+          "title": "Willow",
+          "year": 1988,
+          "slug": "George Lucas produced fantasy with practical effects and time-traveling themes",
+          "poster": "https://image.tmdb.org/t/p/w500/pAIRGMIdN7ZdZhflazdV2ezuJ9f.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 847,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pAIRGMIdN7ZdZhflazdV2ezuJ9f.jpg"
+        },
+        {
+          "title": "The Imaginarium of Doctor Parnassus",
+          "year": 2009,
+          "slug": "Gilliam's later fantasy about a traveling show and immortality",
+          "poster": "https://image.tmdb.org/t/p/w500/DtrqQHa0wT9AWrk2WA9beROJJx.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 8054,
+          "poster_url": "https://image.tmdb.org/t/p/w500/DtrqQHa0wT9AWrk2WA9beROJJx.jpg"
+        },
+        {
+          "title": "Jabberwocky",
+          "year": 1977,
+          "slug": "Gilliam's first solo directing effort, medieval fantasy comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/kprcqmFxWPU45L1ZnMXO5yPPMVA.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 11834,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kprcqmFxWPU45L1ZnMXO5yPPMVA.jpg"
+        },
+        {
+          "title": "MirrorMask",
+          "year": 2005,
+          "slug": "Dark fantasy with similar handcrafted visual style",
+          "poster": "https://image.tmdb.org/t/p/w500/itIJU3NKbdgScA1WPIxXzOlm0Uj.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 14517,
+          "poster_url": "https://image.tmdb.org/t/p/w500/itIJU3NKbdgScA1WPIxXzOlm0Uj.jpg"
+        },
+        {
+          "title": "The City of Lost Children",
+          "year": 1995,
+          "slug": "French fantasy with similar dark whimsy and practical effects",
+          "poster": "https://image.tmdb.org/t/p/w500/whwT3Q9JxbAYzEc3t7uYYcCbTMf.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 902,
+          "poster_url": "https://image.tmdb.org/t/p/w500/whwT3Q9JxbAYzEc3t7uYYcCbTMf.jpg"
+        },
+        {
+          "title": "The Fall",
+          "year": 2006,
+          "slug": "Visually stunning fantasy about storytelling across time",
+          "poster": "https://image.tmdb.org/t/p/w500/jUx4P4Q1VsQ07rLz7sOlSyNm4F3.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 14784,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jUx4P4Q1VsQ07rLz7sOlSyNm4F3.jpg"
+        },
+        {
+          "title": "Big Fish",
+          "year": 2003,
+          "slug": "Burton's fantasy about tall tales and father-son relationships",
+          "poster": "https://image.tmdb.org/t/p/w500/tjK063yCgaBAluVU72rZ6PKPH2l.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 587,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tjK063yCgaBAluVU72rZ6PKPH2l.jpg"
+        },
+        {
+          "title": "Hugo",
+          "year": 2011,
+          "slug": "Scorsese's ode to practical magic and early cinema",
+          "poster": "https://image.tmdb.org/t/p/w500/1dxRq3o3l3bVWNRvvSb7rRf68qp.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 44826,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1dxRq3o3l3bVWNRvvSb7rRf68qp.jpg"
+        },
+        {
+          "title": "The Adventures of Baron Munchausen",
+          "year": 1988,
+          "slug": "Another Gilliam fantasy epic",
+          "poster": "https://image.tmdb.org/t/p/w500/9fggcOUgYUxU1ZChI7tcf1CYO5a.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 14506,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9fggcOUgYUxU1ZChI7tcf1CYO5a.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

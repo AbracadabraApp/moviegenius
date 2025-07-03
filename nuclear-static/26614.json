@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "La Chienne",
+    "year": 1931,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/oX2W3mkHCrG9VRlbzB0MD8GeAcB.jpg",
+    "initialStreaming": null,
+    "tmdbId": 26614,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Jean Renoir's **La Chienne** (1931) marks a pivotal moment in French cinema's transition to sound, delivering a brutal noir tale years before the term existed. The film's unflinching portrayal of a love triangle between a meek cashier, a prostitute, and her pimp established themes that would influence later films noir like Fritz Lang's <a href=\"/movie/17058\" class=\"movie-title\">Scarlet Street</a> (1945) - itself a direct remake. Renoir's innovative use of deep focus and fluid camera movements influenced directors for decades, particularly in how he captured the grimy authenticity of Montmartre's streets."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Scarlet Street",
+            "year": 1945,
+            "slug": "Fritz Lang remakes La Chienne with Edward G. Robinson in a noir masterpiece about a meek painter destroyed by a femme fatale",
+            "poster": "https://image.tmdb.org/t/p/w500/eGEDor1BWSQGaLtOntPHUSqNzRC.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 17058,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eGEDor1BWSQGaLtOntPHUSqNzRC.jpg"
+          },
+          {
+            "title": "Boudu Saved from Drowning",
+            "year": 1932,
+            "slug": "Renoir's following film starring Michel Simon in another tale of class warfare and moral ambiguity",
+            "poster": "https://image.tmdb.org/t/p/w500/hCRUtli9TCrekxSysHJ15QhMk44.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 48365,
+            "poster_url": "https://image.tmdb.org/t/p/w500/hCRUtli9TCrekxSysHJ15QhMk44.jpg"
+          },
+          {
+            "title": "The Lower Depths",
+            "year": 1936,
+            "slug": "Renoir adapts Gorky's play about society's outcasts, sharing themes with La Chienne",
+            "poster": "https://image.tmdb.org/t/p/w500/9jKTFaQE4jYeMRqoY1tR1Flp73n.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 45802,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9jKTFaQE4jYeMRqoY1tR1Flp73n.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence on French poetic realism cannot be overstated. Its gritty portrayal of working-class life and moral ambiguity laid groundwork for classics like Marcel Carné's **Port of Shadows** (1938) and **Le Jour Se Lève** (1939). Renoir's brother Pierre's devastating performance as the hapless Maurice Legrand helped establish the archetype of the tragic everyman protagonist that would become central to film noir."
+      },
+      {
+        "type": "text",
+        "content": "The technical innovations in **La Chienne** (1931) were revolutionary for early sound cinema. While many filmmakers were still struggling with stationary cameras and stilted dialogue, Renoir maintained the visual fluidity of silent films while incorporating naturalistic sound. This approach influenced the French New Wave, particularly visible in François Truffaut's **The Soft Skin** (1964) and Jean-Luc Godard's **Vivre Sa Vie** (1962). SUBHEAD: Impact on Film Noir"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Rules of the Game",
+            "year": 1939,
+            "slug": "Renoir's masterpiece builds on La Chienne's class commentary and technical innovations",
+            "poster": "https://image.tmdb.org/t/p/w500/8JOzt7uFZyshcuzCBmYU6CDJL4D.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 776,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8JOzt7uFZyshcuzCBmYU6CDJL4D.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's dark themes of betrayal, murder, and moral corruption prefigured American film noir by over a decade. The triangle between Maurice, Lulu, and Dédé became a template for countless noir relationships, echoing in films like **Double Indemnity** (1944) and **The Postman Always Rings Twice** (1946). The psychological complexity of Maurice's descent from respectable citizen to murderer influenced character studies like **In a Lonely Place** (1950)."
+      }
+    ],
+    "exploreFurther": [
+      "Early Sound Cinema Techniques - How Renoir overcame technical limitations",
+      "French Poetic Realism Movement and its relationship to Film Noir",
+      "Jean Renoir's influence on the French New Wave",
+      "The evolution of the tragic protagonist in cinema",
+      "Comparative analysis of La Chienne and Scarlet Street"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Port of Shadows",
+          "year": 1938,
+          "slug": "Poetic realism classic about a deserter seeking redemption",
+          "poster": "https://image.tmdb.org/t/p/w500/2S8O2V50TZlXV8uabOvGUJ1i5CZ.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 46326,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2S8O2V50TZlXV8uabOvGUJ1i5CZ.jpg"
+        },
+        {
+          "title": "Le Jour Se Lève",
+          "year": 1939,
+          "slug": "Influential poetic realism noir about a doomed factory worker",
+          "poster": "https://image.tmdb.org/t/p/w500/cjbHvOHbZ2sMgHJM8P7L1Pt5wAV.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 27053,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cjbHvOHbZ2sMgHJM8P7L1Pt5wAV.jpg"
+        },
+        {
+          "title": "The Soft Skin",
+          "year": 1964,
+          "slug": "Truffaut's homage to Renoir's realism",
+          "poster": "https://image.tmdb.org/t/p/w500/nYo083NgJCAQQByHzYrayxQ5xBV.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1719,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nYo083NgJCAQQByHzYrayxQ5xBV.jpg"
+        },
+        {
+          "title": "Vivre Sa Vie",
+          "year": 1962,
+          "slug": "Godard's examination of prostitution owing debt to La Chienne",
+          "poster": "https://image.tmdb.org/t/p/w500/lYTAYclvYIa1SR4wRwMW7OwGp86.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1626,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lYTAYclvYIa1SR4wRwMW7OwGp86.jpg"
+        },
+        {
+          "title": "Double Indemnity",
+          "year": 1944,
+          "slug": "Noir classic about murder and betrayal",
+          "poster": "https://image.tmdb.org/t/p/w500/rVNYZZgfhwqVMMWlBmxOfWqnwCj.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 996,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rVNYZZgfhwqVMMWlBmxOfWqnwCj.jpg"
+        },
+        {
+          "title": "The Postman Always Rings Twice",
+          "year": 1946,
+          "slug": "Noir adaptation sharing themes with La Chienne",
+          "poster": "https://image.tmdb.org/t/p/w500/3qdX948vUXi4q8raUUOHHlbP9q8.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 25736,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3qdX948vUXi4q8raUUOHHlbP9q8.jpg"
+        },
+        {
+          "title": "In a Lonely Place",
+          "year": 1950,
+          "slug": "Humphrey Bogart in psychological noir drama",
+          "poster": "https://image.tmdb.org/t/p/w500/vdlCUR7hu7BI8JRl46n66PiG17k.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 17057,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vdlCUR7hu7BI8JRl46n66PiG17k.jpg"
+        },
+        {
+          "title": "Nana",
+          "year": 1926,
+          "slug": "Renoir's earlier silent film about a courtesan",
+          "poster": "https://image.tmdb.org/t/p/w500/oTkbx0LccduSOlGoUGnodx5dRUT.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 66812,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oTkbx0LccduSOlGoUGnodx5dRUT.jpg"
+        },
+        {
+          "title": "The Grand Illusion",
+          "year": 1937,
+          "slug": "Renoir's antiwar masterpiece",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 777
+        },
+        {
+          "title": "The Crime of Monsieur Lange",
+          "year": 1936,
+          "slug": "Another Renoir exploration of class and morality",
+          "poster": "https://image.tmdb.org/t/p/w500/gCGunDNK9UGecWF5d1vEKkLbVuE.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 52677,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gCGunDNK9UGecWF5d1vEKkLbVuE.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

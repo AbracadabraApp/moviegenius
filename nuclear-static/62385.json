@@ -1,0 +1,156 @@
+{
+  "props": {
+    "title": "The Little Girl Who Conquered Time",
+    "year": 1983,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/gDkPgwYVl5uPZ8NGeADdRrwjEEG.jpg",
+    "initialStreaming": null,
+    "tmdbId": 62385,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The 1983 anime adaptation of Yasutaka Tsutsui's novel marks a fascinating early take on time travel in Japanese animation, predating the more famous <a href=\"/movie/14069\" class=\"movie-title\">The Girl Who Leapt Through Time</a> (2006). Director Nobuhiko Ōbayashi, best known for his surreal horror masterpiece **House** (1977), brings his distinctive visual flair to this story of teenage time-jumping. The film established core themes that would influence later Japanese time travel narratives, particularly the intersection of young love, fate, and temporal manipulation that we'd later see in works like **Your Name** (2016) and **Steins;Gate** (2011)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Girl Who Leapt Through Time",
+            "year": 2006,
+            "slug": "Mamoru Hosoda's modern reimagining of the same source material, following a high school girl who discovers she can literally leap backwards in time",
+            "poster": "https://image.tmdb.org/t/p/w500/xHnlWM8BmqY419YUccYy2KC5Jqo.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 14069,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xHnlWM8BmqY419YUccYy2KC5Jqo.jpg"
+          },
+          {
+            "title": "Summer Time Machine Blues",
+            "year": 2005,
+            "slug": "A quirky Japanese comedy about students who discover a time machine and must prevent their air conditioner's remote control from being broken",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Not Currently Streaming",
+            "tmdb_id": 26130
+          },
+          {
+            "title": "Your Name",
+            "year": 2016,
+            "slug": "Makoto Shinkai's masterpiece about two teenagers who swap bodies across time and space while trying to prevent a disaster",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Crunchyroll",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The 1983 film's approach to time travel mechanics differs significantly from later adaptations, focusing more on the philosophical and emotional implications rather than scientific explanation. This character-driven approach influenced later Japanese films like <a href=\"/movie/14069\" class=\"movie-title\">The Girl Who Leapt Through Time</a> (2006) and **Orange** (2015), where time manipulation serves primarily as a vehicle for exploring youth, regret, and the weight of decisions. Ōbayashi's distinctive visual style, mixing traditional animation with experimental techniques, creates a dreamlike atmosphere that enhances the story's themes of memory and temporal displacement. SUBHEAD: Impact on Japanese Time Travel Cinema"
+      },
+      {
+        "type": "text",
+        "content": "The film's legacy can be traced through numerous Japanese works that combine science fiction elements with coming-of-age narratives. Its influence is particularly visible in films like **Hello World** (2019) and **Fireworks** (2017), which similarly use time travel as a metaphor for adolescent growth and romantic longing. The original's more contemplative pace and focus on character development over spectacle established a template that many subsequent Japanese time travel stories would follow."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of time travel narratives in Japanese animation",
+      "Nobuhiko Ōbayashi's experimental filmmaking techniques",
+      "Adaptations of Yasutaka Tsutsui's literary works",
+      "Coming-of-age themes in Japanese science fiction cinema",
+      "Visual storytelling in 1980s anime"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Hello World",
+          "year": 2019,
+          "slug": "A sci-fi romance about a shy teenage boy who meets his future self",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Crunchyroll",
+          "tmdb_id": null
+        },
+        {
+          "title": "Fireworks",
+          "year": 2017,
+          "slug": "A supernatural romance exploring what happens when two teens find a mysterious object that can turn back time",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Orange",
+          "year": 2015,
+          "slug": "A heartfelt story about a girl who receives letters from her future self",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Crunchyroll",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Place Promised in Our Early Days",
+          "year": 2004,
+          "slug": "Makoto Shinkai's tale of parallel worlds and young love",
+          "poster": "https://image.tmdb.org/t/p/w500/xlyJw6WmfLn378oz0ZmI0SYFoGb.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 12924,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xlyJw6WmfLn378oz0ZmI0SYFoGb.jpg"
+        },
+        {
+          "title": "5 Centimeters Per Second",
+          "year": 2007,
+          "slug": "Another Shinkai masterpiece exploring time's effect on relationships",
+          "poster": "https://image.tmdb.org/t/p/w500/dFipUR6W0y3PPkuVS8gjFd929m2.jpg",
+          "initialStreaming": "Crunchyroll",
+          "tmdb_id": 38142,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dFipUR6W0y3PPkuVS8gjFd929m2.jpg"
+        },
+        {
+          "title": "Mirai",
+          "year": 2018,
+          "slug": "A young boy meets relatives from different time periods",
+          "poster": "https://image.tmdb.org/t/p/w500/b9XvI4Nehzi0nXyNVD6DtT39P6l.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 475215,
+          "poster_url": "https://image.tmdb.org/t/p/w500/b9XvI4Nehzi0nXyNVD6DtT39P6l.jpg"
+        },
+        {
+          "title": "A Letter to Momo",
+          "year": 2011,
+          "slug": "A supernatural coming-of-age story with themes of time and memory",
+          "poster": "https://image.tmdb.org/t/p/w500/uH4c5t3Wzzv41Wq9ws2Q47N1Dzo.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 100271,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uH4c5t3Wzzv41Wq9ws2Q47N1Dzo.jpg"
+        },
+        {
+          "title": "Children Who Chase Lost Voices",
+          "year": 2011,
+          "slug": "Shinkai's take on time, mythology, and youth",
+          "poster": "https://image.tmdb.org/t/p/w500/hWyBwsjMgtuZL2i1QBWQY0OCh0M.jpg",
+          "initialStreaming": "Crunchyroll",
+          "tmdb_id": 79707,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hWyBwsjMgtuZL2i1QBWQY0OCh0M.jpg"
+        },
+        {
+          "title": "The Boy and the Beast",
+          "year": 2015,
+          "slug": "A story of growth across different temporal realms",
+          "poster": "https://image.tmdb.org/t/p/w500/kzKJxfIdZ70nsPfKyq7hlYlJwSx.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 315465,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kzKJxfIdZ70nsPfKyq7hlYlJwSx.jpg"
+        },
+        {
+          "title": "When Marnie Was There",
+          "year": 2014,
+          "slug": "Studio Ghibli's meditation on time and friendship",
+          "poster": "https://image.tmdb.org/t/p/w500/vug1dvDI1tSa60Z8qjCuUE7ntkO.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 242828,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vug1dvDI1tSa60Z8qjCuUE7ntkO.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

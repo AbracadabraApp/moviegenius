@@ -1,0 +1,177 @@
+{
+  "props": {
+    "title": "Attack and Retreat",
+    "year": 1964,
+    "initialSlug": "When retreat is not an option.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/eq9BGDwaW98J9uGoXnqTlqeWZDX.jpg",
+    "initialStreaming": null,
+    "tmdbId": 231801,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Attack and Retreat** (1964), also known as \"Italiani brava gente,\" stands as a remarkable Italian-Soviet co-production that offers a unique perspective on WWII's Eastern Front. Director Giuseppe De Santis crafts a haunting portrait of Italian soldiers fighting alongside German forces in the Soviet Union, similar to the way <a href=\"/movie/11101\" class=\"movie-title\">Stalingrad</a> (1993) and **Cross of Iron** (1977) examine the brutal Eastern Front campaign. The film's unflinching portrayal of the Italian military's disastrous Russian campaign parallels other notable WWII Italian perspectives like **General Della Rovere** (1959) and **Two Women** (1960)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Attack and Retreat",
+            "year": 1964,
+            "slug": "Italian soldiers face harsh realities on the Eastern Front during WWII",
+            "poster": "https://image.tmdb.org/t/p/w500/eq9BGDwaW98J9uGoXnqTlqeWZDX.jpg",
+            "initialStreaming": "not currently streaming",
+            "tmdb_id": 231801,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eq9BGDwaW98J9uGoXnqTlqeWZDX.jpg"
+          },
+          {
+            "title": "Stalingrad",
+            "year": 1993,
+            "slug": "German soldiers experience the devastating siege of Stalingrad",
+            "poster": "https://image.tmdb.org/t/p/w500/rB78VDAOK94KJWp9ofgE3GSQEor.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 11101,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rB78VDAOK94KJWp9ofgE3GSQEor.jpg"
+          },
+          {
+            "title": "The Russian Front",
+            "year": 1975,
+            "slug": "Documentary examining the Eastern Front battles",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's power lies in its authentic depiction of the Italian soldiers' gradual disillusionment, moving from initial fascist propaganda-fueled confidence to the stark reality of warfare in the brutal Russian winter. Like <a href=\"/movie/25237\" class=\"movie-title\">Come and See</a> (1985) and **The Cranes Are Flying** (1957), it captures the psychological toll of the Eastern Front through a combination of intimate character moments and sweeping battle sequences."
+      },
+      {
+        "type": "text",
+        "content": "De Santis's neo-realist background influences the film's raw authenticity, similar to Roberto Rossellini's war trilogy, particularly **Rome, Open City** (1945). The joint Italian-Soviet production allows for a balanced perspective rarely seen in war films of this era, presenting both sides with humanity while acknowledging the historical complexities of the conflict. SUBHEAD: The Evolution of Eastern Front Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Come and See",
+            "year": 1985,
+            "slug": "Devastating Belarusian war drama following a young partisan",
+            "poster": "https://image.tmdb.org/t/p/w500/qNbMsKVzigERgJUbwf8pKyZogpb.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 25237,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qNbMsKVzigERgJUbwf8pKyZogpb.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Attack and Retreat** (1964) helped pave the way for more nuanced examinations of the Eastern Front, influencing later works like **Enemy at the Gates** (2001) and **Life and Fate** (2012). Its focus on the human cost of war, particularly through the lens of Italian soldiers fighting in an unfamiliar land, creates a unique narrative that stands apart from typical Allied or Axis perspectives of WWII cinema."
+      }
+    ],
+    "exploreFurther": [
+      "Italian Neorealism's Influence on War Cinema",
+      "Soviet-Italian Film Collaborations During the Cold War",
+      "The Eastern Front in World War II Cinema",
+      "Giuseppe De Santis's Directorial Style",
+      "Historical Accuracy in WWII Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Rome, Open City",
+          "year": 1945,
+          "slug": "Neorealist masterpiece about Nazi-occupied Rome",
+          "poster": "https://image.tmdb.org/t/p/w500/ijGV4v8JxgbNzgEhqKdzHdaZn8a.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 307,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ijGV4v8JxgbNzgEhqKdzHdaZn8a.jpg"
+        },
+        {
+          "title": "Days of Glory",
+          "year": 1944,
+          "slug": "Soviet war film about the defense of Moscow",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 96366
+        },
+        {
+          "title": "The Cranes Are Flying",
+          "year": 1957,
+          "slug": "Soviet war drama about civilians during WWII",
+          "poster": "https://image.tmdb.org/t/p/w500/foXYOdXEJ0rvtTDo4LLnsUnvPLB.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 38360,
+          "poster_url": "https://image.tmdb.org/t/p/w500/foXYOdXEJ0rvtTDo4LLnsUnvPLB.jpg"
+        },
+        {
+          "title": "Cross of Iron",
+          "year": 1977,
+          "slug": "German soldiers on the Eastern Front",
+          "poster": "https://image.tmdb.org/t/p/w500/fR6pqh5aFn0fawsn7sR2zC15swx.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 10839,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fR6pqh5aFn0fawsn7sR2zC15swx.jpg"
+        },
+        {
+          "title": "A Time to Love and a Time to Die",
+          "year": 1958,
+          "slug": "German soldier returns home during WWII",
+          "poster": "https://image.tmdb.org/t/p/w500/nTN6eW0iYtLW2PEDveaHSAOq92X.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 84079,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nTN6eW0iYtLW2PEDveaHSAOq92X.jpg"
+        },
+        {
+          "title": "The Fall of Berlin",
+          "year": 1950,
+          "slug": "Soviet epic about the defeat of Nazi Germany",
+          "poster": "https://image.tmdb.org/t/p/w500/5OdQHObUSvbJ0pOGPJ34P6F89lU.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 106259,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5OdQHObUSvbJ0pOGPJ34P6F89lU.jpg"
+        },
+        {
+          "title": "Two Women",
+          "year": 1960,
+          "slug": "Mother and daughter survive war-torn Italy",
+          "poster": "https://image.tmdb.org/t/p/w500/biWDAUQD58enMEcyO2BqIVSycF4.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 24167,
+          "poster_url": "https://image.tmdb.org/t/p/w500/biWDAUQD58enMEcyO2BqIVSycF4.jpg"
+        },
+        {
+          "title": "General Della Rovere",
+          "year": 1959,
+          "slug": "Italian resistance drama",
+          "poster": "https://image.tmdb.org/t/p/w500/dTynqWaUm92ecwxCuMkTdHCoOfx.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 43100,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dTynqWaUm92ecwxCuMkTdHCoOfx.jpg"
+        },
+        {
+          "title": "The Human Condition",
+          "year": 1959,
+          "slug": "Japanese trilogy including Eastern Front sequences",
+          "poster": "https://image.tmdb.org/t/p/w500/q7godavx5XEbeVxEeqi4pmiOKdI.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 31217,
+          "poster_url": "https://image.tmdb.org/t/p/w500/q7godavx5XEbeVxEeqi4pmiOKdI.jpg"
+        },
+        {
+          "title": "Ivan's Childhood",
+          "year": 1962,
+          "slug": "Soviet war drama about a young scout",
+          "poster": "https://image.tmdb.org/t/p/w500/vmRWSLP1DE9WTta0hfzIafJ0dID.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 31442,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vmRWSLP1DE9WTta0hfzIafJ0dID.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

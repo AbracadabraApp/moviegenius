@@ -1,0 +1,192 @@
+{
+  "props": {
+    "title": "Gunner Palace",
+    "year": 2004,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/iu1Qydj27eeVu7kvWzAjQGiNdEK.jpg",
+    "initialStreaming": null,
+    "tmdbId": 30856,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Gunner Palace** (2004) revolutionized Iraq War documentaries by embedding viewers with the 2/3 Field Artillery unit (aka \"The Gunners\") in Baghdad's bombed-out palace district. Directors Michael Tucker and Petra Epperlein captured raw, unfiltered soldier experiences through freestyle raps, candid confessions, and intense combat footage. This marked a stark departure from sanitized news coverage, following **Fahrenheit 9/11** (2004)'s controversial wake but offering a more ground-level, non-partisan perspective of military life."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The War Tapes",
+            "year": 2006,
+            "slug": "Three National Guard soldiers document their year-long deployment in Iraq with personal cameras",
+            "poster": "https://image.tmdb.org/t/p/w500/o5oL7vRP3X2LLKI8HArzQez0V7k.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 23495,
+            "poster_url": "https://image.tmdb.org/t/p/w500/o5oL7vRP3X2LLKI8HArzQez0V7k.jpg"
+          },
+          {
+            "title": "Restrepo",
+            "year": 2010,
+            "slug": "Journalists embed with U.S. troops in Afghanistan's deadliest valley, showing brutal combat and quiet moments",
+            "poster": "https://image.tmdb.org/t/p/w500/62DCMBMJU1ZVezVEawyatpFoJwI.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 39312,
+            "poster_url": "https://image.tmdb.org/t/p/w500/62DCMBMJU1ZVezVEawyatpFoJwI.jpg"
+          },
+          {
+            "title": "Standard Operating Procedure",
+            "year": 2008,
+            "slug": "Errol Morris investigates the Abu Ghraib prison scandal through interviews and recreations",
+            "poster": "https://image.tmdb.org/t/p/w500/v2QCXsisMLYsozC2qJtYGa3Rvsi.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 8847,
+            "poster_url": "https://image.tmdb.org/t/p/w500/v2QCXsisMLYsozC2qJtYGa3Rvsi.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's impact rippled through subsequent war documentaries. **The Hurt Locker** (2008), though fictional, borrowed heavily from Gunner Palace's intimate portrayal of bomb disposal teams. **No End in Sight** (2007) expanded on the policy failures glimpsed in Gunner Palace's ground-level view. The soldiers' freestyle raps notably influenced **Body of War** (2007), where music became a crucial outlet for veteran expression. SUBHEAD: Evolution of Military Documentary Style"
+      },
+      {
+        "type": "text",
+        "content": "Gunner Palace's DIY aesthetic and unflinching approach influenced a new wave of soldier-filmed documentaries. <a href=\"/movie/23495\" class=\"movie-title\">The War Tapes</a> (2006) gave cameras directly to troops, while **Combat Obscura** (2018) used Marine Corps videographer footage to show an even grittier perspective. This shift toward unmediated soldier experiences contrasted sharply with earlier Gulf War docs like **Three Kings** (1999) and **Jarhead** (2005), which relied more heavily on dramatic recreation and stylization."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of embedded journalism in combat zones",
+      "Impact of soldier-created media on war documentation",
+      "Musical expression as military coping mechanism",
+      "Documentary ethics in war zones",
+      "Digital technology's influence on combat documentation"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Generation Kill",
+          "year": 2008,
+          "slug": "HBO series based on embedded reporting with Marine Corps unit",
+          "poster": null,
+          "initialStreaming": "HBO",
+          "tmdb_id": 377535,
+          "poster_url": null
+        },
+        {
+          "title": "Iraq in Fragments",
+          "year": 2006,
+          "slug": "Three-part documentary showing Iraqi civilian perspectives",
+          "poster": "https://image.tmdb.org/t/p/w500/snVhUvp5Cq8Vaxr19sPl33eeYX0.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 34389,
+          "poster_url": "https://image.tmdb.org/t/p/w500/snVhUvp5Cq8Vaxr19sPl33eeYX0.jpg"
+        },
+        {
+          "title": "Control Room",
+          "year": 2004,
+          "slug": "Behind scenes at Al Jazeera during Iraq War invasion",
+          "poster": "https://image.tmdb.org/t/p/w500/pm6Tvrh3XC2mOwwCB8AQWcpBg1K.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 18889,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pm6Tvrh3XC2mOwwCB8AQWcpBg1K.jpg"
+        },
+        {
+          "title": "Full Battle Rattle",
+          "year": 2008,
+          "slug": "Documentary about Iraq War simulation training in Mojave Desert",
+          "poster": null,
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 38747,
+          "poster_url": null
+        },
+        {
+          "title": "The Ground Truth",
+          "year": 2006,
+          "slug": "Veterans speak about recruitment, training and post-war struggles",
+          "poster": "https://image.tmdb.org/t/p/w500/qi4IhP8KQfNoiojuIDHQYmWgonQ.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 50062,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qi4IhP8KQfNoiojuIDHQYmWgonQ.jpg"
+        },
+        {
+          "title": "Occupation: Dreamland",
+          "year": 2005,
+          "slug": "Portrait of Army infantry squad in Fallujah",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 37705
+        },
+        {
+          "title": "Why We Fight",
+          "year": 2005,
+          "slug": "Analysis of American military industrial complex",
+          "poster": "https://image.tmdb.org/t/p/w500/kfOmnlwt1rrhxmxc05X3i9mHSOs.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 14286,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kfOmnlwt1rrhxmxc05X3i9mHSOs.jpg"
+        },
+        {
+          "title": "Brothers at War",
+          "year": 2009,
+          "slug": "Filmmaker follows his brothers' military deployments",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 28858
+        },
+        {
+          "title": "The Good Soldier",
+          "year": 2009,
+          "slug": "Veterans from four wars share their experiences",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "PBS",
+          "tmdb_id": 113020
+        },
+        {
+          "title": "This Is War",
+          "year": 2012,
+          "slug": "Canadian soldiers document Afghanistan deployment",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NFB",
+          "tmdb_id": null
+        },
+        {
+          "title": "Severe Clear",
+          "year": 2009,
+          "slug": "Marine lieutenant's personal footage from Iraq invasion",
+          "poster": "https://image.tmdb.org/t/p/w500/fm3jAI1jdP0P6d80vuK2ka51Ddt.jpg",
+          "initialStreaming": "Vudu",
+          "tmdb_id": 48376,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fm3jAI1jdP0P6d80vuK2ka51Ddt.jpg"
+        },
+        {
+          "title": "Hell and Back Again",
+          "year": 2011,
+          "slug": "Marine sergeant's combat and home life struggles",
+          "poster": "https://image.tmdb.org/t/p/w500/9arEagwLFOkJK4PxGLGB0P6vrZz.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 74310,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9arEagwLFOkJK4PxGLGB0P6vrZz.jpg"
+        },
+        {
+          "title": "Where Soldiers Come From",
+          "year": 2011,
+          "slug": "National Guard unit from small town deploys to Afghanistan",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "PBS",
+          "tmdb_id": 86723
+        },
+        {
+          "title": "The War",
+          "year": 2007,
+          "slug": "Ken Burns comprehensive look at WWII through soldier stories",
+          "poster": "https://image.tmdb.org/t/p/w500/9sAWyaASakMW9f3LSXK8Br3RCED.jpg",
+          "initialStreaming": "PBS",
+          "tmdb_id": 14392,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9sAWyaASakMW9f3LSXK8Br3RCED.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

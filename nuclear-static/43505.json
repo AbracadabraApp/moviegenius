@@ -1,0 +1,144 @@
+{
+  "props": {
+    "title": "Waterfront",
+    "year": 1944,
+    "initialSlug": "Cop fights corruption in New York harbor scandal",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/pt3H4GDpFRu2BaChC7pz375cMVU.jpg",
+    "initialStreaming": null,
+    "tmdbId": 43505,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Let's clear up a common confusion - you're likely thinking of <a href=\"/movie/654\" class=\"movie-title\">On the Waterfront</a> (1954), Elia Kazan's masterpiece of labor corruption and moral courage. Marlon Brando's Terry Malloy delivered the immortal \"I coulda been a contender\" speech, revolutionizing method acting and influencing generations of performers. The film exposed the brutal reality of mob control over New York's docks, building on earlier waterfront crime films like **Clash by Night** (1952) and **Edge of the City** (1957)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "On the Waterfront",
+            "year": 1954,
+            "slug": "Marlon Brando stars as a former boxer turned longshoreman who stands up against corrupt union bosses. Won 8 Academy Awards including Best Picture.",
+            "poster": "https://image.tmdb.org/t/p/w500/fKjLZy9W8VxMOp5OoyWojmLVCQw.jpg",
+            "initialStreaming": "Prime Video, Criterion Channel",
+            "tmdb_id": 654,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fKjLZy9W8VxMOp5OoyWojmLVCQw.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The waterfront crime genre gained momentum in the 1950s when real-life journalist Malcolm Johnson's exposés inspired filmmakers. **Slaughter on Tenth Avenue** (1957) and **The Garment Jungle** (1957) followed similar themes of corruption and redemption. These films shared a gritty black-and-white aesthetic that influenced later neo-noir works like **The Harbor of New York** (1959)."
+      },
+      {
+        "type": "text",
+        "content": "Kazan's direction in On the Waterfront established a template for socially conscious crime dramas. The film's impact echoes through later works like **F.I.S.T.** (1978) with Sylvester Stallone and **Kill the Irishman** (2011), both exploring union corruption through different decades' lens. The authentic location shooting in Hoboken created a documentary-like atmosphere that later inspired films like **Mean Streets** (1973). SUBHEAD: Labor Movement on Film"
+      },
+      {
+        "type": "text",
+        "content": "On the Waterfront sparked a wave of labor-focused dramas including **Salt of the Earth** (1954) and **The Molly Maguires** (1970). These films examined worker rights and corruption from various angles, though none matched Waterfront's raw power and cultural impact. Modern films like **Made in Dagenham** (2010) and **Pride** (2014) continue this tradition of labor struggle storytelling."
+      }
+    ],
+    "exploreFurther": [
+      "The real-life inspiration behind On the Waterfront: Malcolm Johnson's Pulitzer-winning exposés",
+      "Method Acting Revolution: How Brando changed screen performance",
+      "Labor unions in American cinema: From The Grapes of Wrath to Norma Rae",
+      "Elia Kazan's controversial HUAC testimony and its impact on the film",
+      "Evolution of waterfront crime films through the decades"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Molly Maguires",
+          "year": 1970,
+          "slug": "Sean Connery leads a secret organization of Irish-American coal miners fighting for labor rights.",
+          "poster": "https://image.tmdb.org/t/p/w500/3ywN7tPWiOkbalS2gAEPzNk4Nq9.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 42345,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3ywN7tPWiOkbalS2gAEPzNk4Nq9.jpg"
+        },
+        {
+          "title": "Norma Rae",
+          "year": 1979,
+          "slug": "Sally Field stars as a factory worker who becomes involved in unionizing her textile mill.",
+          "poster": "https://image.tmdb.org/t/p/w500/6au7WBVYoKhV1jORyFSIRszb46S.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 40842,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6au7WBVYoKhV1jORyFSIRszb46S.jpg"
+        },
+        {
+          "title": "F.I.S.T.",
+          "year": 1978,
+          "slug": "Sylvester Stallone plays a warehouse worker who rises in the labor union ranks.",
+          "poster": "https://image.tmdb.org/t/p/w500/yiqQHB0vZg9O6z7VvAefV3fSPqX.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 28932,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yiqQHB0vZg9O6z7VvAefV3fSPqX.jpg"
+        },
+        {
+          "title": "Blue Collar",
+          "year": 1978,
+          "slug": "Three auto workers plan to rob their corrupt union.",
+          "poster": "https://image.tmdb.org/t/p/w500/7WBBcgzESyX1qEq9x7tg22dlORL.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 14839,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7WBBcgzESyX1qEq9x7tg22dlORL.jpg"
+        },
+        {
+          "title": "The Docker's Club",
+          "year": 1962,
+          "slug": "British drama about corruption on Liverpool's docks.",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": null
+        },
+        {
+          "title": "Hoffa",
+          "year": 1992,
+          "slug": "Jack Nicholson portrays the controversial Teamsters leader Jimmy Hoffa.",
+          "poster": "https://image.tmdb.org/t/p/w500/aMGhaSkhkFwz33hKEsBrJ3ptx3g.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10410,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aMGhaSkhkFwz33hKEsBrJ3ptx3g.jpg"
+        },
+        {
+          "title": "Salt of the Earth",
+          "year": 1954,
+          "slug": "Groundbreaking film about Mexican-American zinc miners striking.",
+          "poster": "https://image.tmdb.org/t/p/w500/yoJq58HdxLxcGFgWZkO9Ya3vDLG.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": 23620,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yoJq58HdxLxcGFgWZkO9Ya3vDLG.jpg"
+        },
+        {
+          "title": "Edge of the City",
+          "year": 1957,
+          "slug": "Sidney Poitier stars as a railroad worker facing racism and corruption.",
+          "poster": "https://image.tmdb.org/t/p/w500/eixbelLNo7TJJf7jMgCKZB22bxq.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 35129,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eixbelLNo7TJJf7jMgCKZB22bxq.jpg"
+        },
+        {
+          "title": "Slaughter on Tenth Avenue",
+          "year": 1957,
+          "slug": "A prosecutor investigates waterfront racketeering.",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Universal Vault",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Garment Jungle",
+          "year": 1957,
+          "slug": "Drama about union organizing in New York's garment district.",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Sony Classics",
+          "tmdb_id": 24468
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,176 @@
+{
+  "props": {
+    "title": "Starchaser: The Legend of Orin",
+    "year": 1985,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/zC5OU1G1eeIN1xTnXPWibolYrf6.jpg",
+    "initialStreaming": null,
+    "tmdbId": 32147,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Starchaser: The Legend of Orin** (1985) stands as a fascinating artifact of 1980s animation ambition, arriving as one of the earliest American animated films to combine traditional animation with computer-generated imagery. Following in the wake of <a href=\"/movie/11\" class=\"movie-title\">Star Wars</a> (1977), this space opera attempted to push technical boundaries while embracing darker themes unusual for animation at the time. Like <a href=\"/movie/11827\" class=\"movie-title\">Heavy Metal</a> (1981) and <a href=\"/movie/15035\" class=\"movie-title\">Fire & Ice</a> (1983), it aimed for an older audience with more complex storytelling, though its PG rating kept it accessible to older children."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Star Wars",
+            "year": 1977,
+            "slug": "The original space opera that inspired a generation of sci-fi adventures",
+            "poster": "/images/posters/star-wars.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 11,
+            "poster_url": "/images/posters/star-wars.jpg"
+          },
+          {
+            "title": "Heavy Metal",
+            "year": 1981,
+            "slug": "Adult animated anthology film mixing sci-fi, fantasy and rock music",
+            "poster": "https://image.tmdb.org/t/p/w500/h7j6uKamzHH9p7muvIYnln621IE.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 11827,
+            "poster_url": "https://image.tmdb.org/t/p/w500/h7j6uKamzHH9p7muvIYnln621IE.jpg"
+          },
+          {
+            "title": "Fire & Ice",
+            "year": 1983,
+            "slug": "Frank Frazetta and Ralph Bakshi's animated sword and sorcery epic",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 15035
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's visual approach deserves particular attention for its time period. While primitive by today's standards, its early CGI elements represented cutting-edge technology for 1985, predating even **The Great Mouse Detective** (1986) and **The Black Cauldron** (1985) in some of its technical achievements. The film was also released in 3D during its theatrical run, making it one of the first animated features to utilize the technology, years before the modern 3D revolution sparked by **The Polar Express** (2004)."
+      },
+      {
+        "type": "text",
+        "content": "Thematically, **Starchaser** draws heavily from Joseph Campbell's hero's journey framework, much like its obvious inspiration <a href=\"/movie/11\" class=\"movie-title\">Star Wars</a> (1977). The story of Orin discovering a magical sword and leading his people from underground slavery mirrors both classic mythology and contemporary sci-fi tropes. The film's darker elements - including slavery, death, and religious manipulation - set it apart from typical animated fare of its era like **The Care Bears Movie** (1985) or **The Black Cauldron** (1985). SUBHEAD: Technical Innovation and Animation History"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Last Unicorn",
+            "year": 1982,
+            "slug": "Mature animated fantasy featuring themes of mortality and loss",
+            "poster": "https://image.tmdb.org/t/p/w500/2MhDPbadE2ha83qiFwUHPgmKLnV.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 10150,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2MhDPbadE2ha83qiFwUHPgmKLnV.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's production at Korea's Hanho Heung-Up studio marked an important moment in animation globalization. While overseas animation was common by 1985, **Starchaser** represented one of the more ambitious international co-productions of its era. Its blend of traditional cel animation with computer graphics prefigured the hybrid approach that would later become standard in films like **Titan A.E.** (2000) and **Treasure Planet** (2002)."
+      }
+    ],
+    "exploreFurther": [
+      "Early CGI in Animation - The transition period between traditional and computer animation in the 1980s",
+      "Space Opera Animation - The influence of Star Wars on animated science fiction",
+      "Adult-Oriented Animation in the 1980s - The push for mature animated content",
+      "International Animation Co-production - The globalization of animation production",
+      "3D Animation History - Early experiments with stereoscopic animated features"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Rock & Rule",
+          "year": 1983,
+          "slug": "Post-apocalyptic animated rock musical",
+          "poster": "https://image.tmdb.org/t/p/w500/aNCN8xBOaEccXS0V93RBdLDSqFh.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 21356,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aNCN8xBOaEccXS0V93RBdLDSqFh.jpg"
+        },
+        {
+          "title": "Wizards",
+          "year": 1977,
+          "slug": "Ralph Bakshi's post-apocalyptic fantasy animation",
+          "poster": "https://image.tmdb.org/t/p/w500/jeAxoYepnVirGe0H7pmwviSZYul.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 16220,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jeAxoYepnVirGe0H7pmwviSZYul.jpg"
+        },
+        {
+          "title": "The Last Starfighter",
+          "year": 1984,
+          "slug": "Teen gamer becomes real space fighter",
+          "poster": "https://image.tmdb.org/t/p/w500/A7oAHTjtYnIEQjJs62IONRufooq.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 11884,
+          "poster_url": "https://image.tmdb.org/t/p/w500/A7oAHTjtYnIEQjJs62IONRufooq.jpg"
+        },
+        {
+          "title": "Flight of Dragons",
+          "year": 1982,
+          "slug": "Animated fantasy mixing science and magic",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 27273
+        },
+        {
+          "title": "Lensman",
+          "year": 1984,
+          "slug": "Japanese animated space opera",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Crunchyroll",
+          "tmdb_id": null
+        },
+        {
+          "title": "Nausicaä of the Valley of the Wind",
+          "year": 1984,
+          "slug": "Miyazaki's post-apocalyptic environmental epic",
+          "poster": "https://image.tmdb.org/t/p/w500/tcrkfB8SRPQCgwI88hQScua6nxh.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 81,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tcrkfB8SRPQCgwI88hQScua6nxh.jpg"
+        },
+        {
+          "title": "Battle Beyond the Stars",
+          "year": 1980,
+          "slug": "Low-budget Star Wars-inspired space opera",
+          "poster": "https://image.tmdb.org/t/p/w500/eExDr6W0A3XRTItD5X05tAl1avO.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 14460,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eExDr6W0A3XRTItD5X05tAl1avO.jpg"
+        },
+        {
+          "title": "Krull",
+          "year": 1983,
+          "slug": "Science fantasy adventure with similar themes",
+          "poster": "https://image.tmdb.org/t/p/w500/2dyMDv6W3ugMfaC8DEXPiqMcurD.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 849,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2dyMDv6W3ugMfaC8DEXPiqMcurD.jpg"
+        },
+        {
+          "title": "Spacehunter: Adventures in the Forbidden Zone",
+          "year": 1983,
+          "slug": "3D sci-fi adventure",
+          "poster": "https://image.tmdb.org/t/p/w500/7RAgXBII8NyApwvX5detCFbH4E3.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 26978,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7RAgXBII8NyApwvX5detCFbH4E3.jpg"
+        },
+        {
+          "title": "Metalstorm: The Destruction of Jared-Syn",
+          "year": 1983,
+          "slug": "3D post-apocalyptic sci-fi",
+          "poster": "https://image.tmdb.org/t/p/w500/8vxTrg2dik0DQdgGjzyUW321xlM.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 47364,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8vxTrg2dik0DQdgGjzyUW321xlM.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

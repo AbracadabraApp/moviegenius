@@ -1,0 +1,141 @@
+{
+  "props": {
+    "title": "In Absentia",
+    "year": 2000,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/uDHXwFNiojhO5CRN5EfkP5N9i43.jpg",
+    "initialStreaming": null,
+    "tmdbId": 178522,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**In Absentia** (2000) stands as one of the Brothers Quay's most haunting stop-motion achievements, merging their signature grotesque puppetry with live action to explore mental illness and institutionalization. The film's striking black-and-white photography, punctuated by bursts of color, draws clear influence from German Expressionist classics like <a href=\"/movie/234\" class=\"movie-title\">The Cabinet of Dr. Caligari</a> (1920) and **Nosferatu** (1922). The Quays tell the story of Emma Hauck, a woman confined to a mental asylum who obsessively writes letters to her husband, through a mesmerizing blend of animation techniques that recall their earlier masterpiece **Street of Crocodiles** (1986). Street of Crocodiles|1986|The Quay Brothers' surreal stop-motion adaptation of Bruno Schulz's story|Criterion Institute Benjamenta|1995|The Quays' first live-action feature about a mysterious boarding school|Mubi"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Cabinet of Dr. Caligari",
+            "year": 1920,
+            "slug": "The defining German Expressionist film about a hypnotist and his somnambulist puppet",
+            "poster": "https://image.tmdb.org/t/p/w500/myK9DeIsXWGKgUTZyGXg2IfFk0W.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 234,
+            "poster_url": "https://image.tmdb.org/t/p/w500/myK9DeIsXWGKgUTZyGXg2IfFk0W.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of feminine trauma and institutional confinement connects it to a broader tradition of experimental animation dealing with mental health, including Jan Švankmajer's **Alice** (1988) and David Lynch's **Eraserhead** (1977). The Quays' signature use of extreme close-ups on mechanical objects and decaying materials creates a suffocating atmosphere that mirrors their protagonist's psychological state. Their manipulation of focus and light draws from the cinematographic innovations of **The Third Man** (1949). SUBHEAD: Stop-Motion Innovation and Psychological Horror"
+      },
+      {
+        "type": "text",
+        "content": "**In Absentia** revolutionized the integration of live-action and stop-motion techniques, influencing later works like **Coraline** (2009) and **The House** (2022). The film's portrayal of obsessive writing and creative mania connects it to other experimental works about artistic compulsion like **The Red Shoes** (1948) and **Black Swan** (2010). The Quays' decision to base the work on actual asylum letters grounds their surreal imagery in historical reality, similar to how <a href=\"/movie/234\" class=\"movie-title\">The Cabinet of Dr. Caligari</a> (1920) drew from post-WWI trauma."
+      }
+    ],
+    "exploreFurther": [
+      "The History of Stop-Motion Animation from Starewitch to Švankmajer",
+      "German Expressionism's Influence on Horror Cinema",
+      "Mental Illness Representation in Experimental Film",
+      "The Brothers Quay's Animation Techniques",
+      "Historical Cases of Asylum Patients in Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Meshes of the Afternoon",
+          "year": 1943,
+          "slug": "Maya Deren's surrealist exploration of feminine psychology",
+          "poster": "https://image.tmdb.org/t/p/w500/pRLqidsUdxYM5pXLJ9mqm2n9U9K.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 27040,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pRLqidsUdxYM5pXLJ9mqm2n9U9K.jpg"
+        },
+        {
+          "title": "The Piano Tuner of Earthquakes",
+          "year": 2005,
+          "slug": "The Quay Brothers' second live-action feature",
+          "poster": "https://image.tmdb.org/t/p/w500/a3vfQ4tsbw6qcw7RJC16RFLwlaX.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 44502,
+          "poster_url": "https://image.tmdb.org/t/p/w500/a3vfQ4tsbw6qcw7RJC16RFLwlaX.jpg"
+        },
+        {
+          "title": "Dimensions of Dialogue",
+          "year": 1982,
+          "slug": "Švankmajer's stop-motion meditation on human communication",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Repulsion",
+          "year": 1965,
+          "slug": "Polanski's psychological horror about feminine isolation",
+          "poster": "https://image.tmdb.org/t/p/w500/dtyCKEPLqv9wxyVazL4b843vtUb.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 11481,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dtyCKEPLqv9wxyVazL4b843vtUb.jpg"
+        },
+        {
+          "title": "The Devil's Backbone",
+          "year": 2001,
+          "slug": "Del Toro's gothic tale of institutional horror",
+          "poster": "https://image.tmdb.org/t/p/w500/iP1z1aJzPnkP8FHg77TS7ukqoEZ.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 1433,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iP1z1aJzPnkP8FHg77TS7ukqoEZ.jpg"
+        },
+        {
+          "title": "Persona",
+          "year": 1966,
+          "slug": "Bergman's experimental study of feminine identity",
+          "poster": "https://image.tmdb.org/t/p/w500/9QlqnRNbzb78lRiRPAP1ufmoZko.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 797,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9QlqnRNbzb78lRiRPAP1ufmoZko.jpg"
+        },
+        {
+          "title": "The Wolfhouse",
+          "year": 2018,
+          "slug": "Experimental animation about trauma and escape",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Begotten",
+          "year": 1990,
+          "slug": "Experimental horror using manipulated black and white photography",
+          "poster": "https://image.tmdb.org/t/p/w500/rvgYcVToOHe0gKWtF3mz6SvM4Aw.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 1483,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rvgYcVToOHe0gKWtF3mz6SvM4Aw.jpg"
+        },
+        {
+          "title": "Spider",
+          "year": 2002,
+          "slug": "Cronenberg's study of mental illness and memory",
+          "poster": "https://image.tmdb.org/t/p/w500/zvm4WuYxTiGkRagRqHUey0meRQL.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 9613,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zvm4WuYxTiGkRagRqHUey0meRQL.jpg"
+        },
+        {
+          "title": "The Lighthouse",
+          "year": 2019,
+          "slug": "Psychological horror about isolation and madness",
+          "poster": "https://image.tmdb.org/t/p/w500/f1tIYarTbkBdIT1aW0gzelDwknv.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 503919,
+          "poster_url": "https://image.tmdb.org/t/p/w500/f1tIYarTbkBdIT1aW0gzelDwknv.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

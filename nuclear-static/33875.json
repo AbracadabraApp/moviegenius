@@ -1,0 +1,137 @@
+{
+  "props": {
+    "title": "Pokémon Heroes",
+    "year": 2002,
+    "initialSlug": "Unleash the power of legends.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/eySv5rdYLW1k6LxepxCNl8ND26R.jpg",
+    "initialStreaming": null,
+    "tmdbId": 33875,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Pokémon Heroes** (2002) marks a fascinating shift in the Pokémon film series, trading the usual woodland adventures for the water-laden channels of Alto Mare, a city clearly inspired by Venice, Italy. This fifth entry in the theatrical Pokémon series brings sophisticated animation and mature themes about conservation and sacrifice, particularly through the legendary Pokémon Latios and Latias. The film's aquatic setting creates stunning visual sequences that rival **Spirited Away** (2001) in their fluid beauty, while the urban Italian-inspired backdrop provides a refreshing change from the franchise's typical natural environments."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Pokémon: The First Movie",
+            "year": 1999,
+            "slug": "Mewtwo's origin story explores genetic engineering and identity, featuring intense psychological themes",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 10228
+          },
+          {
+            "title": "Pokémon 3: The Movie",
+            "year": 2000,
+            "slug": "Ancient Unown Pokémon create reality-bending illusions in a young girl's grief-driven story",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 10991
+          },
+          {
+            "title": "Pokémon 4Ever",
+            "year": 2001,
+            "slug": "Time-travel narrative featuring Celebi and environmental conservation themes",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 12600
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's emphasis on urban architecture and water-based action sequences created a template that influenced later animated features like **Big Hero 6** (2014) and **The Sea Beast** (2022). The brother-sister dynamic between Latios and Latias introduces more complex family relationships than previous Pokémon films, while the shape-shifting abilities of Latias push the boundaries of identity themes common in Japanese animation. SUBHEAD: Technical Innovation and Cultural Impact"
+      },
+      {
+        "type": "text",
+        "content": "**Pokémon Heroes** pioneered CGI integration within traditional animation for the franchise, particularly in the thrilling water chase sequences. This technical achievement paved the way for hybrid animation styles in later films like **The Girl Who Leapt Through Time** (2006) and **Summer Wars** (2009). The movie's European setting also marked Pokemon's first significant step toward incorporating diverse global cultures, a trend that would continue with locations in later games and films."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of CGI in Pokémon Films",
+      "Venetian Architecture's Influence on Anime Settings",
+      "Legendary Pokémon as Mythological Figures",
+      "Environmental Themes in Children's Animation",
+      "Sibling Relationships in Animated Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Castle in the Sky",
+          "year": 1986,
+          "slug": "Miyazaki's adventure featuring ancient technology and flying cities",
+          "poster": "https://image.tmdb.org/t/p/w500/41XxSsJc5OrulP0m7TrrUeO2hoz.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10515,
+          "poster_url": "https://image.tmdb.org/t/p/w500/41XxSsJc5OrulP0m7TrrUeO2hoz.jpg"
+        },
+        {
+          "title": "Detective Pikachu",
+          "year": 2019,
+          "slug": "Live-action Pokémon noir mystery in urban setting",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 447404
+        },
+        {
+          "title": "Ponyo",
+          "year": 2008,
+          "slug": "Magical sea-based adventure with environmental themes",
+          "poster": "https://image.tmdb.org/t/p/w500/yp8vEZflGynlEylxEesbYasc06i.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 12429,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yp8vEZflGynlEylxEesbYasc06i.jpg"
+        },
+        {
+          "title": "Howl's Moving Castle",
+          "year": 2004,
+          "slug": "Fantasy adventure with shape-shifting characters",
+          "poster": "https://image.tmdb.org/t/p/w500/23hUJh7JdO23SpgUB5oiFDQk2wX.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 4935,
+          "poster_url": "https://image.tmdb.org/t/p/w500/23hUJh7JdO23SpgUB5oiFDQk2wX.jpg"
+        },
+        {
+          "title": "The Secret World of Arrietty",
+          "year": 2010,
+          "slug": "Detailed urban fantasy with unique perspectives",
+          "poster": "https://image.tmdb.org/t/p/w500/3lSRaSjDp2nkXMQkzzjpRi3035O.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 51739,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3lSRaSjDp2nkXMQkzzjpRi3035O.jpg"
+        },
+        {
+          "title": "Pokémon: The Rise of Darkrai",
+          "year": 2007,
+          "slug": "Dream-based narrative with architectural focus",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 25961
+        },
+        {
+          "title": "Dragon Quest: Your Story",
+          "year": 2019,
+          "slug": "Video game adaptation with similar visual style",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 592867
+        },
+        {
+          "title": "Mary and the Witch's Flower",
+          "year": 2017,
+          "slug": "Magical adventure with transformation themes",
+          "poster": "https://image.tmdb.org/t/p/w500/lq3OJQiJ8hlCr23LAdHbeU3eqBF.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 430447,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lq3OJQiJ8hlCr23LAdHbeU3eqBF.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}
