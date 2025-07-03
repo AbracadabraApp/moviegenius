@@ -91,6 +91,84 @@ async function getAllNuclearMovies() {
 }
 
 /**
+ * Build a movie title lookup from all movies in sections
+ */
+function buildMovieLookup(sections, currentTitle) {
+  const movieLookup = new Map();
+  
+  sections.forEach(section => {
+    if (section.type === 'movies' && section.movies) {
+      section.movies.forEach(movie => {
+        if (movie.title && movie.tmdb_id && movie.title !== currentTitle) {
+          const key = `${movie.title.toLowerCase().trim()} (${movie.year})`;
+          movieLookup.set(key, {
+            title: movie.title,
+            tmdb_id: movie.tmdb_id,
+            year: movie.year
+          });
+        }
+      });
+    }
+  });
+  
+  return movieLookup;
+}
+
+/**
+ * Process text content to convert movie mentions to direct TMDB links
+ * Applies filterCurrentMovie business logic to prevent self-referential links
+ */
+function processTextLinks(content, movieLookup, currentTitle) {
+  if (!content || typeof content !== 'string') {
+    return content;
+  }
+  
+  let processedContent = content;
+  
+  // Pattern for **Movie Title** (Year) format
+  const moviePattern = /\*\*([^*]+)\*\* \((\d{4})\)/g;
+  const matches = [];
+  let match;
+  
+  // Collect all matches first
+  while ((match = moviePattern.exec(content)) !== null) {
+    const title = match[1].trim();
+    const year = parseInt(match[2]);
+    const lookupKey = `${title.toLowerCase()} (${year})`;
+    
+    // Skip self-referential links (business logic)
+    if (title.toLowerCase().trim() === currentTitle.toLowerCase().trim()) {
+      console.log(`🚫 Skipping self-referential link: ${title}`);
+      continue;
+    }
+    
+    // Look up TMDB ID
+    const movieData = movieLookup.get(lookupKey);
+    if (movieData) {
+      matches.push({
+        fullMatch: match[0],
+        title: title,
+        year: year,
+        tmdbId: movieData.tmdb_id,
+        start: match.index,
+        end: match.index + match[0].length
+      });
+      console.log(`🔗 Found linkable movie: ${title} (${year}) -> /movie/${movieData.tmdb_id}`);
+    } else {
+      console.log(`❓ No TMDB ID found for: ${title} (${year})`);
+    }
+  }
+  
+  // Process matches in reverse order to maintain positions
+  for (const movieMatch of matches.reverse()) {
+    const link = `<a href="/movie/${movieMatch.tmdbId}" class="movie-title">${movieMatch.title}</a> (${movieMatch.year})`;
+    processedContent = processedContent.slice(0, movieMatch.start) + link + processedContent.slice(movieMatch.end);
+  }
+  
+  return processedContent;
+}
+
+/**
  * Generate static page data for a movie
  */
 async function generateMovieStaticData(tmdbId) {
@@ -118,6 +196,21 @@ async function generateMovieStaticData(tmdbId) {
       return { success: false, tmdbId, error: 'No analysis data' };
     }
 
+    // Build movie lookup for text link processing
+    const movieLookup = buildMovieLookup(analysisData.sections, movieEntry.title);
+    console.log(`🔍 Built movie lookup with ${movieLookup.size} movies for ${movieEntry.title}`);
+    
+    // Process text sections to convert movie mentions to direct links
+    const processedSections = analysisData.sections.map(section => {
+      if (section.type === 'text' && section.content) {
+        return {
+          ...section,
+          content: processTextLinks(section.content, movieLookup, movieEntry.title)
+        };
+      }
+      return section;
+    });
+
     // Build static page props (matching getStaticProps structure)
     const staticData = {
       props: {
@@ -129,7 +222,7 @@ async function generateMovieStaticData(tmdbId) {
         tmdbId: movieEntry.tmdb_id,
         error: null,
         hasAnalysis: true,
-        sections: analysisData.sections,
+        sections: processedSections, // Use processed sections with direct links
         exploreFurther: analysisData.exploreFurther,
         moreIdeas: analysisData.moreIdeas
       },
