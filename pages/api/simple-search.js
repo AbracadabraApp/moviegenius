@@ -159,7 +159,33 @@ export default async function handler(req, res) {
       }).slice(0, 20);
     }
 
-    console.log(`✅ Found ${movies.length} movies for "${searchQuery}"`);
+    console.log(`✅ Found ${movies.length} movies in database for "${searchQuery}"`);
+
+    // If no results in database, try TMDB search as fallback
+    if (!movies || movies.length === 0) {
+      console.log(`🔍 No database results, searching TMDB for "${searchQuery}"`);
+      try {
+        const { searchTMDB } = await import('../../lib/services/tmdb-search.js');
+        const tmdbResults = await searchTMDB(searchQuery);
+        
+        if (tmdbResults && tmdbResults.length > 0) {
+          // Convert TMDB results to our format
+          movies = tmdbResults.slice(0, 10).map(movie => ({
+            id: `tmdb_${movie.id}`, // Temporary ID for TMDB results
+            title: movie.title,
+            year: movie.release_date ? parseInt(movie.release_date.substring(0, 4)) : null,
+            tmdb_id: movie.id,
+            poster_url: movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : '/images/placeholder-poster.jpg',
+            streaming_data: null,
+            slug: null
+          }));
+          
+          console.log(`🎬 Found ${movies.length} TMDB results for "${searchQuery}"`);
+        }
+      } catch (error) {
+        console.error('TMDB search failed:', error);
+      }
+    }
 
     // V1 Feature: Provide fallback info for empty results
     const hasResults = movies && movies.length > 0;
@@ -170,7 +196,7 @@ export default async function handler(req, res) {
       hasResults,
       fallback: !hasResults ? {
         message: "We didn't find a result, but would you like to pass it on to our Movie Genius?",
-        askUrl: `/ask?q=${encodeURIComponent(searchQuery)}`
+        askUrl: `/genius?q=${encodeURIComponent(searchQuery)}`
       } : null
     });
 
