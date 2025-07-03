@@ -1,16 +1,24 @@
 import PhoneFrame from '../components/PhoneFrame';
-import AskInputBar from '../components/AskInputBar';
+import SimpleSearch from '../components/SimpleSearch';
 import BackButton from '../components/BackButton';
+import MediaCard from '../components/MediaCard';
+import { useState } from 'react';
 import { useRouter } from 'next/router';
 
 export default function WomenDirectorsPage() {
   const router = useRouter();
+  const [searchResults, setSearchResults] = useState([]);
+  const [showSearchResults, setShowSearchResults] = useState(false);
 
-  const handleAsk = (query) => {
-    router.push({
-      pathname: '/ask',
-      query: { q: query }
-    });
+  const handleSearchResults = (results) => {
+    setSearchResults(results);
+    setShowSearchResults(results.length > 0);
+  };
+
+  const handleMovieClick = (movie) => {
+    if (movie.tmdb_id) {
+      router.push(`/movie/${movie.tmdb_id}`);
+    }
   };
 
   return (
@@ -19,21 +27,48 @@ export default function WomenDirectorsPage() {
         <BackButton variant="icon" context="theme" position="top-left" />
         
         <div style={styles.fixedInputArea}>
-          <AskInputBar onSubmit={handleAsk} />
+          <SimpleSearch 
+            onResults={handleSearchResults}
+            placeholder="Search films by women directors..."
+          />
         </div>
         
         <div style={styles.scrollableContent}>
-          <div style={styles.header}>
-            <div style={styles.themeIcon}>🎬</div>
-            <h1 style={styles.title}>Women Directors</h1>
-            <p style={styles.description}>
-              Pioneering female voices who shaped cinema from behind the camera
-            </p>
-          </div>
-          
-          <div style={styles.content}>
-            <p>Women directors content will be displayed here.</p>
-          </div>
+          {showSearchResults ? (
+            <div style={styles.searchResults}>
+              <div style={styles.resultsHeader}>
+                <span>{searchResults.length} movie{searchResults.length !== 1 ? 's' : ''} found</span>
+              </div>
+              <div style={styles.movieList}>
+                {searchResults.map((movie, index) => (
+                  <div key={`${movie.tmdb_id || movie.title}-${index}`} onClick={() => handleMovieClick(movie)} style={styles.movieItem}>
+                    <MediaCard
+                      title={movie.title}
+                      year={movie.year}
+                      initialSlug={movie.slug}
+                      initialPoster={movie.poster_url}
+                      initialStreaming={movie.streaming_data}
+                      tmdbId={movie.tmdb_id}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <>
+              <div style={styles.header}>
+                <div style={styles.themeIcon}>🎬</div>
+                <h1 style={styles.title}>Women Directors</h1>
+                <p style={styles.description}>
+                  Pioneering female voices who shaped cinema from behind the camera
+                </p>
+              </div>
+              
+              <div style={styles.content}>
+                <p>Women directors content will be displayed here.</p>
+              </div>
+            </>
+          )}
         </div>
       </div>
     </PhoneFrame>
@@ -91,5 +126,25 @@ const styles = {
     fontSize: '15px',
     color: '#581c87',
     lineHeight: '1.6',
+  },
+  searchResults: {
+    
+  },
+  resultsHeader: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: '16px',
+    fontSize: '14px',
+    color: '#6b21a8',
+  },
+  movieList: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '1px',
+    backgroundColor: 'rgba(168, 85, 247, 0.2)',
+  },
+  movieItem: {
+    cursor: 'pointer',
   },
 };
