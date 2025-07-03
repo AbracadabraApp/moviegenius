@@ -1,16 +1,24 @@
 import PhoneFrame from '../components/PhoneFrame';
-import AskInputBar from '../components/AskInputBar';
+import SimpleSearch from '../components/SimpleSearch';
 import BackButton from '../components/BackButton';
+import MediaCard from '../components/MediaCard';
+import { useState } from 'react';
 import { useRouter } from 'next/router';
 
 export default function HorrorSuspensePage() {
   const router = useRouter();
+  const [searchResults, setSearchResults] = useState([]);
+  const [showSearchResults, setShowSearchResults] = useState(false);
 
-  const handleAsk = (query) => {
-    router.push({
-      pathname: '/ask',
-      query: { q: query }
-    });
+  const handleSearchResults = (results) => {
+    setSearchResults(results);
+    setShowSearchResults(results.length > 0);
+  };
+
+  const handleMovieClick = (movie) => {
+    if (movie.tmdb_id) {
+      router.push(`/movie/${movie.tmdb_id}`);
+    }
   };
 
   return (
@@ -19,21 +27,48 @@ export default function HorrorSuspensePage() {
         <BackButton variant="icon" context="theme" position="top-left" />
         
         <div style={styles.fixedInputArea}>
-          <AskInputBar onSubmit={handleAsk} />
+          <SimpleSearch 
+            onResults={handleSearchResults}
+            placeholder="Search horror movies..."
+          />
         </div>
         
         <div style={styles.scrollableContent}>
-          <div style={styles.header}>
-            <div style={styles.themeIcon}>🎭</div>
-            <h1 style={styles.title}>Horror & Suspense</h1>
-            <p style={styles.description}>
-              From psychological thrillers to supernatural terror, explore cinema's darkest corners
-            </p>
-          </div>
-          
-          <div style={styles.content}>
-            <p>Horror and suspense content will be displayed here.</p>
-          </div>
+          {showSearchResults ? (
+            <div style={styles.searchResults}>
+              <div style={styles.resultsHeader}>
+                <span>{searchResults.length} movie{searchResults.length !== 1 ? 's' : ''} found</span>
+              </div>
+              <div style={styles.movieList}>
+                {searchResults.map((movie, index) => (
+                  <div key={`${movie.tmdb_id || movie.title}-${index}`} onClick={() => handleMovieClick(movie)} style={styles.movieItem}>
+                    <MediaCard
+                      title={movie.title}
+                      year={movie.year}
+                      initialSlug={movie.slug}
+                      initialPoster={movie.poster_url}
+                      initialStreaming={movie.streaming_data}
+                      tmdbId={movie.tmdb_id}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <>
+              <div style={styles.header}>
+                <div style={styles.themeIcon}>🎭</div>
+                <h1 style={styles.title}>Horror & Suspense</h1>
+                <p style={styles.description}>
+                  From psychological thrillers to supernatural terror, explore cinema's darkest corners
+                </p>
+              </div>
+              
+              <div style={styles.content}>
+                <p>Horror and suspense content will be displayed here.</p>
+              </div>
+            </>
+          )}
         </div>
       </div>
     </PhoneFrame>
@@ -90,5 +125,25 @@ const styles = {
     fontSize: '15px',
     color: '#e5e7eb',
     lineHeight: '1.6',
+  },
+  searchResults: {
+    
+  },
+  resultsHeader: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: '16px',
+    fontSize: '14px',
+    color: '#d1d5db',
+  },
+  movieList: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '1px',
+    backgroundColor: 'rgba(0, 0, 0, 0.3)',
+  },
+  movieItem: {
+    cursor: 'pointer',
   },
 };
