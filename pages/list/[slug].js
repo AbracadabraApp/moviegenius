@@ -10,7 +10,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import MediaCard from '../../components/MediaCard';
 import PhoneFrame from '../../components/PhoneFrame';
-import AskInputBar from '../../components/AskInputBar';
+import SimpleSearch from '../../components/SimpleSearch';
 import BackButton from '../../components/BackButton';
 
 // Parse Claude content into interleaved sections (like movie page)
@@ -212,9 +212,9 @@ export default function MovieListPage() {
           <BackButton variant="icon" context="list" position="top-left" />
           
           <div style={styles.inputArea}>
-            <AskInputBar />
+            <SimpleSearch onResults={() => {}} />
           </div>
-          <div style={styles.loadingContainer}>
+          <div style={styles.loadingContainer}:
             <div style={styles.loadingText}>Loading list...</div>
           </div>
         </div>
@@ -230,7 +230,7 @@ export default function MovieListPage() {
           <BackButton variant="icon" context="list" position="top-left" />
           
           <div style={styles.inputArea}>
-            <AskInputBar />
+            <SimpleSearch onResults={() => {}} />
           </div>
           <div style={styles.errorContainer}>
             <h2 style={styles.errorTitle}>List Not Found</h2>
@@ -248,7 +248,7 @@ export default function MovieListPage() {
         <BackButton variant="icon" context="list" position="top-left" />
         
         <div style={styles.inputArea}>
-          <AskInputBar />
+          <SimpleSearch onResults={() => {}} />
         </div>
         
         <div style={styles.content}>
