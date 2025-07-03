@@ -27,9 +27,14 @@ export default function GeniusPage() {
 
   // Simple test rotation - just pick a random hero image on each reload
   useEffect(() => {
-    const randomHero = Math.floor(Math.random() * 26) + 1;
-    setCurrentRotation(randomHero);
+    // Available hero images: 1, 2, 5, 6, 7, 8, 9, 10, 11
+    const availableHeros = [1, 2, 5, 6, 7, 8, 9, 10, 11];
+    const randomIndex = Math.floor(Math.random() * availableHeros.length);
+    setCurrentRotation(availableHeros[randomIndex]);
   }, []);
+
+  // Movie poster rotation index (0-2 for the 3 posters in each array)
+  const movieRotationIndex = Math.floor(Math.random() * 3);
 
   // 10 Education Themes - All displayed in beautiful grid
   const allEducationThemes = [
@@ -59,28 +64,28 @@ export default function GeniusPage() {
       title: 'Film Noir Fundamentals',
       description: 'Shadows, moral ambiguity, and the dark side of cinema',
       category: 'Classic Genres',
-      image: movieRotations[0][currentRotation]
+      image: movieRotations[0][movieRotationIndex]
     },
     {
       id: 'horror-evolution',
       title: 'Horror Through Time',
       description: 'From Gothic tales to psychological terror',
       category: 'Genre Evolution',
-      image: movieRotations[1][currentRotation]
+      image: movieRotations[1][movieRotationIndex]
     },
     {
       id: 'comedy-masters',
       title: 'Masters of Comedy',
       description: 'Making audiences laugh across generations',
       category: 'Comedy/Timing',
-      image: movieRotations[2][currentRotation]
+      image: movieRotations[2][movieRotationIndex]
     },
     {
       id: 'women-pioneers',
       title: 'Women Behind the Camera',
       description: 'Pioneering female voices in cinema history',
       category: 'Directors/History',
-      image: movieRotations[3][currentRotation]
+      image: movieRotations[3][movieRotationIndex]
     }
   ];
 
