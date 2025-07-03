@@ -1,0 +1,185 @@
+{
+  "props": {
+    "title": "Zombies on Broadway",
+    "year": 1945,
+    "initialSlug": "Two bumbling agents seek real zombie for radio show",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/4l2bYIwRDfe9gfT7yVoowXP8koY.jpg",
+    "initialStreaming": null,
+    "tmdbId": 30183,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Zombies on Broadway** (1945) represents a fascinating intersection of horror-comedy and vaudeville traditions, starring RKO Radio Pictures' comedy team Alan Carney and Wally Brown. The film deliberately parodies <a href=\"/movie/27130\" class=\"movie-title\">I Walked with a Zombie</a> (1943), even featuring Darby Jones reprising his zombie role, while incorporating elements of the era's popular comedy duos like Abbott and Costello, who had recently scored big with <a href=\"/movie/3073\" class=\"movie-title\">Abbott and Costello Meet Frankenstein</a> (1948). Bela Lugosi's appearance as Dr. Paul Renault adds legitimate horror credentials, following his pattern of lending gravitas to B-movie productions after <a href=\"/movie/26860\" class=\"movie-title\">White Zombie</a> (1932)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "I Walked with a Zombie",
+            "year": 1943,
+            "slug": "Val Lewton's atmospheric Caribbean horror about a nurse encountering voodoo culture",
+            "poster": "https://image.tmdb.org/t/p/w500/uoyBR8XNxPQRojujtczfG1qJezY.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 27130,
+            "poster_url": "https://image.tmdb.org/t/p/w500/uoyBR8XNxPQRojujtczfG1qJezY.jpg"
+          },
+          {
+            "title": "White Zombie",
+            "year": 1932,
+            "slug": "Bela Lugosi stars in the first feature-length zombie film",
+            "poster": "https://image.tmdb.org/t/p/w500/s5DnfWHGeCExlweIFF4JOHKyx3H.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 26860,
+            "poster_url": "https://image.tmdb.org/t/p/w500/s5DnfWHGeCExlweIFF4JOHKyx3H.jpg"
+          },
+          {
+            "title": "Abbott and Costello Meet Frankenstein",
+            "year": 1948,
+            "slug": "Classic comedy duo encounters Universal's monster lineup",
+            "poster": "https://image.tmdb.org/t/p/w500/ectRcq1y6EAmz2i72SCRHI6qUK2.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 3073,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ectRcq1y6EAmz2i72SCRHI6qUK2.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film marks an important transition point in zombie cinema, bridging the gap between the voodoo-based zombies of early films like <a href=\"/movie/26860\" class=\"movie-title\">White Zombie</a> (1932) and the modern flesh-eating zombies that would emerge with <a href=\"/movie/10331\" class=\"movie-title\">Night of the Living Dead</a> (1968). The Caribbean setting and voodoo elements connect directly to the serious horror approach of <a href=\"/movie/27130\" class=\"movie-title\">I Walked with a Zombie</a> (1943), while the comedic treatment presages later horror-comedies like <a href=\"/movie/10925\" class=\"movie-title\">Return of the Living Dead</a> (1985)."
+      },
+      {
+        "type": "text",
+        "content": "RKO's decision to pair horror elements with comedy reflects the studio's attempt to capitalize on Universal's success with monster movies while differentiating their product through humor. This approach would influence later zombie comedies like **Shaun of the Dead** (2004) and **Zombieland** (2009), though these modern entries replaced the voodoo elements with viral or supernatural causes. SUBHEAD: The Evolution of Zombie Comedy"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Night of the Living Dead",
+            "year": 1968,
+            "slug": "George Romero's groundbreaking modern zombie classic",
+            "poster": "https://image.tmdb.org/t/p/w500/inNUOa9WZGdyRXQlt7eqmHtCttl.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 10331,
+            "poster_url": "https://image.tmdb.org/t/p/w500/inNUOa9WZGdyRXQlt7eqmHtCttl.jpg"
+          },
+          {
+            "title": "Return of the Living Dead",
+            "year": 1985,
+            "slug": "Punk rock zombies demand brains in this horror comedy",
+            "poster": "https://image.tmdb.org/t/p/w500/qVTFBabgnWz4jZ8wOQRYZI5EITF.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 10925,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qVTFBabgnWz4jZ8wOQRYZI5EITF.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's vaudeville-style humor, while dated by modern standards, established a template for combining supernatural horror with broad comedy that would influence films like **Love at First Bite** (1979) and **An American Werewolf in London** (1981). The premise of urban characters confronting supernatural Caribbean forces would be revisited in films like **The Serpent and the Rainbow** (1988), though with a more serious approach."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Voodoo in Horror Cinema",
+      "RKO's Horror Productions Under Val Lewton",
+      "Comedy Teams in 1940s Hollywood",
+      "The Influence of Bela Lugosi on Horror Comedy",
+      "The Transition from Voodoo Zombies to Modern Undead"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "King of the Zombies",
+          "year": 1941,
+          "slug": "Comedy-horror about a voodoo master creating zombies",
+          "poster": "https://image.tmdb.org/t/p/w500/8aR8TjqGCHqBWlntgPK2N7nFnNC.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 23104,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8aR8TjqGCHqBWlntgPK2N7nFnNC.jpg"
+        },
+        {
+          "title": "Ghost Breakers",
+          "year": 1940,
+          "slug": "Bob Hope comedy featuring early zombie elements",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 14605
+        },
+        {
+          "title": "Revenge of the Zombies",
+          "year": 1943,
+          "slug": "John Carradine leads another voodoo zombie tale",
+          "poster": "https://image.tmdb.org/t/p/w500/tFx5BAqWTaZfCvWy8LQ5OOMdz1R.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 32862,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tFx5BAqWTaZfCvWy8LQ5OOMdz1R.jpg"
+        },
+        {
+          "title": "Scared Stiff",
+          "year": 1953,
+          "slug": "Martin and Lewis remake of Ghost Breakers",
+          "poster": "https://image.tmdb.org/t/p/w500/cnglxMYB0912uje2gC2VfMZRywo.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 33754,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cnglxMYB0912uje2gC2VfMZRywo.jpg"
+        },
+        {
+          "title": "Bowery at Midnight",
+          "year": 1942,
+          "slug": "Bela Lugosi crime thriller with zombie elements",
+          "poster": "https://image.tmdb.org/t/p/w500/lDWHvIotQkogG77wHVuMT8mF8P.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 38346,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lDWHvIotQkogG77wHVuMT8mF8P.jpg"
+        },
+        {
+          "title": "Zombies on Parade",
+          "year": 1944,
+          "slug": "Another comedy-horror zombie film of the era",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Archive",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Ghost and Mr. Chicken",
+          "year": 1966,
+          "slug": "Don Knotts comedy with supernatural elements",
+          "poster": "https://image.tmdb.org/t/p/w500/AomOgoN5kmVtMWWMKVeTPT8nVOE.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 13343,
+          "poster_url": "https://image.tmdb.org/t/p/w500/AomOgoN5kmVtMWWMKVeTPT8nVOE.jpg"
+        },
+        {
+          "title": "The Comedy of Terrors",
+          "year": 1963,
+          "slug": "Vincent Price horror-comedy with similar tone",
+          "poster": "https://image.tmdb.org/t/p/w500/r33eBrYYJphzny0jPJ9sRFYoxev.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 29486,
+          "poster_url": "https://image.tmdb.org/t/p/w500/r33eBrYYJphzny0jPJ9sRFYoxev.jpg"
+        },
+        {
+          "title": "Spooks Run Wild",
+          "year": 1941,
+          "slug": "East Side Kids meet Bela Lugosi in horror-comedy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Archive",
+          "tmdb_id": 43796
+        },
+        {
+          "title": "The Walking Dead",
+          "year": 1936,
+          "slug": "Early Karloff zombie film with serious tone",
+          "poster": "https://image.tmdb.org/t/p/w500/vRZ0NNqaQewNuN6yvw2HXowFCiu.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 27115,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vRZ0NNqaQewNuN6yvw2HXowFCiu.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

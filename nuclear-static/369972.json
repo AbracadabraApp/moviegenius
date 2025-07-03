@@ -1,0 +1,231 @@
+{
+  "props": {
+    "title": "First Man",
+    "year": 2018,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/i91mfvFcPPlaegcbOyjGgiWfZzh.jpg",
+    "initialStreaming": null,
+    "tmdbId": 369972,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**First Man** (2018) revolutionizes the space movie genre by turning inward rather than out to the stars. Director Damien Chazelle strips away the typical patriotic grandeur of films like <a href=\"/movie/9549\" class=\"movie-title\">The Right Stuff</a> (1983) to expose Neil Armstrong's raw emotional journey. The film's claustrophobic cinematography and Justin Hurwitz's haunting score create an intimate portrait of grief and obsession, as Armstrong channels the pain of losing his daughter into his relentless pursuit of the moon. This stands in stark contrast to more triumphant space narratives like <a href=\"/movie/568\" class=\"movie-title\">Apollo 13</a> (1995), choosing instead to explore the psychological toll of pushing human limits."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Right Stuff",
+            "year": 1983,
+            "slug": "Epic tale of America's first astronauts and the birth of the space program",
+            "poster": "https://image.tmdb.org/t/p/w500/btqTjNRxecYgQ1FGfVlLqSSNjz.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 9549,
+            "poster_url": "https://image.tmdb.org/t/p/w500/btqTjNRxecYgQ1FGfVlLqSSNjz.jpg"
+          },
+          {
+            "title": "Apollo 13",
+            "year": 1995,
+            "slug": "True story of NASA's dramatic rescue mission to bring three astronauts home",
+            "poster": "https://image.tmdb.org/t/p/w500/oYUZHYMwNKnE1ef4WE5Hw2a9OAY.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 568,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oYUZHYMwNKnE1ef4WE5Hw2a9OAY.jpg"
+          },
+          {
+            "title": "Hidden Figures",
+            "year": 2016,
+            "slug": "Untold story of African American women mathematicians at NASA",
+            "poster": "https://image.tmdb.org/t/p/w500/9lfz2W2uGjyow3am00rsPJ8iOyq.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 381284,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9lfz2W2uGjyow3am00rsPJ8iOyq.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Chazelle's technical approach in **First Man** draws fascinating parallels to Stanley Kubrick's <a href=\"/movie/62\" class=\"movie-title\">2001: A Space Odyssey</a> (1968), particularly in how both films emphasize the mechanical violence of space travel. The rattling spacecraft sequences feel more like survival horror than adventure, while the moon landing achieves transcendence through its stark IMAX contrast between cramped interiors and infinite horizons. This visceral approach influenced later films like <a href=\"/movie/49047\" class=\"movie-title\">Gravity</a> (2013) and **Interstellar** (2014), which similarly emphasize space travel's physical and psychological extremes."
+      },
+      {
+        "type": "text",
+        "content": "The film's personal focus marked a significant shift in how cinema portrays real-life astronauts. Unlike the square-jawed heroes of **Space Cowboys** (2000) or the ensemble dynamics of **The Martian** (2015), Ryan Gosling's Armstrong is painfully introverted, processing trauma through technical precision. This characterization shares DNA with **Whiplash** (2014), Chazelle's earlier exploration of obsession and excellence at great personal cost. SUBHEAD: The Human Cost of Space Exploration"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "2001: A Space Odyssey",
+            "year": 1968,
+            "slug": "Kubrick's groundbreaking space odyssey about human evolution and artificial intelligence",
+            "poster": "https://image.tmdb.org/t/p/w500/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 62,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg"
+          },
+          {
+            "title": "Gravity",
+            "year": 2013,
+            "slug": "Astronaut fights for survival after disaster in space",
+            "poster": "https://image.tmdb.org/t/p/w500/kZ2nZw8D681aphje8NJi8EfbL1U.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 49047,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kZ2nZw8D681aphje8NJi8EfbL1U.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**First Man** belongs to a newer wave of space films that prioritize emotional authenticity over spectacle. Like **Ad Astra** (2019) and **Moon** (2009), it explores isolation's psychological impact and questions whether reaching for the stars requires leaving part of our humanity behind. Claire Foy's Janet Armstrong emerges as the film's emotional anchor, representing the families who bore the weight of the space program's human cost, similar to the perspective shown in **October Sky** (1999)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of NASA's Public Image in Cinema",
+      "Technical Innovations in Space Film Photography",
+      "Historical Accuracy vs Dramatic License in Space Biopics",
+      "The Role of Sound Design in Space Movies",
+      "Space Race Cinema: Cold War to Modern Era"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Right Stuff",
+          "year": 1983,
+          "slug": "Mercury astronauts pioneer space travel",
+          "poster": "https://image.tmdb.org/t/p/w500/btqTjNRxecYgQ1FGfVlLqSSNjz.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 9549,
+          "poster_url": "https://image.tmdb.org/t/p/w500/btqTjNRxecYgQ1FGfVlLqSSNjz.jpg"
+        },
+        {
+          "title": "Apollo 13",
+          "year": 1995,
+          "slug": "Failed moon mission becomes survival story",
+          "poster": "https://image.tmdb.org/t/p/w500/oYUZHYMwNKnE1ef4WE5Hw2a9OAY.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 568,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oYUZHYMwNKnE1ef4WE5Hw2a9OAY.jpg"
+        },
+        {
+          "title": "Gravity",
+          "year": 2013,
+          "slug": "Stranded astronaut's fight for survival",
+          "poster": "https://image.tmdb.org/t/p/w500/kZ2nZw8D681aphje8NJi8EfbL1U.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 49047,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kZ2nZw8D681aphje8NJi8EfbL1U.jpg"
+        },
+        {
+          "title": "Interstellar",
+          "year": 2014,
+          "slug": "Space exploration to save humanity",
+          "poster": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 157336,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+        },
+        {
+          "title": "2001: A Space Odyssey",
+          "year": 1968,
+          "slug": "Philosophical space evolution journey",
+          "poster": "https://image.tmdb.org/t/p/w500/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 62,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg"
+        },
+        {
+          "title": "The Martian",
+          "year": 2015,
+          "slug": "Astronaut survives alone on Mars",
+          "poster": "https://image.tmdb.org/t/p/w500/3ndAx3weG6KDkJIRMCi5vXX6Dyb.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 286217,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3ndAx3weG6KDkJIRMCi5vXX6Dyb.jpg"
+        },
+        {
+          "title": "Ad Astra",
+          "year": 2019,
+          "slug": "Astronaut searches for father in deep space",
+          "poster": "https://image.tmdb.org/t/p/w500/xBHvZcjRiWyobQ9kxBhO6B2dtRI.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 419704,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xBHvZcjRiWyobQ9kxBhO6B2dtRI.jpg"
+        },
+        {
+          "title": "Moon",
+          "year": 2009,
+          "slug": "Solitary lunar miner discovers dark truth",
+          "poster": "https://image.tmdb.org/t/p/w500/35IU0Mq0zFsN1mYwDGts5mKc77n.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 17431,
+          "poster_url": "https://image.tmdb.org/t/p/w500/35IU0Mq0zFsN1mYwDGts5mKc77n.jpg"
+        },
+        {
+          "title": "October Sky",
+          "year": 1999,
+          "slug": "True story of amateur rocket scientist",
+          "poster": "https://image.tmdb.org/t/p/w500/1weUnrWqESWoLzMgSs64jd4GEwY.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 13466,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1weUnrWqESWoLzMgSs64jd4GEwY.jpg"
+        },
+        {
+          "title": "Space Cowboys",
+          "year": 2000,
+          "slug": "Aging astronauts return to space",
+          "poster": "https://image.tmdb.org/t/p/w500/hPzt1bbA1sUDQOl6Vujmyz2hjLN.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 5551,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hPzt1bbA1sUDQOl6Vujmyz2hjLN.jpg"
+        },
+        {
+          "title": "Sunshine",
+          "year": 2007,
+          "slug": "Mission to reignite dying sun",
+          "poster": "https://image.tmdb.org/t/p/w500/8kX6xmEwz0RpEJkeWjXTkxbOCAp.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 1272,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8kX6xmEwz0RpEJkeWjXTkxbOCAp.jpg"
+        },
+        {
+          "title": "Contact",
+          "year": 1997,
+          "slug": "Scientist makes alien contact",
+          "poster": "https://image.tmdb.org/t/p/w500/bCpMIywuNZeWt3i5UMLEIc0VSwM.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 686,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bCpMIywuNZeWt3i5UMLEIc0VSwM.jpg"
+        },
+        {
+          "title": "For All Mankind",
+          "year": 2019,
+          "slug": "Alternative space race history",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Apple TV+",
+          "tmdb_id": null
+        },
+        {
+          "title": "In the Shadow of the Moon",
+          "year": 2019,
+          "slug": "Apollo program documentary",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 530382
+        },
+        {
+          "title": "A Beautiful Mind",
+          "year": 2001,
+          "slug": "Brilliant mathematician's struggles",
+          "poster": "https://image.tmdb.org/t/p/w500/rEIg5yJdNOt9fmX4P8gU9LeNoTQ.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 453,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rEIg5yJdNOt9fmX4P8gU9LeNoTQ.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

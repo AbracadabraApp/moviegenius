@@ -1,0 +1,167 @@
+{
+  "props": {
+    "title": "20,000 Days on Earth",
+    "year": 2014,
+    "initialSlug": "A day in the life of the ultimate rock icon.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/pUmYsh07P2Bq6ip2RZmOq6mr2vF.jpg",
+    "initialStreaming": "Peacock Premium, Peacock Premium Plus, Cinefest Amazon Channel",
+    "tmdbId": 246400,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**20,000 Days on Earth** (2014) revolutionizes the music documentary format by crafting a dreamlike day-in-the-life of Nick Cave that's part truth, part fiction. Directors Iain Forsyth and Jane Pollard ditch talking heads and archival footage, instead following Cave through staged-but-genuine conversations with psychoanalyst Darian Leader, actor Ray Winstone, and former Bad Seed Blixa Bargeld. The film's power comes from its exploration of creativity itself - we watch Cave writing at his desk, rehearsing with the Bad Seeds, and reflecting on his artistic process with unflinching honesty."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Control",
+            "year": 2007,
+            "slug": "Anton Corbijn's haunting black-and-white biopic of Joy Division's Ian Curtis, featuring a stunning performance by Sam Riley",
+            "poster": "https://image.tmdb.org/t/p/w500/jOJiaOhwrDdwqTRZvZOhbndqHGp.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 5708,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jOJiaOhwrDdwqTRZvZOhbndqHGp.jpg"
+          },
+          {
+            "title": "Amy",
+            "year": 2015,
+            "slug": "Raw, intimate portrait of Amy Winehouse's rise and tragic fall through personal footage and recordings",
+            "poster": "https://image.tmdb.org/t/p/w500/qL0RepWSNUuZoeDXfyhqowVYhrn.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 331781,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qL0RepWSNUuZoeDXfyhqowVYhrn.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film represents a new wave of music documentaries that prioritize atmosphere and emotional truth over strict factual timelines. Like **Searching for Sugar Man** (2012) and **Kurt Cobain: Montage of Heck** (2015), it's more interested in capturing the essence of its subject than delivering a comprehensive biography. Cave's narration throughout feels like a gothic prose poem, matching the moody cinematography that turns Brighton's coastline into something out of one of his murder ballads."
+      },
+      {
+        "type": "text",
+        "content": "What sets **20,000 Days on Earth** apart is its meta-commentary on memory, mythology, and how artists craft their own narratives. Cave's conversations with \"ghosts\" from his past in his car feel like therapy sessions crossed with performance art. The film shares DNA with other unconventional artist portraits like **I'm Not There** (2007) and **32 Short Films About Glenn Gould** (1993) in its rejection of traditional biopic structures. SUBHEAD: The Evolution of Music Documentary"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Gimme Shelter",
+            "year": 1970,
+            "slug": "Revolutionary documentary capturing the Rolling Stones' tragic Altamont concert",
+            "poster": "https://image.tmdb.org/t/p/w500/6Cem6KcIClKit3KhKYou4aXFxob.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 132,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6Cem6KcIClKit3KhKYou4aXFxob.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While earlier music docs like **Don't Look Back** (1967) and **The Last Waltz** (1978) established the genre's conventions, **20,000 Days on Earth** belongs to a more experimental tradition. Like **Stop Making Sense** (1984) and **Meeting People Is Easy** (1998), it's less concerned with documenting reality than creating an artistic experience that matches its subject's work. The scenes of Cave in his archive, surrounded by photos and memorabilia, echo similar moments in **What Happened, Miss Simone?** (2015) but with a more surreal edge."
+      }
+    ],
+    "exploreFurther": [
+      "The evolution of the music documentary format from straight concert films to artistic interpretations",
+      "Nick Cave's transformation from post-punk provocateur to elder statesman of alternative music",
+      "The use of staged reality in documentary filmmaking",
+      "The relationship between memory, mythology and musical identity",
+      "The influence of psychoanalysis on artistic creation"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Dig!",
+          "year": 2004,
+          "slug": "Raw chronicle of the love-hate relationship between The Dandy Warhols and The Brian Jonestown Massacre",
+          "poster": "https://image.tmdb.org/t/p/w500/lTE7ODSgIvYUBNhkSnW3qL2h4mi.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 1843,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lTE7ODSgIvYUBNhkSnW3qL2h4mi.jpg"
+        },
+        {
+          "title": "One More Time with Feeling",
+          "year": 2016,
+          "slug": "Intimate portrait of Nick Cave recording after personal tragedy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 404141
+        },
+        {
+          "title": "The Devil and Daniel Johnston",
+          "year": 2005,
+          "slug": "Moving portrait of outsider musician Daniel Johnston",
+          "poster": "https://image.tmdb.org/t/p/w500/eGZjXsIRmt5oH1jyqv3c0WicdmS.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 13222,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eGZjXsIRmt5oH1jyqv3c0WicdmS.jpg"
+        },
+        {
+          "title": "Meeting People Is Easy",
+          "year": 1998,
+          "slug": "Atmospheric documentary following Radiohead during OK Computer tour",
+          "poster": "https://image.tmdb.org/t/p/w500/3YCMGftVY3MIuJDfee087z0MifX.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 19362,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3YCMGftVY3MIuJDfee087z0MifX.jpg"
+        },
+        {
+          "title": "Let's Get Lost",
+          "year": 1988,
+          "slug": "Stylish black-and-white portrait of jazz legend Chet Baker",
+          "poster": "https://image.tmdb.org/t/p/w500/voAn1Btvyy9icPHaf7HNwBfFZor.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 37640,
+          "poster_url": "https://image.tmdb.org/t/p/w500/voAn1Btvyy9icPHaf7HNwBfFZor.jpg"
+        },
+        {
+          "title": "Searching for Sugar Man",
+          "year": 2012,
+          "slug": "Amazing story of forgotten musician Rodriguez",
+          "poster": "https://image.tmdb.org/t/p/w500/ucM98HuBHSWmn44oiE83hIDc6VB.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 84334,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ucM98HuBHSWmn44oiE83hIDc6VB.jpg"
+        },
+        {
+          "title": "The Filth and the Fury",
+          "year": 2000,
+          "slug": "Julien Temple's definitive Sex Pistols documentary",
+          "poster": "https://image.tmdb.org/t/p/w500/kdNkiqmMeJfaD8ybjiV6bVOrcQ8.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 27745,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kdNkiqmMeJfaD8ybjiV6bVOrcQ8.jpg"
+        },
+        {
+          "title": "I Am Trying to Break Your Heart",
+          "year": 2002,
+          "slug": "Black-and-white doc about Wilco making Yankee Hotel Foxtrot",
+          "poster": "https://image.tmdb.org/t/p/w500/4xteF3WXtHHmk3Tc4dnLYNLZ4Yf.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 14308,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4xteF3WXtHHmk3Tc4dnLYNLZ4Yf.jpg"
+        },
+        {
+          "title": "End of the Century",
+          "year": 2003,
+          "slug": "Comprehensive history of the Ramones",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 16301
+        },
+        {
+          "title": "Mistaken for Strangers",
+          "year": 2013,
+          "slug": "Intimate portrait of The National through the eyes of the singer's brother",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 173455
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -69,6 +69,8 @@ export default function MovieDetailPage({
     window.scrollTo(0, 0);
   }, [id]); // Reset whenever the movie ID changes
 
+  // Nuclear capture disabled on client-side - happens during build time instead
+
   // Load favorites state
   useEffect(() => {
     if (title && year) {
@@ -400,6 +402,9 @@ const styles = {
 // Business logic moved to services - import them here
 import { AnalysisService } from '../../lib/services/analysis-service';
 
+
+// Nuclear capture disabled - happens during build time only
+
 // Nuclear Static Check - check for pre-built static data first
 async function checkNuclearStatic(tmdbId) {
   try {
@@ -412,6 +417,12 @@ async function checkNuclearStatic(tmdbId) {
       console.log(`🚀 Nuclear cache HIT for movie ${tmdbId}`);
       const staticData = fs.default.readFileSync(nuclearPath, 'utf8');
       const data = JSON.parse(staticData);
+      
+      // Validate nuclear data structure
+      if (!data.props || typeof data.props !== 'object') {
+        console.log(`⚠️ Invalid nuclear data structure for ${tmdbId}`);
+        return null;
+      }
       
       // Add nuclear identifier and clean up Next.js internal properties
       data.props.nuclear = true;
@@ -446,6 +457,12 @@ export async function getStaticProps({ params }) {
   }
 
   try {
+    // Check environment variables
+    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
+      console.error('Missing Supabase environment variables');
+      return { notFound: true };
+    }
+
     const { createClient } = await import('@supabase/supabase-js');
     const supabase = createClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL,
@@ -569,6 +586,15 @@ export async function getStaticProps({ params }) {
 // Simplified getStaticPaths
 export async function getStaticPaths() {
   try {
+    // Check environment variables
+    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
+      console.error('Missing Supabase environment variables in getStaticPaths');
+      return {
+        paths: [],
+        fallback: 'blocking'
+      };
+    }
+
     const { createClient } = await import('@supabase/supabase-js');
     const supabase = createClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL,

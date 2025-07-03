@@ -1,0 +1,153 @@
+{
+  "props": {
+    "title": "Space Firebird",
+    "year": 1980,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/hUdYO27T2g55OCzEdAQWz39PdnG.jpg",
+    "initialStreaming": null,
+    "tmdbId": 57635,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Space Firebird** (1980), known in Japan as Phoenix 2772, stands as one of anime's most ambitious early science fiction epics. Director Taku Sugiyama, working from Osamu Tezuka's manga, crafted a sprawling ecological fable that shares DNA with later works like <a href=\"/movie/81\" class=\"movie-title\">Nausicaä of the Valley of the Wind</a> (1984). The film's stunning hand-drawn animation creates a vivid future world where humanity has depleted Earth's resources, echoing themes that would become central to landmark anime like <a href=\"/movie/15227\" class=\"movie-title\">Galaxy Express 999</a> (1979) and **Castle in the Sky** (1986)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Nausicaä of the Valley of the Wind",
+            "year": 1984,
+            "slug": "Miyazaki's post-apocalyptic masterpiece about a princess trying to prevent ecological disaster",
+            "poster": "https://image.tmdb.org/t/p/w500/tcrkfB8SRPQCgwI88hQScua6nxh.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 81,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tcrkfB8SRPQCgwI88hQScua6nxh.jpg"
+          },
+          {
+            "title": "Galaxy Express 999",
+            "year": 1979,
+            "slug": "Epic space opera following a young boy's journey across the stars to gain an artificial body",
+            "poster": "https://image.tmdb.org/t/p/w500/3NX0cEcfZazJsvTGYVkZDk8sYFx.jpg",
+            "initialStreaming": "streaming unavailable",
+            "tmdb_id": 15227,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3NX0cEcfZazJsvTGYVkZDk8sYFx.jpg"
+          },
+          {
+            "title": "Phoenix: Chapter of Dawn",
+            "year": 1978,
+            "slug": "Earlier adaptation of Tezuka's Phoenix saga focusing on ancient Japan",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "streaming unavailable",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's environmental message and quest structure influenced a generation of subsequent anime features. Its hero Godo's journey from privileged space cadet to ecological warrior established a template followed by works like **Origin: Spirits of the Past** (2006) and **Children Who Chase Lost Voices** (2011). The mythological Phoenix creature itself became a recurring motif in anime, appearing transformed in works like **Hi no Tori 2772: Ai no CosmoZone** (1980). SUBHEAD: Visual Innovation and Legacy"
+      },
+      {
+        "type": "text",
+        "content": "Space Firebird's distinctive visual style - blending traditional Japanese art with futuristic designs - laid groundwork for the aesthetic of **Royal Space Force: The Wings of Honnêamise** (1987) and **Venus Wars** (1989). The film's ambitious scope and detailed world-building demonstrated anime's potential for serious science fiction storytelling, paving the way for later classics like **Akira** (1988) and **Ghost in the Shell** (1995)."
+      }
+    ],
+    "exploreFurther": [
+      "Osamu Tezuka's Phoenix Manga Series and its Various Adaptations",
+      "Environmental Themes in 1980s Anime",
+      "Evolution of Space Opera Anime 1970-1990",
+      "Traditional Japanese Mythology in Science Fiction Anime",
+      "Animation Techniques of Early Anime Features"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Toward the Terra",
+          "year": 1980,
+          "slug": "Space opera about psychic humans fighting for freedom",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "streaming unavailable",
+          "tmdb_id": 66628
+        },
+        {
+          "title": "Final Yamato",
+          "year": 1983,
+          "slug": "Conclusion to the space battleship saga with environmental themes",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "streaming unavailable",
+          "tmdb_id": 49734
+        },
+        {
+          "title": "Harmagedon",
+          "year": 1983,
+          "slug": "Post-apocalyptic psychic battle with detailed world-building",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "streaming unavailable",
+          "tmdb_id": 42076
+        },
+        {
+          "title": "They Were Eleven",
+          "year": 1986,
+          "slug": "Psychological sci-fi thriller set in space",
+          "poster": "https://image.tmdb.org/t/p/w500/pvjfW8ugP3Z3jjr4F8ANieuNBZg.jpg",
+          "initialStreaming": "streaming unavailable",
+          "tmdb_id": 28214,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pvjfW8ugP3Z3jjr4F8ANieuNBZg.jpg"
+        },
+        {
+          "title": "Project A-Ko",
+          "year": 1986,
+          "slug": "Action-packed parody of sci-fi anime tropes",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "streaming unavailable",
+          "tmdb_id": null
+        },
+        {
+          "title": "Robot Carnival",
+          "year": 1987,
+          "slug": "Anthology of robot-themed shorts with varied animation styles",
+          "poster": "https://image.tmdb.org/t/p/w500/2DTREQNErBYtZd1isRqdqNbbXA8.jpg",
+          "initialStreaming": "streaming unavailable",
+          "tmdb_id": 33441,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2DTREQNErBYtZd1isRqdqNbbXA8.jpg"
+        },
+        {
+          "title": "Neo Tokyo",
+          "year": 1987,
+          "slug": "Sci-fi anthology showcasing different animation techniques",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "streaming unavailable",
+          "tmdb_id": 37433
+        },
+        {
+          "title": "Lily C.A.T.",
+          "year": 1987,
+          "slug": "Alien-inspired sci-fi horror in deep space",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "streaming unavailable",
+          "tmdb_id": 67253
+        },
+        {
+          "title": "Dragon's Heaven",
+          "year": 1988,
+          "slug": "Unique mechanical design showcase with environmental themes",
+          "poster": "https://image.tmdb.org/t/p/w500/6ppfFmQfr6gkudlx31VRM8pKmui.jpg",
+          "initialStreaming": "streaming unavailable",
+          "tmdb_id": 166795,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6ppfFmQfr6gkudlx31VRM8pKmui.jpg"
+        },
+        {
+          "title": "A Wind Named Amnesia",
+          "year": 1990,
+          "slug": "Post-apocalyptic journey across devastated America",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "streaming unavailable",
+          "tmdb_id": 42070
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

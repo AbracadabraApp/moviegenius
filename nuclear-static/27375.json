@@ -1,0 +1,221 @@
+{
+  "props": {
+    "title": "Salesman",
+    "year": 1969,
+    "initialSlug": "Four door-to-door Bible salesmen chase the American dream",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/gQhe7uWygmAiQ6HNA7Jeys4wdbk.jpg",
+    "initialStreaming": null,
+    "tmdbId": 27375,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Salesman** (1969) revolutionized documentary filmmaking through its raw, intimate portrayal of four door-to-door Bible salesmen. The Maysles brothers and Charlotte Zwerin captured the crushing reality of the American Dream's dark side, predating similar themes in **Glengarry Glen Ross** (1992) and **Death of a Salesman** (1985). Their innovative \"direct cinema\" approach, using handheld cameras and natural lighting, influenced countless documentarians including Barbara Kopple's **Harlan County USA** (1976) and Steve James' **Hoop Dreams** (1994)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Salesman",
+            "year": 1969,
+            "slug": "Four Bible salesmen struggle through the brutal reality of door-to-door sales in 1960s America",
+            "poster": "https://image.tmdb.org/t/p/w500/gQhe7uWygmAiQ6HNA7Jeys4wdbk.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 27375,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gQhe7uWygmAiQ6HNA7Jeys4wdbk.jpg"
+          },
+          {
+            "title": "Grey Gardens",
+            "year": 1975,
+            "slug": "The Maysles brothers document the eccentric lives of two reclusive socialites",
+            "poster": "https://image.tmdb.org/t/p/w500/qFPj6Eh3ijA4ISRujHu4GKKeAWT.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 17346,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qFPj6Eh3ijA4ISRujHu4GKKeAWT.jpg"
+          },
+          {
+            "title": "Primary",
+            "year": 1960,
+            "slug": "Revolutionary direct cinema following JFK's Wisconsin primary campaign",
+            "poster": "https://image.tmdb.org/t/p/w500/gVloWsthHRlw719vzRWRpBqDM20.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 133,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gVloWsthHRlw719vzRWRpBqDM20.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's main subject, Paul \"The Badger\" Brennan, becomes an unforgettable portrait of quiet desperation. His declining sales and growing disillusionment mirror themes later explored in fictional works like **The Big Short** (2015) and **Inside Job** (2010). The Maysles' observational style catches every micro-expression, every defeated slump of shoulders, creating an unprecedented level of psychological intimacy that influenced later character studies like **American Movie** (1999)."
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of religious commercialization remains startlingly relevant, connecting to later documentaries like **Jesus Camp** (2006) and **Marjoe** (1972). The salesmen's practiced pitches and manipulation techniques expose the intersection of faith and capitalism, themes that would later emerge in works like **There Will Be Blood** (2007) and **Elmer Gantry** (1960). SUBHEAD: Impact on Modern Documentary Filmmaking"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Don't Look Back",
+            "year": 1967,
+            "slug": "D.A. Pennebaker's groundbreaking Bob Dylan documentary using direct cinema techniques",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 135
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Salesman**'s influence extends into modern documentary techniques, visible in works like **The Queen of Versailles** (2012) and **Exit Through the Gift Shop** (2010). Its unflinching examination of failure and desperation created a template for character-driven documentaries that prioritize observation over intervention. The film's ability to extract universal truths from specific experiences influenced later works like **Man on Wire** (2008) and **Amy** (2015)."
+      }
+    ],
+    "exploreFurther": [
+      "Direct Cinema Movement and its Impact on Modern Documentary",
+      "The Maysles Brothers' Documentary Techniques",
+      "Religion and Capitalism in American Documentary Film",
+      "Evolution of Character-Driven Documentary",
+      "Sales Culture in American Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Glengarry Glen Ross",
+          "year": 1992,
+          "slug": "Desperate real estate salesmen face a brutal sales competition",
+          "poster": "https://image.tmdb.org/t/p/w500/nGZCeCfNseq1ee3cJLBp0rH0djT.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9504,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nGZCeCfNseq1ee3cJLBp0rH0djT.jpg"
+        },
+        {
+          "title": "Death of a Salesman",
+          "year": 1985,
+          "slug": "Dustin Hoffman stars in Arthur Miller's classic tale of a failing salesman",
+          "poster": "https://image.tmdb.org/t/p/w500/tIRmjfaLmVHjGFaIcNGD3hggvbO.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 12615,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tIRmjfaLmVHjGFaIcNGD3hggvbO.jpg"
+        },
+        {
+          "title": "The Big Short",
+          "year": 2015,
+          "slug": "The story of outsiders who saw the 2008 financial crisis coming",
+          "poster": "https://image.tmdb.org/t/p/w500/scVEaJEwP8zUix8vgmMoJJ9Nq0w.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 318846,
+          "poster_url": "https://image.tmdb.org/t/p/w500/scVEaJEwP8zUix8vgmMoJJ9Nq0w.jpg"
+        },
+        {
+          "title": "Inside Job",
+          "year": 2010,
+          "slug": "Documentary examining the 2008 financial crisis",
+          "poster": "https://image.tmdb.org/t/p/w500/7yXXIWec24htucjsZS1sDuPLqw8.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 44639,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7yXXIWec24htucjsZS1sDuPLqw8.jpg"
+        },
+        {
+          "title": "American Movie",
+          "year": 1999,
+          "slug": "Documentary following a filmmaker's struggle to make his dream horror film",
+          "poster": "https://image.tmdb.org/t/p/w500/qAoIbQDnbGgiLDBUtOh7JUe5XQX.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 14242,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qAoIbQDnbGgiLDBUtOh7JUe5XQX.jpg"
+        },
+        {
+          "title": "Jesus Camp",
+          "year": 2006,
+          "slug": "Documentary about an evangelical Christian summer camp",
+          "poster": "https://image.tmdb.org/t/p/w500/6ueSRBYaicEYvR2sFHVvptKNaxI.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 1776,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6ueSRBYaicEYvR2sFHVvptKNaxI.jpg"
+        },
+        {
+          "title": "Marjoe",
+          "year": 1972,
+          "slug": "Documentary about a child preacher turned con man",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 38616
+        },
+        {
+          "title": "There Will Be Blood",
+          "year": 2007,
+          "slug": "Epic tale of oil, religion, and capitalism in early 20th century America",
+          "poster": "https://image.tmdb.org/t/p/w500/fa0RDkAlCec0STeMNAhPaF89q6U.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 7345,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fa0RDkAlCec0STeMNAhPaF89q6U.jpg"
+        },
+        {
+          "title": "The Queen of Versailles",
+          "year": 2012,
+          "slug": "Documentary following a wealthy family during the 2008 financial crisis",
+          "poster": "https://image.tmdb.org/t/p/w500/9VxMIPT3nGusKhr8084m26vdeTj.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 84327,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9VxMIPT3nGusKhr8084m26vdeTj.jpg"
+        },
+        {
+          "title": "Exit Through the Gift Shop",
+          "year": 2010,
+          "slug": "Banksy's documentary about street art and commercialization",
+          "poster": "https://image.tmdb.org/t/p/w500/ruM5ehUQlHC1Kx3SF18d6klfrAx.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 39452,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ruM5ehUQlHC1Kx3SF18d6klfrAx.jpg"
+        },
+        {
+          "title": "Man on Wire",
+          "year": 2008,
+          "slug": "Documentary about Philippe Petit's high-wire walk between the Twin Towers",
+          "poster": "https://image.tmdb.org/t/p/w500/1mS4rhIgHZcHIvf1beP9Av0Ui33.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 14048,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1mS4rhIgHZcHIvf1beP9Av0Ui33.jpg"
+        },
+        {
+          "title": "Amy",
+          "year": 2015,
+          "slug": "Documentary about the life and death of Amy Winehouse",
+          "poster": "https://image.tmdb.org/t/p/w500/qL0RepWSNUuZoeDXfyhqowVYhrn.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 331781,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qL0RepWSNUuZoeDXfyhqowVYhrn.jpg"
+        },
+        {
+          "title": "Gimme Shelter",
+          "year": 1970,
+          "slug": "Maysles brothers document the Rolling Stones' infamous Altamont concert",
+          "poster": "https://image.tmdb.org/t/p/w500/6Cem6KcIClKit3KhKYou4aXFxob.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 132,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6Cem6KcIClKit3KhKYou4aXFxob.jpg"
+        },
+        {
+          "title": "Don't Look Back",
+          "year": 1967,
+          "slug": "Bob Dylan's 1965 UK tour documented in direct cinema style",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 135
+        },
+        {
+          "title": "The Last Waltz",
+          "year": 1978,
+          "slug": "Martin Scorsese documents The Band's final concert",
+          "poster": "https://image.tmdb.org/t/p/w500/2K7CFH0AIHnGrA4yQjPCoIB5CmQ.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 13963,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2K7CFH0AIHnGrA4yQjPCoIB5CmQ.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

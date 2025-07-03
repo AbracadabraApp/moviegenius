@@ -1,0 +1,186 @@
+{
+  "props": {
+    "title": "Limelight",
+    "year": 1952,
+    "initialSlug": "When the spotlight fades, love shines.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/tDD11x3ZWCXXXwdpbGEU9uU4kh1.jpg",
+    "initialStreaming": null,
+    "tmdbId": 28971,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Limelight** (1952) represents Charlie Chaplin's most personal and poignant work, a bittersweet meditation on fame's fleeting nature. Set in 1914 London, the film follows aging vaudevillian Calvero helping young dancer Terry recover her will to perform. Chaplin draws directly from his experiences as a music hall performer and his fears of irrelevance in the television age. The film's meta-commentary feels especially powerful given it was Chaplin's last American film before his exile during the McCarthy era. His real-life son Sydney Chaplin plays Terry's love interest, adding another layer of autobiography."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Sunset Boulevard",
+            "year": 1950,
+            "slug": "A faded silent film star descends into madness while plotting her comeback",
+            "poster": "https://image.tmdb.org/t/p/w500/sC4Dpmn87oz9AuxZ15Lmip0Ftgr.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 599,
+            "poster_url": "https://image.tmdb.org/t/p/w500/sC4Dpmn87oz9AuxZ15Lmip0Ftgr.jpg"
+          },
+          {
+            "title": "All About Eve",
+            "year": 1950,
+            "slug": "An aging Broadway star faces a scheming young actress who wants to take her place",
+            "poster": "https://image.tmdb.org/t/p/w500/blBzZaatPWVuWpXEnPscMA4Xp6m.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 705,
+            "poster_url": "https://image.tmdb.org/t/p/w500/blBzZaatPWVuWpXEnPscMA4Xp6m.jpg"
+          },
+          {
+            "title": "The Artist",
+            "year": 2011,
+            "slug": "A silent film star struggles with the arrival of talkies in this Oscar-winning homage",
+            "poster": "https://image.tmdb.org/t/p/w500/z68py0ZqPgeacGPG54AGVRbNBS7.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 74643,
+            "poster_url": "https://image.tmdb.org/t/p/w500/z68py0ZqPgeacGPG54AGVRbNBS7.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The theme of aging performers confronting obsolescence runs deep through classic Hollywood. <a href=\"/movie/599\" class=\"movie-title\">Sunset Boulevard</a> (1950) takes a darker approach with Gloria Swanson's haunting portrayal of delusional Norma Desmond. <a href=\"/movie/3111\" class=\"movie-title\">A Star Is Born</a> (1954) explores similar territory through the lens of alcoholism and shifting fame. But where those films lean tragic, Limelight finds grace and dignity in its meditation on mortality and art's lasting impact."
+      },
+      {
+        "type": "text",
+        "content": "The legendary stage performance between Chaplin and Buster Keaton marks their only screen appearance together. These titans of silent comedy, both facing career twilights, deliver a masterclass in physical comedy that serves as both celebration and elegy for their era. The sequence echoes earlier collaborations like **Show People** (1928) where aging silent stars confronted changing times. SUBHEAD: Influence and Legacy"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "A Star Is Born",
+            "year": 1954,
+            "slug": "An aging star helps launch a young singer's career while his own declines",
+            "poster": "https://image.tmdb.org/t/p/w500/zpg2SzpYhZk1D1seDfIIlwaqAxT.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 3111,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zpg2SzpYhZk1D1seDfIIlwaqAxT.jpg"
+          },
+          {
+            "title": "The Entertainer",
+            "year": 1960,
+            "slug": "A failing music hall comedian struggles to stay relevant in changing times",
+            "poster": "https://image.tmdb.org/t/p/w500/s549IYn0XDUlFHJpOLIrWE1uYXv.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 18929,
+            "poster_url": "https://image.tmdb.org/t/p/w500/s549IYn0XDUlFHJpOLIrWE1uYXv.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Limelight's DNA appears in later films about performing arts and mentorship. **All That Jazz** (1979) borrows its autobiographical examination of an artist confronting mortality. **The Dresser** (1983) echoes its backstage dynamic between an aging performer and devoted companion. Even modern works like **Birdman** (2014) trace their meta-commentary on fame and relevance back to Chaplin's pioneering approach."
+      }
+    ],
+    "exploreFurther": [
+      "The History of British Music Hall Entertainment and Its Influence on Early Cinema",
+      "Charlie Chaplin's Transition from Silent to Sound Films",
+      "The Impact of McCarthyism on Hollywood Artists",
+      "The Evolution of Physical Comedy from Vaudeville to Modern Film",
+      "Autobiographical Elements in Directors' Late Career Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Great Dictator",
+          "year": 1940,
+          "slug": "Chaplin's first true sound film tackles Hitler and fascism",
+          "poster": "https://image.tmdb.org/t/p/w500/nhMXB8GTdswYMCL9nepDZymJCOr.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 914,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nhMXB8GTdswYMCL9nepDZymJCOr.jpg"
+        },
+        {
+          "title": "City Lights",
+          "year": 1931,
+          "slug": "Chaplin's masterful silent romantic comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/ugmakEL5y294I5bXgiBqApuZpwc.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 901,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ugmakEL5y294I5bXgiBqApuZpwc.jpg"
+        },
+        {
+          "title": "Modern Times",
+          "year": 1936,
+          "slug": "Chaplin's last silent film comments on industrialization",
+          "poster": "https://image.tmdb.org/t/p/w500/7uoiKOEjxBBW0AgDGQWrlfGQ90w.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 3082,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7uoiKOEjxBBW0AgDGQWrlfGQ90w.jpg"
+        },
+        {
+          "title": "Whatever Happened to Baby Jane",
+          "year": 1962,
+          "slug": "Two aging sisters and former stars descend into madness",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 10242
+        },
+        {
+          "title": "The Seventh Seal",
+          "year": 1957,
+          "slug": "A medieval knight plays chess with Death",
+          "poster": "https://image.tmdb.org/t/p/w500/wcZ21zrOsy0b52AfAF50XpTiv75.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 490,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wcZ21zrOsy0b52AfAF50XpTiv75.jpg"
+        },
+        {
+          "title": "All That Jazz",
+          "year": 1979,
+          "slug": "Semi-autobiographical tale of a self-destructive director/choreographer",
+          "poster": "https://image.tmdb.org/t/p/w500/culCEdj4srLljefgn4XKd6k3C5t.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 16858,
+          "poster_url": "https://image.tmdb.org/t/p/w500/culCEdj4srLljefgn4XKd6k3C5t.jpg"
+        },
+        {
+          "title": "The Dresser",
+          "year": 1983,
+          "slug": "A dedicated dresser helps an aging actor perform King Lear",
+          "poster": "https://image.tmdb.org/t/p/w500/kPIeNAwdN2Ds77Bf7bfZAmDrzoh.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 42122,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kPIeNAwdN2Ds77Bf7bfZAmDrzoh.jpg"
+        },
+        {
+          "title": "Birdman",
+          "year": 2014,
+          "slug": "A former superhero actor attempts a Broadway comeback",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": null
+        },
+        {
+          "title": "Cinema Paradiso",
+          "year": 1988,
+          "slug": "A filmmaker recalls his childhood love of movies",
+          "poster": "https://image.tmdb.org/t/p/w500/gCI2AeMV4IHSewhJkzsur5MEp6R.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 11216,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gCI2AeMV4IHSewhJkzsur5MEp6R.jpg"
+        },
+        {
+          "title": "Being There",
+          "year": 1979,
+          "slug": "A simple gardener becomes an unlikely celebrity",
+          "poster": "https://image.tmdb.org/t/p/w500/3RO3jbCKEey2T9bYFkYt9xpwen9.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 10322,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3RO3jbCKEey2T9bYFkYt9xpwen9.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

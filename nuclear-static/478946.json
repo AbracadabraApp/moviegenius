@@ -1,0 +1,148 @@
+{
+  "props": {
+    "title": "Schoolhouse Rock Grammar Rock",
+    "year": 1972,
+    "initialSlug": "Learning made rock-solid fun!",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/xePOVAD5hxX0kiDKk2pLwycMWd6.jpg",
+    "initialStreaming": null,
+    "tmdbId": 478946,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Schoolhouse Rock's Grammar Rock** (1972) revolutionized educational animation by turning dry English lessons into irresistible earworms. Starting with \"Three Is a Magic Number\" creator David McCall brilliantly merged Madison Avenue advertising techniques with education, leading to gems like \"Conjunction Junction\" and \"Interjections!\" The series proved animation could teach complex concepts through memorable music, influencing later shows like **The Electric Company** (1971) and **Square One Television** (1987). Bob Dorough's jazz-influenced compositions and Tom Yohe's distinctive animation style created a unique visual and musical language that's influenced educational media for 50 years."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Conjunction Junction",
+            "year": 1973,
+            "slug": "The definitive Grammar Rock segment featuring a railroad worker connecting words and trains",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": null
+          },
+          {
+            "title": "Interjections!",
+            "year": 1974,
+            "slug": "Emotional outbursts get their musical spotlight in this beloved segment",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": null
+          },
+          {
+            "title": "Verb: That's What's Happening",
+            "year": 1974,
+            "slug": "Action words come alive through funky 70s animation and music",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The series' influence extends far beyond grammar education. **The Simpsons** (1989) frequently parodies Schoolhouse Rock's style, most famously in \"I'm Just a Bill\" spoof \"I'm an Amendment to Be.\" Modern shows like **Steven Universe** (2013) and **Big City Greens** (2018) continue drawing inspiration from Grammar Rock's combination of educational content and genuine entertainment value. The original segments hold up remarkably well, avoiding dated references in favor of timeless concepts and universal humor. SUBHEAD: Musical Innovation in Educational Programming"
+      },
+      {
+        "type": "text",
+        "content": "Grammar Rock's musical approach was revolutionary for its time. Rather than talking down to kids, composers Bob Dorough and Lynn Ahrens created sophisticated jazz, rock, and folk arrangements that respected young audiences' intelligence. This influenced later educational series like **Bill Nye the Science Guy** (1993) and **Blues Clues** (1996) to develop their own distinctive musical styles. The series proved educational content could be genuinely cool, paving the way for everything from **Sesame Street's** letter of the day songs to **Odd Squad's** (2014) math-based mysteries."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Educational Animation: From Schoolhouse Rock to Modern PBS Kids",
+      "Jazz in Children's Television: Bob Dorough's Lasting Impact",
+      "Animation Techniques of the 1970s Educational Programming",
+      "Writing Educational Music: The Schoolhouse Rock Method",
+      "Grammar Rock's Influence on Modern Children's Television"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Fat Albert and the Cosby Kids",
+          "year": 1972,
+          "slug": "Educational animated series tackling social issues",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Electric Company",
+          "year": 1971,
+          "slug": "Innovative literacy education show with sketch comedy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "PBS Kids",
+          "tmdb_id": null
+        },
+        {
+          "title": "Between the Lions",
+          "year": 2000,
+          "slug": "PBS series teaching reading through puppet and animated segments",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "PBS Kids",
+          "tmdb_id": null
+        },
+        {
+          "title": "Bill Nye the Science Guy",
+          "year": 1993,
+          "slug": "Revolutionary science education series",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Square One Television",
+          "year": 1987,
+          "slug": "Mathematics education through sketches and music",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "not streaming",
+          "tmdb_id": null
+        },
+        {
+          "title": "Odd Squad",
+          "year": 2014,
+          "slug": "Modern educational series using comedy to teach math concepts",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "PBS Kids",
+          "tmdb_id": null
+        },
+        {
+          "title": "Liberty's Kids",
+          "year": 2002,
+          "slug": "American history taught through animation",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Cyberchase",
+          "year": 2002,
+          "slug": "Mathematical problem-solving adventures",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "PBS Kids",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Magic School Bus",
+          "year": 1994,
+          "slug": "Science education through animated adventures",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 62718
+        },
+        {
+          "title": "Reading Rainbow",
+          "year": 1983,
+          "slug": "Literary education series with animated segments",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

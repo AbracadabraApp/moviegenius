@@ -32,23 +32,33 @@ jest.mock('next/dynamic', () => () => {
   return DynamicComponent
 })
 
-// Mock window.scrollTo
-Object.defineProperty(window, 'scrollTo', {
-  value: jest.fn(),
-  writable: true
-})
+// Mock browser-specific APIs only in jsdom environment
+if (typeof window !== 'undefined') {
+  // Mock window.scrollTo
+  Object.defineProperty(window, 'scrollTo', {
+    value: jest.fn(),
+    writable: true
+  })
 
-// Mock localStorage
-const localStorageMock = {
-  getItem: jest.fn(),
-  setItem: jest.fn(),
-  removeItem: jest.fn(),
-  clear: jest.fn(),
+  // Mock localStorage
+  const localStorageMock = {
+    getItem: jest.fn(),
+    setItem: jest.fn(),
+    removeItem: jest.fn(),
+    clear: jest.fn(),
+  }
+  global.localStorage = localStorageMock
 }
-global.localStorage = localStorageMock
 
-// Mock fetch globally
-global.fetch = jest.fn()
+// Mock fetch globally with better default responses
+global.fetch = jest.fn(() =>
+  Promise.resolve({
+    ok: true,
+    json: () => Promise.resolve({}),
+    text: () => Promise.resolve(''),
+    status: 200,
+  })
+)
 
 // Mock IntersectionObserver
 global.IntersectionObserver = class IntersectionObserver {
@@ -68,6 +78,8 @@ global.IntersectionObserver = class IntersectionObserver {
     return null
   }
 }
+
+// API-specific mocks will be handled in individual test files
 
 // Setup cleanup after each test
 afterEach(() => {

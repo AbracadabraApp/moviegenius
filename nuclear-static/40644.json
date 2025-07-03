@@ -1,0 +1,158 @@
+{
+  "props": {
+    "title": "The Blind Swordsman: Zatoichi",
+    "year": 1989,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/uLpWIKg5DdLNan1o2u6gvQ6KIVe.jpg",
+    "initialStreaming": null,
+    "tmdbId": 40644,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The legendary Zatoichi franchise revolutionized Japanese cinema, with Shintaro Katsu defining the blind swordsman character across 26 films from 1962-1989. **The Blind Swordsman: Zatoichi** (1989) marked Katsu's final appearance as the iconic masseur-turned-warrior. The film brilliantly showcases Zatoichi's signature fighting style - appearing helpless before unleashing lightning-fast sword strikes. This culminating chapter maintains the series' masterful blend of samurai action, social commentary, and moments of zen-like contemplation that influenced later works like **Blind Fury** (1989) and Takeshi Kitano's **Zatoichi** (2003) remake."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Zatoichi",
+            "year": 1962,
+            "slug": "The first film in the series introduces the blind masseur with deadly sword skills, establishing the franchise's winning formula",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": null
+          },
+          {
+            "title": "Zatoichi Meets Yojimbo",
+            "year": 1970,
+            "slug": "A thrilling crossover featuring Toshiro Mifune's iconic character from Kurosawa's films",
+            "poster": "https://image.tmdb.org/t/p/w500/faY48OfU3M32JXWUNz8doaG3Cd4.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 42601,
+            "poster_url": "https://image.tmdb.org/t/p/w500/faY48OfU3M32JXWUNz8doaG3Cd4.jpg"
+          },
+          {
+            "title": "Zatoichi At Large",
+            "year": 1972,
+            "slug": "One of the series' best entries, with complex moral dilemmas and spectacular sword fights",
+            "poster": "https://image.tmdb.org/t/p/w500/lYcRZLdV3oeIZkeihbagW1pdi8W.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 54284,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lYcRZLdV3oeIZkeihbagW1pdi8W.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The influence of Zatoichi extends far beyond Japanese cinema. The archetype of the disabled warrior who turns perceived weakness into strength resonates through films like **Daredevil** (2003) and **Book of Eli** (2010). The series' signature mix of drama, action, and Buddhist philosophy created a template for character-driven martial arts films, evident in works like **Hero** (2002) and **House of Flying Daggers** (2004). SUBHEAD: Legacy and Modern Interpretations"
+      },
+      {
+        "type": "text",
+        "content": "Modern samurai and martial arts films continue drawing inspiration from Zatoichi's visual language and themes. **13 Assassins** (2010) echoes the series' blend of spectacular swordplay and moral complexity, while **Rurouni Kenshin** (2012) adapts similar themes of redemption and sacrifice. The franchise's influence on fight choreography - especially the quick-draw iaido style - can be seen in everything from **Kill Bill Vol. 1** (2003) to **The Last Samurai** (2003)."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Japanese sword fighting choreography in cinema",
+      "Disability representation in martial arts films",
+      "Buddhist themes in samurai movies",
+      "The impact of Zatoichi on modern action cinematography",
+      "Cross-cultural influence of Japanese chambara films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Sword of Doom",
+          "year": 1966,
+          "slug": "Dark samurai masterpiece about a nihilistic swordsman",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 19884
+        },
+        {
+          "title": "Samurai Rebellion",
+          "year": 1967,
+          "slug": "Toshiro Mifune stars in this powerful drama about duty and family",
+          "poster": "https://image.tmdb.org/t/p/w500/bKySGFUTgsZyn5i7s5htMVy4Xd2.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 27031,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bKySGFUTgsZyn5i7s5htMVy4Xd2.jpg"
+        },
+        {
+          "title": "Lady Snowblood",
+          "year": 1973,
+          "slug": "Revenge tale that heavily influenced Kill Bill",
+          "poster": "https://image.tmdb.org/t/p/w500/wkcbaqCoYEXDUnSQ6NTnB2C7H05.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 2487,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wkcbaqCoYEXDUnSQ6NTnB2C7H05.jpg"
+        },
+        {
+          "title": "Lone Wolf and Cub: Sword of Vengeance",
+          "year": 1972,
+          "slug": "Epic saga of a wandering samurai with his young son",
+          "poster": "https://image.tmdb.org/t/p/w500/uxJJIzw3lDM0RbFQMQsTTRyFO2D.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 41471,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uxJJIzw3lDM0RbFQMQsTTRyFO2D.jpg"
+        },
+        {
+          "title": "Seven Samurai",
+          "year": 1954,
+          "slug": "Kurosawa's influential masterpiece about ronin defending a village",
+          "poster": "https://image.tmdb.org/t/p/w500/8OKmBV5BUFzmozIC3pPWKHy17kx.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 346,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8OKmBV5BUFzmozIC3pPWKHy17kx.jpg"
+        },
+        {
+          "title": "Harakiri",
+          "year": 1962,
+          "slug": "Masterful critique of samurai honor codes",
+          "poster": "https://image.tmdb.org/t/p/w500/5konZnIbcAxZjP616Cz5o9bKEfW.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 14537,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5konZnIbcAxZjP616Cz5o9bKEfW.jpg"
+        },
+        {
+          "title": "The Twilight Samurai",
+          "year": 2002,
+          "slug": "Thoughtful modern take on samurai genre",
+          "poster": "https://image.tmdb.org/t/p/w500/bB2M8UF8wc9flfGWkcgkTTf8Mzr.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 12496,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bB2M8UF8wc9flfGWkcgkTTf8Mzr.jpg"
+        },
+        {
+          "title": "When the Last Sword is Drawn",
+          "year": 2003,
+          "slug": "Complex drama about the end of the samurai era",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 14455
+        },
+        {
+          "title": "Blade of the Immortal",
+          "year": 2017,
+          "slug": "Supernatural samurai action from Takashi Miike",
+          "poster": "https://image.tmdb.org/t/p/w500/bFaxg006Dt6J1k7qa7a5YuqbAhe.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 426284,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bFaxg006Dt6J1k7qa7a5YuqbAhe.jpg"
+        },
+        {
+          "title": "Three Outlaw Samurai",
+          "year": 1964,
+          "slug": "Gritty tale of ronin choosing sides in a peasant uprising",
+          "poster": "https://image.tmdb.org/t/p/w500/tLMiKmFpIFPkTwxwi18hxxd2Q8r.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 58878,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tLMiKmFpIFPkTwxwi18hxxd2Q8r.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

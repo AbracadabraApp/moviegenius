@@ -1,0 +1,170 @@
+{
+  "props": {
+    "title": "Tornado!",
+    "year": 1996,
+    "initialSlug": "Nature's wrath unleashed!",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/kzQNHyfqdbUdpJqHyqtZSQYxq5F.jpg",
+    "initialStreaming": null,
+    "tmdbId": 36983,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Tornado!** (1996) launched a wave of disaster-focused TV movies in the mid-90s, directly paving the way for <a href=\"/movie/664\" class=\"movie-title\">Twister</a> (1996) just months later. While lacking the blockbuster budget of its theatrical counterpart, Tornado! delivered intense storm chasing drama through the lens of a dedicated meteorologist team. The film's influence extends beyond its modest production, helping establish key disaster movie tropes that would define films like **The Day After Tomorrow** (2004) and <a href=\"/movie/216282\" class=\"movie-title\">Into the Storm</a> (2014)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Twister",
+            "year": 1996,
+            "slug": "Bill Paxton and Helen Hunt chase tornadoes while testing revolutionary weather tracking equipment",
+            "poster": "https://image.tmdb.org/t/p/w500/d4ie3f6QTvNw40V770Uzo87SDZn.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 664,
+            "poster_url": "https://image.tmdb.org/t/p/w500/d4ie3f6QTvNw40V770Uzo87SDZn.jpg"
+          },
+          {
+            "title": "Into the Storm",
+            "year": 2014,
+            "slug": "Found footage disaster film following storm chasers and high school students during a massive tornado outbreak",
+            "poster": "https://image.tmdb.org/t/p/w500/kBgrhrES9kMKSPxawUYV61KjlnB.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 216282,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kBgrhrES9kMKSPxawUYV61KjlnB.jpg"
+          },
+          {
+            "title": "The Perfect Storm",
+            "year": 2000,
+            "slug": "George Clooney leads a fishing crew facing a catastrophic confluence of weather systems",
+            "poster": "https://image.tmdb.org/t/p/w500/vJPoxqgpfFNbGi0HyoNsjFeLCio.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 2133,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vJPoxqgpfFNbGi0HyoNsjFeLCio.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The 1990s marked a significant shift in weather disaster films, moving from pure destruction spectacle to character-driven narratives about scientists and researchers. <a href=\"/movie/34138\" class=\"movie-title\">Night of the Twisters</a> (1996) followed Tornado!'s TV movie formula, while **Category 6: Day of Destruction** (2004) expanded the scope to multiple weather threats. These films consistently emphasize the human element against nature's raw power."
+      },
+      {
+        "type": "text",
+        "content": "Tornado! particularly excels in its practical effects work, achieving impressive tornado sequences despite budget constraints. The film's emphasis on scientific accuracy, while sometimes simplified for drama, reflects a growing trend toward incorporating real meteorological concepts into disaster narratives, later seen in films like **Geostorm** (2017) and **500 MPH Storm** (2013). SUBHEAD: The Evolution of Weather Disaster Films"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Night of the Twisters",
+            "year": 1996,
+            "slug": "A Nebraska teenager protects his family during a devastating tornado outbreak",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 34138
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Post-Tornado!, weather disaster films increasingly incorporated climate change themes. **Category 7: The End of the World** (2005) and **Absolute Zero** (2006) expanded beyond tornadoes to explore broader environmental catastrophes. These films marked a transition from localized threats to global-scale disasters, though often at the expense of the intimate human drama that made Tornado! compelling."
+      }
+    ],
+    "exploreFurther": [
+      "The Science Behind Storm Chasing Movies - From Tornado! to Modern Disaster Films",
+      "Evolution of Weather Special Effects in 1990s Television Movies",
+      "Real Storm Chasers Who Consulted on Weather Disaster Films",
+      "The Impact of Tornado! on Made-for-TV Disaster Movies",
+      "How Weather Disaster Films Address Climate Change"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Atomic Twister",
+          "year": 2002,
+          "slug": "Nuclear plant workers face tornado threat",
+          "poster": "https://image.tmdb.org/t/p/w500/krupHiuUFEXOVTdp7MUBBUMM1VF.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 24617,
+          "poster_url": "https://image.tmdb.org/t/p/w500/krupHiuUFEXOVTdp7MUBBUMM1VF.jpg"
+        },
+        {
+          "title": "Storm Cell",
+          "year": 2008,
+          "slug": "Meteorologist tracks deadly storm system",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Pluto TV",
+          "tmdb_id": 16200
+        },
+        {
+          "title": "Tornado Warning",
+          "year": 2002,
+          "slug": "Small town faces unprecedented tornado threat",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Free on YouTube",
+          "tmdb_id": 161502
+        },
+        {
+          "title": "Nature Unleashed: Tornado",
+          "year": 2004,
+          "slug": "Storm chasers pursue deadly tornado outbreak",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Ice Twisters",
+          "year": 2009,
+          "slug": "Scientific experiment creates deadly frozen tornadoes",
+          "poster": "https://image.tmdb.org/t/p/w500/yaKcjBXIOnzOki4438QIsjxt3oD.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 34559,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yaKcjBXIOnzOki4438QIsjxt3oD.jpg"
+        },
+        {
+          "title": "Seattle Superstorm",
+          "year": 2012,
+          "slug": "Mysterious storm threatens Pacific Northwest",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Vudu",
+          "tmdb_id": 107100
+        },
+        {
+          "title": "Stonados",
+          "year": 2013,
+          "slug": "Mysterious tornado hurls deadly stone projectiles",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 222890
+        },
+        {
+          "title": "F6: Twister",
+          "year": 2012,
+          "slug": "Meteorologists face unprecedented tornado strength",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Pluto TV",
+          "tmdb_id": 208466
+        },
+        {
+          "title": "Super Cyclone",
+          "year": 2012,
+          "slug": "Oil rig workers battle massive storm",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 133454
+        },
+        {
+          "title": "Weather Wars",
+          "year": 2011,
+          "slug": "Weather control technology creates devastating storms",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 80201
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

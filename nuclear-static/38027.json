@@ -1,0 +1,163 @@
+{
+  "props": {
+    "title": "Mandingo",
+    "year": 1975,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/bZXmb4HQt24OAzdKoBdSEqcFvBw.jpg",
+    "initialStreaming": null,
+    "tmdbId": 38027,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Mandingo** (1975) represents one of Hollywood's most controversial attempts to confront America's history of slavery, though its exploitation-film approach drew intense criticism. Released in the wake of blaxploitation films like **Shaft** (1971) and **Sweet Sweetback's Baadasssss Song** (1971), Mandingo takes place on a plantation where the white owners breed enslaved people like livestock. The film's graphic depiction of sexual abuse, violence, and racism shocked audiences. While some defended it as exposing slavery's brutal reality, others condemned it as sensationalistic exploitation that trivializes historical trauma."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Amistad",
+            "year": 1997,
+            "slug": "Spielberg's historical drama about an 1839 slave ship rebellion and subsequent trial",
+            "poster": "https://image.tmdb.org/t/p/w500/6QqNyIHKow0jngiQgTNBOBrLILM.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 11831,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6QqNyIHKow0jngiQgTNBOBrLILM.jpg"
+          },
+          {
+            "title": "12 Years a Slave",
+            "year": 2013,
+            "slug": "Steve McQueen's unflinching adaptation of Solomon Northup's memoir",
+            "poster": "https://image.tmdb.org/t/p/w500/xdANQijuNrJaw1HA61rDccME4Tm.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 76203,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xdANQijuNrJaw1HA61rDccME4Tm.jpg"
+          },
+          {
+            "title": "Django Unchained",
+            "year": 2012,
+            "slug": "Tarantino's revenge western addressing slavery through genre conventions",
+            "poster": "https://image.tmdb.org/t/p/w500/7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 68718,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film exists in stark contrast to sanitized Hollywood depictions like **Gone with the Wind** (1939). Later films like **Glory** (1989) and <a href=\"/movie/11831\" class=\"movie-title\">Amistad</a> (1997) would approach slavery with more historical accuracy and dignity. <a href=\"/movie/76203\" class=\"movie-title\">12 Years a Slave</a> (2013) particularly demonstrates how to portray slavery's horrors while maintaining artistic integrity and respect for the subject matter. These films focus on resistance and humanity rather than exploitation."
+      },
+      {
+        "type": "text",
+        "content": "The controversy around **Mandingo** (1975) influenced later filmmakers' approach to depicting slavery. While **Roots** (1977) became a television landmark for its historically-grounded narrative, films like **Beloved** (1998) and **The Birth of a Nation** (2016) chose to focus on individual stories of resistance and survival. Even more stylized takes like <a href=\"/movie/68718\" class=\"movie-title\">Django Unchained</a> (2012) maintain awareness of their responsibility to history. SUBHEAD: Legacy and Impact on Film History"
+      },
+      {
+        "type": "text",
+        "content": "The film's reception helped establish boundaries in depicting historical atrocities. While **Mandingo** (1975) aimed for shock value, later works like **Lincoln** (2012) and **Harriet** (2019) emphasize dignity and resilience. The film remains controversial for mixing serious historical subject matter with exploitation film techniques, leading to ongoing debates about representation and responsibility in historical cinema."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of African American representation in Hollywood",
+      "Exploitation cinema of the 1970s",
+      "Historical accuracy vs. dramatic license in slavery narratives",
+      "Impact of Roots (1977) on television depictions of slavery",
+      "Contemporary approaches to filming historical trauma"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Roots",
+          "year": 1977,
+          "slug": "Groundbreaking television miniseries about slavery across generations",
+          "poster": "https://image.tmdb.org/t/p/w500/61KlmXjUTHMoflTXECO9S6xtwvO.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 332024,
+          "poster_url": "https://image.tmdb.org/t/p/w500/61KlmXjUTHMoflTXECO9S6xtwvO.jpg"
+        },
+        {
+          "title": "Glory",
+          "year": 1989,
+          "slug": "Civil War drama about Black Union soldiers",
+          "poster": "https://image.tmdb.org/t/p/w500/pGDzBjZvzmSCIEduQBfESLMiwtp.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 9665,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pGDzBjZvzmSCIEduQBfESLMiwtp.jpg"
+        },
+        {
+          "title": "Beloved",
+          "year": 1998,
+          "slug": "Adaptation of Toni Morrison's novel about slavery's psychological impact",
+          "poster": "https://image.tmdb.org/t/p/w500/bLZo9tJijRBbxHAxMNXhs51pvC8.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 39437,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bLZo9tJijRBbxHAxMNXhs51pvC8.jpg"
+        },
+        {
+          "title": "The Last Slave Ship",
+          "year": 2022,
+          "slug": "Documentary about the Clotilda and Africatown",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Free State of Jones",
+          "year": 2016,
+          "slug": "Civil War drama about an uprising against the Confederacy",
+          "poster": "https://image.tmdb.org/t/p/w500/pKhJLNHu5Aw8BgxOJ90lCmg0j0f.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 316152,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pKhJLNHu5Aw8BgxOJ90lCmg0j0f.jpg"
+        },
+        {
+          "title": "Underground",
+          "year": 2016,
+          "slug": "Series about the Underground Railroad",
+          "poster": "https://image.tmdb.org/t/p/w500/h0SOQDrsmI5QDJcrTwWVxWLbP4x.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 729718,
+          "poster_url": "https://image.tmdb.org/t/p/w500/h0SOQDrsmI5QDJcrTwWVxWLbP4x.jpg"
+        },
+        {
+          "title": "Birth of a Nation",
+          "year": 2016,
+          "slug": "Story of Nat Turner's 1831 rebellion",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 339408
+        },
+        {
+          "title": "Emperor",
+          "year": 2020,
+          "slug": "Historical drama about Shield Green's escape from slavery",
+          "poster": "https://image.tmdb.org/t/p/w500/s6BMM5UjC9fqGWqlzeWCHJjBNyy.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 666219,
+          "poster_url": "https://image.tmdb.org/t/p/w500/s6BMM5UjC9fqGWqlzeWCHJjBNyy.jpg"
+        },
+        {
+          "title": "Harriet",
+          "year": 2019,
+          "slug": "Biopic of Harriet Tubman",
+          "poster": "https://image.tmdb.org/t/p/w500/rsUs58bDqpJJxZSOebZOMN9gzw2.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 506528,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rsUs58bDqpJJxZSOebZOMN9gzw2.jpg"
+        },
+        {
+          "title": "Lincoln",
+          "year": 2012,
+          "slug": "Spielberg's drama about passing the 13th Amendment",
+          "poster": "https://image.tmdb.org/t/p/w500/5KeUqW6DpVtf8G9VMuI2l0XIPCo.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 72976,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5KeUqW6DpVtf8G9VMuI2l0XIPCo.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

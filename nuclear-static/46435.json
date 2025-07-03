@@ -1,0 +1,167 @@
+{
+  "props": {
+    "title": "Topsy-Turvy",
+    "year": 1999,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/mW7uANe68vhmk2j6Q74jPICmrEk.jpg",
+    "initialStreaming": null,
+    "tmdbId": 46435,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Mike Leigh's **Topsy-Turvy** (1999) revolutionized the musical biopic by focusing on a specific creative crisis - Gilbert and Sullivan's struggle to produce \"The Mikado.\" Unlike broad biographical films like **Amadeus** (1984) or **Ray** (2004), Leigh zeroes in on 1884-1885, when the legendary duo nearly split. The film's meticulous attention to Victorian theater practices and backstage dynamics set new standards for period accuracy, while Jim Broadbent's portrayal of W.S. Gilbert captures both his stern perfectionism and hidden whimsy."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Mikado",
+            "year": 1939,
+            "slug": "Victor Schertzinger's adaptation of the Gilbert & Sullivan operetta, featuring Kenny Baker and Martyn Green",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 68201
+          },
+          {
+            "title": "Mr. Turner",
+            "year": 2014,
+            "slug": "Mike Leigh's other masterful period piece about painter J.M.W. Turner, starring Timothy Spall",
+            "poster": "https://image.tmdb.org/t/p/w500/rnVhl1PFSOoW5c6UhZJZt5TV98p.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 245700,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rnVhl1PFSOoW5c6UhZJZt5TV98p.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "What sets **Topsy-Turvy** (1999) apart is its revolutionary approach to showing the creative process. Unlike sanitized showbiz films like **The Greatest Showman** (2017), Leigh reveals the messy reality of artistic collaboration - the tedious rehearsals, costume fittings, personality clashes, and technical challenges. The film's lengthy sequences of theater preparation demystify the magic while somehow making it more magical, similar to how **Singin' in the Rain** (1952) pulled back the curtain on early Hollywood."
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of cultural appropriation feels startlingly modern. The Victorian fascination with \"exotic\" Japan mirrors contemporary debates about representation and authenticity. Like **The Last Emperor** (1987), it examines Western perspectives on Asian culture, but through the specific lens of theater rather than politics. The scenes of English actors learning to move \"Japanese-style\" are both amusing and uncomfortable, forcing viewers to confront historical attitudes. SUBHEAD: Victorian Theater and Cultural Context"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Gilbert and Sullivan",
+            "year": 1953,
+            "slug": "The Story of Gilbert and Sullivan starring Robert Morley and Maurice Evans",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "BritBox",
+            "tmdb_id": 258561
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While many period films feel like costume pageants, **Topsy-Turvy** (1999) uses its historical setting to explore timeless theatrical themes. The business pressures faced by the Savoy Theatre mirror modern Broadway economics. The film's attention to gas lighting, stage machinery, and performance styles provides deeper context than broader Victorian dramas like **The Young Victoria** (2009) or **The King's Speech** (2010)."
+      }
+    ],
+    "exploreFurther": [
+      "The real history of the D'Oyly Carte Opera Company and its influence on musical theater",
+      "Victorian theater practices and technologies shown in the film",
+      "The actual creation and impact of The Mikado in 1885",
+      "Mike Leigh's unique rehearsal and improvisation methods",
+      "Cultural appropriation in Victorian entertainment"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Madness of King George",
+          "year": 1994,
+          "slug": "Historical drama about King George III with similar attention to period detail",
+          "poster": "https://image.tmdb.org/t/p/w500/1dTSY023ZyBbgVSKDRuA6JLGSnZ.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 11318,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1dTSY023ZyBbgVSKDRuA6JLGSnZ.jpg"
+        },
+        {
+          "title": "Bright Star",
+          "year": 2009,
+          "slug": "Jane Campion's film about John Keats capturing similar Victorian artistic circles",
+          "poster": "https://image.tmdb.org/t/p/w500/csN6y4nq2kaBiegHaGw0DGp4plf.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 29963,
+          "poster_url": "https://image.tmdb.org/t/p/w500/csN6y4nq2kaBiegHaGw0DGp4plf.jpg"
+        },
+        {
+          "title": "An Ideal Husband",
+          "year": 1999,
+          "slug": "Oscar Wilde adaptation showing Victorian theatrical society",
+          "poster": "https://image.tmdb.org/t/p/w500/Aac3Kw7qAszSotkTNle4bvu3uuH.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 24137,
+          "poster_url": "https://image.tmdb.org/t/p/w500/Aac3Kw7qAszSotkTNle4bvu3uuH.jpg"
+        },
+        {
+          "title": "Stage Beauty",
+          "year": 2004,
+          "slug": "Period drama about Restoration theater with similar backstage focus",
+          "poster": "https://image.tmdb.org/t/p/w500/lh0u89m2OPr48TUKZSGZVoc0JmP.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 26108,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lh0u89m2OPr48TUKZSGZVoc0JmP.jpg"
+        },
+        {
+          "title": "The Dresser",
+          "year": 1983,
+          "slug": "Another intimate look at British theater life and creative partnerships",
+          "poster": "https://image.tmdb.org/t/p/w500/kPIeNAwdN2Ds77Bf7bfZAmDrzoh.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 42122,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kPIeNAwdN2Ds77Bf7bfZAmDrzoh.jpg"
+        },
+        {
+          "title": "Shakespeare in Love",
+          "year": 1998,
+          "slug": "Period piece about theater creation with similar attention to detail",
+          "poster": "https://image.tmdb.org/t/p/w500/zdW7jdzPi4J9KZR3TyY2jn3Xh5e.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1934,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zdW7jdzPi4J9KZR3TyY2jn3Xh5e.jpg"
+        },
+        {
+          "title": "Finding Neverland",
+          "year": 2004,
+          "slug": "Another film about Victorian theatrical creation",
+          "poster": "https://image.tmdb.org/t/p/w500/5JyDPH4qdr0I6pF7Bjh1Qrf1Jhh.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 866,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5JyDPH4qdr0I6pF7Bjh1Qrf1Jhh.jpg"
+        },
+        {
+          "title": "Amazing Grace",
+          "year": 2006,
+          "slug": "Victorian period piece about William Wilberforce",
+          "poster": "https://image.tmdb.org/t/p/w500/zr48JEuwxcYM03NcdJU6qWMHPtq.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 15163,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zr48JEuwxcYM03NcdJU6qWMHPtq.jpg"
+        },
+        {
+          "title": "The Importance of Being Earnest",
+          "year": 2002,
+          "slug": "Adaptation of Wilde's play with similar period setting",
+          "poster": "https://image.tmdb.org/t/p/w500/87r4e4pL4STfpdjtqNZxlyjvcMd.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 9026,
+          "poster_url": "https://image.tmdb.org/t/p/w500/87r4e4pL4STfpdjtqNZxlyjvcMd.jpg"
+        },
+        {
+          "title": "Mrs Henderson Presents",
+          "year": 2005,
+          "slug": "Story of the Windmill Theatre with similar theatrical focus",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 10773
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

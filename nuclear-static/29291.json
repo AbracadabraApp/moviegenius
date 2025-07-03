@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "Klimt",
+    "year": 2006,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/k23zlYZptToVRMJrG7KdKSGTL6o.jpg",
+    "initialStreaming": null,
+    "tmdbId": 29291,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Klimt** (2006) represents a bold but flawed attempt to capture the essence of Gustav Klimt's artistic world through director Raoul Ruiz's dreamlike lens. John Malkovich embodies the controversial Austrian painter with characteristic intensity, moving through a fragmented narrative that mirrors the ornate, gold-leafed style of Klimt's own works. The film shares DNA with other unconventional artist biopics like **Frida** (2002) and **Basquiat** (1996), but pushes further into experimental territory. Like Peter Greenaway's **The Draughtsman's Contract** (1982), it treats historical biography as a jumping-off point for formal experimentation rather than strict biographical accuracy."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Pollock",
+            "year": 2000,
+            "slug": "Ed Harris directs and stars in this raw portrait of abstract expressionist Jackson Pollock, capturing both his innovative technique and self-destructive tendencies",
+            "poster": "https://image.tmdb.org/t/p/w500/azsBSw2zw2uNHiCjTnbe9TJVEDB.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 12509,
+            "poster_url": "https://image.tmdb.org/t/p/w500/azsBSw2zw2uNHiCjTnbe9TJVEDB.jpg"
+          },
+          {
+            "title": "Mr. Turner",
+            "year": 2014,
+            "slug": "Mike Leigh's masterful look at British painter J.M.W. Turner's later years, with Timothy Spall delivering a gruff, physical performance",
+            "poster": "https://image.tmdb.org/t/p/w500/rnVhl1PFSOoW5c6UhZJZt5TV98p.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 245700,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rnVhl1PFSOoW5c6UhZJZt5TV98p.jpg"
+          },
+          {
+            "title": "At Eternity's Gate",
+            "year": 2018,
+            "slug": "Willem Dafoe embodies Vincent van Gogh in Julian Schnabel's impressionistic study of the artist's final years",
+            "poster": "https://image.tmdb.org/t/p/w500/y4LvHQoX5YunHJ2EMBSjQvOkvD9.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 491472,
+            "poster_url": "https://image.tmdb.org/t/p/w500/y4LvHQoX5YunHJ2EMBSjQvOkvD9.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The challenge of translating visual art to cinema has spawned various approaches. Robert Altman's **Vincent & Theo** (1990) took a more grounded, relationship-focused route in examining Van Gogh's life, while Julie Taymor's **Frida** (2002) incorporated magical realism and animation to represent Kahlo's interior world. **Klimt** follows the more experimental path, using deliberately disorienting editing and dream sequences to mirror its subject's ornate aesthetic. This approach connects it to films like **Caravaggio** (1986), where Derek Jarman similarly prioritized capturing an artist's sensibility over conventional narrative. SUBHEAD: The Challenge of Artistic Process on Screen"
+      },
+      {
+        "type": "text",
+        "content": "Few films have successfully captured the actual process of artistic creation without resorting to cliché. **Klimt** attempts to visualize the painter's creative mindset through fragmented imagery and golden hues, though not always successfully. Compare this to the visceral approach of <a href=\"/movie/12509\" class=\"movie-title\">Pollock</a> (2000), where Ed Harris actually learned Jackson Pollock's painting technique, or **The Mystery of Picasso** (1956), which captured the artist at work through innovative glass-painting sequences. **Girl with a Pearl Earring** (2003) took a different tack, focusing on the relationship between Vermeer and his subject while meticulously recreating the light and composition of his paintings."
+      }
+    ],
+    "exploreFurther": [
+      "The Vienna Secession movement and its influence on early 20th century art and design",
+      "Raoul Ruiz's experimental filmmaking techniques and their relationship to surrealism",
+      "The challenges of translating visual art to cinema through history",
+      "John Malkovich's portrayals of historical figures",
+      "The use of non-linear narrative in artist biopics"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Loving Vincent",
+          "year": 2017,
+          "slug": "Groundbreaking animated film painted in Van Gogh's style",
+          "poster": "https://image.tmdb.org/t/p/w500/56sq57kDm7XgyXBYrgJLumo0Jac.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 339877,
+          "poster_url": "https://image.tmdb.org/t/p/w500/56sq57kDm7XgyXBYrgJLumo0Jac.jpg"
+        },
+        {
+          "title": "Andrei Rublev",
+          "year": 1966,
+          "slug": "Tarkovsky's epic meditation on art and faith through the life of a medieval icon painter",
+          "poster": "https://image.tmdb.org/t/p/w500/910xRIUmNJrWH2hkQifBJtoPp5R.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 895,
+          "poster_url": "https://image.tmdb.org/t/p/w500/910xRIUmNJrWH2hkQifBJtoPp5R.jpg"
+        },
+        {
+          "title": "Surviving Picasso",
+          "year": 1996,
+          "slug": "Anthony Hopkins stars as the legendary artist in a portrait of his relationships",
+          "poster": "https://image.tmdb.org/t/p/w500/olcQOdg54uBYDUkZbgw2FFTBaZI.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 41843,
+          "poster_url": "https://image.tmdb.org/t/p/w500/olcQOdg54uBYDUkZbgw2FFTBaZI.jpg"
+        },
+        {
+          "title": "Séraphine",
+          "year": 2008,
+          "slug": "Powerful story of French naive painter Séraphine de Senlis",
+          "poster": "https://image.tmdb.org/t/p/w500/nSA2iRp6BxhqDPzJsdk6CXALgjr.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 14415,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nSA2iRp6BxhqDPzJsdk6CXALgjr.jpg"
+        },
+        {
+          "title": "The Mill and the Cross",
+          "year": 2011,
+          "slug": "Experimental film bringing Bruegel's paintings to life",
+          "poster": "https://image.tmdb.org/t/p/w500/3IKLkxxXf38C2hY9ONi6Lvlz1qM.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 57829,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3IKLkxxXf38C2hY9ONi6Lvlz1qM.jpg"
+        },
+        {
+          "title": "Big Eyes",
+          "year": 2014,
+          "slug": "Tim Burton's take on artist Margaret Keane's struggle for recognition",
+          "poster": "https://image.tmdb.org/t/p/w500/203HAjJcLMl7xThcTqZx4zmEGcV.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 87093,
+          "poster_url": "https://image.tmdb.org/t/p/w500/203HAjJcLMl7xThcTqZx4zmEGcV.jpg"
+        },
+        {
+          "title": "Camille Claudel",
+          "year": 1988,
+          "slug": "Isabelle Adjani as Rodin's talented and troubled protégé",
+          "poster": "https://image.tmdb.org/t/p/w500/iE32uvoYS0z1zEMwKFgCOkkDjYk.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 11709,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iE32uvoYS0z1zEMwKFgCOkkDjYk.jpg"
+        },
+        {
+          "title": "Goya in Bordeaux",
+          "year": 1999,
+          "slug": "Carlos Saura's dreamlike portrait of Goya's final years",
+          "poster": "https://image.tmdb.org/t/p/w500/yCn4Sz3uYy6a1aObs80hzMHp7hM.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 170767,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yCn4Sz3uYy6a1aObs80hzMHp7hM.jpg"
+        },
+        {
+          "title": "Edvard Munch",
+          "year": 1974,
+          "slug": "Peter Watkins' innovative biopic of the Norwegian expressionist",
+          "poster": "https://image.tmdb.org/t/p/w500/aXAkJld5UTIa0nijWvDm7DcyBe0.jpg",
+          "initialStreaming": "BFI Player",
+          "tmdb_id": 50254,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aXAkJld5UTIa0nijWvDm7DcyBe0.jpg"
+        },
+        {
+          "title": "The Color of Pomegranates",
+          "year": 1969,
+          "slug": "Surreal biography of Armenian poet-troubadour Sayat Nova",
+          "poster": "https://image.tmdb.org/t/p/w500/35Sj3VeGLj8r8sT1XbxbrgD7KfI.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 26302,
+          "poster_url": "https://image.tmdb.org/t/p/w500/35Sj3VeGLj8r8sT1XbxbrgD7KfI.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

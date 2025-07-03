@@ -1,0 +1,127 @@
+{
+  "props": {
+    "title": "Dragon Ball Z: The Movie",
+    "year": 1989,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/ywtyEDTM2YO7qod7USNNwhrAfvA.jpg",
+    "initialStreaming": null,
+    "tmdbId": 28609,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Dragon Ball Z: Dead Zone** (1989) launched Akira Toriyama's martial arts epic into theaters, setting the template for DBZ's signature blend of supernatural combat and power escalation. The film established the now-familiar pattern of introducing powerful new villains threatening Earth, while showcasing the franchise's distinctive animation style that influenced countless anime features. Unlike the TV series' extended arcs, Dead Zone delivered concentrated action in its tight 45-minute runtime, particularly in the climactic battle between Goku and Garlic Jr."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Dragon Ball Z: The World's Strongest",
+            "year": 1990,
+            "slug": "Dr. Wheelo seeks the world's strongest warrior, leading to an intense showdown with Goku",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Crunchyroll",
+            "tmdb_id": 39100
+          },
+          {
+            "title": "Dragon Ball Z: The Tree of Might",
+            "year": 1990,
+            "slug": "A powerful Saiyan warrior plants a devastating tree that threatens to drain Earth's energy",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Funimation",
+            "tmdb_id": 39101
+          },
+          {
+            "title": "Dragon Ball Z: Lord Slug",
+            "year": 1991,
+            "slug": "An ancient Super Namekian attempts to terraform Earth into a frozen wasteland",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Crunchyroll",
+            "tmdb_id": 39102
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The early 1990s saw Dragon Ball Z movies hitting their stride with increasingly epic scope. **Dragon Ball Z: Cooler's Revenge** (1991) introduced Frieza's brother in a revenge plot that expanded the franchise's cosmic scale. **Dragon Ball Z: The Return of Cooler** (1992) pushed the boundaries of contemporary anime animation with its metallic villain designs and space-based battles. These films maintained theatrical quality while weaving between the TV series' major arcs."
+      },
+      {
+        "type": "text",
+        "content": "The Android/Cell saga era brought technological threats to the forefront. **Dragon Ball Z: Super Android 13** (1992) explored artificial warriors, while **Dragon Ball Z: Bojack Unbound** (1993) marked Gohan's emergence as Earth's defender following the Cell Games. The films consistently delivered concentrated doses of what fans loved about the series - transformations, energy battles, and Earth-shattering combat - while maintaining their own continuity separate from the main storyline. SUBHEAD: The Evolution of Dragon Ball Z Films"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Dragon Ball Z: Broly – The Legendary Super Saiyan",
+            "year": 1993,
+            "slug": "The debut of fan-favorite villain Broly, a destructive Saiyan warrior of incredible power",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Funimation",
+            "tmdb_id": 34433
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The mid-1990s saw the films reach new heights with the Broly trilogy. **Dragon Ball Z: Broly – Second Coming** (1994) and **Dragon Ball Z: Bio-Broly** (1994) showcased how the movies could build their own mythology while **Dragon Ball Z: Fusion Reborn** (1995) demonstrated incredible animation quality and creative freedom. These later films weren't afraid to experiment with tone and style, from the horror elements of Bio-Broly to the dimensional-hopping adventure of Fusion Reborn."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Anime Theatrical Releases in the 1990s",
+      "Akira Toriyama's Influence on Shonen Action Films",
+      "Animation Techniques in Dragon Ball Z Movies vs TV Series",
+      "The Impact of Dragon Ball Z on Western Animation Distribution",
+      "Character Design Evolution Throughout the DBZ Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Dragon Ball Z: The History of Trunks",
+          "year": 1993,
+          "slug": "Post-apocalyptic special showing an alternate timeline where the Androids won",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Funimation",
+          "tmdb_id": 39324
+        },
+        {
+          "title": "Dragon Ball Z: Wrath of the Dragon",
+          "year": 1995,
+          "slug": "The last DBZ film of the original run features the mysterious Tapion",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Crunchyroll",
+          "tmdb_id": 39108
+        },
+        {
+          "title": "Dragon Ball: The Path to Power",
+          "year": 1996,
+          "slug": "A retelling of the original Dragon Ball story with updated animation",
+          "poster": "https://image.tmdb.org/t/p/w500/eZkTQ4epHmVygmNnUCGAOzFqQH9.jpg",
+          "initialStreaming": "Funimation",
+          "tmdb_id": 39148,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eZkTQ4epHmVygmNnUCGAOzFqQH9.jpg"
+        },
+        {
+          "title": "Dragon Ball Z: Bardock - The Father of Goku",
+          "year": 1990,
+          "slug": "Special focusing on Goku's father and the destruction of Planet Vegeta",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Funimation",
+          "tmdb_id": 39323
+        },
+        {
+          "title": "Dragon Ball Super: Broly",
+          "year": 2018,
+          "slug": "Modern reimagining of Broly's character with stunning animation",
+          "poster": "https://image.tmdb.org/t/p/w500/5vx8zZ7fDsA8KMO6fiVs3pZmNWQ.jpg",
+          "initialStreaming": "Funimation",
+          "tmdb_id": 503314,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5vx8zZ7fDsA8KMO6fiVs3pZmNWQ.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

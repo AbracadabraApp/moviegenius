@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "Peter and the Wolf",
+    "year": 1946,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/jjXh8JWgWXVXKfNOdY2915yyPQD.jpg",
+    "initialStreaming": null,
+    "tmdbId": 31518,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Disney's animated adaptation of **Peter and the Wolf** (1946) revolutionized the marriage of classical music and animation. Sergei Prokofiev's symphonic fairy tale found its perfect visual companion in Disney's bold character designs, where each instrument represents a specific character - the bird's flute, the duck's oboe, Peter's string section. This pioneering work influenced later musical animations like **Fantasia 2000** (1999) and **The Carnival of the Animals** (1976), establishing a template for how abstract musical concepts could be made accessible through animation."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Peter and the Wolf",
+            "year": 1946,
+            "slug": "Disney's animated adaptation of Prokofiev's classical composition, featuring distinctive character designs matched to specific instruments",
+            "poster": "https://image.tmdb.org/t/p/w500/jjXh8JWgWXVXKfNOdY2915yyPQD.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 31518,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jjXh8JWgWXVXKfNOdY2915yyPQD.jpg"
+          },
+          {
+            "title": "Make Mine Music",
+            "year": 1946,
+            "slug": "Post-WWII Disney package film containing Peter and the Wolf alongside other musical segments",
+            "poster": "https://image.tmdb.org/t/p/w500/1Mu98243emXAKy8iZfymUJDgTpS.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 20343,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1Mu98243emXAKy8iZfymUJDgTpS.jpg"
+          },
+          {
+            "title": "Fantasia",
+            "year": 1940,
+            "slug": "Disney's ambitious marriage of classical music and animation, setting the stage for Peter and the Wolf",
+            "poster": "https://image.tmdb.org/t/p/w500/5m9njnidjR0syG2gpVPVgcEMB2X.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 756,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5m9njnidjR0syG2gpVPVgcEMB2X.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The 1940s marked Disney's experimental period with musical animation. While <a href=\"/movie/756\" class=\"movie-title\">Fantasia</a> (1940) aimed for high art, **Peter and the Wolf** (1946) found the sweet spot between education and entertainment. Sterling Holloway's warm narration guides viewers through the musical storytelling, making complex orchestral concepts digestible for young audiences. This educational approach influenced works like **Young Person's Guide to the Orchestra** (1946) and laid groundwork for shows like **Prokofiev's Peter and the Wolf** (2006)."
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends beyond music education. Its character-driven approach to representing musical instruments inspired countless works, from **The Cat Concerto** (1947) to modern pieces like **The Piano** (2006). The visual language developed here - using color, movement, and personality to represent musical elements - became fundamental to music visualization in animation. SUBHEAD: Modern Adaptations and Legacy"
+      },
+      {
+        "type": "text",
+        "content": "Recent adaptations like Suzie Templeton's stop-motion **Peter & the Wolf** (2006) prove the story's enduring appeal while bringing fresh visual perspectives. The original Disney version's accessibility helped popularize Prokofiev's work in Western culture, making classical music approachable for generations of children. This influence can be seen in works like **Carnival** (2006) and **The Young Person's Guide to the Orchestra** (2011)."
+      }
+    ],
+    "exploreFurther": [
+      "The history of Prokofiev's original Peter and the Wolf composition and its cultural impact",
+      "Disney's \"package films\" of the 1940s and their historical context",
+      "The evolution of classical music in animation",
+      "Character design techniques in musical animation",
+      "Educational animation approaches through the decades"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Fantasia 2000",
+          "year": 1999,
+          "slug": "Modern continuation of Disney's classical music animation concept",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 49948
+        },
+        {
+          "title": "The Carnival of the Animals",
+          "year": 1976,
+          "slug": "Musical animation featuring Saint-Saëns' classical suite",
+          "poster": "https://image.tmdb.org/t/p/w500/ithwFUnPg1eEoRsgy1ilIyTLbzE.jpg",
+          "initialStreaming": null,
+          "tmdb_id": 215502,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ithwFUnPg1eEoRsgy1ilIyTLbzE.jpg"
+        },
+        {
+          "title": "The Sorcerer's Apprentice",
+          "year": 1940,
+          "slug": "Famous Fantasia segment featuring Mickey Mouse",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Cat Concerto",
+          "year": 1947,
+          "slug": "Tom and Jerry short featuring classical music",
+          "poster": "https://image.tmdb.org/t/p/w500/eHo7MBlBMzG5nyLJ1jGRXUzBljP.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 39853,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eHo7MBlBMzG5nyLJ1jGRXUzBljP.jpg"
+        },
+        {
+          "title": "The Band Concert",
+          "year": 1935,
+          "slug": "Early Mickey Mouse musical short",
+          "poster": "https://image.tmdb.org/t/p/w500/veEJ9AjgdcuGT9Yylvw2xdcJlUa.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 67572,
+          "poster_url": "https://image.tmdb.org/t/p/w500/veEJ9AjgdcuGT9Yylvw2xdcJlUa.jpg"
+        },
+        {
+          "title": "Melody Time",
+          "year": 1948,
+          "slug": "Disney package film with musical segments",
+          "poster": "https://image.tmdb.org/t/p/w500/pKR4iRyDdIX1T13z1Vs5jBERXni.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 13757,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pKR4iRyDdIX1T13z1Vs5jBERXni.jpg"
+        },
+        {
+          "title": "Prokofiev's Peter and the Wolf",
+          "year": 2006,
+          "slug": "Stop-motion adaptation winning Academy Award",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": null,
+          "tmdb_id": null
+        },
+        {
+          "title": "The Young Person's Guide to the Orchestra",
+          "year": 1946,
+          "slug": "Benjamin Britten's educational musical piece adapted to film",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": null,
+          "tmdb_id": null
+        },
+        {
+          "title": "Symphony Hour",
+          "year": 1942,
+          "slug": "Mickey Mouse conducting classical music short",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 67502
+        },
+        {
+          "title": "Toot Whistle Plunk and Boom",
+          "year": 1953,
+          "slug": "Disney educational musical animation",
+          "poster": "https://image.tmdb.org/t/p/w500/lIFj7O2cP9pIwKlfm7CcqD2A8Vd.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 32089,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lIFj7O2cP9pIwKlfm7CcqD2A8Vd.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

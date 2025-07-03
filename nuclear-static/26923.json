@@ -1,0 +1,141 @@
+{
+  "props": {
+    "title": "Before I Hang",
+    "year": 1940,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/geAC0ve6IKQCLXdB0OESKAFaJJi.jpg",
+    "initialStreaming": null,
+    "tmdbId": 26923,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Before I Hang** (1940) stands as a pivotal entry in Boris Karloff's mad scientist filmography, coming at the height of Columbia Pictures' horror cycle. The film follows Dr. John Garth's experimental anti-aging serum derived from executed criminals' blood, echoing themes first explored in <a href=\"/movie/26925\" class=\"movie-title\">The Man They Could Not Hang</a> (1939). Karloff's nuanced performance transforms from a compassionate scientist to a murderous villain, showcasing the actor's range beyond his iconic **Frankenstein** (1931) role. The film's exploration of scientific hubris connects directly to Universal's earlier <a href=\"/movie/27918\" class=\"movie-title\">The Invisible Ray</a> (1936), where Karloff similarly portrayed a brilliant researcher destroyed by his own discovery."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Man They Could Not Hang",
+            "year": 1939,
+            "slug": "Karloff plays a scientist executed for human experimentation who is revived and seeks revenge",
+            "poster": "https://image.tmdb.org/t/p/w500/oR03TUMEd5bnnAMnOEGcVoLcGSN.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 26925,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oR03TUMEd5bnnAMnOEGcVoLcGSN.jpg"
+          },
+          {
+            "title": "The Invisible Ray",
+            "year": 1936,
+            "slug": "A scientist discovers a deadly radioactive element that drives him to madness",
+            "poster": "https://image.tmdb.org/t/p/w500/fAMfoQQkJrWtusXR0mDcTSAmhcG.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 27918,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fAMfoQQkJrWtusXR0mDcTSAmhcG.jpg"
+          },
+          {
+            "title": "Black Friday",
+            "year": 1940,
+            "slug": "A surgeon transplants part of a gangster's brain into his friend, with deadly consequences",
+            "poster": "https://image.tmdb.org/t/p/w500/268GiPoyYmuNhrez1I7GXypKC6T.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 13784,
+            "poster_url": "https://image.tmdb.org/t/p/w500/268GiPoyYmuNhrez1I7GXypKC6T.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's core theme of science gone wrong resonates throughout 1940s horror cinema, particularly in **The Devil Commands** (1941) and **House of Frankenstein** (1944). Director Nick Grinde, who collaborated with Karloff on multiple occasions, brings a stark efficiency to the proceedings, emphasizing psychological horror over explicit violence. The transformation sequences, while modest by modern standards, effectively convey Garth's descent into murderous behavior through Karloff's masterful physical performance. SUBHEAD: Mad Science and Moral Corruption"
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of medical ethics and mortality anticipates later works like **The Strange Door** (1951) and **Eyes Without a Face** (1960). Karloff's Dr. Garth represents a specific type of tragic movie scientist - the well-intentioned researcher whose pursuit of knowledge leads to disaster. This character archetype influenced countless later films, from **Re-Animator** (1985) to **The Fly** (1986), establishing a template for the sympathetic mad scientist that continues to resonate."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Mad Scientist Characters in Classic Horror",
+      "Boris Karloff's Transformation from Monster to Character Actor",
+      "Columbia Pictures' Horror Cycle of the 1940s",
+      "The Influence of Pre-Code Horror on Later Genre Films",
+      "Medical Ethics in Classic Horror Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Ape",
+          "year": 1940,
+          "slug": "Karloff plays a doctor who kills to obtain spinal fluid for his experiments",
+          "poster": "https://image.tmdb.org/t/p/w500/kXb0rlowlyXOriVMaEhpqBzmySk.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 37426,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kXb0rlowlyXOriVMaEhpqBzmySk.jpg"
+        },
+        {
+          "title": "The Body Snatcher",
+          "year": 1945,
+          "slug": "A doctor becomes entangled with a grave robber to obtain cadavers",
+          "poster": "https://image.tmdb.org/t/p/w500/1dOCP2ahMVlA95SivxhEdVvcXZE.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 30346,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1dOCP2ahMVlA95SivxhEdVvcXZE.jpg"
+        },
+        {
+          "title": "The Walking Dead",
+          "year": 1936,
+          "slug": "A wrongly executed man is revived by science only to seek vengeance",
+          "poster": "https://image.tmdb.org/t/p/w500/vRZ0NNqaQewNuN6yvw2HXowFCiu.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 27115,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vRZ0NNqaQewNuN6yvw2HXowFCiu.jpg"
+        },
+        {
+          "title": "The Monster Maker",
+          "year": 1944,
+          "slug": "A mad doctor injects victims with acromegaly to create monsters",
+          "poster": "https://image.tmdb.org/t/p/w500/8jJPN5D52XZX4JwRILETQ7RejUF.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": 108382,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8jJPN5D52XZX4JwRILETQ7RejUF.jpg"
+        },
+        {
+          "title": "The Devil Commands",
+          "year": 1941,
+          "slug": "A scientist uses electrical devices to communicate with the dead",
+          "poster": "https://image.tmdb.org/t/p/w500/kVAKzdJV9suPxnhtwWQSmzE3gBW.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 30307,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kVAKzdJV9suPxnhtwWQSmzE3gBW.jpg"
+        },
+        {
+          "title": "The Man Who Changed His Mind",
+          "year": 1936,
+          "slug": "A scientist discovers how to transfer minds between bodies",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 30640
+        },
+        {
+          "title": "Dr. Jekyll and Mr. Hyde",
+          "year": 1931,
+          "slug": "The classic tale of scientific experimentation gone wrong",
+          "poster": "https://image.tmdb.org/t/p/w500/mZtQORzQWkCSqeeHApH6vJDA1D2.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 3019,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mZtQORzQWkCSqeeHApH6vJDA1D2.jpg"
+        },
+        {
+          "title": "The Lady and the Monster",
+          "year": 1944,
+          "slug": "Scientists experiment with a preserved brain with deadly results",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 119168
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

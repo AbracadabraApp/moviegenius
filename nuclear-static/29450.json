@@ -1,0 +1,156 @@
+{
+  "props": {
+    "title": "The Marathon Family",
+    "year": 1982,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/ki9CzOFwMJ9xFSEnQR3qrTZh8qW.jpg",
+    "initialStreaming": null,
+    "tmdbId": 29450,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Marathon Family** (1982) stands as Yugoslavia's darkest comedy masterpiece, following six generations of male undertakers living under one roof. Director Slobodan Šijan crafted a savage satire of Balkan family dynamics and societal decay that eerily foreshadowed Yugoslavia's violent collapse. The film's influence can be traced through later Eastern European black comedies like <a href=\"/movie/11902\" class=\"movie-title\">Underground</a> (1995) and <a href=\"/movie/402897\" class=\"movie-title\">Death of Stalin</a> (2017), establishing a template for mixing pitch-black humor with political commentary. The movie's grotesque portrayal of family competition and inherited profession bears similarities to **Harold and Maude** (1971) in its irreverent treatment of death."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Marathon Family",
+            "year": 1982,
+            "slug": "Six generations of undertakers compete for control of the family business in this pitch-black Yugoslav comedy",
+            "poster": "https://image.tmdb.org/t/p/w500/ki9CzOFwMJ9xFSEnQR3qrTZh8qW.jpg",
+            "initialStreaming": "N/A",
+            "tmdb_id": 29450,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ki9CzOFwMJ9xFSEnQR3qrTZh8qW.jpg"
+          },
+          {
+            "title": "Underground",
+            "year": 1995,
+            "slug": "Surreal Serbian black comedy following arms dealers hiding in a cellar for decades",
+            "poster": "https://image.tmdb.org/t/p/w500/h8N6y13t4VusrDdH5PzTkwvBvgN.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 11902,
+            "poster_url": "https://image.tmdb.org/t/p/w500/h8N6y13t4VusrDdH5PzTkwvBvgN.jpg"
+          },
+          {
+            "title": "Death of Stalin",
+            "year": 2017,
+            "slug": "Satirical retelling of the power struggle after Stalin's death",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 402897
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's genius lies in how it uses the undertaking profession as a lens to examine capitalism, tradition, and generational conflict. Each Topalović male represents a different era of Yugoslav history, from the Ottoman Empire to 1930s modernization. This multi-generational approach to historical commentary influenced later works like **Life Is a Miracle** (2004) and **When Father Was Away on Business** (1985), both examining Yugoslav history through family dynamics. SUBHEAD: Dark Comedy Legacy and Cultural Impact"
+      },
+      {
+        "type": "text",
+        "content": "**The Marathon Family** created a template for Balkan dark humor that continues to influence filmmakers today. Its combination of morbid situations, family drama, and political satire can be seen in contemporary works like **A Serbian Film** (2010) and **The Parade** (2011). The film's portrayal of death as both business and farce established a unique tone that directors like Emir Kusturica would later expand upon in films like **Black Cat, White Cat** (1998)."
+      }
+    ],
+    "exploreFurther": [
+      "Yugoslav Black Wave Cinema Movement",
+      "Balkan Dark Comedy in Film",
+      "Slobodan Šijan's Directorial Style",
+      "Political Satire in Eastern European Cinema",
+      "Family Dynamics in Yugoslav Film"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Black Cat, White Cat",
+          "year": 1998,
+          "slug": "Romani criminal families clash in this chaotic comedy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1075
+        },
+        {
+          "title": "When Father Was Away on Business",
+          "year": 1985,
+          "slug": "Political persecution seen through a child's eyes",
+          "poster": "https://image.tmdb.org/t/p/w500/jhTu6UwP32jPwiBccGAkZq0yqvV.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 21042,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jhTu6UwP32jPwiBccGAkZq0yqvV.jpg"
+        },
+        {
+          "title": "Pretty Village Pretty Flame",
+          "year": 1996,
+          "slug": "Dark satire about the Bosnian War",
+          "poster": "https://image.tmdb.org/t/p/w500/kh4VuXrgAmQCSKFsQHXdZ03l0rC.jpg",
+          "initialStreaming": "N/A",
+          "tmdb_id": 29927,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kh4VuXrgAmQCSKFsQHXdZ03l0rC.jpg"
+        },
+        {
+          "title": "Who's Singin' Over There?",
+          "year": 1980,
+          "slug": "Comic road movie set before Nazi invasion",
+          "poster": "https://image.tmdb.org/t/p/w500/1r4buAPUyqWwhdKxki1fyBeehsw.jpg",
+          "initialStreaming": "N/A",
+          "tmdb_id": 17909,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1r4buAPUyqWwhdKxki1fyBeehsw.jpg"
+        },
+        {
+          "title": "Time of the Gypsies",
+          "year": 1988,
+          "slug": "Magical realist tale of Romani life",
+          "poster": "https://image.tmdb.org/t/p/w500/fF9kWNMjiXC6f4YrdVFA0ScnWgQ.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 20123,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fF9kWNMjiXC6f4YrdVFA0ScnWgQ.jpg"
+        },
+        {
+          "title": "The Parade",
+          "year": 2011,
+          "slug": "LGBTQ activists and criminals unite in Serbian comedy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon",
+          "tmdb_id": null
+        },
+        {
+          "title": "Life Is a Miracle",
+          "year": 2004,
+          "slug": "Love story set during the Bosnian conflict",
+          "poster": "https://image.tmdb.org/t/p/w500/wyPG79yFyq0zj4qWXD2CkCj0nTJ.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 20128,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wyPG79yFyq0zj4qWXD2CkCj0nTJ.jpg"
+        },
+        {
+          "title": "Special Education",
+          "year": 1977,
+          "slug": "Yugoslav comedy about juvenile delinquents",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "N/A",
+          "tmdb_id": 265686
+        },
+        {
+          "title": "Three Tickets to Hollywood",
+          "year": 1993,
+          "slug": "Satirical look at Balkan film industry",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "N/A",
+          "tmdb_id": 17913
+        },
+        {
+          "title": "Do You Remember Dolly Bell?",
+          "year": 1981,
+          "slug": "Coming-of-age in Socialist Yugoslavia",
+          "poster": "https://image.tmdb.org/t/p/w500/mkH1PigvNINeYQxi07RsdzSuTDB.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 49934,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mkH1PigvNINeYQxi07RsdzSuTDB.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -15,7 +15,7 @@ export default function NavBar() {
 
   const navItems = [
     { label: 'Movies', icon: Clapperboard, route: '/movies' },
-    { label: 'Genius', icon: Sparkles, route: '/ask' },
+    { label: 'Genius', icon: Sparkles, route: '/genius' },
     { label: 'You', icon: User, route: '/you' },
   ];
 

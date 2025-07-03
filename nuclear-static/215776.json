@@ -1,0 +1,123 @@
+{
+  "props": {
+    "title": "Madras Cafe",
+    "year": 2013,
+    "initialSlug": "When history repeats, heroes rise.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/3cfFqEuj2ynHUb0FTBThTh0gQB9.jpg",
+    "initialStreaming": null,
+    "tmdbId": 215776,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Madras Cafe** (2013) marks a pivotal shift in Indian political thrillers, breaking away from Bollywood's typical song-and-dance format to deliver a gritty espionage narrative. Director Shoojit Sircar crafts a taut thriller reminiscent of **Zero Dark Thirty** (2012) and **Argo** (2012), focusing on the Sri Lankan civil war and the assassination of former Indian Prime Minister Rajiv Gandhi. The film's documentary-style approach and John Abraham's restrained performance as RAW agent Vikram Singh set new standards for realistic Indian cinema, following the path blazed by **A Wednesday** (2008). D-Day|2013|RAW agents plan a covert operation to capture India's most wanted criminal in Pakistan|Prime Video Baby|2015|An elite Indian intelligence unit attempts to thwart terrorist attacks|Netflix Romeo Akbar Walter|2019|A bank teller becomes an Indian spy during the 1971 Indo-Pakistani War|Netflix"
+      },
+      {
+        "type": "text",
+        "content": "The film's impact on Indian political cinema cannot be understated. Following **Madras Cafe**, a new wave of realistic espionage thrillers emerged, including **Raazi** (2018) and **Uri: The Surgical Strike** (2019). These films prioritized authenticity over commercial elements, focusing on actual historical events and geopolitical tensions. The success of these films demonstrated Indian audiences' appetite for sophisticated political narratives beyond traditional commercial formulas."
+      },
+      {
+        "type": "text",
+        "content": "The technical execution in **Madras Cafe** draws clear inspiration from international political thrillers like **The Hurt Locker** (2008) and **Green Zone** (2010). Sircar's use of handheld cameras, natural lighting, and minimal background score creates an immersive documentary feel. This approach influenced later films like **Talvar** (2015) and **No One Killed Jessica** (2011), which also dealt with real-life political events. Special 26|2013|Con artists pose as CBI officers to conduct fake raids|Disney+ Hotstar Raazi|2018|An Indian spy marries into a Pakistani military family during the 1971 war|Amazon Prime Naam Shabana|2017|A woman is recruited into India's secret service after personal tragedy|Netflix SUBHEAD: Impact on Modern Indian Cinema"
+      },
+      {
+        "type": "text",
+        "content": "The film's treatment of the Sri Lankan civil war and its complex political landscape set a new benchmark for handling sensitive historical subjects in Indian cinema. Unlike earlier attempts like **Roja** (1992), **Madras Cafe** avoided simplistic good-versus-evil narratives, instead presenting a nuanced view of international relations and intelligence operations. This influenced later films like **Bhavesh Joshi Superhero** (2018) and **Article 15** (2019), which tackled complex social and political issues with similar maturity."
+      }
+    ],
+    "exploreFurther": [
+      "The evolution of political thrillers in Indian cinema post-2010",
+      "Representation of RAW agents in Bollywood versus reality",
+      "Impact of real historical events on Indian cinema",
+      "Technical innovations in Indian espionage films",
+      "The influence of international spy thrillers on Indian cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Wednesday",
+          "year": 2008,
+          "slug": "A common man threatens to bomb Mumbai unless captured terrorists are killed",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Phantom",
+          "year": 2015,
+          "slug": "A disgraced army officer carries out covert operations against terrorism",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": null
+        },
+        {
+          "title": "Aiyaary",
+          "year": 2018,
+          "slug": "Military intelligence officer goes rogue exposing corruption",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 493620
+        },
+        {
+          "title": "Holiday",
+          "year": 2014,
+          "slug": "Army officer uncovers terrorist sleeper cells during vacation",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+ Hotstar",
+          "tmdb_id": null
+        },
+        {
+          "title": "State of Siege: Temple Attack",
+          "year": 2021,
+          "slug": "NSG commandos respond to terrorist attack based on true events",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "ZEE5",
+          "tmdb_id": 845861
+        },
+        {
+          "title": "Bell Bottom",
+          "year": 2021,
+          "slug": "RAW agent leads covert operation during plane hijacking crisis",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 721048
+        },
+        {
+          "title": "Tiger Zinda Hai",
+          "year": 2017,
+          "slug": "Indian and Pakistani agents collaborate to rescue nurses from terrorists",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 441909
+        },
+        {
+          "title": "Force",
+          "year": 2011,
+          "slug": "ATS officer fights drug lords while dealing with personal loss",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Batla House",
+          "year": 2019,
+          "slug": "Police officer deals with aftermath of controversial encounter",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 550485
+        },
+        {
+          "title": "Mission Majnu",
+          "year": 2023,
+          "slug": "Indian spy operates undercover in Pakistan during nuclear program",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 778946
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

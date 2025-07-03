@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "America America",
+    "year": 1963,
+    "initialSlug": "Young Greek's epic journey to reach America",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/76RffKrNPrfA4TWYkx5wIIOzOlV.jpg",
+    "initialStreaming": null,
+    "tmdbId": 47249,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Elia Kazan's deeply personal epic **America America** (1963) stands as one of cinema's most powerful immigrant narratives, drawing from the director's own family history of Greek-Turkish displacement. Shot in stark black and white by master cinematographer Haskell Wexler, the film follows young Stavros's grueling journey from Anatolia to Constantinople to America, capturing the desperate determination that drove millions to seek new lives in the United States. The film's influence echoes through later immigrant stories like **The Godfather Part II** (1974) and **Once Upon a Time in America** (1984), establishing a visual language for depicting the immigrant experience through both intimate character moments and sweeping historical scope."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Immigrant",
+            "year": 2013,
+            "slug": "Marion Cotillard shines in James Gray's Ellis Island drama about a Polish woman forced into prostitution while pursuing the American Dream",
+            "poster": "https://image.tmdb.org/t/p/w500/ArWRRQYeXL3nG4jYpMOPoBvgmy9.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 152599,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ArWRRQYeXL3nG4jYpMOPoBvgmy9.jpg"
+          },
+          {
+            "title": "In America",
+            "year": 2002,
+            "slug": "Jim Sheridan's semi-autobiographical tale of an Irish family starting over in 1980s New York City",
+            "poster": "https://image.tmdb.org/t/p/w500/cUhMjWQyyApA0pFinogCsE2wy8g.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 10511,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cUhMjWQyyApA0pFinogCsE2wy8g.jpg"
+          },
+          {
+            "title": "Brooklyn",
+            "year": 2015,
+            "slug": "Saoirse Ronan portrays a young Irish immigrant navigating love and identity in 1950s New York",
+            "poster": "https://image.tmdb.org/t/p/w500/cs7W8j5lI7qzRW6tKSj9p1Q0Ze7.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 167073,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cs7W8j5lI7qzRW6tKSj9p1Q0Ze7.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Kazan's masterwork pioneered techniques for depicting cultural displacement that influenced generations of filmmakers. The extended sequences of Stavros trudging through harsh landscapes established a visual metaphor for immigrant struggle that resurfaces in films like **El Norte** (1983) and **Sin Nombre** (2009). The film's unflinching look at exploitation and survival connects directly to modern immigrant narratives like **Dirty Pretty Things** (2002) and **The Visitor** (2007), showing how the immigrant journey remains fundamentally unchanged despite shifting historical contexts. SUBHEAD: Authenticity and Cultural Identity"
+      },
+      {
+        "type": "text",
+        "content": "While many Hollywood films about immigration tend toward sentimentality, **America America** maintains a raw authenticity through its use of non-professional actors, location shooting, and untranslated dialogue - techniques later adopted by films like **Sugar** (2008) and **Blue Bayou** (2021). Kazan's decision to shoot in Turkey and Greece with local performers created a documentary-like realism that influenced neo-realist immigrant narratives like **Alambrista!** (1977) and **Le Havre** (2011)."
+      }
+    ],
+    "exploreFurther": [
+      "Elia Kazan's Personal Connection to Immigration Stories",
+      "The Evolution of Immigration Cinema from Silent Era to Modern Day",
+      "Visual Techniques in Depicting Cultural Displacement",
+      "The Impact of Non-Professional Actors in Immigration Films",
+      "Greek-Turkish Relations in Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Golden Door",
+          "year": 2006,
+          "slug": "Italian immigration saga following a Sicilian family's journey to America",
+          "poster": "https://image.tmdb.org/t/p/w500/3peLF6wBq8TGrVblBnoa2Hw8rk6.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 1993,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3peLF6wBq8TGrVblBnoa2Hw8rk6.jpg"
+        },
+        {
+          "title": "Minari",
+          "year": 2020,
+          "slug": "Korean-American family pursues farming dreams in 1980s Arkansas",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 615643
+        },
+        {
+          "title": "The Godfather Part II",
+          "year": 1974,
+          "slug": "Parallel narratives of young Vito Corleone's arrival in America and Michael's reign",
+          "poster": "https://image.tmdb.org/t/p/w500/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 240,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg"
+        },
+        {
+          "title": "El Norte",
+          "year": 1983,
+          "slug": "Guatemalan siblings make dangerous journey to the US",
+          "poster": "https://image.tmdb.org/t/p/w500/bgpz7gTpWmmBb26CcjVtiPE7Kfo.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 17435,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bgpz7gTpWmmBb26CcjVtiPE7Kfo.jpg"
+        },
+        {
+          "title": "In This World",
+          "year": 2002,
+          "slug": "Documentary-style drama following Afghan refugees",
+          "poster": "https://image.tmdb.org/t/p/w500/denzE2tZc3TZ95vQNK3rKo0iDHn.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 36791,
+          "poster_url": "https://image.tmdb.org/t/p/w500/denzE2tZc3TZ95vQNK3rKo0iDHn.jpg"
+        },
+        {
+          "title": "The New Land",
+          "year": 1972,
+          "slug": "Swedish immigrant saga sequel to The Emigrants",
+          "poster": "https://image.tmdb.org/t/p/w500/eC9SDdBwCa0FGckc76q1MBxlks9.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 42488,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eC9SDdBwCa0FGckc76q1MBxlks9.jpg"
+        },
+        {
+          "title": "Moscow on the Hudson",
+          "year": 1984,
+          "slug": "Russian musician defects in Bloomingdale's",
+          "poster": "https://image.tmdb.org/t/p/w500/wPcKa5M9C0QKZuAfVe5cfv58Njb.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 23111,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wPcKa5M9C0QKZuAfVe5cfv58Njb.jpg"
+        },
+        {
+          "title": "Sugar",
+          "year": 2008,
+          "slug": "Dominican baseball player navigates minor leagues and cultural adjustment",
+          "poster": "https://image.tmdb.org/t/p/w500/ldiKnTAt8pBB3rY6HQI4QZt6r7n.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 17003,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ldiKnTAt8pBB3rY6HQI4QZt6r7n.jpg"
+        },
+        {
+          "title": "Le Havre",
+          "year": 2011,
+          "slug": "Finnish take on immigration through story of African boy in France",
+          "poster": "https://image.tmdb.org/t/p/w500/zCoGiKr8hn9fPYnxECjUhpaP8TI.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 73532,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zCoGiKr8hn9fPYnxECjUhpaP8TI.jpg"
+        },
+        {
+          "title": "The Other Side of Hope",
+          "year": 2017,
+          "slug": "Syrian refugee finds unlikely friendship in Helsinki",
+          "poster": "https://image.tmdb.org/t/p/w500/spqAX6L4YtPaCj2dnc10Tku9AU7.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 429199,
+          "poster_url": "https://image.tmdb.org/t/p/w500/spqAX6L4YtPaCj2dnc10Tku9AU7.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

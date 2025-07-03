@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "Food of the Gods II",
+    "year": 1989,
+    "initialSlug": "When hunger becomes horror.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/qraPjfqWfNNBQsXIqRfCTv52LMw.jpg",
+    "initialStreaming": null,
+    "tmdbId": 68347,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Food of the Gods II** (1989) stands as a bizarre entry in the \"giant animal horror\" subgenre that peaked in the 1970s. Following the loose framework of H.G. Wells' story (like its 1976 predecessor **Food of the Gods**), this sequel shifts the action to a university where growth hormones create murderous giant rats. It fits into the era's trend of environmental horror alongside films like **Prophecy** (1979) and <a href=\"/movie/38761\" class=\"movie-title\">Night of the Lepus</a> (1972), which similarly dealt with mutated creatures. Director Damian Lee embraces pure B-movie excess, delivering outrageous practical effects and deliberately campy performances."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Food of the Gods",
+            "year": 1976,
+            "slug": "Marjoe Gortner battles giant wasps and rats on a remote island after farmers feed mysterious goop to livestock",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 42245
+          },
+          {
+            "title": "Empire of the Ants",
+            "year": 1977,
+            "slug": "Joan Collins faces off against giant ants mutated by toxic waste in Florida",
+            "poster": "https://image.tmdb.org/t/p/w500/6cmuKjH92h2wrBlbj0WPaTdnpnl.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 42218,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6cmuKjH92h2wrBlbj0WPaTdnpnl.jpg"
+          },
+          {
+            "title": "Night of the Lepus",
+            "year": 1972,
+            "slug": "Giant mutant rabbits terrorize the Southwest in this infamous \"killer bunny\" horror film",
+            "poster": "https://image.tmdb.org/t/p/w500/wF8paiOb7E1JWb6mvec0TCTNq5W.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 38761,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wF8paiOb7E1JWb6mvec0TCTNq5W.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The late 1980s saw a resurgence of creature features that mixed environmental messaging with exploitation thrills. **Slugs** (1988) and **The Nest** (1988) followed similar formulas of scientific experiments gone wrong. These films reflected growing anxieties about genetic engineering and chemical contamination while delivering the expected gore and creature effects that drive midnight movie appeal."
+      },
+      {
+        "type": "text",
+        "content": "Director Damian Lee's approach emphasizes practical effects over plot coherence, following the Roger Corman playbook of prioritizing spectacle. The giant rat sequences, while dated, showcase creative low-budget filmmaking techniques similar to those used in **Killer Klowns from Outer Space** (1988) and **TerrorVision** (1986). The university setting allows for both mad scientist tropes and youth-in-peril scenarios common to 1980s horror. SUBHEAD: Environmental Horror Evolution"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Rats: Night of Terror",
+            "year": 1984,
+            "slug": "Post-apocalyptic soldiers battle intelligent mutant rats in abandoned city ruins",
+            "poster": "https://image.tmdb.org/t/p/w500/aa2pwEECMyKDjaGwTfpBhLR8TKL.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 83223,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aa2pwEECMyKDjaGwTfpBhLR8TKL.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While **Food of the Gods II** (1989) played its premise for camp value, it followed a tradition of serious ecological horror established by films like **Long Weekend** (1978) and **Frogs** (1972). These earlier works used nature-run-amok scenarios to comment on environmental destruction. The sequel's focus on laboratory experimentation rather than mysterious growth substances reflected the shifting anxieties of its era, when genetic engineering began entering public consciousness."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Practical Effects in 1980s Horror",
+      "H.G. Wells Adaptations in Genre Cinema",
+      "Environmental Themes in Horror Films",
+      "History of Giant Monster Movies",
+      "Canadian B-Movie Production in the 1980s"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Piranha",
+          "year": 1978,
+          "slug": "Genetically modified piranhas escape a military lab",
+          "poster": "https://image.tmdb.org/t/p/w500/oaz0Le3fT3R8jzlkXkNV7JAsd7x.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 24831,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oaz0Le3fT3R8jzlkXkNV7JAsd7x.jpg"
+        },
+        {
+          "title": "Day of the Animals",
+          "year": 1977,
+          "slug": "Ozone depletion causes animals to attack humans",
+          "poster": "https://image.tmdb.org/t/p/w500/nNR56DXyEocDbeVd5FgW59X73dt.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 64976,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nNR56DXyEocDbeVd5FgW59X73dt.jpg"
+        },
+        {
+          "title": "Prophecy",
+          "year": 1979,
+          "slug": "Mercury pollution creates mutant bear in Maine wilderness",
+          "poster": "https://image.tmdb.org/t/p/w500/8jCyz5IRWmu8R5FhRO2BqtQXnCj.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 31915,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8jCyz5IRWmu8R5FhRO2BqtQXnCj.jpg"
+        },
+        {
+          "title": "Alligator",
+          "year": 1980,
+          "slug": "Growth hormone creates giant alligator in sewers",
+          "poster": "https://image.tmdb.org/t/p/w500/bWANAIIeNPzwEmrYUvZFECTbBX6.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 33518,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bWANAIIeNPzwEmrYUvZFECTbBX6.jpg"
+        },
+        {
+          "title": "Squirm",
+          "year": 1976,
+          "slug": "Electrical storm turns worms aggressive",
+          "poster": "https://image.tmdb.org/t/p/w500/uWCwcZYp5znp6xUKzkh3oyB4Ys2.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 25241,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uWCwcZYp5znp6xUKzkh3oyB4Ys2.jpg"
+        },
+        {
+          "title": "Kingdom of the Spiders",
+          "year": 1977,
+          "slug": "Pesticides cause tarantulas to swarm town",
+          "poster": "https://image.tmdb.org/t/p/w500/4eMSwO2VCH22FVxRqqOA9zMPWh8.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 30315,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4eMSwO2VCH22FVxRqqOA9zMPWh8.jpg"
+        },
+        {
+          "title": "The Giant Spider Invasion",
+          "year": 1975,
+          "slug": "Dimensional portal releases giant spiders",
+          "poster": "https://image.tmdb.org/t/p/w500/pdD0zSAiHpX2TEz4uuVdMB3KkGB.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 39154,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pdD0zSAiHpX2TEz4uuVdMB3KkGB.jpg"
+        },
+        {
+          "title": "Phase IV",
+          "year": 1974,
+          "slug": "Intelligent ants evolve to challenge humanity",
+          "poster": "https://image.tmdb.org/t/p/w500/x6fQtAmCD4JlAcUnTfYoinPp1zz.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 59189,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x6fQtAmCD4JlAcUnTfYoinPp1zz.jpg"
+        },
+        {
+          "title": "The Swarm",
+          "year": 1978,
+          "slug": "Killer bees invade Texas in disaster film",
+          "poster": "https://image.tmdb.org/t/p/w500/pO5qEEpjxdQ40ScLcFOowyziNiT.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 46878,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pO5qEEpjxdQ40ScLcFOowyziNiT.jpg"
+        },
+        {
+          "title": "Grizzly",
+          "year": 1976,
+          "slug": "Giant bear terrorizes national park",
+          "poster": "https://image.tmdb.org/t/p/w500/sqZK6sL7T2agJeeiM7jWvBxmDgB.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 55784,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sqZK6sL7T2agJeeiM7jWvBxmDgB.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

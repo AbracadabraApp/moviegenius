@@ -1,0 +1,164 @@
+{
+  "props": {
+    "title": "Into the Abyss",
+    "year": 2011,
+    "initialSlug": "The depths hide deadly secrets.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/2ogmMOC3B7A9vSUseh3f5O4CGA9.jpg",
+    "initialStreaming": null,
+    "tmdbId": 77365,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Werner Herzog's haunting documentary **Into the Abyss** (2011) revolutionized true crime filmmaking by refusing to sensationalize. Herzog interviews death row inmate Michael Perry days before his execution for a triple homicide, but instead of dwelling on gruesome details, he explores profound questions about mortality, justice, and human nature. This approach influenced later works like **The Act of Killing** (2012) and **Strong Island** (2017), establishing a more contemplative true crime style that prioritizes ethical examination over exploitation."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Paradise Lost: The Child Murders at Robin Hood Hills",
+            "year": 1996,
+            "slug": "Landmark documentary following the West Memphis Three case, setting the standard for long-form true crime investigation",
+            "poster": "https://image.tmdb.org/t/p/w500/h65fwEQTv9zRNyEuExE1wAk5CQ2.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 17204,
+            "poster_url": "https://image.tmdb.org/t/p/w500/h65fwEQTv9zRNyEuExE1wAk5CQ2.jpg"
+          },
+          {
+            "title": "The Thin Blue Line",
+            "year": 1988,
+            "slug": "Errol Morris's groundbreaking documentary that actually helped free an innocent man from death row",
+            "poster": "https://image.tmdb.org/t/p/w500/4w4BJk3l8y9gYwPPLRs6uPHOmGL.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 14285,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4w4BJk3l8y9gYwPPLRs6uPHOmGL.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Herzog's unflinching interview style, where he remains respectfully distant yet deeply probing, created a template for modern true crime documentaries. **Tower** (2016) adopted a similar approach to examining mass violence, while **The Fear of 13** (2015) echoed Herzog's intimate death row conversations. These films share Herzog's ability to find humanity in darkness without minimizing tragedy."
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of America's death penalty system connects to earlier works like **Dead Man Walking** (1995) and **Monster** (2003), but Herzog's documentary lens brings an outsider's perspective that makes the familiar strange. His methodical interviews with prison staff, victims' families, and Perry himself create a complex moral tapestry that later influenced films like **Time** (2020) and **The Work** (2017). SUBHEAD: Impact on Modern True Crime"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Dear Zachary: A Letter to a Son About His Father",
+            "year": 2008,
+            "slug": "Devastating personal documentary about a murder that becomes a critique of the justice system",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 15584
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Post-**Into the Abyss**, true crime documentaries increasingly adopted Herzog's contemplative approach. **The Jinx** (2015) and **Making a Murderer** (2015) expanded on his technique of letting subjects reveal themselves through patient observation. Even theatrical films like **Just Mercy** (2019) show Herzog's influence in their measured examination of capital punishment."
+      }
+    ],
+    "exploreFurther": [
+      "Werner Herzog's Documentary Techniques",
+      "Ethics in True Crime Filmmaking",
+      "Capital Punishment in American Cinema",
+      "Evolution of Documentary Interview Methods",
+      "Impact of True Crime on Criminal Justice Reform"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Central Park Five",
+          "year": 2012,
+          "slug": "Ken Burns examines racial injustice through wrongful conviction",
+          "poster": "https://image.tmdb.org/t/p/w500/aKlQ8Sjr07OkCLuYkRYtpVSMm3e.jpg",
+          "initialStreaming": "PBS",
+          "tmdb_id": 124067,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aKlQ8Sjr07OkCLuYkRYtpVSMm3e.jpg"
+        },
+        {
+          "title": "At the Death House Door",
+          "year": 2008,
+          "slug": "Portrait of a death row chaplain questioning capital punishment",
+          "poster": "https://image.tmdb.org/t/p/w500/ag443i7qLvWbqMua562evhmejy7.jpg",
+          "initialStreaming": "Amazon",
+          "tmdb_id": 41850,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ag443i7qLvWbqMua562evhmejy7.jpg"
+        },
+        {
+          "title": "The Trials of Darryl Hunt",
+          "year": 2006,
+          "slug": "Powerful examination of a wrongfully convicted man's 20-year fight for freedom",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": null
+        },
+        {
+          "title": "Capturing the Friedmans",
+          "year": 2003,
+          "slug": "Complex family documentary that questions truth and memory",
+          "poster": "https://image.tmdb.org/t/p/w500/qWdMQj0HN7QxKxEkm0tk04nuAQ2.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 2260,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qWdMQj0HN7QxKxEkm0tk04nuAQ2.jpg"
+        },
+        {
+          "title": "Murder on a Sunday Morning",
+          "year": 2001,
+          "slug": "Oscar-winning doc about racial prejudice in the justice system",
+          "poster": "https://image.tmdb.org/t/p/w500/w8mv377RrR9OAUbvp9v9YGm15B3.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 51391,
+          "poster_url": "https://image.tmdb.org/t/p/w500/w8mv377RrR9OAUbvp9v9YGm15B3.jpg"
+        },
+        {
+          "title": "The Staircase",
+          "year": 2004,
+          "slug": "Groundbreaking series following a murder trial from inside the defense team",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Dream/Killer",
+          "year": 2015,
+          "slug": "Father fights to free his son from wrongful conviction",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 333099
+        },
+        {
+          "title": "Give Up Tomorrow",
+          "year": 2011,
+          "slug": "Philippine death row case exposing judicial corruption",
+          "poster": "https://image.tmdb.org/t/p/w500/A1UVu8uWMGxyDH7LvXv5XBZDbua.jpg",
+          "initialStreaming": "PBS",
+          "tmdb_id": 115166,
+          "poster_url": "https://image.tmdb.org/t/p/w500/A1UVu8uWMGxyDH7LvXv5XBZDbua.jpg"
+        },
+        {
+          "title": "Lost for Life",
+          "year": 2013,
+          "slug": "Intimate portraits of juvenile offenders serving life sentences",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 283302
+        },
+        {
+          "title": "The Fear of Death Row",
+          "year": 2015,
+          "slug": "Psychological examination of death row inmates",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BBC",
+          "tmdb_id": 367215
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

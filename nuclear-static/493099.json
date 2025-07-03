@@ -1,0 +1,169 @@
+{
+  "props": {
+    "title": "RBG",
+    "year": 2018,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/vIenhDe9DuvxODJOIpMjBheYlcS.jpg",
+    "initialStreaming": null,
+    "tmdbId": 493099,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**RBG** (2018) masterfully chronicles Justice Ruth Bader Ginsburg's transformation from brilliant legal mind to cultural icon. Directors Julie Cohen and Betsy West craft an intimate portrait that goes beyond the \"Notorious RBG\" memes, revealing Ginsburg's methodical dismantling of gender discrimination through landmark cases. The film's strength lies in connecting her early ACLU victories to her powerful Supreme Court dissents. Like **On the Basis of Sex** (2018), which dramatizes Ginsburg's groundbreaking 1972 tax law case, RBG shows how strategic legal battles reshaped American society."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Life and Times of Rosie the Riveter",
+            "year": 1980,
+            "slug": "Groundbreaking documentary examining women's changing roles during WWII and their fight for workplace equality",
+            "poster": "https://image.tmdb.org/t/p/w500/pFmx4XejqDrvYKZGBe04ohLxqsK.jpg",
+            "initialStreaming": "Kanopy",
+            "tmdb_id": 97108,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pFmx4XejqDrvYKZGBe04ohLxqsK.jpg"
+          },
+          {
+            "title": "Iron Jawed Angels",
+            "year": 2004,
+            "slug": "Powerful HBO film about Alice Paul and the women's suffrage movement's final push for the 19th Amendment",
+            "poster": "https://image.tmdb.org/t/p/w500/pLtbTAIBpoRrQxnfTVB0y0wVEKK.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 49007,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pLtbTAIBpoRrQxnfTVB0y0wVEKK.jpg"
+          },
+          {
+            "title": "Hidden Figures",
+            "year": 2016,
+            "slug": "True story of African American women mathematicians at NASA fighting both gender and racial discrimination",
+            "poster": "https://image.tmdb.org/t/p/w500/9lfz2W2uGjyow3am00rsPJ8iOyq.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 381284,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9lfz2W2uGjyow3am00rsPJ8iOyq.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "RBG fits into a vital tradition of documentaries spotlighting pioneering women who challenged systemic inequality. **Miss Representation** (2011) examines media representation of women in positions of power, while **She's Beautiful When She's Angry** (2014) chronicles the birth of the women's movement from 1966-1971. These films connect individual struggles to broader social movements, showing how determined individuals catalyze institutional change."
+      },
+      {
+        "type": "text",
+        "content": "The film's intimate access to Justice Ginsburg herself sets it apart. Unlike traditional biographical documentaries, RBG captures candid moments - from her legendary workout routine to her deep love of opera. This personal dimension enriches our understanding of her public impact, much like **Maya Angelou: And Still I Rise** (2016) reveals the woman behind the icon. The film's exploration of her 56-year marriage to Martin Ginsburg provides crucial context for understanding her life's work. SUBHEAD: Legal Pioneer to Cultural Icon"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Knock Down the House",
+            "year": 2019,
+            "slug": "Following four women running for Congress in 2018, including Alexandria Ocasio-Cortez",
+            "poster": "https://image.tmdb.org/t/p/w500/uAfixuZIFVbWIsWytzROJDY85D7.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 565312,
+            "poster_url": "https://image.tmdb.org/t/p/w500/uAfixuZIFVbWIsWytzROJDY85D7.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "RBG brilliantly traces how Ginsburg's careful legal strategy in the 1970s laid groundwork for later victories. Like **Marshall** (2017), which portrays Thurgood Marshall's early civil rights cases, RBG shows how systematic litigation can drive social change. The film's exploration of her evolution into a dissenting voice on an increasingly conservative court parallels themes in **The First Monday in May** (2016), examining how public figures can shape cultural conversations."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Gender Discrimination Law: From Reed v. Reed to United States v. Virginia",
+      "Women in the Legal Profession: Breaking Barriers from 1950s to Present",
+      "The Impact of Strategic Litigation on Social Movements",
+      "The Rise of Judicial Celebrity in American Culture",
+      "Documentary Filmmaking Techniques in Political Biography"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Gloria: In Her Own Words",
+          "year": 2011,
+          "slug": "Intimate portrait of feminist icon Gloria Steinem",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 75650
+        },
+        {
+          "title": "Seeing Allred",
+          "year": 2018,
+          "slug": "Documentary following civil rights attorney Gloria Allred",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 490818
+        },
+        {
+          "title": "What the Constitution Means to Me",
+          "year": 2020,
+          "slug": "Filmed version of Heidi Schreck's play examining women's rights and the Constitution",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 744174
+        },
+        {
+          "title": "The Judge",
+          "year": 2017,
+          "slug": "First woman judge appointed to a Shari'a court in the Middle East",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "PBS",
+          "tmdb_id": null
+        },
+        {
+          "title": "Sisters in Law",
+          "year": 2005,
+          "slug": "Female judges working to help women in Cameroon",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 87943
+        },
+        {
+          "title": "A Call to Action",
+          "year": 2014,
+          "slug": "Jimmy Carter's campaign for women's rights globally",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Notorious Mr. Bout",
+          "year": 2014,
+          "slug": "Portrait of international arms dealer that inspired RBG's nickname",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 250852
+        },
+        {
+          "title": "Citizen Jane",
+          "year": 2016,
+          "slug": "Jane Jacobs' fight to preserve urban communities",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "RGB: Beyond Notorious",
+          "year": 2019,
+          "slug": "Extended interviews and additional footage from RBG",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Case Against 8",
+          "year": 2014,
+          "slug": "Behind-the-scenes look at the historic Supreme Court marriage equality case",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 250651
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

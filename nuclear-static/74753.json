@@ -1,0 +1,182 @@
+{
+  "props": {
+    "title": "The Sleeping Tiger",
+    "year": 1954,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/6NXrKPB7iP4Fa3nZwhbj8U9hWga.jpg",
+    "initialStreaming": null,
+    "tmdbId": 74753,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Sleeping Tiger** (1954) marks a fascinating turning point in film noir, representing Joseph Losey's first British film after fleeing Hollywood's blacklist. This psychological thriller pairs Dirk Bogarde and Alexis Smith in a taut exploration of criminal rehabilitation, with Bogarde delivering a breakthrough performance as a violent criminal taken in by a psychiatrist. The film established Losey's European career and shares DNA with later psychological noir like **Cape Fear** (1962) and **The Collector** (1965), especially in its claustrophobic domestic setting and exploration of power dynamics."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Criminal",
+            "year": 1960,
+            "slug": "Another Losey-Bogarde collaboration exploring crime and punishment",
+            "poster": "https://image.tmdb.org/t/p/w500/vHPFxQwMB4l9xG63HdBqIxXXUBZ.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 30784,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vHPFxQwMB4l9xG63HdBqIxXXUBZ.jpg"
+          },
+          {
+            "title": "The Servant",
+            "year": 1963,
+            "slug": "Losey's masterpiece of psychological manipulation with Bogarde",
+            "poster": "https://image.tmdb.org/t/p/w500/pRa4og93BeOoMCt6oWuPCwu5Coo.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 42987,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pRa4og93BeOoMCt6oWuPCwu5Coo.jpg"
+          },
+          {
+            "title": "Accident",
+            "year": 1967,
+            "slug": "Complex drama completing Losey's trilogy with Bogarde",
+            "poster": "https://image.tmdb.org/t/p/w500/gttNRLWBDJXwOdoNCKQFgxSGUh8.jpg",
+            "initialStreaming": "BritBox",
+            "tmdb_id": 74544,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gttNRLWBDJXwOdoNCKQFgxSGUh8.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Losey's direction shows clear influences from his time with Fritz Lang and Bertolt Brecht, employing expressionist lighting and compositions that would define his later style. The film's exploration of psychoanalysis reflects both post-war British anxiety and American noir traditions, bridging **Dark Passage** (1947) and **Spellbound** (1945) with emerging British New Wave sensibilities."
+      },
+      {
+        "type": "text",
+        "content": "The film's treatment of criminal rehabilitation was groundbreaking for 1954, predating similar explorations in **A Clockwork Orange** (1971) and **One Flew Over the Cuckoo's Nest** (1975). Bogarde's complex portrayal of Frank Clemmons established him as a serious dramatic actor, moving beyond his previous romantic leads and setting up his later collaborations with Losey. SUBHEAD: Blacklist Impact and British Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Time Without Pity",
+            "year": 1957,
+            "slug": "Losey's intense critique of capital punishment",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "BritBox",
+            "tmdb_id": 60938
+          },
+          {
+            "title": "Victim",
+            "year": 1961,
+            "slug": "Groundbreaking Bogarde film tackling homosexuality",
+            "poster": "https://image.tmdb.org/t/p/w500/6N1V0qW86D5jxcPyLlIJpjgNX6p.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 43028,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6N1V0qW86D5jxcPyLlIJpjgNX6p.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Losey's exile to Britain transformed both his career and British cinema. **The Sleeping Tiger** (1954) initiated a wave of psychological thrillers that married American noir techniques with British social realism. This hybrid approach influenced directors like Karel Reisz with **Night Must Fall** (1964) and Seth Holt with **Taste of Fear** (1961)."
+      }
+    ],
+    "exploreFurther": [
+      "Joseph Losey's Blacklist Period and European Transformation",
+      "The Evolution of British Film Noir 1950-1965",
+      "Dirk Bogarde's Transition from Matinee Idol to Serious Actor",
+      "Psychoanalysis in Post-War British Cinema",
+      "American Exile Directors in British Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Damned",
+          "year": 1962,
+          "slug": "Losey's unsettling mix of science fiction and psychological drama",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Blind Date",
+          "year": 1959,
+          "slug": "Hardy Kruger stars in Losey's London-set noir",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 37216
+        },
+        {
+          "title": "These Are the Damned",
+          "year": 1963,
+          "slug": "Losey's cold war allegory with MacDonald Carey",
+          "poster": "https://image.tmdb.org/t/p/w500/ngQlrgkqQe67nL6GvvsjY0kdG4O.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 71701,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ngQlrgkqQe67nL6GvvsjY0kdG4O.jpg"
+        },
+        {
+          "title": "The Gypsy and the Gentleman",
+          "year": 1958,
+          "slug": "Melville Cooper in Losey's period drama",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 169726
+        },
+        {
+          "title": "The Big Night",
+          "year": 1951,
+          "slug": "Losey's last American film before exile",
+          "poster": "https://image.tmdb.org/t/p/w500/oOn0C6aJdpMUiJTgNmk7s0beH95.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 37084,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oOn0C6aJdpMUiJTgNmk7s0beH95.jpg"
+        },
+        {
+          "title": "M",
+          "year": 1951,
+          "slug": "Losey's American remake of Fritz Lang's classic",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "King and Country",
+          "year": 1964,
+          "slug": "Losey's powerful WWI courtroom drama",
+          "poster": "https://image.tmdb.org/t/p/w500/mBkHGc2whVQBGt4bxMU37DZVgTl.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 96394,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mBkHGc2whVQBGt4bxMU37DZVgTl.jpg"
+        },
+        {
+          "title": "Modesty Blaise",
+          "year": 1966,
+          "slug": "Losey's pop art spy spoof",
+          "poster": "https://image.tmdb.org/t/p/w500/rpQRLEcQeWe2T8TbSJ0zJ0Avqij.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 36645,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rpQRLEcQeWe2T8TbSJ0zJ0Avqij.jpg"
+        },
+        {
+          "title": "Secret Ceremony",
+          "year": 1968,
+          "slug": "Elizabeth Taylor in Losey's psychological drama",
+          "poster": "https://image.tmdb.org/t/p/w500/nnxSwhEPtAVhfGhpZIC1UHZRMnY.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 71395,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nnxSwhEPtAVhfGhpZIC1UHZRMnY.jpg"
+        },
+        {
+          "title": "Eva",
+          "year": 1962,
+          "slug": "Jeanne Moreau in Losey's French drama",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

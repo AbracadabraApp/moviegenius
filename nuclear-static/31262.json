@@ -1,0 +1,164 @@
+{
+  "props": {
+    "title": "The Man from London",
+    "year": 2007,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/poBhgpN4fJfzaRuG4wMLah3rHLw.jpg",
+    "initialStreaming": null,
+    "tmdbId": 31262,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Man from London** (2007) represents Hungarian auteur Béla Tarr's penultimate film, showcasing his masterful command of slow cinema techniques. Shot in his signature black-and-white with hypnotic long takes, it adapts Georges Simenon's noir novel into a mesmerizing meditation on guilt and observation. Like Tarr's magnum opus <a href=\"/movie/23160\" class=\"movie-title\">Werckmeister Harmonies</a> (2000), it uses stark compositions and glacial pacing to create an atmosphere of existential dread. The film follows a railway switchman who witnesses a murder and theft, drawing comparisons to Hitchcock's **Rear Window** (1954), but filtered through Tarr's uniquely contemplative Eastern European sensibility."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Sátántangó",
+            "year": 1994,
+            "slug": "Tarr's 7-hour masterpiece following a failed agricultural collective through hypnotic long takes",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 31414
+          },
+          {
+            "title": "Werckmeister Harmonies",
+            "year": 2000,
+            "slug": "A mysterious circus brings chaos to a small Hungarian town in this haunting philosophical drama",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 23160
+          },
+          {
+            "title": "Turin Horse",
+            "year": 2011,
+            "slug": "Tarr's final film depicts six days in the life of a farmer and his daughter with stunning minimalism",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Mubi",
+            "tmdb_id": 81401
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's opening 12-minute shot, tracking a suitcase exchange that ends in murder, exemplifies Tarr's formal mastery. Unlike conventional noir thrillers like **The Third Man** (1949), Tarr strips away narrative momentum in favor of prolonged observation. His camera lingers on faces, empty corridors, and rain-slicked streets, creating a darkness that feels both physical and metaphysical. The influence of this methodical style can be seen in contemporary slow cinema directors like Lav Diaz (**Norte, the End of History** [2013]) and Pedro Costa (**Horse Money** [2014])."
+      },
+      {
+        "type": "text",
+        "content": "Working with longtime collaborator Ágnes Hranitzky, Tarr crafts images of extraordinary power through minimal means. The film's port setting recalls Jean-Pierre Melville's <a href=\"/movie/5511\" class=\"movie-title\">Le Samouraï</a> (1967), but where Melville emphasized sleek efficiency, Tarr finds existential weight in every gesture and glance. The performance of Miroslav Krobot as Maloin anchors the film with a heavy stillness reminiscent of Bruno Ganz in Theo Angelopoulos's **Eternity and a Day** (1998). SUBHEAD: Noir Reimagined Through Art Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Le Samouraï",
+            "year": 1967,
+            "slug": "Melville's stylish crime thriller about a methodical hitman in Paris",
+            "poster": "https://image.tmdb.org/t/p/w500/5Fa6o5nfUPEatQ9b3OwEvdEdR7T.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 5511,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5Fa6o5nfUPEatQ9b3OwEvdEdR7T.jpg"
+          },
+          {
+            "title": "Eternity and a Day",
+            "year": 1998,
+            "slug": "Angelopoulos's poetic meditation on time and memory",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Mubi",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While **The Man from London** draws from noir traditions established in films like **Double Indemnity** (1944), it radically reconfigures the genre's conventions. Tarr's version of noir eschews plot mechanics for philosophical inquiry, using crime as a lens to examine moral culpability and human isolation. This approach aligns him with other art house directors who've deconstructed noir, from Andrei Tarkovsky's **Stalker** (1979) to Claire Denis's **Bastards** (2013)."
+      }
+    ],
+    "exploreFurther": [
+      "Béla Tarr's Evolution: From Social Realism to Metaphysical Cinema",
+      "The Influence of Hungarian Cinema on Contemporary Slow Film",
+      "Georges Simenon Adaptations in World Cinema",
+      "The Role of Black and White Photography in Modern Art Films",
+      "Reimagining Film Noir Through Art House Sensibilities"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "In the Mood for Love",
+          "year": 2000,
+          "slug": "Wong Kar-wai's hypnotic meditation on unrequited love",
+          "poster": "https://image.tmdb.org/t/p/w500/iYypPT4bhqXfq1b6EnmxvRt6b2Y.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 843,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iYypPT4bhqXfq1b6EnmxvRt6b2Y.jpg"
+        },
+        {
+          "title": "The Death of Mr. Lazarescu",
+          "year": 2005,
+          "slug": "Romanian New Wave masterpiece following one man's final night",
+          "poster": "https://image.tmdb.org/t/p/w500/c3B7GwMYgNi15VMdcKZawgt6mf5.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 31032,
+          "poster_url": "https://image.tmdb.org/t/p/w500/c3B7GwMYgNi15VMdcKZawgt6mf5.jpg"
+        },
+        {
+          "title": "Jeanne Dielman",
+          "year": 1975,
+          "slug": "Chantal Akerman's groundbreaking study of routine and isolation",
+          "poster": "https://image.tmdb.org/t/p/w500/rnbW5VtVxVQVx9ad70SuMbU0Biv.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 308191,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rnbW5VtVxVQVx9ad70SuMbU0Biv.jpg"
+        },
+        {
+          "title": "The Eclipse",
+          "year": 1962,
+          "slug": "Antonioni's modernist mystery of alienation and absence",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 21135
+        },
+        {
+          "title": "Once Upon a Time in Anatolia",
+          "year": 2011,
+          "slug": "Ceylan's philosophical crime drama in the Turkish countryside",
+          "poster": "https://image.tmdb.org/t/p/w500/o08n2xyXGTkzKy122TTNat57SHb.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 74879,
+          "poster_url": "https://image.tmdb.org/t/p/w500/o08n2xyXGTkzKy122TTNat57SHb.jpg"
+        },
+        {
+          "title": "Tropical Malady",
+          "year": 2004,
+          "slug": "Apichatpong's dreamlike exploration of desire and myth",
+          "poster": "https://image.tmdb.org/t/p/w500/9WJ8ZSZp2NC7jSvweFLskldpzzg.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 11534,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9WJ8ZSZp2NC7jSvweFLskldpzzg.jpg"
+        },
+        {
+          "title": "Police, Adjective",
+          "year": 2009,
+          "slug": "Romanian procedural that deconstructs the police genre",
+          "poster": "https://image.tmdb.org/t/p/w500/yiimBQLll8l6SXyNjder7ToilDi.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 32511,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yiimBQLll8l6SXyNjder7ToilDi.jpg"
+        },
+        {
+          "title": "Goodbye, Dragon Inn",
+          "year": 2003,
+          "slug": "Tsai Ming-liang's elegiac tribute to cinema",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 56616
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

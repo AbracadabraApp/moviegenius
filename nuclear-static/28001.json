@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "It's a Gift",
+    "year": 1934,
+    "initialSlug": "Grocer's chaotic quest for California orange grove",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/3DlYiSh3S7A9GO15gUu7zg92bD0.jpg",
+    "initialStreaming": null,
+    "tmdbId": 28001,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "W.C. Fields delivers his masterpiece of domestic chaos in **It's a Gift** (1934), creating a template for family comedy that influenced everything from **National Lampoon's Vacation** (1983) to **Modern Family** (2009-2020). As Harold Bissonette, Fields perfects his persona of the put-upon everyman trying to maintain dignity while the world conspires against him. The film's legendary \"back porch\" sequence, where Fields attempts to sleep while increasingly absurd interruptions plague him, remains a masterclass in escalating physical comedy that later inspired similar scenes in **Mr. Bean** (1990-1995) and **Malcolm in the Middle** (2000-2006)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Bank Dick",
+            "year": 1940,
+            "slug": "Fields plays a bumbling bank guard in another classic comedy of errors",
+            "poster": "https://image.tmdb.org/t/p/w500/3XrqHTrJpTaUeyqXqb4fVacYWpf.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 911,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3XrqHTrJpTaUeyqXqb4fVacYWpf.jpg"
+          },
+          {
+            "title": "My Little Chickadee",
+            "year": 1940,
+            "slug": "Fields pairs with Mae West for a wild Western comedy",
+            "poster": "https://image.tmdb.org/t/p/w500/bB0ewfiQCrtpdRTd5DQs3cLSigg.jpg",
+            "initialStreaming": "YouTube Movies",
+            "tmdb_id": 29353,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bB0ewfiQCrtpdRTd5DQs3cLSigg.jpg"
+          },
+          {
+            "title": "The Fatal Glass of Beer",
+            "year": 1933,
+            "slug": "A short film showcasing Fields' vaudeville roots",
+            "poster": "https://image.tmdb.org/t/p/w500/2uqaq0TtsWhdf6baUfeBoQim5DL.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 52280,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2uqaq0TtsWhdf6baUfeBoQim5DL.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Depression-era comedy took a distinctly American turn with Fields' brand of humor. While Chaplin and Keaton focused on balletic physical comedy, Fields created a more verbally cutting, cynical style that spoke to middle-class frustrations. **It's a Gift** (1934) particularly resonates in its satire of the American Dream - Harold's quest to own an orange grove represents both the promise and folly of westward expansion. This theme would later be echoed in films like **The Grapes of Wrath** (1940) and **Sullivan's Travels** (1941), though with dramatically different tones. SUBHEAD: The Evolution of Domestic Comedy"
+      },
+      {
+        "type": "text",
+        "content": "Fields' influence on domestic comedy cannot be overstated. His battles with family members, customers, and random passersby created a blueprint for situational comedy that extends through **Life with Father** (1947) to modern classics like **Home Alone** (1990). The carefully orchestrated chaos of the grocery store sequence in **It's a Gift** (1934), where every interaction becomes progressively more catastrophic, established timing techniques still used in contemporary comedy. You can see direct homages in films like **Daddy Day Care** (2003) and **Mr. Mom** (1983)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Physical Comedy from Vaudeville to Modern Film",
+      "W.C. Fields' Impact on American Comedy",
+      "Depression-Era Hollywood Comedy",
+      "The American Dream in 1930s Cinema",
+      "Techniques of Escalating Comic Sequences"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Kid",
+          "year": 1921,
+          "slug": "Chaplin's masterpiece of comedy and pathos",
+          "poster": "https://image.tmdb.org/t/p/w500/drgMcyTsySQBnUPGaBThCHGdlWT.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10098,
+          "poster_url": "https://image.tmdb.org/t/p/w500/drgMcyTsySQBnUPGaBThCHGdlWT.jpg"
+        },
+        {
+          "title": "You Can't Cheat an Honest Man",
+          "year": 1939,
+          "slug": "Fields battles ventriloquist Edgar Bergen",
+          "poster": "https://image.tmdb.org/t/p/w500/rY45oLvvzzRNh8cArch9hyb7e5G.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 28753,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rY45oLvvzzRNh8cArch9hyb7e5G.jpg"
+        },
+        {
+          "title": "Never Give a Sucker an Even Break",
+          "year": 1941,
+          "slug": "Fields' surreal swan song",
+          "poster": "https://image.tmdb.org/t/p/w500/dHCpKHEBfSGygsZ54RnDOh5s8Ky.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 28789,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dHCpKHEBfSGygsZ54RnDOh5s8Ky.jpg"
+        },
+        {
+          "title": "Million Dollar Legs",
+          "year": 1932,
+          "slug": "Absurdist comedy with Fields as president of a fictional country",
+          "poster": "https://image.tmdb.org/t/p/w500/atqRmaEd22UZe78RWh0Sd00XoSX.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 119564,
+          "poster_url": "https://image.tmdb.org/t/p/w500/atqRmaEd22UZe78RWh0Sd00XoSX.jpg"
+        },
+        {
+          "title": "International House",
+          "year": 1933,
+          "slug": "Pre-Code comedy featuring Fields among all-star cast",
+          "poster": "https://image.tmdb.org/t/p/w500/fCZ2Q7vOoxitgaVv1exWSkHIPmR.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 30230,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fCZ2Q7vOoxitgaVv1exWSkHIPmR.jpg"
+        },
+        {
+          "title": "The Old Fashioned Way",
+          "year": 1934,
+          "slug": "Fields leads a traveling theater troupe",
+          "poster": "https://image.tmdb.org/t/p/w500/ksE8jyrN6V8yE3IgD3GjvH9n8QX.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 43688,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ksE8jyrN6V8yE3IgD3GjvH9n8QX.jpg"
+        },
+        {
+          "title": "David Copperfield",
+          "year": 1935,
+          "slug": "Fields as Mr. Micawber in Dickens adaptation",
+          "poster": "https://image.tmdb.org/t/p/w500/4MtgfnOvnUioz04Yp4Km4JGUOCQ.jpg",
+          "initialStreaming": "Warner Archive",
+          "tmdb_id": 43899,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4MtgfnOvnUioz04Yp4Km4JGUOCQ.jpg"
+        },
+        {
+          "title": "Poppy",
+          "year": 1936,
+          "slug": "Fields as a carnival con man with a heart of gold",
+          "poster": "https://image.tmdb.org/t/p/w500/qoHNPwokDzR15TZbqWIffEmVh3I.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 28810,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qoHNPwokDzR15TZbqWIffEmVh3I.jpg"
+        },
+        {
+          "title": "Man on the Flying Trapeze",
+          "year": 1935,
+          "slug": "Fields as a henpecked husband seeking escape",
+          "poster": "https://image.tmdb.org/t/p/w500/aWpVoEuVxW6DvbRW03AAULAvB2e.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 55773,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aWpVoEuVxW6DvbRW03AAULAvB2e.jpg"
+        },
+        {
+          "title": "Mississippi",
+          "year": 1935,
+          "slug": "Fields joins Bing Crosby in riverboat comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/hIU2ixy8bHproyBEZ7FWwj7bTvb.jpg",
+          "initialStreaming": "Universal",
+          "tmdb_id": 131723,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hIU2ixy8bHproyBEZ7FWwj7bTvb.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

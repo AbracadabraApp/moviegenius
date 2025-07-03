@@ -1,0 +1,174 @@
+{
+  "props": {
+    "title": "That Sinking Feeling",
+    "year": 1979,
+    "initialSlug": "Teens plot hilarious heist of Glasgow's sinks",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/kOyW53nAqEY7V2PXuWWV9flWsxD.jpg",
+    "initialStreaming": null,
+    "tmdbId": 26771,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Bill Forsyth's debut **That Sinking Feeling** (1979) launched Scotland's independent film renaissance with raw DIY spirit and pitch-black humor. Shot for just £5,000 with amateur Glasgow actors, this unemployed-teens-plan-a-heist comedy captured the grim reality of late-70s urban decay while finding absurdist laughs in desperation. The film's influence echoes through later British kitchen sink comedies like **Trainspotting** (1996) and **Twin Town** (1997), proving how regional filmmaking could turn economic limitations into artistic advantages."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Gregory's Girl",
+            "year": 1981,
+            "slug": "Forsyth's follow-up teen comedy about awkward first love in a Scottish high school, featuring more polished production but keeping the authentic local charm",
+            "poster": "https://image.tmdb.org/t/p/w500/vVOdKnervWwvxIeJzLCqQzQPs7o.jpg",
+            "initialStreaming": "BritBox",
+            "tmdb_id": 21764,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vVOdKnervWwvxIeJzLCqQzQPs7o.jpg"
+          },
+          {
+            "title": "Local Hero",
+            "year": 1983,
+            "slug": "Forsyth's breakthrough hit about an American oil executive transformed by a quirky Scottish coastal village",
+            "poster": "https://image.tmdb.org/t/p/w500/jqxD0H9a1rg5bXftsm6gsNOjt4n.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 11235,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jqxD0H9a1rg5bXftsm6gsNOjt4n.jpg"
+          },
+          {
+            "title": "Comfort and Joy",
+            "year": 1984,
+            "slug": "Another Forsyth gem following a Glasgow DJ caught between rival ice cream vendors",
+            "poster": "https://image.tmdb.org/t/p/w500/6hD1WpT2XK2IkPIPxkhbotZdZsN.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 30278,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6hD1WpT2XK2IkPIPxkhbotZdZsN.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's innovative use of non-professional actors and authentic Glasgow dialect predated similar techniques in later Scottish classics like **Ratcatcher** (1999) and **Sweet Sixteen** (2002). Forsyth's decision to let his young cast partially improvise their dialogue created a documentary-like realism that influenced the entire British social realist movement, particularly directors like Ken Loach and Shane Meadows."
+      },
+      {
+        "type": "text",
+        "content": "While superficially a comedy about stealing stainless steel sinks, **That Sinking Feeling** (1979) delivers sharp commentary on Thatcher-era youth unemployment and urban decay. Its mix of social consciousness and surreal humor established a template followed by films like **My Name Is Joe** (1998) and **Neds** (2010), proving comedy could tackle serious themes without losing its bite. SUBHEAD: Impact on Scottish Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Rita, Sue and Bob Too",
+            "year": 1987,
+            "slug": "Raw Bradford-set comedy-drama about working class teens, sharing That Sinking Feeling's mix of humor and social commentary",
+            "poster": "https://image.tmdb.org/t/p/w500/bNofq5QmwFeFTILeUOzwG9hPe1X.jpg",
+            "initialStreaming": "BFI Player",
+            "tmdb_id": 18125,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bNofq5QmwFeFTILeUOzwG9hPe1X.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's success helped establish the Scottish Film Production Fund, leading to a wave of distinctive Scottish cinema in the 1980s and beyond. Works like **Restless Natives** (1985) and **Venus Peter** (1989) built on Forsyth's foundation, combining local storytelling with universal themes. The DIY production approach influenced later micro-budget Scottish successes like **Red Road** (2006) and **Shell** (2012)."
+      }
+    ],
+    "exploreFurther": [
+      "The Rise of Scottish Independent Cinema 1979-1985",
+      "Bill Forsyth's Filmmaking Techniques and Social Commentary",
+      "Glasgow on Film: From That Sinking Feeling to Present",
+      "DIY Filmmaking in 1970s Britain",
+      "The Impact of Regional Film Funding in the UK"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Small Faces",
+          "year": 1996,
+          "slug": "Glasgow gang drama with similar youth focus",
+          "poster": "https://image.tmdb.org/t/p/w500/pYFtU8vFj86TY435w99aK5fNjzl.jpg",
+          "initialStreaming": "BFI Player",
+          "tmdb_id": 42758,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pYFtU8vFj86TY435w99aK5fNjzl.jpg"
+        },
+        {
+          "title": "Breaking In",
+          "year": 1989,
+          "slug": "Early American Forsyth film maintaining his style",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Ae Fond Kiss",
+          "year": 2004,
+          "slug": "Ken Loach's Glasgow-set romance",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1404
+        },
+        {
+          "title": "Just Another Saturday",
+          "year": 1975,
+          "slug": "BBC Play exploring Glasgow youth culture",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BFI Player",
+          "tmdb_id": 111564
+        },
+        {
+          "title": "The Angel's Share",
+          "year": 2012,
+          "slug": "Modern Scottish comedy-drama about whisky heist",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Orphans",
+          "year": 1998,
+          "slug": "Dark Glasgow comedy-drama",
+          "poster": "https://image.tmdb.org/t/p/w500/xJqQmrCktJVoCoNU8HSMcTBUbdT.jpg",
+          "initialStreaming": "BFI Player",
+          "tmdb_id": 57745,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xJqQmrCktJVoCoNU8HSMcTBUbdT.jpg"
+        },
+        {
+          "title": "Dear Frankie",
+          "year": 2004,
+          "slug": "Glasgow-set emotional drama",
+          "poster": "https://image.tmdb.org/t/p/w500/5YRDvaBWBbhTKBYYc7BoOWdW01N.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 8981,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5YRDvaBWBbhTKBYYc7BoOWdW01N.jpg"
+        },
+        {
+          "title": "Ratcatcher",
+          "year": 1999,
+          "slug": "Lynne Ramsay's powerful Glasgow youth drama",
+          "poster": "https://image.tmdb.org/t/p/w500/AwgLDR14Ogv3nyaghyowBME0aA1.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 29698,
+          "poster_url": "https://image.tmdb.org/t/p/w500/AwgLDR14Ogv3nyaghyowBME0aA1.jpg"
+        },
+        {
+          "title": "Acid House",
+          "year": 1998,
+          "slug": "Irvine Welsh adaptation with similar dark humor",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 12229
+        },
+        {
+          "title": "Red Road",
+          "year": 2006,
+          "slug": "Glasgow-set surveillance thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/cxS2bylNtyGevLcFHowIHvGkQGv.jpg",
+          "initialStreaming": "BFI Player",
+          "tmdb_id": 11705,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cxS2bylNtyGevLcFHowIHvGkQGv.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

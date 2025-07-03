@@ -1,0 +1,149 @@
+{
+  "props": {
+    "title": "The Shift",
+    "year": 2008,
+    "initialSlug": "The world is about to shift.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/w38wHd7mJV551FLU8bK2Xgpkc4r.jpg",
+    "initialStreaming": null,
+    "tmdbId": 51270,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Shift** (2008), starring Wayne Dyer, brings spiritual self-help to narrative film in a way that echoes <a href=\"/movie/8357\" class=\"movie-title\">What the Bleep Do We Know!?</a> (2004). The film interweaves documentary-style interviews with dramatized storylines, similar to how **Conversations with God** (2006) approached metaphysical themes. While not a mainstream theatrical success, it found its audience through spiritual centers and the growing conscious media movement of the late 2000s, alongside films like **The Secret** (2006) and <a href=\"/movie/115685\" class=\"movie-title\">You Can Heal Your Life</a> (2007)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Secret",
+            "year": 2006,
+            "slug": "Rhonda Byrne's phenomenon explores law of attraction principles through interviews and reenactments",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": null
+          },
+          {
+            "title": "What the Bleep Do We Know!?",
+            "year": 2004,
+            "slug": "Quantum physics meets consciousness in this hybrid documentary-drama",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 8357
+          },
+          {
+            "title": "You Can Heal Your Life",
+            "year": 2007,
+            "slug": "Louise Hay's self-help classic adapted with personal stories and teachings",
+            "poster": "https://image.tmdb.org/t/p/w500/1zyJ6eZhFwDKuVYrlNfEVyxfzon.jpg",
+            "initialStreaming": "Gaia",
+            "tmdb_id": 115685,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1zyJ6eZhFwDKuVYrlNfEVyxfzon.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's approach to personal transformation shares DNA with earlier New Age documentaries like **Peaceful Warrior** (2006) and **The Celestine Prophecy** (2006). These films attempted to bridge the gap between spiritual teaching and entertainment, often struggling to find the right balance. **The Shift** stands out for grounding its metaphysical messages in relatable human stories, much like **The Five People You Meet in Heaven** (2004) did with its afterlife narrative. SUBHEAD: Impact on Spiritual Cinema"
+      },
+      {
+        "type": "text",
+        "content": "Following **The Shift**, spiritual cinema evolved toward more sophisticated productions like **I Am** (2010) and **Happy** (2011). These films maintained the teaching element while employing higher production values and more nuanced storytelling techniques. The genre expanded to include works like **Finding Joe** (2011), which explored Joseph Campbell's hero's journey through a spiritual lens, and **DMT: The Spirit Molecule** (2010), which investigated consciousness through both scientific and spiritual frameworks."
+      }
+    ],
+    "exploreFurther": [
+      "The evolution of spiritual cinema from 1990s New Age videos to modern conscious media",
+      "Wayne Dyer's influence on self-help film adaptations",
+      "The intersection of documentary and narrative techniques in metaphysical films",
+      "How spiritual cinema markets and distributes outside traditional channels",
+      "The role of personal transformation stories in spiritual documentaries"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Moses Code",
+          "year": 2008,
+          "slug": "Ancient spiritual secrets revealed through documentary format",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Gaia",
+          "tmdb_id": 286262
+        },
+        {
+          "title": "The Living Matrix",
+          "year": 2009,
+          "slug": "Energy healing and alternative medicine explored through science and spirit",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Gaia",
+          "tmdb_id": 119742
+        },
+        {
+          "title": "3 Magic Words",
+          "year": 2010,
+          "slug": "Documentary exploring the nature of consciousness and reality",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 89887
+        },
+        {
+          "title": "One: The Movie",
+          "year": 2005,
+          "slug": "Spiritual leaders answer life's biggest questions",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Power of the Heart",
+          "year": 2014,
+          "slug": "Baptist de Pape explores heart intelligence through expert interviews",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Gaia",
+          "tmdb_id": 401264
+        },
+        {
+          "title": "Inner Worlds, Outer Worlds",
+          "year": 2012,
+          "slug": "Four-part documentary on consciousness and spirituality",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 178189
+        },
+        {
+          "title": "Discover the Gift",
+          "year": 2011,
+          "slug": "Spiritual journey of siblings exploring life's purpose",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Gaia",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Cure Is",
+          "year": 2010,
+          "slug": "Mind-body healing documentary with spiritual perspective",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 57869
+        },
+        {
+          "title": "Spiritual Liberation",
+          "year": 2009,
+          "slug": "Michael Beckwith teaches transformation principles",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Gaia",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Quantum Activist",
+          "year": 2009,
+          "slug": "Quantum physicist meets spiritual teacher in documentary",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Gaia",
+          "tmdb_id": 52565
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

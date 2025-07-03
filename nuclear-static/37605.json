@@ -1,0 +1,182 @@
+{
+  "props": {
+    "title": "The Last Voyage",
+    "year": 1960,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/a4hwHvo4KdaQK4fRjvFH5hkTXMn.jpg",
+    "initialStreaming": null,
+    "tmdbId": 37605,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Last Voyage** (1960) stands as a pioneering disaster film that influenced later classics like <a href=\"/movie/551\" class=\"movie-title\">The Poseidon Adventure</a> (1972) and **Titanic** (1997). Shot on an actual condemned ocean liner, the SS Île de France, director Andrew L. Stone's commitment to realism included flooding real ship compartments and setting controlled fires on deck. This groundbreaking approach to practical effects created genuine tension that CGI-heavy modern disaster films struggle to match. Stars Robert Stack and Dorothy Malone deliver raw performances as parents fighting to save their daughter trapped in their flooding cabin, while the ship's stubborn captain, played by George Sanders, represents the hubris that often drives disaster narratives."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Poseidon Adventure",
+            "year": 1972,
+            "slug": "Gene Hackman leads survivors through an upturned luxury liner on New Year's Eve",
+            "poster": "https://image.tmdb.org/t/p/w500/6RGiA5BfhelU9zoD0b1GAG4GWWf.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 551,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6RGiA5BfhelU9zoD0b1GAG4GWWf.jpg"
+          },
+          {
+            "title": "A Night to Remember",
+            "year": 1958,
+            "slug": "The definitive pre-James Cameron Titanic disaster film, praised for historical accuracy",
+            "poster": "https://image.tmdb.org/t/p/w500/6fDhJAz6AuYWj3hAnvUL42Xlxfj.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 10971,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6fDhJAz6AuYWj3hAnvUL42Xlxfj.jpg"
+          },
+          {
+            "title": "The Time to Die",
+            "year": 1966,
+            "slug": "Japanese disaster film about a passenger ship in peril, influential in Asian cinema",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "not streaming",
+            "tmdb_id": 246749
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "What sets **The Last Voyage** (1960) apart is its intimate focus on a single family's survival story rather than the sprawling ensemble casts that would become standard in later disaster films like **Airport** (1970) and **The Towering Inferno** (1974). The claustrophobic cinematography by Hal Mohr emphasizes the rising water levels and deteriorating ship conditions, creating a suffocating atmosphere that later influenced films like **Deep Rising** (1998) and **Poseidon** (2006)."
+      },
+      {
+        "type": "text",
+        "content": "The film's technical achievements in practical effects laid groundwork for maritime disaster cinema. Using a real ship allowed Stone to capture authentic nautical details that studio-bound productions couldn't match. This influenced later productions like **The Perfect Storm** (2000) and **White Squall** (1996), which similarly emphasized naval authenticity over spectacle. SUBHEAD: Legacy and Impact on Maritime Disaster Films"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "SOS Pacific",
+            "year": 1959,
+            "slug": "Survivors of a plane crash face danger aboard an abandoned vessel",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "not streaming",
+            "tmdb_id": 71991
+          },
+          {
+            "title": "Juggernaut",
+            "year": 1974,
+            "slug": "Richard Harris must defuse bombs planted on an ocean liner",
+            "poster": "https://image.tmdb.org/t/p/w500/3c0qJYBVeDy1Jg0RBhlt60JA9x5.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 29805,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3c0qJYBVeDy1Jg0RBhlt60JA9x5.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**The Last Voyage** (1960) established crucial disaster film tropes: the expert who predicts catastrophe but isn't heeded, the sacrifice of crew members trying to save passengers, and the race against time as the ship takes on water. These elements appear in everything from **The Neptune Factor** (1973) to **Ghost Ship** (2002). The film's emphasis on practical effects and real locations influenced modern filmmakers like Christopher Nolan, whose **Dunkirk** (2017) similarly prioritized practical naval filming over digital effects."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Practical Effects in Maritime Films",
+      "Real Ships Used as Movie Sets",
+      "Andrew L. Stone's Documentary-Style Approach",
+      "The Golden Age of Disaster Films (1970s)",
+      "Ocean Liner Society's Preservation of SS Île de France History"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Titanic",
+          "year": 1997,
+          "slug": "James Cameron's epic romance amid historical disaster",
+          "poster": "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 597,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg"
+        },
+        {
+          "title": "Ship of Fools",
+          "year": 1965,
+          "slug": "Multiple storylines intersect on a passenger vessel",
+          "poster": "https://image.tmdb.org/t/p/w500/2LOe4Hu6Gxw6k76hLWhS8JVVILa.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 30080,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2LOe4Hu6Gxw6k76hLWhS8JVVILa.jpg"
+        },
+        {
+          "title": "Assault on a Queen",
+          "year": 1966,
+          "slug": "Criminals plot to rob the Queen Mary at sea",
+          "poster": "https://image.tmdb.org/t/p/w500/njPVhwl192zIJOpy5agbzY7XCEj.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 42716,
+          "poster_url": "https://image.tmdb.org/t/p/w500/njPVhwl192zIJOpy5agbzY7XCEj.jpg"
+        },
+        {
+          "title": "The Last Voyage of the Demeter",
+          "year": 2023,
+          "slug": "Horror at sea based on Dracula chapter",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Peacock",
+          "tmdb_id": 635910
+        },
+        {
+          "title": "Beyond the Poseidon Adventure",
+          "year": 1979,
+          "slug": "Sequel following salvage operators",
+          "poster": "https://image.tmdb.org/t/p/w500/wJOIXW4bjsXBPGzqojBV8laiLKM.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 31638,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wJOIXW4bjsXBPGzqojBV8laiLKM.jpg"
+        },
+        {
+          "title": "Gray Lady Down",
+          "year": 1978,
+          "slug": "Nuclear submarine disaster and rescue attempt",
+          "poster": "https://image.tmdb.org/t/p/w500/i1k0T9WvLZLyrZZpuhBjpc3uEJe.jpg",
+          "initialStreaming": "Starz",
+          "tmdb_id": 31948,
+          "poster_url": "https://image.tmdb.org/t/p/w500/i1k0T9WvLZLyrZZpuhBjpc3uEJe.jpg"
+        },
+        {
+          "title": "Goliath Awaits",
+          "year": 1981,
+          "slug": "Underwater discovery of preserved 1939 liner",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Raise the Titanic",
+          "year": 1980,
+          "slug": "Cold War thriller involving the sunken ship",
+          "poster": "https://image.tmdb.org/t/p/w500/XvukyvRCbkYKKv1TdtlyNxvzEl.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 24575,
+          "poster_url": "https://image.tmdb.org/t/p/w500/XvukyvRCbkYKKv1TdtlyNxvzEl.jpg"
+        },
+        {
+          "title": "The Wreck of the Mary Deare",
+          "year": 1959,
+          "slug": "Mystery aboard abandoned merchant vessel",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 114618
+        },
+        {
+          "title": "Deep Six",
+          "year": 1958,
+          "slug": "WWII naval warfare drama",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "not streaming",
+          "tmdb_id": 102078
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

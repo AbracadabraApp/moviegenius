@@ -1,0 +1,172 @@
+{
+  "props": {
+    "title": "John Wick",
+    "year": 2014,
+    "initialSlug": "Retired hitman seeks revenge for his murdered dog.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/fZPSd91yGE9fCcCe6OoQr6E3Bev.jpg",
+    "initialStreaming": "TBD",
+    "tmdbId": 245891,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**John Wick** (2014) revolutionized modern action cinema with its \"gun-fu\" choreography and neon-noir style. Director Chad Stahelski, a former stunt coordinator, brought raw authenticity to the fight scenes by letting Keanu Reeves perform extended takes without quick cuts - a stark contrast to the shaky-cam style popularized by **The Bourne Identity** (2002). The film established a new gold standard for action choreography, influencing works like **Atomic Blonde** (2017) and **Nobody** (2021). Its world-building of The Continental hotel and its assassin underworld created a unique mythology that elevated it beyond typical revenge plots."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "John Wick: Chapter 2",
+            "year": 2017,
+            "slug": "The legendary assassin is forced back into action by a blood oath, expanding the criminal underworld mythology",
+            "poster": "https://image.tmdb.org/t/p/w500/hXWBc0ioZP3cN4zCu6SN3YHXZVO.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 324552,
+            "poster_url": "https://image.tmdb.org/t/p/w500/hXWBc0ioZP3cN4zCu6SN3YHXZVO.jpg"
+          },
+          {
+            "title": "John Wick: Chapter 3 - Parabellum",
+            "year": 2019,
+            "slug": "Declared excommunicado, Wick fights his way through waves of assassins while seeking redemption",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 458156
+          },
+          {
+            "title": "John Wick: Chapter 4",
+            "year": 2023,
+            "slug": "Wick faces his most lethal adversaries yet in a global adventure to earn his freedom",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Starz",
+            "tmdb_id": 603692
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The franchise's influence extends beyond action choreography. Its stylized production design, particularly the neon-saturated cinematography by Jonathan Sela, sparked a visual renaissance in action films. This aesthetic DNA can be seen in **Extraction** (2020) and **Kate** (2021). The series also revitalized Keanu Reeves' career, similar to how **Taken** (2008) reinvented Liam Neeson as an action star, proving that older actors could carry physically demanding roles."
+      },
+      {
+        "type": "text",
+        "content": "The Continental's elaborate criminal underworld, with its gold coins and strict rules, inspired a wave of films exploring hidden societies. **Hotel Artemis** (2018) directly borrowed the concept of a criminal safe haven, while **Gunpowder Milkshake** (2021) adopted similar assassin-culture worldbuilding. This approach to creating a rich mythology within the action genre traces back to **The Matrix** (1999), another Keanu Reeves vehicle that balanced complex world-building with spectacular action. SUBHEAD: The Evolution of Modern Action Choreography"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Continental",
+            "year": 2023,
+            "slug": "Prequel series exploring the origins of the assassins' hotel in 1970s New York",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Peacock",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "John Wick's fight scenes prioritize wide shots and longer takes, letting audiences fully appreciate the complexity of the choreography. This approach contrasts with the rapid-cut style of films like **Quantum of Solace** (2008). The franchise's success influenced films like **Mission: Impossible - Fallout** (2018) and **The Raid 2** (2014) to embrace more elaborate, clearly filmed combat sequences. The integration of firearms and martial arts created a distinctive fighting style that's both balletic and brutally efficient."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Gun-Fu: From John Woo to John Wick",
+      "The Art of Long-Take Action Sequences",
+      "World-Building in Action Films: Creating Credible Criminal Underworlds",
+      "The Keanu Reeves Renaissance: From Matrix to Wick",
+      "Stunt Work in Modern Action Cinema: The Impact of Former Stunt Coordinators as Directors"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Raid",
+          "year": 2011,
+          "slug": "Indonesian martial arts thriller with revolutionary fight choreography",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Drive",
+          "year": 2011,
+          "slug": "Stylized neo-noir about a getaway driver seeking revenge",
+          "poster": "https://image.tmdb.org/t/p/w500/602vevIURmpDfzbnv5Ubi6wIkQm.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 64690,
+          "poster_url": "https://image.tmdb.org/t/p/w500/602vevIURmpDfzbnv5Ubi6wIkQm.jpg"
+        },
+        {
+          "title": "Atomic Blonde",
+          "year": 2017,
+          "slug": "Cold War spy thriller with John Wick-inspired action sequences",
+          "poster": "https://image.tmdb.org/t/p/w500/kV9R5h0Yct1kR8Hf8sJ1nX0Vz4x.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 341013,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kV9R5h0Yct1kR8Hf8sJ1nX0Vz4x.jpg"
+        },
+        {
+          "title": "Nobody",
+          "year": 2021,
+          "slug": "Better Call Saul's Bob Odenkirk becomes an unlikely action hero",
+          "poster": "https://image.tmdb.org/t/p/w500/oBgWY00bEFeZ9N25wWVyuQddbAo.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 615457,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oBgWY00bEFeZ9N25wWVyuQddbAo.jpg"
+        },
+        {
+          "title": "Equilibrium",
+          "year": 2002,
+          "slug": "Dystopian action film featuring \"gun kata\" fighting style",
+          "poster": "https://image.tmdb.org/t/p/w500/eW3YrxOh3rd6PnRgMSftYoflvfe.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 7299,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eW3YrxOh3rd6PnRgMSftYoflvfe.jpg"
+        },
+        {
+          "title": "The Man from Nowhere",
+          "year": 2010,
+          "slug": "South Korean thriller about a mysterious man protecting a child",
+          "poster": "https://image.tmdb.org/t/p/w500/ld19CFIo27t41JXSGZdaPMUGTxh.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 51608,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ld19CFIo27t41JXSGZdaPMUGTxh.jpg"
+        },
+        {
+          "title": "Bullet Train",
+          "year": 2022,
+          "slug": "Stylized action comedy with interconnected assassin plotlines",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Night Comes for Us",
+          "year": 2018,
+          "slug": "Ultra-violent Indonesian action thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/8lI1p5cPqgXN2qrKZrmI3mhKBfs.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 449992,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8lI1p5cPqgXN2qrKZrmI3mhKBfs.jpg"
+        },
+        {
+          "title": "Polar",
+          "year": 2019,
+          "slug": "Retired assassin forced back into action",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Hotel Artemis",
+          "year": 2018,
+          "slug": "Near-future thriller set in a hospital for criminals",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 406761
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

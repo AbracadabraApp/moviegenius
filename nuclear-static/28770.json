@@ -1,0 +1,151 @@
+{
+  "props": {
+    "title": "The Man Who Could Cheat Death",
+    "year": 1959,
+    "initialSlug": "Immortality comes at a price.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/qLwcQNE7oqSepbpy98fY8EWA0UR.jpg",
+    "initialStreaming": null,
+    "tmdbId": 28770,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Man Who Could Cheat Death** (1959) represents Hammer Horror's ambitious attempt to remake **The Man in Half Moon Street** (1945). This Technicolor chiller stars Anton Diffring as Dr. Georges Bonnet, a sculptor who maintains his youth through gland transplants and a mysterious green serum. The film follows Hammer's signature gothic style established in **The Curse of Frankenstein** (1957) and **Horror of Dracula** (1958), with lavish Victorian-era sets and that distinctive color palette that made their horror films instantly recognizable. Director Terence Fisher, Hammer's most reliable helmsman, brings his characteristic psychological tension to the immortality narrative."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "House of Frankenstein",
+            "year": 1944,
+            "slug": "Boris Karloff stars as a mad scientist seeking revenge and immortality through brain transplants",
+            "poster": "https://image.tmdb.org/t/p/w500/9HPcPasdgxjlSMlnyzIWrnGodOz.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 3103,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9HPcPasdgxjlSMlnyzIWrnGodOz.jpg"
+          },
+          {
+            "title": "The Picture of Dorian Gray",
+            "year": 1945,
+            "slug": "Oscar-winning adaptation of Wilde's novel about a man whose portrait ages while he remains young",
+            "poster": "https://image.tmdb.org/t/p/w500/mfvcsmAzdie8YuWI0JpO2u1uzfF.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 16559,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mfvcsmAzdie8YuWI0JpO2u1uzfF.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's themes of immortality and the price of eternal youth connect it to a rich tradition of horror cinema exploring humanity's desperate quest to cheat death. **Dr. Jekyll and Sister Hyde** (1971) would later rework similar ideas with a gender-bending twist, while **The Leech Woman** (1960) explored immortality's corrupting influence through a female protagonist. Diffring's controlled performance as Bonnet echoes Peter Cushing's work as Baron Frankenstein, portraying scientific obsession with chilling precision. SUBHEAD: Hammer Horror's Scientific Gothic"
+      },
+      {
+        "type": "text",
+        "content": "Hammer's approach to science fiction-horror hybrids reached its peak in the late 1950s. **The Man Who Could Cheat Death** shares DNA with **The Two Faces of Dr. Jekyll** (1960) and **Frankenstein Created Woman** (1967) in its exploration of scientific hubris. The studio's signature style - combining period settings with lurid modern sensibilities - created a unique subgenre that influenced horror cinema for decades. Christopher Lee's brief appearance here bridges the film to Hammer's broader universe of gothic chillers."
+      }
+    ],
+    "exploreFurther": [
+      "Hammer Horror's Color Revolution - How Technicolor transformed horror cinema",
+      "Terence Fisher's Directorial Style - Analysis of his major works for Hammer",
+      "The Evolution of Mad Scientist Characters in Horror",
+      "Victorian Science Fiction in Cinema",
+      "Immortality Themes in Horror Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Curse of Frankenstein",
+          "year": 1957,
+          "slug": "Peter Cushing stars in Hammer's first color horror film",
+          "poster": "https://image.tmdb.org/t/p/w500/r9PDkqKhzdo54aqnOL88wUJY49B.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 3079,
+          "poster_url": "https://image.tmdb.org/t/p/w500/r9PDkqKhzdo54aqnOL88wUJY49B.jpg"
+        },
+        {
+          "title": "Horror of Dracula",
+          "year": 1958,
+          "slug": "Christopher Lee's iconic portrayal of the vampire count",
+          "poster": "https://image.tmdb.org/t/p/w500/9UHOATvzXQWbElSGygOY1ar3vpp.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 11868,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9UHOATvzXQWbElSGygOY1ar3vpp.jpg"
+        },
+        {
+          "title": "The Mummy",
+          "year": 1959,
+          "slug": "Hammer's take on the classic monster with Peter Cushing and Christopher Lee",
+          "poster": "https://image.tmdb.org/t/p/w500/w3XEtgi8W9tuPQnLVFCPVxtweyC.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 18990,
+          "poster_url": "https://image.tmdb.org/t/p/w500/w3XEtgi8W9tuPQnLVFCPVxtweyC.jpg"
+        },
+        {
+          "title": "Frankenstein Must Be Destroyed",
+          "year": 1969,
+          "slug": "One of Hammer's darker entries in their Frankenstein series",
+          "poster": "https://image.tmdb.org/t/p/w500/rLCCdYBhCm4ATkupOTf4yRbFgm6.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 3075,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rLCCdYBhCm4ATkupOTf4yRbFgm6.jpg"
+        },
+        {
+          "title": "The Devil Rides Out",
+          "year": 1968,
+          "slug": "Christopher Lee battles Satanists in this Hammer horror classic",
+          "poster": "https://image.tmdb.org/t/p/w500/p1AWO8PIMfT6XGHV8uaa8erencj.jpg",
+          "initialStreaming": "Britbox",
+          "tmdb_id": 39891,
+          "poster_url": "https://image.tmdb.org/t/p/w500/p1AWO8PIMfT6XGHV8uaa8erencj.jpg"
+        },
+        {
+          "title": "Taste of Fear",
+          "year": 1961,
+          "slug": "Hammer psychological thriller with twisted plot revelations",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 64568
+        },
+        {
+          "title": "The Gorgon",
+          "year": 1964,
+          "slug": "Hammer horror mixing Greek mythology with gothic atmosphere",
+          "poster": "https://image.tmdb.org/t/p/w500/yk0hJB3hy3o6cAzv5tjcPoKQd9p.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 28667,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yk0hJB3hy3o6cAzv5tjcPoKQd9p.jpg"
+        },
+        {
+          "title": "Dr. Jekyll and Sister Hyde",
+          "year": 1971,
+          "slug": "Gender-bending take on the classic story",
+          "poster": "https://image.tmdb.org/t/p/w500/mm3cm6hLHYwuB5bRim1PIM6guvN.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 30855,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mm3cm6hLHYwuB5bRim1PIM6guvN.jpg"
+        },
+        {
+          "title": "Frankenstein Created Woman",
+          "year": 1967,
+          "slug": "Peter Cushing returns as the baron in this supernatural entry",
+          "poster": "https://image.tmdb.org/t/p/w500/1gT7sSKIITCchwCQopAuvxUctDU.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 3104,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1gT7sSKIITCchwCQopAuvxUctDU.jpg"
+        },
+        {
+          "title": "The Evil of Frankenstein",
+          "year": 1964,
+          "slug": "Hammer's attempt to make their Frankenstein more Universal-like",
+          "poster": "https://image.tmdb.org/t/p/w500/yJBzyHZ6m9fOisiAtrtUjNidZ1k.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 3124,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yJBzyHZ6m9fOisiAtrtUjNidZ1k.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

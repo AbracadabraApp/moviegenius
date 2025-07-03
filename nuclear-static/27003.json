@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "The Black Room",
+    "year": 1935,
+    "initialSlug": "Evil Lives Behind These Walls",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/lXjHM4k632aV4F9vd6u5sJkJF6G.jpg",
+    "initialStreaming": null,
+    "tmdbId": 27003,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Black Room** (1935) stands as a masterful Gothic horror that showcases Boris Karloff's exceptional range beyond his famous monster roles. Playing dual roles as twin brothers, Karloff delivers a tour-de-force performance that influenced countless evil twin narratives in horror cinema. The film's atmospheric direction by Roy William Neill (who later helmed many of Universal's Sherlock Holmes series) established crucial Gothic horror elements that echoed through **Dead Ringer** (1964) and **The Other** (1972). The baroque castle setting, complete with its ominous prophecy and secret torture chamber, set a template for European horror that directors like Roger Corman would mine in his Edgar Allan Poe cycle of the 1960s."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "House of Usher",
+            "year": 1960,
+            "slug": "Vincent Price stars in Roger Corman's atmospheric Edgar Allan Poe adaptation about a cursed noble family",
+            "poster": "https://image.tmdb.org/t/p/w500/jEzZOrGSWpl0jKOIXoY3OnEabLQ.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 23439,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jEzZOrGSWpl0jKOIXoY3OnEabLQ.jpg"
+          },
+          {
+            "title": "The Man Who Could Cheat Death",
+            "year": 1959,
+            "slug": "Anton Diffring plays a doctor who must murder to maintain immortality in this Hammer horror classic",
+            "poster": "https://image.tmdb.org/t/p/w500/qLwcQNE7oqSepbpy98fY8EWA0UR.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 28770,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qLwcQNE7oqSepbpy98fY8EWA0UR.jpg"
+          },
+          {
+            "title": "Tower of London",
+            "year": 1939,
+            "slug": "Boris Karloff stars as a sadistic executioner in this historical horror drama",
+            "poster": "https://image.tmdb.org/t/p/w500/glEWt92HOIq7uUoyMyO3JWyzH6K.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 28365,
+            "poster_url": "https://image.tmdb.org/t/p/w500/glEWt92HOIq7uUoyMyO3JWyzH6K.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence on Gothic horror cinema cannot be overstated. Its blend of psychological horror and aristocratic decay influenced everything from **Dragonwyck** (1946) to **Crimson Peak** (2015). The motif of an ancestral curse and inherited evil became a staple of Gothic cinema, appearing in films like **The Fall of the House of Usher** (1960) and **The Curse of the Cat People** (1944). Karloff's nuanced portrayal of the noble yet cursed Anton and his malevolent brother Gregor established a framework for exploring duality that resonated through horror cinema. SUBHEAD: Dual Role Innovation and Legacy"
+      },
+      {
+        "type": "text",
+        "content": "Karloff's groundbreaking dual performance set new standards for how actors could portray multiple roles, influencing films like **Dead Ringer** (1964) with Bette Davis and **The Dark Mirror** (1946) with Olivia de Havilland. The technical achievements in showing both brothers on screen simultaneously were revolutionary for 1935, paving the way for split-screen techniques that would become crucial in films like **The Parent Trap** (1961) and **Sisters** (1972). Director Neill's careful attention to making each brother distinct while maintaining their familial connection demonstrated sophisticated character work that elevated the horror genre."
+      }
+    ],
+    "exploreFurther": [
+      "Gothic Horror Architecture in Classic Cinema",
+      "Split-Screen Technology Evolution in Early Film",
+      "Boris Karloff's Non-Monster Roles",
+      "Twin Narratives in Horror Cinema",
+      "European Castle Settings in Hollywood Horror"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Black Cat",
+          "year": 1934,
+          "slug": "Karloff and Lugosi face off in an art deco nightmare",
+          "poster": "https://image.tmdb.org/t/p/w500/QTH3dkeDGTBRBmsY0A7STpsNN4.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 24106,
+          "poster_url": "https://image.tmdb.org/t/p/w500/QTH3dkeDGTBRBmsY0A7STpsNN4.jpg"
+        },
+        {
+          "title": "The Old Dark House",
+          "year": 1932,
+          "slug": "Karloff terrorizes stranded travelers in a Gothic mansion",
+          "poster": "https://image.tmdb.org/t/p/w500/t4058MoAiVg8R1aqHNL3nAP48km.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 31592,
+          "poster_url": "https://image.tmdb.org/t/p/w500/t4058MoAiVg8R1aqHNL3nAP48km.jpg"
+        },
+        {
+          "title": "Dead of Night",
+          "year": 1945,
+          "slug": "Anthology horror featuring evil ventriloquist dummy",
+          "poster": "https://image.tmdb.org/t/p/w500/oVAlugIkLCkyyXufNDhtr5kl3yB.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 13581,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oVAlugIkLCkyyXufNDhtr5kl3yB.jpg"
+        },
+        {
+          "title": "The Ghost and Mrs. Muir",
+          "year": 1947,
+          "slug": "Romantic Gothic tale of a widow and sea captain's ghost",
+          "poster": "https://image.tmdb.org/t/p/w500/idoD3cwfwj86BPvVoWVgWhnT2xq.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 22292,
+          "poster_url": "https://image.tmdb.org/t/p/w500/idoD3cwfwj86BPvVoWVgWhnT2xq.jpg"
+        },
+        {
+          "title": "The Innocents",
+          "year": 1961,
+          "slug": "Gothic psychological horror based on Turn of the Screw",
+          "poster": "https://image.tmdb.org/t/p/w500/idqvLBmlEHUITMnQ0EJ6Yb5TpVw.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 16372,
+          "poster_url": "https://image.tmdb.org/t/p/w500/idqvLBmlEHUITMnQ0EJ6Yb5TpVw.jpg"
+        },
+        {
+          "title": "The Pit and the Pendulum",
+          "year": 1961,
+          "slug": "Vincent Price stars in Corman's Poe adaptation",
+          "poster": "https://image.tmdb.org/t/p/w500/6hOTmFaePluI5eicY4XTv6hg0T0.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 28501,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6hOTmFaePluI5eicY4XTv6hg0T0.jpg"
+        },
+        {
+          "title": "The Devil Commands",
+          "year": 1941,
+          "slug": "Karloff as scientist exploring communication with the dead",
+          "poster": "https://image.tmdb.org/t/p/w500/kVAKzdJV9suPxnhtwWQSmzE3gBW.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 30307,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kVAKzdJV9suPxnhtwWQSmzE3gBW.jpg"
+        },
+        {
+          "title": "Die, Monster, Die!",
+          "year": 1965,
+          "slug": "Karloff in Lovecraft-inspired Gothic horror",
+          "poster": "https://image.tmdb.org/t/p/w500/zv7z3cfHGg9TwDfInxsSRAzWc6z.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 29067,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zv7z3cfHGg9TwDfInxsSRAzWc6z.jpg"
+        },
+        {
+          "title": "The Terror",
+          "year": 1963,
+          "slug": "Young Jack Nicholson meets mysterious woman in haunted castle",
+          "poster": "https://image.tmdb.org/t/p/w500/7ls64LquXB0nc5MkJFWyWaXlBLj.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 31655,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7ls64LquXB0nc5MkJFWyWaXlBLj.jpg"
+        },
+        {
+          "title": "Murders in the Rue Morgue",
+          "year": 1932,
+          "slug": "Bela Lugosi stars in Poe adaptation",
+          "poster": "https://image.tmdb.org/t/p/w500/juw7PExPZ3JuwiT09fAePulrPoa.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 28435,
+          "poster_url": "https://image.tmdb.org/t/p/w500/juw7PExPZ3JuwiT09fAePulrPoa.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

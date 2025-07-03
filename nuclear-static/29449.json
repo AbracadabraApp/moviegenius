@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "Images",
+    "year": 1972,
+    "initialSlug": "Reality bleeds into madness",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/o9qfaNwjnqNBJ1uOLeC53r5eTzB.jpg",
+    "initialStreaming": null,
+    "tmdbId": 29449,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Robert Altman's psychological horror masterpiece **Images** (1972) represents one of the most unsettling explorations of mental breakdown ever filmed. Susannah York delivers a haunting performance as Cathryn, a children's author whose grip on reality splinters at a remote Irish country house. The film shares DNA with Roman Polanski's <a href=\"/movie/11481\" class=\"movie-title\">Repulsion</a> (1965) and **Rosemary's Baby** (1968) in its claustrophobic portrayal of female psychological disintegration, but Altman's experimental approach - with its overlapping soundscapes and reality-bending imagery - pushes even further into pure subjective madness."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Repulsion",
+            "year": 1965,
+            "slug": "Catherine Deneuve stars as a sexually repressed woman whose mind fractures in her London apartment",
+            "poster": "https://image.tmdb.org/t/p/w500/dtyCKEPLqv9wxyVazL4b843vtUb.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 11481,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dtyCKEPLqv9wxyVazL4b843vtUb.jpg"
+          },
+          {
+            "title": "3 Women",
+            "year": 1977,
+            "slug": "Altman's dreamlike story of identity merger between Shelley Duvall and Sissy Spacek",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 41662
+          },
+          {
+            "title": "Persona",
+            "year": 1966,
+            "slug": "Ingmar Bergman's masterpiece about an actress and nurse whose identities begin to blur",
+            "poster": "https://image.tmdb.org/t/p/w500/9QlqnRNbzb78lRiRPAP1ufmoZko.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 797,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9QlqnRNbzb78lRiRPAP1ufmoZko.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's revolutionary sound design by Stomu Yamash'ta creates an otherworldly atmosphere where reality and hallucination become indistinguishable. This influenced later psychological horror films like **Possession** (1981) and David Lynch's **Lost Highway** (1997). Vilmos Zsigmond's cinematography employs unsettling compositions and mirror imagery that would later be echoed in Stanley Kubrick's **The Shining** (1980), particularly in its use of doubles and doppelgangers."
+      },
+      {
+        "type": "text",
+        "content": "York's performance, which won her Best Actress at Cannes, captures the terrifying dissolution of self that would later be explored in films like <a href=\"/movie/1018\" class=\"movie-title\">Mulholland Drive</a> (2001) and **Black Swan** (2010). The film's rural Irish setting becomes a character itself, with the isolation and misty landscape contributing to the psychological claustrophobia in ways that influenced later works like Lars von Trier's **Antichrist** (2009). SUBHEAD: Influence on Modern Psychological Horror"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Mulholland Drive",
+            "year": 2001,
+            "slug": "David Lynch's nightmarish Hollywood dream becomes a psychological nightmare",
+            "poster": "https://image.tmdb.org/t/p/w500/x7A59t6ySylr1L7aubOQEA480vM.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 1018,
+            "poster_url": "https://image.tmdb.org/t/p/w500/x7A59t6ySylr1L7aubOQEA480vM.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The legacy of **Images** (1972) can be seen in contemporary psychological horror films that blur the line between reality and madness. Films like **The Babadook** (2014) and **Saint Maud** (2020) draw from Altman's pioneering work in subjective horror, while Alex Garland's **Men** (2022) directly references the film's use of doppelgangers and rural isolation. The way **Images** handles its unreliable narrator and questioning of reality laid groundwork for mind-bending contemporary works like **Upstream Color** (2013) and **The Lighthouse** (2019)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Psychological Horror in 1970s Cinema",
+      "Robert Altman's Experimental Period: Images, 3 Women, and That Cold Day in the Park",
+      "Sound Design as Narrative Device in Horror Cinema",
+      "The Influence of European Art House on American Horror",
+      "Female Madness in Cinema: From Repulsion to Saint Maud"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Possession",
+          "year": 1981,
+          "slug": "Isabelle Adjani's intense performance as a woman's descent into madness",
+          "poster": "https://image.tmdb.org/t/p/w500/lUFZsUuJ0YyhBXH8D2BFUd6wODm.jpg",
+          "initialStreaming": "Metrograph",
+          "tmdb_id": 21484,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lUFZsUuJ0YyhBXH8D2BFUd6wODm.jpg"
+        },
+        {
+          "title": "Don't Look Now",
+          "year": 1973,
+          "slug": "Psychological horror about grief and premonition in Venice",
+          "poster": "https://image.tmdb.org/t/p/w500/mq3TW9GiF9MNlIEjnlL7D9X9tbx.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 931,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mq3TW9GiF9MNlIEjnlL7D9X9tbx.jpg"
+        },
+        {
+          "title": "That Cold Day in the Park",
+          "year": 1969,
+          "slug": "Sandy Dennis as a disturbed woman who takes in a mysterious stranger",
+          "poster": "https://image.tmdb.org/t/p/w500/tUcTRSXeU6mzlPqQ6i8vfWY3MhP.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 66488,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tUcTRSXeU6mzlPqQ6i8vfWY3MhP.jpg"
+        },
+        {
+          "title": "Hour of the Wolf",
+          "year": 1968,
+          "slug": "Bergman's only horror film about an artist's psychological breakdown",
+          "poster": "https://image.tmdb.org/t/p/w500/jSqTnEP1x1OcOglqrInYvGSF1tL.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 18333,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jSqTnEP1x1OcOglqrInYvGSF1tL.jpg"
+        },
+        {
+          "title": "The Other",
+          "year": 1972,
+          "slug": "Psychological horror about evil twins and rural family tragedy",
+          "poster": "https://image.tmdb.org/t/p/w500/aD6ucPw41W8RImWzFSFeWkHrpiR.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 35280,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aD6ucPw41W8RImWzFSFeWkHrpiR.jpg"
+        },
+        {
+          "title": "The Tenant",
+          "year": 1976,
+          "slug": "Polanski completes his apartment trilogy about paranoia",
+          "poster": "https://image.tmdb.org/t/p/w500/ibs40AluKVoCqnVYvommPNQn3E6.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 287854,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ibs40AluKVoCqnVYvommPNQn3E6.jpg"
+        },
+        {
+          "title": "Phenomena",
+          "year": 1985,
+          "slug": "Jennifer Connelly in Argento's psychological horror",
+          "poster": "https://image.tmdb.org/t/p/w500/8u14C2FLMSCLIT5znmye6RovonO.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 29161,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8u14C2FLMSCLIT5znmye6RovonO.jpg"
+        },
+        {
+          "title": "Safe",
+          "year": 1995,
+          "slug": "Julianne Moore's suburban life dissolves into illness and paranoia",
+          "poster": "https://image.tmdb.org/t/p/w500/2O71QsBkbqdLqQdx2yuNpJ4pFPq.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 32646,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2O71QsBkbqdLqQdx2yuNpJ4pFPq.jpg"
+        },
+        {
+          "title": "Berberian Sound Studio",
+          "year": 2012,
+          "slug": "Sound engineer loses his grip on reality",
+          "poster": "https://image.tmdb.org/t/p/w500/sCrLZYF7TU32Vk5bOIJneVAcoKE.jpg",
+          "initialStreaming": "AMC+",
+          "tmdb_id": 116811,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sCrLZYF7TU32Vk5bOIJneVAcoKE.jpg"
+        },
+        {
+          "title": "A Field in England",
+          "year": 2013,
+          "slug": "Historical psychological horror in isolated setting",
+          "poster": "https://image.tmdb.org/t/p/w500/dKhMJr8yoHVyvxyUiAeIn2hKVdL.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 179111,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dKhMJr8yoHVyvxyUiAeIn2hKVdL.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

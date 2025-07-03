@@ -1,0 +1,170 @@
+{
+  "props": {
+    "title": "Mr. Death",
+    "year": 1999,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/buoMN4p95mvB2JgyglMb5gKxurV.jpg",
+    "initialStreaming": null,
+    "tmdbId": 28216,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Mr. Death: The Rise and Fall of Fred A. Leuchter, Jr.** (1999) stands as one of Errol Morris's most unsettling documentaries, using his signature Interrotron interview style to probe the mind of Fred Leuchter, an execution equipment designer who became an infamous Holocaust denier. The film builds like a psychological thriller, starting with Leuchter's bizarre career \"improving\" electric chairs and lethal injection systems before his catastrophic involvement with Holocaust denial. Morris's approach in this film influenced later works like <a href=\"/movie/12698\" class=\"movie-title\">The Fog of War</a> (2003) and **The Unknown Known** (2013), showing how seemingly rational people can descend into dangerous delusions."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Thin Blue Line",
+            "year": 1988,
+            "slug": "Morris's groundbreaking documentary that helped free an innocent man from death row through meticulous investigation and reenactments",
+            "poster": "https://image.tmdb.org/t/p/w500/4w4BJk3l8y9gYwPPLRs6uPHOmGL.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 14285,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4w4BJk3l8y9gYwPPLRs6uPHOmGL.jpg"
+          },
+          {
+            "title": "The Act of Killing",
+            "year": 2012,
+            "slug": "Former Indonesian death squad leaders reenact their murders in cinematic styles, creating a haunting examination of evil",
+            "poster": "https://image.tmdb.org/t/p/w500/sp5B7Tz5ttsgOLnIlCP5uEhtesI.jpg",
+            "initialStreaming": "AMC+",
+            "tmdb_id": 123678,
+            "poster_url": "https://image.tmdb.org/t/p/w500/sp5B7Tz5ttsgOLnIlCP5uEhtesI.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's examination of self-deception connects to other documentaries about people blinded by their own expertise or certainty. **A Brief History of Time** (1991) shows Stephen Hawking's brilliant yet humble approach to cosmic mysteries, while **Into the Abyss** (2011) explores capital punishment through Werner Herzog's probing conversations with death row inmates and officers. Morris's technique of letting subjects reveal themselves through extended interviews influenced countless later documentaries."
+      },
+      {
+        "type": "text",
+        "content": "The technical aspects of **Mr. Death** (1999) showcase Morris's innovative visual style. He combines Leuchter's direct-to-camera interviews with stylized reenactments and archival footage, creating a disturbing portrait of how \"professional\" methodology can be used to support horrific conclusions. This approach influenced later films like **The Imposter** (2012) and **Tower** (2016) in their use of mixed media to explore dark subject matter. SUBHEAD: The Ethics of Documentary Representation"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Fog of War",
+            "year": 2003,
+            "slug": "Robert McNamara reflects on Vietnam War decisions and the nature of modern warfare in Morris's Oscar-winning documentary",
+            "poster": "https://image.tmdb.org/t/p/w500/m1dEnkrdJGBSLeAyJepuGrU9sNI.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 12698,
+            "poster_url": "https://image.tmdb.org/t/p/w500/m1dEnkrdJGBSLeAyJepuGrU9sNI.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Morris's handling of Leuchter raises crucial questions about documentary ethics and the filmmaker's responsibility when presenting controversial subjects. Unlike the more confrontational approach of films like **Shoah** (1985) or **The Last Days** (1998), Morris allows Leuchter's self-incrimination to unfold naturally, trusting viewers to recognize the horror of his conclusions. This technique influenced later documentaries like **Going Clear** (2015) and **The World According to Dick Cheney** (2013)."
+      }
+    ],
+    "exploreFurther": [
+      "The evolution of Errol Morris's Interrotron interview technique and its impact on documentary filmmaking",
+      "The ethical challenges of representing Holocaust denial in documentary film",
+      "Technical innovations in documentary reenactment from The Thin Blue Line to present",
+      "The intersection of professional expertise and moral responsibility in documentary subjects",
+      "Capital punishment documentation in American cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Standard Operating Procedure",
+          "year": 2008,
+          "slug": "Morris examines Abu Ghraib photos and military psychology",
+          "poster": "https://image.tmdb.org/t/p/w500/v2QCXsisMLYsozC2qJtYGa3Rvsi.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 8847,
+          "poster_url": "https://image.tmdb.org/t/p/w500/v2QCXsisMLYsozC2qJtYGa3Rvsi.jpg"
+        },
+        {
+          "title": "Gates of Heaven",
+          "year": 1978,
+          "slug": "Morris's eccentric debut about pet cemeteries reveals deeper truths",
+          "poster": "https://image.tmdb.org/t/p/w500/2VGQsyCvd2XJKpKZXHF4AWsADoA.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 24998,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2VGQsyCvd2XJKpKZXHF4AWsADoA.jpg"
+        },
+        {
+          "title": "The Look of Silence",
+          "year": 2014,
+          "slug": "A man confronts his brother's killers in Indonesia",
+          "poster": "https://image.tmdb.org/t/p/w500/7TakQLT8gyzIMG8hX8RLTd5qROQ.jpg",
+          "initialStreaming": "AMC+",
+          "tmdb_id": 267480,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7TakQLT8gyzIMG8hX8RLTd5qROQ.jpg"
+        },
+        {
+          "title": "Capturing the Friedmans",
+          "year": 2003,
+          "slug": "Family video footage reveals dark secrets",
+          "poster": "https://image.tmdb.org/t/p/w500/qWdMQj0HN7QxKxEkm0tk04nuAQ2.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 2260,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qWdMQj0HN7QxKxEkm0tk04nuAQ2.jpg"
+        },
+        {
+          "title": "The Emperor's Naked Army Marches On",
+          "year": 1987,
+          "slug": "Japanese veteran investigates war crimes",
+          "poster": "https://image.tmdb.org/t/p/w500/gMbMe2R8edL8SfioyjJqt1b1qZy.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 51929,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gMbMe2R8edL8SfioyjJqt1b1qZy.jpg"
+        },
+        {
+          "title": "Tabloid",
+          "year": 2010,
+          "slug": "Morris explores a scandalous love story",
+          "poster": "https://image.tmdb.org/t/p/w500/eTjP19ezcIb2fMLOgjWheBVcGV.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 69480,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eTjP19ezcIb2fMLOgjWheBVcGV.jpg"
+        },
+        {
+          "title": "Vernon, Florida",
+          "year": 1981,
+          "slug": "Eccentric portrait of small-town characters",
+          "poster": "https://image.tmdb.org/t/p/w500/dqcUISuve7pUcGT75Kwa0E8Sz6H.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 30142,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dqcUISuve7pUcGT75Kwa0E8Sz6H.jpg"
+        },
+        {
+          "title": "Fast, Cheap & Out of Control",
+          "year": 1997,
+          "slug": "Four obsessive professionals reveal life philosophies",
+          "poster": "https://image.tmdb.org/t/p/w500/8uXV6w3ZQUtefqjCgxXswCwPSjk.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 25099,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8uXV6w3ZQUtefqjCgxXswCwPSjk.jpg"
+        },
+        {
+          "title": "The Unknown Known",
+          "year": 2013,
+          "slug": "Donald Rumsfeld's career through Morris's lens",
+          "poster": "https://image.tmdb.org/t/p/w500/8BiCtoif98SAhSRRNfshRL75xCW.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 209799,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8BiCtoif98SAhSRRNfshRL75xCW.jpg"
+        },
+        {
+          "title": "S21: The Khmer Rouge Killing Machine",
+          "year": 2003,
+          "slug": "Cambodian genocide survivors confront guards",
+          "poster": "https://image.tmdb.org/t/p/w500/7lkXz41WJjIvoHCnsLtXMqvCeiW.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 43936,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7lkXz41WJjIvoHCnsLtXMqvCeiW.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

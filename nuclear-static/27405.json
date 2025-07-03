@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "Circus of Horrors",
+    "year": 1960,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/9sfshfTBXOFOAutfceewC6Rvgxq.jpg",
+    "initialStreaming": null,
+    "tmdbId": 27405,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Circus of Horrors** (1960) represents a pivotal moment in British horror cinema, blending the lurid Technicolor style of Hammer Horror with continental circus aesthetics. Director Sidney Hayers crafted a twisted tale of a deranged plastic surgeon who takes over a circus, creating a macabre showcase of surgically-enhanced performers who meet mysterious deaths. The film follows the psychological horror template established by **Les Diaboliques** (1955) while incorporating the growing trend of medical horror seen in **Eyes Without a Face** (1960)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Circus of Fear",
+            "year": 1966,
+            "slug": "Christopher Lee stars in this German-British thriller about murders in a circus, featuring similar themes of deception and revenge",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 42717
+          },
+          {
+            "title": "Berserk",
+            "year": 1967,
+            "slug": "Joan Crawford leads this circus-set horror about mysterious deaths plaguing a traveling show",
+            "poster": "https://image.tmdb.org/t/p/w500/gGWC7AncEsAxNv01yXY2xlr8gZz.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 42689,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gGWC7AncEsAxNv01yXY2xlr8gZz.jpg"
+          },
+          {
+            "title": "Vampire Circus",
+            "year": 1972,
+            "slug": "Hammer Horror's take on the evil circus subgenre, with supernatural elements and gothic atmosphere",
+            "poster": "https://image.tmdb.org/t/p/w500/nHsVRJ1beSQUoJDLXen6QyiayAu.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 29960,
+            "poster_url": "https://image.tmdb.org/t/p/w500/nHsVRJ1beSQUoJDLXen6QyiayAu.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The circus horror subgenre peaked in the 1960s, reflecting Cold War anxieties about infiltration and deformity. **Horrors of the Black Museum** (1959) had already established the template of the murderous impresario, while **Dr. Terror's House of Horrors** (1965) would later perfect the anthology approach to carnival-themed terror. Anton Diffring's performance as Dr. Schuler channels the clinical menace of Peter Cushing's early horror roles, particularly in **The Curse of Frankenstein** (1957)."
+      },
+      {
+        "type": "text",
+        "content": "The film's striking use of color and theatrical violence influenced later circus-themed horror like **The Greatest Show in Hell** (1964) and **Torture Garden** (1967). Its blend of psychological manipulation and physical horror would echo through later British horror films, particularly in the work of Pete Walker with films like **House of Whipcord** (1974). SUBHEAD: Impact on Modern Horror"
+      },
+      {
+        "type": "text",
+        "content": "Modern filmmakers continue drawing inspiration from **Circus of Horrors**' blend of beauty and brutality. **American Horror Story: Freak Show** (2014) directly references its aesthetic, while Rob Zombie's **31** (2016) updates its carnival brutality for contemporary audiences. The film's influence can even be seen in art house horror like **Santa Sangre** (1989), which shares its themes of circus life and psychological manipulation."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of British Horror Cinema 1960-1970",
+      "Circus Aesthetics in Horror Films",
+      "Medical Horror and Body Modification in Cinema",
+      "Anton Diffring's Impact on Horror Cinema",
+      "The Psychology of Circus-Based Horror"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Freaks",
+          "year": 1932,
+          "slug": "Tod Browning's controversial classic about circus performers seeking revenge",
+          "poster": "https://image.tmdb.org/t/p/w500/fX2Wxd0W9E7eVClUd8kJTfennoV.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 136,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fX2Wxd0W9E7eVClUd8kJTfennoV.jpg"
+        },
+        {
+          "title": "The Cabinet of Caligari",
+          "year": 1962,
+          "slug": "Psychological thriller influenced by German Expressionism",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 109133
+        },
+        {
+          "title": "Circus of Fear",
+          "year": 1966,
+          "slug": "Christopher Lee stars in this circus-themed murder mystery",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 42717
+        },
+        {
+          "title": "Vampire Circus",
+          "year": 1972,
+          "slug": "Hammer Horror's unique take on vampire mythology",
+          "poster": "https://image.tmdb.org/t/p/w500/nHsVRJ1beSQUoJDLXen6QyiayAu.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 29960,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nHsVRJ1beSQUoJDLXen6QyiayAu.jpg"
+        },
+        {
+          "title": "The Show",
+          "year": 1927,
+          "slug": "Tod Browning's silent circus thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/kyUnWHs4rLz59NdrMUiIEPcLF9L.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 108632,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kyUnWHs4rLz59NdrMUiIEPcLF9L.jpg"
+        },
+        {
+          "title": "The Unknown",
+          "year": 1927,
+          "slug": "Lon Chaney stars as an armless circus performer",
+          "poster": "https://image.tmdb.org/t/p/w500/c9R1wE1vMJWMZNdmqXUV8oTaCPQ.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 27503,
+          "poster_url": "https://image.tmdb.org/t/p/w500/c9R1wE1vMJWMZNdmqXUV8oTaCPQ.jpg"
+        },
+        {
+          "title": "House of Whipcord",
+          "year": 1974,
+          "slug": "Pete Walker's exploitation horror about institutional control",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 86643
+        },
+        {
+          "title": "Dr. Terror's House of Horrors",
+          "year": 1965,
+          "slug": "Anthology horror featuring Peter Cushing",
+          "poster": "https://image.tmdb.org/t/p/w500/ccQtFSAGievlTYpuS88PCTHzLu7.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 26811,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ccQtFSAGievlTYpuS88PCTHzLu7.jpg"
+        },
+        {
+          "title": "The Mutations",
+          "year": 1974,
+          "slug": "Horror film combining circus freaks and mad science",
+          "poster": "https://image.tmdb.org/t/p/w500/mku11cRXXJB3rzid7yS42y35oyK.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 30929,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mku11cRXXJB3rzid7yS42y35oyK.jpg"
+        },
+        {
+          "title": "Torture Garden",
+          "year": 1967,
+          "slug": "Anthology horror with circus elements",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 41035
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

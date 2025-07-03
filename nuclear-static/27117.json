@@ -1,0 +1,185 @@
+{
+  "props": {
+    "title": "Sherlock Holmes and the Voice of Terror",
+    "year": 1942,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/4aprukY55rwcLKzdSVpRzQo1Koa.jpg",
+    "initialStreaming": null,
+    "tmdbId": 27117,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The 1942 entry in Universal's Sherlock Holmes series marks a fascinating modernization of the detective, placing Basil Rathbone's Holmes squarely in WWII-era London. While earlier Holmes adaptations like **The Hound of the Baskervilles** (1939) maintained Victorian settings, **Voice of Terror** boldly updates Conan Doyle's hero to battle Nazis. This shift mirrors how **Sherlock Holmes** (2009) and **Elementary** (2012) would later reimagine the character for contemporary audiences. The film draws loose inspiration from Conan Doyle's \"His Last Bow,\" where Holmes comes out of retirement to catch German spies before WWI."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Adventures of Sherlock Holmes",
+            "year": 1939,
+            "slug": "Rathbone and Bruce's second outing as Holmes and Watson, investigating a plot against the Crown",
+            "poster": "https://image.tmdb.org/t/p/w500/oNE3GyeA9ZUCzI9jYTgNy7vYTfO.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 17481,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oNE3GyeA9ZUCzI9jYTgNy7vYTfO.jpg"
+          },
+          {
+            "title": "Sherlock Holmes and the Secret Weapon",
+            "year": 1943,
+            "slug": "Holmes protects a weapons inventor from Nazi agents in wartime London",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Pluto TV",
+            "tmdb_id": 18706
+          },
+          {
+            "title": "The Woman in Green",
+            "year": 1945,
+            "slug": "Holmes investigates a series of murders linked to a hypnotic femme fatale",
+            "poster": "https://image.tmdb.org/t/p/w500/rWcMZ8IZWeYZDcW6Acoiz1gG3tn.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 34327,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rWcMZ8IZWeYZDcW6Acoiz1gG3tn.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The wartime setting transforms Holmes's usual deductive puzzles into urgent counter-espionage. Director John Rawlins employs noir techniques - deep shadows, low-angle shots, fog-shrouded streets - creating a darker tone than previous entries. This aesthetic approach influenced later spy-themed Holmes adaptations like **Murder by Decree** (1979) and **The Seven-Per-Cent Solution** (1976), which similarly emphasized the detective's role in international intrigue."
+      },
+      {
+        "type": "text",
+        "content": "Basil Rathbone's portrayal here solidified his status as the definitive screen Holmes for generations. His clipped delivery and intense focus would influence later interpretations, from Jeremy Brett's portrayal in **The Adventures of Sherlock Holmes** (1984) to Benedict Cumberbatch in **Sherlock** (2010). The film's propaganda elements, while dated, demonstrate how popular characters were deployed to boost wartime morale, similar to how **Captain America: The First Avenger** (2011) would later revisit WWII-era heroics. SUBHEAD: The Evolution of Wartime Detective Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Pearl of Death",
+            "year": 1944,
+            "slug": "Holmes pursues a stolen pearl and encounters a brutal killer called the Creeper",
+            "poster": "https://image.tmdb.org/t/p/w500/36crcUCyyKZritifPJNlXMfsp9a.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 33421,
+            "poster_url": "https://image.tmdb.org/t/p/w500/36crcUCyyKZritifPJNlXMfsp9a.jpg"
+          },
+          {
+            "title": "Pursuit to Algiers",
+            "year": 1945,
+            "slug": "Holmes protects a royal heir while traveling by ship to North Africa",
+            "poster": "https://image.tmdb.org/t/p/w500/2elc5AWyKvINd5CnMfMXcmCPQTd.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 50401,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2elc5AWyKvINd5CnMfMXcmCPQTd.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Voice of Terror** bridges classic detective fiction with wartime thriller elements, establishing a template followed by films like **The Third Man** (1949) and **Ministry of Fear** (1944). The integration of real-world radio propaganda broadcasts into the plot directly influenced later spy thrillers like **The 39 Steps** (1935) and **Foreign Correspondent** (1940), showing how detective stories could incorporate contemporary threats."
+      }
+    ],
+    "exploreFurther": [
+      "The transformation of Sherlock Holmes from Victorian detective to wartime hero",
+      "Universal's Sherlock Holmes series and its influence on detective cinema",
+      "Propaganda elements in WWII-era Hollywood films",
+      "Basil Rathbone's impact on the portrayal of Sherlock Holmes",
+      "Film noir techniques in 1940s detective movies"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Sherlock Holmes Faces Death",
+          "year": 1943,
+          "slug": "Holmes investigates murders at a convalescent home for military officers",
+          "poster": "https://image.tmdb.org/t/p/w500/paDmNVK9C7SwAWrfiR32Nh3GvjM.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 50553,
+          "poster_url": "https://image.tmdb.org/t/p/w500/paDmNVK9C7SwAWrfiR32Nh3GvjM.jpg"
+        },
+        {
+          "title": "The Spider Woman",
+          "year": 1944,
+          "slug": "Holmes tackles a series of apparent suicides linked to a female mastermind",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 2443
+        },
+        {
+          "title": "The House of Fear",
+          "year": 1945,
+          "slug": "Holmes investigates mysterious deaths among members of a private club",
+          "poster": "https://image.tmdb.org/t/p/w500/3tHTXEnBmnTX4tJUQ5JAIKosp3d.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 33419,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3tHTXEnBmnTX4tJUQ5JAIKosp3d.jpg"
+        },
+        {
+          "title": "Terror by Night",
+          "year": 1946,
+          "slug": "Murder on a train leads Holmes to protect a famous diamond",
+          "poster": "https://image.tmdb.org/t/p/w500/cjGgLJ2GViKy0bla8OfaAhOBAJw.jpg",
+          "initialStreaming": "Pluto TV",
+          "tmdb_id": 20408,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cjGgLJ2GViKy0bla8OfaAhOBAJw.jpg"
+        },
+        {
+          "title": "Dressed to Kill",
+          "year": 1946,
+          "slug": "Holmes's final Universal case involving musical boxes and bank robbery",
+          "poster": "https://image.tmdb.org/t/p/w500/oD4z3ON2ciLMv6obEH2K8tGThWG.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 20417,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oD4z3ON2ciLMv6obEH2K8tGThWG.jpg"
+        },
+        {
+          "title": "The Hound of the Baskervilles",
+          "year": 1939,
+          "slug": "The first Rathbone-Bruce Holmes film, adapting the famous novel",
+          "poster": "https://image.tmdb.org/t/p/w500/61XD1LxA3kXLRrBXat3jN84MtPR.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 27118,
+          "poster_url": "https://image.tmdb.org/t/p/w500/61XD1LxA3kXLRrBXat3jN84MtPR.jpg"
+        },
+        {
+          "title": "They Shall Not Pass",
+          "year": 1942,
+          "slug": "British wartime thriller about Nazi infiltrators",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": null
+        },
+        {
+          "title": "Saboteur",
+          "year": 1942,
+          "slug": "Hitchcock's wartime thriller about a man hunting Nazi agents",
+          "poster": "https://image.tmdb.org/t/p/w500/iDKOOTymUZg0WAWPcbdP6nPZEFF.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 31997,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iDKOOTymUZg0WAWPcbdP6nPZEFF.jpg"
+        },
+        {
+          "title": "Sherlock Holmes in Washington",
+          "year": 1943,
+          "slug": "Holmes travels to America to recover stolen microfilm",
+          "poster": "https://image.tmdb.org/t/p/w500/ni0H8iNOcmW26Y0aNLiA4wyckxX.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 44383,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ni0H8iNOcmW26Y0aNLiA4wyckxX.jpg"
+        },
+        {
+          "title": "The Scarlet Claw",
+          "year": 1944,
+          "slug": "Holmes investigates murders in a foggy Canadian village",
+          "poster": "https://image.tmdb.org/t/p/w500/niXCEzj8cg15DNcAh3M1Ps7YIvb.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 33423,
+          "poster_url": "https://image.tmdb.org/t/p/w500/niXCEzj8cg15DNcAh3M1Ps7YIvb.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

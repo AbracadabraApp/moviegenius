@@ -6,7 +6,7 @@
  */
 
 import React from 'react';
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render, screen, fireEvent, waitFor, act } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import MovieHeaderLarge_Alternative from '../components/MovieHeaderLarge_Alternative';
 import { FavoritesManager } from '../components/FavoritesManager';
@@ -263,7 +263,9 @@ describe('MovieHeaderLarge_Alternative', () => {
       expect(screen.getByText('+ added')).toBeInTheDocument();
       
       // Fast-forward time by 1.5 seconds
-      jest.advanceTimersByTime(1500);
+      act(() => {
+        jest.advanceTimersByTime(1500);
+      });
       
       await waitFor(() => {
         expect(screen.queryByText('+ added')).not.toBeInTheDocument();

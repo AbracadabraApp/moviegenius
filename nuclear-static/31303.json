@@ -1,0 +1,172 @@
+{
+  "props": {
+    "title": "Betty",
+    "year": 1992,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/oUaXFUipehFG5Z32hEbIYTLYU0y.jpg",
+    "initialStreaming": null,
+    "tmdbId": 31303,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Betty** (1992), directed by Claude Chabrol, dives deep into psychological manipulation and identity theft through the lens of French noir. The film, starring Marie Trintignant as the enigmatic title character, draws clear inspiration from Patricia Highsmith's style of psychological thrillers like **The Talented Mr. Ripley** (1999). Chabrol crafts a mesmerizing study of class warfare and assumed identity that echoes earlier works like **Single White Female** (1992) and presages later identity-theft dramas like **The Hand That Rocks the Cradle** (1992)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Betty",
+            "year": 1992,
+            "slug": "A mysterious woman insinuates herself into the life of an affluent restaurateur's wife, leading to a complex psychological game",
+            "poster": "https://image.tmdb.org/t/p/w500/oUaXFUipehFG5Z32hEbIYTLYU0y.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 31303,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oUaXFUipehFG5Z32hEbIYTLYU0y.jpg"
+          },
+          {
+            "title": "La Ceremonie",
+            "year": 1995,
+            "slug": "Chabrol's later masterpiece about class warfare and murder starring Isabelle Huppert",
+            "poster": "https://image.tmdb.org/t/p/w500/2bGGOa6JqwARffdzR6xUmUA0iHu.jpg",
+            "initialStreaming": "MUBI",
+            "tmdb_id": 1802,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2bGGOa6JqwARffdzR6xUmUA0iHu.jpg"
+          },
+          {
+            "title": "Merci Pour le Chocolat",
+            "year": 2000,
+            "slug": "Another Chabrol psychological thriller about family secrets and poisoned relationships",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 10305
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of female identity and social class bears striking similarities to other early 90s psychological thrillers like **Basic Instinct** (1992) and **The Hand That Rocks the Cradle** (1992). However, Chabrol's distinctly French approach favors subtle psychological manipulation over overt thriller elements. Marie Trintignant's nuanced performance as Betty creates an unforgettable character study that influenced later films like **Mulholland Drive** (2001) and **Gone Girl** (2014)."
+      },
+      {
+        "type": "text",
+        "content": "Chabrol's direction shows his mastery of the psychological thriller genre, developed through earlier works like **Le Boucher** (1970) and **Violette Nozière** (1978). His careful attention to class dynamics and social observation creates a suffocating atmosphere that makes **Betty** (1992) a standout example of French noir, following in the tradition of **Les Diaboliques** (1955). SUBHEAD: The Evolution of Female-Driven Psychological Thrillers"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "L'Enfer",
+            "year": 1994,
+            "slug": "A man's growing paranoia about his wife's infidelity leads to psychological breakdown",
+            "poster": "https://image.tmdb.org/t/p/w500/76ccjXiC0sBBGGD75HCQrmGBgP7.jpg",
+            "initialStreaming": "MUBI",
+            "tmdb_id": 17961,
+            "poster_url": "https://image.tmdb.org/t/p/w500/76ccjXiC0sBBGGD75HCQrmGBgP7.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Betty** (1992) marked a crucial moment in the development of female-centered psychological thrillers, bridging the gap between classic noir and modern psychological drama. The film's influence can be seen in later works like **Swimming Pool** (2003) and **The Piano Teacher** (2001), where complex female protagonists navigate issues of identity and social status while blurring the lines between victim and perpetrator."
+      }
+    ],
+    "exploreFurther": [
+      "Claude Chabrol's Evolution as a Master of Psychological Thrillers",
+      "The Influence of Patricia Highsmith on French Cinema",
+      "Female Identity in 1990s Thriller Cinema",
+      "Class Warfare Themes in French New Wave and Post-New Wave Cinema",
+      "The Legacy of Marie Trintignant in French Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "La Femme Infidele",
+          "year": 1969,
+          "slug": "Chabrol's earlier masterpiece about marriage and murder",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 8286
+        },
+        {
+          "title": "Les Biches",
+          "year": 1968,
+          "slug": "Complex psychological drama about female relationships",
+          "poster": "https://image.tmdb.org/t/p/w500/aso44GAzBFgw7q4FtbHVHbvJxos.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": 1787,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aso44GAzBFgw7q4FtbHVHbvJxos.jpg"
+        },
+        {
+          "title": "This Man Must Die",
+          "year": 1969,
+          "slug": "Revenge thriller with psychological depth",
+          "poster": "https://image.tmdb.org/t/p/w500/4QEL8tsDBZkBq54AzpTyFE4yY50.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 2527,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4QEL8tsDBZkBq54AzpTyFE4yY50.jpg"
+        },
+        {
+          "title": "The Butcher",
+          "year": 1970,
+          "slug": "Small-town psychological thriller",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": null
+        },
+        {
+          "title": "Story of Women",
+          "year": 1988,
+          "slug": "True story of class and survival in WWII France",
+          "poster": "https://image.tmdb.org/t/p/w500/gIBOAemklR8MVYP0Vn5RE0MYYWT.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 41975,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gIBOAemklR8MVYP0Vn5RE0MYYWT.jpg"
+        },
+        {
+          "title": "Madame Bovary",
+          "year": 1991,
+          "slug": "Chabrol's adaptation of Flaubert's classic",
+          "poster": "https://image.tmdb.org/t/p/w500/cBJtWAgDTCqxNJJOZjnRSh5Vxa5.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 2528,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cBJtWAgDTCqxNJJOZjnRSh5Vxa5.jpg"
+        },
+        {
+          "title": "The Bridesmaid",
+          "year": 2004,
+          "slug": "Late-period Chabrol thriller about obsessive love",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": 72272
+        },
+        {
+          "title": "A Girl Cut in Two",
+          "year": 2007,
+          "slug": "Modern psychological drama about manipulation",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": 5592
+        },
+        {
+          "title": "Inspector Lavardin",
+          "year": 1986,
+          "slug": "Detective thriller with psychological elements",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 63322
+        },
+        {
+          "title": "Masques",
+          "year": 1987,
+          "slug": "Psychological thriller set in TV personality's mansion",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

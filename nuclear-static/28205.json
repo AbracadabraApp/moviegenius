@@ -1,0 +1,186 @@
+{
+  "props": {
+    "title": "The Class",
+    "year": 2007,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/pXke5ubr1Wlz4F0ca0jfcVK4ZYc.jpg",
+    "initialStreaming": null,
+    "tmdbId": 28205,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Class** (2007) revolutionized the classroom drama by ditching Hollywood sentimentality for raw authenticity. Director Laurent Cantet cast real teacher François Bégaudeau (who wrote the source memoir) and actual students, filming like a documentary to capture the electric tension of a Paris middle school. Unlike inspirational teacher films like **Dead Poets Society** (1989) or **Freedom Writers** (2007), The Class shows education's daily struggles without neat resolutions. The handheld cameras and natural lighting create an immediacy that makes you feel trapped in those classroom debates."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Entre les murs (The Class)",
+            "year": 2007,
+            "slug": "A Paris teacher struggles with cultural clashes and authority in his diverse classroom. Won Palme d'Or.",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": null
+          },
+          {
+            "title": "Half Nelson",
+            "year": 2006,
+            "slug": "Ryan Gosling plays a drug-addicted teacher forming an unlikely bond with a student.",
+            "poster": "https://image.tmdb.org/t/p/w500/fdUCisMpTwy0oJOGwM7NrFFs400.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 7859,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fdUCisMpTwy0oJOGwM7NrFFs400.jpg"
+          },
+          {
+            "title": "Être et avoir",
+            "year": 2002,
+            "slug": "Documentary following a year in a rural French one-room schoolhouse.",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Kanopy",
+            "tmdb_id": 5168
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The Class sparked a wave of grittier education films that examine systemic issues rather than celebrating hero teachers. **Detachment** (2011) with Adrien Brody showed urban education's crushing burnout, while the documentary **Waiting for Superman** (2010) exposed America's educational inequalities. These films reject the **Stand and Deliver** (1988) formula where one passionate teacher transforms struggling students through sheer willpower."
+      },
+      {
+        "type": "text",
+        "content": "Cantet's approach influenced international education dramas like <a href=\"/movie/78480\" class=\"movie-title\">Monsieur Lazhar</a> (2011) and <a href=\"/movie/1259\" class=\"movie-title\">Notes on a Scandal</a> (2006), which explore teacher-student dynamics with moral complexity. The Class's documentary-like style particularly resonates with films about immigrant experiences in education, like **La Promesse** (1996) and **In This World** (2002), showing how schools become cultural battlegrounds. SUBHEAD: The Evolution of Classroom Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Monsieur Lazhar",
+            "year": 2011,
+            "slug": "An Algerian immigrant becomes a teacher in Montreal, helping students process trauma.",
+            "poster": "https://image.tmdb.org/t/p/w500/qcSXbOP1iv859kgQgqZ4Ib9yqKG.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 78480,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qcSXbOP1iv859kgQgqZ4Ib9yqKG.jpg"
+          },
+          {
+            "title": "Notes on a Scandal",
+            "year": 2006,
+            "slug": "A veteran teacher discovers a colleague's inappropriate relationship with a student.",
+            "poster": "https://image.tmdb.org/t/p/w500/ieX6ZO2Kf2qjoIBXbQW5awivbhY.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 1259,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ieX6ZO2Kf2qjoIBXbQW5awivbhY.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While earlier films like **Blackboard Jungle** (1955) and **To Sir, with Love** (1967) focused on teachers taming unruly students, The Class sparked more nuanced explorations of educational power dynamics. Recent films like **Won't Back Down** (2012) and **Bad Teacher** (2011) show both heroism and failure in education, acknowledging that systemic problems require more than individual effort. The Class's influence extends to TV series like **Abbott Elementary** (2021), which uses mockumentary style to examine similar themes with humor."
+      }
+    ],
+    "exploreFurther": [
+      "French New Wave's influence on educational documentaries",
+      "The evolution of teacher portrayal in cinema",
+      "Documentary techniques in narrative filmmaking",
+      "Immigration and education in European cinema",
+      "The reality vs. Hollywood depiction of teaching"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Dead Poets Society",
+          "year": 1989,
+          "slug": "Charismatic teacher inspires students through poetry.",
+          "poster": "https://image.tmdb.org/t/p/w500/erzbMlcNHOdx24AXOcn2ZKA7R1q.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 207,
+          "poster_url": "https://image.tmdb.org/t/p/w500/erzbMlcNHOdx24AXOcn2ZKA7R1q.jpg"
+        },
+        {
+          "title": "Freedom Writers",
+          "year": 2007,
+          "slug": "Teacher helps at-risk students through writing.",
+          "poster": "https://image.tmdb.org/t/p/w500/81AdeUQT99N0xPg3j6RVh0YGOTk.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1646,
+          "poster_url": "https://image.tmdb.org/t/p/w500/81AdeUQT99N0xPg3j6RVh0YGOTk.jpg"
+        },
+        {
+          "title": "Dangerous Minds",
+          "year": 1995,
+          "slug": "Ex-marine teaches inner-city students.",
+          "poster": "https://image.tmdb.org/t/p/w500/yWHWC8fJRp2kLgiFrEa8o3krOH9.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 9909,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yWHWC8fJRp2kLgiFrEa8o3krOH9.jpg"
+        },
+        {
+          "title": "School of Rock",
+          "year": 2003,
+          "slug": "Fake teacher forms student rock band.",
+          "poster": "https://image.tmdb.org/t/p/w500/zXLXaepIBvFVLU25DH3wv4IPSbe.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1584,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zXLXaepIBvFVLU25DH3wv4IPSbe.jpg"
+        },
+        {
+          "title": "Welcome to the Dollhouse",
+          "year": 1995,
+          "slug": "Dark comedy about middle school struggles.",
+          "poster": "https://image.tmdb.org/t/p/w500/fsMMOVto87pvUQyozOF9CaT9aMR.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 11446,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fsMMOVto87pvUQyozOF9CaT9aMR.jpg"
+        },
+        {
+          "title": "Election",
+          "year": 1999,
+          "slug": "High school teacher interferes with student election.",
+          "poster": "https://image.tmdb.org/t/p/w500/5gPOFU6IPvDrx50XaPCK4twNw79.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 9451,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5gPOFU6IPvDrx50XaPCK4twNw79.jpg"
+        },
+        {
+          "title": "Half Nelson",
+          "year": 2006,
+          "slug": "Inner-city teacher struggles with drug addiction.",
+          "poster": "https://image.tmdb.org/t/p/w500/fdUCisMpTwy0oJOGwM7NrFFs400.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 7859,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fdUCisMpTwy0oJOGwM7NrFFs400.jpg"
+        },
+        {
+          "title": "An Education",
+          "year": 2009,
+          "slug": "Student-teacher relationship in 1960s London.",
+          "poster": "https://image.tmdb.org/t/p/w500/29kSosB0jW2ThaJmX6ZY1UQ1pHA.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 24684,
+          "poster_url": "https://image.tmdb.org/t/p/w500/29kSosB0jW2ThaJmX6ZY1UQ1pHA.jpg"
+        },
+        {
+          "title": "The Prime of Miss Jean Brodie",
+          "year": 1969,
+          "slug": "Charismatic teacher influences students in concerning ways.",
+          "poster": "https://image.tmdb.org/t/p/w500/lEZdKL17yneFK4dbbWPKcbkRbqM.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 5179,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lEZdKL17yneFK4dbbWPKcbkRbqM.jpg"
+        },
+        {
+          "title": "Teachers",
+          "year": 1984,
+          "slug": "Dark comedy about dysfunctional public school.",
+          "poster": "https://image.tmdb.org/t/p/w500/foWZXdAeNtMubNrjYqSni6iDuVp.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 31601,
+          "poster_url": "https://image.tmdb.org/t/p/w500/foWZXdAeNtMubNrjYqSni6iDuVp.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

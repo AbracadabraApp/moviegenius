@@ -1,0 +1,181 @@
+{
+  "props": {
+    "title": "Future",
+    "year": 2022,
+    "initialSlug": "Tomorrow is closer than you think",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/cYQhEjz8TcycbHpf9qHBxroYE0M.jpg",
+    "initialStreaming": null,
+    "tmdbId": 683361,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Future** (2022) marks a fascinating entry in Mali Elfman's directorial debut, following in the footsteps of contemplative sci-fi like **Arrival** (2016) and **Ex Machina** (2014). The film centers on a terminally ill woman who signs up for a controversial assisted suicide program, only to find herself on an unexpected road trip with a man adamantly opposed to her choice. Like **Never Let Me Go** (2010), it uses science fiction elements to explore deeply human questions about mortality, choice, and what gives life meaning."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Swan Song",
+            "year": 2021,
+            "slug": "A terminally ill man considers replacing himself with a clone to spare his family grief",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Apple TV+",
+            "tmdb_id": null
+          },
+          {
+            "title": "Nine Days",
+            "year": 2020,
+            "slug": "A supernatural being interviews souls competing for the chance to be born",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "VOD",
+            "tmdb_id": 607430
+          },
+          {
+            "title": "After Yang",
+            "year": 2022,
+            "slug": "A family grapples with grief when their AI helper malfunctions",
+            "poster": "https://image.tmdb.org/t/p/w500/qjEuDeKOhA7JqaaqhLSfoS9titb.jpg",
+            "initialStreaming": "Showtime",
+            "tmdb_id": 585378,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qjEuDeKOhA7JqaaqhLSfoS9titb.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's approach to assisted dying echoes elements of **Children of Men** (2006) and **Gattaca** (1997), examining how future medical technology intersects with personal autonomy. Director Mali Elfman crafts intimate moments between the leads that recall the emotional depth of **Eternal Sunshine of the Spotless Mind** (2004), while maintaining the ethical tension that made **Never Let Me Go** (2010) so compelling."
+      },
+      {
+        "type": "text",
+        "content": "The road trip structure allows **Future** to explore America's divided landscape, both literally and metaphorically, similar to how **The Road** (2009) used its journey to examine human nature. The film's careful balance of personal drama with larger societal questions follows in the tradition of thoughtful sci-fi like **Another Earth** (2011) and **Sound of My Voice** (2011). SUBHEAD: Technology and Human Connection"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "I'm Thinking of Ending Things",
+            "year": 2020,
+            "slug": "A woman questions reality during a snowy road trip to meet her boyfriend's parents",
+            "poster": "https://image.tmdb.org/t/p/w500/5ynWWapdl45hJXUh0KIevxSG9JQ.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 500840,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5ynWWapdl45hJXUh0KIevxSG9JQ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Like **Her** (2013) and **Black Mirror** episodes, **Future** uses near-future technology as a lens to examine contemporary anxieties about death, dignity, and personal choice. The film's intimate scale recalls **Robot & Frank** (2012), focusing on individual human stories rather than grand sci-fi spectacle. This approach allows deeper exploration of its themes while maintaining emotional resonance."
+      },
+      {
+        "type": "text",
+        "content": "The film's examination of mortality through a sci-fi lens joins recent works like **Vesper** (2022) and <a href=\"/movie/585378\" class=\"movie-title\">After Yang</a> (2022) in using genre elements to explore deeply personal stories. Its road trip framework creates natural opportunities for examining different perspectives on its central ethical dilemma, similar to how **Silent Running** (1972) used its isolated setting to explore environmental ethics."
+      }
+    ],
+    "exploreFurther": [
+      "The evolution of assisted dying debates in science fiction cinema",
+      "Road trips as metaphor in contemporary science fiction",
+      "Mali Elfman's transition from producer to director",
+      "The influence of indie sci-fi on mainstream genre filmmaking",
+      "Visual metaphors for mortality in science fiction"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Arrival",
+          "year": 2016,
+          "slug": "Linguists attempt to communicate with mysterious aliens",
+          "poster": "https://image.tmdb.org/t/p/w500/x2FJsf1ElAgr63Y3PNPtJrcmpoe.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 329865,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x2FJsf1ElAgr63Y3PNPtJrcmpoe.jpg"
+        },
+        {
+          "title": "Melancholia",
+          "year": 2011,
+          "slug": "A rogue planet approaches Earth as two sisters deal with depression",
+          "poster": "https://image.tmdb.org/t/p/w500/fMneszMiQuTKY8JUXrGGB5vwqJf.jpg",
+          "initialStreaming": "VOD",
+          "tmdb_id": 62215,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fMneszMiQuTKY8JUXrGGB5vwqJf.jpg"
+        },
+        {
+          "title": "Perfect Sense",
+          "year": 2011,
+          "slug": "A chef and scientist fall in love as a mysterious epidemic causes sensory loss",
+          "poster": "https://image.tmdb.org/t/p/w500/iS3eRrE07JqDOiCaovZJt4wL9j0.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 51999,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iS3eRrE07JqDOiCaovZJt4wL9j0.jpg"
+        },
+        {
+          "title": "Another Earth",
+          "year": 2011,
+          "slug": "The discovery of a duplicate Earth impacts a tragic relationship",
+          "poster": "https://image.tmdb.org/t/p/w500/qvGJK3lFzpifAdyIupMNdWNX0qr.jpg",
+          "initialStreaming": "VOD",
+          "tmdb_id": 55420,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qvGJK3lFzpifAdyIupMNdWNX0qr.jpg"
+        },
+        {
+          "title": "Moon",
+          "year": 2009,
+          "slug": "A solitary lunar miner discovers disturbing truths about his existence",
+          "poster": "https://image.tmdb.org/t/p/w500/35IU0Mq0zFsN1mYwDGts5mKc77n.jpg",
+          "initialStreaming": "VOD",
+          "tmdb_id": 17431,
+          "poster_url": "https://image.tmdb.org/t/p/w500/35IU0Mq0zFsN1mYwDGts5mKc77n.jpg"
+        },
+        {
+          "title": "The Lobster",
+          "year": 2015,
+          "slug": "Singles must find a mate or be transformed into animals",
+          "poster": "https://image.tmdb.org/t/p/w500/7Y9ILV1unpW9mLpGcqyGQU72LUy.jpg",
+          "initialStreaming": "VOD",
+          "tmdb_id": 254320,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7Y9ILV1unpW9mLpGcqyGQU72LUy.jpg"
+        },
+        {
+          "title": "Never Let Me Go",
+          "year": 2010,
+          "slug": "Clone children discover their true purpose",
+          "poster": "https://image.tmdb.org/t/p/w500/8F0r5ng9Fp60OhzQfR5v33fppq.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 42188,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8F0r5ng9Fp60OhzQfR5v33fppq.jpg"
+        },
+        {
+          "title": "Coherence",
+          "year": 2013,
+          "slug": "A dinner party becomes surreal during a cosmic event",
+          "poster": "https://image.tmdb.org/t/p/w500/ezUtb9m5DeLwL2gxi4gktzNCvQv.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 220289,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ezUtb9m5DeLwL2gxi4gktzNCvQv.jpg"
+        },
+        {
+          "title": "Mr. Nobody",
+          "year": 2009,
+          "slug": "The last mortal human recalls multiple possible life paths",
+          "poster": "https://image.tmdb.org/t/p/w500/qNkIONc4Rgmzo23ph7qWp9QfVnW.jpg",
+          "initialStreaming": "VOD",
+          "tmdb_id": 31011,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qNkIONc4Rgmzo23ph7qWp9QfVnW.jpg"
+        },
+        {
+          "title": "Aniara",
+          "year": 2018,
+          "slug": "Passengers on a Mars-bound ship face existential crisis",
+          "poster": "https://image.tmdb.org/t/p/w500/pEpEJe8NTmwWL0hwYkZguTzEqzt.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 496743,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pEpEJe8NTmwWL0hwYkZguTzEqzt.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

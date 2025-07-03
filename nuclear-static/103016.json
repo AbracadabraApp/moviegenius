@@ -1,0 +1,183 @@
+{
+  "props": {
+    "title": "Ornette: Made in America",
+    "year": 1985,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/8rRBNmyZ94ckQc4H3StS8O4IwmV.jpg",
+    "initialStreaming": null,
+    "tmdbId": 103016,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Ornette: Made in America** (1985) revolutionized music documentary filmmaking through Shirley Clarke's experimental approach, matching Ornette Coleman's free jazz innovations with equally groundbreaking visual techniques. Clarke weaves together 20 years of footage, creating a non-linear portrait that mirrors Coleman's improvised compositions. Like **Gimme Shelter** (1970) and **Jazz on a Summer's Day** (1959), the film transcends simple documentation, but Clarke pushes further by incorporating surreal animations, dramatic recreations, and fragmented editing that deconstructs traditional documentary form."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Bird",
+            "year": 1988,
+            "slug": "Clint Eastwood's atmospheric biopic of jazz legend Charlie Parker featuring Forest Whitaker",
+            "poster": "https://image.tmdb.org/t/p/w500/rTCp6M98RQAxRl0x0guU9GlH7HS.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 24679,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rTCp6M98RQAxRl0x0guU9GlH7HS.jpg"
+          },
+          {
+            "title": "Round Midnight",
+            "year": 1986,
+            "slug": "Haunting drama about an American jazz musician in Paris, starring real-life jazz legend Dexter Gordon",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 14670
+          },
+          {
+            "title": "Mo' Better Blues",
+            "year": 1990,
+            "slug": "Spike Lee's stylized portrait of a jazz trumpeter starring Denzel Washington",
+            "poster": "https://image.tmdb.org/t/p/w500/223W6PWAiYb3BX2rbFvzjbDDIvz.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 41823,
+            "poster_url": "https://image.tmdb.org/t/p/w500/223W6PWAiYb3BX2rbFvzjbDDIvz.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Clarke's approach in **Ornette** directly influenced later experimental music documentaries like **Jimi Hendrix** (1973) and **The Devil and Daniel Johnston** (2005). Her fragmented narrative structure and mix of formats prefigured the creative liberties taken in films like **I'm Not There** (2007), where multiple actors portray Bob Dylan. The film's exploration of Coleman's Fort Worth roots and his avant-garde evolution provides crucial context for understanding both the artist and the cultural shifts of mid-century America."
+      },
+      {
+        "type": "text",
+        "content": "The documentary's innovative visual style mirrors Coleman's \"harmolodic\" theory of music, where all musical elements have equal importance. Clarke employs multiple film formats, from 16mm to early video, creating a dense collage that echoes Coleman's layered compositions. This technique influenced later music documentaries like **Beware of Mr. Baker** (2012) and **What Happened, Miss Simone?** (2015), which similarly reject chronological storytelling in favor of emotional truth. SUBHEAD: Experimental Documentary Innovation"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Miles Ahead",
+            "year": 2015,
+            "slug": "Don Cheadle's unconventional Miles Davis biopic blending fact and fiction",
+            "poster": "https://image.tmdb.org/t/p/w500/rdk0epUSHFo1NyWXueKANUwIFQi.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 316000,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rdk0epUSHFo1NyWXueKANUwIFQi.jpg"
+          },
+          {
+            "title": "Thelonious Monk: Straight No Chaser",
+            "year": 1988,
+            "slug": "Intimate portrait of the legendary jazz pianist using restored 1960s footage",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 41973
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Clarke's work belongs to a vital tradition of experimental documentary that includes **Symbiopsychotaxiplasm: Take One** (1968) and **Portrait of Jason** (1967). Her use of multiple perspectives and formats in **Ornette** challenged conventional documentary wisdom, paving the way for hybrid forms seen in films like **The Act of Killing** (2012) and **Stories We Tell** (2012). The film's examination of race, art, and American identity remains startlingly relevant."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Free Jazz in American Cinema",
+      "Shirley Clarke's Documentary Revolution",
+      "Visual Jazz: Translating Music to Film",
+      "Race and Avant-Garde Art in 1960s America",
+      "The Legacy of Harmolodic Theory in Film"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Jazz on a Summer's Day",
+          "year": 1959,
+          "slug": "Groundbreaking concert film featuring multiple jazz legends",
+          "poster": "https://image.tmdb.org/t/p/w500/ltdAJF4sVIRAOJmHIUzfLylrVRr.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 53434,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ltdAJF4sVIRAOJmHIUzfLylrVRr.jpg"
+        },
+        {
+          "title": "Sun Ra: A Joyful Noise",
+          "year": 1980,
+          "slug": "Documentary on the cosmic jazz pioneer",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 82144
+        },
+        {
+          "title": "The Universal Mind of Bill Evans",
+          "year": 1966,
+          "slug": "Intimate portrait of the influential pianist",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 169045
+        },
+        {
+          "title": "Let's Get Lost",
+          "year": 1988,
+          "slug": "Stylish documentary about Chet Baker",
+          "poster": "https://image.tmdb.org/t/p/w500/voAn1Btvyy9icPHaf7HNwBfFZor.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 37640,
+          "poster_url": "https://image.tmdb.org/t/p/w500/voAn1Btvyy9icPHaf7HNwBfFZor.jpg"
+        },
+        {
+          "title": "Charles Mingus: Triumph of the Underdog",
+          "year": 1997,
+          "slug": "Compelling biography of the bass virtuoso",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 121653
+        },
+        {
+          "title": "Born to Be Blue",
+          "year": 2015,
+          "slug": "Ethan Hawke as Chet Baker in experimental biopic",
+          "poster": "https://image.tmdb.org/t/p/w500/iEdh2CkSyDXBTAPlNS6uLF9yTTH.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 327528,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iEdh2CkSyDXBTAPlNS6uLF9yTTH.jpg"
+        },
+        {
+          "title": "All Night Long",
+          "year": 1962,
+          "slug": "Jazz adaptation of Othello set in London clubs",
+          "poster": "https://image.tmdb.org/t/p/w500/A26aESMTBL7VgBEJbLvwd76qlo9.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 37038,
+          "poster_url": "https://image.tmdb.org/t/p/w500/A26aESMTBL7VgBEJbLvwd76qlo9.jpg"
+        },
+        {
+          "title": "Paris Blues",
+          "year": 1961,
+          "slug": "Newman and Poitier as jazz musicians in Paris",
+          "poster": "https://image.tmdb.org/t/p/w500/yDqdiSubn02tMmZtK5eeRO7JvfA.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 33710,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yDqdiSubn02tMmZtK5eeRO7JvfA.jpg"
+        },
+        {
+          "title": "Sweet and Lowdown",
+          "year": 1999,
+          "slug": "Woody Allen's ode to jazz featuring Sean Penn",
+          "poster": "https://image.tmdb.org/t/p/w500/23S5qa8j3ajYnERcYCqMLfSeOvw.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 9684,
+          "poster_url": "https://image.tmdb.org/t/p/w500/23S5qa8j3ajYnERcYCqMLfSeOvw.jpg"
+        },
+        {
+          "title": "'Round Midnight",
+          "year": 1986,
+          "slug": "Fiction film starring real jazz musicians",
+          "poster": "https://image.tmdb.org/t/p/w500/8aNGnEsvLBldNvaBkfYkGGgZDhe.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 14670,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8aNGnEsvLBldNvaBkfYkGGgZDhe.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

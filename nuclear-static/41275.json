@@ -1,0 +1,174 @@
+{
+  "props": {
+    "title": "Python",
+    "year": 2000,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/8OXaHZTNs08daBevIfUwpC7aGv2.jpg",
+    "initialStreaming": null,
+    "tmdbId": 41275,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Python** (2000) kicked off a wild era of creature features that dominated Sci-Fi Channel (now SYFY) original movies. This R.L. Stine-produced monster flick stars Casper Van Dien battling a genetically enhanced 129-foot python terrorizing a small town. While objectively cheesy, it spawned numerous snake-themed followups like **Anacondas: The Hunt for the Blood Orchid** (2004) and **Mega Snake** (2007). The practical effects and CGI blend typifies the transition period between practical creature features of the 90s and the full CGI creature features that would dominate cable in the 2000s."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Anaconda",
+            "year": 1997,
+            "slug": "Jennifer Lopez and Ice Cube face off against a massive anaconda in the Amazon. Peak 90s creature feature.",
+            "poster": "https://image.tmdb.org/t/p/w500/33NysOnLpLZY0ewHTcfpalzAsRG.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 9360,
+            "poster_url": "https://image.tmdb.org/t/p/w500/33NysOnLpLZY0ewHTcfpalzAsRG.jpg"
+          },
+          {
+            "title": "Snakes on a Plane",
+            "year": 2006,
+            "slug": "Samuel L. Jackson battles poisonous snakes released on a commercial flight. Pure B-movie fun.",
+            "poster": "https://image.tmdb.org/t/p/w500/9wqWQ5rXQG6daMpowqwadGjI768.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 326,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9wqWQ5rXQG6daMpowqwadGjI768.jpg"
+          },
+          {
+            "title": "Boa",
+            "year": 2001,
+            "slug": "Giant prehistoric snake terrorizes prison inmates. Direct response to Python's success.",
+            "poster": "https://image.tmdb.org/t/p/w500/qV7qqNdgTHQvvQnG93FwUIV9yfs.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 1166943,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qV7qqNdgTHQvvQnG93FwUIV9yfs.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The late 90s/early 2000s saw a resurgence in creature features, particularly snake-focused films, following the success of <a href=\"/movie/9360\" class=\"movie-title\">Anaconda</a> (1997). These movies typically featured a mix of practical animatronics and early CGI, with varying degrees of success. **Lake Placid** (1999) and <a href=\"/movie/8914\" class=\"movie-title\">Deep Blue Sea</a> (1999) proved audiences still craved creature features, leading to dozens of made-for-TV monster movies."
+      },
+      {
+        "type": "text",
+        "content": "The scientific manipulation angle in **Python** (2000) reflects common millennium-era fears about genetic engineering gone wrong. Similar themes appear in **Resident Evil** (2002) and **Deep Rising** (1998). These films often centered on military experiments creating supersized versions of already dangerous animals, a trope that continues in modern monster movies like **The Meg** (2018). SUBHEAD: The SYFY Channel Monster Movie Era"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Deep Blue Sea",
+            "year": 1999,
+            "slug": "Genetically enhanced super-sharks hunt scientists in an underwater facility.",
+            "poster": "https://image.tmdb.org/t/p/w500/fyn0zyCI4kIlbDoHH0Hzv09hDC5.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 8914,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fyn0zyCI4kIlbDoHH0Hzv09hDC5.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Python** (2000) established a template for SYFY original movies: modest budgets, B-list celebrities, outlandish premises, and heavy CGI usage. This formula led to hits like **Sharknado** (2013) and countless python sequels. The success prompted a wave of hybrid monster movies like **Piranhaconda** (2012) and **Dinocroc** (2004), each trying to outdo the last in terms of ridiculous premises and over-the-top action."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of CGI in Monster Movies 1995-2005",
+      "Rise of SYFY Channel Original Films",
+      "Practical vs Digital Effects in Modern Creature Features",
+      "Snake Movies' Impact on Horror-Comedy Genre",
+      "Genetic Engineering Themes in Monster Movies"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Boa vs Python",
+          "year": 2004,
+          "slug": "Two giant snakes battle it out while humans try to survive",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 36086
+        },
+        {
+          "title": "Anacondas: Hunt for the Blood Orchid",
+          "year": 2004,
+          "slug": "Expedition finds giant snakes in Borneo",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 11237
+        },
+        {
+          "title": "King Cobra",
+          "year": 1999,
+          "slug": "Giant cobra terrorizes small town",
+          "poster": "https://image.tmdb.org/t/p/w500/p5s5Vt1RLiqI3HQ9WaDm32e8zWH.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 40833,
+          "poster_url": "https://image.tmdb.org/t/p/w500/p5s5Vt1RLiqI3HQ9WaDm32e8zWH.jpg"
+        },
+        {
+          "title": "Silent Predators",
+          "year": 1999,
+          "slug": "Town invaded by deadly snakes",
+          "poster": "https://image.tmdb.org/t/p/w500/h1rYsziZnMRzBLBv8LCU6YNzf4X.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 109174,
+          "poster_url": "https://image.tmdb.org/t/p/w500/h1rYsziZnMRzBLBv8LCU6YNzf4X.jpg"
+        },
+        {
+          "title": "Mega Snake",
+          "year": 2007,
+          "slug": "Ancient curse releases growing snake",
+          "poster": "https://image.tmdb.org/t/p/w500/7ke1UaoEootRB5v01RqloxaSF4k.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 57203,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7ke1UaoEootRB5v01RqloxaSF4k.jpg"
+        },
+        {
+          "title": "Vipers",
+          "year": 2008,
+          "slug": "Genetically modified snakes escape lab",
+          "poster": "https://image.tmdb.org/t/p/w500/v85BI2yvtMPVl0di7JLW6CoCCpi.jpg",
+          "initialStreaming": "Pluto TV",
+          "tmdb_id": 44548,
+          "poster_url": "https://image.tmdb.org/t/p/w500/v85BI2yvtMPVl0di7JLW6CoCCpi.jpg"
+        },
+        {
+          "title": "Anaconda 3",
+          "year": 2008,
+          "slug": "David Hasselhoff vs giant snake",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Starz",
+          "tmdb_id": 14863
+        },
+        {
+          "title": "Python 2",
+          "year": 2002,
+          "slug": "Direct sequel with even bigger snake",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 42250
+        },
+        {
+          "title": "Komodo vs Cobra",
+          "year": 2005,
+          "slug": "Giant reptile battle royale",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 28509
+        },
+        {
+          "title": "Snake Island",
+          "year": 2002,
+          "slug": "Tourists trapped with deadly snakes",
+          "poster": "https://image.tmdb.org/t/p/w500/xWiWUZ2GIYFlHZr1MEweBtqCWWG.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 29958,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xWiWUZ2GIYFlHZr1MEweBtqCWWG.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

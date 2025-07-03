@@ -1,0 +1,170 @@
+{
+  "props": {
+    "title": "Werewolf of London",
+    "year": 1935,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/78kD3Fpvgd8qubKMbhS5dKofjR8.jpg",
+    "initialStreaming": null,
+    "tmdbId": 27970,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Werewolf of London** (1935) marks Universal's first mainstream werewolf film, predating the more famous <a href=\"/movie/13666\" class=\"movie-title\">The Wolf Man</a> (1941) by six years. Henry Hull stars as Dr. Wilfred Glendon, a botanist who gets bitten while searching for a rare flower in Tibet. The film established several werewolf tropes: the full moon trigger, the cursed bite, and the tragic scientist figure. Unlike Lon Chaney Jr.'s later wolfman makeup, Hull's transformation was deliberately subtle - he refused extensive prosthetics to maintain his facial expressions, resulting in a more restrained but eerily effective look created by makeup pioneer Jack Pierce."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Wolf Man",
+            "year": 1941,
+            "slug": "Lon Chaney Jr.'s iconic performance as Larry Talbot set the standard for werewolf films, introducing much of the modern mythology",
+            "poster": "https://image.tmdb.org/t/p/w500/vG8fu5syTtQLzK1hQXyi3ugOPNF.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 13666,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vG8fu5syTtQLzK1hQXyi3ugOPNF.jpg"
+          },
+          {
+            "title": "An American Werewolf in London",
+            "year": 1981,
+            "slug": "Revolutionary practical effects and dark humor redefined werewolf transformations for modern audiences",
+            "poster": "https://image.tmdb.org/t/p/w500/hVEqUASJmCQaolkKFEySCHZ8uKG.jpg",
+            "initialStreaming": "AMC+",
+            "tmdb_id": 814,
+            "poster_url": "https://image.tmdb.org/t/p/w500/hVEqUASJmCQaolkKFEySCHZ8uKG.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The scientific approach to lycanthropy in **Werewolf of London** influenced later films like **The Beast Must Die** (1974) and **Wolf** (1994), where characters attempt to rationalize or cure their condition. The Tibet opening sequence also established an exotic origin story template that many subsequent horror films would follow. The film's urban London setting contrasted sharply with the rural European locations typical of later werewolf tales, creating a unique atmosphere where ancient curses collide with modern civilization."
+      },
+      {
+        "type": "text",
+        "content": "While less remembered than Universal's other monster properties, **Werewolf of London** pioneered visual techniques for showing the transformation process through dissolves and practical effects. This technical innovation paved the way for more elaborate transformations in films like <a href=\"/movie/11298\" class=\"movie-title\">The Howling</a> (1981) and <a href=\"/movie/814\" class=\"movie-title\">An American Werewolf in London</a> (1981), both of which revolutionized practical effects through the work of Rick Baker and Rob Bottin. SUBHEAD: Evolution of Urban Werewolf Stories"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Howling",
+            "year": 1981,
+            "slug": "Joe Dante's werewolf classic features groundbreaking transformation effects and social commentary",
+            "poster": "https://image.tmdb.org/t/p/w500/nRTonikdpMUYr3y3RXESLBhRUov.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 11298,
+            "poster_url": "https://image.tmdb.org/t/p/w500/nRTonikdpMUYr3y3RXESLBhRUov.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The metropolitan setting of **Werewolf of London** influenced later urban werewolf tales like **Wolfen** (1981) and **An American Werewolf in Paris** (1997). The concept of a cultured professional dealing with bestial transformation became a recurring theme, seen in films like **Wolf** (1994) with Jack Nicholson's publishing executive and **Ginger Snaps** (2000) with its suburban teenage protagonist."
+      }
+    ],
+    "exploreFurther": [
+      "Universal Studios' Monster Makeup Evolution 1930-1950",
+      "Jack Pierce's Influence on Horror Movie Practical Effects",
+      "Scientific Elements in Classic Horror Films",
+      "Urban vs. Rural Settings in Werewolf Cinema",
+      "Pre-Code Horror Film Conventions"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Wolf",
+          "year": 1994,
+          "slug": "Jack Nicholson stars as a publisher who becomes a werewolf in this sophisticated take on the myth",
+          "poster": "https://image.tmdb.org/t/p/w500/5TprU55U2zjAMCwr2jQra3zj1zu.jpg",
+          "initialStreaming": "Starz",
+          "tmdb_id": 10395,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5TprU55U2zjAMCwr2jQra3zj1zu.jpg"
+        },
+        {
+          "title": "Dog Soldiers",
+          "year": 2002,
+          "slug": "British soldiers battle werewolves in Scotland",
+          "poster": "https://image.tmdb.org/t/p/w500/fYHUYWglzq8Ax0EaDWqg9emjL7T.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 11880,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fYHUYWglzq8Ax0EaDWqg9emjL7T.jpg"
+        },
+        {
+          "title": "Ginger Snaps",
+          "year": 2000,
+          "slug": "Teenage sisters deal with lycanthropy as a metaphor for puberty",
+          "poster": "https://image.tmdb.org/t/p/w500/4NmAtQdttqG4d1jyIK3vJvuyMov.jpg",
+          "initialStreaming": "AMC+",
+          "tmdb_id": 9871,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4NmAtQdttqG4d1jyIK3vJvuyMov.jpg"
+        },
+        {
+          "title": "The Beast Must Die",
+          "year": 1974,
+          "slug": "A millionaire gathers guests to identify which is a werewolf",
+          "poster": "https://image.tmdb.org/t/p/w500/gLOb9YExmAOuBjjRaawozJAtU12.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 40218,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gLOb9YExmAOuBjjRaawozJAtU12.jpg"
+        },
+        {
+          "title": "The Company of Wolves",
+          "year": 1984,
+          "slug": "Angela Carter's dark fairy tale adaptation explores werewolf mythology",
+          "poster": "https://image.tmdb.org/t/p/w500/2g2YPws1MiEWTodUE8u3qOf78XS.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 11905,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2g2YPws1MiEWTodUE8u3qOf78XS.jpg"
+        },
+        {
+          "title": "Silver Bullet",
+          "year": 1985,
+          "slug": "Stephen King's small-town werewolf story with Corey Haim",
+          "poster": "https://image.tmdb.org/t/p/w500/52CvWYuJyWcMTPvsfcmsxaVHi7f.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 17898,
+          "poster_url": "https://image.tmdb.org/t/p/w500/52CvWYuJyWcMTPvsfcmsxaVHi7f.jpg"
+        },
+        {
+          "title": "Bad Moon",
+          "year": 1996,
+          "slug": "A family discovers their relative is a werewolf",
+          "poster": "https://image.tmdb.org/t/p/w500/1RobAQaPIYV2PBmkb4XISbsQZPe.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 49763,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1RobAQaPIYV2PBmkb4XISbsQZPe.jpg"
+        },
+        {
+          "title": "Curse of the Werewolf",
+          "year": 1961,
+          "slug": "Hammer Horror's only werewolf film starring Oliver Reed",
+          "poster": "https://image.tmdb.org/t/p/w500/eKQ6kovQVp2I7g1hJegOo8vRBhu.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 28752,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eKQ6kovQVp2I7g1hJegOo8vRBhu.jpg"
+        },
+        {
+          "title": "The Boy Who Cried Werewolf",
+          "year": 1973,
+          "slug": "A young boy discovers his father is a werewolf",
+          "poster": "https://image.tmdb.org/t/p/w500/rhgt0tu4NlpbljBeAuNYRV8MRBL.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 94542,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rhgt0tu4NlpbljBeAuNYRV8MRBL.jpg"
+        },
+        {
+          "title": "Wolfen",
+          "year": 1981,
+          "slug": "Police investigate mysterious killings in New York City",
+          "poster": "https://image.tmdb.org/t/p/w500/hb4TJBeElGyIa7tmF2466iwwItB.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10725,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hb4TJBeElGyIa7tmF2466iwwItB.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

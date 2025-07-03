@@ -1,0 +1,170 @@
+{
+  "props": {
+    "title": "The Sheik",
+    "year": 1921,
+    "initialSlug": "Passion ignites the desert!",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/5cwKEW94PEB1IPQtlJMdP1suXnu.jpg",
+    "initialStreaming": null,
+    "tmdbId": 36841,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Sheik** (1921) launched Rudolph Valentino into superstardom and defined the \"desert romance\" subgenre that would influence Hollywood for decades. Valentino's portrayal of Sheikh Ahmed Ben Hassan created the template for the brooding, exotic romantic lead, while his chemistry with Agnes Ayres set standards for on-screen passion in silent cinema. The film's massive success sparked \"Valentino mania\" and established the actor as cinema's first true male sex symbol, despite (or perhaps because of) its orientalist fantasies and problematic colonial attitudes."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Son of the Sheik",
+            "year": 1926,
+            "slug": "Valentino's final film and sequel to The Sheik, featuring improved production values and dual roles",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "streaming",
+            "tmdb_id": 85689
+          },
+          {
+            "title": "The Four Horsemen of the Apocalypse",
+            "year": 1921,
+            "slug": "Valentino's breakthrough role as a passionate Argentine tango dancer",
+            "poster": "https://image.tmdb.org/t/p/w500/262nYFe45BxX22M9TPhB4BwEqby.jpg",
+            "initialStreaming": "streaming",
+            "tmdb_id": 31432,
+            "poster_url": "https://image.tmdb.org/t/p/w500/262nYFe45BxX22M9TPhB4BwEqby.jpg"
+          },
+          {
+            "title": "Blood and Sand",
+            "year": 1922,
+            "slug": "Valentino stars as a doomed bullfighter in this tragic romance",
+            "poster": "https://image.tmdb.org/t/p/w500/snpOhcMkANfaj49I20K6qzrrOSC.jpg",
+            "initialStreaming": "streaming",
+            "tmdb_id": 95134,
+            "poster_url": "https://image.tmdb.org/t/p/w500/snpOhcMkANfaj49I20K6qzrrOSC.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Silent film's exploration of exoticism and romance reached new heights in the 1920s, with films like **The Thief of Bagdad** (1924) and **The Eagle** (1925) building on The Sheik's formula. Director George Melford's adaptation of Edith M. Hull's novel tapped into post-WWI fascination with the Middle East, though its depiction was pure Hollywood fantasy. The film's technical achievements in desert cinematography by William Marshall influenced later epics like **Lawrence of Arabia** (1962)."
+      },
+      {
+        "type": "text",
+        "content": "The cultural impact of **The Sheik** (1921) extended far beyond cinema, sparking a craze for \"oriental\" themes in fashion, music, and literature. The film's problematic elements - including white actors playing Arab characters and colonial stereotypes - reflect the era's attitudes but also established troubling Hollywood tropes that would persist in films like **Cleopatra** (1934) and **The Mummy** (1932). SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Desert Nights",
+            "year": 1929,
+            "slug": "One of the last silent desert romances, starring John Gilbert",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "streaming",
+            "tmdb_id": 119922
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Valentino's tragic death in 1926 at age 31 cemented his legendary status, but **The Sheik** (1921)'s influence continued through generations of romantic epics. Elements of the sheikh romance formula appear in films from **Morocco** (1930) to **The English Patient** (1996). The film's portrayal of forbidden love and cultural conflict established narrative patterns still visible in contemporary Middle Eastern-themed romances."
+      }
+    ],
+    "exploreFurther": [
+      "The Rise of Rudolph Valentino and Celebrity Culture in 1920s Hollywood",
+      "Orientalism and Exoticism in Silent Cinema",
+      "Desert Romance Genre Evolution from Silent Era to Modern Day",
+      "Technical Innovations in Early Desert Filmmaking",
+      "Gender and Power Dynamics in 1920s Romance Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Ten Commandments",
+          "year": 1923,
+          "slug": "DeMille's first biblical epic featuring desert sequences",
+          "poster": "https://image.tmdb.org/t/p/w500/zCLObhnxHTqIpCMYm63KSsO6sMp.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 24805,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zCLObhnxHTqIpCMYm63KSsO6sMp.jpg"
+        },
+        {
+          "title": "The Garden of Allah",
+          "year": 1927,
+          "slug": "Lost silent film featuring similar desert romance themes",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 423722
+        },
+        {
+          "title": "The Wind",
+          "year": 1928,
+          "slug": "Lillian Gish silent drama using desert setting for psychological effect",
+          "poster": "https://image.tmdb.org/t/p/w500/11ySoycM3ARm66RLiYE9yRcrg5b.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 31416,
+          "poster_url": "https://image.tmdb.org/t/p/w500/11ySoycM3ARm66RLiYE9yRcrg5b.jpg"
+        },
+        {
+          "title": "Morocco",
+          "year": 1930,
+          "slug": "Marlene Dietrich's American debut in similar exotic setting",
+          "poster": "https://image.tmdb.org/t/p/w500/jDqZsxyv35iyJWW0mANk1RhxhJp.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 42641,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jDqZsxyv35iyJWW0mANk1RhxhJp.jpg"
+        },
+        {
+          "title": "The Lost City",
+          "year": 1920,
+          "slug": "Early desert adventure serial with orientalist themes",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 753256
+        },
+        {
+          "title": "Cobra",
+          "year": 1925,
+          "slug": "Another Valentino vehicle capitalizing on his exotic appeal",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 38715
+        },
+        {
+          "title": "The Arab",
+          "year": 1924,
+          "slug": "Ramon Novarro in similar sheik role",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": null
+        },
+        {
+          "title": "Where the Pavement Ends",
+          "year": 1923,
+          "slug": "Rex Ingram's exotic romance in similar vein",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 292630
+        },
+        {
+          "title": "A Sainted Devil",
+          "year": 1924,
+          "slug": "Valentino as South American aristocrat in similar role",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 539439
+        },
+        {
+          "title": "Beyond the Rocks",
+          "year": 1922,
+          "slug": "Valentino and Gloria Swanson romantic drama",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 53231
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

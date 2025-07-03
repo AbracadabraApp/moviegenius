@@ -1,0 +1,168 @@
+{
+  "props": {
+    "title": "Waxworks",
+    "year": 1924,
+    "initialSlug": "Anthology horror with expressionist performances",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/6n8hkbMUiY3ETNNoQspHwotvHkA.jpg",
+    "initialStreaming": "TBD",
+    "tmdbId": 27522,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Waxworks** (1924) stands as a masterpiece of German Expressionist horror, directed by Paul Leni who would later influence Universal's horror cycle with **The Cat and the Canary** (1927). The film's anthology structure follows a writer crafting tales about wax figures, including Ivan the Terrible, Harun al-Rashid, and Jack the Ripper. Its innovative visual style, with distorted sets and dramatic shadows, directly influenced later horror anthologies like **Dead of Night** (1945) and **Tales from the Terror** (1962). The film showcases Emil Jannings and Conrad Veidt at their peak, with performances that would help define psychological horror."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Cabinet of Dr. Caligari",
+            "year": 1920,
+            "slug": "The definitive German Expressionist film about a mad hypnotist and his sleepwalking servant",
+            "poster": "https://image.tmdb.org/t/p/w500/myK9DeIsXWGKgUTZyGXg2IfFk0W.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 234,
+            "poster_url": "https://image.tmdb.org/t/p/w500/myK9DeIsXWGKgUTZyGXg2IfFk0W.jpg"
+          },
+          {
+            "title": "Nosferatu",
+            "year": 1922,
+            "slug": "F.W. Murnau's unauthorized Dracula adaptation featuring the iconic Max Schreck",
+            "poster": "https://image.tmdb.org/t/p/w500/zv7J85D8CC9qYagAEhPM63CIG6j.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 653,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zv7J85D8CC9qYagAEhPM63CIG6j.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's ambitious production design by Heinrich Richter created a template for horror cinema's visual language. The warped perspectives and painted shadows would later influence film noir and horror classics like **The Third Man** (1949) and **The Night of the Hunter** (1955). Particularly striking is the Jack the Ripper segment, where reality dissolves into nightmare through innovative in-camera effects and multiple exposures that presage techniques used decades later in films like **Eraserhead** (1977)."
+      },
+      {
+        "type": "text",
+        "content": "Waxworks' anthology format proved hugely influential on horror cinema. Its structure of linking separate tales through a framing narrative became a standard approach, seen in everything from **Dead of Night** (1945) to **Tales from the Crypt** (1972). The film's blend of historical figures with supernatural elements created a template for horror-history hybrids like **Brotherhood of the Wolf** (2001). SUBHEAD: Influence on Universal Horror"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Hands of Orlac",
+            "year": 1924,
+            "slug": "Conrad Veidt stars as a pianist who receives a murderer's hands in transplant surgery",
+            "poster": "https://image.tmdb.org/t/p/w500/40WWy1SSx8rh1r4mn1MNpCKIteF.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 2974,
+            "poster_url": "https://image.tmdb.org/t/p/w500/40WWy1SSx8rh1r4mn1MNpCKIteF.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Paul Leni's work on Waxworks directly impacted Universal's horror cycle when he came to Hollywood. The atmospheric lighting and psychological tension he developed here appeared in his American films like **The Man Who Laughs** (1928), which in turn influenced **Dracula** (1931) and **Frankenstein** (1931). The wax museum setting itself became a horror staple, appearing in films like **Mystery of the Wax Museum** (1933) and **House of Wax** (1953)."
+      }
+    ],
+    "exploreFurther": [
+      "German Expressionism's influence on Film Noir",
+      "The evolution of horror anthology films",
+      "Paul Leni's transition to Hollywood",
+      "Wax museums in horror cinema",
+      "Silent horror's visual techniques"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Student of Prague",
+          "year": 1913,
+          "slug": "Early German horror about a man who sells his reflection",
+          "poster": "https://image.tmdb.org/t/p/w500/tO2zgNEY0MqtvEyPioTTfHgmN2Q.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 28627,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tO2zgNEY0MqtvEyPioTTfHgmN2Q.jpg"
+        },
+        {
+          "title": "The Golem",
+          "year": 1920,
+          "slug": "Jewish folk tale brought to expressionist life",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 2972
+        },
+        {
+          "title": "Warning Shadows",
+          "year": 1923,
+          "slug": "Psychological horror using revolutionary lighting techniques",
+          "poster": "https://image.tmdb.org/t/p/w500/vSQRXcGKVuvNmvAeJZj3Sw42FWi.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 84956,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vSQRXcGKVuvNmvAeJZj3Sw42FWi.jpg"
+        },
+        {
+          "title": "Genuine",
+          "year": 1920,
+          "slug": "Robert Wiene's follow-up to Caligari",
+          "poster": "https://image.tmdb.org/t/p/w500/pQZNf7PA0CTJXZFez7NQ3RUgJ0r.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 84943,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pQZNf7PA0CTJXZFez7NQ3RUgJ0r.jpg"
+        },
+        {
+          "title": "Metropolis",
+          "year": 1927,
+          "slug": "Fritz Lang's influential sci-fi masterpiece",
+          "poster": "https://image.tmdb.org/t/p/w500/vZIJxGnjcswPCAa52jhbl01FQkV.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 19,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vZIJxGnjcswPCAa52jhbl01FQkV.jpg"
+        },
+        {
+          "title": "The Last Laugh",
+          "year": 1924,
+          "slug": "Murnau's groundbreaking camera movement techniques",
+          "poster": "https://image.tmdb.org/t/p/w500/7Y6Dxr3oYt1w7ew70YNdLLDYEjk.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 5991,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7Y6Dxr3oYt1w7ew70YNdLLDYEjk.jpg"
+        },
+        {
+          "title": "Faust",
+          "year": 1926,
+          "slug": "Murnau's demonic masterpiece",
+          "poster": "https://image.tmdb.org/t/p/w500/rN703hMFxmkZfyEzsXvFtuFhkXE.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 10728,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rN703hMFxmkZfyEzsXvFtuFhkXE.jpg"
+        },
+        {
+          "title": "The Man Who Laughs",
+          "year": 1928,
+          "slug": "Paul Leni's Hollywood Gothic romance",
+          "poster": "https://image.tmdb.org/t/p/w500/iQXBMr4NzQst4X0rDU6MII6ZUOM.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 27517,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iQXBMr4NzQst4X0rDU6MII6ZUOM.jpg"
+        },
+        {
+          "title": "Mystery of the Wax Museum",
+          "year": 1933,
+          "slug": "Early two-strip Technicolor horror",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 32652
+        },
+        {
+          "title": "House of Wax",
+          "year": 1953,
+          "slug": "Vincent Price in 3D wax museum thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/qJmINK85CwxaoXN2PFDMO4eNxLS.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 18573,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qJmINK85CwxaoXN2PFDMO4eNxLS.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

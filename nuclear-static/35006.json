@@ -1,0 +1,169 @@
+{
+  "props": {
+    "title": "The Mask of Dimitrios",
+    "year": 1944,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/wsf399maXMnhOWfQSjOxErURxzN.jpg",
+    "initialStreaming": null,
+    "tmdbId": 35006,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Mask of Dimitrios** (1944) stands as one of film noir's most intricate international thrillers, weaving through the shadowy corners of post-WWI Europe. Like <a href=\"/movie/1092\" class=\"movie-title\">The Third Man</a> (1949) after it, the film uses a writer's obsessive investigation to expose the dark underbelly of European politics and crime. Director Jean Negulesco, who would later make technicolor classics like **How to Marry a Millionaire** (1953), here demonstrates his mastery of noir shadows and moral ambiguity, creating a complex puzzle box of a narrative that influenced later films like **The Usual Suspects** (1995)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Third Man",
+            "year": 1949,
+            "slug": "A pulp novelist searches post-war Vienna for his supposedly dead friend Harry Lime, uncovering a devastating conspiracy",
+            "poster": "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 1092,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg"
+          },
+          {
+            "title": "Casablanca",
+            "year": 1942,
+            "slug": "Political intrigue and romance collide in WWII Morocco as Rick Blaine must choose between love and duty",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 289
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Peter Lorre delivers one of his most nuanced performances as Leyden, the curious writer who becomes obsessed with tracing the life of the mysterious criminal Dimitrios. The film's structure - investigating a death by moving backwards through the victim's life - established a narrative template that would influence everything from **Citizen Kane** (1941) to **Laura** (1944). Sydney Greenstreet's presence adds gravitas as the seemingly helpful Cornelius Leyden, creating the same magnetic chemistry with Lorre that made <a href=\"/movie/963\" class=\"movie-title\">The Maltese Falcon</a> (1941) so compelling."
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of international crime and political corruption feels strikingly modern, predating the complex global thrillers of the Cold War era like **The Spy Who Came in from the Cold** (1965). Based on a novel by Eric Ambler, the story's focus on the intersection of crime, politics, and finance in interwar Europe creates a sophisticated web of intrigue that surpasses many contemporary noirs focused solely on domestic crime. SUBHEAD: European Noir and Political Intrigue"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Maltese Falcon",
+            "year": 1941,
+            "slug": "Private detective Sam Spade becomes entangled in a deadly search for a priceless statue",
+            "poster": "https://image.tmdb.org/t/p/w500/bf4o6Uzw5wqLjdKwRuiDrN1xyvl.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 963,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bf4o6Uzw5wqLjdKwRuiDrN1xyvl.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While American noir typically dealt with domestic crime and corruption, **The Mask of Dimitrios** (1944) represents a crucial subset of the genre that examined international intrigue. This tradition would continue through films like **Ministry of Fear** (1944) and **Berlin Express** (1948), combining the shadowy visual style of noir with complex political themes. The film's treatment of Europe as a interconnected web of corruption and conspiracy would influence later political thrillers like **The Day of the Jackal** (1973)."
+      }
+    ],
+    "exploreFurther": [
+      "Film Noir's European Influences and Settings",
+      "Peter Lorre and Sydney Greenstreet's Screen Collaborations",
+      "Eric Ambler's Impact on Spy Fiction and Film",
+      "Jean Negulesco's Evolution from Noir to Technicolor",
+      "Post-WWI European Political Thrillers"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Journey Into Fear",
+          "year": 1943,
+          "slug": "A naval engineer becomes entangled in espionage in wartime Turkey",
+          "poster": "https://image.tmdb.org/t/p/w500/pYd8FC8VIgQcmzZ6JI4YCVhq9wl.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 21366,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pYd8FC8VIgQcmzZ6JI4YCVhq9wl.jpg"
+        },
+        {
+          "title": "Background to Danger",
+          "year": 1943,
+          "slug": "An American agent in Turkey battles Nazi spies over secret documents",
+          "poster": "https://image.tmdb.org/t/p/w500/mepMDzGmh0Fmzq0CuWsNXZTBm6m.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 34944,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mepMDzGmh0Fmzq0CuWsNXZTBm6m.jpg"
+        },
+        {
+          "title": "The Conspirators",
+          "year": 1944,
+          "slug": "A Dutch resistance fighter finds romance and danger in wartime Lisbon",
+          "poster": "https://image.tmdb.org/t/p/w500/vIxpGK6EAmnfjW5csdD1Tgko4Cj.jpg",
+          "initialStreaming": "Warner Archive",
+          "tmdb_id": 34945,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vIxpGK6EAmnfjW5csdD1Tgko4Cj.jpg"
+        },
+        {
+          "title": "Notorious",
+          "year": 1946,
+          "slug": "An American agent recruits the daughter of a German spy for a dangerous mission",
+          "poster": "https://image.tmdb.org/t/p/w500/yUjKnpColooH88BFQJwwgNOQ56N.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 303,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yUjKnpColooH88BFQJwwgNOQ56N.jpg"
+        },
+        {
+          "title": "Berlin Express",
+          "year": 1948,
+          "slug": "Allied officials on a train to Berlin become involved in a assassination plot",
+          "poster": "https://image.tmdb.org/t/p/w500/eoJHaq8FLu7vJiJZTEs1OsdAjcy.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 42286,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eoJHaq8FLu7vJiJZTEs1OsdAjcy.jpg"
+        },
+        {
+          "title": "Night Train to Munich",
+          "year": 1940,
+          "slug": "A British agent attempts to rescue a Czech scientist from the Nazis",
+          "poster": "https://image.tmdb.org/t/p/w500/fi6Vh72FSrps1eqKG0zj5DIv190.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 41597,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fi6Vh72FSrps1eqKG0zj5DIv190.jpg"
+        },
+        {
+          "title": "All Through the Night",
+          "year": 1942,
+          "slug": "A Broadway gambler uncovers a Nazi spy ring in New York",
+          "poster": "https://image.tmdb.org/t/p/w500/w6m3b68HSL1tmYoDJBcYxA4yoZX.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 37036,
+          "poster_url": "https://image.tmdb.org/t/p/w500/w6m3b68HSL1tmYoDJBcYxA4yoZX.jpg"
+        },
+        {
+          "title": "Watch on the Rhine",
+          "year": 1943,
+          "slug": "A German resistance fighter confronts Nazi agents in America",
+          "poster": "https://image.tmdb.org/t/p/w500/6ZeyGqZEmK4JUbV0o5nBglEODoC.jpg",
+          "initialStreaming": "Warner Archive",
+          "tmdb_id": 68440,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6ZeyGqZEmK4JUbV0o5nBglEODoC.jpg"
+        },
+        {
+          "title": "Above Suspicion",
+          "year": 1943,
+          "slug": "Newlyweds agree to spy for British intelligence in pre-war Germany",
+          "poster": "https://image.tmdb.org/t/p/w500/okX71WiiR5SHxKcDpIQf8shJ0c8.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 25894,
+          "poster_url": "https://image.tmdb.org/t/p/w500/okX71WiiR5SHxKcDpIQf8shJ0c8.jpg"
+        },
+        {
+          "title": "The Cross of Lorraine",
+          "year": 1943,
+          "slug": "French soldiers escape a German POW camp to join the resistance",
+          "poster": "https://image.tmdb.org/t/p/w500/8lxIDocpVEQcWU2PYSQwzk3Dsfk.jpg",
+          "initialStreaming": "Warner Archive",
+          "tmdb_id": 78315,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8lxIDocpVEQcWU2PYSQwzk3Dsfk.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

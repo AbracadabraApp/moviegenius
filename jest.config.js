@@ -1,15 +1,10 @@
 // jest.config.js
-const nextJest = require('next/jest')
+// Fix TextEncoder issue by providing custom Jest config without Next.js loader for API tests
+const isApiTest = process.env.JEST_TEST_TYPE === 'api';
 
-const createJestConfig = nextJest({
-  // Provide the path to your Next.js app to load next.config.js and .env files
-  dir: './',
-})
-
-// Add any custom config to be passed to Jest
 const customJestConfig = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
-  testEnvironment: 'jest-environment-jsdom',
+  testEnvironment: isApiTest ? 'node' : 'jest-environment-jsdom',
   
   // Test patterns
   testMatch: [
@@ -60,8 +55,25 @@ const customJestConfig = {
   testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/'],
   
   // Verbose output for better debugging
-  verbose: true
-}
+  verbose: true,
+  
+  // Add globals for Node.js environment compatibility
+  globals: {
+    'ts-jest': {
+      useESM: true
+    }
+  }
+};
 
-// createJestConfig is exported this way to ensure that next/jest can load the Next.js config
-module.exports = createJestConfig(customJestConfig)
+// Conditional export based on test type
+if (isApiTest) {
+  // For API tests, use basic config without Next.js integration
+  module.exports = customJestConfig;
+} else {
+  // For component tests, use Next.js integration
+  const nextJest = require('next/jest');
+  const createJestConfig = nextJest({
+    dir: './',
+  });
+  module.exports = createJestConfig(customJestConfig);
+}

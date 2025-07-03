@@ -1,0 +1,157 @@
+{
+  "props": {
+    "title": "Force: Five",
+    "year": 1981,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/8OOlrRi0jF5L2r4pEZoEoJqLM3l.jpg",
+    "initialStreaming": null,
+    "tmdbId": 145561,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Force: Five** (1981) emerges from the explosion of American martial arts films in the early 1980s, riding the wave created by **Enter the Dragon** (1973). Director Robert Clouse, who also helmed Enter the Dragon, brings his signature style of combining martial arts spectacle with cult exploitation elements. The film follows an elite team of fighters infiltrating a religious cult's island compound, clearly influenced by the real-world Jonestown tragedy of 1978. Joe Lewis, a legitimate karate champion, leads the cast in what became one of the more distinctive entries in the \"team of specialists\" subgenre that flourished after **The Dirty Dozen** (1967)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Enter the Dragon",
+            "year": 1973,
+            "slug": "Bruce Lee's masterpiece about a martial artist infiltrating a criminal's private island tournament",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": null
+          },
+          {
+            "title": "Game of Death",
+            "year": 1978,
+            "slug": "Bruce Lee's final film, completed after his death, featuring iconic yellow jumpsuit",
+            "poster": "https://image.tmdb.org/t/p/w500/c6jgLHaQpdIPH1rC94KkjAqgE7O.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 13333,
+            "poster_url": "https://image.tmdb.org/t/p/w500/c6jgLHaQpdIPH1rC94KkjAqgE7O.jpg"
+          },
+          {
+            "title": "The Octagon",
+            "year": 1980,
+            "slug": "Chuck Norris battles ninja cult while confronting his past",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 24825
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The martial arts choreography in Force: Five showcases the transition period between traditional karate-based fighting styles and the more dynamic Hong Kong-influenced techniques that would later dominate action cinema. The film's ensemble cast includes legitimate martial artists like Bong Soo Han and Richard Norton, following the template established by <a href=\"/movie/13333\" class=\"movie-title\">Game of Death</a> (1978) where real fighting champions were featured prominently. This approach of casting actual martial artists would influence later films like **Bloodsport** (1988) and **American Ninja** (1985). SUBHEAD: Cult Cinema and Exploitation Elements"
+      },
+      {
+        "type": "text",
+        "content": "Force: Five's unusual blend of martial arts and cult infiltration narrative reflects the exploitation cinema trends of its era. Similar themes appear in **Kill and Kill Again** (1981) and **The Miami Connection** (1987), where martial arts heroes battle pseudo-religious organizations. These films often mixed genuine fighting talent with B-movie plot elements, creating a distinct subgenre that flourished in the direct-to-video market of the 1980s."
+      }
+    ],
+    "exploreFurther": [
+      "The Rise and Fall of American Martial Arts Cinema 1973-1989",
+      "Robert Clouse's Directorial Impact on Martial Arts Films",
+      "Real Martial Artists in Action Movies",
+      "Religious Cults in Exploitation Cinema",
+      "Joe Lewis: Champion Fighter to Action Star"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Last Dragon",
+          "year": 1985,
+          "slug": "Martial arts comedy about a Bruce Lee fan in New York",
+          "poster": "https://image.tmdb.org/t/p/w500/r5QnLY30gXlZ8luiJE3quDs1WNF.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 13938,
+          "poster_url": "https://image.tmdb.org/t/p/w500/r5QnLY30gXlZ8luiJE3quDs1WNF.jpg"
+        },
+        {
+          "title": "Kill and Kill Again",
+          "year": 1981,
+          "slug": "Martial artists battle mind-controlled cult members",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 79875
+        },
+        {
+          "title": "Gymkata",
+          "year": 1985,
+          "slug": "Olympic gymnast uses unique fighting style to survive deadly game",
+          "poster": "https://image.tmdb.org/t/p/w500/y8RhLH1TTJppX0sr4pHGLdKFbc9.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 14570,
+          "poster_url": "https://image.tmdb.org/t/p/w500/y8RhLH1TTJppX0sr4pHGLdKFbc9.jpg"
+        },
+        {
+          "title": "American Ninja",
+          "year": 1985,
+          "slug": "American soldier learns ninja arts to battle corruption",
+          "poster": "https://image.tmdb.org/t/p/w500/5fPN6EZHEeJtl1Nh9ZsyG4CSf8V.jpg",
+          "initialStreaming": "Pluto TV",
+          "tmdb_id": 12500,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5fPN6EZHEeJtl1Nh9ZsyG4CSf8V.jpg"
+        },
+        {
+          "title": "No Retreat, No Surrender",
+          "year": 1986,
+          "slug": "Young martial artist channeling Bruce Lee's spirit",
+          "poster": "https://image.tmdb.org/t/p/w500/bDwcHvRXIRVCD2RLACEsykzoHPe.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 12721,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bDwcHvRXIRVCD2RLACEsykzoHPe.jpg"
+        },
+        {
+          "title": "The Perfect Weapon",
+          "year": 1991,
+          "slug": "Jeff Speakman introduces Kenpo Karate to action cinema",
+          "poster": "https://image.tmdb.org/t/p/w500/dTV6LVgZgwNOkoAX6RHvFDcjav2.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 34421,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dTV6LVgZgwNOkoAX6RHvFDcjav2.jpg"
+        },
+        {
+          "title": "Revenge of the Ninja",
+          "year": 1983,
+          "slug": "Ninja warrior battles drug dealers in America",
+          "poster": "https://image.tmdb.org/t/p/w500/qEZ0Av3VvJvIs0zeqntNVUY9n48.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 17386,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qEZ0Av3VvJvIs0zeqntNVUY9n48.jpg"
+        },
+        {
+          "title": "Black Belt Jones",
+          "year": 1974,
+          "slug": "Karate school owner fights mob takeover attempts",
+          "poster": "https://image.tmdb.org/t/p/w500/tnzPJzKr2IVPGqkkE6aCGNePDq0.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 18257,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tnzPJzKr2IVPGqkkE6aCGNePDq0.jpg"
+        },
+        {
+          "title": "The Last Dragon",
+          "year": 1985,
+          "slug": "Martial artist seeks mastery in urban setting",
+          "poster": "https://image.tmdb.org/t/p/w500/r5QnLY30gXlZ8luiJE3quDs1WNF.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 13938,
+          "poster_url": "https://image.tmdb.org/t/p/w500/r5QnLY30gXlZ8luiJE3quDs1WNF.jpg"
+        },
+        {
+          "title": "American Kickboxer 1",
+          "year": 1991,
+          "slug": "Champion kickboxer seeks revenge for brother's death",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 110830
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

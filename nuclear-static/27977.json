@@ -1,0 +1,158 @@
+{
+  "props": {
+    "title": "Groove Tube",
+    "year": 1974,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/gyfmgTW3a0gftxgVptvKBAf9GqY.jpg",
+    "initialStreaming": null,
+    "tmdbId": 27977,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "<a href=\"/movie/27977\" class=\"movie-title\">The Groove Tube</a> (1974) marks a pivotal moment in satirical comedy, arriving just as television's dominance of American culture reached new heights. Created by Ken Shapiro and featuring a young Chevy Chase before his **Saturday Night Live** (1975) breakthrough, this guerrilla-style sketch comedy film savagely mocks television formats, commercials, and cultural programming. Its DNA is clearly visible in later works like <a href=\"/movie/11598\" class=\"movie-title\">Kentucky Fried Movie</a> (1977) and <a href=\"/movie/5709\" class=\"movie-title\">Amazon Women on the Moon</a> (1987), establishing a template for anarchic, segment-based comedy films that would influence decades of parody."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Groove Tube",
+            "year": 1974,
+            "slug": "Underground sketch comedy film satirizing television culture featuring Chevy Chase",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 27977
+          },
+          {
+            "title": "Kentucky Fried Movie",
+            "year": 1977,
+            "slug": "Sketch comedy film directed by John Landis featuring outrageous parodies",
+            "poster": "https://image.tmdb.org/t/p/w500/qk0iXBQgP6b4xfS2bIUNBSENJAn.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 11598,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qk0iXBQgP6b4xfS2bIUNBSENJAn.jpg"
+          },
+          {
+            "title": "UHF",
+            "year": 1989,
+            "slug": "Weird Al Yankovic stars as a TV station manager creating bizarre programming",
+            "poster": "https://image.tmdb.org/t/p/w500/wxx5YQLKVH1WMSRXQAUnC76r4iY.jpg",
+            "initialStreaming": "Pluto TV",
+            "tmdb_id": 11959,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wxx5YQLKVH1WMSRXQAUnC76r4iY.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's irreverent approach to television criticism emerged from the countercultural comedy scene of the early 1970s, alongside projects like **The Great American Dream Machine** (1971) and **Tunnel Vision** (1976). Its raw, often crude humor and guerrilla filmmaking style reflected a generation's skepticism toward mainstream media. The film's structure - presenting itself as a series of channel-flips through increasingly absurd programming - became highly influential, later seen in works like <a href=\"/movie/5709\" class=\"movie-title\">Amazon Women on the Moon</a> (1987) and <a href=\"/movie/11959\" class=\"movie-title\">UHF</a> (1989)."
+      },
+      {
+        "type": "text",
+        "content": "While primitive by today's production standards, <a href=\"/movie/27977\" class=\"movie-title\">The Groove Tube</a> (1974) pioneered techniques for mocking television conventions that would become comedy staples. Its fake commercials and news segments presaged similar work on **SCTV** (1976) and **Mr. Show** (1995). The film's willingness to push boundaries with adult humor and political commentary opened doors for later sketch comedy films like **Hollywood Hot Tubs** (1984) and **The Underground Comedy Movie** (1999). SUBHEAD: Cultural Impact and Legacy"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Amazon Women on the Moon",
+            "year": 1987,
+            "slug": "Sketch comedy film spoofing late-night television and B-movies",
+            "poster": "https://image.tmdb.org/t/p/w500/p77UlHHzyBUCKgdbLosrAnltDgw.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 5709,
+            "poster_url": "https://image.tmdb.org/t/p/w500/p77UlHHzyBUCKgdbLosrAnltDgw.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends beyond just comedy structure. Its treatment of television as a medium worthy of sustained satirical attack helped establish a critical discourse that continues through works like **Network** (1976) and **Videodrome** (1983). The presence of Chevy Chase connects it directly to the development of **Saturday Night Live** (1975), where many of the film's approaches to media satire would be refined and popularized for a mainstream audience."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Television Satire from The Groove Tube to SNL",
+      "Guerrilla Filmmaking Techniques in 1970s Comedy",
+      "Chevy Chase's Early Career and the Development of His Comedy Style",
+      "The Impact of Channel-Surfing Comedy on Modern Sketch Shows",
+      "Underground Comedy Films of the 1970s"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Network",
+          "year": 1976,
+          "slug": "Scathing satire of television news and ratings chase",
+          "poster": "https://image.tmdb.org/t/p/w500/gZ8hhuVEQ78CLND09trZJ45Eiy8.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10774,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gZ8hhuVEQ78CLND09trZJ45Eiy8.jpg"
+        },
+        {
+          "title": "Tunnel Vision",
+          "year": 1976,
+          "slug": "Sketch comedy film predicting television in 1985",
+          "poster": "https://image.tmdb.org/t/p/w500/hD83vq9BuQ0dmsLnLpUmOClNlPE.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 114255,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hD83vq9BuQ0dmsLnLpUmOClNlPE.jpg"
+        },
+        {
+          "title": "SCTV",
+          "year": 1976,
+          "slug": "Canadian sketch comedy series spoofing television",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Videodrome",
+          "year": 1983,
+          "slug": "Cronenberg's horror film about the dark side of television",
+          "poster": "https://image.tmdb.org/t/p/w500/qqqkiZSU9EBGZ1KiDmfn07S7qvv.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 837,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qqqkiZSU9EBGZ1KiDmfn07S7qvv.jpg"
+        },
+        {
+          "title": "Brain Donors",
+          "year": 1992,
+          "slug": "Marx Brothers-style comedy with modern media criticism",
+          "poster": "https://image.tmdb.org/t/p/w500/r928uiKrN1mvPrqyHy2djLUBlAe.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 32450,
+          "poster_url": "https://image.tmdb.org/t/p/w500/r928uiKrN1mvPrqyHy2djLUBlAe.jpg"
+        },
+        {
+          "title": "Stay Tuned",
+          "year": 1992,
+          "slug": "Comedy about a couple trapped in hellish TV programming",
+          "poster": "https://image.tmdb.org/t/p/w500/yd2MN9zA30eGjf89DaaNoUXbRNp.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 23939,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yd2MN9zA30eGjf89DaaNoUXbRNp.jpg"
+        },
+        {
+          "title": "Remote Control",
+          "year": 1988,
+          "slug": "Dark comedy about television addiction",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 60410
+        },
+        {
+          "title": "Used Cars",
+          "year": 1980,
+          "slug": "Robert Zemeckis comedy about media manipulation",
+          "poster": "https://image.tmdb.org/t/p/w500/rtj9uLpVTUBxu4Xub0Ui1lRw9WM.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 14475,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rtj9uLpVTUBxu4Xub0Ui1lRw9WM.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

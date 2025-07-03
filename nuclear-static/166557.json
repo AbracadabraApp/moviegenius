@@ -1,0 +1,186 @@
+{
+  "props": {
+    "title": "Gruber",
+    "year": 2010,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/ajtPpHCHVYqoXh6kosq83pf9W3.jpg",
+    "initialStreaming": null,
+    "tmdbId": 166557,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Gruber** (2010) is a fascinating microbudget horror film that slipped under most viewers' radar. Made for just $15,000 by director Gary Cohen, it follows the psychological unraveling of a reclusive man who becomes obsessed with a mysterious entity he believes is stalking him. The film's claustrophobic atmosphere draws clear inspiration from Roman Polanski's <a href=\"/movie/11481\" class=\"movie-title\">Repulsion</a> (1965) and <a href=\"/movie/287854\" class=\"movie-title\">The Tenant</a> (1976), while its exploration of paranoia and isolation feels spiritually connected to **Pi** (1998) and <a href=\"/movie/12526\" class=\"movie-title\">Bug</a> (2006)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Repulsion",
+            "year": 1965,
+            "slug": "Catherine Deneuve stars in Polanski's psychological horror about a woman's descent into madness in her London apartment",
+            "poster": "https://image.tmdb.org/t/p/w500/dtyCKEPLqv9wxyVazL4b843vtUb.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 11481,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dtyCKEPLqv9wxyVazL4b843vtUb.jpg"
+          },
+          {
+            "title": "Bug",
+            "year": 2006,
+            "slug": "Michael Shannon and Ashley Judd spiral into shared paranoid delusions in this William Friedkin thriller",
+            "poster": "https://image.tmdb.org/t/p/w500/yjTmmAngldFoyDhHxNM8fHblk3O.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 12526,
+            "poster_url": "https://image.tmdb.org/t/p/w500/yjTmmAngldFoyDhHxNM8fHblk3O.jpg"
+          },
+          {
+            "title": "The Tenant",
+            "year": 1976,
+            "slug": "Polanski directs and stars in this unsettling tale of apartment dwelling and identity crisis",
+            "poster": "https://image.tmdb.org/t/p/w500/ibs40AluKVoCqnVYvommPNQn3E6.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 287854,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ibs40AluKVoCqnVYvommPNQn3E6.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's strength lies in its minimalist approach, using a single location and limited cast to create maximum tension. Like <a href=\"/movie/10972\" class=\"movie-title\">Session 9</a> (2001) and <a href=\"/movie/27374\" class=\"movie-title\">Lake Mungo</a> (2008), **Gruber** builds dread through suggestion rather than explicit scares. First-time actor James Westbrook delivers a remarkably committed performance as the titular character, carrying entire sequences alone on screen as his character's grip on reality becomes increasingly tenuous."
+      },
+      {
+        "type": "text",
+        "content": "What sets **Gruber** apart from similar psychological horror films is its ambiguous treatment of mental illness. Unlike more exploitative takes like **Maniac** (1980) or **Henry: Portrait of a Serial Killer** (1986), Cohen's film maintains a compassionate view of its protagonist while never diminishing the horror of his situation. This approach aligns it more closely with sophisticated character studies like **Clean, Shaven** (1993). SUBHEAD: Technical Innovation on a Microbudget"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Session 9",
+            "year": 2001,
+            "slug": "Asbestos removal workers face psychological terror in an abandoned mental hospital",
+            "poster": "https://image.tmdb.org/t/p/w500/A3Au37c3KJX29BDvldzGiYtaU5B.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 10972,
+            "poster_url": "https://image.tmdb.org/t/p/w500/A3Au37c3KJX29BDvldzGiYtaU5B.jpg"
+          },
+          {
+            "title": "Lake Mungo",
+            "year": 2008,
+            "slug": "Australian mockumentary investigating supernatural occurrences following a teenage girl's death",
+            "poster": "https://image.tmdb.org/t/p/w500/g0zCELYfBfSv8TOGC13buABVN53.jpg",
+            "initialStreaming": "AMC+",
+            "tmdb_id": 27374,
+            "poster_url": "https://image.tmdb.org/t/p/w500/g0zCELYfBfSv8TOGC13buABVN53.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Despite severe financial constraints, **Gruber** achieves remarkable technical sophistication. Cohen's use of natural lighting and handheld camera work recalls the immediacy of **Blair Witch Project** (1999), while his sound design rivals more expensive productions like **Primer** (2004). The film demonstrates how creative limitations can spark innovation, much like **Following** (1998), Christopher Nolan's ultra-low-budget debut."
+      }
+    ],
+    "exploreFurther": [
+      "The Rise of Microbudget Horror Films in the Digital Age",
+      "Psychological Horror vs. Supernatural Horror: Different Approaches to Fear",
+      "The Influence of Roman Polanski's Apartment Trilogy",
+      "Sound Design in Low-Budget Horror",
+      "Mental Illness Representation in Horror Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Following",
+          "year": 1998,
+          "slug": "Nolan's debut about a writer who follows strangers leads to noir intrigue",
+          "poster": "https://image.tmdb.org/t/p/w500/3bX6VVSMf0dvzk5pMT4ALG5A92d.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 11660,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3bX6VVSMf0dvzk5pMT4ALG5A92d.jpg"
+        },
+        {
+          "title": "Pi",
+          "year": 1998,
+          "slug": "Darren Aronofsky's debut about a mathematician's descent into numerical obsession",
+          "poster": "https://image.tmdb.org/t/p/w500/fJA22FjlAW8rzrOw9Mwanl6oTc9.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 473,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fJA22FjlAW8rzrOw9Mwanl6oTc9.jpg"
+        },
+        {
+          "title": "Clean Shaven",
+          "year": 1993,
+          "slug": "Intense portrait of a schizophrenic man trying to find his daughter",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": null
+        },
+        {
+          "title": "Eraserhead",
+          "year": 1977,
+          "slug": "Lynch's surreal nightmare about parenthood and urban isolation",
+          "poster": "https://image.tmdb.org/t/p/w500/mxveW3mGVc0DzLdOmtkZsgd7c3B.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 985,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mxveW3mGVc0DzLdOmtkZsgd7c3B.jpg"
+        },
+        {
+          "title": "May",
+          "year": 2002,
+          "slug": "Character study of a lonely woman's desperate search for connection",
+          "poster": "https://image.tmdb.org/t/p/w500/oFXhJYTax1cnNtgvLdKlXuYiWPV.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 10894,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oFXhJYTax1cnNtgvLdKlXuYiWPV.jpg"
+        },
+        {
+          "title": "Identity",
+          "year": 2003,
+          "slug": "Multiple personalities converge at an isolated motel",
+          "poster": "https://image.tmdb.org/t/p/w500/bnidwEvWNAVJ3Uco9wWtuzWAfrx.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 2832,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bnidwEvWNAVJ3Uco9wWtuzWAfrx.jpg"
+        },
+        {
+          "title": "Spider",
+          "year": 2002,
+          "slug": "Cronenberg's subtle study of a mentally ill man's return home",
+          "poster": "https://image.tmdb.org/t/p/w500/zvm4WuYxTiGkRagRqHUey0meRQL.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 9613,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zvm4WuYxTiGkRagRqHUey0meRQL.jpg"
+        },
+        {
+          "title": "Berberian Sound Studio",
+          "year": 2012,
+          "slug": "Sound engineer loses grip on reality while working on Italian horror film",
+          "poster": "https://image.tmdb.org/t/p/w500/sCrLZYF7TU32Vk5bOIJneVAcoKE.jpg",
+          "initialStreaming": "AMC+",
+          "tmdb_id": 116811,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sCrLZYF7TU32Vk5bOIJneVAcoKE.jpg"
+        },
+        {
+          "title": "The Signal",
+          "year": 2007,
+          "slug": "Low-budget horror about a mysterious transmission driving people mad",
+          "poster": "https://image.tmdb.org/t/p/w500/qRs8osQJZLItwQER2bzuuK9A0sp.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 13059,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qRs8osQJZLItwQER2bzuuK9A0sp.jpg"
+        },
+        {
+          "title": "Resolution",
+          "year": 2012,
+          "slug": "Man chains his friend to a cabin to force sobriety, encounters cosmic horror",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

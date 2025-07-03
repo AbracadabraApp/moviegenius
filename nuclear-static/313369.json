@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "La La Land",
+    "year": 2016,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+    "initialStreaming": null,
+    "tmdbId": 313369,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**La La Land** (2016) brilliantly reimagines the Golden Age musical for modern audiences. Director Damien Chazelle crafts a bittersweet love letter to Los Angeles, dreamers, and classic Hollywood, echoing the technicolor splendor of **Singin' in the Rain** (1952) while adding contemporary emotional weight. The film's innovative opening sequence \"Another Day of Sun\" announces its ambitions - a single-take musical number set amid LA traffic that recalls the elaborate choreography of **West Side Story** (1961) but with a fresh, sun-drenched energy."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Umbrellas of Cherbourg",
+            "year": 1964,
+            "slug": "The French musical that directly inspired La La Land's color palette and bittersweet ending",
+            "poster": "https://image.tmdb.org/t/p/w500/tAgTf64XKK5ir7w5C7dnB53jWWG.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 5967,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tAgTf64XKK5ir7w5C7dnB53jWWG.jpg"
+          },
+          {
+            "title": "Whiplash",
+            "year": 2014,
+            "slug": "Chazelle's previous film about jazz and artistic obsession",
+            "poster": "https://image.tmdb.org/t/p/w500/7fn624j5lj3xTme2SgiLCeuedmO.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 244786,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7fn624j5lj3xTme2SgiLCeuedmO.jpg"
+          },
+          {
+            "title": "The Artist",
+            "year": 2011,
+            "slug": "Modern silent film celebrating Hollywood's golden age",
+            "poster": "https://image.tmdb.org/t/p/w500/z68py0ZqPgeacGPG54AGVRbNBS7.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 74643,
+            "poster_url": "https://image.tmdb.org/t/p/w500/z68py0ZqPgeacGPG54AGVRbNBS7.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Emma Stone and Ryan Gosling's chemistry drives the film, their imperfect singing and dancing making their characters more relatable than the polished performers of classic musicals. The film's structure cleverly subverts romantic musical conventions - while **Meet Me in St. Louis** (1944) and **An American in Paris** (1951) end with lovers united, La La Land dares to explore the cost of artistic dreams. The \"Epilogue\" sequence masterfully reimagines their relationship through the lens of classic musical optimism before returning to bittersweet reality."
+      },
+      {
+        "type": "text",
+        "content": "Chazelle's direction seamlessly blends classical technique with modern storytelling. The \"Planetarium\" sequence pays homage to **Royal Wedding** (1951) while the jazz club scenes echo <a href=\"/movie/178590\" class=\"movie-title\">New York, New York</a> (1977). Justin Hurwitz's score interweaves recurring motifs that evolve from hopeful to melancholic, supporting the film's exploration of how time transforms both love and ambition. SUBHEAD: The Modern Musical Renaissance"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "New York, New York",
+            "year": 1977,
+            "slug": "Scorsese's underrated musical about romance vs artistic ambition",
+            "poster": "https://image.tmdb.org/t/p/w500/60EJdyogoP59rpya0yRdWcuQio0.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 178590,
+            "poster_url": "https://image.tmdb.org/t/p/w500/60EJdyogoP59rpya0yRdWcuQio0.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**La La Land** helped spark a revival of original movie musicals, paving the way for films like **The Greatest Showman** (2017) and **In the Heights** (2021). Its success proved audiences would embrace original musical storytelling that balanced nostalgia with contemporary themes. The film's influence can be seen in subsequent works like **Tick, Tick... Boom!** (2021) that similarly explore the intersection of art, love, and ambition."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of the Movie Musical: From Busby Berkeley to La La Land",
+      "Jazz in Cinema: From The Jazz Singer to La La Land",
+      "Los Angeles as a Character: How Films Portray the City of Dreams",
+      "Color Theory in Musical Films: Using Palette to Express Emotion",
+      "The Influence of French New Wave on Modern American Musicals"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Singing in the Rain",
+          "year": 1952,
+          "slug": "The ultimate Hollywood musical about Hollywood",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 872
+        },
+        {
+          "title": "The Young Girls of Rochefort",
+          "year": 1967,
+          "slug": "Another Demy musical that influenced La La Land",
+          "poster": "https://image.tmdb.org/t/p/w500/jtxhyGaYhurH6KsjvP1jV3dDypz.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 2433,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jtxhyGaYhurH6KsjvP1jV3dDypz.jpg"
+        },
+        {
+          "title": "A Star is Born",
+          "year": 2018,
+          "slug": "Modern musical romance about fame and artistic sacrifice",
+          "poster": "https://image.tmdb.org/t/p/w500/wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 332562,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg"
+        },
+        {
+          "title": "Chicago",
+          "year": 2002,
+          "slug": "Oscar-winning revival of the movie musical",
+          "poster": "https://image.tmdb.org/t/p/w500/3ED8cWCXY9zkx77Sd0N5qMbsdDP.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 1574,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3ED8cWCXY9zkx77Sd0N5qMbsdDP.jpg"
+        },
+        {
+          "title": "42nd Street",
+          "year": 1933,
+          "slug": "Classic backstage musical about Broadway dreams",
+          "poster": "https://image.tmdb.org/t/p/w500/q4UEd8BL74zVsOOaJkKVMLMmdTg.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 3062,
+          "poster_url": "https://image.tmdb.org/t/p/w500/q4UEd8BL74zVsOOaJkKVMLMmdTg.jpg"
+        },
+        {
+          "title": "All That Jazz",
+          "year": 1979,
+          "slug": "Fosse's semi-autobiographical musical about artistic drive",
+          "poster": "https://image.tmdb.org/t/p/w500/culCEdj4srLljefgn4XKd6k3C5t.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 16858,
+          "poster_url": "https://image.tmdb.org/t/p/w500/culCEdj4srLljefgn4XKd6k3C5t.jpg"
+        },
+        {
+          "title": "The Red Shoes",
+          "year": 1948,
+          "slug": "Stunning Technicolor tale of artistic obsession",
+          "poster": "https://image.tmdb.org/t/p/w500/tRpm0MNYoMOgyumL9ePI3wB2P9V.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 19542,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tRpm0MNYoMOgyumL9ePI3wB2P9V.jpg"
+        },
+        {
+          "title": "Once",
+          "year": 2007,
+          "slug": "Intimate modern musical about musicians in Dublin",
+          "poster": "https://image.tmdb.org/t/p/w500/pNrBQVwYbdnipkBq1HXl52UIePq.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 5723,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pNrBQVwYbdnipkBq1HXl52UIePq.jpg"
+        },
+        {
+          "title": "Moulin Rouge!",
+          "year": 2001,
+          "slug": "Innovative postmodern musical spectacle",
+          "poster": "https://image.tmdb.org/t/p/w500/2kjM5CUZRIU5yOANUowrbJcRL9L.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 824,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2kjM5CUZRIU5yOANUowrbJcRL9L.jpg"
+        },
+        {
+          "title": "Fame",
+          "year": 1980,
+          "slug": "Raw musical about performing arts students",
+          "poster": "https://image.tmdb.org/t/p/w500/ewuGn4kxsqbYfgSO8Y5kzYlBcKE.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 3537,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ewuGn4kxsqbYfgSO8Y5kzYlBcKE.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

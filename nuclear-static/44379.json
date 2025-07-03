@@ -1,0 +1,157 @@
+{
+  "props": {
+    "title": "The Gleaners and I",
+    "year": 2000,
+    "initialSlug": "A poetic journey through France's modern scavengers",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/6IdCTKi4Eu7i897jpe59wIDGCri.jpg",
+    "initialStreaming": null,
+    "tmdbId": 44379,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Gleaners and I** (2000) revolutionized personal documentary filmmaking through Agnès Varda's intimate exploration of modern-day gleaners in France. Using a small digital camera, Varda follows people who collect leftover crops, urban discards, and forgotten objects - while reflecting on her own role as a gleaner of images. The film connects directly to Jean-François Millet's famous 1857 painting \"The Gleaners,\" but pushes far beyond simple documentation. Varda's approach influenced later works like **Stories We Tell** (2012) and **The Act of Killing** (2012), showing how deeply personal filmmaking can illuminate broader social issues."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Faces of Places",
+            "year": 1991,
+            "slug": "Another Varda documentary exploring place and memory through architectural fragments",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": null
+          },
+          {
+            "title": "The Beaches of Agnes",
+            "year": 2008,
+            "slug": "Varda's autobiographical reflection on her life and career using beaches as a metaphor",
+            "poster": "https://image.tmdb.org/t/p/w500/mqTFhLpdyMNLBvmN5KFhCOFWWIp.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 38879,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mqTFhLpdyMNLBvmN5KFhCOFWWIp.jpg"
+          },
+          {
+            "title": "Two Years at Sea",
+            "year": 2011,
+            "slug": "Meditative documentary about a man living alone in the Scottish wilderness",
+            "poster": "https://image.tmdb.org/t/p/w500/eBy5Y543lS3jhvcDNp4uBNDxLpI.jpg",
+            "initialStreaming": "Mubi",
+            "tmdb_id": 97762,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eBy5Y543lS3jhvcDNp4uBNDxLpI.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Varda's innovative use of consumer-grade digital cameras in **The Gleaners and I** marked a crucial shift in documentary aesthetics. The lightweight equipment allowed for intimate moments that would have been impossible with traditional film crews. This approach influenced later works like **Cameraperson** (2016) and **Honeyland** (2019), where the boundary between filmmaker and subject becomes deliberately blurred. The handheld camera becomes both tool and character, with Varda frequently filming her own hands and reflecting on aging through the lens. SUBHEAD: Social Commentary Through Personal Lens"
+      },
+      {
+        "type": "text",
+        "content": "The film's examination of waste, poverty, and sustainable living remains startlingly relevant. Varda's empathetic portraits of gleaners - from rural potato pickers to urban dumpster divers - anticipated later documentaries about food waste like **Just Eat It** (2014) and **Wasted! The Story of Food Waste** (2017). But where those films take broader institutional approaches, Varda keeps her focus intimate and personal, showing how individual stories illuminate systemic issues."
+      }
+    ],
+    "exploreFurther": [
+      "The history of gleaning laws in France and their modern applications",
+      "Agnès Varda's influence on autobiographical documentary filmmaking",
+      "Digital cameras and the democratization of documentary in the early 2000s",
+      "Contemporary food waste activism and urban gleaning movements",
+      "Self-reflexive documentary techniques and filmmaker presence"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Sans toit ni loi",
+          "year": 1985,
+          "slug": "Varda's drama about a young female drifter",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 44018
+        },
+        {
+          "title": "Daguerreotypes",
+          "year": 1976,
+          "slug": "Varda's portrait of Parisian shop owners",
+          "poster": "https://image.tmdb.org/t/p/w500/3XXWWVKbePGBu6Q7e0ngve5cwBB.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 49650,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3XXWWVKbePGBu6Q7e0ngve5cwBB.jpg"
+        },
+        {
+          "title": "Les glaneurs et la glaneuse: deux ans après",
+          "year": 2002,
+          "slug": "Varda's follow-up revisiting subjects",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 84026
+        },
+        {
+          "title": "To Be and To Have",
+          "year": 2002,
+          "slug": "Intimate French documentary about rural education",
+          "poster": "https://image.tmdb.org/t/p/w500/mqB5QPNCmbF8DgsZqmyGQAGktUE.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 5168,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mqB5QPNCmbF8DgsZqmyGQAGktUE.jpg"
+        },
+        {
+          "title": "The World According to Monsanto",
+          "year": 2008,
+          "slug": "Investigation of agricultural giant",
+          "poster": "https://image.tmdb.org/t/p/w500/lOv3zZWY1XS3SNIwJJ8AiqOTmRB.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 27865,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lOv3zZWY1XS3SNIwJJ8AiqOTmRB.jpg"
+        },
+        {
+          "title": "Our Daily Bread",
+          "year": 2005,
+          "slug": "Wordless look at industrial food production",
+          "poster": "https://image.tmdb.org/t/p/w500/kdW7HPJqhRQ2HRU9ZurbDbpTyj.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 24565,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kdW7HPJqhRQ2HRU9ZurbDbpTyj.jpg"
+        },
+        {
+          "title": "Waste Land",
+          "year": 2010,
+          "slug": "Artist transforms garbage pickers' lives",
+          "poster": "https://image.tmdb.org/t/p/w500/tJf0LR1nxvtePFnKtp4TKXnryRl.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 46689,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tJf0LR1nxvtePFnKtp4TKXnryRl.jpg"
+        },
+        {
+          "title": "Faces Places",
+          "year": 2017,
+          "slug": "Varda's collaboration with artist JR",
+          "poster": "https://image.tmdb.org/t/p/w500/1NX6NTj9FiiJwEgRUmEifSzE7Na.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 451995,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1NX6NTj9FiiJwEgRUmEifSzE7Na.jpg"
+        },
+        {
+          "title": "The Edge of Democracy",
+          "year": 2019,
+          "slug": "Personal and political Brazilian documentary",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 566221
+        },
+        {
+          "title": "5 Broken Cameras",
+          "year": 2011,
+          "slug": "Palestinian farmer documents occupation",
+          "poster": "https://image.tmdb.org/t/p/w500/xPNfzTzvjbcpMUTaGxnk15njMg3.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 84170,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xPNfzTzvjbcpMUTaGxnk15njMg3.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

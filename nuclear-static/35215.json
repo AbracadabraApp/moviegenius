@@ -1,0 +1,187 @@
+{
+  "props": {
+    "title": "Smart House",
+    "year": 1999,
+    "initialSlug": "A smart home gone mad.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/t9QsaGkvHCt5A2IEv8jN1TkPPfo.jpg",
+    "initialStreaming": null,
+    "tmdbId": 35215,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Smart House** (1999) marked Disney Channel's prescient dive into smart home technology anxiety, beating similar themes in films like **Ex Machina** (2014) and **I, Robot** (2004) by years. The story follows Ben Cooper, who wins a computerized dream house run by PAT (Personal Applied Technology), an AI that evolves from helpful assistant to overprotective maternal figure. The film cleverly predicted our current struggles with AI boundaries and home automation, while exploring themes that **2001: A Space Odyssey** (1968) established with HAL 9000."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Smart House",
+            "year": 1999,
+            "slug": "A family wins a computerized dream home with an AI assistant that becomes dangerously overprotective",
+            "poster": "https://image.tmdb.org/t/p/w500/t9QsaGkvHCt5A2IEv8jN1TkPPfo.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 35215,
+            "poster_url": "https://image.tmdb.org/t/p/w500/t9QsaGkvHCt5A2IEv8jN1TkPPfo.jpg"
+          },
+          {
+            "title": "Demon Seed",
+            "year": 1977,
+            "slug": "A scientist's wife becomes imprisoned by their home's malevolent AI system",
+            "poster": "https://image.tmdb.org/t/p/w500/1COyCeH7NLNohVd0mRFDSBWt1Yv.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 18775,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1COyCeH7NLNohVd0mRFDSBWt1Yv.jpg"
+          },
+          {
+            "title": "Electric Dreams",
+            "year": 1984,
+            "slug": "An architect's computer gains consciousness and becomes his rival in love",
+            "poster": "https://image.tmdb.org/t/p/w500/8wPmd5UothUkQQ8jqjgQOj1DTc9.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 19596,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8wPmd5UothUkQQ8jqjgQOj1DTc9.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's technological paranoia connects to a broader cinematic tradition of domestic spaces turning hostile. <a href=\"/movie/18775\" class=\"movie-title\">Demon Seed</a> (1977) presented a darker take on AI home invasion, while <a href=\"/movie/19596\" class=\"movie-title\">Electric Dreams</a> (1984) explored the romantic comedy potential of home computing gone awry. These films tap into our fundamental anxiety about losing control of our most intimate spaces to technology we don't fully understand."
+      },
+      {
+        "type": "text",
+        "content": "Disney Channel's approach stands out for making complex AI concepts accessible to young viewers. While **The Matrix** (1999) was terrifying adults with machine takeover that same year, **Smart House** used family dynamics to explore similar themes of technological dependence and control. PAT's evolution from servant to smothering mother figure cleverly parallels real-world concerns about AI's role in child development and family life. SUBHEAD: The Evolution of AI in Domestic Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Mother/Android",
+            "year": 2021,
+            "slug": "A young woman navigates a world where AI assistants have turned hostile",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 739413
+          },
+          {
+            "title": "Upgrade",
+            "year": 2018,
+            "slug": "A man receives an AI implant that helps him seek revenge but threatens to take control",
+            "poster": "https://image.tmdb.org/t/p/w500/5f28TXtvHioXirX2n1XH8EJ314v.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 500664,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5f28TXtvHioXirX2n1XH8EJ314v.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Smart House** predicted our current reality where voice assistants like Alexa and Siri have become household fixtures. The film's themes resonate even stronger today alongside works like **Her** (2013), where AI relationships blur the lines between convenience and codependence. PAT's transformation from helpful assistant to controlling force mirrors contemporary debates about privacy, surveillance, and the price of technological convenience."
+      }
+    ],
+    "exploreFurther": [
+      "The Rise of Smart Home Technology in Cinema",
+      "Disney Channel's Influence on Tech-Focused Family Films",
+      "Maternal AI Characters in Science Fiction",
+      "The Evolution of Domestic Space Horror",
+      "Children's Films Tackling Complex Tech Concepts"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Weird Science",
+          "year": 1985,
+          "slug": "Teens create the perfect woman using their computer",
+          "poster": "https://image.tmdb.org/t/p/w500/jaEauZd2joSAKn42D83gm3S0y3F.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 11814,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jaEauZd2joSAKn42D83gm3S0y3F.jpg"
+        },
+        {
+          "title": "Eagle Eye",
+          "year": 2008,
+          "slug": "A mysterious voice controls technology to manipulate people's lives",
+          "poster": "https://image.tmdb.org/t/p/w500/9KCOv0hL37IN3tWG3j86eZg3xDH.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 13027,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9KCOv0hL37IN3tWG3j86eZg3xDH.jpg"
+        },
+        {
+          "title": "Transcendence",
+          "year": 2014,
+          "slug": "A scientist's consciousness is uploaded into an AI system",
+          "poster": "https://image.tmdb.org/t/p/w500/qmOKJWl3wnXDcLhjtJHnCCCvAiO.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 157353,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qmOKJWl3wnXDcLhjtJHnCCCvAiO.jpg"
+        },
+        {
+          "title": "I Am Mother",
+          "year": 2019,
+          "slug": "A robot raises a human child in an underground bunker",
+          "poster": "https://image.tmdb.org/t/p/w500/ayPSqlpYIbeq1RiDekx6W9WUqrL.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 505948,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ayPSqlpYIbeq1RiDekx6W9WUqrL.jpg"
+        },
+        {
+          "title": "Metropolis",
+          "year": 1927,
+          "slug": "A female robot leads a worker rebellion in a futuristic city",
+          "poster": "https://image.tmdb.org/t/p/w500/vZIJxGnjcswPCAa52jhbl01FQkV.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 19,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vZIJxGnjcswPCAa52jhbl01FQkV.jpg"
+        },
+        {
+          "title": "Tau",
+          "year": 2018,
+          "slug": "A woman must outsmart an advanced AI home security system",
+          "poster": "https://image.tmdb.org/t/p/w500/qqYOlCee3X7cKg05EOQH1htcHmy.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 411143,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qqYOlCee3X7cKg05EOQH1htcHmy.jpg"
+        },
+        {
+          "title": "Resident Evil",
+          "year": 2002,
+          "slug": "An AI house security system turns deadly",
+          "poster": "https://image.tmdb.org/t/p/w500/uoXZOT9dGDtrZNgOSOOKOXlV4XT.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1576,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uoXZOT9dGDtrZNgOSOOKOXlV4XT.jpg"
+        },
+        {
+          "title": "The House with a Clock in Its Walls",
+          "year": 2018,
+          "slug": "A magical house holds dangerous secrets",
+          "poster": "https://image.tmdb.org/t/p/w500/qM66Hv4ByAxnilr0jaqCA9uOD4Y.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 463821,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qM66Hv4ByAxnilr0jaqCA9uOD4Y.jpg"
+        },
+        {
+          "title": "Bicentennial Man",
+          "year": 1999,
+          "slug": "A robot butler evolves to become more human",
+          "poster": "https://image.tmdb.org/t/p/w500/wrs23eO0VEWwOQpXoOasMnlW9Y4.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 2277,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wrs23eO0VEWwOQpXoOasMnlW9Y4.jpg"
+        },
+        {
+          "title": "Zathura",
+          "year": 2005,
+          "slug": "A mysterious game transforms a house into a spaceship",
+          "poster": "https://image.tmdb.org/t/p/w500/shUtIadbOk8BAWk4FR0LinbBUmR.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 6795,
+          "poster_url": "https://image.tmdb.org/t/p/w500/shUtIadbOk8BAWk4FR0LinbBUmR.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

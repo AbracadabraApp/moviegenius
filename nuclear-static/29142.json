@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "Executive Action",
+    "year": 1973,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/mdULVfaVkGVJZ0XRjqgqtoPVWgW.jpg",
+    "initialStreaming": null,
+    "tmdbId": 29142,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Executive Action** (1973) blazed the trail for conspiracy thriller films about the JFK assassination, beating Oliver Stone's <a href=\"/movie/820\" class=\"movie-title\">JFK</a> (1991) to the punch by nearly two decades. Starring Burt Lancaster and Robert Ryan, it methodically presents a chilling alternate theory of Kennedy's death involving multiple shooters and a shadowy cabal of wealthy industrialists and ex-intelligence operatives. The film's pseudo-documentary style and use of actual footage mixed with dramatization established techniques that later conspiracy thrillers would adopt, including <a href=\"/movie/17365\" class=\"movie-title\">The Parallax View</a> (1974) and <a href=\"/movie/11963\" class=\"movie-title\">Three Days of the Condor</a> (1975)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Parallax View",
+            "year": 1974,
+            "slug": "Warren Beatty investigates a sinister corporation recruiting political assassins",
+            "poster": "https://image.tmdb.org/t/p/w500/5ClPRox438lwK2Eze7X5xySDaYC.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 17365,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5ClPRox438lwK2Eze7X5xySDaYC.jpg"
+          },
+          {
+            "title": "Three Days of the Condor",
+            "year": 1975,
+            "slug": "A CIA researcher uncovers a deadly conspiracy within his own agency",
+            "poster": "https://image.tmdb.org/t/p/w500/zinwtZqdb7gnc4zMu8dfkK1fMN3.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 11963,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zinwtZqdb7gnc4zMu8dfkK1fMN3.jpg"
+          },
+          {
+            "title": "JFK",
+            "year": 1991,
+            "slug": "Oliver Stone's controversial epic examining multiple theories around Kennedy's assassination",
+            "poster": "https://image.tmdb.org/t/p/w500/r0VWVTYlqdRCK5ZoOdNnHdqM2gt.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 820,
+            "poster_url": "https://image.tmdb.org/t/p/w500/r0VWVTYlqdRCK5ZoOdNnHdqM2gt.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The 1970s marked the golden age of paranoid political thrillers, directly influenced by Watergate and growing public distrust of government institutions. **All the President's Men** (1976) set the standard for investigative journalism films, while **The Conversation** (1974) tapped into fears about surveillance and privacy. These films reflected a national mood of suspicion and uncertainty, with **Executive Action** standing out for its boldness in directly challenging the official narrative of a pivotal historical event. SUBHEAD: Impact on Modern Political Thrillers"
+      },
+      {
+        "type": "text",
+        "content": "The DNA of **Executive Action** (1973) can be traced through later political conspiracy films like **Shooter** (2007) and **Enemy of the State** (1998). Its influence extends to documentaries like **Rush to Judgment** (1967) and **The Men Who Killed Kennedy** (1988), showing how the merging of fact and dramatic speculation can shape public discourse around historical events. The film's clinical, methodical approach to conspiracy storytelling influenced even recent works like **Kill the Messenger** (2014) and **Official Secrets** (2019)."
+      }
+    ],
+    "exploreFurther": [
+      "The evolution of conspiracy theories in American cinema",
+      "How the JFK assassination changed political filmmaking",
+      "The role of docudrama techniques in historical films",
+      "1970s political thrillers and their cultural context",
+      "Comparing fictional vs. documentary approaches to historical events"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Z",
+          "year": 1969,
+          "slug": "Political thriller about the assassination of a Greek politician",
+          "poster": "https://image.tmdb.org/t/p/w500/dFAJyFNgvOv24f2RQyI9KDxjGr3.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 2721,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dFAJyFNgvOv24f2RQyI9KDxjGr3.jpg"
+        },
+        {
+          "title": "The Day of the Jackal",
+          "year": 1973,
+          "slug": "Meticulous thriller about a plot to assassinate Charles de Gaulle",
+          "poster": "https://image.tmdb.org/t/p/w500/vThgcb3JOj99yETg8WChuci4LV2.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 4909,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vThgcb3JOj99yETg8WChuci4LV2.jpg"
+        },
+        {
+          "title": "Winter Kills",
+          "year": 1979,
+          "slug": "Surreal thriller about investigating a president's assassination",
+          "poster": "https://image.tmdb.org/t/p/w500/qDGAY2FCuRX82VOfi0Lr47SCnTl.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 42178,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qDGAY2FCuRX82VOfi0Lr47SCnTl.jpg"
+        },
+        {
+          "title": "Blow Out",
+          "year": 1981,
+          "slug": "Sound technician accidentally records evidence of a political assassination",
+          "poster": "https://image.tmdb.org/t/p/w500/weMW1wLzeagP3tw6BfmYf1iL7dz.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 11644,
+          "poster_url": "https://image.tmdb.org/t/p/w500/weMW1wLzeagP3tw6BfmYf1iL7dz.jpg"
+        },
+        {
+          "title": "Missing",
+          "year": 1982,
+          "slug": "True story of an American journalist who disappeared in Chile",
+          "poster": "https://image.tmdb.org/t/p/w500/fAAhC4RkpXu7SJgIESWQwVxcelo.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 15600,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fAAhC4RkpXu7SJgIESWQwVxcelo.jpg"
+        },
+        {
+          "title": "Salvador",
+          "year": 1986,
+          "slug": "Journalist uncovers government conspiracies in El Salvador",
+          "poster": "https://image.tmdb.org/t/p/w500/c5JgUmzN7syTFy9suwoHF3vhNsN.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 6106,
+          "poster_url": "https://image.tmdb.org/t/p/w500/c5JgUmzN7syTFy9suwoHF3vhNsN.jpg"
+        },
+        {
+          "title": "Nixon",
+          "year": 1995,
+          "slug": "Oliver Stone's dark portrait of the controversial president",
+          "poster": "https://image.tmdb.org/t/p/w500/8O2sBYJq0K0EMpw67cU1PjVJ7w3.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 10858,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8O2sBYJq0K0EMpw67cU1PjVJ7w3.jpg"
+        },
+        {
+          "title": "The Good Shepherd",
+          "year": 2006,
+          "slug": "Origins of the CIA through the eyes of one operative",
+          "poster": "https://image.tmdb.org/t/p/w500/qWmF0rQRPeIVQRfwQN3C9VFKsBh.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1247,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qWmF0rQRPeIVQRfwQN3C9VFKsBh.jpg"
+        },
+        {
+          "title": "Fair Game",
+          "year": 2010,
+          "slug": "True story of exposed CIA agent Valerie Plame",
+          "poster": "https://image.tmdb.org/t/p/w500/tX2cafjaDnEOi50xnUIloAc2fp2.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 38363,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tX2cafjaDnEOi50xnUIloAc2fp2.jpg"
+        },
+        {
+          "title": "The Report",
+          "year": 2019,
+          "slug": "Investigation into CIA torture programs post-9/11",
+          "poster": "https://image.tmdb.org/t/p/w500/sG5NI6TMNR9ftOdTIXmG0hrBYSY.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 524348,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sG5NI6TMNR9ftOdTIXmG0hrBYSY.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

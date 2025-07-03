@@ -1,0 +1,186 @@
+{
+  "props": {
+    "title": "Intermezzo",
+    "year": 1936,
+    "initialSlug": "A forbidden love affair",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/u7cZVQT2yDYpuuB5U4A64KkuRwo.jpg",
+    "initialStreaming": null,
+    "tmdbId": 125891,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Intermezzo** (1936), the Swedish romantic drama directed by Gustaf Molander, launched Ingrid Bergman to international stardom and prompted Hollywood to remake it in 1939 with Bergman reprising her role. The film masterfully explores forbidden love between a married violinist and his daughter's piano teacher, setting the template for countless classical music-themed romances. Its influence echoes through later works like **The Piano Teacher** (2001) and **The Piano** (1993), though with notably darker tones in those modern interpretations."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Intermezzo: A Love Story",
+            "year": 1939,
+            "slug": "The Hollywood remake starring Leslie Howard and Ingrid Bergman, following nearly identical plot beats but with increased production value",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 31868
+          },
+          {
+            "title": "Brief Encounter",
+            "year": 1945,
+            "slug": "David Lean's masterful exploration of forbidden love between married strangers, sharing Intermezzo's emotional restraint",
+            "poster": "https://image.tmdb.org/t/p/w500/jC9EwLJcGhYMSQAHu2LxkKN5v7O.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 851,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jC9EwLJcGhYMSQAHu2LxkKN5v7O.jpg"
+          },
+          {
+            "title": "Song of Summer",
+            "year": 1968,
+            "slug": "Ken Russell's BBC film about composer Frederick Delius and his relationship with his protégé Eric Fenby",
+            "poster": "https://image.tmdb.org/t/p/w500/m0ABbLnCoVl7HQFHS3KWL1nqqcR.jpg",
+            "initialStreaming": "BritBox",
+            "tmdb_id": 145231,
+            "poster_url": "https://image.tmdb.org/t/p/w500/m0ABbLnCoVl7HQFHS3KWL1nqqcR.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The original **Intermezzo** (1936) established several crucial elements that would become hallmarks of classical music dramas: the integration of performance scenes as character development, the use of music as both backdrop and narrative device, and the portrayal of artists torn between personal passion and professional dedication. These themes resurface powerfully in films like <a href=\"/movie/279\" class=\"movie-title\">Amadeus</a> (1984) and <a href=\"/movie/41804\" class=\"movie-title\">Tous les Matins du Monde</a> (1991), though with notably different approaches to the artistic temperament."
+      },
+      {
+        "type": "text",
+        "content": "Molander's direction in **Intermezzo** (1936) demonstrates remarkable restraint in handling potentially melodramatic material, creating a template for sophisticated adult romance that influenced films like <a href=\"/movie/851\" class=\"movie-title\">Brief Encounter</a> (1945) and later **The French Lieutenant's Woman** (1981). The film's approach to depicting musical performance - focusing on the emotional rather than technical aspects - would influence countless later films, from **Shine** (1996) to **The Piano Teacher** (2001). SUBHEAD: Musical Performance in Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Amadeus",
+            "year": 1984,
+            "slug": "Milos Forman's Oscar-winning Mozart biography exploring genius, jealousy, and artistic obsession",
+            "poster": "https://image.tmdb.org/t/p/w500/1n5VUlCqgmVax1adxGZm8oCFaKc.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 279,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1n5VUlCqgmVax1adxGZm8oCFaKc.jpg"
+          },
+          {
+            "title": "Tous les Matins du Monde",
+            "year": 1991,
+            "slug": "Haunting French drama about a 17th-century musician's relationship with his protégé",
+            "poster": "https://image.tmdb.org/t/p/w500/mTXJgweEbR3LVMQPqNLtycxsbOJ.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 41804,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mTXJgweEbR3LVMQPqNLtycxsbOJ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The legacy of **Intermezzo** (1936) is particularly evident in how subsequent films portray classical musicians. Its influence can be traced through **Humoresque** (1946), with Joan Crawford as a patroness of the arts, to more recent works like **Copying Beethoven** (2006) and **A Late Quartet** (2012). The film established the delicate balance between showing enough performance to establish credibility while maintaining dramatic momentum - a challenge that continues to face filmmakers depicting classical musicians."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Classical Music in Cinema: From Intermezzo to Whiplash",
+      "Ingrid Bergman's Swedish Film Career",
+      "The Hollywood Remake Phenomenon of the 1930s and 1940s",
+      "Gustaf Molander's Influence on Swedish Cinema",
+      "Musical Performance as Character Development in Film"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Humoresque",
+          "year": 1946,
+          "slug": "Joan Crawford stars in this tale of a violinist torn between love and music",
+          "poster": "https://image.tmdb.org/t/p/w500/tJCIfxap0C7maxpjKtzNrj29dHW.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 26701,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tJCIfxap0C7maxpjKtzNrj29dHW.jpg"
+        },
+        {
+          "title": "Song to Remember",
+          "year": 1945,
+          "slug": "Biographical drama about Chopin's life and loves",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 119764
+        },
+        {
+          "title": "Rhapsody",
+          "year": 1954,
+          "slug": "Elizabeth Taylor stars as a woman torn between two musicians",
+          "poster": "https://image.tmdb.org/t/p/w500/hlCoTzHXiv9zPjux1z6DvLe6ZgH.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 109898,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hlCoTzHXiv9zPjux1z6DvLe6ZgH.jpg"
+        },
+        {
+          "title": "The Competition",
+          "year": 1980,
+          "slug": "Romance between two classical pianists during a competition",
+          "poster": "https://image.tmdb.org/t/p/w500/14iMtdJY3HjwrmqPUZ55F4LzuCd.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 42158,
+          "poster_url": "https://image.tmdb.org/t/p/w500/14iMtdJY3HjwrmqPUZ55F4LzuCd.jpg"
+        },
+        {
+          "title": "Impromptu",
+          "year": 1991,
+          "slug": "Period romance about George Sand and Chopin",
+          "poster": "https://image.tmdb.org/t/p/w500/np3Ogsy0JMsQ7HaLI2fHvA76e8A.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 17990,
+          "poster_url": "https://image.tmdb.org/t/p/w500/np3Ogsy0JMsQ7HaLI2fHvA76e8A.jpg"
+        },
+        {
+          "title": "32 Short Films About Glenn Gould",
+          "year": 1993,
+          "slug": "Experimental biopic about the eccentric pianist",
+          "poster": "https://image.tmdb.org/t/p/w500/gIvypJ6N8aUN9DoeRY1siPDF9AW.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 20967,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gIvypJ6N8aUN9DoeRY1siPDF9AW.jpg"
+        },
+        {
+          "title": "Hilary and Jackie",
+          "year": 1998,
+          "slug": "Drama about cellist Jacqueline du Pré",
+          "poster": "https://image.tmdb.org/t/p/w500/aE2NJH2sllQTmbpN6laKuM7NXYy.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 46992,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aE2NJH2sllQTmbpN6laKuM7NXYy.jpg"
+        },
+        {
+          "title": "The Red Violin",
+          "year": 1998,
+          "slug": "Epic tale following a mysterious violin through centuries",
+          "poster": "https://image.tmdb.org/t/p/w500/uPjq8PaNDhFQTzOu4Ce91f6BFgZ.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 14283,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uPjq8PaNDhFQTzOu4Ce91f6BFgZ.jpg"
+        },
+        {
+          "title": "The Pianist",
+          "year": 2002,
+          "slug": "Adrien Brody as a Jewish musician surviving WWII",
+          "poster": "https://image.tmdb.org/t/p/w500/2hFvxCCWrTmCYwfy7yum0GKRi3Y.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 423,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2hFvxCCWrTmCYwfy7yum0GKRi3Y.jpg"
+        },
+        {
+          "title": "Coco Chanel & Igor Stravinsky",
+          "year": 2009,
+          "slug": "Romance between the designer and composer",
+          "poster": "https://image.tmdb.org/t/p/w500/gfnBY4gMErWej5afiID9ksTcJPf.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 38984,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gfnBY4gMErWej5afiID9ksTcJPf.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

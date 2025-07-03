@@ -1,0 +1,183 @@
+{
+  "props": {
+    "title": "The Day the World Ended",
+    "year": 2001,
+    "initialSlug": "When the world falls, they rise.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/4PFOqLdY6WlDoY38GLHbBN4Hrd8.jpg",
+    "initialStreaming": null,
+    "tmdbId": 49804,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "This made-for-TV sci-fi horror film directed by Terence Gross shouldn't be confused with Roger Corman's 1955 atomic apocalypse classic **The Day the World Ended** (1955). The 2001 version follows a school psychologist (Nastassja Kinski) who arrives in a small town where children are experiencing disturbing visions and displaying unusual behavior. It shares thematic DNA with other early-2000s supernatural horror films like <a href=\"/movie/565\" class=\"movie-title\">The Ring</a> (2002) and <a href=\"/movie/1933\" class=\"movie-title\">The Others</a> (2001), tapping into millennial anxieties about children and technology."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Day the World Ended",
+            "year": 2001,
+            "slug": "A school psychologist investigates supernatural occurrences affecting children in a small town",
+            "poster": "https://image.tmdb.org/t/p/w500/4PFOqLdY6WlDoY38GLHbBN4Hrd8.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 49804,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4PFOqLdY6WlDoY38GLHbBN4Hrd8.jpg"
+          },
+          {
+            "title": "The Ring",
+            "year": 2002,
+            "slug": "A journalist investigates a mysterious videotape that kills viewers seven days after watching",
+            "poster": "https://image.tmdb.org/t/p/w500/AeRpUynJKDpJveklBJipOYrVxCS.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 565,
+            "poster_url": "https://image.tmdb.org/t/p/w500/AeRpUynJKDpJveklBJipOYrVxCS.jpg"
+          },
+          {
+            "title": "The Others",
+            "year": 2001,
+            "slug": "A mother and her photosensitive children discover supernatural presences in their isolated mansion",
+            "poster": "https://image.tmdb.org/t/p/w500/p8g1vlTvpM6nr2hMMiZ1fUlKF0D.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 1933,
+            "poster_url": "https://image.tmdb.org/t/p/w500/p8g1vlTvpM6nr2hMMiZ1fUlKF0D.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film represents a particular moment in early 2000s made-for-TV horror, when networks like Syfy (then Sci-Fi Channel) were heavily investing in original genre content. Like **Dagon** (2001) and **Children of the Corn: Revelation** (2001), it aimed to capitalize on the era's appetite for psychological horror with supernatural elements. While the execution may be uneven, Kinski's performance elevates the material above typical TV movie fare."
+      },
+      {
+        "type": "text",
+        "content": "Director Terence Gross brings elements from his arthouse background to create unsettling atmosphere, though budget constraints are evident. The film's themes of childhood trauma and small-town secrets echo similar explorations in <a href=\"/movie/588\" class=\"movie-title\">Silent Hill</a> (2006) and <a href=\"/movie/9009\" class=\"movie-title\">Dark Water</a> (2005), suggesting broader cultural anxieties about protecting children in an increasingly threatening world. SUBHEAD: Made-for-TV Horror Evolution"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Silent Hill",
+            "year": 2006,
+            "slug": "A mother searches for her adopted daughter in a mysterious abandoned town filled with supernatural dangers",
+            "poster": "https://image.tmdb.org/t/p/w500/r0bEDWO2w4a43K2xTNSF284qOsc.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 588,
+            "poster_url": "https://image.tmdb.org/t/p/w500/r0bEDWO2w4a43K2xTNSF284qOsc.jpg"
+          },
+          {
+            "title": "Dark Water",
+            "year": 2005,
+            "slug": "A mother and daughter move into an apartment with mysterious water leaks and supernatural occurrences",
+            "poster": "https://image.tmdb.org/t/p/w500/cm4M9xaBu78IjuAVNG4LCXdXsg.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 9009,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cm4M9xaBu78IjuAVNG4LCXdXsg.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film sits at an interesting crossroads between traditional made-for-TV horror like **Salem's Lot** (1979) and the more ambitious cable productions that would follow, such as **Rose Red** (2002) and **Storm of the Century** (1999). Its blend of psychological and supernatural elements reflects the transition period in horror filmmaking at the turn of the millennium."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Made-for-TV Horror Films: From Dark Shadows to Modern Streaming",
+      "Nastassja Kinski's Genre Work in the 2000s",
+      "Small Town Horror: Analyzing Rural Settings in Supernatural Thrillers",
+      "Children in Horror: Representations and Psychological Impact",
+      "The Sci-Fi Channel's Original Films: Impact on Genre Television"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Salem's Lot",
+          "year": 1979,
+          "slug": "A writer returns to his hometown to find it overrun by vampires",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": null
+        },
+        {
+          "title": "Storm of the Century",
+          "year": 1999,
+          "slug": "A small Maine town faces supernatural terror during a massive winter storm",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": null
+        },
+        {
+          "title": "Rose Red",
+          "year": 2002,
+          "slug": "Paranormal researchers investigate a haunted mansion with a deadly history",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Dagon",
+          "year": 2001,
+          "slug": "A couple becomes stranded in a mysterious fishing village with dark secrets",
+          "poster": "https://image.tmdb.org/t/p/w500/8S648eMKObi8ERFS7cSYDocxSaZ.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 10836,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8S648eMKObi8ERFS7cSYDocxSaZ.jpg"
+        },
+        {
+          "title": "They",
+          "year": 2002,
+          "slug": "A psychology student battles childhood night terrors that may be real",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": null
+        },
+        {
+          "title": "Darkness Falls",
+          "year": 2003,
+          "slug": "A town is terrorized by a vengeful spirit known as the Tooth Fairy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 10727
+        },
+        {
+          "title": "The Mothman Prophecies",
+          "year": 2002,
+          "slug": "A journalist investigates supernatural occurrences in a small town",
+          "poster": "https://image.tmdb.org/t/p/w500/z2PiOTyjbCOnMHY2QJdq3I4jU44.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 2637,
+          "poster_url": "https://image.tmdb.org/t/p/w500/z2PiOTyjbCOnMHY2QJdq3I4jU44.jpg"
+        },
+        {
+          "title": "Frailty",
+          "year": 2001,
+          "slug": "A father believes he's been chosen by God to kill demons disguised as humans",
+          "poster": "https://image.tmdb.org/t/p/w500/jid7dyfHa6ApZSTweC3T3nllWjh.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 12149,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jid7dyfHa6ApZSTweC3T3nllWjh.jpg"
+        },
+        {
+          "title": "Session 9",
+          "year": 2001,
+          "slug": "Asbestos removal workers face supernatural horror in an abandoned asylum",
+          "poster": "https://image.tmdb.org/t/p/w500/A3Au37c3KJX29BDvldzGiYtaU5B.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 10972,
+          "poster_url": "https://image.tmdb.org/t/p/w500/A3Au37c3KJX29BDvldzGiYtaU5B.jpg"
+        },
+        {
+          "title": "May",
+          "year": 2002,
+          "slug": "A lonely young woman's desire for connection leads to horrific consequences",
+          "poster": "https://image.tmdb.org/t/p/w500/oFXhJYTax1cnNtgvLdKlXuYiWPV.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 10894,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oFXhJYTax1cnNtgvLdKlXuYiWPV.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

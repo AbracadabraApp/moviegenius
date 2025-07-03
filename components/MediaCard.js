@@ -118,16 +118,20 @@ export default function MediaCard({
     // Don't navigate if clicking on action buttons or if this is a detail page
     if (e.target.closest('button') || isDetailPage) return;
     
-    // 🔒 PROTECTED: Enhanced data fetching
+    // Navigate to movie page - all movies must have tmdb_id
     if (movieTmdbId) {
       router.push(`/movie/${movieTmdbId}`);
     }
-    // NO fallback navigation - this enforces TMDB-first architecture
   };
 
-  const linkUrl = movieTmdbId 
-    ? `/movie/${movieTmdbId}` 
-    : `/movie/search?q=${encodeURIComponent(title + ' ' + year)}`;
+  // All movies in DB must have tmdb_id - no fallback needed
+  const linkUrl = `/movie/${movieTmdbId}`;
+
+  // All movies must have valid tmdb_id - don't render if missing
+  if (!movieTmdbId || movieTmdbId === null || movieTmdbId === 'MISSING') {
+    console.warn(`MediaCard: Skipping movie "${title}" (${year}) - missing tmdb_id:`, movieTmdbId);
+    return null;
+  }
 
   return (
     <a href={linkUrl} style={{ textDecoration: 'none', color: 'inherit' }}>

@@ -1,0 +1,154 @@
+{
+  "props": {
+    "title": "Colossal Youth",
+    "year": 2006,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/7gXzGezgUDaYsauYGPhM3Dmbt2g.jpg",
+    "initialStreaming": null,
+    "tmdbId": 82404,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Colossal Youth** (2006) stands as Pedro Costa's masterful examination of Lisbon's Fontainhas neighborhood, following Ventura, a Cape Verdean immigrant wandering through demolished spaces like a ghost of Portugal's colonial past. Costa's stark digital cinematography creates tableaux that recall the paintings of Rembrandt, while his long, static takes build a hypnotic rhythm similar to Tsai Ming-liang's **I Don't Want to Sleep Alone** (2006). The film marks a crucial evolution in slow cinema, bridging documentary and fiction in ways that influenced later works like **Cemetery of Splendor** (2015) and **Happy Hour** (2015)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "In Vanda's Room",
+            "year": 2000,
+            "slug": "Costa's preceding film in Fontainhas, focusing on heroin-addicted residents",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "MUBI",
+            "tmdb_id": 87063
+          },
+          {
+            "title": "Horse Money",
+            "year": 2014,
+            "slug": "Costa reunites with Ventura for another ghostly journey through Portugal's past",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 285697
+          },
+          {
+            "title": "Casa de Lava",
+            "year": 1994,
+            "slug": "Costa's Cape Verde-set film that first connected him to the immigrant community",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 126376
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Costa's approach in **Colossal Youth** revolutionized digital filmmaking's possibilities. Using a Panasonic DVX100, he achieved an intimacy with subjects impossible with larger film crews, spending years in Fontainhas developing relationships. This methodology influenced contemporary filmmakers like Roberto Minervini's **What You Gonna Do When the World's on Fire?** (2018) and Wang Bing's **'Til Madness Do Us Part** (2013), who similarly embed themselves in communities for extended periods. SUBHEAD: Visual Language and Political Context"
+      },
+      {
+        "type": "text",
+        "content": "The film's visual style - with its chiaroscuro lighting and carefully composed frames - creates a dialogue with painting history while addressing contemporary displacement. Each shot in **Colossal Youth** functions like a living photograph, recalling James Benning's **13 Lakes** (2004) in its patience and attention to space. Costa's focus on Fontainhas' destruction parallels similar examinations of urban transformation in **Still Life** (2006) by Jia Zhangke and **Demolition** (2012) by J.P. Sniadecki."
+      }
+    ],
+    "exploreFurther": [
+      "Portuguese Cinema's New Wave - examining directors like Pedro Costa, Miguel Gomes, and João Pedro Rodrigues",
+      "Digital Cinema Revolution - how affordable cameras changed independent filmmaking",
+      "Slow Cinema Movement - the development of extended duration and minimal narrative in art film",
+      "Post-Colonial Portuguese Identity in Film",
+      "Architecture and Urban Space in Contemporary Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Ossos",
+          "year": 1997,
+          "slug": "Costa's first film in Fontainhas about poverty and survival",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 55700
+        },
+        {
+          "title": "Where Does Your Hidden Smile Lie?",
+          "year": 2001,
+          "slug": "Costa's documentary about Straub-Huillet",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": 95533
+        },
+        {
+          "title": "Letters from Fontainhas",
+          "year": 2009,
+          "slug": "Criterion's box set collecting Costa's Fontainhas trilogy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Los Angeles Plays Itself",
+          "year": 2003,
+          "slug": "Essay film about architecture and cinema",
+          "poster": "https://image.tmdb.org/t/p/w500/wmzGSQktsLf2JvfkhBaLSdG4G3Z.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 38643,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wmzGSQktsLf2JvfkhBaLSdG4G3Z.jpg"
+        },
+        {
+          "title": "Liverpool",
+          "year": 2008,
+          "slug": "Lisandro Alonso's minimalist journey through Argentina",
+          "poster": "https://image.tmdb.org/t/p/w500/bPBjPxJEMGCFghuVkODNA3J76BX.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": 101006,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bPBjPxJEMGCFghuVkODNA3J76BX.jpg"
+        },
+        {
+          "title": "La Libertad",
+          "year": 2001,
+          "slug": "Another influential slow cinema milestone from Alonso",
+          "poster": "https://image.tmdb.org/t/p/w500/dcLaI0lbNUg10IPd8CZUuAf6sVr.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": 94649,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dcLaI0lbNUg10IPd8CZUuAf6sVr.jpg"
+        },
+        {
+          "title": "Evolution of a Filipino Family",
+          "year": 2004,
+          "slug": "Lav Diaz's epic examination of Filipino history",
+          "poster": "https://image.tmdb.org/t/p/w500/xHxUv7LjuUNWH2elax4wAMSAYUn.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": 163957,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xHxUv7LjuUNWH2elax4wAMSAYUn.jpg"
+        },
+        {
+          "title": "Tie Xi Qu: West of the Tracks",
+          "year": 2002,
+          "slug": "Wang Bing's massive documentary about industrial decline",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": 86282
+        },
+        {
+          "title": "Uncle Boonmee Who Can Recall His Past Lives",
+          "year": 2010,
+          "slug": "Thai slow cinema masterpiece",
+          "poster": "https://image.tmdb.org/t/p/w500/iZinYNVaBLg3pj4e8IXwvfXAtrI.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 38368,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iZinYNVaBLg3pj4e8IXwvfXAtrI.jpg"
+        },
+        {
+          "title": "The Death of Mr. Lazarescu",
+          "year": 2005,
+          "slug": "Romanian New Wave classic about urban alienation",
+          "poster": "https://image.tmdb.org/t/p/w500/c3B7GwMYgNi15VMdcKZawgt6mf5.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": 31032,
+          "poster_url": "https://image.tmdb.org/t/p/w500/c3B7GwMYgNi15VMdcKZawgt6mf5.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

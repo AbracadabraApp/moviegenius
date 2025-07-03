@@ -1,0 +1,187 @@
+{
+  "props": {
+    "title": "Sweet Charity",
+    "year": 1969,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/nwLHC6jCuRt9JaqxHATpTnz1ZJU.jpg",
+    "initialStreaming": null,
+    "tmdbId": 42618,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Bob Fosse's directorial debut **Sweet Charity** (1969) revolutionized the movie musical with its gritty New York setting and darker themes. Starring Shirley MacLaine as Charity Hope Valentine, a dance hall hostess looking for love, the film bridges classic Hollywood musicals and the more cynical 1970s era. Fosse's distinctive choreography - angular, sexually charged, and influenced by vaudeville - would later define works like <a href=\"/movie/10784\" class=\"movie-title\">Cabaret</a> (1972) and <a href=\"/movie/16858\" class=\"movie-title\">All That Jazz</a> (1979). The film's exploration of sex work and urban desperation was groundbreaking for its time, paving the way for grittier musicals."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Cabaret",
+            "year": 1972,
+            "slug": "Fosse's masterpiece starring Liza Minnelli as a Berlin cabaret performer during Nazi Germany's rise",
+            "poster": "https://image.tmdb.org/t/p/w500/fMhOeJ2TvuY46iYGmsowhgRXfnr.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 10784,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fMhOeJ2TvuY46iYGmsowhgRXfnr.jpg"
+          },
+          {
+            "title": "All That Jazz",
+            "year": 1979,
+            "slug": "Semi-autobiographical Fosse film about a self-destructive director/choreographer",
+            "poster": "https://image.tmdb.org/t/p/w500/culCEdj4srLljefgn4XKd6k3C5t.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 16858,
+            "poster_url": "https://image.tmdb.org/t/p/w500/culCEdj4srLljefgn4XKd6k3C5t.jpg"
+          },
+          {
+            "title": "Chicago",
+            "year": 2002,
+            "slug": "Modern adaptation of Fosse's stage musical about murder and celebrity in 1920s Chicago",
+            "poster": "https://image.tmdb.org/t/p/w500/3ED8cWCXY9zkx77Sd0N5qMbsdDP.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 1574,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3ED8cWCXY9zkx77Sd0N5qMbsdDP.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's DNA can be traced through later works examining the dark side of show business and female autonomy. <a href=\"/movie/1574\" class=\"movie-title\">Chicago</a> (2002) directly channels Fosse's style while <a href=\"/movie/824\" class=\"movie-title\">Moulin Rouge!</a> (2001) echoes Sweet Charity's tragic romance and dance hall setting. The protagonist's optimism despite repeated heartbreak influenced characters in **Fame** (1980) and **Flashdance** (1983), though with more empowering endings reflecting changing social attitudes."
+      },
+      {
+        "type": "text",
+        "content": "Sweet Charity's visual style was revolutionary, with Fosse using quick cuts, creative framing, and expressionistic lighting that would influence not just musicals but music videos and modern film choreography. The \"Rich Man's Frug\" sequence particularly showcases his innovative camera work and editing. These techniques appear in everything from **Staying Alive** (1983) to <a href=\"/movie/44214\" class=\"movie-title\">Black Swan</a> (2010). SUBHEAD: The Evolution of Dance in Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Moulin Rouge!",
+            "year": 2001,
+            "slug": "Baz Luhrmann's spectacular musical about love and tragedy at a Parisian cabaret",
+            "poster": "https://image.tmdb.org/t/p/w500/2kjM5CUZRIU5yOANUowrbJcRL9L.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 824,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2kjM5CUZRIU5yOANUowrbJcRL9L.jpg"
+          },
+          {
+            "title": "Black Swan",
+            "year": 2010,
+            "slug": "Psychological thriller about a ballet dancer's descent into madness",
+            "poster": "https://image.tmdb.org/t/p/w500/viWheBd44bouiLCHgNMvahLThqx.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 44214,
+            "poster_url": "https://image.tmdb.org/t/p/w500/viWheBd44bouiLCHgNMvahLThqx.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Sweet Charity marked a crucial shift in how dance was filmed for movies. Unlike the wide, static shots of **Singin' in the Rain** (1952) or **West Side Story** (1961), Fosse used the camera as a dance partner, creating intimate, dynamic sequences. This approach influenced directors like Rob Marshall in **Nine** (2009) and Damien Chazelle in **La La Land** (2016), though none quite matched Fosse's raw energy and innovation."
+      }
+    ],
+    "exploreFurther": [
+      "Bob Fosse's Choreographic Style and Its Influence on Modern Dance",
+      "The Evolution of Movie Musicals from the 1960s to Present",
+      "Representation of Sex Workers in American Cinema",
+      "The Impact of Sweet Charity on Music Video Aesthetics",
+      "New York City as a Character in Movie Musicals"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Funny Girl",
+          "year": 1968,
+          "slug": "Barbra Streisand's breakthrough as comedian Fanny Brice",
+          "poster": "https://image.tmdb.org/t/p/w500/fg7tnjd4dBeIDvEO80CGq958CCt.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 16085,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fg7tnjd4dBeIDvEO80CGq958CCt.jpg"
+        },
+        {
+          "title": "Fame",
+          "year": 1980,
+          "slug": "Young performers chase their dreams at New York's High School of Performing Arts",
+          "poster": "https://image.tmdb.org/t/p/w500/ewuGn4kxsqbYfgSO8Y5kzYlBcKE.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 3537,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ewuGn4kxsqbYfgSO8Y5kzYlBcKE.jpg"
+        },
+        {
+          "title": "A Chorus Line",
+          "year": 1985,
+          "slug": "Behind-the-scenes look at Broadway dancers auditioning for a show",
+          "poster": "https://image.tmdb.org/t/p/w500/3emEMcdrABPkFR66ruYRCrbj7u7.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 1816,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3emEMcdrABPkFR66ruYRCrbj7u7.jpg"
+        },
+        {
+          "title": "Burlesque",
+          "year": 2010,
+          "slug": "Small-town girl finds her place in an LA burlesque club",
+          "poster": "https://image.tmdb.org/t/p/w500/3U9zBIibERQZqYKM3N1a4MYgBsN.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 42297,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3U9zBIibERQZqYKM3N1a4MYgBsN.jpg"
+        },
+        {
+          "title": "42nd Street",
+          "year": 1933,
+          "slug": "Classic backstage musical about Broadway dreams",
+          "poster": "https://image.tmdb.org/t/p/w500/q4UEd8BL74zVsOOaJkKVMLMmdTg.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 3062,
+          "poster_url": "https://image.tmdb.org/t/p/w500/q4UEd8BL74zVsOOaJkKVMLMmdTg.jpg"
+        },
+        {
+          "title": "The Red Shoes",
+          "year": 1948,
+          "slug": "Psychological drama about a ballet dancer torn between love and art",
+          "poster": "https://image.tmdb.org/t/p/w500/tRpm0MNYoMOgyumL9ePI3wB2P9V.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 19542,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tRpm0MNYoMOgyumL9ePI3wB2P9V.jpg"
+        },
+        {
+          "title": "Fosse/Verdon",
+          "year": 2019,
+          "slug": "Miniseries about Bob Fosse and Gwen Verdon's creative partnership",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": null
+        },
+        {
+          "title": "Saturday Night Fever",
+          "year": 1977,
+          "slug": "Brooklyn youth finds purpose through disco dancing",
+          "poster": "https://image.tmdb.org/t/p/w500/ylA7E5Md21aqgzxbwa2dFxX8LKV.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 11009,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ylA7E5Md21aqgzxbwa2dFxX8LKV.jpg"
+        },
+        {
+          "title": "Center Stage",
+          "year": 2000,
+          "slug": "Young ballet dancers compete at an elite academy",
+          "poster": "https://image.tmdb.org/t/p/w500/95Et0t08Nv6S8FD593HpXyvcRt8.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 10560,
+          "poster_url": "https://image.tmdb.org/t/p/w500/95Et0t08Nv6S8FD593HpXyvcRt8.jpg"
+        },
+        {
+          "title": "The Band Wagon",
+          "year": 1953,
+          "slug": "Washed-up Hollywood star attempts Broadway comeback",
+          "poster": "https://image.tmdb.org/t/p/w500/j4bJuDATaM7IQYuXPzx7tWsLvEQ.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 29376,
+          "poster_url": "https://image.tmdb.org/t/p/w500/j4bJuDATaM7IQYuXPzx7tWsLvEQ.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

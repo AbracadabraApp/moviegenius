@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "Invincible",
+    "year": 2001,
+    "initialSlug": "A legend in the making.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/vvNDQO2izNk6ytDxFtTr1BP5CxL.jpg",
+    "initialStreaming": null,
+    "tmdbId": 68569,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Invincible** (2001) stands as one of Werner Herzog's most fascinating later works, dramatizing the true story of Jewish strongman Zishe Breitbart in 1930s Berlin. Herzog's signature blend of reality and mythmaking shines through, similar to his work in **Fitzcarraldo** (1982). The film captures the strange spectacle of a Jewish performer becoming a sensation in pre-Nazi Germany, performing at a palace of occult entertainment run by Erik Jan Hanussen. Like Herzog's **Grizzly Man** (2005), it explores themes of human strength against overwhelming forces, both physical and political."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Invincible",
+            "year": 2001,
+            "slug": "Jewish strongman rises to fame in pre-Nazi Berlin, starring Tim Roth",
+            "poster": "https://image.tmdb.org/t/p/w500/vvNDQO2izNk6ytDxFtTr1BP5CxL.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 68569,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vvNDQO2izNk6ytDxFtTr1BP5CxL.jpg"
+          },
+          {
+            "title": "The Pianist",
+            "year": 2002,
+            "slug": "Powerful Holocaust survival story set in Warsaw Ghetto",
+            "poster": "https://image.tmdb.org/t/p/w500/2hFvxCCWrTmCYwfy7yum0GKRi3Y.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 423,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2hFvxCCWrTmCYwfy7yum0GKRi3Y.jpg"
+          },
+          {
+            "title": "Triumph of the Spirit",
+            "year": 1989,
+            "slug": "True story of boxer who survived Auschwitz by fighting",
+            "poster": "https://image.tmdb.org/t/p/w500/dxaSARmpCiFOCaxwGvjYAXMYPE4.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 56179,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dxaSARmpCiFOCaxwGvjYAXMYPE4.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Tim Roth delivers a mesmerizing performance as Hanussen, the charlatan clairvoyant who exploits Breitbart's raw talent. The film's portrayal of 1930s Berlin nightlife echoes the decadent atmosphere of <a href=\"/movie/10784\" class=\"movie-title\">Cabaret</a> (1972), while its examination of rising antisemitism parallels elements of **The Garden of the Finzi-Continis** (1970). Herzog's direction maintains a dreamlike quality throughout, reminiscent of his earlier masterpiece **Heart of Glass** (1976)."
+      },
+      {
+        "type": "text",
+        "content": "The physical performances of Jouko Ahola as Breitbart bring authenticity to the strongman sequences, drawing from his real-world experience as a strength athlete. This attention to physical authenticity recalls other sports biopics like **Raging Bull** (1980), though Herzog's approach is more mystical than conventional. The film's exploration of Jewish identity under rising Nazism creates tension similar to **Europa Europa** (1990). SUBHEAD: Historical Context and Symbolism"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Cabaret",
+            "year": 1972,
+            "slug": "Musical drama set in 1931 Berlin during Nazi rise",
+            "poster": "https://image.tmdb.org/t/p/w500/fMhOeJ2TvuY46iYGmsowhgRXfnr.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 10784,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fMhOeJ2TvuY46iYGmsowhgRXfnr.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Herzog weaves historical reality with mythological elements, much as he did in **Aguirre, the Wrath of God** (1972). The film's circus-like atmosphere serves as both entertainment and metaphor, with Breitbart's feats of strength representing Jewish resistance against growing oppression. This approach to historical drama shares DNA with **The Tin Drum** (1979), another film that uses surreal elements to address Nazi-era Germany."
+      }
+    ],
+    "exploreFurther": [
+      "Werner Herzog's Approach to Historical Drama",
+      "Jewish Athletes in Pre-War Germany",
+      "The Role of Variety Shows and Circus Acts in Weimar Culture",
+      "Tim Roth's Portrayal of Historical Villains",
+      "Strongman Culture in Early 20th Century Europe"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Schindler's List",
+          "year": 1993,
+          "slug": "Businessman saves Jews during Holocaust",
+          "poster": "https://image.tmdb.org/t/p/w500/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 424,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg"
+        },
+        {
+          "title": "Life is Beautiful",
+          "year": 1997,
+          "slug": "Father shields son from Holocaust horror through games",
+          "poster": "https://image.tmdb.org/t/p/w500/74hLDKjD5aGYOotO6esUVaeISa2.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 637,
+          "poster_url": "https://image.tmdb.org/t/p/w500/74hLDKjD5aGYOotO6esUVaeISa2.jpg"
+        },
+        {
+          "title": "The Wrestler",
+          "year": 2008,
+          "slug": "Aging performer struggles with identity and fame",
+          "poster": "https://image.tmdb.org/t/p/w500/6OTR8dSoNGjWohJNo3UhIGd3Tj.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 12163,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6OTR8dSoNGjWohJNo3UhIGd3Tj.jpg"
+        },
+        {
+          "title": "Night and Fog",
+          "year": 1956,
+          "slug": "Landmark Holocaust documentary",
+          "poster": "https://image.tmdb.org/t/p/w500/2iWYQia8enOai7QEO3TvenleD7r.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 803,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2iWYQia8enOai7QEO3TvenleD7r.jpg"
+        },
+        {
+          "title": "Olympia",
+          "year": 1938,
+          "slug": "Leni Riefenstahl's controversial Olympics documentary",
+          "poster": "https://image.tmdb.org/t/p/w500/ymuqghqZYiCIw7com1uN6sxtoGb.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 685,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ymuqghqZYiCIw7com1uN6sxtoGb.jpg"
+        },
+        {
+          "title": "The Great Dictator",
+          "year": 1940,
+          "slug": "Chaplin's satirical take on Nazi Germany",
+          "poster": "https://image.tmdb.org/t/p/w500/nhMXB8GTdswYMCL9nepDZymJCOr.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 914,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nhMXB8GTdswYMCL9nepDZymJCOr.jpg"
+        },
+        {
+          "title": "Mephisto",
+          "year": 1981,
+          "slug": "Actor rises to fame in Nazi Germany",
+          "poster": "https://image.tmdb.org/t/p/w500/SNJoUTU8PSxQlj3RkrwYGOQPyj.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 11911,
+          "poster_url": "https://image.tmdb.org/t/p/w500/SNJoUTU8PSxQlj3RkrwYGOQPyj.jpg"
+        },
+        {
+          "title": "The Strongman",
+          "year": 1926,
+          "slug": "Silent comedy about circus strongman",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": null
+        },
+        {
+          "title": "Sunshine",
+          "year": 1999,
+          "slug": "Hungarian Jewish family saga across generations",
+          "poster": "https://image.tmdb.org/t/p/w500/qcHDFrjClW35u0dSuLjsQEi8gDk.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 17771,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qcHDFrjClW35u0dSuLjsQEi8gDk.jpg"
+        },
+        {
+          "title": "The Illusionist",
+          "year": 2006,
+          "slug": "Magician in turn-of-century Vienna",
+          "poster": "https://image.tmdb.org/t/p/w500/1O9jUvqkHaGBMVRyOJz1AlkmALW.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1491,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1O9jUvqkHaGBMVRyOJz1AlkmALW.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,186 @@
+{
+  "props": {
+    "title": "Curse of the Werewolf",
+    "year": 1961,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/eKQ6kovQVp2I7g1hJegOo8vRBhu.jpg",
+    "initialStreaming": null,
+    "tmdbId": 28752,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Curse of the Werewolf** (1961) stands as Hammer Horror's only werewolf film, bringing the studio's signature gothic style to lycanthropy. Oliver Reed delivers a haunting performance as Leon, marking his first leading role with an intensity that would define his career. The film boldly deviates from Universal's <a href=\"/movie/13666\" class=\"movie-title\">The Wolf Man</a> (1941) template, setting the story in 18th century Spain and crafting a tragic origin involving imprisonment, rape, and Christmas Day birth - themes far darker than previous werewolf films dared explore. Director Terence Fisher, fresh off **Horror of Dracula** (1958), brings his characteristic attention to period detail and psychological horror."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Wolf Man",
+            "year": 1941,
+            "slug": "Lon Chaney Jr.'s definitive werewolf performance set the template for decades of lycanthropy films",
+            "poster": "https://image.tmdb.org/t/p/w500/vG8fu5syTtQLzK1hQXyi3ugOPNF.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 13666,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vG8fu5syTtQLzK1hQXyi3ugOPNF.jpg"
+          },
+          {
+            "title": "An American Werewolf in London",
+            "year": 1981,
+            "slug": "John Landis combines horror and dark humor with groundbreaking transformation effects",
+            "poster": "https://image.tmdb.org/t/p/w500/hVEqUASJmCQaolkKFEySCHZ8uKG.jpg",
+            "initialStreaming": "AMC+",
+            "tmdb_id": 814,
+            "poster_url": "https://image.tmdb.org/t/p/w500/hVEqUASJmCQaolkKFEySCHZ8uKG.jpg"
+          },
+          {
+            "title": "The Howling",
+            "year": 1981,
+            "slug": "Joe Dante's cult classic features revolutionary werewolf transformations by Rob Bottin",
+            "poster": "https://image.tmdb.org/t/p/w500/nRTonikdpMUYr3y3RXESLBhRUov.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 11298,
+            "poster_url": "https://image.tmdb.org/t/p/w500/nRTonikdpMUYr3y3RXESLBhRUov.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's Spanish setting allows Hammer to explore class warfare themes absent from other werewolf tales. Leon's cursed existence stems directly from aristocratic cruelty, linking supernatural horror to social commentary. This approach influenced later works like **Dog Soldiers** (2002) and **Ginger Snaps** (2000), which similarly use lycanthropy as metaphor for social issues. The film's rich color palette, courtesy of cinematographer Arthur Grant, established a visual template that later Euro-horror directors like Paul Naschy would emulate in films like **La Marca del Hombre Lobo** (1968)."
+      },
+      {
+        "type": "text",
+        "content": "The transformation sequences, while modest by today's standards, were groundbreaking for 1961. Reed's gradual deterioration throughout the film builds tension more effectively than sudden changes, influencing character-driven werewolf films like **Wolf** (1994) and **Silver Bullet** (1985). The makeup design by Roy Ashton strikes a balance between Universal's wolf man and more bestial interpretations that would follow in films like **The Company of Wolves** (1984). SUBHEAD: Religious and Sexual Themes"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Wolfcop",
+            "year": 2014,
+            "slug": "Amusing horror-comedy about an alcoholic cop who becomes a werewolf",
+            "poster": "https://image.tmdb.org/t/p/w500/kOhgErWiWKX2yg4xEXfG2yTFti5.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 262840,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kOhgErWiWKX2yg4xEXfG2yTFti5.jpg"
+          },
+          {
+            "title": "Late Phases",
+            "year": 2014,
+            "slug": "Blind veteran faces werewolf attacks in a retirement community",
+            "poster": "https://image.tmdb.org/t/p/w500/7ulbyPajXTNZkki9AtcLI9YYhc2.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 254193,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7ulbyPajXTNZkki9AtcLI9YYhc2.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Curse of the Werewolf** uniquely ties lycanthropy to Christian mythology, with Leon's Christmas birth marking him as cursed - a dark inversion of divine birth narratives. This religious aspect influenced later films like **The Wolfman** (2010) and **Brotherhood of the Wolf** (2001), which similarly blend supernatural horror with religious imagery. The film's treatment of sexuality was remarkably frank for its era, connecting bestial transformation to sexual awakening decades before **Teen Wolf** (1985) played similar themes for laughs."
+      }
+    ],
+    "exploreFurther": [
+      "Hammer Horror's Spanish Horror Cycle",
+      "Oliver Reed's Early Career and Horror Roles",
+      "Evolution of Werewolf Transformation Effects 1941-1981",
+      "Religious Symbolism in Werewolf Cinema",
+      "Class Warfare Themes in British Horror"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Company of Wolves",
+          "year": 1984,
+          "slug": "Angela Carter's feminist werewolf fairy tale",
+          "poster": "https://image.tmdb.org/t/p/w500/2g2YPws1MiEWTodUE8u3qOf78XS.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 11905,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2g2YPws1MiEWTodUE8u3qOf78XS.jpg"
+        },
+        {
+          "title": "Bad Moon",
+          "year": 1996,
+          "slug": "Underrated 90s werewolf film with practical effects",
+          "poster": "https://image.tmdb.org/t/p/w500/1RobAQaPIYV2PBmkb4XISbsQZPe.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 49763,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1RobAQaPIYV2PBmkb4XISbsQZPe.jpg"
+        },
+        {
+          "title": "Dog Soldiers",
+          "year": 2002,
+          "slug": "British soldiers vs. werewolves in Scotland",
+          "poster": "https://image.tmdb.org/t/p/w500/fYHUYWglzq8Ax0EaDWqg9emjL7T.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 11880,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fYHUYWglzq8Ax0EaDWqg9emjL7T.jpg"
+        },
+        {
+          "title": "Ginger Snaps",
+          "year": 2000,
+          "slug": "Teenage lycanthropy as metaphor for puberty",
+          "poster": "https://image.tmdb.org/t/p/w500/4NmAtQdttqG4d1jyIK3vJvuyMov.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 9871,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4NmAtQdttqG4d1jyIK3vJvuyMov.jpg"
+        },
+        {
+          "title": "The Beast Must Die",
+          "year": 1974,
+          "slug": "Unique werewolf whodunit with viewer challenge",
+          "poster": "https://image.tmdb.org/t/p/w500/gLOb9YExmAOuBjjRaawozJAtU12.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 40218,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gLOb9YExmAOuBjjRaawozJAtU12.jpg"
+        },
+        {
+          "title": "Wolf",
+          "year": 1994,
+          "slug": "Jack Nicholson's sophisticated take on lycanthropy",
+          "poster": "https://image.tmdb.org/t/p/w500/5TprU55U2zjAMCwr2jQra3zj1zu.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 10395,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5TprU55U2zjAMCwr2jQra3zj1zu.jpg"
+        },
+        {
+          "title": "Werewolf of London",
+          "year": 1935,
+          "slug": "First major Hollywood werewolf film",
+          "poster": "https://image.tmdb.org/t/p/w500/78kD3Fpvgd8qubKMbhS5dKofjR8.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 27970,
+          "poster_url": "https://image.tmdb.org/t/p/w500/78kD3Fpvgd8qubKMbhS5dKofjR8.jpg"
+        },
+        {
+          "title": "Silver Bullet",
+          "year": 1985,
+          "slug": "Stephen King adaptation with Corey Haim",
+          "poster": "https://image.tmdb.org/t/p/w500/52CvWYuJyWcMTPvsfcmsxaVHi7f.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 17898,
+          "poster_url": "https://image.tmdb.org/t/p/w500/52CvWYuJyWcMTPvsfcmsxaVHi7f.jpg"
+        },
+        {
+          "title": "The Howling II",
+          "year": 1985,
+          "slug": "Christopher Lee in bizarre werewolf sequel",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 29794
+        },
+        {
+          "title": "Project Metalbeast",
+          "year": 1995,
+          "slug": "Military werewolf experiment gone wrong",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 92698
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

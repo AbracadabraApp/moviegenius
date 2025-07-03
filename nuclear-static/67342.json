@@ -1,0 +1,174 @@
+{
+  "props": {
+    "title": "Mr. Vampire",
+    "year": 1985,
+    "initialSlug": "Undead havoc unleashed!",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/9PxDXGCOsGiuoi0frojdErKflNX.jpg",
+    "initialStreaming": null,
+    "tmdbId": 67342,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Mr. Vampire** (1985) revolutionized Hong Kong horror-comedy by perfectly blending Taoist mythology, kung fu action, and slapstick humor. Director Ricky Lau created a template that spawned countless imitators, with Lam Ching-ying's stern yet charismatic portrayal of the hopping vampire-fighting Taoist priest becoming iconic. The film's unique Chinese vampires (jiangshi) - reanimated corpses that hop with arms outstretched - offered a distinctly Eastern alternative to Western vampire lore, while its mix of genuine scares and physical comedy influenced supernatural action films like **Big Trouble in Little China** (1986) and later Asian horror-comedies."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Mr. Vampire II",
+            "year": 1986,
+            "slug": "Lam Ching-ying returns as a different Taoist priest battling supernatural forces in Republican-era China",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": null
+          },
+          {
+            "title": "Mr. Vampire III",
+            "year": 1987,
+            "slug": "The series continues with new characters but maintains the winning blend of horror and kung fu comedy",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Streaming not available",
+            "tmdb_id": 67344
+          },
+          {
+            "title": "Encounters of the Spooky Kind",
+            "year": 1980,
+            "slug": "Sammo Hung's influential horror-comedy that helped establish the jiangshi genre",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 15724
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The success of **Mr. Vampire** (1985) kicked off Hong Kong's golden age of supernatural kung fu films in the 1980s. <a href=\"/movie/30421\" class=\"movie-title\">A Chinese Ghost Story</a> (1987) took the formula to new heights with lavish production values and romance, while <a href=\"/movie/15724\" class=\"movie-title\">Encounters of the Spooky Kind</a> (1980) had earlier laid crucial groundwork for the genre. These films distinguished themselves from Western horror through their unique mix of traditional Chinese folklore, martial arts action, and comedy that could shift from broad slapstick to genuine tension within the same scene."
+      },
+      {
+        "type": "text",
+        "content": "The influence of these Hong Kong horror-comedies extended well beyond Asia. **Army of Darkness** (1992) echoed their blend of horror and physical comedy, while more recent films like **Constantine** (2005) and **The Mummy** (1999) drew from their template of mixing supernatural action with humor. Even Netflix's **Wu Assassins** (2019) shows traces of the genre's DNA in its combination of mysticism and martial arts. SUBHEAD: Cultural Impact and Legacy"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "A Chinese Ghost Story",
+            "year": 1987,
+            "slug": "A romantic supernatural fantasy that blends horror, comedy and wire-fu spectacle",
+            "poster": "https://image.tmdb.org/t/p/w500/pGQy2KB3I0DouwnKNjChyCgULJQ.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 30421,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pGQy2KB3I0DouwnKNjChyCgULJQ.jpg"
+          },
+          {
+            "title": "Spooky Encounters",
+            "year": 1980,
+            "slug": "Another Sammo Hung classic that helped define supernatural kung fu comedy",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 15724
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's portrayal of jiangshi became the definitive version in pop culture, inspiring everything from video games to anime. Lam Ching-ying's character was so influential that he essentially played variations of the same role throughout his career, including in the TV series **Vampire Expert** (1996). The film's practical effects and makeup work, while dated by today's standards, established a distinctive visual language for Chinese vampire films that continues to influence Asian horror, seen in movies like **Rigor Mortis** (2013), which served as both homage and reinvention of the genre."
+      }
+    ],
+    "exploreFurther": [
+      "The History of Jiangshi in Chinese Folklore vs Their Film Depiction",
+      "Lam Ching-ying's Impact on Hong Kong Cinema and the Supernatural Genre",
+      "Practical Effects and Makeup Techniques in 1980s Hong Kong Horror",
+      "The Evolution of Horror-Comedy in Asian Cinema",
+      "Cultural Exchange Between Eastern and Western Vampire Movies"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Rigor Mortis",
+          "year": 2013,
+          "slug": "Modern homage to Mr. Vampire with a darker tone",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 210911
+        },
+        {
+          "title": "Magic Cop",
+          "year": 1990,
+          "slug": "Supernatural police thriller with horror-comedy elements",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 67346
+        },
+        {
+          "title": "The Dead and the Deadly",
+          "year": 1982,
+          "slug": "Early Sammo Hung supernatural comedy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 67347
+        },
+        {
+          "title": "A Chinese Ghost Story II",
+          "year": 1990,
+          "slug": "Successful sequel to the supernatural romance",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 9050
+        },
+        {
+          "title": "Vampire vs Vampire",
+          "year": 1989,
+          "slug": "Lam Ching-ying faces off against a Western vampire",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Streaming not available",
+          "tmdb_id": 67350
+        },
+        {
+          "title": "New Mr. Vampire",
+          "year": 1987,
+          "slug": "Spinoff featuring different characters but similar themes",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": null
+        },
+        {
+          "title": "Ghost Warriors",
+          "year": 1991,
+          "slug": "Late entry in the jiangshi boom",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Streaming not available",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Era of Vampires",
+          "year": 2002,
+          "slug": "Modern take on the jiangshi genre",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Vampire Settlement",
+          "year": 1990,
+          "slug": "Urban-set supernatural action comedy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": null
+        },
+        {
+          "title": "Hello Dracula",
+          "year": 1985,
+          "slug": "Family-friendly take on Chinese vampire legends",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Streaming not available",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

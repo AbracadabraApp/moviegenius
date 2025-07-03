@@ -1,0 +1,182 @@
+{
+  "props": {
+    "title": "The Cranes Are Flying",
+    "year": 1957,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/foXYOdXEJ0rvtTDo4LLnsUnvPLB.jpg",
+    "initialStreaming": null,
+    "tmdbId": 38360,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Cranes Are Flying** (1957) revolutionized Soviet cinema with its raw emotional power and groundbreaking camera techniques. Director Mikhail Kalatozov and cinematographer Sergei Urusevsky created dizzying handheld sequences and extreme angles that influenced filmmakers for decades. While earlier Soviet films like **Battleship Potemkin** (1925) focused on collective heroism, Cranes dared to explore individual trauma through Veronika's personal story during WWII. The film won the Palme d'Or at Cannes, marking the only time a Soviet film received this honor."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Ballad of a Soldier",
+            "year": 1959,
+            "slug": "A tender Soviet WWII drama following a young soldier's brief trip home",
+            "poster": "https://image.tmdb.org/t/p/w500/9teeqzdIgPkWsykRapYkqhdefmm.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 46592,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9teeqzdIgPkWsykRapYkqhdefmm.jpg"
+          },
+          {
+            "title": "Ivan's Childhood",
+            "year": 1962,
+            "slug": "Tarkovsky's haunting debut about a boy scout during WWII",
+            "poster": "https://image.tmdb.org/t/p/w500/vmRWSLP1DE9WTta0hfzIafJ0dID.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 31442,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vmRWSLP1DE9WTta0hfzIafJ0dID.jpg"
+          },
+          {
+            "title": "Wings",
+            "year": 1966,
+            "slug": "Revolutionary female-centered Soviet film about a WWII fighter pilot adjusting to peacetime",
+            "poster": "https://image.tmdb.org/t/p/w500/sGWFjV5e86OJWxs8QYbwo9MHtyL.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 50013,
+            "poster_url": "https://image.tmdb.org/t/p/w500/sGWFjV5e86OJWxs8QYbwo9MHtyL.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends far beyond Soviet borders. Its innovative camera movements inspired the French New Wave, particularly visible in **Breathless** (1960) and **Jules and Jim** (1962). The emotional complexity of Tatiana Samoilova's performance as Veronika challenged the socialist realist style, paving the way for more nuanced character studies in Eastern European cinema like **Closely Watched Trains** (1966) and **Loves of a Blonde** (1965)."
+      },
+      {
+        "type": "text",
+        "content": "Kalatozov and Urusevsky's collaboration reached its technical apex with <a href=\"/movie/32015\" class=\"movie-title\">I Am Cuba</a> (1964), pushing their experimental photography even further. Their work influenced contemporary directors like Alfonso Cuarón, whose **Children of Men** (2006) references several of Cranes' signature long takes and dynamic camera movements. The film's anti-war message resonated through later classics like **Come and See** (1985), which similarly focused on individual suffering over military glory. SUBHEAD: Impact on World Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Letter Never Sent",
+            "year": 1959,
+            "slug": "Kalatozov's follow-up about geologists stranded in Siberia",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": null
+          },
+          {
+            "title": "I Am Cuba",
+            "year": 1964,
+            "slug": "Stunning visual poem about pre-revolutionary Cuba",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Milestone Films",
+            "tmdb_id": 32015
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's emotional authenticity broke from both Hollywood and Soviet conventions of depicting WWII. While American films like **The Best Years of Our Lives** (1946) explored post-war readjustment, Cranes showed the immediate psychological impact of war on civilians. This approach influenced later war films like **The Ascent** (1977) and **Au Revoir Les Enfants** (1987), which prioritized personal stories over battle scenes."
+      }
+    ],
+    "exploreFurther": [
+      "Soviet Montage Theory and its evolution in post-war cinema",
+      "The role of women in World War II films across different national cinemas",
+      "Technical innovations in handheld camera work from 1950s to present",
+      "The influence of Soviet cinema on the French New Wave",
+      "Mikhail Kalatozov's visual style and its modern legacy"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Ascent",
+          "year": 1977,
+          "slug": "Haunting Soviet WWII drama about partisans",
+          "poster": "https://image.tmdb.org/t/p/w500/nbGyTnH1TREKgZXLxEJNnDVohYC.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 50183,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nbGyTnH1TREKgZXLxEJNnDVohYC.jpg"
+        },
+        {
+          "title": "Twenty Days Without War",
+          "year": 1976,
+          "slug": "Contemplative Soviet war drama",
+          "poster": "https://image.tmdb.org/t/p/w500/fIIZcKdKkOy8htqAtVLagPORJSv.jpg",
+          "initialStreaming": "Mosfilm",
+          "tmdb_id": 133008,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fIIZcKdKkOy8htqAtVLagPORJSv.jpg"
+        },
+        {
+          "title": "The Fall of Berlin",
+          "year": 1950,
+          "slug": "Stalin-era war epic",
+          "poster": "https://image.tmdb.org/t/p/w500/5OdQHObUSvbJ0pOGPJ34P6F89lU.jpg",
+          "initialStreaming": "Archive.org",
+          "tmdb_id": 106259,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5OdQHObUSvbJ0pOGPJ34P6F89lU.jpg"
+        },
+        {
+          "title": "Two Soldiers",
+          "year": 1943,
+          "slug": "Soviet wartime romance",
+          "poster": "https://image.tmdb.org/t/p/w500/v28KWHLStQ3ncTb5SaRlUVoHgBv.jpg",
+          "initialStreaming": "Mosfilm",
+          "tmdb_id": 201840,
+          "poster_url": "https://image.tmdb.org/t/p/w500/v28KWHLStQ3ncTb5SaRlUVoHgBv.jpg"
+        },
+        {
+          "title": "Clear Skies",
+          "year": 1961,
+          "slug": "Post-war drama about a pilot's return",
+          "poster": "https://image.tmdb.org/t/p/w500/mUY8f3vn2jXb2ItVDAG6PknEaqJ.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 190785,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mUY8f3vn2jXb2ItVDAG6PknEaqJ.jpg"
+        },
+        {
+          "title": "The Story of a Real Man",
+          "year": 1948,
+          "slug": "Soviet war recovery story",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Mosfilm",
+          "tmdb_id": 254332
+        },
+        {
+          "title": "The Last Train",
+          "year": 2003,
+          "slug": "Modern Russian WWII drama",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Film Movement",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Dawns Here Are Quiet",
+          "year": 1972,
+          "slug": "Female anti-aircraft unit during WWII",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Mosfilm",
+          "tmdb_id": 49106
+        },
+        {
+          "title": "Trial on the Road",
+          "year": 1971,
+          "slug": "Complex drama about a Soviet defector",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Living and the Dead",
+          "year": 1964,
+          "slug": "Experimental war narrative",
+          "poster": "https://image.tmdb.org/t/p/w500/gXcGDa72HvsO5jHxGh4BeWLuEpu.jpg",
+          "initialStreaming": "BFI Player",
+          "tmdb_id": 27708,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gXcGDa72HvsO5jHxGh4BeWLuEpu.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

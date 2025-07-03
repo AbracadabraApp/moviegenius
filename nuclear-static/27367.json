@@ -1,0 +1,187 @@
+{
+  "props": {
+    "title": "Mrs. Miniver",
+    "year": 1942,
+    "initialSlug": "British family faces WWII with courage & dignity",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/fjPjx6FTaoTussbqoLj6OYTtUyi.jpg",
+    "initialStreaming": null,
+    "tmdbId": 27367,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Mrs. Miniver** (1942) stands as one of Hollywood's most powerful wartime propaganda films, released when America had just entered WWII. Director William Wyler masterfully crafts an intimate portrait of an upper-middle-class British family facing the German invasion, making the war personal for American audiences. The film's impact was so significant that Joseph Goebbels called it \"a masterpiece of propaganda\" that showed how cinema could effectively mobilize public opinion. Like **Since You Went Away** (1944) and **The Best Years of Our Lives** (1946), it portrays the home front with both sensitivity and patriotic fervor."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Mrs. Miniver",
+            "year": 1942,
+            "slug": "A British family faces the early days of WWII with courage and resilience. Won 6 Academy Awards including Best Picture",
+            "poster": "https://image.tmdb.org/t/p/w500/fjPjx6FTaoTussbqoLj6OYTtUyi.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 27367,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fjPjx6FTaoTussbqoLj6OYTtUyi.jpg"
+          },
+          {
+            "title": "Hope and Glory",
+            "year": 1987,
+            "slug": "Semi-autobiographical tale of childhood during the London Blitz",
+            "poster": "https://image.tmdb.org/t/p/w500/4xE9oW222uiaJwMWqAdGQw4puOX.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 32054,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4xE9oW222uiaJwMWqAdGQw4puOX.jpg"
+          },
+          {
+            "title": "The Way to the Stars",
+            "year": 1945,
+            "slug": "RAF pilots and civilians intersect at an English airbase during WWII",
+            "poster": "https://image.tmdb.org/t/p/w500/bBxYrwRZ5YSqQplA2pF80JbyOFC.jpg",
+            "initialStreaming": "BritBox",
+            "tmdb_id": 44087,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bBxYrwRZ5YSqQplA2pF80JbyOFC.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Greer Garson's Oscar-winning performance as Kay Miniver set the template for depicting civilian courage during wartime. Her character's quiet heroism - from confronting a downed German pilot to maintaining domestic normalcy during air raids - influenced later films like **The Life and Death of Colonel Blimp** (1943) and **Their Finest** (2016). The famous rose competition subplot, seemingly trivial amid war, becomes a powerful symbol of British resilience and civilization's persistence under fire."
+      },
+      {
+        "type": "text",
+        "content": "The film's technical achievements are remarkable given wartime restrictions. The Dunkirk sequence, though modest by today's standards (compare to Christopher Nolan's **Dunkirk** (2017)), creates tremendous tension through suggestion rather than spectacle. The air raid scenes in particular influenced later war films like **The Dam Busters** (1955) and **Battle of Britain** (1969) in their portrayal of civilian courage under bombardment. SUBHEAD: Impact on Wartime Cinema and Beyond"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Gentle Sex",
+            "year": 1943,
+            "slug": "Seven women join the Auxiliary Territorial Service during WWII",
+            "poster": "https://image.tmdb.org/t/p/w500/bz2HMBEcRzb3JPgFqSqDMRP9TFJ.jpg",
+            "initialStreaming": "BritBox",
+            "tmdb_id": 75155,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bz2HMBEcRzb3JPgFqSqDMRP9TFJ.jpg"
+          },
+          {
+            "title": "Went the Day Well?",
+            "year": 1942,
+            "slug": "English villagers defend against disguised German paratroopers",
+            "poster": "https://image.tmdb.org/t/p/w500/6P9SOdqj4fQf3aYatq95f2g3ME6.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 23924,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6P9SOdqj4fQf3aYatq95f2g3ME6.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's profound influence extended well beyond its era. Its portrayal of civilian resilience inspired numerous British home front dramas like **This Happy Breed** (1944) and **Millions Like Us** (1943). The character of Lady Beldon, played by Dame May Whitty, established the archetype of the aristocrat who learns to embrace social change during wartime, echoed in works like **Atonement** (2007) and **Downton Abbey** (2010-2015)."
+      }
+    ],
+    "exploreFurther": [
+      "British Wartime Propaganda Films 1939-1945",
+      "William Wyler's WWII Trilogy (Mrs. Miniver, Memphis Belle, Best Years of Our Lives)",
+      "The Evolution of the Home Front Drama",
+      "Greer Garson's Wartime Performances",
+      "Cinema's Role in Allied Morale During WWII"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Best Years of Our Lives",
+          "year": 1946,
+          "slug": "Soldiers readjust to civilian life after WWII",
+          "poster": "https://image.tmdb.org/t/p/w500/gd5EoAU4MM57sW3vlWxJ0NMM8cV.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 887,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gd5EoAU4MM57sW3vlWxJ0NMM8cV.jpg"
+        },
+        {
+          "title": "In Which We Serve",
+          "year": 1942,
+          "slug": "The story of a British destroyer and her crew",
+          "poster": "https://image.tmdb.org/t/p/w500/i4SkM1rzBROLt9d33u0KGr2SVVm.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 28093,
+          "poster_url": "https://image.tmdb.org/t/p/w500/i4SkM1rzBROLt9d33u0KGr2SVVm.jpg"
+        },
+        {
+          "title": "The Clock",
+          "year": 1945,
+          "slug": "A soldier falls in love during 48-hour leave in wartime NYC",
+          "poster": "https://image.tmdb.org/t/p/w500/wyfIzEASD2M6ECWIunOVsZHjk0s.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 54028,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wyfIzEASD2M6ECWIunOVsZHjk0s.jpg"
+        },
+        {
+          "title": "This Above All",
+          "year": 1942,
+          "slug": "A WWII deserter falls for a patriotic woman",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 110628
+        },
+        {
+          "title": "The White Cliffs of Dover",
+          "year": 1944,
+          "slug": "American bride in England faces two world wars",
+          "poster": "https://image.tmdb.org/t/p/w500/l6g71AmExvAIKOZB3vdEBR5WArm.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 52440,
+          "poster_url": "https://image.tmdb.org/t/p/w500/l6g71AmExvAIKOZB3vdEBR5WArm.jpg"
+        },
+        {
+          "title": "To Be or Not to Be",
+          "year": 1942,
+          "slug": "Polish actors outwit Nazis in occupied Warsaw",
+          "poster": "https://image.tmdb.org/t/p/w500/dDQRpEoyjHT4fzw9cNklIvZuXYg.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 198,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dDQRpEoyjHT4fzw9cNklIvZuXYg.jpg"
+        },
+        {
+          "title": "The Life and Death of Colonel Blimp",
+          "year": 1943,
+          "slug": "Epic story of a British officer's life through three wars",
+          "poster": "https://image.tmdb.org/t/p/w500/kgyd5uyndsXiLYKlVgH0sm7Jfkv.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 25037,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kgyd5uyndsXiLYKlVgH0sm7Jfkv.jpg"
+        },
+        {
+          "title": "A Canterbury Tale",
+          "year": 1944,
+          "slug": "Three modern pilgrims investigate mysteries in wartime Kent",
+          "poster": "https://image.tmdb.org/t/p/w500/mhqTQo0NN7Zm6cIzTapZ568WMpN.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 15696,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mhqTQo0NN7Zm6cIzTapZ568WMpN.jpg"
+        },
+        {
+          "title": "The Way Ahead",
+          "year": 1944,
+          "slug": "Civilians become effective soldiers in the British Army",
+          "poster": "https://image.tmdb.org/t/p/w500/rJP2JsLnlyv4pkT7crrJYz0V4pE.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 28916,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rJP2JsLnlyv4pkT7crrJYz0V4pE.jpg"
+        },
+        {
+          "title": "Waterloo Bridge",
+          "year": 1940,
+          "slug": "Tragic romance between a dancer and soldier",
+          "poster": "https://image.tmdb.org/t/p/w500/2XgYKd5tr5b9W5Yfq80yTZqf3hy.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 43824,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2XgYKd5tr5b9W5Yfq80yTZqf3hy.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}
