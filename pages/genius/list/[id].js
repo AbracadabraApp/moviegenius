@@ -9,7 +9,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import PhoneFrame from '../../../components/PhoneFrame';
-import AskInputBar from '../../../components/AskInputBar';
+import SimpleSearch from '../../../components/SimpleSearch';
 import MediaCard from '../../../components/MediaCard';
 import { underlineProperNames } from '../../../lib/proper-names';
 import loadingMessages from '../../../data/loading-messages.json';
@@ -25,12 +25,20 @@ export default function ListPage() {
   const [loadingIcon, setLoadingIcon] = useState('');
   const [error, setError] = useState(null);
 
-  // Handle ask input - redirect to main ask page
-  const handleAsk = useCallback((query) => {
-    router.push({
-      pathname: '/ask',
-      query: { q: query }
-    });
+  // Handle search results
+  const handleSearchResults = useCallback((results) => {
+    // Auto-navigate to single results
+    if (results.length === 1) {
+      const movie = results[0];
+      if (movie.tmdb_id) {
+        router.push(`/movie/${movie.tmdb_id}`);
+        return;
+      }
+    }
+    // For multiple results, redirect to search page
+    if (results.length > 1) {
+      router.push('/search');
+    }
   }, [router]);
 
   useEffect(() => {
@@ -140,7 +148,7 @@ export default function ListPage() {
       <PhoneFrame active="ask">
         <div style={styles.container}>
           <div style={styles.inputArea}>
-            <AskInputBar onSubmit={handleAsk} />
+            <SimpleSearch onResults={handleSearchResults} />
           </div>
           <div style={styles.conversationArea}>
             <div style={styles.errorContainer}>
@@ -157,7 +165,7 @@ export default function ListPage() {
     <PhoneFrame active="ask">
       <div style={styles.container}>
         <div style={styles.inputArea}>
-          <AskInputBar onSubmit={handleAsk} />
+          <SimpleSearch onResults={handleSearchResults} />
         </div>
         <div style={styles.conversationArea}>
           {listTitle && (

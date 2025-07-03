@@ -47,7 +47,7 @@ export default function GeniusPage() {
     'Revolutionary Movements',
     'The Magic of Moviemaking',
     'Cinema Through the Decades',
-    'Cinema\'s Cultural Impact'
+    'Hollywood Transformed'
   ];
 
   // Sample episodes for learning preferences
@@ -163,7 +163,7 @@ export default function GeniusPage() {
       'Revolutionary Movements': '/avant-garde-film',
       'The Magic of Moviemaking': '/magic-of-moviemaking',
       'Cinema Through the Decades': '/cinema-through-decades',
-      'Cinema\'s Cultural Impact': '/cinema-cultural-impact'
+      'Hollywood Transformed': '/cinema-cultural-impact'
     };
     
     const targetRoute = themeRoutes[theme];
@@ -215,7 +215,7 @@ export default function GeniusPage() {
       'Revolutionary Movements': '/avant-garde-film',
       'The Magic of Moviemaking': '/magic-of-moviemaking',
       'Cinema Through the Decades': '/cinema-through-decades',
-      'Cinema\'s Cultural Impact': '/cinema-cultural-impact'
+      'Hollywood Transformed': '/cinema-cultural-impact'
     };
     router.push(themeRoutes[firstTheme] || '/film-noir');
   };

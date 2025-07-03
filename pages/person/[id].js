@@ -5,7 +5,7 @@ import { createClient } from '@supabase/supabase-js';
 import PhoneFrame from '../../components/PhoneFrame';
 import PersonHeader from '../../components/PersonHeader';
 import MediaCard from '../../components/MediaCard';
-import AskInputBar from '../../components/AskInputBar';
+import SimpleSearch from '../../components/SimpleSearch';
 import BackButton from '../../components/BackButton';
 import { ArrowLeft, Heart, Bookmark } from 'lucide-react';
 import { FavoritesManager } from '../../components/FavoritesManager';
@@ -24,12 +24,20 @@ export default function PersonDetailPage({ name, birthYear, deathYear, initialBi
   const [exploreFurther, setExploreFurther] = useState([]);
   const [moreIdeas, setMoreIdeas] = useState(null);
 
-  // Handle ask input
-  const handleAsk = (query) => {
-    router.push({
-      pathname: '/ask',
-      query: { q: query }
-    });
+  // Handle search results
+  const handleSearchResults = (results) => {
+    // Auto-navigate to single results
+    if (results.length === 1) {
+      const movie = results[0];
+      if (movie.tmdb_id) {
+        router.push(`/movie/${movie.tmdb_id}`);
+        return;
+      }
+    }
+    // For multiple results, redirect to search page
+    if (results.length > 1) {
+      router.push('/search');
+    }
   };
 
   useEffect(() => {
@@ -331,7 +339,7 @@ export default function PersonDetailPage({ name, birthYear, deathYear, initialBi
           <BackButton variant="icon" context="person" position="top-left" />
           
           <div style={styles.inputArea}>
-            <AskInputBar onSubmit={handleAsk} />
+            <SimpleSearch onResults={handleSearchResults} />
           </div>
           <div style={styles.errorContainer}>
             <div style={styles.errorText}>Error: {error}</div>
@@ -348,7 +356,7 @@ export default function PersonDetailPage({ name, birthYear, deathYear, initialBi
         <BackButton variant="icon" context="person" position="top-left" />
         
         <div style={styles.inputArea}>
-          <AskInputBar onSubmit={handleAsk} />
+          <SimpleSearch onResults={handleSearchResults} />
         </div>
         
         {/* Person header using dedicated PersonHeader component */}

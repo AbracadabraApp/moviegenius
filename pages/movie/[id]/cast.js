@@ -5,7 +5,7 @@ import { createClient } from '@supabase/supabase-js';
 import PhoneFrame from '../../../components/PhoneFrame';
 import MovieHeader from '../../../components/MovieHeader';
 import PersonCard from '../../../components/PersonCard';
-import AskInputBar from '../../../components/AskInputBar';
+import SimpleSearch from '../../../components/SimpleSearch';
 import { ArrowLeft } from 'lucide-react';
 
 export default function MovieCastPage({ title, year, initialSlug, initialPoster, initialStreaming, tmdbId, error }) {
@@ -14,12 +14,20 @@ export default function MovieCastPage({ title, year, initialSlug, initialPoster,
   const [isLoadingCredits, setIsLoadingCredits] = useState(true);
   const [credits, setCredits] = useState(null);
 
-  // Handle ask input
-  const handleAsk = (query) => {
-    router.push({
-      pathname: '/ask',
-      query: { q: query }
-    });
+  // Handle search results
+  const handleSearchResults = (results) => {
+    // Auto-navigate to single results
+    if (results.length === 1) {
+      const movie = results[0];
+      if (movie.tmdb_id) {
+        router.push(`/movie/${movie.tmdb_id}`);
+        return;
+      }
+    }
+    // For multiple results, redirect to search page
+    if (results.length > 1) {
+      router.push('/search');
+    }
   };
 
   // Handle back navigation
@@ -70,7 +78,7 @@ export default function MovieCastPage({ title, year, initialSlug, initialPoster,
       <PhoneFrame>
         <div style={styles.container}>
           <div style={styles.inputArea}>
-            <AskInputBar onSubmit={handleAsk} />
+            <SimpleSearch onResults={handleSearchResults} />
           </div>
           <div style={styles.errorContainer}>
             <div style={styles.errorText}>Error: {error}</div>
@@ -84,7 +92,7 @@ export default function MovieCastPage({ title, year, initialSlug, initialPoster,
     <PhoneFrame>
       <div style={styles.container}>
         <div style={styles.inputArea}>
-          <AskInputBar onSubmit={handleAsk} />
+          <SimpleSearch onResults={handleSearchResults} />
         </div>
         
         {/* Back button */}
