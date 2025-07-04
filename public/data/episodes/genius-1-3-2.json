@@ -1,0 +1,223 @@
+{
+  "system": "genius",
+  "themeId": 1,
+  "seriesId": 3,
+  "episodeId": 2,
+  "theme": {
+    "id": 1,
+    "title": "Genres",
+    "description": "Film genres and their evolution",
+    "slug": "genres"
+  },
+  "series": {
+    "id": 3,
+    "title": "Comedy Through the Ages",
+    "description": "Laughter and social commentary"
+  },
+  "episode": {
+    "id": 2,
+    "title": "Screwball Comedy: Battle of the Sexes",
+    "subtitle": "Rapid-fire wit and romance"
+  },
+  "content": {
+    "opener": "The screwball comedy, emerging from the constraints of the Hays Code in the 1930s, transformed sexual tension into verbal sparring matches that defined a uniquely American art form.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "The genre crystallized during the Great Depression, when audiences craved sophisticated escape and studios navigated strict moral guidelines. Howard Hawks' \"Bringing Up Baby\" (1938) exemplifies the core elements: rapid-fire dialogue, physical comedy, and class conflict wrapped in romantic tension. Katharine Hepburn's wealthy socialite and Cary Grant's stuffy paleontologist establish the archetypal pattern of an unconventional woman upending a rigid man's life. The film's precise timing and overlapping dialogue created a template for verbal comedy that influenced generations of filmmakers. Hawks' direction emphasized physical movement and spatial relationships, using deep focus photography to capture both broad slapstick and subtle facial reactions."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Bringing Up Baby",
+            "year": 1938,
+            "slug": "A scatter-brained heiress and strait-laced paleontologist chase a leopard across Connecticut",
+            "streaming": "HBO Max",
+            "tmdb_id": 900,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vTNNOtemaYmtx3k2NpsLMRJKEwZ.jpg"
+          },
+          {
+            "title": "The Awful Truth",
+            "year": 1937,
+            "slug": "A divorcing couple sabotages each other's new relationships while rekindling their own romance",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 14675,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2VtsJoxvjpcMpwh0gweS8IMfHxO.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "The Battle of the Sexes"
+      },
+      {
+        "type": "text",
+        "content": "The screwball formula often inverted traditional gender roles, with women driving the action and men responding to their chaos. Frank Capra's \"It Happened One Night\" (1934) established this dynamic with Claudette Colbert's runaway heiress commanding equal footing with Clark Gable's cynical reporter. The film's success - sweeping the major Academy Awards - legitimized comedy as serious filmmaking. The famous \"Walls of Jericho\" blanket scene demonstrated how filmmakers could suggest sexuality while maintaining Production Code compliance. The film's road trip structure became a template, allowing characters to move through different social classes while maintaining the intimate focus on their developing relationship."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "It Happened One Night",
+            "year": 1934,
+            "slug": "A spoiled heiress and a newspaper reporter fall in love during a cross-country journey",
+            "streaming": "Amazon Prime",
+            "tmdb_id": 3078,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2PNUGWAflH6UUumas0POMmokHlc.jpg"
+          },
+          {
+            "title": "My Man Godfrey",
+            "year": 1936,
+            "slug": "A socialite hires a homeless man as her butler, leading to class commentary and romance",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 13562,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wtfOW7fIxBZWY78rvUoPpWhMSiR.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Preston Sturges elevated the genre's satirical elements while maintaining its romantic foundations. \"The Lady Eve\" (1941) weaponizes Barbara Stanwyck's sexuality against Henry Fonda's naive snake researcher, creating complex power dynamics that subvert audience expectations. Sturges' background as a playwright shows in his intricate dialogue construction, with conversations that layer meaning and innuendo. His camera work often holds on reactions rather than actions, allowing audiences to track the emotional evolution of characters through subtle performance changes."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Lady Eve",
+            "year": 1941,
+            "slug": "A female con artist falls for her mark but must win him back after her deception is revealed",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 3086,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lJYD3CMgKtv12hazSHc7xt3i2uq.jpg"
+          },
+          {
+            "title": "Palm Beach Story",
+            "year": 1942,
+            "slug": "A wife leaves her husband to find a wealthy spouse, leading to madcap adventures",
+            "streaming": "TCM",
+            "tmdb_id": 32255,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vl3MVnrUsCa0wRsFTVU0ohbtWy6.jpg"
+          }
+        ]
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "George Cukor's \"The Philadelphia Story\" (1940) represents the genre's peak of sophistication, using its triangular romance to explore class, privilege, and personal growth. Katharine Hepburn's Tracy Lord embodies the screwball heroine's complexity - intelligent, difficult, and ultimately human. The film's structure allows each character to reveal deeper layers beneath their archetypal surfaces. Cukor's elegant direction emphasizes the architectural grandeur of the setting while maintaining intimate focus on character interactions, creating a perfect balance between social commentary and romantic comedy."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Philadelphia Story",
+            "year": 1940,
+            "slug": "A socialite's wedding plans are complicated by her ex-husband and a charming reporter",
+            "streaming": "HBO Max",
+            "tmdb_id": 981,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dKUubjvxO78XDts6VP1Ggcp4R9O.jpg"
+          },
+          {
+            "title": "Holiday",
+            "year": 1938,
+            "slug": "A free-spirited man struggles between love and conformity in high society",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 16274,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vTswoixIge9o84NLlWGaWl5lrHO.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Technical innovations drove the genre's development. Directors like Mitchell Leisen (\"Midnight,\" 1939) perfected the art of staging complex physical comedy within sophisticated settings. Cinematographers like Joseph Walker, who shot many of Capra's films, developed techniques for capturing both verbal wit and physical comedy in the same frame. The genre demanded precise timing and camera movement to maintain both narrative momentum and visual clarity. These technical achievements influenced filmmaking well beyond comedy, particularly in how dialogue scenes could maintain visual interest through careful blocking and camera placement."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Midnight",
+            "year": 1939,
+            "slug": "A showgirl poses as a Hungarian countess in Paris society",
+            "streaming": "TCM",
+            "tmdb_id": 31993,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tT7nhCDJ3ngJjATlJVehKMijwSG.jpg"
+          },
+          {
+            "title": "Easy Living",
+            "year": 1937,
+            "slug": "A luxury coat falling from a window changes a working girl's life",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 80364,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jAiagfGw23B79vmgHmNTKL7K7IT.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The social impact of screwball comedies extended beyond entertainment. These films presented working women as equals, showed class mobility as possible (if complicated), and suggested that marriage should be based on mutual respect and shared humor rather than social obligation. \"His Girl Friday\" (1940) features Rosalind Russell as a journalist equal to or superior to her male colleagues, while \"Theodora Goes Wild\" (1936) champions female sexual and creative freedom against small-town morality."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "His Girl Friday",
+            "year": 1940,
+            "slug": "A newspaper editor tries to win back his star reporter and ex-wife",
+            "streaming": "Amazon Prime",
+            "tmdb_id": 3085,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lu86Y9zTPH3neCiUzLzHCEFHf7f.jpg"
+          },
+          {
+            "title": "Theodora Goes Wild",
+            "year": 1936,
+            "slug": "A small-town author scandalizes her community with a racy novel",
+            "streaming": "TCM",
+            "tmdb_id": 52429,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rCrLr32lMOeqKHrBuxAPYpDEDJX.jpg"
+          }
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Nothing Sacred",
+          "year": 1937,
+          "slug": "A reporter exploits a woman he believes is dying, leading to romantic complications",
+          "streaming": "TCM",
+          "tmdb_id": 37650,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uqu30x75SjsPNyDN0A5VedoEqyg.jpg"
+        },
+        {
+          "title": "Twentieth Century",
+          "year": 1934,
+          "slug": "A Broadway director tries to win back his former star on a cross-country train journey",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 31835,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lHZcuD5pEoyoNHqeTEUEyDEDVKi.jpg"
+        },
+        {
+          "title": "Ball of Fire",
+          "year": 1941,
+          "slug": "A group of professors writing an encyclopedia encounter a nightclub singer hiding from gangsters",
+          "streaming": "TCM",
+          "tmdb_id": 29884,
+          "poster_url": "https://image.tmdb.org/t/p/w500/t9L16dMTuNq4saLpQswZjkNvaMt.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-17T22:55:22.312Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-17T22:55:22.312Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-1-genres/series-3-comedy-through-the-ages//2-screwball-comedy-battle-of-the-sexes.jpg"
+}

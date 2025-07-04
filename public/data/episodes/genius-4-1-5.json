@@ -1,0 +1,70 @@
+{
+  "system": "genius",
+  "themeId": 4,
+  "seriesId": 1,
+  "episodeId": 5,
+  "theme": {
+    "id": 4,
+    "title": "Filmmaking",
+    "description": "The craft and technology of cinema",
+    "slug": "filmmaking"
+  },
+  "series": {
+    "id": 1,
+    "title": "Technical Evolution",
+    "description": "How cinema technology shapes storytelling"
+  },
+  "episode": {
+    "id": 5,
+    "title": "Digital Revolution Begins",
+    "subtitle": "CGI changes everything"
+  },
+  "content": {
+    "opener": null,
+    "sections": [],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Terminator 2: Judgment Day",
+          "year": 1991,
+          "slug": "First use of morphing CGI effects for major character",
+          "streaming": "Netflix",
+          "tmdb_id": 280,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5M0j0B18abtBI5gi2RhfjjurTqb.jpg"
+        },
+        {
+          "title": "The Matrix",
+          "year": 1999,
+          "slug": "Revolutionary digital effects and virtual world creation",
+          "streaming": "HBO Max",
+          "tmdb_id": 603,
+          "poster_url": "https://image.tmdb.org/t/p/w500/p96dm7sCMn4VYAStA6siNz30G1r.jpg"
+        },
+        {
+          "title": "Gravity",
+          "year": 2013,
+          "slug": "Groundbreaking space environment creation",
+          "streaming": "Amazon Prime",
+          "tmdb_id": 49047,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kZ2nZw8D681aphje8NJi8EfbL1U.jpg"
+        },
+        {
+          "title": "Ready Player One",
+          "year": 2018,
+          "slug": "Advanced virtual world and character creation",
+          "streaming": "HBO Max",
+          "tmdb_id": 333339,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-18T17:09:02.413Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-18T17:09:02.413Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-4-filmmaking/series-1-technical-evolution//5-digital-revolution-begins.jpg"
+}

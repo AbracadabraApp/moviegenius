@@ -1,0 +1,247 @@
+{
+  "system": "genius",
+  "themeId": 5,
+  "seriesId": 1,
+  "episodeId": 2,
+  "theme": {
+    "id": 5,
+    "title": "Topics",
+    "description": "Cultural and historical contexts in cinema",
+    "slug": "topics"
+  },
+  "series": {
+    "id": 1,
+    "title": "Decades",
+    "description": "Cinema through the decades"
+  },
+  "episode": {
+    "id": 2,
+    "title": "1980s: Blockbuster Revolution",
+    "subtitle": "High concept and spectacle"
+  },
+  "content": {
+    "opener": "The 1980s ushered in a transformative era of blockbuster filmmaking that forever changed Hollywood's approach to production, marketing, and storytelling through high-concept premises and groundbreaking special effects.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "The dawn of the 1980s marked a decisive shift in Hollywood's business model, building on the foundation laid by \"Jaws\" (1975) and \"Star Wars\" (1977). Studios increasingly pursued \"high-concept\" films - movies that could be pitched in a single sentence and marketed across multiple platforms. Steven Spielberg's \"Raiders of the Lost Ark\" (1981) exemplified this approach, combining clear-cut heroes, villains, and adventure with cutting-edge effects and merchandising potential. The film's success, along with its sequels, established a template for franchise filmmaking that emphasized spectacle, accessibility, and commercial tie-ins."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Raiders of the Lost Ark",
+            "year": 1981,
+            "slug": "Harrison Ford's iconic archaeologist adventure that defined the modern action-adventure genre",
+            "streaming": "Disney+",
+            "tmdb_id": 85,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg"
+          },
+          {
+            "title": "E.T. the Extra-Terrestrial",
+            "year": 1982,
+            "slug": "Spielberg's heartwarming sci-fi that became the highest-grossing film of the decade",
+            "streaming": "Netflix",
+            "tmdb_id": 601,
+            "poster_url": "https://image.tmdb.org/t/p/w500/an0nD6uq6byfxXCfk6lQBzdL2J1.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "The Rise of Effects-Driven Storytelling"
+      },
+      {
+        "type": "text",
+        "content": "The decade saw unprecedented advances in special effects technology, with Industrial Light & Magic (ILM) leading the charge. Films like \"Tron\" (1982) pioneered computer graphics, while \"The Thing\" (1982) showcased Rob Bottin's groundbreaking practical effects. James Cameron's \"The Terminator\" (1984) demonstrated how high-concept premises could be executed on relatively modest budgets through innovative effects work. These technical achievements weren't merely superficial - they enabled filmmakers to tell more ambitious stories and create entirely new worlds, setting the stage for the CGI revolution to come."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Terminator",
+            "year": 1984,
+            "slug": "Cameron's sci-fi thriller that launched a franchise and pioneered effects techniques",
+            "streaming": "Amazon Prime",
+            "tmdb_id": 218,
+            "poster_url": "https://image.tmdb.org/t/p/w500/hzXSE66v6KthZ8nPoLZmsi2G05j.jpg"
+          },
+          {
+            "title": "Tron",
+            "year": 1982,
+            "slug": "Disney's groundbreaking computer animation showcase",
+            "streaming": "Disney+",
+            "tmdb_id": 97,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zwSFEczP7AzqugAHHIX3zHniT0t.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "The Producer-Driven Era"
+      },
+      {
+        "type": "text",
+        "content": "Don Simpson and Jerry Bruckheimer emerged as the decade's defining producers, perfecting the high-concept formula with films like \"Top Gun\" (1986) and \"Beverly Hills Cop\" (1984). Their approach emphasized sleek visuals, MTV-style editing, and carefully curated soundtracks that could generate additional revenue streams. This producer-driven model influenced marketing strategies, with film trailers becoming increasingly crucial to success. The emphasis on marketable concepts sometimes came at the expense of more complex storytelling, but it created a new template for commercial filmmaking that remains influential."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Top Gun",
+            "year": 1986,
+            "slug": "High-octane military action drama that defined the decade's visual style",
+            "streaming": "Paramount+",
+            "tmdb_id": 744,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg"
+          },
+          {
+            "title": "Beverly Hills Cop",
+            "year": 1984,
+            "slug": "Eddie Murphy's star-making action-comedy that perfected the genre blend",
+            "streaming": "Netflix",
+            "tmdb_id": 90,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eBJEvKkhQ0tUt1dBAcTEYW6kCle.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Family Entertainment Evolution"
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The 1980s saw the emergence of sophisticated family entertainment that appealed across age groups. Films like \"The Princess Bride\" (1987) and \"Back to the Future\" (1985) balanced broad appeal with clever writing and technical innovation. Robert Zemeckis's work particularly exemplified this trend, combining cutting-edge effects with strong storytelling fundamentals. These films established a new standard for family entertainment that didn't talk down to younger viewers while maintaining commercial viability."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Back to the Future",
+            "year": 1985,
+            "slug": "Time-traveling classic that perfectly balanced effects, humor, and heart",
+            "streaming": "Netflix",
+            "tmdb_id": 105,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vN5B5WgYscRGcQpVhHl6p9DDTP0.jpg"
+          },
+          {
+            "title": "The Princess Bride",
+            "year": 1987,
+            "slug": "Beloved fantasy adventure that transcended traditional family film limitations",
+            "streaming": "Disney+",
+            "tmdb_id": 2493,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dvjqlp2sAhUeFjUOfQDgqwpphHj.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Action Evolution"
+      },
+      {
+        "type": "text",
+        "content": "The decade revolutionized action filmmaking through a combination of practical effects, stunt work, and star power. Films like \"Die Hard\" (1988) established new templates for the genre, while \"Aliens\" (1986) demonstrated how action could be successfully merged with other genres. The emergence of action stars like Arnold Schwarzenegger, Sylvester Stallone, and Bruce Willis created distinct subgenres within the action category, each with their own visual and narrative styles."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Die Hard",
+            "year": 1988,
+            "slug": "Revolutionary action thriller that redefined the genre",
+            "streaming": "HBO Max",
+            "tmdb_id": 562,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aJCpHDC6RoGz7d1Fzayl019xnxX.jpg"
+          },
+          {
+            "title": "Aliens",
+            "year": 1986,
+            "slug": "Cameron's action-horror hybrid that expanded the possibilities of both genres",
+            "streaming": "Hulu",
+            "tmdb_id": 679,
+            "poster_url": "https://image.tmdb.org/t/p/w500/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Technical Innovation"
+      },
+      {
+        "type": "text",
+        "content": "The 1980s saw crucial developments in filmmaking technology that would influence decades to come. \"The Abyss\" (1989) pioneered computer-generated imagery techniques that would revolutionize effects work. Meanwhile, advances in Steadicam technology, demonstrated in films like \"The Shining\" (1980), changed how directors approached camera movement. These technical innovations weren't merely about spectacle - they expanded the visual language of cinema and created new possibilities for storytelling."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Abyss",
+            "year": 1989,
+            "slug": "Cameron's underwater sci-fi that pushed effects boundaries",
+            "streaming": "Disney+",
+            "tmdb_id": 2756,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2dCit3XAtv9KWCJvRKdPkJ0FAkH.jpg"
+          },
+          {
+            "title": "Blade Runner",
+            "year": 1982,
+            "slug": "Ridley Scott's neo-noir that set new standards for visual effects and production design",
+            "streaming": "HBO Max",
+            "tmdb_id": 78,
+            "poster_url": "https://image.tmdb.org/t/p/w500/63N9uy8nd9j7Eog2axPQ8lbr3Wj.jpg"
+          }
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Ghostbusters",
+          "year": 1984,
+          "slug": "Effects-driven comedy that perfectly balanced spectacle and humor",
+          "streaming": "Netflix",
+          "tmdb_id": 620,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7E8nLijS9AwwUEPu2oFYOVKhdFA.jpg"
+        },
+        {
+          "title": "Indiana Jones and the Last Crusade",
+          "year": 1989,
+          "slug": "Spielberg's refined take on the adventure genre",
+          "streaming": "Disney+",
+          "tmdb_id": 89,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sizg1AU8f8JDZX4QIgE4pjUMBvx.jpg"
+        },
+        {
+          "title": "RoboCop",
+          "year": 1987,
+          "slug": "Paul Verhoeven's satirical action film that pushed effects boundaries",
+          "streaming": "Amazon Prime",
+          "tmdb_id": 5548,
+          "poster_url": "https://image.tmdb.org/t/p/w500/esmAU0fCO28FbS6bUBKLAzJrohZ.jpg"
+        },
+        {
+          "title": "Who Framed Roger Rabbit",
+          "year": 1988,
+          "slug": "Revolutionary combination of animation and live action",
+          "streaming": "Disney+",
+          "tmdb_id": 856,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lYfRc57Kx9VgLZ48iulu0HKnM15.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-18T17:28:22.595Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-18T17:28:22.595Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-5-topics/series-1-decades//2-1980s-blockbuster-revolution.jpg"
+}

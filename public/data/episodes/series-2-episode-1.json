@@ -1,0 +1,261 @@
+{
+  "seriesId": "2",
+  "episodeId": "1",
+  "series": {
+    "id": 2,
+    "title": "Cinema Through Time - 1970-2025",
+    "description": "How film evolved from the auteur renaissance through the present day"
+  },
+  "episode": {
+    "id": 1,
+    "title": "1970s: The Auteur Renaissance",
+    "subtitle": "When directors became superstars",
+    "posters": [
+      "https://image.tmdb.org/t/p/w200/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+      "https://image.tmdb.org/t/p/w200/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
+      "https://image.tmdb.org/t/p/w200/lxM6kqilAdpdhqUl2biYp5frUxE.jpg",
+      "https://image.tmdb.org/t/p/w200/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg"
+    ]
+  },
+  "content": {
+    "opener": "The 1970s marked the moment when American cinema shed its factory-system constraints and embraced the radical notion that directors could be artists, transforming Hollywood into a playground for visionary filmmakers who dared to make personal statements on a massive scale.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "The decade began with a creative explosion that would redefine American filmmaking forever. Francis Ford Coppola's The Godfather demonstrated that popular entertainment could achieve artistic greatness, while films like The Last Picture Show and McCabe & Mrs. Miller proved that intimate character studies could captivate mainstream audiences. These breakthrough works established the template for director-driven cinema that prioritized personal vision over studio mandates."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Godfather",
+            "year": 1972,
+            "slug": "Coppola's epic family saga redefined cinematic storytelling",
+            "tmdb_id": "238",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "The Last Picture Show",
+            "year": 1971,
+            "slug": "Bogdanovich's nostalgic masterpiece of small-town America",
+            "tmdb_id": "18269",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "McCabe & Mrs. Miller",
+            "year": 1971,
+            "slug": "Altman's anti-Western challenges genre conventions",
+            "tmdb_id": "21542",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Martin Scorsese emerged as the poet of urban alienation with Mean Streets and Taxi Driver, films that captured the psychological landscape of post-Vietnam America. Steven Spielberg revolutionized the thriller with Jaws, creating the template for the modern blockbuster while maintaining artistic integrity. These directors didn't just make movies; they crafted deeply personal statements about American society that resonated with audiences hungry for authentic voices."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Mean Streets",
+            "year": 1973,
+            "slug": "Scorsese's breakthrough explores Catholic guilt and street life",
+            "tmdb_id": "1422",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Taxi Driver",
+            "year": 1976,
+            "slug": "De Niro's Travis Bickle becomes cinema's ultimate antihero",
+            "tmdb_id": "103",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Jaws",
+            "year": 1975,
+            "slug": "Spielberg's shark thriller invents the summer blockbuster",
+            "tmdb_id": "578",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Technical innovations flourished as directors gained unprecedented creative control over their productions. The Conversation showcased sophisticated sound design that made surveillance paranoia tangible, while Apocalypse Now pushed the boundaries of location shooting and practical effects. Cinematographers like Gordon Willis pioneered the 'Prince of Darkness' lighting style that gave films like The Godfather their distinctive visual signature, proving that technical artistry could serve narrative purpose."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Conversation",
+            "year": 1974,
+            "slug": "Coppola's paranoid thriller about privacy and guilt",
+            "tmdb_id": "2062",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Apocalypse Now",
+            "year": 1979,
+            "slug": "Vietnam War epic becomes meditation on darkness",
+            "tmdb_id": "28",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Days of Heaven",
+            "year": 1978,
+            "slug": "Malick's visual poetry captures American pastoral beauty",
+            "tmdb_id": "10098",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The cultural impact of 1970s auteur cinema extended far beyond box office success, reshaping how America saw itself during a tumultuous decade. All the President's Men turned investigative journalism into gripping entertainment, while One Flew Over the Cuckoo's Nest challenged institutional authority with subversive humor. These films spoke directly to a generation questioning traditional power structures, proving that popular cinema could address serious social issues without sacrificing entertainment value."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "All the President's Men",
+            "year": 1976,
+            "slug": "Watergate investigation becomes paranoid thriller",
+            "tmdb_id": "1051",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "One Flew Over the Cuckoo's Nest",
+            "year": 1975,
+            "slug": "Forman's asylum drama questions institutional authority",
+            "tmdb_id": "510",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Annie Hall",
+            "year": 1977,
+            "slug": "Woody Allen revolutionizes romantic comedy structure",
+            "tmdb_id": "1562",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The legacy of 1970s auteur cinema continues to influence modern filmmakers who still strive to balance artistic vision with commercial appeal. Directors like Paul Thomas Anderson, Christopher Nolan, and Quentin Tarantino directly trace their aesthetic and thematic concerns to the bold experimentation of this revolutionary decade. The 70s proved that audiences would embrace challenging, personal filmmaking when it was executed with skill and passion, establishing a template for director-driven cinema that remains the gold standard for ambitious filmmaking today."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Nashville",
+            "year": 1975,
+            "slug": "Altman's ensemble masterpiece dissects American culture",
+            "tmdb_id": "24242",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Chinatown",
+            "year": 1974,
+            "slug": "Polanski's neo-noir exposes corruption beneath the surface",
+            "tmdb_id": "395",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Network",
+            "year": 1976,
+            "slug": "Lumet's media satire predicts television's dark future",
+            "tmdb_id": "879",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More 1970s Auteur Films",
+      "movies": [
+        {
+          "title": "The Deer Hunter",
+          "year": 1978,
+          "slug": "Cimino's Vietnam epic explores war's psychological toll",
+          "tmdb_id": "11778",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Badlands",
+          "year": 1973,
+          "slug": "Malick's debut channels Bonnie and Clyde mythology",
+          "tmdb_id": "1818",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "The Parallax View",
+          "year": 1974,
+          "slug": "Pakula's paranoid thriller about conspiracy and assassination",
+          "tmdb_id": "17944",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Shampoo",
+          "year": 1975,
+          "slug": "Ashby's sexual satire captures 60s cultural shifts",
+          "tmdb_id": "18323",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Three Days of the Condor",
+          "year": 1975,
+          "slug": "Pollack's spy thriller reflects Watergate paranoia",
+          "tmdb_id": "11337",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Kramer vs. Kramer",
+          "year": 1979,
+          "slug": "Benton's divorce drama redefines family relationships",
+          "tmdb_id": "10515",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Manhattan",
+          "year": 1979,
+          "slug": "Allen's black-and-white love letter to New York City",
+          "tmdb_id": "11252",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "The French Connection",
+          "year": 1971,
+          "slug": "Friedkin's gritty cop thriller revolutionizes action cinema",
+          "tmdb_id": "9732",
+          "poster_url": null,
+          "streaming": null
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-10T21:38:00.000Z",
+  "version": "1.0"
+}

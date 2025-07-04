@@ -1,0 +1,62 @@
+{
+  "system": "genius",
+  "themeId": 2,
+  "seriesId": 4,
+  "episodeId": 1,
+  "theme": {
+    "id": 2,
+    "title": "Directors",
+    "description": "Visionary filmmakers and their personal cinema",
+    "slug": "directors"
+  },
+  "series": {
+    "id": 4,
+    "title": "Contemporary Auteurs",
+    "description": "Modern visionary filmmakers"
+  },
+  "episode": {
+    "id": 1,
+    "title": "The Coen Brothers: Genre Pastiche & Visual Wit",
+    "subtitle": "Postmodern storytellers"
+  },
+  "content": {
+    "opener": null,
+    "sections": [],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Raising Arizona",
+          "year": 1987,
+          "slug": "Hyperkinetic comedy about kidnapping",
+          "streaming": "Hulu",
+          "tmdb_id": 378,
+          "poster_url": "https://image.tmdb.org/t/p/w500/m5Zp4K4hKdPhsBl3E0p8I7QomlT.jpg"
+        },
+        {
+          "title": "The Hudsucker Proxy",
+          "year": 1994,
+          "slug": "Screwball comedy homage",
+          "streaming": "HBO Max",
+          "tmdb_id": 11934,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iIOHYWrRyxjUI6ry3fejIUSYfe5.jpg"
+        },
+        {
+          "title": "Intolerable Cruelty",
+          "year": 2003,
+          "slug": "Romantic comedy with noir elements",
+          "streaming": "Prime Video",
+          "tmdb_id": 11775,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7K8hDwOWsZv0MluyrB8nWlhJOgB.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-18T16:59:57.401Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-18T16:59:57.401Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-2-directors/series-4-contemporary-auteurs//1-the-coen-brothers-genre-pastiche-visual-wit.jpg"
+}

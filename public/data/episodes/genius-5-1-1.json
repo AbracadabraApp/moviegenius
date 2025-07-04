@@ -1,0 +1,70 @@
+{
+  "system": "genius",
+  "themeId": 5,
+  "seriesId": 1,
+  "episodeId": 1,
+  "theme": {
+    "id": 5,
+    "title": "Topics",
+    "description": "Cultural and historical contexts in cinema",
+    "slug": "topics"
+  },
+  "series": {
+    "id": 1,
+    "title": "Decades",
+    "description": "Cinema through the decades"
+  },
+  "episode": {
+    "id": 1,
+    "title": "1970s: The Auteur Renaissance",
+    "subtitle": "Directors take control"
+  },
+  "content": {
+    "opener": null,
+    "sections": [],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Five Easy Pieces",
+          "year": 1970,
+          "slug": "Jack Nicholson's defining performance in this character study of alienation",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 26617,
+          "poster_url": "https://image.tmdb.org/t/p/w500/AciLTjLqyHiEA0lq35CV4Atnm4v.jpg"
+        },
+        {
+          "title": "Network",
+          "year": 1976,
+          "slug": "Prescient satire of television and corporate media",
+          "streaming": "HBO Max",
+          "tmdb_id": 10774,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gZ8hhuVEQ78CLND09trZJ45Eiy8.jpg"
+        },
+        {
+          "title": "Dog Day Afternoon",
+          "year": 1975,
+          "slug": "Based on a true story of a bank robbery gone wrong",
+          "streaming": "HBO Max",
+          "tmdb_id": 968,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mavrhr0ig2aCRR8d48yaxtD5aMQ.jpg"
+        },
+        {
+          "title": "The Deer Hunter",
+          "year": 1978,
+          "slug": "Epic examination of the Vietnam War's impact on American life",
+          "streaming": "Netflix",
+          "tmdb_id": 11778,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bbGtogDZOg09bm42KIpCXUXICkh.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-18T17:27:52.006Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-18T17:27:52.006Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-5-topics/series-1-decades//1-1970s-the-auteur-renaissance.jpg"
+}

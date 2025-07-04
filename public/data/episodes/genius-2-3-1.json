@@ -1,0 +1,218 @@
+{
+  "system": "genius",
+  "themeId": 2,
+  "seriesId": 3,
+  "episodeId": 1,
+  "theme": {
+    "id": 2,
+    "title": "Directors",
+    "description": "Visionary filmmakers and their personal cinema",
+    "slug": "directors"
+  },
+  "series": {
+    "id": 3,
+    "title": "Documentary Masters",
+    "description": "Truth and reality in cinema"
+  },
+  "episode": {
+    "id": 1,
+    "title": "Frederick Wiseman: Institutional Observer",
+    "subtitle": "Fly-on-the-wall realism"
+  },
+  "content": {
+    "opener": "Frederick Wiseman revolutionized documentary filmmaking through his unflinching, observational portraits of American institutions, creating a body of work that spans over five decades and fundamentally changed how we understand non-fiction cinema.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "Wiseman's distinctive approach emerged with his controversial debut \"Titicut Follies\" (1967), which exposed the disturbing conditions at Massachusetts' Bridgewater State Hospital for the criminally insane. The film established his signature style: no narration, no interviews, no musical score - just careful observation through extended sequences. This marked a radical departure from the more editorialized documentary approaches of the time. Wiseman's camera acted as a patient witness, allowing scenes to unfold naturally while building a complex portrait through careful editing. The film was banned in Massachusetts until 1991, highlighting both its power and the era's resistance to such raw institutional critique."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Titicut Follies",
+            "year": 1967,
+            "slug": "Groundbreaking exposé of a mental hospital that was banned for 24 years",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 41212,
+            "poster_url": "https://image.tmdb.org/t/p/w500/hAJOSqWB4FeVV7yi0fRSYFoCwvM.jpg"
+          },
+          {
+            "title": "High School",
+            "year": 1968,
+            "slug": "Intimate look at Northeast High School in Philadelphia",
+            "streaming": "Kanopy",
+            "tmdb_id": 60315,
+            "poster_url": "https://image.tmdb.org/t/p/w500/d3R2ELJJJtsdC722O63BVLmcxSe.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "The Development of Direct Cinema"
+      },
+      {
+        "type": "text",
+        "content": "Throughout the 1970s and 1980s, Wiseman refined his observational technique while examining an impressive array of institutions. \"Welfare\" (1975) spent hours in a New York City welfare office, capturing the complex interactions between bureaucrats and citizens seeking assistance. \"Hospital\" (1970) provided an unprecedented look inside Metropolitan Hospital in New York, while \"Basic Training\" (1971) documented Army recruit training at Fort Knox. Each film demonstrated Wiseman's remarkable ability to gain institutional access and his patient approach to filming, often spending weeks or months on location before beginning to shoot."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Welfare",
+            "year": 1975,
+            "slug": "Three hours inside a NYC welfare office",
+            "streaming": "Kanopy",
+            "tmdb_id": 90511,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1eFgNI93rRSOFZZ9cajF3tMmGPc.jpg"
+          },
+          {
+            "title": "Hospital",
+            "year": 1970,
+            "slug": "Day-to-day operations of Metropolitan Hospital",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 114390,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9zJVyNQCmJIly2Pet1XOQMpGNzN.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Technique and Methodology"
+      },
+      {
+        "type": "text",
+        "content": "Wiseman's technical approach remained consistently minimalist while evolving in subtle ways. He typically worked with a small crew - just himself and one cinematographer - allowing for intimate access and minimal disruption. His editing process, however, was extensive and meticulous. From hundreds of hours of footage, Wiseman would craft films that found their structure through the accumulation of carefully selected moments. \"Near Death\" (1989), filmed over several months in Boston's Beth Israel Hospital, exemplifies this approach. The resulting six-hour film creates an unprecedented meditation on end-of-life care through patient observation rather than artificial dramatic structures."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Near Death",
+            "year": 1989,
+            "slug": "Six-hour examination of intensive care unit",
+            "streaming": "Kanopy",
+            "tmdb_id": 93540,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cB9opY30Wx9hiTptPPqrlhIva7F.jpg"
+          },
+          {
+            "title": "Central Park",
+            "year": 1989,
+            "slug": "Portrait of New York's famous park and its many uses",
+            "streaming": "Criterion Channel",
+            "tmdb_id": null,
+            "poster_url": null
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Cultural Institutions and the Arts"
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "By the 1990s, Wiseman began expanding his scope to include cultural institutions. \"La Danse\" (2009) spent months inside the Paris Opera Ballet, while \"National Gallery\" (2014) explored London's famous museum. These films demonstrated how his observational style could reveal the inner workings of artistic institutions with the same effectiveness he brought to social services. \"Ex Libris: The New York Public Library\" (2017) showed his continued ability to find fresh perspectives on public institutions, examining how libraries adapt to changing social needs while maintaining their core mission."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "La Danse",
+            "year": 2009,
+            "slug": "Behind the scenes at the Paris Opera Ballet",
+            "streaming": "PBS Passport",
+            "tmdb_id": 67381,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8pWXPtsS6IpWOVECNn9mxI0B1ig.jpg"
+          },
+          {
+            "title": "National Gallery",
+            "year": 2014,
+            "slug": "Three-hour journey through London's famous museum",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 266080,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7j8tD2Gt72aSPxekNcd8tS6Q2M5.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Later Works and Legacy"
+      },
+      {
+        "type": "text",
+        "content": "In his later career, Wiseman has continued to produce work with remarkable consistency and depth. \"City Hall\" (2020), running at four and a half hours, provides a comprehensive look at Boston's municipal government under Mayor Marty Walsh. The film demonstrates how Wiseman's patient, observational style can reveal the complex workings of democracy itself. His influence can be seen in countless contemporary documentarians who have adopted aspects of his observational approach, though few match his commitment to length and detail. At age 91, with \"Un Couple\" (2022), Wiseman even ventured into hybrid documentary-fiction territory, showing his continued willingness to evolve."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "City Hall",
+            "year": 2020,
+            "slug": "Epic examination of Boston's municipal government",
+            "streaming": "PBS Passport",
+            "tmdb_id": 726041,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2tVjql9HmDw7ZP1nIqfT7RpoT3E.jpg"
+          },
+          {
+            "title": "Un Couple",
+            "year": 2022,
+            "slug": "Hybrid work focusing on Sophia Tolstoy's writings",
+            "streaming": "Mubi",
+            "tmdb_id": 1004657,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iMmRJ3pwrKuH5vBhcdDplzivmIU.jpg"
+          }
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Law and Order",
+          "year": 1969,
+          "slug": "Inside the Kansas City Police Department",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 114116,
+          "poster_url": "https://image.tmdb.org/t/p/w500/t0l8Yyb5H2U3NCeoCjnpVCX8dEd.jpg"
+        },
+        {
+          "title": "Ballet",
+          "year": 1995,
+          "slug": "Behind the scenes at American Ballet Theatre",
+          "streaming": "Kanopy",
+          "tmdb_id": 290168,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mTLkDBm0auJMIxcTxgoe5EgLLeM.jpg"
+        },
+        {
+          "title": "In Jackson Heights",
+          "year": 2015,
+          "slug": "Portrait of diverse Queens neighborhood",
+          "streaming": "PBS Passport",
+          "tmdb_id": 355230,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3nLClMlhH75lU9Ey3k18H0suNFr.jpg"
+        },
+        {
+          "title": "Domestic Violence",
+          "year": 2001,
+          "slug": "Examination of domestic abuse in Tampa",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 114427,
+          "poster_url": "https://image.tmdb.org/t/p/w500/u1WrYDesAQhDP3Rp0IOuTSY6c1v.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-17T23:03:15.796Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-17T23:03:15.796Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-2-directors/series-3-documentary-masters//1-frederick-wiseman-institutional-observer.jpg"
+}
