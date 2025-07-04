@@ -1,0 +1,62 @@
+{
+  "system": "genius",
+  "themeId": 1,
+  "seriesId": 1,
+  "episodeId": 2,
+  "theme": {
+    "id": 1,
+    "title": "Genres",
+    "description": "Film genres and their evolution",
+    "slug": "genres"
+  },
+  "series": {
+    "id": 1,
+    "title": "Classic Film Noir",
+    "description": "The birth and golden age of film noir"
+  },
+  "episode": {
+    "id": 2,
+    "title": "From Novels to Noir",
+    "subtitle": "Detective fiction meets cinema"
+  },
+  "content": {
+    "opener": null,
+    "sections": [],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Devil in a Blue Dress",
+          "year": 1995,
+          "slug": "Denzel Washington stars in adaptation of Walter Mosley's Easy Rawlins novel",
+          "streaming": "Amazon Prime",
+          "tmdb_id": 8512,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5lcJhwKGavLbPva17QkTBhLfqEk.jpg"
+        },
+        {
+          "title": "The Long Goodbye",
+          "year": 1973,
+          "slug": "Robert Altman's revisionist take on Chandler's novel starring Elliott Gould",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 1847,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oBhUK54yBJ0aH6u9zCzSV5iV7OP.jpg"
+        },
+        {
+          "title": "Brick",
+          "year": 2005,
+          "slug": "Modern noir set in high school, starring Joseph Gordon-Levitt",
+          "streaming": "Paramount+",
+          "tmdb_id": 9270,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5WVk8JpNIxepn4fpZzQeCumkOL5.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-17T22:04:29.852Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-17T22:04:29.852Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-1-genres/series-1-classic-film-noir//2-from-novels-to-noir.jpg"
+}

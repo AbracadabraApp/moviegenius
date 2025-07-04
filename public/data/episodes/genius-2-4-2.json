@@ -1,0 +1,218 @@
+{
+  "system": "genius",
+  "themeId": 2,
+  "seriesId": 4,
+  "episodeId": 2,
+  "theme": {
+    "id": 2,
+    "title": "Directors",
+    "description": "Visionary filmmakers and their personal cinema",
+    "slug": "directors"
+  },
+  "series": {
+    "id": 4,
+    "title": "Contemporary Auteurs",
+    "description": "Modern visionary filmmakers"
+  },
+  "episode": {
+    "id": 2,
+    "title": "Christopher Nolan: Time, Memory & IMAX Spectacle",
+    "subtitle": "Puzzle box narratives"
+  },
+  "content": {
+    "opener": "Christopher Nolan has revolutionized contemporary cinema by combining intricate puzzle-box narratives with IMAX spectacle, creating a unique auteur style that challenges both audience perception and the boundaries of theatrical exhibition.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "Nolan's breakthrough film \"Memento\" (2000) established his fascination with non-linear storytelling and the malleability of memory. Shot by cinematographer Wally Pfister, the film's revolutionary structure - alternating between color sequences moving backward and black-and-white scenes moving forward - creates a disorienting experience that mirrors protagonist Leonard Shelby's anterograde amnesia. This technical innovation wasn't merely stylistic; it forced viewers to actively participate in constructing the narrative, establishing Nolan's trademark of intellectual engagement with audience perception."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Memento",
+            "year": 2000,
+            "slug": "A man with memory loss hunts his wife's killer through an innovative reverse chronology",
+            "streaming": "Amazon Prime",
+            "tmdb_id": 77,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fKTPH2WvH8nHTXeBYBVhawtRqtR.jpg"
+          },
+          {
+            "title": "Following",
+            "year": 1998,
+            "slug": "Nolan's micro-budget debut about a writer following strangers reveals early signs of his narrative complexity",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 11660,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3bX6VVSMf0dvzk5pMT4ALG5A92d.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "IMAX Innovation and Visual Language"
+      },
+      {
+        "type": "text",
+        "content": "With \"The Dark Knight\" (2008), Nolan pioneered the use of IMAX cameras in narrative feature films, shooting over 40 minutes of footage in the format. This technical choice wasn't merely about spectacle - it represented Nolan's commitment to practical effects and photochemical film over digital alternatives. Working again with cinematographer Wally Pfister, Nolan used the massive frame size and clarity of IMAX to create a sense of heightened reality, particularly in sequences like the opening bank heist and the Hong Kong extraction. This innovation would influence countless blockbusters and establish a new standard for theatrical presentation."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Dark Knight",
+            "year": 2008,
+            "slug": "Revolutionary superhero film featuring extensive IMAX footage and Heath Ledger's iconic Joker",
+            "streaming": "HBO Max",
+            "tmdb_id": 155,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+          },
+          {
+            "title": "Dunkirk",
+            "year": 2017,
+            "slug": "World War II survival story told through three interlocking timeframes using 70% IMAX footage",
+            "streaming": "Netflix",
+            "tmdb_id": 374720,
+            "poster_url": "https://image.tmdb.org/t/p/w500/b4Oe15CGLL61Ped0RAS9JpqdmCt.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Time and Temporal Manipulation"
+      },
+      {
+        "type": "text",
+        "content": "\"Inception\" (2010) represents the perfect synthesis of Nolan's preoccupations with time, memory, and spectacle. The film's nested dream levels operate at different temporal speeds, creating a complex narrative architecture that demands careful attention while delivering stunning visual setpieces. Cinematographer Wally Pfister and production designer Guy Hendrix Dyas crafted distinct visual languages for each dream level, while Hans Zimmer's score used time-stretched elements of Édith Piaf's \"Non, je ne regrette rien\" to reinforce the temporal relationships between levels."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Inception",
+            "year": 2010,
+            "slug": "Mind-bending heist film exploring shared dreams and layered reality",
+            "streaming": "HBO Max",
+            "tmdb_id": 27205,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg"
+          },
+          {
+            "title": "Tenet",
+            "year": 2020,
+            "slug": "Time-inverting spy thriller pushing temporal complexity to new extremes",
+            "streaming": "HBO Max",
+            "tmdb_id": 577922,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aCIFMriQh8rvhxpN1IWGgvH0Tlg.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Scientific Accuracy and Emotional Core"
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "\"Interstellar\" (2014) marked Nolan's first collaboration with cinematographer Hoyte van Hoytema and demonstrated his ability to combine hard science fiction with emotional storytelling. Working with theoretical physicist Kip Thorne, Nolan created scientifically accurate visualizations of black holes and relativistic time dilation. However, the technical achievements serve a deeply personal story about family bonds transcending space and time. The film's practical effects, including building full-scale spacecraft interiors and minimal use of green screen, create a tangible reality that grounds the cosmic scale."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Interstellar",
+            "year": 2014,
+            "slug": "Space exploration epic combining theoretical physics with father-daughter relationship",
+            "streaming": "Paramount+",
+            "tmdb_id": 157336,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+          },
+          {
+            "title": "The Prestige",
+            "year": 2006,
+            "slug": "Period drama about rival magicians exploring science and obsession",
+            "streaming": "HBO Max",
+            "tmdb_id": 1124,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bdN3gXuIZYaJP7ftKK2sU0nPtEA.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Sound Design and Temporal Architecture"
+      },
+      {
+        "type": "text",
+        "content": "\"Dunkirk\" (2017) represents Nolan's most sophisticated use of time as a narrative device. The film interweaves three storylines operating at different time scales - one week on land, one day at sea, and one hour in the air. Working with editor Lee Smith and composer Hans Zimmer, Nolan uses the sound of a ticking clock throughout the score to create mounting tension. The film's minimal dialogue and emphasis on visual storytelling showcases Nolan's mastery of pure cinema, while the extensive use of IMAX cameras (75% of the runtime) creates an immersive experience."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Dunkirk",
+            "year": 2017,
+            "slug": "Innovative war film told through three interlocking timeframes",
+            "streaming": "Netflix",
+            "tmdb_id": 374720,
+            "poster_url": "https://image.tmdb.org/t/p/w500/b4Oe15CGLL61Ped0RAS9JpqdmCt.jpg"
+          },
+          {
+            "title": "Oppenheimer",
+            "year": 2023,
+            "slug": "Biographical drama about the atomic bomb using split timelines and IMAX",
+            "streaming": "Theatrical",
+            "tmdb_id": 872585,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Legacy and Influence"
+      },
+      {
+        "type": "text",
+        "content": "Nolan's impact on contemporary cinema extends beyond his individual films. His insistence on shooting on film, practical effects, and IMAX presentation has helped preserve these technologies in an increasingly digital industry. His success with complex, original narratives at blockbuster scale has created space for other filmmakers to pursue ambitious projects. The \"Nolan effect\" can be seen in films like Denis Villeneuve's \"Arrival\" and \"Dune,\" which similarly combine intellectual complexity with visual spectacle."
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Batman Begins",
+          "year": 2005,
+          "slug": "Grounded superhero origin story establishing Nolan's realistic approach",
+          "streaming": "HBO Max",
+          "tmdb_id": 272,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4MpN4kIEqUjW8OPtOQJXlTdHiJV.jpg"
+        },
+        {
+          "title": "Insomnia",
+          "year": 2002,
+          "slug": "Psychological thriller showing early mastery of temporal disorientation",
+          "streaming": "Amazon Prime",
+          "tmdb_id": 26610,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bMq1l0RUf7xr45yMRUKzkU5cDOQ.jpg"
+        },
+        {
+          "title": "Following",
+          "year": 1998,
+          "slug": "Micro-budget noir revealing early signs of narrative complexity",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 11660,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3bX6VVSMf0dvzk5pMT4ALG5A92d.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-18T17:00:28.628Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-18T17:00:28.628Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-2-directors/series-4-contemporary-auteurs//2-christopher-nolan-time-memory-imax-spectacle.jpg"
+}

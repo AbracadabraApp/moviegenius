@@ -1,0 +1,210 @@
+{
+  "system": "genius",
+  "themeId": 1,
+  "seriesId": 3,
+  "episodeId": 1,
+  "theme": {
+    "id": 1,
+    "title": "Genres",
+    "description": "Film genres and their evolution",
+    "slug": "genres"
+  },
+  "series": {
+    "id": 3,
+    "title": "Comedy Through the Ages",
+    "description": "Laughter and social commentary"
+  },
+  "episode": {
+    "id": 1,
+    "title": "Silent Comedy Stars",
+    "subtitle": "Chaplin, Keaton, and visual humor"
+  },
+  "content": {
+    "opener": "The silent era of cinema produced comedy's most influential visual storytellers, with Charlie Chaplin, Buster Keaton, and Harold Lloyd crafting timeless physical comedy through revolutionary cinematography and precise choreography.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "The foundation of silent comedy emerged from vaudeville traditions, but quickly evolved into a sophisticated visual language under pioneers like Charlie Chaplin. His Little Tramp character, introduced in 1914's \"Kid Auto Races at Venice,\" became cinema's first global icon through a masterful blend of pathos and slapstick. Chaplin's 1925 masterpiece \"The Gold Rush\" exemplifies how he elevated physical comedy into high art, with iconic sequences like the bread roll dance and the boiled shoe dinner demonstrating his genius for transforming mundane objects into vehicles for both humor and social commentary. His meticulous attention to visual detail and timing influenced generations of filmmakers."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Gold Rush",
+            "year": 1925,
+            "slug": "Chaplin's masterpiece following the Little Tramp in the Klondike Gold Rush, featuring iconic comedy sequences",
+            "streaming": "HBO Max",
+            "tmdb_id": 962,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eQRFo1qwRREYwj47Yoe1PisgOle.jpg"
+          },
+          {
+            "title": "Modern Times",
+            "year": 1936,
+            "slug": "Chaplin's brilliant satire of industrialization, with the Little Tramp struggling against machinery",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 3082,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7uoiKOEjxBBW0AgDGQWrlfGQ90w.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Buster Keaton: The Great Stone Face"
+      },
+      {
+        "type": "text",
+        "content": "Buster Keaton's deadpan expression and death-defying stunts created a distinct comedic style that emphasized technical innovation and architectural precision. His 1926 film \"The General\" represents the pinnacle of silent comedy filmmaking, with elaborate action sequences performed without camera tricks or doubles. Keaton's understanding of cinematography and framing was revolutionary - he insisted on wide shots to prove his stunts were real and utilized the entire frame for visual gags. His work in \"Steamboat Bill Jr.\" (1928) includes the famous house-falling sequence, where Keaton's exact positioning allowed him to survive a two-ton facade falling around him."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The General",
+            "year": 1926,
+            "slug": "Keaton's Civil War epic combining spectacular stunts with perfect comic timing",
+            "streaming": "YouTube",
+            "tmdb_id": 961,
+            "poster_url": "https://image.tmdb.org/t/p/w500/nIp4gIXogCjfB1QABNsWwa9gSca.jpg"
+          },
+          {
+            "title": "Sherlock Jr.",
+            "year": 1924,
+            "slug": "Innovative comedy about a projectionist who dreams himself into a movie",
+            "streaming": "HBO Max",
+            "tmdb_id": 992,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1G9r3rqtbFAQuyWKOZm4Y5J5s7Q.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Technical Innovation and Visual Storytelling"
+      },
+      {
+        "type": "text",
+        "content": "Silent comedians developed sophisticated visual techniques that remain influential today. Harold Lloyd's \"Safety Last!\" (1923) pioneered forced perspective shots and carefully constructed illusions to create its famous clock-hanging sequence. These innovators understood that comedy required precise framing and timing - Chaplin would often shoot scenes hundreds of times to perfect the visual rhythm. The physical comedy was meticulously choreographed, with Keaton's background in vaudeville informing his understanding of how to stage elaborate gags for maximum impact. Their work established fundamental principles of visual comedy that influenced everything from Jacques Tati to Jackie Chan."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Safety Last!",
+            "year": 1923,
+            "slug": "Lloyd's masterpiece featuring the iconic clock-hanging sequence",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 22596,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fEt5HWJ32ek8ibef7zSZnA00Jp0.jpg"
+          },
+          {
+            "title": "The Navigator",
+            "year": 1924,
+            "slug": "Keaton's adventure comedy showcasing innovative underwater sequences",
+            "streaming": "TCM",
+            "tmdb_id": 32318,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eFIbnDnBnIi1qnz15UUiMFmjRmL.jpg"
+          }
+        ]
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The social commentary embedded in silent comedy often addressed class struggle and modernization. Chaplin's \"Modern Times\" (1936) brilliantly satirized industrial automation and economic inequality through purely visual means. The famous assembly line sequence, where the Little Tramp is literally consumed by machinery, remains a powerful critique of dehumanizing labor conditions. Similarly, Keaton's \"The Navigator\" (1924) explored themes of class privilege and self-reliance through the story of wealthy passengers forced to fend for themselves on an abandoned ship."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "City Lights",
+            "year": 1931,
+            "slug": "Chaplin's emotional masterpiece combining slapstick with romantic pathos",
+            "streaming": "HBO Max",
+            "tmdb_id": 901,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ugmakEL5y294I5bXgiBqApuZpwc.jpg"
+          },
+          {
+            "title": "The Cameraman",
+            "year": 1928,
+            "slug": "Keaton's sophisticated commentary on filmmaking and visual truth",
+            "streaming": "TCM",
+            "tmdb_id": 31411,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oz7dVRzxN95IIpa7hsG5XS3nO2L.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The influence of silent comedy pioneers extends far beyond their era. Their understanding of visual storytelling and physical comedy directly influenced international filmmakers like Jacques Tati, whose \"Playtime\" (1967) built upon their traditions of architectural comedy and social observation. Contemporary action-comedy stars like Jackie Chan have explicitly credited Keaton's work as inspiration for their approach to stunts and physical comedy. The precision timing and visual clarity these pioneers developed remain essential studies for modern comedy directors."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Seven Chances",
+            "year": 1925,
+            "slug": "Keaton's masterful chase comedy with innovative crowd sequences",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 32600,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fH9woIxzqVtyv6S711vSVlS12eA.jpg"
+          },
+          {
+            "title": "The Kid",
+            "year": 1921,
+            "slug": "Chaplin's perfect blend of comedy and drama",
+            "streaming": "HBO Max",
+            "tmdb_id": 10098,
+            "poster_url": "https://image.tmdb.org/t/p/w500/drgMcyTsySQBnUPGaBThCHGdlWT.jpg"
+          }
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Our Hospitality",
+          "year": 1923,
+          "slug": "Keaton's historical comedy featuring revolutionary stunt work",
+          "streaming": "TCM",
+          "tmdb_id": 701,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cAEdL6RzfDSbPO51izl01Njzikx.jpg"
+        },
+        {
+          "title": "The Circus",
+          "year": 1928,
+          "slug": "Chaplin's brilliant meditation on entertainment and performance",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 28978,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hWw9HfQmd4Rn1Et4vgZQsEf5tEZ.jpg"
+        },
+        {
+          "title": "The Freshman",
+          "year": 1925,
+          "slug": "Harold Lloyd's influential college comedy",
+          "streaming": "YouTube",
+          "tmdb_id": 42359,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3531lJNSMhrpcNWXrDIYYoYH6Rp.jpg"
+        },
+        {
+          "title": "Cops",
+          "year": 1922,
+          "slug": "Keaton's short film showcasing perfect comic timing",
+          "streaming": "Public Domain",
+          "tmdb_id": 38742,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uN8b6oQlmsb81G7GepgjPyRDLaO.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-17T22:54:48.765Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-17T22:54:48.765Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-1-genres/series-3-comedy-through-the-ages//1-silent-comedy-stars.jpg"
+}
