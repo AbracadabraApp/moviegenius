@@ -1,6 +1,6 @@
 // pages/you.js
 import PhoneFrame from '../components/PhoneFrame';
-import AskInputBar from '../components/AskInputBar';
+import SimpleSearch from '../components/SimpleSearch';
 import SelectedPlatforms from '../components/SelectedPlatforms';
 import MediaCard from '../components/MediaCard';
 import PlatformSelector from '../components/PlatformSelector';
@@ -147,12 +147,10 @@ export default function YouPage() {
     }
   }, [router.asPath]);
 
-  const handleAsk = (query) => {
-    // Navigate to Genius page with the query
-    router.push({
-      pathname: '/genius',
-      query: { q: query }
-    });
+  const handleSearchResults = (results) => {
+    // For now, just log the search results
+    // In the future, could show search results in a modal or navigate to search page
+    console.log('Search results on You page:', results);
   };
 
   const handlePlatformSelectionChange = (selectedPlatforms) => {
@@ -170,9 +168,9 @@ export default function YouPage() {
   return (
     <PhoneFrame active="you">
       <div style={styles.container}>
-        {/* Fixed Ask Input Bar */}
+        {/* Fixed Search Bar */}
         <div style={styles.fixedInputArea}>
-          <AskInputBar onSubmit={handleAsk} />
+          <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
         </div>
         
         {/* Scrollable Content */}
