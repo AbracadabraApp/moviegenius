@@ -29,10 +29,14 @@ export default function HomePage() {
   useEffect(() => {
     // Check if user has seen the manifesto before
     const hasSeenManifesto = localStorage.getItem('moviegenius_manifesto_seen');
+    const hasSelectedPlatforms = localStorage.getItem('moviegenius_platforms_configured');
     
     if (!hasSeenManifesto) {
       // First time visitor - show the manifesto
       setModalStep('manifesto');
+    } else if (!hasSelectedPlatforms) {
+      // Returning user who hasn't configured platforms yet
+      setModalStep('platforms');
     }
     
     // Set random hero image
@@ -292,16 +296,30 @@ export default function HomePage() {
                     </div>
                   )}
                   
-                  <button 
-                    onClick={() => {
-                      // Save selected platforms and close modal
-                      localStorage.setItem('selectedPlatforms', JSON.stringify(formData.streamingServices));
-                      setModalStep(null);
-                    }}
-                    style={styles.manifestoContinueButton}
-                  >
-                    Start Exploring
-                  </button>
+                  <div style={styles.platformModalButtons}>
+                    <button 
+                      onClick={() => {
+                        // Save selected platforms and mark as configured
+                        localStorage.setItem('selectedPlatforms', JSON.stringify(formData.streamingServices));
+                        localStorage.setItem('moviegenius_platforms_configured', 'true');
+                        setModalStep(null);
+                      }}
+                      style={styles.manifestoContinueButton}
+                    >
+                      Start Exploring
+                    </button>
+                    
+                    <button 
+                      onClick={() => {
+                        // Skip platform selection but mark as configured to not show again
+                        localStorage.setItem('moviegenius_platforms_configured', 'true');
+                        setModalStep(null);
+                      }}
+                      style={styles.skipButton}
+                    >
+                      Skip for now
+                    </button>
+                  </div>
                 </div>
               </div>
             )}
@@ -317,7 +335,16 @@ export default function HomePage() {
             </div>
 
             <div style={styles.contentSection}>
-              <p style={styles.sectionQuestion}>Which film topics interest you most?</p>
+              <div style={styles.headerWithSettings}>
+                <p style={styles.sectionQuestion}>Which film topics interest you most?</p>
+                <button 
+                  onClick={() => setModalStep('platforms')}
+                  style={styles.settingsButton}
+                  title="Configure streaming platforms"
+                >
+                  ⚙️
+                </button>
+              </div>
               <div style={styles.themeGrid}>
               {allEducationThemes.map(theme => (
                 <button
@@ -825,6 +852,28 @@ const styles = {
     textShadow: '0 1px 2px rgba(0, 0, 0, 0.05)',
   },
   
+  headerWithSettings: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    position: 'relative',
+  },
+  
+  settingsButton: {
+    position: 'absolute',
+    top: '20px',
+    right: '0px',
+    background: 'rgba(255, 255, 255, 0.1)',
+    border: '1px solid rgba(255, 255, 255, 0.2)',
+    borderRadius: '8px',
+    padding: '8px 10px',
+    fontSize: '16px',
+    cursor: 'pointer',
+    color: '#ffffff',
+    transition: 'all 0.2s ease',
+    backdropFilter: 'blur(10px)',
+  },
+  
   platformButton: {
     padding: '6px 12px',
     border: '1px solid #d1d5db',
@@ -982,5 +1031,28 @@ const styles = {
     textDecoration: 'underline',
     fontWeight: '500',
     transition: 'color 0.2s ease',
+  },
+  
+  platformModalButtons: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '12px',
+  },
+  
+  skipButton: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '100%',
+    backgroundColor: 'transparent',
+    color: '#6b7280',
+    border: '1px solid #d1d5db',
+    borderRadius: '8px',
+    padding: '12px 24px',
+    fontSize: '14px',
+    fontWeight: '500',
+    cursor: 'pointer',
+    fontFamily: 'inherit',
+    transition: 'all 0.2s ease',
   },
 };
