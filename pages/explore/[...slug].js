@@ -12,7 +12,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import PhoneFrame from '../../components/PhoneFrame';
-import AskInputBar from '../../components/AskInputBar';
+import SimpleSearch from '../../components/SimpleSearch';
 import MediaCard from '../../components/MediaCard';
 import BackButton from '../../components/BackButton';
 import EntityLinkedText from '../../components/EntityLinkedText';
@@ -22,12 +22,11 @@ export default function ExplorePage({ pageData, error, topic, context }) {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(!pageData);
 
-  // Handle ask input
-  const handleAsk = (query) => {
-    router.push({
-      pathname: '/ask',
-      query: { q: query }
-    });
+  // Handle search results
+  const handleSearchResults = (results) => {
+    // For now, just log the search results
+    // In the future, could show search results in a modal or navigate to search page
+    console.log('Search results on Explore page:', results);
   };
 
   // If we have an error, show error state
@@ -37,7 +36,7 @@ export default function ExplorePage({ pageData, error, topic, context }) {
         <div style={styles.container}>
           <div style={styles.inputArea}>
             <BackButton variant="icon" context="explore" position="top-left" />
-            <AskInputBar onSubmit={handleAsk} />
+            <SimpleSearch onResults={handleSearchResults} />
           </div>
           <div style={styles.errorContainer}>
             <div style={styles.errorText}>Unable to load this explore topic</div>
@@ -60,7 +59,7 @@ export default function ExplorePage({ pageData, error, topic, context }) {
         <div style={styles.container}>
           <div style={styles.inputArea}>
             <BackButton variant="icon" context="explore" position="top-left" />
-            <AskInputBar onSubmit={handleAsk} />
+            <SimpleSearch onResults={handleSearchResults} />
           </div>
           <div style={styles.loadingContainer}>
             <div style={styles.loadingRow}>
@@ -83,7 +82,7 @@ export default function ExplorePage({ pageData, error, topic, context }) {
         {/* Input Area */}
         <div style={styles.inputArea}>
           <BackButton variant="icon" context="explore" position="top-left" />
-          <AskInputBar onSubmit={handleAsk} />
+          <SimpleSearch onResults={handleSearchResults} />
         </div>
 
         {/* Page Header */}
@@ -141,7 +140,10 @@ export default function ExplorePage({ pageData, error, topic, context }) {
                   <div 
                     key={index}
                     style={styles.nextStepItem}
-                    onClick={() => handleAsk(step)}
+                    onClick={() => {
+                      console.log('Clicked next step:', step);
+                      // Could navigate to a new explore page for this step
+                    }}
                   >
                     {step}
                   </div>
@@ -154,10 +156,9 @@ export default function ExplorePage({ pageData, error, topic, context }) {
           <div style={styles.followUpSection}>
             <h3 style={styles.followUpTitle}>Have more questions?</h3>
             <div style={styles.followUpInputContainer}>
-              <AskInputBar 
-                onSubmit={handleAsk}
+              <SimpleSearch 
+                onResults={handleSearchResults}
                 placeholder={`Ask more about ${pageData.title.toLowerCase()}...`}
-                style={styles.followUpInput}
               />
             </div>
           </div>

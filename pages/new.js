@@ -6,7 +6,7 @@
 import { useState, useEffect } from 'react';
 import PhoneFrame from '../components/PhoneFrame';
 import MediaCard from '../components/MediaCard';
-import AskInputBar from '../components/AskInputBar';
+import SimpleSearch from '../components/SimpleSearch';
 import { useRouter } from 'next/router';
 
 export default function NewReleasesPage() {
@@ -15,11 +15,10 @@ export default function NewReleasesPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const handleAsk = (query) => {
-    router.push({
-      pathname: '/ask',
-      query: { q: query }
-    });
+  const handleSearchResults = (results) => {
+    // For now, just log the search results
+    // In the future, could show search results in a modal or navigate to search page
+    console.log('Search results on New page:', results);
   };
 
   useEffect(() => {
@@ -49,8 +48,8 @@ export default function NewReleasesPage() {
     <PhoneFrame>
       <div style={styles.container}>
         <div style={styles.inputArea}>
-          <AskInputBar 
-            onSubmit={handleAsk}
+          <SimpleSearch 
+            onResults={handleSearchResults}
             placeholder="Ask about new releases or discover cinema..."
           />
         </div>

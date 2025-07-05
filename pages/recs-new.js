@@ -1,6 +1,6 @@
 // pages/recs-new.js - Movies as Home: Movie Enthusiasm Gateway
 import PhoneFrame from '../components/PhoneFrame'
-import AskInputBar from '../components/AskInputBar'
+import SimpleSearch from '../components/SimpleSearch'
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
 import AnonymousUserManager from '../lib/anonymous-user'
@@ -54,12 +54,10 @@ export default function MoviesHomePage() {
     return () => window.removeEventListener('platformsUpdated', handlePlatformUpdate)
   }, [])
 
-  const handleAsk = (query) => {
-    // Route to Genius tab for ask responses
-    router.push({
-      pathname: '/ask',
-      query: { q: query }
-    })
+  const handleSearchResults = (results) => {
+    // For now, just log the search results
+    // In the future, could show search results in a modal or navigate to search page
+    console.log('Search results on Recs page:', results);
   }
 
   const handleListClick = (list) => {
@@ -90,10 +88,9 @@ export default function MoviesHomePage() {
         <div style={styles.heroSection}>
           <h1 style={styles.heroTitle}>Ask me anything about movies</h1>
           <div style={styles.heroAskBar}>
-            <AskInputBar 
-              onSubmit={handleAsk}
+            <SimpleSearch 
+              onResults={handleSearchResults}
               placeholder="Best sci-fi like Blade Runner..."
-              style={styles.largeInput}
             />
           </div>
         </div>

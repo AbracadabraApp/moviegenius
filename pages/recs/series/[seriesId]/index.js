@@ -1,6 +1,6 @@
 // pages/recs/series/[seriesId]/index.js - Series Episode List Page
 import PhoneFrame from '../../../../components/PhoneFrame';
-import AskInputBar from '../../../../components/AskInputBar';
+import SimpleSearch from '../../../../components/SimpleSearch';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import fs from 'fs';
@@ -10,11 +10,9 @@ export default function SeriesPage({ series, error }) {
   const router = useRouter();
   const { seriesId } = router.query;
   
-  const handleAsk = (query) => {
-    router.push({
-      pathname: '/ask',
-      query: { q: query }
-    });
+  const handleSearchResults = (results) => {
+    // For now, just log the search results
+    console.log('Search results on Series Detail page:', results);
   };
 
   if (error) {
@@ -22,7 +20,7 @@ export default function SeriesPage({ series, error }) {
       <PhoneFrame active="recs">
         <div style={styles.container}>
           <div style={styles.fixedInputArea}>
-            <AskInputBar onSubmit={handleAsk} />
+            <SimpleSearch onResults={handleSearchResults} />
           </div>
           <div style={styles.error}>
             Error loading series: {error}
@@ -37,7 +35,7 @@ export default function SeriesPage({ series, error }) {
       <PhoneFrame active="recs">
         <div style={styles.container}>
           <div style={styles.fixedInputArea}>
-            <AskInputBar onSubmit={handleAsk} />
+            <SimpleSearch onResults={handleSearchResults} />
           </div>
           <div style={styles.error}>
             Series not found
@@ -52,7 +50,7 @@ export default function SeriesPage({ series, error }) {
       <div style={styles.container}>
         {/* Fixed Ask Input Bar */}
         <div style={styles.fixedInputArea}>
-          <AskInputBar onSubmit={handleAsk} />
+          <SimpleSearch onResults={handleSearchResults} />
         </div>
         
         {/* Scrollable Content */}

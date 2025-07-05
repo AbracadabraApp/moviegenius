@@ -1,6 +1,6 @@
 // components/GeniusEpisodePage.js
 import PhoneFrame from './PhoneFrame';
-import AskInputBar from './AskInputBar';
+import SimpleSearch from './SimpleSearch';
 import GeniusEpisodeTemplate from './GeniusEpisodeTemplate';
 import { useRouter } from 'next/router';
 
@@ -61,8 +61,7 @@ export default function GeniusEpisodePage({
   episodeData, 
   themeId, 
   seriesId, 
-  episodeId, 
-  handleAsk 
+  episodeId
 }) {
   const router = useRouter();
   
@@ -90,12 +89,14 @@ export default function GeniusEpisodePage({
   return (
     <PhoneFrame active="genius">
       <div style={styles.container}>
-        {/* Fixed Ask Input Bar */}
+        {/* Fixed Search Input Bar */}
         <div style={styles.fixedInputArea}>
-          <AskInputBar 
+          <SimpleSearch 
             placeholder="Ask me about this topic..."
-            episodePrefix={episodeData.episode.title}
-            onSubmit={handleAsk} 
+            onResults={(results) => {
+              // For now, just log the search results
+              console.log('Search results on Genius Episode page:', results);
+            }}
           />
         </div>
         

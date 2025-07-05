@@ -1,6 +1,6 @@
 // pages/ask.js
 import PhoneFrame from '../components/PhoneFrame';
-import AskInputBar from '../components/AskInputBar';
+import SimpleSearch from '../components/SimpleSearch';
 import TypewriterText from '../components/TypewriterText';
 import EntityLinkedText from '../components/EntityLinkedText';
 import FilmLoadingMessage from '../components/FilmLoadingMessage';
@@ -249,12 +249,11 @@ export default function AskPage() {
                 Movie Genius
               </h1>
               <div style={styles.welcomeInput}>
-                <AskInputBar 
+                <SimpleSearch 
                   placeholder="Ask me about movies..."
-                  style={styles.welcomeInputBar}
-                  onSubmit={handleAsk}
-                  showNavigation={false}
-                  multiline={true}
+                  onResults={(results) => {
+                    console.log('Search results on Ask Deprecated page:', results);
+                  }}
                 />
               </div>
               {displayQuestions.length > 0 && (
@@ -392,12 +391,11 @@ export default function AskPage() {
                   <button style={styles.iconButton}>≈</button>
                 </div>
                 <div style={styles.inputWrapper}>
-                  <AskInputBar 
+                  <SimpleSearch 
                     placeholder="Reply to MovieGenius..."
-                    style={styles.claudeInput}
-                    onSubmit={handleAsk}
-                    showNavigation={false}
-                    multiline={true}
+                    onResults={(results) => {
+                      console.log('Search results on Ask Deprecated page:', results);
+                    }}
                   />
                 </div>
                 <div style={styles.rightButtons}>
