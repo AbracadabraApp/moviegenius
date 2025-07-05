@@ -22,11 +22,20 @@ export default function HomePage() {
   });
   const [showAllThemes, setShowAllThemes] = useState(false);
   const [currentRotation, setCurrentRotation] = useState(0);
-  const [modalStep, setModalStep] = useState('manifesto'); // 'manifesto', 'platforms', null
+  const [modalStep, setModalStep] = useState(null); // 'manifesto', 'platforms', null
   const [showAllPlatforms, setShowAllPlatforms] = useState(false);
 
-  // Simple test rotation - just pick a random hero image on each reload
+  // Initialize modal and rotation state
   useEffect(() => {
+    // Check if user has seen the manifesto before
+    const hasSeenManifesto = localStorage.getItem('moviegenius_manifesto_seen');
+    
+    if (!hasSeenManifesto) {
+      // First time visitor - show the manifesto
+      setModalStep('manifesto');
+    }
+    
+    // Set random hero image
     const randomHero = Math.floor(Math.random() * 26) + 1;
     setCurrentRotation(randomHero);
   }, []);
@@ -217,7 +226,11 @@ export default function HomePage() {
                     Streaming platforms put great films at our fingertips, then hid them under time-wasting junk. MovieGenius is your intelligence filter—the red pill to break free from their algorithmic matrix. No more mindless scrolling through endless mediocre "shows". Discover quality cinema and make deliberate choices again.
                   </p>
                   <button 
-                    onClick={() => setModalStep('platforms')}
+                    onClick={() => {
+                      // Mark manifesto as seen so it never shows again
+                      localStorage.setItem('moviegenius_manifesto_seen', 'true');
+                      setModalStep('platforms');
+                    }}
                     style={styles.manifestoContinueButton}
                   >
                     Continue
@@ -280,7 +293,11 @@ export default function HomePage() {
                   )}
                   
                   <button 
-                    onClick={() => setModalStep(null)}
+                    onClick={() => {
+                      // Save selected platforms and close modal
+                      localStorage.setItem('selectedPlatforms', JSON.stringify(formData.streamingServices));
+                      setModalStep(null);
+                    }}
                     style={styles.manifestoContinueButton}
                   >
                     Start Exploring
