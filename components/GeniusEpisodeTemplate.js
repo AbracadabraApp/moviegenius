@@ -1,7 +1,7 @@
 // components/GeniusEpisodeTemplate.js
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import { useRouter } from 'next/router';
-import { ChevronLeft, Clock, Film, PlusCircle } from 'lucide-react';
+import { Clock, Film, PlusCircle } from 'lucide-react';
 import MediaCard from './MediaCard';
 import SimpleSearch from './SimpleSearch';
 import LinkedText from './LinkedText';

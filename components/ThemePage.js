@@ -1,7 +1,6 @@
 // Reusable theme page component
 import PhoneFrame from './PhoneFrame';
 import SimpleSearch from './SimpleSearch';
-import BackButton from './BackButton';
 import MediaCard from './MediaCard';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
@@ -56,7 +55,6 @@ export default function ThemePage({ themeId, customStyles = {} }) {
   return (
     <PhoneFrame>
       <div style={mergedStyles.container || styles.container}>
-        <BackButton variant="icon" context="theme" position="top-left" />
         
         <div style={mergedStyles.fixedInputArea || styles.fixedInputArea}>
           <SimpleSearch 
@@ -118,7 +116,6 @@ export default function ThemePage({ themeId, customStyles = {} }) {
                           Object.assign(e.target.style, mergedStyles.episodeCard || styles.episodeCard);
                         }}
                       >
-                        <div style={mergedStyles.episodeNumber || styles.episodeNumber}>Episode {index + 1}</div>
                         <h3 style={mergedStyles.episodeTitle || styles.episodeTitle}>{episode.title}</h3>
                         <p style={mergedStyles.episodeSubtitle || styles.episodeSubtitle}>{episode.subtitle}</p>
                       </div>
@@ -216,12 +213,6 @@ const styles = {
     cursor: 'pointer',
     transition: 'all 0.2s ease',
     boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
-  },
-  episodeNumber: {
-    fontSize: '12px',
-    color: '#6b7280',
-    fontWeight: '500',
-    marginBottom: '4px',
   },
   episodeTitle: {
     fontSize: '16px',

@@ -79,7 +79,6 @@ export default function SeriesOverviewPage({ seriesData, error }) {
                     {series.episodes.slice(0, 4).map((episode, index) => (
                       <div key={episode.id} style={styles.episodePreview}>
                         <div style={styles.episodePreviewText}>
-                          <div style={styles.episodeNumber}>Ep {episode.id}</div>
                           <div style={styles.episodeTitle}>{episode.title}</div>
                         </div>
                         {episode.posters && episode.posters.length > 0 && (
@@ -100,7 +99,7 @@ export default function SeriesOverviewPage({ seriesData, error }) {
                   
                   {/* Series Footer */}
                   <div style={styles.seriesFooter}>
-                    <span style={styles.startWatchingText}>Start with Episode 1</span>
+                    <span style={styles.startWatchingText}>Start watching</span>
                     <span style={styles.arrow}>→</span>
                   </div>
                 </div>
@@ -257,14 +256,6 @@ const styles = {
   },
   episodePreviewText: {
     flex: 1,
-  },
-  episodeNumber: {
-    fontSize: '10px',
-    fontWeight: '600',
-    color: '#6b7280',
-    textTransform: 'uppercase',
-    letterSpacing: '0.5px',
-    marginBottom: '2px',
   },
   episodeTitle: {
     fontSize: '12px',

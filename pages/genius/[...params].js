@@ -2,7 +2,6 @@
 import { useRouter } from 'next/router';
 import PhoneFrame from '../../components/PhoneFrame';
 import SimpleSearch from '../../components/SimpleSearch';
-import BackButton from '../../components/BackButton';
 import MediaCard from '../../components/MediaCard';
 import EpisodeCard from '../../components/EpisodeCard';
 import GeniusEpisodePage from '../../components/GeniusEpisodePage';
@@ -77,7 +76,6 @@ function ThemePage({ data, handleSearchResults }) {
     <PhoneFrame active="genius">
       <div style={styles.container}>
         {/* Back button for navigation */}
-        <BackButton variant="icon" context="episode" position="top-left" />
         
         <div style={styles.fixedInputArea}>
           <SimpleSearch onResults={handleSearchResults} />
@@ -120,7 +118,6 @@ function SeriesPage({ data, themeId, handleSearchResults }) {
     <PhoneFrame active="genius">
       <div style={styles.container}>
         {/* Back button for navigation */}
-        <BackButton variant="icon" context="episode" position="top-left" />
         
         <div style={styles.fixedInputArea}>
           <SimpleSearch onResults={handleSearchResults} />
@@ -174,7 +171,6 @@ function EpisodePage({ data, themeId, seriesId, episodeId, handleSearchResults }
     <PhoneFrame active="genius">
       <div style={styles.container}>
         {/* Back button for navigation */}
-        <BackButton variant="icon" context="episode" position="top-left" />
         
         <div style={styles.fixedInputArea}>
           <SimpleSearch onResults={handleSearchResults} />
@@ -291,7 +287,6 @@ function GeniusHomePage({ handleSearchResults }) {
     <PhoneFrame active="genius">
       <div style={styles.container}>
         {/* Back button for navigation */}
-        <BackButton variant="icon" context="episode" position="top-left" />
         
         <div style={styles.fixedInputArea}>
           <SimpleSearch onResults={handleSearchResults} />

@@ -3,7 +3,6 @@ import PhoneFrame from '../../../../components/PhoneFrame';
 import SimpleSearch from '../../../../components/SimpleSearch';
 import MediaCard from '../../../../components/MediaCard';
 import EpisodeCard from '../../../../components/EpisodeCard';
-import BackButton from '../../../../components/BackButton';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { underlineProperNames } from '../../../../lib/proper-names';
@@ -63,8 +62,6 @@ export default function SeriesEpisodePage({ series, episode, otherEpisodes, seri
     return (
       <PhoneFrame active="recs">
         <div style={styles.container}>
-          {/* Back button for navigation */}
-          <BackButton variant="icon" context="episode" position="top-left" />
           
           <div style={styles.fixedInputArea}>
             <SimpleSearch onResults={handleSearchResults} />
@@ -81,8 +78,6 @@ export default function SeriesEpisodePage({ series, episode, otherEpisodes, seri
     return (
       <PhoneFrame active="recs">
         <div style={styles.container}>
-          {/* Back button for navigation */}
-          <BackButton variant="icon" context="episode" position="top-left" />
           
           <div style={styles.fixedInputArea}>
             <SimpleSearch onResults={handleSearchResults} />
@@ -98,8 +93,6 @@ export default function SeriesEpisodePage({ series, episode, otherEpisodes, seri
   return (
     <PhoneFrame active="recs">
       <div style={styles.container}>
-        {/* Back button for navigation */}
-        <BackButton variant="icon" context="episode" position="top-left" />
         
         {/* Fixed Ask Input Bar */}
         <div style={styles.fixedInputArea}>
