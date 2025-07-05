@@ -1,6 +1,6 @@
 // pages/recs-redesign.js - Movies as Home: MoveGenius.AI Design
 import PhoneFrame from '../components/PhoneFrame'
-import AskInputBar from '../components/AskInputBar'
+import SimpleSearch from '../components/SimpleSearch'
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
 import AnonymousUserManager from '../lib/anonymous-user'
@@ -57,12 +57,10 @@ export default function MoviesHomeRedesign() {
     return () => window.removeEventListener('platformsUpdated', handlePlatformUpdate)
   }, [])
 
-  const handleAsk = (query) => {
-    // Route to Genius tab for ask responses
-    router.push({
-      pathname: '/ask',
-      query: { q: query }
-    })
+  const handleSearchResults = (results) => {
+    // For now, just log the search results
+    // In the future, could show search results in a modal or navigate to search page
+    console.log('Search results on Recs Redesign page:', results);
   }
 
   const handleListClick = (list) => {
@@ -102,10 +100,9 @@ export default function MoviesHomeRedesign() {
           <div style={styles.askSection}>
             <h2 style={styles.askTitle}>Ask About Films</h2>
             <div style={styles.askInputWrapper}>
-              <AskInputBar 
-                onSubmit={handleAsk}
+              <SimpleSearch 
+                onResults={handleSearchResults}
                 placeholder="Film Noir Classics"
-                style={styles.centralInput}
               />
             </div>
           </div>

@@ -1,6 +1,6 @@
 // pages/recs/series/[seriesId]/[episodeId].js - Clean Series Episode Template
 import PhoneFrame from '../../../../components/PhoneFrame';
-import AskInputBar from '../../../../components/AskInputBar';
+import SimpleSearch from '../../../../components/SimpleSearch';
 import MediaCard from '../../../../components/MediaCard';
 import EpisodeCard from '../../../../components/EpisodeCard';
 import BackButton from '../../../../components/BackButton';
@@ -24,8 +24,9 @@ export default function SeriesEpisodePage({ series, episode, otherEpisodes, seri
   const [isLoadingExplore, setIsLoadingExplore] = useState(false);
   const [error, setError] = useState(null);
 
-  const handleAsk = (question) => {
-    router.push(`/ask?q=${encodeURIComponent(question)}`);
+  const handleSearchResults = (results) => {
+    // For now, just log the search results
+    console.log('Search results on Series Episode page:', results);
   };
 
   // Only load explore further topics dynamically
@@ -66,7 +67,7 @@ export default function SeriesEpisodePage({ series, episode, otherEpisodes, seri
           <BackButton variant="icon" context="episode" position="top-left" />
           
           <div style={styles.fixedInputArea}>
-            <AskInputBar onSubmit={() => {}} />
+            <SimpleSearch onResults={handleSearchResults} />
           </div>
           <div style={styles.loadingContainer}>
             <div style={styles.loadingText}>Loading episode...</div>
@@ -84,7 +85,7 @@ export default function SeriesEpisodePage({ series, episode, otherEpisodes, seri
           <BackButton variant="icon" context="episode" position="top-left" />
           
           <div style={styles.fixedInputArea}>
-            <AskInputBar onSubmit={handleAsk} />
+            <SimpleSearch onResults={handleSearchResults} />
           </div>
           <div style={styles.errorContainer}>
             <div style={styles.errorText}>Error loading episode: {error}</div>
@@ -102,7 +103,7 @@ export default function SeriesEpisodePage({ series, episode, otherEpisodes, seri
         
         {/* Fixed Ask Input Bar */}
         <div style={styles.fixedInputArea}>
-          <AskInputBar onSubmit={handleAsk} />
+          <SimpleSearch onResults={handleSearchResults} />
         </div>
         
         {/* Scrollable Content - Same structure as ask page */}

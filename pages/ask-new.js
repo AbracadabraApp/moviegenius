@@ -1,6 +1,6 @@
 // pages/ask-new.js - Genius: Educational Discovery & AI Assistant
 import PhoneFrame from '../components/PhoneFrame';
-import AskInputBar from '../components/AskInputBar';
+import SimpleSearch from '../components/SimpleSearch';
 import MediaCard from '../components/MediaCard';
 import { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/router';
@@ -122,6 +122,12 @@ export default function GeniusPage() {
     }
   }, [isLoading, conversation.length]);
 
+  const handleSearchResults = (results) => {
+    // For now, just log the search results
+    // In the future, could show search results in a modal or navigate to search page
+    console.log('Search results on Ask page:', results);
+  };
+
   const handleListClick = (list) => {
     router.push(`/genius/list/${list.slug}`);
   };
@@ -199,9 +205,8 @@ export default function GeniusPage() {
       <div style={styles.container}>
         {/* Ask Input Bar */}
         <div style={styles.inputArea}>
-          <AskInputBar 
-            onSubmit={handleAsk} 
-            disabled={isLoading}
+          <SimpleSearch 
+            onResults={handleSearchResults}
             placeholder="Ask about film techniques, directors, hidden connections..."
           />
         </div>

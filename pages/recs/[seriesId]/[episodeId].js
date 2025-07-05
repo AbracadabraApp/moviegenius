@@ -1,6 +1,6 @@
 // pages/recs/[seriesId]/[episodeId].js - Clean Series Episode Template
 import PhoneFrame from '../../../components/PhoneFrame';
-import AskInputBar from '../../../components/AskInputBar';
+import SimpleSearch from '../../../components/SimpleSearch';
 import MediaCard from '../../../components/MediaCard';
 import BackButton from '../../../components/BackButton';
 import { useState, useEffect } from 'react';
@@ -29,8 +29,9 @@ export default function SeriesEpisodePage() {
   const [isLoadingExplore, setIsLoadingExplore] = useState(false);
   const [error, setError] = useState(null);
 
-  const handleAsk = (question) => {
-    router.push(`/ask?q=${encodeURIComponent(question)}`);
+  const handleSearchResults = (results) => {
+    // For now, just log the search results
+    console.log('Search results on Series Episode page:', results);
   };
 
   useEffect(() => {
@@ -120,7 +121,7 @@ export default function SeriesEpisodePage() {
           <BackButton variant="icon" context="episode" position="top-left" />
           
           <div style={styles.fixedInputArea}>
-            <AskInputBar onSubmit={handleAsk} />
+            <SimpleSearch onResults={handleSearchResults} />
           </div>
           <div style={styles.errorContainer}>
             <div style={styles.errorText}>Error loading episode: {error}</div>
@@ -138,7 +139,7 @@ export default function SeriesEpisodePage() {
           <BackButton variant="icon" context="episode" position="top-left" />
           
           <div style={styles.fixedInputArea}>
-            <AskInputBar onSubmit={handleAsk} />
+            <SimpleSearch onResults={handleSearchResults} />
           </div>
           <div style={styles.loadingContainer}>
             <div style={styles.loadingRow}>
@@ -165,7 +166,7 @@ export default function SeriesEpisodePage() {
         
         {/* Fixed Ask Input Bar */}
         <div style={styles.fixedInputArea}>
-          <AskInputBar onSubmit={handleAsk} />
+          <SimpleSearch onResults={handleSearchResults} />
         </div>
         
         {/* Scrollable Content - Same structure as ask page */}

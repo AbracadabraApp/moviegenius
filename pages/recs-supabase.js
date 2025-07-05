@@ -2,7 +2,7 @@
 import { createClient } from '@supabase/supabase-js'
 import MediaCard from '../components/MediaCard'
 import PhoneFrame from '../components/PhoneFrame'
-import AskInputBar from '../components/AskInputBar'
+import SimpleSearch from '../components/SimpleSearch'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
@@ -14,11 +14,10 @@ const supabase = createClient(supabaseUrl, supabaseKey)
 export default function RecsSupabasePage({ movies, error, stats }) {
   const router = useRouter()
 
-  const handleAsk = (query) => {
-    router.push({
-      pathname: '/ask',
-      query: { q: query }
-    })
+  const handleSearchResults = (results) => {
+    // For now, just log the search results
+    // In the future, could show search results in a modal or navigate to search page
+    console.log('Search results on Recs Supabase page:', results);
   }
 
   if (error) {
@@ -49,7 +48,7 @@ export default function RecsSupabasePage({ movies, error, stats }) {
         </div>
         
         <div style={styles.inputArea}>
-          <AskInputBar onSubmit={handleAsk} />
+          <SimpleSearch onResults={handleSearchResults} />
         </div>
         
         <div style={styles.movieList}>

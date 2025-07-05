@@ -1,6 +1,6 @@
 // pages/recs/series/index.js - Series Overview Page
 import PhoneFrame from '../../../components/PhoneFrame';
-import AskInputBar from '../../../components/AskInputBar';
+import SimpleSearch from '../../../components/SimpleSearch';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import fs from 'fs';
@@ -9,11 +9,10 @@ import path from 'path';
 export default function SeriesOverviewPage({ seriesData, error }) {
   const router = useRouter();
   
-  const handleAsk = (query) => {
-    router.push({
-      pathname: '/ask',
-      query: { q: query }
-    });
+  const handleSearchResults = (results) => {
+    // For now, just log the search results
+    // In the future, could show search results in a modal or navigate to search page
+    console.log('Search results on Series Index page:', results);
   };
 
   if (error) {
@@ -21,7 +20,7 @@ export default function SeriesOverviewPage({ seriesData, error }) {
       <PhoneFrame active="recs">
         <div style={styles.container}>
           <div style={styles.fixedInputArea}>
-            <AskInputBar onSubmit={handleAsk} />
+            <SimpleSearch onResults={handleSearchResults} />
           </div>
           <div style={styles.error}>
             Error loading series: {error}
@@ -36,7 +35,7 @@ export default function SeriesOverviewPage({ seriesData, error }) {
       <div style={styles.container}>
         {/* Fixed Ask Input Bar */}
         <div style={styles.fixedInputArea}>
-          <AskInputBar onSubmit={handleAsk} />
+          <SimpleSearch onResults={handleSearchResults} />
         </div>
         
         {/* Scrollable Content */}

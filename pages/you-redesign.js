@@ -1,6 +1,6 @@
 // pages/you-redesign.js - Redesigned You page with consistent styling
 import PhoneFrame from '../components/PhoneFrame';
-import AskInputBar from '../components/AskInputBar';
+import SimpleSearch from '../components/SimpleSearch';
 import PlatformSelector from '../components/PlatformSelector';
 import MediaCard from '../components/MediaCard';
 import CinematicProfile from '../components/CinematicProfile';
@@ -136,11 +136,10 @@ export default function YouRedesignPage() {
     }
   }, [router.asPath]);
 
-  const handleAsk = (query) => {
-    router.push({
-      pathname: '/ask',
-      query: { q: query }
-    });
+  const handleSearchResults = (results) => {
+    // For now, just log the search results
+    // In the future, could show search results in a modal or navigate to search page
+    console.log('Search results on You Redesign page:', results);
   };
 
   const handlePlatformSelectionChange = (selectedPlatforms) => {
@@ -156,7 +155,7 @@ export default function YouRedesignPage() {
       <div style={styles.container}>
         {/* Fixed Ask Input Bar */}
         <div style={styles.fixedInputArea}>
-          <AskInputBar onSubmit={handleAsk} />
+          <SimpleSearch onResults={handleSearchResults} />
         </div>
         
         {/* Scrollable Content */}

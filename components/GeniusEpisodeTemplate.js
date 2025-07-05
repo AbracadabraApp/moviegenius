@@ -3,7 +3,7 @@ import { useState, useEffect, useMemo, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import { ChevronLeft, Clock, Film, PlusCircle } from 'lucide-react';
 import MediaCard from './MediaCard';
-import AskInputBar from './AskInputBar';
+import SimpleSearch from './SimpleSearch';
 import LinkedText from './LinkedText';
 import ExplorePromptCard from './ExplorePromptCard';
 import ExploreFurtherSection from './ExploreFurtherSection';
