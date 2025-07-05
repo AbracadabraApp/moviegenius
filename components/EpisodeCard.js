@@ -50,10 +50,6 @@ function EpisodeCard({ episode, seriesId, onClick }) {
         e.currentTarget.style.transform = 'translateY(0)';
       }}
     >
-      {/* Episode bar spanning the full card */}
-      <div style={styles.episodeBar}>
-        Episode {episode.id}
-      </div>
 
       <div style={styles.mainContent}>
         <div style={styles.textContainer}>
@@ -98,18 +94,6 @@ const styles = {
     marginBottom: '16px',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     overflow: 'hidden',
-  },
-  episodeBar: {
-    height: '30px',
-    backgroundColor: '#4b5563',
-    display: 'flex',
-    alignItems: 'center',
-    paddingLeft: '12px',
-    fontSize: '14px',
-    fontWeight: '500',
-    color: '#ffffff',
-    borderTopLeftRadius: '12px',
-    borderTopRightRadius: '12px',
   },
   mainContent: {
     display: 'flex',

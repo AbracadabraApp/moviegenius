@@ -3,7 +3,6 @@ import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import PhoneFrame from '../../components/PhoneFrame';
 import SimpleSearch from '../../components/SimpleSearch';
-import BackButton from '../../components/BackButton';
 import MediaCard from '../../components/MediaCard';
 import { underlineProperNames } from '../../lib/proper-names';
 import themeMapping from '../../data/theme-episode-mapping.json';
@@ -77,7 +76,6 @@ export default function EpisodePage() {
     return (
       <PhoneFrame>
         <div style={styles.container}>
-          <BackButton variant="icon" context="episode" position="top-left" />
           <div style={styles.inputArea}>
             <SimpleSearch onResults={handleSearchResults} />
           </div>
@@ -93,7 +91,6 @@ export default function EpisodePage() {
     return (
       <PhoneFrame>
         <div style={styles.container}>
-          <BackButton variant="icon" context="episode" position="top-left" />
           <div style={styles.inputArea}>
             <SimpleSearch onResults={handleSearchResults} />
           </div>
@@ -109,7 +106,6 @@ export default function EpisodePage() {
     return (
       <PhoneFrame>
         <div style={styles.container}>
-          <BackButton variant="icon" context="episode" position="top-left" />
           <div style={styles.inputArea}>
             <SimpleSearch onResults={handleSearchResults} />
           </div>
@@ -126,24 +122,12 @@ export default function EpisodePage() {
   return (
     <PhoneFrame>
       <div style={styles.container}>
-        <BackButton variant="icon" context="episode" position="top-left" />
         
         <div style={styles.inputArea}>
           <SimpleSearch onResults={handleSearchResults} />
         </div>
 
         <div style={styles.contentArea}>
-          {/* Breadcrumb */}
-          <div style={styles.breadcrumb}>
-            <span 
-              style={styles.breadcrumbLink}
-              onClick={() => router.push(`/${theme}`)}
-            >
-              {themeData.title}
-            </span>
-            <span style={styles.breadcrumbSeparator}> › </span>
-            <span style={styles.breadcrumbCurrent}>{episodeData.title}</span>
-          </div>
 
           {/* Episode Header */}
           <div style={styles.episodeHeader}>
@@ -232,22 +216,6 @@ const styles = {
     scrollbarWidth: 'none',
     msOverflowStyle: 'none',
     padding: '16px',
-  },
-  breadcrumb: {
-    marginBottom: '16px',
-    fontSize: '14px',
-    color: '#6b7280',
-  },
-  breadcrumbLink: {
-    color: '#3b82f6',
-    cursor: 'pointer',
-    textDecoration: 'underline',
-  },
-  breadcrumbSeparator: {
-    margin: '0 8px',
-  },
-  breadcrumbCurrent: {
-    color: '#374151',
   },
   episodeHeader: {
     marginBottom: '24px',
