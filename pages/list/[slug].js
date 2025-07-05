@@ -214,7 +214,7 @@ export default function MovieListPage() {
           <div style={styles.inputArea}>
             <SimpleSearch onResults={() => {}} />
           </div>
-          <div style={styles.loadingContainer}:
+          <div style={styles.loadingContainer}>
             <div style={styles.loadingText}>Loading list...</div>
           </div>
         </div>
