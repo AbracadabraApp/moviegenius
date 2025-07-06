@@ -21,7 +21,7 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies..
     setFallback(null);
     
     try {
-      const response = await fetch('https://moviegenius-production-3854.up.railway.app/api/enhanced-search', {
+      const response = await fetch('/api/search-movies', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query: q })
