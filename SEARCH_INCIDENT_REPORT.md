@@ -140,6 +140,62 @@ Repurposed existing `/api/health` endpoint to handle search requests:
 3. **Monitoring** for endpoint availability
 4. **Documentation** of working vs problematic deployment patterns
 
+## The 5 Whys Analysis: Extended Resolution Time
+
+### Why did this incident take 6 hours to resolve instead of the typical 30-60 minutes?
+
+**1st Why:** Why did the initial diagnosis take so long?  
+**Answer:** We immediately suspected external causes (DNS, Railway configuration, API keys) instead of questioning our own implementation first.
+
+**2nd Why:** Why did we jump to external causes?  
+**Answer:** The symptom (404 API errors) commonly indicates infrastructure issues, and we followed a "spearfishing" approach rather than systematic debugging methodology.
+
+**3rd Why:** Why did we not follow systematic debugging methodology?  
+**Answer:** Under pressure to fix production issues quickly, we bypassed proper root cause analysis and made assumptions about likely causes.
+
+**4th Why:** Why did pressure lead to poor debugging practices?  
+**Answer:** We lacked established incident response procedures that enforce systematic investigation steps regardless of time pressure.
+
+**5th Why:** Why do we lack proper incident response procedures?  
+**Answer:** No formal incident management framework has been implemented, leading to ad-hoc problem-solving approaches that prioritize speed over methodology.
+
+### Key Learning: The "Implementation First" Principle
+
+The most critical insight from this incident is the **"Implementation First"** debugging principle:
+
+> "Developers should always question their implementation before hypothesizing about external causes"
+
+### Time Breakdown Analysis
+
+| Phase | Duration | Approach | Should Have Been |
+|-------|----------|----------|------------------|
+| Initial Investigation | 1 hour | External causes (DNS, Railway) | Implementation review (15 min) |
+| Multiple API Rewrites | 3 hours | Creating new endpoints | Code comparison analysis (30 min) |
+| Deployment Attempts | 1.5 hours | "Try different approach" | Systematic route testing (30 min) |
+| Working Solution | 0.5 hours | Override existing endpoint | Should have been first attempt |
+
+### Anti-Patterns That Extended Resolution
+
+1. **External Blame Bias:** Assumed infrastructure failure before code review
+2. **Solution Multiplication:** Created multiple API endpoints instead of analyzing why first one failed  
+3. **Random Walk Debugging:** Tried various solutions without understanding root cause
+4. **Pressure-Driven Shortcuts:** Skipped systematic analysis due to production urgency
+
+### What Should Have Happened (30-minute resolution)
+
+1. **Minute 0-5:** Compare working (`/api/health`) vs failing endpoints
+2. **Minute 5-15:** Identify that only new routes fail, old routes work
+3. **Minute 15-20:** Conclude Next.js route registration issue
+4. **Minute 20-25:** Implement override solution using working endpoint
+5. **Minute 25-30:** Deploy and verify resolution
+
+### Process Improvements Required
+
+1. **Mandatory Implementation Review:** All incidents must start with code/implementation analysis
+2. **Comparison Analysis:** Always identify what works vs what doesn't before external investigation
+3. **Time-boxed Phases:** Limit investigation phases to prevent endless debugging cycles
+4. **Escalation Triggers:** If resolution exceeds 1 hour, mandate systematic methodology
+
 ---
 
 **Report Prepared By:** Systems Team  
