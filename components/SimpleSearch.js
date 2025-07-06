@@ -21,7 +21,7 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies..
     setFallback(null);
     
     try {
-      const response = await fetch('/api/search-movies', {
+      const response = await fetch('/api/health', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query: q })
