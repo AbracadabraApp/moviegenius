@@ -1,7 +1,11 @@
 // pages/api/health.js - TEMPORARY SEARCH OVERRIDE
 export default async function handler(req, res) {
+  console.log('🔍 Health endpoint called with method:', req.method);
+  console.log('🔍 Request body:', req.body);
+  
   // Original health check for GET requests
   if (req.method === 'GET') {
+    console.log('✅ Returning GET health response');
     return res.status(200).json({ 
       status: 'ok',
       timestamp: new Date().toISOString()
