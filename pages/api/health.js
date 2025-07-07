@@ -1,4 +1,12 @@
 // pages/api/health.js - TEMPORARY SEARCH OVERRIDE
+export const config = {
+  api: {
+    bodyParser: {
+      sizeLimit: '1mb',
+    },
+  },
+}
+
 export default async function handler(req, res) {
   console.log('🔍 Health endpoint called with method:', req.method);
   console.log('🔍 Request body:', req.body);
