@@ -97,6 +97,7 @@ export default function MediaCard({
     generateOrganicSlug();
   }, []); // 🔒 LOCKED: Only run once per component
 
+
   // Load initial state from localStorage
   useEffect(() => {
     setHearted(FavoritesManager.isMovieHearted(mediaId));

@@ -1,17 +1,15 @@
 // Dynamic episode page
 import { useRouter } from 'next/router';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import PhoneFrame from '../../components/PhoneFrame';
 import SimpleSearch from '../../components/SimpleSearch';
 import MediaCard from '../../components/MediaCard';
 import { underlineProperNames } from '../../lib/proper-names';
 import themeMapping from '../../data/theme-episode-mapping.json';
 
-export default function EpisodePage() {
+export default function EpisodePage({ theme, episode, episodeData, themeData }) {
   const router = useRouter();
-  const { theme, episode } = router.query;
-  const [episodeData, setEpisodeData] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
   const handleSearchResults = (results) => {
@@ -29,48 +27,21 @@ export default function EpisodePage() {
     }
   };
 
-  useEffect(() => {
-    if (!theme || !episode) return;
-
-    const loadEpisode = async () => {
-      try {
-        setLoading(true);
-        setError(null);
-
-        // Find the episode data from mapping
-        const themeData = themeMapping.themes[theme];
-        if (!themeData) {
-          throw new Error('Theme not found');
-        }
-
-        const episodeInfo = themeData.episodes.find(ep => ep.id === episode);
-        if (!episodeInfo) {
-          throw new Error('Episode not found');
-        }
-
-        // Load the episode content from JSON file
-        const response = await fetch(`/data/episodes/${episodeInfo.file}`);
-        if (!response.ok) {
-          throw new Error('Episode content not found');
-        }
-
-        const episodeContent = await response.json();
-        
-        setEpisodeData({
-          ...episodeInfo,
-          content: episodeContent
-        });
-
-      } catch (err) {
-        console.error('Error loading episode:', err);
-        setError(err.message);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    loadEpisode();
-  }, [theme, episode]);
+  // If router is still loading, show loading state
+  if (router.isFallback) {
+    return (
+      <PhoneFrame>
+        <div style={styles.container}>
+          <div style={styles.inputArea}>
+            <SimpleSearch onResults={handleSearchResults} />
+          </div>
+          <div style={styles.loadingContainer}>
+            <div style={styles.loadingText}>Loading episode...</div>
+          </div>
+        </div>
+      </PhoneFrame>
+    );
+  }
 
   if (loading) {
     return (
@@ -117,10 +88,10 @@ export default function EpisodePage() {
     );
   }
 
-  const themeData = themeMapping.themes[theme];
+  // themeData is now passed as a prop from getStaticProps
 
   return (
-    <PhoneFrame>
+    <PhoneFrame active="genius">
       <div style={styles.container}>
         
         <div style={styles.inputArea}>
@@ -129,28 +100,66 @@ export default function EpisodePage() {
 
         <div style={styles.contentArea}>
 
-          {/* Episode Header */}
-          <div style={styles.episodeHeader}>
-            <h1 style={styles.episodeTitle}>{episodeData.title}</h1>
-            <p style={styles.episodeSubtitle}>{episodeData.subtitle}</p>
-          </div>
+          {/* Hero Section */}
+          {(() => {
+            // Use correct hero image mapping for film noir
+            const heroImageSrc = (theme === 'film-noir' && (() => {
+                const heroImageMap = {
+                  'german-expressionism': '1-german-expressionism.jpg',
+                  'from-novels-to-noir': '2-novel.jpg',
+                  'urban-anxiety': '3-mitchum.jpg',
+                  'femme-fatales': '4-femme-fateles.jpg',
+                  'moral-ambiguity': '5-moral-ambiguity.jpg',
+                  'noirs-legacy': '6-noirs-legacy.jpg'
+                };
+                const imageName = heroImageMap[episode];
+                return imageName ? `/images/hero/film-noir/${imageName}` : null;
+              })());
+              
+            return heroImageSrc ? (
+              <>
+                <div style={styles.heroSection}>
+                  <img 
+                    src={heroImageSrc}
+                    alt="Hero Image" 
+                    style={styles.heroImage}
+                  />
+                </div>
+                <div style={styles.heroTitleSection}>
+                  <h1 style={styles.heroTitle}>{episodeData.episode?.title || episodeData.title}</h1>
+                  <p style={styles.heroSubtitle}>{episodeData.episode?.subtitle || episodeData.subtitle}</p>
+                </div>
+              </>
+            ) : (
+              <div style={styles.episodeHeader}>
+                <h1 style={styles.episodeTitle}>{episodeData.episode?.title || episodeData.title}</h1>
+                <p style={styles.episodeSubtitle}>{episodeData.episode?.subtitle || episodeData.subtitle}</p>
+              </div>
+            );
+          })()}
+
 
           {/* Episode Content */}
           {episodeData.content && (
             <div style={styles.episodeContent}>
               {/* Opener */}
-              {episodeData.content.content?.opener && (
+              {episodeData.content?.opener && (
                 <div style={styles.opener}>
-                  {underlineProperNames(episodeData.content.content.opener)}
+                  {underlineProperNames(episodeData.content.opener)}
                 </div>
               )}
 
               {/* Content Sections */}
-              {episodeData.content.content?.sections?.map((section, index) => (
+              {episodeData.content?.sections?.map((section, index) => (
                 <div key={index}>
                   {section.type === 'text' && (
                     <div style={styles.textSection}>
                       {underlineProperNames(section.content)}
+                    </div>
+                  )}
+                  {section.type === 'subhead' && (
+                    <div style={styles.subheadSection}>
+                      <h3 style={styles.subheadTitle}>{section.content}</h3>
                     </div>
                   )}
                   {section.type === 'movies' && section.movies && (
@@ -163,6 +172,8 @@ export default function EpisodePage() {
                             title={movie.title}
                             year={movie.year}
                             initialSlug={movie.slug}
+                            initialPoster={movie.poster_url}
+                            initialStreaming={movie.streaming}
                             tmdbId={movie.tmdb_id}
                           />
                         ))}
@@ -173,24 +184,66 @@ export default function EpisodePage() {
               ))}
 
               {/* More Ideas */}
-              {episodeData.content.content?.moreIdeas?.movies && (
+              {episodeData.content?.moreIdeas?.movies && (
                 <div style={styles.moreIdeasSection}>
                   <h3 style={styles.moreIdeasTitle}>
-                    {episodeData.content.content.moreIdeas.title || 'Related Films'}
+                    {episodeData.content.moreIdeas.title || 'Related Films'}
                   </h3>
                   <div style={styles.movieList}>
-                    {episodeData.content.content.moreIdeas.movies.map((movie, index) => (
+                    {episodeData.content.moreIdeas.movies.map((movie, index) => (
                       <MediaCard
                         key={`more-${index}`}
                         title={movie.title}
                         year={movie.year}
                         initialSlug={movie.slug}
+                        initialPoster={movie.poster_url}
+                        initialStreaming={movie.streaming}
                         tmdbId={movie.tmdb_id}
                       />
                     ))}
                   </div>
                 </div>
               )}
+
+              {/* Episode Navigation */}
+              <div style={styles.navigationSection}>
+                <h3 style={styles.navigationTitle}>More {themeData?.title || 'Episodes'}</h3>
+                <div style={styles.episodeGrid}>
+                  {themeData?.episodes?.map((ep, index) => {
+                    if (ep.id === episode) return null; // Hide current episode
+                    return (
+                      <button
+                        key={ep.id}
+                        onClick={() => router.push(`/${theme}/${ep.id}`)}
+                        style={styles.episodeButton}
+                      >
+                        <div style={styles.episodeButtonTitle}>{ep.title}</div>
+                        <div style={styles.episodeButtonSubtitle}>{ep.subtitle}</div>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Theme Navigation */}
+              <div style={styles.navigationSection}>
+                <h3 style={styles.navigationTitle}>Explore Other Themes</h3>
+                <div style={styles.themeGrid}>
+                  {Object.entries(themeMapping.themes).map(([themeKey, themeInfo]) => {
+                    if (themeKey === theme) return null; // Hide current theme
+                    return (
+                      <button
+                        key={themeKey}
+                        onClick={() => router.push(`/${themeKey}`)}
+                        style={styles.themeButton}
+                      >
+                        <div style={styles.themeButtonTitle}>{themeInfo.title}</div>
+                        <div style={styles.themeButtonDescription}>{themeInfo.description}</div>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
           )}
         </div>
@@ -205,20 +258,26 @@ const styles = {
     flexDirection: 'column',
     height: '100%',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    backgroundColor: '#ffffff',
   },
   inputArea: {
     padding: '16px',
-    backgroundColor: '#ffffff',
+    backgroundColor: '#1a1a1a',
+    borderBottom: '1px solid #333333',
   },
   contentArea: {
     flex: 1,
     overflowY: 'scroll',
     scrollbarWidth: 'none',
     msOverflowStyle: 'none',
-    padding: '16px',
+    padding: '0 0 20px 0',
+    background: 'linear-gradient(to bottom, #1a1a1a 0%, #374151 100%)',
   },
   episodeHeader: {
     marginBottom: '24px',
+    padding: '16px',
+    backgroundColor: '#f8fafc',
+    borderBottom: '1px solid #e2e8f0',
   },
   episodeTitle: {
     fontSize: '24px',
@@ -237,6 +296,10 @@ const styles = {
     fontSize: '15px',
     lineHeight: '1.6',
     color: '#374151',
+    padding: '16px',
+    backgroundColor: '#ffffff',
+    margin: '16px 16px 16px 16px',
+    borderRadius: '8px',
   },
   opener: {
     fontSize: '16px',
@@ -254,6 +317,19 @@ const styles = {
     color: '#374151',
     lineHeight: '1.6',
     marginBottom: '16px',
+  },
+  subheadSection: {
+    marginTop: '24px',
+    marginBottom: '16px',
+  },
+  subheadTitle: {
+    fontSize: '18px',
+    fontWeight: '600',
+    color: '#d4af37',
+    marginBottom: '8px',
+    lineHeight: '1.3',
+    textTransform: 'uppercase',
+    letterSpacing: '1px',
   },
   movieSection: {
     marginTop: '16px',
@@ -295,4 +371,213 @@ const styles = {
     fontSize: '16px',
     color: '#dc2626',
   },
+  
+  // Hero Section Styles
+  heroSection: {
+    position: 'relative',
+    width: '100%',
+    aspectRatio: '2 / 1',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    overflow: 'hidden',
+    marginBottom: '0',
+    borderRadius: '0',
+  },
+  heroImage: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+    zIndex: 1,
+  },
+  heroTitleSection: {
+    backgroundColor: '#1a1a1a',
+    padding: '4px 20px 16px 20px',
+    textAlign: 'left',
+  },
+  heroTitle: {
+    fontSize: '28px',
+    fontWeight: '600',
+    color: 'white',
+    margin: '0 0 2px 0',
+    lineHeight: '1.1',
+    textShadow: '0 2px 4px rgba(0,0,0,0.8)',
+    wordWrap: 'break-word',
+    hyphens: 'auto',
+  },
+  heroSubtitle: {
+    fontSize: '16px',
+    color: '#d4af37',
+    lineHeight: '1.3',
+    margin: 0,
+    opacity: 1,
+    textShadow: '0 1px 2px rgba(0,0,0,0.8)',
+    textTransform: 'uppercase',
+    letterSpacing: '1px',
+    fontWeight: '600',
+    wordWrap: 'break-word',
+    hyphens: 'auto',
+  },
+
+  // Navigation Styles
+  navigationSection: {
+    marginTop: '40px',
+    padding: '0',
+  },
+  navigationTitle: {
+    fontSize: '20px',
+    fontWeight: '600',
+    color: '#d4af37',
+    marginBottom: '16px',
+    textAlign: 'center',
+    textTransform: 'uppercase',
+    letterSpacing: '1px',
+  },
+  episodeGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+    gap: '12px',
+    marginBottom: '20px',
+    justifyItems: 'start',
+  },
+  episodeButton: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    padding: '16px',
+    backgroundColor: '#ffffff',
+    border: '1px solid #e5e7eb',
+    borderRadius: '12px',
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+    textAlign: 'left',
+    boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
+    width: '280px',
+  },
+  episodeButtonTitle: {
+    fontSize: '16px',
+    fontWeight: '600',
+    color: '#111827',
+    marginBottom: '4px',
+    lineHeight: '1.3',
+  },
+  episodeButtonSubtitle: {
+    fontSize: '14px',
+    color: '#6b7280',
+    lineHeight: '1.4',
+  },
+  themeGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+    gap: '12px',
+    marginBottom: '20px',
+    justifyItems: 'start',
+  },
+  themeButton: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    padding: '16px',
+    backgroundColor: '#f8fafc',
+    border: '1px solid #e2e8f0',
+    borderRadius: '12px',
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+    textAlign: 'left',
+    boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
+    width: '280px',
+  },
+  themeButtonTitle: {
+    fontSize: '16px',
+    fontWeight: '600',
+    color: '#111827',
+    marginBottom: '6px',
+    lineHeight: '1.3',
+  },
+  themeButtonDescription: {
+    fontSize: '14px',
+    color: '#6b7280',
+    lineHeight: '1.4',
+  },
 };
+
+// getStaticPaths - generate all possible theme/episode combinations
+export async function getStaticPaths() {
+  const paths = [];
+  
+  // Generate paths for all theme/episode combinations
+  Object.keys(themeMapping.themes).forEach(themeId => {
+    const theme = themeMapping.themes[themeId];
+    theme.episodes.forEach(episode => {
+      paths.push({
+        params: {
+          theme: themeId,
+          episode: episode.id
+        }
+      });
+    });
+  });
+
+  console.log(`🚀 Generated ${paths.length} static episode paths`);
+  
+  return {
+    paths,
+    fallback: false // Return 404 for non-existent paths
+  };
+}
+
+// getStaticProps - fetch episode data at build time
+export async function getStaticProps({ params }) {
+  const { theme, episode } = params;
+  
+  try {
+    // Validate theme exists
+    const themeData = themeMapping.themes[theme];
+    if (!themeData) {
+      return { notFound: true };
+    }
+
+    // Find the episode in the theme
+    const episodeInfo = themeData.episodes.find(ep => ep.id === episode);
+    if (!episodeInfo) {
+      return { notFound: true };
+    }
+
+    // Load episode content from JSON file
+    const fs = await import('fs');
+    const path = await import('path');
+    
+    const episodeFilePath = path.default.join(process.cwd(), 'data', 'episodes', episodeInfo.file);
+    
+    if (!fs.default.existsSync(episodeFilePath)) {
+      console.error(`Episode file not found: ${episodeInfo.file}`);
+      return { notFound: true };
+    }
+
+    const episodeContent = JSON.parse(fs.default.readFileSync(episodeFilePath, 'utf8'));
+    
+    // Merge episode info with content
+    const episodeData = {
+      ...episodeInfo,
+      ...episodeContent,
+      theme: themeData
+    };
+
+    return {
+      props: {
+        theme,
+        episode,
+        episodeData,
+        themeData
+      },
+      revalidate: 86400 // Revalidate once per day
+    };
+    
+  } catch (error) {
+    console.error('Error loading episode data:', error);
+    return { notFound: true };
+  }
+}
