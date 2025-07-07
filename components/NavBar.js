@@ -79,6 +79,7 @@ const styles = {
     borderTopRightRadius: '20px',
     padding: '16px 0 20px 0',
     boxShadow: '0 -4px 20px rgba(0,0,0,0.4)',
+    margin: '0 -1px',
   },
   navMobile: {
     position: 'fixed',
