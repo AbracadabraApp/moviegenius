@@ -122,8 +122,7 @@ export default async function handler(req, res) {
       query: searchQuery,
       hasResults,
       fallback: !hasResults ? {
-        message: "We didn't find a result, but would you like to pass it on to our Movie Genius?",
-        askUrl: `/genius?q=${encodeURIComponent(searchQuery)}`
+        message: "No results found. Try a different search term or check your spelling."
       } : null
     });
 

@@ -11,10 +11,12 @@ export default function MoviesPage() {
   const [searchResults, setSearchResults] = useState([]);
   const [showSearchResults, setShowSearchResults] = useState(false);
 
-  // Handle search results
+  // Handle search results from multi-search API
   const handleSearchResults = (results) => {
-    setSearchResults(results);
-    setShowSearchResults(results.length > 0);
+    // Multi-search returns {movies: [], people: []} - extract movies array
+    const movies = results.movies || results || [];
+    setSearchResults(movies);
+    setShowSearchResults(movies.length > 0);
   };
 
   // Handle movie click - navigate to movie detail page  
