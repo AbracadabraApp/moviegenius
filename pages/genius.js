@@ -221,7 +221,7 @@ export default function GeniusPage() {
           <div style={styles.section}>
             <div style={styles.heroSection}>
               <p style={styles.goldSubtitle}><span style={{fontSize: '28px', color: '#ffffff', letterSpacing: '1px'}}>DON'T BINGE WATCH TV</span><br /><span style={{fontSize: '18px'}}>FEAST ON GREAT FILMS INSTEAD</span></p>
-              <img src="http://localhost:3001/images/hero-rotation/hero-9.jpg" alt="Film Education Hero" style={styles.heroImage} />
+              <img src="/images/hero-rotation/hero-9.jpg" alt="Film Education Hero" style={styles.heroImage} />
             </div>
 
             <div style={styles.contentSection}>
