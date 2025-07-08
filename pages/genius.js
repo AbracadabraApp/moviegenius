@@ -21,17 +21,9 @@ export default function GeniusPage() {
     completedIntro: false
   });
   const [showAllThemes, setShowAllThemes] = useState(false);
-  const [currentRotation, setCurrentRotation] = useState(0);
   const [modalStep, setModalStep] = useState(null); // No modal on genius page - skip straight to themes
   const [showAllPlatforms, setShowAllPlatforms] = useState(false);
 
-  // Simple test rotation - just pick a random hero image on each reload
-  useEffect(() => {
-    // Available hero images: 1, 2, 5, 6, 7, 8, 9, 10, 11
-    const availableHeros = [1, 2, 5, 6, 7, 8, 9, 10, 11];
-    const randomIndex = Math.floor(Math.random() * availableHeros.length);
-    setCurrentRotation(availableHeros[randomIndex]);
-  }, []);
 
   // Movie poster rotation index (0-2 for the 3 posters in each array)
   const movieRotationIndex = Math.floor(Math.random() * 3);
@@ -229,7 +221,7 @@ export default function GeniusPage() {
           <div style={styles.section}>
             <div style={styles.heroSection}>
               <p style={styles.goldSubtitle}><span style={{fontSize: '28px', color: '#ffffff', letterSpacing: '1px'}}>DON'T BINGE WATCH TV</span><br /><span style={{fontSize: '18px'}}>FEAST ON GREAT FILMS INSTEAD</span></p>
-              <img src={`/images/hero-rotation/hero-${currentRotation}.jpg`} alt="Film Education Hero" style={styles.heroImage} />
+              <img src="http://localhost:3001/images/hero-rotation/hero-9.jpg" alt="Film Education Hero" style={styles.heroImage} />
             </div>
 
             <div style={styles.contentSection}>
