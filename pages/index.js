@@ -21,11 +21,10 @@ export default function HomePage() {
     completedIntro: false
   });
   const [showAllThemes, setShowAllThemes] = useState(false);
-  const [currentRotation, setCurrentRotation] = useState(0);
   const [modalStep, setModalStep] = useState(null); // 'manifesto', 'platforms', null
   const [showAllPlatforms, setShowAllPlatforms] = useState(false);
 
-  // Initialize modal and rotation state
+  // Initialize modal state
   useEffect(() => {
     // Check if user has seen the manifesto before
     const hasSeenManifesto = localStorage.getItem('moviegenius_manifesto_seen');
@@ -38,10 +37,6 @@ export default function HomePage() {
       // Returning user who hasn't configured platforms yet
       setModalStep('platforms');
     }
-    
-    // Set random hero image
-    const randomHero = Math.floor(Math.random() * 26) + 1;
-    setCurrentRotation(randomHero);
   }, []);
 
   // 10 Education Themes - All displayed in beautiful grid
@@ -72,28 +67,28 @@ export default function HomePage() {
       title: 'Film Noir Fundamentals',
       description: 'Shadows, moral ambiguity, and the dark side of cinema',
       category: 'Classic Genres',
-      image: movieRotations[0][currentRotation]
+      image: movieRotations[0][0]
     },
     {
       id: 'horror-evolution',
       title: 'Horror Through Time',
       description: 'From Gothic tales to psychological terror',
       category: 'Genre Evolution',
-      image: movieRotations[1][currentRotation]
+      image: movieRotations[1][0]
     },
     {
       id: 'comedy-masters',
       title: 'Masters of Comedy',
       description: 'Making audiences laugh across generations',
       category: 'Comedy/Timing',
-      image: movieRotations[2][currentRotation]
+      image: movieRotations[2][0]
     },
     {
       id: 'women-pioneers',
       title: 'Women Behind the Camera',
       description: 'Pioneering female voices in cinema history',
       category: 'Directors/History',
-      image: movieRotations[3][currentRotation]
+      image: movieRotations[3][0]
     }
   ];
 
@@ -331,7 +326,7 @@ export default function HomePage() {
           <div style={styles.section}>
             <div style={styles.heroSection}>
               <p style={styles.goldSubtitle}><span style={{fontSize: '28px', color: '#ffffff', letterSpacing: '1px'}}>DON'T BINGE WATCH TV</span><br /><span style={{fontSize: '18px'}}>FEAST ON GREAT FILMS INSTEAD</span></p>
-              <img src={`/images/hero-rotation/hero-${currentRotation}.jpg`} alt="Film Education Hero" style={styles.heroImage} />
+              <img src="http://localhost:3001/images/hero-rotation/hero-8.jpg" alt="Film Education Hero" style={styles.heroImage} />
             </div>
 
             <div style={styles.contentSection}>
