@@ -23,20 +23,20 @@ export default function HomePage() {
   const [showAllThemes, setShowAllThemes] = useState(false);
   const [modalStep, setModalStep] = useState(null); // 'manifesto', 'platforms', null
   const [showAllPlatforms, setShowAllPlatforms] = useState(false);
+  const [isClient, setIsClient] = useState(false);
 
   // Initialize modal state
   useEffect(() => {
+    setIsClient(true);
+    
     // Check if user has seen the manifesto before
     const hasSeenManifesto = localStorage.getItem('moviegenius_manifesto_seen');
-    const hasSelectedPlatforms = localStorage.getItem('moviegenius_platforms_configured');
     
     if (!hasSeenManifesto) {
       // First time visitor - show the manifesto
       setModalStep('manifesto');
-    } else if (!hasSelectedPlatforms) {
-      // Returning user who hasn't configured platforms yet
-      setModalStep('platforms');
     }
+    // Platform selector is no longer shown automatically - keep component for future use
   }, []);
 
   // 10 Education Themes - All displayed in beautiful grid
@@ -47,10 +47,10 @@ export default function HomePage() {
     'Women Directors',
     'International Masters',
     'Acclaimed Directors',
-    'Revolutionary Movements',
+    'Movements in Film',
     'The Magic of Moviemaking',
     'Cinema Through the Decades',
-    'Cinema\'s Cultural Impact'
+    'Hollywood Transformed'
   ];
 
   // Sample episodes for learning preferences
@@ -154,10 +154,10 @@ export default function HomePage() {
       'Women Directors': '/women-directors',
       'International Masters': '/world-cinema',
       'Acclaimed Directors': '/acclaimed-directors',
-      'Revolutionary Movements': '/avant-garde-film',
+      'Movements in Film': '/avant-garde-film',
       'The Magic of Moviemaking': '/magic-of-moviemaking',
       'Cinema Through the Decades': '/cinema-through-decades',
-      'Cinema\'s Cultural Impact': '/cinema-cultural-impact'
+      'Hollywood Transformed': '/cinema-cultural-impact'
     };
     
     const targetRoute = themeRoutes[theme];
@@ -210,7 +210,7 @@ export default function HomePage() {
       <div style={styles.container}>
         
         {/* Modal System */}
-        {modalStep && (
+        {isClient && modalStep && (
           <div style={styles.manifestoOverlay}>
             {modalStep === 'manifesto' && (
               <div style={styles.manifestoModal}>
@@ -228,11 +228,12 @@ export default function HomePage() {
                     onClick={() => {
                       // Mark manifesto as seen so it never shows again
                       localStorage.setItem('moviegenius_manifesto_seen', 'true');
-                      setModalStep('platforms');
+                      // Skip platform selector and go straight to themes
+                      setModalStep(null);
                     }}
                     style={styles.manifestoContinueButton}
                   >
-                    Continue
+                    Enjoy the Show
                   </button>
                 </div>
               </div>
@@ -330,16 +331,7 @@ export default function HomePage() {
             </div>
 
             <div style={styles.contentSection}>
-              <div style={styles.headerWithSettings}>
-                <p style={styles.sectionQuestion}>Which film topics interest you most?</p>
-                <button 
-                  onClick={() => setModalStep('platforms')}
-                  style={styles.settingsButton}
-                  title="Configure streaming platforms"
-                >
-                  ⚙️
-                </button>
-              </div>
+              <p style={styles.sectionQuestion}>Which film topics interest you most?</p>
               <div style={styles.themeGrid}>
               {allEducationThemes.map(theme => (
                 <button
@@ -459,8 +451,8 @@ export default function HomePage() {
                     key={index}
                     style={{
                       ...styles.tag,
-                      fontSize: Math.random() > 0.5 ? '14px' : '12px',
-                      opacity: Math.random() * 0.4 + 0.6
+                      fontSize: index % 2 === 0 ? '14px' : '12px',
+                      opacity: 0.6 + (index % 5) * 0.08
                     }}
                   >
                     {topic}
@@ -485,7 +477,7 @@ export default function HomePage() {
               <h4 style={styles.footerTitle}>Popular Series</h4>
               <div style={styles.footerEpisodes}>
                 <span style={styles.footerEpisode}>Film Noir Fundamentals</span>
-                <span style={styles.footerEpisode}>Revolutionary Movements</span>
+                <span style={styles.footerEpisode}>Movements in Film</span>
                 <span style={styles.footerEpisode}>Women Directors</span>
               </div>
             </div>
@@ -847,27 +839,6 @@ const styles = {
     textShadow: '0 1px 2px rgba(0, 0, 0, 0.05)',
   },
   
-  headerWithSettings: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    position: 'relative',
-  },
-  
-  settingsButton: {
-    position: 'absolute',
-    top: '20px',
-    right: '0px',
-    background: 'rgba(255, 255, 255, 0.1)',
-    border: '1px solid rgba(255, 255, 255, 0.2)',
-    borderRadius: '8px',
-    padding: '8px 10px',
-    fontSize: '16px',
-    cursor: 'pointer',
-    color: '#ffffff',
-    transition: 'all 0.2s ease',
-    backdropFilter: 'blur(10px)',
-  },
   
   platformButton: {
     padding: '6px 12px',

@@ -125,10 +125,10 @@ export default function EpisodePage({ theme, episode, episodeData, themeData }) 
                     style={styles.heroImage}
                   />
                 </div>
-                <div style={styles.heroTitleSection}>
+                <button style={styles.heroTitleButton}>
                   <h1 style={styles.heroTitle}>{episodeData.episode?.title || episodeData.title}</h1>
                   <p style={styles.heroSubtitle}>{episodeData.episode?.subtitle || episodeData.subtitle}</p>
-                </div>
+                </button>
               </>
             ) : (
               <div style={styles.episodeHeader}>
@@ -158,13 +158,17 @@ export default function EpisodePage({ theme, episode, episodeData, themeData }) 
                     </div>
                   )}
                   {section.type === 'subhead' && (
-                    <div style={styles.subheadSection}>
+                    <button style={styles.subheadButton}>
                       <h3 style={styles.subheadTitle}>{section.content}</h3>
-                    </div>
+                    </button>
                   )}
                   {section.type === 'movies' && section.movies && (
                     <div style={styles.movieSection}>
-                      <div style={styles.movieSectionHeader}>Featured Films</div>
+                      <div style={styles.movieSectionHeader}>
+                        <div style={styles.sectionDivider} />
+                        <span style={styles.sectionLabel}>Featured Films</span>
+                        <div style={styles.sectionDivider} />
+                      </div>
                       <div style={styles.movieList}>
                         {section.movies.map((movie, movieIndex) => (
                           <MediaCard
@@ -263,7 +267,6 @@ const styles = {
   inputArea: {
     padding: '16px',
     backgroundColor: '#1a1a1a',
-    borderBottom: '1px solid #333333',
   },
   contentArea: {
     flex: 1,
@@ -318,28 +321,47 @@ const styles = {
     lineHeight: '1.6',
     marginBottom: '16px',
   },
-  subheadSection: {
-    marginTop: '24px',
-    marginBottom: '16px',
+  subheadButton: {
+    marginTop: '4px',
+    marginBottom: '4px',
+    padding: '0',
+    backgroundColor: 'transparent',
+    border: 'none',
+    textAlign: 'left',
+    width: '100%',
   },
   subheadTitle: {
     fontSize: '18px',
     fontWeight: '600',
     color: '#d4af37',
-    marginBottom: '8px',
+    margin: '0',
     lineHeight: '1.3',
     textTransform: 'uppercase',
     letterSpacing: '1px',
+    wordWrap: 'break-word',
+    hyphens: 'auto',
   },
   movieSection: {
     marginTop: '16px',
     marginBottom: '16px',
   },
   movieSectionHeader: {
-    fontSize: '14px',
-    fontWeight: '600',
-    color: '#374151',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '16px',
     marginBottom: '12px',
+  },
+  sectionDivider: {
+    flex: 1,
+    height: '1px',
+    backgroundColor: '#d4af37',
+  },
+  sectionLabel: {
+    fontSize: '12px',
+    fontWeight: '600',
+    textTransform: 'uppercase',
+    letterSpacing: '1px',
+    color: '#d4af37',
   },
   movieList: {
     display: 'flex',
@@ -393,10 +415,14 @@ const styles = {
     objectFit: 'cover',
     zIndex: 1,
   },
-  heroTitleSection: {
+  heroTitleButton: {
     backgroundColor: '#1a1a1a',
     padding: '4px 20px 16px 20px',
     textAlign: 'left',
+    paddingLeft: '36px',
+    borderLeft: '8px solid #d4af37',
+    border: 'none',
+    width: '100%',
   },
   heroTitle: {
     fontSize: '28px',

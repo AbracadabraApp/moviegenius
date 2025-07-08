@@ -30,7 +30,7 @@ export default function EpisodeFooter({ currentTheme, currentEpisode }) {
     'Women Directors',
     'International Masters',
     'Acclaimed Directors',
-    'Revolutionary Movements',
+    'Movements in Film',
     'The Magic of Moviemaking',
     'Cinema Through the Decades',
     'Hollywood Transformed'

@@ -179,7 +179,6 @@ const styles = {
   header: {
     backgroundColor: '#ffffff',
     padding: '16px',
-    borderBottom: '1px solid #e5e7eb',
   },
   content: {
     flex: 1,

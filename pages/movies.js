@@ -81,7 +81,6 @@ const styles = {
   },
   header: {
     backgroundColor: '#ffffff',
-    borderBottom: '1px solid #e5e7eb',
     padding: '16px',
     gap: '16px',
   },
