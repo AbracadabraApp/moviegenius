@@ -14,11 +14,14 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies a
     if (!q) {
       onResults({ movies: [], people: [] });
       setFallback(null);
+      setIsLoading(false);
       return;
     }
 
     setIsLoading(true);
     setFallback(null);
+    
+    console.log(`🔍 Searching for: "${q}"`);
     
     try {
       const response = await fetch('/api/multi-search', {
@@ -29,11 +32,13 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies a
 
       if (response.ok) {
         const data = await response.json();
+        console.log(`✅ Search results:`, data);
         
         // V1 Feature: Auto-navigate to single movie result
-        if (data.movies.length === 1) {
+        if (data.movies && data.movies.length === 1) {
           const movie = data.movies[0];
           if (movie.tmdb_id) {
+            console.log(`🎬 Auto-navigating to: ${movie.title}`);
             router.push(`/movie/${movie.tmdb_id}`);
             return;
           }
@@ -41,16 +46,19 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies a
         
         onResults(data || { movies: [], people: [] });
         
-        // V1 Feature: Handle fallback for empty results
+        // Handle fallback for empty results
         if (data.fallback) {
           setFallback(data.fallback);
         }
       } else {
+        console.error(`❌ Search failed:`, response.status, response.statusText);
         onResults({ movies: [], people: [] });
+        setFallback({ message: "Search failed. Please try again." });
       }
     } catch (error) {
       console.error('Search error:', error);
       onResults({ movies: [], people: [] });
+      setFallback({ message: "Search failed. Please try again." });
     } finally {
       setIsLoading(false);
     }
@@ -76,9 +84,10 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies a
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder={placeholder}
+            placeholder={isLoading ? "Searching..." : placeholder}
             style={styles.input}
             autoComplete="off"
+            disabled={isLoading}
           />
           {query && (
             <button
@@ -92,16 +101,10 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies a
         </div>
       </form>
       
-      {/* V1 Feature: Movie Genius fallback */}
+      {/* No results message */}
       {fallback && (
         <div style={styles.fallbackBox}>
           <span style={styles.fallbackText}>{fallback.message}</span>
-          <button 
-            onClick={() => router.push(fallback.askUrl)} 
-            style={{...styles.fallbackLink, background: 'none', border: 'none', cursor: 'pointer'}}
-          >
-            Ask Movie Genius →
-          </button>
         </div>
       )}
     </div>
