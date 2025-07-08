@@ -51,14 +51,33 @@ export default function FilmNoirPage() {
     <PhoneFrame>
       <div style={styles.container}>
         
-        <div style={styles.fixedInputArea}>
+        {/* Search Area */}
+        <div style={styles.inputArea}>
           <SimpleSearch 
             onResults={handleSearchResults}
             placeholder="Search film noir movies..."
           />
         </div>
         
-        <div style={styles.scrollableContent}>
+        {/* Content Area */}
+        <div style={styles.contentArea}>
+          
+          {/* Hero Section */}
+          <div style={styles.heroSection}>
+            <video 
+              src="/images/hero/film-noir/noir2.mov" 
+              autoPlay
+              muted
+              loop
+              playsInline
+              style={styles.heroImage}
+            />
+          </div>
+          <button style={styles.heroTitleButton}>
+            <h1 style={styles.heroTitle}>Film Noir</h1>
+            <p style={styles.heroSubtitle}>Shadows, moral ambiguity, and the dark side of cinema</p>
+          </button>
+          
           {showSearchResults ? (
             <div style={styles.searchResults}>
               <div style={styles.resultsHeader}>
@@ -84,21 +103,41 @@ export default function FilmNoirPage() {
               {loading ? (
                 <div style={styles.loadingText}>Loading episodes...</div>
               ) : (
-                <div style={styles.episodeList}>
+                <div style={styles.episodeGrid}>
                   {episodes.map((episode, index) => (
-                    <div 
+                    <button 
                       key={episode.id}
-                      style={styles.episodeCard}
+                      style={styles.episodeButton}
                       onClick={() => handleEpisodeClick(episode)}
                     >
-                      <h3 style={styles.episodeTitle}>{episode.title}</h3>
-                      <p style={styles.episodeSubtitle}>{episode.subtitle}</p>
-                    </div>
+                      <div style={styles.episodeButtonTitle}>{episode.title}</div>
+                      <div style={styles.episodeButtonSubtitle}>{episode.subtitle}</div>
+                    </button>
                   ))}
                 </div>
               )}
             </div>
           )}
+          
+          {/* Theme Navigation */}
+          <div style={styles.navigationSection}>
+            <h3 style={styles.navigationTitle}>Explore Other Themes</h3>
+            <div style={styles.themeGrid}>
+              {Object.entries(themeMapping.themes).map(([themeKey, themeInfo]) => {
+                if (themeKey === 'film-noir') return null; // Hide current theme
+                return (
+                  <button
+                    key={themeKey}
+                    onClick={() => router.push(`/${themeKey}`)}
+                    style={styles.themeButton}
+                  >
+                    <div style={styles.themeButtonTitle}>{themeInfo.title}</div>
+                    <div style={styles.themeButtonDescription}>{themeInfo.description}</div>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </PhoneFrame>
@@ -111,22 +150,82 @@ const styles = {
     flexDirection: 'column',
     height: '100%',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    backgroundColor: '#ffffff',
   },
-  fixedInputArea: {
-    position: 'sticky',
+  inputArea: {
+    padding: '16px',
+    backgroundColor: '#1a1a1a',
+  },
+  contentArea: {
+    flex: 1,
+    overflowY: 'scroll',
+    scrollbarWidth: 'none',
+    msOverflowStyle: 'none',
+    padding: '0',
+    background: 'linear-gradient(to bottom, #1a1a1a 0%, #374151 100%)',
+  },
+  
+  // Hero Section Styles
+  heroSection: {
+    position: 'relative',
+    width: '100%',
+    aspectRatio: '2 / 1',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    overflow: 'hidden',
+    marginBottom: '0',
+    borderRadius: '0',
+  },
+  heroImage: {
+    position: 'absolute',
     top: 0,
-    zIndex: 100,
+    left: 0,
+    width: '120%',
+    height: '120%',
+    objectFit: 'cover',
+    objectPosition: 'center center',
+    transform: 'translate(-8.33%, -8.33%)',
+    zIndex: 1,
+  },
+  heroTitleButton: {
+    backgroundColor: '#1a1a1a',
+    padding: '4px 20px 16px 20px',
+    textAlign: 'left',
+    paddingLeft: '36px',
+    borderLeft: '8px solid #d4af37',
+    border: 'none',
+    width: '100%',
+  },
+  heroTitle: {
+    fontSize: '28px',
+    fontWeight: '600',
+    color: 'white',
+    margin: '0 0 4px 0',
+    lineHeight: '1.2',
+    textShadow: '0 1px 2px rgba(0,0,0,0.8)',
+    wordWrap: 'break-word',
+    hyphens: 'auto',
+  },
+  heroSubtitle: {
+    fontSize: '16px',
+    color: '#d4af37',
+    lineHeight: '1.3',
+    margin: 0,
+    opacity: 1,
+    textShadow: '0 1px 2px rgba(0,0,0,0.8)',
+    textTransform: 'uppercase',
+    letterSpacing: '1px',
+    fontWeight: '600',
+    wordWrap: 'break-word',
+    hyphens: 'auto',
+  },
+  
+  searchResults: {
     padding: '16px',
     backgroundColor: '#ffffff',
-    borderBottom: '1px solid #e5e7eb',
-  },
-  scrollableContent: {
-    flex: 1,
-    overflowY: 'auto',
-    padding: '0 16px',
-  },
-  searchResults: {
-    marginTop: '16px',
+    margin: '16px',
+    borderRadius: '8px',
   },
   resultsHeader: {
     fontSize: '14px',
@@ -145,7 +244,10 @@ const styles = {
     cursor: 'pointer',
   },
   episodesSection: {
-    marginTop: '16px',
+    padding: '16px',
+    backgroundColor: '#ffffff',
+    margin: '16px',
+    borderRadius: '8px',
   },
   loadingText: {
     fontSize: '16px',
@@ -153,30 +255,37 @@ const styles = {
     textAlign: 'center',
     padding: '40px 0',
   },
-  episodeList: {
+  episodeGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+    gap: '12px',
+    marginBottom: '20px',
+    justifyItems: 'start',
+  },
+  episodeButton: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '12px',
-  },
-  episodeCard: {
+    alignItems: 'flex-start',
     padding: '16px',
-    backgroundColor: '#f9fafb',
-    borderRadius: '8px',
+    backgroundColor: '#ffffff',
     border: '1px solid #e5e7eb',
+    borderRadius: '12px',
     cursor: 'pointer',
     transition: 'all 0.2s ease',
+    textAlign: 'left',
+    boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
+    width: '280px',
   },
-  episodeTitle: {
+  episodeButtonTitle: {
     fontSize: '16px',
     fontWeight: '600',
     color: '#111827',
-    margin: '0 0 4px 0',
+    marginBottom: '4px',
     lineHeight: '1.3',
   },
-  episodeSubtitle: {
+  episodeButtonSubtitle: {
     fontSize: '14px',
     color: '#6b7280',
-    margin: 0,
     lineHeight: '1.4',
   },
   errorText: {
@@ -184,5 +293,53 @@ const styles = {
     color: '#dc2626',
     textAlign: 'center',
     padding: '40px 0',
+  },
+  
+  // Navigation Styles
+  navigationSection: {
+    marginTop: '40px',
+    padding: '0 16px',
+  },
+  navigationTitle: {
+    fontSize: '20px',
+    fontWeight: '600',
+    color: '#d4af37',
+    marginBottom: '16px',
+    textAlign: 'center',
+    textTransform: 'uppercase',
+    letterSpacing: '1px',
+  },
+  themeGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+    gap: '12px',
+    marginBottom: '20px',
+    justifyItems: 'start',
+  },
+  themeButton: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    padding: '16px',
+    backgroundColor: '#f8fafc',
+    border: '1px solid #e2e8f0',
+    borderRadius: '12px',
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+    textAlign: 'left',
+    boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
+    width: '280px',
+  },
+  themeButtonTitle: {
+    fontSize: '16px',
+    fontWeight: '600',
+    color: '#111827',
+    marginBottom: '6px',
+    lineHeight: '1.3',
+  },
+  themeButtonDescription: {
+    fontSize: '14px',
+    color: '#6b7280',
+    lineHeight: '1.4',
   },
 };

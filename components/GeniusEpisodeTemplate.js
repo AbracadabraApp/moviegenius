@@ -63,10 +63,10 @@ export default function GeniusEpisodeTemplate({
     'Women Directors',
     'International Masters',
     'Acclaimed Directors',
-    'Revolutionary Movements',
+    'Movements in Film',
     'The Magic of Moviemaking',
     'Cinema Through the Decades',
-    'Cinema\'s Cultural Impact'
+    'Hollywood Transformed'
   ];
 
   // Handle theme navigation
@@ -81,10 +81,10 @@ export default function GeniusEpisodeTemplate({
       'Women Directors': '/women-directors',
       'International Masters': '/world-cinema',
       'Acclaimed Directors': '/acclaimed-directors',
-      'Revolutionary Movements': '/avant-garde-film',
+      'Movements in Film': '/avant-garde-film',
       'The Magic of Moviemaking': '/magic-of-moviemaking',
       'Cinema Through the Decades': '/cinema-through-decades',
-      'Cinema\'s Cultural Impact': '/cinema-cultural-impact'
+      'Hollywood Transformed': '/cinema-cultural-impact'
     };
     
     const targetRoute = themeRoutes[theme];

@@ -23,10 +23,12 @@ export default function GeniusPage() {
   const [showAllThemes, setShowAllThemes] = useState(false);
   const [modalStep, setModalStep] = useState(null); // No modal on genius page - skip straight to themes
   const [showAllPlatforms, setShowAllPlatforms] = useState(false);
+  const [movieRotationIndex, setMovieRotationIndex] = useState(0);
 
-
-  // Movie poster rotation index (0-2 for the 3 posters in each array)
-  const movieRotationIndex = Math.floor(Math.random() * 3);
+  useEffect(() => {
+    // Set random index only on client side to avoid hydration mismatch
+    setMovieRotationIndex(Math.floor(Math.random() * 3));
+  }, []);
 
   // 10 Education Themes - All displayed in beautiful grid
   const allEducationThemes = [
@@ -36,7 +38,7 @@ export default function GeniusPage() {
     'Women Directors',
     'International Masters',
     'Acclaimed Directors',
-    'Revolutionary Movements',
+    'Movements in Film',
     'The Magic of Moviemaking',
     'Cinema Through the Decades',
     'Hollywood Transformed'
@@ -152,7 +154,7 @@ export default function GeniusPage() {
       'Women Directors': '/women-directors',
       'International Masters': '/world-cinema',
       'Acclaimed Directors': '/acclaimed-directors',
-      'Revolutionary Movements': '/avant-garde-film',
+      'Movements in Film': '/avant-garde-film',
       'The Magic of Moviemaking': '/magic-of-moviemaking',
       'Cinema Through the Decades': '/cinema-through-decades',
       'Hollywood Transformed': '/cinema-cultural-impact'
@@ -204,7 +206,7 @@ export default function GeniusPage() {
       'Women Directors': '/women-directors',
       'International Masters': '/world-cinema',
       'Acclaimed Directors': '/acclaimed-directors',
-      'Revolutionary Movements': '/avant-garde-film',
+      'Movements in Film': '/avant-garde-film',
       'The Magic of Moviemaking': '/magic-of-moviemaking',
       'Cinema Through the Decades': '/cinema-through-decades',
       'Hollywood Transformed': '/cinema-cultural-impact'
@@ -385,7 +387,7 @@ export default function GeniusPage() {
               <h4 style={styles.footerTitle}>Popular Series</h4>
               <div style={styles.footerEpisodes}>
                 <span style={styles.footerEpisode}>Film Noir Fundamentals</span>
-                <span style={styles.footerEpisode}>Revolutionary Movements</span>
+                <span style={styles.footerEpisode}>Movements in Film</span>
                 <span style={styles.footerEpisode}>Women Directors</span>
               </div>
             </div>
