@@ -70,13 +70,6 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies a
     search(query);
   };
 
-  const handleKeyDown = (e) => {
-    if (e.key === 'Enter') {
-      e.preventDefault();
-      search(query);
-    }
-  };
-
   const handleClear = () => {
     setQuery('');
     onResults({ movies: [], people: [] });
@@ -92,7 +85,6 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies a
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            onKeyDown={handleKeyDown}
             placeholder={placeholder}
             style={styles.input}
             autoComplete="off"
