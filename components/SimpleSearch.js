@@ -31,19 +31,10 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies a
         const data = await response.json();
         
         // V1 Feature: Auto-navigate to single movie result
-        if (data.movies.length === 1 && data.people.length === 0) {
+        if (data.movies.length === 1) {
           const movie = data.movies[0];
           if (movie.tmdb_id) {
             router.push(`/movie/${movie.tmdb_id}`);
-            return;
-          }
-        }
-        
-        // V1 Feature: Auto-navigate to single person result
-        if (data.people.length === 1 && data.movies.length === 0) {
-          const person = data.people[0];
-          if (person.tmdb_id) {
-            router.push(`/person/${person.tmdb_id}`);
             return;
           }
         }
