@@ -5,34 +5,35 @@ import MediaCard from './MediaCard';
 import Image from 'next/image';
 
 export default function MultiSearchResults({ results, query }) {
+  // People search temporarily disabled - focus on movies only
   const [activeTab, setActiveTab] = useState('movies');
   const router = useRouter();
 
-  if (!results || (!results.movies?.length && !results.people?.length)) {
+  if (!results || !results.movies?.length) {
     return null;
   }
 
   const movieCount = results.movies?.length || 0;
-  const peopleCount = results.people?.length || 0;
+  // const peopleCount = results.people?.length || 0;
 
-  const handlePersonClick = (person) => {
-    router.push(`/person/${person.tmdb_id}`);
-  };
+  // const handlePersonClick = (person) => {
+  //   router.push(`/person/${person.tmdb_id}`);
+  // };
 
   return (
     <div style={styles.container}>
-      {/* Tab Navigation */}
+      {/* Tab Navigation - Movies Only */}
       <div style={styles.tabContainer}>
         <button
           style={{
             ...styles.tab,
-            ...(activeTab === 'movies' ? styles.activeTab : {}),
+            ...styles.activeTab,
           }}
-          onClick={() => setActiveTab('movies')}
-          disabled={movieCount === 0}
+          disabled={true}
         >
           Movies ({movieCount})
         </button>
+        {/* People tab temporarily disabled
         <button
           style={{
             ...styles.tab,
@@ -43,25 +44,25 @@ export default function MultiSearchResults({ results, query }) {
         >
           People ({peopleCount})
         </button>
+        */}
       </div>
 
-      {/* Results */}
+      {/* Results - Movies Only */}
       <div style={styles.resultsContainer}>
-        {activeTab === 'movies' && movieCount > 0 && (
-          <div style={styles.movieGrid}>
-            {results.movies.map((movie) => (
-              <div key={movie.id} style={styles.movieCard}>
-                <MediaCard
-                  title={movie.title}
-                  year={movie.year}
-                  initialPoster={movie.poster_url}
-                  tmdbId={movie.tmdb_id}
-                />
-              </div>
-            ))}
-          </div>
-        )}
-
+        <div style={styles.movieGrid}>
+          {results.movies.map((movie) => (
+            <div key={movie.id} style={styles.movieCard}>
+              <MediaCard
+                title={movie.title}
+                year={movie.year}
+                initialPoster={movie.poster_url}
+                tmdbId={movie.tmdb_id}
+              />
+            </div>
+          ))}
+        </div>
+        
+        {/* People results temporarily disabled
         {activeTab === 'people' && peopleCount > 0 && (
           <div style={styles.peopleGrid}>
             {results.people.map((person) => (
@@ -89,6 +90,7 @@ export default function MultiSearchResults({ results, query }) {
             ))}
           </div>
         )}
+        */}
       </div>
     </div>
   );
