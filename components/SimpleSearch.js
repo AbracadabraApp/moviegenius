@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { Search } from 'lucide-react';
 
-export default function SimpleSearch({ onResults, placeholder = "Search movies..." }) {
+export default function SimpleSearch({ onResults, placeholder = "Search movies and people..." }) {
   const [query, setQuery] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [fallback, setFallback] = useState(null);
@@ -12,7 +12,7 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies..
   const search = async (searchQuery) => {
     const q = searchQuery.trim();
     if (!q) {
-      onResults([]);
+      onResults({ movies: [], people: [] });
       setFallback(null);
       return;
     }
@@ -21,7 +21,7 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies..
     setFallback(null);
     
     try {
-      const response = await fetch('/api/search', {
+      const response = await fetch('/api/multi-search', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query: q })
@@ -30,8 +30,8 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies..
       if (response.ok) {
         const data = await response.json();
         
-        // V1 Feature: Auto-navigate to single results
-        if (data.movies.length === 1) {
+        // V1 Feature: Auto-navigate to single movie result
+        if (data.movies.length === 1 && data.people.length === 0) {
           const movie = data.movies[0];
           if (movie.tmdb_id) {
             router.push(`/movie/${movie.tmdb_id}`);
@@ -39,18 +39,27 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies..
           }
         }
         
-        onResults(data.movies || []);
+        // V1 Feature: Auto-navigate to single person result
+        if (data.people.length === 1 && data.movies.length === 0) {
+          const person = data.people[0];
+          if (person.tmdb_id) {
+            router.push(`/person/${person.tmdb_id}`);
+            return;
+          }
+        }
+        
+        onResults(data || { movies: [], people: [] });
         
         // V1 Feature: Handle fallback for empty results
         if (data.fallback) {
           setFallback(data.fallback);
         }
       } else {
-        onResults([]);
+        onResults({ movies: [], people: [] });
       }
     } catch (error) {
       console.error('Search error:', error);
-      onResults([]);
+      onResults({ movies: [], people: [] });
     } finally {
       setIsLoading(false);
     }
@@ -70,7 +79,7 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies..
 
   const handleClear = () => {
     setQuery('');
-    onResults([]);
+    onResults({ movies: [], people: [] });
     setFallback(null);
   };
 
