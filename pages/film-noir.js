@@ -2,6 +2,7 @@
 import PhoneFrame from '../components/PhoneFrame';
 import SimpleSearch from '../components/SimpleSearch';
 import MediaCard from '../components/MediaCard';
+import EssentialMovies from '../components/EssentialMovies';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import themeMapping from '../data/theme-episode-mapping.json';
@@ -16,8 +17,10 @@ export default function FilmNoirPage() {
   const themeData = themeMapping.themes['film-noir'];
 
   const handleSearchResults = (results) => {
-    setSearchResults(results);
-    setShowSearchResults(results.length > 0);
+    // Multi-search returns {movies: [], people: []} - extract movies array
+    const movies = results.movies || results || [];
+    setSearchResults(movies);
+    setShowSearchResults(movies.length > 0);
   };
 
   const handleMovieClick = (movie) => {
@@ -72,11 +75,14 @@ export default function FilmNoirPage() {
               playsInline
               style={styles.heroImage}
             />
+            <div style={styles.heroTitleOverlay}>
+              <h1 style={styles.heroTitle}>Film Noir</h1>
+            </div>
           </div>
-          <button style={styles.heroTitleButton}>
-            <h1 style={styles.heroTitle}>Film Noir</h1>
-            <p style={styles.heroSubtitle}>Shadows, moral ambiguity, and the dark side of cinema</p>
-          </button>
+          
+          
+          {/* Essential Movies */}
+          <EssentialMovies theme="film-noir" />
           
           {showSearchResults ? (
             <div style={styles.searchResults}>
@@ -169,7 +175,7 @@ const styles = {
   heroSection: {
     position: 'relative',
     width: '100%',
-    aspectRatio: '2 / 1',
+    aspectRatio: '2.22 / 1',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -188,27 +194,33 @@ const styles = {
     transform: 'translate(-8.33%, -8.33%)',
     zIndex: 1,
   },
-  heroTitleButton: {
-    backgroundColor: '#1a1a1a',
-    padding: '4px 20px 16px 20px',
+  heroTitleOverlay: {
+    position: 'absolute',
+    top: '80%',
+    left: 0,
+    right: 0,
+    backgroundColor: 'rgba(0, 0, 0, 0.4)',
+    padding: '2px 20px 0px 20px',
     textAlign: 'left',
-    paddingLeft: '36px',
-    borderLeft: '8px solid #d4af37',
-    border: 'none',
-    width: '100%',
+    zIndex: 10,
+  },
+  subheadlineSection: {
+    backgroundColor: '#000000',
+    padding: '2px 20px 12px 20px',
+    textAlign: 'left',
   },
   heroTitle: {
     fontSize: '28px',
     fontWeight: '600',
     color: 'white',
-    margin: '0 0 4px 0',
+    margin: '0',
     lineHeight: '1.2',
     textShadow: '0 1px 2px rgba(0,0,0,0.8)',
     wordWrap: 'break-word',
     hyphens: 'auto',
   },
   heroSubtitle: {
-    fontSize: '16px',
+    fontSize: '14px',
     color: '#d4af37',
     lineHeight: '1.3',
     margin: 0,

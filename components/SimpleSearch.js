@@ -1,5 +1,5 @@
 // components/SimpleSearch.js - Ultra-simple search component
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useRouter } from 'next/router';
 import { Search } from 'lucide-react';
 
@@ -8,6 +8,7 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies a
   const [isLoading, setIsLoading] = useState(false);
   const [fallback, setFallback] = useState(null);
   const router = useRouter();
+  const currentSearchRef = useRef(null);
 
   const search = async (searchQuery) => {
     const q = searchQuery.trim();
@@ -18,10 +19,20 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies a
       return;
     }
 
+    // Create unique search ID to prevent race conditions
+    const searchId = Date.now();
+    currentSearchRef.current = searchId;
+
+    // Prevent multiple concurrent searches
+    if (isLoading) {
+      console.log(`⏸️  Skipping search - already loading`);
+      return;
+    }
+
     setIsLoading(true);
     setFallback(null);
     
-    console.log(`🔍 Searching for: "${q}"`);
+    console.log(`🔍 [${searchId}] Searching for: "${q}"`);
     
     try {
       const response = await fetch('/api/multi-search', {
@@ -30,15 +41,21 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies a
         body: JSON.stringify({ query: q })
       });
 
+      // Check if this search was cancelled by a newer search
+      if (currentSearchRef.current !== searchId) {
+        console.log(`🚫 [${searchId}] Search cancelled - newer search in progress`);
+        return;
+      }
+
       if (response.ok) {
         const data = await response.json();
-        console.log(`✅ Search results:`, data);
+        console.log(`✅ [${searchId}] Search results:`, data);
         
         // V1 Feature: Auto-navigate to single movie result
         if (data.movies && data.movies.length === 1) {
           const movie = data.movies[0];
           if (movie.tmdb_id) {
-            console.log(`🎬 Auto-navigating to: ${movie.title}`);
+            console.log(`🎬 [${searchId}] Auto-navigating to: ${movie.title}`);
             router.push(`/movie/${movie.tmdb_id}`);
             return;
           }
@@ -51,16 +68,19 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies a
           setFallback(data.fallback);
         }
       } else {
-        console.error(`❌ Search failed:`, response.status, response.statusText);
+        console.error(`❌ [${searchId}] Search failed:`, response.status, response.statusText);
         onResults({ movies: [], people: [] });
         setFallback({ message: "Search failed. Please try again." });
       }
     } catch (error) {
-      console.error('Search error:', error);
+      console.error(`💥 [${searchId}] Search error:`, error);
       onResults({ movies: [], people: [] });
       setFallback({ message: "Search failed. Please try again." });
     } finally {
-      setIsLoading(false);
+      // Only set loading to false if this is still the current search
+      if (currentSearchRef.current === searchId) {
+        setIsLoading(false);
+      }
     }
   };
 
