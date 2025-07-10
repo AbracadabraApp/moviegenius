@@ -211,11 +211,11 @@ export default function MovieHeaderLarge({
           <div style={styles.iconWithText}>
             <Plus
               size={20}
-              color="#6b7280"
+              color={bookmarked ? '#374151' : '#9ca3af'}
             />
             <span style={{
               ...styles.iconLabel,
-              color: '#1f2937',
+              color: bookmarked ? '#374151' : '#9ca3af',
               fontWeight: bookmarked ? '600' : '400'
             }}>
               Add
@@ -238,12 +238,12 @@ export default function MovieHeaderLarge({
           <div style={styles.iconWithText}>
             <Check
               size={20}
-              color="#6b7280"
+              color={hearted ? '#374151' : '#9ca3af'}
               strokeWidth={hearted ? 2.5 : 1.5}
             />
             <span style={{
               ...styles.iconLabel,
-              color: '#1f2937',
+              color: hearted ? '#374151' : '#9ca3af',
               fontWeight: hearted ? '600' : '400'
             }}>
               Seen
@@ -261,13 +261,13 @@ export default function MovieHeaderLarge({
             <div style={styles.iconWithText}>
               <PlayCircle
                 size={20}
-                color="#6b7280"
+                color="#374151"
                 fill="none"
               />
               <span style={{
                 ...styles.iconLabel,
-                color: "#1f2937",
-                fontWeight: "400"
+                color: "#374151",
+                fontWeight: "600"
               }}>
                 Play
               </span>
@@ -399,11 +399,10 @@ const styles = {
     flexDirection: 'column',
     gap: '8px',
     padding: '13px 4.5px',
-    backgroundColor: 'rgba(255, 255, 255, 0.95)',
-    backdropFilter: 'blur(12px)',
+    backgroundColor: 'rgba(255, 255, 255, 0.6)',
+    backdropFilter: 'blur(10px)',
     borderRadius: '12px',
-    border: '1px solid rgba(255, 255, 255, 0.8)',
-    boxShadow: '0 12px 32px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(0, 0, 0, 0.2), 0 1px 4px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.6)',
+    boxShadow: '0 12px 32px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(0, 0, 0, 0.2), 0 1px 4px rgba(0, 0, 0, 0.15)',
     zIndex: 1000,
     transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
     transformOrigin: 'center',
