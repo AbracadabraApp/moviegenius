@@ -126,7 +126,7 @@ export default function ThemePage({ themeId, customStyles = {} }) {
               </div>
               
               {/* Theme Footer - Navigation for other themes */}
-              <ThemeFooter currentTheme={themeKey} />
+              <ThemeFooter currentTheme={themeId} />
             </>
           )}
         </div>
