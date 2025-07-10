@@ -4,6 +4,8 @@
  * Simple static footer with links to 10 theme pages.
  */
 
+import Link from 'next/link';
+
 export default function ThemeFooter() {
   return (
     <div style={styles.footer}>
@@ -11,16 +13,16 @@ export default function ThemeFooter() {
         <h3 style={styles.sectionTitle}>Explore Cinema Themes</h3>
         
         <div style={styles.themeGrid}>
-          <a href="/film-noir" style={styles.themeButton}>Film Noir</a>
-          <a href="/horror-suspense" style={styles.themeButton}>Horror & Suspense</a>
-          <a href="/comedy-through-time" style={styles.themeButton}>Comedy</a>
-          <a href="/women-directors" style={styles.themeButton}>Women Directors</a>
-          <a href="/world-cinema" style={styles.themeButton}>International Masters</a>
-          <a href="/acclaimed-directors" style={styles.themeButton}>Acclaimed Directors</a>
-          <a href="/avant-garde-film" style={styles.themeButton}>Movements in Film</a>
-          <a href="/magic-of-moviemaking" style={styles.themeButton}>The Magic of Moviemaking</a>
-          <a href="/cinema-through-decades" style={styles.themeButton}>Cinema Through the Decades</a>
-          <a href="/cinema-cultural-impact" style={styles.themeButton}>Hollywood Transformed</a>
+          <Link href="/film-noir" style={styles.themeButton}>Film Noir</Link>
+          <Link href="/horror-suspense" style={styles.themeButton}>Horror & Suspense</Link>
+          <Link href="/comedy-through-time" style={styles.themeButton}>Comedy</Link>
+          <Link href="/women-directors" style={styles.themeButton}>Women Directors</Link>
+          <Link href="/world-cinema" style={styles.themeButton}>International Masters</Link>
+          <Link href="/acclaimed-directors" style={styles.themeButton}>Acclaimed Directors</Link>
+          <Link href="/avant-garde-film" style={styles.themeButton}>Movements in Film</Link>
+          <Link href="/magic-of-moviemaking" style={styles.themeButton}>The Magic of Moviemaking</Link>
+          <Link href="/cinema-through-decades" style={styles.themeButton}>Cinema Through the Decades</Link>
+          <Link href="/cinema-cultural-impact" style={styles.themeButton}>Hollywood Transformed</Link>
         </div>
       </div>
     </div>
