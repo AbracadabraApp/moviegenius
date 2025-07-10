@@ -3,6 +3,7 @@ import PhoneFrame from '../components/PhoneFrame';
 import SimpleSearch from '../components/SimpleSearch';
 import MediaCard from '../components/MediaCard';
 import EssentialMovies from '../components/EssentialMovies';
+import ThemeFooter from '../components/ThemeFooter';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import themeMapping from '../data/theme-episode-mapping.json';
@@ -105,29 +106,8 @@ export default function FilmNoirPage() {
             </div>
           )}
           
-          {/* Theme Navigation */}
-          <div style={styles.navigationSection}>
-            <div style={styles.navigationHeader}>
-              <div style={styles.navigationDivider} />
-              <span style={styles.navigationLabel}>Explore Other Themes</span>
-              <div style={styles.navigationDivider} />
-            </div>
-            <div style={styles.themeGrid}>
-              {Object.entries(themeMapping.themes).map(([otherThemeKey, themeInfo]) => {
-                if (otherThemeKey === themeKey) return null; // Hide current theme
-                return (
-                  <button
-                    key={otherThemeKey}
-                    onClick={() => router.push(`/${otherThemeKey}`)}
-                    style={styles.themeButton}
-                  >
-                    <div style={styles.themeButtonTitle}>{themeInfo.title}</div>
-                    <div style={styles.themeButtonDescription}>{themeInfo.description}</div>
-                  </button>
-                );
-              })}
-            </div>
-          </div>
+          {/* Theme Footer - Navigation for other themes */}
+          <ThemeFooter currentTheme={themeKey} />
         </div>
       </div>
     </PhoneFrame>

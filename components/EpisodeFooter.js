@@ -22,27 +22,27 @@ export default function EpisodeFooter({ currentTheme, currentEpisode }) {
   // Filter out current episode from theme episodes
   const otherEpisodes = themeData.episodes.filter(ep => ep.id !== currentEpisode);
 
-  // 10 Main Education Themes matching the genius page exactly
+  // Complete theme mapping with exact slugs and display names
   const exploreThemes = [
-    'Film Noir',
-    'Horror & Suspense', 
-    'Comedy',
-    'Women Directors',
-    'International Masters',
-    'Acclaimed Directors',
-    'Movements in Film',
-    'The Magic of Moviemaking',
-    'Cinema Through the Decades',
-    'Hollywood Transformed'
+    { slug: 'film-noir', name: 'Film Noir' },
+    { slug: 'horror-suspense', name: 'Horror & Suspense' },
+    { slug: 'comedy-through-time', name: 'Comedy' },
+    { slug: 'women-directors', name: 'Women Directors' },
+    { slug: 'world-cinema', name: 'International Masters' },
+    { slug: 'acclaimed-directors', name: 'Acclaimed Directors' },
+    { slug: 'avant-garde-film', name: 'Movements in Film' },
+    { slug: 'magic-of-moviemaking', name: 'The Magic of Moviemaking' },
+    { slug: 'cinema-through-decades', name: 'Cinema Through the Decades' },
+    { slug: 'cinema-cultural-impact', name: 'Hollywood Transformed' }
   ];
 
   const handleEpisodeClick = (episode) => {
     router.push(`/${currentTheme}/${episode.id}`);
   };
 
-  const handleThemeClick = (theme) => {
-    // Navigate to genius page (matching genius page behavior)
-    router.push('/genius');
+  const handleThemeClick = (themeSlug) => {
+    // Navigate directly to theme page
+    router.push(`/${themeSlug}`);
   };
 
   return (
@@ -83,11 +83,11 @@ export default function EpisodeFooter({ currentTheme, currentEpisode }) {
       <div style={styles.section}>
         <h3 style={styles.sectionTitle}>Explore Further</h3>
         <div style={styles.themeGrid}>
-          {exploreThemes.map((theme) => (
+          {exploreThemes.filter(theme => theme.slug !== currentTheme).map((theme) => (
             <button
-              key={theme}
+              key={theme.slug}
               style={styles.themeButton}
-              onClick={() => handleThemeClick(theme)}
+              onClick={() => handleThemeClick(theme.slug)}
               onMouseEnter={(e) => {
                 e.target.style.backgroundColor = '#d4af37';
                 e.target.style.color = '#ffffff';
@@ -101,7 +101,7 @@ export default function EpisodeFooter({ currentTheme, currentEpisode }) {
                 e.target.style.boxShadow = '0 2px 6px rgba(212, 175, 55, 0.1)';
               }}
             >
-              {theme}
+              {theme.name}
             </button>
           ))}
         </div>

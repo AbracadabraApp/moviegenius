@@ -2,6 +2,7 @@
 import PhoneFrame from './PhoneFrame';
 import SimpleSearch from './SimpleSearch';
 import MediaCard from './MediaCard';
+import ThemeFooter from './ThemeFooter';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import themeMapping from '../data/theme-episode-mapping.json';
@@ -123,6 +124,9 @@ export default function ThemePage({ themeId, customStyles = {} }) {
                   </div>
                 )}
               </div>
+              
+              {/* Theme Footer - Navigation for other themes */}
+              <ThemeFooter currentTheme={themeKey} />
             </>
           )}
         </div>
