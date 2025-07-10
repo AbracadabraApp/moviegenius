@@ -64,19 +64,20 @@ export default function FilmNoirPage() {
           />
         </div>
         
-        <video 
-          src="/images/hero/film-noir/noir2.mov" 
-          autoPlay
-          muted
-          loop
-          playsInline
-          style={{
-            width: '100%',
-            height: 'auto',
-            aspectRatio: '2.22 / 1',
-            objectFit: 'cover'
-          }}
-        />
+        <div style={styles.heroSection}>
+          <video 
+            src="/images/hero/film-noir/noir2.mov" 
+            autoPlay
+            muted
+            loop
+            playsInline
+            style={styles.heroVideo}
+          />
+          <div style={styles.heroTitleOverlay}>
+            <h1 style={styles.heroTitle}>{themeData.title}</h1>
+            <p style={styles.heroSubtitle}>{themeData.description}</p>
+          </div>
+        </div>
 
         {/* Content Area */}
         <div style={styles.contentArea}>
@@ -137,23 +138,22 @@ const styles = {
     position: 'relative',
     width: '100%',
     aspectRatio: '2.22 / 1',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
     overflow: 'hidden',
     marginBottom: '0',
-    borderRadius: '0',
-    background: 'linear-gradient(135deg, #1a1a1a 0%, #2d3748 50%, #1a1a1a 100%)',
+  },
+  heroVideo: {
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
   },
   heroTitleOverlay: {
     position: 'absolute',
-    top: '80%',
+    bottom: 0,
     left: 0,
     right: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.4)',
-    padding: '2px 20px 0px 20px',
-    textAlign: 'left',
-    zIndex: 10,
+    background: 'linear-gradient(transparent, rgba(0, 0, 0, 0.8))',
+    padding: '20px',
+    color: 'white',
   },
   subheadlineSection: {
     backgroundColor: '#000000',
@@ -164,24 +164,19 @@ const styles = {
     fontSize: '28px',
     fontWeight: '600',
     color: 'white',
-    margin: '0',
+    margin: '0 0 8px 0',
     lineHeight: '1.2',
-    textShadow: '0 1px 2px rgba(0,0,0,0.8)',
-    wordWrap: 'break-word',
-    hyphens: 'auto',
+    textShadow: '0 2px 4px rgba(0,0,0,0.8)',
   },
   heroSubtitle: {
-    fontSize: '14px',
+    fontSize: '16px',
     color: '#d4af37',
     lineHeight: '1.3',
     margin: 0,
-    opacity: 1,
     textShadow: '0 1px 2px rgba(0,0,0,0.8)',
     textTransform: 'uppercase',
     letterSpacing: '1px',
-    fontWeight: '600',
-    wordWrap: 'break-word',
-    hyphens: 'auto',
+    fontWeight: '500',
   },
   
   searchResults: {
