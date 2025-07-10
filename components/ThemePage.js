@@ -2,6 +2,7 @@
 import PhoneFrame from './PhoneFrame';
 import SimpleSearch from './SimpleSearch';
 import MediaCard from './MediaCard';
+import EssentialMovies from './EssentialMovies';
 import ThemeFooter from './ThemeFooter';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
@@ -17,8 +18,10 @@ export default function ThemePage({ themeId, customStyles = {} }) {
   const themeData = themeMapping.themes[themeId];
 
   const handleSearchResults = (results) => {
-    setSearchResults(results);
-    setShowSearchResults(results.length > 0);
+    // Multi-search returns {movies: [], people: []} - extract movies array
+    const movies = results.movies || results || [];
+    setSearchResults(movies);
+    setShowSearchResults(movies.length > 0);
   };
 
   const handleMovieClick = (movie) => {
@@ -57,15 +60,63 @@ export default function ThemePage({ themeId, customStyles = {} }) {
     <PhoneFrame active="genius">
       <div style={mergedStyles.container || styles.container}>
         
-        <div style={mergedStyles.fixedInputArea || styles.fixedInputArea}>
+        {/* Search Area */}
+        <div style={mergedStyles.inputArea || styles.inputArea}>
           <SimpleSearch 
             onResults={handleSearchResults}
             placeholder={`Search ${themeData.title.toLowerCase()} movies...`}
           />
         </div>
         
-        <div style={mergedStyles.scrollableContent || styles.scrollableContent}>
-          {showSearchResults ? (
+        {/* Video Hero with Title Overlay */}
+        {customStyles.heroVideo ? (
+          <div style={styles.heroSection}>
+            <video 
+              src={customStyles.heroVideo}
+              autoPlay
+              muted
+              loop
+              playsInline
+              style={styles.heroVideo}
+            />
+            <div style={styles.heroTitleOverlay}>
+              <h1 style={styles.heroTitle}>{themeData.title}</h1>
+              <p style={styles.heroSubtitle}>{themeData.description}</p>
+            </div>
+          </div>
+        ) : customStyles.heroImage ? (
+          <div style={styles.heroSection}>
+            <div style={{
+              ...styles.heroImageContainer,
+              backgroundImage: `url(${customStyles.heroImage})`
+            }}>
+              <div style={styles.heroTitleOverlay}>
+                <h1 style={styles.heroTitle}>{themeData.title}</h1>
+                <p style={styles.heroSubtitle}>{themeData.description}</p>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <div style={styles.heroSection}>
+            <div style={{
+              ...styles.heroImageContainer,
+              background: 'linear-gradient(135deg, #1a1a1a 0%, #374151 100%)'
+            }}>
+              <div style={styles.heroTitleOverlay}>
+                <h1 style={styles.heroTitle}>{themeData.title}</h1>
+                <p style={styles.heroSubtitle}>{themeData.description}</p>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Content Area */}
+        <div style={mergedStyles.contentArea || styles.contentArea}>
+          
+          {/* Essential Movies */}
+          <EssentialMovies theme={themeId} />
+          
+          {showSearchResults && (
             <div style={mergedStyles.searchResults || styles.searchResults}>
               <div style={mergedStyles.resultsHeader || styles.resultsHeader}>
                 <span>{searchResults.length} movie{searchResults.length !== 1 ? 's' : ''} found</span>
@@ -85,50 +136,10 @@ export default function ThemePage({ themeId, customStyles = {} }) {
                 ))}
               </div>
             </div>
-          ) : (
-            <>
-              <div style={mergedStyles.header || styles.header}>
-                {customStyles.themeIcon && (
-                  <div style={styles.themeIcon}>{customStyles.themeIcon}</div>
-                )}
-                <h1 style={mergedStyles.title || styles.title}>{themeData.title}</h1>
-                <p style={mergedStyles.description || styles.description}>
-                  {themeData.description}
-                </p>
-              </div>
-              
-              <div style={mergedStyles.episodesSection || styles.episodesSection}>
-                <h2 style={mergedStyles.sectionTitle || styles.sectionTitle}>Episodes</h2>
-                {loading ? (
-                  <div style={mergedStyles.loadingText || styles.loadingText}>Loading episodes...</div>
-                ) : (
-                  <div style={mergedStyles.episodeList || styles.episodeList}>
-                    {episodes.map((episode, index) => (
-                      <div 
-                        key={episode.id}
-                        style={mergedStyles.episodeCard || styles.episodeCard}
-                        onClick={() => handleEpisodeClick(episode)}
-                        onMouseEnter={(e) => {
-                          if (mergedStyles.episodeCardHover) {
-                            Object.assign(e.target.style, mergedStyles.episodeCardHover);
-                          }
-                        }}
-                        onMouseLeave={(e) => {
-                          Object.assign(e.target.style, mergedStyles.episodeCard || styles.episodeCard);
-                        }}
-                      >
-                        <h3 style={mergedStyles.episodeTitle || styles.episodeTitle}>{episode.title}</h3>
-                        <p style={mergedStyles.episodeSubtitle || styles.episodeSubtitle}>{episode.subtitle}</p>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-              
-              {/* Theme Footer - Navigation for other themes */}
-              <ThemeFooter currentTheme={themeId} />
-            </>
           )}
+          
+          {/* Theme Footer - Navigation for other themes */}
+          <ThemeFooter currentTheme={themeId} />
         </div>
       </div>
     </PhoneFrame>
@@ -141,20 +152,64 @@ const styles = {
     flexDirection: 'column',
     height: '100%',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-  },
-  fixedInputArea: {
-    position: 'sticky',
-    top: 0,
-    zIndex: 100,
-    padding: '16px',
     backgroundColor: '#ffffff',
   },
-  scrollableContent: {
-    flex: 1,
-    overflowY: 'scroll',
-    scrollbarWidth: 'none',
-    msOverflowStyle: 'none',
+  inputArea: {
     padding: '16px',
+    backgroundColor: '#1a1a1a',
+  },
+  contentArea: {
+    flex: 1,
+    padding: '0',
+    background: 'linear-gradient(to bottom, #1a1a1a 0%, #374151 100%)',
+  },
+  
+  // Hero Section Styles
+  heroSection: {
+    position: 'relative',
+    width: '100%',
+    aspectRatio: '2.22 / 1',
+    overflow: 'hidden',
+    marginBottom: '0',
+  },
+  heroVideo: {
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+  },
+  heroImageContainer: {
+    width: '100%',
+    height: '100%',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    position: 'relative',
+  },
+  heroTitleOverlay: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    background: 'linear-gradient(transparent, rgba(0, 0, 0, 0.8))',
+    padding: '20px',
+    color: 'white',
+  },
+  heroTitle: {
+    fontSize: '28px',
+    fontWeight: '600',
+    color: 'white',
+    margin: '0 0 8px 0',
+    lineHeight: '1.2',
+    textShadow: '0 2px 4px rgba(0,0,0,0.8)',
+  },
+  heroSubtitle: {
+    fontSize: '16px',
+    color: '#d4af37',
+    lineHeight: '1.3',
+    margin: 0,
+    textShadow: '0 1px 2px rgba(0,0,0,0.8)',
+    textTransform: 'uppercase',
+    letterSpacing: '1px',
+    fontWeight: '500',
   },
   header: {
     textAlign: 'center',
@@ -176,21 +231,23 @@ const styles = {
     lineHeight: '1.5',
   },
   searchResults: {
-    
+    padding: '16px',
+    backgroundColor: '#ffffff',
+    margin: '16px',
+    borderRadius: '8px',
   },
   resultsHeader: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: '16px',
     fontSize: '14px',
+    fontWeight: '500',
     color: '#6b7280',
+    marginBottom: '16px',
+    padding: '8px 0',
+    borderBottom: '1px solid #e5e7eb',
   },
   movieList: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '1px',
-    backgroundColor: '#f3f4f6',
+    gap: '8px',
   },
   movieItem: {
     cursor: 'pointer',
