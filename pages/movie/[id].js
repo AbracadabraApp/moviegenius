@@ -325,12 +325,16 @@ function MovieContent({ sections, exploreFurther, moreIdeas, title, year, tmdbId
 function ContentPlaceholder({ source, title, year }) {
   return (
     <div style={styles.claudeContent}>
-      <div style={styles.loadingContainer}>
-        <FilmLoadingMessage 
-          cycling={true}
-          interval={4000}
-          size="large"
-        />
+      <div style={styles.placeholderContainer}>
+        <div style={styles.placeholderIcon}>🎬</div>
+        <h3 style={styles.placeholderTitle}>Movie Discovered</h3>
+        <p style={styles.placeholderText}>
+          {title} ({year}) has been added to our database from TMDB.
+          Detailed analysis and recommendations will be available soon.
+        </p>
+        <div style={styles.placeholderNote}>
+          Check back later for expert insights and related film recommendations.
+        </div>
       </div>
     </div>
   );
@@ -408,6 +412,34 @@ const styles = {
     fontSize: '14px',
     color: '#6b7280',
     marginTop: '8px',
+    lineHeight: '1.4',
+  },
+  placeholderContainer: {
+    padding: '60px 20px',
+    textAlign: 'center',
+    maxWidth: '400px',
+    margin: '0 auto',
+  },
+  placeholderIcon: {
+    fontSize: '48px',
+    marginBottom: '20px',
+  },
+  placeholderTitle: {
+    fontSize: '24px',
+    fontWeight: '600',
+    color: '#000000',
+    margin: '0 0 16px 0',
+  },
+  placeholderText: {
+    fontSize: '16px',
+    color: '#666666',
+    lineHeight: '1.6',
+    margin: '0 0 20px 0',
+  },
+  placeholderNote: {
+    fontSize: '14px',
+    color: '#888888',
+    fontStyle: 'italic',
     lineHeight: '1.4',
   },
   errorContainer: {
