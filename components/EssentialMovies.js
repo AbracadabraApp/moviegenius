@@ -26,6 +26,62 @@ export default function EssentialMovies({ theme }) {
       { title: 'Halloween', year: 1978, tmdb_id: 530 },
       { title: 'Night of the Living Dead', year: 1968, tmdb_id: 10625 },
       { title: 'Rosemary\'s Baby', year: 1968, tmdb_id: 10110 }
+    ],
+    'comedy-through-time': [
+      { title: 'The General', year: 1926, tmdb_id: 961 },
+      { title: 'Modern Times', year: 1936, tmdb_id: 3082 },
+      { title: 'Some Like It Hot', year: 1959, tmdb_id: 239 },
+      { title: 'Dr. Strangelove', year: 1964, tmdb_id: 935 },
+      { title: 'Annie Hall', year: 1977, tmdb_id: 703 }
+    ],
+    'sci-fi-evolution': [
+      { title: 'Metropolis', year: 1927, tmdb_id: 19 },
+      { title: '2001: A Space Odyssey', year: 1968, tmdb_id: 62 },
+      { title: 'Blade Runner', year: 1982, tmdb_id: 78 },
+      { title: 'The Matrix', year: 1999, tmdb_id: 603 },
+      { title: 'Arrival', year: 2016, tmdb_id: 329865 }
+    ],
+    'action-adventure': [
+      { title: 'Seven Samurai', year: 1954, tmdb_id: 346 },
+      { title: 'Raiders of the Lost Ark', year: 1981, tmdb_id: 85 },
+      { title: 'Terminator 2: Judgment Day', year: 1991, tmdb_id: 280 },
+      { title: 'The Adventures of Robin Hood', year: 1938, tmdb_id: 10907 },
+      { title: 'Mad Max: Fury Road', year: 2015, tmdb_id: 76341 }
+    ],
+    'romance-through-decades': [
+      { title: 'Gone with the Wind', year: 1939, tmdb_id: 770 },
+      { title: 'Casablanca', year: 1943, tmdb_id: 289 },
+      { title: 'The Princess Bride', year: 1987, tmdb_id: 2493 },
+      { title: 'When Harry Met Sally', year: 1989, tmdb_id: 639 },
+      { title: 'Eternal Sunshine of the Spotless Mind', year: 2004, tmdb_id: 38 }
+    ],
+    'drama-human-condition': [
+      { title: 'Citizen Kane', year: 1941, tmdb_id: 15 },
+      { title: 'The Godfather', year: 1972, tmdb_id: 238 },
+      { title: '12 Angry Men', year: 1957, tmdb_id: 389 },
+      { title: 'On the Waterfront', year: 1954, tmdb_id: 654 },
+      { title: 'Schindler\'s List', year: 1993, tmdb_id: 424 }
+    ],
+    'western-frontier': [
+      { title: 'The Searchers', year: 1956, tmdb_id: 3114 },
+      { title: 'High Noon', year: 1952, tmdb_id: 288 },
+      { title: 'The Man Who Shot Liberty Valance', year: 1962, tmdb_id: 11697 },
+      { title: 'Unforgiven', year: 1992, tmdb_id: 33 },
+      { title: 'Butch Cassidy and the Sundance Kid', year: 1969, tmdb_id: 642 }
+    ],
+    'animation-art': [
+      { title: 'Snow White and the Seven Dwarfs', year: 1937, tmdb_id: 408 },
+      { title: 'Akira', year: 1988, tmdb_id: 149 },
+      { title: 'Beauty and the Beast', year: 1991, tmdb_id: 10020 },
+      { title: 'Toy Story', year: 1995, tmdb_id: 862 },
+      { title: 'Spirited Away', year: 2001, tmdb_id: 129 }
+    ],
+    'world-cinema': [
+      { title: '8½', year: 1963, tmdb_id: 139 },
+      { title: 'The Rules of the Game', year: 1939, tmdb_id: 36386 },
+      { title: 'Tokyo Story', year: 1953, tmdb_id: 18148 },
+      { title: 'Bicycle Thieves', year: 1948, tmdb_id: 11224 },
+      { title: 'Persona', year: 1966, tmdb_id: 3082 }
     ]
   };
 
