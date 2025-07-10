@@ -4,6 +4,7 @@ import { useState } from 'react';
 import PhoneFrame from '../../components/PhoneFrame';
 import SimpleSearch from '../../components/SimpleSearch';
 import MediaCard from '../../components/MediaCard';
+import EpisodeFooter from '../../components/EpisodeFooter';
 import { underlineProperNames } from '../../lib/proper-names';
 import themeMapping from '../../data/theme-episode-mapping.json';
 
@@ -209,45 +210,11 @@ export default function EpisodePage({ theme, episode, episodeData, themeData }) 
                 </div>
               )}
 
-              {/* Episode Navigation */}
-              <div style={styles.navigationSection}>
-                <h3 style={styles.navigationTitle}>More {themeData?.title || 'Episodes'}</h3>
-                <div style={styles.episodeGrid}>
-                  {themeData?.episodes?.map((ep, index) => {
-                    if (ep.id === episode) return null; // Hide current episode
-                    return (
-                      <button
-                        key={ep.id}
-                        onClick={() => router.push(`/${theme}/${ep.id}`)}
-                        style={styles.episodeButton}
-                      >
-                        <div style={styles.episodeButtonTitle}>{ep.title}</div>
-                        <div style={styles.episodeButtonSubtitle}>{ep.subtitle}</div>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-
-              {/* Theme Navigation */}
-              <div style={styles.navigationSection}>
-                <h3 style={styles.navigationTitle}>Explore Other Themes</h3>
-                <div style={styles.themeGrid}>
-                  {Object.entries(themeMapping.themes).map(([themeKey, themeInfo]) => {
-                    if (themeKey === theme) return null; // Hide current theme
-                    return (
-                      <button
-                        key={themeKey}
-                        onClick={() => router.push(`/${themeKey}`)}
-                        style={styles.themeButton}
-                      >
-                        <div style={styles.themeButtonTitle}>{themeInfo.title}</div>
-                        <div style={styles.themeButtonDescription}>{themeInfo.description}</div>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
+              {/* Episode Footer - Navigation for episodes and themes */}
+              <EpisodeFooter 
+                currentTheme={theme} 
+                currentEpisode={episode} 
+              />
             </div>
           )}
         </div>
