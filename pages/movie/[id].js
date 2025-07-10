@@ -172,6 +172,7 @@ export default function MovieDetailPage({
                     source={source}
                     title={title}
                     year={year}
+                    tmdbId={tmdbId}
                   />
                 )}
               </div>
@@ -321,20 +322,50 @@ function MovieContent({ sections, exploreFurther, moreIdeas, title, year, tmdbId
   );
 }
 
-// Content placeholder for movies without analysis
-function ContentPlaceholder({ source, title, year }) {
+// Content section for movies without analysis - shows basic movie info
+function ContentPlaceholder({ source, title, year, tmdbId }) {
+  const [isLoading, setIsLoading] = useState(true);
+  const [basicInfo, setBasicInfo] = useState(null);
+
+  useEffect(() => {
+    // Simulate loading then show basic info
+    const timer = setTimeout(() => {
+      setBasicInfo({
+        title,
+        year,
+        message: "This movie is in our database. Detailed analysis and recommendations will be available soon."
+      });
+      setIsLoading(false);
+    }, 1500); // Show loading for 1.5 seconds, then show content
+
+    return () => clearTimeout(timer);
+  }, [title, year]);
+
+  if (isLoading) {
+    return (
+      <div style={styles.claudeContent}>
+        <div style={styles.loadingContainer}>
+          <FilmLoadingMessage 
+            message="Loading movie details..."
+            size="large"
+          />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div style={styles.claudeContent}>
-      <div style={styles.placeholderContainer}>
-        <div style={styles.placeholderIcon}>🎬</div>
-        <h3 style={styles.placeholderTitle}>Movie Discovered</h3>
-        <p style={styles.placeholderText}>
-          {title} ({year}) has been added to our database from TMDB.
-          Detailed analysis and recommendations will be available soon.
+      <div style={styles.basicInfoContainer}>
+        <div style={styles.basicInfoIcon}>🎬</div>
+        <p style={styles.basicInfoText}>
+          This movie is in our database. Detailed analysis and recommendations will be available soon.
         </p>
-        <div style={styles.placeholderNote}>
-          Check back later for expert insights and related film recommendations.
-        </div>
+        {tmdbId && (
+          <div style={styles.basicInfoNote}>
+            Movie ID: {tmdbId}
+          </div>
+        )}
       </div>
     </div>
   );
@@ -414,33 +445,26 @@ const styles = {
     marginTop: '8px',
     lineHeight: '1.4',
   },
-  placeholderContainer: {
-    padding: '60px 20px',
+  basicInfoContainer: {
+    padding: '40px 20px',
     textAlign: 'center',
     maxWidth: '400px',
     margin: '0 auto',
   },
-  placeholderIcon: {
+  basicInfoIcon: {
     fontSize: '48px',
     marginBottom: '20px',
   },
-  placeholderTitle: {
-    fontSize: '24px',
-    fontWeight: '600',
-    color: '#000000',
-    margin: '0 0 16px 0',
-  },
-  placeholderText: {
+  basicInfoText: {
     fontSize: '16px',
     color: '#666666',
     lineHeight: '1.6',
-    margin: '0 0 20px 0',
+    margin: '0 0 16px 0',
   },
-  placeholderNote: {
-    fontSize: '14px',
+  basicInfoNote: {
+    fontSize: '12px',
     color: '#888888',
     fontStyle: 'italic',
-    lineHeight: '1.4',
   },
   errorContainer: {
     padding: '40px 16px',
