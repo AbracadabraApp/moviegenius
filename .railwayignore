@@ -1,5 +1,19 @@
-public/images/hero/
-public/images/posters/
-*.jpg
-*.jpeg
-*.png
+# Railway ignore patterns
+Dockerfile*
+*.dockerfile
+.dockerignore
+
+# Force nixpacks detection
+!nixpacks.toml
+
+# Development files
+.env.local
+.env.development
+node_modules/
+.git/
+.next/
+*.log
+
+# Images and static assets that don't need rebuilding
+public/images/
+images/
