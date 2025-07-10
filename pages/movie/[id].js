@@ -322,31 +322,60 @@ function MovieContent({ sections, exploreFurther, moreIdeas, title, year, tmdbId
   );
 }
 
-// Content section for movies without analysis - shows basic movie info
+// Content section for movies without analysis - polls for analysis availability
 function ContentPlaceholder({ source, title, year, tmdbId }) {
   const [isLoading, setIsLoading] = useState(true);
-  const [basicInfo, setBasicInfo] = useState(null);
+  const [hasAnalysis, setHasAnalysis] = useState(false);
+  const [analysisData, setAnalysisData] = useState(null);
+  const router = useRouter();
 
   useEffect(() => {
-    // Simulate loading then show basic info
-    const timer = setTimeout(() => {
-      setBasicInfo({
-        title,
-        year,
-        message: "This movie is in our database. Detailed analysis and recommendations will be available soon."
-      });
-      setIsLoading(false);
-    }, 1500); // Show loading for 1.5 seconds, then show content
+    let pollCount = 0;
+    const maxPolls = 10; // Maximum 30 seconds of polling
+    
+    const checkForAnalysis = async () => {
+      try {
+        const response = await fetch(`/api/movie-analysis?tmdbId=${tmdbId}`);
+        if (response.ok) {
+          const data = await response.json();
+          if (data.hasAnalysis && data.sections && data.sections.length > 0) {
+            setAnalysisData(data);
+            setHasAnalysis(true);
+            setIsLoading(false);
+            return true; // Stop polling
+          }
+        }
+      } catch (error) {
+        console.log('Analysis check failed:', error);
+      }
+      return false; // Continue polling
+    };
 
-    return () => clearTimeout(timer);
-  }, [title, year]);
+    const pollForAnalysis = async () => {
+      const found = await checkForAnalysis();
+      if (found) return;
+      
+      pollCount++;
+      if (pollCount >= maxPolls) {
+        // After 30 seconds, stop loading and show basic movie info
+        setIsLoading(false);
+        return;
+      }
+      
+      // Poll every 3 seconds
+      setTimeout(pollForAnalysis, 3000);
+    };
+
+    // Start polling after initial 2 second delay
+    setTimeout(pollForAnalysis, 2000);
+  }, [tmdbId]);
 
   if (isLoading) {
     return (
       <div style={styles.claudeContent}>
         <div style={styles.loadingContainer}>
           <FilmLoadingMessage 
-            message="Loading movie details..."
+            message="Loading movie analysis..."
             size="large"
           />
         </div>
@@ -354,18 +383,19 @@ function ContentPlaceholder({ source, title, year, tmdbId }) {
     );
   }
 
+  if (hasAnalysis && analysisData) {
+    // Analysis found! Redirect to reload page with analysis
+    router.replace(`/movie/${tmdbId}`);
+    return null;
+  }
+
+  // No analysis available - show minimal content
   return (
     <div style={styles.claudeContent}>
       <div style={styles.basicInfoContainer}>
-        <div style={styles.basicInfoIcon}>🎬</div>
         <p style={styles.basicInfoText}>
-          This movie is in our database. Detailed analysis and recommendations will be available soon.
+          Basic movie information loaded. Additional content may become available over time.
         </p>
-        {tmdbId && (
-          <div style={styles.basicInfoNote}>
-            Movie ID: {tmdbId}
-          </div>
-        )}
       </div>
     </div>
   );
