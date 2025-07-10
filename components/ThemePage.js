@@ -64,7 +64,7 @@ export default function ThemePage({ themeId, customStyles = {} }) {
         <div style={mergedStyles.inputArea || styles.inputArea}>
           <SimpleSearch 
             onResults={handleSearchResults}
-            placeholder="Search for movies..."
+            placeholder="Search movies..."
           />
         </div>
         
