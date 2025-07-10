@@ -1,0 +1,4 @@
+# This file forces Railway to use nixpacks instead of Docker
+# Created to override Railway's Docker detection cache
+builder=nixpacks
+timestamp=2025-07-10T12:07:00Z

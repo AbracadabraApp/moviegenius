@@ -32,7 +32,7 @@ export default function FilmNoirPage() {
   };
   
   const handleEpisodeClick = (episode) => {
-    router.push(`/genius/${themeKey}/1/${episode.id}`);
+    router.push(`/${themeKey}/${episode.id}`);
   };
   
   useEffect(() => {
