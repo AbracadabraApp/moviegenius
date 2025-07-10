@@ -19,6 +19,13 @@ export default function EssentialMovies({ theme }) {
       { title: 'The Big Sleep', year: 1946, tmdb_id: 910 },
       { title: 'Out of the Past', year: 1947, tmdb_id: 678 },
       { title: 'Sunset Boulevard', year: 1950, tmdb_id: 599 }
+    ],
+    'horror-suspense': [
+      { title: 'Psycho', year: 1960, tmdb_id: 539 },
+      { title: 'The Exorcist', year: 1973, tmdb_id: 9552 },
+      { title: 'Halloween', year: 1978, tmdb_id: 530 },
+      { title: 'Night of the Living Dead', year: 1968, tmdb_id: 10625 },
+      { title: 'Rosemary\'s Baby', year: 1968, tmdb_id: 10110 }
     ]
   };
 

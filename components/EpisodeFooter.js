@@ -1,17 +1,12 @@
 /**
  * Episode Footer Component
  * 
- * Displays:
- * 1. Horizontal navigation for all episodes in the same theme (excluding current episode)
- * 2. "Explore Further" section with 10 main themes from genius home page
+ * Simple component that filters current episode from theme episodes list.
  */
 
-import { useRouter } from 'next/router';
 import themeMapping from '../data/theme-episode-mapping.json';
 
 export default function EpisodeFooter({ currentTheme, currentEpisode }) {
-  const router = useRouter();
-
   // Safety check for required props
   if (!currentTheme || !currentEpisode) return null;
 
@@ -22,7 +17,7 @@ export default function EpisodeFooter({ currentTheme, currentEpisode }) {
   // Filter out current episode from theme episodes
   const otherEpisodes = themeData.episodes.filter(ep => ep.id !== currentEpisode);
 
-  // Complete theme mapping with exact slugs and display names
+  // Static theme list
   const exploreThemes = [
     { slug: 'film-noir', name: 'Film Noir' },
     { slug: 'horror-suspense', name: 'Horror & Suspense' },
@@ -36,15 +31,6 @@ export default function EpisodeFooter({ currentTheme, currentEpisode }) {
     { slug: 'cinema-cultural-impact', name: 'Hollywood Transformed' }
   ];
 
-  const handleEpisodeClick = (episode) => {
-    router.push(`/${currentTheme}/${episode.id}`);
-  };
-
-  const handleThemeClick = (themeSlug) => {
-    // Navigate directly to theme page
-    router.push(`/${themeSlug}`);
-  };
-
   return (
     <div style={styles.footer}>
       
@@ -54,26 +40,14 @@ export default function EpisodeFooter({ currentTheme, currentEpisode }) {
           <h3 style={styles.sectionTitle}>More from {themeData.title}</h3>
           <div style={styles.episodeGrid}>
             {otherEpisodes.map((episode) => (
-              <button
+              <a
                 key={episode.id}
+                href={`/${currentTheme}/${episode.id}`}
                 style={styles.episodeButton}
-                onClick={() => handleEpisodeClick(episode)}
-                onMouseEnter={(e) => {
-                  e.target.style.backgroundColor = '#fefdf8';
-                  e.target.style.transform = 'translateY(-2px)';
-                  e.target.style.boxShadow = '0 4px 12px rgba(212, 175, 55, 0.2)';
-                  e.target.style.borderColor = '#d4af37';
-                }}
-                onMouseLeave={(e) => {
-                  e.target.style.backgroundColor = '#ffffff';
-                  e.target.style.transform = 'translateY(0)';
-                  e.target.style.boxShadow = '0 2px 8px rgba(212, 175, 55, 0.1)';
-                  e.target.style.borderColor = '#d4af37';
-                }}
               >
                 <div style={styles.episodeTitle}>{episode.title}</div>
                 <div style={styles.episodeSubtitle}>{episode.subtitle}</div>
-              </button>
+              </a>
             ))}
           </div>
         </div>
@@ -84,25 +58,13 @@ export default function EpisodeFooter({ currentTheme, currentEpisode }) {
         <h3 style={styles.sectionTitle}>Explore Further</h3>
         <div style={styles.themeGrid}>
           {exploreThemes.filter(theme => theme.slug !== currentTheme).map((theme) => (
-            <button
+            <a
               key={theme.slug}
+              href={`/${theme.slug}`}
               style={styles.themeButton}
-              onClick={() => handleThemeClick(theme.slug)}
-              onMouseEnter={(e) => {
-                e.target.style.backgroundColor = '#d4af37';
-                e.target.style.color = '#ffffff';
-                e.target.style.transform = 'translateY(-1px)';
-                e.target.style.boxShadow = '0 4px 10px rgba(212, 175, 55, 0.3)';
-              }}
-              onMouseLeave={(e) => {
-                e.target.style.backgroundColor = '#ffffff';
-                e.target.style.color = '#000000';
-                e.target.style.transform = 'translateY(0)';
-                e.target.style.boxShadow = '0 2px 6px rgba(212, 175, 55, 0.1)';
-              }}
             >
               {theme.name}
-            </button>
+            </a>
           ))}
         </div>
       </div>
@@ -148,11 +110,10 @@ const styles = {
     borderRadius: '12px',
     padding: '20px',
     textAlign: 'left',
-    cursor: 'pointer',
-    transition: 'all 0.3s ease',
+    textDecoration: 'none',
     boxShadow: '0 2px 8px rgba(212, 175, 55, 0.1)',
-    outline: 'none',
-    fontFamily: 'Georgia, "Times New Roman", serif'
+    fontFamily: 'Georgia, "Times New Roman", serif',
+    display: 'block'
   },
   
   episodeTitle: {
@@ -186,8 +147,7 @@ const styles = {
     borderRadius: '12px',
     fontSize: '13px',
     fontWeight: '600',
-    cursor: 'pointer',
-    transition: 'all 0.3s ease',
+    textDecoration: 'none',
     textAlign: 'center',
     fontFamily: 'Georgia, "Times New Roman", serif',
     lineHeight: '1.3',
@@ -197,8 +157,7 @@ const styles = {
     justifyContent: 'center',
     boxShadow: '0 2px 6px rgba(212, 175, 55, 0.1)',
     backgroundColor: '#ffffff',
-    color: '#000000',
-    outline: 'none'
+    color: '#000000'
   },
   
 };
