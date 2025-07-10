@@ -16,7 +16,7 @@
  *   initialPoster="/images/matrix.jpg" 
  * />
  */
-import { Heart, Bookmark } from 'lucide-react';
+import { Check, Plus } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { FavoritesManager } from './FavoritesManager';
 // import useStreamingData from '../hooks/useStreamingData'; // Stubbed out
@@ -221,53 +221,75 @@ export default function MediaCard({
         e.currentTarget.style.transform = 'translateY(0)';
       }}
     >
-      <img src={poster} alt={`Poster for ${title}`} style={styles.poster} />
-      <div style={styles.textContainer}>
-        <div style={styles.header}>
-          <div style={styles.title}>{title}</div>
+      {/* Row 1: Poster + Text Content */}
+      <div style={styles.topRow}>
+        <img src={poster} alt={`Poster for ${title}`} style={styles.poster} />
+        <div style={styles.textContainer}>
+          <div style={styles.header}>
+            <div style={styles.title}>{title}</div>
+          </div>
           <div style={styles.year}>({year})</div>
+          <div style={styles.slug}>{slug}</div>
         </div>
-        <div style={styles.slug}>{slug}</div>
-        
-        {/* Bottom row: streaming left, icons right */}
-        <div style={styles.bottomRow}>
-          <div style={styles.streamingInfo}>
+      </div>
+      
+      {/* Row 2: Streaming + Actions */}
+      <div style={styles.bottomRow}>
+        <div style={styles.streamingInfo}>
+          {initialStreaming && (
             <span style={styles.streamingText}>
-              Streaming on TBD
+              Streaming on {initialStreaming}
+            </span>
+          )}
+        </div>
+        <div style={styles.iconRow}>
+        <button
+          onClick={() => {
+            const newState = FavoritesManager.toggleHeart(movieData);
+            setHearted(newState);
+          }}
+          style={styles.iconButton}
+          aria-label={hearted ? 'Mark as unseen' : 'Mark as seen'}
+          role="button"
+        >
+          <div style={styles.iconWithTextHorizontal}>
+            <Check
+              size={16}
+              color={hearted ? '#374151' : '#9ca3af'}
+              strokeWidth={hearted ? 2.5 : 1.5}
+            />
+            <span style={{
+              ...styles.iconLabel,
+              color: hearted ? '#374151' : '#9ca3af',
+              fontWeight: hearted ? '600' : '400'
+            }}>
+              Seen
             </span>
           </div>
-          <div style={styles.iconRow}>
-          <button
-            onClick={() => {
-              const newState = FavoritesManager.toggleHeart(movieData);
-              setHearted(newState);
-            }}
-            style={styles.iconButton}
-            aria-label={hearted ? 'Remove from favorites' : 'Add to favorites'}
-            role="button"
-          >
-            <Heart
-              size={18}
-              color={hearted ? '#ef4444' : '#374151'}
-              fill={hearted ? '#ef4444' : 'none'}
+        </button>
+        <button
+          onClick={() => {
+            const newState = FavoritesManager.toggleBookmark(movieData);
+            setBookmarked(newState);
+          }}
+          style={styles.iconButton}
+          aria-label={bookmarked ? 'Remove from list' : 'Add to list'}
+          role="button"
+        >
+          <div style={styles.iconWithTextHorizontal}>
+            <Plus
+              size={16}
+              color={bookmarked ? '#374151' : '#9ca3af'}
             />
-          </button>
-          <button
-            onClick={() => {
-              const newState = FavoritesManager.toggleBookmark(movieData);
-              setBookmarked(newState);
-            }}
-            style={styles.iconButton}
-            aria-label={bookmarked ? 'Remove bookmark' : 'Bookmark movie'}
-            role="button"
-          >
-            <Bookmark
-              size={18}
-              color={bookmarked ? '#6b7280' : '#374151'}
-              fill={bookmarked ? '#6b7280' : 'none'}
-            />
-          </button>
+            <span style={{
+              ...styles.iconLabel,
+              color: bookmarked ? '#374151' : '#9ca3af',
+              fontWeight: bookmarked ? '600' : '400'
+            }}>
+              Add
+            </span>
           </div>
+        </button>
         </div>
       </div>
     </a>
@@ -278,12 +300,11 @@ const styles = {
   card: {
     position: 'relative',
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'column',
     borderRadius: '12px',
     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.20)',
     padding: '12px',
     backgroundColor: 'white',
-    alignItems: 'flex-start',
     width: '100%',
     maxWidth: '100%', // Prevent expansion beyond container
     boxSizing: 'border-box', // Include padding in width calculation
@@ -295,9 +316,15 @@ const styles = {
     textDecoration: 'none',
     color: 'inherit',
   },
+  topRow: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    marginBottom: '2px',
+  },
   poster: {
-    width: '140px',
-    height: '210px',
+    width: '125px',
+    height: '188px',
     objectFit: 'cover',
     borderRadius: '8px',
     marginRight: '12px',
@@ -307,15 +334,10 @@ const styles = {
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
-    minHeight: '210px', // Match poster height
-    position: 'relative',
     minWidth: 0, // Allow flex child to shrink below content size
     overflow: 'hidden', // Prevent text overflow
   },
   header: {
-    display: 'flex',
-    flexDirection: 'row',
-    gap: '6px',
     fontSize: '18px',
     lineHeight: '1.2',
     fontFamily: 'inherit',
@@ -327,9 +349,12 @@ const styles = {
     color: '#000',
   },
   year: {
+    fontSize: '14px',
     color: '#666',
     fontWeight: 'normal',
     fontFamily: 'inherit',
+    marginTop: '2px',
+    marginBottom: '2px',
   },
   slug: {
     fontSize: '14px',
@@ -341,8 +366,7 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginTop: 'auto', // Pushes to bottom of flex container
-    paddingTop: '8px',
+    paddingTop: '2px',
   },
   streamingInfo: {
     flex: 1,
@@ -367,11 +391,28 @@ const styles = {
     background: 'none',
     border: 'none',
     cursor: 'pointer',
-    padding: '4px',
+    padding: '4px 6px',
     borderRadius: '4px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     transition: 'background-color 0.2s ease',
+  },
+  iconWithText: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '2px',
+  },
+  iconWithTextHorizontal: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: '4px',
+  },
+  iconLabel: {
+    fontSize: '11px',
+    fontFamily: 'inherit',
+    lineHeight: '1',
   },
 };

@@ -289,3 +289,15 @@ This incident will be considered resolved when:
 - **BENEFIT:** Proper browser navigation with back button support and scroll-to-top
 - **REVIEWER:** UX Engineer
 - **STATUS:** PRODUCTION READY - NAVIGATION IMPROVED - LOCK MAINTAINED
+
+**2025-07-10: ENHANCED UX LAYOUT AND ACTION BUTTONS**
+- ✅ AUTHORIZED: Restructure to two-row layout (poster+text top, streaming+actions bottom)
+- ✅ AUTHORIZED: Convert to Check/Plus icons with "Seen | Add" horizontal text labels
+- ✅ AUTHORIZED: Optimize poster size to 125px×188px for better visual balance
+- ✅ AUTHORIZED: Display real streaming data when available, hide when missing
+- ✅ AUTHORIZED: Improve title wrapping with year on separate line for readability
+- ✅ AUTHORIZED: Tighten vertical spacing for cleaner card appearance
+- **RATIONALE:** Superior UX with clear action labeling matching MovieHeaderLarge pattern
+- **BENEFIT:** Better user comprehension of "Seen/Add" vs ambiguous Heart/Bookmark icons
+- **REVIEWER:** UX Engineer  
+- **STATUS:** PRODUCTION READY - ENHANCED UX - LOCK MAINTAINED
