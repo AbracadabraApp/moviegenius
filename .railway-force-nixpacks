@@ -2,3 +2,4 @@
 # Created to override Railway's Docker detection cache
 builder=nixpacks
 timestamp=2025-07-10T12:07:00Z
+# Test GitHub integration - Railway should auto-deploy this commit
