@@ -19,8 +19,19 @@ export default function NavBar() {
     { label: 'You', icon: User, route: '/you' },
   ];
 
+  const themeKeys = [
+    'film-noir', 'horror-suspense', 'comedy-through-time', 'women-directors',
+    'world-cinema', 'acclaimed-directors', 'avant-garde-film', 'magic-of-moviemaking',
+    'cinema-through-decades', 'cinema-cultural-impact'
+  ];
+
   const activeLabel = navItems.find(
-    (item) => item.route === router.pathname
+    (item) => {
+      if (item.route === router.pathname) return true;
+      // Theme pages should be considered part of Genius
+      if (item.route === '/genius' && themeKeys.includes(router.pathname.slice(1))) return true;
+      return false;
+    }
   )?.label;
 
   const handleNavClick = (route, isActive) => {

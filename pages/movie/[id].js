@@ -14,6 +14,7 @@ import ExploreFurtherSection from '../../components/ExploreFurtherSection';
 import EntityLinkedText from '../../components/EntityLinkedText';
 import CategoryBrowse from '../../components/CategoryBrowse';
 import usePredictiveLoading from '../../hooks/usePredictiveLoading';
+import FilmLoadingMessage from '../../components/FilmLoadingMessage';
 
 // Simplified component - business logic moved to services
 export default function MovieDetailPage({ 
@@ -324,6 +325,13 @@ function MovieContent({ sections, exploreFurther, moreIdeas, title, year, tmdbId
 function ContentPlaceholder({ source, title, year }) {
   return (
     <div style={styles.claudeContent}>
+      <div style={styles.loadingContainer}>
+        <FilmLoadingMessage 
+          cycling={true}
+          interval={4000}
+          size="large"
+        />
+      </div>
     </div>
   );
 }
@@ -389,6 +397,19 @@ const styles = {
     paddingLeft: '16px',
     paddingRight: '12px',
   },
+  loadingContainer: {
+    padding: '40px 16px',
+    textAlign: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+  loadingSubtext: {
+    fontSize: '14px',
+    color: '#6b7280',
+    marginTop: '8px',
+    lineHeight: '1.4',
+  },
   errorContainer: {
     padding: '40px 16px',
     textAlign: 'center',
@@ -401,6 +422,7 @@ const styles = {
 
 // Business logic moved to services - import them here
 import { AnalysisService } from '../../lib/services/analysis-service';
+import { processAnalysisContent, splitContentAtSubheads } from '../../lib/movie-analysis-linker';
 
 
 // Nuclear capture disabled - happens during build time only
@@ -463,6 +485,7 @@ export async function getStaticProps({ params }) {
       return { notFound: true };
     }
 
+    // Create supabase client using the working pattern from 3 weeks ago
     const { createClient } = await import('@supabase/supabase-js');
     const supabase = createClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL,
@@ -492,16 +515,37 @@ export async function getStaticProps({ params }) {
           return { notFound: true };
         }
         
-        // Create basic movie entry in database for future reference
-        const newMovieEntry = await createBasicMovieEntry(tmdbMovie);
+        // Create basic movie entry in database for future reference (skip if no database)
+        let newMovieEntry = null;
+        if (supabase) {
+          try {
+            newMovieEntry = await createBasicMovieEntry(tmdbMovie);
+            console.log(`💾 Created database entry: "${tmdbMovie.title}" (${tmdbMovie.release_date?.substring(0, 4)}) -> TMDB ${tmdbMovie.id}`);
+          } catch (dbError) {
+            console.log('⚠️ Could not save to database, continuing with TMDB data only');
+          }
+        }
         
-        // Log discovery for potential analysis generation
-        console.log(`📊 TMDB discovery logged for potential analysis: ${tmdbId}`);
+        // Generate analysis for newly discovered movies
+        let analysisData = null;
+        if (newMovieEntry && supabase) {
+          console.log(`🚀 Attempting analysis generation for newly discovered movie: ${newMovieEntry.title}`);
+          try {
+            analysisData = await AnalysisService.getOrGenerate(newMovieEntry);
+            if (analysisData && analysisData.sections && analysisData.sections.length > 0) {
+              console.log(`✅ Analysis generated successfully for ${newMovieEntry.title}`);
+            } else {
+              console.log(`⚠️ Analysis generation returned empty result for ${newMovieEntry.title}`);
+            }
+          } catch (analysisError) {
+            console.log(`⚠️ Analysis generation failed for ${newMovieEntry.title}:`, analysisError.message);
+          }
+        }
         
         console.log(`✅ TMDB movie discovered: "${tmdbMovie.title}" (${tmdbMovie.release_date?.substring(0, 4)})`);
         
-        // Return TMDB movie data
-        return {
+        // Build response with analysis if available
+        const response = {
           props: {
             title: tmdbMovie.title,
             year: tmdbMovie.release_date ? parseInt(tmdbMovie.release_date.substring(0, 4)) : null,
@@ -512,12 +556,52 @@ export async function getStaticProps({ params }) {
             initialStreaming: null, // Will be fetched organically
             tmdbId: tmdbMovie.id,
             error: null,
-            hasAnalysis: false, // TMDB discoveries start without analysis
+            hasAnalysis: false, // Will be updated if analysis exists
             source: 'tmdb_discovery'
             // Note: overview intentionally omitted to prevent TMDB summary contamination
           },
           revalidate: 60 // ISR for TMDB discoveries
         };
+        
+        // Add analysis data if generated
+        if (analysisData && analysisData.sections && analysisData.sections.length > 0) {
+          // Process movie links in analysis content server-side
+          console.log(`🔗 Processing movie links for TMDB discovery: ${tmdbMovie.title}`);
+          
+          const processedSections = [];
+          for (const section of analysisData.sections) {
+            if (section.type === 'text' && section.content) {
+              // Split text content at SUBHEAD boundaries first
+              const splitSections = splitContentAtSubheads(section.content);
+              
+              for (const splitSection of splitSections) {
+                if (splitSection.type === 'text' && splitSection.content) {
+                  // Process movie links in text content (SUBHEADs are now embedded in text)
+                  const processedContent = await processAnalysisContent(
+                    splitSection.content,
+                    tmdbMovie.title,
+                    `${tmdbMovie.title} TMDB discovery section`
+                  );
+                  processedSections.push({
+                    type: 'text',
+                    content: processedContent
+                  });
+                }
+              }
+            } else {
+              processedSections.push(section);
+            }
+          }
+          
+          response.props.sections = processedSections;
+          response.props.exploreFurther = analysisData.exploreFurther;
+          response.props.moreIdeas = analysisData.moreIdeas;
+          response.props.hasAnalysis = true;
+          response.props.source = 'tmdb_discovery_with_analysis';
+          console.log(`📊 Including generated analysis in page props for ${tmdbMovie.title}`);
+        }
+        
+        return response;
         
       } catch (tmdbError) {
         console.error('TMDB discovery failed:', tmdbError);
@@ -555,10 +639,38 @@ export async function getStaticProps({ params }) {
 
     // Simple content check: Does analysis exist for this movie?
     try {
-      const analysisData = await AnalysisService.getOrGenerate(movieEntry);
+      const analysisData = supabase ? await AnalysisService.getOrGenerate(movieEntry) : null;
       if (analysisData && analysisData.sections && analysisData.sections.length > 0) {
-        // Analysis exists - show full content
-        response.props.sections = analysisData.sections;
+        // Process movie links in analysis content server-side
+        console.log(`🔗 Processing movie links for: ${movieEntry.title} (${movieEntry.year})`);
+        
+        const processedSections = [];
+        for (const section of analysisData.sections) {
+          if (section.type === 'text' && section.content) {
+            // Split text content at SUBHEAD boundaries first
+            const splitSections = splitContentAtSubheads(section.content);
+            
+            for (const splitSection of splitSections) {
+              if (splitSection.type === 'text' && splitSection.content) {
+                // Process movie links in text content (SUBHEADs are now embedded in text)
+                const processedContent = await processAnalysisContent(
+                  splitSection.content,
+                  movieEntry.title,
+                  `${movieEntry.title} (${movieEntry.year}) section`
+                );
+                processedSections.push({
+                  type: 'text',
+                  content: processedContent
+                });
+              }
+            }
+          } else {
+            processedSections.push(section);
+          }
+        }
+        
+        // Analysis exists - show full content with processed links
+        response.props.sections = processedSections;
         response.props.exploreFurther = analysisData.exploreFurther;
         response.props.moreIdeas = analysisData.moreIdeas;
         response.props.hasAnalysis = true;
@@ -595,39 +707,12 @@ export async function getStaticPaths() {
       };
     }
 
-    const { createClient } = await import('@supabase/supabase-js');
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
-
-    // Test deployment: Generate only 10 specific movies for testing
-    const testMovieIds = [901, 770, 72976, 11314, 44865, 44012, 631, 897661, 389, 76203];
-    
-    const { data: movies } = await supabase
-      .from('movies')
-      .select(`
-        tmdb_id,
-        movie_analyses!inner(analysis_type)
-      `)
-      .eq('movie_analyses.analysis_type', 'page_analysis')
-      .in('tmdb_id', testMovieIds)
-      .not('tmdb_id', 'is', null);
-
-    const paths = movies?.map(movie => ({
-      params: { id: movie.tmdb_id.toString() }
-    })) || [];
-    
-    console.log(`🚀 Nuclear test build: Generating ${paths.length} static movie pages`);
-    console.log(`📋 TMDB IDs: ${testMovieIds.join(', ')}`);
-    console.log(`✅ Found ${paths.length}/10 test movies with analysis ready for static generation`);
-    
-    // Debug: Show exactly what paths are being generated
-    console.log(`🔍 Generated paths:`, paths.map(p => `/movie/${p.params.id}`));
-
+    // Skip database paths for now due to Supabase client issues in getStaticPaths
+    // Use fallback: 'blocking' to generate paths on demand
+    console.log('Using fallback blocking for all movie paths');
     return {
-      paths,
-      fallback: 'blocking' // Allow other movies to be generated dynamically
+      paths: [],
+      fallback: 'blocking'
     };
 
   } catch (error) {

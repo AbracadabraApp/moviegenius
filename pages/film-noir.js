@@ -14,7 +14,8 @@ export default function FilmNoirPage() {
   const [episodes, setEpisodes] = useState([]);
   const [loading, setLoading] = useState(true);
   
-  const themeData = themeMapping.themes['film-noir'];
+  const themeKey = 'film-noir';
+  const themeData = themeMapping.themes[themeKey];
 
   const handleSearchResults = (results) => {
     // Multi-search returns {movies: [], people: []} - extract movies array
@@ -30,7 +31,7 @@ export default function FilmNoirPage() {
   };
   
   const handleEpisodeClick = (episode) => {
-    router.push(`/film-noir/${episode.id}`);
+    router.push(`/genius/${themeKey}/1/${episode.id}`);
   };
   
   useEffect(() => {
@@ -58,33 +59,31 @@ export default function FilmNoirPage() {
         <div style={styles.inputArea}>
           <SimpleSearch 
             onResults={handleSearchResults}
-            placeholder="Search film noir movies..."
+            placeholder={`Search ${themeData.title.toLowerCase()} movies...`}
           />
         </div>
         
+        <video 
+          src="/images/hero/film-noir/noir2.mov" 
+          autoPlay
+          muted
+          loop
+          playsInline
+          style={{
+            width: '100%',
+            height: 'auto',
+            aspectRatio: '2.22 / 1',
+            objectFit: 'cover'
+          }}
+        />
+
         {/* Content Area */}
         <div style={styles.contentArea}>
           
-          {/* Hero Section */}
-          <div style={styles.heroSection}>
-            <video 
-              src="/images/hero/film-noir/noir2.mov" 
-              autoPlay
-              muted
-              loop
-              playsInline
-              style={styles.heroImage}
-            />
-            <div style={styles.heroTitleOverlay}>
-              <h1 style={styles.heroTitle}>Film Noir</h1>
-            </div>
-          </div>
-          
-          
           {/* Essential Movies */}
-          <EssentialMovies theme="film-noir" />
+          <EssentialMovies theme={themeKey} />
           
-          {showSearchResults ? (
+          {showSearchResults && (
             <div style={styles.searchResults}>
               <div style={styles.resultsHeader}>
                 <span>{searchResults.length} movie{searchResults.length !== 1 ? 's' : ''} found</span>
@@ -104,37 +103,22 @@ export default function FilmNoirPage() {
                 ))}
               </div>
             </div>
-          ) : (
-            <div style={styles.episodesSection}>
-              {loading ? (
-                <div style={styles.loadingText}>Loading episodes...</div>
-              ) : (
-                <div style={styles.episodeGrid}>
-                  {episodes.map((episode, index) => (
-                    <button 
-                      key={episode.id}
-                      style={styles.episodeButton}
-                      onClick={() => handleEpisodeClick(episode)}
-                    >
-                      <div style={styles.episodeButtonTitle}>{episode.title}</div>
-                      <div style={styles.episodeButtonSubtitle}>{episode.subtitle}</div>
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
           )}
           
           {/* Theme Navigation */}
           <div style={styles.navigationSection}>
-            <h3 style={styles.navigationTitle}>Explore Other Themes</h3>
+            <div style={styles.navigationHeader}>
+              <div style={styles.navigationDivider} />
+              <span style={styles.navigationLabel}>Explore Other Themes</span>
+              <div style={styles.navigationDivider} />
+            </div>
             <div style={styles.themeGrid}>
-              {Object.entries(themeMapping.themes).map(([themeKey, themeInfo]) => {
-                if (themeKey === 'film-noir') return null; // Hide current theme
+              {Object.entries(themeMapping.themes).map(([otherThemeKey, themeInfo]) => {
+                if (otherThemeKey === themeKey) return null; // Hide current theme
                 return (
                   <button
-                    key={themeKey}
-                    onClick={() => router.push(`/${themeKey}`)}
+                    key={otherThemeKey}
+                    onClick={() => router.push(`/${otherThemeKey}`)}
                     style={styles.themeButton}
                   >
                     <div style={styles.themeButtonTitle}>{themeInfo.title}</div>
@@ -164,9 +148,6 @@ const styles = {
   },
   contentArea: {
     flex: 1,
-    overflowY: 'scroll',
-    scrollbarWidth: 'none',
-    msOverflowStyle: 'none',
     padding: '0',
     background: 'linear-gradient(to bottom, #1a1a1a 0%, #374151 100%)',
   },
@@ -182,17 +163,7 @@ const styles = {
     overflow: 'hidden',
     marginBottom: '0',
     borderRadius: '0',
-  },
-  heroImage: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: '120%',
-    height: '120%',
-    objectFit: 'cover',
-    objectPosition: 'center center',
-    transform: 'translate(-8.33%, -8.33%)',
-    zIndex: 1,
+    background: 'linear-gradient(135deg, #1a1a1a 0%, #2d3748 50%, #1a1a1a 100%)',
   },
   heroTitleOverlay: {
     position: 'absolute',
@@ -255,51 +226,6 @@ const styles = {
   movieItem: {
     cursor: 'pointer',
   },
-  episodesSection: {
-    padding: '16px',
-    backgroundColor: '#ffffff',
-    margin: '16px',
-    borderRadius: '8px',
-  },
-  loadingText: {
-    fontSize: '16px',
-    color: '#6b7280',
-    textAlign: 'center',
-    padding: '40px 0',
-  },
-  episodeGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-    gap: '12px',
-    marginBottom: '20px',
-    justifyItems: 'start',
-  },
-  episodeButton: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'flex-start',
-    padding: '16px',
-    backgroundColor: '#ffffff',
-    border: '1px solid #e5e7eb',
-    borderRadius: '12px',
-    cursor: 'pointer',
-    transition: 'all 0.2s ease',
-    textAlign: 'left',
-    boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
-    width: '280px',
-  },
-  episodeButtonTitle: {
-    fontSize: '16px',
-    fontWeight: '600',
-    color: '#111827',
-    marginBottom: '4px',
-    lineHeight: '1.3',
-  },
-  episodeButtonSubtitle: {
-    fontSize: '14px',
-    color: '#6b7280',
-    lineHeight: '1.4',
-  },
   errorText: {
     fontSize: '16px',
     color: '#dc2626',
@@ -309,17 +235,30 @@ const styles = {
   
   // Navigation Styles
   navigationSection: {
-    marginTop: '40px',
-    padding: '0 16px',
+    backgroundColor: '#ffffff',
+    margin: '16px',
+    marginBottom: '76px',
+    padding: '12px',
+    borderRadius: '8px',
+    boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
   },
-  navigationTitle: {
-    fontSize: '20px',
+  navigationHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '16px',
+    marginBottom: '12px',
+  },
+  navigationDivider: {
+    flex: 1,
+    height: '1px',
+    backgroundColor: '#d4af37',
+  },
+  navigationLabel: {
+    fontSize: '12px',
     fontWeight: '600',
-    color: '#d4af37',
-    marginBottom: '16px',
-    textAlign: 'center',
     textTransform: 'uppercase',
     letterSpacing: '1px',
+    color: '#d4af37',
   },
   themeGrid: {
     display: 'grid',
@@ -333,8 +272,8 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'flex-start',
     padding: '16px',
-    backgroundColor: '#f8fafc',
-    border: '1px solid #e2e8f0',
+    backgroundColor: '#ffffff',
+    border: '1px solid #e5e7eb',
     borderRadius: '12px',
     cursor: 'pointer',
     transition: 'all 0.2s ease',
@@ -346,7 +285,7 @@ const styles = {
     fontSize: '16px',
     fontWeight: '600',
     color: '#111827',
-    marginBottom: '6px',
+    marginBottom: '4px',
     lineHeight: '1.3',
   },
   themeButtonDescription: {
