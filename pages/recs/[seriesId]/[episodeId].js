@@ -114,7 +114,7 @@ export default function SeriesEpisodePage() {
 
   if (error) {
     return (
-      <PhoneFrame active="ask">
+      <PhoneFrame active="genius">
         <div style={styles.container}>
           {/* Back button for navigation */}
           
@@ -131,7 +131,7 @@ export default function SeriesEpisodePage() {
 
   if (!content || isLoading) {
     return (
-      <PhoneFrame active="ask">
+      <PhoneFrame active="genius">
         <div style={styles.container}>
           {/* Back button for navigation */}
           
@@ -156,7 +156,7 @@ export default function SeriesEpisodePage() {
   }
 
   return (
-    <PhoneFrame active="ask">
+    <PhoneFrame active="genius">
       <div style={styles.container}>
         {/* Back button for navigation */}
         
