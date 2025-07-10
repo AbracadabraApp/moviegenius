@@ -11,10 +11,10 @@ export default function SeriesEpisodePage() {
   const router = useRouter();
   const { seriesId, episodeId } = router.query;
   
-  // Redirect to the rich episode system that has subheads, movies, and explore further
+  // Redirect to the theme episode system 
   useEffect(() => {
     if (seriesId && episodeId) {
-      router.replace(`/genius/${seriesId}/1/${episodeId}`);
+      router.replace(`/${seriesId}/${episodeId}`);
     }
   }, [seriesId, episodeId, router]);
   
