@@ -1,43 +1,36 @@
 /**
- * MediaCard Component - 🔒 LOCKED FOR ORGANIC SLUG GENERATION 🔒
+ * MediaCard Component
  * 
- * ⚠️  CRITICAL: Only uses organic movie poster taglines
- * ⚠️  NO plot summaries, NO TMDB overviews, NO story descriptions
- * ⚠️  ONLY calls /api/generate-organic-slug for marketing copy
- * 
- * 2-row layout design:
- * Row 1: Poster | Title (Year) | Organic Slug (marketing tagline)
- * Row 2: Streaming info | Heart/Bookmark icons
+ * Self-contained movie card with intelligent data fetching and caching.
+ * Handles its own streaming data, slug enhancement, and favorites management.
+ * Provides consistent functionality across all pages.
  * 
  * @component
- * @locked true
- * @version LOCKED-2025-07-02
  * @example
  * <MediaCard 
  *   title="The Matrix" 
  *   year={1999} 
  *   initialSlug="Reality is a simulation" 
  *   initialPoster="/images/matrix.jpg" 
- *   tmdbId={603}
  * />
  */
-import { Plus, Check } from 'lucide-react';
+import { Heart, Bookmark } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { FavoritesManager } from './FavoritesManager';
 // import useStreamingData from '../hooks/useStreamingData'; // Stubbed out
 
 /**
- * MediaCard - Simple movie card with 2-row layout
+ * MediaCard - Self-contained interactive movie card component
  * 
  * @param {Object} props
  * @param {string} props.title - Movie title (required)
  * @param {number} props.year - Release year (required)
  * @param {string} props.initialSlug - Initial slug/description (optional)
  * @param {string} props.initialPoster - Initial poster URL (optional)
- * @param {string} props.initialStreaming - Initial streaming text (optional)
+ * @param {string} props.initialStreaming - Initial streaming text from Claude (optional)
  * @param {boolean} props.isDetailPage - Whether this is on a detail page (optional)
- * @param {number} props.tmdbId - TMDB ID for navigation (required)
+ * @param {number} props.tmdbId - TMDB ID for navigation (optional)
  */
 export default function MediaCard({ 
   title, 
@@ -50,11 +43,39 @@ export default function MediaCard({
 }) {
   const [hearted, setHearted] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
+  const [slug, setSlug] = useState(initialSlug || '');
   const [poster, setPoster] = useState(initialPoster || '/images/placeholder-poster.jpg');
   const [movieTmdbId, setMovieTmdbId] = useState(tmdbId);
-  const [slug, setSlug] = useState(initialSlug || '');
 
+  // Update poster when initialPoster prop changes (navigation between movies)
+  useEffect(() => {
+    if (initialPoster) {
+      setPoster(initialPoster);
+    }
+  }, [initialPoster]);
+
+  // Update tmdbId when prop changes
+  useEffect(() => {
+    setMovieTmdbId(tmdbId);
+  }, [tmdbId]);
+
+  // Update slug when initialSlug prop changes
+  useEffect(() => {
+    if (initialSlug) {
+      setSlug(initialSlug);
+    }
+  }, [initialSlug]);
+  const [isEnhancing, setIsEnhancing] = useState(false);
   const router = useRouter();
+
+  // Streaming feature stubbed out - will be replaced with real provider
+  // const { 
+  //   hasStreaming, 
+  //   getDisplayText, 
+  //   primaryService,
+  //   freeOptions,
+  //   isLoading: streamingLoading 
+  // } = useStreamingData(title, year, initialStreaming);
 
   // Generate media ID from title and year
   const mediaId = `${title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${year}`;
@@ -62,41 +83,90 @@ export default function MediaCard({
   // Movie data object for FavoritesManager
   const movieData = { title, year, slug, poster, id: mediaId };
 
-  // 🔒 LOCKED: Check if slug is good quality - preserves marketing copy
-  const isGoodSlug = slug && 
-    slug.length <= 75 && 
-    slug.length > 5 && 
-    !slug.includes('Plot:') && // FIXED: Reject TMDB plot summaries
-    !slug.includes('Overview:') && // FIXED: Reject TMDB overviews
-    !slug.includes('Synopsis:'); // FIXED: Reject TMDB synopses
-
-  // 🔒 LOCKED: Only generate organic slug if missing - posters come from analysis service
+  // Enhanced data fetching for missing slug or poster
   useEffect(() => {
-    const generateOrganicSlug = async () => {
-      // 🔒 LOCKED: Get organic slug if missing - ONLY movie poster taglines
-      if (!isGoodSlug) {
-        try {
-          console.log(`🌱 Generating organic slug for: ${title} (${year})`);
-          const slugRes = await fetch('/api/generate-organic-slug', {
+    const enhanceMovieData = async () => {
+      // Skip if we have both slug and poster, or if already enhancing
+      if ((slug && slug !== '') && poster !== '/images/placeholder-poster.jpg') {
+        return;
+      }
+      
+      if (isEnhancing) return;
+      setIsEnhancing(true);
+      
+      try {
+        let newSlug = slug;
+        let newPoster = poster;
+        
+        // Fetch enhanced data if slug is missing
+        if (!slug || slug === '') {
+          console.log('Fetching enhanced slug for:', title, year);
+          const response = await fetch('/api/enhance-movie-data', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ title, year, needsSlug: true, needsPoster: false })
+          });
+          
+          if (response.ok) {
+            const data = await response.json();
+            if (data.slug) {
+              newSlug = data.slug;
+              setSlug(data.slug);
+            }
+          }
+        }
+        
+        // Fetch TMDB poster if using placeholder
+        if (poster === '/images/placeholder-poster.jpg') {
+          console.log('Fetching TMDB poster for:', title, year);
+          const response = await fetch('/api/tmdb-poster', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ title, year })
           });
-          const slugData = await slugRes.json();
-          // 🔒 PROTECTED: TMDB plot summary rejection - preserves marketing copy
-          if (slugData.slug && !slugData.slug.includes('Plot:') && !slugData.slug.includes('Overview:') && !slugData.slug.includes('Synopsis:') && slugData.slug.length <= 75) {
-            console.log(`✅ Organic slug generated: "${slugData.slug}"`);
-            setSlug(slugData.slug);
+          
+          if (response.ok) {
+            const data = await response.json();
+            if (data.poster) {
+              newPoster = data.poster;
+              setPoster(data.poster);
+            }
+            if (data.tmdb_id) {
+              setMovieTmdbId(data.tmdb_id);
+            }
           }
-        } catch (e) {
-          console.warn('Organic slug generation failed - no fallback', e);
         }
+        
+        // Cache the enhanced data back to JSON files if we got new data
+        if ((newSlug !== slug && newSlug) || (newPoster !== poster && newPoster !== '/images/placeholder-poster.jpg')) {
+          try {
+            await fetch('/api/cache-movie-data', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ 
+                title, 
+                year, 
+                slug: newSlug, 
+                poster: newPoster,
+                dataSource: 'afi100' // For now, assume AFI100. Could be made dynamic.
+              })
+            });
+            console.log('Cached enhanced data for:', title, year);
+          } catch (cacheError) {
+            console.warn('Failed to cache enhanced data:', cacheError);
+            // Don't fail the whole operation if caching fails
+          }
+        }
+        
+      } catch (error) {
+        console.error('Error enhancing movie data:', error);
+      } finally {
+        setIsEnhancing(false);
       }
     };
     
-    generateOrganicSlug();
-  }, []); // 🔒 LOCKED: Only run once per component
-
+    enhanceMovieData();
+  }, [title, year, slug, poster, isEnhancing]);
 
   // Load initial state from localStorage
   useEffect(() => {
@@ -119,27 +189,22 @@ export default function MediaCard({
     // Don't navigate if clicking on action buttons or if this is a detail page
     if (e.target.closest('button') || isDetailPage) return;
     
-    // Navigate to movie page - all movies must have tmdb_id
+    // Immediate navigation without preventDefault - let browser handle naturally
     if (movieTmdbId) {
       router.push(`/movie/${movieTmdbId}`);
+    } else {
+      console.warn('MediaCard: Missing TMDB ID, using fallback navigation for:', title, year);
+      // Fallback to media page using title-year format
+      const fallbackId = `${title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${year}`;
+      router.push(`/media/${fallbackId}`);
     }
   };
 
-  // All movies in DB must have tmdb_id - no fallback needed
-  const linkUrl = `/movie/${movieTmdbId}`;
-
-  // All movies must have valid tmdb_id - don't render if missing
-  if (!movieTmdbId || movieTmdbId === null || movieTmdbId === 'MISSING') {
-    console.warn(`MediaCard: Skipping movie "${title}" (${year}) - missing tmdb_id:`, movieTmdbId);
-    return null;
-  }
-
   return (
-    <a href={linkUrl} style={{ textDecoration: 'none', color: 'inherit' }}>
-      <article
-        style={styles.card}
-        role="article"
-        onClick={handleCardClick}
+    <article
+      style={styles.card}
+      role="article"
+      onClick={handleCardClick}
       onMouseDown={(e) => {
         // Immediate visual feedback on click
         e.currentTarget.style.transform = 'translateY(1px) scale(0.98)';
@@ -156,170 +221,136 @@ export default function MediaCard({
         e.currentTarget.style.transform = 'translateY(0)';
       }}
     >
-      {/* Row 1: Poster | Title (Year) with slug flowing below */}
-      <div style={styles.firstRow}>
-        <img src={poster} alt={`Poster for ${title}`} style={styles.poster} />
-        <div style={styles.titleAndSlugSection}>
-          <div style={styles.titleRow}>
-            <span style={styles.title}>{title}</span>
-            <span style={styles.year}>({year})</span>
-          </div>
-          <div style={styles.slugSection}>
-            {slug}
-          </div>
+      <img src={poster} alt={`Poster for ${title}`} style={styles.poster} />
+      <div style={styles.textContainer}>
+        <div style={styles.header}>
+          <div style={styles.title}>{title}</div>
+          <div style={styles.year}>({year})</div>
         </div>
-      </div>
-      
-      {/* Row 2: Streaming info | Heart/Bookmark icons */}
-      <div style={styles.secondRow}>
-        <div style={styles.streamingInfo}>
-          {initialStreaming && initialStreaming !== 'TBD' && (
+        <div style={styles.slug}>{slug}</div>
+        
+        {/* Bottom row: streaming left, icons right */}
+        <div style={styles.bottomRow}>
+          <div style={styles.streamingInfo}>
             <span style={styles.streamingText}>
-              Streaming on {initialStreaming}
+              Streaming on TBD
             </span>
-          )}
-        </div>
-        <div style={styles.iconRow}>
+          </div>
+          <div style={styles.iconRow}>
           <button
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
+            onClick={() => {
               const newState = FavoritesManager.toggleHeart(movieData);
               setHearted(newState);
             }}
             style={styles.iconButton}
-            aria-label={hearted ? 'Mark as unseen' : 'Mark as seen'}
+            aria-label={hearted ? 'Remove from favorites' : 'Add to favorites'}
             role="button"
           >
-            <div style={styles.iconWithText}>
-              <Check
-                size={16}
-                color={hearted ? '#374151' : '#9ca3af'}
-                strokeWidth={hearted ? 2.5 : 1.5}
-              />
-              <span style={{
-                ...styles.iconLabel,
-                color: hearted ? '#374151' : '#9ca3af',
-                fontWeight: hearted ? '600' : '400'
-              }}>
-                Seen
-              </span>
-            </div>
+            <Heart
+              size={18}
+              color={hearted ? '#ef4444' : '#374151'}
+              fill={hearted ? '#ef4444' : 'none'}
+            />
           </button>
           <button
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
+            onClick={() => {
               const newState = FavoritesManager.toggleBookmark(movieData);
               setBookmarked(newState);
             }}
             style={styles.iconButton}
-            aria-label={bookmarked ? 'Remove from list' : 'Add to list'}
+            aria-label={bookmarked ? 'Remove bookmark' : 'Bookmark movie'}
             role="button"
           >
-            <div style={styles.iconWithText}>
-              <Plus
-                size={16}
-                color={bookmarked ? '#374151' : '#9ca3af'}
-              />
-              <span style={{
-                ...styles.iconLabel,
-                color: bookmarked ? '#374151' : '#9ca3af',
-                fontWeight: bookmarked ? '600' : '400'
-              }}>
-                Add
-              </span>
-            </div>
+            <Bookmark
+              size={18}
+              color={bookmarked ? '#6b7280' : '#374151'}
+              fill={bookmarked ? '#6b7280' : 'none'}
+            />
           </button>
+          </div>
         </div>
       </div>
     </article>
-    </a>
   );
 }
 
 const styles = {
   card: {
+    position: 'relative',
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'row',
     borderRadius: '12px',
     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.20)',
     padding: '12px',
     backgroundColor: 'white',
+    alignItems: 'flex-start',
     width: '100%',
-    maxWidth: '100%',
-    boxSizing: 'border-box',
+    maxWidth: '100%', // Prevent expansion beyond container
+    boxSizing: 'border-box', // Include padding in width calculation
     transition: 'box-shadow 0.15s ease, transform 0.1s ease',
     cursor: 'pointer',
     marginBottom: '8px',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
-  // Row 1: Poster | Title (Year) with slug flowing below
-  firstRow: {
-    display: 'flex',
-    alignItems: 'flex-start',
-    gap: '12px',
-    marginBottom: '8px',
-  },
   poster: {
-    width: '100px',  // Increased from 80px (25% bigger)
-    height: '150px', // Increased from 120px (25% bigger)
+    width: '100px',
+    height: '150px',
     objectFit: 'cover',
     borderRadius: '8px',
-    flexShrink: 0,
+    marginRight: '12px',
   },
-  titleAndSlugSection: {
+  textContainer: {
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
-    gap: '4px',
+    minHeight: '150px', // Restored original working height
+    position: 'relative',
+    minWidth: 0, // Allow flex child to shrink below content size
+    overflow: 'hidden', // Prevent text overflow
   },
-  titleRow: {
+  header: {
     display: 'flex',
-    alignItems: 'baseline',
+    flexDirection: 'row',
     gap: '6px',
-    flexWrap: 'wrap',
+    fontSize: '18px',
+    lineHeight: '1.2',
+    fontFamily: 'inherit',
   },
   title: {
-    fontSize: '16px',
     fontWeight: '600',
-    color: '#000',
     lineHeight: '1.2',
-    wordWrap: 'break-word',
-    overflowWrap: 'break-word',
-    hyphens: 'auto',
+    fontFamily: 'inherit',
+    color: '#000',
   },
   year: {
-    fontSize: '14px',
     color: '#666',
     fontWeight: 'normal',
+    fontFamily: 'inherit',
   },
-  slugSection: {
+  slug: {
     fontSize: '14px',
     color: '#333',
-    lineHeight: '1.3',
-    overflow: 'hidden',
     marginTop: '4px',
+    fontFamily: 'inherit',
   },
-  // Row 2: Streaming info | Icons (full width below first row)
-  secondRow: {
+  bottomRow: {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
+    marginTop: 'auto', // Pushes to bottom of flex container
     paddingTop: '8px',
-    marginTop: '4px',
-    width: '100%',
   },
   streamingInfo: {
     flex: 1,
-    minWidth: 0,
-    marginRight: '8px',
+    minWidth: 0, // Allow shrinking
+    marginRight: '8px', // Space before icons
   },
   streamingText: {
-    fontSize: '13px',
-    color: '#6b7280',
-    fontWeight: '300',
-    wordWrap: 'break-word',
+    fontSize: '14px',
+    color: '#6b7280', // Mid grey
+    fontWeight: '300', // 100 lighter than slug's normal (400)
+    fontFamily: 'inherit',
+    wordWrap: 'break-word', // Wrap long service names
     lineHeight: '1.3',
   },
   iconRow: {
@@ -332,21 +363,11 @@ const styles = {
     background: 'none',
     border: 'none',
     cursor: 'pointer',
-    padding: '4px 6px',
+    padding: '4px',
     borderRadius: '4px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     transition: 'background-color 0.2s ease',
-  },
-  iconWithText: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '4px',
-  },
-  iconLabel: {
-    fontSize: '12px',
-    lineHeight: '1',
-    userSelect: 'none',
   },
 };

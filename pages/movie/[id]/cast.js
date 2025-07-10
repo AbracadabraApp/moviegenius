@@ -1,7 +1,7 @@
 // pages/movie/[id]/cast.js - Cast and Crew page for movies
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
-import { createClient } from '@supabase/supabase-js';
+import { supabase } from '../../../lib/supabase';
 import PhoneFrame from '../../../components/PhoneFrame';
 import MovieHeader from '../../../components/MovieHeader';
 import PersonCard from '../../../components/PersonCard';
@@ -306,14 +306,25 @@ export async function getServerSideProps({ params }) {
       };
     }
 
-    // Initialize Supabase client
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
+    // Create supabase client with fallback
+    let supabaseClient;
+    try {
+      const { createClient } = require('@supabase/supabase-js');
+      supabaseClient = createClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co',
+        process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key'
+      );
+    } catch (error) {
+      console.error('Failed to create supabase client:', error);
+      return {
+        props: {
+          error: 'Database connection failed'
+        }
+      };
+    }
 
     // Query movie from Supabase by TMDB ID
-    const { data: movieEntry, error } = await supabase
+    const { data: movieEntry, error } = await supabaseClient
       .from('movies')
       .select('id, title, year, slug, poster_url, streaming_data, tmdb_id')
       .eq('tmdb_id', tmdbId)

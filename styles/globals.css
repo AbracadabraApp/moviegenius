@@ -72,3 +72,12 @@ img {
   white-space: nowrap;
   border: 0;
 }
+
+/* SUBHEAD formatting */
+.subhead {
+  font-size: 16px;
+  color: #d4af37;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
