@@ -279,3 +279,13 @@ This incident will be considered resolved when:
 - **RATIONALE:** Final UI polish for production-ready movie page
 - **REVIEWER:** Performance Engineer
 - **STATUS:** PRODUCTION READY - LOCK MAINTAINED
+
+**2025-07-10: HREF-BASED NAVIGATION IMPLEMENTATION**
+- ✅ AUTHORIZED: Convert MediaCard from router.push to href-based navigation
+- ✅ AUTHORIZED: Add proper scroll-to-top behavior for page transitions
+- ✅ AUTHORIZED: Maintain TMDB ID enforcement and no-fallback policy
+- ✅ AUTHORIZED: Remove unused useRouter import for cleaner dependencies
+- **RATIONALE:** Fix UX issue where clicking MediaCard leaves users mid-page on destination
+- **BENEFIT:** Proper browser navigation with back button support and scroll-to-top
+- **REVIEWER:** UX Engineer
+- **STATUS:** PRODUCTION READY - NAVIGATION IMPROVED - LOCK MAINTAINED

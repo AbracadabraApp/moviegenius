@@ -1,8 +1,10 @@
 /**
- * MediaCard Component
+ * MediaCard Component - 🔒 LOCKED COMPONENT 🔒
+ * @locked true
  * 
  * Self-contained movie card with intelligent data fetching and caching.
- * Handles its own streaming data, slug enhancement, and favorites management.
+ * Handles its own streaming data, poster enhancement, and favorites management.
+ * NO slug fallback - Claude slugs only, rejects TMDB plot summaries.
  * Provides consistent functionality across all pages.
  * 
  * @component
@@ -16,7 +18,6 @@
  */
 import { Heart, Bookmark } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
 import { FavoritesManager } from './FavoritesManager';
 // import useStreamingData from '../hooks/useStreamingData'; // Stubbed out
 
@@ -43,7 +44,14 @@ export default function MediaCard({
 }) {
   const [hearted, setHearted] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
-  const [slug, setSlug] = useState(initialSlug || '');
+  // 🔒 LOCKED: TMDB plot summary protection - only use valid Claude slugs
+  const isValidClaudeSlug = initialSlug && 
+    !initialSlug.includes('Plot:') &&    // Reject TMDB plot summaries
+    !initialSlug.includes('Overview:') && // Reject TMDB overviews  
+    !initialSlug.includes('Synopsis:') && // Reject TMDB synopses
+    !initialSlug.includes('Summary:');    // Reject other summary formats
+    
+  const [slug, setSlug] = useState(isValidClaudeSlug ? initialSlug : '');
   const [poster, setPoster] = useState(initialPoster || '/images/placeholder-poster.jpg');
   const [movieTmdbId, setMovieTmdbId] = useState(tmdbId);
 
@@ -66,7 +74,6 @@ export default function MediaCard({
     }
   }, [initialSlug]);
   const [isEnhancing, setIsEnhancing] = useState(false);
-  const router = useRouter();
 
   // Streaming feature stubbed out - will be replaced with real provider
   // const { 
@@ -83,11 +90,21 @@ export default function MediaCard({
   // Movie data object for FavoritesManager
   const movieData = { title, year, slug, poster, id: mediaId };
 
-  // Enhanced data fetching for missing slug or poster
+  // 🔒 PROTECTED: Enhanced data fetching for missing poster only
+  // Claude-only slug approach: No fallback slug fetching, only show Claude-provided slugs
   useEffect(() => {
     const enhanceMovieData = async () => {
-      // Skip if we have both slug and poster, or if already enhancing
-      if ((slug && slug !== '') && poster !== '/images/placeholder-poster.jpg') {
+      // 🔒 LOCKED: TMDB plot summary protection - reject verbose technical descriptions
+      const isValidClaudeSlug = slug && 
+        slug !== '' &&
+        !slug.includes('Plot:') &&    // Reject TMDB plot summaries
+        !slug.includes('Overview:') && // Reject TMDB overviews  
+        !slug.includes('Synopsis:') && // Reject TMDB synopses
+        !slug.includes('Summary:');    // Reject other summary formats
+        
+      // Skip if we have poster, or if already enhancing
+      // NO slug fallback - Claude slugs only
+      if (poster !== '/images/placeholder-poster.jpg') {
         return;
       }
       
@@ -95,26 +112,7 @@ export default function MediaCard({
       setIsEnhancing(true);
       
       try {
-        let newSlug = slug;
         let newPoster = poster;
-        
-        // Fetch enhanced data if slug is missing
-        if (!slug || slug === '') {
-          console.log('Fetching enhanced slug for:', title, year);
-          const response = await fetch('/api/enhance-movie-data', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ title, year, needsSlug: true, needsPoster: false })
-          });
-          
-          if (response.ok) {
-            const data = await response.json();
-            if (data.slug) {
-              newSlug = data.slug;
-              setSlug(data.slug);
-            }
-          }
-        }
         
         // Fetch TMDB poster if using placeholder
         if (poster === '/images/placeholder-poster.jpg') {
@@ -137,8 +135,8 @@ export default function MediaCard({
           }
         }
         
-        // Cache the enhanced data back to JSON files if we got new data
-        if ((newSlug !== slug && newSlug) || (newPoster !== poster && newPoster !== '/images/placeholder-poster.jpg')) {
+        // Cache the enhanced poster data if we got new poster
+        if (newPoster !== poster && newPoster !== '/images/placeholder-poster.jpg') {
           try {
             await fetch('/api/cache-movie-data', {
               method: 'POST',
@@ -146,12 +144,11 @@ export default function MediaCard({
               body: JSON.stringify({ 
                 title, 
                 year, 
-                slug: newSlug, 
                 poster: newPoster,
                 dataSource: 'afi100' // For now, assume AFI100. Could be made dynamic.
               })
             });
-            console.log('Cached enhanced data for:', title, year);
+            console.log('Cached enhanced poster data for:', title, year);
           } catch (cacheError) {
             console.warn('Failed to cache enhanced data:', cacheError);
             // Don't fail the whole operation if caching fails
@@ -166,7 +163,7 @@ export default function MediaCard({
     };
     
     enhanceMovieData();
-  }, [title, year, slug, poster, isEnhancing]);
+  }, [title, year, poster, isEnhancing]);
 
   // Load initial state from localStorage
   useEffect(() => {
@@ -187,21 +184,24 @@ export default function MediaCard({
 
   const handleCardClick = (e) => {
     // Don't navigate if clicking on action buttons or if this is a detail page
-    if (e.target.closest('button') || isDetailPage) return;
-    
-    // Immediate navigation without preventDefault - let browser handle naturally
-    if (movieTmdbId) {
-      router.push(`/movie/${movieTmdbId}`);
-    } else {
-      console.warn('MediaCard: Missing TMDB ID, using fallback navigation for:', title, year);
-      // Fallback to media page using title-year format
-      const fallbackId = `${title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${year}`;
-      router.push(`/media/${fallbackId}`);
+    if (e.target.closest('button') || isDetailPage) {
+      e.preventDefault();
+      return;
     }
+    
+    // 🔒 LOCKED: NO fallback navigation - this enforces TMDB-first architecture
+    // For href-based navigation, prevent default if no TMDB ID available
+    if (!movieTmdbId) {
+      e.preventDefault();
+      console.warn('MediaCard: Missing TMDB ID, cannot navigate. No fallback allowed.');
+      // NO fallback navigation - enforces data quality and TMDB-first architecture
+    }
+    // If movieTmdbId exists, let browser handle href navigation naturally
   };
 
   return (
-    <article
+    <a
+      href={movieTmdbId ? `/movie/${movieTmdbId}` : '#'}
       style={styles.card}
       role="article"
       onClick={handleCardClick}
@@ -270,7 +270,7 @@ export default function MediaCard({
           </div>
         </div>
       </div>
-    </article>
+    </a>
   );
 }
 
@@ -291,19 +291,23 @@ const styles = {
     cursor: 'pointer',
     marginBottom: '8px',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    // Reset link styles for proper card appearance
+    textDecoration: 'none',
+    color: 'inherit',
   },
   poster: {
-    width: '100px',
-    height: '150px',
+    width: '140px',
+    height: '210px',
     objectFit: 'cover',
     borderRadius: '8px',
     marginRight: '12px',
+    flexShrink: 0, // Prevent poster from shrinking
   },
   textContainer: {
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
-    minHeight: '150px', // Restored original working height
+    minHeight: '210px', // Match poster height
     position: 'relative',
     minWidth: 0, // Allow flex child to shrink below content size
     overflow: 'hidden', // Prevent text overflow

@@ -399,7 +399,7 @@ const styles = {
     flexDirection: 'column',
     gap: '8px',
     padding: '13px 4.5px',
-    backgroundColor: 'rgba(255, 255, 255, 0.95)',
+    backgroundColor: 'rgba(255, 255, 255, 0.75)',
     backdropFilter: 'blur(12px)',
     borderRadius: '12px',
     border: '1px solid rgba(255, 255, 255, 0.8)',
