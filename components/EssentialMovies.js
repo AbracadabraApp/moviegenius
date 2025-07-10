@@ -28,7 +28,7 @@ export default function EssentialMovies({ theme }) {
       { title: 'Rosemary\'s Baby', year: 1968, tmdb_id: 10110 }
     ],
     'comedy-through-time': [
-      { title: 'The General', year: 1926, tmdb_id: 961 },
+      { title: 'Everything Everywhere All at Once', year: 2022, tmdb_id: 545611 },
       { title: 'Modern Times', year: 1936, tmdb_id: 3082 },
       { title: 'Some Like It Hot', year: 1959, tmdb_id: 239 },
       { title: 'Dr. Strangelove', year: 1964, tmdb_id: 935 },
