@@ -145,7 +145,7 @@ export default function ListPage() {
 
   if (error) {
     return (
-      <PhoneFrame active="ask">
+      <PhoneFrame active="genius">
         <div style={styles.container}>
           <div style={styles.inputArea}>
             <SimpleSearch onResults={handleSearchResults} />
@@ -162,7 +162,7 @@ export default function ListPage() {
   }
 
   return (
-    <PhoneFrame active="ask">
+    <PhoneFrame active="genius">
       <div style={styles.container}>
         <div style={styles.inputArea}>
           <SimpleSearch onResults={handleSearchResults} />

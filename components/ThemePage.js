@@ -39,7 +39,7 @@ export default function ThemePage({ themeId, customStyles = {} }) {
 
   if (!themeData) {
     return (
-      <PhoneFrame>
+      <PhoneFrame active="genius">
         <div style={styles.container}>
           <div style={styles.errorText}>Theme not found</div>
         </div>
@@ -53,7 +53,7 @@ export default function ThemePage({ themeId, customStyles = {} }) {
   };
 
   return (
-    <PhoneFrame>
+    <PhoneFrame active="genius">
       <div style={mergedStyles.container || styles.container}>
         
         <div style={mergedStyles.fixedInputArea || styles.fixedInputArea}>

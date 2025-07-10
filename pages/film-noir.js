@@ -52,7 +52,7 @@ export default function FilmNoirPage() {
   }
 
   return (
-    <PhoneFrame>
+    <PhoneFrame active="genius">
       <div style={styles.container}>
         
         {/* Search Area */}
