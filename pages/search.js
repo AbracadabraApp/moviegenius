@@ -54,19 +54,12 @@ export default function SearchPage() {
     
     setLoading(true);
     try {
-      let response;
-      
-      if (isCategory) {
-        // Use TMDB genre search for category queries
-        response = await fetch(`/api/tmdb-genre-search?category=${encodeURIComponent(query)}`);
-      } else {
-        // Use text search for regular queries
-        response = await fetch('/api/simple-search', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ query })
-        });
-      }
+      // Use the working multi-search API for all searches
+      const response = await fetch('/api/multi-search', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ query })
+      });
       
       if (response.ok) {
         const data = await response.json();
@@ -84,8 +77,8 @@ export default function SearchPage() {
   };
 
   const handleSearchResults = (results) => {
-    setSearchResults(results);
-    setCurrentQuery(''); // Clear the query display since it's handled by SimpleSearch
+    // This is for when SimpleSearch redirects here, results will be empty
+    // The search will be performed by the useEffect when the URL query changes
   };
 
   const handleMovieClick = (movie) => {
@@ -110,6 +103,7 @@ export default function SearchPage() {
             onResults={handleSearchResults}
             placeholder="Search movies..."
             initialQuery={q}
+            useUnifiedSearch={false}
           />
         </div>
 

@@ -18,7 +18,8 @@ export default function ThemePage({ themeId, customStyles = {} }) {
   const themeData = themeMapping.themes[themeId];
 
   const handleSearchResults = (results) => {
-    // Multi-search returns {movies: [], people: []} - extract movies array
+    // With unified search, this won't be called since search redirects to /search page
+    // Kept for compatibility if useUnifiedSearch is disabled
     const movies = results.movies || results || [];
     setSearchResults(movies);
     setShowSearchResults(movies.length > 0);
@@ -116,27 +117,7 @@ export default function ThemePage({ themeId, customStyles = {} }) {
           {/* Essential Movies */}
           <EssentialMovies theme={themeId} />
           
-          {showSearchResults && (
-            <div style={mergedStyles.searchResults || styles.searchResults}>
-              <div style={mergedStyles.resultsHeader || styles.resultsHeader}>
-                <span>{searchResults.length} movie{searchResults.length !== 1 ? 's' : ''} found</span>
-              </div>
-              <div style={mergedStyles.movieList || styles.movieList}>
-                {searchResults.map((movie, index) => (
-                  <div key={`${movie.tmdb_id || movie.title}-${index}`} onClick={() => handleMovieClick(movie)} style={mergedStyles.movieItem || styles.movieItem}>
-                    <MediaCard
-                      title={movie.title}
-                      year={movie.year}
-                      initialSlug={movie.slug}
-                      initialPoster={movie.poster_url}
-                      initialStreaming={movie.streaming_data}
-                      tmdbId={movie.tmdb_id}
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
+          {/* Search results removed - now handled by unified search page */}
           
           {/* Theme Footer - Navigation for other themes */}
           <ThemeFooter currentTheme={themeId} />

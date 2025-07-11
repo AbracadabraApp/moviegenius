@@ -148,7 +148,7 @@ export default function ListPage() {
       <PhoneFrame active="genius">
         <div style={styles.container}>
           <div style={styles.inputArea}>
-            <SimpleSearch onResults={handleSearchResults} />
+            <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
           </div>
           <div style={styles.conversationArea}>
             <div style={styles.errorContainer}>
@@ -165,7 +165,7 @@ export default function ListPage() {
     <PhoneFrame active="genius">
       <div style={styles.container}>
         <div style={styles.inputArea}>
-          <SimpleSearch onResults={handleSearchResults} />
+          <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
         </div>
         <div style={styles.conversationArea}>
           {listTitle && (

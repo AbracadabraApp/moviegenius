@@ -1,24 +1,36 @@
 // components/SimpleSearch.js - Ultra-simple search component
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { Search } from 'lucide-react';
 
-export default function SimpleSearch({ onResults, placeholder = "Search movies and people..." }) {
-  const [query, setQuery] = useState('');
+export default function SimpleSearch({ onResults, placeholder = "Search movies and people...", useUnifiedSearch = true, initialQuery = '' }) {
+  const [query, setQuery] = useState(initialQuery);
   const [isLoading, setIsLoading] = useState(false);
   const [fallback, setFallback] = useState(null);
   const router = useRouter();
   const currentSearchRef = useRef(null);
 
+  // Update query when initialQuery changes
+  useEffect(() => {
+    setQuery(initialQuery || '');
+  }, [initialQuery]);
+
   const search = async (searchQuery) => {
     const q = searchQuery.trim();
     if (!q) {
-      onResults({ movies: [], people: [] });
+      if (onResults) onResults({ movies: [], people: [] });
       setFallback(null);
       setIsLoading(false);
       return;
     }
 
+    // New UX: Redirect to unified search results page
+    if (useUnifiedSearch) {
+      router.push(`/search?q=${encodeURIComponent(q)}`);
+      return;
+    }
+
+    // Legacy inline search (kept for compatibility)
     // Create unique search ID to prevent race conditions
     const searchId = Date.now();
     currentSearchRef.current = searchId;
@@ -61,7 +73,7 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies a
           }
         }
         
-        onResults(data || { movies: [], people: [] });
+        if (onResults) onResults(data || { movies: [], people: [] });
         
         // Handle fallback for empty results
         if (data.fallback) {
@@ -69,12 +81,12 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies a
         }
       } else {
         console.error(`❌ [${searchId}] Search failed:`, response.status, response.statusText);
-        onResults({ movies: [], people: [] });
+        if (onResults) onResults({ movies: [], people: [] });
         setFallback({ message: "Search failed. Please try again." });
       }
     } catch (error) {
       console.error(`💥 [${searchId}] Search error:`, error);
-      onResults({ movies: [], people: [] });
+      if (onResults) onResults({ movies: [], people: [] });
       setFallback({ message: "Search failed. Please try again." });
     } finally {
       // Only set loading to false if this is still the current search
