@@ -31,9 +31,7 @@ export default function ThemePage({ themeId, customStyles = {} }) {
     }
   };
   
-  const handleEpisodeClick = (episode) => {
-    router.push(`/${themeId}/${episode.id}`);
-  };
+  // Episode navigation now uses direct HTML links
   
   useEffect(() => {
     if (themeData) {
