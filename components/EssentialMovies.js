@@ -262,14 +262,15 @@ export default function EssentialMovies({ theme }) {
       {episodes.length > 0 && (
         <div style={styles.episodeSection}>
           {episodes.map((episode) => (
-            <Link
-              key={episode.id}
-              href={`/${theme}/${episode.id}`}
-              style={styles.episodeButton}
-            >
-              <div style={styles.episodeTitle}>{episode.title}</div>
-              <div style={styles.episodeSubtitle}>{episode.subtitle}</div>
-            </Link>
+            <div key={episode.id} style={styles.episodeButton}>
+              <Link
+                href={`/${theme}/${episode.id}`}
+                style={{ textDecoration: 'none', color: 'inherit', display: 'block', width: '100%', height: '100%' }}
+              >
+                <div style={styles.episodeTitle}>{episode.title}</div>
+                <div style={styles.episodeSubtitle}>{episode.subtitle}</div>
+              </Link>
+            </div>
           ))}
         </div>
       )}
