@@ -51,15 +51,17 @@ export default function NavBar() {
       {navItems.map(({ label, icon: Icon, route }) => {
         const isActive = activeLabel === label;
         return (
-          <Link
+          <div
             key={label} 
-            href={route}
             style={{
               ...styles.navItem,
               opacity: isActive ? 1 : 0.6,
               transform: isActive ? 'translateY(-2px)' : 'none',
             }}
-            onClick={() => console.log('NavBar link clicked:', route)}
+            onClick={() => {
+              console.log('NavBar div clicked:', route);
+              window.location.href = route;
+            }}
           >
             <Icon
               size={28}
@@ -72,7 +74,7 @@ export default function NavBar() {
               <span style={styles.label}>{label}</span>
               {isActive && <div style={styles.underline} />}
             </span>
-          </Link>
+          </div>
         );
       })}
     </nav>
