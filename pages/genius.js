@@ -1,8 +1,12 @@
 /**
- * Genius Page - Clean theme selection with hero image
+ * Genius Page - 🔒 LOCKED COMPONENT 🔒
+ * @locked true
  * 
- * Restored original layout: Hero image + theme selection buttons
- * All functionality preserved: search, navigation, theme routing
+ * Main entry point with personal brand manifesto and theme navigation.
+ * Contains owner's personal statement about product vision.
+ * 
+ * PROTECTED: Manifesto text, hero messaging, theme navigation
+ * See genius.js.LOCK for detailed protection rules
  */
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
@@ -11,7 +15,15 @@ import SimpleSearch from '../components/SimpleSearch';
 
 export default function GeniusPage() {
   const router = useRouter();
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
+
+  // Check if user has seen the modal before
+  useEffect(() => {
+    const hasSeenModal = localStorage.getItem('moviegenius-modal-seen');
+    if (!hasSeenModal) {
+      setShowModal(true);
+    }
+  }, []);
 
   // All 10 education themes with direct navigation
   const allEducationThemes = [
@@ -28,26 +40,6 @@ export default function GeniusPage() {
   ];
 
 
-  // Navigate directly to theme page
-  const navigateToTheme = (theme) => {
-    const themeRoutes = {
-      'Film Noir': '/film-noir',
-      'Horror & Suspense': '/horror-suspense', 
-      'Comedy': '/comedy-through-time',
-      'Women Directors': '/women-directors',
-      'International Masters': '/world-cinema',
-      'Acclaimed Directors': '/acclaimed-directors',
-      'Movements in Film': '/avant-garde-film',
-      'The Magic of Moviemaking': '/magic-of-moviemaking',
-      'Cinema Through the Decades': '/cinema-through-decades',
-      'Hollywood Transformed': '/cinema-cultural-impact'
-    };
-    
-    const targetRoute = themeRoutes[theme];
-    if (targetRoute) {
-      router.push(targetRoute);
-    }
-  };
 
   // Handle search results - unified search redirects to /search page
   const handleSearchResults = () => {
@@ -58,6 +50,7 @@ export default function GeniusPage() {
   // Handle "Enjoy the Show" button click
   const handleEnjoyTheShow = () => {
     setShowModal(false);
+    localStorage.setItem('moviegenius-modal-seen', 'true');
   };
 
   return (
@@ -96,15 +89,33 @@ export default function GeniusPage() {
           </div>
           
           <div style={styles.themeGrid}>
-            {allEducationThemes.map(theme => (
-              <button
-                key={theme}
-                onClick={() => navigateToTheme(theme)}
-                style={styles.themeButton}
-              >
-                {theme}
-              </button>
-            ))}
+            {allEducationThemes.map(theme => {
+              const themeRoutes = {
+                'Film Noir': '/film-noir',
+                'Horror & Suspense': '/horror-suspense', 
+                'Comedy': '/comedy-through-time',
+                'Women Directors': '/women-directors',
+                'International Masters': '/world-cinema',
+                'Acclaimed Directors': '/acclaimed-directors',
+                'Movements in Film': '/avant-garde-film',
+                'The Magic of Moviemaking': '/magic-of-moviemaking',
+                'Cinema Through the Decades': '/cinema-through-decades',
+                'Hollywood Transformed': '/cinema-cultural-impact'
+              };
+              return (
+                <a
+                  key={theme}
+                  href={themeRoutes[theme]}
+                  style={styles.themeButton}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = themeRoutes[theme];
+                  }}
+                >
+                  {theme}
+                </a>
+              );
+            })}
           </div>
         </div>
 
@@ -113,11 +124,9 @@ export default function GeniusPage() {
           <div style={styles.modalOverlay}>
             <div style={styles.modalContent}>
               <h2 style={styles.modalTitle}>Welcome to MovieGenius</h2>
+              {/* 🔒 LOCKED: Personal manifesto text - DO NOT MODIFY */}
               <div style={styles.manifestoText}>
-                <p>Break free from the endless scroll of mindless content.</p>
-                <p>Instead of binge-watching forgettable series, feast on cinematic masterpieces that have shaped our culture and inspired generations.</p>
-                <p>MovieGenius curates the greatest films ever made, organized by themes, movements, and the visionary directors who created them.</p>
-                <p>Every recommendation is a doorway to deeper understanding of the art of cinema.</p>
+                <p>Streaming platforms put great films at our fingertips, then hid them under time-wasting junk. MovieGenius is your intelligence filter—no more mindless scrolling through endless mediocre "shows". Discover quality cinema and make deliberate choices again.</p>
               </div>
               <button 
                 onClick={handleEnjoyTheShow}
@@ -140,6 +149,7 @@ const styles = {
     height: '100%',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     backgroundColor: '#ffffff',
+    overflow: 'hidden',
   },
   searchSection: {
     padding: '16px 20px',
@@ -147,6 +157,7 @@ const styles = {
   },
   heroSection: {
     backgroundColor: '#000000',
+    minHeight: '180px',
   },
   heroText: {
     backgroundColor: '#000000',
@@ -154,7 +165,7 @@ const styles = {
     textAlign: 'center',
   },
   heroImageContainer: {
-    height: '160px',
+    height: '120px',
     overflow: 'hidden',
   },
   heroImage: {
@@ -223,6 +234,7 @@ const styles = {
     wordBreak: 'normal',
     hyphens: 'none',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif',
+    textDecoration: 'none',
   },
   modalOverlay: {
     position: 'fixed',
@@ -241,7 +253,7 @@ const styles = {
     borderRadius: '16px',
     padding: '32px 24px',
     margin: '20px',
-    maxWidth: '320px',
+    maxWidth: '350px',
     textAlign: 'center',
     boxShadow: '0 20px 40px rgba(0, 0, 0, 0.3)',
   },
@@ -254,10 +266,11 @@ const styles = {
   },
   manifestoText: {
     fontSize: '15px',
-    lineHeight: '1.5',
+    lineHeight: '1.6',
     color: '#374151',
     marginBottom: '24px',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif',
+    textAlign: 'left',
   },
   enjoyButton: {
     backgroundColor: '#d4af37',
