@@ -44,6 +44,10 @@ export default function EpisodeFooter({ currentTheme, currentEpisode }) {
                 key={episode.id}
                 href={`/${currentTheme}/${episode.id}`}
                 style={styles.episodeButton}
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = `/${currentTheme}/${episode.id}`;
+                }}
               >
                 <div style={styles.episodeTitle}>{episode.title}</div>
                 <div style={styles.episodeSubtitle}>{episode.subtitle}</div>
@@ -62,6 +66,10 @@ export default function EpisodeFooter({ currentTheme, currentEpisode }) {
               key={theme.slug}
               href={`/${theme.slug}`}
               style={styles.themeButton}
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = `/${theme.slug}`;
+              }}
             >
               {theme.name}
             </a>

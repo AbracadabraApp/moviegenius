@@ -28,22 +28,19 @@ export default function NavBar() {
   const activeLabel = navItems.find(
     (item) => {
       if (item.route === router.pathname) return true;
-      // Theme pages should be considered part of Genius
-      if (item.route === '/genius' && themeKeys.includes(router.pathname.slice(1))) return true;
+      // Theme pages and episode pages should be considered part of Genius
+      if (item.route === '/genius') {
+        const pathname = router.pathname.slice(1); // Remove leading slash
+        // Check if it's a theme page (e.g., "film-noir") 
+        if (themeKeys.includes(pathname)) return true;
+        // Check if it's an episode page (e.g., "film-noir/urban-anxiety")
+        const themePart = pathname.split('/')[0];
+        if (themeKeys.includes(themePart)) return true;
+      }
       return false;
     }
   )?.label;
 
-  const handleNavClick = (route, isActive) => {
-    if (isActive) {
-      // If clicking the same page, refresh to "home state"
-      // Force a complete page reload to reset all state
-      window.location.href = route;
-    } else {
-      // Normal navigation to different page
-      router.push(route);
-    }
-  };
 
   return (
     <nav style={{
@@ -53,14 +50,18 @@ export default function NavBar() {
       {navItems.map(({ label, icon: Icon, route }) => {
         const isActive = activeLabel === label;
         return (
-          <div
+          <a
             key={label} 
+            href={route}
             style={{
               ...styles.navItem,
               opacity: isActive ? 1 : 0.6,
               transform: isActive ? 'translateY(-2px)' : 'none',
             }}
-            onClick={() => handleNavClick(route, isActive)}
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = route;
+            }}
           >
             <Icon
               size={28}
@@ -73,7 +74,7 @@ export default function NavBar() {
               <span style={styles.label}>{label}</span>
               {isActive && <div style={styles.underline} />}
             </span>
-          </div>
+          </a>
         );
       })}
     </nav>
