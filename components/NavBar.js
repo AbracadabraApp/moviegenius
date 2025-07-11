@@ -59,6 +59,7 @@ export default function NavBar() {
               opacity: isActive ? 1 : 0.6,
               transform: isActive ? 'translateY(-2px)' : 'none',
             }}
+            onClick={() => console.log('NavBar link clicked:', route)}
           >
             <Icon
               size={28}
