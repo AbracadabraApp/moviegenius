@@ -12,6 +12,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import PhoneFrame from '../components/PhoneFrame';
 import SimpleSearch from '../components/SimpleSearch';
+import Link from 'next/link';
 
 export default function GeniusPage() {
   const router = useRouter();
@@ -103,17 +104,13 @@ export default function GeniusPage() {
                 'Hollywood Transformed': '/cinema-cultural-impact'
               };
               return (
-                <a
+                <Link
                   key={theme}
                   href={themeRoutes[theme]}
                   style={styles.themeButton}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.location.href = themeRoutes[theme];
-                  }}
                 >
                   {theme}
-                </a>
+                </Link>
               );
             })}
           </div>

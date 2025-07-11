@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { Clapperboard, Sparkles, User } from 'lucide-react';
 import { shouldShowPhoneFrame } from '../lib/platform';
+import Link from 'next/link';
 
 export default function NavBar() {
   const router = useRouter();
@@ -50,17 +51,13 @@ export default function NavBar() {
       {navItems.map(({ label, icon: Icon, route }) => {
         const isActive = activeLabel === label;
         return (
-          <a
+          <Link
             key={label} 
             href={route}
             style={{
               ...styles.navItem,
               opacity: isActive ? 1 : 0.6,
               transform: isActive ? 'translateY(-2px)' : 'none',
-            }}
-            onClick={(e) => {
-              e.preventDefault();
-              window.location.href = route;
             }}
           >
             <Icon
@@ -74,7 +71,7 @@ export default function NavBar() {
               <span style={styles.label}>{label}</span>
               {isActive && <div style={styles.underline} />}
             </span>
-          </a>
+          </Link>
         );
       })}
     </nav>
