@@ -5,11 +5,60 @@ import SelectedPlatforms from '../components/SelectedPlatforms';
 import MediaCard from '../components/MediaCard';
 import PlatformSelector from '../components/PlatformSelector';
 import CinematicProfile from '../components/CinematicProfile';
-import { Heart, Bookmark, Star, Film } from 'lucide-react';
+import { Check, Plus, Film, BarChart3 } from 'lucide-react';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
-// No static data imports - all movie data comes from database/search APIs
+// Essential Films data for learning analysis
+const essentialFilmsData = {
+  'film-noir': {
+    title: 'Film Noir',
+    movies: [
+      { title: 'The Maltese Falcon', year: 1941, tmdb_id: 963 },
+      { title: 'Double Indemnity', year: 1944, tmdb_id: 996 },
+      { title: 'The Big Sleep', year: 1946, tmdb_id: 910 },
+      { title: 'Out of the Past', year: 1947, tmdb_id: 678 },
+      { title: 'Sunset Boulevard', year: 1950, tmdb_id: 599 }
+    ]
+  },
+  'world-cinema': {
+    title: 'World Cinema',
+    movies: [
+      { title: '8½', year: 1963, tmdb_id: 139 },
+      { title: 'The Rules of the Game', year: 1939, tmdb_id: 36386 },
+      { title: 'Tokyo Story', year: 1953, tmdb_id: 18148 },
+      { title: 'Bicycle Thieves', year: 1948, tmdb_id: 11224 },
+      { title: 'Persona', year: 1966, tmdb_id: 3082 }
+    ]
+  },
+  'horror-suspense': {
+    title: 'Horror & Suspense',
+    movies: [
+      { title: 'Psycho', year: 1960, tmdb_id: 539 },
+      { title: 'The Exorcist', year: 1973, tmdb_id: 9552 },
+      { title: 'Halloween', year: 1978, tmdb_id: 530 },
+      { title: 'Night of the Living Dead', year: 1968, tmdb_id: 10625 },
+      { title: 'Rosemary\'s Baby', year: 1968, tmdb_id: 10110 }
+    ]
+  }
+};
+
+// Episode suggestions based on viewing patterns
+const episodeSuggestions = {
+  'film-noir': [
+    { id: 'german-expressionism', title: 'German Expressionism', theme: 'film-noir' },
+    { id: 'from-novels-to-noir', title: 'From Novels to Noir', theme: 'film-noir' }
+  ],
+  'world-cinema': [
+    { id: 'italian-neorealism', title: 'Italian Neorealism', theme: 'world-cinema' },
+    { id: 'french-new-wave', title: 'French New Wave', theme: 'world-cinema' }
+  ],
+  'horror-suspense': [
+    { id: 'psychological-horror', title: 'Psychological Horror', theme: 'horror-suspense' },
+    { id: 'supernatural-cinema', title: 'Supernatural Cinema', theme: 'horror-suspense' }
+  ]
+};
 
 export default function YouPage() {
   const router = useRouter();
@@ -19,9 +68,15 @@ export default function YouPage() {
   const [expandedSections, setExpandedSections] = useState({
     profile: true,
     stats: false,
-    hearted: false,
-    bookmarked: false,
-    platforms: false
+    hearted: true,
+    bookmarked: true,
+    platforms: false,
+    learning: false
+  });
+  const [learningInsights, setLearningInsights] = useState({
+    completedCollections: [],
+    suggestedEpisodes: [],
+    progressData: {}
   });
 
   const toggleSection = (section) => {
@@ -165,6 +220,55 @@ export default function YouPage() {
     window.dispatchEvent(new CustomEvent('platformsUpdated'));
   };
 
+  // Analyze user's collection for learning insights
+  const analyzeLearningProgress = () => {
+    const insights = {
+      completedCollections: [],
+      suggestedEpisodes: [],
+      progressData: {}
+    };
+
+    // Check progress in each essential films collection
+    Object.entries(essentialFilmsData).forEach(([collectionKey, collection]) => {
+      const matchedMovies = collection.movies.filter(movie => 
+        heartedMovies.some(hearted => 
+          hearted.title.toLowerCase() === movie.title.toLowerCase() || 
+          hearted.tmdb_id === movie.tmdb_id
+        )
+      );
+      
+      const progress = matchedMovies.length / collection.movies.length;
+      insights.progressData[collectionKey] = {
+        count: matchedMovies.length,
+        total: collection.movies.length,
+        progress: progress,
+        title: collection.title
+      };
+
+      // Collection is considered "in progress" if user has 2+ films
+      if (matchedMovies.length >= 2) {
+        if (progress >= 0.8) {
+          insights.completedCollections.push(collectionKey);
+        }
+        
+        // Suggest episodes for collections with progress
+        if (episodeSuggestions[collectionKey]) {
+          insights.suggestedEpisodes.push(...episodeSuggestions[collectionKey]);
+        }
+      }
+    });
+
+    return insights;
+  };
+
+  // Update learning insights when movies change
+  useEffect(() => {
+    if (heartedMovies.length > 0) {
+      const insights = analyzeLearningProgress();
+      setLearningInsights(insights);
+    }
+  }, [heartedMovies]);
+
   return (
     <PhoneFrame active="you">
       <div style={styles.container}>
@@ -266,6 +370,76 @@ export default function YouPage() {
               </div>
             </div>
 
+            {/* Cinematic Journey Section */}
+            {(learningInsights.suggestedEpisodes.length > 0 || Object.keys(learningInsights.progressData).length > 0) && (
+              <div style={styles.learningSection}>
+                <div 
+                  style={styles.learningHeader}
+                  onClick={() => toggleSection('learning')}
+                >
+                  <div style={styles.learningHeaderLeft}>
+                    <Film size={20} color="#9ca3af" />
+                    <h2 style={styles.learningTitle}>Collections Progress</h2>
+                  </div>
+                  <div style={styles.learningHeaderRight}>
+                    <span style={styles.expandIcon}>
+                      {expandedSections.learning ? '▼' : '▶'}
+                    </span>
+                  </div>
+                </div>
+                {expandedSections.learning && (
+                  <div style={styles.learningContent}>
+                    {/* Progress Cards */}
+                    <div style={styles.progressCards}>
+                      {Object.entries(learningInsights.progressData).map(([key, data]) => (
+                        data.count > 0 && (
+                          <div key={key} style={styles.progressCard}>
+                            <div style={styles.progressHeader}>
+                              <span style={styles.progressTitle}>{data.title}</span>
+                              <span style={styles.progressCount}>{data.count}/{data.total}</span>
+                            </div>
+                            <div style={styles.progressBar}>
+                              <div 
+                                style={{
+                                  ...styles.progressFill,
+                                  width: `${data.progress * 100}%`
+                                }}
+                              />
+                            </div>
+                            <div style={styles.progressStatus}>
+                              {data.progress >= 0.8 ? 'Deep dive complete' : 
+                               data.progress >= 0.4 ? 'Getting into it' : 'Just getting started'}
+                            </div>
+                          </div>
+                        )
+                      ))}
+                    </div>
+                    
+                    {/* Episode Suggestions */}
+                    {learningInsights.suggestedEpisodes.length > 0 && (
+                      <div style={styles.episodeSection}>
+                        <h3 style={styles.episodeTitle}>Explore Further</h3>
+                        <div style={styles.episodeGrid}>
+                          {learningInsights.suggestedEpisodes.slice(0, 3).map((episode, index) => (
+                            <Link 
+                              key={index} 
+                              href={`/${episode.theme}/${episode.id}`}
+                              style={styles.episodeCard}
+                            >
+                              <div style={styles.episodeCardContent}>
+                                <span style={styles.episodeCardIcon}>→</span>
+                                <span style={styles.episodeCardTitle}>{episode.title}</span>
+                              </div>
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            )}
+
             {/* Film Statistics Section */}
             <div style={styles.statsSection}>
               <div 
@@ -336,8 +510,17 @@ export default function YouPage() {
                 onClick={() => toggleSection('hearted')}
               >
                 <div style={styles.movieHeaderLeft}>
-                  <Heart size={20} color="#ef4444" fill="#ef4444" />
-                  <h2 style={styles.movieTitle}>Films You Love</h2>
+                  <Heart size={20} color="#9ca3af" fill="none" />
+                  <div style={styles.movieTitleSection}>
+                    <h2 style={styles.movieTitle}>Films You Love</h2>
+                    {heartedMovies.length > 0 && (
+                      <p style={styles.movieSubtitle}>
+                        {heartedMovies.length >= 10 ? 'Your taste spans multiple worlds of cinema' :
+                         heartedMovies.length >= 5 ? 'Developing a sophisticated palate' :
+                         'The beginning of your collection'}
+                      </p>
+                    )}
+                  </div>
                 </div>
                 <div style={styles.movieHeaderRight}>
                   <div style={styles.movieCount}>({heartedMovies.length})</div>
@@ -350,7 +533,7 @@ export default function YouPage() {
                 <div style={styles.movieList}>
                   {heartedMovies.length === 0 ? (
                     <div style={styles.emptyState}>
-                      <div style={styles.emptyIcon}>🎬</div>
+                      <Heart size={24} color="#cccccc" style={styles.emptyIcon} />
                       <p style={styles.emptyMessage}>Your film collection awaits</p>
                       <p style={styles.emptySubtext}>Heart movies as you discover them</p>
                     </div>
@@ -380,11 +563,20 @@ export default function YouPage() {
                 <div style={styles.movieHeaderLeft}>
                   <Bookmark
                     size={20}
-                    color="#374151"
-                    fill="#374151"
+                    color="#9ca3af"
+                    fill="none"
                     style={styles.bookmarkIcon}
                   />
-                  <h2 style={styles.movieTitle}>Films to Watch</h2>
+                  <div style={styles.movieTitleSection}>
+                    <h2 style={styles.movieTitle}>Films to Watch</h2>
+                    {bookmarkedMovies.length > 0 && (
+                      <p style={styles.movieSubtitle}>
+                        {bookmarkedMovies.length >= 10 ? 'Ambitious queue spanning different eras' :
+                         bookmarkedMovies.length >= 5 ? 'Thoughtfully curated viewing ahead' :
+                         'Your next cinematic adventures'}
+                      </p>
+                    )}
+                  </div>
                 </div>
                 <div style={styles.movieHeaderRight}>
                   <div style={styles.movieCount}>({bookmarkedMovies.length})</div>
@@ -397,7 +589,7 @@ export default function YouPage() {
                 <div style={styles.movieList}>
                   {bookmarkedMovies.length === 0 ? (
                     <div style={styles.emptyState}>
-                      <div style={styles.emptyIcon}>📖</div>
+                      <Bookmark size={24} color="#cccccc" style={styles.emptyIcon} />
                       <p style={styles.emptyMessage}>Your viewing queue is empty</p>
                       <p style={styles.emptySubtext}>Bookmark films for later</p>
                     </div>
@@ -470,15 +662,15 @@ const styles = {
     flexDirection: 'column',
     height: '100%',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    backgroundColor: '#fafafa',
   },
   fixedInputArea: {
     position: 'sticky',
     top: 0,
     zIndex: 100,
-    padding: '16px',
+    padding: '24px 24px 16px',
     backgroundColor: '#ffffff',
-    borderBottom: '1px solid #e5e7eb',
-    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+    borderBottom: '1px solid #f0f0f0',
   },
   scrollableContent: {
     flex: 1,
@@ -490,37 +682,39 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: '12px 16px',
-    backgroundColor: '#f8f9fa',
-    borderBottom: '1px solid #e5e7eb',
-    gap: '16px',
+    padding: '20px 24px',
+    backgroundColor: '#ffffff',
+    borderBottom: '1px solid #f0f0f0',
+    gap: '32px',
   },
   navItem: {
     display: 'flex',
     alignItems: 'center',
-    gap: '6px',
+    gap: '8px',
   },
   navCount: {
-    fontSize: '14px',
+    fontSize: '13px',
     fontWeight: '500',
-    color: '#374151',
+    color: '#666666',
   },
   navSeparator: {
-    fontSize: '16px',
-    color: '#d1d5db',
+    fontSize: '14px',
+    color: '#e0e0e0',
     fontWeight: '300',
   },
   tvIcon: {
     fontSize: '16px',
+    opacity: 0.7,
   },
   content: {
     flex: 1,
-    padding: '16px',
+    padding: '32px 24px',
     overflowY: 'scroll',
     scrollbarWidth: 'none',
     msOverflowStyle: 'none',
     display: 'flex',
     flexDirection: 'column',
+    gap: '40px',
   },
   mainContent: {
     flex: 1,
@@ -725,105 +919,117 @@ const styles = {
     fontWeight: '500',
   },
   movieSection: {
-    marginBottom: '20px',
+    marginBottom: '32px',
   },
   movieHeader: {
     display: 'flex',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     justifyContent: 'space-between',
-    padding: '16px 20px',
+    padding: '32px',
     backgroundColor: '#ffffff',
-    borderRadius: '12px',
-    border: '1px solid #e5e7eb',
+    borderRadius: '16px',
+    border: '1px solid #f0f0f0',
     cursor: 'pointer',
     transition: 'all 0.2s ease',
-    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.05)',
+    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.02)',
   },
   movieHeaderRight: {
     display: 'flex',
     alignItems: 'center',
-    gap: '8px',
+    gap: '16px',
   },
   movieHeaderLeft: {
     display: 'flex',
-    alignItems: 'center',
-    gap: '12px',
+    alignItems: 'flex-start',
+    gap: '20px',
+    flex: 1,
   },
   heartIcon: {
-    fontSize: '20px',
+    opacity: 0.6,
+    marginTop: '2px',
   },
   bookmarkIcon: {
-    fontSize: '20px',
+    opacity: 0.6,
+    marginTop: '2px',
   },
   platformIcon: {
-    fontSize: '20px',
+    opacity: 0.6,
+    marginTop: '2px',
   },
   movieTitle: {
-    fontSize: '18px',
+    fontSize: '20px',
     fontWeight: '600',
-    color: '#111827',
+    color: '#1a1a1a',
     margin: 0,
+    letterSpacing: '-0.01em',
   },
   movieCount: {
-    fontSize: '14px',
+    fontSize: '13px',
     fontWeight: '500',
-    color: '#6b7280',
+    color: '#999999',
+    backgroundColor: '#f8f8f8',
+    padding: '4px 8px',
+    borderRadius: '6px',
   },
   expandIcon: {
-    fontSize: '12px',
-    color: '#9ca3af',
+    fontSize: '10px',
+    color: '#cccccc',
     transition: 'transform 0.2s ease',
   },
   movieList: {
-    marginTop: '16px',
+    marginTop: '24px',
     display: 'flex',
     flexDirection: 'column',
-    gap: '8px',
+    gap: '16px',
+    paddingLeft: '32px',
+    paddingRight: '32px',
+    paddingBottom: '24px',
   },
   movieCardWrapper: {
     backgroundColor: 'white',
-    borderRadius: '8px',
-    border: '1px solid #e5e7eb',
+    borderRadius: '12px',
+    border: '1px solid #f0f0f0',
     overflow: 'hidden',
-    boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)',
+    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.02)',
+    transition: 'all 0.2s ease',
   },
   platformList: {
-    marginTop: '12px',
+    marginTop: '24px',
     display: 'flex',
     flexDirection: 'column',
-    gap: '8px',
+    gap: '12px',
+    paddingLeft: '32px',
+    paddingRight: '32px',
   },
   platformItem: {
-    fontSize: '16px',
-    color: '#333',
-    padding: '8px 12px',
+    fontSize: '15px',
+    color: '#666666',
+    padding: '12px 16px',
     backgroundColor: 'white',
-    borderRadius: '8px',
-    border: '1px solid #e9ecef',
+    borderRadius: '12px',
+    border: '1px solid #f0f0f0',
   },
   emptyState: {
     textAlign: 'center',
-    padding: '32px 16px',
-    backgroundColor: '#fafbfc',
-    borderRadius: '12px',
-    border: '1px solid #f3f4f6',
-    margin: '16px 0',
+    padding: '48px 32px',
+    backgroundColor: '#fafafa',
+    borderRadius: '16px',
+    border: '1px solid #f0f0f0',
+    margin: '24px 32px',
   },
   emptyIcon: {
-    fontSize: '32px',
-    marginBottom: '12px',
-    opacity: 0.6,
+    marginBottom: '16px',
+    opacity: 0.4,
   },
   emptyMessage: {
-    fontSize: '16px',
-    color: '#374151',
+    fontSize: '15px',
+    color: '#666666',
     fontWeight: '500',
-    margin: '0 0 4px 0',
+    margin: '0 0 8px 0',
   },
   emptySubtext: {
-    fontSize: '14px',
-    color: '#6b7280',
-    fontStyle: 'italic',
+    fontSize: '13px',
+    color: '#999999',
     margin: 0,
   },
   platformSelectorContainer: {
@@ -857,5 +1063,157 @@ const styles = {
     color: '#6b7280',
     margin: '8px 0 0 0',
     fontStyle: 'italic',
+  },
+  learningSection: {
+    marginBottom: '32px',
+  },
+  learningHeader: {
+    display: 'flex',
+    alignItems: 'flex-start',
+    justifyContent: 'space-between',
+    padding: '32px',
+    backgroundColor: '#ffffff',
+    borderRadius: '16px',
+    border: '1px solid #f0f0f0',
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.02)',
+  },
+  learningHeaderLeft: {
+    display: 'flex',
+    alignItems: 'flex-start',
+    gap: '20px',
+    flex: 1,
+  },
+  learningHeaderRight: {
+    display: 'flex',
+    alignItems: 'center',
+  },
+  learningTitle: {
+    fontSize: '20px',
+    fontWeight: '600',
+    color: '#1a1a1a',
+    margin: 0,
+    letterSpacing: '-0.01em',
+  },
+  learningContent: {
+    marginTop: '24px',
+    padding: '32px',
+    backgroundColor: '#ffffff',
+    borderRadius: '16px',
+    border: '1px solid #f0f0f0',
+    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.02)',
+  },
+  journeyIcon: {
+    opacity: 0.6,
+    marginTop: '2px',
+  },
+  progressCards: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+    gap: '20px',
+    marginBottom: '32px',
+  },
+  progressCard: {
+    padding: '24px',
+    backgroundColor: '#fafafa',
+    borderRadius: '12px',
+    border: '1px solid #f0f0f0',
+    transition: 'all 0.2s ease',
+  },
+  progressHeader: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: '12px',
+  },
+  progressTitle: {
+    fontSize: '15px',
+    fontWeight: '600',
+    color: '#1a1a1a',
+    letterSpacing: '-0.01em',
+  },
+  progressCount: {
+    fontSize: '12px',
+    color: '#999999',
+    fontWeight: '500',
+    backgroundColor: '#f0f0f0',
+    padding: '2px 6px',
+    borderRadius: '4px',
+  },
+  progressBar: {
+    width: '100%',
+    height: '3px',
+    backgroundColor: '#f0f0f0',
+    borderRadius: '2px',
+    overflow: 'hidden',
+    marginBottom: '12px',
+  },
+  progressFill: {
+    height: '100%',
+    backgroundColor: '#1a1a1a',
+    transition: 'width 0.3s ease',
+  },
+  progressStatus: {
+    fontSize: '11px',
+    color: '#999999',
+    fontWeight: '500',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px',
+  },
+  episodeSection: {
+    paddingTop: '32px',
+    borderTop: '1px solid #f0f0f0',
+  },
+  episodeTitle: {
+    fontSize: '11px',
+    fontWeight: '600',
+    color: '#cccccc',
+    marginBottom: '16px',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px',
+  },
+  episodeGrid: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '12px',
+  },
+  episodeCard: {
+    padding: '16px 20px',
+    backgroundColor: '#fafafa',
+    border: '1px solid #f0f0f0',
+    borderRadius: '8px',
+    textDecoration: 'none',
+    color: 'inherit',
+    transition: 'all 0.2s ease',
+    cursor: 'pointer',
+  },
+  episodeCardContent: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '12px',
+  },
+  episodeCardIcon: {
+    fontSize: '12px',
+    color: '#cccccc',
+    fontWeight: '300',
+  },
+  episodeCardTitle: {
+    fontSize: '14px',
+    fontWeight: '500',
+    color: '#1a1a1a',
+    letterSpacing: '-0.01em',
+  },
+  movieTitleSection: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '4px',
+  },
+  movieSubtitle: {
+    fontSize: '13px',
+    color: '#999999',
+    margin: 0,
+    fontWeight: '400',
+    lineHeight: '1.4',
   },
 };

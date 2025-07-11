@@ -262,18 +262,14 @@ export default function EssentialMovies({ theme }) {
       {episodes.length > 0 && (
         <div style={styles.episodeSection}>
           {episodes.map((episode) => (
-            <a
+            <Link
               key={episode.id}
               href={`/${theme}/${episode.id}`}
               style={styles.episodeButton}
-              onClick={(e) => {
-                e.preventDefault();
-                window.location.href = `/${theme}/${episode.id}`;
-              }}
             >
               <div style={styles.episodeTitle}>{episode.title}</div>
               <div style={styles.episodeSubtitle}>{episode.subtitle}</div>
-            </a>
+            </Link>
           ))}
         </div>
       )}

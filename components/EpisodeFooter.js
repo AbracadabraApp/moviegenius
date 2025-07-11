@@ -5,6 +5,7 @@
  */
 
 import themeMapping from '../data/theme-episode-mapping.json';
+import Link from 'next/link';
 
 export default function EpisodeFooter({ currentTheme, currentEpisode }) {
   // Safety check for required props
@@ -40,18 +41,14 @@ export default function EpisodeFooter({ currentTheme, currentEpisode }) {
           <h3 style={styles.sectionTitle}>More from {themeData.title}</h3>
           <div style={styles.episodeGrid}>
             {otherEpisodes.map((episode) => (
-              <a
+              <Link
                 key={episode.id}
                 href={`/${currentTheme}/${episode.id}`}
                 style={styles.episodeButton}
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.location.href = `/${currentTheme}/${episode.id}`;
-                }}
               >
                 <div style={styles.episodeTitle}>{episode.title}</div>
                 <div style={styles.episodeSubtitle}>{episode.subtitle}</div>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -62,17 +59,13 @@ export default function EpisodeFooter({ currentTheme, currentEpisode }) {
         <h3 style={styles.sectionTitle}>Explore Further</h3>
         <div style={styles.themeGrid}>
           {exploreThemes.filter(theme => theme.slug !== currentTheme).map((theme) => (
-            <a
+            <Link
               key={theme.slug}
               href={`/${theme.slug}`}
               style={styles.themeButton}
-              onClick={(e) => {
-                e.preventDefault();
-                window.location.href = `/${theme.slug}`;
-              }}
             >
               {theme.name}
-            </a>
+            </Link>
           ))}
         </div>
       </div>
