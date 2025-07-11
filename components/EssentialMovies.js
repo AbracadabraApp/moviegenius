@@ -266,6 +266,7 @@ export default function EssentialMovies({ theme }) {
               <Link
                 href={`/${theme}/${episode.id}`}
                 style={{ textDecoration: 'none', color: 'inherit', display: 'block', width: '100%', height: '100%' }}
+                onClick={() => console.log('Episode link clicked:', `/${theme}/${episode.id}`)}
               >
                 <div style={styles.episodeTitle}>{episode.title}</div>
                 <div style={styles.episodeSubtitle}>{episode.subtitle}</div>

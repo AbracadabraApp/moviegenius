@@ -5,7 +5,7 @@ import SelectedPlatforms from '../components/SelectedPlatforms';
 import MediaCard from '../components/MediaCard';
 import PlatformSelector from '../components/PlatformSelector';
 import CinematicProfile from '../components/CinematicProfile';
-import { Check, Plus, Film, BarChart3 } from 'lucide-react';
+import { Heart, Bookmark, Film } from 'lucide-react';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -505,35 +505,16 @@ export default function YouPage() {
               )}
             </div>
             <div style={styles.movieSection}>
-              <div 
-                style={styles.movieHeader}
-                onClick={() => toggleSection('hearted')}
-              >
-                <div style={styles.movieHeaderLeft}>
-                  <Heart size={20} color="#9ca3af" fill="none" />
-                  <div style={styles.movieTitleSection}>
-                    <h2 style={styles.movieTitle}>Films You Love</h2>
-                    {heartedMovies.length > 0 && (
-                      <p style={styles.movieSubtitle}>
-                        {heartedMovies.length >= 10 ? 'Your taste spans multiple worlds of cinema' :
-                         heartedMovies.length >= 5 ? 'Developing a sophisticated palate' :
-                         'The beginning of your collection'}
-                      </p>
-                    )}
-                  </div>
-                </div>
-                <div style={styles.movieHeaderRight}>
-                  <div style={styles.movieCount}>({heartedMovies.length})</div>
-                  <span style={styles.expandIcon}>
-                    {expandedSections.hearted ? '▼' : '▶'}
-                  </span>
-                </div>
+              <div style={styles.sectionHeader}>
+                <div style={styles.sectionDivider} />
+                <span style={styles.sectionLabel}>Films You Love ({heartedMovies.length})</span>
+                <div style={styles.sectionDivider} />
               </div>
               {expandedSections.hearted && (
                 <div style={styles.movieList}>
                   {heartedMovies.length === 0 ? (
                     <div style={styles.emptyState}>
-                      <Heart size={24} color="#cccccc" style={styles.emptyIcon} />
+                      <Heart size={24} color="#9ca3af" style={styles.emptyIcon} />
                       <p style={styles.emptyMessage}>Your film collection awaits</p>
                       <p style={styles.emptySubtext}>Heart movies as you discover them</p>
                     </div>
@@ -556,40 +537,16 @@ export default function YouPage() {
             </div>
 
             <div style={styles.movieSection}>
-              <div 
-                style={styles.movieHeader}
-                onClick={() => toggleSection('bookmarked')}
-              >
-                <div style={styles.movieHeaderLeft}>
-                  <Bookmark
-                    size={20}
-                    color="#9ca3af"
-                    fill="none"
-                    style={styles.bookmarkIcon}
-                  />
-                  <div style={styles.movieTitleSection}>
-                    <h2 style={styles.movieTitle}>Films to Watch</h2>
-                    {bookmarkedMovies.length > 0 && (
-                      <p style={styles.movieSubtitle}>
-                        {bookmarkedMovies.length >= 10 ? 'Ambitious queue spanning different eras' :
-                         bookmarkedMovies.length >= 5 ? 'Thoughtfully curated viewing ahead' :
-                         'Your next cinematic adventures'}
-                      </p>
-                    )}
-                  </div>
-                </div>
-                <div style={styles.movieHeaderRight}>
-                  <div style={styles.movieCount}>({bookmarkedMovies.length})</div>
-                  <span style={styles.expandIcon}>
-                    {expandedSections.bookmarked ? '▼' : '▶'}
-                  </span>
-                </div>
+              <div style={styles.sectionHeader}>
+                <div style={styles.sectionDivider} />
+                <span style={styles.sectionLabel}>Films to Watch ({bookmarkedMovies.length})</span>
+                <div style={styles.sectionDivider} />
               </div>
               {expandedSections.bookmarked && (
                 <div style={styles.movieList}>
                   {bookmarkedMovies.length === 0 ? (
                     <div style={styles.emptyState}>
-                      <Bookmark size={24} color="#cccccc" style={styles.emptyIcon} />
+                      <Bookmark size={24} color="#9ca3af" style={styles.emptyIcon} />
                       <p style={styles.emptyMessage}>Your viewing queue is empty</p>
                       <p style={styles.emptySubtext}>Bookmark films for later</p>
                     </div>
@@ -1215,5 +1172,23 @@ const styles = {
     margin: 0,
     fontWeight: '400',
     lineHeight: '1.4',
+  },
+  sectionHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '16px',
+    marginBottom: '12px',
+  },
+  sectionDivider: {
+    flex: 1,
+    height: '1px',
+    backgroundColor: '#d4af37',
+  },
+  sectionLabel: {
+    fontSize: '12px',
+    fontWeight: '600',
+    textTransform: 'uppercase',
+    letterSpacing: '1px',
+    color: '#d4af37',
   },
 };
