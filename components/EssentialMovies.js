@@ -2,12 +2,10 @@
 import { useState, useEffect } from 'react';
 import { Check, Plus } from 'lucide-react';
 import { FavoritesManager } from './FavoritesManager';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 import themeMapping from '../data/theme-episode-mapping.json';
 
 export default function EssentialMovies({ theme }) {
-  const router = useRouter();
   const [heartedMovies, setHeartedMovies] = useState(new Set());
   const [bookmarkedMovies, setBookmarkedMovies] = useState(new Set());
 
@@ -174,10 +172,7 @@ export default function EssentialMovies({ theme }) {
     setBookmarkedMovies(newBookmarked);
   };
 
-  // Handle episode click
-  const handleEpisodeClick = (episode) => {
-    router.push(`/${theme}/${episode.id}`);
-  };
+  // Episode navigation now uses direct HTML links
 
   if (currentMovies.length === 0) return null;
 
@@ -267,14 +262,14 @@ export default function EssentialMovies({ theme }) {
       {episodes.length > 0 && (
         <div style={styles.episodeSection}>
           {episodes.map((episode) => (
-            <button
+            <a
               key={episode.id}
-              onClick={() => handleEpisodeClick(episode)}
+              href={`/${theme}/${episode.id}`}
               style={styles.episodeButton}
             >
               <div style={styles.episodeTitle}>{episode.title}</div>
               <div style={styles.episodeSubtitle}>{episode.subtitle}</div>
-            </button>
+            </a>
           ))}
         </div>
       )}
@@ -419,11 +414,8 @@ const styles = {
     textAlign: 'left',
     boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
     width: '280px',
-    ':hover': {
-      borderColor: '#d4af37',
-      transform: 'translateY(-2px)',
-      boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
-    },
+    textDecoration: 'none',
+    color: 'inherit',
   },
   episodeTitle: {
     fontSize: '16px',
