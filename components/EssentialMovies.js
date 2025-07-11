@@ -94,12 +94,27 @@ export default function EssentialMovies({ theme }) {
 
   // Progress status descriptions
   const getProgressStatus = () => {
-    if (seenCount === 0) return 'Shadow Walker';
-    if (seenCount === 1) return 'Night Owl';
-    if (seenCount === 2) return 'Street Sleuth';
-    if (seenCount === 3) return 'Dark Detective';
-    if (seenCount === 4) return 'Noir Scholar';
-    return 'Master of Shadows';
+    const statusMap = {
+      'film-noir': ['Shadow Walker', 'Night Owl', 'Street Sleuth', 'Dark Detective', 'Noir Scholar', 'Master of Shadows'],
+      'horror-suspense': ['Rookie', 'Brave Soul', 'Nightmare Navigator', 'Fear Conqueror', 'Horror Expert', 'Master of Terror'],
+      'comedy-through-time': ['Chuckle Rookie', 'Gag Enthusiast', 'Laugh Tracker', 'Comedy Buff', 'Humor Expert', 'Master of Laughter'],
+      'sci-fi-evolution': ['Space Cadet', 'Tech Explorer', 'Future Seeker', 'Sci-Fi Scholar', 'Galaxy Expert', 'Master of Tomorrow'],
+      'action-adventure': ['Rookie Hero', 'Thrill Seeker', 'Adventure Scout', 'Action Expert', 'Epic Explorer', 'Master of Adventure'],
+      'romance-through-decades': ['Romantic Rookie', 'Heart Warmer', 'Love Story Fan', 'Romance Expert', 'Cupid Scholar', 'Master of Love'],
+      'drama-human-condition': ['Drama Novice', 'Life Observer', 'Story Seeker', 'Human Expert', 'Drama Scholar', 'Master of Stories'],
+      'western-frontier': ['Greenhorn', 'Trail Rider', 'Frontier Scout', 'Western Expert', 'Cowboy Scholar', 'Master of the West'],
+      'animation-art': ['Animation Rookie', 'Cartoon Fan', 'Art Enthusiast', 'Animation Expert', 'Studio Scholar', 'Master of Animation'],
+      'world-cinema': ['Global Rookie', 'Culture Seeker', 'World Explorer', 'Cinema Expert', 'Cultural Scholar', 'Master of World Cinema'],
+      'women-directors': ['Film Rookie', 'Vision Seeker', 'Story Explorer', 'Cinema Expert', 'Auteur Scholar', 'Master of Vision'],
+      'acclaimed-directors': ['Film Novice', 'Vision Seeker', 'Auteur Explorer', 'Director Expert', 'Cinema Scholar', 'Master of Vision'],
+      'avant-garde-film': ['Film Rookie', 'Art Seeker', 'Movement Explorer', 'Avant-garde Expert', 'Revolution Scholar', 'Master of Innovation'],
+      'magic-of-moviemaking': ['Tech Rookie', 'Craft Seeker', 'Magic Explorer', 'Movie Expert', 'Cinema Scholar', 'Master of Magic'],
+      'cinema-through-decades': ['Era Rookie', 'Time Traveler', 'Decade Explorer', 'Cinema Expert', 'History Scholar', 'Master of Eras'],
+      'cinema-cultural-impact': ['Culture Rookie', 'Change Seeker', 'Impact Explorer', 'Cinema Expert', 'History Scholar', 'Master of Impact']
+    };
+    
+    const statuses = statusMap[theme] || ['Rookie', 'Explorer', 'Enthusiast', 'Expert', 'Scholar', 'Master'];
+    return statuses[Math.min(seenCount, statuses.length - 1)];
   };
 
   // Load favorites state on mount
@@ -404,6 +419,11 @@ const styles = {
     textAlign: 'left',
     boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
     width: '280px',
+    ':hover': {
+      borderColor: '#d4af37',
+      transform: 'translateY(-2px)',
+      boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
+    },
   },
   episodeTitle: {
     fontSize: '16px',

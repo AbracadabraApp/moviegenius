@@ -14,18 +14,8 @@ export default function EpisodePage({ theme, episode, episodeData, themeData }) 
   const [error, setError] = useState(null);
 
   const handleSearchResults = (results) => {
-    // Auto-navigate to single results
-    if (results.length === 1) {
-      const movie = results[0];
-      if (movie.tmdb_id) {
-        router.push(`/movie/${movie.tmdb_id}`);
-        return;
-      }
-    }
-    // For multiple results, redirect to search page
-    if (results.length > 1) {
-      router.push('/search');
-    }
+    // With unified search, this won't be called since search redirects to /search page
+    // Kept for compatibility if useUnifiedSearch is disabled
   };
 
   // If router is still loading, show loading state
@@ -34,7 +24,7 @@ export default function EpisodePage({ theme, episode, episodeData, themeData }) 
       <PhoneFrame active="genius">
         <div style={styles.container}>
           <div style={styles.inputArea}>
-            <SimpleSearch onResults={handleSearchResults} />
+            <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
           </div>
           <div style={styles.loadingContainer}>
             <div style={styles.loadingText}>Loading episode...</div>
@@ -49,7 +39,7 @@ export default function EpisodePage({ theme, episode, episodeData, themeData }) 
       <PhoneFrame active="genius">
         <div style={styles.container}>
           <div style={styles.inputArea}>
-            <SimpleSearch onResults={handleSearchResults} />
+            <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
           </div>
           <div style={styles.loadingContainer}>
             <div style={styles.loadingText}>Loading episode...</div>
@@ -64,7 +54,7 @@ export default function EpisodePage({ theme, episode, episodeData, themeData }) 
       <PhoneFrame active="genius">
         <div style={styles.container}>
           <div style={styles.inputArea}>
-            <SimpleSearch onResults={handleSearchResults} />
+            <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
           </div>
           <div style={styles.errorContainer}>
             <div style={styles.errorText}>Error: {error}</div>
@@ -79,7 +69,7 @@ export default function EpisodePage({ theme, episode, episodeData, themeData }) 
       <PhoneFrame active="genius">
         <div style={styles.container}>
           <div style={styles.inputArea}>
-            <SimpleSearch onResults={handleSearchResults} />
+            <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
           </div>
           <div style={styles.errorContainer}>
             <div style={styles.errorText}>Episode not found</div>
@@ -96,7 +86,7 @@ export default function EpisodePage({ theme, episode, episodeData, themeData }) 
       <div style={styles.container}>
         
         <div style={styles.inputArea}>
-          <SimpleSearch onResults={handleSearchResults} />
+          <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
         </div>
 
         <div style={styles.contentArea}>

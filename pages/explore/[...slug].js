@@ -36,7 +36,7 @@ export default function ExplorePage({ pageData, error, topic, context }) {
         <div style={styles.container}>
           <div style={styles.inputArea}>
             <BackButton variant="icon" context="explore" position="top-left" />
-            <SimpleSearch onResults={handleSearchResults} />
+            <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
           </div>
           <div style={styles.errorContainer}>
             <div style={styles.errorText}>Unable to load this explore topic</div>
@@ -59,7 +59,7 @@ export default function ExplorePage({ pageData, error, topic, context }) {
         <div style={styles.container}>
           <div style={styles.inputArea}>
             <BackButton variant="icon" context="explore" position="top-left" />
-            <SimpleSearch onResults={handleSearchResults} />
+            <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
           </div>
           <div style={styles.loadingContainer}>
             <div style={styles.loadingRow}>
@@ -82,7 +82,7 @@ export default function ExplorePage({ pageData, error, topic, context }) {
         {/* Input Area */}
         <div style={styles.inputArea}>
           <BackButton variant="icon" context="explore" position="top-left" />
-          <SimpleSearch onResults={handleSearchResults} />
+          <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
         </div>
 
         {/* Page Header */}

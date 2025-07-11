@@ -339,7 +339,7 @@ export default function PersonDetailPage({ name, birthYear, deathYear, initialBi
           <BackButton variant="icon" context="person" position="top-left" />
           
           <div style={styles.inputArea}>
-            <SimpleSearch onResults={handleSearchResults} />
+            <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
           </div>
           <div style={styles.errorContainer}>
             <div style={styles.errorText}>Error: {error}</div>

@@ -78,7 +78,7 @@ export default function MovieCastPage({ title, year, initialSlug, initialPoster,
       <PhoneFrame>
         <div style={styles.container}>
           <div style={styles.inputArea}>
-            <SimpleSearch onResults={handleSearchResults} />
+            <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
           </div>
           <div style={styles.errorContainer}>
             <div style={styles.errorText}>Error: {error}</div>
@@ -92,7 +92,7 @@ export default function MovieCastPage({ title, year, initialSlug, initialPoster,
     <PhoneFrame>
       <div style={styles.container}>
         <div style={styles.inputArea}>
-          <SimpleSearch onResults={handleSearchResults} />
+          <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
         </div>
         
         {/* Back button */}

@@ -76,7 +76,13 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#ffffff',
-    color: '#000000'
+    color: '#000000',
+    transition: 'all 0.2s ease',
+    ':hover': {
+      backgroundColor: '#d4af37',
+      color: '#ffffff',
+      transform: 'translateY(-1px)',
+    },
   },
 
 };
