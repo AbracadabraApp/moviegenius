@@ -127,9 +127,11 @@ jobs:
       
       - name: Deploy to Railway
         run: |
-          echo "🚀 Deployment triggered for Railway"
-          echo "Railway will handle deployment automatically via webhook"
-          # Railway deployment happens automatically via webhook
+          echo "🚀 Triggering Railway deployment..."
+          curl -X POST "https://backboard.railway.app/graphql" \
+            -H "Authorization: Bearer ${{ secrets.RAILWAY_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d '{"query":"mutation { deploymentCreate(input: { projectId: \"69208135-567a-4f25-b85d-c757d9afaed1\", environmentId: \"production\" }) { id } }"}'
       
       - name: Wait for deployment
         run: |
