@@ -15,6 +15,18 @@ export default function CinematicProfile({ userData, className = '', onProfileCh
     }
   }, [userData.heartedMovies?.length, userData.bookmarkedMovies?.length, userData.selectedPlatforms?.length]);
 
+  // Listen for refresh events from parent components
+  useEffect(() => {
+    const handleRefreshEvent = () => {
+      if (userData && (userData.heartedMovies || userData.bookmarkedMovies || userData.selectedPlatforms)) {
+        handleRefresh();
+      }
+    };
+
+    window.addEventListener('refresh-cinematic-profile', handleRefreshEvent);
+    return () => window.removeEventListener('refresh-cinematic-profile', handleRefreshEvent);
+  }, []);
+
   const loadProfile = async () => {
     try {
       setIsLoading(true);
