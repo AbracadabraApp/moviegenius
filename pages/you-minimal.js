@@ -48,15 +48,22 @@ export default function YouMinimalPage() {
   };
 
   const navigateToCollection = (type) => {
-    router.push(`/collection?type=${type}`);
+    if (type === 'hearted' || type === 'bookmarked') {
+      // Route to movies page where users can browse/search
+      window.location.href = '/movies';
+    } else {
+      window.location.href = '/you'; // Safe fallback
+    }
   };
 
   const navigateToDiscovery = () => {
-    router.push('/discovery');
+    // Use existing genius page for discovery
+    window.location.href = '/genius';
   };
 
   const navigateToSettings = () => {
-    router.push('/settings');
+    // Disable for now - no settings page yet
+    console.log('Settings navigation disabled - page not implemented yet');
   };
 
   // Render main profile section
@@ -123,7 +130,11 @@ export default function YouMinimalPage() {
       {/* Cinematic Profile Component */}
       {hasContent ? (
         <CinematicProfile 
-          heartedMovies={heartedMovies}
+          userData={{
+            heartedMovies,
+            bookmarkedMovies,
+            selectedPlatforms
+          }}
           profileType={activeProfileType}
           minimal={true}
         />
@@ -335,7 +346,12 @@ export default function YouMinimalPage() {
   // Render recent activity
   const renderRecentActivity = () => {
     const recentMovies = [...heartedMovies, ...bookmarkedMovies]
-      .sort((a, b) => new Date(b.dateAdded || 0) - new Date(a.dateAdded || 0))
+      .sort((a, b) => {
+        // Add fallbacks for missing date fields
+        const dateA = new Date(a.dateAdded || a.timestamp || Date.now());
+        const dateB = new Date(b.dateAdded || b.timestamp || Date.now());
+        return dateB - dateA;
+      })
       .slice(0, 3);
 
     if (recentMovies.length === 0) return null;
