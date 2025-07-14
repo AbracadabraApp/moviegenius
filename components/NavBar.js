@@ -59,7 +59,7 @@ export default function NavBar() {
               transform: isActive ? 'translateY(-2px)' : 'none',
             }}
             onClick={() => {
-              window.location.href = route;
+              router.push(route);
             }}
           >
             <Icon
