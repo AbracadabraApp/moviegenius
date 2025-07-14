@@ -108,7 +108,6 @@ export default function GeniusPage() {
                   key={theme}
                   style={{...styles.themeButton, cursor: 'pointer'}}
                   onClick={() => {
-                    console.log('Theme div clicked:', themeRoutes[theme]);
                     window.location.href = themeRoutes[theme];
                   }}
                 >
