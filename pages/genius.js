@@ -108,7 +108,7 @@ export default function GeniusPage() {
                   key={theme}
                   style={{...styles.themeButton, cursor: 'pointer'}}
                   onClick={() => {
-                    window.location.href = themeRoutes[theme];
+                    router.push(themeRoutes[theme]);
                   }}
                 >
                   {theme}

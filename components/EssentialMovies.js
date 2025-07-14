@@ -1,11 +1,13 @@
 // Essential Movies component - Compact list with progress tracking
 import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import { Check, Plus } from 'lucide-react';
 import { FavoritesManager } from './FavoritesManager';
 import Link from 'next/link';
 import themeMapping from '../data/theme-episode-mapping.json';
 
 export default function EssentialMovies({ theme }) {
+  const router = useRouter();
   const [heartedMovies, setHeartedMovies] = useState(new Set());
   const [bookmarkedMovies, setBookmarkedMovies] = useState(new Set());
 
@@ -266,7 +268,7 @@ export default function EssentialMovies({ theme }) {
               key={episode.id} 
               style={{...styles.episodeButton, cursor: 'pointer'}}
               onClick={() => {
-                window.location.href = `/${theme}/${episode.id}`;
+                router.push(`/${theme}/${episode.id}`);
               }}
             >
               <div style={styles.episodeTitle}>{episode.title}</div>

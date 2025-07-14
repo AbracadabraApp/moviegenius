@@ -107,80 +107,34 @@ export default function YouPage() {
 
   // Load data from localStorage
   useEffect(() => {
-    const loadSelectedPlatforms = () => {
+    const loadStoredData = () => {
       try {
-        const saved = localStorage.getItem('selectedPlatforms');
-        if (saved) {
-          const platforms = JSON.parse(saved);
-          setSelectedPlatforms(platforms);
-          console.log('Loaded platforms from localStorage:', platforms);
-        } else {
-          setSelectedPlatforms([]);
-        }
+        const storedHearted = localStorage.getItem('heartedMovies');
+        const storedBookmarked = localStorage.getItem('bookmarkedMovies');
+        const storedPlatforms = localStorage.getItem('selectedPlatforms');
+
+        if (storedHearted) setHeartedMovies(JSON.parse(storedHearted));
+        if (storedBookmarked) setBookmarkedMovies(JSON.parse(storedBookmarked));
+        if (storedPlatforms) setSelectedPlatforms(JSON.parse(storedPlatforms));
       } catch (error) {
-        console.error('Error loading platforms from localStorage:', error);
-        setSelectedPlatforms([]);
+        console.error('Error loading stored data:', error);
       }
     };
 
-    const loadHeartedMovies = () => {
-      try {
-        const saved = localStorage.getItem('heartedMovies');
-        if (saved) {
-          const movies = JSON.parse(saved);
-          setHeartedMovies(movies);
-          console.log('Loaded hearted movies from localStorage:', movies);
-        } else {
-          setHeartedMovies([]);
-        }
-      } catch (error) {
-        console.error('Error loading hearted movies from localStorage:', error);
-        setHeartedMovies([]);
-      }
-    };
-
-    const loadBookmarkedMovies = () => {
-      try {
-        const saved = localStorage.getItem('bookmarkedMovies');
-        if (saved) {
-          const movies = JSON.parse(saved);
-          setBookmarkedMovies(movies);
-          console.log('Loaded bookmarked movies from localStorage:', movies);
-        } else {
-          setBookmarkedMovies([]);
-        }
-      } catch (error) {
-        console.error('Error loading bookmarked movies from localStorage:', error);
-        setBookmarkedMovies([]);
-      }
-    };
-
-    loadSelectedPlatforms();
-    loadHeartedMovies();
-    loadBookmarkedMovies();
+    loadStoredData();
 
     // Listen for storage changes
     const handleStorageChange = (e) => {
-      if (e.key === 'selectedPlatforms') {
-        loadSelectedPlatforms();
-      } else if (e.key === 'heartedMovies') {
-        loadHeartedMovies();
-      } else if (e.key === 'bookmarkedMovies') {
-        loadBookmarkedMovies();
+      if (e.key === 'selectedPlatforms' || e.key === 'heartedMovies' || e.key === 'bookmarkedMovies') {
+        loadStoredData();
       }
     };
 
     window.addEventListener('storage', handleStorageChange);
     
     // Also listen for custom events for same-tab updates
-    const handlePlatformUpdate = () => {
-      loadSelectedPlatforms();
-    };
-    
-    const handleMoviesUpdate = () => {
-      loadHeartedMovies();
-      loadBookmarkedMovies();
-    };
+    const handlePlatformUpdate = () => loadStoredData();
+    const handleMoviesUpdate = () => loadStoredData();
     
     window.addEventListener('platformsUpdated', handlePlatformUpdate);
     window.addEventListener('moviesUpdated', handleMoviesUpdate);
@@ -415,22 +369,25 @@ export default function YouPage() {
                       ))}
                     </div>
                     
-                    {/* Episode Suggestions */}
+                    {/* Episode Suggestions - Updated with pragmatic navigation */}
                     {learningInsights.suggestedEpisodes.length > 0 && (
                       <div style={styles.episodeSection}>
                         <h3 style={styles.episodeTitle}>Explore Further</h3>
                         <div style={styles.episodeGrid}>
                           {learningInsights.suggestedEpisodes.slice(0, 3).map((episode, index) => (
-                            <Link 
+                            <div 
                               key={index} 
-                              href={`/${episode.theme}/${episode.id}`}
                               style={styles.episodeCard}
+                              onClick={() => {
+                                // Use pragmatic navigation to genius section
+                                router.push(`/genius`);
+                              }}
                             >
                               <div style={styles.episodeCardContent}>
                                 <span style={styles.episodeCardIcon}>→</span>
                                 <span style={styles.episodeCardTitle}>{episode.title}</span>
                               </div>
-                            </Link>
+                            </div>
                           ))}
                         </div>
                       </div>
@@ -520,7 +477,7 @@ export default function YouPage() {
                     </div>
                   ) : (
                     heartedMovies.map((movie) => (
-                      <div key={movie.id} style={styles.movieCardWrapper}>
+                      <div key={movie.id || movie.tmdb_id} style={styles.movieCardWrapper}>
                         <MediaCard 
                           title={movie.title}
                           year={movie.year}
@@ -552,7 +509,7 @@ export default function YouPage() {
                     </div>
                   ) : (
                     bookmarkedMovies.map((movie) => (
-                      <div key={movie.id} style={styles.movieCardWrapper}>
+                      <div key={movie.id || movie.tmdb_id} style={styles.movieCardWrapper}>
                         <MediaCard 
                           title={movie.title}
                           year={movie.year}
