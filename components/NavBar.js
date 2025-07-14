@@ -51,17 +51,14 @@ export default function NavBar() {
       {navItems.map(({ label, icon: Icon, route }) => {
         const isActive = activeLabel === label;
         return (
-          <div
-            key={label} 
-            style={{
-              ...styles.navItem,
-              opacity: isActive ? 1 : 0.6,
-              transform: isActive ? 'translateY(-2px)' : 'none',
-            }}
-            onClick={() => {
-              router.push(route);
-            }}
-          >
+          <Link key={label} href={route} style={{textDecoration: 'none'}}>
+            <div
+              style={{
+                ...styles.navItem,
+                opacity: isActive ? 1 : 0.6,
+                transform: isActive ? 'translateY(-2px)' : 'none',
+              }}
+            >
             <Icon
               size={28}
               style={{
@@ -73,7 +70,8 @@ export default function NavBar() {
               <span style={styles.label}>{label}</span>
               {isActive && <div style={styles.underline} />}
             </span>
-          </div>
+            </div>
+          </Link>
         );
       })}
     </nav>

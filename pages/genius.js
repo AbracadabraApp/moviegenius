@@ -104,15 +104,15 @@ export default function GeniusPage() {
                 'Hollywood Transformed': '/cinema-cultural-impact'
               };
               return (
-                <div
+                <Link 
                   key={theme}
-                  style={{...styles.themeButton, cursor: 'pointer'}}
-                  onClick={() => {
-                    router.push(themeRoutes[theme]);
-                  }}
+                  href={themeRoutes[theme]}
+                  style={{textDecoration: 'none'}}
                 >
-                  {theme}
-                </div>
+                  <div style={{...styles.themeButton, cursor: 'pointer'}}>
+                    {theme}
+                  </div>
+                </Link>
               );
             })}
           </div>
