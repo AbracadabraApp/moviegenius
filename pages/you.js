@@ -50,15 +50,15 @@ export default function YouPage() {
   const navigateToCollection = (type) => {
     if (type === 'hearted' || type === 'bookmarked') {
       // Route to movies page where users can browse/search
-      window.location.href = '/movies';
+      router.push('/movies');
     } else {
-      window.location.href = '/you'; // Safe fallback
+      router.push('/you'); // Safe fallback
     }
   };
 
   const navigateToDiscovery = () => {
     // Use existing genius page for discovery
-    window.location.href = '/genius';
+    router.push('/genius');
   };
 
   const navigateToSettings = () => {
