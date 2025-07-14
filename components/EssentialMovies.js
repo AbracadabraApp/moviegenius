@@ -266,7 +266,6 @@ export default function EssentialMovies({ theme }) {
               key={episode.id} 
               style={{...styles.episodeButton, cursor: 'pointer'}}
               onClick={() => {
-                console.log('Episode div clicked:', `/${theme}/${episode.id}`);
                 window.location.href = `/${theme}/${episode.id}`;
               }}
             >

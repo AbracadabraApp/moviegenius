@@ -59,7 +59,6 @@ export default function NavBar() {
               transform: isActive ? 'translateY(-2px)' : 'none',
             }}
             onClick={() => {
-              console.log('NavBar div clicked:', route);
               window.location.href = route;
             }}
           >
