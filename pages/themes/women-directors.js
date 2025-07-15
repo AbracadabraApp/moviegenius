@@ -1,5 +1,5 @@
 // Women Directors theme page
-import ThemePage from '../components/ThemePage';
+import ThemePage from '../../components/ThemePage';
 
 export default function WomenDirectorsPage() {
   const customStyles = {

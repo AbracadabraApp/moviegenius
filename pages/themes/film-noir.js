@@ -1,5 +1,5 @@
 // Film Noir theme page
-import ThemePage from '../components/ThemePage';
+import ThemePage from '../../components/ThemePage';
 
 export default function FilmNoirPage() {
   const customStyles = {

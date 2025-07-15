@@ -1,5 +1,5 @@
 // The Magic of Moviemaking theme page
-import ThemePage from '../components/ThemePage';
+import ThemePage from '../../components/ThemePage';
 
 export default function MagicOfMoviemakingPage() {
   const customStyles = {

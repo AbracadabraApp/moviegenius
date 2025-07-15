@@ -92,16 +92,16 @@ export default function GeniusPage() {
           <div style={styles.themeGrid}>
             {allEducationThemes.map(theme => {
               const themeRoutes = {
-                'Film Noir': '/film-noir',
-                'Horror & Suspense': '/horror-suspense', 
-                'Comedy': '/comedy-through-time',
-                'Women Directors': '/women-directors',
-                'International Masters': '/world-cinema',
-                'Acclaimed Directors': '/acclaimed-directors',
-                'Movements in Film': '/avant-garde-film',
-                'The Magic of Moviemaking': '/magic-of-moviemaking',
-                'Cinema Through the Decades': '/cinema-through-decades',
-                'Hollywood Transformed': '/cinema-cultural-impact'
+                'Film Noir': '/themes/film-noir',
+                'Horror & Suspense': '/themes/horror-suspense', 
+                'Comedy': '/themes/comedy-through-time',
+                'Women Directors': '/themes/women-directors',
+                'International Masters': '/themes/world-cinema',
+                'Acclaimed Directors': '/themes/acclaimed-directors',
+                'Movements in Film': '/themes/avant-garde-film',
+                'The Magic of Moviemaking': '/themes/magic-of-moviemaking',
+                'Cinema Through the Decades': '/themes/cinema-through-decades',
+                'Hollywood Transformed': '/themes/cinema-cultural-impact'
               };
               return (
                 <Link 
