@@ -1,5 +1,5 @@
 // Movements in Film theme page
-import ThemePage from '../components/ThemePage';
+import ThemePage from '../../components/ThemePage';
 
 export default function AvantGardeFilmPage() {
   const customStyles = {

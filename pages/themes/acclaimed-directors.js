@@ -1,5 +1,5 @@
 // Acclaimed Directors theme page
-import ThemePage from '../components/ThemePage';
+import ThemePage from '../../components/ThemePage';
 
 export default function AcclaimedDirectorsPage() {
   const customStyles = {

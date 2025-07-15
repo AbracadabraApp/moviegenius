@@ -13,16 +13,16 @@ export default function ThemeFooter() {
         <h3 style={styles.sectionTitle}>Explore Cinema Themes</h3>
         
         <div style={styles.themeGrid}>
-          <Link href="/film-noir" style={styles.themeButton}>Film Noir</Link>
-          <Link href="/horror-suspense" style={styles.themeButton}>Horror & Suspense</Link>
-          <Link href="/comedy-through-time" style={styles.themeButton}>Comedy</Link>
-          <Link href="/women-directors" style={styles.themeButton}>Women Directors</Link>
-          <Link href="/world-cinema" style={styles.themeButton}>International Masters</Link>
-          <Link href="/acclaimed-directors" style={styles.themeButton}>Acclaimed Directors</Link>
-          <Link href="/avant-garde-film" style={styles.themeButton}>Movements in Film</Link>
-          <Link href="/magic-of-moviemaking" style={styles.themeButton}>The Magic of Moviemaking</Link>
-          <Link href="/cinema-through-decades" style={styles.themeButton}>Cinema Through the Decades</Link>
-          <Link href="/cinema-cultural-impact" style={styles.themeButton}>Hollywood Transformed</Link>
+          <Link href="/themes/film-noir" style={styles.themeButton}>Film Noir</Link>
+          <Link href="/themes/horror-suspense" style={styles.themeButton}>Horror & Suspense</Link>
+          <Link href="/themes/comedy-through-time" style={styles.themeButton}>Comedy</Link>
+          <Link href="/themes/women-directors" style={styles.themeButton}>Women Directors</Link>
+          <Link href="/themes/world-cinema" style={styles.themeButton}>International Masters</Link>
+          <Link href="/themes/acclaimed-directors" style={styles.themeButton}>Acclaimed Directors</Link>
+          <Link href="/themes/avant-garde-film" style={styles.themeButton}>Movements in Film</Link>
+          <Link href="/themes/magic-of-moviemaking" style={styles.themeButton}>The Magic of Moviemaking</Link>
+          <Link href="/themes/cinema-through-decades" style={styles.themeButton}>Cinema Through the Decades</Link>
+          <Link href="/themes/cinema-cultural-impact" style={styles.themeButton}>Hollywood Transformed</Link>
         </div>
       </div>
     </div>

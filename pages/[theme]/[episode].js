@@ -508,7 +508,7 @@ export async function getStaticPaths() {
   
   return {
     paths,
-    fallback: false // Return 404 for non-existent paths
+    fallback: 'blocking' // Generate pages on-demand for better UX
   };
 }
 

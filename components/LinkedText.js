@@ -1,6 +1,7 @@
 // components/LinkedText.js
 import { useRouter } from 'next/router';
 import { memo, useCallback, useMemo } from 'react';
+import Link from 'next/link';
 
 /**
  * Component to render text with movie links
@@ -14,12 +15,6 @@ function LinkedText({
 }) {
   // ALL HOOKS MUST BE CALLED BEFORE ANY EARLY RETURNS
   const router = useRouter();
-  
-  // Memoize the click handler to prevent re-renders
-  const handleLinkClick = useCallback((e, href) => {
-    e.preventDefault();
-    router.push(href);
-  }, [router]);
 
   // Early return - but hooks are already called above
   if (!enableLinking || !Array.isArray(parts)) {
@@ -35,10 +30,9 @@ function LinkedText({
           return part;
         } else if (part.type === 'link' || part.type === 'movie-link') {
           return (
-            <a
+            <Link
               key={index}
               href={part.href}
-              onClick={(e) => handleLinkClick(e, part.href)}
               style={{
                 color: 'inherit',
                 textDecoration: 'underline',
@@ -54,14 +48,13 @@ function LinkedText({
               title={`${part.text} (${part.year})`}
             >
               {part.text}
-            </a>
+            </Link>
           );
         } else if (part.type === 'person-link') {
           return (
-            <a
+            <Link
               key={index}
               href={part.href}
-              onClick={(e) => handleLinkClick(e, part.href)}
               style={{
                 color: 'inherit',
                 textDecoration: 'underline',
@@ -77,7 +70,7 @@ function LinkedText({
               title={`${part.name} (${part.role})`}
             >
               {part.text}
-            </a>
+            </Link>
           );
         } else {
           return part.toString();

@@ -1,5 +1,5 @@
 // Horror & Suspense theme page
-import ThemePage from '../components/ThemePage';
+import ThemePage from '../../components/ThemePage';
 
 export default function HorrorSuspensePage() {
   const customStyles = {

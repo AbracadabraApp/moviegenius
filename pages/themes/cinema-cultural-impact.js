@@ -1,5 +1,5 @@
 // Hollywood Transformed theme page
-import ThemePage from '../components/ThemePage';
+import ThemePage from '../../components/ThemePage';
 
 export default function CinemaCulturalImpactPage() {
   const customStyles = {
