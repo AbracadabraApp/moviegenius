@@ -32,8 +32,11 @@ export default function NavBar() {
       // Theme pages and episode pages should be considered part of Genius
       if (item.route === '/genius') {
         const pathname = router.pathname.slice(1); // Remove leading slash
-        // Check if it's a theme page (e.g., "film-noir") 
-        if (themeKeys.includes(pathname)) return true;
+        // Check if it's a theme page (e.g., "themes/film-noir")
+        if (pathname.startsWith('themes/')) {
+          const themePart = pathname.split('/')[1]; // Get theme after "themes/"
+          if (themeKeys.includes(themePart)) return true;
+        }
         // Check if it's an episode page (e.g., "film-noir/urban-anxiety")
         const themePart = pathname.split('/')[0];
         if (themeKeys.includes(themePart)) return true;
