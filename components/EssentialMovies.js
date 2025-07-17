@@ -286,6 +286,10 @@ export default function EssentialMovies({ theme }) {
               key={episode.id} 
               href={routeHelpers.getEpisodeRoute(theme, episode.id)}
               style={{textDecoration: 'none'}}
+              onClick={(e) => {
+                e.preventDefault();
+                router.push(routeHelpers.getEpisodeRoute(theme, episode.id));
+              }}
             >
               <div style={{...styles.episodeButton, cursor: 'pointer'}}>
                 <div style={styles.episodeTitle}>{episode.title}</div>

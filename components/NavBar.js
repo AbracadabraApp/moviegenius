@@ -11,6 +11,11 @@ try {
   const routes = require('../lib/routes');
   navItems = routes.navItems || [];
   routeValidation = routes.routeValidation || { shouldShowGeniusActive: () => false };
+  
+  // Validate routes are properly loaded
+  if (!Array.isArray(navItems) || navItems.length === 0) {
+    throw new Error('navItems is empty or invalid');
+  }
 } catch (error) {
   console.error('NavBar: Failed to load routes, using fallbacks:', error);
   navItems = [
@@ -40,6 +45,9 @@ export default function NavBar() {
   // Safe active state detection with error handling
   const activeLabel = (() => {
     try {
+      // Wait for router to be ready
+      if (!router.isReady) return null;
+      
       return navItems.find(
         (item) => {
           if (item.route === router.pathname) return true;
@@ -81,7 +89,15 @@ export default function NavBar() {
           }
           
           return (
-            <Link key={item.label} href={item.route} style={{textDecoration: 'none'}}>
+            <Link 
+              key={item.label} 
+              href={item.route} 
+              style={{textDecoration: 'none'}}
+              onClick={(e) => {
+                e.preventDefault();
+                router.push(item.route);
+              }}
+            >
               <div
                 style={{
                   ...styles.navItem,

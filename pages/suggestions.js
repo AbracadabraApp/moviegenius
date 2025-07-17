@@ -186,15 +186,6 @@ export default function SuggestionsPage() {
                     }}>
                       ({movie.year})
                     </span>
-                    <span style={{
-                      fontSize: '10px',
-                      color: '#d4af37',
-                      fontWeight: '500',
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.5px',
-                    }}>
-                      {movie.theme}
-                    </span>
                   </div>
                   <div style={{
                     display: 'flex',

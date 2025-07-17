@@ -46,6 +46,10 @@ export default function EpisodeFooter({ currentTheme, currentEpisode }) {
                 key={episode.id}
                 href={routeHelpers.getEpisodeRoute(currentTheme, episode.id)}
                 style={styles.episodeButton}
+                onClick={(e) => {
+                  e.preventDefault();
+                  router.push(routeHelpers.getEpisodeRoute(currentTheme, episode.id));
+                }}
               >
                 <div style={styles.episodeTitle}>{episode.title}</div>
                 <div style={styles.episodeSubtitle}>{episode.subtitle}</div>
