@@ -21,7 +21,7 @@ export default function EpisodePage({ theme, episode, episodeData, themeData }) 
   // If router is still loading, show loading state
   if (router.isFallback) {
     return (
-      <PhoneFrame active="genius">
+      <PhoneFrame>
         <div style={styles.container}>
           <div style={styles.inputArea}>
             <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
@@ -36,7 +36,7 @@ export default function EpisodePage({ theme, episode, episodeData, themeData }) 
 
   if (loading) {
     return (
-      <PhoneFrame active="genius">
+      <PhoneFrame>
         <div style={styles.container}>
           <div style={styles.inputArea}>
             <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
@@ -51,7 +51,7 @@ export default function EpisodePage({ theme, episode, episodeData, themeData }) 
 
   if (error) {
     return (
-      <PhoneFrame active="genius">
+      <PhoneFrame>
         <div style={styles.container}>
           <div style={styles.inputArea}>
             <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
@@ -66,7 +66,7 @@ export default function EpisodePage({ theme, episode, episodeData, themeData }) 
 
   if (!episodeData) {
     return (
-      <PhoneFrame active="genius">
+      <PhoneFrame>
         <div style={styles.container}>
           <div style={styles.inputArea}>
             <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />

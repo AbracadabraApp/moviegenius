@@ -6,6 +6,7 @@
 
 import themeMapping from '../data/theme-episode-mapping.json';
 import Link from 'next/link';
+import { routeHelpers } from '../lib/routes';
 
 export default function EpisodeFooter({ currentTheme, currentEpisode }) {
   // Safety check for required props
@@ -43,7 +44,7 @@ export default function EpisodeFooter({ currentTheme, currentEpisode }) {
             {otherEpisodes.map((episode) => (
               <Link
                 key={episode.id}
-                href={`/${currentTheme}/${episode.id}`}
+                href={routeHelpers.getEpisodeRoute(currentTheme, episode.id)}
                 style={styles.episodeButton}
               >
                 <div style={styles.episodeTitle}>{episode.title}</div>
@@ -61,7 +62,7 @@ export default function EpisodeFooter({ currentTheme, currentEpisode }) {
           {exploreThemes.filter(theme => theme.slug !== currentTheme).map((theme) => (
             <Link
               key={theme.slug}
-              href={`/${theme.slug}`}
+              href={routeHelpers.getThemeRoute(theme.slug)}
               style={styles.themeButton}
             >
               {theme.name}

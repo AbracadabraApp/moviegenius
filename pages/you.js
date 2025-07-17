@@ -4,10 +4,12 @@ import SimpleSearch from '../components/SimpleSearch';
 import MediaCard from '../components/MediaCard';
 import CinematicProfile from '../components/CinematicProfile';
 import ThemeFooter from '../components/ThemeFooter';
-import { Check, Plus, Film, ChevronRight, Star, TrendingUp } from 'lucide-react';
+import { Check, Plus, Film, ChevronRight, Star, TrendingUp, CirclePlus, CheckCircle } from 'lucide-react';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import { colors, spacing, typography, borderRadius, shadows, components } from '../lib/design-tokens';
+import { getThemeRepresentatives } from '../data/essential-movies';
+import { routeHelpers } from '../lib/routes';
 
 export default function YouPage() {
   const router = useRouter();
@@ -59,291 +61,442 @@ export default function YouPage() {
 
   // Render cinematic profile section
   const renderCinematicProfileSection = () => {
-    if (!hasContent) {
-      return (
-        <div style={{
-          textAlign: 'center',
-          padding: spacing[8],
-          color: colors.gray[500],
-          marginBottom: spacing[6],
-        }}>
-          <Film size={48} color={colors.gray[300]} style={{ margin: '0 auto 16px' }} />
-          <p style={{
-            fontSize: typography.fontSize.lg,
-            fontWeight: typography.fontWeight.medium,
-            margin: 0,
-            marginBottom: spacing[2],
-            fontFamily: 'system-ui, -apple-system, sans-serif',
-          }}>
-            Start building your profile
-          </p>
-          <p style={{
-            fontSize: typography.fontSize.sm,
-            margin: 0,
-            lineHeight: typography.lineHeight.relaxed,
-            fontFamily: 'system-ui, -apple-system, sans-serif',
-          }}>
-            Mark movies as seen to discover your cinematic DNA
-          </p>
-        </div>
-      );
-    }
-
     return (
       <div style={{
-        marginBottom: spacing[6],
+        marginBottom: spacing[3],
       }}>
-        {/* Header with profile and seen count - no box */}
-        <div style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          marginBottom: spacing[4],
-          padding: `0 ${spacing[4]}`,
-        }}>
-          <div style={{ flex: 1 }}>
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: spacing[2],
-              flexWrap: 'nowrap',
-            }}>
-              <Check size={16} color={components.youPage.goldAccent} strokeWidth={2.5} />
-              <span style={{
-                fontSize: typography.fontSize.sm,
-                color: colors.gray[600],
-                fontFamily: 'system-ui, -apple-system, sans-serif',
-                whiteSpace: 'nowrap',
+        {/* Header with profile and seen count */}
+        {hasContent && (
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            marginBottom: spacing[2],
+            padding: `0 ${spacing[4]}`,
+          }}>
+            <div style={{ flex: 1 }}>
+              <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '4px',
+                flexWrap: 'nowrap',
               }}>
-                based on
-              </span>
+                <Check size={16} color={components.youPage.goldAccent} strokeWidth={2.5} />
+                <span style={{
+                  fontSize: typography.fontSize.base,
+                  fontWeight: typography.fontWeight.normal,
+                  color: colors.gray[700],
+                  fontFamily: 'system-ui, -apple-system, sans-serif',
+                  whiteSpace: 'nowrap',
+                }}>
+                  based on
+                </span>
+                <button
+                  onClick={() => router.push('/movies')}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    cursor: 'pointer',
+                    fontSize: typography.fontSize.base,
+                    color: components.youPage.goldAccent,
+                    fontWeight: typography.fontWeight.normal,
+                    fontFamily: 'system-ui, -apple-system, sans-serif',
+                    textDecoration: 'underline',
+                    whiteSpace: 'nowrap',
+                  }}
+                >
+                  {heartedMovies.length} {heartedMovies.length === 1 ? 'film' : 'films'}
+                </button>
+                <button
+                  onClick={() => router.push('/suggestions')}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    cursor: 'pointer',
+                    fontSize: typography.fontSize.base,
+                    color: colors.gray[500],
+                    fontWeight: typography.fontWeight.light,
+                    fontFamily: 'system-ui, -apple-system, sans-serif',
+                    textDecoration: 'underline',
+                    whiteSpace: 'nowrap',
+                  }}
+                >
+                  (add more)
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Cinematic Profile */}
+        {hasContent ? (
+          <div style={{
+            backgroundColor: colors.gold[100],
+            borderRadius: borderRadius.md,
+            padding: spacing[4],
+            border: `1px solid ${colors.gold[200]}`,
+            margin: `0 ${spacing[4]}`,
+          }}>
+            <CinematicProfile 
+              userData={{
+                heartedMovies,
+                bookmarkedMovies,
+                selectedPlatforms
+              }}
+              profileType={activeProfileType}
+              minimal={true}
+            />
+          </div>
+        ) : (
+          <div style={{
+            textAlign: 'center',
+            padding: `${spacing[4]} ${spacing[4]}`,
+            color: colors.gray[700],
+          }}>
+            <Film size={48} color={colors.gray[300]} style={{ margin: '0 auto 16px' }} />
+            <div style={{
+              fontSize: typography.fontSize.base,
+              fontWeight: typography.fontWeight.normal,
+              margin: 0,
+              fontFamily: 'system-ui, -apple-system, sans-serif',
+              textAlign: 'center',
+              lineHeight: typography.lineHeight.relaxed,
+            }}>
+              <div style={{ marginBottom: '8px' }}>Track the movies you've seen.</div>
+              <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '4px',
+                marginBottom: '8px',
+              }}>
+                <span>Use</span>
+                <CheckCircle size={16} color={colors.gray[600]} />
+                <span>to add films to your "seen" list.</span>
+              </div>
               <button
-                onClick={() => router.push('/movies')}
+                onClick={() => router.push('/suggestions')}
                 style={{
                   background: 'none',
                   border: 'none',
                   cursor: 'pointer',
-                  fontSize: typography.fontSize.sm,
-                  color: components.youPage.goldAccent,
-                  fontWeight: typography.fontWeight.medium,
+                  fontSize: '14px',
+                  color: colors.gray[500],
+                  fontWeight: typography.fontWeight.light,
                   fontFamily: 'system-ui, -apple-system, sans-serif',
                   textDecoration: 'underline',
-                  whiteSpace: 'nowrap',
+                  textDecorationColor: colors.gray[500],
+                  textDecorationThickness: '1px',
+                  textUnderlineOffset: '2px',
                 }}
               >
-                {heartedMovies.length} films
-              </button>
-              <button
-                onClick={() => router.push('/essential-movies')}
-                style={{
-                  background: 'none',
-                  border: 'none',
-                  cursor: 'pointer',
-                  fontSize: typography.fontSize.sm,
-                  color: components.youPage.goldAccent,
-                  fontWeight: typography.fontWeight.medium,
-                  fontFamily: 'system-ui, -apple-system, sans-serif',
-                  textDecoration: 'underline',
-                  whiteSpace: 'nowrap',
-                }}
-              >
-                (add more)
+                Suggestions
               </button>
             </div>
           </div>
-        </div>
-
-        {/* Cinematic Profile - Gold highlight box */}
-        <div style={{
-          backgroundColor: colors.gold[100],
-          borderRadius: borderRadius.md,
-          padding: spacing[4],
-          border: `1px solid ${colors.gold[200]}`,
-          margin: `0 ${spacing[4]}`,
-        }}>
-          <CinematicProfile 
-            userData={{
-              heartedMovies,
-              bookmarkedMovies,
-              selectedPlatforms
-            }}
-            profileType={activeProfileType}
-            minimal={true}
-          />
-        </div>
+        )}
       </div>
     );
   };
 
   // Render watchlist section (primary content)
   const renderWatchlistSection = () => {
-    if (bookmarkedMovies.length === 0) {
-      return (
-        <div style={{
-          marginBottom: spacing[6],
-          textAlign: 'center',
-          padding: spacing[6],
-        }}>
-          <h2 style={{
-            fontSize: typography.fontSize['2xl'],
-            fontWeight: typography.fontWeight.bold,
-            color: colors.gray[900],
-            margin: 0,
-            marginBottom: spacing[4],
-            fontFamily: 'system-ui, -apple-system, sans-serif',
-            padding: `0 ${spacing[4]}`,
-          }}>
-            Movies to Watch
-          </h2>
-          <div style={{
-            height: '2px',
-            backgroundColor: colors.gold[300],
-            marginBottom: spacing[4],
-          }} />
-          <Plus size={48} color={colors.gray[300]} style={{ margin: '0 auto 16px' }} />
-          <p style={{
-            fontSize: typography.fontSize.base,
-            color: colors.gray[600],
-            margin: 0,
-            fontFamily: 'system-ui, -apple-system, sans-serif',
-          }}>
-            Add movies to your watchlist to see them here
-          </p>
-        </div>
-      );
-    }
-
     return (
       <div style={{
-        marginBottom: spacing[6],
+        marginBottom: spacing[3],
       }}>
-        <h2 style={{
-          fontSize: typography.fontSize['2xl'],
-          fontWeight: typography.fontWeight.bold,
-          color: colors.gray[900],
-          margin: 0,
-          marginBottom: spacing[4],
-          fontFamily: 'system-ui, -apple-system, sans-serif',
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          marginBottom: spacing[2],
+          gap: '16px',
           padding: `0 ${spacing[4]}`,
         }}>
-          Movies to Watch
-        </h2>
-        
-        <div style={{
-          height: '2px',
-          backgroundColor: colors.gold[300],
-          marginBottom: spacing[4],
-        }} />
-        
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: spacing[4],
-          padding: `0 ${spacing[4]}`,
-        }}>
-          {bookmarkedMovies.slice(0, 4).map((movie) => (
-            <div key={`${movie.tmdb_id || movie.id}-watchlist`} style={{
-              aspectRatio: '2/3',
-              borderRadius: borderRadius.md,
-              overflow: 'hidden',
-              backgroundColor: colors.gray[100],
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}>
-              {movie.poster ? (
-                <img 
-                  src={movie.poster} 
-                  alt={movie.title}
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover',
-                  }}
-                />
-              ) : (
-                <Film size={32} color={colors.gray[400]} />
-              )}
-            </div>
-          ))}
+          <div style={{
+            flex: 1,
+            height: '1px',
+            background: 'linear-gradient(90deg, transparent, #FFD700, transparent)',
+          }} />
+          <span style={{
+            fontSize: '12px',
+            fontWeight: '600',
+            textTransform: 'uppercase',
+            letterSpacing: '1px',
+            color: '#d4af37',
+            fontFamily: 'system-ui, -apple-system, sans-serif',
+          }}>
+            Movies to Watch
+          </span>
+          <div style={{
+            flex: 1,
+            height: '1px',
+            background: 'linear-gradient(90deg, transparent, #FFD700, transparent)',
+          }} />
         </div>
+        
+        {bookmarkedMovies.length > 0 ? (
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr 1fr',
+            gap: spacing[4],
+            padding: `0 ${spacing[4]}`,
+          }}>
+            {bookmarkedMovies.slice(0, 4).map((movie) => (
+              <div key={`${movie.tmdb_id || movie.id}-watchlist`} style={{
+                aspectRatio: '2/3',
+                borderRadius: borderRadius.md,
+                overflow: 'hidden',
+                backgroundColor: colors.gray[100],
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}>
+                {movie.poster ? (
+                  <img 
+                    src={movie.poster} 
+                    alt={movie.title}
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                    }}
+                  />
+                ) : (
+                  <Film size={32} color={colors.gray[400]} />
+                )}
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div style={{
+            textAlign: 'center',
+            padding: `${spacing[4]} ${spacing[4]}`,
+            color: colors.gray[700],
+          }}>
+            <Plus size={48} color={colors.gray[300]} style={{ margin: '0 auto 8px' }} />
+            <div style={{
+              fontSize: typography.fontSize.base,
+              fontWeight: typography.fontWeight.normal,
+              margin: 0,
+              fontFamily: 'system-ui, -apple-system, sans-serif',
+              textAlign: 'center',
+              lineHeight: typography.lineHeight.relaxed,
+            }}>
+              <div>Track the movies you want to watch.</div>
+              <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '4px',
+                marginTop: '4px',
+                marginBottom: '8px',
+              }}>
+                <span>Use</span>
+                <CirclePlus size={16} color={colors.gray[600]} />
+                <span>to add them to your "watch" list.</span>
+              </div>
+              <button
+                onClick={() => router.push('/suggestions')}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  cursor: 'pointer',
+                  fontSize: '14px',
+                  color: colors.gray[500],
+                  fontWeight: typography.fontWeight.light,
+                  fontFamily: 'system-ui, -apple-system, sans-serif',
+                  textDecoration: 'underline',
+                  textDecorationColor: colors.gray[500],
+                  textDecorationThickness: '1px',
+                  textUnderlineOffset: '2px',
+                }}
+              >
+                Suggestions
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     );
   };
 
   // Render suggestions section (from mockup)
   const renderSuggestionsSection = () => {
-    // Mock suggestions data - in real app this would come from API
-    const suggestions = [
-      { title: 'Consider', movie: 'The Great Escape', year: '1956', status: 'Seen' },
-      { title: 'Enjoy', movie: 'National Treasure', year: '1995', status: 'Seen' },
-      { title: 'Go Deep', movie: 'Blue', year: '1990', status: 'Seen' },
-    ];
+    // Get one representative movie from each theme
+    const themeRepresentatives = getThemeRepresentatives();
+    const suggestions = themeRepresentatives.map(movie => ({
+      title: movie.title,
+      year: movie.year.toString(),
+      tmdbId: movie.tmdb_id
+    }));
 
     return (
       <div style={{
-        marginBottom: spacing[6],
+        marginBottom: spacing[3],
       }}>
-        <h2 style={{
-          fontSize: typography.fontSize['2xl'],
-          fontWeight: typography.fontWeight.bold,
-          color: colors.gray[900],
-          margin: 0,
-          marginBottom: spacing[4],
-          fontFamily: 'system-ui, -apple-system, sans-serif',
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          marginBottom: spacing[2],
+          gap: '16px',
           padding: `0 ${spacing[4]}`,
         }}>
-          Suggestions
-        </h2>
-        
-        <div style={{
-          height: '2px',
-          backgroundColor: colors.gold[300],
-          marginBottom: spacing[4],
-        }} />
+          <div style={{
+            flex: 1,
+            height: '1px',
+            background: 'linear-gradient(90deg, transparent, #FFD700, transparent)',
+          }} />
+          <span style={{
+            fontSize: '12px',
+            fontWeight: '600',
+            textTransform: 'uppercase',
+            letterSpacing: '1px',
+            color: '#d4af37',
+            fontFamily: 'system-ui, -apple-system, sans-serif',
+          }}>
+            Suggestions
+          </span>
+          <div style={{
+            flex: 1,
+            height: '1px',
+            background: 'linear-gradient(90deg, transparent, #FFD700, transparent)',
+          }} />
+        </div>
         
         <div style={{
           display: 'flex',
           flexDirection: 'column',
-          gap: spacing[3],
+          gap: '2px',
           padding: `0 ${spacing[4]}`,
         }}>
           {suggestions.map((suggestion, index) => (
             <div key={index} style={{
               display: 'flex',
-              alignItems: 'center',
               justifyContent: 'space-between',
-              padding: spacing[2],
+              alignItems: 'center',
+              padding: '4px 0',
             }}>
               <div style={{
                 display: 'flex',
-                alignItems: 'center',
-                gap: spacing[2],
+                alignItems: 'baseline',
+                flex: 1,
+                gap: '4px',
               }}>
-                <Check size={16} color={components.youPage.goldAccent} strokeWidth={2.5} />
-                <span style={{
-                  fontSize: typography.fontSize.sm,
-                  color: colors.gray[900],
-                  fontFamily: 'system-ui, -apple-system, sans-serif',
-                }}>
-                  {suggestion.title}:
+                <span
+                  onClick={() => router.push(routeHelpers.getMovieRoute(suggestion.tmdbId))}
+                  style={{
+                    fontSize: '14px',
+                    color: '#374151',
+                    textDecoration: 'underline',
+                    textDecorationColor: '#d4af37',
+                    textDecorationThickness: '1px',
+                    textUnderlineOffset: '2px',
+                    fontWeight: '500',
+                    cursor: 'pointer',
+                    transition: 'all 0.2s ease',
+                  }}
+                >
+                  {suggestion.title}
                 </span>
-                <span className="movie-title" style={{
-                  fontSize: typography.fontSize.sm,
-                  fontFamily: 'system-ui, -apple-system, sans-serif',
+                <span style={{
+                  fontSize: '12px',
+                  color: '#9ca3af',
+                  fontWeight: '300',
                 }}>
-                  {suggestion.movie} ({suggestion.year})
+                  ({suggestion.year})
                 </span>
               </div>
-              <span style={{
-                fontSize: typography.fontSize.xs,
-                color: colors.gray[500],
-                fontFamily: 'system-ui, -apple-system, sans-serif',
+              <div style={{
+                display: 'flex',
+                flexDirection: 'row',
+                gap: '6px',
+                alignItems: 'center',
               }}>
-                {suggestion.status}
-              </span>
+                <button style={{
+                  background: 'none',
+                  border: 'none',
+                  cursor: 'pointer',
+                  padding: '2px 4px',
+                  borderRadius: '4px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  transition: 'background-color 0.2s ease',
+                }}>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '3px',
+                  }}>
+                    <Check size={16} color="#9ca3af" strokeWidth={1.5} />
+                    <span style={{
+                      fontSize: '12px',
+                      lineHeight: '1',
+                      userSelect: 'none',
+                      color: '#9ca3af',
+                      fontWeight: '400',
+                    }}>
+                      Seen
+                    </span>
+                  </div>
+                </button>
+                <button style={{
+                  background: 'none',
+                  border: 'none',
+                  cursor: 'pointer',
+                  padding: '2px 4px',
+                  borderRadius: '4px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  transition: 'background-color 0.2s ease',
+                }}>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '3px',
+                  }}>
+                    <Plus size={16} color="#9ca3af" />
+                    <span style={{
+                      fontSize: '12px',
+                      lineHeight: '1',
+                      userSelect: 'none',
+                      color: '#9ca3af',
+                      fontWeight: '400',
+                    }}>
+                      Add
+                    </span>
+                  </div>
+                </button>
+              </div>
             </div>
           ))}
+        </div>
+        
+        {/* More suggestions link */}
+        <div style={{
+          display: 'flex',
+          justifyContent: 'flex-end',
+          padding: `8px ${spacing[4]} 0`,
+        }}>
+          <button
+            onClick={() => router.push('/suggestions')}
+            style={{
+              background: 'none',
+              border: 'none',
+              cursor: 'pointer',
+              fontSize: '12px',
+              color: colors.gray[500],
+              fontWeight: typography.fontWeight.light,
+              fontFamily: 'system-ui, -apple-system, sans-serif',
+              textDecoration: 'underline',
+              textDecorationColor: colors.gray[500],
+              textDecorationThickness: '1px',
+              textUnderlineOffset: '2px',
+            }}
+          >
+            More Suggestions
+          </button>
         </div>
       </div>
     );
@@ -352,26 +505,8 @@ export default function YouPage() {
   // Render discovery section
   const renderDiscoverySection = () => (
     <div style={{
-      marginBottom: spacing[6],
+      marginBottom: spacing[2],
     }}>
-      <h2 style={{
-        fontSize: typography.fontSize['2xl'],
-        fontWeight: typography.fontWeight.bold,
-        color: colors.gray[900],
-        margin: 0,
-        marginBottom: spacing[4],
-        fontFamily: 'system-ui, -apple-system, sans-serif',
-        padding: `0 ${spacing[4]}`,
-      }}>
-        Discover More
-      </h2>
-      
-      <div style={{
-        height: '2px',
-        backgroundColor: colors.gold[300],
-        marginBottom: spacing[4],
-      }} />
-      
       <ThemeFooter />
     </div>
   );
@@ -398,8 +533,38 @@ export default function YouPage() {
         {/* Main Content */}
         <div style={{
           padding: spacing[4],
-          paddingTop: spacing[6],
+          paddingTop: spacing[4],
         }}>
+          {/* Cinematic Profile Header */}
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            marginBottom: spacing[3],
+            gap: '16px',
+            padding: `0 ${spacing[4]}`,
+          }}>
+            <div style={{
+              flex: 1,
+              height: '1px',
+              background: 'linear-gradient(90deg, transparent, #FFD700, transparent)',
+            }} />
+            <span style={{
+              fontSize: '12px',
+              fontWeight: '600',
+              textTransform: 'uppercase',
+              letterSpacing: '1px',
+              color: '#d4af37',
+              fontFamily: 'system-ui, -apple-system, sans-serif',
+            }}>
+              Cinematic Profile
+            </span>
+            <div style={{
+              flex: 1,
+              height: '1px',
+              background: 'linear-gradient(90deg, transparent, #FFD700, transparent)',
+            }} />
+          </div>
+          
           {renderCinematicProfileSection()}
           {renderWatchlistSection()}
           {renderSuggestionsSection()}

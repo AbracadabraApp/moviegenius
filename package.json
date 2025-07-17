@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rm -rf .next && rm -rf node_modules/.cache",
     "fix:cache": "rm -rf .next && npm run dev",
-    "fix:cache:deep": "rm -rf .next && rm -rf node_modules/.cache && npm run dev", 
+    "fix:cache:deep": "rm -rf .next && rm -rf node_modules/.cache && npm run dev",
     "fix:cache:nuclear": "rm -rf .next && rm -rf node_modules && npm install && npm run dev",
     "dev": "next dev",
     "build": "next build",

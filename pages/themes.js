@@ -38,7 +38,7 @@ export default function ThemesPage() {
               <h3 style={styles.themeTitle}>{theme.title}</h3>
               <p style={styles.themeDescription}>{theme.description}</p>
               <div style={styles.episodeCount}>
-                {theme.episodes.length} episodes
+                {theme.episodes.length} {theme.episodes.length === 1 ? 'episode' : 'episodes'}
               </div>
             </div>
           </Link>
