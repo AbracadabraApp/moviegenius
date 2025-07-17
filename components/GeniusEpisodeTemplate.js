@@ -10,6 +10,7 @@ import ExploreFurtherSection from './ExploreFurtherSection';
 import FeaturedFilmsSection from './FeaturedFilmsSection';
 import { getCachedOtherEpisodes, getCachedOtherSeries } from '../lib/genius-config-cache';
 import { createOptimizedScrollHandler } from '../lib/scroll-throttle';
+import { themeLinks } from '../lib/routes';
 
 export default function GeniusEpisodeTemplate({ 
   episodeData, 
@@ -73,25 +74,12 @@ export default function GeniusEpisodeTemplate({
   const handleThemeClick = useCallback((theme) => {
     console.log('Theme clicked:', theme);
     
-    // Map themes to theme page routes
-    const themeRoutes = {
-      'Film Noir': '/themes/film-noir',
-      'Horror & Suspense': '/themes/horror-suspense',
-      'Comedy': '/themes/comedy-through-time',
-      'Women Directors': '/themes/women-directors',
-      'International Masters': '/themes/world-cinema',
-      'Acclaimed Directors': '/themes/acclaimed-directors',
-      'Movements in Film': '/themes/avant-garde-film',
-      'The Magic of Moviemaking': '/themes/magic-of-moviemaking',
-      'Cinema Through the Decades': '/themes/cinema-through-decades',
-      'Hollywood Transformed': '/themes/cinema-cultural-impact'
-    };
+    // Find theme in centralized themeLinks
+    const themeLink = themeLinks.find(t => t.label === theme);
     
-    const targetRoute = themeRoutes[theme];
-    
-    if (targetRoute) {
-      console.log('Navigating to:', targetRoute);
-      router.push(targetRoute);
+    if (themeLink) {
+      console.log('Navigating to:', themeLink.href);
+      router.push(themeLink.href);
     } else {
       console.warn('No route found for theme:', theme);
       router.push('/genius');
