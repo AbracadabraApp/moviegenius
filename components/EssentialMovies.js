@@ -5,6 +5,7 @@ import { Check, Plus } from 'lucide-react';
 import { FavoritesManager } from './FavoritesManager';
 import Link from 'next/link';
 import themeMapping from '../data/theme-episode-mapping.json';
+import { routeHelpers } from '../lib/routes';
 
 export default function EssentialMovies({ theme }) {
   const router = useRouter();
@@ -191,7 +192,7 @@ export default function EssentialMovies({ theme }) {
         {currentMovies.map((movie) => (
           <div key={movie.tmdb_id} style={styles.movieRow}>
             <div style={styles.movieTitleRow}>
-              <Link href={`/movie/${movie.tmdb_id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+              <Link href={routeHelpers.getMovieRoute(movie.tmdb_id)} style={{ textDecoration: 'none', color: 'inherit' }}>
                 <span style={styles.movieTitle}>
                   {movie.title}
                 </span>
@@ -266,7 +267,7 @@ export default function EssentialMovies({ theme }) {
           {episodes.map((episode) => (
             <Link 
               key={episode.id} 
-              href={`/${theme}/${episode.id}`}
+              href={routeHelpers.getEpisodeRoute(theme, episode.id)}
               style={{textDecoration: 'none'}}
             >
               <div style={{...styles.episodeButton, cursor: 'pointer'}}>

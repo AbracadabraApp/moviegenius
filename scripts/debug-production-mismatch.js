@@ -309,7 +309,7 @@ class ProductionMismatchDebugger {
     // Critical page comparisons
     await this.compareEndpoint('/', 'Homepage');
     await this.compareEndpoint('/api/health', 'Health Check');
-    await this.compareEndpoint('/film-noir', 'Film Noir Theme Page');
+    await this.compareEndpoint('/themes/film-noir', 'Film Noir Theme Page');
     await this.compareEndpoint('/genius/1/1/1', 'Episode Page');
     await this.compareEndpoint('/movie/238', 'Movie Detail Page');
 

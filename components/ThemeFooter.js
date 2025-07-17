@@ -5,24 +5,63 @@
  */
 
 import Link from 'next/link';
+import { useState } from 'react';
+import { themeLinks } from '../lib/routes';
 
 export default function ThemeFooter() {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
   return (
     <div style={styles.footer}>
       <div style={styles.section}>
-        <h3 style={styles.sectionTitle}>Explore Cinema Themes</h3>
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          marginBottom: '16px',
+          gap: '16px',
+          padding: '0 16px',
+        }}>
+          <div style={{
+            flex: 1,
+            height: '1px',
+            background: 'linear-gradient(90deg, transparent, #FFD700, transparent)',
+          }} />
+          <span style={{
+            fontSize: '12px',
+            fontWeight: '600',
+            textTransform: 'uppercase',
+            letterSpacing: '1px',
+            color: '#d4af37',
+            fontFamily: 'system-ui, -apple-system, sans-serif',
+          }}>
+            Explore Cinema Themes
+          </span>
+          <div style={{
+            flex: 1,
+            height: '1px',
+            background: 'linear-gradient(90deg, transparent, #FFD700, transparent)',
+          }} />
+        </div>
         
         <div style={styles.themeGrid}>
-          <Link href="/themes/film-noir" style={styles.themeButton}>Film Noir</Link>
-          <Link href="/themes/horror-suspense" style={styles.themeButton}>Horror & Suspense</Link>
-          <Link href="/themes/comedy-through-time" style={styles.themeButton}>Comedy</Link>
-          <Link href="/themes/women-directors" style={styles.themeButton}>Women Directors</Link>
-          <Link href="/themes/world-cinema" style={styles.themeButton}>International Masters</Link>
-          <Link href="/themes/acclaimed-directors" style={styles.themeButton}>Acclaimed Directors</Link>
-          <Link href="/themes/avant-garde-film" style={styles.themeButton}>Movements in Film</Link>
-          <Link href="/themes/magic-of-moviemaking" style={styles.themeButton}>The Magic of Moviemaking</Link>
-          <Link href="/themes/cinema-through-decades" style={styles.themeButton}>Cinema Through the Decades</Link>
-          <Link href="/themes/cinema-cultural-impact" style={styles.themeButton}>Hollywood Transformed</Link>
+          {themeLinks.map((theme, index) => (
+            <Link 
+              key={theme.href}
+              href={theme.href}
+              style={{ textDecoration: 'none' }}
+            >
+              <div
+                style={{
+                  ...styles.themeButton,
+                  ...(hoveredIndex === index ? styles.themeButtonHover : {})
+                }}
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
+              >
+                {theme.label}
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </div>
@@ -32,7 +71,6 @@ export default function ThemeFooter() {
 const styles = {
   footer: {
     backgroundColor: '#ffffff',
-    borderTop: '3px solid #d4af37',
     padding: '0px 20px 20px',
     marginTop: '0px',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
@@ -78,11 +116,13 @@ const styles = {
     backgroundColor: '#ffffff',
     color: '#000000',
     transition: 'all 0.2s ease',
-    ':hover': {
-      backgroundColor: '#d4af37',
-      color: '#ffffff',
-      transform: 'translateY(-1px)',
-    },
+    cursor: 'pointer',
+  },
+
+  themeButtonHover: {
+    backgroundColor: '#d4af37',
+    color: '#ffffff',
+    transform: 'translateY(-1px)',
   },
 
 };

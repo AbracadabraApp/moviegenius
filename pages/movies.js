@@ -28,7 +28,7 @@ export default function MoviesPage() {
 
 
   return (
-    <PhoneFrame active="movies">
+    <PhoneFrame>
       <div style={styles.container}>
         {/* Simple search header */}
         <div style={styles.header}>
