@@ -8,6 +8,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import PhoneFrame from '../components/PhoneFrame';
 import { Play, Plus, Heart, ChevronRight, Star, Book } from 'lucide-react';
+import { themeLinks } from '../lib/routes';
 
 export default function HomePage() {
   const router = useRouter();
@@ -142,32 +143,19 @@ export default function HomePage() {
     'Shudder'
   ];
 
-  // Handle theme selection and navigation
+  // Handle theme selection and navigation using centralized routes
   const handleThemeClick = (theme) => {
     console.log('Theme clicked:', theme);
     
-    // Map themes to simple page routes
-    const themeRoutes = {
-      'Film Noir': '/film-noir',
-      'Horror & Suspense': '/horror-suspense',
-      'Comedy': '/comedy-through-time',
-      'Women Directors': '/women-directors',
-      'International Masters': '/world-cinema',
-      'Acclaimed Directors': '/acclaimed-directors',
-      'Movements in Film': '/avant-garde-film',
-      'The Magic of Moviemaking': '/magic-of-moviemaking',
-      'Cinema Through the Decades': '/cinema-through-decades',
-      'Hollywood Transformed': '/cinema-cultural-impact'
-    };
+    // Find theme in centralized themeLinks
+    const themeLink = themeLinks.find(t => t.label === theme);
     
-    const targetRoute = themeRoutes[theme];
-    
-    if (targetRoute) {
-      console.log('Navigating to:', targetRoute);
-      router.push(targetRoute);
+    if (themeLink) {
+      console.log('Navigating to:', themeLink.href);
+      router.push(themeLink.href);
     } else {
       console.error('No route found for theme:', theme);
-      // Could show an error message or redirect to a sensible default
+      router.push('/genius'); // Fallback to genius page
     }
   };
 
@@ -206,7 +194,7 @@ export default function HomePage() {
   };
 
   return (
-    <PhoneFrame active="genius">
+    <PhoneFrame>
       <div style={styles.container}>
         
         {/* Modal System */}

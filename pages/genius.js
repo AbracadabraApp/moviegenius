@@ -13,6 +13,7 @@ import { useRouter } from 'next/router';
 import PhoneFrame from '../components/PhoneFrame';
 import SimpleSearch from '../components/SimpleSearch';
 import Link from 'next/link';
+import { themeLinks } from '../lib/routes';
 
 export default function GeniusPage() {
   const router = useRouter();
@@ -26,19 +27,7 @@ export default function GeniusPage() {
     }
   }, []);
 
-  // All 10 education themes with direct navigation
-  const allEducationThemes = [
-    'Film Noir',
-    'Horror & Suspense', 
-    'Comedy',
-    'Women Directors',
-    'International Masters',
-    'Acclaimed Directors',
-    'Movements in Film',
-    'The Magic of Moviemaking',
-    'Cinema Through the Decades',
-    'Hollywood Transformed'
-  ];
+  // Theme navigation now uses centralized themeLinks from lib/routes
 
 
 
@@ -55,7 +44,7 @@ export default function GeniusPage() {
   };
 
   return (
-    <PhoneFrame active="genius">
+    <PhoneFrame>
       <div style={styles.container}>
         {/* Search Section at Top */}
         <div style={styles.searchSection}>
@@ -90,31 +79,17 @@ export default function GeniusPage() {
           </div>
           
           <div style={styles.themeGrid}>
-            {allEducationThemes.map(theme => {
-              const themeRoutes = {
-                'Film Noir': '/themes/film-noir',
-                'Horror & Suspense': '/themes/horror-suspense', 
-                'Comedy': '/themes/comedy-through-time',
-                'Women Directors': '/themes/women-directors',
-                'International Masters': '/themes/world-cinema',
-                'Acclaimed Directors': '/themes/acclaimed-directors',
-                'Movements in Film': '/themes/avant-garde-film',
-                'The Magic of Moviemaking': '/themes/magic-of-moviemaking',
-                'Cinema Through the Decades': '/themes/cinema-through-decades',
-                'Hollywood Transformed': '/themes/cinema-cultural-impact'
-              };
-              return (
-                <Link 
-                  key={theme}
-                  href={themeRoutes[theme]}
-                  style={{textDecoration: 'none'}}
-                >
-                  <div style={{...styles.themeButton, cursor: 'pointer'}}>
-                    {theme}
-                  </div>
-                </Link>
-              );
-            })}
+            {themeLinks.map(themeLink => (
+              <Link 
+                key={themeLink.slug}
+                href={themeLink.href}
+                style={{textDecoration: 'none'}}
+              >
+                <div style={{...styles.themeButton, cursor: 'pointer'}}>
+                  {themeLink.label}
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
 

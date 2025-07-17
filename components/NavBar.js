@@ -5,6 +5,22 @@ import { Clapperboard, Sparkles, User } from 'lucide-react';
 import { shouldShowPhoneFrame } from '../lib/platform';
 import Link from 'next/link';
 
+// Safe imports with fallbacks
+let navItems, routeValidation;
+try {
+  const routes = require('../lib/routes');
+  navItems = routes.navItems || [];
+  routeValidation = routes.routeValidation || { shouldShowGeniusActive: () => false };
+} catch (error) {
+  console.error('NavBar: Failed to load routes, using fallbacks:', error);
+  navItems = [
+    { label: 'Movies', icon: 'Clapperboard', route: '/movies' },
+    { label: 'Genius', icon: 'Sparkles', route: '/genius' },
+    { label: 'You', icon: 'User', route: '/you' }
+  ];
+  routeValidation = { shouldShowGeniusActive: () => false };
+}
+
 export default function NavBar() {
   const router = useRouter();
   const [showFrame, setShowFrame] = useState(true); // Default to frame for SSR
@@ -14,36 +30,32 @@ export default function NavBar() {
     setShowFrame(shouldShowPhoneFrame());
   }, []);
 
-  const navItems = [
-    { label: 'Movies', icon: Clapperboard, route: '/movies' },
-    { label: 'Genius', icon: Sparkles, route: '/genius' },
-    { label: 'You', icon: User, route: '/you' },
-  ];
+  // Icon mapping for nav items
+  const iconMap = {
+    'Clapperboard': Clapperboard,
+    'Sparkles': Sparkles,
+    'User': User
+  };
 
-  const themeKeys = [
-    'film-noir', 'horror-suspense', 'comedy-through-time', 'women-directors',
-    'world-cinema', 'acclaimed-directors', 'avant-garde-film', 'magic-of-moviemaking',
-    'cinema-through-decades', 'cinema-cultural-impact'
-  ];
-
-  const activeLabel = navItems.find(
-    (item) => {
-      if (item.route === router.pathname) return true;
-      // Theme pages and episode pages should be considered part of Genius
-      if (item.route === '/genius') {
-        const pathname = router.pathname.slice(1); // Remove leading slash
-        // Check if it's a theme page (e.g., "themes/film-noir")
-        if (pathname.startsWith('themes/')) {
-          const themePart = pathname.split('/')[1]; // Get theme after "themes/"
-          if (themeKeys.includes(themePart)) return true;
+  // Safe active state detection with error handling
+  const activeLabel = (() => {
+    try {
+      return navItems.find(
+        (item) => {
+          if (item.route === router.pathname) return true;
+          // Use centralized logic for Genius active state
+          if (item.route === '/genius') {
+            return routeValidation.shouldShowGeniusActive(router.pathname);
+          }
+          return false;
         }
-        // Check if it's an episode page (e.g., "film-noir/urban-anxiety")
-        const themePart = pathname.split('/')[0];
-        if (themeKeys.includes(themePart)) return true;
-      }
-      return false;
+      )?.label;
+    } catch (error) {
+      console.warn('NavBar: Error determining active state:', error);
+      // Fallback: no active state
+      return null;
     }
-  )?.label;
+  })();
 
 
   return (
@@ -51,31 +63,55 @@ export default function NavBar() {
       ...styles.nav,
       ...(showFrame ? styles.navDesktop : styles.navMobile)
     }}>
-      {navItems.map(({ label, icon: Icon, route }) => {
-        const isActive = activeLabel === label;
-        return (
-          <Link key={label} href={route} style={{textDecoration: 'none'}}>
-            <div
-              style={{
-                ...styles.navItem,
-                opacity: isActive ? 1 : 0.6,
-                transform: isActive ? 'translateY(-2px)' : 'none',
-              }}
-            >
-            <Icon
-              size={28}
-              style={{
-                ...styles.icon,
-                transform: isActive ? 'scale(1.15)' : 'scale(1)',
-              }}
-            />
-            <span style={styles.labelContainer}>
-              <span style={styles.label}>{label}</span>
-              {isActive && <div style={styles.underline} />}
-            </span>
+      {navItems.map((item) => {
+        try {
+          const Icon = iconMap[item.icon];
+          const isActive = activeLabel === item.label;
+          
+          // Ensure Icon is valid before rendering
+          if (!Icon) {
+            console.error(`NavBar: Icon ${item.icon} not found in iconMap`);
+            return null;
+          }
+
+          // Ensure route is valid
+          if (!item.route || typeof item.route !== 'string') {
+            console.error(`NavBar: Invalid route for ${item.label}:`, item.route);
+            return null;
+          }
+          
+          return (
+            <Link key={item.label} href={item.route} style={{textDecoration: 'none'}}>
+              <div
+                style={{
+                  ...styles.navItem,
+                  opacity: isActive ? 1 : 0.6,
+                  transform: isActive ? 'translateY(-2px)' : 'none',
+                }}
+              >
+              <Icon
+                size={28}
+                style={{
+                  ...styles.icon,
+                  transform: isActive ? 'scale(1.15)' : 'scale(1)',
+                }}
+              />
+              <span style={styles.labelContainer}>
+                <span style={styles.label}>{item.label}</span>
+                {isActive && <div style={styles.underline} />}
+              </span>
+              </div>
+            </Link>
+          );
+        } catch (error) {
+          console.error(`NavBar: Error rendering nav item ${item.label}:`, error);
+          // Return fallback nav item without Link
+          return (
+            <div key={item.label} style={{...styles.navItem, opacity: 0.4}}>
+              <span style={styles.label}>{item.label}</span>
             </div>
-          </Link>
-        );
+          );
+        }
       })}
     </nav>
   );
