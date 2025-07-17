@@ -6,16 +6,39 @@ import EssentialMovies from './EssentialMovies';
 import ThemeFooter from './ThemeFooter';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import themeMapping from '../data/theme-episode-mapping.json';
+import { themeNavigation } from '../lib/routes';
 
 export default function ThemePage({ themeId, customStyles = {} }) {
   const router = useRouter();
   const [searchResults, setSearchResults] = useState([]);
   const [showSearchResults, setShowSearchResults] = useState(false);
-  const [episodes, setEpisodes] = useState([]);
   const [loading, setLoading] = useState(true);
   
-  const themeData = themeMapping.themes[themeId];
+  // Get theme data from centralized system
+  const themeData = themeNavigation.getThemeBySlug(themeId);
+  
+  // If not found by slug, try by label conversion
+  const getThemeDataByLabel = (themeId) => {
+    const labelMap = {
+      'film-noir': 'Film Noir',
+      'horror-suspense': 'Horror & Suspense', 
+      'comedy-through-time': 'Comedy',
+      'women-directors': 'Women Directors',
+      'world-cinema': 'International Masters',
+      'acclaimed-directors': 'Acclaimed Directors',
+      'avant-garde-film': 'Movements in Film',
+      'magic-of-moviemaking': 'The Magic of Moviemaking',
+      'cinema-through-decades': 'Cinema Through the Decades',
+      'cinema-cultural-impact': 'Hollywood Transformed'
+    };
+    
+    return {
+      title: labelMap[themeId] || 'Theme',
+      description: `Explore the world of ${labelMap[themeId] || 'cinema'}`
+    };
+  };
+  
+  const finalThemeData = themeData || getThemeDataByLabel(themeId);
 
   const handleSearchResults = (results) => {
     // With unified search, this won't be called since search redirects to /search page
@@ -34,13 +57,12 @@ export default function ThemePage({ themeId, customStyles = {} }) {
   // Episode navigation now uses direct HTML links
   
   useEffect(() => {
-    if (themeData) {
-      setEpisodes(themeData.episodes);
+    if (finalThemeData) {
       setLoading(false);
     }
-  }, [themeData]);
+  }, [finalThemeData]);
 
-  if (!themeData) {
+  if (!finalThemeData) {
     return (
       <PhoneFrame>
         <div style={styles.container}>
@@ -79,8 +101,8 @@ export default function ThemePage({ themeId, customStyles = {} }) {
               style={styles.heroVideo}
             />
             <div style={styles.heroTitleOverlay}>
-              <h1 style={styles.heroTitle}>{themeData.title}</h1>
-              <p style={styles.heroSubtitle}>{themeData.description}</p>
+              <h1 style={styles.heroTitle}>{finalThemeData.title}</h1>
+              <p style={styles.heroSubtitle}>{finalThemeData.description}</p>
             </div>
           </div>
         ) : customStyles.heroImage ? (
@@ -90,8 +112,8 @@ export default function ThemePage({ themeId, customStyles = {} }) {
               backgroundImage: `url(${customStyles.heroImage})`
             }}>
               <div style={styles.heroTitleOverlay}>
-                <h1 style={styles.heroTitle}>{themeData.title}</h1>
-                <p style={styles.heroSubtitle}>{themeData.description}</p>
+                <h1 style={styles.heroTitle}>{finalThemeData.title}</h1>
+                <p style={styles.heroSubtitle}>{finalThemeData.description}</p>
               </div>
             </div>
           </div>
@@ -102,8 +124,8 @@ export default function ThemePage({ themeId, customStyles = {} }) {
               background: 'linear-gradient(135deg, #1a1a1a 0%, #374151 100%)'
             }}>
               <div style={styles.heroTitleOverlay}>
-                <h1 style={styles.heroTitle}>{themeData.title}</h1>
-                <p style={styles.heroSubtitle}>{themeData.description}</p>
+                <h1 style={styles.heroTitle}>{finalThemeData.title}</h1>
+                <p style={styles.heroSubtitle}>{finalThemeData.description}</p>
               </div>
             </div>
           </div>

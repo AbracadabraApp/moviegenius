@@ -4,8 +4,7 @@ import { useRouter } from 'next/router';
 import { Check, Plus } from 'lucide-react';
 import { FavoritesManager } from './FavoritesManager';
 import Link from 'next/link';
-import themeMapping from '../data/theme-episode-mapping.json';
-import { routeHelpers } from '../lib/routes';
+import { routeHelpers, episodes } from '../lib/routes';
 
 export default function EssentialMovies({ theme }) {
   const router = useRouter();
@@ -87,8 +86,26 @@ export default function EssentialMovies({ theme }) {
   };
 
   const currentMovies = essentialMovies[theme] || [];
-  const themeData = themeMapping.themes[theme];
-  const episodes = themeData?.episodes || [];
+  
+  // Use centralized episode data instead of JSON file
+  const themeEpisodes = episodes.filter(ep => ep.theme === theme);
+  
+  // Get theme title from centralized system
+  const getThemeTitle = (themeSlug) => {
+    const themeTitles = {
+      'film-noir': 'Film Noir',
+      'horror-suspense': 'Horror & Suspense',
+      'comedy-through-time': 'Comedy',
+      'women-directors': 'Women Directors',
+      'world-cinema': 'International Masters',
+      'acclaimed-directors': 'Acclaimed Directors',
+      'avant-garde-film': 'Movements in Film',
+      'magic-of-moviemaking': 'The Magic of Moviemaking',
+      'cinema-through-decades': 'Cinema Through the Decades',
+      'cinema-cultural-impact': 'Hollywood Transformed'
+    };
+    return themeTitles[themeSlug] || 'Theme';
+  };
   const seenCount = heartedMovies.size;
   const totalCount = currentMovies.length;
   const progressPercent = totalCount > 0 ? (seenCount / totalCount) * 100 : 0;
@@ -257,14 +274,14 @@ export default function EssentialMovies({ theme }) {
       {/* Learn More Header */}
       <div style={styles.learnMoreHeader}>
         <div style={styles.sectionDivider} />
-        <span style={styles.sectionLabel}>Explore {themeData?.title || 'Theme'}</span>
+        <span style={styles.sectionLabel}>Explore {getThemeTitle(theme)}</span>
         <div style={styles.sectionDivider} />
       </div>
 
       {/* Episode Links */}
-      {episodes.length > 0 && (
+      {themeEpisodes.length > 0 && (
         <div style={styles.episodeSection}>
-          {episodes.map((episode) => (
+          {themeEpisodes.map((episode) => (
             <Link 
               key={episode.id} 
               href={routeHelpers.getEpisodeRoute(theme, episode.id)}
@@ -272,7 +289,7 @@ export default function EssentialMovies({ theme }) {
             >
               <div style={{...styles.episodeButton, cursor: 'pointer'}}>
                 <div style={styles.episodeTitle}>{episode.title}</div>
-                <div style={styles.episodeSubtitle}>{episode.subtitle}</div>
+                <div style={styles.episodeSubtitle}>{episode.subtitle || `Explore ${episode.title}`}</div>
               </div>
             </Link>
           ))}
