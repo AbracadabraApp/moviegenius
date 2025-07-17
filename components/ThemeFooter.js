@@ -6,10 +6,12 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 import { themeLinks } from '../lib/routes';
 
 export default function ThemeFooter() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const router = useRouter();
 
   return (
     <div style={styles.footer}>
@@ -49,6 +51,10 @@ export default function ThemeFooter() {
               key={theme.href}
               href={theme.href}
               style={{ textDecoration: 'none' }}
+              onClick={(e) => {
+                e.preventDefault();
+                router.push(theme.href);
+              }}
             >
               <div
                 style={{
