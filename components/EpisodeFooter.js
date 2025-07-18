@@ -45,14 +45,13 @@ export default function EpisodeFooter({ currentTheme, currentEpisode }) {
               <Link
                 key={episode.id}
                 href={routeHelpers.getEpisodeRoute(currentTheme, episode.id)}
-                style={styles.episodeButton}
-                onClick={(e) => {
-                  e.preventDefault();
-                  router.push(routeHelpers.getEpisodeRoute(currentTheme, episode.id));
-                }}
+                passHref
+                legacyBehavior
               >
-                <div style={styles.episodeTitle}>{episode.title}</div>
-                <div style={styles.episodeSubtitle}>{episode.subtitle}</div>
+                <a style={styles.episodeButton}>
+                  <div style={styles.episodeTitle}>{episode.title}</div>
+                  <div style={styles.episodeSubtitle}>{episode.subtitle}</div>
+                </a>
               </Link>
             ))}
           </div>
@@ -67,9 +66,12 @@ export default function EpisodeFooter({ currentTheme, currentEpisode }) {
             <Link
               key={theme.slug}
               href={routeHelpers.getThemeRoute(theme.slug)}
-              style={styles.themeButton}
+              passHref
+              legacyBehavior
             >
-              {theme.name}
+              <a style={styles.themeButton}>
+                {theme.name}
+              </a>
             </Link>
           ))}
         </div>

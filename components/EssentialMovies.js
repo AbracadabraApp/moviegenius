@@ -1,13 +1,11 @@
 // Essential Movies component - Compact list with progress tracking
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
 import { Check, Plus } from 'lucide-react';
 import { FavoritesManager } from './FavoritesManager';
 import Link from 'next/link';
 import { routeHelpers, episodes } from '../lib/routes';
 
 export default function EssentialMovies({ theme }) {
-  const router = useRouter();
   const [heartedMovies, setHeartedMovies] = useState(new Set());
   const [bookmarkedMovies, setBookmarkedMovies] = useState(new Set());
 
@@ -285,16 +283,15 @@ export default function EssentialMovies({ theme }) {
             <Link 
               key={episode.id} 
               href={routeHelpers.getEpisodeRoute(theme, episode.id)}
-              style={{textDecoration: 'none'}}
-              onClick={(e) => {
-                e.preventDefault();
-                router.push(routeHelpers.getEpisodeRoute(theme, episode.id));
-              }}
+              passHref
+              legacyBehavior
             >
-              <div style={{...styles.episodeButton, cursor: 'pointer'}}>
-                <div style={styles.episodeTitle}>{episode.title}</div>
-                <div style={styles.episodeSubtitle}>{episode.subtitle || `Explore ${episode.title}`}</div>
-              </div>
+              <a style={{textDecoration: 'none'}}>
+                <div style={{...styles.episodeButton, cursor: 'pointer'}}>
+                  <div style={styles.episodeTitle}>{episode.title}</div>
+                  <div style={styles.episodeSubtitle}>{episode.subtitle || `Explore ${episode.title}`}</div>
+                </div>
+              </a>
             </Link>
           ))}
         </div>
