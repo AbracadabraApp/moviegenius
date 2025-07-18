@@ -29,11 +29,34 @@ try {
 export default function NavBar() {
   const router = useRouter();
   const [showFrame, setShowFrame] = useState(true); // Default to frame for SSR
+  const [activeLabel, setActiveLabel] = useState(null); // Start with null to match server render
 
   useEffect(() => {
-    // Client-side detection
+    // Client-side detection for frame
     setShowFrame(shouldShowPhoneFrame());
   }, []);
+
+  useEffect(() => {
+    // Client-side active state calculation
+    if (router.isReady) {
+      try {
+        const active = navItems.find(
+          (item) => {
+            if (item.route === router.pathname) return true;
+            // Use centralized logic for Genius active state
+            if (item.route === '/genius') {
+              return routeValidation.shouldShowGeniusActive(router.pathname);
+            }
+            return false;
+          }
+        )?.label;
+        setActiveLabel(active);
+      } catch (error) {
+        console.warn('NavBar: Error determining active state:', error);
+        setActiveLabel(null);
+      }
+    }
+  }, [router.isReady, router.pathname]); // Re-run on route changes
 
   // Icon mapping for nav items
   const iconMap = {
@@ -41,29 +64,6 @@ export default function NavBar() {
     'Sparkles': Sparkles,
     'User': User
   };
-
-  // Safe active state detection with error handling
-  const activeLabel = (() => {
-    try {
-      // Wait for router to be ready
-      if (!router.isReady) return null;
-      
-      return navItems.find(
-        (item) => {
-          if (item.route === router.pathname) return true;
-          // Use centralized logic for Genius active state
-          if (item.route === '/genius') {
-            return routeValidation.shouldShowGeniusActive(router.pathname);
-          }
-          return false;
-        }
-      )?.label;
-    } catch (error) {
-      console.warn('NavBar: Error determining active state:', error);
-      // Fallback: no active state
-      return null;
-    }
-  })();
 
 
   return (
@@ -89,34 +89,33 @@ export default function NavBar() {
           }
           
           return (
-            <Link 
-              key={item.label} 
-              href={item.route} 
-              style={{textDecoration: 'none'}}
-              onClick={(e) => {
-                e.preventDefault();
-                router.push(item.route);
-              }}
+            <Link
+              key={item.label}
+              href={item.route}
+              passHref
+              legacyBehavior
             >
-              <div
-                style={{
-                  ...styles.navItem,
-                  opacity: isActive ? 1 : 0.6,
-                  transform: isActive ? 'translateY(-2px)' : 'none',
-                }}
-              >
-              <Icon
-                size={28}
-                style={{
-                  ...styles.icon,
-                  transform: isActive ? 'scale(1.15)' : 'scale(1)',
-                }}
-              />
-              <span style={styles.labelContainer}>
-                <span style={styles.label}>{item.label}</span>
-                {isActive && <div style={styles.underline} />}
-              </span>
-              </div>
+              <a style={{textDecoration: 'none'}}>
+                <div
+                  style={{
+                    ...styles.navItem,
+                    opacity: isActive ? 1 : 0.6,
+                    transform: isActive ? 'translateY(-2px)' : 'none',
+                  }}
+                >
+                  <Icon
+                    size={28}
+                    style={{
+                      ...styles.icon,
+                      transform: isActive ? 'scale(1.15)' : 'scale(1)',
+                    }}
+                  />
+                  <span style={styles.labelContainer}>
+                    <span style={styles.label}>{item.label}</span>
+                    {isActive && <div style={styles.underline} />}
+                  </span>
+                </div>
+              </a>
             </Link>
           );
         } catch (error) {
