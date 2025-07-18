@@ -13,9 +13,24 @@ export default function ThemePage({ themeId, customStyles = {} }) {
   const [searchResults, setSearchResults] = useState([]);
   const [showSearchResults, setShowSearchResults] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [currentThemeId, setCurrentThemeId] = useState(themeId);
+  
+  // Extract theme from URL when route changes
+  useEffect(() => {
+    if (router.isReady) {
+      // Extract theme slug from URL path /themes/[slug]
+      const pathSegments = router.asPath.split('/');
+      const slugFromUrl = pathSegments[2]; // /themes/[slug]
+      
+      if (slugFromUrl && slugFromUrl !== currentThemeId) {
+        setCurrentThemeId(slugFromUrl);
+        setLoading(true);
+      }
+    }
+  }, [router.isReady, router.asPath, currentThemeId]);
   
   // Get theme data from centralized system
-  const themeData = themeNavigation.getThemeBySlug(themeId);
+  const themeData = themeNavigation.getThemeBySlug(currentThemeId);
   
   // If not found by slug, try by label conversion
   const getThemeDataByLabel = (themeId) => {
@@ -38,7 +53,7 @@ export default function ThemePage({ themeId, customStyles = {} }) {
     };
   };
   
-  const finalThemeData = themeData || getThemeDataByLabel(themeId);
+  const finalThemeData = themeData || getThemeDataByLabel(currentThemeId);
 
   const handleSearchResults = (results) => {
     // With unified search, this won't be called since search redirects to /search page
@@ -60,7 +75,7 @@ export default function ThemePage({ themeId, customStyles = {} }) {
     if (finalThemeData) {
       setLoading(false);
     }
-  }, [finalThemeData]);
+  }, [finalThemeData, currentThemeId]);
 
   if (!finalThemeData) {
     return (
@@ -135,12 +150,12 @@ export default function ThemePage({ themeId, customStyles = {} }) {
         <div style={mergedStyles.contentArea || styles.contentArea}>
           
           {/* Essential Movies */}
-          <EssentialMovies theme={themeId} />
+          <EssentialMovies theme={currentThemeId} />
           
           {/* Search results removed - now handled by unified search page */}
           
           {/* Theme Footer - Navigation for other themes */}
-          <ThemeFooter currentTheme={themeId} />
+          <ThemeFooter />
         </div>
       </div>
     </PhoneFrame>
