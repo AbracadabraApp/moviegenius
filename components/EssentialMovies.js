@@ -2,12 +2,15 @@
 import { useState, useEffect } from 'react';
 import { Check, Plus } from 'lucide-react';
 import { FavoritesManager } from './FavoritesManager';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { routeHelpers, episodes } from '../lib/routes';
 
 export default function EssentialMovies({ theme }) {
+  const router = useRouter();
   const [heartedMovies, setHeartedMovies] = useState(new Set());
   const [bookmarkedMovies, setBookmarkedMovies] = useState(new Set());
+  const [clickedMovie, setClickedMovie] = useState(null);
 
   // Define essential movies for each theme
   const essentialMovies = {
@@ -206,14 +209,32 @@ export default function EssentialMovies({ theme }) {
       <div style={styles.movieList}>
         {currentMovies.map((movie) => (
           <div key={movie.tmdb_id} style={styles.movieRow}>
-            <div style={styles.movieTitleRow}>
-              <Link href={routeHelpers.getMovieRoute(movie.tmdb_id)} style={{ textDecoration: 'none', color: 'inherit' }}>
-                <span style={styles.movieTitle}>
-                  {movie.title}
-                </span>
-              </Link>
+            <a 
+              href={`/movie/${movie.tmdb_id}`}
+              style={{
+                ...styles.movieTitleRow, 
+                cursor: 'pointer',
+                backgroundColor: clickedMovie === movie.tmdb_id ? '#d4af37' : 'transparent',
+                padding: '2px',
+                borderRadius: '4px',
+                border: 'none',
+                background: 'transparent',
+                width: '100%',
+                textAlign: 'left',
+                textDecoration: 'none',
+                color: 'inherit',
+                display: 'block'
+              }}
+              onClick={() => {
+                setClickedMovie(movie.tmdb_id);
+                setTimeout(() => setClickedMovie(null), 2000);
+              }}
+            >
+              <span style={styles.movieTitle}>
+                {movie.title}
+              </span>
               <span style={styles.movieYear}>({movie.year})</span>
-            </div>
+            </a>
             <div style={styles.iconRow}>
               <button
                 onClick={() => toggleHeart(movie.tmdb_id)}
