@@ -22,17 +22,48 @@ async function cleanSummaryContamination() {
   console.log('🔒 Starting summary contamination cleanup...');
   
   try {
-    // Find movies with contaminated slugs
-    const { data: movies, error } = await supabase
+    // Get total count first
+    const { count: totalCount, error: countError } = await supabase
       .from('movies')
-      .select('id, title, year, slug')
+      .select('*', { count: 'exact', head: true })
       .not('slug', 'is', null);
       
-    if (error) {
-      console.error('❌ Error fetching movies:', error);
+    if (countError) {
+      console.error('❌ Error getting total count:', countError);
       return;
     }
     
+    console.log(`📊 Total movies with slugs: ${totalCount}`);
+    
+    // Fetch all movies with pagination
+    let allMovies = [];
+    let offset = 0;
+    const batchSize = 1000;
+    
+    console.log('🔄 Fetching all movies with pagination...');
+    
+    while (true) {
+      const { data: batch, error } = await supabase
+        .from('movies')
+        .select('id, title, year, slug')
+        .not('slug', 'is', null)
+        .range(offset, offset + batchSize - 1);
+        
+      if (error) {
+        console.error('❌ Error fetching batch:', error);
+        break;
+      }
+      
+      if (!batch || batch.length === 0) break;
+      
+      allMovies.push(...batch);
+      console.log(`   📥 Fetched ${allMovies.length}/${totalCount} movies...`);
+      offset += batchSize;
+      
+      if (batch.length < batchSize) break; // Last batch
+    }
+    
+    const movies = allMovies;
     console.log(`📊 Checking ${movies.length} movies for summary contamination...`);
     
     let cleanedCount = 0;

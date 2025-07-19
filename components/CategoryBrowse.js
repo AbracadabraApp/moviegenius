@@ -46,20 +46,31 @@ const CategoryBrowse = ({
   );
 };
 
-// Browse categories with search links
+// Browse categories - Most Popular All Time + Core Genres
 const browseCategories = [
-  { label: 'Action Movies', slug: 'action' },
-  { label: 'Comedy Films', slug: 'comedy' }, 
-  { label: 'Sci-Fi Classics', slug: 'sci-fi' },
-  { label: 'Horror Movies', slug: 'horror' },
-  { label: 'Drama Films', slug: 'drama' },
-  { label: 'Animated Movies', slug: 'animated' },
-  { label: 'Thriller Films', slug: 'thriller' },
-  { label: 'Romance Movies', slug: 'romance' },
+  // Most Popular All Time categories
+  { label: 'Most Popular All Time', slug: 'popular-all-time' },
+  { label: 'Top Rated Movies', slug: 'top-rated' },
+  
+  // Core TMDB Genres
+  { label: 'Action', slug: 'action' },
+  { label: 'Adventure', slug: 'adventure' },
+  { label: 'Animation', slug: 'animation' },
+  { label: 'Comedy', slug: 'comedy' },
+  { label: 'Crime', slug: 'crime' },
   { label: 'Documentary', slug: 'documentary' },
-  { label: 'Foreign Films', slug: 'foreign' },
-  { label: 'Marvel Movies', slug: 'marvel' },
-  { label: 'Film Noir', slug: 'noir' }
+  { label: 'Drama', slug: 'drama' },
+  { label: 'Family', slug: 'family' },
+  { label: 'Fantasy', slug: 'fantasy' },
+  { label: 'History', slug: 'history' },
+  { label: 'Horror', slug: 'horror' },
+  { label: 'Music', slug: 'music' },
+  { label: 'Mystery', slug: 'mystery' },
+  { label: 'Romance', slug: 'romance' },
+  { label: 'Science Fiction', slug: 'science-fiction' },
+  { label: 'Thriller', slug: 'thriller' },
+  { label: 'War', slug: 'war' },
+  { label: 'Western', slug: 'western' }
 ];
 
 const styles = {
@@ -78,7 +89,7 @@ const styles = {
   grid: {
     display: 'grid',
     gridTemplateColumns: 'repeat(2, 1fr)',
-    gap: '12px',
+    gap: '8px',
   },
   button: {
     backgroundColor: '#ffffff',

@@ -64,7 +64,7 @@ const styles = {
   screen: {
     width: '100%',
     height: '100%',
-    backgroundColor: '#ffffff',
+    backgroundColor: '#000000',
     borderRadius: '16px',
     overflow: 'hidden',
     display: 'flex',
@@ -76,7 +76,7 @@ const styles = {
     overflowY: 'scroll',
     scrollbarWidth: 'none',
     msOverflowStyle: 'none',
-    paddingBottom: '90px', // Space for sticky navbar
+    paddingBottom: '120px', // Space for sticky navbar and content
   },
   
   // Mobile layout (full screen)
@@ -85,7 +85,7 @@ const styles = {
     flexDirection: 'column',
     minHeight: '100vh',
     width: '100vw',
-    backgroundColor: '#ffffff',
+    backgroundColor: '#000000',
     overflow: 'hidden',
     paddingTop: 'env(safe-area-inset-top)',
     paddingBottom: 'env(safe-area-inset-bottom)',
@@ -98,6 +98,6 @@ const styles = {
     scrollbarWidth: 'none',
     msOverflowStyle: 'none',
     width: '100%',
-    paddingBottom: '90px', // Space for sticky navbar
+    paddingBottom: '120px', // Space for sticky navbar and content
   },
 };

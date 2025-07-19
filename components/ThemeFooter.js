@@ -4,7 +4,6 @@
  * Simple static footer with links to 10 theme pages.
  */
 
-import Link from 'next/link';
 import { useState } from 'react';
 import { themeLinks } from '../lib/routes';
 
@@ -45,25 +44,22 @@ export default function ThemeFooter() {
         
         <div style={styles.themeGrid}>
           {themeLinks.map((theme, index) => (
-            <Link 
+            <a 
               key={theme.href}
               href={theme.href}
-              passHref
-              legacyBehavior
+              style={{ textDecoration: 'none' }}
             >
-              <a style={{ textDecoration: 'none' }}>
-                <div
-                  style={{
-                    ...styles.themeButton,
-                    ...(hoveredIndex === index ? styles.themeButtonHover : {})
-                  }}
-                  onMouseEnter={() => setHoveredIndex(index)}
-                  onMouseLeave={() => setHoveredIndex(null)}
-                >
-                  {theme.label}
-                </div>
-              </a>
-            </Link>
+              <div
+                style={{
+                  ...styles.themeButton,
+                  ...(hoveredIndex === index ? styles.themeButtonHover : {})
+                }}
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
+              >
+                {theme.label}
+              </div>
+            </a>
           ))}
         </div>
       </div>
@@ -74,9 +70,13 @@ export default function ThemeFooter() {
 const styles = {
   footer: {
     backgroundColor: '#ffffff',
-    padding: '0px 20px 20px',
+    margin: '16px',
     marginTop: '0px',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+    marginBottom: '120px',
+    padding: '14px 12px 12px',
+    borderRadius: '8px',
+    boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segge UI", Roboto, sans-serif'
   },
   
   section: {
