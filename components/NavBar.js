@@ -107,12 +107,10 @@ export default function NavBar() {
               href={item.route}
               style={{textDecoration: 'none'}}
               onClick={(e) => {
-                // Force full page reload for reliable navigation
+                // Immediate navigation without setTimeout to prevent race conditions
                 e.preventDefault();
                 e.stopPropagation();
-                setTimeout(() => {
-                  window.location.href = item.route;
-                }, 0);
+                window.location.href = item.route;
               }}
             >
               <div
@@ -158,7 +156,7 @@ const styles = {
     backgroundColor: '#222',
     borderTopLeftRadius: '20px',
     borderTopRightRadius: '20px',
-    padding: '16px 0 20px 0',
+    padding: '11px 0 15px 0',
     boxShadow: '0 -4px 20px rgba(0,0,0,0.4)',
     margin: '0 -1px',
   },
