@@ -13,7 +13,7 @@ import MediaCard from '../components/MediaCard';
 
 export default function SearchPage() {
   const router = useRouter();
-  const { q, category } = router.query;
+  const { q, category, 'new-releases': newReleases } = router.query;
   
   const [searchResults, setSearchResults] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -21,18 +21,29 @@ export default function SearchPage() {
 
   // Category to search query mapping
   const categoryQueries = {
-    'action': 'action movies',
-    'comedy': 'comedy films',
-    'horror': 'horror movies',
-    'thriller': 'thriller films',
-    'drama': 'drama films',
-    'sci-fi': 'science fiction',
-    'romance': 'romance movies',
-    'animated': 'animated movies',
-    'documentary': 'documentary films',
-    'foreign': 'international cinema',
-    'marvel': 'marvel movies',
-    'noir': 'film noir'
+    // Special categories
+    'popular-all-time': 'Most Popular All Time',
+    'top-rated': 'Top Rated Movies',
+    
+    // TMDB Genres
+    'action': 'Action Movies',
+    'adventure': 'Adventure Films',
+    'animation': 'Animation Movies',
+    'comedy': 'Comedy Films',
+    'crime': 'Crime Movies',
+    'documentary': 'Documentary Films',
+    'drama': 'Drama Films',
+    'family': 'Family Movies',
+    'fantasy': 'Fantasy Films',
+    'history': 'History Movies',
+    'horror': 'Horror Movies',
+    'music': 'Music Movies',
+    'mystery': 'Mystery Movies',
+    'romance': 'Romance Movies',
+    'science-fiction': 'Science Fiction',
+    'thriller': 'Thriller Movies',
+    'war': 'War Movies',
+    'western': 'Western Movies'
   };
 
   // Load search results on page load or query change
@@ -42,12 +53,20 @@ export default function SearchPage() {
       setCurrentQuery(q);
       performSearch(q, false);
     } else if (category) {
-      // Category search - use TMDB genre search
+      // Category search - handle special categories or genre search
       const displayQuery = categoryQueries[category] || category;
       setCurrentQuery(displayQuery);
-      performSearch(category, true); // Pass category slug to TMDB API
+      
+      if (category === 'popular-all-time' || category === 'top-rated') {
+        performPopularSearch(category);
+      } else {
+        performSearch(displayQuery, true); // Pass display query to TMDB API
+      }
+    } else if (newReleases) {
+      // New releases search
+      performNewReleasesSearch(newReleases);
     }
-  }, [q, category]);
+  }, [q, category, newReleases]);
 
   const performSearch = async (query, isCategory = false) => {
     if (!query) return;
@@ -70,6 +89,70 @@ export default function SearchPage() {
       }
     } catch (error) {
       console.error('Search error:', error);
+      setSearchResults([]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const performNewReleasesSearch = async (releaseCategory) => {
+    if (!releaseCategory) return;
+    
+    setLoading(true);
+    
+    // Set display title for new releases categories
+    const releaseTitles = {
+      'now-playing': 'Now Playing',
+      'upcoming': 'Coming Soon', 
+      'recent': 'Recent Releases',
+      'trending': 'Trending This Week'
+    };
+    
+    setCurrentQuery(releaseTitles[releaseCategory] || releaseCategory);
+    
+    try {
+      const response = await fetch('/api/new-releases', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ category: releaseCategory })
+      });
+      
+      if (response.ok) {
+        const data = await response.json();
+        setSearchResults(data.movies || []);
+      } else {
+        console.error('New releases failed:', response.status);
+        setSearchResults([]);
+      }
+    } catch (error) {
+      console.error('New releases error:', error);
+      setSearchResults([]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const performPopularSearch = async (popularCategory) => {
+    if (!popularCategory) return;
+    
+    setLoading(true);
+    
+    try {
+      const response = await fetch('/api/popular-movies', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ category: popularCategory })
+      });
+      
+      if (response.ok) {
+        const data = await response.json();
+        setSearchResults(data.movies || []);
+      } else {
+        console.error('Popular movies failed:', response.status);
+        setSearchResults([]);
+      }
+    } catch (error) {
+      console.error('Popular movies error:', error);
       setSearchResults([]);
     } finally {
       setLoading(false);

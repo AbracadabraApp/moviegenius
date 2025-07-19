@@ -136,7 +136,7 @@ export default function ThemePage({ themeId, customStyles = {} }) {
           <div style={styles.heroSection}>
             <div style={{
               ...styles.heroImageContainer,
-              background: 'linear-gradient(135deg, #1a1a1a 0%, #374151 100%)'
+              background: '#000000'
             }}>
               <div style={styles.heroTitleOverlay}>
                 <h1 style={styles.heroTitle}>{finalThemeData.title}</h1>
@@ -177,7 +177,7 @@ const styles = {
   contentArea: {
     flex: 1,
     padding: '0',
-    background: 'linear-gradient(to bottom, #1a1a1a 0%, #374151 100%)',
+    background: '#000000',
   },
   
   // Hero Section Styles

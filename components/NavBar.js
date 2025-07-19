@@ -29,7 +29,34 @@ try {
 export default function NavBar() {
   const router = useRouter();
   const [showFrame, setShowFrame] = useState(true); // Default to frame for SSR
-  const [activeLabel, setActiveLabel] = useState(null); // Start with null to match server render
+  // Calculate initial active state to prevent flashing
+  const getActiveLabel = (pathname) => {
+    try {
+      return navItems.find(
+        (item) => {
+          if (item.route === pathname) return true;
+          // Movies active for /movie/[id] and /search pages
+          if (item.route === '/movies' && (pathname.startsWith('/movie/') || pathname.startsWith('/search'))) {
+            return true;
+          }
+          // You active for /you/* pages
+          if (item.route === '/you' && pathname.startsWith('/you/')) {
+            return true;
+          }
+          // Use centralized logic for Genius active state
+          if (item.route === '/genius') {
+            return routeValidation.shouldShowGeniusActive(pathname);
+          }
+          return false;
+        }
+      )?.label;
+    } catch (error) {
+      console.warn('NavBar: Error determining active state:', error);
+      return null;
+    }
+  };
+
+  const [activeLabel, setActiveLabel] = useState(() => getActiveLabel(router.asPath || router.pathname));
 
   useEffect(() => {
     // Client-side detection for frame
@@ -37,26 +64,12 @@ export default function NavBar() {
   }, []);
 
   useEffect(() => {
-    // Client-side active state calculation
+    // Update active state when route changes
     if (router.isReady) {
-      try {
-        const active = navItems.find(
-          (item) => {
-            if (item.route === router.pathname) return true;
-            // Use centralized logic for Genius active state
-            if (item.route === '/genius') {
-              return routeValidation.shouldShowGeniusActive(router.pathname);
-            }
-            return false;
-          }
-        )?.label;
-        setActiveLabel(active);
-      } catch (error) {
-        console.warn('NavBar: Error determining active state:', error);
-        setActiveLabel(null);
-      }
+      const newActiveLabel = getActiveLabel(router.asPath || router.pathname);
+      setActiveLabel(newActiveLabel);
     }
-  }, [router.isReady, router.pathname]); // Re-run on route changes
+  }, [router.isReady, router.asPath, router.pathname]);
 
   // Icon mapping for nav items
   const iconMap = {
@@ -89,34 +102,39 @@ export default function NavBar() {
           }
           
           return (
-            <Link
+            <a
               key={item.label}
               href={item.route}
-              passHref
-              legacyBehavior
+              style={{textDecoration: 'none'}}
+              onClick={(e) => {
+                // Force full page reload for reliable navigation
+                e.preventDefault();
+                e.stopPropagation();
+                setTimeout(() => {
+                  window.location.href = item.route;
+                }, 0);
+              }}
             >
-              <a style={{textDecoration: 'none'}}>
-                <div
+              <div
+                style={{
+                  ...styles.navItem,
+                  opacity: isActive ? 1 : 0.6,
+                  transform: isActive ? 'translateY(-2px)' : 'none',
+                }}
+              >
+                <Icon
+                  size={28}
                   style={{
-                    ...styles.navItem,
-                    opacity: isActive ? 1 : 0.6,
-                    transform: isActive ? 'translateY(-2px)' : 'none',
+                    ...styles.icon,
+                    transform: isActive ? 'scale(1.15)' : 'scale(1)',
                   }}
-                >
-                  <Icon
-                    size={28}
-                    style={{
-                      ...styles.icon,
-                      transform: isActive ? 'scale(1.15)' : 'scale(1)',
-                    }}
-                  />
-                  <span style={styles.labelContainer}>
-                    <span style={styles.label}>{item.label}</span>
-                    {isActive && <div style={styles.underline} />}
-                  </span>
-                </div>
-              </a>
-            </Link>
+                />
+                <span style={styles.labelContainer}>
+                  <span style={styles.label}>{item.label}</span>
+                  {isActive && <div style={styles.underline} />}
+                </span>
+              </div>
+            </a>
           );
         } catch (error) {
           console.error(`NavBar: Error rendering nav item ${item.label}:`, error);
@@ -170,10 +188,11 @@ const styles = {
     fontSize: '14px',
     cursor: 'pointer',
     textDecoration: 'none',
-    transition: 'opacity 0.2s ease, transform 0.2s ease',
+    transition: 'all 0.3s ease',
+    padding: '10px 20px',
   },
   icon: {
-    transition: 'transform 0.2s ease',
+    transition: 'all 0.3s ease',
   },
   labelContainer: {
     position: 'relative',

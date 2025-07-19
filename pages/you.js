@@ -86,13 +86,13 @@ export default function YouPage() {
                   fontSize: typography.fontSize.base,
                   fontWeight: typography.fontWeight.normal,
                   color: colors.gray[700],
-                  fontFamily: 'system-ui, -apple-system, sans-serif',
+                  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                   whiteSpace: 'nowrap',
                 }}>
                   based on
                 </span>
                 <button
-                  onClick={() => router.push('/movies')}
+                  onClick={() => router.push('/seen')}
                   style={{
                     background: 'none',
                     border: 'none',
@@ -100,7 +100,7 @@ export default function YouPage() {
                     fontSize: typography.fontSize.base,
                     color: components.youPage.goldAccent,
                     fontWeight: typography.fontWeight.normal,
-                    fontFamily: 'system-ui, -apple-system, sans-serif',
+                    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                     textDecoration: 'underline',
                     whiteSpace: 'nowrap',
                   }}
@@ -116,7 +116,7 @@ export default function YouPage() {
                     fontSize: typography.fontSize.base,
                     color: colors.gray[500],
                     fontWeight: typography.fontWeight.light,
-                    fontFamily: 'system-ui, -apple-system, sans-serif',
+                    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                     textDecoration: 'underline',
                     whiteSpace: 'nowrap',
                   }}
@@ -183,7 +183,7 @@ export default function YouPage() {
                   fontSize: '14px',
                   color: colors.gray[500],
                   fontWeight: typography.fontWeight.light,
-                  fontFamily: 'system-ui, -apple-system, sans-serif',
+                  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                   textDecoration: 'underline',
                   textDecorationColor: colors.gray[500],
                   textDecorationThickness: '1px',
@@ -304,7 +304,7 @@ export default function YouPage() {
                   fontSize: '14px',
                   color: colors.gray[500],
                   fontWeight: typography.fontWeight.light,
-                  fontFamily: 'system-ui, -apple-system, sans-serif',
+                  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                   textDecoration: 'underline',
                   textDecorationColor: colors.gray[500],
                   textDecorationThickness: '1px',

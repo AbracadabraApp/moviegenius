@@ -45,13 +45,10 @@ export default function EpisodeFooter({ currentTheme, currentEpisode }) {
               <Link
                 key={episode.id}
                 href={routeHelpers.getEpisodeRoute(currentTheme, episode.id)}
-                passHref
-                legacyBehavior
+                style={styles.episodeButton}
               >
-                <a style={styles.episodeButton}>
-                  <div style={styles.episodeTitle}>{episode.title}</div>
-                  <div style={styles.episodeSubtitle}>{episode.subtitle}</div>
-                </a>
+                <div style={styles.episodeTitle}>{episode.title}</div>
+                <div style={styles.episodeSubtitle}>{episode.subtitle}</div>
               </Link>
             ))}
           </div>
@@ -66,12 +63,9 @@ export default function EpisodeFooter({ currentTheme, currentEpisode }) {
             <Link
               key={theme.slug}
               href={routeHelpers.getThemeRoute(theme.slug)}
-              passHref
-              legacyBehavior
+              style={styles.themeButton}
             >
-              <a style={styles.themeButton}>
-                {theme.name}
-              </a>
+              {theme.name}
             </Link>
           ))}
         </div>

@@ -1,5 +1,5 @@
 // Essential Movies component - Compact list with progress tracking
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { Check, Plus } from 'lucide-react';
 import { FavoritesManager } from './FavoritesManager';
 import { useRouter } from 'next/router';
@@ -77,19 +77,61 @@ export default function EssentialMovies({ theme }) {
       { title: 'Toy Story', year: 1995, tmdb_id: 862 },
       { title: 'Spirited Away', year: 2001, tmdb_id: 129 }
     ],
+    'women-directors': [
+      { title: 'Lady Bird', year: 2017, tmdb_id: 391713 },
+      { title: 'The Piano', year: 1993, tmdb_id: 10494 },
+      { title: 'Lost in Translation', year: 2003, tmdb_id: 153 },
+      { title: 'The Hurt Locker', year: 2008, tmdb_id: 12162 },
+      { title: 'Nomadland', year: 2020, tmdb_id: 581734 }
+    ],
     'world-cinema': [
       { title: '8½', year: 1963, tmdb_id: 139 },
       { title: 'The Rules of the Game', year: 1939, tmdb_id: 36386 },
       { title: 'Tokyo Story', year: 1953, tmdb_id: 18148 },
       { title: 'Bicycle Thieves', year: 1948, tmdb_id: 11224 },
       { title: 'Persona', year: 1966, tmdb_id: 3082 }
+    ],
+    'acclaimed-directors': [
+      { title: 'Pulp Fiction', year: 1994, tmdb_id: 680 },
+      { title: 'The Dark Knight', year: 2008, tmdb_id: 155 },
+      { title: 'Goodfellas', year: 1990, tmdb_id: 769 },
+      { title: 'Taxi Driver', year: 1976, tmdb_id: 103 },
+      { title: 'There Will Be Blood', year: 2007, tmdb_id: 7345 }
+    ],
+    'avant-garde-film': [
+      { title: 'Breathless', year: 1960, tmdb_id: 820 },
+      { title: 'The 400 Blows', year: 1959, tmdb_id: 1094 },
+      { title: 'L\'Avventura', year: 1960, tmdb_id: 9926 },
+      { title: 'Persona', year: 1966, tmdb_id: 3082 },
+      { title: 'Mulholland Drive', year: 2001, tmdb_id: 1018 }
+    ],
+    'magic-of-moviemaking': [
+      { title: 'Citizen Kane', year: 1941, tmdb_id: 15 },
+      { title: 'Vertigo', year: 1958, tmdb_id: 876 },
+      { title: '2001: A Space Odyssey', year: 1968, tmdb_id: 62 },
+      { title: 'Apocalypse Now', year: 1979, tmdb_id: 28 },
+      { title: 'Blade Runner', year: 1982, tmdb_id: 78 }
+    ],
+    'cinema-through-decades': [
+      { title: 'Singin\' in the Rain', year: 1952, tmdb_id: 872 },
+      { title: 'The Godfather', year: 1972, tmdb_id: 238 },
+      { title: 'Raiders of the Lost Ark', year: 1981, tmdb_id: 85 },
+      { title: 'Pulp Fiction', year: 1994, tmdb_id: 680 },
+      { title: 'Parasite', year: 2019, tmdb_id: 496243 }
+    ],
+    'cinema-cultural-impact': [
+      { title: 'Birth of a Nation', year: 1915, tmdb_id: 1647 },
+      { title: 'Battleship Potemkin', year: 1925, tmdb_id: 958 },
+      { title: 'Gone with the Wind', year: 1939, tmdb_id: 770 },
+      { title: 'Star Wars', year: 1977, tmdb_id: 11 },
+      { title: 'Black Panther', year: 2018, tmdb_id: 284054 }
     ]
   };
 
-  const currentMovies = essentialMovies[theme] || [];
+  const currentMovies = useMemo(() => essentialMovies[theme] || [], [theme]);
   
   // Use centralized episode data instead of JSON file
-  const themeEpisodes = episodes.filter(ep => ep.theme === theme);
+  const themeEpisodes = useMemo(() => episodes.filter(ep => ep.theme === theme), [theme]);
   
   // Get theme title from centralized system
   const getThemeTitle = (themeSlug) => {
@@ -198,127 +240,133 @@ export default function EssentialMovies({ theme }) {
   if (currentMovies.length === 0) return null;
 
   return (
-    <div style={styles.container}>
-      <div style={styles.header}>
-        <div style={styles.sectionDivider} />
-        <span style={styles.sectionLabel}>Essential Movies</span>
-        <div style={styles.sectionDivider} />
-      </div>
-      
-      {/* Movie List */}
-      <div style={styles.movieList}>
-        {currentMovies.map((movie) => (
-          <div key={movie.tmdb_id} style={styles.movieRow}>
-            <a 
-              href={`/movie/${movie.tmdb_id}`}
-              style={{
-                ...styles.movieTitleRow, 
-                cursor: 'pointer',
-                backgroundColor: clickedMovie === movie.tmdb_id ? '#d4af37' : 'transparent',
-                padding: '2px',
-                borderRadius: '4px',
-                border: 'none',
-                background: 'transparent',
-                width: '100%',
-                textAlign: 'left',
-                textDecoration: 'none',
-                color: 'inherit',
-                display: 'block'
-              }}
-              onClick={() => {
-                setClickedMovie(movie.tmdb_id);
-                setTimeout(() => setClickedMovie(null), 2000);
-              }}
-            >
-              <span style={styles.movieTitle}>
-                {movie.title}
-              </span>
-              <span style={styles.movieYear}>({movie.year})</span>
-            </a>
-            <div style={styles.iconRow}>
-              <button
-                onClick={() => toggleHeart(movie.tmdb_id)}
-                style={styles.iconButton}
-                aria-label={heartedMovies.has(movie.tmdb_id) ? 'Mark as unseen' : 'Mark as seen'}
-              >
-                <div style={styles.iconWithText}>
-                  <Check
-                    size={16}
-                    color={heartedMovies.has(movie.tmdb_id) ? '#374151' : '#9ca3af'}
-                    strokeWidth={heartedMovies.has(movie.tmdb_id) ? 2.5 : 1.5}
-                  />
-                  <span style={{
-                    ...styles.iconLabel,
-                    color: heartedMovies.has(movie.tmdb_id) ? '#374151' : '#9ca3af',
-                    fontWeight: heartedMovies.has(movie.tmdb_id) ? '600' : '400'
-                  }}>
-                    Seen
-                  </span>
-                </div>
-              </button>
-              <button
-                onClick={() => toggleBookmark(movie.tmdb_id)}
-                style={styles.iconButton}
-                aria-label={bookmarkedMovies.has(movie.tmdb_id) ? 'Remove from list' : 'Add to list'}
-              >
-                <div style={styles.iconWithText}>
-                  <Plus
-                    size={16}
-                    color={bookmarkedMovies.has(movie.tmdb_id) ? '#374151' : '#9ca3af'}
-                  />
-                  <span style={{
-                    ...styles.iconLabel,
-                    color: bookmarkedMovies.has(movie.tmdb_id) ? '#374151' : '#9ca3af',
-                    fontWeight: bookmarkedMovies.has(movie.tmdb_id) ? '600' : '400'
-                  }}>
-                    Add
-                  </span>
-                </div>
-              </button>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Progress Bar */}
-      <div style={styles.progressSection}>
-        <div style={styles.progressBar}>
-          <div style={{...styles.progressFill, width: `${progressPercent}%`}} />
+    <>
+      {/* Essential Movies Container */}
+      <div style={styles.container}>
+        <div style={styles.header}>
+          <div style={styles.sectionDivider} />
+          <span style={styles.sectionLabel}>Essential Movies</span>
+          <div style={styles.sectionDivider} />
         </div>
-        <div style={styles.progressText}>
-          {seenCount}/{totalCount} - {getProgressStatus()}
-        </div>
-      </div>
-
-      {/* Learn More Header */}
-      <div style={styles.learnMoreHeader}>
-        <div style={styles.sectionDivider} />
-        <span style={styles.sectionLabel}>Explore {getThemeTitle(theme)}</span>
-        <div style={styles.sectionDivider} />
-      </div>
-
-      {/* Episode Links */}
-      {themeEpisodes.length > 0 && (
-        <div style={styles.episodeSection}>
-          {themeEpisodes.map((episode) => (
-            <Link 
-              key={episode.id} 
-              href={routeHelpers.getEpisodeRoute(theme, episode.id)}
-              passHref
-              legacyBehavior
-            >
-              <a style={{textDecoration: 'none'}}>
-                <div style={{...styles.episodeButton, cursor: 'pointer'}}>
-                  <div style={styles.episodeTitle}>{episode.title}</div>
-                  <div style={styles.episodeSubtitle}>{episode.subtitle || `Explore ${episode.title}`}</div>
-                </div>
+        
+        {/* Movie List */}
+        <div style={styles.movieList}>
+          {currentMovies.map((movie) => (
+            <div key={movie.tmdb_id} style={styles.movieRow}>
+              <a 
+                href={`/movie/${movie.tmdb_id}`}
+                style={{
+                  ...styles.movieTitleRow, 
+                  cursor: 'pointer',
+                  padding: '2px',
+                  borderRadius: '4px',
+                  border: 'none',
+                  background: 'transparent',
+                  width: '100%',
+                  textAlign: 'left',
+                  textDecoration: 'none',
+                  color: 'inherit',
+                  display: 'block'
+                }}
+                onClick={(e) => {
+                  // Force full page navigation
+                  e.preventDefault();
+                  window.location.href = e.currentTarget.href;
+                }}
+              >
+                <span style={styles.movieTitle}>
+                  {movie.title}
+                </span>
+                <span style={styles.movieYear}>({movie.year})</span>
               </a>
-            </Link>
+              <div style={styles.iconRow}>
+                <button
+                  onClick={() => toggleHeart(movie.tmdb_id)}
+                  style={styles.iconButton}
+                  aria-label={heartedMovies.has(movie.tmdb_id) ? 'Mark as unseen' : 'Mark as seen'}
+                >
+                  <div style={styles.iconWithText}>
+                    <Check
+                      size={16}
+                      color={heartedMovies.has(movie.tmdb_id) ? '#374151' : '#9ca3af'}
+                      strokeWidth={heartedMovies.has(movie.tmdb_id) ? 2.5 : 1.5}
+                    />
+                    <span style={{
+                      ...styles.iconLabel,
+                      color: heartedMovies.has(movie.tmdb_id) ? '#374151' : '#9ca3af',
+                      fontWeight: heartedMovies.has(movie.tmdb_id) ? '600' : '400'
+                    }}>
+                      Seen
+                    </span>
+                  </div>
+                </button>
+                <button
+                  onClick={() => toggleBookmark(movie.tmdb_id)}
+                  style={styles.iconButton}
+                  aria-label={bookmarkedMovies.has(movie.tmdb_id) ? 'Remove from list' : 'Add to list'}
+                >
+                  <div style={styles.iconWithText}>
+                    <Plus
+                      size={16}
+                      color={bookmarkedMovies.has(movie.tmdb_id) ? '#374151' : '#9ca3af'}
+                    />
+                    <span style={{
+                      ...styles.iconLabel,
+                      color: bookmarkedMovies.has(movie.tmdb_id) ? '#374151' : '#9ca3af',
+                      fontWeight: bookmarkedMovies.has(movie.tmdb_id) ? '600' : '400'
+                    }}>
+                      Add
+                    </span>
+                  </div>
+                </button>
+              </div>
+            </div>
           ))}
         </div>
-      )}
 
-    </div>
+        {/* Progress Bar */}
+        <div style={styles.progressSection}>
+          <div style={styles.progressBar}>
+            <div style={{...styles.progressFill, width: `${progressPercent}%`}} />
+          </div>
+          <div style={styles.progressText}>
+            {seenCount}/{totalCount} - {getProgressStatus()}
+          </div>
+        </div>
+      </div>
+
+      {/* Episodes Container */}
+      {themeEpisodes.length > 0 && (
+        <div style={styles.episodesContainer}>
+          <div style={styles.learnMoreHeader}>
+            <div style={styles.sectionDivider} />
+            <span style={styles.sectionLabel}>Explore {getThemeTitle(theme)}</span>
+            <div style={styles.sectionDivider} />
+          </div>
+
+          {/* Episode Links */}
+          <div style={styles.episodeSection}>
+            {themeEpisodes.map((episode) => (
+              <a 
+                key={episode.id} 
+                href={routeHelpers.getEpisodeRoute(theme, episode.id)}
+                style={{textDecoration: 'none'}}
+                onClick={(e) => {
+                  // Force full page navigation
+                  window.location.href = e.currentTarget.href;
+                  e.preventDefault();
+                }}
+              >
+                <div style={{...styles.episodeButton, cursor: 'pointer'}}>
+                  <div style={styles.episodeTitle}>{episode.title}</div>
+                  <div style={styles.episodeSubtitle}>{episode.subtitle}</div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+    </>
   );
 }
 
@@ -327,7 +375,16 @@ const styles = {
     backgroundColor: '#ffffff',
     margin: '16px',
     marginTop: '10px',
-    marginBottom: '52px',
+    marginBottom: '16px',
+    padding: '12px',
+    borderRadius: '8px',
+    boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
+  },
+  episodesContainer: {
+    backgroundColor: '#ffffff',
+    margin: '16px',
+    marginTop: '0px',
+    marginBottom: '16px',
     padding: '12px',
     borderRadius: '8px',
     boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
@@ -336,6 +393,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     gap: '16px',
+    marginTop: '2px',
     marginBottom: '12px',
   },
   sectionDivider: {
@@ -436,7 +494,7 @@ const styles = {
     alignItems: 'center',
     gap: '16px',
     marginBottom: '12px',
-    marginTop: '16px',
+    marginTop: '2px',
   },
   episodeSection: {
     display: 'grid',
@@ -450,7 +508,7 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'flex-start',
     padding: '16px',
-    backgroundColor: '#ffffff',
+    background: 'linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%)',
     border: '1px solid #e5e7eb',
     borderRadius: '12px',
     cursor: 'pointer',

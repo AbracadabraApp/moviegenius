@@ -1,4 +1,4 @@
-// pages/api/new-releases.js - TMDB New Releases API
+// pages/api/popular-movies.js - TMDB Popular & Top Rated Movies API
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
@@ -19,39 +19,22 @@ export default async function handler(req, res) {
       });
     }
 
-    console.log(`🎬 Fetching new releases: ${category}`);
+    console.log(`🎬 Fetching popular movies: ${category}`);
 
     let tmdbUrl;
     let categoryTitle;
 
-    // Get current date for date-based filtering
-    const now = new Date();
-    const currentDate = now.toISOString().split('T')[0]; // YYYY-MM-DD format
-    
-    // Calculate dates
-    const sixtyDaysAgo = new Date(now.getTime() - (60 * 24 * 60 * 60 * 1000)).toISOString().split('T')[0];
-    const thirtyDaysFromNow = new Date(now.getTime() + (30 * 24 * 60 * 60 * 1000)).toISOString().split('T')[0];
-
     switch (category) {
-      case 'now-playing':
-        tmdbUrl = `https://api.themoviedb.org/3/movie/now_playing?api_key=${TMDB_API_KEY}&language=en-US&page=1`;
-        categoryTitle = 'Now Playing';
+      case 'popular-all-time':
+        // Use TMDB popular endpoint - these are the most popular movies
+        tmdbUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${TMDB_API_KEY}&language=en-US&page=1`;
+        categoryTitle = 'Most Popular All Time';
         break;
       
-      case 'upcoming':
-        tmdbUrl = `https://api.themoviedb.org/3/movie/upcoming?api_key=${TMDB_API_KEY}&language=en-US&page=1`;
-        categoryTitle = 'Coming Soon';
-        break;
-      
-      case 'recent':
-        // Use discover to find movies released in the last 60 days
-        tmdbUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${TMDB_API_KEY}&language=en-US&sort_by=release_date.desc&release_date.gte=${sixtyDaysAgo}&release_date.lte=${currentDate}&page=1`;
-        categoryTitle = 'Recent Releases';
-        break;
-      
-      case 'trending':
-        tmdbUrl = `https://api.themoviedb.org/3/trending/movie/week?api_key=${TMDB_API_KEY}`;
-        categoryTitle = 'Trending This Week';
+      case 'top-rated':
+        // Use TMDB top rated endpoint - highest rated movies
+        tmdbUrl = `https://api.themoviedb.org/3/movie/top_rated?api_key=${TMDB_API_KEY}&language=en-US&page=1`;
+        categoryTitle = 'Top Rated Movies';
         break;
       
       default:
@@ -82,10 +65,11 @@ export default async function handler(req, res) {
         poster_url: movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : '/images/placeholder-poster.jpg',
         popularity: movie.popularity || 0,
         vote_average: movie.vote_average || 0,
+        vote_count: movie.vote_count || 0,
         release_date: movie.release_date
       }));
 
-    console.log(`✅ New releases success: ${category} -> ${movies.length} movies`);
+    console.log(`✅ Popular movies success: ${category} -> ${movies.length} movies`);
 
     res.status(200).json({
       movies,
@@ -96,7 +80,7 @@ export default async function handler(req, res) {
     });
 
   } catch (error) {
-    console.error('New releases error:', error);
+    console.error('Popular movies error:', error);
     res.status(500).json({
       error: 'Internal server error',
       movies: [],
