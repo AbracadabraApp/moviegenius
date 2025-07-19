@@ -28,12 +28,11 @@ export default function SearchBar({
     setIsLoading(true);
     
     try {
-      const response = await fetch('/api/search-movies', {
+      const response = await fetch('/api/multi-search', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
-          query: searchQuery.trim(),
-          limit: showSuggestions ? 8 : 20 
+          query: searchQuery.trim()
         })
       });
 
@@ -42,8 +41,10 @@ export default function SearchBar({
         const results = data.movies || [];
         
         if (showSuggestions) {
-          setSuggestions(results);
-          setShowSuggestionsList(results.length > 0);
+          // Limit suggestions to 8 items for dropdown
+          const suggestions = results.slice(0, 8);
+          setSuggestions(suggestions);
+          setShowSuggestionsList(suggestions.length > 0);
         }
         
         if (onResults) onResults(results);
