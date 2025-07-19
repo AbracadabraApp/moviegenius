@@ -102,17 +102,13 @@ export default function NavBar() {
           }
           
           return (
-            <a
+            <Link
               key={item.label}
               href={item.route}
-              style={{textDecoration: 'none'}}
-              onClick={(e) => {
-                // Immediate navigation without setTimeout to prevent race conditions
-                e.preventDefault();
-                e.stopPropagation();
-                window.location.href = item.route;
-              }}
+              passHref
+              legacyBehavior
             >
+              <a style={{textDecoration: 'none'}}>
               <div
                 style={{
                   ...styles.navItem,
@@ -131,8 +127,9 @@ export default function NavBar() {
                   <span style={styles.label}>{item.label}</span>
                   {isActive && <div style={styles.underline} />}
                 </span>
-              </div>
-            </a>
+                </div>
+              </a>
+            </Link>
           );
         } catch (error) {
           console.error(`NavBar: Error rendering nav item ${item.label}:`, error);

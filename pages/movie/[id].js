@@ -509,6 +509,11 @@ const styles = {
 // Business logic moved to services - import them here
 import { AnalysisService } from '../../lib/services/analysis-service';
 import { processAnalysisContent, splitContentAtSubheads } from '../../lib/movie-analysis-linker';
+import fs from 'fs';
+import path from 'path';
+import { createClient } from '@supabase/supabase-js';
+import { getTMDBMovieDetails } from '../../lib/services/tmdb-search';
+import { createBasicMovieEntry } from '../../lib/services/database-search';
 
 
 // Nuclear capture disabled - happens during build time only
@@ -516,14 +521,11 @@ import { processAnalysisContent, splitContentAtSubheads } from '../../lib/movie-
 // Nuclear Static Check - check for pre-built static data first
 async function checkNuclearStatic(tmdbId) {
   try {
-    const fs = await import('fs');
-    const path = await import('path');
+    const nuclearPath = path.join(process.cwd(), 'nuclear-static', `${tmdbId}.json`);
     
-    const nuclearPath = path.default.join(process.cwd(), 'nuclear-static', `${tmdbId}.json`);
-    
-    if (fs.default.existsSync(nuclearPath)) {
+    if (fs.existsSync(nuclearPath)) {
       console.log(`🚀 Nuclear cache HIT for movie ${tmdbId}`);
-      const staticData = fs.default.readFileSync(nuclearPath, 'utf8');
+      const staticData = fs.readFileSync(nuclearPath, 'utf8');
       const data = JSON.parse(staticData);
       
       // Validate nuclear data structure
@@ -572,7 +574,6 @@ export async function getStaticProps({ params }) {
     }
 
     // Create supabase client using the working pattern from 3 weeks ago
-    const { createClient } = await import('@supabase/supabase-js');
     const supabase = createClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL,
       process.env.SUPABASE_SERVICE_ROLE_KEY
@@ -591,8 +592,6 @@ export async function getStaticProps({ params }) {
       
       try {
         // Import TMDB services
-        const { getTMDBMovieDetails } = await import('../../lib/services/tmdb-search');
-        const { createBasicMovieEntry } = await import('../../lib/services/database-search');
         
         // Fetch movie details from TMDB
         const tmdbMovie = await getTMDBMovieDetails(tmdbId);
