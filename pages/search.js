@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import PhoneFrame from '../components/PhoneFrame';
 import SimpleSearch from '../components/SimpleSearch';
-import MediaCard from '../components/MediaCard';
+import MovieHeaderCompact from '../components/MovieHeaderCompact';
 
 export default function SearchPage() {
   const router = useRouter();
@@ -60,7 +60,7 @@ export default function SearchPage() {
       if (category === 'popular-all-time' || category === 'top-rated') {
         performPopularSearch(category);
       } else {
-        performSearch(displayQuery, true); // Pass display query to TMDB API
+        performGenreSearch(category); // Use proper TMDB genre search
       }
     } else if (newReleases) {
       // New releases search
@@ -159,14 +159,41 @@ export default function SearchPage() {
     }
   };
 
+  const performGenreSearch = async (genreCategory) => {
+    if (!genreCategory) return;
+    
+    setLoading(true);
+    
+    try {
+      const response = await fetch(`/api/tmdb-genre-search?category=${encodeURIComponent(genreCategory)}`);
+      
+      if (response.ok) {
+        const data = await response.json();
+        setSearchResults(data.movies || []);
+      } else {
+        console.error('Genre search failed:', response.status);
+        setSearchResults([]);
+      }
+    } catch (error) {
+      console.error('Genre search error:', error);
+      setSearchResults([]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const handleSearchResults = (results) => {
     // This is for when SimpleSearch redirects here, results will be empty
     // The search will be performed by the useEffect when the URL query changes
   };
 
   const handleMovieClick = (movie) => {
+    console.log('Movie clicked:', movie);
     if (movie.tmdb_id) {
+      console.log('Navigating to:', `/movie/${movie.tmdb_id}`);
       router.push(`/movie/${movie.tmdb_id}`);
+    } else {
+      console.log('No tmdb_id found for movie:', movie);
     }
   };
 
@@ -209,17 +236,18 @@ export default function SearchPage() {
             </div>
           ) : searchResults.length > 0 ? (
             <div style={styles.movieGrid}>
+              {console.log('🔍 Rendering search results with MovieHeaderCompact:', searchResults.length, 'movies')}
               {searchResults.map((movie, index) => (
-                <div key={`${movie.tmdb_id || movie.title}-${index}`} onClick={() => handleMovieClick(movie)}>
-                  <MediaCard
-                    title={movie.title}
-                    year={movie.year}
-                    initialSlug={movie.slug}
-                    initialPoster={movie.poster_url}
-                    initialStreaming={movie.streaming_data}
-                    tmdbId={movie.tmdb_id}
-                  />
-                </div>
+                <MovieHeaderCompact
+                  key={`${movie.tmdb_id || movie.title}-${index}`}
+                  title={movie.title}
+                  year={movie.year}
+                  tmdbId={movie.tmdb_id}
+                  posterUrl={movie.poster_url}
+                  voteAverage={movie.vote_average}
+                  streamingInfo={movie.streaming_data}
+                  onMovieClick={() => handleMovieClick(movie)}
+                />
               ))}
             </div>
           ) : currentQuery ? (
@@ -262,11 +290,11 @@ const styles = {
     overflowY: 'scroll',
     scrollbarWidth: 'none',
     msOverflowStyle: 'none',
-    padding: '16px',
   },
   
   resultsHeader: {
     marginBottom: '20px',
+    padding: '0 16px',
   },
   resultsTitle: {
     fontSize: '24px',
@@ -282,8 +310,6 @@ const styles = {
   movieGrid: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '1px',
-    backgroundColor: '#f3f4f6',
   },
   
   loadingContainer: {
