@@ -199,7 +199,7 @@ export default function EssentialMovies({ theme }) {
     };
 
     updateStates();
-  }, [theme, currentMovies]);
+  }, [theme]); // Removed currentMovies dependency to prevent infinite loop
 
   // Toggle heart status (seen)
   const toggleHeart = (tmdbId) => {
