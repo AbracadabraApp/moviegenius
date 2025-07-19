@@ -35,18 +35,32 @@ function FeaturedFilmsSection({
       <div style={styles.movieGrid}>
         {movies
           .filter(movie => movie.title && movie.year && movie.tmdb_id && movie.tmdb_id !== null && movie.tmdb_id !== 'MISSING') // Show movies with required fields including valid tmdb_id
-          .map((movie, movieIndex) => (
-          <div key={`${movie.title}-${movie.year}-${movieIndex}`} style={styles.movieCardWrapper}>
-            <MediaCard
-              title={movie.title}
-              year={movie.year}
-              initialSlug={movie.slug}
-              initialPoster={movie.poster || movie.poster_url}
-              initialStreaming={movie.initialStreaming || movie.streaming}
-              tmdbId={movie.tmdb_id || movie.tmdbId}
-            />
-          </div>
-        ))}
+          .map((movie, movieIndex) => {
+            // 🔒 TMDB Protection: Filter contaminated slugs before passing to MediaCard
+            const isValidClaudeSlug = movie.slug && 
+              !movie.slug.includes('Plot:') &&
+              !movie.slug.includes('Overview:') && 
+              !movie.slug.includes('Synopsis:') &&
+              !movie.slug.includes('Summary:') &&
+              !movie.slug.includes(' leads this ') &&
+              !movie.slug.includes(' adapts ') &&
+              !movie.slug.includes(' starring ') &&
+              !movie.slug.includes('directed by') &&
+              movie.slug.length <= 80; // Reject overly long descriptions
+              
+            return (
+              <div key={`${movie.title}-${movie.year}-${movieIndex}`} style={styles.movieCardWrapper}>
+                <MediaCard
+                  title={movie.title}
+                  year={movie.year}
+                  initialSlug={isValidClaudeSlug ? movie.slug : null}
+                  initialPoster={movie.poster || movie.poster_url}
+                  initialStreaming={movie.initialStreaming || movie.streaming}
+                  tmdbId={movie.tmdb_id || movie.tmdbId}
+                />
+              </div>
+            );
+          })}
       </div>
     </div>
   );
