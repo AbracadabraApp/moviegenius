@@ -1,9 +1,9 @@
 // pages/api/generate-organic-slug.js - 🔒 LOCKED ORGANIC SLUG GENERATION 🔒
-// 
+//
 // ⚠️  CRITICAL: This API generates ONLY movie poster taglines
 // ⚠️  NO plot summaries, NO story descriptions, NO character names
 // ⚠️  PROTECTED against TMDB summary contamination
-// 
+//
 // @version LOCKED-2025-07-02
 import { createClient } from '@supabase/supabase-js';
 import { Anthropic } from '@anthropic-ai/sdk';
@@ -40,12 +40,14 @@ export default async function handler(req, res) {
       .single();
 
     // If we have a good existing slug, return it
-    if (movie?.slug && 
-        movie.slug.length <= 50 && 
-        movie.slug.length > 5 &&
-        !movie.slug.includes('Plot:') &&
-        !movie.slug.includes('Overview:') &&
-        !movie.slug.includes('Synopsis:')) {
+    if (
+      movie?.slug &&
+      movie.slug.length <= 50 &&
+      movie.slug.length > 5 &&
+      !movie.slug.includes('Plot:') &&
+      !movie.slug.includes('Overview:') &&
+      !movie.slug.includes('Synopsis:')
+    ) {
       console.log(`   ✅ Using existing good slug: "${movie.slug}"`);
       return res.json({ slug: movie.slug, source: 'existing' });
     }
@@ -82,31 +84,41 @@ Return ONLY the tagline, nothing else.`;
       messages: [
         {
           role: 'user',
-          content: prompt
-        }
-      ]
+          content: prompt,
+        },
+      ],
     });
 
     let slug = message.content[0].text.trim();
-    
+
     // Remove quotes if Claude added them
     if (slug.startsWith('"') && slug.endsWith('"')) {
       slug = slug.slice(1, -1);
     }
-    
+
     // Validate slug quality
     if (slug.length > 50) {
       console.warn(`⚠️  Generated slug too long (${slug.length} chars): "${slug}"`);
       return res.status(400).json({ error: 'Generated slug too long' });
     }
-    
+
     // Check for banned content
     const lowerSlug = slug.toLowerCase();
     const bannedPatterns = [
-      'starring', 'stars', 'features', 'follows', 'story of', 'about',
-      'when ', 'after ', 'before ', 'during ', 'chronicles', 'depicts'
+      'starring',
+      'stars',
+      'features',
+      'follows',
+      'story of',
+      'about',
+      'when ',
+      'after ',
+      'before ',
+      'during ',
+      'chronicles',
+      'depicts',
     ];
-    
+
     for (const pattern of bannedPatterns) {
       if (lowerSlug.includes(pattern)) {
         console.warn(`⚠️  Generated slug contains banned pattern "${pattern}": "${slug}"`);
@@ -118,12 +130,12 @@ Return ONLY the tagline, nothing else.`;
     if (movie?.id) {
       const { error } = await supabase
         .from('movies')
-        .update({ 
+        .update({
           slug: slug,
-          updated_at: new Date().toISOString()
+          updated_at: new Date().toISOString(),
         })
         .eq('id', movie.id);
-      
+
       if (error) {
         console.warn('Failed to save organic slug to database:', error);
       } else {
@@ -132,13 +144,12 @@ Return ONLY the tagline, nothing else.`;
     }
 
     console.log(`   ✅ Generated organic slug: "${slug}" (${slug.length} chars)`);
-    
-    return res.json({ 
-      slug, 
-      source: 'generated',
-      length: slug.length 
-    });
 
+    return res.json({
+      slug,
+      source: 'generated',
+      length: slug.length,
+    });
   } catch (error) {
     console.error('Organic slug generation error:', error);
     return res.status(500).json({ error: 'Failed to generate slug' });

@@ -50,7 +50,7 @@ export default function MultiSearchResults({ results, query }) {
       {/* Results - Movies Only */}
       <div style={styles.resultsContainer}>
         <div style={styles.movieGrid}>
-          {results.movies.map((movie) => (
+          {results.movies.map(movie => (
             <div key={movie.id} style={styles.movieCard}>
               <MediaCard
                 title={movie.title}
@@ -61,7 +61,7 @@ export default function MultiSearchResults({ results, query }) {
             </div>
           ))}
         </div>
-        
+
         {/* People results temporarily disabled
         {activeTab === 'people' && peopleCount > 0 && (
           <div style={styles.peopleGrid}>

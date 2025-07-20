@@ -3,7 +3,12 @@ import { useState, useRef, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { Search } from 'lucide-react';
 
-export default function SimpleSearch({ onResults, placeholder = "Search movies and people...", useUnifiedSearch = true, initialQuery = '' }) {
+export default function SimpleSearch({
+  onResults,
+  placeholder = 'Search movies and people...',
+  useUnifiedSearch = true,
+  initialQuery = '',
+}) {
   const [query, setQuery] = useState(initialQuery);
   const [isLoading, setIsLoading] = useState(false);
   const [fallback, setFallback] = useState(null);
@@ -15,7 +20,7 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies a
     setQuery(initialQuery || '');
   }, [initialQuery]);
 
-  const search = async (searchQuery) => {
+  const search = async searchQuery => {
     const q = searchQuery.trim();
     if (!q) {
       if (onResults) onResults({ movies: [], people: [] });
@@ -43,14 +48,14 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies a
 
     setIsLoading(true);
     setFallback(null);
-    
+
     console.log(`🔍 [${searchId}] Searching for: "${q}"`);
-    
+
     try {
       const response = await fetch('/api/multi-search', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query: q })
+        body: JSON.stringify({ query: q }),
       });
 
       // Check if this search was cancelled by a newer search
@@ -62,7 +67,7 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies a
       if (response.ok) {
         const data = await response.json();
         console.log(`✅ [${searchId}] Search results:`, data);
-        
+
         // V1 Feature: Auto-navigate to single movie result
         if (data.movies && data.movies.length === 1) {
           const movie = data.movies[0];
@@ -72,9 +77,9 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies a
             return;
           }
         }
-        
+
         if (onResults) onResults(data || { movies: [], people: [] });
-        
+
         // Handle fallback for empty results
         if (data.fallback) {
           setFallback(data.fallback);
@@ -82,12 +87,12 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies a
       } else {
         console.error(`❌ [${searchId}] Search failed:`, response.status, response.statusText);
         if (onResults) onResults({ movies: [], people: [] });
-        setFallback({ message: "Search failed. Please try again." });
+        setFallback({ message: 'Search failed. Please try again.' });
       }
     } catch (error) {
       console.error(`💥 [${searchId}] Search error:`, error);
       if (onResults) onResults({ movies: [], people: [] });
-      setFallback({ message: "Search failed. Please try again." });
+      setFallback({ message: 'Search failed. Please try again.' });
     } finally {
       // Only set loading to false if this is still the current search
       if (currentSearchRef.current === searchId) {
@@ -96,7 +101,7 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies a
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
     search(query);
   };
@@ -115,24 +120,20 @@ export default function SimpleSearch({ onResults, placeholder = "Search movies a
           <input
             type="text"
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder={isLoading ? "Searching..." : placeholder}
+            onChange={e => setQuery(e.target.value)}
+            placeholder={isLoading ? 'Searching...' : placeholder}
             style={styles.input}
             autoComplete="off"
             disabled={isLoading}
           />
           {query && (
-            <button
-              type="button"
-              onClick={handleClear}
-              style={styles.clearButton}
-            >
+            <button type="button" onClick={handleClear} style={styles.clearButton}>
               ×
             </button>
           )}
         </div>
       </form>
-      
+
       {/* No results message */}
       {fallback && (
         <div style={styles.fallbackBox}>

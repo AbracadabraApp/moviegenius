@@ -2,17 +2,21 @@
 
 ## Overview
 
-Movie pages now support YouTube trailers with a play button in the floating action bar. The system uses TMDB's videos endpoint to fetch official movie trailers and displays them in a modal overlay.
+Movie pages now support YouTube trailers with a play button in the floating
+action bar. The system uses TMDB's videos endpoint to fetch official movie
+trailers and displays them in a modal overlay.
 
 ## Features Added
 
 ### 1. Play Button
+
 - **Location**: Floating action bar (between + and heart icons)
 - **Icon**: PlayCircle from Lucide React
 - **Visibility**: Only appears if trailer is found
 - **Size**: 28px (between CirclePlus 32px and Heart 24px)
 
 ### 2. Trailer Modal
+
 - **Overlay**: Full-screen dark backdrop
 - **Player**: 16:9 aspect ratio, max width 800px
 - **Controls**: Standard YouTube player controls
@@ -20,6 +24,7 @@ Movie pages now support YouTube trailers with a play button in the floating acti
 - **Autoplay**: Enabled when modal opens
 
 ### 3. TMDB Integration
+
 - **Videos API**: TMDB `/movie/{id}/videos` endpoint
 - **Filtering**: Official YouTube trailers preferred
 - **Single Trailer**: Returns best single trailer per movie
@@ -29,7 +34,8 @@ Movie pages now support YouTube trailers with a play button in the floating acti
 
 ### 1. TMDB API Key (Already Configured)
 
-✅ **No additional setup required!** The trailer feature uses your existing TMDB API key.
+✅ **No additional setup required!** The trailer feature uses your existing TMDB
+API key.
 
 ### 2. Environment Variables
 
@@ -45,7 +51,8 @@ SUPABASE_SERVICE_ROLE_KEY=...
 ### 3. Automatic Functionality
 
 Since TMDB API key is already configured:
-- ✅ Trailers work immediately 
+
+- ✅ Trailers work immediately
 - ✅ Play button appears when trailers available
 - ✅ 68% coverage across your movie database
 - ✅ No additional API quotas or costs
@@ -53,6 +60,7 @@ Since TMDB API key is already configured:
 ## API Endpoints
 
 ### TMDB Trailer Endpoint
+
 ```
 GET /api/tmdb-trailer?tmdbId=550
 
@@ -70,12 +78,14 @@ Response:
 ## Implementation Details
 
 ### Component Changes
+
 - **File**: `components/MovieHeaderLarge.js`
 - **New States**: `trailerVideoId`, `showTrailer`, `isLoadingTrailer`
 - **New Functions**: `handlePlayTrailer()`, `handleCloseTrailer()`
 - **API Call**: Fetches trailer using `tmdbId` prop on component mount
 
 ### Single Trailer Selection
+
 The system scores TMDB videos to find the best single trailer:
 
 - **+20 points**: Official status (`official: true`)
@@ -91,6 +101,7 @@ The system scores TMDB videos to find the best single trailer:
 **Result**: Returns the highest-scoring single YouTube trailer per movie
 
 ### Mobile Optimization
+
 - **Responsive Modal**: Adapts to screen size with padding
 - **Touch Friendly**: Large close button and touch targets
 - **iOS Playback**: Standard YouTube iframe works on all devices
@@ -98,12 +109,14 @@ The system scores TMDB videos to find the best single trailer:
 ## User Experience
 
 ### Desktop
+
 1. Hover over action bar to see slight scale animation
 2. Click play button to open modal
 3. Video plays automatically with YouTube controls
 4. Click outside or X to close
 
 ### Mobile
+
 1. Tap play button to open trailer
 2. Full-screen modal with native touch controls
 3. Tap outside or X button to close

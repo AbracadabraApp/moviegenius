@@ -1,7 +1,7 @@
 // pages/api/enhance-person-data.js
 /**
  * Person Data Enhancement API Route
- * 
+ *
  * Enhances person data with biography using TMDB API.
  * Similar to enhance-movie-data but for people.
  */
@@ -49,17 +49,16 @@ export default async function handler(req, res) {
       }
     }
 
-    res.status(200).json({ 
+    res.status(200).json({
       biography: biography || `Notable ${needsBiography ? 'filmmaker' : 'person'} in cinema`,
-      profile: profile || '/images/placeholder-profile.jpg'
+      profile: profile || '/images/placeholder-profile.jpg',
     });
-
   } catch (error) {
     console.error('Error enhancing person data:', error);
-    res.status(500).json({ 
+    res.status(500).json({
       error: 'Failed to enhance person data',
       biography: `Notable ${needsBiography ? 'filmmaker' : 'person'} in cinema`,
-      profile: '/images/placeholder-profile.jpg'
+      profile: '/images/placeholder-profile.jpg',
     });
   }
 }

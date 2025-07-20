@@ -1,9 +1,9 @@
 /**
  * Movie Analysis Linking Script - V1 Production
- * 
+ *
  * Processes static movie pages to create proper movie links in analysis content.
  * Run with: node scripts/process-movie-analysis-links.js [--dry-run] [--test-count=20]
- * 
+ *
  * This script:
  * 1. Finds **Movie Title** (Year) and **Movie Title** patterns in analysis content
  * 2. Looks up movies in database
@@ -25,23 +25,23 @@ const testCount = testCountArg ? parseInt(testCountArg.split('=')[1]) : 20;
 async function main() {
   console.log('🎬 Movie Analysis Linking Script - V1');
   console.log('=====================================\n');
-  
+
   // Validate environment
   if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
     console.error('❌ Missing Supabase environment variables');
     process.exit(1);
   }
-  
+
   if (!process.env.NEXT_PUBLIC_TMDB_API_KEY) {
     console.error('❌ Missing TMDB API key');
     process.exit(1);
   }
-  
+
   try {
     if (testMode) {
       // Test with sample analysis content
       console.log('🧪 Testing Movie Analysis Linking System\n');
-      
+
       const sampleContent = `
 The horror genre found its visual language through German Expressionism, particularly in **Nosferatu** (1922) and **The Cabinet of Dr. Caligari** (1920). These films established the use of shadows and distorted perspectives that would influence horror cinema for decades.
 
@@ -49,17 +49,16 @@ Later films like **The Lighthouse** (2019) and **The Witch** demonstrate how mod
 
 Contemporary horror directors often cite **Psycho** and **The Exorcist** as major influences, showing how the genre evolved from its expressionist roots to psychological terror.
       `;
-      
+
       await testMovieAnalysisLinking(sampleContent, 'The Cabinet of Dr. Caligari');
-      
     } else {
       // Process static pages
       const startTime = Date.now();
       const result = await processStaticPages(testCount, dryRun);
       const duration = Math.round((Date.now() - startTime) / 1000);
-      
+
       console.log(`\n⏱️  Completed in ${duration} seconds`);
-      
+
       if (dryRun) {
         console.log('\n🔍 DRY RUN completed - no data was modified');
         console.log('Run without --dry-run flag to apply changes');
@@ -68,7 +67,6 @@ Contemporary horror directors often cite **Psycho** and **The Exorcist** as majo
         console.log('🚀 Analysis pages are now ready for V1 launch');
       }
     }
-    
   } catch (error) {
     console.error('❌ Script failed:', error);
     process.exit(1);

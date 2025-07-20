@@ -1,7 +1,7 @@
 // pages/explore/[...slug].js
 /**
  * Static Explore Further Pages
- * 
+ *
  * Serves pre-generated content for "Explore Further" topics to replace
  * slow Ask queries. Routes like:
  * - /explore/cyberpunk-visual-style
@@ -23,7 +23,7 @@ export default function ExplorePage({ pageData, error, topic, context }) {
   const [isLoading, setIsLoading] = useState(!pageData);
 
   // Handle search results
-  const handleSearchResults = (results) => {
+  const handleSearchResults = results => {
     // For now, just log the search results
     // In the future, could show search results in a modal or navigate to search page
     console.log('Search results on Explore page:', results);
@@ -40,10 +40,7 @@ export default function ExplorePage({ pageData, error, topic, context }) {
           </div>
           <div style={styles.errorContainer}>
             <div style={styles.errorText}>Unable to load this explore topic</div>
-            <button 
-              style={styles.retryButton}
-              onClick={() => window.location.reload()}
-            >
+            <button style={styles.retryButton} onClick={() => window.location.reload()}>
               Try Again
             </button>
           </div>
@@ -63,9 +60,9 @@ export default function ExplorePage({ pageData, error, topic, context }) {
           </div>
           <div style={styles.loadingContainer}>
             <div style={styles.loadingRow}>
-              <img 
-                src="/icons/loading/film-movie-reel-icon.png" 
-                alt="Loading..." 
+              <img
+                src="/icons/loading/film-movie-reel-icon.png"
+                alt="Loading..."
                 style={styles.filmIcon}
               />
               <span style={styles.loadingText}>Exploring the archives...</span>
@@ -88,30 +85,27 @@ export default function ExplorePage({ pageData, error, topic, context }) {
         {/* Page Header */}
         <div style={styles.headerSection}>
           <h1 style={styles.pageTitle}>{pageData.title}</h1>
-          {context && (
-            <p style={styles.contextText}>Exploring in relation to {context}</p>
-          )}
+          {context && <p style={styles.contextText}>Exploring in relation to {context}</p>}
         </div>
 
         {/* Main Content */}
         <div style={styles.contentSection}>
-          {pageData.sections && pageData.sections.map((section, index) => (
-            <div key={index} style={styles.sectionContainer}>
-              {section.type === 'text' && (
-                <div style={styles.textSection}>
-                  <EntityLinkedText
-                    text={section.content}
-                    linkMovies={true}
-                    linkingStyle="on"
-                    style={styles.paragraphText}
-                  />
-                </div>
-              )}
-              {section.type === 'subhead' && (
-                <h2 style={styles.subhead}>{section.content}</h2>
-              )}
-            </div>
-          ))}
+          {pageData.sections &&
+            pageData.sections.map((section, index) => (
+              <div key={index} style={styles.sectionContainer}>
+                {section.type === 'text' && (
+                  <div style={styles.textSection}>
+                    <EntityLinkedText
+                      text={section.content}
+                      linkMovies={true}
+                      linkingStyle="on"
+                      style={styles.paragraphText}
+                    />
+                  </div>
+                )}
+                {section.type === 'subhead' && <h2 style={styles.subhead}>{section.content}</h2>}
+              </div>
+            ))}
 
           {/* Essential Films Section */}
           {pageData.movies && pageData.movies.length > 0 && (
@@ -137,7 +131,7 @@ export default function ExplorePage({ pageData, error, topic, context }) {
               <h3 style={styles.nextStepsTitle}>Continue Exploring</h3>
               <div style={styles.nextStepsList}>
                 {pageData.nextSteps.map((step, index) => (
-                  <div 
+                  <div
                     key={index}
                     style={styles.nextStepItem}
                     onClick={() => {
@@ -156,7 +150,7 @@ export default function ExplorePage({ pageData, error, topic, context }) {
           <div style={styles.followUpSection}>
             <h3 style={styles.followUpTitle}>Have more questions?</h3>
             <div style={styles.followUpInputContainer}>
-              <SimpleSearch 
+              <SimpleSearch
                 onResults={handleSearchResults}
                 placeholder={`Ask more about ${pageData.title.toLowerCase()}...`}
               />
@@ -171,7 +165,7 @@ export default function ExplorePage({ pageData, error, topic, context }) {
 // Static generation for explore pages
 export async function getStaticProps({ params }) {
   const { slug } = params;
-  
+
   // Parse slug to extract topic and context
   const slugParts = slug || [];
   const topic = slugParts[0] ? slugParts[0].replace(/-/g, ' ') : 'Film Topic';
@@ -179,53 +173,56 @@ export async function getStaticProps({ params }) {
 
   try {
     // Generate the page content
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/generate-explore-page`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        topic,
-        context
-      }),
-    });
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/generate-explore-page`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          topic,
+          context,
+        }),
+      }
+    );
 
     if (response.ok) {
       const data = await response.json();
-      
+
       return {
         props: {
           pageData: data.data,
           topic,
           context,
-          error: null
+          error: null,
         },
-        revalidate: 86400 // Revalidate once per day
+        revalidate: 86400, // Revalidate once per day
       };
     } else {
       console.error('Failed to generate explore page:', response.status);
-      
+
       return {
         props: {
           pageData: null,
           topic,
           context,
-          error: 'Failed to generate content'
+          error: 'Failed to generate content',
         },
-        revalidate: 300 // Retry sooner on error
+        revalidate: 300, // Retry sooner on error
       };
     }
   } catch (error) {
     console.error('Error in getStaticProps for explore page:', error);
-    
+
     return {
       props: {
         pageData: null,
         topic,
         context,
-        error: 'Page generation error'
+        error: 'Page generation error',
       },
-      revalidate: 300
+      revalidate: 300,
     };
   }
 }
@@ -243,16 +240,16 @@ export async function getStaticPaths() {
     'color-in-cinema',
     'sound-design',
     'montage-theory',
-    'deep-focus-photography'
+    'deep-focus-photography',
   ];
 
   const paths = commonTopics.map(topic => ({
-    params: { slug: [topic] }
+    params: { slug: [topic] },
   }));
 
   return {
     paths,
-    fallback: 'blocking' // Generate other topics on demand
+    fallback: 'blocking', // Generate other topics on demand
   };
 }
 
@@ -261,7 +258,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100%',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   inputArea: {
     padding: '5px',

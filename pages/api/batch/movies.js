@@ -1,6 +1,6 @@
 /**
  * Railway Batch Processing API - Movies
- * 
+ *
  * Endpoint for automated movie analysis batch processing
  * Designed to run on Railway cron jobs
  */
@@ -68,7 +68,7 @@ MORE_IDEAS: title5|year5|description5|streaming5`;
 
         const analyzedIds = new Set(analyses?.map(a => a.movie_id) || []);
         const missingAnalysis = movies.filter(m => !analyzedIds.has(m.id));
-        
+
         allMoviesWithoutAnalysis.push(...missingAnalysis);
         offset += batchSize;
         hasMore = movies.length === batchSize;
@@ -90,34 +90,34 @@ MORE_IDEAS: title5|year5|description5|streaming5`;
         temperature: 0.7,
         system: [
           {
-            type: "text",
+            type: 'text',
             text: this.systemPrompt,
-            cache_control: { type: "ephemeral" }
-          }
+            cache_control: { type: 'ephemeral' },
+          },
         ],
-        messages: [{
-          role: 'user',
-          content: `${movie.title} (${movie.year})`
-        }]
-      }
+        messages: [
+          {
+            role: 'user',
+            content: `${movie.title} (${movie.year})`,
+          },
+        ],
+      },
     }));
 
     try {
       const batch = await anthropic.beta.messages.batches.create({
-        requests: requests
+        requests: requests,
       });
 
       // Store batch info in database
-      await supabase
-        .from('batch_jobs')
-        .insert({
-          batch_id: batch.id,
-          type: 'movie_analysis',
-          status: batch.processing_status,
-          movie_count: movies.length,
-          movie_ids: movies.map(m => m.id),
-          created_at: new Date().toISOString()
-        });
+      await supabase.from('batch_jobs').insert({
+        batch_id: batch.id,
+        type: 'movie_analysis',
+        status: batch.processing_status,
+        movie_count: movies.length,
+        movie_ids: movies.map(m => m.id),
+        created_at: new Date().toISOString(),
+      });
 
       return batch;
     } catch (error) {
@@ -129,12 +129,12 @@ MORE_IDEAS: title5|year5|description5|streaming5`;
   async processBatch() {
     try {
       const movies = await this.findMoviesMissingAnalysis(this.maxBatchSize);
-      
+
       if (movies.length === 0) {
         return {
           success: true,
           message: 'No movies needing analysis',
-          processed: 0
+          processed: 0,
         };
       }
 
@@ -146,13 +146,13 @@ MORE_IDEAS: title5|year5|description5|streaming5`;
         status: batch.processing_status,
         movies_queued: movies.length,
         estimated_cost: (movies.length * 0.01).toFixed(2),
-        message: `Batch created with ${movies.length} movies`
+        message: `Batch created with ${movies.length} movies`,
       };
     } catch (error) {
       console.error('Batch processing failed:', error);
       return {
         success: false,
-        error: error.message
+        error: error.message,
       };
     }
   }
@@ -182,7 +182,7 @@ export default async function handler(req, res) {
     console.error('Movie batch processing error:', error);
     return res.status(500).json({
       success: false,
-      error: error.message
+      error: error.message,
     });
   }
 }

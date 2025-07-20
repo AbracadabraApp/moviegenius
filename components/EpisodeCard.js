@@ -1,12 +1,12 @@
 /**
  * EpisodeCard Component - Episode card that looks like MediaCard
- * 
+ *
  * Specialized card for series episodes that mimics MediaCard appearance
  * but with custom text positioning: title right-aligned, poster, episode & subtitle left-aligned
- * 
+ *
  * @component
  * @example
- * <EpisodeCard 
+ * <EpisodeCard
  *   episode={episode}
  *   seriesId={2}
  *   onClick={() => router.push(`/recs/series/${seriesId}/${episode.id}`)}
@@ -19,38 +19,38 @@ import Image from 'next/image';
 function EpisodeCard({ episode, seriesId, onClick }) {
   const router = useRouter();
 
-  const handleCardClick = (e) => {
+  const handleCardClick = e => {
     if (onClick) {
       onClick(e);
     }
   };
 
   // Use first poster from episode posters array, or fallback to a real movie poster
-  const posterUrl = episode.posters && episode.posters.length > 0 
-    ? episode.posters[0] 
-    : 'https://image.tmdb.org/t/p/w200/3bhkrj58Vtu7enYsRolD1fZdja1.jpg'; // The Godfather poster as fallback
+  const posterUrl =
+    episode.posters && episode.posters.length > 0
+      ? episode.posters[0]
+      : 'https://image.tmdb.org/t/p/w200/3bhkrj58Vtu7enYsRolD1fZdja1.jpg'; // The Godfather poster as fallback
 
   return (
     <article
       style={styles.card}
       role="article"
       onClick={handleCardClick}
-      onMouseDown={(e) => {
+      onMouseDown={e => {
         e.currentTarget.style.transform = 'translateY(1px) scale(0.98)';
       }}
-      onMouseUp={(e) => {
+      onMouseUp={e => {
         e.currentTarget.style.transform = 'translateY(-2px) scale(1)';
       }}
-      onMouseEnter={(e) => {
+      onMouseEnter={e => {
         e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 0, 0, 0.30)';
         e.currentTarget.style.transform = 'translateY(-2px)';
       }}
-      onMouseLeave={(e) => {
+      onMouseLeave={e => {
         e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.20)';
         e.currentTarget.style.transform = 'translateY(0)';
       }}
     >
-
       <div style={styles.mainContent}>
         <div style={styles.textContainer}>
           {/* Left-aligned title and subtitle */}
@@ -92,7 +92,8 @@ const styles = {
     transition: 'box-shadow 0.15s ease, transform 0.1s ease',
     cursor: 'pointer',
     marginBottom: '16px',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     overflow: 'hidden',
   },
   mainContent: {
@@ -155,11 +156,13 @@ const styles = {
  * Custom prop comparison for EpisodeCard memoization
  */
 const arePropsEqual = (prevProps, nextProps) => {
-  return prevProps.seriesId === nextProps.seriesId &&
-         prevProps.episode?.id === nextProps.episode?.id &&
-         prevProps.episode?.title === nextProps.episode?.title &&
-         prevProps.episode?.subtitle === nextProps.episode?.subtitle &&
-         JSON.stringify(prevProps.episode?.posters) === JSON.stringify(nextProps.episode?.posters);
+  return (
+    prevProps.seriesId === nextProps.seriesId &&
+    prevProps.episode?.id === nextProps.episode?.id &&
+    prevProps.episode?.title === nextProps.episode?.title &&
+    prevProps.episode?.subtitle === nextProps.episode?.subtitle &&
+    JSON.stringify(prevProps.episode?.posters) === JSON.stringify(nextProps.episode?.posters)
+  );
 };
 
 // Export memoized component

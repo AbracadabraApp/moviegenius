@@ -1,7 +1,7 @@
 // pages/list/[slug].js
 /**
  * Movie List Page
- * 
+ *
  * Displays curated movie collections with Claude-generated descriptions.
  * Supports lists like "Movies That Chose Chaos", "AFI 100", etc.
  */
@@ -16,20 +16,20 @@ import BackButton from '../../components/BackButton';
 // Parse Claude content into interleaved sections (like movie page)
 function parseClaudeContentIntoSections(content) {
   if (!content) return [];
-  
+
   // Check if it's educational format (PARAGRAPH: / MOVIES:)
   if (content.includes('PARAGRAPH:')) {
     const sections = [];
     const lines = content.split('\n');
     let currentSection = null;
     let currentMovies = [];
-    
+
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i];
       const trimmedLine = line.trim();
-      
+
       if (!trimmedLine) continue;
-      
+
       if (trimmedLine.startsWith('PARAGRAPH:')) {
         // Push previous text section first
         if (currentSection) {
@@ -39,30 +39,30 @@ function parseClaudeContentIntoSections(content) {
         if (currentMovies.length > 0) {
           sections.push({
             type: 'movies',
-            movies: [...currentMovies]
+            movies: [...currentMovies],
           });
           currentMovies = [];
         }
         // Start new text section
         currentSection = {
           type: 'text',
-          content: trimmedLine.replace('PARAGRAPH:', '').trim()
+          content: trimmedLine.replace('PARAGRAPH:', '').trim(),
         };
       } else if (trimmedLine.startsWith('MOVIES:')) {
         const movieLine = trimmedLine.replace('MOVIES:', '').trim();
-        
+
         if (movieLine) {
           const parts = movieLine.split('|');
-          
+
           if (parts.length >= 2) {
             const [title, year, description, streaming] = parts;
             const movieObj = {
               title: title?.trim() || 'Unknown Title',
               year: parseInt(year?.trim()) || new Date().getFullYear(),
               slug: description?.trim() || 'No description available',
-              poster: '/images/placeholder-poster.jpg'
+              poster: '/images/placeholder-poster.jpg',
             };
-            
+
             currentMovies.push(movieObj);
           }
         }
@@ -70,36 +70,39 @@ function parseClaudeContentIntoSections(content) {
         currentSection.content += ' ' + trimmedLine;
       }
     }
-    
+
     // Handle final sections
     if (currentSection) {
       sections.push(currentSection);
     }
-    
+
     if (currentMovies.length > 0) {
       sections.push({
         type: 'movies',
-        movies: [...currentMovies]
+        movies: [...currentMovies],
       });
     }
-    
+
     return sections;
   }
-  
+
   // For declarative format, return simple text
   if (content.includes('DESCRIPTION:')) {
     const description = content.split('MOVIES:')[0].replace('DESCRIPTION:', '').trim();
     return [{ type: 'text', content: description }];
   }
-  
+
   // Fallback: treat as plain paragraphs
-  return content.split('\n\n').filter(p => p.trim()).map(p => ({ type: 'text', content: p }));
+  return content
+    .split('\n\n')
+    .filter(p => p.trim())
+    .map(p => ({ type: 'text', content: p }));
 }
 
 // Enhance Claude movies with TMDB data (like movie page)
 async function enhanceClaudeMoviesWithTMDB(sections) {
   const enhancedSections = [];
-  
+
   for (const section of sections) {
     if (section.type === 'movies' && section.movies) {
       const enhancedMovies = [];
@@ -112,10 +115,10 @@ async function enhanceClaudeMoviesWithTMDB(sections) {
           });
           if (dbResponse.ok) {
             const dbData = await dbResponse.json();
-            enhancedMovies.push({ 
-              ...movie, 
+            enhancedMovies.push({
+              ...movie,
               poster: dbData.poster_url || movie.poster,
-              tmdb_id: dbData.tmdb_id 
+              tmdb_id: dbData.tmdb_id,
             });
           } else {
             enhancedMovies.push(movie);
@@ -130,14 +133,14 @@ async function enhanceClaudeMoviesWithTMDB(sections) {
       enhancedSections.push(section);
     }
   }
-  
+
   return enhancedSections;
 }
 
 export default function MovieListPage() {
   const router = useRouter();
   const { slug } = router.query;
-  
+
   const [listData, setListData] = useState(null);
   const [claudeDescription, setClaudeDescription] = useState('');
   const [loading, setLoading] = useState(true);
@@ -155,7 +158,7 @@ export default function MovieListPage() {
 
         // Fetch list data
         const response = await fetch(`/api/movie-list?slug=${slug}`);
-        
+
         if (!response.ok) {
           throw new Error('List not found');
         }
@@ -166,7 +169,7 @@ export default function MovieListPage() {
         // Use cached description if available, otherwise generate one
         if (data.claudeDescription) {
           setClaudeDescription(data.claudeDescription);
-          
+
           // For educational lists, enhance Claude movies with TMDB data
           if (data.list.content_type === 'educational') {
             const sections = parseClaudeContentIntoSections(data.claudeDescription);
@@ -182,8 +185,8 @@ export default function MovieListPage() {
             body: JSON.stringify({
               listId: data.list.id,
               listName: data.list.name,
-              claudePrompt: data.list.claude_prompt
-            })
+              claudePrompt: data.list.claude_prompt,
+            }),
           });
 
           if (analysisResponse.ok) {
@@ -192,7 +195,6 @@ export default function MovieListPage() {
           }
           setGeneratingDescription(false);
         }
-
       } catch (err) {
         console.error('Error fetching list:', err);
         setError(err.message);
@@ -210,7 +212,7 @@ export default function MovieListPage() {
         <div style={styles.container}>
           {/* Back button for navigation */}
           <BackButton variant="icon" context="list" position="top-left" />
-          
+
           <div style={styles.inputArea}>
             <SimpleSearch onResults={() => {}} />
           </div>
@@ -228,7 +230,7 @@ export default function MovieListPage() {
         <div style={styles.container}>
           {/* Back button for navigation */}
           <BackButton variant="icon" context="list" position="top-left" />
-          
+
           <div style={styles.inputArea}>
             <SimpleSearch onResults={() => {}} />
           </div>
@@ -246,11 +248,11 @@ export default function MovieListPage() {
       <div style={styles.container}>
         {/* Back button for navigation */}
         <BackButton variant="icon" context="list" position="top-left" />
-        
+
         <div style={styles.inputArea}>
           <SimpleSearch onResults={() => {}} />
         </div>
-        
+
         <div style={styles.content}>
           {/* List Header */}
           <div style={styles.header}>
@@ -260,58 +262,52 @@ export default function MovieListPage() {
           {/* Educational Content - interleaved like movie page */}
           {claudeDescription && listData.list.content_type === 'educational' && (
             <div style={styles.claudeContent}>
-              {claudeSections.length > 0 ? (
-                claudeSections.map((section, sectionIndex) => (
-                  <div key={`section-${sectionIndex}`}>
-                    {section.type === 'text' && (
-                      <div style={styles.textSection}>
-                        {section.content}
-                      </div>
-                    )}
-                    {section.type === 'movies' && section.movies && (
-                      <div style={styles.movieList}>
-                        {section.movies.map((movie, movieIndex) => (
-                          <MediaCard
-                            key={`${movie.title}-${movie.year}-${sectionIndex}-${movieIndex}`}
-                            title={movie.title}
-                            year={movie.year}
-                            initialSlug={movie.slug}
-                            initialPoster={movie.poster}
-                            initialStreaming={movie.streaming}
-                            tmdbId={movie.tmdb_id}
-                          />
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                ))
-              ) : (
-                // Fallback while TMDB enhancement is loading
-                parseClaudeContentIntoSections(claudeDescription).map((section, sectionIndex) => (
-                  <div key={`fallback-${sectionIndex}`}>
-                    {section.type === 'text' && (
-                      <div style={styles.textSection}>
-                        {section.content}
-                      </div>
-                    )}
-                    {section.type === 'movies' && section.movies && (
-                      <div style={styles.movieList}>
-                        {section.movies.map((movie, movieIndex) => (
-                          <MediaCard
-                            key={`${movie.title}-${movie.year}-${sectionIndex}-${movieIndex}`}
-                            title={movie.title}
-                            year={movie.year}
-                            initialSlug={movie.slug}
-                            initialPoster={movie.poster}
-                            initialStreaming={movie.streaming}
-                            tmdbId={movie.tmdb_id}
-                          />
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                ))
-              )}
+              {claudeSections.length > 0
+                ? claudeSections.map((section, sectionIndex) => (
+                    <div key={`section-${sectionIndex}`}>
+                      {section.type === 'text' && (
+                        <div style={styles.textSection}>{section.content}</div>
+                      )}
+                      {section.type === 'movies' && section.movies && (
+                        <div style={styles.movieList}>
+                          {section.movies.map((movie, movieIndex) => (
+                            <MediaCard
+                              key={`${movie.title}-${movie.year}-${sectionIndex}-${movieIndex}`}
+                              title={movie.title}
+                              year={movie.year}
+                              initialSlug={movie.slug}
+                              initialPoster={movie.poster}
+                              initialStreaming={movie.streaming}
+                              tmdbId={movie.tmdb_id}
+                            />
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ))
+                : // Fallback while TMDB enhancement is loading
+                  parseClaudeContentIntoSections(claudeDescription).map((section, sectionIndex) => (
+                    <div key={`fallback-${sectionIndex}`}>
+                      {section.type === 'text' && (
+                        <div style={styles.textSection}>{section.content}</div>
+                      )}
+                      {section.type === 'movies' && section.movies && (
+                        <div style={styles.movieList}>
+                          {section.movies.map((movie, movieIndex) => (
+                            <MediaCard
+                              key={`${movie.title}-${movie.year}-${sectionIndex}-${movieIndex}`}
+                              title={movie.title}
+                              year={movie.year}
+                              initialSlug={movie.slug}
+                              initialPoster={movie.poster}
+                              initialStreaming={movie.streaming}
+                              tmdbId={movie.tmdb_id}
+                            />
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ))}
             </div>
           )}
 
@@ -329,7 +325,7 @@ export default function MovieListPage() {
           {/* Database Movies List */}
           <div style={styles.moviesSection}>
             <div style={styles.moviesList}>
-              {listData.movies.map((movie) => (
+              {listData.movies.map(movie => (
                 <div key={movie.id} style={styles.movieCardWrapper}>
                   <MediaCard
                     title={movie.title}
@@ -355,7 +351,8 @@ const styles = {
     flexDirection: 'column',
     minHeight: '100vh',
     backgroundColor: 'white',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   inputArea: {
     padding: '16px',
@@ -363,7 +360,9 @@ const styles = {
   },
   content: {
     flex: 1,
-    overflowY: 'scroll', scrollbarWidth: 'none', msOverflowStyle: 'none',
+    overflowY: 'scroll',
+    scrollbarWidth: 'none',
+    msOverflowStyle: 'none',
     padding: '0 16px 24px', // Match movie page padding
   },
   loadingContainer: {

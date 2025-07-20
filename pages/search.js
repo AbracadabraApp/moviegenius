@@ -1,6 +1,6 @@
 /**
  * Search Results Page
- * 
+ *
  * Shows movie search results using TMDB-first search system
  * Supports both text queries and category filters
  */
@@ -14,7 +14,7 @@ import MovieHeaderCompact from '../components/MovieHeaderCompact';
 export default function SearchPage() {
   const router = useRouter();
   const { q, category, 'new-releases': newReleases } = router.query;
-  
+
   const [searchResults, setSearchResults] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentQuery, setCurrentQuery] = useState('');
@@ -24,26 +24,26 @@ export default function SearchPage() {
     // Special categories
     'popular-all-time': 'Most Popular All Time',
     'top-rated': 'Top Rated Movies',
-    
+
     // TMDB Genres
-    'action': 'Action Movies',
-    'adventure': 'Adventure Films',
-    'animation': 'Animation Movies',
-    'comedy': 'Comedy Films',
-    'crime': 'Crime Movies',
-    'documentary': 'Documentary Films',
-    'drama': 'Drama Films',
-    'family': 'Family Movies',
-    'fantasy': 'Fantasy Films',
-    'history': 'History Movies',
-    'horror': 'Horror Movies',
-    'music': 'Music Movies',
-    'mystery': 'Mystery Movies',
-    'romance': 'Romance Movies',
+    action: 'Action Movies',
+    adventure: 'Adventure Films',
+    animation: 'Animation Movies',
+    comedy: 'Comedy Films',
+    crime: 'Crime Movies',
+    documentary: 'Documentary Films',
+    drama: 'Drama Films',
+    family: 'Family Movies',
+    fantasy: 'Fantasy Films',
+    history: 'History Movies',
+    horror: 'Horror Movies',
+    music: 'Music Movies',
+    mystery: 'Mystery Movies',
+    romance: 'Romance Movies',
     'science-fiction': 'Science Fiction',
-    'thriller': 'Thriller Movies',
-    'war': 'War Movies',
-    'western': 'Western Movies'
+    thriller: 'Thriller Movies',
+    war: 'War Movies',
+    western: 'Western Movies',
   };
 
   // Load search results on page load or query change
@@ -56,7 +56,7 @@ export default function SearchPage() {
       // Category search - handle special categories or genre search
       const displayQuery = categoryQueries[category] || category;
       setCurrentQuery(displayQuery);
-      
+
       if (category === 'popular-all-time' || category === 'top-rated') {
         performPopularSearch(category);
       } else {
@@ -70,16 +70,16 @@ export default function SearchPage() {
 
   const performSearch = async (query, isCategory = false) => {
     if (!query) return;
-    
+
     setLoading(true);
     try {
       // Use the working multi-search API for all searches
       const response = await fetch('/api/multi-search', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query })
+        body: JSON.stringify({ query }),
       });
-      
+
       if (response.ok) {
         const data = await response.json();
         setSearchResults(data.movies || []);
@@ -95,28 +95,28 @@ export default function SearchPage() {
     }
   };
 
-  const performNewReleasesSearch = async (releaseCategory) => {
+  const performNewReleasesSearch = async releaseCategory => {
     if (!releaseCategory) return;
-    
+
     setLoading(true);
-    
+
     // Set display title for new releases categories
     const releaseTitles = {
       'now-playing': 'Now Playing',
-      'upcoming': 'Coming Soon', 
-      'recent': 'Recent Releases',
-      'trending': 'Trending This Week'
+      upcoming: 'Coming Soon',
+      recent: 'Recent Releases',
+      trending: 'Trending This Week',
     };
-    
+
     setCurrentQuery(releaseTitles[releaseCategory] || releaseCategory);
-    
+
     try {
       const response = await fetch('/api/new-releases', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ category: releaseCategory })
+        body: JSON.stringify({ category: releaseCategory }),
       });
-      
+
       if (response.ok) {
         const data = await response.json();
         setSearchResults(data.movies || []);
@@ -132,18 +132,18 @@ export default function SearchPage() {
     }
   };
 
-  const performPopularSearch = async (popularCategory) => {
+  const performPopularSearch = async popularCategory => {
     if (!popularCategory) return;
-    
+
     setLoading(true);
-    
+
     try {
       const response = await fetch('/api/popular-movies', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ category: popularCategory })
+        body: JSON.stringify({ category: popularCategory }),
       });
-      
+
       if (response.ok) {
         const data = await response.json();
         setSearchResults(data.movies || []);
@@ -159,14 +159,16 @@ export default function SearchPage() {
     }
   };
 
-  const performGenreSearch = async (genreCategory) => {
+  const performGenreSearch = async genreCategory => {
     if (!genreCategory) return;
-    
+
     setLoading(true);
-    
+
     try {
-      const response = await fetch(`/api/tmdb-genre-search?category=${encodeURIComponent(genreCategory)}`);
-      
+      const response = await fetch(
+        `/api/tmdb-genre-search?category=${encodeURIComponent(genreCategory)}`
+      );
+
       if (response.ok) {
         const data = await response.json();
         setSearchResults(data.movies || []);
@@ -182,12 +184,12 @@ export default function SearchPage() {
     }
   };
 
-  const handleSearchResults = (results) => {
+  const handleSearchResults = results => {
     // This is for when SimpleSearch redirects here, results will be empty
     // The search will be performed by the useEffect when the URL query changes
   };
 
-  const handleMovieClick = (movie) => {
+  const handleMovieClick = movie => {
     console.log('Movie clicked:', movie);
     if (movie.tmdb_id) {
       console.log('Navigating to:', `/movie/${movie.tmdb_id}`);
@@ -209,7 +211,7 @@ export default function SearchPage() {
       <div style={styles.container}>
         {/* Search header */}
         <div style={styles.header}>
-          <SimpleSearch 
+          <SimpleSearch
             onResults={handleSearchResults}
             placeholder="Search movies..."
             initialQuery={q}
@@ -224,7 +226,9 @@ export default function SearchPage() {
             <h1 style={styles.resultsTitle}>{getCategoryTitle()}</h1>
             {(searchResults.length > 0 || loading) && (
               <span style={styles.resultsCount}>
-                {loading ? 'Searching...' : `${searchResults.length} movie${searchResults.length !== 1 ? 's' : ''} found`}
+                {loading
+                  ? 'Searching...'
+                  : `${searchResults.length} movie${searchResults.length !== 1 ? 's' : ''} found`}
               </span>
             )}
           </div>
@@ -236,7 +240,11 @@ export default function SearchPage() {
             </div>
           ) : searchResults.length > 0 ? (
             <div style={styles.movieGrid}>
-              {console.log('🔍 Rendering search results with MovieHeaderCompact:', searchResults.length, 'movies')}
+              {console.log(
+                '🔍 Rendering search results with MovieHeaderCompact:',
+                searchResults.length,
+                'movies'
+              )}
               {searchResults.map((movie, index) => (
                 <MovieHeaderCompact
                   key={`${movie.tmdb_id || movie.title}-${index}`}
@@ -278,7 +286,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     height: '100%',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     backgroundColor: '#f9fafb',
   },
   header: {
@@ -291,7 +300,7 @@ const styles = {
     scrollbarWidth: 'none',
     msOverflowStyle: 'none',
   },
-  
+
   resultsHeader: {
     marginBottom: '20px',
     padding: '0 16px',
@@ -306,12 +315,12 @@ const styles = {
     fontSize: '14px',
     color: '#6b7280',
   },
-  
+
   movieGrid: {
     display: 'flex',
     flexDirection: 'column',
   },
-  
+
   loadingContainer: {
     display: 'flex',
     justifyContent: 'center',
@@ -322,7 +331,7 @@ const styles = {
     fontSize: '16px',
     color: '#6b7280',
   },
-  
+
   noResults: {
     textAlign: 'center',
     padding: '60px 20px',
@@ -342,7 +351,7 @@ const styles = {
     color: '#6b7280',
     lineHeight: '1.5',
   },
-  
+
   emptyState: {
     textAlign: 'center',
     padding: '80px 20px',

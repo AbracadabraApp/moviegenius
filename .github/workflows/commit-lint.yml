@@ -11,22 +11,22 @@ jobs:
   commitlint:
     name: Commit Message Check
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-      
+
       - name: Install commitlint
         run: |
           npm install -g @commitlint/cli @commitlint/config-conventional
-      
+
       - name: Lint commit messages
         run: |
           # Check all commits in the PR

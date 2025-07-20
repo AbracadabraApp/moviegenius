@@ -2,7 +2,7 @@
 
 /**
  * Episode Content Pre-Generation Script
- * 
+ *
  * This script generates all episode content using Claude AI and saves it as static files
  * for instant loading. MediaCards remain dynamic for real-time streaming info.
  */
@@ -103,7 +103,7 @@ Structure your 6 paragraphs to cover:
 5. Cultural influence and box office success
 6. Legacy and influence on modern cinema
 
-Write substantial paragraphs with specific film titles and director names throughout. Use subheads to organize theme changes and include thought-provoking questions for further exploration.`
+Write substantial paragraphs with specific film titles and director names throughout. Use subheads to organize theme changes and include thought-provoking questions for further exploration.`,
   };
 }
 
@@ -111,26 +111,28 @@ Write substantial paragraphs with specific film titles and director names throug
 async function generateEpisodeContent(series, episode) {
   const seriesId = series.id;
   const episodeId = episode.id;
-  
+
   console.log(`Generating content for Series ${seriesId}, Episode ${episodeId}: ${episode.title}`);
-  
+
   try {
     const prompt = createEpisodePrompt(series, episode);
-    
+
     const message = await anthropic.messages.create({
       model: 'claude-3-5-sonnet-20241022',
       max_tokens: 4000,
       temperature: 0.7,
       system: prompt.system,
-      messages: [{
-        role: 'user',
-        content: prompt.user
-      }]
+      messages: [
+        {
+          role: 'user',
+          content: prompt.user,
+        },
+      ],
     });
 
     const responseText = message.content[0].text.trim();
     const parsedContent = parseClaudeResponse(responseText);
-    
+
     // Add metadata
     const episodeData = {
       seriesId,
@@ -138,28 +140,27 @@ async function generateEpisodeContent(series, episode) {
       series: {
         id: series.id,
         title: series.title,
-        description: series.description
+        description: series.description,
       },
       episode: {
         id: episode.id,
         title: episode.title,
         subtitle: episode.subtitle,
-        posters: episode.posters || []
+        posters: episode.posters || [],
       },
       content: parsedContent,
       generatedAt: new Date().toISOString(),
-      version: '1.0'
+      version: '1.0',
     };
-    
+
     // Save to file
     const fileName = `series-${seriesId}-episode-${episodeId}.json`;
     const filePath = path.join(OUTPUT_DIR, fileName);
-    
+
     fs.writeFileSync(filePath, JSON.stringify(episodeData, null, 2));
     console.log(`✅ Saved: ${fileName}`);
-    
+
     return episodeData;
-    
   } catch (error) {
     console.error(`❌ Error generating Series ${seriesId}, Episode ${episodeId}:`, error.message);
     return null;
@@ -172,70 +173,67 @@ function parseClaudeResponse(responseText) {
   const moreIdeasMovies = [];
   const exploreFurtherPrompts = [];
   let opener = null;
-  
+
   const lines = responseText.split('\n');
   let currentSection = null;
   let currentMovies = [];
   let inMoreIdeas = false;
   let inExploreFurther = false;
-  
+
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     const trimmedLine = line.trim();
-    
+
     if (!trimmedLine) continue;
-    
+
     if (trimmedLine.startsWith('OPENER:')) {
       opener = trimmedLine.substring('OPENER:'.length).trim();
-      
     } else if (trimmedLine.startsWith('SUBHEAD:')) {
       // Save previous section if exists
       if (currentSection) {
         sections.push({
           type: 'text',
-          content: currentSection
+          content: currentSection,
         });
-        
+
         if (currentMovies.length > 0) {
           sections.push({
             type: 'movies',
-            movies: currentMovies
+            movies: currentMovies,
           });
           currentMovies = [];
         }
       }
-      
+
       // Add subhead
       sections.push({
         type: 'subhead',
-        content: trimmedLine.substring('SUBHEAD:'.length).trim()
+        content: trimmedLine.substring('SUBHEAD:'.length).trim(),
       });
       currentSection = null;
-      
     } else if (trimmedLine.startsWith('PARAGRAPH:')) {
       // Save previous section if exists
       if (currentSection) {
         sections.push({
           type: 'text',
-          content: currentSection
+          content: currentSection,
         });
-        
+
         if (currentMovies.length > 0) {
           sections.push({
             type: 'movies',
-            movies: currentMovies
+            movies: currentMovies,
           });
           currentMovies = [];
         }
       }
-      
+
       // Start new section
       currentSection = trimmedLine.substring('PARAGRAPH:'.length).trim();
-      
     } else if (trimmedLine.startsWith('MOVIES:') && !inMoreIdeas && !inExploreFurther) {
       const movieData = trimmedLine.substring('MOVIES:'.length).trim();
       const [title, year, description, tmdbId] = movieData.split('|').map(s => s?.trim());
-      
+
       if (title && year) {
         currentMovies.push({
           title,
@@ -243,60 +241,58 @@ function parseClaudeResponse(responseText) {
           slug: description || '',
           tmdb_id: tmdbId || null,
           poster_url: null, // Will be populated by MediaCard dynamically
-          streaming: null   // Will be populated by MediaCard dynamically
+          streaming: null, // Will be populated by MediaCard dynamically
         });
       }
-      
     } else if (trimmedLine.startsWith('EXPLORE_FURTHER:')) {
       if (!inExploreFurther) {
         inExploreFurther = true;
-        
+
         // Save any pending section
         if (currentSection) {
           sections.push({
             type: 'text',
-            content: currentSection
+            content: currentSection,
           });
           currentSection = null;
-          
+
           if (currentMovies.length > 0) {
             sections.push({
               type: 'movies',
-              movies: currentMovies
+              movies: currentMovies,
             });
             currentMovies = [];
           }
         }
       }
-      
+
       const prompt = trimmedLine.substring('EXPLORE_FURTHER:'.length).trim();
       if (prompt) {
         exploreFurtherPrompts.push(prompt);
       }
-      
     } else if (trimmedLine.startsWith('MORE_IDEAS:')) {
       inMoreIdeas = true;
-      
+
       // Save any pending section
       if (currentSection) {
         sections.push({
           type: 'text',
-          content: currentSection
+          content: currentSection,
         });
         currentSection = null;
-        
+
         if (currentMovies.length > 0) {
           sections.push({
             type: 'movies',
-            movies: currentMovies
+            movies: currentMovies,
           });
           currentMovies = [];
         }
       }
-      
+
       const movieData = trimmedLine.substring('MORE_IDEAS:'.length).trim();
       const [title, year, description, tmdbId] = movieData.split('|').map(s => s?.trim());
-      
+
       if (title && year) {
         moreIdeasMovies.push({
           title,
@@ -304,97 +300,99 @@ function parseClaudeResponse(responseText) {
           slug: description || '',
           tmdb_id: tmdbId || null,
           poster_url: null,
-          streaming: null
+          streaming: null,
         });
       }
     }
   }
-  
+
   // Save final section
   if (currentSection) {
     sections.push({
       type: 'text',
-      content: currentSection
+      content: currentSection,
     });
-    
+
     if (currentMovies.length > 0) {
       sections.push({
         type: 'movies',
-        movies: currentMovies
+        movies: currentMovies,
       });
     }
   }
-  
+
   // Add explore further section if we have prompts
   if (exploreFurtherPrompts.length > 0) {
     sections.push({
       type: 'explore_further',
-      prompts: exploreFurtherPrompts
+      prompts: exploreFurtherPrompts,
     });
   }
-  
+
   return {
     opener,
     sections,
     moreIdeas: {
       title: 'More Ideas',
-      movies: moreIdeasMovies
-    }
+      movies: moreIdeasMovies,
+    },
   };
 }
 
 // Process episodes with concurrency control
 async function processEpisodesWithLimit(episodes, limit) {
   const results = [];
-  
+
   for (let i = 0; i < episodes.length; i += limit) {
     const batch = episodes.slice(i, i + limit);
-    const batchPromises = batch.map(({ series, episode }) => 
+    const batchPromises = batch.map(({ series, episode }) =>
       generateEpisodeContent(series, episode)
     );
-    
+
     const batchResults = await Promise.all(batchPromises);
     results.push(...batchResults);
-    
+
     // Add small delay between batches to be respectful to API
     if (i + limit < episodes.length) {
       await new Promise(resolve => setTimeout(resolve, 2000));
     }
   }
-  
+
   return results;
 }
 
 // Main execution
 async function main() {
   console.log('🚀 Starting episode content pre-generation...');
-  
+
   const seriesConfig = loadSeriesConfig();
   const episodes = [];
-  
+
   // Build list of all episodes to generate
   for (const [seriesId, series] of Object.entries(seriesConfig)) {
     for (const episode of series.episodes) {
       episodes.push({ series, episode });
     }
   }
-  
-  console.log(`📚 Found ${episodes.length} episodes across ${Object.keys(seriesConfig).length} series`);
+
+  console.log(
+    `📚 Found ${episodes.length} episodes across ${Object.keys(seriesConfig).length} series`
+  );
   console.log(`⚡ Processing with concurrency limit: ${CONCURRENT_LIMIT}`);
-  
+
   const startTime = Date.now();
   const results = await processEpisodesWithLimit(episodes, CONCURRENT_LIMIT);
   const endTime = Date.now();
-  
+
   const successful = results.filter(r => r !== null).length;
   const failed = results.length - successful;
-  
+
   console.log('\n🎬 Generation Complete!');
   console.log(`✅ Successfully generated: ${successful} episodes`);
   console.log(`❌ Failed: ${failed} episodes`);
   console.log(`⏱️  Total time: ${Math.round((endTime - startTime) / 1000)}s`);
   console.log(`📁 Files saved to: ${OUTPUT_DIR}`);
-  
+
   if (failed > 0) {
     console.log('\n⚠️  Some episodes failed to generate. Check the error messages above.');
     process.exit(1);
@@ -402,7 +400,7 @@ async function main() {
 }
 
 // Handle errors
-process.on('unhandledRejection', (error) => {
+process.on('unhandledRejection', error => {
   console.error('Unhandled promise rejection:', error);
   process.exit(1);
 });
@@ -415,5 +413,5 @@ if (require.main === module) {
 module.exports = {
   generateEpisodeContent,
   loadSeriesConfig,
-  parseClaudeResponse
+  parseClaudeResponse,
 };

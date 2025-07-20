@@ -1,7 +1,7 @@
 // pages/genius/list/[id].js
 /**
  * Unified List Page
- * 
+ *
  * Uses the same template as ask results for consistent UX.
  * Displays: Header + Claude Description + Movie Cards + Explore Further + More Ideas
  */
@@ -17,7 +17,7 @@ import loadingMessages from '../../../data/loading-messages.json';
 export default function ListPage() {
   const router = useRouter();
   const { id } = router.query;
-  
+
   const [listContent, setListContent] = useState(null);
   const [listTitle, setListTitle] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -26,20 +26,23 @@ export default function ListPage() {
   const [error, setError] = useState(null);
 
   // Handle search results
-  const handleSearchResults = useCallback((results) => {
-    // Auto-navigate to single results
-    if (results.length === 1) {
-      const movie = results[0];
-      if (movie.tmdb_id) {
-        router.push(`/movie/${movie.tmdb_id}`);
-        return;
+  const handleSearchResults = useCallback(
+    results => {
+      // Auto-navigate to single results
+      if (results.length === 1) {
+        const movie = results[0];
+        if (movie.tmdb_id) {
+          router.push(`/movie/${movie.tmdb_id}`);
+          return;
+        }
       }
-    }
-    // For multiple results, redirect to search page
-    if (results.length > 1) {
-      router.push('/search');
-    }
-  }, [router]);
+      // For multiple results, redirect to search page
+      if (results.length > 1) {
+        router.push('/search');
+      }
+    },
+    [router]
+  );
 
   useEffect(() => {
     if (!id) return;
@@ -52,14 +55,14 @@ export default function ListPage() {
 
         // First, get just the list metadata quickly
         const metadataResponse = await fetch(`/api/genius-list?id=${id}&metadata=true`);
-        
+
         if (!metadataResponse.ok) {
           const errorData = await metadataResponse.json();
           throw new Error(errorData.error || 'Failed to fetch list');
         }
 
         const metadataData = await metadataResponse.json();
-        
+
         // Show the title immediately
         setListTitle(metadataData.list.name);
         setIsLoading(true);
@@ -67,10 +70,10 @@ export default function ListPage() {
         // Start cycling loading messages and icons for the description
         const iconFiles = [
           'film-movie-reel-icon.png',
-          'film-movie-icon.png', 
-          'chair-director-outline-icon.png'
+          'film-movie-icon.png',
+          'chair-director-outline-icon.png',
         ];
-        
+
         // Set initial message and icon
         const setRandomLoadingContent = () => {
           const randomMessage = loadingMessages[Math.floor(Math.random() * loadingMessages.length)];
@@ -78,60 +81,63 @@ export default function ListPage() {
           setLoadingMessage(randomMessage);
           setLoadingIcon(randomIcon);
         };
-        
+
         // Set initial content
         setRandomLoadingContent();
-        
+
         // Cycle every 5 seconds
         const cycleInterval = setInterval(setRandomLoadingContent, 5000);
 
         // Now fetch the full content including Claude description
         const response = await fetch(`/api/genius-list?id=${id}`);
-        
+
         if (!response.ok) {
           const errorData = await response.json();
           throw new Error(errorData.error || 'Failed to fetch list');
         }
 
         const data = await response.json();
-        
+
         // Structure the data like an ask result for unified template
         const unifiedContent = {
           id: `list-${id}`,
           question: data.list.name, // List title as "question"
           sections: [
             // Only include text section if we have Claude description
-            ...(data.claudeDescription ? [{
-              type: 'text',
-              content: data.claudeDescription
-            }] : [])
+            ...(data.claudeDescription
+              ? [
+                  {
+                    type: 'text',
+                    content: data.claudeDescription,
+                  },
+                ]
+              : []),
             // Movies will be added here when available
           ],
           exploreFurther: [
             'Similar Collections',
-            'Time Period Focus', 
+            'Time Period Focus',
             'Genre Variants',
-            'Thematic Connections'
+            'Thematic Connections',
           ],
           moreIdeas: {
-            movies: [] // Related lists will go here eventually
+            movies: [], // Related lists will go here eventually
           },
           isLoading: false,
-          isLoadingExplore: false
+          isLoadingExplore: false,
         };
 
         // Add movies if available
         if (data.movies && data.movies.length > 0) {
           unifiedContent.sections.push({
             type: 'movies',
-            movies: data.movies
+            movies: data.movies,
           });
         }
 
         setListContent(unifiedContent);
         clearInterval(cycleInterval);
         console.log(`✅ List content loaded: ${data.list.name}`);
-
       } catch (err) {
         console.error('Error fetching list content:', err);
         setError(err.message);
@@ -172,14 +178,14 @@ export default function ListPage() {
             <div style={styles.messageGroup}>
               {/* Header - List title (shown immediately) */}
               <div style={styles.questionHeader}>{listTitle}</div>
-              
+
               {isLoading ? (
                 <div style={styles.loadingContainer}>
                   <div style={styles.loadingRow}>
                     {loadingIcon && (
-                      <img 
-                        src={`/icons/loading/${loadingIcon}`} 
-                        alt="Loading..." 
+                      <img
+                        src={`/icons/loading/${loadingIcon}`}
+                        alt="Loading..."
                         style={styles.filmIcon}
                       />
                     )}
@@ -190,50 +196,49 @@ export default function ListPage() {
                 listContent && (
                   <>
                     {/* Render sections - same as ask page */}
-                    {listContent.sections && listContent.sections.map((section, sectionIndex) => (
-                      <div key={`section-${sectionIndex}`}>
-                        {section.type === 'text' && (
-                          <div style={styles.answer}>
-                            {underlineProperNames(section.content)}
-                          </div>
-                        )}
-                        {section.type === 'movies' && section.movies && (
-                          <div style={styles.movieList}>
-                            {section.movies.map((movie, movieIndex) => (
-                              <MediaCard
-                                key={`${listContent.id}-${sectionIndex}-${movieIndex}`}
-                                title={movie.title}
-                                year={movie.year}
-                                initialSlug={movie.slug}
-                                initialPoster={movie.poster}
-                                initialStreaming={movie.streaming}
-                                tmdbId={movie.tmdb_id}
-                              />
-                            ))}
-                          </div>
-                        )}
-                      </div>
-                    ))}
-                    
+                    {listContent.sections &&
+                      listContent.sections.map((section, sectionIndex) => (
+                        <div key={`section-${sectionIndex}`}>
+                          {section.type === 'text' && (
+                            <div style={styles.answer}>{underlineProperNames(section.content)}</div>
+                          )}
+                          {section.type === 'movies' && section.movies && (
+                            <div style={styles.movieList}>
+                              {section.movies.map((movie, movieIndex) => (
+                                <MediaCard
+                                  key={`${listContent.id}-${sectionIndex}-${movieIndex}`}
+                                  title={movie.title}
+                                  year={movie.year}
+                                  initialSlug={movie.slug}
+                                  initialPoster={movie.poster}
+                                  initialStreaming={movie.streaming}
+                                  tmdbId={movie.tmdb_id}
+                                />
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      ))}
+
                     {/* Render Explore Further section */}
                     {listContent.exploreFurther && listContent.exploreFurther.length > 0 && (
                       <div style={styles.exploreFurtherSection}>
                         <h3 style={styles.exploreFurtherTitle}>Explore Further</h3>
                         <div style={styles.topicList}>
                           {listContent.exploreFurther.map((topic, index) => (
-                            <div 
-                              key={`topic-${index}`} 
+                            <div
+                              key={`topic-${index}`}
                               style={styles.topicItem}
                               onClick={() => {
                                 // For now, redirect to ask - later could generate related lists
                                 const contextualQuery = `${listContent.question}: ${topic}`;
                                 router.push(`/ask?q=${encodeURIComponent(contextualQuery)}`);
                               }}
-                              onMouseEnter={(e) => {
+                              onMouseEnter={e => {
                                 e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
                                 e.currentTarget.style.transform = 'translateY(-2px)';
                               }}
-                              onMouseLeave={(e) => {
+                              onMouseLeave={e => {
                                 e.currentTarget.style.boxShadow = '0 2px 6px rgba(0, 0, 0, 0.12)';
                                 e.currentTarget.style.transform = 'translateY(0)';
                               }}
@@ -244,32 +249,34 @@ export default function ListPage() {
                         </div>
                       </div>
                     )}
-                    
+
                     {/* Render More Ideas section */}
-                    {listContent.moreIdeas && listContent.moreIdeas.movies && listContent.moreIdeas.movies.length > 0 && (
-                      <div style={styles.moreIdeasSection}>
-                        <h3 style={styles.moreIdeasTitle}>Related Lists</h3>
-                        <div style={styles.movieList}>
-                          {listContent.moreIdeas.movies.map((item, index) => (
-                            <MediaCard
-                              key={`more-${listContent.id}-${index}`}
-                              title={item.title}
-                              year={item.year}
-                              initialSlug={item.slug}
-                              initialPoster={item.poster}
-                              initialStreaming={item.streaming}
-                              tmdbId={item.tmdb_id}
-                            />
-                          ))}
+                    {listContent.moreIdeas &&
+                      listContent.moreIdeas.movies &&
+                      listContent.moreIdeas.movies.length > 0 && (
+                        <div style={styles.moreIdeasSection}>
+                          <h3 style={styles.moreIdeasTitle}>Related Lists</h3>
+                          <div style={styles.movieList}>
+                            {listContent.moreIdeas.movies.map((item, index) => (
+                              <MediaCard
+                                key={`more-${listContent.id}-${index}`}
+                                title={item.title}
+                                year={item.year}
+                                initialSlug={item.slug}
+                                initialPoster={item.poster}
+                                initialStreaming={item.streaming}
+                                tmdbId={item.tmdb_id}
+                              />
+                            ))}
+                          </div>
                         </div>
-                      </div>
-                    )}
+                      )}
                   </>
                 )
               )}
             </div>
           )}
-          
+
           {!listTitle && isLoading && (
             <div style={styles.loadingContainer}>
               <div style={styles.loadingText}>Loading list...</div>
@@ -287,7 +294,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     height: '100%',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   inputArea: {
     padding: '16px',
@@ -295,7 +303,9 @@ const styles = {
   },
   conversationArea: {
     flex: 1,
-    overflowY: 'scroll', scrollbarWidth: 'none', msOverflowStyle: 'none',
+    overflowY: 'scroll',
+    scrollbarWidth: 'none',
+    msOverflowStyle: 'none',
     padding: '16px',
     display: 'flex',
     flexDirection: 'column',

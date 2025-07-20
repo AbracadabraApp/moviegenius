@@ -17,70 +17,191 @@ export default function ListsManagementPage() {
   const definitiveListsData = {
     'afi-100-greatest-american-films': {
       name: 'AFI 100 Greatest American Films',
-      description: 'The American Film Institute\'s definitive ranking of the greatest American movies',
+      description:
+        "The American Film Institute's definitive ranking of the greatest American movies",
       content_type: 'declarative',
-      movies: afi100Data
+      movies: afi100Data,
     },
     'sight-sound-greatest-films': {
       name: 'Sight & Sound Greatest Films of All Time',
-      description: 'The critics\' poll from the British Film Institute\'s prestigious magazine',
+      description: "The critics' poll from the British Film Institute's prestigious magazine",
       content_type: 'declarative',
       movies: [
-        { title: "Citizen Kane", year: 1941, tmdbId: 15, slug: "A newspaper magnate's rise and fall." },
-        { title: "Vertigo", year: 1958, tmdbId: 832, slug: "A detective's obsession with a mysterious woman." },
-        { title: "The Rules of the Game", year: 1939, tmdbId: 14429, slug: "French aristocrats' weekend hunting party." },
-        { title: "Tokyo Story", year: 1953, tmdbId: 18148, slug: "Elderly parents visit their adult children." },
-        { title: "2001: A Space Odyssey", year: 1968, tmdbId: 62, slug: "Humanity's journey from apes to starchild." }
-      ]
+        {
+          title: 'Citizen Kane',
+          year: 1941,
+          tmdbId: 15,
+          slug: "A newspaper magnate's rise and fall.",
+        },
+        {
+          title: 'Vertigo',
+          year: 1958,
+          tmdbId: 832,
+          slug: "A detective's obsession with a mysterious woman.",
+        },
+        {
+          title: 'The Rules of the Game',
+          year: 1939,
+          tmdbId: 14429,
+          slug: "French aristocrats' weekend hunting party.",
+        },
+        {
+          title: 'Tokyo Story',
+          year: 1953,
+          tmdbId: 18148,
+          slug: 'Elderly parents visit their adult children.',
+        },
+        {
+          title: '2001: A Space Odyssey',
+          year: 1968,
+          tmdbId: 62,
+          slug: "Humanity's journey from apes to starchild.",
+        },
+      ],
     },
     'criterion-collection-essentials': {
       name: 'Criterion Collection Essentials',
       description: 'Essential films from the prestigious Criterion Collection',
       content_type: 'declarative',
       movies: [
-        { title: "Seven Samurai", year: 1954, tmdbId: 346, slug: "Samurai defend a village from bandits." },
-        { title: "8½", year: 1963, tmdbId: 15, slug: "A director's creative and personal crisis." },
-        { title: "Persona", year: 1966, tmdbId: 14579, slug: "An actress goes silent, her nurse speaks." },
-        { title: "The 400 Blows", year: 1959, tmdbId: 12477, slug: "A troubled boy's coming of age in Paris." },
-        { title: "Bicycle Thieves", year: 1948, tmdbId: 14535, slug: "A man searches Rome for his stolen bicycle." }
-      ]
+        {
+          title: 'Seven Samurai',
+          year: 1954,
+          tmdbId: 346,
+          slug: 'Samurai defend a village from bandits.',
+        },
+        { title: '8½', year: 1963, tmdbId: 15, slug: "A director's creative and personal crisis." },
+        {
+          title: 'Persona',
+          year: 1966,
+          tmdbId: 14579,
+          slug: 'An actress goes silent, her nurse speaks.',
+        },
+        {
+          title: 'The 400 Blows',
+          year: 1959,
+          tmdbId: 12477,
+          slug: "A troubled boy's coming of age in Paris.",
+        },
+        {
+          title: 'Bicycle Thieves',
+          year: 1948,
+          tmdbId: 14535,
+          slug: 'A man searches Rome for his stolen bicycle.',
+        },
+      ],
     },
     'best-picture-winners-2000s': {
       name: 'Best Picture Winners (2000-2020)',
       description: 'Academy Award Best Picture winners from the 21st century',
       content_type: 'declarative',
       movies: [
-        { title: "Parasite", year: 2019, tmdbId: 496243, slug: "A poor family infiltrates a wealthy household." },
-        { title: "Green Book", year: 2018, tmdbId: 490132, slug: "A pianist's tour through the segregated South." },
-        { title: "The Shape of Water", year: 2017, tmdbId: 399055, slug: "A mute woman falls for an amphibian creature." },
-        { title: "Moonlight", year: 2016, tmdbId: 376867, slug: "A young man's journey of self-discovery." },
-        { title: "Spotlight", year: 2015, tmdbId: 359940, slug: "Journalists uncover Catholic Church scandal." }
-      ]
+        {
+          title: 'Parasite',
+          year: 2019,
+          tmdbId: 496243,
+          slug: 'A poor family infiltrates a wealthy household.',
+        },
+        {
+          title: 'Green Book',
+          year: 2018,
+          tmdbId: 490132,
+          slug: "A pianist's tour through the segregated South.",
+        },
+        {
+          title: 'The Shape of Water',
+          year: 2017,
+          tmdbId: 399055,
+          slug: 'A mute woman falls for an amphibian creature.',
+        },
+        {
+          title: 'Moonlight',
+          year: 2016,
+          tmdbId: 376867,
+          slug: "A young man's journey of self-discovery.",
+        },
+        {
+          title: 'Spotlight',
+          year: 2015,
+          tmdbId: 359940,
+          slug: 'Journalists uncover Catholic Church scandal.',
+        },
+      ],
     },
     'film-noir-classics': {
       name: 'Film Noir Classics',
       description: 'Essential films from the golden age of noir cinema',
       content_type: 'declarative',
       movies: [
-        { title: "The Maltese Falcon", year: 1941, tmdbId: 891, slug: "A detective hunts for a valuable bird statue." },
-        { title: "Double Indemnity", year: 1944, tmdbId: 18, slug: "An insurance salesman plans the perfect murder." },
-        { title: "The Big Sleep", year: 1946, tmdbId: 1398, slug: "A private eye investigates a blackmail case." },
-        { title: "Touch of Evil", year: 1958, tmdbId: 754, slug: "A cop investigates a bombing on the border." },
-        { title: "The Third Man", year: 1949, tmdbId: 1104, slug: "A writer searches for his friend in post-war Vienna." }
-      ]
+        {
+          title: 'The Maltese Falcon',
+          year: 1941,
+          tmdbId: 891,
+          slug: 'A detective hunts for a valuable bird statue.',
+        },
+        {
+          title: 'Double Indemnity',
+          year: 1944,
+          tmdbId: 18,
+          slug: 'An insurance salesman plans the perfect murder.',
+        },
+        {
+          title: 'The Big Sleep',
+          year: 1946,
+          tmdbId: 1398,
+          slug: 'A private eye investigates a blackmail case.',
+        },
+        {
+          title: 'Touch of Evil',
+          year: 1958,
+          tmdbId: 754,
+          slug: 'A cop investigates a bombing on the border.',
+        },
+        {
+          title: 'The Third Man',
+          year: 1949,
+          tmdbId: 1104,
+          slug: 'A writer searches for his friend in post-war Vienna.',
+        },
+      ],
     },
     'foreign-language-masterpieces': {
       name: 'Foreign Language Masterpieces',
       description: 'Essential non-English language films that changed cinema',
       content_type: 'declarative',
       movies: [
-        { title: "Amélie", year: 2001, tmdbId: 194, slug: "A whimsical waitress changes lives in Montmartre." },
-        { title: "Cinema Paradiso", year: 1988, tmdbId: 11216, slug: "A filmmaker remembers his childhood projectionist." },
-        { title: "Akira", year: 1988, tmdbId: 149, slug: "Psychic powers awaken in post-apocalyptic Tokyo." },
-        { title: "Spirited Away", year: 2001, tmdbId: 129, slug: "A girl enters a world of spirits and magic." },
-        { title: "Bicycle Thieves", year: 1948, tmdbId: 14535, slug: "A man searches Rome for his stolen bicycle." }
-      ]
-    }
+        {
+          title: 'Amélie',
+          year: 2001,
+          tmdbId: 194,
+          slug: 'A whimsical waitress changes lives in Montmartre.',
+        },
+        {
+          title: 'Cinema Paradiso',
+          year: 1988,
+          tmdbId: 11216,
+          slug: 'A filmmaker remembers his childhood projectionist.',
+        },
+        {
+          title: 'Akira',
+          year: 1988,
+          tmdbId: 149,
+          slug: 'Psychic powers awaken in post-apocalyptic Tokyo.',
+        },
+        {
+          title: 'Spirited Away',
+          year: 2001,
+          tmdbId: 129,
+          slug: 'A girl enters a world of spirits and magic.',
+        },
+        {
+          title: 'Bicycle Thieves',
+          year: 1948,
+          tmdbId: 14535,
+          slug: 'A man searches Rome for his stolen bicycle.',
+        },
+      ],
+    },
   };
 
   // Fetch existing lists on load
@@ -112,8 +233,8 @@ export default function ListsManagementPage() {
           slug: listKey,
           description: listData.description,
           content_type: listData.content_type,
-          is_active: true
-        })
+          is_active: true,
+        }),
       });
 
       if (!listResponse.ok) {
@@ -129,8 +250,8 @@ export default function ListsManagementPage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           listId: listId,
-          movies: listData.movies
-        })
+          movies: listData.movies,
+        }),
       });
 
       if (!moviesResponse.ok) {
@@ -138,14 +259,15 @@ export default function ListsManagementPage() {
       }
 
       const result = await moviesResponse.json();
-      setCreateStatus(`✅ Successfully created "${listData.name}" with ${result.addedMovies?.length || 0} movies!`);
+      setCreateStatus(
+        `✅ Successfully created "${listData.name}" with ${result.addedMovies?.length || 0} movies!`
+      );
 
       // Refresh the existing lists
       setTimeout(() => {
         fetchExistingLists();
         setCreateStatus('');
       }, 2000);
-
     } catch (error) {
       console.error('Error creating list:', error);
       setCreateStatus(`❌ Error: ${error.message}`);
@@ -154,7 +276,7 @@ export default function ListsManagementPage() {
     }
   };
 
-  const handleCreateList = (listKey) => {
+  const handleCreateList = listKey => {
     const listData = definitiveListsData[listKey];
     createListInDatabase(listKey, listData);
   };
@@ -162,13 +284,13 @@ export default function ListsManagementPage() {
   const handleCreateAllLists = async () => {
     setIsCreating(true);
     const listKeys = Object.keys(definitiveListsData);
-    
+
     for (let i = 0; i < listKeys.length; i++) {
       const listKey = listKeys[i];
       const listData = definitiveListsData[listKey];
-      
+
       setCreateStatus(`Creating ${i + 1}/${listKeys.length}: "${listData.name}"...`);
-      
+
       try {
         await createListInDatabase(listKey, listData);
         // Small delay between creations
@@ -177,7 +299,7 @@ export default function ListsManagementPage() {
         console.error(`Failed to create ${listKey}:`, error);
       }
     }
-    
+
     setCreateStatus('✅ All lists created successfully!');
     setIsCreating(false);
   };
@@ -194,15 +316,11 @@ export default function ListsManagementPage() {
         </div>
 
         {/* Status */}
-        {createStatus && (
-          <div style={styles.statusBar}>
-            {createStatus}
-          </div>
-        )}
+        {createStatus && <div style={styles.statusBar}>{createStatus}</div>}
 
         {/* Quick Actions */}
         <div style={styles.quickActions}>
-          <button 
+          <button
             style={styles.createAllButton}
             onClick={handleCreateAllLists}
             disabled={isCreating}
@@ -217,7 +335,7 @@ export default function ListsManagementPage() {
             <h2 style={styles.sectionTitle}>Existing Lists ({existingLists.length})</h2>
             {existingLists.length > 0 ? (
               <div style={styles.existingListsGrid}>
-                {existingLists.map((list) => (
+                {existingLists.map(list => (
                   <div key={list.id} style={styles.existingListCard}>
                     <strong>{list.name}</strong>
                     <div style={styles.listMeta}>
@@ -241,9 +359,9 @@ export default function ListsManagementPage() {
                     <h3 style={styles.listName}>{listData.name}</h3>
                     <span style={styles.movieCount}>{listData.movies.length} movies</span>
                   </div>
-                  
+
                   <p style={styles.listDescription}>{listData.description}</p>
-                  
+
                   {/* Sample Movies Preview */}
                   <div style={styles.moviesPreview}>
                     <strong>Sample movies:</strong>
@@ -256,14 +374,12 @@ export default function ListsManagementPage() {
                         </div>
                       ))}
                       {listData.movies.length > 3 && (
-                        <div style={styles.moreMovies}>
-                          +{listData.movies.length - 3} more...
-                        </div>
+                        <div style={styles.moreMovies}>+{listData.movies.length - 3} more...</div>
                       )}
                     </div>
                   </div>
 
-                  <button 
+                  <button
                     style={styles.createButton}
                     onClick={() => handleCreateList(listKey)}
                     disabled={isCreating}

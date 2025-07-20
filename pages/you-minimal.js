@@ -6,7 +6,14 @@ import CinematicProfile from '../components/CinematicProfile';
 import { Heart, Bookmark, Film, RotateCcw, ChevronRight, Star, TrendingUp } from 'lucide-react';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
-import { colors, spacing, typography, borderRadius, shadows, components } from '../lib/design-tokens';
+import {
+  colors,
+  spacing,
+  typography,
+  borderRadius,
+  shadows,
+  components,
+} from '../lib/design-tokens';
 
 export default function YouMinimalPage() {
   const router = useRouter();
@@ -32,7 +39,7 @@ export default function YouMinimalPage() {
     };
 
     loadStoredData();
-    
+
     // Listen for storage changes from other components
     const handleStorageChange = () => loadStoredData();
     window.addEventListener('storage', handleStorageChange);
@@ -47,7 +54,7 @@ export default function YouMinimalPage() {
     window.dispatchEvent(new CustomEvent('refresh-cinematic-profile'));
   };
 
-  const navigateToCollection = (type) => {
+  const navigateToCollection = type => {
     if (type === 'hearted' || type === 'bookmarked') {
       // Route to movies page where users can browse/search
       router.push('/movies');
@@ -68,36 +75,44 @@ export default function YouMinimalPage() {
 
   // Render main profile section
   const renderProfileSection = () => (
-    <div style={{
-      backgroundColor: colors.background,
-      borderRadius: borderRadius.lg,
-      padding: spacing[6],
-      marginBottom: spacing[6],
-      boxShadow: shadows.sm,
-      border: `1px solid ${colors.border}`,
-    }}>
-      {/* Profile Header */}
-      <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
+    <div
+      style={{
+        backgroundColor: colors.background,
+        borderRadius: borderRadius.lg,
+        padding: spacing[6],
         marginBottom: spacing[6],
-      }}>
+        boxShadow: shadows.sm,
+        border: `1px solid ${colors.border}`,
+      }}
+    >
+      {/* Profile Header */}
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          marginBottom: spacing[6],
+        }}
+      >
         <div>
-          <h1 style={{
-            fontSize: typography.fontSize['2xl'],
-            fontWeight: typography.fontWeight.bold,
-            color: colors.gray[900],
-            margin: 0,
-            marginBottom: spacing[1],
-          }}>
+          <h1
+            style={{
+              fontSize: typography.fontSize['2xl'],
+              fontWeight: typography.fontWeight.bold,
+              color: colors.gray[900],
+              margin: 0,
+              marginBottom: spacing[1],
+            }}
+          >
             Your Cinematic Profile
           </h1>
-          <p style={{
-            fontSize: typography.fontSize.sm,
-            color: colors.gray[600],
-            margin: 0,
-          }}>
+          <p
+            style={{
+              fontSize: typography.fontSize.sm,
+              color: colors.gray[600],
+              margin: 0,
+            }}
+          >
             Discover your unique film taste
           </p>
         </div>
@@ -114,11 +129,11 @@ export default function YouMinimalPage() {
             justifyContent: 'center',
             transition: 'all 150ms ease',
           }}
-          onMouseEnter={(e) => {
+          onMouseEnter={e => {
             e.target.style.backgroundColor = colors.gray[50];
             e.target.style.borderColor = components.youPage.goldAccent;
           }}
-          onMouseLeave={(e) => {
+          onMouseLeave={e => {
             e.target.style.backgroundColor = 'transparent';
             e.target.style.borderColor = colors.border;
           }}
@@ -129,34 +144,40 @@ export default function YouMinimalPage() {
 
       {/* Cinematic Profile Component */}
       {hasContent ? (
-        <CinematicProfile 
+        <CinematicProfile
           userData={{
             heartedMovies,
             bookmarkedMovies,
-            selectedPlatforms
+            selectedPlatforms,
           }}
           profileType={activeProfileType}
           minimal={true}
         />
       ) : (
-        <div style={{
-          textAlign: 'center',
-          padding: spacing[8],
-          color: colors.gray[500],
-        }}>
+        <div
+          style={{
+            textAlign: 'center',
+            padding: spacing[8],
+            color: colors.gray[500],
+          }}
+        >
           <Film size={components.youPage.emptyStateIconSize} style={{ margin: '0 auto 16px' }} />
-          <p style={{
-            fontSize: typography.fontSize.base,
-            margin: 0,
-            marginBottom: spacing[4],
-          }}>
+          <p
+            style={{
+              fontSize: typography.fontSize.base,
+              margin: 0,
+              marginBottom: spacing[4],
+            }}
+          >
             Start building your profile
           </p>
-          <p style={{
-            fontSize: typography.fontSize.sm,
-            margin: 0,
-            lineHeight: typography.lineHeight.relaxed,
-          }}>
+          <p
+            style={{
+              fontSize: typography.fontSize.sm,
+              margin: 0,
+              lineHeight: typography.lineHeight.relaxed,
+            }}
+          >
             Heart movies you love to discover your cinematic DNA
           </p>
         </div>
@@ -166,26 +187,32 @@ export default function YouMinimalPage() {
 
   // Render collection overview
   const renderCollectionOverview = () => (
-    <div style={{
-      backgroundColor: colors.background,
-      borderRadius: borderRadius.lg,
-      padding: spacing[5],
-      marginBottom: spacing[6],
-      boxShadow: shadows.sm,
-      border: `1px solid ${colors.border}`,
-    }}>
-      <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        marginBottom: spacing[4],
-      }}>
-        <h2 style={{
-          fontSize: typography.fontSize.lg,
-          fontWeight: typography.fontWeight.semibold,
-          color: colors.gray[900],
-          margin: 0,
-        }}>
+    <div
+      style={{
+        backgroundColor: colors.background,
+        borderRadius: borderRadius.lg,
+        padding: spacing[5],
+        marginBottom: spacing[6],
+        boxShadow: shadows.sm,
+        border: `1px solid ${colors.border}`,
+      }}
+    >
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          marginBottom: spacing[4],
+        }}
+      >
+        <h2
+          style={{
+            fontSize: typography.fontSize.lg,
+            fontWeight: typography.fontWeight.semibold,
+            color: colors.gray[900],
+            margin: 0,
+          }}
+        >
           Your Collection
         </h2>
         {hasContent && (
@@ -212,11 +239,13 @@ export default function YouMinimalPage() {
       </div>
 
       {hasContent ? (
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: spacing[4],
-        }}>
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr 1fr',
+            gap: spacing[4],
+          }}
+        >
           {/* Hearted Movies */}
           <button
             onClick={() => navigateToCollection('hearted')}
@@ -229,36 +258,46 @@ export default function YouMinimalPage() {
               textAlign: 'left',
               transition: 'all 150ms ease',
             }}
-            onMouseEnter={(e) => {
+            onMouseEnter={e => {
               e.target.style.backgroundColor = colors.gold[50];
               e.target.style.borderColor = components.youPage.goldAccent;
             }}
-            onMouseLeave={(e) => {
+            onMouseLeave={e => {
               e.target.style.backgroundColor = colors.gray[50];
               e.target.style.borderColor = colors.border;
             }}
           >
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: spacing[2],
-              marginBottom: spacing[2],
-            }}>
-              <Heart size={20} color={components.youPage.goldAccent} fill={components.youPage.goldAccent} />
-              <span style={{
-                fontSize: typography.fontSize.base,
-                fontWeight: typography.fontWeight.medium,
-                color: colors.gray[900],
-              }}>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: spacing[2],
+                marginBottom: spacing[2],
+              }}
+            >
+              <Heart
+                size={20}
+                color={components.youPage.goldAccent}
+                fill={components.youPage.goldAccent}
+              />
+              <span
+                style={{
+                  fontSize: typography.fontSize.base,
+                  fontWeight: typography.fontWeight.medium,
+                  color: colors.gray[900],
+                }}
+              >
                 Favorites
               </span>
             </div>
-            <p style={{
-              fontSize: typography.fontSize['2xl'],
-              fontWeight: typography.fontWeight.bold,
-              color: colors.gray[900],
-              margin: 0,
-            }}>
+            <p
+              style={{
+                fontSize: typography.fontSize['2xl'],
+                fontWeight: typography.fontWeight.bold,
+                color: colors.gray[900],
+                margin: 0,
+              }}
+            >
               {heartedMovies.length}
             </p>
           </button>
@@ -275,67 +314,81 @@ export default function YouMinimalPage() {
               textAlign: 'left',
               transition: 'all 150ms ease',
             }}
-            onMouseEnter={(e) => {
+            onMouseEnter={e => {
               e.target.style.backgroundColor = colors.gold[50];
               e.target.style.borderColor = components.youPage.goldAccent;
             }}
-            onMouseLeave={(e) => {
+            onMouseLeave={e => {
               e.target.style.backgroundColor = colors.gray[50];
               e.target.style.borderColor = colors.border;
             }}
           >
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: spacing[2],
-              marginBottom: spacing[2],
-            }}>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: spacing[2],
+                marginBottom: spacing[2],
+              }}
+            >
               <Bookmark size={20} color={colors.gray[600]} />
-              <span style={{
-                fontSize: typography.fontSize.base,
-                fontWeight: typography.fontWeight.medium,
-                color: colors.gray[900],
-              }}>
+              <span
+                style={{
+                  fontSize: typography.fontSize.base,
+                  fontWeight: typography.fontWeight.medium,
+                  color: colors.gray[900],
+                }}
+              >
                 Watchlist
               </span>
             </div>
-            <p style={{
-              fontSize: typography.fontSize['2xl'],
-              fontWeight: typography.fontWeight.bold,
-              color: colors.gray[900],
-              margin: 0,
-            }}>
+            <p
+              style={{
+                fontSize: typography.fontSize['2xl'],
+                fontWeight: typography.fontWeight.bold,
+                color: colors.gray[900],
+                margin: 0,
+              }}
+            >
               {bookmarkedMovies.length}
             </p>
           </button>
         </div>
       ) : (
-        <div style={{
-          textAlign: 'center',
-          padding: spacing[6],
-          color: colors.gray[500],
-        }}>
-          <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            gap: spacing[4],
-            marginBottom: spacing[4],
-          }}>
+        <div
+          style={{
+            textAlign: 'center',
+            padding: spacing[6],
+            color: colors.gray[500],
+          }}
+        >
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              gap: spacing[4],
+              marginBottom: spacing[4],
+            }}
+          >
             <Heart size={32} color={colors.gray[300]} />
             <Bookmark size={32} color={colors.gray[300]} />
           </div>
-          <p style={{
-            fontSize: typography.fontSize.base,
-            margin: 0,
-            marginBottom: spacing[2],
-          }}>
+          <p
+            style={{
+              fontSize: typography.fontSize.base,
+              margin: 0,
+              marginBottom: spacing[2],
+            }}
+          >
             No movies yet
           </p>
-          <p style={{
-            fontSize: typography.fontSize.sm,
-            margin: 0,
-            lineHeight: typography.lineHeight.relaxed,
-          }}>
+          <p
+            style={{
+              fontSize: typography.fontSize.sm,
+              margin: 0,
+              lineHeight: typography.lineHeight.relaxed,
+            }}
+          >
             Heart favorites and bookmark movies to watch later
           </p>
         </div>
@@ -357,32 +410,38 @@ export default function YouMinimalPage() {
     if (recentMovies.length === 0) return null;
 
     return (
-      <div style={{
-        backgroundColor: colors.background,
-        borderRadius: borderRadius.lg,
-        padding: spacing[5],
-        marginBottom: spacing[6],
-        boxShadow: shadows.sm,
-        border: `1px solid ${colors.border}`,
-      }}>
-        <h2 style={{
-          fontSize: typography.fontSize.lg,
-          fontWeight: typography.fontWeight.semibold,
-          color: colors.gray[900],
-          margin: 0,
-          marginBottom: spacing[4],
-        }}>
+      <div
+        style={{
+          backgroundColor: colors.background,
+          borderRadius: borderRadius.lg,
+          padding: spacing[5],
+          marginBottom: spacing[6],
+          boxShadow: shadows.sm,
+          border: `1px solid ${colors.border}`,
+        }}
+      >
+        <h2
+          style={{
+            fontSize: typography.fontSize.lg,
+            fontWeight: typography.fontWeight.semibold,
+            color: colors.gray[900],
+            margin: 0,
+            marginBottom: spacing[4],
+          }}
+        >
           Recent Activity
         </h2>
-        
-        <div style={{
-          display: 'flex',
-          flexDirection: 'column',
-          gap: spacing[3],
-        }}>
-          {recentMovies.map((movie) => (
+
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: spacing[3],
+          }}
+        >
+          {recentMovies.map(movie => (
             <div key={`${movie.tmdb_id || movie.id}-recent`} style={{ width: '100%' }}>
-              <MediaCard 
+              <MediaCard
                 title={movie.title}
                 year={movie.year}
                 initialSlug={movie.slug}
@@ -399,25 +458,31 @@ export default function YouMinimalPage() {
 
   // Render discovery section
   const renderDiscoverySection = () => (
-    <div style={{
-      backgroundColor: colors.background,
-      borderRadius: borderRadius.lg,
-      padding: spacing[5],
-      boxShadow: shadows.sm,
-      border: `1px solid ${colors.border}`,
-    }}>
-      <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        marginBottom: spacing[4],
-      }}>
-        <h2 style={{
-          fontSize: typography.fontSize.lg,
-          fontWeight: typography.fontWeight.semibold,
-          color: colors.gray[900],
-          margin: 0,
-        }}>
+    <div
+      style={{
+        backgroundColor: colors.background,
+        borderRadius: borderRadius.lg,
+        padding: spacing[5],
+        boxShadow: shadows.sm,
+        border: `1px solid ${colors.border}`,
+      }}
+    >
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          marginBottom: spacing[4],
+        }}
+      >
+        <h2
+          style={{
+            fontSize: typography.fontSize.lg,
+            fontWeight: typography.fontWeight.semibold,
+            color: colors.gray[900],
+            margin: 0,
+          }}
+        >
           Discover More
         </h2>
         <button
@@ -441,57 +506,75 @@ export default function YouMinimalPage() {
         </button>
       </div>
 
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: '1fr 1fr',
-        gap: spacing[3],
-      }}>
-        <div style={{
-          padding: spacing[4],
-          backgroundColor: colors.gray[50],
-          borderRadius: borderRadius.md,
-          textAlign: 'center',
-        }}>
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: '1fr 1fr',
+          gap: spacing[3],
+        }}
+      >
+        <div
+          style={{
+            padding: spacing[4],
+            backgroundColor: colors.gray[50],
+            borderRadius: borderRadius.md,
+            textAlign: 'center',
+          }}
+        >
           <Star size={24} color={components.youPage.goldAccent} style={{ margin: '0 auto 8px' }} />
-          <p style={{
-            fontSize: typography.fontSize.sm,
-            fontWeight: typography.fontWeight.medium,
-            color: colors.gray[900],
-            margin: 0,
-            marginBottom: spacing[1],
-          }}>
+          <p
+            style={{
+              fontSize: typography.fontSize.sm,
+              fontWeight: typography.fontWeight.medium,
+              color: colors.gray[900],
+              margin: 0,
+              marginBottom: spacing[1],
+            }}
+          >
             Essential Films
           </p>
-          <p style={{
-            fontSize: typography.fontSize.xs,
-            color: colors.gray[600],
-            margin: 0,
-          }}>
+          <p
+            style={{
+              fontSize: typography.fontSize.xs,
+              color: colors.gray[600],
+              margin: 0,
+            }}
+          >
             Curated classics
           </p>
         </div>
 
-        <div style={{
-          padding: spacing[4],
-          backgroundColor: colors.gray[50],
-          borderRadius: borderRadius.md,
-          textAlign: 'center',
-        }}>
-          <TrendingUp size={24} color={components.youPage.goldAccent} style={{ margin: '0 auto 8px' }} />
-          <p style={{
-            fontSize: typography.fontSize.sm,
-            fontWeight: typography.fontWeight.medium,
-            color: colors.gray[900],
-            margin: 0,
-            marginBottom: spacing[1],
-          }}>
+        <div
+          style={{
+            padding: spacing[4],
+            backgroundColor: colors.gray[50],
+            borderRadius: borderRadius.md,
+            textAlign: 'center',
+          }}
+        >
+          <TrendingUp
+            size={24}
+            color={components.youPage.goldAccent}
+            style={{ margin: '0 auto 8px' }}
+          />
+          <p
+            style={{
+              fontSize: typography.fontSize.sm,
+              fontWeight: typography.fontWeight.medium,
+              color: colors.gray[900],
+              margin: 0,
+              marginBottom: spacing[1],
+            }}
+          >
             Learning Paths
           </p>
-          <p style={{
-            fontSize: typography.fontSize.xs,
-            color: colors.gray[600],
-            margin: 0,
-          }}>
+          <p
+            style={{
+              fontSize: typography.fontSize.xs,
+              color: colors.gray[600],
+              margin: 0,
+            }}
+          >
             Guided discovery
           </p>
         </div>
@@ -501,28 +584,34 @@ export default function YouMinimalPage() {
 
   return (
     <PhoneFrame>
-      <div style={{
-        minHeight: '100vh',
-        backgroundColor: colors.surface,
-        paddingBottom: '100px',
-      }}>
+      <div
+        style={{
+          minHeight: '100vh',
+          backgroundColor: colors.surface,
+          paddingBottom: '100px',
+        }}
+      >
         {/* Header */}
-        <div style={{
-          backgroundColor: colors.background,
-          borderBottom: `1px solid ${colors.border}`,
-          padding: spacing[4],
-          position: 'sticky',
-          top: 0,
-          zIndex: 10,
-        }}>
+        <div
+          style={{
+            backgroundColor: colors.background,
+            borderBottom: `1px solid ${colors.border}`,
+            padding: spacing[4],
+            position: 'sticky',
+            top: 0,
+            zIndex: 10,
+          }}
+        >
           <SimpleSearch />
         </div>
 
         {/* Main Content */}
-        <div style={{
-          padding: spacing[4],
-          paddingTop: spacing[6],
-        }}>
+        <div
+          style={{
+            padding: spacing[4],
+            paddingTop: spacing[6],
+          }}
+        >
           {renderProfileSection()}
           {renderCollectionOverview()}
           {renderRecentActivity()}

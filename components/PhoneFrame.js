@@ -78,7 +78,7 @@ const styles = {
     msOverflowStyle: 'none',
     paddingBottom: '120px', // Space for sticky navbar and content
   },
-  
+
   // Mobile layout (full screen)
   mobileContainer: {
     display: 'flex',

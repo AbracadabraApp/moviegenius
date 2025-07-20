@@ -1,9 +1,9 @@
 /**
  * LinkedEpisodeText Component - V1 Episode Movie Links
- * 
- * Safely renders episode content with movie links created by the 
+ *
+ * Safely renders episode content with movie links created by the
  * episode-movie-linker system. Designed specifically for episodes.
- * 
+ *
  * Features:
  * - Renders HTML links created by episode processing
  * - Adds movie link styling
@@ -15,11 +15,11 @@
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 
-export default function LinkedEpisodeText({ 
-  content, 
-  className = '', 
+export default function LinkedEpisodeText({
+  content,
+  className = '',
   style = {},
-  episodeContext = ''
+  episodeContext = '',
 }) {
   const router = useRouter();
   const [processedContent, setProcessedContent] = useState(content || '');
@@ -36,15 +36,17 @@ export default function LinkedEpisodeText({
   }, [content]);
 
   // Handle clicks on movie links for analytics/tracking
-  const handleClick = (event) => {
+  const handleClick = event => {
     // Check if click was on a movie link (using existing movie-title class)
     const link = event.target.closest('.movie-title');
     if (link && link.hasAttribute('data-tmdb-id')) {
       const tmdbId = link.getAttribute('data-tmdb-id');
       const movieTitle = link.textContent;
-      
-      console.log(`🔗 Episode movie link clicked: "${movieTitle}" → /movie/${tmdbId} from ${episodeContext}`);
-      
+
+      console.log(
+        `🔗 Episode movie link clicked: "${movieTitle}" → /movie/${tmdbId} from ${episodeContext}`
+      );
+
       // Optional: Add analytics tracking here
       // trackEvent('episode_movie_link_click', { tmdbId, movieTitle, episodeContext });
     }
@@ -56,11 +58,11 @@ export default function LinkedEpisodeText({
   }
 
   return (
-    <div 
-      className={className} 
+    <div
+      className={className}
       style={{
         lineHeight: '1.6',
-        ...style
+        ...style,
       }}
       onClick={handleClick}
       dangerouslySetInnerHTML={{ __html: processedContent }}

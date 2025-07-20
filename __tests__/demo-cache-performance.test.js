@@ -1,6 +1,6 @@
 /**
  * Demo Cache Performance Tests
- * 
+ *
  * Validates ultra-aggressive caching behavior and performance
  * improvements in demo mode.
  */
@@ -15,41 +15,41 @@ const mockDemoConfig = {
     mediaCardTTL: 0, // Forever cache
     preWarmPopularMovies: true,
     maxCacheMemory: 500,
-    hitRateThreshold: 0.9
+    hitRateThreshold: 0.9,
   },
   DEMO_PATHS: {
-    popularMovies: [550, 603, 155] // Fight Club, Matrix, Dark Knight
-  }
+    popularMovies: [550, 603, 155], // Fight Club, Matrix, Dark Knight
+  },
 };
 
 // Mock safety monitor
 const mockSafetyMonitor = {
-  recordMetric: jest.fn()
+  recordMetric: jest.fn(),
 };
 
 // Mock the demo config import
 jest.mock('../lib/demo-config.js', () => ({
   getDemoConfig: () => mockDemoConfig,
-  getDemoSafetyMonitor: () => mockSafetyMonitor
+  getDemoSafetyMonitor: () => mockSafetyMonitor,
 }));
 
 // Mock Redis cache
 const mockRedisCache = {
   get: jest.fn(),
-  set: jest.fn()
+  set: jest.fn(),
 };
 
 jest.mock('../lib/cache.js', () => ({
-  getCache: () => mockRedisCache
+  getCache: () => mockRedisCache,
 }));
 
 // Mock performance monitor
 const mockPerformanceMonitor = {
-  trackMetric: jest.fn()
+  trackMetric: jest.fn(),
 };
 
 jest.mock('../lib/performance-monitor.js', () => ({
-  getPerformanceMonitor: () => mockPerformanceMonitor
+  getPerformanceMonitor: () => mockPerformanceMonitor,
 }));
 
 describe('Demo Cache Performance', () => {
@@ -57,13 +57,13 @@ describe('Demo Cache Performance', () => {
 
   beforeEach(async () => {
     jest.clearAllMocks();
-    
+
     // Get fresh cache instance
     mediaCardCache = getMediaCardCache();
-    
+
     // Wait for async demo config initialization
     await new Promise(resolve => setTimeout(resolve, 100));
-    
+
     // Force demo config update
     mediaCardCache.demoConfig = mockDemoConfig;
     mediaCardCache.safetyMonitor = mockSafetyMonitor;
@@ -84,7 +84,7 @@ describe('Demo Cache Performance', () => {
         movieData: 0,
         poster: 0,
         streaming: 0,
-        enhancement: 0
+        enhancement: 0,
       };
 
       expect(mediaCardCache.ttls.movieData).toBe(0);
@@ -119,7 +119,7 @@ describe('Demo Cache Performance', () => {
         expect.any(Number),
         expect.objectContaining({
           source: 'memory',
-          demo_mode: true
+          demo_mode: true,
         })
       );
     });
@@ -176,7 +176,7 @@ describe('Demo Cache Performance', () => {
         expect.objectContaining({
           source: 'redis',
           demo_mode: true,
-          response_time: expect.any(Number)
+          response_time: expect.any(Number),
         })
       );
 
@@ -194,7 +194,7 @@ describe('Demo Cache Performance', () => {
         misses: 2,
         memoryHits: 15,
         totalRequests: 20,
-        startTime: Date.now() - 60000 // 1 minute ago
+        startTime: Date.now() - 60000, // 1 minute ago
       };
 
       const report = mediaCardCache.getDemoPerformanceReport();
@@ -249,7 +249,7 @@ describe('Demo Cache Performance', () => {
         { hitRate: 95, memoryRate: 85, expectedStatus: 'excellent' },
         { hitRate: 85, memoryRate: 70, expectedStatus: 'good' },
         { hitRate: 75, memoryRate: 60, expectedStatus: 'acceptable' },
-        { hitRate: 65, memoryRate: 50, expectedStatus: 'needs_improvement' }
+        { hitRate: 65, memoryRate: 50, expectedStatus: 'needs_improvement' },
       ];
 
       scenarios.forEach(scenario => {
@@ -258,7 +258,7 @@ describe('Demo Cache Performance', () => {
           misses: 100 - Math.round(scenario.hitRate),
           memoryHits: Math.round(scenario.memoryRate),
           totalRequests: 100,
-          startTime: Date.now()
+          startTime: Date.now(),
         };
 
         const report = mediaCardCache.getDemoPerformanceReport();
@@ -273,11 +273,11 @@ describe('Demo Cache Performance', () => {
         misses: 30,
         memoryHits: 50,
         totalRequests: 100,
-        startTime: Date.now()
+        startTime: Date.now(),
       };
 
       const recommendations = mediaCardCache.generateCacheRecommendations(70, 50);
-      
+
       expect(recommendations).toContain('Consider pre-warming cache with more popular content');
       expect(recommendations).toContain('Increase memory cache size for better performance');
     });
@@ -305,7 +305,7 @@ describe('Demo Cache Integration', () => {
       'mediacard_cache_hit',
       expect.any(Number),
       expect.objectContaining({
-        demo_mode: false
+        demo_mode: false,
       })
     );
   });

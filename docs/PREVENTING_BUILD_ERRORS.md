@@ -2,11 +2,14 @@
 
 ## Overview
 
-This document describes the automated system we've implemented to prevent JSX syntax errors (like the "Unterminated regexp literal" error) from breaking the build.
+This document describes the automated system we've implemented to prevent JSX
+syntax errors (like the "Unterminated regexp literal" error) from breaking the
+build.
 
 ## The Problem
 
-JSX syntax errors, particularly orphaned closing tags like `</>` without matching opening tags, cause build failures with cryptic error messages like:
+JSX syntax errors, particularly orphaned closing tags like `</>` without
+matching opening tags, cause build failures with cryptic error messages like:
 
 ```
 Error: × Unterminated regexp literal
@@ -30,12 +33,14 @@ We've implemented a comprehensive JSX validation system with three components:
 **File**: `scripts/validate-jsx-syntax.js`
 
 **What it does**:
+
 - Scans all JSX/React files in the codebase
 - Detects orphaned JSX closing tags (`</>` without matching `<>`)
 - Identifies unmatched JSX fragments in return statements
 - Flags invalid JSX structures
 
 **How to run**:
+
 ```bash
 # Basic validation
 npm run validate:jsx
@@ -47,11 +52,13 @@ npm run validate:jsx -- --verbose
 ### 2. Automated Integration
 
 **Pre-commit Hook**:
+
 ```json
 "pre-commit": "npm run validate:jsx && npm run check-locks && npm run lint && npm run typecheck"
 ```
 
 **Build Process**:
+
 ```json
 "build": "npm run validate:jsx && rm -rf .next && next build"
 ```
@@ -59,6 +66,7 @@ npm run validate:jsx -- --verbose
 ### 3. Continuous Integration
 
 The JSX validator runs automatically:
+
 - ✅ **Before every commit** (via pre-commit hook)
 - ✅ **Before every build** (via build script)
 - ✅ **In CI/CD pipelines** (as part of build process)
@@ -66,10 +74,11 @@ The JSX validator runs automatically:
 ## Common JSX Errors Detected
 
 ### 1. Orphaned Closing Tags
+
 ```jsx
 // ❌ BAD - Will break build
 {isNuclear && sections.length > 0 ? (
-  <div style={styles.claudeContent}>              
+  <div style={styles.claudeContent}>
     <MovieContent />
   </div>
   </> // ← Orphaned closing tag!
@@ -80,15 +89,17 @@ The JSX validator runs automatically:
 
 ```jsx
 // ✅ GOOD - Properly matched
-{isNuclear && sections.length > 0 ? (
-  <>
-    <div style={styles.claudeContent}>              
-      <MovieContent />
-    </div>
-  </>
-) : (
-  <ISRPlaceholder />
-)}
+{
+  isNuclear && sections.length > 0 ? (
+    <>
+      <div style={styles.claudeContent}>
+        <MovieContent />
+      </div>
+    </>
+  ) : (
+    <ISRPlaceholder />
+  );
+}
 ```
 
 ### 2. Unmatched JSX Fragments
@@ -121,8 +132,10 @@ return (
 When the validator finds errors, follow these steps:
 
 1. **Identify the issue**: Look at the line number and error message
-2. **Find the matching opening tag**: Search backwards for the corresponding `<>`
-3. **Fix the structure**: Either add the missing opening tag or remove the orphaned closing tag
+2. **Find the matching opening tag**: Search backwards for the corresponding
+   `<>`
+3. **Fix the structure**: Either add the missing opening tag or remove the
+   orphaned closing tag
 4. **Re-run validation**: `npm run validate:jsx`
 5. **Test the build**: `npm run build`
 
@@ -140,15 +153,18 @@ npm run validate:jsx
 
 ## Best Practices
 
-1. **Use your editor's JSX syntax highlighting** - Most editors will highlight unmatched tags
+1. **Use your editor's JSX syntax highlighting** - Most editors will highlight
+   unmatched tags
 2. **Run validation frequently** during development
 3. **Fix JSX errors immediately** - Don't let them accumulate
 4. **Use consistent indentation** - Makes it easier to spot unmatched tags
-5. **Use React Fragment shorthand carefully** - `<>` and `</>` must always be paired
+5. **Use React Fragment shorthand carefully** - `<>` and `</>` must always be
+   paired
 
 ## File Exclusions
 
 The validator skips these directories:
+
 - `node_modules/`
 - `.next/`
 - `dist/`
@@ -193,11 +209,13 @@ node scripts/validate-jsx-syntax.js
 
 ## Summary
 
-This JSX validation system ensures that syntax errors like orphaned JSX closing tags are caught before they break the build, providing:
+This JSX validation system ensures that syntax errors like orphaned JSX closing
+tags are caught before they break the build, providing:
 
 - ✅ **Early detection** of JSX syntax errors
 - ✅ **Automated prevention** via pre-commit hooks and build integration
 - ✅ **Clear error messages** with line numbers and context
 - ✅ **Fast feedback** for developers during development
 
-The system has successfully prevented the "Unterminated regexp literal" error and will catch similar issues in the future.
+The system has successfully prevented the "Unterminated regexp literal" error
+and will catch similar issues in the future.

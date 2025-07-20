@@ -7,21 +7,8 @@
       "confidenceThreshold": 0.85,
       "maxLinks": 8,
       "requireProperCapitalization": true,
-      "requireFilmContext": [
-        "will",
-        "may",
-        "art",
-        "hope",
-        "joy"
-      ],
-      "blacklist": [
-        "will",
-        "may",
-        "young",
-        "old",
-        "early",
-        "late"
-      ]
+      "requireFilmContext": ["will", "may", "art", "hope", "joy"],
+      "blacklist": ["will", "may", "young", "old", "early", "late"]
     },
     "movies": {
       "enabled": true,

@@ -12,25 +12,24 @@ export default function MoviesPage() {
   const [showSearchResults, setShowSearchResults] = useState(false);
 
   // Handle search results from multi-search API
-  const handleSearchResults = (results) => {
+  const handleSearchResults = results => {
     // Multi-search returns {movies: [], people: []} - extract movies array
     const movies = results.movies || results || [];
     setSearchResults(movies);
     setShowSearchResults(movies.length > 0);
   };
 
-  // Handle movie click - navigate to movie detail page  
-  const handleMovieClick = (movie) => {
+  // Handle movie click - navigate to movie detail page
+  const handleMovieClick = movie => {
     if (movie.tmdb_id) {
       router.push(`/movie/${movie.tmdb_id}`);
     }
   };
 
   // Handle new release category click
-  const handleNewReleaseClick = (category) => {
+  const handleNewReleaseClick = category => {
     router.push(`/search?new-releases=${category}`);
   };
-
 
   return (
     <PhoneFrame>
@@ -38,10 +37,7 @@ export default function MoviesPage() {
         {/* Simple search header */}
         <div style={styles.header}>
           <h1 style={styles.title}>Movies</h1>
-          <SimpleSearch 
-            onResults={handleSearchResults}
-            placeholder="Search movies..."
-          />
+          <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
         </div>
 
         {/* Content */}
@@ -50,11 +46,17 @@ export default function MoviesPage() {
             /* Search Results */
             <div style={styles.resultsContainer}>
               <div style={styles.resultsHeader}>
-                <span>{searchResults.length} movie{searchResults.length !== 1 ? 's' : ''} found</span>
+                <span>
+                  {searchResults.length} movie{searchResults.length !== 1 ? 's' : ''} found
+                </span>
               </div>
               <div style={styles.movieList}>
                 {searchResults.map((movie, index) => (
-                  <div key={`${movie.tmdb_id || movie.title}-${index}`} onClick={() => handleMovieClick(movie)} style={styles.movieItem}>
+                  <div
+                    key={`${movie.tmdb_id || movie.title}-${index}`}
+                    onClick={() => handleMovieClick(movie)}
+                    style={styles.movieItem}
+                  >
                     <MediaCard
                       title={movie.title}
                       year={movie.year}
@@ -73,14 +75,14 @@ export default function MoviesPage() {
               <div style={styles.newReleasesSection}>
                 <h2 style={styles.sectionTitle}>New Releases</h2>
                 <div style={styles.releaseCategories}>
-                  <div 
+                  <div
                     style={styles.releaseButton}
                     onClick={() => handleNewReleaseClick('now-playing')}
-                    onMouseEnter={(e) => {
+                    onMouseEnter={e => {
                       e.target.style.backgroundColor = '#f3f4f6';
                       e.target.style.borderColor = '#9ca3af';
                     }}
-                    onMouseLeave={(e) => {
+                    onMouseLeave={e => {
                       e.target.style.backgroundColor = '#ffffff';
                       e.target.style.borderColor = '#d1d5db';
                     }}
@@ -88,15 +90,15 @@ export default function MoviesPage() {
                     <div style={styles.releaseButtonTitle}>Now Playing</div>
                     <div style={styles.releaseButtonSubtitle}>In theaters now</div>
                   </div>
-                  
-                  <div 
+
+                  <div
                     style={styles.releaseButton}
                     onClick={() => handleNewReleaseClick('upcoming')}
-                    onMouseEnter={(e) => {
+                    onMouseEnter={e => {
                       e.target.style.backgroundColor = '#f3f4f6';
                       e.target.style.borderColor = '#9ca3af';
                     }}
-                    onMouseLeave={(e) => {
+                    onMouseLeave={e => {
                       e.target.style.backgroundColor = '#ffffff';
                       e.target.style.borderColor = '#d1d5db';
                     }}
@@ -104,15 +106,15 @@ export default function MoviesPage() {
                     <div style={styles.releaseButtonTitle}>Coming Soon</div>
                     <div style={styles.releaseButtonSubtitle}>Upcoming releases</div>
                   </div>
-                  
-                  <div 
+
+                  <div
                     style={styles.releaseButton}
                     onClick={() => handleNewReleaseClick('recent')}
-                    onMouseEnter={(e) => {
+                    onMouseEnter={e => {
                       e.target.style.backgroundColor = '#f3f4f6';
                       e.target.style.borderColor = '#9ca3af';
                     }}
-                    onMouseLeave={(e) => {
+                    onMouseLeave={e => {
                       e.target.style.backgroundColor = '#ffffff';
                       e.target.style.borderColor = '#d1d5db';
                     }}
@@ -120,15 +122,15 @@ export default function MoviesPage() {
                     <div style={styles.releaseButtonTitle}>Recent Releases</div>
                     <div style={styles.releaseButtonSubtitle}>Last 60 days</div>
                   </div>
-                  
-                  <div 
+
+                  <div
                     style={styles.releaseButton}
                     onClick={() => handleNewReleaseClick('trending')}
-                    onMouseEnter={(e) => {
+                    onMouseEnter={e => {
                       e.target.style.backgroundColor = '#f3f4f6';
                       e.target.style.borderColor = '#9ca3af';
                     }}
-                    onMouseLeave={(e) => {
+                    onMouseLeave={e => {
                       e.target.style.backgroundColor = '#ffffff';
                       e.target.style.borderColor = '#d1d5db';
                     }}
@@ -138,7 +140,7 @@ export default function MoviesPage() {
                   </div>
                 </div>
               </div>
-              
+
               {/* Browse Categories */}
               <CategoryBrowse />
             </>
@@ -149,13 +151,13 @@ export default function MoviesPage() {
   );
 }
 
-
 const styles = {
   container: {
     display: 'flex',
     flexDirection: 'column',
     height: '100%',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     backgroundColor: '#f9fafb',
   },
   header: {
@@ -176,11 +178,9 @@ const styles = {
     msOverflowStyle: 'none',
     padding: '16px',
   },
-  
+
   // Search Results
-  resultsContainer: {
-    
-  },
+  resultsContainer: {},
   resultsHeader: {
     display: 'flex',
     justifyContent: 'space-between',
@@ -235,5 +235,4 @@ const styles = {
     color: '#6b7280',
     lineHeight: '1.3',
   },
-
 };

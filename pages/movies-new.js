@@ -29,7 +29,7 @@ export default function MoviesNewPage() {
     const handlePlatformUpdate = () => {
       loadSelectedPlatforms();
     };
-    
+
     window.addEventListener('platformsUpdated', handlePlatformUpdate);
     return () => window.removeEventListener('platformsUpdated', handlePlatformUpdate);
   }, []);
@@ -38,7 +38,7 @@ export default function MoviesNewPage() {
     router.push('/you#platforms');
   };
 
-  const handleViewAll = (category) => {
+  const handleViewAll = category => {
     // Navigate to full list page
     router.push(`/genius/category/${category}`);
   };
@@ -48,9 +48,9 @@ export default function MoviesNewPage() {
       <div style={styles.container}>
         {/* Full-width Genius Header */}
         <div style={styles.heroHeader}>
-          <img 
-            src="/images/genius-header-noir.jpg" 
-            alt="MovieGenius.AI - Classic Cinema" 
+          <img
+            src="/images/genius-header-noir.jpg"
+            alt="MovieGenius.AI - Classic Cinema"
             style={styles.heroImage}
           />
           <div style={styles.heroOverlay}>
@@ -63,28 +63,22 @@ export default function MoviesNewPage() {
 
         {/* Scrollable Content */}
         <div style={styles.scrollableContent}>
-          
           {/* Platform Picker Teaser */}
           <div style={styles.platformTeaser}>
             <div style={styles.platformTeaserContent}>
               <div style={styles.platformTeaserText}>
                 <h3 style={styles.platformTeaserTitle}>
-                  {selectedPlatforms.length > 0 
+                  {selectedPlatforms.length > 0
                     ? `Streaming on ${selectedPlatforms.slice(0, 2).join(', ')}${selectedPlatforms.length > 2 ? ` +${selectedPlatforms.length - 2} more` : ''}`
-                    : 'What streaming services do you have?'
-                  }
+                    : 'What streaming services do you have?'}
                 </h3>
                 <p style={styles.platformTeaserSubtext}>
-                  {selectedPlatforms.length > 0 
+                  {selectedPlatforms.length > 0
                     ? 'Get personalized recommendations for your services'
-                    : 'Tell us your platforms for personalized recommendations'
-                  }
+                    : 'Tell us your platforms for personalized recommendations'}
                 </p>
               </div>
-              <button 
-                onClick={handlePlatformSetup}
-                style={styles.platformTeaserButton}
-              >
+              <button onClick={handlePlatformSetup} style={styles.platformTeaserButton}>
                 {selectedPlatforms.length > 0 ? 'Edit' : 'Set Up'}
               </button>
             </div>
@@ -94,27 +88,24 @@ export default function MoviesNewPage() {
           <div style={styles.section}>
             <div style={styles.sectionHeader}>
               <h2 style={styles.sectionTitle}>In Theaters Now</h2>
-              <button 
-                onClick={() => handleViewAll('in-theaters')}
-                style={styles.viewAllButton}
-              >
+              <button onClick={() => handleViewAll('in-theaters')} style={styles.viewAllButton}>
                 View All
               </button>
             </div>
             <div style={styles.movieGrid}>
-              <MediaCard 
+              <MediaCard
                 title="Dune: Part Two"
                 year="2024"
                 initialSlug="dune-part-two-2024"
                 tmdbId={693134}
               />
-              <MediaCard 
+              <MediaCard
                 title="Poor Things"
                 year="2023"
                 initialSlug="poor-things-2023"
                 tmdbId={792307}
               />
-              <MediaCard 
+              <MediaCard
                 title="The Zone of Interest"
                 year="2023"
                 initialSlug="the-zone-of-interest-2023"
@@ -127,27 +118,24 @@ export default function MoviesNewPage() {
           <div style={styles.section}>
             <div style={styles.sectionHeader}>
               <h2 style={styles.sectionTitle}>New on Netflix</h2>
-              <button 
-                onClick={() => handleViewAll('new-netflix')}
-                style={styles.viewAllButton}
-              >
+              <button onClick={() => handleViewAll('new-netflix')} style={styles.viewAllButton}>
                 View All
               </button>
             </div>
             <div style={styles.movieGrid}>
-              <MediaCard 
+              <MediaCard
                 title="The Gentlemen"
                 year="2024"
                 initialSlug="the-gentlemen-2024"
                 tmdbId={1003581}
               />
-              <MediaCard 
+              <MediaCard
                 title="All Quiet on the Western Front"
                 year="2022"
                 initialSlug="all-quiet-on-the-western-front-2022"
                 tmdbId={49046}
               />
-              <MediaCard 
+              <MediaCard
                 title="Glass Onion"
                 year="2022"
                 initialSlug="glass-onion-2022"
@@ -160,27 +148,24 @@ export default function MoviesNewPage() {
           <div style={styles.section}>
             <div style={styles.sectionHeader}>
               <h2 style={styles.sectionTitle}>Classics on Prime</h2>
-              <button 
-                onClick={() => handleViewAll('classics-prime')}
-                style={styles.viewAllButton}
-              >
+              <button onClick={() => handleViewAll('classics-prime')} style={styles.viewAllButton}>
                 View All
               </button>
             </div>
             <div style={styles.movieGrid}>
-              <MediaCard 
+              <MediaCard
                 title="The Godfather"
                 year="1972"
                 initialSlug="the-godfather-1972"
                 tmdbId={238}
               />
-              <MediaCard 
+              <MediaCard
                 title="Apocalypse Now"
                 year="1979"
                 initialSlug="apocalypse-now-1979"
                 tmdbId={28}
               />
-              <MediaCard 
+              <MediaCard
                 title="Taxi Driver"
                 year="1976"
                 initialSlug="taxi-driver-1976"
@@ -193,7 +178,7 @@ export default function MoviesNewPage() {
           <div style={styles.section}>
             <div style={styles.sectionHeader}>
               <h2 style={styles.sectionTitle}>Kubrick Essentials</h2>
-              <button 
+              <button
                 onClick={() => handleViewAll('kubrick-essentials')}
                 style={styles.viewAllButton}
               >
@@ -201,19 +186,19 @@ export default function MoviesNewPage() {
               </button>
             </div>
             <div style={styles.movieGrid}>
-              <MediaCard 
+              <MediaCard
                 title="2001: A Space Odyssey"
                 year="1968"
                 initialSlug="2001-a-space-odyssey-1968"
                 tmdbId={62}
               />
-              <MediaCard 
+              <MediaCard
                 title="A Clockwork Orange"
                 year="1971"
                 initialSlug="a-clockwork-orange-1971"
                 tmdbId={185}
               />
-              <MediaCard 
+              <MediaCard
                 title="The Shining"
                 year="1980"
                 initialSlug="the-shining-1980"
@@ -226,27 +211,19 @@ export default function MoviesNewPage() {
           <div style={styles.section}>
             <div style={styles.sectionHeader}>
               <h2 style={styles.sectionTitle}>Hidden Gems</h2>
-              <button 
-                onClick={() => handleViewAll('hidden-gems')}
-                style={styles.viewAllButton}
-              >
+              <button onClick={() => handleViewAll('hidden-gems')} style={styles.viewAllButton}>
                 View All
               </button>
             </div>
             <div style={styles.movieGrid}>
-              <MediaCard 
+              <MediaCard
                 title="The Handmaiden"
                 year="2016"
                 initialSlug="the-handmaiden-2016"
                 tmdbId={290859}
               />
-              <MediaCard 
-                title="Burning"
-                year="2018"
-                initialSlug="burning-2018"
-                tmdbId={492188}
-              />
-              <MediaCard 
+              <MediaCard title="Burning" year="2018" initialSlug="burning-2018" tmdbId={492188} />
+              <MediaCard
                 title="Portrait of a Lady on Fire"
                 year="2019"
                 initialSlug="portrait-of-a-lady-on-fire-2019"
@@ -254,7 +231,6 @@ export default function MoviesNewPage() {
               />
             </div>
           </div>
-
         </div>
       </div>
     </PhoneFrame>
@@ -266,7 +242,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     height: '100%',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     backgroundColor: '#f9fafb',
   },
   heroHeader: {

@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 /**
  * TMDB Slug Cleanup Script
- * 
+ *
  * Removes TMDB overview text, plot summaries, and other low-quality
  * slug data from the movies table. Preserves only Claude-generated
  * taglines that meet quality standards.
- * 
+ *
  * Run with: node scripts/cleanup-tmdb-slugs.js
  */
 
@@ -36,12 +36,12 @@ const BAD_SLUG_PATTERNS = [
   'chronicles the',
   'explores the',
   'centers on',
-  'focuses on'
+  'focuses on',
 ];
 
 async function cleanupTMDBSlugs() {
   console.log('🧹 Starting TMDB slug cleanup...');
-  
+
   try {
     // Step 1: Get all movies with slugs
     console.log('📊 Analyzing existing slugs...');
@@ -62,23 +62,22 @@ async function cleanupTMDBSlugs() {
 
     movies.forEach(movie => {
       const slug = movie.slug;
-      
+
       // Check for bad patterns
-      const isBadSlug = BAD_SLUG_PATTERNS.some(pattern => 
-        slug.toLowerCase().includes(pattern.toLowerCase())
-      ) || 
-      slug.length > 200 || // Too long (TMDB overview)
-      slug.length < 5 ||   // Too short
-      slug === slug.toLowerCase() || // All lowercase (likely auto-generated)
-      slug.includes('-') || // URL-style formatting
-      slug.split(' ').length > 15; // Too many words (likely plot summary)
+      const isBadSlug =
+        BAD_SLUG_PATTERNS.some(pattern => slug.toLowerCase().includes(pattern.toLowerCase())) ||
+        slug.length > 200 || // Too long (TMDB overview)
+        slug.length < 5 || // Too short
+        slug === slug.toLowerCase() || // All lowercase (likely auto-generated)
+        slug.includes('-') || // URL-style formatting
+        slug.split(' ').length > 15; // Too many words (likely plot summary)
 
       if (isBadSlug) {
         badSlugs.push({
           id: movie.id,
           title: movie.title,
           year: movie.year,
-          badSlug: slug.substring(0, 100) + (slug.length > 100 ? '...' : '')
+          badSlug: slug.substring(0, 100) + (slug.length > 100 ? '...' : ''),
         });
       } else {
         goodSlugs.push(movie);
@@ -104,7 +103,7 @@ async function cleanupTMDBSlugs() {
     }
 
     console.log(`\n⚠️  About to clean ${badSlugs.length} bad slugs...`);
-    
+
     // In production, you might want to add a confirmation prompt here
     // For now, proceeding automatically
 
@@ -116,13 +115,15 @@ async function cleanupTMDBSlugs() {
       const batch = badSlugs.slice(i, i + BATCH_SIZE);
       const movieIds = batch.map(movie => movie.id);
 
-      console.log(`🧹 Cleaning batch ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(badSlugs.length / BATCH_SIZE)}...`);
+      console.log(
+        `🧹 Cleaning batch ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(badSlugs.length / BATCH_SIZE)}...`
+      );
 
       const { error: updateError } = await supabase
         .from('movies')
-        .update({ 
+        .update({
           slug: null,
-          updated_at: new Date().toISOString()
+          updated_at: new Date().toISOString(),
         })
         .in('id', movieIds);
 
@@ -140,7 +141,6 @@ async function cleanupTMDBSlugs() {
     console.log(`  ✅ Good Claude slugs preserved: ${goodSlugs.length}`);
     console.log(`  🧹 Bad TMDB slugs cleaned: ${cleaned}`);
     console.log(`  📝 Total movies ready for Claude generation: ${cleaned}`);
-
   } catch (error) {
     console.error('❌ Cleanup failed:', error);
     process.exit(1);

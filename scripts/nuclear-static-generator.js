@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Nuclear Static Generator
- * 
+ *
  * Generates completely static JSON data files for nuclear movie pages.
  * These files can be deployed as static assets for lightning-fast loading.
  */
@@ -43,64 +43,68 @@ async function getAllNuclearMovies() {
     console.log('🧪 Test mode: Using 10 nuclear test movies');
     return NUCLEAR_TEST_IDS;
   }
-  
+
   console.log('🚀 Full mode: Getting all movies with analysis...');
-  
+
   // Get all movies with analysis - handle Supabase 1000 row limit with pagination
   let allMovies = [];
   let currentOffset = 0;
   const pageSize = 1000;
-  
+
   while (true) {
     const { data: moviePage, error } = await supabase
       .from('movies')
-      .select(`
+      .select(
+        `
         tmdb_id, 
         title, 
         year,
         movie_analyses!inner(analysis_type)
-      `)
+      `
+      )
       .not('tmdb_id', 'is', null)
       .eq('movie_analyses.analysis_type', 'page_analysis')
       .order('tmdb_id')
       .range(currentOffset, currentOffset + pageSize - 1);
-      
+
     if (error) {
       console.error('❌ Error fetching movies:', error);
       break;
     }
-    
+
     if (!moviePage || moviePage.length === 0) {
       break; // No more movies
     }
-    
+
     allMovies.push(...moviePage);
-    console.log(`📄 Fetched page ${Math.floor(currentOffset/pageSize) + 1}: ${moviePage.length} movies (total: ${allMovies.length})`);
-    
+    console.log(
+      `📄 Fetched page ${Math.floor(currentOffset / pageSize) + 1}: ${moviePage.length} movies (total: ${allMovies.length})`
+    );
+
     if (moviePage.length < pageSize) {
       break; // Last page
     }
-    
+
     currentOffset += pageSize;
   }
-  
+
   console.log(`📊 Found ${allMovies.length} total movies with analysis`);
   console.log(`⚡ All movies will be generated (first full run)`);
-  
+
   return allMovies.map(movie => movie.tmdb_id).slice(startFrom);
 }
 
 /**
  * Build a movie title lookup from all movies in sections
  * Creates a Map for fast O(1) lookups during text processing
- * 
+ *
  * @param {Array} sections - Analysis sections containing movie data
  * @param {string} currentTitle - Title of current movie to exclude (prevent self-referential links)
  * @returns {Map} - Map with "title (year)" keys and movie data values
  */
 function buildMovieLookup(sections, currentTitle) {
   const movieLookup = new Map();
-  
+
   sections.forEach(section => {
     if (section.type === 'movies' && section.movies) {
       section.movies.forEach(movie => {
@@ -111,22 +115,22 @@ function buildMovieLookup(sections, currentTitle) {
           movieLookup.set(key, {
             title: movie.title,
             tmdb_id: movie.tmdb_id,
-            year: movie.year
+            year: movie.year,
           });
         }
       });
     }
   });
-  
+
   return movieLookup;
 }
 
 /**
  * Process text content to convert movie mentions to direct TMDB links
- * 
+ *
  * Converts patterns like "**Movie Title** (Year)" to direct HTML links.
  * Applies business logic to prevent self-referential links.
- * 
+ *
  * @param {string} content - Text content to process
  * @param {Map} movieLookup - Movie lookup map from buildMovieLookup()
  * @param {string} currentTitle - Current movie title to prevent self-links
@@ -136,26 +140,26 @@ function processTextLinks(content, movieLookup, currentTitle) {
   if (!content || typeof content !== 'string') {
     return content;
   }
-  
+
   let processedContent = content;
-  
+
   // Pattern for **Movie Title** (Year) format in markdown
   const moviePattern = /\*\*([^*]+)\*\* \((\d{4})\)/g;
   const matches = [];
   let match;
-  
+
   // Collect all matches first to avoid regex state issues
   while ((match = moviePattern.exec(content)) !== null) {
     const title = match[1].trim();
     const year = parseInt(match[2]);
     const lookupKey = `${title.toLowerCase()} (${year})`;
-    
+
     // BUSINESS LOGIC: Skip self-referential links (case-insensitive)
     if (title.toLowerCase().trim() === currentTitle.toLowerCase().trim()) {
       console.log(`🚫 Skipping self-referential link: ${title}`);
       continue;
     }
-    
+
     // Look up TMDB ID from related movies data
     const movieData = movieLookup.get(lookupKey);
     if (movieData) {
@@ -165,43 +169,44 @@ function processTextLinks(content, movieLookup, currentTitle) {
         year: year,
         tmdbId: movieData.tmdb_id,
         start: match.index,
-        end: match.index + match[0].length
+        end: match.index + match[0].length,
       });
       console.log(`🔗 Found linkable movie: ${title} (${year}) -> /movie/${movieData.tmdb_id}`);
     } else {
       console.log(`❓ No TMDB ID found for: ${title} (${year})`);
     }
   }
-  
+
   // Process matches in reverse order to maintain string positions
   for (const movieMatch of matches.reverse()) {
     // Convert **Title** (Year) to <a href="/movie/ID">Title</a> (Year)
     const link = `<a href="/movie/${movieMatch.tmdbId}" class="movie-title">${movieMatch.title}</a> (${movieMatch.year})`;
-    processedContent = processedContent.slice(0, movieMatch.start) + link + processedContent.slice(movieMatch.end);
+    processedContent =
+      processedContent.slice(0, movieMatch.start) + link + processedContent.slice(movieMatch.end);
   }
-  
+
   return processedContent;
 }
 
 /**
  * Validate generated static data for quality and correctness
- * 
+ *
  * @param {Object} staticData - The generated static page data
  * @param {string} movieTitle - Title of the movie for context
  * @returns {Object} - Validation result with issues array
  */
 function validateStaticData(staticData, movieTitle) {
   const issues = [];
-  
+
   try {
     // Check required top-level structure
     if (!staticData.props) {
       issues.push('Missing props object');
       return { valid: false, issues };
     }
-    
+
     const props = staticData.props;
-    
+
     // Check required fields
     const requiredFields = ['title', 'year', 'tmdbId', 'hasAnalysis', 'sections'];
     for (const field of requiredFields) {
@@ -209,14 +214,14 @@ function validateStaticData(staticData, movieTitle) {
         issues.push(`Missing required field: ${field}`);
       }
     }
-    
+
     // Validate sections structure
     if (Array.isArray(props.sections)) {
       props.sections.forEach((section, index) => {
         if (!section.type) {
           issues.push(`Section ${index} missing type`);
         }
-        
+
         if (section.type === 'text') {
           if (!section.content || typeof section.content !== 'string') {
             issues.push(`Text section ${index} missing or invalid content`);
@@ -227,22 +232,32 @@ function validateStaticData(staticData, movieTitle) {
               // Filter out self-referential links which should remain unprocessed
               const problematicLinks = unprocessedLinks.filter(link => {
                 const titleMatch = link.match(/\*\*([^*]+)\*\*/);
-                return titleMatch && titleMatch[1].toLowerCase().trim() !== movieTitle.toLowerCase().trim();
+                return (
+                  titleMatch &&
+                  titleMatch[1].toLowerCase().trim() !== movieTitle.toLowerCase().trim()
+                );
               });
-              
+
               if (problematicLinks.length > 0) {
-                issues.push(`Section ${index} has unprocessed movie links: ${problematicLinks.join(', ')}`);
+                issues.push(
+                  `Section ${index} has unprocessed movie links: ${problematicLinks.join(', ')}`
+                );
               }
             }
-            
+
             // Check for self-referential links (should remain as markdown)
-            const selfLinks = section.content.match(new RegExp(`<a href="/movie/\\d+"[^>]*>${movieTitle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}</a>`, 'gi'));
+            const selfLinks = section.content.match(
+              new RegExp(
+                `<a href="/movie/\\d+"[^>]*>${movieTitle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}</a>`,
+                'gi'
+              )
+            );
             if (selfLinks) {
               issues.push(`Section ${index} has self-referential link: ${selfLinks[0]}`);
             }
           }
         }
-        
+
         if (section.type === 'movies') {
           if (!Array.isArray(section.movies)) {
             issues.push(`Movies section ${index} missing or invalid movies array`);
@@ -258,7 +273,7 @@ function validateStaticData(staticData, movieTitle) {
     } else {
       issues.push('Sections is not an array');
     }
-    
+
     // Check for proper link structure in processed content
     const textSections = props.sections.filter(s => s.type === 'text');
     textSections.forEach((section, index) => {
@@ -268,7 +283,7 @@ function validateStaticData(staticData, movieTitle) {
         if (searchLinks) {
           issues.push(`Section ${index} has search-based links: ${searchLinks.join(', ')}`);
         }
-        
+
         // Check for broken image references
         const brokenImages = section.content.match(/src="[^"]*"/g);
         if (brokenImages) {
@@ -278,7 +293,7 @@ function validateStaticData(staticData, movieTitle) {
             }
           });
         }
-        
+
         // Find all movie links
         const movieLinks = section.content.match(/<a href="\/movie\/\d+"[^>]*>[^<]+<\/a>/g) || [];
         movieLinks.forEach(link => {
@@ -286,7 +301,7 @@ function validateStaticData(staticData, movieTitle) {
           if (!link.includes('class="movie-title"')) {
             issues.push(`Section ${index} has movie link without proper class: ${link}`);
           }
-          
+
           // Extract TMDB ID from link
           const tmdbMatch = link.match(/\/movie\/(\d+)/);
           if (!tmdbMatch) {
@@ -295,20 +310,24 @@ function validateStaticData(staticData, movieTitle) {
         });
       }
     });
-    
+
     // Validate movie data in sections
     props.sections.forEach((section, index) => {
       if (section.type === 'movies' && section.movies) {
         section.movies.forEach((movie, movieIndex) => {
           // Check for broken poster URLs
           if (movie.poster_url) {
-            if (movie.poster_url.includes('placeholder') || 
-                movie.poster_url.includes('404') ||
-                movie.poster_url === '/images/placeholder-poster.jpg') {
-              issues.push(`Movie ${movieIndex} in section ${index} has placeholder poster: ${movie.poster_url}`);
+            if (
+              movie.poster_url.includes('placeholder') ||
+              movie.poster_url.includes('404') ||
+              movie.poster_url === '/images/placeholder-poster.jpg'
+            ) {
+              issues.push(
+                `Movie ${movieIndex} in section ${index} has placeholder poster: ${movie.poster_url}`
+              );
             }
           }
-          
+
           // Check for missing TMDB IDs
           if (!movie.tmdb_id) {
             issues.push(`Movie ${movieIndex} in section ${index} missing TMDB ID: ${movie.title}`);
@@ -316,29 +335,30 @@ function validateStaticData(staticData, movieTitle) {
         });
       }
     });
-    
+
     // Check main movie poster
     if (props.initialPoster) {
-      if (props.initialPoster.includes('placeholder') || 
-          props.initialPoster.includes('404') ||
-          props.initialPoster === '/images/placeholder-poster.jpg') {
+      if (
+        props.initialPoster.includes('placeholder') ||
+        props.initialPoster.includes('404') ||
+        props.initialPoster === '/images/placeholder-poster.jpg'
+      ) {
         issues.push(`Main movie has placeholder poster: ${props.initialPoster}`);
       }
     }
-    
   } catch (error) {
     issues.push(`Validation error: ${error.message}`);
   }
-  
+
   return {
     valid: issues.length === 0,
-    issues
+    issues,
   };
 }
 
 /**
  * Generate static page data for a movie with validation
- * 
+ *
  * @param {number} tmdbId - TMDB ID of the movie to generate
  * @returns {Object} - Generation result with success status and data
  */
@@ -358,10 +378,10 @@ async function generateMovieStaticData(tmdbId) {
 
     // Import analysis service
     const { AnalysisService } = await import('../lib/services/analysis-service.js');
-    
+
     // Get analysis data
     const analysisData = await AnalysisService.getOrGenerate(movieEntry);
-    
+
     if (!analysisData || !analysisData.sections || analysisData.sections.length === 0) {
       console.log(`❌ Movie ${tmdbId} has no analysis data`);
       return { success: false, tmdbId, error: 'No analysis data' };
@@ -370,13 +390,13 @@ async function generateMovieStaticData(tmdbId) {
     // Build movie lookup for text link processing
     const movieLookup = buildMovieLookup(analysisData.sections, movieEntry.title);
     console.log(`🔍 Built movie lookup with ${movieLookup.size} movies for ${movieEntry.title}`);
-    
+
     // Process text sections to convert movie mentions to direct links
     const processedSections = analysisData.sections.map(section => {
       if (section.type === 'text' && section.content) {
         return {
           ...section,
-          content: processTextLinks(section.content, movieLookup, movieEntry.title)
+          content: processTextLinks(section.content, movieLookup, movieEntry.title),
         };
       }
       return section;
@@ -395,9 +415,9 @@ async function generateMovieStaticData(tmdbId) {
         hasAnalysis: true,
         sections: processedSections, // Use processed sections with direct links
         exploreFurther: analysisData.exploreFurther,
-        moreIdeas: analysisData.moreIdeas
+        moreIdeas: analysisData.moreIdeas,
       },
-      __N_SSG: true
+      __N_SSG: true,
     };
 
     // Validate the generated static data
@@ -408,15 +428,14 @@ async function generateMovieStaticData(tmdbId) {
     }
 
     console.log(`✅ Generated static data for "${movieEntry.title}" (${movieEntry.year})`);
-    return { 
-      success: true, 
-      tmdbId, 
-      staticData, 
+    return {
+      success: true,
+      tmdbId,
+      staticData,
       movieTitle: movieEntry.title,
       movieYear: movieEntry.year,
-      validation // Include validation results
+      validation, // Include validation results
     };
-
   } catch (error) {
     console.error(`❌ Error generating static data for movie ${tmdbId}:`, error.message);
     return { success: false, tmdbId, error: error.message };
@@ -430,12 +449,12 @@ async function markMovieAsNuclearStatic(tmdbId) {
   try {
     const { error } = await supabase
       .from('movies')
-      .update({ 
+      .update({
         is_nuclear_static: true,
-        nuclear_generated_at: new Date().toISOString()
+        nuclear_generated_at: new Date().toISOString(),
       })
       .eq('tmdb_id', tmdbId);
-      
+
     if (error) {
       console.warn(`⚠️ Failed to mark movie ${tmdbId} as nuclear static:`, error.message);
     }
@@ -449,27 +468,27 @@ async function markMovieAsNuclearStatic(tmdbId) {
  */
 async function processBatch(movieIds, batchNum, totalBatches, outputDir) {
   console.log(`\n🎬 Processing batch ${batchNum}/${totalBatches} (${movieIds.length} movies)`);
-  
+
   const batchPromises = movieIds.map(tmdbId => generateMovieStaticData(tmdbId));
   const results = await Promise.allSettled(batchPromises);
-  
+
   const batchStats = { success: 0, failed: 0, errors: [] };
-  
+
   for (let i = 0; i < results.length; i++) {
     const result = results[i];
     const tmdbId = movieIds[i];
-    
+
     if (result.status === 'fulfilled' && result.value.success) {
       const { staticData, movieTitle, movieYear } = result.value;
-      
+
       // Write static data file
       const filename = `${tmdbId}.json`;
       const filepath = path.join(outputDir, filename);
       fs.writeFileSync(filepath, JSON.stringify(staticData, null, 2));
-      
+
       // TODO: Mark as nuclear static in database (column doesn't exist yet)
       // await markMovieAsNuclearStatic(tmdbId);
-      
+
       console.log(`  ✅ ${movieTitle} (${movieYear}) → ${filename}`);
       batchStats.success++;
     } else {
@@ -479,8 +498,10 @@ async function processBatch(movieIds, batchNum, totalBatches, outputDir) {
       batchStats.errors.push({ tmdbId, error });
     }
   }
-  
-  console.log(`📊 Batch ${batchNum} complete: ${batchStats.success} success, ${batchStats.failed} failed`);
+
+  console.log(
+    `📊 Batch ${batchNum} complete: ${batchStats.success} success, ${batchStats.failed} failed`
+  );
   return batchStats;
 }
 
@@ -490,14 +511,14 @@ async function processBatch(movieIds, batchNum, totalBatches, outputDir) {
 async function generateNuclearStaticFiles() {
   const startTime = Date.now();
   console.log('🚀 Nuclear Static Generator - Starting...\n');
-  
+
   if (runAllMovies) {
     console.log(`⚡ Full generation mode: ${batchSize} movies in parallel`);
     if (startFrom > 0) {
       console.log(`🔄 Resuming from movie #${startFrom}`);
     }
   }
-  
+
   // Create output directory
   const outputDir = path.join(PROJECT_ROOT, 'nuclear-static');
   if (!fs.existsSync(outputDir)) {
@@ -507,7 +528,7 @@ async function generateNuclearStaticFiles() {
   // Get all movies to process
   const allMovieIds = await getAllNuclearMovies();
   console.log(`🎯 Target: ${allMovieIds.length} movies for nuclear static generation\n`);
-  
+
   if (allMovieIds.length === 0) {
     console.log('✅ All movies already have nuclear static files!');
     return;
@@ -516,27 +537,28 @@ async function generateNuclearStaticFiles() {
   // Process in batches
   const totalStats = { success: 0, failed: 0, errors: [] };
   const totalBatches = Math.ceil(allMovieIds.length / batchSize);
-  
+
   for (let i = 0; i < allMovieIds.length; i += batchSize) {
     const batchIds = allMovieIds.slice(i, i + batchSize);
     const batchNum = Math.floor(i / batchSize) + 1;
-    
+
     try {
       const batchStats = await processBatch(batchIds, batchNum, totalBatches, outputDir);
       totalStats.success += batchStats.success;
       totalStats.failed += batchStats.failed;
       totalStats.errors.push(...batchStats.errors);
-      
+
       // Progress indicator
       const progressPct = Math.round(((i + batchSize) / allMovieIds.length) * 100);
       const elapsed = Math.round((Date.now() - startTime) / 1000);
-      console.log(`⏱️  Progress: ${Math.min(progressPct, 100)}% | ${totalStats.success} generated | ${elapsed}s elapsed\n`);
-      
+      console.log(
+        `⏱️  Progress: ${Math.min(progressPct, 100)}% | ${totalStats.success} generated | ${elapsed}s elapsed\n`
+      );
+
       // Rate limiting between batches to be respectful to services
       if (batchNum < totalBatches) {
         await new Promise(resolve => setTimeout(resolve, 1000));
       }
-      
     } catch (error) {
       console.error(`💥 Batch ${batchNum} failed completely:`, error);
       totalStats.failed += batchIds.length;
@@ -553,7 +575,7 @@ async function generateNuclearStaticFiles() {
     generationTimeSeconds: Math.round((Date.now() - startTime) / 1000),
     version: '2.0.0',
     mode: runAllMovies ? 'full' : 'test',
-    errors: totalStats.errors.slice(0, 50) // Keep first 50 errors for debugging
+    errors: totalStats.errors.slice(0, 50), // Keep first 50 errors for debugging
   };
 
   const manifestPath = path.join(outputDir, 'manifest.json');
@@ -562,18 +584,23 @@ async function generateNuclearStaticFiles() {
   // Final summary
   const totalTime = Math.round((Date.now() - startTime) / 1000);
   const avgTimePerMovie = Math.round(totalTime / totalStats.success);
-  
+
   console.log('\n🎯 NUCLEAR STATIC GENERATION COMPLETE!');
   console.log('═'.repeat(50));
   console.log(`✅ Generated: ${totalStats.success} movies`);
   console.log(`❌ Failed: ${totalStats.failed} movies`);
-  console.log(`⏱️  Total time: ${totalTime}s (${Math.round(totalTime/60)}m)`);
+  console.log(`⏱️  Total time: ${totalTime}s (${Math.round(totalTime / 60)}m)`);
   console.log(`📊 Average: ${avgTimePerMovie}s per movie`);
   console.log(`📂 Output: nuclear-static/ (${totalStats.success} JSON files)`);
   console.log(`🚀 Ready for lightning-fast deployment!`);
-  
+
   if (totalStats.failed > 0) {
-    console.log(`\n⚠️  Failed movies (first 10): ${totalStats.errors.slice(0, 10).map(e => e.tmdbId).join(', ')}`);
+    console.log(
+      `\n⚠️  Failed movies (first 10): ${totalStats.errors
+        .slice(0, 10)
+        .map(e => e.tmdbId)
+        .join(', ')}`
+    );
   }
 }
 

@@ -3,13 +3,13 @@ import { useState, useEffect } from 'react';
 import MediaCard from './MediaCard';
 import { Grid, List } from 'lucide-react';
 
-export default function SearchResults({ 
-  movies = [], 
-  loading = false, 
-  query = '', 
+export default function SearchResults({
+  movies = [],
+  loading = false,
+  query = '',
   onMovieClick,
   style = {},
-  showViewToggle = true 
+  showViewToggle = true,
 }) {
   const [viewMode, setViewMode] = useState('grid'); // 'grid' or 'list'
 
@@ -46,16 +46,14 @@ export default function SearchResults({
       <div style={{ ...styles.container, ...style }}>
         <div style={styles.initialState}>
           <div style={styles.initialIcon}>🔍</div>
-          <div style={styles.initialMessage}>
-            Start typing to search for movies
-          </div>
+          <div style={styles.initialMessage}>Start typing to search for movies</div>
         </div>
       </div>
     );
   }
 
   // Handle movie card click
-  const handleMovieClick = (movie) => {
+  const handleMovieClick = movie => {
     if (onMovieClick) {
       onMovieClick(movie);
     }
@@ -70,19 +68,15 @@ export default function SearchResults({
             <span style={styles.resultsCount}>
               {movies.length} movie{movies.length !== 1 ? 's' : ''}
             </span>
-            {query && (
-              <span style={styles.resultsQuery}>
-                for "{query}"
-              </span>
-            )}
+            {query && <span style={styles.resultsQuery}>for "{query}"</span>}
           </div>
-          
+
           {showViewToggle && (
             <div style={styles.viewToggle}>
               <button
                 style={{
                   ...styles.viewButton,
-                  ...(viewMode === 'grid' ? styles.viewButtonActive : {})
+                  ...(viewMode === 'grid' ? styles.viewButtonActive : {}),
                 }}
                 onClick={() => setViewMode('grid')}
                 title="Grid view"
@@ -92,7 +86,7 @@ export default function SearchResults({
               <button
                 style={{
                   ...styles.viewButton,
-                  ...(viewMode === 'list' ? styles.viewButtonActive : {})
+                  ...(viewMode === 'list' ? styles.viewButtonActive : {}),
                 }}
                 onClick={() => setViewMode('list')}
                 title="List view"
@@ -141,7 +135,7 @@ const styles = {
   container: {
     width: '100%',
   },
-  
+
   // Loading state
   loadingContainer: {
     display: 'flex',
@@ -225,7 +219,7 @@ const styles = {
     fontSize: '14px',
     color: '#6b7280',
   },
-  
+
   // View toggle
   viewToggle: {
     display: 'flex',

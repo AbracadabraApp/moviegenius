@@ -5,18 +5,18 @@ export const config = {
       sizeLimit: '1mb',
     },
   },
-}
+};
 
 export default async function handler(req, res) {
   console.log('🔍 Health endpoint called with method:', req.method);
   console.log('🔍 Request body:', req.body);
-  
+
   // Original health check for GET requests
   if (req.method === 'GET') {
     console.log('✅ Returning GET health response');
-    return res.status(200).json({ 
+    return res.status(200).json({
       status: 'ok',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   }
 
@@ -29,17 +29,17 @@ export default async function handler(req, res) {
 
     const TMDB_KEY = process.env.NEXT_PUBLIC_TMDB_API_KEY || process.env.TMDB_API_KEY;
     if (!TMDB_KEY) {
-      return res.status(500).json({ 
+      return res.status(500).json({
         error: 'Search unavailable',
         movies: [],
-        fallback: { message: "Search temporarily unavailable" }
+        fallback: { message: 'Search temporarily unavailable' },
       });
     }
 
     try {
       const searchQuery = encodeURIComponent(query.trim());
       console.log(`🔍 TMDB search via health endpoint: "${query.trim()}"`);
-      
+
       const response = await fetch(
         `https://api.themoviedb.org/3/search/multi?api_key=${TMDB_KEY}&query=${searchQuery}&include_adult=false&language=en-US`
       );
@@ -49,11 +49,12 @@ export default async function handler(req, res) {
       }
 
       const data = await response.json();
-      
+
       const filteredResults = (data.results || [])
-        .filter(item => 
-          (item.media_type === 'movie' && item.title && item.id) ||
-          (item.media_type === 'person' && item.name && item.id)
+        .filter(
+          item =>
+            (item.media_type === 'movie' && item.title && item.id) ||
+            (item.media_type === 'person' && item.name && item.id)
         )
         .map(item => {
           if (item.media_type === 'movie') {
@@ -62,9 +63,11 @@ export default async function handler(req, res) {
               title: item.title,
               year: item.release_date ? parseInt(item.release_date.substring(0, 4)) : null,
               tmdb_id: item.id,
-              poster_url: item.poster_path ? `https://image.tmdb.org/t/p/w500${item.poster_path}` : null,
+              poster_url: item.poster_path
+                ? `https://image.tmdb.org/t/p/w500${item.poster_path}`
+                : null,
               popularity: item.popularity || 0,
-              type: 'movie'
+              type: 'movie',
             };
           } else if (item.media_type === 'person') {
             return {
@@ -72,11 +75,17 @@ export default async function handler(req, res) {
               title: item.name,
               year: null,
               tmdb_id: null,
-              poster_url: item.profile_path ? `https://image.tmdb.org/t/p/w500${item.profile_path}` : null,
+              poster_url: item.profile_path
+                ? `https://image.tmdb.org/t/p/w500${item.profile_path}`
+                : null,
               popularity: item.popularity || 0,
               type: 'person',
               known_for_department: item.known_for_department,
-              known_for: (item.known_for || []).slice(0, 3).map(movie => movie.title || movie.name).join(', ') || 'Various films'
+              known_for:
+                (item.known_for || [])
+                  .slice(0, 3)
+                  .map(movie => movie.title || movie.name)
+                  .join(', ') || 'Various films',
             };
           }
         })
@@ -84,25 +93,30 @@ export default async function handler(req, res) {
 
       const popularitySorted = filteredResults.sort((a, b) => b.popularity - a.popularity);
       const movies = popularitySorted.slice(0, 20);
-      
-      console.log(`✅ Health endpoint search success: "${query.trim()}" -> ${movies.length} results`);
+
+      console.log(
+        `✅ Health endpoint search success: "${query.trim()}" -> ${movies.length} results`
+      );
 
       return res.status(200).json({
         movies,
         query: query.trim(),
         hasResults: movies.length > 0,
-        fallback: movies.length === 0 ? {
-          message: "We didn't find a result, but would you like to pass it on to our Movie Genius?",
-          askUrl: `/genius?q=${encodeURIComponent(query.trim())}`
-        } : null
+        fallback:
+          movies.length === 0
+            ? {
+                message:
+                  "We didn't find a result, but would you like to pass it on to our Movie Genius?",
+                askUrl: `/genius?q=${encodeURIComponent(query.trim())}`,
+              }
+            : null,
       });
-
     } catch (error) {
       console.error('Health endpoint search error:', error);
       return res.status(500).json({
         error: 'Search failed',
         movies: [],
-        message: error.message
+        message: error.message,
       });
     }
   }

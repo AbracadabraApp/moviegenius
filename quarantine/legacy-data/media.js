@@ -39,7 +39,7 @@ const afi100Media = afi100.map(movie => ({
 const mediaList = [...afi100Media, ...customMedia];
 
 export function getMediaById(id) {
-  return mediaList.find((m) => m.id === id);
+  return mediaList.find(m => m.id === id);
 }
 
 export function getAllMedia() {

@@ -27,7 +27,7 @@ export default async function handler(req, res) {
       return res.status(200).json({
         message: 'No movies with null TMDB IDs found',
         removedMovies: [],
-        count: 0
+        count: 0,
       });
     }
 
@@ -37,10 +37,7 @@ export default async function handler(req, res) {
     });
 
     // Delete movies with null TMDB IDs
-    const { error: deleteError } = await supabase
-      .from('movies')
-      .delete()
-      .is('tmdb_id', null);
+    const { error: deleteError } = await supabase.from('movies').delete().is('tmdb_id', null);
 
     if (deleteError) {
       console.error('Error deleting null TMDB movies:', deleteError);
@@ -52,9 +49,8 @@ export default async function handler(req, res) {
     res.status(200).json({
       message: `Successfully removed ${nullMovies.length} movies with null TMDB IDs`,
       removedMovies: nullMovies,
-      count: nullMovies.length
+      count: nullMovies.length,
     });
-
   } catch (error) {
     console.error('Error removing null TMDB movies:', error);
     res.status(500).json({ error: 'Failed to remove null TMDB movies' });

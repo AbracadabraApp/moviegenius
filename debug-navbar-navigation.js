@@ -1,6 +1,6 @@
 /**
  * Debug script to test NavBar navigation flow
- * 
+ *
  * This script tests the actual navigation behavior that users experience
  * to identify why URL changes but page content doesn't update.
  */
@@ -22,7 +22,7 @@ console.log('=====================================');
 
 // 1. Check NavBar component structure
 console.log('1. NavBar Component Analysis:');
-console.log('✓ NavBar imports:', navBarContent.includes('import Link from \'next/link\''));
+console.log('✓ NavBar imports:', navBarContent.includes("import Link from 'next/link'"));
 console.log('✓ Uses Next.js Link:', navBarContent.includes('<Link'));
 console.log('✓ Has useRouter hook:', navBarContent.includes('useRouter'));
 console.log('✓ Has route mapping:', navBarContent.includes('navItems.map'));
@@ -66,7 +66,7 @@ const pageFiles = {
   'movies.js': fs.existsSync(path.join(pagesDir, 'movies.js')),
   'genius.js': fs.existsSync(path.join(pagesDir, 'genius.js')),
   'you.js': fs.existsSync(path.join(pagesDir, 'you.js')),
-  'index.js': fs.existsSync(path.join(pagesDir, 'index.js'))
+  'index.js': fs.existsSync(path.join(pagesDir, 'index.js')),
 };
 
 Object.entries(pageFiles).forEach(([file, exists]) => {
@@ -88,7 +88,9 @@ if (appExists) {
 
 // 7. Specific issue analysis
 console.log('\n6. Specific Issue Analysis:');
-console.log('REPORTED ISSUE: "Theme page click to Nav Bar icons change url but don\'t load icon home"');
+console.log(
+  'REPORTED ISSUE: "Theme page click to Nav Bar icons change url but don\'t load icon home"'
+);
 console.log('');
 console.log('This suggests:');
 console.log('- ✓ NavBar clicks are working (URL changes)');
@@ -97,7 +99,7 @@ console.log('- ❌ Page content is not updating');
 console.log('');
 console.log('Possible causes:');
 console.log('1. Component state not updating on route change');
-console.log('2. Router events not firing properly'); 
+console.log('2. Router events not firing properly');
 console.log('3. Page components have rendering errors');
 console.log('4. CSS/styling issues hiding content');
 console.log('5. Browser navigation cache issues');
@@ -107,7 +109,9 @@ console.log('\n7. Debugging Recommendations:');
 console.log('1. Check browser dev tools for JavaScript errors');
 console.log('2. Verify router.events are firing in _app.js');
 console.log('3. Check if page components render correctly in isolation');
-console.log('4. Test with browser dev tools Network tab (should show no network requests for client-side routing)');
+console.log(
+  '4. Test with browser dev tools Network tab (should show no network requests for client-side routing)'
+);
 console.log('5. Check if issue occurs in incognito/private mode');
 
 console.log('\n✅ NavBar component structure appears correct');

@@ -17,33 +17,37 @@ export default function YouRedesignPage() {
   const [expandedSections, setExpandedSections] = useState({
     hearted: false,
     bookmarked: false,
-    platforms: false
+    platforms: false,
   });
 
-  const toggleSection = (section) => {
+  const toggleSection = section => {
     setExpandedSections({
       hearted: false,
       bookmarked: false,
       platforms: false,
-      [section]: true
+      [section]: true,
     });
   };
 
   const handleWipeData = () => {
-    if (window.confirm('Are you sure you want to clear all your data? This will remove all selected platforms, hearted movies, and bookmarked movies.')) {
+    if (
+      window.confirm(
+        'Are you sure you want to clear all your data? This will remove all selected platforms, hearted movies, and bookmarked movies.'
+      )
+    ) {
       localStorage.removeItem('selectedPlatforms');
       localStorage.removeItem('heartedMovies');
       localStorage.removeItem('bookmarkedMovies');
-      
+
       // Update local state
       setSelectedPlatforms([]);
       setHeartedMovies([]);
       setBookmarkedMovies([]);
-      
+
       // Notify other components
       window.dispatchEvent(new CustomEvent('platformsUpdated'));
       window.dispatchEvent(new CustomEvent('moviesUpdated'));
-      
+
       console.log('All user data cleared');
     }
   };
@@ -100,7 +104,7 @@ export default function YouRedesignPage() {
     loadBookmarkedMovies();
 
     // Same event listeners as original
-    const handleStorageChange = (e) => {
+    const handleStorageChange = e => {
       if (e.key === 'selectedPlatforms') {
         loadSelectedPlatforms();
       } else if (e.key === 'heartedMovies') {
@@ -115,7 +119,7 @@ export default function YouRedesignPage() {
       loadHeartedMovies();
       loadBookmarkedMovies();
     };
-    
+
     window.addEventListener('storage', handleStorageChange);
     window.addEventListener('platformsUpdated', handlePlatformUpdate);
     window.addEventListener('moviesUpdated', handleMoviesUpdate);
@@ -136,13 +140,13 @@ export default function YouRedesignPage() {
     }
   }, [router.asPath]);
 
-  const handleSearchResults = (results) => {
+  const handleSearchResults = results => {
     // For now, just log the search results
     // In the future, could show search results in a modal or navigate to search page
     console.log('Search results on You Redesign page:', results);
   };
 
-  const handlePlatformSelectionChange = (selectedPlatforms) => {
+  const handlePlatformSelectionChange = selectedPlatforms => {
     localStorage.setItem('selectedPlatforms', JSON.stringify(selectedPlatforms));
     setSelectedPlatforms(selectedPlatforms);
     window.dispatchEvent(new CustomEvent('platformsUpdated'));
@@ -157,41 +161,49 @@ export default function YouRedesignPage() {
         <div style={styles.fixedInputArea}>
           <SimpleSearch onResults={handleSearchResults} />
         </div>
-        
+
         {/* Scrollable Content */}
         <div style={styles.scrollableContent}>
           {/* Primary Navigation Bar */}
           <div style={styles.primaryNav}>
-            <div 
+            <div
               style={{
                 ...styles.navItem,
-                ...(expandedSections.hearted ? styles.navItemActive : {})
+                ...(expandedSections.hearted ? styles.navItemActive : {}),
               }}
               onClick={() => toggleSection('hearted')}
             >
-              <Heart size={24} color={expandedSections.hearted ? "#ef4444" : "#6b7280"} fill={expandedSections.hearted ? "#ef4444" : "none"} />
+              <Heart
+                size={24}
+                color={expandedSections.hearted ? '#ef4444' : '#6b7280'}
+                fill={expandedSections.hearted ? '#ef4444' : 'none'}
+              />
               <div style={styles.navLabel}>
                 <span style={styles.navTitle}>Loved</span>
                 <span style={styles.navCount}>{heartedMovies.length}</span>
               </div>
             </div>
-            <div 
+            <div
               style={{
                 ...styles.navItem,
-                ...(expandedSections.bookmarked ? styles.navItemActive : {})
+                ...(expandedSections.bookmarked ? styles.navItemActive : {}),
               }}
               onClick={() => toggleSection('bookmarked')}
             >
-              <Bookmark size={24} color={expandedSections.bookmarked ? "#000000" : "#6b7280"} fill={expandedSections.bookmarked ? "#000000" : "none"} />
+              <Bookmark
+                size={24}
+                color={expandedSections.bookmarked ? '#000000' : '#6b7280'}
+                fill={expandedSections.bookmarked ? '#000000' : 'none'}
+              />
               <div style={styles.navLabel}>
                 <span style={styles.navTitle}>To Watch</span>
                 <span style={styles.navCount}>{bookmarkedMovies.length}</span>
               </div>
             </div>
-            <div 
+            <div
               style={{
                 ...styles.navItem,
-                ...(expandedSections.platforms ? styles.navItemActive : {})
+                ...(expandedSections.platforms ? styles.navItemActive : {}),
               }}
               onClick={() => toggleSection('platforms')}
             >
@@ -206,18 +218,18 @@ export default function YouRedesignPage() {
           <div style={styles.content}>
             {/* Genius Insight Section */}
             <h2 style={styles.pageTitle}>Genius Insight</h2>
-            
+
             {/* Cinematic Profile - Always show, but position changes */}
-            <CinematicProfile 
+            <CinematicProfile
               userData={{
                 heartedMovies,
                 bookmarkedMovies,
-                selectedPlatforms
+                selectedPlatforms,
               }}
               style={styles.profileSection}
               onProfileChange={setCurrentProfile}
             />
-            
+
             {/* User Content Sections - Appear between profile and recommendations */}
             {expandedSections.hearted && (
               <div style={styles.userContentSection}>
@@ -230,8 +242,8 @@ export default function YouRedesignPage() {
                     </div>
                   ) : (
                     <div style={styles.movieGrid}>
-                      {heartedMovies.map((movie) => (
-                        <MediaCard 
+                      {heartedMovies.map(movie => (
+                        <MediaCard
                           key={movie.id}
                           title={movie.title}
                           year={movie.year}
@@ -257,8 +269,8 @@ export default function YouRedesignPage() {
                     </div>
                   ) : (
                     <div style={styles.movieGrid}>
-                      {bookmarkedMovies.map((movie) => (
-                        <MediaCard 
+                      {bookmarkedMovies.map(movie => (
+                        <MediaCard
                           key={movie.id}
                           title={movie.title}
                           year={movie.year}
@@ -278,7 +290,7 @@ export default function YouRedesignPage() {
                 <h3 style={styles.userContentTitle}>Streaming Services</h3>
                 <div style={styles.contentSection}>
                   <div style={styles.platformSelector}>
-                    <PlatformSelector 
+                    <PlatformSelector
                       onSelectionChange={handlePlatformSelectionChange}
                       initialSelected={selectedPlatforms}
                       showSelectedSection={false}
@@ -295,61 +307,46 @@ export default function YouRedesignPage() {
                 {currentProfile?.recommendationHeader || 'More Ideas'}
               </h3>
               <div style={styles.movieGrid}>
-                <MediaCard 
+                <MediaCard
                   title="The Maltese Falcon"
                   year="1941"
                   initialSlug="the-maltese-falcon-1941"
                   tmdbId={558}
                 />
-                <MediaCard 
+                <MediaCard
                   title="Casablanca"
                   year="1942"
                   initialSlug="casablanca-1942"
                   tmdbId={289}
                 />
-                <MediaCard 
+                <MediaCard
                   title="Seven Samurai"
                   year="1954"
                   initialSlug="seven-samurai-1954"
                   tmdbId={346}
                 />
-                <MediaCard 
-                  title="8½"
-                  year="1963"
-                  initialSlug="8-half-1963"
-                  tmdbId={392}
-                />
-                <MediaCard 
+                <MediaCard title="8½" year="1963" initialSlug="8-half-1963" tmdbId={392} />
+                <MediaCard
                   title="Chungking Express"
                   year="1994"
                   initialSlug="chungking-express-1994"
                   tmdbId={11104}
                 />
-                <MediaCard 
+                <MediaCard
                   title="Bicycle Thieves"
                   year="1948"
                   initialSlug="bicycle-thieves-1948"
                   tmdbId={14430}
                 />
-                <MediaCard 
+                <MediaCard
                   title="Tokyo Story"
                   year="1953"
                   initialSlug="tokyo-story-1953"
                   tmdbId={18148}
                 />
-                <MediaCard 
-                  title="Vertigo"
-                  year="1958"
-                  initialSlug="vertigo-1958"
-                  tmdbId={5690}
-                />
-                <MediaCard 
-                  title="Persona"
-                  year="1966"
-                  initialSlug="persona-1966"
-                  tmdbId={13297}
-                />
-                <MediaCard 
+                <MediaCard title="Vertigo" year="1958" initialSlug="vertigo-1958" tmdbId={5690} />
+                <MediaCard title="Persona" year="1966" initialSlug="persona-1966" tmdbId={13297} />
+                <MediaCard
                   title="In the Mood for Love"
                   year="2000"
                   initialSlug="in-the-mood-for-love-2000"
@@ -360,15 +357,10 @@ export default function YouRedesignPage() {
 
             {/* Clear Data Section */}
             <div style={styles.dangerZone}>
-              <button 
-                onClick={handleWipeData}
-                style={styles.dangerButton}
-              >
+              <button onClick={handleWipeData} style={styles.dangerButton}>
                 Clear All Data
               </button>
-              <p style={styles.dangerDescription}>
-                Reset all preferences and start fresh
-              </p>
+              <p style={styles.dangerDescription}>Reset all preferences and start fresh</p>
             </div>
           </div>
         </div>
@@ -382,7 +374,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     height: '100%',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     backgroundColor: '#f9fafb',
   },
   fixedInputArea: {

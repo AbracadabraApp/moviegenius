@@ -3,7 +3,19 @@ import PhoneFrame from './PhoneFrame';
 import SimpleSearch from './SimpleSearch';
 import MediaCard from './MediaCard';
 import PlatformSelector from './PlatformSelector';
-import { Heart, Bookmark, Play, Sparkles, Eye, BookOpen, Tv, ChevronRight, Info, Check, Plus } from 'lucide-react';
+import {
+  Heart,
+  Bookmark,
+  Play,
+  Sparkles,
+  Eye,
+  BookOpen,
+  Tv,
+  ChevronRight,
+  Info,
+  Check,
+  Plus,
+} from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 export default function YouPagePrototype() {
@@ -20,7 +32,7 @@ export default function YouPagePrototype() {
     const platforms = JSON.parse(localStorage.getItem('selectedPlatforms') || '[]');
     const hearted = JSON.parse(localStorage.getItem('heartedMovies') || '[]');
     const bookmarked = JSON.parse(localStorage.getItem('bookmarkedMovies') || '[]');
-    
+
     setSelectedPlatforms(platforms);
     setHeartedMovies(hearted);
     setBookmarkedMovies(bookmarked);
@@ -30,53 +42,53 @@ export default function YouPagePrototype() {
   const generateInsights = () => {
     const totalFilms = heartedMovies.length;
     const hasBookmarks = bookmarkedMovies.length > 0;
-    
+
     if (totalFilms === 0) {
       return {
         level: 'beginning',
         title: 'Your Cinematic Journey Begins',
         description: 'Start building your film collection',
         icon: '🎬',
-        insight: null
+        insight: null,
       };
     }
-    
+
     if (totalFilms < 5) {
       return {
         level: 'exploring',
         title: 'Building Your Foundation',
         description: `${totalFilms} films loved`,
         icon: '🌱',
-        insight: 'Every film you love teaches us about your taste'
+        insight: 'Every film you love teaches us about your taste',
       };
     }
-    
+
     if (totalFilms < 15) {
       return {
         level: 'discovering',
         title: 'Patterns Emerging',
         description: `${totalFilms} films • Taste developing`,
         icon: '🔍',
-        insight: 'You gravitate toward character-driven stories'
+        insight: 'You gravitate toward character-driven stories',
       };
     }
-    
+
     return {
       level: 'understanding',
       title: 'Cinematic Understanding',
       description: `${totalFilms} films • Strong profile`,
       icon: '🎭',
-      insight: 'Your taste reflects humanist cinema traditions'
+      insight: 'Your taste reflects humanist cinema traditions',
     };
   };
 
   const insights = generateInsights();
 
-  const handleSearchResults = (results) => {
+  const handleSearchResults = results => {
     console.log('Search results:', results);
   };
 
-  const handlePlatformChange = (platforms) => {
+  const handlePlatformChange = platforms => {
     setSelectedPlatforms(platforms);
     localStorage.setItem('selectedPlatforms', JSON.stringify(platforms));
   };
@@ -85,7 +97,7 @@ export default function YouPagePrototype() {
     { id: 'overview', label: 'Journey', icon: Eye },
     { id: 'seen', label: 'Seen', icon: Check, count: heartedMovies.length },
     { id: 'queue', label: 'Queue', icon: Plus, count: bookmarkedMovies.length },
-    { id: 'platforms', label: 'Access', icon: Tv, count: selectedPlatforms.length }
+    { id: 'platforms', label: 'Access', icon: Tv, count: selectedPlatforms.length },
   ];
 
   return (
@@ -101,29 +113,33 @@ export default function YouPagePrototype() {
           {tabs.map(tab => {
             const Icon = tab.icon;
             const isActive = activeTab === tab.id;
-            
+
             return (
               <button
                 key={tab.id}
                 style={{
                   ...styles.tab,
-                  ...(isActive ? styles.tabActive : {})
+                  ...(isActive ? styles.tabActive : {}),
                 }}
                 onClick={() => setActiveTab(tab.id)}
               >
                 <Icon size={20} color={isActive ? '#d4af37' : '#6b7280'} />
-                <span style={{
-                  ...styles.tabLabel,
-                  color: isActive ? '#d4af37' : '#6b7280'
-                }}>
+                <span
+                  style={{
+                    ...styles.tabLabel,
+                    color: isActive ? '#d4af37' : '#6b7280',
+                  }}
+                >
                   {tab.label}
                 </span>
                 {tab.count !== undefined && (
-                  <span style={{
-                    ...styles.tabCount,
-                    backgroundColor: isActive ? '#d4af37' : '#e5e7eb',
-                    color: isActive ? '#000' : '#6b7280'
-                  }}>
+                  <span
+                    style={{
+                      ...styles.tabCount,
+                      backgroundColor: isActive ? '#d4af37' : '#e5e7eb',
+                      color: isActive ? '#000' : '#6b7280',
+                    }}
+                  >
                     {tab.count}
                   </span>
                 )}
@@ -144,14 +160,14 @@ export default function YouPagePrototype() {
                     <h2 style={styles.progressTitle}>{insights.title}</h2>
                     <p style={styles.progressDescription}>{insights.description}</p>
                   </div>
-                  <button 
+                  <button
                     style={styles.infoButton}
                     onClick={() => setShowEducationalTip(!showEducationalTip)}
                   >
                     <Info size={16} color="#6b7280" />
                   </button>
                 </div>
-                
+
                 {insights.insight && (
                   <div style={styles.insightBar}>
                     <Sparkles size={14} color="#d4af37" />
@@ -191,19 +207,19 @@ export default function YouPagePrototype() {
                   <h3 style={styles.sectionTitle}>What We're Learning</h3>
                   <div style={styles.understandingCard}>
                     <div style={styles.understandingText}>
-                      {heartedMovies.length < 5 ? (
-                        "Based on your early selections, we're starting to see patterns in your taste..."
-                      ) : heartedMovies.length < 15 ? (
-                        "With your viewing history, we can identify themes you gravitate toward..."
-                      ) : (
-                        "Your film collection reveals sophisticated taste patterns across genres and eras..."
-                      )}
+                      {heartedMovies.length < 5
+                        ? "Based on your early selections, we're starting to see patterns in your taste..."
+                        : heartedMovies.length < 15
+                          ? 'With your viewing history, we can identify themes you gravitate toward...'
+                          : 'Your film collection reveals sophisticated taste patterns across genres and eras...'}
                     </div>
                     <div style={styles.understandingNote}>
                       <span style={styles.noteText}>
-                        {heartedMovies.length < 5 ? "More data needed for deeper insights" : 
-                         heartedMovies.length < 15 ? "Pattern recognition developing" : 
-                         "Strong taste profile established"}
+                        {heartedMovies.length < 5
+                          ? 'More data needed for deeper insights'
+                          : heartedMovies.length < 15
+                            ? 'Pattern recognition developing'
+                            : 'Strong taste profile established'}
                       </span>
                     </div>
                   </div>
@@ -226,7 +242,7 @@ export default function YouPagePrototype() {
                       <ChevronRight size={14} />
                     </button>
                   </div>
-                  
+
                   {heartedMovies.length >= 5 && (
                     <div style={styles.quizCard}>
                       <div style={styles.learningHeader}>
@@ -260,7 +276,7 @@ export default function YouPagePrototype() {
                   </div>
                 )}
               </div>
-              
+
               {heartedMovies.length === 0 ? (
                 <div style={styles.emptyState}>
                   <div style={styles.emptyIcon}>✅</div>
@@ -271,7 +287,7 @@ export default function YouPagePrototype() {
                 <div style={styles.filmGrid}>
                   {heartedMovies.map((movie, index) => (
                     <div key={movie.id || index} style={styles.filmCard}>
-                      <MediaCard 
+                      <MediaCard
                         title={movie.title}
                         year={movie.year}
                         initialSlug={movie.slug}
@@ -300,7 +316,7 @@ export default function YouPagePrototype() {
                   ))}
                 </div>
               )}
-              
+
               {/* Learning insight after seeing multiple films */}
               {heartedMovies.length >= 5 && (
                 <div style={styles.learningCard}>
@@ -309,7 +325,7 @@ export default function YouPagePrototype() {
                     <span style={styles.learningTitle}>Taste Pattern</span>
                   </div>
                   <p style={styles.learningText}>
-                    Based on your viewing history, you seem drawn to character-driven narratives. 
+                    Based on your viewing history, you seem drawn to character-driven narratives.
                     Try rating a few films to help us understand what you connect with.
                   </p>
                 </div>
@@ -330,7 +346,7 @@ export default function YouPagePrototype() {
                   </div>
                 )}
               </div>
-              
+
               {bookmarkedMovies.length === 0 ? (
                 <div style={styles.emptyState}>
                   <div style={styles.emptyIcon}>📚</div>
@@ -340,7 +356,7 @@ export default function YouPagePrototype() {
               ) : (
                 <div style={styles.filmGrid}>
                   {bookmarkedMovies.map((movie, index) => (
-                    <MediaCard 
+                    <MediaCard
                       key={movie.id || index}
                       title={movie.title}
                       year={movie.year}
@@ -358,7 +374,7 @@ export default function YouPagePrototype() {
             <div style={styles.listTab}>
               <h3 style={styles.listTitle}>Streaming Access</h3>
               <div style={styles.platformContainer}>
-                <PlatformSelector 
+                <PlatformSelector
                   onSelectionChange={handlePlatformChange}
                   initialSelected={selectedPlatforms}
                   showSelectedSection={false}

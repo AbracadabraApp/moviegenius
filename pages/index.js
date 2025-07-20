@@ -1,6 +1,6 @@
 /**
  * Homepage - Genius Education Experience
- * 
+ *
  * Main landing page focused on film education themes.
  * Flow: Theme Selection → Episode Recommendations → Learning Path
  */
@@ -12,14 +12,14 @@ import { themeLinks } from '../lib/routes';
 
 export default function HomePage() {
   const router = useRouter();
-  
+
   // Multi-step form state
   const [currentStep, setCurrentStep] = useState('themes'); // themes, episodes, recommendations
   const [formData, setFormData] = useState({
     selectedThemes: [],
     episodePreferences: [],
     streamingServices: [],
-    completedIntro: false
+    completedIntro: false,
   });
   const [showAllThemes, setShowAllThemes] = useState(false);
   const [modalStep, setModalStep] = useState(null); // 'manifesto', 'platforms', null
@@ -29,10 +29,10 @@ export default function HomePage() {
   // Initialize modal state
   useEffect(() => {
     setIsClient(true);
-    
+
     // Check if user has seen the manifesto before
     const hasSeenManifesto = localStorage.getItem('moviegenius_manifesto_seen');
-    
+
     if (!hasSeenManifesto) {
       // First time visitor - show the manifesto
       setModalStep('manifesto');
@@ -43,7 +43,7 @@ export default function HomePage() {
   // 10 Education Themes - All displayed in beautiful grid
   const allEducationThemes = [
     'Film Noir',
-    'Horror & Suspense', 
+    'Horror & Suspense',
     'Comedy',
     'Women Directors',
     'International Masters',
@@ -51,55 +51,71 @@ export default function HomePage() {
     'Movements in Film',
     'The Magic of Moviemaking',
     'Cinema Through the Decades',
-    'Hollywood Transformed'
+    'Hollywood Transformed',
   ];
 
   // Sample episodes for learning preferences
   const movieRotations = [
-    ['/images/posters/the-maltese-falcon.jpg', '/images/posters/double-indemnity.jpg', '/images/posters/sunset-boulevard.jpg'],
-    ['/images/posters/psycho.jpg', '/images/posters/the-silence-of-the-lambs.jpg', '/images/posters/hereditary.jpg'], 
-    ['/images/posters/some-like-it-hot.jpg', '/images/posters/the-grand-budapest-hotel.jpg', '/images/posters/parasite.jpg'],
-    ['/images/posters/portrait-of-a-lady-on-fire.jpg', '/images/posters/the-hurt-locker.jpg', '/images/posters/nomadland.jpg']
+    [
+      '/images/posters/the-maltese-falcon.jpg',
+      '/images/posters/double-indemnity.jpg',
+      '/images/posters/sunset-boulevard.jpg',
+    ],
+    [
+      '/images/posters/psycho.jpg',
+      '/images/posters/the-silence-of-the-lambs.jpg',
+      '/images/posters/hereditary.jpg',
+    ],
+    [
+      '/images/posters/some-like-it-hot.jpg',
+      '/images/posters/the-grand-budapest-hotel.jpg',
+      '/images/posters/parasite.jpg',
+    ],
+    [
+      '/images/posters/portrait-of-a-lady-on-fire.jpg',
+      '/images/posters/the-hurt-locker.jpg',
+      '/images/posters/nomadland.jpg',
+    ],
   ];
-  
+
   const learningEpisodes = [
     {
       id: 'film-noir',
       title: 'Film Noir Fundamentals',
       description: 'Shadows, moral ambiguity, and the dark side of cinema',
       category: 'Classic Genres',
-      image: movieRotations[0][0]
+      image: movieRotations[0][0],
     },
     {
       id: 'horror-evolution',
       title: 'Horror Through Time',
       description: 'From Gothic tales to psychological terror',
       category: 'Genre Evolution',
-      image: movieRotations[1][0]
+      image: movieRotations[1][0],
     },
     {
       id: 'comedy-masters',
       title: 'Masters of Comedy',
       description: 'Making audiences laugh across generations',
       category: 'Comedy/Timing',
-      image: movieRotations[2][0]
+      image: movieRotations[2][0],
     },
     {
       id: 'women-pioneers',
       title: 'Women Behind the Camera',
       description: 'Pioneering female voices in cinema history',
       category: 'Directors/History',
-      image: movieRotations[3][0]
-    }
+      image: movieRotations[3][0],
+    },
   ];
 
   // Sample recommendations
   const episodeRecommendations = [
     { title: 'German Expressionism', category: 'Film Noir', duration: '12 min' },
-    { title: 'Hitchcock\'s Camera Psychology', category: 'Moviemaking', duration: '15 min' },
+    { title: "Hitchcock's Camera Psychology", category: 'Moviemaking', duration: '15 min' },
     { title: 'French New Wave Revolution', category: 'Movements', duration: '18 min' },
-    { title: 'Kurosawa\'s Epic Vision', category: 'International', duration: '14 min' },
-    { title: 'Silent Comedy Stars', category: 'Comedy', duration: '10 min' }
+    { title: "Kurosawa's Epic Vision", category: 'International', duration: '14 min' },
+    { title: 'Silent Comedy Stars', category: 'Comedy', duration: '10 min' },
   ];
 
   const directorSpotlights = [
@@ -107,25 +123,34 @@ export default function HomePage() {
     { name: 'Akira Kurosawa', era: 'Japanese Cinema', specialty: 'Epic Storytelling' },
     { name: 'Kathryn Bigelow', era: 'Contemporary', specialty: 'Action Cinema' },
     { name: 'Wong Kar-wai', era: 'Hong Kong New Wave', specialty: 'Romantic Melancholy' },
-    { name: 'Jordan Peele', era: 'Modern Horror', specialty: 'Social Commentary' }
+    { name: 'Jordan Peele', era: 'Modern Horror', specialty: 'Social Commentary' },
   ];
 
   const popularTopics = [
-    'Camera Movement', 'Editing Techniques', 'Color Psychology', 'Sound Design',
-    'Mise-en-scène', 'Auteur Theory', 'Genre Evolution', 'Cultural Impact',
-    'Visual Storytelling', 'Character Development', 'Narrative Structure', 'Film History'
+    'Camera Movement',
+    'Editing Techniques',
+    'Color Psychology',
+    'Sound Design',
+    'Mise-en-scène',
+    'Auteur Theory',
+    'Genre Evolution',
+    'Cultural Impact',
+    'Visual Storytelling',
+    'Character Development',
+    'Narrative Structure',
+    'Film History',
   ];
 
   // Available streaming services
   const streamingServices = [
     'Netflix',
-    'Amazon Prime Video', 
+    'Amazon Prime Video',
     'Disney+',
     'Apple TV+',
     'HBO Max',
     'Hulu',
     'Paramount+',
-    'Peacock'
+    'Peacock',
   ];
 
   const additionalPlatforms = [
@@ -140,16 +165,16 @@ export default function HomePage() {
     'Kanopy',
     'Hoopla',
     'The Criterion Channel',
-    'Shudder'
+    'Shudder',
   ];
 
   // Handle theme selection and navigation using centralized routes
-  const handleThemeClick = (theme) => {
+  const handleThemeClick = theme => {
     console.log('Theme clicked:', theme);
-    
+
     // Find theme in centralized themeLinks
     const themeLink = themeLinks.find(t => t.label === theme);
-    
+
     if (themeLink) {
       console.log('Navigating to:', themeLink.href);
       router.push(themeLink.href);
@@ -160,20 +185,20 @@ export default function HomePage() {
   };
 
   // Handle streaming service selection
-  const toggleStreamingService = (service) => {
+  const toggleStreamingService = service => {
     const newServices = formData.streamingServices.includes(service)
       ? formData.streamingServices.filter(s => s !== service)
       : [...formData.streamingServices, service];
-    
+
     setFormData({ ...formData, streamingServices: newServices });
   };
 
   // Handle episode preference selection
-  const toggleEpisodePreference = (episodeId) => {
+  const toggleEpisodePreference = episodeId => {
     const newPreferences = formData.episodePreferences.includes(episodeId)
       ? formData.episodePreferences.filter(id => id !== episodeId)
       : [...formData.episodePreferences, episodeId];
-    
+
     setFormData({ ...formData, episodePreferences: newPreferences });
   };
 
@@ -196,7 +221,6 @@ export default function HomePage() {
   return (
     <PhoneFrame>
       <div style={styles.container}>
-        
         {/* Modal System */}
         {isClient && modalStep && (
           <div style={styles.manifestoOverlay}>
@@ -210,9 +234,12 @@ export default function HomePage() {
                     <div style={styles.manifestoSubheadDivider} />
                   </div>
                   <p style={styles.manifestoText}>
-                    Streaming platforms put great films at our fingertips, then hid them under time-wasting junk. MovieGenius is your intelligence filter—no more mindless scrolling through endless mediocre "shows". Discover quality cinema and make deliberate choices again.
+                    Streaming platforms put great films at our fingertips, then hid them under
+                    time-wasting junk. MovieGenius is your intelligence filter—no more mindless
+                    scrolling through endless mediocre "shows". Discover quality cinema and make
+                    deliberate choices again.
                   </p>
-                  <button 
+                  <button
                     onClick={() => {
                       // Mark manifesto as seen so it never shows again
                       localStorage.setItem('moviegenius_manifesto_seen', 'true');
@@ -226,12 +253,12 @@ export default function HomePage() {
                 </div>
               </div>
             )}
-            
+
             {modalStep === 'platforms' && (
               <div style={styles.platformsModal}>
                 <div style={styles.platformsContent}>
                   <p style={styles.platformsQuestion}>What streaming services do you use?</p>
-                  
+
                   <div style={styles.platformsList}>
                     {streamingServices.map(service => (
                       <button
@@ -239,36 +266,44 @@ export default function HomePage() {
                         onClick={() => toggleStreamingService(service)}
                         style={{
                           ...styles.platformButton,
-                          backgroundColor: formData.streamingServices.includes(service) 
-                            ? '#d4af37' 
+                          backgroundColor: formData.streamingServices.includes(service)
+                            ? '#d4af37'
                             : '#f3f4f6',
-                          color: formData.streamingServices.includes(service) ? '#000000' : '#374151',
-                          borderColor: formData.streamingServices.includes(service) ? '#d4af37' : '#d1d5db'
+                          color: formData.streamingServices.includes(service)
+                            ? '#000000'
+                            : '#374151',
+                          borderColor: formData.streamingServices.includes(service)
+                            ? '#d4af37'
+                            : '#d1d5db',
                         }}
                       >
                         {service}
                       </button>
                     ))}
-                    
-                    {showAllPlatforms && additionalPlatforms.map(service => (
-                      <button
-                        key={service}
-                        onClick={() => toggleStreamingService(service)}
-                        style={{
-                          ...styles.platformButton,
-                          backgroundColor: formData.streamingServices.includes(service) 
-                            ? '#d4af37' 
-                            : '#f3f4f6',
-                          color: formData.streamingServices.includes(service) ? '#000000' : '#374151',
-                          borderColor: formData.streamingServices.includes(service) ? '#d4af37' : '#d1d5db'
-                        }}
-                      >
-                        {service}
-                      </button>
-                    ))}
-                    
+
+                    {showAllPlatforms &&
+                      additionalPlatforms.map(service => (
+                        <button
+                          key={service}
+                          onClick={() => toggleStreamingService(service)}
+                          style={{
+                            ...styles.platformButton,
+                            backgroundColor: formData.streamingServices.includes(service)
+                              ? '#d4af37'
+                              : '#f3f4f6',
+                            color: formData.streamingServices.includes(service)
+                              ? '#000000'
+                              : '#374151',
+                            borderColor: formData.streamingServices.includes(service)
+                              ? '#d4af37'
+                              : '#d1d5db',
+                          }}
+                        >
+                          {service}
+                        </button>
+                      ))}
                   </div>
-                  
+
                   {!showAllPlatforms && (
                     <div style={styles.moreContainer}>
                       <span
@@ -279,12 +314,15 @@ export default function HomePage() {
                       </span>
                     </div>
                   )}
-                  
+
                   <div style={styles.platformModalButtons}>
-                    <button 
+                    <button
                       onClick={() => {
                         // Save selected platforms and mark as configured
-                        localStorage.setItem('selectedPlatforms', JSON.stringify(formData.streamingServices));
+                        localStorage.setItem(
+                          'selectedPlatforms',
+                          JSON.stringify(formData.streamingServices)
+                        );
                         localStorage.setItem('moviegenius_platforms_configured', 'true');
                         setModalStep(null);
                       }}
@@ -292,8 +330,8 @@ export default function HomePage() {
                     >
                       Start Exploring
                     </button>
-                    
-                    <button 
+
+                    <button
                       onClick={() => {
                         // Skip platform selection but mark as configured to not show again
                         localStorage.setItem('moviegenius_platforms_configured', 'true');
@@ -309,29 +347,38 @@ export default function HomePage() {
             )}
           </div>
         )}
-        
+
         {/* Theme Selection Section */}
         {currentStep === 'themes' && (
           <div style={styles.section}>
             <div style={styles.heroSection}>
-              <p style={styles.goldSubtitle}><span style={{fontSize: '28px', color: '#ffffff', letterSpacing: '1px'}}>DON'T BINGE WATCH TV</span><br /><span style={{fontSize: '18px'}}>FEAST ON GREAT FILMS INSTEAD</span></p>
-              <img src="/images/hero-rotation/hero-8.jpg" alt="Film Education Hero" style={styles.heroImage} />
+              <p style={styles.goldSubtitle}>
+                <span style={{ fontSize: '28px', color: '#ffffff', letterSpacing: '1px' }}>
+                  DON'T BINGE WATCH TV
+                </span>
+                <br />
+                <span style={{ fontSize: '18px' }}>FEAST ON GREAT FILMS INSTEAD</span>
+              </p>
+              <img
+                src="/images/hero-rotation/hero-8.jpg"
+                alt="Film Education Hero"
+                style={styles.heroImage}
+              />
             </div>
 
             <div style={styles.contentSection}>
               <p style={styles.sectionQuestion}>Which film topics interest you most?</p>
               <div style={styles.themeGrid}>
-              {allEducationThemes.map(theme => (
-                <button
-                  key={theme}
-                  onClick={() => handleThemeClick(theme)}
-                  style={styles.themeButton}
-                >
-                  {theme}
-                </button>
-              ))}
-            </div>
-
+                {allEducationThemes.map(theme => (
+                  <button
+                    key={theme}
+                    onClick={() => handleThemeClick(theme)}
+                    style={styles.themeButton}
+                  >
+                    {theme}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
         )}
@@ -351,23 +398,25 @@ export default function HomePage() {
                   onClick={() => toggleEpisodePreference(episode.id)}
                   style={{
                     ...styles.episodeCard,
-                    borderColor: formData.episodePreferences.includes(episode.id) 
-                      ? '#d4af37' 
-                      : '#e5e7eb'
+                    borderColor: formData.episodePreferences.includes(episode.id)
+                      ? '#d4af37'
+                      : '#e5e7eb',
                   }}
                 >
-                  <img 
-                  src={episode.image} 
-                  alt={episode.title} 
-                  style={styles.episodeImage}
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.nextSibling.style.display = 'flex';
-                  }}
-                />
-                <div style={{...styles.episodeImage, ...styles.imagePlaceholder, display: 'none'}}>
-                  <span style={styles.placeholderText}>{episode.category}</span>
-                </div>
+                  <img
+                    src={episode.image}
+                    alt={episode.title}
+                    style={styles.episodeImage}
+                    onError={e => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div
+                    style={{ ...styles.episodeImage, ...styles.imagePlaceholder, display: 'none' }}
+                  >
+                    <span style={styles.placeholderText}>{episode.category}</span>
+                  </div>
                   <div style={styles.episodeContent}>
                     <h3 style={styles.episodeTitle}>{episode.title}</h3>
                     <p style={styles.episodeGenre}>{episode.category}</p>
@@ -382,7 +431,7 @@ export default function HomePage() {
               disabled={formData.episodePreferences.length === 0}
               style={{
                 ...styles.saveButton,
-                opacity: formData.episodePreferences.length === 0 ? 0.5 : 1
+                opacity: formData.episodePreferences.length === 0 ? 0.5 : 1,
               }}
             >
               Continue <ChevronRight size={20} />
@@ -407,7 +456,9 @@ export default function HomePage() {
                     <Play size={16} color="#d4af37" />
                     <div style={styles.episodeInfo}>
                       <span style={styles.episodeItemTitle}>{episode.title}</span>
-                      <span style={styles.episodeItemMeta}>{episode.category} • {episode.duration}</span>
+                      <span style={styles.episodeItemMeta}>
+                        {episode.category} • {episode.duration}
+                      </span>
                     </div>
                   </div>
                 ))}
@@ -422,7 +473,9 @@ export default function HomePage() {
                   <div key={index} style={styles.directorItem}>
                     <div style={styles.directorInfo}>
                       <span style={styles.directorName}>{director.name}</span>
-                      <span style={styles.directorMeta}>{director.era} • {director.specialty}</span>
+                      <span style={styles.directorMeta}>
+                        {director.era} • {director.specialty}
+                      </span>
                     </div>
                     <Book size={16} color="#6b7280" />
                   </div>
@@ -440,7 +493,7 @@ export default function HomePage() {
                     style={{
                       ...styles.tag,
                       fontSize: index % 2 === 0 ? '14px' : '12px',
-                      opacity: 0.6 + (index % 5) * 0.08
+                      opacity: 0.6 + (index % 5) * 0.08,
                     }}
                   >
                     {topic}
@@ -449,10 +502,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <button
-              onClick={startLearning}
-              style={styles.saveButton}
-            >
+            <button onClick={startLearning} style={styles.saveButton}>
               Start Learning Journey
             </button>
           </div>
@@ -469,17 +519,24 @@ export default function HomePage() {
                 <span style={styles.footerEpisode}>Women Directors</span>
               </div>
             </div>
-            
+
             <div style={styles.footerSection}>
               <h4 style={styles.footerTitle}>Experience</h4>
               <div style={styles.platformPicker}>
                 <button style={styles.platformButtonLarge}>Beginner</button>
-                <button style={{...styles.platformButtonLarge, backgroundColor: '#d4af37', color: '#000000'}}>Intermediate</button>
+                <button
+                  style={{
+                    ...styles.platformButtonLarge,
+                    backgroundColor: '#d4af37',
+                    color: '#000000',
+                  }}
+                >
+                  Intermediate
+                </button>
               </div>
             </div>
           </div>
         )}
-
       </div>
     </PhoneFrame>
   );
@@ -491,15 +548,16 @@ const styles = {
     flexDirection: 'column',
     minHeight: '100vh',
     backgroundColor: '#ffffff',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
-  
+
   section: {
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
   },
-  
+
   heroSection: {
     position: 'relative',
     minHeight: 'auto',
@@ -513,7 +571,7 @@ const styles = {
     justifyContent: 'flex-start',
     paddingTop: '12px',
   },
-  
+
   heroImage: {
     width: '100%',
     height: '25vh',
@@ -521,13 +579,13 @@ const styles = {
     borderRadius: '1px',
     marginTop: '1px',
   },
-  
+
   header: {
     textAlign: 'center',
     marginBottom: '20px',
     padding: '0 24px',
   },
-  
+
   title: {
     fontSize: '24px',
     fontWeight: '700',
@@ -535,7 +593,7 @@ const styles = {
     margin: '0 0 8px 0',
     lineHeight: '1.2',
   },
-  
+
   goldSubtitle: {
     fontSize: '18px',
     color: '#d4af37',
@@ -546,14 +604,14 @@ const styles = {
     fontWeight: '600',
     textAlign: 'center',
   },
-  
+
   subtitle: {
     fontSize: '16px',
     color: '#6b7280',
     margin: 0,
     lineHeight: '1.5',
   },
-  
+
   // Theme Selection Styles - Beautiful 2x5 grid
   themeGrid: {
     display: 'grid',
@@ -561,7 +619,7 @@ const styles = {
     gap: '10px',
     marginBottom: '0px',
   },
-  
+
   themeButton: {
     padding: '14px 8px',
     border: '1px solid transparent',
@@ -581,14 +639,14 @@ const styles = {
     backgroundColor: '#ffffff',
     color: '#2c3e50',
   },
-  
+
   moreLink: {
     display: 'flex',
     justifyContent: 'flex-end',
     marginTop: '2px',
     marginBottom: '24px',
   },
-  
+
   moreLinkText: {
     fontSize: '14px',
     color: '#ffffff',
@@ -596,7 +654,7 @@ const styles = {
     fontWeight: '500',
     textDecoration: 'underline',
   },
-  
+
   // Episode Testing Styles
   episodeGrid: {
     display: 'flex',
@@ -604,7 +662,7 @@ const styles = {
     gap: '12px',
     marginBottom: '20px',
   },
-  
+
   episodeCard: {
     display: 'flex',
     border: '2px solid #e5e7eb',
@@ -613,7 +671,7 @@ const styles = {
     cursor: 'pointer',
     transition: 'border-color 0.2s ease',
   },
-  
+
   episodeImage: {
     width: '80px',
     height: '120px',
@@ -621,7 +679,7 @@ const styles = {
     objectFit: 'cover',
     marginRight: '16px',
   },
-  
+
   imagePlaceholder: {
     backgroundColor: '#f3f4f6',
     display: 'flex',
@@ -629,7 +687,7 @@ const styles = {
     justifyContent: 'center',
     border: '1px solid #e5e7eb',
   },
-  
+
   placeholderText: {
     fontSize: '11px',
     color: '#6b7280',
@@ -637,11 +695,11 @@ const styles = {
     fontWeight: '500',
     lineHeight: '1.2',
   },
-  
+
   episodeContent: {
     flex: 1,
   },
-  
+
   episodeTitle: {
     fontSize: '16px',
     fontWeight: '600',
@@ -649,39 +707,39 @@ const styles = {
     margin: '0 0 4px 0',
     lineHeight: '1.3',
   },
-  
+
   episodeGenre: {
     fontSize: '12px',
     color: '#d4af37',
     margin: '0 0 8px 0',
     fontWeight: '500',
   },
-  
+
   episodeDescription: {
     fontSize: '14px',
     color: '#6b7280',
     margin: 0,
     lineHeight: '1.4',
   },
-  
+
   // Recommendations Styles
   recommendationSection: {
     marginBottom: '20px',
   },
-  
+
   sectionTitle: {
     fontSize: '18px',
     fontWeight: '600',
     color: '#111827',
     margin: '0 0 16px 0',
   },
-  
+
   episodeList: {
     display: 'flex',
     flexDirection: 'column',
     gap: '12px',
   },
-  
+
   episodeItem: {
     display: 'flex',
     alignItems: 'center',
@@ -690,19 +748,19 @@ const styles = {
     backgroundColor: '#f9fafb',
     borderRadius: '8px',
   },
-  
+
   episodeInfo: {
     display: 'flex',
     flexDirection: 'column',
     flex: 1,
   },
-  
+
   episodeItemTitle: {
     fontSize: '14px',
     fontWeight: '500',
     color: '#111827',
   },
-  
+
   episodeItemMeta: {
     fontSize: '12px',
     color: '#6b7280',
@@ -714,7 +772,7 @@ const styles = {
     flexDirection: 'column',
     gap: '12px',
   },
-  
+
   directorItem: {
     display: 'flex',
     justifyContent: 'space-between',
@@ -723,30 +781,30 @@ const styles = {
     backgroundColor: '#f9fafb',
     borderRadius: '8px',
   },
-  
+
   directorInfo: {
     display: 'flex',
     flexDirection: 'column',
   },
-  
+
   directorName: {
     fontSize: '14px',
     fontWeight: '600',
     color: '#111827',
   },
-  
+
   directorMeta: {
     fontSize: '12px',
     color: '#6b7280',
   },
-  
+
   // Tag Cloud Styles
   tagCloud: {
     display: 'flex',
     flexWrap: 'wrap',
     gap: '8px',
   },
-  
+
   tag: {
     padding: '6px 12px',
     backgroundColor: '#e5e7eb',
@@ -755,7 +813,7 @@ const styles = {
     fontSize: '12px',
     fontWeight: '500',
   },
-  
+
   // Button Styles
   saveButton: {
     display: 'flex',
@@ -773,41 +831,41 @@ const styles = {
     marginTop: '0px',
     fontFamily: 'inherit',
   },
-  
+
   // Footer Styles
   footer: {
     backgroundColor: '#f9fafb',
     padding: '20px',
     borderTop: '1px solid #e5e7eb',
   },
-  
+
   footerSection: {
     marginBottom: '20px',
   },
-  
+
   footerTitle: {
     fontSize: '14px',
     fontWeight: '600',
     color: '#111827',
     margin: '0 0 8px 0',
   },
-  
+
   footerEpisodes: {
     display: 'flex',
     flexDirection: 'column',
     gap: '4px',
   },
-  
+
   footerEpisode: {
     fontSize: '12px',
     color: '#6b7280',
   },
-  
+
   platformPicker: {
     display: 'flex',
     gap: '8px',
   },
-  
+
   contentSection: {
     padding: '0px 20px 16px 20px',
     flex: 1,
@@ -815,7 +873,7 @@ const styles = {
     flexDirection: 'column',
     background: 'linear-gradient(to bottom, #1a1a1a 0%, #6b7280 100%)',
   },
-  
+
   sectionQuestion: {
     fontSize: '18px',
     fontWeight: '500',
@@ -826,8 +884,7 @@ const styles = {
     letterSpacing: '-0.5px',
     textShadow: '0 1px 2px rgba(0, 0, 0, 0.05)',
   },
-  
-  
+
   platformButton: {
     padding: '6px 12px',
     border: '1px solid #d1d5db',
@@ -839,7 +896,7 @@ const styles = {
     cursor: 'pointer',
     fontFamily: 'inherit',
   },
-  
+
   // Manifesto Modal Styles
   manifestoOverlay: {
     position: 'absolute',
@@ -854,7 +911,7 @@ const styles = {
     zIndex: 1000,
     padding: '20px',
   },
-  
+
   manifestoModal: {
     backgroundColor: '#ffffff',
     borderRadius: '16px',
@@ -864,11 +921,11 @@ const styles = {
     boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3)',
     border: '1px solid #e5e7eb',
   },
-  
+
   manifestoContent: {
     textAlign: 'center',
   },
-  
+
   manifestoMainTitle: {
     fontSize: '28px',
     fontWeight: '700',
@@ -877,20 +934,20 @@ const styles = {
     marginTop: '0',
     textAlign: 'center',
   },
-  
+
   manifestoSubheadSection: {
     display: 'flex',
     alignItems: 'center',
     marginBottom: '24px',
     gap: '12px',
   },
-  
+
   manifestoSubheadDivider: {
     flex: 1,
     height: '1px',
     backgroundColor: '#d4af37',
   },
-  
+
   manifestoSubheadTitle: {
     fontSize: '16px',
     fontWeight: '600',
@@ -899,7 +956,7 @@ const styles = {
     letterSpacing: '1px',
     margin: '0',
   },
-  
+
   manifestoText: {
     fontSize: '16px',
     lineHeight: '1.6',
@@ -907,7 +964,7 @@ const styles = {
     marginBottom: '32px',
     textAlign: 'left',
   },
-  
+
   manifestoContinueButton: {
     display: 'flex',
     alignItems: 'center',
@@ -924,7 +981,7 @@ const styles = {
     fontFamily: 'inherit',
     transition: 'all 0.2s ease',
   },
-  
+
   // Platforms Modal Styles
   platformsModal: {
     backgroundColor: '#ffffff',
@@ -937,11 +994,11 @@ const styles = {
     boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3)',
     border: '1px solid #e5e7eb',
   },
-  
+
   platformsContent: {
     textAlign: 'center',
   },
-  
+
   platformsQuestion: {
     fontSize: '18px',
     fontWeight: '500',
@@ -949,14 +1006,14 @@ const styles = {
     marginBottom: '24px',
     textAlign: 'center',
   },
-  
+
   platformsList: {
     display: 'grid',
     gridTemplateColumns: 'repeat(2, 1fr)',
     gap: '12px',
     marginBottom: '32px',
   },
-  
+
   platformButtonLarge: {
     padding: '12px 8px',
     border: '1px solid #d1d5db',
@@ -972,12 +1029,12 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
   },
-  
+
   moreContainer: {
     textAlign: 'right',
     marginBottom: '16px',
   },
-  
+
   moreLinkSecondary: {
     fontSize: '14px',
     color: '#6b7280',
@@ -986,13 +1043,13 @@ const styles = {
     fontWeight: '500',
     transition: 'color 0.2s ease',
   },
-  
+
   platformModalButtons: {
     display: 'flex',
     flexDirection: 'column',
     gap: '12px',
   },
-  
+
   skipButton: {
     display: 'flex',
     alignItems: 'center',

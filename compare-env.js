@@ -12,7 +12,7 @@ console.log('🔍 Environment Variables Comparison\n');
 if (localEnvExists) {
   const localEnv = fs.readFileSync(localEnvPath, 'utf8');
   const localVars = {};
-  
+
   localEnv.split('\n').forEach(line => {
     if (line.trim() && !line.startsWith('#')) {
       const [key, ...valueParts] = line.split('=');
@@ -32,13 +32,13 @@ if (localEnvExists) {
   console.log('\n🚀 Required for Railway Production:');
   const requiredVars = [
     'OPENAI_API_KEY',
-    'ANTHROPIC_API_KEY', 
+    'ANTHROPIC_API_KEY',
     'TMDB_API_KEY',
     'NEXT_PUBLIC_TMDB_API_KEY',
     'NEXT_PUBLIC_SUPABASE_URL',
     'NEXT_PUBLIC_SUPABASE_ANON_KEY',
     'SUPABASE_SERVICE_ROLE_KEY',
-    'RAPIDAPI_KEY'
+    'RAPIDAPI_KEY',
   ];
 
   requiredVars.forEach(key => {
@@ -54,7 +54,6 @@ if (localEnvExists) {
   console.log('  - NODE_ENV should be "production" in Railway');
   console.log('  - NEXT_TELEMETRY_DISABLED should be "1" in Railway');
   console.log('  - RAILWAY_TOKEN is only for local development');
-
 } else {
   console.log('❌ .env.local file not found');
 }

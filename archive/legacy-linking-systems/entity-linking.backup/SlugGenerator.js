@@ -20,8 +20,8 @@ export class SlugGenerator {
       ['jordan peele', 'jordan-peele'],
       ['ari aster', 'ari-aster'],
       ['robert eggers', 'robert-eggers'],
-      
-      // Actors  
+
+      // Actors
       ['meryl streep', 'meryl-streep'],
       ['robert de niro', 'robert-de-niro'],
       ['robert deniro', 'robert-de-niro'],
@@ -32,13 +32,13 @@ export class SlugGenerator {
       ['christian bale', 'christian-bale'],
       ['oscar isaac', 'oscar-isaac'],
       ['timothee chalamet', 'timothee-chalamet'],
-      
+
       // Handle common variations
       ['dicaprio', 'leonardo-dicaprio'],
       ['scorsese', 'martin-scorsese'],
       ['tarantino', 'quentin-tarantino'],
       ['spielberg', 'steven-spielberg'],
-      ['nolan', 'christopher-nolan']
+      ['nolan', 'christopher-nolan'],
     ]);
 
     // Movie title variations for better matching
@@ -47,7 +47,7 @@ export class SlugGenerator {
       ['star wars', 'star-wars'],
       ['the dark knight', 'the-dark-knight'],
       ['pulp fiction', 'pulp-fiction'],
-      ['the godfather', 'the-godfather']
+      ['the godfather', 'the-godfather'],
     ]);
   }
 
@@ -56,13 +56,13 @@ export class SlugGenerator {
    */
   generatePersonSlug(name) {
     if (!name) return null;
-    
+
     const normalized = this.normalizeName(name);
-    
+
     // Check for known variations first
     const knownSlug = this.nameVariations.get(normalized);
     if (knownSlug) return knownSlug;
-    
+
     // Generate new slug
     return this.createSlugFromName(normalized);
   }
@@ -72,19 +72,19 @@ export class SlugGenerator {
    */
   generateMovieSlug(title, year) {
     if (!title) return null;
-    
+
     const baseSlug = this.normalizeTitle(title);
-    
+
     // Check for known title variations
     const knownSlug = this.titleVariations.get(title.toLowerCase());
     if (knownSlug && year) {
       return `${knownSlug}-${year}`;
     }
-    
+
     if (year) {
       return `${baseSlug}-${year}`;
     }
-    
+
     return baseSlug;
   }
 
@@ -129,12 +129,12 @@ export class SlugGenerator {
    */
   findCanonicalPersonSlug(inputName) {
     const normalized = this.normalizeName(inputName);
-    
+
     // Direct match
     if (this.nameVariations.has(normalized)) {
       return this.nameVariations.get(normalized);
     }
-    
+
     // Partial match (last name only)
     const lastName = normalized.split(' ').pop();
     for (const [variation, slug] of this.nameVariations) {
@@ -142,7 +142,7 @@ export class SlugGenerator {
         return slug;
       }
     }
-    
+
     return this.generatePersonSlug(inputName);
   }
 
@@ -152,14 +152,14 @@ export class SlugGenerator {
   parseMovieSlug(slug) {
     const parts = slug.split('-');
     const yearMatch = parts[parts.length - 1].match(/^\d{4}$/);
-    
+
     if (yearMatch) {
       const year = parseInt(yearMatch[0]);
       const titleParts = parts.slice(0, -1);
       const title = this.reconstructTitle(titleParts);
       return { title, year };
     }
-    
+
     // No year in slug
     return { title: this.reconstructTitle(parts), year: null };
   }
@@ -168,9 +168,7 @@ export class SlugGenerator {
    * Reconstruct title from slug parts
    */
   reconstructTitle(titleParts) {
-    return titleParts
-      .map(part => part.charAt(0).toUpperCase() + part.slice(1))
-      .join(' ');
+    return titleParts.map(part => part.charAt(0).toUpperCase() + part.slice(1)).join(' ');
   }
 
   /**
@@ -178,30 +176,30 @@ export class SlugGenerator {
    */
   generateMovieSlugVariations(title, year) {
     const patterns = [];
-    
+
     // Main pattern
     patterns.push(this.generateMovieSlug(title, year));
-    
+
     // Without year
     patterns.push(this.normalizeTitle(title));
-    
+
     // With parentheses year format (for parsing from text)
     if (year) {
       patterns.push(`${this.normalizeTitle(title)}-${year}`);
     }
-    
+
     // Abbreviated versions for long titles
     if (title.length > 30) {
       const abbreviated = this.abbreviateTitle(title);
       patterns.push(this.generateMovieSlug(abbreviated, year));
     }
-    
+
     // Handle "The" prefix variations
     const withThe = `the-${this.normalizeTitle(title)}`;
     const withoutThe = this.normalizeTitle(title.replace(/^the\s+/i, ''));
     patterns.push(withThe);
     patterns.push(withoutThe);
-    
+
     return [...new Set(patterns)]; // Remove duplicates
   }
 
@@ -211,7 +209,7 @@ export class SlugGenerator {
   abbreviateTitle(title) {
     const words = title.split(' ');
     if (words.length <= 3) return title;
-    
+
     // Keep first 3 words for long titles
     return words.slice(0, 3).join(' ');
   }
@@ -237,7 +235,7 @@ export class SlugGenerator {
    */
   isValidSlug(slug) {
     if (!slug || typeof slug !== 'string') return false;
-    
+
     // Basic slug pattern: lowercase letters, numbers, hyphens
     const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
     return slugPattern.test(slug);
@@ -250,11 +248,11 @@ export class SlugGenerator {
     // Simple pattern for potential person names (2-3 capitalized words)
     const namePattern = /\b[A-Z][a-z]+(?: [A-Z][a-z]+){1,2}\b/g;
     const matches = text.match(namePattern) || [];
-    
+
     return matches.map(name => ({
       original: name,
       normalized: this.normalizeName(name),
-      slug: this.generatePersonSlug(name)
+      slug: this.generatePersonSlug(name),
     }));
   }
 
@@ -263,7 +261,7 @@ export class SlugGenerator {
    */
   extractPotentialTitles(text) {
     const titles = [];
-    
+
     // Quoted titles: "Movie Title"
     const quotedPattern = /["']([^"']+)["']/g;
     let match;
@@ -272,31 +270,28 @@ export class SlugGenerator {
         original: match[1],
         slug: this.normalizeTitle(match[1]),
         confidence: 0.8,
-        method: 'quoted'
+        method: 'quoted',
       });
     }
-    
+
     // Title with year: Movie Title (2023) or Movie Title 2023
-    const yearPatterns = [
-      /([^.\n]+)\s*\((\d{4})\)/g,
-      /([^.\n]+)\s+(\d{4})\b/g
-    ];
-    
+    const yearPatterns = [/([^.\n]+)\s*\((\d{4})\)/g, /([^.\n]+)\s+(\d{4})\b/g];
+
     for (const pattern of yearPatterns) {
       while ((match = pattern.exec(text)) !== null) {
         const titleCandidate = match[1].trim();
         const year = parseInt(match[2]);
-        
+
         titles.push({
           original: titleCandidate,
           year: year,
           slug: this.generateMovieSlug(titleCandidate, year),
           confidence: 0.9,
-          method: 'title_with_year'
+          method: 'title_with_year',
         });
       }
     }
-    
+
     return titles;
   }
 }

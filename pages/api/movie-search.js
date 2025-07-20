@@ -11,10 +11,10 @@ export default async function handler(req, res) {
 
   const TMDB_KEY = process.env.NEXT_PUBLIC_TMDB_API_KEY || process.env.TMDB_API_KEY;
   if (!TMDB_KEY) {
-    return res.status(500).json({ 
+    return res.status(500).json({
       error: 'Search unavailable',
       movies: [],
-      fallback: { message: "Search temporarily unavailable" }
+      fallback: { message: 'Search temporarily unavailable' },
     });
   }
 
@@ -35,20 +35,19 @@ export default async function handler(req, res) {
       year: movie.release_date ? parseInt(movie.release_date.substring(0, 4)) : null,
       tmdb_id: movie.id,
       poster_url: movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : null,
-      type: 'movie'
+      type: 'movie',
     }));
 
     res.status(200).json({
       movies,
       query: query.trim(),
-      hasResults: movies.length > 0
+      hasResults: movies.length > 0,
     });
-
   } catch (error) {
     console.error('Search error:', error);
     res.status(500).json({
       error: 'Search failed',
-      movies: []
+      movies: [],
     });
   }
 }

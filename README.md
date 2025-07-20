@@ -1,11 +1,12 @@
 # MovieGenius
 
-AI-powered movie recommendations and analysis platform using Claude 3.5 Sonnet and TMDB API.
+AI-powered movie recommendations and analysis platform using Claude 3.5 Sonnet
+and TMDB API.
 
 ## Features
 
 - **AI Movie Chat**: Ask Claude about movies and get intelligent recommendations
-- **Curated Lists**: 75+ authoritative movie lists from critics and festivals  
+- **Curated Lists**: 75+ authoritative movie lists from critics and festivals
 - **Movie Database**: TMDB-powered movie information and posters
 - **Smart Discovery**: Tag cloud system for finding movies by themes
 
@@ -47,7 +48,8 @@ NEXT_PUBLIC_TMDB_API_KEY=your_tmdb_key
 
 ## Deployment
 
-This app is configured for Railway deployment with automatic builds from the main branch.
+This app is configured for Railway deployment with automatic builds from the
+main branch.
 
 ## License
 

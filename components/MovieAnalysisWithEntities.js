@@ -7,11 +7,11 @@
 import { useState, useEffect } from 'react';
 import EntityLinkedText from './EntityLinkedText';
 
-export default function MovieAnalysisWithEntities({ 
-  analysis, 
+export default function MovieAnalysisWithEntities({
+  analysis,
   movie,
   linkingIntensity = 'moderate',
-  className = ''
+  className = '',
 }) {
   const [processedAnalysis, setProcessedAnalysis] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -29,53 +29,52 @@ export default function MovieAnalysisWithEntities({
   const processAnalysisContent = async () => {
     try {
       setIsLoading(true);
-      
+
       const content = analysis.claude_response.raw_content;
-      
+
       // Check if we have pre-processed entity data
       const entityData = analysis.entity_linking_data;
-      
+
       if (entityData) {
         // Use pre-processed entities
         setProcessedAnalysis({
           content: content,
           entities: entityData.entityData,
-          processedAt: entityData.processedAt
+          processedAt: entityData.processedAt,
         });
-        
+
         setEntityStats({
           totalEntities: entityData.entityData?.total || 0,
           movies: entityData.entityData?.movies?.length || 0,
-          people: entityData.entityData?.people?.length || 0
+          people: entityData.entityData?.people?.length || 0,
         });
       } else {
         // Fallback to real-time processing
         setProcessedAnalysis({
           content: content,
           entities: null,
-          realTime: true
+          realTime: true,
         });
       }
-      
     } catch (error) {
       console.error('Error processing analysis:', error);
       setProcessedAnalysis({
         content: analysis.claude_response.raw_content,
         entities: null,
-        error: error.message
+        error: error.message,
       });
     } finally {
       setIsLoading(false);
     }
   };
 
-  const parseAnalysisContent = (content) => {
+  const parseAnalysisContent = content => {
     // Parse Claude's structured analysis format
     const sections = {
       paragraphs: [],
       movies: [],
       exploreTopics: [],
-      moreIdeas: []
+      moreIdeas: [],
     };
 
     const lines = content.split('\n').filter(line => line.trim());
@@ -135,7 +134,7 @@ export default function MovieAnalysisWithEntities({
               currentEntity={{
                 type: 'movie',
                 slug: movie?.slug,
-                title: movie?.title
+                title: movie?.title,
               }}
               className="text-gray-800 leading-relaxed"
             />
@@ -195,8 +194,8 @@ export default function MovieAnalysisWithEntities({
       {/* Entity Statistics (Debug/Admin View) */}
       {entityStats && process.env.NODE_ENV === 'development' && (
         <div className="entity-stats mt-6 p-3 bg-yellow-50 rounded-lg text-xs text-yellow-800">
-          <strong>Entity Stats:</strong> {entityStats.totalEntities} total 
-          ({entityStats.movies} movies, {entityStats.people} people)
+          <strong>Entity Stats:</strong> {entityStats.totalEntities} total ({entityStats.movies}{' '}
+          movies, {entityStats.people} people)
           {processedAnalysis.processedAt && (
             <span className="ml-2">
               • Processed: {new Date(processedAnalysis.processedAt).toLocaleDateString()}
@@ -208,9 +207,7 @@ export default function MovieAnalysisWithEntities({
       {/* Error Display */}
       {processedAnalysis.error && (
         <div className="error-display mt-4 p-3 bg-red-50 rounded-lg">
-          <p className="text-red-700 text-sm">
-            Entity linking error: {processedAnalysis.error}
-          </p>
+          <p className="text-red-700 text-sm">Entity linking error: {processedAnalysis.error}</p>
         </div>
       )}
     </div>
@@ -228,7 +225,7 @@ export function useEntityStats(analysis) {
         totalEntities: entityData.total || 0,
         movies: entityData.movies?.length || 0,
         people: entityData.people?.length || 0,
-        processedAt: analysis.entity_linking_data.processedAt
+        processedAt: analysis.entity_linking_data.processedAt,
       });
     }
   }, [analysis]);
@@ -237,18 +234,18 @@ export function useEntityStats(analysis) {
 }
 
 // Component for displaying entity linking controls (admin/testing)
-export function EntityLinkingControls({ 
-  currentIntensity, 
+export function EntityLinkingControls({
+  currentIntensity,
   onIntensityChange,
   showStats = false,
-  stats = null
+  stats = null,
 }) {
   const intensityOptions = [
     { value: 'off', label: 'No Linking' },
     { value: 'minimal', label: 'Minimal' },
     { value: 'conservative', label: 'Conservative' },
     { value: 'moderate', label: 'Moderate' },
-    { value: 'aggressive', label: 'Aggressive' }
+    { value: 'aggressive', label: 'Aggressive' },
   ];
 
   return (
@@ -260,7 +257,7 @@ export function EntityLinkingControls({
           </label>
           <select
             value={currentIntensity}
-            onChange={(e) => onIntensityChange(e.target.value)}
+            onChange={e => onIntensityChange(e.target.value)}
             className="px-3 py-1 border border-gray-300 rounded-md text-sm"
           >
             {intensityOptions.map(option => (
@@ -270,11 +267,13 @@ export function EntityLinkingControls({
             ))}
           </select>
         </div>
-        
+
         {showStats && stats && (
           <div className="text-sm text-gray-600">
             <div>Entities: {stats.totalEntities}</div>
-            <div>Movies: {stats.movies} | People: {stats.people}</div>
+            <div>
+              Movies: {stats.movies} | People: {stats.people}
+            </div>
           </div>
         )}
       </div>

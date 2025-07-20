@@ -16,7 +16,7 @@ export default function MediaDetailPage() {
       <PhoneFrame>
         {/* Back button for navigation */}
         <BackButton variant="icon" context="movie" position="top-left" />
-        
+
         <div style={styles.loadingContainer}>
           <FilmLoadingMessage message="Diving into the vault..." />
         </div>
@@ -28,14 +28,11 @@ export default function MediaDetailPage() {
     <PhoneFrame>
       {/* Back button for navigation */}
       <BackButton variant="icon" context="movie" position="top-left" />
-      
+
       <div style={styles.container}>
         <img src={media.poster} alt={media.title} style={styles.poster} />
         <h1 style={styles.title}>
-          {media.title}{' '}
-          <span style={styles.year}>
-            ({media.year})
-          </span>
+          {media.title} <span style={styles.year}>({media.year})</span>
         </h1>
         <p style={styles.slug}>{media.slug}</p>
         <p style={styles.description}>{media.description}</p>
@@ -49,7 +46,8 @@ const styles = {
     maxWidth: '400px',
     margin: '0 auto',
     padding: '16px',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   loadingContainer: {
     padding: '16px',

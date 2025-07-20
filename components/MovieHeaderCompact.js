@@ -1,16 +1,16 @@
 /**
  * MovieHeaderCompact Component - Compact Movie Display for Search Results
- * 
+ *
  * Adapted from MovieHeaderLarge for use in search result containers:
  * - Compact layout that fits in grey rounded containers
  * - Proportionate poster height (maintains aspect ratio)
  * - Full width usage with proper scaling
  * - Floating action bar with Add, Seen, Play buttons
  * - Progressive loading and error handling
- * 
+ *
  * @component
  * @example
- * <MovieHeaderCompact 
+ * <MovieHeaderCompact
  *   title="Fight Club"
  *   year={1999}
  *   tmdbId={550}
@@ -32,24 +32,24 @@ import { FavoritesManager } from './FavoritesManager';
  * @param {string} [props.streamingInfo] - Streaming availability text
  * @param {number} [props.voteAverage] - Movie rating (optional)
  */
-export default function MovieHeaderCompact({ 
-  title, 
-  year, 
+export default function MovieHeaderCompact({
+  title,
+  year,
   tmdbId,
-  posterUrl, 
+  posterUrl,
   onMovieClick,
   streamingInfo,
-  voteAverage
+  voteAverage,
 }) {
   const [hearted, setHearted] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
   const [poster, setPoster] = useState(posterUrl || '/images/placeholder-poster.jpg');
-  
+
   // Progressive loading states
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   const [isImageError, setIsImageError] = useState(false);
   const [showContent, setShowContent] = useState(false);
-  
+
   // Trailer states
   const [trailerVideoId, setTrailerVideoId] = useState(null);
   const [showTrailer, setShowTrailer] = useState(false);
@@ -57,7 +57,7 @@ export default function MovieHeaderCompact({
 
   // Generate media ID from title and year
   const mediaId = `${title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${year}`;
-  
+
   // Movie data object for FavoritesManager
   const movieData = { title, year, poster, id: mediaId };
 
@@ -85,7 +85,7 @@ export default function MovieHeaderCompact({
     const timer = setTimeout(() => {
       setShowContent(true);
     }, 100); // Faster than MovieHeaderLarge for search results
-    
+
     return () => clearTimeout(timer);
   }, []);
 
@@ -118,7 +118,7 @@ export default function MovieHeaderCompact({
         try {
           const response = await fetch(`/api/tmdb-trailer?tmdbId=${tmdbId}`);
           const data = await response.json();
-          
+
           if (data.videoId) {
             setTrailerVideoId(data.videoId);
           }
@@ -136,13 +136,13 @@ export default function MovieHeaderCompact({
   // Handle trailer modal
   const handlePlayTrailer = async () => {
     if (!tmdbId) return;
-    
+
     if (!trailerVideoId && !isLoadingTrailer) {
       setIsLoadingTrailer(true);
       try {
         const response = await fetch(`/api/tmdb-trailer?tmdbId=${tmdbId}`);
         const data = await response.json();
-        
+
         if (data.videoId) {
           setTrailerVideoId(data.videoId);
           setShowTrailer(true);
@@ -171,24 +171,35 @@ export default function MovieHeaderCompact({
     <>
       <style jsx>{`
         @keyframes fadeInOut {
-          0% { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
-          20% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
-          80% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
-          100% { opacity: 0; transform: translate(-50%, -50%) scale(0.9); }
+          0% {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0.8);
+          }
+          20% {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1.1);
+          }
+          80% {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+          }
+          100% {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0.9);
+          }
         }
       `}</style>
-      
+
       <div style={styles.container}>
         <div style={styles.movieHeader} onClick={handleContainerClick}>
-          
           {/* Action Bar */}
-          <div 
+          <div
             style={styles.actionBarContainer}
-            onClick={(e) => e.stopPropagation()} // Prevent movie click when using action bar
-            onMouseEnter={(e) => {
+            onClick={e => e.stopPropagation()} // Prevent movie click when using action bar
+            onMouseEnter={e => {
               e.currentTarget.style.transform = 'scale(1.1)';
             }}
-            onMouseLeave={(e) => {
+            onMouseLeave={e => {
               e.currentTarget.style.transform = 'scale(1)';
             }}
           >
@@ -205,20 +216,19 @@ export default function MovieHeaderCompact({
               aria-label={bookmarked ? 'Remove from list' : 'Add to list'}
             >
               <div style={styles.iconWithText}>
-                <Plus
-                  size={20}
-                  color="#6b7280"
-                />
-                <span style={{
-                  ...styles.iconLabel,
-                  color: '#1f2937',
-                  fontWeight: bookmarked ? '600' : '400'
-                }}>
+                <Plus size={20} color="#6b7280" />
+                <span
+                  style={{
+                    ...styles.iconLabel,
+                    color: '#1f2937',
+                    fontWeight: bookmarked ? '600' : '400',
+                  }}
+                >
                   Add
                 </span>
               </div>
             </button>
-            
+
             <button
               onClick={() => {
                 try {
@@ -232,21 +242,19 @@ export default function MovieHeaderCompact({
               aria-label={hearted ? 'Mark as unseen' : 'Mark as seen'}
             >
               <div style={styles.iconWithText}>
-                <Check
-                  size={20}
-                  color="#6b7280"
-                  strokeWidth={hearted ? 2.5 : 1.5}
-                />
-                <span style={{
-                  ...styles.iconLabel,
-                  color: '#1f2937',
-                  fontWeight: hearted ? '600' : '400'
-                }}>
+                <Check size={20} color="#6b7280" strokeWidth={hearted ? 2.5 : 1.5} />
+                <span
+                  style={{
+                    ...styles.iconLabel,
+                    color: '#1f2937',
+                    fontWeight: hearted ? '600' : '400',
+                  }}
+                >
                   Seen
                 </span>
               </div>
             </button>
-            
+
             {/* Play Trailer Button - Only show if trailer exists */}
             {trailerVideoId && (
               <button
@@ -255,33 +263,31 @@ export default function MovieHeaderCompact({
                 aria-label="Play trailer"
               >
                 <div style={styles.iconWithText}>
-                  <PlayCircle
-                    size={20}
-                    color="#6b7280"
-                    fill="none"
-                  />
-                  <span style={{
-                    ...styles.iconLabel,
-                    color: "#1f2937",
-                    fontWeight: "400"
-                  }}>
+                  <PlayCircle size={20} color="#6b7280" fill="none" />
+                  <span
+                    style={{
+                      ...styles.iconLabel,
+                      color: '#1f2937',
+                      fontWeight: '400',
+                    }}
+                  >
                     Play
                   </span>
                 </div>
               </button>
             )}
           </div>
-          
+
           {/* Poster Section */}
           <div style={styles.posterContainer}>
             {showContent && (
-              <img 
-                src={poster} 
-                alt={`Poster for ${title}`} 
+              <img
+                src={poster}
+                alt={`Poster for ${title}`}
                 style={{
                   ...styles.poster,
                   opacity: isImageLoaded ? 1 : 0,
-                  transition: 'opacity 0.3s ease-in-out'
+                  transition: 'opacity 0.3s ease-in-out',
                 }}
                 onLoad={() => {
                   setIsImageLoaded(true);
@@ -293,14 +299,14 @@ export default function MovieHeaderCompact({
                 }}
               />
             )}
-            
+
             {/* Loading placeholder */}
             {showContent && !isImageLoaded && !isImageError && (
               <div style={styles.posterPlaceholder}>
                 <div style={styles.loadingText}>•••</div>
               </div>
             )}
-            
+
             {/* Error fallback */}
             {isImageError && (
               <div style={styles.posterPlaceholder}>
@@ -308,7 +314,7 @@ export default function MovieHeaderCompact({
                 <div style={styles.errorSubtext}>No poster</div>
               </div>
             )}
-            
+
             {/* Initial loading state */}
             {!showContent && (
               <div style={styles.posterPlaceholder}>
@@ -316,7 +322,7 @@ export default function MovieHeaderCompact({
               </div>
             )}
           </div>
-          
+
           {/* Movie Info Section */}
           <div style={styles.infoContainer}>
             {/* Streaming info */}
@@ -327,12 +333,12 @@ export default function MovieHeaderCompact({
             )}
           </div>
         </div>
-        
+
         {/* YouTube Trailer Modal */}
         {showTrailer && trailerVideoId && (
           <div style={styles.trailerOverlay} onClick={handleCloseTrailer}>
-            <div style={styles.trailerModal} onClick={(e) => e.stopPropagation()}>
-              <button 
+            <div style={styles.trailerModal} onClick={e => e.stopPropagation()}>
+              <button
                 style={styles.closeButton}
                 onClick={handleCloseTrailer}
                 aria-label="Close trailer"
@@ -367,7 +373,8 @@ const styles = {
     padding: '0px 16px 36px 16px', // Added 36px bottom margin between movies
     width: '100%',
     boxSizing: 'border-box',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     position: 'relative', // For positioning the action bar
     cursor: 'pointer',
   },
@@ -390,7 +397,8 @@ const styles = {
     backdropFilter: 'blur(12px)',
     borderRadius: '12px',
     border: '1px solid rgba(255, 255, 255, 0.8)',
-    boxShadow: '0 12px 32px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(0, 0, 0, 0.2), 0 1px 4px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.6)',
+    boxShadow:
+      '0 12px 32px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(0, 0, 0, 0.2), 0 1px 4px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.6)',
     zIndex: 1000,
     transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
     transformOrigin: 'center',
@@ -429,8 +437,8 @@ const styles = {
     paddingBottom: '5px',
   },
   poster: {
-    width: '100%',     // Fill container width
-    height: '400px',   // Fixed height for consistent layout
+    width: '100%', // Fill container width
+    height: '400px', // Fixed height for consistent layout
     objectFit: 'cover', // Intelligent center cropping
     borderRadius: '12px',
     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)', // Add some shadow for depth

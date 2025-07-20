@@ -32,25 +32,24 @@ export default async function handler(req, res) {
 
     if (error || !movie) {
       console.log(`❌ Movie verification failed: "${title}" (${year}) not found`);
-      return res.status(200).json({ 
-        exists: false, 
-        title, 
-        year 
+      return res.status(200).json({
+        exists: false,
+        title,
+        year,
       });
     }
 
     console.log(`✅ Movie verification success: "${title}" (${year}) -> TMDB ${movie.tmdb_id}`);
-    return res.status(200).json({ 
-      exists: true, 
+    return res.status(200).json({
+      exists: true,
       movie: {
         id: movie.id,
         title: movie.title,
         year: movie.year,
         tmdb_id: movie.tmdb_id,
-        slug: movie.slug
-      }
+        slug: movie.slug,
+      },
     });
-
   } catch (error) {
     console.error('Movie verification error:', error);
     return res.status(500).json({ error: 'Internal server error' });

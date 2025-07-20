@@ -1,9 +1,9 @@
 /**
  * MediaCard Caching Optimization Tests
- * 
+ *
  * Tests the comprehensive caching system implemented for MediaCard components
  * to prevent redundant API calls and improve rendering performance.
- * 
+ *
  * Validates:
  * - Cache hit/miss behavior for movie data
  * - Performance improvements from caching
@@ -19,18 +19,18 @@ import { jest } from '@jest/globals';
 jest.mock('next/router', () => ({
   useRouter: () => ({
     push: jest.fn(),
-    pathname: '/test'
-  })
+    pathname: '/test',
+  }),
 }));
 
 // Mock performance monitor
 const mockPerformanceMonitor = {
   trackMetric: jest.fn(),
-  trackAPICost: jest.fn()
+  trackAPICost: jest.fn(),
 };
 
 jest.mock('../../lib/performance-monitor.js', () => ({
-  getPerformanceMonitor: () => mockPerformanceMonitor
+  getPerformanceMonitor: () => mockPerformanceMonitor,
 }));
 
 // Mock the underlying cache first
@@ -38,8 +38,8 @@ jest.mock('../../lib/cache.js', () => ({
   getCache: () => ({
     get: jest.fn(),
     set: jest.fn(),
-    delete: jest.fn()
-  })
+    delete: jest.fn(),
+  }),
 }));
 
 // Mock MediaCard cache
@@ -51,11 +51,11 @@ const mockMediaCardCache = {
   getStreamingData: jest.fn(),
   cacheStreamingData: jest.fn(),
   getEnhancementData: jest.fn(),
-  cacheEnhancementData: jest.fn()
+  cacheEnhancementData: jest.fn(),
 };
 
 jest.mock('../../lib/mediacard-cache.js', () => ({
-  getMediaCardCache: () => mockMediaCardCache
+  getMediaCardCache: () => mockMediaCardCache,
 }));
 
 // Mock global fetch
@@ -66,16 +66,17 @@ import MediaCard from '../../components/MediaCard.js';
 describe('MediaCard Caching Optimization', () => {
   beforeEach(() => {
     jest.clearAllMocks();
-    
+
     // Default fetch mock for API calls
     global.fetch.mockResolvedValue({
       ok: true,
-      json: () => Promise.resolve({
-        slug: 'Test movie description',
-        poster: 'https://example.com/poster.jpg',
-        streamingText: 'Available on Netflix',
-        tmdb_id: 12345
-      })
+      json: () =>
+        Promise.resolve({
+          slug: 'Test movie description',
+          poster: 'https://example.com/poster.jpg',
+          streamingText: 'Available on Netflix',
+          tmdb_id: 12345,
+        }),
     });
   });
 
@@ -85,7 +86,7 @@ describe('MediaCard Caching Optimization', () => {
       slug: 'Cached movie description',
       poster: 'https://cached.com/poster.jpg',
       streamingText: 'Cached streaming info',
-      tmdb_id: 67890
+      tmdb_id: 67890,
     });
 
     render(
@@ -104,14 +105,14 @@ describe('MediaCard Caching Optimization', () => {
 
     // Should not make any API calls since we have cached data
     expect(global.fetch).not.toHaveBeenCalled();
-    
+
     // Should track cache hit
     expect(mockPerformanceMonitor.trackMetric).toHaveBeenCalledWith(
       'mediacard_cache_complete_hit',
       expect.any(Number),
       expect.objectContaining({
         title: 'The Matrix',
-        year: 1999
+        year: 1999,
       })
     );
   });
@@ -121,15 +122,11 @@ describe('MediaCard Caching Optimization', () => {
     mockMediaCardCache.getMovieData.mockResolvedValue(null);
     mockMediaCardCache.getPosterData.mockResolvedValue({
       poster: 'https://cached-poster.com/image.jpg',
-      tmdb_id: 123
+      tmdb_id: 123,
     });
 
     render(
-      <MediaCard
-        title="Casablanca"
-        year={1942}
-        initialPoster="/images/placeholder-poster.jpg"
-      />
+      <MediaCard title="Casablanca" year={1942} initialPoster="/images/placeholder-poster.jpg" />
     );
 
     await waitFor(() => {
@@ -144,34 +141,27 @@ describe('MediaCard Caching Optimization', () => {
     // No cached data
     mockMediaCardCache.getMovieData.mockResolvedValue(null);
     mockMediaCardCache.getEnhancementData.mockResolvedValue(null);
-    
+
     // Mock successful enhancement API response
-    global.fetch.mockImplementation((url) => {
+    global.fetch.mockImplementation(url => {
       if (url === '/api/enhance-movie-data') {
         return Promise.resolve({
           ok: true,
-          json: () => Promise.resolve({
-            slug: 'Enhanced movie description'
-          })
+          json: () =>
+            Promise.resolve({
+              slug: 'Enhanced movie description',
+            }),
         });
       }
       return Promise.resolve({ ok: false });
     });
 
-    render(
-      <MediaCard
-        title="Vertigo"
-        year={1958}
-        initialSlug=""
-      />
-    );
+    render(<MediaCard title="Vertigo" year={1958} initialSlug="" />);
 
     await waitFor(() => {
-      expect(mockMediaCardCache.cacheEnhancementData).toHaveBeenCalledWith(
-        'Vertigo',
-        1958,
-        { slug: 'Enhanced movie description' }
-      );
+      expect(mockMediaCardCache.cacheEnhancementData).toHaveBeenCalledWith('Vertigo', 1958, {
+        slug: 'Enhanced movie description',
+      });
     });
   });
 
@@ -179,38 +169,31 @@ describe('MediaCard Caching Optimization', () => {
     // No cached data
     mockMediaCardCache.getMovieData.mockResolvedValue(null);
     mockMediaCardCache.getPosterData.mockResolvedValue(null);
-    
+
     // Mock successful TMDB poster response
-    global.fetch.mockImplementation((url) => {
+    global.fetch.mockImplementation(url => {
       if (url === '/api/tmdb-poster') {
         return Promise.resolve({
           ok: true,
-          json: () => Promise.resolve({
-            poster: 'https://tmdb.com/poster.jpg',
-            tmdb_id: 456
-          })
+          json: () =>
+            Promise.resolve({
+              poster: 'https://tmdb.com/poster.jpg',
+              tmdb_id: 456,
+            }),
         });
       }
       return Promise.resolve({ ok: false });
     });
 
     render(
-      <MediaCard
-        title="The Godfather"
-        year={1972}
-        initialPoster="/images/placeholder-poster.jpg"
-      />
+      <MediaCard title="The Godfather" year={1972} initialPoster="/images/placeholder-poster.jpg" />
     );
 
     await waitFor(() => {
-      expect(mockMediaCardCache.cachePosterData).toHaveBeenCalledWith(
-        'The Godfather',
-        1972,
-        {
-          poster: 'https://tmdb.com/poster.jpg',
-          tmdb_id: 456
-        }
-      );
+      expect(mockMediaCardCache.cachePosterData).toHaveBeenCalledWith('The Godfather', 1972, {
+        poster: 'https://tmdb.com/poster.jpg',
+        tmdb_id: 456,
+      });
     });
   });
 
@@ -218,38 +201,29 @@ describe('MediaCard Caching Optimization', () => {
     // No cached data
     mockMediaCardCache.getMovieData.mockResolvedValue(null);
     mockMediaCardCache.getStreamingData.mockResolvedValue(null);
-    
+
     // Mock successful streaming response
-    global.fetch.mockImplementation((url) => {
+    global.fetch.mockImplementation(url => {
       if (url === '/api/tmdb-streaming') {
         return Promise.resolve({
           ok: true,
-          json: () => Promise.resolve({
-            streamingText: 'Available on HBO Max',
-            source: 'tmdb'
-          })
+          json: () =>
+            Promise.resolve({
+              streamingText: 'Available on HBO Max',
+              source: 'tmdb',
+            }),
         });
       }
       return Promise.resolve({ ok: false });
     });
 
-    render(
-      <MediaCard
-        title="Dune"
-        year={2021}
-        initialStreaming=""
-      />
-    );
+    render(<MediaCard title="Dune" year={2021} initialStreaming="" />);
 
     await waitFor(() => {
-      expect(mockMediaCardCache.cacheStreamingData).toHaveBeenCalledWith(
-        'Dune',
-        2021,
-        {
-          streamingText: 'Available on HBO Max',
-          source: 'tmdb'
-        }
-      );
+      expect(mockMediaCardCache.cacheStreamingData).toHaveBeenCalledWith('Dune', 2021, {
+        streamingText: 'Available on HBO Max',
+        source: 'tmdb',
+      });
     });
   });
 
@@ -259,31 +233,33 @@ describe('MediaCard Caching Optimization', () => {
     mockMediaCardCache.getEnhancementData.mockResolvedValue(null);
     mockMediaCardCache.getPosterData.mockResolvedValue(null);
     mockMediaCardCache.getStreamingData.mockResolvedValue(null);
-    
+
     // Mock all API responses
-    global.fetch.mockImplementation((url) => {
+    global.fetch.mockImplementation(url => {
       if (url === '/api/enhance-movie-data') {
         return Promise.resolve({
           ok: true,
-          json: () => Promise.resolve({ slug: 'Enhanced description' })
+          json: () => Promise.resolve({ slug: 'Enhanced description' }),
         });
       }
       if (url === '/api/tmdb-poster') {
         return Promise.resolve({
           ok: true,
-          json: () => Promise.resolve({ 
-            poster: 'https://example.com/poster.jpg',
-            tmdb_id: 789
-          })
+          json: () =>
+            Promise.resolve({
+              poster: 'https://example.com/poster.jpg',
+              tmdb_id: 789,
+            }),
         });
       }
       if (url === '/api/tmdb-streaming') {
         return Promise.resolve({
           ok: true,
-          json: () => Promise.resolve({ 
-            streamingText: 'Stream on Netflix',
-            source: 'tmdb'
-          })
+          json: () =>
+            Promise.resolve({
+              streamingText: 'Stream on Netflix',
+              source: 'tmdb',
+            }),
         });
       }
       if (url === '/api/cache-movie-data') {
@@ -310,7 +286,7 @@ describe('MediaCard Caching Optimization', () => {
           slug: 'Enhanced description',
           poster: 'https://example.com/poster.jpg',
           streamingText: 'Stream on Netflix',
-          tmdb_id: 789
+          tmdb_id: 789,
         })
       );
     });
@@ -325,7 +301,7 @@ describe('MediaCard Caching Optimization', () => {
         cached_slug: true,
         cached_poster: true,
         cached_streaming: true,
-        cached_tmdb_id: true
+        cached_tmdb_id: true,
       })
     );
   });
@@ -333,14 +309,8 @@ describe('MediaCard Caching Optimization', () => {
   test('should handle cache failures gracefully', async () => {
     // Mock cache methods to throw errors
     mockMediaCardCache.getMovieData.mockRejectedValue(new Error('Cache error'));
-    
-    render(
-      <MediaCard
-        title="Blade Runner"
-        year={1982}
-        initialSlug=""
-      />
-    );
+
+    render(<MediaCard title="Blade Runner" year={1982} initialSlug="" />);
 
     // Should still attempt to enhance data despite cache error
     await waitFor(() => {
@@ -369,16 +339,10 @@ describe('MediaCard Caching Optimization', () => {
     mockMediaCardCache.getMovieData.mockResolvedValue(null);
     mockMediaCardCache.getStreamingData.mockResolvedValue({
       streamingText: 'Cached streaming info',
-      source: 'cache'
+      source: 'cache',
     });
 
-    render(
-      <MediaCard
-        title="Pulp Fiction"
-        year={1994}
-        initialStreaming=""
-      />
-    );
+    render(<MediaCard title="Pulp Fiction" year={1994} initialStreaming="" />);
 
     await waitFor(() => {
       expect(mockMediaCardCache.getStreamingData).toHaveBeenCalledWith('Pulp Fiction', 1994);
@@ -396,13 +360,7 @@ describe('MediaCard Caching Optimization', () => {
       }
     });
 
-    render(
-      <MediaCard
-        title="2001: A Space Odyssey"
-        year={1968}
-        initialSlug=""
-      />
-    );
+    render(<MediaCard title="2001: A Space Odyssey" year={1968} initialSlug="" />);
 
     await waitFor(() => {
       expect(mockMediaCardCache.getMovieData).toHaveBeenCalled();

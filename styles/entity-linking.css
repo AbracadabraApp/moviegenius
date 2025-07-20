@@ -2,19 +2,19 @@
 
 /* Base entity link styling - lighter color with heavy weight for contrast */
 .entity-link {
-  color: #777777;                    /* Even lighter grey - very soft */
+  color: #777777; /* Even lighter grey - very soft */
   text-decoration: underline;
-  text-decoration-color: #e0e0e0;    /* Perfect medium grey underline */
-  text-decoration-thickness: 1px;    /* Light weight underline */
-  text-underline-offset: 2px;        /* Subtle spacing */
-  font-weight: 700;                  /* Bold weight - strong contrast */
+  text-decoration-color: #e0e0e0; /* Perfect medium grey underline */
+  text-decoration-thickness: 1px; /* Light weight underline */
+  text-underline-offset: 2px; /* Subtle spacing */
+  font-weight: 700; /* Bold weight - strong contrast */
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .entity-link:hover {
-  color: #1a1a1a;                    /* Slightly darker on hover */
-  text-decoration-color: #c0c0c0;    /* More visible underline on hover */
+  color: #1a1a1a; /* Slightly darker on hover */
+  text-decoration-color: #c0c0c0; /* More visible underline on hover */
 }
 
 /* Entity type specific styling (optional subtle differences) */
@@ -30,10 +30,10 @@
 
 /* Subtle mode (default) - lighter color with more weight */
 .entity-linked-text.subtle .entity-link {
-  color: #777777;                    /* Even lighter grey - very soft */
-  text-decoration-color: #e0e0e0;    /* Perfect medium grey underline */
+  color: #777777; /* Even lighter grey - very soft */
+  text-decoration-color: #e0e0e0; /* Perfect medium grey underline */
   text-decoration-thickness: 1px;
-  font-weight: 700;                  /* Bold weight - strong contrast */
+  font-weight: 700; /* Bold weight - strong contrast */
 }
 
 /* Minimal mode - even more subtle */
@@ -74,26 +74,26 @@
 }
 
 /* High confidence entities can be slightly more prominent */
-.entity-link[data-confidence="1.00"],
-.entity-link[data-confidence^="0.9"] {
+.entity-link[data-confidence='1.00'],
+.entity-link[data-confidence^='0.9'] {
   text-decoration-thickness: 1px;
 }
 
 /* Medium confidence entities stay as default */
-.entity-link[data-confidence^="0.8"] {
+.entity-link[data-confidence^='0.8'] {
   /* Default styling */
 }
 
 /* Lower confidence entities can be more subtle */
-.entity-link[data-confidence^="0.7"],
-.entity-link[data-confidence^="0.6"] {
+.entity-link[data-confidence^='0.7'],
+.entity-link[data-confidence^='0.6'] {
   text-decoration-color: #f5f5f5;
 }
 
 /* Responsive considerations */
 @media (max-width: 768px) {
   .entity-link {
-    text-underline-offset: 1px;  /* Tighter spacing on mobile */
+    text-underline-offset: 1px; /* Tighter spacing on mobile */
   }
 }
 

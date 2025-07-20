@@ -14,15 +14,17 @@ export default function TestSimplePage() {
 
   return (
     <PhoneFrame>
-      <div style={{
-        padding: '20px',
-        textAlign: 'center',
-        backgroundColor: 'white',
-        minHeight: '100vh'
-      }}>
+      <div
+        style={{
+          padding: '20px',
+          textAlign: 'center',
+          backgroundColor: 'white',
+          minHeight: '100vh',
+        }}
+      >
         <h1>Simple Test Page</h1>
         <p>{message}</p>
-        <button 
+        <button
           onClick={() => setMessage('Button clicked!')}
           style={{
             padding: '10px 20px',
@@ -30,7 +32,7 @@ export default function TestSimplePage() {
             color: 'white',
             border: 'none',
             borderRadius: '8px',
-            cursor: 'pointer'
+            cursor: 'pointer',
           }}
         >
           Test Button

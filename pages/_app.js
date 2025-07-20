@@ -12,7 +12,7 @@ export default function MyApp({ Component, pageProps }) {
   const [navigationStats, setNavigationStats] = useState({
     totalNavigations: 0,
     lastNavigationTime: null,
-    navigationHistory: []
+    navigationHistory: [],
   });
 
   // Comprehensive router debugging and scroll management
@@ -20,21 +20,21 @@ export default function MyApp({ Component, pageProps }) {
     let routeStartTime = null;
     let lastSuccessfulRoute = router.pathname;
 
-    const handleRouteStart = (url) => {
+    const handleRouteStart = url => {
       routeStartTime = Date.now();
       console.log('🚀 Route change starting:', {
         from: router.pathname,
         to: url,
         timestamp: new Date().toISOString(),
-        navigationCount: navigationStats.totalNavigations + 1
+        navigationCount: navigationStats.totalNavigations + 1,
       });
     };
 
-    const handleRouteChange = (url) => {
+    const handleRouteChange = url => {
       const duration = routeStartTime ? Date.now() - routeStartTime : 'unknown';
       const now = Date.now();
       lastSuccessfulRoute = url;
-      
+
       // Update navigation statistics
       setNavigationStats(prev => {
         const newStats = {
@@ -46,33 +46,33 @@ export default function MyApp({ Component, pageProps }) {
               url,
               timestamp: now,
               duration,
-              successful: true
-            }
-          ]
+              successful: true,
+            },
+          ],
         };
-        
+
         // Log warning if navigation count is getting high (potential issue indicator)
         if (newStats.totalNavigations > 10) {
           console.warn('⚠️ High navigation count detected:', newStats.totalNavigations);
         }
-        
+
         return newStats;
       });
-      
+
       console.log('✅ Route change completed:', {
         url,
         duration: `${duration}ms`,
         timestamp: new Date().toISOString(),
-        totalNavigations: navigationStats.totalNavigations + 1
+        totalNavigations: navigationStats.totalNavigations + 1,
       });
-      
+
       window.scrollTo(0, 0);
     };
 
     const handleRouteError = (err, url) => {
       const duration = routeStartTime ? Date.now() - routeStartTime : 'unknown';
       const now = Date.now();
-      
+
       // Track failed navigation
       setNavigationStats(prev => ({
         ...prev,
@@ -83,11 +83,11 @@ export default function MyApp({ Component, pageProps }) {
             timestamp: now,
             duration,
             successful: false,
-            error: err.message || err
-          }
-        ]
+            error: err.message || err,
+          },
+        ],
       }));
-      
+
       console.error('❌ Route change error:', {
         error: err.message || err,
         url,
@@ -95,22 +95,22 @@ export default function MyApp({ Component, pageProps }) {
         lastSuccessfulRoute,
         stack: err.stack,
         timestamp: new Date().toISOString(),
-        navigationHistory: navigationStats.navigationHistory
+        navigationHistory: navigationStats.navigationHistory,
       });
-      
+
       // Add error recovery attempt
       console.log('🔄 Attempting error recovery by staying on current route');
     };
 
-    const handleHashChange = (url) => {
+    const handleHashChange = url => {
       console.log('🔗 Hash change detected:', url);
     };
 
-    const handleBeforeHistoryChange = (url) => {
+    const handleBeforeHistoryChange = url => {
       console.log('📖 Before history change:', {
         from: router.pathname,
         to: url,
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
       });
     };
 
@@ -120,17 +120,17 @@ export default function MyApp({ Component, pageProps }) {
     router.events.on('routeChangeError', handleRouteError);
     router.events.on('hashChangeStart', handleHashChange);
     router.events.on('beforeHistoryChange', handleBeforeHistoryChange);
-    
+
     // Debug initial route state
     console.log('🏠 App initialized with route:', {
       pathname: router.pathname,
       asPath: router.asPath,
       query: router.query,
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
 
     // Add keyboard shortcut for debugging (Ctrl+Shift+D)
-    const handleKeyDown = (e) => {
+    const handleKeyDown = e => {
       if (e.ctrlKey && e.shiftKey && e.key === 'D') {
         console.log('🐛 Navigation Debug Info:', {
           currentRoute: router.pathname,
@@ -139,15 +139,15 @@ export default function MyApp({ Component, pageProps }) {
             pathname: router.pathname,
             asPath: router.asPath,
             query: router.query,
-            isReady: router.isReady
+            isReady: router.isReady,
           },
-          timestamp: new Date().toISOString()
+          timestamp: new Date().toISOString(),
         });
       }
     };
 
     document.addEventListener('keydown', handleKeyDown);
-    
+
     return () => {
       router.events.off('routeChangeStart', handleRouteStart);
       router.events.off('routeChangeComplete', handleRouteChange);
@@ -163,11 +163,10 @@ export default function MyApp({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      
+
       <ErrorBoundary>
         <Component {...pageProps} />
       </ErrorBoundary>
     </>
   );
 }
-

@@ -1,10 +1,13 @@
 # Episode Migration Guide
 
-This guide covers the migration of Genius episode content from JSON files to database storage, improving scalability, performance, and management capabilities.
+This guide covers the migration of Genius episode content from JSON files to
+database storage, improving scalability, performance, and management
+capabilities.
 
 ## Migration Overview
 
 The migration moves episode content from:
+
 - **From**: Individual JSON files in `/data/episodes/`
 - **To**: PostgreSQL database table with JSONB content storage
 - **Benefit**: Better performance, caching, and content management
@@ -98,6 +101,7 @@ The episode loading now follows this priority:
 ### Caching Strategy
 
 Episodes are cached with the following TTL:
+
 - **Episode content**: 24 hours (same as movie analysis)
 - **Episode lists**: 1 hour (for theme/series listings)
 - **Cache invalidation**: Automatic when episodes are updated
@@ -153,9 +157,14 @@ import { getCache } from '../lib/cache.js';
 const cache = getCache();
 
 // Cache episode content
-const content = await cache.cacheEpisodeContent(themeId, seriesId, episodeId, async () => {
+const content = await cache.cacheEpisodeContent(
+  themeId,
+  seriesId,
+  episodeId,
+  async () => {
     return await EpisodeService.getEpisode(themeId, seriesId, episodeId);
-});
+  }
+);
 
 // Invalidate episode caches
 await cache.invalidateEpisodeCache(themeId, seriesId, episodeId);
@@ -176,12 +185,14 @@ The JSON files remain untouched during migration as a safety backup.
 ## Performance Benefits
 
 ### Before Migration (File System)
+
 - Build time increases with episode count
 - No caching of episode content
 - File I/O during static generation
 - Difficult content management
 
 ### After Migration (Database)
+
 - Constant build time regardless of episode count
 - Redis caching with configurable TTL
 - Efficient database queries with indexes
@@ -190,12 +201,14 @@ The JSON files remain untouched during migration as a safety backup.
 ## Monitoring
 
 ### Success Indicators
+
 - All episodes load without errors
 - Database queries are cached effectively
 - No file system fallbacks during normal operation
 - Fast page generation times
 
 ### Warning Signs
+
 - Frequent database connection errors
 - High file system fallback usage
 - Slow episode page loading
@@ -206,16 +219,19 @@ The JSON files remain untouched during migration as a safety backup.
 ### Common Issues
 
 **Episode not found in database**
+
 - Check if migration completed successfully
 - Verify theme/series/episode ID mapping
 - Check database connectivity
 
 **Slow episode loading**
+
 - Monitor Redis cache hit rates
 - Check database query performance
 - Verify indexes are created
 
 **Lock-related errors**
+
 - Check episode lock status in database
 - Use `--force` flag if needed for regeneration
 - Verify lock timestamps are reasonable
@@ -244,4 +260,5 @@ With episodes in the database, future improvements become possible:
 5. **Automated updates**: Regenerate episodes based on triggers
 6. **Content validation**: Ensure episode quality and consistency
 
-This migration provides a solid foundation for scaling the Genius educational content system.
+This migration provides a solid foundation for scaling the Genius educational
+content system.

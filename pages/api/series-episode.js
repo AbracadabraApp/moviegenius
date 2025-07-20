@@ -1,6 +1,6 @@
 /**
  * Series Episode API Route
- * 
+ *
  * Generates series episode content using Claude AI following the ask-claude pattern.
  * Returns same data structure as ask-claude for consistency.
  */
@@ -17,27 +17,26 @@ import { GENIUS_CONTEXT } from '../../lib/prompts/contexts.js';
 function loadSeriesData() {
   try {
     const filePath = path.join(process.cwd(), 'data', 'series-config.json');
-    
+
     // Check if file exists first
     if (!fs.existsSync(filePath)) {
       console.error('Series config file not found:', filePath);
       return getFallbackSeriesData();
     }
-    
+
     const fileContent = fs.readFileSync(filePath, 'utf8');
-    
+
     // Validate JSON structure
     const seriesData = JSON.parse(fileContent);
-    
+
     // Basic validation - ensure it's an object with at least one series
     if (!seriesData || typeof seriesData !== 'object' || Object.keys(seriesData).length === 0) {
       console.error('Invalid series config structure');
       return getFallbackSeriesData();
     }
-    
+
     console.log(`Loaded ${Object.keys(seriesData).length} series from config`);
     return seriesData;
-    
   } catch (error) {
     console.error('Error loading series config:', error.message);
     return getFallbackSeriesData();
@@ -47,22 +46,22 @@ function loadSeriesData() {
 // Fallback series data to prevent loops
 function getFallbackSeriesData() {
   return {
-    '2': {
+    2: {
       id: 2,
-      title: "Cinema Through Time - 1970-2025",
-      description: "How film evolved from the auteur renaissance through the present day",
+      title: 'Cinema Through Time - 1970-2025',
+      description: 'How film evolved from the auteur renaissance through the present day',
       episodes: [
         {
           id: 1,
-          title: "1970s: The Auteur Renaissance",
-          subtitle: "When directors became superstars",
+          title: '1970s: The Auteur Renaissance',
+          subtitle: 'When directors became superstars',
           posters: [
-            "https://image.tmdb.org/t/p/w200/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
-            "https://image.tmdb.org/t/p/w200/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg"
-          ]
-        }
-      ]
-    }
+            'https://image.tmdb.org/t/p/w200/3bhkrj58Vtu7enYsRolD1fZdja1.jpg',
+            'https://image.tmdb.org/t/p/w200/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg',
+          ],
+        },
+      ],
+    },
   };
 }
 
@@ -73,8 +72,8 @@ function processMovieData(movieData) {
     year: movieData.year,
     slug: movieData.slug,
     poster_url: null, // Will be enhanced later
-    tmdb_id: null,    // Will be enhanced later
-    streaming: null   // Will be enhanced later
+    tmdb_id: null, // Will be enhanced later
+    streaming: null, // Will be enhanced later
   };
 }
 
@@ -83,76 +82,109 @@ async function loadEpisodeContent(seriesId, episodeId) {
   try {
     // First try database for Genius episodes (theme determined by series mapping)
     const { EpisodeService } = await import('../../lib/supabase.js');
-    
+
     // Map series ID to theme ID (this mapping should match your genius-config.json)
     const seriesThemeMapping = {
-      '1': { themeId: 1, seriesId: 1 }, // Classic Film Noir
-      '2': { themeId: 1, seriesId: 2 }, // Suspense & Horror
-      '3': { themeId: 1, seriesId: 3 }, // Comedy Through the Ages
-      '4': { themeId: 2, seriesId: 1 }, // Women Directors
-      '5': { themeId: 2, seriesId: 2 }, // International Masters
+      1: { themeId: 1, seriesId: 1 }, // Classic Film Noir
+      2: { themeId: 1, seriesId: 2 }, // Suspense & Horror
+      3: { themeId: 1, seriesId: 3 }, // Comedy Through the Ages
+      4: { themeId: 2, seriesId: 1 }, // Women Directors
+      5: { themeId: 2, seriesId: 2 }, // International Masters
       // Add more mappings as needed
     };
-    
+
     const mapping = seriesThemeMapping[seriesId];
     if (mapping) {
-      const episodeData = await EpisodeService.getEpisode(mapping.themeId, mapping.seriesId, parseInt(episodeId));
+      const episodeData = await EpisodeService.getEpisode(
+        mapping.themeId,
+        mapping.seriesId,
+        parseInt(episodeId)
+      );
       if (episodeData) {
-        console.log(`Loaded episode content from database: theme ${mapping.themeId}, series ${mapping.seriesId}, episode ${episodeId}`);
+        console.log(
+          `Loaded episode content from database: theme ${mapping.themeId}, series ${mapping.seriesId}, episode ${episodeId}`
+        );
         return episodeData.content;
       }
     }
-    
+
     // Fallback to legacy file system for non-Genius episodes
-    const episodePath = path.join(process.cwd(), 'data', 'episodes', `series-${seriesId}-episode-${episodeId}.json`);
-    
+    const episodePath = path.join(
+      process.cwd(),
+      'data',
+      'episodes',
+      `series-${seriesId}-episode-${episodeId}.json`
+    );
+
     if (fs.existsSync(episodePath)) {
       const episodeContent = fs.readFileSync(episodePath, 'utf8');
       const episodeData = JSON.parse(episodeContent);
-      console.log(`Loaded episode content from file system: series ${seriesId}, episode ${episodeId}`);
+      console.log(
+        `Loaded episode content from file system: series ${seriesId}, episode ${episodeId}`
+      );
       return episodeData.content;
     } else {
-      console.log(`Episode content not found in database or file system: series ${seriesId}, episode ${episodeId}`);
+      console.log(
+        `Episode content not found in database or file system: series ${seriesId}, episode ${episodeId}`
+      );
       return null;
     }
   } catch (error) {
-    console.error(`Error loading episode content for Series ${seriesId}, Episode ${episodeId}:`, error);
-    
+    console.error(
+      `Error loading episode content for Series ${seriesId}, Episode ${episodeId}:`,
+      error
+    );
+
     // Final fallback to file system
     try {
-      const episodePath = path.join(process.cwd(), 'data', 'episodes', `series-${seriesId}-episode-${episodeId}.json`);
-      
+      const episodePath = path.join(
+        process.cwd(),
+        'data',
+        'episodes',
+        `series-${seriesId}-episode-${episodeId}.json`
+      );
+
       if (fs.existsSync(episodePath)) {
         const episodeContent = fs.readFileSync(episodePath, 'utf8');
         const episodeData = JSON.parse(episodeContent);
-        console.log(`Loaded episode content from file system as error fallback: series ${seriesId}, episode ${episodeId}`);
+        console.log(
+          `Loaded episode content from file system as error fallback: series ${seriesId}, episode ${episodeId}`
+        );
         return episodeData.content;
       }
     } catch (fallbackError) {
-      console.error(`File system fallback also failed for series ${seriesId}, episode ${episodeId}:`, fallbackError);
+      console.error(
+        `File system fallback also failed for series ${seriesId}, episode ${episodeId}:`,
+        fallbackError
+      );
     }
-    
+
     return null;
   }
 }
 
 // Generate episode content on-demand using Claude AI
-async function generateEpisodeContentFallback(seriesId, episodeId, customTopic = null, customContext = null) {
+async function generateEpisodeContentFallback(
+  seriesId,
+  episodeId,
+  customTopic = null,
+  customContext = null
+) {
   console.log(`Generating content for Series ${seriesId}, Episode ${episodeId}`);
-  
+
   // Get episode metadata for prompt
   const seriesData = loadSeriesData();
   const series = seriesData[seriesId];
   const episode = series?.episodes.find(ep => ep.id.toString() === episodeId);
-  
+
   if (!series || !episode) {
     throw new Error('Series or episode not found');
   }
-  
+
   // Use custom topic/context if provided, otherwise use series metadata
   const topicTitle = customTopic || `${episode.title}: ${episode.subtitle}`;
   const contextDescription = customContext || `Part of ${series.title} series`;
-  
+
   console.log('Topic Title:', topicTitle);
   console.log('Context Description:', contextDescription);
 
@@ -168,17 +200,18 @@ async function generateEpisodeContentFallback(seriesId, episodeId, customTopic =
       max_tokens: 6000,
       temperature: 0.7,
       system: [
-        { 
-          type: "text", 
+        {
+          type: 'text',
           text: `${CORE_VOICE}
 
 ${GENIUS_CONTEXT.structure}`,
-          cache_control: { type: "ephemeral" }
-        }
+          cache_control: { type: 'ephemeral' },
+        },
       ],
-      messages: [{
-        role: 'user',
-        content: `Create comprehensive educational content for "${topicTitle}".
+      messages: [
+        {
+          role: 'user',
+          content: `Create comprehensive educational content for "${topicTitle}".
 
 ${contextDescription ? `Context: ${contextDescription}` : ''}
 
@@ -190,40 +223,40 @@ CRITICAL LENGTH REQUIREMENTS:
 - Do NOT write brief summaries - write detailed, expansive analysis
 - Include extensive discussion of specific films, directors, and techniques throughout
 
-This is a comprehensive educational piece requiring substantial depth and length.`
-      }]
+This is a comprehensive educational piece requiring substantial depth and length.`,
+        },
+      ],
     });
 
     const responseText = response.content[0].text;
     return parseClaudeResponse(responseText);
-
   } catch (error) {
     console.error('Error generating episode content:', error);
-    
+
     // Return more robust fallback content
     const fallbackTitle = customTopic || episode.title;
     const fallbackContext = customContext || `${series.title.toLowerCase()}`;
-    
+
     return {
       opener: `${fallbackTitle} represents a pivotal moment in cinema, showcasing the evolution of cinematic artistry and storytelling.`,
       sections: [
         {
           type: 'text',
-          content: `This episode explores "${fallbackTitle}" within the context of ${fallbackContext}. This content examines the historical context, artistic innovations, and lasting impact of this important aspect of cinema history.`
-        },
-        {
-          type: 'text', 
-          content: `The films from this tradition demonstrate significant technological and narrative advances that continue to influence modern filmmaking. Directors and cinematographers working in this style pushed creative boundaries while establishing new cinematic languages.`
+          content: `This episode explores "${fallbackTitle}" within the context of ${fallbackContext}. This content examines the historical context, artistic innovations, and lasting impact of this important aspect of cinema history.`,
         },
         {
           type: 'text',
-          content: `Cultural impact extended far beyond the box office, as these works reflected and shaped societal values. The legacy of this cinematic tradition continues to inform contemporary cinema and inspire new generations of filmmakers.`
-        }
+          content: `The films from this tradition demonstrate significant technological and narrative advances that continue to influence modern filmmaking. Directors and cinematographers working in this style pushed creative boundaries while establishing new cinematic languages.`,
+        },
+        {
+          type: 'text',
+          content: `Cultural impact extended far beyond the box office, as these works reflected and shaped societal values. The legacy of this cinematic tradition continues to inform contemporary cinema and inspire new generations of filmmakers.`,
+        },
       ],
       moreIdeas: {
         title: 'Related Films to Explore',
-        movies: []
-      }
+        movies: [],
+      },
     };
   }
 }
@@ -233,135 +266,130 @@ function parseClaudeResponse(responseText) {
   const sections = [];
   const moreIdeasMovies = [];
   let opener = null;
-  
+
   const lines = responseText.split('\n');
   let currentSection = null;
   let currentMovies = [];
   let inMoreIdeas = false;
-  
+
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     const trimmedLine = line.trim();
-    
+
     if (!trimmedLine) continue;
-    
+
     if (trimmedLine.startsWith('OPENER:')) {
       opener = trimmedLine.substring('OPENER:'.length).trim();
-      
     } else if (trimmedLine.startsWith('SUBHEAD:')) {
       // Save previous section if exists
       if (currentSection) {
         sections.push({
           type: 'text',
-          content: currentSection
+          content: currentSection,
         });
-        
+
         if (currentMovies.length > 0) {
           sections.push({
             type: 'movies',
-            movies: currentMovies
+            movies: currentMovies,
           });
           currentMovies = [];
         }
       }
-      
+
       // Add subhead
       sections.push({
         type: 'subhead',
-        content: trimmedLine.substring('SUBHEAD:'.length).trim()
+        content: trimmedLine.substring('SUBHEAD:'.length).trim(),
       });
       currentSection = null;
-      
     } else if (trimmedLine.startsWith('PARAGRAPH:')) {
       // Save previous section if exists
       if (currentSection) {
         sections.push({
           type: 'text',
-          content: currentSection
+          content: currentSection,
         });
-        
+
         if (currentMovies.length > 0) {
           sections.push({
             type: 'movies',
-            movies: currentMovies
+            movies: currentMovies,
           });
           currentMovies = [];
         }
       }
-      
+
       // Start new section
       currentSection = trimmedLine.substring('PARAGRAPH:'.length).trim();
-      
     } else if (trimmedLine.startsWith('MOVIES:') && !inMoreIdeas) {
       const movieData = trimmedLine.substring('MOVIES:'.length).trim();
       const [title, year, description, streaming] = movieData.split('|').map(s => s?.trim());
-      
+
       if (title && year) {
         currentMovies.push({
           title,
           year: parseInt(year),
           slug: description || '',
-          streaming: streaming || ''
+          streaming: streaming || '',
         });
       }
-      
-      
     } else if (trimmedLine.startsWith('MORE_IDEAS:')) {
       inMoreIdeas = true;
-      
+
       // Save any pending section
       if (currentSection) {
         sections.push({
           type: 'text',
-          content: currentSection
+          content: currentSection,
         });
         currentSection = null;
-        
+
         if (currentMovies.length > 0) {
           sections.push({
             type: 'movies',
-            movies: currentMovies
+            movies: currentMovies,
           });
           currentMovies = [];
         }
       }
-      
+
       const movieData = trimmedLine.substring('MORE_IDEAS:'.length).trim();
       const [title, year, description, streaming] = movieData.split('|').map(s => s?.trim());
-      
+
       if (title && year) {
         moreIdeasMovies.push({
           title,
           year: parseInt(year),
           slug: description || '',
-          streaming: streaming || ''
+          streaming: streaming || '',
         });
       }
     }
   }
-  
+
   // Save final section
   if (currentSection) {
     sections.push({
       type: 'text',
-      content: currentSection
+      content: currentSection,
     });
-    
+
     if (currentMovies.length > 0) {
       sections.push({
         type: 'movies',
-        movies: currentMovies
+        movies: currentMovies,
       });
     }
   }
-  
+
   return {
     opener,
     sections,
     moreIdeas: {
       title: 'More Ideas',
-      movies: moreIdeasMovies
-    }
+      movies: moreIdeasMovies,
+    },
   };
 }
 
@@ -370,44 +398,53 @@ async function checkEpisodeLock(seriesId, episodeId, forceRegenerate = false) {
   try {
     // First try database
     const { EpisodeService } = await import('../../lib/supabase.js');
-    
+
     // Map series ID to theme ID
     const seriesThemeMapping = {
-      '1': { themeId: 1, seriesId: 1 }, // Classic Film Noir
-      '2': { themeId: 1, seriesId: 2 }, // Suspense & Horror
-      '3': { themeId: 1, seriesId: 3 }, // Comedy Through the Ages
-      '4': { themeId: 2, seriesId: 1 }, // Women Directors
-      '5': { themeId: 2, seriesId: 2 }, // International Masters
+      1: { themeId: 1, seriesId: 1 }, // Classic Film Noir
+      2: { themeId: 1, seriesId: 2 }, // Suspense & Horror
+      3: { themeId: 1, seriesId: 3 }, // Comedy Through the Ages
+      4: { themeId: 2, seriesId: 1 }, // Women Directors
+      5: { themeId: 2, seriesId: 2 }, // International Masters
     };
-    
+
     const mapping = seriesThemeMapping[seriesId];
     if (mapping) {
-      const episodeData = await EpisodeService.getEpisode(mapping.themeId, mapping.seriesId, parseInt(episodeId));
+      const episodeData = await EpisodeService.getEpisode(
+        mapping.themeId,
+        mapping.seriesId,
+        parseInt(episodeId)
+      );
       if (episodeData && episodeData.locked && !forceRegenerate) {
         return {
           isLocked: true,
           lockedAt: episodeData.locked_at,
-          lockedBy: episodeData.locked_by || 'system'
+          lockedBy: episodeData.locked_by || 'system',
         };
       }
     }
-    
+
     // Fallback to file system check
-    const episodePath = path.join(process.cwd(), 'data', 'episodes', `genius-${seriesId}-${seriesId}-${episodeId}.json`);
-    
+    const episodePath = path.join(
+      process.cwd(),
+      'data',
+      'episodes',
+      `genius-${seriesId}-${seriesId}-${episodeId}.json`
+    );
+
     if (fs.existsSync(episodePath)) {
       const episodeContent = fs.readFileSync(episodePath, 'utf8');
       const episodeData = JSON.parse(episodeContent);
-      
+
       if (episodeData.locked && !forceRegenerate) {
         return {
           isLocked: true,
           lockedAt: episodeData.lockedAt,
-          lockedBy: episodeData.lockedBy || 'system'
+          lockedBy: episodeData.lockedBy || 'system',
         };
       }
     }
-    
+
     return { isLocked: false };
   } catch (error) {
     console.error('Error checking episode lock:', error);
@@ -426,18 +463,18 @@ export default async function handler(req, res) {
       return res.status(500).json({ error: 'Failed to load series data' });
     }
   }
-  
+
   // Handle POST request for episode content
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Only GET and POST methods allowed' });
   }
-  
+
   const { seriesId, episodeId, forceRegenerate = false, topic, context } = req.body;
-  
+
   // Basic validation
   if (!seriesId || !episodeId) {
     return res.status(400).json({
-      error: 'Missing required fields: seriesId and episodeId'
+      error: 'Missing required fields: seriesId and episodeId',
     });
   }
 
@@ -450,7 +487,7 @@ export default async function handler(req, res) {
         error: 'Episode content is locked to prevent accidental regeneration',
         lockedAt: lockStatus.lockedAt,
         lockedBy: lockStatus.lockedBy,
-        message: 'Use forceRegenerate=true to override this protection'
+        message: 'Use forceRegenerate=true to override this protection',
       });
     }
   }
@@ -466,7 +503,9 @@ export default async function handler(req, res) {
     // Get episode metadata
     const episode = series.episodes.find(ep => ep.id.toString() === episodeId);
     if (!episode) {
-      return res.status(404).json({ error: `Episode ${episodeId} not found in series ${seriesId}` });
+      return res
+        .status(404)
+        .json({ error: `Episode ${episodeId} not found in series ${seriesId}` });
     }
 
     // If topic and context are provided, generate new content; otherwise try pre-generated content
@@ -477,7 +516,7 @@ export default async function handler(req, res) {
     } else {
       // Try to load pre-generated content first (from database or file system)
       rawContent = await loadEpisodeContent(seriesId, episodeId);
-      
+
       // Fallback to dynamic generation if pre-generated content doesn't exist
       if (!rawContent) {
         rawContent = await generateEpisodeContentFallback(seriesId, episodeId, topic, context);
@@ -499,7 +538,7 @@ export default async function handler(req, res) {
       const processedMoreMovies = rawContent.moreIdeas.movies.map(movie => processMovieData(movie));
       processedMoreIdeas = {
         ...rawContent.moreIdeas,
-        movies: processedMoreMovies
+        movies: processedMoreMovies,
       };
     }
 
@@ -507,18 +546,17 @@ export default async function handler(req, res) {
     return res.status(200).json({
       data: {
         sections: processedSections,
-        moreIdeas: processedMoreIdeas
+        moreIdeas: processedMoreIdeas,
       },
       series,
-      episode
+      episode,
     });
-
   } catch (error) {
     console.error('Error in series-episode API:', error);
-    
-    return res.status(500).json({ 
+
+    return res.status(500).json({
       error: 'Failed to generate episode content',
-      details: error.message 
+      details: error.message,
     });
   }
 }

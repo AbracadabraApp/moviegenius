@@ -7,7 +7,7 @@ function loadEnvFile() {
   try {
     const envContent = fs.readFileSync('.env.local', 'utf8');
     const lines = envContent.split('\n');
-    
+
     for (const line of lines) {
       const trimmed = line.trim();
       if (trimmed && !trimmed.startsWith('#')) {

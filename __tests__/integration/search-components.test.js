@@ -1,6 +1,6 @@
 /**
  * Integration Tests for Search Components Across Pages
- * 
+ *
  * This test suite verifies that all pages with search functionality
  * are using the correct components and search APIs.
  */
@@ -14,8 +14,8 @@ jest.mock('next/router', () => ({
   useRouter: () => ({
     push: mockPush,
     query: {},
-    pathname: '/'
-  })
+    pathname: '/',
+  }),
 }));
 
 // Mock fetch for API calls
@@ -37,17 +37,17 @@ describe('Search Components Integration', () => {
             title: 'Baby Driver',
             tmdb_id: 390043,
             year: 2017,
-            poster_url: 'https://image.tmdb.org/t/p/w500/poster.jpg'
-          }
+            poster_url: 'https://image.tmdb.org/t/p/w500/poster.jpg',
+          },
         ],
         query: 'baby',
         hasResults: true,
-        fallback: null
+        fallback: null,
       };
 
       fetch.mockResolvedValueOnce({
         ok: true,
-        json: async () => mockResponse
+        json: async () => mockResponse,
       });
 
       const mockOnResults = jest.fn();
@@ -55,10 +55,10 @@ describe('Search Components Integration', () => {
 
       const searchInput = screen.getByPlaceholderText('Search movies...');
       const form = searchInput.closest('form');
-      
+
       // Type search query
       fireEvent.change(searchInput, { target: { value: 'baby' } });
-      
+
       // Submit form directly
       fireEvent.submit(form);
 
@@ -67,7 +67,7 @@ describe('Search Components Integration', () => {
         expect(fetch).toHaveBeenCalledWith('/api/simple-search', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ query: 'baby' })
+          body: JSON.stringify({ query: 'baby' }),
         });
       });
 
@@ -79,8 +79,8 @@ describe('Search Components Integration', () => {
             title: 'Baby Driver',
             tmdb_id: 390043,
             year: 2017,
-            poster_url: 'https://image.tmdb.org/t/p/w500/poster.jpg'
-          }
+            poster_url: 'https://image.tmdb.org/t/p/w500/poster.jpg',
+          },
         ]);
       });
     });
@@ -92,15 +92,15 @@ describe('Search Components Integration', () => {
             id: 'tmdb_550',
             title: 'Fight Club',
             tmdb_id: 550,
-            year: 1999
-          }
+            year: 1999,
+          },
         ],
-        hasResults: true
+        hasResults: true,
       };
 
       fetch.mockResolvedValueOnce({
         ok: true,
-        json: async () => mockResponse
+        json: async () => mockResponse,
       });
 
       render(<SimpleSearch onResults={jest.fn()} />);
@@ -121,13 +121,13 @@ describe('Search Components Integration', () => {
         hasResults: false,
         fallback: {
           message: "We didn't find a result, but would you like to pass it on to our Movie Genius?",
-          askUrl: '/genius?q=nonexistentmovie'
-        }
+          askUrl: '/genius?q=nonexistentmovie',
+        },
       };
 
       fetch.mockResolvedValueOnce({
         ok: true,
-        json: async () => mockResponse
+        json: async () => mockResponse,
       });
 
       const mockOnResults = jest.fn();
@@ -180,27 +180,27 @@ describe('Search Components Integration', () => {
             id: 'tmdb_390043',
             title: 'Baby Driver',
             tmdb_id: 390043,
-            popularity: 52.7
+            popularity: 52.7,
           },
           {
             id: 'tmdb_1640',
             title: "Rosemary's Baby",
             tmdb_id: 1640,
-            popularity: 28.4
+            popularity: 28.4,
           },
           {
             id: 'tmdb_578',
             title: 'Baby',
             tmdb_id: 578,
-            popularity: 8.3
-          }
+            popularity: 8.3,
+          },
         ],
-        hasResults: true
+        hasResults: true,
       };
 
       fetch.mockResolvedValueOnce({
         ok: true,
-        json: async () => mockResponse
+        json: async () => mockResponse,
       });
 
       const mockOnResults = jest.fn();
@@ -216,11 +216,7 @@ describe('Search Components Integration', () => {
 
       // Verify the results include all baby-related movies
       const calledWith = mockOnResults.mock.calls[0][0];
-      expect(calledWith.map(m => m.title)).toEqual([
-        'Baby Driver',
-        "Rosemary's Baby",
-        'Baby'
-      ]);
+      expect(calledWith.map(m => m.title)).toEqual(['Baby Driver', "Rosemary's Baby", 'Baby']);
     });
 
     it('should handle multi-word keyword searches', async () => {
@@ -229,20 +225,20 @@ describe('Search Components Integration', () => {
           {
             id: 'tmdb_155',
             title: 'The Dark Knight',
-            tmdb_id: 155
+            tmdb_id: 155,
           },
           {
             id: 'tmdb_49026',
             title: 'The Dark Knight Rises',
-            tmdb_id: 49026
-          }
+            tmdb_id: 49026,
+          },
         ],
-        hasResults: true
+        hasResults: true,
       };
 
       fetch.mockResolvedValueOnce({
         ok: true,
-        json: async () => mockResponse
+        json: async () => mockResponse,
       });
 
       const mockOnResults = jest.fn();
@@ -256,7 +252,7 @@ describe('Search Components Integration', () => {
         expect(fetch).toHaveBeenCalledWith('/api/simple-search', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ query: 'dark knight' })
+          body: JSON.stringify({ query: 'dark knight' }),
         });
       });
 
@@ -280,7 +276,7 @@ describe('Search Components Integration', () => {
         'pages/movies.js',
         'pages/person/[id].js',
         'pages/search.js',
-        'components/ThemePage.js'
+        'components/ThemePage.js',
       ];
 
       // This test documents that these pages should use SimpleSearch

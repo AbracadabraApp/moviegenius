@@ -11,7 +11,7 @@ const supabase = createClient(
 async function countAnalysisMovies() {
   try {
     console.log('🔍 Counting movies with analysis and their slug status...');
-    
+
     // Get movies that have analysis
     const { data: analysisMovieIds, error: analysisError } = await supabase
       .from('movie_analyses')
@@ -21,7 +21,7 @@ async function countAnalysisMovies() {
     if (analysisError) throw analysisError;
 
     const uniqueMovieIds = [...new Set(analysisMovieIds.map(a => a.movie_id))];
-    
+
     console.log(`📊 Found ${uniqueMovieIds.length} unique movies with analysis`);
 
     // Get movie details for those with analysis
@@ -39,9 +39,13 @@ async function countAnalysisMovies() {
     console.log('\n📈 RESULTS:');
     console.log('===============================');
     console.log(`Total movies with analysis: ${totalWithAnalysis}`);
-    console.log(`- Movies with slugs: ${withSlugs} (${Math.round((withSlugs / totalWithAnalysis) * 100)}%)`);
-    console.log(`- Movies without slugs: ${withoutSlugs} (${Math.round((withoutSlugs / totalWithAnalysis) * 100)}%)`);
-    
+    console.log(
+      `- Movies with slugs: ${withSlugs} (${Math.round((withSlugs / totalWithAnalysis) * 100)}%)`
+    );
+    console.log(
+      `- Movies without slugs: ${withoutSlugs} (${Math.round((withoutSlugs / totalWithAnalysis) * 100)}%)`
+    );
+
     if (withoutSlugs > 0) {
       const estimatedCost = withoutSlugs * 0.01;
       console.log(`\n💰 Estimated cost to generate missing slugs: $${estimatedCost.toFixed(2)}`);
@@ -49,7 +53,6 @@ async function countAnalysisMovies() {
     } else {
       console.log(`\n✅ All movies with analysis already have slugs!`);
     }
-
   } catch (error) {
     console.error('❌ Error:', error.message);
     process.exit(1);

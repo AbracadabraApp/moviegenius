@@ -1,145 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MovieGenius Content Generation - URL List</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f8fafc;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #1f2937;
-            margin: 0;
-        }
-        .stats {
-            color: #6b7280;
-            margin-top: 10px;
-        }
-        .movie-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .movie-item {
-            background: white;
-            margin-bottom: 1px;
-            padding: 12px 16px;
-            border-left: 4px solid #3b82f6;
-            transition: all 0.2s ease;
-        }
-        .movie-item:hover {
-            background: #f1f5f9;
-            border-left-color: #1d4ed8;
-        }
-        .movie-link {
-            text-decoration: none;
-            color: #1f2937;
-            display: block;
-            font-weight: 500;
-        }
-        .movie-link:hover {
-            color: #1d4ed8;
-        }
-        .movie-meta {
-            color: #6b7280;
-            font-size: 0.875rem;
-            margin-top: 4px;
-        }
-        .processed {
-            background: #ecfdf5 !important;
-            border-left-color: #10b981 !important;
-        }
-        .processing {
-            background: #fef3c7 !important;
-            border-left-color: #f59e0b !important;
-        }
-        .error {
-            background: #fef2f2 !important;
-            border-left-color: #ef4444 !important;
-        }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f8fafc;
+      }
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #1f2937;
+        margin: 0;
+      }
+      .stats {
+        color: #6b7280;
+        margin-top: 10px;
+      }
+      .movie-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .movie-item {
+        background: white;
+        margin-bottom: 1px;
+        padding: 12px 16px;
+        border-left: 4px solid #3b82f6;
+        transition: all 0.2s ease;
+      }
+      .movie-item:hover {
+        background: #f1f5f9;
+        border-left-color: #1d4ed8;
+      }
+      .movie-link {
+        text-decoration: none;
+        color: #1f2937;
+        display: block;
+        font-weight: 500;
+      }
+      .movie-link:hover {
+        color: #1d4ed8;
+      }
+      .movie-meta {
+        color: #6b7280;
+        font-size: 0.875rem;
+        margin-top: 4px;
+      }
+      .processed {
+        background: #ecfdf5 !important;
+        border-left-color: #10b981 !important;
+      }
+      .processing {
+        background: #fef3c7 !important;
+        border-left-color: #f59e0b !important;
+      }
+      .error {
+        background: #fef2f2 !important;
+        border-left-color: #ef4444 !important;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <h1>🎬 MovieGenius Content Generation</h1>
-        <div class="stats">
-            <strong id="total-count">5801</strong> movies ready for content generation
-        </div>
+      <h1>🎬 MovieGenius Content Generation</h1>
+      <div class="stats">
+        <strong id="total-count">5801</strong> movies ready for content generation
+      </div>
     </div>
 
     <ul class="movie-list" id="movie-list">
-        <!-- URLs will be inserted here by script -->
+      <!-- URLs will be inserted here by script -->
     </ul>
 
     <script>
-        // Movie URL data - will be populated by our generator
-        const movieData = [
-            // This will be filled by our script
-        ];
+      // Movie URL data - will be populated by our generator
+      const movieData = [
+        // This will be filled by our script
+      ];
 
-        // Track processing state
-        window.crawlerState = {
-            processed: 0,
-            errors: 0,
-            totalMovies: 0
-        };
+      // Track processing state
+      window.crawlerState = {
+        processed: 0,
+        errors: 0,
+        totalMovies: 0,
+      };
 
-        // Helper function to mark movie as processed
-        window.markMovieProcessed = function(index, success = true) {
-            const item = document.querySelector(`[data-index="${index}"]`);
-            if (item) {
-                item.classList.remove('processing');
-                item.classList.add(success ? 'processed' : 'error');
-            }
-            
-            if (success) {
-                window.crawlerState.processed++;
-            } else {
-                window.crawlerState.errors++;
-            }
-            
-            updateStats();
-        };
-
-        // Helper function to mark movie as currently processing
-        window.markMovieProcessing = function(index) {
-            const item = document.querySelector(`[data-index="${index}"]`);
-            if (item) {
-                item.classList.add('processing');
-            }
-        };
-
-        // Update statistics display
-        function updateStats() {
-            const totalElement = document.getElementById('total-count');
-            const state = window.crawlerState;
-            totalElement.innerHTML = `${state.processed}/${state.totalMovies} processed (${state.errors} errors)`;
+      // Helper function to mark movie as processed
+      window.markMovieProcessed = function (index, success = true) {
+        const item = document.querySelector(`[data-index="${index}"]`);
+        if (item) {
+          item.classList.remove('processing');
+          item.classList.add(success ? 'processed' : 'error');
         }
 
-        // Initialize page when movie data is loaded
-        function initializePage(movies) {
-            const listElement = document.getElementById('movie-list');
-            window.crawlerState.totalMovies = movies.length;
-            
-            movies.forEach((movie, index) => {
-                const listItem = document.createElement('li');
-                listItem.className = 'movie-item';
-                listItem.setAttribute('data-index', index);
-                
-                listItem.innerHTML = `
+        if (success) {
+          window.crawlerState.processed++;
+        } else {
+          window.crawlerState.errors++;
+        }
+
+        updateStats();
+      };
+
+      // Helper function to mark movie as currently processing
+      window.markMovieProcessing = function (index) {
+        const item = document.querySelector(`[data-index="${index}"]`);
+        if (item) {
+          item.classList.add('processing');
+        }
+      };
+
+      // Update statistics display
+      function updateStats() {
+        const totalElement = document.getElementById('total-count');
+        const state = window.crawlerState;
+        totalElement.innerHTML = `${state.processed}/${state.totalMovies} processed (${state.errors} errors)`;
+      }
+
+      // Initialize page when movie data is loaded
+      function initializePage(movies) {
+        const listElement = document.getElementById('movie-list');
+        window.crawlerState.totalMovies = movies.length;
+
+        movies.forEach((movie, index) => {
+          const listItem = document.createElement('li');
+          listItem.className = 'movie-item';
+          listItem.setAttribute('data-index', index);
+
+          listItem.innerHTML = `
                     <a href="${movie.url}" class="movie-link" target="_blank">
                         ${movie.title}
                     </a>
@@ -147,17 +147,17 @@
                         TMDB ID: ${movie.tmdbId} | URL: ${movie.url}
                     </div>
                 `;
-                
-                listElement.appendChild(listItem);
-            });
-            
-            updateStats();
-        }
 
-        // This will be called by our generator to populate the page
-        window.loadMovieData = function(data) {
-            initializePage(data);
-        };
+          listElement.appendChild(listItem);
+        });
+
+        updateStats();
+      }
+
+      // This will be called by our generator to populate the page
+      window.loadMovieData = function (data) {
+        initializePage(data);
+      };
     </script>
-</body>
+  </body>
 </html>

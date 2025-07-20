@@ -19,58 +19,183 @@ export default function PopulateListsPage() {
     'afi-100': {
       name: 'AFI 100 Greatest American Films',
       movies: afi100Data,
-      matchNames: ['afi', '100', 'american', 'greatest']
+      matchNames: ['afi', '100', 'american', 'greatest'],
     },
     'best-picture': {
       name: 'Academy Award Best Picture Winners',
       movies: [
-        { title: "Parasite", year: 2019, tmdbId: 496243, slug: "A poor family infiltrates a wealthy household." },
-        { title: "Green Book", year: 2018, tmdbId: 490132, slug: "A pianist's tour through the segregated South." },
-        { title: "The Shape of Water", year: 2017, tmdbId: 399055, slug: "A mute woman falls for an amphibian creature." },
-        { title: "Moonlight", year: 2016, tmdbId: 376867, slug: "A young man's journey of self-discovery." },
-        { title: "Spotlight", year: 2015, tmdbId: 359940, slug: "Journalists uncover Catholic Church scandal." },
-        { title: "Birdman", year: 2014, tmdbId: 194662, slug: "An actor tries to revive his career on Broadway." },
-        { title: "12 Years a Slave", year: 2013, tmdbId: 76203, slug: "A free black man is kidnapped and sold into slavery." },
-        { title: "Argo", year: 2012, tmdbId: 68726, slug: "CIA agents pose as filmmakers to rescue hostages." }
+        {
+          title: 'Parasite',
+          year: 2019,
+          tmdbId: 496243,
+          slug: 'A poor family infiltrates a wealthy household.',
+        },
+        {
+          title: 'Green Book',
+          year: 2018,
+          tmdbId: 490132,
+          slug: "A pianist's tour through the segregated South.",
+        },
+        {
+          title: 'The Shape of Water',
+          year: 2017,
+          tmdbId: 399055,
+          slug: 'A mute woman falls for an amphibian creature.',
+        },
+        {
+          title: 'Moonlight',
+          year: 2016,
+          tmdbId: 376867,
+          slug: "A young man's journey of self-discovery.",
+        },
+        {
+          title: 'Spotlight',
+          year: 2015,
+          tmdbId: 359940,
+          slug: 'Journalists uncover Catholic Church scandal.',
+        },
+        {
+          title: 'Birdman',
+          year: 2014,
+          tmdbId: 194662,
+          slug: 'An actor tries to revive his career on Broadway.',
+        },
+        {
+          title: '12 Years a Slave',
+          year: 2013,
+          tmdbId: 76203,
+          slug: 'A free black man is kidnapped and sold into slavery.',
+        },
+        {
+          title: 'Argo',
+          year: 2012,
+          tmdbId: 68726,
+          slug: 'CIA agents pose as filmmakers to rescue hostages.',
+        },
       ],
-      matchNames: ['oscar', 'academy', 'best picture', 'winner']
+      matchNames: ['oscar', 'academy', 'best picture', 'winner'],
     },
     'film-noir': {
       name: 'Film Noir Classics',
       movies: [
-        { title: "The Maltese Falcon", year: 1941, tmdbId: 891, slug: "A detective hunts for a valuable bird statue." },
-        { title: "Double Indemnity", year: 1944, tmdbId: 18, slug: "An insurance salesman plans the perfect murder." },
-        { title: "The Big Sleep", year: 1946, tmdbId: 1398, slug: "A private eye investigates a blackmail case." },
-        { title: "Touch of Evil", year: 1958, tmdbId: 754, slug: "A cop investigates a bombing on the border." },
-        { title: "The Third Man", year: 1949, tmdbId: 1104, slug: "A writer searches for his friend in post-war Vienna." },
-        { title: "Sunset Boulevard", year: 1950, tmdbId: 599, slug: "An aging silent film star refuses to accept her faded glory." }
+        {
+          title: 'The Maltese Falcon',
+          year: 1941,
+          tmdbId: 891,
+          slug: 'A detective hunts for a valuable bird statue.',
+        },
+        {
+          title: 'Double Indemnity',
+          year: 1944,
+          tmdbId: 18,
+          slug: 'An insurance salesman plans the perfect murder.',
+        },
+        {
+          title: 'The Big Sleep',
+          year: 1946,
+          tmdbId: 1398,
+          slug: 'A private eye investigates a blackmail case.',
+        },
+        {
+          title: 'Touch of Evil',
+          year: 1958,
+          tmdbId: 754,
+          slug: 'A cop investigates a bombing on the border.',
+        },
+        {
+          title: 'The Third Man',
+          year: 1949,
+          tmdbId: 1104,
+          slug: 'A writer searches for his friend in post-war Vienna.',
+        },
+        {
+          title: 'Sunset Boulevard',
+          year: 1950,
+          tmdbId: 599,
+          slug: 'An aging silent film star refuses to accept her faded glory.',
+        },
       ],
-      matchNames: ['noir', 'black', 'shadow', 'detective']
+      matchNames: ['noir', 'black', 'shadow', 'detective'],
     },
-    'hitchcock': {
+    hitchcock: {
       name: 'Alfred Hitchcock Essentials',
       movies: [
-        { title: "Vertigo", year: 1958, tmdbId: 832, slug: "A detective's obsession with a mysterious woman." },
-        { title: "Psycho", year: 1960, tmdbId: 539, slug: "A woman checks into a motel with secrets." },
-        { title: "Rear Window", year: 1954, tmdbId: 808, slug: "A photographer spies on his neighbors from his window." },
-        { title: "North by Northwest", year: 1959, tmdbId: 851, slug: "A man is mistaken for a government agent." },
-        { title: "The Birds", year: 1963, tmdbId: 571, slug: "Birds mysteriously attack a small coastal town." },
-        { title: "Notorious", year: 1946, tmdbId: 830, slug: "A spy recruits a woman to infiltrate Nazi circles." }
+        {
+          title: 'Vertigo',
+          year: 1958,
+          tmdbId: 832,
+          slug: "A detective's obsession with a mysterious woman.",
+        },
+        {
+          title: 'Psycho',
+          year: 1960,
+          tmdbId: 539,
+          slug: 'A woman checks into a motel with secrets.',
+        },
+        {
+          title: 'Rear Window',
+          year: 1954,
+          tmdbId: 808,
+          slug: 'A photographer spies on his neighbors from his window.',
+        },
+        {
+          title: 'North by Northwest',
+          year: 1959,
+          tmdbId: 851,
+          slug: 'A man is mistaken for a government agent.',
+        },
+        {
+          title: 'The Birds',
+          year: 1963,
+          tmdbId: 571,
+          slug: 'Birds mysteriously attack a small coastal town.',
+        },
+        {
+          title: 'Notorious',
+          year: 1946,
+          tmdbId: 830,
+          slug: 'A spy recruits a woman to infiltrate Nazi circles.',
+        },
       ],
-      matchNames: ['hitchcock', 'alfred', 'suspense', 'thriller']
+      matchNames: ['hitchcock', 'alfred', 'suspense', 'thriller'],
     },
-    'criterion': {
+    criterion: {
       name: 'Criterion Collection Essentials',
       movies: [
-        { title: "Seven Samurai", year: 1954, tmdbId: 346, slug: "Samurai defend a village from bandits." },
-        { title: "8½", year: 1963, tmdbId: 15, slug: "A director's creative and personal crisis." },
-        { title: "Persona", year: 1966, tmdbId: 14579, slug: "An actress goes silent, her nurse speaks." },
-        { title: "The 400 Blows", year: 1959, tmdbId: 12477, slug: "A troubled boy's coming of age in Paris." },
-        { title: "Bicycle Thieves", year: 1948, tmdbId: 14535, slug: "A man searches Rome for his stolen bicycle." },
-        { title: "Tokyo Story", year: 1953, tmdbId: 18148, slug: "Elderly parents visit their adult children." }
+        {
+          title: 'Seven Samurai',
+          year: 1954,
+          tmdbId: 346,
+          slug: 'Samurai defend a village from bandits.',
+        },
+        { title: '8½', year: 1963, tmdbId: 15, slug: "A director's creative and personal crisis." },
+        {
+          title: 'Persona',
+          year: 1966,
+          tmdbId: 14579,
+          slug: 'An actress goes silent, her nurse speaks.',
+        },
+        {
+          title: 'The 400 Blows',
+          year: 1959,
+          tmdbId: 12477,
+          slug: "A troubled boy's coming of age in Paris.",
+        },
+        {
+          title: 'Bicycle Thieves',
+          year: 1948,
+          tmdbId: 14535,
+          slug: 'A man searches Rome for his stolen bicycle.',
+        },
+        {
+          title: 'Tokyo Story',
+          year: 1953,
+          tmdbId: 18148,
+          slug: 'Elderly parents visit their adult children.',
+        },
       ],
-      matchNames: ['criterion', 'collection', 'essential', 'arthouse']
-    }
+      matchNames: ['criterion', 'collection', 'essential', 'arthouse'],
+    },
   };
 
   // Fetch existing lists on load
@@ -83,23 +208,23 @@ export default function PopulateListsPage() {
     try {
       const response = await fetch('/api/tag-cloud?content_type=declarative');
       const data = await response.json();
-      
+
       // Add movie counts to each list
       const listsWithCounts = await Promise.all(
-        (data.lists || []).map(async (list) => {
+        (data.lists || []).map(async list => {
           try {
             const listResponse = await fetch(`/api/movie-list?slug=${list.slug}`);
             const listData = await listResponse.json();
             return {
               ...list,
-              movieCount: listData.movieCount || 0
+              movieCount: listData.movieCount || 0,
             };
           } catch (error) {
             return { ...list, movieCount: 0 };
           }
         })
       );
-      
+
       setExistingLists(listsWithCounts);
     } catch (error) {
       console.error('Error fetching existing lists:', error);
@@ -108,9 +233,9 @@ export default function PopulateListsPage() {
     }
   };
 
-  const findBestCollectionMatch = (listName) => {
+  const findBestCollectionMatch = listName => {
     const lowerName = listName.toLowerCase();
-    
+
     for (const [key, collection] of Object.entries(movieCollections)) {
       if (collection.matchNames.some(term => lowerName.includes(term.toLowerCase()))) {
         return { key, collection };
@@ -132,8 +257,8 @@ export default function PopulateListsPage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           listId: list.id,
-          movies: collection.movies
-        })
+          movies: collection.movies,
+        }),
       });
 
       if (!response.ok) {
@@ -141,14 +266,15 @@ export default function PopulateListsPage() {
       }
 
       const result = await response.json();
-      setPopulateStatus(`✅ Successfully populated "${list.name}" with ${result.addedMovies?.length || 0} movies!`);
+      setPopulateStatus(
+        `✅ Successfully populated "${list.name}" with ${result.addedMovies?.length || 0} movies!`
+      );
 
       // Refresh the lists
       setTimeout(() => {
         fetchExistingLists();
         setPopulateStatus('');
       }, 2000);
-
     } catch (error) {
       console.error('Error populating list:', error);
       setPopulateStatus(`❌ Error: ${error.message}`);
@@ -192,15 +318,11 @@ export default function PopulateListsPage() {
         </div>
 
         {/* Status */}
-        {populateStatus && (
-          <div style={styles.statusBar}>
-            {populateStatus}
-          </div>
-        )}
+        {populateStatus && <div style={styles.statusBar}>{populateStatus}</div>}
 
         {/* Quick Actions */}
         <div style={styles.quickActions}>
-          <button 
+          <button
             style={styles.populateAllButton}
             onClick={populateAllMatchingLists}
             disabled={isPopulating}
@@ -251,7 +373,7 @@ export default function PopulateListsPage() {
                 <div style={styles.listsGrid}>
                   {existingLists
                     .filter(list => list.movieCount === 0)
-                    .map((list) => {
+                    .map(list => {
                       const match = findBestCollectionMatch(list.name);
                       return (
                         <div key={list.id} style={styles.listCard}>
@@ -259,13 +381,13 @@ export default function PopulateListsPage() {
                             <h3 style={styles.listName}>{list.name}</h3>
                             <span style={styles.movieCount}>0 movies</span>
                           </div>
-                          
+
                           {match ? (
                             <div style={styles.matchInfo}>
                               <div style={styles.suggestedCollection}>
                                 📍 Suggested: {match.collection.name}
                               </div>
-                              <button 
+                              <button
                                 style={styles.populateButton}
                                 onClick={() => populateList(list, match.key)}
                                 disabled={isPopulating}
@@ -274,9 +396,7 @@ export default function PopulateListsPage() {
                               </button>
                             </div>
                           ) : (
-                            <div style={styles.noMatch}>
-                              ❓ No matching collection found
-                            </div>
+                            <div style={styles.noMatch}>❓ No matching collection found</div>
                           )}
                         </div>
                       );
@@ -292,7 +412,7 @@ export default function PopulateListsPage() {
                 <div style={styles.populatedListsGrid}>
                   {existingLists
                     .filter(list => list.movieCount > 0)
-                    .map((list) => (
+                    .map(list => (
                       <div key={list.id} style={styles.populatedListCard}>
                         <strong>{list.name}</strong>
                         <div style={styles.listMeta}>

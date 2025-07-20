@@ -9,7 +9,7 @@ export default function TestSearch() {
 
   const testSearch = async () => {
     if (!query.trim()) return;
-    
+
     setLoading(true);
     setError(null);
     setResults(null);
@@ -19,11 +19,11 @@ export default function TestSearch() {
       const response = await fetch('/api/multi-search', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query: query.trim() })
+        body: JSON.stringify({ query: query.trim() }),
       });
 
       console.log('Response status:', response.status);
-      
+
       if (response.ok) {
         const data = await response.json();
         console.log('Response data:', data);
@@ -44,27 +44,25 @@ export default function TestSearch() {
   return (
     <div style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
       <h1>Search API Test</h1>
-      
+
       <div style={{ marginBottom: '20px' }}>
         <input
           type="text"
           value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={e => setQuery(e.target.value)}
           placeholder="Enter search query..."
           style={{ padding: '10px', width: '300px', marginRight: '10px' }}
         />
-        <button 
-          onClick={testSearch}
-          disabled={loading}
-          style={{ padding: '10px 20px' }}
-        >
+        <button onClick={testSearch} disabled={loading} style={{ padding: '10px 20px' }}>
           {loading ? 'Searching...' : 'Test Search'}
         </button>
       </div>
 
       <div>
         <h3>Environment Check:</h3>
-        <p>NEXT_PUBLIC_TMDB_API_KEY: {process.env.NEXT_PUBLIC_TMDB_API_KEY ? '✅ Set' : '❌ Missing'}</p>
+        <p>
+          NEXT_PUBLIC_TMDB_API_KEY: {process.env.NEXT_PUBLIC_TMDB_API_KEY ? '✅ Set' : '❌ Missing'}
+        </p>
         <p>Key value: {process.env.NEXT_PUBLIC_TMDB_API_KEY || 'undefined'}</p>
       </div>
 

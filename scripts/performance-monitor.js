@@ -14,37 +14,37 @@ class PerformanceMonitor {
     this.metrics = {
       apiResponseTimes: [],
       pageLoadTimes: [],
-      errors: []
+      errors: [],
     };
   }
 
   async measureApiResponseTime(endpoint, options = {}) {
     const startTime = Date.now();
-    
+
     try {
       const response = await this.makeRequest(endpoint, options);
       const endTime = Date.now();
       const duration = endTime - startTime;
-      
+
       this.metrics.apiResponseTimes.push({
         endpoint,
         duration,
         status: response.status,
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
       });
-      
+
       return { duration, status: response.status };
     } catch (error) {
       const endTime = Date.now();
       const duration = endTime - startTime;
-      
+
       this.metrics.errors.push({
         endpoint,
         error: error.message,
         duration,
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
       });
-      
+
       throw error;
     }
   }
@@ -53,30 +53,34 @@ class PerformanceMonitor {
     return new Promise((resolve, reject) => {
       const url = `${this.baseUrl}${path}`;
       const client = url.startsWith('https') ? https : http;
-      
-      const req = client.request(url, {
-        method: options.method || 'GET',
-        timeout: 30000,
-        headers: options.headers || {}
-      }, (res) => {
-        let data = '';
-        res.on('data', chunk => data += chunk);
-        res.on('end', () => {
-          resolve({
-            status: res.statusCode,
-            data: data,
-            headers: res.headers
+
+      const req = client.request(
+        url,
+        {
+          method: options.method || 'GET',
+          timeout: 30000,
+          headers: options.headers || {},
+        },
+        res => {
+          let data = '';
+          res.on('data', chunk => (data += chunk));
+          res.on('end', () => {
+            resolve({
+              status: res.statusCode,
+              data: data,
+              headers: res.headers,
+            });
           });
-        });
-      });
+        }
+      );
 
       req.on('error', reject);
       req.on('timeout', () => reject(new Error('Request timeout')));
-      
+
       if (options.body) {
         req.write(JSON.stringify(options.body));
       }
-      
+
       req.end();
     });
   }
@@ -88,7 +92,7 @@ class PerformanceMonitor {
       {
         name: 'Health Check API',
         endpoint: '/api/health',
-        target: 500 // ms
+        target: 500, // ms
       },
       {
         name: 'Movie Lookup API',
@@ -96,59 +100,57 @@ class PerformanceMonitor {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: { title: 'Godfather', year: 1972 },
-        target: 2000 // ms
+        target: 2000, // ms
       },
       {
         name: 'Home Page',
         endpoint: '/',
-        target: 1000 // ms
+        target: 1000, // ms
       },
       {
         name: 'Recs Page',
         endpoint: '/recs',
-        target: 1500 // ms
+        target: 1500, // ms
       },
       {
         name: 'Movie Page (Cached)',
         endpoint: '/movie/238',
-        target: 800 // ms
+        target: 800, // ms
       },
       {
         name: 'Movie Page (Different)',
         endpoint: '/movie/550', // Fight Club
-        target: 800 // ms
-      }
+        target: 800, // ms
+      },
     ];
 
     const results = [];
 
     for (const test of tests) {
       console.log(`Testing ${test.name}...`);
-      
+
       try {
-        const { duration, status } = await this.measureApiResponseTime(
-          test.endpoint,
-          {
-            method: test.method,
-            headers: test.headers,
-            body: test.body
-          }
-        );
+        const { duration, status } = await this.measureApiResponseTime(test.endpoint, {
+          method: test.method,
+          headers: test.headers,
+          body: test.body,
+        });
 
         const passed = duration <= test.target;
         const statusIcon = passed ? '✅' : '⚠️';
         const statusText = passed ? 'PASS' : 'SLOW';
-        
-        console.log(`${statusIcon} ${test.name}: ${duration}ms (target: ${test.target}ms) - ${statusText}`);
-        
+
+        console.log(
+          `${statusIcon} ${test.name}: ${duration}ms (target: ${test.target}ms) - ${statusText}`
+        );
+
         results.push({
           name: test.name,
           duration,
           target: test.target,
           passed,
-          status
+          status,
         });
-        
       } catch (error) {
         console.log(`❌ ${test.name}: ERROR - ${error.message}`);
         results.push({
@@ -156,7 +158,7 @@ class PerformanceMonitor {
           duration: null,
           target: test.target,
           passed: false,
-          error: error.message
+          error: error.message,
         });
       }
     }
@@ -166,7 +168,7 @@ class PerformanceMonitor {
 
   async runCacheEfficiencyTest() {
     console.log('\n🔄 Testing cache efficiency...');
-    
+
     const testMovie = '/movie/238'; // The Godfather
     const iterations = 3;
     const times = [];
@@ -175,14 +177,14 @@ class PerformanceMonitor {
       console.log(`Cache test ${i + 1}/${iterations}...`);
       const { duration } = await this.measureApiResponseTime(testMovie);
       times.push(duration);
-      
+
       // Wait a bit between requests
       await new Promise(resolve => setTimeout(resolve, 1000));
     }
 
     const averageTime = times.reduce((sum, time) => sum + time, 0) / times.length;
     const improvement = times[0] > times[times.length - 1];
-    
+
     console.log(`📊 Cache test results:`);
     console.log(`   First request: ${times[0]}ms`);
     console.log(`   Last request: ${times[times.length - 1]}ms`);
@@ -192,7 +194,7 @@ class PerformanceMonitor {
     return {
       times,
       averageTime,
-      cacheWorking: improvement
+      cacheWorking: improvement,
     };
   }
 
@@ -203,7 +205,7 @@ class PerformanceMonitor {
 
     console.log('\n📈 Performance Report Summary:');
     console.log(`✅ Tests passed: ${passedTests}/${totalTests} (${successRate}%)`);
-    
+
     const slowTests = performanceResults.filter(r => !r.passed && !r.error);
     if (slowTests.length > 0) {
       console.log(`⚠️  Slow endpoints:`);
@@ -222,11 +224,13 @@ class PerformanceMonitor {
 
     console.log(`\n🔄 Cache Performance:`);
     console.log(`   Average response time: ${Math.round(cacheResults.averageTime)}ms`);
-    console.log(`   Cache efficiency: ${cacheResults.cacheWorking ? 'Working' : 'Needs investigation'}`);
+    console.log(
+      `   Cache efficiency: ${cacheResults.cacheWorking ? 'Working' : 'Needs investigation'}`
+    );
 
     // Performance threshold check
-    const criticalIssues = performanceResults.filter(r => 
-      r.duration > (r.target * 2) || r.error
+    const criticalIssues = performanceResults.filter(
+      r => r.duration > r.target * 2 || r.error
     ).length;
 
     if (criticalIssues > 0) {
@@ -242,11 +246,10 @@ class PerformanceMonitor {
     try {
       const performanceResults = await this.runPerformanceTests();
       const cacheResults = await this.runCacheEfficiencyTest();
-      
+
       const success = this.generateReport(performanceResults, cacheResults);
-      
+
       process.exit(success ? 0 : 1);
-      
     } catch (error) {
       console.error('\n❌ Performance monitoring failed:', error);
       process.exit(1);

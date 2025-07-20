@@ -14,7 +14,7 @@ export default function TestMovieHeaders() {
       year: 1999,
       posterUrl: 'https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg',
       voteAverage: 8.4,
-      streamingInfo: 'Available on Netflix, Hulu'
+      streamingInfo: 'Available on Netflix, Hulu',
     },
     {
       tmdbId: 238,
@@ -22,7 +22,7 @@ export default function TestMovieHeaders() {
       year: 1972,
       posterUrl: 'https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg',
       voteAverage: 9.2,
-      streamingInfo: 'Streaming on Paramount+'
+      streamingInfo: 'Streaming on Paramount+',
     },
     {
       tmdbId: 155,
@@ -30,7 +30,7 @@ export default function TestMovieHeaders() {
       year: 2008,
       posterUrl: 'https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg',
       voteAverage: 9.0,
-      streamingInfo: 'Rent on Prime Video'
+      streamingInfo: 'Rent on Prime Video',
     },
     {
       tmdbId: 13,
@@ -38,7 +38,7 @@ export default function TestMovieHeaders() {
       year: 1994,
       posterUrl: 'https://image.tmdb.org/t/p/w500/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg',
       voteAverage: 8.8,
-      streamingInfo: 'Available on Netflix'
+      streamingInfo: 'Available on Netflix',
     },
     {
       tmdbId: 680,
@@ -46,7 +46,7 @@ export default function TestMovieHeaders() {
       year: 1994,
       posterUrl: 'https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg',
       voteAverage: 8.9,
-      streamingInfo: 'Streaming on Prime Video'
+      streamingInfo: 'Streaming on Prime Video',
     },
     {
       tmdbId: 27205,
@@ -54,11 +54,11 @@ export default function TestMovieHeaders() {
       year: 2010,
       posterUrl: 'https://image.tmdb.org/t/p/w500/ljsZTbVsrQSqZgWeep2B1QiDKuh.jpg',
       voteAverage: 8.8,
-      streamingInfo: 'Available on HBO Max'
-    }
+      streamingInfo: 'Available on HBO Max',
+    },
   ];
 
-  const handleMovieClick = (movie) => {
+  const handleMovieClick = movie => {
     setSelectedMovie(movie);
     console.log('Movie clicked:', movie.title);
     // In real app, would navigate to /movie/${movie.tmdbId}
@@ -67,7 +67,6 @@ export default function TestMovieHeaders() {
   return (
     <PhoneFrame>
       <div style={styles.container}>
-        
         {/* Header */}
         <div style={styles.header}>
           <h1 style={styles.title}>Movie Header Test</h1>
@@ -79,7 +78,8 @@ export default function TestMovieHeaders() {
           <div style={styles.selectedSection}>
             <h2 style={styles.selectedTitle}>Selected Movie:</h2>
             <div style={styles.selectedInfo}>
-              <strong>{selectedMovie.title}</strong> ({selectedMovie.year}) - Rating: {selectedMovie.voteAverage}
+              <strong>{selectedMovie.title}</strong> ({selectedMovie.year}) - Rating:{' '}
+              {selectedMovie.voteAverage}
             </div>
           </div>
         )}
@@ -87,7 +87,7 @@ export default function TestMovieHeaders() {
         {/* Movie Grid */}
         <div style={styles.content}>
           <div style={styles.movieGrid}>
-            {sampleMovies.map((movie) => (
+            {sampleMovies.map(movie => (
               <MovieHeaderCompact
                 key={movie.tmdbId}
                 title={movie.title}
@@ -113,7 +113,6 @@ export default function TestMovieHeaders() {
             <li>Progress is saved to localStorage via FavoritesManager</li>
           </ul>
         </div>
-
       </div>
     </PhoneFrame>
   );
@@ -124,7 +123,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     height: '100%',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     backgroundColor: '#f9fafb',
   },
   header: {

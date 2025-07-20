@@ -9,7 +9,7 @@ export const FavoritesManager = {
     hearted: null,
     bookmarked: null,
     peopleHearted: null,
-    peopleBookmarked: null
+    peopleBookmarked: null,
   },
 
   // In-memory cache for current state
@@ -17,7 +17,7 @@ export const FavoritesManager = {
     hearted: null,
     bookmarked: null,
     peopleHearted: null,
-    peopleBookmarked: null
+    peopleBookmarked: null,
   },
 
   // Debounced save to localStorage
@@ -26,7 +26,7 @@ export const FavoritesManager = {
     if (FavoritesManager._saveTimeouts[type]) {
       clearTimeout(FavoritesManager._saveTimeouts[type]);
     }
-    
+
     // Set new timeout
     FavoritesManager._saveTimeouts[type] = setTimeout(() => {
       try {
@@ -44,13 +44,13 @@ export const FavoritesManager = {
           key = 'bookmarkedPeople';
           eventName = 'peopleUpdated';
         }
-        
+
         localStorage.setItem(key, JSON.stringify(data));
         console.log(`Debounced save completed for ${type}:`, data.length);
-        
+
         // Dispatch update event
         window.dispatchEvent(new CustomEvent(eventName));
-        
+
         FavoritesManager._saveTimeouts[type] = null;
       } catch (error) {
         console.error(`Error in debounced save for ${type}:`, error);
@@ -90,37 +90,38 @@ export const FavoritesManager = {
   },
 
   // Check if a movie is hearted
-  isMovieHearted: (movieId) => {
+  isMovieHearted: movieId => {
     const hearted = FavoritesManager.getHeartedMovies();
     return hearted.some(movie => movie.id === movieId);
   },
 
   // Check if a movie is bookmarked
-  isMovieBookmarked: (movieId) => {
+  isMovieBookmarked: movieId => {
     const bookmarked = FavoritesManager.getBookmarkedMovies();
     return bookmarked.some(movie => movie.id === movieId);
   },
 
   // Add/remove heart for a movie
-  toggleHeart: (movie) => {
+  toggleHeart: movie => {
     try {
       console.log('toggleHeart called with movie:', movie);
-      
+
       if (!movie || !movie.title) {
         console.error('Invalid movie data:', movie);
         return false;
       }
-      
+
       const hearted = FavoritesManager.getHeartedMovies();
-      const movieId = movie.id || `${movie.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${movie.year}`;
+      const movieId =
+        movie.id || `${movie.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${movie.year}`;
       const movieData = { ...movie, id: movieId };
-      
+
       console.log('Generated movieId:', movieId);
       console.log('Current hearted movies:', hearted.length);
-      
+
       const existingIndex = hearted.findIndex(m => m.id === movieId);
       console.log('Existing index:', existingIndex);
-      
+
       if (existingIndex >= 0) {
         // Remove from hearts
         hearted.splice(existingIndex, 1);
@@ -130,14 +131,14 @@ export const FavoritesManager = {
         hearted.push(movieData);
         console.log('Added movie to hearts');
       }
-      
+
       // Update cache immediately for instant UI feedback
       FavoritesManager._cache.hearted = [...hearted];
-      
+
       // Schedule debounced save to localStorage
       FavoritesManager._debouncedSave('hearted', hearted);
       console.log('Scheduled debounced save for hearted movies');
-      
+
       return existingIndex < 0; // Return new state (true if now hearted)
     } catch (error) {
       console.error('Error in toggleHeart:', error);
@@ -146,25 +147,26 @@ export const FavoritesManager = {
   },
 
   // Add/remove bookmark for a movie
-  toggleBookmark: (movie) => {
+  toggleBookmark: movie => {
     try {
       console.log('toggleBookmark called with movie:', movie);
-      
+
       if (!movie || !movie.title) {
         console.error('Invalid movie data:', movie);
         return false;
       }
-      
+
       const bookmarked = FavoritesManager.getBookmarkedMovies();
-      const movieId = movie.id || `${movie.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${movie.year}`;
+      const movieId =
+        movie.id || `${movie.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${movie.year}`;
       const movieData = { ...movie, id: movieId };
-      
+
       console.log('Generated movieId:', movieId);
       console.log('Current bookmarked movies:', bookmarked.length);
-      
+
       const existingIndex = bookmarked.findIndex(m => m.id === movieId);
       console.log('Existing index:', existingIndex);
-      
+
       if (existingIndex >= 0) {
         // Remove from bookmarks
         bookmarked.splice(existingIndex, 1);
@@ -174,14 +176,14 @@ export const FavoritesManager = {
         bookmarked.push(movieData);
         console.log('Added movie to bookmarks');
       }
-      
+
       // Update cache immediately for instant UI feedback
       FavoritesManager._cache.bookmarked = [...bookmarked];
-      
+
       // Schedule debounced save to localStorage
       FavoritesManager._debouncedSave('bookmarked', bookmarked);
       console.log('Scheduled debounced save for bookmarked movies');
-      
+
       return existingIndex < 0; // Return new state (true if now bookmarked)
     } catch (error) {
       console.error('Error in toggleBookmark:', error);
@@ -252,37 +254,39 @@ export const FavoritesManager = {
   },
 
   // Check if a person is hearted
-  isPersonHearted: (personId) => {
+  isPersonHearted: personId => {
     const hearted = FavoritesManager.getHeartedPeople();
     return hearted.some(person => person.id === personId);
   },
 
   // Check if a person is bookmarked
-  isPersonBookmarked: (personId) => {
+  isPersonBookmarked: personId => {
     const bookmarked = FavoritesManager.getBookmarkedPeople();
     return bookmarked.some(person => person.id === personId);
   },
 
   // Add/remove heart for a person
-  togglePersonHeart: (person) => {
+  togglePersonHeart: person => {
     try {
       console.log('togglePersonHeart called with person:', person);
-      
+
       if (!person || !person.name) {
         console.error('Invalid person data:', person);
         return false;
       }
-      
+
       const hearted = FavoritesManager.getHeartedPeople();
-      const personId = person.id || `${person.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${person.birthYear || 'unknown'}`;
+      const personId =
+        person.id ||
+        `${person.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${person.birthYear || 'unknown'}`;
       const personData = { ...person, id: personId };
-      
+
       console.log('Generated personId:', personId);
       console.log('Current hearted people:', hearted.length);
-      
+
       const existingIndex = hearted.findIndex(p => p.id === personId);
       console.log('Existing index:', existingIndex);
-      
+
       if (existingIndex >= 0) {
         // Remove from hearts
         hearted.splice(existingIndex, 1);
@@ -292,14 +296,14 @@ export const FavoritesManager = {
         hearted.push(personData);
         console.log('Added person to hearts');
       }
-      
+
       // Update cache immediately for instant UI feedback
       FavoritesManager._cache.peopleHearted = [...hearted];
-      
+
       // Schedule debounced save to localStorage
       FavoritesManager._debouncedSave('peopleHearted', hearted);
       console.log('Scheduled debounced save for hearted people');
-      
+
       return existingIndex < 0; // Return new state (true if now hearted)
     } catch (error) {
       console.error('Error in togglePersonHeart:', error);
@@ -308,25 +312,27 @@ export const FavoritesManager = {
   },
 
   // Add/remove bookmark for a person
-  togglePersonBookmark: (person) => {
+  togglePersonBookmark: person => {
     try {
       console.log('togglePersonBookmark called with person:', person);
-      
+
       if (!person || !person.name) {
         console.error('Invalid person data:', person);
         return false;
       }
-      
+
       const bookmarked = FavoritesManager.getBookmarkedPeople();
-      const personId = person.id || `${person.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${person.birthYear || 'unknown'}`;
+      const personId =
+        person.id ||
+        `${person.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${person.birthYear || 'unknown'}`;
       const personData = { ...person, id: personId };
-      
+
       console.log('Generated personId:', personId);
       console.log('Current bookmarked people:', bookmarked.length);
-      
+
       const existingIndex = bookmarked.findIndex(p => p.id === personId);
       console.log('Existing index:', existingIndex);
-      
+
       if (existingIndex >= 0) {
         // Remove from bookmarks
         bookmarked.splice(existingIndex, 1);
@@ -336,14 +342,14 @@ export const FavoritesManager = {
         bookmarked.push(personData);
         console.log('Added person to bookmarks');
       }
-      
+
       // Update cache immediately for instant UI feedback
       FavoritesManager._cache.peopleBookmarked = [...bookmarked];
-      
+
       // Schedule debounced save to localStorage
       FavoritesManager._debouncedSave('peopleBookmarked', bookmarked);
       console.log('Scheduled debounced save for bookmarked people');
-      
+
       return existingIndex < 0; // Return new state (true if now bookmarked)
     } catch (error) {
       console.error('Error in togglePersonBookmark:', error);
@@ -363,7 +369,7 @@ export const FavoritesManager = {
     localStorage.removeItem('bookmarkedPeople');
     FavoritesManager._cache.peopleBookmarked = [];
     window.dispatchEvent(new CustomEvent('peopleUpdated'));
-  }
+  },
 };
 
 export default FavoritesManager;

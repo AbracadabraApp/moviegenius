@@ -44,7 +44,7 @@ repos:
         entry: bash -c 'if grep -r "sk-ant-api\|ANTHROPIC_API_KEY.*=" --include="*.js" --include="*.json" --exclude=".env*" .; then echo "❌ API keys found in code!"; exit 1; fi'
         language: system
         pass_filenames: false
-      
+
       # Ensure build passes
       - id: build-check
         name: Verify build passes
@@ -52,7 +52,7 @@ repos:
         language: system
         pass_filenames: false
         stages: [pre-push]
-      
+
       # Check for console.log
       - id: no-console-log
         name: Check for console.log

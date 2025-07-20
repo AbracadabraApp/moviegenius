@@ -2,7 +2,7 @@
 
 /**
  * Predictive Cache Warming Script
- * 
+ *
  * Pre-generates responses for common film questions to enable instant responses.
  * Run this script during deployment or low-traffic periods.
  */
@@ -14,17 +14,19 @@ async function main() {
   console.log('This will pre-generate responses for common film questions.\n');
 
   const manager = getPredictiveCacheManager();
-  
+
   try {
     // Start warming process
     await startPredictiveCacheWarming();
-    
+
     // Monitor progress
     const checkProgress = setInterval(() => {
       const status = manager.getWarmingStatus();
-      
+
       if (status.isWarming) {
-        console.log(`⏳ Progress: ${status.progress.toFixed(1)}% (${status.commonQuestionsCached} total questions)`);
+        console.log(
+          `⏳ Progress: ${status.progress.toFixed(1)}% (${status.commonQuestionsCached} total questions)`
+        );
       } else {
         console.log('✅ Predictive cache warming completed!');
         console.log('🚀 Common questions will now have instant responses.');
@@ -34,12 +36,14 @@ async function main() {
     }, 2000);
 
     // Timeout after 10 minutes
-    setTimeout(() => {
-      console.log('⏰ Warming process timed out after 10 minutes');
-      clearInterval(checkProgress);
-      process.exit(1);
-    }, 10 * 60 * 1000);
-
+    setTimeout(
+      () => {
+        console.log('⏰ Warming process timed out after 10 minutes');
+        clearInterval(checkProgress);
+        process.exit(1);
+      },
+      10 * 60 * 1000
+    );
   } catch (error) {
     console.error('❌ Cache warming failed:', error);
     process.exit(1);

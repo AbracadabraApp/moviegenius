@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Nuclear Static Validation Script
- * 
+ *
  * Validates existing nuclear static files for:
  * - No search-based links
  * - No unprocessed movie mentions
@@ -30,31 +30,30 @@ function validateNuclearFile(filename) {
     const filePath = path.join(NUCLEAR_DIR, filename);
     const content = fs.readFileSync(filePath, 'utf8');
     const data = JSON.parse(content);
-    
+
     if (!data.props || !data.props.title) {
       return {
         filename,
         valid: false,
-        issues: ['Invalid file structure: missing props.title']
+        issues: ['Invalid file structure: missing props.title'],
       };
     }
-    
+
     const validation = validateStaticData(data, data.props.title);
-    
+
     return {
       filename,
       tmdbId: data.props.tmdbId,
       title: data.props.title,
       year: data.props.year,
       valid: validation.valid,
-      issues: validation.issues
+      issues: validation.issues,
     };
-    
   } catch (error) {
     return {
       filename,
       valid: false,
-      issues: [`Parse error: ${error.message}`]
+      issues: [`Parse error: ${error.message}`],
     };
   }
 }
@@ -67,8 +66,9 @@ function getNuclearFiles() {
     console.error(`❌ Nuclear static directory not found: ${NUCLEAR_DIR}`);
     process.exit(1);
   }
-  
-  return fs.readdirSync(NUCLEAR_DIR)
+
+  return fs
+    .readdirSync(NUCLEAR_DIR)
     .filter(file => file.endsWith('.json'))
     .sort((a, b) => parseInt(a) - parseInt(b));
 }
@@ -79,23 +79,23 @@ function getNuclearFiles() {
 async function validateAllNuclearFiles() {
   console.log('🔍 Nuclear Static File Validation');
   console.log('==================================\n');
-  
+
   const files = getNuclearFiles();
   console.log(`📁 Found ${files.length} nuclear static files\n`);
-  
+
   const results = [];
   let validCount = 0;
   let invalidCount = 0;
-  
+
   // Process files in batches to avoid memory issues
   const batchSize = 50;
   for (let i = 0; i < files.length; i += batchSize) {
     const batch = files.slice(i, i + batchSize);
-    
+
     for (const filename of batch) {
       const result = validateNuclearFile(filename);
       results.push(result);
-      
+
       if (result.valid) {
         validCount++;
         console.log(`✅ ${result.title} (${result.year}) - ${filename}`);
@@ -107,11 +107,11 @@ async function validateAllNuclearFiles() {
         });
       }
     }
-    
+
     // Progress update
     console.log(`\n📊 Processed ${Math.min(i + batchSize, files.length)}/${files.length} files\n`);
   }
-  
+
   // Summary report
   console.log('\n📋 VALIDATION SUMMARY');
   console.log('=====================');
@@ -119,27 +119,29 @@ async function validateAllNuclearFiles() {
   console.log(`❌ Invalid files: ${invalidCount}`);
   console.log(`📁 Total files: ${files.length}`);
   console.log(`📈 Success rate: ${((validCount / files.length) * 100).toFixed(1)}%`);
-  
+
   // Detailed issue breakdown
   if (invalidCount > 0) {
     console.log('\n🔍 ISSUE BREAKDOWN');
     console.log('==================');
-    
+
     const issueTypes = {};
-    results.filter(r => !r.valid).forEach(result => {
-      result.issues.forEach(issue => {
-        const issueType = issue.split(':')[0];
-        issueTypes[issueType] = (issueTypes[issueType] || 0) + 1;
+    results
+      .filter(r => !r.valid)
+      .forEach(result => {
+        result.issues.forEach(issue => {
+          const issueType = issue.split(':')[0];
+          issueTypes[issueType] = (issueTypes[issueType] || 0) + 1;
+        });
       });
-    });
-    
+
     Object.entries(issueTypes)
-      .sort(([,a], [,b]) => b - a)
+      .sort(([, a], [, b]) => b - a)
       .forEach(([issueType, count]) => {
         console.log(`📌 ${issueType}: ${count} occurrences`);
       });
   }
-  
+
   // Sample of problematic files
   const problematicFiles = results.filter(r => !r.valid).slice(0, 5);
   if (problematicFiles.length > 0) {
@@ -155,12 +157,12 @@ async function validateAllNuclearFiles() {
       }
     });
   }
-  
+
   return {
     total: files.length,
     valid: validCount,
     invalid: invalidCount,
-    successRate: (validCount / files.length) * 100
+    successRate: (validCount / files.length) * 100,
   };
 }
 

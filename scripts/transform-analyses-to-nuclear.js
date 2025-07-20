@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 /**
  * Transform Existing Analyses to Nuclear Format
- * 
+ *
  * Converts entity extraction analyses to nuclear format with:
  * - sections (text content broken into readable chunks)
  * - exploreFurther (topic prompts for exploration)
  * - moreIdeas (related movies)
- * 
+ *
  * Cost: $0 (transformation only, no new Claude calls)
  */
 
@@ -46,7 +46,7 @@ class AnalysisTransformer {
       exploreFurther,
       moreIdeas,
       transformedAt: new Date().toISOString(),
-      source: 'entity_analysis_transformation'
+      source: 'entity_analysis_transformation',
     };
   }
 
@@ -71,7 +71,7 @@ class AnalysisTransformer {
       if (paragraph.length > 100) {
         sections.push({
           type: 'text',
-          content: paragraph
+          content: paragraph,
         });
       }
     });
@@ -80,7 +80,7 @@ class AnalysisTransformer {
     if (sections.length === 0 && rawContent.length > 100) {
       sections.push({
         type: 'text',
-        content: rawContent.replace(/^PARAGRAPH:\s*/, '').trim()
+        content: rawContent.replace(/^PARAGRAPH:\s*/, '').trim(),
       });
     }
 
@@ -100,29 +100,26 @@ class AnalysisTransformer {
     if (content.includes('director') || content.includes('directed')) {
       topics.push(`${movieTitle} director's filmography and style`);
     }
-    
+
     if (content.includes('cinematography') || content.includes('visual')) {
       topics.push(`Visual techniques and cinematography in ${movieTitle}`);
     }
-    
+
     if (content.includes('score') || content.includes('music') || content.includes('soundtrack')) {
       topics.push(`${movieTitle} soundtrack and musical themes`);
     }
-    
+
     if (content.includes('influence') || content.includes('impact')) {
       topics.push(`${movieTitle}'s cultural impact and legacy`);
     }
-    
+
     if (content.includes('performance') || content.includes('acting')) {
       topics.push(`Key performances and acting in ${movieTitle}`);
     }
 
     // Default topics if no specific ones found
     if (topics.length === 0) {
-      topics.push(
-        `Behind the scenes of ${movieTitle}`,
-        `${movieTitle} cultural significance`
-      );
+      topics.push(`Behind the scenes of ${movieTitle}`, `${movieTitle} cultural significance`);
     }
 
     return topics.slice(0, 4); // Limit to 4 topics
@@ -135,8 +132,8 @@ class AnalysisTransformer {
     // For now, return empty - this would require actual movie recommendations
     // In a real implementation, we could use the content to suggest related films
     return {
-      title: "Related Films",
-      movies: [] // Would be populated with actual movie recommendations
+      title: 'Related Films',
+      movies: [], // Would be populated with actual movie recommendations
     };
   }
 
@@ -145,13 +142,15 @@ class AnalysisTransformer {
    */
   async getAnalysesToTransform(limit = 6000) {
     console.log(`🔍 Finding analyses to transform (limit: ${limit})...`);
-    
+
     const { data: analyses, error } = await supabase
       .from('movie_analyses')
-      .select(`
+      .select(
+        `
         id, movie_id, claude_response,
         movies!inner(title, year, tmdb_id)
-      `)
+      `
+      )
       .eq('analysis_type', 'page_analysis')
       .not('movies.tmdb_id', 'is', null)
       .order('created_at', { ascending: true })
@@ -162,21 +161,22 @@ class AnalysisTransformer {
     }
 
     // Filter to only those that need transformation
-    const needsTransformation = analyses?.filter(analysis => {
-      const response = analysis.claude_response;
-      
-      // Check if already in nuclear format
-      if (response.sections || response.exploreFurther || response.moreIdeas) {
-        return false;
-      }
-      
-      // Check if has raw content to transform
-      if (!response.raw_content || typeof response.raw_content !== 'string') {
-        return false;
-      }
-      
-      return true;
-    }) || [];
+    const needsTransformation =
+      analyses?.filter(analysis => {
+        const response = analysis.claude_response;
+
+        // Check if already in nuclear format
+        if (response.sections || response.exploreFurther || response.moreIdeas) {
+          return false;
+        }
+
+        // Check if has raw content to transform
+        if (!response.raw_content || typeof response.raw_content !== 'string') {
+          return false;
+        }
+
+        return true;
+      }) || [];
 
     console.log(`✅ Found ${needsTransformation.length} analyses ready for transformation`);
     return needsTransformation;
@@ -190,7 +190,7 @@ class AnalysisTransformer {
       const { error } = await supabase
         .from('movie_analyses')
         .update({
-          claude_response: nuclearData
+          claude_response: nuclearData,
         })
         .eq('id', analysisId);
 
@@ -210,32 +210,32 @@ class AnalysisTransformer {
    */
   async processBatch(analyses) {
     console.log(`\n🔄 Processing batch of ${analyses.length} analyses...`);
-    
+
     for (const analysis of analyses) {
       try {
         this.processedCount++;
         const movie = analysis.movies;
         const currentResponse = analysis.claude_response;
-        
+
         console.log(`[${this.processedCount}] ${movie.title} (${movie.year})`);
-        
+
         // Transform to nuclear format
         const nuclearFormat = await this.transformAnalysis(
           currentResponse.raw_content,
           movie.title,
           movie.year
         );
-        
+
         // Merge with existing data to preserve metadata
         const updatedResponse = {
           ...currentResponse,
           ...nuclearFormat,
-          transformation_completed: true
+          transformation_completed: true,
         };
-        
+
         // Update in database
         const success = await this.updateAnalysisFormat(analysis.id, updatedResponse);
-        
+
         if (success) {
           console.log(`   ✅ Transformed to nuclear format`);
           this.transformedCount++;
@@ -243,7 +243,6 @@ class AnalysisTransformer {
           console.log(`   ❌ Failed to save transformation`);
           this.errorCount++;
         }
-        
       } catch (error) {
         console.error(`   💥 Error transforming analysis:`, error.message);
         this.errorCount++;
@@ -256,11 +255,11 @@ class AnalysisTransformer {
    */
   async transformAnalyses(maxCount = 6000) {
     console.log('🚀 Starting analysis transformation to nuclear format...\n');
-    
+
     try {
       // Get analyses to transform
       const analyses = await this.getAnalysesToTransform(maxCount);
-      
+
       if (analyses.length === 0) {
         console.log('✅ No analyses need transformation - all ready!');
         return {
@@ -268,49 +267,50 @@ class AnalysisTransformer {
           processed: 0,
           transformed: 0,
           errors: 0,
-          message: 'All analyses already in nuclear format'
+          message: 'All analyses already in nuclear format',
         };
       }
-      
+
       // Process in batches
       const batches = [];
       for (let i = 0; i < analyses.length; i += this.batchSize) {
         batches.push(analyses.slice(i, i + this.batchSize));
       }
-      
+
       console.log(`📊 Processing ${analyses.length} analyses in ${batches.length} batches...\n`);
-      
+
       for (let i = 0; i < batches.length; i++) {
         console.log(`\n📦 BATCH ${i + 1}/${batches.length}`);
         await this.processBatch(batches[i]);
-        
+
         // Small delay between batches
         if (i < batches.length - 1) {
           await new Promise(resolve => setTimeout(resolve, 1000));
         }
       }
-      
+
       console.log('\n📊 TRANSFORMATION COMPLETE:');
       console.log(`   🔄 Processed: ${this.processedCount}`);
       console.log(`   ✅ Transformed: ${this.transformedCount}`);
       console.log(`   ❌ Errors: ${this.errorCount}`);
-      console.log(`   📈 Success rate: ${((this.transformedCount / this.processedCount) * 100).toFixed(1)}%`);
+      console.log(
+        `   📈 Success rate: ${((this.transformedCount / this.processedCount) * 100).toFixed(1)}%`
+      );
       console.log(`   💰 Cost: $0.00 (transformation only)`);
-      
+
       return {
         success: true,
         processed: this.processedCount,
         transformed: this.transformedCount,
         errors: this.errorCount,
         success_rate: ((this.transformedCount / this.processedCount) * 100).toFixed(1),
-        cost: 0
+        cost: 0,
       };
-      
     } catch (error) {
       console.error('❌ Transformation failed:', error);
       return {
         success: false,
-        error: error.message
+        error: error.message,
       };
     }
   }
@@ -319,7 +319,8 @@ class AnalysisTransformer {
 // Run if called directly
 if (require.main === module) {
   const transformer = new AnalysisTransformer();
-  transformer.transformAnalyses(6000)
+  transformer
+    .transformAnalyses(6000)
     .then(result => {
       if (result.success) {
         console.log('\n🎉 Analysis transformation completed successfully!');

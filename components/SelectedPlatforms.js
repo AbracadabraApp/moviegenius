@@ -3,9 +3,11 @@ export default function SelectedPlatforms({ platforms = [] }) {
     return (
       <div style={styles.emptyState}>
         <h2 style={styles.header}>Your Streaming Platforms</h2>
-        <p style={styles.emptyText}>No platforms selected yet. Visit the home page to select your streaming services.</p>
+        <p style={styles.emptyText}>
+          No platforms selected yet. Visit the home page to select your streaming services.
+        </p>
       </div>
-    )
+    );
   }
 
   return (
@@ -19,7 +21,7 @@ export default function SelectedPlatforms({ platforms = [] }) {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
 const styles = {
@@ -54,4 +56,4 @@ const styles = {
     fontStyle: 'italic',
     margin: 0,
   },
-}
+};

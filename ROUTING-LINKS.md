@@ -5,17 +5,23 @@
 
 ## 🎯 Executive Summary
 
-This document provides comprehensive guidance for implementing and maintaining navigation in the MovieGenius Next.js application. The navigation system has been rebuilt following expert code reviews to eliminate hydration mismatches and restore proper Next.js client-side routing.
+This document provides comprehensive guidance for implementing and maintaining
+navigation in the MovieGenius Next.js application. The navigation system has
+been rebuilt following expert code reviews to eliminate hydration mismatches and
+restore proper Next.js client-side routing.
 
 ## 🚨 Critical Navigation Fixes Applied
 
 ### The Problem (Before Expert Review)
+
 - **Hydration Mismatches**: Server and client rendered different content
 - **Broken Link Components**: URL changes but page content didn't update
-- **Workaround Pattern**: `e.preventDefault()` + `router.push()` overrode Next.js routing
+- **Workaround Pattern**: `e.preventDefault()` + `router.push()` overrode
+  Next.js routing
 - **Performance Issues**: Prefetching disabled, accessibility broken
 
 ### The Solution (Expert-Reviewed)
+
 - **Proper Link Usage**: `passHref` + `legacyBehavior` + `<a>` wrapper
 - **Hydration Fix**: Move active state to `useState` + `useEffect`
 - **Remove Workarounds**: Let Next.js handle navigation natively
@@ -34,7 +40,7 @@ This document provides comprehensive guidance for implementing and maintaining n
 </Link>
 
 // CORRECT: With route helpers
-<Link 
+<Link
   href={routeHelpers.getEpisodeRoute(theme, episodeId)}
   passHref
   legacyBehavior
@@ -49,7 +55,7 @@ This document provides comprehensive guidance for implementing and maintaining n
 
 ```javascript
 // WRONG: onClick workaround (removed from codebase)
-<Link 
+<Link
   href="/themes/film-noir"
   onClick={(e) => {
     e.preventDefault();
@@ -84,15 +90,13 @@ export default function NavBar() {
     // Client-side active state calculation
     if (router.isReady) {
       try {
-        const active = navItems.find(
-          (item) => {
-            if (item.route === router.pathname) return true;
-            if (item.route === '/genius') {
-              return routeValidation.shouldShowGeniusActive(router.pathname);
-            }
-            return false;
+        const active = navItems.find(item => {
+          if (item.route === router.pathname) return true;
+          if (item.route === '/genius') {
+            return routeValidation.shouldShowGeniusActive(router.pathname);
           }
-        )?.label;
+          return false;
+        })?.label;
         setActiveLabel(active);
       } catch (error) {
         console.warn('NavBar: Error determining active state:', error);
@@ -103,18 +107,16 @@ export default function NavBar() {
 
   return (
     <nav>
-      {navItems.map((item) => (
-        <Link
-          key={item.label}
-          href={item.route}
-          passHref
-          legacyBehavior
-        >
-          <a style={{textDecoration: 'none'}}>
-            <div style={{
-              opacity: activeLabel === item.label ? 1 : 0.6,
-              transform: activeLabel === item.label ? 'translateY(-2px)' : 'none',
-            }}>
+      {navItems.map(item => (
+        <Link key={item.label} href={item.route} passHref legacyBehavior>
+          <a style={{ textDecoration: 'none' }}>
+            <div
+              style={{
+                opacity: activeLabel === item.label ? 1 : 0.6,
+                transform:
+                  activeLabel === item.label ? 'translateY(-2px)' : 'none',
+              }}
+            >
               <Icon size={28} />
               <span>{item.label}</span>
             </div>
@@ -135,14 +137,14 @@ export default function EssentialMovies({ theme }) {
 
   return (
     <div>
-      {themeEpisodes.map((episode) => (
-        <Link 
-          key={episode.id} 
+      {themeEpisodes.map(episode => (
+        <Link
+          key={episode.id}
           href={routeHelpers.getEpisodeRoute(theme, episode.id)}
           passHref
           legacyBehavior
         >
-          <a style={{textDecoration: 'none'}}>
+          <a style={{ textDecoration: 'none' }}>
             <div style={styles.episodeButton}>
               <div>{episode.title}</div>
             </div>
@@ -165,17 +167,12 @@ export default function ThemeFooter() {
   return (
     <div>
       {themeLinks.map((theme, index) => (
-        <Link 
-          key={theme.href}
-          href={theme.href}
-          passHref
-          legacyBehavior
-        >
+        <Link key={theme.href} href={theme.href} passHref legacyBehavior>
           <a style={{ textDecoration: 'none' }}>
             <div
               style={{
                 ...styles.themeButton,
-                ...(hoveredIndex === index ? styles.themeButtonHover : {})
+                ...(hoveredIndex === index ? styles.themeButtonHover : {}),
               }}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
@@ -198,7 +195,11 @@ All routes are managed through `/lib/routes.js`:
 // Theme Links (10 themes)
 export const themeLinks = [
   { href: '/themes/film-noir', label: 'Film Noir', slug: 'film-noir' },
-  { href: '/themes/horror-suspense', label: 'Horror & Suspense', slug: 'horror-suspense' },
+  {
+    href: '/themes/horror-suspense',
+    label: 'Horror & Suspense',
+    slug: 'horror-suspense',
+  },
   // ... 8 more themes
 ];
 
@@ -207,19 +208,24 @@ export const staticRoutes = {
   home: '/',
   movies: '/movies',
   genius: '/genius',
-  you: '/you'
+  you: '/you',
 };
 
 // Navigation Items for NavBar
 export const navItems = [
   { label: 'Movies', icon: 'Clapperboard', route: staticRoutes.movies },
   { label: 'Genius', icon: 'Sparkles', route: staticRoutes.genius },
-  { label: 'You', icon: 'User', route: staticRoutes.you }
+  { label: 'You', icon: 'User', route: staticRoutes.you },
 ];
 
 // Episode Routes (126+ pre-defined)
 export const episodes = [
-  { theme: 'film-noir', id: 'german-expressionism', title: 'German Expressionism', slug: '/film-noir/german-expressionism' },
+  {
+    theme: 'film-noir',
+    id: 'german-expressionism',
+    title: 'German Expressionism',
+    slug: '/film-noir/german-expressionism',
+  },
   // ... complete episode mapping
 ];
 
@@ -227,15 +233,17 @@ export const episodes = [
 export const routeHelpers = {
   getEpisodeRoute: (theme, episodeId) => {
     try {
-      const episode = episodes.find(ep => ep.theme === theme && ep.id === episodeId);
+      const episode = episodes.find(
+        ep => ep.theme === theme && ep.id === episodeId
+      );
       return episode ? episode.slug : staticRoutes.home;
     } catch (error) {
       console.error('getEpisodeRoute error:', error);
       return staticRoutes.home;
     }
   },
-  
-  getThemeRoute: (slug) => {
+
+  getThemeRoute: slug => {
     try {
       const theme = themeLinks.find(t => t.slug === slug);
       return theme ? theme.href : staticRoutes.home;
@@ -244,8 +252,8 @@ export const routeHelpers = {
       return staticRoutes.home;
     }
   },
-  
-  getMovieRoute: (tmdbId) => {
+
+  getMovieRoute: tmdbId => {
     try {
       const id = String(tmdbId);
       if (!/^\d+$/.test(id)) return staticRoutes.home;
@@ -254,31 +262,31 @@ export const routeHelpers = {
       console.error('getMovieRoute error:', error);
       return staticRoutes.home;
     }
-  }
+  },
 };
 
 // Active State Detection
 export const routeValidation = {
-  shouldShowGeniusActive: (pathname) => {
+  shouldShowGeniusActive: pathname => {
     try {
       // Theme pages show Genius as active
       if (routeHelpers.isThemeRoute(pathname)) {
         const themeSlug = routeHelpers.getThemeFromRoute(pathname);
         return routeValidation.isValidTheme(themeSlug);
       }
-      
+
       // Episode pages show Genius as active
       if (routeHelpers.isEpisodeRoute(pathname)) {
         return true;
       }
-      
+
       // Genius page itself
       return pathname === staticRoutes.genius;
     } catch (error) {
       console.error('shouldShowGeniusActive error:', error);
       return false;
     }
-  }
+  },
 };
 ```
 
@@ -346,6 +354,7 @@ npm run start
 ### Issue: "URL Changes But Page Content Doesn't Update"
 
 **Status**: ✅ **FIXED** by expert review
+
 - **Root Cause**: Hydration mismatch and improper Link usage
 - **Solution**: Proper `passHref` + `legacyBehavior` + `<a>` wrapper
 - **Prevention**: Always use centralized route helpers
@@ -353,6 +362,7 @@ npm run start
 ### Issue: "Double-Click Required for Navigation"
 
 **Status**: ✅ **FIXED** by expert review
+
 - **Root Cause**: `onClick` workarounds preventing default Next.js behavior
 - **Solution**: Removed all `e.preventDefault()` + `router.push()` workarounds
 - **Prevention**: Never override Next.js Link default behavior
@@ -360,6 +370,7 @@ npm run start
 ### Issue: "Active State Not Updating"
 
 **Status**: ✅ **FIXED** by expert review
+
 - **Root Cause**: Server/client render mismatch in NavBar
 - **Solution**: Move active state to `useState(null)` + `useEffect`
 - **Prevention**: Always start with server-matching initial state
@@ -415,7 +426,9 @@ const activeLabel = calculateActiveState(); // Can cause hydration mismatch
 export const getEpisodeRoute = (theme, episodeId) => {
   try {
     if (!theme || !episodeId) return staticRoutes.home;
-    const episode = episodes.find(ep => ep.theme === theme && ep.id === episodeId);
+    const episode = episodes.find(
+      ep => ep.theme === theme && ep.id === episodeId
+    );
     return episode ? episode.slug : staticRoutes.home;
   } catch (error) {
     console.error('getEpisodeRoute error:', error);
@@ -429,6 +442,7 @@ export const getEpisodeRoute = (theme, episodeId) => {
 ### Manual Testing Checklist
 
 **✅ Navigation Flow Testing:**
+
 - [ ] Home page → Theme selection → Episode page
 - [ ] Episode page → NavBar items (Movies, Genius, You)
 - [ ] Theme page → Other themes via footer
@@ -437,11 +451,13 @@ export const getEpisodeRoute = (theme, episodeId) => {
 - [ ] Direct URL access to episodes
 
 **✅ Hydration Testing:**
+
 - [ ] No console errors about server/client mismatch
 - [ ] Active states update correctly on first load
 - [ ] Navigation works immediately (no double-click required)
 
 **✅ Performance Testing:**
+
 - [ ] Link prefetching is working
 - [ ] Navigation feels instant
 - [ ] No JavaScript errors in console
@@ -462,20 +478,27 @@ npm test __tests__/navbar.test.js
 ### Adding New Routes
 
 1. **Update Central Configuration:**
+
 ```javascript
 // Add to lib/routes.js
 export const themeLinks = [
   // ... existing themes
-  { href: '/themes/new-theme', label: 'New Theme', slug: 'new-theme' }
+  { href: '/themes/new-theme', label: 'New Theme', slug: 'new-theme' },
 ];
 
 export const episodes = [
   // ... existing episodes
-  { theme: 'new-theme', id: 'new-episode', title: 'New Episode', slug: '/new-theme/new-episode' }
+  {
+    theme: 'new-theme',
+    id: 'new-episode',
+    title: 'New Episode',
+    slug: '/new-theme/new-episode',
+  },
 ];
 ```
 
 2. **Create Theme Page:**
+
 ```javascript
 // pages/themes/new-theme.js
 import ThemePage from '../../components/ThemePage';
@@ -486,6 +509,7 @@ export default function NewThemePage() {
 ```
 
 3. **Test New Routes:**
+
 ```bash
 npm run build  # Regenerates static paths
 npm test       # Verify navigation tests pass
@@ -494,12 +518,14 @@ npm test       # Verify navigation tests pass
 ### Regular Maintenance
 
 **Monthly:**
+
 - [ ] Verify all navigation links work correctly
 - [ ] Check for hydration warnings in browser console
 - [ ] Test navigation on different devices/browsers
 - [ ] Review navigation performance metrics
 
 **Quarterly:**
+
 - [ ] Update this documentation
 - [ ] Review route structure for optimization opportunities
 - [ ] Test with latest Next.js version
@@ -558,6 +584,7 @@ curl -I https://moviegenius.ai/themes/film-noir
 ## 🔗 Quick Reference
 
 **Key Files:**
+
 - `/lib/routes.js` - Centralized route configuration
 - `/components/NavBar.js` - Main navigation (expert-reviewed)
 - `/components/EssentialMovies.js` - Episode links (expert-reviewed)
@@ -565,13 +592,17 @@ curl -I https://moviegenius.ai/themes/film-noir
 - `/components/ThemeFooter.js` - Theme navigation (expert-reviewed)
 
 **Link Pattern:**
+
 ```javascript
 <Link href={route} passHref legacyBehavior>
-  <a><div>Content</div></a>
+  <a>
+    <div>Content</div>
+  </a>
 </Link>
 ```
 
 **Hydration Pattern:**
+
 ```javascript
 const [state, setState] = useState(null); // Match server
 useEffect(() => {

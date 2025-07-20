@@ -1,14 +1,14 @@
 /**
  * MovieHeaderB Component - B Variant for A/B Testing
- * 
+ *
  * This is the "B" variant of the movie header that uses the new header format
  * where text content uses 'b' prefix instead of standard markdown '#' notation.
- * 
+ *
  * Key Changes from A variant:
  * - All text content formatting uses 'b' prefix style
  * - Maintains exact same functionality and layout as original
  * - Only difference is the header notation style applied to text elements
- * 
+ *
  * @see MovieHeader.js for the original "A" variant
  */
 import { Heart, Bookmark } from 'lucide-react';
@@ -16,13 +16,13 @@ import { useState, useEffect } from 'react';
 import { FavoritesManager } from './FavoritesManager';
 // import useStreamingData from '../hooks/useStreamingData'; // Stubbed out
 
-export default function MovieHeaderB({ 
-  title, 
-  year, 
-  initialSlug, 
-  initialPoster, 
+export default function MovieHeaderB({
+  title,
+  year,
+  initialSlug,
+  initialPoster,
   initialStreaming,
-  tmdbId 
+  tmdbId,
 }) {
   const [hearted, setHearted] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
@@ -30,17 +30,17 @@ export default function MovieHeaderB({
   const [poster, setPoster] = useState(initialPoster || '/images/placeholder-poster.jpg');
 
   // Streaming feature stubbed out - will be replaced with real provider
-  // const { 
-  //   hasStreaming, 
-  //   getDisplayText, 
+  // const {
+  //   hasStreaming,
+  //   getDisplayText,
   //   primaryService,
   //   freeOptions,
-  //   isLoading: streamingLoading 
+  //   isLoading: streamingLoading
   // } = useStreamingData(title, year, initialStreaming);
 
   // Generate media ID from title and year
   const mediaId = `${title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${year}`;
-  
+
   // Movie data object for FavoritesManager
   const movieData = { title, year, slug, poster, id: mediaId };
 
@@ -83,11 +83,11 @@ export default function MovieHeaderB({
    */
   const formatBHeaderText = (text, level = 'body') => {
     if (!text) return text;
-    
+
     switch (level) {
       case 'title':
         return `b ${text}`;
-      case 'subtitle': 
+      case 'subtitle':
         return `b ${text}`;
       case 'body':
       default:
@@ -102,25 +102,21 @@ export default function MovieHeaderB({
         <div style={styles.textContainer}>
           <div style={styles.titleColumn}>
             {/* B-header format applied to title */}
-            <div style={styles.title}>
-              {formatBHeaderText(title, 'title')}
-            </div>
+            <div style={styles.title}>{formatBHeaderText(title, 'title')}</div>
             {/* B-header format applied to year */}
-            <div style={styles.year}>
-              {formatBHeaderText(`(${year})`, 'subtitle')}
-            </div>
+            <div style={styles.year}>{formatBHeaderText(`(${year})`, 'subtitle')}</div>
           </div>
           {/* Slug uses body format (no 'b' prefix) */}
           <div style={styles.slug}>{formatBHeaderText(slug, 'body')}</div>
         </div>
       </div>
-      
+
       {/* Bottom row: streaming left, icons right - positioned below poster/text */}
       <div style={styles.bottomRow}>
         <div style={styles.streamingInfo}>
           <span style={styles.streamingText}>
             {/* Streaming info uses body format */}
-            {formatBHeaderText("Streaming on TBD", 'body')}
+            {formatBHeaderText('Streaming on TBD', 'body')}
           </span>
         </div>
         <div style={styles.iconRow}>
@@ -168,7 +164,8 @@ const styles = {
     padding: '16px', // Same as MediaCard container padding
     width: '100%',
     boxSizing: 'border-box',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     // No shadows, borders, or rounded corners - flat design
   },
   contentRow: {
@@ -179,7 +176,7 @@ const styles = {
     marginBottom: '12px',
   },
   largePoster: {
-    width: '150px',  // 1.5x larger than MediaCard (100px -> 150px)
+    width: '150px', // 1.5x larger than MediaCard (100px -> 150px)
     height: '225px', // 1.5x larger than MediaCard (150px -> 225px)
     objectFit: 'cover',
     borderRadius: '12px', // Keep some rounding on the poster itself

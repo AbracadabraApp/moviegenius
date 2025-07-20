@@ -33,7 +33,7 @@ export default function MoviesVariation2Page() {
     router.push('/you#platforms');
   };
 
-  const handleMoodExplore = (mood) => {
+  const handleMoodExplore = mood => {
     router.push(`/genius/mood/${mood}`);
   };
 
@@ -42,9 +42,9 @@ export default function MoviesVariation2Page() {
       <div style={styles.container}>
         {/* Full-width Genius Header */}
         <div style={styles.heroHeader}>
-          <img 
-            src="/images/genius-header-noir.jpg" 
-            alt="MovieGenius.AI - Classic Cinema" 
+          <img
+            src="/images/genius-header-noir.jpg"
+            alt="MovieGenius.AI - Classic Cinema"
             style={styles.heroImage}
           />
           <div style={styles.heroOverlay}>
@@ -56,29 +56,24 @@ export default function MoviesVariation2Page() {
         </div>
 
         <div style={styles.scrollableContent}>
-          
           {/* Platform Status Card */}
           <div style={styles.platformCard}>
             <div style={styles.platformCardContent}>
               <div style={styles.platformIcon}>📺</div>
               <div style={styles.platformText}>
                 <h3 style={styles.platformTitle}>
-                  {selectedPlatforms.length > 0 
+                  {selectedPlatforms.length > 0
                     ? `${selectedPlatforms.length} Services Connected`
-                    : 'Connect Your Streaming Services'
-                  }
+                    : 'Connect Your Streaming Services'}
                 </h3>
                 <p style={styles.platformSubtext}>
-                  {selectedPlatforms.length > 0 
-                    ? selectedPlatforms.slice(0, 3).join(' • ') + (selectedPlatforms.length > 3 ? '...' : '')
-                    : 'Get personalized recommendations instantly'
-                  }
+                  {selectedPlatforms.length > 0
+                    ? selectedPlatforms.slice(0, 3).join(' • ') +
+                      (selectedPlatforms.length > 3 ? '...' : '')
+                    : 'Get personalized recommendations instantly'}
                 </p>
               </div>
-              <button 
-                onClick={handlePlatformSetup}
-                style={styles.platformButton}
-              >
+              <button onClick={handlePlatformSetup} style={styles.platformButton}>
                 {selectedPlatforms.length > 0 ? 'Edit' : 'Setup'}
               </button>
             </div>
@@ -90,18 +85,22 @@ export default function MoviesVariation2Page() {
               <span style={styles.moodEmoji}>🔥</span>
               <div style={styles.moodHeaderText}>
                 <h2 style={styles.moodTitle}>Need Something Intense</h2>
-                <p style={styles.moodDescription}>Edge-of-your-seat thrillers and powerful dramas</p>
+                <p style={styles.moodDescription}>
+                  Edge-of-your-seat thrillers and powerful dramas
+                </p>
               </div>
-              <button 
-                onClick={() => handleMoodExplore('intense')}
-                style={styles.moodExploreButton}
-              >
+              <button onClick={() => handleMoodExplore('intense')} style={styles.moodExploreButton}>
                 Explore
               </button>
             </div>
             <div style={styles.movieGrid}>
               <MediaCard title="Parasite" year="2019" initialSlug="parasite-2019" tmdbId={496243} />
-              <MediaCard title="Uncut Gems" year="2019" initialSlug="uncut-gems-2019" tmdbId={473033} />
+              <MediaCard
+                title="Uncut Gems"
+                year="2019"
+                initialSlug="uncut-gems-2019"
+                tmdbId={473033}
+              />
               <MediaCard title="Whiplash" year="2014" initialSlug="whiplash-2014" tmdbId={244786} />
             </div>
           </div>
@@ -113,7 +112,7 @@ export default function MoviesVariation2Page() {
                 <h2 style={styles.moodTitle}>Looking for Beauty</h2>
                 <p style={styles.moodDescription}>Visually stunning films that inspire wonder</p>
               </div>
-              <button 
+              <button
                 onClick={() => handleMoodExplore('beautiful')}
                 style={styles.moodExploreButton}
               >
@@ -122,8 +121,18 @@ export default function MoviesVariation2Page() {
             </div>
             <div style={styles.movieGrid}>
               <MediaCard title="Her" year="2013" initialSlug="her-2013" tmdbId={152601} />
-              <MediaCard title="Blade Runner 2049" year="2017" initialSlug="blade-runner-2049-2017" tmdbId={335984} />
-              <MediaCard title="The Grand Budapest Hotel" year="2014" initialSlug="the-grand-budapest-hotel-2014" tmdbId={120467} />
+              <MediaCard
+                title="Blade Runner 2049"
+                year="2017"
+                initialSlug="blade-runner-2049-2017"
+                tmdbId={335984}
+              />
+              <MediaCard
+                title="The Grand Budapest Hotel"
+                year="2014"
+                initialSlug="the-grand-budapest-hotel-2014"
+                tmdbId={120467}
+              />
             </div>
           </div>
 
@@ -132,9 +141,11 @@ export default function MoviesVariation2Page() {
               <span style={styles.moodEmoji}>🧠</span>
               <div style={styles.moodHeaderText}>
                 <h2 style={styles.moodTitle}>Want to Think</h2>
-                <p style={styles.moodDescription}>Mind-bending puzzles and philosophical journeys</p>
+                <p style={styles.moodDescription}>
+                  Mind-bending puzzles and philosophical journeys
+                </p>
               </div>
-              <button 
+              <button
                 onClick={() => handleMoodExplore('cerebral')}
                 style={styles.moodExploreButton}
               >
@@ -144,7 +155,12 @@ export default function MoviesVariation2Page() {
             <div style={styles.movieGrid}>
               <MediaCard title="Arrival" year="2016" initialSlug="arrival-2016" tmdbId={329865} />
               <MediaCard title="Primer" year="2004" initialSlug="primer-2004" tmdbId={14337} />
-              <MediaCard title="Mulholland Drive" year="2001" initialSlug="mulholland-drive-2001" tmdbId={1018} />
+              <MediaCard
+                title="Mulholland Drive"
+                year="2001"
+                initialSlug="mulholland-drive-2001"
+                tmdbId={1018}
+              />
             </div>
           </div>
 
@@ -155,20 +171,26 @@ export default function MoviesVariation2Page() {
                 <h2 style={styles.moodTitle}>Something Cozy</h2>
                 <p style={styles.moodDescription}>Comfort films for quiet nights</p>
               </div>
-              <button 
-                onClick={() => handleMoodExplore('cozy')}
-                style={styles.moodExploreButton}
-              >
+              <button onClick={() => handleMoodExplore('cozy')} style={styles.moodExploreButton}>
                 Explore
               </button>
             </div>
             <div style={styles.movieGrid}>
-              <MediaCard title="Little Women" year="2019" initialSlug="little-women-2019" tmdbId={331482} />
+              <MediaCard
+                title="Little Women"
+                year="2019"
+                initialSlug="little-women-2019"
+                tmdbId={331482}
+              />
               <MediaCard title="Chef" year="2014" initialSlug="chef-2014" tmdbId={228150} />
-              <MediaCard title="Paddington" year="2014" initialSlug="paddington-2014" tmdbId={109428} />
+              <MediaCard
+                title="Paddington"
+                year="2014"
+                initialSlug="paddington-2014"
+                tmdbId={109428}
+              />
             </div>
           </div>
-
         </div>
       </div>
     </PhoneFrame>
@@ -180,7 +202,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     height: '100%',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     backgroundColor: '#f9fafb',
   },
   heroHeader: {

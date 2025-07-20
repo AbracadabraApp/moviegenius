@@ -2,26 +2,31 @@
 
 ## 🚀 Aggressive Cache Strategy for 10,624 Movies
 
-This system implements comprehensive cache warming for instant UX across all movie content.
+This system implements comprehensive cache warming for instant UX across all
+movie content.
 
 ## ✅ What's Implemented
 
 ### 1. **Redis Caching System** (`lib/redis.js`, `lib/cache.js`)
+
 - ✅ Intelligent TTL by content type (24h Claude, 7 days TMDB)
 - ✅ Error handling and graceful fallbacks
 - ✅ Performance monitoring and statistics
 
 ### 2. **Cloudflare Edge Optimization** (`_worker.js`, `wrangler.toml`)
+
 - ✅ Static asset caching (1 year)
 - ✅ TMDB image optimization with WebP/AVIF
 - ✅ Movie page edge caching (1 hour + stale-while-revalidate)
 - ✅ API route intelligent caching
 
 ### 3. **Next.js ISR Pre-generation** (`pages/movie/[id].js`)
+
 - ✅ **ALL 10,624 movie pages pre-generated** at build time
 - ✅ `fallback: false` - instant loading with zero server requests
 
 ### 4. **Cache Warming System**
+
 - ✅ API endpoint (`/api/cache-warming`)
 - ✅ CLI tool (`scripts/warm-cache.js`)
 - ✅ Background job system (`/api/background-analysis-warming`)
@@ -29,11 +34,13 @@ This system implements comprehensive cache warming for instant UX across all mov
 ## 🎯 Performance Impact
 
 ### Before Optimization:
+
 - **Movie pages**: 5+ seconds (SSR + API calls)
 - **Images**: 2-3 seconds (TMDB download)
 - **Analysis**: 3-5 seconds (Claude generation)
 
 ### After Optimization:
+
 - **Movie pages**: ~50ms (pre-generated static files)
 - **Images**: ~100ms (Cloudflare edge cache)
 - **Analysis**: ~200ms (Redis cache) or instant (pre-warmed)
@@ -117,6 +124,7 @@ CACHE_ENABLED=true
 ## 📊 Cache Warming Strategy
 
 ### Phase 1: Instant Results (0-5 minutes)
+
 ```bash
 # Warm highest priority content
 node scripts/warm-cache.js popular    # AFI Top 100 + recent releases
@@ -124,12 +132,14 @@ node scripts/warm-cache.js series     # All Cinema Through Time movies
 ```
 
 ### Phase 2: Poster Optimization (2-3 hours)
+
 ```bash
 # Pre-cache all poster images at Cloudflare edge
 node scripts/warm-cache.js posters
 ```
 
 ### Phase 3: Analysis Pre-generation (24-48 hours, background)
+
 ```bash
 # Start background Claude analysis warming
 # Cost: ~$500-1000 for all 10k movies
@@ -146,7 +156,7 @@ node scripts/warm-cache.js status
 
 # Warm specific types
 node scripts/warm-cache.js popular
-node scripts/warm-cache.js series  
+node scripts/warm-cache.js series
 node scripts/warm-cache.js movies 10     # First 10 batches
 node scripts/warm-cache.js posters 20    # First 20 batches
 
@@ -171,16 +181,19 @@ curl -X POST /api/background-analysis-warming -d '{"action": "status"}'
 ## 💰 Cost Analysis
 
 ### One-time Costs:
+
 - **Claude Analysis**: ~$500-1000 (all 10k movies @ $0.05-0.10 each)
 - **TMDB API**: Free (within limits)
 - **Cloudflare**: Free tier sufficient
 - **Redis**: ~$10-20/month (Upstash or Railway addon)
 
 ### Ongoing Costs:
+
 - **New movie analysis**: ~$5-10/month (new releases)
 - **Cache maintenance**: Minimal
 
 ### ROI:
+
 - **User retention**: Massive improvement (5s → 50ms loading)
 - **Server costs**: Reduced (fewer API calls)
 - **CDN efficiency**: 90%+ cache hit rate
@@ -188,52 +201,61 @@ curl -X POST /api/background-analysis-warming -d '{"action": "status"}'
 ## 🎯 Expected Results
 
 ### Immediate (after ISR deploy):
+
 - **All movie pages**: Instant loading (~50ms)
 - **Navigation**: Smooth, no loading states
 - **SEO**: Perfect (all pages pre-rendered)
 
 ### After Phase 1 warming (5 minutes):
+
 - **Popular movies**: Instant analysis
 - **Series content**: Instant loading
 
-### After Phase 2 warming (3 hours):  
+### After Phase 2 warming (3 hours):
+
 - **All images**: Instant loading from edge
 - **Poster grids**: Smooth scrolling
 
 ### After Phase 3 warming (48 hours):
+
 - **All movie analysis**: Instant loading
 - **Complete site**: Sub-second everything
 
 ## 🔍 Monitoring
 
 ### Performance Metrics to Track:
+
 - **Cache hit rate**: Target >90%
 - **Page load time**: Target <200ms
 - **Claude API calls**: Should drop 90%+
 - **TMDB API calls**: Should drop 80%+
 
 ### Health Checks:
+
 ```bash
 # Redis health
 curl /api/cache-warming -d '{"type": "status"}'
 
-# Background job health  
+# Background job health
 curl /api/background-analysis-warming -d '{"action": "status"}'
 ```
 
 ## 🛠️ Troubleshooting
 
 ### Cache Not Working:
+
 1. Check Redis connection: `REDIS_URL` environment variable
 2. Verify cache is enabled: `CACHE_ENABLED=true`
 3. Check warming status: `node scripts/warm-cache.js status`
 
 ### ISR Not Working:
+
 1. Verify build completed successfully
 2. Check Supabase connection during build
 3. Monitor build logs for static generation errors
 
 ### Background Jobs Failing:
+
 1. Check Claude API key and rate limits
 2. Verify `CACHE_WARMING_TOKEN` in headers
 3. Monitor job status endpoint
@@ -241,6 +263,7 @@ curl /api/background-analysis-warming -d '{"action": "status"}'
 ## 🎉 Success Metrics
 
 After full implementation:
+
 - ✅ **99% of user interactions**: Sub-second response
 - ✅ **Movie pages**: Instant loading (pre-generated)
 - ✅ **Images**: Instant loading (edge cached)
@@ -248,4 +271,6 @@ After full implementation:
 - ✅ **Server load**: Reduced by 80%+
 - ✅ **User experience**: Netflix-level performance
 
-This transforms MovieGenius from a slow, API-dependent site into a lightning-fast, cache-optimized platform that feels instant for virtually every user interaction.
+This transforms MovieGenius from a slow, API-dependent site into a
+lightning-fast, cache-optimized platform that feels instant for virtually every
+user interaction.

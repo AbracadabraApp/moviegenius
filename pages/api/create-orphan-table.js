@@ -19,7 +19,7 @@ export default async function handler(req, res) {
       reason: 'test',
       source: 'api_test',
       tmdb_search_attempted: false,
-      mention_count: 1
+      mention_count: 1,
     };
 
     const { data, error } = await supabase
@@ -30,29 +30,25 @@ export default async function handler(req, res) {
 
     if (error) {
       console.log('Table creation error:', error);
-      return res.status(500).json({ 
-        error: 'Could not create orphan_movies table', 
+      return res.status(500).json({
+        error: 'Could not create orphan_movies table',
         details: error.message,
-        note: 'Please create the table manually in Supabase dashboard using the SQL in scripts/create-orphan-movies-table.sql'
+        note: 'Please create the table manually in Supabase dashboard using the SQL in scripts/create-orphan-movies-table.sql',
       });
     }
 
     // Clean up test record
-    await supabase
-      .from('orphan_movies')
-      .delete()
-      .eq('id', data.id);
+    await supabase.from('orphan_movies').delete().eq('id', data.id);
 
-    res.status(200).json({ 
-      success: true, 
-      message: 'orphan_movies table is ready' 
+    res.status(200).json({
+      success: true,
+      message: 'orphan_movies table is ready',
     });
-
   } catch (error) {
     console.error('Error:', error);
-    res.status(500).json({ 
+    res.status(500).json({
       error: 'Failed to setup orphan table',
-      details: error.message 
+      details: error.message,
     });
   }
 }

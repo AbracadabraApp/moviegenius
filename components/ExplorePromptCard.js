@@ -2,12 +2,7 @@
 import { useRouter } from 'next/router';
 import { memo, useCallback } from 'react';
 
-function ExplorePromptCard({ 
-  prompt, 
-  contextPrefix,
-  style = {},
-  onClick 
-}) {
+function ExplorePromptCard({ prompt, contextPrefix, style = {}, onClick }) {
   const router = useRouter();
 
   const handleClick = useCallback(() => {
@@ -15,22 +10,28 @@ function ExplorePromptCard({
       onClick(prompt);
     } else {
       // Route to static explore page instead of slow Ask query
-      const topic = prompt.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, '-');
-      const context = contextPrefix ? contextPrefix.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, '-') : '';
-      
-      const explorePath = context 
-        ? `/explore/${topic}/${context}`
-        : `/explore/${topic}`;
-      
+      const topic = prompt
+        .toLowerCase()
+        .replace(/[^a-z0-9\s]/g, '')
+        .replace(/\s+/g, '-');
+      const context = contextPrefix
+        ? contextPrefix
+            .toLowerCase()
+            .replace(/[^a-z0-9\s]/g, '')
+            .replace(/\s+/g, '-')
+        : '';
+
+      const explorePath = context ? `/explore/${topic}/${context}` : `/explore/${topic}`;
+
       router.push(explorePath);
     }
   }, [prompt, contextPrefix, onClick, router]);
 
   return (
-    <div 
+    <div
       style={{
         ...styles.explorePromptCard,
-        ...style
+        ...style,
       }}
       onClick={handleClick}
     >

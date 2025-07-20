@@ -2,7 +2,7 @@
 
 /**
  * Railway Deployment Diagnosis Tool
- * 
+ *
  * Identifies specific reasons why Railway deployment is failing
  */
 
@@ -17,7 +17,7 @@ console.log('\n1. 📡 Checking GitHub Repository...');
 try {
   const repoCheck = execSync('git remote -v', { encoding: 'utf8' });
   console.log('✅ Repository:', repoCheck.trim());
-  
+
   const latestCommit = execSync('git log -1 --oneline', { encoding: 'utf8' });
   console.log('✅ Latest Commit:', latestCommit.trim());
 } catch (error) {
@@ -29,11 +29,11 @@ console.log('\n2. 🏗️ Testing Local Build Process...');
 try {
   // Check if we can build without errors
   console.log('⏳ Running test build...');
-  const buildResult = execSync('npm run build 2>&1', { 
+  const buildResult = execSync('npm run build 2>&1', {
     encoding: 'utf8',
-    timeout: 120000 // 2 minutes
+    timeout: 120000, // 2 minutes
   });
-  
+
   if (buildResult.includes('✓ Compiled successfully')) {
     console.log('✅ Local build successful');
   } else {
@@ -56,7 +56,7 @@ const requiredVars = [
   'NEXT_PUBLIC_TMDB_API_KEY',
   'NEXT_PUBLIC_SUPABASE_URL',
   'NEXT_PUBLIC_SUPABASE_ANON_KEY',
-  'SUPABASE_SERVICE_ROLE_KEY'
+  'SUPABASE_SERVICE_ROLE_KEY',
 ];
 
 let missingVars = 0;
@@ -114,9 +114,11 @@ if (packageJson.scripts.start) {
 // Check 6: Deployment size
 console.log('\n6. 📊 Checking Deployment Size...');
 try {
-  const sizeCheck = execSync('du -sh . --exclude=node_modules --exclude=.git', { encoding: 'utf8' });
+  const sizeCheck = execSync('du -sh . --exclude=node_modules --exclude=.git', {
+    encoding: 'utf8',
+  });
   console.log('📦 Project size (excluding node_modules):', sizeCheck.trim());
-  
+
   if (fs.existsSync('nuclear-static')) {
     const nuclearSize = execSync('du -sh nuclear-static', { encoding: 'utf8' });
     console.log('📦 Nuclear static size:', nuclearSize.trim());

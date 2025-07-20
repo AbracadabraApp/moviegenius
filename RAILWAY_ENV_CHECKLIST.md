@@ -20,15 +20,19 @@ RAPIDAPI_KEY=afdbdc6405msh...
 ```
 
 ## Build-time Variables
+
 Your `nixpacks.toml` provides fallbacks, but Railway should have real values.
 
 ## Quick Verification
+
 Before each deployment, verify in Railway dashboard:
+
 1. All environment variables are set
 2. No placeholder values remain
 3. Keys haven't expired
 
 ## Common Failure Points
+
 - Missing ANTHROPIC_API_KEY → Claude API calls fail
-- Missing SUPABASE keys → Database connection fails  
+- Missing SUPABASE keys → Database connection fails
 - Missing TMDB keys → Movie data fetching fails

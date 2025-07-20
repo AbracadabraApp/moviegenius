@@ -1,7 +1,7 @@
 // pages/api/movie-list.js
 /**
  * Movie List API
- * 
+ *
  * Retrieves a specific movie list with its movies and cached Claude description.
  * Supports the new list-based content system.
  */
@@ -32,7 +32,8 @@ async function handlePost(req, res) {
     );
 
     // Generate slug from name
-    const slug = name.toLowerCase()
+    const slug = name
+      .toLowerCase()
       .replace(/[^a-z0-9]+/g, '-')
       .replace(/^-|-$/g, '');
 
@@ -46,13 +47,14 @@ async function handlePost(req, res) {
         content_type: content_type || 'declarative',
         claude_prompt: claude_prompt || null,
         is_active: true,
-        created_at: new Date().toISOString()
+        created_at: new Date().toISOString(),
       })
       .select()
       .single();
 
     if (createError) {
-      if (createError.code === '23505') { // Unique constraint violation
+      if (createError.code === '23505') {
+        // Unique constraint violation
         return res.status(409).json({ error: 'List with this name already exists' });
       }
       throw createError;
@@ -61,14 +63,13 @@ async function handlePost(req, res) {
     res.status(201).json({
       success: true,
       message: 'List created successfully',
-      list: newList
+      list: newList,
     });
-
   } catch (error) {
     console.error('Error creating list:', error);
-    res.status(500).json({ 
+    res.status(500).json({
       error: 'Failed to create list',
-      details: error.message
+      details: error.message,
     });
   }
 }
@@ -101,7 +102,8 @@ async function handleGet(req, res) {
     // Get movies in the list with their details
     const { data: listItems, error: itemsError } = await supabase
       .from('movie_list_items')
-      .select(`
+      .select(
+        `
         order_index,
         movies (
           id,
@@ -112,7 +114,8 @@ async function handleGet(req, res) {
           tmdb_id,
           streaming_data
         )
-      `)
+      `
+      )
       .eq('list_id', list.id)
       .order('order_index', { ascending: true });
 
@@ -122,10 +125,11 @@ async function handleGet(req, res) {
     }
 
     // Extract movies from the join result
-    const movies = listItems?.map(item => ({
-      ...item.movies,
-      order_index: item.order_index
-    })) || [];
+    const movies =
+      listItems?.map(item => ({
+        ...item.movies,
+        order_index: item.order_index,
+      })) || [];
 
     // Get the appropriate analysis based on content type
     let analysisType = 'list_description';
@@ -134,7 +138,7 @@ async function handleGet(req, res) {
     } else if (list.content_type === 'declarative') {
       analysisType = 'list_description_and_movies';
     }
-    
+
     const { data: cachedAnalysis } = await supabase
       .from('list_analyses')
       .select('claude_response')
@@ -150,18 +154,17 @@ async function handleGet(req, res) {
         description: list.description,
         claude_prompt: list.claude_prompt,
         content_type: list.content_type,
-        created_at: list.created_at
+        created_at: list.created_at,
       },
       movies: movies,
       movieCount: movies.length,
       claudeDescription: cachedAnalysis?.claude_response?.raw_content || null,
-      cached: !!cachedAnalysis
+      cached: !!cachedAnalysis,
     };
 
     // Cache movie lists for 6 hours - lists change infrequently
     res.setHeader('Cache-Control', 'public, s-maxage=21600, stale-while-revalidate=43200');
     res.status(200).json(response);
-
   } catch (error) {
     console.error('Movie list API error:', error);
     res.status(500).json({ error: 'Internal server error' });

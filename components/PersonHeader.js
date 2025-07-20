@@ -1,6 +1,6 @@
 /**
  * PersonHeader Component
- * 
+ *
  * Large format person header for detail pages with flat design.
  * Similar functionality to PersonCard but with different visual presentation.
  * Follows the same pattern as MovieHeader.
@@ -9,14 +9,14 @@ import { Heart, Bookmark } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { FavoritesManager } from './FavoritesManager';
 
-export default function PersonHeader({ 
-  name, 
-  birthYear, 
+export default function PersonHeader({
+  name,
+  birthYear,
   deathYear,
-  initialBiography, 
-  initialProfile, 
+  initialBiography,
+  initialProfile,
   knownForDepartment,
-  tmdbId 
+  tmdbId,
 }) {
   const [hearted, setHearted] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
@@ -25,7 +25,7 @@ export default function PersonHeader({
 
   // Generate person ID from name and birth year
   const personId = `${name.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${birthYear || 'unknown'}`;
-  
+
   // Person data object for FavoritesManager
   const personData = { name, birthYear, deathYear, biography, profile, id: personId };
 
@@ -81,15 +81,11 @@ export default function PersonHeader({
           <div style={styles.biography}>{biography}</div>
         </div>
       </div>
-      
+
       {/* Bottom row: department left, icons right - positioned below profile/text */}
       <div style={styles.bottomRow}>
         <div style={styles.departmentInfo}>
-          {knownForDepartment && (
-            <span style={styles.departmentText}>
-              {knownForDepartment}
-            </span>
-          )}
+          {knownForDepartment && <span style={styles.departmentText}>{knownForDepartment}</span>}
         </div>
         <div style={styles.iconRow}>
           <button
@@ -135,7 +131,8 @@ const styles = {
     padding: '16px', // Same as PersonCard container padding
     width: '100%',
     boxSizing: 'border-box',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     // No shadows, borders, or rounded corners - flat design
   },
   contentRow: {
@@ -146,7 +143,7 @@ const styles = {
     marginBottom: '12px',
   },
   largeProfile: {
-    width: '150px',  // 1.5x larger than PersonCard (100px -> 150px)
+    width: '150px', // 1.5x larger than PersonCard (100px -> 150px)
     height: '225px', // 1.5x larger than PersonCard (150px -> 225px)
     objectFit: 'cover',
     borderRadius: '12px', // Keep some rounding on the profile itself

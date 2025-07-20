@@ -1,76 +1,75 @@
 // pages/recs-redesign.js - Movies as Home: MoveGenius.AI Design
-import PhoneFrame from '../components/PhoneFrame'
-import SimpleSearch from '../components/SimpleSearch'
-import { useRouter } from 'next/router'
-import { useState, useEffect } from 'react'
-import AnonymousUserManager from '../lib/anonymous-user'
+import PhoneFrame from '../components/PhoneFrame';
+import SimpleSearch from '../components/SimpleSearch';
+import { useRouter } from 'next/router';
+import { useState, useEffect } from 'react';
+import AnonymousUserManager from '../lib/anonymous-user';
 
 export default function MoviesHomeRedesign() {
-  const router = useRouter()
-  const [declarativeLists, setDeclarativeLists] = useState([])
-  const [selectedPlatforms, setSelectedPlatforms] = useState([])
-  const [isLoading, setIsLoading] = useState(true)
+  const router = useRouter();
+  const [declarativeLists, setDeclarativeLists] = useState([]);
+  const [selectedPlatforms, setSelectedPlatforms] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   // Initialize anonymous user and load data
   useEffect(() => {
     const initializePage = async () => {
       try {
         // Initialize anonymous user system
-        await AnonymousUserManager.initialize()
-        
+        await AnonymousUserManager.initialize();
+
         // Load declarative lists for tag cloud
-        const response = await fetch('/api/tag-cloud?content_type=declarative')
+        const response = await fetch('/api/tag-cloud?content_type=declarative');
         if (response.ok) {
-          const data = await response.json()
+          const data = await response.json();
           // Randomize and assign font sizes like ask.js
-          const shuffled = data.lists.sort(() => 0.5 - Math.random())
-          const selected75 = shuffled.slice(0, 75)
+          const shuffled = data.lists.sort(() => 0.5 - Math.random());
+          const selected75 = shuffled.slice(0, 75);
           const itemsWithSizes = selected75.map((item, index) => ({
             text: item.name,
             slug: item.slug,
             listId: item.id,
-            fontSize: index % 3 === 0 ? 'large' : index % 3 === 1 ? 'medium' : 'small'
-          }))
-          setDeclarativeLists(itemsWithSizes)
+            fontSize: index % 3 === 0 ? 'large' : index % 3 === 1 ? 'medium' : 'small',
+          }));
+          setDeclarativeLists(itemsWithSizes);
         }
-        
-        // Load user platforms
-        const platforms = JSON.parse(localStorage.getItem('selectedPlatforms') || '[]')
-        setSelectedPlatforms(platforms)
-        
-      } catch (error) {
-        console.error('Error initializing Movies home page:', error)
-      } finally {
-        setIsLoading(false)
-      }
-    }
 
-    initializePage()
+        // Load user platforms
+        const platforms = JSON.parse(localStorage.getItem('selectedPlatforms') || '[]');
+        setSelectedPlatforms(platforms);
+      } catch (error) {
+        console.error('Error initializing Movies home page:', error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    initializePage();
 
     // Listen for platform updates
     const handlePlatformUpdate = () => {
-      const platforms = JSON.parse(localStorage.getItem('selectedPlatforms') || '[]')
-      setSelectedPlatforms(platforms)
-    }
-    
-    window.addEventListener('platformsUpdated', handlePlatformUpdate)
-    return () => window.removeEventListener('platformsUpdated', handlePlatformUpdate)
-  }, [])
+      const platforms = JSON.parse(localStorage.getItem('selectedPlatforms') || '[]');
+      setSelectedPlatforms(platforms);
+    };
 
-  const handleSearchResults = (results) => {
+    window.addEventListener('platformsUpdated', handlePlatformUpdate);
+    return () => window.removeEventListener('platformsUpdated', handlePlatformUpdate);
+  }, []);
+
+  const handleSearchResults = results => {
     // For now, just log the search results
     // In the future, could show search results in a modal or navigate to search page
     console.log('Search results on Recs Redesign page:', results);
-  }
+  };
 
-  const handleListClick = (list) => {
+  const handleListClick = list => {
     // Navigate to list detail page
-    router.push(`/genius/list/${list.slug}`)
-  }
+    router.push(`/genius/list/${list.slug}`);
+  };
 
   const handleEditPlatforms = () => {
-    router.push('/you#platforms')
-  }
+    router.push('/you#platforms');
+  };
 
   if (isLoading) {
     return (
@@ -81,7 +80,7 @@ export default function MoviesHomeRedesign() {
           </div>
         </div>
       </PhoneFrame>
-    )
+    );
   }
 
   return (
@@ -93,17 +92,13 @@ export default function MoviesHomeRedesign() {
           <p style={styles.brandTagline}>A film guide built by cinema loving robots</p>
         </div>
 
-
         {/* Fixed Header/Input Section */}
         <div style={styles.fixedSection}>
           {/* Central Ask About Films Section */}
           <div style={styles.askSection}>
             <h2 style={styles.askTitle}>Ask About Films</h2>
             <div style={styles.askInputWrapper}>
-              <SimpleSearch 
-                onResults={handleSearchResults}
-                placeholder="Film Noir Classics"
-              />
+              <SimpleSearch onResults={handleSearchResults} placeholder="Film Noir Classics" />
             </div>
           </div>
         </div>
@@ -117,7 +112,9 @@ export default function MoviesHomeRedesign() {
                 key={item.listId}
                 style={{
                   ...styles.tagCloudItem,
-                  ...styles[`fontSize${item.fontSize.charAt(0).toUpperCase() + item.fontSize.slice(1)}`]
+                  ...styles[
+                    `fontSize${item.fontSize.charAt(0).toUpperCase() + item.fontSize.slice(1)}`
+                  ],
                 }}
                 onClick={() => handleListClick(item)}
               >
@@ -139,7 +136,9 @@ export default function MoviesHomeRedesign() {
                 key={item.listId}
                 style={{
                   ...styles.tagCloudItem,
-                  ...styles[`fontSize${item.fontSize.charAt(0).toUpperCase() + item.fontSize.slice(1)}`]
+                  ...styles[
+                    `fontSize${item.fontSize.charAt(0).toUpperCase() + item.fontSize.slice(1)}`
+                  ],
                 }}
                 onClick={() => handleListClick(item)}
               >
@@ -154,10 +153,7 @@ export default function MoviesHomeRedesign() {
             <div style={styles.platformCTA}>
               <h3 style={styles.ctaTitle}>Want to see where movies stream?</h3>
               <p style={styles.ctaSubtitle}>Select your platforms to see availability</p>
-              <button 
-                style={styles.ctaButton}
-                onClick={handleEditPlatforms}
-              >
+              <button style={styles.ctaButton} onClick={handleEditPlatforms}>
                 Choose Streaming Platforms
               </button>
             </div>
@@ -165,17 +161,14 @@ export default function MoviesHomeRedesign() {
         </div>
       </div>
     </PhoneFrame>
-  )
+  );
 }
 
 // Cache for performance
 export async function getServerSideProps({ res }) {
-  res.setHeader(
-    'Cache-Control',
-    'public, s-maxage=1800, stale-while-revalidate=3600'
-  )
-  
-  return { props: {} }
+  res.setHeader('Cache-Control', 'public, s-maxage=1800, stale-while-revalidate=3600');
+
+  return { props: {} };
 }
 
 const styles = {
@@ -184,7 +177,8 @@ const styles = {
     flexDirection: 'column',
     height: '100%',
     backgroundColor: '#ffffff',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   loadingContainer: {
     flex: 1,
@@ -345,4 +339,4 @@ const styles = {
     cursor: 'pointer',
     fontFamily: 'inherit',
   },
-}
+};

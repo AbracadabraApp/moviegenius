@@ -1,17 +1,14 @@
 /**
  * Genius Topics API for Query Detection
- * 
+ *
  * Provides structured list of all genius themes, series, and episodes
  * for topic matching in query detection system
- * 
+ *
  * Returns flattened list with metadata for efficient matching
  */
 
 import { getCache } from '../../lib/cache.js';
-import { 
-  withErrorHandling, 
-  successResponse 
-} from '../../lib/api-utils.js';
+import { withErrorHandling, successResponse } from '../../lib/api-utils.js';
 
 async function geniusTopicsHandler(req, res) {
   const cache = getCache();
@@ -35,12 +32,11 @@ async function geniusTopicsHandler(req, res) {
     res.setHeader('Cache-Control', 'public, max-age=21600, stale-while-revalidate=43200'); // 6 hours
 
     return successResponse(res, topics);
-
   } catch (error) {
     console.error('Error loading genius topics:', error);
     return res.status(500).json({
       error: 'Failed to load genius topics',
-      details: process.env.NODE_ENV === 'development' ? error.message : 'Internal server error'
+      details: process.env.NODE_ENV === 'development' ? error.message : 'Internal server error',
     });
   }
 }
@@ -53,7 +49,7 @@ async function loadAndStructureGeniusTopics() {
     // Load genius configuration
     const fs = require('fs').promises;
     const path = require('path');
-    
+
     const configPath = path.join(process.cwd(), 'data', 'genius-config.json');
     const configData = await fs.readFile(configPath, 'utf8');
     const config = JSON.parse(configData);
@@ -70,7 +66,7 @@ async function loadAndStructureGeniusTopics() {
         description: theme.description,
         url: `/genius/${theme.id}`,
         keywords: extractKeywords(theme.title + ' ' + theme.description),
-        level: 'theme'
+        level: 'theme',
       });
 
       // Process each series in theme
@@ -85,9 +81,11 @@ async function loadAndStructureGeniusTopics() {
           subtitle: series.subtitle,
           description: series.description,
           url: `/genius/${theme.id}/${series.id}`,
-          keywords: extractKeywords(series.title + ' ' + series.subtitle + ' ' + series.description),
+          keywords: extractKeywords(
+            series.title + ' ' + series.subtitle + ' ' + series.description
+          ),
           level: 'series',
-          episodeCount: series.episodes.length
+          episodeCount: series.episodes.length,
         });
 
         // Process each episode in series
@@ -102,9 +100,11 @@ async function loadAndStructureGeniusTopics() {
             subtitle: episode.subtitle,
             description: episode.description || '',
             url: `/genius/${theme.id}/${series.id}/${episode.id}`,
-            keywords: extractKeywords(episode.title + ' ' + episode.subtitle + ' ' + (episode.description || '')),
+            keywords: extractKeywords(
+              episode.title + ' ' + episode.subtitle + ' ' + (episode.description || '')
+            ),
             level: 'episode',
-            seriesTitle: series.title
+            seriesTitle: series.title,
           });
         }
       }
@@ -112,7 +112,6 @@ async function loadAndStructureGeniusTopics() {
 
     console.log(`✅ Loaded ${topics.length} genius topics for detection`);
     return topics;
-
   } catch (error) {
     console.error('Error loading genius config:', error);
     throw error;
@@ -124,7 +123,7 @@ async function loadAndStructureGeniusTopics() {
  */
 function extractKeywords(text) {
   if (!text) return [];
-  
+
   return text
     .toLowerCase()
     .replace(/[^\w\s]/g, ' ')

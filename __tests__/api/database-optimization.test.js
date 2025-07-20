@@ -1,9 +1,9 @@
 /**
  * Database Optimization Tests
- * 
+ *
  * Tests the database index creation and performance measurement system.
  * Validates query optimization, performance tracking, and error handling.
- * 
+ *
  * Tests:
  * - Index creation and validation
  * - Query performance measurement
@@ -20,46 +20,46 @@ const mockSupabaseClient = {
     select: jest.fn(() => ({
       eq: jest.fn(() => ({
         single: jest.fn(() => Promise.resolve({ data: null, error: { code: 'PGRST116' } })),
-        limit: jest.fn(() => Promise.resolve({ data: [], error: null }))
+        limit: jest.fn(() => Promise.resolve({ data: [], error: null })),
       })),
       or: jest.fn(() => ({
         order: jest.fn(() => ({
-          limit: jest.fn(() => Promise.resolve({ data: [], error: null }))
-        }))
+          limit: jest.fn(() => Promise.resolve({ data: [], error: null })),
+        })),
       })),
       lt: jest.fn(() => Promise.resolve({ data: [], error: null })),
       delete: jest.fn(() => ({
-        lt: jest.fn(() => Promise.resolve({ data: [], error: null }))
-      }))
-    }))
+        lt: jest.fn(() => Promise.resolve({ data: [], error: null })),
+      })),
+    })),
   })),
-  rpc: jest.fn(() => Promise.resolve({ data: null, error: null }))
+  rpc: jest.fn(() => Promise.resolve({ data: null, error: null })),
 };
 
 jest.mock('@supabase/supabase-js', () => ({
-  createClient: jest.fn(() => mockSupabaseClient)
+  createClient: jest.fn(() => mockSupabaseClient),
 }));
 
 // Mock performance monitor
 const mockPerformanceMonitor = {
   trackMetric: jest.fn(),
-  trackAPICost: jest.fn()
+  trackAPICost: jest.fn(),
 };
 
 jest.mock('../../lib/performance-monitor.js', () => ({
-  getPerformanceMonitor: () => mockPerformanceMonitor
+  getPerformanceMonitor: () => mockPerformanceMonitor,
 }));
 
 // Mock API utils
 jest.mock('../../lib/api-utils.js', () => ({
-  withErrorHandling: (handler) => handler,
+  withErrorHandling: handler => handler,
   ApiErrors: {
-    BAD_REQUEST: (msg) => ({ name: 'ApiError', message: msg, statusCode: 400 }),
-    SERVICE_UNAVAILABLE: (msg) => ({ name: 'ApiError', message: msg, statusCode: 503 }),
-    INTERNAL_ERROR: (msg) => ({ name: 'ApiError', message: msg, statusCode: 500 })
+    BAD_REQUEST: msg => ({ name: 'ApiError', message: msg, statusCode: 400 }),
+    SERVICE_UNAVAILABLE: msg => ({ name: 'ApiError', message: msg, statusCode: 503 }),
+    INTERNAL_ERROR: msg => ({ name: 'ApiError', message: msg, statusCode: 500 }),
   },
   successResponse: (data, message) => ({ success: true, data, message }),
-  checkRateLimit: jest.fn()
+  checkRateLimit: jest.fn(),
 }));
 
 import { getDatabaseOptimizer } from '../../lib/database-optimizer.js';
@@ -72,7 +72,7 @@ beforeAll(() => {
     ...originalEnv,
     NEXT_PUBLIC_SUPABASE_URL: 'https://test.supabase.co',
     SUPABASE_SERVICE_ROLE_KEY: 'test-service-key',
-    NODE_ENV: 'test'
+    NODE_ENV: 'test',
   };
 });
 
@@ -97,26 +97,26 @@ describe('Database Optimization', () => {
 
       expect(results).toBeDefined();
       expect(results.length).toBeGreaterThan(0);
-      
+
       // Should attempt to create multiple indexes
       expect(mockSupabaseClient.rpc).toHaveBeenCalledTimes(results.length);
-      
+
       // Should track performance metrics
       expect(mockPerformanceMonitor.trackMetric).toHaveBeenCalledWith(
         'database_index_creation',
         expect.any(Number),
         expect.objectContaining({
           index_name: expect.any(String),
-          table: expect.any(String)
+          table: expect.any(String),
         })
       );
     });
 
     test('should handle index creation errors gracefully', async () => {
       // Mock index creation failure
-      mockSupabaseClient.rpc.mockResolvedValue({ 
-        data: null, 
-        error: { message: 'Index creation failed' } 
+      mockSupabaseClient.rpc.mockResolvedValue({
+        data: null,
+        error: { message: 'Index creation failed' },
       });
 
       const results = await optimizer.createCriticalIndexes();
@@ -130,12 +130,14 @@ describe('Database Optimization', () => {
       mockSupabaseClient.from.mockReturnValue({
         select: jest.fn(() => ({
           eq: jest.fn(() => ({
-            single: jest.fn(() => Promise.resolve({ 
-              data: { id: 1, title: 'Test Movie', year: 2023 }, 
-              error: null 
-            }))
-          }))
-        }))
+            single: jest.fn(() =>
+              Promise.resolve({
+                data: { id: 1, title: 'Test Movie', year: 2023 },
+                error: null,
+              })
+            ),
+          })),
+        })),
       });
 
       const result = await optimizer.measureQueryPerformance('test_query', async () => {
@@ -147,7 +149,7 @@ describe('Database Optimization', () => {
         'database_query_test_query',
         expect.any(Number),
         expect.objectContaining({
-          success: true
+          success: true,
         })
       );
     });
@@ -165,7 +167,7 @@ describe('Database Optimization', () => {
         'database_query_slow_test_query',
         expect.any(Number),
         expect.objectContaining({
-          slow_query: true
+          slow_query: true,
         })
       );
     });
@@ -176,7 +178,7 @@ describe('Database Optimization', () => {
         totalExecutions: 10,
         totalTime: 15000,
         slowQueries: 8,
-        averageTime: 1500
+        averageTime: 1500,
       });
 
       const recommendations = optimizer.generateOptimizationRecommendations();
@@ -189,12 +191,14 @@ describe('Database Optimization', () => {
       mockSupabaseClient.from.mockReturnValue({
         select: jest.fn(() => ({
           eq: jest.fn(() => ({
-            single: jest.fn(() => Promise.resolve({ 
-              data: { id: 1, title: 'The Matrix', year: 1999 }, 
-              error: null 
-            }))
-          }))
-        }))
+            single: jest.fn(() =>
+              Promise.resolve({
+                data: { id: 1, title: 'The Matrix', year: 1999 },
+                error: null,
+              })
+            ),
+          })),
+        })),
       });
 
       const result = await optimizer.lookupMovie('The Matrix', 1999);
@@ -207,12 +211,14 @@ describe('Database Optimization', () => {
       mockSupabaseClient.from.mockReturnValue({
         select: jest.fn(() => ({
           eq: jest.fn(() => ({
-            single: jest.fn(() => Promise.resolve({ 
-              data: { id: 1, tmdb_id: 603, title: 'The Matrix' }, 
-              error: null 
-            }))
-          }))
-        }))
+            single: jest.fn(() =>
+              Promise.resolve({
+                data: { id: 1, tmdb_id: 603, title: 'The Matrix' },
+                error: null,
+              })
+            ),
+          })),
+        })),
       });
 
       const result = await optimizer.lookupMovieByTmdbId(603);
@@ -226,16 +232,18 @@ describe('Database Optimization', () => {
         select: jest.fn(() => ({
           or: jest.fn(() => ({
             order: jest.fn(() => ({
-              limit: jest.fn(() => Promise.resolve({ 
-                data: [
-                  { id: 1, title: 'The Matrix', year: 1999 },
-                  { id: 2, title: 'Matrix Reloaded', year: 2003 }
-                ], 
-                error: null 
-              }))
-            }))
-          }))
-        }))
+              limit: jest.fn(() =>
+                Promise.resolve({
+                  data: [
+                    { id: 1, title: 'The Matrix', year: 1999 },
+                    { id: 2, title: 'Matrix Reloaded', year: 2003 },
+                  ],
+                  error: null,
+                })
+              ),
+            })),
+          })),
+        })),
       });
 
       const results = await optimizer.searchMovies('matrix');
@@ -247,8 +255,8 @@ describe('Database Optimization', () => {
     test('should handle cache cleanup optimization', async () => {
       mockSupabaseClient.from.mockReturnValue({
         delete: jest.fn(() => ({
-          lt: jest.fn(() => Promise.resolve({ data: [], error: null }))
-        }))
+          lt: jest.fn(() => Promise.resolve({ data: [], error: null })),
+        })),
       });
 
       const result = await optimizer.cleanupExpiredCache();
@@ -265,29 +273,29 @@ describe('Database Optimization', () => {
       mockSupabaseClient.from.mockReturnValue({
         select: jest.fn(() => ({
           eq: jest.fn(() => ({
-            single: jest.fn(() => Promise.resolve({ data: null, error: { code: 'PGRST116' } }))
+            single: jest.fn(() => Promise.resolve({ data: null, error: { code: 'PGRST116' } })),
           })),
           or: jest.fn(() => ({
             order: jest.fn(() => ({
-              limit: jest.fn(() => Promise.resolve({ data: [], error: null }))
-            }))
+              limit: jest.fn(() => Promise.resolve({ data: [], error: null })),
+            })),
           })),
           delete: jest.fn(() => ({
-            lt: jest.fn(() => Promise.resolve({ data: [], error: null }))
-          }))
-        }))
+            lt: jest.fn(() => Promise.resolve({ data: [], error: null })),
+          })),
+        })),
       });
 
       const { req, res } = createMocks({
         method: 'POST',
-        headers: { 'x-forwarded-for': '127.0.0.1' }
+        headers: { 'x-forwarded-for': '127.0.0.1' },
       });
 
       await handler(req, res);
 
       expect(res._getStatusCode()).toBe(200);
       const responseData = JSON.parse(res._getData());
-      
+
       expect(responseData.success).toBe(true);
       expect(responseData.data.optimization_result).toBeDefined();
       expect(responseData.data.performance_tests).toBeDefined();
@@ -296,7 +304,7 @@ describe('Database Optimization', () => {
 
     test('should reject non-POST requests', async () => {
       const { req, res } = createMocks({
-        method: 'GET'
+        method: 'GET',
       });
 
       await handler(req, res);
@@ -310,13 +318,13 @@ describe('Database Optimization', () => {
 
       const { req, res } = createMocks({
         method: 'POST',
-        headers: { 'x-forwarded-for': '127.0.0.1' }
+        headers: { 'x-forwarded-for': '127.0.0.1' },
       });
 
       await handler(req, res);
 
       expect(res._getStatusCode()).toBe(503);
-      
+
       // Restore the key
       process.env.SUPABASE_SERVICE_ROLE_KEY = originalKey;
     });
@@ -326,22 +334,22 @@ describe('Database Optimization', () => {
       mockSupabaseClient.from.mockReturnValue({
         select: jest.fn(() => ({
           eq: jest.fn(() => ({
-            single: jest.fn(() => Promise.resolve({ data: null, error: { code: 'PGRST116' } }))
+            single: jest.fn(() => Promise.resolve({ data: null, error: { code: 'PGRST116' } })),
           })),
           or: jest.fn(() => ({
             order: jest.fn(() => ({
-              limit: jest.fn(() => Promise.resolve({ data: [], error: null }))
-            }))
+              limit: jest.fn(() => Promise.resolve({ data: [], error: null })),
+            })),
           })),
           delete: jest.fn(() => ({
-            lt: jest.fn(() => Promise.resolve({ data: [], error: null }))
-          }))
-        }))
+            lt: jest.fn(() => Promise.resolve({ data: [], error: null })),
+          })),
+        })),
       });
 
       const { req, res } = createMocks({
         method: 'POST',
-        headers: { 'x-forwarded-for': '127.0.0.1' }
+        headers: { 'x-forwarded-for': '127.0.0.1' },
       });
 
       await handler(req, res);
@@ -350,7 +358,7 @@ describe('Database Optimization', () => {
         'database_optimization_complete',
         expect.any(Number),
         expect.objectContaining({
-          indexes_created: expect.any(Number)
+          indexes_created: expect.any(Number),
         })
       );
     });
@@ -361,19 +369,19 @@ describe('Database Optimization', () => {
 
       const { req, res } = createMocks({
         method: 'POST',
-        headers: { 'x-forwarded-for': '127.0.0.1' }
+        headers: { 'x-forwarded-for': '127.0.0.1' },
       });
 
       await handler(req, res);
 
       expect(res._getStatusCode()).toBe(500);
-      
+
       // Should track the error
       expect(mockPerformanceMonitor.trackMetric).toHaveBeenCalledWith(
         'database_optimization_error',
         expect.any(Number),
         expect.objectContaining({
-          error: expect.any(String)
+          error: expect.any(String),
         })
       );
     });
@@ -391,7 +399,7 @@ describe('Database Optimization', () => {
         totalExecutions: 100,
         totalTime: 50000,
         slowQueries: 10,
-        averageTime: 500
+        averageTime: 500,
       });
 
       const stats = optimizer.getQueryStats();
