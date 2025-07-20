@@ -517,7 +517,7 @@ export async function getStaticPaths() {
   
   return {
     paths,
-    fallback: 'blocking' // Generate pages on-demand for better UX
+    fallback: false // All paths must be pre-generated for production
   };
 }
 
