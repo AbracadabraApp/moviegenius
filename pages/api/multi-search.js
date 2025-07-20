@@ -7,28 +7,28 @@
 function calculateRelevanceScore(movie, searchQuery) {
   const query = searchQuery.toLowerCase();
   const title = movie.title.toLowerCase();
-  
+
   let score = movie.popularity || 0;
-  
+
   // Exact title match bonus
   if (title === query) {
     score += 10000;
   }
-  
+
   // Title starts with query bonus
   if (title.startsWith(query)) {
     score += 5000;
   }
-  
+
   // Title contains query bonus
   if (title.includes(query)) {
     score += 2000;
   }
-  
+
   // Word boundary matches (e.g., "baby" matches "baby driver")
   const queryWords = query.split(/\s+/);
   const titleWords = title.split(/\s+/);
-  
+
   queryWords.forEach(queryWord => {
     titleWords.forEach(titleWord => {
       if (titleWord.startsWith(queryWord)) {
@@ -39,10 +39,10 @@ function calculateRelevanceScore(movie, searchQuery) {
       }
     });
   });
-  
+
   // Popularity bonus (higher popularity = more relevant)
   score += (movie.popularity || 0) * 10;
-  
+
   return score;
 }
 
@@ -63,27 +63,27 @@ export default async function handler(req, res) {
 
     // Fetch multiple pages to get broader results (up to 40 total)
     const allResults = [];
-    
+
     for (let page = 1; page <= 2; page++) {
       const tmdbUrl = `https://api.themoviedb.org/3/search/multi?api_key=${process.env.NEXT_PUBLIC_TMDB_API_KEY}&query=${encodeURIComponent(searchQuery)}&page=${page}`;
       const response = await fetch(tmdbUrl);
-      
+
       if (!response.ok) {
         console.error(`TMDB API error page ${page}:`, response.status);
         break;
       }
-      
+
       const data = await response.json();
       allResults.push(...data.results);
     }
-    
+
     // Filter and rank movies by popularity and relevance (20 results)
     const movieResults = allResults
       .filter(r => r.media_type === 'movie')
       .map(movie => ({
         ...movie,
         // Calculate relevance score based on title match and popularity
-        relevanceScore: calculateRelevanceScore(movie, searchQuery)
+        relevanceScore: calculateRelevanceScore(movie, searchQuery),
       }))
       .sort((a, b) => b.relevanceScore - a.relevanceScore)
       .slice(0, 20)
@@ -92,8 +92,10 @@ export default async function handler(req, res) {
         title: movie.title,
         year: movie.release_date ? parseInt(movie.release_date.substring(0, 4)) : null,
         tmdb_id: movie.id,
-        poster_url: movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : '/images/placeholder-poster.jpg',
-        media_type: 'movie'
+        poster_url: movie.poster_path
+          ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+          : '/images/placeholder-poster.jpg',
+        media_type: 'movie',
       }));
 
     // People search temporarily disabled for scope reduction
@@ -109,28 +111,31 @@ export default async function handler(req, res) {
     //     known_for: person.known_for_department || 'Acting',
     //     media_type: 'person'
     //   }));
-    
+
     const people = []; // Temporarily empty for movies-only focus
 
-    console.log(`🎬 Found ${movieResults.length} movies, ${people.length} people for "${searchQuery}"`);
+    console.log(
+      `🎬 Found ${movieResults.length} movies, ${people.length} people for "${searchQuery}"`
+    );
 
     const hasResults = movieResults.length > 0 || people.length > 0;
-    
+
     res.status(200).json({
       movies: movieResults,
       people,
       query: searchQuery,
       hasResults,
-      fallback: !hasResults ? {
-        message: "No results found. Try a different search term or check your spelling."
-      } : null
+      fallback: !hasResults
+        ? {
+            message: 'No results found. Try a different search term or check your spelling.',
+          }
+        : null,
     });
-
   } catch (error) {
     console.error('Multi-search error:', error);
     res.status(500).json({
       error: 'Search failed',
-      message: error.message
+      message: error.message,
     });
   }
 }

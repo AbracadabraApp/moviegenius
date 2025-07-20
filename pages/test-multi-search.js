@@ -7,7 +7,7 @@ export default function TestMultiSearch() {
   const [results, setResults] = useState({ movies: [], people: [] });
   const [query, setQuery] = useState('');
 
-  const handleResults = (searchResults) => {
+  const handleResults = searchResults => {
     setResults(searchResults);
   };
 
@@ -20,10 +20,7 @@ export default function TestMultiSearch() {
         </div>
 
         <div style={styles.searchContainer}>
-          <SimpleSearch
-            onResults={handleResults}
-            placeholder="Search movies and people..."
-          />
+          <SimpleSearch onResults={handleResults} placeholder="Search movies and people..." />
         </div>
 
         <MultiSearchResults results={results} query={query} />

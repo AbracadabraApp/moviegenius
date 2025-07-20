@@ -1,39 +1,33 @@
 /**
  * CategoryBrowse Footer Component
- * 
+ *
  * Reusable footer with movie category buttons for discovery
  * Can be included on any page for consistent navigation
  */
 
 import { useRouter } from 'next/router';
 
-const CategoryBrowse = ({ 
-  title = "Browse by Category",
-  compact = false,
-  style = {}
-}) => {
+const CategoryBrowse = ({ title = 'Browse by Category', compact = false, style = {} }) => {
   const router = useRouter();
 
-  const handleCategoryClick = (categorySlug) => {
+  const handleCategoryClick = categorySlug => {
     router.push(`/search?category=${categorySlug}`);
   };
 
   return (
-    <div style={{...styles.container, ...style}}>
-      <h2 style={compact ? styles.titleCompact : styles.title}>
-        {title}
-      </h2>
+    <div style={{ ...styles.container, ...style }}>
+      <h2 style={compact ? styles.titleCompact : styles.title}>{title}</h2>
       <div style={compact ? styles.gridCompact : styles.grid}>
         {browseCategories.map((category, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             style={compact ? styles.buttonCompact : styles.button}
             onClick={() => handleCategoryClick(category.slug)}
-            onMouseEnter={(e) => {
+            onMouseEnter={e => {
               e.target.style.backgroundColor = '#f9fafb';
               e.target.style.borderColor = '#9ca3af';
             }}
-            onMouseLeave={(e) => {
+            onMouseLeave={e => {
               e.target.style.backgroundColor = '#ffffff';
               e.target.style.borderColor = '#d1d5db';
             }}
@@ -51,7 +45,7 @@ const browseCategories = [
   // Most Popular All Time categories
   { label: 'Most Popular All Time', slug: 'popular-all-time' },
   { label: 'Top Rated Movies', slug: 'top-rated' },
-  
+
   // Core TMDB Genres
   { label: 'Action', slug: 'action' },
   { label: 'Adventure', slug: 'adventure' },
@@ -70,7 +64,7 @@ const browseCategories = [
   { label: 'Science Fiction', slug: 'science-fiction' },
   { label: 'Thriller', slug: 'thriller' },
   { label: 'War', slug: 'war' },
-  { label: 'Western', slug: 'western' }
+  { label: 'Western', slug: 'western' },
 ];
 
 const styles = {
@@ -78,7 +72,7 @@ const styles = {
     marginTop: '32px',
     padding: '0 16px',
   },
-  
+
   // Regular size
   title: {
     fontSize: '18px',
@@ -104,7 +98,7 @@ const styles = {
     cursor: 'pointer',
     transition: 'all 0.2s ease',
   },
-  
+
   // Compact size
   titleCompact: {
     fontSize: '16px',

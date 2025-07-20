@@ -15,7 +15,7 @@ class DeploymentVerifier {
     this.results = {
       passed: 0,
       failed: 0,
-      tests: []
+      tests: [],
     };
   }
 
@@ -23,30 +23,34 @@ class DeploymentVerifier {
     return new Promise((resolve, reject) => {
       const url = `${this.baseUrl}${path}`;
       const client = url.startsWith('https') ? https : http;
-      
-      const req = client.request(url, {
-        method: options.method || 'GET',
-        timeout: TIMEOUT,
-        headers: options.headers || {}
-      }, (res) => {
-        let data = '';
-        res.on('data', chunk => data += chunk);
-        res.on('end', () => {
-          resolve({
-            status: res.statusCode,
-            data: data,
-            headers: res.headers
+
+      const req = client.request(
+        url,
+        {
+          method: options.method || 'GET',
+          timeout: TIMEOUT,
+          headers: options.headers || {},
+        },
+        res => {
+          let data = '';
+          res.on('data', chunk => (data += chunk));
+          res.on('end', () => {
+            resolve({
+              status: res.statusCode,
+              data: data,
+              headers: res.headers,
+            });
           });
-        });
-      });
+        }
+      );
 
       req.on('error', reject);
       req.on('timeout', () => reject(new Error('Request timeout')));
-      
+
       if (options.body) {
         req.write(JSON.stringify(options.body));
       }
-      
+
       req.end();
     });
   }
@@ -60,7 +64,7 @@ class DeploymentVerifier {
       this.results.tests.push({
         name,
         status: 'PASS',
-        duration: `${duration}ms`
+        duration: `${duration}ms`,
       });
       console.log(`✅ ${name} (${duration}ms)`);
     } catch (error) {
@@ -70,7 +74,7 @@ class DeploymentVerifier {
         name,
         status: 'FAIL',
         duration: `${duration}ms`,
-        error: error.message
+        error: error.message,
       });
       console.log(`❌ ${name} (${duration}ms): ${error.message}`);
     }
@@ -81,7 +85,7 @@ class DeploymentVerifier {
     if (response.status !== 200 && response.status !== 301) {
       throw new Error(`Health check returned ${response.status}`);
     }
-    
+
     // Handle redirects
     if (response.status === 301) {
       const location = response.headers.location;
@@ -97,7 +101,7 @@ class DeploymentVerifier {
       }
       return; // 301 is acceptable for health check
     }
-    
+
     const data = JSON.parse(response.data);
     if (data.status !== 'ok') {
       throw new Error(`Health check status: ${data.status}`);
@@ -132,9 +136,9 @@ class DeploymentVerifier {
     const response = await this.makeRequest('/api/lookup-movie', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: { title: 'Godfather', year: 1972 }
+      body: { title: 'Godfather', year: 1972 },
     });
-    
+
     if (response.status !== 200 && response.status !== 301) {
       throw new Error(`Movie lookup API returned ${response.status}`);
     }
@@ -143,12 +147,12 @@ class DeploymentVerifier {
 
   async verifyCacheHeaders() {
     const response = await this.makeRequest('/movie/238');
-    
+
     // For redirects, cache headers may not be present - that's OK
     if (response.status === 301) {
       return; // Skip cache header check for redirects
     }
-    
+
     // Check for proper cache headers only on successful responses
     const cacheControl = response.headers['cache-control'];
     if (response.status === 200 && (!cacheControl || !cacheControl.includes('public'))) {
@@ -160,7 +164,7 @@ class DeploymentVerifier {
     if (!this.baseUrl.startsWith('https')) {
       throw new Error('Not using HTTPS');
     }
-    
+
     // SSL verification is handled by the HTTPS client
     const response = await this.makeRequest('/api/health');
     if (response.status !== 200 && response.status !== 301) {
@@ -172,7 +176,7 @@ class DeploymentVerifier {
     const startTime = Date.now();
     await this.makeRequest('/api/health');
     const duration = Date.now() - startTime;
-    
+
     if (duration > 5000) {
       throw new Error(`Health endpoint too slow: ${duration}ms`);
     }
@@ -193,14 +197,14 @@ class DeploymentVerifier {
 
     const tests = [
       ['Health Endpoint', () => this.verifyHealthEndpoint()],
-      ['Home Page', () => this.verifyHomePage()], 
+      ['Home Page', () => this.verifyHomePage()],
       ['Recs Page', () => this.verifyRecsPage()],
       ['Movie Page', () => this.verifyMoviePage()],
       ['Movie Lookup API', () => this.verifyApiLookup()],
       ['Cache Headers', () => this.verifyCacheHeaders()],
       ['SSL Certificate', () => this.verifySSLCertificate()],
       ['Response Times', () => this.verifyResponseTimes()],
-      ['Build Integrity', () => this.verifyBuildIntegrity()]
+      ['Build Integrity', () => this.verifyBuildIntegrity()],
     ];
 
     for (const [name, testFn] of tests) {
@@ -210,7 +214,9 @@ class DeploymentVerifier {
     console.log('\n📊 Verification Summary:');
     console.log(`✅ Passed: ${this.results.passed}`);
     console.log(`❌ Failed: ${this.results.failed}`);
-    console.log(`📈 Success Rate: ${Math.round((this.results.passed / (this.results.passed + this.results.failed)) * 100)}%`);
+    console.log(
+      `📈 Success Rate: ${Math.round((this.results.passed / (this.results.passed + this.results.failed)) * 100)}%`
+    );
 
     if (this.results.failed > 0) {
       console.log('\n🚨 Failed Tests:');
@@ -219,7 +225,7 @@ class DeploymentVerifier {
         .forEach(test => {
           console.log(`   ${test.name}: ${test.error}`);
         });
-      
+
       process.exit(1);
     } else {
       console.log('\n🎉 All verification tests passed! Deployment is healthy.');

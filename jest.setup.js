@@ -1,5 +1,5 @@
 // jest.setup.js
-import '@testing-library/jest-dom'
+import '@testing-library/jest-dom';
 
 // Mock Next.js router
 jest.mock('next/router', () => ({
@@ -20,25 +20,25 @@ jest.mock('next/router', () => ({
         off: jest.fn(),
         emit: jest.fn(),
       },
-    }
+    };
   },
-}))
+}));
 
 // Mock Next.js dynamic imports
 jest.mock('next/dynamic', () => () => {
-  const DynamicComponent = () => null
-  DynamicComponent.displayName = 'LoadableComponent'
-  DynamicComponent.preload = jest.fn()
-  return DynamicComponent
-})
+  const DynamicComponent = () => null;
+  DynamicComponent.displayName = 'LoadableComponent';
+  DynamicComponent.preload = jest.fn();
+  return DynamicComponent;
+});
 
 // Mock browser-specific APIs only in jsdom environment
 if (typeof window !== 'undefined') {
   // Mock window.scrollTo
   Object.defineProperty(window, 'scrollTo', {
     value: jest.fn(),
-    writable: true
-  })
+    writable: true,
+  });
 
   // Mock localStorage
   const localStorageMock = {
@@ -46,8 +46,8 @@ if (typeof window !== 'undefined') {
     setItem: jest.fn(),
     removeItem: jest.fn(),
     clear: jest.fn(),
-  }
-  global.localStorage = localStorageMock
+  };
+  global.localStorage = localStorageMock;
 }
 
 // Mock fetch globally with better default responses
@@ -58,31 +58,31 @@ global.fetch = jest.fn(() =>
     text: () => Promise.resolve(''),
     status: 200,
   })
-)
+);
 
 // Mock IntersectionObserver
 global.IntersectionObserver = class IntersectionObserver {
   constructor(callback) {
-    this.callback = callback
+    this.callback = callback;
   }
 
   observe() {
-    return null
+    return null;
   }
 
   disconnect() {
-    return null
+    return null;
   }
 
   unobserve() {
-    return null
+    return null;
   }
-}
+};
 
 // API-specific mocks will be handled in individual test files
 
 // Setup cleanup after each test
 afterEach(() => {
-  jest.clearAllMocks()
-  localStorage.clear()
-})
+  jest.clearAllMocks();
+  localStorage.clear();
+});

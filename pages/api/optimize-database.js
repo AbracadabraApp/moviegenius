@@ -1,9 +1,9 @@
 /**
  * Database Optimization API Endpoint
- * 
+ *
  * Executes database index creation and performance optimization.
  * Protected endpoint that requires service role key for security.
- * 
+ *
  * Features:
  * - Creates critical performance indexes
  * - Measures query performance improvements
@@ -12,22 +12,22 @@
  */
 
 import { getDatabaseOptimizer } from '../../lib/database-optimizer.js';
-import { 
-  withErrorHandling, 
-  ApiErrors, 
+import {
+  withErrorHandling,
+  ApiErrors,
   successResponse,
-  checkRateLimit 
+  checkRateLimit,
 } from '../../lib/api-utils.js';
 import { getPerformanceMonitor } from '../../lib/performance-monitor.js';
 
 /**
  * Database optimization handler
- * 
+ *
  * Executes comprehensive database optimization including:
  * - Critical index creation
  * - Performance measurement
  * - Query optimization recommendations
- * 
+ *
  * @param {Object} req - API request
  * @param {Object} res - API response
  */
@@ -73,47 +73,55 @@ async function optimizeDatabaseHandler(req, res) {
     // Track the optimization process
     monitor.trackMetric('database_optimization_complete', totalDuration, {
       indexes_created: optimizationResult.total_indexes_created,
-      performance_improvement: calculatePerformanceImprovement(preOptimizationStats, postOptimizationStats),
-      recommendations_count: recommendations.length
+      performance_improvement: calculatePerformanceImprovement(
+        preOptimizationStats,
+        postOptimizationStats
+      ),
+      recommendations_count: recommendations.length,
     });
 
-    const response = successResponse({
-      optimization_result: optimizationResult,
-      performance_tests: performanceTests,
-      recommendations: recommendations,
-      statistics: {
-        pre_optimization: preOptimizationStats,
-        post_optimization: postOptimizationStats,
-        duration: totalDuration
+    const response = successResponse(
+      {
+        optimization_result: optimizationResult,
+        performance_tests: performanceTests,
+        recommendations: recommendations,
+        statistics: {
+          pre_optimization: preOptimizationStats,
+          post_optimization: postOptimizationStats,
+          duration: totalDuration,
+        },
+        summary: {
+          indexes_created: optimizationResult.total_indexes_created,
+          duration_ms: totalDuration,
+          performance_improvement: calculatePerformanceImprovement(
+            preOptimizationStats,
+            postOptimizationStats
+          ),
+          next_steps: generateNextSteps(recommendations),
+        },
       },
-      summary: {
-        indexes_created: optimizationResult.total_indexes_created,
-        duration_ms: totalDuration,
-        performance_improvement: calculatePerformanceImprovement(preOptimizationStats, postOptimizationStats),
-        next_steps: generateNextSteps(recommendations)
-      }
-    }, 'Database optimization completed successfully');
+      'Database optimization completed successfully'
+    );
 
     console.log(`✅ Database optimization completed in ${totalDuration}ms`);
     console.log(`📊 Created ${optimizationResult.total_indexes_created} indexes`);
     console.log(`💡 Generated ${recommendations.length} optimization recommendations`);
 
     res.status(200).json(response);
-
   } catch (error) {
     console.error('💥 Database optimization failed:', error);
-    
+
     // Track the failure
     monitor.trackMetric('database_optimization_error', Date.now() - startTime, {
       error: error.message,
-      error_type: error.name
+      error_type: error.name,
     });
-    
+
     // Re-throw if it's already an ApiError
     if (error.name === 'ApiError') {
       throw error;
     }
-    
+
     // Generic error
     throw ApiErrors.INTERNAL_ERROR(`Database optimization failed: ${error.message}`);
   }
@@ -124,7 +132,7 @@ async function optimizeDatabaseHandler(req, res) {
  */
 async function runPerformanceTests(optimizer) {
   console.log('🧪 Running performance tests...');
-  
+
   const tests = [];
 
   try {
@@ -134,14 +142,14 @@ async function runPerformanceTests(optimizer) {
     tests.push({
       test: 'movie_title_year_lookup',
       duration: Date.now() - movieLookupStart,
-      status: 'success'
+      status: 'success',
     });
   } catch (error) {
     tests.push({
       test: 'movie_title_year_lookup',
       duration: -1,
       status: 'error',
-      error: error.message
+      error: error.message,
     });
   }
 
@@ -152,14 +160,14 @@ async function runPerformanceTests(optimizer) {
     tests.push({
       test: 'movie_tmdb_lookup',
       duration: Date.now() - tmdbLookupStart,
-      status: 'success'
+      status: 'success',
     });
   } catch (error) {
     tests.push({
       test: 'movie_tmdb_lookup',
       duration: -1,
       status: 'error',
-      error: error.message
+      error: error.message,
     });
   }
 
@@ -170,14 +178,14 @@ async function runPerformanceTests(optimizer) {
     tests.push({
       test: 'movie_fuzzy_search',
       duration: Date.now() - searchStart,
-      status: 'success'
+      status: 'success',
     });
   } catch (error) {
     tests.push({
       test: 'movie_fuzzy_search',
       duration: -1,
       status: 'error',
-      error: error.message
+      error: error.message,
     });
   }
 
@@ -188,28 +196,31 @@ async function runPerformanceTests(optimizer) {
     tests.push({
       test: 'cache_cleanup',
       duration: Date.now() - cleanupStart,
-      status: 'success'
+      status: 'success',
     });
   } catch (error) {
     tests.push({
       test: 'cache_cleanup',
       duration: -1,
       status: 'error',
-      error: error.message
+      error: error.message,
     });
   }
 
-  const averagePerformance = tests
-    .filter(t => t.status === 'success' && t.duration > 0)
-    .reduce((sum, t) => sum + t.duration, 0) / tests.filter(t => t.status === 'success').length;
+  const averagePerformance =
+    tests
+      .filter(t => t.status === 'success' && t.duration > 0)
+      .reduce((sum, t) => sum + t.duration, 0) / tests.filter(t => t.status === 'success').length;
 
-  console.log(`🧪 Performance tests completed - average query time: ${averagePerformance?.toFixed(1) || 'N/A'}ms`);
+  console.log(
+    `🧪 Performance tests completed - average query time: ${averagePerformance?.toFixed(1) || 'N/A'}ms`
+  );
 
   return {
     tests,
     average_query_time: averagePerformance || null,
     successful_tests: tests.filter(t => t.status === 'success').length,
-    total_tests: tests.length
+    total_tests: tests.length,
   };
 }
 
@@ -227,7 +238,7 @@ function calculatePerformanceImprovement(preStats, postStats) {
     if (postStats[queryName]) {
       const preAvg = preStats[queryName].averageTime;
       const postAvg = postStats[queryName].averageTime;
-      
+
       if (preAvg > 0 && postAvg > 0) {
         const improvement = ((preAvg - postAvg) / preAvg) * 100;
         improvements.push(improvement);
@@ -252,7 +263,7 @@ function generateNextSteps(recommendations) {
     steps.push('✅ No immediate optimizations needed - monitor query performance');
   } else {
     steps.push(`📊 Review ${recommendations.length} optimization recommendations`);
-    
+
     const slowQueries = recommendations.filter(r => r.type === 'slow_query');
     if (slowQueries.length > 0) {
       steps.push(`🐌 Address ${slowQueries.length} slow queries identified`);

@@ -2,11 +2,11 @@
 import { memo } from 'react';
 import ExplorePromptCard from './ExplorePromptCard';
 
-function ExploreFurtherSection({ 
-  prompts = [], 
+function ExploreFurtherSection({
+  prompts = [],
   contextPrefix,
   style = {},
-  children // For additional content like Cast & Crew buttons
+  children, // For additional content like Cast & Crew buttons
 }) {
   if (prompts.length === 0 && !children) {
     return null;
@@ -69,12 +69,12 @@ const ExploreFurtherSectionMemo = memo(ExploreFurtherSection, (prevProps, nextPr
   if (prevProps.prompts.length !== nextProps.prompts.length) {
     return false;
   }
-  
+
   // Deep comparison of prompts array
-  const promptsEqual = prevProps.prompts.every((prompt, index) => 
-    prompt === nextProps.prompts[index]
+  const promptsEqual = prevProps.prompts.every(
+    (prompt, index) => prompt === nextProps.prompts[index]
   );
-  
+
   return (
     promptsEqual &&
     prevProps.contextPrefix === nextProps.contextPrefix &&

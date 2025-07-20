@@ -1,10 +1,10 @@
 /**
  * Genius Page - 🔒 LOCKED COMPONENT 🔒
  * @locked true
- * 
+ *
  * Main entry point with personal brand manifesto and theme navigation.
  * Contains owner's personal statement about product vision.
- * 
+ *
  * PROTECTED: Manifesto text, hero messaging, theme navigation
  * See genius.js.LOCK for detailed protection rules
  */
@@ -29,8 +29,6 @@ export default function GeniusPage() {
 
   // Theme navigation now uses centralized themeLinks from lib/routes
 
-
-
   // Handle search results - unified search redirects to /search page
   const handleSearchResults = () => {
     // With unified search, this won't be called since search redirects to /search page
@@ -48,10 +46,7 @@ export default function GeniusPage() {
       <div style={styles.container}>
         {/* Search Section at Top */}
         <div style={styles.searchSection}>
-          <SimpleSearch 
-            onResults={handleSearchResults}
-            placeholder="Search movies..."
-          />
+          <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
         </div>
 
         {/* Hero Section with Black Background */}
@@ -61,13 +56,13 @@ export default function GeniusPage() {
             <div style={styles.heroMainText}>DON'T BINGE WATCH TV</div>
             <div style={styles.heroSubText}>FEAST ON GREAT FILMS INSTEAD</div>
           </div>
-          
+
           {/* Hero Image */}
           <div style={styles.heroImageContainer}>
-            <img 
-              src="/images/hero-rotation/hero-8.jpg" 
-              alt="Film Education Hero" 
-              style={styles.heroImage} 
+            <img
+              src="/images/hero-rotation/hero-8.jpg"
+              alt="Film Education Hero"
+              style={styles.heroImage}
             />
           </div>
         </div>
@@ -77,17 +72,11 @@ export default function GeniusPage() {
           <div style={styles.questionSection}>
             <h2 style={styles.sectionQuestion}>Which film topics interest you most?</h2>
           </div>
-          
+
           <div style={styles.themeGrid}>
             {themeLinks.map(themeLink => (
-              <Link 
-                key={themeLink.slug}
-                href={themeLink.href}
-                style={{textDecoration: 'none'}}
-              >
-                <div style={{...styles.themeButton, cursor: 'pointer'}}>
-                  {themeLink.label}
-                </div>
+              <Link key={themeLink.slug} href={themeLink.href} style={{ textDecoration: 'none' }}>
+                <div style={{ ...styles.themeButton, cursor: 'pointer' }}>{themeLink.label}</div>
               </Link>
             ))}
           </div>
@@ -100,12 +89,14 @@ export default function GeniusPage() {
               <h2 style={styles.modalTitle}>Welcome to MovieGenius</h2>
               {/* 🔒 LOCKED: Personal manifesto text - DO NOT MODIFY */}
               <div style={styles.manifestoText}>
-                <p>Streaming platforms put great films at our fingertips, then hid them under time-wasting junk. MovieGenius is your intelligence filter—no more mindless scrolling through endless mediocre "shows". Discover quality cinema and make deliberate choices again.</p>
+                <p>
+                  Streaming platforms put great films at our fingertips, then hid them under
+                  time-wasting junk. MovieGenius is your intelligence filter—no more mindless
+                  scrolling through endless mediocre "shows". Discover quality cinema and make
+                  deliberate choices again.
+                </p>
               </div>
-              <button 
-                onClick={handleEnjoyTheShow}
-                style={styles.enjoyButton}
-              >
+              <button onClick={handleEnjoyTheShow} style={styles.enjoyButton}>
                 Enjoy the Show
               </button>
             </div>
@@ -121,7 +112,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     height: '100%',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     backgroundColor: '#ffffff',
     overflow: 'hidden',
   },

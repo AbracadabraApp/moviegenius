@@ -2,12 +2,16 @@
 
 ## Overview
 
-The `MovieHeaderLarge` component is the production header component for movie detail pages, featuring a modern vertical layout with prominent poster display and interactive floating action bar.
+The `MovieHeaderLarge` component is the production header component for movie
+detail pages, featuring a modern vertical layout with prominent poster display
+and interactive floating action bar.
 
 ## Component Features
 
-- **Large Vertical Poster Layout**: Prominent poster display with 30px bottom cropping
-- **Floating Action Bar**: Right-positioned action buttons for favorites and list management
+- **Large Vertical Poster Layout**: Prominent poster display with 30px bottom
+  cropping
+- **Floating Action Bar**: Right-positioned action buttons for favorites and
+  list management
 - **Interactive Poster**: Double-click functionality for quick list addition
 - **Responsive Design**: Optimized spacing and visual hierarchy
 - **Error Handling**: Graceful degradation for localStorage and API failures
@@ -19,19 +23,19 @@ The `MovieHeaderLarge` component is the production header component for movie de
 interface MovieHeaderLargeProps {
   /** Movie title */
   title: string;
-  
+
   /** Movie release year */
   year: number;
-  
+
   /** Movie description/tagline */
   initialSlug: string;
-  
+
   /** Movie poster URL */
   initialPoster: string;
-  
+
   /** Initial streaming data (currently unused) */
   initialStreaming?: string;
-  
+
   /** TMDB movie ID for API calls */
   tmdbId: number;
 }
@@ -75,15 +79,16 @@ Located on the right side of the component with two primary actions:
 
 - **Double-click**: Toggles add-to-list state with "added" animation overlay
 - **Animation**: 1.5-second fade-in-out animation for user feedback
-- **Cropping**: Bottom 30px cropped using CSS `clipPath` for better visual composition
+- **Cropping**: Bottom 30px cropped using CSS `clipPath` for better visual
+  composition
 
 ## State Management
 
 The component manages several internal states:
 
 ```javascript
-const [hearted, setHearted] = useState(false);        // Favorites state
-const [bookmarked, setBookmarked] = useState(false);  // Currently unused
+const [hearted, setHearted] = useState(false); // Favorites state
+const [bookmarked, setBookmarked] = useState(false); // Currently unused
 const [addedToList, setAddedToList] = useState(false); // Personal list state
 const [showAddedAnimation, setShowAddedAnimation] = useState(false); // Animation state
 ```
@@ -94,7 +99,8 @@ The component includes comprehensive error handling for:
 
 - **localStorage failures**: Safe defaults when FavoritesManager throws errors
 - **Missing props**: Fallback to placeholder images and empty strings
-- **Event listener errors**: Graceful degradation for cross-component communication
+- **Event listener errors**: Graceful degradation for cross-component
+  communication
 - **Browser compatibility**: Fallbacks for unsupported CSS features
 
 ## Styling Architecture
@@ -119,7 +125,7 @@ movieHeader (container)
 ### Key Spacing Values
 
 - **Input to Poster**: 9px total spacing
-- **Poster to Title**: 10px total spacing  
+- **Poster to Title**: 10px total spacing
 - **Action Bar Position**: `bottom: 130px` from container
 - **Container Padding**: `0px 16px 8px 16px`
 
@@ -142,7 +148,8 @@ import { FavoritesManager } from './FavoritesManager';
 
 ### External Dependencies
 
-- **FavoritesManager**: Handles localStorage persistence and cross-component synchronization
+- **FavoritesManager**: Handles localStorage persistence and cross-component
+  synchronization
 - **Lucide React**: Icon library for action buttons
 
 ### Environment Requirements
@@ -172,9 +179,11 @@ The component includes comprehensive test coverage:
 - **Unit Tests**: Component rendering, user interactions, state management
 - **Integration Tests**: FavoritesManager integration, complete user workflows
 - **Error Handling Tests**: localStorage failures, missing props, API errors
-- **Accessibility Tests**: ARIA labels, keyboard navigation, screen reader support
+- **Accessibility Tests**: ARIA labels, keyboard navigation, screen reader
+  support
 
 Run tests with:
+
 ```bash
 npm test -- __tests__/components/MovieHeaderLarge.test.js
 ```

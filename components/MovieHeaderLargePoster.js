@@ -1,6 +1,6 @@
 /**
  * MovieHeaderLargePoster Component
- * 
+ *
  * Large poster format movie header for detail pages.
  * Preserves original MovieHeader functionality while offering vertical layout with larger poster.
  * Fallback-safe implementation - if this component fails, pages can revert to MovieHeader.
@@ -9,13 +9,13 @@ import { Heart, Bookmark } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { FavoritesManager } from './FavoritesManager';
 
-export default function MovieHeaderLargePoster({ 
-  title, 
-  year, 
-  initialSlug, 
-  initialPoster, 
+export default function MovieHeaderLargePoster({
+  title,
+  year,
+  initialSlug,
+  initialPoster,
   initialStreaming,
-  tmdbId 
+  tmdbId,
 }) {
   const [hearted, setHearted] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
@@ -24,7 +24,7 @@ export default function MovieHeaderLargePoster({
 
   // Generate media ID from title and year
   const mediaId = `${title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${year}`;
-  
+
   // Movie data object for FavoritesManager
   const movieData = { title, year, slug, poster, id: mediaId };
 
@@ -62,28 +62,22 @@ export default function MovieHeaderLargePoster({
     <div style={styles.movieHeader}>
       {/* Large poster at top, centered */}
       <div style={styles.posterContainer}>
-        <img 
-          src={poster} 
-          alt={`Poster for ${title}`} 
-          style={styles.largePoster}
-        />
+        <img src={poster} alt={`Poster for ${title}`} style={styles.largePoster} />
       </div>
-      
+
       {/* Title and year below poster */}
       <div style={styles.titleContainer}>
         <div style={styles.title}>{title}</div>
         <div style={styles.year}>({year})</div>
       </div>
-      
+
       {/* Slug below title */}
       <div style={styles.slug}>{slug}</div>
-      
+
       {/* Bottom row: streaming left, icons right */}
       <div style={styles.bottomRow}>
         <div style={styles.streamingInfo}>
-          <span style={styles.streamingText}>
-            Streaming on TBD
-          </span>
+          <span style={styles.streamingText}>Streaming on TBD</span>
         </div>
         <div style={styles.iconRow}>
           <button
@@ -129,23 +123,24 @@ const styles = {
     padding: '16px',
     width: '100%',
     boxSizing: 'border-box',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     alignItems: 'center', // Center everything
   },
-  
+
   posterContainer: {
     marginBottom: '16px',
     position: 'relative',
   },
-  
+
   largePoster: {
-    width: '200px',  // Larger than standard MovieHeader (150px)
+    width: '200px', // Larger than standard MovieHeader (150px)
     height: '300px', // Larger than standard MovieHeader (225px)
     objectFit: 'cover',
     borderRadius: '12px',
     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)', // Add subtle shadow
   },
-  
+
   titleContainer: {
     display: 'flex',
     flexDirection: 'column',
@@ -153,7 +148,7 @@ const styles = {
     marginBottom: '8px',
     textAlign: 'center',
   },
-  
+
   title: {
     fontSize: '24px', // Larger than standard MovieHeader (20px)
     fontWeight: '600',
@@ -163,7 +158,7 @@ const styles = {
     marginBottom: '4px',
     textAlign: 'center',
   },
-  
+
   year: {
     fontSize: '20px',
     color: '#666',
@@ -172,7 +167,7 @@ const styles = {
     marginBottom: '8px',
     textAlign: 'center',
   },
-  
+
   slug: {
     fontSize: '16px',
     color: '#333',
@@ -182,7 +177,7 @@ const styles = {
     textAlign: 'center',
     maxWidth: '400px', // Limit width for readability
   },
-  
+
   bottomRow: {
     display: 'flex',
     justifyContent: 'space-between',
@@ -191,13 +186,13 @@ const styles = {
     maxWidth: '400px', // Match slug width
     paddingTop: '8px',
   },
-  
+
   streamingInfo: {
     flex: 1,
     minWidth: 0,
     marginRight: '8px',
   },
-  
+
   streamingText: {
     fontSize: '14px',
     color: '#6b7280',
@@ -206,14 +201,14 @@ const styles = {
     wordWrap: 'break-word',
     lineHeight: '1.3',
   },
-  
+
   iconRow: {
     display: 'flex',
     flexDirection: 'row',
     gap: '8px',
     alignItems: 'center',
   },
-  
+
   iconButton: {
     background: 'none',
     border: 'none',

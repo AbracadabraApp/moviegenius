@@ -2,24 +2,20 @@
 import React, { memo } from 'react';
 import MediaCard from './MediaCard';
 
-function FeaturedFilmsSection({ 
-  movies, 
-  title = "Featured Films",
-  style = {} 
-}) {
+function FeaturedFilmsSection({ movies, title = 'Featured Films', style = {} }) {
   // Debug logging
-  console.log('FeaturedFilmsSection:', { 
-    title, 
-    moviesCount: movies?.length, 
-    movies: movies?.slice(0, 3).map(m => ({ 
-      title: m.title, 
-      year: m.year, 
-      tmdb_id: m.tmdb_id, 
+  console.log('FeaturedFilmsSection:', {
+    title,
+    moviesCount: movies?.length,
+    movies: movies?.slice(0, 3).map(m => ({
+      title: m.title,
+      year: m.year,
+      tmdb_id: m.tmdb_id,
       slug: m.slug?.substring(0, 60) + (m.slug?.length > 60 ? '...' : ''),
-      slugLength: m.slug?.length 
-    }))
+      slugLength: m.slug?.length,
+    })),
   });
-  
+
   if (!movies || movies.length === 0) {
     console.log('FeaturedFilmsSection: No movies to display');
     return null;
@@ -34,12 +30,20 @@ function FeaturedFilmsSection({
       </div>
       <div style={styles.movieGrid}>
         {movies
-          .filter(movie => movie.title && movie.year && movie.tmdb_id && movie.tmdb_id !== null && movie.tmdb_id !== 'MISSING') // Show movies with required fields including valid tmdb_id
+          .filter(
+            movie =>
+              movie.title &&
+              movie.year &&
+              movie.tmdb_id &&
+              movie.tmdb_id !== null &&
+              movie.tmdb_id !== 'MISSING'
+          ) // Show movies with required fields including valid tmdb_id
           .map((movie, movieIndex) => {
             // 🔒 TMDB Protection: Filter contaminated slugs before passing to MediaCard
-            const isValidClaudeSlug = movie.slug && 
+            const isValidClaudeSlug =
+              movie.slug &&
               !movie.slug.includes('Plot:') &&
-              !movie.slug.includes('Overview:') && 
+              !movie.slug.includes('Overview:') &&
               !movie.slug.includes('Synopsis:') &&
               !movie.slug.includes('Summary:') &&
               !movie.slug.includes(' leads this ') &&
@@ -47,9 +51,12 @@ function FeaturedFilmsSection({
               !movie.slug.includes(' starring ') &&
               !movie.slug.includes('directed by') &&
               movie.slug.length <= 80; // Reject overly long descriptions
-              
+
             return (
-              <div key={`${movie.title}-${movie.year}-${movieIndex}`} style={styles.movieCardWrapper}>
+              <div
+                key={`${movie.title}-${movie.year}-${movieIndex}`}
+                style={styles.movieCardWrapper}
+              >
                 <MediaCard
                   title={movie.title}
                   year={movie.year}
@@ -107,19 +114,21 @@ const styles = {
 const arePropsEqual = (prevProps, nextProps) => {
   // Quick checks for primitive props
   if (prevProps.title !== nextProps.title) return false;
-  
+
   // Check movies array length
   const prevMovies = prevProps.movies || [];
   const nextMovies = nextProps.movies || [];
   if (prevMovies.length !== nextMovies.length) return false;
-  
+
   // Deep comparison of movies array (only essential props)
   return prevMovies.every((movie, index) => {
     const nextMovie = nextMovies[index];
-    return movie.title === nextMovie?.title && 
-           movie.year === nextMovie?.year &&
-           movie.tmdb_id === nextMovie?.tmdb_id &&
-           movie.slug === nextMovie?.slug;
+    return (
+      movie.title === nextMovie?.title &&
+      movie.year === nextMovie?.year &&
+      movie.tmdb_id === nextMovie?.tmdb_id &&
+      movie.slug === nextMovie?.slug
+    );
   });
 };
 

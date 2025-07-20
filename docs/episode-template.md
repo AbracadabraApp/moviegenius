@@ -1,6 +1,7 @@
 # Genius Episode Template Documentation
 
-This document explains the complete structure for creating genius episodes that render all required elements correctly.
+This document explains the complete structure for creating genius episodes that
+render all required elements correctly.
 
 ## Overview
 
@@ -15,7 +16,9 @@ Each genius episode must contain **6 key rendering elements**:
 
 ## File Structure
 
-Episodes are stored as JSON files in `/data/episodes/` with the naming convention:
+Episodes are stored as JSON files in `/data/episodes/` with the naming
+convention:
+
 ```
 genius-{themeId}-{seriesId}-{episodeId}.json
 ```
@@ -31,7 +34,7 @@ Example: `genius-1-1-1.json` (Theme 1, Series 1, Episode 1)
   "themeId": 1,
   "seriesId": 1,
   "episodeId": 1,
-  
+
   // THEME DATA - Updated for new 65-episode structure
   "theme": {
     "id": 1,
@@ -39,26 +42,26 @@ Example: `genius-1-1-1.json` (Theme 1, Series 1, Episode 1)
     "description": "Film genres and their evolution",
     "slug": "genres"
   },
-  
+
   // SERIES DATA - Clean titles without date ranges
   "series": {
     "id": 1,
     "title": "Classic Film Noir", // NOT "Classic Film Noir (1940-1958)"
     "description": "The birth and golden age of film noir"
   },
-  
+
   // EPISODE DATA
   "episode": {
     "id": 1,
     "title": "German Expressionism",
     "subtitle": "The template for noir morality"
   },
-  
+
   // CONTENT STRUCTURE
   "content": {
     // OPENER - Brief intro text (optional but recommended)
     "opener": "Brief introductory paragraph...",
-    
+
     // SECTIONS - Main content array (REQUIRED)
     "sections": [
       // Text sections
@@ -66,8 +69,8 @@ Example: `genius-1-1-1.json` (Theme 1, Series 1, Episode 1)
         "type": "text",
         "content": "Paragraph content..."
       },
-      
-      // Movie sections  
+
+      // Movie sections
       {
         "type": "movies",
         "movies": [
@@ -81,24 +84,20 @@ Example: `genius-1-1-1.json` (Theme 1, Series 1, Episode 1)
           }
         ]
       },
-      
+
       // Subhead sections
       {
-        "type": "subhead", 
+        "type": "subhead",
         "content": "Section Title"
       },
-      
+
       // Explore Further section (REQUIRED)
       {
         "type": "explore_further",
-        "prompts": [
-          "Question 1?",
-          "Question 2?", 
-          "Question 3?"
-        ]
+        "prompts": ["Question 1?", "Question 2?", "Question 3?"]
       }
     ],
-    
+
     // MORE IDEAS - Related films (REQUIRED)
     "moreIdeas": {
       "title": "More Ideas",
@@ -114,15 +113,15 @@ Example: `genius-1-1-1.json` (Theme 1, Series 1, Episode 1)
       ]
     }
   },
-  
+
   // METADATA
   "generatedAt": "2025-06-17T18:00:00.000Z",
   "version": "3.0",
-  "type": "educational", 
+  "type": "educational",
   "locked": true,
   "lockedAt": "2025-06-17T18:00:00.000Z",
   "lockedBy": "user",
-  
+
   // HERO IMAGE PATH (REQUIRED)
   "heroImage": "/images/hero/theme-1-genres/series-1-noir/1-episode.jpg"
 }
@@ -131,16 +130,18 @@ Example: `genius-1-1-1.json` (Theme 1, Series 1, Episode 1)
 ## Section Types Explained
 
 ### 1. Text Sections
+
 Standard paragraph content. Should be substantial (100+ words) and educational.
 
 ```json
 {
-  "type": "text", 
+  "type": "text",
   "content": "Long-form educational content about the topic..."
 }
 ```
 
 ### 2. Movies Sections
+
 Movie cards that display with "Featured Films" header.
 
 ```json
@@ -150,7 +151,7 @@ Movie cards that display with "Featured Films" header.
     {
       "title": "Movie Title", // REQUIRED
       "year": 1944, // REQUIRED - Number
-      "slug": "Description text", // REQUIRED - Movie description  
+      "slug": "Description text", // REQUIRED - Movie description
       "tmdb_id": 12345, // REQUIRED - For poster fetching
       "poster_url": "https://...", // OPTIONAL - Direct poster URL
       "streaming": null // OPTIONAL - Streaming info
@@ -160,6 +161,7 @@ Movie cards that display with "Featured Films" header.
 ```
 
 ### 3. Subhead Sections
+
 Section dividers with gold styling.
 
 ```json
@@ -170,20 +172,21 @@ Section dividers with gold styling.
 ```
 
 ### 4. Explore Further Sections
+
 Interactive prompts that link to ask page. **Required for complete episodes.**
 
-**Important**: Explore further sections should be **interleaved throughout the content**, not just at the end.
+**Important**: Explore further sections should be **interleaved throughout the
+content**, not just at the end.
 
 ```json
 {
-  "type": "explore_further", 
-  "prompts": [
-    "Single focused question about the preceding content?"
-  ]
+  "type": "explore_further",
+  "prompts": ["Single focused question about the preceding content?"]
 }
 ```
 
-**Best Practice**: 
+**Best Practice**:
+
 - Use multiple explore_further sections throughout the episode
 - Each section should have 1-2 focused prompts
 - Place them after related text/movie sections
@@ -192,6 +195,7 @@ Interactive prompts that link to ask page. **Required for complete episodes.**
 **Behavior**: Clicking a prompt navigates to `/ask?q=${episodeTitle}: ${prompt}`
 
 ### 5. More Ideas Section
+
 Additional related films. **Required for complete episodes.**
 
 ```json
@@ -208,6 +212,7 @@ Additional related films. **Required for complete episodes.**
 Hero images must exist at the specified path in `/public/images/hero/`.
 
 **Directory Structure**:
+
 ```
 /public/images/hero/
   theme-1-genres/
@@ -219,6 +224,7 @@ Hero images must exist at the specified path in `/public/images/hero/`.
 ```
 
 **Image Requirements**:
+
 - Format: JPG or PNG
 - Aspect ratio: 16:9 or similar landscape
 - Minimum width: 800px
@@ -226,27 +232,32 @@ Hero images must exist at the specified path in `/public/images/hero/`.
 
 ## Series Navigation
 
-The footer shows "More in [Series Title]" and lists other episodes in the same series.
+The footer shows "More in [Series Title]" and lists other episodes in the same
+series.
 
 **Important**: Series titles should be clean without date ranges:
-- ✅ "Classic Film Noir"  
+
+- ✅ "Classic Film Noir"
 - ❌ "Classic Film Noir (1940-1958)"
 
 ## Theme and Series Structure (65-Episode System)
 
 ### Themes:
+
 1. **Genres** - Film genres and their evolution
 2. **Directors** - Visionary filmmakers and their personal cinema
-3. **Movements** - Revolutionary cinema movements  
+3. **Movements** - Revolutionary cinema movements
 4. **Filmmaking** - The craft and technology of cinema
 5. **Topics** - Cultural and historical contexts
 
 ### URL Pattern:
+
 ```
 /genius/{themeId}/{seriesId}/{episodeId}
 ```
 
 Examples:
+
 - `/genius/1/1/1` - Theme 1, Series 1, Episode 1
 - `/genius/2/3/2` - Theme 2, Series 3, Episode 2
 
@@ -259,6 +270,7 @@ npm test tests/episode-structure.test.js
 ```
 
 **Tests verify**:
+
 - Required metadata fields
 - Hero image exists
 - Content sections are complete
@@ -270,20 +282,24 @@ npm test tests/episode-structure.test.js
 ## Common Issues
 
 ### Missing Explore Further
-**Problem**: Interactive prompts don't appear
-**Solution**: Ensure episode has `explore_further` section with `prompts` array
 
-### Wrong Footer Title  
-**Problem**: Footer shows "More in Classic Film Noir (1940-1958)"
-**Solution**: Update series title to remove date range
+**Problem**: Interactive prompts don't appear **Solution**: Ensure episode has
+`explore_further` section with `prompts` array
+
+### Wrong Footer Title
+
+**Problem**: Footer shows "More in Classic Film Noir (1940-1958)" **Solution**:
+Update series title to remove date range
 
 ### Broken Hero Image
-**Problem**: Default image shows instead of episode image
-**Solution**: Verify `heroImage` path exists in `/public/images/hero/`
+
+**Problem**: Default image shows instead of episode image **Solution**: Verify
+`heroImage` path exists in `/public/images/hero/`
 
 ### Missing More Ideas
-**Problem**: "Related Films" section doesn't appear
-**Solution**: Ensure `moreIdeas` object exists with `movies` array
+
+**Problem**: "Related Films" section doesn't appear **Solution**: Ensure
+`moreIdeas` object exists with `movies` array
 
 ## Creating New Episodes
 
@@ -297,7 +313,8 @@ npm test tests/episode-structure.test.js
 
 ## Best Practices
 
-- **Educational Content**: Write substantial, informative paragraphs (120-150 words each)
+- **Educational Content**: Write substantial, informative paragraphs (120-150
+  words each)
 - **Movie Selection**: Choose films that illustrate the topic effectively
 - **Question Writing**: Create thought-provoking explore further prompts
 - **Visual Hierarchy**: Use subheads to organize long content

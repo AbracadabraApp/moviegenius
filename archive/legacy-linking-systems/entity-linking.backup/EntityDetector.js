@@ -5,29 +5,29 @@ import { EntityConfig } from './EntityConfig.js';
 
 /**
  * Unified entity detection system for people and movies
- * 
+ *
  * ARCHITECTURE:
  * - PersonRegistry: Detects people using names, variations, and context
  * - MovieRegistry: Detects movies from discovered-movies.json data
  * - EntityConfig: Configurable thresholds, exclusions, and feature toggles
- * 
+ *
  * DETECTION STRATEGIES:
  * - Exact name/title matches (high confidence)
- * - Name variations ("Nolan" → "Christopher Nolan") 
+ * - Name variations ("Nolan" → "Christopher Nolan")
  * - Quoted text ("Inception", "Martin Scorsese")
  * - Title+year patterns ("Inception (2010)")
  * - Context-aware matching (film discussions vs general text)
- * 
+ *
  * PERFORMANCE:
  * - 5-minute response cache for repeated text processing
  * - Parallel entity detection (people + movies simultaneously)
  * - Configurable timeouts and limits
- * 
+ *
  * INTEGRATION:
  * - Replaces underlineProperNames with enhanced functionality
  * - Falls back gracefully if detection fails
  * - Supports React components via EntityLinkedText
- * 
+ *
  * @example
  * const result = await entityDetector.processText(
  *   "Christopher Nolan's Inception (2010) features complex themes",
@@ -54,7 +54,7 @@ export class EntityDetector {
       linkMovies = true,
       context = 'general',
       currentEntity = null,
-      useCache = true
+      useCache = true,
     } = options;
 
     if (!text || typeof text !== 'string') {
@@ -62,7 +62,7 @@ export class EntityDetector {
         originalText: text,
         linkedText: text,
         entities: { people: [], movies: [] },
-        stats: { processingTime: 0, entitiesFound: 0, linksCreated: 0 }
+        stats: { processingTime: 0, entitiesFound: 0, linksCreated: 0 },
       };
     }
 
@@ -78,35 +78,37 @@ export class EntityDetector {
 
     try {
       const startTime = Date.now();
-      
+
       // Detect all entities in parallel
       const detectionPromises = [];
-      
+
       if (linkPeople && this.config.isEnabled('people')) {
         detectionPromises.push(
-          this.personRegistry.detectPeople(text, context)
+          this.personRegistry
+            .detectPeople(text, context)
             .then(people => ({ type: 'people', entities: people }))
         );
       }
-      
+
       if (linkMovies && this.config.isEnabled('movies')) {
         detectionPromises.push(
-          this.movieRegistry.detectMovies(text, context)
+          this.movieRegistry
+            .detectMovies(text, context)
             .then(movies => ({ type: 'movies', entities: movies }))
         );
       }
 
       const detectionResults = await Promise.all(detectionPromises);
-      
+
       // Merge and filter entities
       const allEntities = this.mergeDetectionResults(detectionResults);
       const filteredEntities = this.filterEntities(allEntities, context, currentEntity);
-      
+
       // Create linked text
       const linkedText = await this.createLinkedText(text, filteredEntities);
-      
+
       const processingTime = Date.now() - startTime;
-      
+
       const result = {
         originalText: text,
         linkedText: linkedText,
@@ -114,20 +116,19 @@ export class EntityDetector {
         stats: {
           processingTime,
           entitiesFound: this.countEntities(filteredEntities),
-          linksCreated: this.countLinks(linkedText)
-        }
+          linksCreated: this.countLinks(linkedText),
+        },
       };
 
       // Cache the result
       if (useCache) {
         this.cache.set(cacheKey, {
           result,
-          timestamp: Date.now()
+          timestamp: Date.now(),
         });
       }
 
       return result;
-
     } catch (error) {
       console.error('Entity processing failed:', error);
       return {
@@ -135,7 +136,7 @@ export class EntityDetector {
         linkedText: text,
         entities: { people: [], movies: [] },
         stats: { processingTime: 0, entitiesFound: 0, linksCreated: 0 },
-        error: error.message
+        error: error.message,
       };
     }
   }
@@ -153,7 +154,7 @@ export class EntityDetector {
    */
   async processTextForReact(text, options = {}) {
     const result = await this.processText(text, options);
-    
+
     if (!result.linkedText || result.linkedText === text) {
       return [text];
     }
@@ -168,7 +169,7 @@ export class EntityDetector {
   mergeDetectionResults(detectionResults) {
     const merged = {
       people: [],
-      movies: []
+      movies: [],
     };
 
     detectionResults.forEach(result => {
@@ -184,17 +185,17 @@ export class EntityDetector {
 
   /**
    * Filter entities based on configuration and context
-   * 
+   *
    * FILTERING RULES:
    * 1. Self-reference prevention (don't link to current page)
-   * 2. Confidence thresholds (configurable per entity type)  
+   * 2. Confidence thresholds (configurable per entity type)
    * 3. Category exclusions (historical figures, fictional characters)
    * 4. Link limits (max 15 people, 10 movies per text)
-   * 
+   *
    * PERFORMANCE: This is called after detection, so we optimize for
    * accuracy over speed. Better to filter out false positives here
    * than create bad user experiences with incorrect links.
-   * 
+   *
    * @param {Object} entities - Raw detection results from registries
    * @param {string} context - Page context (movie-page, conversation, etc)
    * @param {Object} currentEntity - Current page entity to avoid self-links
@@ -203,15 +204,14 @@ export class EntityDetector {
   filterEntities(entities, context, currentEntity) {
     const filtered = {
       people: [],
-      movies: []
+      movies: [],
     };
 
     // Filter people
     if (entities.people) {
       filtered.people = entities.people.filter(match => {
         // Don't link to current person on their own page
-        if (currentEntity?.type === 'person' && 
-            currentEntity?.slug === match.person?.slug) {
+        if (currentEntity?.type === 'person' && currentEntity?.slug === match.person?.slug) {
           return false;
         }
 
@@ -239,8 +239,7 @@ export class EntityDetector {
     if (entities.movies) {
       filtered.movies = entities.movies.filter(match => {
         // Don't link to current movie on its own page
-        if (currentEntity?.type === 'movie' && 
-            currentEntity?.slug === match.movie?.slug) {
+        if (currentEntity?.type === 'movie' && currentEntity?.slug === match.movie?.slug) {
           return false;
         }
 
@@ -275,7 +274,7 @@ export class EntityDetector {
         entityType: 'people',
         url: `/person/${match.person.slug}`,
         className: 'person-link',
-        dataId: match.person.slug
+        dataId: match.person.slug,
       });
     });
 
@@ -285,7 +284,7 @@ export class EntityDetector {
         entityType: 'movies',
         url: `/movie/${match.movie.slug}`,
         className: 'movie-link',
-        dataId: match.movie.id || match.movie.slug
+        dataId: match.movie.id || match.movie.slug,
       });
     });
 
@@ -308,7 +307,7 @@ export class EntityDetector {
     const dataAttributes = [
       `data-entity-type="${match.entityType}"`,
       `data-entity-id="${match.dataId}"`,
-      `data-confidence="${match.confidence}"`
+      `data-confidence="${match.confidence}"`,
     ].join(' ');
 
     return `<a href="${match.url}" class="${match.className}" ${dataAttributes}>${match.text}</a>`;
@@ -332,7 +331,7 @@ export class EntityDetector {
       linkPeople: options.linkPeople,
       linkMovies: options.linkMovies,
       context: options.context,
-      currentEntity: options.currentEntity?.slug
+      currentEntity: options.currentEntity?.slug,
     };
     return JSON.stringify(keyData);
   }
@@ -374,7 +373,7 @@ export class EntityDetector {
   getCacheStats() {
     return {
       size: this.cache.size,
-      timeout: this.cacheTimeout
+      timeout: this.cacheTimeout,
     };
   }
 
@@ -397,7 +396,7 @@ export class EntityDetector {
   async getStats() {
     const [personStats, movieStats] = await Promise.all([
       this.personRegistry.getStats(),
-      this.movieRegistry.getStats()
+      this.movieRegistry.getStats(),
     ]);
 
     return {
@@ -407,8 +406,8 @@ export class EntityDetector {
       config: {
         enabled: this.config.isEnabled(),
         peopleEnabled: this.config.isEnabled('people'),
-        moviesEnabled: this.config.isEnabled('movies')
-      }
+        moviesEnabled: this.config.isEnabled('movies'),
+      },
     };
   }
 

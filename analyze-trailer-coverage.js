@@ -10,7 +10,7 @@ function analyzeMoviesByEra(movies) {
     '1980-1999': { count: 0, movies: [] },
     '2000-2009': { count: 0, movies: [] },
     '2010-2019': { count: 0, movies: [] },
-    '2020+': { count: 0, movies: [] }
+    '2020+': { count: 0, movies: [] },
   };
 
   movies.forEach(movie => {
@@ -39,39 +39,50 @@ function analyzeMoviesByEra(movies) {
 function categorizeMoviesByType(movies) {
   const categories = {
     'major-studio': { count: 0, examples: [] },
-    'independent': { count: 0, examples: [] },
-    'international': { count: 0, examples: [] },
-    'documentary': { count: 0, examples: [] },
-    'arthouse': { count: 0, examples: [] }
+    independent: { count: 0, examples: [] },
+    international: { count: 0, examples: [] },
+    documentary: { count: 0, examples: [] },
+    arthouse: { count: 0, examples: [] },
   };
 
   // Simple heuristics based on movie titles, streaming platforms, and tmdb_ids
   movies.forEach(movie => {
     const title = movie.title.toLowerCase();
     const streaming = movie.streaming_data ? movie.streaming_data.toLowerCase() : '';
-    
+
     // International films indicators
-    if (title.includes('[') || title.includes('foreign') || 
-        streaming.includes('criterion') || title.match(/[^\w\s]/)) {
+    if (
+      title.includes('[') ||
+      title.includes('foreign') ||
+      streaming.includes('criterion') ||
+      title.match(/[^\w\s]/)
+    ) {
       categories['international'].count++;
       categories['international'].examples.push(`${movie.title} (${movie.year})`);
     }
     // Documentary indicators
-    else if (title.includes('documentary') || title.includes('story of') ||
-        streaming.includes('documentary')) {
+    else if (
+      title.includes('documentary') ||
+      title.includes('story of') ||
+      streaming.includes('documentary')
+    ) {
       categories['documentary'].count++;
       categories['documentary'].examples.push(`${movie.title} (${movie.year})`);
     }
     // Art house indicators
-    else if (streaming.includes('criterion') || streaming.includes('mubi') ||
-        title.length > 30) {
+    else if (streaming.includes('criterion') || streaming.includes('mubi') || title.length > 30) {
       categories['arthouse'].count++;
       categories['arthouse'].examples.push(`${movie.title} (${movie.year})`);
     }
     // Major studio indicators (high tmdb_id usually means popular/major)
-    else if (movie.tmdb_id > 10000 && movie.year >= 2000 && 
-        (streaming.includes('netflix') || streaming.includes('hulu') || 
-         streaming.includes('prime') || streaming.includes('disney'))) {
+    else if (
+      movie.tmdb_id > 10000 &&
+      movie.year >= 2000 &&
+      (streaming.includes('netflix') ||
+        streaming.includes('hulu') ||
+        streaming.includes('prime') ||
+        streaming.includes('disney'))
+    ) {
       categories['major-studio'].count++;
       categories['major-studio'].examples.push(`${movie.title} (${movie.year})`);
     }
@@ -91,16 +102,16 @@ function estimateTrailerCoverage(eras, categories) {
     'pre-1980': 0.15, // Very few digital trailers available
     '1980-1999': 0.35, // Some major films have trailers digitized
     '2000-2009': 0.75, // Most major films, some independents
-    '2010-2019': 0.90, // Nearly all films have trailers
-    '2020+': 0.95 // Almost universal trailer availability
+    '2010-2019': 0.9, // Nearly all films have trailers
+    '2020+': 0.95, // Almost universal trailer availability
   };
 
   const typeMultipliers = {
     'major-studio': 1.2,
-    'independent': 0.7,
-    'international': 0.6,
-    'documentary': 0.8,
-    'arthouse': 0.5
+    independent: 0.7,
+    international: 0.6,
+    documentary: 0.8,
+    arthouse: 0.5,
   };
 
   let totalEstimatedTrailers = 0;
@@ -118,10 +129,10 @@ function estimateTrailerCoverage(eras, categories) {
     eraBreakdown: Object.keys(eras).map(era => ({
       era,
       count: eras[era].count,
-      estimatedCoverage: trailerEstimates[era] * 100
+      estimatedCoverage: trailerEstimates[era] * 100,
     })),
     totalMovies,
-    estimatedTrailersAvailable: Math.round(totalEstimatedTrailers)
+    estimatedTrailersAvailable: Math.round(totalEstimatedTrailers),
   };
 }
 

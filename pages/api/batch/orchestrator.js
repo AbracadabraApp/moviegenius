@@ -1,6 +1,6 @@
 /**
  * Railway Batch Orchestrator
- * 
+ *
  * Single endpoint that intelligently manages all batch processing
  * Handles movies, people, lists, and status checks based on timing
  */
@@ -22,12 +22,12 @@ export default async function handler(req, res) {
     const hour = now.getHours();
     const minute = now.getMinutes();
     const dayOfWeek = now.getDay(); // 0 = Sunday
-    
+
     const results = [];
-    const baseUrl = req.headers.host.includes('localhost') 
-      ? 'http://localhost:3000' 
+    const baseUrl = req.headers.host.includes('localhost')
+      ? 'http://localhost:3000'
       : `https://${req.headers.host}`;
-    
+
     console.log(`🤖 Batch Orchestrator running at ${now.toISOString()}`);
 
     // Always check status first
@@ -35,17 +35,17 @@ export default async function handler(req, res) {
       const statusResponse = await fetch(`${baseUrl}/api/batch/status`, {
         method: 'POST',
         headers: {
-          'Authorization': req.headers.authorization,
-          'Content-Type': 'application/json'
-        }
+          Authorization: req.headers.authorization,
+          'Content-Type': 'application/json',
+        },
       });
-      
+
       if (statusResponse.ok) {
         const statusData = await statusResponse.json();
         results.push({
           task: 'status_check',
           status: 'success',
-          data: statusData
+          data: statusData,
         });
         console.log('✅ Status check completed');
       }
@@ -53,7 +53,7 @@ export default async function handler(req, res) {
       results.push({
         task: 'status_check',
         status: 'error',
-        error: error.message
+        error: error.message,
       });
       console.error('❌ Status check failed:', error.message);
     }
@@ -65,17 +65,17 @@ export default async function handler(req, res) {
         const movieResponse = await fetch(`${baseUrl}/api/batch/movies`, {
           method: 'POST',
           headers: {
-            'Authorization': req.headers.authorization,
-            'Content-Type': 'application/json'
-          }
+            Authorization: req.headers.authorization,
+            'Content-Type': 'application/json',
+          },
         });
-        
+
         if (movieResponse.ok) {
           const movieData = await movieResponse.json();
           results.push({
             task: 'movie_analysis',
             status: 'success',
-            data: movieData
+            data: movieData,
           });
           console.log('✅ Movie batch created:', movieData.batch_id);
         }
@@ -83,7 +83,7 @@ export default async function handler(req, res) {
         results.push({
           task: 'movie_analysis',
           status: 'error',
-          error: error.message
+          error: error.message,
         });
         console.error('❌ Movie batch failed:', error.message);
       }
@@ -96,17 +96,17 @@ export default async function handler(req, res) {
         const peopleResponse = await fetch(`${baseUrl}/api/batch/people`, {
           method: 'POST',
           headers: {
-            'Authorization': req.headers.authorization,
-            'Content-Type': 'application/json'
-          }
+            Authorization: req.headers.authorization,
+            'Content-Type': 'application/json',
+          },
         });
-        
+
         if (peopleResponse.ok) {
           const peopleData = await peopleResponse.json();
           results.push({
             task: 'people_discovery',
             status: 'success',
-            data: peopleData
+            data: peopleData,
           });
           console.log('✅ People discovery completed:', peopleData.people_created);
         }
@@ -114,7 +114,7 @@ export default async function handler(req, res) {
         results.push({
           task: 'people_discovery',
           status: 'error',
-          error: error.message
+          error: error.message,
         });
         console.error('❌ People discovery failed:', error.message);
       }
@@ -127,17 +127,17 @@ export default async function handler(req, res) {
         const listResponse = await fetch(`${baseUrl}/api/batch/lists`, {
           method: 'POST',
           headers: {
-            'Authorization': req.headers.authorization,
-            'Content-Type': 'application/json'
-          }
+            Authorization: req.headers.authorization,
+            'Content-Type': 'application/json',
+          },
         });
-        
+
         if (listResponse.ok) {
           const listData = await listResponse.json();
           results.push({
             task: 'list_analysis',
             status: 'success',
-            data: listData
+            data: listData,
           });
           console.log('✅ List analysis completed:', listData.lists_processed);
         }
@@ -145,7 +145,7 @@ export default async function handler(req, res) {
         results.push({
           task: 'list_analysis',
           status: 'error',
-          error: error.message
+          error: error.message,
         });
         console.error('❌ List analysis failed:', error.message);
       }
@@ -154,7 +154,7 @@ export default async function handler(req, res) {
     // Summary
     const successful = results.filter(r => r.status === 'success').length;
     const failed = results.filter(r => r.status === 'error').length;
-    
+
     console.log(`📊 Orchestrator completed: ${successful} successful, ${failed} failed`);
 
     return res.status(200).json({
@@ -167,15 +167,14 @@ export default async function handler(req, res) {
       successful: successful,
       failed: failed,
       results: results,
-      message: `Orchestrator completed ${results.length} tasks`
+      message: `Orchestrator completed ${results.length} tasks`,
     });
-
   } catch (error) {
     console.error('💥 Orchestrator failed:', error);
     return res.status(500).json({
       success: false,
       error: error.message,
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   }
 }

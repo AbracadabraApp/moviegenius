@@ -18,7 +18,8 @@ Add these scripts to your package.json:
    - Uses concurrency limiting to respect API rate limits
    - Saves static content to `data/episodes/` directory
 
-2. **Generate single episode**: `npm run generate-episodes-single -- --series=2 --episode=1`
+2. **Generate single episode**:
+   `npm run generate-episodes-single -- --series=2 --episode=1`
    - Generates content for a specific episode
    - Useful for testing or regenerating specific content
 
@@ -36,7 +37,8 @@ data/
 ## Benefits
 
 - **Instant loading**: Pages load immediately from static files
-- **Dynamic enhancements**: MediaCards still fetch real-time streaming/poster data
+- **Dynamic enhancements**: MediaCards still fetch real-time streaming/poster
+  data
 - **Consistent quality**: All content generated with same high-quality prompts
 - **Cost effective**: Generate once, serve many times
 - **Cacheable**: Static files can be CDN cached for global performance

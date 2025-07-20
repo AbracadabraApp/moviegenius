@@ -2,7 +2,7 @@
 
 /**
  * Test Episodes Table Script
- * 
+ *
  * Tests if the episodes table exists and can be queried.
  */
 
@@ -11,23 +11,22 @@ import { EpisodeService } from '../lib/supabase.js';
 async function testEpisodesTable() {
   try {
     console.log('🔍 Testing episodes table...');
-    
+
     // Try to get any episode
     const result = await EpisodeService.getEpisode(1, 1, 1);
-    
+
     if (result) {
       console.log('✅ Episodes table exists and has data!');
       console.log('📊 Sample episode:', result.title);
     } else {
       console.log('📝 Episodes table exists but no episode 1-1-1 found');
     }
-    
+
     // Try to get all episodes to see current count
     const allEpisodes = await EpisodeService.getAllEpisodes();
     if (allEpisodes) {
       console.log(`📊 Total episodes in database: ${allEpisodes.length}`);
     }
-    
   } catch (error) {
     if (error.message.includes('relation "episodes" does not exist')) {
       console.log('❌ Episodes table does not exist yet');

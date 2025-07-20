@@ -22,7 +22,9 @@ export default async function handler(req, res) {
     // Query person from database
     let query = supabase
       .from('people')
-      .select('id, name, birth_year, death_year, biography, profile_url, known_for_department, tmdb_id')
+      .select(
+        'id, name, birth_year, death_year, biography, profile_url, known_for_department, tmdb_id'
+      )
       .eq('name', name);
 
     // Add birth year filter if provided

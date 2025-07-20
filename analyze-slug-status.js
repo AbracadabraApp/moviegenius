@@ -2,7 +2,7 @@
 
 /**
  * Analyze Slug Status for Nuclear Candidates
- * 
+ *
  * This script analyzes the slug status of nuclear candidate movies
  * to determine how many need slug generation work.
  */
@@ -42,7 +42,17 @@ async function analyzeSlugStatus() {
     let hasBadPatterns = 0;
     let goodSlugs = 0;
 
-    const badPatterns = ['Plot:', 'Overview:', 'Synopsis:', 'starring', 'stars', 'features', 'follows', 'story of', 'about'];
+    const badPatterns = [
+      'Plot:',
+      'Overview:',
+      'Synopsis:',
+      'starring',
+      'stars',
+      'features',
+      'follows',
+      'story of',
+      'about',
+    ];
 
     nuclearCandidates.forEach(movie => {
       const slug = movie.slug;
@@ -95,17 +105,19 @@ async function analyzeSlugStatus() {
     console.log('');
 
     console.log(`🎯 SUMMARY:`);
-    console.log(`Movies needing slug work: ${totalNeedingWork} / ${nuclearCandidates.length} (${(totalNeedingWork/nuclearCandidates.length*100).toFixed(1)}%)`);
-    console.log(`Movies with good slugs: ${goodSlugs} / ${nuclearCandidates.length} (${(goodSlugs/nuclearCandidates.length*100).toFixed(1)}%)`);
+    console.log(
+      `Movies needing slug work: ${totalNeedingWork} / ${nuclearCandidates.length} (${((totalNeedingWork / nuclearCandidates.length) * 100).toFixed(1)}%)`
+    );
+    console.log(
+      `Movies with good slugs: ${goodSlugs} / ${nuclearCandidates.length} (${((goodSlugs / nuclearCandidates.length) * 100).toFixed(1)}%)`
+    );
     console.log('');
 
     // Show some examples of bad slugs
     console.log(`📝 EXAMPLES OF BAD SLUGS:`);
-    
-    const tooLongExamples = nuclearCandidates
-      .filter(m => m.slug && m.slug.length > 50)
-      .slice(0, 3);
-    
+
+    const tooLongExamples = nuclearCandidates.filter(m => m.slug && m.slug.length > 50).slice(0, 3);
+
     if (tooLongExamples.length > 0) {
       console.log(`\nToo Long (${tooLongExamples.length} shown):`);
       tooLongExamples.forEach(movie => {
@@ -121,7 +133,7 @@ async function analyzeSlugStatus() {
         return badPatterns.some(pattern => lowerSlug.includes(pattern));
       })
       .slice(0, 3);
-    
+
     if (badPatternExamples.length > 0) {
       console.log(`\nBad Patterns (${badPatternExamples.length} shown):`);
       badPatternExamples.forEach(movie => {
@@ -133,14 +145,21 @@ async function analyzeSlugStatus() {
     console.log('');
     console.log(`💡 RECOMMENDATION:`);
     if (totalNeedingWork < 1000) {
-      console.log(`With ${totalNeedingWork} movies needing slug work, batch generation is recommended.`);
-      console.log(`Estimated cost: ~$${(totalNeedingWork * 0.005).toFixed(2)} (${totalNeedingWork} × $0.005)`);
+      console.log(
+        `With ${totalNeedingWork} movies needing slug work, batch generation is recommended.`
+      );
+      console.log(
+        `Estimated cost: ~$${(totalNeedingWork * 0.005).toFixed(2)} (${totalNeedingWork} × $0.005)`
+      );
     } else {
-      console.log(`With ${totalNeedingWork} movies needing work, consider organic generation for cost efficiency.`);
+      console.log(
+        `With ${totalNeedingWork} movies needing work, consider organic generation for cost efficiency.`
+      );
       console.log(`Batch cost: ~$${(totalNeedingWork * 0.005).toFixed(2)}`);
-      console.log(`Organic cost: Only pay for viewed movies (~20% = $${(totalNeedingWork * 0.2 * 0.005).toFixed(2)})`);
+      console.log(
+        `Organic cost: Only pay for viewed movies (~20% = $${(totalNeedingWork * 0.2 * 0.005).toFixed(2)})`
+      );
     }
-
   } catch (error) {
     console.error('❌ Analysis failed:', error);
     process.exit(1);

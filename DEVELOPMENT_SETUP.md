@@ -36,6 +36,7 @@ npm run lint
 ### Before Each Commit
 
 Your pre-commit hooks will automatically:
+
 - ✅ Run ESLint for code quality
 - ✅ Format code with Prettier
 - ✅ Check for API keys in code
@@ -74,18 +75,22 @@ git push origin feat/genius-episode-validation
 ## 🛡️ Automated Safeguards
 
 ### Pre-commit (Local)
+
 - Runs before each `git commit`
 - Prevents bad code from entering repo
 - Fast feedback loop
 
 ### GitHub Actions (Remote)
+
 - Runs on every push/PR
 - Builds project to verify it works
 - Blocks PRs that break build
 - Deploys to Railway automatically
 
 ### Branch Protection
+
 Configure in GitHub Settings > Branches:
+
 - ✅ Require PR reviews
 - ✅ Require status checks to pass
 - ✅ Require branches to be up to date
@@ -94,15 +99,17 @@ Configure in GitHub Settings > Branches:
 ## 🚨 Emergency Procedures
 
 ### Broken Build
+
 ```bash
 # If you break the build:
 1. git revert <bad-commit-hash>
-2. Push the revert immediately  
+2. Push the revert immediately
 3. Fix the issue in a new branch
 4. Create PR with the fix
 ```
 
 ### Bypassing Hooks (Emergency Only)
+
 ```bash
 # Skip pre-commit hooks (use sparingly!)
 git commit --no-verify -m "hotfix: Emergency production fix"
@@ -111,6 +118,7 @@ git commit --no-verify -m "hotfix: Emergency production fix"
 ## 📊 Quality Metrics
 
 The CI/CD system tracks:
+
 - **Build Success Rate**: Should be >95%
 - **Commit Message Quality**: Conventional format required
 - **Code Coverage**: Tests when available
@@ -119,6 +127,7 @@ The CI/CD system tracks:
 ## 🔧 Troubleshooting
 
 ### Pre-commit Hook Issues
+
 ```bash
 # Update hooks
 pre-commit autoupdate
@@ -129,6 +138,7 @@ pre-commit install --install-hooks
 ```
 
 ### ESLint Errors
+
 ```bash
 # Auto-fix many issues
 npm run lint -- --fix
@@ -138,6 +148,7 @@ npx eslint pages/api/series-episode.js
 ```
 
 ### Build Failures
+
 ```bash
 # Clear Next.js cache
 rm -rf .next

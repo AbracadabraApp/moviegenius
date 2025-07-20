@@ -10,14 +10,14 @@ import loadingMessages from '../../../data/loading-messages.json';
 export default function SeriesEpisodePage() {
   const router = useRouter();
   const { seriesId, episodeId } = router.query;
-  
-  // Redirect to the theme episode system 
+
+  // Redirect to the theme episode system
   useEffect(() => {
     if (seriesId && episodeId) {
       router.replace(`/${seriesId}/${episodeId}`);
     }
   }, [seriesId, episodeId, router]);
-  
+
   const [isLoading, setIsLoading] = useState(true);
   const [loadingMessage, setLoadingMessage] = useState('');
   const [loadingIcon, setLoadingIcon] = useState('');
@@ -28,7 +28,7 @@ export default function SeriesEpisodePage() {
   const [isLoadingExplore, setIsLoadingExplore] = useState(false);
   const [error, setError] = useState(null);
 
-  const handleSearchResults = (results) => {
+  const handleSearchResults = results => {
     // For now, just log the search results
     console.log('Search results on Series Episode page:', results);
   };
@@ -41,16 +41,16 @@ export default function SeriesEpisodePage() {
       const iconFiles = [
         'film-movie-reel-icon.png',
         'film-movie-icon.png',
-        'chair-director-outline-icon.png'
+        'chair-director-outline-icon.png',
       ];
-      
+
       const setRandomLoadingContent = () => {
         const randomMessage = loadingMessages[Math.floor(Math.random() * loadingMessages.length)];
         const randomIcon = iconFiles[Math.floor(Math.random() * iconFiles.length)];
         setLoadingMessage(randomMessage);
         setLoadingIcon(randomIcon);
       };
-      
+
       setRandomLoadingContent();
       const cycleInterval = setInterval(setRandomLoadingContent, 5000);
 
@@ -69,7 +69,7 @@ export default function SeriesEpisodePage() {
         }
 
         const data = await response.json();
-        
+
         // Set content using same structure as ask page
         setContent(data.data);
         setSeries(data.series);
@@ -83,8 +83,8 @@ export default function SeriesEpisodePage() {
             headers: {
               'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ 
-              query: `${data.episode.title}: ${data.episode.subtitle}` 
+            body: JSON.stringify({
+              query: `${data.episode.title}: ${data.episode.subtitle}`,
             }),
           });
 
@@ -100,7 +100,6 @@ export default function SeriesEpisodePage() {
 
         clearInterval(cycleInterval);
         setIsLoading(false);
-
       } catch (error) {
         console.error('Error loading episode:', error);
         setError(error.message);
@@ -117,7 +116,7 @@ export default function SeriesEpisodePage() {
       <PhoneFrame active="genius">
         <div style={styles.container}>
           {/* Back button for navigation */}
-          
+
           <div style={styles.fixedInputArea}>
             <SimpleSearch onResults={handleSearchResults} />
           </div>
@@ -134,16 +133,16 @@ export default function SeriesEpisodePage() {
       <PhoneFrame active="genius">
         <div style={styles.container}>
           {/* Back button for navigation */}
-          
+
           <div style={styles.fixedInputArea}>
             <SimpleSearch onResults={handleSearchResults} />
           </div>
           <div style={styles.loadingContainer}>
             <div style={styles.loadingRow}>
               {loadingIcon && (
-                <img 
-                  src={`/icons/loading/${loadingIcon}`} 
-                  alt="Loading..." 
+                <img
+                  src={`/icons/loading/${loadingIcon}`}
+                  alt="Loading..."
                   style={styles.filmIcon}
                 />
               )}
@@ -159,12 +158,12 @@ export default function SeriesEpisodePage() {
     <PhoneFrame active="genius">
       <div style={styles.container}>
         {/* Back button for navigation */}
-        
+
         {/* Fixed Ask Input Bar */}
         <div style={styles.fixedInputArea}>
           <SimpleSearch onResults={handleSearchResults} />
         </div>
-        
+
         {/* Scrollable Content - Same structure as ask page */}
         <div style={styles.scrollableContent}>
           <div style={styles.conversationArea}>
@@ -176,43 +175,38 @@ export default function SeriesEpisodePage() {
                   <div style={styles.episodeSubtitle}>{episode.subtitle}</div>
                 </>
               )}
-              
+
               {/* Opener Sentence */}
-              {content.opener && (
-                <div style={styles.opener}>{content.opener}</div>
-              )}
-              
+              {content.opener && <div style={styles.opener}>{content.opener}</div>}
+
               {/* Render sections - EXACT same pattern as ask page */}
-              {content.sections && content.sections.map((section, sectionIndex) => (
-                <div key={`section-${sectionIndex}`}>
-                  {section.type === 'text' && (
-                    <div style={styles.answer}>
-                      {underlineProperNames(section.content)}
-                    </div>
-                  )}
-                  {section.type === 'subhead' && (
-                    <div style={styles.subhead}>
-                      {section.content}
-                    </div>
-                  )}
-                  {section.type === 'movies' && section.movies && (
-                    <div style={styles.movieList}>
-                      {section.movies.map((movie, movieIndex) => (
-                        <MediaCard
-                          key={`${seriesId}-${episodeId}-${sectionIndex}-${movieIndex}`}
-                          title={movie.title}
-                          year={movie.year}
-                          initialSlug={movie.slug}
-                          initialPoster={movie.poster_url}
-                          initialStreaming={movie.streaming}
-                          tmdbId={movie.tmdb_id}
-                        />
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ))}
-              
+              {content.sections &&
+                content.sections.map((section, sectionIndex) => (
+                  <div key={`section-${sectionIndex}`}>
+                    {section.type === 'text' && (
+                      <div style={styles.answer}>{underlineProperNames(section.content)}</div>
+                    )}
+                    {section.type === 'subhead' && (
+                      <div style={styles.subhead}>{section.content}</div>
+                    )}
+                    {section.type === 'movies' && section.movies && (
+                      <div style={styles.movieList}>
+                        {section.movies.map((movie, movieIndex) => (
+                          <MediaCard
+                            key={`${seriesId}-${episodeId}-${sectionIndex}-${movieIndex}`}
+                            title={movie.title}
+                            year={movie.year}
+                            initialSlug={movie.slug}
+                            initialPoster={movie.poster_url}
+                            initialStreaming={movie.streaming}
+                            tmdbId={movie.tmdb_id}
+                          />
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ))}
+
               {/* Explore Further Section */}
               {exploreFurther.length > 0 && (
                 <div style={styles.exploreFurtherSection}>
@@ -224,17 +218,17 @@ export default function SeriesEpisodePage() {
                   ) : (
                     <div style={styles.topicList}>
                       {exploreFurther.map((topic, index) => (
-                        <div 
-                          key={`topic-${index}`} 
+                        <div
+                          key={`topic-${index}`}
                           style={styles.topicItem}
                           onClick={() => {
                             router.push(`/ask?q=${encodeURIComponent(topic)}`);
                           }}
-                          onMouseEnter={(e) => {
+                          onMouseEnter={e => {
                             e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
                             e.currentTarget.style.transform = 'translateY(-2px)';
                           }}
-                          onMouseLeave={(e) => {
+                          onMouseLeave={e => {
                             e.currentTarget.style.boxShadow = '0 2px 6px rgba(0, 0, 0, 0.12)';
                             e.currentTarget.style.transform = 'translateY(0)';
                           }}
@@ -246,7 +240,7 @@ export default function SeriesEpisodePage() {
                   )}
                 </div>
               )}
-              
+
               {/* More Episodes Section */}
               {series && series.episodes && (
                 <div style={styles.moreEpisodesSection}>
@@ -254,18 +248,18 @@ export default function SeriesEpisodePage() {
                   <div style={styles.episodeGrid}>
                     {series.episodes
                       .filter(ep => ep.id.toString() !== episodeId)
-                      .map((ep) => (
-                        <div 
+                      .map(ep => (
+                        <div
                           key={ep.id}
                           style={styles.episodeCard}
                           onClick={() => {
                             router.push(`/recs/${seriesId}/${ep.id}`);
                           }}
-                          onMouseEnter={(e) => {
+                          onMouseEnter={e => {
                             e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.35)';
                             e.currentTarget.style.transform = 'translateY(-2px)';
                           }}
-                          onMouseLeave={(e) => {
+                          onMouseLeave={e => {
                             e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
                             e.currentTarget.style.transform = 'translateY(0)';
                           }}
@@ -291,26 +285,28 @@ export default function SeriesEpisodePage() {
                   </div>
                 </div>
               )}
-              
+
               {/* More Ideas Section - Moved to bottom */}
-              {content.moreIdeas && content.moreIdeas.movies && content.moreIdeas.movies.length > 0 && (
-                <div style={styles.moreIdeasSection}>
-                  <h3 style={styles.moreIdeasTitle}>{content.moreIdeas.title}</h3>
-                  <div style={styles.movieList}>
-                    {content.moreIdeas.movies.map((movie, index) => (
-                      <MediaCard
-                        key={`more-${seriesId}-${episodeId}-${index}`}
-                        title={movie.title}
-                        year={movie.year}
-                        initialSlug={movie.slug}
-                        initialPoster={movie.poster_url}
-                        initialStreaming={movie.streaming}
-                        tmdbId={movie.tmdb_id}
-                      />
-                    ))}
+              {content.moreIdeas &&
+                content.moreIdeas.movies &&
+                content.moreIdeas.movies.length > 0 && (
+                  <div style={styles.moreIdeasSection}>
+                    <h3 style={styles.moreIdeasTitle}>{content.moreIdeas.title}</h3>
+                    <div style={styles.movieList}>
+                      {content.moreIdeas.movies.map((movie, index) => (
+                        <MediaCard
+                          key={`more-${seriesId}-${episodeId}-${index}`}
+                          title={movie.title}
+                          year={movie.year}
+                          initialSlug={movie.slug}
+                          initialPoster={movie.poster_url}
+                          initialStreaming={movie.streaming}
+                          tmdbId={movie.tmdb_id}
+                        />
+                      ))}
+                    </div>
                   </div>
-                </div>
-              )}
+                )}
             </div>
           </div>
         </div>
@@ -324,7 +320,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     height: '100%',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   fixedInputArea: {
     position: 'sticky',

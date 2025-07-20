@@ -15,11 +15,11 @@ export default async function handler(req, res) {
 
   try {
     const { sections = ['trending', 'popular', 'recent'], limit = 12 } = req.body;
-    
+
     console.log(`🎬 Loading discovery sections: ${sections.join(', ')}`);
-    
+
     const results = {};
-    
+
     // Load each requested section
     for (const section of sections) {
       switch (section) {
@@ -41,23 +41,26 @@ export default async function handler(req, res) {
     }
 
     const loadTime = Date.now() - startTime;
-    
-    console.log(`✅ Discovery loaded in ${loadTime}ms: ${Object.keys(results).map(k => `${k}: ${results[k]?.length || 0}`).join(', ')}`);
+
+    console.log(
+      `✅ Discovery loaded in ${loadTime}ms: ${Object.keys(results)
+        .map(k => `${k}: ${results[k]?.length || 0}`)
+        .join(', ')}`
+    );
 
     res.status(200).json({
       ...results,
       loadTime,
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
-
   } catch (error) {
     const loadTime = Date.now() - startTime;
     console.error('Discovery API error:', error);
-    
+
     res.status(500).json({
       error: 'Failed to load discovery content',
       message: error.message,
-      loadTime
+      loadTime,
     });
   }
 }
@@ -78,10 +81,8 @@ async function getTrendingMovies(limit = 12) {
 
     // Prioritize movies with good metadata
     const filtered = data
-      .filter(movie => 
-        movie.poster_url && 
-        !movie.poster_url.includes('placeholder') &&
-        movie.year >= 2015
+      .filter(
+        movie => movie.poster_url && !movie.poster_url.includes('placeholder') && movie.year >= 2015
       )
       .slice(0, limit);
 
@@ -102,18 +103,18 @@ async function getPopularMovies(limit = 12) {
       .not('tmdb_id', 'is', null)
       .not('poster_url', 'is', null)
       .in('tmdb_id', [
-        238,   // The Godfather
-        278,   // The Shawshank Redemption  
-        603,   // The Matrix
-        680,   // Pulp Fiction
-        155,   // The Dark Knight
-        13,    // Forrest Gump
-        122,   // The Lord of the Rings: The Return of the King
-        550,   // Fight Club
+        238, // The Godfather
+        278, // The Shawshank Redemption
+        603, // The Matrix
+        680, // Pulp Fiction
+        155, // The Dark Knight
+        13, // Forrest Gump
+        122, // The Lord of the Rings: The Return of the King
+        550, // Fight Club
         11216, // Star Wars
-        769,   // GoodFellas
-        289,   // Casablanca
-        19404  // Dilwale Dulhania Le Jayenge
+        769, // GoodFellas
+        289, // Casablanca
+        19404, // Dilwale Dulhania Le Jayenge
       ])
       .limit(limit);
 
@@ -133,11 +134,7 @@ async function getPopularMovies(limit = 12) {
 
     if (error) throw error;
 
-    return data.filter(movie => 
-      movie.poster_url && 
-      !movie.poster_url.includes('placeholder')
-    );
-
+    return data.filter(movie => movie.poster_url && !movie.poster_url.includes('placeholder'));
   } catch (error) {
     console.error('Failed to load popular movies:', error);
     return [];
@@ -159,11 +156,12 @@ async function getRecentMovies(limit = 12) {
 
     // Filter out placeholder posters and ensure good quality
     const filtered = data
-      .filter(movie => 
-        movie.poster_url && 
-        !movie.poster_url.includes('placeholder') &&
-        movie.year && 
-        movie.year >= 1970
+      .filter(
+        movie =>
+          movie.poster_url &&
+          !movie.poster_url.includes('placeholder') &&
+          movie.year &&
+          movie.year >= 1970
       )
       .slice(0, limit);
 
@@ -191,10 +189,7 @@ async function getRandomMovies(limit = 12) {
 
     // Client-side shuffle and filter
     const filtered = data
-      .filter(movie => 
-        movie.poster_url && 
-        !movie.poster_url.includes('placeholder')
-      )
+      .filter(movie => movie.poster_url && !movie.poster_url.includes('placeholder'))
       .sort(() => Math.random() - 0.5) // Simple shuffle
       .slice(0, limit);
 

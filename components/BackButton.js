@@ -1,13 +1,13 @@
 /**
  * BackButton Component - 🔒 STANDARDIZED NAVIGATION 🔒
- * 
+ *
  * ⚠️  CRITICAL: Provides consistent back navigation across the entire app
  * ⚠️  DO NOT create custom back button implementations
  * ⚠️  ALWAYS use this component for back navigation
- * 
+ *
  * Standardized back button with smart navigation, consistent styling,
  * and proper browser history integration.
- * 
+ *
  * @component
  * @version STANDARD-2025-06-25
  * @example
@@ -21,7 +21,7 @@ import { CircleChevronLeft, ArrowLeft, ChevronLeft } from 'lucide-react';
 
 /**
  * BackButton - Standardized navigation component
- * 
+ *
  * @param {Object} props
  * @param {string} props.variant - Visual style: 'icon', 'text', 'iconText' (default: 'icon')
  * @param {string} props.method - Navigation method: 'history', 'router', 'smart' (default: 'smart')
@@ -33,16 +33,16 @@ import { CircleChevronLeft, ArrowLeft, ChevronLeft } from 'lucide-react';
  * @param {Object} props.style - Additional styles (optional)
  * @param {Function} props.onClick - Custom click handler (optional)
  */
-export default function BackButton({ 
+export default function BackButton({
   variant = 'icon',
-  method = 'smart', 
+  method = 'smart',
   context,
   fallbackRoute = '/ask',
   position = 'top-left',
   size = 'medium',
   customText,
   style = {},
-  onClick
+  onClick,
 }) {
   const router = useRouter();
   const [canGoBack, setCanGoBack] = useState(false);
@@ -51,7 +51,7 @@ export default function BackButton({
   // 🔒 LOCKED: Browser history detection
   useEffect(() => {
     setIsClient(true);
-    
+
     // Check if there's history to go back to
     if (typeof window !== 'undefined') {
       setCanGoBack(window.history.length > 1);
@@ -61,12 +61,12 @@ export default function BackButton({
   // 🔒 LOCKED: Context-aware fallback routes
   const getFallbackRoute = useCallback(() => {
     if (customText) return fallbackRoute;
-    
+
     switch (context) {
       case 'movie':
         return '/ask'; // Return to search/ask page
       case 'person':
-        return '/ask'; // Return to search/ask page  
+        return '/ask'; // Return to search/ask page
       case 'list':
         return '/recs'; // Return to recommendations
       case 'episode':
@@ -114,7 +114,7 @@ export default function BackButton({
   // 🔒 LOCKED: Context-aware text generation
   const getBackText = useCallback(() => {
     if (customText) return customText;
-    
+
     switch (context) {
       case 'movie':
         return 'Back to search';
@@ -132,7 +132,7 @@ export default function BackButton({
   // 🔒 LOCKED: Icon selection based on variant
   const getIcon = () => {
     const iconSize = sizeConfig[size].iconSize;
-    
+
     switch (variant) {
       case 'icon':
         return <CircleChevronLeft size={iconSize} />;
@@ -154,14 +154,14 @@ export default function BackButton({
     },
     medium: {
       iconSize: 24,
-      fontSize: '14px', 
+      fontSize: '14px',
       padding: '8px 12px',
     },
     large: {
       iconSize: 28,
       fontSize: '16px',
       padding: '12px 16px',
-    }
+    },
   };
 
   const currentSize = sizeConfig[size];
@@ -180,14 +180,14 @@ export default function BackButton({
         ...currentSize,
         fontSize: currentSize.fontSize,
         padding: currentSize.padding,
-        ...style
+        ...style,
       }}
       aria-label={`${getBackText()}`}
-      onMouseEnter={(e) => {
+      onMouseEnter={e => {
         e.currentTarget.style.transform = 'scale(1.05)';
         e.currentTarget.style.backgroundColor = 'rgba(107, 114, 128, 0.1)';
       }}
-      onMouseLeave={(e) => {
+      onMouseLeave={e => {
         e.currentTarget.style.transform = 'scale(1)';
         e.currentTarget.style.backgroundColor = 'transparent';
       }}
@@ -195,9 +195,7 @@ export default function BackButton({
       <div style={styles.buttonContent}>
         {getIcon()}
         {(variant === 'text' || variant === 'iconText') && (
-          <span style={styles.buttonText}>
-            {getBackText()}
-          </span>
+          <span style={styles.buttonText}>{getBackText()}</span>
         )}
       </div>
     </button>
@@ -214,7 +212,8 @@ const styles = {
     justifyContent: 'center',
     borderRadius: '8px',
     transition: 'all 0.2s ease',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     color: '#6b7280',
     fontWeight: '500',
     zIndex: 100,
@@ -250,13 +249,13 @@ const styles = {
 export const BACK_BUTTON_PATTERNS = {
   // Ensure consistent navigation method
   usesSmartNavigation: /method.*smart|window\.history\.back/,
-  
+
   // Ensure browser history integration
   usesBrowserHistory: /window\.history\.back|canGoBack/,
-  
+
   // Ensure context-aware fallbacks
   usesContextFallbacks: /(movie|person|list|episode).*fallback/,
-  
+
   // Ensure consistent icon usage
   usesStandardIcons: /(CircleChevronLeft|ArrowLeft)/,
 };

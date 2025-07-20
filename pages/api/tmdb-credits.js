@@ -32,21 +32,20 @@ export default async function handler(req, res) {
     // Process and filter the data
     const processedCredits = {
       directors: credits.crew?.filter(person => person.job === 'Director') || [],
-      writers: credits.crew?.filter(person => 
-        ['Screenplay', 'Writer', 'Story'].includes(person.job)
-      ) || [],
+      writers:
+        credits.crew?.filter(person => ['Screenplay', 'Writer', 'Story'].includes(person.job)) ||
+        [],
       topCast: credits.cast?.slice(0, 5) || [], // Top 5 cast members
       cast: credits.cast || [],
-      crew: credits.crew || []
+      crew: credits.crew || [],
     };
 
     res.status(200).json(processedCredits);
-
   } catch (error) {
     console.error('TMDB credits error:', error);
-    res.status(500).json({ 
+    res.status(500).json({
       error: 'Failed to fetch movie credits',
-      details: error.message 
+      details: error.message,
     });
   }
 }

@@ -17,7 +17,7 @@ function AskInputBar({
   const [isClient, setIsClient] = useState(false);
   const inputRef = useRef(null);
   const router = useRouter();
-  
+
   // Generate unique ID for this instance
   const barId = `ask-bar-${episodePrefix ? 'episode' : 'main'}`;
 
@@ -70,18 +70,22 @@ function AskInputBar({
         const detectionResponse = await fetch('/api/detect-movie', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ query: trimmed })
+          body: JSON.stringify({ query: trimmed }),
         });
 
         if (detectionResponse.ok) {
           const detection = await detectionResponse.json();
-          
+
           if (detection.shouldRedirect && detection.redirectUrl) {
             // Direct redirect to movie or genius page
             if (detection.detectionType && detection.detectionType.startsWith('genius_')) {
-              console.log(`🎓 Genius ${detection.detectionType} detected: "${detection.movieTitle}" - redirecting to ${detection.redirectUrl}`);
+              console.log(
+                `🎓 Genius ${detection.detectionType} detected: "${detection.movieTitle}" - redirecting to ${detection.redirectUrl}`
+              );
             } else {
-              console.log(`🎬 Movie detected: "${detection.movieTitle}" (${detection.movieYear}) - redirecting to ${detection.redirectUrl}`);
+              console.log(
+                `🎬 Movie detected: "${detection.movieTitle}" (${detection.movieYear}) - redirecting to ${detection.redirectUrl}`
+              );
             }
             setQuestion('');
             router.push(detection.redirectUrl);
@@ -104,20 +108,23 @@ function AskInputBar({
     }
   }, [question, episodePrefix, router]);
 
-  const handleSubmit = useCallback((e) => {
-    e.preventDefault();
-    const trimmed = question.trim();
-    if (trimmed) {
-      if (onSubmit) {
-        // Use provided onSubmit callback
-        onSubmit(episodePrefix ? `${episodePrefix}: ${trimmed}` : trimmed);
-        setQuestion('');
-      } else {
-        // Fallback to original handleForward logic
-        handleForward();
+  const handleSubmit = useCallback(
+    e => {
+      e.preventDefault();
+      const trimmed = question.trim();
+      if (trimmed) {
+        if (onSubmit) {
+          // Use provided onSubmit callback
+          onSubmit(episodePrefix ? `${episodePrefix}: ${trimmed}` : trimmed);
+          setQuestion('');
+        } else {
+          // Fallback to original handleForward logic
+          handleForward();
+        }
       }
-    }
-  }, [question, episodePrefix, onSubmit, handleForward]);
+    },
+    [question, episodePrefix, onSubmit, handleForward]
+  );
 
   // Prevent hydration mismatch by only showing interactive elements after mount
   if (!isClient) {
@@ -126,17 +133,17 @@ function AskInputBar({
         <div style={styles.bar}>
           {!episodePrefix && (
             <div style={styles.navButton}>
-              <div style={{...styles.navIcon, opacity: 0.3, width: 30, height: 30}} />
+              <div style={{ ...styles.navIcon, opacity: 0.3, width: 30, height: 30 }} />
             </div>
           )}
           <input
             type="text"
             placeholder={placeholder}
             disabled
-            style={{...styles.input, opacity: 0.6}}
+            style={{ ...styles.input, opacity: 0.6 }}
           />
           <div style={styles.navButton}>
-            <div style={{...styles.navIcon, opacity: 0.3, width: 30, height: 30}} />
+            <div style={{ ...styles.navIcon, opacity: 0.3, width: 30, height: 30 }} />
           </div>
         </div>
       </form>
@@ -164,27 +171,27 @@ function AskInputBar({
         }
       `}</style>
       <form onSubmit={handleSubmit} style={styles.form}>
-        <div id={barId} style={{...styles.bar, ...style}}>
+        <div id={barId} style={{ ...styles.bar, ...style }}>
           {showNavigation && !episodePrefix && (
-            <button 
+            <button
               type="button"
               onClick={handleBack}
               style={styles.navButton}
               aria-label="Go back"
               disabled={isLoading}
-              onMouseEnter={(e) => {
+              onMouseEnter={e => {
                 e.currentTarget.style.transform = 'scale(1.1)';
               }}
-              onMouseLeave={(e) => {
+              onMouseLeave={e => {
                 e.currentTarget.style.transform = 'scale(1)';
               }}
             >
-              <CircleChevronLeft 
-                size={30} 
+              <CircleChevronLeft
+                size={30}
                 style={{
                   ...styles.navIcon,
                   opacity: isLoading ? 0.3 : 1,
-                  color: isLoading ? '#d1d5db' : '#d1d5db' // Always disabled color during SSR
+                  color: isLoading ? '#d1d5db' : '#d1d5db', // Always disabled color during SSR
                 }}
               />
             </button>
@@ -195,10 +202,10 @@ function AskInputBar({
               ref={inputRef}
               placeholder={isLoading ? 'Please wait...' : placeholder}
               value={question}
-              onChange={(e) => setQuestion(e.target.value)}
+              onChange={e => setQuestion(e.target.value)}
               onFocus={() => setIsFocused(true)}
               onBlur={() => setIsFocused(false)}
-              onKeyDown={(e) => {
+              onKeyDown={e => {
                 if (e.key === 'Enter') {
                   e.preventDefault();
                   handleSubmit(e);
@@ -212,7 +219,7 @@ function AskInputBar({
                 ...styles.textarea,
                 opacity: isLoading ? 0.6 : 1,
                 cursor: isLoading ? 'not-allowed' : 'text',
-                resize: 'none'
+                resize: 'none',
               }}
             />
           ) : (
@@ -221,7 +228,7 @@ function AskInputBar({
               type="text"
               placeholder={isLoading ? 'Please wait...' : placeholder}
               value={question}
-              onChange={(e) => setQuestion(e.target.value)}
+              onChange={e => setQuestion(e.target.value)}
               onFocus={() => setIsFocused(true)}
               onBlur={() => setIsFocused(false)}
               disabled={isLoading}
@@ -229,62 +236,67 @@ function AskInputBar({
               style={{
                 ...styles.input,
                 opacity: isLoading ? 0.6 : 1,
-                cursor: isLoading ? 'not-allowed' : 'text'
+                cursor: isLoading ? 'not-allowed' : 'text',
               }}
             />
           )}
 
-          {showNavigation && (episodePrefix ? (
-            // Episode context: only show submit button when there's text
-            question.trim() && (
-              <button 
+          {showNavigation &&
+            (episodePrefix ? (
+              // Episode context: only show submit button when there's text
+              question.trim() && (
+                <button
+                  type="button"
+                  onClick={handleForward}
+                  style={styles.navButton}
+                  aria-label="Submit question"
+                  disabled={isLoading}
+                  onMouseEnter={e => {
+                    e.currentTarget.style.transform = 'scale(1.1)';
+                  }}
+                  onMouseLeave={e => {
+                    e.currentTarget.style.transform = 'scale(1)';
+                  }}
+                >
+                  <CircleChevronRight
+                    size={30}
+                    style={{
+                      ...styles.navIcon,
+                      opacity: isLoading ? 0.3 : 1,
+                      color: isLoading ? '#d1d5db' : '#374151',
+                    }}
+                  />
+                </button>
+              )
+            ) : (
+              // Regular context: show navigation button
+              <button
                 type="button"
                 onClick={handleForward}
                 style={styles.navButton}
-                aria-label="Submit question"
+                aria-label={question.trim() ? 'Submit question' : 'Go forward'}
                 disabled={isLoading}
-                onMouseEnter={(e) => {
+                onMouseEnter={e => {
                   e.currentTarget.style.transform = 'scale(1.1)';
                 }}
-                onMouseLeave={(e) => {
+                onMouseLeave={e => {
                   e.currentTarget.style.transform = 'scale(1)';
                 }}
               >
-                <CircleChevronRight 
-                  size={30} 
+                <CircleChevronRight
+                  size={30}
                   style={{
                     ...styles.navIcon,
                     opacity: isLoading ? 0.3 : 1,
-                    color: isLoading ? '#d1d5db' : '#374151'
+                    color: isLoading
+                      ? '#d1d5db'
+                      : question.trim() || (isClient && canGoForward())
+                        ? '#374151'
+                        : '#d1d5db',
                   }}
                 />
               </button>
-            )
-          ) : (
-            // Regular context: show navigation button
-            <button 
-              type="button"
-              onClick={handleForward}
-              style={styles.navButton}
-              aria-label={question.trim() ? "Submit question" : "Go forward"}
-              disabled={isLoading}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'scale(1.1)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'scale(1)';
-              }}
-            >
-              <CircleChevronRight 
-                size={30} 
-                style={{
-                  ...styles.navIcon,
-                  opacity: isLoading ? 0.3 : 1,
-                  color: isLoading ? '#d1d5db' : (question.trim() || (isClient && canGoForward()) ? '#374151' : '#d1d5db')
-                }}
-              />
-            </button>
-          ))}
+            ))}
         </div>
       </form>
     </>
@@ -303,7 +315,8 @@ const styles = {
     padding: '15px',
     backgroundColor: '#fff',
     borderRadius: '27px',
-    clipPath: 'polygon(0 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0 calc(100% - 12px))',
+    clipPath:
+      'polygon(0 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0 calc(100% - 12px))',
     border: '1px solid #e5e7eb',
     boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
     cursor: 'text',

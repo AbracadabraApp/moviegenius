@@ -1,6 +1,6 @@
 /**
  * Test Episode Movie Linking - Pattern Detection Demo
- * 
+ *
  * Tests the movie pattern detection logic without requiring database access.
  * Run with: node test-episode-linking.js
  */
@@ -8,41 +8,42 @@
 // Simple version of the pattern detection logic
 function extractMovieMentions(content) {
   if (!content || typeof content !== 'string') return [];
-  
+
   const mentions = [];
-  
+
   // Primary pattern: "Movie Title" (Year) - Quoted format used in episodes
   const quotedPattern = /"([^"]+)"\s*\((\d{4})\)/g;
   let match;
-  
+
   while ((match = quotedPattern.exec(content)) !== null) {
     const title = match[1].trim();
     const year = parseInt(match[2]);
-    
+
     mentions.push({
       original: match[0],
       title,
       year,
       start: match.index,
       end: match.index + match[0].length,
-      type: 'quoted'
+      type: 'quoted',
     });
   }
-  
+
   // Secondary pattern: Movie Title (Year) - Legacy format for any unquoted mentions
   const legacyPattern = /\b([A-Z][a-zA-Z]+(?:\s+[A-Z][a-zA-Z]+)*)\s+\((\d{4})\)\b/g;
   legacyPattern.lastIndex = 0; // Reset regex state
-  
+
   while ((match = legacyPattern.exec(content)) !== null) {
     const title = match[1].trim();
     const year = parseInt(match[2]);
-    
+
     // Check for overlap with quoted patterns
-    const overlaps = mentions.some(existing => 
-      (match.index >= existing.start && match.index < existing.end) ||
-      (existing.start >= match.index && existing.start < match.index + match[0].length)
+    const overlaps = mentions.some(
+      existing =>
+        (match.index >= existing.start && match.index < existing.end) ||
+        (existing.start >= match.index && existing.start < match.index + match[0].length)
     );
-    
+
     if (!overlaps) {
       mentions.push({
         original: match[0],
@@ -50,11 +51,11 @@ function extractMovieMentions(content) {
         year,
         start: match.index,
         end: match.index + match[0].length,
-        type: 'legacy'
+        type: 'legacy',
       });
     }
   }
-  
+
   return mentions.sort((a, b) => a.start - b.start);
 }
 
@@ -82,7 +83,9 @@ mentions.forEach((mention, index) => {
   console.log(`   Title: "${mention.title}"`);
   console.log(`   Year: ${mention.year}`);
   console.log(`   Position: ${mention.start}-${mention.end}`);
-  console.log(`   Would link to: /movie/[TMDB_ID_FOR_${mention.title.toUpperCase().replace(/\s+/g, '_')}]`);
+  console.log(
+    `   Would link to: /movie/[TMDB_ID_FOR_${mention.title.toUpperCase().replace(/\s+/g, '_')}]`
+  );
   console.log('');
 });
 

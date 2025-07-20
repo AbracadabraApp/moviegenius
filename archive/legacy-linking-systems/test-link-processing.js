@@ -4,7 +4,11 @@
  */
 
 import fs from 'fs';
-import { buildMovieLookup, processTextLinks, validateStaticData } from './lib/utils/nuclear-link-utils.js';
+import {
+  buildMovieLookup,
+  processTextLinks,
+  validateStaticData,
+} from './lib/utils/nuclear-link-utils.js';
 
 // Load City Lights nuclear static file
 const cityLightsPath = './nuclear-static/901.json';
@@ -24,7 +28,7 @@ console.log(`\n📝 Text sections: ${textSections.length}`);
 textSections.forEach((section, index) => {
   console.log(`\nSection ${index}:`);
   console.log(section.content.substring(0, 200) + '...');
-  
+
   const movieMentions = section.content.match(/\*\*[^*]+\*\* \(\d{4}\)/g);
   if (movieMentions) {
     console.log(`🎬 Movie mentions: ${movieMentions.join(', ')}`);
@@ -48,16 +52,16 @@ const processedSections = cityLights.props.sections.map(section => {
   if (section.type === 'text' && section.content) {
     const original = section.content;
     const processed = processTextLinks(section.content, movieLookup, cityLights.props.title);
-    
+
     if (original !== processed) {
       console.log(`\n✏️  Section processed:`);
       console.log(`Before: ${original.substring(0, 100)}...`);
       console.log(`After:  ${processed.substring(0, 100)}...`);
     }
-    
+
     return {
       ...section,
-      content: processed
+      content: processed,
     };
   }
   return section;
@@ -68,8 +72,8 @@ const processedData = {
   ...cityLights,
   props: {
     ...cityLights.props,
-    sections: processedSections
-  }
+    sections: processedSections,
+  },
 };
 
 // Validate the processed data

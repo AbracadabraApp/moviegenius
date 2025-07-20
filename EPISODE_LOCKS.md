@@ -1,6 +1,7 @@
 # Episode Content Lock System
 
-This system prevents accidental regeneration of carefully crafted episode content.
+This system prevents accidental regeneration of carefully crafted episode
+content.
 
 ## 🔒 How It Works
 
@@ -25,11 +26,12 @@ The `/api/series-episode` endpoint checks for locks:
 ## 📝 Commands
 
 ### Individual Episodes
+
 ```bash
 # Lock specific episodes
 npm run lock-episodes 1-1-1,1-1-2,1-1-3
 
-# Unlock specific episodes  
+# Unlock specific episodes
 npm run unlock-episodes 1-1-3
 
 # Check episode status
@@ -37,6 +39,7 @@ npm run episode-status 1-1-1
 ```
 
 ### Bulk Operations
+
 ```bash
 # Lock entire series
 npm run lock-series 1-1
@@ -49,6 +52,7 @@ npm run list-locked
 ```
 
 ### Manual Script
+
 ```bash
 # Direct script usage
 node scripts/manage-episode-locks.js lock 1-1-1,1-1-2
@@ -64,9 +68,9 @@ If you need to regenerate a locked episode:
 curl -X POST http://localhost:3000/api/series-episode \
   -H "Content-Type: application/json" \
   -d '{
-    "topic": "New topic", 
+    "topic": "New topic",
     "context": "New context",
-    "seriesId": "1", 
+    "seriesId": "1",
     "episodeId": "1",
     "forceRegenerate": true
   }'
@@ -74,14 +78,15 @@ curl -X POST http://localhost:3000/api/series-episode \
 
 ## 📊 Current Status
 
-All episodes 1/1/1 through 1/1/6 are currently **locked** to protect the refined noir content.
+All episodes 1/1/1 through 1/1/6 are currently **locked** to protect the refined
+noir content.
 
 Use `npm run list-locked` to see current lock status.
 
 ## 🔄 Workflow
 
 1. **Development**: Content unlocked for iteration
-2. **Review**: Lock content when ready for review  
+2. **Review**: Lock content when ready for review
 3. **Production**: Keep locked unless intentional changes needed
 4. **Updates**: Unlock → Edit → Review → Lock again
 

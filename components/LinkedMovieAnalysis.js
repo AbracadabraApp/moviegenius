@@ -1,9 +1,9 @@
 /**
  * LinkedMovieAnalysis Component - V1 Movie Analysis Links
- * 
- * Safely renders movie analysis content with movie links created by the 
+ *
+ * Safely renders movie analysis content with movie links created by the
  * movie-analysis-linker system. Designed for static movie pages.
- * 
+ *
  * Features:
  * - Renders HTML links created by analysis processing
  * - Uses existing movie-title styling (gold underline)
@@ -16,12 +16,12 @@
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 
-export default function LinkedMovieAnalysis({ 
-  content, 
-  className = '', 
+export default function LinkedMovieAnalysis({
+  content,
+  className = '',
   style = {},
   currentMovieTitle = '',
-  context = ''
+  context = '',
 }) {
   const router = useRouter();
   const [processedContent, setProcessedContent] = useState(content || '');
@@ -38,21 +38,23 @@ export default function LinkedMovieAnalysis({
   }, [content]);
 
   // Handle clicks on movie links for analytics/tracking
-  const handleClick = (event) => {
+  const handleClick = event => {
     // Check if click was on a movie link (using existing movie-title class)
     const link = event.target.closest('.movie-title');
     if (link && link.hasAttribute('data-tmdb-id')) {
       const tmdbId = link.getAttribute('data-tmdb-id');
       const movieTitle = link.textContent;
-      
-      console.log(`🔗 Analysis movie link clicked: "${movieTitle}" → /movie/${tmdbId} from ${currentMovieTitle} ${context}`);
-      
+
+      console.log(
+        `🔗 Analysis movie link clicked: "${movieTitle}" → /movie/${tmdbId} from ${currentMovieTitle} ${context}`
+      );
+
       // Optional: Add analytics tracking here
-      // trackEvent('analysis_movie_link_click', { 
-      //   tmdbId, 
-      //   movieTitle, 
+      // trackEvent('analysis_movie_link_click', {
+      //   tmdbId,
+      //   movieTitle,
       //   sourceMovie: currentMovieTitle,
-      //   context 
+      //   context
       // });
     }
   };
@@ -63,11 +65,11 @@ export default function LinkedMovieAnalysis({
   }
 
   return (
-    <div 
-      className={className} 
+    <div
+      className={className}
       style={{
         lineHeight: '1.6',
-        ...style
+        ...style,
       }}
       onClick={handleClick}
       dangerouslySetInnerHTML={{ __html: processedContent }}
@@ -81,7 +83,7 @@ export default function LinkedMovieAnalysis({
  */
 export function stripBoldMarks(content) {
   if (!content || typeof content !== 'string') return content;
-  
+
   // Strip **text** patterns but preserve the text
   return content.replace(/\*\*([^*]+)\*\*/g, '$1');
 }
@@ -91,7 +93,7 @@ export function stripBoldMarks(content) {
  */
 export function hasMovieLinks(content) {
   if (!content || typeof content !== 'string') return false;
-  
+
   // Check for movie-title class links with data-tmdb-id
   return content.includes('class="movie-title"') && content.includes('data-tmdb-id');
 }
@@ -100,19 +102,15 @@ export function hasMovieLinks(content) {
  * Fallback component for unprocessed content
  * Strips ** marks and renders as plain text
  */
-export function UnprocessedMovieAnalysis({ 
-  content, 
-  className = '', 
-  style = {} 
-}) {
+export function UnprocessedMovieAnalysis({ content, className = '', style = {} }) {
   const strippedContent = stripBoldMarks(content);
-  
+
   return (
-    <div 
-      className={className} 
+    <div
+      className={className}
       style={{
         lineHeight: '1.6',
-        ...style
+        ...style,
       }}
     >
       {strippedContent}

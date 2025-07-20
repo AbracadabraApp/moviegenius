@@ -1,7 +1,7 @@
 // pages/api/cache-person-data.js
 /**
  * Person Data Caching API Route
- * 
+ *
  * Caches enhanced person data to the database.
  * Similar to cache-movie-data but for people.
  */
@@ -33,22 +33,21 @@ export default async function handler(req, res) {
       deathYear,
       biography: biography ? 'present' : 'missing',
       profile: profile ? 'present' : 'missing',
-      knownForDepartment
+      knownForDepartment,
     });
 
     // TODO: In the future, implement person discovery and database updates here
     // For now, just return success
-    res.status(200).json({ 
+    res.status(200).json({
       success: true,
       message: 'Person data cached successfully',
-      cached: false // Set to true when we implement actual caching
+      cached: false, // Set to true when we implement actual caching
     });
-
   } catch (error) {
     console.error('Error caching person data:', error);
-    res.status(500).json({ 
+    res.status(500).json({
       error: 'Failed to cache person data',
-      success: false
+      success: false,
     });
   }
 }

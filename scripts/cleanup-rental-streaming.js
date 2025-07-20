@@ -10,7 +10,7 @@ const supabase = createClient(
 
 async function cleanupRentalStreaming() {
   console.log('🧹 Starting cleanup of rental streaming data...');
-  
+
   try {
     // Find all movies with rental streaming data
     const { data: movies, error: selectError } = await supabase
@@ -18,9 +18,9 @@ async function cleanupRentalStreaming() {
       .select('id, title, year, streaming_data')
       .or(
         'streaming_data.ilike.%Available for rent%,' +
-        'streaming_data.ilike.%rent on%,' +
-        'streaming_data.ilike.%Available for purchase%,' +
-        'streaming_data.ilike.%buy on%'
+          'streaming_data.ilike.%rent on%,' +
+          'streaming_data.ilike.%Available for purchase%,' +
+          'streaming_data.ilike.%buy on%'
       );
 
     if (selectError) {
@@ -37,13 +37,13 @@ async function cleanupRentalStreaming() {
     // Process each movie
     let updatedCount = 0;
     const batchSize = 50;
-    
+
     for (let i = 0; i < movies.length; i += batchSize) {
       const batch = movies.slice(i, i + batchSize);
-      
+
       for (const movie of batch) {
         let cleanStreamingData = movie.streaming_data;
-        
+
         if (cleanStreamingData) {
           // Remove rental and purchase references
           cleanStreamingData = cleanStreamingData
@@ -55,19 +55,19 @@ async function cleanupRentalStreaming() {
             .replace(/\s*[•]\s*$/gi, '') // Remove trailing bullet points
             .replace(/\s+/g, ' ') // Normalize whitespace
             .trim();
-          
+
           // If empty after cleanup, set to null or 'TBD'
           if (!cleanStreamingData || cleanStreamingData === '') {
             cleanStreamingData = 'TBD';
           }
-          
+
           // Update the movie if streaming data changed
           if (cleanStreamingData !== movie.streaming_data) {
             const { error: updateError } = await supabase
               .from('movies')
               .update({ streaming_data: cleanStreamingData })
               .eq('id', movie.id);
-            
+
             if (updateError) {
               console.error(`❌ Failed to update ${movie.title} (${movie.year}):`, updateError);
             } else {
@@ -79,16 +79,15 @@ async function cleanupRentalStreaming() {
           }
         }
       }
-      
+
       // Small delay between batches to avoid rate limits
       if (i + batchSize < movies.length) {
         await new Promise(resolve => setTimeout(resolve, 100));
       }
     }
-    
+
     console.log(`🎉 Cleanup complete! Updated ${updatedCount} movies`);
     console.log(`📈 ${movies.length - updatedCount} movies were already clean`);
-    
   } catch (error) {
     console.error('💥 Cleanup failed:', error);
     process.exit(1);

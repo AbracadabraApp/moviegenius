@@ -1,10 +1,10 @@
 /**
  * Optimized Cache Warming API
- * 
+ *
  * High-performance parallel cache warming for MovieGenius application.
  * Replaces sequential processing with intelligent parallel operations
  * while respecting rate limits and maintaining system stability.
- * 
+ *
  * Performance improvements:
  * - 5-15x faster cache warming through parallelization
  * - Intelligent concurrency control for different services
@@ -16,11 +16,11 @@ import { createClient } from '@supabase/supabase-js';
 import { getBatchOptimizer } from '../../lib/batch-optimizer.js';
 import { getCache } from '../../lib/cache.js';
 import { getPerformanceMonitor } from '../../lib/performance-monitor.js';
-import { 
-  withErrorHandling, 
-  ApiErrors, 
+import {
+  withErrorHandling,
+  ApiErrors,
   successResponse,
-  checkRateLimit 
+  checkRateLimit,
 } from '../../lib/api-utils.js';
 
 const supabase = createClient(
@@ -30,7 +30,7 @@ const supabase = createClient(
 
 /**
  * Optimized Cache Warming Processor
- * 
+ *
  * Implements high-performance parallel cache warming strategies
  * for movies, analyses, and other frequently accessed data.
  */
@@ -39,23 +39,23 @@ class OptimizedCacheWarmingProcessor {
     this.batchOptimizer = getBatchOptimizer();
     this.cache = getCache();
     this.monitor = getPerformanceMonitor();
-    
+
     // Optimized configuration for different warming operations
     this.config = {
       // Movie poster warming
-      posterConcurrency: 12,      // TMDB can handle higher concurrency
+      posterConcurrency: 12, // TMDB can handle higher concurrency
       posterBatchSize: 50,
-      
-      // Movie lookup warming  
-      lookupConcurrency: 8,       // Database-focused operations
+
+      // Movie lookup warming
+      lookupConcurrency: 8, // Database-focused operations
       lookupBatchSize: 25,
-      
+
       // Analysis warming
-      analysisConcurrency: 6,     // More conservative for complex operations
+      analysisConcurrency: 6, // More conservative for complex operations
       analysisBatchSize: 20,
-      
+
       // Progress tracking
-      progressInterval: 2000      // Update every 2 seconds
+      progressInterval: 2000, // Update every 2 seconds
     };
   }
 
@@ -64,7 +64,7 @@ class OptimizedCacheWarmingProcessor {
    */
   async getMoviesForWarming(warmingType = 'popular', limit = 200) {
     const startTime = Date.now();
-    
+
     try {
       let query = supabase
         .from('movies')
@@ -74,11 +74,9 @@ class OptimizedCacheWarmingProcessor {
       switch (warmingType) {
         case 'popular':
           // Recent movies with TMDB data (likely to be accessed)
-          query = query
-            .not('tmdb_id', 'is', null)
-            .order('created_at', { ascending: false });
+          query = query.not('tmdb_id', 'is', null).order('created_at', { ascending: false });
           break;
-          
+
         case 'missing_posters':
           // Movies without posters for poster warming
           query = query
@@ -86,14 +84,12 @@ class OptimizedCacheWarmingProcessor {
             .not('tmdb_id', 'is', null)
             .order('year', { ascending: false });
           break;
-          
+
         case 'missing_slugs':
           // Movies without slugs for analysis warming
-          query = query
-            .or('slug.is.null,slug.eq.')
-            .order('created_at', { ascending: false });
+          query = query.or('slug.is.null,slug.eq.').order('created_at', { ascending: false });
           break;
-          
+
         case 'high_value':
           // Movies with complete data that are likely to be accessed
           query = query
@@ -102,27 +98,28 @@ class OptimizedCacheWarmingProcessor {
             .not('slug', 'is', null)
             .order('year', { ascending: false });
           break;
-          
+
         default:
           query = query.order('created_at', { ascending: false });
       }
 
       const { data: movies, error } = await query.limit(limit);
-      
+
       if (error) {
         throw new Error(`Failed to fetch movies: ${error.message}`);
       }
 
       const duration = Date.now() - startTime;
-      console.log(`✅ Selected ${movies?.length || 0} movies for ${warmingType} warming in ${duration}ms`);
-      
+      console.log(
+        `✅ Selected ${movies?.length || 0} movies for ${warmingType} warming in ${duration}ms`
+      );
+
       this.monitor.trackMetric('cache_warming_selection', duration, {
         warming_type: warmingType,
-        movies_selected: movies?.length || 0
+        movies_selected: movies?.length || 0,
       });
-      
+
       return movies || [];
-      
     } catch (error) {
       console.error(`❌ Error selecting movies for warming:`, error);
       throw error;
@@ -134,18 +131,18 @@ class OptimizedCacheWarmingProcessor {
    */
   async warmPosterCache(movies) {
     if (movies.length === 0) return { warmed: 0, errors: [] };
-    
+
     console.log(`🖼️ Warming poster cache for ${movies.length} movies...`);
-    
+
     const result = await this.batchOptimizer.processInParallel(
       movies,
-      async (movie) => {
+      async movie => {
         // Only warm if poster is missing or not cached
         if (movie.poster_url) {
           // Check if already cached
           const cacheKey = `poster:${movie.title}:${movie.year}`;
           const cached = await this.cache.get(cacheKey);
-          
+
           if (cached) {
             return { movieId: movie.id, status: 'already_cached' };
           }
@@ -158,11 +155,13 @@ class OptimizedCacheWarmingProcessor {
         concurrency: this.config.posterConcurrency,
         batchName: 'poster_cache_warming',
         chunkSize: this.config.posterBatchSize,
-        onProgress: (progress) => {
+        onProgress: progress => {
           if (progress.completed % 25 === 0) {
-            console.log(`🖼️ Poster warming: ${progress.percentage}% (${progress.completed}/${progress.total})`);
+            console.log(
+              `🖼️ Poster warming: ${progress.percentage}% (${progress.completed}/${progress.total})`
+            );
           }
-        }
+        },
       }
     );
 
@@ -181,10 +180,10 @@ class OptimizedCacheWarmingProcessor {
         const response = await fetch('/api/tmdb-poster', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ 
-            title: movie.title, 
-            year: movie.year 
-          })
+          body: JSON.stringify({
+            title: movie.title,
+            year: movie.year,
+          }),
         });
 
         if (!response.ok) {
@@ -192,18 +191,18 @@ class OptimizedCacheWarmingProcessor {
         }
 
         const posterData = await response.json();
-        
+
         return {
           movieId: movie.id,
           title: movie.title,
           year: movie.year,
           poster_url: posterData.poster,
-          status: 'warmed'
+          status: 'warmed',
         };
       },
       {
         maxRetries: 2,
-        retryDelay: 500
+        retryDelay: 500,
       }
     );
   }
@@ -213,36 +212,38 @@ class OptimizedCacheWarmingProcessor {
    */
   async warmLookupCache(movies) {
     if (movies.length === 0) return { warmed: 0, errors: [] };
-    
+
     console.log(`🔍 Warming lookup cache for ${movies.length} movies...`);
-    
+
     const result = await this.batchOptimizer.processInParallel(
       movies,
-      async (movie) => {
+      async movie => {
         // Warm various lookup patterns
         const lookupPromises = [
           this.warmMovieLookup(movie.title, movie.year),
-          movie.tmdb_id ? this.warmTmdbLookup(movie.tmdb_id) : null
+          movie.tmdb_id ? this.warmTmdbLookup(movie.tmdb_id) : null,
         ].filter(Boolean);
 
         const lookupResults = await Promise.allSettled(lookupPromises);
-        
+
         return {
           movieId: movie.id,
           title: movie.title,
           lookups_warmed: lookupResults.filter(r => r.status === 'fulfilled').length,
-          status: 'warmed'
+          status: 'warmed',
         };
       },
       {
         concurrency: this.config.lookupConcurrency,
         batchName: 'lookup_cache_warming',
         chunkSize: this.config.lookupBatchSize,
-        onProgress: (progress) => {
+        onProgress: progress => {
           if (progress.completed % 20 === 0) {
-            console.log(`🔍 Lookup warming: ${progress.percentage}% (${progress.completed}/${progress.total})`);
+            console.log(
+              `🔍 Lookup warming: ${progress.percentage}% (${progress.completed}/${progress.total})`
+            );
           }
-        }
+        },
       }
     );
 
@@ -255,7 +256,7 @@ class OptimizedCacheWarmingProcessor {
    */
   async warmMovieLookup(title, year) {
     const cacheKey = `movie_lookup:${title.toLowerCase()}:${year}`;
-    
+
     // Check if already cached
     const cached = await this.cache.get(cacheKey);
     if (cached) {
@@ -283,7 +284,7 @@ class OptimizedCacheWarmingProcessor {
    */
   async warmTmdbLookup(tmdbId) {
     const cacheKey = `tmdb_lookup:${tmdbId}`;
-    
+
     const cached = await this.cache.get(cacheKey);
     if (cached) {
       return { status: 'already_cached' };
@@ -308,23 +309,25 @@ class OptimizedCacheWarmingProcessor {
    */
   async warmAnalysisCache(movies) {
     if (movies.length === 0) return { warmed: 0, errors: [] };
-    
+
     console.log(`📊 Warming analysis cache for ${movies.length} movies...`);
-    
+
     const result = await this.batchOptimizer.processInParallel(
       movies,
-      async (movie) => {
+      async movie => {
         return await this.warmMovieAnalysis(movie);
       },
       {
         concurrency: this.config.analysisConcurrency,
         batchName: 'analysis_cache_warming',
         chunkSize: this.config.analysisBatchSize,
-        onProgress: (progress) => {
+        onProgress: progress => {
           if (progress.completed % 10 === 0) {
-            console.log(`📊 Analysis warming: ${progress.percentage}% (${progress.completed}/${progress.total})`);
+            console.log(
+              `📊 Analysis warming: ${progress.percentage}% (${progress.completed}/${progress.total})`
+            );
           }
-        }
+        },
       }
     );
 
@@ -337,7 +340,7 @@ class OptimizedCacheWarmingProcessor {
    */
   async warmMovieAnalysis(movie) {
     const cacheKey = `analysis:${movie.id}:page_analysis`;
-    
+
     // Check if already cached
     const cached = await this.cache.get(cacheKey);
     if (cached) {
@@ -367,7 +370,7 @@ class OptimizedCacheWarmingProcessor {
     const {
       warmingTypes = ['popular', 'missing_posters'],
       operations = ['posters', 'lookups', 'analyses'],
-      movieLimit = 150
+      movieLimit = 150,
     } = options;
 
     const overallStartTime = Date.now();
@@ -392,7 +395,7 @@ class OptimizedCacheWarmingProcessor {
         warmingPromises.push(
           this.warmPosterCache(posterMovies.slice(0, 100)).then(result => ({
             operation: 'posters',
-            result
+            result,
           }))
         );
       }
@@ -402,7 +405,7 @@ class OptimizedCacheWarmingProcessor {
         warmingPromises.push(
           this.warmLookupCache(lookupMovies.slice(0, 100)).then(result => ({
             operation: 'lookups',
-            result
+            result,
           }))
         );
       }
@@ -412,7 +415,7 @@ class OptimizedCacheWarmingProcessor {
         warmingPromises.push(
           this.warmAnalysisCache(analysisMovies.slice(0, 50)).then(result => ({
             operation: 'analyses',
-            result
+            result,
           }))
         );
       }
@@ -444,7 +447,7 @@ class OptimizedCacheWarmingProcessor {
       this.monitor.trackMetric('cache_warming_cycle_complete', totalDuration, {
         operations: operations.length,
         total_warmed: totalWarmed,
-        warming_types: warmingTypes.length
+        warming_types: warmingTypes.length,
       });
 
       return {
@@ -454,21 +457,20 @@ class OptimizedCacheWarmingProcessor {
         total_items_warmed: totalWarmed,
         results,
         metrics: {
-          items_per_second: (totalWarmed / totalDuration * 1000).toFixed(2),
+          items_per_second: ((totalWarmed / totalDuration) * 1000).toFixed(2),
           operations: operations,
-          warming_types: warmingTypes
-        }
+          warming_types: warmingTypes,
+        },
       };
-
     } catch (error) {
       const duration = Date.now() - overallStartTime;
-      
+
       console.error('💥 Cache warming cycle failed:', error);
-      
+
       this.monitor.trackMetric('cache_warming_cycle_error', duration, {
-        error: error.message
+        error: error.message,
       });
-      
+
       throw error;
     }
   }
@@ -489,14 +491,14 @@ async function optimizedCacheWarmingHandler(req, res) {
   const {
     warmingTypes = ['popular', 'missing_posters'],
     operations = ['posters', 'lookups'],
-    movieLimit = 150
+    movieLimit = 150,
   } = req.body;
 
   const processor = new OptimizedCacheWarmingProcessor();
   const result = await processor.executeWarmingCycle({
     warmingTypes,
     operations,
-    movieLimit
+    movieLimit,
   });
 
   res.status(200).json(successResponse(result, 'Optimized cache warming completed'));

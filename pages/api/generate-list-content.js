@@ -47,7 +47,9 @@ export default async function handler(req, res) {
       analysisResult = await generateDeclarativeAnalysis(listId, listName, claudePrompt);
     } else {
       // Fallback for requires_review - default to declarative for now
-      console.log(`Warning: List "${listName}" has content_type "${contentType}", defaulting to declarative`);
+      console.log(
+        `Warning: List "${listName}" has content_type "${contentType}", defaulting to declarative`
+      );
       analysisResult = await generateDeclarativeAnalysis(listId, listName, claudePrompt);
     }
 
@@ -62,7 +64,7 @@ export default async function handler(req, res) {
         analysis: analysisResult.analysis,
         listName: listName,
         cached: analysisResult.cached || false,
-        cost: analysisResult.cost || 0
+        cost: analysisResult.cost || 0,
       });
     } else {
       res.status(200).json({
@@ -72,15 +74,14 @@ export default async function handler(req, res) {
         movieCount: analysisResult.movieCount || 0,
         listName: listName,
         cached: analysisResult.cached || false,
-        cost: analysisResult.cost || 0
+        cost: analysisResult.cost || 0,
       });
     }
-
   } catch (error) {
     console.error('Error in list content routing:', error);
-    res.status(500).json({ 
+    res.status(500).json({
       error: 'Failed to generate list content',
-      fallback: `${listName} is a curated collection of exceptional films.`
+      fallback: `${listName} is a curated collection of exceptional films.`,
     });
   }
 }
@@ -89,17 +90,20 @@ export default async function handler(req, res) {
 async function generateEducationalAnalysis(listId, listName, claudePrompt) {
   try {
     // Call the movie-analysis style API for educational content
-    const response = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/api/educational-list-analysis`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        listId,
-        listName,
-        claudePrompt
-      })
-    });
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/api/educational-list-analysis`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          listId,
+          listName,
+          claudePrompt,
+        }),
+      }
+    );
 
     if (!response.ok) {
       throw new Error(`Educational analysis failed: ${response.status}`);
@@ -116,17 +120,20 @@ async function generateEducationalAnalysis(listId, listName, claudePrompt) {
 async function generateDeclarativeAnalysis(listId, listName, claudePrompt) {
   try {
     // Call the existing list-analysis API for declarative content
-    const response = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/api/list-analysis`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        listId,
-        listName,
-        claudePrompt
-      })
-    });
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/api/list-analysis`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          listId,
+          listName,
+          claudePrompt,
+        }),
+      }
+    );
 
     if (!response.ok) {
       throw new Error(`Declarative analysis failed: ${response.status}`);

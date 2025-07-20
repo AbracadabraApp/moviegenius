@@ -1,11 +1,16 @@
 /**
  * Tests for TMDB Search Service
- * 
+ *
  * These tests verify keyword-based search functionality with popularity ranking.
  * They ensure the search handles various query types and returns properly ranked results.
  */
 
-import { searchTMDB, getTMDBMovieDetails, rankSearchResults, isSingleConfidentMatch } from '../../lib/services/tmdb-search.js';
+import {
+  searchTMDB,
+  getTMDBMovieDetails,
+  rankSearchResults,
+  isSingleConfidentMatch,
+} from '../../lib/services/tmdb-search.js';
 
 // Mock fetch for testing
 global.fetch = jest.fn();
@@ -29,26 +34,26 @@ describe('TMDB Search Service', () => {
             id: 1,
             title: 'Baby',
             popularity: 5.2,
-            release_date: '2007-01-01'
+            release_date: '2007-01-01',
           },
           {
             id: 2,
             title: 'Baby Driver',
             popularity: 45.8,
-            release_date: '2017-06-28'
+            release_date: '2017-06-28',
           },
           {
             id: 3,
             title: "Rosemary's Baby",
             popularity: 28.4,
-            release_date: '1968-06-12'
-          }
-        ]
+            release_date: '1968-06-12',
+          },
+        ],
       };
 
       fetch.mockResolvedValueOnce({
         ok: true,
-        json: async () => mockResponse
+        json: async () => mockResponse,
       });
 
       const results = await searchTMDB('baby');
@@ -73,20 +78,20 @@ describe('TMDB Search Service', () => {
             id: 155,
             title: 'The Dark Knight',
             popularity: 123.4,
-            release_date: '2008-07-18'
+            release_date: '2008-07-18',
           },
           {
             id: 49026,
             title: 'The Dark Knight Rises',
             popularity: 98.7,
-            release_date: '2012-07-16'
-          }
-        ]
+            release_date: '2012-07-16',
+          },
+        ],
       };
 
       fetch.mockResolvedValueOnce({
         ok: true,
-        json: async () => mockResponse
+        json: async () => mockResponse,
       });
 
       const results = await searchTMDB('dark knight');
@@ -112,7 +117,7 @@ describe('TMDB Search Service', () => {
       fetch.mockResolvedValueOnce({
         ok: false,
         status: 500,
-        statusText: 'Server Error'
+        statusText: 'Server Error',
       });
 
       const results = await searchTMDB('test');
@@ -131,7 +136,7 @@ describe('TMDB Search Service', () => {
     it('should handle empty results from TMDB', async () => {
       fetch.mockResolvedValueOnce({
         ok: true,
-        json: async () => ({ results: [] })
+        json: async () => ({ results: [] }),
       });
 
       const results = await searchTMDB('nonexistentmovie123');
@@ -144,33 +149,33 @@ describe('TMDB Search Service', () => {
           {
             id: 1,
             title: 'Valid Movie',
-            popularity: 10.0
+            popularity: 10.0,
           },
           {
             id: null, // Invalid - no ID
             title: 'Invalid Movie',
-            popularity: 5.0
+            popularity: 5.0,
           },
           {
             id: 2,
             title: null, // Invalid - no title
-            popularity: 8.0
+            popularity: 8.0,
           },
           {
             id: 3,
             title: 'Another Valid Movie',
-            popularity: 15.0
-          }
-        ]
+            popularity: 15.0,
+          },
+        ],
       };
 
       fetch.mockResolvedValueOnce({
         ok: true,
-        json: async () => mockResponse
+        json: async () => mockResponse,
       });
 
       const results = await searchTMDB('test');
-      
+
       // Should only return valid movies, sorted by popularity
       expect(results).toHaveLength(2);
       expect(results[0].title).toBe('Another Valid Movie');
@@ -182,16 +187,16 @@ describe('TMDB Search Service', () => {
       const mockMovies = Array.from({ length: 25 }, (_, i) => ({
         id: i + 1,
         title: `Movie ${i + 1}`,
-        popularity: 25 - i // Descending popularity
+        popularity: 25 - i, // Descending popularity
       }));
 
       fetch.mockResolvedValueOnce({
         ok: true,
-        json: async () => ({ results: mockMovies })
+        json: async () => ({ results: mockMovies }),
       });
 
       const results = await searchTMDB('movie');
-      
+
       expect(results).toHaveLength(20);
       expect(results[0].title).toBe('Movie 1'); // Highest popularity
       expect(results[19].title).toBe('Movie 20');
@@ -200,7 +205,7 @@ describe('TMDB Search Service', () => {
     it('should preserve original query in API call without parsing', async () => {
       fetch.mockResolvedValueOnce({
         ok: true,
-        json: async () => ({ results: [] })
+        json: async () => ({ results: [] }),
       });
 
       await searchTMDB('baby driver 2017');
@@ -218,12 +223,12 @@ describe('TMDB Search Service', () => {
         id: 550,
         title: 'Fight Club',
         release_date: '1999-10-15',
-        overview: 'A ticking-time-bomb insomniac...'
+        overview: 'A ticking-time-bomb insomniac...',
       };
 
       fetch.mockResolvedValueOnce({
         ok: true,
-        json: async () => mockMovie
+        json: async () => mockMovie,
       });
 
       const result = await getTMDBMovieDetails(550);
@@ -238,7 +243,7 @@ describe('TMDB Search Service', () => {
       fetch.mockResolvedValueOnce({
         ok: false,
         status: 404,
-        statusText: 'Not Found'
+        statusText: 'Not Found',
       });
 
       const result = await getTMDBMovieDetails(999999);
@@ -253,18 +258,18 @@ describe('TMDB Search Service', () => {
           id: 1,
           title: 'Baby Boy',
           popularity: 5.2,
-          release_date: '2007-01-01'
+          release_date: '2007-01-01',
         },
         {
           id: 2,
           title: 'Baby Driver',
           popularity: 45.8,
-          release_date: '2017-06-28'
-        }
+          release_date: '2017-06-28',
+        },
       ];
 
       const ranked = rankSearchResults(mockResults, 'baby movie', null);
-      
+
       // Baby Driver should rank higher due to popularity (no exact match bonus for either)
       expect(ranked[0].title).toBe('Baby Driver');
       expect(ranked[0].relevanceScore).toBeGreaterThan(ranked[1].relevanceScore);
@@ -276,18 +281,18 @@ describe('TMDB Search Service', () => {
           id: 1,
           title: 'Baby Driver',
           popularity: 10.0,
-          release_date: '2017-06-28'
+          release_date: '2017-06-28',
         },
         {
           id: 2,
           title: 'Baby',
           popularity: 20.0, // Higher popularity
-          release_date: '2007-01-01'
-        }
+          release_date: '2007-01-01',
+        },
       ];
 
       const ranked = rankSearchResults(mockResults, 'Baby', null);
-      
+
       // "Baby" should rank higher despite lower popularity due to exact match
       expect(ranked[0].title).toBe('Baby');
     });
@@ -298,8 +303,8 @@ describe('TMDB Search Service', () => {
       const results = [
         {
           title: 'Fight Club',
-          relevanceScore: 2000
-        }
+          relevanceScore: 2000,
+        },
       ];
 
       const isConfident = isSingleConfidentMatch(results, 'Fight Club', 1999);
@@ -310,8 +315,8 @@ describe('TMDB Search Service', () => {
       const results = [
         {
           title: 'Some Movie',
-          relevanceScore: 500 // Below threshold
-        }
+          relevanceScore: 500, // Below threshold
+        },
       ];
 
       const isConfident = isSingleConfidentMatch(results, 'Some Movie', null);
@@ -332,34 +337,34 @@ describe('TMDB Search Service', () => {
             id: 1,
             title: 'Baby',
             popularity: 8.3,
-            release_date: '2007-01-01'
+            release_date: '2007-01-01',
           },
           {
             id: 2,
             title: 'Baby Driver',
             popularity: 52.7,
-            release_date: '2017-06-28'
+            release_date: '2017-06-28',
           },
           {
             id: 3,
             title: 'Baby Boy',
             popularity: 12.1,
-            release_date: '2001-06-27'
-          }
-        ]
+            release_date: '2001-06-27',
+          },
+        ],
       };
 
       fetch.mockResolvedValueOnce({
         ok: true,
-        json: async () => mockResponse
+        json: async () => mockResponse,
       });
 
       const results = await searchTMDB('baby');
-      
+
       // Baby Driver should be first due to highest popularity
       expect(results[0].title).toBe('Baby Driver');
       expect(results[0].popularity).toBe(52.7);
-      
+
       // Should include all "baby" related movies
       expect(results.map(r => r.title)).toContain('Baby');
       expect(results.map(r => r.title)).toContain('Baby Boy');
@@ -372,30 +377,30 @@ describe('TMDB Search Service', () => {
             id: 1,
             title: 'The Avengers',
             popularity: 98.4,
-            release_date: '2012-04-25'
+            release_date: '2012-04-25',
           },
           {
             id: 2,
             title: 'Avengers: Endgame',
             popularity: 156.2,
-            release_date: '2019-04-24'
+            release_date: '2019-04-24',
           },
           {
             id: 3,
             title: 'Avengers: Infinity War',
             popularity: 134.7,
-            release_date: '2018-04-25'
-          }
-        ]
+            release_date: '2018-04-25',
+          },
+        ],
       };
 
       fetch.mockResolvedValueOnce({
         ok: true,
-        json: async () => mockResponse
+        json: async () => mockResponse,
       });
 
       const results = await searchTMDB('avengers');
-      
+
       // Should be ranked by popularity: Endgame > Infinity War > The Avengers
       expect(results[0].title).toBe('Avengers: Endgame');
       expect(results[1].title).toBe('Avengers: Infinity War');

@@ -6,34 +6,32 @@ import { useState } from 'react';
 
 /**
  * Component that renders pre-processed text with movie links
- * 
+ *
  * Content processing now happens server-side during getStaticProps using movie-analysis-linker.js
  * This component simply renders the pre-processed HTML content
  */
-export default function EntityLinkedText({ 
-  text, 
+export default function EntityLinkedText({
+  text,
   entities = null,
-  linkPeople = true, 
+  linkPeople = true,
   linkMovies = true,
   currentEntity = null,
   className = '',
   style = {},
-  linkingStyle = 'on'
+  linkingStyle = 'on',
 }) {
   // If linking is disabled, return plain text
   if (!text || linkingStyle === 'off' || !linkMovies) {
-    return <span className={className} style={style}>{text}</span>;
+    return (
+      <span className={className} style={style}>
+        {text}
+      </span>
+    );
   }
 
   // For now, just render the text as-is since processing should happen server-side
   // TODO: Integrate with movie-analysis-linker.js for server-side processing
-  return (
-    <span 
-      className={className} 
-      style={style}
-      dangerouslySetInnerHTML={{ __html: text }}
-    />
-  );
+  return <span className={className} style={style} dangerouslySetInnerHTML={{ __html: text }} />;
 }
 
 /**

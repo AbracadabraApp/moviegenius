@@ -1,9 +1,9 @@
 /**
  * Error Boundary Component
- * 
+ *
  * Catches JavaScript errors anywhere in the child component tree,
  * logs those errors, and displays a fallback UI instead of crashing.
- * 
+ *
  * @see https://reactjs.org/docs/error-boundaries.html
  */
 import React from 'react';
@@ -22,7 +22,7 @@ class ErrorBoundary extends React.Component {
   componentDidCatch(error, errorInfo) {
     // Log error to monitoring service in production
     console.error('ErrorBoundary caught an error:', error, errorInfo);
-    
+
     // In production, you might want to log to a service like Sentry
     // if (process.env.NODE_ENV === 'production') {
     //   logErrorToService(error, errorInfo);
@@ -43,10 +43,7 @@ class ErrorBoundary extends React.Component {
             <p style={styles.message}>
               We&apos;re sorry, but something unexpected happened. Please try refreshing the page.
             </p>
-            <button 
-              style={styles.button}
-              onClick={() => window.location.reload()}
-            >
+            <button style={styles.button} onClick={() => window.location.reload()}>
               Refresh Page
             </button>
             {process.env.NODE_ENV === 'development' && (

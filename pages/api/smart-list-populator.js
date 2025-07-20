@@ -1,7 +1,7 @@
 // pages/api/smart-list-populator.js
 /**
  * Smart List Population System
- * 
+ *
  * Uses discovered movies data to intelligently populate empty lists
  * based on list names, keywords, and movie metadata.
  */
@@ -24,11 +24,11 @@ export default async function handler(req, res) {
     );
 
     console.log('🎯 SMART POPULATION: Starting intelligent list population...');
-    
+
     // Load discovered movies data
     const dataPath = path.join(process.cwd(), 'data', 'discovered-movies.json');
     const discoveredMovies = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
-    
+
     console.log(`📊 Source data: ${discoveredMovies.length} movies available`);
 
     // Get empty lists (those with 0 movies)
@@ -46,7 +46,7 @@ export default async function handler(req, res) {
         .from('movie_list_items')
         .select('*', { count: 'exact', head: true })
         .eq('list_id', list.id);
-      
+
       if (count === 0) {
         emptyLists.push(list);
       }
@@ -68,13 +68,13 @@ export default async function handler(req, res) {
 
         // Find best movie matches for this list
         const selectedMovies = selectMoviesForList(list, movieCategories, discoveredMovies);
-        
+
         if (selectedMovies.length === 0) {
           console.log(`⚠️  No suitable movies found for: "${list.name}"`);
           results.push({
             list: list.name,
             status: 'no_matches',
-            reason: 'No movies matched list criteria'
+            reason: 'No movies matched list criteria',
           });
           continue;
         }
@@ -84,13 +84,13 @@ export default async function handler(req, res) {
         if (!dryRun) {
           // Actually populate the list
           const populatedCount = await populateListWithMovies(supabase, list.id, selectedMovies);
-          
+
           results.push({
             list: list.name,
             slug: list.slug,
             status: 'populated',
             movie_count: populatedCount,
-            sample_movies: selectedMovies.slice(0, 3).map(m => `${m.title} (${m.year})`)
+            sample_movies: selectedMovies.slice(0, 3).map(m => `${m.title} (${m.year})`),
           });
 
           console.log(`✅ Populated "${list.name}" with ${populatedCount} movies`);
@@ -100,18 +100,17 @@ export default async function handler(req, res) {
             slug: list.slug,
             status: 'dry_run',
             potential_movies: selectedMovies.length,
-            sample_movies: selectedMovies.slice(0, 5).map(m => `${m.title} (${m.year})`)
+            sample_movies: selectedMovies.slice(0, 5).map(m => `${m.title} (${m.year})`),
           });
         }
 
         processedCount++;
-
       } catch (error) {
         console.error(`❌ Error processing "${list.name}":`, error.message);
         results.push({
           list: list.name,
           status: 'error',
-          error: error.message
+          error: error.message,
         });
       }
     }
@@ -120,7 +119,7 @@ export default async function handler(req, res) {
       total_empty_lists: emptyLists.length,
       processed: processedCount,
       available_movies: discoveredMovies.length,
-      dry_run: dryRun
+      dry_run: dryRun,
     };
 
     console.log(`\n🏁 BATCH COMPLETE: Processed ${processedCount}/${emptyLists.length} lists`);
@@ -130,17 +129,19 @@ export default async function handler(req, res) {
       message: dryRun ? 'Dry run completed' : `Populated ${processedCount} lists`,
       summary,
       results,
-      next_batch: emptyLists.length > batchSize ? {
-        remaining: emptyLists.length - batchSize,
-        next_lists: emptyLists.slice(batchSize, batchSize + 5).map(l => l.name)
-      } : null
+      next_batch:
+        emptyLists.length > batchSize
+          ? {
+              remaining: emptyLists.length - batchSize,
+              next_lists: emptyLists.slice(batchSize, batchSize + 5).map(l => l.name),
+            }
+          : null,
     });
-
   } catch (error) {
     console.error('🚨 SMART POPULATION FAILED:', error);
-    res.status(500).json({ 
+    res.status(500).json({
       error: 'Smart population failed',
-      details: error.message
+      details: error.message,
     });
   }
 }
@@ -151,7 +152,7 @@ function categorizeMovies(movies) {
     oscar_winners: [],
     critics_choice: [],
     festival_winners: [],
-    
+
     // Genres
     sci_fi: [],
     horror: [],
@@ -162,7 +163,7 @@ function categorizeMovies(movies) {
     romance: [],
     noir: [],
     documentary: [],
-    
+
     // Decades
     classics_pre1960: [],
     sixties: [],
@@ -171,7 +172,7 @@ function categorizeMovies(movies) {
     nineties: [],
     modern_2000s: [],
     contemporary_2010s: [],
-    
+
     // Origins
     american: [],
     foreign: [],
@@ -179,14 +180,14 @@ function categorizeMovies(movies) {
     japanese: [],
     korean: [],
     italian: [],
-    
+
     // Directors (based on slug content)
     auteur_films: [],
-    
+
     // Quality indicators
     masterpieces: [],
     cult_films: [],
-    popular: []
+    popular: [],
   };
 
   movies.forEach(movie => {
@@ -218,7 +219,12 @@ function categorizeMovies(movies) {
     }
 
     // Categorize by genre (basic keyword matching)
-    if (slug.includes('sci-fi') || slug.includes('science fiction') || slug.includes('space') || slug.includes('future')) {
+    if (
+      slug.includes('sci-fi') ||
+      slug.includes('science fiction') ||
+      slug.includes('space') ||
+      slug.includes('future')
+    ) {
       categories.sci_fi.push(movie);
     }
     if (slug.includes('horror') || slug.includes('scary') || slug.includes('terror')) {
@@ -261,108 +267,120 @@ function categorizeMovies(movies) {
 function selectMoviesForList(list, categories, allMovies) {
   const listName = list.name.toLowerCase();
   const listSlug = list.slug.toLowerCase();
-  
+
   console.log(`🔍 Matching for: "${listName}"`);
 
   // Priority matching rules
   const matchingRules = [
     // Oscar/Academy Awards
     {
-      condition: (name, slug) => name.includes('oscar') || name.includes('academy') || name.includes('best picture'),
+      condition: (name, slug) =>
+        name.includes('oscar') || name.includes('academy') || name.includes('best picture'),
       movies: categories.oscar_winners,
-      maxCount: 30
+      maxCount: 30,
     },
-    
+
     // Directors
     {
-      condition: (name, slug) => name.includes('kubrick') || name.includes('spielberg') || name.includes('scorsese'),
-      movies: categories.auteur_films.length > 0 ? categories.auteur_films : categories.masterpieces,
-      maxCount: 20
+      condition: (name, slug) =>
+        name.includes('kubrick') || name.includes('spielberg') || name.includes('scorsese'),
+      movies:
+        categories.auteur_films.length > 0 ? categories.auteur_films : categories.masterpieces,
+      maxCount: 20,
     },
-    
+
     // Genres
     {
       condition: (name, slug) => name.includes('sci-fi') || name.includes('science fiction'),
       movies: categories.sci_fi,
-      maxCount: 25
+      maxCount: 25,
     },
     {
       condition: (name, slug) => name.includes('horror'),
       movies: categories.horror,
-      maxCount: 25
+      maxCount: 25,
     },
     {
       condition: (name, slug) => name.includes('comedy'),
       movies: categories.comedy,
-      maxCount: 25
+      maxCount: 25,
     },
     {
       condition: (name, slug) => name.includes('thriller'),
       movies: categories.thriller,
-      maxCount: 25
+      maxCount: 25,
     },
     {
       condition: (name, slug) => name.includes('action'),
       movies: categories.action,
-      maxCount: 25
+      maxCount: 25,
     },
     {
       condition: (name, slug) => name.includes('noir'),
       movies: categories.noir,
-      maxCount: 20
+      maxCount: 20,
     },
-    
+
     // International
     {
       condition: (name, slug) => name.includes('foreign') || name.includes('international'),
-      movies: [...categories.french, ...categories.japanese, ...categories.korean, ...categories.italian],
-      maxCount: 30
+      movies: [
+        ...categories.french,
+        ...categories.japanese,
+        ...categories.korean,
+        ...categories.italian,
+      ],
+      maxCount: 30,
     },
     {
       condition: (name, slug) => name.includes('french'),
       movies: categories.french,
-      maxCount: 25
+      maxCount: 25,
     },
-    
+
     // Decades
     {
       condition: (name, slug) => name.includes('70s') || name.includes('1970'),
       movies: categories.seventies,
-      maxCount: 30
+      maxCount: 30,
     },
     {
       condition: (name, slug) => name.includes('80s') || name.includes('1980'),
       movies: categories.eighties,
-      maxCount: 30
+      maxCount: 30,
     },
     {
       condition: (name, slug) => name.includes('90s') || name.includes('1990'),
       movies: categories.nineties,
-      maxCount: 30
+      maxCount: 30,
     },
-    
+
     // Quality/Critics
     {
-      condition: (name, slug) => name.includes('greatest') || name.includes('top') || name.includes('best'),
-      movies: categories.masterpieces.length > 0 ? categories.masterpieces : categories.critics_choice,
-      maxCount: 50
+      condition: (name, slug) =>
+        name.includes('greatest') || name.includes('top') || name.includes('best'),
+      movies:
+        categories.masterpieces.length > 0 ? categories.masterpieces : categories.critics_choice,
+      maxCount: 50,
     },
     {
       condition: (name, slug) => name.includes('criterion') || name.includes('essential'),
       movies: categories.masterpieces,
-      maxCount: 30
+      maxCount: 30,
     },
     {
       condition: (name, slug) => name.includes('critics') || name.includes('poll'),
       movies: categories.critics_choice,
-      maxCount: 25
-    }
+      maxCount: 25,
+    },
   ];
 
   // Try to find a matching rule
   for (const rule of matchingRules) {
     if (rule.condition(listName, listSlug) && rule.movies.length > 0) {
-      console.log(`✅ Matched rule for "${listName}" - found ${rule.movies.length} potential movies`);
+      console.log(
+        `✅ Matched rule for "${listName}" - found ${rule.movies.length} potential movies`
+      );
       return rule.movies.slice(0, rule.maxCount);
     }
   }
@@ -372,7 +390,7 @@ function selectMoviesForList(list, categories, allMovies) {
   const fallbackMovies = [
     ...categories.masterpieces.slice(0, 15),
     ...categories.oscar_winners.slice(0, 10),
-    ...categories.critics_choice.slice(0, 10)
+    ...categories.critics_choice.slice(0, 10),
   ];
 
   return fallbackMovies.length > 0 ? fallbackMovies.slice(0, 20) : [];
@@ -383,7 +401,7 @@ async function populateListWithMovies(supabase, listId, selectedMovies) {
 
   for (let i = 0; i < selectedMovies.length; i++) {
     const movie = selectedMovies[i];
-    
+
     try {
       // Find or create the movie in the database
       let { data: existingMovie } = await supabase
@@ -400,7 +418,7 @@ async function populateListWithMovies(supabase, listId, selectedMovies) {
           .eq('title', movie.title)
           .eq('year', movie.year)
           .single();
-        
+
         existingMovie = titleMovie;
       }
 
@@ -415,7 +433,7 @@ async function populateListWithMovies(supabase, listId, selectedMovies) {
             poster_url: movie.poster_url,
             slug: movie.slug,
             streaming_data: movie.streaming_data,
-            created_at: new Date().toISOString()
+            created_at: new Date().toISOString(),
           })
           .select('id')
           .single();
@@ -425,19 +443,16 @@ async function populateListWithMovies(supabase, listId, selectedMovies) {
       }
 
       // Add to list
-      const { error: itemError } = await supabase
-        .from('movie_list_items')
-        .insert({
-          list_id: listId,
-          movie_id: existingMovie.id,
-          order_index: i + 1,
-          created_at: new Date().toISOString()
-        });
+      const { error: itemError } = await supabase.from('movie_list_items').insert({
+        list_id: listId,
+        movie_id: existingMovie.id,
+        order_index: i + 1,
+        created_at: new Date().toISOString(),
+      });
 
       if (itemError) throw itemError;
-      
-      populatedCount++;
 
+      populatedCount++;
     } catch (error) {
       console.error(`Error adding movie "${movie.title}":`, error.message);
       // Continue with other movies

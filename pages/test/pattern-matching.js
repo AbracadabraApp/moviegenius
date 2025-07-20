@@ -18,31 +18,31 @@ Just title: Citizen Kane changed cinema forever.`);
       name: 'Conservative: "Title" (Year)',
       regex: /"([^"]+)"\s*\((\d{4})\)/g,
       description: 'Only matches quoted titles with years in parentheses',
-      conservative: true
+      conservative: true,
     },
     {
       name: 'Moderate: "Title" or Title (Year)',
       regex: /(?:"([^"]+)"|([A-Z][^.!?]*?))\s*\((\d{4})\)/g,
       description: 'Matches quoted titles with years OR unquoted titles with years',
-      conservative: false
+      conservative: false,
     },
     {
       name: 'Aggressive: "Title" anywhere',
       regex: /"([^"]+)"/g,
       description: 'Matches any quoted text (high false positive risk)',
-      conservative: false
+      conservative: false,
     },
     {
       name: 'Title (Year) unquoted',
       regex: /\b([A-Z][A-Za-z\s&:.'-]{2,})\s*\((\d{4})\)/g,
       description: 'Matches unquoted titles with years (moderate false positive risk)',
-      conservative: false
-    }
+      conservative: false,
+    },
   ];
 
   const [selectedPattern, setSelectedPattern] = useState(0);
 
-  const testPattern = (patternIndex) => {
+  const testPattern = patternIndex => {
     const pattern = patterns[patternIndex];
     const regex = new RegExp(pattern.regex.source, pattern.regex.flags);
     const matches = [];
@@ -52,7 +52,7 @@ Just title: Citizen Kane changed cinema forever.`);
       matches.push({
         fullMatch: match[0],
         groups: match.slice(1),
-        index: match.index
+        index: match.index,
       });
     }
 
@@ -74,10 +74,10 @@ Just title: Citizen Kane changed cinema forever.`);
     sortedMatches.forEach((match, i) => {
       // Add text before this match
       result += text.slice(lastIndex, match.index);
-      
+
       // Add highlighted match
       result += `<mark style="background-color: #fef3c7; padding: 2px 4px; border-radius: 3px;">${match.fullMatch}</mark>`;
-      
+
       lastIndex = match.index + match.fullMatch.length;
     });
 
@@ -98,7 +98,7 @@ Just title: Citizen Kane changed cinema forever.`);
         <h2 style={styles.sectionTitle}>Test Text</h2>
         <textarea
           value={testText}
-          onChange={(e) => setTestText(e.target.value)}
+          onChange={e => setTestText(e.target.value)}
           style={styles.textarea}
           rows={10}
           placeholder="Enter text with various movie mention patterns..."
@@ -114,17 +114,21 @@ Just title: Citizen Kane changed cinema forever.`);
               style={{
                 ...styles.patternCard,
                 ...(selectedPattern === index ? styles.patternCardSelected : {}),
-                ...(pattern.conservative ? styles.patternCardConservative : styles.patternCardRisky)
+                ...(pattern.conservative
+                  ? styles.patternCardConservative
+                  : styles.patternCardRisky),
               }}
               onClick={() => setSelectedPattern(index)}
             >
               <div style={styles.patternHeader}>
                 <h3 style={styles.patternName}>{pattern.name}</h3>
-                <span style={{
-                  ...styles.patternBadge,
-                  backgroundColor: pattern.conservative ? '#dcfce7' : '#fef2f2',
-                  color: pattern.conservative ? '#166534' : '#dc2626'
-                }}>
+                <span
+                  style={{
+                    ...styles.patternBadge,
+                    backgroundColor: pattern.conservative ? '#dcfce7' : '#fef2f2',
+                    color: pattern.conservative ? '#166534' : '#dc2626',
+                  }}
+                >
                   {pattern.conservative ? 'Conservative' : 'Risky'}
                 </span>
               </div>
@@ -137,7 +141,7 @@ Just title: Citizen Kane changed cinema forever.`);
 
       <div style={styles.resultsSection}>
         <h2 style={styles.sectionTitle}>Results for: {currentPattern.name}</h2>
-        
+
         <div style={styles.statsBar}>
           <div style={styles.stat}>
             <span style={styles.statLabel}>Matches Found:</span>
@@ -145,10 +149,12 @@ Just title: Citizen Kane changed cinema forever.`);
           </div>
           <div style={styles.stat}>
             <span style={styles.statLabel}>Pattern Safety:</span>
-            <span style={{
-              ...styles.statValue,
-              color: currentPattern.conservative ? '#16a34a' : '#dc2626'
-            }}>
+            <span
+              style={{
+                ...styles.statValue,
+                color: currentPattern.conservative ? '#16a34a' : '#dc2626',
+              }}
+            >
               {currentPattern.conservative ? 'Conservative' : 'Risky'}
             </span>
           </div>
@@ -156,10 +162,10 @@ Just title: Citizen Kane changed cinema forever.`);
 
         <div style={styles.highlightedText}>
           <h3 style={styles.resultTitle}>Highlighted Matches</h3>
-          <div 
+          <div
             style={styles.textDisplay}
             dangerouslySetInnerHTML={{
-              __html: highlightMatches(testText, currentMatches)
+              __html: highlightMatches(testText, currentMatches),
             }}
           />
         </div>
@@ -180,17 +186,23 @@ Just title: Citizen Kane changed cinema forever.`);
                     <code>{match.fullMatch}</code>
                   </span>
                   <span style={styles.tableCell}>
-                    {match.groups.filter(g => g).map((group, i) => (
-                      <code key={i} style={styles.groupCode}>{group}</code>
-                    ))}
+                    {match.groups
+                      .filter(g => g)
+                      .map((group, i) => (
+                        <code key={i} style={styles.groupCode}>
+                          {group}
+                        </code>
+                      ))}
                   </span>
                   <span style={styles.tableCell}>{match.index}</span>
                   <span style={styles.tableCell}>
-                    <span style={{
-                      ...styles.assessmentBadge,
-                      backgroundColor: assessMatch(match.fullMatch).color,
-                      color: '#ffffff'
-                    }}>
+                    <span
+                      style={{
+                        ...styles.assessmentBadge,
+                        backgroundColor: assessMatch(match.fullMatch).color,
+                        color: '#ffffff',
+                      }}
+                    >
                       {assessMatch(match.fullMatch).label}
                     </span>
                   </span>
@@ -207,12 +219,18 @@ Just title: Citizen Kane changed cinema forever.`);
           {currentPattern.conservative ? (
             <div style={styles.goodRecommendation}>
               <strong>✅ Recommended for production</strong>
-              <p>This conservative pattern minimizes false positives and should work well for Genius episodes.</p>
+              <p>
+                This conservative pattern minimizes false positives and should work well for Genius
+                episodes.
+              </p>
             </div>
           ) : (
             <div style={styles.cautionRecommendation}>
               <strong>⚠️ Use with caution</strong>
-              <p>This pattern may generate false positives. Consider additional validation or user testing.</p>
+              <p>
+                This pattern may generate false positives. Consider additional validation or user
+                testing.
+              </p>
             </div>
           )}
         </div>
@@ -238,31 +256,31 @@ const styles = {
     maxWidth: '1200px',
     margin: '0 auto',
     padding: '20px',
-    fontFamily: 'system-ui, -apple-system, sans-serif'
+    fontFamily: 'system-ui, -apple-system, sans-serif',
   },
   header: {
     textAlign: 'center',
-    marginBottom: '30px'
+    marginBottom: '30px',
   },
   title: {
     fontSize: '28px',
     fontWeight: '700',
     marginBottom: '8px',
-    color: '#111827'
+    color: '#111827',
   },
   subtitle: {
     fontSize: '16px',
     color: '#6b7280',
-    margin: '0'
+    margin: '0',
   },
   testSection: {
-    marginBottom: '30px'
+    marginBottom: '30px',
   },
   sectionTitle: {
     fontSize: '20px',
     fontWeight: '600',
     marginBottom: '15px',
-    color: '#374151'
+    color: '#374151',
   },
   textarea: {
     width: '100%',
@@ -271,57 +289,57 @@ const styles = {
     borderRadius: '6px',
     fontSize: '14px',
     fontFamily: 'monospace',
-    resize: 'vertical'
+    resize: 'vertical',
   },
   patternsSection: {
-    marginBottom: '30px'
+    marginBottom: '30px',
   },
   patternGrid: {
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-    gap: '15px'
+    gap: '15px',
   },
   patternCard: {
     padding: '15px',
     border: '2px solid #e5e7eb',
     borderRadius: '8px',
     cursor: 'pointer',
-    transition: 'all 0.2s ease'
+    transition: 'all 0.2s ease',
   },
   patternCardSelected: {
     borderColor: '#3b82f6',
-    backgroundColor: '#eff6ff'
+    backgroundColor: '#eff6ff',
   },
   patternCardConservative: {
     borderLeftWidth: '4px',
-    borderLeftColor: '#16a34a'
+    borderLeftColor: '#16a34a',
   },
   patternCardRisky: {
     borderLeftWidth: '4px',
-    borderLeftColor: '#dc2626'
+    borderLeftColor: '#dc2626',
   },
   patternHeader: {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: '8px'
+    marginBottom: '8px',
   },
   patternName: {
     fontSize: '16px',
     fontWeight: '600',
     margin: '0',
-    color: '#374151'
+    color: '#374151',
   },
   patternBadge: {
     padding: '4px 8px',
     borderRadius: '4px',
     fontSize: '12px',
-    fontWeight: '500'
+    fontWeight: '500',
   },
   patternDescription: {
     fontSize: '14px',
     color: '#6b7280',
-    marginBottom: '10px'
+    marginBottom: '10px',
   },
   patternRegex: {
     display: 'block',
@@ -330,10 +348,10 @@ const styles = {
     borderRadius: '4px',
     fontSize: '12px',
     fontFamily: 'monospace',
-    wordBreak: 'break-all'
+    wordBreak: 'break-all',
   },
   resultsSection: {
-    marginBottom: '30px'
+    marginBottom: '30px',
   },
   statsBar: {
     display: 'flex',
@@ -342,30 +360,30 @@ const styles = {
     padding: '15px',
     backgroundColor: '#f9fafb',
     borderRadius: '8px',
-    border: '1px solid #e5e7eb'
+    border: '1px solid #e5e7eb',
   },
   stat: {
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
   },
   statLabel: {
     fontSize: '12px',
     color: '#6b7280',
-    fontWeight: '500'
+    fontWeight: '500',
   },
   statValue: {
     fontSize: '18px',
     fontWeight: '700',
-    color: '#111827'
+    color: '#111827',
   },
   highlightedText: {
-    marginBottom: '25px'
+    marginBottom: '25px',
   },
   resultTitle: {
     fontSize: '16px',
     fontWeight: '600',
     marginBottom: '10px',
-    color: '#374151'
+    color: '#374151',
   },
   textDisplay: {
     padding: '15px',
@@ -375,15 +393,15 @@ const styles = {
     fontSize: '14px',
     lineHeight: '1.6',
     fontFamily: 'Georgia, serif',
-    whiteSpace: 'pre-wrap'
+    whiteSpace: 'pre-wrap',
   },
   matchesList: {
-    marginBottom: '20px'
+    marginBottom: '20px',
   },
   matchesTable: {
     border: '1px solid #e5e7eb',
     borderRadius: '6px',
-    overflow: 'hidden'
+    overflow: 'hidden',
   },
   tableHeader: {
     display: 'grid',
@@ -391,45 +409,45 @@ const styles = {
     backgroundColor: '#f9fafb',
     fontWeight: '600',
     fontSize: '14px',
-    color: '#374151'
+    color: '#374151',
   },
   tableRow: {
     display: 'grid',
     gridTemplateColumns: '2fr 2fr 1fr 1fr',
-    borderTop: '1px solid #f3f4f6'
+    borderTop: '1px solid #f3f4f6',
   },
   tableCell: {
     padding: '12px',
     fontSize: '13px',
     display: 'flex',
     alignItems: 'center',
-    gap: '6px'
+    gap: '6px',
   },
   groupCode: {
     padding: '2px 4px',
     backgroundColor: '#f3f4f6',
     borderRadius: '3px',
-    fontSize: '11px'
+    fontSize: '11px',
   },
   assessmentBadge: {
     padding: '4px 8px',
     borderRadius: '4px',
     fontSize: '11px',
-    fontWeight: '500'
+    fontWeight: '500',
   },
   recommendationSection: {
     padding: '20px',
     backgroundColor: '#f8fafc',
     borderRadius: '8px',
-    border: '1px solid #e2e8f0'
+    border: '1px solid #e2e8f0',
   },
   recommendation: {
-    fontSize: '14px'
+    fontSize: '14px',
   },
   goodRecommendation: {
-    color: '#166534'
+    color: '#166534',
   },
   cautionRecommendation: {
-    color: '#dc2626'
-  }
+    color: '#dc2626',
+  },
 };

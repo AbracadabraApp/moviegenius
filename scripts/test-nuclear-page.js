@@ -2,7 +2,7 @@
 
 /**
  * Test Nuclear Page Generator
- * 
+ *
  * Creates a single nuclear page for testing layout and features
  * Usage: node scripts/test-nuclear-page.js [tmdb_id]
  */
@@ -23,7 +23,7 @@ const anthropic = new Anthropic({
 async function generateTestNuclearPage(tmdbId) {
   try {
     console.log(`🚀 Generating test nuclear page for TMDB ID: ${tmdbId}`);
-    
+
     // Get movie from database
     const { data: movie, error } = await supabase
       .from('movies')
@@ -54,32 +54,39 @@ async function generateTestNuclearPage(tmdbId) {
 
     if (existingAnalysis) {
       console.log('✅ Analysis already exists! Page is nuclear-ready.');
-      console.log(`🔗 Visit: ${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/movie/${tmdbId}`);
+      console.log(
+        `🔗 Visit: ${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/movie/${tmdbId}`
+      );
       return;
     }
 
     // Generate Claude analysis
     console.log('🤖 Generating Claude analysis...');
-    
-    const promptConfig = buildPrompt('MOVIE_ANALYSIS', 
-      'Include 3-4 accessibly written Explore Further topics for additional explorations');
-    
+
+    const promptConfig = buildPrompt(
+      'MOVIE_ANALYSIS',
+      'Include 3-4 accessibly written Explore Further topics for additional explorations'
+    );
+
     const message = await anthropic.messages.create({
       ...promptConfig,
-      messages: [{ 
-        role: 'user', 
-        content: `${movie.title} (${movie.year})` 
-      }]
+      messages: [
+        {
+          role: 'user',
+          content: `${movie.title} (${movie.year})`,
+        },
+      ],
     });
 
     const analysis = message.content[0].text;
     const usage = message.usage;
-    
-    // Calculate cost
-    const cost = ((usage.input_tokens * 3 / 1000000) + 
-                 (usage.output_tokens * 15 / 1000000));
 
-    console.log(`💰 Analysis generated (Cost: $${cost.toFixed(4)}, Tokens: ${usage.input_tokens + usage.output_tokens})`);
+    // Calculate cost
+    const cost = (usage.input_tokens * 3) / 1000000 + (usage.output_tokens * 15) / 1000000;
+
+    console.log(
+      `💰 Analysis generated (Cost: $${cost.toFixed(4)}, Tokens: ${usage.input_tokens + usage.output_tokens})`
+    );
 
     // Save analysis
     const analysisData = {
@@ -90,23 +97,23 @@ async function generateTestNuclearPage(tmdbId) {
       output_tokens: usage.output_tokens,
       model: 'claude-3-5-sonnet-20241022',
       test_generated: true, // Flag for test
-      entity_data: null
+      entity_data: null,
     };
 
-    await supabase
-      .from('movie_analyses')
-      .insert({
-        movie_id: movie.id,
-        analysis_type: 'page_analysis',
-        claude_response: analysisData,
-        query_text: `Test nuclear page for ${movie.title} (${movie.year})`
-      });
+    await supabase.from('movie_analyses').insert({
+      movie_id: movie.id,
+      analysis_type: 'page_analysis',
+      claude_response: analysisData,
+      query_text: `Test nuclear page for ${movie.title} (${movie.year})`,
+    });
 
     console.log('✅ Analysis saved to database!');
     console.log('');
     console.log('🎯 TEST RESULTS:');
     console.log(`📄 Movie: ${movie.title} (${movie.year})`);
-    console.log(`🔗 URL: ${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/movie/${tmdbId}`);
+    console.log(
+      `🔗 URL: ${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/movie/${tmdbId}`
+    );
     console.log(`💰 Cost: $${cost.toFixed(4)}`);
     console.log(`📝 Tokens: ${usage.input_tokens + usage.output_tokens}`);
     console.log('');
@@ -122,7 +129,6 @@ async function generateTestNuclearPage(tmdbId) {
     console.log('   1. Visit the URL above (nuclear page)');
     console.log('   2. Visit a random movie page (ISR page)');
     console.log('   3. Compare load times and content availability');
-
   } catch (error) {
     console.error('❌ Failed to generate test nuclear page:', error);
   }

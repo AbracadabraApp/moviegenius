@@ -1,7 +1,7 @@
 // pages/api/movie-credits.js
 /**
  * TMDB Movie Credits API Route
- * 
+ *
  * Fetches cast and crew information for a movie from TMDB API using TMDB movie ID.
  * Returns organized cast and crew data with hierarchy for key people.
  */
@@ -26,44 +26,43 @@ export default async function handler(req, res) {
   try {
     // Cache movie credits with Redis (7-day TTL)
     const cache = getCache();
-    const credits = await cache.cacheTMDBResponse(
-      'movie_credits',
-      { tmdbId },
-      async () => {
-        console.log(`🔄 Cache miss - fetching TMDB credits for movie ID: ${tmdbId}`);
-        
-        const tmdbResponse = await fetch(
-          `https://api.themoviedb.org/3/movie/${tmdbId}/credits?api_key=${process.env.TMDB_API_KEY}`
-        );
-        
-        if (!tmdbResponse.ok) {
-          throw new Error('TMDB API request failed');
-        }
+    const credits = await cache.cacheTMDBResponse('movie_credits', { tmdbId }, async () => {
+      console.log(`🔄 Cache miss - fetching TMDB credits for movie ID: ${tmdbId}`);
 
-        const creditsData = await tmdbResponse.json();
-        console.log(`💾 Cached TMDB credits for movie ID: ${tmdbId} - ${creditsData.cast?.length || 0} cast, ${creditsData.crew?.length || 0} crew`);
-        
-        return creditsData;
+      const tmdbResponse = await fetch(
+        `https://api.themoviedb.org/3/movie/${tmdbId}/credits?api_key=${process.env.TMDB_API_KEY}`
+      );
+
+      if (!tmdbResponse.ok) {
+        throw new Error('TMDB API request failed');
       }
-    );
-    
+
+      const creditsData = await tmdbResponse.json();
+      console.log(
+        `💾 Cached TMDB credits for movie ID: ${tmdbId} - ${creditsData.cast?.length || 0} cast, ${creditsData.crew?.length || 0} crew`
+      );
+
+      return creditsData;
+    });
+
     // Process cast data
-    const allCast = credits.cast?.map(person => ({
-      id: person.id,
-      name: person.name,
-      character: person.character,
-      profile_path: person.profile_path ? 
-        `https://image.tmdb.org/t/p/w500${person.profile_path}` : 
-        'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDIwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjkwIiByPSIzNSIgZmlsbD0iI0Q5RDE5OSIvPgo8ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMjEwIiByeD0iNzAiIHJ5PSI0NSIgZmlsbD0iI0Q5RDE5OSIvPgo8L3N2Zz4K',
-      order: person.order,
-      gender: person.gender,
-      known_for_department: 'Actor'
-    })) || [];
+    const allCast =
+      credits.cast?.map(person => ({
+        id: person.id,
+        name: person.name,
+        character: person.character,
+        profile_path: person.profile_path
+          ? `https://image.tmdb.org/t/p/w500${person.profile_path}`
+          : 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDIwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjkwIiByPSIzNSIgZmlsbD0iI0Q5RDE5OSIvPgo8ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMjEwIiByeD0iNzAiIHJ5PSI0NSIgZmlsbD0iI0Q5RDE5OSIvPgo8L3N2Zz4K',
+        order: person.order,
+        gender: person.gender,
+        known_for_department: 'Actor',
+      })) || [];
 
     // Sort cast by order (handle order: 0 properly)
     allCast.sort((a, b) => {
-      const orderA = (a.order !== null && a.order !== undefined) ? a.order : 999;
-      const orderB = (b.order !== null && b.order !== undefined) ? b.order : 999;
+      const orderA = a.order !== null && a.order !== undefined ? a.order : 999;
+      const orderB = b.order !== null && b.order !== undefined ? b.order : 999;
       return orderA - orderB;
     });
 
@@ -83,11 +82,11 @@ export default async function handler(req, res) {
         name: person.name,
         job: person.job,
         department: person.department,
-        profile_path: person.profile_path ? 
-          `https://image.tmdb.org/t/p/w500${person.profile_path}` : 
-          'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDIwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjkwIiByPSIzNSIgZmlsbD0iI0Q5RDE5OSIvPgo8ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMjEwIiByeD0iNzAiIHJ5PSI0NSIgZmlsbD0iI0Q5RDE5OSIvPgo8L3N2Zz4K',
+        profile_path: person.profile_path
+          ? `https://image.tmdb.org/t/p/w500${person.profile_path}`
+          : 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDIwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjkwIiByPSIzNSIgZmlsbD0iI0Q5RDE5OSIvPgo8ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMjEwIiByeD0iNzAiIHJ5PSI0NSIgZmlsbD0iI0Q5RDE5OSIvPgo8L3N2Zz4K',
         gender: person.gender,
-        known_for_department: person.known_for_department || person.department
+        known_for_department: person.known_for_department || person.department,
       };
 
       // Categorize key crew members
@@ -95,9 +94,21 @@ export default async function handler(req, res) {
         directors.push(crewMember);
       } else if (person.job?.includes('Producer')) {
         producers.push(crewMember);
-      } else if (person.job?.includes('Writer') || person.job?.includes('Screenplay') || person.job === 'Story') {
+      } else if (
+        person.job?.includes('Writer') ||
+        person.job?.includes('Screenplay') ||
+        person.job === 'Story'
+      ) {
         writers.push(crewMember);
-      } else if (['Director of Photography', 'Original Music Composer', 'Music', 'Editor', 'Production Designer'].includes(person.job)) {
+      } else if (
+        [
+          'Director of Photography',
+          'Original Music Composer',
+          'Music',
+          'Editor',
+          'Production Designer',
+        ].includes(person.job)
+      ) {
         keyCrews.push(crewMember);
       } else {
         // Group other crew by department
@@ -130,7 +141,7 @@ export default async function handler(req, res) {
 
     // Cache movie credits for 7 days - cast/crew data rarely changes
     res.setHeader('Cache-Control', 'public, s-maxage=604800, stale-while-revalidate=1209600');
-    res.status(200).json({ 
+    res.status(200).json({
       topCast,
       allCast,
       directors,
@@ -140,15 +151,14 @@ export default async function handler(req, res) {
       otherCrew: sortedOtherCrew,
       totals: {
         cast: allCast.length,
-        crew: credits.crew?.length || 0
-      }
+        crew: credits.crew?.length || 0,
+      },
     });
-
   } catch (error) {
     console.error('Error fetching movie credits:', error);
-    res.status(500).json({ 
+    res.status(500).json({
       error: 'Failed to fetch movie credits',
-      tmdb_id: tmdbId
+      tmdb_id: tmdbId,
     });
   }
 }

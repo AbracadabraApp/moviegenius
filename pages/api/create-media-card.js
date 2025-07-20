@@ -1,13 +1,13 @@
 // pages/api/create-media-card.js
 /**
  * Create MediaCard API
- * 
+ *
  * Universal function for creating MediaCards from any source:
  * - User searches
  * - Claude analysis mentions
  * - List browsing
  * - Recommendations
- * 
+ *
  * Process:
  * 1. Check if movie exists in database
  * 2. If not, fetch from TMDB
@@ -38,8 +38,8 @@ export default async function handler(req, res) {
 
   // Validate input - need either title/year OR tmdb_id
   if (!tmdb_id && (!title || !year)) {
-    return res.status(400).json({ 
-      error: 'Either tmdb_id OR title+year is required' 
+    return res.status(400).json({
+      error: 'Either tmdb_id OR title+year is required',
     });
   }
 
@@ -48,13 +48,9 @@ export default async function handler(req, res) {
 
     // Step 1: Check if movie already exists with COMPLETE data (not placeholder)
     let existingMovie = null;
-    
+
     if (tmdb_id) {
-      const { data } = await supabase
-        .from('movies')
-        .select('*')
-        .eq('tmdb_id', tmdb_id)
-        .single();
+      const { data } = await supabase.from('movies').select('*').eq('tmdb_id', tmdb_id).single();
       existingMovie = data;
     } else {
       const { data } = await supabase
@@ -67,7 +63,8 @@ export default async function handler(req, res) {
     }
 
     // Check if existing movie has complete data (not placeholder)
-    const isCompleteMovie = existingMovie && 
+    const isCompleteMovie =
+      existingMovie &&
       existingMovie.title !== 'TMDB_FETCH_REQUIRED' &&
       !existingMovie.slug?.startsWith('tmdb-') &&
       existingMovie.slug?.length > 5;
@@ -77,7 +74,7 @@ export default async function handler(req, res) {
       return res.status(200).json({
         success: true,
         movie: existingMovie,
-        source: 'existing'
+        source: 'existing',
       });
     }
 
@@ -90,29 +87,25 @@ export default async function handler(req, res) {
     // Step 2: Fetch movie data from TMDB
     let tmdbMovie;
     const cache = getCache();
-    
+
     if (tmdb_id) {
       // Fetch by TMDB ID with caching
-      tmdbMovie = await cache.cacheTMDBResponse(
-        'movie_details',
-        { tmdb_id },
-        async () => {
-          // Cache miss - fetching TMDB movie details
-          
-          const tmdbResponse = await fetch(
-            `https://api.themoviedb.org/3/movie/${tmdb_id}?api_key=${process.env.TMDB_API_KEY}`
-          );
-          
-          if (!tmdbResponse.ok) {
-            throw new Error(`TMDB API failed: ${tmdbResponse.status}`);
-          }
-          
-          const movie = await tmdbResponse.json();
-          // Cached TMDB movie details
-          
-          return movie;
+      tmdbMovie = await cache.cacheTMDBResponse('movie_details', { tmdb_id }, async () => {
+        // Cache miss - fetching TMDB movie details
+
+        const tmdbResponse = await fetch(
+          `https://api.themoviedb.org/3/movie/${tmdb_id}?api_key=${process.env.TMDB_API_KEY}`
+        );
+
+        if (!tmdbResponse.ok) {
+          throw new Error(`TMDB API failed: ${tmdbResponse.status}`);
         }
-      );
+
+        const movie = await tmdbResponse.json();
+        // Cached TMDB movie details
+
+        return movie;
+      });
     } else {
       // Search by title and year with caching
       const searchResults = await cache.cacheTMDBResponse(
@@ -120,52 +113,50 @@ export default async function handler(req, res) {
         { title, year },
         async () => {
           // Cache miss - searching TMDB
-          
+
           const tmdbResponse = await fetch(
             `https://api.themoviedb.org/3/search/movie?api_key=${process.env.TMDB_API_KEY}&query=${encodeURIComponent(title)}&year=${year}`
           );
-          
+
           if (!tmdbResponse.ok) {
             throw new Error(`TMDB search failed: ${tmdbResponse.status}`);
           }
-          
+
           const data = await tmdbResponse.json();
           // Cached TMDB search results
-          
+
           return data;
         }
       );
-      
+
       tmdbMovie = searchResults.results?.[0];
-      
+
       if (!tmdbMovie) {
         return res.status(404).json({ error: 'Movie not found in TMDB' });
       }
     }
 
     // Extract data from TMDB
-    const movieYear = tmdbMovie.release_date ? 
-      new Date(tmdbMovie.release_date).getFullYear() : 
-      year;
+    const movieYear = tmdbMovie.release_date
+      ? new Date(tmdbMovie.release_date).getFullYear()
+      : year;
 
     // Step 3: Generate Claude slug for new MediaCard
     // Generating Claude slug
-    
+
     const slugPrompt = `For the movie "${tmdbMovie.title}" (${movieYear}), provide a punchy marketing tagline under 50 characters. Think movie poster tagline - short, memorable, exciting. Examples: "Terror has a new name", "Love conquers all", "Justice is coming". Just return the tagline, nothing else.`;
 
     const message = await Promise.race([
       anthropic.messages.create({
         model: 'claude-3-haiku-20240307',
         max_tokens: 50,
-        messages: [{ role: 'user', content: slugPrompt }]
+        messages: [{ role: 'user', content: slugPrompt }],
       }),
-      new Promise((_, reject) => 
-        setTimeout(() => reject(new Error('Claude slug timeout')), 10000)
-      )
+      new Promise((_, reject) => setTimeout(() => reject(new Error('Claude slug timeout')), 10000)),
     ]);
 
     let claudeSlug = message.content[0].text.trim();
-    
+
     // Remove quotes if Claude added them
     if (claudeSlug.startsWith('"') && claudeSlug.endsWith('"')) {
       claudeSlug = claudeSlug.slice(1, -1);
@@ -178,12 +169,12 @@ export default async function handler(req, res) {
       year: movieYear,
       official_title: tmdbMovie.title,
       release_date: tmdbMovie.release_date || null,
-      poster_url: tmdbMovie.poster_path 
+      poster_url: tmdbMovie.poster_path
         ? `https://image.tmdb.org/t/p/w500${tmdbMovie.poster_path}`
         : null,
       slug: claudeSlug,
       streaming_data: null, // Will be populated later if needed
-      created_at: new Date().toISOString()
+      created_at: new Date().toISOString(),
     };
 
     const { data: savedMovie, error: saveError } = await supabase
@@ -200,18 +191,17 @@ export default async function handler(req, res) {
 
     // Cache for 1 hour since this is fresh data
     res.setHeader('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=7200');
-    
+
     res.status(201).json({
       success: true,
       movie: savedMovie,
-      source: 'created'
+      source: 'created',
     });
-
   } catch (error) {
     console.error('❌ MediaCard creation failed:', error);
-    res.status(500).json({ 
+    res.status(500).json({
       error: 'Failed to create MediaCard',
-      details: error.message 
+      details: error.message,
     });
   }
 }

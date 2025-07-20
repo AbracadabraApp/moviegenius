@@ -21,9 +21,10 @@ export default async function handler(req, res) {
       model: 'claude-3-5-sonnet-20241022',
       max_tokens: 200,
       temperature: 0.7,
-      messages: [{
-        role: 'user',
-        content: `Generate 4 diverse movie exploration topics inspired by this query: "${query}"
+      messages: [
+        {
+          role: 'user',
+          content: `Generate 4 diverse movie exploration topics inspired by this query: "${query}"
 
 Create 4 DIFFERENT angles that branch out from this topic (25 words or less each). Avoid repeating the original query. Think: genre shifts, time periods, cultural perspectives, filmmaking approaches, or thematic variations.
 
@@ -33,26 +34,27 @@ Example for "action movies":
 Silent film stunts and early action sequences
 Female-led action films from around the world  
 Low-budget action movies with creative fight scenes
-Action comedies that blend humor with thrills`
-      }]
+Action comedies that blend humor with thrills`,
+        },
+      ],
     });
 
     const responseText = message.content[0].text.trim();
-    const topics = responseText.split('\n')
+    const topics = responseText
+      .split('\n')
       .map(line => line.trim())
       .filter(line => line.length > 0)
       .slice(0, 4); // Ensure max 4 topics
 
-    res.status(200).json({ 
-      success: true, 
-      topics 
+    res.status(200).json({
+      success: true,
+      topics,
     });
-
   } catch (error) {
     console.error('Error generating explore topics:', error);
-    res.status(500).json({ 
+    res.status(500).json({
       error: 'Failed to generate explore topics',
-      details: error.message 
+      details: error.message,
     });
   }
 }

@@ -103,9 +103,7 @@
       },
       {
         "type": "explore_further",
-        "prompts": [
-          "How did this aspect of the topic influence cinema?"
-        ]
+        "prompts": ["How did this aspect of the topic influence cinema?"]
       },
       {
         "type": "text",

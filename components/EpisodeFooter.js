@@ -1,6 +1,6 @@
 /**
  * Episode Footer Component
- * 
+ *
  * Simple component that filters current episode from theme episodes list.
  */
 
@@ -30,18 +30,17 @@ export default function EpisodeFooter({ currentTheme, currentEpisode }) {
     { slug: 'avant-garde-film', name: 'Movements in Film' },
     { slug: 'magic-of-moviemaking', name: 'The Magic of Moviemaking' },
     { slug: 'cinema-through-decades', name: 'Cinema Through the Decades' },
-    { slug: 'cinema-cultural-impact', name: 'Hollywood Transformed' }
+    { slug: 'cinema-cultural-impact', name: 'Hollywood Transformed' },
   ];
 
   return (
     <div style={styles.footer}>
-      
       {/* Episodes in Current Theme */}
       {otherEpisodes.length > 0 && (
         <div style={styles.section}>
           <h3 style={styles.sectionTitle}>More from {themeData.title}</h3>
           <div style={styles.episodeGrid}>
-            {otherEpisodes.map((episode) => (
+            {otherEpisodes.map(episode => (
               <Link
                 key={episode.id}
                 href={routeHelpers.getEpisodeRoute(currentTheme, episode.id)}
@@ -59,15 +58,17 @@ export default function EpisodeFooter({ currentTheme, currentEpisode }) {
       <div style={styles.section}>
         <h3 style={styles.sectionTitle}>Explore Further</h3>
         <div style={styles.themeGrid}>
-          {exploreThemes.filter(theme => theme.slug !== currentTheme).map((theme) => (
-            <Link
-              key={theme.slug}
-              href={routeHelpers.getThemeRoute(theme.slug)}
-              style={styles.themeButton}
-            >
-              {theme.name}
-            </Link>
-          ))}
+          {exploreThemes
+            .filter(theme => theme.slug !== currentTheme)
+            .map(theme => (
+              <Link
+                key={theme.slug}
+                href={routeHelpers.getThemeRoute(theme.slug)}
+                style={styles.themeButton}
+              >
+                {theme.name}
+              </Link>
+            ))}
         </div>
       </div>
     </div>
@@ -80,13 +81,13 @@ const styles = {
     borderTop: '3px solid #d4af37',
     padding: '48px 20px 40px',
     marginTop: '60px',
-    fontFamily: 'Georgia, "Times New Roman", serif'
+    fontFamily: 'Georgia, "Times New Roman", serif',
   },
-  
+
   section: {
-    marginBottom: '48px'
+    marginBottom: '48px',
   },
-  
+
   sectionTitle: {
     fontSize: '24px',
     fontWeight: '600',
@@ -94,18 +95,18 @@ const styles = {
     marginBottom: '24px',
     textAlign: 'center',
     fontFamily: 'Georgia, "Times New Roman", serif',
-    letterSpacing: '0.5px'
+    letterSpacing: '0.5px',
   },
-  
+
   // Episode Navigation Styles
   episodeGrid: {
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
     gap: '16px',
     maxWidth: '800px',
-    margin: '0 auto'
+    margin: '0 auto',
   },
-  
+
   episodeButton: {
     backgroundColor: '#ffffff',
     border: '1px solid #d4af37',
@@ -115,24 +116,24 @@ const styles = {
     textDecoration: 'none',
     boxShadow: '0 2px 8px rgba(212, 175, 55, 0.1)',
     fontFamily: 'Georgia, "Times New Roman", serif',
-    display: 'block'
+    display: 'block',
   },
-  
+
   episodeTitle: {
     fontSize: '17px',
     fontWeight: '600',
     color: '#000000',
     marginBottom: '6px',
-    fontFamily: 'Georgia, "Times New Roman", serif'
+    fontFamily: 'Georgia, "Times New Roman", serif',
   },
-  
+
   episodeSubtitle: {
     fontSize: '15px',
     color: '#4a5568',
     lineHeight: '1.5',
-    fontStyle: 'italic'
+    fontStyle: 'italic',
   },
-  
+
   // Theme Grid Styles - Enhanced with gold aesthetic
   themeGrid: {
     display: 'grid',
@@ -140,9 +141,9 @@ const styles = {
     gap: '12px',
     marginBottom: '0px',
     maxWidth: '500px',
-    margin: '0 auto'
+    margin: '0 auto',
   },
-  
+
   themeButton: {
     padding: '16px 12px',
     border: '1px solid #d4af37',
@@ -159,7 +160,6 @@ const styles = {
     justifyContent: 'center',
     boxShadow: '0 2px 6px rgba(212, 175, 55, 0.1)',
     backgroundColor: '#ffffff',
-    color: '#000000'
+    color: '#000000',
   },
-  
 };

@@ -3,10 +3,14 @@
 const isRailwayBuild = process.env.RAILWAY_ENVIRONMENT_NAME;
 
 // Set fallback environment variables for build safety
-process.env.NEXT_PUBLIC_SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
-process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-anon-key';
-process.env.SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || 'placeholder-service-key';
-process.env.NEXT_PUBLIC_TMDB_API_KEY = process.env.NEXT_PUBLIC_TMDB_API_KEY || 'placeholder-tmdb-key';
+process.env.NEXT_PUBLIC_SUPABASE_URL =
+  process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
+process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY =
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-anon-key';
+process.env.SUPABASE_SERVICE_ROLE_KEY =
+  process.env.SUPABASE_SERVICE_ROLE_KEY || 'placeholder-service-key';
+process.env.NEXT_PUBLIC_TMDB_API_KEY =
+  process.env.NEXT_PUBLIC_TMDB_API_KEY || 'placeholder-tmdb-key';
 process.env.ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY || 'placeholder-anthropic-key';
 
 const nextConfig = {
@@ -14,21 +18,21 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ['lucide-react', '@supabase/supabase-js'],
   },
-  
+
   eslint: {
     // ESLint enabled for production builds - only fail on errors, not warnings
     ignoreDuringBuilds: false,
     dirs: ['pages', 'components', 'lib', 'hooks'],
   },
-  
+
   // Environment variables
   env: {
     IS_RAILWAY_BUILD: isRailwayBuild ? 'true' : 'false',
   },
-  
+
   // Enable compression
   compress: true,
-  
+
   // Cloudflare-optimized configuration
   images: {
     domains: ['image.tmdb.org', 'www.youtube.com', 'youtube.com'],
@@ -37,7 +41,7 @@ const nextConfig = {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
-  
+
   // Cloudflare-optimized headers
   async headers() {
     return [
@@ -47,19 +51,19 @@ const nextConfig = {
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable'
-          }
-        ]
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
       },
-      // Images - cache for 1 year  
+      // Images - cache for 1 year
       {
         source: '/images/(.*)',
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=31536000'
-          }
-        ]
+            value: 'public, max-age=31536000',
+          },
+        ],
       },
       // Movie pages - cache for 1 hour with stale-while-revalidate
       {
@@ -67,22 +71,22 @@ const nextConfig = {
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, s-maxage=3600, stale-while-revalidate=86400'
-          }
-        ]
+            value: 'public, s-maxage=3600, stale-while-revalidate=86400',
+          },
+        ],
       },
       // API routes - optimized caching
       {
         source: '/api/movie-analysis',
         headers: [
           {
-            key: 'Cache-Control', 
-            value: 'public, s-maxage=86400, stale-while-revalidate=604800'
-          }
-        ]
-      }
+            key: 'Cache-Control',
+            value: 'public, s-maxage=86400, stale-while-revalidate=604800',
+          },
+        ],
+      },
     ];
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

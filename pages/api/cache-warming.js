@@ -16,8 +16,8 @@ export default async function handler(req, res) {
 
   // Security check - only allow in development or with admin token
   const adminToken = req.headers.authorization?.replace('Bearer ', '');
-  const isAuthorized = process.env.NODE_ENV === 'development' || 
-                      adminToken === process.env.CACHE_WARMING_TOKEN;
+  const isAuthorized =
+    process.env.NODE_ENV === 'development' || adminToken === process.env.CACHE_WARMING_TOKEN;
 
   if (!isAuthorized) {
     return res.status(401).json({ error: 'Unauthorized' });
@@ -45,9 +45,9 @@ export default async function handler(req, res) {
     }
   } catch (error) {
     console.error('Cache warming error:', error);
-    return res.status(500).json({ 
-      error: 'Cache warming failed', 
-      details: error.message 
+    return res.status(500).json({
+      error: 'Cache warming failed',
+      details: error.message,
     });
   }
 }
@@ -55,7 +55,7 @@ export default async function handler(req, res) {
 // Warm basic movie data for all 8k movies
 async function warmAllMovies(res, cache, batchSize, offset) {
   const startTime = Date.now();
-  
+
   // Get movies from database in batches
   const { data: movies, error } = await supabase
     .from('movies')
@@ -66,19 +66,15 @@ async function warmAllMovies(res, cache, batchSize, offset) {
   if (error) throw error;
 
   const warmedMovies = [];
-  
+
   for (const movie of movies) {
     try {
       // Warm basic movie lookup cache
       const movieCacheKey = cache.redis.generateKey('movie_lookup', movie.tmdb_id);
       const exists = await cache.redis.get(movieCacheKey);
-      
+
       if (!exists) {
-        await cache.redis.set(
-          movieCacheKey, 
-          movie, 
-          cache.redis.TTL.TMDB_DATA
-        );
+        await cache.redis.set(movieCacheKey, movie, cache.redis.TTL.TMDB_DATA);
         warmedMovies.push(movie.tmdb_id);
       }
     } catch (error) {
@@ -87,7 +83,7 @@ async function warmAllMovies(res, cache, batchSize, offset) {
   }
 
   const duration = Date.now() - startTime;
-  
+
   return res.json({
     success: true,
     type: 'all-movies',
@@ -95,17 +91,17 @@ async function warmAllMovies(res, cache, batchSize, offset) {
       offset,
       size: batchSize,
       processed: movies.length,
-      warmed: warmedMovies.length
+      warmed: warmedMovies.length,
     },
     duration: `${duration}ms`,
-    warmedIds: warmedMovies
+    warmedIds: warmedMovies,
   });
 }
 
 // Warm all TMDB poster images at Cloudflare edge
 async function warmAllPosters(res, cache, batchSize, offset) {
   const startTime = Date.now();
-  
+
   const { data: movies, error } = await supabase
     .from('movies')
     .select('tmdb_id, poster_url')
@@ -115,16 +111,16 @@ async function warmAllPosters(res, cache, batchSize, offset) {
   if (error) throw error;
 
   const warmedPosters = [];
-  
+
   // Trigger poster cache warming at edge
-  const posterPromises = movies.map(async (movie) => {
+  const posterPromises = movies.map(async movie => {
     try {
       // This will trigger Cloudflare worker to cache the poster
       const posterResponse = await fetch(
         `${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/tmdb-poster?tmdb_id=${movie.tmdb_id}`,
         { method: 'HEAD' } // Just trigger cache, don't download
       );
-      
+
       if (posterResponse.ok) {
         warmedPosters.push(movie.tmdb_id);
       }
@@ -134,9 +130,9 @@ async function warmAllPosters(res, cache, batchSize, offset) {
   });
 
   await Promise.allSettled(posterPromises);
-  
+
   const duration = Date.now() - startTime;
-  
+
   return res.json({
     success: true,
     type: 'posters',
@@ -144,16 +140,16 @@ async function warmAllPosters(res, cache, batchSize, offset) {
       offset,
       size: batchSize,
       processed: movies.length,
-      warmed: warmedPosters.length
+      warmed: warmedPosters.length,
     },
-    duration: `${duration}ms`
+    duration: `${duration}ms`,
   });
 }
 
 // Warm Claude analysis for all movies (expensive - run in background)
 async function warmAllAnalyses(res, cache, batchSize, offset) {
   const startTime = Date.now();
-  
+
   const { data: movies, error } = await supabase
     .from('movies')
     .select('tmdb_id, title, year')
@@ -162,13 +158,13 @@ async function warmAllAnalyses(res, cache, batchSize, offset) {
   if (error) throw error;
 
   const warmedAnalyses = [];
-  
+
   // Process one at a time to avoid Claude rate limits
   for (const movie of movies) {
     try {
       const analysisCacheKey = cache.redis.generateKey('movie_analysis', movie.tmdb_id);
       const exists = await cache.redis.get(analysisCacheKey);
-      
+
       if (!exists) {
         // Trigger analysis generation
         const analysisResponse = await fetch(
@@ -176,18 +172,18 @@ async function warmAllAnalyses(res, cache, batchSize, offset) {
           {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ 
+            body: JSON.stringify({
               tmdb_id: movie.tmdb_id,
               title: movie.title,
-              year: movie.year
-            })
+              year: movie.year,
+            }),
           }
         );
-        
+
         if (analysisResponse.ok) {
           warmedAnalyses.push(movie.tmdb_id);
         }
-        
+
         // Rate limiting delay
         await new Promise(resolve => setTimeout(resolve, 2000));
       }
@@ -197,7 +193,7 @@ async function warmAllAnalyses(res, cache, batchSize, offset) {
   }
 
   const duration = Date.now() - startTime;
-  
+
   return res.json({
     success: true,
     type: 'analyses',
@@ -205,10 +201,10 @@ async function warmAllAnalyses(res, cache, batchSize, offset) {
       offset,
       size: batchSize,
       processed: movies.length,
-      warmed: warmedAnalyses.length
+      warmed: warmedAnalyses.length,
     },
     duration: `${duration}ms`,
-    estimatedCost: `$${(warmedAnalyses.length * 0.10).toFixed(2)}`
+    estimatedCost: `$${(warmedAnalyses.length * 0.1).toFixed(2)}`,
   });
 }
 
@@ -218,7 +214,7 @@ async function warmPopularContent(res, cache) {
   const warmed = {
     afi: [],
     recent: [],
-    trending: []
+    trending: [],
   };
 
   try {
@@ -239,33 +235,29 @@ async function warmPopularContent(res, cache) {
 
     // Warm these priority movies
     const priorityMovies = [...(afiMovies || []), ...(recentMovies || [])];
-    
+
     for (const movie of priorityMovies) {
       try {
         // Warm both lookup and analysis
-        await Promise.all([
-          warmMovieLookup(cache, movie),
-          warmMovieAnalysis(cache, movie)
-        ]);
-        
+        await Promise.all([warmMovieLookup(cache, movie), warmMovieAnalysis(cache, movie)]);
+
         warmed.afi.push(movie.tmdb_id);
       } catch (error) {
         console.error(`Failed to warm priority movie ${movie.tmdb_id}:`, error);
       }
     }
-
   } catch (error) {
     console.error('Popular content warming error:', error);
   }
 
   const duration = Date.now() - startTime;
-  
+
   return res.json({
     success: true,
     type: 'popular',
     warmed,
     duration: `${duration}ms`,
-    totalWarmed: Object.values(warmed).flat().length
+    totalWarmed: Object.values(warmed).flat().length,
   });
 }
 
@@ -277,7 +269,7 @@ async function warmSeriesContent(res, cache) {
 
   for (const [seriesId, series] of Object.entries(seriesConfig)) {
     warmedSeries[seriesId] = [];
-    
+
     for (const episode of series.episodes) {
       for (const movie of episode.movies) {
         try {
@@ -294,13 +286,13 @@ async function warmSeriesContent(res, cache) {
 
   const duration = Date.now() - startTime;
   const totalWarmed = Object.values(warmedSeries).flat().length;
-  
+
   return res.json({
     success: true,
     type: 'series',
     warmedSeries,
     duration: `${duration}ms`,
-    totalWarmed
+    totalWarmed,
   });
 }
 
@@ -308,7 +300,7 @@ async function warmSeriesContent(res, cache) {
 async function getCacheStatus(res, cache) {
   const stats = cache.getStats();
   const redisStats = await cache.redis.getStats();
-  
+
   // Count cached movies
   const { count: totalMovies } = await supabase
     .from('movies')
@@ -322,9 +314,9 @@ async function getCacheStatus(res, cache) {
       totalMovies,
       warmingProgress: {
         estimated: `${((stats.hits / (stats.hits + stats.misses)) * 100).toFixed(1)}%`,
-        recommendation: stats.hits < totalMovies * 0.8 ? 'Continue warming' : 'Well cached'
-      }
-    }
+        recommendation: stats.hits < totalMovies * 0.8 ? 'Continue warming' : 'Well cached',
+      },
+    },
   });
 }
 
@@ -338,7 +330,7 @@ async function warmMovieAnalysis(cache, movie) {
   // Only warm if not already cached
   const analysisCacheKey = cache.redis.generateKey('movie_analysis', movie.tmdb_id);
   const exists = await cache.redis.get(analysisCacheKey);
-  
+
   if (!exists) {
     // This would trigger actual analysis generation - expensive!
     console.log(`Would warm analysis for ${movie.title} (${movie.tmdb_id})`);

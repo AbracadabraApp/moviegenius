@@ -11,7 +11,7 @@ try {
   const routes = require('../lib/routes');
   navItems = routes.navItems || [];
   routeValidation = routes.routeValidation || { shouldShowGeniusActive: () => false };
-  
+
   // Validate routes are properly loaded
   if (!Array.isArray(navItems) || navItems.length === 0) {
     throw new Error('navItems is empty or invalid');
@@ -21,7 +21,7 @@ try {
   navItems = [
     { label: 'Movies', icon: 'Clapperboard', route: '/movies' },
     { label: 'Genius', icon: 'Sparkles', route: '/genius' },
-    { label: 'You', icon: 'User', route: '/you' }
+    { label: 'You', icon: 'User', route: '/you' },
   ];
   routeValidation = { shouldShowGeniusActive: () => false };
 }
@@ -30,33 +30,36 @@ export default function NavBar() {
   const router = useRouter();
   const [showFrame, setShowFrame] = useState(true); // Default to frame for SSR
   // Calculate initial active state to prevent flashing
-  const getActiveLabel = (pathname) => {
+  const getActiveLabel = pathname => {
     try {
-      return navItems.find(
-        (item) => {
-          if (item.route === pathname) return true;
-          // Movies active for /movie/[id] and /search pages
-          if (item.route === '/movies' && (pathname.startsWith('/movie/') || pathname.startsWith('/search'))) {
-            return true;
-          }
-          // You active for /you/* pages
-          if (item.route === '/you' && pathname.startsWith('/you/')) {
-            return true;
-          }
-          // Use centralized logic for Genius active state
-          if (item.route === '/genius') {
-            return routeValidation.shouldShowGeniusActive(pathname);
-          }
-          return false;
+      return navItems.find(item => {
+        if (item.route === pathname) return true;
+        // Movies active for /movie/[id] and /search pages
+        if (
+          item.route === '/movies' &&
+          (pathname.startsWith('/movie/') || pathname.startsWith('/search'))
+        ) {
+          return true;
         }
-      )?.label;
+        // You active for /you/* pages
+        if (item.route === '/you' && pathname.startsWith('/you/')) {
+          return true;
+        }
+        // Use centralized logic for Genius active state
+        if (item.route === '/genius') {
+          return routeValidation.shouldShowGeniusActive(pathname);
+        }
+        return false;
+      })?.label;
     } catch (error) {
       console.warn('NavBar: Error determining active state:', error);
       return null;
     }
   };
 
-  const [activeLabel, setActiveLabel] = useState(() => getActiveLabel(router.asPath || router.pathname));
+  const [activeLabel, setActiveLabel] = useState(() =>
+    getActiveLabel(router.asPath || router.pathname)
+  );
 
   useEffect(() => {
     // Client-side detection for frame
@@ -73,22 +76,23 @@ export default function NavBar() {
 
   // Icon mapping for nav items
   const iconMap = {
-    'Clapperboard': Clapperboard,
-    'Sparkles': Sparkles,
-    'User': User
+    Clapperboard: Clapperboard,
+    Sparkles: Sparkles,
+    User: User,
   };
 
-
   return (
-    <nav style={{
-      ...styles.nav,
-      ...(showFrame ? styles.navDesktop : styles.navMobile)
-    }}>
-      {navItems.map((item) => {
+    <nav
+      style={{
+        ...styles.nav,
+        ...(showFrame ? styles.navDesktop : styles.navMobile),
+      }}
+    >
+      {navItems.map(item => {
         try {
           const Icon = iconMap[item.icon];
           const isActive = activeLabel === item.label;
-          
+
           // Ensure Icon is valid before rendering
           if (!Icon) {
             console.error(`NavBar: Icon ${item.icon} not found in iconMap`);
@@ -100,33 +104,28 @@ export default function NavBar() {
             console.error(`NavBar: Invalid route for ${item.label}:`, item.route);
             return null;
           }
-          
+
           return (
-            <Link
-              key={item.label}
-              href={item.route}
-              passHref
-              legacyBehavior
-            >
-              <a style={{textDecoration: 'none'}}>
-              <div
-                style={{
-                  ...styles.navItem,
-                  opacity: isActive ? 1 : 0.6,
-                  transform: isActive ? 'translateY(-2px)' : 'none',
-                }}
-              >
-                <Icon
-                  size={28}
+            <Link key={item.label} href={item.route} passHref legacyBehavior>
+              <a style={{ textDecoration: 'none' }}>
+                <div
                   style={{
-                    ...styles.icon,
-                    transform: isActive ? 'scale(1.15)' : 'scale(1)',
+                    ...styles.navItem,
+                    opacity: isActive ? 1 : 0.6,
+                    transform: isActive ? 'translateY(-2px)' : 'none',
                   }}
-                />
-                <span style={styles.labelContainer}>
-                  <span style={styles.label}>{item.label}</span>
-                  {isActive && <div style={styles.underline} />}
-                </span>
+                >
+                  <Icon
+                    size={28}
+                    style={{
+                      ...styles.icon,
+                      transform: isActive ? 'scale(1.15)' : 'scale(1)',
+                    }}
+                  />
+                  <span style={styles.labelContainer}>
+                    <span style={styles.label}>{item.label}</span>
+                    {isActive && <div style={styles.underline} />}
+                  </span>
                 </div>
               </a>
             </Link>
@@ -135,7 +134,7 @@ export default function NavBar() {
           console.error(`NavBar: Error rendering nav item ${item.label}:`, error);
           // Return fallback nav item without Link
           return (
-            <div key={item.label} style={{...styles.navItem, opacity: 0.4}}>
+            <div key={item.label} style={{ ...styles.navItem, opacity: 0.4 }}>
               <span style={styles.label}>{item.label}</span>
             </div>
           );

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Check Nuclear Transformation Results
- * 
+ *
  * Verifies that the nuclear format transformation was successful
  */
 
@@ -20,10 +20,12 @@ async function checkTransformation() {
   // Get sample of transformed analyses
   const { data: analyses, error } = await supabase
     .from('movie_analyses')
-    .select(`
+    .select(
+      `
       id, movie_id, claude_response,
       movies!inner(title, year)
-    `)
+    `
+    )
     .eq('analysis_type', 'page_analysis')
     .limit(10);
 
@@ -41,14 +43,20 @@ async function checkTransformation() {
     totalCount++;
     const response = analysis.claude_response;
     const movie = analysis.movies;
-    
-    const hasNuclearFormat = !!(response.sections && response.exploreFurther && response.transformation_completed);
-    
+
+    const hasNuclearFormat = !!(
+      response.sections &&
+      response.exploreFurther &&
+      response.transformation_completed
+    );
+
     if (hasNuclearFormat) transformedCount++;
-    
+
     console.log(`${index + 1}. ${movie.title} (${movie.year})`);
     console.log(`   ✅ Sections: ${response.sections ? response.sections.length : 0}`);
-    console.log(`   ✅ Explore Further: ${response.exploreFurther ? response.exploreFurther.length : 0}`);
+    console.log(
+      `   ✅ Explore Further: ${response.exploreFurther ? response.exploreFurther.length : 0}`
+    );
     console.log(`   ✅ More Ideas: ${response.moreIdeas ? 'Yes' : 'No'}`);
     console.log(`   ✅ Transformed: ${response.transformation_completed ? 'Yes' : 'No'}`);
     console.log(`   📊 Nuclear Ready: ${hasNuclearFormat ? '✅ Yes' : '❌ No'}\n`);
@@ -66,10 +74,11 @@ async function checkTransformation() {
     .eq('analysis_type', 'page_analysis');
 
   if (allAnalyses) {
-    const totalNuclearReady = allAnalyses.filter(a => 
-      a.claude_response.sections && 
-      a.claude_response.exploreFurther && 
-      a.claude_response.transformation_completed
+    const totalNuclearReady = allAnalyses.filter(
+      a =>
+        a.claude_response.sections &&
+        a.claude_response.exploreFurther &&
+        a.claude_response.transformation_completed
     ).length;
 
     console.log(`\n🚀 TOTAL NUCLEAR STATUS:`);

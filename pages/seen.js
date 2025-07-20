@@ -21,7 +21,7 @@ export default function SeenMoviesPage() {
     const loadSeenMovies = () => {
       try {
         const heartedMovies = FavoritesManager.getHeartedMovies();
-        
+
         // Convert to movie objects with necessary data
         const movieObjects = heartedMovies.map(movie => ({
           title: movie.title,
@@ -29,12 +29,12 @@ export default function SeenMoviesPage() {
           tmdb_id: movie.tmdb_id || null,
           poster_url: movie.poster_url || null,
           streaming_data: movie.streaming_data || null,
-          slug: movie.slug || null
+          slug: movie.slug || null,
         }));
 
         // Sort by title for consistent ordering
         movieObjects.sort((a, b) => a.title.localeCompare(b.title));
-        
+
         setSeenMovies(movieObjects);
         setLoading(false);
       } catch (error) {
@@ -61,14 +61,14 @@ export default function SeenMoviesPage() {
   const endIndex = startIndex + MOVIES_PER_PAGE;
   const currentMovies = seenMovies.slice(startIndex, endIndex);
 
-  const handlePageChange = (newPage) => {
+  const handlePageChange = newPage => {
     if (newPage >= 1 && newPage <= totalPages) {
       setCurrentPage(newPage);
       window.scrollTo(0, 0);
     }
   };
 
-  const handleMovieClick = (movie) => {
+  const handleMovieClick = movie => {
     if (movie.tmdb_id) {
       router.push(`/movie/${movie.tmdb_id}`);
     }
@@ -80,10 +80,7 @@ export default function SeenMoviesPage() {
         <div style={styles.container}>
           <div style={styles.header}>
             <div style={styles.headerTop}>
-              <button
-                onClick={() => router.back()}
-                style={styles.backButton}
-              >
+              <button onClick={() => router.back()} style={styles.backButton}>
                 <ArrowLeft size={20} color={colors.gray[600]} />
               </button>
               <h1 style={styles.title}>Seen Movies</h1>
@@ -104,10 +101,7 @@ export default function SeenMoviesPage() {
         {/* Header */}
         <div style={styles.header}>
           <div style={styles.headerTop}>
-            <button
-              onClick={() => router.back()}
-              style={styles.backButton}
-            >
+            <button onClick={() => router.back()} style={styles.backButton}>
               <ArrowLeft size={20} color={colors.gray[600]} />
             </button>
             <h1 style={styles.title}>Seen Movies</h1>
@@ -134,7 +128,7 @@ export default function SeenMoviesPage() {
               {/* Movies grid */}
               <div style={styles.moviesGrid}>
                 {currentMovies.map((movie, index) => (
-                  <div 
+                  <div
                     key={`${movie.tmdb_id || movie.title}-${index}`}
                     onClick={() => handleMovieClick(movie)}
                     style={styles.movieCard}
@@ -160,7 +154,7 @@ export default function SeenMoviesPage() {
                     disabled={currentPage === 1}
                     style={{
                       ...styles.paginationButton,
-                      ...(currentPage === 1 ? styles.paginationButtonDisabled : {})
+                      ...(currentPage === 1 ? styles.paginationButtonDisabled : {}),
                     }}
                   >
                     <ChevronLeft size={16} />
@@ -186,7 +180,7 @@ export default function SeenMoviesPage() {
                           onClick={() => handlePageChange(pageNum)}
                           style={{
                             ...styles.pageNumber,
-                            ...(pageNum === currentPage ? styles.pageNumberActive : {})
+                            ...(pageNum === currentPage ? styles.pageNumberActive : {}),
                           }}
                         >
                           {pageNum}
@@ -200,7 +194,7 @@ export default function SeenMoviesPage() {
                     disabled={currentPage === totalPages}
                     style={{
                       ...styles.paginationButton,
-                      ...(currentPage === totalPages ? styles.paginationButtonDisabled : {})
+                      ...(currentPage === totalPages ? styles.paginationButtonDisabled : {}),
                     }}
                   >
                     Next
@@ -216,10 +210,7 @@ export default function SeenMoviesPage() {
               <div style={styles.emptyText}>
                 Start marking movies as seen to build your collection.
               </div>
-              <button
-                onClick={() => router.push('/suggestions')}
-                style={styles.suggestionsButton}
-              >
+              <button onClick={() => router.push('/suggestions')} style={styles.suggestionsButton}>
                 Browse Suggestions
               </button>
             </div>

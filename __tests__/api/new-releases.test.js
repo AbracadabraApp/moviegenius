@@ -26,21 +26,21 @@ describe('/api/new-releases', () => {
 
     expect(res._getStatusCode()).toBe(405);
     expect(JSON.parse(res._getData())).toEqual({
-      error: 'Method not allowed'
+      error: 'Method not allowed',
     });
   });
 
   it('should require category parameter', async () => {
     const { req, res } = createMocks({
       method: 'POST',
-      body: {}
+      body: {},
     });
 
     await handler(req, res);
 
     expect(res._getStatusCode()).toBe(400);
     expect(JSON.parse(res._getData())).toEqual({
-      error: 'Category is required'
+      error: 'Category is required',
     });
   });
 
@@ -53,10 +53,10 @@ describe('/api/new-releases', () => {
           release_date: '2025-01-15',
           poster_path: '/test.jpg',
           popularity: 45.5,
-          vote_average: 7.8
-        }
+          vote_average: 7.8,
+        },
       ],
-      total_results: 1
+      total_results: 1,
     };
 
     fetch.mockResolvedValueOnce({
@@ -66,14 +66,14 @@ describe('/api/new-releases', () => {
 
     const { req, res } = createMocks({
       method: 'POST',
-      body: { category: 'now-playing' }
+      body: { category: 'now-playing' },
     });
 
     await handler(req, res);
 
     expect(res._getStatusCode()).toBe(200);
     const data = JSON.parse(res._getData());
-    
+
     expect(data.category).toBe('now-playing');
     expect(data.categoryTitle).toBe('Now Playing');
     expect(data.movies).toHaveLength(1);
@@ -85,13 +85,11 @@ describe('/api/new-releases', () => {
       poster_url: 'https://image.tmdb.org/t/p/w500/test.jpg',
       popularity: 45.5,
       vote_average: 7.8,
-      release_date: '2025-01-15'
+      release_date: '2025-01-15',
     });
 
     // Verify correct TMDB URL was called
-    expect(fetch).toHaveBeenCalledWith(
-      expect.stringContaining('movie/now_playing')
-    );
+    expect(fetch).toHaveBeenCalledWith(expect.stringContaining('movie/now_playing'));
   });
 
   it('should handle upcoming category', async () => {
@@ -103,9 +101,9 @@ describe('/api/new-releases', () => {
           release_date: '2025-06-01',
           poster_path: '/upcoming.jpg',
           popularity: 30.2,
-          vote_average: 6.5
-        }
-      ]
+          vote_average: 6.5,
+        },
+      ],
     };
 
     fetch.mockResolvedValueOnce({
@@ -115,19 +113,17 @@ describe('/api/new-releases', () => {
 
     const { req, res } = createMocks({
       method: 'POST',
-      body: { category: 'upcoming' }
+      body: { category: 'upcoming' },
     });
 
     await handler(req, res);
 
     expect(res._getStatusCode()).toBe(200);
     const data = JSON.parse(res._getData());
-    
+
     expect(data.category).toBe('upcoming');
     expect(data.categoryTitle).toBe('Coming Soon');
-    expect(fetch).toHaveBeenCalledWith(
-      expect.stringContaining('movie/upcoming')
-    );
+    expect(fetch).toHaveBeenCalledWith(expect.stringContaining('movie/upcoming'));
   });
 
   it('should handle recent category with date filtering', async () => {
@@ -139,9 +135,9 @@ describe('/api/new-releases', () => {
           release_date: '2025-01-01',
           poster_path: '/recent.jpg',
           popularity: 25.8,
-          vote_average: 7.2
-        }
-      ]
+          vote_average: 7.2,
+        },
+      ],
     };
 
     fetch.mockResolvedValueOnce({
@@ -151,27 +147,21 @@ describe('/api/new-releases', () => {
 
     const { req, res } = createMocks({
       method: 'POST',
-      body: { category: 'recent' }
+      body: { category: 'recent' },
     });
 
     await handler(req, res);
 
     expect(res._getStatusCode()).toBe(200);
     const data = JSON.parse(res._getData());
-    
+
     expect(data.category).toBe('recent');
     expect(data.categoryTitle).toBe('Recent Releases');
-    
+
     // Should use discover endpoint with date filters
-    expect(fetch).toHaveBeenCalledWith(
-      expect.stringContaining('discover/movie')
-    );
-    expect(fetch).toHaveBeenCalledWith(
-      expect.stringContaining('release_date.gte=')
-    );
-    expect(fetch).toHaveBeenCalledWith(
-      expect.stringContaining('release_date.lte=')
-    );
+    expect(fetch).toHaveBeenCalledWith(expect.stringContaining('discover/movie'));
+    expect(fetch).toHaveBeenCalledWith(expect.stringContaining('release_date.gte='));
+    expect(fetch).toHaveBeenCalledWith(expect.stringContaining('release_date.lte='));
   });
 
   it('should handle trending category', async () => {
@@ -183,9 +173,9 @@ describe('/api/new-releases', () => {
           release_date: '2024-12-25',
           poster_path: '/trending.jpg',
           popularity: 85.3,
-          vote_average: 8.1
-        }
-      ]
+          vote_average: 8.1,
+        },
+      ],
     };
 
     fetch.mockResolvedValueOnce({
@@ -195,32 +185,30 @@ describe('/api/new-releases', () => {
 
     const { req, res } = createMocks({
       method: 'POST',
-      body: { category: 'trending' }
+      body: { category: 'trending' },
     });
 
     await handler(req, res);
 
     expect(res._getStatusCode()).toBe(200);
     const data = JSON.parse(res._getData());
-    
+
     expect(data.category).toBe('trending');
     expect(data.categoryTitle).toBe('Trending This Week');
-    expect(fetch).toHaveBeenCalledWith(
-      expect.stringContaining('trending/movie/week')
-    );
+    expect(fetch).toHaveBeenCalledWith(expect.stringContaining('trending/movie/week'));
   });
 
   it('should handle invalid category', async () => {
     const { req, res } = createMocks({
       method: 'POST',
-      body: { category: 'invalid-category' }
+      body: { category: 'invalid-category' },
     });
 
     await handler(req, res);
 
     expect(res._getStatusCode()).toBe(400);
     expect(JSON.parse(res._getData())).toEqual({
-      error: 'Invalid category'
+      error: 'Invalid category',
     });
   });
 
@@ -232,7 +220,7 @@ describe('/api/new-releases', () => {
 
     const { req, res } = createMocks({
       method: 'POST',
-      body: { category: 'now-playing' }
+      body: { category: 'now-playing' },
     });
 
     await handler(req, res);
@@ -248,7 +236,7 @@ describe('/api/new-releases', () => {
 
     const { req, res } = createMocks({
       method: 'POST',
-      body: { category: 'now-playing' }
+      body: { category: 'now-playing' },
     });
 
     await handler(req, res);
@@ -266,21 +254,21 @@ describe('/api/new-releases', () => {
           id: 123,
           title: 'Valid Movie',
           release_date: '2025-01-15',
-          poster_path: '/valid.jpg'
+          poster_path: '/valid.jpg',
         },
         {
           id: 124,
           // Missing title - should be filtered out
           release_date: '2025-01-16',
-          poster_path: '/invalid.jpg'
+          poster_path: '/invalid.jpg',
         },
         {
           // Missing id - should be filtered out
           title: 'No ID Movie',
           release_date: '2025-01-17',
-          poster_path: '/no-id.jpg'
-        }
-      ]
+          poster_path: '/no-id.jpg',
+        },
+      ],
     };
 
     fetch.mockResolvedValueOnce({
@@ -290,14 +278,14 @@ describe('/api/new-releases', () => {
 
     const { req, res } = createMocks({
       method: 'POST',
-      body: { category: 'now-playing' }
+      body: { category: 'now-playing' },
     });
 
     await handler(req, res);
 
     expect(res._getStatusCode()).toBe(200);
     const data = JSON.parse(res._getData());
-    
+
     // Should only include the valid movie
     expect(data.movies).toHaveLength(1);
     expect(data.movies[0].title).toBe('Valid Movie');
@@ -305,12 +293,14 @@ describe('/api/new-releases', () => {
 
   it('should limit results to 20 movies', async () => {
     const mockResponse = {
-      results: Array(25).fill(null).map((_, index) => ({
-        id: index + 1,
-        title: `Movie ${index + 1}`,
-        release_date: '2025-01-15',
-        poster_path: `/movie${index + 1}.jpg`
-      }))
+      results: Array(25)
+        .fill(null)
+        .map((_, index) => ({
+          id: index + 1,
+          title: `Movie ${index + 1}`,
+          release_date: '2025-01-15',
+          poster_path: `/movie${index + 1}.jpg`,
+        })),
     };
 
     fetch.mockResolvedValueOnce({
@@ -320,14 +310,14 @@ describe('/api/new-releases', () => {
 
     const { req, res } = createMocks({
       method: 'POST',
-      body: { category: 'now-playing' }
+      body: { category: 'now-playing' },
     });
 
     await handler(req, res);
 
     expect(res._getStatusCode()).toBe(200);
     const data = JSON.parse(res._getData());
-    
+
     // Should be limited to 20 results
     expect(data.movies).toHaveLength(20);
   });

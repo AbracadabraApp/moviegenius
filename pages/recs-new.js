@@ -1,73 +1,72 @@
 // pages/recs-new.js - Movies as Home: Movie Enthusiasm Gateway
-import PhoneFrame from '../components/PhoneFrame'
-import SimpleSearch from '../components/SimpleSearch'
-import { useRouter } from 'next/router'
-import { useState, useEffect } from 'react'
-import AnonymousUserManager from '../lib/anonymous-user'
+import PhoneFrame from '../components/PhoneFrame';
+import SimpleSearch from '../components/SimpleSearch';
+import { useRouter } from 'next/router';
+import { useState, useEffect } from 'react';
+import AnonymousUserManager from '../lib/anonymous-user';
 
 export default function MoviesHomePage() {
-  const router = useRouter()
-  const [declarativeLists, setDeclarativeLists] = useState([])
-  const [selectedPlatforms, setSelectedPlatforms] = useState([])
-  const [isLoading, setIsLoading] = useState(true)
+  const router = useRouter();
+  const [declarativeLists, setDeclarativeLists] = useState([]);
+  const [selectedPlatforms, setSelectedPlatforms] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   // Initialize anonymous user and load data
   useEffect(() => {
     const initializePage = async () => {
       try {
         // Initialize anonymous user system
-        await AnonymousUserManager.initialize()
-        
+        await AnonymousUserManager.initialize();
+
         // Load declarative lists for tag cloud
-        const response = await fetch('/api/tag-cloud?content_type=declarative')
+        const response = await fetch('/api/tag-cloud?content_type=declarative');
         if (response.ok) {
-          const data = await response.json()
+          const data = await response.json();
           // Randomize and assign font sizes
-          const shuffled = data.lists.sort(() => 0.5 - Math.random())
+          const shuffled = data.lists.sort(() => 0.5 - Math.random());
           const listsWithSizes = shuffled.slice(0, 75).map((item, index) => ({
             ...item,
-            fontSize: index % 3 === 0 ? 'large' : index % 3 === 1 ? 'medium' : 'small'
-          }))
-          setDeclarativeLists(listsWithSizes)
+            fontSize: index % 3 === 0 ? 'large' : index % 3 === 1 ? 'medium' : 'small',
+          }));
+          setDeclarativeLists(listsWithSizes);
         }
-        
-        // Load user platforms
-        const platforms = JSON.parse(localStorage.getItem('selectedPlatforms') || '[]')
-        setSelectedPlatforms(platforms)
-        
-      } catch (error) {
-        console.error('Error initializing Movies home page:', error)
-      } finally {
-        setIsLoading(false)
-      }
-    }
 
-    initializePage()
+        // Load user platforms
+        const platforms = JSON.parse(localStorage.getItem('selectedPlatforms') || '[]');
+        setSelectedPlatforms(platforms);
+      } catch (error) {
+        console.error('Error initializing Movies home page:', error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    initializePage();
 
     // Listen for platform updates
     const handlePlatformUpdate = () => {
-      const platforms = JSON.parse(localStorage.getItem('selectedPlatforms') || '[]')
-      setSelectedPlatforms(platforms)
-    }
-    
-    window.addEventListener('platformsUpdated', handlePlatformUpdate)
-    return () => window.removeEventListener('platformsUpdated', handlePlatformUpdate)
-  }, [])
+      const platforms = JSON.parse(localStorage.getItem('selectedPlatforms') || '[]');
+      setSelectedPlatforms(platforms);
+    };
 
-  const handleSearchResults = (results) => {
+    window.addEventListener('platformsUpdated', handlePlatformUpdate);
+    return () => window.removeEventListener('platformsUpdated', handlePlatformUpdate);
+  }, []);
+
+  const handleSearchResults = results => {
     // For now, just log the search results
     // In the future, could show search results in a modal or navigate to search page
     console.log('Search results on Recs page:', results);
-  }
+  };
 
-  const handleListClick = (list) => {
+  const handleListClick = list => {
     // Navigate to list detail page
-    router.push(`/genius/list/${list.slug}`)
-  }
+    router.push(`/genius/list/${list.slug}`);
+  };
 
   const handleEditPlatforms = () => {
-    router.push('/you#platforms')
-  }
+    router.push('/you#platforms');
+  };
 
   if (isLoading) {
     return (
@@ -78,7 +77,7 @@ export default function MoviesHomePage() {
           </div>
         </div>
       </PhoneFrame>
-    )
+    );
   }
 
   return (
@@ -88,7 +87,7 @@ export default function MoviesHomePage() {
         <div style={styles.heroSection}>
           <h1 style={styles.heroTitle}>Ask me anything about movies</h1>
           <div style={styles.heroAskBar}>
-            <SimpleSearch 
+            <SimpleSearch
               onResults={handleSearchResults}
               placeholder="Best sci-fi like Blade Runner..."
             />
@@ -118,16 +117,18 @@ export default function MoviesHomePage() {
                   key={list.id}
                   style={{
                     ...styles.tagButton,
-                    ...styles[`fontSize${list.fontSize.charAt(0).toUpperCase() + list.fontSize.slice(1)}`]
+                    ...styles[
+                      `fontSize${list.fontSize.charAt(0).toUpperCase() + list.fontSize.slice(1)}`
+                    ],
                   }}
                   onClick={() => handleListClick(list)}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = '#e3f2fd'
-                    e.currentTarget.style.transform = 'scale(1.05)'
+                  onMouseEnter={e => {
+                    e.currentTarget.style.backgroundColor = '#e3f2fd';
+                    e.currentTarget.style.transform = 'scale(1.05)';
                   }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.backgroundColor = 'transparent'
-                    e.currentTarget.style.transform = 'scale(1)'
+                  onMouseLeave={e => {
+                    e.currentTarget.style.backgroundColor = 'transparent';
+                    e.currentTarget.style.transform = 'scale(1)';
                   }}
                 >
                   {list.name}
@@ -141,10 +142,7 @@ export default function MoviesHomePage() {
             <div style={styles.platformCTA}>
               <h3 style={styles.ctaTitle}>Want to see where movies stream?</h3>
               <p style={styles.ctaSubtitle}>Select your platforms to see availability</p>
-              <button 
-                style={styles.ctaButton}
-                onClick={handleEditPlatforms}
-              >
+              <button style={styles.ctaButton} onClick={handleEditPlatforms}>
                 Choose Streaming Platforms
               </button>
             </div>
@@ -152,17 +150,14 @@ export default function MoviesHomePage() {
         </div>
       </div>
     </PhoneFrame>
-  )
+  );
 }
 
 // Cache for performance
 export async function getServerSideProps({ res }) {
-  res.setHeader(
-    'Cache-Control',
-    'public, s-maxage=1800, stale-while-revalidate=3600'
-  )
-  
-  return { props: {} }
+  res.setHeader('Cache-Control', 'public, s-maxage=1800, stale-while-revalidate=3600');
+
+  return { props: {} };
 }
 
 const styles = {
@@ -171,7 +166,8 @@ const styles = {
     flexDirection: 'column',
     height: '100%',
     backgroundColor: '#ffffff',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   loadingContainer: {
     flex: 1,
@@ -303,4 +299,4 @@ const styles = {
     cursor: 'pointer',
     fontFamily: 'inherit',
   },
-}
+};

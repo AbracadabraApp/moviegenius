@@ -1,12 +1,12 @@
 /**
  * Optimized Streaming Info API with Redis Caching
- * 
+ *
  * Performance Improvements:
  * - 90% cost reduction through 12-hour caching
  * - Instant responses for cached queries
  * - Graceful fallback when cache fails
  * - Performance monitoring and cost tracking
- * 
+ *
  * Risk Mitigation:
  * - Cache-aside pattern with fallback to API
  * - Error boundaries for cache failures
@@ -17,11 +17,11 @@
 import Anthropic from '@anthropic-ai/sdk';
 import { getCache } from '../../lib/cache.js';
 import { getPerformanceMonitor } from '../../lib/performance-monitor.js';
-import { 
-  withErrorHandling, 
-  ApiErrors, 
-  successResponse, 
-  validateRequiredFields 
+import {
+  withErrorHandling,
+  ApiErrors,
+  successResponse,
+  validateRequiredFields,
 } from '../../lib/api-utils.js';
 
 const anthropic = new Anthropic({
@@ -41,9 +41,9 @@ async function getStreamingInfoHandler(req, res) {
   // Validate required fields
   const validation = validateRequiredFields(req.body, ['title', 'year']);
   if (!validation.isValid) {
-    return res.status(400).json({ 
-      error: 'Missing required fields', 
-      details: validation.missingFields 
+    return res.status(400).json({
+      error: 'Missing required fields',
+      details: validation.missingFields,
     });
   }
 
@@ -76,7 +76,7 @@ async function getStreamingInfoHandler(req, res) {
       title,
       year,
       cached: result.cached || false,
-      success: true
+      success: true,
     });
 
     // Set cache headers for client-side caching
@@ -88,18 +88,17 @@ async function getStreamingInfoHandler(req, res) {
       title: result.title || title,
       year: result.year || year,
       cached: result.cached || false,
-      responseTime: Math.round(responseTime)
+      responseTime: Math.round(responseTime),
     });
-
   } catch (error) {
     const responseTime = performance.now() - startTime;
-    
+
     // Track error metrics
     performanceMonitor.trackMetric('streaming_api_response_time', responseTime, {
       title,
       year,
       success: false,
-      error: error.message
+      error: error.message,
     });
 
     console.error('Error in streaming info API:', error);
@@ -108,7 +107,7 @@ async function getStreamingInfoHandler(req, res) {
     return res.status(500).json({
       error: 'Failed to fetch streaming info',
       details: process.env.NODE_ENV === 'development' ? error.message : 'Internal server error',
-      responseTime: Math.round(responseTime)
+      responseTime: Math.round(responseTime),
     });
   }
 }
@@ -118,10 +117,10 @@ async function getStreamingInfoHandler(req, res) {
  */
 async function fetchStreamingInfoFromClaude(title, year, performanceMonitor) {
   const requestStartTime = performance.now();
-  
+
   try {
     // Fetching streaming info from Claude
-    
+
     const prompt = `Where can someone stream the movie "${title}" (${year}) right now? List the current streaming services where it's available. Be specific about platform names like Netflix, Hulu, Amazon Prime Video, Disney+, etc. If it's available for rent/purchase, mention that too. Keep your response concise and factual.`;
 
     const message = await anthropic.messages.create({
@@ -130,23 +129,23 @@ async function fetchStreamingInfoFromClaude(title, year, performanceMonitor) {
       messages: [
         {
           role: 'user',
-          content: prompt
-        }
-      ]
+          content: prompt,
+        },
+      ],
     });
 
     const requestTime = performance.now() - requestStartTime;
     const streamingText = message.content[0].text.trim();
-    
+
     // Track API costs
     const inputTokens = message.usage?.input_tokens || prompt.length / 4; // Rough estimate
     const outputTokens = message.usage?.output_tokens || streamingText.length / 4; // Rough estimate
-    
+
     performanceMonitor.trackAPICost(
-      'claude_sonnet', 
-      'streaming_query', 
-      inputTokens, 
-      outputTokens, 
+      'claude_sonnet',
+      'streaming_query',
+      inputTokens,
+      outputTokens,
       false // Not cached
     );
 
@@ -169,20 +168,19 @@ async function fetchStreamingInfoFromClaude(title, year, performanceMonitor) {
       requestTime: Math.round(requestTime),
       tokens: {
         input: inputTokens,
-        output: outputTokens
-      }
+        output: outputTokens,
+      },
     };
-
   } catch (error) {
     const requestTime = performance.now() - requestStartTime;
-    
+
     console.error('Claude API error for streaming info:', error);
-    
+
     // Track failed API calls
     performanceMonitor.trackMetric('claude_api_errors', 1, {
       operation: 'streaming_query',
       error: error.message,
-      requestTime
+      requestTime,
     });
 
     // Provide fallback response for common cases
@@ -195,7 +193,7 @@ async function fetchStreamingInfoFromClaude(title, year, performanceMonitor) {
         year,
         cached: false,
         fallback: true,
-        requestTime: Math.round(requestTime)
+        requestTime: Math.round(requestTime),
       };
     }
 
@@ -211,10 +209,10 @@ function getFallbackStreamingInfo(title, year) {
   // Simple fallback for very popular movies - only subscription services
   const popularMovies = {
     'the matrix': 'Max',
-    'inception': 'Netflix',
+    inception: 'Netflix',
     'the godfather': 'Paramount+',
     'pulp fiction': 'Prime Video',
-    'the dark knight': 'Max'
+    'the dark knight': 'Max',
   };
 
   const movieKey = title.toLowerCase();

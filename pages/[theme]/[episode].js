@@ -13,7 +13,7 @@ export default function EpisodePage({ theme, episode, episodeData, themeData }) 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const handleSearchResults = (results) => {
+  const handleSearchResults = results => {
     // With unified search, this won't be called since search redirects to /search page
     // Kept for compatibility if useUnifiedSearch is disabled
   };
@@ -84,69 +84,68 @@ export default function EpisodePage({ theme, episode, episodeData, themeData }) 
   return (
     <PhoneFrame active="genius">
       <div style={styles.container}>
-        
         <div style={styles.inputArea}>
           <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
         </div>
 
         <div style={styles.contentArea}>
-
           {/* Hero Section */}
           {(() => {
             // Use correct hero image mapping for film noir
-            const heroImageSrc = (theme === 'film-noir' && (() => {
+            const heroImageSrc =
+              theme === 'film-noir' &&
+              (() => {
                 const heroImageMap = {
                   'german-expressionism': '1-german-expressionism.jpg',
                   'from-novels-to-noir': '2-novel.jpg',
                   'urban-anxiety': '3-mitchum.jpg',
                   'femme-fatales': '4-femme-fateles.jpg',
                   'moral-ambiguity': '5-moral-ambiguity.jpg',
-                  'noirs-legacy': '6-noirs-legacy.jpg'
+                  'noirs-legacy': '6-noirs-legacy.jpg',
                 };
                 const imageName = heroImageMap[episode];
                 return imageName ? `/images/hero/film-noir/${imageName}` : null;
-              })());
-              
+              })();
+
             return heroImageSrc ? (
               <>
                 <div style={styles.heroSection}>
-                  <img 
-                    src={heroImageSrc}
-                    alt="Hero Image" 
-                    style={styles.heroImage}
-                  />
+                  <img src={heroImageSrc} alt="Hero Image" style={styles.heroImage} />
                 </div>
                 <button style={styles.heroTitleButton}>
-                  <h1 style={styles.heroTitle}>{episodeData.episode?.title || episodeData.title}</h1>
-                  <p style={styles.heroSubtitle}>{episodeData.episode?.subtitle || episodeData.subtitle}</p>
+                  <h1 style={styles.heroTitle}>
+                    {episodeData.episode?.title || episodeData.title}
+                  </h1>
+                  <p style={styles.heroSubtitle}>
+                    {episodeData.episode?.subtitle || episodeData.subtitle}
+                  </p>
                 </button>
               </>
             ) : (
               <div style={styles.episodeHeader}>
-                <h1 style={styles.episodeTitle}>{episodeData.episode?.title || episodeData.title}</h1>
-                <p style={styles.episodeSubtitle}>{episodeData.episode?.subtitle || episodeData.subtitle}</p>
+                <h1 style={styles.episodeTitle}>
+                  {episodeData.episode?.title || episodeData.title}
+                </h1>
+                <p style={styles.episodeSubtitle}>
+                  {episodeData.episode?.subtitle || episodeData.subtitle}
+                </p>
               </div>
             );
           })()}
-
 
           {/* Episode Content */}
           {episodeData.content && (
             <div style={styles.episodeContent}>
               {/* Opener */}
               {episodeData.content?.opener && (
-                <div style={styles.opener}>
-                  {underlineProperNames(episodeData.content.opener)}
-                </div>
+                <div style={styles.opener}>{underlineProperNames(episodeData.content.opener)}</div>
               )}
 
               {/* Content Sections */}
               {episodeData.content?.sections?.map((section, index) => (
                 <div key={index}>
                   {section.type === 'text' && (
-                    <div style={styles.textSection}>
-                      {underlineProperNames(section.content)}
-                    </div>
+                    <div style={styles.textSection}>{underlineProperNames(section.content)}</div>
                   )}
                   {section.type === 'subhead' && (
                     <button style={styles.subheadButton}>
@@ -201,10 +200,7 @@ export default function EpisodePage({ theme, episode, episodeData, themeData }) 
               )}
 
               {/* Episode Footer - Navigation for episodes and themes */}
-              <EpisodeFooter 
-                currentTheme={theme} 
-                currentEpisode={episode} 
-              />
+              <EpisodeFooter currentTheme={theme} currentEpisode={episode} />
             </div>
           )}
         </div>
@@ -218,7 +214,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     height: '100%',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     backgroundColor: '#ffffff',
   },
   inputArea: {
@@ -357,7 +354,7 @@ const styles = {
     fontSize: '16px',
     color: '#dc2626',
   },
-  
+
   // Hero Section Styles
   heroSection: {
     position: 'relative',
@@ -499,7 +496,7 @@ const styles = {
 // getStaticPaths - generate all possible theme/episode combinations
 export async function getStaticPaths() {
   const paths = [];
-  
+
   // Generate paths for all theme/episode combinations
   Object.keys(themeMapping.themes).forEach(themeId => {
     const theme = themeMapping.themes[themeId];
@@ -507,24 +504,24 @@ export async function getStaticPaths() {
       paths.push({
         params: {
           theme: themeId,
-          episode: episode.id
-        }
+          episode: episode.id,
+        },
       });
     });
   });
 
   console.log(`🚀 Generated ${paths.length} static episode paths`);
-  
+
   return {
     paths,
-    fallback: false // All paths must be pre-generated for production
+    fallback: false, // All paths must be pre-generated for production
   };
 }
 
 // getStaticProps - fetch episode data at build time
 export async function getStaticProps({ params }) {
   const { theme, episode } = params;
-  
+
   try {
     // Validate theme exists
     const themeData = themeMapping.themes[theme];
@@ -541,21 +538,21 @@ export async function getStaticProps({ params }) {
     // Load episode content from JSON file
     const fs = await import('fs');
     const path = await import('path');
-    
+
     const episodeFilePath = path.default.join(process.cwd(), 'data', 'episodes', episodeInfo.file);
-    
+
     if (!fs.default.existsSync(episodeFilePath)) {
       console.error(`Episode file not found: ${episodeInfo.file}`);
       return { notFound: true };
     }
 
     const episodeContent = JSON.parse(fs.default.readFileSync(episodeFilePath, 'utf8'));
-    
+
     // Merge episode info with content
     const episodeData = {
       ...episodeInfo,
       ...episodeContent,
-      theme: themeData
+      theme: themeData,
     };
 
     return {
@@ -563,11 +560,10 @@ export async function getStaticProps({ params }) {
         theme,
         episode,
         episodeData,
-        themeData
+        themeData,
       },
-      revalidate: 86400 // Revalidate once per day
+      revalidate: 86400, // Revalidate once per day
     };
-    
   } catch (error) {
     console.error('Error loading episode data:', error);
     return { notFound: true };

@@ -45,7 +45,9 @@ export default async function handler(req, res) {
     console.log('\n🔍 Examples of movies with NULL TMDB IDs:');
     nullExamples?.forEach(movie => {
       const hasPoster = movie.poster_url && !movie.poster_url.includes('placeholder');
-      console.log(`- "${movie.title}" (${movie.year}) - ${hasPoster ? 'HAS POSTER' : 'no poster'} - Created: ${movie.created_at}`);
+      console.log(
+        `- "${movie.title}" (${movie.year}) - ${hasPoster ? 'HAS POSTER' : 'no poster'} - Created: ${movie.created_at}`
+      );
     });
 
     res.status(200).json({
@@ -53,9 +55,8 @@ export default async function handler(req, res) {
       withTmdbIds: withTmdbMovies,
       nullTmdbIds: nullTmdbMovies,
       percentageWithTmdbIds: ((withTmdbMovies / totalMovies) * 100).toFixed(1),
-      nullExamples
+      nullExamples,
     });
-
   } catch (error) {
     console.error('Error checking TMDB IDs:', error);
     res.status(500).json({ error: 'Failed to check TMDB statistics' });

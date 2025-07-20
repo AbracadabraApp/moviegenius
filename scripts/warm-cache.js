@@ -13,15 +13,15 @@ class CacheWarmer {
   constructor() {
     this.baseUrl = BASE_URL;
     this.headers = {
-      'Authorization': `Bearer ${CACHE_WARMING_TOKEN}`,
-      'Content-Type': 'application/json'
+      Authorization: `Bearer ${CACHE_WARMING_TOKEN}`,
+      'Content-Type': 'application/json',
     };
     this.stats = {
       moviesWarmed: 0,
       postersWarmed: 0,
       analysesWarmed: 0,
       errors: 0,
-      startTime: Date.now()
+      startTime: Date.now(),
     };
   }
 
@@ -30,14 +30,14 @@ class CacheWarmer {
       const url = `${this.baseUrl}${path}`;
       const requestOptions = {
         method: options.method || 'GET',
-        headers: { ...this.headers, ...options.headers }
+        headers: { ...this.headers, ...options.headers },
       };
 
       const client = url.startsWith('https') ? https : http;
-      
-      const req = client.request(url, requestOptions, (res) => {
+
+      const req = client.request(url, requestOptions, res => {
         let data = '';
-        res.on('data', chunk => data += chunk);
+        res.on('data', chunk => (data += chunk));
         res.on('end', () => {
           try {
             const parsed = JSON.parse(data);
@@ -49,21 +49,21 @@ class CacheWarmer {
       });
 
       req.on('error', reject);
-      
+
       if (options.body) {
         req.write(JSON.stringify(options.body));
       }
-      
+
       req.end();
     });
   }
 
   async warmMovies(batchSize = 50, maxBatches = 0) {
     console.log('🔥 Starting movie cache warming...');
-    
+
     let offset = 0;
     let batch = 1;
-    
+
     while (true) {
       try {
         const response = await this.makeRequest('/api/cache-warming', {
@@ -71,8 +71,8 @@ class CacheWarmer {
           body: {
             type: 'all-movies',
             batchSize,
-            offset
-          }
+            offset,
+          },
         });
 
         if (response.status !== 200) {
@@ -83,8 +83,10 @@ class CacheWarmer {
 
         const result = response.data;
         this.stats.moviesWarmed += result.batch.warmed;
-        
-        console.log(`✅ Batch ${batch}: Warmed ${result.batch.warmed}/${result.batch.processed} movies (${result.duration})`);
+
+        console.log(
+          `✅ Batch ${batch}: Warmed ${result.batch.warmed}/${result.batch.processed} movies (${result.duration})`
+        );
 
         // Stop if we processed fewer movies than batch size (end of data)
         if (result.batch.processed < batchSize) {
@@ -100,10 +102,9 @@ class CacheWarmer {
 
         offset += batchSize;
         batch++;
-        
+
         // Rate limiting delay
         await this.sleep(1000);
-        
       } catch (error) {
         console.error(`❌ Batch ${batch} error:`, error.message);
         this.stats.errors++;
@@ -114,10 +115,10 @@ class CacheWarmer {
 
   async warmPosters(batchSize = 20, maxBatches = 0) {
     console.log('🖼️  Starting poster cache warming...');
-    
+
     let offset = 0;
     let batch = 1;
-    
+
     while (true) {
       try {
         const response = await this.makeRequest('/api/cache-warming', {
@@ -125,8 +126,8 @@ class CacheWarmer {
           body: {
             type: 'posters',
             batchSize,
-            offset
-          }
+            offset,
+          },
         });
 
         if (response.status !== 200) {
@@ -137,8 +138,10 @@ class CacheWarmer {
 
         const result = response.data;
         this.stats.postersWarmed += result.batch.warmed;
-        
-        console.log(`✅ Poster batch ${batch}: Warmed ${result.batch.warmed}/${result.batch.processed} posters (${result.duration})`);
+
+        console.log(
+          `✅ Poster batch ${batch}: Warmed ${result.batch.warmed}/${result.batch.processed} posters (${result.duration})`
+        );
 
         if (result.batch.processed < batchSize) {
           console.log('🎉 All posters cached!');
@@ -152,10 +155,9 @@ class CacheWarmer {
 
         offset += batchSize;
         batch++;
-        
+
         // Rate limiting delay for poster optimization
         await this.sleep(2000);
-        
       } catch (error) {
         console.error(`❌ Poster batch ${batch} error:`, error.message);
         this.stats.errors++;
@@ -166,11 +168,11 @@ class CacheWarmer {
 
   async warmPopular() {
     console.log('⭐ Warming popular content...');
-    
+
     try {
       const response = await this.makeRequest('/api/cache-warming', {
         method: 'POST',
-        body: { type: 'popular' }
+        body: { type: 'popular' },
       });
 
       if (response.status === 200) {
@@ -188,11 +190,11 @@ class CacheWarmer {
 
   async warmSeries() {
     console.log('📺 Warming series content...');
-    
+
     try {
       const response = await this.makeRequest('/api/cache-warming', {
         method: 'POST',
-        body: { type: 'series' }
+        body: { type: 'series' },
       });
 
       if (response.status === 200) {
@@ -212,7 +214,7 @@ class CacheWarmer {
     try {
       const response = await this.makeRequest('/api/cache-warming', {
         method: 'POST',
-        body: { type: 'status' }
+        body: { type: 'status' },
       });
 
       if (response.status === 200) {
@@ -221,7 +223,7 @@ class CacheWarmer {
     } catch (error) {
       console.error('❌ Cache status error:', error.message);
     }
-    
+
     return null;
   }
 
@@ -247,42 +249,42 @@ class CacheWarmer {
 async function main() {
   const args = process.argv.slice(2);
   const command = args[0] || 'help';
-  
+
   const warmer = new CacheWarmer();
 
   switch (command) {
     case 'popular':
       await warmer.warmPopular();
       break;
-      
+
     case 'series':
       await warmer.warmSeries();
       break;
-      
+
     case 'movies':
       const movieBatches = parseInt(args[1]) || 0;
       await warmer.warmMovies(50, movieBatches);
       break;
-      
+
     case 'posters':
       const posterBatches = parseInt(args[1]) || 0;
       await warmer.warmPosters(20, posterBatches);
       break;
-      
+
     case 'all':
       await warmer.warmPopular();
       await warmer.warmSeries();
       await warmer.warmMovies(50, 10); // First 500 movies
       await warmer.warmPosters(20, 10); // First 200 posters
       break;
-      
+
     case 'status':
       const status = await warmer.getCacheStatus();
       if (status) {
         console.log('📊 Cache Status:', JSON.stringify(status, null, 2));
       }
       break;
-      
+
     case 'help':
     default:
       console.log(`

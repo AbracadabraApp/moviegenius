@@ -1,19 +1,15 @@
 /**
  * Movie Detection API for Ask Queries
- * 
+ *
  * Analyzes queries to detect if they're simple movie queries that should redirect
  * Returns redirect information if movie detected, otherwise allows normal Ask flow
- * 
+ *
  * Performance optimized with 1-hour search caching and 7-day result caching
  */
 
 import { getQueryDetector } from '../../lib/query-detector.js';
 import { getPerformanceMonitor } from '../../lib/performance-monitor.js';
-import { 
-  withErrorHandling, 
-  successResponse, 
-  validateRequiredFields 
-} from '../../lib/api-utils.js';
+import { withErrorHandling, successResponse, validateRequiredFields } from '../../lib/api-utils.js';
 
 async function detectMovieHandler(req, res) {
   const performanceMonitor = getPerformanceMonitor();
@@ -28,9 +24,9 @@ async function detectMovieHandler(req, res) {
   // Validate required fields
   const validation = validateRequiredFields(req.body, ['query']);
   if (!validation.isValid) {
-    return res.status(400).json({ 
-      error: 'Missing required fields', 
-      details: validation.missingFields 
+    return res.status(400).json({
+      error: 'Missing required fields',
+      details: validation.missingFields,
     });
   }
 
@@ -52,7 +48,7 @@ async function detectMovieHandler(req, res) {
       query: query.substring(0, 30),
       should_redirect: result.shouldRedirect,
       detection_type: result.type || 'none',
-      success: true
+      success: true,
     });
 
     // Set cache headers based on result
@@ -75,17 +71,16 @@ async function detectMovieHandler(req, res) {
       confidence: result.confidence || null,
       reason: result.reason || null,
       responseTime: Math.round(responseTime),
-      query: query
+      query: query,
     });
-
   } catch (error) {
     const responseTime = performance.now() - startTime;
-    
+
     // Track error metrics
     performanceMonitor.trackMetric('movie_detection_response_time', responseTime, {
       query: query.substring(0, 30),
       success: false,
-      error: error.message
+      error: error.message,
     });
 
     console.error('Error in movie detection API:', error);
@@ -94,7 +89,7 @@ async function detectMovieHandler(req, res) {
       error: 'Failed to detect movie',
       details: process.env.NODE_ENV === 'development' ? error.message : 'Internal server error',
       shouldRedirect: false,
-      responseTime: Math.round(responseTime)
+      responseTime: Math.round(responseTime),
     });
   }
 }

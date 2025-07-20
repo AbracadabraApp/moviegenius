@@ -9,8 +9,8 @@ import path from 'path';
 export default function SeriesPage({ series, error }) {
   const router = useRouter();
   const { seriesId } = router.query;
-  
-  const handleSearchResults = (results) => {
+
+  const handleSearchResults = results => {
     // For now, just log the search results
     console.log('Search results on Series Detail page:', results);
   };
@@ -22,9 +22,7 @@ export default function SeriesPage({ series, error }) {
           <div style={styles.fixedInputArea}>
             <SimpleSearch onResults={handleSearchResults} />
           </div>
-          <div style={styles.error}>
-            Error loading series: {error}
-          </div>
+          <div style={styles.error}>Error loading series: {error}</div>
         </div>
       </PhoneFrame>
     );
@@ -37,9 +35,7 @@ export default function SeriesPage({ series, error }) {
           <div style={styles.fixedInputArea}>
             <SimpleSearch onResults={handleSearchResults} />
           </div>
-          <div style={styles.error}>
-            Series not found
-          </div>
+          <div style={styles.error}>Series not found</div>
         </div>
       </PhoneFrame>
     );
@@ -52,7 +48,7 @@ export default function SeriesPage({ series, error }) {
         <div style={styles.fixedInputArea}>
           <SimpleSearch onResults={handleSearchResults} />
         </div>
-        
+
         {/* Scrollable Content */}
         <div style={styles.scrollableContent}>
           {/* Series Header */}
@@ -63,25 +59,23 @@ export default function SeriesPage({ series, error }) {
             <div style={styles.seriesLabelPill}>Series {seriesId}</div>
             <h1 style={styles.seriesTitle}>{series.title}</h1>
             <p style={styles.seriesDescription}>{series.description}</p>
-            <div style={styles.episodeCount}>
-              {series.episodes.length} Episodes
-            </div>
+            <div style={styles.episodeCount}>{series.episodes.length} Episodes</div>
           </div>
-          
+
           {/* Episodes List */}
           <div style={styles.content}>
             <div style={styles.episodesSection}>
               <h2 style={styles.episodesSectionTitle}>Episodes</h2>
-              {series.episodes.map((episode) => (
-                <div 
+              {series.episodes.map(episode => (
+                <div
                   key={episode.id}
                   style={styles.episodeCard}
                   onClick={() => router.push(`/recs/series/${seriesId}/${episode.id}`)}
-                  onMouseEnter={(e) => {
+                  onMouseEnter={e => {
                     e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.35)';
                     e.currentTarget.style.transform = 'translateY(-2px)';
                   }}
-                  onMouseLeave={(e) => {
+                  onMouseLeave={e => {
                     e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
                     e.currentTarget.style.transform = 'translateY(0)';
                   }}
@@ -109,13 +103,10 @@ export default function SeriesPage({ series, error }) {
                 </div>
               ))}
             </div>
-            
+
             {/* Navigation Section */}
             <div style={styles.navigationSection}>
-              <button 
-                style={styles.allSeriesButton}
-                onClick={() => router.push('/recs/series')}
-              >
+              <button style={styles.allSeriesButton} onClick={() => router.push('/recs/series')}>
                 ← Browse All Series
               </button>
             </div>
@@ -130,44 +121,41 @@ export default function SeriesPage({ series, error }) {
 export async function getServerSideProps({ params, res }) {
   try {
     // Set cache headers
-    res.setHeader(
-      'Cache-Control',
-      'public, s-maxage=3600, stale-while-revalidate=7200'
-    );
-    
+    res.setHeader('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=7200');
+
     const { seriesId } = params;
-    
+
     // Load series data from static configuration file
     const filePath = path.join(process.cwd(), 'data', 'series-config.json');
     const fileContent = fs.readFileSync(filePath, 'utf8');
     const seriesData = JSON.parse(fileContent);
-    
+
     // Get the specific series
     const series = seriesData[seriesId];
-    
+
     if (!series) {
       return {
         props: {
           series: null,
-          error: `Series ${seriesId} not found`
-        }
+          error: `Series ${seriesId} not found`,
+        },
       };
     }
 
     return {
       props: {
         series,
-        error: null
-      }
+        error: null,
+      },
     };
   } catch (error) {
     console.error('Error loading series data:', error);
-    
+
     return {
       props: {
         series: null,
-        error: error.message
-      }
+        error: error.message,
+      },
     };
   }
 }
@@ -177,7 +165,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     height: '100%',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   fixedInputArea: {
     position: 'sticky',

@@ -4,7 +4,7 @@ const path = require('path');
 // Test all theme pages exist
 const themePages = [
   'film-noir',
-  'horror-suspense', 
+  'horror-suspense',
   'comedy-through-time',
   'women-directors',
   'world-cinema',
@@ -12,7 +12,7 @@ const themePages = [
   'avant-garde-film',
   'magic-of-moviemaking',
   'cinema-through-decades',
-  'cinema-cultural-impact'
+  'cinema-cultural-impact',
 ];
 
 console.log('🔍 Checking theme page files...');
@@ -38,7 +38,7 @@ const components = [
   'components/NavBar.js',
   'components/ThemeFooter.js',
   'components/EssentialMovies.js',
-  'components/GeniusEpisodeTemplate.js'
+  'components/GeniusEpisodeTemplate.js',
 ];
 
 console.log('\n🔍 Checking component files...');
@@ -56,14 +56,14 @@ const filesToCheck = [
   'pages/index.js',
   'pages/genius.js',
   'components/GeniusEpisodeTemplate.js',
-  'components/ThemeFooter.js'
+  'components/ThemeFooter.js',
 ];
 
 filesToCheck.forEach(file => {
   const filePath = path.join(__dirname, file);
   if (fs.existsSync(filePath)) {
     const content = fs.readFileSync(filePath, 'utf8');
-    
+
     // Check for old route patterns
     const oldRoutes = [
       '/film-noir',
@@ -75,14 +75,14 @@ filesToCheck.forEach(file => {
       '/avant-garde-film',
       '/magic-of-moviemaking',
       '/cinema-through-decades',
-      '/cinema-cultural-impact'
+      '/cinema-cultural-impact',
     ];
-    
+
     oldRoutes.forEach(route => {
       // Only flag if it's NOT prefixed with /themes/
       const pattern = new RegExp(`['"]${route}['"]`, 'g');
       const themesPattern = new RegExp(`['"]\/themes${route}['"]`, 'g');
-      
+
       if (pattern.test(content) && !themesPattern.test(content)) {
         console.log(`⚠️  ${file} contains old route: ${route}`);
       }

@@ -18,11 +18,11 @@ Some non-movie examples that should NOT link:
 // Simulate the patterns from EntityLinkedText
 function testPatterns(text) {
   const matches = [];
-  
+
   // Pattern 1: Bold format **Movie Title** (Year)
   const boldPattern = /\*\*([^*]+)\*\* \((\d{4})\)/g;
   let match;
-  
+
   console.log('=== BOLD PATTERN MATCHES ===');
   while ((match = boldPattern.exec(text)) !== null) {
     const title = match[1].trim();
@@ -30,20 +30,18 @@ function testPatterns(text) {
     console.log(`✅ Bold: "${title}" (${year})`);
     matches.push({ title, year, type: 'bold' });
   }
-  
+
   // Pattern 2: Legacy format Movie Title (Year)
   const legacyPattern = /\b([A-Z][a-z]+(?: [A-Z][a-z]+)+) \((\d{4})\)\b/g;
-  
+
   console.log('\n=== LEGACY PATTERN MATCHES ===');
   while ((match = legacyPattern.exec(text)) !== null) {
     const title = match[1].trim();
     const year = parseInt(match[2]);
-    
+
     // Check for overlaps with bold matches
-    const overlaps = matches.some(existing => 
-      existing.title === title && existing.year === year
-    );
-    
+    const overlaps = matches.some(existing => existing.title === title && existing.year === year);
+
     if (!overlaps) {
       console.log(`✅ Legacy: "${title}" (${year})`);
       matches.push({ title, year, type: 'legacy' });
@@ -51,14 +49,14 @@ function testPatterns(text) {
       console.log(`⚠️  Skipped duplicate: "${title}" (${year})`);
     }
   }
-  
+
   console.log(`\n=== SUMMARY ===`);
   const boldCount = matches.filter(m => m.type === 'bold').length;
   const legacyCount = matches.filter(m => m.type === 'legacy').length;
   console.log(`Total matches: ${matches.length}`);
   console.log(`Bold format: ${boldCount}`);
   console.log(`Legacy format: ${legacyCount}`);
-  
+
   return matches;
 }
 

@@ -1,16 +1,16 @@
 /**
  * MediaCardTest Component - 🧪 TEST VERSION FOR POSTER SIZING 🧪
- * 
+ *
  * Testing 40% poster width layout changes before applying to production MediaCard.
  * Experimenting with responsive poster sizing and text layout adjustments.
- * 
+ *
  * @component
  * @example
- * <MediaCardTest 
- *   title="The Matrix" 
- *   year={1999} 
- *   initialSlug="Reality is a simulation" 
- *   initialPoster="/images/matrix.jpg" 
+ * <MediaCardTest
+ *   title="The Matrix"
+ *   year={1999}
+ *   initialSlug="Reality is a simulation"
+ *   initialPoster="/images/matrix.jpg"
  * />
  */
 import { Heart, Bookmark } from 'lucide-react';
@@ -20,7 +20,7 @@ import { FavoritesManager } from './FavoritesManager';
 
 /**
  * MediaCard - Self-contained interactive movie card component
- * 
+ *
  * @param {Object} props
  * @param {string} props.title - Movie title (required)
  * @param {number} props.year - Release year (required)
@@ -30,24 +30,25 @@ import { FavoritesManager } from './FavoritesManager';
  * @param {boolean} props.isDetailPage - Whether this is on a detail page (optional)
  * @param {number} props.tmdbId - TMDB ID for navigation (optional)
  */
-export default function MediaCardTest({ 
-  title, 
-  year, 
-  initialSlug, 
-  initialPoster, 
-  initialStreaming, 
+export default function MediaCardTest({
+  title,
+  year,
+  initialSlug,
+  initialPoster,
+  initialStreaming,
   isDetailPage = false,
-  tmdbId 
+  tmdbId,
 }) {
   const [hearted, setHearted] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
   // 🔒 LOCKED: TMDB plot summary protection - only use valid Claude slugs
-  const isValidClaudeSlug = initialSlug && 
-    !initialSlug.includes('Plot:') &&    // Reject TMDB plot summaries
-    !initialSlug.includes('Overview:') && // Reject TMDB overviews  
+  const isValidClaudeSlug =
+    initialSlug &&
+    !initialSlug.includes('Plot:') && // Reject TMDB plot summaries
+    !initialSlug.includes('Overview:') && // Reject TMDB overviews
     !initialSlug.includes('Synopsis:') && // Reject TMDB synopses
-    !initialSlug.includes('Summary:');    // Reject other summary formats
-    
+    !initialSlug.includes('Summary:'); // Reject other summary formats
+
   const [slug, setSlug] = useState(isValidClaudeSlug ? initialSlug : '');
   const [poster, setPoster] = useState(initialPoster || '/images/placeholder-poster.jpg');
   const [movieTmdbId, setMovieTmdbId] = useState(tmdbId);
@@ -73,17 +74,17 @@ export default function MediaCardTest({
   const [isEnhancing, setIsEnhancing] = useState(false);
 
   // Streaming feature stubbed out - will be replaced with real provider
-  // const { 
-  //   hasStreaming, 
-  //   getDisplayText, 
+  // const {
+  //   hasStreaming,
+  //   getDisplayText,
   //   primaryService,
   //   freeOptions,
-  //   isLoading: streamingLoading 
+  //   isLoading: streamingLoading
   // } = useStreamingData(title, year, initialStreaming);
 
   // Generate media ID from title and year
   const mediaId = `${title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${year}`;
-  
+
   // Movie data object for FavoritesManager
   const movieData = { title, year, slug, poster, id: mediaId };
 
@@ -92,34 +93,35 @@ export default function MediaCardTest({
   useEffect(() => {
     const enhanceMovieData = async () => {
       // 🔒 LOCKED: TMDB plot summary protection - reject verbose technical descriptions
-      const isValidClaudeSlug = slug && 
+      const isValidClaudeSlug =
+        slug &&
         slug !== '' &&
-        !slug.includes('Plot:') &&    // Reject TMDB plot summaries
-        !slug.includes('Overview:') && // Reject TMDB overviews  
+        !slug.includes('Plot:') && // Reject TMDB plot summaries
+        !slug.includes('Overview:') && // Reject TMDB overviews
         !slug.includes('Synopsis:') && // Reject TMDB synopses
-        !slug.includes('Summary:');    // Reject other summary formats
-        
+        !slug.includes('Summary:'); // Reject other summary formats
+
       // Skip if we have poster, or if already enhancing
       // NO slug fallback - Claude slugs only
       if (poster !== '/images/placeholder-poster.jpg') {
         return;
       }
-      
+
       if (isEnhancing) return;
       setIsEnhancing(true);
-      
+
       try {
         let newPoster = poster;
-        
+
         // Fetch TMDB poster if using placeholder
         if (poster === '/images/placeholder-poster.jpg') {
           console.log('Fetching TMDB poster for:', title, year);
           const response = await fetch('/api/tmdb-poster', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ title, year })
+            body: JSON.stringify({ title, year }),
           });
-          
+
           if (response.ok) {
             const data = await response.json();
             if (data.poster) {
@@ -131,19 +133,19 @@ export default function MediaCardTest({
             }
           }
         }
-        
+
         // Cache the enhanced poster data if we got new poster
         if (newPoster !== poster && newPoster !== '/images/placeholder-poster.jpg') {
           try {
             await fetch('/api/cache-movie-data', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ 
-                title, 
-                year, 
+              body: JSON.stringify({
+                title,
+                year,
                 poster: newPoster,
-                dataSource: 'afi100' // For now, assume AFI100. Could be made dynamic.
-              })
+                dataSource: 'afi100', // For now, assume AFI100. Could be made dynamic.
+              }),
             });
             console.log('Cached enhanced poster data for:', title, year);
           } catch (cacheError) {
@@ -151,14 +153,13 @@ export default function MediaCardTest({
             // Don't fail the whole operation if caching fails
           }
         }
-        
       } catch (error) {
         console.error('Error enhancing movie data:', error);
       } finally {
         setIsEnhancing(false);
       }
     };
-    
+
     enhanceMovieData();
   }, [title, year, poster, isEnhancing]);
 
@@ -179,13 +180,13 @@ export default function MediaCardTest({
     return () => window.removeEventListener('moviesUpdated', handleMoviesUpdate);
   }, [mediaId]);
 
-  const handleCardClick = (e) => {
+  const handleCardClick = e => {
     // Don't navigate if clicking on action buttons or if this is a detail page
     if (e.target.closest('button') || isDetailPage) {
       e.preventDefault();
       return;
     }
-    
+
     // 🔒 LOCKED: NO fallback navigation - this enforces TMDB-first architecture
     // For href-based navigation, prevent default if no TMDB ID available
     if (!movieTmdbId) {
@@ -202,18 +203,18 @@ export default function MediaCardTest({
       style={styles.card}
       role="article"
       onClick={handleCardClick}
-      onMouseDown={(e) => {
+      onMouseDown={e => {
         // Immediate visual feedback on click
         e.currentTarget.style.transform = 'translateY(1px) scale(0.98)';
       }}
-      onMouseUp={(e) => {
+      onMouseUp={e => {
         e.currentTarget.style.transform = 'translateY(-2px) scale(1)';
       }}
-      onMouseEnter={(e) => {
+      onMouseEnter={e => {
         e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 0, 0, 0.30)';
         e.currentTarget.style.transform = 'translateY(-2px)';
       }}
-      onMouseLeave={(e) => {
+      onMouseLeave={e => {
         e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.20)';
         e.currentTarget.style.transform = 'translateY(0)';
       }}
@@ -225,45 +226,43 @@ export default function MediaCardTest({
           <div style={styles.year}>({year})</div>
         </div>
         <div style={styles.slug}>{slug}</div>
-        
+
         {/* Bottom row: streaming left, icons right */}
         <div style={styles.bottomRow}>
           <div style={styles.streamingInfo}>
-            <span style={styles.streamingText}>
-              Streaming on TBD
-            </span>
+            <span style={styles.streamingText}>Streaming on TBD</span>
           </div>
           <div style={styles.iconRow}>
-          <button
-            onClick={() => {
-              const newState = FavoritesManager.toggleHeart(movieData);
-              setHearted(newState);
-            }}
-            style={styles.iconButton}
-            aria-label={hearted ? 'Remove from favorites' : 'Add to favorites'}
-            role="button"
-          >
-            <Heart
-              size={18}
-              color={hearted ? '#ef4444' : '#374151'}
-              fill={hearted ? '#ef4444' : 'none'}
-            />
-          </button>
-          <button
-            onClick={() => {
-              const newState = FavoritesManager.toggleBookmark(movieData);
-              setBookmarked(newState);
-            }}
-            style={styles.iconButton}
-            aria-label={bookmarked ? 'Remove bookmark' : 'Bookmark movie'}
-            role="button"
-          >
-            <Bookmark
-              size={18}
-              color={bookmarked ? '#6b7280' : '#374151'}
-              fill={bookmarked ? '#6b7280' : 'none'}
-            />
-          </button>
+            <button
+              onClick={() => {
+                const newState = FavoritesManager.toggleHeart(movieData);
+                setHearted(newState);
+              }}
+              style={styles.iconButton}
+              aria-label={hearted ? 'Remove from favorites' : 'Add to favorites'}
+              role="button"
+            >
+              <Heart
+                size={18}
+                color={hearted ? '#ef4444' : '#374151'}
+                fill={hearted ? '#ef4444' : 'none'}
+              />
+            </button>
+            <button
+              onClick={() => {
+                const newState = FavoritesManager.toggleBookmark(movieData);
+                setBookmarked(newState);
+              }}
+              style={styles.iconButton}
+              aria-label={bookmarked ? 'Remove bookmark' : 'Bookmark movie'}
+              role="button"
+            >
+              <Bookmark
+                size={18}
+                color={bookmarked ? '#6b7280' : '#374151'}
+                fill={bookmarked ? '#6b7280' : 'none'}
+              />
+            </button>
           </div>
         </div>
       </div>
@@ -287,7 +286,8 @@ const styles = {
     transition: 'box-shadow 0.15s ease, transform 0.1s ease',
     cursor: 'pointer',
     marginBottom: '8px',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     // Reset link styles for proper card appearance
     textDecoration: 'none',
     color: 'inherit',

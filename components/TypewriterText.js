@@ -3,23 +3,23 @@ import { useState, useEffect, useMemo, memo } from 'react';
 
 /**
  * TypewriterText Component
- * 
+ *
  * Simulates typewriter effect by progressively revealing text.
  * Designed for Ask responses to create immediate engagement while content loads.
- * 
+ *
  * Features:
  * - Word-based chunking for natural reading flow
  * - Configurable speed for different content types
  * - Pause/resume capability
  * - Respects markdown-style formatting (*text* for emphasis)
  */
-function TypewriterText({ 
-  text, 
+function TypewriterText({
+  text,
   speed = 50, // milliseconds per word
   onComplete = null,
   className = '',
   style = {},
-  autoStart = true
+  autoStart = true,
 }) {
   const [displayedText, setDisplayedText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -63,53 +63,65 @@ function TypewriterText({
   // Cursor blinking effect
   useEffect(() => {
     if (isComplete) return;
-    
+
     const blinkInterval = setInterval(() => {
       setCursorVisible(prev => !prev);
     }, 500);
-    
+
     return () => clearInterval(blinkInterval);
   }, [isComplete]);
 
   // Memoize parseText function for performance
-  const parseText = useMemo(() => (text) => {
-    // Replace *Movie Title* with gold-highlighted movie titles (clickable)
-    let parsed = text.replace(/\*([^*]+)\*/g, '<span class="movie-title-italic">$1</span>');
-    
-    // Replace "Movie Title" with gold-highlighted quoted titles (clickable)
-    parsed = parsed.replace(/"([^"]+)"(?=\s*\(\d{4}\)|\s|[.,!?]|$)/g, '<span class="movie-title-quoted">$1</span>');
-    
-    // Replace Movie Title (1987) pattern with gold-highlighted titles (clickable)
-    // Matches: Capital Case Title (4-digit year) - common in movie page content
-    parsed = parsed.replace(/\b([A-Z][A-Za-z\s&:'-]+?)(\s\(\d{4}\))/g, '<span class="movie-title-with-year">$1$2</span>');
-    
-    // Conservative pattern for standalone movie titles (common movie naming patterns)
-    // Only matches very specific patterns to avoid false positives
-    parsed = parsed.replace(/\b(The [A-Z][A-Za-z\s]{3,25}|[A-Z][A-Za-z\s]{2,25}(?:\s(?:Club|Matrix|Wars|Story|Movie|Film)))(?=\s|[.,!?]|$)/g, '<span class="movie-title-with-year">$1</span>');
-    
-    // Convert newlines to HTML line breaks for scannable formatting
-    parsed = parsed.replace(/\n/g, '<br />');
-    return parsed;
-  }, []);
+  const parseText = useMemo(
+    () => text => {
+      // Replace *Movie Title* with gold-highlighted movie titles (clickable)
+      let parsed = text.replace(/\*([^*]+)\*/g, '<span class="movie-title-italic">$1</span>');
+
+      // Replace "Movie Title" with gold-highlighted quoted titles (clickable)
+      parsed = parsed.replace(
+        /"([^"]+)"(?=\s*\(\d{4}\)|\s|[.,!?]|$)/g,
+        '<span class="movie-title-quoted">$1</span>'
+      );
+
+      // Replace Movie Title (1987) pattern with gold-highlighted titles (clickable)
+      // Matches: Capital Case Title (4-digit year) - common in movie page content
+      parsed = parsed.replace(
+        /\b([A-Z][A-Za-z\s&:'-]+?)(\s\(\d{4}\))/g,
+        '<span class="movie-title-with-year">$1$2</span>'
+      );
+
+      // Conservative pattern for standalone movie titles (common movie naming patterns)
+      // Only matches very specific patterns to avoid false positives
+      parsed = parsed.replace(
+        /\b(The [A-Z][A-Za-z\s]{3,25}|[A-Z][A-Za-z\s]{2,25}(?:\s(?:Club|Matrix|Wars|Story|Movie|Film)))(?=\s|[.,!?]|$)/g,
+        '<span class="movie-title-with-year">$1</span>'
+      );
+
+      // Convert newlines to HTML line breaks for scannable formatting
+      parsed = parsed.replace(/\n/g, '<br />');
+      return parsed;
+    },
+    []
+  );
 
   return (
-    <div 
+    <div
       className={className}
       style={{
         ...style,
-        position: 'relative'
+        position: 'relative',
       }}
     >
-      <div 
-        dangerouslySetInnerHTML={{ 
-          __html: parseText(displayedText) 
+      <div
+        dangerouslySetInnerHTML={{
+          __html: parseText(displayedText),
         }}
         style={{
-          minHeight: '1.5em' // Prevent layout shift
+          minHeight: '1.5em', // Prevent layout shift
         }}
       />
       {!isComplete && (
-        <span 
+        <span
           style={{
             display: 'inline-block',
             width: '2px',
@@ -117,7 +129,7 @@ function TypewriterText({
             backgroundColor: '#374151',
             marginLeft: '2px',
             opacity: cursorVisible ? 1 : 0,
-            transition: 'opacity 0.1s ease'
+            transition: 'opacity 0.1s ease',
           }}
         />
       )}
@@ -145,11 +157,11 @@ export default TypewriterTextMemo;
 export function createTextChunks(text, wordsPerChunk = 20) {
   const words = text.split(' ');
   const chunks = [];
-  
+
   for (let i = 0; i < words.length; i += wordsPerChunk) {
     chunks.push(words.slice(i, i + wordsPerChunk).join(' '));
   }
-  
+
   return chunks;
 }
 
@@ -182,74 +194,86 @@ export function useTypewriterChunks(chunks, chunkDelay = 1000) {
     isComplete,
     handleChunkComplete,
     reset,
-    totalChunks: chunks.length
+    totalChunks: chunks.length,
   };
 }
 
 /**
  * StreamingTypewriter Component
- * 
+ *
  * Real-time typewriter that displays text as it streams from API
  * Much faster perceived performance than waiting for complete response
  */
-export function StreamingTypewriter({ 
+export function StreamingTypewriter({
   streamingText = '',
   isComplete = false,
   className = '',
-  style = {}
+  style = {},
 }) {
   const [cursorVisible, setCursorVisible] = useState(true);
 
   // Cursor blinking effect
   useEffect(() => {
     if (isComplete) return;
-    
+
     const blinkInterval = setInterval(() => {
       setCursorVisible(prev => !prev);
     }, 500);
-    
+
     return () => clearInterval(blinkInterval);
   }, [isComplete]);
 
   // Memoize parseText function for performance
-  const parseText = useMemo(() => (text) => {
-    // Replace *Movie Title* with gold-highlighted movie titles (clickable)
-    let parsed = text.replace(/\*([^*]+)\*/g, '<span class="movie-title-italic">$1</span>');
-    
-    // Replace "Movie Title" with gold-highlighted quoted titles (clickable)
-    parsed = parsed.replace(/"([^"]+)"(?=\s*\(\d{4}\)|\s|[.,!?]|$)/g, '<span class="movie-title-quoted">$1</span>');
-    
-    // Replace Movie Title (1987) pattern with gold-highlighted titles (clickable)
-    // Matches: Capital Case Title (4-digit year) - common in movie page content
-    parsed = parsed.replace(/\b([A-Z][A-Za-z\s&:'-]+?)(\s\(\d{4}\))/g, '<span class="movie-title-with-year">$1$2</span>');
-    
-    // Conservative pattern for standalone movie titles (common movie naming patterns)
-    // Only matches very specific patterns to avoid false positives
-    parsed = parsed.replace(/\b(The [A-Z][A-Za-z\s]{3,25}|[A-Z][A-Za-z\s]{2,25}(?:\s(?:Club|Matrix|Wars|Story|Movie|Film)))(?=\s|[.,!?]|$)/g, '<span class="movie-title-with-year">$1</span>');
-    
-    // Convert newlines to HTML line breaks for scannable formatting
-    parsed = parsed.replace(/\n/g, '<br />');
-    return parsed;
-  }, []);
+  const parseText = useMemo(
+    () => text => {
+      // Replace *Movie Title* with gold-highlighted movie titles (clickable)
+      let parsed = text.replace(/\*([^*]+)\*/g, '<span class="movie-title-italic">$1</span>');
+
+      // Replace "Movie Title" with gold-highlighted quoted titles (clickable)
+      parsed = parsed.replace(
+        /"([^"]+)"(?=\s*\(\d{4}\)|\s|[.,!?]|$)/g,
+        '<span class="movie-title-quoted">$1</span>'
+      );
+
+      // Replace Movie Title (1987) pattern with gold-highlighted titles (clickable)
+      // Matches: Capital Case Title (4-digit year) - common in movie page content
+      parsed = parsed.replace(
+        /\b([A-Z][A-Za-z\s&:'-]+?)(\s\(\d{4}\))/g,
+        '<span class="movie-title-with-year">$1$2</span>'
+      );
+
+      // Conservative pattern for standalone movie titles (common movie naming patterns)
+      // Only matches very specific patterns to avoid false positives
+      parsed = parsed.replace(
+        /\b(The [A-Z][A-Za-z\s]{3,25}|[A-Z][A-Za-z\s]{2,25}(?:\s(?:Club|Matrix|Wars|Story|Movie|Film)))(?=\s|[.,!?]|$)/g,
+        '<span class="movie-title-with-year">$1</span>'
+      );
+
+      // Convert newlines to HTML line breaks for scannable formatting
+      parsed = parsed.replace(/\n/g, '<br />');
+      return parsed;
+    },
+    []
+  );
 
   return (
-    <div 
+    <div
       className={className}
       style={{
         ...style,
-        position: 'relative'
+        position: 'relative',
       }}
     >
-      <div 
-        dangerouslySetInnerHTML={{ 
-          __html: parseText(streamingText) 
+      <div
+        dangerouslySetInnerHTML={{
+          __html: parseText(streamingText),
         }}
         style={{
-          minHeight: '1.5em' // Prevent layout shift
+          minHeight: '1.5em', // Prevent layout shift
         }}
       />
       {!isComplete && (
-        <span 
+        <span
           style={{
             display: 'inline-block',
             width: '2px',
@@ -257,7 +281,7 @@ export function StreamingTypewriter({
             backgroundColor: '#374151',
             marginLeft: '2px',
             opacity: cursorVisible ? 1 : 0,
-            transition: 'opacity 0.1s ease'
+            transition: 'opacity 0.1s ease',
           }}
         />
       )}
@@ -265,7 +289,7 @@ export function StreamingTypewriter({
   );
 }
 
-// Memoized StreamingTypewriter 
+// Memoized StreamingTypewriter
 export const StreamingTypewriterMemo = memo(StreamingTypewriter, (prevProps, nextProps) => {
   return (
     prevProps.streamingText === nextProps.streamingText &&

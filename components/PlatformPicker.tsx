@@ -36,7 +36,7 @@ export const PlatformPicker: React.FC<PlatformPickerProps> = ({
   columns = 3,
 }) => (
   <div className={`grid grid-cols-${columns} gap-4`}>
-    {platforms.map((plat) => (
+    {platforms.map(plat => (
       <PlatformCard
         key={plat.id}
         platform={plat}

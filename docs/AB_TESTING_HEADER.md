@@ -2,11 +2,17 @@
 
 ## Overview
 
-This document describes the safe A/B testing infrastructure implemented for testing the new "B-header" format against the original MovieHeader component. The system provides feature flags, monitoring, emergency rollback capabilities, and comprehensive testing to ensure production safety.
+This document describes the safe A/B testing infrastructure implemented for
+testing the new "B-header" format against the original MovieHeader component.
+The system provides feature flags, monitoring, emergency rollback capabilities,
+and comprehensive testing to ensure production safety.
 
 ## Background
 
-The "B-header" format is a new text formatting approach where content uses a lowercase 'b' prefix instead of standard markdown '#' notation. This A/B test allows us to safely evaluate user response to this change while maintaining the ability to quickly rollback if issues arise.
+The "B-header" format is a new text formatting approach where content uses a
+lowercase 'b' prefix instead of standard markdown '#' notation. This A/B test
+allows us to safely evaluate user response to this change while maintaining the
+ability to quickly rollback if issues arise.
 
 ## Architecture
 
@@ -55,6 +61,7 @@ HEADER_B_VARIANT: {
 ### User Bucketing
 
 Users are consistently assigned to test buckets (0-99) based on session ID:
+
 - Bucketing is stable within a session
 - Distribution is statistically even
 - No personal data is used in bucketing
@@ -62,9 +69,11 @@ Users are consistently assigned to test buckets (0-99) based on session ID:
 ### Monitoring Thresholds
 
 The system monitors for:
+
 - **Error Rate**: >5 errors per 100 renders triggers investigation
 - **Performance**: >100ms render time generates warnings
-- **Emergency Rollback**: >10 total errors or >5% error rate triggers automatic rollback
+- **Emergency Rollback**: >10 total errors or >5% error rate triggers automatic
+  rollback
 
 ## Usage
 
@@ -77,7 +86,7 @@ Replace existing MovieHeader usage:
 import MovieHeader from '../components/MovieHeader';
 <MovieHeader title="Movie Title" year={2023} ... />
 
-// After  
+// After
 import MovieHeaderAB from '../components/MovieHeaderAB';
 <MovieHeaderAB title="Movie Title" year={2023} ... />
 ```
@@ -127,13 +136,15 @@ simulateTestScenario('movie_header_format', 'emergency_rollback');
 ## Rollout Strategy
 
 ### Phase 1: Development Testing (Complete)
+
 - ✅ Feature flag infrastructure
-- ✅ A/B test wrapper component  
+- ✅ A/B test wrapper component
 - ✅ Comprehensive test suite
 - ✅ Monitoring and rollback systems
 - ✅ Documentation
 
 ### Phase 2: Staging Validation (Next)
+
 1. Enable in staging environment
 2. Validate both variants render correctly
 3. Test error scenarios and rollback
@@ -141,17 +152,19 @@ simulateTestScenario('movie_header_format', 'emergency_rollback');
 5. QA validation of functionality
 
 ### Phase 3: Limited Production Rollout
+
 1. Start with 5% traffic to B variant
 2. Monitor for 24-48 hours
 3. Gradually increase if metrics are good:
    - Day 1-2: 5%
-   - Day 3-4: 15% 
+   - Day 3-4: 15%
    - Day 5-7: 30%
    - Week 2: 50%
    - Week 3: 75%
    - Week 4: 100% (if successful)
 
 ### Phase 4: Full Rollout or Rollback
+
 - If successful: Make B variant the default
 - If unsuccessful: Rollback and analyze learnings
 
@@ -161,7 +174,8 @@ simulateTestScenario('movie_header_format', 'emergency_rollback');
 
 1. **SSR Safety**: Always serves A variant during server-side rendering
 2. **Feature Flag Errors**: Falls back to A variant if flag system fails
-3. **Component Errors**: Error boundaries catch render issues and serve A variant
+3. **Component Errors**: Error boundaries catch render issues and serve A
+   variant
 4. **Emergency Rollback**: Automatic rollback when error thresholds are exceeded
 
 ### Manual Controls
@@ -208,6 +222,7 @@ npm test -- --coverage --testPathPattern="MovieHeader|featureFlags"
 ### Manual Testing Checklist
 
 #### Before Rollout
+
 - [ ] Both variants render identically except for text formatting
 - [ ] Heart/bookmark functionality works in both variants
 - [ ] Poster loading works correctly
@@ -217,6 +232,7 @@ npm test -- --coverage --testPathPattern="MovieHeader|featureFlags"
 - [ ] Emergency rollback can be triggered
 
 #### During Rollout
+
 - [ ] Monitor error rates in real-time
 - [ ] Check performance metrics
 - [ ] Validate user bucketing is even
@@ -265,6 +281,7 @@ console.log(headerMetrics);
 ### Automatic Rollback
 
 The system automatically rolls back when:
+
 - Error rate exceeds 5 errors per 100 renders
 - More than 10 total errors occur
 - Critical component failures are detected
@@ -292,18 +309,21 @@ setFeatureOverride('HEADER_B_VARIANT', false);
 ### Common Issues
 
 #### B Variant Not Showing
+
 1. Check if feature flag is enabled for environment
 2. Verify user bucket falls within rollout percentage
 3. Check for emergency rollbacks
 4. Confirm development overrides aren't active
 
 #### High Error Rates
+
 1. Check browser console for JavaScript errors
 2. Verify component props are correct
 3. Test on different devices/browsers
 4. Check network requests for failures
 
 #### Performance Issues
+
 1. Monitor render times in dashboard
 2. Test on slower devices
 3. Check for memory leaks
@@ -321,36 +341,42 @@ import { getTestMetrics } from '../lib/abTestMonitoring';
 console.log(getTestMetrics('movie_header_format'));
 
 // Verify user bucket
-console.log('User bucket:', getFeatureMetadata(FLAGS.HEADER_B_VARIANT)?.userBucket);
+console.log(
+  'User bucket:',
+  getFeatureMetadata(FLAGS.HEADER_B_VARIANT)?.userBucket
+);
 ```
 
 ## Analytics Events
 
 The system tracks these Google Analytics events:
 
-| Event | Category | Label | Description |
-|-------|----------|-------|-------------|
-| `ab_test_variant_shown` | A/B Testing | movie_header_format | User sees a variant |
-| `ab_test_error_tracked` | A/B Testing Errors | movie_header_format | Error occurs in variant |
-| `ab_test_render_success` | A/B Testing | movie_header_format | Successful render |
-| `ab_test_slow_render` | A/B Testing Performance | movie_header_format | Slow render detected |
-| `ab_test_emergency_rollback` | A/B Testing Critical | movie_header_format | Emergency rollback triggered |
+| Event                        | Category                | Label               | Description                  |
+| ---------------------------- | ----------------------- | ------------------- | ---------------------------- |
+| `ab_test_variant_shown`      | A/B Testing             | movie_header_format | User sees a variant          |
+| `ab_test_error_tracked`      | A/B Testing Errors      | movie_header_format | Error occurs in variant      |
+| `ab_test_render_success`     | A/B Testing             | movie_header_format | Successful render            |
+| `ab_test_slow_render`        | A/B Testing Performance | movie_header_format | Slow render detected         |
+| `ab_test_emergency_rollback` | A/B Testing Critical    | movie_header_format | Emergency rollback triggered |
 
 ## Best Practices
 
 ### Development
+
 1. Always test both variants locally before pushing
 2. Use development helpers for debugging
 3. Write tests for any new functionality
 4. Follow the gradual rollout strategy
 
 ### Monitoring
+
 1. Check metrics daily during rollout
 2. Set up alerts for error thresholds
 3. Monitor user feedback channels
 4. Track business metrics alongside technical metrics
 
 ### Safety
+
 1. Never remove fallback mechanisms
 2. Always test rollback procedures
 3. Have emergency contacts ready during rollouts
@@ -361,11 +387,10 @@ The system tracks these Google Analytics events:
 For questions or issues with this A/B testing implementation:
 
 - **Primary Contact**: UX Team
-- **Technical Contact**: Engineering Team  
+- **Technical Contact**: Engineering Team
 - **Emergency Contact**: On-call Engineer
 - **JIRA Project**: UX-123
 
 ---
 
-*Last Updated: 2024-06-19*
-*Version: 1.0*
+_Last Updated: 2024-06-19_ _Version: 1.0_

@@ -2,12 +2,12 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { Search, X } from 'lucide-react';
 
-export default function SearchBar({ 
-  onSearch, 
-  onResults, 
-  placeholder = "Search movies...", 
+export default function SearchBar({
+  onSearch,
+  onResults,
+  placeholder = 'Search movies...',
   style = {},
-  showSuggestions = true 
+  showSuggestions = true,
 }) {
   const [query, setQuery] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -17,72 +17,81 @@ export default function SearchBar({
   const inputRef = useRef(null);
 
   // Debounced search function
-  const debouncedSearch = useCallback(async (searchQuery) => {
-    if (!searchQuery.trim()) {
-      setSuggestions([]);
-      setShowSuggestionsList(false);
-      if (onResults) onResults([]);
-      return;
-    }
-
-    setIsLoading(true);
-    
-    try {
-      const response = await fetch('/api/multi-search', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ 
-          query: searchQuery.trim()
-        })
-      });
-
-      if (response.ok) {
-        const data = await response.json();
-        const results = data.movies || [];
-        
-        if (showSuggestions) {
-          // Limit suggestions to 8 items for dropdown
-          const suggestions = results.slice(0, 8);
-          setSuggestions(suggestions);
-          setShowSuggestionsList(suggestions.length > 0);
-        }
-        
-        if (onResults) onResults(results);
-        if (onSearch) onSearch(searchQuery, results);
+  const debouncedSearch = useCallback(
+    async searchQuery => {
+      if (!searchQuery.trim()) {
+        setSuggestions([]);
+        setShowSuggestionsList(false);
+        if (onResults) onResults([]);
+        return;
       }
-    } catch (error) {
-      console.error('Search error:', error);
-      setSuggestions([]);
-      setShowSuggestionsList(false);
-    } finally {
-      setIsLoading(false);
-    }
-  }, [onSearch, onResults, showSuggestions]);
+
+      setIsLoading(true);
+
+      try {
+        const response = await fetch('/api/multi-search', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            query: searchQuery.trim(),
+          }),
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          const results = data.movies || [];
+
+          if (showSuggestions) {
+            // Limit suggestions to 8 items for dropdown
+            const suggestions = results.slice(0, 8);
+            setSuggestions(suggestions);
+            setShowSuggestionsList(suggestions.length > 0);
+          }
+
+          if (onResults) onResults(results);
+          if (onSearch) onSearch(searchQuery, results);
+        }
+      } catch (error) {
+        console.error('Search error:', error);
+        setSuggestions([]);
+        setShowSuggestionsList(false);
+      } finally {
+        setIsLoading(false);
+      }
+    },
+    [onSearch, onResults, showSuggestions]
+  );
 
   // Handle input change with debouncing
-  const handleInputChange = useCallback((e) => {
-    const value = e.target.value;
-    setQuery(value);
+  const handleInputChange = useCallback(
+    e => {
+      const value = e.target.value;
+      setQuery(value);
 
-    // Clear existing timeout
-    if (searchTimeout.current) {
-      clearTimeout(searchTimeout.current);
-    }
+      // Clear existing timeout
+      if (searchTimeout.current) {
+        clearTimeout(searchTimeout.current);
+      }
 
-    // Set new timeout for search
-    searchTimeout.current = setTimeout(() => {
-      debouncedSearch(value);
-    }, 300); // 300ms debounce
-  }, [debouncedSearch]);
+      // Set new timeout for search
+      searchTimeout.current = setTimeout(() => {
+        debouncedSearch(value);
+      }, 300); // 300ms debounce
+    },
+    [debouncedSearch]
+  );
 
   // Handle suggestion click
-  const handleSuggestionClick = useCallback((movie) => {
-    setQuery(`${movie.title} (${movie.year})`);
-    setShowSuggestionsList(false);
-    
-    if (onSearch) onSearch(movie.title, [movie]);
-    if (onResults) onResults([movie]);
-  }, [onSearch, onResults]);
+  const handleSuggestionClick = useCallback(
+    movie => {
+      setQuery(`${movie.title} (${movie.year})`);
+      setShowSuggestionsList(false);
+
+      if (onSearch) onSearch(movie.title, [movie]);
+      if (onResults) onResults([movie]);
+    },
+    [onSearch, onResults]
+  );
 
   // Handle clear button
   const handleClear = useCallback(() => {
@@ -94,7 +103,7 @@ export default function SearchBar({
   }, [onResults]);
 
   // Handle key navigation
-  const handleKeyDown = useCallback((e) => {
+  const handleKeyDown = useCallback(e => {
     if (e.key === 'Escape') {
       setShowSuggestionsList(false);
       if (inputRef.current) inputRef.current.blur();
@@ -103,7 +112,7 @@ export default function SearchBar({
 
   // Close suggestions when clicking outside
   useEffect(() => {
-    const handleClickOutside = (event) => {
+    const handleClickOutside = event => {
       if (inputRef.current && !inputRef.current.contains(event.target)) {
         setShowSuggestionsList(false);
       }
@@ -142,11 +151,7 @@ export default function SearchBar({
           spellCheck="false"
         />
         {query && (
-          <button
-            onClick={handleClear}
-            style={styles.clearButton}
-            type="button"
-          >
+          <button onClick={handleClear} style={styles.clearButton} type="button">
             <X size={16} />
           </button>
         )}
@@ -172,18 +177,14 @@ export default function SearchBar({
                     src={movie.poster_url}
                     alt={movie.title}
                     style={styles.suggestionPoster}
-                    onError={(e) => {
+                    onError={e => {
                       e.target.src = '/images/placeholder-poster.jpg';
                     }}
                   />
                 )}
                 <div style={styles.suggestionText}>
-                  <div style={styles.suggestionTitle}>
-                    {movie.title}
-                  </div>
-                  <div style={styles.suggestionYear}>
-                    {movie.year}
-                  </div>
+                  <div style={styles.suggestionTitle}>{movie.title}</div>
+                  <div style={styles.suggestionYear}>{movie.year}</div>
                 </div>
               </div>
             </div>

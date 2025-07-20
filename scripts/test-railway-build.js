@@ -2,7 +2,7 @@
 
 /**
  * Test Railway Build Compatibility
- * 
+ *
  * Simulates Railway's build environment to catch issues before deployment.
  * Run this before each push to Railway.
  */
@@ -30,10 +30,10 @@ try {
 // 2. Check environment variables
 const requiredEnvVars = [
   'ANTHROPIC_API_KEY',
-  'NEXT_PUBLIC_TMDB_API_KEY', 
+  'NEXT_PUBLIC_TMDB_API_KEY',
   'NEXT_PUBLIC_SUPABASE_URL',
   'NEXT_PUBLIC_SUPABASE_ANON_KEY',
-  'SUPABASE_SERVICE_ROLE_KEY'
+  'SUPABASE_SERVICE_ROLE_KEY',
 ];
 
 console.log('\n📋 Checking environment variables...');
@@ -51,11 +51,10 @@ try {
   // Set Railway-like environment
   process.env.NODE_ENV = 'production';
   process.env.NODE_OPTIONS = '--max-old-space-size=4096';
-  
+
   // Test build (similar to Railway)
   execSync('npm run build', { stdio: 'inherit' });
   console.log('✅ Build successful');
-  
 } catch (error) {
   console.error('❌ Build failed - this will fail on Railway too');
   console.error('Fix build errors before deploying');

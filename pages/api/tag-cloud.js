@@ -1,7 +1,7 @@
 // pages/api/tag-cloud.js
 /**
  * Unified Tag Cloud API
- * 
+ *
  * Returns movie lists for tag clouds across the app.
  * Can filter by content_type or return all lists.
  * Replaces tag-cloud-lists.js, tag-cloud-declarative.js, and tag-cloud-educational.js
@@ -38,19 +38,19 @@ export default async function handler(req, res) {
 
     if (error) {
       console.error('Error fetching lists for tag cloud:', error);
-      return res.status(500).json({ 
+      return res.status(500).json({
         error: 'Failed to fetch lists',
-        details: error.message 
+        details: error.message,
       });
     }
 
     // Cache tag cloud data for 1 hour - lists don't change often
     res.setHeader('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=7200');
-    
+
     // Return lists in format expected by tag cloud
     const response = {
       lists: lists || [],
-      count: lists?.length || 0
+      count: lists?.length || 0,
     };
 
     // Include content_type in response if filtered
@@ -59,12 +59,11 @@ export default async function handler(req, res) {
     }
 
     res.status(200).json(response);
-
   } catch (error) {
     console.error('Error in tag-cloud API:', error);
-    res.status(500).json({ 
+    res.status(500).json({
       error: 'Failed to fetch tag cloud lists',
-      details: error.message
+      details: error.message,
     });
   }
 }

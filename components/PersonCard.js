@@ -1,18 +1,18 @@
 /**
  * PersonCard Component
- * 
+ *
  * Self-contained person card with intelligent data fetching and caching.
  * Handles its own biography data, profile enhancement, and favorites management.
  * Provides consistent functionality across all pages.
- * 
+ *
  * @component
  * @example
- * <PersonCard 
- *   name="Orson Welles" 
- *   birthYear={1915} 
+ * <PersonCard
+ *   name="Orson Welles"
+ *   birthYear={1915}
  *   deathYear={1985}
- *   initialBiography="Legendary filmmaker and actor" 
- *   initialProfile="/images/orson-welles.jpg" 
+ *   initialBiography="Legendary filmmaker and actor"
+ *   initialProfile="/images/orson-welles.jpg"
  * />
  */
 import { Heart, Bookmark } from 'lucide-react';
@@ -22,31 +22,34 @@ import { FavoritesManager } from './FavoritesManager';
 
 /**
  * PersonCard - Self-contained interactive person card component
- * 
+ *
  * @param {Object} props
  * @param {string} props.name - Person name (required)
  * @param {number} props.birthYear - Birth year (optional)
- * @param {number} props.deathYear - Death year (optional) 
+ * @param {number} props.deathYear - Death year (optional)
  * @param {string} props.initialBiography - Initial biography/description (optional)
  * @param {string} props.initialProfile - Initial profile image URL (optional)
  * @param {string} props.knownForDepartment - Known for department like "Directing" (optional)
  * @param {boolean} props.isDetailPage - Whether this is on a detail page (optional)
  * @param {number} props.tmdbId - TMDB ID for navigation (optional)
  */
-function PersonCard({ 
-  name, 
-  birthYear, 
+function PersonCard({
+  name,
+  birthYear,
   deathYear,
-  initialBiography, 
-  initialProfile, 
+  initialBiography,
+  initialProfile,
   knownForDepartment,
   isDetailPage = false,
-  tmdbId 
+  tmdbId,
 }) {
   const [hearted, setHearted] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
   const [biography, setBiography] = useState(initialBiography || '');
-  const [profile, setProfile] = useState(initialProfile || 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDIwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjkwIiByPSIzNSIgZmlsbD0iI0Q5RDE5OSIvPgo8ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMjEwIiByeD0iNzAiIHJ5PSI0NSIgZmlsbD0iI0Q5RDE5OSIvPgo8L3N2Zz4K');
+  const [profile, setProfile] = useState(
+    initialProfile ||
+      'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDIwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjkwIiByPSIzNSIgZmlsbD0iI0Q5RDE5OSIvPgo8ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMjEwIiByeD0iNzAiIHJ5PSI0NSIgZmlsbD0iI0Q5RDE5OSIvPgo8L3N2Zz4K'
+  );
   const [personTmdbId, setPersonTmdbId] = useState(tmdbId);
   const [isEnhancing, setIsEnhancing] = useState(false);
   const router = useRouter();
@@ -72,7 +75,7 @@ function PersonCard({
 
   // Generate person ID from name and birth year
   const personId = `${name.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${birthYear || 'unknown'}`;
-  
+
   // Person data object for FavoritesManager
   const personData = { name, birthYear, deathYear, biography, profile, id: personId };
 
@@ -80,26 +83,26 @@ function PersonCard({
   useEffect(() => {
     const enhancePersonData = async () => {
       // Skip if we have both biography and profile, or if already enhancing
-      if ((biography && biography !== '') && profile !== '/images/placeholder-profile.jpg') {
+      if (biography && biography !== '' && profile !== '/images/placeholder-profile.jpg') {
         return;
       }
-      
+
       if (isEnhancing) return;
       setIsEnhancing(true);
-      
+
       try {
         let newBiography = biography;
         let newProfile = profile;
-        
+
         // Fetch enhanced data if biography is missing
         if (!biography || biography === '') {
           // Fetching enhanced biography
           const response = await fetch('/api/enhance-person-data', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ name, birthYear, needsBiography: true, needsProfile: false })
+            body: JSON.stringify({ name, birthYear, needsBiography: true, needsProfile: false }),
           });
-          
+
           if (response.ok) {
             const data = await response.json();
             if (data.biography) {
@@ -108,16 +111,16 @@ function PersonCard({
             }
           }
         }
-        
+
         // Fetch TMDB profile if using placeholder
         if (profile.startsWith('data:image/svg+xml')) {
           // Fetching TMDB profile
           const response = await fetch('/api/tmdb-person-profile', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ name, birthYear })
+            body: JSON.stringify({ name, birthYear }),
           });
-          
+
           if (response.ok) {
             const data = await response.json();
             if (data.profile) {
@@ -126,21 +129,24 @@ function PersonCard({
             }
           }
         }
-        
+
         // Cache the enhanced data back to database if we got new data
-        if ((newBiography !== biography && newBiography) || (newProfile !== profile && !newProfile.startsWith('data:image/svg+xml'))) {
+        if (
+          (newBiography !== biography && newBiography) ||
+          (newProfile !== profile && !newProfile.startsWith('data:image/svg+xml'))
+        ) {
           try {
             await fetch('/api/cache-person-data', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ 
-                name, 
+              body: JSON.stringify({
+                name,
                 birthYear,
                 deathYear,
-                biography: newBiography, 
+                biography: newBiography,
                 profile: newProfile,
-                knownForDepartment
-              })
+                knownForDepartment,
+              }),
             });
             // Cached enhanced data
           } catch (cacheError) {
@@ -148,14 +154,13 @@ function PersonCard({
             // Don't fail the whole operation if caching fails
           }
         }
-        
       } catch (error) {
         console.error('Error enhancing person data:', error);
       } finally {
         setIsEnhancing(false);
       }
     };
-    
+
     enhancePersonData();
   }, [name, birthYear, biography, profile, isEnhancing]);
 
@@ -176,14 +181,14 @@ function PersonCard({
     return () => window.removeEventListener('peopleUpdated', handlePeopleUpdate);
   }, [personId]);
 
-  const handleCardClick = (e) => {
+  const handleCardClick = e => {
     // Prevent default behavior and stop propagation
     e.preventDefault();
     e.stopPropagation();
-    
+
     // Don't navigate if clicking on action buttons or if this is a detail page
     if (e.target.closest('button') || isDetailPage) return;
-    
+
     // Navigate to person detail page using TMDB ID
     if (personTmdbId) {
       router.push(`/person/${personTmdbId}`);
@@ -207,11 +212,11 @@ function PersonCard({
       style={styles.card}
       role="article"
       onClick={handleCardClick}
-      onMouseEnter={(e) => {
+      onMouseEnter={e => {
         e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 0, 0, 0.30)';
         e.currentTarget.style.transform = 'translateY(-2px)';
       }}
-      onMouseLeave={(e) => {
+      onMouseLeave={e => {
         e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.20)';
         e.currentTarget.style.transform = 'translateY(0)';
       }}
@@ -223,47 +228,43 @@ function PersonCard({
           <div style={styles.years}>{formatYears()}</div>
         </div>
         <div style={styles.biography}>{biography}</div>
-        
+
         {/* Bottom row: department left, icons right */}
         <div style={styles.bottomRow}>
           <div style={styles.departmentInfo}>
-            {knownForDepartment && (
-              <span style={styles.departmentText}>
-                {knownForDepartment}
-              </span>
-            )}
+            {knownForDepartment && <span style={styles.departmentText}>{knownForDepartment}</span>}
           </div>
           <div style={styles.iconRow}>
-          <button
-            onClick={() => {
-              const newState = FavoritesManager.togglePersonHeart(personData);
-              setHearted(newState);
-            }}
-            style={styles.iconButton}
-            aria-label={hearted ? 'Remove from favorites' : 'Add to favorites'}
-            role="button"
-          >
-            <Heart
-              size={18}
-              color={hearted ? '#ef4444' : '#374151'}
-              fill={hearted ? '#ef4444' : 'none'}
-            />
-          </button>
-          <button
-            onClick={() => {
-              const newState = FavoritesManager.togglePersonBookmark(personData);
-              setBookmarked(newState);
-            }}
-            style={styles.iconButton}
-            aria-label={bookmarked ? 'Remove bookmark' : 'Bookmark person'}
-            role="button"
-          >
-            <Bookmark
-              size={18}
-              color={bookmarked ? '#6b7280' : '#374151'}
-              fill={bookmarked ? '#6b7280' : 'none'}
-            />
-          </button>
+            <button
+              onClick={() => {
+                const newState = FavoritesManager.togglePersonHeart(personData);
+                setHearted(newState);
+              }}
+              style={styles.iconButton}
+              aria-label={hearted ? 'Remove from favorites' : 'Add to favorites'}
+              role="button"
+            >
+              <Heart
+                size={18}
+                color={hearted ? '#ef4444' : '#374151'}
+                fill={hearted ? '#ef4444' : 'none'}
+              />
+            </button>
+            <button
+              onClick={() => {
+                const newState = FavoritesManager.togglePersonBookmark(personData);
+                setBookmarked(newState);
+              }}
+              style={styles.iconButton}
+              aria-label={bookmarked ? 'Remove bookmark' : 'Bookmark person'}
+              role="button"
+            >
+              <Bookmark
+                size={18}
+                color={bookmarked ? '#6b7280' : '#374151'}
+                fill={bookmarked ? '#6b7280' : 'none'}
+              />
+            </button>
           </div>
         </div>
       </div>
@@ -287,7 +288,8 @@ const styles = {
     transition: 'box-shadow 0.2s ease, transform 0.2s ease',
     cursor: 'pointer',
     marginBottom: '8px',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   profile: {
     width: '100px',
@@ -374,14 +376,16 @@ const styles = {
  * Only re-render if person data actually changes
  */
 const arePropsEqual = (prevProps, nextProps) => {
-  return prevProps.name === nextProps.name &&
-         prevProps.birthYear === nextProps.birthYear &&
-         prevProps.deathYear === nextProps.deathYear &&
-         prevProps.initialBiography === nextProps.initialBiography &&
-         prevProps.initialProfile === nextProps.initialProfile &&
-         prevProps.knownForDepartment === nextProps.knownForDepartment &&
-         prevProps.tmdbId === nextProps.tmdbId &&
-         prevProps.isDetailPage === nextProps.isDetailPage;
+  return (
+    prevProps.name === nextProps.name &&
+    prevProps.birthYear === nextProps.birthYear &&
+    prevProps.deathYear === nextProps.deathYear &&
+    prevProps.initialBiography === nextProps.initialBiography &&
+    prevProps.initialProfile === nextProps.initialProfile &&
+    prevProps.knownForDepartment === nextProps.knownForDepartment &&
+    prevProps.tmdbId === nextProps.tmdbId &&
+    prevProps.isDetailPage === nextProps.isDetailPage
+  );
 };
 
 // Export memoized component

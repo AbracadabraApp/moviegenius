@@ -10,33 +10,36 @@ const supabase = createClient(
 export default async function handler(req, res) {
   try {
     console.log('🔍 Counting movie analyses...');
-    
+
     // Count total movies
     const { count: totalMovies, error: totalError } = await supabase
       .from('movies')
       .select('*', { count: 'exact', head: true });
-      
+
     if (totalError) {
       console.error('❌ Error counting total movies:', totalError);
       return res.status(500).json({ error: 'Failed to count total movies', details: totalError });
     }
-    
+
     // Count movie analyses
     const { count: totalAnalyses, error: analysesError } = await supabase
       .from('movie_analyses')
       .select('*', { count: 'exact', head: true });
-      
+
     if (analysesError) {
       console.error('❌ Error counting movie analyses:', analysesError);
-      return res.status(500).json({ error: 'Failed to count movie analyses', details: analysesError });
+      return res
+        .status(500)
+        .json({ error: 'Failed to count movie analyses', details: analysesError });
     }
-    
+
     // Count unique movies with analysis using aggregation
-    const { data: uniqueMoviesData, error: uniqueError } = await supabase
-      .rpc('count_unique_movies_with_analysis');
-      
+    const { data: uniqueMoviesData, error: uniqueError } = await supabase.rpc(
+      'count_unique_movies_with_analysis'
+    );
+
     let moviesWithAnalysis;
-    
+
     if (uniqueError || !uniqueMoviesData) {
       console.log('RPC failed, trying alternative method...');
       // Fallback: Use distinct count if RPC doesn't exist
@@ -44,12 +47,14 @@ export default async function handler(req, res) {
         .from('movie_analyses')
         .select('movie_id', { count: 'exact', head: true })
         .eq('analysis_type', 'page_analysis');
-        
+
       if (distinctError) {
         console.error('❌ Error counting distinct movies:', distinctError);
-        return res.status(500).json({ error: 'Failed to count distinct movies', details: distinctError });
+        return res
+          .status(500)
+          .json({ error: 'Failed to count distinct movies', details: distinctError });
       }
-      
+
       // This gives us total analysis records, not unique movies
       // For now, estimate based on average analyses per movie
       moviesWithAnalysis = Math.round(totalAnalyses / 6.88); // Using the average from before
@@ -59,7 +64,7 @@ export default async function handler(req, res) {
     }
     const moviesWithoutAnalysis = totalMovies - moviesWithAnalysis;
     const analysisPercentage = Math.round((moviesWithAnalysis / totalMovies) * 100);
-    
+
     // Get some sample analysis data for insights
     const { data: sampleAnalyses, error: sampleError } = await supabase
       .from('movie_analyses')
@@ -67,7 +72,7 @@ export default async function handler(req, res) {
       .eq('analysis_type', 'page_analysis')
       .order('created_at', { ascending: false })
       .limit(5);
-    
+
     const result = {
       totalMovies,
       totalAnalyses,
@@ -77,20 +82,21 @@ export default async function handler(req, res) {
       stats: {
         averageAnalysesPerMovie: (totalAnalyses / moviesWithAnalysis || 0).toFixed(2),
         analysisTypes: ['page_analysis'], // Could expand this
-        recentAnalyses: sampleAnalyses?.length || 0
+        recentAnalyses: sampleAnalyses?.length || 0,
       },
       insights: {
-        coverageLevel: analysisPercentage > 50 ? 'High' : analysisPercentage > 25 ? 'Medium' : 'Low',
+        coverageLevel:
+          analysisPercentage > 50 ? 'High' : analysisPercentage > 25 ? 'Medium' : 'Low',
         totalPremiumContent: moviesWithAnalysis,
-        recommendation: analysisPercentage > 50 ? 
-          'Excellent analysis coverage - focus trailer efforts on analyzed movies' :
-          'Good foundation - consider expanding analysis to popular movies'
-      }
+        recommendation:
+          analysisPercentage > 50
+            ? 'Excellent analysis coverage - focus trailer efforts on analyzed movies'
+            : 'Good foundation - consider expanding analysis to popular movies',
+      },
     };
-    
+
     console.log(`📊 Movie analysis stats:`, result);
     return res.status(200).json(result);
-    
   } catch (error) {
     console.error('❌ Movie analysis count failed:', error);
     return res.status(500).json({ error: 'Analysis count failed', details: error.message });

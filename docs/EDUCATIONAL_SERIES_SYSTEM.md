@@ -2,7 +2,10 @@
 
 ## 🎓 Overview
 
-The Educational Series System is a comprehensive film education platform that delivers curated learning experiences through structured series and episodes. It combines static pre-generated content for instant loading with dynamic components for real-time data enhancement.
+The Educational Series System is a comprehensive film education platform that
+delivers curated learning experiences through structured series and episodes. It
+combines static pre-generated content for instant loading with dynamic
+components for real-time data enhancement.
 
 ## 🏗️ Architecture
 
@@ -18,7 +21,7 @@ The Educational Series System is a comprehensive film education platform that de
    - Film school-level analysis and movie examples
    - Instant loading without API delays
 
-3. **Dynamic Pages** 
+3. **Dynamic Pages**
    - Real-time MediaCard enhancements
    - Streaming availability updates
    - Interactive navigation
@@ -32,14 +35,17 @@ The Educational Series System is a comprehensive film education platform that de
 ### 🚀 Performance Features
 
 - **Instant Loading**: Episodes load immediately from pre-generated static files
-- **Progressive Enhancement**: MediaCards dynamically fetch real-time streaming/poster data
+- **Progressive Enhancement**: MediaCards dynamically fetch real-time
+  streaming/poster data
 - **CDN Ready**: Static content can be globally cached
 - **Scalable**: Generate once, serve millions of requests
 
 ### 🎯 Educational Features
 
-- **Structured Learning**: 40 series × 6 episodes = 240 comprehensive film education modules
-- **Professional Quality**: Film school-level analysis with specific movie examples
+- **Structured Learning**: 40 series × 6 episodes = 240 comprehensive film
+  education modules
+- **Professional Quality**: Film school-level analysis with specific movie
+  examples
 - **Visual Learning**: Poster grids and movie cards for visual engagement
 - **Cross-References**: "Explore Further" topics and related episode navigation
 
@@ -87,7 +93,7 @@ scripts/
 ## 🎬 Series Categories (Planned 40 Series)
 
 1. **Cinema Through Time** (1970-2025) - Film evolution by decade
-2. **International New Waves** (1950-1980) - Global cinema movements  
+2. **International New Waves** (1950-1980) - Global cinema movements
 3. **The Art of the Chase** - Action cinema evolution
 4. **Love Stories That Changed Movies** - Romantic film landmarks
 5. **When Movies Broke the Rules** - Revolutionary cinema techniques
@@ -98,6 +104,7 @@ scripts/
 10. **Animation History** - From Disney to Pixar to international
 
 ### Additional Series (11-40) Include:
+
 - Technical Innovation (Sound, Color, Digital)
 - World Cinema by Region
 - Genre Evolution (Western, Musical, Sci-Fi)
@@ -114,6 +121,7 @@ scripts/
 Each episode contains:
 
 ### Content Sections
+
 - **Opener**: Compelling hook sentence
 - **6 Paragraphs**: Structured film analysis
   1. Historical context and breakthrough films
@@ -126,6 +134,7 @@ Each episode contains:
 - **More Ideas**: 8-10 additional film recommendations
 
 ### Metadata
+
 - Series and episode information
 - Generation timestamp and version
 - TMDB IDs for dynamic enhancement
@@ -133,6 +142,7 @@ Each episode contains:
 ## 🔄 Content Generation Workflow
 
 ### 1. Manual Setup
+
 ```bash
 # Configure series metadata
 edit data/series-config.json
@@ -145,6 +155,7 @@ npm run generate-episodes-single -- --series=2 --episode=1
 ```
 
 ### 2. Automated Process
+
 1. Script reads series configuration
 2. Generates prompts for Claude AI
 3. Processes responses into structured format
@@ -152,6 +163,7 @@ npm run generate-episodes-single -- --series=2 --episode=1
 5. Episodes become instantly available
 
 ### 3. Dynamic Enhancement
+
 1. Pages load static content immediately
 2. MediaCards fetch real-time TMDB data
 3. Streaming availability updated dynamically
@@ -160,12 +172,14 @@ npm run generate-episodes-single -- --series=2 --episode=1
 ## 🧪 Quality Control
 
 ### Content Standards
+
 - Film school-level analysis depth
 - Specific movie examples in every paragraph
 - Historical accuracy and context
 - Professional writing quality
 
 ### Technical Standards
+
 - TMDB ID validation
 - JSON structure validation
 - Error handling and fallbacks
@@ -174,17 +188,19 @@ npm run generate-episodes-single -- --series=2 --episode=1
 ## 🔧 API Endpoints
 
 ### `/api/series-episode`
-**Purpose**: Load episode content (static first, fallback generation)
-**Input**: `{ seriesId, episodeId }`
-**Output**: Structured episode data
+
+**Purpose**: Load episode content (static first, fallback generation) **Input**:
+`{ seriesId, episodeId }` **Output**: Structured episode data
 
 **Flow**:
+
 1. Check for pre-generated content
 2. Load static file if exists
 3. Fallback to on-demand generation
 4. Return structured response
 
 ### Content Processing
+
 - Movie data enhancement
 - TMDB ID preservation
 - Streaming info placeholders
@@ -193,6 +209,7 @@ npm run generate-episodes-single -- --series=2 --episode=1
 ## 📱 User Experience
 
 ### Navigation Flow
+
 1. **Discovery**: `/recs` shows series previews + curated lists
 2. **Series Selection**: `/recs/series` displays all 40 series
 3. **Episode Selection**: `/recs/series/2` shows 6 episodes
@@ -200,12 +217,14 @@ npm run generate-episodes-single -- --series=2 --episode=1
 5. **Exploration**: Related episodes and topics
 
 ### Interactive Elements
+
 - **MediaCards**: Click for movie details
 - **Episode Cards**: Visual navigation with poster grids
 - **Explore Further**: Related topic suggestions
 - **Ask Integration**: Seamless transition to AI chat
 
 ### Performance
+
 - **First Paint**: Instant (static content)
 - **Interactive**: ~500ms (dynamic enhancements)
 - **Navigation**: Instant (cached content)
@@ -213,18 +232,21 @@ npm run generate-episodes-single -- --series=2 --episode=1
 ## 🎯 Educational Impact
 
 ### Learning Objectives
+
 - **Film History**: Comprehensive chronological understanding
 - **Technical Knowledge**: Cinematography, editing, sound design
 - **Cultural Context**: Social and political influences on cinema
 - **Critical Analysis**: Develop sophisticated viewing skills
 
 ### Pedagogical Approach
+
 - **Structured Progression**: Logical episode sequencing
 - **Visual Learning**: Poster grids and movie examples
 - **Active Discovery**: "Explore Further" engagement
 - **Contextual Depth**: Professional-level analysis
 
 ### Assessment Integration (Future)
+
 - **Knowledge Checks**: Episode comprehension quizzes
 - **Discussion Prompts**: Critical thinking questions
 - **Project Ideas**: Practical film analysis assignments
@@ -233,16 +255,19 @@ npm run generate-episodes-single -- --series=2 --episode=1
 ## 🚀 Scaling Strategy
 
 ### Phase 1: Core Series (Current)
+
 - 10 foundational series
 - 60 episodes total
 - Proof of concept validation
 
-### Phase 2: Full Curriculum 
+### Phase 2: Full Curriculum
+
 - All 40 series
 - 240 episodes total
 - Complete film education platform
 
 ### Phase 3: Enhanced Features
+
 - User progress tracking
 - Personalized recommendations
 - Community features
@@ -251,18 +276,21 @@ npm run generate-episodes-single -- --series=2 --episode=1
 ## 🔍 Analytics & Insights
 
 ### Content Performance
+
 - Episode completion rates
 - Popular series tracking
 - Movie click-through rates
 - Search query analysis
 
 ### User Engagement
+
 - Navigation patterns
 - Time spent per episode
 - Return visit frequency
 - Cross-series exploration
 
 ### Educational Effectiveness
+
 - Knowledge retention assessment
 - Learning objective completion
 - User satisfaction surveys

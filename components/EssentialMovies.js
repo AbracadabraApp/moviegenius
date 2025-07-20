@@ -19,122 +19,122 @@ export default function EssentialMovies({ theme }) {
       { title: 'Double Indemnity', year: 1944, tmdb_id: 996 },
       { title: 'The Big Sleep', year: 1946, tmdb_id: 910 },
       { title: 'Out of the Past', year: 1947, tmdb_id: 678 },
-      { title: 'Sunset Boulevard', year: 1950, tmdb_id: 599 }
+      { title: 'Sunset Boulevard', year: 1950, tmdb_id: 599 },
     ],
     'horror-suspense': [
       { title: 'Psycho', year: 1960, tmdb_id: 539 },
       { title: 'The Exorcist', year: 1973, tmdb_id: 9552 },
       { title: 'Halloween', year: 1978, tmdb_id: 530 },
       { title: 'Night of the Living Dead', year: 1968, tmdb_id: 10625 },
-      { title: 'Rosemary\'s Baby', year: 1968, tmdb_id: 10110 }
+      { title: "Rosemary's Baby", year: 1968, tmdb_id: 10110 },
     ],
     'comedy-through-time': [
       { title: 'Everything Everywhere All at Once', year: 2022, tmdb_id: 545611 },
       { title: 'Modern Times', year: 1936, tmdb_id: 3082 },
       { title: 'Some Like It Hot', year: 1959, tmdb_id: 239 },
       { title: 'Dr. Strangelove', year: 1964, tmdb_id: 935 },
-      { title: 'Annie Hall', year: 1977, tmdb_id: 703 }
+      { title: 'Annie Hall', year: 1977, tmdb_id: 703 },
     ],
     'sci-fi-evolution': [
       { title: 'Metropolis', year: 1927, tmdb_id: 19 },
       { title: '2001: A Space Odyssey', year: 1968, tmdb_id: 62 },
       { title: 'Blade Runner', year: 1982, tmdb_id: 78 },
       { title: 'The Matrix', year: 1999, tmdb_id: 603 },
-      { title: 'Arrival', year: 2016, tmdb_id: 329865 }
+      { title: 'Arrival', year: 2016, tmdb_id: 329865 },
     ],
     'action-adventure': [
       { title: 'Seven Samurai', year: 1954, tmdb_id: 346 },
       { title: 'Raiders of the Lost Ark', year: 1981, tmdb_id: 85 },
       { title: 'Terminator 2: Judgment Day', year: 1991, tmdb_id: 280 },
       { title: 'The Adventures of Robin Hood', year: 1938, tmdb_id: 10907 },
-      { title: 'Mad Max: Fury Road', year: 2015, tmdb_id: 76341 }
+      { title: 'Mad Max: Fury Road', year: 2015, tmdb_id: 76341 },
     ],
     'romance-through-decades': [
       { title: 'Gone with the Wind', year: 1939, tmdb_id: 770 },
       { title: 'Casablanca', year: 1943, tmdb_id: 289 },
       { title: 'The Princess Bride', year: 1987, tmdb_id: 2493 },
       { title: 'When Harry Met Sally', year: 1989, tmdb_id: 639 },
-      { title: 'Eternal Sunshine of the Spotless Mind', year: 2004, tmdb_id: 38 }
+      { title: 'Eternal Sunshine of the Spotless Mind', year: 2004, tmdb_id: 38 },
     ],
     'drama-human-condition': [
       { title: 'Citizen Kane', year: 1941, tmdb_id: 15 },
       { title: 'The Godfather', year: 1972, tmdb_id: 238 },
       { title: '12 Angry Men', year: 1957, tmdb_id: 389 },
       { title: 'On the Waterfront', year: 1954, tmdb_id: 654 },
-      { title: 'Schindler\'s List', year: 1993, tmdb_id: 424 }
+      { title: "Schindler's List", year: 1993, tmdb_id: 424 },
     ],
     'western-frontier': [
       { title: 'The Searchers', year: 1956, tmdb_id: 3114 },
       { title: 'High Noon', year: 1952, tmdb_id: 288 },
       { title: 'The Man Who Shot Liberty Valance', year: 1962, tmdb_id: 11697 },
       { title: 'Unforgiven', year: 1992, tmdb_id: 33 },
-      { title: 'Butch Cassidy and the Sundance Kid', year: 1969, tmdb_id: 642 }
+      { title: 'Butch Cassidy and the Sundance Kid', year: 1969, tmdb_id: 642 },
     ],
     'animation-art': [
       { title: 'Snow White and the Seven Dwarfs', year: 1937, tmdb_id: 408 },
       { title: 'Akira', year: 1988, tmdb_id: 149 },
       { title: 'Beauty and the Beast', year: 1991, tmdb_id: 10020 },
       { title: 'Toy Story', year: 1995, tmdb_id: 862 },
-      { title: 'Spirited Away', year: 2001, tmdb_id: 129 }
+      { title: 'Spirited Away', year: 2001, tmdb_id: 129 },
     ],
     'women-directors': [
       { title: 'Lady Bird', year: 2017, tmdb_id: 391713 },
       { title: 'The Piano', year: 1993, tmdb_id: 10494 },
       { title: 'Lost in Translation', year: 2003, tmdb_id: 153 },
       { title: 'The Hurt Locker', year: 2008, tmdb_id: 12162 },
-      { title: 'Nomadland', year: 2020, tmdb_id: 581734 }
+      { title: 'Nomadland', year: 2020, tmdb_id: 581734 },
     ],
     'world-cinema': [
       { title: '8½', year: 1963, tmdb_id: 139 },
       { title: 'The Rules of the Game', year: 1939, tmdb_id: 36386 },
       { title: 'Tokyo Story', year: 1953, tmdb_id: 18148 },
       { title: 'Bicycle Thieves', year: 1948, tmdb_id: 11224 },
-      { title: 'Persona', year: 1966, tmdb_id: 3082 }
+      { title: 'Persona', year: 1966, tmdb_id: 3082 },
     ],
     'acclaimed-directors': [
       { title: 'Pulp Fiction', year: 1994, tmdb_id: 680 },
       { title: 'The Dark Knight', year: 2008, tmdb_id: 155 },
       { title: 'Goodfellas', year: 1990, tmdb_id: 769 },
       { title: 'Taxi Driver', year: 1976, tmdb_id: 103 },
-      { title: 'There Will Be Blood', year: 2007, tmdb_id: 7345 }
+      { title: 'There Will Be Blood', year: 2007, tmdb_id: 7345 },
     ],
     'avant-garde-film': [
       { title: 'Breathless', year: 1960, tmdb_id: 820 },
       { title: 'The 400 Blows', year: 1959, tmdb_id: 1094 },
-      { title: 'L\'Avventura', year: 1960, tmdb_id: 9926 },
+      { title: "L'Avventura", year: 1960, tmdb_id: 9926 },
       { title: 'Persona', year: 1966, tmdb_id: 3082 },
-      { title: 'Mulholland Drive', year: 2001, tmdb_id: 1018 }
+      { title: 'Mulholland Drive', year: 2001, tmdb_id: 1018 },
     ],
     'magic-of-moviemaking': [
       { title: 'Citizen Kane', year: 1941, tmdb_id: 15 },
       { title: 'Vertigo', year: 1958, tmdb_id: 876 },
       { title: '2001: A Space Odyssey', year: 1968, tmdb_id: 62 },
       { title: 'Apocalypse Now', year: 1979, tmdb_id: 28 },
-      { title: 'Blade Runner', year: 1982, tmdb_id: 78 }
+      { title: 'Blade Runner', year: 1982, tmdb_id: 78 },
     ],
     'cinema-through-decades': [
-      { title: 'Singin\' in the Rain', year: 1952, tmdb_id: 872 },
+      { title: "Singin' in the Rain", year: 1952, tmdb_id: 872 },
       { title: 'The Godfather', year: 1972, tmdb_id: 238 },
       { title: 'Raiders of the Lost Ark', year: 1981, tmdb_id: 85 },
       { title: 'Pulp Fiction', year: 1994, tmdb_id: 680 },
-      { title: 'Parasite', year: 2019, tmdb_id: 496243 }
+      { title: 'Parasite', year: 2019, tmdb_id: 496243 },
     ],
     'cinema-cultural-impact': [
       { title: 'Birth of a Nation', year: 1915, tmdb_id: 1647 },
       { title: 'Battleship Potemkin', year: 1925, tmdb_id: 958 },
       { title: 'Gone with the Wind', year: 1939, tmdb_id: 770 },
       { title: 'Star Wars', year: 1977, tmdb_id: 11 },
-      { title: 'Black Panther', year: 2018, tmdb_id: 284054 }
-    ]
+      { title: 'Black Panther', year: 2018, tmdb_id: 284054 },
+    ],
   };
 
   const currentMovies = useMemo(() => essentialMovies[theme] || [], [theme]);
-  
+
   // Use centralized episode data instead of JSON file
   const themeEpisodes = useMemo(() => episodes.filter(ep => ep.theme === theme), [theme]);
-  
+
   // Get theme title from centralized system
-  const getThemeTitle = (themeSlug) => {
+  const getThemeTitle = themeSlug => {
     const themeTitles = {
       'film-noir': 'Film Noir',
       'horror-suspense': 'Horror & Suspense',
@@ -145,7 +145,7 @@ export default function EssentialMovies({ theme }) {
       'avant-garde-film': 'Movements in Film',
       'magic-of-moviemaking': 'The Magic of Moviemaking',
       'cinema-through-decades': 'Cinema Through the Decades',
-      'cinema-cultural-impact': 'Hollywood Transformed'
+      'cinema-cultural-impact': 'Hollywood Transformed',
     };
     return themeTitles[themeSlug] || 'Theme';
   };
@@ -156,25 +156,144 @@ export default function EssentialMovies({ theme }) {
   // Progress status descriptions
   const getProgressStatus = () => {
     const statusMap = {
-      'film-noir': ['Shadow Walker', 'Night Owl', 'Street Sleuth', 'Dark Detective', 'Noir Scholar', 'Master of Shadows'],
-      'horror-suspense': ['Rookie', 'Brave Soul', 'Nightmare Navigator', 'Fear Conqueror', 'Horror Expert', 'Master of Terror'],
-      'comedy-through-time': ['Chuckle Rookie', 'Gag Enthusiast', 'Laugh Tracker', 'Comedy Buff', 'Humor Expert', 'Master of Laughter'],
-      'sci-fi-evolution': ['Space Cadet', 'Tech Explorer', 'Future Seeker', 'Sci-Fi Scholar', 'Galaxy Expert', 'Master of Tomorrow'],
-      'action-adventure': ['Rookie Hero', 'Thrill Seeker', 'Adventure Scout', 'Action Expert', 'Epic Explorer', 'Master of Adventure'],
-      'romance-through-decades': ['Romantic Rookie', 'Heart Warmer', 'Love Story Fan', 'Romance Expert', 'Cupid Scholar', 'Master of Love'],
-      'drama-human-condition': ['Drama Novice', 'Life Observer', 'Story Seeker', 'Human Expert', 'Drama Scholar', 'Master of Stories'],
-      'western-frontier': ['Greenhorn', 'Trail Rider', 'Frontier Scout', 'Western Expert', 'Cowboy Scholar', 'Master of the West'],
-      'animation-art': ['Animation Rookie', 'Cartoon Fan', 'Art Enthusiast', 'Animation Expert', 'Studio Scholar', 'Master of Animation'],
-      'world-cinema': ['Global Rookie', 'Culture Seeker', 'World Explorer', 'Cinema Expert', 'Cultural Scholar', 'Master of World Cinema'],
-      'women-directors': ['Film Rookie', 'Vision Seeker', 'Story Explorer', 'Cinema Expert', 'Auteur Scholar', 'Master of Vision'],
-      'acclaimed-directors': ['Film Novice', 'Vision Seeker', 'Auteur Explorer', 'Director Expert', 'Cinema Scholar', 'Master of Vision'],
-      'avant-garde-film': ['Film Rookie', 'Art Seeker', 'Movement Explorer', 'Avant-garde Expert', 'Revolution Scholar', 'Master of Innovation'],
-      'magic-of-moviemaking': ['Tech Rookie', 'Craft Seeker', 'Magic Explorer', 'Movie Expert', 'Cinema Scholar', 'Master of Magic'],
-      'cinema-through-decades': ['Era Rookie', 'Time Traveler', 'Decade Explorer', 'Cinema Expert', 'History Scholar', 'Master of Eras'],
-      'cinema-cultural-impact': ['Culture Rookie', 'Change Seeker', 'Impact Explorer', 'Cinema Expert', 'History Scholar', 'Master of Impact']
+      'film-noir': [
+        'Shadow Walker',
+        'Night Owl',
+        'Street Sleuth',
+        'Dark Detective',
+        'Noir Scholar',
+        'Master of Shadows',
+      ],
+      'horror-suspense': [
+        'Rookie',
+        'Brave Soul',
+        'Nightmare Navigator',
+        'Fear Conqueror',
+        'Horror Expert',
+        'Master of Terror',
+      ],
+      'comedy-through-time': [
+        'Chuckle Rookie',
+        'Gag Enthusiast',
+        'Laugh Tracker',
+        'Comedy Buff',
+        'Humor Expert',
+        'Master of Laughter',
+      ],
+      'sci-fi-evolution': [
+        'Space Cadet',
+        'Tech Explorer',
+        'Future Seeker',
+        'Sci-Fi Scholar',
+        'Galaxy Expert',
+        'Master of Tomorrow',
+      ],
+      'action-adventure': [
+        'Rookie Hero',
+        'Thrill Seeker',
+        'Adventure Scout',
+        'Action Expert',
+        'Epic Explorer',
+        'Master of Adventure',
+      ],
+      'romance-through-decades': [
+        'Romantic Rookie',
+        'Heart Warmer',
+        'Love Story Fan',
+        'Romance Expert',
+        'Cupid Scholar',
+        'Master of Love',
+      ],
+      'drama-human-condition': [
+        'Drama Novice',
+        'Life Observer',
+        'Story Seeker',
+        'Human Expert',
+        'Drama Scholar',
+        'Master of Stories',
+      ],
+      'western-frontier': [
+        'Greenhorn',
+        'Trail Rider',
+        'Frontier Scout',
+        'Western Expert',
+        'Cowboy Scholar',
+        'Master of the West',
+      ],
+      'animation-art': [
+        'Animation Rookie',
+        'Cartoon Fan',
+        'Art Enthusiast',
+        'Animation Expert',
+        'Studio Scholar',
+        'Master of Animation',
+      ],
+      'world-cinema': [
+        'Global Rookie',
+        'Culture Seeker',
+        'World Explorer',
+        'Cinema Expert',
+        'Cultural Scholar',
+        'Master of World Cinema',
+      ],
+      'women-directors': [
+        'Film Rookie',
+        'Vision Seeker',
+        'Story Explorer',
+        'Cinema Expert',
+        'Auteur Scholar',
+        'Master of Vision',
+      ],
+      'acclaimed-directors': [
+        'Film Novice',
+        'Vision Seeker',
+        'Auteur Explorer',
+        'Director Expert',
+        'Cinema Scholar',
+        'Master of Vision',
+      ],
+      'avant-garde-film': [
+        'Film Rookie',
+        'Art Seeker',
+        'Movement Explorer',
+        'Avant-garde Expert',
+        'Revolution Scholar',
+        'Master of Innovation',
+      ],
+      'magic-of-moviemaking': [
+        'Tech Rookie',
+        'Craft Seeker',
+        'Magic Explorer',
+        'Movie Expert',
+        'Cinema Scholar',
+        'Master of Magic',
+      ],
+      'cinema-through-decades': [
+        'Era Rookie',
+        'Time Traveler',
+        'Decade Explorer',
+        'Cinema Expert',
+        'History Scholar',
+        'Master of Eras',
+      ],
+      'cinema-cultural-impact': [
+        'Culture Rookie',
+        'Change Seeker',
+        'Impact Explorer',
+        'Cinema Expert',
+        'History Scholar',
+        'Master of Impact',
+      ],
     };
-    
-    const statuses = statusMap[theme] || ['Rookie', 'Explorer', 'Enthusiast', 'Expert', 'Scholar', 'Master'];
+
+    const statuses = statusMap[theme] || [
+      'Rookie',
+      'Explorer',
+      'Enthusiast',
+      'Expert',
+      'Scholar',
+      'Master',
+    ];
     return statuses[Math.min(seenCount, statuses.length - 1)];
   };
 
@@ -183,7 +302,7 @@ export default function EssentialMovies({ theme }) {
     const updateStates = () => {
       const hearted = new Set();
       const bookmarked = new Set();
-      
+
       currentMovies.forEach(movie => {
         const movieId = `${movie.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${movie.year}`;
         if (FavoritesManager.isMovieHearted(movieId)) {
@@ -193,7 +312,7 @@ export default function EssentialMovies({ theme }) {
           bookmarked.add(movie.tmdb_id);
         }
       });
-      
+
       setHeartedMovies(hearted);
       setBookmarkedMovies(bookmarked);
     };
@@ -202,13 +321,13 @@ export default function EssentialMovies({ theme }) {
   }, [theme]); // Removed currentMovies dependency to prevent infinite loop
 
   // Toggle heart status (seen)
-  const toggleHeart = (tmdbId) => {
+  const toggleHeart = tmdbId => {
     const movie = currentMovies.find(m => m.tmdb_id === tmdbId);
     if (!movie) return;
-    
+
     const movieData = { title: movie.title, year: movie.year };
     const newState = FavoritesManager.toggleHeart(movieData);
-    
+
     const newHearted = new Set(heartedMovies);
     if (newState) {
       newHearted.add(tmdbId);
@@ -219,13 +338,13 @@ export default function EssentialMovies({ theme }) {
   };
 
   // Toggle bookmark status (add to watch list)
-  const toggleBookmark = (tmdbId) => {
+  const toggleBookmark = tmdbId => {
     const movie = currentMovies.find(m => m.tmdb_id === tmdbId);
     if (!movie) return;
-    
+
     const movieData = { title: movie.title, year: movie.year };
     const newState = FavoritesManager.toggleBookmark(movieData);
-    
+
     const newBookmarked = new Set(bookmarkedMovies);
     if (newState) {
       newBookmarked.add(tmdbId);
@@ -248,15 +367,15 @@ export default function EssentialMovies({ theme }) {
           <span style={styles.sectionLabel}>Essential Movies</span>
           <div style={styles.sectionDivider} />
         </div>
-        
+
         {/* Movie List */}
         <div style={styles.movieList}>
-          {currentMovies.map((movie) => (
+          {currentMovies.map(movie => (
             <div key={movie.tmdb_id} style={styles.movieRow}>
-              <a 
+              <a
                 href={`/movie/${movie.tmdb_id}`}
                 style={{
-                  ...styles.movieTitleRow, 
+                  ...styles.movieTitleRow,
                   cursor: 'pointer',
                   padding: '2px',
                   borderRadius: '4px',
@@ -266,17 +385,15 @@ export default function EssentialMovies({ theme }) {
                   textAlign: 'left',
                   textDecoration: 'none',
                   color: 'inherit',
-                  display: 'block'
+                  display: 'block',
                 }}
-                onClick={(e) => {
+                onClick={e => {
                   // Force full page navigation
                   e.preventDefault();
                   window.location.href = e.currentTarget.href;
                 }}
               >
-                <span style={styles.movieTitle}>
-                  {movie.title}
-                </span>
+                <span style={styles.movieTitle}>{movie.title}</span>
                 <span style={styles.movieYear}>({movie.year})</span>
               </a>
               <div style={styles.iconRow}>
@@ -291,11 +408,13 @@ export default function EssentialMovies({ theme }) {
                       color={heartedMovies.has(movie.tmdb_id) ? '#374151' : '#9ca3af'}
                       strokeWidth={heartedMovies.has(movie.tmdb_id) ? 2.5 : 1.5}
                     />
-                    <span style={{
-                      ...styles.iconLabel,
-                      color: heartedMovies.has(movie.tmdb_id) ? '#374151' : '#9ca3af',
-                      fontWeight: heartedMovies.has(movie.tmdb_id) ? '600' : '400'
-                    }}>
+                    <span
+                      style={{
+                        ...styles.iconLabel,
+                        color: heartedMovies.has(movie.tmdb_id) ? '#374151' : '#9ca3af',
+                        fontWeight: heartedMovies.has(movie.tmdb_id) ? '600' : '400',
+                      }}
+                    >
                       Seen
                     </span>
                   </div>
@@ -303,18 +422,22 @@ export default function EssentialMovies({ theme }) {
                 <button
                   onClick={() => toggleBookmark(movie.tmdb_id)}
                   style={styles.iconButton}
-                  aria-label={bookmarkedMovies.has(movie.tmdb_id) ? 'Remove from list' : 'Add to list'}
+                  aria-label={
+                    bookmarkedMovies.has(movie.tmdb_id) ? 'Remove from list' : 'Add to list'
+                  }
                 >
                   <div style={styles.iconWithText}>
                     <Plus
                       size={16}
                       color={bookmarkedMovies.has(movie.tmdb_id) ? '#374151' : '#9ca3af'}
                     />
-                    <span style={{
-                      ...styles.iconLabel,
-                      color: bookmarkedMovies.has(movie.tmdb_id) ? '#374151' : '#9ca3af',
-                      fontWeight: bookmarkedMovies.has(movie.tmdb_id) ? '600' : '400'
-                    }}>
+                    <span
+                      style={{
+                        ...styles.iconLabel,
+                        color: bookmarkedMovies.has(movie.tmdb_id) ? '#374151' : '#9ca3af',
+                        fontWeight: bookmarkedMovies.has(movie.tmdb_id) ? '600' : '400',
+                      }}
+                    >
                       Add
                     </span>
                   </div>
@@ -327,7 +450,7 @@ export default function EssentialMovies({ theme }) {
         {/* Progress Bar */}
         <div style={styles.progressSection}>
           <div style={styles.progressBar}>
-            <div style={{...styles.progressFill, width: `${progressPercent}%`}} />
+            <div style={{ ...styles.progressFill, width: `${progressPercent}%` }} />
           </div>
           <div style={styles.progressText}>
             {seenCount}/{totalCount} - {getProgressStatus()}
@@ -346,18 +469,18 @@ export default function EssentialMovies({ theme }) {
 
           {/* Episode Links */}
           <div style={styles.episodeSection}>
-            {themeEpisodes.map((episode) => (
-              <a 
-                key={episode.id} 
+            {themeEpisodes.map(episode => (
+              <a
+                key={episode.id}
                 href={routeHelpers.getEpisodeRoute(theme, episode.id)}
-                style={{textDecoration: 'none'}}
-                onClick={(e) => {
+                style={{ textDecoration: 'none' }}
+                onClick={e => {
                   // Force full page navigation
                   window.location.href = e.currentTarget.href;
                   e.preventDefault();
                 }}
               >
-                <div style={{...styles.episodeButton, cursor: 'pointer'}}>
+                <div style={{ ...styles.episodeButton, cursor: 'pointer' }}>
                   <div style={styles.episodeTitle}>{episode.title}</div>
                   <div style={styles.episodeSubtitle}>{episode.subtitle}</div>
                 </div>

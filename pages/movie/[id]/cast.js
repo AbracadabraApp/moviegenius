@@ -8,14 +8,22 @@ import PersonCard from '../../../components/PersonCard';
 import SimpleSearch from '../../../components/SimpleSearch';
 import { ArrowLeft } from 'lucide-react';
 
-export default function MovieCastPage({ title, year, initialSlug, initialPoster, initialStreaming, tmdbId, error }) {
+export default function MovieCastPage({
+  title,
+  year,
+  initialSlug,
+  initialPoster,
+  initialStreaming,
+  tmdbId,
+  error,
+}) {
   const router = useRouter();
   const { id } = router.query;
   const [isLoadingCredits, setIsLoadingCredits] = useState(true);
   const [credits, setCredits] = useState(null);
 
   // Handle search results
-  const handleSearchResults = (results) => {
+  const handleSearchResults = results => {
     // Auto-navigate to single results
     if (results.length === 1) {
       const movie = results[0];
@@ -40,10 +48,10 @@ export default function MovieCastPage({ title, year, initialSlug, initialPoster,
 
     const fetchCredits = async () => {
       setIsLoadingCredits(true);
-      
+
       try {
         console.log('🎬 Fetching credits for movie ID:', tmdbId);
-        
+
         const response = await fetch('/api/movie-credits', {
           method: 'POST',
           headers: {
@@ -61,7 +69,6 @@ export default function MovieCastPage({ title, year, initialSlug, initialPoster,
         const data = await response.json();
         setCredits(data);
         console.log('✅ Credits loaded:', data.totals);
-
       } catch (err) {
         console.error('Error fetching movie credits:', err);
       } finally {
@@ -71,7 +78,6 @@ export default function MovieCastPage({ title, year, initialSlug, initialPoster,
 
     fetchCredits();
   }, [tmdbId]);
-
 
   if (error) {
     return (
@@ -94,13 +100,13 @@ export default function MovieCastPage({ title, year, initialSlug, initialPoster,
         <div style={styles.inputArea}>
           <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
         </div>
-        
+
         {/* Back button */}
         <div style={styles.backButton} onClick={handleBack}>
           <ArrowLeft size={20} />
           <span style={styles.backText}>Back to Movie</span>
         </div>
-        
+
         {/* Movie header */}
         <MovieHeader
           title={title}
@@ -125,7 +131,7 @@ export default function MovieCastPage({ title, year, initialSlug, initialPoster,
                     {credits.directors.length === 1 ? 'Director' : 'Directors'}
                   </h4>
                   <div style={styles.personList}>
-                    {credits.directors.map((person) => (
+                    {credits.directors.map(person => (
                       <PersonCard
                         key={`director-${person.id}`}
                         name={person.name}
@@ -144,7 +150,7 @@ export default function MovieCastPage({ title, year, initialSlug, initialPoster,
                 <div style={styles.subsection}>
                   <h4 style={styles.subsectionTitle}>Cast ({credits.allCast.length})</h4>
                   <div style={styles.textList}>
-                    {credits.allCast.map((person) => (
+                    {credits.allCast.map(person => (
                       <div key={`cast-${person.id}`} style={styles.listItem}>
                         <span style={styles.listName}>{person.name}</span>
                         <span style={styles.listRole}>as {person.character}</span>
@@ -162,7 +168,7 @@ export default function MovieCastPage({ title, year, initialSlug, initialPoster,
                     {Object.entries(credits.otherCrew).map(([department, people]) => (
                       <div key={department}>
                         <h5 style={styles.departmentTitle}>{department}</h5>
-                        {people.map((person) => (
+                        {people.map(person => (
                           <div key={`${department}-${person.id}`} style={styles.listItem}>
                             <span style={styles.listName}>{person.name}</span>
                             <span style={styles.listRole}>{person.job}</span>
@@ -190,7 +196,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100%',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   inputArea: {
     padding: '16px',
@@ -295,14 +302,14 @@ const styles = {
 // Server-Side Rendering: Fetch movie data by TMDB ID (same as movie detail page)
 export async function getServerSideProps({ params }) {
   const { id } = params;
-  
+
   try {
     const tmdbId = parseInt(id, 10);
     if (isNaN(tmdbId) || tmdbId <= 0) {
       return {
         props: {
-          error: 'Invalid movie ID'
-        }
+          error: 'Invalid movie ID',
+        },
       };
     }
 
@@ -312,14 +319,16 @@ export async function getServerSideProps({ params }) {
       const { createClient } = require('@supabase/supabase-js');
       supabaseClient = createClient(
         process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co',
-        process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key'
+        process.env.SUPABASE_SERVICE_ROLE_KEY ||
+          process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
+          'placeholder-key'
       );
     } catch (error) {
       console.error('Failed to create supabase client:', error);
       return {
         props: {
-          error: 'Database connection failed'
-        }
+          error: 'Database connection failed',
+        },
       };
     }
 
@@ -340,24 +349,24 @@ export async function getServerSideProps({ params }) {
           initialPoster: movieEntry.poster_url,
           initialStreaming: movieEntry.streaming_data,
           tmdbId: movieEntry.tmdb_id,
-          error: null
-        }
+          error: null,
+        },
       };
     } else {
       // Movie not found
       return {
         props: {
-          error: `Movie with ID ${tmdbId} not found`
-        }
+          error: `Movie with ID ${tmdbId} not found`,
+        },
       };
     }
   } catch (error) {
     console.error('Server-side fetch error:', error);
-    
+
     return {
       props: {
-        error: error.message
-      }
+        error: error.message,
+      },
     };
   }
 }

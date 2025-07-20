@@ -1,6 +1,6 @@
 /**
  * Nuclear Status API - Monitor nuclear static generation progress
- * 
+ *
  * Provides detailed status of:
  * - Which movies have been nuclear-processed
  * - Generation costs and timing
@@ -23,15 +23,14 @@ export default async function handler(req, res) {
   try {
     // Get comprehensive nuclear status
     const status = await getNuclearStatus();
-    
+
     res.setHeader('Cache-Control', 'public, s-maxage=300'); // 5 minute cache
     res.status(200).json(status);
-    
   } catch (error) {
     console.error('Nuclear status error:', error);
-    res.status(500).json({ 
+    res.status(500).json({
       error: 'Failed to get nuclear status',
-      details: error.message 
+      details: error.message,
     });
   }
 }
@@ -54,20 +53,22 @@ async function getNuclearStatus() {
 
   // 3. Combine and deduplicate
   const allNuclearIds = new Set([...(topMovies || []), ...(testMovies || [])].map(m => m.id));
-  const nuclearCandidates = [...topMovies || [], ...(testMovies || [])].filter((movie, index, arr) => 
-    arr.findIndex(m => m.id === movie.id) === index
+  const nuclearCandidates = [...(topMovies || []), ...(testMovies || [])].filter(
+    (movie, index, arr) => arr.findIndex(m => m.id === movie.id) === index
   );
 
   // 4. Get analysis status for nuclear candidates
   const nuclearIds = nuclearCandidates.map(m => m.id);
   const { data: analyses } = await supabase
     .from('movie_analyses')
-    .select(`
+    .select(
+      `
       movie_id,
       claude_response,
       created_at,
       query_text
-    `)
+    `
+    )
     .eq('analysis_type', 'page_analysis')
     .in('movie_id', nuclearIds);
 
@@ -85,15 +86,16 @@ async function getNuclearStatus() {
 
   nuclearCandidates.forEach((movie, index) => {
     const analysis = analysisLookup.get(movie.id);
-    
+
     if (analysis) {
       const cost = analysis.claude_response?.cost_estimate || 0;
-      const tokens = (analysis.claude_response?.input_tokens || 0) + 
-                    (analysis.claude_response?.output_tokens || 0);
-      
+      const tokens =
+        (analysis.claude_response?.input_tokens || 0) +
+        (analysis.claude_response?.output_tokens || 0);
+
       totalCost += cost;
       totalTokens += tokens;
-      
+
       processedMovies.push({
         rank: index + 1,
         id: movie.id,
@@ -105,7 +107,7 @@ async function getNuclearStatus() {
         cost: cost,
         tokens: tokens,
         is_batch: analysis.claude_response?.batch_generated || false,
-        nuclear_status: 'completed'
+        nuclear_status: 'completed',
       });
     } else {
       pendingMovies.push({
@@ -115,7 +117,7 @@ async function getNuclearStatus() {
         title: movie.title,
         year: movie.year,
         poster_url: movie.poster_url,
-        nuclear_status: 'pending'
+        nuclear_status: 'pending',
       });
     }
   });
@@ -139,8 +141,8 @@ async function getNuclearStatus() {
     .gte('created_at', yesterday)
     .order('created_at', { ascending: false });
 
-  const recentCost = recentAnalyses?.reduce((sum, a) => 
-    sum + (a.claude_response?.cost_estimate || 0), 0) || 0;
+  const recentCost =
+    recentAnalyses?.reduce((sum, a) => sum + (a.claude_response?.cost_estimate || 0), 0) || 0;
 
   // 9. Compile status
   return {
@@ -151,67 +153,67 @@ async function getNuclearStatus() {
       completion_percentage: ((processedMovies.length / nuclearCandidates.length) * 100).toFixed(1),
       total_cost: totalCost,
       total_tokens: totalTokens,
-      average_cost_per_movie: processedMovies.length > 0 ? 
-        (totalCost / processedMovies.length).toFixed(4) : 0
+      average_cost_per_movie:
+        processedMovies.length > 0 ? (totalCost / processedMovies.length).toFixed(4) : 0,
     },
-    
+
     database_overview: {
       total_movies: totalMovies,
       total_with_analysis: totalAnalyses,
-      analysis_coverage_percentage: totalMovies > 0 ? 
-        ((totalAnalyses / totalMovies) * 100).toFixed(1) : 0
+      analysis_coverage_percentage:
+        totalMovies > 0 ? ((totalAnalyses / totalMovies) * 100).toFixed(1) : 0,
     },
-    
+
     recent_activity: {
       analyses_last_24h: recentAnalyses?.length || 0,
       cost_last_24h: recentCost,
-      latest_analysis: recentAnalyses?.[0]?.created_at || null
+      latest_analysis: recentAnalyses?.[0]?.created_at || null,
     },
-    
+
     processed_movies: processedMovies.slice(0, 50), // First 50 for API response size
     pending_movies: pendingMovies.slice(0, 50), // First 50 pending
-    
+
     next_actions: generateNextActions(processedMovies.length, pendingMovies.length),
-    
+
     metadata: {
       generated_at: new Date().toISOString(),
       nuclear_criteria: 'Top 1,000 movies by creation date (most recent)',
-      api_version: '1.0'
-    }
+      api_version: '1.0',
+    },
   };
 }
 
 function generateNextActions(completed, pending) {
   const actions = [];
-  
+
   if (pending > 0) {
     actions.push({
       action: 'generate_batch',
       description: `Generate analysis for ${Math.min(pending, 100)} pending nuclear movies`,
       priority: 'high',
       estimated_cost: `$${(Math.min(pending, 100) * 0.015).toFixed(2)}`,
-      command: 'npm run nuclear:batch -- --count 100'
+      command: 'npm run nuclear:batch -- --count 100',
     });
   }
-  
+
   if (completed >= 1000) {
     actions.push({
       action: 'expand_nuclear',
       description: 'Expand nuclear set to 5,000 movies (Week 2)',
       priority: 'medium',
       estimated_cost: '$60.00',
-      command: 'npm run nuclear:expand -- --target 5000'
+      command: 'npm run nuclear:expand -- --target 5000',
     });
   }
-  
+
   if (completed > 0) {
     actions.push({
       action: 'validate_performance',
       description: 'Test nuclear movie load times',
       priority: 'low',
-      command: 'npm run nuclear:test'
+      command: 'npm run nuclear:test',
     });
   }
-  
+
   return actions;
 }

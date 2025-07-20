@@ -8,8 +8,8 @@ import path from 'path';
 
 export default function SeriesOverviewPage({ seriesData, error }) {
   const router = useRouter();
-  
-  const handleSearchResults = (results) => {
+
+  const handleSearchResults = results => {
     // For now, just log the search results
     // In the future, could show search results in a modal or navigate to search page
     console.log('Search results on Series Index page:', results);
@@ -22,9 +22,7 @@ export default function SeriesOverviewPage({ seriesData, error }) {
           <div style={styles.fixedInputArea}>
             <SimpleSearch onResults={handleSearchResults} />
           </div>
-          <div style={styles.error}>
-            Error loading series: {error}
-          </div>
+          <div style={styles.error}>Error loading series: {error}</div>
         </div>
       </PhoneFrame>
     );
@@ -37,7 +35,7 @@ export default function SeriesOverviewPage({ seriesData, error }) {
         <div style={styles.fixedInputArea}>
           <SimpleSearch onResults={handleSearchResults} />
         </div>
-        
+
         {/* Scrollable Content */}
         <div style={styles.scrollableContent}>
           {/* Hero Section */}
@@ -45,23 +43,25 @@ export default function SeriesOverviewPage({ seriesData, error }) {
             <div style={styles.heroContent}>
               <div style={styles.seriesLabelPill}>Educational Series</div>
               <h1 style={styles.heroTitle}>Film Education Series</h1>
-              <p style={styles.heroSubtitle}>Comprehensive film studies broken into focused series</p>
+              <p style={styles.heroSubtitle}>
+                Comprehensive film studies broken into focused series
+              </p>
             </div>
           </div>
-          
+
           {/* Series Grid */}
           <div style={styles.content}>
             <div style={styles.seriesSection}>
-              {Object.values(seriesData).map((series) => (
-                <div 
+              {Object.values(seriesData).map(series => (
+                <div
                   key={series.id}
                   style={styles.seriesCard}
                   onClick={() => router.push(`/recs/series/${series.id}/1`)}
-                  onMouseEnter={(e) => {
+                  onMouseEnter={e => {
                     e.currentTarget.style.boxShadow = '0 12px 35px rgba(0, 0, 0, 0.35)';
                     e.currentTarget.style.transform = 'translateY(-3px)';
                   }}
-                  onMouseLeave={(e) => {
+                  onMouseLeave={e => {
                     e.currentTarget.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.25)';
                     e.currentTarget.style.transform = 'translateY(0)';
                   }}
@@ -69,11 +69,9 @@ export default function SeriesOverviewPage({ seriesData, error }) {
                   <div style={styles.seriesContent}>
                     <h3 style={styles.seriesTitle}>{series.title}</h3>
                     <p style={styles.seriesDescription}>{series.description}</p>
-                    <div style={styles.episodeCount}>
-                      {series.episodes.length} Episodes
-                    </div>
+                    <div style={styles.episodeCount}>{series.episodes.length} Episodes</div>
                   </div>
-                  
+
                   {/* Episode Preview Grid - First 4 episodes */}
                   <div style={styles.episodePreviewGrid}>
                     {series.episodes.slice(0, 4).map((episode, index) => (
@@ -96,7 +94,7 @@ export default function SeriesOverviewPage({ seriesData, error }) {
                       </div>
                     ))}
                   </div>
-                  
+
                   {/* Series Footer */}
                   <div style={styles.seriesFooter}>
                     <span style={styles.startWatchingText}>Start watching</span>
@@ -116,11 +114,8 @@ export default function SeriesOverviewPage({ seriesData, error }) {
 export async function getServerSideProps({ res }) {
   try {
     // Set cache headers
-    res.setHeader(
-      'Cache-Control',
-      'public, s-maxage=3600, stale-while-revalidate=7200'
-    );
-    
+    res.setHeader('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=7200');
+
     // Load series data from static configuration file
     const filePath = path.join(process.cwd(), 'data', 'series-config.json');
     const fileContent = fs.readFileSync(filePath, 'utf8');
@@ -129,17 +124,17 @@ export async function getServerSideProps({ res }) {
     return {
       props: {
         seriesData,
-        error: null
-      }
+        error: null,
+      },
     };
   } catch (error) {
     console.error('Error loading series data:', error);
-    
+
     return {
       props: {
         seriesData: {},
-        error: error.message
-      }
+        error: error.message,
+      },
     };
   }
 }
@@ -149,7 +144,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     height: '100%',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   fixedInputArea: {
     position: 'sticky',

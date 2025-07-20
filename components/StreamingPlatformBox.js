@@ -1,55 +1,53 @@
-import { useState, useEffect } from 'react'
-import PlatformSelector from './PlatformSelector'
+import { useState, useEffect } from 'react';
+import PlatformSelector from './PlatformSelector';
 
 export default function StreamingPlatformBox() {
-  const [selectedPlatforms, setSelectedPlatforms] = useState([])
-  const [isExpanded, setIsExpanded] = useState(false)
+  const [selectedPlatforms, setSelectedPlatforms] = useState([]);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   // Load selected platforms from localStorage
   useEffect(() => {
     const loadSelectedPlatforms = () => {
       try {
-        const saved = localStorage.getItem('selectedPlatforms')
+        const saved = localStorage.getItem('selectedPlatforms');
         if (saved) {
-          const platforms = JSON.parse(saved)
-          setSelectedPlatforms(platforms)
+          const platforms = JSON.parse(saved);
+          setSelectedPlatforms(platforms);
         }
       } catch (error) {
-        console.error('Error loading platforms from localStorage:', error)
-        setSelectedPlatforms([])
+        console.error('Error loading platforms from localStorage:', error);
+        setSelectedPlatforms([]);
       }
-    }
+    };
 
-    loadSelectedPlatforms()
+    loadSelectedPlatforms();
 
     // Listen for platform updates
     const handlePlatformUpdate = () => {
-      loadSelectedPlatforms()
-    }
-    
-    window.addEventListener('platformsUpdated', handlePlatformUpdate)
-    return () => window.removeEventListener('platformsUpdated', handlePlatformUpdate)
-  }, [])
+      loadSelectedPlatforms();
+    };
 
-  const handlePlatformSelectionChange = (platforms) => {
+    window.addEventListener('platformsUpdated', handlePlatformUpdate);
+    return () => window.removeEventListener('platformsUpdated', handlePlatformUpdate);
+  }, []);
+
+  const handlePlatformSelectionChange = platforms => {
     // Save to localStorage
-    localStorage.setItem('selectedPlatforms', JSON.stringify(platforms))
-    setSelectedPlatforms(platforms)
-    
+    localStorage.setItem('selectedPlatforms', JSON.stringify(platforms));
+    setSelectedPlatforms(platforms);
+
     // Dispatch custom event for same-tab updates
-    window.dispatchEvent(new CustomEvent('platformsUpdated'))
-    
+    window.dispatchEvent(new CustomEvent('platformsUpdated'));
+
     // Close the expanded view after saving
-    setIsExpanded(false)
-  }
+    setIsExpanded(false);
+  };
 
   const handleEdit = () => {
-    setIsExpanded(!isExpanded)
-  }
+    setIsExpanded(!isExpanded);
+  };
 
-  const displayText = selectedPlatforms.length > 0 
-    ? selectedPlatforms.join(', ') 
-    : 'None selected'
+  const displayText = selectedPlatforms.length > 0 ? selectedPlatforms.join(', ') : 'None selected';
 
   return (
     <div style={styles.container}>
@@ -64,21 +62,16 @@ export default function StreamingPlatformBox() {
           />
         </div>
       )}
-      
+
       {/* Collapsed State - Always Visible */}
       <div style={styles.collapsedView}>
-        <span style={styles.streamingText}>
-          Your streaming services: {displayText}
-        </span>
-        <button 
-          style={styles.editButton}
-          onClick={handleEdit}
-        >
+        <span style={styles.streamingText}>Your streaming services: {displayText}</span>
+        <button style={styles.editButton} onClick={handleEdit}>
           {isExpanded ? 'cancel' : 'edit'}
         </button>
       </div>
     </div>
-  )
+  );
 }
 
 const styles = {
@@ -124,4 +117,4 @@ const styles = {
     backgroundColor: '#ffffff',
     animation: 'slideUp 0.3s ease-out',
   },
-}
+};

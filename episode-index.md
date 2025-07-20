@@ -3,6 +3,7 @@
 ## Theme 1: Film Noir & Crime
 
 ### Series 1: Classic Film Noir (1940-1958)
+
 1. German Expressionism - The template for noir morality
 2. From Novels to Noir - Detective fiction meets cinema
 3. Sunset Boulevard - Hollywood's dark mirror
@@ -11,6 +12,7 @@
 6. Out of the Past - Fatalism and femme fatales
 
 ### Series 2: Neo-Noir Renaissance (1970s-1990s)
+
 7. Chinatown - Polanski's corruption epic
 8. Taxi Driver - Urban alienation and violence
 9. Blade Runner - Sci-fi meets noir aesthetics
@@ -19,6 +21,7 @@
 12. After Hours - Scorsese's kafkaesque nightmare
 
 ### Series 3: Crime Epics & Gangster Films
+
 13. The Godfather Trilogy - Coppola's American saga
 14. Goodfellas - Scorsese's kinetic crime energy
 15. Once Upon a Time in America - Leone's operatic crime epic
@@ -27,6 +30,7 @@
 18. Casino - Vegas empire's corruption
 
 ### Series 4: Contemporary Crime (2000s-Present)
+
 19. No Country for Old Men - Coen Brothers' moral wasteland
 20. There Will Be Blood - Anderson's capitalist critique
 21. Drive - Refn's stylized violence
@@ -35,6 +39,7 @@
 24. Parasite - Class warfare thriller
 
 ### Series 5: International Crime Cinema
+
 25. Jean-Pierre Melville - French crime poetry
 26. Hong Kong Heroic Bloodshed - Woo and the action ballet
 27. Yakuza Films - Japanese honor and violence
@@ -43,6 +48,7 @@
 30. Korean New Wave Crime - Bong Joon-ho to Park Chan-wook
 
 ### Series 6: Crime in Television
+
 31. The Sopranos - Prestige TV crime drama
 32. The Wire - Institutional critique
 33. Breaking Bad - Transformation and consequences
@@ -51,20 +57,28 @@
 36. Mindhunter - Psychology of serial crime
 
 ## Theme 2: Science Fiction & Fantasy
+
 (Episodes 37-72 - not implemented yet)
 
 ## Theme 3: Auteur Cinema & Art House
+
 (Episodes 73-108 - not implemented yet)
 
 ## Theme 4: Genre Evolution & Analysis
+
 (Episodes 109-144 - not implemented yet)
 
 ## Theme 5: World Cinema & Cultural Movements
+
 (Episodes 145-180 - not implemented yet)
 
 ## Theme 6: Technical Innovation & Film Craft
+
 (Episodes 181-216 - not implemented yet)
 
 ---
 
-**Note**: Only Theme 1 episodes are currently implemented with content. Episodes 1-6 have been regenerated with topical content and are locked with hero images. Episodes 7-36 maintain their original movie-specific titles and would need similar regeneration to match the new educational format.
+**Note**: Only Theme 1 episodes are currently implemented with content. Episodes
+1-6 have been regenerated with topical content and are locked with hero images.
+Episodes 7-36 maintain their original movie-specific titles and would need
+similar regeneration to match the new educational format.

@@ -14,29 +14,29 @@ export default function ThemePage({ themeId, customStyles = {} }) {
   const [showSearchResults, setShowSearchResults] = useState(false);
   const [loading, setLoading] = useState(true);
   const [currentThemeId, setCurrentThemeId] = useState(themeId);
-  
+
   // Extract theme from URL when route changes
   useEffect(() => {
     if (router.isReady) {
       // Extract theme slug from URL path /themes/[slug]
       const pathSegments = router.asPath.split('/');
       const slugFromUrl = pathSegments[2]; // /themes/[slug]
-      
+
       if (slugFromUrl && slugFromUrl !== currentThemeId) {
         setCurrentThemeId(slugFromUrl);
         setLoading(true);
       }
     }
   }, [router.isReady, router.asPath, currentThemeId]);
-  
+
   // Get theme data from centralized system
   const themeData = themeNavigation.getThemeBySlug(currentThemeId);
-  
+
   // If not found by slug, try by label conversion
-  const getThemeDataByLabel = (themeId) => {
+  const getThemeDataByLabel = themeId => {
     const labelMap = {
       'film-noir': 'Film Noir',
-      'horror-suspense': 'Horror & Suspense', 
+      'horror-suspense': 'Horror & Suspense',
       'comedy-through-time': 'Comedy',
       'women-directors': 'Women Directors',
       'world-cinema': 'International Masters',
@@ -44,18 +44,18 @@ export default function ThemePage({ themeId, customStyles = {} }) {
       'avant-garde-film': 'Movements in Film',
       'magic-of-moviemaking': 'The Magic of Moviemaking',
       'cinema-through-decades': 'Cinema Through the Decades',
-      'cinema-cultural-impact': 'Hollywood Transformed'
+      'cinema-cultural-impact': 'Hollywood Transformed',
     };
-    
+
     return {
       title: labelMap[themeId] || 'Theme',
-      description: `Explore the world of ${labelMap[themeId] || 'cinema'}`
+      description: `Explore the world of ${labelMap[themeId] || 'cinema'}`,
     };
   };
-  
+
   const finalThemeData = themeData || getThemeDataByLabel(currentThemeId);
 
-  const handleSearchResults = (results) => {
+  const handleSearchResults = results => {
     // With unified search, this won't be called since search redirects to /search page
     // Kept for compatibility if useUnifiedSearch is disabled
     const movies = results.movies || results || [];
@@ -63,14 +63,14 @@ export default function ThemePage({ themeId, customStyles = {} }) {
     setShowSearchResults(movies.length > 0);
   };
 
-  const handleMovieClick = (movie) => {
+  const handleMovieClick = movie => {
     if (movie.tmdb_id) {
       router.push(`/movie/${movie.tmdb_id}`);
     }
   };
-  
+
   // Episode navigation now uses direct HTML links
-  
+
   useEffect(() => {
     if (finalThemeData) {
       setLoading(false);
@@ -89,25 +89,21 @@ export default function ThemePage({ themeId, customStyles = {} }) {
 
   const mergedStyles = {
     ...styles,
-    ...customStyles
+    ...customStyles,
   };
 
   return (
     <PhoneFrame>
       <div style={mergedStyles.container || styles.container}>
-        
         {/* Search Area */}
         <div style={mergedStyles.inputArea || styles.inputArea}>
-          <SimpleSearch 
-            onResults={handleSearchResults}
-            placeholder="Search movies..."
-          />
+          <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
         </div>
-        
+
         {/* Video Hero with Title Overlay */}
         {customStyles.heroVideo ? (
           <div style={styles.heroSection}>
-            <video 
+            <video
               src={customStyles.heroVideo}
               autoPlay
               muted
@@ -122,10 +118,12 @@ export default function ThemePage({ themeId, customStyles = {} }) {
           </div>
         ) : customStyles.heroImage ? (
           <div style={styles.heroSection}>
-            <div style={{
-              ...styles.heroImageContainer,
-              backgroundImage: `url(${customStyles.heroImage})`
-            }}>
+            <div
+              style={{
+                ...styles.heroImageContainer,
+                backgroundImage: `url(${customStyles.heroImage})`,
+              }}
+            >
               <div style={styles.heroTitleOverlay}>
                 <h1 style={styles.heroTitle}>{finalThemeData.title}</h1>
                 <p style={styles.heroSubtitle}>{finalThemeData.description}</p>
@@ -134,10 +132,12 @@ export default function ThemePage({ themeId, customStyles = {} }) {
           </div>
         ) : (
           <div style={styles.heroSection}>
-            <div style={{
-              ...styles.heroImageContainer,
-              background: '#000000'
-            }}>
+            <div
+              style={{
+                ...styles.heroImageContainer,
+                background: '#000000',
+              }}
+            >
               <div style={styles.heroTitleOverlay}>
                 <h1 style={styles.heroTitle}>{finalThemeData.title}</h1>
                 <p style={styles.heroSubtitle}>{finalThemeData.description}</p>
@@ -148,12 +148,11 @@ export default function ThemePage({ themeId, customStyles = {} }) {
 
         {/* Content Area */}
         <div style={mergedStyles.contentArea || styles.contentArea}>
-          
           {/* Essential Movies */}
           <EssentialMovies theme={currentThemeId} />
-          
+
           {/* Search results removed - now handled by unified search page */}
-          
+
           {/* Theme Footer - Navigation for other themes */}
           <ThemeFooter />
         </div>
@@ -167,7 +166,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     height: '100%',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     backgroundColor: '#ffffff',
   },
   inputArea: {
@@ -179,7 +179,7 @@ const styles = {
     padding: '0',
     background: '#000000',
   },
-  
+
   // Hero Section Styles
   heroSection: {
     position: 'relative',

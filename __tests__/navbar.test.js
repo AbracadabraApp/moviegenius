@@ -1,9 +1,9 @@
 /**
  * NavBar Active State Tests
- * 
+ *
  * These tests verify that the NavBar correctly detects and highlights
  * the active navigation item based on the current route.
- * 
+ *
  * Critical for ensuring users know where they are in the app.
  */
 
@@ -24,7 +24,7 @@ jest.mock('../lib/platform', () => ({
 
 describe('NavBar Active State Detection', () => {
   const mockRouterPush = jest.fn();
-  
+
   beforeEach(() => {
     jest.clearAllMocks();
     useRouter.mockReturnValue({
@@ -45,7 +45,7 @@ describe('NavBar Active State Detection', () => {
       });
 
       const { container } = render(<NavBar />);
-      
+
       // Should render nav items but we can't easily test active state
       // in this isolated test - this would need integration testing
       expect(container.querySelector('nav')).toBeInTheDocument();
@@ -99,10 +99,10 @@ describe('NavBar Active State Detection', () => {
       '/themes/avant-garde-film',
       '/themes/magic-of-moviemaking',
       '/themes/cinema-through-decades',
-      '/themes/cinema-cultural-impact'
+      '/themes/cinema-cultural-impact',
     ];
 
-    test.each(themeRoutes)('Theme page %s shows Genius as active', (themePath) => {
+    test.each(themeRoutes)('Theme page %s shows Genius as active', themePath => {
       useRouter.mockReturnValue({
         pathname: themePath,
         push: mockRouterPush,
@@ -112,7 +112,7 @@ describe('NavBar Active State Detection', () => {
 
       const { container } = render(<NavBar />);
       expect(container.querySelector('nav')).toBeInTheDocument();
-      
+
       // The actual active state logic is tested via the component logic
       // This ensures the component renders without errors
     });
@@ -122,10 +122,10 @@ describe('NavBar Active State Detection', () => {
     const episodeRoutes = [
       '/film-noir/german-expressionism',
       '/horror-suspense/psychological-terror',
-      '/comedy-through-time/silent-era'
+      '/comedy-through-time/silent-era',
     ];
 
-    test.each(episodeRoutes)('Episode page %s shows Genius as active', (episodePath) => {
+    test.each(episodeRoutes)('Episode page %s shows Genius as active', episodePath => {
       useRouter.mockReturnValue({
         pathname: episodePath,
         push: mockRouterPush,
@@ -140,25 +140,32 @@ describe('NavBar Active State Detection', () => {
 
   describe('Active State Logic Unit Tests', () => {
     // These test the actual logic without rendering components
-    
+
     test('Theme path detection logic works correctly', () => {
       const mockPathname = '/themes/film-noir';
       const pathname = mockPathname.slice(1); // Remove leading slash
-      
+
       // Simulate the NavBar logic
       const isThemePage = pathname.startsWith('themes/');
       expect(isThemePage).toBe(true);
-      
+
       if (isThemePage) {
         const themePart = pathname.split('/')[1]; // Get theme after "themes/"
         expect(themePart).toBe('film-noir');
-        
+
         const themeKeys = [
-          'film-noir', 'horror-suspense', 'comedy-through-time', 'women-directors',
-          'world-cinema', 'acclaimed-directors', 'avant-garde-film', 'magic-of-moviemaking',
-          'cinema-through-decades', 'cinema-cultural-impact'
+          'film-noir',
+          'horror-suspense',
+          'comedy-through-time',
+          'women-directors',
+          'world-cinema',
+          'acclaimed-directors',
+          'avant-garde-film',
+          'magic-of-moviemaking',
+          'cinema-through-decades',
+          'cinema-cultural-impact',
         ];
-        
+
         expect(themeKeys.includes(themePart)).toBe(true);
       }
     });
@@ -166,38 +173,48 @@ describe('NavBar Active State Detection', () => {
     test('Episode path detection logic works correctly', () => {
       const mockPathname = '/film-noir/german-expressionism';
       const pathname = mockPathname.slice(1); // Remove leading slash
-      
+
       // Simulate the NavBar logic for episode pages
       const themePart = pathname.split('/')[0];
       expect(themePart).toBe('film-noir');
-      
+
       const themeKeys = [
-        'film-noir', 'horror-suspense', 'comedy-through-time', 'women-directors',
-        'world-cinema', 'acclaimed-directors', 'avant-garde-film', 'magic-of-moviemaking',
-        'cinema-through-decades', 'cinema-cultural-impact'
+        'film-noir',
+        'horror-suspense',
+        'comedy-through-time',
+        'women-directors',
+        'world-cinema',
+        'acclaimed-directors',
+        'avant-garde-film',
+        'magic-of-moviemaking',
+        'cinema-through-decades',
+        'cinema-cultural-impact',
       ];
-      
+
       expect(themeKeys.includes(themePart)).toBe(true);
     });
 
     test('Invalid theme paths are not detected', () => {
-      const invalidPaths = [
-        '/themes/invalid-theme',
-        '/random-page',
-        '/movie/123'
-      ];
+      const invalidPaths = ['/themes/invalid-theme', '/random-page', '/movie/123'];
 
       const themeKeys = [
-        'film-noir', 'horror-suspense', 'comedy-through-time', 'women-directors',
-        'world-cinema', 'acclaimed-directors', 'avant-garde-film', 'magic-of-moviemaking',
-        'cinema-through-decades', 'cinema-cultural-impact'
+        'film-noir',
+        'horror-suspense',
+        'comedy-through-time',
+        'women-directors',
+        'world-cinema',
+        'acclaimed-directors',
+        'avant-garde-film',
+        'magic-of-moviemaking',
+        'cinema-through-decades',
+        'cinema-cultural-impact',
       ];
 
       invalidPaths.forEach(mockPath => {
         const pathname = mockPath.slice(1);
-        
+
         let shouldBeActive = false;
-        
+
         // Test theme path logic
         if (pathname.startsWith('themes/')) {
           const themePart = pathname.split('/')[1];
@@ -207,7 +224,7 @@ describe('NavBar Active State Detection', () => {
           const themePart = pathname.split('/')[0];
           shouldBeActive = themeKeys.includes(themePart);
         }
-        
+
         if (mockPath === '/themes/invalid-theme') {
           expect(shouldBeActive).toBe(false);
         } else if (mockPath === '/random-page' || mockPath === '/movie/123') {
@@ -221,10 +238,10 @@ describe('NavBar Active State Detection', () => {
     test('NavBar theme keys match theme mapping file', () => {
       // This would require loading the actual theme mapping
       // For now, we test that the expected keys are present
-      
+
       const expectedThemeKeys = [
         'film-noir',
-        'horror-suspense', 
+        'horror-suspense',
         'comedy-through-time',
         'women-directors',
         'world-cinema',
@@ -232,9 +249,9 @@ describe('NavBar Active State Detection', () => {
         'avant-garde-film',
         'magic-of-moviemaking',
         'cinema-through-decades',
-        'cinema-cultural-impact'
+        'cinema-cultural-impact',
       ];
-      
+
       // This is a placeholder - in a real test we'd import the NavBar
       // and check its themeKeys array
       expect(expectedThemeKeys).toHaveLength(10);
@@ -246,11 +263,11 @@ describe('NavBar Active State Detection', () => {
   describe('Navigation Items Structure', () => {
     test('NavBar has correct navigation items', () => {
       const { container } = render(<NavBar />);
-      
+
       // Should have navigation container
       const nav = container.querySelector('nav');
       expect(nav).toBeInTheDocument();
-      
+
       // Note: In a real implementation, we'd test for specific nav items
       // This basic test ensures the component renders
     });
@@ -263,7 +280,7 @@ describe('NavBar Active State Detection', () => {
         '/you',
         '/themes/film-noir',
         '/film-noir/german-expressionism',
-        '/movie/238'
+        '/movie/238',
       ];
 
       testRoutes.forEach(route => {
@@ -301,9 +318,16 @@ export const navBarTestUtils = {
   testActiveStateLogic: (pathname, expectedActive) => {
     const cleanPath = pathname.slice(1); // Remove leading slash
     const themeKeys = [
-      'film-noir', 'horror-suspense', 'comedy-through-time', 'women-directors',
-      'world-cinema', 'acclaimed-directors', 'avant-garde-film', 'magic-of-moviemaking',
-      'cinema-through-decades', 'cinema-cultural-impact'
+      'film-noir',
+      'horror-suspense',
+      'comedy-through-time',
+      'women-directors',
+      'world-cinema',
+      'acclaimed-directors',
+      'avant-garde-film',
+      'magic-of-moviemaking',
+      'cinema-through-decades',
+      'cinema-cultural-impact',
     ];
 
     let isGeniusActive = false;
@@ -319,7 +343,7 @@ export const navBarTestUtils = {
     }
 
     return isGeniusActive === expectedActive;
-  }
+  },
 };
 
 // Constants for testing
@@ -335,16 +359,12 @@ export const TEST_ROUTES = {
     '/themes/avant-garde-film',
     '/themes/magic-of-moviemaking',
     '/themes/cinema-through-decades',
-    '/themes/cinema-cultural-impact'
+    '/themes/cinema-cultural-impact',
   ],
   episodes: [
     '/film-noir/german-expressionism',
     '/horror-suspense/psychological-terror',
-    '/comedy-through-time/silent-era'
+    '/comedy-through-time/silent-era',
   ],
-  invalid: [
-    '/themes/invalid-theme',
-    '/invalid-page',
-    '/movie/abc'
-  ]
+  invalid: ['/themes/invalid-theme', '/invalid-page', '/movie/abc'],
 };

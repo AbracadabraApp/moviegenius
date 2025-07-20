@@ -1,10 +1,10 @@
 // pages/api/enhance-movie-data.js
 // 🔒 DEPRECATED API - LOCKED AGAINST TMDB SUMMARY CONTAMINATION 🔒
-// 
+//
 // ⚠️  CRITICAL: This API is LOCKED and should NOT be used
 // ⚠️  MediaCard uses /api/generate-organic-slug for taglines ONLY
 // ⚠️  NO slug enhancement, NO summary generation allowed
-// 
+//
 // @version LOCKED-2025-07-02 - DO NOT MODIFY
 
 import { createClient } from '@supabase/supabase-js';
@@ -37,19 +37,21 @@ export default async function handler(req, res) {
         .eq('title', title)
         .eq('year', year)
         .single();
-        
+
       if (!dbError && existingMovie?.slug) {
         // Return existing slug only
         return res.status(200).json({
           slug: existingMovie.slug,
           title: title,
           year: year,
-          source: 'existing_database_slug'
+          source: 'existing_database_slug',
         });
       }
-      
+
       // 🔒 NO SLUG GENERATION - prevents TMDB summaries
-      console.warn(`🔒 No existing slug for "${title}" (${year}) - refusing to generate to prevent TMDB contamination`);
+      console.warn(
+        `🔒 No existing slug for "${title}" (${year}) - refusing to generate to prevent TMDB contamination`
+      );
     }
 
     // Return empty response for missing data
@@ -57,14 +59,13 @@ export default async function handler(req, res) {
       slug: null,
       title: title,
       year: year,
-      source: 'protected_no_generation'
+      source: 'protected_no_generation',
     });
-
   } catch (error) {
     console.error('Error in protected enhance-movie-data API:', error);
-    return res.status(500).json({ 
+    return res.status(500).json({
       error: 'Enhanced data not available',
-      details: 'Protected API - no enhancement performed'
+      details: 'Protected API - no enhancement performed',
     });
   }
 }

@@ -2,17 +2,13 @@
 import { useState, useEffect } from 'react';
 import { Filter, X, ChevronDown } from 'lucide-react';
 
-export default function SearchFilters({ 
-  onFiltersChange, 
-  style = {},
-  initialFilters = {} 
-}) {
+export default function SearchFilters({ onFiltersChange, style = {}, initialFilters = {} }) {
   const [showFilters, setShowFilters] = useState(false);
   const [filters, setFilters] = useState({
     yearRange: { min: null, max: null },
     genres: [],
     streaming: [],
-    ...initialFilters
+    ...initialFilters,
   });
 
   // Notify parent when filters change
@@ -28,28 +24,28 @@ export default function SearchFilters({
       ...prev,
       yearRange: {
         ...prev.yearRange,
-        [type]: value ? parseInt(value) : null
-      }
+        [type]: value ? parseInt(value) : null,
+      },
     }));
   };
 
   // Handle genre toggle
-  const handleGenreToggle = (genre) => {
+  const handleGenreToggle = genre => {
     setFilters(prev => ({
       ...prev,
       genres: prev.genres.includes(genre)
         ? prev.genres.filter(g => g !== genre)
-        : [...prev.genres, genre]
+        : [...prev.genres, genre],
     }));
   };
 
   // Handle streaming platform toggle
-  const handleStreamingToggle = (platform) => {
+  const handleStreamingToggle = platform => {
     setFilters(prev => ({
       ...prev,
       streaming: prev.streaming.includes(platform)
         ? prev.streaming.filter(s => s !== platform)
-        : [...prev.streaming, platform]
+        : [...prev.streaming, platform],
     }));
   };
 
@@ -58,16 +54,16 @@ export default function SearchFilters({
     setFilters({
       yearRange: { min: null, max: null },
       genres: [],
-      streaming: []
+      streaming: [],
     });
   };
 
   // Check if any filters are active
   const hasActiveFilters = () => {
     return (
-      filters.yearRange.min || 
-      filters.yearRange.max || 
-      filters.genres.length > 0 || 
+      filters.yearRange.min ||
+      filters.yearRange.max ||
+      filters.genres.length > 0 ||
       filters.streaming.length > 0
     );
   };
@@ -78,7 +74,7 @@ export default function SearchFilters({
       <button
         style={{
           ...styles.toggleButton,
-          ...(hasActiveFilters() ? styles.toggleButtonActive : {})
+          ...(hasActiveFilters() ? styles.toggleButtonActive : {}),
         }}
         onClick={() => setShowFilters(!showFilters)}
       >
@@ -89,15 +85,15 @@ export default function SearchFilters({
             {[
               filters.yearRange.min || filters.yearRange.max ? 1 : 0,
               filters.genres.length,
-              filters.streaming.length
+              filters.streaming.length,
             ].reduce((a, b) => a + b, 0)}
           </span>
         )}
-        <ChevronDown 
-          size={16} 
+        <ChevronDown
+          size={16}
           style={{
             transform: showFilters ? 'rotate(180deg)' : 'rotate(0deg)',
-            transition: 'transform 0.2s ease'
+            transition: 'transform 0.2s ease',
           }}
         />
       </button>
@@ -113,7 +109,7 @@ export default function SearchFilters({
                 type="number"
                 placeholder="From"
                 value={filters.yearRange.min || ''}
-                onChange={(e) => handleYearChange('min', e.target.value)}
+                onChange={e => handleYearChange('min', e.target.value)}
                 style={styles.yearInput}
                 min="1900"
                 max={new Date().getFullYear()}
@@ -123,7 +119,7 @@ export default function SearchFilters({
                 type="number"
                 placeholder="To"
                 value={filters.yearRange.max || ''}
-                onChange={(e) => handleYearChange('max', e.target.value)}
+                onChange={e => handleYearChange('max', e.target.value)}
                 style={styles.yearInput}
                 min="1900"
                 max={new Date().getFullYear()}
@@ -140,7 +136,7 @@ export default function SearchFilters({
                   key={genre}
                   style={{
                     ...styles.genreChip,
-                    ...(filters.genres.includes(genre) ? styles.genreChipActive : {})
+                    ...(filters.genres.includes(genre) ? styles.genreChipActive : {}),
                   }}
                   onClick={() => handleGenreToggle(genre)}
                 >
@@ -159,7 +155,7 @@ export default function SearchFilters({
                   key={platform}
                   style={{
                     ...styles.streamingChip,
-                    ...(filters.streaming.includes(platform) ? styles.streamingChipActive : {})
+                    ...(filters.streaming.includes(platform) ? styles.streamingChipActive : {}),
                   }}
                   onClick={() => handleStreamingToggle(platform)}
                 >
@@ -172,10 +168,7 @@ export default function SearchFilters({
           {/* Clear filters */}
           {hasActiveFilters() && (
             <div style={styles.clearSection}>
-              <button
-                style={styles.clearButton}
-                onClick={clearFilters}
-              >
+              <button style={styles.clearButton} onClick={clearFilters}>
                 <X size={16} />
                 Clear all filters
               </button>
@@ -200,7 +193,7 @@ const popularGenres = [
   'Animation',
   'Fantasy',
   'Crime',
-  'Mystery'
+  'Mystery',
 ];
 
 // Streaming platforms
@@ -212,7 +205,7 @@ const streamingPlatforms = [
   'HBO Max',
   'Apple TV+',
   'Paramount+',
-  'Peacock'
+  'Peacock',
 ];
 
 const styles = {
@@ -272,7 +265,7 @@ const styles = {
     color: '#374151',
     marginBottom: '8px',
   },
-  
+
   // Year range
   yearRange: {
     display: 'flex',
