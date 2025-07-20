@@ -1,12 +1,12 @@
 // Suggestions page - Shows all 50 essential movies filtered for unseen films
-import PhoneFrame from '../components/PhoneFrame';
-import SimpleSearch from '../components/SimpleSearch';
+import PhoneFrame from '../../components/PhoneFrame';
+import SimpleSearch from '../../components/SimpleSearch';
 import { Check, Plus, ArrowLeft } from 'lucide-react';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
-import { colors, spacing, typography } from '../lib/design-tokens';
-import { getAllEssentialMovies } from '../data/essential-movies';
-import { FavoritesManager } from '../components/FavoritesManager';
+import { colors, spacing, typography } from '../../lib/design-tokens';
+import { getAllEssentialMovies } from '../../data/essential-movies';
+import { FavoritesManager } from '../../components/FavoritesManager';
 
 export default function SuggestionsPage() {
   const router = useRouter();
