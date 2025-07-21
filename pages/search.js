@@ -10,6 +10,7 @@ import { useRouter } from 'next/router';
 import PhoneFrame from '../components/PhoneFrame';
 import SimpleSearch from '../components/SimpleSearch';
 import MovieHeaderCompact from '../components/MovieHeaderCompact';
+import ErrorBoundary from '../components/ErrorBoundary';
 
 export default function SearchPage() {
   const router = useRouter();
@@ -239,25 +240,27 @@ export default function SearchPage() {
               <div style={styles.loadingText}>Searching movies...</div>
             </div>
           ) : searchResults.length > 0 ? (
-            <div style={styles.movieGrid}>
-              {console.log(
-                '🔍 Rendering search results with MovieHeaderCompact:',
-                searchResults.length,
-                'movies'
-              )}
-              {searchResults.map((movie, index) => (
-                <MovieHeaderCompact
-                  key={`${movie.tmdb_id || movie.title}-${index}`}
-                  title={movie.title}
-                  year={movie.year}
-                  tmdbId={movie.tmdb_id}
-                  posterUrl={movie.poster_url}
-                  voteAverage={movie.vote_average}
-                  streamingInfo={movie.streaming_data}
-                  onMovieClick={() => handleMovieClick(movie)}
-                />
-              ))}
-            </div>
+            <ErrorBoundary level="section">
+              <div style={styles.movieGrid}>
+                {console.log(
+                  '🔍 Rendering search results with MovieHeaderCompact:',
+                  searchResults.length,
+                  'movies'
+                )}
+                {searchResults.map((movie, index) => (
+                  <MovieHeaderCompact
+                    key={`${movie.tmdb_id || movie.title}-${index}`}
+                    title={movie.title}
+                    year={movie.year}
+                    tmdbId={movie.tmdb_id}
+                    posterUrl={movie.poster_url}
+                    voteAverage={movie.vote_average}
+                    streamingInfo={movie.streaming_data}
+                    onMovieClick={() => handleMovieClick(movie)}
+                  />
+                ))}
+              </div>
+            </ErrorBoundary>
           ) : currentQuery ? (
             <div style={styles.noResults}>
               <div style={styles.noResultsIcon}>🎬</div>

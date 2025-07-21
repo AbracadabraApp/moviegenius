@@ -15,6 +15,7 @@ import EntityLinkedText from '../../components/EntityLinkedText';
 import CategoryBrowse from '../../components/CategoryBrowse';
 import usePredictiveLoading from '../../hooks/usePredictiveLoading';
 import FilmLoadingMessage from '../../components/FilmLoadingMessage';
+import ErrorBoundary from '../../components/ErrorBoundary';
 
 // Simplified component - business logic moved to services
 export default function MovieDetailPage({
@@ -120,59 +121,65 @@ export default function MovieDetailPage({
         <div style={styles.content}>
           {showSearchResults ? (
             /* Search Results */
-            <div style={styles.resultsContainer}>
-              <div style={styles.resultsHeader}>
-                <span>
-                  {searchResults.length} movie{searchResults.length !== 1 ? 's' : ''} found
-                </span>
+            <ErrorBoundary level="section">
+              <div style={styles.resultsContainer}>
+                <div style={styles.resultsHeader}>
+                  <span>
+                    {searchResults.length} movie{searchResults.length !== 1 ? 's' : ''} found
+                  </span>
+                </div>
+                <div style={styles.movieList}>
+                  {searchResults.map((movie, index) => (
+                    <div
+                      key={`${movie.tmdb_id || movie.title}-${index}`}
+                      onClick={() => handleMovieClick(movie)}
+                      style={styles.movieItem}
+                    >
+                      <MediaCard
+                        title={movie.title}
+                        year={movie.year}
+                        initialSlug={movie.slug}
+                        initialPoster={movie.poster_url}
+                        initialStreaming={movie.streaming_data}
+                        tmdbId={movie.tmdb_id}
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
-              <div style={styles.movieList}>
-                {searchResults.map((movie, index) => (
-                  <div
-                    key={`${movie.tmdb_id || movie.title}-${index}`}
-                    onClick={() => handleMovieClick(movie)}
-                    style={styles.movieItem}
-                  >
-                    <MediaCard
-                      title={movie.title}
-                      year={movie.year}
-                      initialSlug={movie.slug}
-                      initialPoster={movie.poster_url}
-                      initialStreaming={movie.streaming_data}
-                      tmdbId={movie.tmdb_id}
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
+            </ErrorBoundary>
           ) : (
             /* Movie Detail Content */
             <>
-              <MovieHeaderLarge
-                title={title}
-                year={year}
-                initialSlug={initialSlug}
-                initialPoster={initialPoster}
-                initialStreaming={initialStreaming}
-                tmdbId={tmdbId}
-              />
+              <ErrorBoundary level="section">
+                <MovieHeaderLarge
+                  title={title}
+                  year={year}
+                  initialSlug={initialSlug}
+                  initialPoster={initialPoster}
+                  initialStreaming={initialStreaming}
+                  tmdbId={tmdbId}
+                />
+              </ErrorBoundary>
 
               <div style={styles.claudeSection}>
-                {hasAnalysis && sections.length > 0 ? (
-                  <div style={styles.claudeContent}>
-                    <MovieContent
-                      sections={sections}
-                      exploreFurther={exploreFurther}
-                      moreIdeas={moreIdeas}
-                      title={title}
-                      year={year}
-                      tmdbId={tmdbId}
-                      router={router}
-                    />
-                  </div>
-                ) : (
-                  <ContentPlaceholder source={source} title={title} year={year} tmdbId={tmdbId} />
-                )}
+                <ErrorBoundary level="section">
+                  {hasAnalysis && sections.length > 0 ? (
+                    <div style={styles.claudeContent}>
+                      <MovieContent
+                        sections={sections}
+                        exploreFurther={exploreFurther}
+                        moreIdeas={moreIdeas}
+                        title={title}
+                        year={year}
+                        tmdbId={tmdbId}
+                        router={router}
+                      />
+                    </div>
+                  ) : (
+                    <ContentPlaceholder source={source} title={title} year={year} tmdbId={tmdbId} />
+                  )}
+                </ErrorBoundary>
               </div>
             </>
           )}

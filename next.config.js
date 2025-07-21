@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
+
 const isRailwayBuild = process.env.RAILWAY_ENVIRONMENT_NAME;
 
 // Set fallback environment variables for build safety
@@ -14,6 +18,19 @@ process.env.NEXT_PUBLIC_TMDB_API_KEY =
 process.env.ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY || 'placeholder-anthropic-key';
 
 const nextConfig = {
+  // Memory and bundle optimizations (simplified for stability)
+  webpack: (config, { webpack }) => {
+    // Basic optimizations only
+    config.plugins.push(
+      new webpack.IgnorePlugin({
+        resourceRegExp: /^\.\/locale$/,
+        contextRegExp: /moment$/,
+      })
+    );
+    
+    return config;
+  },
+
   // Dev performance optimizations
   experimental: {
     optimizePackageImports: ['lucide-react', '@supabase/supabase-js'],
@@ -33,14 +50,20 @@ const nextConfig = {
   // Enable compression
   compress: true,
 
-  // Cloudflare-optimized configuration
+  // Image optimization for performance
   images: {
     domains: ['image.tmdb.org', 'www.youtube.com', 'youtube.com'],
     formats: ['image/webp', 'image/avif'],
     minimumCacheTTL: 31536000, // 1 year for TMDB images
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    dangerouslyAllowSVG: false,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
+
+  // Production optimizations
+  productionBrowserSourceMaps: false,
+  poweredByHeader: false,
 
   // Cloudflare-optimized headers
   async headers() {
@@ -89,4 +112,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = withBundleAnalyzer(nextConfig);

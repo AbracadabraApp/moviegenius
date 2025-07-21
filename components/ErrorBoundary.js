@@ -3,54 +3,130 @@
  *
  * Catches JavaScript errors anywhere in the child component tree,
  * logs those errors, and displays a fallback UI instead of crashing.
+ * Enhanced with defensive patterns and recovery options.
  *
  * @see https://reactjs.org/docs/error-boundaries.html
  */
 import React from 'react';
+import { AlertCircle, RefreshCw, Home, Search } from 'lucide-react';
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { hasError: false, error: null };
+    this.state = { hasError: false, error: null, errorInfo: null, retryCount: 0 };
   }
 
   static getDerivedStateFromError(error) {
-    // Update state so the next render will show the fallback UI
-    return { hasError: true, error };
+    return { hasError: true };
   }
 
   componentDidCatch(error, errorInfo) {
-    // Log error to monitoring service in production
-    console.error('ErrorBoundary caught an error:', error, errorInfo);
+    this.setState({
+      error: error,
+      errorInfo: errorInfo
+    });
 
-    // In production, you might want to log to a service like Sentry
+    // Defensive logging - check if console exists
+    if (typeof window !== 'undefined' && window.console) {
+      console.error('ErrorBoundary caught an error:', error, errorInfo);
+    }
+
+    // Future: Add monitoring service integration
     // if (process.env.NODE_ENV === 'production') {
     //   logErrorToService(error, errorInfo);
     // }
   }
 
+  handleRetry = () => {
+    this.setState(prevState => ({
+      hasError: false,
+      error: null,
+      errorInfo: null,
+      retryCount: prevState.retryCount + 1
+    }));
+  };
+
+  handleGoHome = () => {
+    if (typeof window !== 'undefined') {
+      window.location.href = '/';
+    }
+  };
+
+  handleSearch = () => {
+    if (typeof window !== 'undefined') {
+      window.location.href = '/search';
+    }
+  };
+
   render() {
     if (this.state.hasError) {
-      // Custom fallback UI
-      if (this.props.fallback) {
-        return this.props.fallback;
+      const { fallback: CustomFallback, level = 'section' } = this.props;
+      
+      if (CustomFallback) {
+        return <CustomFallback error={this.state.error} onRetry={this.handleRetry} />;
       }
 
+      const isPageLevel = level === 'page';
+      const containerClass = isPageLevel 
+        ? 'min-h-screen flex items-center justify-center bg-gray-50 px-4'
+        : 'py-8 px-4 bg-red-50 border border-red-200 rounded-lg my-4';
+      
       return (
-        <div style={styles.container}>
-          <div style={styles.content}>
-            <h2 style={styles.title}>Oops! Something went wrong</h2>
-            <p style={styles.message}>
-              We&apos;re sorry, but something unexpected happened. Please try refreshing the page.
-            </p>
-            <button style={styles.button} onClick={() => window.location.reload()}>
-              Refresh Page
-            </button>
-            {process.env.NODE_ENV === 'development' && (
-              <details style={styles.details}>
-                <summary style={styles.summary}>Error Details (Development)</summary>
-                <pre style={styles.errorText}>
-                  {this.state.error?.stack || this.state.error?.message}
+        <div className={containerClass}>
+          <div className="text-center max-w-md mx-auto">
+            <div className="mb-6">
+              <AlertCircle className="h-16 w-16 text-red-500 mx-auto mb-4" />
+              <h2 className={`${isPageLevel ? 'text-2xl' : 'text-lg'} font-semibold text-gray-900 mb-2`}>
+                {isPageLevel ? 'Something went wrong' : 'Content unavailable'}
+              </h2>
+              <p className="text-gray-600 mb-6">
+                {isPageLevel 
+                  ? 'We encountered an unexpected error. Please try refreshing the page or navigating to a different section.'
+                  : 'This section is temporarily unavailable. You can try refreshing or continue browsing other content.'
+                }
+              </p>
+            </div>
+
+            <div className="space-y-3">
+              {this.state.retryCount < 2 && (
+                <button
+                  onClick={this.handleRetry}
+                  className="w-full flex items-center justify-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                >
+                  <RefreshCw className="h-4 w-4 mr-2" />
+                  Try again
+                </button>
+              )}
+              
+              {isPageLevel && (
+                <>
+                  <button
+                    onClick={this.handleGoHome}
+                    className="w-full flex items-center justify-center px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors"
+                  >
+                    <Home className="h-4 w-4 mr-2" />
+                    Go to homepage
+                  </button>
+                  
+                  <button
+                    onClick={this.handleSearch}
+                    className="w-full flex items-center justify-center px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors"
+                  >
+                    <Search className="h-4 w-4 mr-2" />
+                    Search movies
+                  </button>
+                </>
+              )}
+            </div>
+
+            {process.env.NODE_ENV === 'development' && this.state.error && (
+              <details className="mt-6 text-left">
+                <summary className="cursor-pointer text-sm font-medium text-gray-500 mb-2">
+                  Error details (development only)
+                </summary>
+                <pre className="text-xs bg-gray-100 p-3 rounded overflow-auto max-h-40">
+                  {this.state.error.toString()}
+                  {this.state.errorInfo?.componentStack}
                 </pre>
               </details>
             )}
@@ -63,63 +139,5 @@ class ErrorBoundary extends React.Component {
   }
 }
 
-const styles = {
-  container: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    minHeight: '200px',
-    padding: '20px',
-    backgroundColor: '#f9fafb',
-  },
-  content: {
-    textAlign: 'center',
-    maxWidth: '400px',
-    padding: '20px',
-    backgroundColor: 'white',
-    borderRadius: '8px',
-    boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
-  },
-  title: {
-    fontSize: '20px',
-    fontWeight: 'bold',
-    marginBottom: '12px',
-    color: '#dc2626',
-  },
-  message: {
-    fontSize: '14px',
-    color: '#6b7280',
-    marginBottom: '16px',
-    lineHeight: '1.5',
-  },
-  button: {
-    backgroundColor: '#3b82f6',
-    color: 'white',
-    border: 'none',
-    padding: '8px 16px',
-    borderRadius: '6px',
-    cursor: 'pointer',
-    fontSize: '14px',
-  },
-  details: {
-    marginTop: '16px',
-    textAlign: 'left',
-  },
-  summary: {
-    cursor: 'pointer',
-    fontSize: '12px',
-    color: '#6b7280',
-  },
-  errorText: {
-    fontSize: '10px',
-    color: '#dc2626',
-    backgroundColor: '#fef2f2',
-    padding: '8px',
-    borderRadius: '4px',
-    overflow: 'hidden',
-    maxHeight: '100px',
-    wordWrap: 'break-word',
-  },
-};
 
 export default ErrorBoundary;
