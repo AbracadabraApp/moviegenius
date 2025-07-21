@@ -8,11 +8,25 @@ import SimpleSearch from '../../components/SimpleSearch';
 import MediaCard from '../../components/MediaCard';
 import { FavoritesManager } from '../../components/FavoritesManager';
 import { filterCurrentMovie } from '../../lib/filterCurrentMovie';
-import ExplorePromptCard from '../../components/ExplorePromptCard';
-import FeaturedFilmsSection from '../../components/FeaturedFilmsSection';
-import ExploreFurtherSection from '../../components/ExploreFurtherSection';
-import EntityLinkedText from '../../components/EntityLinkedText';
-import CategoryBrowse from '../../components/CategoryBrowse';
+// Dynamic imports for code splitting
+import dynamic from 'next/dynamic';
+
+// Lazy load analysis components to reduce initial bundle size
+const ExplorePromptCard = dynamic(() => import('../../components/ExplorePromptCard'), {
+  loading: () => <div style={{ padding: '16px' }}>Loading...</div>
+});
+const FeaturedFilmsSection = dynamic(() => import('../../components/FeaturedFilmsSection'), {
+  loading: () => <div style={{ padding: '16px' }}>Loading movies...</div>
+});
+const ExploreFurtherSection = dynamic(() => import('../../components/ExploreFurtherSection'), {
+  loading: () => <div style={{ padding: '16px' }}>Loading...</div>
+});
+const EntityLinkedText = dynamic(() => import('../../components/EntityLinkedText'), {
+  loading: () => <div>Loading text...</div>
+});
+const CategoryBrowse = dynamic(() => import('../../components/CategoryBrowse'), {
+  loading: () => <div style={{ padding: '16px' }}>Loading categories...</div>
+});
 import usePredictiveLoading from '../../hooks/usePredictiveLoading';
 import FilmLoadingMessage from '../../components/FilmLoadingMessage';
 import ErrorBoundary from '../../components/ErrorBoundary';
