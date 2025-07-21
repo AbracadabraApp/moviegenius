@@ -45,16 +45,106 @@ Your pre-commit hooks will automatically:
 
 ### Commit Message Format
 
-Use conventional commits:
+MovieGenius uses **Conventional Commits** with automated enforcement via commitlint:
+
+```
+type(scope): description
+
+[optional body]
+
+[optional footer]
+```
+
+#### Commit Types
+
+| Type | Description | Example |
+|------|-------------|---------|
+| **feat** | New feature | `feat(movies): Add new releases API with TMDB integration` |
+| **fix** | Bug fix | `fix(api): Resolve parsing issue in series-episode endpoint` |
+| **docs** | Documentation | `docs: Update README with new prompt architecture` |
+| **style** | Code formatting | `style: Apply Prettier formatting to all files` |
+| **refactor** | Code refactoring | `refactor(prompts): Extract modular prompt system` |
+| **test** | Testing | `test(api): Add unit tests for movie search endpoint` |
+| **chore** | Maintenance | `chore: Update dependencies and build scripts` |
+| **perf** | Performance | `perf(database): Optimize movie query performance` |
+| **ci** | CI/CD changes | `ci: Update GitHub Actions workflow` |
+| **build** | Build system | `build: Configure webpack for production optimization` |
+| **revert** | Reverting | `revert: Revert "feat: broken feature implementation"` |
+
+#### Commit Rules
+
+- **Subject**: 10-72 characters, sentence case, no period
+- **Header**: Maximum 100 characters total
+- **Body**: Optional, blank line after subject, 100 char lines
+- **Footer**: Optional, for breaking changes and issue references
+
+#### Good Examples
 
 ```bash
-# Good examples
-git commit -m "feat(genius): Add 1200+ word episode generation"
-git commit -m "fix(api): Resolve parsing issue in series-episode"
-git commit -m "refactor(prompts): Extract modular prompt system"
+# Simple feature
+feat(movies): Add TMDB API integration for new releases
 
-# Types: feat, fix, docs, style, refactor, test, chore, perf, ci, build
+# Bug fix with context  
+fix(api): Resolve timeout issue in movie search endpoint
+
+The search was timing out after 5 seconds due to inefficient
+database queries. Optimized the query to use proper indexing.
+
+Fixes #234
+
+# Breaking change
+feat(api): Migrate to new authentication system
+
+BREAKING CHANGE: API now requires JWT tokens instead of API keys.
+Update all client applications to use the new auth flow.
+
+# Scoped refactor
+refactor(genius): Extract episode generation to separate service
+
+- Move prompt logic to dedicated service class
+- Add proper error handling and logging
+- Improve testability and maintainability
+
+# Documentation and maintenance
+docs: Update deployment guide with Railway configuration
+chore: Update Node.js to v18 and refresh dependencies
+style: Apply Prettier formatting to 6650+ files
 ```
+
+#### Bad Examples (Will Be Rejected)
+
+```bash
+# Too vague
+fix: stuff
+
+# No description  
+feat:
+
+# Wrong tense
+feat: Added new feature
+
+# Too long
+feat: this is a really long commit message that goes way over the character limit
+
+# Wrong case
+feat: ADD NEW FEATURE FOR USERS
+
+# Ends with period
+feat: Add new feature.
+
+# Missing type
+Add new feature to movies page
+```
+
+#### Common Scopes
+
+- **api**: API endpoints and server logic
+- **movies**: Movie-related features  
+- **genius**: Genius page and episode system
+- **search**: Search functionality
+- **ui**: User interface components
+- **database**: Database operations
+- **build**: Build system and configuration
 
 ### Branch Strategy
 

@@ -245,6 +245,7 @@ const styles = {
     wordWrap: 'break-word',
     hyphens: 'none',
     overflowWrap: 'break-word',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   episodeSubtitle: {
     fontSize: '16px',
@@ -254,6 +255,7 @@ const styles = {
     wordWrap: 'break-word',
     hyphens: 'none',
     overflowWrap: 'break-word',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   episodeContent: {
     fontSize: '15px',
@@ -263,6 +265,7 @@ const styles = {
     backgroundColor: '#ffffff',
     margin: '16px 16px 16px 16px',
     borderRadius: '8px',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   opener: {
     fontSize: '16px',
@@ -274,12 +277,14 @@ const styles = {
     padding: '16px',
     backgroundColor: '#f9fafb',
     borderRadius: '8px',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   textSection: {
     fontSize: '15px',
     color: '#374151',
     lineHeight: '1.6',
     marginBottom: '16px',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   subheadButton: {
     marginTop: '4px',
@@ -301,6 +306,7 @@ const styles = {
     wordWrap: 'break-word',
     hyphens: 'none',
     overflowWrap: 'break-word',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   movieSection: {
     marginTop: '16px',
@@ -337,6 +343,7 @@ const styles = {
     fontWeight: '600',
     color: '#374151',
     marginBottom: '16px',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   loadingContainer: {
     padding: '40px 16px',
@@ -345,6 +352,7 @@ const styles = {
   loadingText: {
     fontSize: '16px',
     color: '#6b7280',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   errorContainer: {
     padding: '40px 16px',
@@ -353,6 +361,7 @@ const styles = {
   errorText: {
     fontSize: '16px',
     color: '#dc2626',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
 
   // Hero Section Styles
@@ -395,6 +404,7 @@ const styles = {
     wordWrap: 'break-word',
     hyphens: 'none',
     overflowWrap: 'break-word',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   heroSubtitle: {
     fontSize: '16px',
@@ -409,6 +419,7 @@ const styles = {
     wordWrap: 'break-word',
     hyphens: 'none',
     overflowWrap: 'break-word',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
 
   // Navigation Styles

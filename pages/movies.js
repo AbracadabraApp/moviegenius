@@ -3,6 +3,7 @@ import PhoneFrame from '../components/PhoneFrame';
 import SimpleSearch from '../components/SimpleSearch';
 import MediaCard from '../components/MediaCard';
 import CategoryBrowse from '../components/CategoryBrowse';
+import ErrorBoundary from '../components/ErrorBoundary';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 
@@ -44,37 +45,40 @@ export default function MoviesPage() {
         <div style={styles.content}>
           {showSearchResults ? (
             /* Search Results */
-            <div style={styles.resultsContainer}>
-              <div style={styles.resultsHeader}>
-                <span>
-                  {searchResults.length} movie{searchResults.length !== 1 ? 's' : ''} found
-                </span>
+            <ErrorBoundary level="section">
+              <div style={styles.resultsContainer}>
+                <div style={styles.resultsHeader}>
+                  <span>
+                    {searchResults.length} movie{searchResults.length !== 1 ? 's' : ''} found
+                  </span>
+                </div>
+                <div style={styles.movieList}>
+                  {searchResults.map((movie, index) => (
+                    <div
+                      key={`${movie.tmdb_id || movie.title}-${index}`}
+                      onClick={() => handleMovieClick(movie)}
+                      style={styles.movieItem}
+                    >
+                      <MediaCard
+                        title={movie.title}
+                        year={movie.year}
+                        initialSlug={movie.slug}
+                        initialPoster={movie.poster_url}
+                        initialStreaming={movie.streaming_data}
+                        tmdbId={movie.tmdb_id}
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
-              <div style={styles.movieList}>
-                {searchResults.map((movie, index) => (
-                  <div
-                    key={`${movie.tmdb_id || movie.title}-${index}`}
-                    onClick={() => handleMovieClick(movie)}
-                    style={styles.movieItem}
-                  >
-                    <MediaCard
-                      title={movie.title}
-                      year={movie.year}
-                      initialSlug={movie.slug}
-                      initialPoster={movie.poster_url}
-                      initialStreaming={movie.streaming_data}
-                      tmdbId={movie.tmdb_id}
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
+            </ErrorBoundary>
           ) : (
             <>
               {/* New Releases Section */}
-              <div style={styles.newReleasesSection}>
-                <h2 style={styles.sectionTitle}>New Releases</h2>
-                <div style={styles.releaseCategories}>
+              <ErrorBoundary level="section">
+                <div style={styles.newReleasesSection}>
+                  <h2 style={styles.sectionTitle}>New Releases</h2>
+                  <div style={styles.releaseCategories}>
                   <div
                     style={styles.releaseButton}
                     onClick={() => handleNewReleaseClick('now-playing')}
@@ -138,11 +142,14 @@ export default function MoviesPage() {
                     <div style={styles.releaseButtonTitle}>Trending</div>
                     <div style={styles.releaseButtonSubtitle}>Popular this week</div>
                   </div>
+                  </div>
                 </div>
-              </div>
+              </ErrorBoundary>
 
               {/* Browse Categories */}
-              <CategoryBrowse />
+              <ErrorBoundary level="section">
+                <CategoryBrowse />
+              </ErrorBoundary>
             </>
           )}
         </div>

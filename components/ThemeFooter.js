@@ -36,7 +36,7 @@ export default function ThemeFooter() {
               textTransform: 'uppercase',
               letterSpacing: '1px',
               color: '#d4af37',
-              fontFamily: 'system-ui, -apple-system, sans-serif',
+              fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
             }}
           >
             Explore Cinema Themes
@@ -80,7 +80,7 @@ const styles = {
     padding: '14px 12px 12px',
     borderRadius: '8px',
     boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segge UI", Roboto, sans-serif',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
 
   section: {
@@ -93,7 +93,7 @@ const styles = {
     color: '#000000',
     margin: '16px 0 16px 0',
     textAlign: 'center',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
 
   // Theme Grid - 2 columns to match EpisodeFooter pattern
@@ -114,7 +114,7 @@ const styles = {
     fontWeight: '500',
     textDecoration: 'none',
     textAlign: 'center',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     lineHeight: '1.2',
     minHeight: '50px',
     display: 'flex',

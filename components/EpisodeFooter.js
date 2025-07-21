@@ -81,7 +81,7 @@ const styles = {
     borderTop: '3px solid #d4af37',
     padding: '48px 20px 40px',
     marginTop: '60px',
-    fontFamily: 'Georgia, "Times New Roman", serif',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
 
   section: {
@@ -94,7 +94,7 @@ const styles = {
     color: '#000000',
     marginBottom: '24px',
     textAlign: 'center',
-    fontFamily: 'Georgia, "Times New Roman", serif',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     letterSpacing: '0.5px',
   },
 
@@ -115,7 +115,7 @@ const styles = {
     textAlign: 'left',
     textDecoration: 'none',
     boxShadow: '0 2px 8px rgba(212, 175, 55, 0.1)',
-    fontFamily: 'Georgia, "Times New Roman", serif',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     display: 'block',
   },
 
@@ -124,7 +124,7 @@ const styles = {
     fontWeight: '600',
     color: '#000000',
     marginBottom: '6px',
-    fontFamily: 'Georgia, "Times New Roman", serif',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
 
   episodeSubtitle: {
@@ -132,6 +132,7 @@ const styles = {
     color: '#4a5568',
     lineHeight: '1.5',
     fontStyle: 'italic',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
 
   // Theme Grid Styles - Enhanced with gold aesthetic
@@ -152,7 +153,7 @@ const styles = {
     fontWeight: '600',
     textDecoration: 'none',
     textAlign: 'center',
-    fontFamily: 'Georgia, "Times New Roman", serif',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     lineHeight: '1.3',
     minHeight: '65px',
     display: 'flex',
