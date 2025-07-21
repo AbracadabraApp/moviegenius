@@ -18,15 +18,93 @@ process.env.NEXT_PUBLIC_TMDB_API_KEY =
 process.env.ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY || 'placeholder-anthropic-key';
 
 const nextConfig = {
-  // Memory and bundle optimizations (simplified for stability)
-  webpack: (config, { webpack }) => {
-    // Basic optimizations only
+  // Memory and bundle optimizations 
+  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+    // 1. Lucide icon tree-shaking optimization
+    if (!dev) {
+      config.resolve.alias = {
+        ...config.resolve.alias,
+        // Tree-shake Lucide icons to only include used ones
+        'lucide-react': 'lucide-react/dist/esm/icons',
+      };
+    }
+    
+    // 2. Moment.js exclusion (MovieGenius uses built-in Date)
     config.plugins.push(
       new webpack.IgnorePlugin({
         resourceRegExp: /^\.\/locale$/,
         contextRegExp: /moment$/,
       })
     );
+    
+    // 3. Exclude nuclear-static and file system modules from client bundle
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        path: false,
+        crypto: false,
+        os: false,
+        stream: false,
+        util: false,
+      };
+    }
+    
+    // 4. Optimize chunk splitting for MovieGenius architecture
+    if (!dev) {
+      config.optimization.splitChunks = {
+        chunks: 'all',
+        minSize: 20000,
+        maxSize: 150000, // Smaller chunks for better loading
+        cacheGroups: {
+          // Framework chunks (React, Next.js)
+          framework: {
+            test: /[\\/]node_modules[\\/](react|react-dom|next)[\\/]/,
+            name: 'framework',
+            chunks: 'all',
+            priority: 40,
+            enforce: true,
+          },
+          // Vendor libraries
+          vendor: {
+            test: /[\\/]node_modules[\\/]/,
+            name: 'vendors',
+            chunks: 'all',
+            priority: 10,
+            enforce: true,
+          },
+          // MovieGenius-specific chunks
+          theme: {
+            test: /[\\/](themes|episodes)[\\/]/,
+            name: 'themes',
+            chunks: 'all',
+            priority: 20,
+          },
+          analysis: {
+            test: /[\\/](analysis|movie-analysis)[\\/]/,
+            name: 'analysis',
+            chunks: 'async', // Load analysis components lazily
+            priority: 30,
+          },
+          // Common components
+          common: {
+            name: 'common',
+            minChunks: 2,
+            chunks: 'all',
+            priority: 5,
+            reuseExistingChunk: true,
+          },
+        },
+      };
+    }
+    
+    // 5. Reduce memory usage during compilation
+    if (!dev) {
+      config.optimization.minimize = true;
+      config.optimization.concatenateModules = true;
+      config.optimization.usedExports = true;
+      config.optimization.sideEffects = false;
+    }
     
     return config;
   },
@@ -64,6 +142,16 @@ const nextConfig = {
   // Production optimizations
   productionBrowserSourceMaps: false,
   poweredByHeader: false,
+  
+  // Reduce bundle size through exclusions
+  excludeDefaultMomentLocales: true,
+  // Temporarily disable modularizeImports to fix icon issues
+  // modularizeImports: {
+  //   'lucide-react': {
+  //     transform: 'lucide-react/dist/esm/icons/{{kebabCase member}}',
+  //     skipDefaultConversion: true,
+  //   },
+  // },
 
   // Cloudflare-optimized headers
   async headers() {
