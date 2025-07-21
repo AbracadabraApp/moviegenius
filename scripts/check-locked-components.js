@@ -30,7 +30,7 @@ const LOCKED_COMPONENTS = {
       },
       {
         name: 'handleCardClick navigation',
-        pattern: /router\.push\(`\/movie\/\$\{movieTmdbId\}`\)/,
+        pattern: /href=\{movieTmdbId \? `\/movie\/\$\{movieTmdbId\}` : '#'\}/,
         required: true,
         errorMsg: 'CRITICAL: TMDB ID navigation logic modified in handleCardClick',
       },
