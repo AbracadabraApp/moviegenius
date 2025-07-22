@@ -1,0 +1,90 @@
+{
+  "generated_at": "2025-07-02T18:34:43.520Z",
+  "movies": [
+    {
+      "title": "City Lights",
+      "year": 1931,
+      "slug": "Love shines brightest in darkness",
+      "file": "Love-shines-brightest-in-darkness.json",
+      "has_trailer": true,
+      "has_analysis": true
+    },
+    {
+      "title": "Gone with the Wind",
+      "year": 1939,
+      "slug": "Epic Civil War romance tests Southern belle's survival",
+      "file": "Epic-Civil-War-romance-tests-Southern-belle-s-survival.json",
+      "has_trailer": true,
+      "has_analysis": true
+    },
+    {
+      "title": "Lincoln",
+      "year": 2012,
+      "slug": "President's fight to end slavery amid Civil War",
+      "file": "President-s-fight-to-end-slavery-amid-Civil-War.json",
+      "has_trailer": false,
+      "has_analysis": true
+    },
+    {
+      "title": "Koyaanisqatsi",
+      "year": 1982,
+      "slug": "Life in chaos: a hypnotic visual symphony",
+      "file": "Life-in-chaos--a-hypnotic-visual-symphony.json",
+      "has_trailer": false,
+      "has_analysis": true
+    },
+    {
+      "title": "The Grandmaster",
+      "year": 2013,
+      "slug": "Fight with honor. Live with fate.",
+      "file": "Fight-with-honor--Live-with-fate-.json",
+      "has_trailer": false,
+      "has_analysis": true
+    },
+    {
+      "title": "Jeanne Dielman, 23 Quai du Commerce, 1080 Bruxelles",
+      "year": 1975,
+      "slug": "Every routine hides a breaking point.",
+      "file": "Every-routine-hides-a-breaking-point-.json",
+      "has_trailer": false,
+      "has_analysis": true
+    },
+    {
+      "title": "Sunrise: A Song of Two Humans",
+      "year": 1927,
+      "slug": "Murnau's visual masterpiece about love and redemption",
+      "file": "Murnau-s-visual-masterpiece-about-love-and-redemption.json",
+      "has_trailer": true,
+      "has_analysis": true
+    },
+    {
+      "title": "Border",
+      "year": 2018,
+      "slug": "Love knows no boundaries. Evil knows no limits.",
+      "file": "Love-knows-no-boundaries--Evil-knows-no-limits-.json",
+      "has_trailer": false,
+      "has_analysis": true
+    },
+    {
+      "title": "12 Angry Men",
+      "year": 1957,
+      "slug": "Justice hangs by a single thread.",
+      "file": "Justice-hangs-by-a-single-thread-.json",
+      "has_trailer": true,
+      "has_analysis": true
+    },
+    {
+      "title": "12 Years a Slave",
+      "year": 2013,
+      "slug": "Freedom has a price that cannot be measured.",
+      "file": "Freedom-has-a-price-that-cannot-be-measured-.json",
+      "has_trailer": false,
+      "has_analysis": true
+    }
+  ],
+  "stats": {
+    "total_generated": 10,
+    "with_trailers": 4,
+    "without_trailers": 6
+  }
+}

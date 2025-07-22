@@ -1,0 +1,286 @@
+{
+  "id": "63299de0-2a8a-40bc-b34f-96c3607080ff",
+  "title": "Border",
+  "year": 2018,
+  "slug": "Love knows no boundaries. Evil knows no limits.",
+  "tmdb_id": 897661,
+  "poster_url": null,
+  "trailer_url": null,
+  "analysis": {
+    "model": "claude-3-5-sonnet-20241022",
+    "source": "entity_analysis_transformation",
+    "sections": [
+      {
+        "type": "text",
+        "content": "Border (Gräns) represents a masterful blend of Nordic folklore and contemporary social commentary. Director Ali Abbasi crafts a unique tale that defies genre conventions, drawing from Swedish mythology while exploring themes of identity and belonging. The film's protagonist, Tina (Eva Melander), is a customs officer with an extraordinary ability to smell human emotions, leading to a profound journey of self-discovery when she meets a mysterious stranger named Vore (Eero Milonoff)."
+      },
+      {
+        "type": "text",
+        "content": "MOVIES: Border|2018|A Swedish customs officer with a supernatural sense of smell discovers her true identity in this genre-defying folk tale|Hulu"
+      },
+      {
+        "type": "text",
+        "content": "The film's exceptional makeup and prosthetic work, which earned an Academy Award nomination, transforms the lead actors while maintaining their ability to convey subtle emotions. This technical achievement builds upon a tradition of practical effects excellence seen in films like The Elephant Man and Pan's Labyrinth, where physical transformations serve both narrative and thematic purposes."
+      },
+      {
+        "type": "text",
+        "content": "MOVIES: The Elephant Man|1980|David Lynch's haunting portrayal of John Merrick, featuring groundbreaking prosthetic makeup|HBO Max\nMOVIES: Pan's Labyrinth|2006|Guillermo del Toro's dark fantasy masterpiece blending practical effects with magical realism|Netflix"
+      },
+      {
+        "type": "text",
+        "content": "Border's exploration of otherness and marginalization connects it to a rich tradition of supernatural allegories in Scandinavian cinema. The film's unflinching approach to sexuality and identity, combined with its noir-tinged criminal subplot, creates a unique viewing experience that challenges audience expectations while remaining deeply rooted in authentic folklore traditions."
+      },
+      {
+        "type": "text",
+        "content": "EXPLORE_FURTHER: Nordic Folklore in Contemporary Cinema\nEXPLORE_FURTHER: The Evolution of Practical Effects and Prosthetic Makeup\nEXPLORE_FURTHER: Gender and Identity in Fantasy Film\nEXPLORE_FURTHER: Contemporary Scandinavian Cinema\nEXPLORE_FURTHER: Mythology as Social Commentary"
+      },
+      {
+        "type": "text",
+        "content": "MORE_IDEAS: Let the Right One In|2008|Swedish vampire drama exploring isolation and childhood|Hulu\nMORE_IDEAS: Trollhunter|2010|Norwegian found footage film about mythological creatures|Amazon Prime\nMORE_IDEAS: The Witch|2015|Period folk horror examining feminine power and isolation|Netflix\nMORE_IDEAS: Under the Skin|2013|Surreal sci-fi about an alien examining human nature|AMC+\nMORE_IDEAS: A Girl Walks Home Alone at Night|2014|Iranian vampire western exploring identity|Shudder\nMORE_IDEAS: The Shape of Water|2017|Fantasy romance about loving the other|HBO Max\nMORE_IDEAS: Thale|2012|Norwegian folklore horror about mysterious forest creature|Tubi\nMORE_IDEAS: Tale of Tales|2015|Dark fantasy anthology based on folk tales|Amazon Prime\nMORE_IDEAS: November|2017|Estonian folk tale with stunning black and white photography|Criterion\nMORE_IDEAS: Possession|1981|Surreal horror exploring identity and relationships|Shudder\nMORE_IDEAS: The Lure|2015|Polish mermaid horror musical|Criterion\nMORE_IDEAS: Thelma|2017|Norwegian supernatural thriller about awakening powers|Hulu\nMORE_IDEAS: Beautiful Beings|2022|Icelandic coming-of-age with mythological elements|MUBI\nMORE_IDEAS: When Animals Dream|2014|Danish werewolf coming-of-age story|AMC+\nMORE_IDEAS: Lamb|2021|Icelandic folk horror about grief and nature|Amazon Prime"
+      }
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": []
+    },
+    "entity_data": {
+      "entities": {
+        "movies": [
+          {
+            "end": 2022,
+            "text": "Let the Right One In",
+            "type": "exact_title",
+            "movie": {
+              "id": "Swedish vampire drama with stark winter imagery",
+              "url": "/movie/Swedish vampire drama with stark winter imagery",
+              "slug": "Swedish vampire drama with stark winter imagery",
+              "year": 2008,
+              "title": "Let the Right One In",
+              "tmdb_id": 13310,
+              "poster_url": "https://image.tmdb.org/t/p/w500/7IG4WjaAOVDlLvLUkh513HSwhW8.jpg",
+              "searchTitle": "let the right one in",
+              "release_date": "2008-10-24",
+              "discovered_at": "2025-05-29T00:57:51.988Z",
+              "streaming_data": "AMC+",
+              "original_claude_title": "Let the Right One In"
+            },
+            "start": 2002,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 2503,
+            "text": "The Shape of Water",
+            "type": "exact_title",
+            "movie": {
+              "id": "Unconventional love story with fantasy elements",
+              "url": "/movie/Unconventional love story with fantasy elements",
+              "slug": "Unconventional love story with fantasy elements",
+              "year": 2017,
+              "title": "The Shape of Water",
+              "tmdb_id": 399055,
+              "poster_url": "https://image.tmdb.org/t/p/w500/9zfwPffUXpBrEP26yp0q1ckXDcj.jpg",
+              "searchTitle": "the shape of water",
+              "release_date": "2017-12-01",
+              "discovered_at": "2025-05-29T23:03:14.003Z",
+              "streaming_data": "Hulu",
+              "original_claude_title": "The Shape of Water"
+            },
+            "start": 2485,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 973,
+            "text": "Pan's Labyrinth",
+            "type": "exact_title",
+            "movie": {
+              "id": "In the falangist Spain of 1944",
+              "url": "/movie/In the falangist Spain of 1944",
+              "slug": "In the falangist Spain of 1944",
+              "year": 2006,
+              "title": "Pan's Labyrinth",
+              "tmdb_id": 1417,
+              "poster_url": "https://image.tmdb.org/t/p/w500/s8C4whhKtDaJvMDcyiMvx3BIF5F.jpg",
+              "searchTitle": "pans labyrinth",
+              "release_date": "2006-10-11",
+              "discovered_at": "2025-05-28T04:44:07.254Z",
+              "streaming_data": null,
+              "original_claude_title": "Pan's Labyrinth"
+            },
+            "start": 958,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 1205,
+            "text": "Pan's Labyrinth",
+            "type": "exact_title",
+            "movie": {
+              "id": "In the falangist Spain of 1944",
+              "url": "/movie/In the falangist Spain of 1944",
+              "slug": "In the falangist Spain of 1944",
+              "year": 2006,
+              "title": "Pan's Labyrinth",
+              "tmdb_id": 1417,
+              "poster_url": "https://image.tmdb.org/t/p/w500/s8C4whhKtDaJvMDcyiMvx3BIF5F.jpg",
+              "searchTitle": "pans labyrinth",
+              "release_date": "2006-10-11",
+              "discovered_at": "2025-05-28T04:44:07.254Z",
+              "streaming_data": null,
+              "original_claude_title": "Pan's Labyrinth"
+            },
+            "start": 1190,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 2308,
+            "text": "Under the Skin",
+            "type": "exact_title",
+            "movie": {
+              "id": "Alien seductress preys on men in Scotland",
+              "url": "/movie/Alien seductress preys on men in Scotland",
+              "slug": "Alien seductress preys on men in Scotland",
+              "year": 2014,
+              "title": "Under the Skin",
+              "tmdb_id": 97370,
+              "poster_url": "https://image.tmdb.org/t/p/w500/55wmcXJIDYITr7JDijJTdvwSaAv.jpg",
+              "searchTitle": "under the skin",
+              "release_date": "2014-03-14",
+              "discovered_at": "2025-05-31T03:53:23.307Z",
+              "streaming_data": "Prime Video",
+              "original_claude_title": "Under the Skin"
+            },
+            "start": 2294,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 2668,
+            "text": "Tale of Tales",
+            "type": "exact_title",
+            "movie": {
+              "id": "tale-of-tales-1979",
+              "url": "/movie/Surreal Soviet animation mixing techniques",
+              "slug": "Surreal Soviet animation mixing techniques",
+              "year": 1979,
+              "title": "Tale of Tales",
+              "poster": "https://image.tmdb.org/t/p/w500/lxikoDWKr9LeQsbHUbNzm8kgElm.jpg",
+              "streaming": "Criterion",
+              "searchTitle": "tale of tales",
+              "discoveredAt": "2025-06-01T22:18:29.618Z"
+            },
+            "start": 2655,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 2407,
+            "text": "Home Alone",
+            "type": "exact_title",
+            "movie": {
+              "id": "An eight-year-old boy defends his home from burglars after his family accidentally leaves him behind on Christmas vacation.",
+              "url": "/movie/An eight-year-old boy defends his home from burglars after his family accidentally leaves him behind on Christmas vacation.",
+              "slug": "An eight-year-old boy defends his home from burglars after his family accidentally leaves him behind on Christmas vacation.",
+              "year": 1990,
+              "title": "Home Alone",
+              "tmdb_id": 771,
+              "poster_url": "https://image.tmdb.org/t/p/w500/onTSipZ8R3bliBdKfPtsDuHTdlL.jpg",
+              "searchTitle": "home alone",
+              "release_date": "1990-11-16",
+              "discovered_at": "2025-05-28T04:47:15.956Z",
+              "streaming_data": null,
+              "original_claude_title": "Home Alone"
+            },
+            "start": 2397,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 2849,
+            "text": "Possession",
+            "type": "exact_title",
+            "movie": {
+              "id": "Supernatural divorce horror with unforgettable performances",
+              "url": "/movie/Supernatural divorce horror with unforgettable performances",
+              "slug": "Supernatural divorce horror with unforgettable performances",
+              "year": 1981,
+              "title": "Possession",
+              "tmdb_id": 21484,
+              "poster_url": "https://image.tmdb.org/t/p/w500/x7ZCYoTjP0spzaCCQ2Fa4Zxej24.jpg",
+              "searchTitle": "possession",
+              "release_date": "1981-05-27",
+              "discovered_at": "2025-05-31T03:30:17.681Z",
+              "streaming_data": "Metrograph",
+              "original_claude_title": "Possession"
+            },
+            "start": 2839,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 1794,
+            "text": "Evolution",
+            "type": "exact_title",
+            "movie": {
+              "id": "Strange experiments in a seaside hospital",
+              "url": "/movie/Strange experiments in a seaside hospital",
+              "slug": "Strange experiments in a seaside hospital",
+              "year": 2016,
+              "title": "Evolution",
+              "tmdb_id": 330770,
+              "poster_url": "https://image.tmdb.org/t/p/w500/sLluKqBaGl0NLOFTtoXLXN9u9G6.jpg",
+              "searchTitle": "evolution",
+              "release_date": "2016-03-16",
+              "discovered_at": "2025-05-31T05:39:18.794Z",
+              "streaming_data": "Shudder",
+              "original_claude_title": "Evolution"
+            },
+            "start": 1785,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 2210,
+            "text": "The Witch",
+            "type": "exact_title",
+            "movie": {
+              "id": "Puritan family faces evil forces in isolated New England",
+              "url": "/movie/Puritan family faces evil forces in isolated New England",
+              "slug": "Puritan family faces evil forces in isolated New England",
+              "year": 2016,
+              "title": "The Witch",
+              "tmdb_id": 310131,
+              "poster_url": "https://image.tmdb.org/t/p/w500/zap5hpFCWSvdWSuPGAQyjUv2wAC.jpg",
+              "searchTitle": "the witch",
+              "release_date": "2016-02-19",
+              "discovered_at": "2025-05-31T05:21:10.922Z",
+              "streaming_data": "Showtime",
+              "original_claude_title": "The Witch"
+            },
+            "start": 2201,
+            "context": "general",
+            "confidence": 0.85
+          }
+        ],
+        "people": []
+      }
+    },
+    "raw_content": "PARAGRAPH: Border (Gräns) represents a masterful blend of Nordic folklore and contemporary social commentary. Director Ali Abbasi crafts a unique tale that defies genre conventions, drawing from Swedish mythology while exploring themes of identity and belonging. The film's protagonist, Tina (Eva Melander), is a customs officer with an extraordinary ability to smell human emotions, leading to a profound journey of self-discovery when she meets a mysterious stranger named Vore (Eero Milonoff).\n\nMOVIES: Border|2018|A Swedish customs officer with a supernatural sense of smell discovers her true identity in this genre-defying folk tale|Hulu\n\nPARAGRAPH: The film's exceptional makeup and prosthetic work, which earned an Academy Award nomination, transforms the lead actors while maintaining their ability to convey subtle emotions. This technical achievement builds upon a tradition of practical effects excellence seen in films like The Elephant Man and Pan's Labyrinth, where physical transformations serve both narrative and thematic purposes.\n\nMOVIES: The Elephant Man|1980|David Lynch's haunting portrayal of John Merrick, featuring groundbreaking prosthetic makeup|HBO Max\nMOVIES: Pan's Labyrinth|2006|Guillermo del Toro's dark fantasy masterpiece blending practical effects with magical realism|Netflix\n\nPARAGRAPH: Border's exploration of otherness and marginalization connects it to a rich tradition of supernatural allegories in Scandinavian cinema. The film's unflinching approach to sexuality and identity, combined with its noir-tinged criminal subplot, creates a unique viewing experience that challenges audience expectations while remaining deeply rooted in authentic folklore traditions.\n\nEXPLORE_FURTHER: Nordic Folklore in Contemporary Cinema\nEXPLORE_FURTHER: The Evolution of Practical Effects and Prosthetic Makeup\nEXPLORE_FURTHER: Gender and Identity in Fantasy Film\nEXPLORE_FURTHER: Contemporary Scandinavian Cinema\nEXPLORE_FURTHER: Mythology as Social Commentary\n\nMORE_IDEAS: Let the Right One In|2008|Swedish vampire drama exploring isolation and childhood|Hulu\nMORE_IDEAS: Trollhunter|2010|Norwegian found footage film about mythological creatures|Amazon Prime\nMORE_IDEAS: The Witch|2015|Period folk horror examining feminine power and isolation|Netflix\nMORE_IDEAS: Under the Skin|2013|Surreal sci-fi about an alien examining human nature|AMC+\nMORE_IDEAS: A Girl Walks Home Alone at Night|2014|Iranian vampire western exploring identity|Shudder\nMORE_IDEAS: The Shape of Water|2017|Fantasy romance about loving the other|HBO Max\nMORE_IDEAS: Thale|2012|Norwegian folklore horror about mysterious forest creature|Tubi\nMORE_IDEAS: Tale of Tales|2015|Dark fantasy anthology based on folk tales|Amazon Prime\nMORE_IDEAS: November|2017|Estonian folk tale with stunning black and white photography|Criterion\nMORE_IDEAS: Possession|1981|Surreal horror exploring identity and relationships|Shudder\nMORE_IDEAS: The Lure|2015|Polish mermaid horror musical|Criterion\nMORE_IDEAS: Thelma|2017|Norwegian supernatural thriller about awakening powers|Hulu\nMORE_IDEAS: Beautiful Beings|2022|Icelandic coming-of-age with mythological elements|MUBI\nMORE_IDEAS: When Animals Dream|2014|Danish werewolf coming-of-age story|AMC+\nMORE_IDEAS: Lamb|2021|Icelandic folk horror about grief and nature|Amazon Prime",
+    "generated_at": "2025-06-10T00:15:10.589Z",
+    "input_tokens": 319,
+    "cost_estimate": 0.012957,
+    "output_tokens": 800,
+    "transformedAt": "2025-06-28T08:01:12.095Z",
+    "exploreFurther": [
+      "Border director's filmography and style",
+      "Border soundtrack and musical themes"
+    ],
+    "transformation_completed": true
+  },
+  "generated_at": "2025-07-02T18:34:43.525Z",
+  "static_url": "/movie/Love knows no boundaries. Evil knows no limits.",
+  "has_trailer": false,
+  "has_analysis": true
+}

@@ -1,0 +1,313 @@
+{
+  "id": "ba97c81f-5912-48bf-9f04-689275597648",
+  "title": "Sunrise: A Song of Two Humans",
+  "year": 1927,
+  "slug": "Murnau's visual masterpiece about love and redemption",
+  "tmdb_id": 631,
+  "poster_url": "https://image.tmdb.org/t/p/w500/oj8ZW8jKXBSs8F1e5iWsTUeXSJW.jpg",
+  "trailer_url": "PCgbFay53BA",
+  "analysis": {
+    "model": "claude-3-5-sonnet-20241022",
+    "source": "entity_analysis_transformation",
+    "sections": [
+      {
+        "type": "text",
+        "content": "F.W. Murnau's \"Sunrise: A Song of Two Humans\" (1927) stands as one of the most influential and technically innovative films of the silent era. Following his success with \"Nosferatu\" (1922) in Germany, Murnau was brought to Hollywood by William Fox, where he created this masterpiece of visual storytelling that would help define the language of cinema.\nMOVIES: Sunrise: A Song of Two Humans|1927|A married farmer falls for a seductive woman from the city who convinces him to murder his wife, leading to a powerful story of redemption and love|Criterion Channel\nMOVIES: Nosferatu|1922|The unauthorized adaptation of Bram Stoker's Dracula, featuring Max Schreck as the haunting Count Orlok|Tubi"
+      },
+      {
+        "type": "text",
+        "content": "The film's groundbreaking cinematography by Charles Rosher and Karl Struss employed revolutionary camera movements, forced perspective, and superimpositions that were years ahead of their time. The famous tracking shot through the marsh and the bustling city sequences demonstrate a mastery of both naturalistic and expressionistic techniques that would influence generations of filmmakers."
+      },
+      {
+        "type": "text",
+        "content": "The universal story of temptation, betrayal, and redemption is told with such visual poetry that it transcends its era. The film shares thematic DNA with later works like \"L'Atalante\" (1934) and \"The Night of the Hunter\" (1955), where water imagery and the contrast between rural and urban life play crucial symbolic roles.\nMOVIES: L'Atalante|1934|Jean Vigo's masterpiece about newlyweds living on a river barge, blending realism with poetic imagery|Criterion Channel\nMOVIES: The Night of the Hunter|1955|Charles Laughton's only directorial effort, following a sinister preacher pursuing two children along a river|HBO Max"
+      },
+      {
+        "type": "text",
+        "content": "EXPLORE_FURTHER: German Expressionism's Influence on Hollywood Cinema\nEXPLORE_FURTHER: Evolution of Camera Movement Techniques in Silent Film\nEXPLORE_FURTHER: The Rural vs. Urban Divide in Early Cinema\nEXPLORE_FURTHER: Murnau's Visual Style and Legacy\nEXPLORE_FURTHER: Silent Film Acting Techniques and Performance"
+      },
+      {
+        "type": "text",
+        "content": "MORE_IDEAS: Faust|1926|Murnau's last German film, a supernatural tale of temptation|Criterion Channel\nMORE_IDEAS: City Girl|1930|Murnau's penultimate film about rural-urban dynamics|Criterion Channel\nMORE_IDEAS: The Last Laugh|1924|Emil Jannings as a hotel doorman stripped of his position|Criterion Channel\nMORE_IDEAS: Tabu|1931|Murnau's final film, a tragic love story set in the South Seas|Criterion Channel\nMORE_IDEAS: The Cabinet of Dr. Caligari|1920|Influential German Expressionist horror film|Tubi\nMORE_IDEAS: Metropolis|1927|Fritz Lang's groundbreaking sci-fi about class struggle|Multiple\nMORE_IDEAS: City Lights|1931|Chaplin's masterful silent romantic comedy|HBO Max\nMORE_IDEAS: The Crowd|1928|King Vidor's examination of urban life|TCM\nMORE_IDEAS: Pandora's Box|1929|Louise Brooks in G.W. Pabst's tragic drama|Criterion Channel\nMORE_IDEAS: The Wind|1928|Lillian Gish battles nature and isolation|TCM\nMORE_IDEAS: The Passion of Joan of Arc|1928|Dreyer's intense spiritual drama|Criterion Channel\nMORE_IDEAS: Der Golem|1920|Jewish folklore meets German Expressionism|Multiple\nMORE_IDEAS: The Gold Rush|1925|Chaplin's Alaskan adventure comedy|Multiple\nMORE_IDEAS: The General|1926|Buster Keaton's Civil War epic|Multiple\nMORE_IDEAS: The Unknown|1927|Tod Browning's twisted circus drama|TCM"
+      }
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": []
+    },
+    "entity_data": {
+      "entities": {
+        "movies": [
+          {
+            "end": 63,
+            "text": "Murnau's \"Sunrise: A Song of Two Humans\" (1927)",
+            "type": "title_with_year",
+            "movie": {
+              "id": "Lyrical story of marriage and redemption",
+              "url": "/movie/Lyrical story of marriage and redemption",
+              "slug": "Lyrical story of marriage and redemption",
+              "year": 1927,
+              "title": "Sunrise: A Song of Two Humans",
+              "tmdb_id": 631,
+              "poster_url": "https://image.tmdb.org/t/p/w500/oj8ZW8jKXBSs8F1e5iWsTUeXSJW.jpg",
+              "searchTitle": "sunrise a song of two humans",
+              "release_date": "1927-11-04",
+              "discovered_at": "2025-05-29T00:00:22.375Z",
+              "streaming_data": "Criterion Channel",
+              "original_claude_title": "Sunrise: A Song of Two Humans"
+            },
+            "start": 15,
+            "context": "general",
+            "confidence": 0.95
+          },
+          {
+            "end": 1347,
+            "text": "and \"The Night of the Hunter\" (1955)",
+            "type": "title_with_year",
+            "movie": {
+              "id": "Menacing preacher stalks children in Southern Gothic thriller",
+              "url": "/movie/Menacing preacher stalks children in Southern Gothic thriller",
+              "slug": "Menacing preacher stalks children in Southern Gothic thriller",
+              "year": 1955,
+              "title": "The Night of the Hunter",
+              "tmdb_id": 3112,
+              "poster_url": "https://image.tmdb.org/t/p/w500/rBka0nFWiHxabHRLr0KfIA8Yiaq.jpg",
+              "searchTitle": "the night of the hunter",
+              "release_date": "1955-07-27",
+              "discovered_at": "2025-05-31T06:02:41.661Z",
+              "streaming_data": "HBO Max",
+              "original_claude_title": "The Night of the Hunter"
+            },
+            "start": 1310,
+            "context": "general",
+            "confidence": 0.95
+          },
+          {
+            "end": 192,
+            "text": "\"Nosferatu\"",
+            "type": "quoted_title",
+            "movie": {
+              "id": "Unauthorized Dracula adaptation with groundbreaking horror imagery",
+              "url": "/movie/Unauthorized Dracula adaptation with groundbreaking horror imagery",
+              "slug": "Unauthorized Dracula adaptation with groundbreaking horror imagery",
+              "year": 1922,
+              "title": "Nosferatu",
+              "tmdb_id": 653,
+              "poster_url": "https://image.tmdb.org/t/p/w500/zv7J85D8CC9qYagAEhPM63CIG6j.jpg",
+              "searchTitle": "nosferatu",
+              "release_date": "1922-02-16",
+              "discovered_at": "2025-05-29T00:00:21.078Z",
+              "streaming_data": "Free on Archive.org",
+              "original_claude_title": "Nosferatu"
+            },
+            "start": 181,
+            "context": "general",
+            "confidence": 0.9
+          },
+          {
+            "end": 401,
+            "text": "Sunrise: A Song of Two Humans",
+            "type": "exact_title",
+            "movie": {
+              "id": "Lyrical story of marriage and redemption",
+              "url": "/movie/Lyrical story of marriage and redemption",
+              "slug": "Lyrical story of marriage and redemption",
+              "year": 1927,
+              "title": "Sunrise: A Song of Two Humans",
+              "tmdb_id": 631,
+              "poster_url": "https://image.tmdb.org/t/p/w500/oj8ZW8jKXBSs8F1e5iWsTUeXSJW.jpg",
+              "searchTitle": "sunrise a song of two humans",
+              "release_date": "1927-11-04",
+              "discovered_at": "2025-05-29T00:00:22.375Z",
+              "streaming_data": "Criterion Channel",
+              "original_claude_title": "Sunrise: A Song of Two Humans"
+            },
+            "start": 372,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 2510,
+            "text": "The Cabinet of Dr. Caligari",
+            "type": "exact_title",
+            "movie": {
+              "id": "German Expressionist horror masterpiece",
+              "url": "/movie/German Expressionist horror masterpiece",
+              "slug": "German Expressionist horror masterpiece",
+              "year": 1920,
+              "title": "The Cabinet of Dr. Caligari",
+              "tmdb_id": 234,
+              "poster_url": "https://image.tmdb.org/t/p/w500/myK9DeIsXWGKgUTZyGXg2IfFk0W.jpg",
+              "searchTitle": "the cabinet of dr caligari",
+              "release_date": "1920-02-27",
+              "discovered_at": "2025-05-29T00:00:22.035Z",
+              "streaming_data": "Free on Archive.org",
+              "original_claude_title": "The Cabinet of Dr. Caligari"
+            },
+            "start": 2483,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 3011,
+            "text": "The Passion of Joan of Arc",
+            "type": "exact_title",
+            "movie": {
+              "id": "Powerful historical drama with revolutionary close-up techniques",
+              "url": "/movie/Powerful historical drama with revolutionary close-up techniques",
+              "slug": "Powerful historical drama with revolutionary close-up techniques",
+              "year": 1928,
+              "title": "The Passion of Joan of Arc",
+              "tmdb_id": 780,
+              "poster_url": "https://image.tmdb.org/t/p/w500/plzI7N52uHhERUZLNSVbGGakFwR.jpg",
+              "searchTitle": "the passion of joan of arc",
+              "release_date": "1928-04-21",
+              "discovered_at": "2025-05-29T00:00:21.502Z",
+              "streaming_data": "HBO Max",
+              "original_claude_title": "The Passion of Joan of Arc"
+            },
+            "start": 2985,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 1619,
+            "text": "The Night of the Hunter",
+            "type": "exact_title",
+            "movie": {
+              "id": "Menacing preacher stalks children in Southern Gothic thriller",
+              "url": "/movie/Menacing preacher stalks children in Southern Gothic thriller",
+              "slug": "Menacing preacher stalks children in Southern Gothic thriller",
+              "year": 1955,
+              "title": "The Night of the Hunter",
+              "tmdb_id": 3112,
+              "poster_url": "https://image.tmdb.org/t/p/w500/rBka0nFWiHxabHRLr0KfIA8Yiaq.jpg",
+              "searchTitle": "the night of the hunter",
+              "release_date": "1955-07-27",
+              "discovered_at": "2025-05-31T06:02:41.661Z",
+              "streaming_data": "HBO Max",
+              "original_claude_title": "The Night of the Hunter"
+            },
+            "start": 1596,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 2286,
+            "text": "The Last Laugh",
+            "type": "exact_title",
+            "movie": {
+              "id": "German film about hotel doorman's fall from grace",
+              "url": "/movie/German film about hotel doorman's fall from grace",
+              "slug": "German film about hotel doorman's fall from grace",
+              "year": 1924,
+              "title": "The Last Laugh",
+              "tmdb_id": 5991,
+              "poster_url": "https://image.tmdb.org/t/p/w500/7Y6Dxr3oYt1w7ew70YNdLLDYEjk.jpg",
+              "searchTitle": "the last laugh",
+              "release_date": "1924-12-23",
+              "discovered_at": "2025-05-29T00:00:22.248Z",
+              "streaming_data": "Free on Archive.org",
+              "original_claude_title": "The Last Laugh"
+            },
+            "start": 2272,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 2834,
+            "text": "Pandora's Box",
+            "type": "exact_title",
+            "movie": {
+              "id": "Louise Brooks as tragic free spirit",
+              "url": "/movie/Louise Brooks as tragic free spirit",
+              "slug": "Louise Brooks as tragic free spirit",
+              "year": 1929,
+              "title": "Pandora's Box",
+              "tmdb_id": 905,
+              "poster_url": "https://image.tmdb.org/t/p/w500/qlAMlgm8lm859GkxSpbr2ziixXE.jpg",
+              "searchTitle": "pandoras box",
+              "release_date": "1929-01-30",
+              "discovered_at": "2025-05-29T00:00:23.527Z",
+              "streaming_data": "Criterion Channel",
+              "original_claude_title": "Pandora's Box"
+            },
+            "start": 2821,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 3172,
+            "text": "The Gold Rush",
+            "type": "exact_title",
+            "movie": {
+              "id": "Chaplin comedy set in Klondike Gold Rush",
+              "url": "/movie/Chaplin comedy set in Klondike Gold Rush",
+              "slug": "Chaplin comedy set in Klondike Gold Rush",
+              "year": 1925,
+              "title": "The Gold Rush",
+              "tmdb_id": 962,
+              "poster_url": "https://image.tmdb.org/t/p/w500/eQRFo1qwRREYwj47Yoe1PisgOle.jpg",
+              "searchTitle": "the gold rush",
+              "release_date": "1925-07-13",
+              "discovered_at": "2025-05-29T00:00:22.143Z",
+              "streaming_data": "Criterion Channel",
+              "original_claude_title": "The Gold Rush"
+            },
+            "start": 3159,
+            "context": "general",
+            "confidence": 0.85
+          }
+        ],
+        "people": [
+          {
+            "end": 26,
+            "text": "'s \"",
+            "type": "quoted_name",
+            "start": 22,
+            "person": {
+              "bio": "Robert Eggers is an American filmmaker known for his period horror films. His work is characterized by meticulous historical research and atmospheric storytelling.",
+              "name": "Robert Eggers",
+              "slug": "robert-eggers",
+              "avatar": "/people/robert-eggers.jpg",
+              "imdbId": "nm4738517",
+              "tmdbId": 1208719,
+              "category": "director",
+              "knownFor": [
+                "The Witch",
+                "The Lighthouse",
+                "The Northman"
+              ],
+              "birthYear": 1983,
+              "createdAt": "2025-01-01T00:00:00.000Z",
+              "updatedAt": "2025-01-01T00:00:00.000Z",
+              "nationality": "American",
+              "subCategories": [
+                "screenwriter"
+              ]
+            },
+            "context": "general",
+            "confidence": 0.85
+          }
+        ]
+      }
+    },
+    "raw_content": "PARAGRAPH: F.W. Murnau's \"Sunrise: A Song of Two Humans\" (1927) stands as one of the most influential and technically innovative films of the silent era. Following his success with \"Nosferatu\" (1922) in Germany, Murnau was brought to Hollywood by William Fox, where he created this masterpiece of visual storytelling that would help define the language of cinema.\nMOVIES: Sunrise: A Song of Two Humans|1927|A married farmer falls for a seductive woman from the city who convinces him to murder his wife, leading to a powerful story of redemption and love|Criterion Channel\nMOVIES: Nosferatu|1922|The unauthorized adaptation of Bram Stoker's Dracula, featuring Max Schreck as the haunting Count Orlok|Tubi\n\nPARAGRAPH: The film's groundbreaking cinematography by Charles Rosher and Karl Struss employed revolutionary camera movements, forced perspective, and superimpositions that were years ahead of their time. The famous tracking shot through the marsh and the bustling city sequences demonstrate a mastery of both naturalistic and expressionistic techniques that would influence generations of filmmakers.\n\nPARAGRAPH: The universal story of temptation, betrayal, and redemption is told with such visual poetry that it transcends its era. The film shares thematic DNA with later works like \"L'Atalante\" (1934) and \"The Night of the Hunter\" (1955), where water imagery and the contrast between rural and urban life play crucial symbolic roles.\nMOVIES: L'Atalante|1934|Jean Vigo's masterpiece about newlyweds living on a river barge, blending realism with poetic imagery|Criterion Channel\nMOVIES: The Night of the Hunter|1955|Charles Laughton's only directorial effort, following a sinister preacher pursuing two children along a river|HBO Max\n\nEXPLORE_FURTHER: German Expressionism's Influence on Hollywood Cinema\nEXPLORE_FURTHER: Evolution of Camera Movement Techniques in Silent Film\nEXPLORE_FURTHER: The Rural vs. Urban Divide in Early Cinema\nEXPLORE_FURTHER: Murnau's Visual Style and Legacy\nEXPLORE_FURTHER: Silent Film Acting Techniques and Performance\n\nMORE_IDEAS: Faust|1926|Murnau's last German film, a supernatural tale of temptation|Criterion Channel\nMORE_IDEAS: City Girl|1930|Murnau's penultimate film about rural-urban dynamics|Criterion Channel\nMORE_IDEAS: The Last Laugh|1924|Emil Jannings as a hotel doorman stripped of his position|Criterion Channel\nMORE_IDEAS: Tabu|1931|Murnau's final film, a tragic love story set in the South Seas|Criterion Channel\nMORE_IDEAS: The Cabinet of Dr. Caligari|1920|Influential German Expressionist horror film|Tubi\nMORE_IDEAS: Metropolis|1927|Fritz Lang's groundbreaking sci-fi about class struggle|Multiple\nMORE_IDEAS: City Lights|1931|Chaplin's masterful silent romantic comedy|HBO Max\nMORE_IDEAS: The Crowd|1928|King Vidor's examination of urban life|TCM\nMORE_IDEAS: Pandora's Box|1929|Louise Brooks in G.W. Pabst's tragic drama|Criterion Channel\nMORE_IDEAS: The Wind|1928|Lillian Gish battles nature and isolation|TCM\nMORE_IDEAS: The Passion of Joan of Arc|1928|Dreyer's intense spiritual drama|Criterion Channel\nMORE_IDEAS: Der Golem|1920|Jewish folklore meets German Expressionism|Multiple\nMORE_IDEAS: The Gold Rush|1925|Chaplin's Alaskan adventure comedy|Multiple\nMORE_IDEAS: The General|1926|Buster Keaton's Civil War epic|Multiple\nMORE_IDEAS: The Unknown|1927|Tod Browning's twisted circus drama|TCM",
+    "generated_at": "2025-06-10T00:01:15.790Z",
+    "input_tokens": 327,
+    "cost_estimate": 0.014706,
+    "output_tokens": 915,
+    "transformedAt": "2025-06-28T08:01:11.965Z",
+    "exploreFurther": [
+      "Sunrise: A Song of Two Humans director's filmography and style",
+      "Visual techniques and cinematography in Sunrise: A Song of Two Humans",
+      "Sunrise: A Song of Two Humans's cultural impact and legacy",
+      "Key performances and acting in Sunrise: A Song of Two Humans"
+    ],
+    "transformation_completed": true
+  },
+  "generated_at": "2025-07-02T18:34:43.525Z",
+  "static_url": "/movie/Murnau's visual masterpiece about love and redemption",
+  "has_trailer": true,
+  "has_analysis": true
+}

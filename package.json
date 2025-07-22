@@ -8,7 +8,7 @@
     "fix:cache:deep": "rm -rf .next && rm -rf node_modules/.cache && npm run dev",
     "fix:cache:nuclear": "rm -rf .next && rm -rf node_modules && npm install && npm run dev",
     "dev": "next dev",
-    "build": "NODE_OPTIONS='--max-old-space-size=4096' next build",
+    "build": "node scripts/deploy-nuclear-static.js && NODE_OPTIONS='--max-old-space-size=4096' next build",
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
