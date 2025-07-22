@@ -18,16 +18,26 @@ process.env.NEXT_PUBLIC_TMDB_API_KEY =
 process.env.ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY || 'placeholder-anthropic-key';
 
 const nextConfig = {
-  // Memory and bundle optimizations 
+  // Simplified webpack config for development server stability
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
-    // 1. Lucide icon tree-shaking optimization
-    if (!dev) {
-      config.resolve.alias = {
-        ...config.resolve.alias,
-        // Tree-shake Lucide icons to only include used ones
-        'lucide-react': 'lucide-react/dist/esm/icons',
-      };
+    // Skip complex optimizations in development mode
+    if (dev) {
+      // Only basic plugins for development
+      config.plugins.push(
+        new webpack.IgnorePlugin({
+          resourceRegExp: /^\.\/locale$/,
+          contextRegExp: /moment$/,
+        })
+      );
+      return config;
     }
+    
+    // Production optimizations (only when not in dev mode)
+    // 1. Lucide icon tree-shaking optimization (disabled temporarily for stability)
+    // config.resolve.alias = {
+    //   ...config.resolve.alias,
+    //   'lucide-react': 'lucide-react/dist/esm/icons',
+    // };
     
     // 2. Moment.js exclusion (MovieGenius uses built-in Date)
     config.plugins.push(
