@@ -334,11 +334,6 @@ export default function MovieHeaderLarge({
           {showAddedAnimation && <div style={styles.addedAnimation}>+ added</div>}
         </div>
 
-        {/* Title and year below poster */}
-        <div style={styles.titleContainer}>
-          <div style={styles.title}>{title}</div>
-          <div style={styles.year}>({year})</div>
-        </div>
 
         {/* Streaming availability - only show if we have valid data (not TBD placeholder) 
           TBD = placeholder when TMDB/Claude APIs haven't provided streaming data yet */}
@@ -391,6 +386,7 @@ const styles = {
     fontFamily:
       '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     position: 'relative', // For positioning the action bar
+    marginBottom: '0px',
   },
   actionBarContainer: {
     position: 'absolute',
@@ -437,11 +433,11 @@ const styles = {
   posterContainer: {
     display: 'flex',
     justifyContent: 'flex-start',
-    marginBottom: '5px',
+    marginBottom: '0px',
     paddingLeft: '20px',
     paddingRight: '20px',
     paddingTop: '0px',
-    paddingBottom: '5px',
+    paddingBottom: '0px',
   },
   largePoster: {
     width: '100%', // Fill container width
