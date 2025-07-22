@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "People of the Wind",
+    "year": 1976,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/lh3aIm9EchZ1BgoYc4R0gP5iJNM.jpg",
+    "initialStreaming": null,
+    "tmdbId": 149347,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**People of the Wind** (1976) stands as a remarkable ethnographic documentary capturing the epic migration of Iran's Bakhtiari tribes. Following in the tradition of groundbreaking films like <a href=\"/movie/115132\" class=\"movie-title\">Grass: A Nation's Battle for Life</a> (1925), which first documented the Bakhtiari migration, director Anthony Howarth and his team spent months with the nomads during their grueling journey. The film's stunning 16mm cinematography showcases 500 families crossing treacherous mountain passes and raging rivers with 50,000 animals - an ancient tradition that was already beginning to vanish when captured on film."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Grass: A Nation's Battle for Life",
+            "year": 1925,
+            "slug": "Pioneering documentary following Bakhtiari tribes across Persia, shot by Merian C. Cooper and Ernest B. Schoedsack",
+            "poster": "https://image.tmdb.org/t/p/w500/djZ2jwO0C0ZFq0rGSBACMjW3qF.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 115132,
+            "poster_url": "https://image.tmdb.org/t/p/w500/djZ2jwO0C0ZFq0rGSBACMjW3qF.jpg"
+          },
+          {
+            "title": "Latcho Drom",
+            "year": 1993,
+            "slug": "Musical documentary following Roma people's migration from India to Spain",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "N/A",
+            "tmdb_id": 47105
+          },
+          {
+            "title": "Salt",
+            "year": 2009,
+            "slug": "Documentary on the last traditional salt gatherers in the Himalayas",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "N/A",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film represents a vital moment in observational documentary filmmaking, emerging in an era when directors like Frederick Wiseman (**Titicut Follies** (1967)) and the Maysles brothers (**Grey Gardens** (1975)) were pushing the boundaries of direct cinema. **People of the Wind** distinguishes itself through its patient observation of both the grand spectacle of mass migration and intimate family moments, accompanied by Anthony Howarth's thoughtful narration that contextualizes without overshadowing the visual story."
+      },
+      {
+        "type": "text",
+        "content": "Beyond its ethnographic significance, **People of the Wind** shares DNA with other landmark documentaries about vanishing ways of life, like Robert Flaherty's <a href=\"/movie/669\" class=\"movie-title\">Nanook of the North</a> (1922) and **Man of Aran** (1934). The film earned an Academy Award nomination for Best Documentary Feature, highlighting Hollywood's growing recognition of observational documentary as a powerful artistic medium. SUBHEAD: Legacy and Cultural Impact"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Nanook of the North",
+            "year": 1922,
+            "slug": "Revolutionary documentary following an Inuk man and his family in the Canadian Arctic",
+            "poster": "https://image.tmdb.org/t/p/w500/9WAboi1QbKu41WkyGxQVNpXwwxx.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 669,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9WAboi1QbKu41WkyGxQVNpXwwxx.jpg"
+          },
+          {
+            "title": "The Last Migration",
+            "year": 2020,
+            "slug": "Documentary tracking nomadic herders in Mongolia facing climate change",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "N/A",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends into contemporary works documenting nomadic peoples and traditional lifestyles, such as **The Story of the Weeping Camel** (2003) and **The Eagle Huntress** (2016). Modern filmmakers continue to grapple with similar themes of tradition versus modernity, though few achieve the intimate access and comprehensive scope of Howarth's work with the Bakhtiari."
+      }
+    ],
+    "exploreFurther": [
+      "The History of Ethnographic Filmmaking",
+      "Iranian Nomadic Tribes and Their Cultural Heritage",
+      "Evolution of Observational Documentary Techniques",
+      "Environmental Challenges Facing Modern Nomadic Peoples",
+      "The Role of Music in Nomadic Culture Documentation"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Baraka",
+          "year": 1992,
+          "slug": "Non-verbal documentary exploring themes of humanity and nature",
+          "poster": "https://image.tmdb.org/t/p/w500/ldEuJQ4z7zEvL7iXraESWBUfQcz.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 14002,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ldEuJQ4z7zEvL7iXraESWBUfQcz.jpg"
+        },
+        {
+          "title": "Samsara",
+          "year": 2011,
+          "slug": "Visual documentary examining life cycles and human civilization",
+          "poster": "https://image.tmdb.org/t/p/w500/qodkea4k0pNUmNTl5TJO2PdTqgW.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 89708,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qodkea4k0pNUmNTl5TJO2PdTqgW.jpg"
+        },
+        {
+          "title": "The Last Nomads",
+          "year": 2008,
+          "slug": "Documentary on Kazakhstan's remaining nomadic peoples",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "N/A",
+          "tmdb_id": null
+        },
+        {
+          "title": "In Spring",
+          "year": 1963,
+          "slug": "Japanese documentary about seasonal migration of reindeer herders",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "N/A",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Cave of Forgotten Dreams",
+          "year": 2010,
+          "slug": "Herzog's exploration of ancient human migration through cave art",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Walking with Nomads",
+          "year": 2015,
+          "slug": "BBC documentary series on modern nomadic peoples",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BBC",
+          "tmdb_id": null
+        },
+        {
+          "title": "Himalaya",
+          "year": 1999,
+          "slug": "Drama-documentary about Tibetan mountain communities",
+          "poster": "https://image.tmdb.org/t/p/w500/zppCfYBl0kRTpD9T0KTlZG5ZpWw.jpg",
+          "initialStreaming": "N/A",
+          "tmdb_id": 26813,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zppCfYBl0kRTpD9T0KTlZG5ZpWw.jpg"
+        },
+        {
+          "title": "The Reindeer People",
+          "year": 2007,
+          "slug": "Documentary about Siberian indigenous herders",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "N/A",
+          "tmdb_id": null
+        },
+        {
+          "title": "Desert Dreamers",
+          "year": 2000,
+          "slug": "Australian aboriginal nomadic traditions documentary",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "N/A",
+          "tmdb_id": null
+        },
+        {
+          "title": "Seasons",
+          "year": 2015,
+          "slug": "Nature documentary examining migration patterns",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "N/A",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

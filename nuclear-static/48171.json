@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "The Rite",
+    "year": 2011,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/gRTxM95huMwIDfZBJWjuifMTfpx.jpg",
+    "initialStreaming": null,
+    "tmdbId": 48171,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Rite** (2011) stands as a notable entry in the modern religious horror genre, following the path carved by <a href=\"/movie/9552\" class=\"movie-title\">The Exorcist</a> (1973). Anthony Hopkins delivers a haunting performance as Father Lucas Trevant, bringing gravitas to a film that explores crisis of faith through the lens of exorcism. The movie distinguishes itself by grounding supernatural elements in theological study and clerical procedure, similar to <a href=\"/movie/8643\" class=\"movie-title\">The Exorcism of Emily Rose</a> (2005), which also balanced courtroom drama with demonic possession."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Exorcist",
+            "year": 1973,
+            "slug": "The definitive possession horror film following a young girl's demonic possession and two priests' attempts to save her",
+            "poster": "https://image.tmdb.org/t/p/w500/5x0CeVHJI8tcDx8tUUwYHQSNILq.jpg",
+            "initialStreaming": "Max, AMC+",
+            "tmdb_id": 9552,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5x0CeVHJI8tcDx8tUUwYHQSNILq.jpg"
+          },
+          {
+            "title": "The Exorcism of Emily Rose",
+            "year": 2005,
+            "slug": "A courtroom drama meets supernatural horror as a priest faces charges after a failed exorcism",
+            "poster": "https://image.tmdb.org/t/p/w500/qMN0HIP34f736kkQcfvTfmL9TP3.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 8643,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qMN0HIP34f736kkQcfvTfmL9TP3.jpg"
+          },
+          {
+            "title": "Deliver Us From Evil",
+            "year": 2014,
+            "slug": "A NYC police officer investigates disturbing crimes linked to demonic possession",
+            "poster": "https://image.tmdb.org/t/p/w500/Uz32ERsyCmGwV8Eg2wmT2ooWpo.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 184346,
+            "poster_url": "https://image.tmdb.org/t/p/w500/Uz32ERsyCmGwV8Eg2wmT2ooWpo.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Religious horror films often reflect contemporary anxieties about faith and modernity. **Constantine** (2005) and **End of Days** (1999) incorporate action elements while maintaining theological undertones. **The Rite** particularly succeeds in its portrayal of modern skepticism through Colin O'Donoghue's character Michael Kovak, a doubting seminarian forced to confront supernatural evil. SUBHEAD: The Evolution of Exorcism Films"
+      },
+      {
+        "type": "text",
+        "content": "The 2010s saw a resurgence of possession films with varying approaches. While **The Last Exorcism** (2010) used found footage to modernize the genre, **The Conjuring** (2013) returned to classical horror storytelling. **The Rite** bridges these styles, combining traditional Catholic imagery with contemporary psychological complexity. The film's Rome setting provides authentic religious atmosphere, similar to **Angels & Demons** (2009), though with darker supernatural elements."
+      }
+    ],
+    "exploreFurther": [
+      "The History of Exorcism in Cinema",
+      "Anthony Hopkins' Horror Filmography",
+      "Vatican-Based Horror Films",
+      "Religious Horror vs Supernatural Thriller Conventions",
+      "Modern Crisis of Faith in Horror Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Stigmata",
+          "year": 1999,
+          "slug": "A hairdresser experiences unexplained religious phenomena",
+          "poster": "https://image.tmdb.org/t/p/w500/sKS1Vuqj7OQpOumfs6ArC0TICTN.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 10307,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sKS1Vuqj7OQpOumfs6ArC0TICTN.jpg"
+        },
+        {
+          "title": "The Order",
+          "year": 2003,
+          "slug": "A priest investigates an ancient Catholic secret society",
+          "poster": "https://image.tmdb.org/t/p/w500/7kj4TffoKCt4gIrNupr2oqmir69.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 9616,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7kj4TffoKCt4gIrNupr2oqmir69.jpg"
+        },
+        {
+          "title": "The Vatican Tapes",
+          "year": 2015,
+          "slug": "Modern exorcism thriller involving Vatican conspiracy",
+          "poster": "https://image.tmdb.org/t/p/w500/eXN0zdTpm772ZCfnCeLAONguqxe.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 157544,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eXN0zdTpm772ZCfnCeLAONguqxe.jpg"
+        },
+        {
+          "title": "Priest",
+          "year": 2011,
+          "slug": "Post-apocalyptic religious horror action",
+          "poster": "https://image.tmdb.org/t/p/w500/fYHiA7LPGl9DG7m3DUs0Td1VMcO.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 38321,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fYHiA7LPGl9DG7m3DUs0Td1VMcO.jpg"
+        },
+        {
+          "title": "The Devil Inside",
+          "year": 2012,
+          "slug": "Found footage style exorcism horror",
+          "poster": "https://image.tmdb.org/t/p/w500/mtyFRIRBmrCE2XKU5EnEK8dtu2X.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 76487,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mtyFRIRBmrCE2XKU5EnEK8dtu2X.jpg"
+        },
+        {
+          "title": "The Nun",
+          "year": 2018,
+          "slug": "Gothic horror exploring dark Vatican secrets",
+          "poster": "https://image.tmdb.org/t/p/w500/sFC1ElvoKGdHJIWRpNB3xWJ9lJA.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 439079,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sFC1ElvoKGdHJIWRpNB3xWJ9lJA.jpg"
+        },
+        {
+          "title": "The Sin Eater",
+          "year": 2003,
+          "slug": "A priest investigates ancient religious rituals",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 9616
+        },
+        {
+          "title": "Lost Souls",
+          "year": 2000,
+          "slug": "A Catholic teacher discovers an apocalyptic conspiracy",
+          "poster": "https://image.tmdb.org/t/p/w500/9DOq3KqGrNbqa3z5M8iDJ2wuaxJ.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 10383,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9DOq3KqGrNbqa3z5M8iDJ2wuaxJ.jpg"
+        },
+        {
+          "title": "The First Power",
+          "year": 1990,
+          "slug": "Detective hunts Satanic killer with supernatural powers",
+          "poster": "https://image.tmdb.org/t/p/w500/dqQbG5YTvfkVvNFiiz8XYpr9nup.jpg",
+          "initialStreaming": "Pluto TV",
+          "tmdb_id": 41374,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dqQbG5YTvfkVvNFiiz8XYpr9nup.jpg"
+        },
+        {
+          "title": "The Prophecy",
+          "year": 1995,
+          "slug": "Angels wage war on Earth",
+          "poster": "https://image.tmdb.org/t/p/w500/4ZWFhQipzBHJze2llzCzhrSIZsn.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 11980,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4ZWFhQipzBHJze2llzCzhrSIZsn.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

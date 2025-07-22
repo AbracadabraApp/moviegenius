@@ -1,0 +1,184 @@
+{
+  "props": {
+    "title": "Monterey Pop",
+    "year": 1968,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/wEB3c5Y5spAHOQaFWcsfFky3SWb.jpg",
+    "initialStreaming": null,
+    "tmdbId": 42632,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Monterey Pop revolutionized concert filmmaking through D.A. Pennebaker's innovative cinéma vérité approach. Using lightweight 16mm cameras and synchronized sound, Pennebaker and his team captured the electric atmosphere of the 1967 Monterey International Pop Festival with unprecedented intimacy. The film documents career-defining performances from Jimi Hendrix, Janis Joplin, and Otis Redding just months before two of them would tragically die. This groundbreaking documentary laid the foundation for later concert films like <a href=\"/movie/9459\" class=\"movie-title\">Woodstock</a> (1970) and <a href=\"/movie/13963\" class=\"movie-title\">The Last Waltz</a> (1978), establishing techniques for capturing live music that still influence filmmakers today."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Woodstock",
+            "year": 1970,
+            "slug": "Michael Wadleigh's epic chronicle of the legendary festival, capturing both the performances and the massive cultural moment",
+            "poster": "https://image.tmdb.org/t/p/w500/cnfhelfQucSb4Y54yFgtnSNhsAT.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 9459,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cnfhelfQucSb4Y54yFgtnSNhsAT.jpg"
+          },
+          {
+            "title": "Gimme Shelter",
+            "year": 1970,
+            "slug": "The Rolling Stones' infamous Altamont concert documented by the Maysles brothers, showing the dark flip side of the 60s dream",
+            "poster": "https://image.tmdb.org/t/p/w500/6Cem6KcIClKit3KhKYou4aXFxob.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 132,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6Cem6KcIClKit3KhKYou4aXFxob.jpg"
+          },
+          {
+            "title": "Don't Look Back",
+            "year": 1967,
+            "slug": "D.A. Pennebaker follows Bob Dylan's 1965 UK tour, creating an intimate portrait of an artist at his creative peak",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 135
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The technical innovations in Monterey Pop transformed music documentary filmmaking. Pennebaker's team developed specialized camera rigs and recording techniques to capture both the performances and audience reactions with unprecedented clarity. This technical foundation influenced later landmark concert films like <a href=\"/movie/24128\" class=\"movie-title\" data-tmdb-id=\"24128\">Stop Making Sense</a> (1984) and <a href=\"/movie/38178\" class=\"movie-title\" data-tmdb-id=\"38178\">Sign o' the Times</a> (1987), which built on Pennebaker's methods while adding their own artistic flourishes."
+      },
+      {
+        "type": "text",
+        "content": "Beyond its technical achievements, Monterey Pop captures a pivotal moment in American cultural history. The film documents the exact moment when the Summer of Love exploded into mainstream consciousness, with performances that epitomized the era's idealistic spirit. Ravi Shankar's mesmerizing 18-minute performance finale represents the growing Western interest in Eastern spirituality, while Jimi Hendrix's guitar-burning theatrics symbolize the revolutionary spirit of the times. SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Festival",
+            "year": 1967,
+            "slug": "Murray Lerner's essential document of the Newport Folk Festivals from 1963-1966, capturing the folk revival movement",
+            "poster": "https://image.tmdb.org/t/p/w500/opVOkaGWfZqbEt5m6AlVMTtvNVs.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 16247,
+            "poster_url": "https://image.tmdb.org/t/p/w500/opVOkaGWfZqbEt5m6AlVMTtvNVs.jpg"
+          },
+          {
+            "title": "The Last Waltz",
+            "year": 1978,
+            "slug": "Martin Scorsese's loving tribute to The Band's final concert, featuring an all-star lineup of musical guests",
+            "poster": "https://image.tmdb.org/t/p/w500/2K7CFH0AIHnGrA4yQjPCoIB5CmQ.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 13963,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2K7CFH0AIHnGrA4yQjPCoIB5CmQ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends far beyond the 1960s. Modern music documentaries like Summer of Soul (2021) and <a href=\"/movie/356199\" class=\"movie-title\" data-tmdb-id=\"356199\">Amazing Grace</a> (2018) draw direct inspiration from Pennebaker's techniques of capturing both performers and audience reactions to create a complete portrait of a musical moment. The film's restoration in 2002 brought its groundbreaking cinematography and historic performances to new generations, cementing its status as a crucial document of both musical and film history."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Concert Film Technology from 16mm to Digital",
+      "The Summer of Love and Its Cultural Impact on Music and Film",
+      "D.A. Pennebaker's Revolutionary Cinéma Vérité Techniques",
+      "The Legacy of Monterey Pop Festival in Music History",
+      "The 1960s Music Documentary Movement"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Jazz on a Summer's Day",
+          "year": 1959,
+          "slug": "Pioneering concert film capturing the 1958 Newport Jazz Festival",
+          "poster": "https://image.tmdb.org/t/p/w500/ltdAJF4sVIRAOJmHIUzfLylrVRr.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 53434,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ltdAJF4sVIRAOJmHIUzfLylrVRr.jpg"
+        },
+        {
+          "title": "Summer of Soul",
+          "year": 2021,
+          "slug": "Questlove's Oscar-winning documentary about the 1969 Harlem Cultural Festival",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": null
+        },
+        {
+          "title": "The T.A.M.I. Show",
+          "year": 1964,
+          "slug": "Groundbreaking concert film featuring James Brown, The Rolling Stones, and more",
+          "poster": "https://image.tmdb.org/t/p/w500/w9t1Oa769J6x9xmjyFu4QlXTk09.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 53202,
+          "poster_url": "https://image.tmdb.org/t/p/w500/w9t1Oa769J6x9xmjyFu4QlXTk09.jpg"
+        },
+        {
+          "title": "Pink Floyd: Live at Pompeii",
+          "year": 1972,
+          "slug": "Psychedelic concert film shot in ancient Roman amphitheater",
+          "poster": "https://image.tmdb.org/t/p/w500/bxjgbHH14nEMx3YtFDLJ04omQhH.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 25771,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bxjgbHH14nEMx3YtFDLJ04omQhH.jpg"
+        },
+        {
+          "title": "What's Happening! The Beatles in the USA",
+          "year": 1964,
+          "slug": "Early Maysles brothers documentary following The Beatles' first US visit",
+          "poster": "https://image.tmdb.org/t/p/w500/r5v3Q5FlU9bacsJrXJaBdZo1yNP.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 305535,
+          "poster_url": "https://image.tmdb.org/t/p/w500/r5v3Q5FlU9bacsJrXJaBdZo1yNP.jpg"
+        },
+        {
+          "title": "Message to Love: The Isle of Wight Festival",
+          "year": 1997,
+          "slug": "Chronicle of the 1970 British festival featuring Hendrix's last major performance",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": null
+        },
+        {
+          "title": "Soul to Soul",
+          "year": 1971,
+          "slug": "Documentary of American soul musicians performing in Ghana",
+          "poster": "https://image.tmdb.org/t/p/w500/s1QISHkkooyqpgGigzYQy1zHtiw.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 306644,
+          "poster_url": "https://image.tmdb.org/t/p/w500/s1QISHkkooyqpgGigzYQy1zHtiw.jpg"
+        },
+        {
+          "title": "Wattstax",
+          "year": 1973,
+          "slug": "Documentary of the \"Black Woodstock\" concert in Los Angeles",
+          "poster": "https://image.tmdb.org/t/p/w500/gVPZCtlPDLTyEk4rDY1O7mXjqYv.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 2261,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gVPZCtlPDLTyEk4rDY1O7mXjqYv.jpg"
+        },
+        {
+          "title": "Ziggy Stardust and the Spiders from Mars",
+          "year": 1973,
+          "slug": "D.A. Pennebaker captures David Bowie's final performance as Ziggy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Song Remains the Same",
+          "year": 1976,
+          "slug": "Led Zeppelin concert film mixing live footage with fantasy sequences",
+          "poster": "https://image.tmdb.org/t/p/w500/tQzNsYcg4rVXVGw45ue7nkdMOgs.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 40440,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tQzNsYcg4rVXVGw45ue7nkdMOgs.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

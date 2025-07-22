@@ -1,0 +1,186 @@
+{
+  "props": {
+    "title": "The Lord of the Rings",
+    "year": 1978,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/liW0mjvTyLs7UCumaHhx3PpU4VT.jpg",
+    "initialStreaming": null,
+    "tmdbId": 123,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Ralph Bakshi's ambitious animated The Lord of the Rings marks a fascinating pivot point in fantasy filmmaking. Using rotoscoping - animating over live-action footage - Bakshi created a darker, more mature take on Tolkien that influenced later adaptations. While primitive compared to Peter Jackson's <a href=\"/movie/120\" class=\"movie-title\" data-tmdb-id=\"120\">The Lord of the Rings: The Fellowship of the Ring</a> (2001), Bakshi's version has a uniquely haunting quality, especially in scenes with the Nazgûl. The film covers roughly half of Tolkien's trilogy, ending abruptly at Helm's Deep, leaving audiences hanging when the planned sequel never materialized."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Hobbit",
+            "year": 1977,
+            "slug": "Rankin/Bass's animated adaptation brings a lighter, more whimsical tone to Tolkien's work, perfect for younger viewers",
+            "poster": "https://image.tmdb.org/t/p/w500/2ohvyMPhvjftLrM6S6Ljr6QrL0u.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 1362,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2ohvyMPhvjftLrM6S6Ljr6QrL0u.jpg"
+          },
+          {
+            "title": "The Return of the King",
+            "year": 1980,
+            "slug": "The unofficial animated conclusion to Bakshi's film, produced by Rankin/Bass with a different style",
+            "poster": "https://image.tmdb.org/t/p/w500/lTwUT4NsSyUQlHV20Mx3C96JHq4.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 1361,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lTwUT4NsSyUQlHV20Mx3C96JHq4.jpg"
+          },
+          {
+            "title": "Fire and Ice",
+            "year": 1983,
+            "slug": "Bakshi's collaboration with Frank Frazetta showcases similar rotoscoping techniques in a sword-and-sorcery setting",
+            "poster": "https://image.tmdb.org/t/p/w500/v0fi9KgmdsUsGtopxxRzbtQ5NIX.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 15035,
+            "poster_url": "https://image.tmdb.org/t/p/w500/v0fi9KgmdsUsGtopxxRzbtQ5NIX.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Bakshi's technical innovations deserve special attention. His blend of traditional cel animation with rotoscoped live action created an otherworldly effect that perfectly suited Middle-earth's mixture of the familiar and fantastic. This technique influenced later animated films like <a href=\"/movie/29204\" class=\"movie-title\" data-tmdb-id=\"29204\">American Pop</a> (1981) and even Don Bluth's <a href=\"/movie/11704\" class=\"movie-title\" data-tmdb-id=\"11704\">The Secret of NIMH</a> (1982), which aimed for more mature animated storytelling. The film's darker tone and serious treatment of fantasy material helped pave the way for more adult-oriented animation in the West."
+      },
+      {
+        "type": "text",
+        "content": "The voice casting shows remarkable foresight. John Hurt's Aragorn brings gravitas that would influence later portrayals, while Anthony Daniels (C-3PO from <a href=\"/movie/11\" class=\"movie-title\" data-tmdb-id=\"11\">Star Wars</a> (1977)) delivers a memorable Legolas. The film's atmospheric score by Leonard Rosenman eschews the typical bouncy animation music for something more operatic and menacing, predating Howard Shore's epic approach to the Jackson trilogy by decades. SUBHEAD: Impact on Fantasy Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Last Unicorn",
+            "year": 1982,
+            "slug": "Another mature animated fantasy featuring rotoscoping and sophisticated themes",
+            "poster": "https://image.tmdb.org/t/p/w500/2MhDPbadE2ha83qiFwUHPgmKLnV.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 10150,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2MhDPbadE2ha83qiFwUHPgmKLnV.jpg"
+          },
+          {
+            "title": "Wizards",
+            "year": 1977,
+            "slug": "Bakshi's earlier fantasy film mixing animation styles and adult themes",
+            "poster": "https://image.tmdb.org/t/p/w500/jeAxoYepnVirGe0H7pmwviSZYul.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 16220,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jeAxoYepnVirGe0H7pmwviSZYul.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While Bakshi's Lord of the Rings (1978) may feel incomplete, its influence resonates through fantasy filmmaking. The film proved high fantasy could work on screen with sufficient artistic vision, predating the CGI revolution by decades. Its serious treatment of the source material influenced later adaptations like <a href=\"/movie/11527\" class=\"movie-title\" data-tmdb-id=\"11527\">Excalibur</a> (1981) and <a href=\"/movie/848\" class=\"movie-title\" data-tmdb-id=\"848\">Dragonslayer</a> (1981), which similarly avoided camp in favor of genuine drama and darkness."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Rotoscoping in Animation",
+      "Ralph Bakshi's Revolutionary Animation Techniques",
+      "Tolkien Adaptations Before Peter Jackson",
+      "The Challenge of Adapting Epic Fantasy to Screen",
+      "Fantasy Film Music Evolution: From Bakshi to Shore"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Heavy Metal",
+          "year": 1981,
+          "slug": "Adult animated anthology mixing fantasy and science fiction",
+          "poster": "https://image.tmdb.org/t/p/w500/h7j6uKamzHH9p7muvIYnln621IE.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 11827,
+          "poster_url": "https://image.tmdb.org/t/p/w500/h7j6uKamzHH9p7muvIYnln621IE.jpg"
+        },
+        {
+          "title": "The Dark Crystal",
+          "year": 1982,
+          "slug": "Ambitious fantasy using puppetry instead of animation",
+          "poster": "https://image.tmdb.org/t/p/w500/6g1Kh73qQRosyhRJpL3euQpMxOE.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 11639,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6g1Kh73qQRosyhRJpL3euQpMxOE.jpg"
+        },
+        {
+          "title": "Watership Down",
+          "year": 1978,
+          "slug": "Dark animated adaptation proving animation can handle mature themes",
+          "poster": "https://image.tmdb.org/t/p/w500/q9ZcNxfquJbMTd6UfhAlJbmLBts.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 11837,
+          "poster_url": "https://image.tmdb.org/t/p/w500/q9ZcNxfquJbMTd6UfhAlJbmLBts.jpg"
+        },
+        {
+          "title": "Yellow Submarine",
+          "year": 1968,
+          "slug": "Innovative animation techniques that influenced Bakshi's style",
+          "poster": "https://image.tmdb.org/t/p/w500/cjrGM2QYlwzV6vXz2yF7y6fdTRu.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 12105,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cjrGM2QYlwzV6vXz2yF7y6fdTRu.jpg"
+        },
+        {
+          "title": "Fritz the Cat",
+          "year": 1972,
+          "slug": "Bakshi's breakthrough adult animated film",
+          "poster": "https://image.tmdb.org/t/p/w500/q0UOEBPQKZykmB1hz7yzHJNybLn.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 12593,
+          "poster_url": "https://image.tmdb.org/t/p/w500/q0UOEBPQKZykmB1hz7yzHJNybLn.jpg"
+        },
+        {
+          "title": "Conan the Barbarian",
+          "year": 1982,
+          "slug": "Live-action fantasy influenced by mature animated works",
+          "poster": "https://image.tmdb.org/t/p/w500/qw2A587Ee61IwcSOLNFRhuOACZZ.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 9387,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qw2A587Ee61IwcSOLNFRhuOACZZ.jpg"
+        },
+        {
+          "title": "Wizards and Warriors",
+          "year": 1983,
+          "slug": "Fantasy series taking cues from serious animated adaptations",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Unavailable",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Black Cauldron",
+          "year": 1985,
+          "slug": "Disney's attempt at darker animated fantasy",
+          "poster": "https://image.tmdb.org/t/p/w500/ef11J5KGMp26kEzeg8ghAKeB65C.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 10957,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ef11J5KGMp26kEzeg8ghAKeB65C.jpg"
+        },
+        {
+          "title": "Legend",
+          "year": 1985,
+          "slug": "Fantasy film embracing artistic visuals like Bakshi's work",
+          "poster": "https://image.tmdb.org/t/p/w500/6n3PQSYpZRK5YPk2w8JEwED7AZk.jpg",
+          "initialStreaming": "Starz",
+          "tmdb_id": 11976,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6n3PQSYpZRK5YPk2w8JEwED7AZk.jpg"
+        },
+        {
+          "title": "Dragon's Lair",
+          "year": 1983,
+          "slug": "Animated fantasy game influenced by Bakshi's style",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "N/A",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

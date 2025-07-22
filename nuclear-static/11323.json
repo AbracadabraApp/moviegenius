@@ -1,0 +1,170 @@
+{
+  "props": {
+    "title": "The Informant!",
+    "year": 2009,
+    "initialSlug": "A whistleblower's twisted tale.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/wT6uYA8RQ9tYvWUT91480LR0Dnn.jpg",
+    "initialStreaming": null,
+    "tmdbId": 11323,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Steven Soderbergh's The Informant! brilliantly subverts corporate whistleblower films by focusing on perhaps the most unreliable narrator in modern cinema. Unlike the righteous crusaders in <a href=\"/movie/4566\" class=\"movie-title\" data-tmdb-id=\"4566\">Michael Clayton</a> (2007) or <a href=\"/movie/9008\" class=\"movie-title\" data-tmdb-id=\"9008\">The Insider</a> (1999), Matt Damon's Mark Whitacre is a pathological liar whose delusions spiral into increasingly absurd territory. The film's exclamation point isn't just punctuation - it's a warning sign that nothing is quite what it seems."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Catch Me If You Can",
+            "year": 2002,
+            "slug": "Leonardo DiCaprio shines as real-life con artist Frank Abagnale Jr. in Spielberg's stylish true-crime caper",
+            "poster": "https://image.tmdb.org/t/p/w500/ctjEj2xM32OvBXCq8zAdK3ZrsAj.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 640,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ctjEj2xM32OvBXCq8zAdK3ZrsAj.jpg"
+          },
+          {
+            "title": "American Hustle",
+            "year": 2013,
+            "slug": "A elaborate FBI sting operation gets complicated by con artists, corrupt politicians, and volatile relationships",
+            "poster": "https://image.tmdb.org/t/p/w500/koXGRfatN0tURFWMA0Keb0p0Gtg.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 168672,
+            "poster_url": "https://image.tmdb.org/t/p/w500/koXGRfatN0tURFWMA0Keb0p0Gtg.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "What sets The Informant! apart is Marvin Hamlisch's deliberately whimsical score and Soderbergh's decision to play Whitacre's mounting lies as dark comedy rather than drama. The film shares DNA with <a href=\"/movie/389015\" class=\"movie-title\" data-tmdb-id=\"389015\">I, Tonya</a> (2017) in how it uses an unreliable narrator's perspective to question the nature of truth itself. Damon's voiceover musings about polar bears and corn products provide a window into his character's fractured psyche while highlighting the absurdity of corporate malfeasance."
+      },
+      {
+        "type": "text",
+        "content": "The film brilliantly deconstructs white-collar crime movies like <a href=\"/movie/10673\" class=\"movie-title\" data-tmdb-id=\"10673\">Wall Street</a> (1987) by focusing on the mundane details of price-fixing lysine rather than flashy financial schemes. Soderbergh shoots the corporate offices and hotel conference rooms with a deliberately bland 1990s aesthetic that makes Whitacre's elaborate fantasies even more jarring. The influence of this approach can be seen in later corporate scandal films like <a href=\"/movie/318846\" class=\"movie-title\" data-tmdb-id=\"318846\">The Big Short</a> (2015). SUBHEAD: The Unreliable Narrator in Corporate Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Thank You for Smoking",
+            "year": 2005,
+            "slug": "A tobacco industry lobbyist spins doctor's warnings while trying to remain a role model for his son",
+            "poster": "https://image.tmdb.org/t/p/w500/cJpeM7U36diFinieBWNLVi0FlQz.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 9388,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cJpeM7U36diFinieBWNLVi0FlQz.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Whitacre's descent into delusion parallels other films about self-deception like <a href=\"/movie/13537\" class=\"movie-title\" data-tmdb-id=\"13537\">Shattered Glass</a> (2003), where Stephen Glass fabricates increasingly elaborate stories for The New Republic. Both films examine how institutions can enable pathological liars through willful ignorance. The Informant! goes further by suggesting that corporate culture itself operates on layers of deception, making Whitacre simultaneously its greatest practitioner and its inevitable victim."
+      }
+    ],
+    "exploreFurther": [
+      "The FBI's Real Operation Harvest King and Mark Whitacre's Role",
+      "Marvin Hamlisch's Quirky Score and Its Impact on Tone",
+      "Soderbergh's Use of Comedy in True Crime Stories",
+      "Corporate Whistleblower Films of the 2000s",
+      "The Psychology of White Collar Crime in Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Erin Brockovich",
+          "year": 2000,
+          "slug": "Another Soderbergh film about corporate wrongdoing with a very different kind of protagonist",
+          "poster": "https://image.tmdb.org/t/p/w500/jEMvWBWVjndZT0vJnLrRWi9ajea.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 462,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jEMvWBWVjndZT0vJnLrRWi9ajea.jpg"
+        },
+        {
+          "title": "The Wolf of Wall Street",
+          "year": 2013,
+          "slug": "Scorsese's examination of financial fraud and self-deception",
+          "poster": "https://image.tmdb.org/t/p/w500/kW9LmvYHAaS9iA0tHmZVq8hQYoq.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 106646,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kW9LmvYHAaS9iA0tHmZVq8hQYoq.jpg"
+        },
+        {
+          "title": "Dark Waters",
+          "year": 2019,
+          "slug": "Mark Ruffalo uncovers corporate pollution in this straight-faced whistleblower drama",
+          "poster": "https://image.tmdb.org/t/p/w500/bzvzaHqKBSuGIIWhinTQPHvT0zf.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 552178,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bzvzaHqKBSuGIIWhinTQPHvT0zf.jpg"
+        },
+        {
+          "title": "Enron: The Smartest Guys in the Room",
+          "year": 2005,
+          "slug": "Documentary about one of the biggest corporate frauds in history",
+          "poster": "https://image.tmdb.org/t/p/w500/zezeOElCxlPui9SFGj5ToZ4W1Nh.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 13020,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zezeOElCxlPui9SFGj5ToZ4W1Nh.jpg"
+        },
+        {
+          "title": "The Company Men",
+          "year": 2010,
+          "slug": "The human cost of corporate downsizing examined",
+          "poster": "https://image.tmdb.org/t/p/w500/tKX6E1nOf4vZN903YbkjQe7x1fv.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 44129,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tKX6E1nOf4vZN903YbkjQe7x1fv.jpg"
+        },
+        {
+          "title": "Margin Call",
+          "year": 2011,
+          "slug": "24 hours inside an investment bank at the start of the financial crisis",
+          "poster": "https://image.tmdb.org/t/p/w500/qtO57obCJuUBS0en3HLgFgZ19Xk.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 50839,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qtO57obCJuUBS0en3HLgFgZ19Xk.jpg"
+        },
+        {
+          "title": "The Assistant",
+          "year": 2019,
+          "slug": "A day in the life of a junior assistant at a toxic corporate environment",
+          "poster": "https://image.tmdb.org/t/p/w500/zJpJkVgezsR7dp6KQwyxtGIAOZv.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 627463,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zJpJkVgezsR7dp6KQwyxtGIAOZv.jpg"
+        },
+        {
+          "title": "Office Space",
+          "year": 1999,
+          "slug": "Satirical take on corporate culture and white-collar crime",
+          "poster": "https://image.tmdb.org/t/p/w500/v7fBXxHZ5WQn2PGgpXhTqHgtcJk.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 1542,
+          "poster_url": "https://image.tmdb.org/t/p/w500/v7fBXxHZ5WQn2PGgpXhTqHgtcJk.jpg"
+        },
+        {
+          "title": "Boiler Room",
+          "year": 2000,
+          "slug": "The dark side of stock trading and corporate manipulation",
+          "poster": "https://image.tmdb.org/t/p/w500/jFB5uvCZ3HXF00liAEAuOruCPs6.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 14181,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jFB5uvCZ3HXF00liAEAuOruCPs6.jpg"
+        },
+        {
+          "title": "The Insider",
+          "year": 1999,
+          "slug": "Al Pacino and Russell Crowe in a true story of Big Tobacco whistleblowing",
+          "poster": "https://image.tmdb.org/t/p/w500/jJCyIBPfvk41uETq6K6u4upyGO8.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 9008,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jJCyIBPfvk41uETq6K6u4upyGO8.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

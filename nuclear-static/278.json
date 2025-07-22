@@ -1,0 +1,224 @@
+{
+  "props": {
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "initialSlug": "Hope Sets You Free",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
+    "initialStreaming": "TBD",
+    "tmdbId": 278,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The Shawshank Redemption masterfully adapts Stephen King's novella into what many consider the greatest prison film ever made. Frank Darabont's direction brings an almost mythic quality to Andy Dufresne's wrongful imprisonment and eventual escape, while Roger Deakins' cinematography transforms Shawshank Prison into a character itself. The film's influence echoes through later prison dramas like <a href=\"/movie/497\" class=\"movie-title\" data-tmdb-id=\"497\">The Green Mile</a> (1999) and <a href=\"/movie/22803\" class=\"movie-title\" data-tmdb-id=\"22803\">Law Abiding Citizen</a> (2009), setting a benchmark for the genre's exploration of hope against institutional oppression."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Cool Hand Luke",
+            "year": 1967,
+            "slug": "Paul Newman leads this influential prison drama about a defiant inmate challenging authority",
+            "poster": "https://image.tmdb.org/t/p/w500/4ykzTiHKLamh3eZJ8orVICtU2Jp.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 903,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4ykzTiHKLamh3eZJ8orVICtU2Jp.jpg"
+          },
+          {
+            "title": "Escape from Alcatraz",
+            "year": 1979,
+            "slug": "Clint Eastwood stars in this taut thriller based on the only successful Alcatraz escape",
+            "poster": "https://image.tmdb.org/t/p/w500/uORr2GXQnyqgBOg6tVsRCJD2qxc.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 10734,
+            "poster_url": "https://image.tmdb.org/t/p/w500/uORr2GXQnyqgBOg6tVsRCJD2qxc.jpg"
+          },
+          {
+            "title": "The Green Mile",
+            "year": 1999,
+            "slug": "Another Stephen King prison tale directed by Frank Darabont, mixing supernatural elements with human drama",
+            "poster": "https://image.tmdb.org/t/p/w500/8VG8fDNiy50H4FedGwdSVUPoaJe.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 497,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8VG8fDNiy50H4FedGwdSVUPoaJe.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Morgan Freeman's Red delivers perhaps cinema's greatest voiceover narration, a technique that influenced countless films like <a href=\"/movie/9428\" class=\"movie-title\" data-tmdb-id=\"9428\">The Royal Tenenbaums</a> (2001) and <a href=\"/movie/550\" class=\"movie-title\" data-tmdb-id=\"550\">Fight Club</a> (1999). The film's structure - spanning decades while maintaining narrative momentum - demonstrates masterful storytelling that later prison films like <a href=\"/movie/339692\" class=\"movie-title\" data-tmdb-id=\"339692\">Shot Caller</a> (2017) and <a href=\"/movie/18533\" class=\"movie-title\" data-tmdb-id=\"18533\">Bronson</a> (2008) would attempt to replicate."
+      },
+      {
+        "type": "text",
+        "content": "What sets Shawshank apart is its layered themes of institutional corruption, represented through Bob Gunton's unforgettable Warden Norton. This character archetype influenced similar authority figures in <a href=\"/movie/22803\" class=\"movie-title\" data-tmdb-id=\"22803\">Law Abiding Citizen</a> (2009) and <a href=\"/movie/10400\" class=\"movie-title\" data-tmdb-id=\"10400\">The Hurricane</a> (1999), while the film's exploration of friendship under extreme circumstances inspired everything from <a href=\"/movie/43539\" class=\"movie-title\" data-tmdb-id=\"43539\">The Next Three Days</a> (2010) to <a href=\"/movie/242693\" class=\"movie-title\" data-tmdb-id=\"242693\">Prison Break</a> (2005-2017). SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Papillon",
+            "year": 1973,
+            "slug": "Steve McQueen and Dustin Hoffman star in this epic escape drama based on true events",
+            "poster": "https://image.tmdb.org/t/p/w500/356oqQpug682OERsWV0bGZ0YxwQ.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 5924,
+            "poster_url": "https://image.tmdb.org/t/p/w500/356oqQpug682OERsWV0bGZ0YxwQ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's impact on popular culture cannot be overstated. Its #1 ranking on IMDb since 2008 speaks to its enduring appeal, while its technical achievements - particularly the reveal of Andy's escape tunnel - have become textbook examples of perfect narrative payoff. Later films like <a href=\"/movie/11362\" class=\"movie-title\" data-tmdb-id=\"11362\">The Count of Monte Cristo</a> (2002) and <a href=\"/movie/107846\" class=\"movie-title\" data-tmdb-id=\"107846\">Escape Plan</a> (2013) directly reference Shawshank's iconic moments."
+      }
+    ],
+    "exploreFurther": [
+      "Prison Reform in American Cinema - From \"I Am a Fugitive from a Chain Gang\" (1932) to Modern Day",
+      "The Art of Voiceover Narration in Film",
+      "Stephen King Adaptations: From Page to Screen",
+      "Frank Darabont's Directorial Techniques",
+      "Hope as a Cinematic Theme in Prison Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "In the Name of the Father",
+          "year": 1993,
+          "slug": "True story of wrongfully imprisoned Irishman",
+          "poster": "https://image.tmdb.org/t/p/w500/3NcIkKxaO2SmRVsG1v50XhtmL0f.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 7984,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3NcIkKxaO2SmRVsG1v50XhtmL0f.jpg"
+        },
+        {
+          "title": "The Hurricane",
+          "year": 1999,
+          "slug": "Denzel Washington as wrongly convicted boxer Rubin Carter",
+          "poster": "https://image.tmdb.org/t/p/w500/eOzbt7KsqTC8gcjJMxcQnr89cxJ.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 10400,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eOzbt7KsqTC8gcjJMxcQnr89cxJ.jpg"
+        },
+        {
+          "title": "A Prophet",
+          "year": 2009,
+          "slug": "French prison drama about a young Arab man's rise to power",
+          "poster": "https://image.tmdb.org/t/p/w500/x9Jb8kewBHPzjTtgCQvoQoDsy4d.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 21575,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x9Jb8kewBHPzjTtgCQvoQoDsy4d.jpg"
+        },
+        {
+          "title": "Midnight Express",
+          "year": 1978,
+          "slug": "Brutal true story of American imprisoned in Turkey",
+          "poster": "https://image.tmdb.org/t/p/w500/mW54BtqVRxrPnoO9gQQjTLJlnuU.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 11327,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mW54BtqVRxrPnoO9gQQjTLJlnuU.jpg"
+        },
+        {
+          "title": "Dead Man Walking",
+          "year": 1995,
+          "slug": "Powerful death row drama with Sean Penn",
+          "poster": "https://image.tmdb.org/t/p/w500/eShxyjhWoFl3BwsuEmVsr4nLaMZ.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 687,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eShxyjhWoFl3BwsuEmVsr4nLaMZ.jpg"
+        },
+        {
+          "title": "The Great Escape",
+          "year": 1963,
+          "slug": "WWII POW escape classic with Steve McQueen",
+          "poster": "https://image.tmdb.org/t/p/w500/gBH4H8UMFxl139HaLz6lRuvsel8.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 5925,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gBH4H8UMFxl139HaLz6lRuvsel8.jpg"
+        },
+        {
+          "title": "Brubaker",
+          "year": 1980,
+          "slug": "Robert Redford as reform-minded prison warden",
+          "poster": "https://image.tmdb.org/t/p/w500/4DhrSojl3J0Z4wZyM2CfNGnKQWl.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 1623,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4DhrSojl3J0Z4wZyM2CfNGnKQWl.jpg"
+        },
+        {
+          "title": "Shot Caller",
+          "year": 2017,
+          "slug": "Intense drama about businessman transformed by prison",
+          "poster": "https://image.tmdb.org/t/p/w500/qLmLz2wtyYvmW8Ult3l2ngOnW8v.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 339692,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qLmLz2wtyYvmW8Ult3l2ngOnW8v.jpg"
+        },
+        {
+          "title": "Cell 211",
+          "year": 2009,
+          "slug": "Spanish prison riot thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/koap5B3bQHQi3yaZ39vpWR66TGP.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 33273,
+          "poster_url": "https://image.tmdb.org/t/p/w500/koap5B3bQHQi3yaZ39vpWR66TGP.jpg"
+        },
+        {
+          "title": "Escape Plan",
+          "year": 2013,
+          "slug": "Stallone and Schwarzenegger team up in high-tech prison break",
+          "poster": "https://image.tmdb.org/t/p/w500/qOZPLflxDqKogu9v9hYw3lolxGs.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 107846,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qOZPLflxDqKogu9v9hYw3lolxGs.jpg"
+        },
+        {
+          "title": "Hunger",
+          "year": 2008,
+          "slug": "Michael Fassbender in Bobby Sands prison protest story",
+          "poster": "https://image.tmdb.org/t/p/w500/84HdTM39G2MzyTl8N9R0wVU9I5b.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 10360,
+          "poster_url": "https://image.tmdb.org/t/p/w500/84HdTM39G2MzyTl8N9R0wVU9I5b.jpg"
+        },
+        {
+          "title": "Life",
+          "year": 1999,
+          "slug": "Eddie Murphy and Martin Lawrence comedy-drama spanning decades in prison",
+          "poster": "https://image.tmdb.org/t/p/w500/saWYpX3ADdmdByQZVrSYUNbQ9GC.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 6522,
+          "poster_url": "https://image.tmdb.org/t/p/w500/saWYpX3ADdmdByQZVrSYUNbQ9GC.jpg"
+        },
+        {
+          "title": "The Next Three Days",
+          "year": 2010,
+          "slug": "Russell Crowe plans wife's prison break",
+          "poster": "https://image.tmdb.org/t/p/w500/wBaRZ3aHa7qoYTSY0ONbXrXYk4B.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 43539,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wBaRZ3aHa7qoYTSY0ONbXrXYk4B.jpg"
+        },
+        {
+          "title": "Down by Law",
+          "year": 1986,
+          "slug": "Jim Jarmusch's stylish prison escape tale",
+          "poster": "https://image.tmdb.org/t/p/w500/4IyxoUQ7BB5kcSd7gASe2dTyWu7.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1554,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4IyxoUQ7BB5kcSd7gASe2dTyWu7.jpg"
+        },
+        {
+          "title": "Animal Factory",
+          "year": 2000,
+          "slug": "Edward Bunker's gritty prison drama directed by Steve Buscemi",
+          "poster": "https://image.tmdb.org/t/p/w500/2OUOg9Pf5dZZr5RufM5liA4IUVK.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 9791,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2OUOg9Pf5dZZr5RufM5liA4IUVK.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

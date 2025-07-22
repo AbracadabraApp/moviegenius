@@ -1,0 +1,167 @@
+{
+  "props": {
+    "title": "Son of Kong",
+    "year": 1933,
+    "initialSlug": "Adventurers find Kong's offspring on mysterious island",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/eJ2Qe3tesoKUtWNJRDpHKz1xCJc.jpg",
+    "initialStreaming": null,
+    "tmdbId": 43149,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Son of Kong rushed into production just months after the massive success of <a href=\"/movie/244\" class=\"movie-title\">King Kong</a> (1933), becoming one of Hollywood's first direct sequels. Director Ernest B. Schoedsack returned but with a dramatically smaller budget and compressed filming schedule. The result shifted away from the original's horror-adventure tone toward lighter comedy-adventure, following Carl Denham back to Skull Island where he discovers Kong had an albino offspring. While lacking the groundbreaking stop-motion effects that Willis O'Brien achieved in the original, the sequel still showcases impressive technical work for its era, particularly in the integration of miniatures and full-scale props."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "King Kong",
+            "year": 1933,
+            "slug": "The original masterpiece that launched the giant monster genre, featuring groundbreaking stop-motion effects",
+            "poster": "https://image.tmdb.org/t/p/w500/lHlnxKL5GbgRibyRFI7n1Ey850i.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 244,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lHlnxKL5GbgRibyRFI7n1Ey850i.jpg"
+          },
+          {
+            "title": "Mighty Joe Young",
+            "year": 1949,
+            "slug": "Willis O'Brien and Ray Harryhausen team up for another giant ape adventure with a gentler tone",
+            "poster": "https://image.tmdb.org/t/p/w500/tTTS9Bi7JReyGpCKyDuyZNSLTT4.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 39314,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tTTS9Bi7JReyGpCKyDuyZNSLTT4.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The rushed production of Son of Kong established an unfortunate pattern for monster movie sequels, where studios prioritized quick profit over matching the original's quality. This became particularly evident in later generations with films like <a href=\"/movie/31947\" class=\"movie-title\" data-tmdb-id=\"31947\">King Kong Lives</a> (1986) and Kong: King of Atlantis (2005) failing to capture the magic of their predecessors. However, the original sequel's lighter tone did influence later sympathetic monster portrayals, seen in films like <a href=\"/movie/293167\" class=\"movie-title\">Kong: Skull Island</a> (2017) and Peter Jackson's emotionally resonant <a href=\"/movie/10730\" class=\"movie-title\" data-tmdb-id=\"10730\">King Kong</a> (2005)."
+      },
+      {
+        "type": "text",
+        "content": "The film's technical achievements, while modest compared to the original, helped advance several practical effects techniques that would influence monster movies for decades. The integration of rear projection with live action, though crude by modern standards, laid groundwork that would be refined in films like <a href=\"/movie/39314\" class=\"movie-title\">Mighty Joe Young</a> (1949) and even echo through to modern practical effects work in films like <a href=\"/movie/1255\" class=\"movie-title\" data-tmdb-id=\"1255\">The Host</a> (2006). SUBHEAD: Legacy and Influence on Monster Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Kong: Skull Island",
+            "year": 2017,
+            "slug": "Modern reimagining set in the 1970s featuring spectacular effects and action",
+            "poster": "https://image.tmdb.org/t/p/w500/r2517Vz9EhDhj88qwbDVj8DCRZN.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 293167,
+            "poster_url": "https://image.tmdb.org/t/p/w500/r2517Vz9EhDhj88qwbDVj8DCRZN.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While often overlooked in Kong's cinematic legacy, Son of Kong established several tropes that would become monster movie staples: the sympathetic monster offspring, the return to dangerous territory for redemption, and the blend of comedy with creature feature elements. These themes would resurface in films like Godzilla Raids Again (1955) and even modern interpretations like <a href=\"/movie/427641\" class=\"movie-title\" data-tmdb-id=\"427641\">Rampage</a> (2018), where monster sympathy becomes central to the narrative."
+      }
+    ],
+    "exploreFurther": [
+      "Willis O'Brien's Stop-Motion Innovation: From Kong to Mighty Joe Young",
+      "The Rush to Sequel: Hollywood's Early Franchise Experiments",
+      "Evolution of Skull Island in Kong Cinema",
+      "Monster Sympathy: Changing Portrayals in Creature Features",
+      "Pre-War Special Effects Technologies in Hollywood"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Lost World",
+          "year": 1925,
+          "slug": "Silent dinosaur adventure that influenced Kong's creation",
+          "poster": "https://image.tmdb.org/t/p/w500/411VnWtYJdEFKiaGqJOeTmBv8th.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 2981,
+          "poster_url": "https://image.tmdb.org/t/p/w500/411VnWtYJdEFKiaGqJOeTmBv8th.jpg"
+        },
+        {
+          "title": "King Kong vs. Godzilla",
+          "year": 1962,
+          "slug": "First crossover between the two monster icons",
+          "poster": "https://image.tmdb.org/t/p/w500/8djxObchUlEVcLdNl60EJm8EHZ0.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 1680,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8djxObchUlEVcLdNl60EJm8EHZ0.jpg"
+        },
+        {
+          "title": "King Kong Lives",
+          "year": 1986,
+          "slug": "Attempted sequel to the 1976 remake",
+          "poster": "https://image.tmdb.org/t/p/w500/gI37vg2otF348OHxsx97hWCVvNI.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 31947,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gI37vg2otF348OHxsx97hWCVvNI.jpg"
+        },
+        {
+          "title": "Peter Jackson's King Kong",
+          "year": 2005,
+          "slug": "Epic remake paying homage to the original",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 82864
+        },
+        {
+          "title": "Kong: King of Atlantis",
+          "year": 2005,
+          "slug": "Animated direct-to-video Kong adventure",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 100065
+        },
+        {
+          "title": "The Host",
+          "year": 2006,
+          "slug": "Korean monster movie with practical effects influence",
+          "poster": "https://image.tmdb.org/t/p/w500/qJc9na2UN7TvKqDWkxBkocPUUjT.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 1255,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qJc9na2UN7TvKqDWkxBkocPUUjT.jpg"
+        },
+        {
+          "title": "Rampage",
+          "year": 2018,
+          "slug": "Modern giant monster action featuring multiple creatures",
+          "poster": "https://image.tmdb.org/t/p/w500/MGADip4thVSErP34FAAfzFBTZ5.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 427641,
+          "poster_url": "https://image.tmdb.org/t/p/w500/MGADip4thVSErP34FAAfzFBTZ5.jpg"
+        },
+        {
+          "title": "Godzilla Raids Again",
+          "year": 1955,
+          "slug": "First Godzilla sequel showing monster sympathy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1679
+        },
+        {
+          "title": "King Kong Escapes",
+          "year": 1967,
+          "slug": "Japanese Kong adventure with mechanical doppelganger",
+          "poster": "https://image.tmdb.org/t/p/w500/1Z2fL5ycdVGs83i4iPdliDZVeVM.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 39276,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1Z2fL5ycdVGs83i4iPdliDZVeVM.jpg"
+        },
+        {
+          "title": "The Valley of Gwangi",
+          "year": 1969,
+          "slug": "Willis O'Brien concept featuring cowboys vs dinosaurs",
+          "poster": "https://image.tmdb.org/t/p/w500/5RP7yHpTHsLlQEP8V3gji743Sbh.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 42329,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5RP7yHpTHsLlQEP8V3gji743Sbh.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

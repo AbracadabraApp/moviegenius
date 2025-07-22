@@ -1,0 +1,173 @@
+{
+  "props": {
+    "title": "Manhattan Baby",
+    "year": 1982,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/cHqAB06ofzOisT0kRRfiSeHdnHM.jpg",
+    "initialStreaming": null,
+    "tmdbId": 30875,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Manhattan Baby represents Lucio Fulci diving into supernatural horror with Egyptian mysticism, following his gore-soaked classics <a href=\"/movie/19204\" class=\"movie-title\">The Beyond</a> (1981) and <a href=\"/movie/24920\" class=\"movie-title\" data-tmdb-id=\"24920\">City of the Living Dead</a> (1980). The film meshes Fulci's signature eye trauma imagery with an <a href=\"/movie/9552\" class=\"movie-title\" data-tmdb-id=\"9552\">The Exorcist</a> (1973)-inspired possession narrative, though trading Catholic elements for Egyptian mythology. While not reaching the visceral heights of his earlier works, it showcases Fulci's attempt to blend giallo-style kills with a more mainstream supernatural thriller approach."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Beyond",
+            "year": 1981,
+            "slug": "Fulci's masterpiece about a cursed hotel that serves as one of the seven gates to hell",
+            "poster": "https://image.tmdb.org/t/p/w500/luLcQdNqaIHRNMRuPgFN68v2Iux.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 19204,
+            "poster_url": "https://image.tmdb.org/t/p/w500/luLcQdNqaIHRNMRuPgFN68v2Iux.jpg"
+          },
+          {
+            "title": "House by the Cemetery",
+            "year": 1981,
+            "slug": "A New England home harbors a murderous secret in this gothic Fulci horror",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 28794
+          },
+          {
+            "title": "The New York Ripper",
+            "year": 1982,
+            "slug": "Fulci's controversial slasher about a killer terrorizing Manhattan",
+            "poster": "https://image.tmdb.org/t/p/w500/6xgOEZGB18MFKAuEFtKa9NFkcVK.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 30874,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6xgOEZGB18MFKAuEFtKa9NFkcVK.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's Egyptian connection places it within a specific subset of 1980s Italian horror that drew inspiration from ancient curses and artifacts. <a href=\"/movie/85\" class=\"movie-title\" data-tmdb-id=\"85\">Raiders of the Lost Ark</a> (1981) had popularized Egyptian archaeological horror, leading to Italian productions like <a href=\"/movie/40342\" class=\"movie-title\" data-tmdb-id=\"40342\">Demons 2</a> (1986) incorporating similar elements. Manhattan Baby specifically echoes the \"evil artifact affecting children\" trope seen in <a href=\"/movie/609\" class=\"movie-title\" data-tmdb-id=\"609\">Poltergeist</a> (1982), though with Fulci's distinct European horror sensibilities."
+      },
+      {
+        "type": "text",
+        "content": "The film's production values reflect the declining Italian horror industry of the early 1980s. While earlier Fulci films like Zombie (1979) had substantial budgets for practical effects, Manhattan Baby relies more heavily on optical effects and atmosphere. Still, cinematographer Guglielmo Mancori, who also shot <a href=\"/movie/19204\" class=\"movie-title\" data-tmdb-id=\"19204\">The Beyond</a>, creates striking compositions that elevate the material beyond typical supernatural thriller fare. SUBHEAD: Italian Horror's Evolution"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Inferno",
+            "year": 1980,
+            "slug": "Dario Argento's surreal follow-up to Suspiria featuring supernatural horror in New York",
+            "poster": "https://image.tmdb.org/t/p/w500/A92SmwJ4w2GSF6Mp2m8xE9GbG39.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 16395,
+            "poster_url": "https://image.tmdb.org/t/p/w500/A92SmwJ4w2GSF6Mp2m8xE9GbG39.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Manhattan Baby marks a transition point in Italian horror cinema, as filmmakers moved away from the explicit gore of the late 1970s toward more psychological terrors. This shift can be seen in contemporaneous works like Dario Argento's Tenebrae (1982) and Lamberto Bava's A Blade in the Dark (1983), which began incorporating more mainstream thriller elements while maintaining distinctly Italian stylistic flourishes."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Italian Horror: From Gothic to Giallo to Supernatural",
+      "Lucio Fulci's Directing Techniques and Visual Motifs",
+      "Egyptian Mythology in 1980s Horror Cinema",
+      "The Decline of Italian Genre Cinema in the 1980s",
+      "Children in Supernatural Horror: A Cultural Analysis"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Zombie",
+          "year": 1979,
+          "slug": "Fulci's zombie classic featuring a famous underwater zombie vs. shark scene",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "City of the Living Dead",
+          "year": 1980,
+          "slug": "A priest's suicide opens the gates of hell in this atmospheric horror",
+          "poster": "https://image.tmdb.org/t/p/w500/8ymAiDW9ct2GSywWkqATEiKE8OB.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 24920,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8ymAiDW9ct2GSywWkqATEiKE8OB.jpg"
+        },
+        {
+          "title": "The Gates of Hell",
+          "year": 1980,
+          "slug": "Small town horror with memorable gore effects",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Don't Torture a Duckling",
+          "year": 1972,
+          "slug": "Fulci's giallo masterpiece about child murders in a small village",
+          "poster": "https://image.tmdb.org/t/p/w500/ehH1xFUdcLyEeJMBfW5FVeT0Flf.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 49361,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ehH1xFUdcLyEeJMBfW5FVeT0Flf.jpg"
+        },
+        {
+          "title": "The Psychic",
+          "year": 1977,
+          "slug": "Supernatural giallo featuring a woman with precognitive abilities",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": null
+        },
+        {
+          "title": "Demons",
+          "year": 1985,
+          "slug": "Lamberto Bava's meta-horror about moviegoers transformed into monsters",
+          "poster": "https://image.tmdb.org/t/p/w500/ym0mtcSt6i45NIcAoSBQhop0wSP.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 14029,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ym0mtcSt6i45NIcAoSBQhop0wSP.jpg"
+        },
+        {
+          "title": "The Church",
+          "year": 1989,
+          "slug": "Michele Soavi's gothic horror about an ancient evil beneath a cathedral",
+          "poster": "https://image.tmdb.org/t/p/w500/i44N7Es8ei8glNwTO0Sjx9rL51k.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 40364,
+          "poster_url": "https://image.tmdb.org/t/p/w500/i44N7Es8ei8glNwTO0Sjx9rL51k.jpg"
+        },
+        {
+          "title": "The House of Clocks",
+          "year": 1989,
+          "slug": "Late-period Fulci supernatural thriller",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 39992
+        },
+        {
+          "title": "A Lizard in a Woman's Skin",
+          "year": 1971,
+          "slug": "Early Fulci giallo with psychedelic elements",
+          "poster": "https://image.tmdb.org/t/p/w500/nxDBBrdybGVJojFXvZysKteY05k.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 63025,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nxDBBrdybGVJojFXvZysKteY05k.jpg"
+        },
+        {
+          "title": "Seven Notes in Black",
+          "year": 1977,
+          "slug": "Complex supernatural mystery with strong performances",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 27703
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

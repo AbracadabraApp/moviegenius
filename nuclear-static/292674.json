@@ -1,0 +1,172 @@
+{
+  "props": {
+    "title": "Detective Story",
+    "year": 1983,
+    "initialSlug": "The truth is a deadly game.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/gYQIrseFLMEKsULqnCdlFIvnKIS.jpg",
+    "initialStreaming": null,
+    "tmdbId": 292674,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Detective Story** (1983) marked a fascinating entry in Japanese crime cinema, directed by Yoshitaro Nomura at the height of his powers. The film adapts Seicho Matsumoto's novel into a methodical police procedural that shares DNA with Akira Kurosawa's <a href=\"/movie/12493\" class=\"movie-title\">High and Low</a> (1963) in its attention to investigative detail. Nomura's measured approach influenced later Japanese detective films like <a href=\"/movie/36095\" class=\"movie-title\">Cure</a> (1997) and <a href=\"/movie/35436\" class=\"movie-title\">Villain</a> (2010), establishing a template for psychological crime dramas that prioritize the \"why\" over the \"who.\""
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "High and Low",
+            "year": 1963,
+            "slug": "Kurosawa's masterful kidnapping thriller following a wealthy industrialist's moral dilemma",
+            "poster": "https://image.tmdb.org/t/p/w500/tgNjemQPG96uIezpiUiXFcer5ga.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 12493,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tgNjemQPG96uIezpiUiXFcer5ga.jpg"
+          },
+          {
+            "title": "Cure",
+            "year": 1997,
+            "slug": "Kiyoshi Kurosawa's hypnotic detective story about a detective tracking mysterious murders",
+            "poster": "https://image.tmdb.org/t/p/w500/nLZ2AJFLtMoAAAD54mbT4exj1Wp.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 36095,
+            "poster_url": "https://image.tmdb.org/t/p/w500/nLZ2AJFLtMoAAAD54mbT4exj1Wp.jpg"
+          },
+          {
+            "title": "Villain",
+            "year": 2010,
+            "slug": "Modern Japanese crime drama exploring the aftermath of a young woman's murder",
+            "poster": "https://image.tmdb.org/t/p/w500/2v4Lsd6SBnp3GoFGphjWr1T0ink.jpg",
+            "initialStreaming": "AsianCrush",
+            "tmdb_id": 35436,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2v4Lsd6SBnp3GoFGphjWr1T0ink.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's lead performance by Tsutomu Yamazaki (who also starred in **The Yellow Handkerchief** (1977)) grounds the procedural elements in human drama. His portrayal of Detective Yoshikawa captures the psychological toll of investigation work, predating similar character studies like Kiyoshi Kurosawa's **Pulse** (2001) and Bong Joon-ho's <a href=\"/movie/11423\" class=\"movie-title\">Memories of Murder</a> (2003). The film's exploration of post-war Japanese society through its criminal underbelly connects it to contemporaries like Juzo Itami's **The Gentle Art of Japanese Extortion** (1984)."
+      },
+      {
+        "type": "text",
+        "content": "Nomura's visual style in **Detective Story** employs careful composition and extended takes that would influence later Japanese crime films. The director's preference for location shooting in Tokyo's back alleys and cramped offices creates an authentic atmosphere that directors like Takeshi Kitano would later echo in films like **Sonatine** (1993) and **Hana-bi** (1997). SUBHEAD: The Legacy of Japanese Detective Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Memories of Murder",
+            "year": 2003,
+            "slug": "Bong Joon-ho's masterful true-crime thriller about Korea's first serial killer case",
+            "poster": "https://image.tmdb.org/t/p/w500/rxndHKwUeFgTHx0PuuhZS4dMtrB.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 11423,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rxndHKwUeFgTHx0PuuhZS4dMtrB.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Detective Story** builds on the foundation laid by earlier Japanese crime films like **Zero Focus** (1961) and **Castle of Sand** (1974), both also directed by Nomura. These films established a distinctly Japanese approach to the detective genre, emphasizing patient observation and social commentary over action sequences. This influence can be traced through works like Kiyoshi Kurosawa's **Tokyo Sonata** (2008) and **Creepy** (2016), which maintain similar thematic concerns while updating the visual language for contemporary audiences."
+      }
+    ],
+    "exploreFurther": [
+      "The influence of Seicho Matsumoto's crime literature on Japanese cinema",
+      "Yoshitaro Nomura's trilogy of detective films including Zero Focus and Castle of Sand",
+      "The evolution of the Japanese police procedural from 1960s to present",
+      "Visual techniques in Japanese crime cinema",
+      "Post-war social themes in Japanese detective films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Zero Focus",
+          "year": 1961,
+          "slug": "Early Nomura detective classic about a missing husband",
+          "poster": "https://image.tmdb.org/t/p/w500/seEfKtKiZoKFhreYB4ccI1gEZbu.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 115572,
+          "poster_url": "https://image.tmdb.org/t/p/w500/seEfKtKiZoKFhreYB4ccI1gEZbu.jpg"
+        },
+        {
+          "title": "Castle of Sand",
+          "year": 1974,
+          "slug": "Methodical police procedural about a murdered vagrant",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "AsianCrush",
+          "tmdb_id": 29268
+        },
+        {
+          "title": "Stakeout",
+          "year": 1958,
+          "slug": "Influential early Japanese police procedural",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Most Terrible Time in My Life",
+          "year": 1994,
+          "slug": "Neo-noir detective thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/ffRn0MonRBfQk9xcW1iM0usizpR.jpg",
+          "initialStreaming": "AsianCrush",
+          "tmdb_id": 85284,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ffRn0MonRBfQk9xcW1iM0usizpR.jpg"
+        },
+        {
+          "title": "Vengeance Is Mine",
+          "year": 1979,
+          "slug": "Disturbing true-crime masterpiece by Shohei Imamura",
+          "poster": "https://image.tmdb.org/t/p/w500/7mzlay0miUkplT0EsKdR8znOVpe.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 42170,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7mzlay0miUkplT0EsKdR8znOVpe.jpg"
+        },
+        {
+          "title": "The Silent Wall",
+          "year": 1972,
+          "slug": "Atmospheric crime drama from Yoshitaro Nomura",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": null
+        },
+        {
+          "title": "A Taxing Woman",
+          "year": 1987,
+          "slug": "Comedy-tinged investigation film by Juzo Itami",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Mohohan",
+          "year": 2008,
+          "slug": "Modern take on the Japanese detective genre",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "AsianCrush",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Investigation",
+          "year": 2007,
+          "slug": "Procedural drama about a complex murder case",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": null
+        },
+        {
+          "title": "Double Face",
+          "year": 2012,
+          "slug": "Contemporary police thriller with noir elements",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "AsianCrush",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

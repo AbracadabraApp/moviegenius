@@ -1,0 +1,179 @@
+{
+  "props": {
+    "title": "Three Ages",
+    "year": 1923,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/khadgoKp9eLBY4t0KcST5gzddk3.jpg",
+    "initialStreaming": null,
+    "tmdbId": 32628,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Buster Keaton's Three Ages marks a brilliant satirical response to D.W. Griffith's <a href=\"/movie/3059\" class=\"movie-title\" data-tmdb-id=\"3059\">Intolerance</a> (1916), structuring parallel love stories across three historical periods. While Griffith aimed for epic dramatic scope, Keaton transforms the format into a comedic masterpiece. The film follows Keaton's character pursuing romance in prehistoric times, Ancient Rome, and the modern 1920s, showcasing his legendary physical comedy and innovative visual effects. The ambitious structure allowed Keaton to test feature-length filmmaking while hedging his bets - if the full feature failed, he could release each segment as individual shorts."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The General",
+            "year": 1926,
+            "slug": "Keaton's masterpiece follows a Confederate railroad engineer trying to recover his stolen locomotive while pursuing Union spies",
+            "poster": "https://image.tmdb.org/t/p/w500/nIp4gIXogCjfB1QABNsWwa9gSca.jpg",
+            "initialStreaming": "streaming",
+            "tmdb_id": 961,
+            "poster_url": "https://image.tmdb.org/t/p/w500/nIp4gIXogCjfB1QABNsWwa9gSca.jpg"
+          },
+          {
+            "title": "Sherlock Jr.",
+            "year": 1924,
+            "slug": "A film projectionist dreams himself into a movie, featuring groundbreaking special effects and stunning physical comedy",
+            "poster": "https://image.tmdb.org/t/p/w500/1G9r3rqtbFAQuyWKOZm4Y5J5s7Q.jpg",
+            "initialStreaming": "streaming",
+            "tmdb_id": 992,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1G9r3rqtbFAQuyWKOZm4Y5J5s7Q.jpg"
+          },
+          {
+            "title": "Our Hospitality",
+            "year": 1923,
+            "slug": "Keaton's first true feature film follows a family feud with elaborate stunts and period detail",
+            "poster": "https://image.tmdb.org/t/p/w500/cAEdL6RzfDSbPO51izl01Njzikx.jpg",
+            "initialStreaming": "streaming",
+            "tmdb_id": 701,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cAEdL6RzfDSbPO51izl01Njzikx.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The prehistoric segment of Three Ages particularly showcases Keaton's genius for props and practical effects, with clever use of primitive \"technology\" and even a dinosaur sequence that predates <a href=\"/movie/2981\" class=\"movie-title\" data-tmdb-id=\"2981\">The Lost World</a> (1925). His ability to maintain character consistency while adapting to each period's social conventions demonstrates the sophistication behind his seemingly simple comedy. The film's structure allows Keaton to comment on how little human nature changes across time, while staging increasingly elaborate versions of similar gags."
+      },
+      {
+        "type": "text",
+        "content": "Keaton's influence extends far beyond silent comedy. His innovative camera techniques and practical effects in films like Three Ages and <a href=\"/movie/32318\" class=\"movie-title\">The Navigator</a> (1924) laid groundwork for everything from <a href=\"/movie/22596\" class=\"movie-title\" data-tmdb-id=\"22596\">Safety Last!</a> (1923) to modern action choreography. His deadpan performance style influenced generations of comedians, from Jacques Tati to Bill Murray. SUBHEAD: Technical Innovation in Silent Comedy"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Navigator",
+            "year": 1924,
+            "slug": "Keaton plays a wealthy man stranded on an empty ocean liner with his love interest, featuring amazing underwater sequences",
+            "poster": "https://image.tmdb.org/t/p/w500/eFIbnDnBnIi1qnz15UUiMFmjRmL.jpg",
+            "initialStreaming": "streaming",
+            "tmdb_id": 32318,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eFIbnDnBnIi1qnz15UUiMFmjRmL.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The production of Three Ages demonstrates Keaton's masterful understanding of cinema technology. His team constructed massive sets for each time period, including a full-scale coliseum for the Roman sequences. Unlike contemporaries who relied primarily on painted backdrops, Keaton insisted on practical effects and real locations whenever possible, establishing techniques still used in modern filmmaking. His work directly influenced physical comedians like Jackie Chan, who cited Keaton's commitment to practical stunts as inspiration."
+      }
+    ],
+    "exploreFurther": [
+      "Silent Film Special Effects and Innovation",
+      "Buster Keaton's Influence on Modern Action Cinema",
+      "Comedy Across Historical Periods in Film",
+      "The Transition from Short to Feature Length Films",
+      "Physical Comedy and Stunt Work in Silent Era"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Intolerance",
+          "year": 1916,
+          "slug": "D.W. Griffith's epic interweaving four historical narratives",
+          "poster": "https://image.tmdb.org/t/p/w500/lJCabs4TMOsKfnl0BmA5Hf16Ezb.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 3059,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lJCabs4TMOsKfnl0BmA5Hf16Ezb.jpg"
+        },
+        {
+          "title": "Seven Chances",
+          "year": 1925,
+          "slug": "Keaton races to get married by sundown to inherit a fortune",
+          "poster": "https://image.tmdb.org/t/p/w500/fH9woIxzqVtyv6S711vSVlS12eA.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 32600,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fH9woIxzqVtyv6S711vSVlS12eA.jpg"
+        },
+        {
+          "title": "The Cameraman",
+          "year": 1928,
+          "slug": "Keaton's last independent feature follows a struggling newsreel cameraman",
+          "poster": "https://image.tmdb.org/t/p/w500/oz7dVRzxN95IIpa7hsG5XS3nO2L.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 31411,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oz7dVRzxN95IIpa7hsG5XS3nO2L.jpg"
+        },
+        {
+          "title": "Safety Last!",
+          "year": 1923,
+          "slug": "Harold Lloyd's famous clock-hanging sequence defines silent comedy thrills",
+          "poster": "https://image.tmdb.org/t/p/w500/fEt5HWJ32ek8ibef7zSZnA00Jp0.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 22596,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fEt5HWJ32ek8ibef7zSZnA00Jp0.jpg"
+        },
+        {
+          "title": "Modern Times",
+          "year": 1936,
+          "slug": "Chaplin's commentary on industrialization with similar historical perspective",
+          "poster": "https://image.tmdb.org/t/p/w500/7uoiKOEjxBBW0AgDGQWrlfGQ90w.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 3082,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7uoiKOEjxBBW0AgDGQWrlfGQ90w.jpg"
+        },
+        {
+          "title": "The Gold Rush",
+          "year": 1925,
+          "slug": "Chaplin's Alaskan adventure with iconic bread roll dance",
+          "poster": "https://image.tmdb.org/t/p/w500/eQRFo1qwRREYwj47Yoe1PisgOle.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 962,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eQRFo1qwRREYwj47Yoe1PisgOle.jpg"
+        },
+        {
+          "title": "Steamboat Bill Jr.",
+          "year": 1928,
+          "slug": "Famous for the house-falling stunt and hurricane sequence",
+          "poster": "https://image.tmdb.org/t/p/w500/zygJMsmXxeyDc1N67OCZc8xtq4I.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 25768,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zygJMsmXxeyDc1N67OCZc8xtq4I.jpg"
+        },
+        {
+          "title": "The Kid",
+          "year": 1921,
+          "slug": "Chaplin combines comedy with dramatic storytelling",
+          "poster": "https://image.tmdb.org/t/p/w500/drgMcyTsySQBnUPGaBThCHGdlWT.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 10098,
+          "poster_url": "https://image.tmdb.org/t/p/w500/drgMcyTsySQBnUPGaBThCHGdlWT.jpg"
+        },
+        {
+          "title": "City Lights",
+          "year": 1931,
+          "slug": "Silent film masterpiece made in the sound era",
+          "poster": "https://image.tmdb.org/t/p/w500/ugmakEL5y294I5bXgiBqApuZpwc.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 901,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ugmakEL5y294I5bXgiBqApuZpwc.jpg"
+        },
+        {
+          "title": "Go West",
+          "year": 1925,
+          "slug": "Keaton's western comedy with famous train sequence",
+          "poster": "https://image.tmdb.org/t/p/w500/chZ6GbfTIKgD6nYmUKZScDAnIo8.jpg",
+          "initialStreaming": "streaming",
+          "tmdb_id": 33015,
+          "poster_url": "https://image.tmdb.org/t/p/w500/chZ6GbfTIKgD6nYmUKZScDAnIo8.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

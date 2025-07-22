@@ -1,0 +1,224 @@
+{
+  "props": {
+    "title": "Troy",
+    "year": 2004,
+    "initialSlug": "Epic clash of armies for love and glory in Troy",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/a07wLy4ONfpsjnBqMwhlWTJTcm.jpg",
+    "initialStreaming": null,
+    "tmdbId": 652,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Troy reimagines Homer's Iliad as a grand historical epic, stripping away the Greek gods to focus on mortal conflicts. Wolfgang Petersen directs Brad Pitt as a fierce, prideful Achilles whose legendary combat skills are showcased in stunning battle sequences. The film shares DNA with sword-and-sandal epics like <a href=\"/movie/98\" class=\"movie-title\" data-tmdb-id=\"98\">Gladiator</a> (2000) and <a href=\"/movie/1271\" class=\"movie-title\" data-tmdb-id=\"1271\">300</a> (2006), emphasizing spectacular action over strict historical accuracy. While purists criticized the departures from Homer's text, the film succeeds as a muscular war drama about honor, pride, and the human cost of conflict."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Troy",
+            "year": 2004,
+            "slug": "Brad Pitt stars as legendary warrior Achilles in this adaptation of Homer's Iliad, featuring epic battles and the siege of Troy",
+            "poster": "https://image.tmdb.org/t/p/w500/a07wLy4ONfpsjnBqMwhlWTJTcm.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 652,
+            "poster_url": "https://image.tmdb.org/t/p/w500/a07wLy4ONfpsjnBqMwhlWTJTcm.jpg"
+          },
+          {
+            "title": "Gladiator",
+            "year": 2000,
+            "slug": "Ridley Scott's Oscar-winning tale of a Roman general forced into slavery who seeks revenge",
+            "poster": "https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 98,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg"
+          },
+          {
+            "title": "Alexander",
+            "year": 2004,
+            "slug": "Oliver Stone's sprawling epic about Alexander the Great's conquest of the ancient world",
+            "poster": "https://image.tmdb.org/t/p/w500/91QR7ReHg4HiY66avTon185bawQ.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 1966,
+            "poster_url": "https://image.tmdb.org/t/p/w500/91QR7ReHg4HiY66avTon185bawQ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The early 2000s saw a resurgence of the ancient world epic, with Troy arriving alongside Oliver Stone's <a href=\"/movie/1966\" class=\"movie-title\" data-tmdb-id=\"1966\">Alexander</a> (2004) and the TV series <a href=\"/movie/49723\" class=\"movie-title\" data-tmdb-id=\"49723\">Rome</a> (2005). These productions leveraged advanced CGI to recreate ancient battles on an unprecedented scale. Troy particularly excels in its practical effects and stunt work, with Pitt's Achilles demonstrating balletic combat moves that became influential for later historical action films like <a href=\"/movie/1271\" class=\"movie-title\" data-tmdb-id=\"1271\">300</a> (2006) and <a href=\"/movie/37958\" class=\"movie-title\" data-tmdb-id=\"37958\">Immortals</a> (2011)."
+      },
+      {
+        "type": "text",
+        "content": "The film's production design deserves special attention, with massive practical sets creating the walls of Troy and a thousand-ship Greek armada. This approach connects Troy to classic epics like <a href=\"/movie/665\" class=\"movie-title\" data-tmdb-id=\"665\">Ben-Hur</a> (1959) and <a href=\"/movie/8095\" class=\"movie-title\" data-tmdb-id=\"8095\">Cleopatra</a> (1963), where physical craftsmanship dominated. Peter O'Toole's performance as King Priam provides gravitas reminiscent of his work in <a href=\"/movie/947\" class=\"movie-title\" data-tmdb-id=\"947\">Lawrence of Arabia</a> (1962), grounding the spectacle in human drama. SUBHEAD: Ancient World Combat and Choreography"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "300",
+            "year": 2006,
+            "slug": "Stylized retelling of the Battle of Thermopylae, featuring Gerard Butler as Spartan King Leonidas",
+            "poster": "https://image.tmdb.org/t/p/w500/h7Lcio0c9ohxPhSZg42eTlKIVVY.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 1271,
+            "poster_url": "https://image.tmdb.org/t/p/w500/h7Lcio0c9ohxPhSZg42eTlKIVVY.jpg"
+          },
+          {
+            "title": "Immortals",
+            "year": 2011,
+            "slug": "Visually striking mythological action film about Theseus battling the Titans",
+            "poster": "https://image.tmdb.org/t/p/w500/4SPPX5KIyaQ9O8n5rLvvUIiIhpF.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 37958,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4SPPX5KIyaQ9O8n5rLvvUIiIhpF.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "<a href=\"/movie/96141\" class=\"movie-title\" data-tmdb-id=\"96141\">Troy's</a> fight sequences established new standards for ancient warfare on screen. The duel between Achilles and Hector remains a masterclass in theatrical combat, influencing later films like <a href=\"/movie/23759\" class=\"movie-title\" data-tmdb-id=\"23759\">Centurion</a> (2010) and <a href=\"/movie/49494\" class=\"movie-title\" data-tmdb-id=\"49494\">The Eagle</a> (2011). The choreography emphasizes speed and brutal efficiency over flashy moves, creating a more grounded approach to bronze age combat than seen in more fantastical takes like <a href=\"/movie/18823\" class=\"movie-title\" data-tmdb-id=\"18823\">Clash of the Titans</a> (2010)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Ancient World Epics from Ben-Hur to Troy",
+      "Historical Accuracy vs. Hollywood Entertainment in Ancient War Films",
+      "The Influence of Homer's Iliad on Cinema",
+      "Combat Choreography in Historical Epics",
+      "The Rise and Fall of the Sword-and-Sandal Genre"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Ben-Hur",
+          "year": 1959,
+          "slug": "Classic epic about a Jewish prince seeking revenge in Roman times",
+          "poster": "https://image.tmdb.org/t/p/w500/m4WQ1dBIrEIHZNCoAjdpxwSKWyH.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 665,
+          "poster_url": "https://image.tmdb.org/t/p/w500/m4WQ1dBIrEIHZNCoAjdpxwSKWyH.jpg"
+        },
+        {
+          "title": "Kingdom of Heaven",
+          "year": 2005,
+          "slug": "Ridley Scott's Crusades epic with Orlando Bloom",
+          "poster": "https://image.tmdb.org/t/p/w500/rNaBe4TwbMef71sgscqabpGKsxh.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 1495,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rNaBe4TwbMef71sgscqabpGKsxh.jpg"
+        },
+        {
+          "title": "Spartacus",
+          "year": 1960,
+          "slug": "Stanley Kubrick's rebellion epic starring Kirk Douglas",
+          "poster": "https://image.tmdb.org/t/p/w500/xLPpQlFWE12cbqNJQ5Vf4eJU8ij.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 967,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xLPpQlFWE12cbqNJQ5Vf4eJU8ij.jpg"
+        },
+        {
+          "title": "The Last Legion",
+          "year": 2007,
+          "slug": "Colin Firth leads Roman adventure during empire's fall",
+          "poster": "https://image.tmdb.org/t/p/w500/k2jaEoOsTEMqSskBJm3gfcuxNEc.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 9703,
+          "poster_url": "https://image.tmdb.org/t/p/w500/k2jaEoOsTEMqSskBJm3gfcuxNEc.jpg"
+        },
+        {
+          "title": "Centurion",
+          "year": 2010,
+          "slug": "Roman soldiers fight for survival behind enemy lines",
+          "poster": "https://image.tmdb.org/t/p/w500/9ZdfrcP2QCqoRSk7JF06tDWtrhP.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 23759,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9ZdfrcP2QCqoRSk7JF06tDWtrhP.jpg"
+        },
+        {
+          "title": "The Eagle",
+          "year": 2011,
+          "slug": "Roman officer searches for lost legion in ancient Britain",
+          "poster": "https://image.tmdb.org/t/p/w500/e7rcJQWplGZWz57yGlP87rlPmI.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 49494,
+          "poster_url": "https://image.tmdb.org/t/p/w500/e7rcJQWplGZWz57yGlP87rlPmI.jpg"
+        },
+        {
+          "title": "Alexander Nevsky",
+          "year": 1938,
+          "slug": "Eisenstein's historical epic about Russian prince",
+          "poster": "https://image.tmdb.org/t/p/w500/lsTJYStIsnddwioD1L4FEmwj4Cx.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 10235,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lsTJYStIsnddwioD1L4FEmwj4Cx.jpg"
+        },
+        {
+          "title": "300: Rise of an Empire",
+          "year": 2014,
+          "slug": "Parallel story to 300 focusing on naval battles",
+          "poster": "https://image.tmdb.org/t/p/w500/wYDdWN1McB1Sio4z1dPSkb40Z78.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 53182,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wYDdWN1McB1Sio4z1dPSkb40Z78.jpg"
+        },
+        {
+          "title": "Hercules",
+          "year": 2014,
+          "slug": "Dwayne Johnson as a more grounded legendary hero",
+          "poster": "https://image.tmdb.org/t/p/w500/dK9rNoC97tgX3xXg5zdxFisdfcp.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 11970,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dK9rNoC97tgX3xXg5zdxFisdfcp.jpg"
+        },
+        {
+          "title": "Exodus: Gods and Kings",
+          "year": 2014,
+          "slug": "Biblical epic about Moses leading Hebrew exodus",
+          "poster": "https://image.tmdb.org/t/p/w500/uaDj37JtvLan9tihxZ18e6qL33b.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 147441,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uaDj37JtvLan9tihxZ18e6qL33b.jpg"
+        },
+        {
+          "title": "Pompeii",
+          "year": 2014,
+          "slug": "Gladiator love story set against volcanic disaster",
+          "poster": "https://image.tmdb.org/t/p/w500/dxxM3lLDjGRC50i5rhvfQziskAN.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 76649,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dxxM3lLDjGRC50i5rhvfQziskAN.jpg"
+        },
+        {
+          "title": "The Last Samurai",
+          "year": 2003,
+          "slug": "Tom Cruise as American soldier in feudal Japan",
+          "poster": "https://image.tmdb.org/t/p/w500/lsasOSgYI85EHygtT5SvcxtZVYT.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 616,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lsasOSgYI85EHygtT5SvcxtZVYT.jpg"
+        },
+        {
+          "title": "King Arthur",
+          "year": 2004,
+          "slug": "Gritty take on Arthurian legend with Clive Owen",
+          "poster": "https://image.tmdb.org/t/p/w500/iKLZEAnjzr51Ij7TJtNejc5CN3i.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9477,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iKLZEAnjzr51Ij7TJtNejc5CN3i.jpg"
+        },
+        {
+          "title": "Gods of Egypt",
+          "year": 2016,
+          "slug": "Fantasy adventure in mythological ancient Egypt",
+          "poster": "https://image.tmdb.org/t/p/w500/hzH7fwaTyQNITLo40Hu3R7cVMqv.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 205584,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hzH7fwaTyQNITLo40Hu3R7cVMqv.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

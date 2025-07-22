@@ -1,0 +1,177 @@
+{
+  "props": {
+    "title": "Pixels",
+    "year": 2015,
+    "initialSlug": "Prepare for a pixel apocalypse.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/d26S5EfVXLNxRXqyFy1yyl3qRq3.jpg",
+    "initialStreaming": null,
+    "tmdbId": 257344,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Pixels** (2015) represents one of gaming culture's most disappointing transitions to the big screen. While the premise had potential - classic arcade game characters attacking Earth - the execution falls flat despite impressive visual effects. The film follows the path blazed by better gaming-focused movies like **TRON** (1982) and <a href=\"/movie/82690\" class=\"movie-title\">Wreck-It Ralph</a> (2012), but lacks their heart and innovation. Adam Sandler's portrayal of a former gaming champion feels disconnected from both gaming culture and compelling storytelling."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Last Starfighter",
+            "year": 1984,
+            "slug": "A teenager recruited by aliens because of his arcade game skills becomes humanity's last hope",
+            "poster": "https://image.tmdb.org/t/p/w500/A7oAHTjtYnIEQjJs62IONRufooq.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 11884,
+            "poster_url": "https://image.tmdb.org/t/p/w500/A7oAHTjtYnIEQjJs62IONRufooq.jpg"
+          },
+          {
+            "title": "Ready Player One",
+            "year": 2018,
+            "slug": "In a dystopian future, people escape to a virtual reality world filled with pop culture references",
+            "poster": "https://image.tmdb.org/t/p/w500/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 333339,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg"
+          },
+          {
+            "title": "Scott Pilgrim vs. The World",
+            "year": 2010,
+            "slug": "A musician must defeat his girlfriend's seven evil exes in video game-styled battles",
+            "poster": "https://image.tmdb.org/t/p/w500/g5IoYeudx9XBEfwNL0fHvSckLBz.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 22538,
+            "poster_url": "https://image.tmdb.org/t/p/w500/g5IoYeudx9XBEfwNL0fHvSckLBz.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The failure of **Pixels** highlights Hollywood's ongoing struggle to authentically capture gaming culture. While <a href=\"/movie/333339\" class=\"movie-title\">Ready Player One</a> (2018) succeeded by embracing its source material's deep gaming roots, **Pixels** reduces classic games to simple visual gags. The film's treatment of beloved characters like Pac-Man and Donkey Kong lacks the reverence shown in <a href=\"/movie/82690\" class=\"movie-title\">Wreck-It Ralph</a> (2012) or the cultural understanding demonstrated in documentaries like **King of Kong** (2007)."
+      },
+      {
+        "type": "text",
+        "content": "What's particularly frustrating is how **Pixels** wastes its talented cast. Peter Dinklage's portrayal of a Billy Mitchell-inspired gaming champion shows glimpses of what could have been, but gets lost in tired comedy tropes. Compare this to films like **WarGames** (1983), which managed to make gaming both exciting and dramatically meaningful, or **TRON: Legacy** (2010), which successfully updated gaming concepts for modern audiences. SUBHEAD: The Gaming Movie Genre Evolution"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Wreck-It Ralph",
+            "year": 2012,
+            "slug": "A video game villain questions his role and sets out to become a hero",
+            "poster": "https://image.tmdb.org/t/p/w500/zWoIgZ7mgmPkaZjG0102BSKFIqQ.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 82690,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zWoIgZ7mgmPkaZjG0102BSKFIqQ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The gaming movie genre has evolved significantly since **Super Mario Bros.** (1993) first stumbled onto screens. While **Pixels** represents a setback, films like **Detective Pikachu** (2019) and **Sonic the Hedgehog** (2020) have shown that gaming adaptations can work when they respect their source material and build genuine characters. The success of these films demonstrates that audiences want more than just nostalgia and special effects - they want stories that understand gaming culture."
+      }
+    ],
+    "exploreFurther": [
+      "The History of Arcade Gaming in Cinema",
+      "Video Game Movie Adaptations: Success and Failures",
+      "The Evolution of CGI in Gaming-Based Films",
+      "Adam Sandler's Career Transition from Comedy to Serious Roles",
+      "The Influence of 80s Gaming Culture on Modern Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "TRON",
+          "year": 1982,
+          "slug": "A programmer gets transported into a computer world",
+          "poster": "https://image.tmdb.org/t/p/w500/zwSFEczP7AzqugAHHIX3zHniT0t.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 97,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zwSFEczP7AzqugAHHIX3zHniT0t.jpg"
+        },
+        {
+          "title": "Jumanji: Welcome to the Jungle",
+          "year": 2017,
+          "slug": "Four teenagers get sucked into a video game world",
+          "poster": "https://image.tmdb.org/t/p/w500/pSgXKPU5h6U89ipF7HBYajvYt7j.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 353486,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pSgXKPU5h6U89ipF7HBYajvYt7j.jpg"
+        },
+        {
+          "title": "Ralph Breaks the Internet",
+          "year": 2018,
+          "slug": "Wreck-It Ralph ventures into the internet",
+          "poster": "https://image.tmdb.org/t/p/w500/iVCrhBcpDaHGvv7CLYbK6PuXZo1.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 404368,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iVCrhBcpDaHGvv7CLYbK6PuXZo1.jpg"
+        },
+        {
+          "title": "eXistenZ",
+          "year": 1999,
+          "slug": "A game designer becomes trapped in her own virtual reality game",
+          "poster": "https://image.tmdb.org/t/p/w500/kETKF0JhdTPn1knci8CAdYL0d79.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 1946,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kETKF0JhdTPn1knci8CAdYL0d79.jpg"
+        },
+        {
+          "title": "Gamer",
+          "year": 2009,
+          "slug": "In a future where humans control other humans in games",
+          "poster": "https://image.tmdb.org/t/p/w500/nA8ZVbdBsNkTqsa49ZG9na4lFuY.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 18501,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nA8ZVbdBsNkTqsa49ZG9na4lFuY.jpg"
+        },
+        {
+          "title": "Stay Alive",
+          "year": 2006,
+          "slug": "Gamers discover a video game that kills its players in real life",
+          "poster": "https://image.tmdb.org/t/p/w500/hsSJwroE7jugEROB8tmyxJP91Ho.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 10069,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hsSJwroE7jugEROB8tmyxJP91Ho.jpg"
+        },
+        {
+          "title": "Detective Pikachu",
+          "year": 2019,
+          "slug": "A young man teams with Pikachu to solve mysteries",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 447404
+        },
+        {
+          "title": "Sonic the Hedgehog",
+          "year": 2020,
+          "slug": "The blue speedster teams up with a small-town sheriff",
+          "poster": "https://image.tmdb.org/t/p/w500/aQvJ5WPzZgYVDrxLX4R6cLJCEaQ.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 454626,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aQvJ5WPzZgYVDrxLX4R6cLJCEaQ.jpg"
+        },
+        {
+          "title": "King of Kong: A Fistful of Quarters",
+          "year": 2007,
+          "slug": "Documentary about competitive Donkey Kong players",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 13958
+        },
+        {
+          "title": "Indie Game: The Movie",
+          "year": 2012,
+          "slug": "Documentary following independent game developers",
+          "poster": "https://image.tmdb.org/t/p/w500/2B1IqPg97ZhpEov4Fg3si4hI1Kw.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 80215,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2B1IqPg97ZhpEov4Fg3si4hI1Kw.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

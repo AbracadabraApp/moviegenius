@@ -1,0 +1,151 @@
+{
+  "props": {
+    "title": "The Mummy's Tomb",
+    "year": 1942,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/wuaqpLGb5PHpUGUCmQwyS5EVLdw.jpg",
+    "initialStreaming": null,
+    "tmdbId": 29239,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The Mummy's Tomb continues Universal's profitable mummy franchise, picking up 30 years after <a href=\"/movie/31498\" class=\"movie-title\">The Mummy's Hand</a> (1940). Lon Chaney Jr. dons the bandages as Kharis, marking a significant shift from Tom Tyler's previous portrayal. The film follows Universal's monster movie formula established by hits like <a href=\"/movie/138\" class=\"movie-title\" data-tmdb-id=\"138\">Dracula</a> (1931) and <a href=\"/movie/3035\" class=\"movie-title\" data-tmdb-id=\"3035\">Frankenstein</a> (1931), but transplants the action from Egypt to a small Massachusetts town. This relocation strategy became common for Universal's horror sequels, bringing exotic threats into familiar American settings to heighten audience tension."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Mummy's Hand",
+            "year": 1940,
+            "slug": "The predecessor that introduced Kharis, featuring Tom Tyler as the vengeful mummy protecting ancient tombs",
+            "poster": "https://image.tmdb.org/t/p/w500/jSSdvLkGXy4oICnSo5Cnz12B6Ae.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 31498,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jSSdvLkGXy4oICnSo5Cnz12B6Ae.jpg"
+          },
+          {
+            "title": "The Mummy",
+            "year": 1932,
+            "slug": "Boris Karloff's iconic original performance as Imhotep, setting the template for mummy films",
+            "poster": "https://image.tmdb.org/t/p/w500/vSKpbZVvzqQcw6htiyEinbCY9vq.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 15849,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vSKpbZVvzqQcw6htiyEinbCY9vq.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Chaney Jr.'s performance as Kharis established a new template for mummy characters - less articulate and more physically imposing than Karloff's sophisticated Imhotep from <a href=\"/movie/15849\" class=\"movie-title\">The Mummy</a> (1932). This shambling, unstoppable force became the standard portrayal in subsequent films like <a href=\"/movie/29243\" class=\"movie-title\">The Mummy's Ghost</a> (1944) and <a href=\"/movie/29242\" class=\"movie-title\" data-tmdb-id=\"29242\">The Mummy's Curse</a> (1944). The shift mirrors Universal's broader move toward more action-oriented monster films in the 1940s, as seen in <a href=\"/movie/3103\" class=\"movie-title\" data-tmdb-id=\"3103\">House of Frankenstein</a> (1944)."
+      },
+      {
+        "type": "text",
+        "content": "Director Harold Young brings atmospheric cinematography to Massachusetts locations, creating moody sequences that blend Gothic horror with small-town Americana. This combination would influence later horror films like Salem's Lot (1979) and <a href=\"/movie/790\" class=\"movie-title\" data-tmdb-id=\"790\">The Fog</a> (1980), which similarly placed supernatural threats in New England settings. The film's tight 61-minute runtime exemplifies Universal's B-movie efficiency during the 1940s. SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Mummy's Ghost",
+            "year": 1944,
+            "slug": "Chaney Jr. returns as Kharis, now seeking a reincarnated princess",
+            "poster": "https://image.tmdb.org/t/p/w500/eRNWTjYXkUQvqopfgz8DvHolxWA.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 29243,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eRNWTjYXkUQvqopfgz8DvHolxWA.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While often overlooked compared to Universal's primary monster franchises, The Mummy's Tomb helped establish crucial horror tropes that resonated through decades of genre filmmaking. Its influence can be seen in everything from Hammer Horror's <a href=\"/movie/18990\" class=\"movie-title\" data-tmdb-id=\"18990\">The Mummy</a> (1959) to Stephen Sommers' blockbuster reimagining <a href=\"/movie/564\" class=\"movie-title\" data-tmdb-id=\"564\">The Mummy</a> (1999). The film's blend of ancient curses with modern American settings created a template for fish-out-of-water horror that continues in contemporary films."
+      }
+    ],
+    "exploreFurther": [
+      "Universal Monster Crossovers of the 1940s",
+      "Lon Chaney Jr.'s Monster Portfolio",
+      "Evolution of Mummy Makeup Effects",
+      "Egyptian Mythology in Horror Cinema",
+      "New England as Horror Setting"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "House of Frankenstein",
+          "year": 1944,
+          "slug": "Universal monster rally featuring Dracula, Wolf Man, and Frankenstein's Monster",
+          "poster": "https://image.tmdb.org/t/p/w500/9HPcPasdgxjlSMlnyzIWrnGodOz.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 3103,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9HPcPasdgxjlSMlnyzIWrnGodOz.jpg"
+        },
+        {
+          "title": "The Wolf Man",
+          "year": 1941,
+          "slug": "Lon Chaney Jr.'s signature monster role",
+          "poster": "https://image.tmdb.org/t/p/w500/vG8fu5syTtQLzK1hQXyi3ugOPNF.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 13666,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vG8fu5syTtQLzK1hQXyi3ugOPNF.jpg"
+        },
+        {
+          "title": "The Mummy's Curse",
+          "year": 1944,
+          "slug": "Final Universal Mummy film of the 1940s",
+          "poster": "https://image.tmdb.org/t/p/w500/mzdLuaFsZrxJ7KcrExTh7GEOqJt.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 29242,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mzdLuaFsZrxJ7KcrExTh7GEOqJt.jpg"
+        },
+        {
+          "title": "Abbott and Costello Meet the Mummy",
+          "year": 1955,
+          "slug": "Horror-comedy featuring the famous duo",
+          "poster": "https://image.tmdb.org/t/p/w500/aHKjPVnDwE6iiz3pVj7MGwXo8B.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 26661,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aHKjPVnDwE6iiz3pVj7MGwXo8B.jpg"
+        },
+        {
+          "title": "Blood from the Mummy's Tomb",
+          "year": 1971,
+          "slug": "Hammer Horror's psychological take on the mummy myth",
+          "poster": "https://image.tmdb.org/t/p/w500/x2CfNW6RMpUcNMWBMhiZyVE9KLw.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 39263,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x2CfNW6RMpUcNMWBMhiZyVE9KLw.jpg"
+        },
+        {
+          "title": "The Monster Squad",
+          "year": 1987,
+          "slug": "Modern monster rally featuring classic Universal creatures",
+          "poster": "https://image.tmdb.org/t/p/w500/8EVuqCcqFzQvc7X8E3fx3w4B5Td.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 13509,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8EVuqCcqFzQvc7X8E3fx3w4B5Td.jpg"
+        },
+        {
+          "title": "Tales of the Mummy",
+          "year": 1998,
+          "slug": "Modern B-movie take on mummy mythology",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Mummy Returns",
+          "year": 2001,
+          "slug": "Blockbuster sequel to the 1999 remake",
+          "poster": "https://image.tmdb.org/t/p/w500/kdJsW7hcy1lrj7tdMPycTAQPAiR.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 1734,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kdJsW7hcy1lrj7tdMPycTAQPAiR.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

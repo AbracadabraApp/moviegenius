@@ -1,0 +1,176 @@
+{
+  "props": {
+    "title": "A Constant Forge",
+    "year": 2000,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/jbx1WIA6y973IV0JppXuoEYAd6a.jpg",
+    "initialStreaming": null,
+    "tmdbId": 66131,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**A Constant Forge** (2000) stands as the definitive documentary on John Cassavetes, the godfather of American independent cinema. Director Charles Kiselyak crafts an intimate portrait of Cassavetes' guerrilla filmmaking approach through **Shadows** (1959), <a href=\"/movie/753\" class=\"movie-title\">Faces</a> (1968), and <a href=\"/movie/29845\" class=\"movie-title\">A Woman Under the Influence</a> (1974). The doc reveals how Cassavetes funded his early works by acting in mainstream films like **Rosemary's Baby** (1968), pouring his earnings into raw, emotionally charged features that changed American cinema forever."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Shadows",
+            "year": 1959,
+            "slug": "Cassavetes' groundbreaking debut about interracial relationships in New York, shot with handheld 16mm cameras and improvised dialogue",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": null
+          },
+          {
+            "title": "Faces",
+            "year": 1968,
+            "slug": "A devastating portrait of a crumbling marriage featuring John Marley and Gena Rowlands in career-defining performances",
+            "poster": "https://image.tmdb.org/t/p/w500/qTkhxFQ0o6DEtTtPXkv4IA5M90J.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 753,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qTkhxFQ0o6DEtTtPXkv4IA5M90J.jpg"
+          },
+          {
+            "title": "A Woman Under the Influence",
+            "year": 1974,
+            "slug": "Gena Rowlands delivers a tour-de-force performance as a housewife descending into mental illness",
+            "poster": "https://image.tmdb.org/t/p/w500/6EJ4JoTxnH1QmGTE9pPzgtW1cLW.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 29845,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6EJ4JoTxnH1QmGTE9pPzgtW1cLW.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The documentary illuminates Cassavetes' unique collaborative process, particularly with his regular ensemble including wife Gena Rowlands, Peter Falk, and Ben Gazzara. Through extensive interviews and behind-the-scenes footage, we see how <a href=\"/movie/33665\" class=\"movie-title\">Opening Night</a> (1977) and **The Killing of a Chinese Bookie** (1976) emerged from marathon rehearsal sessions and endless takes, with Cassavetes pushing his actors to emotional extremes while keeping the camera rolling."
+      },
+      {
+        "type": "text",
+        "content": "What makes **A Constant Forge** essential viewing is its exploration of Cassavetes' lasting influence on independent cinema. His DNA is evident in the work of directors like Martin Scorsese, who appears in the documentary discussing how **Husbands** (1970) influenced his own character-driven approach. The raw emotional honesty of Cassavetes' style echoes through contemporary filmmakers like Sean Baker's **The Florida Project** (2017) and Kenneth Lonergan's **Manchester by the Sea** (2016). SUBHEAD: The Birth of Independent American Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Opening Night",
+            "year": 1977,
+            "slug": "A aging actress confronts mortality and identity while preparing for a new play",
+            "poster": "https://image.tmdb.org/t/p/w500/5i1331f4Q2sNHUp9X3BOwWPS2Gg.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 33665,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5i1331f4Q2sNHUp9X3BOwWPS2Gg.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The documentary positions Cassavetes as the crucial bridge between Hollywood's studio system and modern independent film. His refusal to compromise artistic vision for commercial success created the template for future independents. The influence is clear in films like **Living in Oblivion** (1995), Steve Buscemi's meta-commentary on indie filmmaking, and **Uncut Gems** (2019), where the Safdie Brothers channel Cassavetes' nervous energy and character authenticity."
+      }
+    ],
+    "exploreFurther": [
+      "Cassavetes' Financing Methods - How he balanced acting work with directing",
+      "The Evolution of Improvisational Cinema Techniques",
+      "Gena Rowlands' Collaborative Process with Cassavetes",
+      "Impact on Modern Independent Filmmaking",
+      "Cassavetes' Rehearsal Techniques and Actor Direction"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Love Streams",
+          "year": 1984,
+          "slug": "Cassavetes' final personal film about siblings dealing with emotional trauma",
+          "poster": "https://image.tmdb.org/t/p/w500/ik9iQolv2LaGOBU3GNAfmd3MrP8.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 52109,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ik9iQolv2LaGOBU3GNAfmd3MrP8.jpg"
+        },
+        {
+          "title": "Husbands",
+          "year": 1970,
+          "slug": "Three men go on an extended bender after their friend's death",
+          "poster": "https://image.tmdb.org/t/p/w500/qPKIKwyT9htY23JzT10ucuerF4f.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 52105,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qPKIKwyT9htY23JzT10ucuerF4f.jpg"
+        },
+        {
+          "title": "The Killing of a Chinese Bookie",
+          "year": 1976,
+          "slug": "A strip club owner must commit murder to pay off gambling debts",
+          "poster": "https://image.tmdb.org/t/p/w500/clQgmbmBOxvA2NepvijoL7YUCvr.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 32040,
+          "poster_url": "https://image.tmdb.org/t/p/w500/clQgmbmBOxvA2NepvijoL7YUCvr.jpg"
+        },
+        {
+          "title": "Gloria",
+          "year": 1980,
+          "slug": "Gena Rowlands as a tough ex-mob girlfriend protecting a young boy",
+          "poster": "https://image.tmdb.org/t/p/w500/mrYZInXp0JEoZYXs0Z108l2jN0C.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 10889,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mrYZInXp0JEoZYXs0Z108l2jN0C.jpg"
+        },
+        {
+          "title": "Minnie and Moskowitz",
+          "year": 1971,
+          "slug": "An unlikely romance between a museum curator and parking lot attendant",
+          "poster": "https://image.tmdb.org/t/p/w500/pufOqUEeEzbUma3WfnLS0AHiMl5.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 24349,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pufOqUEeEzbUma3WfnLS0AHiMl5.jpg"
+        },
+        {
+          "title": "Too Late Blues",
+          "year": 1961,
+          "slug": "Early Cassavetes film about a struggling jazz musician",
+          "poster": "https://image.tmdb.org/t/p/w500/zklWXL0nlmJRyG9TGaCxr7f5IKN.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 75752,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zklWXL0nlmJRyG9TGaCxr7f5IKN.jpg"
+        },
+        {
+          "title": "Big Trouble",
+          "year": 1986,
+          "slug": "Cassavetes' final film as director, a comedy with Peter Falk and Alan Arkin",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Machine Gun McCain",
+          "year": 1969,
+          "slug": "Cassavetes stars as a gangster in this Italian crime film",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 45138
+        },
+        {
+          "title": "Love Streams",
+          "year": 1984,
+          "slug": "Raw examination of the relationship between a brother and sister",
+          "poster": "https://image.tmdb.org/t/p/w500/ik9iQolv2LaGOBU3GNAfmd3MrP8.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 52109,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ik9iQolv2LaGOBU3GNAfmd3MrP8.jpg"
+        },
+        {
+          "title": "The Dirty Dozen",
+          "year": 1967,
+          "slug": "Cassavetes' most famous acting role in this WWII action classic",
+          "poster": "https://image.tmdb.org/t/p/w500/tFWWsuhp22zJ6OG6QepJIiPUfeF.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 1654,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tFWWsuhp22zJ6OG6QepJIiPUfeF.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

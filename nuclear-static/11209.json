@@ -1,0 +1,159 @@
+{
+  "props": {
+    "title": "The Alamo",
+    "year": 1960,
+    "initialSlug": "The Battle That Forged a Nation",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/54KNQfJnYZwhI3sPYyjXtptWGfg.jpg",
+    "initialStreaming": null,
+    "tmdbId": 11209,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "John Wayne's epic The Alamo stands as a towering achievement in historical spectacle filmmaking, though its historical accuracy remains debated. Wayne, in his directorial debut, delivers a patriotic portrayal of the 1836 Texas Revolution that influenced how generations of Americans viewed this pivotal battle. The film follows the familiar beats of <a href=\"/movie/43197\" class=\"movie-title\" data-tmdb-id=\"43197\">The Last Command</a> (1955) but amplifies the scope dramatically with Wayne's massive $12 million budget that rebuilt the Alamo compound to scale in Brackettville, Texas. This was unprecedented for its time, setting a new standard for historical epic productions that would influence later films like <a href=\"/movie/10655\" class=\"movie-title\" data-tmdb-id=\"10655\">Gettysburg</a> (1993)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Last Command",
+            "year": 1955,
+            "slug": "Sterling Hayden leads this earlier take on the Alamo siege, focusing on Jim Bowie's perspective",
+            "poster": "https://image.tmdb.org/t/p/w500/aRqfC9wmx4mA4ZfzPNRNl95kf1v.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 43197,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aRqfC9wmx4mA4ZfzPNRNl95kf1v.jpg"
+          },
+          {
+            "title": "The Man from the Alamo",
+            "year": 1953,
+            "slug": "Glenn Ford stars as a survivor of the Alamo who must prove he's not a coward",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": null
+          },
+          {
+            "title": "Heroes of the Alamo",
+            "year": 1937,
+            "slug": "Early Hollywood treatment of the Texas Revolution focusing on Davy Crockett",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The legacy of Wayne's Alamo extends beyond its immediate impact, creating a template for the \"last stand\" subgenre of Westerns. Films like <a href=\"/movie/301\" class=\"movie-title\" data-tmdb-id=\"301\">Rio Bravo</a> (1959) and <a href=\"/movie/966\" class=\"movie-title\" data-tmdb-id=\"966\">The Magnificent Seven</a> (1960) adopted similar themes of outnumbered heroes making valiant final stands. The film's portrayal of Davy Crockett particularly influenced pop culture, though later productions like The Alamo attempted more historically accurate depictions. Wayne's version emphasized patriotic sacrifice over historical precision, establishing a romanticized version of events that dominated American cultural memory for decades."
+      },
+      {
+        "type": "text",
+        "content": "The film's technical achievements deserve special recognition. The cinematography by William H. Clothier captured the massive scale of the recreated fortress in vibrant Technicolor, while Dimitri Tiomkin's score remains one of the most memorable Western soundtracks. These production values influenced later historical epics like How the West Was Won (1962) and <a href=\"/movie/16638\" class=\"movie-title\" data-tmdb-id=\"16638\">El Cid</a> (1961), establishing a new standard for period piece authenticity in set design and costume work. SUBHEAD: Evolution of Historical Epic Filmmaking"
+      },
+      {
+        "type": "text",
+        "content": "The film's approach to historical drama created ripple effects throughout the genre. While earlier Westerns like <a href=\"/movie/37347\" class=\"movie-title\" data-tmdb-id=\"37347\">Fort Apache</a> (1948) dealt with military installations under siege, The Alamo elevated the scale dramatically. This influenced later productions like <a href=\"/movie/29715\" class=\"movie-title\" data-tmdb-id=\"29715\">Major Dundee</a> (1965) and <a href=\"/movie/14433\" class=\"movie-title\" data-tmdb-id=\"14433\">Zulu</a> (1964), which similarly balanced spectacle with historical events. The trend of massive historical recreations continued through films like <a href=\"/movie/12701\" class=\"movie-title\" data-tmdb-id=\"12701\">Revolution</a> (1985) and <a href=\"/movie/9665\" class=\"movie-title\" data-tmdb-id=\"9665\">Glory</a> (1989), though with increasing emphasis on historical accuracy over mythmaking."
+      }
+    ],
+    "exploreFurther": [
+      "The Real History Behind the Battle of the Alamo vs. Hollywood Versions",
+      "John Wayne's Directorial Techniques and Their Influence on Western Cinema",
+      "The Evolution of Historical Epic Production Design 1950-1970",
+      "Dimitri Tiomkin's Revolutionary Western Film Scores",
+      "Texas Revolution in Cinema: Changing Perspectives Over Time"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Fort Apache",
+          "year": 1948,
+          "slug": "John Ford's cavalry drama about a doomed military outpost",
+          "poster": "https://image.tmdb.org/t/p/w500/5PqKsWVlyIFuMeV1UkK6Q9Q8y9k.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 37347,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5PqKsWVlyIFuMeV1UkK6Q9Q8y9k.jpg"
+        },
+        {
+          "title": "San Antonio",
+          "year": 1945,
+          "slug": "Errol Flynn Western set in post-Alamo Texas",
+          "poster": "https://image.tmdb.org/t/p/w500/vwLq4HsUrjnfaQq1cwYzUCKnZ60.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 17818,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vwLq4HsUrjnfaQq1cwYzUCKnZ60.jpg"
+        },
+        {
+          "title": "Viva Max!",
+          "year": 1969,
+          "slug": "Comic take on modern attempt to retake the Alamo",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Alamo: Thirteen Days to Glory",
+          "year": 1987,
+          "slug": "TV movie starring James Arness as Jim Bowie",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": null
+        },
+        {
+          "title": "Texas",
+          "year": 1941,
+          "slug": "William Holden stars in early Republic Pictures Texas Revolution tale",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Santa Fe Trail",
+          "year": 1940,
+          "slug": "Civil War drama touching on pre-Alamo Texas history",
+          "poster": "https://image.tmdb.org/t/p/w500/uBtJzonmF9uOFrDXlqQuxTfMwl7.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 1718,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uBtJzonmF9uOFrDXlqQuxTfMwl7.jpg"
+        },
+        {
+          "title": "Two Flags West",
+          "year": 1950,
+          "slug": "Civil War Western with Alamo veteran subplot",
+          "poster": "https://image.tmdb.org/t/p/w500/334zxF6EMlrhqcvWkt9OrNdG8HL.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 103119,
+          "poster_url": "https://image.tmdb.org/t/p/w500/334zxF6EMlrhqcvWkt9OrNdG8HL.jpg"
+        },
+        {
+          "title": "The First Texan",
+          "year": 1956,
+          "slug": "Joel McCrea as Sam Houston during Texas independence",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Giant",
+          "year": 1956,
+          "slug": "Epic Texas historical drama spanning generations",
+          "poster": "https://image.tmdb.org/t/p/w500/oQ1Arue52pFLSvvwfcNTy16hTCG.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 1712,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oQ1Arue52pFLSvvwfcNTy16hTCG.jpg"
+        },
+        {
+          "title": "The Searchers",
+          "year": 1956,
+          "slug": "John Wayne's greatest Western, set in post-Alamo Texas",
+          "poster": "https://image.tmdb.org/t/p/w500/jLBmgW0epNzJ1N9uzaVCjbyT94v.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 3114,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jLBmgW0epNzJ1N9uzaVCjbyT94v.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "The Da Vinci Code",
+    "year": 2006,
+    "initialSlug": "The Truth Will Set You Free",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/9ejKfNk0LBhSI9AahH4f9NJNZNM.jpg",
+    "initialStreaming": null,
+    "tmdbId": 591,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The Da Vinci Code sparked a global phenomenon by translating Dan Brown's controversial bestseller into a high-stakes religious thriller. Tom Hanks leads as Robert Langdon, establishing a template for cerebral treasure hunts that influenced films like <a href=\"/movie/2059\" class=\"movie-title\" data-tmdb-id=\"2059\">National Treasure</a> (2004) and <a href=\"/movie/13448\" class=\"movie-title\" data-tmdb-id=\"13448\">Angels & Demons</a> (2009). Director Ron Howard crafts an atmospheric journey through European landmarks, though the film's dense exposition and religious conspiracy theories generated significant backlash from the Catholic Church, similar to the controversy surrounding <a href=\"/movie/11051\" class=\"movie-title\" data-tmdb-id=\"11051\">The Last Temptation of Christ</a> (1988)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Da Vinci Code",
+            "year": 2006,
+            "slug": "Harvard symbologist Robert Langdon races to solve a murder at the Louvre that leads to a religious conspiracy",
+            "poster": "https://image.tmdb.org/t/p/w500/9ejKfNk0LBhSI9AahH4f9NJNZNM.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 591,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9ejKfNk0LBhSI9AahH4f9NJNZNM.jpg"
+          },
+          {
+            "title": "Angels & Demons",
+            "year": 2009,
+            "slug": "Langdon investigates a plot against the Vatican linked to an ancient secret society",
+            "poster": "https://image.tmdb.org/t/p/w500/tFZQAuulEOtFTp0gHbVdEXwGrYe.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 13448,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tFZQAuulEOtFTp0gHbVdEXwGrYe.jpg"
+          },
+          {
+            "title": "National Treasure",
+            "year": 2004,
+            "slug": "A historian searches for a lost treasure using clues from American historical documents",
+            "poster": "https://image.tmdb.org/t/p/w500/pxL6E4GBOPUG6CdkO9cUQN5VMwI.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 2059,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pxL6E4GBOPUG6CdkO9cUQN5VMwI.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film exemplifies Hollywood's fascination with religious mysteries and ancient conspiracies, following a tradition established by <a href=\"/movie/85\" class=\"movie-title\" data-tmdb-id=\"85\">Raiders of the Lost Ark</a> (1981) and continued through <a href=\"/movie/207932\" class=\"movie-title\" data-tmdb-id=\"207932\">Inferno</a> (2016). Its blend of academic detective work and action sequences created a distinct subgenre of intellectual thrillers, influencing works like The Lost Symbol (2021) and <a href=\"/movie/335787\" class=\"movie-title\" data-tmdb-id=\"335787\">Uncharted</a> (2022). The film's extensive use of real locations and historical references, though historically questionable, set a standard for mixing fact and fiction in mainstream entertainment. SUBHEAD: Religious Controversy and Cultural Impact"
+      },
+      {
+        "type": "text",
+        "content": "While The Da Vinci Code faced criticism for its historical accuracy, it opened doors for more films exploring alternative religious histories, like <a href=\"/movie/1495\" class=\"movie-title\" data-tmdb-id=\"1495\">Kingdom of Heaven</a> (2005) and <a href=\"/movie/121856\" class=\"movie-title\" data-tmdb-id=\"121856\">Assassin's Creed</a> (2016). The film's success demonstrated audiences' appetite for conspiracy theories wrapped in historical packaging, though later entries like <a href=\"/movie/13448\" class=\"movie-title\" data-tmdb-id=\"13448\">Angels & Demons</a> (2009) and <a href=\"/movie/207932\" class=\"movie-title\" data-tmdb-id=\"207932\">Inferno</a> (2016) never matched its cultural impact. Howard's direction emphasizes puzzle-solving over action, creating a more cerebral thriller that influenced television series like The Lost Symbol (2021) and Decoded (2010)."
+      }
+    ],
+    "exploreFurther": [
+      "The History of Religious Conspiracy Thrillers in Cinema",
+      "Adapting Complex Novels: From Page to Screen",
+      "Ron Howard's Evolution as a Director",
+      "The Impact of Historical Accuracy in Fiction Films",
+      "Religious Symbolism in Modern Thrillers"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Indiana Jones and the Last Crusade",
+          "year": 1989,
+          "slug": "Indy searches for the Holy Grail while battling Nazis",
+          "poster": "https://image.tmdb.org/t/p/w500/sizg1AU8f8JDZX4QIgE4pjUMBvx.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 89,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sizg1AU8f8JDZX4QIgE4pjUMBvx.jpg"
+        },
+        {
+          "title": "The Name of the Rose",
+          "year": 1986,
+          "slug": "Medieval monk investigates murders in an Italian monastery",
+          "poster": "https://image.tmdb.org/t/p/w500/2BuVu0j6v2kNY2gGxtO3sDGyob2.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 192,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2BuVu0j6v2kNY2gGxtO3sDGyob2.jpg"
+        },
+        {
+          "title": "Stigmata",
+          "year": 1999,
+          "slug": "A hairdresser becomes possessed by a religious force",
+          "poster": "https://image.tmdb.org/t/p/w500/sKS1Vuqj7OQpOumfs6ArC0TICTN.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 10307,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sKS1Vuqj7OQpOumfs6ArC0TICTN.jpg"
+        },
+        {
+          "title": "The Order",
+          "year": 2003,
+          "slug": "A young priest investigates an ancient Catholic secret society",
+          "poster": "https://image.tmdb.org/t/p/w500/7kj4TffoKCt4gIrNupr2oqmir69.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 9616,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7kj4TffoKCt4gIrNupr2oqmir69.jpg"
+        },
+        {
+          "title": "Priest",
+          "year": 2011,
+          "slug": "A warrior priest breaks his vows to save his niece",
+          "poster": "https://image.tmdb.org/t/p/w500/fYHiA7LPGl9DG7m3DUs0Td1VMcO.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 38321,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fYHiA7LPGl9DG7m3DUs0Td1VMcO.jpg"
+        },
+        {
+          "title": "The Ninth Gate",
+          "year": 1999,
+          "slug": "A rare book dealer searches for a demonic text",
+          "poster": "https://image.tmdb.org/t/p/w500/iFDtmA8Bg9zE4NcsjcmGfqFN01H.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 622,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iFDtmA8Bg9zE4NcsjcmGfqFN01H.jpg"
+        },
+        {
+          "title": "The Last Temptation of Christ",
+          "year": 1988,
+          "slug": "Controversial interpretation of Jesus's life",
+          "poster": "https://image.tmdb.org/t/p/w500/7L4qwrC1mipZXJfU5oRgQWChLv1.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 11051,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7L4qwrC1mipZXJfU5oRgQWChLv1.jpg"
+        },
+        {
+          "title": "Kingdom of Heaven",
+          "year": 2005,
+          "slug": "Epic about the Crusades and religious conflict",
+          "poster": "https://image.tmdb.org/t/p/w500/rNaBe4TwbMef71sgscqabpGKsxh.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 1495,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rNaBe4TwbMef71sgscqabpGKsxh.jpg"
+        },
+        {
+          "title": "The Seventh Sign",
+          "year": 1988,
+          "slug": "A woman discovers signs of the biblical apocalypse",
+          "poster": "https://image.tmdb.org/t/p/w500/vAgVzkPmfe2pcgzkpoz8cZ9i9wm.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 11082,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vAgVzkPmfe2pcgzkpoz8cZ9i9wm.jpg"
+        },
+        {
+          "title": "End of Days",
+          "year": 1999,
+          "slug": "A ex-cop protects a woman from Satan",
+          "poster": "https://image.tmdb.org/t/p/w500/pY8FbKKl3VD0jRI1iDFrwN6alLa.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9946,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pY8FbKKl3VD0jRI1iDFrwN6alLa.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

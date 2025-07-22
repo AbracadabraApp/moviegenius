@@ -1,0 +1,131 @@
+{
+  "props": {
+    "title": "Three Faces of Eve",
+    "year": 1957,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/jqfTPqaGYlz1ZR7YHjz5RTgPa8U.jpg",
+    "initialStreaming": null,
+    "tmdbId": 28285,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The Three Faces of Eve (1957) revolutionized Hollywood's portrayal of multiple personality disorder (now DID) through Joanne Woodward's groundbreaking performance as Eve White, Eve Black, and Jane. The film preceded more sensationalized takes like <a href=\"/movie/539\" class=\"movie-title\" data-tmdb-id=\"539\">Psycho</a> (1960) but maintained clinical accuracy by basing its story on real psychiatric case studies. Its influence echoes through later psychological dramas like Sybil (1976) and <a href=\"/movie/2832\" class=\"movie-title\" data-tmdb-id=\"2832\">Identity</a> (2003), though none matched Woodward's Oscar-winning portrayal of distinct personalities shifting in real-time through subtle facial changes and posture adjustments. Sybil|1976|Sally Field delivers a tour-de-force performance as a woman with 16 distinct personalities in this landmark TV movie based on a true story|Prime Identity|2003|John Cusack leads an ensemble cast in this psychological thriller about stranded strangers who may be manifestations of one person's fractured psyche|Netflix Split|2016|James McAvoy portrays 23 distinct personalities in M. Night Shyamalan's taut thriller about DID|HBO Max"
+      },
+      {
+        "type": "text",
+        "content": "The psychological authenticity of The Three Faces of Eve (1957) stems from director Nunnally Johnson's close collaboration with the psychiatrists who treated the real Christine Costner Sizemore (the actual Eve). This clinical foundation established a template for serious portrayals of mental health in cinema, influencing films like <a href=\"/movie/3558\" class=\"movie-title\" data-tmdb-id=\"3558\">Girl, Interrupted</a> (1999) and <a href=\"/movie/453\" class=\"movie-title\" data-tmdb-id=\"453\">A Beautiful Mind</a> (2001). The film's restraint in avoiding exploitation stands in stark contrast to later works like <a href=\"/movie/550\" class=\"movie-title\" data-tmdb-id=\"550\">Fight Club</a> (1999), which used multiple personalities as plot devices rather than examining the genuine disorder."
+      },
+      {
+        "type": "text",
+        "content": "Woodward's performance technique of physically transforming between personalities without makeup or effects inspired later actors tackling similar roles. Edward Norton in <a href=\"/movie/1592\" class=\"movie-title\" data-tmdb-id=\"1592\">Primal Fear</a> (1996) and Toni Collette in United States of Tara (2009-2011) both credited Woodward's work as foundational to their own portrayals of fractured identities. The film's emphasis on therapy and potential recovery also marked a progressive departure from earlier Hollywood depictions of mental illness as untreatable or inherently dangerous. Primal Fear|1996|Edward Norton's breakthrough role as an altar boy with multiple personalities accused of murder|Paramount+ Fight Club|1999|David Fincher's controversial exploration of masculinity and divided identity starring Brad Pitt and Edward Norton|Hulu United States of Tara|2009|Toni Collette stars in this series about a suburban mom managing multiple personalities|Showtime SUBHEAD: Impact on Mental Health in Cinema"
+      },
+      {
+        "type": "text",
+        "content": "The success of The Three Faces of Eve (1957) opened doors for more nuanced portrayals of mental health conditions. Films like <a href=\"/movie/510\" class=\"movie-title\" data-tmdb-id=\"510\">One Flew Over the Cuckoo's Nest</a> (1975) and <a href=\"/movie/16619\" class=\"movie-title\" data-tmdb-id=\"16619\">Ordinary People</a> (1980) followed its lead in treating psychiatric treatment seriously rather than as horror movie fodder. This influence extends to contemporary works like <a href=\"/movie/82693\" class=\"movie-title\" data-tmdb-id=\"82693\">Silver Linings Playbook</a> (2012), which continue the tradition of examining mental health through a humanizing lens."
+      }
+    ],
+    "exploreFurther": [
+      "The real Christine Costner Sizemore's life after the film and her own written accounts",
+      "Evolution of psychiatric treatment for Dissociative Identity Disorder since the 1950s",
+      "Joanne Woodward's preparation techniques for portraying multiple personalities",
+      "The impact of Three Faces of Eve on mental health stigma in American society",
+      "Comparison of clinical accuracy in films depicting DID across decades"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Psycho",
+          "year": 1960,
+          "slug": "Hitchcock's psychological thriller featuring multiple personalities",
+          "poster": "https://image.tmdb.org/t/p/w500/yz4QVqPx3h1hD1DfqqQkCq3rmxW.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 539,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yz4QVqPx3h1hD1DfqqQkCq3rmxW.jpg"
+        },
+        {
+          "title": "Black Swan",
+          "year": 2010,
+          "slug": "Natalie Portman's Oscar-winning role as a ballerina losing grip on reality",
+          "poster": "https://image.tmdb.org/t/p/w500/viWheBd44bouiLCHgNMvahLThqx.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 44214,
+          "poster_url": "https://image.tmdb.org/t/p/w500/viWheBd44bouiLCHgNMvahLThqx.jpg"
+        },
+        {
+          "title": "Shutter Island",
+          "year": 2010,
+          "slug": "Psychological thriller exploring memory and identity with Leonardo DiCaprio",
+          "poster": "https://image.tmdb.org/t/p/w500/nrmXQ0zcZUL8jFLrakWc90IR8z9.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 11324,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nrmXQ0zcZUL8jFLrakWc90IR8z9.jpg"
+        },
+        {
+          "title": "Memento",
+          "year": 2000,
+          "slug": "Christopher Nolan's reverse-chronological study of identity and memory loss",
+          "poster": "https://image.tmdb.org/t/p/w500/fKTPH2WvH8nHTXeBYBVhawtRqtR.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 77,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fKTPH2WvH8nHTXeBYBVhawtRqtR.jpg"
+        },
+        {
+          "title": "The Ward",
+          "year": 2010,
+          "slug": "John Carpenter's psychological horror about identity in a mental institution",
+          "poster": "https://image.tmdb.org/t/p/w500/x2dqoY5cYop46SKebNXRNL5EXEM.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 45657,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x2dqoY5cYop46SKebNXRNL5EXEM.jpg"
+        },
+        {
+          "title": "Session 9",
+          "year": 2001,
+          "slug": "Horror film exploring multiple personalities in an abandoned asylum",
+          "poster": "https://image.tmdb.org/t/p/w500/A3Au37c3KJX29BDvldzGiYtaU5B.jpg",
+          "initialStreaming": "Pluto TV",
+          "tmdb_id": 10972,
+          "poster_url": "https://image.tmdb.org/t/p/w500/A3Au37c3KJX29BDvldzGiYtaU5B.jpg"
+        },
+        {
+          "title": "Secret Window",
+          "year": 2004,
+          "slug": "Johnny Depp as a writer whose alternate personality threatens his life",
+          "poster": "https://image.tmdb.org/t/p/w500/hvzw4wufKZkDCTPVeG71Z7pGfZh.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1586,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hvzw4wufKZkDCTPVeG71Z7pGfZh.jpg"
+        },
+        {
+          "title": "Hide and Seek",
+          "year": 2005,
+          "slug": "Robert De Niro discovers his daughter's mysterious friend may be more than imaginary",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 11096
+        },
+        {
+          "title": "Raising Cain",
+          "year": 1992,
+          "slug": "Brian De Palma's thriller about a child psychologist with multiple personalities",
+          "poster": "https://image.tmdb.org/t/p/w500/5vRn138vnZeUNFe32qTuPGKkVLR.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 13937,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5vRn138vnZeUNFe32qTuPGKkVLR.jpg"
+        },
+        {
+          "title": "Frankie & Alice",
+          "year": 2010,
+          "slug": "Halle Berry stars as a woman struggling with multiple personalities",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 55061
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

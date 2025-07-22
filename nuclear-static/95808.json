@@ -1,0 +1,171 @@
+{
+  "props": {
+    "title": "Brooklyn Castle",
+    "year": 2012,
+    "initialSlug": "Kids conquer chess at Brooklyn public school",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/aHRwEeUjQkzxz7o8NfvYGcws0xW.jpg",
+    "initialStreaming": null,
+    "tmdbId": 95808,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Brooklyn Castle** (2012) revolutionized the way chess documentaries connect with mainstream audiences. Following students at I.S. 318 in Brooklyn, where more than 65% of students live below the poverty line, the film shows how an extraordinary chess program transforms lives. It's reminiscent of other powerful education documentaries like **Waiting for Superman** (2010) and **Mad Hot Ballroom** (2005), but with a laser focus on how competitive chess builds critical thinking skills and self-confidence in young minds."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Searching for Bobby Fischer",
+            "year": 1993,
+            "slug": "A prodigy navigates the intense world of competitive chess while trying to maintain his childhood innocence",
+            "poster": "https://image.tmdb.org/t/p/w500/oAJpHkMpfXiFY9F3HocIz9fhHLc.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 14291,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oAJpHkMpfXiFY9F3HocIz9fhHLc.jpg"
+          },
+          {
+            "title": "Queen of Katwe",
+            "year": 2016,
+            "slug": "The true story of a Ugandan girl who becomes a chess champion despite overwhelming odds",
+            "poster": "https://image.tmdb.org/t/p/w500/m8V2ud6uhV7qH6wEDoQ4Ujw99ji.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 317557,
+            "poster_url": "https://image.tmdb.org/t/p/w500/m8V2ud6uhV7qH6wEDoQ4Ujw99ji.jpg"
+          },
+          {
+            "title": "Magnus",
+            "year": 2016,
+            "slug": "Documentary following Magnus Carlsen's journey to becoming World Chess Champion",
+            "poster": "https://image.tmdb.org/t/p/w500/iREs3gCWywQHILPpc2cDBw6CRiD.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 390409,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iREs3gCWywQHILPpc2cDBw6CRiD.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film masterfully balances personal stories with broader social commentary about education funding and opportunities. When budget cuts threaten the chess program, we see how extracurricular activities become lifelines for students. This theme echoes through other compelling education documentaries like **Race to Nowhere** (2010) and **The Cartel** (2009), but **Brooklyn Castle** stands apart by showing the tangible impact of chess on students' academic performance and life skills."
+      },
+      {
+        "type": "text",
+        "content": "What makes **Brooklyn Castle** particularly powerful is its intimate portrayal of the students' home lives and personal struggles. Like **Hoop Dreams** (1994) did for basketball, this film uses chess as a lens to examine social mobility, family sacrifice, and the American dream. The students' dedication to mastering chess while managing academic pressures and family responsibilities creates an inspiring narrative that transcends the game itself. SUBHEAD: The Impact of Educational Competition"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Spellbound",
+            "year": 2002,
+            "slug": "Following eight competitors in the National Spelling Bee, revealing the intense preparation and pressure",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 16636
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film raises important questions about competitive pressure on young students, a theme also explored in **Race to Nowhere** (2010) and **2 Million Minutes** (2007). However, **Brooklyn Castle** shows how structured competition can actually build resilience and coping skills when supported by caring mentors and a strong community. The chess program becomes a model for how schools can nurture both academic excellence and emotional intelligence."
+      }
+    ],
+    "exploreFurther": [
+      "The History of Chess in American Public Education",
+      "The Impact of Budget Cuts on School Enrichment Programs",
+      "Competitive Sports and Activities in Youth Development",
+      "Documentary Filmmaking Techniques in Education Stories",
+      "The Role of After-School Programs in Academic Success"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Most Likely to Succeed",
+          "year": 2015,
+          "slug": "Documentary examining innovative approaches to education",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 319078
+        },
+        {
+          "title": "The Short Game",
+          "year": 2013,
+          "slug": "Following young golf prodigies pursuing their dreams",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 169864
+        },
+        {
+          "title": "Mad Hot Ballroom",
+          "year": 2005,
+          "slug": "NYC public school students learn ballroom dancing",
+          "poster": "https://image.tmdb.org/t/p/w500/1wDU19PTEdR30QdnLFw93scXto7.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 14358,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1wDU19PTEdR30QdnLFw93scXto7.jpg"
+        },
+        {
+          "title": "Waiting for Superman",
+          "year": 2010,
+          "slug": "Examining the failures of American public education",
+          "poster": "https://image.tmdb.org/t/p/w500/l7mRlEi4VCEH7sfgaXX1b6LzsXn.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 39440,
+          "poster_url": "https://image.tmdb.org/t/p/w500/l7mRlEi4VCEH7sfgaXX1b6LzsXn.jpg"
+        },
+        {
+          "title": "Science Fair",
+          "year": 2018,
+          "slug": "Following students competing in international science fair",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 493121
+        },
+        {
+          "title": "The Cartel",
+          "year": 2009,
+          "slug": "Investigation of public education spending and results",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Step",
+          "year": 2017,
+          "slug": "Baltimore girls' step team pursues college dreams",
+          "poster": "https://image.tmdb.org/t/p/w500/427ZSBDRQ3nTst3ljrEKfQP6mx9.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 433010,
+          "poster_url": "https://image.tmdb.org/t/p/w500/427ZSBDRQ3nTst3ljrEKfQP6mx9.jpg"
+        },
+        {
+          "title": "On the Way to School",
+          "year": 2013,
+          "slug": "Four children's extraordinary journeys to get education",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 222297
+        },
+        {
+          "title": "The First Position",
+          "year": 2011,
+          "slug": "Young ballet dancers compete in prestigious competition",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "PBS",
+          "tmdb_id": null
+        },
+        {
+          "title": "Resolved",
+          "year": 2007,
+          "slug": "High school students in competitive debate circuits",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 25999
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

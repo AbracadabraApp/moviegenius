@@ -1,0 +1,177 @@
+{
+  "props": {
+    "title": "The Tell-Tale Heart",
+    "year": 1953,
+    "initialSlug": "Madness stalks the shadows.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/AsUpsdGwNbFRpPG6BxvshwFRaut.jpg",
+    "initialStreaming": null,
+    "tmdbId": 127401,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "UPA Studios' animated adaptation of **The Tell-Tale Heart** (1953) revolutionized horror animation through its stark modernist style and James Mason's haunting narration. This 8-minute masterpiece transforms Edgar Allan Poe's psychological thriller into a groundbreaking exercise in minimalist terror, using abstract shapes, harsh angles, and expressionistic shadows that would influence animation for decades. The film earned a distinctive place in cinema history as the first animated film to receive an X rating in the UK, proving animation could tackle mature psychological themes with sophisticated artistic approaches."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Fall of the House of Usher",
+            "year": 1928,
+            "slug": "Jean Epstein's surrealist silent adaptation of Poe creates dreamlike horror through innovative camera techniques and distorted imagery",
+            "poster": "https://image.tmdb.org/t/p/w500/tAQ85wZW4peogUJha88rT8SPq7v.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 106394,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tAQ85wZW4peogUJha88rT8SPq7v.jpg"
+          },
+          {
+            "title": "Vincent",
+            "year": 1982,
+            "slug": "Tim Burton's stop-motion short about a boy obsessed with Vincent Price and Poe showcases Burton's gothic storytelling roots",
+            "poster": "https://image.tmdb.org/t/p/w500/sH8CMLnuXbQv9T61mUCPHxZotDJ.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 32085,
+            "poster_url": "https://image.tmdb.org/t/p/w500/sH8CMLnuXbQv9T61mUCPHxZotDJ.jpg"
+          },
+          {
+            "title": "Extraordinary Tales",
+            "year": 2013,
+            "slug": "Anthology of animated Poe stories including The Tell-Tale Heart, with narration by Christopher Lee and Guillermo del Toro",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 329020
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The influence of **The Tell-Tale Heart** (1953) extends beyond horror animation into the broader realm of psychological thrillers. Its techniques for portraying mental deterioration can be seen in films like **Repulsion** (1965) and **Black Swan** (2010), where subjective camera work and distorted imagery convey psychological breakdown. The film's use of unreliable narration established a template followed by countless thrillers, from **Fight Club** (1999) to **Shutter Island** (2010)."
+      },
+      {
+        "type": "text",
+        "content": "The film's visual style draws from German Expressionism, recalling **The Cabinet of Dr. Caligari** (1920) while anticipating the noir-influenced animation of **Spider-Man: Into the Spider-Verse** (2018). Its bold use of limited animation and geometric abstraction influenced experimental animators like Don Hertzfeldt and Bill Plympton, seen in works like **It's Such a Beautiful Day** (2012). SUBHEAD: Legacy in Modern Animation"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Perfect Blue",
+            "year": 1997,
+            "slug": "Satoshi Kon's psychological thriller about an idol's descent into madness uses animation to blur reality and delusion",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 10494
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Contemporary animated horror films continue to build on **The Tell-Tale Heart's** (1953) foundation. **Coraline** (2009) employs similar psychological dread, while **Mad God** (2021) pushes experimental animation into new realms of horror. The short's influence is particularly evident in adult animation anthology series like **Love, Death & Robots** (2019-present), where episodes frequently blend psychological horror with innovative animation styles."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of UPA Studios' Revolutionary Animation Style",
+      "Edgar Allan Poe Adaptations in Cinema History",
+      "Psychological Horror in Animation",
+      "James Mason's Voice Acting Career",
+      "Impact on Modern Experimental Animation"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Masque of the Red Death",
+          "year": 1964,
+          "slug": "Vincent Price stars in Roger Corman's vibrant Poe adaptation",
+          "poster": "https://image.tmdb.org/t/p/w500/sSYceyGZrWskWDsn3MHtipJ1wFM.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 25319,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sSYceyGZrWskWDsn3MHtipJ1wFM.jpg"
+        },
+        {
+          "title": "The Raven",
+          "year": 1963,
+          "slug": "Horror-comedy Poe adaptation with Vincent Price, Boris Karloff, and Peter Lorre",
+          "poster": "https://image.tmdb.org/t/p/w500/tt7m22ki1raa0NrvesawJgsQ4Jn.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 29056,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tt7m22ki1raa0NrvesawJgsQ4Jn.jpg"
+        },
+        {
+          "title": "The Pit and the Pendulum",
+          "year": 1961,
+          "slug": "Roger Corman's atmospheric Poe adaptation starring Vincent Price",
+          "poster": "https://image.tmdb.org/t/p/w500/6hOTmFaePluI5eicY4XTv6hg0T0.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 28501,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6hOTmFaePluI5eicY4XTv6hg0T0.jpg"
+        },
+        {
+          "title": "Tales of Terror",
+          "year": 1962,
+          "slug": "Anthology of Poe stories featuring Vincent Price in multiple roles",
+          "poster": "https://image.tmdb.org/t/p/w500/avAfdcgLZ6ix1j4xjeAs3gGofIS.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 29074,
+          "poster_url": "https://image.tmdb.org/t/p/w500/avAfdcgLZ6ix1j4xjeAs3gGofIS.jpg"
+        },
+        {
+          "title": "Spirits of the Dead",
+          "year": 1968,
+          "slug": "European anthology of Poe stories directed by Fellini, Vadim, and Malle",
+          "poster": "https://image.tmdb.org/t/p/w500/9HmCwfPG7URPSXSrmEAFN65VoWE.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 41225,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9HmCwfPG7URPSXSrmEAFN65VoWE.jpg"
+        },
+        {
+          "title": "The Black Cat",
+          "year": 1934,
+          "slug": "Loosely adapted Poe tale with Bela Lugosi and Boris Karloff",
+          "poster": "https://image.tmdb.org/t/p/w500/QTH3dkeDGTBRBmsY0A7STpsNN4.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 24106,
+          "poster_url": "https://image.tmdb.org/t/p/w500/QTH3dkeDGTBRBmsY0A7STpsNN4.jpg"
+        },
+        {
+          "title": "House of Usher",
+          "year": 1960,
+          "slug": "First and most acclaimed of Roger Corman's Poe cycle",
+          "poster": "https://image.tmdb.org/t/p/w500/jEzZOrGSWpl0jKOIXoY3OnEabLQ.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 23439,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jEzZOrGSWpl0jKOIXoY3OnEabLQ.jpg"
+        },
+        {
+          "title": "The Haunted Palace",
+          "year": 1963,
+          "slug": "Marketed as Poe but actually based on Lovecraft, starring Vincent Price",
+          "poster": "https://image.tmdb.org/t/p/w500/s2nvogtK7ts0BCzMdj9K1yp5PMH.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 30137,
+          "poster_url": "https://image.tmdb.org/t/p/w500/s2nvogtK7ts0BCzMdj9K1yp5PMH.jpg"
+        },
+        {
+          "title": "Two Evil Eyes",
+          "year": 1990,
+          "slug": "Dario Argento and George Romero adapt Poe for modern audiences",
+          "poster": "https://image.tmdb.org/t/p/w500/zVWaQfaSZ7AWE0XqbMT57szVmXo.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 29514,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zVWaQfaSZ7AWE0XqbMT57szVmXo.jpg"
+        },
+        {
+          "title": "Lunacy",
+          "year": 2005,
+          "slug": "Jan Švankmajer's surrealist take on several Poe stories",
+          "poster": "https://image.tmdb.org/t/p/w500/9zNT7QuZDecaQzUnqpmXeIUhUqR.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 21156,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9zNT7QuZDecaQzUnqpmXeIUhUqR.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

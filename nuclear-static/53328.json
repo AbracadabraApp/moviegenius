@@ -1,0 +1,158 @@
+{
+  "props": {
+    "title": "The Last Mountain",
+    "year": 2011,
+    "initialSlug": "Documentary about mountain top removal mining",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/3RpbelASwAWlL5DX2jFNsKkT6r7.jpg",
+    "initialStreaming": null,
+    "tmdbId": 53328,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Last Mountain** (2011) stands as a pivotal environmental documentary that exposes the devastating impact of mountaintop removal coal mining in Appalachia. Director Bill Haney crafts a compelling narrative that follows Robert F. Kennedy Jr. and local activists fighting against Massey Energy in Coal River Valley, West Virginia. The film shares DNA with other hard-hitting environmental docs like **Gasland** (2010) and **An Inconvenient Truth** (2006), but distinguishes itself through intimate portraits of community resistance and stark footage of environmental destruction."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Food Inc.",
+            "year": 2008,
+            "slug": "Exposé of America's industrialized food system and its impact on health, workers and environment",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 18570
+          },
+          {
+            "title": "Harlan County USA",
+            "year": 1976,
+            "slug": "Barbara Kopple's landmark documentary about Kentucky coal miners striking against Duke Power Company",
+            "poster": "https://image.tmdb.org/t/p/w500/czlSTtG1x81ThTTT8xXnhoIteXh.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 33324,
+            "poster_url": "https://image.tmdb.org/t/p/w500/czlSTtG1x81ThTTT8xXnhoIteXh.jpg"
+          },
+          {
+            "title": "Dark Waters",
+            "year": 2019,
+            "slug": "Mark Ruffalo stars in true story of lawyer who uncovers DuPont's decades of chemical pollution",
+            "poster": "https://image.tmdb.org/t/p/w500/bzvzaHqKBSuGIIWhinTQPHvT0zf.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 552178,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bzvzaHqKBSuGIIWhinTQPHvT0zf.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The environmental documentary landscape shifted dramatically in the 2000s, with films like **The Cove** (2009) and **Chasing Ice** (2012) employing sophisticated cinematography and narrative techniques to make complex issues accessible. **The Last Mountain** follows this tradition while adding crucial historical context about Appalachia's complex relationship with coal mining, dating back to the violent labor conflicts documented in John Sayles' dramatic film **Matewan** (1987). SUBHEAD: Corporate Power vs Community Activism"
+      },
+      {
+        "type": "text",
+        "content": "While **The Last Mountain** focuses on one valley's fight, it connects to broader documentaries exposing corporate environmental damage like **Company Town** (2016) and **Crude** (2009). The film's emphasis on grassroots activism mirrors other powerful documentaries like **When Two Worlds Collide** (2016) about indigenous resistance to Peruvian rainforest exploitation. Director Haney's approach of following both activists and affected community members creates an intimate portrait of environmental justice in action."
+      }
+    ],
+    "exploreFurther": [
+      "History of Coal Mining Labor Conflicts in Appalachia",
+      "Environmental Impact of Mountaintop Removal Mining",
+      "Robert F. Kennedy Jr.'s Environmental Activism",
+      "Community-Based Environmental Justice Movements",
+      "Evolution of Environmental Documentary Filmmaking"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "An Inconvenient Truth",
+          "year": 2006,
+          "slug": "Al Gore's influential climate change documentary",
+          "poster": "https://image.tmdb.org/t/p/w500/zrYT5UHE2UIsofwkv6KK2Tsu5a.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 1781,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zrYT5UHE2UIsofwkv6KK2Tsu5a.jpg"
+        },
+        {
+          "title": "Gasland",
+          "year": 2010,
+          "slug": "Investigation into impacts of natural gas fracking",
+          "poster": "https://image.tmdb.org/t/p/w500/2vu4Nk1wY0yjXiSzOxYuXlaD8yV.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 40663,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2vu4Nk1wY0yjXiSzOxYuXlaD8yV.jpg"
+        },
+        {
+          "title": "If a Tree Falls",
+          "year": 2011,
+          "slug": "Story of the Earth Liberation Front's radical environmentalism",
+          "poster": "https://image.tmdb.org/t/p/w500/mNZbF5lls0Al6Qxk0rw6bhQ26dU.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 79042,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mNZbF5lls0Al6Qxk0rw6bhQ26dU.jpg"
+        },
+        {
+          "title": "Flow: For Love of Water",
+          "year": 2008,
+          "slug": "Global water crisis and corporate water privatization",
+          "poster": "https://image.tmdb.org/t/p/w500/c6PhyYIhcKwmPpEwIvyNAo0Dsvu.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 18187,
+          "poster_url": "https://image.tmdb.org/t/p/w500/c6PhyYIhcKwmPpEwIvyNAo0Dsvu.jpg"
+        },
+        {
+          "title": "Who Killed the Electric Car?",
+          "year": 2006,
+          "slug": "How auto and oil industries stifled electric vehicle development",
+          "poster": "https://image.tmdb.org/t/p/w500/uMamC9o5zNU9wn8fyuAo2gUCMiD.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 13508,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uMamC9o5zNU9wn8fyuAo2gUCMiD.jpg"
+        },
+        {
+          "title": "The 11th Hour",
+          "year": 2007,
+          "slug": "Leonardo DiCaprio produced look at environmental crisis",
+          "poster": "https://image.tmdb.org/t/p/w500/9ZQyqJhoqSXYhu27oRDqz3Tzl10.jpg",
+          "initialStreaming": "Apple TV",
+          "tmdb_id": 4832,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9ZQyqJhoqSXYhu27oRDqz3Tzl10.jpg"
+        },
+        {
+          "title": "Burning",
+          "year": 2021,
+          "slug": "Australian wildfire crisis documentary",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Kiss the Ground",
+          "year": 2020,
+          "slug": "Regenerative agriculture as climate change solution",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Chasing Coral",
+          "year": 2017,
+          "slug": "Documentation of worldwide coral reef die-off",
+          "poster": "https://image.tmdb.org/t/p/w500/AvRHRqI4ahmEwscylU10iaNo5RY.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 432615,
+          "poster_url": "https://image.tmdb.org/t/p/w500/AvRHRqI4ahmEwscylU10iaNo5RY.jpg"
+        },
+        {
+          "title": "Before the Flood",
+          "year": 2016,
+          "slug": "DiCaprio's journey exploring climate change impacts",
+          "poster": "https://image.tmdb.org/t/p/w500/u0EfH2zsp6rLOvEKVvWGgzGRQn3.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 410718,
+          "poster_url": "https://image.tmdb.org/t/p/w500/u0EfH2zsp6rLOvEKVvWGgzGRQn3.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "Ed Wood",
+    "year": 1994,
+    "initialSlug": "Oddball biopic of Hollywood's worst director ever",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/2jjFN4BtTSz01J3ZD4iYjf26pWX.jpg",
+    "initialStreaming": null,
+    "tmdbId": 522,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Tim Burton's Ed Wood stands as the definitive love letter to Hollywood's most infamous \"worst director.\" Johnny Depp captures Wood's boundless optimism and cross-dressing peculiarities while making movies like <a href=\"/movie/10513\" class=\"movie-title\" data-tmdb-id=\"10513\">Plan 9 from Outer Space</a> (1959) and <a href=\"/movie/24018\" class=\"movie-title\" data-tmdb-id=\"24018\">Glen or Glenda</a> (1953). The film's masterstroke is Martin Landau's Oscar-winning turn as Bela Lugosi, showing the faded horror icon's friendship with Wood during his final years. Shot in gorgeous black-and-white, Burton recreates the DIY spirit of 1950s B-movies, celebrating passionate outsider filmmaking rather than mocking it."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Plan 9 from Outer Space",
+            "year": 1959,
+            "slug": "Ed Wood's magnum opus of flying saucers, zombies, and cardboard tombstones - so bad it's mesmerizing",
+            "poster": "https://image.tmdb.org/t/p/w500/bmicZi7PvlnZ9rZqp6QXN2Db0pT.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 10513,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bmicZi7PvlnZ9rZqp6QXN2Db0pT.jpg"
+          },
+          {
+            "title": "Glen or Glenda",
+            "year": 1953,
+            "slug": "Wood's semi-autobiographical plea for acceptance of cross-dressing, featuring Bela Lugosi as a mysterious narrator",
+            "poster": "https://image.tmdb.org/t/p/w500/uZir2hA6VOmVNS6JdKb6RiYghTA.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 24018,
+            "poster_url": "https://image.tmdb.org/t/p/w500/uZir2hA6VOmVNS6JdKb6RiYghTA.jpg"
+          },
+          {
+            "title": "Bride of the Monster",
+            "year": 1955,
+            "slug": "Wood directs Lugosi in his last speaking role as a mad scientist creating atomic supermen",
+            "poster": "https://image.tmdb.org/t/p/w500/mk9uXv3MGHu2FGRAlqatMtGlk0z.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 36489,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mk9uXv3MGHu2FGRAlqatMtGlk0z.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film fits into a rich tradition of movies about moviemaking, but with a crucial twist - instead of celebrating genius, it champions determined mediocrity. Like <a href=\"/movie/371638\" class=\"movie-title\" data-tmdb-id=\"371638\">The Disaster Artist</a> (2017) about Tommy Wiseau's <a href=\"/movie/17473\" class=\"movie-title\" data-tmdb-id=\"17473\">The Room</a> (2003), it finds nobility in the pure passion to create, regardless of talent. Burton's film shares DNA with <a href=\"/movie/599\" class=\"movie-title\" data-tmdb-id=\"599\">Sunset Boulevard</a> (1950) and Whatever Happened to Baby Jane? (1962) in its portrait of Hollywood's dark edges and forgotten stars. SUBHEAD: The Real Hollywood Underbelly"
+      },
+      {
+        "type": "text",
+        "content": "Ed Wood reveals the scrappy side of 1950s Hollywood, where dreamers scraped together micro-budgets and shot in days. This reality contrasts sharply with glossy studio productions like <a href=\"/movie/872\" class=\"movie-title\" data-tmdb-id=\"872\">Singin' in the Rain</a> (1952). The film's treatment of Lugosi's morphine addiction and career decline mirrors later stories of Hollywood casualties like <a href=\"/movie/14112\" class=\"movie-title\" data-tmdb-id=\"14112\">Auto Focus</a> (2002) about Bob Crane's seedy demise. Burton uses Wood's story to explore the thin line between delusion and determination that drives many filmmakers."
+      }
+    ],
+    "exploreFurther": [
+      "The Rise and Fall of Poverty Row Studios in Hollywood's Golden Age",
+      "Bela Lugosi's Career Evolution from Dracula to Ed Wood",
+      "Cross-Dressing in Classic Hollywood Cinema",
+      "The Art of \"Bad\" Movies and Cult Film Psychology",
+      "Tim Burton's Black-and-White Period Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Dolemite",
+          "year": 1975,
+          "slug": "Rudy Ray Moore's legendary blaxploitation film made on a shoestring budget",
+          "poster": "https://image.tmdb.org/t/p/w500/sc81lG0MdHq1UCY5b2B10c9wSKw.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 19174,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sc81lG0MdHq1UCY5b2B10c9wSKw.jpg"
+        },
+        {
+          "title": "Bowfinger",
+          "year": 1999,
+          "slug": "Steve Martin as a desperate director making a movie with an unwitting star",
+          "poster": "https://image.tmdb.org/t/p/w500/iGuiFYEYwFkaRPl3FgLJYEm6dWq.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 11353,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iGuiFYEYwFkaRPl3FgLJYEm6dWq.jpg"
+        },
+        {
+          "title": "Living in Oblivion",
+          "year": 1995,
+          "slug": "Independent filmmaker battles endless problems making a low-budget film",
+          "poster": "https://image.tmdb.org/t/p/w500/b54xDk98oWtEtAso9sj1wjaZDDH.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 9071,
+          "poster_url": "https://image.tmdb.org/t/p/w500/b54xDk98oWtEtAso9sj1wjaZDDH.jpg"
+        },
+        {
+          "title": "The Player",
+          "year": 1992,
+          "slug": "Robert Altman's cynical look at Hollywood movie-making",
+          "poster": "https://image.tmdb.org/t/p/w500/tZ3kDut2dhFVGkWNEn9xoCHCNAx.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 10403,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tZ3kDut2dhFVGkWNEn9xoCHCNAx.jpg"
+        },
+        {
+          "title": "Gods and Monsters",
+          "year": 1998,
+          "slug": "James Whale's final years, featuring Ian McKellen as another horror icon",
+          "poster": "https://image.tmdb.org/t/p/w500/xhaZ2nKL9VtqfYQ9Ss4Azxc2E3F.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 3033,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xhaZ2nKL9VtqfYQ9Ss4Azxc2E3F.jpg"
+        },
+        {
+          "title": "Shadow of the Vampire",
+          "year": 2000,
+          "slug": "Making of Nosferatu with a real vampire as the star",
+          "poster": "https://image.tmdb.org/t/p/w500/nWm7DWi8X4D87XkM5qr9BhTJHq6.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 10873,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nWm7DWi8X4D87XkM5qr9BhTJHq6.jpg"
+        },
+        {
+          "title": "Man Bites Dog",
+          "year": 1992,
+          "slug": "Belgian mockumentary about a film crew following a serial killer",
+          "poster": "https://image.tmdb.org/t/p/w500/uRVI98a6MxdLkpsXM8LqIM9W7XZ.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 10086,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uRVI98a6MxdLkpsXM8LqIM9W7XZ.jpg"
+        },
+        {
+          "title": "The Bad and the Beautiful",
+          "year": 1952,
+          "slug": "Kirk Douglas as a ruthless producer burning bridges",
+          "poster": "https://image.tmdb.org/t/p/w500/ajAXzTiPkL7JxeCRw5lQBqrKNGx.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 32499,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ajAXzTiPkL7JxeCRw5lQBqrKNGx.jpg"
+        },
+        {
+          "title": "Sullivan's Travels",
+          "year": 1941,
+          "slug": "Comedy about a director trying to make serious art",
+          "poster": "https://image.tmdb.org/t/p/w500/z5cqIM0ysVjkCmaDfyTQnlozdIp.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 16305,
+          "poster_url": "https://image.tmdb.org/t/p/w500/z5cqIM0ysVjkCmaDfyTQnlozdIp.jpg"
+        },
+        {
+          "title": "Be Kind Rewind",
+          "year": 2008,
+          "slug": "Video store clerks recreate movies with zero budget",
+          "poster": "https://image.tmdb.org/t/p/w500/f0oX20YrQEiVPDH9InCQ1d3Cm66.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 4953,
+          "poster_url": "https://image.tmdb.org/t/p/w500/f0oX20YrQEiVPDH9InCQ1d3Cm66.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

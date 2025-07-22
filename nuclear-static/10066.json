@@ -1,0 +1,185 @@
+{
+  "props": {
+    "title": "House of Wax",
+    "year": 2005,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/aCLSgw1DaqkRvosYc3YUttBTtpT.jpg",
+    "initialStreaming": null,
+    "tmdbId": 10066,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "House of Wax marks a notable entry in the slasher revival wave of the 2000s, following the success of films like <a href=\"/movie/4232\" class=\"movie-title\" data-tmdb-id=\"4232\">Scream</a> (1996) and <a href=\"/movie/3597\" class=\"movie-title\" data-tmdb-id=\"3597\">I Know What You Did Last Summer</a> (1997). While loosely inspired by House of Wax starring Vincent Price, this modern reimagining takes the core concept of wax sculptures concealing dark secrets and injects it with contemporary horror sensibilities. The film gained notoriety for casting Paris Hilton at the height of her fame, but beneath the stunt casting lies a genuinely creepy exploration of rural horror, similar to <a href=\"/movie/30497\" class=\"movie-title\" data-tmdb-id=\"30497\">The Texas Chain Saw Massacre</a> (1974) and <a href=\"/movie/9902\" class=\"movie-title\" data-tmdb-id=\"9902\">Wrong Turn</a> (2003)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "House of Wax",
+            "year": 1953,
+            "slug": "Vincent Price stars in this classic horror about a disfigured sculptor who turns his victims into wax figures",
+            "poster": "https://image.tmdb.org/t/p/w500/qJmINK85CwxaoXN2PFDMO4eNxLS.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 18573,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qJmINK85CwxaoXN2PFDMO4eNxLS.jpg"
+          },
+          {
+            "title": "Tourist Trap",
+            "year": 1979,
+            "slug": "A remote wax museum becomes a deadly trap for stranded teenagers",
+            "poster": "https://image.tmdb.org/t/p/w500/c19pSkUfNElrmVn0iYtiJys5dK8.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 13570,
+            "poster_url": "https://image.tmdb.org/t/p/w500/c19pSkUfNElrmVn0iYtiJys5dK8.jpg"
+          },
+          {
+            "title": "Waxwork",
+            "year": 1988,
+            "slug": "College students visit a mysterious wax museum where the exhibits come horrifyingly alive",
+            "poster": "https://image.tmdb.org/t/p/w500/48RXt1Zu8iNL0mgCojydmqBsjsC.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 29095,
+            "poster_url": "https://image.tmdb.org/t/p/w500/48RXt1Zu8iNL0mgCojydmqBsjsC.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The 2000s saw numerous remakes of classic horror properties, including <a href=\"/movie/9373\" class=\"movie-title\" data-tmdb-id=\"9373\">The Texas Chainsaw Massacre</a> (2003), <a href=\"/movie/924\" class=\"movie-title\" data-tmdb-id=\"924\">Dawn of the Dead</a> (2004), and <a href=\"/movie/10065\" class=\"movie-title\" data-tmdb-id=\"10065\">The Amityville Horror</a> (2005). House of Wax distinguishes itself through impressive practical effects and elaborate set pieces, particularly in the film's finale where the entire wax museum literally melts around the characters. The production design team created a massive functional set using real wax, creating a uniquely tactile horror experience that holds up better than many CGI-heavy films of the era."
+      },
+      {
+        "type": "text",
+        "content": "The film follows a familiar slasher template established by <a href=\"/movie/4488\" class=\"movie-title\" data-tmdb-id=\"4488\">Friday the 13th</a> (1980) and refined by <a href=\"/movie/9792\" class=\"movie-title\" data-tmdb-id=\"9792\">The Hills Have Eyes</a> (1977) - young people stranded in an isolated location facing deranged killers. However, the twin antagonists and the grotesque wax-preservation process add distinctive elements to the formula. The film's graphic violence and elaborate death scenes reflect the emerging \"torture porn\" trend that would soon dominate horror with films like <a href=\"/movie/176\" class=\"movie-title\" data-tmdb-id=\"176\">Saw</a> (2004) and <a href=\"/movie/1690\" class=\"movie-title\" data-tmdb-id=\"1690\">Hostel</a> (2005). SUBHEAD: Rural Horror and Isolation Themes"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Mystery of the Wax Museum",
+            "year": 1933,
+            "slug": "The original wax museum horror film that inspired later adaptations",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": null
+          },
+          {
+            "title": "The Hills Have Eyes",
+            "year": 2006,
+            "slug": "Another 2000s horror remake featuring isolated travelers facing backwoods killers",
+            "poster": "https://image.tmdb.org/t/p/w500/2eJL1Ccr1FN3dm9OSDwyd8uaX1b.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 9792,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2eJL1Ccr1FN3dm9OSDwyd8uaX1b.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "House of Wax taps into America's fear of rural spaces and isolated communities, a theme explored in films like <a href=\"/movie/10669\" class=\"movie-title\" data-tmdb-id=\"10669\">Deliverance</a> (1972) and <a href=\"/movie/10823\" class=\"movie-title\" data-tmdb-id=\"10823\">Children of the Corn</a> (1984). The abandoned town of Ambrose serves as more than just a backdrop - it's a character itself, representing decay and forgotten Americana. This setting would influence later films like <a href=\"/movie/588\" class=\"movie-title\" data-tmdb-id=\"588\">Silent Hill</a> (2006) and <a href=\"/movie/4513\" class=\"movie-title\" data-tmdb-id=\"4513\">30 Days of Night</a> (2007), where isolated locations become pressure cookers for horror."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Wax Museum Horror Films - From Mystery of the Wax Museum to Modern Interpretations",
+      "Practical Effects vs CGI in 2000s Horror Remakes",
+      "The Impact of Paris Hilton's Casting on Early 2000s Horror Marketing",
+      "Rural Horror: America's Fear of Isolated Communities in Film",
+      "The Rise and Fall of 2000s Horror Remakes"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Jeepers Creepers",
+          "year": 2001,
+          "slug": "Siblings discover a creature's lair while driving through rural country",
+          "poster": "https://image.tmdb.org/t/p/w500/g410Y1U1ELbmJG14Zru3UAimm1G.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 8922,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g410Y1U1ELbmJG14Zru3UAimm1G.jpg"
+        },
+        {
+          "title": "Wrong Turn",
+          "year": 2003,
+          "slug": "Stranded travelers face cannibalistic mountain men",
+          "poster": "https://image.tmdb.org/t/p/w500/7lyxwOg7SdGff79yKCQmJ3AKWSf.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 9902,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7lyxwOg7SdGff79yKCQmJ3AKWSf.jpg"
+        },
+        {
+          "title": "The Texas Chainsaw Massacre",
+          "year": 2003,
+          "slug": "Modern remake of the classic rural horror film",
+          "poster": "https://image.tmdb.org/t/p/w500/qJ9Cw1J4EmhBApoue4qlhqVrCZ7.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 9373,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qJ9Cw1J4EmhBApoue4qlhqVrCZ7.jpg"
+        },
+        {
+          "title": "Wolf Creek",
+          "year": 2005,
+          "slug": "Backpackers encounter a sadistic killer in the Australian outback",
+          "poster": "https://image.tmdb.org/t/p/w500/8NiRpqO3vx7ny6jagrEN61hu7qG.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 9885,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8NiRpqO3vx7ny6jagrEN61hu7qG.jpg"
+        },
+        {
+          "title": "Vacancy",
+          "year": 2007,
+          "slug": "Couple discovers their motel is staging snuff films",
+          "poster": "https://image.tmdb.org/t/p/w500/9I7gAKVz8dE0sc1gwW0MAhlEAH0.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 10294,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9I7gAKVz8dE0sc1gwW0MAhlEAH0.jpg"
+        },
+        {
+          "title": "The Devil's Rejects",
+          "year": 2005,
+          "slug": "Violent family terrorizes travelers on remote highways",
+          "poster": "https://image.tmdb.org/t/p/w500/dULfaZD8KPKUkjhgEScUGAW8WCJ.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 1696,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dULfaZD8KPKUkjhgEScUGAW8WCJ.jpg"
+        },
+        {
+          "title": "2001 Maniacs",
+          "year": 2005,
+          "slug": "College students encounter murderous townspeople during spring break",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Pluto TV",
+          "tmdb_id": null
+        },
+        {
+          "title": "Motel Hell",
+          "year": 1980,
+          "slug": "Remote motel owners turn visitors into smoked meat",
+          "poster": "https://image.tmdb.org/t/p/w500/sb63i9ZDqin0Mh37B5sLiZSQY6A.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 30924,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sb63i9ZDqin0Mh37B5sLiZSQY6A.jpg"
+        },
+        {
+          "title": "Eaten Alive",
+          "year": 1976,
+          "slug": "Isolated hotel owner feeds guests to his pet crocodile",
+          "poster": "https://image.tmdb.org/t/p/w500/oBUx00YM5AUgWU6fHkRLVrc8DY8.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 30062,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oBUx00YM5AUgWU6fHkRLVrc8DY8.jpg"
+        },
+        {
+          "title": "The Hills Have Eyes 2",
+          "year": 2007,
+          "slug": "Military trainees face mutant cannibals in the desert",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

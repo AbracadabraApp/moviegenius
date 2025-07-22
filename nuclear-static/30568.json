@@ -1,0 +1,158 @@
+{
+  "props": {
+    "title": "3 Women",
+    "year": 2011,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/gtoRxXm2INs3pT4X1BsYS3IjwVa.jpg",
+    "initialStreaming": null,
+    "tmdbId": 30568,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "<a href=\"/movie/41662\" class=\"movie-title\" data-tmdb-id=\"41662\">Three Women</a> (1977) emerged from Robert Altman's actual dream, transforming into a haunting meditation on identity theft and personality absorption. The film follows Shelley Duvall's Millie and Sissy Spacek's Pinky in a sun-bleached California desert town, their relationship morphing from roommates to something far more psychologically complex. Like Altman's <a href=\"/movie/3121\" class=\"movie-title\" data-tmdb-id=\"3121\">Nashville</a> (1975), it weaves multiple perspectives, but here he ventures into territory closer to <a href=\"/movie/797\" class=\"movie-title\">Persona</a> (1966), exploring how identities can blur and merge."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Persona",
+            "year": 1966,
+            "slug": "Ingmar Bergman's psychological masterpiece about a nurse and patient whose identities begin to merge",
+            "poster": "https://image.tmdb.org/t/p/w500/9QlqnRNbzb78lRiRPAP1ufmoZko.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 797,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9QlqnRNbzb78lRiRPAP1ufmoZko.jpg"
+          },
+          {
+            "title": "Mulholland Drive",
+            "year": 2001,
+            "slug": "David Lynch's surreal Hollywood nightmare about identity and dreams",
+            "poster": "https://image.tmdb.org/t/p/w500/x7A59t6ySylr1L7aubOQEA480vM.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 1018,
+            "poster_url": "https://image.tmdb.org/t/p/w500/x7A59t6ySylr1L7aubOQEA480vM.jpg"
+          },
+          {
+            "title": "Single White Female",
+            "year": 1992,
+            "slug": "Thriller about roommate identity theft that echoes Three Women's themes",
+            "poster": "https://image.tmdb.org/t/p/w500/2B6spN9XvzbK9hKDQtvTa4wVoys.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 9605,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2B6spN9XvzbK9hKDQtvTa4wVoys.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's dreamlike quality influenced a whole wave of identity-shifting cinema. <a href=\"/movie/44214\" class=\"movie-title\" data-tmdb-id=\"44214\">Black Swan</a> (2010) clearly draws from its DNA, while The Double Life of Veronique (1991) shares its interest in doppelgangers and merged consciousness. Altman's innovative use of water imagery and reflections created a visual language for psychological fragmentation that still influences filmmakers today. SUBHEAD: Desert Gothic and Female Identity"
+      },
+      {
+        "type": "text",
+        "content": "Altman transforms the Southwest setting into a character itself, much like how <a href=\"/movie/655\" class=\"movie-title\" data-tmdb-id=\"655\">Paris, Texas</a> (1984) would later use desert landscapes to externalize internal states. The swimming pool scenes, with their underwater murals by artist Bodhi Wind, create a dreamlike underworld that predates similar techniques in <a href=\"/movie/97370\" class=\"movie-title\" data-tmdb-id=\"97370\">Under the Skin</a> (2013). Shelley Duvall's performance as Millie - chattering endlessly to mask her isolation - ranks among cinema's great character studies."
+      }
+    ],
+    "exploreFurther": [
+      "Robert Altman's Dream Cinema - How the director used dreams and surrealism throughout his career",
+      "Identity Absorption in 1970s Cinema - Examining psychological thrillers of the era",
+      "The Influence of Three Women on Modern Psycho-Horror",
+      "Shelley Duvall's Collaborative History with Robert Altman",
+      "Water Symbolism in Identity-Focused Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Hour of the Wolf",
+          "year": 1968,
+          "slug": "Bergman's psychological horror about an artist's descent into madness",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 18333
+        },
+        {
+          "title": "Images",
+          "year": 1972,
+          "slug": "Altman's other psychological thriller about a schizophrenic children's author",
+          "poster": "https://image.tmdb.org/t/p/w500/o9qfaNwjnqNBJ1uOLeC53r5eTzB.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 29449,
+          "poster_url": "https://image.tmdb.org/t/p/w500/o9qfaNwjnqNBJ1uOLeC53r5eTzB.jpg"
+        },
+        {
+          "title": "That Obscure Object of Desire",
+          "year": 1977,
+          "slug": "Buñuel's surreal tale of obsession using two actresses for one role",
+          "poster": "https://image.tmdb.org/t/p/w500/9iUdC4dftkjYSBUJq5DAxC6WqB9.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 5781,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9iUdC4dftkjYSBUJq5DAxC6WqB9.jpg"
+        },
+        {
+          "title": "Possession",
+          "year": 1981,
+          "slug": "Intense psychological horror about identity and transformation",
+          "poster": "https://image.tmdb.org/t/p/w500/lUFZsUuJ0YyhBXH8D2BFUd6wODm.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 21484,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lUFZsUuJ0YyhBXH8D2BFUd6wODm.jpg"
+        },
+        {
+          "title": "Lost Highway",
+          "year": 1997,
+          "slug": "Lynch's identity-shifting nightmare through Los Angeles",
+          "poster": "https://image.tmdb.org/t/p/w500/fdTtij6H0sX9AzIjUeynh5zbfm7.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 638,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fdTtij6H0sX9AzIjUeynh5zbfm7.jpg"
+        },
+        {
+          "title": "Mulholland Drive",
+          "year": 2001,
+          "slug": "Lynch's dreamlike Hollywood psychodrama",
+          "poster": "https://image.tmdb.org/t/p/w500/x7A59t6ySylr1L7aubOQEA480vM.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 1018,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x7A59t6ySylr1L7aubOQEA480vM.jpg"
+        },
+        {
+          "title": "Black Swan",
+          "year": 2010,
+          "slug": "Psychological thriller about a dancer losing her identity",
+          "poster": "https://image.tmdb.org/t/p/w500/viWheBd44bouiLCHgNMvahLThqx.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 44214,
+          "poster_url": "https://image.tmdb.org/t/p/w500/viWheBd44bouiLCHgNMvahLThqx.jpg"
+        },
+        {
+          "title": "The Double",
+          "year": 2013,
+          "slug": "Dostoevsky adaptation about a man who meets his doppelganger",
+          "poster": "https://image.tmdb.org/t/p/w500/7kNcpmP1Pe9fWLKEbEOX5GEWueC.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 146015,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7kNcpmP1Pe9fWLKEbEOX5GEWueC.jpg"
+        },
+        {
+          "title": "Enemy",
+          "year": 2013,
+          "slug": "Jake Gyllenhaal as a man who discovers his exact double",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Queen of Earth",
+          "year": 2015,
+          "slug": "Psychological drama about female friendship and mental breakdown",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 300542
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

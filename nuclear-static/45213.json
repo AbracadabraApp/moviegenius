@@ -1,0 +1,171 @@
+{
+  "props": {
+    "title": "French Cancan",
+    "year": 1955,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/slIF5i3Mz03I90sqoxj7Xteutyb.jpg",
+    "initialStreaming": null,
+    "tmdbId": 45213,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**French Cancan** (1955) represents Jean Renoir's dazzling return to French cinema, exploding with color and movement in its celebration of Belle Époque Paris. The film follows nightclub impresario Henri Danglard (Jean Gabin) as he revives the cancan at the Moulin Rouge, mirroring the real-life story of Charles Zidler. Renoir's masterpiece shares DNA with other vibrant backstage musicals like **The Red Shoes** (1948) and **42nd Street** (1933), but adds distinctly French flair through its exploration of art, commerce, and romance in Montmartre's entertainment world."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "An American in Paris",
+            "year": 1951,
+            "slug": "Gene Kelly dances through a technicolor Paris in this Gershwin-scored musical that captures similar Belle Époque energy",
+            "poster": "https://image.tmdb.org/t/p/w500/lyDXkvG53ldz6Cf7dbjJl7TaoP5.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 2769,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lyDXkvG53ldz6Cf7dbjJl7TaoP5.jpg"
+          },
+          {
+            "title": "Moulin Rouge!",
+            "year": 2001,
+            "slug": "Baz Luhrmann's frenetic postmodern take on the same Parisian nightclub world, with Nicole Kidman as a tragic courtesan",
+            "poster": "https://image.tmdb.org/t/p/w500/2kjM5CUZRIU5yOANUowrbJcRL9L.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 824,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2kjM5CUZRIU5yOANUowrbJcRL9L.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Renoir's film sits at a fascinating crossroads between France's poetic realism of the 1930s and the emerging French New Wave. Like his earlier masterpiece **Rules of the Game** (1939), French Cancan uses elaborate staging and depth of field to capture multiple story threads simultaneously. The film's influence echoes through later works celebrating Parisian nightlife and entertainment, from Jacques Demy's **The Young Girls of Rochefort** (1967) to Bernardo Bertolucci's **The Dreamers** (2003). SUBHEAD: The Dance Hall Film Tradition"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Can-Can",
+            "year": 1960,
+            "slug": "Frank Sinatra and Shirley MacLaine star in this Hollywood take on Parisian dance halls",
+            "poster": "https://image.tmdb.org/t/p/w500/d5ehuoO6KbyB6B6ooO0dOl5nhtS.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 33726,
+            "poster_url": "https://image.tmdb.org/t/p/w500/d5ehuoO6KbyB6B6ooO0dOl5nhtS.jpg"
+          },
+          {
+            "title": "Gigi",
+            "year": 1958,
+            "slug": "Vincente Minnelli's Oscar-winning musical about romance in Belle Époque Paris",
+            "poster": "https://image.tmdb.org/t/p/w500/v4jPy20pdYIFiqtsNvrek7l6ALl.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 17281,
+            "poster_url": "https://image.tmdb.org/t/p/w500/v4jPy20pdYIFiqtsNvrek7l6ALl.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "French Cancan exemplifies the rich tradition of dance hall cinema that stretches from Josef von Sternberg's **The Blue Angel** (1930) through Bob Fosse's **Cabaret** (1972). These films use the microcosm of nightclub life to explore broader themes of art, class, and social transformation. Renoir's achievement lies in balancing spectacular dance sequences with intimate character moments, creating a love letter to both entertainment and the creative spirit that drives it."
+      }
+    ],
+    "exploreFurther": [
+      "The real history of the Moulin Rouge and cancan dancing in 19th century Paris",
+      "Jean Renoir's career trajectory and his return to French cinema after Hollywood",
+      "The influence of Impressionist painting on French Cancan's visual style",
+      "The evolution of backstage musicals from early sound era to present",
+      "Representations of Belle Époque Paris in world cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "La Vie en Rose",
+          "year": 2007,
+          "slug": "Marion Cotillard stars as Edith Piaf in this biopic of France's legendary singer",
+          "poster": "https://image.tmdb.org/t/p/w500/3b9DAONAsFRhJKu25R33PE3VwDh.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1407,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3b9DAONAsFRhJKu25R33PE3VwDh.jpg"
+        },
+        {
+          "title": "The Last Metro",
+          "year": 1980,
+          "slug": "Truffaut's drama about a Parisian theater during German occupation",
+          "poster": "https://image.tmdb.org/t/p/w500/yJbA6jjuj9h8x2tZSgTkzpQ8PzS.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1716,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yJbA6jjuj9h8x2tZSgTkzpQ8PzS.jpg"
+        },
+        {
+          "title": "Everyone Says I Love You",
+          "year": 1996,
+          "slug": "Woody Allen's musical homage to Paris includes scenes at the Moulin Rouge",
+          "poster": "https://image.tmdb.org/t/p/w500/cFOZ4bNbWtnIIboc43M86yhwPBX.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 9716,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cFOZ4bNbWtnIIboc43M86yhwPBX.jpg"
+        },
+        {
+          "title": "Le Plaisir",
+          "year": 1952,
+          "slug": "Max Ophuls' anthology film includes a memorable dance hall sequence",
+          "poster": "https://image.tmdb.org/t/p/w500/qxJAam675KDRIrT5KMYMOMVHBqQ.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 43360,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qxJAam675KDRIrT5KMYMOMVHBqQ.jpg"
+        },
+        {
+          "title": "Paris Blues",
+          "year": 1961,
+          "slug": "Paul Newman and Sidney Poitier as American jazz musicians in Paris",
+          "poster": "https://image.tmdb.org/t/p/w500/yDqdiSubn02tMmZtK5eeRO7JvfA.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 33710,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yDqdiSubn02tMmZtK5eeRO7JvfA.jpg"
+        },
+        {
+          "title": "The Red Mill",
+          "year": 1927,
+          "slug": "Silent film starring Marion Davies about cancan dancers",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 134475
+        },
+        {
+          "title": "Montparnasse 19",
+          "year": 1958,
+          "slug": "Drama about artist Modigliani in early 20th century Paris",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 80470
+        },
+        {
+          "title": "French Cancan",
+          "year": 1954,
+          "slug": "Documentary about the history of the famous dance",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Arte",
+          "tmdb_id": null
+        },
+        {
+          "title": "Toulouse-Lautrec",
+          "year": 1998,
+          "slug": "Biopic of the famous painter who chronicled Moulin Rouge life",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 136646
+        },
+        {
+          "title": "The Great Ziegfeld",
+          "year": 1936,
+          "slug": "Oscar-winning musical about another famous theatrical impresario",
+          "poster": "https://image.tmdb.org/t/p/w500/7wkIYI2r0ICajBcCW0JlIT3zSwc.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 43277,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7wkIYI2r0ICajBcCW0JlIT3zSwc.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

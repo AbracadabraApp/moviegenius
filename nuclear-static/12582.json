@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "Without a Clue",
+    "year": 1988,
+    "initialSlug": "The greatest detective you've never heard of.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/uZmoKYDfF965UAgPrUSz0FbavsE.jpg",
+    "initialStreaming": null,
+    "tmdbId": 12582,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Without a Clue brilliantly subverts the Sherlock Holmes mythology by presenting a hilarious role reversal - Dr. Watson (Ben Kingsley) is the real genius detective while Holmes (Michael Caine) is an alcoholic actor hired to play the part. This clever comedy follows the tradition of Holmes parodies like <a href=\"/movie/5185\" class=\"movie-title\" data-tmdb-id=\"5185\">The Private Life of Sherlock Holmes</a> (1970) but takes the concept further by completely upending the traditional dynamic. Caine's bumbling, theatrical Holmes perfectly captures the frustration of maintaining a public persona, while Kingsley's exasperated Watson shows the burden of being the true talent forced to stay in the shadows."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Without a Clue",
+            "year": 1988,
+            "slug": "Michael Caine and Ben Kingsley star in this comedy where Watson is the real detective and Holmes is just an actor he hired",
+            "poster": "https://image.tmdb.org/t/p/w500/uZmoKYDfF965UAgPrUSz0FbavsE.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 12582,
+            "poster_url": "https://image.tmdb.org/t/p/w500/uZmoKYDfF965UAgPrUSz0FbavsE.jpg"
+          },
+          {
+            "title": "The Private Life of Sherlock Holmes",
+            "year": 1970,
+            "slug": "Billy Wilder's witty take on Holmes investigating a case involving ballet dancers and the Loch Ness Monster",
+            "poster": "https://image.tmdb.org/t/p/w500/vQSYu0DXkqTOEfWF21AzaqXxYCZ.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 5185,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vQSYu0DXkqTOEfWF21AzaqXxYCZ.jpg"
+          },
+          {
+            "title": "Young Sherlock Holmes",
+            "year": 1985,
+            "slug": "Barry Levinson directs this adventure showing Holmes and Watson meeting as schoolboys",
+            "poster": "https://image.tmdb.org/t/p/w500/aOxVYvQoAfNSns4hW5Ah55GBzgq.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 11904,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aOxVYvQoAfNSns4hW5Ah55GBzgq.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film sits within a rich tradition of detective comedy spoofs that gained popularity in the 1970s and 80s. <a href=\"/movie/6037\" class=\"movie-title\" data-tmdb-id=\"6037\">Murder by Death</a> (1976) gathered an all-star cast to parody multiple famous detectives, while <a href=\"/movie/9442\" class=\"movie-title\" data-tmdb-id=\"9442\">Dead Men Don't Wear Plaid</a> (1982) brilliantly integrated Steve Martin into actual film noir footage. These comedies work by playing with audience expectations of the genre while maintaining genuine mystery elements. SUBHEAD: The Evolution of Holmes on Screen"
+      },
+      {
+        "type": "text",
+        "content": "Without a Clue arrived during a period of creative Holmes adaptations that moved beyond straight interpretations. While <a href=\"/movie/29578\" class=\"movie-title\" data-tmdb-id=\"29578\">The Seven-Per-Cent Solution</a> (1976) explored Holmes' cocaine addiction and needed psychiatric help from Sigmund Freud, and <a href=\"/movie/11904\" class=\"movie-title\" data-tmdb-id=\"11904\">Young Sherlock Holmes</a> (1985) reimagined the detective's school days, Without a Clue took the boldest step in completely reconfiguring the Holmes-Watson dynamic. This paved the way for later unconventional takes like <a href=\"/movie/10528\" class=\"movie-title\" data-tmdb-id=\"10528\">Sherlock Holmes</a> (2009) with Robert Downey Jr.'s action-hero interpretation and Elementary (2012-2019) with its modern New York setting."
+      }
+    ],
+    "exploreFurther": [
+      "The history of Sherlock Holmes parodies in cinema",
+      "Michael Caine's comedy roles of the 1980s",
+      "The evolution of the Watson character in Holmes adaptations",
+      "Detective comedy films of the 1970s and 1980s",
+      "Ben Kingsley's range from dramatic to comedic roles"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Murder by Death",
+          "year": 1976,
+          "slug": "Star-studded detective parody with Peter Sellers and Peter Falk",
+          "poster": "https://image.tmdb.org/t/p/w500/7YGYam05qzHy0ZSzfjBSDkVvvU7.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 6037,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7YGYam05qzHy0ZSzfjBSDkVvvU7.jpg"
+        },
+        {
+          "title": "The Seven-Per-Cent Solution",
+          "year": 1976,
+          "slug": "Holmes seeks help from Sigmund Freud for his cocaine addiction",
+          "poster": "https://image.tmdb.org/t/p/w500/95IzjZIzXVDpojBuMWaeAmJzIDs.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 29578,
+          "poster_url": "https://image.tmdb.org/t/p/w500/95IzjZIzXVDpojBuMWaeAmJzIDs.jpg"
+        },
+        {
+          "title": "Dead Men Don't Wear Plaid",
+          "year": 1982,
+          "slug": "Steve Martin noir spoof incorporating classic film footage",
+          "poster": "https://image.tmdb.org/t/p/w500/cwYwZBEE73PakUWzbICzxYKlXAz.jpg",
+          "initialStreaming": "Apple TV",
+          "tmdb_id": 9442,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cwYwZBEE73PakUWzbICzxYKlXAz.jpg"
+        },
+        {
+          "title": "They Might Be Giants",
+          "year": 1971,
+          "slug": "George C. Scott as a man who believes he's Sherlock Holmes",
+          "poster": "https://image.tmdb.org/t/p/w500/yzv8J2Vu63AQyEw5D9ckyBgn9Fo.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 27841,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yzv8J2Vu63AQyEw5D9ckyBgn9Fo.jpg"
+        },
+        {
+          "title": "The Adventure of Sherlock Holmes' Smarter Brother",
+          "year": 1975,
+          "slug": "Gene Wilder's Holmes parody featuring his character as Sherlock's jealous sibling",
+          "poster": "https://image.tmdb.org/t/p/w500/vmfJ1IPNRtDooSyiIT85RVZ1YMo.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 29859,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vmfJ1IPNRtDooSyiIT85RVZ1YMo.jpg"
+        },
+        {
+          "title": "A Study in Terror",
+          "year": 1965,
+          "slug": "Holmes investigates Jack the Ripper",
+          "poster": "https://image.tmdb.org/t/p/w500/gWKXoUpzB28R5qHhQAoC6kOJaQ1.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 42729,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gWKXoUpzB28R5qHhQAoC6kOJaQ1.jpg"
+        },
+        {
+          "title": "The Return of Sherlock Holmes",
+          "year": 1987,
+          "slug": "Modern Holmes thawed from frozen state",
+          "poster": "https://image.tmdb.org/t/p/w500/PTItASociYqLKqUWEED7QGdQsl.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 241589,
+          "poster_url": "https://image.tmdb.org/t/p/w500/PTItASociYqLKqUWEED7QGdQsl.jpg"
+        },
+        {
+          "title": "Zero Effect",
+          "year": 1998,
+          "slug": "Modern Holmes-inspired detective comedy with Bill Pullman",
+          "poster": "https://image.tmdb.org/t/p/w500/yFALvZFwqnh5ESarNoVd5KtizCo.jpg",
+          "initialStreaming": "Vudu",
+          "tmdb_id": 16148,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yFALvZFwqnh5ESarNoVd5KtizCo.jpg"
+        },
+        {
+          "title": "Game Night",
+          "year": 2018,
+          "slug": "Comedy thriller about regular people caught in real mystery",
+          "poster": "https://image.tmdb.org/t/p/w500/85R8LMyn9f2Lev2YPBF8Nughrkv.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 445571,
+          "poster_url": "https://image.tmdb.org/t/p/w500/85R8LMyn9f2Lev2YPBF8Nughrkv.jpg"
+        },
+        {
+          "title": "Clue",
+          "year": 1985,
+          "slug": "Board game adaptation mixing mystery and comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/aRxbYOYHS8T73nzR8hsLousoplR.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 15196,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aRxbYOYHS8T73nzR8hsLousoplR.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

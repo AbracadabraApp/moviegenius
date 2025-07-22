@@ -1,0 +1,163 @@
+{
+  "props": {
+    "title": "Roundhay Garden Scene",
+    "year": 1888,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/qI9eTP3NpJlxTk3oMBvfz8Awwkw.jpg",
+    "initialStreaming": null,
+    "tmdbId": 16463,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Roundhay Garden Scene marks the literal birth of motion pictures - a revolutionary 2.11-second sequence filmed by Louis Le Prince. Shot in Leeds, England, it shows four people walking in a garden: Adolphe Le Prince, Sarah Whitley, Joseph Whitley, and Harriet Hartley. What makes this snippet extraordinary isn't just its status as the oldest surviving film, but how it demonstrates the core DNA of cinema: capturing movement and preserving time. Le Prince used a single-lens camera he developed himself, beating Thomas Edison's Kinetograph and the Lumière brothers' Cinématographe by several years."
+      },
+      {
+        "type": "text",
+        "content": "The technical achievement here can't be overstated. While Edison focused on single-viewer Kinetoscopes and the Lumières perfected public projection, Le Prince cracked the fundamental challenge: recording multiple consecutive frames that create the illusion of motion. His mysterious disappearance in 1890 left questions about how film history might have evolved differently. The early competition between Worker Leaving the Lumière Factory (1895) and Edison's <a href=\"/movie/94570\" class=\"movie-title\" data-tmdb-id=\"94570\">The Kiss</a> (1896) might have played out very differently with Le Prince in the mix."
+      },
+      {
+        "type": "text",
+        "content": "These earliest motion pictures reveal cinema's documentary roots. Like <a href=\"/movie/160\" class=\"movie-title\" data-tmdb-id=\"160\">Arrival of a Train at La Ciotat</a> (1896) and <a href=\"/movie/16464\" class=\"movie-title\" data-tmdb-id=\"16464\">Traffic Crossing Leeds Bridge</a> (1888), they captured everyday moments that would otherwise be lost to time. Modern filmmakers like Peter Jackson have used digital restoration to breathe new life into early footage, as seen in <a href=\"/movie/543580\" class=\"movie-title\" data-tmdb-id=\"543580\">They Shall Not Grow Old</a> (2018), showing how these primitive recordings maintain their power to connect us directly with the past. SUBHEAD: Early Cinema's Technical Evolution"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "A Trip to the Moon",
+            "year": 1902,
+            "slug": "Georges Méliès' groundbreaking sci-fi fantasy that introduced special effects and narrative to early cinema",
+            "poster": "https://image.tmdb.org/t/p/w500/9o0v5LLFk51nyTBHZSre6OB37n2.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 775,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9o0v5LLFk51nyTBHZSre6OB37n2.jpg"
+          },
+          {
+            "title": "L'Arrivée d'un train en gare de La Ciotat",
+            "year": 1896,
+            "slug": "The Lumière brothers' famous train arrival that allegedly scared first audiences",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": null
+          },
+          {
+            "title": "The Great Train Robbery",
+            "year": 1903,
+            "slug": "Edwin S. Porter's revolutionary Western that established editing techniques",
+            "poster": "https://image.tmdb.org/t/p/w500/vEYr1sJR1dOFGXwXawpBN6hDRGF.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 5698,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vEYr1sJR1dOFGXwXawpBN6hDRGF.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The jump from Roundhay's simple garden scene to Georges Méliès' elaborate fantasies like <a href=\"/movie/775\" class=\"movie-title\" data-tmdb-id=\"775\">A Trip to the Moon</a> (1902) happened remarkably quickly. Within 14 years, cinema evolved from recording reality to creating impossible worlds through in-camera effects. Edison's Black Maria studio began producing entertainment-focused shorts like <a href=\"/movie/105158\" class=\"movie-title\" data-tmdb-id=\"105158\">Fred Ott's Sneeze</a> (1894), while Brighton School pioneers like George Albert Smith developed editing techniques in films like Santa Claus (1898)."
+      }
+    ],
+    "exploreFurther": [
+      "Early Motion Picture Technology: From Le Prince's single-lens camera to Edison's Kinetograph",
+      "The Mystery of Louis Le Prince's Disappearance and Its Impact on Cinema History",
+      "Evolution of Frame Rates: From hand-cranked cameras to digital standards",
+      "Early Film Preservation Techniques and Modern Restoration Methods",
+      "The Battle for Cinema Patents: Edison, the Lumières, and Le Prince"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Fred Ott's Sneeze",
+          "year": 1894,
+          "slug": "Edison's early Kinetoscope film showing a simple sneeze",
+          "poster": "https://image.tmdb.org/t/p/w500/s7fhher78hv1I5tKl7NbgnwsKha.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 105158,
+          "poster_url": "https://image.tmdb.org/t/p/w500/s7fhher78hv1I5tKl7NbgnwsKha.jpg"
+        },
+        {
+          "title": "Traffic Crossing Leeds Bridge",
+          "year": 1888,
+          "slug": "Another Le Prince film showing everyday street life",
+          "poster": "https://image.tmdb.org/t/p/w500/cw7uvqK3orqVUlULmA8OfkecMRY.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 16464,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cw7uvqK3orqVUlULmA8OfkecMRY.jpg"
+        },
+        {
+          "title": "Blacksmith Scene",
+          "year": 1893,
+          "slug": "Edison film showing three men hammering and drinking",
+          "poster": "https://image.tmdb.org/t/p/w500/c76bs0S90EFhB5ww3i6DlYQTVk.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 16624,
+          "poster_url": "https://image.tmdb.org/t/p/w500/c76bs0S90EFhB5ww3i6DlYQTVk.jpg"
+        },
+        {
+          "title": "Employees Leaving the Lumière Factory",
+          "year": 1895,
+          "slug": "First film publicly projected by the Lumière brothers",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Kiss",
+          "year": 1896,
+          "slug": "Edison's scandalous film showing a couple kissing",
+          "poster": "https://image.tmdb.org/t/p/w500/sezdGOX4ykTnPNBNlcEIoleCwjG.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 94570,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sezdGOX4ykTnPNBNlcEIoleCwjG.jpg"
+        },
+        {
+          "title": "The Dancing Pig",
+          "year": 1907,
+          "slug": "Early special effects film showing costumed performance",
+          "poster": "https://image.tmdb.org/t/p/w500/1t3EmYUMFCbqbyt6eRwuZfUkz6z.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 142026,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1t3EmYUMFCbqbyt6eRwuZfUkz6z.jpg"
+        },
+        {
+          "title": "The Girl and Her Trust",
+          "year": 1912,
+          "slug": "D.W. Griffith's early narrative short developing editing techniques",
+          "poster": "https://image.tmdb.org/t/p/w500/jDOXhnM5qPUAOpMhtlMKKYjX4j8.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 127111,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jDOXhnM5qPUAOpMhtlMKKYjX4j8.jpg"
+        },
+        {
+          "title": "Rescued from an Eagle's Nest",
+          "year": 1908,
+          "slug": "Early Edison dramatic film featuring D.W. Griffith as actor",
+          "poster": "https://image.tmdb.org/t/p/w500/2CaVj06nGfKsQF0yJvyZLUTjN0H.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 44336,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2CaVj06nGfKsQF0yJvyZLUTjN0H.jpg"
+        },
+        {
+          "title": "The Great Train Robbery",
+          "year": 1903,
+          "slug": "Revolutionary Western establishing modern editing",
+          "poster": "https://image.tmdb.org/t/p/w500/vEYr1sJR1dOFGXwXawpBN6hDRGF.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 5698,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vEYr1sJR1dOFGXwXawpBN6hDRGF.jpg"
+        },
+        {
+          "title": "A Corner in Wheat",
+          "year": 1909,
+          "slug": "D.W. Griffith's social commentary using parallel editing",
+          "poster": "https://image.tmdb.org/t/p/w500/wwwC7ItjZeXnH4bL3FI0p5MWUES.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 49270,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wwwC7ItjZeXnH4bL3FI0p5MWUES.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

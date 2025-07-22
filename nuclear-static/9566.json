@@ -1,0 +1,159 @@
+{
+  "props": {
+    "title": "The Fan",
+    "year": 1996,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/lu7CjP8YES5dJMCFg5O9o9jCkjl.jpg",
+    "initialStreaming": null,
+    "tmdbId": 9566,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The Fan represents a dark exploration of celebrity obsession and sports culture, starring Robert De Niro as Gil Renard, a knife salesman whose fanatical devotion to baseball star Bobby Rayburn (Wesley Snipes) spirals into dangerous territory. The film shares DNA with earlier stalker thrillers like <a href=\"/movie/262\" class=\"movie-title\" data-tmdb-id=\"262\">The King of Comedy</a> (1982) and <a href=\"/movie/1700\" class=\"movie-title\" data-tmdb-id=\"1700\">Misery</a> (1990), but director Tony Scott infuses it with his signature kinetic style and neon-tinged intensity. Released during the mid-90s surge of psychological thrillers like <a href=\"/movie/9605\" class=\"movie-title\" data-tmdb-id=\"9605\">Single White Female</a> (1992) and <a href=\"/movie/1598\" class=\"movie-title\" data-tmdb-id=\"1598\">Cape Fear</a> (1991), The Fan taps into growing anxieties about parasocial relationships and fame."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The King of Comedy",
+            "year": 1982,
+            "slug": "Scorsese's masterful study of celebrity obsession with De Niro as a delusional wannabe comedian stalking Jerry Lewis",
+            "poster": "https://image.tmdb.org/t/p/w500/3BM78deUfeZfShqPTblZuamgC8a.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 262,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3BM78deUfeZfShqPTblZuamgC8a.jpg"
+          },
+          {
+            "title": "Misery",
+            "year": 1990,
+            "slug": "Kathy Bates won an Oscar as an obsessed fan who holds her favorite author captive",
+            "poster": "https://image.tmdb.org/t/p/w500/23Y65uWaVMpqfbZTN3CT0aei4D5.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 1700,
+            "poster_url": "https://image.tmdb.org/t/p/w500/23Y65uWaVMpqfbZTN3CT0aei4D5.jpg"
+          },
+          {
+            "title": "Cape Fear",
+            "year": 1991,
+            "slug": "De Niro plays an ex-con terrorizing the lawyer who failed to defend him, showing his mastery of menacing roles",
+            "poster": "https://image.tmdb.org/t/p/w500/meJZAAuVcjic2ipvbOPz5UlE4P9.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 1598,
+            "poster_url": "https://image.tmdb.org/t/p/w500/meJZAAuVcjic2ipvbOPz5UlE4P9.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Tony Scott's direction elevates what could have been a standard thriller into a meditation on toxic fandom. His trademark visual style - seen in films like <a href=\"/movie/2119\" class=\"movie-title\" data-tmdb-id=\"2119\">Days of Thunder</a> (1990) and <a href=\"/movie/319\" class=\"movie-title\" data-tmdb-id=\"319\">True Romance</a> (1993) - creates a fevered atmosphere that mirrors Gil's deteriorating mental state. The baseball backdrop provides both spectacle and metaphor, with the stadium scenes particularly effective in contrasting public adoration with private obsession. De Niro's performance builds on his portfolio of disturbed loners, from <a href=\"/movie/103\" class=\"movie-title\" data-tmdb-id=\"103\">Taxi Driver</a> (1976) to <a href=\"/movie/1598\" class=\"movie-title\" data-tmdb-id=\"1598\">Cape Fear</a> (1991). SUBHEAD: The Evolution of Stalker Films"
+      },
+      {
+        "type": "text",
+        "content": "The Fan arrived at a pivotal moment in stalker cinema. While earlier films like <a href=\"/movie/10998\" class=\"movie-title\" data-tmdb-id=\"10998\">Fatal Attraction</a> (1987) focused primarily on romantic obsession, the 1990s saw a shift toward examining celebrity culture and parasocial relationships. Films like <a href=\"/movie/20306\" class=\"movie-title\" data-tmdb-id=\"20306\">Swimming with Sharks</a> (1994) and later <a href=\"/movie/29150\" class=\"movie-title\" data-tmdb-id=\"29150\">Big Fan</a> (2009) would continue exploring the dark side of fandom, but The Fan stands out for its exploration of masculine identity crisis wrapped in sports culture. The film predates but eerily forecasts our current era of parasocial relationships and toxic fan culture."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Robert De Niro's Antagonist Roles",
+      "Tony Scott's Visual Style and Influence on 90s Thrillers",
+      "Sports Films That Cross Into Thriller Territory",
+      "The Rise of Stalker Films in the 1990s",
+      "Celebrity Culture and Fan Obsession in Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Single White Female",
+          "year": 1992,
+          "slug": "Psychological thriller about roommate obsession",
+          "poster": "https://image.tmdb.org/t/p/w500/2B6spN9XvzbK9hKDQtvTa4wVoys.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9605,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2B6spN9XvzbK9hKDQtvTa4wVoys.jpg"
+        },
+        {
+          "title": "Play Misty for Me",
+          "year": 1971,
+          "slug": "Clint Eastwood's directorial debut about a stalker fan",
+          "poster": "https://image.tmdb.org/t/p/w500/9f3JSecw8ru24ftCL6UAzpxHk0X.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 15393,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9f3JSecw8ru24ftCL6UAzpxHk0X.jpg"
+        },
+        {
+          "title": "Big Fan",
+          "year": 2009,
+          "slug": "Patton Oswalt as an obsessed sports fan",
+          "poster": "https://image.tmdb.org/t/p/w500/qWQRXpxtSnwp8YS6N5DM3Q9KSsb.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 29150,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qWQRXpxtSnwp8YS6N5DM3Q9KSsb.jpg"
+        },
+        {
+          "title": "Swimming with Sharks",
+          "year": 1994,
+          "slug": "Dark satire about Hollywood assistant abuse",
+          "poster": "https://image.tmdb.org/t/p/w500/eMRiIJIEyMLjWjktIqjNfzs9jGX.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 20306,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eMRiIJIEyMLjWjktIqjNfzs9jGX.jpg"
+        },
+        {
+          "title": "Taxi Driver",
+          "year": 1976,
+          "slug": "Scorsese's classic about an unstable loner",
+          "poster": "https://image.tmdb.org/t/p/w500/ekstpH614fwDX8DUln1a2Opz0N8.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 103,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ekstpH614fwDX8DUln1a2Opz0N8.jpg"
+        },
+        {
+          "title": "Perfect Blue",
+          "year": 1997,
+          "slug": "Anime thriller about idol stalking",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Bodyguard",
+          "year": 1992,
+          "slug": "Romantic thriller about celebrity stalking",
+          "poster": "https://image.tmdb.org/t/p/w500/ihWF0uY1xnKqw9YK7ZHNLUZOhcO.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 619,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ihWF0uY1xnKqw9YK7ZHNLUZOhcO.jpg"
+        },
+        {
+          "title": "Ingrid Goes West",
+          "year": 2017,
+          "slug": "Social media stalking dark comedy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": null
+        },
+        {
+          "title": "Celebrity",
+          "year": 1998,
+          "slug": "Woody Allen's take on fame culture",
+          "poster": "https://image.tmdb.org/t/p/w500/3pbcMORRjqYgfx87CXexLw32gk.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 9466,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3pbcMORRjqYgfx87CXexLw32gk.jpg"
+        },
+        {
+          "title": "Man on Fire",
+          "year": 2004,
+          "slug": "Another Tony Scott/Denzel Washington collaboration",
+          "poster": "https://image.tmdb.org/t/p/w500/grCGLCcTHv9TChibzOwzUpykcjB.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9509,
+          "poster_url": "https://image.tmdb.org/t/p/w500/grCGLCcTHv9TChibzOwzUpykcjB.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,147 @@
+{
+  "props": {
+    "title": "Triumph of the Will",
+    "year": 1935,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/hyXCugoQzJ85mdrdz4dboqP8FoX.jpg",
+    "initialStreaming": null,
+    "tmdbId": 39266,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Triumph of the Will stands as one of cinema's most controversial masterpieces - a brilliant propaganda film that served evil ends. Director Leni Riefenstahl revolutionized documentary techniques through dramatic angles, tracking shots, and masterful editing that influenced filmmakers for decades after. The massive scale of the Nuremberg rally sequences, with hundreds of thousands of participants filmed from multiple vantage points, established visual patterns that echo through films like <a href=\"/movie/11\" class=\"movie-title\" data-tmdb-id=\"11\">Star Wars</a> (1977) and <a href=\"/movie/8587\" class=\"movie-title\" data-tmdb-id=\"8587\">The Lion King</a> (1994). Yet its explicit purpose as Nazi propaganda makes it impossible to separate the technical innovations from its sinister agenda."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Great Dictator",
+            "year": 1940,
+            "slug": "Charlie Chaplin's direct satirical response to Nazi propaganda, blending slapstick comedy with pointed political commentary",
+            "poster": "https://image.tmdb.org/t/p/w500/nhMXB8GTdswYMCL9nepDZymJCOr.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 914,
+            "poster_url": "https://image.tmdb.org/t/p/w500/nhMXB8GTdswYMCL9nepDZymJCOr.jpg"
+          },
+          {
+            "title": "Why We Fight series",
+            "year": 1942,
+            "slug": "Frank Capra's American counter-propaganda series, showing how documentary techniques can serve democratic ideals",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Public Domain",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The ethical debate around Triumph of the Will influenced how later documentarians approached political subjects. The Sorrow and the Pity (1969) deliberately used rough, unpolished footage to document French collaboration with Nazis, rejecting Riefenstahl's glossy aesthetics. <a href=\"/movie/803\" class=\"movie-title\" data-tmdb-id=\"803\">Night and Fog</a> (1956) by Alain Resnais confronted concentration camp reality head-on, serving as a stark counterpoint to Riefenstahl's idealized Reich. SUBHEAD: Impact on Modern Documentary Film"
+      },
+      {
+        "type": "text",
+        "content": "Contemporary documentary filmmakers like Errol Morris in <a href=\"/movie/12698\" class=\"movie-title\" data-tmdb-id=\"12698\">The Fog of War</a> (2003) and Joshua Oppenheimer in <a href=\"/movie/123678\" class=\"movie-title\" data-tmdb-id=\"123678\">The Act of Killing</a> (2012) grapple with how to depict political violence and complicity without glorification. Their work shows an acute awareness of <a href=\"/movie/53194\" class=\"movie-title\" data-tmdb-id=\"53194\">Triumph's</a> cautionary legacy about the power of documentary film to shape historical narrative. Even technically brilliant works like <a href=\"/movie/685\" class=\"movie-title\" data-tmdb-id=\"685\">Olympia</a> (1938), Riefenstahl's follow-up documentary about the 1936 Berlin Olympics, remain inseparable from their propagandistic context."
+      }
+    ],
+    "exploreFurther": [
+      "The evolution of propaganda techniques in documentary film",
+      "Riefenstahl's technical innovations and their influence on modern cinema",
+      "Ethical considerations in documentary filmmaking",
+      "How different nations used film propaganda in WWII",
+      "The intersection of art and politics in documentary film"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Last of the Nuba",
+          "year": 1976,
+          "slug": "Riefenstahl's post-war photography book and controversy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Book",
+          "tmdb_id": null
+        },
+        {
+          "title": "Olympia",
+          "year": 1938,
+          "slug": "Riefenstahl's technically innovative Olympics documentary",
+          "poster": "https://image.tmdb.org/t/p/w500/ymuqghqZYiCIw7com1uN6sxtoGb.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 685,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ymuqghqZYiCIw7com1uN6sxtoGb.jpg"
+        },
+        {
+          "title": "Night and Fog",
+          "year": 1956,
+          "slug": "Alain Resnais' landmark Holocaust documentary",
+          "poster": "https://image.tmdb.org/t/p/w500/2iWYQia8enOai7QEO3TvenleD7r.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 803,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2iWYQia8enOai7QEO3TvenleD7r.jpg"
+        },
+        {
+          "title": "The Sorrow and the Pity",
+          "year": 1969,
+          "slug": "Marcel Ophüls' examination of French collaboration",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Shoah",
+          "year": 1985,
+          "slug": "Claude Lanzmann's definitive Holocaust documentary",
+          "poster": "https://image.tmdb.org/t/p/w500/8hr8NdnMygKF2Mbu3eDDQCB5lKg.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 42044,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8hr8NdnMygKF2Mbu3eDDQCB5lKg.jpg"
+        },
+        {
+          "title": "The World at War",
+          "year": 1973,
+          "slug": "Comprehensive WWII documentary series",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Various",
+          "tmdb_id": null
+        },
+        {
+          "title": "Judgment at Nuremberg",
+          "year": 1961,
+          "slug": "Dramatic examination of Nazi war crimes trials",
+          "poster": "https://image.tmdb.org/t/p/w500/b6vYatvui1EXeFYfpDX4rcbueuP.jpg",
+          "initialStreaming": "Amazon",
+          "tmdb_id": 821,
+          "poster_url": "https://image.tmdb.org/t/p/w500/b6vYatvui1EXeFYfpDX4rcbueuP.jpg"
+        },
+        {
+          "title": "The Act of Killing",
+          "year": 2012,
+          "slug": "Modern examination of political violence and memory",
+          "poster": "https://image.tmdb.org/t/p/w500/sp5B7Tz5ttsgOLnIlCP5uEhtesI.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 123678,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sp5B7Tz5ttsgOLnIlCP5uEhtesI.jpg"
+        },
+        {
+          "title": "Hearts and Minds",
+          "year": 1974,
+          "slug": "Vietnam War documentary showing propaganda's evolution",
+          "poster": "https://image.tmdb.org/t/p/w500/yXnpP2RAZbG3DQufUGcOM5hU4cF.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 42449,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yXnpP2RAZbG3DQufUGcOM5hU4cF.jpg"
+        },
+        {
+          "title": "The Battle of Chile",
+          "year": 1975,
+          "slug": "Documentary about Pinochet's coup showing political manipulation",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

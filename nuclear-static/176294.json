@@ -1,0 +1,175 @@
+{
+  "props": {
+    "title": "Roman Tales",
+    "year": 1955,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/9EjwUUL2N0Gi4V33BoZYAVH3jzo.jpg",
+    "initialStreaming": null,
+    "tmdbId": 176294,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Roman Tales** (1955), directed by Gianni Franciolini, captures the vibrant spirit of post-war Rome through interconnected stories that defined Italian neorealism's evolution. Like <a href=\"/movie/307\" class=\"movie-title\">Rome, Open City</a> (1945) before it, the film presents a mosaic of Roman life, but shifts from war-torn drama to bittersweet comedy. It shares DNA with **The Gold of Naples** (1954), another anthology film that understood how to weave multiple narratives into a cohesive portrait of an Italian city."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Bicycle Thieves",
+            "year": 1948,
+            "slug": "A desperate father searches post-war Rome for his stolen bicycle, essential for his job",
+            "poster": "https://image.tmdb.org/t/p/w500/abmxGiCV04NQj4jngbSQTGLgiC1.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 5156,
+            "poster_url": "https://image.tmdb.org/t/p/w500/abmxGiCV04NQj4jngbSQTGLgiC1.jpg"
+          },
+          {
+            "title": "L'Oro di Napoli",
+            "year": 1954,
+            "slug": "Six vignettes of Neapolitan life starring Sophia Loren and Totò",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "N/A",
+            "tmdb_id": 56122
+          },
+          {
+            "title": "The White Sheik",
+            "year": 1952,
+            "slug": "Fellini's first solo film follows a honeymooning couple's misadventures in Rome",
+            "poster": "https://image.tmdb.org/t/p/w500/f7JjxoSgyvUkCqWDHuN3bBov6rV.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 43361,
+            "poster_url": "https://image.tmdb.org/t/p/w500/f7JjxoSgyvUkCqWDHuN3bBov6rV.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Franciolini's approach influenced later Italian filmmakers, particularly in how they portrayed Rome's social fabric. **Yesterday, Today and Tomorrow** (1963) adopted a similar anthology structure, while **Roma** (1972) by Fellini took the city-as-character concept to surreal heights. The film's impact extends to modern works like **The Great Beauty** (2013), which similarly examines Rome's contradictions through multiple storylines."
+      },
+      {
+        "type": "text",
+        "content": "What sets **Roman Tales** (1955) apart is its gentle humor mixed with social commentary - a balance that would become a hallmark of Commedia all'italiana. The film bridges the gap between neorealism's gritty authenticity and the more commercially viable comedy-dramas that emerged in the late 1950s, like **Big Deal on Madonna Street** (1958). SUBHEAD: Evolution of Roman Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Rome, Open City",
+            "year": 1945,
+            "slug": "Rossellini's landmark neorealist drama about resistance fighters in Nazi-occupied Rome",
+            "poster": "https://image.tmdb.org/t/p/w500/ijGV4v8JxgbNzgEhqKdzHdaZn8a.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 307,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ijGV4v8JxgbNzgEhqKdzHdaZn8a.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's episodic structure influenced how subsequent directors approached depicting Rome. While **La Dolce Vita** (1960) took a more satirical view of Roman society, it maintained the multiple-narrative approach pioneered by films like **Roman Tales**. This technique of using interconnected stories to paint a broader social picture became a template for exploring urban life, visible in later works like **Roma, città aperta** (1945) and **Caro Diario** (1993)."
+      }
+    ],
+    "exploreFurther": [
+      "The transition from Neorealism to Commedia all'italiana in 1950s Italian cinema",
+      "The role of Rome as a character in Italian post-war films",
+      "Gianni Franciolini's influence on anthology filmmaking",
+      "The evolution of social commentary in Italian comedy-dramas",
+      "Post-war Roman society as depicted in Italian cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "La Dolce Vita",
+          "year": 1960,
+          "slug": "Fellini's masterpiece about a journalist's week in decadent Rome",
+          "poster": "https://image.tmdb.org/t/p/w500/skFeWHHBwbQNfXep9OEdrQPJKoS.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 439,
+          "poster_url": "https://image.tmdb.org/t/p/w500/skFeWHHBwbQNfXep9OEdrQPJKoS.jpg"
+        },
+        {
+          "title": "Il Boom",
+          "year": 1963,
+          "slug": "Comedy about economic miracle-era Rome",
+          "poster": "https://image.tmdb.org/t/p/w500/osvbQlIPhIEAVT7kHy1govIZEH3.jpg",
+          "initialStreaming": "N/A",
+          "tmdb_id": 81831,
+          "poster_url": "https://image.tmdb.org/t/p/w500/osvbQlIPhIEAVT7kHy1govIZEH3.jpg"
+        },
+        {
+          "title": "The Easy Life",
+          "year": 1962,
+          "slug": "Road movie through Italy starring Vittorio Gassman",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "N/A",
+          "tmdb_id": 24188
+        },
+        {
+          "title": "I Soliti Ignoti",
+          "year": 1958,
+          "slug": "Comedy about bumbling thieves in Rome",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 24382
+        },
+        {
+          "title": "Roma",
+          "year": 1972,
+          "slug": "Fellini's surreal love letter to the Eternal City",
+          "poster": "https://image.tmdb.org/t/p/w500/rqK75R3tTz2iWU0AQ6tLz3KMOU1.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 11035,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rqK75R3tTz2iWU0AQ6tLz3KMOU1.jpg"
+        },
+        {
+          "title": "The Great Beauty",
+          "year": 2013,
+          "slug": "Oscar-winning examination of modern Roman society",
+          "poster": "https://image.tmdb.org/t/p/w500/1cmOc3ZPkuCTOTqHEsRr3Pk81Um.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 179144,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1cmOc3ZPkuCTOTqHEsRr3Pk81Um.jpg"
+        },
+        {
+          "title": "Yesterday Today and Tomorrow",
+          "year": 1963,
+          "slug": "Three stories starring Sophia Loren and Marcello Mastroianni",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "N/A",
+          "tmdb_id": 42801
+        },
+        {
+          "title": "Mamma Roma",
+          "year": 1962,
+          "slug": "Pasolini's story of a former prostitute in Rome",
+          "poster": "https://image.tmdb.org/t/p/w500/aMPxSiapchjZb73Lz7yNMdTi1cc.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 47796,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aMPxSiapchjZb73Lz7yNMdTi1cc.jpg"
+        },
+        {
+          "title": "L'Eclisse",
+          "year": 1962,
+          "slug": "Antonioni's meditation on love in modern Rome",
+          "poster": "https://image.tmdb.org/t/p/w500/oXoe0Fp92Yw3mMJ9Vq0hPlaMELg.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 21135,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oXoe0Fp92Yw3mMJ9Vq0hPlaMELg.jpg"
+        },
+        {
+          "title": "Roman Holiday",
+          "year": 1953,
+          "slug": "American princess explores Rome with Gregory Peck",
+          "poster": "https://image.tmdb.org/t/p/w500/8lI9dmz1RH20FAqltkGelY1v4BE.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 804,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8lI9dmz1RH20FAqltkGelY1v4BE.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

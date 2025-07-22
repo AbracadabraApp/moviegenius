@@ -1,0 +1,154 @@
+{
+  "props": {
+    "title": "Beehive",
+    "year": 1982,
+    "initialSlug": "A tender portrait of female friendship in 1960s Utah",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/uJUO2vceur1qsSH7EyfIPzzMs2r.jpg",
+    "initialStreaming": null,
+    "tmdbId": 104435,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Beehive** (1982), directed by Theo Angelopoulos, stands as a masterwork of Greek political cinema, using a beekeeper's journey as a metaphor for Greece's societal transformation. The film shares thematic DNA with other powerful 1980s European social commentaries like **Paris, Texas** (1984) and **Vagabond** (1985), where isolated characters navigate changing landscapes. Angelopoulos's signature long takes and deliberate pacing create a hypnotic meditation on tradition versus modernity."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Travelling Players",
+            "year": 1975,
+            "slug": "Angelopoulos's epic follows a theater troupe through Greek history, using similar visual techniques",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 689
+          },
+          {
+            "title": "Landscape in the Mist",
+            "year": 1988,
+            "slug": "Another Angelopoulos masterpiece about displacement and search for identity",
+            "poster": "https://image.tmdb.org/t/p/w500/AernfUrb48q0GBul7xs4f8GndmI.jpg",
+            "initialStreaming": "MUBI",
+            "tmdb_id": 47795,
+            "poster_url": "https://image.tmdb.org/t/p/w500/AernfUrb48q0GBul7xs4f8GndmI.jpg"
+          },
+          {
+            "title": "Days of 36",
+            "year": 1972,
+            "slug": "Political thriller examining Greek dictatorship through oblique storytelling",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 114645
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence resonates through later works examining rural-urban divides and dying traditions. **The Secret Life of Bees** (2008) borrowed its apiary metaphors, while **Tales from the Golden Age** (2009) similarly captured a society in transition through individual stories. Angelopoulos's use of real beekeepers and documentary techniques influenced later hybrid films like **Honeyland** (2019). SUBHEAD: Visual Language and Political Metaphor"
+      },
+      {
+        "type": "text",
+        "content": "Angelopoulos's trademark wide shots and minimal dialogue created a template for political allegory that influenced directors like Béla Tarr (**Werckmeister Harmonies** (2000)) and Nuri Bilge Ceylan (**Once Upon a Time in Anatolia** (2011)). The beehive becomes both literal workplace and metaphor for social organization, a technique later echoed in films like **Woman at War** (2018) and **Little Forest** (2018)."
+      }
+    ],
+    "exploreFurther": [
+      "Greek New Wave Cinema and Political Metaphor",
+      "Beekeeping in Documentary Film",
+      "Theo Angelopoulos's Visual Style",
+      "Rural vs Urban in European Cinema",
+      "Natural World as Political Metaphor"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Beekeeper",
+          "year": 1986,
+          "slug": "Peter Fonda stars as a beekeeper facing modern agricultural changes",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 48210
+        },
+        {
+          "title": "Queen of the Sun",
+          "year": 2010,
+          "slug": "Documentary exploring colony collapse disorder",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "More Than Honey",
+          "year": 2012,
+          "slug": "Swiss documentary about global bee crisis",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 124075
+        },
+        {
+          "title": "The Spirit of the Beehive",
+          "year": 1973,
+          "slug": "Spanish classic using beekeeping as political metaphor",
+          "poster": "https://image.tmdb.org/t/p/w500/p2wx4EWasQaPGxnbS2IsW74ewVN.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 4495,
+          "poster_url": "https://image.tmdb.org/t/p/w500/p2wx4EWasQaPGxnbS2IsW74ewVN.jpg"
+        },
+        {
+          "title": "Ulee's Gold",
+          "year": 1997,
+          "slug": "Peter Fonda as a beekeeper dealing with family crisis",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Vudu",
+          "tmdb_id": 55306
+        },
+        {
+          "title": "Wings of Life",
+          "year": 2011,
+          "slug": "Disney nature documentary partially about bees",
+          "poster": "https://image.tmdb.org/t/p/w500/u7wfV0wDV3drPcuKyHXEMDhuB9t.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 54985,
+          "poster_url": "https://image.tmdb.org/t/p/w500/u7wfV0wDV3drPcuKyHXEMDhuB9t.jpg"
+        },
+        {
+          "title": "The Secret Life of Bees",
+          "year": 2008,
+          "slug": "Southern drama using beekeeping as metaphor for community",
+          "poster": "https://image.tmdb.org/t/p/w500/m1LGEeoYfc6crbfG8WmTKg9SVqL.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 12837,
+          "poster_url": "https://image.tmdb.org/t/p/w500/m1LGEeoYfc6crbfG8WmTKg9SVqL.jpg"
+        },
+        {
+          "title": "Honeyland",
+          "year": 2019,
+          "slug": "Documentary about last female bee hunter in Europe",
+          "poster": "https://image.tmdb.org/t/p/w500/3IxGhQEzLWOxkZlcNMAIiYlOT8D.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 566213,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3IxGhQEzLWOxkZlcNMAIiYlOT8D.jpg"
+        },
+        {
+          "title": "Tale of Tales",
+          "year": 2015,
+          "slug": "Fantasy anthology with bee symbolism",
+          "poster": "https://image.tmdb.org/t/p/w500/ryZsoaYmcEJsye6P5uo5thEjpqB.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 314405,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ryZsoaYmcEJsye6P5uo5thEjpqB.jpg"
+        },
+        {
+          "title": "Queen of Hearts",
+          "year": 2019,
+          "slug": "Danish drama with beekeeping subplot",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

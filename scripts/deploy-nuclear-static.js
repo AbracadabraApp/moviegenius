@@ -23,12 +23,34 @@ async function ensureNuclearStaticFiles() {
     fs.mkdirSync(nuclearDir, { recursive: true });
   }
   
-  // Check if we have some nuclear static files
+  // Check if we have nuclear static files
   const files = fs.readdirSync(nuclearDir);
   const jsonFiles = files.filter(f => f.endsWith('.json'));
   
   if (jsonFiles.length > 100) {
     console.log(`✅ Found ${jsonFiles.length} nuclear static files, ready for production`);
+    return;
+  }
+  
+  // Production build without nuclear files - attempt to generate them
+  if (process.env.NODE_ENV === 'production' || process.env.VERCEL || process.env.RAILWAY_ENVIRONMENT) {
+    console.log('🚀 Production build detected - attempting nuclear static generation');
+    
+    try {
+      // Import and run nuclear batch generation for essential movies
+      const { generateEssentialNuclearFiles } = await import('./nuclear-batch.js');
+      await generateEssentialNuclearFiles();
+      
+      // Recheck file count
+      const newFiles = fs.readdirSync(nuclearDir);
+      const newJsonFiles = newFiles.filter(f => f.endsWith('.json'));
+      console.log(`🎯 Generated ${newJsonFiles.length} essential nuclear static files`);
+      
+    } catch (error) {
+      console.log('⚠️ Nuclear static generation failed:', error.message);
+      console.log('🔄 Pages will fallback to dynamic generation');
+    }
+    
     return;
   }
   

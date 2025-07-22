@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "Ex Machina",
+    "year": 2014,
+    "initialSlug": "Psychological thriller about AI consciousness",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/dmJW8IAKHKxFNiUnoDR7JfsK7Rp.jpg",
+    "initialStreaming": null,
+    "tmdbId": 264660,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Ex Machina** (2014) revolutionized intimate sci-fi with its claustrophobic exploration of artificial intelligence. Director Alex Garland strips away blockbuster spectacle to focus on three characters in a remote facility, echoing the confined psychological tension of **Moon** (2009). The film's brilliant production design turns Nathan's modernist compound into a character itself, following a tradition established in **2001: A Space Odyssey** (1968) where architecture becomes crucial to the storytelling. Alicia Vikander's breakthrough performance as Ava set new standards for portraying artificial beings, building on the groundwork laid by Sean Young's Rachel in **Blade Runner** (1982)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Her",
+            "year": 2013,
+            "slug": "A lonely writer falls in love with his AI operating system, exploring the emotional possibilities and limitations of human-AI relationships",
+            "poster": "https://image.tmdb.org/t/p/w500/lEIaL12hSkqqe83kgADkbUqEnvk.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 152601,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lEIaL12hSkqqe83kgADkbUqEnvk.jpg"
+          },
+          {
+            "title": "Blade Runner 2049",
+            "year": 2017,
+            "slug": "Ryan Gosling's replicant detective uncovers earth-shattering secrets about artificial life while searching for Harrison Ford's Deckard",
+            "poster": "https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 335984,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg"
+          },
+          {
+            "title": "Upgrade",
+            "year": 2018,
+            "slug": "A paralyzed man receives an AI implant that gives him superhuman abilities, but at a devastating cost",
+            "poster": "https://image.tmdb.org/t/p/w500/5f28TXtvHioXirX2n1XH8EJ314v.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 500664,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5f28TXtvHioXirX2n1XH8EJ314v.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's examination of gender dynamics and power structures elevates it beyond typical AI narratives. Like **Under the Skin** (2013), it uses sci-fi elements to challenge how we view consciousness and sexuality. The dance sequence between Nathan and Kyoko deliberately echoes similar moments in **Metropolis** (1927), connecting to cinema's long history of examining the intersection of machinery and humanity. Oscar Isaac's performance as Nathan creates one of modern sci-fi's most complex antagonists, combining Silicon Valley swagger with classical mad scientist tropes."
+      },
+      {
+        "type": "text",
+        "content": "Garland's clinical direction style draws from **Solaris** (1972) and **The Andromeda Strain** (1971), using sterile environments to heighten psychological tension. The film's exploration of the Turing test recalls **The Imitation Game** (2014), but pushes further into questions of consciousness and manipulation. The carefully controlled visual effects serve the story rather than overshadow it, similar to the approach in **Arrival** (2016). SUBHEAD: The Evolution of AI Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Annihilation",
+            "year": 2018,
+            "slug": "A biologist enters a mysterious zone where the laws of nature don't apply, directed by Ex Machina's Alex Garland",
+            "poster": "https://image.tmdb.org/t/p/w500/4YRplSk6BhH6PRuE9gfyw9byUJ6.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 300668,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4YRplSk6BhH6PRuE9gfyw9byUJ6.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Ex Machina** represents a crucial evolution in AI storytelling, bridging the gap between earlier works like **A.I. Artificial Intelligence** (2001) and contemporary explorations like **After Yang** (2021). The film's intimate scale contrasts sharply with action-heavy AI films like **I, Robot** (2004), proving that philosophical depth doesn't require massive setpieces. Its influence can be seen in subsequent works like **Archive** (2020) and **M3GAN** (2022), which similarly focus on the personal implications of artificial consciousness."
+      }
+    ],
+    "exploreFurther": [
+      "The Philosophy of the Turing Test in Cinema",
+      "Visual Effects as Subtle Storytelling Tools",
+      "Architecture in Science Fiction Film",
+      "Gender and Power Dynamics in AI Movies",
+      "Alex Garland's Directorial Techniques"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Metropolis",
+          "year": 1927,
+          "slug": "The first major sci-fi film to explore artificial beings",
+          "poster": "https://image.tmdb.org/t/p/w500/vZIJxGnjcswPCAa52jhbl01FQkV.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 19,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vZIJxGnjcswPCAa52jhbl01FQkV.jpg"
+        },
+        {
+          "title": "Westworld",
+          "year": 1973,
+          "slug": "AI robots in an amusement park turn against their creators",
+          "poster": "https://image.tmdb.org/t/p/w500/qNt29HzxwZ4jGTgSRxdA34ino9Q.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 2362,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qNt29HzxwZ4jGTgSRxdA34ino9Q.jpg"
+        },
+        {
+          "title": "Ghost in the Shell",
+          "year": 1995,
+          "slug": "Landmark anime exploring consciousness and artificial bodies",
+          "poster": "https://image.tmdb.org/t/p/w500/9gC88zYUBARRSThcG93MvW14sqx.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 9323,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9gC88zYUBARRSThcG93MvW14sqx.jpg"
+        },
+        {
+          "title": "The Machine",
+          "year": 2013,
+          "slug": "A scientist creates an AI weapon that develops consciousness",
+          "poster": "https://image.tmdb.org/t/p/w500/lifeSN6rtXYkCPvvjoJpsaonGNv.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 174675,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lifeSN6rtXYkCPvvjoJpsaonGNv.jpg"
+        },
+        {
+          "title": "Transcendence",
+          "year": 2014,
+          "slug": "A scientist's consciousness is uploaded to a computer",
+          "poster": "https://image.tmdb.org/t/p/w500/qmOKJWl3wnXDcLhjtJHnCCCvAiO.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 157353,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qmOKJWl3wnXDcLhjtJHnCCCvAiO.jpg"
+        },
+        {
+          "title": "Automata",
+          "year": 2014,
+          "slug": "A robot investigator discovers AIs evolving beyond their programming",
+          "poster": "https://image.tmdb.org/t/p/w500/v2CokOK5RfdkTo6C26PifDCndoX.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 262543,
+          "poster_url": "https://image.tmdb.org/t/p/w500/v2CokOK5RfdkTo6C26PifDCndoX.jpg"
+        },
+        {
+          "title": "Chappie",
+          "year": 2015,
+          "slug": "A police robot gains consciousness and must learn like a child",
+          "poster": "https://image.tmdb.org/t/p/w500/uuDUpzlMFomdSfNWlpEPS9nVZWV.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 198184,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uuDUpzlMFomdSfNWlpEPS9nVZWV.jpg"
+        },
+        {
+          "title": "Morgan",
+          "year": 2016,
+          "slug": "A corporate troubleshooter evaluates a dangerous artificial being",
+          "poster": "https://image.tmdb.org/t/p/w500/v1Qb1I0wVvk8FQaNaat9DHlKFGc.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 377264,
+          "poster_url": "https://image.tmdb.org/t/p/w500/v1Qb1I0wVvk8FQaNaat9DHlKFGc.jpg"
+        },
+        {
+          "title": "I Am Mother",
+          "year": 2019,
+          "slug": "A robot raises a human child in a post-apocalyptic bunker",
+          "poster": "https://image.tmdb.org/t/p/w500/ayPSqlpYIbeq1RiDekx6W9WUqrL.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 505948,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ayPSqlpYIbeq1RiDekx6W9WUqrL.jpg"
+        },
+        {
+          "title": "After Yang",
+          "year": 2021,
+          "slug": "A family struggles with the loss of their AI helper",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Showtime",
+          "tmdb_id": 585378
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,189 @@
+{
+  "props": {
+    "title": "Amélie",
+    "year": 2001,
+    "initialSlug": "Whimsical Parisian finds joy in helping strangers",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/oTKduWL2tpIKEmkAqF4mFEAWAsv.jpg",
+    "initialStreaming": null,
+    "tmdbId": 194,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Amélie revolutionized modern French cinema with Jean-Pierre Jeunet's whimsical vision of Paris. The film's distinctive visual style - saturated reds and greens, swooping camera movements, and intricate Rube Goldberg-like sequences - influenced countless films that followed. Like <a href=\"/movie/120467\" class=\"movie-title\" data-tmdb-id=\"120467\">The Grand Budapest Hotel</a> (2014) and <a href=\"/movie/1237681\" class=\"movie-title\" data-tmdb-id=\"1237681\">Pushing Daisies</a> (2007-2009), Amélie crafts a heightened reality where coincidence and fate intertwine with everyday life. Audrey Tautou's performance as the quirky waitress who secretly orchestrates joy for others became instantly iconic, establishing a new archetype of the charming social outsider that echoes through films like <a href=\"/movie/401\" class=\"movie-title\" data-tmdb-id=\"401\">Garden State</a> (2004) and <a href=\"/movie/38\" class=\"movie-title\" data-tmdb-id=\"38\">Eternal Sunshine of the Spotless Mind</a> (2004)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Le Fabuleux Destin d'Amélie Poulain",
+            "year": 2001,
+            "slug": "A shy waitress decides to change the lives of those around her while struggling with her own isolation",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": null
+          },
+          {
+            "title": "Delicatessen",
+            "year": 1991,
+            "slug": "Jeunet's earlier dark comedy set in post-apocalyptic France shows his signature style",
+            "poster": "https://image.tmdb.org/t/p/w500/gNtOgQHxE5B8e08zuNRAdDpmK5Z.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 892,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gNtOgQHxE5B8e08zuNRAdDpmK5Z.jpg"
+          },
+          {
+            "title": "A Very Long Engagement",
+            "year": 2004,
+            "slug": "Jeunet and Tautou reunite for this romantic WWI drama with similar visual flair",
+            "poster": "https://image.tmdb.org/t/p/w500/t73m7lX0eFYDjlB1Gcb7r3S5Yt.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 2841,
+            "poster_url": "https://image.tmdb.org/t/p/w500/t73m7lX0eFYDjlB1Gcb7r3S5Yt.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence on visual storytelling can't be overstated. Jeunet's use of digital color correction to create his signature warm palette helped normalize post-production color grading, now standard in films like <a href=\"/movie/134\" class=\"movie-title\" data-tmdb-id=\"134\">O Brother, Where Art Thou?</a> (2000) and <a href=\"/movie/1900\" class=\"movie-title\" data-tmdb-id=\"1900\">Traffic</a> (2000). The movie's narrative device of focusing on tiny details and small pleasures - cracking crème brûlée, skipping stones, dipping hands into grain - created a new visual language for depicting sensory experiences and simple joys that influenced films like <a href=\"/movie/2062\" class=\"movie-title\" data-tmdb-id=\"2062\">Ratatouille</a> (2007) and <a href=\"/movie/587\" class=\"movie-title\" data-tmdb-id=\"587\">Big Fish</a> (2003). SUBHEAD: The New French Whimsy Movement"
+      },
+      {
+        "type": "text",
+        "content": "Amélie sparked a wave of stylized French films that balanced realism with fantasy. <a href=\"/movie/300\" class=\"movie-title\" data-tmdb-id=\"300\">The Science of Sleep</a> (2006) and <a href=\"/movie/157820\" class=\"movie-title\" data-tmdb-id=\"157820\">Mood Indigo</a> (2013) embraced similar magical realist elements, while <a href=\"/movie/2266\" class=\"movie-title\" data-tmdb-id=\"2266\">Paris, Je T'aime</a> (2006) captured the same romantic view of the city. This new French whimsy contrasted sharply with the stark realism of earlier French New Wave, creating a bridge between art house and mainstream appeal that paved the way for films like <a href=\"/movie/59436\" class=\"movie-title\" data-tmdb-id=\"59436\">Midnight in Paris</a> (2011) and <a href=\"/movie/74643\" class=\"movie-title\" data-tmdb-id=\"74643\">The Artist</a> (2011)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Mood Indigo",
+            "year": 2013,
+            "slug": "Michel Gondry's surreal romance featuring an illness caused by a flower growing in someone's lungs",
+            "poster": "https://image.tmdb.org/t/p/w500/y41mndWYov3oPSZdHUtyjEdALvF.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 157820,
+            "poster_url": "https://image.tmdb.org/t/p/w500/y41mndWYov3oPSZdHUtyjEdALvF.jpg"
+          },
+          {
+            "title": "Romantics Anonymous",
+            "year": 2010,
+            "slug": "A chocolate maker and chocolatier's romance echoes Amélie's shy protagonist",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": null
+          },
+          {
+            "title": "The Science of Sleep",
+            "year": 2006,
+            "slug": "Gondry's dreamlike story of an inventor whose dreams begin bleeding into reality",
+            "poster": "https://image.tmdb.org/t/p/w500/8bummqwU6MV65ZJvNtKx8Y3NIEk.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 300,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8bummqwU6MV65ZJvNtKx8Y3NIEk.jpg"
+          }
+        ]
+      }
+    ],
+    "exploreFurther": [
+      "Jean-Pierre Jeunet's Visual Techniques and Color Theory",
+      "The Evolution of Magical Realism in French Cinema",
+      "Paris on Film: From New Wave to Modern Whimsy",
+      "Digital Color Grading's Impact on Modern Cinema",
+      "Character-Driven Narratives in European Comedy-Drama"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Chocolat",
+          "year": 2000,
+          "slug": "A magical chocolatier changes a conservative French village",
+          "poster": "https://image.tmdb.org/t/p/w500/pb2xpBtzkUBgBe4jdn0KVfEuaHt.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 392,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pb2xpBtzkUBgBe4jdn0KVfEuaHt.jpg"
+        },
+        {
+          "title": "The Dreamlife of Angels",
+          "year": 1998,
+          "slug": "Two young women navigate life in Lille, France",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Happiness",
+          "year": 1998,
+          "slug": "Dark comedy about interconnected lives in New York",
+          "poster": "https://image.tmdb.org/t/p/w500/rYfUcEV88Z3gENrfYTE6i8yBkDr.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 10683,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rYfUcEV88Z3gENrfYTE6i8yBkDr.jpg"
+        },
+        {
+          "title": "Chungking Express",
+          "year": 1994,
+          "slug": "Wong Kar-wai's dreamy Hong Kong romance",
+          "poster": "https://image.tmdb.org/t/p/w500/43I9DcNoCzpyzK8JCkJYpHqHqGG.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 11104,
+          "poster_url": "https://image.tmdb.org/t/p/w500/43I9DcNoCzpyzK8JCkJYpHqHqGG.jpg"
+        },
+        {
+          "title": "Betty Blue",
+          "year": 1986,
+          "slug": "Passionate and tragic French love story",
+          "poster": "https://image.tmdb.org/t/p/w500/dGkxgj2ozlD4yRtsJL35EUXegFv.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 11986,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dGkxgj2ozlD4yRtsJL35EUXegFv.jpg"
+        },
+        {
+          "title": "Micmacs",
+          "year": 2009,
+          "slug": "Another Jeunet film about an eccentric group plotting revenge",
+          "poster": "https://image.tmdb.org/t/p/w500/yiqooJWNDEVsp8lbdTrTBvLAk0m.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 27936,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yiqooJWNDEVsp8lbdTrTBvLAk0m.jpg"
+        },
+        {
+          "title": "The Double Life of Veronique",
+          "year": 1991,
+          "slug": "Kieslowski's mysterious tale of identical women",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Love Me If You Dare",
+          "year": 2003,
+          "slug": "Childhood friends engage in escalating dares",
+          "poster": "https://image.tmdb.org/t/p/w500/3jwY4llYNzONpSwvdX4hH4q0nas.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 8424,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3jwY4llYNzONpSwvdX4hH4q0nas.jpg"
+        },
+        {
+          "title": "La Vie en Rose",
+          "year": 2007,
+          "slug": "Edith Piaf biopic with similar Parisian atmosphere",
+          "poster": "https://image.tmdb.org/t/p/w500/3b9DAONAsFRhJKu25R33PE3VwDh.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 1407,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3b9DAONAsFRhJKu25R33PE3VwDh.jpg"
+        },
+        {
+          "title": "The City of Lost Children",
+          "year": 1995,
+          "slug": "Jeunet's dark fantasy about stolen dreams",
+          "poster": "https://image.tmdb.org/t/p/w500/whwT3Q9JxbAYzEc3t7uYYcCbTMf.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 902,
+          "poster_url": "https://image.tmdb.org/t/p/w500/whwT3Q9JxbAYzEc3t7uYYcCbTMf.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

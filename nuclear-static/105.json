@@ -1,0 +1,164 @@
+{
+  "props": {
+    "title": "Back to the Future",
+    "year": 1985,
+    "initialSlug": "The future is whatever you make it.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/vN5B5WgYscRGcQpVhHl6p9DDTP0.jpg",
+    "initialStreaming": null,
+    "tmdbId": 105,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Back to the Future revolutionized time travel cinema by perfectly balancing science fiction with heart and humor. Robert Zemeckis crafted a masterpiece where Marty McFly's accidental journey to 1955 created the template for accessible sci-fi storytelling. The film's influence echoes through later temporal adventures like <a href=\"/movie/59967\" class=\"movie-title\" data-tmdb-id=\"59967\">Looper</a> (2012) and <a href=\"/movie/23048\" class=\"movie-title\" data-tmdb-id=\"23048\">Hot Tub Time Machine</a> (2010), but none matched its precise chemistry of adventure, comedy, and emotional depth. The DeLorean time machine became instantly iconic, while the relationship between Marty and Doc Brown set the standard for unlikely buddy dynamics."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Back to the Future",
+            "year": 1985,
+            "slug": "A teenager accidentally travels back in time and must ensure his parents fall in love to preserve his existence",
+            "poster": "https://image.tmdb.org/t/p/w500/vN5B5WgYscRGcQpVhHl6p9DDTP0.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 105,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vN5B5WgYscRGcQpVhHl6p9DDTP0.jpg"
+          },
+          {
+            "title": "Back to the Future Part II",
+            "year": 1989,
+            "slug": "Marty and Doc travel to 2015 to prevent a disaster, leading to an altered 1985",
+            "poster": "https://image.tmdb.org/t/p/w500/YBawEsTkUZBDajKbd5LiHkmMGf.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 165,
+            "poster_url": "https://image.tmdb.org/t/p/w500/YBawEsTkUZBDajKbd5LiHkmMGf.jpg"
+          },
+          {
+            "title": "Back to the Future Part III",
+            "year": 1990,
+            "slug": "The final chapter sends Marty to the Old West to save Doc from certain death",
+            "poster": "https://image.tmdb.org/t/p/w500/crzoVQnMzIrRfHtQw0tLBirNfVg.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 196,
+            "poster_url": "https://image.tmdb.org/t/p/w500/crzoVQnMzIrRfHtQw0tLBirNfVg.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's technical achievements were groundbreaking for 1985, but it's the careful attention to period detail that makes both 1955 and 1985 feel authentic. The production design team meticulously crafted Hill Valley's two time periods, influencing later period pieces like <a href=\"/movie/2657\" class=\"movie-title\" data-tmdb-id=\"2657\">Pleasantville</a> (1998) and <a href=\"/movie/59436\" class=\"movie-title\" data-tmdb-id=\"59436\">Midnight in Paris</a> (2011). Alan Silvestri's score became a template for adventure film music, while the creative use of \"The Power of Love\" showed how contemporary pop could enhance rather than date a film."
+      },
+      {
+        "type": "text",
+        "content": "The screenplay by Bob Gale and Robert Zemeckis remains a masterclass in setup and payoff. Every detail matters - from the Twin Pines Mall becoming Lone Pine Mall to the \"parking lot\" becoming the \"park\" in 1955. This meticulous attention to temporal cause-and-effect influenced countless films like <a href=\"/movie/14337\" class=\"movie-title\" data-tmdb-id=\"14337\">Primer</a> (2004) and <a href=\"/movie/206487\" class=\"movie-title\" data-tmdb-id=\"206487\">Predestination</a> (2014), though few achieved such clarity while maintaining complexity. SUBHEAD: Legacy and Cultural Impact"
+      },
+      {
+        "type": "text",
+        "content": "Beyond spawning two successful sequels, Back to the Future permanently altered how films approach time travel mechanics. Rather than getting bogged down in scientific explanation, it established clear rules and stuck to them, focusing instead on character and consequence. This approach influenced films like <a href=\"/movie/122906\" class=\"movie-title\" data-tmdb-id=\"122906\">About Time</a> (2013) and <a href=\"/movie/84332\" class=\"movie-title\" data-tmdb-id=\"84332\">Safety Not Guaranteed</a> (2012), which similarly prioritize emotional stakes over technical details."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Time Travel Cinema Pre/Post Back to the Future",
+      "Robert Zemeckis's Visual Effects Innovation Through the 1980s",
+      "The DeLorean: From Failed Car Company to Cultural Icon",
+      "The Scientific Theories Behind Back to the Future's Time Travel",
+      "Alan Silvestri's Musical Impact on 1980s Adventure Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Time Bandits",
+          "year": 1981,
+          "slug": "A young boy joins a group of time-traveling dwarves on a treasure hunt through history",
+          "poster": "https://image.tmdb.org/t/p/w500/4VZtpwdhHQSa4LUkvujyGAHb1hG.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 36819,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4VZtpwdhHQSa4LUkvujyGAHb1hG.jpg"
+        },
+        {
+          "title": "Bill & Ted's Excellent Adventure",
+          "year": 1989,
+          "slug": "Two slackers travel through time gathering historical figures for their school presentation",
+          "poster": "https://image.tmdb.org/t/p/w500/tV25lGWGWGEqUe3U0xjQTBgilSx.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 1648,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tV25lGWGWGEqUe3U0xjQTBgilSx.jpg"
+        },
+        {
+          "title": "Donnie Darko",
+          "year": 2001,
+          "slug": "A troubled teenager deals with time travel and impending doom",
+          "poster": "https://image.tmdb.org/t/p/w500/fhQoQfejY1hUcwyuLgpBrYs6uFt.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 141,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fhQoQfejY1hUcwyuLgpBrYs6uFt.jpg"
+        },
+        {
+          "title": "12 Monkeys",
+          "year": 1995,
+          "slug": "A time traveler attempts to prevent a deadly virus from destroying humanity",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Somewhere in Time",
+          "year": 1980,
+          "slug": "A playwright uses self-hypnosis to travel back in time to meet an actress he's fallen in love with",
+          "poster": "https://image.tmdb.org/t/p/w500/hmdegiSwVYUNvEfihaE3HRM3Sos.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 16633,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hmdegiSwVYUNvEfihaE3HRM3Sos.jpg"
+        },
+        {
+          "title": "The Butterfly Effect",
+          "year": 2004,
+          "slug": "A young man discovers he can travel back in time through his memories",
+          "poster": "https://image.tmdb.org/t/p/w500/ea5iv7TWMh18fOKoRGgmtcg85Gx.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1954,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ea5iv7TWMh18fOKoRGgmtcg85Gx.jpg"
+        },
+        {
+          "title": "Time After Time",
+          "year": 1979,
+          "slug": "H.G. Wells pursues Jack the Ripper through time to modern-day San Francisco",
+          "poster": "https://image.tmdb.org/t/p/w500/kb3VwGJfWLfohbzQZQ4s0HOMrSE.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 24750,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kb3VwGJfWLfohbzQZQ4s0HOMrSE.jpg"
+        },
+        {
+          "title": "Peggy Sue Got Married",
+          "year": 1986,
+          "slug": "A woman faints at her high school reunion and wakes up back in 1960",
+          "poster": "https://image.tmdb.org/t/p/w500/iXXazXe6OtesOCDslyuccULgJlG.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 10013,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iXXazXe6OtesOCDslyuccULgJlG.jpg"
+        },
+        {
+          "title": "The Time Machine",
+          "year": 1960,
+          "slug": "A Victorian inventor travels far into the future in his time machine",
+          "poster": "https://image.tmdb.org/t/p/w500/x3BOzx2rUc5c3gG9UCelzSxv8n4.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 2134,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x3BOzx2rUc5c3gG9UCelzSxv8n4.jpg"
+        },
+        {
+          "title": "The Final Countdown",
+          "year": 1980,
+          "slug": "A modern aircraft carrier is transported back to Pearl Harbor just before the attack",
+          "poster": "https://image.tmdb.org/t/p/w500/nJmWPdreWnbdjMpmXB5rnJMvsK1.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 8738,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nJmWPdreWnbdjMpmXB5rnJMvsK1.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,175 @@
+{
+  "props": {
+    "title": "Malibu Express",
+    "year": 1985,
+    "initialSlug": "Thrills, spills, and sensual chills!",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/6ssdfTlmT3ORRoJNnLBYiOhDlf7.jpg",
+    "initialStreaming": null,
+    "tmdbId": 64494,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Malibu Express** (1985) represents peak 1980s B-movie excess from exploitation auteur Andy Sidaris. This sun-soaked detective story follows private investigator Cody Abilene investigating corporate espionage and murder in Southern California. The film established Sidaris's trademark formula: exotic locations, outlandish action sequences, and gratuitous nudity. It shares DNA with other Reagan-era private eye films like **Murphy's Law** (1986) and **Jake Speed** (1986), but with a distinctly low-budget, tongue-in-cheek approach that would influence later direct-to-video action films."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Hard Ticket to Hawaii",
+            "year": 1987,
+            "slug": "Andy Sidaris follows up with another beach-set action film featuring smugglers, assassins and a killer snake",
+            "poster": "https://image.tmdb.org/t/p/w500/yZBHqhCZYAAihDBgMvQziITtLUO.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 26011,
+            "poster_url": "https://image.tmdb.org/t/p/w500/yZBHqhCZYAAihDBgMvQziITtLUO.jpg"
+          },
+          {
+            "title": "Picasso Trigger",
+            "year": 1988,
+            "slug": "International espionage thriller continuing Sidaris's \"Triple B\" (Bullets, Bombs, Babes) formula",
+            "poster": "https://image.tmdb.org/t/p/w500/h3O1Mv4NswuWdc3eIftcAOVcRHF.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 50560,
+            "poster_url": "https://image.tmdb.org/t/p/w500/h3O1Mv4NswuWdc3eIftcAOVcRHF.jpg"
+          },
+          {
+            "title": "Savage Beach",
+            "year": 1989,
+            "slug": "Two DEA agents get stranded on an island with dangerous treasure hunters",
+            "poster": "https://image.tmdb.org/t/p/w500/lF1s59NfRmHLolL1R9BpwZVaTWT.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 67394,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lF1s59NfRmHLolL1R9BpwZVaTWT.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends beyond just Sidaris's own filmography. Its blend of action, comedy and exploitation elements created a template for direct-to-video features throughout the late 1980s and early 1990s. Films like **American Ninja** (1985) and **Avenging Force** (1986) followed similar formulas while adding martial arts elements. The California settings and beach imagery would become standard in low-budget action films, seen in everything from **L.E.T.H.A.L. Ladies** (1989) to **Beach Babes from Beyond** (1993)."
+      },
+      {
+        "type": "text",
+        "content": "What makes **Malibu Express** (1985) particularly notable is how it bridges different exploitation subgenres. It combines elements of detective noir, beach movies, and action films while maintaining a distinctly 1980s aesthetic. The film's use of early computer technology and corporate espionage themes reflects period anxieties about technological change, similar to mainstream films like **WarGames** (1983) but filtered through a B-movie lens. SUBHEAD: The Legacy of 80s B-Movie Action"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Do or Die",
+            "year": 1991,
+            "slug": "Another Sidaris special combining international intrigue with explosive action",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 35739
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The influence of films like **Malibu Express** (1985) can be seen in modern homages to 80s exploitation cinema. Movies like **Black Dynamite** (2009) and **Kung Fury** (2015) explicitly reference this era's specific combination of outlandish plots, over-the-top action, and self-aware humor. Even mainstream films like **Spring Breakers** (2012) draw from this aesthetic tradition while adding contemporary artistic sensibilities."
+      }
+    ],
+    "exploreFurther": [
+      "Andy Sidaris's \"Triple B\" Movie Formula: The Evolution of a B-Movie Auteur",
+      "The Rise and Fall of Direct-to-Video Action Films: 1985-1995",
+      "California Dreaming: Beach Settings in 80s Low-Budget Cinema",
+      "Private Eyes in Reagan's America: Detective Films of the 1980s",
+      "Computer Espionage Themes in 1980s B-Movies"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Hard Target",
+          "year": 1993,
+          "slug": "John Woo brings Hong Kong action style to American B-movies",
+          "poster": "https://image.tmdb.org/t/p/w500/mXCM7pmUFUGp7QzSmare3RITe6n.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 2019,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mXCM7pmUFUGp7QzSmare3RITe6n.jpg"
+        },
+        {
+          "title": "Deadly Prey",
+          "year": 1987,
+          "slug": "Low-budget Rambo clone becomes cult classic",
+          "poster": "https://image.tmdb.org/t/p/w500/oYnpPS5XuLIyCiarMRSkwPH87LV.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 5753,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oYnpPS5XuLIyCiarMRSkwPH87LV.jpg"
+        },
+        {
+          "title": "Miami Connection",
+          "year": 1987,
+          "slug": "Martial arts rock band fights ninjas in Florida",
+          "poster": "https://image.tmdb.org/t/p/w500/nF2tMgwkIcgOJbXqDxys3lHmJOy.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 59558,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nF2tMgwkIcgOJbXqDxys3lHmJOy.jpg"
+        },
+        {
+          "title": "Hell Comes to Frogtown",
+          "year": 1988,
+          "slug": "Post-apocalyptic B-movie starring Roddy Piper",
+          "poster": "https://image.tmdb.org/t/p/w500/7ry5Sh2oFBUj8zqWzAx5Xm8j79i.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 22572,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7ry5Sh2oFBUj8zqWzAx5Xm8j79i.jpg"
+        },
+        {
+          "title": "Cyborg",
+          "year": 1989,
+          "slug": "Jean-Claude Van Damme in post-apocalyptic action",
+          "poster": "https://image.tmdb.org/t/p/w500/nOspcG8HP6KPdMvzezavRbzYCEw.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 10134,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nOspcG8HP6KPdMvzezavRbzYCEw.jpg"
+        },
+        {
+          "title": "American Ninja",
+          "year": 1985,
+          "slug": "Michael Dudikoff stars in martial arts action classic",
+          "poster": "https://image.tmdb.org/t/p/w500/5fPN6EZHEeJtl1Nh9ZsyG4CSf8V.jpg",
+          "initialStreaming": "Pluto TV",
+          "tmdb_id": 12500,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5fPN6EZHEeJtl1Nh9ZsyG4CSf8V.jpg"
+        },
+        {
+          "title": "Cobra",
+          "year": 1986,
+          "slug": "Sylvester Stallone as tough cop fighting crime cult",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": null
+        },
+        {
+          "title": "Death Wish 3",
+          "year": 1985,
+          "slug": "Charles Bronson takes vigilante justice to extreme levels",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 24873
+        },
+        {
+          "title": "No Retreat, No Surrender",
+          "year": 1986,
+          "slug": "Early Jean-Claude Van Damme martial arts film",
+          "poster": "https://image.tmdb.org/t/p/w500/bDwcHvRXIRVCD2RLACEsykzoHPe.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 12721,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bDwcHvRXIRVCD2RLACEsykzoHPe.jpg"
+        },
+        {
+          "title": "Avenging Force",
+          "year": 1986,
+          "slug": "Michael Dudikoff hunted by secret society",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 52657
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

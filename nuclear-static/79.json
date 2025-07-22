@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "Hero",
+    "year": 2002,
+    "initialSlug": "A warrior's tale of truth, honor, and sacrifice",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/1NBtOH3KPU9UUp1vzVHJ8qzdW88.jpg",
+    "initialStreaming": null,
+    "tmdbId": 79,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Hero revolutionized wuxia cinema with Zhang Yimou's stunning color-coded storytelling and Christopher Doyle's breathtaking cinematography. Like <a href=\"/movie/548\" class=\"movie-title\" data-tmdb-id=\"548\">Rashomon</a> (1950) before it, the film plays with multiple perspectives of the same events, each bathed in distinct hues - red, blue, white, and green segments tell conflicting versions of an assassination attempt on China's first emperor. The film builds on the martial arts foundation laid by <a href=\"/movie/146\" class=\"movie-title\" data-tmdb-id=\"146\">Crouching Tiger, Hidden Dragon</a> (2000), elevating fight sequences into pure visual poetry through careful composition and balletic wire-work."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Hero",
+            "year": 2002,
+            "slug": "A nameless warrior recounts his defeat of three assassins through multiple conflicting stories, each told in distinct color palettes",
+            "poster": "https://image.tmdb.org/t/p/w500/1NBtOH3KPU9UUp1vzVHJ8qzdW88.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 79,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1NBtOH3KPU9UUp1vzVHJ8qzdW88.jpg"
+          },
+          {
+            "title": "House of Flying Daggers",
+            "year": 2004,
+            "slug": "A romantic martial arts epic about a blind dancer caught between duty and love",
+            "poster": "https://image.tmdb.org/t/p/w500/93feGsGiCtG5ymrRcErUgBsdo6v.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 9550,
+            "poster_url": "https://image.tmdb.org/t/p/w500/93feGsGiCtG5ymrRcErUgBsdo6v.jpg"
+          },
+          {
+            "title": "Curse of the Golden Flower",
+            "year": 2006,
+            "slug": "Opulent historical drama of royal family intrigue featuring stunning practical sets",
+            "poster": "https://image.tmdb.org/t/p/w500/gHkkDpfo5YnOrbVfwtDHi91BkrU.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 1494,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gHkkDpfo5YnOrbVfwtDHi91BkrU.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film marked a turning point for Chinese blockbusters, proving they could compete globally while maintaining cultural authenticity. Red Cliff (2008) and <a href=\"/movie/311324\" class=\"movie-title\" data-tmdb-id=\"311324\">The Great Wall</a> (2016) followed this template of combining spectacular action with historical epic scope. But Hero's greatest achievement is making every frame worthy of hanging in a gallery - from the calligraphy school fight with dancing black ink to the yellow leaves swirling around dueling warriors."
+      },
+      {
+        "type": "text",
+        "content": "The philosophical core of Hero sparked debate about authoritarianism versus individualism, themes that echo through later Chinese epics like <a href=\"/movie/525700\" class=\"movie-title\" data-tmdb-id=\"525700\">Shadow</a> (2018) and <a href=\"/movie/253450\" class=\"movie-title\" data-tmdb-id=\"253450\">The Assassin</a> (2015). Zhang Yimou's use of color psychology and symbolic imagery influenced countless films, from <a href=\"/movie/1271\" class=\"movie-title\" data-tmdb-id=\"1271\">300</a> (2006) to <a href=\"/movie/14784\" class=\"movie-title\" data-tmdb-id=\"14784\">The Fall</a> (2006). The film's poetic approach to violence - making combat beautiful rather than brutal - created a new visual language for action cinema. SUBHEAD: Visual Innovation in Martial Arts Cinema"
+      },
+      {
+        "type": "text",
+        "content": "Hero's technical innovations transformed martial arts filmmaking. The rain battle sequence, where water droplets freeze in mid-air, predated similar effects in <a href=\"/movie/605\" class=\"movie-title\" data-tmdb-id=\"605\">The Matrix Revolutions</a> (2003). Jet Li's minimalist performance style contrasted with the operatic emotions of traditional wuxia, while Zhang Ziyi and Maggie Cheung brought gravitas to roles that could have been mere action showcases. The film's success paved the way for more artistically ambitious martial arts films like Reign of Assassins (2010) and <a href=\"/movie/37034\" class=\"movie-title\" data-tmdb-id=\"37034\">True Legend</a> (2010)."
+      }
+    ],
+    "exploreFurther": [
+      "Color symbolism in Zhang Yimou's films from Red Sorghum to Shadow",
+      "The evolution of wire-work choreography in wuxia cinema",
+      "Historical accuracy versus artistic license in martial arts epics",
+      "The influence of Hero's cinematography on modern action films",
+      "Philosophical themes in contemporary Chinese blockbusters"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Crouching Tiger Hidden Dragon",
+          "year": 2000,
+          "slug": "Ang Lee's graceful martial arts romance that broke international box office records",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Red Cliff",
+          "year": 2008,
+          "slug": "John Woo's massive historical epic about the end of the Han Dynasty",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Shadow",
+          "year": 2018,
+          "slug": "Zhang Yimou returns to wuxia with a stunning black-and-white palette",
+          "poster": "https://image.tmdb.org/t/p/w500/d9nGxZW04JtT6PPJk6iaeB7IOfm.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 525700,
+          "poster_url": "https://image.tmdb.org/t/p/w500/d9nGxZW04JtT6PPJk6iaeB7IOfm.jpg"
+        },
+        {
+          "title": "The Assassin",
+          "year": 2015,
+          "slug": "Meditative take on the martial arts genre with arresting visuals",
+          "poster": "https://image.tmdb.org/t/p/w500/10RcGMfzg2lIW1aLcR4ILfNbHK2.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 253450,
+          "poster_url": "https://image.tmdb.org/t/p/w500/10RcGMfzg2lIW1aLcR4ILfNbHK2.jpg"
+        },
+        {
+          "title": "House of Flying Daggers",
+          "year": 2004,
+          "slug": "Romance and betrayal amid spectacular action sequences",
+          "poster": "https://image.tmdb.org/t/p/w500/93feGsGiCtG5ymrRcErUgBsdo6v.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 9550,
+          "poster_url": "https://image.tmdb.org/t/p/w500/93feGsGiCtG5ymrRcErUgBsdo6v.jpg"
+        },
+        {
+          "title": "Seven Swords",
+          "year": 2005,
+          "slug": "Epic about warriors protecting a village from brutal oppression",
+          "poster": "https://image.tmdb.org/t/p/w500/irZQJV9fv6XSbWmwquKSWCLDqDg.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 10703,
+          "poster_url": "https://image.tmdb.org/t/p/w500/irZQJV9fv6XSbWmwquKSWCLDqDg.jpg"
+        },
+        {
+          "title": "Detective Dee series",
+          "year": 2010,
+          "slug": "Supernatural mystery adventures in ancient China",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Reign of Assassins",
+          "year": 2010,
+          "slug": "Michelle Yeoh stars in this tale of redemption and hidden identities",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "True Legend",
+          "year": 2010,
+          "slug": "The origin story of the Drunken Master fighting style",
+          "poster": "https://image.tmdb.org/t/p/w500/6UICxESwvJbvRHdgT0jenH1xPmW.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 37034,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6UICxESwvJbvRHdgT0jenH1xPmW.jpg"
+        },
+        {
+          "title": "Warriors of Heaven and Earth",
+          "year": 2003,
+          "slug": "Western-influenced martial arts adventure on the Silk Road",
+          "poster": "https://image.tmdb.org/t/p/w500/gvf2IHzIpiAMEv09pdlsniFpsm0.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 14797,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gvf2IHzIpiAMEv09pdlsniFpsm0.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

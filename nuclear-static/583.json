@@ -1,0 +1,159 @@
+{
+  "props": {
+    "title": "Life of Brian",
+    "year": 1979,
+    "initialSlug": "From the makers of Monty Python.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/lSSA64WF0M0BXnjwr2quMh6shCl.jpg",
+    "initialStreaming": null,
+    "tmdbId": 583,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Life of Brian represents Monty Python at their satirical peak, skewering religious fanaticism through the story of Brian Cohen, mistakenly proclaimed as the messiah. The film's brilliant combination of irreverent humor and sharp social commentary influenced decades of religious satire, from <a href=\"/movie/1832\" class=\"movie-title\" data-tmdb-id=\"1832\">Dogma</a> (1999) to <a href=\"/movie/23082\" class=\"movie-title\" data-tmdb-id=\"23082\">The Invention of Lying</a> (2009). While The Holy Grail (1975) played with Arthurian legend, Life of Brian took direct aim at blind faith and mob mentality, causing controversy that led to bans in several countries. The iconic \"Always Look on the Bright Side of Life\" finale perfectly encapsulates the film's absurdist philosophy."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Life of Brian",
+            "year": 1979,
+            "slug": "A man born on the same day as Jesus is mistakenly identified as the messiah",
+            "poster": "https://image.tmdb.org/t/p/w500/lSSA64WF0M0BXnjwr2quMh6shCl.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 583,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lSSA64WF0M0BXnjwr2quMh6shCl.jpg"
+          },
+          {
+            "title": "The Holy Grail",
+            "year": 1975,
+            "slug": "King Arthur and his knights embark on an increasingly silly quest",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": null
+          },
+          {
+            "title": "Meaning of Life",
+            "year": 1983,
+            "slug": "Monty Python's outrageous take on life's biggest questions",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence on religious comedy cannot be overstated. <a href=\"/movie/10156\" class=\"movie-title\" data-tmdb-id=\"10156\">History of the World Part I</a> (1981) followed with Mel Brooks' irreverent take on biblical stories, while Wholly Moses! (1980) attempted to capitalize on Life of Brian's success. Modern comedies like Year One (2009) and <a href=\"/movie/109414\" class=\"movie-title\" data-tmdb-id=\"109414\">This Is the End</a> (2013) owe a clear debt to Python's willingness to tackle religious themes through comedy, though few achieve Brian's perfect balance of intelligence and absurdity. SUBHEAD: Impact on Comedy and Satire"
+      },
+      {
+        "type": "text",
+        "content": "Life of Brian's approach to satirizing groupthink and religious extremism created a template for smart comedy that tackles serious subjects. <a href=\"/movie/37495\" class=\"movie-title\" data-tmdb-id=\"37495\">Four Lions</a> (2010) used similar techniques to satirize religious extremism in the modern era, while <a href=\"/movie/402897\" class=\"movie-title\" data-tmdb-id=\"402897\">The Death of Stalin</a> (2017) applied pitch-black comedy to historical events. The film's influence extends beyond religious satire - its mockery of political factions (People's Front of Judea vs. Judean People's Front) inspired countless comedic takes on leftist infighting, from <a href=\"/movie/19833\" class=\"movie-title\" data-tmdb-id=\"19833\">In the Loop</a> (2009) to <a href=\"/movie/646380\" class=\"movie-title\" data-tmdb-id=\"646380\">Don't Look Up</a> (2021)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Religious Satire in Cinema",
+      "Monty Python's Impact on Modern Comedy",
+      "Controversy and Censorship in Comedy Film",
+      "The Art of Historical Comedy",
+      "British Comedy's Golden Age"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Gods Must Be Crazy",
+          "year": 1980,
+          "slug": "A Coca-Cola bottle drops into an isolated tribe",
+          "poster": "https://image.tmdb.org/t/p/w500/IgBfj5LfT7nwpodCZ34QCHp17x.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 8393,
+          "poster_url": "https://image.tmdb.org/t/p/w500/IgBfj5LfT7nwpodCZ34QCHp17x.jpg"
+        },
+        {
+          "title": "Dogma",
+          "year": 1999,
+          "slug": "Two fallen angels try to re-enter Heaven",
+          "poster": "https://image.tmdb.org/t/p/w500/xI5beD8Td79E2uZNAxgd1gWWOEd.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 1832,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xI5beD8Td79E2uZNAxgd1gWWOEd.jpg"
+        },
+        {
+          "title": "The Invention of Lying",
+          "year": 2009,
+          "slug": "A man discovers lying in a world of total honesty",
+          "poster": "https://image.tmdb.org/t/p/w500/clP8tDZeM9jgnqmu4VBClBDpLtS.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 23082,
+          "poster_url": "https://image.tmdb.org/t/p/w500/clP8tDZeM9jgnqmu4VBClBDpLtS.jpg"
+        },
+        {
+          "title": "History of the World Part I",
+          "year": 1981,
+          "slug": "Mel Brooks' comedic take on historical events",
+          "poster": "https://image.tmdb.org/t/p/w500/6iAl78qZHT65erPXr2YW6Y54wlY.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 10156,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6iAl78qZHT65erPXr2YW6Y54wlY.jpg"
+        },
+        {
+          "title": "Four Lions",
+          "year": 2010,
+          "slug": "Satirical comedy about wannabe terrorists",
+          "poster": "https://image.tmdb.org/t/p/w500/x4JzaRPXBs9wiHCe3e3ymXWuwfd.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 37495,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x4JzaRPXBs9wiHCe3e3ymXWuwfd.jpg"
+        },
+        {
+          "title": "The Death of Stalin",
+          "year": 2017,
+          "slug": "Dark comedy about power struggle after Stalin's death",
+          "poster": "https://image.tmdb.org/t/p/w500/AqH7q89NxGRDAyRWKqsL3OBtYfV.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 402897,
+          "poster_url": "https://image.tmdb.org/t/p/w500/AqH7q89NxGRDAyRWKqsL3OBtYfV.jpg"
+        },
+        {
+          "title": "In the Loop",
+          "year": 2009,
+          "slug": "Political satire about UK-US relations",
+          "poster": "https://image.tmdb.org/t/p/w500/jL6txnziFSeEifQkqnPBtaPaiXU.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 19833,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jL6txnziFSeEifQkqnPBtaPaiXU.jpg"
+        },
+        {
+          "title": "Don't Look Up",
+          "year": 2021,
+          "slug": "Satirical take on climate crisis denial",
+          "poster": "https://image.tmdb.org/t/p/w500/th4E1yqsE8DGpAseLiUrI60Hf8V.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 646380,
+          "poster_url": "https://image.tmdb.org/t/p/w500/th4E1yqsE8DGpAseLiUrI60Hf8V.jpg"
+        },
+        {
+          "title": "A Serious Man",
+          "year": 2009,
+          "slug": "Coen Brothers' modern Job story",
+          "poster": "https://image.tmdb.org/t/p/w500/8Zjk3cvjkDa643NHXtdPu30gnyY.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 12573,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8Zjk3cvjkDa643NHXtdPu30gnyY.jpg"
+        },
+        {
+          "title": "Bruce Almighty",
+          "year": 2003,
+          "slug": "Man temporarily gains God's powers",
+          "poster": "https://image.tmdb.org/t/p/w500/f0QqG14SZYYZcV4VWykVc5w13dz.jpg",
+          "initialStreaming": "Peacock",
+          "tmdb_id": 310,
+          "poster_url": "https://image.tmdb.org/t/p/w500/f0QqG14SZYYZcV4VWykVc5w13dz.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}
