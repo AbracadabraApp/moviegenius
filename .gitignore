@@ -1,5 +1,5 @@
 # Dependencies
-/node_modules
+node_modules
 /.pnp
 .pnp.js
 
@@ -24,7 +24,6 @@ yarn-error.log*
 
 # Local env files
 .env*.local
-.env
 
 # Vercel
 .vercel
@@ -33,17 +32,14 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# IDEs
-.vscode/
-.idea/
+# Nuclear static files (generated on deployment)
+nuclear-static/
+public/nuclear-static/
 
 # Logs
 *.log
+server.log
+dev.log
 
-# Database
-*.db
-*.sqlite
-
-# Backups
-*-backup*
-*-test*
+# Cache
+.cache/

@@ -1,0 +1,269 @@
+{
+  "id": "4fcd3559-7e54-48d9-b67c-7ca3b5ca56c9",
+  "title": "Koyaanisqatsi",
+  "year": 1982,
+  "slug": "Life in chaos: a hypnotic visual symphony",
+  "tmdb_id": 11314,
+  "poster_url": "https://image.tmdb.org/t/p/w500/6zCNciRcob8lwuydVXgq0esla8L.jpg",
+  "trailer_url": null,
+  "analysis": {
+    "model": "claude-3-5-sonnet-20241022",
+    "source": "entity_analysis_transformation",
+    "sections": [
+      {
+        "type": "text",
+        "content": "Koyaanisqatsi represents a revolutionary achievement in experimental documentary filmmaking, directed by Godfrey Reggio with stunning cinematography by Ron Fricke. The film, whose title means \"life out of balance\" in the Hopi language, creates a mesmerizing visual poem about the relationship between humanity, technology, and nature. Set to Philip Glass's hypnotic minimalist score, it eschews traditional narrative and dialogue entirely."
+      },
+      {
+        "type": "text",
+        "content": "MOVIES: Koyaanisqatsi|1982|Groundbreaking experimental documentary exploring the relationship between nature, humanity and technology through stunning visuals and Philip Glass score|Criterion Channel, Kanopy"
+      },
+      {
+        "type": "text",
+        "content": "The film's influence can be seen in later works that adopted its contemplative, non-narrative style, particularly Fricke's own Baraka (1992) and Samsara (2011). These spiritual successors expanded upon Koyaanisqatsi's innovative time-lapse photography and sweeping aerial shots, while exploring similar themes of global interconnectedness and environmental impact."
+      },
+      {
+        "type": "text",
+        "content": "MOVIES: Baraka|1992|Ron Fricke's global journey capturing sacred places and rituals across 24 countries|Amazon Prime\nMOVIES: Samsara|2011|Non-verbal documentary filmed over 5 years in 25 countries exploring life's cycles|AMC+"
+      },
+      {
+        "type": "text",
+        "content": "The innovative cinematography techniques pioneered in Koyaanisqatsi have influenced countless music videos, commercials, and films. The combination of high-speed and slow-motion photography, along with the film's signature time-lapse sequences of urban landscapes, created a new visual language for depicting modern life's frenetic pace and humanity's impact on the natural world."
+      },
+      {
+        "type": "text",
+        "content": "EXPLORE_FURTHER: The Development of Time-Lapse Photography in Documentary Film\nEXPLORE_FURTHER: Philip Glass's Minimalist Musical Compositions in Cinema\nEXPLORE_FURTHER: Environmental Themes in Experimental Documentary\nEXPLORE_FURTHER: The Qatsi Trilogy's Cultural Impact\nEXPLORE_FURTHER: Visual Poetry in Non-Narrative Cinema"
+      },
+      {
+        "type": "text",
+        "content": "MORE_IDEAS: Powaqqatsi|1988|Second film in the Qatsi trilogy examining life in developing nations|Criterion Channel\nMORE_IDEAS: Naqoyqatsi|2002|Final film in the Qatsi trilogy focusing on digital technology and warfare|Criterion Channel\nMORE_IDEAS: Chronos|1985|Ron Fricke's IMAX time-lapse journey through time|Tubi\nMORE_IDEAS: Visitors|2013|Godfrey Reggio's black-and-white examination of humanity's relationship with technology|Amazon Prime\nMORE_IDEAS: Manufactured Landscapes|2006|Documentary about photographer Edward Burtynsky's industrial landscapes|Kanopy\nMORE_IDEAS: Rivers and Tides|2001|Andy Goldsworthy's environmental art documented|Kanopy\nMORE_IDEAS: Into Eternity|2010|Meditative documentary about nuclear waste storage|Prime Video\nMORE_IDEAS: Microcosmos|1996|Close-up nature documentary about insect life|HBO Max\nMORE_IDEAS: Winged Migration|2001|Documentary following bird migration patterns|Netflix\nMORE_IDEAS: The Tree of Life|2011|Terrence Malick's experimental narrative incorporating cosmic imagery|Hulu\nMORE_IDEAS: Voyage of Time|2016|Malick's IMAX journey through universal history|Apple TV+\nMORE_IDEAS: The Qatsi Trilogy Box Set|2012|Complete collection of Reggio's revolutionary trilogy|Criterion Collection\nMORE_IDEAS: Life in a Day|2011|Global documentary compiled from user-submitted footage|YouTube\nMORE_IDEAS: TimeScapes|2012|Tom Lowe's 4K time-lapse portrait of the American Southwest|Amazon Prime\nMORE_IDEAS: Homo Sapiens|2016|Documentary exploring abandoned human structures|Mubi"
+      }
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": []
+    },
+    "entity_data": {
+      "entities": {
+        "movies": [
+          {
+            "end": 2578,
+            "text": "Rivers and Tides",
+            "type": "exact_title",
+            "movie": {
+              "id": "Andy Goldsworthy's environmental art",
+              "url": "/movie/Andy Goldsworthy's environmental art",
+              "slug": "Andy Goldsworthy's environmental art",
+              "year": 2001,
+              "title": "Rivers and Tides",
+              "tmdb_id": 30140,
+              "poster_url": "https://image.tmdb.org/t/p/w500/nhn5pg3f7f8FD3y0HRZaFIHBJgR.jpg",
+              "searchTitle": "rivers and tides",
+              "release_date": "2001-02-13",
+              "discovered_at": "2025-05-29T20:50:05.981Z",
+              "streaming_data": "Criterion Channel",
+              "original_claude_title": "Rivers and Tides"
+            },
+            "start": 2562,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 2932,
+            "text": "The Tree of Life",
+            "type": "exact_title",
+            "movie": {
+              "id": "Experimental nature photography",
+              "url": "/movie/Experimental nature photography",
+              "slug": "Experimental nature photography",
+              "year": 2011,
+              "title": "The Tree of Life",
+              "tmdb_id": 8967,
+              "poster_url": "https://image.tmdb.org/t/p/w500/l8cwuB5WJSoj4uMAsnzuHBOMaSJ.jpg",
+              "searchTitle": "the tree of life",
+              "release_date": "2011-05-17",
+              "discovered_at": "2025-05-29T00:47:51.072Z",
+              "streaming_data": "Hulu",
+              "original_claude_title": "The Tree of Life"
+            },
+            "start": 2916,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 2871,
+            "text": "following",
+            "type": "exact_title",
+            "movie": {
+              "id": "Nolan's debut about a writer who follows strangers",
+              "url": "/movie/Nolan's debut about a writer who follows strangers",
+              "slug": "Nolan's debut about a writer who follows strangers",
+              "year": 1999,
+              "title": "Following",
+              "tmdb_id": 11660,
+              "poster_url": "https://image.tmdb.org/t/p/w500/3bX6VVSMf0dvzk5pMT4ALG5A92d.jpg",
+              "searchTitle": "following",
+              "release_date": "1999-05-06",
+              "discovered_at": "2025-05-29T00:26:53.154Z",
+              "streaming_data": "Criterion Channel",
+              "original_claude_title": "Following"
+            },
+            "start": 2862,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 824,
+            "text": "Samsara",
+            "type": "exact_title",
+            "movie": {
+              "id": "Documentary filmed in 70mm",
+              "url": "/movie/Documentary filmed in 70mm",
+              "slug": "Documentary filmed in 70mm",
+              "year": 2011,
+              "title": "Samsara",
+              "tmdb_id": 89708,
+              "poster_url": "https://image.tmdb.org/t/p/w500/qodkea4k0pNUmNTl5TJO2PdTqgW.jpg",
+              "searchTitle": "samsara",
+              "release_date": "2011-09-16",
+              "discovered_at": "2025-05-29T00:27:32.328Z",
+              "streaming_data": "Amazon Prime",
+              "original_claude_title": "Samsara"
+            },
+            "start": 817,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 1170,
+            "text": "Samsara",
+            "type": "exact_title",
+            "movie": {
+              "id": "Documentary filmed in 70mm",
+              "url": "/movie/Documentary filmed in 70mm",
+              "slug": "Documentary filmed in 70mm",
+              "year": 2011,
+              "title": "Samsara",
+              "tmdb_id": 89708,
+              "poster_url": "https://image.tmdb.org/t/p/w500/qodkea4k0pNUmNTl5TJO2PdTqgW.jpg",
+              "searchTitle": "samsara",
+              "release_date": "2011-09-16",
+              "discovered_at": "2025-05-29T00:27:32.328Z",
+              "streaming_data": "Amazon Prime",
+              "original_claude_title": "Samsara"
+            },
+            "start": 1163,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 805,
+            "text": "Baraka",
+            "type": "exact_title",
+            "movie": {
+              "id": "Documentary shot in Todd-AO 70mm",
+              "url": "/movie/Documentary shot in Todd-AO 70mm",
+              "slug": "Documentary shot in Todd-AO 70mm",
+              "year": 1992,
+              "title": "Baraka",
+              "tmdb_id": 14002,
+              "poster_url": "https://image.tmdb.org/t/p/w500/ldEuJQ4z7zEvL7iXraESWBUfQcz.jpg",
+              "searchTitle": "baraka",
+              "release_date": "1992-09-15",
+              "discovered_at": "2025-05-29T00:27:32.206Z",
+              "streaming_data": "Amazon Prime",
+              "original_claude_title": "Baraka"
+            },
+            "start": 799,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 1052,
+            "text": "Baraka",
+            "type": "exact_title",
+            "movie": {
+              "id": "Documentary shot in Todd-AO 70mm",
+              "url": "/movie/Documentary shot in Todd-AO 70mm",
+              "slug": "Documentary shot in Todd-AO 70mm",
+              "year": 1992,
+              "title": "Baraka",
+              "tmdb_id": 14002,
+              "poster_url": "https://image.tmdb.org/t/p/w500/ldEuJQ4z7zEvL7iXraESWBUfQcz.jpg",
+              "searchTitle": "baraka",
+              "release_date": "1992-09-15",
+              "discovered_at": "2025-05-29T00:27:32.206Z",
+              "streaming_data": "Amazon Prime",
+              "original_claude_title": "Baraka"
+            },
+            "start": 1046,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 1437,
+            "text": "speed",
+            "type": "exact_title",
+            "movie": {
+              "id": "Bus bomb thriller",
+              "url": "/movie/Bus bomb thriller",
+              "slug": "Bus bomb thriller",
+              "year": 1994,
+              "title": "Speed",
+              "tmdb_id": 1637,
+              "poster_url": "https://image.tmdb.org/t/p/w500/82PkCE4R95KhHICUDF7G4Ly2z3l.jpg",
+              "searchTitle": "speed",
+              "release_date": "1994-06-09",
+              "discovered_at": "2025-05-29T00:38:25.766Z",
+              "streaming_data": "Disney+",
+              "original_claude_title": "Speed"
+            },
+            "start": 1432,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 2876,
+            "text": "bird",
+            "type": "exact_title",
+            "movie": {
+              "id": "Charlie Parker biopic",
+              "url": "/movie/Charlie Parker biopic",
+              "slug": "Charlie Parker biopic",
+              "year": 1988,
+              "title": "Bird",
+              "tmdb_id": 24679,
+              "poster_url": "https://image.tmdb.org/t/p/w500/rTCp6M98RQAxRl0x0guU9GlH7HS.jpg",
+              "searchTitle": "bird",
+              "release_date": "1988-06-01",
+              "discovered_at": "2025-05-31T07:56:24.318Z",
+              "streaming_data": "Amazon Prime",
+              "original_claude_title": "Bird"
+            },
+            "start": 2872,
+            "context": "general",
+            "confidence": 0.85
+          }
+        ],
+        "people": []
+      }
+    },
+    "raw_content": "PARAGRAPH: Koyaanisqatsi represents a revolutionary achievement in experimental documentary filmmaking, directed by Godfrey Reggio with stunning cinematography by Ron Fricke. The film, whose title means \"life out of balance\" in the Hopi language, creates a mesmerizing visual poem about the relationship between humanity, technology, and nature. Set to Philip Glass's hypnotic minimalist score, it eschews traditional narrative and dialogue entirely.\n\nMOVIES: Koyaanisqatsi|1982|Groundbreaking experimental documentary exploring the relationship between nature, humanity and technology through stunning visuals and Philip Glass score|Criterion Channel, Kanopy\n\nPARAGRAPH: The film's influence can be seen in later works that adopted its contemplative, non-narrative style, particularly Fricke's own Baraka (1992) and Samsara (2011). These spiritual successors expanded upon Koyaanisqatsi's innovative time-lapse photography and sweeping aerial shots, while exploring similar themes of global interconnectedness and environmental impact.\n\nMOVIES: Baraka|1992|Ron Fricke's global journey capturing sacred places and rituals across 24 countries|Amazon Prime\nMOVIES: Samsara|2011|Non-verbal documentary filmed over 5 years in 25 countries exploring life's cycles|AMC+\n\nPARAGRAPH: The innovative cinematography techniques pioneered in Koyaanisqatsi have influenced countless music videos, commercials, and films. The combination of high-speed and slow-motion photography, along with the film's signature time-lapse sequences of urban landscapes, created a new visual language for depicting modern life's frenetic pace and humanity's impact on the natural world.\n\nEXPLORE_FURTHER: The Development of Time-Lapse Photography in Documentary Film\nEXPLORE_FURTHER: Philip Glass's Minimalist Musical Compositions in Cinema\nEXPLORE_FURTHER: Environmental Themes in Experimental Documentary\nEXPLORE_FURTHER: The Qatsi Trilogy's Cultural Impact\nEXPLORE_FURTHER: Visual Poetry in Non-Narrative Cinema\n\nMORE_IDEAS: Powaqqatsi|1988|Second film in the Qatsi trilogy examining life in developing nations|Criterion Channel\nMORE_IDEAS: Naqoyqatsi|2002|Final film in the Qatsi trilogy focusing on digital technology and warfare|Criterion Channel\nMORE_IDEAS: Chronos|1985|Ron Fricke's IMAX time-lapse journey through time|Tubi\nMORE_IDEAS: Visitors|2013|Godfrey Reggio's black-and-white examination of humanity's relationship with technology|Amazon Prime\nMORE_IDEAS: Manufactured Landscapes|2006|Documentary about photographer Edward Burtynsky's industrial landscapes|Kanopy\nMORE_IDEAS: Rivers and Tides|2001|Andy Goldsworthy's environmental art documented|Kanopy\nMORE_IDEAS: Into Eternity|2010|Meditative documentary about nuclear waste storage|Prime Video\nMORE_IDEAS: Microcosmos|1996|Close-up nature documentary about insect life|HBO Max\nMORE_IDEAS: Winged Migration|2001|Documentary following bird migration patterns|Netflix\nMORE_IDEAS: The Tree of Life|2011|Terrence Malick's experimental narrative incorporating cosmic imagery|Hulu\nMORE_IDEAS: Voyage of Time|2016|Malick's IMAX journey through universal history|Apple TV+\nMORE_IDEAS: The Qatsi Trilogy Box Set|2012|Complete collection of Reggio's revolutionary trilogy|Criterion Collection\nMORE_IDEAS: Life in a Day|2011|Global documentary compiled from user-submitted footage|YouTube\nMORE_IDEAS: TimeScapes|2012|Tom Lowe's 4K time-lapse portrait of the American Southwest|Amazon Prime\nMORE_IDEAS: Homo Sapiens|2016|Documentary exploring abandoned human structures|Mubi",
+    "generated_at": "2025-06-09T18:18:36.388Z",
+    "input_tokens": 327,
+    "cost_estimate": 0.014436000000000001,
+    "output_tokens": 897,
+    "transformedAt": "2025-06-28T08:01:11.562Z",
+    "exploreFurther": [
+      "Koyaanisqatsi director's filmography and style",
+      "Visual techniques and cinematography in Koyaanisqatsi",
+      "Koyaanisqatsi soundtrack and musical themes",
+      "Koyaanisqatsi's cultural impact and legacy"
+    ],
+    "transformation_completed": true
+  },
+  "generated_at": "2025-07-02T18:34:43.524Z",
+  "static_url": "/movie/Life in chaos: a hypnotic visual symphony",
+  "has_trailer": false,
+  "has_analysis": true
+}

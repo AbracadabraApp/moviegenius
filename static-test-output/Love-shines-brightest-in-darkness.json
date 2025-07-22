@@ -1,0 +1,320 @@
+{
+  "id": "4c926c1c-1599-47fd-a91b-0f8cd60f1125",
+  "title": "City Lights",
+  "year": 1931,
+  "slug": "Love shines brightest in darkness",
+  "tmdb_id": 901,
+  "poster_url": "https://image.tmdb.org/t/p/w500/ugmakEL5y294I5bXgiBqApuZpwc.jpg",
+  "trailer_url": "7vl7F8S4cpQ",
+  "analysis": {
+    "model": "claude-3-5-sonnet-20241022",
+    "source": "entity_analysis_transformation",
+    "sections": [
+      {
+        "type": "text",
+        "content": "Charlie Chaplin's masterpiece \"City Lights\" (1931) represents the pinnacle of silent cinema, arriving defiantly after the talkie revolution had begun. As both director and star, Chaplin crafted an exquisite blend of comedy and pathos, telling the story of his iconic Tramp character falling in love with a blind flower girl. The film's ending is widely considered one of the most moving sequences in cinema history, with the flower girl finally \"seeing\" her benefactor for who he really is."
+      },
+      {
+        "type": "text",
+        "content": "MOVIES: City Lights|1931|Charlie Chaplin's masterpiece about a Tramp who falls in love with a blind flower girl, combining slapstick comedy with profound emotional depth|HBO Max"
+      },
+      {
+        "type": "text",
+        "content": "The film's production was notably challenging, taking nearly three years to complete as Chaplin insisted on perfection in every scene. His decision to keep the film silent, despite the industry's rapid transition to sound, proved prescient - the universal language of pantomime and music created an emotional resonance that transcends cultural and linguistic barriers. The boxing sequence and the nightclub scenes demonstrate Chaplin's genius for physical comedy, while his encounters with the millionaire showcase his talent for social commentary."
+      },
+      {
+        "type": "text",
+        "content": "The influence of \"City Lights\" can be seen in numerous subsequent films, from Frank Capra's \"It's a Wonderful Life\" to modern romantic comedies. The film's exploration of class differences, sacrifice, and unconditional love established themes that would become central to humanist cinema."
+      },
+      {
+        "type": "text",
+        "content": "MOVIES: It's a Wonderful Life|1946|Frank Capra's beloved holiday classic about a man who learns the true value of his life with help from an angel|Amazon Prime"
+      },
+      {
+        "type": "text",
+        "content": "EXPLORE_FURTHER: Silent Film Techniques and Their Modern Applications\nEXPLORE_FURTHER: Charlie Chaplin's Evolution as a Filmmaker\nEXPLORE_FURTHER: The Impact of Music in Silent Cinema\nEXPLORE_FURTHER: Social Commentary in Comedy Films\nEXPLORE_FURTHER: The Art of Physical Comedy in Cinema"
+      },
+      {
+        "type": "text",
+        "content": "MORE_IDEAS: Modern Times|1936|Chaplin's last silent film, a commentary on industrialization|Criterion\nMORE_IDEAS: The Gold Rush|1925|Chaplin's Tramp seeks fortune in the Klondike Gold Rush|HBO Max\nMORE_IDEAS: The Kid|1921|Chaplin's first full-length film as director, mixing comedy and drama|Criterion\nMORE_IDEAS: The Great Dictator|1940|Chaplin's first true talking picture, satirizing Hitler|HBO Max\nMORE_IDEAS: Sunrise: A Song of Two Humans|1927|F.W. Murnau's poetic silent masterpiece|Criterion\nMORE_IDEAS: The Artist|2011|Modern silent film paying homage to Hollywood's golden age|Netflix\nMORE_IDEAS: Safety Last!|1923|Harold Lloyd's famous clock-hanging sequence|Criterion\nMORE_IDEAS: The General|1926|Buster Keaton's Civil War comedy epic|Amazon Prime\nMORE_IDEAS: Sherlock Jr.|1924|Keaton's imaginative comedy about a projectionist|HBO Max\nMORE_IDEAS: The Circus|1928|Chaplin's Tramp joins a struggling circus|Criterion\nMORE_IDEAS: Wings|1927|First Academy Award winner for Best Picture|Paramount+\nMORE_IDEAS: The Passion of Joan of Arc|1928|Carl Theodor Dreyer's emotional masterpiece|Criterion\nMORE_IDEAS: Metropolis|1927|Fritz Lang's influential sci-fi epic|Netflix\nMORE_IDEAS: The Cabinet of Dr. Caligari|1920|German Expressionist horror classic|Tubi\nMORE_IDEAS: The Last Laugh|1924|Emil Jannings as a hotel doorman facing social decline|Criterion"
+      }
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": []
+    },
+    "entity_data": {
+      "entities": {
+        "movies": [
+          {
+            "end": 1369,
+            "text": "'s a Wonderful Life\"",
+            "type": "quoted_title",
+            "movie": {
+              "id": "A man learns the value of his life.",
+              "url": "/movie/A man learns the value of his life.",
+              "slug": "A man learns the value of his life.",
+              "year": 1946,
+              "title": "It's a Wonderful Life",
+              "tmdb_id": 1585,
+              "poster_url": "/images/posters/it-s-a-wonderful-life.jpg",
+              "searchTitle": "its a wonderful life",
+              "release_date": null,
+              "discovered_at": "2025-05-28T04:47:15.621Z",
+              "streaming_data": null,
+              "original_claude_title": "It's a Wonderful Life"
+            },
+            "start": 1349,
+            "context": "general",
+            "confidence": 0.9
+          },
+          {
+            "end": 1284,
+            "text": "\"City Lights\"",
+            "type": "quoted_title",
+            "movie": {
+              "id": "A tramp falls for a blind flower girl.",
+              "url": "/movie/A tramp falls for a blind flower girl.",
+              "slug": "A tramp falls for a blind flower girl.",
+              "year": 1931,
+              "title": "City Lights",
+              "tmdb_id": 229,
+              "poster_url": "/images/posters/city-lights.jpg",
+              "searchTitle": "city lights",
+              "release_date": null,
+              "discovered_at": "2025-05-29T00:00:21.287Z",
+              "streaming_data": "Criterion Channel",
+              "original_claude_title": "City Lights"
+            },
+            "start": 1271,
+            "context": "general",
+            "confidence": 0.9
+          },
+          {
+            "end": 2438,
+            "text": "Sunrise: A Song of Two Humans",
+            "type": "exact_title",
+            "movie": {
+              "id": "Lyrical story of marriage and redemption",
+              "url": "/movie/Lyrical story of marriage and redemption",
+              "slug": "Lyrical story of marriage and redemption",
+              "year": 1927,
+              "title": "Sunrise: A Song of Two Humans",
+              "tmdb_id": 631,
+              "poster_url": "https://image.tmdb.org/t/p/w500/oj8ZW8jKXBSs8F1e5iWsTUeXSJW.jpg",
+              "searchTitle": "sunrise a song of two humans",
+              "release_date": "1927-11-04",
+              "discovered_at": "2025-05-29T00:00:22.375Z",
+              "streaming_data": "Criterion Channel",
+              "original_claude_title": "Sunrise: A Song of Two Humans"
+            },
+            "start": 2409,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 3210,
+            "text": "The Cabinet of Dr. Caligari",
+            "type": "exact_title",
+            "movie": {
+              "id": "German Expressionist horror masterpiece",
+              "url": "/movie/German Expressionist horror masterpiece",
+              "slug": "German Expressionist horror masterpiece",
+              "year": 1920,
+              "title": "The Cabinet of Dr. Caligari",
+              "tmdb_id": 234,
+              "poster_url": "https://image.tmdb.org/t/p/w500/myK9DeIsXWGKgUTZyGXg2IfFk0W.jpg",
+              "searchTitle": "the cabinet of dr caligari",
+              "release_date": "1920-02-27",
+              "discovered_at": "2025-05-29T00:00:22.035Z",
+              "streaming_data": "Free on Archive.org",
+              "original_claude_title": "The Cabinet of Dr. Caligari"
+            },
+            "start": 3183,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 3038,
+            "text": "The Passion of Joan of Arc",
+            "type": "exact_title",
+            "movie": {
+              "id": "Powerful historical drama with revolutionary close-up techniques",
+              "url": "/movie/Powerful historical drama with revolutionary close-up techniques",
+              "slug": "Powerful historical drama with revolutionary close-up techniques",
+              "year": 1928,
+              "title": "The Passion of Joan of Arc",
+              "tmdb_id": 780,
+              "poster_url": "https://image.tmdb.org/t/p/w500/plzI7N52uHhERUZLNSVbGGakFwR.jpg",
+              "searchTitle": "the passion of joan of arc",
+              "release_date": "1928-04-21",
+              "discovered_at": "2025-05-29T00:00:21.502Z",
+              "streaming_data": "HBO Max",
+              "original_claude_title": "The Passion of Joan of Arc"
+            },
+            "start": 3012,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 1573,
+            "text": "It's a Wonderful Life",
+            "type": "exact_title",
+            "movie": {
+              "id": "A man learns the value of his life.",
+              "url": "/movie/A man learns the value of his life.",
+              "slug": "A man learns the value of his life.",
+              "year": 1946,
+              "title": "It's a Wonderful Life",
+              "tmdb_id": 1585,
+              "poster_url": "/images/posters/it-s-a-wonderful-life.jpg",
+              "searchTitle": "its a wonderful life",
+              "release_date": null,
+              "discovered_at": "2025-05-28T04:47:15.621Z",
+              "streaming_data": null,
+              "original_claude_title": "It's a Wonderful Life"
+            },
+            "start": 1552,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 2327,
+            "text": "The Great Dictator",
+            "type": "exact_title",
+            "movie": {
+              "id": "Chaplin's bold satire of Hitler and fascism",
+              "url": "/movie/Chaplin's bold satire of Hitler and fascism",
+              "slug": "Chaplin's bold satire of Hitler and fascism",
+              "year": 1940,
+              "title": "The Great Dictator",
+              "tmdb_id": 914,
+              "poster_url": "https://image.tmdb.org/t/p/w500/nhMXB8GTdswYMCL9nepDZymJCOr.jpg",
+              "searchTitle": "the great dictator",
+              "release_date": "1940-10-15",
+              "discovered_at": "2025-05-31T06:02:09.412Z",
+              "streaming_data": "Criterion Channel",
+              "original_claude_title": "The Great Dictator"
+            },
+            "start": 2309,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 3283,
+            "text": "The Last Laugh",
+            "type": "exact_title",
+            "movie": {
+              "id": "German film about hotel doorman's fall from grace",
+              "url": "/movie/German film about hotel doorman's fall from grace",
+              "slug": "German film about hotel doorman's fall from grace",
+              "year": 1924,
+              "title": "The Last Laugh",
+              "tmdb_id": 5991,
+              "poster_url": "https://image.tmdb.org/t/p/w500/7Y6Dxr3oYt1w7ew70YNdLLDYEjk.jpg",
+              "searchTitle": "the last laugh",
+              "release_date": "1924-12-23",
+              "discovered_at": "2025-05-29T00:00:22.248Z",
+              "streaming_data": "Free on Archive.org",
+              "original_claude_title": "The Last Laugh"
+            },
+            "start": 3269,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 2122,
+            "text": "The Gold Rush",
+            "type": "exact_title",
+            "movie": {
+              "id": "Chaplin comedy set in Klondike Gold Rush",
+              "url": "/movie/Chaplin comedy set in Klondike Gold Rush",
+              "slug": "Chaplin comedy set in Klondike Gold Rush",
+              "year": 1925,
+              "title": "The Gold Rush",
+              "tmdb_id": 962,
+              "poster_url": "https://image.tmdb.org/t/p/w500/eQRFo1qwRREYwj47Yoe1PisgOle.jpg",
+              "searchTitle": "the gold rush",
+              "release_date": "1925-07-13",
+              "discovered_at": "2025-05-29T00:00:22.143Z",
+              "streaming_data": "Criterion Channel",
+              "original_claude_title": "The Gold Rush"
+            },
+            "start": 2109,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 2019,
+            "text": "Modern Times",
+            "type": "exact_title",
+            "movie": {
+              "id": "Chaplin's critique of industrialization",
+              "url": "/movie/Chaplin's critique of industrialization",
+              "slug": "Chaplin's critique of industrialization",
+              "year": 1936,
+              "title": "Modern Times",
+              "tmdb_id": 3082,
+              "poster_url": "https://image.tmdb.org/t/p/w500/7uoiKOEjxBBW0AgDGQWrlfGQ90w.jpg",
+              "searchTitle": "modern times",
+              "release_date": "1936-02-05",
+              "discovered_at": "2025-05-29T00:00:21.182Z",
+              "streaming_data": "HBO Max",
+              "original_claude_title": "Modern Times"
+            },
+            "start": 2007,
+            "context": "general",
+            "confidence": 0.85
+          }
+        ],
+        "people": [
+          {
+            "end": 1347,
+            "text": "'s \"",
+            "type": "quoted_name",
+            "start": 1343,
+            "person": {
+              "bio": "Robert Eggers is an American filmmaker known for his period horror films. His work is characterized by meticulous historical research and atmospheric storytelling.",
+              "name": "Robert Eggers",
+              "slug": "robert-eggers",
+              "avatar": "/people/robert-eggers.jpg",
+              "imdbId": "nm4738517",
+              "tmdbId": 1208719,
+              "category": "director",
+              "knownFor": [
+                "The Witch",
+                "The Lighthouse",
+                "The Northman"
+              ],
+              "birthYear": 1983,
+              "createdAt": "2025-01-01T00:00:00.000Z",
+              "updatedAt": "2025-01-01T00:00:00.000Z",
+              "nationality": "American",
+              "subCategories": [
+                "screenwriter"
+              ]
+            },
+            "context": "general",
+            "confidence": 0.85
+          }
+        ]
+      }
+    },
+    "raw_content": "PARAGRAPH: Charlie Chaplin's masterpiece \"City Lights\" (1931) represents the pinnacle of silent cinema, arriving defiantly after the talkie revolution had begun. As both director and star, Chaplin crafted an exquisite blend of comedy and pathos, telling the story of his iconic Tramp character falling in love with a blind flower girl. The film's ending is widely considered one of the most moving sequences in cinema history, with the flower girl finally \"seeing\" her benefactor for who he really is.\n\nMOVIES: City Lights|1931|Charlie Chaplin's masterpiece about a Tramp who falls in love with a blind flower girl, combining slapstick comedy with profound emotional depth|HBO Max\n\nPARAGRAPH: The film's production was notably challenging, taking nearly three years to complete as Chaplin insisted on perfection in every scene. His decision to keep the film silent, despite the industry's rapid transition to sound, proved prescient - the universal language of pantomime and music created an emotional resonance that transcends cultural and linguistic barriers. The boxing sequence and the nightclub scenes demonstrate Chaplin's genius for physical comedy, while his encounters with the millionaire showcase his talent for social commentary.\n\nPARAGRAPH: The influence of \"City Lights\" can be seen in numerous subsequent films, from Frank Capra's \"It's a Wonderful Life\" to modern romantic comedies. The film's exploration of class differences, sacrifice, and unconditional love established themes that would become central to humanist cinema.\n\nMOVIES: It's a Wonderful Life|1946|Frank Capra's beloved holiday classic about a man who learns the true value of his life with help from an angel|Amazon Prime\n\nEXPLORE_FURTHER: Silent Film Techniques and Their Modern Applications\nEXPLORE_FURTHER: Charlie Chaplin's Evolution as a Filmmaker\nEXPLORE_FURTHER: The Impact of Music in Silent Cinema\nEXPLORE_FURTHER: Social Commentary in Comedy Films\nEXPLORE_FURTHER: The Art of Physical Comedy in Cinema\n\nMORE_IDEAS: Modern Times|1936|Chaplin's last silent film, a commentary on industrialization|Criterion\nMORE_IDEAS: The Gold Rush|1925|Chaplin's Tramp seeks fortune in the Klondike Gold Rush|HBO Max\nMORE_IDEAS: The Kid|1921|Chaplin's first full-length film as director, mixing comedy and drama|Criterion\nMORE_IDEAS: The Great Dictator|1940|Chaplin's first true talking picture, satirizing Hitler|HBO Max\nMORE_IDEAS: Sunrise: A Song of Two Humans|1927|F.W. Murnau's poetic silent masterpiece|Criterion\nMORE_IDEAS: The Artist|2011|Modern silent film paying homage to Hollywood's golden age|Netflix\nMORE_IDEAS: Safety Last!|1923|Harold Lloyd's famous clock-hanging sequence|Criterion\nMORE_IDEAS: The General|1926|Buster Keaton's Civil War comedy epic|Amazon Prime\nMORE_IDEAS: Sherlock Jr.|1924|Keaton's imaginative comedy about a projectionist|HBO Max\nMORE_IDEAS: The Circus|1928|Chaplin's Tramp joins a struggling circus|Criterion\nMORE_IDEAS: Wings|1927|First Academy Award winner for Best Picture|Paramount+\nMORE_IDEAS: The Passion of Joan of Arc|1928|Carl Theodor Dreyer's emotional masterpiece|Criterion\nMORE_IDEAS: Metropolis|1927|Fritz Lang's influential sci-fi epic|Netflix\nMORE_IDEAS: The Cabinet of Dr. Caligari|1920|German Expressionist horror classic|Tubi\nMORE_IDEAS: The Last Laugh|1924|Emil Jannings as a hotel doorman facing social decline|Criterion",
+    "generated_at": "2025-06-09T17:47:44.400Z",
+    "input_tokens": 321,
+    "cost_estimate": 0.013773,
+    "output_tokens": 854,
+    "transformedAt": "2025-06-28T08:01:11.025Z",
+    "exploreFurther": [
+      "City Lights director's filmography and style",
+      "City Lights soundtrack and musical themes",
+      "City Lights's cultural impact and legacy"
+    ],
+    "transformation_completed": true
+  },
+  "generated_at": "2025-07-02T18:34:43.523Z",
+  "static_url": "/movie/Love shines brightest in darkness",
+  "has_trailer": true,
+  "has_analysis": true
+}

@@ -1,0 +1,319 @@
+{
+  "id": "9fb1a668-01bc-4812-96b7-12e7080b905a",
+  "title": "12 Angry Men",
+  "year": 1957,
+  "slug": "Justice hangs by a single thread.",
+  "tmdb_id": 389,
+  "poster_url": "https://image.tmdb.org/t/p/w500/ow3wq89wM8qd5X7hWKxiRfsFf9C.jpg",
+  "trailer_url": "TEN-2uTi2c0",
+  "analysis": {
+    "model": "claude-3-5-sonnet-20241022",
+    "source": "entity_analysis_transformation",
+    "sections": [
+      {
+        "type": "text",
+        "content": "Sidney Lumet's \"12 Angry Men\" (1957) stands as a masterclass in minimalist filmmaking and dramatic tension. Shot almost entirely within a single jury room, the film demonstrates how spatial constraints can amplify dramatic impact rather than limit it. The claustrophobic setting becomes increasingly oppressive as Henry Fonda's Juror 8 methodically challenges his fellow jurors' hasty assumptions about a murder case."
+      },
+      {
+        "type": "text",
+        "content": "MOVIES: 12 Angry Men|1957|A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence|Prime Video, Criterion"
+      },
+      {
+        "type": "text",
+        "content": "The film's influence can be seen in numerous subsequent courtroom dramas and single-location thrillers. Films like \"The Verdict\" and \"Runaway Jury\" owe much to Lumet's pioneering work in legal drama, though few achieve the same level of pure dramatic tension with such stripped-down elements."
+      },
+      {
+        "type": "text",
+        "content": "MOVIES: The Verdict|1982|An alcoholic lawyer takes on a medical malpractice case as his last shot at redemption|HBO Max\nMOVIES: Runaway Jury|2003|A juror and his accomplice attempt to manipulate a high-stakes jury trial|Prime Video"
+      },
+      {
+        "type": "text",
+        "content": "Cinematographer Boris Kaufman's work is particularly noteworthy, as he gradually tightens the framing and lowers the camera angles throughout the film, creating an increasing sense of pressure and confinement. The technical achievement is made more remarkable by the fact that the entire film was shot in just 21 days, with extensive rehearsals beforehand to perfect the intricate blocking and timing."
+      },
+      {
+        "type": "text",
+        "content": "EXPLORE_FURTHER: The Evolution of Single-Location Cinema\nEXPLORE_FURTHER: Sidney Lumet's Directing Techniques\nEXPLORE_FURTHER: The Impact of Camera Angles on Dramatic Tension\nEXPLORE_FURTHER: The History of Courtroom Drama in Film\nEXPLORE_FURTHER: Method Acting in 1950s Cinema"
+      },
+      {
+        "type": "text",
+        "content": "MORE_IDEAS: Witness for the Prosecution|1957|A veteran lawyer defends a man accused of murder in this Agatha Christie adaptation|Prime Video\nMORE_IDEAS: Anatomy of a Murder|1959|A small-town lawyer defends an army lieutenant accused of murder|Prime Video\nMORE_IDEAS: To Kill a Mockingbird|1962|A lawyer defends a black man accused of rape in the Depression-era South|Prime Video\nMORE_IDEAS: The Chamber|1996|A young lawyer tries to save his grandfather from death row|Netflix\nMORE_IDEAS: A Few Good Men|1992|Military lawyers defend Marines accused of murder|Netflix\nMORE_IDEAS: Philadelphia|1993|A lawyer with AIDS sues his firm for discrimination|Prime Video\nMORE_IDEAS: Primal Fear|1996|A defense attorney takes on the case of an altar boy accused of murder|Prime Video\nMORE_IDEAS: Judgment at Nuremberg|1961|Judges try Nazi war criminals in the aftermath of World War II|TCM\nMORE_IDEAS: And Justice for All|1979|A lawyer fights corruption in the justice system|Prime Video\nMORE_IDEAS: The Lincoln Lawyer|2011|A defense attorney works from his Lincoln car|Netflix\nMORE_IDEAS: My Cousin Vinny|1992|An inexperienced lawyer defends his cousin in a murder trial|Prime Video\nMORE_IDEAS: A Civil Action|1998|A lawyer takes on a water contamination case|Disney+\nMORE_IDEAS: Erin Brockovich|2000|A legal assistant fights against corporate environmental contamination|Netflix\nMORE_IDEAS: The Caine Mutiny|1954|Naval officers stand trial for mutiny|Prime Video\nMORE_IDEAS: Inherit the Wind|1960|Lawyers clash over teaching evolution in schools|TCM"
+      }
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": []
+    },
+    "entity_data": {
+      "entities": {
+        "movies": [
+          {
+            "end": 732,
+            "text": "\"The Verdict\"",
+            "type": "quoted_title",
+            "movie": {
+              "id": "Alcoholic lawyer seeks redemption in medical case",
+              "url": "/movie/Alcoholic lawyer seeks redemption in medical case",
+              "slug": "Alcoholic lawyer seeks redemption in medical case",
+              "year": 1982,
+              "title": "The Verdict",
+              "tmdb_id": 24226,
+              "poster_url": "https://image.tmdb.org/t/p/w500/bAe0telFqAzdV8a7aUiIBMEy9d8.jpg",
+              "searchTitle": "the verdict",
+              "release_date": "1982-12-08",
+              "discovered_at": "2025-05-31T03:54:12.836Z",
+              "streaming_data": "HBO Max",
+              "original_claude_title": "The Verdict"
+            },
+            "start": 719,
+            "context": "general",
+            "confidence": 0.9
+          },
+          {
+            "end": 2629,
+            "text": "Judgment at Nuremberg",
+            "type": "exact_title",
+            "movie": {
+              "id": "Post-WWII war crimes trial drama",
+              "url": "/movie/Post-WWII war crimes trial drama",
+              "slug": "Post-WWII war crimes trial drama",
+              "year": 1961,
+              "title": "Judgment at Nuremberg",
+              "tmdb_id": 821,
+              "poster_url": "https://image.tmdb.org/t/p/w500/b6vYatvui1EXeFYfpDX4rcbueuP.jpg",
+              "searchTitle": "judgment at nuremberg",
+              "release_date": "1961-12-18",
+              "discovered_at": "2025-05-31T03:54:13.072Z",
+              "streaming_data": "TCM",
+              "original_claude_title": "Judgment at Nuremberg"
+            },
+            "start": 2608,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 2112,
+            "text": "To Kill a Mockingbird",
+            "type": "exact_title",
+            "movie": {
+              "id": "A lawyer defends an innocent man.",
+              "url": "/movie/A lawyer defends an innocent man.",
+              "slug": "A lawyer defends an innocent man.",
+              "year": 1962,
+              "title": "To Kill a Mockingbird",
+              "tmdb_id": 595,
+              "poster_url": "/images/posters/to-kill-a-mockingbird.jpg",
+              "searchTitle": "to kill a mockingbird",
+              "release_date": "1962-12-20",
+              "discovered_at": "2025-05-28T06:46:02.849Z",
+              "streaming_data": "Prime Video",
+              "original_claude_title": "To Kill a Mockingbird"
+            },
+            "start": 2091,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 3221,
+            "text": "The Caine Mutiny",
+            "type": "exact_title",
+            "movie": {
+              "id": "Naval drama about a captain's mental breakdown",
+              "url": "/movie/Naval drama about a captain's mental breakdown",
+              "slug": "Naval drama about a captain's mental breakdown",
+              "year": 1954,
+              "title": "The Caine Mutiny",
+              "tmdb_id": 10178,
+              "poster_url": "https://image.tmdb.org/t/p/w500/vuO4Z3wOWVlhq35MS9asZeT9rVp.jpg",
+              "searchTitle": "the caine mutiny",
+              "release_date": "1954-06-24",
+              "discovered_at": "2025-05-29T00:14:36.321Z",
+              "streaming_data": "Netflix",
+              "original_claude_title": "The Caine Mutiny"
+            },
+            "start": 3205,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 3108,
+            "text": "Erin Brockovich",
+            "type": "exact_title",
+            "movie": {
+              "id": "Legal clerk fights corporate pollution",
+              "url": "/movie/Legal clerk fights corporate pollution",
+              "slug": "Legal clerk fights corporate pollution",
+              "year": 2000,
+              "title": "Erin Brockovich",
+              "tmdb_id": 462,
+              "poster_url": "https://image.tmdb.org/t/p/w500/jEMvWBWVjndZT0vJnLrRWi9ajea.jpg",
+              "searchTitle": "erin brockovich",
+              "release_date": "2000-03-17",
+              "discovered_at": "2025-05-29T23:27:10.161Z",
+              "streaming_data": "Amazon Prime",
+              "original_claude_title": "Erin Brockovich"
+            },
+            "start": 3093,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 2326,
+            "text": "A Few Good Men",
+            "type": "exact_title",
+            "movie": {
+              "id": "Military court drama about chain of command",
+              "url": "/movie/Military court drama about chain of command",
+              "slug": "Military court drama about chain of command",
+              "year": 1992,
+              "title": "A Few Good Men",
+              "tmdb_id": 881,
+              "poster_url": "https://image.tmdb.org/t/p/w500/rLOk4z9zL1tTukIYV56P94aZXKk.jpg",
+              "searchTitle": "a few good men",
+              "release_date": "1992-12-11",
+              "discovered_at": "2025-05-31T03:54:13.529Z",
+              "streaming_data": "Prime Video",
+              "original_claude_title": "A Few Good Men"
+            },
+            "start": 2312,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 39,
+            "text": "12 Angry Men",
+            "type": "exact_title",
+            "movie": {
+              "id": "Jury room drama",
+              "url": "/movie/Jury room drama",
+              "slug": "Jury room drama",
+              "year": 1957,
+              "title": "12 Angry Men",
+              "tmdb_id": 389,
+              "poster_url": "https://image.tmdb.org/t/p/w500/ow3wq89wM8qd5X7hWKxiRfsFf9C.jpg",
+              "searchTitle": "12 angry men",
+              "release_date": "1957-04-10",
+              "discovered_at": "2025-05-28T07:04:48.985Z",
+              "streaming_data": "Amazon Prime",
+              "original_claude_title": "12 Angry Men"
+            },
+            "start": 27,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 450,
+            "text": "12 Angry Men",
+            "type": "exact_title",
+            "movie": {
+              "id": "Jury room drama",
+              "url": "/movie/Jury room drama",
+              "slug": "Jury room drama",
+              "year": 1957,
+              "title": "12 Angry Men",
+              "tmdb_id": 389,
+              "poster_url": "https://image.tmdb.org/t/p/w500/ow3wq89wM8qd5X7hWKxiRfsFf9C.jpg",
+              "searchTitle": "12 angry men",
+              "release_date": "1957-04-10",
+              "discovered_at": "2025-05-28T07:04:48.985Z",
+              "streaming_data": "Amazon Prime",
+              "original_claude_title": "12 Angry Men"
+            },
+            "start": 438,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 2414,
+            "text": "Philadelphia",
+            "type": "exact_title",
+            "movie": {
+              "id": "Groundbreaking AIDS discrimination legal drama",
+              "url": "/movie/Groundbreaking AIDS discrimination legal drama",
+              "slug": "Groundbreaking AIDS discrimination legal drama",
+              "year": 1993,
+              "title": "Philadelphia",
+              "tmdb_id": 9800,
+              "poster_url": "https://image.tmdb.org/t/p/w500/tFe5Yoo5zT495okA49bq1vPPkiV.jpg",
+              "searchTitle": "philadelphia",
+              "release_date": "1993-12-22",
+              "discovered_at": "2025-05-31T03:54:13.646Z",
+              "streaming_data": "Netflix",
+              "original_claude_title": "Philadelphia"
+            },
+            "start": 2402,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 2507,
+            "text": "Primal Fear",
+            "type": "exact_title",
+            "movie": {
+              "id": "A high-profile defense attorney defends an altar boy accused of murdering an esteemed Catholic bishop.",
+              "url": "/movie/A high-profile defense attorney defends an altar boy accused of murdering an esteemed Catholic bishop.",
+              "slug": "A high-profile defense attorney defends an altar boy accused of murdering an esteemed Catholic bishop.",
+              "year": 1996,
+              "title": "Primal Fear",
+              "tmdb_id": 1592,
+              "poster_url": "https://image.tmdb.org/t/p/w500/qJf2TzE8nRTFbFMPJNW6c8mI0KU.jpg",
+              "searchTitle": "primal fear",
+              "release_date": "1996-03-06",
+              "discovered_at": "2025-05-26T19:24:53.506Z",
+              "streaming_data": null,
+              "original_claude_title": "Primal Fear"
+            },
+            "start": 2496,
+            "context": "general",
+            "confidence": 0.85
+          }
+        ],
+        "people": [
+          {
+            "end": 27,
+            "text": "'s \"",
+            "type": "quoted_name",
+            "start": 23,
+            "person": {
+              "bio": "Robert Eggers is an American filmmaker known for his period horror films. His work is characterized by meticulous historical research and atmospheric storytelling.",
+              "name": "Robert Eggers",
+              "slug": "robert-eggers",
+              "avatar": "/people/robert-eggers.jpg",
+              "imdbId": "nm4738517",
+              "tmdbId": 1208719,
+              "category": "director",
+              "knownFor": [
+                "The Witch",
+                "The Lighthouse",
+                "The Northman"
+              ],
+              "birthYear": 1983,
+              "createdAt": "2025-01-01T00:00:00.000Z",
+              "updatedAt": "2025-01-01T00:00:00.000Z",
+              "nationality": "American",
+              "subCategories": [
+                "screenwriter"
+              ]
+            },
+            "context": "general",
+            "confidence": 0.85
+          }
+        ]
+      }
+    },
+    "raw_content": "PARAGRAPH: Sidney Lumet's \"12 Angry Men\" (1957) stands as a masterclass in minimalist filmmaking and dramatic tension. Shot almost entirely within a single jury room, the film demonstrates how spatial constraints can amplify dramatic impact rather than limit it. The claustrophobic setting becomes increasingly oppressive as Henry Fonda's Juror 8 methodically challenges his fellow jurors' hasty assumptions about a murder case.\n\nMOVIES: 12 Angry Men|1957|A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence|Prime Video, Criterion\n\nPARAGRAPH: The film's influence can be seen in numerous subsequent courtroom dramas and single-location thrillers. Films like \"The Verdict\" and \"Runaway Jury\" owe much to Lumet's pioneering work in legal drama, though few achieve the same level of pure dramatic tension with such stripped-down elements.\n\nMOVIES: The Verdict|1982|An alcoholic lawyer takes on a medical malpractice case as his last shot at redemption|HBO Max\nMOVIES: Runaway Jury|2003|A juror and his accomplice attempt to manipulate a high-stakes jury trial|Prime Video\n\nPARAGRAPH: Cinematographer Boris Kaufman's work is particularly noteworthy, as he gradually tightens the framing and lowers the camera angles throughout the film, creating an increasing sense of pressure and confinement. The technical achievement is made more remarkable by the fact that the entire film was shot in just 21 days, with extensive rehearsals beforehand to perfect the intricate blocking and timing.\n\nEXPLORE_FURTHER: The Evolution of Single-Location Cinema\nEXPLORE_FURTHER: Sidney Lumet's Directing Techniques\nEXPLORE_FURTHER: The Impact of Camera Angles on Dramatic Tension\nEXPLORE_FURTHER: The History of Courtroom Drama in Film\nEXPLORE_FURTHER: Method Acting in 1950s Cinema\n\nMORE_IDEAS: Witness for the Prosecution|1957|A veteran lawyer defends a man accused of murder in this Agatha Christie adaptation|Prime Video\nMORE_IDEAS: Anatomy of a Murder|1959|A small-town lawyer defends an army lieutenant accused of murder|Prime Video\nMORE_IDEAS: To Kill a Mockingbird|1962|A lawyer defends a black man accused of rape in the Depression-era South|Prime Video\nMORE_IDEAS: The Chamber|1996|A young lawyer tries to save his grandfather from death row|Netflix\nMORE_IDEAS: A Few Good Men|1992|Military lawyers defend Marines accused of murder|Netflix\nMORE_IDEAS: Philadelphia|1993|A lawyer with AIDS sues his firm for discrimination|Prime Video\nMORE_IDEAS: Primal Fear|1996|A defense attorney takes on the case of an altar boy accused of murder|Prime Video\nMORE_IDEAS: Judgment at Nuremberg|1961|Judges try Nazi war criminals in the aftermath of World War II|TCM\nMORE_IDEAS: And Justice for All|1979|A lawyer fights corruption in the justice system|Prime Video\nMORE_IDEAS: The Lincoln Lawyer|2011|A defense attorney works from his Lincoln car|Netflix\nMORE_IDEAS: My Cousin Vinny|1992|An inexperienced lawyer defends his cousin in a murder trial|Prime Video\nMORE_IDEAS: A Civil Action|1998|A lawyer takes on a water contamination case|Disney+\nMORE_IDEAS: Erin Brockovich|2000|A legal assistant fights against corporate environmental contamination|Netflix\nMORE_IDEAS: The Caine Mutiny|1954|Naval officers stand trial for mutiny|Prime Video\nMORE_IDEAS: Inherit the Wind|1960|Lawyers clash over teaching evolution in schools|TCM",
+    "generated_at": "2025-06-10T01:02:27.939Z",
+    "input_tokens": 324,
+    "cost_estimate": 0.013842,
+    "output_tokens": 858,
+    "transformedAt": "2025-06-28T08:01:12.230Z",
+    "exploreFurther": [
+      "12 Angry Men's cultural impact and legacy",
+      "Key performances and acting in 12 Angry Men"
+    ],
+    "transformation_completed": true
+  },
+  "generated_at": "2025-07-02T18:34:43.525Z",
+  "static_url": "/movie/Justice hangs by a single thread.",
+  "has_trailer": true,
+  "has_analysis": true
+}

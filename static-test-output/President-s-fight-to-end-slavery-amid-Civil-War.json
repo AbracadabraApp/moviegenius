@@ -1,0 +1,310 @@
+{
+  "id": "e186d5e9-f1c0-4161-bbfb-d6197d679b7e",
+  "title": "Lincoln",
+  "year": 2012,
+  "slug": "President's fight to end slavery amid Civil War",
+  "tmdb_id": 72976,
+  "poster_url": "https://image.tmdb.org/t/p/w500/5KeUqW6DpVtf8G9VMuI2l0XIPCo.jpg",
+  "trailer_url": null,
+  "analysis": {
+    "model": "claude-3-5-sonnet-20241022",
+    "source": "entity_analysis_transformation",
+    "sections": [
+      {
+        "type": "text",
+        "content": "Steven Spielberg's \"Lincoln\" represents a masterful convergence of historical drama and intimate character study. Daniel Day-Lewis's transformative performance as Abraham Lincoln earned him his third Academy Award for Best Actor, bringing remarkable subtlety and humanity to the 16th president during the crucial period of passing the 13th Amendment. The film's attention to period detail and Tony Kushner's eloquent screenplay create a compelling portrait of political maneuvering during one of America's most critical moments."
+      },
+      {
+        "type": "text",
+        "content": "MOVIES: Lincoln|2012|Daniel Day-Lewis stars in Spielberg's historical drama about President Lincoln's struggle to pass the 13th Amendment|Netflix, Amazon Prime"
+      },
+      {
+        "type": "text",
+        "content": "The film stands apart from traditional biographical epics through its focused narrative approach, examining just four crucial months of Lincoln's presidency rather than attempting to cover his entire life. This strategic choice allows for deeper exploration of the political process and moral complexities surrounding the abolition of slavery. Janusz Kaminski's cinematography employs natural lighting and a muted color palette that evokes period photography while creating an immediate, intimate atmosphere."
+      },
+      {
+        "type": "text",
+        "content": "The supporting cast delivers exceptional performances that illuminate the political landscape of 1865, with Tommy Lee Jones as the fiery abolitionist Thaddeus Stevens and Sally Field as the emotionally complex Mary Todd Lincoln being particularly noteworthy. The film shares DNA with other political procedurals like \"All the President's Men\" and \"The Last Emperor,\" though its approach to historical drama feels uniquely immediate and vital."
+      },
+      {
+        "type": "text",
+        "content": "MOVIES: All the President's Men|1976|Political thriller about the Washington Post reporters who uncovered the Watergate scandal|HBO Max\nMOVIES: The Last Emperor|1987|Bernardo Bertolucci's sweeping biography of China's last imperial ruler|Criterion Channel"
+      },
+      {
+        "type": "text",
+        "content": "EXPLORE_FURTHER: Political Dealmaking in Historical Cinema\nEXPLORE_FURTHER: Method Acting in Biographical Performances\nEXPLORE_FURTHER: Spielberg's Evolution as a Historical Filmmaker\nEXPLORE_FURTHER: Visual Representation of 19th Century America in Film"
+      },
+      {
+        "type": "text",
+        "content": "MORE_IDEAS: Amistad|1997|Spielberg's historical drama about a slave ship mutiny|Amazon Prime\nMORE_IDEAS: Glory|1989|Civil War drama about an all-black volunteer company|Netflix\nMORE_IDEAS: 12 Years a Slave|2013|True story of a free man sold into slavery|Hulu\nMORE_IDEAS: The Conspirator|2010|Drama about the trial of Mary Surratt after Lincoln's assassination|Amazon Prime\nMORE_IDEAS: Young Mr. Lincoln|1939|John Ford's early portrait of Lincoln as a lawyer|Criterion Channel\nMORE_IDEAS: Free State of Jones|2016|Civil War drama about a Southern Unionist|Netflix\nMORE_IDEAS: Gettysburg|1993|Epic Civil War battle recreation|HBO Max\nMORE_IDEAS: Amazing Grace|2006|Story of William Wilberforce's fight against slavery in Britain|Amazon Prime\nMORE_IDEAS: Jefferson in Paris|1995|Historical drama about Thomas Jefferson's time in France|Paramount+\nMORE_IDEAS: The Birth of a Nation|2016|Story of Nat Turner's 1831 slave rebellion|Hulu\nMORE_IDEAS: Gangs of New York|2002|Epic drama set in Civil War-era New York|Netflix\nMORE_IDEAS: Gods and Generals|2003|Civil War prequel to Gettysburg|HBO Max\nMORE_IDEAS: The Good Lord Bird|2020|Series about abolitionist John Brown|Showtime\nMORE_IDEAS: Emperor|2012|Post-WWII drama about American occupation of Japan|Amazon Prime\nMORE_IDEAS: Hyde Park on Hudson|2012|FDR biographical drama with Bill Murray|Netflix"
+      }
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": []
+    },
+    "entity_data": {
+      "entities": {
+        "movies": [
+          {
+            "end": 1570,
+            "text": "\"All the President'",
+            "type": "quoted_title",
+            "movie": {
+              "id": "Watergate investigation thriller with enduring relevance",
+              "url": "/movie/Watergate investigation thriller with enduring relevance",
+              "slug": "Watergate investigation thriller with enduring relevance",
+              "year": 1976,
+              "title": "All the President's Men",
+              "tmdb_id": 891,
+              "poster_url": "https://image.tmdb.org/t/p/w500/qwdcIdiTAk8iANsJEK2JmrYQx5o.jpg",
+              "searchTitle": "all the presidents men",
+              "release_date": "1976-04-09",
+              "discovered_at": "2025-05-28T07:18:15.394Z",
+              "streaming_data": "Criterion Channel",
+              "original_claude_title": "All the President's Men"
+            },
+            "start": 1551,
+            "context": "general",
+            "confidence": 0.9
+          },
+          {
+            "end": 1582,
+            "text": "\" and \"",
+            "type": "quoted_title",
+            "movie": {
+              "id": "Love transcending death",
+              "url": "/movie/Love transcending death",
+              "slug": "Love transcending death",
+              "year": 1946,
+              "title": "A Matter of Life and Death",
+              "tmdb_id": 28162,
+              "poster_url": "https://image.tmdb.org/t/p/w500/H74LWKnhOeIFSk9gNjBcPjIov3.jpg",
+              "searchTitle": "a matter of life and death",
+              "release_date": "1946-12-15",
+              "discovered_at": "2025-05-29T23:03:15.308Z",
+              "streaming_data": "Criterion Channel",
+              "original_claude_title": "A Matter of Life and Death"
+            },
+            "start": 1575,
+            "context": "general",
+            "confidence": 0.9
+          },
+          {
+            "end": 1709,
+            "text": "All the President's Men",
+            "type": "exact_title",
+            "movie": {
+              "id": "Watergate investigation thriller with enduring relevance",
+              "url": "/movie/Watergate investigation thriller with enduring relevance",
+              "slug": "Watergate investigation thriller with enduring relevance",
+              "year": 1976,
+              "title": "All the President's Men",
+              "tmdb_id": 891,
+              "poster_url": "https://image.tmdb.org/t/p/w500/qwdcIdiTAk8iANsJEK2JmrYQx5o.jpg",
+              "searchTitle": "all the presidents men",
+              "release_date": "1976-04-09",
+              "discovered_at": "2025-05-28T07:18:15.394Z",
+              "streaming_data": "Criterion Channel",
+              "original_claude_title": "All the President's Men"
+            },
+            "start": 1686,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 2396,
+            "text": "12 Years a Slave",
+            "type": "exact_title",
+            "movie": {
+              "id": "Free man kidnapped and sold into slavery fights for survival",
+              "url": "/movie/Free man kidnapped and sold into slavery fights for survival",
+              "slug": "Free man kidnapped and sold into slavery fights for survival",
+              "year": 2013,
+              "title": "12 Years a Slave",
+              "tmdb_id": 76203,
+              "poster_url": "https://image.tmdb.org/t/p/w500/xdANQijuNrJaw1HA61rDccME4Tm.jpg",
+              "searchTitle": "12 years a slave",
+              "release_date": "2013-10-18",
+              "discovered_at": "2025-05-29T21:12:02.306Z",
+              "streaming_data": "Hulu",
+              "original_claude_title": "12 Years a Slave"
+            },
+            "start": 2380,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 1598,
+            "text": "The Last Emperor",
+            "type": "exact_title",
+            "movie": {
+              "id": "Japanese occupation of China",
+              "url": "/movie/Japanese occupation of China",
+              "slug": "Japanese occupation of China",
+              "year": 1987,
+              "title": "The Last Emperor",
+              "tmdb_id": 746,
+              "poster_url": "https://image.tmdb.org/t/p/w500/7TILJhdeJAaEyDiwvJZMo9SQBoe.jpg",
+              "searchTitle": "the last emperor",
+              "release_date": "1987-10-04",
+              "discovered_at": "2025-05-30T18:49:10.004Z",
+              "streaming_data": "HBO Max",
+              "original_claude_title": "The Last Emperor"
+            },
+            "start": 1582,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 1838,
+            "text": "The Last Emperor",
+            "type": "exact_title",
+            "movie": {
+              "id": "Japanese occupation of China",
+              "url": "/movie/Japanese occupation of China",
+              "slug": "Japanese occupation of China",
+              "year": 1987,
+              "title": "The Last Emperor",
+              "tmdb_id": 746,
+              "poster_url": "https://image.tmdb.org/t/p/w500/7TILJhdeJAaEyDiwvJZMo9SQBoe.jpg",
+              "searchTitle": "the last emperor",
+              "release_date": "1987-10-04",
+              "discovered_at": "2025-05-30T18:49:10.004Z",
+              "streaming_data": "HBO Max",
+              "original_claude_title": "The Last Emperor"
+            },
+            "start": 1822,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 170,
+            "text": "performance",
+            "type": "exact_title",
+            "movie": {
+              "id": "performance-1970",
+              "url": "/movie/Psychedelic crime drama about identity and violence",
+              "slug": "Psychedelic crime drama about identity and violence",
+              "year": 1970,
+              "title": "Performance",
+              "poster": "https://image.tmdb.org/t/p/w500/yKuqk84TtTpj0nYZS5m680JmprG.jpg",
+              "streaming": "Prime",
+              "searchTitle": "performance",
+              "discoveredAt": "2025-06-01T22:09:11.858Z"
+            },
+            "start": 159,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 2776,
+            "text": "Gettysburg",
+            "type": "exact_title",
+            "movie": {
+              "id": "gettysburg-1993",
+              "url": "/movie/Civil War tactical battle epic",
+              "slug": "Civil War tactical battle epic",
+              "year": 1993,
+              "title": "Gettysburg",
+              "poster": "https://image.tmdb.org/t/p/w500/566AVv5fwoQTdFy37JXc8QcyDSy.jpg",
+              "streaming": "HBO Max",
+              "searchTitle": "gettysburg",
+              "discoveredAt": "2025-06-01T22:19:55.679Z"
+            },
+            "start": 2766,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 3272,
+            "text": "Gettysburg",
+            "type": "exact_title",
+            "movie": {
+              "id": "gettysburg-1993",
+              "url": "/movie/Civil War tactical battle epic",
+              "slug": "Civil War tactical battle epic",
+              "year": 1993,
+              "title": "Gettysburg",
+              "poster": "https://image.tmdb.org/t/p/w500/566AVv5fwoQTdFy37JXc8QcyDSy.jpg",
+              "streaming": "HBO Max",
+              "searchTitle": "gettysburg",
+              "discoveredAt": "2025-06-01T22:19:55.679Z"
+            },
+            "start": 3262,
+            "context": "general",
+            "confidence": 0.85
+          },
+          {
+            "end": 2092,
+            "text": "Evolution",
+            "type": "exact_title",
+            "movie": {
+              "id": "Strange experiments in a seaside hospital",
+              "url": "/movie/Strange experiments in a seaside hospital",
+              "slug": "Strange experiments in a seaside hospital",
+              "year": 2016,
+              "title": "Evolution",
+              "tmdb_id": 330770,
+              "poster_url": "https://image.tmdb.org/t/p/w500/sLluKqBaGl0NLOFTtoXLXN9u9G6.jpg",
+              "searchTitle": "evolution",
+              "release_date": "2016-03-16",
+              "discovered_at": "2025-05-31T05:39:18.794Z",
+              "streaming_data": "Shudder",
+              "original_claude_title": "Evolution"
+            },
+            "start": 2083,
+            "context": "general",
+            "confidence": 0.85
+          }
+        ],
+        "people": [
+          {
+            "end": 31,
+            "text": "'s \"",
+            "type": "quoted_name",
+            "start": 27,
+            "person": {
+              "bio": "Robert Eggers is an American filmmaker known for his period horror films. His work is characterized by meticulous historical research and atmospheric storytelling.",
+              "name": "Robert Eggers",
+              "slug": "robert-eggers",
+              "avatar": "/people/robert-eggers.jpg",
+              "imdbId": "nm4738517",
+              "tmdbId": 1208719,
+              "category": "director",
+              "knownFor": [
+                "The Witch",
+                "The Lighthouse",
+                "The Northman"
+              ],
+              "birthYear": 1983,
+              "createdAt": "2025-01-01T00:00:00.000Z",
+              "updatedAt": "2025-01-01T00:00:00.000Z",
+              "nationality": "American",
+              "subCategories": [
+                "screenwriter"
+              ]
+            },
+            "context": "general",
+            "confidence": 0.85
+          }
+        ]
+      }
+    },
+    "raw_content": "PARAGRAPH: Steven Spielberg's \"Lincoln\" represents a masterful convergence of historical drama and intimate character study. Daniel Day-Lewis's transformative performance as Abraham Lincoln earned him his third Academy Award for Best Actor, bringing remarkable subtlety and humanity to the 16th president during the crucial period of passing the 13th Amendment. The film's attention to period detail and Tony Kushner's eloquent screenplay create a compelling portrait of political maneuvering during one of America's most critical moments.\n\nMOVIES: Lincoln|2012|Daniel Day-Lewis stars in Spielberg's historical drama about President Lincoln's struggle to pass the 13th Amendment|Netflix, Amazon Prime\n\nPARAGRAPH: The film stands apart from traditional biographical epics through its focused narrative approach, examining just four crucial months of Lincoln's presidency rather than attempting to cover his entire life. This strategic choice allows for deeper exploration of the political process and moral complexities surrounding the abolition of slavery. Janusz Kaminski's cinematography employs natural lighting and a muted color palette that evokes period photography while creating an immediate, intimate atmosphere.\n\nPARAGRAPH: The supporting cast delivers exceptional performances that illuminate the political landscape of 1865, with Tommy Lee Jones as the fiery abolitionist Thaddeus Stevens and Sally Field as the emotionally complex Mary Todd Lincoln being particularly noteworthy. The film shares DNA with other political procedurals like \"All the President's Men\" and \"The Last Emperor,\" though its approach to historical drama feels uniquely immediate and vital.\n\nMOVIES: All the President's Men|1976|Political thriller about the Washington Post reporters who uncovered the Watergate scandal|HBO Max\nMOVIES: The Last Emperor|1987|Bernardo Bertolucci's sweeping biography of China's last imperial ruler|Criterion Channel\n\nEXPLORE_FURTHER: Political Dealmaking in Historical Cinema\nEXPLORE_FURTHER: Method Acting in Biographical Performances\nEXPLORE_FURTHER: Spielberg's Evolution as a Historical Filmmaker\nEXPLORE_FURTHER: Visual Representation of 19th Century America in Film\n\nMORE_IDEAS: Amistad|1997|Spielberg's historical drama about a slave ship mutiny|Amazon Prime\nMORE_IDEAS: Glory|1989|Civil War drama about an all-black volunteer company|Netflix\nMORE_IDEAS: 12 Years a Slave|2013|True story of a free man sold into slavery|Hulu\nMORE_IDEAS: The Conspirator|2010|Drama about the trial of Mary Surratt after Lincoln's assassination|Amazon Prime\nMORE_IDEAS: Young Mr. Lincoln|1939|John Ford's early portrait of Lincoln as a lawyer|Criterion Channel\nMORE_IDEAS: Free State of Jones|2016|Civil War drama about a Southern Unionist|Netflix\nMORE_IDEAS: Gettysburg|1993|Epic Civil War battle recreation|HBO Max\nMORE_IDEAS: Amazing Grace|2006|Story of William Wilberforce's fight against slavery in Britain|Amazon Prime\nMORE_IDEAS: Jefferson in Paris|1995|Historical drama about Thomas Jefferson's time in France|Paramount+\nMORE_IDEAS: The Birth of a Nation|2016|Story of Nat Turner's 1831 slave rebellion|Hulu\nMORE_IDEAS: Gangs of New York|2002|Epic drama set in Civil War-era New York|Netflix\nMORE_IDEAS: Gods and Generals|2003|Civil War prequel to Gettysburg|HBO Max\nMORE_IDEAS: The Good Lord Bird|2020|Series about abolitionist John Brown|Showtime\nMORE_IDEAS: Emperor|2012|Post-WWII drama about American occupation of Japan|Amazon Prime\nMORE_IDEAS: Hyde Park on Hudson|2012|FDR biographical drama with Bill Murray|Netflix",
+    "generated_at": "2025-06-09T18:03:15.644Z",
+    "input_tokens": 319,
+    "cost_estimate": 0.013557,
+    "output_tokens": 840,
+    "transformedAt": "2025-06-28T08:01:11.402Z",
+    "exploreFurther": [
+      "Visual techniques and cinematography in Lincoln",
+      "Key performances and acting in Lincoln"
+    ],
+    "transformation_completed": true
+  },
+  "generated_at": "2025-07-02T18:34:43.524Z",
+  "static_url": "/movie/President's fight to end slavery amid Civil War",
+  "has_trailer": false,
+  "has_analysis": true
+}
