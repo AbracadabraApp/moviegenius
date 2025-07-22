@@ -10,14 +10,49 @@
 import { getCache, withCache } from '../../lib/cache.js';
 
 async function movieAnalysisHandler(req, res) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Only POST method allowed' });
-  }
+  let title, year;
 
-  const { title, year } = req.body;
+  // Handle both GET (with tmdbId) and POST (with title/year) requests
+  if (req.method === 'GET') {
+    const { tmdbId } = req.query;
+    
+    if (!tmdbId) {
+      return res.status(400).json({ error: 'tmdbId parameter is required for GET requests' });
+    }
 
-  if (!title || !year) {
-    return res.status(400).json({ error: 'Movie title and year are required' });
+    // Look up movie by tmdbId to get title and year
+    try {
+      const { createClient } = await import('@supabase/supabase-js');
+      const supabase = createClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL,
+        process.env.SUPABASE_SERVICE_ROLE_KEY
+      );
+
+      const { data: movie, error: movieError } = await supabase
+        .from('movies')
+        .select('title, year')
+        .eq('tmdb_id', parseInt(tmdbId))
+        .single();
+
+      if (movieError || !movie) {
+        return res.status(404).json({ error: 'Movie not found' });
+      }
+
+      title = movie.title;
+      year = movie.year;
+    } catch (error) {
+      console.error('Error looking up movie by tmdbId:', error);
+      return res.status(500).json({ error: 'Failed to lookup movie' });
+    }
+    
+  } else if (req.method === 'POST') {
+    ({ title, year } = req.body);
+
+    if (!title || !year) {
+      return res.status(400).json({ error: 'Movie title and year are required' });
+    }
+  } else {
+    return res.status(405).json({ error: 'Only GET and POST methods allowed' });
   }
 
   try {
