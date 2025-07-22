@@ -8,6 +8,7 @@ import LinkedText from './LinkedText';
 import ExplorePromptCard from './ExplorePromptCard';
 import ExploreFurtherSection from './ExploreFurtherSection';
 import FeaturedFilmsSection from './FeaturedFilmsSection';
+import EnhancedHeroPlaceholder from './EnhancedHeroPlaceholder';
 import { getCachedOtherEpisodes, getCachedOtherSeries } from '../lib/genius-config-cache';
 import { createOptimizedScrollHandler } from '../lib/scroll-throttle';
 import { themeLinks } from '../lib/routes';
@@ -153,7 +154,33 @@ export default function GeniusEpisodeTemplate({
       {/* Hero Section */}
       <header style={styles.heroSection}>
         <div style={styles.heroImageContainer}>
-          <img src={heroImage} alt={`${episode.title} illustration`} style={styles.heroImage} />
+          {heroImage ? (
+            <img 
+              src={heroImage} 
+              alt={`${episode.title} illustration`} 
+              style={styles.heroImage}
+              onError={(e) => {
+                e.target.style.display = 'none';
+                e.target.nextSibling.style.display = 'flex';
+              }}
+            />
+          ) : null}
+          <div 
+            style={{
+              ...styles.heroPlaceholder,
+              display: heroImage ? 'none' : 'flex'
+            }}
+          >
+            <EnhancedHeroPlaceholder 
+              episode={episode}
+              series={series}
+              theme={theme}
+              onImageUpload={(file) => {
+                console.log('Image uploaded:', file.name);
+                // Future: Handle image upload processing
+              }}
+            />
+          </div>
           <div style={styles.heroOverlay} />
         </div>
       </header>
@@ -201,6 +228,7 @@ export default function GeniusEpisodeTemplate({
         {opener && (
           <section style={styles.section}>
             <div style={styles.openerSection}>
+              <div style={styles.openerLabel}>Summary</div>
               <p style={styles.opener}>{opener}</p>
             </div>
           </section>
@@ -420,6 +448,7 @@ const styles = {
   textSection: {
     padding: '0 12px',
     marginTop: '-5px', // Move first text line up 5px
+    borderRadius: '12px',
   },
   firstTextSection: {
     padding: '0 36px',
@@ -688,18 +717,41 @@ const styles = {
     transition: 'all 0.2s ease',
   },
 
-  // Opener Section
+  // Opener Section - Enhanced with gold accent
   openerSection: {
     padding: '0 12px',
-    marginBottom: '20px',
+    marginBottom: '32px',
+    position: 'relative',
   },
   opener: {
-    fontSize: '16px',
-    fontWeight: '400',
-    color: '#2c3e50',
+    fontSize: '17px',
+    fontWeight: '500',
+    color: '#1f2937',                   // Darker for better readability
     lineHeight: '1.6',
     textAlign: 'left',
+    fontStyle: 'italic',
+    padding: '20px 20px 20px 24px',     // Extra left padding for accent border
+    backgroundColor: '#fefdf8',         // Warm, subtle gold tint
+    borderRadius: '12px',
+    border: '1px solid #f3e8ab',        // Light gold border
+    borderLeft: '4px solid #d4af37',    // Bold gold left accent
     margin: 0,
+    boxShadow: '0 2px 4px rgba(0,0,0,0.03)', // Subtle depth
+    position: 'relative',
+  },
+  openerLabel: {
+    position: 'absolute',
+    top: '-8px',
+    left: '20px',
+    fontSize: '11px',
+    fontWeight: '600',
+    color: '#d4af37',
+    backgroundColor: '#ffffff',
+    padding: '2px 8px',
+    borderRadius: '4px',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px',
+    border: '1px solid #f3e8ab',
   },
 
   essentialTitle: {
@@ -791,5 +843,42 @@ const styles = {
     boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
     backgroundColor: '#ffffff',
     color: '#2c3e50',
+  },
+
+  // Hero Image Placeholder Styles
+  heroPlaceholder: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: '#f3f4f6',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
+    zIndex: 1,
+  },
+  placeholderContent: {
+    textAlign: 'center',
+    color: '#6b7280',
+  },
+  placeholderIcon: {
+    fontSize: '48px',
+    marginBottom: '16px',
+    opacity: 0.7,
+  },
+  placeholderText: {
+    fontSize: '18px',
+    fontWeight: '600',
+    marginBottom: '8px',
+    color: '#374151',
+  },
+  placeholderSubtext: {
+    fontSize: '14px',
+    fontWeight: '400',
+    opacity: 0.8,
+    maxWidth: '300px',
+    margin: '0 auto',
+    lineHeight: '1.4',
   },
 };

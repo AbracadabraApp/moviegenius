@@ -20,8 +20,127 @@
     "subtitle": "Directors take control"
   },
   "content": {
-    "opener": null,
-    "sections": [],
+    "opener": "The 1970s marked a revolutionary period in American cinema when a generation of young directors seized control of Hollywood, creating personal, uncompromising films that redefined what commercial movies could be. This auteur renaissance emerged from the collapse of the studio system and the cultural upheaval of the era, producing some of the most influential and enduring films in cinema history.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "The decade began with the shocking success of \"Easy Rider\" (1969), which proved that low-budget, director-driven films could achieve massive commercial success. Dennis Hopper's road movie cost just $400,000 but earned over $60 million, demonstrating that audiences hungered for authentic, rebellious voices. The film's success opened doors for a new generation of filmmakers who had studied cinema at places like USC and NYU, bringing both technical knowledge and countercultural sensibilities to Hollywood. Francis Ford Coppola, George Lucas, Martin Scorsese, and Steven Spielberg would all benefit from this shift, creating the template for the modern blockbuster while maintaining artistic integrity."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Easy Rider",
+            "year": 1969,
+            "slug": "Counterculture road movie that changed Hollywood",
+            "streaming": "Amazon Prime",
+            "tmdb_id": 9337,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qwAakHRhWKP2KKLu4LuJNW6Qm4m.jpg"
+          },
+          {
+            "title": "Bonnie and Clyde",
+            "year": 1967,
+            "slug": "Arthur Penn's violent crime drama that broke censorship barriers",
+            "streaming": "HBO Max",
+            "tmdb_id": 1227,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zNyQ5A7m2iJ1VrmqMNJnBfLwqZS.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "The Godfather and Personal Filmmaking"
+      },
+      {
+        "type": "text",
+        "content": "Francis Ford Coppola's \"The Godfather\" (1972) proved that personal vision and commercial success weren't mutually exclusive. Coppola fought studio executives to cast Marlon Brando and Al Pacino, insisting on an authentic Italian-American perspective rather than the typical Hollywood gangster treatment. His collaboration with cinematographer Gordon Willis created the film's signature darkness, using shadows and underexposure to suggest the moral complexity of the Corleone family. The film's massive success—it became the highest-grossing film of its time—gave Coppola the power to make increasingly personal projects like \"The Conversation\" (1974) and \"Apocalypse Now\" (1979), establishing the model for director-driven Hollywood filmmaking."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Godfather",
+            "year": 1972,
+            "slug": "Coppola's epic that redefined the gangster genre",
+            "streaming": "Paramount+",
+            "tmdb_id": 238,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"
+          },
+          {
+            "title": "The Conversation",
+            "year": 1974,
+            "slug": "Paranoid thriller about surveillance and privacy",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 918,
+            "poster_url": "https://image.tmdb.org/t/p/w500/AuCYVkCGUhKB1dTk6XvIAlqe7tF.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "New York Realism and Social Commentary"
+      },
+      {
+        "type": "text",
+        "content": "Martin Scorsese emerged as the poet of urban alienation, bringing documentary-style realism to narrative filmmaking. \"Mean Streets\" (1973) established his signature style—improvised dialogue, handheld cameras, and rock music soundtracks that created an immersive sense of place and character. His collaboration with Robert De Niro in \"Taxi Driver\" (1976) created one of cinema's most complex antihero studies, with Michael Ballhaus's cinematography capturing the paranoid isolation of urban life. Sidney Lumet's \"Serpico\" (1973) and \"Dog Day Afternoon\" (1975) similarly used New York locations to explore corruption and social breakdown, while Hal Ashby's \"The Last Detail\" (1973) brought the same uncompromising realism to military life."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Taxi Driver",
+            "year": 1976,
+            "slug": "Scorsese's dark exploration of urban alienation and violence",
+            "streaming": "Netflix",
+            "tmdb_id": 103,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9Y8vgV3HGRNHi9D5Uklc2SQ8uPr.jpg"
+          },
+          {
+            "title": "Mean Streets",
+            "year": 1973,
+            "slug": "Scorsese's breakthrough film about small-time criminals in Little Italy",
+            "streaming": "Amazon Prime",
+            "tmdb_id": 11324,
+            "poster_url": "https://image.tmdb.org/t/p/w500/evjHcbqFfryIUnKE7E4u8UUJLC1.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "The Birth of the Modern Blockbuster"
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did the 1970s auteurs influence modern franchise filmmaking?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Steven Spielberg and George Lucas revolutionized commercial filmmaking while maintaining the decade's emphasis on directorial vision. \"Jaws\" (1975) and \"Star Wars\" (1977) created the modern blockbuster template—high-concept stories, cutting-edge technical effects, and massive marketing campaigns. Yet both films reflected their directors' personal obsessions: Spielberg's fascination with mechanical creatures and suburban anxiety, Lucas's love of Flash Gordon serials and anthropological storytelling. The success of these films established the economic model that would dominate Hollywood for decades, while proving that personal filmmaking and mass entertainment could coexist. Their influence extends beyond commercial considerations to fundamentally changing how audiences experience cinema."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Jaws",
+            "year": 1975,
+            "slug": "Spielberg's thriller that created the summer blockbuster",
+            "streaming": "HBO Max",
+            "tmdb_id": 578,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lxM6kqilAdpdhqUl2biYp5frUxE.jpg"
+          },
+          {
+            "title": "Star Wars",
+            "year": 1977,
+            "slug": "Lucas's space opera that revolutionized special effects and merchandising",
+            "streaming": "Disney+",
+            "tmdb_id": 11,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg"
+          }
+        ]
+      }
+    ],
     "moreIdeas": {
       "title": "More Ideas",
       "movies": [
@@ -66,5 +185,5 @@
   "locked": true,
   "lockedAt": "2025-06-18T17:27:52.006Z",
   "lockedBy": "claude-generation-enhanced",
-  "heroImage": "/images/hero/theme-5-topics/series-1-decades//1-1970s-the-auteur-renaissance.jpg"
+  "heroImage": "/images/hero/decades/1-1970s-auteur-renaissance.jpg"
 }

@@ -1,0 +1,422 @@
+[
+  {
+    "episodeFile": "genius-1-1-2.json",
+    "title": "From Novels to Noir",
+    "subtitle": "Detective fiction meets cinema",
+    "series": "Classic Film Noir",
+    "expectedPath": "/images/hero/theme-1-genres/series-1-classic-film-noir//2-from-novels-to-noir.jpg"
+  },
+  {
+    "episodeFile": "genius-1-2-1.json",
+    "title": "Giallo: Italian Horror Aesthetics",
+    "subtitle": "Argento's stylized violence",
+    "series": "Suspense & Horror",
+    "expectedPath": "/images/hero/theme-1-genres/series-2-suspense-horror//1-giallo-italian-horror-aesthetics.jpg"
+  },
+  {
+    "episodeFile": "genius-1-2-2.json",
+    "title": "Cronenberg's Body Horror",
+    "subtitle": "Flesh and psychological terror",
+    "series": "Suspense & Horror",
+    "expectedPath": "/images/hero/theme-1-genres/series-2-suspense-horror//2-cronenberg-s-body-horror.jpg"
+  },
+  {
+    "episodeFile": "genius-1-2-3.json",
+    "title": "Modern Psychological Thrillers",
+    "subtitle": "Mind games and manipulation",
+    "series": "Suspense & Horror",
+    "expectedPath": "/images/hero/theme-1-genres/series-2-suspense-horror//3-modern-psychological-thrillers.jpg"
+  },
+  {
+    "episodeFile": "genius-1-2-4.json",
+    "title": "Elevated Horror: A24 & Beyond",
+    "subtitle": "Art house fear",
+    "series": "Suspense & Horror",
+    "expectedPath": "/images/hero/theme-1-genres/series-2-suspense-horror//4-elevated-horror-a24-beyond.jpg"
+  },
+  {
+    "episodeFile": "genius-1-3-1.json",
+    "title": "Silent Comedy Stars",
+    "subtitle": "Chaplin, Keaton, and visual humor",
+    "series": "Comedy Through the Ages",
+    "expectedPath": "/images/hero/theme-1-genres/series-3-comedy-through-the-ages//1-silent-comedy-stars.jpg"
+  },
+  {
+    "episodeFile": "genius-1-3-2.json",
+    "title": "Screwball Comedy: Battle of the Sexes",
+    "subtitle": "Rapid-fire wit and romance",
+    "series": "Comedy Through the Ages",
+    "expectedPath": "/images/hero/theme-1-genres/series-3-comedy-through-the-ages//2-screwball-comedy-battle-of-the-sexes.jpg"
+  },
+  {
+    "episodeFile": "genius-1-3-3.json",
+    "title": "British Comedy: Ealing to Python",
+    "subtitle": "Dry wit and social satire",
+    "series": "Comedy Through the Ages",
+    "expectedPath": "/images/hero/theme-1-genres/series-3-comedy-through-the-ages//3-british-comedy-ealing-to-python.jpg"
+  },
+  {
+    "episodeFile": "genius-1-3-4.json",
+    "title": "Saturday Night Live Cinema",
+    "subtitle": "TV comedy goes to movies",
+    "series": "Comedy Through the Ages",
+    "expectedPath": "/images/hero/theme-1-genres/series-3-comedy-through-the-ages//4-saturday-night-live-cinema.jpg"
+  },
+  {
+    "episodeFile": "genius-1-3-5.json",
+    "title": "Judd Apatow & The New Comedy",
+    "subtitle": "Bromance and improvisation",
+    "series": "Comedy Through the Ages",
+    "expectedPath": "/images/hero/theme-1-genres/series-3-comedy-through-the-ages//5-judd-apatow-the-new-comedy.jpg"
+  },
+  {
+    "episodeFile": "genius-2-1-1.json",
+    "title": "Silent Era Pioneers: Weber & Pickford",
+    "subtitle": "Early women behind the camera",
+    "series": "Women Directors",
+    "expectedPath": "/images/hero/theme-2-directors/series-1-women-directors//1-silent-era-pioneers-weber-pickford.jpg"
+  },
+  {
+    "episodeFile": "genius-2-1-2.json",
+    "title": "Ida Lupino: The Forgotten Auteur",
+    "subtitle": "Actor-director breaking barriers",
+    "series": "Women Directors",
+    "expectedPath": "/images/hero/theme-2-directors/series-1-women-directors//2-ida-lupino-the-forgotten-auteur.jpg"
+  },
+  {
+    "episodeFile": "genius-2-1-3.json",
+    "title": "Chantal Akerman: Radical Minimalism",
+    "subtitle": "Feminist time and space",
+    "series": "Women Directors",
+    "expectedPath": "/images/hero/theme-2-directors/series-1-women-directors//3-chantal-akerman-radical-minimalism.jpg"
+  },
+  {
+    "episodeFile": "genius-2-1-4.json",
+    "title": "Jane Campion: Feminine Gothic",
+    "subtitle": "New Zealand's poetic vision",
+    "series": "Women Directors",
+    "expectedPath": "/images/hero/theme-2-directors/series-1-women-directors//4-jane-campion-feminine-gothic.jpg"
+  },
+  {
+    "episodeFile": "genius-2-1-5.json",
+    "title": "Kathryn Bigelow: Action Auteur",
+    "subtitle": "Redefining genre filmmaking",
+    "series": "Women Directors",
+    "expectedPath": "/images/hero/theme-2-directors/series-1-women-directors//5-kathryn-bigelow-action-auteur.jpg"
+  },
+  {
+    "episodeFile": "genius-2-1-6.json",
+    "title": "Contemporary Voices: Gerwig to Zhao",
+    "subtitle": "New generation storytellers",
+    "series": "Women Directors",
+    "expectedPath": "/images/hero/theme-2-directors/series-1-women-directors//6-contemporary-voices-gerwig-to-zhao.jpg"
+  },
+  {
+    "episodeFile": "genius-2-2-1.json",
+    "title": "Kurosawa's Epic Vision",
+    "subtitle": "Japanese cinema giant",
+    "series": "International Masters",
+    "expectedPath": "/images/hero/theme-2-directors/series-2-international-masters//1-kurosawa-s-epic-vision.jpg"
+  },
+  {
+    "episodeFile": "genius-2-2-2.json",
+    "title": "Bergman's Psychological Landscapes",
+    "subtitle": "Swedish introspection",
+    "series": "International Masters",
+    "expectedPath": "/images/hero/theme-2-directors/series-2-international-masters//2-bergman-s-psychological-landscapes.jpg"
+  },
+  {
+    "episodeFile": "genius-2-2-3.json",
+    "title": "Fellini's Surreal Italy",
+    "subtitle": "Dreams and reality collide",
+    "series": "International Masters",
+    "expectedPath": "/images/hero/theme-2-directors/series-2-international-masters//3-fellini-s-surreal-italy.jpg"
+  },
+  {
+    "episodeFile": "genius-2-2-4.json",
+    "title": "Tarkovsky's Spiritual Cinema",
+    "subtitle": "Soviet poetry in motion",
+    "series": "International Masters",
+    "expectedPath": "/images/hero/theme-2-directors/series-2-international-masters//4-tarkovsky-s-spiritual-cinema.jpg"
+  },
+  {
+    "episodeFile": "genius-2-2-5.json",
+    "title": "Wong Kar-wai's Romantic Melancholy",
+    "subtitle": "Hong Kong mood master",
+    "series": "International Masters",
+    "expectedPath": "/images/hero/theme-2-directors/series-2-international-masters//5-wong-kar-wai-s-romantic-melancholy.jpg"
+  },
+  {
+    "episodeFile": "genius-2-2-6.json",
+    "title": "Bong Joon-ho's Genre Mastery",
+    "subtitle": "Korean social commentary",
+    "series": "International Masters",
+    "expectedPath": "/images/hero/theme-2-directors/series-2-international-masters//6-bong-joon-ho-s-genre-mastery.jpg"
+  },
+  {
+    "episodeFile": "genius-2-3-1.json",
+    "title": "Frederick Wiseman: Institutional Observer",
+    "subtitle": "Fly-on-the-wall realism",
+    "series": "Documentary Masters",
+    "expectedPath": "/images/hero/theme-2-directors/series-3-documentary-masters//1-frederick-wiseman-institutional-observer.jpg"
+  },
+  {
+    "episodeFile": "genius-2-3-2.json",
+    "title": "Errol Morris: Truth Detective",
+    "subtitle": "Investigation through film",
+    "series": "Documentary Masters",
+    "expectedPath": "/images/hero/theme-2-directors/series-3-documentary-masters//2-errol-morris-truth-detective.jpg"
+  },
+  {
+    "episodeFile": "genius-2-3-3.json",
+    "title": "Michael Moore: Provocateur Documentarian",
+    "subtitle": "Political activism through cinema",
+    "series": "Documentary Masters",
+    "expectedPath": "/images/hero/theme-2-directors/series-3-documentary-masters//3-michael-moore-provocateur-documentarian.jpg"
+  },
+  {
+    "episodeFile": "genius-2-4-1.json",
+    "title": "The Coen Brothers: Genre Pastiche & Visual Wit",
+    "subtitle": "Postmodern storytellers",
+    "series": "Contemporary Auteurs",
+    "expectedPath": "/images/hero/contemporary-auteurs/1-coen-brothers.jpg"
+  },
+  {
+    "episodeFile": "genius-2-4-2.json",
+    "title": "Christopher Nolan: Time, Memory & IMAX Spectacle",
+    "subtitle": "Puzzle box narratives",
+    "series": "Contemporary Auteurs",
+    "expectedPath": "/images/hero/theme-2-directors/series-4-contemporary-auteurs//2-christopher-nolan-time-memory-imax-spectacle.jpg"
+  },
+  {
+    "episodeFile": "genius-2-4-3.json",
+    "title": "Denis Villeneuve: Sci-Fi Atmosphere & Scale",
+    "subtitle": "Thoughtful spectacle",
+    "series": "Contemporary Auteurs",
+    "expectedPath": "/images/hero/theme-2-directors/series-4-contemporary-auteurs//3-denis-villeneuve-sci-fi-atmosphere-scale.jpg"
+  },
+  {
+    "episodeFile": "genius-2-4-4.json",
+    "title": "Jordan Peele: Horror Through Social Commentary",
+    "subtitle": "Genre as activism",
+    "series": "Contemporary Auteurs",
+    "expectedPath": "/images/hero/theme-2-directors/series-4-contemporary-auteurs//4-jordan-peele-horror-through-social-commentary.jpg"
+  },
+  {
+    "episodeFile": "genius-3-1-1.json",
+    "title": "French New Wave: Breathless Revolution",
+    "subtitle": "Godard and Truffaut's innovation",
+    "series": "New Waves",
+    "expectedPath": "/images/hero/theme-3-movements/series-1-new-waves//1-french-new-wave-breathless-revolution.jpg"
+  },
+  {
+    "episodeFile": "genius-3-1-2.json",
+    "title": "Italian Neorealism: Truth in Cinema",
+    "subtitle": "Post-war authenticity",
+    "series": "New Waves",
+    "expectedPath": "/images/hero/theme-3-movements/series-1-new-waves//2-italian-neorealism-truth-in-cinema.jpg"
+  },
+  {
+    "episodeFile": "genius-3-1-3.json",
+    "title": "British Kitchen Sink & Social Realism",
+    "subtitle": "Working class stories",
+    "series": "New Waves",
+    "expectedPath": "/images/hero/theme-3-movements/series-1-new-waves//3-british-kitchen-sink-social-realism.jpg"
+  },
+  {
+    "episodeFile": "genius-3-1-4.json",
+    "title": "Japanese New Wave: Oshima & Imamura",
+    "subtitle": "Breaking tradition",
+    "series": "New Waves",
+    "expectedPath": "/images/hero/theme-3-movements/series-1-new-waves//4-japanese-new-wave-oshima-imamura.jpg"
+  },
+  {
+    "episodeFile": "genius-3-1-5.json",
+    "title": "Czech New Wave: Behind Iron Curtain",
+    "subtitle": "Political allegory and freedom",
+    "series": "New Waves",
+    "expectedPath": "/images/hero/theme-3-movements/series-1-new-waves//5-czech-new-wave-behind-iron-curtain.jpg"
+  },
+  {
+    "episodeFile": "genius-3-1-6.json",
+    "title": "German New Cinema: Herzog & Fassbinder",
+    "subtitle": "Post-war artistic renewal",
+    "series": "New Waves",
+    "expectedPath": "/images/hero/theme-3-movements/series-1-new-waves//6-german-new-cinema-herzog-fassbinder.jpg"
+  },
+  {
+    "episodeFile": "genius-3-2-1.json",
+    "title": "German Expressionism & Silent Era",
+    "subtitle": "Visual psychology emerges",
+    "series": "German Cinema Heritage",
+    "expectedPath": "/images/hero/theme-3-movements/series-2-german-cinema-heritage//1-german-expressionism-silent-era.jpg"
+  },
+  {
+    "episodeFile": "genius-3-2-2.json",
+    "title": "Murnau's Camera Movement Revolution",
+    "subtitle": "Unchaining the camera",
+    "series": "German Cinema Heritage",
+    "expectedPath": "/images/hero/theme-3-movements/series-2-german-cinema-heritage//2-murnau-s-camera-movement-revolution.jpg"
+  },
+  {
+    "episodeFile": "genius-3-2-3.json",
+    "title": "Fritz Lang's Architectural Psychology",
+    "subtitle": "Space as character",
+    "series": "German Cinema Heritage",
+    "expectedPath": "/images/hero/theme-3-movements/series-2-german-cinema-heritage//3-fritz-lang-s-architectural-psychology.jpg"
+  },
+  {
+    "episodeFile": "genius-3-2-4.json",
+    "title": "From Weimar to Hollywood: The Émigré Influence",
+    "subtitle": "European artistry in America",
+    "series": "German Cinema Heritage",
+    "expectedPath": "/images/hero/theme-3-movements/series-2-german-cinema-heritage//4-from-weimar-to-hollywood-the-migr-influence.jpg"
+  },
+  {
+    "episodeFile": "genius-4-1-1.json",
+    "title": "Hitchcock's Camera Psychology",
+    "subtitle": "Visual manipulation master",
+    "series": "Technical Evolution",
+    "expectedPath": "/images/hero/theme-4-filmmaking/series-1-technical-evolution//1-hitchcock-s-camera-psychology.jpg"
+  },
+  {
+    "episodeFile": "genius-4-1-2.json",
+    "title": "Birth of Cinema: Méliès to Griffith",
+    "subtitle": "Magic and narrative emerge",
+    "series": "Technical Evolution",
+    "expectedPath": "/images/hero/theme-4-filmmaking/series-1-technical-evolution//2-birth-of-cinema-m-li-s-to-griffith.jpg"
+  },
+  {
+    "episodeFile": "genius-4-1-3.json",
+    "title": "Studio System & Star Power",
+    "subtitle": "Hollywood's golden age machine",
+    "series": "Technical Evolution",
+    "expectedPath": "/images/hero/theme-4-filmmaking/series-1-technical-evolution//3-studio-system-star-power.jpg"
+  },
+  {
+    "episodeFile": "genius-4-1-4.json",
+    "title": "Technicolor Revolution",
+    "subtitle": "Color transforms cinema",
+    "series": "Technical Evolution",
+    "expectedPath": "/images/hero/theme-4-filmmaking/series-1-technical-evolution//4-technicolor-revolution.jpg"
+  },
+  {
+    "episodeFile": "genius-4-1-5.json",
+    "title": "Digital Revolution Begins",
+    "subtitle": "CGI changes everything",
+    "series": "Technical Evolution",
+    "expectedPath": "/images/hero/technical-evolution/5-digital-revolution.jpg"
+  },
+  {
+    "episodeFile": "genius-4-1-6.json",
+    "title": "Virtual Production Revolution",
+    "subtitle": "LED walls and real-time rendering",
+    "series": "Technical Evolution",
+    "expectedPath": "/images/hero/theme-4-filmmaking/series-1-technical-evolution//6-virtual-production-revolution.jpg"
+  },
+  {
+    "episodeFile": "genius-4-1-7.json",
+    "title": "AI & the Future of Filmmaking",
+    "subtitle": "Artificial intelligence enters cinema",
+    "series": "Technical Evolution",
+    "expectedPath": "/images/hero/theme-4-filmmaking/series-1-technical-evolution//7-ai-the-future-of-filmmaking.jpg"
+  },
+  {
+    "episodeFile": "genius-5-1-1.json",
+    "title": "1970s: The Auteur Renaissance",
+    "subtitle": "Directors take control",
+    "series": "Decades",
+    "expectedPath": "/images/hero/decades/1-1970s-auteur-renaissance.jpg"
+  },
+  {
+    "episodeFile": "genius-5-1-2.json",
+    "title": "1980s: Blockbuster Revolution",
+    "subtitle": "High concept and spectacle",
+    "series": "Decades",
+    "expectedPath": "/images/hero/theme-5-topics/series-1-decades//2-1980s-blockbuster-revolution.jpg"
+  },
+  {
+    "episodeFile": "genius-5-1-3.json",
+    "title": "1990s: Independent Renaissance",
+    "subtitle": "Sundance and artistic freedom",
+    "series": "Decades",
+    "expectedPath": "/images/hero/decades/3-1990s-independent-renaissance.jpg"
+  },
+  {
+    "episodeFile": "genius-5-1-4.json",
+    "title": "2000s: The Streaming Wars",
+    "subtitle": "Digital distribution emerges",
+    "series": "Decades",
+    "expectedPath": "/images/hero/theme-5-topics/series-1-decades//4-2000s-the-streaming-wars.jpg"
+  },
+  {
+    "episodeFile": "genius-5-1-5.json",
+    "title": "2010s: Global Cinema Rising",
+    "subtitle": "International voices gain prominence",
+    "series": "Decades",
+    "expectedPath": "/images/hero/theme-5-topics/series-1-decades//5-2010s-global-cinema-rising.jpg"
+  },
+  {
+    "episodeFile": "genius-5-2-1.json",
+    "title": "WWII & Cinema's War Effort",
+    "subtitle": "Movies as propaganda and art",
+    "series": "Historical Periods",
+    "expectedPath": "/images/hero/theme-5-topics/series-2-historical-periods//1-wwii-cinema-s-war-effort.jpg"
+  },
+  {
+    "episodeFile": "genius-5-2-2.json",
+    "title": "Independent Film Renaissance",
+    "subtitle": "Breaking free from studios",
+    "series": "Historical Periods",
+    "expectedPath": "/images/hero/theme-5-topics/series-2-historical-periods//2-independent-film-renaissance.jpg"
+  },
+  {
+    "episodeFile": "genius-5-2-3.json",
+    "title": "International Cinema Breaks Through",
+    "subtitle": "World cinema reaches America",
+    "series": "Historical Periods",
+    "expectedPath": "/images/hero/theme-5-topics/series-2-historical-periods//3-international-cinema-breaks-through.jpg"
+  },
+  {
+    "episodeFile": "genius-5-2-4.json",
+    "title": "Franchise Filmmaking Dominance",
+    "subtitle": "Sequels and shared universes",
+    "series": "Historical Periods",
+    "expectedPath": "/images/hero/theme-5-topics/series-2-historical-periods//4-franchise-filmmaking-dominance.jpg"
+  },
+  {
+    "episodeFile": "genius-5-2-5.json",
+    "title": "Streaming Changes Everything",
+    "subtitle": "Netflix revolutionizes distribution",
+    "series": "Historical Periods",
+    "expectedPath": "/images/hero/theme-5-topics/series-2-historical-periods//5-streaming-changes-everything.jpg"
+  },
+  {
+    "episodeFile": "genius-5-2-6.json",
+    "title": "Marvel & the Cinematic Universe",
+    "subtitle": "Superhero storytelling dominates",
+    "series": "Historical Periods",
+    "expectedPath": "/images/hero/theme-5-topics/series-2-historical-periods//6-marvel-the-cinematic-universe.jpg"
+  },
+  {
+    "episodeFile": "genius-5-2-7.json",
+    "title": "A24 & Independent Prestige",
+    "subtitle": "Art house meets commercial success",
+    "series": "Historical Periods",
+    "expectedPath": "/images/hero/theme-5-topics/series-2-historical-periods//7-a24-independent-prestige.jpg"
+  },
+  {
+    "episodeFile": "genius-5-2-8.json",
+    "title": "International Streaming Wars",
+    "subtitle": "Global content competition",
+    "series": "Historical Periods",
+    "expectedPath": "/images/hero/theme-5-topics/series-2-historical-periods//8-international-streaming-wars.jpg"
+  },
+  {
+    "episodeFile": "genius-5-2-9.json",
+    "title": "Post-Pandemic Cinema",
+    "subtitle": "How COVID changed moviegoing",
+    "series": "Historical Periods",
+    "expectedPath": "/images/hero/theme-5-topics/series-2-historical-periods//9-post-pandemic-cinema.jpg"
+  }
+]

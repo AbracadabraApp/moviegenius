@@ -98,14 +98,16 @@ async function warmAllMovies(res, cache, batchSize, offset) {
   });
 }
 
-// Warm all TMDB poster images at Cloudflare edge
+// ZERO-WASTE: Warm posters only for movies WITHOUT good posters
 async function warmAllPosters(res, cache, batchSize, offset) {
   const startTime = Date.now();
 
+  // CRITICAL FIX: Only fetch movies that actually need poster warming
+  // Old logic: .not('poster_url', 'is', null) was fetching movies WITH posters!
   const { data: movies, error } = await supabase
     .from('movies')
     .select('tmdb_id, poster_url')
-    .not('poster_url', 'is', null)
+    .or('poster_url.is.null,poster_url.eq./images/placeholder-poster.jpg')
     .range(offset, offset + batchSize - 1);
 
   if (error) throw error;
@@ -146,22 +148,43 @@ async function warmAllPosters(res, cache, batchSize, offset) {
   });
 }
 
-// Warm Claude analysis for all movies (expensive - run in background)
+// ZERO-WASTE: Only warm analysis for movies without existing linked content  
 async function warmAllAnalyses(res, cache, batchSize, offset) {
   const startTime = Date.now();
 
+  // CRITICAL: Check for existing analysis with links to avoid waste
   const { data: movies, error } = await supabase
     .from('movies')
-    .select('tmdb_id, title, year')
+    .select(`
+      tmdb_id, 
+      title, 
+      year,
+      movie_analyses!inner(claude_response)
+    `)
     .range(offset, offset + batchSize - 1);
 
   if (error) throw error;
 
   const warmedAnalyses = [];
+  const skippedComplete = [];
 
   // Process one at a time to avoid Claude rate limits
   for (const movie of movies) {
     try {
+      // ZERO-WASTE: Skip movies that already have linked content
+      const hasExistingAnalysis = movie.movie_analyses && movie.movie_analyses.length > 0;
+      if (hasExistingAnalysis) {
+        const analysis = movie.movie_analyses[0];
+        const hasLinks = analysis.claude_response?.raw_content?.includes('<a href="/movie/') && 
+                        analysis.claude_response?.raw_content?.includes('class="movie-title"');
+        
+        if (hasLinks) {
+          skippedComplete.push(movie.tmdb_id);
+          console.log(`⚡ Skipping ${movie.title} - already has linked analysis`);
+          continue;
+        }
+      }
+
       const analysisCacheKey = cache.redis.generateKey('movie_analysis', movie.tmdb_id);
       const exists = await cache.redis.get(analysisCacheKey);
 
@@ -202,9 +225,12 @@ async function warmAllAnalyses(res, cache, batchSize, offset) {
       size: batchSize,
       processed: movies.length,
       warmed: warmedAnalyses.length,
+      skippedComplete: skippedComplete.length,
     },
     duration: `${duration}ms`,
     estimatedCost: `$${(warmedAnalyses.length * 0.1).toFixed(2)}`,
+    costSaved: `$${(skippedComplete.length * 0.1).toFixed(2)}`,
+    message: `ZERO-WASTE: Skipped ${skippedComplete.length} movies with existing linked content`,
   });
 }
 
