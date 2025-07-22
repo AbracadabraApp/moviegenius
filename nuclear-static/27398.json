@@ -1,0 +1,158 @@
+{
+  "props": {
+    "title": "Les Vampires",
+    "year": 1971,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/tlGLSByJLfgp8iho5eqG2KhiIG0.jpg",
+    "initialStreaming": null,
+    "tmdbId": 27398,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Let me correct a common confusion - Les Vampires (1915-1916), not 1971, is Louis Feuillade's groundbreaking 10-part French crime serial that revolutionized both thriller and noir filmmaking. Running nearly 7 hours total, it follows the criminal gang \"The Vampires\" led by the iconic Irma Vep (played by Musidora), whose black catsuit and mysterious presence influenced everything from <a href=\"/movie/234\" class=\"movie-title\" data-tmdb-id=\"234\">The Cabinet of Dr. Caligari</a> (1920) to <a href=\"/movie/364\" class=\"movie-title\" data-tmdb-id=\"364\">Batman Returns</a> (1992). The serial's elaborate heists, rooftop chases, and criminal underworld laid the foundation for crime cinema."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Les Vampires",
+            "year": 1915,
+            "slug": "Landmark French crime serial following journalist Philippe Guérande investigating the criminal organization \"The Vampires\"",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 29082
+          },
+          {
+            "title": "Irma Vep",
+            "year": 1996,
+            "slug": "Meta-film starring Maggie Cheung as herself making a remake of Les Vampires",
+            "poster": "https://image.tmdb.org/t/p/w500/9Z84G7mn8eS7WxiHr5CrXRrneaF.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 25355,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9Z84G7mn8eS7WxiHr5CrXRrneaF.jpg"
+          },
+          {
+            "title": "Judex",
+            "year": 1963,
+            "slug": "Georges Franju's homage to Feuillade's serials about a mysterious vigilante",
+            "poster": "https://image.tmdb.org/t/p/w500/v9QWXz5F11R0yZpCcxIH1W50BHP.jpg",
+            "initialStreaming": "Kanopy",
+            "tmdb_id": 56800,
+            "poster_url": "https://image.tmdb.org/t/p/w500/v9QWXz5F11R0yZpCcxIH1W50BHP.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The influence of Les Vampires extends far beyond its era. Olivier Assayas's <a href=\"/movie/25355\" class=\"movie-title\">Irma Vep</a> (1996) directly references the original while commenting on contemporary French cinema, while his 2022 HBO series of the same name further explores these themes. The serial's innovative use of location shooting in Paris, elaborate stunts, and criminal conspiracies established tropes still seen in heist films like <a href=\"/movie/934\" class=\"movie-title\" data-tmdb-id=\"934\">Rififi</a> (1955) and <a href=\"/movie/954\" class=\"movie-title\" data-tmdb-id=\"954\">Mission: Impossible</a> (1996). SUBHEAD: Legacy and Influence on Film Noir"
+      },
+      {
+        "type": "text",
+        "content": "Les Vampires helped establish the visual language of film noir decades before the term existed. The serial's use of shadows, criminal antiheroes, and femmes fatales can be traced through <a href=\"/movie/17136\" class=\"movie-title\" data-tmdb-id=\"17136\">The Woman in the Window</a> (1944), <a href=\"/movie/996\" class=\"movie-title\" data-tmdb-id=\"996\">Double Indemnity</a> (1944), and into modern neo-noir like <a href=\"/movie/64690\" class=\"movie-title\" data-tmdb-id=\"64690\">Drive</a> (2011). Musidora's Irma Vep character specifically influenced generations of dangerous, seductive women in cinema, from <a href=\"/movie/402\" class=\"movie-title\" data-tmdb-id=\"402\">Basic Instinct</a> (1992) to <a href=\"/movie/9322\" class=\"movie-title\" data-tmdb-id=\"9322\">La Femme Nikita</a> (1990)."
+      }
+    ],
+    "exploreFurther": [
+      "Early French Cinema and the Serial Format",
+      "The Evolution of the Femme Fatale in Film",
+      "Louis Feuillade's Influence on Crime Cinema",
+      "The Legacy of Irma Vep in Popular Culture",
+      "Silent Film's Impact on Modern Thriller Techniques"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Fantômas",
+          "year": 1913,
+          "slug": "Feuillade's earlier criminal mastermind serial",
+          "poster": "https://image.tmdb.org/t/p/w500/Aw8uIA5NnPLckS9pg3M8DgPLwB6.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 319287,
+          "poster_url": "https://image.tmdb.org/t/p/w500/Aw8uIA5NnPLckS9pg3M8DgPLwB6.jpg"
+        },
+        {
+          "title": "The Cabinet of Dr. Caligari",
+          "year": 1920,
+          "slug": "German Expressionist masterpiece",
+          "poster": "https://image.tmdb.org/t/p/w500/myK9DeIsXWGKgUTZyGXg2IfFk0W.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 234,
+          "poster_url": "https://image.tmdb.org/t/p/w500/myK9DeIsXWGKgUTZyGXg2IfFk0W.jpg"
+        },
+        {
+          "title": "M",
+          "year": 1931,
+          "slug": "Fritz Lang's influential crime thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/7s6zEsOAY3LD5qvzljmKKzjnLiT.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 3007,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7s6zEsOAY3LD5qvzljmKKzjnLiT.jpg"
+        },
+        {
+          "title": "The Phantom of the Opera",
+          "year": 1925,
+          "slug": "Gothic horror with similar visual style",
+          "poster": "https://image.tmdb.org/t/p/w500/mvaYpAYj957C2tlq3vVJPSzGJXK.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": 964,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mvaYpAYj957C2tlq3vVJPSzGJXK.jpg"
+        },
+        {
+          "title": "Nosferatu",
+          "year": 1922,
+          "slug": "Influential vampire film of the era",
+          "poster": "https://image.tmdb.org/t/p/w500/zv7J85D8CC9qYagAEhPM63CIG6j.jpg",
+          "initialStreaming": "Multiple",
+          "tmdb_id": 653,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zv7J85D8CC9qYagAEhPM63CIG6j.jpg"
+        },
+        {
+          "title": "Metropolis",
+          "year": 1927,
+          "slug": "Groundbreaking sci-fi with noir elements",
+          "poster": "https://image.tmdb.org/t/p/w500/vZIJxGnjcswPCAa52jhbl01FQkV.jpg",
+          "initialStreaming": "Multiple",
+          "tmdb_id": 19,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vZIJxGnjcswPCAa52jhbl01FQkV.jpg"
+        },
+        {
+          "title": "The Cat and the Canary",
+          "year": 1927,
+          "slug": "Early horror-mystery hybrid",
+          "poster": "https://image.tmdb.org/t/p/w500/obXtEtHmncAtak6IFFpaWR3DQbS.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": 76804,
+          "poster_url": "https://image.tmdb.org/t/p/w500/obXtEtHmncAtak6IFFpaWR3DQbS.jpg"
+        },
+        {
+          "title": "Dr. Mabuse the Gambler",
+          "year": 1922,
+          "slug": "Lang's crime epic influenced by Feuillade",
+          "poster": "https://image.tmdb.org/t/p/w500/ysHJDo9do2USU1BhWxcT0WO9WTO.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 5998,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ysHJDo9do2USU1BhWxcT0WO9WTO.jpg"
+        },
+        {
+          "title": "The Vampires of Paris",
+          "year": 1927,
+          "slug": "Crime serial inspired by Les Vampires",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Archive.org",
+          "tmdb_id": null
+        },
+        {
+          "title": "Zigomar",
+          "year": 1911,
+          "slug": "Early French crime serial",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Archive.org",
+          "tmdb_id": 293914
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

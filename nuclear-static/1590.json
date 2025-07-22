@@ -1,0 +1,116 @@
+{
+  "props": {
+    "title": "Copying Beethoven",
+    "year": 2006,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/xplAbPXhZF9B3H4OnhjQsEKUESe.jpg",
+    "initialStreaming": null,
+    "tmdbId": 1590,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Copying Beethoven joins the rich tradition of classical composer biopics, offering a fictionalized account of Ludwig van Beethoven's final years through the eyes of a young female copyist. While <a href=\"/movie/279\" class=\"movie-title\" data-tmdb-id=\"279\">Amadeus</a> (1984) set the gold standard for classical music biopics with its dramatic portrayal of Mozart and Salieri, more recent films like <a href=\"/movie/13701\" class=\"movie-title\" data-tmdb-id=\"13701\">Immortal Beloved</a> (1994) and <a href=\"/movie/46992\" class=\"movie-title\" data-tmdb-id=\"46992\">Hilary and Jackie</a> (1998) explore the complex personal lives behind the musical genius. Ed Harris delivers a powerful performance as the deaf, temperamental Beethoven, while Diane Kruger plays Anna Holtz, the aspiring composer who helps transcribe his Ninth Symphony."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Amadeus",
+            "year": 1984,
+            "slug": "F. Murray Abraham and Tom Hulce star in this masterful story of Mozart's life through the eyes of his rival Salieri",
+            "poster": "https://image.tmdb.org/t/p/w500/1n5VUlCqgmVax1adxGZm8oCFaKc.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 279,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1n5VUlCqgmVax1adxGZm8oCFaKc.jpg"
+          },
+          {
+            "title": "Immortal Beloved",
+            "year": 1994,
+            "slug": "Gary Oldman portrays Beethoven in this mystery centered around the composer's famous love letter",
+            "poster": "https://image.tmdb.org/t/p/w500/lkqz2R5pjXeDaiIjR3Z6JTGjtg6.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 13701,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lkqz2R5pjXeDaiIjR3Z6JTGjtg6.jpg"
+          },
+          {
+            "title": "Hilary and Jackie",
+            "year": 1998,
+            "slug": "The complex relationship between cellist Jacqueline du Pré and her sister Hilary",
+            "poster": "https://image.tmdb.org/t/p/w500/aE2NJH2sllQTmbpN6laKuM7NXYy.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 46992,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aE2NJH2sllQTmbpN6laKuM7NXYy.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The classical music biopic genre often grapples with how to visualize the creative process of composition. <a href=\"/movie/41804\" class=\"movie-title\" data-tmdb-id=\"41804\">Tous les Matins du Monde</a> (1991) captures the austere beauty of baroque viol music, while <a href=\"/movie/7863\" class=\"movie-title\" data-tmdb-id=\"7863\">Shine</a> (1996) dramatically portrays pianist David Helfgott's struggle with mental illness and Rachmaninoff's challenging compositions. Copying Beethoven stands out for its centerpiece sequence during the premiere of the Ninth Symphony, where Anna must help the deaf composer conduct by secretly signaling from within the orchestra. SUBHEAD: Historical Accuracy vs Dramatic License"
+      },
+      {
+        "type": "text",
+        "content": "Like many musical biopics, Copying Beethoven takes significant creative liberties with historical fact. While the character of Anna Holtz is fictional, Beethoven did work with copyists in his later years due to his deafness. <a href=\"/movie/20967\" class=\"movie-title\" data-tmdb-id=\"20967\">32 Short Films About Glenn Gould</a> (1993) took a more experimental approach to depicting a musical genius, while The Music Lovers (1970) director Ken Russell embraced flamboyant excess in portraying Tchaikovsky's life. The challenge of balancing historical accuracy with compelling drama remains central to the genre."
+      }
+    ],
+    "exploreFurther": [
+      "The real copyists who worked with Beethoven",
+      "Visual techniques for depicting musical composition in film",
+      "The history and impact of Beethoven's Ninth Symphony",
+      "Deafness in Beethoven's later works and life",
+      "Evolution of the classical music biopic genre"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Impromptu",
+          "year": 1991,
+          "slug": "Hugh Grant as Chopin in this romantic period piece",
+          "poster": "https://image.tmdb.org/t/p/w500/np3Ogsy0JMsQ7HaLI2fHvA76e8A.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 17990,
+          "poster_url": "https://image.tmdb.org/t/p/w500/np3Ogsy0JMsQ7HaLI2fHvA76e8A.jpg"
+        },
+        {
+          "title": "Mr. Turner",
+          "year": 2014,
+          "slug": "Mike Leigh's masterful portrait of painter J.M.W. Turner",
+          "poster": "https://image.tmdb.org/t/p/w500/rnVhl1PFSOoW5c6UhZJZt5TV98p.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 245700,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rnVhl1PFSOoW5c6UhZJZt5TV98p.jpg"
+        },
+        {
+          "title": "Total Eclipse",
+          "year": 1995,
+          "slug": "The turbulent relationship between poets Rimbaud and Verlaine",
+          "poster": "https://image.tmdb.org/t/p/w500/e0j1zDF3ITeTbGTXFGamosCxT4z.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 36834,
+          "poster_url": "https://image.tmdb.org/t/p/w500/e0j1zDF3ITeTbGTXFGamosCxT4z.jpg"
+        },
+        {
+          "title": "Topsy-Turvy",
+          "year": 1999,
+          "slug": "Gilbert and Sullivan create The Mikado",
+          "poster": "https://image.tmdb.org/t/p/w500/mW7uANe68vhmk2j6Q74jPICmrEk.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 46435,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mW7uANe68vhmk2j6Q74jPICmrEk.jpg"
+        },
+        {
+          "title": "The Red Violin",
+          "year": 1998,
+          "slug": "The 300-year journey of a mysterious violin",
+          "poster": "https://image.tmdb.org/t/p/w500/uPjq8PaNDhFQTzOu4Ce91f6BFgZ.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 14283,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uPjq8PaNDhFQTzOu4Ce91f6BFgZ.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

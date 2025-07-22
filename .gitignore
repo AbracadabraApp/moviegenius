@@ -32,9 +32,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Nuclear static files (generated on deployment)
-nuclear-static/
-public/nuclear-static/
 
 # Logs
 *.log

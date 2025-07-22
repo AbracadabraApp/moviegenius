@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "Rooty Toot Toot",
+    "year": 1951,
+    "initialSlug": "A musical extravaganza!",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/1LXJD042SEw18ZoGzEDMOF9nGuM.jpg",
+    "initialStreaming": null,
+    "tmdbId": 103956,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Rooty Toot Toot** (1951) stands as one of UPA Animation Studio's most innovative and jazzy masterpieces. Director John Hubley transformed the folk song \"Frankie and Johnny\" into a stylized murder trial, using radical geometric designs and limited animation techniques that influenced everything from **Yellow Submarine** (1968) to **Persepolis** (2007). The film's bold angular shapes, stark color contrasts, and minimalist backgrounds broke decisively from Disney's rounded realism, establishing UPA's signature modern aesthetic that would revolutionize animation in the 1950s."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Gerald McBoing-Boing",
+            "year": 1950,
+            "slug": "UPA's Oscar-winning short about a boy who speaks in sound effects, featuring similar modernist design",
+            "poster": "https://image.tmdb.org/t/p/w500/afgivuAiO9ZllYvISlzDRU9kzuv.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 46990,
+            "poster_url": "https://image.tmdb.org/t/p/w500/afgivuAiO9ZllYvISlzDRU9kzuv.jpg"
+          },
+          {
+            "title": "The Tell-Tale Heart",
+            "year": 1953,
+            "slug": "UPA's Edgar Allan Poe adaptation with James Mason narrating, showing their dramatic range",
+            "poster": "https://image.tmdb.org/t/p/w500/AsUpsdGwNbFRpPG6BxvshwFRaut.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 127401,
+            "poster_url": "https://image.tmdb.org/t/p/w500/AsUpsdGwNbFRpPG6BxvshwFRaut.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's jazz-influenced soundtrack by Phil Moore was groundbreaking for animation, matching the visual experimentation with equally bold musical choices. This synthesis of modern art, jazz, and animation created a template followed by later works like **Pink Panther** (1963) shorts and **Heavy Traffic** (1973). The minimalist approach allowed complex emotions to be conveyed through simple, expressive linework - a technique that influenced independent animators for decades."
+      },
+      {
+        "type": "text",
+        "content": "The film's treatment of its source material - a murder ballad about jealousy and betrayal - showcases animation's ability to handle adult themes through stylization. This paved the way for mature animated works like **Allegro non Troppo** (1976) and **Watership Down** (1978). The courtroom framing device and unreliable narrators would later be echoed in films like **Rashomon** (1950) and **Chicago** (2002). SUBHEAD: UPA's Revolutionary Impact"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Man Who Never Was",
+            "year": 1956,
+            "slug": "Another UPA short showing their mature storytelling approach",
+            "poster": "https://image.tmdb.org/t/p/w500/ajb6naQi07fPhyJQ9DxkrGNU4Sw.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 43791,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ajb6naQi07fPhyJQ9DxkrGNU4Sw.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "UPA's influence extended far beyond American animation. Their modern aesthetic inspired European animators like Karel Zeman and influenced the development of limited animation techniques in Japan, helping birth the anime industry. **Rooty Toot Toot**'s success proved audiences would accept radical departures from Disney-style realism, encouraging experimentation in works like **Yellow Submarine** (1968) and later adult animation."
+      }
+    ],
+    "exploreFurther": [
+      "UPA Animation Studio's Rise and Innovation",
+      "Jazz and Animation - A Historical Partnership",
+      "Limited Animation Techniques and Their Global Impact",
+      "Folk Songs in Animated Adaptations",
+      "Modernist Art's Influence on Animation"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Brotherhood of Man",
+          "year": 1946,
+          "slug": "Early UPA social commentary animation",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": null
+        },
+        {
+          "title": "Mr. Magoo",
+          "year": 1949,
+          "slug": "UPA's most famous character debuts",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Various",
+          "tmdb_id": null
+        },
+        {
+          "title": "Christopher Crumpet",
+          "year": 1953,
+          "slug": "Another UPA experimental short",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 139264
+        },
+        {
+          "title": "Madeline",
+          "year": 1952,
+          "slug": "UPA's adaptation of the children's book",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "DVD",
+          "tmdb_id": 242994
+        },
+        {
+          "title": "Hell Bent for Election",
+          "year": 1944,
+          "slug": "Early political animation from proto-UPA team",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 83796
+        },
+        {
+          "title": "The Unicorn in the Garden",
+          "year": 1953,
+          "slug": "UPA's James Thurber adaptation",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 128753
+        },
+        {
+          "title": "The Emperor's New Clothes",
+          "year": 1953,
+          "slug": "Hans Christian Andersen by UPA",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 317612
+        },
+        {
+          "title": "Fudget's Budget",
+          "year": 1954,
+          "slug": "Modern life satirized through UPA style",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 139273
+        },
+        {
+          "title": "The Rise of Duton Lang",
+          "year": 1955,
+          "slug": "Late-period UPA experimentation",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 317706
+        },
+        {
+          "title": "Willie the Kid",
+          "year": 1952,
+          "slug": "Western genre gets UPA treatment",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 317607
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

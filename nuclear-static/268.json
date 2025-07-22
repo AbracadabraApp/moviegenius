@@ -1,0 +1,164 @@
+{
+  "props": {
+    "title": "Batman",
+    "year": 1989,
+    "initialSlug": "Gotham's Dark Knight Rises",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/cij4dd21v2Rk2YtUQbV5kW69WB2.jpg",
+    "initialStreaming": "Max, Max Amazon Channel",
+    "tmdbId": 268,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Tim Burton's Batman revolutionized superhero cinema by embracing Gothic darkness over comic camp. Jack Nicholson's deranged Joker and Michael Keaton's brooding Batman created the template for complex hero-villain dynamics that influenced films like <a href=\"/movie/155\" class=\"movie-title\" data-tmdb-id=\"155\">The Dark Knight</a> (2008). Burton's vision transformed Gotham into a character itself - a twisted Art Deco nightmare that drew from <a href=\"/movie/19\" class=\"movie-title\" data-tmdb-id=\"19\">Metropolis</a> (1927) and film noir aesthetics. The film's massive success ($411 million worldwide) proved audiences would embrace darker superhero storytelling."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Batman Returns",
+            "year": 1992,
+            "slug": "Burton's darker sequel doubles down on Gothic style with Michelle Pfeiffer's iconic Catwoman and Danny DeVito's grotesque Penguin",
+            "poster": "https://image.tmdb.org/t/p/w500/jKBjeXM7iBBV9UkUcOXx3m7FSHY.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 364,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jKBjeXM7iBBV9UkUcOXx3m7FSHY.jpg"
+          },
+          {
+            "title": "Batman Forever",
+            "year": 1995,
+            "slug": "Joel Schumacher takes over with a more colorful, campy tone starring Val Kilmer, Jim Carrey and Tommy Lee Jones",
+            "poster": "https://image.tmdb.org/t/p/w500/l0wdmQl9TDhMgz1f822yjXHdtlf.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 414,
+            "poster_url": "https://image.tmdb.org/t/p/w500/l0wdmQl9TDhMgz1f822yjXHdtlf.jpg"
+          },
+          {
+            "title": "Batman & Robin",
+            "year": 1997,
+            "slug": "The franchise hits rock bottom with George Clooney in a neon-colored mess that killed the series for 8 years",
+            "poster": "https://image.tmdb.org/t/p/w500/cGRDufDDSrFrv7VI4YnmWnslne0.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 415,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cGRDufDDSrFrv7VI4YnmWnslne0.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Batman marked a crucial turning point for blockbuster filmmaking. Anton Furst's Oscar-winning production design and Danny Elfman's gothic score created a cohesive dark aesthetic that influenced films like <a href=\"/movie/8592\" class=\"movie-title\" data-tmdb-id=\"8592\">Dick Tracy</a> (1990) and <a href=\"/movie/9495\" class=\"movie-title\" data-tmdb-id=\"9495\">The Crow</a> (1994). The marketing campaign was revolutionary - the bat symbol alone drove unprecedented merchandising that became the template for modern blockbuster promotion."
+      },
+      {
+        "type": "text",
+        "content": "The film's impact extends beyond superhero movies. Burton proved that auteur sensibilities could work in big-budget filmmaking, paving the way for directors like Christopher Nolan (<a href=\"/movie/272\" class=\"movie-title\" data-tmdb-id=\"272\">Batman Begins</a> 2005) and Taika Waititi (<a href=\"/movie/284053\" class=\"movie-title\" data-tmdb-id=\"284053\">Thor: Ragnarok</a> 2017) to put distinct stamps on franchise films. The practical effects and elaborate sets represent the peak of pre-CGI blockbusters, showing what's possible with physical craftsmanship. SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "text",
+        "content": "While <a href=\"/movie/1924\" class=\"movie-title\" data-tmdb-id=\"1924\">Superman</a> (1978) showed superheroes could work dramatically on screen, Batman proved they could be complex cultural events. The film's mature themes and marketing innovation created the modern comic book movie playbook. Its influence is visible in everything from <a href=\"/movie/36647\" class=\"movie-title\" data-tmdb-id=\"36647\">Blade</a> (1998) to <a href=\"/movie/557\" class=\"movie-title\" data-tmdb-id=\"557\">Spider-Man</a> (2002) to <a href=\"/movie/1726\" class=\"movie-title\" data-tmdb-id=\"1726\">Iron Man</a> (2008) - particularly in how these films balance character drama with spectacle."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Batman on Screen - From Adam West to Robert Pattinson",
+      "Tim Burton's Gothic Aesthetic and Its Influence on Modern Cinema",
+      "Practical Effects vs CGI in Superhero Cinema",
+      "The Impact of Batman (1989) on Movie Marketing",
+      "Jack Nicholson's Joker and the Evolution of Superhero Movie Villains"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Batman Begins",
+          "year": 2005,
+          "slug": "Nolan reboots Batman with Christian Bale in a gritty, realistic origin story",
+          "poster": "https://image.tmdb.org/t/p/w500/4MpN4kIEqUjW8OPtOQJXlTdHiJV.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 272,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4MpN4kIEqUjW8OPtOQJXlTdHiJV.jpg"
+        },
+        {
+          "title": "Superman",
+          "year": 1978,
+          "slug": "Christopher Reeve defines the modern superhero movie",
+          "poster": "https://image.tmdb.org/t/p/w500/d7px1FQxW4tngdACVRsCSaZq0Xl.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 1924,
+          "poster_url": "https://image.tmdb.org/t/p/w500/d7px1FQxW4tngdACVRsCSaZq0Xl.jpg"
+        },
+        {
+          "title": "The Dark Knight",
+          "year": 2008,
+          "slug": "Heath Ledger's Oscar-winning Joker performance elevates the superhero genre",
+          "poster": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 155,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+        },
+        {
+          "title": "Spider-Man",
+          "year": 2002,
+          "slug": "Sam Raimi brings Marvel's flagship hero to vibrant life",
+          "poster": "https://image.tmdb.org/t/p/w500/gh4cZbhZxyTbgxQPxD0dOudNPTn.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 557,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gh4cZbhZxyTbgxQPxD0dOudNPTn.jpg"
+        },
+        {
+          "title": "Blade",
+          "year": 1998,
+          "slug": "Wesley Snipes proves R-rated comic adaptations can work",
+          "poster": "https://image.tmdb.org/t/p/w500/oWT70TvbsmQaqyphCZpsnQR7R32.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 36647,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oWT70TvbsmQaqyphCZpsnQR7R32.jpg"
+        },
+        {
+          "title": "Dick Tracy",
+          "year": 1990,
+          "slug": "Warren Beatty's stylized comic adaptation follows Batman's template",
+          "poster": "https://image.tmdb.org/t/p/w500/AonBXZe8GwnW8f1TWI2KcewOsfS.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 8592,
+          "poster_url": "https://image.tmdb.org/t/p/w500/AonBXZe8GwnW8f1TWI2KcewOsfS.jpg"
+        },
+        {
+          "title": "The Crow",
+          "year": 1994,
+          "slug": "Dark comic adaptation channels Batman's Gothic atmosphere",
+          "poster": "https://image.tmdb.org/t/p/w500/rMMB3v6jYHjsvXRNJYESacoTD7j.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 9495,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rMMB3v6jYHjsvXRNJYESacoTD7j.jpg"
+        },
+        {
+          "title": "The Mask",
+          "year": 1994,
+          "slug": "Jim Carrey channels Nicholson's Joker energy in another dark comic adaptation",
+          "poster": "https://image.tmdb.org/t/p/w500/xbbXp9px4o8Oe7IbGd0yIbla8mZ.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 854,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xbbXp9px4o8Oe7IbGd0yIbla8mZ.jpg"
+        },
+        {
+          "title": "Darkman",
+          "year": 1990,
+          "slug": "Sam Raimi's original superhero film inspired by Batman's success",
+          "poster": "https://image.tmdb.org/t/p/w500/u3CHG0I5VPFaIbA6pdU0n2W813s.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 9556,
+          "poster_url": "https://image.tmdb.org/t/p/w500/u3CHG0I5VPFaIbA6pdU0n2W813s.jpg"
+        },
+        {
+          "title": "Batman: Mask of the Phantasm",
+          "year": 1993,
+          "slug": "Animated film maintains Burton's dark tone",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

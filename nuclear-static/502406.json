@@ -1,0 +1,157 @@
+{
+  "props": {
+    "title": "St. Agatha",
+    "year": 2018,
+    "initialSlug": "Unholy horrors await.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/zpR3FzaagWTbwgFPn1P6sEZ4str.jpg",
+    "initialStreaming": null,
+    "tmdbId": 502406,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**St. Agatha** (2018) stands as a haunting entry in the nunsploitation subgenre, following the dark tradition of films like <a href=\"/movie/31767\" class=\"movie-title\">The Devils</a> (1971) and <a href=\"/movie/65899\" class=\"movie-title\">Dark Waters</a> (1993). Set in 1957 Georgia, it tackles religious horror through the lens of a pregnant con woman seeking refuge in a convent that harbors sinister secrets. Director Darren Lynn Bousman, known for several **Saw** franchise entries (2005-2007), brings his expertise in visceral horror to this period piece, creating a claustrophobic atmosphere that recalls the psychological tension of <a href=\"/movie/805\" class=\"movie-title\">Rosemary's Baby</a> (1968)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Devils",
+            "year": 1971,
+            "slug": "Ken Russell's controversial masterpiece about mass hysteria and religious corruption in 17th century France",
+            "poster": "https://image.tmdb.org/t/p/w500/y1k7eiOFc6fzm8XeTa1kNGx6JIs.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 31767,
+            "poster_url": "https://image.tmdb.org/t/p/w500/y1k7eiOFc6fzm8XeTa1kNGx6JIs.jpg"
+          },
+          {
+            "title": "Dark Waters",
+            "year": 1993,
+            "slug": "Gothic horror about a woman investigating mysterious deaths in an isolated convent",
+            "poster": "https://image.tmdb.org/t/p/w500/wDcyo7b0XniwJlgGESKiqZ7xNFe.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 65899,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wDcyo7b0XniwJlgGESKiqZ7xNFe.jpg"
+          },
+          {
+            "title": "Rosemary's Baby",
+            "year": 1968,
+            "slug": "Polanski's psychological horror about a pregnant woman surrounded by a sinister cult",
+            "poster": "https://image.tmdb.org/t/p/w500/nclYFGpVzfbiORO5ELVVdxzt9Vg.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 805,
+            "poster_url": "https://image.tmdb.org/t/p/w500/nclYFGpVzfbiORO5ELVVdxzt9Vg.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The nunsploitation subgenre emerged in the 1970s with provocative films like **School of the Holy Beast** (1974) and **Flavia the Heretic** (1974). These exploitation films often mixed religious imagery with horror and sexuality, challenging institutional authority. Modern interpretations like **The Nun** (2018) and **St. Agatha** take a more psychological approach, focusing on power dynamics and institutional abuse rather than explicit exploitation elements. SUBHEAD: Religious Horror Evolution"
+      },
+      {
+        "type": "text",
+        "content": "Religious horror has evolved significantly since **The Exorcist** (1973) defined the genre. Modern entries like **Saint Maud** (2019) and **The Witch** (2015) explore faith-based horror through a more nuanced lens, examining personal crisis and institutional corruption. **St. Agatha** bridges these approaches, combining traditional convent horror with contemporary psychological themes and body horror elements reminiscent of **Martyrs** (2008)."
+      }
+    ],
+    "exploreFurther": [
+      "The History of Nunsploitation Cinema - From Italian Gothic to Modern Horror",
+      "Religious Horror's Evolution: From The Exorcist to Modern Faith-Based Terror",
+      "Darren Lynn Bousman's Directorial Style Across Horror Subgenres",
+      "The Role of Period Settings in Modern Horror Films",
+      "Pregnancy Horror: Analyzing Society's Greatest Fears"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Nun",
+          "year": 2018,
+          "slug": "Demonic nun terrorizes a Romanian abbey",
+          "poster": "https://image.tmdb.org/t/p/w500/sFC1ElvoKGdHJIWRpNB3xWJ9lJA.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 439079,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sFC1ElvoKGdHJIWRpNB3xWJ9lJA.jpg"
+        },
+        {
+          "title": "Saint Maud",
+          "year": 2019,
+          "slug": "Psychological horror about a devout nurse's dangerous obsession",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 575776
+        },
+        {
+          "title": "The Witch",
+          "year": 2015,
+          "slug": "Period horror about a Puritan family facing evil in colonial New England",
+          "poster": "https://image.tmdb.org/t/p/w500/zap5hpFCWSvdWSuPGAQyjUv2wAC.jpg",
+          "initialStreaming": "Showtime",
+          "tmdb_id": 310131,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zap5hpFCWSvdWSuPGAQyjUv2wAC.jpg"
+        },
+        {
+          "title": "Martyrs",
+          "year": 2008,
+          "slug": "Extreme French horror about religious cult and martyrdom",
+          "poster": "https://image.tmdb.org/t/p/w500/5yfPA9lXqONtLMgZks87ECob1A5.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 9539,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5yfPA9lXqONtLMgZks87ECob1A5.jpg"
+        },
+        {
+          "title": "Alucarda",
+          "year": 1977,
+          "slug": "Mexican horror about demonic possession in a convent",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 40074
+        },
+        {
+          "title": "Mother Joan of the Angels",
+          "year": 1961,
+          "slug": "Polish drama about possession in a convent",
+          "poster": "https://image.tmdb.org/t/p/w500/3DRAaO2Yp9wd2lvgRSjWbyeN0Vs.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 113458,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3DRAaO2Yp9wd2lvgRSjWbyeN0Vs.jpg"
+        },
+        {
+          "title": "The Other Hell",
+          "year": 1981,
+          "slug": "Italian horror about murders in a convent",
+          "poster": "https://image.tmdb.org/t/p/w500/fUQkx1nLYd4Jvmno2oJfwI4sgdK.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 124393,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fUQkx1nLYd4Jvmno2oJfwI4sgdK.jpg"
+        },
+        {
+          "title": "The Little Hours",
+          "year": 2017,
+          "slug": "Dark comedy about medieval nuns",
+          "poster": "https://image.tmdb.org/t/p/w500/wS69OOwBJzimoLIcmYMSVkmhCZM.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 411873,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wS69OOwBJzimoLIcmYMSVkmhCZM.jpg"
+        },
+        {
+          "title": "Agnes",
+          "year": 2021,
+          "slug": "Modern possession horror in a convent",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": null
+        },
+        {
+          "title": "Killer Nun",
+          "year": 1979,
+          "slug": "Classic nunsploitation thriller",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 42211
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

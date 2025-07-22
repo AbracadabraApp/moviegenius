@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "X-Men",
+    "year": 2000,
+    "initialSlug": "The ultimate power is within.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/bRDAc4GogyS9ci3ow7UnInOcriN.jpg",
+    "initialStreaming": null,
+    "tmdbId": 36657,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "X-Men revolutionized superhero cinema by grounding mutant powers in social commentary about discrimination and fear of the \"other.\" Bryan Singer's film arrived before the Marvel explosion, proving superhero stories could tackle serious themes while delivering compelling action. The inspired casting of Patrick Stewart as Professor X and Ian McKellen as Magneto brought gravitas to the philosophical clash between integration and separation. Meanwhile, Hugh Jackman's breakout as Wolverine defined the role for 17 years, setting a new standard for superhero casting that influenced everything from Robert Downey Jr.'s Iron Man to Christian Bale's Batman."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "X2: X-Men United",
+            "year": 2003,
+            "slug": "The superior sequel ups the stakes as Wolverine's past comes back to haunt him while anti-mutant forces threaten both sides",
+            "poster": "https://image.tmdb.org/t/p/w500/rtrd4qieMAhoUshu83Vi1GazM1O.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 36658,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rtrd4qieMAhoUshu83Vi1GazM1O.jpg"
+          },
+          {
+            "title": "X-Men: First Class",
+            "year": 2011,
+            "slug": "This stylish 1960s-set prequel explores the complex friendship between young Charles Xavier and Erik Lehnsherr",
+            "poster": "https://image.tmdb.org/t/p/w500/hNEokmUke0dazoBhttFN0o3L7Xv.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 49538,
+            "poster_url": "https://image.tmdb.org/t/p/w500/hNEokmUke0dazoBhttFN0o3L7Xv.jpg"
+          },
+          {
+            "title": "Logan",
+            "year": 2017,
+            "slug": "A gritty, violent Western take on Wolverine's final chapter that transcends the superhero genre",
+            "poster": "https://image.tmdb.org/t/p/w500/fnbjcRDYn6YviCcePDnGdyAkYsB.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 263115,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fnbjcRDYn6YviCcePDnGdyAkYsB.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The X-Men franchise helped establish the template for modern superhero worldbuilding. While <a href=\"/movie/557\" class=\"movie-title\" data-tmdb-id=\"557\">Spider-Man</a> (2002) and <a href=\"/movie/272\" class=\"movie-title\" data-tmdb-id=\"272\">Batman Begins</a> (2005) focused on individual heroes, X-Men demonstrated how to juggle an ensemble cast while weaving complex mythology. The film's success paved the way for team-based blockbusters like <a href=\"/movie/24428\" class=\"movie-title\" data-tmdb-id=\"24428\">The Avengers</a> (2012). Its serious treatment of prejudice and civil rights allegories influenced later superhero films tackling social issues, from <a href=\"/movie/284054\" class=\"movie-title\" data-tmdb-id=\"284054\">Black Panther</a> (2018) to <a href=\"/movie/271110\" class=\"movie-title\" data-tmdb-id=\"271110\">Captain America: Civil War</a> (2016)."
+      },
+      {
+        "type": "text",
+        "content": "The practical effects and grounded approach to mutant powers in X-Men marked a significant shift from the campy superhero films of the 1990s like <a href=\"/movie/415\" class=\"movie-title\" data-tmdb-id=\"415\">Batman & Robin</a> (1997). Singer's direction emphasized character drama over spectacle, though the train station and Statue of Liberty sequences proved mutant battles could be both meaningful and thrilling. This balance of character, theme, and action became the blueprint for Marvel's later success. SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Days of Future Past",
+            "year": 2014,
+            "slug": "Time travel epic uniting both X-Men casts in a fight to prevent a dystopian future",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 127585
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's impact extends beyond superhero cinema. Its exploration of found family and acceptance resonated with audiences, while the political tensions between Xavier and Magneto's approaches to civil rights created a complex moral universe rarely seen in blockbusters of the era. X-Men proved comic book adaptations could be sophisticated entertainment for adults while remaining accessible to younger viewers, a balance that later defined the MCU's approach with films like <a href=\"/movie/1726\" class=\"movie-title\" data-tmdb-id=\"1726\">Iron Man</a> (2008) and <a href=\"/movie/100402\" class=\"movie-title\" data-tmdb-id=\"100402\">Captain America: The Winter Soldier</a> (2014)."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Superhero Cinema Pre/Post X-Men",
+      "Civil Rights Metaphors in X-Men Comics and Films",
+      "Bryan Singer's Influence on Modern Blockbuster Filmmaking",
+      "Practical vs CGI Effects in Early Superhero Movies",
+      "Impact of Strategic Casting in Superhero Franchises"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Spider-Man",
+          "year": 2002,
+          "slug": "Sam Raimi's definitive take on the webslinger set new standards for superhero origin stories",
+          "poster": "https://image.tmdb.org/t/p/w500/gh4cZbhZxyTbgxQPxD0dOudNPTn.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 557,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gh4cZbhZxyTbgxQPxD0dOudNPTn.jpg"
+        },
+        {
+          "title": "Batman Begins",
+          "year": 2005,
+          "slug": "Christopher Nolan reinvents the Dark Knight with a gritty, realistic approach",
+          "poster": "https://image.tmdb.org/t/p/w500/4MpN4kIEqUjW8OPtOQJXlTdHiJV.jpg",
+          "initialStreaming": "Max",
+          "tmdb_id": 272,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4MpN4kIEqUjW8OPtOQJXlTdHiJV.jpg"
+        },
+        {
+          "title": "Iron Man",
+          "year": 2008,
+          "slug": "The film that launched the MCU with Robert Downey Jr.'s perfect casting",
+          "poster": "https://image.tmdb.org/t/p/w500/78lPtwv72eTNqFW9COBYI0dWDJa.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 1726,
+          "poster_url": "https://image.tmdb.org/t/p/w500/78lPtwv72eTNqFW9COBYI0dWDJa.jpg"
+        },
+        {
+          "title": "The Dark Knight",
+          "year": 2008,
+          "slug": "Heath Ledger's Joker elevates the superhero genre to new dramatic heights",
+          "poster": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+          "initialStreaming": "Max",
+          "tmdb_id": 155,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+        },
+        {
+          "title": "Captain America: The First Avenger",
+          "year": 2011,
+          "slug": "Period superhero film that established the MCU's moral center",
+          "poster": "https://image.tmdb.org/t/p/w500/vSNxAJTlD0r02V9sPYpOjqDZXUK.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 1771,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vSNxAJTlD0r02V9sPYpOjqDZXUK.jpg"
+        },
+        {
+          "title": "The Avengers",
+          "year": 2012,
+          "slug": "Unprecedented superhero team-up that changed blockbuster cinema",
+          "poster": "https://image.tmdb.org/t/p/w500/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 24428,
+          "poster_url": "https://image.tmdb.org/t/p/w500/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg"
+        },
+        {
+          "title": "Wonder Woman",
+          "year": 2017,
+          "slug": "Groundbreaking female-led superhero film set in WWI",
+          "poster": "https://image.tmdb.org/t/p/w500/v4ncgZjG2Zu8ZW5al1vIZTsSjqX.jpg",
+          "initialStreaming": "Max",
+          "tmdb_id": 297762,
+          "poster_url": "https://image.tmdb.org/t/p/w500/v4ncgZjG2Zu8ZW5al1vIZTsSjqX.jpg"
+        },
+        {
+          "title": "Black Panther",
+          "year": 2018,
+          "slug": "Revolutionary Afrofuturist superhero film that transcended the genre",
+          "poster": "https://image.tmdb.org/t/p/w500/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 284054,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uxzzxijgPIY7slzFvMotPv8wjKA.jpg"
+        },
+        {
+          "title": "Deadpool",
+          "year": 2016,
+          "slug": "R-rated deconstruction of superhero tropes",
+          "poster": "https://image.tmdb.org/t/p/w500/3E53WEZJqP6aM84D8CckXx4pIHw.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 293660,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3E53WEZJqP6aM84D8CckXx4pIHw.jpg"
+        },
+        {
+          "title": "Superman",
+          "year": 1978,
+          "slug": "The groundbreaking Christopher Reeve classic that made you believe a man could fly",
+          "poster": "https://image.tmdb.org/t/p/w500/d7px1FQxW4tngdACVRsCSaZq0Xl.jpg",
+          "initialStreaming": "Max",
+          "tmdb_id": 1924,
+          "poster_url": "https://image.tmdb.org/t/p/w500/d7px1FQxW4tngdACVRsCSaZq0Xl.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

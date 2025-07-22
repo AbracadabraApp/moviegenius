@@ -1,0 +1,168 @@
+{
+  "props": {
+    "title": "A Woman Is a Woman",
+    "year": 1961,
+    "initialSlug": "A quirky musical about love, babies, and stubbornness",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/xrZu21hriGJQY3qY8nifh2smVHu.jpg",
+    "initialStreaming": null,
+    "tmdbId": 31522,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Jean-Luc Godard's A Woman Is a Woman brilliantly subverts the Hollywood musical while paying homage to it. Shot in vibrant Techniscope with primary colors that echo Jacques Demy, Godard crafts a playful anti-musical where Anna Karina's stripper Angela wants a baby, leading to a complex romantic triangle with Jean-Claude Brialy and Jean-Paul Belmondo. The film marks Godard's first color feature and demonstrates his early experimental phase, building on the success of <a href=\"/movie/269\" class=\"movie-title\">Breathless</a> (1960) while pushing further into meta-commentary on cinema itself."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Breathless",
+            "year": 1960,
+            "slug": "Godard's groundbreaking French New Wave crime film starring Jean-Paul Belmondo as a criminal who models himself after Humphrey Bogart",
+            "poster": "https://image.tmdb.org/t/p/w500/9Wx0Wdn2EOqeCZU4SP6tlS3LOml.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 269,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9Wx0Wdn2EOqeCZU4SP6tlS3LOml.jpg"
+          },
+          {
+            "title": "The Umbrellas of Cherbourg",
+            "year": 1964,
+            "slug": "Jacques Demy's entirely sung-through musical romance starring Catherine Deneuve in vibrant color",
+            "poster": "https://image.tmdb.org/t/p/w500/tAgTf64XKK5ir7w5C7dnB53jWWG.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 5967,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tAgTf64XKK5ir7w5C7dnB53jWWG.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's innovative approach to the musical genre created ripples through cinema history. While traditional Hollywood musicals like <a href=\"/movie/872\" class=\"movie-title\" data-tmdb-id=\"872\">Singin' in the Rain</a> (1952) embraced spectacle and choreography, Godard deliberately interrupts musical moments and breaks the fourth wall. This influence can be seen in later experimental musicals like <a href=\"/movie/16858\" class=\"movie-title\" data-tmdb-id=\"16858\">All That Jazz</a> (1979) and even contemporary works like <a href=\"/movie/424277\" class=\"movie-title\" data-tmdb-id=\"424277\">Annette</a> (2021), where the form itself becomes part of the commentary."
+      },
+      {
+        "type": "text",
+        "content": "Karina's performance as Angela establishes her as the face of the French New Wave, combining vulnerability with fierce independence. The film's exploration of gender roles and reproduction feels startlingly modern, predating similar themes in works like <a href=\"/movie/308191\" class=\"movie-title\" data-tmdb-id=\"308191\">Jeanne Dielman</a> (1975) and <a href=\"/movie/38731\" class=\"movie-title\" data-tmdb-id=\"38731\">An Unmarried Woman</a> (1978). Godard's use of direct address and self-reflexive techniques would influence generations of filmmakers, from Chantal Akerman to Wes Anderson. SUBHEAD: The Musical as Political Statement"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Band of Outsiders",
+            "year": 1964,
+            "slug": "Another Godard-Karina collaboration featuring the famous Madison dance sequence",
+            "poster": "https://image.tmdb.org/t/p/w500/9oqyj79xmcypxLajJdefOtrYx64.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 8073,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9oqyj79xmcypxLajJdefOtrYx64.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Godard uses the musical format to critique both American cultural imperialism and French bourgeois values. The film's constant references to Hollywood musicals - from <a href=\"/movie/31516\" class=\"movie-title\" data-tmdb-id=\"31516\">On the Town</a> (1949) to <a href=\"/movie/13320\" class=\"movie-title\" data-tmdb-id=\"13320\">Funny Face</a> (1957) - serve as both loving tribute and critical deconstruction. This approach would later influence directors like Jacques Rivette in Celine and Julie Go Boating (1974) and Lars von Trier in <a href=\"/movie/16\" class=\"movie-title\" data-tmdb-id=\"16\">Dancer in the Dark</a> (2000)."
+      }
+    ],
+    "exploreFurther": [
+      "The French New Wave's Relationship with Hollywood Genres",
+      "Anna Karina's Collaboration with Godard",
+      "The Evolution of the Movie Musical",
+      "Meta-Cinema in the 1960s",
+      "Gender Politics in Godard's Early Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Pierrot le Fou",
+          "year": 1965,
+          "slug": "Godard and Karina's explosive color crime romance",
+          "poster": "https://image.tmdb.org/t/p/w500/i124H6iQB4CawrgFW9aZaZs7OBO.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 2786,
+          "poster_url": "https://image.tmdb.org/t/p/w500/i124H6iQB4CawrgFW9aZaZs7OBO.jpg"
+        },
+        {
+          "title": "The Young Girls of Rochefort",
+          "year": 1967,
+          "slug": "Demy's follow-up to Umbrellas with Catherine Deneuve and Gene Kelly",
+          "poster": "https://image.tmdb.org/t/p/w500/jtxhyGaYhurH6KsjvP1jV3dDypz.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 2433,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jtxhyGaYhurH6KsjvP1jV3dDypz.jpg"
+        },
+        {
+          "title": "Made in U.S.A",
+          "year": 1966,
+          "slug": "Godard's pop-art noir with Anna Karina",
+          "poster": "https://image.tmdb.org/t/p/w500/gStAcnmSNzBtbEru3avvjKu54zg.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 29369,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gStAcnmSNzBtbEru3avvjKu54zg.jpg"
+        },
+        {
+          "title": "Vivre Sa Vie",
+          "year": 1962,
+          "slug": "Godard's stark examination of a young woman's life in Paris",
+          "poster": "https://image.tmdb.org/t/p/w500/lYTAYclvYIa1SR4wRwMW7OwGp86.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1626,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lYTAYclvYIa1SR4wRwMW7OwGp86.jpg"
+        },
+        {
+          "title": "The Young Girls Turn 25",
+          "year": 1993,
+          "slug": "Agnes Varda's documentary about The Young Girls of Rochefort",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 200381
+        },
+        {
+          "title": "8 Women",
+          "year": 2002,
+          "slug": "François Ozon's musical mystery comedy homage to 1950s Hollywood",
+          "poster": "https://image.tmdb.org/t/p/w500/bJu4Gm7NQb2woPiIovrPD5jNWzf.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 1958,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bJu4Gm7NQb2woPiIovrPD5jNWzf.jpg"
+        },
+        {
+          "title": "Alphaville",
+          "year": 1965,
+          "slug": "Godard's sci-fi noir starring Eddie Constantine",
+          "poster": "https://image.tmdb.org/t/p/w500/fFJP3D5fJDFxN7ChqSye1DZ0fTL.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 8072,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fFJP3D5fJDFxN7ChqSye1DZ0fTL.jpg"
+        },
+        {
+          "title": "My Life to Live",
+          "year": 1962,
+          "slug": "Another essential Godard-Karina collaboration",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1626
+        },
+        {
+          "title": "Le Petit Soldat",
+          "year": 1963,
+          "slug": "Godard's controversial political thriller with Karina",
+          "poster": "https://image.tmdb.org/t/p/w500/pzKFKVZHeGhJQYWZN6qO3GXUApU.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 50785,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pzKFKVZHeGhJQYWZN6qO3GXUApU.jpg"
+        },
+        {
+          "title": "The Soft Skin",
+          "year": 1964,
+          "slug": "Truffaut's drama about infidelity and fame",
+          "poster": "https://image.tmdb.org/t/p/w500/nYo083NgJCAQQByHzYrayxQ5xBV.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1719,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nYo083NgJCAQQByHzYrayxQ5xBV.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

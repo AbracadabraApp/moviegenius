@@ -1,0 +1,193 @@
+{
+  "props": {
+    "title": "Westworld",
+    "year": 1973,
+    "initialSlug": "Robots run amok in deadly theme park nightmare",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/qNt29HzxwZ4jGTgSRxdA34ino9Q.jpg",
+    "initialStreaming": null,
+    "tmdbId": 2362,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Westworld revolutionized sci-fi by introducing the first CGI effects in feature film history and establishing the \"killer robot\" template that would influence everything from <a href=\"/movie/218\" class=\"movie-title\" data-tmdb-id=\"218\">The Terminator</a> (1984) to <a href=\"/movie/264660\" class=\"movie-title\" data-tmdb-id=\"264660\">Ex Machina</a> (2014). Michael Crichton's directorial debut eerily predicted AI rebellion decades before it became a mainstream concern, following two visitors (Richard Benjamin and James Brolin) at a high-tech adult theme park where the robotic hosts, led by Yul Brynner's relentless Gunslinger, turn deadly. The film's DNA is clearly visible in Crichton's later <a href=\"/movie/329\" class=\"movie-title\" data-tmdb-id=\"329\">Jurassic Park</a> (1993) - both feature leisure attractions where corporate hubris leads to technological catastrophe."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Futureworld",
+            "year": 1976,
+            "slug": "The lesser-known sequel expands the scope to political conspiracy as reporters investigate the rebuilt park",
+            "poster": "https://image.tmdb.org/t/p/w500/sH5b8w52rEt8iqc1ibt1SwU5P.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 10640,
+            "poster_url": "https://image.tmdb.org/t/p/w500/sH5b8w52rEt8iqc1ibt1SwU5P.jpg"
+          },
+          {
+            "title": "Blade Runner",
+            "year": 1982,
+            "slug": "Ridley Scott's neo-noir masterpiece about synthetic humans questioning their existence redefined sci-fi aesthetics",
+            "poster": "https://image.tmdb.org/t/p/w500/63N9uy8nd9j7Eog2axPQ8lbr3Wj.jpg",
+            "initialStreaming": "Max",
+            "tmdb_id": 78,
+            "poster_url": "https://image.tmdb.org/t/p/w500/63N9uy8nd9j7Eog2axPQ8lbr3Wj.jpg"
+          },
+          {
+            "title": "I, Robot",
+            "year": 2004,
+            "slug": "Will Smith investigates robot crimes in this loose adaptation of Asimov's laws of robotics",
+            "poster": "https://image.tmdb.org/t/p/w500/efwv6F2lGaghjPpBRSINHtoEiZB.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 2048,
+            "poster_url": "https://image.tmdb.org/t/p/w500/efwv6F2lGaghjPpBRSINHtoEiZB.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends far beyond its immediate sequels. AI: Artificial Intelligence (2001) explores similar questions of machine consciousness and human responsibility toward our creations. The HBO series Westworld (2016-2022) expands the original's premise into a philosophically complex examination of consciousness, free will, and what defines humanity. Even <a href=\"/movie/550988\" class=\"movie-title\" data-tmdb-id=\"550988\">Free Guy</a> (2021) owes a debt to the concept of AI characters becoming self-aware within manufactured worlds. SUBHEAD: The Evolution of Robot Cinema"
+      },
+      {
+        "type": "text",
+        "content": "Westworld's portrayal of humanoid robots marked a crucial shift from the clunky mechanoids of <a href=\"/movie/830\" class=\"movie-title\" data-tmdb-id=\"830\">Forbidden Planet</a> (1956) and <a href=\"/movie/828\" class=\"movie-title\" data-tmdb-id=\"828\">The Day the Earth Stood Still</a> (1951). Its sophisticated androids, indistinguishable from humans until they malfunction, set the stage for films like <a href=\"/movie/264660\" class=\"movie-title\" data-tmdb-id=\"264660\">Ex Machina</a> (2014) and <a href=\"/movie/70981\" class=\"movie-title\" data-tmdb-id=\"70981\">Prometheus</a> (2012), where the line between human and machine becomes increasingly blurred. The film's theme park setting and corporate negligence storyline also influenced disaster films like <a href=\"/movie/135397\" class=\"movie-title\" data-tmdb-id=\"135397\">Jurassic World</a> (2015) and <a href=\"/movie/8914\" class=\"movie-title\" data-tmdb-id=\"8914\">Deep Blue Sea</a> (1999)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Demon Seed",
+            "year": 1977,
+            "slug": "A scientist's wife becomes trapped by an AI system that wants to procreate",
+            "poster": "https://image.tmdb.org/t/p/w500/1COyCeH7NLNohVd0mRFDSBWt1Yv.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 18775,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1COyCeH7NLNohVd0mRFDSBWt1Yv.jpg"
+          },
+          {
+            "title": "Automata",
+            "year": 2014,
+            "slug": "Antonio Banderas investigates robots that violate their core protocols in a dystopian future",
+            "poster": "https://image.tmdb.org/t/p/w500/v2CokOK5RfdkTo6C26PifDCndoX.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 262543,
+            "poster_url": "https://image.tmdb.org/t/p/w500/v2CokOK5RfdkTo6C26PifDCndoX.jpg"
+          },
+          {
+            "title": "Upgrade",
+            "year": 2018,
+            "slug": "A paralyzed man receives an AI implant that turns him into a killing machine",
+            "poster": "https://image.tmdb.org/t/p/w500/5f28TXtvHioXirX2n1XH8EJ314v.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 500664,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5f28TXtvHioXirX2n1XH8EJ314v.jpg"
+          }
+        ]
+      }
+    ],
+    "exploreFurther": [
+      "The Development of CGI in 1970s Cinema",
+      "Michael Crichton's Scientific Thrillers and Their Film Adaptations",
+      "The Evolution of Robot Design in Science Fiction",
+      "Theme Parks in Disaster Cinema",
+      "The Influence of Westworld on Modern AI Narratives"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "RoboCop",
+          "year": 1987,
+          "slug": "Cybernetic cop struggles with his humanity",
+          "poster": "https://image.tmdb.org/t/p/w500/esmAU0fCO28FbS6bUBKLAzJrohZ.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 5548,
+          "poster_url": "https://image.tmdb.org/t/p/w500/esmAU0fCO28FbS6bUBKLAzJrohZ.jpg"
+        },
+        {
+          "title": "The Machine",
+          "year": 2013,
+          "slug": "Scientists create an AI that becomes dangerously self-aware",
+          "poster": "https://image.tmdb.org/t/p/w500/lifeSN6rtXYkCPvvjoJpsaonGNv.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 174675,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lifeSN6rtXYkCPvvjoJpsaonGNv.jpg"
+        },
+        {
+          "title": "Virtuosity",
+          "year": 1995,
+          "slug": "Virtual reality serial killer becomes real",
+          "poster": "https://image.tmdb.org/t/p/w500/5emgnXYrXjqyiup2JsvtuENseiV.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 9271,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5emgnXYrXjqyiup2JsvtuENseiV.jpg"
+        },
+        {
+          "title": "Saturn 3",
+          "year": 1980,
+          "slug": "Isolated space station crew battles rogue robot",
+          "poster": "https://image.tmdb.org/t/p/w500/zAoLR1azwd8QbglnjWpOwJ4PI6C.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 19761,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zAoLR1azwd8QbglnjWpOwJ4PI6C.jpg"
+        },
+        {
+          "title": "Screamers",
+          "year": 1995,
+          "slug": "Autonomous weapons evolve beyond their programming",
+          "poster": "https://image.tmdb.org/t/p/w500/eqgBf791rMZG7ywHfObpXeMpiRf.jpg",
+          "initialStreaming": "Pluto",
+          "tmdb_id": 9102,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eqgBf791rMZG7ywHfObpXeMpiRf.jpg"
+        },
+        {
+          "title": "Android",
+          "year": 1982,
+          "slug": "Robot assistant helps human escape space station",
+          "poster": "https://image.tmdb.org/t/p/w500/2exixpei6yaOBrnKgYun1fybsoM.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 38849,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2exixpei6yaOBrnKgYun1fybsoM.jpg"
+        },
+        {
+          "title": "Cherry 2000",
+          "year": 1987,
+          "slug": "Man searches post-apocalyptic wasteland for robot companion parts",
+          "poster": "https://image.tmdb.org/t/p/w500/t3uds00MHLsibhKLCL0BbCEGxXb.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 15785,
+          "poster_url": "https://image.tmdb.org/t/p/w500/t3uds00MHLsibhKLCL0BbCEGxXb.jpg"
+        },
+        {
+          "title": "Hardware",
+          "year": 1990,
+          "slug": "Salvaged military robot reactivates in apartment",
+          "poster": "https://image.tmdb.org/t/p/w500/29WnkQ9wlvPCWEuWl7d2gtSZHQX.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 11309,
+          "poster_url": "https://image.tmdb.org/t/p/w500/29WnkQ9wlvPCWEuWl7d2gtSZHQX.jpg"
+        },
+        {
+          "title": "Making Mr. Right",
+          "year": 1987,
+          "slug": "Scientist creates android that falls in love",
+          "poster": "https://image.tmdb.org/t/p/w500/qsJFNUQz1ObK85kRk06ahyW5dKr.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 32058,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qsJFNUQz1ObK85kRk06ahyW5dKr.jpg"
+        },
+        {
+          "title": "D.A.R.Y.L.",
+          "year": 1985,
+          "slug": "Government weapon in form of artificial boy tries to be human",
+          "poster": "https://image.tmdb.org/t/p/w500/87huhTOQijJy0pLhusZfest1MoZ.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 16248,
+          "poster_url": "https://image.tmdb.org/t/p/w500/87huhTOQijJy0pLhusZfest1MoZ.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

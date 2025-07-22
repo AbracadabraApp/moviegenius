@@ -1,0 +1,150 @@
+{
+  "props": {
+    "title": "3 Idiotas",
+    "year": 2017,
+    "initialSlug": "Friendship is the greatest gift.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/hZB9NvNLcxdmoiAh58ZfG8vdXjf.jpg",
+    "initialStreaming": null,
+    "tmdbId": 346034,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**3 Idiotas** (2017) reimagines the massive Bollywood hit <a href=\"/movie/20453\" class=\"movie-title\">3 Idiots</a> (2009) through a distinctly Mexican lens, transporting the story of friendship and academic pressure to the halls of a Mexican engineering institute. Like its Indian predecessor, it tackles universal themes of educational conformity versus creative thinking, but with cultural touches specific to Latin American youth. The film follows the same core premise that made **3 Idiots** a phenomenon - three friends navigating college life while questioning traditional measures of success. Director Carlos Bolado infuses the remake with Mexican humor and social commentary, though it maintains the emotional core that made the original resonate globally."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "3 Idiots",
+            "year": 2009,
+            "slug": "The original Indian blockbuster about three engineering students challenging the education system",
+            "poster": "https://image.tmdb.org/t/p/w500/66A9MqXOyVFCssoloscw79z8Tew.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 20453,
+            "poster_url": "https://image.tmdb.org/t/p/w500/66A9MqXOyVFCssoloscw79z8Tew.jpg"
+          },
+          {
+            "title": "Y Tu Mamá También",
+            "year": 2001,
+            "slug": "A coming-of-age Mexican road trip film exploring friendship and self-discovery",
+            "poster": "https://image.tmdb.org/t/p/w500/eTAQWIqHyFtnvNyYpFO5IoaVi1L.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 1391,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eTAQWIqHyFtnvNyYpFO5IoaVi1L.jpg"
+          },
+          {
+            "title": "We Are the Nobles",
+            "year": 2013,
+            "slug": "Mexican comedy about privileged siblings learning life lessons",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 180147
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film fits into a broader trend of Latin American coming-of-age stories that examine class differences and educational pressures, like **The Perfect Dictatorship** (2014) and **Instructions Not Included** (2013). Where **3 Idiotas** stands out is its focus on STEM education and the universal struggle between passion and parental expectations. The physical comedy and friendship dynamics recall successful Mexican comedies like **Nosotros los Nobles** (2013), while maintaining the emotional depth of its source material. SUBHEAD: Cultural Translation and Adaptation"
+      },
+      {
+        "type": "text",
+        "content": "What's particularly interesting about **3 Idiotas** (2017) is how it demonstrates the universality of certain themes while adapting specific cultural touchpoints. Where the Indian original dealt with the unique pressures of the IIT system, the Mexican version explores similar dynamics within Latin American technical institutes. The film joins other successful cross-cultural adaptations like **Instructions Not Included** (2013) and **How to Break Up with Your Douchebag** (2017) in proving that core human experiences transcend borders, while still maintaining distinct cultural identity."
+      }
+    ],
+    "exploreFurther": [
+      "The evolution of Mexican comedy cinema in the 21st century",
+      "Cross-cultural film adaptations and their impact on local audiences",
+      "Representation of higher education in Latin American cinema",
+      "The influence of Bollywood on global filmmaking",
+      "Coming-of-age stories across different cultural contexts"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Instructions Not Included",
+          "year": 2013,
+          "slug": "Heartwarming Mexican comedy about an unexpected father",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 211954
+        },
+        {
+          "title": "No Manches Frida",
+          "year": 2016,
+          "slug": "Comedy about an ex-con posing as a substitute teacher",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 375794
+        },
+        {
+          "title": "The Noble Family",
+          "year": 2013,
+          "slug": "Mexican remake of House of Flowers examining class and privilege",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 180147
+        },
+        {
+          "title": "Everybody Loves Somebody",
+          "year": 2017,
+          "slug": "Bilingual romantic comedy set between Mexico and US",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 431093
+        },
+        {
+          "title": "Club Sandwich",
+          "year": 2013,
+          "slug": "Mexican coming-of-age story about adolescence",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 213983
+        },
+        {
+          "title": "Perfect Strangers",
+          "year": 2018,
+          "slug": "Mexican remake of Italian social commentary comedy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Ready to Mingle",
+          "year": 2019,
+          "slug": "Mexican romantic comedy about finding love",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 532880
+        },
+        {
+          "title": "We Are Mari Pepa",
+          "year": 2013,
+          "slug": "Mexican teen band coming-of-age story",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 217364
+        },
+        {
+          "title": "Tales of Mexico",
+          "year": 2016,
+          "slug": "Anthology film exploring Mexican society through different eras",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Amazing Catfish",
+          "year": 2013,
+          "slug": "Mexican drama about found family",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 215924
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

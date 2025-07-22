@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "Infinity",
+    "year": 1996,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/45cU6BNyRGKhDQZKzVSll4eTgwh.jpg",
+    "initialStreaming": null,
+    "tmdbId": 2033,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Infinity stands as Matthew Broderick's directorial debut, tackling the early life of theoretical physicist Richard Feynman with surprising intimacy. Unlike traditional science biopics like <a href=\"/movie/453\" class=\"movie-title\" data-tmdb-id=\"453\">A Beautiful Mind</a> (2001) or <a href=\"/movie/266856\" class=\"movie-title\" data-tmdb-id=\"266856\">The Theory of Everything</a> (2014), Broderick focuses tightly on Feynman's romance with his first wife Arline Greenbaum and their heart-wrenching journey through her tuberculosis diagnosis, set against the backdrop of the Manhattan Project. The film captures Feynman's unique approach to both science and life, showcasing his playful curiosity alongside deep emotional complexity."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Infinity",
+            "year": 1996,
+            "slug": "Matthew Broderick directs and stars as physicist Richard Feynman in this biographical drama focused on his relationship with first wife Arline during the Manhattan Project years",
+            "poster": "https://image.tmdb.org/t/p/w500/45cU6BNyRGKhDQZKzVSll4eTgwh.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 2033,
+            "poster_url": "https://image.tmdb.org/t/p/w500/45cU6BNyRGKhDQZKzVSll4eTgwh.jpg"
+          },
+          {
+            "title": "Copenhagen",
+            "year": 2002,
+            "slug": "Television drama exploring the 1941 meeting between physicists Niels Bohr and Werner Heisenberg during WWII",
+            "poster": "https://image.tmdb.org/t/p/w500/ioXN2By2HntqlKu2u2Mys2IPATt.jpg",
+            "initialStreaming": "BritBox",
+            "tmdb_id": 51016,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ioXN2By2HntqlKu2u2Mys2IPATt.jpg"
+          },
+          {
+            "title": "Fat Man and Little Boy",
+            "year": 1989,
+            "slug": "Paul Newman stars in this drama about the Manhattan Project and the moral implications of developing the atomic bomb",
+            "poster": "https://image.tmdb.org/t/p/w500/4CLeeHTMUesP8MCFt5phmdPSS5k.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 27461,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4CLeeHTMUesP8MCFt5phmdPSS5k.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The 1990s saw a surge of science-focused biographical films that attempted to humanize great minds. <a href=\"/movie/13466\" class=\"movie-title\" data-tmdb-id=\"13466\">October Sky</a> (1999) examined the inspiring story of NASA engineer Homer Hickam, while IQ (1994) took a more romantic comedy approach to Einstein's later years. Infinity distinguishes itself by avoiding the typical \"genius at work\" tropes, instead examining how love and scientific pursuit can coexist in times of extreme pressure and personal crisis. SUBHEAD: The Human Side of Scientific Achievement"
+      },
+      {
+        "type": "text",
+        "content": "What makes Infinity particularly noteworthy is its handling of the Manhattan Project's moral weight. Unlike <a href=\"/movie/27461\" class=\"movie-title\" data-tmdb-id=\"27461\">Fat Man and Little Boy</a> (1989) or <a href=\"/movie/44688\" class=\"movie-title\" data-tmdb-id=\"44688\">Day One</a> (1989), which focus on the project's broader ethical implications, Broderick's film uses this momentous scientific endeavor as a backdrop for a deeply personal story. The approach mirrors later films like <a href=\"/movie/205596\" class=\"movie-title\" data-tmdb-id=\"205596\">The Imitation Game</a> (2014), which balanced Alan Turing's technical achievements with his personal struggles, though Infinity maintains an even more intimate focus."
+      }
+    ],
+    "exploreFurther": [
+      "The Manhattan Project's Impact on American Cinema",
+      "Portrayal of Scientists in Biographical Films",
+      "Richard Feynman's Legacy in Popular Culture",
+      "Romance in Scientific Biopics",
+      "Matthew Broderick's Transition to Directing"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Theory of Everything",
+          "year": 2014,
+          "slug": "Stephen Hawking biopic focusing on his relationship with Jane Wilde",
+          "poster": "https://image.tmdb.org/t/p/w500/kJuL37NTE51zVP3eG5aGMyKAIlh.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 266856,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kJuL37NTE51zVP3eG5aGMyKAIlh.jpg"
+        },
+        {
+          "title": "Creation",
+          "year": 2009,
+          "slug": "Charles Darwin's personal struggles while writing Origin of Species",
+          "poster": "https://image.tmdb.org/t/p/w500/vS6ne76vjRH7Z88rAqYLCcQatB4.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 30431,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vS6ne76vjRH7Z88rAqYLCcQatB4.jpg"
+        },
+        {
+          "title": "Agora",
+          "year": 2009,
+          "slug": "Historical drama about mathematician Hypatia of Alexandria",
+          "poster": "https://image.tmdb.org/t/p/w500/1xsFa6I5vDd2UI1AJ1tsW7BUChv.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 26428,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1xsFa6I5vDd2UI1AJ1tsW7BUChv.jpg"
+        },
+        {
+          "title": "The Man Who Knew Infinity",
+          "year": 2015,
+          "slug": "Biography of Indian mathematician Srinivasa Ramanujan",
+          "poster": "https://image.tmdb.org/t/p/w500/v2X1BtkxaV8pzLbmM8a5gTdpg7B.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 353326,
+          "poster_url": "https://image.tmdb.org/t/p/w500/v2X1BtkxaV8pzLbmM8a5gTdpg7B.jpg"
+        },
+        {
+          "title": "Hidden Figures",
+          "year": 2016,
+          "slug": "True story of African-American women mathematicians at NASA",
+          "poster": "https://image.tmdb.org/t/p/w500/9lfz2W2uGjyow3am00rsPJ8iOyq.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 381284,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9lfz2W2uGjyow3am00rsPJ8iOyq.jpg"
+        },
+        {
+          "title": "The Current War",
+          "year": 2017,
+          "slug": "Drama about the rivalry between Thomas Edison and George Westinghouse",
+          "poster": "https://image.tmdb.org/t/p/w500/eqTjO8yTaPRSKWj7i6Qnr7R5cls.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 418879,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eqTjO8yTaPRSKWj7i6Qnr7R5cls.jpg"
+        },
+        {
+          "title": "Tesla",
+          "year": 2020,
+          "slug": "Unconventional biopic about inventor Nikola Tesla",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": null
+        },
+        {
+          "title": "Radioactive",
+          "year": 2019,
+          "slug": "Marie Curie biographical drama",
+          "poster": "https://image.tmdb.org/t/p/w500/akHIQu8W3rOgT28r25ggXaKcQIr.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 480857,
+          "poster_url": "https://image.tmdb.org/t/p/w500/akHIQu8W3rOgT28r25ggXaKcQIr.jpg"
+        },
+        {
+          "title": "The Wind Rises",
+          "year": 2013,
+          "slug": "Animated film about aircraft designer Jiro Horikoshi",
+          "poster": "https://image.tmdb.org/t/p/w500/jfwSexzlIzaOgxP9A8bTA6t8YYb.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 149870,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jfwSexzlIzaOgxP9A8bTA6t8YYb.jpg"
+        },
+        {
+          "title": "Einstein and Eddington",
+          "year": 2008,
+          "slug": "Drama about Albert Einstein and Arthur Eddington's collaboration",
+          "poster": "https://image.tmdb.org/t/p/w500/xfjONUpoEakb14m0dRK3Xqc69Xy.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 15044,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xfjONUpoEakb14m0dRK3Xqc69Xy.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

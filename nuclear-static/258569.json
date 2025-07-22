@@ -1,0 +1,177 @@
+{
+  "props": {
+    "title": "The Rat",
+    "year": 1925,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/qamilfcTHqWz3iKSycfBs6JlmQP.jpg",
+    "initialStreaming": null,
+    "tmdbId": 258569,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Rat** (1925) marks a fascinating entry in silent crime melodrama, starring Ivor Novello as Pierre Boucheron, a charismatic Parisian thief known as \"The Rat.\" Director Graham Cutts crafts a gritty underworld tale that influenced later crime films like <a href=\"/movie/2760\" class=\"movie-title\">The Lodger</a> (1927) and <a href=\"/movie/51079\" class=\"movie-title\">Piccadilly</a> (1929). The film's atmospheric portrayal of Paris' criminal underbelly set standards for urban crime storytelling that echoed through classics like **M** (1931) and even modern neo-noirs."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Lodger",
+            "year": 1927,
+            "slug": "Hitchcock's breakthrough silent thriller about a mysterious lodger suspected of being a serial killer",
+            "poster": "https://image.tmdb.org/t/p/w500/tD84zwFeFRf3zG98x558N3PBMV.jpg",
+            "initialStreaming": "NA",
+            "tmdb_id": 2760,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tD84zwFeFRf3zG98x558N3PBMV.jpg"
+          },
+          {
+            "title": "Piccadilly",
+            "year": 1929,
+            "slug": "Silent drama exploring London's nightclub scene and racial tensions",
+            "poster": "https://image.tmdb.org/t/p/w500/biZjt8E9ljayP80tZPXgWKBiiyn.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 51079,
+            "poster_url": "https://image.tmdb.org/t/p/w500/biZjt8E9ljayP80tZPXgWKBiiyn.jpg"
+          },
+          {
+            "title": "Underworld",
+            "year": 1927,
+            "slug": "Josef von Sternberg's influential gangster film that established many noir conventions",
+            "poster": "https://image.tmdb.org/t/p/w500/6ZjgbeCwS7sipil1J221lbjaqGG.jpg",
+            "initialStreaming": "NA",
+            "tmdb_id": 42565,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6ZjgbeCwS7sipil1J221lbjaqGG.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's production design by Alfred Junge deserves special attention, creating a shadowy vision of Paris that influenced the visual language of film noir. Novello's magnetic performance as the charming criminal anticipated the complex anti-heroes of **Scarface** (1932) and **The Public Enemy** (1931), while Mae Marsh brings depth to her role as the wealthy woman drawn to the dangerous underworld."
+      },
+      {
+        "type": "text",
+        "content": "What makes **The Rat** (1925) particularly significant is its blend of social commentary with melodrama, examining class divisions in ways that presaged later works like <a href=\"/movie/2457\" class=\"movie-title\">Les Enfants du Paradis</a> (1945). The film's success led to two sequels: **The Triumph of the Rat** (1926) and **The Return of the Rat** (1929), forming one of cinema's first crime drama trilogies. SUBHEAD: Silent Crime Cinema's Evolution"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Les Enfants du Paradis",
+            "year": 1945,
+            "slug": "Epic French romantic drama set in Paris' theatrical world",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 2457
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**The Rat** (1925) emerged during a crucial period when silent crime films were developing sophisticated visual storytelling techniques. Its influence can be traced through **Asphalt** (1929) and **The Last Warning** (1929), establishing conventions that would later define film noir. The movie's exploration of criminal psychology and moral ambiguity created a template for character-driven crime narratives."
+      }
+    ],
+    "exploreFurther": [
+      "Silent Film Techniques in Early Crime Movies",
+      "Ivor Novello's Impact on British Cinema",
+      "The Evolution of Paris in Silent Cinema",
+      "Crime Melodrama's Transition to Film Noir",
+      "Social Class Commentary in 1920s Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Blackmail",
+          "year": 1929,
+          "slug": "Hitchcock's first sound film about extortion and murder",
+          "poster": "https://image.tmdb.org/t/p/w500/7ioNEKouUkkWyv5tUDwVUd7BDRR.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 543,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7ioNEKouUkkWyv5tUDwVUd7BDRR.jpg"
+        },
+        {
+          "title": "The Phantom of the Opera",
+          "year": 1925,
+          "slug": "Classic horror starring Lon Chaney",
+          "poster": "https://image.tmdb.org/t/p/w500/mvaYpAYj957C2tlq3vVJPSzGJXK.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": 964,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mvaYpAYj957C2tlq3vVJPSzGJXK.jpg"
+        },
+        {
+          "title": "The Cabinet of Dr. Caligari",
+          "year": 1920,
+          "slug": "Expressionist masterpiece",
+          "poster": "https://image.tmdb.org/t/p/w500/myK9DeIsXWGKgUTZyGXg2IfFk0W.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": 234,
+          "poster_url": "https://image.tmdb.org/t/p/w500/myK9DeIsXWGKgUTZyGXg2IfFk0W.jpg"
+        },
+        {
+          "title": "Dr. Mabuse the Gambler",
+          "year": 1922,
+          "slug": "Fritz Lang's epic crime thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/ysHJDo9do2USU1BhWxcT0WO9WTO.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 5998,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ysHJDo9do2USU1BhWxcT0WO9WTO.jpg"
+        },
+        {
+          "title": "The Unknown",
+          "year": 1927,
+          "slug": "Tod Browning's dark circus drama",
+          "poster": "https://image.tmdb.org/t/p/w500/c9R1wE1vMJWMZNdmqXUV8oTaCPQ.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 27503,
+          "poster_url": "https://image.tmdb.org/t/p/w500/c9R1wE1vMJWMZNdmqXUV8oTaCPQ.jpg"
+        },
+        {
+          "title": "Chicago",
+          "year": 1927,
+          "slug": "Silent version of the famous murder story",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Cat and the Canary",
+          "year": 1927,
+          "slug": "Influential haunted house mystery",
+          "poster": "https://image.tmdb.org/t/p/w500/obXtEtHmncAtak6IFFpaWR3DQbS.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 76804,
+          "poster_url": "https://image.tmdb.org/t/p/w500/obXtEtHmncAtak6IFFpaWR3DQbS.jpg"
+        },
+        {
+          "title": "The Man Who Laughs",
+          "year": 1928,
+          "slug": "Gothic melodrama starring Conrad Veidt",
+          "poster": "https://image.tmdb.org/t/p/w500/iQXBMr4NzQst4X0rDU6MII6ZUOM.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 27517,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iQXBMr4NzQst4X0rDU6MII6ZUOM.jpg"
+        },
+        {
+          "title": "Pandora's Box",
+          "year": 1929,
+          "slug": "Louise Brooks in landmark drama",
+          "poster": "https://image.tmdb.org/t/p/w500/qlAMlgm8lm859GkxSpbr2ziixXE.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 905,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qlAMlgm8lm859GkxSpbr2ziixXE.jpg"
+        },
+        {
+          "title": "The Wind",
+          "year": 1928,
+          "slug": "Lillian Gish in psychological thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/11ySoycM3ARm66RLiYE9yRcrg5b.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 31416,
+          "poster_url": "https://image.tmdb.org/t/p/w500/11ySoycM3ARm66RLiYE9yRcrg5b.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

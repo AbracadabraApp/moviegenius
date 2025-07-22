@@ -1,0 +1,183 @@
+{
+  "props": {
+    "title": "Bestiaire",
+    "year": 2012,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/7ADFCHr3ELUUiAFPLlAkkEZWb6M.jpg",
+    "initialStreaming": null,
+    "tmdbId": 84176,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Bestiaire** (2012) represents a fascinating evolution in observational documentary filmmaking, following in the contemplative tradition of films like <a href=\"/movie/57389\" class=\"movie-title\">Le Quattro Volte</a> (2010) and <a href=\"/movie/50071\" class=\"movie-title\">Sweetgrass</a> (2009). Director Denis Côté strips away conventional documentary elements - there's no narration, no interviews, no music - to create an unflinching study of the relationship between humans and captive animals at a Quebec safari park. The film's patient, static shots echo Frederick Wiseman's institutional studies while pushing further into pure visual meditation."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Grizzly Man",
+            "year": 2005,
+            "slug": "Werner Herzog's haunting documentary explores Timothy Treadwell's fatal obsession with Alaskan grizzly bears",
+            "poster": "https://image.tmdb.org/t/p/w500/gZrD5B5CmzVWit8ylvMBXSNuX2L.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 288430,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gZrD5B5CmzVWit8ylvMBXSNuX2L.jpg"
+          },
+          {
+            "title": "Le Quattro Volte",
+            "year": 2010,
+            "slug": "A wordless meditation on nature and civilization in rural Italy, following a shepherd, a goat, and the eternal cycle",
+            "poster": "https://image.tmdb.org/t/p/w500/wx6yDUCgDaa73QWEblp6fFILGE5.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 57389,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wx6yDUCgDaa73QWEblp6fFILGE5.jpg"
+          },
+          {
+            "title": "Sweetgrass",
+            "year": 2009,
+            "slug": "Silent observation of Montana shepherds during their last summer in the Beartooth Mountains",
+            "poster": "https://image.tmdb.org/t/p/w500/xTQ7URCmLBWkMJeT4G8uyvpciqU.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 50071,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xTQ7URCmLBWkMJeT4G8uyvpciqU.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Côté's approach builds on a rich tradition of nature documentaries that challenge conventional wildlife film techniques. While mainstream works like **March of the Penguins** (2005) use narrative and anthropomorphization, films like **Bestiaire** and **La Quatre Volte** strip away these familiar frameworks. The results are more challenging but ultimately more honest about our complicated relationship with the animal world. <a href=\"/movie/9305\" class=\"movie-title\">Microcosmos</a> (1996) pioneered this approach, letting intimate insect footage speak for itself without imposed narrative."
+      },
+      {
+        "type": "text",
+        "content": "The confined spaces of **Bestiaire** create an intentionally uncomfortable parallel with earlier films about human institutions. **Titicut Follies** (1967) exposed a mental hospital's dehumanizing conditions through similar observational techniques. Both films raise questions about containment and control without explicit commentary. This connects to later works like <a href=\"/movie/24565\" class=\"movie-title\">Our Daily Bread</a> (2005), which uses fixed camera positions to examine industrial food production's treatment of animals. SUBHEAD: The Evolution of Observational Nature Documentary"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Microcosmos",
+            "year": 1996,
+            "slug": "Stunning close-up cinematography reveals the hidden world of insects without narration",
+            "poster": "https://image.tmdb.org/t/p/w500/OPoiGrzNr5FWoczXH5Gs1cReec.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 9305,
+            "poster_url": "https://image.tmdb.org/t/p/w500/OPoiGrzNr5FWoczXH5Gs1cReec.jpg"
+          },
+          {
+            "title": "Our Daily Bread",
+            "year": 2005,
+            "slug": "A stark look at industrial food production through fixed camera positions",
+            "poster": "https://image.tmdb.org/t/p/w500/kdW7HPJqhRQ2HRU9ZurbDbpTyj.jpg",
+            "initialStreaming": "Mubi",
+            "tmdb_id": 24565,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kdW7HPJqhRQ2HRU9ZurbDbpTyj.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The impact of **Bestiaire** can be seen in subsequent nature documentaries that embrace similar minimalist approaches. **Leviathan** (2012) uses immersive camera techniques to capture commercial fishing with no narrative framework. **The Velvet Queen** (2021) spends long, quiet moments waiting for glimpses of snow leopards, prioritizing patience over spectacle. These films represent a growing movement away from the polished presentation of BBC nature documentaries toward rawer, more challenging visions."
+      }
+    ],
+    "exploreFurther": [
+      "The history of observational documentary technique from Wiseman to present",
+      "The ethics of filming captive animals in documentary contexts",
+      "Minimalist approaches in nature cinematography",
+      "The influence of Harvard's Sensory Ethnography Lab on contemporary documentary",
+      "The evolution of zoo/safari park documentation in film"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Nenette",
+          "year": 2010,
+          "slug": "A contemplative portrait of an aging orangutan in a Paris zoo",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 132568
+        },
+        {
+          "title": "The Last Animals",
+          "year": 2017,
+          "slug": "Following conservationists protecting endangered species",
+          "poster": "https://image.tmdb.org/t/p/w500/bpAT6YWUmj3sHpPMRuti6Tvsqpw.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 453975,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bpAT6YWUmj3sHpPMRuti6Tvsqpw.jpg"
+        },
+        {
+          "title": "Safari",
+          "year": 2016,
+          "slug": "Ulrich Seidl's provocative examination of trophy hunting tourism",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Le Pays des Sourds",
+          "year": 1992,
+          "slug": "Nicolas Philibert's observational study of a deaf community",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 118348
+        },
+        {
+          "title": "The Story of the Weeping Camel",
+          "year": 2003,
+          "slug": "Mongolian documentary following a rare white camel",
+          "poster": "https://image.tmdb.org/t/p/w500/c3SAAO5hNJqLWLlJr9TZ6CQ8eGI.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 1114,
+          "poster_url": "https://image.tmdb.org/t/p/w500/c3SAAO5hNJqLWLlJr9TZ6CQ8eGI.jpg"
+        },
+        {
+          "title": "Five Dedicated to Ozu",
+          "year": 2003,
+          "slug": "Abbas Kiarostami's five long takes of nature",
+          "poster": "https://image.tmdb.org/t/p/w500/cdXmKuvjz4YEwcQWYbkxnMIif8q.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 126004,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cdXmKuvjz4YEwcQWYbkxnMIif8q.jpg"
+        },
+        {
+          "title": "In the Land of the Head Hunters",
+          "year": 1914,
+          "slug": "Early ethnographic film of Pacific Northwest tribes",
+          "poster": "https://image.tmdb.org/t/p/w500/okt8VsN87z3sWtBSMIV2fi29mv4.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 199989,
+          "poster_url": "https://image.tmdb.org/t/p/w500/okt8VsN87z3sWtBSMIV2fi29mv4.jpg"
+        },
+        {
+          "title": "The Hunters",
+          "year": 1957,
+          "slug": "Documentary following Kalahari Desert hunters",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 275331
+        },
+        {
+          "title": "People of the Australian Western Desert",
+          "year": 1966,
+          "slug": "Groundbreaking ethnographic series",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": null
+        },
+        {
+          "title": "Grass: A Nation's Battle for Life",
+          "year": 1925,
+          "slug": "Silent documentary of Persian migration",
+          "poster": "https://image.tmdb.org/t/p/w500/djZ2jwO0C0ZFq0rGSBACMjW3qF.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 115132,
+          "poster_url": "https://image.tmdb.org/t/p/w500/djZ2jwO0C0ZFq0rGSBACMjW3qF.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

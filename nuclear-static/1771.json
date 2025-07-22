@@ -1,0 +1,188 @@
+{
+  "props": {
+    "title": "Captain America: The First Avenger",
+    "year": 2011,
+    "initialSlug": "Period superhero film set during World War II",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/vSNxAJTlD0r02V9sPYpOjqDZXUK.jpg",
+    "initialStreaming": "Disney+",
+    "tmdbId": 1771,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Captain America: The First Avenger revolutionized the period superhero film by perfectly blending 1940s war movie aesthetics with Marvel's signature heroic storytelling. Director Joe Johnston, who cut his teeth on <a href=\"/movie/10249\" class=\"movie-title\" data-tmdb-id=\"10249\">The Rocketeer</a> (1991), brings the same retro-pulp sensibility to Steve Rogers' origin story. The film draws clear inspiration from classic WWII films like <a href=\"/movie/11046\" class=\"movie-title\" data-tmdb-id=\"11046\">Where Eagles Dare</a> (1968) and <a href=\"/movie/1654\" class=\"movie-title\" data-tmdb-id=\"1654\">The Dirty Dozen</a> (1967), particularly in its behind-enemy-lines mission sequences. The transformation of Chris Evans from scrawny recruit to super-soldier remains one of Marvel's most convincing character evolutions."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Raiders of the Lost Ark",
+            "year": 1981,
+            "slug": "The ultimate Nazi-fighting adventure that heavily influenced Cap's first outing, from the period setting to the mystical MacGuffin",
+            "poster": "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 85,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg"
+          },
+          {
+            "title": "The Rocketeer",
+            "year": 1991,
+            "slug": "Johnston's earlier superhero period piece about a stunt pilot who finds a jetpack and fights Nazis",
+            "poster": "https://image.tmdb.org/t/p/w500/2tDFRESFwKww1LHRE8W1Exj9edH.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 10249,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2tDFRESFwKww1LHRE8W1Exj9edH.jpg"
+          },
+          {
+            "title": "Wonder Woman",
+            "year": 2017,
+            "slug": "Another successful superhero period piece set during a World War, with similar themes of idealistic heroes facing the horrors of war",
+            "poster": "https://image.tmdb.org/t/p/w500/v4ncgZjG2Zu8ZW5al1vIZTsSjqX.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 297762,
+            "poster_url": "https://image.tmdb.org/t/p/w500/v4ncgZjG2Zu8ZW5al1vIZTsSjqX.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's visual effects breakthrough came in the \"skinny Steve\" sequences, building on techniques pioneered in <a href=\"/movie/4922\" class=\"movie-title\" data-tmdb-id=\"4922\">The Curious Case of Benjamin Button</a> (2008). Rather than simply shrinking Evans digitally, the VFX team used a combination of body doubles, face replacement, and digital manipulation to create a convincingly frail version of the actor. This attention to technical detail helps ground the fantastic elements in reality, much like <a href=\"/movie/5137\" class=\"movie-title\" data-tmdb-id=\"5137\">Sky Captain and the World of Tomorrow</a> (2004) did with its retro-futuristic aesthetic."
+      },
+      {
+        "type": "text",
+        "content": "The villain, Red Skull, draws from a long tradition of Nazi supernatural obsession in cinema, echoing films like <a href=\"/movie/1487\" class=\"movie-title\" data-tmdb-id=\"1487\">Hellboy</a> (2004) and <a href=\"/movie/89\" class=\"movie-title\" data-tmdb-id=\"89\">Indiana Jones and the Last Crusade</a> (1989). Hugo Weaving's performance balances comic book menace with real historical evil, creating one of Marvel's most memorable early antagonists. The HYDRA organization's retrofuturistic technology provides a clever way to incorporate advanced weapons and vehicles while maintaining the period setting. SUBHEAD: Legacy and Impact on Superhero Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Inglourious Basterds",
+            "year": 2009,
+            "slug": "Tarantino's alternate WWII history featuring a team of Nazi hunters, sharing themes of American heroes taking the fight to Hitler",
+            "poster": "https://image.tmdb.org/t/p/w500/7sfbEnaARXDDhKm0CZ7D7uc2sbo.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 16869,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7sfbEnaARXDDhKm0CZ7D7uc2sbo.jpg"
+          },
+          {
+            "title": "Where Eagles Dare",
+            "year": 1968,
+            "slug": "Classic WWII action film about a team of Allied commandos infiltrating a German fortress, a clear influence on Cap's rescue mission",
+            "poster": "https://image.tmdb.org/t/p/w500/dnyiVS4Ad4w4rfS4Bm1YalEdonx.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 11046,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dnyiVS4Ad4w4rfS4Bm1YalEdonx.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Captain America: The First Avenger proved that superhero films could work in any era, paving the way for period pieces like <a href=\"/movie/49538\" class=\"movie-title\" data-tmdb-id=\"49538\">X-Men: First Class</a> (2011) and <a href=\"/movie/297762\" class=\"movie-title\" data-tmdb-id=\"297762\">Wonder Woman</a> (2017). The film's success with practical effects and real stuntwork, particularly in its action sequences, influenced later Marvel productions like <a href=\"/movie/497698\" class=\"movie-title\" data-tmdb-id=\"497698\">Black Widow</a> (2021) to maintain a grounded feeling despite their fantastic elements."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of World War II in Superhero Comics and Film",
+      "Visual Effects Techniques for Character Transformation in Cinema",
+      "Joe Johnston's Career and Influence on Adventure Films",
+      "The Development of Marvel's Phase One Visual Style",
+      "Historical Accuracy vs. Comic Book Fantasy in Period Superhero Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Saving Private Ryan",
+          "year": 1998,
+          "slug": "Spielberg's definitive WWII film that influenced modern war movie aesthetics",
+          "poster": "https://image.tmdb.org/t/p/w500/uqx37cS8cpHg8U35f9U5IBlrCV3.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 857,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uqx37cS8cpHg8U35f9U5IBlrCV3.jpg"
+        },
+        {
+          "title": "Kelly's Heroes",
+          "year": 1970,
+          "slug": "WWII action-comedy about soldiers on a gold heist behind enemy lines",
+          "poster": "https://image.tmdb.org/t/p/w500/hleMxFKSC42yT0TClS4G29HV11n.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 11589,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hleMxFKSC42yT0TClS4G29HV11n.jpg"
+        },
+        {
+          "title": "The Dirty Dozen",
+          "year": 1967,
+          "slug": "Classic war film about criminals turned commandos",
+          "poster": "https://image.tmdb.org/t/p/w500/tFWWsuhp22zJ6OG6QepJIiPUfeF.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 1654,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tFWWsuhp22zJ6OG6QepJIiPUfeF.jpg"
+        },
+        {
+          "title": "Sky Captain and the World of Tomorrow",
+          "year": 2004,
+          "slug": "Retro-futuristic adventure with similar period sci-fi aesthetic",
+          "poster": "https://image.tmdb.org/t/p/w500/4S1pcSuRlfUkJWaZY1hcdzMmPx.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 5137,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4S1pcSuRlfUkJWaZY1hcdzMmPx.jpg"
+        },
+        {
+          "title": "Valkyrie",
+          "year": 2008,
+          "slug": "True story of an attempt to assassinate Hitler, sharing the WWII setting",
+          "poster": "https://image.tmdb.org/t/p/w500/8eoRtXswC8IQDsqW7iJWO56NhAv.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 2253,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8eoRtXswC8IQDsqW7iJWO56NhAv.jpg"
+        },
+        {
+          "title": "The Mummy",
+          "year": 1999,
+          "slug": "Adventure film with similar mix of period setting and supernatural elements",
+          "poster": "https://image.tmdb.org/t/p/w500/yhIsVvcUm7QxzLfT6HW2wLf5ajY.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 564,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yhIsVvcUm7QxzLfT6HW2wLf5ajY.jpg"
+        },
+        {
+          "title": "Captain America: The Winter Soldier",
+          "year": 2014,
+          "slug": "Direct sequel showing Cap's modern-day adventures",
+          "poster": "https://image.tmdb.org/t/p/w500/tVFRpFw3xTedgPGqxW0AOI8Qhh0.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 100402,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tVFRpFw3xTedgPGqxW0AOI8Qhh0.jpg"
+        },
+        {
+          "title": "X-Men: First Class",
+          "year": 2011,
+          "slug": "Another superhero period piece set during the Cold War",
+          "poster": "https://image.tmdb.org/t/p/w500/hNEokmUke0dazoBhttFN0o3L7Xv.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 49538,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hNEokmUke0dazoBhttFN0o3L7Xv.jpg"
+        },
+        {
+          "title": "Flags of Our Fathers",
+          "year": 2006,
+          "slug": "WWII film exploring military propaganda and heroism",
+          "poster": "https://image.tmdb.org/t/p/w500/2nkPrhf4YIyMFelfe4zdOnGRYz5.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 3683,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2nkPrhf4YIyMFelfe4zdOnGRYz5.jpg"
+        },
+        {
+          "title": "Overlord",
+          "year": 2018,
+          "slug": "WWII horror film featuring Nazi supernatural experiments",
+          "poster": "https://image.tmdb.org/t/p/w500/l76Rgp32z2UxjULApxGXAPpYdAP.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 438799,
+          "poster_url": "https://image.tmdb.org/t/p/w500/l76Rgp32z2UxjULApxGXAPpYdAP.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

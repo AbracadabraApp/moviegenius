@@ -1,0 +1,169 @@
+{
+  "props": {
+    "title": "Halloweentown",
+    "year": 1998,
+    "initialSlug": "The magic of Halloween awaits.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/y9RJCxJMbWqhXjkBgC0VXETmHj6.jpg",
+    "initialStreaming": null,
+    "tmdbId": 27850,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Halloweentown launched Disney Channel's most beloved Halloween franchise, perfectly capturing family-friendly spooky vibes without sacrificing magical worldbuilding. The film follows Marnie Piper discovering her witch heritage through her grandmother Aggie Cromwell (played masterfully by Debbie Reynolds), creating a template that influenced later supernatural teen films like The Wizards of Waverly Place: The Movie (2009) and <a href=\"/movie/21481\" class=\"movie-title\">Twitches</a> (2005). The practical effects and creative creature designs hold up surprisingly well, establishing a distinct visual style that later Disney Channel Halloween films tried to replicate."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Halloweentown II: Kalabar's Revenge",
+            "year": 2001,
+            "slug": "Marnie must save both Halloweentown and the mortal world when a vengeful warlock turns everyone into boring humans",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 34205
+          },
+          {
+            "title": "Halloweentown High",
+            "year": 2004,
+            "slug": "Marnie risks her powers to bring supernatural students to mortal high school in a magical exchange program",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 34560
+          },
+          {
+            "title": "Return to Halloweentown",
+            "year": 2006,
+            "slug": "Marnie attends witch college but faces discrimination and dark secrets about her family's past",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 34204
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The success of Halloweentown sparked a wave of supernatural teen content across Disney Channel and Nickelodeon. <a href=\"/movie/24100\" class=\"movie-title\" data-tmdb-id=\"24100\">The Little Vampire</a> (2000) and Phantom of the Megaplex (2000) followed similar family-friendly spooky formulas, while Don't Look Under the Bed (1999) pushed slightly darker themes. These films established a distinct late-90s/early-2000s aesthetic mixing practical effects with early CGI, creating worlds that felt both magical and tangible."
+      },
+      {
+        "type": "text",
+        "content": "Debbie Reynolds' portrayal of Aggie Cromwell deserves special recognition for elevating the material beyond typical kids' fare. Her performance brings gravitas similar to Maggie Smith in Harry Potter and the Sorcerer's Stone (2001), making the magical elements feel grounded and meaningful. The grandmother-granddaughter relationship between Aggie and Marnie became a blueprint for later supernatural family dynamics in films like <a href=\"/movie/26594\" class=\"movie-title\" data-tmdb-id=\"26594\">The Secret</a> (2007) and <a href=\"/movie/2274\" class=\"movie-title\" data-tmdb-id=\"2274\">The Seeker: The Dark Is Rising</a> (2007). SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Twitches",
+            "year": 2005,
+            "slug": "Twin witches separated at birth reunite on their 21st birthday to save their magical kingdom",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 21481
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Halloweentown's impact extends beyond its direct sequels. The film's portrayal of a hidden magical world accessible through portals influenced later works like <a href=\"/movie/8204\" class=\"movie-title\" data-tmdb-id=\"8204\">The Spiderwick Chronicles</a> (2008) and <a href=\"/movie/411\" class=\"movie-title\" data-tmdb-id=\"411\">The Chronicles of Narnia: The Lion, the Witch and the Wardrobe</a> (2005). Its balance of supernatural elements with coming-of-age themes created a template for countless Disney Channel original movies, including Girl vs. Monster (2012) and Zombies (2018)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Disney Channel Original Movies' Special Effects (1997-2005)",
+      "Debbie Reynolds' Late Career Renaissance in Family Films",
+      "The Impact of Halloweentown on Modern Teen Witch Media",
+      "Practical Effects vs CGI in Children's Fantasy Films",
+      "The Development of Family-Friendly Horror in the Late 1990s"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Mom's Got a Date with a Vampire",
+          "year": 2000,
+          "slug": "Three kids must save their mom from a charming vampire",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 92208
+        },
+        {
+          "title": "Under Wraps",
+          "year": 1997,
+          "slug": "Three friends discover and befriend a mummy",
+          "poster": "https://image.tmdb.org/t/p/w500/wgq6xA57hLo6c7vCDClUKs8kpQk.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 76212,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wgq6xA57hLo6c7vCDClUKs8kpQk.jpg"
+        },
+        {
+          "title": "Phantom of the Megaplex",
+          "year": 2000,
+          "slug": "Mysterious events plague a movie theater on premiere night",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 26450
+        },
+        {
+          "title": "The Little Vampire",
+          "year": 2000,
+          "slug": "A young boy befriends a family of vampires",
+          "poster": "https://image.tmdb.org/t/p/w500/zBGfZGKX3KJnljxsX6r24lzRe0i.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 24100,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zBGfZGKX3KJnljxsX6r24lzRe0i.jpg"
+        },
+        {
+          "title": "Don't Look Under the Bed",
+          "year": 1999,
+          "slug": "A teenage girl faces off against the Boogeyman",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 70772
+        },
+        {
+          "title": "Zenon: Girl of the 21st Century",
+          "year": 1999,
+          "slug": "Space station teen fights corporate corruption",
+          "poster": "https://image.tmdb.org/t/p/w500/tuPphpx6sOIPEPqiDL2WQV7vsoP.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 34766,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tuPphpx6sOIPEPqiDL2WQV7vsoP.jpg"
+        },
+        {
+          "title": "The Thirteenth Year",
+          "year": 1999,
+          "slug": "Teen discovers he's part merman",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 83965
+        },
+        {
+          "title": "Can of Worms",
+          "year": 1999,
+          "slug": "Kid accidentally signals aliens for help",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 82401
+        },
+        {
+          "title": "Smart House",
+          "year": 1999,
+          "slug": "AI home system becomes overprotective",
+          "poster": "https://image.tmdb.org/t/p/w500/t9QsaGkvHCt5A2IEv8jN1TkPPfo.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 35215,
+          "poster_url": "https://image.tmdb.org/t/p/w500/t9QsaGkvHCt5A2IEv8jN1TkPPfo.jpg"
+        },
+        {
+          "title": "The Other Me",
+          "year": 2000,
+          "slug": "Kid creates clone for school",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 39242
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

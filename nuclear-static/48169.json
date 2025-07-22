@@ -1,0 +1,164 @@
+{
+  "props": {
+    "title": "The Mercenary",
+    "year": 1968,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/gIRRNEpkZg41syNBw0phpQfXa3C.jpg",
+    "initialStreaming": null,
+    "tmdbId": 48169,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Mercenary** (1968) stands as one of Sergio Corbucci's most politically charged Spaghetti Westerns, blending revolutionary Mexican themes with the genre's signature style. Franco Nero stars as Sergei Kowalski, a Polish mercenary whose cold professionalism clashes with the idealistic fervor of Mexican peasant Paco Roman. The film follows Corbucci's signature brutal approach, established in <a href=\"/movie/10772\" class=\"movie-title\">Django</a> (1966), while incorporating elements that would later influence **Duck, You Sucker!** (1971) and other politically conscious Westerns of the era."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Django",
+            "year": 1966,
+            "slug": "Franco Nero stars in Corbucci's ultra-violent Western about a mysterious gunslinger dragging a coffin, setting the tone for future Italian Westerns",
+            "poster": "https://image.tmdb.org/t/p/w500/vs4vieNstSEfbgLFEelXXOPvr6h.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 10772,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vs4vieNstSEfbgLFEelXXOPvr6h.jpg"
+          },
+          {
+            "title": "The Great Silence",
+            "year": 1968,
+            "slug": "Corbucci's snowbound Western masterpiece starring Jean-Louis Trintignant as a mute gunslinger, featuring one of the bleakest endings in the genre",
+            "poster": "https://image.tmdb.org/t/p/w500/3kpxS7SZMyYSXvhDnmxQXOOxiTM.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 9028,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3kpxS7SZMyYSXvhDnmxQXOOxiTM.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's impact on the Zapata Western subgenre cannot be overstated. Along with **A Bullet for the General** (1966) and **Tepepa** (1969), it helped establish the revolutionary Mexican setting as fertile ground for exploring political themes within the Western framework. Ennio Morricone's score masterfully blends Mexican folk elements with his trademark style, while Alejandro Ulloa's cinematography captures both intimate character moments and sweeping revolutionary battles."
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends to modern filmmakers, with echoes visible in Robert Rodriguez's **Once Upon a Time in Mexico** (2003) and Quentin Tarantino's **Django Unchained** (2012). Its blend of political commentary, dark humor, and explosive action created a template for politically conscious action films that resonates decades later. SUBHEAD: Revolutionary Impact on the Genre"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "A Bullet for the General",
+            "year": 1966,
+            "slug": "Klaus Kinski stars in this revolutionary tale about gun runners in Mexico, mixing politics with Western action",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The character dynamics between Kowalski and Paco established a template followed by numerous subsequent films, including **Companeros** (1970) and **Duck, You Sucker!** (1971). The mercenary-revolutionary partnership became a staple of the subgenre, allowing filmmakers to explore themes of idealism versus pragmatism against the backdrop of social upheaval. The film's success also helped cement Franco Nero's status as one of the premier stars of European Westerns, alongside Clint Eastwood and Lee Van Cleef."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of the Zapata Western Subgenre",
+      "Sergio Corbucci's Political Themes",
+      "Ennio Morricone's Revolutionary Western Scores",
+      "Franco Nero's Impact on European Westerns",
+      "The Influence of Italian Westerns on Modern Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Companeros",
+          "year": 1970,
+          "slug": "Franco Nero returns in another Corbucci revolutionary Western",
+          "poster": "https://image.tmdb.org/t/p/w500/aTciHxrvGB5c42PP0soO8V9ZtNj.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 61044,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aTciHxrvGB5c42PP0soO8V9ZtNj.jpg"
+        },
+        {
+          "title": "Duck You Sucker",
+          "year": 1971,
+          "slug": "Sergio Leone's take on the Mexican Revolution with Rod Steiger and James Coburn",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 336
+        },
+        {
+          "title": "Tepepa",
+          "year": 1969,
+          "slug": "Tomas Milian stars as a Mexican revolutionary alongside Orson Welles",
+          "poster": "https://image.tmdb.org/t/p/w500/uGhH5hd0wqfWLw1P5Xr7ozKoZZ9.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 81270,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uGhH5hd0wqfWLw1P5Xr7ozKoZZ9.jpg"
+        },
+        {
+          "title": "Face to Face",
+          "year": 1967,
+          "slug": "Political Western about a professor turned outlaw",
+          "poster": "https://image.tmdb.org/t/p/w500/svzzrWh6snCRTBUb64E64rPoWWY.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 249553,
+          "poster_url": "https://image.tmdb.org/t/p/w500/svzzrWh6snCRTBUb64E64rPoWWY.jpg"
+        },
+        {
+          "title": "The Big Gundown",
+          "year": 1966,
+          "slug": "Lee Van Cleef hunts Tomas Milian across Mexico",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Navajo Joe",
+          "year": 1966,
+          "slug": "Burt Reynolds stars in this revenge-driven Spaghetti Western",
+          "poster": "https://image.tmdb.org/t/p/w500/hxrsKfgsPlQozvANkZy84lDRKFv.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 6474,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hxrsKfgsPlQozvANkZy84lDRKFv.jpg"
+        },
+        {
+          "title": "Run Man Run",
+          "year": 1968,
+          "slug": "Sequel to The Big Gundown focusing on Milian's character",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 18928
+        },
+        {
+          "title": "The Five Man Army",
+          "year": 1969,
+          "slug": "Mercenaries plan a gold heist during the Mexican Revolution",
+          "poster": "https://image.tmdb.org/t/p/w500/5NSCCCQn06UfkKap9rIXL5g7GPG.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 38670,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5NSCCCQn06UfkKap9rIXL5g7GPG.jpg"
+        },
+        {
+          "title": "A Professional Gun",
+          "year": 1968,
+          "slug": "Franco Nero leads another revolutionary Western adventure",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 48169
+        },
+        {
+          "title": "Viva Django",
+          "year": 1968,
+          "slug": "Terence Hill stars in this unofficial Django sequel",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 46443
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

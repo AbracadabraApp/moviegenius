@@ -1,0 +1,175 @@
+{
+  "props": {
+    "title": "Phone",
+    "year": 2002,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/r6lIwPKVDa6Q76qH2TbIBqPhXL3.jpg",
+    "initialStreaming": null,
+    "tmdbId": 1817,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Phone stands as a pivotal entry in the early 2000s Korean horror wave, following the massive success of <a href=\"/movie/2671\" class=\"movie-title\" data-tmdb-id=\"2671\">Ring</a> (1998) from Japan. Director Ahn Byeong-ki crafts a technophobic nightmare about a cursed cell phone number that kills its owners, building on themes established in <a href=\"/movie/9694\" class=\"movie-title\" data-tmdb-id=\"9694\">One Missed Call</a> (2003) and <a href=\"/movie/27324\" class=\"movie-title\" data-tmdb-id=\"27324\">Pulse</a> (2001). The film's strength lies in its atmospheric tension and commentary on Korea's rapid technological advancement, while incorporating traditional ghost story elements similar to <a href=\"/movie/4552\" class=\"movie-title\" data-tmdb-id=\"4552\">A Tale of Two Sisters</a> (2003)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Ring",
+            "year": 1998,
+            "slug": "A reporter investigates a cursed videotape that kills viewers within 7 days, launching the modern J-horror movement",
+            "poster": "https://image.tmdb.org/t/p/w500/1YINof6kN5yRdePEbcU5360ejoq.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 2671,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1YINof6kN5yRdePEbcU5360ejoq.jpg"
+          },
+          {
+            "title": "One Missed Call",
+            "year": 2003,
+            "slug": "People receive voicemails from their future selves moments before their deaths",
+            "poster": "https://image.tmdb.org/t/p/w500/8ujSEEePCVMyi7Mt1RQMXd6SWmy.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 9694,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8ujSEEePCVMyi7Mt1RQMXd6SWmy.jpg"
+          },
+          {
+            "title": "Pulse",
+            "year": 2001,
+            "slug": "Ghosts invade the world through the internet, causing mass suicide and technological horror",
+            "poster": "https://image.tmdb.org/t/p/w500/c3zEimDraIyMSasPMGDaNOrhnzn.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 27324,
+            "poster_url": "https://image.tmdb.org/t/p/w500/c3zEimDraIyMSasPMGDaNOrhnzn.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Korean horror cinema of the early 2000s excelled at blending modern anxieties with traditional supernatural elements. Phone follows journalist Ji-won Song who receives a mysterious phone number that leads to a series of deaths. Like <a href=\"/movie/12205\" class=\"movie-title\" data-tmdb-id=\"12205\">Dark Water</a> (2002) and <a href=\"/movie/12262\" class=\"movie-title\" data-tmdb-id=\"12262\">The Eye</a> (2002), the film uses a female protagonist to explore themes of isolation and technological alienation in rapidly modernizing Asian societies."
+      },
+      {
+        "type": "text",
+        "content": "The film's technical achievements in sound design and visual effects influenced later technological horror films like <a href=\"/movie/17111\" class=\"movie-title\" data-tmdb-id=\"17111\">Shutter</a> (2004) and <a href=\"/movie/64792\" class=\"movie-title\" data-tmdb-id=\"64792\">The Red Shoes</a> (2005). Director Ahn Byeong-ki's use of ring tones and electronic interference as horror devices created a template for future tech-horror films like White: The Melody of Death (2011). SUBHEAD: Technology and Traditional Horror"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Dark Water",
+            "year": 2002,
+            "slug": "A single mother and her daughter move into an apartment with a mysterious water leak and dark secrets",
+            "poster": "https://image.tmdb.org/t/p/w500/u7FIePdOTjboDAjcaA9MabbzAuf.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 12205,
+            "poster_url": "https://image.tmdb.org/t/p/w500/u7FIePdOTjboDAjcaA9MabbzAuf.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Phone masterfully bridges traditional Korean ghost stories with modern technological fears. The film's approach influenced later works like <a href=\"/movie/39111\" class=\"movie-title\" data-tmdb-id=\"39111\">4bia</a> (2008) and <a href=\"/movie/16313\" class=\"movie-title\" data-tmdb-id=\"16313\">Coming Soon</a> (2008), which continued exploring the intersection of modern communication technology and supernatural horror. The film's success helped establish the template for technology-based Asian horror that would influence Western remakes like <a href=\"/movie/565\" class=\"movie-title\" data-tmdb-id=\"565\">The Ring</a> (2002) and <a href=\"/movie/9682\" class=\"movie-title\" data-tmdb-id=\"9682\">Pulse</a> (2006)."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Asian Technological Horror 1998-2008",
+      "Sound Design in Modern Horror Cinema",
+      "Korean Ghost Story Traditions in Contemporary Film",
+      "Impact of Rapid Modernization on Asian Horror Cinema",
+      "Female Protagonists in Asian Horror Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Kairo",
+          "year": 2001,
+          "slug": "Japanese horror about ghosts invading through the internet",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Eye",
+          "year": 2002,
+          "slug": "A blind woman receives a corneal transplant and begins seeing ghosts",
+          "poster": "https://image.tmdb.org/t/p/w500/1G2DBIEkoS0JdCiOFIeR3mD8ROE.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 12262,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1G2DBIEkoS0JdCiOFIeR3mD8ROE.jpg"
+        },
+        {
+          "title": "Shutter",
+          "year": 2004,
+          "slug": "A photographer and his girlfriend discover mysterious shadows in their photos",
+          "poster": "https://image.tmdb.org/t/p/w500/zUyaVtyugDaDHtOC6kCMJhbZsWu.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 17111,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zUyaVtyugDaDHtOC6kCMJhbZsWu.jpg"
+        },
+        {
+          "title": "A Tale of Two Sisters",
+          "year": 2003,
+          "slug": "Psychological horror about two sisters returning home from a mental institution",
+          "poster": "https://image.tmdb.org/t/p/w500/l3exwhwyGE0NnHJ3lFQ7eXoBSkH.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 4552,
+          "poster_url": "https://image.tmdb.org/t/p/w500/l3exwhwyGE0NnHJ3lFQ7eXoBSkH.jpg"
+        },
+        {
+          "title": "Acacia",
+          "year": 2003,
+          "slug": "A couple adopts a mysterious boy and strange events begin occurring",
+          "poster": "https://image.tmdb.org/t/p/w500/SKnexycVKBKgfLFms3VUPLSLcD.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 37284,
+          "poster_url": "https://image.tmdb.org/t/p/w500/SKnexycVKBKgfLFms3VUPLSLcD.jpg"
+        },
+        {
+          "title": "Into the Mirror",
+          "year": 2003,
+          "slug": "Mysterious deaths occur in a department store involving mirrors",
+          "poster": "https://image.tmdb.org/t/p/w500/9UhqqdaAkbMuRq9oFUFPszOT2io.jpg",
+          "initialStreaming": "Pluto TV",
+          "tmdb_id": 27316,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9UhqqdaAkbMuRq9oFUFPszOT2io.jpg"
+        },
+        {
+          "title": "Cello",
+          "year": 2005,
+          "slug": "A music teacher is haunted by a ghostly presence tied to her past",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Arang",
+          "year": 2006,
+          "slug": "Two detectives investigate supernatural murders linked to an ancient curse",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Death Bell",
+          "year": 2008,
+          "slug": "Students must solve riddles to prevent their classmates' deaths",
+          "poster": "https://image.tmdb.org/t/p/w500/bsbA0UeJNmmhcBwTRRfcCH23fEt.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 32272,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bsbA0UeJNmmhcBwTRRfcCH23fEt.jpg"
+        },
+        {
+          "title": "Killer Toon",
+          "year": 2013,
+          "slug": "A webtoon artist's drawings predict real murders",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,167 @@
+{
+  "props": {
+    "title": "Bovines",
+    "year": 2011,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/uvDHMsXNhDjLDmoOSbQCJwj4zUx.jpg",
+    "initialStreaming": null,
+    "tmdbId": 169877,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Bovines** (2011) revolutionized observational documentary with its mesmerizing study of cattle in the French countryside. Director Emmanuel Gras strips away narration and music, letting the cows' daily routines become a hypnotic meditation on existence. This approach echoes other landmark animal documentaries like **Le Peuple Migrateur** (2001) and **Microcosmos** (1996), but with an unprecedented focus on farm animals typically seen as mere commodities. The film's patient, contemplative style influenced later works like **Sweetgrass** (2009) and **Le Quattro Volte** (2010)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Gunda",
+            "year": 2020,
+            "slug": "A black-and-white documentary following the daily life of a pig and her piglets on a farm, with no dialogue or music",
+            "poster": "https://image.tmdb.org/t/p/w500/il9aNHkD18Kl4E7vmNT6kW4pUVc.jpg",
+            "initialStreaming": "MUBI",
+            "tmdb_id": 664601,
+            "poster_url": "https://image.tmdb.org/t/p/w500/il9aNHkD18Kl4E7vmNT6kW4pUVc.jpg"
+          },
+          {
+            "title": "Bestiaire",
+            "year": 2012,
+            "slug": "An observational portrait of animals in a Quebec safari park that questions how humans view and display wildlife",
+            "poster": "https://image.tmdb.org/t/p/w500/7ADFCHr3ELUUiAFPLlAkkEZWb6M.jpg",
+            "initialStreaming": "Kanopy",
+            "tmdb_id": 84176,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7ADFCHr3ELUUiAFPLlAkkEZWb6M.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The success of **Bovines** sparked renewed interest in slow cinema approaches to nature documentaries. **Le Quattro Volte** (2010) expanded this meditative style to examine the cycle of life through goats in Calabria, while Victor Kossakovsky's <a href=\"/movie/664601\" class=\"movie-title\">Gunda</a> (2020) brought stunning black-and-white cinematography to capture intimate moments of farm animal life. These films reject traditional nature documentary conventions of dramatic narration and orchestral scores, instead finding profound meaning in patient observation."
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends beyond pure animal documentaries. Contemporary filmmakers like Kelly Reichardt incorporated similar observational techniques of livestock in <a href=\"/movie/558582\" class=\"movie-title\">First Cow</a> (2019), using long takes and minimal dialogue to explore human-animal relationships. **Cow** (2021) by Andrea Arnold follows this tradition while adding more direct political commentary about dairy farming. SUBHEAD: The Evolution of Animal-Focused Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "First Cow",
+            "year": 2019,
+            "slug": "A quiet drama about friendship and capitalism in 1820s Oregon, centered around a prized dairy cow",
+            "poster": "https://image.tmdb.org/t/p/w500/yS41crZ1i0fFxCQbuL7I1Y1VBwm.jpg",
+            "initialStreaming": "Showtime",
+            "tmdb_id": 558582,
+            "poster_url": "https://image.tmdb.org/t/p/w500/yS41crZ1i0fFxCQbuL7I1Y1VBwm.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Bovines** marks a crucial shift from traditional wildlife documentaries like **March of the Penguins** (2005) toward more experimental approaches. Films like **The Velvet Queen** (2021) and **Encounters at the End of the World** (2007) continue pushing boundaries by blending nature observation with philosophical inquiry. This movement questions our relationship with animals while avoiding heavy-handed messaging."
+      }
+    ],
+    "exploreFurther": [
+      "The history of observational documentary techniques from Direct Cinema to present",
+      "The role of sound design in nature documentaries without narration",
+      "Agricultural documentaries and their evolution in French cinema",
+      "Slow cinema's influence on nature documentary filmmaking",
+      "The ethics of filming animals in documentary contexts"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Le Peuple Migrateur",
+          "year": 2001,
+          "slug": "A stunning documentary following bird migration patterns across the globe",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 11516
+        },
+        {
+          "title": "Sweetgrass",
+          "year": 2009,
+          "slug": "A chronicle of Montana shepherds on their final sheep drive through public lands",
+          "poster": "https://image.tmdb.org/t/p/w500/xTQ7URCmLBWkMJeT4G8uyvpciqU.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 50071,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xTQ7URCmLBWkMJeT4G8uyvpciqU.jpg"
+        },
+        {
+          "title": "Microcosmos",
+          "year": 1996,
+          "slug": "An intimate look at the insect world using groundbreaking macro photography",
+          "poster": "https://image.tmdb.org/t/p/w500/OPoiGrzNr5FWoczXH5Gs1cReec.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 9305,
+          "poster_url": "https://image.tmdb.org/t/p/w500/OPoiGrzNr5FWoczXH5Gs1cReec.jpg"
+        },
+        {
+          "title": "Cow",
+          "year": 2021,
+          "slug": "Andrea Arnold's unflinching portrait of dairy farm life through one cow's perspective",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Velvet Queen",
+          "year": 2021,
+          "slug": "A poetic search for the elusive snow leopard in Tibet's mountains",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 842356
+        },
+        {
+          "title": "Le Quattro Volte",
+          "year": 2010,
+          "slug": "A spiritual journey through nature following a goatherd in Calabria",
+          "poster": "https://image.tmdb.org/t/p/w500/wx6yDUCgDaa73QWEblp6fFILGE5.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": 57389,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wx6yDUCgDaa73QWEblp6fFILGE5.jpg"
+        },
+        {
+          "title": "Grizzly Man",
+          "year": 2005,
+          "slug": "Werner Herzog's examination of Timothy Treadwell's life among Alaskan bears",
+          "poster": "https://image.tmdb.org/t/p/w500/gZrD5B5CmzVWit8ylvMBXSNuX2L.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 288430,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gZrD5B5CmzVWit8ylvMBXSNuX2L.jpg"
+        },
+        {
+          "title": "The Story of the Weeping Camel",
+          "year": 2003,
+          "slug": "A Mongolian documentary about a rare white camel calf",
+          "poster": "https://image.tmdb.org/t/p/w500/c3SAAO5hNJqLWLlJr9TZ6CQ8eGI.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1114,
+          "poster_url": "https://image.tmdb.org/t/p/w500/c3SAAO5hNJqLWLlJr9TZ6CQ8eGI.jpg"
+        },
+        {
+          "title": "Leviathan",
+          "year": 2012,
+          "slug": "An immersive look at commercial fishing off New England's coast",
+          "poster": "https://image.tmdb.org/t/p/w500/yU626BbyIZ4VraJJuFwXHEhcEK3.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 127962,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yU626BbyIZ4VraJJuFwXHEhcEK3.jpg"
+        },
+        {
+          "title": "Aquarela",
+          "year": 2018,
+          "slug": "A visual meditation on the power and beauty of water across the globe",
+          "poster": "https://image.tmdb.org/t/p/w500/vrgW1ZJCgCpI7b0YZU9wKO1UCOT.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 533827,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vrgW1ZJCgCpI7b0YZU9wKO1UCOT.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,155 @@
+{
+  "props": {
+    "title": "Mr. Magoo",
+    "year": 1997,
+    "initialSlug": "The eyes have it.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/zlsDfK40kky772prEMfYhKt54W8.jpg",
+    "initialStreaming": null,
+    "tmdbId": 9438,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Mr. Magoo represents one of Hollywood's most notorious attempts to adapt a classic cartoon character to live-action, following the dubious tradition of Boris and Natasha (1992) and The Flintstones (1994). Leslie Nielsen portrays the severely myopic millionaire in a slapstick caper that drastically misunderstands what made the original UPA animated shorts groundbreaking. The original Mr. Magoo cartoons, which debuted in 1949, were revolutionary for their minimalist animation style and sophisticated humor. The film strips away this artistic innovation in favor of broad physical comedy and dated sight gags."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Mr. Magoo",
+            "year": 1997,
+            "slug": "Leslie Nielsen stars as the near-sighted millionaire who becomes entangled in a jewel heist while bumbling through elaborate action sequences",
+            "poster": "https://image.tmdb.org/t/p/w500/zlsDfK40kky772prEMfYhKt54W8.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 9438,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zlsDfK40kky772prEMfYhKt54W8.jpg"
+          },
+          {
+            "title": "UPA: The Jolly Frolics Collection",
+            "year": 1948,
+            "slug": "Original theatrical Mr. Magoo shorts showcasing the groundbreaking limited animation style",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": null
+          },
+          {
+            "title": "The Flintstones",
+            "year": 1994,
+            "slug": "John Goodman leads this live-action adaptation of the classic Hanna-Barbera cartoon series",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The late 1990s marked a particularly troubled period for cartoon-to-live-action adaptations. While George of the Jungle (1997) found some success through self-aware humor, films like <a href=\"/movie/332\" class=\"movie-title\" data-tmdb-id=\"332\">Inspector Gadget</a> (1999) and Dudley Do-Right (1999) struggled to translate their source material's charm. The Mr. Magoo film particularly suffered from trying to force an action-movie plot onto a character whose original appeal came from gentle social satire and artistic innovation. SUBHEAD: The UPA Animation Legacy"
+      },
+      {
+        "type": "text",
+        "content": "To understand why the Mr. Magoo film fails, it's crucial to examine the revolutionary impact of United Productions of America (UPA) studios in the 1940s and 50s. Their stylized approach influenced everything from <a href=\"/movie/12230\" class=\"movie-title\" data-tmdb-id=\"12230\">101 Dalmatians</a> (1961) to modern shows like Samurai Jack (2001). The original Mr. Magoo shorts weren't just about a blind man bumping into things - they were sophisticated commentaries on modern art, social pretension, and post-war American society. The film reduces this rich legacy to simple physical comedy."
+      }
+    ],
+    "exploreFurther": [
+      "The Rise and Fall of UPA Studios",
+      "Evolution of Limited Animation Techniques",
+      "Leslie Nielsen's Comedy Career",
+      "Failed Cartoon Adaptations of the 1990s",
+      "The Original Mr. Magoo Voice Actor Jim Backus"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Gerald McBoing-Boing",
+          "year": 1950,
+          "slug": "Oscar-winning UPA short about a boy who speaks only in sound effects",
+          "poster": "https://image.tmdb.org/t/p/w500/afgivuAiO9ZllYvISlzDRU9kzuv.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 46990,
+          "poster_url": "https://image.tmdb.org/t/p/w500/afgivuAiO9ZllYvISlzDRU9kzuv.jpg"
+        },
+        {
+          "title": "Rooty Toot Toot",
+          "year": 1951,
+          "slug": "Innovative UPA short showcasing modern art influence",
+          "poster": "https://image.tmdb.org/t/p/w500/1LXJD042SEw18ZoGzEDMOF9nGuM.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 103956,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1LXJD042SEw18ZoGzEDMOF9nGuM.jpg"
+        },
+        {
+          "title": "The Tell-Tale Heart",
+          "year": 1953,
+          "slug": "UPA's dark adaptation of Poe's story",
+          "poster": "https://image.tmdb.org/t/p/w500/AsUpsdGwNbFRpPG6BxvshwFRaut.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 127401,
+          "poster_url": "https://image.tmdb.org/t/p/w500/AsUpsdGwNbFRpPG6BxvshwFRaut.jpg"
+        },
+        {
+          "title": "George of the Jungle",
+          "year": 1997,
+          "slug": "Brendan Fraser stars in successful cartoon adaptation",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Inspector Gadget",
+          "year": 1999,
+          "slug": "Matthew Broderick as the bionic detective",
+          "poster": "https://image.tmdb.org/t/p/w500/dDcsv1Lql5aM6H4JYfDHjBAXKgT.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 332,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dDcsv1Lql5aM6H4JYfDHjBAXKgT.jpg"
+        },
+        {
+          "title": "The Adventures of Rocky and Bullwinkle",
+          "year": 2000,
+          "slug": "Another failed attempt at bringing cartoon characters to life",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Dudley Do-Right",
+          "year": 1999,
+          "slug": "Brendan Fraser returns in misguided cartoon adaptation",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Pink Panther",
+          "year": 2006,
+          "slug": "Steve Martin reimagines the classic character",
+          "poster": "https://image.tmdb.org/t/p/w500/57ViRkdsddHLK32W8Nf3ZPLSAu4.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 12096,
+          "poster_url": "https://image.tmdb.org/t/p/w500/57ViRkdsddHLK32W8Nf3ZPLSAu4.jpg"
+        },
+        {
+          "title": "Underdog",
+          "year": 2007,
+          "slug": "Live-action adaptation of cartoon superhero dog",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Popeye",
+          "year": 1980,
+          "slug": "Robert Altman's ambitious but flawed cartoon adaptation",
+          "poster": "https://image.tmdb.org/t/p/w500/hCCp4pESgYY6uTFARYf4UYV1BdU.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 11335,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hCCp4pESgYY6uTFARYf4UYV1BdU.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

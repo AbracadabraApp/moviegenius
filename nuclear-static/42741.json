@@ -1,0 +1,159 @@
+{
+  "props": {
+    "title": "Un Flic",
+    "year": 1972,
+    "initialSlug": "Jaded cop hunts thieves in noir-drenched Paris",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/gICgcF0VuxW13XeHeeUEKlAkyOE.jpg",
+    "initialStreaming": null,
+    "tmdbId": 42741,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Un Flic represents Jean-Pierre Melville's final masterpiece, capping his remarkable run of existential crime films. The icy blue color palette and methodical pacing perfectly capture the moral ambiguity between cop Delon and criminal Crenna. This film follows Melville's other noir classics like <a href=\"/movie/5511\" class=\"movie-title\">Le Samouraï</a> (1967) and <a href=\"/movie/11657\" class=\"movie-title\">Le Cercle Rouge</a> (1970), completing his exploration of honor among thieves and the thin line between law and criminality. The stunning train heist sequence, using obvious miniatures, creates a dreamlike quality that elevates the film beyond mere crime thriller."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Le Samouraï",
+            "year": 1967,
+            "slug": "Alain Delon stars as a methodical hitman in Melville's stylish noir masterpiece",
+            "poster": "https://image.tmdb.org/t/p/w500/5Fa6o5nfUPEatQ9b3OwEvdEdR7T.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 5511,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5Fa6o5nfUPEatQ9b3OwEvdEdR7T.jpg"
+          },
+          {
+            "title": "Bob le Flambeur",
+            "year": 1956,
+            "slug": "Melville's first crime film about an aging gambler planning one last casino heist",
+            "poster": "https://image.tmdb.org/t/p/w500/3CIfIDtD1I1rYY3ooaya8iZHlD8.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 26030,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3CIfIDtD1I1rYY3ooaya8iZHlD8.jpg"
+          },
+          {
+            "title": "Le Cercle Rouge",
+            "year": 1970,
+            "slug": "Meticulous heist film with Delon and Montand planning the perfect jewel robbery",
+            "poster": "https://image.tmdb.org/t/p/w500/w56La43IJnGpLepgqfGCAZsbQPp.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 11657,
+            "poster_url": "https://image.tmdb.org/t/p/w500/w56La43IJnGpLepgqfGCAZsbQPp.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends far beyond French cinema. Michael Mann's <a href=\"/movie/949\" class=\"movie-title\" data-tmdb-id=\"949\">Heat</a> (1995) clearly draws from Melville's stark portrayal of professional criminals and the cops pursuing them. The meticulous attention to procedure and lack of unnecessary dialogue became hallmarks of modern crime films like <a href=\"/movie/64690\" class=\"movie-title\" data-tmdb-id=\"64690\">Drive</a> (2011) and <a href=\"/movie/27579\" class=\"movie-title\" data-tmdb-id=\"27579\">The American</a> (2010). Melville's focus on ritual and process over action influenced directors from John Woo to Jim Jarmusch. SUBHEAD: The Evolution of the Police Procedural"
+      },
+      {
+        "type": "text",
+        "content": "Un Flic helped establish key conventions of the modern police procedural. Its influence can be seen in everything from <a href=\"/movie/11524\" class=\"movie-title\" data-tmdb-id=\"11524\">Thief</a> (1981) to <a href=\"/movie/9846\" class=\"movie-title\" data-tmdb-id=\"9846\">To Live and Die in L.A.</a> (1985). The film's cold, detached style and focus on process over personality created a template for examining the psychological toll of police work. This approach resonates in contemporary works like <a href=\"/movie/273481\" class=\"movie-title\" data-tmdb-id=\"273481\">Sicario</a> (2015) and <a href=\"/movie/1949\" class=\"movie-title\" data-tmdb-id=\"1949\">Zodiac</a> (2007)."
+      }
+    ],
+    "exploreFurther": [
+      "Melville's Color Theory and Visual Style",
+      "The Evolution of the French Police Procedural",
+      "Alain Delon's Collaboration with Melville",
+      "Miniature Effects in Classic Cinema",
+      "The Influence of French Noir on American Crime Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Le Deuxième Souffle",
+          "year": 1966,
+          "slug": "Melville crime drama about an escaped convict",
+          "poster": "https://image.tmdb.org/t/p/w500/lyKRTUs9oaqyiIRfgGA18s4xYt3.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 25047,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lyKRTUs9oaqyiIRfgGA18s4xYt3.jpg"
+        },
+        {
+          "title": "Army of Shadows",
+          "year": 1969,
+          "slug": "Melville's resistance thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/aqNZWM9bspt8zaDvVRIRiWxRVJ7.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 15383,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aqNZWM9bspt8zaDvVRIRiWxRVJ7.jpg"
+        },
+        {
+          "title": "The Red Circle",
+          "year": 1970,
+          "slug": "Classic French heist film",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 11657
+        },
+        {
+          "title": "The Sicilian Clan",
+          "year": 1969,
+          "slug": "French crime thriller with Delon",
+          "poster": "https://image.tmdb.org/t/p/w500/uVBbDPbm1H4Z9M7uZ976KFaAjDR.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 4235,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uVBbDPbm1H4Z9M7uZ976KFaAjDR.jpg"
+        },
+        {
+          "title": "The Day of the Jackal",
+          "year": 1973,
+          "slug": "Meticulous assassination thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/vThgcb3JOj99yETg8WChuci4LV2.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 4909,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vThgcb3JOj99yETg8WChuci4LV2.jpg"
+        },
+        {
+          "title": "The Silent Partner",
+          "year": 1978,
+          "slug": "Canadian thriller influenced by French noir",
+          "poster": "https://image.tmdb.org/t/p/w500/mN5kB6uXIKETr2DcsG0u3wSFolN.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 25338,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mN5kB6uXIKETr2DcsG0u3wSFolN.jpg"
+        },
+        {
+          "title": "The Driver",
+          "year": 1978,
+          "slug": "Walter Hill's stripped-down car chase thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/zSpk2OH4MCgLGB06XDv4YUfBTv6.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 2153,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zSpk2OH4MCgLGB06XDv4YUfBTv6.jpg"
+        },
+        {
+          "title": "The Friends of Eddie Coyle",
+          "year": 1973,
+          "slug": "Gritty Boston crime drama",
+          "poster": "https://image.tmdb.org/t/p/w500/tyV8Bgf2huCIbGUxTdGgnzdIRKZ.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 25680,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tyV8Bgf2huCIbGUxTdGgnzdIRKZ.jpg"
+        },
+        {
+          "title": "Le Professional",
+          "year": 1981,
+          "slug": "Jean-Paul Belmondo action thriller",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 1672
+        },
+        {
+          "title": "The Killer",
+          "year": 1989,
+          "slug": "John Woo's Melville-influenced Hong Kong action",
+          "poster": "https://image.tmdb.org/t/p/w500/8hTxlSqMAHBXAh1eB69ir0BXhzE.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 10835,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8hTxlSqMAHBXAh1eB69ir0BXhzE.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

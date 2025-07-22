@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "Shark Tale",
+    "year": 2004,
+    "initialSlug": "Little fish's big lie turns him into ocean legend",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/r08DpyPyhXcJTfNZAICNGMzcQ8l.jpg",
+    "initialStreaming": null,
+    "tmdbId": 10555,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Shark Tale marked DreamWorks Animation's attempt to capitalize on the success of <a href=\"/movie/12\" class=\"movie-title\" data-tmdb-id=\"12\">Finding Nemo</a> (2003), but took a drastically different approach by setting its story in an underwater urban environment styled after New York City. The film's use of celebrity voices - particularly Will Smith as Oscar and Robert De Niro as Don Lino - heavily influenced its marketing and character designs, creating fish characters that deliberately resembled their voice actors. This trend of celebrity-influenced character design became increasingly common in animated features, seen later in films like <a href=\"/movie/953\" class=\"movie-title\" data-tmdb-id=\"953\">Madagascar</a> (2005) and <a href=\"/movie/38055\" class=\"movie-title\" data-tmdb-id=\"38055\">Megamind</a> (2010)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Finding Nemo",
+            "year": 2003,
+            "slug": "A clownfish searches across the ocean for his captured son, setting the gold standard for underwater animation",
+            "poster": "https://image.tmdb.org/t/p/w500/eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 12,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg"
+          },
+          {
+            "title": "Madagascar",
+            "year": 2005,
+            "slug": "Zoo animals escape to the wild in DreamWorks' celebrity-voiced adventure comedy",
+            "poster": "https://image.tmdb.org/t/p/w500/zMpJY5CJKUufG9OTw0In4eAFqPX.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 953,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zMpJY5CJKUufG9OTw0In4eAFqPX.jpg"
+          },
+          {
+            "title": "Deep",
+            "year": 2017,
+            "slug": "A young octopus and his friends try to save their underwater community",
+            "poster": "https://image.tmdb.org/t/p/w500/mShTMzDNfHgTgA3N81TEefL0EMv.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 430474,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mShTMzDNfHgTgA3N81TEefL0EMv.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's portrayal of mob culture through aquatic life created an unusual mashup of genres, directly referencing classics like <a href=\"/movie/238\" class=\"movie-title\" data-tmdb-id=\"238\">The Godfather</a> (1972) and <a href=\"/movie/769\" class=\"movie-title\" data-tmdb-id=\"769\">Goodfellas</a> (1990). This approach of parodying adult-oriented films in family entertainment became a signature move for DreamWorks Animation, later seen in <a href=\"/movie/808\" class=\"movie-title\" data-tmdb-id=\"808\">Shrek</a> (2001) and Monsters vs. Aliens (2009). However, the film's reliance on pop culture references and adult-oriented jokes marked a distinct contrast to Pixar's more emotionally grounded storytelling approach. SUBHEAD: Animation Technology and Style"
+      },
+      {
+        "type": "text",
+        "content": "Shark Tale represented a significant technical achievement in underwater animation, though its stylistic choices favored urban realism over marine biology accuracy. The film's character designs prioritized anthropomorphic features and celebrity likenesses over aquatic authenticity, contrasting sharply with the more naturalistic approach of <a href=\"/movie/12\" class=\"movie-title\" data-tmdb-id=\"12\">Finding Nemo</a> (2003). This artistic decision influenced later underwater animated features like <a href=\"/movie/20521\" class=\"movie-title\" data-tmdb-id=\"20521\">The Reef</a> (2006) and <a href=\"/movie/9408\" class=\"movie-title\" data-tmdb-id=\"9408\">Surf's Up</a> (2007), which similarly balanced realism with stylized character design."
+      }
+    ],
+    "exploreFurther": [
+      "The evolution of underwater animation techniques from Finding Nemo to present day",
+      "The influence of celebrity voice casting on animated character design",
+      "Marine biology accuracy vs. creative liberty in animated films",
+      "The impact of mob movie references in family entertainment",
+      "DreamWorks Animation's approach to pop culture parody"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Little Mermaid",
+          "year": 1989,
+          "slug": "Disney's underwater musical classic that revolutionized animated musicals",
+          "poster": "https://image.tmdb.org/t/p/w500/plcZXvI310FkbwIptvd6rqk63LP.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 10144,
+          "poster_url": "https://image.tmdb.org/t/p/w500/plcZXvI310FkbwIptvd6rqk63LP.jpg"
+        },
+        {
+          "title": "A Turtle's Tale: Sammy's Adventures",
+          "year": 2010,
+          "slug": "A sea turtle's epic journey across the ocean",
+          "poster": "https://image.tmdb.org/t/p/w500/k5iNd9Uj1nyBZRZPwexcsvDVZ0O.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 49953,
+          "poster_url": "https://image.tmdb.org/t/p/w500/k5iNd9Uj1nyBZRZPwexcsvDVZ0O.jpg"
+        },
+        {
+          "title": "Help! I'm a Fish",
+          "year": 2000,
+          "slug": "Children transformed into fish must find their way home",
+          "poster": "https://image.tmdb.org/t/p/w500/s9yFQD19xJqXEnAnUAZFUan25DJ.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 12609,
+          "poster_url": "https://image.tmdb.org/t/p/w500/s9yFQD19xJqXEnAnUAZFUan25DJ.jpg"
+        },
+        {
+          "title": "The SpongeBob SquarePants Movie",
+          "year": 2004,
+          "slug": "The beloved Nickelodeon character's first theatrical adventure",
+          "poster": "https://image.tmdb.org/t/p/w500/1rvzKV1d18EbDVaEd4VDzK3cgnY.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 11836,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1rvzKV1d18EbDVaEd4VDzK3cgnY.jpg"
+        },
+        {
+          "title": "The Reef",
+          "year": 2006,
+          "slug": "A fish leaves his reef home for adventure in the open ocean",
+          "poster": "https://image.tmdb.org/t/p/w500/38xnsPZiuIYMTsOXhtTIg1dUnRu.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 20521,
+          "poster_url": "https://image.tmdb.org/t/p/w500/38xnsPZiuIYMTsOXhtTIg1dUnRu.jpg"
+        },
+        {
+          "title": "Ponyo",
+          "year": 2008,
+          "slug": "Miyazaki's magical tale of a goldfish who wants to become human",
+          "poster": "https://image.tmdb.org/t/p/w500/yp8vEZflGynlEylxEesbYasc06i.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 12429,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yp8vEZflGynlEylxEesbYasc06i.jpg"
+        },
+        {
+          "title": "The Spongebob Movie: Sponge Out of Water",
+          "year": 2015,
+          "slug": "SpongeBob ventures onto land in this hybrid animation",
+          "poster": "https://image.tmdb.org/t/p/w500/2WDmjUlSAPlA27i2OwEC7sRTFw3.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 228165,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2WDmjUlSAPlA27i2OwEC7sRTFw3.jpg"
+        },
+        {
+          "title": "Rango",
+          "year": 2011,
+          "slug": "A chameleon becomes sheriff in this Western-themed animated film",
+          "poster": "https://image.tmdb.org/t/p/w500/A5MP1guV8pbruieG0tnpPIbaJtt.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 44896,
+          "poster_url": "https://image.tmdb.org/t/p/w500/A5MP1guV8pbruieG0tnpPIbaJtt.jpg"
+        },
+        {
+          "title": "Over the Hedge",
+          "year": 2006,
+          "slug": "Suburban wildlife raid human neighborhoods for food",
+          "poster": "https://image.tmdb.org/t/p/w500/jtZnymorbnHY7mOiBXR14ZDJseM.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 7518,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jtZnymorbnHY7mOiBXR14ZDJseM.jpg"
+        },
+        {
+          "title": "Monsters vs. Aliens",
+          "year": 2009,
+          "slug": "DreamWorks' homage to classic monster movies",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "The Kid Brother",
+    "year": 1927,
+    "initialSlug": "When the little guy wins big!",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/wH5VcRHUdR0ZIb938mVEbPzF13c.jpg",
+    "initialStreaming": null,
+    "tmdbId": 16661,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The Kid Brother represents Harold Lloyd at the peak of his comedic powers, delivering a masterful blend of character-driven humor and thrilling stunts. Unlike Chaplin's Little Tramp or Keaton's Great Stone Face, Lloyd crafted an optimistic \"glasses character\" that resonated with everyday Americans. The film showcases Lloyd's signature mix of ambitious physical comedy and heartfelt storytelling, following his character Harold Hickory as he proves himself worthy of his family's legacy. Lloyd's climbing sequences and intricate gags demonstrate why he was known as \"The King of Daredevil Comedy,\" while the romantic subplot with Mary Powers (Jobyna Ralston) adds genuine emotional depth."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Safety Last!",
+            "year": 1923,
+            "slug": "Lloyd's most iconic film featuring the famous clock-hanging sequence that defined silent comedy stunts",
+            "poster": "https://image.tmdb.org/t/p/w500/fEt5HWJ32ek8ibef7zSZnA00Jp0.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 22596,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fEt5HWJ32ek8ibef7zSZnA00Jp0.jpg"
+          },
+          {
+            "title": "Girl Shy",
+            "year": 1924,
+            "slug": "A shy tailor's apprentice becomes an unlikely romance novelist in this masterpiece of timing and physical comedy",
+            "poster": "https://image.tmdb.org/t/p/w500/vXvHZwCdlETIyqcPhtudZvJBiFm.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 40574,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vXvHZwCdlETIyqcPhtudZvJBiFm.jpg"
+          },
+          {
+            "title": "Grandma's Boy",
+            "year": 1922,
+            "slug": "Lloyd plays a cowardly young man who gains confidence through his grandmother's stories",
+            "poster": "https://image.tmdb.org/t/p/w500/9St2NINbr0zVwcMqyPvTDAKKXUc.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 22592,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9St2NINbr0zVwcMqyPvTDAKKXUc.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Lloyd's influence extends far beyond the silent era. His everyman character facing impossible odds while performing death-defying stunts inspired generations of action-comedy stars. Jackie Chan has directly credited Lloyd as a major influence, particularly visible in films like <a href=\"/movie/21519\" class=\"movie-title\" data-tmdb-id=\"21519\">Project A</a> (1983) and <a href=\"/movie/9056\" class=\"movie-title\" data-tmdb-id=\"9056\">Police Story</a> (1985). The careful build-up of gags and payoffs in The Kid Brother established templates still used in modern comedy, from the works of Edgar Wright to the Mission: Impossible series. SUBHEAD: Technical Innovation and Visual Comedy"
+      },
+      {
+        "type": "text",
+        "content": "The film's technical achievements were groundbreaking for 1927. Directors Ted Wilde and J.A. Howe, along with Lloyd himself (uncredited), pioneered new camera techniques to capture the complex stunts and gags. The famous ship sequence near the film's climax required innovative practical effects that influenced later maritime adventures like <a href=\"/movie/26201\" class=\"movie-title\" data-tmdb-id=\"26201\">The Sea Hawk</a> (1940) and even Master and Commander (2003). Lloyd's insistence on shooting his own stunts - despite having lost two fingers in an accident years earlier - set a standard for physical commitment that influenced performers from Buster Keaton to Tom Cruise."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Silent Film Comedy Techniques",
+      "Harold Lloyd's Impact on Modern Action-Comedy",
+      "Practical Effects in Silent Era Filmmaking",
+      "The \"Glasses Character\" Archetype in Cinema",
+      "Silent Film Preservation and Restoration"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Speedy",
+          "year": 1928,
+          "slug": "Lloyd's last silent film features amazing location shooting in New York",
+          "poster": "https://image.tmdb.org/t/p/w500/zWhWaWCCIsnQDsFTAe98ap3R5y.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 22595,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zWhWaWCCIsnQDsFTAe98ap3R5y.jpg"
+        },
+        {
+          "title": "The Freshman",
+          "year": 1925,
+          "slug": "Lloyd tackles college life in this influential sports comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/3531lJNSMhrpcNWXrDIYYoYH6Rp.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 42359,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3531lJNSMhrpcNWXrDIYYoYH6Rp.jpg"
+        },
+        {
+          "title": "For Heaven's Sake",
+          "year": 1926,
+          "slug": "A millionaire playboy helps run a mission in the slums",
+          "poster": "https://image.tmdb.org/t/p/w500/vIaZ41s0IqU8AlMufJ7fsUKq7Vb.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 42368,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vIaZ41s0IqU8AlMufJ7fsUKq7Vb.jpg"
+        },
+        {
+          "title": "Why Worry?",
+          "year": 1923,
+          "slug": "Lloyd teams up with a giant in this south-of-the-border comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/7NrgFBBgOyL0vDAZ17jo3EIQ2uo.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 41348,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7NrgFBBgOyL0vDAZ17jo3EIQ2uo.jpg"
+        },
+        {
+          "title": "Hot Water",
+          "year": 1924,
+          "slug": "Domestic comedy showcasing Lloyd's mastery of escalating situations",
+          "poster": "https://image.tmdb.org/t/p/w500/pgnb43bbR1s5H72yN45bwN0YQUn.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 42367,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pgnb43bbR1s5H72yN45bwN0YQUn.jpg"
+        },
+        {
+          "title": "Dr. Jack",
+          "year": 1922,
+          "slug": "Lloyd plays a young country doctor with unconventional methods",
+          "poster": "https://image.tmdb.org/t/p/w500/vWr8isUou7CwHwsByg3bP9LGMKS.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 42366,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vWr8isUou7CwHwsByg3bP9LGMKS.jpg"
+        },
+        {
+          "title": "Never Weaken",
+          "year": 1921,
+          "slug": "Features some of Lloyd's most dangerous building-climbing stunts",
+          "poster": "https://image.tmdb.org/t/p/w500/ro8eWzMVPvJv93i7VSkugYsIxWC.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 44405,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ro8eWzMVPvJv93i7VSkugYsIxWC.jpg"
+        },
+        {
+          "title": "Modern Times",
+          "year": 1936,
+          "slug": "Chaplin's last silent masterpiece shows similar social commentary",
+          "poster": "https://image.tmdb.org/t/p/w500/7uoiKOEjxBBW0AgDGQWrlfGQ90w.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 3082,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7uoiKOEjxBBW0AgDGQWrlfGQ90w.jpg"
+        },
+        {
+          "title": "The General",
+          "year": 1926,
+          "slug": "Keaton's Civil War epic demonstrates parallel stunt innovation",
+          "poster": "https://image.tmdb.org/t/p/w500/nIp4gIXogCjfB1QABNsWwa9gSca.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 961,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nIp4gIXogCjfB1QABNsWwa9gSca.jpg"
+        },
+        {
+          "title": "City Lights",
+          "year": 1931,
+          "slug": "Chaplin's emotional silent film made during the talkie era",
+          "poster": "https://image.tmdb.org/t/p/w500/ugmakEL5y294I5bXgiBqApuZpwc.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 901,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ugmakEL5y294I5bXgiBqApuZpwc.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

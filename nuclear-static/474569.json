@@ -1,0 +1,156 @@
+{
+  "props": {
+    "title": "One of Us",
+    "year": 2017,
+    "initialSlug": "Escape the past, face the future.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/7x1NKjj5fbNv0cvPKcWZUUUPDPo.jpg",
+    "initialStreaming": null,
+    "tmdbId": 474569,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**One of Us** (2017) masterfully exposes the challenges faced by those leaving ultra-Orthodox Jewish communities, joining powerful documentaries like **Jesus Camp** (2006) and **Going Clear: Scientology and the Prison of Belief** (2015) in examining closed religious groups. Directors Heidi Ewing and Rachel Grady (who also made **Jesus Camp**) focus on three compelling ex-Hasidic Jews in New York: Etty, a mother fighting for custody while escaping an abusive marriage; Ari, struggling with addiction and past trauma; and Luzer, pursuing an acting career in LA. Their intimate storytelling approach recalls **Minding the Gap** (2018) in how it builds deep trust with subjects over time."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Unorthodox",
+            "year": 2020,
+            "slug": "A young woman flees her Hasidic community in Brooklyn for a new life in Berlin",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 686786
+          },
+          {
+            "title": "Disobedience",
+            "year": 2017,
+            "slug": "Rachel Weisz and Rachel McAdams star as Orthodox Jewish women exploring forbidden love",
+            "poster": "https://image.tmdb.org/t/p/w500/skPT4ffWhlmmDOMNEdxOiP6Emfz.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 419743,
+            "poster_url": "https://image.tmdb.org/t/p/w500/skPT4ffWhlmmDOMNEdxOiP6Emfz.jpg"
+          },
+          {
+            "title": "Menashe",
+            "year": 2017,
+            "slug": "A Hasidic Jewish widower fights to maintain custody of his son while staying true to his faith",
+            "poster": "https://image.tmdb.org/t/p/w500/11jQ1dsdefwAZIilbvgr0lMyhKN.jpg",
+            "initialStreaming": "A24",
+            "tmdb_id": 428584,
+            "poster_url": "https://image.tmdb.org/t/p/w500/11jQ1dsdefwAZIilbvgr0lMyhKN.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's examination of religious trauma connects to other powerful documentaries like **The Keepers** (2017) and **Holy Hell** (2016). What sets **One of Us** apart is its nuanced portrayal of both the warmth of tight-knit religious communities and their potential for control and abuse. The filmmakers avoid sensationalism, instead letting their subjects' raw experiences speak volumes about the price of religious freedom, similar to how **Paradise Lost: The Child Murders at Robin Hood Hills** (1996) let its story unfold through intimate access to its subjects. SUBHEAD: Breaking Away from Religious Communities on Film"
+      },
+      {
+        "type": "text",
+        "content": "The theme of breaking away from restrictive religious communities has been explored across various films, from **Witness** (1985) examining Amish life to **The Village** (2004) creating a fictional isolated religious society. **One of Us** stands out for its documentary approach, showing real-time consequences of leaving rather than dramatized versions. This connects it to other powerful examinations of faith and freedom like **Jesus Camp** (2006) and **Children of God** (2001), while maintaining focus on the specific challenges within Orthodox Jewish communities."
+      }
+    ],
+    "exploreFurther": [
+      "The history and evolution of Hasidic Judaism in New York City",
+      "Documentary filmmaking techniques for sensitive religious subjects",
+      "The legal challenges faced by those leaving ultra-Orthodox communities",
+      "Support organizations for ex-Hasidic individuals",
+      "The impact of social media on religious isolation and exodus"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Jesus Camp",
+          "year": 2006,
+          "slug": "Documentary examining evangelical Christian summer camp",
+          "poster": "https://image.tmdb.org/t/p/w500/6ueSRBYaicEYvR2sFHVvptKNaxI.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1776,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6ueSRBYaicEYvR2sFHVvptKNaxI.jpg"
+        },
+        {
+          "title": "The Keepers",
+          "year": 2017,
+          "slug": "Documentary series investigating murder and abuse in Catholic community",
+          "poster": "https://image.tmdb.org/t/p/w500/g2W5YUKKOLGALyZ9f2ishuZnt31.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 471333,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g2W5YUKKOLGALyZ9f2ishuZnt31.jpg"
+        },
+        {
+          "title": "Holy Hell",
+          "year": 2016,
+          "slug": "Former cult member documents 22 years inside a spiritual community",
+          "poster": "https://image.tmdb.org/t/p/w500/qD85xZGbePSCJhlALzY1FR1xVm8.jpg",
+          "initialStreaming": "Amazon",
+          "tmdb_id": 373472,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qD85xZGbePSCJhlALzY1FR1xVm8.jpg"
+        },
+        {
+          "title": "Children of God",
+          "year": 2001,
+          "slug": "Documentary about religious cult survivors",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 1010193
+        },
+        {
+          "title": "Witness",
+          "year": 1985,
+          "slug": "Harrison Ford thriller exploring Amish community",
+          "poster": "https://image.tmdb.org/t/p/w500/kOymD1rChAMykmDVEzJpIh4OYS7.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 9281,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kOymD1rChAMykmDVEzJpIh4OYS7.jpg"
+        },
+        {
+          "title": "Arranged",
+          "year": 2007,
+          "slug": "Orthodox Jewish and Muslim teachers form unlikely friendship",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 18290
+        },
+        {
+          "title": "A Stranger Among Us",
+          "year": 1992,
+          "slug": "Detective goes undercover in Hasidic community",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon",
+          "tmdb_id": 41670
+        },
+        {
+          "title": "Fill the Void",
+          "year": 2012,
+          "slug": "Young Hasidic woman faces arranged marriage decision",
+          "poster": "https://image.tmdb.org/t/p/w500/zE51xR2MFxloryI4WrIBenT5a9n.jpg",
+          "initialStreaming": "IFC",
+          "tmdb_id": 122088,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zE51xR2MFxloryI4WrIBenT5a9n.jpg"
+        },
+        {
+          "title": "Apostasy",
+          "year": 2017,
+          "slug": "Jehovah's Witness family faces crisis of faith",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Way",
+          "year": 2010,
+          "slug": "Father completes son's religious pilgrimage",
+          "poster": "https://image.tmdb.org/t/p/w500/uaRfG7n92IiuYcKLl7LJo2gr6qO.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 59468,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uaRfG7n92IiuYcKLl7LJo2gr6qO.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

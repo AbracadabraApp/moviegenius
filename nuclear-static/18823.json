@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "Clash of the Titans",
+    "year": 2010,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/3W6QaC3Vz8UJhr6HRYuGfbNeJCs.jpg",
+    "initialStreaming": null,
+    "tmdbId": 18823,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Clash of the Titans represents Hollywood's CGI-heavy reimagining of the beloved 1981 Ray Harryhausen classic, trading stop-motion charm for bombastic visual effects. While Sam Worthington's Perseus lacks the warmth of Harry Hamlin's original portrayal, the film taps into the post-<a href=\"/movie/1271\" class=\"movie-title\" data-tmdb-id=\"1271\">300</a> (2006) appetite for stylized ancient warfare. Director Louis Leterrier delivers spectacle-driven setpieces, particularly in the confrontation with Medusa and the massive Kraken finale, though the 3D conversion - done hastily in post-production - drew significant criticism for its murky quality."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Jason and the Argonauts",
+            "year": 1963,
+            "slug": "Ray Harryhausen's masterpiece of stop-motion animation brings Greek myths to life with groundbreaking effects and the iconic skeleton warrior battle",
+            "poster": "https://image.tmdb.org/t/p/w500/gebjOL2q6foFDfHpCRlZ5wpeKmg.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 11533,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gebjOL2q6foFDfHpCRlZ5wpeKmg.jpg"
+          },
+          {
+            "title": "300",
+            "year": 2006,
+            "slug": "Zack Snyder's hyperviolent, highly stylized adaptation of Frank Miller's graphic novel about the Battle of Thermopylae",
+            "poster": "https://image.tmdb.org/t/p/w500/h7Lcio0c9ohxPhSZg42eTlKIVVY.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 1271,
+            "poster_url": "https://image.tmdb.org/t/p/w500/h7Lcio0c9ohxPhSZg42eTlKIVVY.jpg"
+          },
+          {
+            "title": "Immortals",
+            "year": 2011,
+            "slug": "Visually stunning but narratively thin take on Greek mythology with Henry Cavill as Theseus fighting Mickey Rourke's brutal King Hyperion",
+            "poster": "https://image.tmdb.org/t/p/w500/4SPPX5KIyaQ9O8n5rLvvUIiIhpF.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 37958,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4SPPX5KIyaQ9O8n5rLvvUIiIhpF.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The 2010s saw a surge in effects-driven mythology adaptations, though few captured the magic of earlier eras. <a href=\"/movie/57165\" class=\"movie-title\" data-tmdb-id=\"57165\">Wrath of the Titans</a> (2012) doubled down on CGI spectacle but suffered from similar emotional hollowness. <a href=\"/movie/205584\" class=\"movie-title\" data-tmdb-id=\"205584\">Gods of Egypt</a> (2016) attempted to apply the same formula to Egyptian mythology, resulting in a costly misfire. This trend reflects Hollywood's ongoing challenge of balancing visual innovation with compelling storytelling in mythology-based epics. SUBHEAD: The Evolution of Mythological Effects"
+      },
+      {
+        "type": "text",
+        "content": "The contrast between modern CGI and practical effects becomes stark when comparing Clash of the Titans to Harryhausen's work in films like <a href=\"/movie/15515\" class=\"movie-title\" data-tmdb-id=\"15515\">The 7th Voyage of Sinbad</a> (1958) and Clash of the Titans. While contemporary tools allow for grander scale, they often lack the tactile creativity that made earlier mythological adventures so memorable. <a href=\"/movie/32657\" class=\"movie-title\" data-tmdb-id=\"32657\">Percy Jackson & the Olympians: The Lightning Thief</a> (2010) attempted to modernize Greek myths for younger audiences but struggled to find the right balance between effects and engagement."
+      }
+    ],
+    "exploreFurther": [
+      "Ray Harryhausen's Revolutionary Stop-Motion Techniques",
+      "Greek Mythology's Evolution in Cinema",
+      "The Rise and Fall of 3D Conversion in Hollywood",
+      "Visual Effects Development in Fantasy Films",
+      "Adapting Ancient Myths for Modern Audiences"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Hercules",
+          "year": 2014,
+          "slug": "Dwayne Johnson stars in a more grounded take on the Greek demigod",
+          "poster": "https://image.tmdb.org/t/p/w500/dK9rNoC97tgX3xXg5zdxFisdfcp.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 11970,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dK9rNoC97tgX3xXg5zdxFisdfcp.jpg"
+        },
+        {
+          "title": "Troy",
+          "year": 2004,
+          "slug": "Brad Pitt leads an epic adaptation of Homer's Iliad",
+          "poster": "https://image.tmdb.org/t/p/w500/a07wLy4ONfpsjnBqMwhlWTJTcm.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 652,
+          "poster_url": "https://image.tmdb.org/t/p/w500/a07wLy4ONfpsjnBqMwhlWTJTcm.jpg"
+        },
+        {
+          "title": "The Golden Voyage of Sinbad",
+          "year": 1973,
+          "slug": "Classic Harryhausen adventure with dynamic creature effects",
+          "poster": "https://image.tmdb.org/t/p/w500/1TAc85WyOpkaxSUver4lBg2xKSA.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 17897,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1TAc85WyOpkaxSUver4lBg2xKSA.jpg"
+        },
+        {
+          "title": "Alexander",
+          "year": 2004,
+          "slug": "Oliver Stone's ambitious but flawed ancient world epic",
+          "poster": "https://image.tmdb.org/t/p/w500/91QR7ReHg4HiY66avTon185bawQ.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 1966,
+          "poster_url": "https://image.tmdb.org/t/p/w500/91QR7ReHg4HiY66avTon185bawQ.jpg"
+        },
+        {
+          "title": "Immortals",
+          "year": 2011,
+          "slug": "Stylized Greek mythology action from visionary director Tarsem Singh",
+          "poster": "https://image.tmdb.org/t/p/w500/4SPPX5KIyaQ9O8n5rLvvUIiIhpF.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 37958,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4SPPX5KIyaQ9O8n5rLvvUIiIhpF.jpg"
+        },
+        {
+          "title": "Percy Jackson: Sea of Monsters",
+          "year": 2013,
+          "slug": "Second installment in the modernized Greek myth series",
+          "poster": "https://image.tmdb.org/t/p/w500/tAu90qEpLqwqiZLsMqpaMVr55oN.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 76285,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tAu90qEpLqwqiZLsMqpaMVr55oN.jpg"
+        },
+        {
+          "title": "The Legend of Hercules",
+          "year": 2014,
+          "slug": "Kellan Lutz stars in this origin story of the legendary hero",
+          "poster": "https://image.tmdb.org/t/p/w500/aAnRHLq50AbGWEibXHjmLbp2Tze.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 188207,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aAnRHLq50AbGWEibXHjmLbp2Tze.jpg"
+        },
+        {
+          "title": "Wrath of the Titans",
+          "year": 2012,
+          "slug": "Sequel featuring more elaborate monsters and effects",
+          "poster": "https://image.tmdb.org/t/p/w500/b9n2R3xZWQ8MVZgndQoV34stS0h.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 57165,
+          "poster_url": "https://image.tmdb.org/t/p/w500/b9n2R3xZWQ8MVZgndQoV34stS0h.jpg"
+        },
+        {
+          "title": "Sinbad: Legend of the Seven Seas",
+          "year": 2003,
+          "slug": "Animated adventure drawing from Greek and Arabian mythology",
+          "poster": "https://image.tmdb.org/t/p/w500/yiW2L1fDiBT7AeWXrykhTNtPrr8.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 14411,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yiW2L1fDiBT7AeWXrykhTNtPrr8.jpg"
+        },
+        {
+          "title": "The Scorpion King",
+          "year": 2002,
+          "slug": "The Rock's spin-off from The Mummy series set in ancient times",
+          "poster": "https://image.tmdb.org/t/p/w500/aITIsX20tACn6jgtyDcCYpRT216.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 9334,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aITIsX20tACn6jgtyDcCYpRT216.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

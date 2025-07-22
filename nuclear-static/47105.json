@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "Safe Journey",
+    "year": 1993,
+    "initialSlug": "A perilous odyssey awaits.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/tQHcUwjiC9xmu24UnRku6d65PWy.jpg",
+    "initialStreaming": null,
+    "tmdbId": 47105,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Safe Journey** (1993) represents a fascinating entry in early 1990s independent cinema, directed by Keith McNally and starring Jason Robards and Esai Morales. The film's intimate portrayal of a father-son road trip across America's heartland echoes similar emotional journeys like <a href=\"/movie/655\" class=\"movie-title\">Paris, Texas</a> (1984) and <a href=\"/movie/404\" class=\"movie-title\">The Straight Story</a> (1999). McNally, better known as a legendary New York restaurateur, brought his keen eye for authentic American characters to this understated drama that unfortunately remained largely overlooked upon release."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Paris, Texas",
+            "year": 1984,
+            "slug": "Wim Wenders' masterpiece about a man's journey to reconnect with his family",
+            "poster": "https://image.tmdb.org/t/p/w500/mYYdCi54E2xVbUxCr03tMookv9Z.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 655,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mYYdCi54E2xVbUxCr03tMookv9Z.jpg"
+          },
+          {
+            "title": "The Straight Story",
+            "year": 1999,
+            "slug": "David Lynch's G-rated true story of a man who drove his lawnmower across Iowa to visit his sick brother",
+            "poster": "https://image.tmdb.org/t/p/w500/tT9cMiVDdtlcdZxOoFy3VRmEoKk.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 404,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tT9cMiVDdtlcdZxOoFy3VRmEoKk.jpg"
+          },
+          {
+            "title": "Nebraska",
+            "year": 2013,
+            "slug": "Bruce Dern stars as an elderly father convinced he's won a sweepstakes prize in this black-and-white road movie",
+            "poster": "https://image.tmdb.org/t/p/w500/o1t2Mw18EEBnl8v4Nby3PFjxnM1.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 129670,
+            "poster_url": "https://image.tmdb.org/t/p/w500/o1t2Mw18EEBnl8v4Nby3PFjxnM1.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's strengths lie in Robards' nuanced performance as Martin, a dying father trying to make amends with his estranged son during one final cross-country drive. The cinematography by Frederick Elmes (who also shot **Blue Velvet** (1986)) captures the fading Americana of small towns and roadside diners with a painterly touch that recalls Edward Hopper's iconic works. Like **Five Easy Pieces** (1970), the film uses the American road as both literal path and metaphor for difficult emotional journeys. SUBHEAD: The American Road Movie Tradition"
+      },
+      {
+        "type": "text",
+        "content": "**Safe Journey** (1993) fits within the great tradition of American road movies that examine family relationships, following works like **Paper Moon** (1973) and later films like **A Perfect World** (1993). The genre consistently uses physical movement through landscape as a way to chart internal character growth. McNally's film particularly excels in its quiet moments - stopped cars at sunset, shared meals in anonymous diners, and wordless drives through endless cornfields that echo similar scenes in **Badlands** (1973)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of American Road Movies 1969-1999",
+      "Jason Robards' Later Career Character Roles",
+      "Independent Cinema of the Early 1990s",
+      "Father-Son Relationships in American Film",
+      "The Influence of Edward Hopper on American Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Easy Rider",
+          "year": 1969,
+          "slug": "The definitive counterculture road movie",
+          "poster": "https://image.tmdb.org/t/p/w500/mmGEB6ly9OG8SYVfvAoa6QqHNvN.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 624,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mmGEB6ly9OG8SYVfvAoa6QqHNvN.jpg"
+        },
+        {
+          "title": "Rain Man",
+          "year": 1988,
+          "slug": "Cross-country journey of estranged brothers",
+          "poster": "https://image.tmdb.org/t/p/w500/iTNHwO896WKkaoPtpMMS74d8VNi.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 380,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iTNHwO896WKkaoPtpMMS74d8VNi.jpg"
+        },
+        {
+          "title": "Little Miss Sunshine",
+          "year": 2006,
+          "slug": "Dysfunctional family road trip in a yellow VW bus",
+          "poster": "https://image.tmdb.org/t/p/w500/wKn7AJw730emlmzLSmJtzquwaeW.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 773,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wKn7AJw730emlmzLSmJtzquwaeW.jpg"
+        },
+        {
+          "title": "Smoke Signals",
+          "year": 1998,
+          "slug": "Native American father-son story on the road",
+          "poster": "https://image.tmdb.org/t/p/w500/dZ6smtO2cEm3nxVhWscYfKS0mYX.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 20862,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dZ6smtO2cEm3nxVhWscYfKS0mYX.jpg"
+        },
+        {
+          "title": "The Last Detail",
+          "year": 1973,
+          "slug": "Navy men escort a young sailor to prison",
+          "poster": "https://image.tmdb.org/t/p/w500/zQoNkO99qfaBjh5aoA0pKau1prp.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 14886,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zQoNkO99qfaBjh5aoA0pKau1prp.jpg"
+        },
+        {
+          "title": "Five Easy Pieces",
+          "year": 1970,
+          "slug": "Jack Nicholson's iconic drifter drama",
+          "poster": "https://image.tmdb.org/t/p/w500/AciLTjLqyHiEA0lq35CV4Atnm4v.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 26617,
+          "poster_url": "https://image.tmdb.org/t/p/w500/AciLTjLqyHiEA0lq35CV4Atnm4v.jpg"
+        },
+        {
+          "title": "Two-Lane Blacktop",
+          "year": 1971,
+          "slug": "Minimalist road racing classic",
+          "poster": "https://image.tmdb.org/t/p/w500/8GSjw941Maq4oDvbYqbyc6UM8WH.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 27236,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8GSjw941Maq4oDvbYqbyc6UM8WH.jpg"
+        },
+        {
+          "title": "Kings of the Road",
+          "year": 1976,
+          "slug": "German film about traveling projectionists",
+          "poster": "https://image.tmdb.org/t/p/w500/x2WvLtMJZ6OPz3GEhbEE1V29Pis.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 10834,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x2WvLtMJZ6OPz3GEhbEE1V29Pis.jpg"
+        },
+        {
+          "title": "Harry and Tonto",
+          "year": 1974,
+          "slug": "Elderly man travels cross-country with his cat",
+          "poster": "https://image.tmdb.org/t/p/w500/2JIy2g5UoHBnmNnFpSU7oq5xdTG.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 42448,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2JIy2g5UoHBnmNnFpSU7oq5xdTG.jpg"
+        },
+        {
+          "title": "Captain Fantastic",
+          "year": 2016,
+          "slug": "Father takes his kids on life-changing road trip",
+          "poster": "https://image.tmdb.org/t/p/w500/2sFME73GaD8UsUxPUKe60cPdLif.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 334533,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2sFME73GaD8UsUxPUKe60cPdLif.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

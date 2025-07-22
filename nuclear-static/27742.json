@@ -1,0 +1,167 @@
+{
+  "props": {
+    "title": "Séance",
+    "year": 2000,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/m7xkwx2D7dimNYucIoakGrD4Lan.jpg",
+    "initialStreaming": null,
+    "tmdbId": 27742,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Kiyoshi Kurosawa's Séance represents a pivotal moment in Japanese horror cinema, arriving during the peak of J-horror's international influence. Following the success of Ringu (1998) and <a href=\"/movie/11838\" class=\"movie-title\" data-tmdb-id=\"11838\">Ju-On: The Grudge</a> (2002), Kurosawa's adaptation of Mark McShane's novel \"Séance on a Wet Afternoon\" transplants British supernatural noir into distinctly Japanese territory. The film's methodical pacing and emphasis on atmospheric dread over jump scares showcases Kurosawa's signature style, which he perfected in <a href=\"/movie/36095\" class=\"movie-title\">Cure</a> (1997) and <a href=\"/movie/27324\" class=\"movie-title\">Pulse</a> (2001)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Cure",
+            "year": 1997,
+            "slug": "A detective investigates a series of murders where the killers have no memory of their crimes. Kurosawa's psychological horror masterpiece.",
+            "poster": "https://image.tmdb.org/t/p/w500/nLZ2AJFLtMoAAAD54mbT4exj1Wp.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 36095,
+            "poster_url": "https://image.tmdb.org/t/p/w500/nLZ2AJFLtMoAAAD54mbT4exj1Wp.jpg"
+          },
+          {
+            "title": "Pulse",
+            "year": 2001,
+            "slug": "Technology becomes a portal for loneliness and death in this prescient horror about internet-age isolation.",
+            "poster": "https://image.tmdb.org/t/p/w500/c3zEimDraIyMSasPMGDaNOrhnzn.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 27324,
+            "poster_url": "https://image.tmdb.org/t/p/w500/c3zEimDraIyMSasPMGDaNOrhnzn.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's focus on a psychic medium and her husband's descent into moral corruption echoes similar themes in <a href=\"/movie/745\" class=\"movie-title\" data-tmdb-id=\"745\">The Sixth Sense</a> (1999) and <a href=\"/movie/2655\" class=\"movie-title\" data-tmdb-id=\"2655\">What Lies Beneath</a> (2000), but with Kurosawa's distinct sociological perspective. The director's exploration of marriage and isolation would later influence films like <a href=\"/movie/12205\" class=\"movie-title\">Dark Water</a> (2002) and <a href=\"/movie/4552\" class=\"movie-title\" data-tmdb-id=\"4552\">A Tale of Two Sisters</a> (2003), where domestic spaces become sites of supernatural anxiety."
+      },
+      {
+        "type": "text",
+        "content": "The technical craft in Séance demonstrates Kurosawa's mastery of subtle horror. His use of negative space and long, static shots creates unbearable tension, similar to techniques employed in Kairo (2001) and later perfected in <a href=\"/movie/8937\" class=\"movie-title\" data-tmdb-id=\"8937\">Tokyo Sonata</a> (2008). The film's sound design, with its emphasis on silence punctuated by unsettling ambient noise, established a template for contemporary atmospheric horror like <a href=\"/movie/1933\" class=\"movie-title\" data-tmdb-id=\"1933\">The Others</a> (2001) and <a href=\"/movie/27374\" class=\"movie-title\" data-tmdb-id=\"27374\">Lake Mungo</a> (2008). SUBHEAD: Impact on Modern Horror"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Dark Water",
+            "year": 2002,
+            "slug": "A single mother and her daughter move into a haunted apartment with a mysterious water leak. A masterpiece of atmospheric horror.",
+            "poster": "https://image.tmdb.org/t/p/w500/u7FIePdOTjboDAjcaA9MabbzAuf.jpg",
+            "initialStreaming": "AMC+",
+            "tmdb_id": 12205,
+            "poster_url": "https://image.tmdb.org/t/p/w500/u7FIePdOTjboDAjcaA9MabbzAuf.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Séance helped establish the contemplative horror movement that influenced films like <a href=\"/movie/6537\" class=\"movie-title\" data-tmdb-id=\"6537\">The Orphanage</a> (2007) and I Am the Pretty Thing That Lives in the House (2016). Its exploration of mediumship and the exploitation of supernatural abilities provides a more nuanced take than western counterparts like <a href=\"/movie/11804\" class=\"movie-title\" data-tmdb-id=\"11804\">White Noise</a> (2005) or <a href=\"/movie/49018\" class=\"movie-title\" data-tmdb-id=\"49018\">Insidious</a> (2010)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of J-Horror: From Kaidan to Modern Japanese Horror Cinema",
+      "Kiyoshi Kurosawa's Cinematic Style and Recurring Themes",
+      "The Influence of Japanese Horror on Global Cinema: 1998-2005",
+      "Supernatural Noir: The Intersection of Crime and Horror",
+      "Medium and Message: Depictions of Psychics in Horror Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Ringu",
+          "year": 1998,
+          "slug": "The definitive J-horror film about a cursed videotape that kills viewers in seven days.",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": null
+        },
+        {
+          "title": "Ju-On: The Grudge",
+          "year": 2002,
+          "slug": "A cursed house spreads its vengeful haunting to anyone who enters.",
+          "poster": "https://image.tmdb.org/t/p/w500/6q1hlBC6rudc3mHwXsbMBR2xAT6.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 11838,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6q1hlBC6rudc3mHwXsbMBR2xAT6.jpg"
+        },
+        {
+          "title": "The Others",
+          "year": 2001,
+          "slug": "A mother and her photosensitive children discover they may not be alone in their mansion.",
+          "poster": "https://image.tmdb.org/t/p/w500/p8g1vlTvpM6nr2hMMiZ1fUlKF0D.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 1933,
+          "poster_url": "https://image.tmdb.org/t/p/w500/p8g1vlTvpM6nr2hMMiZ1fUlKF0D.jpg"
+        },
+        {
+          "title": "Kairo",
+          "year": 2001,
+          "slug": "A chilling examination of technology and isolation as ghosts invade the internet.",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 27324
+        },
+        {
+          "title": "Retribution",
+          "year": 2006,
+          "slug": "Another Kurosawa horror about a detective investigating mysterious drownings.",
+          "poster": "https://image.tmdb.org/t/p/w500/sAFaKQv2tgGffy4y4cpxPzPmcYH.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": 46164,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sAFaKQv2tgGffy4y4cpxPzPmcYH.jpg"
+        },
+        {
+          "title": "The Eye",
+          "year": 2002,
+          "slug": "A blind woman receives a cornea transplant but begins seeing disturbing visions.",
+          "poster": "https://image.tmdb.org/t/p/w500/1G2DBIEkoS0JdCiOFIeR3mD8ROE.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 12262,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1G2DBIEkoS0JdCiOFIeR3mD8ROE.jpg"
+        },
+        {
+          "title": "One Missed Call",
+          "year": 2003,
+          "slug": "People receive voicemails from their future selves predicting their deaths.",
+          "poster": "https://image.tmdb.org/t/p/w500/8ujSEEePCVMyi7Mt1RQMXd6SWmy.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 9694,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8ujSEEePCVMyi7Mt1RQMXd6SWmy.jpg"
+        },
+        {
+          "title": "Audition",
+          "year": 1999,
+          "slug": "A widower's search for love leads to a disturbing encounter.",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Noroi: The Curse",
+          "year": 2005,
+          "slug": "A documentary-style horror about a filmmaker investigating supernatural phenomena.",
+          "poster": "https://image.tmdb.org/t/p/w500/yjXTmyLaOqljI5pFNbrEZ213dSW.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 21506,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yjXTmyLaOqljI5pFNbrEZ213dSW.jpg"
+        },
+        {
+          "title": "Reincarnation",
+          "year": 2005,
+          "slug": "A film crew shooting at a haunted hotel encounters supernatural forces.",
+          "poster": "https://image.tmdb.org/t/p/w500/q2Xi5Q4xbbSvrSrDgt7llgSpOLG.jpg",
+          "initialStreaming": "AMC+",
+          "tmdb_id": 1145065,
+          "poster_url": "https://image.tmdb.org/t/p/w500/q2Xi5Q4xbbSvrSrDgt7llgSpOLG.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

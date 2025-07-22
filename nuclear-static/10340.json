@@ -1,0 +1,157 @@
+{
+  "props": {
+    "title": "Lady and the Tramp",
+    "year": 1955,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/340NcWz9SQXWQyf4oicMxjbrLOb.jpg",
+    "initialStreaming": null,
+    "tmdbId": 10340,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Lady and the Tramp revolutionized Disney's animation approach by being their first feature filmed in CinemaScope, presenting a wider canvas that beautifully captured the ground-level world of its canine characters. The film's iconic spaghetti scene became an instant classic, but what's often overlooked is how the movie pioneered a more mature romantic storyline in animation. Unlike previous Disney films focused on fairy tales, this original story explored class differences and adult relationships through the lens of its four-legged protagonists, paving the way for more sophisticated animated narratives like <a href=\"/movie/12230\" class=\"movie-title\" data-tmdb-id=\"12230\">101 Dalmatians</a> (1961) and <a href=\"/movie/10112\" class=\"movie-title\" data-tmdb-id=\"10112\">The Aristocats</a> (1970)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "All Dogs Go to Heaven",
+            "year": 1989,
+            "slug": "A roguish German Shepherd returns from the dead to help an orphan girl, sharing similar themes of redemption and unlikely friendship",
+            "poster": "https://image.tmdb.org/t/p/w500/nmWh1NglDinfkHD9zCNqGWyhl7Q.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 11497,
+            "poster_url": "https://image.tmdb.org/t/p/w500/nmWh1NglDinfkHD9zCNqGWyhl7Q.jpg"
+          },
+          {
+            "title": "Homeward Bound: The Incredible Journey",
+            "year": 1993,
+            "slug": "Three beloved pets embark on an adventure to reunite with their family, featuring similar emotional depth",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": null
+          },
+          {
+            "title": "Oliver & Company",
+            "year": 1988,
+            "slug": "A modern take on Oliver Twist with street-smart dogs in New York City, echoing Tramp's world",
+            "poster": "https://image.tmdb.org/t/p/w500/x8XqdiZ0Oxu5iXF9SiFub9Lae8J.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 12233,
+            "poster_url": "https://image.tmdb.org/t/p/w500/x8XqdiZ0Oxu5iXF9SiFub9Lae8J.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's depiction of urban Americana in the early 1900s remains unmatched, with its detailed Victorian architecture and gas-lit streets creating a nostalgic atmosphere that influenced later period animations. The character animation, particularly in scenes showing the dogs' personalities, set new standards for animal characterization. This attention to realistic animal movement while maintaining anthropomorphic expression influenced countless animated features, from <a href=\"/movie/10948\" class=\"movie-title\" data-tmdb-id=\"10948\">The Fox and the Hound</a> (1981) to <a href=\"/movie/13053\" class=\"movie-title\" data-tmdb-id=\"13053\">Bolt</a> (2008). SUBHEAD: Musical Innovation and Legacy"
+      },
+      {
+        "type": "text",
+        "content": "The musical elements of Lady and the Tramp marked a sophisticated evolution in Disney's songwriting. \"He's a Tramp\" performed by Peggy Lee (who also voiced multiple characters) brought jazz influences into Disney animation, while \"Bella Notte\" created a template for romantic musical moments that would be referenced in films like <a href=\"/movie/10020\" class=\"movie-title\" data-tmdb-id=\"10020\">Beauty and the Beast</a> (1991) and <a href=\"/movie/812\" class=\"movie-title\" data-tmdb-id=\"812\">Aladdin</a> (1992). The score's integration of period-appropriate music with character themes created a rich sonic landscape that enhanced the film's romantic atmosphere."
+      }
+    ],
+    "exploreFurther": [
+      "The Development of CinemaScope Animation Techniques at Disney",
+      "The Influence of Jazz in Disney Animation Soundtracks",
+      "Victorian Era Representation in Animated Films",
+      "Animal Character Animation Evolution",
+      "Class Dynamics in Disney Storytelling"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "101 Dalmatians",
+          "year": 1961,
+          "slug": "Classic Disney animation about spotted dogs escaping a fashion-obsessed villain",
+          "poster": "https://image.tmdb.org/t/p/w500/mRY84MJeWKnp9joev82QtslJFvk.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 12230,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mRY84MJeWKnp9joev82QtslJFvk.jpg"
+        },
+        {
+          "title": "Balto",
+          "year": 1995,
+          "slug": "Animated tale of a heroic sled dog based on a true story",
+          "poster": "https://image.tmdb.org/t/p/w500/dCVcdb5oxDizqFLz0F7TE60NoC9.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 21032,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dCVcdb5oxDizqFLz0F7TE60NoC9.jpg"
+        },
+        {
+          "title": "The Fox and the Hound",
+          "year": 1981,
+          "slug": "Disney story of unlikely friendship between natural enemies",
+          "poster": "https://image.tmdb.org/t/p/w500/aC3k6XBaYnulGSkK8263ABjU3Md.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 10948,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aC3k6XBaYnulGSkK8263ABjU3Md.jpg"
+        },
+        {
+          "title": "Aristocats",
+          "year": 1970,
+          "slug": "Elegant cats navigate Paris in this jazzy Disney adventure",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Bolt",
+          "year": 2008,
+          "slug": "A TV star dog believes his powers are real and embarks on a cross-country journey",
+          "poster": "https://image.tmdb.org/t/p/w500/v5aC4nrzXFGJDWY4JO1eengXzqk.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 13053,
+          "poster_url": "https://image.tmdb.org/t/p/w500/v5aC4nrzXFGJDWY4JO1eengXzqk.jpg"
+        },
+        {
+          "title": "Pongo and Perdita",
+          "year": 1962,
+          "slug": "Original UK title for 101 Dalmatians, showing international influence",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Hotel for Dogs",
+          "year": 2009,
+          "slug": "Modern live-action film about kids creating a haven for strays",
+          "poster": "https://image.tmdb.org/t/p/w500/xD2AssTeySNCamlGueai4yAZZfX.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 15189,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xD2AssTeySNCamlGueai4yAZZfX.jpg"
+        },
+        {
+          "title": "Because of Winn-Dixie",
+          "year": 2005,
+          "slug": "Heart-warming tale of a girl and her dog changing a small town",
+          "poster": "https://image.tmdb.org/t/p/w500/k2zDrIqMFi8944h3BbBAQfsBn9h.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 17880,
+          "poster_url": "https://image.tmdb.org/t/p/w500/k2zDrIqMFi8944h3BbBAQfsBn9h.jpg"
+        },
+        {
+          "title": "Lady and the Tramp II: Scamp's Adventure",
+          "year": 2001,
+          "slug": "Direct-to-video sequel following the adventures of Lady and Tramp's son",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Beverly Hills Chihuahua",
+          "year": 2008,
+          "slug": "Modern take on pampered dog meets street-smart dog romance",
+          "poster": "https://image.tmdb.org/t/p/w500/2aRvqtLoE06hTjG93lASvO7r1as.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 14405,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2aRvqtLoE06hTjG93lASvO7r1as.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

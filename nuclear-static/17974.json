@@ -1,0 +1,141 @@
+{
+  "props": {
+    "title": "The Birds, the Bees and the Italians",
+    "year": 1966,
+    "initialSlug": "Feathers, Lust, and Amore Galore!",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/6V8NqT6n831trjCVa8ebINAPa9Q.jpg",
+    "initialStreaming": null,
+    "tmdbId": 17974,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The Birds, the Bees and the Italians, also known as \"Signore & Signori,\" represents a pinnacle of Italian comedy-drama from the 1960s. Director Pietro Germi, fresh off his success with <a href=\"/movie/20271\" class=\"movie-title\" data-tmdb-id=\"20271\">Divorce Italian Style</a> (1961), crafted this biting social satire that won the Palme d'Or at Cannes. The film's three-part structure exposes the sexual hypocrisies and moral contradictions of small-town Italian life, following a similar satirical path to his earlier <a href=\"/movie/42790\" class=\"movie-title\" data-tmdb-id=\"42790\">Seduced and Abandoned</a> (1964). Marriage Italian Style|1964|Sophia Loren and Marcello Mastroianni star in this comedy about a former prostitute trying to secure marriage|HBO Max Yesterday, Today and Tomorrow|1963|Three tales of love and comedy starring Sophia Loren and Marcello Mastroianni|Prime Video"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Birds, the Bees and the Italians",
+            "year": 1966,
+            "slug": "A three-part comedy exposing sexual scandals and hypocrisy in a small Italian town",
+            "poster": "https://image.tmdb.org/t/p/w500/6V8NqT6n831trjCVa8ebINAPa9Q.jpg",
+            "initialStreaming": "Not currently streaming",
+            "tmdb_id": 17974,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6V8NqT6n831trjCVa8ebINAPa9Q.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence can be traced through later Italian social comedies and international films tackling similar themes of provincial morality. Its DNA is evident in works like <a href=\"/movie/7857\" class=\"movie-title\" data-tmdb-id=\"7857\">Amarcord</a> (1973) by Fellini and even modern explorations of small-town dynamics like Mid-August Lunch (2008). Germi's sharp critique of bourgeois morality and sexual politics created a template for examining social hypocrisy that influenced filmmakers well beyond Italy. SUBHEAD: The Golden Age of Italian Comedy"
+      },
+      {
+        "type": "text",
+        "content": "The 1960s marked the peak of Commedia all'italiana, with films mixing comedy with social criticism. <a href=\"/movie/24382\" class=\"movie-title\" data-tmdb-id=\"24382\">Big Deal on Madonna Street</a> (1958) had set the stage, while <a href=\"/movie/24188\" class=\"movie-title\" data-tmdb-id=\"24188\">Il Sorpasso</a> (1962) perfected the blend of humor and social commentary. Germi's work, including \"The Birds, the Bees and the Italians,\" elevated these themes to high art while maintaining broad audience appeal."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Commedia all'italiana in the 1960s",
+      "Pietro Germi's Satirical Trilogy: Divorce Italian Style, Seduced and Abandoned, and The Birds, the Bees and the Italians",
+      "Sexual Politics and Social Criticism in 1960s Italian Cinema",
+      "The Influence of Italian Comedy on Global Film",
+      "Small Town Dynamics in European Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Divorce Italian Style",
+          "year": 1961,
+          "slug": "A Sicilian nobleman plots to murder his wife so he can marry his young cousin",
+          "poster": "https://image.tmdb.org/t/p/w500/vZbdSpUFyFiDBBTY0AiSrN9f303.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 20271,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vZbdSpUFyFiDBBTY0AiSrN9f303.jpg"
+        },
+        {
+          "title": "Seduced and Abandoned",
+          "year": 1964,
+          "slug": "A satirical look at Sicilian honor codes and arranged marriages",
+          "poster": "https://image.tmdb.org/t/p/w500/qexsWOAxpuwGgzhnIoNPSwD8pa7.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 42790,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qexsWOAxpuwGgzhnIoNPSwD8pa7.jpg"
+        },
+        {
+          "title": "Il Sorpasso",
+          "year": 1962,
+          "slug": "A wild road trip comedy examining Italian society and generational differences",
+          "poster": "https://image.tmdb.org/t/p/w500/4h1ckrJQVcQYjeOkqS8i9BqZ9MI.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 24188,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4h1ckrJQVcQYjeOkqS8i9BqZ9MI.jpg"
+        },
+        {
+          "title": "I Knew Her Well",
+          "year": 1965,
+          "slug": "A young woman's journey through the shallow Rome society scene",
+          "poster": "https://image.tmdb.org/t/p/w500/9NAmBSsw8AA7Ef6fERxChC0D8Su.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 59336,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9NAmBSsw8AA7Ef6fERxChC0D8Su.jpg"
+        },
+        {
+          "title": "The Easy Life",
+          "year": 1962,
+          "slug": "A road trip comedy exploring Italian masculinity and social values",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Mafioso",
+          "year": 1962,
+          "slug": "A dark comedy about a factory worker returning to his Sicilian hometown",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Big Deal on Madonna Street",
+          "year": 1958,
+          "slug": "A comedy about incompetent thieves planning a heist",
+          "poster": "https://image.tmdb.org/t/p/w500/f5OxD8Nl0pR3DcYHtYhHRfpsmjl.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 24382,
+          "poster_url": "https://image.tmdb.org/t/p/w500/f5OxD8Nl0pR3DcYHtYhHRfpsmjl.jpg"
+        },
+        {
+          "title": "The Organizer",
+          "year": 1963,
+          "slug": "A labor rights drama with comic elements set in Turin",
+          "poster": "https://image.tmdb.org/t/p/w500/4DSOr6HnkfgIH62alfH09YDkW2Q.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 51092,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4DSOr6HnkfgIH62alfH09YDkW2Q.jpg"
+        },
+        {
+          "title": "Amarcord",
+          "year": 1973,
+          "slug": "Fellini's nostalgic comedy about life in fascist-era Italy",
+          "poster": "https://image.tmdb.org/t/p/w500/g3UKJ5LgVpycOxeusBI6IXa40kY.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 7857,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g3UKJ5LgVpycOxeusBI6IXa40kY.jpg"
+        },
+        {
+          "title": "Bread and Chocolate",
+          "year": 1974,
+          "slug": "A tragicomedy about Italian immigrants in Switzerland",
+          "poster": "https://image.tmdb.org/t/p/w500/24D3e6xBPEvqlFoq4tSMVqVQ3TO.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 51242,
+          "poster_url": "https://image.tmdb.org/t/p/w500/24D3e6xBPEvqlFoq4tSMVqVQ3TO.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

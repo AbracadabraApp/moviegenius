@@ -1,0 +1,177 @@
+{
+  "props": {
+    "title": "The Secret of NIMH",
+    "year": 1982,
+    "initialSlug": "A brave mouse fights to save her children's home",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/prNrnOKlkV9wl5Sl3zwHu1f3t2z.jpg",
+    "initialStreaming": null,
+    "tmdbId": 11704,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The Secret of NIMH represents Don Bluth's defiant masterpiece after leaving Disney, showcasing darker, more sophisticated animation that respected children's ability to handle complex themes. The film's gorgeous hand-drawn animation, particularly the mystical sequences with the Great Owl and Nicodemus, established a new benchmark for artistic ambition in American animation. Bluth and his team achieved ethereal lighting effects by painting on multiple animation cels and using backlighting techniques that Disney had abandoned as too expensive and time-consuming."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Watership Down",
+            "year": 1978,
+            "slug": "This haunting animated adaptation of Richard Adams' novel follows rabbits seeking a new home, featuring similarly mature themes and stunning traditional animation",
+            "poster": "https://image.tmdb.org/t/p/w500/q9ZcNxfquJbMTd6UfhAlJbmLBts.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 11837,
+            "poster_url": "https://image.tmdb.org/t/p/w500/q9ZcNxfquJbMTd6UfhAlJbmLBts.jpg"
+          },
+          {
+            "title": "The Dark Crystal",
+            "year": 1982,
+            "slug": "Jim Henson's fantasy masterpiece shares NIMH's darker tone and practical effects artistry, pushing boundaries of family entertainment",
+            "poster": "https://image.tmdb.org/t/p/w500/6g1Kh73qQRosyhRJpL3euQpMxOE.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 11639,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6g1Kh73qQRosyhRJpL3euQpMxOE.jpg"
+          },
+          {
+            "title": "The Last Unicorn",
+            "year": 1982,
+            "slug": "Rankin/Bass's ethereal animated fantasy tackles similar themes of magic meeting science, with sophisticated storytelling",
+            "poster": "https://image.tmdb.org/t/p/w500/2MhDPbadE2ha83qiFwUHPgmKLnV.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 10150,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2MhDPbadE2ha83qiFwUHPgmKLnV.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The early 1980s marked a revolutionary period for animation willing to challenge younger audiences. While Disney focused on lighter fare like <a href=\"/movie/10948\" class=\"movie-title\" data-tmdb-id=\"10948\">The Fox and the Hound</a> (1981), independent animators pushed boundaries with sophisticated narratives. The Secret of NIMH drew from real-world scientific testing on animals, wrapped in a fantasy adventure that never talked down to its audience. This approach influenced later works like <a href=\"/movie/10386\" class=\"movie-title\" data-tmdb-id=\"10386\">The Iron Giant</a> (1999) and <a href=\"/movie/14836\" class=\"movie-title\" data-tmdb-id=\"14836\">Coraline</a> (2009), which similarly balanced darker elements with emotional depth."
+      },
+      {
+        "type": "text",
+        "content": "The film's technical innovations proved particularly influential. The multiplane camera techniques and attention to atmospheric effects set new standards for creating depth and mood in animation. These methods directly influenced later works like <a href=\"/movie/128\" class=\"movie-title\" data-tmdb-id=\"128\">Princess Mononoke</a> (1997) and <a href=\"/movie/9837\" class=\"movie-title\" data-tmdb-id=\"9837\">The Prince of Egypt</a> (1998), which similarly used sophisticated lighting and layered animation to create immersive worlds. SUBHEAD: Legacy and Impact on Modern Animation"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "An American Tail",
+            "year": 1986,
+            "slug": "Don Bluth's follow-up feature about a immigrant mouse family showcases his signature detailed animation style",
+            "poster": "https://image.tmdb.org/t/p/w500/wjhUy9af89vc9CviKcPgTNTrmIq.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 4978,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wjhUy9af89vc9CviKcPgTNTrmIq.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Bluth's dedication to traditional animation techniques in The Secret of NIMH helped preserve crucial artistic knowledge during the industry's transition toward computer animation. His insistence on maintaining classical animation principles influenced studios like Studio Ghibli, with <a href=\"/movie/10515\" class=\"movie-title\" data-tmdb-id=\"10515\">Castle in the Sky</a> (1986) and <a href=\"/movie/129\" class=\"movie-title\" data-tmdb-id=\"129\">Spirited Away</a> (2001) carrying forward the tradition of meticulously crafted hand-drawn animation that respects its audience's intelligence."
+      }
+    ],
+    "exploreFurther": [
+      "Don Bluth's Animation Techniques - The making of NIMH's distinctive visual style",
+      "The Science Behind NIMH - Real experiments that inspired the story",
+      "Evolution of Dark Children's Animation - From NIMH to Coraline",
+      "Traditional Animation Methods vs Modern Technology",
+      "Robert C. O'Brien's Original Novel and Its Adaptation Process"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Land Before Time",
+          "year": 1988,
+          "slug": "Another Don Bluth classic dealing with serious themes through animation",
+          "poster": "https://image.tmdb.org/t/p/w500/7phV1ETZnQrLsEeuk4hNeceEl25.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 12144,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7phV1ETZnQrLsEeuk4hNeceEl25.jpg"
+        },
+        {
+          "title": "Dragon's Lair",
+          "year": 1983,
+          "slug": "Bluth's revolutionary animated video game",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "N/A",
+          "tmdb_id": null
+        },
+        {
+          "title": "All Dogs Go to Heaven",
+          "year": 1989,
+          "slug": "Don Bluth's emotional tale of redemption",
+          "poster": "https://image.tmdb.org/t/p/w500/nmWh1NglDinfkHD9zCNqGWyhl7Q.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 11497,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nmWh1NglDinfkHD9zCNqGWyhl7Q.jpg"
+        },
+        {
+          "title": "FernGully: The Last Rainforest",
+          "year": 1992,
+          "slug": "Environmentally conscious animation with similar artistic ambition",
+          "poster": "https://image.tmdb.org/t/p/w500/jAD6Ofuz4PiYFV3fd3oBP6aOTyM.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 13225,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jAD6Ofuz4PiYFV3fd3oBP6aOTyM.jpg"
+        },
+        {
+          "title": "The Rats of NIMH",
+          "year": 1982,
+          "slug": "The original novel adaptation",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "N/A",
+          "tmdb_id": null
+        },
+        {
+          "title": "Rock-a-Doodle",
+          "year": 1991,
+          "slug": "Bluth's musical fantasy mixing animation and live action",
+          "poster": "https://image.tmdb.org/t/p/w500/q5xSS8MNmrwR3em6VB6OC3992d6.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 20421,
+          "poster_url": "https://image.tmdb.org/t/p/w500/q5xSS8MNmrwR3em6VB6OC3992d6.jpg"
+        },
+        {
+          "title": "Once Upon a Forest",
+          "year": 1993,
+          "slug": "Environmentally themed animated adventure",
+          "poster": "https://image.tmdb.org/t/p/w500/aGmed955Bv1ok2YBjjhAA71b7OF.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 33539,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aGmed955Bv1ok2YBjjhAA71b7OF.jpg"
+        },
+        {
+          "title": "The Brave Little Toaster",
+          "year": 1987,
+          "slug": "Similarly sophisticated animated film with darker themes",
+          "poster": "https://image.tmdb.org/t/p/w500/b3i8W7yhfrENlKUKT7oYUtDcUtt.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 19933,
+          "poster_url": "https://image.tmdb.org/t/p/w500/b3i8W7yhfrENlKUKT7oYUtDcUtt.jpg"
+        },
+        {
+          "title": "The Black Cauldron",
+          "year": 1985,
+          "slug": "Disney's darker animated fantasy from the same era",
+          "poster": "https://image.tmdb.org/t/p/w500/ef11J5KGMp26kEzeg8ghAKeB65C.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 10957,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ef11J5KGMp26kEzeg8ghAKeB65C.jpg"
+        },
+        {
+          "title": "The Plague Dogs",
+          "year": 1982,
+          "slug": "Another mature animated film from the Watership Down team",
+          "poster": "https://image.tmdb.org/t/p/w500/97Z56DEjHNNQXOPW9s9rL15khjM.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 30060,
+          "poster_url": "https://image.tmdb.org/t/p/w500/97Z56DEjHNNQXOPW9s9rL15khjM.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

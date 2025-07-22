@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "Sherlock Holmes in Washington",
+    "year": 1943,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/ni0H8iNOcmW26Y0aNLiA4wyckxX.jpg",
+    "initialStreaming": null,
+    "tmdbId": 44383,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The third entry in Universal's Sherlock Holmes series starring Basil Rathbone marked a decisive shift toward wartime propaganda, transplanting Arthur Conan Doyle's Victorian detective into a contemporary WWII setting. Sherlock Holmes in Washington follows Holmes and Watson as they pursue Nazi spies across the American capital, reflecting Hollywood's widespread effort to support the war effort. This marked a significant departure from earlier Holmes adaptations like <a href=\"/movie/17481\" class=\"movie-title\" data-tmdb-id=\"17481\">The Adventures of Sherlock Holmes</a> (1939) and <a href=\"/movie/27118\" class=\"movie-title\" data-tmdb-id=\"27118\">The Hound of the Baskervilles</a> (1939), which maintained the character's 19th century origins."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Sherlock Holmes and the Secret Weapon",
+            "year": 1943,
+            "slug": "Holmes battles Professor Moriarty and Nazi agents to protect a bombing sight inventor",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 18706
+          },
+          {
+            "title": "Sherlock Holmes and the Voice of Terror",
+            "year": 1942,
+            "slug": "Holmes investigates Nazi saboteurs spreading propaganda in wartime Britain",
+            "poster": "https://image.tmdb.org/t/p/w500/4aprukY55rwcLKzdSVpRzQo1Koa.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 27117,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4aprukY55rwcLKzdSVpRzQo1Koa.jpg"
+          },
+          {
+            "title": "Sherlock Holmes Faces Death",
+            "year": 1943,
+            "slug": "Set in a mansion-turned-military hospital, Holmes solves murders while supporting the war effort",
+            "poster": "https://image.tmdb.org/t/p/w500/paDmNVK9C7SwAWrfiR32Nh3GvjM.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 50553,
+            "poster_url": "https://image.tmdb.org/t/p/w500/paDmNVK9C7SwAWrfiR32Nh3GvjM.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Rathbone and Nigel Bruce's portrayal defined the Holmes-Watson dynamic for generations, with Bruce's bumbling Watson establishing a template that influenced adaptations for decades. The film's Washington setting allowed for unique set pieces involving government buildings and wartime security measures, while maintaining Holmes' deductive methodology. This modernized Holmes concept would influence later updates like <a href=\"/movie/27841\" class=\"movie-title\" data-tmdb-id=\"27841\">They Might Be Giants</a> (1971) and Sherlock (2010-2017). SUBHEAD: The Wartime Holmes"
+      },
+      {
+        "type": "text",
+        "content": "Universal's decision to update Holmes for WWII wasn't unique - <a href=\"/movie/27117\" class=\"movie-title\">Sherlock Holmes and the Voice of Terror</a> (1942) and <a href=\"/movie/18706\" class=\"movie-title\">Sherlock Holmes and the Secret Weapon</a> (1943) similarly pitted the detective against Nazi threats. This trilogy of wartime Holmes films demonstrated Hollywood's ability to repurpose popular characters for propaganda purposes, similar to how Charlie Chan in Panama (1940) and <a href=\"/movie/268\" class=\"movie-title\" data-tmdb-id=\"268\">Batman</a> (1943) serial incorporated war themes."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Sherlock Holmes on Screen - From Silent Era to Modern Adaptations",
+      "Hollywood's Role in WWII Propaganda Films",
+      "Basil Rathbone's Impact on the Holmes Character",
+      "Modernizing Victorian Characters for Contemporary Settings",
+      "The Universal Sherlock Holmes Series (1939-1946)"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Scarlet Claw",
+          "year": 1944,
+          "slug": "Holmes investigates mysterious murders in a Canadian village",
+          "poster": "https://image.tmdb.org/t/p/w500/niXCEzj8cg15DNcAh3M1Ps7YIvb.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 33423,
+          "poster_url": "https://image.tmdb.org/t/p/w500/niXCEzj8cg15DNcAh3M1Ps7YIvb.jpg"
+        },
+        {
+          "title": "The Spider Woman",
+          "year": 1943,
+          "slug": "Holmes pursues a female criminal mastermind during wartime",
+          "poster": "https://image.tmdb.org/t/p/w500/yTbwfGfrJ1opMAIrdltCCf3eRo2.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 2443,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yTbwfGfrJ1opMAIrdltCCf3eRo2.jpg"
+        },
+        {
+          "title": "The Pearl of Death",
+          "year": 1944,
+          "slug": "Holmes tracks a stolen pearl and faces a brutal killer",
+          "poster": "https://image.tmdb.org/t/p/w500/36crcUCyyKZritifPJNlXMfsp9a.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 33421,
+          "poster_url": "https://image.tmdb.org/t/p/w500/36crcUCyyKZritifPJNlXMfsp9a.jpg"
+        },
+        {
+          "title": "The House of Fear",
+          "year": 1945,
+          "slug": "Holmes investigates mysterious deaths at a Scottish estate",
+          "poster": "https://image.tmdb.org/t/p/w500/3tHTXEnBmnTX4tJUQ5JAIKosp3d.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 33419,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3tHTXEnBmnTX4tJUQ5JAIKosp3d.jpg"
+        },
+        {
+          "title": "Pursuit to Algiers",
+          "year": 1945,
+          "slug": "Holmes protects a royal heir while traveling by ship",
+          "poster": "https://image.tmdb.org/t/p/w500/2elc5AWyKvINd5CnMfMXcmCPQTd.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 50401,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2elc5AWyKvINd5CnMfMXcmCPQTd.jpg"
+        },
+        {
+          "title": "The Woman in Green",
+          "year": 1945,
+          "slug": "Holmes confronts a blackmail scheme involving hypnosis",
+          "poster": "https://image.tmdb.org/t/p/w500/rWcMZ8IZWeYZDcW6Acoiz1gG3tn.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 34327,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rWcMZ8IZWeYZDcW6Acoiz1gG3tn.jpg"
+        },
+        {
+          "title": "Terror by Night",
+          "year": 1946,
+          "slug": "Murder on a train leads Holmes to protect a famous diamond",
+          "poster": "https://image.tmdb.org/t/p/w500/cjGgLJ2GViKy0bla8OfaAhOBAJw.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 20408,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cjGgLJ2GViKy0bla8OfaAhOBAJw.jpg"
+        },
+        {
+          "title": "Dressed to Kill",
+          "year": 1946,
+          "slug": "Holmes' final Universal case involves musical boxes and bank robbery",
+          "poster": "https://image.tmdb.org/t/p/w500/oD4z3ON2ciLMv6obEH2K8tGThWG.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 20417,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oD4z3ON2ciLMv6obEH2K8tGThWG.jpg"
+        },
+        {
+          "title": "Without a Clue",
+          "year": 1988,
+          "slug": "Comedy with Michael Caine as an actor hired to play Holmes",
+          "poster": "https://image.tmdb.org/t/p/w500/uZmoKYDfF965UAgPrUSz0FbavsE.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 12582,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uZmoKYDfF965UAgPrUSz0FbavsE.jpg"
+        },
+        {
+          "title": "The Private Life of Sherlock Holmes",
+          "year": 1970,
+          "slug": "Billy Wilder's take on the detective's personal life",
+          "poster": "https://image.tmdb.org/t/p/w500/vQSYu0DXkqTOEfWF21AzaqXxYCZ.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 5185,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vQSYu0DXkqTOEfWF21AzaqXxYCZ.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

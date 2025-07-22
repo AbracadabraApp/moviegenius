@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "Christmas in the Heartland",
+    "year": 2017,
+    "initialSlug": "Discover the magic of home.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/IsZ70nRcxS9rcWNq65IM65EsVY.jpg",
+    "initialStreaming": null,
+    "tmdbId": 485612,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Christmas in the Heartland** (2017) fits into the well-worn \"trading places\" holiday subgenre pioneered by <a href=\"/movie/19186\" class=\"movie-title\">The Parent Trap</a> (1961). Following two teens who switch identities during a chance airport meeting, it echoes elements of <a href=\"/movie/33689\" class=\"movie-title\">It Takes Two</a> (1995) and <a href=\"/movie/71884\" class=\"movie-title\">Model Behavior</a> (2000), but with a distinctly rural American Christmas setting. While not breaking new ground, it joins the wave of heartland-focused holiday films like <a href=\"/movie/13673\" class=\"movie-title\">Christmas with the Kranks</a> (2004) that emphasize traditional family values and small-town charm."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Parent Trap",
+            "year": 1961,
+            "slug": "Identical twins separated at birth meet at summer camp and plot to reunite their parents",
+            "poster": "https://image.tmdb.org/t/p/w500/jaZFWy6ZAvQoMW2mo9xP5gx4URo.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 19186,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jaZFWy6ZAvQoMW2mo9xP5gx4URo.jpg"
+          },
+          {
+            "title": "Model Behavior",
+            "year": 2000,
+            "slug": "A teenage waitress trades places with a famous model, learning valuable lessons about identity",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Not currently streaming",
+            "tmdb_id": 71884
+          },
+          {
+            "title": "It Takes Two",
+            "year": 1995,
+            "slug": "Two identical girls from different backgrounds switch places to play matchmaker",
+            "poster": "https://image.tmdb.org/t/p/w500/4CptjFLiIJXtjc3dykS7vkEHMbw.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 33689,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4CptjFLiIJXtjc3dykS7vkEHMbw.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film leans heavily into familiar holiday movie tropes established by classics like **Miracle on 34th Street** (1947) and **White Christmas** (1954) - the importance of family connections, rediscovering Christmas spirit, and the magic of the season bringing people together. Director Justin Ward attempts to modernize these themes for contemporary audiences while maintaining the wholesome appeal that defines Hallmark-style holiday entertainment."
+      },
+      {
+        "type": "text",
+        "content": "What sets **Christmas in the Heartland** (2017) apart is its emphasis on rural American Christmas traditions, following a trend seen in films like **Sweet Home Alabama** (2002) and **Hope Floats** (1998) that romanticize small-town life. The film's portrayal of heartland values mirrors similar holiday offerings like <a href=\"/movie/648736\" class=\"movie-title\">Christmas on the Range</a> (2019) and **A Country Christmas Story** (2013). SUBHEAD: Modern Identity-Swap Holiday Films"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Christmas on the Range",
+            "year": 2019,
+            "slug": "A cattle rancher and a conservationist find love during the holiday season",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 648736
+          },
+          {
+            "title": "Christmas with the Kranks",
+            "year": 2004,
+            "slug": "A couple decides to skip Christmas until their daughter decides to come home",
+            "poster": "https://image.tmdb.org/t/p/w500/q866vL3KhAjbkZH1enT7AoxmRHx.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 13673,
+            "poster_url": "https://image.tmdb.org/t/p/w500/q866vL3KhAjbkZH1enT7AoxmRHx.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The identity-swap premise has evolved significantly since <a href=\"/movie/19186\" class=\"movie-title\">The Parent Trap</a> (1961), with films like **Monte Carlo** (2011) and **The Princess Switch** (2018) adding modern twists to the formula. **Christmas in the Heartland** (2017) follows this tradition while incorporating elements of fish-out-of-water comedy seen in holiday classics like **Elf** (2003) and contemporary offerings like **A Princess for Christmas** (2011)."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of the \"Trading Places\" Movie Trope from 1960s to Present",
+      "Representation of Rural America in Holiday Films",
+      "The Rise of Teen-Focused Christmas Movies in the 2000s",
+      "Impact of Hallmark Channel on Modern Christmas Film Formulas",
+      "Comparing Urban vs Rural Christmas Movie Settings and Themes"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Holiday",
+          "year": 2006,
+          "slug": "Two women swap homes during Christmas and find unexpected romance",
+          "poster": "https://image.tmdb.org/t/p/w500/h1ITOpvJN3Tw4Sy60w2QTfYMvdd.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1581,
+          "poster_url": "https://image.tmdb.org/t/p/w500/h1ITOpvJN3Tw4Sy60w2QTfYMvdd.jpg"
+        },
+        {
+          "title": "The Princess Switch",
+          "year": 2018,
+          "slug": "A duchess and a baker trade places before Christmas",
+          "poster": "https://image.tmdb.org/t/p/w500/yDQftfpTEppAvdgLDDil56W1VWS.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 556803,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yDQftfpTEppAvdgLDDil56W1VWS.jpg"
+        },
+        {
+          "title": "A Christmas Prince",
+          "year": 2017,
+          "slug": "A journalist goes undercover at a royal palace during holidays",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 483104
+        },
+        {
+          "title": "Christmas Land",
+          "year": 2015,
+          "slug": "A city girl inherits a Christmas tree farm",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hallmark",
+          "tmdb_id": null
+        },
+        {
+          "title": "Small Town Christmas",
+          "year": 2018,
+          "slug": "An author returns to the town that inspired her book",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hallmark",
+          "tmdb_id": 555277
+        },
+        {
+          "title": "Trading Christmas",
+          "year": 2011,
+          "slug": "Two people swap houses for the holidays",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hallmark",
+          "tmdb_id": 120055
+        },
+        {
+          "title": "Christmas in the City",
+          "year": 2013,
+          "slug": "A small-town woman brings Christmas spirit to a big city store",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Lifetime",
+          "tmdb_id": 245508
+        },
+        {
+          "title": "A Country Christmas Story",
+          "year": 2013,
+          "slug": "A young girl pursues her country music dreams",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Lifetime",
+          "tmdb_id": 235494
+        },
+        {
+          "title": "The Most Wonderful Time of the Year",
+          "year": 2008,
+          "slug": "A holiday romance set in a small town",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hallmark",
+          "tmdb_id": 35830
+        },
+        {
+          "title": "Crown for Christmas",
+          "year": 2015,
+          "slug": "A governess falls for a European king during Christmas",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hallmark",
+          "tmdb_id": 360603
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

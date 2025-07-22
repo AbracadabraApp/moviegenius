@@ -1,0 +1,158 @@
+{
+  "props": {
+    "title": "Men",
+    "year": 1947,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/iS4yFIxFwnZAh8iW4VEBzsoWEEe.jpg",
+    "initialStreaming": null,
+    "tmdbId": 154623,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Fred Zinnemann's **The Men** (1947) marked Marlon Brando's groundbreaking screen debut, revolutionizing both the portrayal of disabled veterans and method acting in Hollywood. The raw authenticity Brando brings to paralyzed WWII vet Ken Wilcheck set new standards for psychological realism. To prepare, Brando lived in a VA hospital for a month alongside actual paralyzed veterans - an early example of the total immersion that would define his career. This approach influenced later powerful veteran stories like **Coming Home** (1978) and **Born on the Fourth of July** (1989). The Men|1947|Marlon Brando debuts as a paralyzed veteran struggling to accept his new life|Criterion Pride of the Marines|1945|True story of Al Schmid, a Marine who was blinded in WWII combat|TCM"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Best Years of Our Lives",
+            "year": 1946,
+            "slug": "Multiple veterans readjust to civilian life after WWII, winning 7 Oscars including Best Picture",
+            "poster": "https://image.tmdb.org/t/p/w500/gd5EoAU4MM57sW3vlWxJ0NMM8cV.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 887,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gd5EoAU4MM57sW3vlWxJ0NMM8cV.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's unflinching look at disability and masculinity in post-war America broke significant ground. Unlike many contemporary films that treated disability as either tragic or inspirational, **The Men** showed the complex psychological struggles of veterans with unprecedented realism. Director Zinnemann, who would later helm **From Here to Eternity** (1953), insisted on casting actual paralyzed veterans in supporting roles - a revolutionary choice for 1947 that enhanced the documentary-like authenticity."
+      },
+      {
+        "type": "text",
+        "content": "Carl Foreman's screenplay carefully balances Ken's personal journey with broader social commentary about veteran care and reintegration. This template influenced later films like **The Deer Hunter** (1978) and **Born on the Fourth of July** (1989), which similarly explored the psychological aftermath of war. The romance between Ken and his fiancée Ellen (Teresa Wright) avoids melodrama, instead focusing on practical and emotional challenges faced by couples dealing with disability. Bright Victory|1951|A blinded veteran learns to navigate his new life and relationship|Criterion The Guilt of Janet Ames|1947|A war widow confronts her prejudices about surviving veterans|TCM SUBHEAD: Impact on Post-War Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Till the End of Time",
+            "year": 1946,
+            "slug": "Three Marines struggle to readjust to civilian life after WWII",
+            "poster": "https://image.tmdb.org/t/p/w500/dTIWI9TLrsnVzNLkfGi4BjwTBQQ.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 101859,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dTIWI9TLrsnVzNLkfGi4BjwTBQQ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**The Men** helped establish a new wave of socially conscious veteran films that moved beyond simple patriotism. Its influence can be seen in later works like **Coming Home** (1978), which similarly explored disability and sexuality, and **Born on the Fourth of July** (1989), which shared its unflinching look at rehabilitation. The film's success also helped legitimize method acting in Hollywood, paving the way for the Actors Studio revolution of the 1950s."
+      }
+    ],
+    "exploreFurther": [
+      "Marlon Brando's Method Acting Revolution",
+      "Post-WWII Veteran Films and Social Change",
+      "Disability Representation in 1940s Hollywood",
+      "Fred Zinnemann's Social Realism",
+      "Carl Foreman's Screenwriting Legacy"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Crossfire",
+          "year": 1947,
+          "slug": "Film noir examining anti-Semitism among returning veterans",
+          "poster": "https://image.tmdb.org/t/p/w500/s3EFBiCsc4Ckc1tntoHAEnhZtSO.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 28120,
+          "poster_url": "https://image.tmdb.org/t/p/w500/s3EFBiCsc4Ckc1tntoHAEnhZtSO.jpg"
+        },
+        {
+          "title": "Homecoming",
+          "year": 1948,
+          "slug": "A Army surgeon falls in love with a nurse during WWII",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 102026
+        },
+        {
+          "title": "Home of the Brave",
+          "year": 1949,
+          "slug": "A black soldier faces racism and trauma after WWII",
+          "poster": "https://image.tmdb.org/t/p/w500/5DCIWBuKVZmJcM61gOcPDzm4sRU.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 90807,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5DCIWBuKVZmJcM61gOcPDzm4sRU.jpg"
+        },
+        {
+          "title": "Since You Went Away",
+          "year": 1944,
+          "slug": "Home front drama about families waiting for soldiers",
+          "poster": "https://image.tmdb.org/t/p/w500/vRwn4Yrf4O8LbP7gy9Bzh0hKbjW.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 42401,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vRwn4Yrf4O8LbP7gy9Bzh0hKbjW.jpg"
+        },
+        {
+          "title": "Three Came Home",
+          "year": 1950,
+          "slug": "True story of Americans in Japanese POW camps",
+          "poster": "https://image.tmdb.org/t/p/w500/hZczNjqrzjYiyuzhuKyPEcDwul2.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 96255,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hZczNjqrzjYiyuzhuKyPEcDwul2.jpg"
+        },
+        {
+          "title": "The Search",
+          "year": 1948,
+          "slug": "US soldier helps Holocaust survivor find his mother",
+          "poster": "https://image.tmdb.org/t/p/w500/jDP8XxQUJTTofJPkhFER3aBYDqR.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 41131,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jDP8XxQUJTTofJPkhFER3aBYDqR.jpg"
+        },
+        {
+          "title": "Till We Meet Again",
+          "year": 1944,
+          "slug": "Romance between pilot and nun in occupied France",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 131465
+        },
+        {
+          "title": "Wing and a Prayer",
+          "year": 1944,
+          "slug": "Aircraft carrier crew faces battles in the Pacific",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 69847
+        },
+        {
+          "title": "Back to Bataan",
+          "year": 1945,
+          "slug": "American and Filipino soldiers fight Japanese occupation",
+          "poster": "https://image.tmdb.org/t/p/w500/3AQRnZbdjiAvabgrDMc3NfXPQkF.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 19096,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3AQRnZbdjiAvabgrDMc3NfXPQkF.jpg"
+        },
+        {
+          "title": "They Were Expendable",
+          "year": 1945,
+          "slug": "PT boat crews defend Philippines in WWII",
+          "poster": "https://image.tmdb.org/t/p/w500/ejzJHdvEtUVbiLrDE55DRQskYyf.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 18771,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ejzJHdvEtUVbiLrDE55DRQskYyf.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

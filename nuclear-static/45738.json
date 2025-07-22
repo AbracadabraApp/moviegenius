@@ -1,0 +1,177 @@
+{
+  "props": {
+    "title": "Krzysztof Kieślowski: I'm So-So",
+    "year": 1995,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/2xIoh9v8gyqDwp7v1wNtaqZU7Vq.jpg",
+    "initialStreaming": null,
+    "tmdbId": 45738,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "This intimate documentary portrait of legendary Polish director Krzysztof Kieślowski, filmed shortly before his untimely death in 1996, offers remarkable insight into one of cinema's most philosophical minds. Coming after his masterful **Three Colors Trilogy** (1993-1994) and during his announced retirement, the film catches Kieślowski in a reflective mood as he discusses his journey from documentary filmmaker to art house auteur. The contrast between his early documentaries like **Personnel** (1975) and his later metaphysical works like <a href=\"/movie/1600\" class=\"movie-title\">The Double Life of Veronique</a> (1991) reveals his evolving perspective on truth in cinema."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Double Life of Veronique",
+            "year": 1991,
+            "slug": "A haunting exploration of identity and destiny following two identical women in France and Poland",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 1600
+          },
+          {
+            "title": "Three Colors: Blue",
+            "year": 1993,
+            "slug": "Juliette Binoche stars in this meditation on liberty, grief and music",
+            "poster": "https://image.tmdb.org/t/p/w500/33wsWxzsNstI8N7dvuwzFmj1qBd.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 108,
+            "poster_url": "https://image.tmdb.org/t/p/w500/33wsWxzsNstI8N7dvuwzFmj1qBd.jpg"
+          },
+          {
+            "title": "Dekalog",
+            "year": 1989,
+            "slug": "Ten hour-long films based on the Ten Commandments, set in a Polish housing complex",
+            "poster": "https://image.tmdb.org/t/p/w500/7zvQpJDfpXlCe9FvBdO86hIgavN.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 118670,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7zvQpJDfpXlCe9FvBdO86hIgavN.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The documentary's title comes from Kieślowski's characteristic response when asked how he's feeling - \"I'm so-so\" - which perfectly captures his measured, observant approach to both life and filmmaking. Through intimate conversations and behind-the-scenes footage, we see how his early career documenting life under communism in Poland shaped his later, more abstract explorations of chance and parallel lives. His transition from <a href=\"/movie/42164\" class=\"movie-title\">Camera Buff</a> (1979) to the metaphysical mysteries of **Blind Chance** (1987) wasn't just artistic evolution - it was a philosophical shift in how he viewed reality itself."
+      },
+      {
+        "type": "text",
+        "content": "Particularly revealing are Kieślowski's comments about abandoning documentary film because he felt it was too invasive of private moments. This ethical concern led him to fiction, where he could explore human intimacy without exploiting real people's pain. This transformation culminated in works like <a href=\"/movie/1600\" class=\"movie-title\">The Double Life of Veronique</a> (1991) and **Three Colors: Red** (1994), where he achieved a unique blend of spiritual and psychological storytelling that influenced filmmakers like Wong Kar-wai and Tom Tykwer. SUBHEAD: From Social Realism to Metaphysical Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Camera Buff",
+            "year": 1979,
+            "slug": "A factory worker's life changes when he becomes obsessed with filmmaking",
+            "poster": "https://image.tmdb.org/t/p/w500/l4n9LXUanIKdlKTCfRqrhwQbtVe.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 42164,
+            "poster_url": "https://image.tmdb.org/t/p/w500/l4n9LXUanIKdlKTCfRqrhwQbtVe.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The documentary illuminates how Kieślowski's work evolved from social realist documentaries to increasingly complex moral tales. His <a href=\"/movie/118670\" class=\"movie-title\">Dekalog</a> (1989) series marked a crucial turning point, using the Ten Commandments as a framework to explore modern ethical dilemmas. This shift toward examining moral philosophy through cinema reached its apex with **Three Colors: White** (1994), where even comedy became a vehicle for exploring equality and justice. The documentary captures Kieślowski discussing these transitions with remarkable candor, offering invaluable context for understanding his artistic journey."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Polish Cinema Post-1989",
+      "Documentary Ethics and the Transition to Fiction Film",
+      "Metaphysical Themes in European Art Cinema",
+      "The Impact of Kieślowski on Contemporary Filmmakers",
+      "Color Symbolism in the Three Colors Trilogy"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "No End",
+          "year": 1985,
+          "slug": "A ghost story examining martial law in Poland",
+          "poster": "https://image.tmdb.org/t/p/w500/3pdF1guvIxNgmhDkmXJHCCk0PkC.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 124,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3pdF1guvIxNgmhDkmXJHCCk0PkC.jpg"
+        },
+        {
+          "title": "A Short Film About Love",
+          "year": 1988,
+          "slug": "Expanded version of Dekalog Six exploring voyeurism and romance",
+          "poster": "https://image.tmdb.org/t/p/w500/kLAMz50Or2So1aEzHYv0R8iXo46.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 31056,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kLAMz50Or2So1aEzHYv0R8iXo46.jpg"
+        },
+        {
+          "title": "A Short Film About Killing",
+          "year": 1988,
+          "slug": "Powerful anti-death penalty film expanded from Dekalog Five",
+          "poster": "https://image.tmdb.org/t/p/w500/k7sk4yNdoXY7iwp1M9QTZuBDiJS.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 10754,
+          "poster_url": "https://image.tmdb.org/t/p/w500/k7sk4yNdoXY7iwp1M9QTZuBDiJS.jpg"
+        },
+        {
+          "title": "Three Colors: White",
+          "year": 1994,
+          "slug": "Dark comedy about equality and revenge",
+          "poster": "https://image.tmdb.org/t/p/w500/fdIet3NSa27gobMbaUml66oCQNT.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 109,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fdIet3NSa27gobMbaUml66oCQNT.jpg"
+        },
+        {
+          "title": "Three Colors: Red",
+          "year": 1994,
+          "slug": "Meditation on fraternity and connection",
+          "poster": "https://image.tmdb.org/t/p/w500/JHmsBiX1tjCKqAul1lzC20WcAW.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 110,
+          "poster_url": "https://image.tmdb.org/t/p/w500/JHmsBiX1tjCKqAul1lzC20WcAW.jpg"
+        },
+        {
+          "title": "Blind Chance",
+          "year": 1987,
+          "slug": "Three possible lives based on catching or missing a train",
+          "poster": "https://image.tmdb.org/t/p/w500/gx84VmJllqvXF3JEqcEdsxBEcbF.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 127,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gx84VmJllqvXF3JEqcEdsxBEcbF.jpg"
+        },
+        {
+          "title": "Personnel",
+          "year": 1975,
+          "slug": "Early documentary-style drama about theater life",
+          "poster": "https://image.tmdb.org/t/p/w500/7GDYXgQDGJ47Hk05jzKvTdm2eBE.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 91881,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7GDYXgQDGJ47Hk05jzKvTdm2eBE.jpg"
+        },
+        {
+          "title": "The Scar",
+          "year": 1976,
+          "slug": "Drama about a factory manager's moral conflicts",
+          "poster": "https://image.tmdb.org/t/p/w500/1JdHCHy36tG6RVB7Y4AKfkqDX92.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 49134,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1JdHCHy36tG6RVB7Y4AKfkqDX92.jpg"
+        },
+        {
+          "title": "The Calm",
+          "year": 1976,
+          "slug": "Story of a man trying to rebuild his life after prison",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": null
+        },
+        {
+          "title": "First Love",
+          "year": 1974,
+          "slug": "Documentary about teenage pregnancy",
+          "poster": "https://image.tmdb.org/t/p/w500/tV3svwdtUjGyGIn78s752wKHuki.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 179847,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tV3svwdtUjGyGIn78s752wKHuki.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

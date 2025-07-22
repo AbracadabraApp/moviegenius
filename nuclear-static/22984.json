@@ -1,0 +1,159 @@
+{
+  "props": {
+    "title": "The Kids Are Alright",
+    "year": 1979,
+    "initialSlug": "The Who documentary spanning their career",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/30KLQduKvVzuYbqHMrWBcDHKs7O.jpg",
+    "initialStreaming": null,
+    "tmdbId": 22984,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The Kids Are Alright stands as the definitive documentary of The Who at their peak, capturing the raw energy and destruction that made them legendary. Director Jeff Stein assembles rare footage spanning 1964-1978, including their explosive appearances on The Smothers Brothers Show where Keith Moon's drum kit actually exploded. The film contrasts dramatically with sanitized rock docs like <a href=\"/movie/20556\" class=\"movie-title\" data-tmdb-id=\"20556\">Let It Be</a> (1970), instead embracing the band's chaos and letting their personalities shine through unfiltered interviews. Pete Townshend's guitar-smashing, Roger Daltrey's microphone-swinging, and Moon's manic drumming create a portrait of rock at its most visceral."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Last Waltz",
+            "year": 1978,
+            "slug": "Martin Scorsese's masterful document of The Band's farewell concert, featuring an all-star lineup of rock legends",
+            "poster": "https://image.tmdb.org/t/p/w500/2K7CFH0AIHnGrA4yQjPCoIB5CmQ.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 13963,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2K7CFH0AIHnGrA4yQjPCoIB5CmQ.jpg"
+          },
+          {
+            "title": "Gimme Shelter",
+            "year": 1970,
+            "slug": "The Rolling Stones' infamous Altamont concert captured by the Maysles brothers, showing the dark side of the 60s",
+            "poster": "https://image.tmdb.org/t/p/w500/6Cem6KcIClKit3KhKYou4aXFxob.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 132,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6Cem6KcIClKit3KhKYou4aXFxob.jpg"
+          },
+          {
+            "title": "Woodstock",
+            "year": 1970,
+            "slug": "The definitive chronicle of the legendary 1969 festival, with The Who's dawn performance as a highlight",
+            "poster": "https://image.tmdb.org/t/p/w500/cnfhelfQucSb4Y54yFgtnSNhsAT.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 9459,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cnfhelfQucSb4Y54yFgtnSNhsAT.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The late 1970s marked a golden age for rock documentaries, with filmmakers moving beyond simple concert footage to explore the personalities and conflicts behind the music. <a href=\"/movie/13963\" class=\"movie-title\" data-tmdb-id=\"13963\">The Last Waltz</a> (1978) brought unprecedented cinematographic sophistication to the genre, while <a href=\"/movie/42632\" class=\"movie-title\" data-tmdb-id=\"42632\">Monterey Pop</a> (1968) captured the moment rock became a cultural force. The Kids Are Alright distinguished itself by incorporating television appearances, interviews, and rare footage to create a comprehensive band biography that influenced countless music documentaries that followed. SUBHEAD: The Evolution of Music Documentary Filmmaking"
+      },
+      {
+        "type": "text",
+        "content": "The film's influence can be seen in later works like Some Kind of Monster (2004), which similarly exposed band tensions and personalities, and <a href=\"/movie/22492\" class=\"movie-title\" data-tmdb-id=\"22492\">It Might Get Loud</a> (2008), which explored guitar heroes with the same reverence for musical craftsmanship. Director Jeff Stein's approach to archival footage and his willingness to show both triumphs and disasters created a template for honest music storytelling that continues in films like <a href=\"/movie/331781\" class=\"movie-title\" data-tmdb-id=\"331781\">Amy</a> (2015) and <a href=\"/movie/319075\" class=\"movie-title\" data-tmdb-id=\"319075\">Kurt Cobain: Montage of Heck</a> (2015)."
+      }
+    ],
+    "exploreFurther": [
+      "The evolution of concert filming techniques from 1960s to present",
+      "Keith Moon's influence on rock drumming and performance",
+      "The role of destruction and chaos in rock performance art",
+      "How The Who's music and image shaped youth culture",
+      "The impact of television appearances on rock band success"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Don't Look Back",
+          "year": 1967,
+          "slug": "Bob Dylan's 1965 UK tour captured in revolutionary cinéma vérité style",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Stop Making Sense",
+          "year": 1984,
+          "slug": "Talking Heads' groundbreaking concert film directed by Jonathan Demme",
+          "poster": "https://image.tmdb.org/t/p/w500/utNpurUe1MMjEaHqvpkfxgfpSnV.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 24128,
+          "poster_url": "https://image.tmdb.org/t/p/w500/utNpurUe1MMjEaHqvpkfxgfpSnV.jpg"
+        },
+        {
+          "title": "This Is Spinal Tap",
+          "year": 1984,
+          "slug": "Mockumentary that parodies many tropes seen in The Kids Are Alright",
+          "poster": "https://image.tmdb.org/t/p/w500/z2LA8eBTSuuPC4NBhIZRNIwpimH.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 11031,
+          "poster_url": "https://image.tmdb.org/t/p/w500/z2LA8eBTSuuPC4NBhIZRNIwpimH.jpg"
+        },
+        {
+          "title": "Led Zeppelin: The Song Remains the Same",
+          "year": 1976,
+          "slug": "Concert film and fantasy sequences from Led Zeppelin",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": null
+        },
+        {
+          "title": "What's Happening! The Beatles in the USA",
+          "year": 1964,
+          "slug": "Maysles brothers follow Beatles' first US visit",
+          "poster": "https://image.tmdb.org/t/p/w500/r5v3Q5FlU9bacsJrXJaBdZo1yNP.jpg",
+          "initialStreaming": "Apple TV+",
+          "tmdb_id": 305535,
+          "poster_url": "https://image.tmdb.org/t/p/w500/r5v3Q5FlU9bacsJrXJaBdZo1yNP.jpg"
+        },
+        {
+          "title": "Pink Floyd: Live at Pompeii",
+          "year": 1972,
+          "slug": "Psychedelic rock performance in ancient Roman amphitheater",
+          "poster": "https://image.tmdb.org/t/p/w500/bxjgbHH14nEMx3YtFDLJ04omQhH.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 25771,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bxjgbHH14nEMx3YtFDLJ04omQhH.jpg"
+        },
+        {
+          "title": "The Filth and the Fury",
+          "year": 2000,
+          "slug": "Sex Pistols documentary showing punk's rise",
+          "poster": "https://image.tmdb.org/t/p/w500/kdNkiqmMeJfaD8ybjiV6bVOrcQ8.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 27745,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kdNkiqmMeJfaD8ybjiV6bVOrcQ8.jpg"
+        },
+        {
+          "title": "Shine a Light",
+          "year": 2008,
+          "slug": "Scorsese captures the Rolling Stones in intimate detail",
+          "poster": "https://image.tmdb.org/t/p/w500/rMVrNWWaO3xAWZHFUbeamWPzVAC.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 7944,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rMVrNWWaO3xAWZHFUbeamWPzVAC.jpg"
+        },
+        {
+          "title": "Festival Express",
+          "year": 2003,
+          "slug": "Documentary of 1970 train tour with Grateful Dead, The Band, and others",
+          "poster": "https://image.tmdb.org/t/p/w500/5ehULJQMNCdASy2i7jaTbcIvQKA.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 14770,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5ehULJQMNCdASy2i7jaTbcIvQKA.jpg"
+        },
+        {
+          "title": "Amazing Journey: The Story of The Who",
+          "year": 2007,
+          "slug": "Comprehensive Who documentary with rare footage",
+          "poster": "https://image.tmdb.org/t/p/w500/1c0gwzn18r3A1YGH2w13Ff3zs8o.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 53204,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1c0gwzn18r3A1YGH2w13Ff3zs8o.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,174 @@
+{
+  "props": {
+    "title": "Scary Movie",
+    "year": 2000,
+    "initialSlug": "Horror spoof turns slasher clichés into laughs",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/fVQFPRuw3yWXojYDJvA5EoFjUOY.jpg",
+    "initialStreaming": null,
+    "tmdbId": 4247,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Scary Movie marked a pivotal shift in horror-comedy, aggressively parodying the slasher revival led by <a href=\"/movie/4232\" class=\"movie-title\" data-tmdb-id=\"4232\">Scream</a> (1996) and <a href=\"/movie/3597\" class=\"movie-title\" data-tmdb-id=\"3597\">I Know What You Did Last Summer</a> (1997). The Wayans Brothers cranked up the raunch factor and slapstick violence, moving beyond subtle satire into outrageous spoof territory. While <a href=\"/movie/813\" class=\"movie-title\" data-tmdb-id=\"813\">Airplane!</a> (1980) and The Naked Gun (1988) established the spoof template, Scary Movie's crude humor and direct scene-for-scene parodies created a new blueprint that dominated comedy throughout the 2000s."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Scream",
+            "year": 1996,
+            "slug": "Meta slasher that deconstructed horror tropes while delivering genuine scares",
+            "poster": "https://image.tmdb.org/t/p/w500/lr9ZIrmuwVmZhpZuTCW8D9g0ZJe.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 4232,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lr9ZIrmuwVmZhpZuTCW8D9g0ZJe.jpg"
+          },
+          {
+            "title": "Not Another Teen Movie",
+            "year": 2001,
+            "slug": "Parody of 90s teen films with similar over-the-top style",
+            "poster": "https://image.tmdb.org/t/p/w500/9ZaGxvj1mqdKVLpSloq4mzS7SK6.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 11397,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9ZaGxvj1mqdKVLpSloq4mzS7SK6.jpg"
+          },
+          {
+            "title": "Shaun of the Dead",
+            "year": 2004,
+            "slug": "Smart zombie movie spoof that pays loving homage to the genre",
+            "poster": "https://image.tmdb.org/t/p/w500/dgXPhzNJH8HFTBjXPB177yNx6RI.jpg",
+            "initialStreaming": "Starz",
+            "tmdb_id": 747,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dgXPhzNJH8HFTBjXPB177yNx6RI.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The massive success of Scary Movie spawned an avalanche of increasingly desperate parody films. <a href=\"/movie/10073\" class=\"movie-title\" data-tmdb-id=\"10073\">Date Movie</a> (2006), <a href=\"/movie/9760\" class=\"movie-title\" data-tmdb-id=\"9760\">Epic Movie</a> (2007), and Disaster Movie (2008) copied the formula but missed the sharp pop culture commentary. Only <a href=\"/movie/747\" class=\"movie-title\" data-tmdb-id=\"747\">Shaun of the Dead</a> (2004) and Tucker & Dale vs Evil (2010) managed to elevate beyond mere mockery into genuine genre celebration."
+      },
+      {
+        "type": "text",
+        "content": "The film's impact extended beyond comedy. Scream 4 (2011) directly referenced Scary Movie's meta-commentary, while horror comedies like The Final Girls (2015) balanced genuine scares with self-aware humor. The trend of horror-comedy hybridization continues with films like The Babysitter (2017) and <a href=\"/movie/440021\" class=\"movie-title\" data-tmdb-id=\"440021\">Happy Death Day</a> (2017) maintaining that delicate balance between scares and laughs. SUBHEAD: The Evolution of Horror Parody"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Tucker & Dale vs Evil",
+            "year": 2010,
+            "slug": "Clever horror-comedy that flips slasher tropes by making the hillbillies the good guys",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While <a href=\"/movie/3034\" class=\"movie-title\" data-tmdb-id=\"3034\">Young Frankenstein</a> (1974) and <a href=\"/movie/21515\" class=\"movie-title\" data-tmdb-id=\"21515\">Student Bodies</a> (1981) pioneered horror-comedy, Scary Movie's influence pushed the genre into more extreme territory. Modern entries like Cabin in the Woods (2011) and <a href=\"/movie/246741\" class=\"movie-title\" data-tmdb-id=\"246741\">What We Do in the Shadows</a> (2014) demonstrate how horror parody has matured, combining genuine frights with intelligent humor rather than relying solely on crude gags and reference jokes."
+      }
+    ],
+    "exploreFurther": [
+      "The Rise and Fall of Spoof Movies in the 2000s",
+      "The Wayans Brothers' Impact on Comedy Cinema",
+      "Evolution of Meta-Horror from Scream to Modern Day",
+      "The Influence of Parody on Mainstream Horror",
+      "Comedy-Horror Hybrid: Creating Effective Genre Blends"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Airplane!",
+          "year": 1980,
+          "slug": "The grandfather of modern spoof movies",
+          "poster": "https://image.tmdb.org/t/p/w500/7Q3efxd3AF1vQjlSxnlerSA7RzN.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 813,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7Q3efxd3AF1vQjlSxnlerSA7RzN.jpg"
+        },
+        {
+          "title": "Hot Shots!",
+          "year": 1991,
+          "slug": "Top Gun parody that helped establish 90s spoof style",
+          "poster": "https://image.tmdb.org/t/p/w500/koLIB5263emHxewmwgBBK26vjeS.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 9595,
+          "poster_url": "https://image.tmdb.org/t/p/w500/koLIB5263emHxewmwgBBK26vjeS.jpg"
+        },
+        {
+          "title": "Don't Be a Menace",
+          "year": 1996,
+          "slug": "Earlier Wayans brothers parody of hood films",
+          "poster": "https://image.tmdb.org/t/p/w500/HZQBF7JDd2e9p4rPSbSHuWHaCC.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 10607,
+          "poster_url": "https://image.tmdb.org/t/p/w500/HZQBF7JDd2e9p4rPSbSHuWHaCC.jpg"
+        },
+        {
+          "title": "Austin Powers",
+          "year": 1997,
+          "slug": "James Bond spoof that balanced parody with original humor",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": null
+        },
+        {
+          "title": "Galaxy Quest",
+          "year": 1999,
+          "slug": "Affectionate Star Trek parody that transcended spoof",
+          "poster": "https://image.tmdb.org/t/p/w500/fZXSwgZknp81vmciTb86rw0MejV.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 926,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fZXSwgZknp81vmciTb86rw0MejV.jpg"
+        },
+        {
+          "title": "Walk Hard",
+          "year": 2007,
+          "slug": "Musical biopic parody that ended up influencing the genre",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Black Dynamite",
+          "year": 2009,
+          "slug": "Clever blaxploitation spoof with genuine style",
+          "poster": "https://image.tmdb.org/t/p/w500/u3oWQDz0JggzzsVlsuHY7XVxp5Y.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 24804,
+          "poster_url": "https://image.tmdb.org/t/p/w500/u3oWQDz0JggzzsVlsuHY7XVxp5Y.jpg"
+        },
+        {
+          "title": "They Came Together",
+          "year": 2014,
+          "slug": "Rom-com parody that skewers genre clichés",
+          "poster": "https://image.tmdb.org/t/p/w500/ifvKTtvmPYOGed2hP9ogPq98In7.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 180296,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ifvKTtvmPYOGed2hP9ogPq98In7.jpg"
+        },
+        {
+          "title": "Popstar",
+          "year": 2016,
+          "slug": "Modern mockumentary that parodies music documentaries",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Final Girls",
+          "year": 2015,
+          "slug": "Self-aware slasher that balances horror and humor",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}
