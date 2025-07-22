@@ -545,7 +545,7 @@ import { createBasicMovieEntry } from '../../lib/services/database-search';
 // Nuclear Static Check - check for pre-built static data first
 async function checkNuclearStatic(tmdbId) {
   try {
-    const nuclearPath = path.join(process.cwd(), 'nuclear-static', `${tmdbId}.json`);
+    const nuclearPath = path.join(process.cwd(), 'public', 'nuclear-static', `${tmdbId}.json`);
 
     if (fs.existsSync(nuclearPath)) {
       console.log(`🚀 Nuclear cache HIT for movie ${tmdbId}`);
