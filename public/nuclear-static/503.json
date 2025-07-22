@@ -1,0 +1,206 @@
+{
+  "props": {
+    "title": "Poseidon",
+    "year": 2006,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/1ma5b9XLCziCHzQP0Zy1Y1PqNyM.jpg",
+    "initialStreaming": null,
+    "tmdbId": 503,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Poseidon reimagines the disaster film classic <a href=\"/movie/551\" class=\"movie-title\" data-tmdb-id=\"551\">The Poseidon Adventure</a> (1972) with modern special effects and a more action-oriented approach. Director Wolfgang Petersen, who previously mastered maritime tension in <a href=\"/movie/387\" class=\"movie-title\" data-tmdb-id=\"387\">Das Boot</a> (1981) and <a href=\"/movie/2133\" class=\"movie-title\" data-tmdb-id=\"2133\">The Perfect Storm</a> (2000), brings his signature intensity to this claustrophobic survival thriller. The film follows a familiar disaster movie template established by films like <a href=\"/movie/5919\" class=\"movie-title\" data-tmdb-id=\"5919\">The Towering Inferno</a> (1974) and modernized by <a href=\"/movie/597\" class=\"movie-title\" data-tmdb-id=\"597\">Titanic</a> (1997) - gather a diverse group of characters, establish their relationships, then thrust them into catastrophe."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Poseidon Adventure",
+            "year": 1972,
+            "slug": "The original upside-down ship disaster film that set the standard, starring Gene Hackman as a determined priest leading survivors to safety",
+            "poster": "https://image.tmdb.org/t/p/w500/6RGiA5BfhelU9zoD0b1GAG4GWWf.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 551,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6RGiA5BfhelU9zoD0b1GAG4GWWf.jpg"
+          },
+          {
+            "title": "Titanic",
+            "year": 1997,
+            "slug": "James Cameron's epic disaster romance that revolutionized maritime visual effects and became a global phenomenon",
+            "poster": "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 597,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg"
+          },
+          {
+            "title": "The Perfect Storm",
+            "year": 2000,
+            "slug": "Wolfgang Petersen's intense true story of fishermen caught in a massive storm system, showcasing realistic ocean dangers",
+            "poster": "https://image.tmdb.org/t/p/w500/vJPoxqgpfFNbGi0HyoNsjFeLCio.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 2133,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vJPoxqgpfFNbGi0HyoNsjFeLCio.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The disaster genre saw a significant revival in the 1990s with films like <a href=\"/movie/664\" class=\"movie-title\" data-tmdb-id=\"664\">Twister</a> (1996), <a href=\"/movie/10357\" class=\"movie-title\" data-tmdb-id=\"10357\">Volcano</a> (1997), and <a href=\"/movie/8656\" class=\"movie-title\" data-tmdb-id=\"8656\">Deep Impact</a> (1998) updating the formula with CGI spectacle. Poseidon follows this trend but focuses more on intimate survival horror than epic destruction. The confined spaces and rising water create sustained tension similar to <a href=\"/movie/11228\" class=\"movie-title\" data-tmdb-id=\"11228\">Daylight</a> (1996) and <a href=\"/movie/8914\" class=\"movie-title\" data-tmdb-id=\"8914\">Deep Blue Sea</a> (1999), where characters must navigate increasingly dangerous environments while their safe zones steadily shrink. SUBHEAD: Visual Effects Evolution and Maritime Disasters"
+      },
+      {
+        "type": "text",
+        "content": "Poseidon's effects work builds on advances made in water simulation since <a href=\"/movie/2756\" class=\"movie-title\" data-tmdb-id=\"2756\">The Abyss</a> (1989). The capsizing sequence particularly showcases how far digital effects had come, though some critics felt it lacked the practical effects charm of the 1972 original. The film sits alongside other modern maritime thrillers like <a href=\"/movie/83\" class=\"movie-title\" data-tmdb-id=\"83\">Open Water</a> (2003) and <a href=\"/movie/10534\" class=\"movie-title\" data-tmdb-id=\"10534\">White Squall</a> (1996), proving the ocean remains one of cinema's most effective sources of natural danger."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Disaster Film Special Effects: From Miniatures to CGI",
+      "Maritime Disasters in Cinema: Historical vs. Fictional Approaches",
+      "Wolfgang Petersen's Ocean-Based Filmography",
+      "Comparing 1970s vs. 2000s Disaster Film Techniques",
+      "The Psychology of Confined Space Survival Thrillers"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Towering Inferno",
+          "year": 1974,
+          "slug": "Classic disaster film about a burning skyscraper",
+          "poster": "https://image.tmdb.org/t/p/w500/mFM1GbrRrT3DWUFFo8koSITFnYe.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 5919,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mFM1GbrRrT3DWUFFo8koSITFnYe.jpg"
+        },
+        {
+          "title": "Deep Blue Sea",
+          "year": 1999,
+          "slug": "Genetic engineering meets shark attack disaster",
+          "poster": "https://image.tmdb.org/t/p/w500/fyn0zyCI4kIlbDoHH0Hzv09hDC5.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 8914,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fyn0zyCI4kIlbDoHH0Hzv09hDC5.jpg"
+        },
+        {
+          "title": "Volcano",
+          "year": 1997,
+          "slug": "Los Angeles faces volcanic disaster",
+          "poster": "https://image.tmdb.org/t/p/w500/5xIjktjXuro7anZ6AR58t5ZYWjQ.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 10357,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5xIjktjXuro7anZ6AR58t5ZYWjQ.jpg"
+        },
+        {
+          "title": "Twister",
+          "year": 1996,
+          "slug": "Storm chasers track devastating tornadoes",
+          "poster": "https://image.tmdb.org/t/p/w500/d4ie3f6QTvNw40V770Uzo87SDZn.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 664,
+          "poster_url": "https://image.tmdb.org/t/p/w500/d4ie3f6QTvNw40V770Uzo87SDZn.jpg"
+        },
+        {
+          "title": "The Day After Tomorrow",
+          "year": 2004,
+          "slug": "Climate disaster creates global catastrophe",
+          "poster": "https://image.tmdb.org/t/p/w500/Wr4HeYQRvwVCxzOV5TmGE7UkXq.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 435,
+          "poster_url": "https://image.tmdb.org/t/p/w500/Wr4HeYQRvwVCxzOV5TmGE7UkXq.jpg"
+        },
+        {
+          "title": "2012",
+          "year": 2009,
+          "slug": "Earth faces total destruction from natural disasters",
+          "poster": "https://image.tmdb.org/t/p/w500/zaqam2RNscH5ooYFWInV6hjx6y5.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 14161,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zaqam2RNscH5ooYFWInV6hjx6y5.jpg"
+        },
+        {
+          "title": "San Andreas",
+          "year": 2015,
+          "slug": "Massive earthquake threatens California",
+          "poster": "https://image.tmdb.org/t/p/w500/2Gfjn962aaFSD6eST6QU3oLDZTo.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 254128,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2Gfjn962aaFSD6eST6QU3oLDZTo.jpg"
+        },
+        {
+          "title": "Into the Storm",
+          "year": 2014,
+          "slug": "Found footage tornado disaster film",
+          "poster": "https://image.tmdb.org/t/p/w500/kBgrhrES9kMKSPxawUYV61KjlnB.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 216282,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kBgrhrES9kMKSPxawUYV61KjlnB.jpg"
+        },
+        {
+          "title": "The Wave",
+          "year": 2015,
+          "slug": "Norwegian disaster film about tsunami threat",
+          "poster": "https://image.tmdb.org/t/p/w500/sRbFTl2OkANyTm26IbwUZ3Vr3ay.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 251979,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sRbFTl2OkANyTm26IbwUZ3Vr3ay.jpg"
+        },
+        {
+          "title": "Hard Rain",
+          "year": 1998,
+          "slug": "Heist film during massive flooding",
+          "poster": "https://image.tmdb.org/t/p/w500/aOZ8iC7Zr8Eh4I9kdmEgxazq7qy.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 11258,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aOZ8iC7Zr8Eh4I9kdmEgxazq7qy.jpg"
+        },
+        {
+          "title": "Dante's Peak",
+          "year": 1997,
+          "slug": "Volcanic disaster threatens small town",
+          "poster": "https://image.tmdb.org/t/p/w500/6N73uiHHGDBoaAECYc0R39O3fre.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9619,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6N73uiHHGDBoaAECYc0R39O3fre.jpg"
+        },
+        {
+          "title": "The Core",
+          "year": 2003,
+          "slug": "Scientists must drill to Earth's core",
+          "poster": "https://image.tmdb.org/t/p/w500/iMPR3OFhKNVvJw4eZoRhf9RzfHJ.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 9341,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iMPR3OFhKNVvJw4eZoRhf9RzfHJ.jpg"
+        },
+        {
+          "title": "Geostorm",
+          "year": 2017,
+          "slug": "Weather control system threatens Earth",
+          "poster": "https://image.tmdb.org/t/p/w500/nrsx0jEaBgXq4PWo7SooSnYJTv.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 274855,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nrsx0jEaBgXq4PWo7SooSnYJTv.jpg"
+        },
+        {
+          "title": "Greenland",
+          "year": 2020,
+          "slug": "Comet impact threatens humanity",
+          "poster": "https://image.tmdb.org/t/p/w500/bNo2mcvSwIvnx8K6y1euAc1TLVq.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 524047,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bNo2mcvSwIvnx8K6y1euAc1TLVq.jpg"
+        },
+        {
+          "title": "Only the Brave",
+          "year": 2017,
+          "slug": "True story of firefighters facing disaster",
+          "poster": "https://image.tmdb.org/t/p/w500/lC7WdUNLOJI3sllaDGNdFy2GT8g.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 395991,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lC7WdUNLOJI3sllaDGNdFy2GT8g.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

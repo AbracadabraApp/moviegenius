@@ -1,0 +1,177 @@
+{
+  "props": {
+    "title": "Strike",
+    "year": 1925,
+    "initialSlug": "Workers rise against brutal factory oppression",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/mrDTaMxQKxWZ3uEs2G58vJWJDDL.jpg",
+    "initialStreaming": null,
+    "tmdbId": 44967,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Sergei Eisenstein's **Strike** (1925) revolutionized montage theory and working-class cinema. His debut feature showcases the innovative cross-cutting and intellectual montage that would later define <a href=\"/movie/643\" class=\"movie-title\">Battleship Potemkin</a> (1925) and **October** (1928). The film's depiction of a factory strike uses radical juxtaposition - cutting between workers and animals, machinery and violence - creating metaphorical connections that influenced everyone from Charlie Chaplin in <a href=\"/movie/3082\" class=\"movie-title\">Modern Times</a> (1936) to Martin Scorsese's contemporary editing style."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Battleship Potemkin",
+            "year": 1925,
+            "slug": "Eisenstein's masterpiece about a naval mutiny, featuring the famous Odessa Steps sequence",
+            "poster": "https://image.tmdb.org/t/p/w500/hZmsRLsCnE9Zshf1YJONUpCOhds.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 643,
+            "poster_url": "https://image.tmdb.org/t/p/w500/hZmsRLsCnE9Zshf1YJONUpCOhds.jpg"
+          },
+          {
+            "title": "Metropolis",
+            "year": 1927,
+            "slug": "Fritz Lang's expressionist sci-fi about class warfare and industrialization",
+            "poster": "https://image.tmdb.org/t/p/w500/vZIJxGnjcswPCAa52jhbl01FQkV.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 19,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vZIJxGnjcswPCAa52jhbl01FQkV.jpg"
+          },
+          {
+            "title": "Modern Times",
+            "year": 1936,
+            "slug": "Chaplin's comedy critiquing industrial automation and worker exploitation",
+            "poster": "https://image.tmdb.org/t/p/w500/7uoiKOEjxBBW0AgDGQWrlfGQ90w.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 3082,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7uoiKOEjxBBW0AgDGQWrlfGQ90w.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence on depicting labor struggles echoes through cinema history. Italian Neorealism drew directly from its documentary-like portrayal of workers, visible in **La Terra Trema** (1948) and **Bitter Rice** (1949). The tradition continues through Ken Loach's **I, Daniel Blake** (2016) and **Sorry We Missed You** (2019), maintaining Strike's unflinching look at working conditions."
+      },
+      {
+        "type": "text",
+        "content": "Eisenstein's innovative visual metaphors - particularly the slaughterhouse sequence intercut with police violence - established a film language that directors still reference. **The Godfather** (1972) echoes this technique in its baptism montage, while **Apocalypse Now** (1979) employs similar cross-cutting to connect violence across different spaces. SUBHEAD: Soviet Montage Movement Impact"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Man With a Movie Camera",
+            "year": 1929,
+            "slug": "Dziga Vertov's experimental documentary showcasing Soviet montage theory",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 26317
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While **Strike** emerged from the Soviet Montage movement alongside works like **The End of St. Petersburg** (1927) and **Earth** (1930), its technical innovations transcended political ideology. The rapid-cut sequences influenced Hollywood's approach to action and tension, visible in films from **Raging Bull** (1980) to **Black Swan** (2010). Eisenstein's theory of attractions - using shocking images to create emotional impact - remains fundamental to modern blockbuster cinema."
+      }
+    ],
+    "exploreFurther": [
+      "Soviet Montage Theory and its influence on global cinema",
+      "The evolution of cross-cutting techniques from Strike to contemporary film",
+      "Representations of labor movements in world cinema",
+      "Eisenstein's film theories and their modern applications",
+      "Early Soviet cinema's impact on political filmmaking"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Earth",
+          "year": 1930,
+          "slug": "Dovzhenko's poetic film about Ukrainian collectivization",
+          "poster": "https://image.tmdb.org/t/p/w500/zALTikeMEHSPDB2acpAcrxeUN7X.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 975521,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zALTikeMEHSPDB2acpAcrxeUN7X.jpg"
+        },
+        {
+          "title": "Mother",
+          "year": 1926,
+          "slug": "Pudovkin's revolutionary adaptation of Gorky's novel",
+          "poster": "https://image.tmdb.org/t/p/w500/u9u71FR74RVndbAbW3rlmts0QyS.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 98914,
+          "poster_url": "https://image.tmdb.org/t/p/w500/u9u71FR74RVndbAbW3rlmts0QyS.jpg"
+        },
+        {
+          "title": "Salt for Svanetia",
+          "year": 1930,
+          "slug": "Mikhail Kalatozov's documentary using montage techniques",
+          "poster": "https://image.tmdb.org/t/p/w500/m5FVJsOWAdO8XwrOy9R08uhKagE.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 158968,
+          "poster_url": "https://image.tmdb.org/t/p/w500/m5FVJsOWAdO8XwrOy9R08uhKagE.jpg"
+        },
+        {
+          "title": "The End of St. Petersburg",
+          "year": 1927,
+          "slug": "Pudovkin's celebration of the Russian Revolution",
+          "poster": "https://image.tmdb.org/t/p/w500/wKLkiMq76do71f1TcHqXbvkiXOp.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 106254,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wKLkiMq76do71f1TcHqXbvkiXOp.jpg"
+        },
+        {
+          "title": "October",
+          "year": 1928,
+          "slug": "Eisenstein's epic recreation of the Russian Revolution",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 697
+        },
+        {
+          "title": "Kino-Eye",
+          "year": 1924,
+          "slug": "Vertov's experimental documentary using new film techniques",
+          "poster": "https://image.tmdb.org/t/p/w500/qgjeOPQJlAYS817QBt00YJBJgm5.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 144611,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qgjeOPQJlAYS817QBt00YJBJgm5.jpg"
+        },
+        {
+          "title": "Arsenal",
+          "year": 1929,
+          "slug": "Dovzhenko's Ukrainian civil war drama",
+          "poster": "https://image.tmdb.org/t/p/w500/xQEIAR3NTAypuN45JmE2nyaZhEk.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 85715,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xQEIAR3NTAypuN45JmE2nyaZhEk.jpg"
+        },
+        {
+          "title": "The New Babylon",
+          "year": 1929,
+          "slug": "Kozintsev and Trauberg's Paris Commune drama",
+          "poster": "https://image.tmdb.org/t/p/w500/sHs9PFLK5o5L4j7hE03QSTiJy4V.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 151068,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sHs9PFLK5o5L4j7hE03QSTiJy4V.jpg"
+        },
+        {
+          "title": "Storm Over Asia",
+          "year": 1928,
+          "slug": "Pudovkin's Mongolia-set revolutionary drama",
+          "poster": "https://image.tmdb.org/t/p/w500/ymzADiDk85KsI683tI21A4oaWT7.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 84273,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ymzADiDk85KsI683tI21A4oaWT7.jpg"
+        },
+        {
+          "title": "The General Line",
+          "year": 1929,
+          "slug": "Eisenstein's film about agricultural collectivization",
+          "poster": "https://image.tmdb.org/t/p/w500/tc40LBkdIydQga2BSJur9WGq5RM.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 110741,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tc40LBkdIydQga2BSJur9WGq5RM.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

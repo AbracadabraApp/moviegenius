@@ -1,0 +1,187 @@
+{
+  "props": {
+    "title": "The BFG",
+    "year": 2016,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/gjA5u7ZLgwkSoNCGCUfNSMv4fYn.jpg",
+    "initialStreaming": null,
+    "tmdbId": 15433,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Steven Spielberg's adaptation of Roald Dahl's beloved novel The BFG continues his masterful exploration of childhood wonder and unlikely friendships, following classics like <a href=\"/movie/601\" class=\"movie-title\" data-tmdb-id=\"601\">E.T. the Extra-Terrestrial</a> (1982) and <a href=\"/movie/879\" class=\"movie-title\" data-tmdb-id=\"879\">Hook</a> (1991). Mark Rylance's motion-capture performance as the Big Friendly Giant brings warmth and whimsy through groundbreaking visual effects. The film joins a rich tradition of gentle giants in cinema, from <a href=\"/movie/10386\" class=\"movie-title\" data-tmdb-id=\"10386\">The Iron Giant</a> (1999) to <a href=\"/movie/294272\" class=\"movie-title\" data-tmdb-id=\"294272\">Pete's Dragon</a> (2016), while maintaining Dahl's signature blend of darkness and delight."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Iron Giant",
+            "year": 1999,
+            "slug": "Brad Bird's animated masterpiece about a boy befriending a massive robot during the Cold War",
+            "poster": "https://image.tmdb.org/t/p/w500/ct04FCFLPImNG5thcPLRnVsZlmS.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 10386,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ct04FCFLPImNG5thcPLRnVsZlmS.jpg"
+          },
+          {
+            "title": "Pete's Dragon",
+            "year": 2016,
+            "slug": "A reimagining of the 1977 Disney film about an orphan boy and his dragon friend",
+            "poster": "https://image.tmdb.org/t/p/w500/A9x4Ogk8KUXTfU649NS6lS9TCmu.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 294272,
+            "poster_url": "https://image.tmdb.org/t/p/w500/A9x4Ogk8KUXTfU649NS6lS9TCmu.jpg"
+          },
+          {
+            "title": "Bridge to Terabithia",
+            "year": 2007,
+            "slug": "Two friends create a magical fantasy world in the forest",
+            "poster": "https://image.tmdb.org/t/p/w500/3xFxGodKPMFLheS8rujFSmLfcq4.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 1265,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3xFxGodKPMFLheS8rujFSmLfcq4.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Spielberg's approach to adapting children's literature differs markedly from darker interpretations like <a href=\"/movie/16523\" class=\"movie-title\" data-tmdb-id=\"16523\">Where the Wild Things Are</a> (2009) or <a href=\"/movie/14836\" class=\"movie-title\" data-tmdb-id=\"14836\">Coraline</a> (2009). His version of The BFG maintains the story's British charm while softening some of Dahl's more menacing edges, similar to how <a href=\"/movie/10830\" class=\"movie-title\" data-tmdb-id=\"10830\">Matilda</a> (1996) balanced whimsy with darker themes. The dream-catching sequences showcase cutting-edge visual effects while echoing the practical magic of earlier fantasy films like <a href=\"/movie/34584\" class=\"movie-title\" data-tmdb-id=\"34584\">The NeverEnding Story</a> (1984)."
+      },
+      {
+        "type": "text",
+        "content": "The film's portrayal of London and Giant Country creates a distinct visual identity that builds on previous Dahl adaptations like <a href=\"/movie/118\" class=\"movie-title\" data-tmdb-id=\"118\">Charlie and the Chocolate Factory</a> (2005) and <a href=\"/movie/10539\" class=\"movie-title\" data-tmdb-id=\"10539\">James and the Giant Peach</a> (1996). The production design team crafted elaborate sets that blend practical effects with digital environments, creating a world that feels both tangible and magical. SUBHEAD: Visual Effects Innovation and Performance Capture"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Fantastic Mr. Fox",
+            "year": 2009,
+            "slug": "Wes Anderson's stop-motion adaptation of Roald Dahl's story",
+            "poster": "https://image.tmdb.org/t/p/w500/njbTizADSZg4PqeyJdDzZGooikv.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 10315,
+            "poster_url": "https://image.tmdb.org/t/p/w500/njbTizADSZg4PqeyJdDzZGooikv.jpg"
+          },
+          {
+            "title": "The Witches",
+            "year": 1990,
+            "slug": "A dark fantasy adaptation of Dahl's novel about a boy fighting witches",
+            "poster": "https://image.tmdb.org/t/p/w500/mPYBjVkeHakkPGY7WaKyyNU4RWm.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 10166,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mPYBjVkeHakkPGY7WaKyyNU4RWm.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The BFG represents a significant advancement in motion capture technology, building on techniques pioneered in films like <a href=\"/movie/19995\" class=\"movie-title\" data-tmdb-id=\"19995\">Avatar</a> (2009) and <a href=\"/movie/61791\" class=\"movie-title\" data-tmdb-id=\"61791\">Rise of the Planet of the Apes</a> (2011). Mark Rylance's nuanced performance as the BFG demonstrates how far the technology has come since Andy Serkis first brought Gollum to life in <a href=\"/movie/121\" class=\"movie-title\" data-tmdb-id=\"121\">The Lord of the Rings: The Two Towers</a> (2002)."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Roald Dahl adaptations in cinema",
+      "Spielberg's techniques for directing child actors",
+      "Development of motion capture technology in family films",
+      "Visual effects integration in modern fantasy storytelling",
+      "The influence of British children's literature on film"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+          "year": 2005,
+          "slug": "C.S. Lewis's fantasy classic comes to life",
+          "poster": "https://image.tmdb.org/t/p/w500/iREd0rNCjYdf5Ar0vfaW32yrkm.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 411,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iREd0rNCjYdf5Ar0vfaW32yrkm.jpg"
+        },
+        {
+          "title": "A Monster Calls",
+          "year": 2016,
+          "slug": "A boy copes with his mother's illness through visits from a tree monster",
+          "poster": "https://image.tmdb.org/t/p/w500/vNzWJwVqjszWwXrA7ZfsrJmhgV9.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 258230,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vNzWJwVqjszWwXrA7ZfsrJmhgV9.jpg"
+        },
+        {
+          "title": "Hugo",
+          "year": 2011,
+          "slug": "Martin Scorsese's magical adventure about an orphan living in a Paris train station",
+          "poster": "https://image.tmdb.org/t/p/w500/1dxRq3o3l3bVWNRvvSb7rRf68qp.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 44826,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1dxRq3o3l3bVWNRvvSb7rRf68qp.jpg"
+        },
+        {
+          "title": "The Water Horse",
+          "year": 2007,
+          "slug": "A Scottish boy discovers a mysterious egg that hatches into a sea creature",
+          "poster": "https://image.tmdb.org/t/p/w500/h9DV6KItNutJmrPzT1xrAO6fIzy.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 54318,
+          "poster_url": "https://image.tmdb.org/t/p/w500/h9DV6KItNutJmrPzT1xrAO6fIzy.jpg"
+        },
+        {
+          "title": "The Last Mimzy",
+          "year": 2007,
+          "slug": "Children discover a mysterious box of toys from the future",
+          "poster": "https://image.tmdb.org/t/p/w500/jnLXcQFx4hSKDNG1P6RMz4v5jje.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 2267,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jnLXcQFx4hSKDNG1P6RMz4v5jje.jpg"
+        },
+        {
+          "title": "The Spiderwick Chronicles",
+          "year": 2008,
+          "slug": "Siblings discover a world of magical creatures",
+          "poster": "https://image.tmdb.org/t/p/w500/y0zqUbwK8FWIkelnlmnRkntz9F8.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 8204,
+          "poster_url": "https://image.tmdb.org/t/p/w500/y0zqUbwK8FWIkelnlmnRkntz9F8.jpg"
+        },
+        {
+          "title": "Mr. Magorium's Wonder Emporium",
+          "year": 2007,
+          "slug": "A magical toy store faces changes when its owner decides to leave",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "The House with a Clock in Its Walls",
+          "year": 2018,
+          "slug": "A young boy moves in with his warlock uncle",
+          "poster": "https://image.tmdb.org/t/p/w500/qM66Hv4ByAxnilr0jaqCA9uOD4Y.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 463821,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qM66Hv4ByAxnilr0jaqCA9uOD4Y.jpg"
+        },
+        {
+          "title": "Miss Peregrine's Home for Peculiar Children",
+          "year": 2016,
+          "slug": "A teen discovers a school for children with unusual abilities",
+          "poster": "https://image.tmdb.org/t/p/w500/CIlbMFOfYDj0MP23hsIYhFGrL6.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 283366,
+          "poster_url": "https://image.tmdb.org/t/p/w500/CIlbMFOfYDj0MP23hsIYhFGrL6.jpg"
+        },
+        {
+          "title": "The Kid Who Would Be King",
+          "year": 2019,
+          "slug": "A modern take on Arthurian legend",
+          "poster": "https://image.tmdb.org/t/p/w500/kBuvLX6zynQP0sjyqbXV4jNaZ4E.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 454294,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kBuvLX6zynQP0sjyqbXV4jNaZ4E.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

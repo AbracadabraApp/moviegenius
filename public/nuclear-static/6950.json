@@ -1,0 +1,183 @@
+{
+  "props": {
+    "title": "Outbreak",
+    "year": 1995,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/4KymNvlWR0XF0sqX2BWRd9Z3yXR.jpg",
+    "initialStreaming": "TBD",
+    "tmdbId": 6950,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Outbreak launched a wave of viral pandemic thrillers that feel eerily prescient today. Wolfgang Petersen's fast-paced medical thriller stars Dustin Hoffman as an Army virologist racing to contain a deadly Ebola-like virus. The film's mix of military action and medical crisis established a template followed by films like <a href=\"/movie/39538\" class=\"movie-title\" data-tmdb-id=\"39538\">Contagion</a> (2011) and <a href=\"/movie/72190\" class=\"movie-title\" data-tmdb-id=\"72190\">World War Z</a> (2013). While some scientific details strain credibility, Outbreak's depiction of institutional conflict between medical researchers and military containment forces hits harder post-COVID."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Andromeda Strain",
+            "year": 1971,
+            "slug": "Scientists race to contain an extraterrestrial microorganism in this cerebral Michael Crichton adaptation",
+            "poster": "https://image.tmdb.org/t/p/w500/b03aylMjJ2PBUu44hhOzt0X2I4t.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 10514,
+            "poster_url": "https://image.tmdb.org/t/p/w500/b03aylMjJ2PBUu44hhOzt0X2I4t.jpg"
+          },
+          {
+            "title": "12 Monkeys",
+            "year": 1995,
+            "slug": "Bruce Willis time travels to prevent a virus that will decimate humanity in Terry Gilliam's twisted sci-fi",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": null
+          },
+          {
+            "title": "28 Days Later",
+            "year": 2002,
+            "slug": "Danny Boyle's influential zombie film about a rage virus that devastates Britain",
+            "poster": "https://image.tmdb.org/t/p/w500/sQckQRt17VaWbo39GIu0TMOiszq.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 170,
+            "poster_url": "https://image.tmdb.org/t/p/w500/sQckQRt17VaWbo39GIu0TMOiszq.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The viral outbreak subgenre often reflects contemporary health anxieties. <a href=\"/movie/32037\" class=\"movie-title\" data-tmdb-id=\"32037\">The Cassandra Crossing</a> (1976) played on 1970s fears of biological weapons, while Pandemic (2016) tapped into bird flu concerns. 93 Days (2016) took a more grounded approach, dramatizing the real 2014 Ebola crisis in Nigeria. These films share common elements: the race for a cure, ethical debates over containment, and tension between scientific and military approaches."
+      },
+      {
+        "type": "text",
+        "content": "What sets Outbreak apart is its focus on the human drama within crisis response teams. Unlike <a href=\"/movie/39538\" class=\"movie-title\" data-tmdb-id=\"39538\">Contagion</a> (2011)'s clinical multi-narrative approach or <a href=\"/movie/6479\" class=\"movie-title\" data-tmdb-id=\"6479\">I Am Legend</a> (2007)'s post-apocalyptic isolation, Outbreak emphasizes the personal conflicts between researchers, soldiers, and government officials. The film's helicopter pursuit sequence and small-town quarantine scenes influenced later pandemic thrillers like <a href=\"/movie/25769\" class=\"movie-title\" data-tmdb-id=\"25769\">Carriers</a> (2009). SUBHEAD: Evolution of the Viral Thriller"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Contagion",
+            "year": 2011,
+            "slug": "Steven Soderbergh's realistic portrayal of a global pandemic with an ensemble cast",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": null
+          },
+          {
+            "title": "The Crazies",
+            "year": 2010,
+            "slug": "A small town faces a mysterious toxin that turns residents violent",
+            "poster": "https://image.tmdb.org/t/p/w500/ggtG9DZELyTtM2Y0DRJDOJa5iP8.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 29427,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ggtG9DZELyTtM2Y0DRJDOJa5iP8.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Post-Outbreak films increasingly incorporated elements of social commentary. <a href=\"/movie/9693\" class=\"movie-title\" data-tmdb-id=\"9693\">Children of Men</a> (2006) used its infertility crisis to examine immigration and authoritarianism. <a href=\"/movie/396535\" class=\"movie-title\" data-tmdb-id=\"396535\">Train to Busan</a> (2016) wrapped class criticism within its zombie virus narrative. <a href=\"/movie/51999\" class=\"movie-title\" data-tmdb-id=\"51999\">Perfect Sense</a> (2011) took an artistic approach, using its mysterious epidemic to explore human connection as people gradually lose their senses."
+      }
+    ],
+    "exploreFurther": [
+      "The Science Behind Hollywood Virus Movies",
+      "CDC Consulting in Film: Fact vs Fiction",
+      "Evolution of Epidemic Cinema Pre/Post COVID",
+      "Military Response Protocols in Disease Films",
+      "Real Outbreaks That Inspired Movies"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Stand",
+          "year": 1994,
+          "slug": "Stephen King's epic about a superflu that devastates humanity",
+          "poster": "https://image.tmdb.org/t/p/w500/27eyCVo8evQEFRfE3gzGt6cIEu0.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 1441809,
+          "poster_url": "https://image.tmdb.org/t/p/w500/27eyCVo8evQEFRfE3gzGt6cIEu0.jpg"
+        },
+        {
+          "title": "Virus",
+          "year": 1999,
+          "slug": "Japanese thriller about a deadly virus aboard a ship",
+          "poster": "https://image.tmdb.org/t/p/w500/5Np88iigCfnXvMlMKmCcbPVIbYQ.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 9423,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5Np88iigCfnXvMlMKmCcbPVIbYQ.jpg"
+        },
+        {
+          "title": "Flu",
+          "year": 2013,
+          "slug": "South Korean pandemic thriller with social commentary",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Bay",
+          "year": 2012,
+          "slug": "Found footage eco-horror about a waterborne parasite",
+          "poster": "https://image.tmdb.org/t/p/w500/fnmYgr4AOOE09zKa7omPW1FWT8K.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 123105,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fnmYgr4AOOE09zKa7omPW1FWT8K.jpg"
+        },
+        {
+          "title": "Black Death",
+          "year": 2010,
+          "slug": "Medieval plague drama with supernatural elements",
+          "poster": "https://image.tmdb.org/t/p/w500/gXRERDpyT9s3m2yk6wNmrTWbZfG.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 41215,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gXRERDpyT9s3m2yk6wNmrTWbZfG.jpg"
+        },
+        {
+          "title": "Blindness",
+          "year": 2008,
+          "slug": "Society collapses after mysterious blindness epidemic",
+          "poster": "https://image.tmdb.org/t/p/w500/deBsx5IxyqCC217j3VY24TkkE0Z.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 8338,
+          "poster_url": "https://image.tmdb.org/t/p/w500/deBsx5IxyqCC217j3VY24TkkE0Z.jpg"
+        },
+        {
+          "title": "The Last Ship",
+          "year": 2014,
+          "slug": "Naval vessel searches for cure to global pandemic",
+          "poster": "https://image.tmdb.org/t/p/w500/XuonhXWCynBra9gaVOYZ6anpRH.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 994994,
+          "poster_url": "https://image.tmdb.org/t/p/w500/XuonhXWCynBra9gaVOYZ6anpRH.jpg"
+        },
+        {
+          "title": "Containment",
+          "year": 2015,
+          "slug": "Urban quarantine leads to social breakdown",
+          "poster": "https://image.tmdb.org/t/p/w500/ib7O38QuYFGLdpjKpNNqC8QUwpg.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 361844,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ib7O38QuYFGLdpjKpNNqC8QUwpg.jpg"
+        },
+        {
+          "title": "93 Days",
+          "year": 2016,
+          "slug": "True story of Nigeria's Ebola outbreak response",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Phase 7",
+          "year": 2011,
+          "slug": "Argentine pandemic thriller set in quarantined apartment",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "La pomme ou L'histoire d'une histoire",
+    "year": 1965,
+    "initialSlug": "The Apple that Seduced All",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/vMz2iDQTJBMz5l18yQP0qtvPAza.jpg",
+    "initialStreaming": null,
+    "tmdbId": 604552,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Agnes Varda's experimental short **La Pomme ou L'Histoire d'une Histoire** (1965) represents a fascinating intersection of French New Wave techniques and playful storytelling. This 12-minute film exemplifies Varda's ability to blend documentary and fiction, much like her better-known works <a href=\"/movie/499\" class=\"movie-title\">Cléo from 5 to 7</a> (1962) and <a href=\"/movie/53023\" class=\"movie-title\">Le Bonheur</a> (1965). The apple motif connects to other significant French films of the period, including Jean-Luc Godard's **Pierrot le Fou** (1965), where everyday objects become loaded with symbolic meaning."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Cléo from 5 to 7",
+            "year": 1962,
+            "slug": "A real-time chronicle of a singer awaiting medical results, mixing documentary and fiction",
+            "poster": "https://image.tmdb.org/t/p/w500/oelBStY4xpguaplRv15P3Za7Xsr.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 499,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oelBStY4xpguaplRv15P3Za7Xsr.jpg"
+          },
+          {
+            "title": "Le Bonheur",
+            "year": 1965,
+            "slug": "Varda's controversial examination of happiness and infidelity in marriage",
+            "poster": "https://image.tmdb.org/t/p/w500/r6UYog9MruOe4X71AS57EhuJrFq.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 53023,
+            "poster_url": "https://image.tmdb.org/t/p/w500/r6UYog9MruOe4X71AS57EhuJrFq.jpg"
+          },
+          {
+            "title": "Daguerréotypes",
+            "year": 1976,
+            "slug": "Varda's documentary about Rue Daguerre shopkeepers, showing her mastery of observational cinema",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 49650
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The experimental nature of **La Pomme** connects directly to the broader French avant-garde tradition, particularly the work of Chris Marker in **La Jetée** (1962) and Georges Franju's poetic documentaries like **Le Sang des bêtes** (1949). Varda's playful approach to storytelling influenced later experimental filmmakers, including Michel Gondry's handcrafted aesthetic in **The Science of Sleep** (2006) and **Be Kind Rewind** (2008)."
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of storytelling mechanics and meta-narrative techniques presages later works like Jean-Luc Godard's **Every Man for Himself** (1980) and Alain Resnais' **Providence** (1977). Varda's innovative approach to mixing documentary and fiction elements would later influence filmmakers like Abbas Kiarostami in **Close-Up** (1990) and **Certified Copy** (2010). SUBHEAD: The Left Bank Group and Experimental Cinema"
+      },
+      {
+        "type": "text",
+        "content": "As part of the Left Bank Group (Rive Gauche), Varda's work represents a more experimental, politically engaged strand of French cinema than the concurrent New Wave. This short film shares thematic concerns with Chris Marker's **Sans Soleil** (1983) and Alain Resnais' **Last Year at Marienbad** (1961), particularly in their exploration of memory and narrative construction."
+      }
+    ],
+    "exploreFurther": [
+      "The Left Bank Movement and its distinction from the French New Wave",
+      "Agnes Varda's evolution from photographer to filmmaker",
+      "The use of apple imagery in French cinema",
+      "Experimental documentary techniques in 1960s French cinema",
+      "The influence of Varda's short films on contemporary experimental cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Sans Soleil",
+          "year": 1983,
+          "slug": "Chris Marker's groundbreaking essay film about memory and time",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 1563
+        },
+        {
+          "title": "Faces Places",
+          "year": 2017,
+          "slug": "Varda's late-career collaboration with JR, showing her continued innovation",
+          "poster": "https://image.tmdb.org/t/p/w500/1NX6NTj9FiiJwEgRUmEifSzE7Na.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 451995,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1NX6NTj9FiiJwEgRUmEifSzE7Na.jpg"
+        },
+        {
+          "title": "The Gleaners and I",
+          "year": 2000,
+          "slug": "Varda's digital-age meditation on waste and collection",
+          "poster": "https://image.tmdb.org/t/p/w500/6IdCTKi4Eu7i897jpe59wIDGCri.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 44379,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6IdCTKi4Eu7i897jpe59wIDGCri.jpg"
+        },
+        {
+          "title": "The Beaches of Agnes",
+          "year": 2008,
+          "slug": "Varda's autobiographical reflection on her career",
+          "poster": "https://image.tmdb.org/t/p/w500/mqTFhLpdyMNLBvmN5KFhCOFWWIp.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 38879,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mqTFhLpdyMNLBvmN5KFhCOFWWIp.jpg"
+        },
+        {
+          "title": "Jacquot de Nantes",
+          "year": 1991,
+          "slug": "Varda's loving tribute to Jacques Demy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 41789
+        },
+        {
+          "title": "Toute la mémoire du monde",
+          "year": 1956,
+          "slug": "Resnais' documentary about the National Library of France",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 15377
+        },
+        {
+          "title": "F for Fake",
+          "year": 1973,
+          "slug": "Orson Welles' playful examination of truth and fiction",
+          "poster": "https://image.tmdb.org/t/p/w500/fVeIDxS73CrosoeVOaefQuCUGZg.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 43003,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fVeIDxS73CrosoeVOaefQuCUGZg.jpg"
+        },
+        {
+          "title": "The Tango of the Widower and Its Distorting Mirror",
+          "year": 2020,
+          "slug": "Raúl Ruiz's experimental narrative",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": 602986
+        },
+        {
+          "title": "News from Home",
+          "year": 1977,
+          "slug": "Chantal Akerman's experimental documentary",
+          "poster": "https://image.tmdb.org/t/p/w500/5LqgIR3npCOswRefM5f437Xx9Hb.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 86814,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5LqgIR3npCOswRefM5f437Xx9Hb.jpg"
+        },
+        {
+          "title": "Level Five",
+          "year": 1997,
+          "slug": "Chris Marker's exploration of history and memory",
+          "poster": "https://image.tmdb.org/t/p/w500/9C0ntn8RXc9U3La2PjUtpLlIEOo.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": 57563,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9C0ntn8RXc9U3La2PjUtpLlIEOo.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

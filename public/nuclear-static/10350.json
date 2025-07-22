@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "Wing Commander",
+    "year": 1999,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/e3p2vkA4mnFaBlyAIntkZWkzOJW.jpg",
+    "initialStreaming": null,
+    "tmdbId": 10350,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Wing Commander represents one of the most notorious video game film adaptations, following in the disappointing footsteps of <a href=\"/movie/9607\" class=\"movie-title\" data-tmdb-id=\"9607\">Super Mario Bros.</a> (1993) and <a href=\"/movie/2436\" class=\"movie-title\" data-tmdb-id=\"2436\">Double Dragon</a> (1994). Despite an impressive cast including Freddie Prinze Jr. and Matthew Lillard, the film squandered its rich source material about humanity's war against the cat-like Kilrathi aliens. The movie's troubled production and dramatic departure from the game's established lore alienated fans, while generic sci-fi action failed to attract new audiences. This marked a crucial lesson in how not to adapt interactive entertainment, predating the more successful game adaptations like <a href=\"/movie/338970\" class=\"movie-title\" data-tmdb-id=\"338970\">Tomb Raider</a> (2001)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Wing Commander",
+            "year": 1999,
+            "slug": "A young starfighter pilot must help defend Earth against alien invaders in this poorly-received video game adaptation",
+            "poster": "https://image.tmdb.org/t/p/w500/e3p2vkA4mnFaBlyAIntkZWkzOJW.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 10350,
+            "poster_url": "https://image.tmdb.org/t/p/w500/e3p2vkA4mnFaBlyAIntkZWkzOJW.jpg"
+          },
+          {
+            "title": "Starship Troopers",
+            "year": 1997,
+            "slug": "Satirical sci-fi war film about humanity's fight against alien insects",
+            "poster": "https://image.tmdb.org/t/p/w500/cxCmv23O7p3hyHwqoktHYkZcGsY.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 563,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cxCmv23O7p3hyHwqoktHYkZcGsY.jpg"
+          },
+          {
+            "title": "The Last Starfighter",
+            "year": 1984,
+            "slug": "A teenager's video game skills lead to him being recruited for an actual alien war",
+            "poster": "https://image.tmdb.org/t/p/w500/A7oAHTjtYnIEQjJs62IONRufooq.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 11884,
+            "poster_url": "https://image.tmdb.org/t/p/w500/A7oAHTjtYnIEQjJs62IONRufooq.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The late 1990s saw several attempts to capitalize on both video game properties and space combat films, inspired by the success of <a href=\"/movie/602\" class=\"movie-title\" data-tmdb-id=\"602\">Independence Day</a> (1996). Films like <a href=\"/movie/2157\" class=\"movie-title\" data-tmdb-id=\"2157\">Lost in Space</a> (1998) and <a href=\"/movie/9425\" class=\"movie-title\" data-tmdb-id=\"9425\">Soldier</a> (1998) tried to merge practical effects with early CGI, often with mixed results. Wing Commander particularly suffered from dated visual effects that paled in comparison to contemporaries like Star Wars Episode I: The Phantom Menace (1999). SUBHEAD: The Video Game Movie Curse"
+      },
+      {
+        "type": "text",
+        "content": "The failure of Wing Commander reinforced Hollywood's struggle with video game adaptations, a curse that wouldn't be meaningfully broken until Detective Pikachu (2019) and <a href=\"/movie/454626\" class=\"movie-title\" data-tmdb-id=\"454626\">Sonic the Hedgehog</a> (2020). The film's attempts to ground its space opera in a WWII naval warfare aesthetic - a key element of the original games - came across as derivative of better space combat films like <a href=\"/movie/11\" class=\"movie-title\" data-tmdb-id=\"11\">Star Wars</a> (1977) and <a href=\"/movie/11884\" class=\"movie-title\" data-tmdb-id=\"11884\">The Last Starfighter</a> (1984)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Video Game Film Adaptations",
+      "Space Combat in 1990s Cinema",
+      "Chris Roberts' Transition from Games to Film",
+      "Practical vs CGI Effects in Late 90s Sci-Fi",
+      "The Influence of WWII Films on Space Opera"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Event Horizon",
+          "year": 1997,
+          "slug": "Horror meets sci-fi in this cult classic about a haunted spaceship",
+          "poster": "https://image.tmdb.org/t/p/w500/cHoeg3gAD5w63Et5DImY1Jb7HaO.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 8413,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cHoeg3gAD5w63Et5DImY1Jb7HaO.jpg"
+        },
+        {
+          "title": "Soldier",
+          "year": 1998,
+          "slug": "Kurt Russell stars as a discarded super soldier finding new purpose",
+          "poster": "https://image.tmdb.org/t/p/w500/rYy5m4nnjdlvB6dyGkP9ELZbUZz.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 9425,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rYy5m4nnjdlvB6dyGkP9ELZbUZz.jpg"
+        },
+        {
+          "title": "Lost in Space",
+          "year": 1998,
+          "slug": "Big-budget adaptation of the classic TV series",
+          "poster": "https://image.tmdb.org/t/p/w500/fCocPDUFuKswY2GxDdfYsT9BXMd.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 2157,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fCocPDUFuKswY2GxDdfYsT9BXMd.jpg"
+        },
+        {
+          "title": "Pitch Black",
+          "year": 2000,
+          "slug": "Survivors of a crash landing face deadly nocturnal aliens",
+          "poster": "https://image.tmdb.org/t/p/w500/3AnlxZ5CZnhKKzjgFyY6EHxmOyl.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 2787,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3AnlxZ5CZnhKKzjgFyY6EHxmOyl.jpg"
+        },
+        {
+          "title": "Galaxy Quest",
+          "year": 1999,
+          "slug": "Brilliant satire of sci-fi TV shows and their fans",
+          "poster": "https://image.tmdb.org/t/p/w500/fZXSwgZknp81vmciTb86rw0MejV.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 926,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fZXSwgZknp81vmciTb86rw0MejV.jpg"
+        },
+        {
+          "title": "Titan A.E.",
+          "year": 2000,
+          "slug": "Animated sci-fi about humanity's survival after Earth's destruction",
+          "poster": "https://image.tmdb.org/t/p/w500/el2iHk3LTJWfEnwrvcRkvWY501G.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 7450,
+          "poster_url": "https://image.tmdb.org/t/p/w500/el2iHk3LTJWfEnwrvcRkvWY501G.jpg"
+        },
+        {
+          "title": "Final Fantasy: The Spirits Within",
+          "year": 2001,
+          "slug": "Groundbreaking but financially disastrous CGI animated sci-fi",
+          "poster": "https://image.tmdb.org/t/p/w500/phYEy6Am7vRlr9KzMb0wbGMHTzz.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 2114,
+          "poster_url": "https://image.tmdb.org/t/p/w500/phYEy6Am7vRlr9KzMb0wbGMHTzz.jpg"
+        },
+        {
+          "title": "Mission to Mars",
+          "year": 2000,
+          "slug": "Astronauts encounter mysteries on the red planet",
+          "poster": "https://image.tmdb.org/t/p/w500/cTKWoBpN5Gvi0vpMb9mLtYlwXqT.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 2067,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cTKWoBpN5Gvi0vpMb9mLtYlwXqT.jpg"
+        },
+        {
+          "title": "Red Planet",
+          "year": 2000,
+          "slug": "Val Kilmer leads a mission to terraform Mars",
+          "poster": "https://image.tmdb.org/t/p/w500/6svTVlVEJDoOOEz1G09HLeb7vtF.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 8870,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6svTVlVEJDoOOEz1G09HLeb7vtF.jpg"
+        },
+        {
+          "title": "Supernova",
+          "year": 2000,
+          "slug": "Rescue mission in deep space leads to supernatural horror",
+          "poster": "https://image.tmdb.org/t/p/w500/AmHGUjhgXnOYRYrF2ZYMtzfwxPe.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 10384,
+          "poster_url": "https://image.tmdb.org/t/p/w500/AmHGUjhgXnOYRYrF2ZYMtzfwxPe.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,186 @@
+{
+  "props": {
+    "title": "One Day",
+    "year": 2011,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/iWPwEkIDAihT5EDPZxFmhtyVrtj.jpg",
+    "initialStreaming": null,
+    "tmdbId": 51828,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**One Day** (2011) adapts David Nicholls' beloved novel into a bittersweet romance spanning two decades, following Emma (Anne Hathaway) and Dexter (Jim Sturgess) through yearly snapshots on July 15th. The film draws from a rich tradition of time-jumping romances like **When Harry Met Sally** (1989) and **Same Time, Next Year** (1978), using temporal structure to explore how relationships evolve. Director Lone Scherfig, fresh off her triumph with **An Education** (2009), brings a European sensibility to the British romance, though some critics argued Hathaway's Yorkshire accent wavered."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "500 Days of Summer",
+            "year": 2009,
+            "slug": "A non-linear romance tracking a relationship's rise and fall through scattered memories",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 19913
+          },
+          {
+            "title": "Before Sunrise",
+            "year": 1995,
+            "slug": "Two strangers spend one magical night walking and talking through Vienna",
+            "poster": "https://image.tmdb.org/t/p/w500/kf1Jb1c2JAOqjuzA3H4oDM263uB.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 76,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kf1Jb1c2JAOqjuzA3H4oDM263uB.jpg"
+          },
+          {
+            "title": "Brief Encounter",
+            "year": 1945,
+            "slug": "A chance meeting leads to an impossible romance between two married people",
+            "poster": "https://image.tmdb.org/t/p/w500/jC9EwLJcGhYMSQAHu2LxkKN5v7O.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 851,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jC9EwLJcGhYMSQAHu2LxkKN5v7O.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's strength lies in capturing life's pivotal moments through its unique structural device. Like **Sliding Doors** (1998) and **La La Land** (2016), it explores how timing shapes destiny. The yearly check-ins allow us to watch Emma and Dexter grow, sometimes together, often apart, reflecting the messy reality of how relationships actually develop. This narrative approach influenced later works like **Long Story Short** (2021) and Netflix's **Love Per Square Foot** (2018)."
+      },
+      {
+        "type": "text",
+        "content": "Scherfig's direction excels in period authenticity, tracking the changing fashions and cultural touchstones from the late 1980s through the 2000s. The film shares DNA with British coming-of-age dramas like **An Education** (2009) and **Starter for 10** (2006), examining class differences and youthful ambition in post-Thatcher Britain. Patricia Clarkson delivers a standout supporting performance as Dexter's mother, creating a touching subplot that anchors the film's themes of time and loss. SUBHEAD: Romance Across Time"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "About Time",
+            "year": 2013,
+            "slug": "A man uses inherited time travel abilities to perfect his love life, only to learn what truly matters",
+            "poster": "https://image.tmdb.org/t/p/w500/iR1bVfURbN7r1C46WHFbwCkVve.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 122906,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iR1bVfURbN7r1C46WHFbwCkVve.jpg"
+          },
+          {
+            "title": "The Time Traveler's Wife",
+            "year": 2009,
+            "slug": "A love story complicated by involuntary time travel explores destiny and choice",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 24420
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's impact on contemporary romance storytelling can't be understated. Its influence can be seen in works like **Love, Rosie** (2014) and **Five Feet Apart** (2019), which similarly explore how time and circumstance keep potential lovers apart. The yearly structure has become something of a subgenre itself, with films like **New Year's Eve** (2011) and **Valentine's Day** (2010) adopting similar date-based frameworks, though with less emotional depth."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of British Romantic Cinema Post-1990",
+      "Time as a Narrative Device in Romance Films",
+      "Literary Adaptations in Contemporary Cinema",
+      "Anne Hathaway's Career-Defining Roles",
+      "Lone Scherfig's Directorial Style"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Notting Hill",
+          "year": 1999,
+          "slug": "A bookshop owner's life changes when he meets a famous American actress",
+          "poster": "https://image.tmdb.org/t/p/w500/hHRIf2XHeQMbyRb3HUx19SF5Ujw.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 509,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hHRIf2XHeQMbyRb3HUx19SF5Ujw.jpg"
+        },
+        {
+          "title": "Four Weddings and a Funeral",
+          "year": 1994,
+          "slug": "A group of friends navigate love and loss through various social occasions",
+          "poster": "https://image.tmdb.org/t/p/w500/qa72G2VS0bpxms6yo0tI9vsHm2e.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 712,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qa72G2VS0bpxms6yo0tI9vsHm2e.jpg"
+        },
+        {
+          "title": "Bridget Jones's Diary",
+          "year": 2001,
+          "slug": "A woman chronicles her romantic misadventures over the course of a year",
+          "poster": "https://image.tmdb.org/t/p/w500/dkauRl9TosBFikftrC3OVcKWDoz.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 634,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dkauRl9TosBFikftrC3OVcKWDoz.jpg"
+        },
+        {
+          "title": "Me Before You",
+          "year": 2016,
+          "slug": "A caregiver forms an unexpected bond with her quadriplegic patient",
+          "poster": "https://image.tmdb.org/t/p/w500/Ia3dzj5LnCj1ZBdlVeJrbKJQxG.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 296096,
+          "poster_url": "https://image.tmdb.org/t/p/w500/Ia3dzj5LnCj1ZBdlVeJrbKJQxG.jpg"
+        },
+        {
+          "title": "Atonement",
+          "year": 2007,
+          "slug": "A lie tears apart two lovers across decades of British history",
+          "poster": "https://image.tmdb.org/t/p/w500/hMRIyBjPzxaSXWM06se3OcNjIQa.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 4347,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hMRIyBjPzxaSXWM06se3OcNjIQa.jpg"
+        },
+        {
+          "title": "Eternal Sunshine of the Spotless Mind",
+          "year": 2004,
+          "slug": "Former lovers undergo a procedure to erase their memories of each other",
+          "poster": "https://image.tmdb.org/t/p/w500/5MwkWH9tYHv3mV9OdYTMR5qreIz.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 38,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5MwkWH9tYHv3mV9OdYTMR5qreIz.jpg"
+        },
+        {
+          "title": "The Notebook",
+          "year": 2004,
+          "slug": "An epic love story told through flashbacks of a young couple's passionate romance",
+          "poster": "https://image.tmdb.org/t/p/w500/rNzQyW4f8B8cQeg7Dgj3n6eT5k9.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 11036,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rNzQyW4f8B8cQeg7Dgj3n6eT5k9.jpg"
+        },
+        {
+          "title": "The Lake House",
+          "year": 2006,
+          "slug": "Two people living two years apart fall in love through letters left in a mailbox",
+          "poster": "https://image.tmdb.org/t/p/w500/tHpc1118dYWLnHZleGhwZxRbpae.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 2044,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tHpc1118dYWLnHZleGhwZxRbpae.jpg"
+        },
+        {
+          "title": "P.S. I Love You",
+          "year": 2007,
+          "slug": "A widow discovers her late husband has left her messages to help her move forward",
+          "poster": "https://image.tmdb.org/t/p/w500/x6M9nlTpgpI4AOw0tMkOAVbhL5z.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 6023,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x6M9nlTpgpI4AOw0tMkOAVbhL5z.jpg"
+        },
+        {
+          "title": "Two for the Road",
+          "year": 1967,
+          "slug": "A couple's relationship is examined through various road trips across different times",
+          "poster": "https://image.tmdb.org/t/p/w500/f9GAaL5gXzSP8LhXJcAx8Remfy3.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 5767,
+          "poster_url": "https://image.tmdb.org/t/p/w500/f9GAaL5gXzSP8LhXJcAx8Remfy3.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

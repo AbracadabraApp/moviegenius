@@ -1,0 +1,185 @@
+{
+  "props": {
+    "title": "Farmageddon",
+    "year": 2011,
+    "initialSlug": "When the crops attack.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/2MGr8ZDGPbyaFs9cgRo0OGuEQ8x.jpg",
+    "initialStreaming": null,
+    "tmdbId": 97008,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Farmageddon** (2011) represents a pivotal moment in food industry documentaries, following the investigative path blazed by **Food, Inc.** (2008). Director Kristin Canty crafts a searing exposé of government raids on small family farms, revealing the stark power dynamics between agricultural regulators and local food producers. The film's raw footage of armed agents storming small dairy operations hits harder than polished corporate documentaries, drawing clear parallels to earlier whistleblowing docs like **The Future of Food** (2004)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Food Inc.",
+            "year": 2008,
+            "slug": "Essential documentary exposing the industrial food system's dark side and corporate control",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 18570
+          },
+          {
+            "title": "King Corn",
+            "year": 2007,
+            "slug": "Two friends grow an acre of corn to trace America's most subsidized crop through the food system",
+            "poster": "https://image.tmdb.org/t/p/w500/zVHWzV9o2FU1SasNxuiJMW2FY0V.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 15281,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zVHWzV9o2FU1SasNxuiJMW2FY0V.jpg"
+          },
+          {
+            "title": "Fresh",
+            "year": 2009,
+            "slug": "Celebrates farmers and entrepreneurs reinventing our food system through sustainable practices",
+            "poster": "https://image.tmdb.org/t/p/w500/dZVkiMi2J2CjikwFLtMJJneckUi.jpg",
+            "initialStreaming": "PlutoTV",
+            "tmdb_id": 52406,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dZVkiMi2J2CjikwFLtMJJneckUi.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The wave of food system documentaries in the late 2000s marked a crucial shift in public awareness. **Food Fight** (2008) chronicled California's local food revolution, while <a href=\"/movie/52406\" class=\"movie-title\">Fresh</a> (2009) highlighted innovative farmers creating sustainable alternatives. These films share Farmageddon's grassroots energy but take less confrontational approaches to advocating change."
+      },
+      {
+        "type": "text",
+        "content": "Canty's personal stake as a mother seeking raw milk for her allergic son gives Farmageddon emotional weight missing from more academic food docs. This personal narrative approach influenced later films like <a href=\"/movie/250657\" class=\"movie-title\">Fed Up</a> (2014) and **What the Health** (2017), though these focused more on nutrition and corporate influence than government overreach. SUBHEAD: Impact on Agricultural Policy Documentation"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Fed Up",
+            "year": 2014,
+            "slug": "Katie Couric investigates the sugar industry and childhood obesity epidemic",
+            "poster": "https://image.tmdb.org/t/p/w500/qwsR5gwz6RYch4LtxtN8FdMPATC.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 250657,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qwsR5gwz6RYch4LtxtN8FdMPATC.jpg"
+          },
+          {
+            "title": "GMO OMG",
+            "year": 2013,
+            "slug": "A father investigates GMOs' impact on our children, health and planet",
+            "poster": "https://image.tmdb.org/t/p/w500/qMCHeiycPoxh8NnJ4YtEDuG1FtE.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 168864,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qMCHeiycPoxh8NnJ4YtEDuG1FtE.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Farmageddon helped spark a new wave of regulatory-focused food documentaries. **More Than Honey** (2012) examined bee colony collapse and pesticide regulations, while **Seeds of Death** (2012) investigated GMO oversight. These films share Farmageddon's skepticism of government agencies but expand beyond dairy to broader agricultural policy issues."
+      }
+    ],
+    "exploreFurther": [
+      "History of FDA raids on small farms and food producers",
+      "Raw milk movement and state-by-state regulations",
+      "Impact of food safety regulations on small-scale farming",
+      "Alternative food distribution systems and farmer co-ops",
+      "Evolution of food documentary filmmaking techniques"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The World According to Monsanto",
+          "year": 2008,
+          "slug": "Investigation of the biotech giant's influence on global agriculture",
+          "poster": "https://image.tmdb.org/t/p/w500/lOv3zZWY1XS3SNIwJJ8AiqOTmRB.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 27865,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lOv3zZWY1XS3SNIwJJ8AiqOTmRB.jpg"
+        },
+        {
+          "title": "Food Matters",
+          "year": 2008,
+          "slug": "Examining the links between modern food industry and health problems",
+          "poster": "https://image.tmdb.org/t/p/w500/g1u0Mf4VKKklC8fKsvAh5n5pk8T.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 26018,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g1u0Mf4VKKklC8fKsvAh5n5pk8T.jpg"
+        },
+        {
+          "title": "Ingredients",
+          "year": 2009,
+          "slug": "Exploring the local food movement across America",
+          "poster": "https://image.tmdb.org/t/p/w500/nYu0wIcIKCcXxghyTg1J42mKirU.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 83653,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nYu0wIcIKCcXxghyTg1J42mKirU.jpg"
+        },
+        {
+          "title": "The Future of Food",
+          "year": 2004,
+          "slug": "Early examination of GMOs and corporate control of agriculture",
+          "poster": "https://image.tmdb.org/t/p/w500/1j001mLedx9b95AVguAezMMUthP.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 25465,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1j001mLedx9b95AVguAezMMUthP.jpg"
+        },
+        {
+          "title": "Food Fight",
+          "year": 2008,
+          "slug": "Chronicles California's food revolution and sustainable agriculture",
+          "poster": "https://image.tmdb.org/t/p/w500/dyUan6H8VzMOjnNmJAAjAutwlwS.jpg",
+          "initialStreaming": "PlutoTV",
+          "tmdb_id": 98616,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dyUan6H8VzMOjnNmJAAjAutwlwS.jpg"
+        },
+        {
+          "title": "Our Daily Bread",
+          "year": 2005,
+          "slug": "Stark visual portrait of industrial food production",
+          "poster": "https://image.tmdb.org/t/p/w500/kdW7HPJqhRQ2HRU9ZurbDbpTyj.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 24565,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kdW7HPJqhRQ2HRU9ZurbDbpTyj.jpg"
+        },
+        {
+          "title": "The Real Dirt on Farmer John",
+          "year": 2005,
+          "slug": "Portrait of an unconventional farmer's struggle to survive",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Docuseek",
+          "tmdb_id": null
+        },
+        {
+          "title": "Symphony of the Soil",
+          "year": 2012,
+          "slug": "Deep dive into soil science and sustainable agriculture",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Vimeo",
+          "tmdb_id": null
+        },
+        {
+          "title": "A Place at the Table",
+          "year": 2012,
+          "slug": "Examining hunger and food insecurity in America",
+          "poster": "https://image.tmdb.org/t/p/w500/ptli8HtDrapZdVdBnYSN8zxJtw0.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 84198,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ptli8HtDrapZdVdBnYSN8zxJtw0.jpg"
+        },
+        {
+          "title": "The Biggest Little Farm",
+          "year": 2018,
+          "slug": "Couple's journey to develop a sustainable farm",
+          "poster": "https://image.tmdb.org/t/p/w500/xpR9OdRibETfuWNrdxStAJDRU7A.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 543084,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xpR9OdRibETfuWNrdxStAJDRU7A.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

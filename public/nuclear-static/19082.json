@@ -1,0 +1,175 @@
+{
+  "props": {
+    "title": "No Direction Home",
+    "year": 2005,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/lqOo4nyRS56Goi8InZqLFKGEJR5.jpg",
+    "initialStreaming": null,
+    "tmdbId": 19082,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Martin Scorsese's No Direction Home stands as the definitive Bob Dylan documentary, masterfully chronicling his explosive rise from Minnesota folk singer to international cultural icon. The film focuses on Dylan's pivotal 1961-1966 period, building from intimate footage of Greenwich Village coffee houses to his controversial \"going electric\" at the 1965 Newport Folk Festival. Scorsese weaves rare archival material with Dylan's most candid interview ever, creating an intimate portrait that influenced later music docs like <a href=\"/movie/331781\" class=\"movie-title\" data-tmdb-id=\"331781\">Amy</a> (2015) and George Harrison: Living in the Material World (2011)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Don't Look Back",
+            "year": 1967,
+            "slug": "D.A. Pennebaker's groundbreaking Dylan documentary capturing his 1965 UK tour and the peak of his acoustic era",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": null
+          },
+          {
+            "title": "I'm Not There",
+            "year": 2007,
+            "slug": "Todd Haynes' experimental biopic with six different actors playing Dylan personas",
+            "poster": "https://image.tmdb.org/t/p/w500/bucgvB7gQqcl1m71efHkenfIMTj.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 3902,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bucgvB7gQqcl1m71efHkenfIMTj.jpg"
+          },
+          {
+            "title": "Inside Llewyn Davis",
+            "year": 2013,
+            "slug": "Coen Brothers' portrait of the 1960s Greenwich Village folk scene Dylan emerged from",
+            "poster": "https://image.tmdb.org/t/p/w500/nNxK3pC3DMpPpWKMvo2p3liREVT.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 86829,
+            "poster_url": "https://image.tmdb.org/t/p/w500/nNxK3pC3DMpPpWKMvo2p3liREVT.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film masterfully contextualizes Dylan's artistic evolution through America's turbulent 1960s landscape. His transformation parallels the decade's radical shifts, from civil rights anthems to psychedelic rock poetry. This revolutionary artist portrait approach influenced later works like <a href=\"/movie/319075\" class=\"movie-title\" data-tmdb-id=\"319075\">Kurt Cobain: Montage of Heck</a> (2015) and <a href=\"/movie/318044\" class=\"movie-title\" data-tmdb-id=\"318044\">What Happened, Miss Simone?</a> (2015), which similarly frame musical innovation within social upheaval."
+      },
+      {
+        "type": "text",
+        "content": "Scorsese's documentary technique here refined the music biography format. Rather than a cradle-to-grave timeline, he zeroes in on Dylan's most creatively explosive period. This focused approach later shaped films like Summer of Soul (2021) and The Beatles: Get Back (2021), which dive deep into specific revolutionary moments rather than attempting complete life stories. SUBHEAD: Impact on Modern Music Documentary Style"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Rolling Thunder Revue",
+            "year": 2019,
+            "slug": "Scorsese's playful doc about Dylan's 1975 tour, mixing fact and fiction",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "No Direction Home revolutionized how documentarians approach music legends. The film's extensive use of archival footage, contemporary interviews, and cultural context created a template followed by <a href=\"/movie/84334\" class=\"movie-title\" data-tmdb-id=\"84334\">Searching for Sugar Man</a> (2012) and <a href=\"/movie/159014\" class=\"movie-title\" data-tmdb-id=\"159014\">20 Feet from Stardom</a> (2013). Scorsese's patient, detailed exploration of artistic evolution showed how deep music documentaries could go beyond simple biography."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Folk Music in Greenwich Village 1961-1965",
+      "Documentary Techniques in Music Biography Films",
+      "Bob Dylan's Influence on 1960s Counterculture",
+      "Scorsese's Music Documentary Style",
+      "The Impact of \"Going Electric\" on Folk Music"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Festival",
+          "year": 1967,
+          "slug": "Essential document of 1960s folk festival culture",
+          "poster": "https://image.tmdb.org/t/p/w500/opVOkaGWfZqbEt5m6AlVMTtvNVs.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 16247,
+          "poster_url": "https://image.tmdb.org/t/p/w500/opVOkaGWfZqbEt5m6AlVMTtvNVs.jpg"
+        },
+        {
+          "title": "The Last Waltz",
+          "year": 1978,
+          "slug": "Scorsese's legendary concert film of The Band's farewell show",
+          "poster": "https://image.tmdb.org/t/p/w500/2K7CFH0AIHnGrA4yQjPCoIB5CmQ.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 13963,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2K7CFH0AIHnGrA4yQjPCoIB5CmQ.jpg"
+        },
+        {
+          "title": "Jazz on a Summer's Day",
+          "year": 1959,
+          "slug": "Revolutionary concert film that influenced music documentary style",
+          "poster": "https://image.tmdb.org/t/p/w500/ltdAJF4sVIRAOJmHIUzfLylrVRr.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 53434,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ltdAJF4sVIRAOJmHIUzfLylrVRr.jpg"
+        },
+        {
+          "title": "Gimme Shelter",
+          "year": 1970,
+          "slug": "Maysles Brothers' dark portrait of end of 1960s optimism",
+          "poster": "https://image.tmdb.org/t/p/w500/6Cem6KcIClKit3KhKYou4aXFxob.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 132,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6Cem6KcIClKit3KhKYou4aXFxob.jpg"
+        },
+        {
+          "title": "Woodstock",
+          "year": 1970,
+          "slug": "Definitive document of the legendary festival",
+          "poster": "https://image.tmdb.org/t/p/w500/cnfhelfQucSb4Y54yFgtnSNhsAT.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 9459,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cnfhelfQucSb4Y54yFgtnSNhsAT.jpg"
+        },
+        {
+          "title": "The Other Side of the Mirror",
+          "year": 2007,
+          "slug": "Dylan's Newport Folk Festival performances 1963-1965",
+          "poster": "https://image.tmdb.org/t/p/w500/dhHAENGZFOMz5m9os0QQRLMb4Ha.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 103298,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dhHAENGZFOMz5m9os0QQRLMb4Ha.jpg"
+        },
+        {
+          "title": "Bob Dylan: Odds and Ends",
+          "year": 2021,
+          "slug": "Compilation of rare footage and outtakes",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Beatles Anthology",
+          "year": 1995,
+          "slug": "Comprehensive documentary series about the Beatles",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Once Were Brothers",
+          "year": 2019,
+          "slug": "Story of The Band and their connection to Dylan",
+          "poster": "https://image.tmdb.org/t/p/w500/qoFtcyLh78L6H6X6Yyxwc7FtZLq.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 617771,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qoFtcyLh78L6H6X6Yyxwc7FtZLq.jpg"
+        },
+        {
+          "title": "Joan Baez: How Sweet the Sound",
+          "year": 2009,
+          "slug": "Portrait of Dylan's contemporary and former partner",
+          "poster": "https://image.tmdb.org/t/p/w500/nEIdsO2xLsc8qnFQVyVfTC5cdey.jpg",
+          "initialStreaming": "PBS",
+          "tmdb_id": 272977,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nEIdsO2xLsc8qnFQVyVfTC5cdey.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

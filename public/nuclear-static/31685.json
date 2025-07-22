@@ -1,0 +1,176 @@
+{
+  "props": {
+    "title": "The Hunchback of Notre Dame",
+    "year": 1939,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/m6fsyHeqSQs4tktk9q3awgo7IzF.jpg",
+    "initialStreaming": null,
+    "tmdbId": 31685,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Charles Laughton's transformative performance in The Hunchback of Notre Dame represents Hollywood's most compelling adaptation of Victor Hugo's Gothic novel. Director William Dieterle crafted a haunting vision of 15th century Paris, with RKO Pictures investing heavily in elaborate cathedral sets that remain impressive even by today's standards. The film follows earlier adaptations like Lon Chaney's silent version The Hunchback of Notre Dame, but elevates the material through its combination of German Expressionist shadows and humanitarian themes that resonated deeply in 1939's pre-war climate."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Hunchback of Notre Dame",
+            "year": 1923,
+            "slug": "Lon Chaney's legendary silent film version featuring groundbreaking makeup and physical performance",
+            "poster": "https://image.tmdb.org/t/p/w500/3oheTQrTuqS1jPUW6GOc65ZbM5u.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 18987,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3oheTQrTuqS1jPUW6GOc65ZbM5u.jpg"
+          },
+          {
+            "title": "Beauty and the Beast",
+            "year": 1946,
+            "slug": "Jean Cocteau's surreal French adaptation of the fairy tale explores similar themes of inner beauty",
+            "poster": "https://image.tmdb.org/t/p/w500/iYSe3yrkma0e1B0wWPXgr8w5sDN.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 648,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iYSe3yrkma0e1B0wWPXgr8w5sDN.jpg"
+          },
+          {
+            "title": "Phantom of the Opera",
+            "year": 1925,
+            "slug": "Another Lon Chaney Gothic masterpiece set in the Paris Opera House",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 964
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of prejudice and persecution proved particularly potent given its 1939 release, as Europe stood on the brink of WWII. Laughton's sympathetic portrayal of Quasimodo transformed the character from mere monster to tragic hero, while Maureen O'Hara made her American film debut as the enchanting Esmeralda. The production design by Van Nest Polglase created a medieval Paris that influenced Gothic cinema for decades, seen in later films like <a href=\"/movie/192\" class=\"movie-title\" data-tmdb-id=\"192\">The Name of the Rose</a> (1986) and <a href=\"/movie/6312\" class=\"movie-title\" data-tmdb-id=\"6312\">Brotherhood of the Wolf</a> (2001)."
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends beyond horror and Gothic genres into broader explorations of outcasts and societal prejudice, paving the way for films like <a href=\"/movie/11177\" class=\"movie-title\" data-tmdb-id=\"11177\">Mask</a> (1985) and <a href=\"/movie/162\" class=\"movie-title\" data-tmdb-id=\"162\">Edward Scissorhands</a> (1990). The masterful use of shadow and architecture draws from German Expressionist techniques seen in <a href=\"/movie/234\" class=\"movie-title\">The Cabinet of Dr. Caligari</a> (1920), while the religious imagery and moral complexity influenced later religious epics like <a href=\"/movie/43516\" class=\"movie-title\" data-tmdb-id=\"43516\">The Song of Bernadette</a> (1943). SUBHEAD: Gothic Architecture as Character"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Cabinet of Dr. Caligari",
+            "year": 1920,
+            "slug": "Landmark German Expressionist film that influenced Gothic cinema's visual style",
+            "poster": "https://image.tmdb.org/t/p/w500/myK9DeIsXWGKgUTZyGXg2IfFk0W.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 234,
+            "poster_url": "https://image.tmdb.org/t/p/w500/myK9DeIsXWGKgUTZyGXg2IfFk0W.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "RKO's recreation of Notre Dame Cathedral serves as more than mere backdrop - it becomes a character itself, with Quasimodo's bell tower sanctuary representing both prison and protection. This architectural emphasis influenced later films like <a href=\"/movie/1092\" class=\"movie-title\" data-tmdb-id=\"1092\">The Third Man</a> (1949) and <a href=\"/movie/2666\" class=\"movie-title\" data-tmdb-id=\"2666\">Dark City</a> (1998), where built environments shape character psychology and narrative tension. The film's innovative use of forced perspective and miniatures established techniques that would influence everything from <a href=\"/movie/15\" class=\"movie-title\" data-tmdb-id=\"15\">Citizen Kane</a> (1941) to modern Gothic fantasies."
+      }
+    ],
+    "exploreFurther": [
+      "German Expressionism's influence on Hollywood Gothic cinema",
+      "Religious symbolism and moral complexity in 1930s Hollywood",
+      "The evolution of movie makeup effects from Lon Chaney to modern times",
+      "Architectural symbolism in Gothic cinema",
+      "Victor Hugo adaptations across cinema history"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Dracula",
+          "year": 1931,
+          "slug": "Bela Lugosi's iconic vampire tale utilizing similar Gothic architecture",
+          "poster": "https://image.tmdb.org/t/p/w500/ueVSPt7vAba0XScHWTDWS5tNxYX.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 138,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ueVSPt7vAba0XScHWTDWS5tNxYX.jpg"
+        },
+        {
+          "title": "Frankenstein",
+          "year": 1931,
+          "slug": "James Whale's sympathetic monster story",
+          "poster": "https://image.tmdb.org/t/p/w500/mu6wHwH0IwCCaEYtpqujuPJYat1.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 3035,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mu6wHwH0IwCCaEYtpqujuPJYat1.jpg"
+        },
+        {
+          "title": "Notre-Dame de Paris",
+          "year": 1956,
+          "slug": "French adaptation starring Gina Lollobrigida",
+          "poster": "https://image.tmdb.org/t/p/w500/ds4pCq0GOEarBHI35bYSN2PC0KQ.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 11594,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ds4pCq0GOEarBHI35bYSN2PC0KQ.jpg"
+        },
+        {
+          "title": "The Elephant Man",
+          "year": 1980,
+          "slug": "David Lynch's sympathetic portrayal of a disfigured man",
+          "poster": "https://image.tmdb.org/t/p/w500/u0wpPYjuSt8DIe1Y3Vapnh8jcKE.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 1955,
+          "poster_url": "https://image.tmdb.org/t/p/w500/u0wpPYjuSt8DIe1Y3Vapnh8jcKE.jpg"
+        },
+        {
+          "title": "Beauty and the Beast",
+          "year": 1991,
+          "slug": "Disney's animated take on similar themes",
+          "poster": "https://image.tmdb.org/t/p/w500/hUJ0UvQ5tgE2Z9WpfuduVSdiCiU.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 10020,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hUJ0UvQ5tgE2Z9WpfuduVSdiCiU.jpg"
+        },
+        {
+          "title": "Nosferatu",
+          "year": 1922,
+          "slug": "Influential German vampire film",
+          "poster": "https://image.tmdb.org/t/p/w500/zv7J85D8CC9qYagAEhPM63CIG6j.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 653,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zv7J85D8CC9qYagAEhPM63CIG6j.jpg"
+        },
+        {
+          "title": "The Phantom of the Opera",
+          "year": 2004,
+          "slug": "Musical adaptation of similar Gothic romance",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Les Miserables",
+          "year": 1935,
+          "slug": "Another major Victor Hugo adaptation",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 43893
+        },
+        {
+          "title": "Quasimodo d'El Paris",
+          "year": 1999,
+          "slug": "Modern French retelling",
+          "poster": "https://image.tmdb.org/t/p/w500/nRKP7d7NlBQCquqxMwfhZuEJs2k.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 61405,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nRKP7d7NlBQCquqxMwfhZuEJs2k.jpg"
+        },
+        {
+          "title": "The Black Cat",
+          "year": 1934,
+          "slug": "Universal horror utilizing Gothic architecture",
+          "poster": "https://image.tmdb.org/t/p/w500/QTH3dkeDGTBRBmsY0A7STpsNN4.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 24106,
+          "poster_url": "https://image.tmdb.org/t/p/w500/QTH3dkeDGTBRBmsY0A7STpsNN4.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

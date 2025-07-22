@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "The Maltese Falcon",
+    "year": 1931,
+    "initialSlug": "Murder Follows The Falcon",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/zpE6gucVjusGXSS4lcSjqIWCeAj.jpg",
+    "initialStreaming": null,
+    "tmdbId": 28257,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The definitive film noir The Maltese Falcon - note this is the third and most famous version, not the 1931 original - revolutionized detective cinema through John Huston's razor-sharp direction and Humphrey Bogart's iconic performance as Sam Spade. While the 1931 version with Ricardo Cortez and Bebe Daniels took a more straightforward pre-Code approach, the 1941 adaptation elevated Dashiell Hammett's novel into a masterclass of shadow play, double-crosses, and hardboiled dialogue. The film established many noir conventions: the cynical private eye, the femme fatale, the labyrinthine plot, and expressionistic lighting that would influence everything from <a href=\"/movie/996\" class=\"movie-title\" data-tmdb-id=\"996\">Double Indemnity</a> (1944) to <a href=\"/movie/829\" class=\"movie-title\" data-tmdb-id=\"829\">Chinatown</a> (1974)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Maltese Falcon",
+            "year": 1931,
+            "slug": "The first adaptation of Hammett's novel, starring Ricardo Cortez as a more overtly sexual Sam Spade",
+            "poster": "https://image.tmdb.org/t/p/w500/zpE6gucVjusGXSS4lcSjqIWCeAj.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 28257,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zpE6gucVjusGXSS4lcSjqIWCeAj.jpg"
+          },
+          {
+            "title": "Satan Met a Lady",
+            "year": 1936,
+            "slug": "A comedic remake with Bette Davis, loosely based on the same source material",
+            "poster": "https://image.tmdb.org/t/p/w500/sv7TKzYhq3qybbgTr9Z0Em0BiLj.jpg",
+            "initialStreaming": "Warner Archive",
+            "tmdb_id": 28256,
+            "poster_url": "https://image.tmdb.org/t/p/w500/sv7TKzYhq3qybbgTr9Z0Em0BiLj.jpg"
+          },
+          {
+            "title": "The Maltese Falcon",
+            "year": 1941,
+            "slug": "The definitive noir version with Humphrey Bogart that launched the genre",
+            "poster": "https://image.tmdb.org/t/p/w500/bf4o6Uzw5wqLjdKwRuiDrN1xyvl.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 963,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bf4o6Uzw5wqLjdKwRuiDrN1xyvl.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The 1931 version stands as a fascinating pre-Code artifact, embracing a sexual frankness that would become impossible after 1934's Production Code enforcement. Cortez plays Spade as a womanizing rogue, while Daniels brings a raw sensuality to Ruth Wonderly that Mary Astor would later reimagine as calculated manipulation. Director Roy Del Ruth's straightforward style lacks the expressionist touches Huston would pioneer, but compensates with pre-Code boldness. This earliest adaptation influenced <a href=\"/movie/910\" class=\"movie-title\" data-tmdb-id=\"910\">The Big Sleep</a> (1946) and <a href=\"/movie/1834\" class=\"movie-title\" data-tmdb-id=\"1834\">Murder, My Sweet</a> (1944) in their portrayal of morally ambiguous private eyes. SUBHEAD: Evolution of Detective Cinema"
+      },
+      {
+        "type": "text",
+        "content": "The three versions of The Maltese Falcon chart the evolution of Hollywood's detective genre. The 1931 film belongs to the pre-Code era of direct sexuality and moral ambiguity, while 1936's <a href=\"/movie/28256\" class=\"movie-title\" data-tmdb-id=\"28256\">Satan Met a Lady</a> attempted to transform the material into screwball comedy, prefiguring later genre hybrids like <a href=\"/movie/3529\" class=\"movie-title\" data-tmdb-id=\"3529\">The Thin Man</a> (1934). The 1941 version synthesized German Expressionism with American pulp, creating film noir's template. This progression influenced neo-noir classics like <a href=\"/movie/1847\" class=\"movie-title\" data-tmdb-id=\"1847\">The Long Goodbye</a> (1973) and <a href=\"/movie/78\" class=\"movie-title\" data-tmdb-id=\"78\">Blade Runner</a> (1982), which similarly reimagined detective conventions for their eras."
+      }
+    ],
+    "exploreFurther": [
+      "Pre-Code Hollywood and its freedom to explore adult themes before censorship",
+      "The development of film noir visual style from German Expressionism",
+      "Dashiell Hammett's influence on hardboiled detective fiction and film",
+      "The evolution of the femme fatale character in cinema",
+      "Multiple adaptations of classic detective novels"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Big Sleep",
+          "year": 1946,
+          "slug": "Bogart and Bacall in Raymond Chandler's complex noir",
+          "poster": "https://image.tmdb.org/t/p/w500/lraHo9D8c0YWfxsKqT5P5sVqMKN.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 910,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lraHo9D8c0YWfxsKqT5P5sVqMKN.jpg"
+        },
+        {
+          "title": "Murder My Sweet",
+          "year": 1944,
+          "slug": "Dick Powell as Philip Marlowe in landmark noir",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1834
+        },
+        {
+          "title": "The Thin Man",
+          "year": 1934,
+          "slug": "William Powell and Myrna Loy as sophisticated crime-solving couple",
+          "poster": "https://image.tmdb.org/t/p/w500/6cL89ok9t8xEKboOjOVga2W66jj.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 3529,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6cL89ok9t8xEKboOjOVga2W66jj.jpg"
+        },
+        {
+          "title": "Double Indemnity",
+          "year": 1944,
+          "slug": "Insurance fraud leads to murder in classic noir",
+          "poster": "https://image.tmdb.org/t/p/w500/rVNYZZgfhwqVMMWlBmxOfWqnwCj.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 996,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rVNYZZgfhwqVMMWlBmxOfWqnwCj.jpg"
+        },
+        {
+          "title": "The Lady from Shanghai",
+          "year": 1947,
+          "slug": "Orson Welles noir with famous mirror maze finale",
+          "poster": "https://image.tmdb.org/t/p/w500/whqdqWavNMSoeXTx1X3DauO1LG6.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 3766,
+          "poster_url": "https://image.tmdb.org/t/p/w500/whqdqWavNMSoeXTx1X3DauO1LG6.jpg"
+        },
+        {
+          "title": "Laura",
+          "year": 1944,
+          "slug": "Detective falls for murdered woman's portrait",
+          "poster": "https://image.tmdb.org/t/p/w500/j0zEiFFrdbZnMXqD3piOtZBJeNB.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1939,
+          "poster_url": "https://image.tmdb.org/t/p/w500/j0zEiFFrdbZnMXqD3piOtZBJeNB.jpg"
+        },
+        {
+          "title": "The Big Heat",
+          "year": 1953,
+          "slug": "Glenn Ford as cop fighting corruption",
+          "poster": "https://image.tmdb.org/t/p/w500/n1xdAX2g6PU3aqQXmZtY9gXvvEz.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 14580,
+          "poster_url": "https://image.tmdb.org/t/p/w500/n1xdAX2g6PU3aqQXmZtY9gXvvEz.jpg"
+        },
+        {
+          "title": "Touch of Evil",
+          "year": 1958,
+          "slug": "Welles' baroque border town noir",
+          "poster": "https://image.tmdb.org/t/p/w500/1pvRgmfBaoMczIJBOi9gCOZ4FMC.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1480,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1pvRgmfBaoMczIJBOi9gCOZ4FMC.jpg"
+        },
+        {
+          "title": "Out of the Past",
+          "year": 1947,
+          "slug": "Robert Mitchum can't escape his criminal past",
+          "poster": "https://image.tmdb.org/t/p/w500/lnUK6Cg5ARM0qaq0B5SG20VAM0h.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 678,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lnUK6Cg5ARM0qaq0B5SG20VAM0h.jpg"
+        },
+        {
+          "title": "The Killers",
+          "year": 1946,
+          "slug": "Insurance investigator unravels boxer's murder",
+          "poster": "https://image.tmdb.org/t/p/w500/uXnuc6pW01s1MDwb6QwBWg2JQeX.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 14638,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uXnuc6pW01s1MDwb6QwBWg2JQeX.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

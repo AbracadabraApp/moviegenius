@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "Man Bites Dog",
+    "year": 1992,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/uRVI98a6MxdLkpsXM8LqIM9W7XZ.jpg",
+    "initialStreaming": null,
+    "tmdbId": 10086,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Man Bites Dog revolutionized mockumentary horror with its pitch-black satire of media violence. Shot in grainy black-and-white, this Belgian film follows a documentary crew recording serial killer Ben as he philosophizes between murders. It predated and influenced later found-footage horror like <a href=\"/movie/2667\" class=\"movie-title\" data-tmdb-id=\"2667\">The Blair Witch Project</a> (1999) and <a href=\"/movie/10961\" class=\"movie-title\" data-tmdb-id=\"10961\">Behind the Mask: The Rise of Leslie Vernon</a> (2006). The film's genius lies in making viewers complicit - we laugh at Ben's charismatic monologues, then recoil at brutal violence, forcing us to confront our own voyeuristic entertainment."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Natural Born Killers",
+            "year": 1994,
+            "slug": "Oliver Stone's hyperkinetic media satire follows two lovers on a killing spree who become tabloid celebrities",
+            "poster": "https://image.tmdb.org/t/p/w500/fEKZwT91gxvkAoyPgpNXo8W5fu0.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 241,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fEKZwT91gxvkAoyPgpNXo8W5fu0.jpg"
+          },
+          {
+            "title": "C'est arrivé près de chez vous",
+            "year": 1992,
+            "slug": "Original French title of Man Bites Dog, following a film crew documenting a cheerful serial killer",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": null
+          },
+          {
+            "title": "Behind the Mask: The Rise of Leslie Vernon",
+            "year": 2006,
+            "slug": "Mock documentary about a wannabe slasher villain preparing for his killing spree",
+            "poster": "https://image.tmdb.org/t/p/w500/vie8a3z219Zsw81eAsM58B6VFEn.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 10961,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vie8a3z219Zsw81eAsM58B6VFEn.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film sparked a wave of controversial mockumentaries examining violence and media complicity. <a href=\"/movie/19513\" class=\"movie-title\" data-tmdb-id=\"19513\">Series 7: The Contenders</a> (2001) imagined a reality show where contestants must kill each other, while <a href=\"/movie/25033\" class=\"movie-title\" data-tmdb-id=\"25033\">The Last Horror Movie</a> (2003) featured a serial killer forcing his videographer to document his crimes. These films challenge audience bloodlust by removing the safety buffer of traditional narrative distance. SUBHEAD: Media Complicity and Found Footage Evolution"
+      },
+      {
+        "type": "text",
+        "content": "The documentary crew's gradual corruption from observers to participants marked a crucial evolution in found footage horror. While <a href=\"/movie/8689\" class=\"movie-title\" data-tmdb-id=\"8689\">Cannibal Holocaust</a> (1980) previously explored similar themes, Man Bites Dog's intimate portrait format created a more insidious commentary on media ethics. This influence echoes through films like <a href=\"/movie/27374\" class=\"movie-title\" data-tmdb-id=\"27374\">Lake Mungo</a> (2008) and <a href=\"/movie/123105\" class=\"movie-title\" data-tmdb-id=\"123105\">The Bay</a> (2012), where documentary formats lend credibility to horror."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of found footage horror from Man Bites Dog to modern examples",
+      "Media complicity and the normalization of violence in documentary formats",
+      "Belgian New Wave cinema and its impact on horror",
+      "Mockumentary techniques in true crime storytelling",
+      "The ethics of filming violence and documentary responsibility"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Cannibal Holocaust",
+          "year": 1980,
+          "slug": "Controversial found footage film about a documentary crew in the Amazon",
+          "poster": "https://image.tmdb.org/t/p/w500/7leESXSdb8mgRLsIjWvIMKCH4Qu.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 8689,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7leESXSdb8mgRLsIjWvIMKCH4Qu.jpg"
+        },
+        {
+          "title": "Behind the Mask: The Rise of Leslie Vernon",
+          "year": 2006,
+          "slug": "Mockumentary following an aspiring slasher killer",
+          "poster": "https://image.tmdb.org/t/p/w500/vie8a3z219Zsw81eAsM58B6VFEn.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 10961,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vie8a3z219Zsw81eAsM58B6VFEn.jpg"
+        },
+        {
+          "title": "The Last Horror Movie",
+          "year": 2003,
+          "slug": "Serial killer forces videographer to document his crimes",
+          "poster": "https://image.tmdb.org/t/p/w500/1YJ9N4lbMelJlMK8ykX2WUAR9M9.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 25033,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1YJ9N4lbMelJlMK8ykX2WUAR9M9.jpg"
+        },
+        {
+          "title": "Series 7: The Contenders",
+          "year": 2001,
+          "slug": "Reality show contestants must kill each other to win",
+          "poster": "https://image.tmdb.org/t/p/w500/85tuJxQdjQcec3DTMc9dxwlYYfi.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 19513,
+          "poster_url": "https://image.tmdb.org/t/p/w500/85tuJxQdjQcec3DTMc9dxwlYYfi.jpg"
+        },
+        {
+          "title": "Lake Mungo",
+          "year": 2008,
+          "slug": "Documentary-style supernatural investigation",
+          "poster": "https://image.tmdb.org/t/p/w500/g0zCELYfBfSv8TOGC13buABVN53.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 27374,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g0zCELYfBfSv8TOGC13buABVN53.jpg"
+        },
+        {
+          "title": "The Bay",
+          "year": 2012,
+          "slug": "Found footage ecological horror told through news footage",
+          "poster": "https://image.tmdb.org/t/p/w500/fnmYgr4AOOE09zKa7omPW1FWT8K.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 123105,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fnmYgr4AOOE09zKa7omPW1FWT8K.jpg"
+        },
+        {
+          "title": "What We Do in the Shadows",
+          "year": 2014,
+          "slug": "Mockumentary about vampire roommates",
+          "poster": "https://image.tmdb.org/t/p/w500/a2rD3i3DBMeYbA34rBv6z3B9S3a.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 246741,
+          "poster_url": "https://image.tmdb.org/t/p/w500/a2rD3i3DBMeYbA34rBv6z3B9S3a.jpg"
+        },
+        {
+          "title": "Chronicle",
+          "year": 2012,
+          "slug": "Found footage film about teens with superpowers",
+          "poster": "https://image.tmdb.org/t/p/w500/kdyrdFIt29FUmLIKvedAc2j4rpo.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 76726,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kdyrdFIt29FUmLIKvedAc2j4rpo.jpg"
+        },
+        {
+          "title": "The Taking of Deborah Logan",
+          "year": 2014,
+          "slug": "Documentary crew captures supernatural possession",
+          "poster": "https://image.tmdb.org/t/p/w500/77i7EBUyQKOUiZeYQ5tWDGQb0AI.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 297608,
+          "poster_url": "https://image.tmdb.org/t/p/w500/77i7EBUyQKOUiZeYQ5tWDGQb0AI.jpg"
+        },
+        {
+          "title": "Creep",
+          "year": 2014,
+          "slug": "Videographer answers Craigslist ad with disturbing results",
+          "poster": "https://image.tmdb.org/t/p/w500/qn53D574tT0YRyLgirEFHQwGUXw.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 250574,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qn53D574tT0YRyLgirEFHQwGUXw.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

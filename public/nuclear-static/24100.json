@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "The Little Vampire",
+    "year": 2000,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/zBGfZGKX3KJnljxsX6r24lzRe0i.jpg",
+    "initialStreaming": null,
+    "tmdbId": 24100,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The Little Vampire represents a pivotal moment in children's supernatural cinema, bridging the gap between genuinely spooky content and family-friendly entertainment. Following the success of darker kids' films like <a href=\"/movie/10439\" class=\"movie-title\" data-tmdb-id=\"10439\">Hocus Pocus</a> (1993) and <a href=\"/movie/8839\" class=\"movie-title\" data-tmdb-id=\"8839\">Casper</a> (1995), this adaptation of Angela Sommer-Bodenburg's beloved books struck a delicate balance between Gothic atmosphere and lighthearted adventure. Jonathan Lipnicki, fresh from his <a href=\"/movie/10137\" class=\"movie-title\" data-tmdb-id=\"10137\">Stuart Little</a> (1999) success, brings the same wide-eyed charm to Tony Thompson, an American kid in Scotland who befriends a vampire family."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Little Vampire",
+            "year": 2000,
+            "slug": "A young American boy in Scotland befriends a family of vampires and helps them find an ancient amulet to become human",
+            "poster": "https://image.tmdb.org/t/p/w500/zBGfZGKX3KJnljxsX6r24lzRe0i.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 24100,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zBGfZGKX3KJnljxsX6r24lzRe0i.jpg"
+          },
+          {
+            "title": "Casper",
+            "year": 1995,
+            "slug": "A friendly young ghost forms a bond with a lonely girl while her father tries to exorcise a mansion",
+            "poster": "https://image.tmdb.org/t/p/w500/2ah8fNJFZVU3vcXhU5xfAYi2eym.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 8839,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2ah8fNJFZVU3vcXhU5xfAYi2eym.jpg"
+          },
+          {
+            "title": "Monster House",
+            "year": 2006,
+            "slug": "Three teens discover their neighbor's house is actually a living creature that threatens their community",
+            "poster": "https://image.tmdb.org/t/p/w500/zCRPr4bkO3ae0U1134vJ39xZnAG.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 9297,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zCRPr4bkO3ae0U1134vJ39xZnAG.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film established a template for supernatural children's stories that influenced later works like <a href=\"/movie/9297\" class=\"movie-title\" data-tmdb-id=\"9297\">Monster House</a> (2006) and <a href=\"/movie/77174\" class=\"movie-title\" data-tmdb-id=\"77174\">ParaNorman</a> (2012). Its core themes of friendship across differences and family acceptance resonated particularly well in the early 2000s, when children's cinema was beginning to tackle more complex emotional subjects. The film's Scottish castle setting and practical effects created an authentic Gothic atmosphere that avoided the excessive CGI common in contemporary children's films. SUBHEAD: Impact on Children's Horror Cinema"
+      },
+      {
+        "type": "text",
+        "content": "The Little Vampire helped pave the way for a new wave of kid-friendly horror films that didn't shy away from genuine scares. Films like <a href=\"/movie/14836\" class=\"movie-title\" data-tmdb-id=\"14836\">Coraline</a> (2009) and <a href=\"/movie/62214\" class=\"movie-title\" data-tmdb-id=\"62214\">Frankenweenie</a> (2012) would later build on this foundation, proving that children's cinema could handle darker themes while maintaining heart and humor. The film's treatment of vampires as sympathetic characters, rather than pure antagonists, also influenced later works like <a href=\"/movie/76492\" class=\"movie-title\" data-tmdb-id=\"76492\">Hotel Transylvania</a> (2012)."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Children's Horror Cinema 1990-2010",
+      "Practical Effects vs CGI in Family Films",
+      "Literary Adaptations in Children's Cinema",
+      "Vampire Mythology in Family Entertainment",
+      "Cross-Cultural Elements in Children's Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "ParaNorman",
+          "year": 2012,
+          "slug": "A misunderstood boy who can speak with the dead takes on ghosts, zombies and grown-ups to save his town",
+          "poster": "https://image.tmdb.org/t/p/w500/9DZPtuYTKYxt6vzHvZ5FLThG4fl.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 77174,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9DZPtuYTKYxt6vzHvZ5FLThG4fl.jpg"
+        },
+        {
+          "title": "Coraline",
+          "year": 2009,
+          "slug": "A young girl discovers an alternate version of her life behind a secret door",
+          "poster": "https://image.tmdb.org/t/p/w500/4jeFXQYytChdZYE9JYO7Un87IlW.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 14836,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4jeFXQYytChdZYE9JYO7Un87IlW.jpg"
+        },
+        {
+          "title": "The Spiderwick Chronicles",
+          "year": 2008,
+          "slug": "Three children discover a field guide to fairies while exploring their great-uncle's estate",
+          "poster": "https://image.tmdb.org/t/p/w500/y0zqUbwK8FWIkelnlmnRkntz9F8.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 8204,
+          "poster_url": "https://image.tmdb.org/t/p/w500/y0zqUbwK8FWIkelnlmnRkntz9F8.jpg"
+        },
+        {
+          "title": "Bridge to Terabithia",
+          "year": 2007,
+          "slug": "Two young neighbors create a magical fantasy world to escape their everyday lives",
+          "poster": "https://image.tmdb.org/t/p/w500/3xFxGodKPMFLheS8rujFSmLfcq4.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 1265,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3xFxGodKPMFLheS8rujFSmLfcq4.jpg"
+        },
+        {
+          "title": "The Haunted Mansion",
+          "year": 2003,
+          "slug": "A realtor and his family become trapped in a haunted mansion",
+          "poster": "https://image.tmdb.org/t/p/w500/lGi5yio4pdDz5PkSeZCbnMQz5vK.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 10756,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lGi5yio4pdDz5PkSeZCbnMQz5vK.jpg"
+        },
+        {
+          "title": "Zathura",
+          "year": 2005,
+          "slug": "Two brothers are launched into space while playing a mysterious board game",
+          "poster": "https://image.tmdb.org/t/p/w500/shUtIadbOk8BAWk4FR0LinbBUmR.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 6795,
+          "poster_url": "https://image.tmdb.org/t/p/w500/shUtIadbOk8BAWk4FR0LinbBUmR.jpg"
+        },
+        {
+          "title": "The Last Mimzy",
+          "year": 2007,
+          "slug": "Siblings discover a box of toys sent from the future",
+          "poster": "https://image.tmdb.org/t/p/w500/jnLXcQFx4hSKDNG1P6RMz4v5jje.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 2267,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jnLXcQFx4hSKDNG1P6RMz4v5jje.jpg"
+        },
+        {
+          "title": "The Witches",
+          "year": 1990,
+          "slug": "A young boy and his grandmother confront a coven of witches",
+          "poster": "https://image.tmdb.org/t/p/w500/mPYBjVkeHakkPGY7WaKyyNU4RWm.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10166,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mPYBjVkeHakkPGY7WaKyyNU4RWm.jpg"
+        },
+        {
+          "title": "Lemony Snicket's A Series of Unfortunate Events",
+          "year": 2004,
+          "slug": "Three orphaned children face off against their evil guardian",
+          "poster": "https://image.tmdb.org/t/p/w500/76Xi8z7Whv5WFIdfzzvC5tKSicd.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 11774,
+          "poster_url": "https://image.tmdb.org/t/p/w500/76Xi8z7Whv5WFIdfzzvC5tKSicd.jpg"
+        },
+        {
+          "title": "The Neverending Story",
+          "year": 1984,
+          "slug": "A boy discovers a magical book that draws him into a fantastic world",
+          "poster": "https://image.tmdb.org/t/p/w500/ddYCa91iDXfJCxaqSYzwi2fjfnl.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 34584,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ddYCa91iDXfJCxaqSYzwi2fjfnl.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

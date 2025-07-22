@@ -1,0 +1,159 @@
+{
+  "props": {
+    "title": "Notre Musique",
+    "year": 2004,
+    "initialSlug": "Godard's essay film about war and reconciliation",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/s6wUXAAly1AqJ8GHyHfV0KbbgOU.jpg",
+    "initialStreaming": null,
+    "tmdbId": 26347,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Jean-Luc Godard's Notre Musique represents a pivotal meditation on war, reconciliation, and cinema itself. Structured in three Dantean parts - Hell, Purgatory, and Paradise - the film weaves documentary footage with fictional elements in Godard's signature style. Like his earlier <a href=\"/movie/116403\" class=\"movie-title\" data-tmdb-id=\"116403\">Histoire(s) du cinéma</a> (1988-1998), it interrogates how images shape our understanding of conflict. The Sarajevo sequences, where Godard appears as himself giving a lecture on shot/reverse shot using stills from <a href=\"/movie/3085\" class=\"movie-title\" data-tmdb-id=\"3085\">His Girl Friday</a> (1940), demonstrate how cinema's basic grammar can either unite or divide perspectives."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Hiroshima Mon Amour",
+            "year": 1959,
+            "slug": "Alain Resnais' landmark film about memory and war trauma through a love story between a French actress and Japanese architect",
+            "poster": "https://image.tmdb.org/t/p/w500/vjP7eX9c0xUD5i5dTRaP3NYC8iN.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 5544,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vjP7eX9c0xUD5i5dTRaP3NYC8iN.jpg"
+          },
+          {
+            "title": "Level Five",
+            "year": 1997,
+            "slug": "Chris Marker's experimental documentary exploring the Battle of Okinawa through computer games and historical footage",
+            "poster": "https://image.tmdb.org/t/p/w500/9C0ntn8RXc9U3La2PjUtpLlIEOo.jpg",
+            "initialStreaming": "MUBI",
+            "tmdb_id": 57563,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9C0ntn8RXc9U3La2PjUtpLlIEOo.jpg"
+          },
+          {
+            "title": "The Image Book",
+            "year": 2018,
+            "slug": "Godard's latest essay film examining civilization's relationship with violence and representation",
+            "poster": "https://image.tmdb.org/t/p/w500/5y1mTTYPVvaPeKIVqy3DymE6osv.jpg",
+            "initialStreaming": "MUBI",
+            "tmdb_id": 414030,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5y1mTTYPVvaPeKIVqy3DymE6osv.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of war photography and documentary imagery connects to a broader tradition of French essay films examining historical trauma. Chris Marker's <a href=\"/movie/57563\" class=\"movie-title\" data-tmdb-id=\"57563\">Level Five</a> (1997) similarly uses archival footage to probe warfare's psychological impact, while Alain Resnais' <a href=\"/movie/5544\" class=\"movie-title\" data-tmdb-id=\"5544\">Hiroshima Mon Amour</a> (1959) pioneered the intersection of love story and war meditation that Godard references. The Palestinian-Israeli conflict serves as both literal subject and metaphorical framework, allowing Godard to examine how cinema might foster understanding between opposing viewpoints. SUBHEAD: Visual Poetry and Political Statement"
+      },
+      {
+        "type": "text",
+        "content": "Godard's use of DV video and varied image qualities creates a textural dialogue between formats that echoes the film's themes of reconciliation. This technical approach influenced later essay films like <a href=\"/movie/414030\" class=\"movie-title\" data-tmdb-id=\"414030\">The Image Book</a> (2018) and Jia Zhangke's <a href=\"/movie/29972\" class=\"movie-title\" data-tmdb-id=\"29972\">24 City</a> (2008). The film's middle section in Sarajevo, featuring real intellectuals and artists at a literary conference, blurs the line between documentary and fiction in ways that recall Abbas Kiarostami's <a href=\"/movie/30017\" class=\"movie-title\" data-tmdb-id=\"30017\">Close-Up</a> (1990) while pointing toward contemporary hybrid forms."
+      }
+    ],
+    "exploreFurther": [
+      "The evolution of Godard's political cinema from La Chinoise to Notre Musique",
+      "Essay films and the documentation of historical trauma",
+      "Cinema's role in reconciliation and conflict resolution",
+      "The influence of Dante's Divine Comedy on film structure",
+      "Digital video aesthetics in late-period Godard"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "In the Year of the Pig",
+          "year": 1968,
+          "slug": "Emile de Antonio's Vietnam War documentary",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Germany Year Zero",
+          "year": 1948,
+          "slug": "Rossellini's neorealist examination of post-war Berlin",
+          "poster": "https://image.tmdb.org/t/p/w500/sdxegsjrrvujXvv2GLPENyDlWDI.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 8016,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sdxegsjrrvujXvv2GLPENyDlWDI.jpg"
+        },
+        {
+          "title": "Shoah",
+          "year": 1985,
+          "slug": "Claude Lanzmann's landmark Holocaust documentary",
+          "poster": "https://image.tmdb.org/t/p/w500/8hr8NdnMygKF2Mbu3eDDQCB5lKg.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 42044,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8hr8NdnMygKF2Mbu3eDDQCB5lKg.jpg"
+        },
+        {
+          "title": "The Battle of Algiers",
+          "year": 1966,
+          "slug": "Pontecorvo's revolutionary study of colonial conflict",
+          "poster": "https://image.tmdb.org/t/p/w500/2p3AFtOHFvP6OeVMqlnL1zLKOqL.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 17295,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2p3AFtOHFvP6OeVMqlnL1zLKOqL.jpg"
+        },
+        {
+          "title": "Far from Vietnam",
+          "year": 1967,
+          "slug": "Collaborative anti-war film featuring Godard",
+          "poster": "https://image.tmdb.org/t/p/w500/fwMPDjZKim3BQFomQfPcywwEwOp.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": 36140,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fwMPDjZKim3BQFomQfPcywwEwOp.jpg"
+        },
+        {
+          "title": "Waltz with Bashir",
+          "year": 2008,
+          "slug": "Animated documentary about war trauma",
+          "poster": "https://image.tmdb.org/t/p/w500/zQaCv7lKwHsh0YSHkt1QNjIOZ1c.jpg",
+          "initialStreaming": "Amazon",
+          "tmdb_id": 8885,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zQaCv7lKwHsh0YSHkt1QNjIOZ1c.jpg"
+        },
+        {
+          "title": "Once Upon a Time in Sarajevo",
+          "year": 1994,
+          "slug": "Documentary about siege of Sarajevo",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": null
+        },
+        {
+          "title": "For Ever Mozart",
+          "year": 1996,
+          "slug": "Godard's reflection on Sarajevo and art",
+          "poster": "https://image.tmdb.org/t/p/w500/5TCe8LHpl8aZ9OvGvFkakAYyYlL.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 111367,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5TCe8LHpl8aZ9OvGvFkakAYyYlL.jpg"
+        },
+        {
+          "title": "Film Socialisme",
+          "year": 2010,
+          "slug": "Godard's meditation on European history",
+          "poster": "https://image.tmdb.org/t/p/w500/uokQX94huM68TWyGa0Vm3HlLolR.jpg",
+          "initialStreaming": "MUBI",
+          "tmdb_id": 54083,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uokQX94huM68TWyGa0Vm3HlLolR.jpg"
+        },
+        {
+          "title": "Letter to Jane",
+          "year": 1972,
+          "slug": "Godard-Gorin analysis of Vietnam photo",
+          "poster": "https://image.tmdb.org/t/p/w500/ekloqDjPlHyix7FkblH5X5h8TmR.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 156982,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ekloqDjPlHyix7FkblH5X5h8TmR.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

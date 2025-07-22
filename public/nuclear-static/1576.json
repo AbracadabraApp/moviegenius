@@ -1,0 +1,174 @@
+{
+  "props": {
+    "title": "Resident Evil",
+    "year": 2002,
+    "initialSlug": "Special forces battle zombies in secret lab nightmare",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/uoXZOT9dGDtrZNgOSOOKOXlV4XT.jpg",
+    "initialStreaming": null,
+    "tmdbId": 1576,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Resident Evil launched Hollywood's most successful video game film franchise by smartly blending zombie horror with slick action sequences. Director Paul W.S. Anderson created a more contained story than the sprawling games, focusing on an amnesiac security officer (Milla Jovovich) trapped in an underground facility. The film established a template that later video game adaptations like <a href=\"/movie/588\" class=\"movie-title\" data-tmdb-id=\"588\">Silent Hill</a> (2006) and <a href=\"/movie/8814\" class=\"movie-title\" data-tmdb-id=\"8814\">Doom</a> (2005) would follow - taking core elements from the source material while crafting an original narrative. While purists criticized departures from the games, the film's mix of undead threats, corporate conspiracy, and memorable set pieces like the laser hallway sequence proved commercially successful."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Resident Evil: Apocalypse",
+            "year": 2004,
+            "slug": "Raccoon City falls to the T-virus as Alice gains superhuman abilities",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": null
+          },
+          {
+            "title": "Resident Evil: Extinction",
+            "year": 2007,
+            "slug": "Alice leads survivors across a post-apocalyptic desert wasteland",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": null
+          },
+          {
+            "title": "Resident Evil: Afterlife",
+            "year": 2010,
+            "slug": "The fight against Umbrella goes global with clone armies",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The franchise's evolution mirrors broader shifts in action-horror cinema of the 2000s. While the original maintained claustrophobic tension reminiscent of <a href=\"/movie/679\" class=\"movie-title\" data-tmdb-id=\"679\">Aliens</a> (1986), later entries expanded into post-apocalyptic territory following trends set by <a href=\"/movie/170\" class=\"movie-title\" data-tmdb-id=\"170\">28 Days Later</a> (2002) and <a href=\"/movie/924\" class=\"movie-title\" data-tmdb-id=\"924\">Dawn of the Dead</a> (2004). The series increasingly emphasized elaborate action sequences and superhuman abilities, moving away from survival horror toward superhero-adjacent sci-fi action, particularly evident in Resident Evil: Retribution (2012)."
+      },
+      {
+        "type": "text",
+        "content": "Milla Jovovich's Alice became one of the few enduring female action heroes of the era, alongside characters like <a href=\"/movie/277\" class=\"movie-title\" data-tmdb-id=\"277\">Underworld</a>'s (2003) Selene. The films consistently delivered stylized violence and ambitious set pieces, even as plot coherence diminished. This approach influenced later video game adaptations like <a href=\"/movie/458576\" class=\"movie-title\" data-tmdb-id=\"458576\">Monster Hunter</a> (2020), which similarly prioritized spectacle over strict game accuracy. SUBHEAD: Impact on Video Game Adaptations"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Resident Evil: The Final Chapter",
+            "year": 2016,
+            "slug": "Alice returns to Raccoon City for a final showdown with Umbrella",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The financial success of Resident Evil helped legitimize video game adaptations in Hollywood, paving the way for bigger budgets and more ambitious projects. While critically divisive, the franchise demonstrated that game adaptations could sustain multiple sequels, influencing productions like Silent Hill: Revelation (2012) and <a href=\"/movie/338970\" class=\"movie-title\" data-tmdb-id=\"338970\">Tomb Raider</a> (2018). The 2022 reboot <a href=\"/movie/460458\" class=\"movie-title\" data-tmdb-id=\"460458\">Resident Evil: Welcome to Raccoon City</a> attempted to hew closer to the games' horror roots, showing the lasting influence of the original's premise."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Zombie Cinema Post-2000",
+      "Video Game Adaptations: Success Stories and Failures",
+      "The Rise of Female Action Heroes in Horror-Action Hybrids",
+      "Paul W.S. Anderson's Action-Horror Filmmaking Style",
+      "Visual Effects Evolution in Horror Franchises"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Silent Hill",
+          "year": 2006,
+          "slug": "Psychological horror game adaptation with surreal visuals",
+          "poster": "https://image.tmdb.org/t/p/w500/r0bEDWO2w4a43K2xTNSF284qOsc.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 588,
+          "poster_url": "https://image.tmdb.org/t/p/w500/r0bEDWO2w4a43K2xTNSF284qOsc.jpg"
+        },
+        {
+          "title": "Doom",
+          "year": 2005,
+          "slug": "Marines battle demons on Mars in FPS adaptation",
+          "poster": "https://image.tmdb.org/t/p/w500/nkzyhae9Eb9Eglbi6T5iEuPD6L.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 8814,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nkzyhae9Eb9Eglbi6T5iEuPD6L.jpg"
+        },
+        {
+          "title": "Underworld",
+          "year": 2003,
+          "slug": "Vampires vs werewolves in stylized action horror",
+          "poster": "https://image.tmdb.org/t/p/w500/zsnQ41UZ3jo1wEeemF0eA9cAIU0.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 277,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zsnQ41UZ3jo1wEeemF0eA9cAIU0.jpg"
+        },
+        {
+          "title": "28 Days Later",
+          "year": 2002,
+          "slug": "Viral apocalypse reinvents zombie genre",
+          "poster": "https://image.tmdb.org/t/p/w500/sQckQRt17VaWbo39GIu0TMOiszq.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 170,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sQckQRt17VaWbo39GIu0TMOiszq.jpg"
+        },
+        {
+          "title": "House of the Dead",
+          "year": 2003,
+          "slug": "Arcade game adaptation with zombie action",
+          "poster": "https://image.tmdb.org/t/p/w500/lI6UBnxwHztggSq8PhLibdOe2Nd.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 11059,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lI6UBnxwHztggSq8PhLibdOe2Nd.jpg"
+        },
+        {
+          "title": "BloodRayne",
+          "year": 2005,
+          "slug": "Vampire action based on video game series",
+          "poster": "https://image.tmdb.org/t/p/w500/1xmYrKxBdCgcHgF8m9YUnwthLxF.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 168705,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1xmYrKxBdCgcHgF8m9YUnwthLxF.jpg"
+        },
+        {
+          "title": "Alone in the Dark",
+          "year": 2005,
+          "slug": "Paranormal investigation game adaptation",
+          "poster": "https://image.tmdb.org/t/p/w500/bSxrbVCyWW077zhtpuYlo3zgyug.jpg",
+          "initialStreaming": "Vudu",
+          "tmdb_id": 12142,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bSxrbVCyWW077zhtpuYlo3zgyug.jpg"
+        },
+        {
+          "title": "DOA: Dead or Alive",
+          "year": 2006,
+          "slug": "Martial arts tournament game adaptation",
+          "poster": "https://image.tmdb.org/t/p/w500/gtlai95IERRDgRhPCK0WEuwCRP0.jpg",
+          "initialStreaming": "Pluto TV",
+          "tmdb_id": 9053,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gtlai95IERRDgRhPCK0WEuwCRP0.jpg"
+        },
+        {
+          "title": "Max Payne",
+          "year": 2008,
+          "slug": "Neo-noir video game adaptation with Mark Wahlberg",
+          "poster": "https://image.tmdb.org/t/p/w500/3cWnCG5NyXJYARO2hmNqfbbgrMA.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 13051,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3cWnCG5NyXJYARO2hmNqfbbgrMA.jpg"
+        },
+        {
+          "title": "Prince of Persia",
+          "year": 2010,
+          "slug": "Fantasy adventure based on platforming games",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

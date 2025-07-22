@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "Volcano",
+    "year": 1997,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/5xIjktjXuro7anZ6AR58t5ZYWjQ.jpg",
+    "initialStreaming": null,
+    "tmdbId": 10357,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Volcano erupted during the peak of 90s disaster films, following the massive success of <a href=\"/movie/664\" class=\"movie-title\" data-tmdb-id=\"664\">Twister</a> (1996) and competing directly with <a href=\"/movie/9619\" class=\"movie-title\" data-tmdb-id=\"9619\">Dante's Peak</a> (1997). Tommy Lee Jones leads as the LA emergency chief battling an unprecedented crisis when a volcanic vent opens under Los Angeles. While scientifically dubious, the film delivers intense urban destruction sequences that hold up surprisingly well, mixing practical effects with then-cutting-edge CGI. It follows the disaster movie formula established by <a href=\"/movie/5919\" class=\"movie-title\" data-tmdb-id=\"5919\">The Towering Inferno</a> (1974) and perfected by <a href=\"/movie/602\" class=\"movie-title\" data-tmdb-id=\"602\">Independence Day</a> (1996): multiple storylines, a diverse cast of characters, and escalating catastrophes leading to a heroic finale."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Dante's Peak",
+            "year": 1997,
+            "slug": "Pierce Brosnan stars as a volcanologist trying to save a small town from an awakening volcano. More scientifically accurate than Volcano.",
+            "poster": "https://image.tmdb.org/t/p/w500/6N73uiHHGDBoaAECYc0R39O3fre.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 9619,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6N73uiHHGDBoaAECYc0R39O3fre.jpg"
+          },
+          {
+            "title": "Twister",
+            "year": 1996,
+            "slug": "Storm chasers pursue tornadoes while testing new tracking technology. Pioneered many digital effects techniques.",
+            "poster": "https://image.tmdb.org/t/p/w500/d4ie3f6QTvNw40V770Uzo87SDZn.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 664,
+            "poster_url": "https://image.tmdb.org/t/p/w500/d4ie3f6QTvNw40V770Uzo87SDZn.jpg"
+          },
+          {
+            "title": "San Andreas",
+            "year": 2015,
+            "slug": "The Rock faces a massive earthquake devastating California. Modern take on West Coast disaster scenarios.",
+            "poster": "https://image.tmdb.org/t/p/w500/2Gfjn962aaFSD6eST6QU3oLDZTo.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 254128,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2Gfjn962aaFSD6eST6QU3oLDZTo.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The 1990s disaster revival marked a significant shift in how Hollywood approached catastrophe films. <a href=\"/movie/8656\" class=\"movie-title\" data-tmdb-id=\"8656\">Deep Impact</a> (1998) and <a href=\"/movie/95\" class=\"movie-title\" data-tmdb-id=\"95\">Armageddon</a> (1998) took the destruction global, while Volcano and <a href=\"/movie/9619\" class=\"movie-title\" data-tmdb-id=\"9619\">Dante's Peak</a> kept threats localized but intensely personal. These films established a template still used today in movies like <a href=\"/movie/524047\" class=\"movie-title\" data-tmdb-id=\"524047\">Greenland</a> (2020) and <a href=\"/movie/406759\" class=\"movie-title\" data-tmdb-id=\"406759\">Moonfall</a> (2022): focusing on both the spectacle of destruction and intimate family drama against impossible odds. SUBHEAD: Urban Disaster Films"
+      },
+      {
+        "type": "text",
+        "content": "Volcano sits within a rich tradition of Los Angeles-destruction films, from <a href=\"/movie/11123\" class=\"movie-title\" data-tmdb-id=\"11123\">Earthquake</a> (1974) to <a href=\"/movie/14161\" class=\"movie-title\" data-tmdb-id=\"14161\">2012</a> (2009). The city's unique geography, architecture, and cultural significance make it an ideal setting for disaster scenarios. The film's memorable scene of lava flowing down Wilshire Boulevard taps into primal fears about urban vulnerability, similar to how <a href=\"/movie/435\" class=\"movie-title\" data-tmdb-id=\"435\">The Day After Tomorrow</a> (2004) froze New York and <a href=\"/movie/44943\" class=\"movie-title\" data-tmdb-id=\"44943\">Battle: Los Angeles</a> (2011) turned LA into a war zone."
+      }
+    ],
+    "exploreFurther": [
+      "The Science Behind Volcano Movies: Fact vs Fiction",
+      "Evolution of Disaster Film Special Effects 1970-2000",
+      "Los Angeles as Disaster Movie Setting",
+      "Tommy Lee Jones's Action Hero Career",
+      "1990s Disaster Film Renaissance"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Core",
+          "year": 2003,
+          "slug": "Scientists drill to the Earth's core to restart its rotation",
+          "poster": "https://image.tmdb.org/t/p/w500/iMPR3OFhKNVvJw4eZoRhf9RzfHJ.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 9341,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iMPR3OFhKNVvJw4eZoRhf9RzfHJ.jpg"
+        },
+        {
+          "title": "Pompeii",
+          "year": 2014,
+          "slug": "Ancient Roman gladiator romance during historic volcanic disaster",
+          "poster": "https://image.tmdb.org/t/p/w500/dxxM3lLDjGRC50i5rhvfQziskAN.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 76649,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dxxM3lLDjGRC50i5rhvfQziskAN.jpg"
+        },
+        {
+          "title": "The Day After Tomorrow",
+          "year": 2004,
+          "slug": "Climate change triggers catastrophic global weather events",
+          "poster": "https://image.tmdb.org/t/p/w500/Wr4HeYQRvwVCxzOV5TmGE7UkXq.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 435,
+          "poster_url": "https://image.tmdb.org/t/p/w500/Wr4HeYQRvwVCxzOV5TmGE7UkXq.jpg"
+        },
+        {
+          "title": "2012",
+          "year": 2009,
+          "slug": "Global destruction follows ancient Mayan prediction",
+          "poster": "https://image.tmdb.org/t/p/w500/zaqam2RNscH5ooYFWInV6hjx6y5.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 14161,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zaqam2RNscH5ooYFWInV6hjx6y5.jpg"
+        },
+        {
+          "title": "Deep Impact",
+          "year": 1998,
+          "slug": "Comet threatens Earth as humanity prepares for extinction",
+          "poster": "https://image.tmdb.org/t/p/w500/a3vQS7JKqlOb3MdVJHuTCP9s7Mg.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 8656,
+          "poster_url": "https://image.tmdb.org/t/p/w500/a3vQS7JKqlOb3MdVJHuTCP9s7Mg.jpg"
+        },
+        {
+          "title": "Armageddon",
+          "year": 1998,
+          "slug": "Oil drillers sent to space to stop asteroid hitting Earth",
+          "poster": "https://image.tmdb.org/t/p/w500/eTM3qtGhDU8cvjpoa6KEt5E2auU.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 95,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eTM3qtGhDU8cvjpoa6KEt5E2auU.jpg"
+        },
+        {
+          "title": "Geostorm",
+          "year": 2017,
+          "slug": "Weather control satellites malfunction causing global disasters",
+          "poster": "https://image.tmdb.org/t/p/w500/nrsx0jEaBgXq4PWo7SooSnYJTv.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 274855,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nrsx0jEaBgXq4PWo7SooSnYJTv.jpg"
+        },
+        {
+          "title": "Into the Storm",
+          "year": 2014,
+          "slug": "Storm chasers document massive tornado outbreak",
+          "poster": "https://image.tmdb.org/t/p/w500/kBgrhrES9kMKSPxawUYV61KjlnB.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 216282,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kBgrhrES9kMKSPxawUYV61KjlnB.jpg"
+        },
+        {
+          "title": "Earthquake",
+          "year": 1974,
+          "slug": "Classic disaster film about massive LA earthquake",
+          "poster": "https://image.tmdb.org/t/p/w500/6hJorsInxNpj1dIekh6dK6Kh9S6.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 11123,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6hJorsInxNpj1dIekh6dK6Kh9S6.jpg"
+        },
+        {
+          "title": "The Impossible",
+          "year": 2012,
+          "slug": "True story of family surviving 2004 Indian Ocean tsunami",
+          "poster": "https://image.tmdb.org/t/p/w500/k0DLCiDbnYywOHiISALbl2EH2NE.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 80278,
+          "poster_url": "https://image.tmdb.org/t/p/w500/k0DLCiDbnYywOHiISALbl2EH2NE.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "4 Months, 3 Weeks and 2 Days",
+    "year": 2007,
+    "initialSlug": "Time runs out. Freedom has a price.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/acEtvzFPeOQwbzRWncjRLenhnKV.jpg",
+    "initialStreaming": "AMC+ Amazon Channel, Philo",
+    "tmdbId": 2009,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "4 Months, 3 Weeks and 2 Days stands as a masterwork of Romanian New Wave cinema, delivering an unflinching look at life under Ceaușescu's communist regime. Director Cristian Mungiu crafts a devastating portrait of two college students seeking an illegal abortion, using long takes and stark naturalism that influenced films like <a href=\"/movie/103740\" class=\"movie-title\" data-tmdb-id=\"103740\">Beyond the Hills</a> (2012) and <a href=\"/movie/160118\" class=\"movie-title\" data-tmdb-id=\"160118\">Child's Pose</a> (2013). The film's claustrophobic atmosphere and real-time sequences create unbearable tension, similar to the sustained dread in <a href=\"/movie/31032\" class=\"movie-title\" data-tmdb-id=\"31032\">The Death of Mr. Lazarescu</a> (2005), another Romanian New Wave landmark."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Death of Mr. Lazarescu",
+            "year": 2005,
+            "slug": "A dying man is shuttled between hospitals in this darkly comic indictment of Romanian healthcare",
+            "poster": "https://image.tmdb.org/t/p/w500/c3B7GwMYgNi15VMdcKZawgt6mf5.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 31032,
+            "poster_url": "https://image.tmdb.org/t/p/w500/c3B7GwMYgNi15VMdcKZawgt6mf5.jpg"
+          },
+          {
+            "title": "Beyond the Hills",
+            "year": 2012,
+            "slug": "Two friends reunite at an Orthodox monastery with tragic consequences",
+            "poster": "https://image.tmdb.org/t/p/w500/zV2v5jFXlN2We3GS2IkGQ6e2Bmm.jpg",
+            "initialStreaming": "Mubi",
+            "tmdb_id": 103740,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zV2v5jFXlN2We3GS2IkGQ6e2Bmm.jpg"
+          },
+          {
+            "title": "Child's Pose",
+            "year": 2013,
+            "slug": "A wealthy mother attempts to manipulate her son's manslaughter case",
+            "poster": "https://image.tmdb.org/t/p/w500/eS7eDNgdk9UHbY8ZY3A5w4aI824.jpg",
+            "initialStreaming": "Kanopy",
+            "tmdb_id": 160118,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eS7eDNgdk9UHbY8ZY3A5w4aI824.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Mungiu's technique of using minimal camera movement and extended scenes revolutionized contemporary European cinema. His influence can be seen in works like <a href=\"/movie/221902\" class=\"movie-title\" data-tmdb-id=\"221902\">Two Days, One Night</a> (2014) and <a href=\"/movie/336050\" class=\"movie-title\" data-tmdb-id=\"336050\">Son of Saul</a> (2015), which similarly employ intimate handheld camerawork to create immediate, visceral experiences. The film's exploration of female friendship under systemic oppression connects thematically to works like Never Rarely Sometimes Always (2020) and Happening (2021). SUBHEAD: Impact on Social Realist Cinema"
+      },
+      {
+        "type": "text",
+        "content": "The film's success helped establish a new standard for social realist drama, inspiring works like <a href=\"/movie/336804\" class=\"movie-title\" data-tmdb-id=\"336804\">Mustang</a> (2015) and <a href=\"/movie/664574\" class=\"movie-title\" data-tmdb-id=\"664574\">Silent Night</a> (2021) that examine women's rights and bodily autonomy through an unflinching lens. Mungiu's decision to set the story in 1987 Romania creates powerful parallels with contemporary abortion debates, similar to how <a href=\"/movie/11109\" class=\"movie-title\" data-tmdb-id=\"11109\">Vera Drake</a> (2004) used 1950s Britain to comment on modern reproductive rights issues."
+      }
+    ],
+    "exploreFurther": [
+      "Romanian New Wave Cinema and its Global Impact",
+      "Long Take Cinematography in Contemporary European Film",
+      "Women's Rights in Eastern European Cinema",
+      "Social Realism and Political Commentary in Film",
+      "The Legacy of Communist-Era Romanian Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Graduation",
+          "year": 2016,
+          "slug": "A father's moral compromise threatens his daughter's future",
+          "poster": "https://image.tmdb.org/t/p/w500/5UaMtHDN4OnALvm19KCO0kPMYwm.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 347181,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5UaMtHDN4OnALvm19KCO0kPMYwm.jpg"
+        },
+        {
+          "title": "Tales from the Golden Age",
+          "year": 2009,
+          "slug": "Comic vignettes of life under Romanian communism",
+          "poster": "https://image.tmdb.org/t/p/w500/nZN1CSj8xiSCdO6Tmg2d3YI78vi.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 39376,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nZN1CSj8xiSCdO6Tmg2d3YI78vi.jpg"
+        },
+        {
+          "title": "Police, Adjective",
+          "year": 2009,
+          "slug": "A police officer questions moral duty during surveillance case",
+          "poster": "https://image.tmdb.org/t/p/w500/yiimBQLll8l6SXyNjder7ToilDi.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 32511,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yiimBQLll8l6SXyNjder7ToilDi.jpg"
+        },
+        {
+          "title": "Aurora",
+          "year": 2010,
+          "slug": "A methodical study of a man planning revenge",
+          "poster": "https://image.tmdb.org/t/p/w500/edmR325BbyaP0uMURbDYXejGvnr.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 81527,
+          "poster_url": "https://image.tmdb.org/t/p/w500/edmR325BbyaP0uMURbDYXejGvnr.jpg"
+        },
+        {
+          "title": "Tuesday After Christmas",
+          "year": 2010,
+          "slug": "A man must choose between his wife and lover",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Paper Will Be Blue",
+          "year": 2006,
+          "slug": "Soldiers navigate chaos during Romanian Revolution",
+          "poster": "https://image.tmdb.org/t/p/w500/fJNv3OldnYtKyz7iQ7WVvjykJQW.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 73682,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fJNv3OldnYtKyz7iQ7WVvjykJQW.jpg"
+        },
+        {
+          "title": "12:08 East of Bucharest",
+          "year": 2006,
+          "slug": "TV show debates revolution's impact on small town",
+          "poster": "https://image.tmdb.org/t/p/w500/a7bBUXKWzhtqaPDyksOebSHeD6N.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 24159,
+          "poster_url": "https://image.tmdb.org/t/p/w500/a7bBUXKWzhtqaPDyksOebSHeD6N.jpg"
+        },
+        {
+          "title": "California Dreamin'",
+          "year": 2007,
+          "slug": "NATO troops stuck in Romanian village during Kosovo War",
+          "poster": "https://image.tmdb.org/t/p/w500/tPvlAyp6ZKoHWyHF4jYzMANHjjO.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 24220,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tPvlAyp6ZKoHWyHF4jYzMANHjjO.jpg"
+        },
+        {
+          "title": "Stuff and Dough",
+          "year": 2001,
+          "slug": "Young man's dangerous delivery job reveals corruption",
+          "poster": "https://image.tmdb.org/t/p/w500/wwNzPqHzIcWU6SKnZYrGQUp79d6.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 56256,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wwNzPqHzIcWU6SKnZYrGQUp79d6.jpg"
+        },
+        {
+          "title": "The Way I Spent the End of the World",
+          "year": 2006,
+          "slug": "Teenage girl dreams of escaping communist Romania",
+          "poster": "https://image.tmdb.org/t/p/w500/gIjQQ7XR2CBB58XSmmYeH2G0fFg.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 96010,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gIjQQ7XR2CBB58XSmmYeH2G0fFg.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

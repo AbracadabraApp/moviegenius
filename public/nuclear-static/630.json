@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "The Wizard of Oz",
+    "year": 1939,
+    "initialSlug": "A Kansas girl's magical journey to find her way home",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/pfAZFD7I2hxW9HCChTuAzsdE6UX.jpg",
+    "initialStreaming": null,
+    "tmdbId": 630,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The Wizard of Oz revolutionized technicolor filmmaking and created the template for modern fantasy cinema. The dramatic shift from sepia Kansas to vibrant Oz established a visual language that influenced countless films, from <a href=\"/movie/1417\" class=\"movie-title\" data-tmdb-id=\"1417\">Pan's Labyrinth</a> (2006) to <a href=\"/movie/2657\" class=\"movie-title\" data-tmdb-id=\"2657\">Pleasantville</a> (1998). Judy Garland's Dorothy became the archetypal hero's journey protagonist, while the practical effects - particularly the tornado sequence and the melting witch - showcased groundbreaking practical effects that hold up remarkably well today."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Return to Oz",
+            "year": 1985,
+            "slug": "This darker sequel follows Dorothy's return to a corrupted Oz featuring the terrifying Wheelers and head-collecting Princess Mombi",
+            "poster": "https://image.tmdb.org/t/p/w500/prd9KCTa12RDnKgyfR9hWHbMzBI.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 13155,
+            "poster_url": "https://image.tmdb.org/t/p/w500/prd9KCTa12RDnKgyfR9hWHbMzBI.jpg"
+          },
+          {
+            "title": "The Wiz",
+            "year": 1978,
+            "slug": "An urban reimagining starring Diana Ross and Michael Jackson that translates the story into African American cultural touchstones",
+            "poster": "https://image.tmdb.org/t/p/w500/rgKukXAbkpIv8pYKwKaj8IDunPq.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 24961,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rgKukXAbkpIv8pYKwKaj8IDunPq.jpg"
+          },
+          {
+            "title": "Oz the Great and Powerful",
+            "year": 2013,
+            "slug": "Sam Raimi's prequel explores the Wizard's arrival in Oz, with James Franco as the carnival magician who becomes a legend",
+            "poster": "https://image.tmdb.org/t/p/w500/tkzfAUEKoUp4YFNbZV9hfpZOz0z.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 68728,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tkzfAUEKoUp4YFNbZV9hfpZOz0z.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence on musical fantasy cannot be overstated. Songs like \"Over the Rainbow\" created a template for the \"I Want\" song that became crucial to Disney musicals like <a href=\"/movie/10144\" class=\"movie-title\" data-tmdb-id=\"10144\">The Little Mermaid</a> (1989) and <a href=\"/movie/10020\" class=\"movie-title\" data-tmdb-id=\"10020\">Beauty and the Beast</a> (1991). The character dynamics between Dorothy and her three companions inspired countless \"found family\" narratives, from <a href=\"/movie/11\" class=\"movie-title\" data-tmdb-id=\"11\">Star Wars</a> (1977) to <a href=\"/movie/118340\" class=\"movie-title\" data-tmdb-id=\"118340\">Guardians of the Galaxy</a> (2014)."
+      },
+      {
+        "type": "text",
+        "content": "The production design by Cedric Gibbons merged Art Deco aesthetics with fairy tale whimsy, creating an Oz that felt both timeless and contemporary. This approach influenced fantasy world-building in films like <a href=\"/movie/12092\" class=\"movie-title\" data-tmdb-id=\"12092\">Alice in Wonderland</a> (1951) and more recently <a href=\"/movie/102651\" class=\"movie-title\" data-tmdb-id=\"102651\">Maleficent</a> (2014). The Wicked Witch of the West, played by Margaret Hamilton, defined the visual language of witches in cinema for decades. SUBHEAD: Legacy and Modern Interpretations"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Willy Wonka & the Chocolate Factory",
+            "year": 1971,
+            "slug": "Another technicolor fantasy masterpiece that similarly contrasts a drab real world with a magical realm",
+            "poster": "https://image.tmdb.org/t/p/w500/vmpsZkrs4Uvkp9r1atL8B3frA63.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 252,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vmpsZkrs4Uvkp9r1atL8B3frA63.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Contemporary filmmakers continue drawing from Oz's well. <a href=\"/movie/402431\" class=\"movie-title\" data-tmdb-id=\"402431\">Wicked</a> (2024) explores the witch's perspective, following a trend of villain recontextualization that began with <a href=\"/movie/102651\" class=\"movie-title\" data-tmdb-id=\"102651\">Maleficent</a> (2014). The practical effects pioneered in Oz influenced directors like Guillermo del Toro, whose <a href=\"/movie/399055\" class=\"movie-title\" data-tmdb-id=\"399055\">The Shape of Water</a> (2017) uses practical creature effects to create tactile fantasy worlds."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Technicolor in Hollywood",
+      "L. Frank Baum's Oz Books vs. Film Adaptations",
+      "Margaret Hamilton's Legacy as the Wicked Witch",
+      "The Impact of \"Over the Rainbow\" on Movie Musicals",
+      "Behind the Scenes: Practical Effects in 1930s Hollywood"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The NeverEnding Story",
+          "year": 1984,
+          "slug": "German fantasy film about a boy who enters a magical book world",
+          "poster": "https://image.tmdb.org/t/p/w500/ddYCa91iDXfJCxaqSYzwi2fjfnl.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 34584,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ddYCa91iDXfJCxaqSYzwi2fjfnl.jpg"
+        },
+        {
+          "title": "Mary Poppins",
+          "year": 1964,
+          "slug": "Disney's hybrid live-action/animation musical fantasy",
+          "poster": "https://image.tmdb.org/t/p/w500/ei8hhYCMfURfPOXKBnyl61be2iV.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 433,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ei8hhYCMfURfPOXKBnyl61be2iV.jpg"
+        },
+        {
+          "title": "Spirited Away",
+          "year": 2001,
+          "slug": "Miyazaki's fantasy about a girl trapped in a spirit world",
+          "poster": "https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 129,
+          "poster_url": "https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg"
+        },
+        {
+          "title": "Labyrinth",
+          "year": 1986,
+          "slug": "Jim Henson's fantasy starring David Bowie and practical creatures",
+          "poster": "https://image.tmdb.org/t/p/w500/hbSdA1DmNA9IlfVoqJkIWYF2oYm.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 13597,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hbSdA1DmNA9IlfVoqJkIWYF2oYm.jpg"
+        },
+        {
+          "title": "The Dark Crystal",
+          "year": 1982,
+          "slug": "Pure fantasy with groundbreaking puppetry",
+          "poster": "https://image.tmdb.org/t/p/w500/6g1Kh73qQRosyhRJpL3euQpMxOE.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 11639,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6g1Kh73qQRosyhRJpL3euQpMxOE.jpg"
+        },
+        {
+          "title": "Big Fish",
+          "year": 2003,
+          "slug": "Tim Burton's magical realist fantasy about tall tales",
+          "poster": "https://image.tmdb.org/t/p/w500/tjK063yCgaBAluVU72rZ6PKPH2l.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 587,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tjK063yCgaBAluVU72rZ6PKPH2l.jpg"
+        },
+        {
+          "title": "Coraline",
+          "year": 2009,
+          "slug": "Dark fantasy animation about a parallel world",
+          "poster": "https://image.tmdb.org/t/p/w500/4jeFXQYytChdZYE9JYO7Un87IlW.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 14836,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4jeFXQYytChdZYE9JYO7Un87IlW.jpg"
+        },
+        {
+          "title": "Mirror Mirror",
+          "year": 2012,
+          "slug": "Stylized fairy tale with elaborate costume design",
+          "poster": "https://image.tmdb.org/t/p/w500/pys6zIJN8Sxlk2Ss2GZuYuXPbtw.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 62764,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pys6zIJN8Sxlk2Ss2GZuYuXPbtw.jpg"
+        },
+        {
+          "title": "The Chronicles of Narnia",
+          "year": 2005,
+          "slug": "Children enter a magical wardrobe world",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Golden Compass",
+          "year": 2007,
+          "slug": "Fantasy adaptation with parallel worlds",
+          "poster": "https://image.tmdb.org/t/p/w500/6DTH9poR8RAw859L6OuokT7z993.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 2268,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6DTH9poR8RAw859L6OuokT7z993.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

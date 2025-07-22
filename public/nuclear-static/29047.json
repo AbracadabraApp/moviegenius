@@ -1,0 +1,166 @@
+{
+  "props": {
+    "title": "The Kid Stays in the Picture",
+    "year": 2002,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/wQd4tf308KGwbUZeoDLPxgYqhiv.jpg",
+    "initialStreaming": null,
+    "tmdbId": 29047,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The Kid Stays in the Picture revolutionized documentary filmmaking with its innovative visual approach to telling Hollywood producer Robert Evans' larger-than-life story. Directors Nanette Burstein and Brett Morgen transformed Evans' audiobook into a kaleidoscopic journey through New Hollywood, using 2.5D photo animation that influenced countless documentaries after it. The film charts Evans' meteoric rise from failed actor to Paramount's head of production, where he shepherded classics like <a href=\"/movie/805\" class=\"movie-title\" data-tmdb-id=\"805\">Rosemary's Baby</a> (1968), <a href=\"/movie/238\" class=\"movie-title\">The Godfather</a> (1972), and <a href=\"/movie/829\" class=\"movie-title\">Chinatown</a> (1974)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Chinatown",
+            "year": 1974,
+            "slug": "Evans' crowning achievement as producer, with Roman Polanski directing Jack Nicholson in a noir masterpiece about corruption in 1930s Los Angeles",
+            "poster": "https://image.tmdb.org/t/p/w500/kZRSP3FmOcq0xnBulqpUQngJUXY.jpg",
+            "initialStreaming": "Max",
+            "tmdb_id": 829,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kZRSP3FmOcq0xnBulqpUQngJUXY.jpg"
+          },
+          {
+            "title": "The Godfather",
+            "year": 1972,
+            "slug": "The defining mafia epic that Evans fought to get made his way, insisting on Francis Ford Coppola and Al Pacino",
+            "poster": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 238,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The documentary's style perfectly mirrors Evans' flashy persona and Hollywood's seductive power. The filmmakers layer archival photos, creating a pseudo-3D effect that makes still images feel alive and dynamic. This technique, combined with Evans' own gravelly narration, creates an intoxicating portrait of 1970s Hollywood excess. His brutal honesty about both triumphs (<a href=\"/movie/9062\" class=\"movie-title\" data-tmdb-id=\"9062\">Love Story</a> (1970)) and disasters (<a href=\"/movie/2148\" class=\"movie-title\" data-tmdb-id=\"2148\">The Cotton Club</a> (1984)) set a new standard for entertainment industry documentaries."
+      },
+      {
+        "type": "text",
+        "content": "Evans' story intersects with every major figure of New Hollywood - from his friendship with Jack Nicholson to his battles with Francis Ford Coppola. The film shows how one charismatic producer helped transform American cinema in the 1970s, backing artistically ambitious films that were also commercial hits. His cocaine-fueled fall from grace parallels the end of that golden era, making this both a personal story and a crucial document of Hollywood history. SUBHEAD: The Impact on Modern Documentary Filmmaking"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Hearts of Darkness: A Filmmaker's Apocalypse",
+            "year": 1991,
+            "slug": "Documentary chronicling the chaotic making of Apocalypse Now, showing the dark side of New Hollywood ambition",
+            "poster": "https://image.tmdb.org/t/p/w500/gJSSzYSLXIM5LQMWTOdsYCgawZ5.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 4539,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gJSSzYSLXIM5LQMWTOdsYCgawZ5.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's innovative visual techniques influenced a wave of documentaries that followed, including <a href=\"/movie/84334\" class=\"movie-title\" data-tmdb-id=\"84334\">Searching for Sugar Man</a> (2012) and <a href=\"/movie/14048\" class=\"movie-title\" data-tmdb-id=\"14048\">Man on Wire</a> (2008). The way it brings photos to life through motion and depth created a new visual language for biographical documentaries. Evans' unvarnished narration of his own story - including his failures and regrets - established a template for celebrity self-examination that documentaries still follow today."
+      }
+    ],
+    "exploreFurther": [
+      "The Rise and Fall of New Hollywood Cinema (1967-1980)",
+      "Revolutionary Documentary Techniques and Visual Innovation",
+      "Robert Evans' Impact on Modern Film Production",
+      "The Relationship Between Producers and Directors in Classic Hollywood",
+      "Hollywood Memoir Adaptations and Their Historical Impact"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Easy Riders, Raging Bulls",
+          "year": 2003,
+          "slug": "Documentary about New Hollywood based on Peter Biskind's book",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 32276
+        },
+        {
+          "title": "Living in the Material World",
+          "year": 2011,
+          "slug": "Scorsese's documentary about George Harrison using similar photo techniques",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Overnight",
+          "year": 2003,
+          "slug": "Documentary about Troy Duffy showing the dark side of Hollywood producing",
+          "poster": "https://image.tmdb.org/t/p/w500/tw0Ozor3NWNAj2r0CJ5Arz0U8Uv.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 27007,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tw0Ozor3NWNAj2r0CJ5Arz0U8Uv.jpg"
+        },
+        {
+          "title": "The Last Mogul",
+          "year": 2005,
+          "slug": "Documentary about legendary agent/studio head Lew Wasserman",
+          "poster": "https://image.tmdb.org/t/p/w500/rs0LYWCk3YA5TpHULvrAFJyLVpc.jpg",
+          "initialStreaming": "Pluto",
+          "tmdb_id": 192143,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rs0LYWCk3YA5TpHULvrAFJyLVpc.jpg"
+        },
+        {
+          "title": "Pictures at a Revolution",
+          "year": 2008,
+          "slug": "Mark Harris' examination of 1967's pivotal role in changing Hollywood",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "A Decade Under the Influence",
+          "year": 2003,
+          "slug": "Documentary about 1970s Hollywood featuring many Evans contemporaries",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 38868
+        },
+        {
+          "title": "The Bad and the Beautiful",
+          "year": 1952,
+          "slug": "Classic film about a ruthless producer similar to Evans",
+          "poster": "https://image.tmdb.org/t/p/w500/ajAXzTiPkL7JxeCRw5lQBqrKNGx.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 32499,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ajAXzTiPkL7JxeCRw5lQBqrKNGx.jpg"
+        },
+        {
+          "title": "An Alan Smithee Film: Burn Hollywood Burn",
+          "year": 1997,
+          "slug": "Satirical look at Hollywood producing",
+          "poster": "https://image.tmdb.org/t/p/w500/KSGv5uV6SJS7mUMlttvLfWA6Lv.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 78149,
+          "poster_url": "https://image.tmdb.org/t/p/w500/KSGv5uV6SJS7mUMlttvLfWA6Lv.jpg"
+        },
+        {
+          "title": "Fade to Black",
+          "year": 2004,
+          "slug": "Documentary about Orson Welles' struggles with Hollywood",
+          "poster": "https://image.tmdb.org/t/p/w500/7hQ7GFrdFzs3CWGD5ntTY8z98Nr.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 19614,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7hQ7GFrdFzs3CWGD5ntTY8z98Nr.jpg"
+        },
+        {
+          "title": "The Last Tycoon",
+          "year": 1976,
+          "slug": "Adaptation of F. Scott Fitzgerald's novel about a producer based on Irving Thalberg",
+          "poster": "https://image.tmdb.org/t/p/w500/sETEj1ieRCH4suyaW7D3q4XfFWJ.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 37774,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sETEj1ieRCH4suyaW7D3q4XfFWJ.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

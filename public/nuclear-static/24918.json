@@ -1,0 +1,132 @@
+{
+  "props": {
+    "title": "The Twelve Chairs",
+    "year": 1970,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/qw0yZKqdWyakNRasQ3NvEiRyZpN.jpg",
+    "initialStreaming": null,
+    "tmdbId": 24918,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Mel Brooks' often-overlooked gem The Twelve Chairs marks one of his earliest directorial efforts, adapting the 1928 Russian novel with his signature comedic flair. Unlike his better-known parodies like <a href=\"/movie/11072\" class=\"movie-title\" data-tmdb-id=\"11072\">Blazing Saddles</a> (1974) and <a href=\"/movie/3034\" class=\"movie-title\" data-tmdb-id=\"3034\">Young Frankenstein</a> (1974), this madcap treasure hunt through Soviet Russia showcases Brooks' ability to balance slapstick with genuine character development. Frank Langella's breakout performance as the charming con man Ostap Bender perfectly complements Ron Moody's desperate former aristocrat Vorobyaninov, creating a dynamic reminiscent of the great comedy duos in The Road to Morocco (1942) and <a href=\"/movie/239\" class=\"movie-title\" data-tmdb-id=\"239\">Some Like It Hot</a> (1959)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Producers",
+            "year": 1967,
+            "slug": "Brooks' directorial debut about a theatrical scam features similar themes of greed and desperation",
+            "poster": "https://image.tmdb.org/t/p/w500/5TYUsAygWKtufAC78ep2AiohEiR.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 30197,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5TYUsAygWKtufAC78ep2AiohEiR.jpg"
+          },
+          {
+            "title": "History of the World Part I",
+            "year": 1981,
+            "slug": "Another Brooks historical comedy that demonstrates his evolution in handling period settings",
+            "poster": "https://image.tmdb.org/t/p/w500/6iAl78qZHT65erPXr2YW6Y54wlY.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 10156,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6iAl78qZHT65erPXr2YW6Y54wlY.jpg"
+          },
+          {
+            "title": "Silent Movie",
+            "year": 1976,
+            "slug": "Brooks' homage to silent comedy shows his range beyond verbal humor",
+            "poster": "https://image.tmdb.org/t/p/w500/AeaoOSqEU3elkpDAlKbIWcdKLJ8.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 10970,
+            "poster_url": "https://image.tmdb.org/t/p/w500/AeaoOSqEU3elkpDAlKbIWcdKLJ8.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's chase structure influenced later treasure hunt comedies like <a href=\"/movie/11576\" class=\"movie-title\" data-tmdb-id=\"11576\">It's a Mad, Mad, Mad, Mad World</a> (1963) and <a href=\"/movie/9896\" class=\"movie-title\" data-tmdb-id=\"9896\">Rat Race</a> (2001). Brooks uses the quest for jewels hidden in one of twelve chairs as a clever vehicle to satirize both Soviet bureaucracy and human greed. The physical comedy sequences, particularly Dom DeLuise's increasingly manic priest, echo the great silent comedians like Chaplin while adding Brooks' distinctive Jewish humor undertones. SUBHEAD: Soviet Satire and Cultural Commentary"
+      },
+      {
+        "type": "text",
+        "content": "While contemporary Soviet-set comedies like One, Two, Three (1961) took direct aim at Cold War tensions, The Twelve Chairs focuses more on universal human foibles against a Russian backdrop. Brooks' approach influenced later filmmakers tackling Soviet-era stories, from <a href=\"/movie/23111\" class=\"movie-title\" data-tmdb-id=\"23111\">Moscow on the Hudson</a> (1984) to <a href=\"/movie/16082\" class=\"movie-title\" data-tmdb-id=\"16082\">White Nights</a> (1985). The film's commentary on materialism and class remains relevant, while its rapid-fire gags and witty wordplay established techniques Brooks would perfect in his later works."
+      }
+    ],
+    "exploreFurther": [
+      "Mel Brooks' Evolution as a Director - From The Producers to Spaceballs",
+      "Soviet-Era Comedy in American Film",
+      "The Influence of Silent Comedy on 1970s Humor",
+      "Literary Adaptations in Comedy Film",
+      "Dom DeLuise's Collaborative History with Mel Brooks"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "To Be or Not to Be",
+          "year": 1983,
+          "slug": "Brooks' remake of the 1942 classic about actors in Nazi-occupied Warsaw",
+          "poster": "https://image.tmdb.org/t/p/w500/5VDZskShjJKAn3NP34LxnOVYek5.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 22998,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5VDZskShjJKAn3NP34LxnOVYek5.jpg"
+        },
+        {
+          "title": "High Anxiety",
+          "year": 1977,
+          "slug": "Brooks' Hitchcock parody showing his range in genre satire",
+          "poster": "https://image.tmdb.org/t/p/w500/qVuSJaGnomSPon8x3mIYywFGgD8.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 12535,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qVuSJaGnomSPon8x3mIYywFGgD8.jpg"
+        },
+        {
+          "title": "Life Stinks",
+          "year": 1991,
+          "slug": "Brooks tackles modern social issues with similar themes of wealth and poverty",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Last Metro",
+          "year": 1980,
+          "slug": "Truffaut's comedy-drama set in occupied France showing another approach to period comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/yJbA6jjuj9h8x2tZSgTkzpQ8PzS.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1716,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yJbA6jjuj9h8x2tZSgTkzpQ8PzS.jpg"
+        },
+        {
+          "title": "A Funny Thing Happened on the Way to the Forum",
+          "year": 1966,
+          "slug": "Similar historical farce with Zero Mostel",
+          "poster": "https://image.tmdb.org/t/p/w500/h3S9DZMUZNsAqd8ZNBed7ttPWXk.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 17768,
+          "poster_url": "https://image.tmdb.org/t/p/w500/h3S9DZMUZNsAqd8ZNBed7ttPWXk.jpg"
+        },
+        {
+          "title": "The Russians Are Coming! The Russians Are Coming!",
+          "year": 1966,
+          "slug": "Cold War era comedy about Soviet-American relations",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Ninotchka",
+          "year": 1939,
+          "slug": "Classic Garbo comedy about Soviet characters",
+          "poster": "https://image.tmdb.org/t/p/w500/v4MkgNqZyodYwBDNbZ64MF9tVEL.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 1859,
+          "poster_url": "https://image.tmdb.org/t/p/w500/v4MkgNqZyodYwBDNbZ64MF9tVEL.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

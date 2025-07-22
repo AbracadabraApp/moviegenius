@@ -1,0 +1,129 @@
+{
+  "props": {
+    "title": "L'Eclisse",
+    "year": 1962,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/oXoe0Fp92Yw3mMJ9Vq0hPlaMELg.jpg",
+    "initialStreaming": null,
+    "tmdbId": 21135,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "L'Eclisse represents Michelangelo Antonioni's masterful completion of his alienation trilogy, following <a href=\"/movie/5165\" class=\"movie-title\" data-tmdb-id=\"5165\">L'Avventura</a> (1960) and <a href=\"/movie/41050\" class=\"movie-title\" data-tmdb-id=\"41050\">La Notte</a> (1961). Monica Vitti delivers a haunting performance as Vittoria, wandering through Rome's EUR district - a modernist wasteland of concrete and steel. The film's revolutionary seven-minute ending, showing empty streets and unfinished buildings without any characters, influenced generations of filmmakers from Andrei Tarkovsky to Martin Scorsese. Antonioni strips away conventional plot to focus on architectural spaces and human disconnection. L'Avventura|1960|A woman vanishes during a yacht trip, but her friend and boyfriend become romantically involved while searching for her|Criterion Channel Red Desert|1964|Antonioni's first color film follows a neurotic woman struggling with industrial modernity|HBO Max Blow-Up|1966|A fashion photographer believes he's captured a murder on film in swinging London|TCM"
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of modern alienation directly influenced the French New Wave, particularly <a href=\"/movie/4024\" class=\"movie-title\" data-tmdb-id=\"4024\">Last Year at Marienbad</a> (1961) and 2 or 3 Things I Know About Her (1967). Antonioni's use of architecture as a character itself - with the EUR district's fascist-era buildings looming over the characters - created a template for how cinema could capture urban isolation. This approach echoes through later works like <a href=\"/movie/10227\" class=\"movie-title\" data-tmdb-id=\"10227\">Playtime</a> (1967) and <a href=\"/movie/9652\" class=\"movie-title\" data-tmdb-id=\"9652\">The Passenger</a> (1975). SUBHEAD: Visual Innovation and Lasting Impact"
+      },
+      {
+        "type": "text",
+        "content": "Antonioni's radical visual style in L'Eclisse broke new ground in cinema language. His use of empty frames, architectural compositions, and extended sequences without dialogue influenced directors like Edward Yang and Tsai Ming-liang. The famous ending sequence, where the film abandons its characters completely, reverberates through works like <a href=\"/movie/44012\" class=\"movie-title\" data-tmdb-id=\"44012\">Jeanne Dielman, 23 Quai du Commerce, 1080 Bruxelles</a> (1975) and <a href=\"/movie/655\" class=\"movie-title\" data-tmdb-id=\"655\">Paris, Texas</a> (1984), showing how physical spaces can carry emotional weight."
+      }
+    ],
+    "exploreFurther": [
+      "Antonioni's Modernist Architecture - How EUR district shapes L'Eclisse's meaning",
+      "The Evolution of Art Cinema: From Italian Neorealism to Modernism",
+      "Monica Vitti: Muse of Modernist Cinema",
+      "The Impact of L'Eclisse's Revolutionary Ending on Contemporary Cinema",
+      "Visual Composition in 1960s European Art Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "La Notte",
+          "year": 1961,
+          "slug": "A married couple's relationship dissolves over 24 hours in Milan",
+          "poster": "https://image.tmdb.org/t/p/w500/xkd7wPJSIC76scBRHCFZ85uOH5d.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 41050,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xkd7wPJSIC76scBRHCFZ85uOH5d.jpg"
+        },
+        {
+          "title": "The Passenger",
+          "year": 1975,
+          "slug": "A reporter assumes a dead man's identity and embarks on an existential journey",
+          "poster": "https://image.tmdb.org/t/p/w500/A8jYH43plz70dNmHy82zAHGTqxN.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 9652,
+          "poster_url": "https://image.tmdb.org/t/p/w500/A8jYH43plz70dNmHy82zAHGTqxN.jpg"
+        },
+        {
+          "title": "Last Year at Marienbad",
+          "year": 1961,
+          "slug": "A mysterious man tries to convince a woman they met the previous year",
+          "poster": "https://image.tmdb.org/t/p/w500/tizZ7JnXRFMvoNegu2CtM2ab9E7.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 4024,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tizZ7JnXRFMvoNegu2CtM2ab9E7.jpg"
+        },
+        {
+          "title": "Tokyo Story",
+          "year": 1953,
+          "slug": "An elderly couple visits their children in Tokyo, revealing family disconnection",
+          "poster": "https://image.tmdb.org/t/p/w500/g2YbTYKpY7N2yDSk7BfXZ18I5QV.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 18148,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g2YbTYKpY7N2yDSk7BfXZ18I5QV.jpg"
+        },
+        {
+          "title": "Wings of Desire",
+          "year": 1987,
+          "slug": "Angels watch over Berlin, observing human life and emotion",
+          "poster": "https://image.tmdb.org/t/p/w500/iZQs2vUeCzvS1KfZJ6uYNCGJBBV.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 144,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iZQs2vUeCzvS1KfZJ6uYNCGJBBV.jpg"
+        },
+        {
+          "title": "Hiroshima Mon Amour",
+          "year": 1959,
+          "slug": "A French actress and Japanese architect explore memory and loss",
+          "poster": "https://image.tmdb.org/t/p/w500/vjP7eX9c0xUD5i5dTRaP3NYC8iN.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 5544,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vjP7eX9c0xUD5i5dTRaP3NYC8iN.jpg"
+        },
+        {
+          "title": "The Long Goodbye",
+          "year": 1973,
+          "slug": "Elliott Gould's detective navigates alienated 1970s Los Angeles",
+          "poster": "https://image.tmdb.org/t/p/w500/oBhUK54yBJ0aH6u9zCzSV5iV7OP.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 1847,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oBhUK54yBJ0aH6u9zCzSV5iV7OP.jpg"
+        },
+        {
+          "title": "In the Mood for Love",
+          "year": 2000,
+          "slug": "Two neighbors form a connection in 1960s Hong Kong",
+          "poster": "https://image.tmdb.org/t/p/w500/iYypPT4bhqXfq1b6EnmxvRt6b2Y.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 843,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iYypPT4bhqXfq1b6EnmxvRt6b2Y.jpg"
+        },
+        {
+          "title": "Stalker",
+          "year": 1979,
+          "slug": "A guide leads two men through a mysterious Zone",
+          "poster": "https://image.tmdb.org/t/p/w500/1qhOyf5C4s9ZdvY8d5JDx9DFMeT.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1398,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1qhOyf5C4s9ZdvY8d5JDx9DFMeT.jpg"
+        },
+        {
+          "title": "Persona",
+          "year": 1966,
+          "slug": "A nurse and actress form an uncanny psychological bond",
+          "poster": "https://image.tmdb.org/t/p/w500/9QlqnRNbzb78lRiRPAP1ufmoZko.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 797,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9QlqnRNbzb78lRiRPAP1ufmoZko.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

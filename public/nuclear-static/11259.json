@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "Far and Away",
+    "year": 1992,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/rbxvGXcD7fixrAsbiAYl9R76uDs.jpg",
+    "initialStreaming": null,
+    "tmdbId": 11259,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Far and Away represents Ron Howard's ambitious attempt to craft a sweeping immigrant epic in the tradition of classics like <a href=\"/movie/43266\" class=\"movie-title\" data-tmdb-id=\"43266\">How Green Was My Valley</a> (1941). Shot in spectacular 70mm, it follows Irish immigrants Joseph (Tom Cruise) and Shannon (Nicole Kidman) pursuing the American Dream during the 1890s Oklahoma Land Rush. The film marked a significant collaboration between then-married stars Cruise and Kidman, following their work in <a href=\"/movie/2119\" class=\"movie-title\" data-tmdb-id=\"2119\">Days of Thunder</a> (1990). While criticized for its melodramatic elements, the film's stunning landscape cinematography by Mikael Salomon and soaring John Williams score create an immersive period atmosphere that captures the epic scope of America's western expansion."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Way West",
+            "year": 1967,
+            "slug": "Kirk Douglas leads pioneers on the Oregon Trail in this gritty western about the harsh realities of westward expansion",
+            "poster": "https://image.tmdb.org/t/p/w500/cexs9SGcB9JGfBBO1mKeFS1dzc8.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 42703,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cexs9SGcB9JGfBBO1mKeFS1dzc8.jpg"
+          },
+          {
+            "title": "Heaven's Gate",
+            "year": 1980,
+            "slug": "Michael Cimino's controversial epic about European immigrants caught in Wyoming's Johnson County War",
+            "poster": "https://image.tmdb.org/t/p/w500/kW4Vk31nhtKPKGuYMaVATq3wcHC.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 10935,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kW4Vk31nhtKPKGuYMaVATq3wcHC.jpg"
+          },
+          {
+            "title": "The New Land",
+            "year": 1972,
+            "slug": "Max von Sydow stars in this powerful Swedish film about immigrants facing hardship in 19th century Minnesota",
+            "poster": "https://image.tmdb.org/t/p/w500/eC9SDdBwCa0FGckc76q1MBxlks9.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 42488,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eC9SDdBwCa0FGckc76q1MBxlks9.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The American immigrant experience became a crucial theme in 1990s cinema, with films like <a href=\"/movie/10511\" class=\"movie-title\" data-tmdb-id=\"10511\">In America</a> (2002) and <a href=\"/movie/19931\" class=\"movie-title\" data-tmdb-id=\"19931\">The Joy Luck Club</a> (1993) offering intimate portraits of cultural adaptation. Far and Away takes a more romanticized approach, using the spectacle of the Oklahoma Land Rush as a metaphor for immigrant opportunity. This connects it to earlier frontier epics like How the West Was Won (1962) and <a href=\"/movie/12501\" class=\"movie-title\" data-tmdb-id=\"12501\">The Big Country</a> (1958), which similarly used vast landscapes to represent freedom and possibility. SUBHEAD: The Irish Immigrant Experience on Film"
+      },
+      {
+        "type": "text",
+        "content": "Irish immigration narratives form a distinct cinematic subgenre, from John Ford's <a href=\"/movie/3109\" class=\"movie-title\" data-tmdb-id=\"3109\">The Quiet Man</a> (1952) to more recent works like <a href=\"/movie/167073\" class=\"movie-title\" data-tmdb-id=\"167073\">Brooklyn</a> (2015). Far and Away draws on these traditions while incorporating elements of western expansion stories. The film's depiction of 19th century Boston's Irish immigrant communities recalls similar scenes in Martin Scorsese's <a href=\"/movie/3131\" class=\"movie-title\" data-tmdb-id=\"3131\">Gangs of New York</a> (2002), though with a more optimistic tone fitting Howard's directorial style."
+      }
+    ],
+    "exploreFurther": [
+      "The Oklahoma Land Rush in American History and Film",
+      "Irish Immigration to America in the 19th Century",
+      "The Evolution of 70mm Film Technology",
+      "Ron Howard's Period Films and Historical Epics",
+      "Tom Cruise and Nicole Kidman's On-Screen Collaborations"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "America America",
+          "year": 1963,
+          "slug": "Elia Kazan's personal epic about a Greek immigrant's journey to America",
+          "poster": "https://image.tmdb.org/t/p/w500/76RffKrNPrfA4TWYkx5wIIOzOlV.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 47249,
+          "poster_url": "https://image.tmdb.org/t/p/w500/76RffKrNPrfA4TWYkx5wIIOzOlV.jpg"
+        },
+        {
+          "title": "The Emigrants",
+          "year": 1971,
+          "slug": "Swedish masterpiece about farmers seeking a better life in America",
+          "poster": "https://image.tmdb.org/t/p/w500/5jxQPHXLj02REgrgjEetQ5E7N5v.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 40732,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5jxQPHXLj02REgrgjEetQ5E7N5v.jpg"
+        },
+        {
+          "title": "An American Tail",
+          "year": 1986,
+          "slug": "Animated tale of Jewish immigrant mice fleeing persecution",
+          "poster": "https://image.tmdb.org/t/p/w500/wjhUy9af89vc9CviKcPgTNTrmIq.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 4978,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wjhUy9af89vc9CviKcPgTNTrmIq.jpg"
+        },
+        {
+          "title": "In America",
+          "year": 2002,
+          "slug": "Modern Irish family seeks new life in New York City",
+          "poster": "https://image.tmdb.org/t/p/w500/cUhMjWQyyApA0pFinogCsE2wy8g.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 10511,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cUhMjWQyyApA0pFinogCsE2wy8g.jpg"
+        },
+        {
+          "title": "Brooklyn",
+          "year": 2015,
+          "slug": "Young Irish woman navigates love and identity in 1950s New York",
+          "poster": "https://image.tmdb.org/t/p/w500/cs7W8j5lI7qzRW6tKSj9p1Q0Ze7.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 167073,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cs7W8j5lI7qzRW6tKSj9p1Q0Ze7.jpg"
+        },
+        {
+          "title": "The Quiet Man",
+          "year": 1952,
+          "slug": "John Ford's romantic comedy about an Irish-American returning home",
+          "poster": "https://image.tmdb.org/t/p/w500/u3B1hVKHE56yBRoxF3Nk9uxHdYN.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 3109,
+          "poster_url": "https://image.tmdb.org/t/p/w500/u3B1hVKHE56yBRoxF3Nk9uxHdYN.jpg"
+        },
+        {
+          "title": "Sweet Land",
+          "year": 2005,
+          "slug": "German immigrant bride faces prejudice in 1920s Minnesota",
+          "poster": "https://image.tmdb.org/t/p/w500/qYxbJ0pWyuRBqVXrrhaDQnFAsNN.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 31048,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qYxbJ0pWyuRBqVXrrhaDQnFAsNN.jpg"
+        },
+        {
+          "title": "Golden Door",
+          "year": 2006,
+          "slug": "Sicilian family's journey through Ellis Island",
+          "poster": "https://image.tmdb.org/t/p/w500/3peLF6wBq8TGrVblBnoa2Hw8rk6.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1993,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3peLF6wBq8TGrVblBnoa2Hw8rk6.jpg"
+        },
+        {
+          "title": "Avalon",
+          "year": 1990,
+          "slug": "Barry Levinson's semi-autobiographical immigrant family saga",
+          "poster": "https://image.tmdb.org/t/p/w500/lsyPs8pU6hIJCS5sw0H9Q8Tl1nJ.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 2302,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lsyPs8pU6hIJCS5sw0H9Q8Tl1nJ.jpg"
+        },
+        {
+          "title": "The New World",
+          "year": 2005,
+          "slug": "Terrence Malick's poetic take on early American settlement",
+          "poster": "https://image.tmdb.org/t/p/w500/dPyWMlQd54r3pK17GKG3iqjvNZ7.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 11400,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dPyWMlQd54r3pK17GKG3iqjvNZ7.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

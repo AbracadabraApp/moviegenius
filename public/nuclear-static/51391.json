@@ -1,0 +1,158 @@
+{
+  "props": {
+    "title": "Murder on a Sunday Morning",
+    "year": 2001,
+    "initialSlug": "Innocence on trial. Justice on the line.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/w8mv377RrR9OAUbvp9v9YGm15B3.jpg",
+    "initialStreaming": null,
+    "tmdbId": 51391,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Murder on a Sunday Morning** (2001) revolutionized true-crime documentary filmmaking by meticulously following public defender Patrick McGuinness as he fights to prove the innocence of 15-year-old Brenton Butler, wrongly accused of murder in Jacksonville, Florida. The Oscar-winning film exposes deep-rooted issues in the American justice system, particularly racial profiling and coerced confessions. Director Jean-Xavier de Lestrade's unflinching camera captures every devastating moment, from Butler's traumatic interrogation to McGuinness's masterful courtroom strategy, setting a new standard for legal documentaries that would influence works like **The Staircase** (2004) and **Making a Murderer** (2015)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Paradise Lost: The Child Murders at Robin Hood Hills",
+            "year": 1996,
+            "slug": "Groundbreaking documentary following the trial of the West Memphis Three, exposing judicial misconduct and media hysteria",
+            "poster": "https://image.tmdb.org/t/p/w500/h65fwEQTv9zRNyEuExE1wAk5CQ2.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 17204,
+            "poster_url": "https://image.tmdb.org/t/p/w500/h65fwEQTv9zRNyEuExE1wAk5CQ2.jpg"
+          },
+          {
+            "title": "The Thin Blue Line",
+            "year": 1988,
+            "slug": "Errol Morris's revolutionary documentary that actually freed an innocent man from death row through its investigation",
+            "poster": "https://image.tmdb.org/t/p/w500/4w4BJk3l8y9gYwPPLRs6uPHOmGL.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 14285,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4w4BJk3l8y9gYwPPLRs6uPHOmGL.jpg"
+          },
+          {
+            "title": "13th",
+            "year": 2016,
+            "slug": "Ava DuVernay's powerful examination of the American prison system and its roots in racial inequality",
+            "poster": "https://image.tmdb.org/t/p/w500/tcKNWD6IFPPsvkpvyZ548naz0is.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 407806,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tcKNWD6IFPPsvkpvyZ548naz0is.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The early 2000s marked a turning point for social justice documentaries, with films like **Murder on a Sunday Morning** (2001) and **The Central Park Five** (2012) forcing audiences to confront systemic racism in law enforcement. These films share DNA with earlier works like **In the Name of the Father** (1993), but their direct-cinema approach and focus on contemporary cases created immediate real-world impact. De Lestrade's technique of embedding with the defense team established a template for modern true-crime storytelling. SUBHEAD: Impact on Legal Documentary Filmmaking"
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends beyond its immediate subject matter. Its success helped spawn a wave of criminal justice documentaries that prioritize process over sensationalism. **Strong Island** (2017) and **Time** (2020) follow this tradition, examining how race, class, and institutional power intersect in American courtrooms. De Lestrade's approach - allowing the legal proceedings to build tension naturally while revealing character through observed moments - became the gold standard for courthouse documentaries."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of True Crime Documentary Techniques",
+      "Racial Bias in American Criminal Justice System on Film",
+      "The Role of Public Defenders in Cinema",
+      "Documentary Impact on Criminal Cases",
+      "Visual Language of Courtroom Documentation"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Staircase",
+          "year": 2004,
+          "slug": "Comprehensive examination of a complex murder case spanning decades",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "After Innocence",
+          "year": 2005,
+          "slug": "Following exonerated prisoners readjusting to life outside prison",
+          "poster": "https://image.tmdb.org/t/p/w500/gBqj0wE6ERzIHGC85cnEIDlDb7O.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 19215,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gBqj0wE6ERzIHGC85cnEIDlDb7O.jpg"
+        },
+        {
+          "title": "The Trials of Darryl Hunt",
+          "year": 2006,
+          "slug": "Chronicles a wrongfully convicted man's 20-year fight for freedom",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "PBS",
+          "tmdb_id": null
+        },
+        {
+          "title": "Let It Fall: Los Angeles 1982-1992",
+          "year": 2017,
+          "slug": "Examination of racial tensions leading to the LA riots",
+          "poster": "https://image.tmdb.org/t/p/w500/sfMHsRoO64j6yfZCPosfQWi5y5y.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 451974,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sfMHsRoO64j6yfZCPosfQWi5y5y.jpg"
+        },
+        {
+          "title": "Time",
+          "year": 2020,
+          "slug": "Intimate portrait of a woman fighting for her husband's release from prison",
+          "poster": "https://image.tmdb.org/t/p/w500/2yLZmlf6vdpkhTaD0oUmIFu8SsM.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 653729,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2yLZmlf6vdpkhTaD0oUmIFu8SsM.jpg"
+        },
+        {
+          "title": "The Central Park Five",
+          "year": 2012,
+          "slug": "Ken Burns documents the wrongful conviction of five teenagers",
+          "poster": "https://image.tmdb.org/t/p/w500/aKlQ8Sjr07OkCLuYkRYtpVSMm3e.jpg",
+          "initialStreaming": "PBS",
+          "tmdb_id": 124067,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aKlQ8Sjr07OkCLuYkRYtpVSMm3e.jpg"
+        },
+        {
+          "title": "Southwest of Salem",
+          "year": 2016,
+          "slug": "The fight to exonerate four wrongfully convicted Latina lesbians",
+          "poster": "https://image.tmdb.org/t/p/w500/pewfnkwtvB7lx4OZnxR6LGCY4UD.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 390766,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pewfnkwtvB7lx4OZnxR6LGCY4UD.jpg"
+        },
+        {
+          "title": "Making a Murderer",
+          "year": 2015,
+          "slug": "Complex investigation into Steven Avery's controversial cases",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Fear of 13",
+          "year": 2015,
+          "slug": "Unique one-man documentary about death row inmate Nick Yarris",
+          "poster": "https://image.tmdb.org/t/p/w500/n87Rk9b3DeOMvYAHZPGnsRZCK0R.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 367215,
+          "poster_url": "https://image.tmdb.org/t/p/w500/n87Rk9b3DeOMvYAHZPGnsRZCK0R.jpg"
+        },
+        {
+          "title": "Crime + Punishment",
+          "year": 2018,
+          "slug": "Exposé of discriminatory practices in the NYPD",
+          "poster": "https://image.tmdb.org/t/p/w500/rmo6102cLdrAHsxPi3CkLqaRulW.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 489983,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rmo6102cLdrAHsxPi3CkLqaRulW.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

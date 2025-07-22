@@ -1,0 +1,159 @@
+{
+  "props": {
+    "title": "Flowers for Algernon",
+    "year": 2000,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/20dVWa6Ujpsx6nQxaSp0cEhX3Tu.jpg",
+    "initialStreaming": null,
+    "tmdbId": 29136,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Flowers for Algernon adapts Daniel Keyes' heartbreaking sci-fi novella with Matthew Modine delivering a powerful performance as Charlie Gordon. The film follows similar territory as <a href=\"/movie/29146\" class=\"movie-title\">Charly</a> (1968), which earned Cliff Robertson an Oscar, but takes a more intimate approach to depicting cognitive enhancement and regression. Like <a href=\"/movie/11005\" class=\"movie-title\">Awakenings</a> (1990) and <a href=\"/movie/380\" class=\"movie-title\">Rain Man</a> (1988), it grapples with questions of intelligence, identity, and what makes us human. The made-for-TV format allows for a slower, more faithful adaptation of Charlie's journal entries compared to the 1968 version."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Charly",
+            "year": 1968,
+            "slug": "The original adaptation starring Cliff Robertson as a mentally disabled man who undergoes an experimental surgery to increase his intelligence",
+            "poster": "https://image.tmdb.org/t/p/w500/uxGt80D4hxEEwGwdOJ5tdVvjXEC.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 29146,
+            "poster_url": "https://image.tmdb.org/t/p/w500/uxGt80D4hxEEwGwdOJ5tdVvjXEC.jpg"
+          },
+          {
+            "title": "Awakenings",
+            "year": 1990,
+            "slug": "Robin Williams and Robert De Niro star in the true story of patients awakening from catatonic states through experimental drug treatment",
+            "poster": "https://image.tmdb.org/t/p/w500/9gztZXuHLG6AJ0fgqGd7Q43cWRI.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 11005,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9gztZXuHLG6AJ0fgqGd7Q43cWRI.jpg"
+          },
+          {
+            "title": "Rain Man",
+            "year": 1988,
+            "slug": "Dustin Hoffman won an Oscar playing an autistic savant who connects with his opportunistic brother during a cross-country road trip",
+            "poster": "https://image.tmdb.org/t/p/w500/iTNHwO896WKkaoPtpMMS74d8VNi.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 380,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iTNHwO896WKkaoPtpMMS74d8VNi.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's themes of medical ethics and human experimentation connect it to other crucial sci-fi explorations like <a href=\"/movie/782\" class=\"movie-title\" data-tmdb-id=\"782\">Gattaca</a> (1997) and <a href=\"/movie/1635\" class=\"movie-title\" data-tmdb-id=\"1635\">The Island</a> (2005). The emotional core centers on Charlie's growing awareness of his previous limitations and the cruelty he faced, similar to the awakening consciousness depicted in <a href=\"/movie/240832\" class=\"movie-title\" data-tmdb-id=\"240832\">Lucy</a> (2014) and <a href=\"/movie/51876\" class=\"movie-title\" data-tmdb-id=\"51876\">Limitless</a> (2011), though with a more tragic trajectory. SUBHEAD: Intelligence Enhancement in Cinema"
+      },
+      {
+        "type": "text",
+        "content": "Films exploring cognitive enhancement often focus on the moral implications and personal costs. <a href=\"/movie/51876\" class=\"movie-title\" data-tmdb-id=\"51876\">Limitless</a> (2011) presents it as a Faustian bargain with pharmaceutical consequences, while <a href=\"/movie/240832\" class=\"movie-title\" data-tmdb-id=\"240832\">Lucy</a> (2014) takes it to superhuman extremes. Flowers for Algernon stands apart by emphasizing the human cost - Charlie's painful awareness of his inevitable decline mirrors themes in <a href=\"/movie/284293\" class=\"movie-title\" data-tmdb-id=\"284293\">Still Alice</a> (2014), where Julianne Moore's character experiences the opposite journey through early-onset Alzheimer's."
+      }
+    ],
+    "exploreFurther": [
+      "The history of mental disability portrayal in cinema",
+      "Scientific accuracy in cognitive enhancement films",
+      "Comparing literary adaptations of Flowers for Algernon",
+      "Evolution of made-for-TV movies in the 2000s",
+      "Medical ethics in science fiction cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Good Will Hunting",
+          "year": 1997,
+          "slug": "A janitor with genius-level intelligence confronts his past and potential",
+          "poster": "https://image.tmdb.org/t/p/w500/z2FnLKpFi1HPO7BEJxdkv6hpJSU.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 489,
+          "poster_url": "https://image.tmdb.org/t/p/w500/z2FnLKpFi1HPO7BEJxdkv6hpJSU.jpg"
+        },
+        {
+          "title": "A Beautiful Mind",
+          "year": 2001,
+          "slug": "Biography of mathematician John Nash's brilliant but troubled life",
+          "poster": "https://image.tmdb.org/t/p/w500/rEIg5yJdNOt9fmX4P8gU9LeNoTQ.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 453,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rEIg5yJdNOt9fmX4P8gU9LeNoTQ.jpg"
+        },
+        {
+          "title": "The Theory of Everything",
+          "year": 2014,
+          "slug": "Stephen Hawking's relationship with his wife as he develops motor neuron disease",
+          "poster": "https://image.tmdb.org/t/p/w500/kJuL37NTE51zVP3eG5aGMyKAIlh.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 266856,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kJuL37NTE51zVP3eG5aGMyKAIlh.jpg"
+        },
+        {
+          "title": "Temple Grandin",
+          "year": 2010,
+          "slug": "Biopic of an autistic woman who revolutionized animal husbandry practices",
+          "poster": "https://image.tmdb.org/t/p/w500/gQhQ6yEkUkDDo1zugpq46PJN8xZ.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 33602,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gQhQ6yEkUkDDo1zugpq46PJN8xZ.jpg"
+        },
+        {
+          "title": "Lorenzo's Oil",
+          "year": 1992,
+          "slug": "Parents search for a cure for their son's rare neurological disease",
+          "poster": "https://image.tmdb.org/t/p/w500/suRf59zRu1h8Zq4Gxekn6UiLGaM.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 2007,
+          "poster_url": "https://image.tmdb.org/t/p/w500/suRf59zRu1h8Zq4Gxekn6UiLGaM.jpg"
+        },
+        {
+          "title": "Phenomenon",
+          "year": 1996,
+          "slug": "A small-town mechanic gains extraordinary intelligence after seeing a mysterious light",
+          "poster": "https://image.tmdb.org/t/p/w500/5eK1HNf0Kl2vDPOeqf1kX4SKxrw.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9294,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5eK1HNf0Kl2vDPOeqf1kX4SKxrw.jpg"
+        },
+        {
+          "title": "The Man Without a Star",
+          "year": 1968,
+          "slug": "A man loses his memory and must relearn everything about himself",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": null
+        },
+        {
+          "title": "Regarding Henry",
+          "year": 1991,
+          "slug": "A lawyer must rebuild his life and relationships after brain damage",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 11364
+        },
+        {
+          "title": "Memento",
+          "year": 2000,
+          "slug": "A man with short-term memory loss hunts for his wife's killer",
+          "poster": "https://image.tmdb.org/t/p/w500/fKTPH2WvH8nHTXeBYBVhawtRqtR.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 77,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fKTPH2WvH8nHTXeBYBVhawtRqtR.jpg"
+        },
+        {
+          "title": "The Diving Bell and the Butterfly",
+          "year": 2007,
+          "slug": "A magazine editor with locked-in syndrome learns to communicate through blinking",
+          "poster": "https://image.tmdb.org/t/p/w500/3MJUo4bCPai5r9zrw7nTS8sVzQ7.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 2013,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3MJUo4bCPai5r9zrw7nTS8sVzQ7.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

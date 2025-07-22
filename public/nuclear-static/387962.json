@@ -1,0 +1,198 @@
+{
+  "props": {
+    "title": "A Is for Atom",
+    "year": 1953,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/sTktsJIfL5FJkjnqeeQReM6fvs5.jpg",
+    "initialStreaming": null,
+    "tmdbId": 387962,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**A Is for Atom** (1953) stands as a fascinating artifact of atomic-age educational propaganda, produced by John Sutherland Productions for General Electric. This animated short exemplifies the post-WWII optimism about nuclear power, following similar educational films like **Duck and Cover** (1951) and <a href=\"/movie/342016\" class=\"movie-title\">Our Friend the Atom</a> (1957). The film's distinctive animation style, combining simplified scientific diagrams with anthropomorphized atoms, influenced later educational films like **The Atomic Submarine** (1959)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Duck and Cover",
+            "year": 1951,
+            "slug": "Famous civil defense film teaching children to respond to nuclear attacks",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Public Domain",
+            "tmdb_id": null
+          },
+          {
+            "title": "Our Friend the Atom",
+            "year": 1957,
+            "slug": "Walt Disney educational film promoting peaceful nuclear power",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 342016
+          },
+          {
+            "title": "The Day After",
+            "year": 1983,
+            "slug": "Landmark TV film about nuclear war's aftermath",
+            "poster": "https://image.tmdb.org/t/p/w500/brieV17D6R6HcubOqehLNYuxnvs.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 7012,
+            "poster_url": "https://image.tmdb.org/t/p/w500/brieV17D6R6HcubOqehLNYuxnvs.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The cultural impact of atomic educational films peaked in the 1950s, when government and corporate interests sought to reshape public perception of nuclear energy. **The Power of the Atom** (1958) and **Atomic Alert** (1951) shared similar optimistic messaging, though this would shift dramatically by the 1970s with films like <a href=\"/movie/988\" class=\"movie-title\">The China Syndrome</a> (1979) expressing growing nuclear anxiety."
+      },
+      {
+        "type": "text",
+        "content": "Sutherland's distinctive animation style, developed through industrial films like **A Is for Atom** (1953), influenced later science education films. His studio's work bridged entertainment and education, setting standards for explaining complex concepts through animation that echo in modern educational content like **Bill Nye the Science Guy** (1993-1998) and science-focused YouTube channels. SUBHEAD: Cold War Context and Nuclear Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The China Syndrome",
+            "year": 1979,
+            "slug": "Drama about nuclear power plant safety coverup",
+            "poster": "https://image.tmdb.org/t/p/w500/uHwwQIlt4XwpTFhX9ZT1A8xSW7F.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 988,
+            "poster_url": "https://image.tmdb.org/t/p/w500/uHwwQIlt4XwpTFhX9ZT1A8xSW7F.jpg"
+          },
+          {
+            "title": "Threads",
+            "year": 1984,
+            "slug": "Brutal British film depicting nuclear war effects",
+            "poster": "https://image.tmdb.org/t/p/w500/lBhU4U9Eehr9shstPem6I7BdkxK.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 17835,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lBhU4U9Eehr9shstPem6I7BdkxK.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The optimistic tone of **A Is for Atom** (1953) contrasts sharply with later atomic-themed films like **Dr. Strangelove** (1964) and **Fail Safe** (1964). These later works reflected growing public skepticism about nuclear technology, while early educational films worked to normalize atomic power through friendly characters and simplified explanations."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Nuclear Power in Educational Films 1950-1970",
+      "John Sutherland's Animation Techniques and Industry Impact",
+      "Cold War Propaganda in American Educational Films",
+      "The Shift from Nuclear Optimism to Anxiety in Cinema",
+      "Corporate-Sponsored Educational Films of the 1950s"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Atomic Cafe",
+          "year": 1982,
+          "slug": "Documentary compilation of atomic-age propaganda",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 26851
+        },
+        {
+          "title": "When the Wind Blows",
+          "year": 1986,
+          "slug": "Animated film about elderly couple surviving nuclear war",
+          "poster": "https://image.tmdb.org/t/p/w500/sQ7CgHdDcKnnzhCXA7wC2JVL7qq.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 10857,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sQ7CgHdDcKnnzhCXA7wC2JVL7qq.jpg"
+        },
+        {
+          "title": "Trinity and Beyond",
+          "year": 1995,
+          "slug": "Documentary about nuclear weapons testing",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 21846
+        },
+        {
+          "title": "Atomic Power Today",
+          "year": 1955,
+          "slug": "Educational film about nuclear energy benefits",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": null
+        },
+        {
+          "title": "The War Game",
+          "year": 1966,
+          "slug": "BBC documentary-style nuclear war film",
+          "poster": "https://image.tmdb.org/t/p/w500/puJGNnrAPOv3BUMI9mKlCJp3UrQ.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 26508,
+          "poster_url": "https://image.tmdb.org/t/p/w500/puJGNnrAPOv3BUMI9mKlCJp3UrQ.jpg"
+        },
+        {
+          "title": "Operation Ivy",
+          "year": 1952,
+          "slug": "Military documentary of hydrogen bomb test",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": 204600
+        },
+        {
+          "title": "Countdown to Zero",
+          "year": 2010,
+          "slug": "Documentary about nuclear proliferation risks",
+          "poster": "https://image.tmdb.org/t/p/w500/lJ8EQ4D0x4iPlBxrKGXGtHTwvt6.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 50420,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lJ8EQ4D0x4iPlBxrKGXGtHTwvt6.jpg"
+        },
+        {
+          "title": "Radio Bikini",
+          "year": 1988,
+          "slug": "Documentary about nuclear testing in Pacific",
+          "poster": "https://image.tmdb.org/t/p/w500/uxNsZwxvZ9IpePQzsnJEDBJIvJV.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 244698,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uxNsZwxvZ9IpePQzsnJEDBJIvJV.jpg"
+        },
+        {
+          "title": "The Beginning or the End",
+          "year": 1947,
+          "slug": "MGM drama about Manhattan Project",
+          "poster": "https://image.tmdb.org/t/p/w500/5qbbDHxuATQUZBTzFpmvaSt70tr.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 93151,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5qbbDHxuATQUZBTzFpmvaSt70tr.jpg"
+        },
+        {
+          "title": "Split Second",
+          "year": 1953,
+          "slug": "Noir thriller set at Nevada nuclear test site",
+          "poster": "https://image.tmdb.org/t/p/w500/tLRXYfxtpAbPjURqzJI0YZpmH0i.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 25549,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tLRXYfxtpAbPjURqzJI0YZpmH0i.jpg"
+        },
+        {
+          "title": "The Atom and Eve",
+          "year": 1966,
+          "slug": "Educational film about radiation safety",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": null
+        },
+        {
+          "title": "The House in the Middle",
+          "year": 1954,
+          "slug": "Civil defense film about nuclear preparedness",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": 148438
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

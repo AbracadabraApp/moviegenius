@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "First Blood",
+    "year": 1982,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/a9sa6ERZCpplbPEO7OMWE763CLD.jpg",
+    "initialStreaming": null,
+    "tmdbId": 1368,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "First Blood revolutionized the action genre by infusing raw survival thriller elements with profound commentary on Vietnam veteran trauma. Sylvester Stallone's portrayal of John Rambo creates a haunting portrait of a decorated warrior unable to reintegrate into civilian society. Unlike the more bombastic sequels, the original film maintains a grounded, almost horror-movie tension as Rambo uses his Special Forces training to evade an increasingly militarized police force in the Pacific Northwest wilderness. Director Ted Kotcheff crafts intimate action sequences that emphasize Rambo's vulnerability despite his lethal capabilities."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Southern Comfort",
+            "year": 1981,
+            "slug": "A National Guard unit's training mission in Louisiana bayou turns deadly when they antagonize local Cajun hunters. A spiritual predecessor to First Blood.",
+            "poster": "https://image.tmdb.org/t/p/w500/v6kSjAHiaHza6r27LF36YpEGz8j.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 12528,
+            "poster_url": "https://image.tmdb.org/t/p/w500/v6kSjAHiaHza6r27LF36YpEGz8j.jpg"
+          },
+          {
+            "title": "The Deer Hunter",
+            "year": 1978,
+            "slug": "Harrowing examination of how Vietnam War trauma destroys the lives of Pennsylvania steelworkers.",
+            "poster": "https://image.tmdb.org/t/p/w500/bbGtogDZOg09bm42KIpCXUXICkh.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 11778,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bbGtogDZOg09bm42KIpCXUXICkh.jpg"
+          },
+          {
+            "title": "Coming Home",
+            "year": 1978,
+            "slug": "A marine's wife falls for a paralyzed Vietnam vet while her husband is deployed, exploring the war's domestic impact.",
+            "poster": "https://image.tmdb.org/t/p/w500/jBsYWNBYNEi5EhT1hC8iexcTsWT.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 31657,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jBsYWNBYNEi5EhT1hC8iexcTsWT.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film sparked a wave of \"one-man-army\" action movies throughout the 1980s, though few matched its psychological depth. <a href=\"/movie/15379\" class=\"movie-title\" data-tmdb-id=\"15379\">Missing in Action</a> (1984) and <a href=\"/movie/9967\" class=\"movie-title\" data-tmdb-id=\"9967\">Uncommon Valor</a> (1983) directly borrowed First Blood's veteran revenge narrative, while <a href=\"/movie/10999\" class=\"movie-title\" data-tmdb-id=\"10999\">Commando</a> (1985) amplified the formula's more cartoonish elements. Yet First Blood's influence extends beyond action cinema - its themes of institutional betrayal and PTSD echo through serious dramas like <a href=\"/movie/2604\" class=\"movie-title\" data-tmdb-id=\"2604\">Born on the Fourth of July</a> (1989) and <a href=\"/movie/2291\" class=\"movie-title\" data-tmdb-id=\"2291\">Jacob's Ladder</a> (1990)."
+      },
+      {
+        "type": "text",
+        "content": "The technical achievements in First Blood hold up remarkably well. Andrew Laszlo's atmospheric cinematography turns the British Columbia wilderness into a character itself, while Bill Contis's haunting score emphasizes Rambo's isolation. The practical stunts and effects work - from the cliff jump to the police station explosion - set new standards for action realism that influenced films like <a href=\"/movie/562\" class=\"movie-title\" data-tmdb-id=\"562\">Die Hard</a> (1988) and <a href=\"/movie/5503\" class=\"movie-title\" data-tmdb-id=\"5503\">The Fugitive</a> (1993). SUBHEAD: Legacy and Modern Context"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Rolling Thunder",
+            "year": 1977,
+            "slug": "A Vietnam vet seeks revenge after thugs murder his family, featuring early examination of veteran trauma.",
+            "poster": "https://image.tmdb.org/t/p/w500/9iZjVn6Q5FJa92SQLcFMrskpES9.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 21948,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9iZjVn6Q5FJa92SQLcFMrskpES9.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "First Blood's examination of law enforcement militarization remains disturbingly relevant. Films like <a href=\"/movie/77016\" class=\"movie-title\" data-tmdb-id=\"77016\">End of Watch</a> (2012) and <a href=\"/movie/12162\" class=\"movie-title\" data-tmdb-id=\"12162\">The Hurt Locker</a> (2008) continue exploring how combat experience affects those tasked with protecting society. Meanwhile, the survival aspects influenced everything from <a href=\"/movie/10632\" class=\"movie-title\" data-tmdb-id=\"10632\">The Hunted</a> (2003) to <a href=\"/movie/245891\" class=\"movie-title\" data-tmdb-id=\"245891\">John Wick</a> (2014), though modern action often sacrifices First Blood's character-driven intensity for spectacle."
+      }
+    ],
+    "exploreFurther": [
+      "Vietnam War's Impact on American Cinema 1975-1985",
+      "Evolution of Practical Stunts in 1980s Action Films",
+      "Psychological Trauma in Action Movie Characters",
+      "Military Training Authenticity in Combat Films",
+      "Pacific Northwest as Cinematic Wilderness Setting"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Walking Tall",
+          "year": 1973,
+          "slug": "A sheriff fights corruption with a wooden club, pioneering the one-man-justice formula.",
+          "poster": "https://image.tmdb.org/t/p/w500/fL0fuJ5qdm6JVwtIyw6F7e8PZMe.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 25473,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fL0fuJ5qdm6JVwtIyw6F7e8PZMe.jpg"
+        },
+        {
+          "title": "Platoon",
+          "year": 1986,
+          "slug": "Oliver Stone's autobiographical Vietnam War drama.",
+          "poster": "https://image.tmdb.org/t/p/w500/m3mmFkPQKvPZq5exmh0bDuXlD9T.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 792,
+          "poster_url": "https://image.tmdb.org/t/p/w500/m3mmFkPQKvPZq5exmh0bDuXlD9T.jpg"
+        },
+        {
+          "title": "Universal Soldier",
+          "year": 1992,
+          "slug": "Sci-fi action about reanimated super-soldiers dealing with combat trauma.",
+          "poster": "https://image.tmdb.org/t/p/w500/fp0mWrHl1SW9PhP8QcsgYPoVYFc.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 9349,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fp0mWrHl1SW9PhP8QcsgYPoVYFc.jpg"
+        },
+        {
+          "title": "The Last Rambo",
+          "year": 2019,
+          "slug": "Stallone's final outing as John Rambo, bringing the saga full circle.",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Taxi Driver",
+          "year": 1976,
+          "slug": "Scorsese's landmark study of a disturbed Vietnam vet in New York City.",
+          "poster": "https://image.tmdb.org/t/p/w500/ekstpH614fwDX8DUln1a2Opz0N8.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 103,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ekstpH614fwDX8DUln1a2Opz0N8.jpg"
+        },
+        {
+          "title": "Lone Survivor",
+          "year": 2013,
+          "slug": "Modern warfare survival thriller based on true events.",
+          "poster": "https://image.tmdb.org/t/p/w500/zaBIrloyhGK7iNTZMb3f9SARsl8.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 193756,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zaBIrloyhGK7iNTZMb3f9SARsl8.jpg"
+        },
+        {
+          "title": "The Hunted",
+          "year": 2003,
+          "slug": "Special Forces tracker pursues his former student through wilderness.",
+          "poster": "https://image.tmdb.org/t/p/w500/iA3tg96IWKkfMYiFbAGKVEWAnyc.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 10632,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iA3tg96IWKkfMYiFbAGKVEWAnyc.jpg"
+        },
+        {
+          "title": "Predator",
+          "year": 1987,
+          "slug": "Special ops team faces alien hunter in Central American jungle.",
+          "poster": "https://image.tmdb.org/t/p/w500/k3mW4qfJo6SKqe6laRyNGnbB9n5.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 106,
+          "poster_url": "https://image.tmdb.org/t/p/w500/k3mW4qfJo6SKqe6laRyNGnbB9n5.jpg"
+        },
+        {
+          "title": "Behind Enemy Lines",
+          "year": 2001,
+          "slug": "Naval aviator evades capture in hostile territory.",
+          "poster": "https://image.tmdb.org/t/p/w500/nmNfyRNLKz7QaUOx49FeaHj82Aq.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 8007,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nmNfyRNLKz7QaUOx49FeaHj82Aq.jpg"
+        },
+        {
+          "title": "Rampage",
+          "year": 2009,
+          "slug": "Uwe Boll's violent commentary on American militarism.",
+          "poster": "https://image.tmdb.org/t/p/w500/a6N8QCsdWxAQvdob3oCHcsVyLvc.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 38780,
+          "poster_url": "https://image.tmdb.org/t/p/w500/a6N8QCsdWxAQvdob3oCHcsVyLvc.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

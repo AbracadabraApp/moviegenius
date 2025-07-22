@@ -1,0 +1,156 @@
+{
+  "props": {
+    "title": "The Nutcracker Prince",
+    "year": 1990,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/AguZEaz0C9SduDNYTEfO0U0W60n.jpg",
+    "initialStreaming": null,
+    "tmdbId": 13759,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The 1990 animated adaptation The Nutcracker Prince stands as a fascinating entry in the long tradition of Nutcracker adaptations, following the success of more traditional ballet films like <a href=\"/movie/267547\" class=\"movie-title\" data-tmdb-id=\"267547\">The Nutcracker</a> (1977). This Canadian production, featuring the voice talents of Kiefer Sutherland and Megan Follows, brings E.T.A. Hoffmann's original story to life with a darker tone that's closer to the source material than many other versions. Like <a href=\"/movie/10020\" class=\"movie-title\" data-tmdb-id=\"10020\">Beauty and the Beast</a> (1991) and <a href=\"/movie/37025\" class=\"movie-title\" data-tmdb-id=\"37025\">The Prince and the Pauper</a> (1990), it represents a period when animation studios were willing to take creative risks with classic tales."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Nutcracker",
+            "year": 1977,
+            "slug": "Mikhail Baryshnikov stars in this definitive ballet adaptation, capturing the pure elegance of Tchaikovsky's classic",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": null
+          },
+          {
+            "title": "Fantasia",
+            "year": 1940,
+            "slug": "Disney's masterpiece featuring segments set to classical music, including pieces from The Nutcracker Suite",
+            "poster": "https://image.tmdb.org/t/p/w500/5m9njnidjR0syG2gpVPVgcEMB2X.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 756,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5m9njnidjR0syG2gpVPVgcEMB2X.jpg"
+          },
+          {
+            "title": "Barbie in the Nutcracker",
+            "year": 2001,
+            "slug": "A surprisingly well-crafted animated adaptation that introduces ballet and classical music to young viewers",
+            "poster": "https://image.tmdb.org/t/p/w500/eIkXJggVmzN4MyPgJ2kDjOy9lmQ.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 15167,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eIkXJggVmzN4MyPgJ2kDjOy9lmQ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The late 1980s and early 1990s saw a renaissance in animated holiday films that weren't afraid to embrace more complex themes. The Nutcracker Prince shares DNA with films like <a href=\"/movie/22611\" class=\"movie-title\" data-tmdb-id=\"22611\">Little Nemo: Adventures in Slumberland</a> (1989) and <a href=\"/movie/11497\" class=\"movie-title\" data-tmdb-id=\"11497\">All Dogs Go to Heaven</a> (1989), which balanced whimsy with darker elements. The movie's handling of Clara's coming-of-age story and the mouse army sequences show particular influence from The Mouse on the Mayflower (1968) and other Rankin/Bass productions. SUBHEAD: Ballet in Animation"
+      },
+      {
+        "type": "text",
+        "content": "Animation has long served as a unique medium for adapting ballet, offering possibilities that live action cannot. The Nutcracker Prince follows in the tradition of films like <a href=\"/movie/22561\" class=\"movie-title\" data-tmdb-id=\"22561\">Allegro Non Troppo</a> (1976) and segments of <a href=\"/movie/20343\" class=\"movie-title\" data-tmdb-id=\"20343\">Make Mine Music</a> (1946), using animation to enhance the fantasy elements while maintaining the grace of dance. This approach would later influence works like Princess Tutu (2002) and even aspects of <a href=\"/movie/9444\" class=\"movie-title\" data-tmdb-id=\"9444\">Anastasia</a> (1997)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of E.T.A. Hoffmann's Original Nutcracker Story in Film",
+      "The Influence of Classical Music in Animated Features",
+      "Animation Techniques in Ballet Adaptations",
+      "Holiday-Themed Animation of the Late 20th Century",
+      "The Role of Dark Elements in Children's Animation"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Hard Nut",
+          "year": 1991,
+          "slug": "Mark Morris's contemporary ballet adaptation of The Nutcracker",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": null
+        },
+        {
+          "title": "George Balanchine's The Nutcracker",
+          "year": 1993,
+          "slug": "NYC Ballet's definitive production filmed for home release",
+          "poster": "https://image.tmdb.org/t/p/w500/mKGGzL6o27cOurOO0gCUopDCxts.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 73191,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mKGGzL6o27cOurOO0gCUopDCxts.jpg"
+        },
+        {
+          "title": "Tales of Beatrix Potter",
+          "year": 1971,
+          "slug": "Royal Ballet performers bring Potter's characters to life in animal costumes",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Red Shoes",
+          "year": 1948,
+          "slug": "Masterpiece about a ballerina torn between love and art",
+          "poster": "https://image.tmdb.org/t/p/w500/tRpm0MNYoMOgyumL9ePI3wB2P9V.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 19542,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tRpm0MNYoMOgyumL9ePI3wB2P9V.jpg"
+        },
+        {
+          "title": "Nutcracker: The Motion Picture",
+          "year": 1986,
+          "slug": "Maurice Sendak's darker design version of the classic ballet",
+          "poster": "https://image.tmdb.org/t/p/w500/rEskWZgPj4SCkTMJPDCYxP94CB.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 71316,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rEskWZgPj4SCkTMJPDCYxP94CB.jpg"
+        },
+        {
+          "title": "The Steadfast Tin Soldier",
+          "year": 1976,
+          "slug": "Another Hans Christian Andersen adaptation featuring toys coming to life",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": null
+        },
+        {
+          "title": "Care Bears Nutcracker Suite",
+          "year": 1988,
+          "slug": "Animated holiday special incorporating elements of the classic tale",
+          "poster": "https://image.tmdb.org/t/p/w500/ncAE3dl0o0JjF0WOLRmHBmTNex2.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 28557,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ncAE3dl0o0JjF0WOLRmHBmTNex2.jpg"
+        },
+        {
+          "title": "An American in Paris",
+          "year": 1951,
+          "slug": "Gene Kelly's ballet-influenced musical masterpiece",
+          "poster": "https://image.tmdb.org/t/p/w500/lyDXkvG53ldz6Cf7dbjJl7TaoP5.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 2769,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lyDXkvG53ldz6Cf7dbjJl7TaoP5.jpg"
+        },
+        {
+          "title": "Christmas Carol: The Movie",
+          "year": 2001,
+          "slug": "Animated adaptation with similar Victorian winter atmosphere",
+          "poster": "https://image.tmdb.org/t/p/w500/38NCcPC1zJ6hzQYvzPor5uguvDs.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 35257,
+          "poster_url": "https://image.tmdb.org/t/p/w500/38NCcPC1zJ6hzQYvzPor5uguvDs.jpg"
+        },
+        {
+          "title": "The Sorcerer's Apprentice",
+          "year": 1797,
+          "slug": "Disney's Fantasia segment sharing magical themes",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

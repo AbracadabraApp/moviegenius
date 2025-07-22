@@ -1,0 +1,187 @@
+{
+  "props": {
+    "title": "Shaun of the Dead",
+    "year": 2004,
+    "initialSlug": "Slacker fights zombies to save mates & win girl back",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/dgXPhzNJH8HFTBjXPB177yNx6RI.jpg",
+    "initialStreaming": "TBD",
+    "tmdbId": 747,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Shaun of the Dead revolutionized zombie comedy by perfectly balancing genuine horror with brilliant British humor. Director Edgar Wright and co-writer/star Simon Pegg crafted a loving homage to George Romero's <a href=\"/movie/923\" class=\"movie-title\" data-tmdb-id=\"923\">Dawn of the Dead</a> (1978) while creating something entirely fresh. The film launched the \"Cornetto trilogy\" (followed by <a href=\"/movie/4638\" class=\"movie-title\" data-tmdb-id=\"4638\">Hot Fuzz</a> (2007) and <a href=\"/movie/107985\" class=\"movie-title\" data-tmdb-id=\"107985\">The World's End</a> (2013)) and established Wright's signature kinetic editing style, where even mundane actions like making tea become rhythmic visual sequences."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Dawn of the Dead",
+            "year": 1978,
+            "slug": "Romero's shopping mall zombie classic that directly inspired Shaun",
+            "poster": "https://image.tmdb.org/t/p/w500/3gx7VwU0OmvMihtiDmRNmsd4OG5.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 923,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3gx7VwU0OmvMihtiDmRNmsd4OG5.jpg"
+          },
+          {
+            "title": "Zombieland",
+            "year": 2009,
+            "slug": "American zombie comedy following similar horror-humor beats",
+            "poster": "https://image.tmdb.org/t/p/w500/dUkAmAyPVqubSBNRjRqCgHggZcK.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 19908,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dUkAmAyPVqubSBNRjRqCgHggZcK.jpg"
+          },
+          {
+            "title": "Return of the Living Dead",
+            "year": 1985,
+            "slug": "Punk rock zombie comedy that helped establish zom-com conventions",
+            "poster": "https://image.tmdb.org/t/p/w500/qVTFBabgnWz4jZ8wOQRYZI5EITF.jpg",
+            "initialStreaming": "AMC+",
+            "tmdb_id": 10925,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qVTFBabgnWz4jZ8wOQRYZI5EITF.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Wright's masterful direction turns suburban London into both a convincing zombie apocalypse and a pitch-perfect satire of modern urban life. The film's genius lies in how it portrays regular people reacting to extraordinary circumstances, much like <a href=\"/movie/10331\" class=\"movie-title\" data-tmdb-id=\"10331\">Night of the Living Dead</a> (1968), but with a distinctly British sensibility. The Winchester pub becomes both sanctuary and trap, mixing classic zombie siege elements with commentary on British pub culture."
+      },
+      {
+        "type": "text",
+        "content": "Beyond its comedy, Shaun of the Dead works as a legitimate zombie film, with genuinely tense sequences and emotional stakes. Like <a href=\"/movie/814\" class=\"movie-title\" data-tmdb-id=\"814\">An American Werewolf in London</a> (1981), it proves horror-comedy can deliver scares and laughs without compromising either. The film's influence can be seen in later genre-blending works like Tucker & Dale vs Evil (2010) and <a href=\"/movie/246741\" class=\"movie-title\" data-tmdb-id=\"246741\">What We Do in the Shadows</a> (2014). SUBHEAD: Impact on Genre Hybridization"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Hot Fuzz",
+            "year": 2007,
+            "slug": "Wright/Pegg's police action comedy follow-up",
+            "poster": "https://image.tmdb.org/t/p/w500/zPib4ukTSdXvHP9pxGkFCe34f3y.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 4638,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zPib4ukTSdXvHP9pxGkFCe34f3y.jpg"
+          },
+          {
+            "title": "The World's End",
+            "year": 2013,
+            "slug": "Final entry in the Cornetto trilogy about alien invasion",
+            "poster": "https://image.tmdb.org/t/p/w500/kpglnOBYmKn0AkkWDzGxzKHDbds.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 107985,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kpglnOBYmKn0AkkWDzGxzKHDbds.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Shaun of the Dead opened doors for sophisticated genre mashups, proving audiences would embrace smart horror-comedies. Its success influenced films like Cabin in the Woods (2011) and <a href=\"/movie/567609\" class=\"movie-title\" data-tmdb-id=\"567609\">Ready or Not</a> (2019), which similarly play with genre expectations while maintaining genuine thrills. The film's approach to character-driven comedy amid horror has become a template for balancing tones in modern genre films."
+      }
+    ],
+    "exploreFurther": [
+      "Edgar Wright's Visual Style and Influence on Modern Comedy",
+      "The Evolution of Zombie Cinema: From Romero to Modern Day",
+      "British Comedy's Impact on Horror-Comedy Hybrid Films",
+      "The Cornetto Trilogy: Themes and Connections",
+      "Genre Satire vs. Genre Homage in Modern Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Attack the Block",
+          "year": 2011,
+          "slug": "Alien invasion meets South London street culture",
+          "poster": "https://image.tmdb.org/t/p/w500/wzCMnA6NDruLzgWeqMcLPDrGAdF.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 59678,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wzCMnA6NDruLzgWeqMcLPDrGAdF.jpg"
+        },
+        {
+          "title": "The Dead Don't Die",
+          "year": 2019,
+          "slug": "Deadpan zombie comedy with all-star cast",
+          "poster": "https://image.tmdb.org/t/p/w500/ndvOjo7Nfk8ULnFLMXthPzhI62L.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 535581,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ndvOjo7Nfk8ULnFLMXthPzhI62L.jpg"
+        },
+        {
+          "title": "Slither",
+          "year": 2006,
+          "slug": "Horror-comedy about alien parasites",
+          "poster": "https://image.tmdb.org/t/p/w500/zNlJvCY3Pz7SE09Lf4G7uPs5XFZ.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 9035,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zNlJvCY3Pz7SE09Lf4G7uPs5XFZ.jpg"
+        },
+        {
+          "title": "This Is the End",
+          "year": 2013,
+          "slug": "Celebrity apocalypse comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/7Wdc3etyBJA4432TYtz6n9GQd1c.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 109414,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7Wdc3etyBJA4432TYtz6n9GQd1c.jpg"
+        },
+        {
+          "title": "Warm Bodies",
+          "year": 2013,
+          "slug": "Zombie romance comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/8XAX6KaqNGcLXcwoDwxyU0bxhxm.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 82654,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8XAX6KaqNGcLXcwoDwxyU0bxhxm.jpg"
+        },
+        {
+          "title": "Braindead",
+          "year": 1992,
+          "slug": "Peter Jackson's ultra-gory zombie comedy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": null
+        },
+        {
+          "title": "Juan of the Dead",
+          "year": 2011,
+          "slug": "Cuban take on zombie comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/kjcDkfERqIjS0OlVXF4ZUfWTITS.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 74726,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kjcDkfERqIjS0OlVXF4ZUfWTITS.jpg"
+        },
+        {
+          "title": "Cockneys vs Zombies",
+          "year": 2012,
+          "slug": "East End pensioners fight undead",
+          "poster": "https://image.tmdb.org/t/p/w500/xZPIZb81NSlF1zJhWqne4dKwtxC.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 114606,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xZPIZb81NSlF1zJhWqne4dKwtxC.jpg"
+        },
+        {
+          "title": "Life After Beth",
+          "year": 2014,
+          "slug": "Zombie relationship comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/4ZQ8LoU9SwSxSrmc3aOtHmruk26.jpg",
+          "initialStreaming": "Pluto TV",
+          "tmdb_id": 244566,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4ZQ8LoU9SwSxSrmc3aOtHmruk26.jpg"
+        },
+        {
+          "title": "Fido",
+          "year": 2006,
+          "slug": "1950s-set zombie servant comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/hKUUn6f4Hxj5iqQKMlQzRqbg2yT.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 10288,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hKUUn6f4Hxj5iqQKMlQzRqbg2yT.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

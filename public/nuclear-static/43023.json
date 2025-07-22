@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "Konga",
+    "year": 1961,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/3oBbwPhhN8rDqFmhYIIXqJhZKX8.jpg",
+    "initialStreaming": null,
+    "tmdbId": 43023,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Konga stands as a fascinating British attempt to capitalize on the giant ape craze sparked by <a href=\"/movie/244\" class=\"movie-title\">King Kong</a> (1933). Shot in lurid color by producer Herman Cohen, known for teen horror hits like <a href=\"/movie/43228\" class=\"movie-title\" data-tmdb-id=\"43228\">I Was a Teenage Werewolf</a> (1957), the film blends mad scientist tropes with monster movie mayhem. Michael Gough delivers a deliciously unhinged performance as Dr. Charles Decker, a botanist who uses a growth serum on his chimpanzee assistant, transforming it into a massive gorilla that he controls to murder his academic rivals."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "King Kong",
+            "year": 1933,
+            "slug": "The original giant ape masterpiece that launched a genre, featuring groundbreaking stop-motion effects by Willis O'Brien",
+            "poster": "https://image.tmdb.org/t/p/w500/lHlnxKL5GbgRibyRFI7n1Ey850i.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 244,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lHlnxKL5GbgRibyRFI7n1Ey850i.jpg"
+          },
+          {
+            "title": "Mighty Joe Young",
+            "year": 1949,
+            "slug": "A more sympathetic take on the giant ape story, again featuring O'Brien's effects work",
+            "poster": "https://image.tmdb.org/t/p/w500/tTTS9Bi7JReyGpCKyDuyZNSLTT4.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 39314,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tTTS9Bi7JReyGpCKyDuyZNSLTT4.jpg"
+          },
+          {
+            "title": "Gorilla at Large",
+            "year": 1954,
+            "slug": "3D thriller combining circus acts with gorilla horror, starring Cameron Mitchell",
+            "poster": "https://image.tmdb.org/t/p/w500/ifkjheVuzJ30imrCQ9kfofWX0vC.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 72313,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ifkjheVuzJ30imrCQ9kfofWX0vC.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's peculiar charm lies in its ambitious yet budget-constrained effects, mixing suited performers with obvious miniatures and rear projection. While lacking the technical sophistication of <a href=\"/movie/39314\" class=\"movie-title\">Mighty Joe Young</a> (1949), Konga's transformation sequences and rampage through London showcase a distinctly British B-movie aesthetic that would influence later Amicus Productions horror films. The movie's bizarre subplot involving carnivorous plants connects it to other contemporary science-gone-wrong films like The Day of the Triffids (1962)."
+      },
+      {
+        "type": "text",
+        "content": "Konga's place in giant monster cinema is unique for its blend of British horror sensibilities with American monster movie traditions. Unlike the serious tone of <a href=\"/movie/40804\" class=\"movie-title\">Gorgo</a> (1961), another British giant monster film from the same year, Konga embraces its pulpy nature. The film shares DNA with contemporary American International Pictures releases like <a href=\"/movie/43241\" class=\"movie-title\" data-tmdb-id=\"43241\">The Amazing Colossal Man</a> (1957), combining scientific hubris with creature feature thrills. SUBHEAD: British Monster Movie Legacy"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Gorgo",
+            "year": 1961,
+            "slug": "British answer to Godzilla featuring a giant sea monster attacking London",
+            "poster": "https://image.tmdb.org/t/p/w500/fC27POiM5HB08oDxVedPNkGAKUj.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 40804,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fC27POiM5HB08oDxVedPNkGAKUj.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence can be traced through later British monster movies and exploitation films. Its mix of mad science and creature features echoes in films like <a href=\"/movie/30929\" class=\"movie-title\" data-tmdb-id=\"30929\">The Mutations</a> (1974) and <a href=\"/movie/56140\" class=\"movie-title\" data-tmdb-id=\"56140\">Queen Kong</a> (1976). The distinctly British setting and atmosphere, particularly during the climactic London destruction sequence, established a template for localizing monster movie tropes that continues through modern films like <a href=\"/movie/59678\" class=\"movie-title\" data-tmdb-id=\"59678\">Attack the Block</a> (2011)."
+      }
+    ],
+    "exploreFurther": [
+      "British Horror Cinema of the 1960s and the Rise of Amicus Productions",
+      "Giant Monster Movies and Cold War Anxieties",
+      "The Evolution of Gorilla Suits in Classic Horror Films",
+      "Michael Gough's Horror Film Career Beyond Batman",
+      "American International Pictures and the Teen Horror Craze"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Beast of Hollow Mountain",
+          "year": 1956,
+          "slug": "Dinosaur-Western hybrid using stop-motion effects",
+          "poster": "https://image.tmdb.org/t/p/w500/xN8Dv4DXCoJjupn12QjAgYCYfgi.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 108181,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xN8Dv4DXCoJjupn12QjAgYCYfgi.jpg"
+        },
+        {
+          "title": "Queen Kong",
+          "year": 1976,
+          "slug": "Gender-swapped parody of King Kong",
+          "poster": "https://image.tmdb.org/t/p/w500/9RgT8W8pzsG8MF7RhKBVMcKoBHB.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 56140,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9RgT8W8pzsG8MF7RhKBVMcKoBHB.jpg"
+        },
+        {
+          "title": "War of the Colossal Beast",
+          "year": 1958,
+          "slug": "Sequel to The Amazing Colossal Man",
+          "poster": "https://image.tmdb.org/t/p/w500/xIQI3aN8zHZAmrCCm74EgwLcuVt.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 38269,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xIQI3aN8zHZAmrCCm74EgwLcuVt.jpg"
+        },
+        {
+          "title": "The Mutations",
+          "year": 1974,
+          "slug": "British horror mixing plant science and mutations",
+          "poster": "https://image.tmdb.org/t/p/w500/mku11cRXXJB3rzid7yS42y35oyK.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 30929,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mku11cRXXJB3rzid7yS42y35oyK.jpg"
+        },
+        {
+          "title": "King Kong vs. Godzilla",
+          "year": 1962,
+          "slug": "Famous monster mashup featuring suit acting",
+          "poster": "https://image.tmdb.org/t/p/w500/8djxObchUlEVcLdNl60EJm8EHZ0.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 1680,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8djxObchUlEVcLdNl60EJm8EHZ0.jpg"
+        },
+        {
+          "title": "Yongary: Monster from the Deep",
+          "year": 1967,
+          "slug": "Korean kaiju film inspired by Godzilla",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 42699
+        },
+        {
+          "title": "The Giant Behemoth",
+          "year": 1959,
+          "slug": "British monster movie with radioactive dinosaur",
+          "poster": "https://image.tmdb.org/t/p/w500/bOt8hqIipLjyiqjb4y4gklEwz5T.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 43093,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bOt8hqIipLjyiqjb4y4gklEwz5T.jpg"
+        },
+        {
+          "title": "Reptilicus",
+          "year": 1961,
+          "slug": "Danish giant monster film with practical effects",
+          "poster": "https://image.tmdb.org/t/p/w500/lD2P13VNAiIhoAs0gIhfnRazZRV.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 21266,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lD2P13VNAiIhoAs0gIhfnRazZRV.jpg"
+        },
+        {
+          "title": "King Kong Lives",
+          "year": 1986,
+          "slug": "Modern sequel featuring two giant apes",
+          "poster": "https://image.tmdb.org/t/p/w500/gI37vg2otF348OHxsx97hWCVvNI.jpg",
+          "initialStreaming": "Roku Channel",
+          "tmdb_id": 31947,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gI37vg2otF348OHxsx97hWCVvNI.jpg"
+        },
+        {
+          "title": "A*P*E",
+          "year": 1976,
+          "slug": "South Korean King Kong knockoff in 3D",
+          "poster": "https://image.tmdb.org/t/p/w500/whicSXoyu6wLmGtLSkd7JFCugHj.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 627502,
+          "poster_url": "https://image.tmdb.org/t/p/w500/whicSXoyu6wLmGtLSkd7JFCugHj.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

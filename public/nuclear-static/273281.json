@@ -1,0 +1,164 @@
+{
+  "props": {
+    "title": "Dharti Ke Lal",
+    "year": 1946,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/qFojufmRhI9aZi3iAY57tsAAzOX.jpg",
+    "initialStreaming": null,
+    "tmdbId": 273281,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Dharti Ke Lal** (1946) stands as a landmark in Indian cinema, marking one of the first neo-realistic films to emerge from the subcontinent. Directed by Khwaja Ahmad Abbas, this powerful examination of the 1943 Bengal famine broke new ground in social commentary during India's independence movement. The film shares DNA with Italian neorealism works like **Rome, Open City** (1945), using non-professional actors and on-location shooting to capture raw authenticity. Its unflinching portrayal of rural suffering influenced later Indian parallel cinema pioneers like Satyajit Ray's **Pather Panchali** (1955)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Do Bigha Zamin",
+            "year": 1953,
+            "slug": "Bimal Roy's masterpiece about a farmer struggling to save his land, sharing similar themes of rural hardship",
+            "poster": "https://image.tmdb.org/t/p/w500/t4blIwJ6HG9dqCSmifIhMsu4LvQ.jpg",
+            "initialStreaming": "NA",
+            "tmdb_id": 54352,
+            "poster_url": "https://image.tmdb.org/t/p/w500/t4blIwJ6HG9dqCSmifIhMsu4LvQ.jpg"
+          },
+          {
+            "title": "Neecha Nagar",
+            "year": 1946,
+            "slug": "India's first international award-winning film examining class inequality and urban development",
+            "poster": "https://image.tmdb.org/t/p/w500/6790uW3R2yU2w0qiWY3nt2Iki9e.jpg",
+            "initialStreaming": "NA",
+            "tmdb_id": 154879,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6790uW3R2yU2w0qiWY3nt2Iki9e.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's revolutionary production approach through IPTA (Indian People's Theatre Association) helped establish a template for socially conscious filmmaking in India. Its collaborative creation process, involving writers like Bijon Bhattacharya and music by Ravi Shankar, demonstrated how cinema could serve as a tool for social change. The influence extends to later works like **Mother India** (1957) and **Ankur** (1974), which similarly examined agrarian struggles and class exploitation."
+      },
+      {
+        "type": "text",
+        "content": "The film's technical innovations were remarkable for 1946 India. Cinematographer Ramchandra Gokhale's documentary-style approach, capturing the stark reality of famine-struck Bengal, established visual techniques that would become hallmarks of Indian parallel cinema. This aesthetic approach can be traced through works like **Garam Hawa** (1973) and **Manthan** (1976). SUBHEAD: Impact on Political Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Dharti",
+            "year": 1970,
+            "slug": "A spiritual successor examining similar themes of land rights and farmer exploitation",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "NA",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Dharti Ke Lal** (1946) helped establish political cinema in India, paving the way for filmmakers to address controversial social issues. Its influence can be seen in later works like **Nishant** (1975) and **Aakrosh** (1980), which similarly tackled rural exploitation and social injustice. The film's bold stance on colonial policies and economic inequality created a blueprint for protest cinema that continues to influence Indian filmmakers today."
+      }
+    ],
+    "exploreFurther": [
+      "The Bengal Famine in Indian Cinema",
+      "IPTA's Role in Early Indian Film Movement",
+      "Evolution of Rural Themes in Indian Cinema",
+      "Technical Innovations in Early Indian Social Realism",
+      "Parallel Cinema Movement Origins"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Mother India",
+          "year": 1957,
+          "slug": "Epic drama about rural mother's struggle",
+          "poster": "https://image.tmdb.org/t/p/w500/AlfM9yLcK1rhv73iNbDiOU9vnnu.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 917,
+          "poster_url": "https://image.tmdb.org/t/p/w500/AlfM9yLcK1rhv73iNbDiOU9vnnu.jpg"
+        },
+        {
+          "title": "Pather Panchali",
+          "year": 1955,
+          "slug": "Satyajit Ray's debut about rural Bengali life",
+          "poster": "https://image.tmdb.org/t/p/w500/frZj5djlU9hFEjMcL21RJZVuG5O.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 5801,
+          "poster_url": "https://image.tmdb.org/t/p/w500/frZj5djlU9hFEjMcL21RJZVuG5O.jpg"
+        },
+        {
+          "title": "Ankur",
+          "year": 1974,
+          "slug": "Shyam Benegal's examination of rural power dynamics",
+          "poster": "https://image.tmdb.org/t/p/w500/jrchYJ6zRkUZoWbhV4XQrnzLzXA.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 171492,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jrchYJ6zRkUZoWbhV4XQrnzLzXA.jpg"
+        },
+        {
+          "title": "Do Ankhen Barah Haath",
+          "year": 1957,
+          "slug": "Prison reform drama with social message",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 72576
+        },
+        {
+          "title": "Garam Hawa",
+          "year": 1973,
+          "slug": "Partition impact on Muslim family",
+          "poster": "https://image.tmdb.org/t/p/w500/zrvGQwrLPdffcjGnLtVt75vIRsD.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 183654,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zrvGQwrLPdffcjGnLtVt75vIRsD.jpg"
+        },
+        {
+          "title": "Manthan",
+          "year": 1976,
+          "slug": "Story about dairy cooperative movement",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 242826
+        },
+        {
+          "title": "Nishant",
+          "year": 1975,
+          "slug": "Rural power abuse examination",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 198524
+        },
+        {
+          "title": "Aakrosh",
+          "year": 1980,
+          "slug": "Legal drama about tribal exploitation",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 190213
+        },
+        {
+          "title": "Sujata",
+          "year": 1959,
+          "slug": "Social drama examining caste discrimination",
+          "poster": "https://image.tmdb.org/t/p/w500/otEsyJDvnu8MDKZfGTOwnHyNEq8.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 82567,
+          "poster_url": "https://image.tmdb.org/t/p/w500/otEsyJDvnu8MDKZfGTOwnHyNEq8.jpg"
+        },
+        {
+          "title": "Parasakthi",
+          "year": 1952,
+          "slug": "Tamil social drama with political messaging",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 197361
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

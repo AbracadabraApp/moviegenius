@@ -1,0 +1,147 @@
+{
+  "props": {
+    "title": "The Trial of Joan of Arc",
+    "year": 1962,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/gHb9UUow3j25sMCb3wDIZatfIg1.jpg",
+    "initialStreaming": null,
+    "tmdbId": 48764,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Robert Bresson's **The Trial of Joan of Arc** (1962) strips away historical pageantry to deliver a stark, minimalist masterpiece of spiritual cinema. Using actual trial transcripts and non-professional actors (particularly Florence Delay as Joan), Bresson creates an intensely focused chamber drama that stands in sharp contrast to lavish Hollywood treatments like **Joan of Arc** (1948) with Ingrid Bergman. Through Bresson's signature style of precise framing and emotional restraint, the film captures Joan's inner conviction while examining themes of faith, power, and institutional authority. Joan of Arc|1948|Victor Fleming's technicolor epic starring Ingrid Bergman as the French saint|Prime The Messenger: The Story of Joan of Arc|1999|Luc Besson's violent, visually striking interpretation with Milla Jovovich|Hulu"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Passion of Joan of Arc",
+            "year": 1928,
+            "slug": "Carl Theodor Dreyer's silent masterpiece featuring Renée Falconetti's legendary performance as Joan",
+            "poster": "https://image.tmdb.org/t/p/w500/plzI7N52uHhERUZLNSVbGGakFwR.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 780,
+            "poster_url": "https://image.tmdb.org/t/p/w500/plzI7N52uHhERUZLNSVbGGakFwR.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Bresson's approach to religious cinema profoundly influenced later directors tackling spiritual themes. His austere style can be seen reflected in films like **Diary of a Country Priest** (1951) and **Au Hasard Balthazar** (1966), where transcendence emerges through precise observation of the mundane. This technique particularly influenced Paul Schrader's **First Reformed** (2017), which similarly explores faith under pressure through minimal means."
+      },
+      {
+        "type": "text",
+        "content": "The film's focus on institutional power dynamics and interrogation anticipates later works like **A Man for All Seasons** (1966) and **The Name of the Rose** (1986), where religious conviction clashes with ecclesiastical authority. Bresson's emphasis on authentic historical documentation also influenced later historical dramas like **The Return of Martin Guerre** (1982) and **The Last Duel** (2021), which similarly drew from actual court records. SUBHEAD: Medieval Cinema and Historical Authenticity"
+      },
+      {
+        "type": "text",
+        "content": "While most medieval films emphasize spectacle and romance, Bresson's commitment to historical accuracy created a template for more nuanced historical storytelling. This influence can be seen in films like **The Lion in Winter** (1968) and **Andrei Rublev** (1966), which prioritize psychological complexity over period pageantry. The film's documentary-like approach to historical events particularly resonates with modern works like **Jeannette: The Childhood of Joan of Arc** (2017), Bruno Dumont's unconventional musical interpretation."
+      }
+    ],
+    "exploreFurther": [
+      "Bresson's \"Models\": His unique approach to working with non-professional actors",
+      "Medieval Court Records as Historical Sources in Cinema",
+      "The Evolution of Joan of Arc on Screen",
+      "Minimalism in Religious Cinema",
+      "French New Wave's Influence on Historical Drama"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Pickpocket",
+          "year": 1959,
+          "slug": "Bresson's influential crime drama about a thief's spiritual journey",
+          "poster": "https://image.tmdb.org/t/p/w500/kxpvceDv9fhFc4OAs82fmdzu17Y.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 690,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kxpvceDv9fhFc4OAs82fmdzu17Y.jpg"
+        },
+        {
+          "title": "The Devils",
+          "year": 1971,
+          "slug": "Ken Russell's controversial religious drama about power and faith",
+          "poster": "https://image.tmdb.org/t/p/w500/y1k7eiOFc6fzm8XeTa1kNGx6JIs.jpg",
+          "initialStreaming": "BFI",
+          "tmdb_id": 31767,
+          "poster_url": "https://image.tmdb.org/t/p/w500/y1k7eiOFc6fzm8XeTa1kNGx6JIs.jpg"
+        },
+        {
+          "title": "The Mission",
+          "year": 1986,
+          "slug": "Historical drama about faith and colonialism in South America",
+          "poster": "https://image.tmdb.org/t/p/w500/6K9cG6LOOtySZF4D4xBu1MApC1N.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 11416,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6K9cG6LOOtySZF4D4xBu1MApC1N.jpg"
+        },
+        {
+          "title": "Winter Light",
+          "year": 1963,
+          "slug": "Bergman's stark drama about a priest's crisis of faith",
+          "poster": "https://image.tmdb.org/t/p/w500/wDxrEssdjFWYwIZLbr06RQNcg1q.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 29455,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wDxrEssdjFWYwIZLbr06RQNcg1q.jpg"
+        },
+        {
+          "title": "Day of Wrath",
+          "year": 1943,
+          "slug": "Dreyer's powerful film about witch trials and religious persecution",
+          "poster": "https://image.tmdb.org/t/p/w500/jEOqbGLFo8fxHHgYoZVTMVYMoQG.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 41391,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jEOqbGLFo8fxHHgYoZVTMVYMoQG.jpg"
+        },
+        {
+          "title": "Silence",
+          "year": 2016,
+          "slug": "Scorsese's meditation on faith and persecution in feudal Japan",
+          "poster": "https://image.tmdb.org/t/p/w500/wO8XKAt3JUpdij27gIq6Maq4JMp.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 68730,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wO8XKAt3JUpdij27gIq6Maq4JMp.jpg"
+        },
+        {
+          "title": "A Hidden Life",
+          "year": 2019,
+          "slug": "Terrence Malick's story of religious conviction versus authority",
+          "poster": "https://image.tmdb.org/t/p/w500/rdG4jfH0rxkB2FgkYmjj9V4Q31M.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 403300,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rdG4jfH0rxkB2FgkYmjj9V4Q31M.jpg"
+        },
+        {
+          "title": "The Seventh Seal",
+          "year": 1957,
+          "slug": "Bergman's medieval allegory about faith and mortality",
+          "poster": "https://image.tmdb.org/t/p/w500/wcZ21zrOsy0b52AfAF50XpTiv75.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 490,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wcZ21zrOsy0b52AfAF50XpTiv75.jpg"
+        },
+        {
+          "title": "Agnes of God",
+          "year": 1985,
+          "slug": "Mystery drama about faith and modern institutions",
+          "poster": "https://image.tmdb.org/t/p/w500/m2QrxkojSmQb9k4DN6qhovDHLwD.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 24735,
+          "poster_url": "https://image.tmdb.org/t/p/w500/m2QrxkojSmQb9k4DN6qhovDHLwD.jpg"
+        },
+        {
+          "title": "Into Great Silence",
+          "year": 2005,
+          "slug": "Documentary about Carthusian monks emphasizing minimal dialogue",
+          "poster": "https://image.tmdb.org/t/p/w500/ctqLEwsIRYIPBGAJaDm4UxnTqpO.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 11225,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ctqLEwsIRYIPBGAJaDm4UxnTqpO.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

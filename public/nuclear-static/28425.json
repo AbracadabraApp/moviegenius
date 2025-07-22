@@ -1,0 +1,157 @@
+{
+  "props": {
+    "title": "The Invisible Man's Revenge",
+    "year": 1944,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/vdJBIqTd1DQcSKpxa17xr27IgsL.jpg",
+    "initialStreaming": null,
+    "tmdbId": 28425,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The Invisible Man's Revenge marks the final standalone film in Universal's original Invisible Man series, bringing a darker psychological edge to the franchise. Jon Hall plays Robert Griffin, a deranged fugitive seeking revenge, differentiating this entry from earlier invisible man tales through its emphasis on mental instability and deliberate malice. The film follows <a href=\"/movie/10787\" class=\"movie-title\">The Invisible Man</a> (1933) and <a href=\"/movie/28421\" class=\"movie-title\">The Invisible Man Returns</a> (1940) but takes the concept into more sinister territory, reflecting post-war anxieties about scientific advancement and human nature."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Invisible Man",
+            "year": 1933,
+            "slug": "James Whale's groundbreaking original featuring Claude Rains as the brilliant but mad scientist who discovers invisibility",
+            "poster": "https://image.tmdb.org/t/p/w500/ewfUA5pMEJrmQCdI4TsHmLlIUbf.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 10787,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ewfUA5pMEJrmQCdI4TsHmLlIUbf.jpg"
+          },
+          {
+            "title": "The Invisible Man Returns",
+            "year": 1940,
+            "slug": "Vincent Price stars as a wrongly accused man who uses invisibility to clear his name",
+            "poster": "https://image.tmdb.org/t/p/w500/hJmmgKnY0NaJKVP7Glb4ciAzXWr.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 28421,
+            "poster_url": "https://image.tmdb.org/t/p/w500/hJmmgKnY0NaJKVP7Glb4ciAzXWr.jpg"
+          },
+          {
+            "title": "Abbott and Costello Meet the Invisible Man",
+            "year": 1951,
+            "slug": "Comedy duo encounters invisible boxing champion in this lighter take on the concept",
+            "poster": "https://image.tmdb.org/t/p/w500/sGFnr4dCUm1Ro1bZHR5TXHOolXb.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 33475,
+            "poster_url": "https://image.tmdb.org/t/p/w500/sGFnr4dCUm1Ro1bZHR5TXHOolXb.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Director Ford Beebe, known for his work on Universal's action serials, brings a straightforward thriller approach that emphasizes suspense over the pure horror elements of earlier entries. The special effects by John P. Fulton build upon techniques developed in previous invisible man films, particularly the floating objects and unwrapping bandages that became hallmarks of the series. <a href=\"/movie/9383\" class=\"movie-title\" data-tmdb-id=\"9383\">Hollow Man</a> (2000) would later pay homage to many of these practical effects while updating them with CGI. SUBHEAD: Scientific Horror Evolution"
+      },
+      {
+        "type": "text",
+        "content": "The film represents a crucial transition point between Universal's classic monster movies and their later science fiction horror hybrids. Like Man Made Monster (1941) and <a href=\"/movie/84234\" class=\"movie-title\" data-tmdb-id=\"84234\">The Mad Ghoul</a> (1943), it uses mad science as a launching point for exploring human monstrosity. John Carradine's performance as Dr. Drury, the scientist who enables Griffin's invisibility, echoes the ethical conflicts present in The Strange Case of Dr. Jekyll and Mr. Hyde (1931), questioning the responsibility of scientists for their creations."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Universal Studios' invisible man special effects from 1933-1944",
+      "Post-WWII shifts in science fiction horror themes",
+      "John P. Fulton's groundbreaking visual effects techniques",
+      "Psychological themes in 1940s horror cinema",
+      "Universal's monster movie franchise development"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Mad Ghoul",
+          "year": 1943,
+          "slug": "Scientific experiment creates a murderous ghoul",
+          "poster": "https://image.tmdb.org/t/p/w500/wq5vrKcGYf7Iv4jiy286rDYmDJu.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 84234,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wq5vrKcGYf7Iv4jiy286rDYmDJu.jpg"
+        },
+        {
+          "title": "The Strange Case of Dr. Jekyll and Mr. Hyde",
+          "year": 1931,
+          "slug": "Classic tale of scientific hubris gone wrong",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": null
+        },
+        {
+          "title": "Hollow Man",
+          "year": 2000,
+          "slug": "Modern take on invisibility with Kevin Bacon",
+          "poster": "https://image.tmdb.org/t/p/w500/sd3qUIv5uoP2oTbqv66CzXSPjKG.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9383,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sd3qUIv5uoP2oTbqv66CzXSPjKG.jpg"
+        },
+        {
+          "title": "The Invisible Woman",
+          "year": 1940,
+          "slug": "Comedic spin on invisibility formula",
+          "poster": "https://image.tmdb.org/t/p/w500/ySUbbnVGTeFxZKdn2Vdf7OXeIc2.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 28423,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ySUbbnVGTeFxZKdn2Vdf7OXeIc2.jpg"
+        },
+        {
+          "title": "Man Made Monster",
+          "year": 1941,
+          "slug": "Lon Chaney Jr. as victim of mad science",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 84719
+        },
+        {
+          "title": "The Invisible Agent",
+          "year": 1942,
+          "slug": "Invisible spy fights Nazis during WWII",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": null
+        },
+        {
+          "title": "Memoirs of an Invisible Man",
+          "year": 1992,
+          "slug": "John Carpenter's invisible man thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/zbplzn4WrBkKDmmWlQkWdsacmNa.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 2687,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zbplzn4WrBkKDmmWlQkWdsacmNa.jpg"
+        },
+        {
+          "title": "The Invisible Man",
+          "year": 2020,
+          "slug": "Modern reinvention focusing on domestic abuse",
+          "poster": "https://image.tmdb.org/t/p/w500/5EufsDwXdY2CVttYOk2WtYhgKpa.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 570670,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5EufsDwXdY2CVttYOk2WtYhgKpa.jpg"
+        },
+        {
+          "title": "Invisible Invaders",
+          "year": 1959,
+          "slug": "Invisible aliens threaten Earth",
+          "poster": "https://image.tmdb.org/t/p/w500/vaP8c5O7m6jmmauVAW9M0i4VWSJ.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 58997,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vaP8c5O7m6jmmauVAW9M0i4VWSJ.jpg"
+        },
+        {
+          "title": "The Amazing Transparent Man",
+          "year": 1960,
+          "slug": "Criminal becomes invisible in science experiment",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 31634
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

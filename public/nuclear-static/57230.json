@@ -1,0 +1,175 @@
+{
+  "props": {
+    "title": "Viy",
+    "year": 1967,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/rgkp4X9C1NNobH8bq55zcMTQFCl.jpg",
+    "initialStreaming": null,
+    "tmdbId": 57230,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Viy** (1967) stands as the first Soviet horror film and a masterpiece of Slavic folk horror. Based on Nikolai Gogol's 1835 novella, it follows a seminary student forced to spend three nights in prayer with a dead woman who turns out to be a witch. Directors Konstantin Yershov and Georgiy Kropachyov create a haunting atmosphere that blends practical effects, traditional Ukrainian folklore, and surreal imagery. The film's influence echoes through later Eastern European horror like <a href=\"/movie/46315\" class=\"movie-title\">Valerie and Her Week of Wonders</a> (1970) and inspired modern folk horror revival pieces like **The Witch** (2015)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Valerie and Her Week of Wonders",
+            "year": 1970,
+            "slug": "Surreal Czech horror fantasy about a young girl's sexual awakening, featuring vampires and dark fairy tale elements",
+            "poster": "https://image.tmdb.org/t/p/w500/x9fZJORCZS0DshbxLSdnzyvU94V.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 46315,
+            "poster_url": "https://image.tmdb.org/t/p/w500/x9fZJORCZS0DshbxLSdnzyvU94V.jpg"
+          },
+          {
+            "title": "Black Sunday",
+            "year": 1960,
+            "slug": "Mario Bava's gothic horror about a witch's revenge, sharing Viy's themes of supernatural vengeance",
+            "poster": "https://image.tmdb.org/t/p/w500/x41Zx8GeZhducquhOq9nE7z1GBG.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 27632,
+            "poster_url": "https://image.tmdb.org/t/p/w500/x41Zx8GeZhducquhOq9nE7z1GBG.jpg"
+          },
+          {
+            "title": "Sveto Mesto",
+            "year": 1990,
+            "slug": "Serbian adaptation of Gogol's Viy, offering a different take on the source material",
+            "poster": "https://image.tmdb.org/t/p/w500/odBzLki7cSNldRRhEY8K2fnCyp5.jpg",
+            "initialStreaming": "NA",
+            "tmdb_id": 144825,
+            "poster_url": "https://image.tmdb.org/t/p/w500/odBzLki7cSNldRRhEY8K2fnCyp5.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's practical effects, revolutionary for 1967 Soviet cinema, create genuinely unsettling sequences without relying on gore or jump scares. The finale, where demons manifest and the titular Viy appears, showcases innovative practical effects that influenced later supernatural horror films like **Suspiria** (1977) and **Evil Dead** (1981). The film's ability to create terror through atmosphere and folkloric elements established a template for later folk horror classics."
+      },
+      {
+        "type": "text",
+        "content": "**Viy** (1967) also represents a crucial bridge between classic Gothic horror and folk horror traditions. While it incorporates elements familiar to fans of Hammer Horror films like **Horror of Dracula** (1958), it grounds its supernatural elements in distinctly Slavic mythology. This approach influenced later films like **Marketa Lazarová** (1967) and contemporary folk horror revival works such as **Midsommar** (2019). SUBHEAD: Folk Horror Legacy and Influence"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "November",
+            "year": 2017,
+            "slug": "Estonian folk horror fantasy that shares Viy's use of local mythology and supernatural elements",
+            "poster": "https://image.tmdb.org/t/p/w500/yMqtCSzSAB9Aiw8yiuUKBoxEeAm.jpg",
+            "initialStreaming": "AMC+",
+            "tmdb_id": 437583,
+            "poster_url": "https://image.tmdb.org/t/p/w500/yMqtCSzSAB9Aiw8yiuUKBoxEeAm.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's impact on modern folk horror cannot be overstated. Its blend of religious imagery, pagan elements, and psychological terror created a template followed by films like **Kill List** (2011) and **A Field in England** (2013). The way **Viy** (1967) handles its period setting and supernatural elements particularly influenced Russian cinema, leading to works like **Hard to Be a God** (2013) and **Gogol: The Beginning** (2017)."
+      }
+    ],
+    "exploreFurther": [
+      "Soviet Horror Cinema and State Censorship",
+      "Gogol's Literary Influence on Horror Cinema",
+      "Practical Effects in 1960s Eastern European Cinema",
+      "Folk Horror Movement: From Viy to Modern Revival",
+      "Slavic Mythology in Horror Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Witches",
+          "year": 1966,
+          "slug": "Hammer horror film about witchcraft that shares themes with Viy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Devil's Bride",
+          "year": 1968,
+          "slug": "Czech horror film featuring similar folk elements",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": 39891
+        },
+        {
+          "title": "Witchhammer",
+          "year": 1970,
+          "slug": "Czech historical horror about witch trials",
+          "poster": "https://image.tmdb.org/t/p/w500/o7RsXmfWXWLQ5vZww2OsKg9rIQE.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 62843,
+          "poster_url": "https://image.tmdb.org/t/p/w500/o7RsXmfWXWLQ5vZww2OsKg9rIQE.jpg"
+        },
+        {
+          "title": "The Hourglass Sanatorium",
+          "year": 1973,
+          "slug": "Surreal Polish horror fantasy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 45698
+        },
+        {
+          "title": "Hard to Be a God",
+          "year": 2013,
+          "slug": "Russian medieval sci-fi horror",
+          "poster": "https://image.tmdb.org/t/p/w500/lmqx4l6JVKwtAe7CCoyzwTVcOpy.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 110402,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lmqx4l6JVKwtAe7CCoyzwTVcOpy.jpg"
+        },
+        {
+          "title": "A Field in England",
+          "year": 2013,
+          "slug": "British folk horror with similar psychedelic elements",
+          "poster": "https://image.tmdb.org/t/p/w500/dKhMJr8yoHVyvxyUiAeIn2hKVdL.jpg",
+          "initialStreaming": "AMC+",
+          "tmdb_id": 179111,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dKhMJr8yoHVyvxyUiAeIn2hKVdL.jpg"
+        },
+        {
+          "title": "Marketa Lazarová",
+          "year": 1967,
+          "slug": "Czech historical drama with folk horror elements",
+          "poster": "https://image.tmdb.org/t/p/w500/c16ArEPUqb0RdUyZBH6fnO7ZiLL.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 25904,
+          "poster_url": "https://image.tmdb.org/t/p/w500/c16ArEPUqb0RdUyZBH6fnO7ZiLL.jpg"
+        },
+        {
+          "title": "The Ritual",
+          "year": 2017,
+          "slug": "Modern folk horror drawing from similar mythological roots",
+          "poster": "https://image.tmdb.org/t/p/w500/9022CYEGqYETCeXN1oE3uwYJWub.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 433808,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9022CYEGqYETCeXN1oE3uwYJWub.jpg"
+        },
+        {
+          "title": "Gogol: The Beginning",
+          "year": 2017,
+          "slug": "Russian horror based on Gogol's works",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 468988
+        },
+        {
+          "title": "November",
+          "year": 2017,
+          "slug": "Estonian folk horror with similar mythological elements",
+          "poster": "https://image.tmdb.org/t/p/w500/yMqtCSzSAB9Aiw8yiuUKBoxEeAm.jpg",
+          "initialStreaming": "AMC+",
+          "tmdb_id": 437583,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yMqtCSzSAB9Aiw8yiuUKBoxEeAm.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

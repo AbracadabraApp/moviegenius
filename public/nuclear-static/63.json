@@ -1,0 +1,197 @@
+{
+  "props": {
+    "title": "Twelve Monkeys",
+    "year": 1995,
+    "initialSlug": "Time traveler hunts virus in twisted future quest",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/gt3iyguaCIw8DpQZI1LIN5TohM2.jpg",
+    "initialStreaming": null,
+    "tmdbId": 63,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Twelve Monkeys stands as Terry Gilliam's masterful reimagining of Chris Marker's experimental short <a href=\"/movie/662\" class=\"movie-title\" data-tmdb-id=\"662\">La Jetée</a> (1962). Bruce Willis delivers a haunting performance as James Cole, a time traveler sent back from a post-apocalyptic future to prevent a devastating plague. The film's twisted narrative structure, influenced by film noir and German Expressionism, creates a paranoid atmosphere that rivals <a href=\"/movie/68\" class=\"movie-title\" data-tmdb-id=\"68\">Brazil</a> (1985), Gilliam's earlier dystopian masterpiece. The claustrophobic asylum scenes with Brad Pitt's manic Jeffrey Goines echo the psychological intensity of <a href=\"/movie/510\" class=\"movie-title\" data-tmdb-id=\"510\">One Flew Over the Cuckoo's Nest</a> (1975), while establishing a new benchmark for depicting mental illness in sci-fi."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "La Jetée",
+            "year": 1962,
+            "slug": "The French short film that inspired Twelve Monkeys, told through still photographs about a post-apocalyptic time travel experiment",
+            "poster": "https://image.tmdb.org/t/p/w500/elGidsRHXkk8UyrtLbcMhaptDyp.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 662,
+            "poster_url": "https://image.tmdb.org/t/p/w500/elGidsRHXkk8UyrtLbcMhaptDyp.jpg"
+          },
+          {
+            "title": "Brazil",
+            "year": 1985,
+            "slug": "Terry Gilliam's surreal dystopian masterpiece about a bureaucrat trying to find love in a totalitarian society",
+            "poster": "https://image.tmdb.org/t/p/w500/aewan59WcFThBimkTVVoNf2o5Vb.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 68,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aewan59WcFThBimkTVVoNf2o5Vb.jpg"
+          },
+          {
+            "title": "Dark City",
+            "year": 1998,
+            "slug": "A man discovers he's living in a manufactured reality controlled by mysterious beings",
+            "poster": "https://image.tmdb.org/t/p/w500/tNPEGju4DpTdbhBphNmZoEi9Bd3.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 2666,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tNPEGju4DpTdbhBphNmZoEi9Bd3.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's cyclical narrative structure influenced a generation of complex sci-fi thrillers. <a href=\"/movie/27205\" class=\"movie-title\" data-tmdb-id=\"27205\">Inception</a> (2010) and <a href=\"/movie/59967\" class=\"movie-title\" data-tmdb-id=\"59967\">Looper</a> (2012) both borrowed from its layered approach to time travel paradoxes, while <a href=\"/movie/45612\" class=\"movie-title\" data-tmdb-id=\"45612\">Source Code</a> (2011) directly echoed its themes of predetermined fate and memory manipulation. The gritty, industrial production design by Jeffrey Beecroft created a distinctive visual language for depicting both past and future, influencing later dystopian films like <a href=\"/movie/9693\" class=\"movie-title\" data-tmdb-id=\"9693\">Children of Men</a> (2006) and <a href=\"/movie/110415\" class=\"movie-title\" data-tmdb-id=\"110415\">Snowpiercer</a> (2013)."
+      },
+      {
+        "type": "text",
+        "content": "The psychological complexity of Cole's character, questioning his own sanity while potentially changing history, set a new standard for sci-fi protagonists. This approach influenced later films like <a href=\"/movie/17431\" class=\"movie-title\" data-tmdb-id=\"17431\">Moon</a> (2009) and <a href=\"/movie/206487\" class=\"movie-title\" data-tmdb-id=\"206487\">Predestination</a> (2014), where identity and reality become increasingly fluid concepts. The film's exploration of apocalyptic themes through the lens of mental illness rather than traditional action created a unique subgenre of cerebral science fiction. SUBHEAD: Time Travel as Psychological Horror"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Donnie Darko",
+            "year": 2001,
+            "slug": "A troubled teenager grapples with visions of the end of the world and time travel",
+            "poster": "https://image.tmdb.org/t/p/w500/fhQoQfejY1hUcwyuLgpBrYs6uFt.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 141,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fhQoQfejY1hUcwyuLgpBrYs6uFt.jpg"
+          },
+          {
+            "title": "Primer",
+            "year": 2004,
+            "slug": "Ultra-complex time travel thriller about engineers who accidentally discover time travel",
+            "poster": "https://image.tmdb.org/t/p/w500/xEoq2WmDzpzxhkHEsmOYOg6BPg6.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 14337,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xEoq2WmDzpzxhkHEsmOYOg6BPg6.jpg"
+          },
+          {
+            "title": "Coherence",
+            "year": 2013,
+            "slug": "A dinner party becomes surreal when a passing comet creates alternate realities",
+            "poster": "https://image.tmdb.org/t/p/w500/ezUtb9m5DeLwL2gxi4gktzNCvQv.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 220289,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ezUtb9m5DeLwL2gxi4gktzNCvQv.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Gilliam's treatment of time travel as a form of psychological torture rather than adventure marked a significant shift in the genre. The film's influence can be seen in later works like <a href=\"/movie/26466\" class=\"movie-title\" data-tmdb-id=\"26466\">Triangle</a> (2009) and <a href=\"/movie/14139\" class=\"movie-title\" data-tmdb-id=\"14139\">Timecrimes</a> (2007), where time travel becomes a trap rather than an escape. The recurring motif of Cole's childhood memory and its ultimate revelation draws parallels to <a href=\"/movie/329865\" class=\"movie-title\" data-tmdb-id=\"329865\">Arrival</a> (2016), where time, memory, and perception become inseparable."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Time Travel in Cinema: From Wells to Nolan",
+      "Terry Gilliam's Dystopian Trilogy: Brazil, 12 Monkeys, and Fear and Loathing",
+      "Mental Illness as Metaphor in Science Fiction Film",
+      "The Influence of German Expressionism on Modern Sci-Fi",
+      "Circular Narratives and Predestination Paradoxes in Film"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Blade Runner",
+          "year": 1982,
+          "slug": "Dystopian noir about a detective hunting artificial humans",
+          "poster": "https://image.tmdb.org/t/p/w500/63N9uy8nd9j7Eog2axPQ8lbr3Wj.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 78,
+          "poster_url": "https://image.tmdb.org/t/p/w500/63N9uy8nd9j7Eog2axPQ8lbr3Wj.jpg"
+        },
+        {
+          "title": "Time Bandits",
+          "year": 1981,
+          "slug": "Gilliam's fantasy about a boy traveling through time with dwarves",
+          "poster": "https://image.tmdb.org/t/p/w500/4VZtpwdhHQSa4LUkvujyGAHb1hG.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 36819,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4VZtpwdhHQSa4LUkvujyGAHb1hG.jpg"
+        },
+        {
+          "title": "The Fisher King",
+          "year": 1991,
+          "slug": "Gilliam's modern fairy tale about redemption and mental illness",
+          "poster": "https://image.tmdb.org/t/p/w500/hwIYw22HmAUMobV4zsX69MgfVUz.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 177,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hwIYw22HmAUMobV4zsX69MgfVUz.jpg"
+        },
+        {
+          "title": "Memento",
+          "year": 2000,
+          "slug": "Psychological thriller told in reverse chronological order",
+          "poster": "https://image.tmdb.org/t/p/w500/fKTPH2WvH8nHTXeBYBVhawtRqtR.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 77,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fKTPH2WvH8nHTXeBYBVhawtRqtR.jpg"
+        },
+        {
+          "title": "eXistenZ",
+          "year": 1999,
+          "slug": "Mind-bending sci-fi about virtual reality and perception",
+          "poster": "https://image.tmdb.org/t/p/w500/kETKF0JhdTPn1knci8CAdYL0d79.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 1946,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kETKF0JhdTPn1knci8CAdYL0d79.jpg"
+        },
+        {
+          "title": "Jacob's Ladder",
+          "year": 1990,
+          "slug": "Psychological horror about a Vietnam vet's disturbing visions",
+          "poster": "https://image.tmdb.org/t/p/w500/ufLcHIi1aXjjH8MediAMvnwDsVI.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 2291,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ufLcHIi1aXjjH8MediAMvnwDsVI.jpg"
+        },
+        {
+          "title": "Pi",
+          "year": 1998,
+          "slug": "Psychological thriller about a mathematician's descent into madness",
+          "poster": "https://image.tmdb.org/t/p/w500/fJA22FjlAW8rzrOw9Mwanl6oTc9.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 473,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fJA22FjlAW8rzrOw9Mwanl6oTc9.jpg"
+        },
+        {
+          "title": "The Butterfly Effect",
+          "year": 2004,
+          "slug": "A man attempts to change his past with devastating consequences",
+          "poster": "https://image.tmdb.org/t/p/w500/ea5iv7TWMh18fOKoRGgmtcg85Gx.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1954,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ea5iv7TWMh18fOKoRGgmtcg85Gx.jpg"
+        },
+        {
+          "title": "A Scanner Darkly",
+          "year": 2006,
+          "slug": "Rotoscoped adaptation of Philip K. Dick's paranoid sci-fi novel",
+          "poster": "https://image.tmdb.org/t/p/w500/lUKudOpHICDj6A6SO7DdaZM4W48.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 3509,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lUKudOpHICDj6A6SO7DdaZM4W48.jpg"
+        },
+        {
+          "title": "Videodrome",
+          "year": 1983,
+          "slug": "Cronenberg's surreal horror about reality-altering television",
+          "poster": "https://image.tmdb.org/t/p/w500/qqqkiZSU9EBGZ1KiDmfn07S7qvv.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 837,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qqqkiZSU9EBGZ1KiDmfn07S7qvv.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

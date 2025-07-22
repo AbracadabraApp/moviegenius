@@ -1,0 +1,161 @@
+{
+  "props": {
+    "title": "Monkey Business",
+    "year": 1952,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/ffdlBEdEjGAi4Dh0mnv7R9feOwX.jpg",
+    "initialStreaming": null,
+    "tmdbId": 24008,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Howard Hawks' screwball comedy Monkey Business brilliantly pairs Cary Grant and Ginger Rogers in a madcap exploration of aging, youth, and scientific mishaps. Grant plays Dr. Barnaby Fulton, a chemist who accidentally discovers a youth serum that sends both him and his wife through increasingly chaotic personality regressions. The film builds on Hawks' earlier screwball masterpieces like <a href=\"/movie/900\" class=\"movie-title\" data-tmdb-id=\"900\">Bringing Up Baby</a> (1938) and <a href=\"/movie/3085\" class=\"movie-title\" data-tmdb-id=\"3085\">His Girl Friday</a> (1940), maintaining that rapid-fire dialogue and physical comedy while adding a clever scientific twist that speaks to 1950s anxieties about modern chemistry and aging."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Bringing Up Baby",
+            "year": 1938,
+            "slug": "Katharine Hepburn and Cary Grant chase a leopard and a dinosaur bone in this definitive screwball comedy",
+            "poster": "https://image.tmdb.org/t/p/w500/vTNNOtemaYmtx3k2NpsLMRJKEwZ.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 900,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vTNNOtemaYmtx3k2NpsLMRJKEwZ.jpg"
+          },
+          {
+            "title": "The Nutty Professor",
+            "year": 1963,
+            "slug": "Jerry Lewis plays a nerdy professor who creates a potion turning him into a smooth ladies' man",
+            "poster": "https://image.tmdb.org/t/p/w500/a3lzU19j7WGfyXVDfPMdh8DAkru.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 18331,
+            "poster_url": "https://image.tmdb.org/t/p/w500/a3lzU19j7WGfyXVDfPMdh8DAkru.jpg"
+          },
+          {
+            "title": "Dr. Jekyll and Mr. Hyde",
+            "year": 1941,
+            "slug": "Spencer Tracy stars in this psychological take on the classic tale of scientific transformation",
+            "poster": "https://image.tmdb.org/t/p/w500/2GDdW84XSX3BYMJ9tmnFkZOGJyB.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 3022,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2GDdW84XSX3BYMJ9tmnFkZOGJyB.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of chemical transformation connects it to a rich tradition of Hollywood scientists-gone-wild narratives. While <a href=\"/movie/3022\" class=\"movie-title\" data-tmdb-id=\"3022\">Dr. Jekyll and Mr. Hyde</a> (1941) took a darker approach, Monkey Business plays its scientific mishaps for laughs while still maintaining subtle commentary on marriage, aging, and professional ambition. Marilyn Monroe's supporting role as a ditzy secretary adds another layer of youth/age contrast, coming just before her breakout roles in <a href=\"/movie/759\" class=\"movie-title\" data-tmdb-id=\"759\">Gentlemen Prefer Blondes</a> (1953) and <a href=\"/movie/10653\" class=\"movie-title\" data-tmdb-id=\"10653\">The Seven Year Itch</a> (1955). SUBHEAD: The Science Comedy Evolution"
+      },
+      {
+        "type": "text",
+        "content": "Monkey Business helped establish a specific comedy subgenre about scientific experiments gone wrong that would influence films for decades. Its DNA can be seen in everything from <a href=\"/movie/18331\" class=\"movie-title\" data-tmdb-id=\"18331\">The Nutty Professor</a> (1963) to <a href=\"/movie/11814\" class=\"movie-title\" data-tmdb-id=\"11814\">Weird Science</a> (1985) and even modern variations like <a href=\"/movie/9574\" class=\"movie-title\" data-tmdb-id=\"9574\">Flubber</a> (1997). The film's particular genius lies in how it uses its premise to explore relationship dynamics - as Grant and Rogers regress to younger versions of themselves, their marriage faces both hilarious and genuinely insightful challenges."
+      }
+    ],
+    "exploreFurther": [
+      "Howard Hawks' Evolution of Screwball Comedy",
+      "Chemistry in Classic Hollywood Cinema",
+      "Cary Grant's Comedy Techniques",
+      "1950s Scientific Progress in Film",
+      "Marilyn Monroe's Early Supporting Roles"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Philadelphia Story",
+          "year": 1940,
+          "slug": "Classic romantic comedy with Cary Grant, Katharine Hepburn, and James Stewart",
+          "poster": "https://image.tmdb.org/t/p/w500/dKUubjvxO78XDts6VP1Ggcp4R9O.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 981,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dKUubjvxO78XDts6VP1Ggcp4R9O.jpg"
+        },
+        {
+          "title": "I Was a Male War Bride",
+          "year": 1949,
+          "slug": "Hawks directs Grant in gender-bending military comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/gwliIJs9TWlZAcp6k0cx0I81W5e.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 23567,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gwliIJs9TWlZAcp6k0cx0I81W5e.jpg"
+        },
+        {
+          "title": "Ball of Fire",
+          "year": 1941,
+          "slug": "Barbara Stanwyck educates stuffy professors in Hawks comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/t9L16dMTuNq4saLpQswZjkNvaMt.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 29884,
+          "poster_url": "https://image.tmdb.org/t/p/w500/t9L16dMTuNq4saLpQswZjkNvaMt.jpg"
+        },
+        {
+          "title": "Arsenic and Old Lace",
+          "year": 1944,
+          "slug": "Grant discovers his sweet aunts are serial killers",
+          "poster": "https://image.tmdb.org/t/p/w500/xG1GEEQGgExKl0WT5sRo1Arst5D.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 212,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xG1GEEQGgExKl0WT5sRo1Arst5D.jpg"
+        },
+        {
+          "title": "Operation Petticoat",
+          "year": 1959,
+          "slug": "Grant commands a pink submarine in WWII comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/pIsm8JvpFZidVxKexv5UgoCjwpZ.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 9660,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pIsm8JvpFZidVxKexv5UgoCjwpZ.jpg"
+        },
+        {
+          "title": "The Bachelor and the Bobby-Soxer",
+          "year": 1947,
+          "slug": "Grant caught between judge and teenage admirer",
+          "poster": "https://image.tmdb.org/t/p/w500/eeBn5yhOBMBq2qQ9x2xQHyP1ZJk.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 27437,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eeBn5yhOBMBq2qQ9x2xQHyP1ZJk.jpg"
+        },
+        {
+          "title": "Father Goose",
+          "year": 1964,
+          "slug": "Grant plays reluctant WWII coast watcher",
+          "poster": "https://image.tmdb.org/t/p/w500/Tp4vSQef0qsI78M90SsZZLJzPE.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 30295,
+          "poster_url": "https://image.tmdb.org/t/p/w500/Tp4vSQef0qsI78M90SsZZLJzPE.jpg"
+        },
+        {
+          "title": "Mr. Blandings Builds His Dream House",
+          "year": 1948,
+          "slug": "Grant and Loy face housing mishaps",
+          "poster": "https://image.tmdb.org/t/p/w500/smKM575W3FLvWHna5YaWWeN5po8.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 32294,
+          "poster_url": "https://image.tmdb.org/t/p/w500/smKM575W3FLvWHna5YaWWeN5po8.jpg"
+        },
+        {
+          "title": "People Will Talk",
+          "year": 1951,
+          "slug": "Grant plays unconventional doctor facing scandal",
+          "poster": "https://image.tmdb.org/t/p/w500/w7wdYUwie8kBsEojZCF5gbTfVii.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 23152,
+          "poster_url": "https://image.tmdb.org/t/p/w500/w7wdYUwie8kBsEojZCF5gbTfVii.jpg"
+        },
+        {
+          "title": "Room for One More",
+          "year": 1952,
+          "slug": "Grant and Drake adopt troubled children",
+          "poster": "https://image.tmdb.org/t/p/w500/2VJg810IoARDJDtZFGePRciXcsV.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 48627,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2VJg810IoARDJDtZFGePRciXcsV.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}
