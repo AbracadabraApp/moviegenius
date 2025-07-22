@@ -111,7 +111,9 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
@@ -212,5 +214,11 @@
   "locked": true,
   "lockedAt": "2025-06-18T17:04:54.829Z",
   "lockedBy": "claude-generation-enhanced",
-  "heroImage": "/images/hero/theme-3-movements/series-2-german-cinema-heritage//1-german-expressionism-silent-era.jpg"
+  "heroImage": "/images/hero/theme-3-movements/series-2-german-cinema-heritage//1-german-expressionism-silent-era.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:41.606Z",
+    "hasLinks": false,
+    "linksAdded": 0,
+    "tier": "tier2_link_only"
+  }
 }

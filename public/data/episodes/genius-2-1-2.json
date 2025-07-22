@@ -24,7 +24,7 @@
     "sections": [
       {
         "type": "text",
-        "content": "Lupino's transition from actress to director in the late 1940s marked a singular achievement in Hollywood history. After establishing herself as a compelling dramatic actress in films like \"High Sierra\" (1941) and \"The Hard Way\" (1943), Lupino became frustrated with the limitations of studio system roles. In 1949, she co-founded The Filmakers, an independent production company, becoming the first woman to produce, direct, and write major American films since Dorothy Arzner. Her directorial debut \"Not Wanted\" (1949) demonstrated her willingness to tackle taboo subjects, focusing on unwed motherhood with a documentary-like realism that distinguished her work from mainstream Hollywood productions."
+        "content": "Lupino's transition from actress to director in the late 1940s marked a singular achievement in Hollywood history. After establishing herself as a compelling dramatic actress in films like <a href=\"/movie/27725\" class=\"movie-title\" data-tmdb-id=\"27725\">High Sierra</a> (1941) and <a href=\"/movie/36612\" class=\"movie-title\" data-tmdb-id=\"36612\">The Hard Way</a> (1943), Lupino became frustrated with the limitations of studio system roles. In 1949, she co-founded The Filmakers, an independent production company, becoming the first woman to produce, direct, and write major American films since Dorothy Arzner. Her directorial debut <a href=\"/movie/126265\" class=\"movie-title\" data-tmdb-id=\"126265\">Not Wanted</a> (1949) demonstrated her willingness to tackle taboo subjects, focusing on unwed motherhood with a documentary-like realism that distinguished her work from mainstream Hollywood productions."
       },
       {
         "type": "movies",
@@ -82,7 +82,7 @@
       },
       {
         "type": "text",
-        "content": "\"The Hitch-Hiker\" (1953) represents Lupino's masterpiece of tension and technical precision. As the first film noir directed by a woman, it showcases her mastery of the genre's visual language while subverting its typical gender dynamics. Shot by Nicholas Musuraca, who had photographed many classic noirs, the film demonstrates Lupino's sophisticated understanding of light and shadow. She employed unusual camera angles and claustrophobic framing to heighten tension, particularly in the car scenes where three characters are trapped in close quarters. The film's desert locations are used to create both physical and psychological isolation, with Lupino's direction emphasizing the vastness of the landscape against the intimate human drama."
+        "content": "<a href=\"/movie/41462\" class=\"movie-title\" data-tmdb-id=\"41462\">The Hitch-Hiker</a> (1953) represents Lupino's masterpiece of tension and technical precision. As the first film noir directed by a woman, it showcases her mastery of the genre's visual language while subverting its typical gender dynamics. Shot by Nicholas Musuraca, who had photographed many classic noirs, the film demonstrates Lupino's sophisticated understanding of light and shadow. She employed unusual camera angles and claustrophobic framing to heighten tension, particularly in the car scenes where three characters are trapped in close quarters. The film's desert locations are used to create both physical and psychological isolation, with Lupino's direction emphasizing the vastness of the landscape against the intimate human drama."
       },
       {
         "type": "movies",
@@ -111,7 +111,9 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
@@ -144,7 +146,7 @@
       },
       {
         "type": "text",
-        "content": "Throughout her directorial career, Lupino continued acting, bringing nuanced performances to films like \"On Dangerous Ground\" (1951) and \"While the City Sleeps\" (1956). This dual career provided her with unique insights into performance direction. Her experience in front of the camera informed her directorial approach, particularly in working with actors to achieve naturalistic performances. She developed a reputation for being able to elicit powerful emotional performances while maintaining technical precision, a skill that influenced later actor-directors like Clint Eastwood and Robert Redford."
+        "content": "Throughout her directorial career, Lupino continued acting, bringing nuanced performances to films like <a href=\"/movie/31152\" class=\"movie-title\" data-tmdb-id=\"31152\">On Dangerous Ground</a> (1951) and <a href=\"/movie/36786\" class=\"movie-title\" data-tmdb-id=\"36786\">While the City Sleeps</a> (1956). This dual career provided her with unique insights into performance direction. Her experience in front of the camera informed her directorial approach, particularly in working with actors to achieve naturalistic performances. She developed a reputation for being able to elicit powerful emotional performances while maintaining technical precision, a skill that influenced later actor-directors like Clint Eastwood and Robert Redford."
       },
       {
         "type": "movies",
@@ -220,5 +222,11 @@
   "locked": true,
   "lockedAt": "2025-06-17T22:58:01.230Z",
   "lockedBy": "claude-generation-enhanced",
-  "heroImage": "/images/hero/theme-2-directors/series-1-women-directors//2-ida-lupino-the-forgotten-auteur.jpg"
+  "heroImage": "/images/hero/theme-2-directors/series-1-women-directors//2-ida-lupino-the-forgotten-auteur.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:16.732Z",
+    "hasLinks": true,
+    "linksAdded": 3,
+    "tier": "tier2_link_only"
+  }
 }

@@ -24,7 +24,7 @@
     "sections": [
       {
         "type": "text",
-        "content": "The traditional theatrical release model that dominated cinema for over a century faced its first serious disruption when Netflix began streaming content directly to consumers. This shift started modestly with older library titles but accelerated dramatically when Netflix launched its first original film, \"Beasts of No Nation\" (2015), simultaneously online and in select theaters. This controversial day-and-date release strategy challenged the established 90-day theatrical window, drawing fierce criticism from traditional exhibitors and directors like Christopher Nolan, who viewed it as an existential threat to theatrical exhibition. However, it also democratized access to independent and international films that might never have reached wider audiences through conventional distribution."
+        "content": "The traditional theatrical release model that dominated cinema for over a century faced its first serious disruption when Netflix began streaming content directly to consumers. This shift started modestly with older library titles but accelerated dramatically when Netflix launched its first original film, <a href=\"/movie/283587\" class=\"movie-title\" data-tmdb-id=\"283587\">Beasts of No Nation</a> (2015), simultaneously online and in select theaters. This controversial day-and-date release strategy challenged the established 90-day theatrical window, drawing fierce criticism from traditional exhibitors and directors like Christopher Nolan, who viewed it as an existential threat to theatrical exhibition. However, it also democratized access to independent and international films that might never have reached wider audiences through conventional distribution."
       },
       {
         "type": "movies",
@@ -53,7 +53,7 @@
       },
       {
         "type": "text",
-        "content": "Netflix's distribution model began influencing the very aesthetics of filmmaking. Cinematographers and directors had to consider how their work would appear on devices ranging from phones to 4K TVs. This led to what critics termed the \"Netflix look\" - high-key lighting, shorter shot lengths, and increased close-ups to maintain clarity on smaller screens. Films like \"Bird Box\" (2018) and \"Extraction\" (2020) exemplified this approach, while others like \"The Irishman\" (2019) maintained traditional cinematic qualities despite being primarily viewed at home. This tension between theatrical and streaming aesthetics continues to shape contemporary cinematography."
+        "content": "Netflix's distribution model began influencing the very aesthetics of filmmaking. Cinematographers and directors had to consider how their work would appear on devices ranging from phones to 4K TVs. This led to what critics termed the \"Netflix look\" - high-key lighting, shorter shot lengths, and increased close-ups to maintain clarity on smaller screens. Films like <a href=\"/movie/405774\" class=\"movie-title\" data-tmdb-id=\"405774\">Bird Box</a> (2018) and <a href=\"/movie/545609\" class=\"movie-title\" data-tmdb-id=\"545609\">Extraction</a> (2020) exemplified this approach, while others like <a href=\"/movie/398978\" class=\"movie-title\" data-tmdb-id=\"398978\">The Irishman</a> (2019) maintained traditional cinematic qualities despite being primarily viewed at home. This tension between theatrical and streaming aesthetics continues to shape contemporary cinematography."
       },
       {
         "type": "movies",
@@ -82,7 +82,7 @@
       },
       {
         "type": "text",
-        "content": "Netflix's international expansion revolutionized world cinema distribution. Films like \"Okja\" (2017) and \"Atlantics\" (2019) reached global audiences instantly, bypassing traditional territory-by-territory rollouts. This democratization of distribution enabled filmmakers from underrepresented regions to find worldwide audiences. Korean cinema, in particular, benefited from this model, with films like \"The Call\" (2020) finding international success years before \"Parasite\" broke theatrical barriers. The platform's algorithm-driven recommendation system also influenced viewing habits, sometimes leading to unexpected hits like Spanish thriller \"The Platform\" (2019)."
+        "content": "Netflix's international expansion revolutionized world cinema distribution. Films like <a href=\"/movie/387426\" class=\"movie-title\" data-tmdb-id=\"387426\">Okja</a> (2017) and <a href=\"/movie/496967\" class=\"movie-title\" data-tmdb-id=\"496967\">Atlantics</a> (2019) reached global audiences instantly, bypassing traditional territory-by-territory rollouts. This democratization of distribution enabled filmmakers from underrepresented regions to find worldwide audiences. Korean cinema, in particular, benefited from this model, with films like <a href=\"/movie/1028824\" class=\"movie-title\" data-tmdb-id=\"1028824\">The Call</a> (2020) finding international success years before \"Parasite\" broke theatrical barriers. The platform's algorithm-driven recommendation system also influenced viewing habits, sometimes leading to unexpected hits like Spanish thriller <a href=\"/movie/619264\" class=\"movie-title\" data-tmdb-id=\"619264\">The Platform</a> (2019)."
       },
       {
         "type": "movies",
@@ -111,11 +111,13 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
-        "content": "Netflix's willingness to fund ambitious projects transformed production possibilities. Traditional studios might have balked at Martin Scorsese's $159 million budget for \"The Irishman\" or the experimental narrative structure of \"I'm Thinking of Ending Things\" (2020). The streaming model, freed from box office pressures, enabled riskier creative choices. However, this also led to criticism about Netflix's \"quantity over quality\" approach, with some arguing that the platform's enormous output diluted overall film quality. The success of prestige projects like \"Marriage Story\" (2019) and \"Mank\" (2020) demonstrated the platform's ability to balance commercial and artistic ambitions."
+        "content": "Netflix's willingness to fund ambitious projects transformed production possibilities. Traditional studios might have balked at Martin Scorsese's $159 million budget for \"The Irishman\" or the experimental narrative structure of <a href=\"/movie/500840\" class=\"movie-title\" data-tmdb-id=\"500840\">I'm Thinking of Ending Things</a> (2020). The streaming model, freed from box office pressures, enabled riskier creative choices. However, this also led to criticism about Netflix's \"quantity over quality\" approach, with some arguing that the platform's enormous output diluted overall film quality. The success of prestige projects like <a href=\"/movie/492188\" class=\"movie-title\" data-tmdb-id=\"492188\">Marriage Story</a> (2019) and <a href=\"/movie/614560\" class=\"movie-title\" data-tmdb-id=\"614560\">Mank</a> (2020) demonstrated the platform's ability to balance commercial and artistic ambitions."
       },
       {
         "type": "movies",
@@ -212,5 +214,11 @@
   "locked": true,
   "lockedAt": "2025-06-18T17:32:30.620Z",
   "lockedBy": "claude-generation-enhanced",
-  "heroImage": "/images/hero/theme-5-topics/series-2-historical-periods//5-streaming-changes-everything.jpg"
+  "heroImage": "/images/hero/theme-5-topics/series-2-historical-periods//5-streaming-changes-everything.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:32:04.776Z",
+    "hasLinks": true,
+    "linksAdded": 4,
+    "tier": "tier2_link_only"
+  }
 }

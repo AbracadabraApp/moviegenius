@@ -53,7 +53,7 @@
       },
       {
         "type": "text",
-        "content": "Before LED walls, films like \"Avatar\" (2009) relied heavily on post-production compositing, requiring actors to perform against empty green screens. The transition to virtual production marks a return to the \"in-camera\" effects philosophy of classic filmmaking while leveraging cutting-edge technology. Cinematographer Bradford Young's work on \"Solo: A Star Wars Story\" (2018) demonstrated early experiments with LED screens for cockpit sequences, laying groundwork for future developments. This hybrid approach combined practical effects with digital environments, creating a more organic final image."
+        "content": "Before LED walls, films like <a href=\"/movie/19995\" class=\"movie-title\" data-tmdb-id=\"19995\">Avatar</a> (2009) relied heavily on post-production compositing, requiring actors to perform against empty green screens. The transition to virtual production marks a return to the \"in-camera\" effects philosophy of classic filmmaking while leveraging cutting-edge technology. Cinematographer Bradford Young's work on <a href=\"/movie/348350\" class=\"movie-title\" data-tmdb-id=\"348350\">Solo: A Star Wars Story</a> (2018) demonstrated early experiments with LED screens for cockpit sequences, laying groundwork for future developments. This hybrid approach combined practical effects with digital environments, creating a more organic final image."
       },
       {
         "type": "movies",
@@ -82,7 +82,7 @@
       },
       {
         "type": "text",
-        "content": "The integration of real-time game engines, particularly Unreal Engine, has revolutionized the virtual production pipeline. \"Thor: Love and Thunder\" (2022) utilized massive LED volumes to create alien worlds with unprecedented control over lighting and environment. Cinematographer Barry Idoine's work on \"The Mandalorian\" demonstrated how LED walls enable interactive lighting that would be impossible with traditional green screen. The technology allows for immediate visualization of complex scenes, reducing post-production time and enabling more creative decisions on set."
+        "content": "The integration of real-time game engines, particularly Unreal Engine, has revolutionized the virtual production pipeline. <a href=\"/movie/616037\" class=\"movie-title\" data-tmdb-id=\"616037\">Thor: Love and Thunder</a> (2022) utilized massive LED volumes to create alien worlds with unprecedented control over lighting and environment. Cinematographer Barry Idoine's work on \"The Mandalorian\" demonstrated how LED walls enable interactive lighting that would be impossible with traditional green screen. The technology allows for immediate visualization of complex scenes, reducing post-production time and enabling more creative decisions on set."
       },
       {
         "type": "movies",
@@ -107,11 +107,13 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
-        "content": "The advancement of this technology has created new roles and workflows in film production. \"House of the Dragon\" (2022) employed virtual art directors specifically for LED wall content creation, while \"The Midnight Sky\" (2020) used the technology to create complex space sequences. The integration of previsualization artists and real-time environment creators on set has fundamentally changed the traditional film production hierarchy, bringing post-production elements into the principal photography phase."
+        "content": "The advancement of this technology has created new roles and workflows in film production. \"House of the Dragon\" (2022) employed virtual art directors specifically for LED wall content creation, while <a href=\"/movie/614911\" class=\"movie-title\" data-tmdb-id=\"614911\">The Midnight Sky</a> (2020) used the technology to create complex space sequences. The integration of previsualization artists and real-time environment creators on set has fundamentally changed the traditional film production hierarchy, bringing post-production elements into the principal photography phase."
       },
       {
         "type": "movies",
@@ -161,7 +163,7 @@
       },
       {
         "type": "text",
-        "content": "The impact on actor performance has been significant, with performers reporting enhanced ability to interact with digital environments. \"The Volume\" documentary (2020) showcases how actors like Pedro Pascal could better engage with virtual elements compared to traditional green screen work. This improvement in performance authenticity has led to more directors embracing the technology, including veterans like James Cameron who incorporated elements of LED wall technology into \"Avatar: The Way of Water\" (2022)."
+        "content": "The impact on actor performance has been significant, with performers reporting enhanced ability to interact with digital environments. \"The Volume\" documentary (2020) showcases how actors like Pedro Pascal could better engage with virtual elements compared to traditional green screen work. This improvement in performance authenticity has led to more directors embracing the technology, including veterans like James Cameron who incorporated elements of LED wall technology into <a href=\"/movie/76600\" class=\"movie-title\" data-tmdb-id=\"76600\">Avatar: The Way of Water</a> (2022)."
       },
       {
         "type": "movies",
@@ -186,11 +188,13 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
-        "content": "The future of virtual production continues to evolve with developments in real-time rendering quality and LED technology. \"Dune: Part Two\" (2024) is implementing next-generation LED panels with higher resolution and better color accuracy. The technology is also expanding beyond traditional film and television, with applications in live broadcast, virtual reality productions, and interactive entertainment experiences."
+        "content": "The future of virtual production continues to evolve with developments in real-time rendering quality and LED technology. <a href=\"/movie/693134\" class=\"movie-title\" data-tmdb-id=\"693134\">Dune: Part Two</a> (2024) is implementing next-generation LED panels with higher resolution and better color accuracy. The technology is also expanding beyond traditional film and television, with applications in live broadcast, virtual reality productions, and interactive entertainment experiences."
       }
     ],
     "moreIdeas": {
@@ -229,5 +233,11 @@
   "locked": true,
   "lockedAt": "2025-06-18T17:09:34.919Z",
   "lockedBy": "claude-generation-enhanced",
-  "heroImage": "/images/hero/theme-4-filmmaking/series-1-technical-evolution//6-virtual-production-revolution.jpg"
+  "heroImage": "/images/hero/theme-4-filmmaking/series-1-technical-evolution//6-virtual-production-revolution.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:51.328Z",
+    "hasLinks": true,
+    "linksAdded": 5,
+    "tier": "tier2_link_only"
+  }
 }

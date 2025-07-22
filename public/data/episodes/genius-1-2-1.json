@@ -53,7 +53,7 @@
       },
       {
         "type": "text",
-        "content": "Before Argento, Mario Bava laid the groundwork for giallo's visual style with \"Blood and Black Lace\" (1964). The film's fashion house setting allowed Bava to experiment with color, texture, and composition in ways that would become genre hallmarks. His use of bold lighting schemes and dramatic shadows drew from German Expressionism while adding distinctly modern elements. The murderer's black-gloved hands, the fetishistic attention to weapons, and the blend of sexuality and death became essential giallo elements. Bava's innovative camera techniques, including elaborate tracking shots and extreme angles, established a template for how to photograph violence as artistic spectacle."
+        "content": "Before Argento, Mario Bava laid the groundwork for giallo's visual style with <a href=\"/movie/28055\" class=\"movie-title\" data-tmdb-id=\"28055\">Blood and Black Lace</a> (1964). The film's fashion house setting allowed Bava to experiment with color, texture, and composition in ways that would become genre hallmarks. His use of bold lighting schemes and dramatic shadows drew from German Expressionism while adding distinctly modern elements. The murderer's black-gloved hands, the fetishistic attention to weapons, and the blend of sexuality and death became essential giallo elements. Bava's innovative camera techniques, including elaborate tracking shots and extreme angles, established a template for how to photograph violence as artistic spectacle."
       },
       {
         "type": "movies",
@@ -103,11 +103,13 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
-        "content": "The influence of giallo aesthetics extended beyond Italy, particularly in the realm of cinematography. Directors like Brian De Palma openly borrowed from Argento's playbook, with films like \"Dressed to Kill\" (1980) adopting giallo's split-screen techniques, subjective camera work, and elaborate murder sequences. The genre's impact can be seen in contemporary films like Nicolas Winding Refn's \"Neon Demon\" (2016), which channels giallo's preoccupation with fashion, death, and saturated colors. Modern horror cinematographers frequently reference giallo's bold color schemes and dynamic camera movements."
+        "content": "The influence of giallo aesthetics extended beyond Italy, particularly in the realm of cinematography. Directors like Brian De Palma openly borrowed from Argento's playbook, with films like <a href=\"/movie/11033\" class=\"movie-title\" data-tmdb-id=\"11033\">Dressed to Kill</a> (1980) adopting giallo's split-screen techniques, subjective camera work, and elaborate murder sequences. The genre's impact can be seen in contemporary films like Nicolas Winding Refn's \"Neon Demon\" (2016), which channels giallo's preoccupation with fashion, death, and saturated colors. Modern horror cinematographers frequently reference giallo's bold color schemes and dynamic camera movements."
       },
       {
         "type": "movies",
@@ -132,7 +134,7 @@
       },
       {
         "type": "text",
-        "content": "The sound design and musical scores of giallo films were equally revolutionary. Argento's collaboration with progressive rock band Goblin produced iconic soundtracks that departed from traditional horror music. In \"Suspiria\" (1977), the overwhelming sound mix combines Goblin's aggressive score with experimental sound effects to create an immersive atmosphere of dread. This approach to horror sound design influenced countless films and demonstrated how audio elements could enhance visual terror. The genre's innovative use of music and sound effects established new paradigms for horror film scoring."
+        "content": "The sound design and musical scores of giallo films were equally revolutionary. Argento's collaboration with progressive rock band Goblin produced iconic soundtracks that departed from traditional horror music. In <a href=\"/movie/11906\" class=\"movie-title\" data-tmdb-id=\"11906\">Suspiria</a> (1977), the overwhelming sound mix combines Goblin's aggressive score with experimental sound effects to create an immersive atmosphere of dread. This approach to horror sound design influenced countless films and demonstrated how audio elements could enhance visual terror. The genre's innovative use of music and sound effects established new paradigms for horror film scoring."
       },
       {
         "type": "movies",
@@ -157,7 +159,7 @@
       },
       {
         "type": "text",
-        "content": "The psychological aspects of giallo violence were particularly influential. Unlike American slasher films, giallo murders often explored themes of sexual identity, repression, and trauma. In \"The Bird with the Crystal Plumage\" (1970), Argento uses subjective camera work and unreliable perspective to challenge viewers' assumptions about gender and violence. The genre's psychological complexity influenced later films like \"Basic Instinct\" (1992) and \"Black Swan\" (2010), which similarly blend sexuality, violence, and psychological uncertainty."
+        "content": "The psychological aspects of giallo violence were particularly influential. Unlike American slasher films, giallo murders often explored themes of sexual identity, repression, and trauma. In <a href=\"/movie/20345\" class=\"movie-title\" data-tmdb-id=\"20345\">The Bird with the Crystal Plumage</a> (1970), Argento uses subjective camera work and unreliable perspective to challenge viewers' assumptions about gender and violence. The genre's psychological complexity influenced later films like <a href=\"/movie/402\" class=\"movie-title\" data-tmdb-id=\"402\">Basic Instinct</a> (1992) and <a href=\"/movie/44214\" class=\"movie-title\" data-tmdb-id=\"44214\">Black Swan</a> (2010), which similarly blend sexuality, violence, and psychological uncertainty."
       },
       {
         "type": "movies",
@@ -225,5 +227,11 @@
   "locked": true,
   "lockedAt": "2025-06-17T22:07:09.294Z",
   "lockedBy": "claude-generation-enhanced",
-  "heroImage": "/images/hero/theme-1-genres/series-2-suspense-horror//1-giallo-italian-horror-aesthetics.jpg"
+  "heroImage": "/images/hero/theme-1-genres/series-2-suspense-horror//1-giallo-italian-horror-aesthetics.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:04.162Z",
+    "hasLinks": true,
+    "linksAdded": 4,
+    "tier": "tier2_link_only"
+  }
 }

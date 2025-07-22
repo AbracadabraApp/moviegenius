@@ -24,7 +24,7 @@
     "sections": [
       {
         "type": "text",
-        "content": "Nolan's breakthrough film \"Memento\" (2000) established his fascination with non-linear storytelling and the malleability of memory. Shot by cinematographer Wally Pfister, the film's revolutionary structure - alternating between color sequences moving backward and black-and-white scenes moving forward - creates a disorienting experience that mirrors protagonist Leonard Shelby's anterograde amnesia. This technical innovation wasn't merely stylistic; it forced viewers to actively participate in constructing the narrative, establishing Nolan's trademark of intellectual engagement with audience perception."
+        "content": "Nolan's breakthrough film <a href=\"/movie/77\" class=\"movie-title\" data-tmdb-id=\"77\">Memento</a> (2000) established his fascination with non-linear storytelling and the malleability of memory. Shot by cinematographer Wally Pfister, the film's revolutionary structure - alternating between color sequences moving backward and black-and-white scenes moving forward - creates a disorienting experience that mirrors protagonist Leonard Shelby's anterograde amnesia. This technical innovation wasn't merely stylistic; it forced viewers to actively participate in constructing the narrative, establishing Nolan's trademark of intellectual engagement with audience perception."
       },
       {
         "type": "movies",
@@ -53,7 +53,7 @@
       },
       {
         "type": "text",
-        "content": "With \"The Dark Knight\" (2008), Nolan pioneered the use of IMAX cameras in narrative feature films, shooting over 40 minutes of footage in the format. This technical choice wasn't merely about spectacle - it represented Nolan's commitment to practical effects and photochemical film over digital alternatives. Working again with cinematographer Wally Pfister, Nolan used the massive frame size and clarity of IMAX to create a sense of heightened reality, particularly in sequences like the opening bank heist and the Hong Kong extraction. This innovation would influence countless blockbusters and establish a new standard for theatrical presentation."
+        "content": "With <a href=\"/movie/155\" class=\"movie-title\" data-tmdb-id=\"155\">The Dark Knight</a> (2008), Nolan pioneered the use of IMAX cameras in narrative feature films, shooting over 40 minutes of footage in the format. This technical choice wasn't merely about spectacle - it represented Nolan's commitment to practical effects and photochemical film over digital alternatives. Working again with cinematographer Wally Pfister, Nolan used the massive frame size and clarity of IMAX to create a sense of heightened reality, particularly in sequences like the opening bank heist and the Hong Kong extraction. This innovation would influence countless blockbusters and establish a new standard for theatrical presentation."
       },
       {
         "type": "movies",
@@ -82,7 +82,7 @@
       },
       {
         "type": "text",
-        "content": "\"Inception\" (2010) represents the perfect synthesis of Nolan's preoccupations with time, memory, and spectacle. The film's nested dream levels operate at different temporal speeds, creating a complex narrative architecture that demands careful attention while delivering stunning visual setpieces. Cinematographer Wally Pfister and production designer Guy Hendrix Dyas crafted distinct visual languages for each dream level, while Hans Zimmer's score used time-stretched elements of Édith Piaf's \"Non, je ne regrette rien\" to reinforce the temporal relationships between levels."
+        "content": "<a href=\"/movie/27205\" class=\"movie-title\" data-tmdb-id=\"27205\">Inception</a> (2010) represents the perfect synthesis of Nolan's preoccupations with time, memory, and spectacle. The film's nested dream levels operate at different temporal speeds, creating a complex narrative architecture that demands careful attention while delivering stunning visual setpieces. Cinematographer Wally Pfister and production designer Guy Hendrix Dyas crafted distinct visual languages for each dream level, while Hans Zimmer's score used time-stretched elements of Édith Piaf's \"Non, je ne regrette rien\" to reinforce the temporal relationships between levels."
       },
       {
         "type": "movies",
@@ -111,11 +111,13 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
-        "content": "\"Interstellar\" (2014) marked Nolan's first collaboration with cinematographer Hoyte van Hoytema and demonstrated his ability to combine hard science fiction with emotional storytelling. Working with theoretical physicist Kip Thorne, Nolan created scientifically accurate visualizations of black holes and relativistic time dilation. However, the technical achievements serve a deeply personal story about family bonds transcending space and time. The film's practical effects, including building full-scale spacecraft interiors and minimal use of green screen, create a tangible reality that grounds the cosmic scale."
+        "content": "<a href=\"/movie/157336\" class=\"movie-title\" data-tmdb-id=\"157336\">Interstellar</a> (2014) marked Nolan's first collaboration with cinematographer Hoyte van Hoytema and demonstrated his ability to combine hard science fiction with emotional storytelling. Working with theoretical physicist Kip Thorne, Nolan created scientifically accurate visualizations of black holes and relativistic time dilation. However, the technical achievements serve a deeply personal story about family bonds transcending space and time. The film's practical effects, including building full-scale spacecraft interiors and minimal use of green screen, create a tangible reality that grounds the cosmic scale."
       },
       {
         "type": "movies",
@@ -144,7 +146,7 @@
       },
       {
         "type": "text",
-        "content": "\"Dunkirk\" (2017) represents Nolan's most sophisticated use of time as a narrative device. The film interweaves three storylines operating at different time scales - one week on land, one day at sea, and one hour in the air. Working with editor Lee Smith and composer Hans Zimmer, Nolan uses the sound of a ticking clock throughout the score to create mounting tension. The film's minimal dialogue and emphasis on visual storytelling showcases Nolan's mastery of pure cinema, while the extensive use of IMAX cameras (75% of the runtime) creates an immersive experience."
+        "content": "<a href=\"/movie/374720\" class=\"movie-title\" data-tmdb-id=\"374720\">Dunkirk</a> (2017) represents Nolan's most sophisticated use of time as a narrative device. The film interweaves three storylines operating at different time scales - one week on land, one day at sea, and one hour in the air. Working with editor Lee Smith and composer Hans Zimmer, Nolan uses the sound of a ticking clock throughout the score to create mounting tension. The film's minimal dialogue and emphasis on visual storytelling showcases Nolan's mastery of pure cinema, while the extensive use of IMAX cameras (75% of the runtime) creates an immersive experience."
       },
       {
         "type": "movies",
@@ -212,5 +214,11 @@
   "locked": true,
   "lockedAt": "2025-06-18T17:00:28.628Z",
   "lockedBy": "claude-generation-enhanced",
-  "heroImage": "/images/hero/theme-2-directors/series-4-contemporary-auteurs//2-christopher-nolan-time-memory-imax-spectacle.jpg"
+  "heroImage": "/images/hero/theme-2-directors/series-4-contemporary-auteurs//2-christopher-nolan-time-memory-imax-spectacle.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:32.970Z",
+    "hasLinks": true,
+    "linksAdded": 5,
+    "tier": "tier2_link_only"
+  }
 }

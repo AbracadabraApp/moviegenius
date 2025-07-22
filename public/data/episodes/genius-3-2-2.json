@@ -74,7 +74,7 @@
       },
       {
         "type": "text",
-        "content": "The impact of Murnau's innovations reverberated throughout global cinema. In France, Jean Renoir explicitly credited Murnau's influence on his own mobile camera style, particularly evident in \"La Grande Illusion\" (1937) and \"Rules of the Game\" (1939). The fluid camera movements pioneered by Murnau became essential to the development of French Poetic Realism and later the French New Wave. In Hollywood, directors like Orson Welles studied Murnau's techniques intensively, with \"Citizen Kane\" (1941) displaying clear influences in its dynamic camera movements and deep-focus cinematography. The connection between camera mobility and psychological expression became a cornerstone of cinematic grammar."
+        "content": "The impact of Murnau's innovations reverberated throughout global cinema. In France, Jean Renoir explicitly credited Murnau's influence on his own mobile camera style, particularly evident in <a href=\"/movie/777\" class=\"movie-title\" data-tmdb-id=\"777\">La Grande Illusion</a> (1937) and \"Rules of the Game\" (1939). The fluid camera movements pioneered by Murnau became essential to the development of French Poetic Realism and later the French New Wave. In Hollywood, directors like Orson Welles studied Murnau's techniques intensively, with <a href=\"/movie/15\" class=\"movie-title\" data-tmdb-id=\"15\">Citizen Kane</a> (1941) displaying clear influences in its dynamic camera movements and deep-focus cinematography. The connection between camera mobility and psychological expression became a cornerstone of cinematic grammar."
       },
       {
         "type": "movies",
@@ -99,11 +99,13 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
-        "content": "Murnau's technical solutions to achieve camera mobility were remarkably innovative for their time. His team developed specialized equipment including the \"entfesselte Kamera\" (unchained camera) system, which combined lightweight camera construction with various mounting mechanisms. In \"Faust\" (1926), they created elaborate pulley systems to achieve swooping aerial shots that seemed to defy the technical limitations of the era. These innovations required close collaboration between director, cinematographer, and technical crew, establishing a model for the kind of technical problem-solving that would become crucial to modern filmmaking."
+        "content": "Murnau's technical solutions to achieve camera mobility were remarkably innovative for their time. His team developed specialized equipment including the \"entfesselte Kamera\" (unchained camera) system, which combined lightweight camera construction with various mounting mechanisms. In <a href=\"/movie/10728\" class=\"movie-title\" data-tmdb-id=\"10728\">Faust</a> (1926), they created elaborate pulley systems to achieve swooping aerial shots that seemed to defy the technical limitations of the era. These innovations required close collaboration between director, cinematographer, and technical crew, establishing a model for the kind of technical problem-solving that would become crucial to modern filmmaking."
       },
       {
         "type": "movies",
@@ -137,7 +139,7 @@
       },
       {
         "type": "text",
-        "content": "Murnau's influence extended beyond technical innovation to affect narrative structure and visual storytelling. His ability to convey complex emotional states through camera movement reduced cinema's reliance on intertitles and dialogue, demonstrating film's potential as a purely visual medium. This visual narrative approach influenced directors like Hitchcock, who studied Murnau's work and applied similar techniques in films like \"Vertigo\" (1958), where camera movement creates psychological tension and reveals character relationships without dialogue."
+        "content": "Murnau's influence extended beyond technical innovation to affect narrative structure and visual storytelling. His ability to convey complex emotional states through camera movement reduced cinema's reliance on intertitles and dialogue, demonstrating film's potential as a purely visual medium. This visual narrative approach influenced directors like Hitchcock, who studied Murnau's work and applied similar techniques in films like <a href=\"/movie/426\" class=\"movie-title\" data-tmdb-id=\"426\">Vertigo</a> (1958), where camera movement creates psychological tension and reveals character relationships without dialogue."
       },
       {
         "type": "movies",
@@ -154,11 +156,13 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
-        "content": "The legacy of Murnau's unchained camera continues in contemporary cinema. Directors like Martin Scorsese, who directly referenced Murnau's influence on his work, have used elaborate tracking shots to create emotional impact and narrative momentum. The famous Copacabana tracking shot in \"Goodfellas\" (1990) follows a direct line of influence from Murnau's pioneering work. Modern directors like Alfonso Cuarón and Emmanuel Lubezki have pushed these techniques further with digital technology, creating extended tracking shots that would have seemed impossible in Murnau's era."
+        "content": "The legacy of Murnau's unchained camera continues in contemporary cinema. Directors like Martin Scorsese, who directly referenced Murnau's influence on his work, have used elaborate tracking shots to create emotional impact and narrative momentum. The famous Copacabana tracking shot in <a href=\"/movie/769\" class=\"movie-title\" data-tmdb-id=\"769\">Goodfellas</a> (1990) follows a direct line of influence from Murnau's pioneering work. Modern directors like Alfonso Cuarón and Emmanuel Lubezki have pushed these techniques further with digital technology, creating extended tracking shots that would have seemed impossible in Murnau's era."
       },
       {
         "type": "movies",
@@ -218,5 +222,11 @@
   "locked": true,
   "lockedAt": "2025-06-18T17:05:28.024Z",
   "lockedBy": "claude-generation-enhanced",
-  "heroImage": "/images/hero/theme-3-movements/series-2-german-cinema-heritage//2-murnau-s-camera-movement-revolution.jpg"
+  "heroImage": "/images/hero/theme-3-movements/series-2-german-cinema-heritage//2-murnau-s-camera-movement-revolution.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:42.865Z",
+    "hasLinks": true,
+    "linksAdded": 4,
+    "tier": "tier2_link_only"
+  }
 }

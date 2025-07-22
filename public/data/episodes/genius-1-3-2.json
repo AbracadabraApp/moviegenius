@@ -24,7 +24,7 @@
     "sections": [
       {
         "type": "text",
-        "content": "The genre crystallized during the Great Depression, when audiences craved sophisticated escape and studios navigated strict moral guidelines. Howard Hawks' \"Bringing Up Baby\" (1938) exemplifies the core elements: rapid-fire dialogue, physical comedy, and class conflict wrapped in romantic tension. Katharine Hepburn's wealthy socialite and Cary Grant's stuffy paleontologist establish the archetypal pattern of an unconventional woman upending a rigid man's life. The film's precise timing and overlapping dialogue created a template for verbal comedy that influenced generations of filmmakers. Hawks' direction emphasized physical movement and spatial relationships, using deep focus photography to capture both broad slapstick and subtle facial reactions."
+        "content": "The genre crystallized during the Great Depression, when audiences craved sophisticated escape and studios navigated strict moral guidelines. Howard Hawks' <a href=\"/movie/900\" class=\"movie-title\" data-tmdb-id=\"900\">Bringing Up Baby</a> (1938) exemplifies the core elements: rapid-fire dialogue, physical comedy, and class conflict wrapped in romantic tension. Katharine Hepburn's wealthy socialite and Cary Grant's stuffy paleontologist establish the archetypal pattern of an unconventional woman upending a rigid man's life. The film's precise timing and overlapping dialogue created a template for verbal comedy that influenced generations of filmmakers. Hawks' direction emphasized physical movement and spatial relationships, using deep focus photography to capture both broad slapstick and subtle facial reactions."
       },
       {
         "type": "movies",
@@ -53,7 +53,7 @@
       },
       {
         "type": "text",
-        "content": "The screwball formula often inverted traditional gender roles, with women driving the action and men responding to their chaos. Frank Capra's \"It Happened One Night\" (1934) established this dynamic with Claudette Colbert's runaway heiress commanding equal footing with Clark Gable's cynical reporter. The film's success - sweeping the major Academy Awards - legitimized comedy as serious filmmaking. The famous \"Walls of Jericho\" blanket scene demonstrated how filmmakers could suggest sexuality while maintaining Production Code compliance. The film's road trip structure became a template, allowing characters to move through different social classes while maintaining the intimate focus on their developing relationship."
+        "content": "The screwball formula often inverted traditional gender roles, with women driving the action and men responding to their chaos. Frank Capra's <a href=\"/movie/3078\" class=\"movie-title\" data-tmdb-id=\"3078\">It Happened One Night</a> (1934) established this dynamic with Claudette Colbert's runaway heiress commanding equal footing with Clark Gable's cynical reporter. The film's success - sweeping the major Academy Awards - legitimized comedy as serious filmmaking. The famous \"Walls of Jericho\" blanket scene demonstrated how filmmakers could suggest sexuality while maintaining Production Code compliance. The film's road trip structure became a template, allowing characters to move through different social classes while maintaining the intimate focus on their developing relationship."
       },
       {
         "type": "movies",
@@ -78,7 +78,7 @@
       },
       {
         "type": "text",
-        "content": "Preston Sturges elevated the genre's satirical elements while maintaining its romantic foundations. \"The Lady Eve\" (1941) weaponizes Barbara Stanwyck's sexuality against Henry Fonda's naive snake researcher, creating complex power dynamics that subvert audience expectations. Sturges' background as a playwright shows in his intricate dialogue construction, with conversations that layer meaning and innuendo. His camera work often holds on reactions rather than actions, allowing audiences to track the emotional evolution of characters through subtle performance changes."
+        "content": "Preston Sturges elevated the genre's satirical elements while maintaining its romantic foundations. <a href=\"/movie/3086\" class=\"movie-title\" data-tmdb-id=\"3086\">The Lady Eve</a> (1941) weaponizes Barbara Stanwyck's sexuality against Henry Fonda's naive snake researcher, creating complex power dynamics that subvert audience expectations. Sturges' background as a playwright shows in his intricate dialogue construction, with conversations that layer meaning and innuendo. His camera work often holds on reactions rather than actions, allowing audiences to track the emotional evolution of characters through subtle performance changes."
       },
       {
         "type": "movies",
@@ -103,11 +103,13 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
-        "content": "George Cukor's \"The Philadelphia Story\" (1940) represents the genre's peak of sophistication, using its triangular romance to explore class, privilege, and personal growth. Katharine Hepburn's Tracy Lord embodies the screwball heroine's complexity - intelligent, difficult, and ultimately human. The film's structure allows each character to reveal deeper layers beneath their archetypal surfaces. Cukor's elegant direction emphasizes the architectural grandeur of the setting while maintaining intimate focus on character interactions, creating a perfect balance between social commentary and romantic comedy."
+        "content": "George Cukor's <a href=\"/movie/981\" class=\"movie-title\" data-tmdb-id=\"981\">The Philadelphia Story</a> (1940) represents the genre's peak of sophistication, using its triangular romance to explore class, privilege, and personal growth. Katharine Hepburn's Tracy Lord embodies the screwball heroine's complexity - intelligent, difficult, and ultimately human. The film's structure allows each character to reveal deeper layers beneath their archetypal surfaces. Cukor's elegant direction emphasizes the architectural grandeur of the setting while maintaining intimate focus on character interactions, creating a perfect balance between social commentary and romantic comedy."
       },
       {
         "type": "movies",
@@ -157,7 +159,7 @@
       },
       {
         "type": "text",
-        "content": "The social impact of screwball comedies extended beyond entertainment. These films presented working women as equals, showed class mobility as possible (if complicated), and suggested that marriage should be based on mutual respect and shared humor rather than social obligation. \"His Girl Friday\" (1940) features Rosalind Russell as a journalist equal to or superior to her male colleagues, while \"Theodora Goes Wild\" (1936) champions female sexual and creative freedom against small-town morality."
+        "content": "The social impact of screwball comedies extended beyond entertainment. These films presented working women as equals, showed class mobility as possible (if complicated), and suggested that marriage should be based on mutual respect and shared humor rather than social obligation. <a href=\"/movie/3085\" class=\"movie-title\" data-tmdb-id=\"3085\">His Girl Friday</a> (1940) features Rosalind Russell as a journalist equal to or superior to her male colleagues, while <a href=\"/movie/52429\" class=\"movie-title\" data-tmdb-id=\"52429\">Theodora Goes Wild</a> (1936) champions female sexual and creative freedom against small-town morality."
       },
       {
         "type": "movies",
@@ -217,5 +219,11 @@
   "locked": true,
   "lockedAt": "2025-06-17T22:55:22.312Z",
   "lockedBy": "claude-generation-enhanced",
-  "heroImage": "/images/hero/theme-1-genres/series-3-comedy-through-the-ages//2-screwball-comedy-battle-of-the-sexes.jpg"
+  "heroImage": "/images/hero/theme-1-genres/series-3-comedy-through-the-ages//2-screwball-comedy-battle-of-the-sexes.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:10.157Z",
+    "hasLinks": true,
+    "linksAdded": 5,
+    "tier": "tier2_link_only"
+  }
 }

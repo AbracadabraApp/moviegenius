@@ -20,7 +20,7 @@
     "subtitle": "Feminist time and space"
   },
   "content": {
-    "opener": "Chantal Akerman revolutionized feminist cinema through her radical approach to time, space, and the female experience, most notably in her masterpiece \"Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles\" (1975).",
+    "opener": "Chantal Akerman revolutionized feminist cinema through her radical approach to time, space, and the female experience, most notably in her masterpiece <a href=\"/movie/44012\" class=\"movie-title\" data-tmdb-id=\"44012\">Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles</a> (1975).",
     "sections": [
       {
         "type": "text",
@@ -82,7 +82,7 @@
       },
       {
         "type": "text",
-        "content": "Akerman's Jewish identity and her family's Holocaust history profoundly influenced her work on displacement and memory. \"News from Home\" (1977) creates a powerful meditation on distance and belonging by contrasting images of New York City with letters from her mother in Brussels. The film's extended shots of urban spaces, combined with the intimate voiceover, establish a complex dialogue between presence and absence. Similarly, \"D'Est\" (1993) traces a journey through Eastern Europe after the fall of communism, creating a haunting document of transition and cultural memory through Akerman's characteristic long takes and careful attention to faces and spaces."
+        "content": "Akerman's Jewish identity and her family's Holocaust history profoundly influenced her work on displacement and memory. <a href=\"/movie/86814\" class=\"movie-title\" data-tmdb-id=\"86814\">News from Home</a> (1977) creates a powerful meditation on distance and belonging by contrasting images of New York City with letters from her mother in Brussels. The film's extended shots of urban spaces, combined with the intimate voiceover, establish a complex dialogue between presence and absence. Similarly, \"D'Est\" (1993) traces a journey through Eastern Europe after the fall of communism, creating a haunting document of transition and cultural memory through Akerman's characteristic long takes and careful attention to faces and spaces."
       },
       {
         "type": "movies",
@@ -111,7 +111,9 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
@@ -204,5 +206,11 @@
   "locked": true,
   "lockedAt": "2025-06-17T22:58:29.472Z",
   "lockedBy": "claude-generation-enhanced",
-  "heroImage": "/images/hero/theme-2-directors/series-1-women-directors//3-chantal-akerman-radical-minimalism.jpg"
+  "heroImage": "/images/hero/theme-2-directors/series-1-women-directors//3-chantal-akerman-radical-minimalism.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:18.854Z",
+    "hasLinks": true,
+    "linksAdded": 2,
+    "tier": "tier2_link_only"
+  }
 }

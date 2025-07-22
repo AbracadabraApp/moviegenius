@@ -53,7 +53,7 @@
       },
       {
         "type": "text",
-        "content": "Buster Keaton's deadpan expression and death-defying stunts created a distinct comedic style that emphasized technical innovation and architectural precision. His 1926 film \"The General\" represents the pinnacle of silent comedy filmmaking, with elaborate action sequences performed without camera tricks or doubles. Keaton's understanding of cinematography and framing was revolutionary - he insisted on wide shots to prove his stunts were real and utilized the entire frame for visual gags. His work in \"Steamboat Bill Jr.\" (1928) includes the famous house-falling sequence, where Keaton's exact positioning allowed him to survive a two-ton facade falling around him."
+        "content": "Buster Keaton's deadpan expression and death-defying stunts created a distinct comedic style that emphasized technical innovation and architectural precision. His 1926 film \"The General\" represents the pinnacle of silent comedy filmmaking, with elaborate action sequences performed without camera tricks or doubles. Keaton's understanding of cinematography and framing was revolutionary - he insisted on wide shots to prove his stunts were real and utilized the entire frame for visual gags. His work in <a href=\"/movie/25768\" class=\"movie-title\" data-tmdb-id=\"25768\">Steamboat Bill Jr.</a> (1928) includes the famous house-falling sequence, where Keaton's exact positioning allowed him to survive a two-ton facade falling around him."
       },
       {
         "type": "movies",
@@ -82,7 +82,7 @@
       },
       {
         "type": "text",
-        "content": "Silent comedians developed sophisticated visual techniques that remain influential today. Harold Lloyd's \"Safety Last!\" (1923) pioneered forced perspective shots and carefully constructed illusions to create its famous clock-hanging sequence. These innovators understood that comedy required precise framing and timing - Chaplin would often shoot scenes hundreds of times to perfect the visual rhythm. The physical comedy was meticulously choreographed, with Keaton's background in vaudeville informing his understanding of how to stage elaborate gags for maximum impact. Their work established fundamental principles of visual comedy that influenced everything from Jacques Tati to Jackie Chan."
+        "content": "Silent comedians developed sophisticated visual techniques that remain influential today. Harold Lloyd's <a href=\"/movie/22596\" class=\"movie-title\" data-tmdb-id=\"22596\">Safety Last!</a> (1923) pioneered forced perspective shots and carefully constructed illusions to create its famous clock-hanging sequence. These innovators understood that comedy required precise framing and timing - Chaplin would often shoot scenes hundreds of times to perfect the visual rhythm. The physical comedy was meticulously choreographed, with Keaton's background in vaudeville informing his understanding of how to stage elaborate gags for maximum impact. Their work established fundamental principles of visual comedy that influenced everything from Jacques Tati to Jackie Chan."
       },
       {
         "type": "movies",
@@ -107,11 +107,13 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
-        "content": "The social commentary embedded in silent comedy often addressed class struggle and modernization. Chaplin's \"Modern Times\" (1936) brilliantly satirized industrial automation and economic inequality through purely visual means. The famous assembly line sequence, where the Little Tramp is literally consumed by machinery, remains a powerful critique of dehumanizing labor conditions. Similarly, Keaton's \"The Navigator\" (1924) explored themes of class privilege and self-reliance through the story of wealthy passengers forced to fend for themselves on an abandoned ship."
+        "content": "The social commentary embedded in silent comedy often addressed class struggle and modernization. Chaplin's <a href=\"/movie/3082\" class=\"movie-title\" data-tmdb-id=\"3082\">Modern Times</a> (1936) brilliantly satirized industrial automation and economic inequality through purely visual means. The famous assembly line sequence, where the Little Tramp is literally consumed by machinery, remains a powerful critique of dehumanizing labor conditions. Similarly, Keaton's <a href=\"/movie/32318\" class=\"movie-title\" data-tmdb-id=\"32318\">The Navigator</a> (1924) explored themes of class privilege and self-reliance through the story of wealthy passengers forced to fend for themselves on an abandoned ship."
       },
       {
         "type": "movies",
@@ -136,7 +138,7 @@
       },
       {
         "type": "text",
-        "content": "The influence of silent comedy pioneers extends far beyond their era. Their understanding of visual storytelling and physical comedy directly influenced international filmmakers like Jacques Tati, whose \"Playtime\" (1967) built upon their traditions of architectural comedy and social observation. Contemporary action-comedy stars like Jackie Chan have explicitly credited Keaton's work as inspiration for their approach to stunts and physical comedy. The precision timing and visual clarity these pioneers developed remain essential studies for modern comedy directors."
+        "content": "The influence of silent comedy pioneers extends far beyond their era. Their understanding of visual storytelling and physical comedy directly influenced international filmmakers like Jacques Tati, whose <a href=\"/movie/10227\" class=\"movie-title\" data-tmdb-id=\"10227\">Playtime</a> (1967) built upon their traditions of architectural comedy and social observation. Contemporary action-comedy stars like Jackie Chan have explicitly credited Keaton's work as inspiration for their approach to stunts and physical comedy. The precision timing and visual clarity these pioneers developed remain essential studies for modern comedy directors."
       },
       {
         "type": "movies",
@@ -204,5 +206,11 @@
   "locked": true,
   "lockedAt": "2025-06-17T22:54:48.765Z",
   "lockedBy": "claude-generation-enhanced",
-  "heroImage": "/images/hero/theme-1-genres/series-3-comedy-through-the-ages//1-silent-comedy-stars.jpg"
+  "heroImage": "/images/hero/theme-1-genres/series-3-comedy-through-the-ages//1-silent-comedy-stars.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:09.258Z",
+    "hasLinks": true,
+    "linksAdded": 4,
+    "tier": "tier2_link_only"
+  }
 }
