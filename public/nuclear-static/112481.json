@@ -1,0 +1,159 @@
+{
+  "props": {
+    "title": "Rattlers",
+    "year": 1976,
+    "initialSlug": "They strike without warning.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/uZeOL9ugk7Mo0c6FV0vchTBaxxt.jpg",
+    "initialStreaming": null,
+    "tmdbId": 112481,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Rattlers** (1976) belongs to the distinctive wave of eco-horror films that emerged in the 1970s, following the massive success of <a href=\"/movie/578\" class=\"movie-title\">Jaws</a> (1975). Director John McCauley tapped into America's environmental anxieties with this tale of venomous snakes attacking a small desert community. While lacking the technical polish of similar films like <a href=\"/movie/30315\" class=\"movie-title\">Kingdom of the Spiders</a> (1977) or <a href=\"/movie/18274\" class=\"movie-title\">Frogs</a> (1972), Rattlers delivers memorable B-movie thrills through practical effects and real rattlesnakes, creating genuine tension despite its modest budget."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Jaws",
+            "year": 1975,
+            "slug": "Spielberg's landmark thriller about a great white shark terrorizing a beach town",
+            "poster": "https://image.tmdb.org/t/p/w500/lxM6kqilAdpdhqUl2biYp5frUxE.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 578,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lxM6kqilAdpdhqUl2biYp5frUxE.jpg"
+          },
+          {
+            "title": "Kingdom of the Spiders",
+            "year": 1977,
+            "slug": "William Shatner battles deadly tarantulas in a small Arizona town",
+            "poster": "https://image.tmdb.org/t/p/w500/4eMSwO2VCH22FVxRqqOA9zMPWh8.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 30315,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4eMSwO2VCH22FVxRqqOA9zMPWh8.jpg"
+          },
+          {
+            "title": "Frogs",
+            "year": 1972,
+            "slug": "Wealthy family trapped on an island estate faces nature's revenge",
+            "poster": "https://image.tmdb.org/t/p/w500/dF2OlQBMJiggzkjhfaNfx7HzBOU.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 18274,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dF2OlQBMJiggzkjhfaNfx7HzBOU.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The 1970s creature feature boom reflected growing environmental consciousness and distrust of military/scientific tampering with nature. **Piranha** (1978), **Day of the Animals** (1977), and **Night of the Lepus** (1972) all followed similar formulas - isolated communities, military/scientific mishaps, and nature striking back. **Rattlers** specifically plays on fears of chemical weapons testing, as its snakes are mutated by military experiments. SUBHEAD: The Snake Horror Subgenre"
+      },
+      {
+        "type": "text",
+        "content": "Snake horror films form their own distinct tradition, from **Ssssss** (1973) to **Anaconda** (1997) and **Snakes on a Plane** (2006). **Rattlers** stands out for using actual rattlesnakes rather than rubber props or CGI, creating an authentic menace missing from many later entries. While crude by modern standards, its practical effects and documentary-style snake footage influenced later films like **Venom** (1981)."
+      }
+    ],
+    "exploreFurther": [
+      "1970s Eco-Horror Movement: How environmental fears shaped creature features",
+      "Practical Snake Effects: Evolution from live snakes to CGI in horror films",
+      "Military Testing in Horror: Cold War anxieties in monster movies",
+      "Desert Horror: How filmmakers use isolated southwestern locations",
+      "The Legacy of Jaws: How one film spawned countless animal attack movies"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Piranha",
+          "year": 1978,
+          "slug": "Joe Dante's fish attack classic produced by Roger Corman",
+          "poster": "https://image.tmdb.org/t/p/w500/oaz0Le3fT3R8jzlkXkNV7JAsd7x.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 24831,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oaz0Le3fT3R8jzlkXkNV7JAsd7x.jpg"
+        },
+        {
+          "title": "Day of the Animals",
+          "year": 1977,
+          "slug": "Ozone depletion causes animals to attack humans",
+          "poster": "https://image.tmdb.org/t/p/w500/nNR56DXyEocDbeVd5FgW59X73dt.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 64976,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nNR56DXyEocDbeVd5FgW59X73dt.jpg"
+        },
+        {
+          "title": "Night of the Lepus",
+          "year": 1972,
+          "slug": "Giant mutant rabbits terrorize the Southwest",
+          "poster": "https://image.tmdb.org/t/p/w500/wF8paiOb7E1JWb6mvec0TCTNq5W.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 38761,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wF8paiOb7E1JWb6mvec0TCTNq5W.jpg"
+        },
+        {
+          "title": "Ssssss",
+          "year": 1973,
+          "slug": "Mad scientist turns man into king cobra",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 70345
+        },
+        {
+          "title": "Venom",
+          "year": 1981,
+          "slug": "Klaus Kinski trapped in house with deadly black mamba",
+          "poster": "https://image.tmdb.org/t/p/w500/v44VNoH2suoaCPnUj2YyXcvgGfn.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 30789,
+          "poster_url": "https://image.tmdb.org/t/p/w500/v44VNoH2suoaCPnUj2YyXcvgGfn.jpg"
+        },
+        {
+          "title": "Food of the Gods",
+          "year": 1976,
+          "slug": "H.G. Wells adaptation about giant animals",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 42245
+        },
+        {
+          "title": "Empire of the Ants",
+          "year": 1977,
+          "slug": "Joan Collins versus giant irradiated ants",
+          "poster": "https://image.tmdb.org/t/p/w500/6cmuKjH92h2wrBlbj0WPaTdnpnl.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 42218,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6cmuKjH92h2wrBlbj0WPaTdnpnl.jpg"
+        },
+        {
+          "title": "Squirm",
+          "year": 1976,
+          "slug": "Electrical storm turns worms murderous",
+          "poster": "https://image.tmdb.org/t/p/w500/uWCwcZYp5znp6xUKzkh3oyB4Ys2.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 25241,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uWCwcZYp5znp6xUKzkh3oyB4Ys2.jpg"
+        },
+        {
+          "title": "The Swarm",
+          "year": 1978,
+          "slug": "Killer bees invade Texas in star-studded disaster film",
+          "poster": "https://image.tmdb.org/t/p/w500/pO5qEEpjxdQ40ScLcFOowyziNiT.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 46878,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pO5qEEpjxdQ40ScLcFOowyziNiT.jpg"
+        },
+        {
+          "title": "Prophecy",
+          "year": 1979,
+          "slug": "Mutant bear terrorizes Maine wilderness",
+          "poster": "https://image.tmdb.org/t/p/w500/8jCyz5IRWmu8R5FhRO2BqtQXnCj.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 31915,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8jCyz5IRWmu8R5FhRO2BqtQXnCj.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

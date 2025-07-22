@@ -1,0 +1,183 @@
+{
+  "props": {
+    "title": "Playtime",
+    "year": 1967,
+    "initialSlug": "Tati's modernist comedy masterpiece",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/oUXEJLgDfAFR6TvJU6dMerEpcBK.jpg",
+    "initialStreaming": null,
+    "tmdbId": 10227,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Jacques Tati's masterpiece Playtime represents the pinnacle of visual comedy in modernist cinema. Shot in 70mm on a massive custom-built set dubbed \"Tativille,\" the film follows Tati's recurring character Monsieur Hulot through a hyper-modern Paris where human warmth struggles against steel and glass architecture. Unlike Tati's earlier works like <a href=\"/movie/427\" class=\"movie-title\" data-tmdb-id=\"427\">Mon Oncle</a> (1958) and Mr. Hulot's Holiday (1953), Playtime operates on an epic scale, with intricate choreography of hundreds of extras creating living tableaux that reward repeated viewings. The film's legendary restaurant sequence, where a luxurious modern establishment literally falls apart during its opening night, stands as one of cinema's greatest sustained comedy sequences."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Mon Oncle",
+            "year": 1958,
+            "slug": "Tati's earlier masterwork about modernization clashing with old Paris traditions",
+            "poster": "https://image.tmdb.org/t/p/w500/wH6RyPiXFy8INLbViVkchLVOmBc.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 427,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wH6RyPiXFy8INLbViVkchLVOmBc.jpg"
+          },
+          {
+            "title": "Modern Times",
+            "year": 1936,
+            "slug": "Chaplin's iconic take on industrialization and dehumanization",
+            "poster": "https://image.tmdb.org/t/p/w500/7uoiKOEjxBBW0AgDGQWrlfGQ90w.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 3082,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7uoiKOEjxBBW0AgDGQWrlfGQ90w.jpg"
+          },
+          {
+            "title": "The Apartment",
+            "year": 1960,
+            "slug": "Billy Wilder's sharp critique of corporate modernism and office culture",
+            "poster": "https://image.tmdb.org/t/p/w500/hhSRt1KKfRT0yEhEtRW3qp31JFU.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 284,
+            "poster_url": "https://image.tmdb.org/t/p/w500/hhSRt1KKfRT0yEhEtRW3qp31JFU.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Tati's influence echoes through later films about modern alienation and architectural space. <a href=\"/movie/68\" class=\"movie-title\" data-tmdb-id=\"68\">Brazil</a> (1985) directly references Playtime's labyrinthine office scenes, while <a href=\"/movie/153\" class=\"movie-title\" data-tmdb-id=\"153\">Lost in Translation</a> (2003) captures similar themes of displacement in modern spaces. The film's innovative use of sound design - prioritizing ambient noise and background conversations over traditional dialogue - influenced directors like Robert Altman and established new possibilities for audio landscapes in cinema."
+      },
+      {
+        "type": "text",
+        "content": "The financial failure of Playtime effectively ended Tati's career as a major filmmaker, but its artistic impact only grew over time. Contemporary directors like Wes Anderson, particularly in <a href=\"/movie/421\" class=\"movie-title\" data-tmdb-id=\"421\">The Life Aquatic with Steve Zissou</a> (2004) and <a href=\"/movie/120467\" class=\"movie-title\" data-tmdb-id=\"120467\">The Grand Budapest Hotel</a> (2014), draw heavily from Tati's precise framing and architectural comedy. The film's criticism of modernist architecture and consumer culture remains startlingly relevant, predating similar themes in films like <a href=\"/movie/594\" class=\"movie-title\" data-tmdb-id=\"594\">The Terminal</a> (2004) and <a href=\"/movie/152601\" class=\"movie-title\" data-tmdb-id=\"152601\">Her</a> (2013). SUBHEAD: Visual Comedy and Architectural Space"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Brazil",
+            "year": 1985,
+            "slug": "Terry Gilliam's surreal dystopian satire of bureaucracy and modernization",
+            "poster": "https://image.tmdb.org/t/p/w500/aewan59WcFThBimkTVVoNf2o5Vb.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 68,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aewan59WcFThBimkTVVoNf2o5Vb.jpg"
+          },
+          {
+            "title": "Jacques Tati Collection",
+            "year": 2014,
+            "slug": "Complete collection of Tati's major works including Playtime",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Playtime's revolutionary approach to visual comedy relies on deep-focus photography and multiple planes of action. Unlike traditional comedic films that direct attention through close-ups and editing, Tati allows viewers to discover jokes within the frame, creating a democratic viewing experience more akin to theater than cinema. This technique influenced later filmmakers like Roy Andersson, particularly in Songs from the Second Floor (2000) and <a href=\"/movie/110390\" class=\"movie-title\" data-tmdb-id=\"110390\">A Pigeon Sat on a Branch Reflecting on Existence</a> (2014), who adopted similar approaches to staging and composition."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Visual Comedy from Keaton to Tati",
+      "Modernist Architecture in 1960s European Cinema",
+      "Sound Design Innovation in French New Wave",
+      "The Impact of Tativille on Film Production Design",
+      "Democratic Cinema: Deep Focus and Multiple Action Points"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Traffic",
+          "year": 1971,
+          "slug": "Tati's final major film about car culture",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Mr. Hulot's Holiday",
+          "year": 1953,
+          "slug": "Tati's breakthrough comedy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Mon Oncle",
+          "year": 1958,
+          "slug": "Oscar-winning satire of modern living",
+          "poster": "https://image.tmdb.org/t/p/w500/wH6RyPiXFy8INLbViVkchLVOmBc.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 427,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wH6RyPiXFy8INLbViVkchLVOmBc.jpg"
+        },
+        {
+          "title": "The Illusionist",
+          "year": 2010,
+          "slug": "Animated tribute to Tati's unproduced screenplay",
+          "poster": "https://image.tmdb.org/t/p/w500/Ac2tNYW9sRaOhmtMJQuhf2mvo00.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 41201,
+          "poster_url": "https://image.tmdb.org/t/p/w500/Ac2tNYW9sRaOhmtMJQuhf2mvo00.jpg"
+        },
+        {
+          "title": "Songs from the Second Floor",
+          "year": 2000,
+          "slug": "Roy Andersson's Tati-influenced deadpan comedy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "A Pigeon Sat on a Branch",
+          "year": 2014,
+          "slug": "Andersson's meditation on human existence",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Grand Budapest Hotel",
+          "year": 2014,
+          "slug": "Wes Anderson's Tati-influenced comedy",
+          "poster": "https://image.tmdb.org/t/p/w500/eWdyYQreja6JGCzqHWXpWHDrrPo.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 120467,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eWdyYQreja6JGCzqHWXpWHDrrPo.jpg"
+        },
+        {
+          "title": "Lost in Translation",
+          "year": 2003,
+          "slug": "Modern alienation in Tokyo",
+          "poster": "https://image.tmdb.org/t/p/w500/4k4Yz08WGfbu8ITIjaG99XTeco8.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 153,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4k4Yz08WGfbu8ITIjaG99XTeco8.jpg"
+        },
+        {
+          "title": "Her",
+          "year": 2013,
+          "slug": "Spike Jonze's meditation on technology and connection",
+          "poster": "https://image.tmdb.org/t/p/w500/lEIaL12hSkqqe83kgADkbUqEnvk.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 152601,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lEIaL12hSkqqe83kgADkbUqEnvk.jpg"
+        },
+        {
+          "title": "The Terminal",
+          "year": 2004,
+          "slug": "Spielberg's comedy about airport bureaucracy",
+          "poster": "https://image.tmdb.org/t/p/w500/cPB3ZMM4UdsSAhNdS4c7ps5nypY.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 594,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cPB3ZMM4UdsSAhNdS4c7ps5nypY.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

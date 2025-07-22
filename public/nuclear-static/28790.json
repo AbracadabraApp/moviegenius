@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "Arcade",
+    "year": 1993,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/4ZC9OZMyrZ4uAIfEOlGIh9e8xkh.jpg",
+    "initialStreaming": null,
+    "tmdbId": 28790,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Arcade emerged during the peak of Hollywood's clumsy attempts to capitalize on video game culture. Like The Lawnmower Man (1992) and <a href=\"/movie/183\" class=\"movie-title\" data-tmdb-id=\"183\">The Wizard</a> (1989), it tapped into growing anxieties about virtual reality and gaming addiction. Full Moon Entertainment, known for direct-to-video horror, produced this cult gem starring Megan Ward as a teenager who discovers a sinister AI lurking inside a new arcade game. The film's dated CGI, while primitive by today's standards, captures the early 90s fascination with computer animation seen in contemporaries like Lawn Mower Man (1992) and <a href=\"/movie/41651\" class=\"movie-title\" data-tmdb-id=\"41651\">Ghost in the Machine</a> (1993)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Tron",
+            "year": 1982,
+            "slug": "A programmer gets digitized into a computer world where he must fight for survival in groundbreaking CGI environments",
+            "poster": "https://image.tmdb.org/t/p/w500/zwSFEczP7AzqugAHHIX3zHniT0t.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 97,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zwSFEczP7AzqugAHHIX3zHniT0t.jpg"
+          },
+          {
+            "title": "eXistenZ",
+            "year": 1999,
+            "slug": "David Cronenberg's twisted take on virtual reality gaming features organic game pods and blurred reality",
+            "poster": "https://image.tmdb.org/t/p/w500/kETKF0JhdTPn1knci8CAdYL0d79.jpg",
+            "initialStreaming": "AMC+",
+            "tmdb_id": 1946,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kETKF0JhdTPn1knci8CAdYL0d79.jpg"
+          },
+          {
+            "title": "Stay Alive",
+            "year": 2006,
+            "slug": "Gamers discover a haunted video game that kills players in real life when they die in the game",
+            "poster": "https://image.tmdb.org/t/p/w500/hsSJwroE7jugEROB8tmyxJP91Ho.jpg",
+            "initialStreaming": "Rental",
+            "tmdb_id": 10069,
+            "poster_url": "https://image.tmdb.org/t/p/w500/hsSJwroE7jugEROB8tmyxJP91Ho.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The early 90s saw a wave of \"killer technology\" films responding to growing computer adoption. Arcade fits alongside paranoid techno-thrillers like <a href=\"/movie/14237\" class=\"movie-title\" data-tmdb-id=\"14237\">Brainscan</a> (1994) and <a href=\"/movie/9271\" class=\"movie-title\" data-tmdb-id=\"9271\">Virtuosity</a> (1995), which imagined malevolent AI emerging from entertainment technology. These films often featured teens as protagonists, reflecting both the target gaming demographic and generational anxiety about new media. The production design of Arcade perfectly captures the neon-soaked aesthetic of early 90s arcades, similar to the atmosphere in <a href=\"/movie/9057\" class=\"movie-title\" data-tmdb-id=\"9057\">Terminal Velocity</a> (1994). SUBHEAD: Virtual Reality Horror Evolution"
+      },
+      {
+        "type": "text",
+        "content": "By the late 90s, virtual reality horror had evolved beyond simple \"evil game\" narratives. Films like <a href=\"/movie/1090\" class=\"movie-title\" data-tmdb-id=\"1090\">The Thirteenth Floor</a> (1999) and <a href=\"/movie/1946\" class=\"movie-title\">eXistenZ</a> (1999) explored more philosophical questions about reality and consciousness. Looking back, Arcade's straightforward approach feels charmingly retro, like a playable version of early William Gibson cyberpunk. Modern films like <a href=\"/movie/333339\" class=\"movie-title\" data-tmdb-id=\"333339\">Ready Player One</a> (2018) still mine similar territory but with more sophisticated explorations of gaming culture and virtual worlds."
+      }
+    ],
+    "exploreFurther": [
+      "The rise and fall of virtual reality movies in the 1990s",
+      "Full Moon Entertainment's impact on direct-to-video sci-fi horror",
+      "Evolution of CGI in gaming-themed movies",
+      "Arcade culture in 1990s American cinema",
+      "Hollywood's attempts to capture gaming culture on film"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Net",
+          "year": 1995,
+          "slug": "Sandra Bullock fights identity theft in early internet thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/dtupntUFMD5iXBo8HLfALt2ET4R.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1642,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dtupntUFMD5iXBo8HLfALt2ET4R.jpg"
+        },
+        {
+          "title": "Hackers",
+          "year": 1995,
+          "slug": "Teen hackers uncover corporate conspiracy",
+          "poster": "https://image.tmdb.org/t/p/w500/qfx2EENW1sOpKNVKLzr7VOhlxkt.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10428,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qfx2EENW1sOpKNVKLzr7VOhlxkt.jpg"
+        },
+        {
+          "title": "Johnny Mnemonic",
+          "year": 1995,
+          "slug": "Keanu Reeves stores data in his brain in Gibson adaptation",
+          "poster": "https://image.tmdb.org/t/p/w500/iH8Jgi8qvb7pnBfI8fVGaUbyRna.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 9886,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iH8Jgi8qvb7pnBfI8fVGaUbyRna.jpg"
+        },
+        {
+          "title": "Nirvana",
+          "year": 1997,
+          "slug": "Italian cyberpunk about a game designer whose AI becomes self-aware",
+          "poster": "https://image.tmdb.org/t/p/w500/1UXk8P1qY3PadOdSj5qk1qBXWMy.jpg",
+          "initialStreaming": "Rental",
+          "tmdb_id": 8765,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1UXk8P1qY3PadOdSj5qk1qBXWMy.jpg"
+        },
+        {
+          "title": "Brainscan",
+          "year": 1994,
+          "slug": "Teen discovers murderous interactive horror game",
+          "poster": "https://image.tmdb.org/t/p/w500/2Xe3ktCp0XaZZRqvQruuv7VaJmP.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 14237,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2Xe3ktCp0XaZZRqvQruuv7VaJmP.jpg"
+        },
+        {
+          "title": "Virtuosity",
+          "year": 1995,
+          "slug": "Virtual serial killer escapes into reality",
+          "poster": "https://image.tmdb.org/t/p/w500/5emgnXYrXjqyiup2JsvtuENseiV.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 9271,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5emgnXYrXjqyiup2JsvtuENseiV.jpg"
+        },
+        {
+          "title": "The Last Starfighter",
+          "year": 1984,
+          "slug": "Teen gamer recruited to fight real space war",
+          "poster": "https://image.tmdb.org/t/p/w500/A7oAHTjtYnIEQjJs62IONRufooq.jpg",
+          "initialStreaming": "Rental",
+          "tmdb_id": 11884,
+          "poster_url": "https://image.tmdb.org/t/p/w500/A7oAHTjtYnIEQjJs62IONRufooq.jpg"
+        },
+        {
+          "title": "WarGames",
+          "year": 1983,
+          "slug": "Teen hacker nearly starts World War III",
+          "poster": "https://image.tmdb.org/t/p/w500/zZ1rN4LoPxKNfAp67Xl300WxVeD.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 860,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zZ1rN4LoPxKNfAp67Xl300WxVeD.jpg"
+        },
+        {
+          "title": "Spy Kids 3D: Game Over",
+          "year": 2003,
+          "slug": "Kids enter virtual reality game world",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 12279
+        },
+        {
+          "title": "Gamer",
+          "year": 2009,
+          "slug": "Humans controlled by players in lethal online game",
+          "poster": "https://image.tmdb.org/t/p/w500/nA8ZVbdBsNkTqsa49ZG9na4lFuY.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 18501,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nA8ZVbdBsNkTqsa49ZG9na4lFuY.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

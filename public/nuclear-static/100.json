@@ -1,0 +1,192 @@
+{
+  "props": {
+    "title": "Lock, Stock and Two Smoking Barrels",
+    "year": 1998,
+    "initialSlug": "Four mates spiral into London's criminal underworld",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/6pJB2t3MbQUy9m5pFIBHXLqnqNd.jpg",
+    "initialStreaming": "Netflix",
+    "tmdbId": 100,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Lock, Stock and Two Smoking Barrels revolutionized British gangster cinema with its razor-sharp wit and intricate plot mechanics. Guy Ritchie's directorial debut created a template that countless films would try to replicate - the rapid-fire dialogue, intersecting criminal storylines, and stylized violence set to a pulsing soundtrack. The film shares DNA with Quentin Tarantino's <a href=\"/movie/500\" class=\"movie-title\" data-tmdb-id=\"500\">Reservoir Dogs</a> (1992) but establishes its own distinctly British voice through cockney rhyming slang and London's criminal underbelly. Former footballer Vinnie Jones's intimidating screen presence as Big Chris launched an entire second career of tough-guy roles."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Snatch",
+            "year": 2000,
+            "slug": "Ritchie's follow-up featuring Brad Pitt as an unintelligible bare-knuckle boxer in London's criminal underground",
+            "poster": "https://image.tmdb.org/t/p/w500/8KSDI7ijEv7QVZdIyrLw5Gnhhr8.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 107,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8KSDI7ijEv7QVZdIyrLw5Gnhhr8.jpg"
+          },
+          {
+            "title": "Layer Cake",
+            "year": 2004,
+            "slug": "Daniel Craig leads this stylish crime thriller about a cocaine dealer trying to retire from London's drug trade",
+            "poster": "https://image.tmdb.org/t/p/w500/rDOxXteqxALBaSa3V3zTjGJuyWB.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 4836,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rDOxXteqxALBaSa3V3zTjGJuyWB.jpg"
+          },
+          {
+            "title": "RocknRolla",
+            "year": 2008,
+            "slug": "Gerard Butler and Tom Hardy tangle with Russian mobsters in modern London's criminal ecosystem",
+            "poster": "https://image.tmdb.org/t/p/w500/6mLXG2f7LBRpbZZgxsOFO5scgzd.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 13809,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6mLXG2f7LBRpbZZgxsOFO5scgzd.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film sparked a wave of British crime comedies in the late 90s and early 2000s. <a href=\"/movie/11826\" class=\"movie-title\" data-tmdb-id=\"11826\">Sexy Beast</a> (2000) took a more serious approach but maintained the linguistic gymnastics through Ben Kingsley's terrifying Don Logan. <a href=\"/movie/10394\" class=\"movie-title\" data-tmdb-id=\"10394\">Gangster No. 1</a> (2000) explored similar territory with Paul Bettany's chilling performance, while <a href=\"/movie/9991\" class=\"movie-title\" data-tmdb-id=\"9991\">Mean Machine</a> (2001) reunited Vinnie Jones with several Lock Stock cast members. The influence extended beyond the UK, inspiring continental films like <a href=\"/movie/2061\" class=\"movie-title\" data-tmdb-id=\"2061\">Pusher</a> (1996) and its sequels. SUBHEAD: Visual Style and Technical Innovation"
+      },
+      {
+        "type": "text",
+        "content": "Ritchie's hyperkinetic visual style - freeze frames, speed ramping, whip pans - influenced action filmmaking well beyond crime genres. The technique of explaining complex backstories through rapid montage became a standard tool, visible in everything from <a href=\"/movie/9705\" class=\"movie-title\" data-tmdb-id=\"9705\">Swordfish</a> (2001) to <a href=\"/movie/318846\" class=\"movie-title\" data-tmdb-id=\"318846\">The Big Short</a> (2015). The film's success also helped launch Working Title's dominance of British cinema, leading to bigger budget productions like <a href=\"/movie/747\" class=\"movie-title\" data-tmdb-id=\"747\">Shaun of the Dead</a> (2004) and <a href=\"/movie/4638\" class=\"movie-title\" data-tmdb-id=\"4638\">Hot Fuzz</a> (2007) that maintained similar energy and humor while exploring different genres."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Gentlemen",
+            "year": 2019,
+            "slug": "Matthew McConaughey leads Ritchie's return to British gangster form",
+            "poster": "https://image.tmdb.org/t/p/w500/jtrhTYB7xSrJxR1vusu99nvnZ1g.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 522627,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jtrhTYB7xSrJxR1vusu99nvnZ1g.jpg"
+          },
+          {
+            "title": "In Bruges",
+            "year": 2008,
+            "slug": "Two hitmen hide out in Belgium in this darkly comic crime thriller",
+            "poster": "https://image.tmdb.org/t/p/w500/jMiBBqk72VRo1Y39x2ZbbenEU3a.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 8321,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jMiBBqk72VRo1Y39x2ZbbenEU3a.jpg"
+          },
+          {
+            "title": "Croupier",
+            "year": 1998,
+            "slug": "Clive Owen stars in this neo-noir about a writer moonlighting in a casino",
+            "poster": "https://image.tmdb.org/t/p/w500/7O9TEodTfWsXm9jpXFNv0DDkhYF.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 12706,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7O9TEodTfWsXm9jpXFNv0DDkhYF.jpg"
+          }
+        ]
+      }
+    ],
+    "exploreFurther": [
+      "The evolution of British gangster films from The Long Good Friday to modern day",
+      "Guy Ritchie's visual techniques and their influence on modern action cinema",
+      "The impact of Working Title Films on British cinema in the 1990s",
+      "Cockney rhyming slang in film dialogue and its cultural significance",
+      "The crossover between British football culture and crime films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Long Good Friday",
+          "year": 1980,
+          "slug": "Bob Hoskins defines the British gangster genre",
+          "poster": "https://image.tmdb.org/t/p/w500/pXS667me5Jfoj1b0xuxgjEMKunF.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 14807,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pXS667me5Jfoj1b0xuxgjEMKunF.jpg"
+        },
+        {
+          "title": "Brighton Rock",
+          "year": 1947,
+          "slug": "Richard Attenborough's breakthrough as a young gangster",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Get Carter",
+          "year": 1971,
+          "slug": "Michael Caine's iconic revenge thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/3AytAYzJuPmS4Wo8X3jcsaN4oM3.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 1485,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3AytAYzJuPmS4Wo8X3jcsaN4oM3.jpg"
+        },
+        {
+          "title": "The Italian Job",
+          "year": 1969,
+          "slug": "Classic British heist film with Michael Caine",
+          "poster": "https://image.tmdb.org/t/p/w500/8NOw3HPHkcBndJW2K6ofbcSb7WD.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 10536,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8NOw3HPHkcBndJW2K6ofbcSb7WD.jpg"
+        },
+        {
+          "title": "Mona Lisa",
+          "year": 1986,
+          "slug": "Bob Hoskins as a ex-con driver in London's underworld",
+          "poster": "https://image.tmdb.org/t/p/w500/geBGfbhkgKHld8rM9XuLfzPGZ6I.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 10002,
+          "poster_url": "https://image.tmdb.org/t/p/w500/geBGfbhkgKHld8rM9XuLfzPGZ6I.jpg"
+        },
+        {
+          "title": "The Bank Job",
+          "year": 2008,
+          "slug": "Jason Statham leads true-story London heist",
+          "poster": "https://image.tmdb.org/t/p/w500/bfXjFTytfFTdo9WeO7lYqzkHG7g.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 8848,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bfXjFTytfFTdo9WeO7lYqzkHG7g.jpg"
+        },
+        {
+          "title": "Bronson",
+          "year": 2008,
+          "slug": "Tom Hardy's explosive portrayal of Britain's most violent prisoner",
+          "poster": "https://image.tmdb.org/t/p/w500/6diyyGIbBNiANsdIaCGtyv4IofR.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 18533,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6diyyGIbBNiANsdIaCGtyv4IofR.jpg"
+        },
+        {
+          "title": "Gangster No. 1",
+          "year": 2000,
+          "slug": "Paul Bettany's chilling performance as a 60s gangster",
+          "poster": "https://image.tmdb.org/t/p/w500/t8eUSsD2reaIR9qmklU7O2GCVn4.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 10394,
+          "poster_url": "https://image.tmdb.org/t/p/w500/t8eUSsD2reaIR9qmklU7O2GCVn4.jpg"
+        },
+        {
+          "title": "The Business",
+          "year": 2005,
+          "slug": "Danny Dyer in 80s Spanish crime world",
+          "poster": "https://image.tmdb.org/t/p/w500/1iAFzQctlfXLSQXep5ufW7qeDR5.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 5145,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1iAFzQctlfXLSQXep5ufW7qeDR5.jpg"
+        },
+        {
+          "title": "Rise of the Footsoldier",
+          "year": 2007,
+          "slug": "True story of Essex gang violence",
+          "poster": "https://image.tmdb.org/t/p/w500/k8lbsM0Nl0c1Qp7NnARWjS6TTRA.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 13054,
+          "poster_url": "https://image.tmdb.org/t/p/w500/k8lbsM0Nl0c1Qp7NnARWjS6TTRA.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

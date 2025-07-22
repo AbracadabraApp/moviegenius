@@ -1,0 +1,152 @@
+{
+  "props": {
+    "title": "The Return of the Vampire",
+    "year": 1943,
+    "initialSlug": "Bela Lugosi stalks London as an undead Nazi spy",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/qp8aCa4ajBcCozBNDATIWimZiFu.jpg",
+    "initialStreaming": null,
+    "tmdbId": 32858,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The Return of the Vampire marks a fascinating chapter in Bela Lugosi's career, arriving over a decade after his iconic role in <a href=\"/movie/138\" class=\"movie-title\">Dracula</a> (1931). Columbia Pictures cleverly sidestepped Universal's copyright on Dracula by creating \"Armand Tesla,\" a vampire character that let Lugosi essentially reprise his most famous role. The film bridges classic Universal horror with wartime propaganda, setting its vampire tale against the London Blitz. This unique combination places it alongside other WWII horror films like <a href=\"/movie/30307\" class=\"movie-title\" data-tmdb-id=\"30307\">The Devil Commands</a> (1941) and <a href=\"/movie/23104\" class=\"movie-title\" data-tmdb-id=\"23104\">King of the Zombies</a> (1941) that merged supernatural threats with contemporary anxieties."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Dracula",
+            "year": 1931,
+            "slug": "Bela Lugosi's definitive portrayal of Count Dracula set the template for vampire films",
+            "poster": "https://image.tmdb.org/t/p/w500/ueVSPt7vAba0XScHWTDWS5tNxYX.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 138,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ueVSPt7vAba0XScHWTDWS5tNxYX.jpg"
+          },
+          {
+            "title": "Son of Dracula",
+            "year": 1943,
+            "slug": "Lon Chaney Jr. takes on the vampire mantle in Universal's atmospheric sequel",
+            "poster": "https://image.tmdb.org/t/p/w500/pQTLdJ46WXPIix05EkcHAMDKUIw.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 32023,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pQTLdJ46WXPIix05EkcHAMDKUIw.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's wartime setting creates unique narrative possibilities, with Tesla's tomb being unearthed during a German bombing raid. This plot device cleverly updates gothic horror tropes for contemporary audiences while commenting on real-world horrors. Director Lew Landers, who previously directed Lugosi in <a href=\"/movie/17907\" class=\"movie-title\" data-tmdb-id=\"17907\">The Raven</a> (1935), maintains atmospheric tension through moody cinematography and fog-shrouded cemetery scenes that recall <a href=\"/movie/13666\" class=\"movie-title\">The Wolf Man</a> (1941) and The Ghost of Frankenstein (1942)."
+      },
+      {
+        "type": "text",
+        "content": "Particularly noteworthy is the character of Andreas Obry, Tesla's werewolf servant, which adds complexity to the standard vampire narrative. This master-servant dynamic between vampire and werewolf predates similar relationships in later films like <a href=\"/movie/3103\" class=\"movie-title\" data-tmdb-id=\"3103\">House of Frankenstein</a> (1944) and modern works like <a href=\"/movie/277\" class=\"movie-title\" data-tmdb-id=\"277\">Underworld</a> (2003). The film's ending, where modern warfare ultimately proves more powerful than supernatural evil, reflects changing attitudes toward traditional horror in an age of real-world atrocities. SUBHEAD: Wartime Horror Evolution"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Wolf Man",
+            "year": 1941,
+            "slug": "Lon Chaney Jr.'s tragic portrayal of Larry Talbot defined the cinematic werewolf",
+            "poster": "https://image.tmdb.org/t/p/w500/vG8fu5syTtQLzK1hQXyi3ugOPNF.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 13666,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vG8fu5syTtQLzK1hQXyi3ugOPNF.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film represents a crucial transition point in 1940s horror cinema, as supernatural threats began incorporating contemporary war themes. This trend continued in films like <a href=\"/movie/41023\" class=\"movie-title\" data-tmdb-id=\"41023\">Dead Men Walk</a> (1943) and <a href=\"/movie/86901\" class=\"movie-title\" data-tmdb-id=\"86901\">The Face of Marble</a> (1946), where modern science and warfare intersect with traditional horror elements. Lugosi's performance maintains the aristocratic menace of his Dracula while adding new layers of political metaphor."
+      }
+    ],
+    "exploreFurther": [
+      "Bela Lugosi's 1940s Career Evolution",
+      "Horror Cinema During World War II",
+      "Vampire Films Beyond Universal Studios",
+      "The Integration of War Themes in Horror",
+      "Columbia Pictures' Horror Output"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "House of Dracula",
+          "year": 1945,
+          "slug": "Universal's monster rally featuring Dracula, Wolf Man and Frankenstein",
+          "poster": "https://image.tmdb.org/t/p/w500/x2HZq0CjGJbU90Q8Bm7jDKBM7ZG.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 30793,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x2HZq0CjGJbU90Q8Bm7jDKBM7ZG.jpg"
+        },
+        {
+          "title": "Dead Men Walk",
+          "year": 1943,
+          "slug": "George Zucco plays dual roles in this vampire thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/1AqEIyA6BndGYcNkcUJwXxvEFjq.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": 41023,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1AqEIyA6BndGYcNkcUJwXxvEFjq.jpg"
+        },
+        {
+          "title": "The Face of Marble",
+          "year": 1946,
+          "slug": "Mad scientist meets supernatural horror",
+          "poster": "https://image.tmdb.org/t/p/w500/AroKPWkIjaKWdHpp9jwWf5Q5a4U.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 86901,
+          "poster_url": "https://image.tmdb.org/t/p/w500/AroKPWkIjaKWdHpp9jwWf5Q5a4U.jpg"
+        },
+        {
+          "title": "The Devil Commands",
+          "year": 1941,
+          "slug": "Boris Karloff scientific horror with wartime undertones",
+          "poster": "https://image.tmdb.org/t/p/w500/kVAKzdJV9suPxnhtwWQSmzE3gBW.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 30307,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kVAKzdJV9suPxnhtwWQSmzE3gBW.jpg"
+        },
+        {
+          "title": "Mark of the Vampire",
+          "year": 1935,
+          "slug": "Lugosi returns to vampire role in Tod Browning film",
+          "poster": "https://image.tmdb.org/t/p/w500/A6JN2kIEYwXEHHmqEa86aMKDJj8.jpg",
+          "initialStreaming": "Warner Archive",
+          "tmdb_id": 28910,
+          "poster_url": "https://image.tmdb.org/t/p/w500/A6JN2kIEYwXEHHmqEa86aMKDJj8.jpg"
+        },
+        {
+          "title": "The Corpse Vanishes",
+          "year": 1942,
+          "slug": "Lugosi as scientist preserving youth with bride victims",
+          "poster": "https://image.tmdb.org/t/p/w500/ur7omgilzhWeHKW9Spd3ueHFbC1.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": 26922,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ur7omgilzhWeHKW9Spd3ueHFbC1.jpg"
+        },
+        {
+          "title": "Isle of the Dead",
+          "year": 1945,
+          "slug": "Val Lewton horror set against war backdrop",
+          "poster": "https://image.tmdb.org/t/p/w500/eHnxz2K8fuUR5qwmkhdurBpZ5z0.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 30348,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eHnxz2K8fuUR5qwmkhdurBpZ5z0.jpg"
+        },
+        {
+          "title": "The Body Snatcher",
+          "year": 1945,
+          "slug": "Period horror reflecting wartime anxieties",
+          "poster": "https://image.tmdb.org/t/p/w500/1dOCP2ahMVlA95SivxhEdVvcXZE.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 30346,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1dOCP2ahMVlA95SivxhEdVvcXZE.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

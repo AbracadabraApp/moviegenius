@@ -1,0 +1,185 @@
+{
+  "props": {
+    "title": "Sirocco",
+    "year": 1951,
+    "initialSlug": "Where danger and desire collide.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/9gsUSoeTlG1GfM7ckAxmHzkgi0n.jpg",
+    "initialStreaming": null,
+    "tmdbId": 30025,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Sirocco stands as a fascinating post-WWII noir that transplants <a href=\"/movie/289\" class=\"movie-title\">Casablanca</a> (1942)'s template to 1925 Damascus during the French occupation of Syria. Humphrey Bogart plays Harry Smith, a cynical arms dealer profiting from both sides of the conflict - a darker, more morally compromised version of Rick Blaine. The film captures the sweaty, tense atmosphere of colonial unrest, with director Curtis Bernhardt bringing his German Expressionist sensibilities to the shadowy Middle Eastern setting."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Casablanca",
+            "year": 1942,
+            "slug": "The quintessential wartime romance following Rick Blaine's nightclub in Nazi-occupied Morocco",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 289
+          },
+          {
+            "title": "To Have and Have Not",
+            "year": 1944,
+            "slug": "Bogart stars as a boat captain in Martinique drawn into the French Resistance",
+            "poster": "https://image.tmdb.org/t/p/w500/jLOmQ6yHWSKZDrJ2CMuSrXE3t3J.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 22584,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jLOmQ6yHWSKZDrJ2CMuSrXE3t3J.jpg"
+          },
+          {
+            "title": "The Third Man",
+            "year": 1949,
+            "slug": "Post-war Vienna noir about corruption and moral ambiguity",
+            "poster": "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 1092,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While often dismissed as a lesser Casablanca clone, Sirocco deserves attention for how it pushes noir themes into colonial territory. The film's portrayal of the Syrian independence movement was unusually complex for 1951 Hollywood, though still filtered through a Western lens. Marta Toren plays the love interest Violette, echoing Ingrid Bergman's Ilsa but with a harder edge reflecting the film's more cynical post-war sensibilities."
+      },
+      {
+        "type": "text",
+        "content": "Director Curtis Bernhardt, who fled Nazi Germany in the 1930s, brings a distinctive European art film aesthetic unusual for Hollywood productions of the era. His use of extreme angles, expressionist lighting, and claustrophobic framing creates a sense of moral decay and paranoia that influenced later political thrillers like <a href=\"/movie/17295\" class=\"movie-title\" data-tmdb-id=\"17295\">The Battle of Algiers</a> (1966) and <a href=\"/movie/11541\" class=\"movie-title\" data-tmdb-id=\"11541\">The Year of Living Dangerously</a> (1982). SUBHEAD: Colonial Noir and Political Intrigue"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Algiers",
+            "year": 1938,
+            "slug": "Romantic thriller set in the Casbah of colonial Algeria",
+            "poster": "https://image.tmdb.org/t/p/w500/cvNQjlXJxRQrmB5VCcyssjKIwW8.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 22657,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cvNQjlXJxRQrmB5VCcyssjKIwW8.jpg"
+          },
+          {
+            "title": "Istanbul",
+            "year": 1957,
+            "slug": "Noir-tinged drama about smuggling in Turkey starring Errol Flynn",
+            "poster": "https://image.tmdb.org/t/p/w500/j989ro9LhVXEQI7xK4IipKiFAUE.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 203562,
+            "poster_url": "https://image.tmdb.org/t/p/w500/j989ro9LhVXEQI7xK4IipKiFAUE.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Sirocco represents a key evolution in how Hollywood depicted colonial settings, moving away from pure exoticism toward acknowledging political complexities. While not as directly critical as later films like <a href=\"/movie/85514\" class=\"movie-title\" data-tmdb-id=\"85514\">The Quiet American</a> (1958) and <a href=\"/movie/41057\" class=\"movie-title\" data-tmdb-id=\"41057\">Lost Command</a> (1966), it shows the cracks forming in traditional colonial adventure narratives. The film's commercial failure may have stemmed from audiences' discomfort with its moral ambiguity and implicit criticism of Western imperialism."
+      }
+    ],
+    "exploreFurther": [
+      "German Expressionist influence on Film Noir",
+      "Hollywood's portrayal of colonialism and independence movements",
+      "Humphrey Bogart's post-Casablanca career evolution",
+      "Curtis Bernhardt's refugee filmmaker experience",
+      "French-Syrian conflict in 1920s cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Passage to Marseille",
+          "year": 1944,
+          "slug": "Bogart resistance drama",
+          "poster": "https://image.tmdb.org/t/p/w500/14s5iMOLt8EboZmnltXjB7g2sap.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 18229,
+          "poster_url": "https://image.tmdb.org/t/p/w500/14s5iMOLt8EboZmnltXjB7g2sap.jpg"
+        },
+        {
+          "title": "The Conspirators",
+          "year": 1944,
+          "slug": "WWII intrigue in neutral Portugal",
+          "poster": "https://image.tmdb.org/t/p/w500/vIxpGK6EAmnfjW5csdD1Tgko4Cj.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 34945,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vIxpGK6EAmnfjW5csdD1Tgko4Cj.jpg"
+        },
+        {
+          "title": "Background to Danger",
+          "year": 1943,
+          "slug": "Espionage thriller set in Turkey",
+          "poster": "https://image.tmdb.org/t/p/w500/mepMDzGmh0Fmzq0CuWsNXZTBm6m.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 34944,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mepMDzGmh0Fmzq0CuWsNXZTBm6m.jpg"
+        },
+        {
+          "title": "Five Graves to Cairo",
+          "year": 1943,
+          "slug": "WWII desert espionage",
+          "poster": "https://image.tmdb.org/t/p/w500/sZuSO4VcIzsGWuoQoM6oEyfp1HV.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 60216,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sZuSO4VcIzsGWuoQoM6oEyfp1HV.jpg"
+        },
+        {
+          "title": "Sahara",
+          "year": 1943,
+          "slug": "Tank crew survival in North Africa",
+          "poster": "https://image.tmdb.org/t/p/w500/roVIPqVLMdvs7uOcqDuwO891t8s.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 18783,
+          "poster_url": "https://image.tmdb.org/t/p/w500/roVIPqVLMdvs7uOcqDuwO891t8s.jpg"
+        },
+        {
+          "title": "Action in Arabia",
+          "year": 1944,
+          "slug": "Middle East wartime intrigue",
+          "poster": "https://image.tmdb.org/t/p/w500/iGOAwvrKIOBp5gmeCW25QSPCbUj.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 101206,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iGOAwvrKIOBp5gmeCW25QSPCbUj.jpg"
+        },
+        {
+          "title": "The Desert Song",
+          "year": 1943,
+          "slug": "Musical adventure in French Morocco",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 174150
+        },
+        {
+          "title": "Outpost in Morocco",
+          "year": 1949,
+          "slug": "Foreign Legion drama",
+          "poster": "https://image.tmdb.org/t/p/w500/xtUplP8tQgCeSdLJKGGGjGdIfG3.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 208269,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xtUplP8tQgCeSdLJKGGGjGdIfG3.jpg"
+        },
+        {
+          "title": "Road to Morocco",
+          "year": 1942,
+          "slug": "Comedy adventure with Hope and Crosby",
+          "poster": "https://image.tmdb.org/t/p/w500/nECM25OC4iJHV1AHPa4CHnzYgyk.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 31805,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nECM25OC4iJHV1AHPa4CHnzYgyk.jpg"
+        },
+        {
+          "title": "Damascus Sky",
+          "year": 1950,
+          "slug": "Espionage in post-war Syria",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "NA",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

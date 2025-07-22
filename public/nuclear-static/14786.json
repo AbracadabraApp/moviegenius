@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "Gotti",
+    "year": 1996,
+    "initialSlug": "Mob boss rises to power in New York's crime family",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/4ZeKN0jnXHlyloMFba1Xe4C1ell.jpg",
+    "initialStreaming": null,
+    "tmdbId": 14786,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The 1996 HBO film Gotti stands as one of the most compelling mob biographical pictures, with Armand Assante's electric performance as John Gotti earning him an Emmy Award. Unlike theatrical releases like <a href=\"/movie/769\" class=\"movie-title\" data-tmdb-id=\"769\">Goodfellas</a> (1990) or <a href=\"/movie/238\" class=\"movie-title\" data-tmdb-id=\"238\">The Godfather</a> (1972), this made-for-TV production focuses intensely on Gotti's meteoric rise through the Gambino crime family ranks with documentary-like precision. The film particularly excels in depicting the infamous 1985 assassination of Paul Castellano outside Sparks Steak House, a pivotal moment that marked Gotti's ascension to power."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Casino",
+            "year": 1995,
+            "slug": "Scorsese's epic about the mob's control of Las Vegas, featuring Robert De Niro as a gambling expert running casinos for the Chicago outfit",
+            "poster": "https://image.tmdb.org/t/p/w500/gziIkUSnYuj9ChCi8qOu2ZunpSC.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 524,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gziIkUSnYuj9ChCi8qOu2ZunpSC.jpg"
+          },
+          {
+            "title": "Donnie Brasco",
+            "year": 1997,
+            "slug": "True story of FBI agent Joe Pistone who infiltrates the mob, starring Al Pacino and Johnny Depp",
+            "poster": "https://image.tmdb.org/t/p/w500/xtKLvpOfARi1XVm8u2FTdhY5Piq.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 9366,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xtKLvpOfARi1XVm8u2FTdhY5Piq.jpg"
+          },
+          {
+            "title": "The Valachi Papers",
+            "year": 1972,
+            "slug": "Charles Bronson stars in this true story of the first made man to publicly acknowledge the existence of the Mafia",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The mid-1990s marked a golden era for mob-focused television films, with Gotti leading the charge alongside productions like Witness to the Mob (1998) and Boss of Bosses (2001). What sets Gotti apart is its unflinching examination of FBI surveillance tactics and the RICO strategy that eventually brought down the \"Teflon Don.\" The film's attention to procedural detail and courtroom drama elements creates a more nuanced portrait than typical glamorized mob narratives. SUBHEAD: The Evolution of Made-for-TV Crime Dramas"
+      },
+      {
+        "type": "text",
+        "content": "Gotti helped establish a new standard for television crime biographies, influencing later productions like The Last Don (1997) and Bonanno: A Godfather's Story (1999). Director Robert Harmon's decision to frame the narrative through actual surveillance footage and court testimonies created a documentary-thriller hybrid approach that later influenced series like The Sopranos (1999-2007). The film's success proved that television could deliver sophisticated crime narratives that rivaled theatrical releases."
+      }
+    ],
+    "exploreFurther": [
+      "The real-life FBI tactics used to bring down the Gambino crime family",
+      "John Gotti's influence on popular culture and media depictions of organized crime",
+      "The evolution of made-for-TV crime dramas in the 1990s",
+      "The impact of RICO legislation on organized crime prosecutions",
+      "Comparing fictional versus factual depictions of John Gotti in media"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Goodfellas",
+          "year": 1990,
+          "slug": "Scorsese's masterpiece following Henry Hill's life in the mob",
+          "poster": "https://image.tmdb.org/t/p/w500/aKuFiU82s5ISJpGZp7YkIr3kCUd.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 769,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aKuFiU82s5ISJpGZp7YkIr3kCUd.jpg"
+        },
+        {
+          "title": "A Bronx Tale",
+          "year": 1993,
+          "slug": "Robert De Niro's directorial debut about growing up amid organized crime",
+          "poster": "https://image.tmdb.org/t/p/w500/sDbO6LmLYtyqAoFTPpRcMgPSCEO.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1607,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sDbO6LmLYtyqAoFTPpRcMgPSCEO.jpg"
+        },
+        {
+          "title": "Miller's Crossing",
+          "year": 1990,
+          "slug": "Coen Brothers' stylish take on gang warfare in the Prohibition era",
+          "poster": "https://image.tmdb.org/t/p/w500/ab3pnsTKp3BgcAFy0FgWBFBg9FL.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 379,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ab3pnsTKp3BgcAFy0FgWBFBg9FL.jpg"
+        },
+        {
+          "title": "Once Upon a Time in America",
+          "year": 1984,
+          "slug": "Epic spanning decades of Jewish gangsters in New York",
+          "poster": "https://image.tmdb.org/t/p/w500/i0enkzsL5dPeneWnjl1fCWm6L7k.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 311,
+          "poster_url": "https://image.tmdb.org/t/p/w500/i0enkzsL5dPeneWnjl1fCWm6L7k.jpg"
+        },
+        {
+          "title": "The Departed",
+          "year": 2006,
+          "slug": "Scorsese's Oscar-winning crime thriller about police and mob infiltration",
+          "poster": "https://image.tmdb.org/t/p/w500/nT97ifVT2J1yMQmeq20Qblg61T.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1422,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nT97ifVT2J1yMQmeq20Qblg61T.jpg"
+        },
+        {
+          "title": "Mean Streets",
+          "year": 1973,
+          "slug": "Early Scorsese film exploring small-time criminals in Little Italy",
+          "poster": "https://image.tmdb.org/t/p/w500/rzVTH9ylCw0owKkMZQVz2Eve97E.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 203,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rzVTH9ylCw0owKkMZQVz2Eve97E.jpg"
+        },
+        {
+          "title": "Kill the Irishman",
+          "year": 2011,
+          "slug": "True story of Danny Greene's war with the Cleveland mob",
+          "poster": "https://image.tmdb.org/t/p/w500/yjDvqAMyFlesBtWNUUZMgglo78y.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 51209,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yjDvqAMyFlesBtWNUUZMgglo78y.jpg"
+        },
+        {
+          "title": "The French Connection",
+          "year": 1971,
+          "slug": "Oscar-winning thriller about NYC detectives pursuing drug smugglers",
+          "poster": "https://image.tmdb.org/t/p/w500/5XSGvIKl2yPvOkieFjc3rzLw7x0.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 1051,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5XSGvIKl2yPvOkieFjc3rzLw7x0.jpg"
+        },
+        {
+          "title": "State of Grace",
+          "year": 1990,
+          "slug": "Undercover cop infiltrates Irish mob in Hell's Kitchen",
+          "poster": "https://image.tmdb.org/t/p/w500/dNMeRLY3MeY2FFeh639plHai3F1.jpg",
+          "initialStreaming": "Pluto TV",
+          "tmdb_id": 1662,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dNMeRLY3MeY2FFeh639plHai3F1.jpg"
+        },
+        {
+          "title": "Road to Perdition",
+          "year": 2002,
+          "slug": "Stylish gangster drama with Tom Hanks as a mob hitman",
+          "poster": "https://image.tmdb.org/t/p/w500/loSpBeirRfTPJ3cMIqpQArstGhh.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 4147,
+          "poster_url": "https://image.tmdb.org/t/p/w500/loSpBeirRfTPJ3cMIqpQArstGhh.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

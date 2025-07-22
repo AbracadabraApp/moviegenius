@@ -1,0 +1,184 @@
+{
+  "props": {
+    "title": "Shazam!",
+    "year": 2019,
+    "initialSlug": "Say the word. Become extraordinary.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/xnopI5Xtky18MPhK40cZAGAOVeV.jpg",
+    "initialStreaming": "HBO Max",
+    "tmdbId": 287947,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Shazam!** (2019) brilliantly modernizes the classic Captain Marvel comics through a perfect blend of superhero action and body-swap comedy, following the tradition of <a href=\"/movie/2280\" class=\"movie-title\">Big</a> (1988). Director David F. Sandberg deftly balances the wonder of a kid becoming a superhero with genuine emotional stakes about found family and belonging. The film stands out in the DC universe by embracing a lighter tone similar to <a href=\"/movie/315635\" class=\"movie-title\">Spider-Man: Homecoming</a> (2017), while still tackling serious themes about childhood abandonment and the true meaning of family."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Big",
+            "year": 1988,
+            "slug": "Tom Hanks stars as a boy in a man's body, setting the template for body-swap comedies",
+            "poster": "https://image.tmdb.org/t/p/w500/eWhCDJiwxvx3YXkAFRiHjimnF0j.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 2280,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eWhCDJiwxvx3YXkAFRiHjimnF0j.jpg"
+          },
+          {
+            "title": "Spider-Man: Homecoming",
+            "year": 2017,
+            "slug": "Teen Peter Parker balances high school life with superhero duties",
+            "poster": "https://image.tmdb.org/t/p/w500/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 315635,
+            "poster_url": "https://image.tmdb.org/t/p/w500/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg"
+          },
+          {
+            "title": "Chronicles",
+            "year": 2012,
+            "slug": "Three teens discover supernatural powers and face the consequences",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Zachary Levi channels perfect childlike enthusiasm as the adult superhero version of Billy Batson, creating a performance that recalls Tom Hanks' masterful work in <a href=\"/movie/2280\" class=\"movie-title\">Big</a> (1988). The film's greatest strength lies in its foster family dynamics, offering a fresh take on superhero origin stories that feels more grounded than typical cosmic-powered narratives. This approach aligns with successful coming-of-age superhero films like **Sky High** (2005) and **Spider-Man: Into the Spider-Verse** (2018)."
+      },
+      {
+        "type": "text",
+        "content": "Mark Strong's Dr. Sivana provides a dark mirror to Billy's journey, with both characters sharing childhood trauma and supernatural encounters. This parallel elevates the film beyond typical superhero confrontations, similar to how <a href=\"/movie/284052\" class=\"movie-title\">Doctor Strange</a> (2016) used its villain to explore the protagonist's character flaws. The Seven Deadly Sins creatures offer genuine horror elements, showcasing Sandberg's background in films like <a href=\"/movie/345911\" class=\"movie-title\">Lights Out</a> (2016). SUBHEAD: Family-Focused Superhero Evolution"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Lights Out",
+            "year": 2016,
+            "slug": "Supernatural horror film directed by David F. Sandberg",
+            "poster": "https://image.tmdb.org/t/p/w500/pOvxddYJScB3PMmaHp2ZnLChhrD.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 345911,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pOvxddYJScB3PMmaHp2ZnLChhrD.jpg"
+          },
+          {
+            "title": "Doctor Strange",
+            "year": 2016,
+            "slug": "Arrogant surgeon becomes Master of the Mystic Arts",
+            "poster": "https://image.tmdb.org/t/p/w500/xf8PbyQcR5ucXErmZNzdKR0s8ya.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 284052,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xf8PbyQcR5ucXErmZNzdKR0s8ya.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "**Shazam!** (2019) represents a significant shift in superhero storytelling, prioritizing family bonds over cosmic threats. This approach follows successful family-centered superhero films like **The Incredibles** (2004) and **Sky High** (2005). The foster family dynamic particularly resonates, offering representation rarely seen in superhero films while avoiding common orphan tropes seen in films like **Batman Begins** (2005) or **Man of Steel** (2013)."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of body-swap comedies from Big to modern interpretations",
+      "Horror directors transitioning to mainstream superhero films",
+      "Foster family representation in contemporary cinema",
+      "DC Comics' shift toward lighter theatrical tone",
+      "Integration of practical effects vs CGI in modern superhero films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Incredibles",
+          "year": 2004,
+          "slug": "Superhero family balances powers with domestic life",
+          "poster": "https://image.tmdb.org/t/p/w500/2LqaLgk4Z226KkgPJuiOQ58wvrm.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9806,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2LqaLgk4Z226KkgPJuiOQ58wvrm.jpg"
+        },
+        {
+          "title": "Thor: Ragnarok",
+          "year": 2017,
+          "slug": "God of Thunder embraces comedy in cosmic adventure",
+          "poster": "https://image.tmdb.org/t/p/w500/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 284053,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg"
+        },
+        {
+          "title": "Jumanji: Welcome to the Jungle",
+          "year": 2017,
+          "slug": "Body-swap adventure with video game twist",
+          "poster": "https://image.tmdb.org/t/p/w500/pSgXKPU5h6U89ipF7HBYajvYt7j.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 353486,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pSgXKPU5h6U89ipF7HBYajvYt7j.jpg"
+        },
+        {
+          "title": "Power Rangers",
+          "year": 2017,
+          "slug": "Teens discover powers and form unlikely family bonds",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 305470
+        },
+        {
+          "title": "The Goonies",
+          "year": 1985,
+          "slug": "Kids adventure with found family themes",
+          "poster": "https://image.tmdb.org/t/p/w500/eBU7gCjTCj9n2LTxvCSIXXOvHkD.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 9340,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eBU7gCjTCj9n2LTxvCSIXXOvHkD.jpg"
+        },
+        {
+          "title": "Superman",
+          "year": 1978,
+          "slug": "The original optimistic superhero film",
+          "poster": "https://image.tmdb.org/t/p/w500/d7px1FQxW4tngdACVRsCSaZq0Xl.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 1924,
+          "poster_url": "https://image.tmdb.org/t/p/w500/d7px1FQxW4tngdACVRsCSaZq0Xl.jpg"
+        },
+        {
+          "title": "Big Hero 6",
+          "year": 2014,
+          "slug": "Young genius forms superhero family after tragedy",
+          "poster": "https://image.tmdb.org/t/p/w500/2mxS4wUimwlLmI1xp6QW6NSU361.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 177572,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2mxS4wUimwlLmI1xp6QW6NSU361.jpg"
+        },
+        {
+          "title": "Instant Family",
+          "year": 2018,
+          "slug": "Foster family dramedy with heart",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 491418
+        },
+        {
+          "title": "Detective Pikachu",
+          "year": 2019,
+          "slug": "Family-friendly mystery with creature effects",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 447404
+        },
+        {
+          "title": "Wonder",
+          "year": 2017,
+          "slug": "Heartwarming story about acceptance and family",
+          "poster": "https://image.tmdb.org/t/p/w500/sONh3LYGFcVDTy8pm1tbSOB13Li.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 406997,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sONh3LYGFcVDTy8pm1tbSOB13Li.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

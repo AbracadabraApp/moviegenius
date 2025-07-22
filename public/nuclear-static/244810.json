@@ -1,0 +1,174 @@
+{
+  "props": {
+    "title": "The Silent Village",
+    "year": 1943,
+    "initialSlug": "Silence speaks louder than words.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/kR6PPHKPiCRz6kUFE6RoloCvRBX.jpg",
+    "initialStreaming": null,
+    "tmdbId": 244810,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Silent Village** (1943) stands as one of the most powerful propaganda films produced during WWII, directed by Humphrey Jennings who masterfully transplanted the Nazi destruction of Lidice, Czechoslovakia to the Welsh mining village of Cwmgiedd. This bold experimental documentary approach influenced later works like **The Battle of Algiers** (1966) and **The War Game** (1965). Jennings' genius lies in making distant wartime atrocities immediate and personal by recasting them in familiar British settings, creating an eerie parallel that forces viewers to confront fascism's threats to their own communities."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Silent Village",
+            "year": 1943,
+            "slug": "Humphrey Jennings' groundbreaking propaganda film reimagining the Lidice massacre in Wales",
+            "poster": "https://image.tmdb.org/t/p/w500/kR6PPHKPiCRz6kUFE6RoloCvRBX.jpg",
+            "initialStreaming": "BFI Player",
+            "tmdb_id": 244810,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kR6PPHKPiCRz6kUFE6RoloCvRBX.jpg"
+          },
+          {
+            "title": "Listen to Britain",
+            "year": 1942,
+            "slug": "Jennings' poetic documentary capturing British wartime life",
+            "poster": "https://image.tmdb.org/t/p/w500/bOkCsPLAi5wVEMJngDflGXCuCUw.jpg",
+            "initialStreaming": "BFI Player",
+            "tmdb_id": 88609,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bOkCsPLAi5wVEMJngDflGXCuCUw.jpg"
+          },
+          {
+            "title": "Fires Were Started",
+            "year": 1943,
+            "slug": "Dramatized documentary about London firefighters during the Blitz",
+            "poster": "https://image.tmdb.org/t/p/w500/A5qsYacdvEZhbLfiz4qtdoYeG6V.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 84656,
+            "poster_url": "https://image.tmdb.org/t/p/w500/A5qsYacdvEZhbLfiz4qtdoYeG6V.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence extends deep into British documentary tradition. Jennings pioneered a hybrid documentary-drama approach that later inspired filmmakers like Ken Loach in **Land and Freedom** (1995) and Peter Watkins in **Punishment Park** (1971). His technique of using non-professional actors from the actual Welsh mining community adds a layer of authenticity that resonates through works like **Corners** (1962) and **Housing Problems** (1935)."
+      },
+      {
+        "type": "text",
+        "content": "The way **The Silent Village** merges documentary and dramatic reconstruction created a template for dealing with historical atrocities on screen. This approach echoes through later films like **The Act of Killing** (2012) and **S21: The Khmer Rouge Death Machine** (2003), where reality and reconstruction blur to devastating effect. Jennings' work showed how cinema could tackle the unfilmable while maintaining both artistic integrity and emotional impact. SUBHEAD: The Crown Film Unit Legacy"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Diary for Timothy",
+            "year": 1945,
+            "slug": "Jennings' reflection on wartime Britain through a baby's first year",
+            "poster": "https://image.tmdb.org/t/p/w500/lMQALvi8BPcTa99V3n34XZPCHhO.jpg",
+            "initialStreaming": "BFI Player",
+            "tmdb_id": 132392,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lMQALvi8BPcTa99V3n34XZPCHhO.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "As part of the Crown Film Unit, Jennings helped establish a distinctly British documentary voice that influenced decades of filmmaking. The unit's commitment to poetic realism surfaces in works from **Night Mail** (1936) to **London Can Take It!** (1940), establishing techniques that would later influence the Free Cinema movement and British New Wave cinema of the 1960s."
+      }
+    ],
+    "exploreFurther": [
+      "British Wartime Propaganda Films 1939-1945",
+      "Humphrey Jennings' Documentary Techniques",
+      "The Lidice Massacre in Cinema",
+      "Welsh Mining Communities on Film",
+      "Crown Film Unit's Impact on British Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Night Mail",
+          "year": 1936,
+          "slug": "GPO Film Unit classic combining poetry and documentary",
+          "poster": "https://image.tmdb.org/t/p/w500/vRZCzgkR02rzN7XHx3iEyXZBEAz.jpg",
+          "initialStreaming": "BFI Player",
+          "tmdb_id": 77963,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vRZCzgkR02rzN7XHx3iEyXZBEAz.jpg"
+        },
+        {
+          "title": "London Can Take It!",
+          "year": 1940,
+          "slug": "Wartime morale film about the Blitz",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Archive.org",
+          "tmdb_id": 145011
+        },
+        {
+          "title": "Diary for Timothy",
+          "year": 1945,
+          "slug": "Jennings' meditation on wartime Britain",
+          "poster": "https://image.tmdb.org/t/p/w500/lMQALvi8BPcTa99V3n34XZPCHhO.jpg",
+          "initialStreaming": "BFI Player",
+          "tmdb_id": 132392,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lMQALvi8BPcTa99V3n34XZPCHhO.jpg"
+        },
+        {
+          "title": "Western Approaches",
+          "year": 1944,
+          "slug": "Crown Film Unit drama-documentary about merchant sailors",
+          "poster": "https://image.tmdb.org/t/p/w500/7akzIziCpJ1vj8AEljDRrEWjQ6v.jpg",
+          "initialStreaming": "BFI Player",
+          "tmdb_id": 305714,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7akzIziCpJ1vj8AEljDRrEWjQ6v.jpg"
+        },
+        {
+          "title": "Fires Were Started",
+          "year": 1943,
+          "slug": "Dramatized documentary about London firefighters",
+          "poster": "https://image.tmdb.org/t/p/w500/A5qsYacdvEZhbLfiz4qtdoYeG6V.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 84656,
+          "poster_url": "https://image.tmdb.org/t/p/w500/A5qsYacdvEZhbLfiz4qtdoYeG6V.jpg"
+        },
+        {
+          "title": "A Diary for Timothy",
+          "year": 1945,
+          "slug": "Jennings' final wartime film",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BFI Player",
+          "tmdb_id": 132392
+        },
+        {
+          "title": "Coal Face",
+          "year": 1935,
+          "slug": "Early GPO documentary about mining communities",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BFI Player",
+          "tmdb_id": 127992
+        },
+        {
+          "title": "Target for Tonight",
+          "year": 1941,
+          "slug": "RAF bombing mission documentary",
+          "poster": "https://image.tmdb.org/t/p/w500/rGiuN6KghkC7RtrBZUrpP0jBeGs.jpg",
+          "initialStreaming": "Archive.org",
+          "tmdb_id": 98478,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rGiuN6KghkC7RtrBZUrpP0jBeGs.jpg"
+        },
+        {
+          "title": "Britain Can Take It",
+          "year": 1940,
+          "slug": "Alternative version of London Can Take It",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BFI Player",
+          "tmdb_id": 145011
+        },
+        {
+          "title": "The Heart of Britain",
+          "year": 1941,
+          "slug": "Jennings' portrait of industrial Britain at war",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BFI Player",
+          "tmdb_id": 213980
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

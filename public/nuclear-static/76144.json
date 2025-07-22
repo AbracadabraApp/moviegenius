@@ -1,0 +1,162 @@
+{
+  "props": {
+    "title": "Drums Along the River",
+    "year": 1963,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/t6wW3FyrTTOZhb97jvug9M5HGpn.jpg",
+    "initialStreaming": null,
+    "tmdbId": 76144,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "While **Drums Along the River** (1963) is a lesser-known Western from the early 1960s, it fits into a fascinating period when Hollywood was transitioning away from straightforward cowboy narratives toward more complex frontier stories. Like <a href=\"/movie/11697\" class=\"movie-title\">The Man Who Shot Liberty Valance</a> (1962) and <a href=\"/movie/36206\" class=\"movie-title\">Ride the High Country</a> (1962), it attempted to bring more nuanced perspectives on Native American representation, though not nearly as progressively as later films like **Little Big Man** (1970) would achieve. The film's river journey narrative bears similarities to **The River Wild** (1994), though with distinctly Western genre trappings."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Man Who Shot Liberty Valance",
+            "year": 1962,
+            "slug": "John Ford's masterful Western examining myth-making and the closing of the frontier, starring John Wayne and James Stewart",
+            "poster": "https://image.tmdb.org/t/p/w500/4C1R0LEivLjbv3swAzJfzh0tzXl.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 11697,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4C1R0LEivLjbv3swAzJfzh0tzXl.jpg"
+          },
+          {
+            "title": "Ride the High Country",
+            "year": 1962,
+            "slug": "Sam Peckinpah's elegiac Western about aging lawmen making one final ride, with Randolph Scott and Joel McCrea",
+            "poster": "https://image.tmdb.org/t/p/w500/oBdJliz2o88ZLPulL5KLdbRsQuf.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 36206,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oBdJliz2o88ZLPulL5KLdbRsQuf.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The early 1960s marked a crucial transition point for the Western genre. While **Drums Along the River** (1963) maintained many traditional Western elements, films like <a href=\"/movie/966\" class=\"movie-title\">The Magnificent Seven</a> (1960) and **The Professionals** (1966) were pushing the genre in new directions with more morally ambiguous characters and complex narratives. The river setting itself became increasingly important in Western films of this era, as seen in **The Missouri Breaks** (1976) and **The Mountain Men** (1980), reflecting America's expansion along its waterways. SUBHEAD: River Narratives in Western Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Magnificent Seven",
+            "year": 1960,
+            "slug": "Classic Western remake of Seven Samurai, with an all-star cast defending a Mexican village",
+            "poster": "https://image.tmdb.org/t/p/w500/e5ToxOyJwuZD4VOfI0qEn5uIjeJ.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 966,
+            "poster_url": "https://image.tmdb.org/t/p/w500/e5ToxOyJwuZD4VOfI0qEn5uIjeJ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "River-based Westerns form a distinct subgenre that includes classics like **River of No Return** (1954) and **Night Passage** (1957). These films used river settings to explore themes of frontier commerce, cultural conflict, and man versus nature. The river itself often serves as both literal pathway and metaphorical journey, a tradition that **Drums Along the River** (1963) follows, though with less artistic success than predecessors like **Bend of the River** (1952)."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Native American Representation in 1960s Westerns",
+      "River Settings as Metaphor in Western Cinema",
+      "Transition Period of Western Genre (1960-1965)",
+      "Impact of River Trade Routes on Western Film Narratives",
+      "Changing Production Values in 1960s B-Westerns"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Bend of the River",
+          "year": 1952,
+          "slug": "James Stewart stars in Anthony Mann's psychological Western about a reformed outlaw leading a wagon train",
+          "poster": "https://image.tmdb.org/t/p/w500/pffOvEVDt6XRWDwBkmQ6zWITakJ.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 38732,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pffOvEVDt6XRWDwBkmQ6zWITakJ.jpg"
+        },
+        {
+          "title": "The Missouri Breaks",
+          "year": 1976,
+          "slug": "Marlon Brando and Jack Nicholson star in this unconventional Western about a rancher hiring a regulator",
+          "poster": "https://image.tmdb.org/t/p/w500/3fbAVOm9w66jt1TMbeTO8wLyqxO.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 42252,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3fbAVOm9w66jt1TMbeTO8wLyqxO.jpg"
+        },
+        {
+          "title": "River of No Return",
+          "year": 1954,
+          "slug": "Marilyn Monroe and Robert Mitchum navigate dangerous rapids and hostile Indians",
+          "poster": "https://image.tmdb.org/t/p/w500/47L7Uean0SqB74Qr6qVG5Vb5kgH.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 1936,
+          "poster_url": "https://image.tmdb.org/t/p/w500/47L7Uean0SqB74Qr6qVG5Vb5kgH.jpg"
+        },
+        {
+          "title": "Night Passage",
+          "year": 1957,
+          "slug": "James Stewart plays a railroad troubleshooter in this action-packed Western",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 25381
+        },
+        {
+          "title": "The Mountain Men",
+          "year": 1980,
+          "slug": "Charlton Heston stars as a fur trapper in the Rocky Mountains",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 75552
+        },
+        {
+          "title": "Broken Arrow",
+          "year": 1950,
+          "slug": "James Stewart stars in one of the first Westerns to sympathetically portray Native Americans",
+          "poster": "https://image.tmdb.org/t/p/w500/1gafYQCpDxtfIj7HYBNs4Z3m4oW.jpg",
+          "initialStreaming": "YouTube Movies",
+          "tmdb_id": 37292,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1gafYQCpDxtfIj7HYBNs4Z3m4oW.jpg"
+        },
+        {
+          "title": "The Big Sky",
+          "year": 1952,
+          "slug": "Kirk Douglas leads a keelboat expedition up the Missouri River",
+          "poster": "https://image.tmdb.org/t/p/w500/gnqdiMuvS5oBIVLxQY3Cq8wYIBR.jpg",
+          "initialStreaming": "Criterion Channel",
+          "tmdb_id": 43367,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gnqdiMuvS5oBIVLxQY3Cq8wYIBR.jpg"
+        },
+        {
+          "title": "The Far Country",
+          "year": 1954,
+          "slug": "James Stewart stars in another Anthony Mann Western about the Yukon gold rush",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 18721
+        },
+        {
+          "title": "Across the Wide Missouri",
+          "year": 1951,
+          "slug": "Clark Gable as a fur trapper navigating dangerous waters and tribal politics",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Warner Archive",
+          "tmdb_id": 34269
+        },
+        {
+          "title": "The Last Hunt",
+          "year": 1956,
+          "slug": "Robert Taylor and Stewart Granger star in this brutal tale of buffalo hunters",
+          "poster": "https://image.tmdb.org/t/p/w500/mw6WJu91gK2QYwOlU3wIx7xZSUi.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 127564,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mw6WJu91gK2QYwOlU3wIx7xZSUi.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

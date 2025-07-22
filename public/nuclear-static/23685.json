@@ -1,0 +1,159 @@
+{
+  "props": {
+    "title": "Monkeybone",
+    "year": 2001,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/lgH7Wej9922C1MQv0wciAfesKH8.jpg",
+    "initialStreaming": null,
+    "tmdbId": 23685,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Monkeybone represents a fascinating failure in hybrid animation/live-action filmmaking that deserves cult reappraisal. Director Henry Selick, fresh from the success of <a href=\"/movie/9479\" class=\"movie-title\" data-tmdb-id=\"9479\">The Nightmare Before Christmas</a> (1993) and <a href=\"/movie/10539\" class=\"movie-title\" data-tmdb-id=\"10539\">James and the Giant Peach</a> (1996), created a surreal dark comedy that channels the manic energy of <a href=\"/movie/14239\" class=\"movie-title\" data-tmdb-id=\"14239\">Cool World</a> (1992) while attempting to explore deeper themes about creativity and inner demons. The film follows cartoonist Stu Miley (Brendan Fraser) trapped in a coma-induced nightmare world called Down Town, where his crude animated creation Monkeybone comes to life. Like <a href=\"/movie/856\" class=\"movie-title\" data-tmdb-id=\"856\">Who Framed Roger Rabbit</a> (1988) before it, the film ambitiously blends animation techniques, but with a darker, more psychological edge."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Cool World",
+            "year": 1992,
+            "slug": "Animator gets trapped in a cartoon world of his own creation",
+            "poster": "https://image.tmdb.org/t/p/w500/mqzRUHNtFwmgJCmSnvq3JnX0xgZ.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 14239,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mqzRUHNtFwmgJCmSnvq3JnX0xgZ.jpg"
+          },
+          {
+            "title": "Who Framed Roger Rabbit",
+            "year": 1988,
+            "slug": "Live-action detective investigates cartoon murder in hybrid Hollywood",
+            "poster": "https://image.tmdb.org/t/p/w500/lYfRc57Kx9VgLZ48iulu0HKnM15.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 856,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lYfRc57Kx9VgLZ48iulu0HKnM15.jpg"
+          },
+          {
+            "title": "The Mask",
+            "year": 1994,
+            "slug": "Mild-mannered bank clerk transforms into a cartoon-like wild man",
+            "poster": "https://image.tmdb.org/t/p/w500/xbbXp9px4o8Oe7IbGd0yIbla8mZ.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 854,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xbbXp9px4o8Oe7IbGd0yIbla8mZ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's production design deserves special attention, creating a nightmarish carnival atmosphere that draws from German Expressionism and the works of Tim Burton. Down Town feels like a twisted cousin to the afterlife waiting room in <a href=\"/movie/4011\" class=\"movie-title\" data-tmdb-id=\"4011\">Beetlejuice</a> (1988), populated by practical effects creatures from legendary effects house KNB. While the story ultimately stumbles, the practical effects and stop-motion work showcase Selick's masterful eye for the grotesque and surreal, predating his later triumph <a href=\"/movie/14836\" class=\"movie-title\" data-tmdb-id=\"14836\">Coraline</a> (2009). SUBHEAD: Legacy and Influence"
+      },
+      {
+        "type": "text",
+        "content": "Despite its commercial failure, Monkeybone influenced later films dealing with artists' relationships to their creations, like <a href=\"/movie/103332\" class=\"movie-title\" data-tmdb-id=\"103332\">Ruby Sparks</a> (2012) and <a href=\"/movie/1262\" class=\"movie-title\" data-tmdb-id=\"1262\">Stranger Than Fiction</a> (2006). Its ambitious mixing of animation styles and dark psychological themes paved the way for adult-oriented animation hybrids like <a href=\"/movie/379686\" class=\"movie-title\" data-tmdb-id=\"379686\">Space Jam: A New Legacy</a> (2021), though few have attempted its level of surreal horror-comedy fusion. The film represents a unique moment when major studios were willing to gamble on darker, more experimental animation projects, alongside contemporaries like <a href=\"/movie/12610\" class=\"movie-title\" data-tmdb-id=\"12610\">Osmosis Jones</a> (2001)."
+      }
+    ],
+    "exploreFurther": [
+      "Henry Selick's Evolution in Stop-Motion Animation",
+      "The Rise and Fall of Adult-Oriented Animation/Live-Action Hybrids",
+      "Practical Effects vs CGI in Fantasy Filmmaking",
+      "Psychology and Surrealism in Animation",
+      "Brendan Fraser's Genre-Defying Career"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Drop Dead Fred",
+          "year": 1991,
+          "slug": "Imaginary friend returns to wreak havoc",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Little Monsters",
+          "year": 1989,
+          "slug": "Boy discovers monster world under his bed",
+          "poster": "https://image.tmdb.org/t/p/w500/oCC9piloeSMRpaGgxv52NfxM3vo.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 15138,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oCC9piloeSMRpaGgxv52NfxM3vo.jpg"
+        },
+        {
+          "title": "The Pagemaster",
+          "year": 1994,
+          "slug": "Boy adventures through animated library world",
+          "poster": "https://image.tmdb.org/t/p/w500/1NM0W9fwe2IZ4SPdN5OCNKjkrqN.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 15139,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1NM0W9fwe2IZ4SPdN5OCNKjkrqN.jpg"
+        },
+        {
+          "title": "James and the Giant Peach",
+          "year": 1996,
+          "slug": "Stop-motion adaptation of Roald Dahl classic",
+          "poster": "https://image.tmdb.org/t/p/w500/hCcndEHrNcfkDGcGgqcVGBgcBCA.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 10539,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hCcndEHrNcfkDGcGgqcVGBgcBCA.jpg"
+        },
+        {
+          "title": "Coraline",
+          "year": 2009,
+          "slug": "Girl discovers dark parallel world through secret door",
+          "poster": "https://image.tmdb.org/t/p/w500/4jeFXQYytChdZYE9JYO7Un87IlW.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 14836,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4jeFXQYytChdZYE9JYO7Un87IlW.jpg"
+        },
+        {
+          "title": "Cool World",
+          "year": 1992,
+          "slug": "Detective pursues cartoon femme fatale",
+          "poster": "https://image.tmdb.org/t/p/w500/mqzRUHNtFwmgJCmSnvq3JnX0xgZ.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 14239,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mqzRUHNtFwmgJCmSnvq3JnX0xgZ.jpg"
+        },
+        {
+          "title": "The Adventures of Rocky and Bullwinkle",
+          "year": 2000,
+          "slug": "Cartoon characters enter real world",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Osmosis Jones",
+          "year": 2001,
+          "slug": "Animated cells fight virus inside human body",
+          "poster": "https://image.tmdb.org/t/p/w500/foZpSG88IQUCEBJE3unc5QzO6bQ.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 12610,
+          "poster_url": "https://image.tmdb.org/t/p/w500/foZpSG88IQUCEBJE3unc5QzO6bQ.jpg"
+        },
+        {
+          "title": "The Congress",
+          "year": 2013,
+          "slug": "Actress sells digital likeness to studio",
+          "poster": "https://image.tmdb.org/t/p/w500/oeT9rwfCBayxgVoUn1yZGmkZlUq.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 152795,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oeT9rwfCBayxgVoUn1yZGmkZlUq.jpg"
+        },
+        {
+          "title": "Howard the Duck",
+          "year": 1986,
+          "slug": "Marvel's duck detective in live action world",
+          "poster": "https://image.tmdb.org/t/p/w500/30tnH0hy6S5FjGCfCdnkBd3wqS2.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 10658,
+          "poster_url": "https://image.tmdb.org/t/p/w500/30tnH0hy6S5FjGCfCdnkBd3wqS2.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

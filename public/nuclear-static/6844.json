@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "The Ten Commandments",
+    "year": 1956,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/3Ei59AR64x6dMZfWobPCkZjbqTL.jpg",
+    "initialStreaming": null,
+    "tmdbId": 6844,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Cecil B. DeMille's The Ten Commandments revolutionized biblical epics with its unprecedented $13 million budget and groundbreaking special effects. Charlton Heston's commanding presence as Moses set the standard for biblical heroes, while the parting of the Red Sea sequence - achieved through innovative practical effects - remains impressive even by today's standards. The film's influence extends to later religious epics like <a href=\"/movie/665\" class=\"movie-title\" data-tmdb-id=\"665\">Ben-Hur</a> (1959) and <a href=\"/movie/2428\" class=\"movie-title\" data-tmdb-id=\"2428\">The Greatest Story Ever Told</a> (1965), establishing a visual language for depicting biblical narratives that filmmakers still reference."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Ben-Hur",
+            "year": 1959,
+            "slug": "Charlton Heston stars in this epic tale of betrayal and redemption, featuring the legendary chariot race sequence",
+            "poster": "https://image.tmdb.org/t/p/w500/m4WQ1dBIrEIHZNCoAjdpxwSKWyH.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 665,
+            "poster_url": "https://image.tmdb.org/t/p/w500/m4WQ1dBIrEIHZNCoAjdpxwSKWyH.jpg"
+          },
+          {
+            "title": "King of Kings",
+            "year": 1961,
+            "slug": "Jeffrey Hunter portrays Jesus in this sweeping biblical narrative directed by Nicholas Ray",
+            "poster": "https://image.tmdb.org/t/p/w500/fp1Nx4FASTGldFuQyGXN0HF6Jgk.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 36362,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fp1Nx4FASTGldFuQyGXN0HF6Jgk.jpg"
+          },
+          {
+            "title": "The Prince of Egypt",
+            "year": 1998,
+            "slug": "Animated retelling of the Moses story with stunning visuals and memorable music",
+            "poster": "https://image.tmdb.org/t/p/w500/2xUjYwL6Ol7TLJPPKs7sYW5PWLX.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 9837,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2xUjYwL6Ol7TLJPPKs7sYW5PWLX.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The cultural impact of The Ten Commandments extends beyond its religious themes. DeMille's masterful use of Technicolor and massive practical sets influenced historical epics for decades, from <a href=\"/movie/8095\" class=\"movie-title\" data-tmdb-id=\"8095\">Cleopatra</a> (1963) to <a href=\"/movie/98\" class=\"movie-title\" data-tmdb-id=\"98\">Gladiator</a> (2000). The film's portrayal of ancient Egypt, while historically questionable by modern standards, created an enduring cinematic vocabulary for depicting ancient civilizations that echoes through films like <a href=\"/movie/147441\" class=\"movie-title\" data-tmdb-id=\"147441\">Exodus: Gods and Kings</a> (2014). SUBHEAD: The Evolution of Biblical Epics"
+      },
+      {
+        "type": "text",
+        "content": "Modern biblical films have shifted from DeMille's theatrical grandeur to grittier, more naturalistic approaches. <a href=\"/movie/615\" class=\"movie-title\" data-tmdb-id=\"615\">The Passion of the Christ</a> (2004) focused on brutal realism, while <a href=\"/movie/86834\" class=\"movie-title\" data-tmdb-id=\"86834\">Noah</a> (2014) and <a href=\"/movie/147441\" class=\"movie-title\" data-tmdb-id=\"147441\">Exodus: Gods and Kings</a> (2014) attempted to merge biblical narrative with contemporary special effects and psychological complexity. Yet none have matched the cultural impact or enduring popularity of The Ten Commandments, which still airs annually on ABC during Easter season."
+      }
+    ],
+    "exploreFurther": [
+      "The groundbreaking special effects techniques used in The Ten Commandments",
+      "Cecil B. DeMille's influence on the Hollywood epic genre",
+      "The historical accuracy vs. theatrical license in biblical epics",
+      "The evolution of religious filmmaking from the 1950s to present",
+      "Charlton Heston's career in historical epics"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Robe",
+          "year": 1953,
+          "slug": "First film released in CinemaScope follows a Roman tribune who oversees Christ's crucifixion",
+          "poster": "https://image.tmdb.org/t/p/w500/qFYZNGzftIM8dqGMJBToGraAFJp.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 29912,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qFYZNGzftIM8dqGMJBToGraAFJp.jpg"
+        },
+        {
+          "title": "Quo Vadis",
+          "year": 1951,
+          "slug": "Epic tale of early Christians in ancient Rome starring Robert Taylor",
+          "poster": "https://image.tmdb.org/t/p/w500/dqF1dattMNiwGjPSphu2VSi558Q.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 11620,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dqF1dattMNiwGjPSphu2VSi558Q.jpg"
+        },
+        {
+          "title": "Samson and Delilah",
+          "year": 1949,
+          "slug": "Cecil B. DeMille's earlier biblical epic with Victor Mature",
+          "poster": "https://image.tmdb.org/t/p/w500/iNb2KMv056vpCJycqFp5Xbpw61Z.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 29993,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iNb2KMv056vpCJycqFp5Xbpw61Z.jpg"
+        },
+        {
+          "title": "The Bible: In The Beginning",
+          "year": 1966,
+          "slug": "John Huston directs and narrates this adaptation of Genesis",
+          "poster": "https://image.tmdb.org/t/p/w500/2BtesvzFQJYFS2sPVVbUdet0TTC.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 2525,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2BtesvzFQJYFS2sPVVbUdet0TTC.jpg"
+        },
+        {
+          "title": "Barabbas",
+          "year": 1961,
+          "slug": "Anthony Quinn stars in this story of the criminal freed instead of Jesus",
+          "poster": "https://image.tmdb.org/t/p/w500/8qTylsK58cNc9hP7cQksi65j8JW.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 24248,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8qTylsK58cNc9hP7cQksi65j8JW.jpg"
+        },
+        {
+          "title": "Solomon and Sheba",
+          "year": 1959,
+          "slug": "Yul Brynner stars as King Solomon in this romantic biblical epic",
+          "poster": "https://image.tmdb.org/t/p/w500/sQPLRT014vOADFyvh54TpXFyBPZ.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 29996,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sQPLRT014vOADFyvh54TpXFyBPZ.jpg"
+        },
+        {
+          "title": "David and Bathsheba",
+          "year": 1951,
+          "slug": "Gregory Peck stars as King David in this romantic biblical drama",
+          "poster": "https://image.tmdb.org/t/p/w500/gOYwjVzXami9Nko7pfw7qyt3odu.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 42567,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gOYwjVzXami9Nko7pfw7qyt3odu.jpg"
+        },
+        {
+          "title": "The Story of Ruth",
+          "year": 1960,
+          "slug": "Henry Koster directs this adaptation of the Biblical book of Ruth",
+          "poster": "https://image.tmdb.org/t/p/w500/4MPqitAdH1WC52AOMZStTc6bRMX.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 43042,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4MPqitAdH1WC52AOMZStTc6bRMX.jpg"
+        },
+        {
+          "title": "Jesus of Nazareth",
+          "year": 1977,
+          "slug": "Franco Zeffirelli's acclaimed miniseries starring Robert Powell",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Last Temptation of Christ",
+          "year": 1988,
+          "slug": "Martin Scorsese's controversial interpretation of Jesus's life",
+          "poster": "https://image.tmdb.org/t/p/w500/7L4qwrC1mipZXJfU5oRgQWChLv1.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 11051,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7L4qwrC1mipZXJfU5oRgQWChLv1.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,209 @@
+{
+  "props": {
+    "title": "Welcome to Sodom",
+    "year": 2018,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/1ui48yGC17OIKVFD7nNUFlEtjFI.jpg",
+    "initialStreaming": null,
+    "tmdbId": 513178,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Welcome to Sodom** (2018) exposes the devastating reality of Agbogbloshie, Ghana's largest electronic waste dump, through stark documentary filmmaking. It shares crucial DNA with other environmental documentaries like **Manufactured Landscapes** (2006) and **Waste Land** (2010), but pushes further into the human cost of our digital consumption. The film's unflinching look at e-waste parallels the approach taken in **Darwin's Nightmare** (2004), showing how first-world consumption creates third-world devastation."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "An Inconvenient Truth",
+            "year": 2006,
+            "slug": "Al Gore's influential climate change documentary that sparked global environmental awareness",
+            "poster": "https://image.tmdb.org/t/p/w500/zrYT5UHE2UIsofwkv6KK2Tsu5a.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 1781,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zrYT5UHE2UIsofwkv6KK2Tsu5a.jpg"
+          },
+          {
+            "title": "Plastic China",
+            "year": 2016,
+            "slug": "Documentary following families who make a living recycling plastic waste imported from developed countries",
+            "poster": "https://image.tmdb.org/t/p/w500/3ZoIeBXkNKmLerdJk4SeTIh3OBC.jpg",
+            "initialStreaming": "Kanopy",
+            "tmdb_id": 428574,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3ZoIeBXkNKmLerdJk4SeTIh3OBC.jpg"
+          },
+          {
+            "title": "Wasteland",
+            "year": 2010,
+            "slug": "Artist Vik Muniz photographs garbage pickers in Rio de Janeiro's largest landfill",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The toxic landscape of Agbogbloshie connects thematically to other films examining environmental devastation, like **Into Eternity** (2010) and **The True Cost** (2015). These documentaries share a commitment to revealing the hidden costs of consumer culture. **Welcome to Sodom** distinguishes itself through intimate portraits of the waste pickers, showing their resilience while indicting the systems that created their circumstances."
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of digital waste builds on themes established in **Death by Design** (2016) and **Complicit** (2017), both examining the human and environmental toll of electronics manufacturing. But where those films focus on production, **Welcome to Sodom** shows us the end of the consumer electronics lifecycle - a graveyard of smartphones, computers and televisions that poisoning both land and people. SUBHEAD: Digital Age Consequences"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Story of Plastic",
+            "year": 2019,
+            "slug": "Comprehensive look at the plastic pollution crisis and its environmental impact",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Discovery+",
+            "tmdb_id": 666227
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The documentary's stark imagery recalls the industrial photography of **Workingman's Death** (2005) and **Our Daily Bread** (2005), films that similarly examine the hidden human cost of modern conveniences. **Welcome to Sodom** forces viewers to confront their role in creating these conditions through planned obsolescence and rapid tech turnover, themes also explored in **Consumed: Inside the Belly of the Beast** (2011)."
+      }
+    ],
+    "exploreFurther": [
+      "The global e-waste crisis and its environmental impact",
+      "Environmental justice and electronic waste dumping in developing nations",
+      "Circular economy solutions to electronic waste",
+      "Health impacts of e-waste exposure on waste picker communities",
+      "Consumer technology and planned obsolescence"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The World According to Monsanto",
+          "year": 2008,
+          "slug": "Investigation into the controversial agricultural corporation",
+          "poster": "https://image.tmdb.org/t/p/w500/lOv3zZWY1XS3SNIwJJ8AiqOTmRB.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 27865,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lOv3zZWY1XS3SNIwJJ8AiqOTmRB.jpg"
+        },
+        {
+          "title": "Black Gold",
+          "year": 2006,
+          "slug": "Examination of the coffee trade and its impact on Ethiopian farmers",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 49952
+        },
+        {
+          "title": "We Feed the World",
+          "year": 2005,
+          "slug": "Documentary about industrialized food production",
+          "poster": "https://image.tmdb.org/t/p/w500/buVa28Mh962tUKetAwnbpadkKMm.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 11214,
+          "poster_url": "https://image.tmdb.org/t/p/w500/buVa28Mh962tUKetAwnbpadkKMm.jpg"
+        },
+        {
+          "title": "The Corporation",
+          "year": 2003,
+          "slug": "Analysis of corporate behavior and its global impact",
+          "poster": "https://image.tmdb.org/t/p/w500/aN7LHIKHkq6x16a4pXlaiB7PHiP.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 11420,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aN7LHIKHkq6x16a4pXlaiB7PHiP.jpg"
+        },
+        {
+          "title": "Food Inc.",
+          "year": 2008,
+          "slug": "Exposé of corporate farming in America",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 18570
+        },
+        {
+          "title": "Darwin's Nightmare",
+          "year": 2004,
+          "slug": "Study of environmental and social impacts of fishing industry in Tanzania",
+          "poster": "https://image.tmdb.org/t/p/w500/5mcqaRJ8zYIdErzdTrq8rJDBQeU.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 415253,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5mcqaRJ8zYIdErzdTrq8rJDBQeU.jpg"
+        },
+        {
+          "title": "Manufactured Landscapes",
+          "year": 2006,
+          "slug": "Photography documentary examining industrial landscapes",
+          "poster": "https://image.tmdb.org/t/p/w500/bkU59j039xv2er6Y6V8PbFRcFUX.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 24582,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bkU59j039xv2er6Y6V8PbFRcFUX.jpg"
+        },
+        {
+          "title": "The True Cost",
+          "year": 2015,
+          "slug": "Investigation into the fast fashion industry",
+          "poster": "https://image.tmdb.org/t/p/w500/x7oDFes0HCWAYAwlEA5b3TCqX9S.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 339065,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x7oDFes0HCWAYAwlEA5b3TCqX9S.jpg"
+        },
+        {
+          "title": "Death by Design",
+          "year": 2016,
+          "slug": "Documentary about environmental impact of tech industry",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 398256
+        },
+        {
+          "title": "Complicit",
+          "year": 2017,
+          "slug": "Investigation of electronics manufacturing in China",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "PBS",
+          "tmdb_id": 446814
+        },
+        {
+          "title": "Into Eternity",
+          "year": 2010,
+          "slug": "Documentary about nuclear waste storage",
+          "poster": "https://image.tmdb.org/t/p/w500/hzINyIeovFPMwtwMteSuXdByCby.jpg",
+          "initialStreaming": "Vimeo",
+          "tmdb_id": 54527,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hzINyIeovFPMwtwMteSuXdByCby.jpg"
+        },
+        {
+          "title": "Workingman's Death",
+          "year": 2005,
+          "slug": "Portrait of dangerous manual labor worldwide",
+          "poster": "https://image.tmdb.org/t/p/w500/47Rn6IEKmuFqz5hJ4ZkaQIOtXkl.jpg",
+          "initialStreaming": "Mubi",
+          "tmdb_id": 63290,
+          "poster_url": "https://image.tmdb.org/t/p/w500/47Rn6IEKmuFqz5hJ4ZkaQIOtXkl.jpg"
+        },
+        {
+          "title": "Our Daily Bread",
+          "year": 2005,
+          "slug": "Look at industrial food production",
+          "poster": "https://image.tmdb.org/t/p/w500/kdW7HPJqhRQ2HRU9ZurbDbpTyj.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 24565,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kdW7HPJqhRQ2HRU9ZurbDbpTyj.jpg"
+        },
+        {
+          "title": "The Gleaners and I",
+          "year": 2000,
+          "slug": "Documentary about waste and recycling in France",
+          "poster": "https://image.tmdb.org/t/p/w500/6IdCTKi4Eu7i897jpe59wIDGCri.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 44379,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6IdCTKi4Eu7i897jpe59wIDGCri.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

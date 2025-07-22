@@ -1,0 +1,151 @@
+{
+  "props": {
+    "title": "A Canterbury Tale",
+    "year": 1944,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/mhqTQo0NN7Zm6cIzTapZ568WMpN.jpg",
+    "initialStreaming": null,
+    "tmdbId": 15696,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "A Canterbury Tale stands as one of Powell and Pressburger's most enigmatic masterpieces, blending wartime reality with mystical elements that echo Chaucer's medieval pilgrims. The film follows three modern \"pilgrims\" - a British soldier, an American GI, and a land girl - who converge in the fictional Kent town of Chillingbourne. Like <a href=\"/movie/56137\" class=\"movie-title\" data-tmdb-id=\"56137\">I Know Where I'm Going!</a> (1945) and <a href=\"/movie/44407\" class=\"movie-title\" data-tmdb-id=\"44407\">The Edge of the World</a> (1937), it explores the tension between tradition and progress, rural and urban life. The film's mysterious \"glue man\" who pours glue into women's hair becomes a strange catalyst for examining English heritage during wartime."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Life and Death of Colonel Blimp",
+            "year": 1943,
+            "slug": "Powell and Pressburger's epic spanning 40 years of British military life, examining friendship and aging",
+            "poster": "https://image.tmdb.org/t/p/w500/kgyd5uyndsXiLYKlVgH0sm7Jfkv.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 25037,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kgyd5uyndsXiLYKlVgH0sm7Jfkv.jpg"
+          },
+          {
+            "title": "I Know Where I'm Going!",
+            "year": 1945,
+            "slug": "A headstrong woman's planned marriage is disrupted by Scottish Highland magic and romance",
+            "poster": "https://image.tmdb.org/t/p/w500/i0Tq9xHqjlm3TjMYAJEq3hFnpQb.jpg",
+            "initialStreaming": "BritBox",
+            "tmdb_id": 56137,
+            "poster_url": "https://image.tmdb.org/t/p/w500/i0Tq9xHqjlm3TjMYAJEq3hFnpQb.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's unusual structure mirrors wartime Britain's disorientation. Like <a href=\"/movie/851\" class=\"movie-title\" data-tmdb-id=\"851\">Brief Encounter</a> (1945) and <a href=\"/movie/54391\" class=\"movie-title\" data-tmdb-id=\"54391\">Millions Like Us</a> (1943), it captures the home front's strange mixture of ancient traditions and modern warfare. But while those films stay grounded in realism, A Canterbury Tale ventures into almost supernatural territory. The medieval past bleeds into the present through Thomas Colpeper, the village magistrate who connects directly to England's deep history while acting as an unlikely guardian of traditional values. SUBHEAD: Wartime British Cinema's Spiritual Turn"
+      },
+      {
+        "type": "text",
+        "content": "This film represents a unique strand of 1940s British cinema that sought spiritual meaning amid warfare. While <a href=\"/movie/28093\" class=\"movie-title\" data-tmdb-id=\"28093\">In Which We Serve</a> (1942) and <a href=\"/movie/28916\" class=\"movie-title\" data-tmdb-id=\"28916\">The Way Ahead</a> (1944) focused on military heroism, Powell and Pressburger explored mystical connections to landscape and history. Their later <a href=\"/movie/28162\" class=\"movie-title\" data-tmdb-id=\"28162\">A Matter of Life and Death</a> (1946) would push even further into supernatural territory, but A Canterbury Tale remains their most grounded fusion of the magical and mundane."
+      }
+    ],
+    "exploreFurther": [
+      "Powell and Pressburger's use of landscape as a character in their films",
+      "The influence of medieval literature on British wartime cinema",
+      "Documentary realism versus poetic cinema in 1940s Britain",
+      "The role of women in British wartime films",
+      "Religious symbolism in Powell and Pressburger's work"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Red Shoes",
+          "year": 1948,
+          "slug": "Powell and Pressburger's stunning ballet drama about art and obsession",
+          "poster": "https://image.tmdb.org/t/p/w500/tRpm0MNYoMOgyumL9ePI3wB2P9V.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 19542,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tRpm0MNYoMOgyumL9ePI3wB2P9V.jpg"
+        },
+        {
+          "title": "Black Narcissus",
+          "year": 1947,
+          "slug": "Nuns struggle with desire and faith in the Himalayas",
+          "poster": "https://image.tmdb.org/t/p/w500/jSbFWWbkUq5N5ikewJHNATcWnxS.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 16391,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jSbFWWbkUq5N5ikewJHNATcWnxS.jpg"
+        },
+        {
+          "title": "The Small Back Room",
+          "year": 1949,
+          "slug": "A bomb disposal expert battles personal demons during WWII",
+          "poster": "https://image.tmdb.org/t/p/w500/9f1NRCFv634J0jXsdyEiwKLqgWV.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 46096,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9f1NRCFv634J0jXsdyEiwKLqgWV.jpg"
+        },
+        {
+          "title": "49th Parallel",
+          "year": 1941,
+          "slug": "Nazi submarine crew attempts to escape across Canada",
+          "poster": "https://image.tmdb.org/t/p/w500/m4YTQv9fHYB2nZ7M2Al6wzOmrYe.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 21735,
+          "poster_url": "https://image.tmdb.org/t/p/w500/m4YTQv9fHYB2nZ7M2Al6wzOmrYe.jpg"
+        },
+        {
+          "title": "The Way to the Stars",
+          "year": 1945,
+          "slug": "RAF pilots and American airmen forge friendships at a British base",
+          "poster": "https://image.tmdb.org/t/p/w500/bBxYrwRZ5YSqQplA2pF80JbyOFC.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 44087,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bBxYrwRZ5YSqQplA2pF80JbyOFC.jpg"
+        },
+        {
+          "title": "This Happy Breed",
+          "year": 1944,
+          "slug": "Working class family faces changes between the wars",
+          "poster": "https://image.tmdb.org/t/p/w500/3E4BiVMUAHJqT0VEZ6LUFD0P9J9.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 51617,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3E4BiVMUAHJqT0VEZ6LUFD0P9J9.jpg"
+        },
+        {
+          "title": "The Halfway House",
+          "year": 1944,
+          "slug": "Supernatural encounters at a Welsh inn during wartime",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": null
+        },
+        {
+          "title": "Went the Day Well?",
+          "year": 1942,
+          "slug": "English village resists Nazi infiltrators",
+          "poster": "https://image.tmdb.org/t/p/w500/6P9SOdqj4fQf3aYatq95f2g3ME6.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 23924,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6P9SOdqj4fQf3aYatq95f2g3ME6.jpg"
+        },
+        {
+          "title": "Listen to Britain",
+          "year": 1942,
+          "slug": "Humphrey Jennings' poetic documentary of wartime Britain",
+          "poster": "https://image.tmdb.org/t/p/w500/bOkCsPLAi5wVEMJngDflGXCuCUw.jpg",
+          "initialStreaming": "Public Domain",
+          "tmdb_id": 88609,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bOkCsPLAi5wVEMJngDflGXCuCUw.jpg"
+        },
+        {
+          "title": "Western Approaches",
+          "year": 1944,
+          "slug": "Merchant sailors battle U-boats in the Atlantic",
+          "poster": "https://image.tmdb.org/t/p/w500/7akzIziCpJ1vj8AEljDRrEWjQ6v.jpg",
+          "initialStreaming": "BritBox",
+          "tmdb_id": 305714,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7akzIziCpJ1vj8AEljDRrEWjQ6v.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

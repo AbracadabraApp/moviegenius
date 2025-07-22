@@ -1,0 +1,177 @@
+{
+  "props": {
+    "title": "Fedora",
+    "year": 1978,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/ArU150uZXJ9IVa5puxZKotw54DP.jpg",
+    "initialStreaming": null,
+    "tmdbId": 54000,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Fedora** (1978) stands as Billy Wilder's haunting swan song to Old Hollywood, arriving like a dark mirror to his earlier masterpiece <a href=\"/movie/599\" class=\"movie-title\">Sunset Boulevard</a> (1950). Both films tear away the glamorous façade of the movie industry, but Fedora cuts deeper - examining aging, identity, and the desperate measures taken to preserve fading beauty. Wilder's penultimate film feels remarkably prescient about Hollywood's obsession with youth and manufactured personas, themes that would become even more relevant in our era of social media filters and cosmetic surgery."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Sunset Boulevard",
+            "year": 1950,
+            "slug": "Gloria Swanson's iconic portrayal of a faded silent film star who can't accept her irrelevance",
+            "poster": "https://image.tmdb.org/t/p/w500/sC4Dpmn87oz9AuxZ15Lmip0Ftgr.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 599,
+            "poster_url": "https://image.tmdb.org/t/p/w500/sC4Dpmn87oz9AuxZ15Lmip0Ftgr.jpg"
+          },
+          {
+            "title": "All About Eve",
+            "year": 1950,
+            "slug": "Bette Davis stars in this razor-sharp look at aging actresses and ambitious understudies",
+            "poster": "https://image.tmdb.org/t/p/w500/blBzZaatPWVuWpXEnPscMA4Xp6m.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 705,
+            "poster_url": "https://image.tmdb.org/t/p/w500/blBzZaatPWVuWpXEnPscMA4Xp6m.jpg"
+          },
+          {
+            "title": "Whatever Happened to Baby Jane?",
+            "year": 1962,
+            "slug": "Psychological thriller about a former child star tormenting her sister",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 10242
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's complex structure, with its multiple flashbacks and unreliable narrators, showcases Wilder's masterful storytelling even in his later years. William Holden, reuniting with Wilder nearly 30 years after **Sunset Boulevard**, brings world-weary gravitas to his role as Barry Detweiler. The parallel casting feels intentional - both films feature Holden as a struggling industry player drawn into the orbit of a mysterious, reclusive actress. Marthe Keller delivers a layered performance that becomes more impressive once the film's central mystery unravels."
+      },
+      {
+        "type": "text",
+        "content": "The film's themes of identity and authenticity resonate strongly with later works like <a href=\"/movie/1018\" class=\"movie-title\">Mulholland Drive</a> (2001) and **Black Swan** (2010), which similarly explore the psychological toll of maintaining public personas in the entertainment industry. The gothic elements and questions of doubling and identity anticipate **The Face of Another** (1966) and **Eyes Without a Face** (1960), showing Wilder working in a more experimental mode than his earlier comedies. SUBHEAD: The Price of Eternal Youth"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Mulholland Drive",
+            "year": 2001,
+            "slug": "Lynch's surreal masterpiece about Hollywood dreams and identity",
+            "poster": "https://image.tmdb.org/t/p/w500/x7A59t6ySylr1L7aubOQEA480vM.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 1018,
+            "poster_url": "https://image.tmdb.org/t/p/w500/x7A59t6ySylr1L7aubOQEA480vM.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Wilder's prescient commentary on the commodification of beauty and youth finds modern echoes in films like **The Neon Demon** (2016) and **Maps to the Stars** (2014). The desperate pursuit of eternal youth in **Fedora** feels especially relevant in our age of Instagram filters and \"tweakments.\" The film's twist ending - revealing that the young Fedora is actually the aging star's daughter, forced to assume her mother's identity - speaks to the ultimate futility of trying to stop time."
+      }
+    ],
+    "exploreFurther": [
+      "Billy Wilder's Evolution from Comedy to Dark Drama",
+      "The Hollywood Gothic: Films About Filmmaking",
+      "Aging Actresses in Cinema: From Sunset Boulevard to Fedora",
+      "Identity and Doubling in 1970s Cinema",
+      "The Influence of German Expressionism on Billy Wilder"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Player",
+          "year": 1992,
+          "slug": "Altman's satirical take on Hollywood power players",
+          "poster": "https://image.tmdb.org/t/p/w500/tZ3kDut2dhFVGkWNEn9xoCHCNAx.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 10403,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tZ3kDut2dhFVGkWNEn9xoCHCNAx.jpg"
+        },
+        {
+          "title": "Persona",
+          "year": 1966,
+          "slug": "Bergman's psychological drama about identity and doubling",
+          "poster": "https://image.tmdb.org/t/p/w500/9QlqnRNbzb78lRiRPAP1ufmoZko.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 797,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9QlqnRNbzb78lRiRPAP1ufmoZko.jpg"
+        },
+        {
+          "title": "The Artist",
+          "year": 2011,
+          "slug": "Silent film about Hollywood's transition to talkies",
+          "poster": "https://image.tmdb.org/t/p/w500/z68py0ZqPgeacGPG54AGVRbNBS7.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 74643,
+          "poster_url": "https://image.tmdb.org/t/p/w500/z68py0ZqPgeacGPG54AGVRbNBS7.jpg"
+        },
+        {
+          "title": "Living in Oblivion",
+          "year": 1995,
+          "slug": "Independent film about the struggles of filmmaking",
+          "poster": "https://image.tmdb.org/t/p/w500/b54xDk98oWtEtAso9sj1wjaZDDH.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 9071,
+          "poster_url": "https://image.tmdb.org/t/p/w500/b54xDk98oWtEtAso9sj1wjaZDDH.jpg"
+        },
+        {
+          "title": "Valley of the Dolls",
+          "year": 1967,
+          "slug": "Melodrama about fame and addiction in Hollywood",
+          "poster": "https://image.tmdb.org/t/p/w500/sgCqYaLVjudm1BHiaZdYDQXYcDl.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 3055,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sgCqYaLVjudm1BHiaZdYDQXYcDl.jpg"
+        },
+        {
+          "title": "Opening Night",
+          "year": 1977,
+          "slug": "Gena Rowlands as an actress facing aging and identity",
+          "poster": "https://image.tmdb.org/t/p/w500/5i1331f4Q2sNHUp9X3BOwWPS2Gg.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 33665,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5i1331f4Q2sNHUp9X3BOwWPS2Gg.jpg"
+        },
+        {
+          "title": "The Bad and the Beautiful",
+          "year": 1952,
+          "slug": "Kirk Douglas in a drama about Hollywood power",
+          "poster": "https://image.tmdb.org/t/p/w500/ajAXzTiPkL7JxeCRw5lQBqrKNGx.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 32499,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ajAXzTiPkL7JxeCRw5lQBqrKNGx.jpg"
+        },
+        {
+          "title": "Clouds of Sils Maria",
+          "year": 2014,
+          "slug": "Aging actress confronts her past through a revival",
+          "poster": "https://image.tmdb.org/t/p/w500/dtCZ31RlokpkAaKMr9jFCJjBngi.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 246860,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dtCZ31RlokpkAaKMr9jFCJjBngi.jpg"
+        },
+        {
+          "title": "Birdman",
+          "year": 2014,
+          "slug": "Former superhero actor seeks Broadway legitimacy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Congress",
+          "year": 2013,
+          "slug": "Sci-fi take on aging actresses and digital preservation",
+          "poster": "https://image.tmdb.org/t/p/w500/oeT9rwfCBayxgVoUn1yZGmkZlUq.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 152795,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oeT9rwfCBayxgVoUn1yZGmkZlUq.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

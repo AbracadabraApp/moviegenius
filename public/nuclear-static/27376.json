@@ -1,0 +1,158 @@
+{
+  "props": {
+    "title": "Muscle Beach Party",
+    "year": 1964,
+    "initialSlug": "Beefcakes, babes, and beach bash!",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/loKZcf1zVMNQYvziaKBZFvTSueE.jpg",
+    "initialStreaming": null,
+    "tmdbId": 27376,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Muscle Beach Party epitomizes the beach party film phenomenon that dominated teen cinema in the mid-1960s. Following the massive success of <a href=\"/movie/26484\" class=\"movie-title\">Beach Party</a> (1963), American International Pictures (AIP) rushed this sequel into production, reuniting Frankie Avalon and Annette Funicello as the clean-cut couple leading a gang of surfers. The film crystallizes the pre-counterculture youth movement, when teenagers' biggest rebellions involved surfing, dancing, and mild romantic jealousies. Don Rickles and Buddy Hackett provide comic relief, while Peter Lupus (billed as Rock Stevens) represents the bodybuilding culture that was gaining mainstream attention through figures like Steve Reeves."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Beach Party",
+            "year": 1963,
+            "slug": "The original teen beach movie that launched the genre, starring Frankie Avalon and Annette Funicello",
+            "poster": "https://image.tmdb.org/t/p/w500/3Wmf7VKBIlwUSpakKDMi9LIGnP.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 26484,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3Wmf7VKBIlwUSpakKDMi9LIGnP.jpg"
+          },
+          {
+            "title": "Bikini Beach",
+            "year": 1964,
+            "slug": "Third entry in the series, adding British Invasion elements with Frankie playing a dual role",
+            "poster": "https://image.tmdb.org/t/p/w500/wKz35312Lzg8yCpcVpJ4xJbz78g.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 39113,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wKz35312Lzg8yCpcVpJ4xJbz78g.jpg"
+          },
+          {
+            "title": "Pajama Party",
+            "year": 1964,
+            "slug": "A beach party spin-off replacing surfing with a Martian visitor, still starring Avalon and Funicello",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "PlutoTV",
+            "tmdb_id": 53617
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The beach party genre emerged as a uniquely American response to the rising youth culture of the 1960s. While films like <a href=\"/movie/28696\" class=\"movie-title\" data-tmdb-id=\"28696\">The Wild One</a> (1953) and <a href=\"/movie/221\" class=\"movie-title\" data-tmdb-id=\"221\">Rebel Without a Cause</a> (1955) portrayed troubled, dramatic youth, AIP recognized a market for lighter teenage entertainment. These films created a sanitized rebellion - where parents were absent but teens remained fundamentally wholesome. The formula proved so successful that it spawned numerous imitators like The Girls on the Beach (1965) and The Beach Girls and the Monster (1965)."
+      },
+      {
+        "type": "text",
+        "content": "Muscle Beach Party particularly stands out for incorporating the Venice Beach bodybuilding scene, predating the mainstream fitness boom of the 1970s. The film's conflict between surfers and bodybuilders reflects real cultural tensions of the era, though handled with characteristic lightweight comedy. The musical numbers, featuring Little Stevie Wonder and other teen idols, showcase the transition from surf rock to more diverse pop styles. This mix of cultural elements makes the film a fascinating time capsule of pre-Beatles American youth culture. SUBHEAD: Musical Impact and Cultural Legacy"
+      },
+      {
+        "type": "text",
+        "content": "The beach party films were crucial vehicles for promoting pop music to teens, predating MTV by nearly two decades. Muscle Beach Party features early performances by Little Stevie Wonder, marking one of Motown's first major crossovers into mainstream film. The soundtrack bridges the gap between surf rock instrumentals like those popularized in <a href=\"/movie/43096\" class=\"movie-title\" data-tmdb-id=\"43096\">Gidget</a> (1959) and the coming British Invasion that would transform American pop music. These musical elements influenced later surf documentaries like <a href=\"/movie/21\" class=\"movie-title\" data-tmdb-id=\"21\">The Endless Summer</a> (1966)."
+      }
+    ],
+    "exploreFurther": [
+      "The Rise and Fall of American International Pictures (AIP)",
+      "Venice Beach Bodybuilding Culture in the 1960s",
+      "Frankie Avalon and Annette Funicello's Impact on Teen Cinema",
+      "Evolution of Surf Music in Film",
+      "Teen Movies Before the Counterculture"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Gidget",
+          "year": 1959,
+          "slug": "The film that launched the surf movie craze",
+          "poster": "https://image.tmdb.org/t/p/w500/i4aRCd5sRzYLb3TLm8iiUN0iJTr.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 43096,
+          "poster_url": "https://image.tmdb.org/t/p/w500/i4aRCd5sRzYLb3TLm8iiUN0iJTr.jpg"
+        },
+        {
+          "title": "Beach Blanket Bingo",
+          "year": 1965,
+          "slug": "The most popular of the beach party series",
+          "poster": "https://image.tmdb.org/t/p/w500/96PQsb6z1hGtck5ZM5B5CsXm7fw.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 26483,
+          "poster_url": "https://image.tmdb.org/t/p/w500/96PQsb6z1hGtck5ZM5B5CsXm7fw.jpg"
+        },
+        {
+          "title": "How to Stuff a Wild Bikini",
+          "year": 1965,
+          "slug": "One of the last traditional beach party films",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "PlutoTV",
+          "tmdb_id": 26879
+        },
+        {
+          "title": "Where the Boys Are",
+          "year": 1960,
+          "slug": "College students on spring break in Florida",
+          "poster": "https://image.tmdb.org/t/p/w500/if6vjNZZX2JEclfd4rcus9kOHwT.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 43049,
+          "poster_url": "https://image.tmdb.org/t/p/w500/if6vjNZZX2JEclfd4rcus9kOHwT.jpg"
+        },
+        {
+          "title": "The Ghost in the Invisible Bikini",
+          "year": 1966,
+          "slug": "Horror-comedy spin on the beach party formula",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Roku",
+          "tmdb_id": 86343
+        },
+        {
+          "title": "The Girls on the Beach",
+          "year": 1965,
+          "slug": "Beatles-inspired beach party knockoff",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 102845
+        },
+        {
+          "title": "Wild Guitar",
+          "year": 1962,
+          "slug": "Early Arch Hall Jr. rock and roll film",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 89924
+        },
+        {
+          "title": "It's a Bikini World",
+          "year": 1967,
+          "slug": "Late entry in the beach movie cycle",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 91063
+        },
+        {
+          "title": "For Those Who Think Young",
+          "year": 1964,
+          "slug": "Beach party clone with James Darren",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 121716
+        },
+        {
+          "title": "Ride the Wild Surf",
+          "year": 1964,
+          "slug": "More serious take on surf culture",
+          "poster": "https://image.tmdb.org/t/p/w500/5cqRxM6KeUQaK2LDMRtAZPpH3nh.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 42789,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5cqRxM6KeUQaK2LDMRtAZPpH3nh.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

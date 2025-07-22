@@ -1,0 +1,156 @@
+{
+  "props": {
+    "title": "Inland Empire",
+    "year": 2006,
+    "initialSlug": "An actress loses herself in a cursed film role",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/fw9Bzwel5VkBKy9qLD2MzAMnu5I.jpg",
+    "initialStreaming": null,
+    "tmdbId": 1730,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Inland Empire represents David Lynch's most experimental and challenging work, pushing digital video to surreal extremes. Shot over several years on consumer-grade DV cameras, the film follows Laura Dern's splintering performance as an actress whose identity fractures during a cursed film production. Unlike the more narratively grounded <a href=\"/movie/1018\" class=\"movie-title\" data-tmdb-id=\"1018\">Mulholland Drive</a> (2001), Inland Empire deliberately destroys conventional storytelling, creating a three-hour nightmare landscape where Polish folk tales, sitcom rabbits, and Hollywood degradation collide. The low-fi digital imagery creates an unsettling intimacy, with Lynch using the medium's limitations to heighten the psychological horror."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Lost Highway",
+            "year": 1997,
+            "slug": "A jazz musician accused of murder undergoes a bizarre identity transformation in Lynch's neo-noir nightmare",
+            "poster": "https://image.tmdb.org/t/p/w500/fdTtij6H0sX9AzIjUeynh5zbfm7.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 638,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fdTtij6H0sX9AzIjUeynh5zbfm7.jpg"
+          },
+          {
+            "title": "Persona",
+            "year": 1966,
+            "slug": "Ingmar Bergman's psychological drama about an actress and nurse whose identities begin to merge",
+            "poster": "https://image.tmdb.org/t/p/w500/9QlqnRNbzb78lRiRPAP1ufmoZko.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 797,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9QlqnRNbzb78lRiRPAP1ufmoZko.jpg"
+          },
+          {
+            "title": "Mulholland Drive",
+            "year": 2001,
+            "slug": "Lynch's masterpiece about Hollywood dreams and nightmares following an aspiring actress",
+            "poster": "https://image.tmdb.org/t/p/w500/x7A59t6ySylr1L7aubOQEA480vM.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 1018,
+            "poster_url": "https://image.tmdb.org/t/p/w500/x7A59t6ySylr1L7aubOQEA480vM.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film builds on Lynch's career-long exploration of fractured identity and Hollywood's dark underbelly. While <a href=\"/movie/793\" class=\"movie-title\" data-tmdb-id=\"793\">Blue Velvet</a> (1986) and <a href=\"/movie/638\" class=\"movie-title\" data-tmdb-id=\"638\">Lost Highway</a> (1997) maintained some narrative coherence, Inland Empire completely abandons traditional structure. It shares DNA with experimental works like <a href=\"/movie/27040\" class=\"movie-title\" data-tmdb-id=\"27040\">Meshes of the Afternoon</a> (1943) and <a href=\"/movie/4024\" class=\"movie-title\" data-tmdb-id=\"4024\">Last Year at Marienbad</a> (1961), films that prioritize dream logic and psychological states over plot. The digital video creates a uniquely unsettling texture, predating the found footage horror boom of films like <a href=\"/movie/23827\" class=\"movie-title\" data-tmdb-id=\"23827\">Paranormal Activity</a> (2007). SUBHEAD: Digital Experimentation and Performance"
+      },
+      {
+        "type": "text",
+        "content": "Laura Dern's fearless performance anchors the experimental chaos. Her character Nikki Grace/Susan Blue exists in multiple realities, echoing the dual roles of <a href=\"/movie/797\" class=\"movie-title\" data-tmdb-id=\"797\">Persona</a> (1966) and <a href=\"/movie/5781\" class=\"movie-title\" data-tmdb-id=\"5781\">That Obscure Object of Desire</a> (1977). The digital intimacy allows Lynch to capture every microexpression as identity dissolves. This approach influenced later digital experimentalists like Shane Carruth's <a href=\"/movie/145197\" class=\"movie-title\" data-tmdb-id=\"145197\">Upstream Color</a> (2013) and Jonathan Glazer's <a href=\"/movie/97370\" class=\"movie-title\" data-tmdb-id=\"97370\">Under the Skin</a> (2013), though few dare to push as far into abstraction as Lynch."
+      }
+    ],
+    "exploreFurther": [
+      "David Lynch's transition from film to digital video and its impact on his style",
+      "The influence of Polish cinema and folklore on Inland Empire's narrative",
+      "Laura Dern's collaborations with David Lynch across three decades",
+      "The use of consumer-grade digital video in art house cinema",
+      "The role of sitcom parody and media criticism in Lynch's work"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Eraserhead",
+          "year": 1977,
+          "slug": "Lynch's surreal debut about fatherhood anxieties",
+          "poster": "https://image.tmdb.org/t/p/w500/mxveW3mGVc0DzLdOmtkZsgd7c3B.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 985,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mxveW3mGVc0DzLdOmtkZsgd7c3B.jpg"
+        },
+        {
+          "title": "3 Women",
+          "year": 1977,
+          "slug": "Robert Altman's dream-inspired identity swap drama",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Hour of the Wolf",
+          "year": 1968,
+          "slug": "Bergman's horror film about an artist's psychological breakdown",
+          "poster": "https://image.tmdb.org/t/p/w500/jSqTnEP1x1OcOglqrInYvGSF1tL.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 18333,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jSqTnEP1x1OcOglqrInYvGSF1tL.jpg"
+        },
+        {
+          "title": "Synecdoche New York",
+          "year": 2008,
+          "slug": "Charlie Kaufman's reality-bending meditation on art and identity",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Videodrome",
+          "year": 1983,
+          "slug": "Cronenberg's hallucinatory exploration of media and reality",
+          "poster": "https://image.tmdb.org/t/p/w500/qqqkiZSU9EBGZ1KiDmfn07S7qvv.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 837,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qqqkiZSU9EBGZ1KiDmfn07S7qvv.jpg"
+        },
+        {
+          "title": "The Double Life of Veronique",
+          "year": 1991,
+          "slug": "Kieslowski's mysterious tale of identical women",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Perfect Blue",
+          "year": 1997,
+          "slug": "Anime thriller about an idol's fractured identity",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Holy Motors",
+          "year": 2012,
+          "slug": "Surreal journey through multiple identities and roles",
+          "poster": "https://image.tmdb.org/t/p/w500/4ZuTrrDQhCS9f6KzIX6HfsjjyMd.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 103328,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4ZuTrrDQhCS9f6KzIX6HfsjjyMd.jpg"
+        },
+        {
+          "title": "Possessor",
+          "year": 2020,
+          "slug": "Sci-fi horror about identity theft and consciousness",
+          "poster": "https://image.tmdb.org/t/p/w500/xC9GZeJZ3NagdkGg9nLQx0aPG6J.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 435615,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xC9GZeJZ3NagdkGg9nLQx0aPG6J.jpg"
+        },
+        {
+          "title": "Enemy",
+          "year": 2013,
+          "slug": "Doppelganger thriller exploring divided identity",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

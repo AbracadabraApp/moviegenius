@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "Love and Death",
+    "year": 1975,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/oJXFd1UHZoOQ1UtoLxbyBLGJDox.jpg",
+    "initialStreaming": null,
+    "tmdbId": 11686,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Woody Allen's Love and Death brilliantly merges philosophical comedy with period-piece parody, taking direct aim at Russian literature and European art films. The film follows Boris (Allen), a coward drafted into the Napoleonic Wars, through a series of existential misadventures that deliberately echo Tolstoy's \"War and Peace\" while incorporating Allen's signature neurotic humor. Like his earlier <a href=\"/movie/11561\" class=\"movie-title\" data-tmdb-id=\"11561\">Sleeper</a> (1973), Allen uses historical setting as a playground for contemporary jokes, but here he's specifically targeting the self-serious tone of Bergman films like <a href=\"/movie/490\" class=\"movie-title\" data-tmdb-id=\"490\">The Seventh Seal</a> (1957) and the epic scope of <a href=\"/movie/11706\" class=\"movie-title\" data-tmdb-id=\"11706\">War and Peace</a> (1956)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Seventh Seal",
+            "year": 1957,
+            "slug": "Bergman's medieval masterpiece about a knight playing chess with Death - a key influence Allen parodies",
+            "poster": "https://image.tmdb.org/t/p/w500/wcZ21zrOsy0b52AfAF50XpTiv75.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 490,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wcZ21zrOsy0b52AfAF50XpTiv75.jpg"
+          },
+          {
+            "title": "War and Peace",
+            "year": 1956,
+            "slug": "Soviet epic adaptation of Tolstoy's novel that Allen specifically references",
+            "poster": "https://image.tmdb.org/t/p/w500/cIh7pBAjzxrJYNRt1JcQPFReF36.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 11706,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cIh7pBAjzxrJYNRt1JcQPFReF36.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film marks a crucial transition in Allen's career, bridging his earlier \"funny\" period of pure comedies like <a href=\"/movie/11302\" class=\"movie-title\" data-tmdb-id=\"11302\">Bananas</a> (1971) and his later more serious works like <a href=\"/movie/703\" class=\"movie-title\" data-tmdb-id=\"703\">Annie Hall</a> (1977). The philosophical themes he explores through comedy - love, death, God, meaning - would become central to his later masterpieces. The film's use of direct-to-camera addresses, fantasy sequences, and literary references established techniques Allen would perfect in subsequent films."
+      },
+      {
+        "type": "text",
+        "content": "Allen's parody extends beyond just Russian literature to encompass European art cinema as a whole. The black-and-white photography by Ghislain Cloquet deliberately mimics the stark visual style of Bergman, while the death scenes reference both <a href=\"/movie/614\" class=\"movie-title\" data-tmdb-id=\"614\">Wild Strawberries</a> (1957) and <a href=\"/movie/797\" class=\"movie-title\" data-tmdb-id=\"797\">Persona</a> (1966). Even the relationship between Boris and his cousin Sonja (Diane Keaton) plays like a comedy version of the tortured romances in Bergman's chamber dramas. SUBHEAD: The Evolution of Philosophical Comedy"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Annie Hall",
+            "year": 1977,
+            "slug": "Allen's Oscar-winning romantic comedy that built on techniques developed in Love and Death",
+            "poster": "https://image.tmdb.org/t/p/w500/dEtjPywhDbAXYjoFfhBC4U9unU7.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 703,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dEtjPywhDbAXYjoFfhBC4U9unU7.jpg"
+          },
+          {
+            "title": "Wild Strawberries",
+            "year": 1957,
+            "slug": "Bergman's meditation on death and memory that Allen references",
+            "poster": "https://image.tmdb.org/t/p/w500/iyTD2QnySNMPUPE3IedZQipSWfz.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 614,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iyTD2QnySNMPUPE3IedZQipSWfz.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Love and Death established a template for intellectual comedy that influenced films like History of the World, Part I (1981) and Monty Python's The Meaning of Life (1983). By treating weighty philosophical concepts with irreverent humor while still engaging with them seriously, Allen showed how comedy could tackle profound themes without losing its essential playfulness. The film's influence can be seen in later works like <a href=\"/movie/120467\" class=\"movie-title\" data-tmdb-id=\"120467\">The Grand Budapest Hotel</a> (2014), which similarly uses historical setting and literary references as framework for both comedy and deeper meaning."
+      }
+    ],
+    "exploreFurther": [
+      "The influence of European art cinema on American comedy",
+      "Woody Allen's transition from pure comedy to dramatic comedy",
+      "The role of Russian literature in American film",
+      "Philosophy and humor in cinema",
+      "The evolution of period-piece parody"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Bananas",
+          "year": 1971,
+          "slug": "Allen's earlier pure comedy about a product tester who becomes a Latin American revolutionary",
+          "poster": "https://image.tmdb.org/t/p/w500/gK11RUXspxqty0Wq6KoV8J0crKO.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 11302,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gK11RUXspxqty0Wq6KoV8J0crKO.jpg"
+        },
+        {
+          "title": "Sleeper",
+          "year": 1973,
+          "slug": "Allen's sci-fi comedy that similarly uses genre for philosophical humor",
+          "poster": "https://image.tmdb.org/t/p/w500/vVpUfsHuZecO7FlCtDBQd2ullyq.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 11561,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vVpUfsHuZecO7FlCtDBQd2ullyq.jpg"
+        },
+        {
+          "title": "Persona",
+          "year": 1966,
+          "slug": "Bergman psychological drama that influenced Allen's visual style",
+          "poster": "https://image.tmdb.org/t/p/w500/9QlqnRNbzb78lRiRPAP1ufmoZko.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 797,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9QlqnRNbzb78lRiRPAP1ufmoZko.jpg"
+        },
+        {
+          "title": "Manhattan",
+          "year": 1979,
+          "slug": "Allen's follow-up to Annie Hall continuing his more serious period",
+          "poster": "https://image.tmdb.org/t/p/w500/k4eT3EvfxW1L9Wmt04UqJqCvCR6.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 696,
+          "poster_url": "https://image.tmdb.org/t/p/w500/k4eT3EvfxW1L9Wmt04UqJqCvCR6.jpg"
+        },
+        {
+          "title": "The Purple Rose of Cairo",
+          "year": 1985,
+          "slug": "Allen's fantasy-comedy about movies and reality",
+          "poster": "https://image.tmdb.org/t/p/w500/ccsint43E44B7NGceEhVimD93Yt.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 10849,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ccsint43E44B7NGceEhVimD93Yt.jpg"
+        },
+        {
+          "title": "Zelig",
+          "year": 1983,
+          "slug": "Allen's mockumentary about a human chameleon",
+          "poster": "https://image.tmdb.org/t/p/w500/bfs67JaV4B5xVBvtXd3O4R7nk9G.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 11030,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bfs67JaV4B5xVBvtXd3O4R7nk9G.jpg"
+        },
+        {
+          "title": "Everything You Always Wanted to Know About Sex",
+          "year": 1972,
+          "slug": "Allen's sketch comedy film",
+          "poster": "https://image.tmdb.org/t/p/w500/A1ZNhNd8FV8kCW39OeDelokT0tv.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 11624,
+          "poster_url": "https://image.tmdb.org/t/p/w500/A1ZNhNd8FV8kCW39OeDelokT0tv.jpg"
+        },
+        {
+          "title": "Deconstructing Harry",
+          "year": 1997,
+          "slug": "Allen's later self-reflexive comedy about a writer",
+          "poster": "https://image.tmdb.org/t/p/w500/i7Z5DdznqANJUjqWISEFu9bw6J7.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 2639,
+          "poster_url": "https://image.tmdb.org/t/p/w500/i7Z5DdznqANJUjqWISEFu9bw6J7.jpg"
+        },
+        {
+          "title": "A Midsummer Night's Sex Comedy",
+          "year": 1982,
+          "slug": "Allen's period comedy inspired by Bergman's Smiles of a Summer Night",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Stardust Memories",
+          "year": 1980,
+          "slug": "Allen's Fellini-inspired meditation on art and fame",
+          "poster": "https://image.tmdb.org/t/p/w500/y1EHgpL2hMVRcr6tIOy7VGLxaPs.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 11337,
+          "poster_url": "https://image.tmdb.org/t/p/w500/y1EHgpL2hMVRcr6tIOy7VGLxaPs.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

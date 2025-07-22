@@ -1,0 +1,185 @@
+{
+  "props": {
+    "title": "The Man with a Movie Camera",
+    "year": 1929,
+    "initialSlug": "Revolutionary documentary techniques",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/vJgAdgJWX54v0oXfIvhwjlZnmgn.jpg",
+    "initialStreaming": null,
+    "tmdbId": 26317,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The Man with a Movie Camera revolutionized documentary filmmaking through Dziga Vertov's radical experimental techniques. The film abandons narrative completely, instead creating a day-in-the-life portrait of Soviet cities through dizzying double exposures, split screens, freeze frames, and dynamic editing. Vertov's \"kino-eye\" philosophy rejected staged drama in favor of capturing \"life caught unawares.\" This influenced later works like <a href=\"/movie/222\" class=\"movie-title\" data-tmdb-id=\"222\">Berlin: Symphony of a Great City</a> (1927) and <a href=\"/movie/11314\" class=\"movie-title\" data-tmdb-id=\"11314\">Koyaanisqatsi</a> (1982), establishing the city symphony film genre that celebrates urban life through pure visual poetry."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Man with a Movie Camera",
+            "year": 1929,
+            "slug": "Revolutionary Soviet documentary showcasing experimental filming techniques and urban life without narrative",
+            "poster": "https://image.tmdb.org/t/p/w500/vJgAdgJWX54v0oXfIvhwjlZnmgn.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 26317,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vJgAdgJWX54v0oXfIvhwjlZnmgn.jpg"
+          },
+          {
+            "title": "Koyaanisqatsi",
+            "year": 1982,
+            "slug": "Hypnotic visual essay contrasting natural and technological worlds with Philip Glass score",
+            "poster": "https://image.tmdb.org/t/p/w500/6zCNciRcob8lwuydVXgq0esla8L.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 11314,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6zCNciRcob8lwuydVXgq0esla8L.jpg"
+          },
+          {
+            "title": "Berlin: Symphony of a Great City",
+            "year": 1927,
+            "slug": "Influential city symphony film capturing one day in Weimar-era Berlin",
+            "poster": "https://image.tmdb.org/t/p/w500/1APQoI9PKgZtg6PWZjIbr0U7GvZ.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 222,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1APQoI9PKgZtg6PWZjIbr0U7GvZ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Vertov's innovative editing techniques continue influencing experimental filmmakers today. His rapid-fire montages and unconventional angles appear in works like <a href=\"/movie/1563\" class=\"movie-title\" data-tmdb-id=\"1563\">Sans Soleil</a> (1983) and <a href=\"/movie/14002\" class=\"movie-title\" data-tmdb-id=\"14002\">Baraka</a> (1992). The film's self-reflexive approach - showing the cameraman, editing process, and audience watching - pioneered meta-cinema decades before <a href=\"/movie/422\" class=\"movie-title\" data-tmdb-id=\"422\">8½</a> (1963) or Man with a Movie Camera: The Global Remake (2008), a digital reimagining of Vertov's vision."
+      },
+      {
+        "type": "text",
+        "content": "The film's celebration of industrial modernity and machine rhythms reflected Soviet constructivist aesthetics. This mechanical beauty inspired later industrial documentaries like <a href=\"/movie/24582\" class=\"movie-title\" data-tmdb-id=\"24582\">Manufactured Landscapes</a> (2006) and <a href=\"/movie/63290\" class=\"movie-title\" data-tmdb-id=\"63290\">Workingman's Death</a> (2005). Vertov's trust in the camera's objective eye influenced cinema verité pioneers like Jean Rouch and Frederick Wiseman's observational style in <a href=\"/movie/41212\" class=\"movie-title\" data-tmdb-id=\"41212\">Titicut Follies</a> (1967). SUBHEAD: Legacy in Modern Documentary"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Sans Soleil",
+            "year": 1983,
+            "slug": "Chris Marker's poetic essay film exploring memory, time and place",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": null
+          },
+          {
+            "title": "Baraka",
+            "year": 1992,
+            "slug": "Wordless journey across 24 countries examining human civilization",
+            "poster": "https://image.tmdb.org/t/p/w500/ldEuJQ4z7zEvL7iXraESWBUfQcz.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 14002,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ldEuJQ4z7zEvL7iXraESWBUfQcz.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Contemporary documentarians continue drawing from Vertov's toolbox. Cameraperson (2016) echoes his self-reflexive approach by examining the relationship between filmmaker and subject. <a href=\"/movie/89708\" class=\"movie-title\" data-tmdb-id=\"89708\">Samsara</a> (2011) adopts his wordless visual poetry style while using modern time-lapse and aerial photography. Even mainstream docs like <a href=\"/movie/293310\" class=\"movie-title\" data-tmdb-id=\"293310\">Citizenfour</a> (2014) employ his theory of \"life caught unawares\" through surveillance footage and candid moments."
+      }
+    ],
+    "exploreFurther": [
+      "Soviet Montage Theory and its influence on modern editing",
+      "City Symphony films across different decades and cultures",
+      "The development of observational documentary techniques",
+      "Self-reflexive cinema and breaking the fourth wall",
+      "Industrial documentary aesthetic from 1920s to present"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Enthusiasm",
+          "year": 1931,
+          "slug": "Another Vertov experimental documentary about Soviet youth",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Titicut Follies",
+          "year": 1967,
+          "slug": "Frederick Wiseman's groundbreaking observational documentary",
+          "poster": "https://image.tmdb.org/t/p/w500/hAJOSqWB4FeVV7yi0fRSYFoCwvM.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 41212,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hAJOSqWB4FeVV7yi0fRSYFoCwvM.jpg"
+        },
+        {
+          "title": "Primary",
+          "year": 1960,
+          "slug": "Direct Cinema pioneer following Kennedy's campaign",
+          "poster": "https://image.tmdb.org/t/p/w500/gVloWsthHRlw719vzRWRpBqDM20.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 133,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gVloWsthHRlw719vzRWRpBqDM20.jpg"
+        },
+        {
+          "title": "Chronicle of a Summer",
+          "year": 1961,
+          "slug": "Jean Rouch's influential cinema verité experiment",
+          "poster": "https://image.tmdb.org/t/p/w500/cKsFs0FUJBy4b8ihPpaeyRl2SJs.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 84972,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cKsFs0FUJBy4b8ihPpaeyRl2SJs.jpg"
+        },
+        {
+          "title": "News from Home",
+          "year": 1977,
+          "slug": "Chantal Akerman's personal city symphony of New York",
+          "poster": "https://image.tmdb.org/t/p/w500/5LqgIR3npCOswRefM5f437Xx9Hb.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 86814,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5LqgIR3npCOswRefM5f437Xx9Hb.jpg"
+        },
+        {
+          "title": "Los Angeles Plays Itself",
+          "year": 2003,
+          "slug": "Essay film examining LA's representation in cinema",
+          "poster": "https://image.tmdb.org/t/p/w500/wmzGSQktsLf2JvfkhBaLSdG4G3Z.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 38643,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wmzGSQktsLf2JvfkhBaLSdG4G3Z.jpg"
+        },
+        {
+          "title": "Leviathan",
+          "year": 2012,
+          "slug": "Experimental doc about commercial fishing industry",
+          "poster": "https://image.tmdb.org/t/p/w500/yU626BbyIZ4VraJJuFwXHEhcEK3.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 127962,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yU626BbyIZ4VraJJuFwXHEhcEK3.jpg"
+        },
+        {
+          "title": "In the Year of the Pig",
+          "year": 1968,
+          "slug": "Innovative Vietnam War documentary using found footage",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Images of the World and the Inscription of War",
+          "year": 1989,
+          "slug": "Harun Farocki's essay on photography and perception",
+          "poster": "https://image.tmdb.org/t/p/w500/jEPbZyaDCzdOTXg6inbNiqVtjxc.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 115150,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jEPbZyaDCzdOTXg6inbNiqVtjxc.jpg"
+        },
+        {
+          "title": "Lessons of Darkness",
+          "year": 1992,
+          "slug": "Werner Herzog's apocalyptic industrial landscape film",
+          "poster": "https://image.tmdb.org/t/p/w500/rSQaIbOQj6SUSOxr3BEiAmCoj1P.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 53200,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rSQaIbOQj6SUSOxr3BEiAmCoj1P.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

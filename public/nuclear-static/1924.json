@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "Superman",
+    "year": 1978,
+    "initialSlug": "You will believe a man can fly.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/d7px1FQxW4tngdACVRsCSaZq0Xl.jpg",
+    "initialStreaming": "HBO Max",
+    "tmdbId": 1924,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Superman revolutionized superhero cinema by treating its source material with unprecedented respect and scale. Director Richard Donner crafted a mythological origin story that balanced epic spectacle with Christopher Reeve's earnest, charming performance. The film established the template that superhero movies would follow for decades: origin story structure, dual identity drama, and visual effects pushing technical boundaries. Its iconic John Williams score and \"You'll believe a man can fly\" marketing captured public imagination, proving superheroes could anchor blockbuster films."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Superman II",
+            "year": 1980,
+            "slug": "Superman battles three Kryptonian villains while wrestling with giving up his powers for love. Features the iconic General Zod.",
+            "poster": "https://image.tmdb.org/t/p/w500/3xk5cno9BHcnwc97XO9k21aI1Zi.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 8536,
+            "poster_url": "https://image.tmdb.org/t/p/w500/3xk5cno9BHcnwc97XO9k21aI1Zi.jpg"
+          },
+          {
+            "title": "Superman Returns",
+            "year": 2006,
+            "slug": "Bryan Singer's nostalgic sequel to the original films follows Superman's return after a long absence, with Brandon Routh channeling Christopher Reeve.",
+            "poster": "https://image.tmdb.org/t/p/w500/385XwTQZDpRX2d3kxtnpiLrjBXw.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 1452,
+            "poster_url": "https://image.tmdb.org/t/p/w500/385XwTQZDpRX2d3kxtnpiLrjBXw.jpg"
+          },
+          {
+            "title": "Man of Steel",
+            "year": 2013,
+            "slug": "Zack Snyder's gritty reboot reimagines Superman's origin with Henry Cavill and intense action sequences.",
+            "poster": "https://image.tmdb.org/t/p/w500/8GFtkImmK0K1VaUChR0n9O61CFU.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 49521,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8GFtkImmK0K1VaUChR0n9O61CFU.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The success of Superman paved the way for darker superhero interpretations like <a href=\"/movie/268\" class=\"movie-title\" data-tmdb-id=\"268\">Batman</a> (1989) and more complex character studies like <a href=\"/movie/558\" class=\"movie-title\" data-tmdb-id=\"558\">Spider-Man 2</a> (2004). Its practical effects work, particularly the flying sequences, influenced blockbuster filmmaking well into the CGI era. The film's greatest achievement was making audiences emotionally invest in a fantastical character through grounded relationships and moral clarity."
+      },
+      {
+        "type": "text",
+        "content": "Margot Kidder's Lois Lane set a new standard for female leads in superhero films, while Gene Hackman's scenery-chewing Lex Luthor showed how to balance menace with humor. The film's influence extends beyond superhero cinema - its blend of drama, romance, and action influenced blockbusters like <a href=\"/movie/85\" class=\"movie-title\" data-tmdb-id=\"85\">Raiders of the Lost Ark</a> (1981) and <a href=\"/movie/105\" class=\"movie-title\" data-tmdb-id=\"105\">Back to the Future</a> (1985). SUBHEAD: Legacy and Modern Impact"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Flash Gordon",
+            "year": 1980,
+            "slug": "Campy space opera with spectacular production design and a Queen soundtrack that followed Superman's success.",
+            "poster": "https://image.tmdb.org/t/p/w500/eTdEaRjtVnFbd5KVhxLRfbYW46e.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 3604,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eTdEaRjtVnFbd5KVhxLRfbYW46e.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Modern superhero films still reference Superman's blueprint. The small-town Americana of <a href=\"/movie/10195\" class=\"movie-title\" data-tmdb-id=\"10195\">Thor</a> (2011), the newsroom dynamics of <a href=\"/movie/557\" class=\"movie-title\" data-tmdb-id=\"557\">Spider-Man</a> (2002), and the secret identity struggles in <a href=\"/movie/1726\" class=\"movie-title\" data-tmdb-id=\"1726\">Iron Man</a> (2008) all echo elements Donner perfected. Even Christopher Nolan cited the film's sincerity as inspiration for <a href=\"/movie/272\" class=\"movie-title\" data-tmdb-id=\"272\">Batman Begins</a> (2005)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Practical Effects in Superman vs Modern CGI",
+      "John Williams' Superman Theme and Superhero Musical Scores",
+      "Richard Donner's Fight to Complete Superman II",
+      "Christopher Reeve's Impact on Superhero Casting",
+      "Superman's Influence on Comic Book Movie Marketing"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Superman III",
+          "year": 1983,
+          "slug": "Richard Pryor joins the franchise in a comedic turn",
+          "poster": "https://image.tmdb.org/t/p/w500/aac3vujaTWRLARNDEcMyGSvJfsx.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 9531,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aac3vujaTWRLARNDEcMyGSvJfsx.jpg"
+        },
+        {
+          "title": "Superman IV: The Quest for Peace",
+          "year": 1987,
+          "slug": "The final Christopher Reeve Superman tackles nuclear disarmament",
+          "poster": "https://image.tmdb.org/t/p/w500/aQ1d9OB0xtAenIL0Ke3xV17St4S.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 11411,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aQ1d9OB0xtAenIL0Ke3xV17St4S.jpg"
+        },
+        {
+          "title": "Supergirl",
+          "year": 1984,
+          "slug": "Helen Slater stars in this Superman spinoff",
+          "poster": "https://image.tmdb.org/t/p/w500/6OfuKKCPFclHOj4SSRRpLzF1lfP.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 9651,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6OfuKKCPFclHOj4SSRRpLzF1lfP.jpg"
+        },
+        {
+          "title": "Hollywoodland",
+          "year": 2006,
+          "slug": "Ben Affleck stars as George Reeves, TV's Superman",
+          "poster": "https://image.tmdb.org/t/p/w500/8FgNVvJEEwRgFURiAcW7VuXwvf1.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1249,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8FgNVvJEEwRgFURiAcW7VuXwvf1.jpg"
+        },
+        {
+          "title": "Superman: The Movie Extended Cut",
+          "year": 1978,
+          "slug": "Three-hour version with additional footage",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": null
+        },
+        {
+          "title": "Batman v Superman: Dawn of Justice",
+          "year": 2016,
+          "slug": "Modern clash between DC's biggest heroes",
+          "poster": "https://image.tmdb.org/t/p/w500/5UsK3grJvtQrtzEgqNlDljJW96w.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 209112,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5UsK3grJvtQrtzEgqNlDljJW96w.jpg"
+        },
+        {
+          "title": "Wonder Woman",
+          "year": 2017,
+          "slug": "Takes inspiration from Superman's earnest heroism",
+          "poster": "https://image.tmdb.org/t/p/w500/v4ncgZjG2Zu8ZW5al1vIZTsSjqX.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 297762,
+          "poster_url": "https://image.tmdb.org/t/p/w500/v4ncgZjG2Zu8ZW5al1vIZTsSjqX.jpg"
+        },
+        {
+          "title": "Captain America: The First Avenger",
+          "year": 2011,
+          "slug": "Similar period-piece superhero origin",
+          "poster": "https://image.tmdb.org/t/p/w500/vSNxAJTlD0r02V9sPYpOjqDZXUK.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 1771,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vSNxAJTlD0r02V9sPYpOjqDZXUK.jpg"
+        },
+        {
+          "title": "Shazam!",
+          "year": 2019,
+          "slug": "Modern superhero film channeling Superman's optimism",
+          "poster": "https://image.tmdb.org/t/p/w500/xnopI5Xtky18MPhK40cZAGAOVeV.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 287947,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xnopI5Xtky18MPhK40cZAGAOVeV.jpg"
+        },
+        {
+          "title": "Hancock",
+          "year": 2008,
+          "slug": "Subversive take on Superman-like powers",
+          "poster": "https://image.tmdb.org/t/p/w500/7DyuV2G0hLEqHeueDfOqhZ2DVut.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 8960,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7DyuV2G0hLEqHeueDfOqhZ2DVut.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

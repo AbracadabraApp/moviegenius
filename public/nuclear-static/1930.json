@@ -1,0 +1,179 @@
+{
+  "props": {
+    "title": "The Amazing Spider-Man",
+    "year": 2012,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/jexoNYnPd6vVrmygwF6QZmWPFdu.jpg",
+    "initialStreaming": null,
+    "tmdbId": 1930,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The Amazing Spider-Man marked a bold reboot of the Spider-Man franchise, arriving just five years after Sam Raimi's <a href=\"/movie/559\" class=\"movie-title\" data-tmdb-id=\"559\">Spider-Man 3</a> (2007). Director Marc Webb brought a grittier, more grounded approach compared to Raimi's operatic style, drawing inspiration from ultimate comics and focusing heavily on Peter Parker's search for identity. The film's practical web-swinging effects and Andrew Garfield's more angular, sarcastic Spider-Man created clear differentiation from Tobey Maguire's earnest portrayal in <a href=\"/movie/557\" class=\"movie-title\" data-tmdb-id=\"557\">Spider-Man</a> (2002)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Spider-Man",
+            "year": 2002,
+            "slug": "Sam Raimi's definitive take introduces Tobey Maguire as the friendly neighborhood hero, with groundbreaking web-swinging effects",
+            "poster": "https://image.tmdb.org/t/p/w500/gh4cZbhZxyTbgxQPxD0dOudNPTn.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 557,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gh4cZbhZxyTbgxQPxD0dOudNPTn.jpg"
+          },
+          {
+            "title": "Batman Begins",
+            "year": 2005,
+            "slug": "Christopher Nolan's gritty superhero reboot that influenced darker comic adaptations",
+            "poster": "https://image.tmdb.org/t/p/w500/4MpN4kIEqUjW8OPtOQJXlTdHiJV.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 272,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4MpN4kIEqUjW8OPtOQJXlTdHiJV.jpg"
+          },
+          {
+            "title": "Superman Returns",
+            "year": 2006,
+            "slug": "Bryan Singer's nostalgic Superman reboot attempting to continue Donner's legacy",
+            "poster": "https://image.tmdb.org/t/p/w500/385XwTQZDpRX2d3kxtnpiLrjBXw.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 1452,
+            "poster_url": "https://image.tmdb.org/t/p/w500/385XwTQZDpRX2d3kxtnpiLrjBXw.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's emphasis on scientific themes and corporate conspiracy through Oscorp connects it to other tech-focused superhero films like <a href=\"/movie/1726\" class=\"movie-title\" data-tmdb-id=\"1726\">Iron Man</a> (2008) and <a href=\"/movie/1724\" class=\"movie-title\" data-tmdb-id=\"1724\">The Incredible Hulk</a> (2008). Emma Stone's Gwen Stacy brought a more active, intellectual love interest compared to previous superhero film romances, setting a template later followed by <a href=\"/movie/297762\" class=\"movie-title\" data-tmdb-id=\"297762\">Wonder Woman</a> (2017) and <a href=\"/movie/284054\" class=\"movie-title\" data-tmdb-id=\"284054\">Black Panther</a> (2018). The film's practical effects mixed with CGI created memorable sequences like the bridge rescue, though some critics found the Lizard's design lacking compared to practical effects villains like <a href=\"/movie/558\" class=\"movie-title\" data-tmdb-id=\"558\">Spider-Man 2</a>'s (2004) Doc Ock."
+      },
+      {
+        "type": "text",
+        "content": "Webb's background in intimate dramas like 500 Days of Summer (2009) shows in the tender scenes between Peter and Gwen, as well as the emotional weight given to Uncle Ben's death. This character-first approach influenced later superhero films like <a href=\"/movie/284054\" class=\"movie-title\" data-tmdb-id=\"284054\">Black Panther</a> (2018) and <a href=\"/movie/315635\" class=\"movie-title\" data-tmdb-id=\"315635\">Spider-Man: Homecoming</a> (2017), which similarly prioritized personal stakes alongside spectacle. The film's darker tone and focus on Peter's parents' disappearance drew comparisons to <a href=\"/movie/272\" class=\"movie-title\" data-tmdb-id=\"272\">Batman Begins</a> (2005), though some fans felt it strayed too far from Spider-Man's lighter comic roots. SUBHEAD: Legacy and Impact on Superhero Genre"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Spider-Man: Into the Spider-Verse",
+            "year": 2018,
+            "slug": "Groundbreaking animated take on multiple Spider-People with stunning visual innovation",
+            "poster": "https://image.tmdb.org/t/p/w500/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 324857,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "While The Amazing Spider-Man received mixed reviews, its influence on superhero filmmaking remains significant. The emphasis on practical stunt work over pure CGI influenced films like <a href=\"/movie/100402\" class=\"movie-title\" data-tmdb-id=\"100402\">Captain America: The Winter Soldier</a> (2014), while its focus on scientific authenticity and corporate malfeasance echoes through <a href=\"/movie/102899\" class=\"movie-title\" data-tmdb-id=\"102899\">Ant-Man</a> (2015) and <a href=\"/movie/335983\" class=\"movie-title\" data-tmdb-id=\"335983\">Venom</a> (2018). The film's premature reboot status also sparked industry discussions about superhero fatigue, leading to more careful franchise planning as seen in the MCU's Phase system."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Spider-Man's Web-Swinging Effects: From Practical to Digital",
+      "The Impact of Comic Book Accuracy in Superhero Film Adaptations",
+      "Marc Webb's Transition from Indie Romance to Blockbuster Direction",
+      "The Legacy of Different Live-Action Spider-Man Portrayals",
+      "Corporate Villains in Superhero Cinema: Oscorp to Lexcorp"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Spider-Man 2",
+          "year": 2004,
+          "slug": "Sam Raimi's acclaimed sequel featuring Doc Ock",
+          "poster": "https://image.tmdb.org/t/p/w500/aGuvNAaaZuWXYQQ6N2v7DeuP6mB.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 558,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aGuvNAaaZuWXYQQ6N2v7DeuP6mB.jpg"
+        },
+        {
+          "title": "The Dark Knight",
+          "year": 2008,
+          "slug": "Revolutionary superhero film that elevated the genre",
+          "poster": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 155,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+        },
+        {
+          "title": "Captain America: Civil War",
+          "year": 2016,
+          "slug": "Features Tom Holland's Spider-Man MCU debut",
+          "poster": "https://image.tmdb.org/t/p/w500/rAGiXaUfPzY7CDEyNKUofk3Kw2e.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 271110,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rAGiXaUfPzY7CDEyNKUofk3Kw2e.jpg"
+        },
+        {
+          "title": "Spider-Man: No Way Home",
+          "year": 2021,
+          "slug": "Multiverse adventure uniting three Spider-Men",
+          "poster": "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+          "initialStreaming": "Starz",
+          "tmdb_id": 634649,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg"
+        },
+        {
+          "title": "Chronicle",
+          "year": 2012,
+          "slug": "Found footage superhero film with similar grounded tone",
+          "poster": "https://image.tmdb.org/t/p/w500/kdyrdFIt29FUmLIKvedAc2j4rpo.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 76726,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kdyrdFIt29FUmLIKvedAc2j4rpo.jpg"
+        },
+        {
+          "title": "Kick-Ass",
+          "year": 2010,
+          "slug": "Realistic take on amateur superheroes",
+          "poster": "https://image.tmdb.org/t/p/w500/iHMbrTHJwocsNvo5murCBw0CwTo.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 23483,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iHMbrTHJwocsNvo5murCBw0CwTo.jpg"
+        },
+        {
+          "title": "The Amazing Spider-Man 2",
+          "year": 2014,
+          "slug": "Webb's sequel with expanded universe ambitions",
+          "poster": "https://image.tmdb.org/t/p/w500/dGjoPttcbKR5VWg1jQuNFB247KL.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 102382,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dGjoPttcbKR5VWg1jQuNFB247KL.jpg"
+        },
+        {
+          "title": "Dredd",
+          "year": 2012,
+          "slug": "Gritty comic book adaptation released same year",
+          "poster": "https://image.tmdb.org/t/p/w500/wLx65gtGVnUFCxceHWGszcruCZj.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 49049,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wLx65gtGVnUFCxceHWGszcruCZj.jpg"
+        },
+        {
+          "title": "X-Men: First Class",
+          "year": 2011,
+          "slug": "Period superhero reboot with similar tone",
+          "poster": "https://image.tmdb.org/t/p/w500/hNEokmUke0dazoBhttFN0o3L7Xv.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 49538,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hNEokmUke0dazoBhttFN0o3L7Xv.jpg"
+        },
+        {
+          "title": "Watchmen",
+          "year": 2009,
+          "slug": "Dark deconstruction of superhero genre",
+          "poster": "https://image.tmdb.org/t/p/w500/aVURelN3pM56lFM7Dgfs5TixcIf.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 13183,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aVURelN3pM56lFM7Dgfs5TixcIf.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,159 @@
+{
+  "props": {
+    "title": "Bangkok Dangerous",
+    "year": 2008,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/iTRftxHW8i4H7ONaOiCIwEXjNDJ.jpg",
+    "initialStreaming": null,
+    "tmdbId": 13184,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Bangkok Dangerous represents a fascinating yet flawed American remake of the Pang Brothers' superior 1999 Thai original. Nicolas Cage plays Joe, a hitman in Bangkok for one last job - a premise that echoes better assassin films like Léon: The Professional (1994) and <a href=\"/movie/10835\" class=\"movie-title\" data-tmdb-id=\"10835\">The Killer</a> (1989). The neon-drenched Thai capital becomes a character itself, following a tradition established in films like <a href=\"/movie/77987\" class=\"movie-title\" data-tmdb-id=\"77987\">Only God Forgives</a> (2013) and <a href=\"/movie/45243\" class=\"movie-title\" data-tmdb-id=\"45243\">The Hangover Part II</a> (2011), though Bangkok Dangerous never quite captures the city's frenetic energy with the same impact."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Killer",
+            "year": 1989,
+            "slug": "John Woo's masterpiece about an assassin's final mission, starring Chow Yun-fat",
+            "poster": "https://image.tmdb.org/t/p/w500/8hTxlSqMAHBXAh1eB69ir0BXhzE.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 10835,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8hTxlSqMAHBXAh1eB69ir0BXhzE.jpg"
+          },
+          {
+            "title": "Léon: The Professional",
+            "year": 1994,
+            "slug": "Jean Reno plays a hitman who becomes an unlikely mentor to a young Natalie Portman",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": null
+          },
+          {
+            "title": "The Man from Nowhere",
+            "year": 2010,
+            "slug": "South Korean thriller about a mysterious pawnshop owner drawn into Bangkok's criminal underworld",
+            "poster": "https://image.tmdb.org/t/p/w500/ld19CFIo27t41JXSGZdaPMUGTxh.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 51608,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ld19CFIo27t41JXSGZdaPMUGTxh.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's greatest weakness lies in its attempt to westernize an distinctly Asian story. Where the original Thai version featured a deaf-mute assassin - adding layers of isolation and visual storytelling - the remake strips away this compelling character detail. This mirrors similar Hollywood missteps like <a href=\"/movie/1422\" class=\"movie-title\" data-tmdb-id=\"1422\">The Departed</a> (2006), which, while successful, lost some of the cultural nuance of its Hong Kong original <a href=\"/movie/10775\" class=\"movie-title\" data-tmdb-id=\"10775\">Infernal Affairs</a> (2002). SUBHEAD: The Evolution of Asian Action Cinema in Hollywood"
+      },
+      {
+        "type": "text",
+        "content": "Bangkok Dangerous arrived during a period when Hollywood was heavily mining Asian cinema for material, often with diminishing returns. While films like <a href=\"/movie/565\" class=\"movie-title\" data-tmdb-id=\"565\">The Ring</a> (2002) and <a href=\"/movie/1970\" class=\"movie-title\" data-tmdb-id=\"1970\">The Grudge</a> (2004) managed successful translations of their source material, others like <a href=\"/movie/9682\" class=\"movie-title\" data-tmdb-id=\"9682\">Pulse</a> (2006) and <a href=\"/movie/6933\" class=\"movie-title\" data-tmdb-id=\"6933\">One Missed Call</a> (2008) failed to capture the atmospheric dread of their Asian counterparts. This trend reflects broader challenges in adapting Eastern cinema for Western audiences, something only recently improved with more culturally authentic productions like <a href=\"/movie/455207\" class=\"movie-title\" data-tmdb-id=\"455207\">Crazy Rich Asians</a> (2018)."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Thai Action Cinema",
+      "Nicolas Cage's Career in Action Films",
+      "Hollywood Remakes of Asian Films",
+      "The Influence of Hong Kong Cinema on Modern Action Movies",
+      "Bangkok as a Character in International Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Infernal Affairs",
+          "year": 2002,
+          "slug": "Original Hong Kong thriller that inspired The Departed",
+          "poster": "https://image.tmdb.org/t/p/w500/gix9thDBXfjJ8M7rYbihqbQGBcP.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 10775,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gix9thDBXfjJ8M7rYbihqbQGBcP.jpg"
+        },
+        {
+          "title": "Only God Forgives",
+          "year": 2013,
+          "slug": "Ryan Gosling in a violent revenge tale set in Bangkok",
+          "poster": "https://image.tmdb.org/t/p/w500/84HR8v3vtz91vTouBX3H5eEWJvP.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 77987,
+          "poster_url": "https://image.tmdb.org/t/p/w500/84HR8v3vtz91vTouBX3H5eEWJvP.jpg"
+        },
+        {
+          "title": "The Protector",
+          "year": 2005,
+          "slug": "Tony Jaa's explosive Muay Thai action film set in Bangkok",
+          "poster": "https://image.tmdb.org/t/p/w500/uKE9BxgtT5g2pE3ZKC7MnzsAbTZ.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 8982,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uKE9BxgtT5g2pE3ZKC7MnzsAbTZ.jpg"
+        },
+        {
+          "title": "Drive Angry",
+          "year": 2011,
+          "slug": "Another Nicolas Cage action vehicle with supernatural elements",
+          "poster": "https://image.tmdb.org/t/p/w500/nx2pChi41Xv4dsXsfSG3gnKcWaY.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 47327,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nx2pChi41Xv4dsXsfSG3gnKcWaY.jpg"
+        },
+        {
+          "title": "Ghost Rider",
+          "year": 2007,
+          "slug": "Cage as Marvel's supernatural motorcycle vigilante",
+          "poster": "https://image.tmdb.org/t/p/w500/d9Oan9XJJ6gRJa64Ifsgp1sXbC4.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 1250,
+          "poster_url": "https://image.tmdb.org/t/p/w500/d9Oan9XJJ6gRJa64Ifsgp1sXbC4.jpg"
+        },
+        {
+          "title": "Time to Kill",
+          "year": 2004,
+          "slug": "Thai crime thriller about a hitman's redemption",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        },
+        {
+          "title": "Face/Off",
+          "year": 1997,
+          "slug": "John Woo directs Cage in an identity-swap action classic",
+          "poster": "https://image.tmdb.org/t/p/w500/69Xzn8UdPbVnmqSChKz2RTpoNfB.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 754,
+          "poster_url": "https://image.tmdb.org/t/p/w500/69Xzn8UdPbVnmqSChKz2RTpoNfB.jpg"
+        },
+        {
+          "title": "Kickboxer",
+          "year": 1989,
+          "slug": "Van Damme classic partially filmed in Bangkok",
+          "poster": "https://image.tmdb.org/t/p/w500/tzEOkUn5708fQvF0bOPB5bLLRNk.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 10222,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tzEOkUn5708fQvF0bOPB5bLLRNk.jpg"
+        },
+        {
+          "title": "Con Air",
+          "year": 1997,
+          "slug": "Cage leads an ensemble cast in airborne action",
+          "poster": "https://image.tmdb.org/t/p/w500/kOKjgrEzGOP92rVQ6srA9jtp60l.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 1701,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kOKjgrEzGOP92rVQ6srA9jtp60l.jpg"
+        },
+        {
+          "title": "The Rock",
+          "year": 1996,
+          "slug": "Cage and Connery in Alcatraz-set action thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/j5mxLNWjUlXUUk8weFBtnF4afIR.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 9802,
+          "poster_url": "https://image.tmdb.org/t/p/w500/j5mxLNWjUlXUUk8weFBtnF4afIR.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

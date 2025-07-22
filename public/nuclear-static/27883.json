@@ -1,0 +1,170 @@
+{
+  "props": {
+    "title": "Macbeth",
+    "year": 1948,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/4DbzuePqGcUY7olAKzGly7kCEmU.jpg",
+    "initialStreaming": null,
+    "tmdbId": 27883,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Orson Welles's Macbeth stands as a haunting, expressionistic take on Shakespeare's Scottish play. Shot in just 23 days on a tight budget, Welles created a nightmarish vision using stark shadows, minimalist sets, and looming angles that would influence horror cinema for decades. The film's raw, primal energy contrasts sharply with more polished Shakespeare adaptations like Laurence Olivier's <a href=\"/movie/23383\" class=\"movie-title\" data-tmdb-id=\"23383\">Hamlet</a> (1948) from the same year. Welles strips away theatrical pageantry to expose the psychological terror at the play's core, predating Roman Polanski's bloody Macbeth by two decades."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Throne of Blood",
+            "year": 1957,
+            "slug": "Akira Kurosawa transposes Macbeth to feudal Japan, creating a fog-shrouded masterpiece of supernatural horror and samurai action",
+            "poster": "https://image.tmdb.org/t/p/w500/5NdGZpoInkf4wBInNpry6JAjQ3D.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 3777,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5NdGZpoInkf4wBInNpry6JAjQ3D.jpg"
+          },
+          {
+            "title": "Macbeth",
+            "year": 1971,
+            "slug": "Roman Polanski's ultra-violent, post-Manson Family take on Shakespeare's play features graphic violence and supernatural elements",
+            "poster": "https://image.tmdb.org/t/p/w500/35wNrDYuZjVCLurOmTZ5j490iuR.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 11316,
+            "poster_url": "https://image.tmdb.org/t/p/w500/35wNrDYuZjVCLurOmTZ5j490iuR.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The influence of Welles's expressionist Macbeth can be traced through later psychological horror films, particularly in how it uses shadows and distorted perspectives to represent mental deterioration. This visual approach echoes in works like Carol Reed's <a href=\"/movie/1092\" class=\"movie-title\" data-tmdb-id=\"1092\">The Third Man</a> (1949) and extends to modern films like Robert Eggers' <a href=\"/movie/503919\" class=\"movie-title\" data-tmdb-id=\"503919\">The Lighthouse</a> (2019), where stark black-and-white photography and extreme angles create psychological tension."
+      },
+      {
+        "type": "text",
+        "content": "The film's innovative use of pre-recorded dialogue, while initially criticized, pioneered techniques that would become standard in international cinema. This approach allowed Welles to maintain consistent Scottish accents and timing while shooting quickly, influencing later Shakespeare adaptations like Grigori Kozintsev's <a href=\"/movie/10688\" class=\"movie-title\" data-tmdb-id=\"10688\">Hamlet</a> (1964) and <a href=\"/movie/42495\" class=\"movie-title\" data-tmdb-id=\"42495\">King Lear</a> (1971). SUBHEAD: Visual Innovation and Legacy"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Scotland, PA",
+            "year": 2001,
+            "slug": "A dark comedy that reimagines Macbeth in a 1970s fast-food restaurant, proving the story's adaptability",
+            "poster": "https://image.tmdb.org/t/p/w500/xIN1jHBsuJjELaxsX37tWwWZdi1.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 27593,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xIN1jHBsuJjELaxsX37tWwWZdi1.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Welles's decision to shoot Macbeth on Republic Pictures' Western sets created a unique aesthetic that merges medieval Scotland with American Gothic. This hybrid visual style influenced later genre-bending Shakespeare adaptations like Akira Kurosawa's <a href=\"/movie/11645\" class=\"movie-title\" data-tmdb-id=\"11645\">Ran</a> (1985) and Julie Taymor's <a href=\"/movie/12524\" class=\"movie-title\" data-tmdb-id=\"12524\">Titus</a> (1999), demonstrating how budgetary constraints can spark creative solutions that expand cinematic language."
+      }
+    ],
+    "exploreFurther": [
+      "Orson Welles's innovative low-budget filming techniques and their influence on independent cinema",
+      "The evolution of Shakespeare adaptations in world cinema",
+      "Expressionism in American film noir and horror",
+      "The use of pre-recorded dialogue in international productions",
+      "Visual representations of guilt and madness in cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Hamlet",
+          "year": 1948,
+          "slug": "Laurence Olivier's Oscar-winning adaptation sets the standard for theatrical Shakespeare on film",
+          "poster": "https://image.tmdb.org/t/p/w500/woO9SgU2vTRMZeG0YqOLeoIqlzC.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 23383,
+          "poster_url": "https://image.tmdb.org/t/p/w500/woO9SgU2vTRMZeG0YqOLeoIqlzC.jpg"
+        },
+        {
+          "title": "Chimes at Midnight",
+          "year": 1965,
+          "slug": "Welles combines several Shakespeare plays to tell Falstaff's story",
+          "poster": "https://image.tmdb.org/t/p/w500/5Fjxyz3u2Zdco4WeuC3wQ6O5tYQ.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 986,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5Fjxyz3u2Zdco4WeuC3wQ6O5tYQ.jpg"
+        },
+        {
+          "title": "Richard III",
+          "year": 1955,
+          "slug": "Laurence Olivier's technicolor take on Shakespeare's villain",
+          "poster": "https://image.tmdb.org/t/p/w500/3zp2Kg5bvlFkKmWiQLmuWQAIEgG.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 43323,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3zp2Kg5bvlFkKmWiQLmuWQAIEgG.jpg"
+        },
+        {
+          "title": "Julius Caesar",
+          "year": 1953,
+          "slug": "Marlon Brando leads an all-star cast in this Roman tragedy",
+          "poster": "https://image.tmdb.org/t/p/w500/8yWqzGhBso1Gtpc1tcLclmcmF2B.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 18019,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8yWqzGhBso1Gtpc1tcLclmcmF2B.jpg"
+        },
+        {
+          "title": "Titus",
+          "year": 1999,
+          "slug": "Julie Taymor's surreal, violent vision of Titus Andronicus",
+          "poster": "https://image.tmdb.org/t/p/w500/82mCeQoeT2C7h7vR6Ot9MQotE1R.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 12524,
+          "poster_url": "https://image.tmdb.org/t/p/w500/82mCeQoeT2C7h7vR6Ot9MQotE1R.jpg"
+        },
+        {
+          "title": "Ran",
+          "year": 1985,
+          "slug": "Kurosawa's epic King Lear adaptation set in feudal Japan",
+          "poster": "https://image.tmdb.org/t/p/w500/iYQcDhuHrdPOHLUUxXaFChFrc97.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 11645,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iYQcDhuHrdPOHLUUxXaFChFrc97.jpg"
+        },
+        {
+          "title": "Looking for Richard",
+          "year": 1996,
+          "slug": "Al Pacino's documentary exploration of Richard III",
+          "poster": "https://image.tmdb.org/t/p/w500/qAYYZzO6q7prlt6bmIvqOOwKsXi.jpg",
+          "initialStreaming": "Apple TV",
+          "tmdb_id": 42314,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qAYYZzO6q7prlt6bmIvqOOwKsXi.jpg"
+        },
+        {
+          "title": "Henry V",
+          "year": 1989,
+          "slug": "Kenneth Branagh's passionate directorial debut",
+          "poster": "https://image.tmdb.org/t/p/w500/w9R2HsYNnfF3m9uEo2UAmPNJr8a.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 10705,
+          "poster_url": "https://image.tmdb.org/t/p/w500/w9R2HsYNnfF3m9uEo2UAmPNJr8a.jpg"
+        },
+        {
+          "title": "Hamlet",
+          "year": 1996,
+          "slug": "Branagh's full-text adaptation with an all-star cast",
+          "poster": "https://image.tmdb.org/t/p/w500/ilurgUOp6SCl4cuhfjctj1qxlfZ.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 10549,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ilurgUOp6SCl4cuhfjctj1qxlfZ.jpg"
+        },
+        {
+          "title": "The Bad Sleep Well",
+          "year": 1960,
+          "slug": "Kurosawa's modern Hamlet set in corporate Japan",
+          "poster": "https://image.tmdb.org/t/p/w500/z0LhZ121uaqa31RUeu1mOnaFb5w.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 31589,
+          "poster_url": "https://image.tmdb.org/t/p/w500/z0LhZ121uaqa31RUeu1mOnaFb5w.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

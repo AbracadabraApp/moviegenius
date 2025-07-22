@@ -1,0 +1,181 @@
+{
+  "props": {
+    "title": "Stryker",
+    "year": 1983,
+    "initialSlug": "Post-apocalyptic biker gangs battle for water",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/yHocWOkcXp94DbOrQgjroJGZG51.jpg",
+    "initialStreaming": null,
+    "tmdbId": 30927,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Stryker belongs to the wave of post-apocalyptic exploitation films that flooded theaters after the success of <a href=\"/movie/9659\" class=\"movie-title\">Mad Max</a> (1979). Director Cirio H. Santiago, the Filipino B-movie maestro, crafted this desert wasteland thriller during the height of the post-nuke craze that included <a href=\"/movie/48490\" class=\"movie-title\">The New Barbarians</a> (1983) and <a href=\"/movie/23807\" class=\"movie-title\" data-tmdb-id=\"23807\">2019: After the Fall of New York</a> (1983). Like many films of this genre, Stryker centers on battles for water in a scorched future, predating similar themes in <a href=\"/movie/9067\" class=\"movie-title\" data-tmdb-id=\"9067\">Tank Girl</a> (1995) and <a href=\"/movie/9804\" class=\"movie-title\" data-tmdb-id=\"9804\">Waterworld</a> (1995)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Mad Max",
+            "year": 1979,
+            "slug": "The original post-apocalyptic road warrior film that launched a genre and Mel Gibson's career",
+            "poster": "https://image.tmdb.org/t/p/w500/5LrI4GiCSrChgkdskVZiwv643Kg.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 9659,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5LrI4GiCSrChgkdskVZiwv643Kg.jpg"
+          },
+          {
+            "title": "The New Barbarians",
+            "year": 1983,
+            "slug": "Italian post-apocalyptic action film featuring souped-up vehicles and savage warriors",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 48490
+          },
+          {
+            "title": "Warrior of the Lost World",
+            "year": 1983,
+            "slug": "Post-apocalyptic motorcycle adventure starring Robert Ginty",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 52837
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Santiago's direction follows the exploitation playbook with car chases, explosions, and makeshift weapons. The film's low budget actually works in its favor, as the Philippine locations provide an authentically desolate backdrop that bigger-budget films like <a href=\"/movie/26978\" class=\"movie-title\" data-tmdb-id=\"26978\">Spacehunter: Adventures in the Forbidden Zone</a> (1983) tried to recreate with expensive sets. Steve Sandor's portrayal of Stryker feels deliberately modeled after Mel Gibson's Max Rockatansky, though with a more straightforward revenge motivation."
+      },
+      {
+        "type": "text",
+        "content": "The film's legacy lives on in its influence on later post-apocalyptic B-movies, particularly in how it established many tropes of the \"water as currency\" subplot that would become standard in the genre. Its mix of motorcycle gangs, desert fortresses, and scavenged technology would be echoed in countless films like <a href=\"/movie/27786\" class=\"movie-title\">Steel Dawn</a> (1987) and <a href=\"/movie/15785\" class=\"movie-title\">Cherry 2000</a> (1987). SUBHEAD: Filipino Post-Apocalyptic Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Steel Dawn",
+            "year": 1987,
+            "slug": "Patrick Swayze stars as a nomadic warrior in a desert wasteland",
+            "poster": "https://image.tmdb.org/t/p/w500/q8dqpQgdnc35kVlE4EQAFnKMTfl.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 27786,
+            "poster_url": "https://image.tmdb.org/t/p/w500/q8dqpQgdnc35kVlE4EQAFnKMTfl.jpg"
+          },
+          {
+            "title": "Cherry 2000",
+            "year": 1987,
+            "slug": "Melanie Griffith leads this post-apocalyptic romance about a man searching for a robot companion",
+            "poster": "https://image.tmdb.org/t/p/w500/t3uds00MHLsibhKLCL0BbCEGxXb.jpg",
+            "initialStreaming": "Amazon Prime",
+            "tmdb_id": 15785,
+            "poster_url": "https://image.tmdb.org/t/p/w500/t3uds00MHLsibhKLCL0BbCEGxXb.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Stryker represents a significant entry in Filipino exploitation cinema of the 1980s. Santiago, along with producers like Roger Corman, turned the Philippines into a factory for post-apocalyptic action films, including <a href=\"/movie/107319\" class=\"movie-title\" data-tmdb-id=\"107319\">Wheels of Fire</a> (1985) and Raiders of the Sun (1992). These films utilized the country's varied landscapes and lower production costs to create convincing wasteland settings that rivaled their Hollywood counterparts."
+      }
+    ],
+    "exploreFurther": [
+      "The Rise of Filipino Exploitation Cinema in the 1980s",
+      "Post-Mad Max Apocalyptic Cinema 1979-1985",
+      "Cirio H. Santiago's Dystopian Filmography",
+      "Water Scarcity Themes in Post-Apocalyptic Cinema",
+      "Roger Corman's International Production Methods"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Wheels of Fire",
+          "year": 1985,
+          "slug": "Post-apocalyptic action film about a man seeking revenge against raiders",
+          "poster": "https://image.tmdb.org/t/p/w500/c0fx4ZIu4lTSCPZSDC0HobcV2zA.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 107319,
+          "poster_url": "https://image.tmdb.org/t/p/w500/c0fx4ZIu4lTSCPZSDC0HobcV2zA.jpg"
+        },
+        {
+          "title": "Raiders of the Sun",
+          "year": 1992,
+          "slug": "Post-nuclear warriors battle for survival in the wasteland",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 180132
+        },
+        {
+          "title": "Equalizer 2000",
+          "year": 1987,
+          "slug": "Futuristic action film about a powerful weapon in a post-apocalyptic world",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 66659
+        },
+        {
+          "title": "Dune Warriors",
+          "year": 1991,
+          "slug": "Warriors protect a water source in a desert wasteland",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 222339
+        },
+        {
+          "title": "Future Hunters",
+          "year": 1986,
+          "slug": "Time travelers try to prevent nuclear apocalypse",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 55068
+        },
+        {
+          "title": "After the Fall of New York",
+          "year": 1983,
+          "slug": "Post-apocalyptic action film about saving humanity's last fertile woman",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 23807
+        },
+        {
+          "title": "The Ultimate Warrior",
+          "year": 1975,
+          "slug": "Yul Brynner stars in this early post-apocalyptic survival film",
+          "poster": "https://image.tmdb.org/t/p/w500/1RyccpnEHahPtWOoKjwO40pGPmB.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 32053,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1RyccpnEHahPtWOoKjwO40pGPmB.jpg"
+        },
+        {
+          "title": "Exterminators of the Year 3000",
+          "year": 1983,
+          "slug": "Italian Mad Max clone about water raiders",
+          "poster": "https://image.tmdb.org/t/p/w500/4BRH5lAsCzhwx4q8CN2CXcrDgYj.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 115042,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4BRH5lAsCzhwx4q8CN2CXcrDgYj.jpg"
+        },
+        {
+          "title": "Warriors of the Wasteland",
+          "year": 1983,
+          "slug": "Violent post-apocalyptic action film about rival gangs",
+          "poster": "https://image.tmdb.org/t/p/w500/u1CfbdztfE2WiLBVXtA6OFO1TLY.jpg",
+          "initialStreaming": "Amazon Prime",
+          "tmdb_id": 48490,
+          "poster_url": "https://image.tmdb.org/t/p/w500/u1CfbdztfE2WiLBVXtA6OFO1TLY.jpg"
+        },
+        {
+          "title": "Metalstorm: The Destruction of Jared-Syn",
+          "year": 1983,
+          "slug": "3D post-apocalyptic adventure film",
+          "poster": "https://image.tmdb.org/t/p/w500/8vxTrg2dik0DQdgGjzyUW321xlM.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 47364,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8vxTrg2dik0DQdgGjzyUW321xlM.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

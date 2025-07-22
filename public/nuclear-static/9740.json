@@ -1,0 +1,188 @@
+{
+  "props": {
+    "title": "Hannibal",
+    "year": 2001,
+    "initialSlug": "Appetite for Destruction",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/v5wAZwRqpGWmyAaaJ8BBHYuNXnj.jpg",
+    "initialStreaming": null,
+    "tmdbId": 9740,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Hannibal marked a stark tonal shift from the taught psychological thriller <a href=\"/movie/274\" class=\"movie-title\" data-tmdb-id=\"274\">The Silence of the Lambs</a> (1991). Director Ridley Scott transformed Thomas Harris's infamous cannibal into a darkly romantic antihero, with Anthony Hopkins delivering a more theatrical, almost operatic performance. The film's gorgeous Florence sequences and lavish production design create an entirely different atmosphere than its predecessor, leaning into Gothic horror and grand guignol spectacle rather than procedural suspense. This divide sparked intense debate among critics and fans about the appropriate portrayal of Lecter as either a shadowy psychological presence or a flamboyant cultural icon."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Silence of the Lambs",
+            "year": 1991,
+            "slug": "The definitive Hannibal Lecter film follows FBI trainee Clarice Starling as she seeks help from the imprisoned cannibal to catch another killer",
+            "poster": "https://image.tmdb.org/t/p/w500/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 274,
+            "poster_url": "https://image.tmdb.org/t/p/w500/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg"
+          },
+          {
+            "title": "Manhunter",
+            "year": 1986,
+            "slug": "Michael Mann's stylish first adaptation of Red Dragon, with Brian Cox as Lecter helping Will Graham track a serial killer",
+            "poster": "https://image.tmdb.org/t/p/w500/6rb24x39vV8n5301IelC8rCPJTH.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 11454,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6rb24x39vV8n5301IelC8rCPJTH.jpg"
+          },
+          {
+            "title": "Red Dragon",
+            "year": 2002,
+            "slug": "The third Hopkins Lecter film is actually a remake/prequel showing his original capture by FBI profiler Will Graham",
+            "poster": "https://image.tmdb.org/t/p/w500/S8ozwficrsdBF1V8glQyCMzGg5.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 9533,
+            "poster_url": "https://image.tmdb.org/t/p/w500/S8ozwficrsdBF1V8glQyCMzGg5.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The evolution of Hannibal Lecter on screen reflects changing attitudes toward antiheroes and serial killer narratives. <a href=\"/movie/11454\" class=\"movie-title\" data-tmdb-id=\"11454\">Manhunter</a> (1986) kept Lecter (then spelled \"Lecktor\") as a minor but menacing presence, while <a href=\"/movie/274\" class=\"movie-title\" data-tmdb-id=\"274\">The Silence of the Lambs</a> (1991) elevated him to a fascinating intellectual foil for Clarice. By Hannibal, he'd become the sophisticated central figure, with the film's morality shifting to position him almost as a dark avenger rather than pure villain. This transformation parallels similar antihero trajectories in films like <a href=\"/movie/241\" class=\"movie-title\" data-tmdb-id=\"241\">Natural Born Killers</a> (1994) and <a href=\"/movie/1359\" class=\"movie-title\" data-tmdb-id=\"1359\">American Psycho</a> (2000)."
+      },
+      {
+        "type": "text",
+        "content": "The film's visual opulence under Ridley Scott's direction marked a dramatic departure from Jonathan Demme's documentary-like approach in Silence. Scott drew inspiration from Italian horror masters like Dario Argento, particularly in the film's baroque violence and architectural grandeur. The Florence sequences echo Argento's <a href=\"/movie/16395\" class=\"movie-title\" data-tmdb-id=\"16395\">Inferno</a> (1980) and <a href=\"/movie/20115\" class=\"movie-title\" data-tmdb-id=\"20115\">Opera</a> (1987), while the infamous brain-eating scene plays like a twisted homage to <a href=\"/movie/10102\" class=\"movie-title\" data-tmdb-id=\"10102\">La Grande Bouffe</a> (1973). SUBHEAD: Cultural Impact and Legacy"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Inferno",
+            "year": 1980,
+            "slug": "Dario Argento's surreal horror masterpiece set in an elaborate New York building with supernatural secrets",
+            "poster": "https://image.tmdb.org/t/p/w500/A92SmwJ4w2GSF6Mp2m8xE9GbG39.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 16395,
+            "poster_url": "https://image.tmdb.org/t/p/w500/A92SmwJ4w2GSF6Mp2m8xE9GbG39.jpg"
+          },
+          {
+            "title": "American Psycho",
+            "year": 2000,
+            "slug": "Christian Bale stars as Patrick Bateman, a wealthy investment banker leading a secret life as a serial killer",
+            "poster": "https://image.tmdb.org/t/p/w500/9uGHEgsiUXjCNq8wdq4r49YL8A1.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 1359,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9uGHEgsiUXjCNq8wdq4r49YL8A1.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The mixed reception to Hannibal influenced later serial killer films and TV shows. Bryan Fuller's Hannibal (2013-2015) series embraced the baroque aesthetic while adding psychological complexity. Meanwhile, films like <a href=\"/movie/1949\" class=\"movie-title\" data-tmdb-id=\"1949\">Zodiac</a> (2007) and <a href=\"/movie/65754\" class=\"movie-title\" data-tmdb-id=\"65754\">The Girl with the Dragon Tattoo</a> (2011) returned to the procedural roots of the genre. The film's lasting impact can be seen in how serial killer narratives now frequently blur moral lines and employ elaborate visual styling."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Hannibal Lecter Across Different Adaptations",
+      "Ridley Scott's Visual Style and Italian Horror Influences",
+      "The Shift from Psychological Thriller to Gothic Horror in Serial Killer Films",
+      "The Impact of Classical Music and Opera in Horror Cinema",
+      "Julianne Moore vs. Jodie Foster: Different Approaches to Clarice Starling"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Se7en",
+          "year": 1995,
+          "slug": "David Fincher's dark thriller about two detectives hunting a killer using the seven deadly sins",
+          "poster": "https://image.tmdb.org/t/p/w500/191nKfP0ehp3uIvWqgPbFmI4lv9.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 807,
+          "poster_url": "https://image.tmdb.org/t/p/w500/191nKfP0ehp3uIvWqgPbFmI4lv9.jpg"
+        },
+        {
+          "title": "The Cell",
+          "year": 2000,
+          "slug": "Visually stunning thriller about entering a serial killer's mind",
+          "poster": "https://image.tmdb.org/t/p/w500/kfYVxvDDAJoFq2knHUzAZP09pAc.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 8843,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kfYVxvDDAJoFq2knHUzAZP09pAc.jpg"
+        },
+        {
+          "title": "M",
+          "year": 1931,
+          "slug": "Fritz Lang's landmark serial killer study",
+          "poster": "https://image.tmdb.org/t/p/w500/7s6zEsOAY3LD5qvzljmKKzjnLiT.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 3007,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7s6zEsOAY3LD5qvzljmKKzjnLiT.jpg"
+        },
+        {
+          "title": "Perfume: The Story of a Murderer",
+          "year": 2006,
+          "slug": "Lavish period piece about an obsessed killer with an extraordinary sense of smell",
+          "poster": "https://image.tmdb.org/t/p/w500/2wrFrUej8ri5EpjgIkjKTAnr686.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 1427,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2wrFrUej8ri5EpjgIkjKTAnr686.jpg"
+        },
+        {
+          "title": "Copycat",
+          "year": 1995,
+          "slug": "Serial killer thriller about a murderer recreating famous crimes",
+          "poster": "https://image.tmdb.org/t/p/w500/oMgwJb016znNZcpDR20eXxZoW8A.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 1710,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oMgwJb016znNZcpDR20eXxZoW8A.jpg"
+        },
+        {
+          "title": "From Hell",
+          "year": 2001,
+          "slug": "Stylish Jack the Ripper investigation starring Johnny Depp",
+          "poster": "https://image.tmdb.org/t/p/w500/t2WpWM8nBO4sULXr2bDfNEt4qgr.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 768,
+          "poster_url": "https://image.tmdb.org/t/p/w500/t2WpWM8nBO4sULXr2bDfNEt4qgr.jpg"
+        },
+        {
+          "title": "The Bone Collector",
+          "year": 1999,
+          "slug": "Denzel Washington plays a paralyzed detective hunting a methodical killer",
+          "poster": "https://image.tmdb.org/t/p/w500/7atMCqRaDpAOnGsteTRm17zmvN3.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9481,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7atMCqRaDpAOnGsteTRm17zmvN3.jpg"
+        },
+        {
+          "title": "Taking Lives",
+          "year": 2004,
+          "slug": "Angelina Jolie tracks an identity-stealing murderer",
+          "poster": "https://image.tmdb.org/t/p/w500/1JEt0qtEaYrJZuPeTArR691V256.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 11081,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1JEt0qtEaYrJZuPeTArR691V256.jpg"
+        },
+        {
+          "title": "Kiss the Girls",
+          "year": 1997,
+          "slug": "Morgan Freeman investigates coordinated serial killings",
+          "poster": "https://image.tmdb.org/t/p/w500/25h5I3E3ydhazsPDnscWHivq5pn.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9437,
+          "poster_url": "https://image.tmdb.org/t/p/w500/25h5I3E3ydhazsPDnscWHivq5pn.jpg"
+        },
+        {
+          "title": "Jennifer Eight",
+          "year": 1992,
+          "slug": "Atmospheric thriller about a detective pursuing a killer targeting blind women",
+          "poster": "https://image.tmdb.org/t/p/w500/pMlk8spEliRD6hr4ILs5ubHeBGT.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 10424,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pMlk8spEliRD6hr4ILs5ubHeBGT.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

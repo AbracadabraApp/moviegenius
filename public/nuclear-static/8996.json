@@ -1,0 +1,152 @@
+{
+  "props": {
+    "title": "Europa Europa",
+    "year": 1990,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/hkh3GzBHquwB5nkdEeQUbFSo5Ju.jpg",
+    "initialStreaming": null,
+    "tmdbId": 8996,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Europa Europa stands as one of cinema's most gripping survival stories from WWII, based on Solomon Perel's extraordinary true experience. Director Agnieszka Holland crafts a haunting exploration of identity as a Jewish teenager poses as a Hitler Youth to stay alive. The film's unflinching portrayal of survival instinct connects thematically with other powerful Holocaust narratives like <a href=\"/movie/423\" class=\"movie-title\" data-tmdb-id=\"423\">The Pianist</a> (2002) and <a href=\"/movie/336050\" class=\"movie-title\" data-tmdb-id=\"336050\">Son of Saul</a> (2015), but Holland's approach is uniquely focused on the psychological toll of living a double life. The raw authenticity of Marco Hofschneider's lead performance drives home the constant terror of discovery."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Schindler's List",
+            "year": 1993,
+            "slug": "Spielberg's masterpiece about a German businessman who saves Jewish workers, featuring unforgettable black-and-white cinematography",
+            "poster": "https://image.tmdb.org/t/p/w500/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 424,
+            "poster_url": "https://image.tmdb.org/t/p/w500/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg"
+          },
+          {
+            "title": "The Counterfeiters",
+            "year": 2007,
+            "slug": "True story of Jewish prisoners forced to forge currency for the Nazis, exploring moral compromise for survival",
+            "poster": "https://image.tmdb.org/t/p/w500/Af6I9RZF0SIPeNnp8hAleGDTnKd.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 7862,
+            "poster_url": "https://image.tmdb.org/t/p/w500/Af6I9RZF0SIPeNnp8hAleGDTnKd.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Holland's film pioneered a more complex examination of Jewish identity during WWII, influencing later works like <a href=\"/movie/73686\" class=\"movie-title\" data-tmdb-id=\"73686\">In Darkness</a> (2011) and <a href=\"/movie/254578\" class=\"movie-title\" data-tmdb-id=\"254578\">Phoenix</a> (2014). The protagonist's forced cultural shape-shifting - from Soviet pioneer to Nazi student - creates excruciating tension while questioning how identity survives under extreme pressure. This theme of desperate adaptation resonates with <a href=\"/movie/637\" class=\"movie-title\" data-tmdb-id=\"637\">Life is Beautiful</a> (1997), though Holland opts for stark realism over Benigni's fable-like approach. SUBHEAD: Identity and Survival in War Cinema"
+      },
+      {
+        "type": "text",
+        "content": "Europa Europa revolutionized the war film genre by focusing on psychological rather than physical survival. Its influence can be seen in later works like <a href=\"/movie/14574\" class=\"movie-title\" data-tmdb-id=\"14574\">The Boy in the Striped Pajamas</a> (2008) and <a href=\"/movie/515001\" class=\"movie-title\" data-tmdb-id=\"515001\">Jojo Rabbit</a> (2019), which similarly explore the Nazi regime through young eyes. Holland's unflinching camera captures the absurdity and horror of ideology through intimate moments - a circumcision becoming a life-threatening liability, a Hitler Youth swimming session becoming psychological torture. This personal lens makes the historical trauma immediate and visceral."
+      }
+    ],
+    "exploreFurther": [
+      "Jewish Identity in Post-War German Cinema",
+      "Coming-of-Age Stories in Holocaust Films",
+      "Agnieszka Holland's Influence on European Cinema",
+      "Survival Stories in WWII Films",
+      "The Role of Youth in Holocaust Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Au Revoir Les Enfants",
+          "year": 1987,
+          "slug": "Louis Malle's semi-autobiographical story of friendship and betrayal in occupied France",
+          "poster": "https://image.tmdb.org/t/p/w500/lXP90Vx7OcviBfbbokcaG6zVnPG.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 1786,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lXP90Vx7OcviBfbbokcaG6zVnPG.jpg"
+        },
+        {
+          "title": "Night and Fog",
+          "year": 1956,
+          "slug": "Landmark documentary examining the Holocaust through haunting imagery",
+          "poster": "https://image.tmdb.org/t/p/w500/2iWYQia8enOai7QEO3TvenleD7r.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 803,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2iWYQia8enOai7QEO3TvenleD7r.jpg"
+        },
+        {
+          "title": "The Shop on Main Street",
+          "year": 1965,
+          "slug": "Oscar-winning Czech film about moral choices during the Holocaust",
+          "poster": "https://image.tmdb.org/t/p/w500/pOjsOzPzYrCFsMsatKxAwYzIeCg.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 25905,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pOjsOzPzYrCFsMsatKxAwYzIeCg.jpg"
+        },
+        {
+          "title": "Divided We Fall",
+          "year": 2000,
+          "slug": "Czech dark comedy about a couple hiding a Jewish neighbor",
+          "poster": "https://image.tmdb.org/t/p/w500/6mKiT1zyUHHSCUm1hfZVe4RUhjV.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 29937,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6mKiT1zyUHHSCUm1hfZVe4RUhjV.jpg"
+        },
+        {
+          "title": "Bent",
+          "year": 1997,
+          "slug": "Powerful drama about gay persecution in Nazi Germany",
+          "poster": "https://image.tmdb.org/t/p/w500/mTRIVPmRK01rgLlE6XJPGbbRdXb.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 19601,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mTRIVPmRK01rgLlE6XJPGbbRdXb.jpg"
+        },
+        {
+          "title": "The Last Metro",
+          "year": 1980,
+          "slug": "Truffaut's story of a Jewish theater director hiding during occupation",
+          "poster": "https://image.tmdb.org/t/p/w500/yJbA6jjuj9h8x2tZSgTkzpQ8PzS.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 1716,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yJbA6jjuj9h8x2tZSgTkzpQ8PzS.jpg"
+        },
+        {
+          "title": "Naked Among Wolves",
+          "year": 1963,
+          "slug": "East German film about prisoners protecting a Jewish child in Buchenwald",
+          "poster": "https://image.tmdb.org/t/p/w500/g7SWl6jW01wJin8fk0JBEYLPB9Z.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 2227,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g7SWl6jW01wJin8fk0JBEYLPB9Z.jpg"
+        },
+        {
+          "title": "Conspiracy",
+          "year": 2001,
+          "slug": "Chilling recreation of the Wannsee Conference",
+          "poster": "https://image.tmdb.org/t/p/w500/Onqn8XXyhANuy1LIL7AIN6unQk.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 12900,
+          "poster_url": "https://image.tmdb.org/t/p/w500/Onqn8XXyhANuy1LIL7AIN6unQk.jpg"
+        },
+        {
+          "title": "The Grey Zone",
+          "year": 2001,
+          "slug": "Brutal examination of the Sonderkommando in Auschwitz",
+          "poster": "https://image.tmdb.org/t/p/w500/8jRsWnpciWHRy0MC7K5eMDKKqPw.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 15192,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8jRsWnpciWHRy0MC7K5eMDKKqPw.jpg"
+        },
+        {
+          "title": "Aimée & Jaguar",
+          "year": 1999,
+          "slug": "True story of forbidden love between a Jewish woman and Nazi wife",
+          "poster": "https://image.tmdb.org/t/p/w500/vd6c4PliEGXgtWTzq1iFxnXIE5H.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 2211,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vd6c4PliEGXgtWTzq1iFxnXIE5H.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

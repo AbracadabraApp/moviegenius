@@ -1,0 +1,174 @@
+{
+  "props": {
+    "title": "Aparajito",
+    "year": 1956,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/qvR2Qs42WHwCEcuwhQnterU3gVY.jpg",
+    "initialStreaming": null,
+    "tmdbId": 897,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Aparajito stands as the profound middle chapter of Satyajit Ray's revolutionary Apu Trilogy, following <a href=\"/movie/5801\" class=\"movie-title\" data-tmdb-id=\"5801\">Pather Panchali</a> (1955) and preceding <a href=\"/movie/896\" class=\"movie-title\" data-tmdb-id=\"896\">Apur Sansar</a> (1959). Ray's masterful direction captures young Apu's journey from rural Bengal to Calcutta, crafting an intimate portrait of intellectual awakening and painful separation from tradition. The film's influence echoes through later coming-of-age narratives like <a href=\"/movie/147\" class=\"movie-title\" data-tmdb-id=\"147\">The 400 Blows</a> (1959) and <a href=\"/movie/25538\" class=\"movie-title\" data-tmdb-id=\"25538\">Yi Yi</a> (2000), establishing a template for depicting youth's universal struggle between personal ambition and family obligation."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Pather Panchali",
+            "year": 1955,
+            "slug": "Ray's debut follows young Apu's early childhood in rural Bengal, setting the foundation for the trilogy",
+            "poster": "https://image.tmdb.org/t/p/w500/frZj5djlU9hFEjMcL21RJZVuG5O.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 5801,
+            "poster_url": "https://image.tmdb.org/t/p/w500/frZj5djlU9hFEjMcL21RJZVuG5O.jpg"
+          },
+          {
+            "title": "Apur Sansar",
+            "year": 1959,
+            "slug": "The trilogy's conclusion sees adult Apu facing marriage, loss, and fatherhood",
+            "poster": "https://image.tmdb.org/t/p/w500/6Tz1Q69o2n3Zwb0ZffzPL0nFt2T.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 896,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6Tz1Q69o2n3Zwb0ZffzPL0nFt2T.jpg"
+          },
+          {
+            "title": "Charulata",
+            "year": 1964,
+            "slug": "Ray's masterpiece about a lonely wife's intellectual awakening in Victorian-era Calcutta",
+            "poster": "https://image.tmdb.org/t/p/w500/4kznHLoJGN3OBZunQvZwy26it8z.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 35790,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4kznHLoJGN3OBZunQvZwy26it8z.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Ray's neorealist approach in Aparajito revolutionized Indian cinema, breaking from Bollywood's melodramatic traditions. His use of natural light, location shooting, and nonprofessional actors created a documentary-like authenticity that influenced filmmakers worldwide, from Akira Kurosawa to Martin Scorsese. The film's exploration of mother-son relationships particularly resonates with later works like <a href=\"/movie/18148\" class=\"movie-title\" data-tmdb-id=\"18148\">Tokyo Story</a> (1953) and Autumn Afternoon (1962), showing how modernization affects traditional family bonds."
+      },
+      {
+        "type": "text",
+        "content": "The film's technical innovations deserve special attention. Subrata Mitra's cinematography pioneered the \"bounce lighting\" technique, creating naturalistic indoor lighting that influenced global cinema. This approach can be seen reflected in later masterworks like <a href=\"/movie/16642\" class=\"movie-title\" data-tmdb-id=\"16642\">Days of Heaven</a> (1978) and <a href=\"/movie/158391\" class=\"movie-title\" data-tmdb-id=\"158391\">The Apu Trilogy</a>'s influence on the French New Wave, particularly visible in <a href=\"/movie/655\" class=\"movie-title\" data-tmdb-id=\"655\">Paris, Texas</a> (1984). SUBHEAD: Impact on World Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Devi",
+            "year": 1960,
+            "slug": "Ray's examination of religious faith and family dynamics in 19th century Bengal",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Aparajito's influence extends beyond its technical achievements into narrative structure and themes. Its portrayal of rural-to-urban migration prefigured similar explorations in films like <a href=\"/movie/8422\" class=\"movie-title\" data-tmdb-id=\"8422\">Rocco and His Brothers</a> (1960) and The Last Train Home (2009). Ray's subtle approach to depicting emotional complexity influenced directors like Yasujirō Ozu and Abbas Kiarostami, visible in works like <a href=\"/movie/25050\" class=\"movie-title\" data-tmdb-id=\"25050\">Still Walking</a> (2008) and <a href=\"/movie/38322\" class=\"movie-title\" data-tmdb-id=\"38322\">Like Father, Like Son</a> (2013)."
+      }
+    ],
+    "exploreFurther": [
+      "Satyajit Ray's Influence on World Cinema",
+      "The Development of Indian Parallel Cinema",
+      "Neorealism in Asian Film",
+      "Mother-Son Relationships in Cinema",
+      "Rural-Urban Migration in Film"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Mahanagar",
+          "year": 1963,
+          "slug": "Ray's examination of changing gender roles in Calcutta",
+          "poster": "https://image.tmdb.org/t/p/w500/hPDMRWqb5WzXKa4qJCgcnvxAkO6.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 60567,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hPDMRWqb5WzXKa4qJCgcnvxAkO6.jpg"
+        },
+        {
+          "title": "Days of Heaven",
+          "year": 1978,
+          "slug": "Malick's visual poem about migrant workers",
+          "poster": "https://image.tmdb.org/t/p/w500/siE1XQ544MLO27geLYDbUDy3oTt.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 16642,
+          "poster_url": "https://image.tmdb.org/t/p/w500/siE1XQ544MLO27geLYDbUDy3oTt.jpg"
+        },
+        {
+          "title": "Tokyo Story",
+          "year": 1953,
+          "slug": "Ozu's masterpiece about family obligations",
+          "poster": "https://image.tmdb.org/t/p/w500/g2YbTYKpY7N2yDSk7BfXZ18I5QV.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 18148,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g2YbTYKpY7N2yDSk7BfXZ18I5QV.jpg"
+        },
+        {
+          "title": "The World of Apu",
+          "year": 1959,
+          "slug": "Final chapter in the Apu Trilogy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Devi",
+          "year": 1960,
+          "slug": "Ray's study of religious superstition",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Big City",
+          "year": 1963,
+          "slug": "Ray's exploration of working women in Calcutta",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Two Daughters",
+          "year": 1961,
+          "slug": "Ray's adaptation of Tagore stories",
+          "poster": "https://image.tmdb.org/t/p/w500/kPbM20j0rSyJZuQx5UunIMwwnWi.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 43027,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kPbM20j0rSyJZuQx5UunIMwwnWi.jpg"
+        },
+        {
+          "title": "The Music Room",
+          "year": 1958,
+          "slug": "Ray's examination of aristocratic decline",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Charulata",
+          "year": 1964,
+          "slug": "Ray's study of a woman's awakening",
+          "poster": "https://image.tmdb.org/t/p/w500/4kznHLoJGN3OBZunQvZwy26it8z.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 35790,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4kznHLoJGN3OBZunQvZwy26it8z.jpg"
+        },
+        {
+          "title": "The Chess Players",
+          "year": 1977,
+          "slug": "Ray's satirical look at colonial India",
+          "poster": "https://image.tmdb.org/t/p/w500/3gbBNhADbskBE7muZYnmAFaBPFb.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 80556,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3gbBNhADbskBE7muZYnmAFaBPFb.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

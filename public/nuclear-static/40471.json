@@ -1,0 +1,150 @@
+{
+  "props": {
+    "title": "For Y'ur Height Only",
+    "year": 1981,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/5hD9yvxNPkYRo5dHPlarikO1RJH.jpg",
+    "initialStreaming": null,
+    "tmdbId": 40471,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "The Filipino exploitation film For Y'ur Height Only stands as one of the most delightfully bizarre entries in spy cinema, starring 2'9\" actor Weng Weng as Agent 00. This James Bond parody blazed a unique trail through action cinema, combining martial arts, espionage tropes, and outlandish stunts that made creative use of Weng Weng's small stature. The film belongs to a fascinating wave of Filipino exploitation cinema of the 1970s-80s, alongside works like The One Armed Executioner (1983) and <a href=\"/movie/85268\" class=\"movie-title\">They Call Her Cleopatra Wong</a> (1978), which remixed popular Western genres with distinctly Filipino flair."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "For Y'ur Height Only",
+            "year": 1981,
+            "slug": "2'9\" Filipino secret agent battles crime syndicates with martial arts and gadgets",
+            "poster": "https://image.tmdb.org/t/p/w500/5hD9yvxNPkYRo5dHPlarikO1RJH.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 40471,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5hD9yvxNPkYRo5dHPlarikO1RJH.jpg"
+          },
+          {
+            "title": "The Challenge of the Lady Ninja",
+            "year": 1983,
+            "slug": "Filipino martial arts spy thriller starring Weng Weng",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 157389
+          },
+          {
+            "title": "They Call Her Cleopatra Wong",
+            "year": 1978,
+            "slug": "Female James Bond-style agent takes on criminals across Southeast Asia",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "YouTube",
+            "tmdb_id": 85268
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's impact rippled through cult cinema circles, inspiring a wave of unconventional action heroes. While Hollywood had <a href=\"/movie/691\" class=\"movie-title\" data-tmdb-id=\"691\">The Spy Who Loved Me</a> (1977) and <a href=\"/movie/698\" class=\"movie-title\" data-tmdb-id=\"698\">Moonraker</a> (1979), Filipino cinema countered with this uniquely subversive take that challenged action hero physical stereotypes. Director Eddie Nicart's clever use of camera angles and practical effects created convincing action sequences that made Weng Weng appear formidable despite his size, influencing later films like <a href=\"/movie/31380\" class=\"movie-title\" data-tmdb-id=\"31380\">Time Chasers</a> (1994) in showing how creativity could overcome budget limitations. SUBHEAD: The Rise of Filipino Exploitation Cinema"
+      },
+      {
+        "type": "text",
+        "content": "The success of For Y'ur Height Only came during the golden age of Filipino exploitation films, when directors like Eddie Nicart and Bobby A. Suarez were churning out genre-bending features that found international audiences. This era produced gems like Wonder Women (1973) and <a href=\"/movie/28797\" class=\"movie-title\" data-tmdb-id=\"28797\">Black Mama, White Mama</a> (1973), mixing Western action tropes with distinctly Filipino storytelling sensibilities. The period represented a unique moment when Filipino filmmakers could experiment freely, resulting in these gloriously eccentric productions that continue to influence cult cinema."
+      }
+    ],
+    "exploreFurther": [
+      "The History of Filipino Exploitation Cinema in the 1970s-80s",
+      "Weng Weng: The World's Smallest Action Star",
+      "James Bond Parodies in World Cinema",
+      "Low-Budget Filmmaking Techniques in Exploitation Cinema",
+      "The International Impact of Southeast Asian Action Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Impossible Kid",
+          "year": 1982,
+          "slug": "Weng Weng returns as Agent 00",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 58695
+        },
+        {
+          "title": "D'Wild Wild Weng",
+          "year": 1982,
+          "slug": "Western-style Weng Weng adventure",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 85594
+        },
+        {
+          "title": "For Your Height Only 2",
+          "year": 1983,
+          "slug": "Unofficial sequel to the original",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": null
+        },
+        {
+          "title": "The One Armed Executioner",
+          "year": 1983,
+          "slug": "Filipino revenge thriller",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 85264
+        },
+        {
+          "title": "Wonder Women",
+          "year": 1973,
+          "slug": "Female-led Filipino action spectacular",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 116445
+        },
+        {
+          "title": "Black Mama, White Mama",
+          "year": 1973,
+          "slug": "Women-in-prison exploitation film",
+          "poster": "https://image.tmdb.org/t/p/w500/y39ABRwaN1MG4B5ZIJGT22cktv8.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 28797,
+          "poster_url": "https://image.tmdb.org/t/p/w500/y39ABRwaN1MG4B5ZIJGT22cktv8.jpg"
+        },
+        {
+          "title": "They Call Him Chop-Suey",
+          "year": 1975,
+          "slug": "Martial arts comedy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 333523
+        },
+        {
+          "title": "The Pacific Connection",
+          "year": 1974,
+          "slug": "Historical martial arts epic",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 389961
+        },
+        {
+          "title": "Death Force",
+          "year": 1978,
+          "slug": "Filipino revenge thriller",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": null
+        },
+        {
+          "title": "Dynamite Johnson",
+          "year": 1978,
+          "slug": "Action-packed crime fighter story",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

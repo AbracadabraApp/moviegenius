@@ -1,0 +1,142 @@
+{
+  "props": {
+    "title": "Sullivan's Travels",
+    "year": 1941,
+    "initialSlug": "Seek the truth, find your soul.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/z5cqIM0ysVjkCmaDfyTQnlozdIp.jpg",
+    "initialStreaming": null,
+    "tmdbId": 16305,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Sullivan's Travels stands as Preston Sturges' masterful meta-commentary on Hollywood's role in society. The film follows a privileged director who disguises himself as a hobo to understand suffering, only to discover the vital importance of comedy in people's lives. This self-reflexive masterpiece directly influenced later films like <a href=\"/movie/10403\" class=\"movie-title\" data-tmdb-id=\"10403\">The Player</a> (1992) and <a href=\"/movie/290\" class=\"movie-title\" data-tmdb-id=\"290\">Barton Fink</a> (1991), which similarly decode Hollywood's relationship with \"serious art.\" Sturges brilliantly weaves slapstick comedy with social commentary, predating similar tonal balancing acts in works like <a href=\"/movie/637\" class=\"movie-title\" data-tmdb-id=\"637\">Life Is Beautiful</a> (1997)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Sullivan's Travels",
+            "year": 1941,
+            "slug": "A successful comedy director goes undercover as a hobo to experience real suffering, only to learn the true value of laughter",
+            "poster": "https://image.tmdb.org/t/p/w500/z5cqIM0ysVjkCmaDfyTQnlozdIp.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 16305,
+            "poster_url": "https://image.tmdb.org/t/p/w500/z5cqIM0ysVjkCmaDfyTQnlozdIp.jpg"
+          },
+          {
+            "title": "O Brother, Where Art Thou?",
+            "year": 2000,
+            "slug": "Coen Brothers' Depression-era odyssey takes its title from Sullivan's Travels and shares its mix of comedy and social commentary",
+            "poster": "https://image.tmdb.org/t/p/w500/s9foMAcLg8GEzzQzer04qOGdD1k.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 134,
+            "poster_url": "https://image.tmdb.org/t/p/w500/s9foMAcLg8GEzzQzer04qOGdD1k.jpg"
+          },
+          {
+            "title": "The Purple Rose of Cairo",
+            "year": 1985,
+            "slug": "Woody Allen's fantasy about a movie character who steps off the screen explores cinema's escapist power",
+            "poster": "https://image.tmdb.org/t/p/w500/ccsint43E44B7NGceEhVimD93Yt.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 10849,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ccsint43E44B7NGceEhVimD93Yt.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's influence on Hollywood satire cannot be overstated. <a href=\"/movie/270487\" class=\"movie-title\" data-tmdb-id=\"270487\">Hail, Caesar!</a> (2016) directly references Sturges' work in its exploration of 1950s studio system politics, while <a href=\"/movie/466272\" class=\"movie-title\" data-tmdb-id=\"466272\">Once Upon a Time in Hollywood</a> (2019) echoes its affectionate yet critical view of the industry. The sequence where Sullivan discovers the therapeutic power of Mickey Mouse cartoons for chain gang prisoners remains one of cinema's most powerful statements about entertainment's social value. SUBHEAD: Comedy as Social Commentary"
+      },
+      {
+        "type": "text",
+        "content": "Sturges pioneered a sophisticated approach to comedy that influenced generations of filmmakers. His ability to balance laughs with serious themes can be seen in works like <a href=\"/movie/935\" class=\"movie-title\" data-tmdb-id=\"935\">Dr. Strangelove</a> (1964) and <a href=\"/movie/10774\" class=\"movie-title\" data-tmdb-id=\"10774\">Network</a> (1976). Modern films like <a href=\"/movie/646380\" class=\"movie-title\" data-tmdb-id=\"646380\">Don't Look Up</a> (2021) continue this tradition of using humor to deliver social criticism, though few match Sturges' light touch and humanist warmth."
+      }
+    ],
+    "exploreFurther": [
+      "The Hollywood Studio System of the 1940s",
+      "Preston Sturges' Screwball Comedy Legacy",
+      "Social Commentary in American Comedy Films",
+      "Meta-Cinema: Movies About Movies",
+      "The Great Depression in American Film"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Lady Eve",
+          "year": 1941,
+          "slug": "Another Sturges classic combining romance and con artists",
+          "poster": "https://image.tmdb.org/t/p/w500/lJYD3CMgKtv12hazSHc7xt3i2uq.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 3086,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lJYD3CMgKtv12hazSHc7xt3i2uq.jpg"
+        },
+        {
+          "title": "To Be or Not to Be",
+          "year": 1942,
+          "slug": "Ernst Lubitsch's wartime comedy about actors in Nazi-occupied Warsaw",
+          "poster": "https://image.tmdb.org/t/p/w500/dDQRpEoyjHT4fzw9cNklIvZuXYg.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 198,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dDQRpEoyjHT4fzw9cNklIvZuXYg.jpg"
+        },
+        {
+          "title": "Singing in the Rain",
+          "year": 1952,
+          "slug": "Hollywood's golden age musical about the transition to sound",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": null
+        },
+        {
+          "title": "8½",
+          "year": 1963,
+          "slug": "Fellini's surreal exploration of creative crisis and filmmaking",
+          "poster": "https://image.tmdb.org/t/p/w500/2cPK4xKtccKmYsCSpaFGWnfEsZX.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 422,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2cPK4xKtccKmYsCSpaFGWnfEsZX.jpg"
+        },
+        {
+          "title": "The Player",
+          "year": 1992,
+          "slug": "Robert Altman's savage satire of modern Hollywood",
+          "poster": "https://image.tmdb.org/t/p/w500/tZ3kDut2dhFVGkWNEn9xoCHCNAx.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 10403,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tZ3kDut2dhFVGkWNEn9xoCHCNAx.jpg"
+        },
+        {
+          "title": "Living in Oblivion",
+          "year": 1995,
+          "slug": "Independent film about the challenges of low-budget moviemaking",
+          "poster": "https://image.tmdb.org/t/p/w500/b54xDk98oWtEtAso9sj1wjaZDDH.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 9071,
+          "poster_url": "https://image.tmdb.org/t/p/w500/b54xDk98oWtEtAso9sj1wjaZDDH.jpg"
+        },
+        {
+          "title": "Adaptation",
+          "year": 2002,
+          "slug": "Charlie Kaufman's meta-commentary on screenwriting and creativity",
+          "poster": "https://image.tmdb.org/t/p/w500/ffEmHQAiD0m5dEQ6rlsuA9vlllW.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 2757,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ffEmHQAiD0m5dEQ6rlsuA9vlllW.jpg"
+        },
+        {
+          "title": "Mank",
+          "year": 2020,
+          "slug": "David Fincher's examination of Hollywood's golden age",
+          "poster": "https://image.tmdb.org/t/p/w500/4yzTcAtvzyZLLto4z04xobUK9el.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 614560,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4yzTcAtvzyZLLto4z04xobUK9el.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

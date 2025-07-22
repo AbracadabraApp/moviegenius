@@ -1,0 +1,159 @@
+{
+  "props": {
+    "title": "The Premature Burial",
+    "year": 1962,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/lHy5kqRrLPKnO61HG2xehGW9oLX.jpg",
+    "initialStreaming": null,
+    "tmdbId": 29235,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Roger Corman's The Premature Burial stands as a crucial entry in his celebrated Edgar Allan Poe cycle, following the success of <a href=\"/movie/23439\" class=\"movie-title\">House of Usher</a> (1960) and <a href=\"/movie/28501\" class=\"movie-title\">Pit and the Pendulum</a> (1961). While Vincent Price famously anchored most of Corman's Poe adaptations, Ray Milland takes the lead here as Guy Carrell, delivering a haunting performance as a man obsessed with being buried alive. The film's rich atmospheric gothic horror builds on Corman's established visual palette - fog-shrouded graveyards, ornate Victorian mansions, and saturated color schemes that would influence horror aesthetics for decades."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "House of Usher",
+            "year": 1960,
+            "slug": "Vincent Price stars in this gothic horror about a cursed family mansion and its doomed inhabitants",
+            "poster": "https://image.tmdb.org/t/p/w500/jEzZOrGSWpl0jKOIXoY3OnEabLQ.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 23439,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jEzZOrGSWpl0jKOIXoY3OnEabLQ.jpg"
+          },
+          {
+            "title": "Pit and the Pendulum",
+            "year": 1961,
+            "slug": "Price returns in this adaptation featuring medieval torture devices and psychological terror",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 28501
+          },
+          {
+            "title": "Tales of Terror",
+            "year": 1962,
+            "slug": "Anthology film combining three Poe stories with Vincent Price in multiple roles",
+            "poster": "https://image.tmdb.org/t/p/w500/avAfdcgLZ6ix1j4xjeAs3gGofIS.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": 29074,
+            "poster_url": "https://image.tmdb.org/t/p/w500/avAfdcgLZ6ix1j4xjeAs3gGofIS.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The theme of being buried alive resonated deeply through 1960s horror, with <a href=\"/movie/11503\" class=\"movie-title\" data-tmdb-id=\"11503\">The Serpent and the Rainbow</a> (1988) later exploring similar territory. Corman's expert use of CinemaScope and moody lighting creates a suffocating atmosphere that perfectly captures Poe's psychological horror. The film's influence can be seen in later works like <a href=\"/movie/26388\" class=\"movie-title\" data-tmdb-id=\"26388\">Buried</a> (2010) and even <a href=\"/movie/393\" class=\"movie-title\" data-tmdb-id=\"393\">Kill Bill Vol. 2</a> (2004), where Uma Thurman's character must escape a premature burial. SUBHEAD: Gothic Horror Evolution"
+      },
+      {
+        "type": "text",
+        "content": "The Premature Burial marks a significant evolution in gothic horror filmmaking. While earlier films like <a href=\"/movie/138\" class=\"movie-title\" data-tmdb-id=\"138\">Dracula</a> (1931) and <a href=\"/movie/31592\" class=\"movie-title\" data-tmdb-id=\"31592\">The Old Dark House</a> (1932) established gothic conventions, Corman's Poe cycle, including this entry, modernized the approach with vivid color and psychological complexity. The film's influence extends to modern gothic works like <a href=\"/movie/201085\" class=\"movie-title\" data-tmdb-id=\"201085\">Crimson Peak</a> (2015) and <a href=\"/movie/65086\" class=\"movie-title\" data-tmdb-id=\"65086\">The Woman in Black</a> (2012), which similarly employ period settings to explore psychological terror."
+      }
+    ],
+    "exploreFurther": [
+      "Edgar Allan Poe's influence on horror cinema",
+      "Roger Corman's American International Pictures period",
+      "Evolution of Gothic Horror from Universal monsters to modern day",
+      "Psychological horror techniques in 1960s cinema",
+      "Ray Milland's transition from leading man to horror icon"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Fall of the House of Usher",
+          "year": 1928,
+          "slug": "Jean Epstein's surrealist take on Poe",
+          "poster": "https://image.tmdb.org/t/p/w500/tAQ85wZW4peogUJha88rT8SPq7v.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 106394,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tAQ85wZW4peogUJha88rT8SPq7v.jpg"
+        },
+        {
+          "title": "The Black Cat",
+          "year": 1934,
+          "slug": "Early Poe-inspired Universal horror with Lugosi and Karloff",
+          "poster": "https://image.tmdb.org/t/p/w500/QTH3dkeDGTBRBmsY0A7STpsNN4.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 24106,
+          "poster_url": "https://image.tmdb.org/t/p/w500/QTH3dkeDGTBRBmsY0A7STpsNN4.jpg"
+        },
+        {
+          "title": "The Raven",
+          "year": 1963,
+          "slug": "Comedy-horror Poe adaptation with Price and Karloff",
+          "poster": "https://image.tmdb.org/t/p/w500/tt7m22ki1raa0NrvesawJgsQ4Jn.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 29056,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tt7m22ki1raa0NrvesawJgsQ4Jn.jpg"
+        },
+        {
+          "title": "Masque of the Red Death",
+          "year": 1964,
+          "slug": "Corman's most visually striking Poe adaptation",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 25319
+        },
+        {
+          "title": "The Tomb of Ligeia",
+          "year": 1964,
+          "slug": "Final Corman-Price Poe collaboration",
+          "poster": "https://image.tmdb.org/t/p/w500/a0fOkhL0zp2DSmRme2yJjcQTGJQ.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 29030,
+          "poster_url": "https://image.tmdb.org/t/p/w500/a0fOkhL0zp2DSmRme2yJjcQTGJQ.jpg"
+        },
+        {
+          "title": "The Tell-Tale Heart",
+          "year": 1953,
+          "slug": "Animated short capturing Poe's psychological horror",
+          "poster": "https://image.tmdb.org/t/p/w500/AsUpsdGwNbFRpPG6BxvshwFRaut.jpg",
+          "initialStreaming": "YouTube",
+          "tmdb_id": 127401,
+          "poster_url": "https://image.tmdb.org/t/p/w500/AsUpsdGwNbFRpPG6BxvshwFRaut.jpg"
+        },
+        {
+          "title": "Buried Alive",
+          "year": 1990,
+          "slug": "Modern take on premature burial fears",
+          "poster": "https://image.tmdb.org/t/p/w500/mHanO22Os21g6ivNpCpK19dCbyI.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 30711,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mHanO22Os21g6ivNpCpK19dCbyI.jpg"
+        },
+        {
+          "title": "The Vanishing",
+          "year": 1988,
+          "slug": "Dutch psychological thriller with burial themes",
+          "poster": "https://image.tmdb.org/t/p/w500/eE5bbuRJluooG2MjEAsLEYyuJoa.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 8740,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eE5bbuRJluooG2MjEAsLEYyuJoa.jpg"
+        },
+        {
+          "title": "Vampyr",
+          "year": 1932,
+          "slug": "Dreamy gothic horror influencing Corman's style",
+          "poster": "https://image.tmdb.org/t/p/w500/yt3JS5JSoZseSohYkhs6FLU9B0O.jpg",
+          "initialStreaming": "HBO",
+          "tmdb_id": 779,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yt3JS5JSoZseSohYkhs6FLU9B0O.jpg"
+        },
+        {
+          "title": "The Haunted Palace",
+          "year": 1963,
+          "slug": "Corman horror marketed as Poe but based on Lovecraft",
+          "poster": "https://image.tmdb.org/t/p/w500/s2nvogtK7ts0BCzMdj9K1yp5PMH.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 30137,
+          "poster_url": "https://image.tmdb.org/t/p/w500/s2nvogtK7ts0BCzMdj9K1yp5PMH.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

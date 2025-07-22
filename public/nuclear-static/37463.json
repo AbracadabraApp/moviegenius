@@ -1,0 +1,183 @@
+{
+  "props": {
+    "title": "Phantom of the Rue Morgue",
+    "year": 1954,
+    "initialSlug": "The ultimate horror awaits!",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/8nKlCGTNQFODw9dS7MaljAyIqsg.jpg",
+    "initialStreaming": null,
+    "tmdbId": 37463,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Phantom of the Rue Morgue represents Warner Bros' attempt to capitalize on the 3D horror craze of the 1950s, adapting Edgar Allan Poe's \"Murders in the Rue Morgue\" with lurid color and sensationalized violence. Like <a href=\"/movie/18573\" class=\"movie-title\">House of Wax</a> (1953) and <a href=\"/movie/28363\" class=\"movie-title\" data-tmdb-id=\"28363\">The Mad Magician</a> (1954), it showcases both the possibilities and limitations of early 3D technology. The film follows the template established by earlier Poe adaptations like <a href=\"/movie/28501\" class=\"movie-title\" data-tmdb-id=\"28501\">The Pit and the Pendulum</a> (1961), emphasizing gothic atmosphere and psychological terror while taking significant liberties with the source material."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "House of Wax",
+            "year": 1953,
+            "slug": "Vincent Price stars in this 3D horror classic about a disfigured sculptor who creates wax figures using human corpses",
+            "poster": "https://image.tmdb.org/t/p/w500/qJmINK85CwxaoXN2PFDMO4eNxLS.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 18573,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qJmINK85CwxaoXN2PFDMO4eNxLS.jpg"
+          },
+          {
+            "title": "Mystery of the Wax Museum",
+            "year": 1933,
+            "slug": "The original pre-Code horror film that House of Wax remade, starring Lionel Atwill and Fay Wray",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 32652
+          },
+          {
+            "title": "Murders in the Rue Morgue",
+            "year": 1932,
+            "slug": "Bela Lugosi stars in Universal's first adaptation of Poe's story, emphasizing mad scientist elements",
+            "poster": "https://image.tmdb.org/t/p/w500/juw7PExPZ3JuwiT09fAePulrPoa.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 28435,
+            "poster_url": "https://image.tmdb.org/t/p/w500/juw7PExPZ3JuwiT09fAePulrPoa.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Director Roy Del Ruth, better known for musicals and comedies, brings a surprisingly effective gothic touch to 1850s Paris. Karl Malden delivers an intense performance as Dr. Marais, though he can't quite match the theatrical menace of Bela Lugosi in Universal's <a href=\"/movie/28435\" class=\"movie-title\">Murders in the Rue Morgue</a> (1932). The film's greatest strength lies in its vivid Technicolor cinematography by J. Peverell Marley, who had previously shot <a href=\"/movie/18573\" class=\"movie-title\">House of Wax</a> (1953) and understood how to maximize the 3D format's impact."
+      },
+      {
+        "type": "text",
+        "content": "The film fits into the broader 1950s trend of studios adapting literary properties into sensationalized horror, alongside The Strange Door (1951) and <a href=\"/movie/30345\" class=\"movie-title\">The Black Castle</a> (1952). While it takes major liberties with Poe's detective story, turning it into more of a traditional monster movie, it maintains the original's Paris setting and atmospheric mystery elements that would later influence films like <a href=\"/movie/27327\" class=\"movie-title\">Phantom of the Paradise</a> (1974). SUBHEAD: Impact on Horror Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Black Castle",
+            "year": 1952,
+            "slug": "Gothic horror starring Boris Karloff about a nobleman investigating disappearances at a sinister castle",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "TCM",
+            "tmdb_id": 30345
+          },
+          {
+            "title": "Phantom of the Paradise",
+            "year": 1974,
+            "slug": "Brian De Palma's rock opera twist on Phantom of the Opera and Faust",
+            "poster": "https://image.tmdb.org/t/p/w500/qDOtGWeSQNwB3dG7Amt1K0JW0az.jpg",
+            "initialStreaming": "Paramount+",
+            "tmdb_id": 27327,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qDOtGWeSQNwB3dG7Amt1K0JW0az.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's blend of period setting, lurid color, and 3D effects helped establish a template for horror films of the 1950s, particularly visible in later works like <a href=\"/movie/28363\" class=\"movie-title\" data-tmdb-id=\"28363\">The Mad Magician</a> (1954) and The Maze (1953). While modern viewers may find the 3D effects dated, the film's atmospheric use of Parisian locations and carnival settings influenced later horror films set in similar environments, from <a href=\"/movie/27405\" class=\"movie-title\" data-tmdb-id=\"27405\">Circus of Horrors</a> (1960) to <a href=\"/movie/628\" class=\"movie-title\" data-tmdb-id=\"628\">Interview with the Vampire</a> (1994)."
+      }
+    ],
+    "exploreFurther": [
+      "Edgar Allan Poe's influence on early horror cinema",
+      "The 1950s 3D movie craze and horror films",
+      "Evolution of carnival/circus horror settings in film",
+      "Warner Bros' horror output in the 1950s",
+      "Technicolor's impact on horror cinematography"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Pit and the Pendulum",
+          "year": 1961,
+          "slug": "Roger Corman's atmospheric Poe adaptation starring Vincent Price",
+          "poster": "https://image.tmdb.org/t/p/w500/6hOTmFaePluI5eicY4XTv6hg0T0.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 28501,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6hOTmFaePluI5eicY4XTv6hg0T0.jpg"
+        },
+        {
+          "title": "Circus of Horrors",
+          "year": 1960,
+          "slug": "British horror about a plastic surgeon who runs a circus featuring his disfigured patients",
+          "poster": "https://image.tmdb.org/t/p/w500/9sfshfTBXOFOAutfceewC6Rvgxq.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 27405,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9sfshfTBXOFOAutfceewC6Rvgxq.jpg"
+        },
+        {
+          "title": "The Strange Door",
+          "year": 1951,
+          "slug": "Charles Laughton and Boris Karloff in adaptation of Robert Louis Stevenson story",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 39409
+        },
+        {
+          "title": "The Maze",
+          "year": 1953,
+          "slug": "3D horror film about mysterious happenings in a Scottish castle",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 85498
+        },
+        {
+          "title": "Horrors of the Black Museum",
+          "year": 1959,
+          "slug": "Color horror thriller about a crime writer who recreates murders",
+          "poster": "https://image.tmdb.org/t/p/w500/uSCR1iZDIfTF6dbLzQe5IStRuA9.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 38823,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uSCR1iZDIfTF6dbLzQe5IStRuA9.jpg"
+        },
+        {
+          "title": "The Mad Magician",
+          "year": 1954,
+          "slug": "Vincent Price as a murderous magician in 3D",
+          "poster": "https://image.tmdb.org/t/p/w500/ctYNCvKiMN3yRHAXe6q2l6anMRk.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 28363,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ctYNCvKiMN3yRHAXe6q2l6anMRk.jpg"
+        },
+        {
+          "title": "The Bat",
+          "year": 1959,
+          "slug": "Vincent Price in atmospheric mystery-horror adaptation",
+          "poster": "https://image.tmdb.org/t/p/w500/78PVHYnadZ0e2BkBBSNonMZvViB.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 35813,
+          "poster_url": "https://image.tmdb.org/t/p/w500/78PVHYnadZ0e2BkBBSNonMZvViB.jpg"
+        },
+        {
+          "title": "House on Haunted Hill",
+          "year": 1959,
+          "slug": "William Castle's gimmicky haunted house thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/g5kdFt3piV3w1pG65W9sSToJ7HB.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 15856,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g5kdFt3piV3w1pG65W9sSToJ7HB.jpg"
+        },
+        {
+          "title": "The Tingler",
+          "year": 1959,
+          "slug": "William Castle horror with theater seat buzzers",
+          "poster": "https://image.tmdb.org/t/p/w500/jDuKIccxR0lsdWlYuWiu03hkwnN.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 26857,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jDuKIccxR0lsdWlYuWiu03hkwnN.jpg"
+        },
+        {
+          "title": "Macabre",
+          "year": 1958,
+          "slug": "William Castle thriller with insurance policies for viewers",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

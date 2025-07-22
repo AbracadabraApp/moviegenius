@@ -1,0 +1,169 @@
+{
+  "props": {
+    "title": "Where the Green Ants Dream",
+    "year": 1984,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/60oMOwmWwpN8dnOkRIjoUA7i5K.jpg",
+    "initialStreaming": null,
+    "tmdbId": 27221,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Werner Herzog's Where the Green Ants Dream represents one of the director's most direct confrontations with colonialism and environmental destruction. Like his earlier <a href=\"/movie/9343\" class=\"movie-title\" data-tmdb-id=\"9343\">Fitzcarraldo</a> (1982), Herzog explores the clash between Western industrial ambitions and indigenous rights, but trades the Amazon for the Australian outback. The film's premise - about Aboriginal people fighting a mining company over sacred land where green ants supposedly dream - showcases Herzog's signature blending of documentary-like realism with mythical elements."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Walkabout",
+            "year": 1971,
+            "slug": "Nicolas Roeg's haunting Australian outback survival story examining cultural collision and environmental harmony",
+            "poster": "https://image.tmdb.org/t/p/w500/24vooYt5StgtgcQObVr1GHuM5gy.jpg",
+            "initialStreaming": "Criterion Channel",
+            "tmdb_id": 36040,
+            "poster_url": "https://image.tmdb.org/t/p/w500/24vooYt5StgtgcQObVr1GHuM5gy.jpg"
+          },
+          {
+            "title": "Ten Canoes",
+            "year": 2006,
+            "slug": "The first feature film entirely in Australian Aboriginal languages, weaving traditional storytelling with contemporary narrative",
+            "poster": "https://image.tmdb.org/t/p/w500/wKAWK2iGJUg6pG2ZRkNpXBbuVYg.jpg",
+            "initialStreaming": "Kanopy",
+            "tmdb_id": 14064,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wKAWK2iGJUg6pG2ZRkNpXBbuVYg.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Herzog's approach to indigenous representation deserves examination alongside other key films of the era. While <a href=\"/movie/72277\" class=\"movie-title\" data-tmdb-id=\"72277\">The Last Wave</a> (1977) used Aboriginal mysticism as a plot device, and <a href=\"/movie/36040\" class=\"movie-title\">Walkabout</a> (1971) portrayed indigenous life through a distinctly European lens, Herzog attempted something different - using actual Aboriginal activists playing versions of themselves. This technique would later influence films like <a href=\"/movie/14064\" class=\"movie-title\">Ten Canoes</a> (2006) and <a href=\"/movie/29993\" class=\"movie-title\" data-tmdb-id=\"29993\">Samson and Delilah</a> (2009), which centered indigenous voices more directly."
+      },
+      {
+        "type": "text",
+        "content": "The environmental themes in Where the Green Ants Dream connect strongly to Herzog's broader exploration of humanity's relationship with nature, seen in films like <a href=\"/movie/288430\" class=\"movie-title\" data-tmdb-id=\"288430\">Grizzly Man</a> (2005) and La Soufrière (1977). The mining company's dismissal of Aboriginal spiritual beliefs mirrors similar conflicts in later films like <a href=\"/movie/19995\" class=\"movie-title\" data-tmdb-id=\"19995\">Avatar</a> (2009) and <a href=\"/movie/336808\" class=\"movie-title\">Embrace of the Serpent</a> (2015), though Herzog's treatment is more nuanced and ambiguous. SUBHEAD: Cultural Authenticity and Representation"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Embrace of the Serpent",
+            "year": 2015,
+            "slug": "A haunting exploration of colonialism and indigenous wisdom in the Amazon through two intertwined timelines",
+            "poster": "https://image.tmdb.org/t/p/w500/t3Lmw8jvm7tpik0lSkub8hU4oRW.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 336808,
+            "poster_url": "https://image.tmdb.org/t/p/w500/t3Lmw8jvm7tpik0lSkub8hU4oRW.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's production raised important questions about cultural authenticity that still resonate. While Herzog worked with actual Aboriginal activists, his creative liberties with their traditions drew criticism. This tension between artistic license and cultural accuracy would later become central to films like <a href=\"/movie/9555\" class=\"movie-title\" data-tmdb-id=\"9555\">Rabbit-Proof Fence</a> (2002) and <a href=\"/movie/468210\" class=\"movie-title\" data-tmdb-id=\"468210\">Sweet Country</a> (2017), which strove for more rigorous historical and cultural authenticity in depicting Aboriginal stories."
+      }
+    ],
+    "exploreFurther": [
+      "Herzog's Documentary Techniques in Narrative Films",
+      "Aboriginal Representation in Australian Cinema",
+      "Environmental Themes in 1980s World Cinema",
+      "Mining Companies vs. Indigenous Rights in Film",
+      "The Influence of Ethnographic Filmmaking on Fiction"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Rabbit-Proof Fence",
+          "year": 2002,
+          "slug": "True story of three Aboriginal girls escaping forced assimilation",
+          "poster": "https://image.tmdb.org/t/p/w500/vs8ATIRGEEYpcByrNtJ1WyI3LeD.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 9555,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vs8ATIRGEEYpcByrNtJ1WyI3LeD.jpg"
+        },
+        {
+          "title": "The Last Wave",
+          "year": 1977,
+          "slug": "Supernatural thriller involving Aboriginal mythology and modern Australia",
+          "poster": "https://image.tmdb.org/t/p/w500/7UwdJ0EMXirUuNFaohfK023Nuyr.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 72277,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7UwdJ0EMXirUuNFaohfK023Nuyr.jpg"
+        },
+        {
+          "title": "Samson and Delilah",
+          "year": 2009,
+          "slug": "Contemporary Aboriginal love story amid harsh realities",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 47075
+        },
+        {
+          "title": "The Tracker",
+          "year": 2002,
+          "slug": "Period drama about an Aboriginal tracker leading white lawmen",
+          "poster": "https://image.tmdb.org/t/p/w500/zNDbpSbjpV0bLVA0mUY1TH2YohT.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 13439,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zNDbpSbjpV0bLVA0mUY1TH2YohT.jpg"
+        },
+        {
+          "title": "Charlie's Country",
+          "year": 2013,
+          "slug": "Aboriginal man struggles between traditional and modern life",
+          "poster": "https://image.tmdb.org/t/p/w500/sqhOh1iFUgzDD0855ZRcCnV5sJ8.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 265349,
+          "poster_url": "https://image.tmdb.org/t/p/w500/sqhOh1iFUgzDD0855ZRcCnV5sJ8.jpg"
+        },
+        {
+          "title": "Sweet Country",
+          "year": 2017,
+          "slug": "Period western about an Aboriginal man fleeing justice",
+          "poster": "https://image.tmdb.org/t/p/w500/szJdZCSiEIYybmPymoP2UTEvOUC.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 468210,
+          "poster_url": "https://image.tmdb.org/t/p/w500/szJdZCSiEIYybmPymoP2UTEvOUC.jpg"
+        },
+        {
+          "title": "Tanna",
+          "year": 2015,
+          "slug": "Romeo and Juliet story set in Vanuatu tribal community",
+          "poster": "https://image.tmdb.org/t/p/w500/iKk0Nu3dytbDzX1SFwYJvUreQW.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 359151,
+          "poster_url": "https://image.tmdb.org/t/p/w500/iKk0Nu3dytbDzX1SFwYJvUreQW.jpg"
+        },
+        {
+          "title": "The Chant of Jimmie Blacksmith",
+          "year": 1978,
+          "slug": "Based on true story of an Aboriginal man's violent rebellion",
+          "poster": "https://image.tmdb.org/t/p/w500/rbyEtX16Tk58WMeii5rVEfB1OUm.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 69069,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rbyEtX16Tk58WMeii5rVEfB1OUm.jpg"
+        },
+        {
+          "title": "Goldstone",
+          "year": 2016,
+          "slug": "Modern noir involving indigenous land rights and mining",
+          "poster": "https://image.tmdb.org/t/p/w500/awXoAUuehhsOnCEdB7BYAetdK6r.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 393834,
+          "poster_url": "https://image.tmdb.org/t/p/w500/awXoAUuehhsOnCEdB7BYAetdK6r.jpg"
+        },
+        {
+          "title": "Satellite Boy",
+          "year": 2012,
+          "slug": "Aboriginal boy's journey to save his community's sacred land",
+          "poster": "https://image.tmdb.org/t/p/w500/6HuaxxE6OUqtkxF1Ef5C2I9mjyP.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 128204,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6HuaxxE6OUqtkxF1Ef5C2I9mjyP.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

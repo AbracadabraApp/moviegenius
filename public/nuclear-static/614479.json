@@ -1,0 +1,220 @@
+{
+  "props": {
+    "title": "Insidious: The Red Door",
+    "year": 2023,
+    "initialSlug": "Evil's final reckoning.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/d07phJqCx6z5wILDYqkyraorDPi.jpg",
+    "initialStreaming": null,
+    "tmdbId": 614479,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Patrick Wilson's directorial debut continues the Lambert family saga, directly following <a href=\"/movie/49018\" class=\"movie-title\">Insidious</a> (2010) and <a href=\"/movie/91586\" class=\"movie-title\">Insidious: Chapter 2</a> (2013). The Red Door brings closure to the original storyline, focusing on Josh Lambert and his now college-aged son Dalton. Like **The Conjuring** (2013) and **Sinister** (2012), it builds tension through psychological dread rather than cheap jump scares. Wilson draws clear inspiration from **Poltergeist** (1982) in how it handles family trauma, while the astral projection elements echo **A Nightmare on Elm Street** (1984)'s dream-invasion concepts."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Insidious",
+            "year": 2010,
+            "slug": "The original haunting masterpiece that introduced The Further and established the Lambert family's curse",
+            "poster": "https://image.tmdb.org/t/p/w500/1egpmVXuXed58TH2UOnX1nATTrf.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 49018,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1egpmVXuXed58TH2UOnX1nATTrf.jpg"
+          },
+          {
+            "title": "Insidious: Chapter 2",
+            "year": 2013,
+            "slug": "Direct sequel exploring the aftermath of Josh's childhood haunting",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 91586
+          },
+          {
+            "title": "Insidious: Chapter 3",
+            "year": 2015,
+            "slug": "Prequel showing Elise's earlier cases before the Lambert haunting",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Hulu",
+            "tmdb_id": 280092
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The Red Door cleverly incorporates memory suppression themes, similar to how **Hereditary** (2018) dealt with generational trauma. The Further remains one of modern horror's most distinctive supernatural realms, ranking alongside the Upside Down from **Stranger Things** (2016) in terms of memorable alternate dimensions. Wilson's direction emphasizes character development over cheap thrills, following the path of sophisticated horror like **The Babadook** (2014) and **The Night House** (2020)."
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of father-son relationships and buried memories recalls elements of **The Sixth Sense** (1999) and **Don't Look Now** (1973). The red door itself becomes a powerful symbol of repressed trauma, much like the basement in **Hereditary** (2018) or the red room in **The Haunting of Hill House** (2018). The astral projection sequences push technical boundaries while maintaining the series' signature visual style. SUBHEAD: Evolution of Modern Supernatural Horror"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Further Collection",
+            "year": 2023,
+            "slug": "Behind-the-scenes documentary about the Insidious franchise's creation",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Shudder",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The Insidious franchise helped redefine supernatural horror alongside films like **The Conjuring** (2013) and **Sinister** (2012), moving away from torture porn trends of the 2000s. The Red Door continues this tradition while incorporating elements of psychological horror seen in films like **Midsommar** (2019) and **Saint Maud** (2020). Its emphasis on emotional resolution over shock value shows the maturation of the genre."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Astral Projection in Horror Cinema",
+      "Patrick Wilson's Transition from Actor to Director in Horror",
+      "The Further: Creating Memorable Supernatural Realms",
+      "Family Trauma as Horror Device",
+      "The Insidious Franchise's Impact on Modern Horror"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Conjuring",
+          "year": 2013,
+          "slug": "Supernatural investigation classic from James Wan",
+          "poster": "https://image.tmdb.org/t/p/w500/wVYREutTvI2tmxr6ujrHT704wGF.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 138843,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wVYREutTvI2tmxr6ujrHT704wGF.jpg"
+        },
+        {
+          "title": "Sinister",
+          "year": 2012,
+          "slug": "True crime writer discovers supernatural super 8 films",
+          "poster": "https://image.tmdb.org/t/p/w500/nzx10sca3arCeYBAomHan4Q6wa1.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 82507,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nzx10sca3arCeYBAomHan4Q6wa1.jpg"
+        },
+        {
+          "title": "Hereditary",
+          "year": 2018,
+          "slug": "Devastating family horror with supernatural elements",
+          "poster": "https://image.tmdb.org/t/p/w500/4GFPuL14eXi66V96xBWY73Y9PfR.jpg",
+          "initialStreaming": "ShowTime",
+          "tmdb_id": 493922,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4GFPuL14eXi66V96xBWY73Y9PfR.jpg"
+        },
+        {
+          "title": "The Babadook",
+          "year": 2014,
+          "slug": "Australian horror about grief and motherhood",
+          "poster": "https://image.tmdb.org/t/p/w500/qt3fqapeo94TfvMyld8P7gkpXLz.jpg",
+          "initialStreaming": "AMC+",
+          "tmdb_id": 242224,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qt3fqapeo94TfvMyld8P7gkpXLz.jpg"
+        },
+        {
+          "title": "Poltergeist",
+          "year": 1982,
+          "slug": "Suburban family faces supernatural invasion",
+          "poster": "https://image.tmdb.org/t/p/w500/4eMN3GANH5GG4kXdHkrTZEUuQ9M.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 609,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4eMN3GANH5GG4kXdHkrTZEUuQ9M.jpg"
+        },
+        {
+          "title": "A Nightmare on Elm Street",
+          "year": 1984,
+          "slug": "Dream-invading slasher classic",
+          "poster": "https://image.tmdb.org/t/p/w500/wGTpGGRMZmyFCcrY2YoxVTIBlli.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 377,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wGTpGGRMZmyFCcrY2YoxVTIBlli.jpg"
+        },
+        {
+          "title": "The Night House",
+          "year": 2020,
+          "slug": "Widow uncovers husband's supernatural secrets",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": null
+        },
+        {
+          "title": "Don't Look Now",
+          "year": 1973,
+          "slug": "Psychological horror about grief and premonition",
+          "poster": "https://image.tmdb.org/t/p/w500/mq3TW9GiF9MNlIEjnlL7D9X9tbx.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 931,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mq3TW9GiF9MNlIEjnlL7D9X9tbx.jpg"
+        },
+        {
+          "title": "Saint Maud",
+          "year": 2020,
+          "slug": "Religious horror about faith and delusion",
+          "poster": "https://image.tmdb.org/t/p/w500/xueX3Nc85NeoGE30LfnU1zP0VLd.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 575776,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xueX3Nc85NeoGE30LfnU1zP0VLd.jpg"
+        },
+        {
+          "title": "Oculus",
+          "year": 2013,
+          "slug": "Siblings confront evil mirror from their past",
+          "poster": "https://image.tmdb.org/t/p/w500/yCzR1yKRLiJyTDLgY1ppazXEmdE.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 157547,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yCzR1yKRLiJyTDLgY1ppazXEmdE.jpg"
+        },
+        {
+          "title": "The Others",
+          "year": 2001,
+          "slug": "Gothic ghost story with memorable twist",
+          "poster": "https://image.tmdb.org/t/p/w500/p8g1vlTvpM6nr2hMMiZ1fUlKF0D.jpg",
+          "initialStreaming": "Paramount+",
+          "tmdb_id": 1933,
+          "poster_url": "https://image.tmdb.org/t/p/w500/p8g1vlTvpM6nr2hMMiZ1fUlKF0D.jpg"
+        },
+        {
+          "title": "Stir of Echoes",
+          "year": 1999,
+          "slug": "Man becomes psychically linked to murder victim",
+          "poster": "https://image.tmdb.org/t/p/w500/9CyJ5aYF27cITX1WSUTENeP4wBE.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 11601,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9CyJ5aYF27cITX1WSUTENeP4wBE.jpg"
+        },
+        {
+          "title": "The Changeling",
+          "year": 1980,
+          "slug": "Grieving composer discovers haunted mansion",
+          "poster": "https://image.tmdb.org/t/p/w500/z4nTYj3JZ5jWAhDgrmEhW2GRAzb.jpg",
+          "initialStreaming": "Shudder",
+          "tmdb_id": 13550,
+          "poster_url": "https://image.tmdb.org/t/p/w500/z4nTYj3JZ5jWAhDgrmEhW2GRAzb.jpg"
+        },
+        {
+          "title": "The Woman in Black",
+          "year": 2012,
+          "slug": "Period ghost story with Daniel Radcliffe",
+          "poster": "https://image.tmdb.org/t/p/w500/nghQnDZE4EsQJ4J4zxR3UqItTpO.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 65086,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nghQnDZE4EsQJ4J4zxR3UqItTpO.jpg"
+        },
+        {
+          "title": "Dark Water",
+          "year": 2002,
+          "slug": "Japanese horror about mother-daughter bonds",
+          "poster": "https://image.tmdb.org/t/p/w500/u7FIePdOTjboDAjcaA9MabbzAuf.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 12205,
+          "poster_url": "https://image.tmdb.org/t/p/w500/u7FIePdOTjboDAjcaA9MabbzAuf.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

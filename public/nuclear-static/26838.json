@@ -1,0 +1,140 @@
+{
+  "props": {
+    "title": "High Wall",
+    "year": 1947,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/7tiUGOrjmtS1wqRMCHFiSj8c1zz.jpg",
+    "initialStreaming": null,
+    "tmdbId": 26838,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "High Wall stands as a prime example of psychological film noir, blending criminal justice themes with emerging post-war interest in mental health treatment. Robert Taylor delivers a haunting performance as Steven Kenet, a traumatized war veteran accused of murder who can't remember if he's guilty. The film shares thematic DNA with <a href=\"/movie/4174\" class=\"movie-title\" data-tmdb-id=\"4174\">Spellbound</a> (1945) and <a href=\"/movie/43453\" class=\"movie-title\" data-tmdb-id=\"43453\">The Dark Past</a> (1948), exploring memory loss and psychoanalysis through a noir lens. Director Curtis Bernhardt, who also helmed <a href=\"/movie/20849\" class=\"movie-title\" data-tmdb-id=\"20849\">Possessed</a> (1947), brings his signature German Expressionist influences to create claustrophobic asylum scenes and shadowy interrogations. Spellbound|1945|Hitchcock's psychological thriller about an amnesiac doctor and the psychiatrist who falls for him|streaming Possessed|1947|Joan Crawford stars as a mentally ill woman whose obsessive love leads to murder|Warner Archive"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "High Wall",
+            "year": 1947,
+            "slug": "A war veteran with memory loss must prove his innocence with help from a psychiatrist",
+            "poster": "https://image.tmdb.org/t/p/w500/7tiUGOrjmtS1wqRMCHFiSj8c1zz.jpg",
+            "initialStreaming": "Warner Archive",
+            "tmdb_id": 26838,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7tiUGOrjmtS1wqRMCHFiSj8c1zz.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's exploration of PTSD and mental trauma reflects Hollywood's growing fascination with psychiatry in the late 1940s. Like <a href=\"/movie/62694\" class=\"movie-title\" data-tmdb-id=\"62694\">The Snake Pit</a> (1948) and <a href=\"/movie/25504\" class=\"movie-title\" data-tmdb-id=\"25504\">Shock Corridor</a> (1963), High Wall uses mental institution settings to create both tension and social commentary. Audrey Totter's portrayal of Dr. Ann Lorrison marks a departure from typical noir femme fatales, presenting instead a professional woman whose scientific approach to mental health challenges the era's more sensationalistic treatments. SUBHEAD: Post-War Psychological Noir"
+      },
+      {
+        "type": "text",
+        "content": "High Wall fits into a specific subset of post-WWII noir films dealing with veteran readjustment and psychological trauma. Similar themes appear in Somewhere in the Night (1946) and <a href=\"/movie/16090\" class=\"movie-title\" data-tmdb-id=\"16090\">The Blue Dahlia</a> (1946), where returning soldiers grapple with memory loss and suspected crimes. The film's use of experimental treatments like sodium pentothal reflects actual post-war psychiatric practices, while its visual style - particularly the asylum sequences - draws heavily from German Expressionism, much like <a href=\"/movie/234\" class=\"movie-title\" data-tmdb-id=\"234\">The Cabinet of Dr. Caligari</a> (1920)."
+      }
+    ],
+    "exploreFurther": [
+      "Post-WWII Hollywood's fascination with psychiatry and psychoanalysis in film noir",
+      "The influence of German Expressionism on American noir directors",
+      "Portrayals of mental health institutions in 1940s cinema",
+      "The evolution of the femme fatale character in psychological noir",
+      "War veteran characters in post-WWII American cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Snake Pit",
+          "year": 1948,
+          "slug": "A woman's harrowing experience in a mental institution",
+          "poster": "https://image.tmdb.org/t/p/w500/ugT4LqeQnr9G7zKt8XKs7EImFD2.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 62694,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ugT4LqeQnr9G7zKt8XKs7EImFD2.jpg"
+        },
+        {
+          "title": "Act of Violence",
+          "year": 1948,
+          "slug": "A war veteran is hunted by a limping man from his past",
+          "poster": "https://image.tmdb.org/t/p/w500/oyHQKdZxUkjEbaxZ4BIWgrN02gS.jpg",
+          "initialStreaming": "Warner Archive",
+          "tmdb_id": 32850,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oyHQKdZxUkjEbaxZ4BIWgrN02gS.jpg"
+        },
+        {
+          "title": "The Dark Past",
+          "year": 1948,
+          "slug": "A psychiatrist tries to help a criminal through psychoanalysis",
+          "poster": "https://image.tmdb.org/t/p/w500/yAwloinfuRVbLsFChZqTt7qJtL5.jpg",
+          "initialStreaming": "Columbia",
+          "tmdb_id": 43453,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yAwloinfuRVbLsFChZqTt7qJtL5.jpg"
+        },
+        {
+          "title": "Whirlpool",
+          "year": 1949,
+          "slug": "A kleptomaniac woman falls under the spell of a hypnotist",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "20th Century Fox",
+          "tmdb_id": null
+        },
+        {
+          "title": "The Seventh Victim",
+          "year": 1943,
+          "slug": "A woman searches for her missing sister in a noir psychological thriller",
+          "poster": "https://image.tmdb.org/t/p/w500/cvck16EWDqWK6x4p78N8KyJyJNJ.jpg",
+          "initialStreaming": "Warner Archive",
+          "tmdb_id": 20945,
+          "poster_url": "https://image.tmdb.org/t/p/w500/cvck16EWDqWK6x4p78N8KyJyJNJ.jpg"
+        },
+        {
+          "title": "Bewitched",
+          "year": 1945,
+          "slug": "A woman with split personality struggles with her darker half",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "MGM",
+          "tmdb_id": 42325
+        },
+        {
+          "title": "Shock",
+          "year": 1946,
+          "slug": "A doctor treats a woman who witnessed him commit murder",
+          "poster": "https://image.tmdb.org/t/p/w500/egWouljGXXidknA9cplDTApXcAt.jpg",
+          "initialStreaming": "20th Century Fox",
+          "tmdb_id": 29237,
+          "poster_url": "https://image.tmdb.org/t/p/w500/egWouljGXXidknA9cplDTApXcAt.jpg"
+        },
+        {
+          "title": "Fear in the Night",
+          "year": 1947,
+          "slug": "A bank teller believes he committed murder while sleepwalking",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Paramount",
+          "tmdb_id": 35401
+        },
+        {
+          "title": "The Locket",
+          "year": 1946,
+          "slug": "A complex psychological noir about a kleptomaniac's past",
+          "poster": "https://image.tmdb.org/t/p/w500/maLGJ5CDL2vWWqKPsd12bwTxFO8.jpg",
+          "initialStreaming": "RKO",
+          "tmdb_id": 38042,
+          "poster_url": "https://image.tmdb.org/t/p/w500/maLGJ5CDL2vWWqKPsd12bwTxFO8.jpg"
+        },
+        {
+          "title": "Strange Impersonation",
+          "year": 1946,
+          "slug": "A scientist's experiment leads to identity confusion",
+          "poster": "https://image.tmdb.org/t/p/w500/mrPQaDYMzvS4CZkfuGyDreS55jk.jpg",
+          "initialStreaming": "Republic Pictures",
+          "tmdb_id": 30614,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mrPQaDYMzvS4CZkfuGyDreS55jk.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

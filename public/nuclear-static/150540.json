@@ -1,0 +1,178 @@
+{
+  "props": {
+    "title": "Inside Out",
+    "year": 2015,
+    "initialSlug": "Dive into the mind of emotion.",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/2H1TmgdfNtsKlU9jKdeNyYL5y8T.jpg",
+    "initialStreaming": null,
+    "tmdbId": 150540,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Inside Out** (2015) revolutionized how animation tackles complex emotions through its brilliant personification of feelings. Pixar's masterpiece follows five emotions - Joy, Sadness, Fear, Anger, and Disgust - operating inside 11-year-old Riley's mind. The film builds on the psychological sophistication pioneered by **Spirited Away** (2001) and brings to mind the surreal inner landscapes of **Eternal Sunshine of the Spotless Mind** (2004). Director Pete Docter crafted a narrative that doesn't shy away from difficult truths: sadness is necessary, memories change, and growing up means accepting complexity."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Inside Out",
+            "year": 2015,
+            "slug": "Five emotions navigate life inside a young girl's mind as she deals with moving to a new city",
+            "poster": "https://image.tmdb.org/t/p/w500/2H1TmgdfNtsKlU9jKdeNyYL5y8T.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 150540,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2H1TmgdfNtsKlU9jKdeNyYL5y8T.jpg"
+          },
+          {
+            "title": "Coco",
+            "year": 2017,
+            "slug": "A boy enters the Land of the Dead to discover family secrets and follow his musical dreams",
+            "poster": "https://image.tmdb.org/t/p/w500/6Ryitt95xrO8KXuqRGm1fUuNwqF.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 354912,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6Ryitt95xrO8KXuqRGm1fUuNwqF.jpg"
+          },
+          {
+            "title": "Soul",
+            "year": 2020,
+            "slug": "A jazz musician's soul searches for meaning after becoming separated from his body",
+            "poster": "https://image.tmdb.org/t/p/w500/pEz5aROvfy5FBW1OTlrDO3VryWO.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 508442,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pEz5aROvfy5FBW1OTlrDO3VryWO.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's innovative approach to visualizing abstract concepts created a new template for exploring internal struggles through animation. Like **Big Hero 6** (2014) dealing with grief or <a href=\"/movie/508442\" class=\"movie-title\">Soul</a> (2020) tackling existential questions, Inside Out proves animation can handle sophisticated themes while remaining accessible to all ages. The memory orbs, personality islands, and train of thought aren't just clever visuals - they're powerful metaphors for how we process experiences and form our identities."
+      },
+      {
+        "type": "text",
+        "content": "What sets Inside Out apart is its nuanced understanding of emotional development. Unlike simpler \"feel-good\" animated films, it acknowledges that sadness plays a vital role in our psychological well-being. This complexity influenced later works like **The Lego Movie 2** (2019) and **Turning Red** (2022), which similarly explore the messiness of growing up and emotional maturity. SUBHEAD: The Evolution of Emotional Storytelling in Animation"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Up",
+            "year": 2009,
+            "slug": "An elderly widower and young wilderness explorer embark on an adventure in a flying house",
+            "poster": "https://image.tmdb.org/t/p/w500/mFvoEwSfLqbcWwFsDjQebn9bzFe.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 14160,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mFvoEwSfLqbcWwFsDjQebn9bzFe.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Inside Out marked a turning point in how animated films approach mental health and emotional intelligence. Its success paved the way for more sophisticated emotional narratives like **The Mitchell's vs. The Machines** (2021) and **Wolfwalkers** (2020). The film's ability to translate complex psychological concepts into vibrant, understandable stories has influenced both animation and live-action features dealing with mental health, such as **Everything Everywhere All at Once** (2022)."
+      }
+    ],
+    "exploreFurther": [
+      "The Science Behind Inside Out - How Pixar Consulted with Psychologists",
+      "Color Theory and Emotion in Animation",
+      "Pete Docter's Evolution as a Storyteller",
+      "The Impact of Inside Out on Mental Health Discussions",
+      "Memory Representation in Cinema"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Wall-E",
+          "year": 2008,
+          "slug": "A lonely robot finds love while cleaning up an abandoned Earth",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Ratatouille",
+          "year": 2007,
+          "slug": "A rat with culinary dreams teams up with a kitchen worker",
+          "poster": "https://image.tmdb.org/t/p/w500/t3vaWRPSf6WjDSamIkKDs1iQWna.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 2062,
+          "poster_url": "https://image.tmdb.org/t/p/w500/t3vaWRPSf6WjDSamIkKDs1iQWna.jpg"
+        },
+        {
+          "title": "The Incredibles",
+          "year": 2004,
+          "slug": "A family of superheroes struggles to balance normal life with heroics",
+          "poster": "https://image.tmdb.org/t/p/w500/2LqaLgk4Z226KkgPJuiOQ58wvrm.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 9806,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2LqaLgk4Z226KkgPJuiOQ58wvrm.jpg"
+        },
+        {
+          "title": "Toy Story 3",
+          "year": 2010,
+          "slug": "Woody and Buzz face their biggest challenge as Andy heads to college",
+          "poster": "https://image.tmdb.org/t/p/w500/AbbXspMOwdvwWZgVN0nabZq03Ec.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 10193,
+          "poster_url": "https://image.tmdb.org/t/p/w500/AbbXspMOwdvwWZgVN0nabZq03Ec.jpg"
+        },
+        {
+          "title": "Finding Nemo",
+          "year": 2003,
+          "slug": "A clownfish traverses the ocean to rescue his captured son",
+          "poster": "https://image.tmdb.org/t/p/w500/eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 12,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg"
+        },
+        {
+          "title": "Zootopia",
+          "year": 2016,
+          "slug": "A rabbit police officer uncovers a conspiracy in a city of anthropomorphic animals",
+          "poster": "https://image.tmdb.org/t/p/w500/hlK0e0wAQ3VLuJcsfIYPvb4JVud.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 269149,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hlK0e0wAQ3VLuJcsfIYPvb4JVud.jpg"
+        },
+        {
+          "title": "Wreck-It Ralph",
+          "year": 2012,
+          "slug": "A video game villain seeks to become a hero",
+          "poster": "https://image.tmdb.org/t/p/w500/zWoIgZ7mgmPkaZjG0102BSKFIqQ.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 82690,
+          "poster_url": "https://image.tmdb.org/t/p/w500/zWoIgZ7mgmPkaZjG0102BSKFIqQ.jpg"
+        },
+        {
+          "title": "Big Hero 6",
+          "year": 2014,
+          "slug": "A young inventor and his robot companion fight to save their city",
+          "poster": "https://image.tmdb.org/t/p/w500/2mxS4wUimwlLmI1xp6QW6NSU361.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 177572,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2mxS4wUimwlLmI1xp6QW6NSU361.jpg"
+        },
+        {
+          "title": "The Good Dinosaur",
+          "year": 2015,
+          "slug": "A young dinosaur makes an unlikely human friend",
+          "poster": "https://image.tmdb.org/t/p/w500/8RSkxOO80btfKjyiC5ZiTaCHIT8.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 105864,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8RSkxOO80btfKjyiC5ZiTaCHIT8.jpg"
+        },
+        {
+          "title": "Brave",
+          "year": 2012,
+          "slug": "A Scottish princess defies tradition to change her fate",
+          "poster": "https://image.tmdb.org/t/p/w500/1XAuDtMWpL0sYSFK0R6EZate2Ux.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 62177,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1XAuDtMWpL0sYSFK0R6EZate2Ux.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,169 @@
+{
+  "props": {
+    "title": "House of Dracula",
+    "year": 1945,
+    "initialSlug": "Dracula seeks cure but unleashes monster mayhem",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/x2HZq0CjGJbU90Q8Bm7jDKBM7ZG.jpg",
+    "initialStreaming": null,
+    "tmdbId": 30793,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "House of Dracula marks Universal's final serious entry in their classic monster series, bringing together Dracula, the Wolf Man, and Frankenstein's Monster. Unlike the more comedic <a href=\"/movie/3103\" class=\"movie-title\">House of Frankenstein</a> (1944), this film attempts a pseudo-scientific approach, with John Carradine's sophisticated Count seeking a cure for vampirism from Dr. Edelmann. The film reflects post-WWII audiences' growing interest in scientific explanations over pure supernatural horror, though it still delivers the atmospheric Gothic visuals Universal perfected in films like <a href=\"/movie/138\" class=\"movie-title\">Dracula</a> (1931) and <a href=\"/movie/13666\" class=\"movie-title\" data-tmdb-id=\"13666\">The Wolf Man</a> (1941)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Dracula",
+            "year": 1931,
+            "slug": "Bela Lugosi's iconic performance defined the vampire count for generations, with German Expressionist-influenced visuals",
+            "poster": "https://image.tmdb.org/t/p/w500/ueVSPt7vAba0XScHWTDWS5tNxYX.jpg",
+            "initialStreaming": "Tubi",
+            "tmdb_id": 138,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ueVSPt7vAba0XScHWTDWS5tNxYX.jpg"
+          },
+          {
+            "title": "Son of Dracula",
+            "year": 1943,
+            "slug": "Lon Chaney Jr. becomes the first American Dracula in this Southern Gothic take on the vampire legend",
+            "poster": "https://image.tmdb.org/t/p/w500/pQTLdJ46WXPIix05EkcHAMDKUIw.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 32023,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pQTLdJ46WXPIix05EkcHAMDKUIw.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's ambitious attempt to unite multiple monster storylines follows the template established by <a href=\"/movie/3076\" class=\"movie-title\" data-tmdb-id=\"3076\">Frankenstein Meets the Wolf Man</a> (1943), but adds medical drama elements common to 1940s horror. Dr. Edelmann's laboratory scenes, with their Tesla coils and experimental procedures, echo both The Ghost of Frankenstein (1942) and non-horror medical films of the era. Lon Chaney Jr. brings genuine pathos to Lawrence Talbot's quest for a cure, continuing the tragic characterization that made <a href=\"/movie/13666\" class=\"movie-title\" data-tmdb-id=\"13666\">The Wolf Man</a> (1941) so compelling."
+      },
+      {
+        "type": "text",
+        "content": "Director Erle C. Kenton, who also helmed <a href=\"/movie/3103\" class=\"movie-title\">House of Frankenstein</a> (1944), maintains Universal's signature Gothic atmosphere despite a limited budget. The film's cave settings and moonlit transformations recall the studio's horror heyday, while incorporating film noir lighting techniques that would soon dominate horror cinema. Though less remembered than Universal's earlier monster films, House of Dracula represents a fascinating transition point between Classical Hollywood horror and the science-focused creature features of the 1950s. SUBHEAD: The End of Universal's Monster Era"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "House of Frankenstein",
+            "year": 1944,
+            "slug": "Boris Karloff stars in this monster rally that set the template for Universal's creature crossovers",
+            "poster": "https://image.tmdb.org/t/p/w500/9HPcPasdgxjlSMlnyzIWrnGodOz.jpg",
+            "initialStreaming": "Prime",
+            "tmdb_id": 3103,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9HPcPasdgxjlSMlnyzIWrnGodOz.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The declining budgets and recycled plots of Universal's monster films in the mid-1940s reflected changing audience tastes. House of Dracula arrived as atomic age anxieties were about to transform horror cinema, leading to science fiction-horror hybrids like <a href=\"/movie/11071\" class=\"movie-title\" data-tmdb-id=\"11071\">Them!</a> (1954). The studio would retire its classic monsters after <a href=\"/movie/3073\" class=\"movie-title\" data-tmdb-id=\"3073\">Abbott and Costello Meet Frankenstein</a> (1948), ending an era that began with <a href=\"/movie/138\" class=\"movie-title\">Dracula</a> (1931) and <a href=\"/movie/3035\" class=\"movie-title\" data-tmdb-id=\"3035\">Frankenstein</a> (1931)."
+      }
+    ],
+    "exploreFurther": [
+      "Universal's Monster Crossover Films (1943-1948)",
+      "The Evolution of Vampire Cinema from Nosferatu to House of Dracula",
+      "Lon Chaney Jr.'s Impact on Horror Cinema",
+      "Scientific Elements in Classical Horror Films",
+      "The Transition from Gothic Horror to Atomic Age Science Fiction"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Wolf Man",
+          "year": 1941,
+          "slug": "Lon Chaney Jr.'s tragic portrayal of Larry Talbot set the standard for werewolf films",
+          "poster": "https://image.tmdb.org/t/p/w500/vG8fu5syTtQLzK1hQXyi3ugOPNF.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 13666,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vG8fu5syTtQLzK1hQXyi3ugOPNF.jpg"
+        },
+        {
+          "title": "Frankenstein Meets the Wolf Man",
+          "year": 1943,
+          "slug": "The first Universal monster crossover film",
+          "poster": "https://image.tmdb.org/t/p/w500/eitxewmvmZXY7qoKpiVhdaFmwMz.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 3076,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eitxewmvmZXY7qoKpiVhdaFmwMz.jpg"
+        },
+        {
+          "title": "Abbott and Costello Meet Frankenstein",
+          "year": 1948,
+          "slug": "Horror-comedy featuring Dracula, Wolf Man and Frankenstein's Monster",
+          "poster": "https://image.tmdb.org/t/p/w500/ectRcq1y6EAmz2i72SCRHI6qUK2.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 3073,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ectRcq1y6EAmz2i72SCRHI6qUK2.jpg"
+        },
+        {
+          "title": "The Ghost of Frankenstein",
+          "year": 1942,
+          "slug": "Lon Chaney Jr. takes on the Monster role",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 3074
+        },
+        {
+          "title": "Dracula's Daughter",
+          "year": 1936,
+          "slug": "Atmospheric sequel to the original Dracula",
+          "poster": "https://image.tmdb.org/t/p/w500/y7xBkkRLcg1I0fXHO4yYC5SwBCX.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 22440,
+          "poster_url": "https://image.tmdb.org/t/p/w500/y7xBkkRLcg1I0fXHO4yYC5SwBCX.jpg"
+        },
+        {
+          "title": "Son of Frankenstein",
+          "year": 1939,
+          "slug": "Boris Karloff's final appearance as the Monster",
+          "poster": "https://image.tmdb.org/t/p/w500/oefhX4T3iWo2XFvaOunR7azWAo3.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 3077,
+          "poster_url": "https://image.tmdb.org/t/p/w500/oefhX4T3iWo2XFvaOunR7azWAo3.jpg"
+        },
+        {
+          "title": "The Mummy's Curse",
+          "year": 1944,
+          "slug": "Late Universal mummy entry showing similar budget constraints",
+          "poster": "https://image.tmdb.org/t/p/w500/mzdLuaFsZrxJ7KcrExTh7GEOqJt.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 29242,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mzdLuaFsZrxJ7KcrExTh7GEOqJt.jpg"
+        },
+        {
+          "title": "House on Haunted Hill",
+          "year": 1959,
+          "slug": "Vincent Price thriller showing horror's new direction",
+          "poster": "https://image.tmdb.org/t/p/w500/g5kdFt3piV3w1pG65W9sSToJ7HB.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 15856,
+          "poster_url": "https://image.tmdb.org/t/p/w500/g5kdFt3piV3w1pG65W9sSToJ7HB.jpg"
+        },
+        {
+          "title": "Bride of Frankenstein",
+          "year": 1935,
+          "slug": "James Whale's masterful sequel combining horror and pathos",
+          "poster": "https://image.tmdb.org/t/p/w500/5241zUwe7rC17MNc2QpCBKKdp1N.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": 229,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5241zUwe7rC17MNc2QpCBKKdp1N.jpg"
+        },
+        {
+          "title": "The Invisible Man Returns",
+          "year": 1940,
+          "slug": "Another Universal monster sequel with scientific elements",
+          "poster": "https://image.tmdb.org/t/p/w500/hJmmgKnY0NaJKVP7Glb4ciAzXWr.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 28421,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hJmmgKnY0NaJKVP7Glb4ciAzXWr.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

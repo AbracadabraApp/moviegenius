@@ -1,0 +1,177 @@
+{
+  "props": {
+    "title": "The Little Princess",
+    "year": 1939,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/cnMSURyv7R6gjmUm5SYdTxXLzIO.jpg",
+    "initialStreaming": null,
+    "tmdbId": 26531,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Shirley Temple's luminous performance in The Little Princess marked a pivotal moment in children's cinema, elevating literary adaptations beyond simple entertainment. Director Walter Lang crafted a Technicolor masterpiece that set new standards for production design in family films, following the success of <a href=\"/movie/630\" class=\"movie-title\" data-tmdb-id=\"630\">The Wizard of Oz</a> (1939) that same year. The film's rich Victorian settings and Temple's earnest portrayal of Sara Crewe transformed Frances Hodgson Burnett's beloved novel into a visual feast that influenced countless subsequent adaptations like <a href=\"/movie/19101\" class=\"movie-title\" data-tmdb-id=\"19101\">A Little Princess</a> (1995) and <a href=\"/movie/11236\" class=\"movie-title\" data-tmdb-id=\"11236\">The Secret Garden</a> (1993)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Little Princess",
+            "year": 1939,
+            "slug": "Shirley Temple stars as Sara Crewe, a wealthy student reduced to servitude when her father is presumed dead in the Boer War",
+            "poster": "https://image.tmdb.org/t/p/w500/cnMSURyv7R6gjmUm5SYdTxXLzIO.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 26531,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cnMSURyv7R6gjmUm5SYdTxXLzIO.jpg"
+          },
+          {
+            "title": "A Little Princess",
+            "year": 1995,
+            "slug": "Alfonso Cuarón's magical realist take on the classic story, with stunning visuals and emotional depth",
+            "poster": "https://image.tmdb.org/t/p/w500/9V4bAVEskSNbEqjVI0YmeuB0n8I.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 19101,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9V4bAVEskSNbEqjVI0YmeuB0n8I.jpg"
+          },
+          {
+            "title": "The Secret Garden",
+            "year": 1993,
+            "slug": "Another Burnett adaptation about a young girl's magical discovery in a Victorian mansion",
+            "poster": "https://image.tmdb.org/t/p/w500/zf6h5dJ7wVG7LqMO9dhHGHVejzj.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 11236,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zf6h5dJ7wVG7LqMO9dhHGHVejzj.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The 1939 version particularly resonates through its wartime context, with Sara's father fighting in the Boer War mirroring anxieties of WWII-era audiences. This theme of children facing separation and hardship during wartime would later echo in films like <a href=\"/movie/10110\" class=\"movie-title\" data-tmdb-id=\"10110\">Empire of the Sun</a> (1987) and <a href=\"/movie/32054\" class=\"movie-title\" data-tmdb-id=\"32054\">Hope and Glory</a> (1987). Temple's performance represents the peak of her career, demonstrating remarkable range as Sara transitions from privilege to poverty while maintaining her inner nobility."
+      },
+      {
+        "type": "text",
+        "content": "The film's innovative use of Technicolor created a template for fantasy sequences in children's cinema, influencing everything from <a href=\"/movie/433\" class=\"movie-title\" data-tmdb-id=\"433\">Mary Poppins</a> (1964) to The Chronicles of Narnia (2005). Lang's direction seamlessly blends reality with Sara's imaginative escapes, establishing a visual language for depicting children's interior lives that remains influential. SUBHEAD: Impact on Children's Cinema"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Empire of the Sun",
+            "year": 1987,
+            "slug": "Spielberg's epic about a boy separated from his parents in WWII Shanghai",
+            "poster": "https://image.tmdb.org/t/p/w500/gEaCzjwHoPgyQFcwHql7o5YLHAU.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 10110,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gEaCzjwHoPgyQFcwHql7o5YLHAU.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The Little Princess established crucial patterns for adapting children's literature to film, particularly in handling darker themes while maintaining accessibility. Its influence can be traced through <a href=\"/movie/43439\" class=\"movie-title\" data-tmdb-id=\"43439\">The Secret Garden</a> (1949), <a href=\"/movie/31102\" class=\"movie-title\" data-tmdb-id=\"31102\">Pollyanna</a> (1960), and even modern interpretations like <a href=\"/movie/116745\" class=\"movie-title\" data-tmdb-id=\"116745\">The Secret Life of Walter Mitty</a> (2013), all of which balance whimsy with serious themes about resilience and identity."
+      }
+    ],
+    "exploreFurther": [
+      "The Evolution of Shirley Temple's Career and Impact on Child Acting",
+      "Technicolor Innovation in 1930s Hollywood",
+      "Frances Hodgson Burnett Adaptations Across Cinema History",
+      "Depicting Children's Perspectives in Wartime Cinema",
+      "Victorian Literary Adaptations in Golden Age Hollywood"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Pollyanna",
+          "year": 1960,
+          "slug": "Hayley Mills stars as an eternally optimistic orphan",
+          "poster": "https://image.tmdb.org/t/p/w500/9lWkRXg35SjUZXLr10ez8DERvRv.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 31102,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9lWkRXg35SjUZXLr10ez8DERvRv.jpg"
+        },
+        {
+          "title": "Annie",
+          "year": 1982,
+          "slug": "Musical adaptation of another beloved orphan tale",
+          "poster": "https://image.tmdb.org/t/p/w500/6dG7UTAISJGh6FqTKIwN7sR11w2.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 15739,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6dG7UTAISJGh6FqTKIwN7sR11w2.jpg"
+        },
+        {
+          "title": "Heidi",
+          "year": 1937,
+          "slug": "Shirley Temple as the classic Swiss orphan",
+          "poster": "https://image.tmdb.org/t/p/w500/rIfA5X4pYJOHyFPZFqWLOu7yfiZ.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 28345,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rIfA5X4pYJOHyFPZFqWLOu7yfiZ.jpg"
+        },
+        {
+          "title": "The Secret Garden",
+          "year": 1949,
+          "slug": "Margaret O'Brien in the first major adaptation",
+          "poster": "https://image.tmdb.org/t/p/w500/a28DY7ar8klmQAgDQIlpluzeBgt.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 43439,
+          "poster_url": "https://image.tmdb.org/t/p/w500/a28DY7ar8klmQAgDQIlpluzeBgt.jpg"
+        },
+        {
+          "title": "Bright Eyes",
+          "year": 1934,
+          "slug": "Earlier Shirley Temple classic about an orphaned girl",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": null
+        },
+        {
+          "title": "Rebecca of Sunnybrook Farm",
+          "year": 1938,
+          "slug": "Temple shines in rural Americana",
+          "poster": "https://image.tmdb.org/t/p/w500/9sm4ygPGxnOZkZV6214clSBrDUd.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 38716,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9sm4ygPGxnOZkZV6214clSBrDUd.jpg"
+        },
+        {
+          "title": "Curly Top",
+          "year": 1935,
+          "slug": "Temple's signature film about orphaned sisters",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": null
+        },
+        {
+          "title": "Mrs. Miniver",
+          "year": 1942,
+          "slug": "WWII-era family drama with similar themes",
+          "poster": "https://image.tmdb.org/t/p/w500/fjPjx6FTaoTussbqoLj6OYTtUyi.jpg",
+          "initialStreaming": "HBO Max",
+          "tmdb_id": 27367,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fjPjx6FTaoTussbqoLj6OYTtUyi.jpg"
+        },
+        {
+          "title": "Jane Eyre",
+          "year": 1943,
+          "slug": "Gothic adaptation with parallel themes",
+          "poster": "https://image.tmdb.org/t/p/w500/stD4BQiN4TLNf6P5ju95AVRPdto.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 22744,
+          "poster_url": "https://image.tmdb.org/t/p/w500/stD4BQiN4TLNf6P5ju95AVRPdto.jpg"
+        },
+        {
+          "title": "Little Women",
+          "year": 1949,
+          "slug": "Classic adaptation of another beloved girl's story",
+          "poster": "https://image.tmdb.org/t/p/w500/qrshhX8dywIOljtITGHGNK6TJcB.jpg",
+          "initialStreaming": "TCM",
+          "tmdb_id": 43436,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qrshhX8dywIOljtITGHGNK6TJcB.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,158 @@
+{
+  "props": {
+    "title": "The Adventures of Nemuri Kyoshiro",
+    "year": 1964,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/tIXyPvsur6C8QJUq7WztCV8XZ9q.jpg",
+    "initialStreaming": null,
+    "tmdbId": 96250,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**The Adventures of Nemuri Kyoshiro** (1964) represents a pivotal moment in Japanese chambara cinema, starring the magnetic Ichikawa Raizō VIII as the cynical, masterless samurai. This film launched the successful Sleepy Eyes of Death series, introducing audiences to one of Japan's most compelling anti-heroes. Director Tokuzo Tanaka crafted a darker, more morally ambiguous take on the samurai genre, moving away from the noble warrior archetype seen in Akira Kurosawa's **Seven Samurai** (1954) and toward something more aligned with the nihilistic tone of <a href=\"/movie/19884\" class=\"movie-title\">Sword of Doom</a> (1966)."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Harakiri",
+            "year": 1962,
+            "slug": "Tatsuya Nakadai stars in Masaki Kobayashi's devastating critique of samurai honor codes and rigid feudal systems",
+            "poster": "https://image.tmdb.org/t/p/w500/5konZnIbcAxZjP616Cz5o9bKEfW.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": 14537,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5konZnIbcAxZjP616Cz5o9bKEfW.jpg"
+          },
+          {
+            "title": "Sword of Doom",
+            "year": 1966,
+            "slug": "Tatsuya Nakadai plays a sociopathic swordsman in this brutal, psychological samurai thriller",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "HBO Max",
+            "tmdb_id": 19884
+          },
+          {
+            "title": "Kill!",
+            "year": 1968,
+            "slug": "A darkly comic take on the samurai genre that blends violence with satirical elements",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Criterion",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film's distinctive \"Full Moon Cut\" sword technique became iconic within the genre, influencing countless subsequent chambara films. Kyoshiro's character - half-European, cynical, and deadly - reflected Japan's complex post-war relationship with Western influence. This thematic element would later echo through films like **Lady Snowblood** (1973) and even modern interpretations like **Blade of the Immortal** (2017). SUBHEAD: Impact on Samurai Cinema"
+      },
+      {
+        "type": "text",
+        "content": "The series' influence extends beyond Japan, helping establish the archetype of the anti-hero swordsman that would appear in everything from **Lone Wolf and Cub: Sword of Vengeance** (1972) to international homages like **Ghost Dog: The Way of the Samurai** (1999). The film's technical achievements in sword choreography, particularly its emphasis on single, decisive cuts rather than extended clashing sequences, influenced directors like Kenji Misumi and his work on the **Lone Wolf and Cub** series."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of the Chambara Film Genre 1960-1970",
+      "Ichikawa Raizō VIII's Impact on Japanese Cinema",
+      "The Anti-Hero in Samurai Films",
+      "Technical Innovations in Sword Fight Choreography",
+      "Japanese Post-War Cinema and Western Influence"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Lady Snowblood",
+          "year": 1973,
+          "slug": "Revenge tale of a female assassin that influenced Kill Bill",
+          "poster": "https://image.tmdb.org/t/p/w500/wkcbaqCoYEXDUnSQ6NTnB2C7H05.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 2487,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wkcbaqCoYEXDUnSQ6NTnB2C7H05.jpg"
+        },
+        {
+          "title": "Samurai Rebellion",
+          "year": 1967,
+          "slug": "Toshiro Mifune stars in this tale of defiance against feudal authority",
+          "poster": "https://image.tmdb.org/t/p/w500/bKySGFUTgsZyn5i7s5htMVy4Xd2.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 27031,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bKySGFUTgsZyn5i7s5htMVy4Xd2.jpg"
+        },
+        {
+          "title": "Three Outlaw Samurai",
+          "year": 1964,
+          "slug": "Political thriller about ronin defending peasants",
+          "poster": "https://image.tmdb.org/t/p/w500/tLMiKmFpIFPkTwxwi18hxxd2Q8r.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 58878,
+          "poster_url": "https://image.tmdb.org/t/p/w500/tLMiKmFpIFPkTwxwi18hxxd2Q8r.jpg"
+        },
+        {
+          "title": "The Sword of Doom",
+          "year": 1966,
+          "slug": "Dark psychological study of a murderous samurai",
+          "poster": "https://image.tmdb.org/t/p/w500/yjHbIihqpuAXlZVoPbWdqaukllB.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 19884,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yjHbIihqpuAXlZVoPbWdqaukllB.jpg"
+        },
+        {
+          "title": "Killing",
+          "year": 1964,
+          "slug": "Brutal tale of a samurai's moral descent",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": null
+        },
+        {
+          "title": "Sword of the Beast",
+          "year": 1965,
+          "slug": "Story of a samurai fleeing after a political killing",
+          "poster": "https://image.tmdb.org/t/p/w500/8CoqruUTwDldSP8iNSKvmhq2sOC.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 46917,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8CoqruUTwDldSP8iNSKvmhq2sOC.jpg"
+        },
+        {
+          "title": "The Tale of Zatoichi",
+          "year": 1962,
+          "slug": "First entry in the beloved blind swordsman series",
+          "poster": "https://image.tmdb.org/t/p/w500/vLLXVE8YBW6yRDEf7YNrRfy7Iiw.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 16693,
+          "poster_url": "https://image.tmdb.org/t/p/w500/vLLXVE8YBW6yRDEf7YNrRfy7Iiw.jpg"
+        },
+        {
+          "title": "Samurai Assassin",
+          "year": 1965,
+          "slug": "Complex political thriller set in feudal Japan",
+          "poster": "https://image.tmdb.org/t/p/w500/uoCGSeokxrcR24PiYamYs0EVJ8.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 79406,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uoCGSeokxrcR24PiYamYs0EVJ8.jpg"
+        },
+        {
+          "title": "Hitokiri",
+          "year": 1969,
+          "slug": "Violent tale of a legendary assassin",
+          "poster": "https://image.tmdb.org/t/p/w500/aXRwh2NDCIP2yZ0BXmfZkV5Yopj.jpg",
+          "initialStreaming": "AsianCrush",
+          "tmdb_id": 37053,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aXRwh2NDCIP2yZ0BXmfZkV5Yopj.jpg"
+        },
+        {
+          "title": "Gate of Hell",
+          "year": 1953,
+          "slug": "Award-winning samurai drama with stunning color cinematography",
+          "poster": "https://image.tmdb.org/t/p/w500/6ceVYhhcIgEauUKdrYoIUWyAqfy.jpg",
+          "initialStreaming": "Criterion",
+          "tmdb_id": 43349,
+          "poster_url": "https://image.tmdb.org/t/p/w500/6ceVYhhcIgEauUKdrYoIUWyAqfy.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

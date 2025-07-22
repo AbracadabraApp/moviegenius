@@ -1,0 +1,160 @@
+{
+  "props": {
+    "title": "Hulk vs. Wolverine",
+    "year": 2009,
+    "initialSlug": "Clash of the Titans",
+    "initialPoster": "https://image.tmdb.org/t/p/w500/p8PZfkrCuXanfYr3k6xAS6WzN8Y.jpg",
+    "initialStreaming": null,
+    "tmdbId": 15257,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Hulk vs. Wolverine stands as a pivotal animated clash between Marvel's most famous berserkers. This direct-to-video feature draws heavy inspiration from Wolverine's first comic appearance in The Incredible Hulk #181 (1974), reimagining the iconic forest battle with modern animation techniques. The film demonstrates the same brutal intensity found in Ultimate Avengers 2 (2006) while delivering more focused character development than typical superhero throwdowns."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Ultimate Avengers",
+            "year": 2006,
+            "slug": "The first major Marvel animated film targeting an adult audience, featuring a darker take on the superhero team",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": null
+          },
+          {
+            "title": "Planet Hulk",
+            "year": 2010,
+            "slug": "Animated adaptation of the acclaimed comic storyline sending Hulk to an alien gladiator world",
+            "poster": "https://image.tmdb.org/t/p/w500/5wCzY3sAs6zHIzzHIcTKN2g0pu8.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": 30675,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5wCzY3sAs6zHIzzHIcTKN2g0pu8.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The animation style deliberately echoes the grittier approach of <a href=\"/movie/1318680\" class=\"movie-title\" data-tmdb-id=\"1318680\">X-Men: Evolution</a> (2000-2003), particularly in combat sequences. Director Frank Paur, who previously helmed Doctor Strange: The Sorcerer Supreme (2007), brings a kinetic energy to the fight choreography that captures both characters' savage nature while maintaining clear visual storytelling. The film's Canadian wilderness setting provides a perfect backdrop for the primal confrontation, reminiscent of the atmospheric tension in Batman: Mask of the Phantasm (1993)."
+      },
+      {
+        "type": "text",
+        "content": "What sets this adaptation apart is its faithful recreation of both characters' core attributes - Wolverine's tactical prowess versus Hulk's raw power. The voice casting of Steven Blum as Wolverine continues his definitive portrayal from Wolverine and the X-Men (2008), while Fred Tatasciore's Hulk captures both the rage and tragedy of the character seen in <a href=\"/movie/14613\" class=\"movie-title\" data-tmdb-id=\"14613\">Next Avengers: Heroes of Tomorrow</a> (2008). SUBHEAD: Impact on Animated Superhero Combat"
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Wolverine and the X-Men",
+            "year": 2008,
+            "slug": "Animated series following Wolverine's leadership of the X-Men after a mysterious catastrophe",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Disney+",
+            "tmdb_id": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The film raised the bar for superhero combat animation, influencing later projects like Iron Man: Rise of Technovore (2013) and Avengers Confidential: Black Widow & Punisher (2014). Its success proved audiences would embrace more mature-themed Marvel animated features, paving the way for projects like <a href=\"/movie/63686\" class=\"movie-title\" data-tmdb-id=\"63686\">Thor: Tales of Asgard</a> (2011) and the later Marvel Anime series."
+      }
+    ],
+    "exploreFurther": [
+      "Evolution of Marvel Animation Style: From X-Men: TAS to Modern Features",
+      "Comic Accuracy in Animated Adaptations",
+      "Development of Superhero Combat Choreography in Animation",
+      "Voice Acting Legacy in Superhero Animation",
+      "Impact of Direct-to-Video Superhero Films"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "Iron Man: Rise of Technovore",
+          "year": 2013,
+          "slug": "Anime-styled Iron Man feature with complex action sequences",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": null
+        },
+        {
+          "title": "Thor: Tales of Asgard",
+          "year": 2011,
+          "slug": "Young Thor's coming-of-age story with Nordic mythology",
+          "poster": "https://image.tmdb.org/t/p/w500/nM2rBqEMrAFiNFHXKWOhUgdKK45.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 63686,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nM2rBqEMrAFiNFHXKWOhUgdKK45.jpg"
+        },
+        {
+          "title": "Doctor Strange: The Sorcerer Supreme",
+          "year": 2007,
+          "slug": "Origin story of Marvel's master mystic",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Next Avengers: Heroes of Tomorrow",
+          "year": 2008,
+          "slug": "Future-set story following the children of the Avengers",
+          "poster": "https://image.tmdb.org/t/p/w500/1y4J9HZJoTIMdt77wCq80uXaQJ.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": 14613,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1y4J9HZJoTIMdt77wCq80uXaQJ.jpg"
+        },
+        {
+          "title": "Marvel Anime: Wolverine",
+          "year": 2011,
+          "slug": "Anime series focusing on Logan's adventures in Japan",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Crunchyroll",
+          "tmdb_id": null
+        },
+        {
+          "title": "Avengers Confidential: Black Widow & Punisher",
+          "year": 2014,
+          "slug": "Mature-themed Marvel animation featuring unlikely partners",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime",
+          "tmdb_id": null
+        },
+        {
+          "title": "Hulk Vs Thor",
+          "year": 2009,
+          "slug": "Companion piece featuring Hulk battling the God of Thunder",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Iron Man & Captain America: Heroes United",
+          "year": 2014,
+          "slug": "Team-up animation with classic Marvel heroes",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        },
+        {
+          "title": "Marvel Anime: X-Men",
+          "year": 2011,
+          "slug": "Anime adaptation of the X-Men in Japan",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Crunchyroll",
+          "tmdb_id": null
+        },
+        {
+          "title": "Ultimate Avengers 2",
+          "year": 2006,
+          "slug": "Sequel focusing on Black Panther and alien invasion",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Disney+",
+          "tmdb_id": null
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}

@@ -1,0 +1,153 @@
+{
+  "props": {
+    "title": "Citizen Koch",
+    "year": 2013,
+    "initialSlug": null,
+    "initialPoster": "https://image.tmdb.org/t/p/w500/1oi6x904svyUkBE1TXpBf42xbpu.jpg",
+    "initialStreaming": null,
+    "tmdbId": 159000,
+    "error": null,
+    "hasAnalysis": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "**Citizen Koch** (2013) delivers a searing examination of money in American politics through the lens of Wisconsin's 2011-2012 protests against Governor Scott Walker. Following the landmark **Citizens United** (2010) documentary that exposed corporate influence in elections, this film specifically tracks how the Koch brothers' Americans for Prosperity organization shaped state-level politics. It shares investigative DNA with other political funding exposés like **Casino Jack and the United States of Money** (2010) and **Dark Money** (2018), but focuses intensely on Wisconsin as a microcosm of national trends."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Inside Job",
+            "year": 2010,
+            "slug": "Charles Ferguson's Oscar-winning documentary dissects the 2008 financial crisis and Wall Street's influence on politics",
+            "poster": "https://image.tmdb.org/t/p/w500/7yXXIWec24htucjsZS1sDuPLqw8.jpg",
+            "initialStreaming": "Prime Video",
+            "tmdb_id": 44639,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7yXXIWec24htucjsZS1sDuPLqw8.jpg"
+          },
+          {
+            "title": "Inequality For All",
+            "year": 2013,
+            "slug": "Robert Reich explains the widening income gap and its effects on American democracy",
+            "poster": "/images/placeholder-poster.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 159008
+          },
+          {
+            "title": "The Big Short",
+            "year": 2015,
+            "slug": "Star-studded explanation of the 2008 financial collapse and institutional corruption",
+            "poster": "https://image.tmdb.org/t/p/w500/scVEaJEwP8zUix8vgmMoJJ9Nq0w.jpg",
+            "initialStreaming": "Netflix",
+            "tmdb_id": 318846,
+            "poster_url": "https://image.tmdb.org/t/p/w500/scVEaJEwP8zUix8vgmMoJJ9Nq0w.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The documentary landscape examining money in politics expanded significantly after the 2010 Citizens United Supreme Court decision. **Pay 2 Play** (2014) provides a broader overview of campaign finance, while **Dark Money** (2018) investigates corporate spending in Montana elections. These films share thematic DNA with earlier works like **The Corporation** (2003) which examined the increasing power of business entities in democratic systems. SUBHEAD: Corporate Influence in Modern Democracy"
+      },
+      {
+        "type": "text",
+        "content": "Beyond just campaign finance, documentaries like **Merchants of Doubt** (2014) and **The Great Hack** (2019) reveal how corporate interests shape public opinion through sophisticated propaganda and data manipulation. **Citizen Koch** connects to these works by exposing the mechanics of influence - from think tanks to targeted advertising to protest suppression. The film particularly resonates with **What Is Democracy?** (2018) and **Democracy in Crisis** (2019) in questioning whether true representative government can survive unlimited corporate spending."
+      }
+    ],
+    "exploreFurther": [
+      "The history and impact of the Citizens United Supreme Court decision through film",
+      "How documentary filmmakers investigate and expose dark money in politics",
+      "The Koch brothers' influence on American politics as depicted in documentaries",
+      "The role of grassroots activism in combating corporate political influence",
+      "Evolution of political documentary filmmaking techniques since 2000"
+    ],
+    "moreIdeas": {
+      "title": "Related Films",
+      "movies": [
+        {
+          "title": "The Corporation",
+          "year": 2003,
+          "slug": "Documentary examining the modern corporation's dominance of society",
+          "poster": "https://image.tmdb.org/t/p/w500/aN7LHIKHkq6x16a4pXlaiB7PHiP.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 11420,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aN7LHIKHkq6x16a4pXlaiB7PHiP.jpg"
+        },
+        {
+          "title": "We're Not Broke",
+          "year": 2012,
+          "slug": "Investigation of corporate tax avoidance and political influence",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 84350
+        },
+        {
+          "title": "$ellebrity",
+          "year": 2012,
+          "slug": "Examination of money's influence on media and public discourse",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Pluto TV",
+          "tmdb_id": 95383
+        },
+        {
+          "title": "Shadows of Liberty",
+          "year": 2012,
+          "slug": "Investigation of corporate control of American media",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 104880
+        },
+        {
+          "title": "The Best Democracy Money Can Buy",
+          "year": 2016,
+          "slug": "Greg Palast's investigation of election manipulation",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Tubi",
+          "tmdb_id": 417414
+        },
+        {
+          "title": "All The Queen's Horses",
+          "year": 2017,
+          "slug": "Documentary about largest municipal fraud in American history",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Prime Video",
+          "tmdb_id": 498528
+        },
+        {
+          "title": "Active Measures",
+          "year": 2018,
+          "slug": "Investigation of money laundering and political corruption",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Hulu",
+          "tmdb_id": 521862
+        },
+        {
+          "title": "The Great Hack",
+          "year": 2019,
+          "slug": "Examination of data manipulation in modern politics",
+          "poster": "https://image.tmdb.org/t/p/w500/uIrGgUzasEUA7v8uChRhUUFzLwE.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 566222,
+          "poster_url": "https://image.tmdb.org/t/p/w500/uIrGgUzasEUA7v8uChRhUUFzLwE.jpg"
+        },
+        {
+          "title": "Capital in the Twenty-First Century",
+          "year": 2019,
+          "slug": "Analysis of wealth concentration and democracy",
+          "poster": "/images/placeholder-poster.jpg",
+          "initialStreaming": "Kanopy",
+          "tmdb_id": 603106
+        },
+        {
+          "title": "The Social Dilemma",
+          "year": 2020,
+          "slug": "Tech industry's influence on democracy and society",
+          "poster": "https://image.tmdb.org/t/p/w500/jdmagxKK7g2rPkdltC7Kga2MBbp.jpg",
+          "initialStreaming": "Netflix",
+          "tmdb_id": 656690,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jdmagxKK7g2rPkdltC7Kga2MBbp.jpg"
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}
