@@ -245,4 +245,4 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   });
 }
 
-module.exports = ComponentIntegrityChecker;
+export default ComponentIntegrityChecker;
