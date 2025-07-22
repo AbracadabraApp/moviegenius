@@ -111,11 +111,13 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
-        "content": "Both Weber and Pickford used their positions to address contemporary social issues. Weber's \"Shoes\" (1916) examined working women's struggles through sophisticated visual metaphors and realistic portrayal of poverty. Her films consistently tackled controversial subjects including birth control, capital punishment, and drug addiction. Meanwhile, Pickford's productions often subverted traditional gender roles, with her characters displaying agency and independence unusual for the era. Her 1917 production \"Poor Little Rich Girl\" challenged class assumptions while incorporating progressive messages about female empowerment."
+        "content": "Both Weber and Pickford used their positions to address contemporary social issues. Weber's <a href=\"/movie/141923\" class=\"movie-title\" data-tmdb-id=\"141923\">Shoes</a> (1916) examined working women's struggles through sophisticated visual metaphors and realistic portrayal of poverty. Her films consistently tackled controversial subjects including birth control, capital punishment, and drug addiction. Meanwhile, Pickford's productions often subverted traditional gender roles, with her characters displaying agency and independence unusual for the era. Her 1917 production \"Poor Little Rich Girl\" challenged class assumptions while incorporating progressive messages about female empowerment."
       },
       {
         "type": "movies",
@@ -196,5 +198,11 @@
   "locked": true,
   "lockedAt": "2025-06-17T22:57:29.696Z",
   "lockedBy": "claude-generation-enhanced",
-  "heroImage": "/images/hero/theme-2-directors/series-1-women-directors//1-silent-era-pioneers-weber-pickford.jpg"
+  "heroImage": "/images/hero/theme-2-directors/series-1-women-directors//1-silent-era-pioneers-weber-pickford.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:15.801Z",
+    "hasLinks": true,
+    "linksAdded": 1,
+    "tier": "tier2_link_only"
+  }
 }

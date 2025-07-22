@@ -24,7 +24,7 @@
     "sections": [
       {
         "type": "text",
-        "content": "The foundations of the MCU were laid with \"Iron Man\" (2008), a gamble that transformed Marvel Studios' approach to filmmaking. Director Jon Favreau and cinematographer Matthew Libatique created a visual style that grounded superhero action in reality, while Robert Downey Jr.'s performance established the MCU's signature blend of drama and wit. The film's success, particularly its post-credits scene teasing a larger universe, established a formula that would define modern blockbuster filmmaking. This marked a dramatic shift from previous superhero films, which typically existed as standalone properties, to an interconnected narrative universe that rewarded audience investment across multiple films."
+        "content": "The foundations of the MCU were laid with <a href=\"/movie/1726\" class=\"movie-title\" data-tmdb-id=\"1726\">Iron Man</a> (2008), a gamble that transformed Marvel Studios' approach to filmmaking. Director Jon Favreau and cinematographer Matthew Libatique created a visual style that grounded superhero action in reality, while Robert Downey Jr.'s performance established the MCU's signature blend of drama and wit. The film's success, particularly its post-credits scene teasing a larger universe, established a formula that would define modern blockbuster filmmaking. This marked a dramatic shift from previous superhero films, which typically existed as standalone properties, to an interconnected narrative universe that rewarded audience investment across multiple films."
       },
       {
         "type": "movies",
@@ -53,7 +53,7 @@
       },
       {
         "type": "text",
-        "content": "The early phase of the MCU (2008-2012) demonstrated unprecedented ambition in cinematic world-building. Each film served dual purposes: telling individual character stories while laying groundwork for future interconnections. \"Thor\" (2011) successfully introduced cosmic elements to the previously grounded universe, with director Kenneth Branagh bringing Shakespearean gravitas to superhero mythology. \"Captain America: The First Avenger\" (2011) established historical depth through period setting and visual aesthetics that would influence later entries. This culminated in \"The Avengers\" (2012), where director Joss Whedon's achievement in balancing multiple hero arcs created a template for ensemble superhero storytelling."
+        "content": "The early phase of the MCU (2008-2012) demonstrated unprecedented ambition in cinematic world-building. Each film served dual purposes: telling individual character stories while laying groundwork for future interconnections. <a href=\"/movie/10195\" class=\"movie-title\" data-tmdb-id=\"10195\">Thor</a> (2011) successfully introduced cosmic elements to the previously grounded universe, with director Kenneth Branagh bringing Shakespearean gravitas to superhero mythology. <a href=\"/movie/1771\" class=\"movie-title\" data-tmdb-id=\"1771\">Captain America: The First Avenger</a> (2011) established historical depth through period setting and visual aesthetics that would influence later entries. This culminated in <a href=\"/movie/24428\" class=\"movie-title\" data-tmdb-id=\"24428\">The Avengers</a> (2012), where director Joss Whedon's achievement in balancing multiple hero arcs created a template for ensemble superhero storytelling."
       },
       {
         "type": "movies",
@@ -78,7 +78,7 @@
       },
       {
         "type": "text",
-        "content": "The technical evolution of MCU filmmaking has been remarkable, particularly in visual effects integration. \"Doctor Strange\" (2016) pushed boundaries with kaleidoscopic visual effects that redefined how magic could be portrayed on screen. Cinematographer Ben Davis and director Scott Derrickson created mind-bending sequences that influenced action choreography across the genre. The advancement of de-aging technology, as seen in \"Captain Marvel\" (2019), demonstrated how technical innovations could serve narrative purposes, allowing for seamless flashbacks and period settings while maintaining actor continuity."
+        "content": "The technical evolution of MCU filmmaking has been remarkable, particularly in visual effects integration. <a href=\"/movie/284052\" class=\"movie-title\" data-tmdb-id=\"284052\">Doctor Strange</a> (2016) pushed boundaries with kaleidoscopic visual effects that redefined how magic could be portrayed on screen. Cinematographer Ben Davis and director Scott Derrickson created mind-bending sequences that influenced action choreography across the genre. The advancement of de-aging technology, as seen in <a href=\"/movie/299537\" class=\"movie-title\" data-tmdb-id=\"299537\">Captain Marvel</a> (2019), demonstrated how technical innovations could serve narrative purposes, allowing for seamless flashbacks and period settings while maintaining actor continuity."
       },
       {
         "type": "movies",
@@ -103,11 +103,13 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
-        "content": "The MCU's approach to character development across multiple films created unprecedented narrative depth. The evolution of Tony Stark across the Iron Man trilogy and Avengers films demonstrated how character arcs could span dozens of hours of storytelling. \"Captain America: The Winter Soldier\" (2014) proved that genre-blending could work within the superhero framework, successfully incorporating political thriller elements. The Russo brothers' direction established a more grounded, contemporary style that would influence later MCU entries."
+        "content": "The MCU's approach to character development across multiple films created unprecedented narrative depth. The evolution of Tony Stark across the Iron Man trilogy and Avengers films demonstrated how character arcs could span dozens of hours of storytelling. <a href=\"/movie/100402\" class=\"movie-title\" data-tmdb-id=\"100402\">Captain America: The Winter Soldier</a> (2014) proved that genre-blending could work within the superhero framework, successfully incorporating political thriller elements. The Russo brothers' direction established a more grounded, contemporary style that would influence later MCU entries."
       },
       {
         "type": "movies",
@@ -132,7 +134,7 @@
       },
       {
         "type": "text",
-        "content": "The cultural impact of the MCU extended beyond box office success. \"Black Panther\" (2018) demonstrated that superhero films could address serious social issues while maintaining commercial appeal. Director Ryan Coogler and cinematographer Rachel Morrison created a distinct visual identity that celebrated African culture while advancing superhero film aesthetics. The film's success challenged industry assumptions about international appeal and representation, leading to broader diversity in subsequent superhero films."
+        "content": "The cultural impact of the MCU extended beyond box office success. <a href=\"/movie/284054\" class=\"movie-title\" data-tmdb-id=\"284054\">Black Panther</a> (2018) demonstrated that superhero films could address serious social issues while maintaining commercial appeal. Director Ryan Coogler and cinematographer Rachel Morrison created a distinct visual identity that celebrated African culture while advancing superhero film aesthetics. The film's success challenged industry assumptions about international appeal and representation, leading to broader diversity in subsequent superhero films."
       },
       {
         "type": "movies",
@@ -182,7 +184,9 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
@@ -246,5 +250,11 @@
   "locked": true,
   "lockedAt": "2025-06-18T17:33:04.351Z",
   "lockedBy": "claude-generation-enhanced",
-  "heroImage": "/images/hero/theme-5-topics/series-2-historical-periods//6-marvel-the-cinematic-universe.jpg"
+  "heroImage": "/images/hero/theme-5-topics/series-2-historical-periods//6-marvel-the-cinematic-universe.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:32:07.131Z",
+    "hasLinks": true,
+    "linksAdded": 5,
+    "tier": "tier2_link_only"
+  }
 }

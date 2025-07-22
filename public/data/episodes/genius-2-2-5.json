@@ -103,7 +103,9 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
@@ -140,7 +142,9 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
@@ -183,5 +187,11 @@
   "locked": true,
   "lockedAt": "2025-06-17T23:02:20.965Z",
   "lockedBy": "claude-generation-enhanced",
-  "heroImage": "/images/hero/theme-2-directors/series-2-international-masters//5-wong-kar-wai-s-romantic-melancholy.jpg"
+  "heroImage": "/images/hero/theme-2-directors/series-2-international-masters//5-wong-kar-wai-s-romantic-melancholy.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:27.376Z",
+    "hasLinks": false,
+    "linksAdded": 0,
+    "tier": "tier2_link_only"
+  }
 }

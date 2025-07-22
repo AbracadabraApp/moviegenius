@@ -53,7 +53,7 @@
       },
       {
         "type": "text",
-        "content": "Czech New Wave cinematography developed a distinctive visual language characterized by handheld cameras, natural lighting, and documentary-like immediacy. Cinematographers like Miroslav Ondříček pioneered techniques that influenced global cinema. The movement's visual style often incorporated surrealist elements and experimental techniques, breaking traditional narrative structures. Films like Věra Chytilová's \"Daisies\" (1966) employed revolutionary editing techniques, color experimentation, and non-linear storytelling to create provocative statements about female agency and social rebellion."
+        "content": "Czech New Wave cinematography developed a distinctive visual language characterized by handheld cameras, natural lighting, and documentary-like immediacy. Cinematographers like Miroslav Ondříček pioneered techniques that influenced global cinema. The movement's visual style often incorporated surrealist elements and experimental techniques, breaking traditional narrative structures. Films like Věra Chytilová's <a href=\"/movie/46919\" class=\"movie-title\" data-tmdb-id=\"46919\">Daisies</a> (1966) employed revolutionary editing techniques, color experimentation, and non-linear storytelling to create provocative statements about female agency and social rebellion."
       },
       {
         "type": "movies",
@@ -107,11 +107,13 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
-        "content": "The movement's impact extended beyond pure politics into explorations of Czech identity and cultural memory. Films like Karel Kachyňa's \"The Ear\" (1970) examined surveillance culture and paranoia, while Ivan Passer's \"Intimate Lighting\" (1965) focused on subtle human interactions against the backdrop of societal control. These works demonstrated how personal stories could carry powerful political resonance without explicit messaging."
+        "content": "The movement's impact extended beyond pure politics into explorations of Czech identity and cultural memory. Films like Karel Kachyňa's <a href=\"/movie/88953\" class=\"movie-title\" data-tmdb-id=\"88953\">The Ear</a> (1970) examined surveillance culture and paranoia, while Ivan Passer's <a href=\"/movie/77381\" class=\"movie-title\" data-tmdb-id=\"77381\">Intimate Lighting</a> (1965) focused on subtle human interactions against the backdrop of societal control. These works demonstrated how personal stories could carry powerful political resonance without explicit messaging."
       },
       {
         "type": "movies",
@@ -188,5 +190,11 @@
   "locked": true,
   "lockedAt": "2025-06-18T17:03:51.481Z",
   "lockedBy": "claude-generation-enhanced",
-  "heroImage": "/images/hero/theme-3-movements/series-1-new-waves//5-czech-new-wave-behind-iron-curtain.jpg"
+  "heroImage": "/images/hero/theme-3-movements/series-1-new-waves//5-czech-new-wave-behind-iron-curtain.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:39.519Z",
+    "hasLinks": true,
+    "linksAdded": 2,
+    "tier": "tier2_link_only"
+  }
 }

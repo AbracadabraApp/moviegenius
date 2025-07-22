@@ -78,7 +78,7 @@
       },
       {
         "type": "text",
-        "content": "Oshima's \"In the Realm of the Senses\" (1976) marked a culmination of the movement's transgressive tendencies, pushing boundaries with its explicit sexuality and political metaphors. The film's examination of obsessive love and death challenged both Japanese censorship and traditional narrative conventions. Shot in careful compositions that contrasted with its shocking content, it demonstrated how the New Wave directors could combine classical technique with revolutionary content. The film's international success helped establish Japanese New Wave cinema's global influence."
+        "content": "Oshima's <a href=\"/movie/5879\" class=\"movie-title\" data-tmdb-id=\"5879\">In the Realm of the Senses</a> (1976) marked a culmination of the movement's transgressive tendencies, pushing boundaries with its explicit sexuality and political metaphors. The film's examination of obsessive love and death challenged both Japanese censorship and traditional narrative conventions. Shot in careful compositions that contrasted with its shocking content, it demonstrated how the New Wave directors could combine classical technique with revolutionary content. The film's international success helped establish Japanese New Wave cinema's global influence."
       },
       {
         "type": "movies",
@@ -103,11 +103,13 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
-        "content": "Imamura's anthropological interests led him to explore Japan's rural traditions and marginalized communities. \"The Ballad of Narayama\" (1983) represented a mature evolution of New Wave principles, combining documentary-like observation with powerful symbolism. His focus on strong female characters and social outcasts challenged Japanese cinema's traditional gender roles and class representations. The film's success, winning the Palme d'Or at Cannes, demonstrated how New Wave directors could maintain their radical perspective while achieving international recognition."
+        "content": "Imamura's anthropological interests led him to explore Japan's rural traditions and marginalized communities. <a href=\"/movie/42113\" class=\"movie-title\" data-tmdb-id=\"42113\">The Ballad of Narayama</a> (1983) represented a mature evolution of New Wave principles, combining documentary-like observation with powerful symbolism. His focus on strong female characters and social outcasts challenged Japanese cinema's traditional gender roles and class representations. The film's success, winning the Palme d'Or at Cannes, demonstrated how New Wave directors could maintain their radical perspective while achieving international recognition."
       },
       {
         "type": "movies",
@@ -132,7 +134,7 @@
       },
       {
         "type": "text",
-        "content": "Technical innovation was central to the movement's impact. Oshima's \"Boy\" (1969) used color symbolism and wide-screen composition to create a critique of contemporary Japan, while Imamura's \"Pigs and Battleships\" (1961) employed dynamic camera movement and experimental editing to capture the chaos of post-war Yokosuka. These technical choices weren't merely stylistic - they represented a fundamental break with the measured, traditional aesthetic of Japanese cinema."
+        "content": "Technical innovation was central to the movement's impact. Oshima's <a href=\"/movie/941152\" class=\"movie-title\" data-tmdb-id=\"941152\">Boy</a> (1969) used color symbolism and wide-screen composition to create a critique of contemporary Japan, while Imamura's <a href=\"/movie/31104\" class=\"movie-title\" data-tmdb-id=\"31104\">Pigs and Battleships</a> (1961) employed dynamic camera movement and experimental editing to capture the chaos of post-war Yokosuka. These technical choices weren't merely stylistic - they represented a fundamental break with the measured, traditional aesthetic of Japanese cinema."
       },
       {
         "type": "movies",
@@ -209,5 +211,11 @@
   "locked": true,
   "lockedAt": "2025-06-18T17:03:24.628Z",
   "lockedBy": "claude-generation-enhanced",
-  "heroImage": "/images/hero/theme-3-movements/series-1-new-waves//4-japanese-new-wave-oshima-imamura.jpg"
+  "heroImage": "/images/hero/theme-3-movements/series-1-new-waves//4-japanese-new-wave-oshima-imamura.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:38.224Z",
+    "hasLinks": true,
+    "linksAdded": 3,
+    "tier": "tier2_link_only"
+  }
 }

@@ -53,7 +53,7 @@
       },
       {
         "type": "text",
-        "content": "\"Blade Runner 2049\" (2017) represents Villeneuve's mastery of environmental storytelling and atmospheric world-building. Collaborating with legendary cinematographer Roger Deakins, Villeneuve created a visual epic that expanded upon Ridley Scott's original while establishing its own distinct identity. The film's use of scale is particularly noteworthy, with massive architectural structures and sprawling cityscapes that dwarf the characters, emphasizing themes of human insignificance in a corporate-dominated future. The orange-tinted Las Vegas sequences and the stark, snow-covered brutalist architecture of Wallace Corporation showcase how Villeneuve uses environment as a character itself."
+        "content": "<a href=\"/movie/335984\" class=\"movie-title\" data-tmdb-id=\"335984\">Blade Runner 2049</a> (2017) represents Villeneuve's mastery of environmental storytelling and atmospheric world-building. Collaborating with legendary cinematographer Roger Deakins, Villeneuve created a visual epic that expanded upon Ridley Scott's original while establishing its own distinct identity. The film's use of scale is particularly noteworthy, with massive architectural structures and sprawling cityscapes that dwarf the characters, emphasizing themes of human insignificance in a corporate-dominated future. The orange-tinted Las Vegas sequences and the stark, snow-covered brutalist architecture of Wallace Corporation showcase how Villeneuve uses environment as a character itself."
       },
       {
         "type": "movies",
@@ -82,7 +82,7 @@
       },
       {
         "type": "text",
-        "content": "Villeneuve's collaboration with sound designer Theo Green and composer Hans Zimmer has created some of modern cinema's most immersive audiovisual experiences. In \"Dune\" (2021), the sound design becomes an integral part of the worldbuilding, from the distinctive throaty rumble of ornithopters to the bone-rattling bass of the thumpers used to summon sandworms. The integration of sound and visual effects creates a tangible sense of scale that makes the fantastic elements feel grounded and real. This attention to sonic detail has become a hallmark of Villeneuve's science fiction work, using sound not merely as accompaniment but as a crucial storytelling element."
+        "content": "Villeneuve's collaboration with sound designer Theo Green and composer Hans Zimmer has created some of modern cinema's most immersive audiovisual experiences. In <a href=\"/movie/438631\" class=\"movie-title\" data-tmdb-id=\"438631\">Dune</a> (2021), the sound design becomes an integral part of the worldbuilding, from the distinctive throaty rumble of ornithopters to the bone-rattling bass of the thumpers used to summon sandworms. The integration of sound and visual effects creates a tangible sense of scale that makes the fantastic elements feel grounded and real. This attention to sonic detail has become a hallmark of Villeneuve's science fiction work, using sound not merely as accompaniment but as a crucial storytelling element."
       },
       {
         "type": "movies",
@@ -103,7 +103,9 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
@@ -172,5 +174,11 @@
   "locked": true,
   "lockedAt": "2025-06-18T17:00:57.343Z",
   "lockedBy": "claude-generation-enhanced",
-  "heroImage": "/images/hero/theme-2-directors/series-4-contemporary-auteurs//3-denis-villeneuve-sci-fi-atmosphere-scale.jpg"
+  "heroImage": "/images/hero/theme-2-directors/series-4-contemporary-auteurs//3-denis-villeneuve-sci-fi-atmosphere-scale.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:33.401Z",
+    "hasLinks": true,
+    "linksAdded": 2,
+    "tier": "tier2_link_only"
+  }
 }

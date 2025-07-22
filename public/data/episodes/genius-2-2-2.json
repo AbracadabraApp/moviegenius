@@ -53,7 +53,7 @@
       },
       {
         "type": "text",
-        "content": "By the 1960s, Bergman had refined his approach to create intensely focused psychological chamber dramas. \"Persona\" (1966) represents the apex of this period, with its revolutionary exploration of identity merger between a nurse and her mute patient. The film's famous prologue - a montage of stark, shocking images - broke conventional narrative rules while establishing cinema's potential for psychological exploration. Bergman's partnership with cinematographer Sven Nykvist reached new heights here, developing a visual language of extreme close-ups and stark lighting that would influence generations of filmmakers exploring psychological themes."
+        "content": "By the 1960s, Bergman had refined his approach to create intensely focused psychological chamber dramas. <a href=\"/movie/797\" class=\"movie-title\" data-tmdb-id=\"797\">Persona</a> (1966) represents the apex of this period, with its revolutionary exploration of identity merger between a nurse and her mute patient. The film's famous prologue - a montage of stark, shocking images - broke conventional narrative rules while establishing cinema's potential for psychological exploration. Bergman's partnership with cinematographer Sven Nykvist reached new heights here, developing a visual language of extreme close-ups and stark lighting that would influence generations of filmmakers exploring psychological themes."
       },
       {
         "type": "movies",
@@ -82,7 +82,7 @@
       },
       {
         "type": "text",
-        "content": "The 1970s saw Bergman turn his analytical eye toward family dynamics and marital relationships. \"Scenes from a Marriage\" (1973), originally made for Swedish television, demonstrated his mastery of intimate psychological observation through its brutal dissection of a failing marriage. The film's influence can be seen in contemporary works like Noah Baumbach's \"Marriage Story.\" During this period, Bergman also continued his exploration of religious themes, with \"Cries and Whispers\" (1972) offering a devastating meditation on faith, death, and familial bonds. The film's revolutionary use of color, particularly its deep reds, created a visual language for expressing psychological and spiritual anguish."
+        "content": "The 1970s saw Bergman turn his analytical eye toward family dynamics and marital relationships. \"Scenes from a Marriage\" (1973), originally made for Swedish television, demonstrated his mastery of intimate psychological observation through its brutal dissection of a failing marriage. The film's influence can be seen in contemporary works like Noah Baumbach's \"Marriage Story.\" During this period, Bergman also continued his exploration of religious themes, with <a href=\"/movie/10238\" class=\"movie-title\" data-tmdb-id=\"10238\">Cries and Whispers</a> (1972) offering a devastating meditation on faith, death, and familial bonds. The film's revolutionary use of color, particularly its deep reds, created a visual language for expressing psychological and spiritual anguish."
       },
       {
         "type": "movies",
@@ -111,11 +111,13 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
-        "content": "Bergman's technical innovations were inseparable from his psychological explorations. His work with Sven Nykvist revolutionized the use of natural light and close-up photography. In \"Winter Light\" (1963), they created a visual language for spiritual crisis through stark, high-contrast imagery and extended takes that forced viewers to confront characters' psychological states. The film's famous four-minute unbroken shot of Ingrid Thulin's character reading a letter directly to camera demonstrated how technical choices could serve psychological revelation. This approach influenced countless filmmakers, from Andrei Tarkovsky to Paul Thomas Anderson."
+        "content": "Bergman's technical innovations were inseparable from his psychological explorations. His work with Sven Nykvist revolutionized the use of natural light and close-up photography. In <a href=\"/movie/29455\" class=\"movie-title\" data-tmdb-id=\"29455\">Winter Light</a> (1963), they created a visual language for spiritual crisis through stark, high-contrast imagery and extended takes that forced viewers to confront characters' psychological states. The film's famous four-minute unbroken shot of Ingrid Thulin's character reading a letter directly to camera demonstrated how technical choices could serve psychological revelation. This approach influenced countless filmmakers, from Andrei Tarkovsky to Paul Thomas Anderson."
       },
       {
         "type": "movies",
@@ -144,7 +146,7 @@
       },
       {
         "type": "text",
-        "content": "Bergman's later works demonstrated a masterful synthesis of his psychological and technical innovations. \"Fanny and Alexander\" (1982), while seemingly more accessible than his earlier works, maintained his penetrating psychological insight while adding a new layer of magical realism. The film's exploration of childhood perspective and family dynamics showed how his style could embrace both darkness and light. His final film, \"Saraband\" (2003), returned to the characters from \"Scenes from a Marriage,\" proving his continued ability to mine psychological depths even in his eighties."
+        "content": "Bergman's later works demonstrated a masterful synthesis of his psychological and technical innovations. <a href=\"/movie/5961\" class=\"movie-title\" data-tmdb-id=\"5961\">Fanny and Alexander</a> (1982), while seemingly more accessible than his earlier works, maintained his penetrating psychological insight while adding a new layer of magical realism. The film's exploration of childhood perspective and family dynamics showed how his style could embrace both darkness and light. His final film, <a href=\"/movie/55650\" class=\"movie-title\" data-tmdb-id=\"55650\">Saraband</a> (2003), returned to the characters from \"Scenes from a Marriage,\" proving his continued ability to mine psychological depths even in his eighties."
       },
       {
         "type": "movies",
@@ -204,5 +206,11 @@
   "locked": true,
   "lockedAt": "2025-06-17T23:00:50.478Z",
   "lockedBy": "claude-generation-enhanced",
-  "heroImage": "/images/hero/theme-2-directors/series-2-international-masters//2-bergman-s-psychological-landscapes.jpg"
+  "heroImage": "/images/hero/theme-2-directors/series-2-international-masters//2-bergman-s-psychological-landscapes.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:25.032Z",
+    "hasLinks": true,
+    "linksAdded": 4,
+    "tier": "tier2_link_only"
+  }
 }

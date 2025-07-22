@@ -24,7 +24,7 @@
     "sections": [
       {
         "type": "text",
-        "content": "Peele's directorial debut \"Get Out\" (2017) marked a seismic shift in horror cinema, demonstrating how genre films could directly confront racial tensions while maintaining commercial appeal. The film's \"sunken place\" became an immediate cultural touchstone, representing the paralysis of Black voices in white-dominated spaces. Peele's technical precision is evident in his use of symmetric framing and purposeful color theory, particularly in scenes where Chris (Daniel Kaluuya) encounters the Armitage family. The film's genius lies in how it transforms microaggressions and liberal racism into literal horror elements, making white audiences uncomfortable while validating Black viewers' experiences."
+        "content": "Peele's directorial debut <a href=\"/movie/419430\" class=\"movie-title\" data-tmdb-id=\"419430\">Get Out</a> (2017) marked a seismic shift in horror cinema, demonstrating how genre films could directly confront racial tensions while maintaining commercial appeal. The film's \"sunken place\" became an immediate cultural touchstone, representing the paralysis of Black voices in white-dominated spaces. Peele's technical precision is evident in his use of symmetric framing and purposeful color theory, particularly in scenes where Chris (Daniel Kaluuya) encounters the Armitage family. The film's genius lies in how it transforms microaggressions and liberal racism into literal horror elements, making white audiences uncomfortable while validating Black viewers' experiences."
       },
       {
         "type": "movies",
@@ -53,7 +53,7 @@
       },
       {
         "type": "text",
-        "content": "\"Us\" (2019) expanded Peele's thematic scope beyond explicit racial commentary to explore broader questions of American identity and class warfare. The film's complex doppelganger metaphor speaks to the suppressed underclass that supports privileged society. Cinematographer Mike Gioulakis employs underground spaces and mirrors to create a distinct visual language for the film's parallel worlds. Lupita Nyong'o's dual performance as Adelaide/Red anchors the film's exploration of privilege and suppression, while Peele's direction maintains tension through careful pacing and symbolic imagery."
+        "content": "<a href=\"/movie/458723\" class=\"movie-title\" data-tmdb-id=\"458723\">Us</a> (2019) expanded Peele's thematic scope beyond explicit racial commentary to explore broader questions of American identity and class warfare. The film's complex doppelganger metaphor speaks to the suppressed underclass that supports privileged society. Cinematographer Mike Gioulakis employs underground spaces and mirrors to create a distinct visual language for the film's parallel worlds. Lupita Nyong'o's dual performance as Adelaide/Red anchors the film's exploration of privilege and suppression, while Peele's direction maintains tension through careful pacing and symbolic imagery."
       },
       {
         "type": "movies",
@@ -70,7 +70,7 @@
       },
       {
         "type": "text",
-        "content": "With \"Nope\" (2022), Peele merged horror with science fiction while examining Hollywood's exploitation of spectacle and the entertainment industry's historical treatment of marginalized groups. The film's meta-commentary on viewing and being viewed is reinforced through cinematographer Hoyte van Hoytema's IMAX photography, creating vast, threatening skies that loom over the characters. The story of Haywood's ancestor, the unnamed Black jockey in Eadweard Muybridge's first moving pictures, serves as a powerful metaphor for Hollywood's erasure of Black contributions to cinema."
+        "content": "With <a href=\"/movie/762504\" class=\"movie-title\" data-tmdb-id=\"762504\">Nope</a> (2022), Peele merged horror with science fiction while examining Hollywood's exploitation of spectacle and the entertainment industry's historical treatment of marginalized groups. The film's meta-commentary on viewing and being viewed is reinforced through cinematographer Hoyte van Hoytema's IMAX photography, creating vast, threatening skies that loom over the characters. The story of Haywood's ancestor, the unnamed Black jockey in Eadweard Muybridge's first moving pictures, serves as a powerful metaphor for Hollywood's erasure of Black contributions to cinema."
       },
       {
         "type": "movies",
@@ -87,7 +87,9 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
@@ -108,7 +110,7 @@
       },
       {
         "type": "text",
-        "content": "The influence of Peele's approach extends beyond his own films, inspiring a new generation of filmmakers to tackle social issues through genre conventions. His success has opened doors for other Black directors in horror, such as Nia DaCosta's \"Candyman\" (2021), which Peele co-wrote and produced. His production company, Monkeypaw Productions, continues to support projects that blend social commentary with genre elements, demonstrating the commercial viability of politically engaged horror."
+        "content": "The influence of Peele's approach extends beyond his own films, inspiring a new generation of filmmakers to tackle social issues through genre conventions. His success has opened doors for other Black directors in horror, such as Nia DaCosta's <a href=\"/movie/565028\" class=\"movie-title\" data-tmdb-id=\"565028\">Candyman</a> (2021), which Peele co-wrote and produced. His production company, Monkeypaw Productions, continues to support projects that blend social commentary with genre elements, demonstrating the commercial viability of politically engaged horror."
       },
       {
         "type": "movies",
@@ -177,5 +179,11 @@
   "locked": true,
   "lockedAt": "2025-06-18T17:01:24.903Z",
   "lockedBy": "claude-generation-enhanced",
-  "heroImage": "/images/hero/theme-2-directors/series-4-contemporary-auteurs//4-jordan-peele-horror-through-social-commentary.jpg"
+  "heroImage": "/images/hero/theme-2-directors/series-4-contemporary-auteurs//4-jordan-peele-horror-through-social-commentary.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:34.079Z",
+    "hasLinks": true,
+    "linksAdded": 4,
+    "tier": "tier2_link_only"
+  }
 }

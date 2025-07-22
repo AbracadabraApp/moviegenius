@@ -24,7 +24,7 @@
     "sections": [
       {
         "type": "text",
-        "content": "Georges Méliès, a former magician, discovered cinema's potential for illusion when his camera jammed while filming street scenes in 1896. This happy accident led him to develop stop-motion substitution effects, multiple exposures, and dissolves - fundamental special effects techniques still used today. His Star Film Company produced over 500 films, developing the first film studio with painted backdrops, costume departments, and elaborate sets. Méliès's masterpiece \"A Trip to the Moon\" (1902) showcased these innovations through a fantastical story combining Jules Verne-inspired science fiction with theatrical magic, establishing fantasy cinema and proving that film could do more than simply document reality."
+        "content": "Georges Méliès, a former magician, discovered cinema's potential for illusion when his camera jammed while filming street scenes in 1896. This happy accident led him to develop stop-motion substitution effects, multiple exposures, and dissolves - fundamental special effects techniques still used today. His Star Film Company produced over 500 films, developing the first film studio with painted backdrops, costume departments, and elaborate sets. Méliès's masterpiece <a href=\"/movie/775\" class=\"movie-title\" data-tmdb-id=\"775\">A Trip to the Moon</a> (1902) showcased these innovations through a fantastical story combining Jules Verne-inspired science fiction with theatrical magic, establishing fantasy cinema and proving that film could do more than simply document reality."
       },
       {
         "type": "movies",
@@ -53,7 +53,7 @@
       },
       {
         "type": "text",
-        "content": "While Méliès pioneered special effects, D.W. Griffith revolutionized film grammar and storytelling techniques. During his time at Biograph Studios (1908-1913), Griffith developed crucial narrative devices including the close-up, parallel editing, and the cross-cut. His 1909 film \"The Lonely Villa\" demonstrated sophisticated parallel editing by cutting between a woman trapped by burglars and her husband rushing to save her, creating suspense through editing rather than continuous action. These techniques culminated in \"The Birth of a Nation\" (1915), which, despite its deeply problematic racist content, established many foundational principles of classical Hollywood cinema."
+        "content": "While Méliès pioneered special effects, D.W. Griffith revolutionized film grammar and storytelling techniques. During his time at Biograph Studios (1908-1913), Griffith developed crucial narrative devices including the close-up, parallel editing, and the cross-cut. His 1909 film \"The Lonely Villa\" demonstrated sophisticated parallel editing by cutting between a woman trapped by burglars and her husband rushing to save her, creating suspense through editing rather than continuous action. These techniques culminated in <a href=\"/movie/618\" class=\"movie-title\" data-tmdb-id=\"618\">The Birth of a Nation</a> (1915), which, despite its deeply problematic racist content, established many foundational principles of classical Hollywood cinema."
       },
       {
         "type": "movies",
@@ -82,7 +82,7 @@
       },
       {
         "type": "text",
-        "content": "The period saw rapid technical innovation beyond special effects and editing. Edwin S. Porter's \"The Great Train Robbery\" (1903) demonstrated revolutionary camera movement and location shooting, breaking free from the static \"proscenium arch\" view common in early cinema. The film's famous final shot - a bandit firing directly at the audience - showed cinema's potential for subjective perspective and emotional impact. Meanwhile, filmmakers like Alice Guy-Blaché experimented with synchronized sound systems and color tinting techniques. Her 1896 film \"La Fée aux Choux\" (The Cabbage Fairy) was among the first narrative films ever made, demonstrating that women were present at cinema's birth as innovative creators."
+        "content": "The period saw rapid technical innovation beyond special effects and editing. Edwin S. Porter's <a href=\"/movie/5698\" class=\"movie-title\" data-tmdb-id=\"5698\">The Great Train Robbery</a> (1903) demonstrated revolutionary camera movement and location shooting, breaking free from the static \"proscenium arch\" view common in early cinema. The film's famous final shot - a bandit firing directly at the audience - showed cinema's potential for subjective perspective and emotional impact. Meanwhile, filmmakers like Alice Guy-Blaché experimented with synchronized sound systems and color tinting techniques. Her 1896 film \"La Fée aux Choux\" (The Cabbage Fairy) was among the first narrative films ever made, demonstrating that women were present at cinema's birth as innovative creators."
       },
       {
         "type": "movies",
@@ -111,11 +111,13 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
-        "content": "While American and French filmmakers dominated early cinema's development, significant innovations emerged worldwide. In Britain, Robert W. Paul and G.A. Smith experimented with double exposure and close-ups in films like \"The Big Swallow\" (1901). Italian epic \"Cabiria\" (1914) pioneered the tracking shot and elaborate crane movements, influencing Hollywood spectacle for decades. In Denmark, Urban Gad directed sophisticated psychological dramas starring Asta Nielsen, while Sweden's Victor Sjöström explored natural landscapes and lighting in ways that would influence later European art cinema."
+        "content": "While American and French filmmakers dominated early cinema's development, significant innovations emerged worldwide. In Britain, Robert W. Paul and G.A. Smith experimented with double exposure and close-ups in films like <a href=\"/movie/96035\" class=\"movie-title\" data-tmdb-id=\"96035\">The Big Swallow</a> (1901). Italian epic <a href=\"/movie/5153\" class=\"movie-title\" data-tmdb-id=\"5153\">Cabiria</a> (1914) pioneered the tracking shot and elaborate crane movements, influencing Hollywood spectacle for decades. In Denmark, Urban Gad directed sophisticated psychological dramas starring Asta Nielsen, while Sweden's Victor Sjöström explored natural landscapes and lighting in ways that would influence later European art cinema."
       },
       {
         "type": "movies",
@@ -144,7 +146,7 @@
       },
       {
         "type": "text",
-        "content": "Early cinema's acting style evolved from exaggerated theatrical gestures to more naturalistic performance. Florence Lawrence, \"The Biograph Girl,\" became cinema's first named movie star, demonstrating subtle emotional expression in films like \"The Broken Oath\" (1910). In France, Max Linder developed sophisticated comedy techniques that would influence Charlie Chaplin and other silent comedians. This period also saw the emergence of systematic approaches to screen acting, moving away from the broad pantomime of earliest films toward psychological realism."
+        "content": "Early cinema's acting style evolved from exaggerated theatrical gestures to more naturalistic performance. Florence Lawrence, \"The Biograph Girl,\" became cinema's first named movie star, demonstrating subtle emotional expression in films like <a href=\"/movie/524076\" class=\"movie-title\" data-tmdb-id=\"524076\">The Broken Oath</a> (1910). In France, Max Linder developed sophisticated comedy techniques that would influence Charlie Chaplin and other silent comedians. This period also saw the emergence of systematic approaches to screen acting, moving away from the broad pantomime of earliest films toward psychological realism."
       },
       {
         "type": "movies",
@@ -241,5 +243,11 @@
   "locked": true,
   "lockedAt": "2025-06-18T17:07:35.472Z",
   "lockedBy": "claude-generation-enhanced",
-  "heroImage": "/images/hero/theme-4-filmmaking/series-1-technical-evolution//2-birth-of-cinema-m-li-s-to-griffith.jpg"
+  "heroImage": "/images/hero/theme-4-filmmaking/series-1-technical-evolution//2-birth-of-cinema-m-li-s-to-griffith.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:47.869Z",
+    "hasLinks": true,
+    "linksAdded": 5,
+    "tier": "tier2_link_only"
+  }
 }

@@ -53,7 +53,7 @@
       },
       {
         "type": "text",
-        "content": "\"Bowling for Columbine\" (2002) marked Moore's emergence as a major cultural force, winning the Academy Award for Best Documentary Feature. The film examined America's relationship with guns and violence through a combination of interviews, animation, and Moore's trademark confrontational scenes – most notably his interview with Charlton Heston. The film showcased Moore's evolved style: using dark humor, pop culture references, and emotional manipulation to craft compelling narratives. Critics accused Moore of selective editing and oversimplification, but his techniques undeniably created powerful cinema that reached mainstream audiences."
+        "content": "<a href=\"/movie/1430\" class=\"movie-title\" data-tmdb-id=\"1430\">Bowling for Columbine</a> (2002) marked Moore's emergence as a major cultural force, winning the Academy Award for Best Documentary Feature. The film examined America's relationship with guns and violence through a combination of interviews, animation, and Moore's trademark confrontational scenes – most notably his interview with Charlton Heston. The film showcased Moore's evolved style: using dark humor, pop culture references, and emotional manipulation to craft compelling narratives. Critics accused Moore of selective editing and oversimplification, but his techniques undeniably created powerful cinema that reached mainstream audiences."
       },
       {
         "type": "movies",
@@ -82,7 +82,7 @@
       },
       {
         "type": "text",
-        "content": "\"Fahrenheit 9/11\" (2004) represented Moore's most significant cultural impact, becoming the highest-grossing documentary of all time and winning the Palme d'Or at Cannes. The film's criticism of the Bush administration and the War on Terror sparked intense debate about documentary ethics and political activism through cinema. Moore's techniques – including juxtaposition of contradictory statements, emotional manipulation through music and editing, and confrontational interviews – reached their zenith. The film's commercial success demonstrated documentary's potential for mass appeal while intensifying criticism of Moore's methods."
+        "content": "<a href=\"/movie/1777\" class=\"movie-title\" data-tmdb-id=\"1777\">Fahrenheit 9/11</a> (2004) represented Moore's most significant cultural impact, becoming the highest-grossing documentary of all time and winning the Palme d'Or at Cannes. The film's criticism of the Bush administration and the War on Terror sparked intense debate about documentary ethics and political activism through cinema. Moore's techniques – including juxtaposition of contradictory statements, emotional manipulation through music and editing, and confrontational interviews – reached their zenith. The film's commercial success demonstrated documentary's potential for mass appeal while intensifying criticism of Moore's methods."
       },
       {
         "type": "movies",
@@ -111,11 +111,13 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
-        "content": "Moore's technical approach revolutionized documentary filmmaking through several key innovations. His use of archival footage manipulation, often recontextualizing clips for satirical effect, became influential. The \"Moore shot\" – following the filmmaker as he attempts to confront corporate executives – created a new visual grammar for activist documentaries. His integration of graphics, animation, and popular music helped make complex political issues accessible to general audiences. \"Sicko\" (2007) demonstrated these techniques in examining healthcare, using personal stories and international comparisons to craft a compelling narrative."
+        "content": "Moore's technical approach revolutionized documentary filmmaking through several key innovations. His use of archival footage manipulation, often recontextualizing clips for satirical effect, became influential. The \"Moore shot\" – following the filmmaker as he attempts to confront corporate executives – created a new visual grammar for activist documentaries. His integration of graphics, animation, and popular music helped make complex political issues accessible to general audiences. <a href=\"/movie/2359\" class=\"movie-title\" data-tmdb-id=\"2359\">Sicko</a> (2007) demonstrated these techniques in examining healthcare, using personal stories and international comparisons to craft a compelling narrative."
       },
       {
         "type": "movies",
@@ -144,7 +146,7 @@
       },
       {
         "type": "text",
-        "content": "Moore's later works showed both refinement and adaptation of his style. \"Capitalism: A Love Story\" (2009) returned to economic themes while incorporating the context of the 2008 financial crisis. The film demonstrated Moore's ability to evolve, using more sophisticated graphics and explanatory sequences to tackle complex financial concepts. His techniques influenced a generation of documentary filmmakers who adopted his confrontational style and personal narrative approach, though often with more nuanced execution."
+        "content": "Moore's later works showed both refinement and adaptation of his style. <a href=\"/movie/22074\" class=\"movie-title\" data-tmdb-id=\"22074\">Capitalism: A Love Story</a> (2009) returned to economic themes while incorporating the context of the 2008 financial crisis. The film demonstrated Moore's ability to evolve, using more sophisticated graphics and explanatory sequences to tackle complex financial concepts. His techniques influenced a generation of documentary filmmakers who adopted his confrontational style and personal narrative approach, though often with more nuanced execution."
       },
       {
         "type": "movies",
@@ -177,7 +179,9 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
@@ -220,5 +224,11 @@
   "locked": true,
   "lockedAt": "2025-06-18T16:59:32.219Z",
   "lockedBy": "claude-generation-enhanced",
-  "heroImage": "/images/hero/theme-2-directors/series-3-documentary-masters//3-michael-moore-provocateur-documentarian.jpg"
+  "heroImage": "/images/hero/theme-2-directors/series-3-documentary-masters//3-michael-moore-provocateur-documentarian.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:31.981Z",
+    "hasLinks": true,
+    "linksAdded": 4,
+    "tier": "tier2_link_only"
+  }
 }

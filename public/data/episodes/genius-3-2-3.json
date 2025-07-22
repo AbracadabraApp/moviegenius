@@ -82,7 +82,7 @@
       },
       {
         "type": "text",
-        "content": "Upon emigrating to America, Lang adapted his architectural psychology to Hollywood's film noir style. In \"Secret Beyond the Door\" (1947), he transformed domestic architecture into a psychological battleground, with each room representing a murder scene and the house itself becoming a manifestation of mental instability. The film's use of interior spaces draws direct connections between architecture and psychoanalysis, reflecting post-war America's fascination with Freudian theory. Lang's camera movement through these spaces creates a sense of claustrophobic tension, with doorways and corridors serving as transitions between conscious and unconscious realms."
+        "content": "Upon emigrating to America, Lang adapted his architectural psychology to Hollywood's film noir style. In <a href=\"/movie/560\" class=\"movie-title\" data-tmdb-id=\"560\">Secret Beyond the Door</a> (1947), he transformed domestic architecture into a psychological battleground, with each room representing a murder scene and the house itself becoming a manifestation of mental instability. The film's use of interior spaces draws direct connections between architecture and psychoanalysis, reflecting post-war America's fascination with Freudian theory. Lang's camera movement through these spaces creates a sense of claustrophobic tension, with doorways and corridors serving as transitions between conscious and unconscious realms."
       },
       {
         "type": "movies",
@@ -111,11 +111,13 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
-        "content": "Lang's technical innovations in \"The Woman in the Window\" (1944) demonstrated his ability to use architectural space for narrative revelation. The film's famous mirror sequences and window compositions create multiple layers of reality, with glass and reflective surfaces serving as portals between worlds. His collaboration with cinematographer Milton Krasner established new standards for lighting architectural spaces, particularly in their use of venetian blind shadows and geometric patterns to suggest psychological imprisonment. The film's careful composition of interior spaces creates a visual language of entrapment that would influence generations of filmmakers."
+        "content": "Lang's technical innovations in <a href=\"/movie/17136\" class=\"movie-title\" data-tmdb-id=\"17136\">The Woman in the Window</a> (1944) demonstrated his ability to use architectural space for narrative revelation. The film's famous mirror sequences and window compositions create multiple layers of reality, with glass and reflective surfaces serving as portals between worlds. His collaboration with cinematographer Milton Krasner established new standards for lighting architectural spaces, particularly in their use of venetian blind shadows and geometric patterns to suggest psychological imprisonment. The film's careful composition of interior spaces creates a visual language of entrapment that would influence generations of filmmakers."
       },
       {
         "type": "movies",
@@ -144,7 +146,7 @@
       },
       {
         "type": "text",
-        "content": "Lang's architectural psychology directly influenced filmmakers from Hitchcock to Kubrick. His technique of using buildings as external manifestations of internal states can be seen in films like \"Blade Runner\" (1982) and \"Inception\" (2010). The vertical social hierarchy of \"Metropolis\" inspired everything from \"High-Rise\" (2015) to \"Snowpiercer\" (2013). His innovative use of staircases and elevators as symbols of social mobility and psychological descent appears in contemporary works like \"Parasite\" (2019). The psychological weight he gave to urban spaces continues to influence directors like Christopher Nolan and David Fincher."
+        "content": "Lang's architectural psychology directly influenced filmmakers from Hitchcock to Kubrick. His technique of using buildings as external manifestations of internal states can be seen in films like <a href=\"/movie/78\" class=\"movie-title\" data-tmdb-id=\"78\">Blade Runner</a> (1982) and <a href=\"/movie/27205\" class=\"movie-title\" data-tmdb-id=\"27205\">Inception</a> (2010). The vertical social hierarchy of \"Metropolis\" inspired everything from \"High-Rise\" (2015) to <a href=\"/movie/110415\" class=\"movie-title\" data-tmdb-id=\"110415\">Snowpiercer</a> (2013). His innovative use of staircases and elevators as symbols of social mobility and psychological descent appears in contemporary works like <a href=\"/movie/496243\" class=\"movie-title\" data-tmdb-id=\"496243\">Parasite</a> (2019). The psychological weight he gave to urban spaces continues to influence directors like Christopher Nolan and David Fincher."
       }
     ],
     "moreIdeas": {
@@ -175,5 +177,11 @@
   "locked": true,
   "lockedAt": "2025-06-18T17:05:55.606Z",
   "lockedBy": "claude-generation-enhanced",
-  "heroImage": "/images/hero/theme-3-movements/series-2-german-cinema-heritage//3-fritz-lang-s-architectural-psychology.jpg"
+  "heroImage": "/images/hero/theme-3-movements/series-2-german-cinema-heritage//3-fritz-lang-s-architectural-psychology.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:44.277Z",
+    "hasLinks": true,
+    "linksAdded": 3,
+    "tier": "tier2_link_only"
+  }
 }

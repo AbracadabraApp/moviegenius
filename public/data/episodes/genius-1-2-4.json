@@ -24,7 +24,7 @@
     "sections": [
       {
         "type": "text",
-        "content": "The term \"elevated horror\" emerged in the mid-2010s, marking a shift toward horror films that prioritize atmospheric tension, psychological complexity, and artistic merit over traditional shock value. Robert Eggers' \"The Witch\" (2015) exemplifies this approach, using period-accurate dialogue and meticulous historical detail to craft a story about religious hysteria and feminine autonomy. The film's cinematographer, Jarin Blaschke, employed natural lighting and precise composition to create an authentically oppressive 1630s New England atmosphere. This marked a significant departure from conventional horror techniques, demonstrating how technical precision and historical authenticity could elevate supernatural terror to high art."
+        "content": "The term \"elevated horror\" emerged in the mid-2010s, marking a shift toward horror films that prioritize atmospheric tension, psychological complexity, and artistic merit over traditional shock value. Robert Eggers' <a href=\"/movie/310131\" class=\"movie-title\" data-tmdb-id=\"310131\">The Witch</a> (2015) exemplifies this approach, using period-accurate dialogue and meticulous historical detail to craft a story about religious hysteria and feminine autonomy. The film's cinematographer, Jarin Blaschke, employed natural lighting and precise composition to create an authentically oppressive 1630s New England atmosphere. This marked a significant departure from conventional horror techniques, demonstrating how technical precision and historical authenticity could elevate supernatural terror to high art."
       },
       {
         "type": "movies",
@@ -53,7 +53,7 @@
       },
       {
         "type": "text",
-        "content": "Ari Aster's \"Hereditary\" (2018) and \"Midsommar\" (2019) represent the pinnacle of psychological horror in contemporary cinema. Both films use grief and trauma as foundational elements, weaving complex family dynamics and mental health themes into their horror narratives. Pawel Pogorzelski's cinematography in both films creates a distinct visual language - \"Hereditary\" employs claustrophobic interiors and dollhouse imagery to emphasize themes of control and fate, while \"Midsommar\" subverts horror conventions with sun-drenched landscapes that make terror visible in broad daylight. These films demonstrate how elevated horror can use sophisticated filmmaking techniques to explore deeply personal psychological states."
+        "content": "Ari Aster's <a href=\"/movie/493922\" class=\"movie-title\" data-tmdb-id=\"493922\">Hereditary</a> (2018) and <a href=\"/movie/530385\" class=\"movie-title\" data-tmdb-id=\"530385\">Midsommar</a> (2019) represent the pinnacle of psychological horror in contemporary cinema. Both films use grief and trauma as foundational elements, weaving complex family dynamics and mental health themes into their horror narratives. Pawel Pogorzelski's cinematography in both films creates a distinct visual language - \"Hereditary\" employs claustrophobic interiors and dollhouse imagery to emphasize themes of control and fate, while \"Midsommar\" subverts horror conventions with sun-drenched landscapes that make terror visible in broad daylight. These films demonstrate how elevated horror can use sophisticated filmmaking techniques to explore deeply personal psychological states."
       },
       {
         "type": "movies",
@@ -82,7 +82,7 @@
       },
       {
         "type": "text",
-        "content": "The technical sophistication of elevated horror extends beyond traditional genre boundaries. Jordan Peele's \"Get Out\" (2017) revolutionized horror cinema with its precise visual metaphors and social commentary on racism in America. Cinematographer Toby Oliver created a visual language that alternates between naturalistic observation and surreal nightmare, particularly in the \"Sunken Place\" sequences. Similarly, Robert Eggers' \"The Lighthouse\" (2019) pushed technical boundaries by shooting in black-and-white using vintage orthochromatic lenses and a nearly square aspect ratio, creating a claustrophobic atmosphere that enhances its psychological horror elements."
+        "content": "The technical sophistication of elevated horror extends beyond traditional genre boundaries. Jordan Peele's <a href=\"/movie/419430\" class=\"movie-title\" data-tmdb-id=\"419430\">Get Out</a> (2017) revolutionized horror cinema with its precise visual metaphors and social commentary on racism in America. Cinematographer Toby Oliver created a visual language that alternates between naturalistic observation and surreal nightmare, particularly in the \"Sunken Place\" sequences. Similarly, Robert Eggers' <a href=\"/movie/503919\" class=\"movie-title\" data-tmdb-id=\"503919\">The Lighthouse</a> (2019) pushed technical boundaries by shooting in black-and-white using vintage orthochromatic lenses and a nearly square aspect ratio, creating a claustrophobic atmosphere that enhances its psychological horror elements."
       },
       {
         "type": "movies",
@@ -111,11 +111,13 @@
       },
       {
         "type": "explore_further",
-        "prompts": ["How did this aspect of the topic influence cinema?"]
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
       },
       {
         "type": "text",
-        "content": "The elevated horror movement has drawn significant inspiration from international art house cinema. Julia Ducournau's \"Raw\" (2016) emerged from the French extreme cinema tradition but elevated its body horror elements to explore coming-of-age themes and familial relationships. The film's cinematographer, Ruben Impens, created a clinical yet sensual visual style that makes its shocking moments more impactful through contrast. Meanwhile, Luca Guadagnino's remake of \"Suspiria\" (2018) transformed Dario Argento's technicolor nightmare into a meditation on power, dance, and feminine energy, with Sayombhu Mukdeeprom's cinematography creating a muted palette that emphasizes psychological horror over visual excess."
+        "content": "The elevated horror movement has drawn significant inspiration from international art house cinema. Julia Ducournau's <a href=\"/movie/393519\" class=\"movie-title\" data-tmdb-id=\"393519\">Raw</a> (2016) emerged from the French extreme cinema tradition but elevated its body horror elements to explore coming-of-age themes and familial relationships. The film's cinematographer, Ruben Impens, created a clinical yet sensual visual style that makes its shocking moments more impactful through contrast. Meanwhile, Luca Guadagnino's remake of <a href=\"/movie/361292\" class=\"movie-title\" data-tmdb-id=\"361292\">Suspiria</a> (2018) transformed Dario Argento's technicolor nightmare into a meditation on power, dance, and feminine energy, with Sayombhu Mukdeeprom's cinematography creating a muted palette that emphasizes psychological horror over visual excess."
       },
       {
         "type": "movies",
@@ -212,5 +214,11 @@
   "locked": true,
   "lockedAt": "2025-06-17T22:54:18.740Z",
   "lockedBy": "claude-generation-enhanced",
-  "heroImage": "/images/hero/theme-1-genres/series-2-suspense-horror//4-elevated-horror-a24-beyond.jpg"
+  "heroImage": "/images/hero/theme-1-genres/series-2-suspense-horror//4-elevated-horror-a24-beyond.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:08.446Z",
+    "hasLinks": true,
+    "linksAdded": 4,
+    "tier": "tier2_link_only"
+  }
 }
