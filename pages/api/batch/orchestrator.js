@@ -58,8 +58,9 @@ export default async function handler(req, res) {
       console.error('❌ Status check failed:', error.message);
     }
 
-    // Movie analysis every 6 hours (at 0, 6, 12, 18)
-    if (hour % 6 === 0 && minute >= 0 && minute < 30) {
+    // ZERO-WASTE: TEMPORARILY DISABLED movie analysis every 6 hours 
+    // TODO: Re-enable with three-tier protection after implementing hasLinks() checks
+    if (false && hour % 6 === 0 && minute >= 0 && minute < 30) {
       try {
         console.log('🎬 Running movie batch analysis...');
         const movieResponse = await fetch(`${baseUrl}/api/batch/movies`, {

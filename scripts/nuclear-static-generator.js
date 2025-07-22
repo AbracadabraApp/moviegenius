@@ -10,6 +10,7 @@ import { createClient } from '@supabase/supabase-js';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { staticPageHasLinks, trackZeroWasteSavings } from '../lib/zero-waste-protection.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -357,13 +358,37 @@ function validateStaticData(staticData, movieTitle) {
 }
 
 /**
- * Generate static page data for a movie with validation
+ * ZERO-WASTE: Generate static page data for a movie with three-tier protection
  *
  * @param {number} tmdbId - TMDB ID of the movie to generate
+ * @param {string} outputDir - Output directory for checking existing files
  * @returns {Object} - Generation result with success status and data
  */
-async function generateMovieStaticData(tmdbId) {
+async function generateMovieStaticData(tmdbId, outputDir) {
   try {
+    // ZERO-WASTE: Check if complete static file already exists
+    const existingFilePath = path.join(outputDir, `${tmdbId}.json`);
+    if (fs.existsSync(existingFilePath)) {
+      try {
+        const existingData = JSON.parse(fs.readFileSync(existingFilePath, 'utf8'));
+        
+        // Check if existing file has links (Tier 1 - Complete)
+        if (staticPageHasLinks(existingData)) {
+          console.log(`⚡ TIER 1 - Skipping complete nuclear static: ${tmdbId}`);
+          const savings = trackZeroWasteSavings('tier1_skip', {});
+          return { 
+            success: true, 
+            tmdbId, 
+            skipped: true, 
+            reason: 'existing_complete',
+            costSaved: savings.costSaved
+          };
+        }
+      } catch (parseError) {
+        console.log(`🔄 Existing file corrupt, regenerating: ${tmdbId}`);
+      }
+    }
+
     // Get movie from database
     const { data: movieEntry, error } = await supabase
       .from('movies')
@@ -379,7 +404,8 @@ async function generateMovieStaticData(tmdbId) {
     // Import analysis service
     const { AnalysisService } = await import('../lib/services/analysis-service.js');
 
-    // Get analysis data
+    // ZERO-WASTE: Get analysis data with integrated three-tier protection
+    console.log(`🔄 TIER 2/3 - Processing nuclear static: ${movieEntry.title} (${movieEntry.year})`);
     const analysisData = await AnalysisService.getOrGenerate(movieEntry);
 
     if (!analysisData || !analysisData.sections || analysisData.sections.length === 0) {
@@ -427,7 +453,11 @@ async function generateMovieStaticData(tmdbId) {
       validation.issues.forEach(issue => console.warn(`   - ${issue}`));
     }
 
-    console.log(`✅ Generated static data for "${movieEntry.title}" (${movieEntry.year})`);
+    console.log(`✅ Generated nuclear static data for "${movieEntry.title}" (${movieEntry.year})`);
+    
+    // Track cost savings from integrated linking
+    const savings = trackZeroWasteSavings('tier3_fresh', { linksAdded: 1 });
+    
     return {
       success: true,
       tmdbId,
@@ -435,6 +465,8 @@ async function generateMovieStaticData(tmdbId) {
       movieTitle: movieEntry.title,
       movieYear: movieEntry.year,
       validation, // Include validation results
+      costSaved: savings.costSaved,
+      costIncurred: savings.costIncurred
     };
   } catch (error) {
     console.error(`❌ Error generating static data for movie ${tmdbId}:`, error.message);
@@ -464,33 +496,53 @@ async function markMovieAsNuclearStatic(tmdbId) {
 }
 
 /**
- * Process a batch of movies in parallel
+ * ZERO-WASTE: Process a batch of movies in parallel with protection
  */
 async function processBatch(movieIds, batchNum, totalBatches, outputDir) {
-  console.log(`\n🎬 Processing batch ${batchNum}/${totalBatches} (${movieIds.length} movies)`);
+  console.log(`\n🎬 ZERO-WASTE Batch ${batchNum}/${totalBatches} (${movieIds.length} movies)`);
 
-  const batchPromises = movieIds.map(tmdbId => generateMovieStaticData(tmdbId));
+  const batchPromises = movieIds.map(tmdbId => generateMovieStaticData(tmdbId, outputDir));
   const results = await Promise.allSettled(batchPromises);
 
-  const batchStats = { success: 0, failed: 0, errors: [] };
+  const batchStats = { 
+    success: 0, 
+    failed: 0, 
+    skipped: 0, 
+    errors: [],
+    totalCostSaved: 0,
+    totalCostIncurred: 0 
+  };
 
   for (let i = 0; i < results.length; i++) {
     const result = results[i];
     const tmdbId = movieIds[i];
 
     if (result.status === 'fulfilled' && result.value.success) {
-      const { staticData, movieTitle, movieYear } = result.value;
+      const resultValue = result.value;
+      
+      // Track cost savings
+      if (resultValue.costSaved) batchStats.totalCostSaved += resultValue.costSaved;
+      if (resultValue.costIncurred) batchStats.totalCostIncurred += resultValue.costIncurred;
 
-      // Write static data file
-      const filename = `${tmdbId}.json`;
-      const filepath = path.join(outputDir, filename);
-      fs.writeFileSync(filepath, JSON.stringify(staticData, null, 2));
+      if (resultValue.skipped) {
+        // ZERO-WASTE: File was skipped because it's already complete
+        console.log(`  ⚡ SKIPPED: ${tmdbId} (${resultValue.reason}) - Saved: $${resultValue.costSaved.toFixed(4)}`);
+        batchStats.skipped++;
+      } else {
+        // New file generated
+        const { staticData, movieTitle, movieYear } = resultValue;
 
-      // TODO: Mark as nuclear static in database (column doesn't exist yet)
-      // await markMovieAsNuclearStatic(tmdbId);
+        // Write static data file
+        const filename = `${tmdbId}.json`;
+        const filepath = path.join(outputDir, filename);
+        fs.writeFileSync(filepath, JSON.stringify(staticData, null, 2));
 
-      console.log(`  ✅ ${movieTitle} (${movieYear}) → ${filename}`);
-      batchStats.success++;
+        // TODO: Mark as nuclear static in database (column doesn't exist yet)
+        // await markMovieAsNuclearStatic(tmdbId);
+
+        console.log(`  ✅ GENERATED: ${movieTitle} (${movieYear}) → ${filename}`);
+        batchStats.success++;
+      }
     } else {
       const error = result.status === 'rejected' ? result.reason : result.value.error;
       console.log(`  ❌ Movie ${tmdbId} failed: ${error}`);
@@ -500,7 +552,10 @@ async function processBatch(movieIds, batchNum, totalBatches, outputDir) {
   }
 
   console.log(
-    `📊 Batch ${batchNum} complete: ${batchStats.success} success, ${batchStats.failed} failed`
+    `📊 Batch ${batchNum} complete: ${batchStats.success} generated, ${batchStats.skipped} skipped, ${batchStats.failed} failed`
+  );
+  console.log(
+    `💰 Batch savings: $${batchStats.totalCostSaved.toFixed(4)} saved, $${batchStats.totalCostIncurred.toFixed(4)} spent`
   );
   return batchStats;
 }
@@ -534,8 +589,15 @@ async function generateNuclearStaticFiles() {
     return;
   }
 
-  // Process in batches
-  const totalStats = { success: 0, failed: 0, errors: [] };
+  // Process in batches with zero-waste tracking
+  const totalStats = { 
+    success: 0, 
+    failed: 0, 
+    skipped: 0, 
+    errors: [],
+    totalCostSaved: 0,
+    totalCostIncurred: 0 
+  };
   const totalBatches = Math.ceil(allMovieIds.length / batchSize);
 
   for (let i = 0; i < allMovieIds.length; i += batchSize) {
@@ -546,13 +608,19 @@ async function generateNuclearStaticFiles() {
       const batchStats = await processBatch(batchIds, batchNum, totalBatches, outputDir);
       totalStats.success += batchStats.success;
       totalStats.failed += batchStats.failed;
+      totalStats.skipped += batchStats.skipped;
+      totalStats.totalCostSaved += batchStats.totalCostSaved;
+      totalStats.totalCostIncurred += batchStats.totalCostIncurred;
       totalStats.errors.push(...batchStats.errors);
 
-      // Progress indicator
+      // Progress indicator with zero-waste metrics
       const progressPct = Math.round(((i + batchSize) / allMovieIds.length) * 100);
       const elapsed = Math.round((Date.now() - startTime) / 1000);
       console.log(
-        `⏱️  Progress: ${Math.min(progressPct, 100)}% | ${totalStats.success} generated | ${elapsed}s elapsed\n`
+        `⏱️  Progress: ${Math.min(progressPct, 100)}% | ${totalStats.success} generated, ${totalStats.skipped} skipped | ${elapsed}s elapsed`
+      );
+      console.log(
+        `💰 Running totals: $${totalStats.totalCostSaved.toFixed(2)} saved, $${totalStats.totalCostIncurred.toFixed(2)} spent\n`
       );
 
       // Rate limiting between batches to be respectful to services
@@ -565,34 +633,46 @@ async function generateNuclearStaticFiles() {
     }
   }
 
-  // Generate manifest file
+  // Generate manifest file with zero-waste metrics
   const manifest = {
     generated: new Date().toISOString(),
     totalMovies: allMovieIds.length,
     successCount: totalStats.success,
+    skippedCount: totalStats.skipped,
     failedCount: totalStats.failed,
     batchSize: batchSize,
     generationTimeSeconds: Math.round((Date.now() - startTime) / 1000),
-    version: '2.0.0',
+    version: '2.1.0-zero-waste',
     mode: runAllMovies ? 'full' : 'test',
+    costMetrics: {
+      totalSaved: totalStats.totalCostSaved,
+      totalIncurred: totalStats.totalCostIncurred,
+      netSavings: totalStats.totalCostSaved - totalStats.totalCostIncurred,
+      wasteEliminated: totalStats.skipped > 0
+    },
     errors: totalStats.errors.slice(0, 50), // Keep first 50 errors for debugging
   };
 
   const manifestPath = path.join(outputDir, 'manifest.json');
   fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
 
-  // Final summary
+  // Final summary with zero-waste metrics
   const totalTime = Math.round((Date.now() - startTime) / 1000);
-  const avgTimePerMovie = Math.round(totalTime / totalStats.success);
+  const totalProcessed = totalStats.success + totalStats.skipped;
+  const avgTimePerMovie = totalProcessed > 0 ? Math.round(totalTime / totalProcessed) : 0;
 
-  console.log('\n🎯 NUCLEAR STATIC GENERATION COMPLETE!');
-  console.log('═'.repeat(50));
+  console.log('\n🛡️ ZERO-WASTE NUCLEAR STATIC GENERATION COMPLETE!');
+  console.log('═'.repeat(60));
   console.log(`✅ Generated: ${totalStats.success} movies`);
+  console.log(`⚡ Skipped (complete): ${totalStats.skipped} movies`);
   console.log(`❌ Failed: ${totalStats.failed} movies`);
   console.log(`⏱️  Total time: ${totalTime}s (${Math.round(totalTime / 60)}m)`);
-  console.log(`📊 Average: ${avgTimePerMovie}s per movie`);
+  console.log(`📊 Average: ${avgTimePerMovie}s per movie (processed)`);
+  console.log(`💰 Cost saved: $${totalStats.totalCostSaved.toFixed(2)}`);
+  console.log(`💰 Cost incurred: $${totalStats.totalCostIncurred.toFixed(2)}`);
+  console.log(`💰 Net savings: $${(totalStats.totalCostSaved - totalStats.totalCostIncurred).toFixed(2)}`);
   console.log(`📂 Output: nuclear-static/ (${totalStats.success} JSON files)`);
-  console.log(`🚀 Ready for lightning-fast deployment!`);
+  console.log(`🚀 Ready for lightning-fast deployment with zero waste!`);
 
   if (totalStats.failed > 0) {
     console.log(
@@ -607,9 +687,9 @@ async function generateNuclearStaticFiles() {
 // Show help if requested
 if (args.includes('--help') || args.includes('-h')) {
   console.log(`
-🚀 Nuclear Static Generator v2.0.0
+🛡️ Zero-Waste Nuclear Static Generator v2.1.0
 
-Generates static JSON files for lightning-fast movie page loading.
+Generates static JSON files for lightning-fast movie page loading with bulletproof cost protection.
 
 Usage:
   node scripts/nuclear-static-generator.js [options]
@@ -627,13 +707,15 @@ Examples:
   node scripts/nuclear-static-generator.js --all --start=1000 # Resume from movie 1000
 
 Features:
-  ✅ Parallel processing for speed
-  ✅ Automatic database flag tracking (is_nuclear_static)
-  ✅ Resume capability for interrupted runs
-  ✅ Progress tracking and error reporting
-  ✅ Comprehensive manifest generation
+  🛡️ Zero-waste protection - skips complete files automatically
+  🔗 Integrated movie linking - one-pass content generation
+  💰 Cost tracking - monitors savings from waste elimination
+  ⚡ Parallel processing for speed
+  📊 Comprehensive manifest with cost metrics
+  🔄 Resume capability for interrupted runs
+  ✅ Three-tier protection system (complete/unlinked/missing)
 
-The generated files can be deployed as static assets for <100ms page loads.
+The generated files can be deployed as static assets for <100ms page loads with zero regeneration waste.
 `);
   process.exit(0);
 }

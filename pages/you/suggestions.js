@@ -19,8 +19,8 @@ export default function SuggestionsPage() {
     const loadData = () => {
       try {
         const allMovies = getAllEssentialMovies();
-        const hearted = new Set();
-        const bookmarked = new Set();
+        const heartedSet = new Set();
+        const bookmarkedSet = new Set();
         const unseen = [];
 
         allMovies.forEach(movie => {
@@ -28,11 +28,12 @@ export default function SuggestionsPage() {
           const isHearted = FavoritesManager.isMovieHearted(movieId);
           const isBookmarked = FavoritesManager.isMovieBookmarked(movieId);
 
+          // Store string IDs consistently for state tracking
           if (isHearted) {
-            hearted.add(movie.tmdb_id);
+            heartedSet.add(movieId);
           }
           if (isBookmarked) {
-            bookmarked.add(movie.tmdb_id);
+            bookmarkedSet.add(movieId);
           }
 
           // Only include movies that haven't been marked as seen
@@ -41,8 +42,8 @@ export default function SuggestionsPage() {
           }
         });
 
-        setHeartedMovies(hearted);
-        setBookmarkedMovies(bookmarked);
+        setHeartedMovies(heartedSet);
+        setBookmarkedMovies(bookmarkedSet);
         setUnseenMovies(unseen);
       } catch (error) {
         console.error('Error loading data:', error);
@@ -50,6 +51,14 @@ export default function SuggestionsPage() {
     };
 
     loadData();
+    
+    // Listen for storage changes from other components
+    const handleStorageChange = () => {
+      loadData();
+    };
+    
+    window.addEventListener('moviesUpdated', handleStorageChange);
+    return () => window.removeEventListener('moviesUpdated', handleStorageChange);
   }, []);
 
   // Toggle heart status (seen)
@@ -57,16 +66,17 @@ export default function SuggestionsPage() {
     const movie = unseenMovies.find(m => m.tmdb_id === tmdbId);
     if (!movie) return;
 
-    const movieData = { title: movie.title, year: movie.year };
+    const movieData = { title: movie.title, year: movie.year, tmdb_id: movie.tmdb_id };
     const newState = FavoritesManager.toggleHeart(movieData);
+    const movieId = `${movie.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${movie.year}`;
 
     const newHearted = new Set(heartedMovies);
     if (newState) {
-      newHearted.add(tmdbId);
+      newHearted.add(movieId);
       // Remove from unseen list
       setUnseenMovies(prev => prev.filter(m => m.tmdb_id !== tmdbId));
     } else {
-      newHearted.delete(tmdbId);
+      newHearted.delete(movieId);
       // Add back to unseen list
       setUnseenMovies(prev => [...prev, movie].sort((a, b) => a.title.localeCompare(b.title)));
     }
@@ -78,14 +88,15 @@ export default function SuggestionsPage() {
     const movie = unseenMovies.find(m => m.tmdb_id === tmdbId);
     if (!movie) return;
 
-    const movieData = { title: movie.title, year: movie.year };
+    const movieData = { title: movie.title, year: movie.year, tmdb_id: movie.tmdb_id };
     const newState = FavoritesManager.toggleBookmark(movieData);
+    const movieId = `${movie.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${movie.year}`;
 
     const newBookmarked = new Set(bookmarkedMovies);
     if (newState) {
-      newBookmarked.add(tmdbId);
+      newBookmarked.add(movieId);
     } else {
-      newBookmarked.delete(tmdbId);
+      newBookmarked.delete(movieId);
     }
     setBookmarkedMovies(newBookmarked);
   };
@@ -237,16 +248,16 @@ export default function SuggestionsPage() {
                       >
                         <Check
                           size={16}
-                          color={heartedMovies.has(movie.tmdb_id) ? '#374151' : '#9ca3af'}
-                          strokeWidth={heartedMovies.has(movie.tmdb_id) ? 2.5 : 1.5}
+                          color={heartedMovies.has(`${movie.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${movie.year}`) ? '#374151' : '#9ca3af'}
+                          strokeWidth={heartedMovies.has(`${movie.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${movie.year}`) ? 2.5 : 1.5}
                         />
                         <span
                           style={{
                             fontSize: '12px',
                             lineHeight: '1',
                             userSelect: 'none',
-                            color: heartedMovies.has(movie.tmdb_id) ? '#374151' : '#9ca3af',
-                            fontWeight: heartedMovies.has(movie.tmdb_id) ? '600' : '400',
+                            color: heartedMovies.has(`${movie.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${movie.year}`) ? '#374151' : '#9ca3af',
+                            fontWeight: heartedMovies.has(`${movie.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${movie.year}`) ? '600' : '400',
                           }}
                         >
                           Seen
@@ -276,15 +287,15 @@ export default function SuggestionsPage() {
                       >
                         <Plus
                           size={16}
-                          color={bookmarkedMovies.has(movie.tmdb_id) ? '#374151' : '#9ca3af'}
+                          color={bookmarkedMovies.has(`${movie.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${movie.year}`) ? '#374151' : '#9ca3af'}
                         />
                         <span
                           style={{
                             fontSize: '12px',
                             lineHeight: '1',
                             userSelect: 'none',
-                            color: bookmarkedMovies.has(movie.tmdb_id) ? '#374151' : '#9ca3af',
-                            fontWeight: bookmarkedMovies.has(movie.tmdb_id) ? '600' : '400',
+                            color: bookmarkedMovies.has(`${movie.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${movie.year}`) ? '#374151' : '#9ca3af',
+                            fontWeight: bookmarkedMovies.has(`${movie.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${movie.year}`) ? '600' : '400',
                           }}
                         >
                           Add

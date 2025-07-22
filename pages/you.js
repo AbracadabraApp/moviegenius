@@ -132,7 +132,7 @@ export default function YouPage() {
                   {heartedMovies.length} {heartedMovies.length === 1 ? 'film' : 'films'}
                 </button>
                 <button
-                  onClick={() => router.push('/suggestions')}
+                  onClick={() => router.push('/you/suggestions')}
                   style={{
                     background: 'none',
                     border: 'none',
@@ -207,7 +207,7 @@ export default function YouPage() {
                 <span>to add films to your "seen" list.</span>
               </div>
               <button
-                onClick={() => router.push('/suggestions')}
+                onClick={() => router.push('/you/suggestions')}
                 style={{
                   background: 'none',
                   border: 'none',
@@ -349,7 +349,7 @@ export default function YouPage() {
                 <span>to add them to your "watch" list.</span>
               </div>
               <button
-                onClick={() => router.push('/suggestions')}
+                onClick={() => router.push('/you/suggestions')}
                 style={{
                   background: 'none',
                   border: 'none',
