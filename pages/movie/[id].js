@@ -415,13 +415,11 @@ function ContentPlaceholder({ source, title, year, tmdbId }) {
     return null;
   }
 
-  // No analysis available - show minimal content
+  // Continue loading - nuclear static should be available
   return (
     <div style={styles.claudeContent}>
-      <div style={styles.basicInfoContainer}>
-        <p style={styles.basicInfoText}>
-          Basic movie information loaded. Additional content may become available over time.
-        </p>
+      <div style={styles.loadingContainer}>
+        <FilmLoadingMessage message="Loading movie content..." size="large" />
       </div>
     </div>
   );
