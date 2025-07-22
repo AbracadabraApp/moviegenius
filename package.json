@@ -2,6 +2,7 @@
   "name": "moviegenius",
   "version": "1.0.3",
   "private": true,
+  "type": "module",
   "scripts": {
     "clean": "rm -rf .next && rm -rf node_modules/.cache",
     "fix:cache": "rm -rf .next && npm run dev",
