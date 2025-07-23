@@ -62,12 +62,12 @@ jobs:
       - name: Build application
         run: npm run build
         env:
-          # Use dummy values for build test
-          ANTHROPIC_API_KEY: 'dummy-key-for-build'
-          NEXT_PUBLIC_SUPABASE_URL: 'https://dummy.supabase.co'
-          NEXT_PUBLIC_SUPABASE_ANON_KEY: 'dummy-anon-key'
-          SUPABASE_SERVICE_ROLE_KEY: 'dummy-service-key'
-          NEXT_PUBLIC_TMDB_API_KEY: 'dummy-tmdb-key'
+          # Use production secrets for build test to catch env var issues
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          NEXT_PUBLIC_TMDB_API_KEY: ${{ secrets.NEXT_PUBLIC_TMDB_API_KEY }}
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
@@ -125,18 +125,20 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install Railway CLI
+        run: npm install -g @railway/cli
+
       - name: Deploy to Railway
         run: |
-          echo "🚀 Triggering Railway deployment..."
-          curl -X POST "https://backboard.railway.app/graphql" \
-            -H "Authorization: Bearer ${{ secrets.RAILWAY_TOKEN }}" \
-            -H "Content-Type: application/json" \
-            -d '{"query":"mutation { deploymentCreate(input: { projectId: \"69208135-567a-4f25-b85d-c757d9afaed1\", environmentId: \"production\" }) { id } }"}'
+          echo "🚀 Deploying to Railway..."
+          railway deploy --detach
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
 
       - name: Wait for deployment
         run: |
           echo "⏳ Waiting for Railway deployment to complete..."
-          sleep 120  # Wait 2 minutes for deployment
+          sleep 180  # Wait 3 minutes for deployment
 
       - name: Verify deployment
         run: |
