@@ -663,24 +663,10 @@ export async function getStaticProps({ params }) {
   }
 
   try {
-    // Check environment variables with Railway production fallback
+    // Check environment variables
     if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
-      console.error('Missing Supabase environment variables - falling back to client-side loading');
-      // Return minimal props to prevent 404, let client-side handle data loading
-      return {
-        props: {
-          title: 'Loading...',
-          year: new Date().getFullYear(),
-          initialSlug: 'Loading movie information...',
-          initialPoster: '/images/placeholder-poster.jpg',
-          initialStreaming: null,
-          tmdbId: parseInt(id, 10),
-          error: null,
-          hasAnalysis: false,
-          source: 'env_fallback'
-        },
-        revalidate: 60
-      };
+      console.error('Missing Supabase environment variables');
+      return { notFound: true };
     }
 
     // Create supabase client using the working pattern from 3 weeks ago
