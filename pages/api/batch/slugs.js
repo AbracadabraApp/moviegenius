@@ -1,8 +1,9 @@
 /**
- * Railway Batch Processing API - Slugs
+ * Railway Batch Processing API - Slugs [DISABLED FOR ZERO-WASTE]
  *
- * Endpoint for backfilling missing movie slugs in production
- * Generates punchy marketing taglines for MediaCard display
+ * This endpoint is disabled to prevent continuous slug regeneration waste.
+ * Slugs are now generated once during movie creation via createBasicMovieEntry.
+ * Use scripts/one-time-slug-backfill.js for backfilling existing movies.
  */
 
 import { createClient } from '@supabase/supabase-js';
@@ -307,6 +308,16 @@ Return ONLY the tagline, nothing else.`;
 }
 
 export default async function handler(req, res) {
+  // DISABLED FOR ZERO-WASTE ARCHITECTURE
+  // This endpoint is disabled to prevent continuous slug regeneration waste.
+  // Slugs are now generated once during movie creation or via one-time backfill.
+  return res.status(200).json({
+    status: 'disabled',
+    message: 'Slug batch processing disabled for zero-waste architecture',
+    recommendation: 'Use scripts/one-time-slug-backfill.js for backfilling',
+    timestamp: new Date().toISOString()
+  });
+
   // Allow both GET and POST requests
   if (req.method !== 'GET' && req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });

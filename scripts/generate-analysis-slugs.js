@@ -1,8 +1,10 @@
 /**
- * Generate Slugs for Analyzed Movies
+ * Generate Slugs for Analyzed Movies [UPDATED FOR ZERO-WASTE]
  *
  * Finds movies with analysis but no slugs, then generates
- * Claude-powered SEO-optimized slugs for them
+ * Claude-powered SEO-optimized slugs for them.
+ * 
+ * Now respects slug_complete flag to prevent regeneration waste.
  */
 
 import { createClient } from '@supabase/supabase-js';
