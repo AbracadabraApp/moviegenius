@@ -8,15 +8,16 @@ const bundleAnalyzer = withBundleAnalyzer({
 const isRailwayBuild = process.env.RAILWAY_ENVIRONMENT_NAME;
 
 // Set fallback environment variables for build safety
+// Clean environment variables to remove any whitespace/newlines
 process.env.NEXT_PUBLIC_SUPABASE_URL =
-  process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
+  (process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co').trim();
 process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY =
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-anon-key';
+  (process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-anon-key').trim();
 process.env.SUPABASE_SERVICE_ROLE_KEY =
-  process.env.SUPABASE_SERVICE_ROLE_KEY || 'placeholder-service-key';
+  (process.env.SUPABASE_SERVICE_ROLE_KEY || 'placeholder-service-key').trim();
 process.env.NEXT_PUBLIC_TMDB_API_KEY =
-  process.env.NEXT_PUBLIC_TMDB_API_KEY || 'placeholder-tmdb-key';
-process.env.ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY || 'placeholder-anthropic-key';
+  (process.env.NEXT_PUBLIC_TMDB_API_KEY || 'placeholder-tmdb-key').trim();
+process.env.ANTHROPIC_API_KEY = (process.env.ANTHROPIC_API_KEY || 'placeholder-anthropic-key').trim();
 
 const nextConfig = {
   // Simplified webpack config for development server stability
