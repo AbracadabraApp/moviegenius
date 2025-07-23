@@ -318,6 +318,8 @@ export default async function handler(req, res) {
     timestamp: new Date().toISOString()
   });
 
+  // Dead code below - unreachable due to return above
+  /*
   // Allow both GET and POST requests
   if (req.method !== 'GET' && req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
@@ -362,4 +364,5 @@ export default async function handler(req, res) {
       error: error.message,
     });
   }
+  */
 }

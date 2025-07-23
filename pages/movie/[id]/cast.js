@@ -316,7 +316,7 @@ export async function getServerSideProps({ params }) {
     // Create supabase client with fallback
     let supabaseClient;
     try {
-      const { createClient } = require('@supabase/supabase-js');
+      const { createClient } = await import('@supabase/supabase-js');
       supabaseClient = createClient(
         process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co',
         process.env.SUPABASE_SERVICE_ROLE_KEY ||
