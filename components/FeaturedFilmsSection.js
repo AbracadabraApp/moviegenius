@@ -3,8 +3,21 @@ import React, { memo } from 'react';
 import MediaCard from './MediaCard';
 
 function FeaturedFilmsSection({ movies, title = 'Featured Films', style = {} }) {
+  // Debug logging
+  console.log('FeaturedFilmsSection:', {
+    title,
+    moviesCount: movies?.length,
+    movies: movies?.slice(0, 3).map(m => ({
+      title: m.title,
+      year: m.year,
+      tmdb_id: m.tmdb_id,
+      slug: m.slug?.substring(0, 60) + (m.slug?.length > 60 ? '...' : ''),
+      slugLength: m.slug?.length,
+    })),
+  });
 
   if (!movies || movies.length === 0) {
+    console.log('FeaturedFilmsSection: No movies to display');
     return null;
   }
 
@@ -33,8 +46,21 @@ function FeaturedFilmsSection({ movies, title = 'Featured Films', style = {} }) 
               !movie.slug.includes('Overview:') &&
               !movie.slug.includes('Synopsis:') &&
               !movie.slug.includes('Summary:') &&
-              movie.slug.length <= 150; // Allow legitimate Claude marketing taglines up to 150 chars
+              !movie.slug.includes(' leads this ') &&
+              !movie.slug.includes(' adapts ') &&
+              !movie.slug.includes(' starring ') &&
+              !movie.slug.includes('directed by') &&
+              movie.slug.length <= 80; // Reject overly long descriptions
 
+            // Debug MediaCard props being passed
+            console.log(`MediaCard props for ${movie.title}:`, {
+              title: movie.title,
+              year: movie.year,
+              originalSlug: movie.slug,
+              isValidClaudeSlug,
+              finalSlugPassed: isValidClaudeSlug ? movie.slug : null,
+              tmdbId: movie.tmdb_id || movie.tmdbId
+            });
 
             return (
               <div
