@@ -71,18 +71,10 @@ export default function MediaCard({
     setMovieTmdbId(tmdbId);
   }, [tmdbId]);
 
-  // Update slug when initialSlug prop changes (with validation)
+  // Update slug when initialSlug prop changes
   useEffect(() => {
-    const isValid = initialSlug &&
-      !initialSlug.includes('Plot:') && 
-      !initialSlug.includes('Overview:') && 
-      !initialSlug.includes('Synopsis:') && 
-      !initialSlug.includes('Summary:');
-    
-    if (isValid) {
+    if (initialSlug) {
       setSlug(initialSlug);
-    } else {
-      setSlug('');
     }
   }, [initialSlug]);
   const [isEnhancing, setIsEnhancing] = useState(false);
