@@ -52,6 +52,16 @@ function FeaturedFilmsSection({ movies, title = 'Featured Films', style = {} }) 
               !movie.slug.includes('directed by') &&
               movie.slug.length <= 80; // Reject overly long descriptions
 
+            // Debug MediaCard props being passed
+            console.log(`MediaCard props for ${movie.title}:`, {
+              title: movie.title,
+              year: movie.year,
+              originalSlug: movie.slug,
+              isValidClaudeSlug,
+              finalSlugPassed: isValidClaudeSlug ? movie.slug : null,
+              tmdbId: movie.tmdb_id || movie.tmdbId
+            });
+
             return (
               <div
                 key={`${movie.title}-${movie.year}-${movieIndex}`}
