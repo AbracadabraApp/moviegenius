@@ -68,20 +68,31 @@ async function main() {
   console.log('');
 
   try {
-    // Get nuclear candidates (top 1,000 movies)
+    // First, get total count for comparison
+    const { count: totalMovies } = await supabase
+      .from('movies')
+      .select('*', { count: 'exact', head: true })
+      .not('tmdb_id', 'is', null);
+
+    // Get nuclear candidates (top 1,000 movies) - respecting completion flags
     const { data: nuclearCandidates } = await supabase
       .from('movies')
-      .select('id, title, year, tmdb_id')
+      .select('id, title, year, tmdb_id, has_linked_analysis, slug_complete')
       .not('tmdb_id', 'is', null)
+      .not('has_linked_analysis', 'is', true)  // Skip movies with complete analysis
+      .not('slug_complete', 'is', true)        // Skip movies with complete slugs
       .order('created_at', { ascending: false })
       .limit(1000);
 
     if (!nuclearCandidates || nuclearCandidates.length === 0) {
-      console.log('❌ No nuclear candidates found');
-      process.exit(1);
+      console.log('❌ No nuclear candidates found - all movies have complete analysis/slugs');
+      console.log(`✅ Zero-waste protection: Skipped ${totalMovies} movies with complete content`);
+      process.exit(0);
     }
 
+    const skippedCount = totalMovies - nuclearCandidates.length;
     console.log(`📊 Found ${nuclearCandidates.length} nuclear candidates`);
+    console.log(`✅ Zero-waste protection: Skipped ${skippedCount} movies with complete content`);
 
     // Determine which movies to process
     let moviesToProcess;
