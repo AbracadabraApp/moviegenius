@@ -1,11 +1,12 @@
 /**
- * Optimized Parallel Movie Slug Generation API
+ * Optimized Parallel Movie Slug Generation API [DISABLED FOR ZERO-WASTE]
  *
- * High-performance parallel processing for movie slug generation using
- * the batch optimizer system. Improves processing speed by 10-20x while
- * maintaining reliability and respecting API rate limits.
+ * This endpoint is disabled to prevent continuous slug regeneration waste.
+ * Slugs are now generated once during movie creation via createBasicMovieEntry.
+ * Use scripts/one-time-slug-backfill.js for backfilling existing movies.
  *
- * Performance improvements:
+ * Previously provided:
+ * - High-performance parallel processing for movie slug generation
  * - Parallel Claude API calls with concurrency control
  * - Batch database operations for better throughput
  * - Progress tracking and error recovery
@@ -397,6 +398,16 @@ Return ONLY the tagline, nothing else.`;
  * API Handler with comprehensive error handling
  */
 async function optimizedSlugBatchHandler(req, res) {
+  // DISABLED FOR ZERO-WASTE ARCHITECTURE
+  // This endpoint is disabled to prevent continuous slug regeneration waste.
+  // Slugs are now generated once during movie creation or via one-time backfill.
+  return successResponse(res, {
+    status: 'disabled',
+    message: 'Optimized slug batch processing disabled for zero-waste architecture',
+    recommendation: 'Use scripts/one-time-slug-backfill.js for backfilling',
+    timestamp: new Date().toISOString()
+  });
+
   if (req.method !== 'POST') {
     throw ApiErrors.BAD_REQUEST('Only POST method is allowed');
   }
