@@ -5,6 +5,8 @@ buildCommand = "npm run build"
 [deploy]
 startCommand = "npm start"
 restartPolicyType = "on_failure"
+healthcheckPath = "/api/health"
+healthcheckTimeout = 300
 
 [env]
 NEXT_TELEMETRY_DISABLED = "1"
