@@ -53,6 +53,9 @@ export default function MediaCard({
     !initialSlug.includes('Summary:'); // Reject other summary formats
 
   const [slug, setSlug] = useState(isValidClaudeSlug ? initialSlug : '');
+  
+  // Debug slug handling
+  console.log(`MediaCard ${title}: initialSlug="${initialSlug}", isValidClaudeSlug=${isValidClaudeSlug}, finalSlug="${slug}"`);
   const [poster, setPoster] = useState(initialPoster || '/images/placeholder-poster.jpg');
   const [movieTmdbId, setMovieTmdbId] = useState(tmdbId);
 
