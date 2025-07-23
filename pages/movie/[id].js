@@ -356,23 +356,61 @@ function ContentPlaceholder({ source, title, year, tmdbId }) {
   const [isLoading, setIsLoading] = useState(true);
   const [hasAnalysis, setHasAnalysis] = useState(false);
   const [analysisData, setAnalysisData] = useState(null);
+  const [error, setError] = useState(null);
   const router = useRouter();
 
   useEffect(() => {
     let pollCount = 0;
-    const maxPolls = 10; // Maximum 30 seconds of polling
+    const maxPolls = 8; // 24 seconds for TMDB discovery scenarios
+    let cancelled = false;
 
     const checkForAnalysis = async () => {
+      if (cancelled) return true;
+      
       try {
+        console.log(`🔍 Checking analysis for ${title} (${year}) - poll ${pollCount + 1}/${maxPolls}`);
         const response = await fetch(`/api/movie-analysis?tmdbId=${tmdbId}`);
+        
+        if (response.status === 404) {
+          // For TMDB discoveries, this might be temporary - wait a bit before failing
+          if (source === 'tmdb_discovery' && pollCount < 3) {
+            console.log(`TMDB discovery: Movie ${tmdbId} not yet in database, continuing...`);
+            return false; // Continue polling for TMDB discoveries
+          }
+          
+          console.log(`Movie ${tmdbId} not found after ${pollCount} attempts`);
+          setError('Movie not found');
+          setIsLoading(false);
+          return true; // Stop polling
+        }
+        
         if (response.ok) {
           const data = await response.json();
-          if (data.hasAnalysis && data.sections && data.sections.length > 0) {
+          console.log(`📊 Analysis response for ${tmdbId}:`, {
+            hasAnalysis: data.hasAnalysis,
+            sectionsCount: data.sections?.length,
+            error: data.error
+          });
+          
+          // Check if analysis exists and is properly structured
+          if (data.analysis || (data.sections && data.sections.length > 0)) {
+            console.log(`✅ Analysis found for ${title} (${year})`);
             setAnalysisData(data);
             setHasAnalysis(true);
             setIsLoading(false);
             return true; // Stop polling
           }
+          
+          // If no error but no analysis, continue polling
+          if (data.error && data.error.includes('not found')) {
+            // API says movie not found in database, but we know it exists
+            if (source === 'tmdb_discovery' && pollCount < 4) {
+              console.log(`TMDB discovery: Database sync pending for ${tmdbId}`);
+              return false; // Continue polling
+            }
+          }
+        } else if (response.status >= 500) {
+          console.log(`Server error (${response.status}) checking analysis for ${tmdbId}`);
         }
       } catch (error) {
         console.log('Analysis check failed:', error);
@@ -381,12 +419,14 @@ function ContentPlaceholder({ source, title, year, tmdbId }) {
     };
 
     const pollForAnalysis = async () => {
+      if (cancelled) return;
+      
       const found = await checkForAnalysis();
       if (found) return;
 
       pollCount++;
       if (pollCount >= maxPolls) {
-        // After 30 seconds, stop loading and show basic movie info
+        console.log(`Analysis polling timeout for ${title} (${year}) after ${maxPolls * 3} seconds`);
         setIsLoading(false);
         return;
       }
@@ -395,9 +435,15 @@ function ContentPlaceholder({ source, title, year, tmdbId }) {
       setTimeout(pollForAnalysis, 3000);
     };
 
-    // Start polling after initial 2 second delay
-    setTimeout(pollForAnalysis, 2000);
-  }, [tmdbId]);
+    // Start polling immediately for TMDB discoveries, after 2s delay for others
+    const initialDelay = source === 'tmdb_discovery' ? 1000 : 2000;
+    setTimeout(pollForAnalysis, initialDelay);
+
+    // Cleanup function
+    return () => {
+      cancelled = true;
+    };
+  }, [tmdbId, source, title, year]);
 
   if (isLoading) {
     return (
@@ -415,11 +461,37 @@ function ContentPlaceholder({ source, title, year, tmdbId }) {
     return null;
   }
 
-  // Continue loading - nuclear static should be available
+  if (error) {
+    // Movie not found - show error message
+    return (
+      <div style={styles.claudeContent}>
+        <div style={styles.basicInfoContainer}>
+          <div style={styles.basicInfoIcon}>🎬</div>
+          <div style={styles.basicInfoText}>
+            This movie could not be found in our database or TMDB.
+          </div>
+          <div style={styles.basicInfoNote}>
+            Please check the movie ID or try searching for another film.
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Timeout reached - show generation message for movies that exist
   return (
     <div style={styles.claudeContent}>
-      <div style={styles.loadingContainer}>
-        <FilmLoadingMessage message="Loading movie content..." size="large" />
+      <div style={styles.basicInfoContainer}>
+        <div style={styles.basicInfoIcon}>🎬</div>
+        <div style={styles.basicInfoText}>
+          {source === 'tmdb_discovery' 
+            ? `Analysis is being generated for ${title} (${year}).`
+            : 'Movie analysis is currently being prepared.'
+          }
+        </div>
+        <div style={styles.basicInfoNote}>
+          This can take a few minutes for newly discovered films. Please check back shortly.
+        </div>
       </div>
     </div>
   );
