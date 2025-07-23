@@ -1,4 +1,5 @@
-# MovieGenius Development Setup
+# Development Setup
+*Quick setup guide for MovieGenius development*
 
 ## 🚀 Getting Started
 
