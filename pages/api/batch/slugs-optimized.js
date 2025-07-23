@@ -408,6 +408,8 @@ async function optimizedSlugBatchHandler(req, res) {
     timestamp: new Date().toISOString()
   });
 
+  // Dead code below - kept for reference but unreachable due to return above
+  /*
   if (req.method !== 'POST') {
     throw ApiErrors.BAD_REQUEST('Only POST method is allowed');
   }
@@ -429,6 +431,7 @@ async function optimizedSlugBatchHandler(req, res) {
   const result = await processor.processBatch();
 
   res.status(200).json(successResponse(result, 'Optimized slug batch processing completed'));
+  */
 }
 
 export default withErrorHandling(optimizedSlugBatchHandler);
