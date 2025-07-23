@@ -40,17 +40,21 @@ function FeaturedFilmsSection({ movies, title = 'Featured Films', style = {} }) 
           ) // Show movies with required fields including valid tmdb_id
           .map((movie, movieIndex) => {
             // 🔒 TMDB Protection: Filter contaminated slugs before passing to MediaCard
-            const isValidClaudeSlug =
-              movie.slug &&
-              !movie.slug.includes('Plot:') &&
-              !movie.slug.includes('Overview:') &&
-              !movie.slug.includes('Synopsis:') &&
-              !movie.slug.includes('Summary:') &&
-              !movie.slug.includes(' leads this ') &&
-              !movie.slug.includes(' adapts ') &&
-              !movie.slug.includes(' starring ') &&
-              !movie.slug.includes('directed by') &&
-              movie.slug.length <= 80; // Reject overly long descriptions
+            // TEMP: Commented out validation to test blank card issue - let MediaCard decide
+            // const isValidClaudeSlug =
+            //   movie.slug &&
+            //   !movie.slug.includes('Plot:') &&
+            //   !movie.slug.includes('Overview:') &&
+            //   !movie.slug.includes('Synopsis:') &&
+            //   !movie.slug.includes('Summary:') &&
+            //   !movie.slug.includes(' leads this ') &&
+            //   !movie.slug.includes(' adapts ') &&
+            //   !movie.slug.includes(' starring ') &&
+            //   !movie.slug.includes('directed by') &&
+            //   movie.slug.length <= 80; // Reject overly long descriptions
+            
+            // Pass through any slug - let MediaCard validation handle filtering
+            const isValidClaudeSlug = !!movie.slug;
 
             // Debug MediaCard props being passed
             console.log(`MediaCard props for ${movie.title}:`, {
