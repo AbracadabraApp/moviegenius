@@ -34,9 +34,11 @@ function FeaturedFilmsSection({ movies, title = 'Featured Films', style = {} }) 
             movie =>
               movie.title &&
               movie.year &&
-              movie.tmdb_id &&
-              movie.tmdb_id !== null &&
-              movie.tmdb_id !== 'MISSING'
+              // TEMP: Allow movies without tmdb_id to show slugs (non-clickable)
+              // movie.tmdb_id &&
+              // movie.tmdb_id !== null &&
+              // movie.tmdb_id !== 'MISSING'
+              true // Always allow if title and year exist
           ) // Show movies with required fields including valid tmdb_id
           .map((movie, movieIndex) => {
             // 🔒 TMDB Protection: Filter contaminated slugs before passing to MediaCard
