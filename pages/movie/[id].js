@@ -128,6 +128,17 @@ export default function MovieDetailPage({
 
   return (
     <PhoneFrame>
+      <style jsx global>{`
+        .movie-title {
+          color: #2563eb;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+        .movie-title:hover {
+          color: #1d4ed8;
+          text-decoration: none;
+        }
+      `}</style>
       <div style={styles.container}>
         {/* Search header */}
         <div style={styles.header}>
@@ -178,6 +189,15 @@ export default function MovieDetailPage({
                   tmdbId={tmdbId}
                 />
               </ErrorBoundary>
+
+              {/* Streaming info section - 4px below poster */}
+              <div style={styles.streamingSection}>
+                {initialStreaming && initialStreaming.length > 0 && initialStreaming !== 'TBD' ? (
+                  <div style={styles.streamingText}>Streaming on {initialStreaming}</div>
+                ) : (
+                  <div style={styles.streamingText}>Not aware if available for streaming</div>
+                )}
+              </div>
 
               <div style={styles.claudeSection}>
                 <ErrorBoundary level="section">
@@ -248,31 +268,13 @@ function MovieContent({ sections, exploreFurther, moreIdeas, movieData, title, y
         return (
           <div key={`section-${sectionIndex}`}>
             {section.type === 'text' && (
-              <>
-                <div style={styles.textSection}>
-                  <EntityLinkedText
-                    text={section.content}
-                    linkMovies={true}
-                    currentEntity={{ type: 'movie', slug: title }}
-                  />
-                </div>
-
-                {/* Show explore further if available and early in content */}
-                {exploreFurther &&
-                  exploreFurther[usedExploreFurtherCount.current] &&
-                  sectionIndex < 3 &&
-                  (() => {
-                    const topic = exploreFurther[usedExploreFurtherCount.current];
-                    usedExploreFurtherCount.current++;
-                    return (
-                      <ExploreFurtherSection
-                        prompts={[topic]}
-                        contextPrefix={`${title} (${year})`}
-                        style={{ marginTop: '16px', marginBottom: '8px' }}
-                      />
-                    );
-                  })()}
-              </>
+              <div style={styles.textSection}>
+                <EntityLinkedText
+                  text={section.content}
+                  linkMovies={true}
+                  currentEntity={{ type: 'movie', slug: title }}
+                />
+              </div>
             )}
 
             {section.type === 'movies' &&
@@ -301,9 +303,8 @@ function MovieContent({ sections, exploreFurther, moreIdeas, movieData, title, y
                       <FeaturedFilmsSection movies={filteredMovies} style={{ marginBottom: '8px' }} />
                     )}
 
-                    {/* Show first explore further after first Featured Films section */}
-                    {isFirstMovieSection &&
-                      exploreFurther &&
+                    {/* Put one explore further after each Featured Films section */}
+                    {exploreFurther &&
                       exploreFurther[usedExploreFurtherCount.current] &&
                       (() => {
                         const topic = exploreFurther[usedExploreFurtherCount.current];
@@ -323,13 +324,10 @@ function MovieContent({ sections, exploreFurther, moreIdeas, movieData, title, y
         );
       })}
 
-      {/* Bottom explore further section - limit to 2 explore prompts + Cast & Crew = 3 total */}
+      {/* Bottom explore further section - stack remaining topics */}
       {(() => {
         const remainingTopics = exploreFurther
-          ? exploreFurther.slice(
-              usedExploreFurtherCount.current,
-              usedExploreFurtherCount.current + 2
-            )
+          ? exploreFurther.slice(usedExploreFurtherCount.current)
           : [];
         return (
           (remainingTopics.length > 0 || tmdbId) && (
@@ -360,7 +358,7 @@ function MovieContent({ sections, exploreFurther, moreIdeas, movieData, title, y
               .map(m => ({ title: m.title, tmdb_id: m.tmdb_id })),
           });
 
-          return <FeaturedFilmsSection movies={filteredRelatedMovies} title="Related Films" />;
+          return <div style={{ marginTop: '36px' }}><FeaturedFilmsSection movies={filteredRelatedMovies} title="Related Films" /></div>;
         })()}
 
       {/* Browse by Category Section */}
@@ -414,6 +412,18 @@ const styles = {
     cursor: 'pointer',
   },
 
+  streamingSection: {
+    padding: '0 16px',
+    marginTop: '4px',
+    marginBottom: '4px',
+  },
+  streamingText: {
+    fontSize: '14px',
+    color: '#6b7280',
+    fontWeight: '300',
+    fontFamily: 'inherit',
+    paddingLeft: '20px',
+  },
   claudeSection: {
     flex: 1,
     padding: '0 16px 24px',
@@ -519,6 +529,9 @@ async function checkNuclearStatic(tmdbId, fs, path) {
 
 // Simplified getStaticProps - most logic moved to services
 export async function getStaticProps({ params }) {
+  const startTime = Date.now();
+  console.log(`🚀 getStaticProps START for movie ${params.id} at ${new Date().toISOString()}`);
+  
   const { id } = params;
   const tmdbId = parseInt(id, 10);
 
@@ -527,21 +540,33 @@ export async function getStaticProps({ params }) {
   }
 
   // 🚀 NUCLEAR STRATEGY: Check for pre-built static data first
+  console.log(`🔍 Starting nuclear static check for ${tmdbId}...`);
+  const nuclearStart = Date.now();
   const fs = await import('fs');
   const path = await import('path');
   const nuclearData = await checkNuclearStatic(tmdbId, fs.default, path.default);
+  console.log(`⏱️ Nuclear check took ${Date.now() - nuclearStart}ms`);
+  
   if (nuclearData) {
-    console.log(`⚡ Serving nuclear static data for movie ${tmdbId}`);
+    console.log(`⚡ Serving nuclear static data for movie ${tmdbId} (total time: ${Date.now() - startTime}ms)`);
     return nuclearData;
   }
+  
+  console.log(`❌ No nuclear static found for ${tmdbId}, proceeding with dynamic generation...`);
+  const dynamicStart = Date.now();
 
   try {
     // Server-side imports
+    console.log(`📦 Starting imports...`);
+    const importStart = Date.now();
+    
     const { AnalysisService } = await import('../../lib/services/analysis-service');
     const { processAnalysisContent, splitContentAtSubheads } = await import('../../lib/movie-analysis-linker');
     const { createClient } = await import('@supabase/supabase-js');
     const { getTMDBMovieDetails } = await import('../../lib/services/tmdb-search');
     const { createBasicMovieEntry } = await import('../../lib/services/database-search');
+    
+    console.log(`📦 Imports took ${Date.now() - importStart}ms`);
 
     // Check environment variables
     if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
@@ -550,17 +575,23 @@ export async function getStaticProps({ params }) {
     }
 
     // Create supabase client using the working pattern from 3 weeks ago
+    console.log(`🔌 Creating Supabase client...`);
+    const supabaseStart = Date.now();
     const supabase = createClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL,
       process.env.SUPABASE_SERVICE_ROLE_KEY
     );
+    console.log(`🔌 Supabase client created in ${Date.now() - supabaseStart}ms`);
 
     // Get movie from database
+    console.log(`🗄️ Querying database for movie ${tmdbId}...`);
+    const dbQueryStart = Date.now();
     const { data: movieEntry, error } = await supabase
       .from('movies')
       .select('id, title, year, slug, poster_url, streaming_data, tmdb_id')
       .eq('tmdb_id', tmdbId)
       .single();
+    console.log(`🗄️ Database query took ${Date.now() - dbQueryStart}ms`);
 
     if (!movieEntry || error) {
       // Movie not in database - try TMDB discovery
@@ -712,7 +743,10 @@ export async function getStaticProps({ params }) {
 
     // Simple content check: Does analysis exist for this movie?
     try {
+      console.log(`🧠 Getting analysis for ${movieEntry.title} (${movieEntry.year})...`);
+      const analysisStart = Date.now();
       const analysisData = supabase ? await AnalysisService.getOrGenerate(movieEntry) : null;
+      console.log(`🧠 Analysis service took ${Date.now() - analysisStart}ms`);
       if (analysisData && analysisData.sections && analysisData.sections.length > 0) {
         // Process movie links in analysis content server-side
         console.log(`🔗 Processing movie links for: ${movieEntry.title} (${movieEntry.year})`);
@@ -760,6 +794,7 @@ export async function getStaticProps({ params }) {
     // 🚀 NUCLEAR STRATEGY: Long revalidation for pre-built nuclear pages - aggressive caching
     response.revalidate = response.props.hasAnalysis ? 604800 : 86400; // 7 days for nuclear movies, 24h for others
 
+    console.log(`✅ Dynamic generation completed for ${tmdbId} (total time: ${Date.now() - startTime}ms)`);
     return response;
   } catch (error) {
     console.error('Static generation error:', error);
