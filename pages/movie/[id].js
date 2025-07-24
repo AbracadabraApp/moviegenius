@@ -690,38 +690,28 @@ export async function getStaticProps({ params }) {
     const { getTMDBMovieDetails } = await import('../../lib/services/tmdb-search');
     const { createBasicMovieEntry } = await import('../../lib/services/database-search');
 
-    // Skip environment check for now - allow page to render without database
-    // This will let ContentPlaceholder handle the API calls client-side
-    let supabase = null;
-    try {
-      if (process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY) {
-        supabase = createClient(
-          process.env.NEXT_PUBLIC_SUPABASE_URL,
-          process.env.SUPABASE_SERVICE_ROLE_KEY
-        );
-      } else {
-        console.log('Supabase not configured, rendering page without server-side data');
-      }
-    } catch (error) {
-      console.log('Supabase client creation failed, continuing without server-side data');
-      supabase = null;
+    // Check environment variables
+    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
+      console.error('🚨 Missing Supabase environment variables:', {
+        NEXT_PUBLIC_SUPABASE_URL: !!process.env.NEXT_PUBLIC_SUPABASE_URL,
+        SUPABASE_SERVICE_ROLE_KEY: !!process.env.SUPABASE_SERVICE_ROLE_KEY,
+        tmdbId
+      });
+      return { notFound: true };
     }
 
-    // Supabase client created above
+    // Create supabase client using the working pattern from 3 weeks ago
+    const supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL,
+      process.env.SUPABASE_SERVICE_ROLE_KEY
+    );
 
-    // Get movie from database if available
-    let movieEntry = null;
-    let error = null;
-    
-    if (supabase) {
-      const result = await supabase
-        .from('movies')
-        .select('id, title, year, slug, poster_url, streaming_data, tmdb_id')
-        .eq('tmdb_id', tmdbId)
-        .single();
-      movieEntry = result.data;
-      error = result.error;
-    }
+    // Get movie from database
+    const { data: movieEntry, error } = await supabase
+      .from('movies')
+      .select('id, title, year, slug, poster_url, streaming_data, tmdb_id')
+      .eq('tmdb_id', tmdbId)
+      .single();
 
     if (!movieEntry || error) {
       // Movie not in database - try TMDB discovery
@@ -737,21 +727,7 @@ export async function getStaticProps({ params }) {
 
         if (!tmdbMovie) {
           console.error(`🚨 TMDB movie not found for ID: ${tmdbId}`);
-          // Return a placeholder page instead of 404
-          return {
-            props: {
-              title: `Movie ${tmdbId}`,
-              year: new Date().getFullYear(),
-              initialSlug: 'Loading movie information...',
-              initialPoster: '/images/placeholder-poster.jpg',
-              initialStreaming: null,
-              tmdbId: tmdbId,
-              error: null,
-              hasAnalysis: false,
-              source: 'fallback'
-            },
-            revalidate: 60
-          };
+          return { notFound: true };
         }
 
         // Create basic movie entry in database for future reference (skip if no database)
@@ -945,21 +921,7 @@ export async function getStaticProps({ params }) {
       name: error.name,
       tmdbId
     });
-    // Return fallback page instead of 404
-    return {
-      props: {
-        title: `Movie ${tmdbId}`,
-        year: new Date().getFullYear(),
-        initialSlug: 'Loading movie information...',
-        initialPoster: '/images/placeholder-poster.jpg',
-        initialStreaming: null,
-        tmdbId: tmdbId,
-        error: null,
-        hasAnalysis: false,
-        source: 'error_fallback'
-      },
-      revalidate: 60
-    };
+    return { notFound: true };
   }
 }
 
