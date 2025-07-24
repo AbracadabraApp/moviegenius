@@ -64,7 +64,15 @@
     "nuclear:start": "curl -X POST http://localhost:3000/api/nuclear-autonomous -H 'Content-Type: application/json' -d '{\"action\":\"start\"}'",
     "nuclear:stop": "curl -X POST http://localhost:3000/api/nuclear-autonomous -H 'Content-Type: application/json' -d '{\"action\":\"stop\"}'",
     "nuclear:restart": "curl -X POST http://localhost:3000/api/nuclear-autonomous -H 'Content-Type: application/json' -d '{\"action\":\"restart\"}'",
-    "nuclear:autonomous": "curl -s http://localhost:3000/api/nuclear-autonomous | jq"
+    "nuclear:autonomous": "curl -s http://localhost:3000/api/nuclear-autonomous | jq",
+    "test:nuclear": "jest --testPathPattern=\"nuclear\"",
+    "test:nuclear-content": "jest nuclear-static-transformation.test.js",
+    "test:nuclear-performance": "jest nuclear-performance-validation.test.js", 
+    "test:nuclear-production": "jest nuclear-production-reality.test.js",
+    "test:nuclear-build": "jest nuclear-build-process.test.js",
+    "build:nuclear-static": "echo 'Nuclear static build not implemented yet - run tests to validate requirements'",
+    "validate:nuclear-static": "npm run test:nuclear",
+    "deploy:nuclear-static": "echo 'Deploy process not implemented - ensure all tests pass first'"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.53.0",
