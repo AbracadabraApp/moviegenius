@@ -692,7 +692,11 @@ export async function getStaticProps({ params }) {
 
     // Check environment variables
     if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
-      console.error('Missing Supabase environment variables');
+      console.error('🚨 Missing Supabase environment variables:', {
+        NEXT_PUBLIC_SUPABASE_URL: !!process.env.NEXT_PUBLIC_SUPABASE_URL,
+        SUPABASE_SERVICE_ROLE_KEY: !!process.env.SUPABASE_SERVICE_ROLE_KEY,
+        tmdbId
+      });
       return { notFound: true };
     }
 
@@ -722,6 +726,7 @@ export async function getStaticProps({ params }) {
         const tmdbMovie = await getTMDBMovieDetails(tmdbId);
 
         if (!tmdbMovie) {
+          console.error(`🚨 TMDB movie not found for ID: ${tmdbId}`);
           return { notFound: true };
         }
 
@@ -781,7 +786,7 @@ export async function getStaticProps({ params }) {
             source: 'tmdb_discovery',
             // Note: overview intentionally omitted to prevent TMDB summary contamination
           },
-          revalidate: 60, // ISR for TMDB discoveries
+          revalidate: 3600, // ISR for TMDB discoveries - 1 hour (was 60s)
         };
 
         // Add analysis data if generated
@@ -838,7 +843,7 @@ export async function getStaticProps({ params }) {
             error: 'Movie not found in database or TMDB',
             hasAnalysis: false,
           },
-          revalidate: 60,
+          revalidate: 3600, // 1 hour for TMDB discovery (was 60s)
         };
       }
     }
@@ -896,20 +901,26 @@ export async function getStaticProps({ params }) {
         response.props.hasAnalysis = true;
       } else {
         // No analysis - show clean empty page
-        response.revalidate = 3600; // Revalidate hourly for potential new content
+        response.revalidate = 86400; // Revalidate daily for potential new content (was 1h)
       }
     } catch (error) {
       console.log('Analysis generation failed for movie:', movieEntry.tmdb_id, error.message);
       // Show clean empty page on error
-      response.revalidate = 3600;
+      response.revalidate = 86400; // Revalidate daily (was 1h)
     }
 
-    // 🚀 NUCLEAR STRATEGY: Long revalidation for pre-built nuclear pages
-    response.revalidate = response.props.hasAnalysis ? 86400 : 3600; // 24h for nuclear movies, 1h for others
+    // 🚀 NUCLEAR STRATEGY: Long revalidation for pre-built nuclear pages - aggressive caching
+    response.revalidate = response.props.hasAnalysis ? 604800 : 86400; // 7 days for nuclear movies, 24h for others
 
     return response;
   } catch (error) {
-    console.error('Static generation error:', error);
+    console.error('🚨 Static generation error:', error);
+    console.error('🚨 Error details:', {
+      message: error.message,
+      stack: error.stack,
+      name: error.name,
+      tmdbId
+    });
     return { notFound: true };
   }
 }
