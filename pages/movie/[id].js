@@ -483,7 +483,10 @@ const styles = {
 // Nuclear Static Check - check for pre-built static data first
 async function checkNuclearStatic(tmdbId, fs, path) {
   try {
-    const nuclearPath = path.join(process.cwd(), 'public', 'nuclear-static', `${tmdbId}.json`);
+    const cwd = process.cwd();
+    const nuclearPath = path.join(cwd, 'public', 'nuclear-static', `${tmdbId}.json`);
+    
+    console.log(`🔍 Nuclear check for ${tmdbId}: cwd=${cwd}, path=${nuclearPath}`);
 
     if (fs.existsSync(nuclearPath)) {
       console.log(`🚀 Nuclear cache HIT for movie ${tmdbId}`);
@@ -504,6 +507,8 @@ async function checkNuclearStatic(tmdbId, fs, path) {
       delete data.__N_SSG;
 
       return data;
+    } else {
+      console.log(`❌ Nuclear cache MISS for movie ${tmdbId}: file not found at ${nuclearPath}`);
     }
   } catch (error) {
     console.log(`Nuclear check failed for ${tmdbId}:`, error.message);
