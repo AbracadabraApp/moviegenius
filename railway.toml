@@ -11,7 +11,7 @@ healthcheckTimeout = 300
 [env]
 NEXT_TELEMETRY_DISABLED = "1"
 NODE_ENV = "production"
-FORCE_DEPLOY = "2025-07-24T02:34:00Z"
+FORCE_DEPLOY = "2025-07-24T16:18:00Z"
 
 # Force nixpacks override - Railway should not use Docker
 [settings]
