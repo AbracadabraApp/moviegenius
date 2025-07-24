@@ -385,7 +385,7 @@ function ContentPlaceholder({ source, title, year, tmdbId }) {
         console.log(`🔍 Checking analysis for ${title} (${year}) - poll ${pollCount + 1}/${maxPolls}`);
         const response = await fetch(`/api/movie-analysis?tmdbId=${tmdbId}`);
         
-        if (response.status === 404) {
+        if (response.status === 404 || response.status === 405) {
           // For TMDB discoveries, this might be temporary - wait a bit before failing
           if (source === 'tmdb_discovery' && pollCount < 3) {
             console.log(`TMDB discovery: Movie ${tmdbId} not yet in database, continuing...`);
