@@ -69,6 +69,9 @@ export default async function handler(req, res) {
         .eq('tmdb_id', parseInt(tmdbId));
     }
 
+    // Set aggressive cache headers for fresh data too
+    res.setHeader('Cache-Control', 'public, s-maxage=2592000, stale-while-revalidate=5184000'); // 30 days
+    
     return res.status(200).json({
       videoId: trailer.key,
       title: trailer.name,
@@ -77,9 +80,6 @@ export default async function handler(req, res) {
       official: trailer.official,
       source: 'fresh',
     });
-    
-    // Set aggressive cache headers for fresh data too
-    res.setHeader('Cache-Control', 'public, s-maxage=2592000, stale-while-revalidate=5184000'); // 30 days
   } catch (error) {
     console.error('Error fetching trailer:', error);
     return res.status(500).json({
