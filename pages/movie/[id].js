@@ -24,9 +24,7 @@ const EnhancedFeaturedFilmsSection = dynamic(() => import('../../components/Enha
 const ExploreFurtherSection = dynamic(() => import('../../components/ExploreFurtherSection'), {
   loading: () => <div style={{ padding: '16px' }}>Loading...</div>
 });
-const EntityLinkedText = dynamic(() => import('../../components/EntityLinkedText'), {
-  loading: () => <div>Loading text...</div>
-});
+import EntityLinkedText from '../../components/EntityLinkedText';
 const CategoryBrowse = dynamic(() => import('../../components/CategoryBrowse'), {
   loading: () => <div style={{ padding: '16px' }}>Loading categories...</div>
 });
