@@ -1,183 +1,169 @@
-# Supabase CLI
+# 🎬 MovieGenius
 
-[![Coverage Status](https://coveralls.io/repos/github/supabase/cli/badge.svg?branch=main)](https://coveralls.io/github/supabase/cli?branch=main) [![Bitbucket Pipelines](https://img.shields.io/bitbucket/pipelines/supabase-cli/setup-cli/master?style=flat-square&label=Bitbucket%20Canary)](https://bitbucket.org/supabase-cli/setup-cli/pipelines) [![Gitlab Pipeline Status](https://img.shields.io/gitlab/pipeline-status/sweatybridge%2Fsetup-cli?label=Gitlab%20Canary)
-](https://gitlab.com/sweatybridge/setup-cli/-/pipelines)
+**AI-Powered Movie Discovery Platform**
 
-[Supabase](https://supabase.io) is an open source Firebase alternative. We're building the features of Firebase using enterprise-grade open source tools.
+MovieGenius is a sophisticated movie discovery platform that combines cinematic analysis with intelligent recommendations. Built with Next.js and powered by Claude AI, it offers deep film analysis, personalized recommendations, and lightning-fast performance through our nuclear static generation system.
 
-This repository contains all the functionality for Supabase CLI.
+## ✨ Key Features
 
-- [x] Running Supabase locally
-- [x] Managing database migrations
-- [x] Creating and deploying Supabase Functions
-- [x] Generating types directly from your database schema
-- [x] Making authenticated HTTP requests to [Management API](https://supabase.com/docs/reference/api/introduction)
+- **🧠 AI-Powered Analysis**: Deep cinematic analysis using Claude AI for 6000+ movies
+- **⚡ Nuclear Static System**: Sub-200ms page loads with pre-generated static content
+- **🔗 Intelligent Linking**: Automatic cross-referencing between related films
+- **📱 Mobile-First Design**: Optimized phone-frame interface for mobile discovery
+- **🎯 Smart Recommendations**: Context-aware film suggestions and discovery paths
+- **⚙️ Zero-Waste Architecture**: Efficient content generation with cost optimization
 
-## Getting started
+## 🚀 Quick Start
 
-### Install the CLI
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+- Supabase account
+- Claude AI API key
 
-Available via [NPM](https://www.npmjs.com) as dev dependency. To install:
-
-```bash
-npm i supabase --save-dev
-```
-
-To install the beta release channel:
+### Installation
 
 ```bash
-npm i supabase@beta --save-dev
+# Clone the repository
+git clone https://github.com/AbracadabraApp/moviegenius.git
+cd moviegenius
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env.local
+# Edit .env.local with your API keys
+
+# Run development server
+npm run dev
 ```
 
-When installing with yarn 4, you need to disable experimental fetch with the following nodejs config.
+Visit `http://localhost:3000` to see MovieGenius in action.
 
-```
-NODE_OPTIONS=--no-experimental-fetch yarn add supabase
-```
+## 🏗️ Architecture
 
-> **Note**
-For Bun versions below v1.0.17, you must add `supabase` as a [trusted dependency](https://bun.sh/guides/install/trusted) before running `bun add -D supabase`.
+### Core Systems
 
-<details>
-  <summary><b>macOS</b></summary>
+- **Nuclear Static Generation**: Pre-built movie pages for instant loading
+- **Analysis Service**: Claude AI integration for movie analysis
+- **Entity Linking**: Automatic movie cross-referencing
+- **Cache Optimization**: Multi-layer caching (Redis + HTTP + ISR)
+- **Railway Deployment**: Production hosting on Railway
 
-  Available via [Homebrew](https://brew.sh). To install:
+### Performance
 
-  ```sh
-  brew install supabase/tap/supabase
-  ```
+- **Page Load Times**: <200ms for nuclear static pages
+- **Cache Hit Rate**: >95% for optimized content delivery
+- **Analysis Coverage**: 6000+ movies with rich AI-generated content
+- **Mobile Optimization**: Responsive design with phone-frame UI
 
-  To install the beta release channel:
-  
-  ```sh
-  brew install supabase/tap/supabase-beta
-  brew link --overwrite supabase-beta
-  ```
-  
-  To upgrade:
+## 📚 Documentation
 
-  ```sh
-  brew upgrade supabase
-  ```
-</details>
+**📖 [Complete Documentation](docs/README.md)** - Comprehensive guide with organized structure
 
-<details>
-  <summary><b>Windows</b></summary>
+### Quick Links
+- **🚀 [Getting Started](docs/getting-started/)** - Development setup and code standards
+- **🏗️ [Architecture](docs/architecture/)** - Nuclear static system and performance analysis  
+- **⚙️ [Operations](docs/operations/)** - Deployment, caching, and rollback procedures
+- **🧪 [Testing](docs/testing/)** - Testing framework and engineering guidelines
+- **📊 [Project Status](docs/project-status/)** - Launch readiness and system analysis
 
-  Available via [Scoop](https://scoop.sh). To install:
+### Essential Documentation
+- **[API Reference](docs/API_REFERENCE.md)** - Complete API endpoint documentation
+- **[Contributing Guide](docs/CONTRIBUTING.md)** - How to contribute to MovieGenius
+- **[Troubleshooting](docs/TROUBLESHOOTING.md)** - Common issues and solutions
 
-  ```powershell
-  scoop bucket add supabase https://github.com/supabase/scoop-bucket.git
-  scoop install supabase
-  ```
+## 🛠️ Development Commands
 
-  To upgrade:
-
-  ```powershell
-  scoop update supabase
-  ```
-</details>
-
-<details>
-  <summary><b>Linux</b></summary>
-
-  Available via [Homebrew](https://brew.sh) and Linux packages.
-
-  #### via Homebrew
-
-  To install:
-
-  ```sh
-  brew install supabase/tap/supabase
-  ```
-
-  To upgrade:
-
-  ```sh
-  brew upgrade supabase
-  ```
-
-  #### via Linux packages
-
-  Linux packages are provided in [Releases](https://github.com/supabase/cli/releases). To install, download the `.apk`/`.deb`/`.rpm`/`.pkg.tar.zst` file depending on your package manager and run the respective commands.
-
-  ```sh
-  sudo apk add --allow-untrusted <...>.apk
-  ```
-
-  ```sh
-  sudo dpkg -i <...>.deb
-  ```
-
-  ```sh
-  sudo rpm -i <...>.rpm
-  ```
-
-  ```sh
-  sudo pacman -U <...>.pkg.tar.zst
-  ```
-</details>
-
-<details>
-  <summary><b>Other Platforms</b></summary>
-
-  You can also install the CLI via [go modules](https://go.dev/ref/mod#go-install) without the help of package managers.
-
-  ```sh
-  go install github.com/supabase/cli@latest
-  ```
-
-  Add a symlink to the binary in `$PATH` for easier access:
-
-  ```sh
-  ln -s "$(go env GOPATH)/bin/cli" /usr/bin/supabase
-  ```
-
-  This works on other non-standard Linux distros.
-</details>
-
-<details>
-  <summary><b>Community Maintained Packages</b></summary>
-
-  Available via [pkgx](https://pkgx.sh/). Package script [here](https://github.com/pkgxdev/pantry/blob/main/projects/supabase.com/cli/package.yml).
-  To install in your working directory:
-
-  ```bash
-  pkgx install supabase
-  ```
-
-  Available via [Nixpkgs](https://nixos.org/). Package script [here](https://github.com/NixOS/nixpkgs/blob/master/pkgs/development/tools/supabase-cli/default.nix).
-</details>
-
-### Run the CLI
-
+### Core Development
 ```bash
-supabase bootstrap
+npm run dev          # Start development server
+npm run build        # Build production bundle
+npm run start        # Start production server
+npm run lint         # Run ESLint
+npm run typecheck    # Run TypeScript checks
 ```
 
-Or using npx:
-
+### Nuclear Static System
 ```bash
-npx supabase bootstrap
+npm run nuclear:batch         # Generate nuclear static files
+npm run nuclear:test          # Test nuclear generation (5 files)
+npm run nuclear:process       # Process 50 files
+npm run nuclear:expand        # Process 1000 files
+npm run build:nuclear-static  # Build complete nuclear static system
 ```
 
-The bootstrap command will guide you through the process of setting up a Supabase project using one of the [starter](https://github.com/supabase-community/supabase-samples/blob/main/samples.json) templates.
-
-## Docs
-
-Command & config reference can be found [here](https://supabase.com/docs/reference/cli/about).
-
-## Breaking changes
-
-We follow semantic versioning for changes that directly impact CLI commands, flags, and configurations.
-
-However, due to dependencies on other service images, we cannot guarantee that schema migrations, seed.sql, and generated types will always work for the same CLI major version. If you need such guarantees, we encourage you to pin a specific version of CLI in package.json.
-
-## Developing
-
-To run from source:
-
-```sh
-# Go >= 1.22
-go run . help
+### Testing
+```bash
+npm run test                    # Run all tests
+npm run test:nuclear           # Run nuclear static tests
+npm run test:nuclear-content   # Test content transformation
+npm run test:nuclear-performance # Test performance metrics
+npm run validate:nuclear-static # Validate nuclear system
 ```
+
+### Nuclear System Management
+```bash
+npm run nuclear:start    # Start autonomous nuclear system
+npm run nuclear:stop     # Stop autonomous nuclear system  
+npm run nuclear:restart  # Restart autonomous nuclear system
+npm run nuclear:status   # Check nuclear system status
+```
+
+## 📊 System Status
+
+- **🟢 Production Status**: Launch Ready
+- **🟢 Nuclear System**: 99.3% Complete (6024/6065 files)
+- **🟢 Performance**: <200ms average page load
+- **🟢 Analysis Coverage**: 6000+ movies analyzed
+- **🟢 Cache Efficiency**: >95% hit rate
+
+## 🤝 Contributing
+
+1. Read our [Engineering Decision Rules](ENGINEERING-DECISION-RULES.md)
+2. Follow [Code Standards](CODE-STANDARDS.md)
+3. Ensure tests pass: `npm run test`
+4. Submit pull request with clear description
+
+## 🔧 Troubleshooting
+
+### Common Issues
+
+**Movie pages not loading:**
+- Check nuclear static files: `ls public/nuclear-static/`
+- Verify environment variables in `.env.local`
+- Check Railway deployment status
+
+**Nuclear system issues:**
+- Run nuclear tests: `npm run test:nuclear`
+- Check system status: `npm run nuclear:status`
+- Review [Nuclear Testing Framework](NUCLEAR_STATIC_TESTING_FRAMEWORK.md)
+
+**Performance issues:**
+- Check cache status: `npm run cache:status`
+- Review [Performance Analysis](PERFORMANCE-ANALYSIS.md)
+- Monitor Railway logs
+
+### Get Help
+
+- 📖 Check our comprehensive documentation above
+- 🐛 Report issues on GitHub
+- 📧 Contact the development team
+
+## 📜 License
+
+MIT License - see [LICENSE](LICENSE) file for details.
+
+## 🏆 Acknowledgments
+
+- **Claude AI** for powerful movie analysis capabilities
+- **TMDB** for comprehensive movie data
+- **Railway** for reliable deployment platform
+- **Supabase** for robust database infrastructure
+
+---
+
+**Built with ❤️ for movie lovers who deserve better discovery experiences.**
+
+*Last updated: July 24, 2025*
