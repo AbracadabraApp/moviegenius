@@ -31,6 +31,24 @@ const nextConfig = {
           contextRegExp: /moment$/,
         })
       );
+      
+      // Fix CommonJS/ES module conflicts in development
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        path: false,
+        crypto: false,
+        os: false,
+        stream: false,
+        util: false,
+        net: false,
+        tls: false,
+        dns: false,
+        child_process: false,
+        cluster: false,
+        dgram: false,
+      };
+      
       return config;
     }
     
@@ -72,7 +90,16 @@ const nextConfig = {
       config.externals.push({
         'ioredis': 'commonjs ioredis',
         'redis': 'commonjs redis',
+        'fs': 'commonjs fs',
+        'path': 'commonjs path',
+        '@supabase/supabase-js': 'commonjs @supabase/supabase-js',
       });
+      
+      // Force ES module resolution for client-side code
+      config.resolve.extensionAlias = {
+        '.js': ['.js', '.ts', '.tsx', '.jsx'],
+        '.mjs': ['.mjs', '.js'],
+      };
     }
     
     // 4. Optimize chunk splitting for MovieGenius architecture
