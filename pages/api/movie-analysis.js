@@ -302,9 +302,9 @@ async function movieAnalysisHandler(req, res) {
       }
     );
 
-    // Set cache headers and return result
+    // Set cache headers and return result - 30 days for max speed
     console.timeEnd(`🎬 API analysis for ${title} (${year})`);
-    res.setHeader('Cache-Control', 'public, s-maxage=604800, stale-while-revalidate=1209600');
+    res.setHeader('Cache-Control', 'public, s-maxage=2592000, stale-while-revalidate=5184000');
     res.status(200).json(analysisResult);
   } catch (error) {
     console.timeEnd(`🎬 API analysis for ${title} (${year})`);

@@ -37,16 +37,16 @@ export default async function handler(req, res) {
         ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
         : '/images/placeholder-poster.jpg';
 
-      // Cache TMDB data for 7 days - movie metadata rarely changes
-      res.setHeader('Cache-Control', 'public, s-maxage=604800, stale-while-revalidate=1209600');
+      // Cache TMDB data for 30 days - movie metadata is permanent (was 7 days)
+      res.setHeader('Cache-Control', 'public, s-maxage=2592000, stale-while-revalidate=5184000');
       res.status(200).json({
         poster: posterUrl,
         tmdb_id: movie.id,
         // Note: overview intentionally omitted to prevent TMDB summary contamination
       });
     } else {
-      // Cache "not found" results for 1 hour
-      res.setHeader('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=7200');
+      // Cache "not found" results for 24 hours (was 1 hour)
+      res.setHeader('Cache-Control', 'public, s-maxage=86400, stale-while-revalidate=172800');
       res.status(200).json({
         poster: '/images/placeholder-poster.jpg',
         // Note: overview intentionally omitted to prevent TMDB summary contamination
