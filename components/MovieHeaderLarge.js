@@ -89,13 +89,9 @@ export default function MovieHeaderLarge({
     }
   }, [mediaId]);
 
-  // Progressive loading: Show content after a brief delay to allow images to load
+  // Progressive loading: Show content immediately for production stability
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowContent(true);
-    }, 300); // Give 300ms for hero image loading (longer than MediaCard)
-
-    return () => clearTimeout(timer);
+    setShowContent(true);
   }, []);
 
   // Reset loading state when poster changes
@@ -334,6 +330,11 @@ export default function MovieHeaderLarge({
           {showAddedAnimation && <div style={styles.addedAnimation}>+ added</div>}
         </div>
 
+        {/* Title and year below poster */}
+        <div style={styles.titleContainer}>
+          <div style={styles.title}>{title}</div>
+          <div style={styles.year}>({year})</div>
+        </div>
 
         {/* Streaming availability - only show if we have valid data (not TBD placeholder) 
           TBD = placeholder when TMDB/Claude APIs haven't provided streaming data yet */}
