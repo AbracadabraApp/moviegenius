@@ -28,8 +28,8 @@ export function usePredictiveLoading(pageType, movieId, metadata = {}) {
       if (typeof window === 'undefined') return;
       
       try {
-        const { getPredictiveLoader } = await import('../lib/predictive-loader.js');
-        predictiveLoaderRef.current = getPredictiveLoader();
+        const { getClientPredictiveLoader } = await import('../lib/predictive-loader-client.js');
+        predictiveLoaderRef.current = getClientPredictiveLoader();
 
         // Track initial page view if not already tracked
         if (!hasTrackedRef.current && movieId) {
