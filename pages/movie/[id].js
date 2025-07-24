@@ -669,7 +669,15 @@ export async function getStaticProps({ params }) {
   const { id } = params;
   const tmdbId = parseInt(id, 10);
 
+  console.log('🚀 getStaticProps started:', {
+    tmdbId,
+    rawId: id,
+    environment: process.env.NODE_ENV,
+    timestamp: new Date().toISOString()
+  });
+
   if (isNaN(tmdbId) || tmdbId <= 0) {
+    console.error('🚨 Invalid movie ID:', { id, tmdbId });
     return { props: { error: 'Invalid movie ID' } };
   }
 
@@ -681,6 +689,8 @@ export async function getStaticProps({ params }) {
   // }
 
   try {
+    console.log('🔧 Starting server-side imports...');
+    
     // Server-side imports
     const { AnalysisService } = await import('../../lib/services/analysis-service');
     const { processAnalysisContent, splitContentAtSubheads } = await import('../../lib/movie-analysis-linker');
@@ -690,28 +700,46 @@ export async function getStaticProps({ params }) {
     const { getTMDBMovieDetails } = await import('../../lib/services/tmdb-search');
     const { createBasicMovieEntry } = await import('../../lib/services/database-search');
 
+    console.log('✅ Server-side imports completed');
+    
     // Check environment variables
+    const envCheck = {
+      NEXT_PUBLIC_SUPABASE_URL: !!process.env.NEXT_PUBLIC_SUPABASE_URL,
+      SUPABASE_SERVICE_ROLE_KEY: !!process.env.SUPABASE_SERVICE_ROLE_KEY,
+      NEXT_PUBLIC_TMDB_API_KEY: !!process.env.NEXT_PUBLIC_TMDB_API_KEY,
+      ANTHROPIC_API_KEY: !!process.env.ANTHROPIC_API_KEY,
+      NODE_ENV: process.env.NODE_ENV,
+      tmdbId
+    };
+    
+    console.log('🔍 Environment check:', envCheck);
+    
     if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
-      console.error('🚨 Missing Supabase environment variables:', {
-        NEXT_PUBLIC_SUPABASE_URL: !!process.env.NEXT_PUBLIC_SUPABASE_URL,
-        SUPABASE_SERVICE_ROLE_KEY: !!process.env.SUPABASE_SERVICE_ROLE_KEY,
-        tmdbId
-      });
+      console.error('🚨 Missing Supabase environment variables - RETURNING 404');
       return { notFound: true };
     }
 
     // Create supabase client using the working pattern from 3 weeks ago
+    console.log('🔗 Creating Supabase client...');
     const supabase = createClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL,
       process.env.SUPABASE_SERVICE_ROLE_KEY
     );
+    console.log('✅ Supabase client created');
 
     // Get movie from database
+    console.log('🎬 Querying database for movie:', tmdbId);
     const { data: movieEntry, error } = await supabase
       .from('movies')
       .select('id, title, year, slug, poster_url, streaming_data, tmdb_id')
       .eq('tmdb_id', tmdbId)
       .single();
+      
+    console.log('📊 Database query result:', {
+      found: !!movieEntry,
+      error: error?.message || null,
+      title: movieEntry?.title || null
+    });
 
     if (!movieEntry || error) {
       // Movie not in database - try TMDB discovery

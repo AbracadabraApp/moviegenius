@@ -31,6 +31,8 @@ export default async function handler(req, res) {
       .single();
 
     if (movie?.trailer_url) {
+      // Set aggressive cache headers - trailers don't change
+      res.setHeader('Cache-Control', 'public, s-maxage=2592000, stale-while-revalidate=5184000'); // 30 days
       return res.status(200).json({
         videoId: movie.trailer_url,
         source: 'cache',
@@ -75,6 +77,9 @@ export default async function handler(req, res) {
       official: trailer.official,
       source: 'fresh',
     });
+    
+    // Set aggressive cache headers for fresh data too
+    res.setHeader('Cache-Control', 'public, s-maxage=2592000, stale-while-revalidate=5184000'); // 30 days
   } catch (error) {
     console.error('Error fetching trailer:', error);
     return res.status(500).json({

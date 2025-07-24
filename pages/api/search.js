@@ -88,6 +88,9 @@ export default async function handler(req, res) {
 
     console.log(`✅ Search success: "${query.trim()}" -> ${movies.length} results`);
 
+    // Set aggressive cache headers for search results - 24 hours
+    res.setHeader('Cache-Control', 'public, s-maxage=86400, stale-while-revalidate=172800');
+
     return res.status(200).json({
       movies,
       query: query.trim(),

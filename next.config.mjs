@@ -90,9 +90,6 @@ const nextConfig = {
       config.externals.push({
         'ioredis': 'commonjs ioredis',
         'redis': 'commonjs redis',
-        'fs': 'commonjs fs',
-        'path': 'commonjs path',
-        '@supabase/supabase-js': 'commonjs @supabase/supabase-js',
       });
       
       // Force ES module resolution for client-side code
@@ -228,23 +225,53 @@ const nextConfig = {
           },
         ],
       },
-      // Movie pages - cache for 1 hour with stale-while-revalidate
+      // Movie pages - cache for 7 days with stale-while-revalidate (was 1h)
       {
         source: '/movie/:path*',
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, s-maxage=3600, stale-while-revalidate=86400',
+            value: 'public, s-maxage=604800, stale-while-revalidate=2592000',
           },
         ],
       },
-      // API routes - optimized caching
+      // API movie analysis - cache for 30 days (was 24h)
       {
         source: '/api/movie-analysis',
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, s-maxage=86400, stale-while-revalidate=604800',
+            value: 'public, s-maxage=2592000, stale-while-revalidate=5184000',
+          },
+        ],
+      },
+      // API health endpoint - cache for 1 hour
+      {
+        source: '/api/health',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, s-maxage=3600, stale-while-revalidate=7200',
+          },
+        ],
+      },
+      // TMDB API endpoints - cache for 30 days
+      {
+        source: '/api/tmdb:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, s-maxage=2592000, stale-while-revalidate=5184000',
+          },
+        ],
+      },
+      // Search endpoints - cache for 24 hours (was uncached)
+      {
+        source: '/api/search:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, s-maxage=86400, stale-while-revalidate=172800',
           },
         ],
       },
