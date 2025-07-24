@@ -75,14 +75,41 @@ async function main() {
       .not('tmdb_id', 'is', null);
 
     // Get nuclear candidates (top 1,000 movies) - respecting completion flags
-    const { data: nuclearCandidates } = await supabase
+    // TEMPORARY FIX: Since has_linked_analysis column doesn't exist yet,
+    // we'll get all movies and filter out those with existing analysis manually
+    const { data: allMovies, error: moviesError } = await supabase
       .from('movies')
-      .select('id, title, year, tmdb_id, has_linked_analysis, slug_complete')
+      .select('id, title, year, tmdb_id')
       .not('tmdb_id', 'is', null)
-      .not('has_linked_analysis', 'is', true)  // Skip movies with complete analysis
-      .not('slug_complete', 'is', true)        // Skip movies with complete slugs
       .order('created_at', { ascending: false })
-      .limit(1000);
+      .limit(2000);  // Get more to account for filtering
+    
+    if (moviesError) {
+      console.error('❌ Error fetching movies:', moviesError.message);
+      process.exit(1);
+    }
+    
+    if (!allMovies || allMovies.length === 0) {
+      console.log('❌ No movies found with TMDB data');
+      process.exit(0);
+    }
+    
+    console.log(`📊 Found ${allMovies.length} movies with TMDB data`);
+    
+    // Get existing analyses to filter out movies that already have them
+    const movieIds = allMovies.map(m => m.id);
+    const { data: existingAnalyses } = await supabase
+      .from('movie_analyses')
+      .select('movie_id')
+      .eq('analysis_type', 'page_analysis')
+      .in('movie_id', movieIds);
+    
+    const analyzedMovieIds = new Set(existingAnalyses?.map(a => a.movie_id) || []);
+    
+    // Filter out movies that already have analysis (zero-waste protection)
+    const nuclearCandidates = allMovies
+      .filter(movie => !analyzedMovieIds.has(movie.id))
+      .slice(0, 1000);  // Limit to 1000 candidates
 
     if (!nuclearCandidates || nuclearCandidates.length === 0) {
       console.log('❌ No nuclear candidates found - all movies have complete analysis/slugs');
@@ -160,20 +187,32 @@ async function main() {
     // Initialize batch generator
     const batchGenerator = new NuclearBatchGenerator();
 
-    // Process movies
-    console.log('\n🚀 Starting batch processing...');
-    const movieIds = moviesToProcess.map(m => m.id);
+    // Process movies with comprehensive performance monitoring
+    console.log('\n🚀 Starting nuclear batch processing with performance monitoring...');
+    console.log(`📊 Processing ${moviesToProcess.length} movies with batch API (50% savings) + prompt caching (90% savings)`);
+    
+    const processingMovieIds = moviesToProcess.map(m => m.id);
+    const startTime = Date.now();
 
-    const results = await batchGenerator.generateBulkAnalysis(movieIds, {
+    const results = await batchGenerator.generateBulkAnalysis(processingMovieIds, {
       maxConcurrency: options.maxConcurrency,
       batchSize: Math.min(50, moviesToProcess.length), // Smaller batches for safety
     });
 
-    console.log('\n✅ Batch processing complete!');
-    console.log(
-      `📊 Results: ${results.successfulAnalyses} successful, ${results.failedAnalyses} failed`
-    );
-    console.log(`💰 Total cost: $${results.totalCost.toFixed(4)}`);
+    const totalTime = Date.now() - startTime;
+    const avgTimePerMovie = totalTime / moviesToProcess.length;
+
+    console.log('\n✅ Nuclear batch processing complete!');
+    console.log(`⏱️  Total time: ${(totalTime / 1000).toFixed(1)}s`);
+    console.log(`⚡ Average per movie: ${(avgTimePerMovie / 1000).toFixed(1)}s`);
+    console.log(`📊 Results: ${results.successfulAnalyses} successful, ${results.failedAnalyses} failed`);
+    console.log(`💰 Total cost: $${results.totalCost.toFixed(4)} (with batch + caching optimizations)`);
+    console.log(`🎯 Success rate: ${((results.successfulAnalyses / moviesToProcess.length) * 100).toFixed(1)}%`);
+    
+    // Calculate cost savings vs individual API calls
+    const individualCostEstimate = moviesToProcess.length * 0.015; // $0.015 per individual call
+    const savings = ((individualCostEstimate - results.totalCost) / individualCostEstimate * 100);
+    console.log(`💡 Cost savings vs individual calls: ${savings.toFixed(1)}% ($${(individualCostEstimate - results.totalCost).toFixed(4)} saved)`);
 
     if (results.failedAnalyses > 0) {
       console.log('\n⚠️ Some analyses failed. Check logs for details.');

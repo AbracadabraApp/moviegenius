@@ -16,6 +16,7 @@ import SimpleSearch from '../../components/SimpleSearch';
 import MediaCard from '../../components/MediaCard';
 import BackButton from '../../components/BackButton';
 import EntityLinkedText from '../../components/EntityLinkedText';
+import StreamingAnalysisDisplay from '../../components/StreamingAnalysisDisplay';
 import { filterCurrentMovie } from '../../lib/filterCurrentMovie';
 
 export default function ExplorePage({ pageData, error, topic, context }) {
@@ -88,24 +89,22 @@ export default function ExplorePage({ pageData, error, topic, context }) {
           {context && <p style={styles.contextText}>Exploring in relation to {context}</p>}
         </div>
 
-        {/* Main Content */}
+        {/* Main Content - Streaming Typewriter */}
         <div style={styles.contentSection}>
-          {pageData.sections &&
-            pageData.sections.map((section, index) => (
-              <div key={index} style={styles.sectionContainer}>
-                {section.type === 'text' && (
-                  <div style={styles.textSection}>
-                    <EntityLinkedText
-                      text={section.content}
-                      linkMovies={true}
-                      linkingStyle="on"
-                      style={styles.paragraphText}
-                    />
-                  </div>
-                )}
-                {section.type === 'subhead' && <h2 style={styles.subhead}>{section.content}</h2>}
-              </div>
-            ))}
+          <StreamingAnalysisDisplay
+            movieId={`explore-${topic.replace(/\s+/g, '-')}`}
+            movieTitle={pageData.title}
+            movieYear={context}
+            onComplete={() => console.log('Explore content streaming complete')}
+            onError={(error) => console.error('Explore streaming error:', error)}
+            settings={{
+              speed: 'normal',
+              showCursor: true,
+              skipable: true,
+              autoStart: true,
+              enhancedTypography: true,
+            }}
+          />
 
           {/* Essential Films Section */}
           {pageData.movies && pageData.movies.length > 0 && (

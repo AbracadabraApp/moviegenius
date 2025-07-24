@@ -124,7 +124,7 @@ function validateJSXSyntax(filePath) {
       }
 
       // If we have more closes than opens, this closing tag is orphaned
-      if (closeCount >= openCount) {
+      if (closeCount > openCount) {
         errors.push({
           type: 'orphaned_jsx_closing',
           line: lineNumber,

@@ -9,7 +9,7 @@ import ExplorePromptCard from './ExplorePromptCard';
 import ExploreFurtherSection from './ExploreFurtherSection';
 import FeaturedFilmsSection from './FeaturedFilmsSection';
 import EnhancedHeroPlaceholder from './EnhancedHeroPlaceholder';
-import { getCachedOtherEpisodes, getCachedOtherSeries } from '../lib/genius-config-cache';
+// Server-side functions moved to getStaticProps to prevent client-side bundling
 import { createOptimizedScrollHandler } from '../lib/scroll-throttle';
 import { themeLinks } from '../lib/routes';
 
@@ -17,6 +17,7 @@ export default function GeniusEpisodeTemplate({
   episodeData,
   heroImage,
   estimatedReadTime = '8 min read',
+  otherEpisodes = [], // Passed from getStaticProps
 }) {
   // ALL HOOKS MUST BE CALLED BEFORE ANY EARLY RETURNS
   const [isClient, setIsClient] = useState(false);
@@ -51,15 +52,7 @@ export default function GeniusEpisodeTemplate({
     router.push(`/genius/${episodeData.theme.id}/${episodeData.series.id}`);
   }, [router, episodeData?.theme?.id, episodeData?.series?.id]);
 
-  // 🚀 PERFORMANCE OPTIMIZED: Memoize config-dependent data (98% improvement)
-  const otherEpisodes = useMemo(() => {
-    if (!episodeData?.theme?.id || !episodeData?.series?.id || !episodeData?.episode?.id) return [];
-    return getCachedOtherEpisodes(
-      episodeData.theme.id,
-      episodeData.series.id,
-      episodeData.episode.id
-    );
-  }, [episodeData?.theme?.id, episodeData?.series?.id, episodeData?.episode?.id]);
+  // Other episodes now passed as props from getStaticProps to avoid client-side bundling issues
 
   // 10 Education Themes for Explore More section
   const allEducationThemes = [

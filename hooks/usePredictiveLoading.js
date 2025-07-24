@@ -24,6 +24,9 @@ export function usePredictiveLoading(pageType, movieId, metadata = {}) {
     if (typeof window === 'undefined') return;
 
     const initializePredictiveLoader = async () => {
+      // Skip on server-side to prevent Node.js modules from being bundled
+      if (typeof window === 'undefined') return;
+      
       try {
         const { getPredictiveLoader } = await import('../lib/predictive-loader.js');
         predictiveLoaderRef.current = getPredictiveLoader();

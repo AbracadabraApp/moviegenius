@@ -1,0 +1,256 @@
+{
+  "generatedAt": "2025-01-23T19:30:00Z",
+  "summary": {
+    "totalMoviesNeedingWork": 2773,
+    "categoriesFound": 5,
+    "highPriorityCount": 1000,
+    "mediumPriorityCount": 1772,
+    "lowPriorityCount": 6
+  },
+  "categories": {
+    "hasAnalysisFalse": {
+      "description": "Movies explicitly marked as having no analysis content",
+      "count": 1000,
+      "priority": "HIGH",
+      "fileLocation": "/Users/josh.petersen/moviegenius/clean-movie-urls.json",
+      "issue": "Complete absence of analysis despite being major, well-known films",
+      "sampleMovies": [
+        {
+          "title": "Star Wars",
+          "year": 1977,
+          "tmdbId": 11,
+          "hasAnalysis": false,
+          "impact": "Seminal sci-fi film with no analysis"
+        },
+        {
+          "title": "Citizen Kane", 
+          "year": 1941,
+          "tmdbId": 15,
+          "hasAnalysis": false,
+          "impact": "Often called greatest film ever made - missing analysis"
+        },
+        {
+          "title": "2001: A Space Odyssey",
+          "year": 1968, 
+          "tmdbId": 62,
+          "hasAnalysis": false,
+          "impact": "Kubrick masterpiece with no content"
+        },
+        {
+          "title": "Apocalypse Now",
+          "year": 1979,
+          "tmdbId": 28,
+          "hasAnalysis": false,
+          "impact": "Vietnam War epic needing analysis"
+        },
+        {
+          "title": "Forrest Gump",
+          "year": 1994,
+          "tmdbId": 13,
+          "hasAnalysis": false,
+          "impact": "Cultural phenomenon without coverage"
+        },
+        {
+          "title": "Finding Nemo",
+          "year": 2003,
+          "tmdbId": 12,
+          "hasAnalysis": false,
+          "impact": "Pixar breakthrough missing analysis"
+        },
+        {
+          "title": "American Beauty",
+          "year": 1999,
+          "tmdbId": 14,
+          "hasAnalysis": false,
+          "impact": "Oscar winner with no content"
+        },
+        {
+          "title": "Eternal Sunshine of the Spotless Mind",
+          "year": 2004,
+          "tmdbId": 38,
+          "hasAnalysis": false,
+          "impact": "Innovative narrative structure unexplored"
+        }
+      ]
+    },
+    "discoveredMovies": {
+      "description": "Movies catalogued but never processed for analysis content",
+      "count": 1772,
+      "priority": "MEDIUM",
+      "fileLocation": "/Users/josh.petersen/moviegenius/data/discovered-movies.json",
+      "issue": "Basic metadata only - no analysis fields created",
+      "sampleMovies": [
+        {
+          "title": "(500) Days of Summer",
+          "year": 2009,
+          "tmdbId": 19913,
+          "slug": "Non-linear story of a romance told through fragmented memories",
+          "streamingData": "Hulu",
+          "issue": "Popular indie film with no analysis content"
+        },
+        {
+          "title": "[REC]",
+          "year": 2007,
+          "tmdbId": 8329,
+          "slug": "Spanish found footage horror that redefined the zombie genre",
+          "streamingData": "Shudder",
+          "issue": "Influential horror film needs analysis"
+        },
+        {
+          "title": "12 Angry Men",
+          "year": 1957,
+          "tmdbId": 389,
+          "slug": "Classic courtroom drama exploring justice and prejudice",
+          "streamingData": "Criterion",
+          "issue": "Film school staple missing from analysis"
+        },
+        {
+          "title": "127 Hours",
+          "year": 2010,
+          "tmdbId": 44115,
+          "slug": "Danny Boyle's survival thriller based on true events",
+          "streamingData": "Netflix",
+          "issue": "Technical achievement in minimalist storytelling"
+        },
+        {
+          "title": "10 Cloverfield Lane",
+          "year": 2016,
+          "tmdbId": 333371,
+          "slug": "Psychological thriller that reinvented the Cloverfield universe",
+          "streamingData": "Prime",
+          "issue": "Modern thriller needing contemporary analysis"
+        }
+      ]
+    },
+    "emptyEpisodeSections": {
+      "description": "Episode files with no content sections despite having titles",
+      "count": 5,
+      "priority": "MEDIUM",
+      "issue": "Episodes marked as having content but sections array is empty",
+      "episodes": [
+        {
+          "file": "genius-5-1-3.json",
+          "title": "1990s: Independent Renaissance",
+          "subtitle": "Sundance and artistic freedom",
+          "theme": "Decades",
+          "issue": "Major film movement with no explanatory content"
+        },
+        {
+          "file": "genius-5-1-1.json", 
+          "title": "1970s: The Auteur Renaissance",
+          "subtitle": "Directors take control",
+          "theme": "Decades",
+          "issue": "Pivotal film era missing analysis"
+        },
+        {
+          "file": "genius-4-1-5.json",
+          "title": "Digital Revolution Begins",
+          "subtitle": "CGI changes everything",
+          "theme": "Technical Evolution", 
+          "issue": "Technical milestone needs explanation"
+        },
+        {
+          "file": "genius-2-4-1.json",
+          "title": "The Coen Brothers: Genre Pastiche & Visual Wit",
+          "subtitle": "Postmodern storytellers",
+          "theme": "Contemporary Auteurs",
+          "issue": "Major directors missing coverage"
+        },
+        {
+          "file": "genius-1-1-2.json",
+          "title": "From Novels to Noir",
+          "subtitle": "Detective fiction meets cinema", 
+          "theme": "Classic Film Noir",
+          "issue": "Literary adaptation analysis missing"
+        }
+      ]
+    },
+    "placeholderContent": {
+      "description": "Movies with stub/placeholder analysis requesting more information",
+      "count": 1,
+      "priority": "HIGH",
+      "issue": "Contains request for confirmation rather than actual analysis",
+      "movies": [
+        {
+          "title": "In This Land Lay Graves of Mine",
+          "year": 2014,
+          "tmdbId": 314725,
+          "fileLocation": "/Users/josh.petersen/moviegenius/public/nuclear-static/314725.json",
+          "hasAnalysis": true,
+          "actualContent": "Placeholder text asking: 'Could you please confirm if you have additional details about In This Land Lay Graves of Mine (2014) so I can provide more specific and accurate analysis?'",
+          "additionalIssues": [
+            "Empty exploreFurther array",
+            "Empty movie recommendations", 
+            "No poster image",
+            "Generic horror movie references instead of film-specific content"
+          ]
+        }
+      ]
+    },
+    "qualityExamples": {
+      "description": "Examples of high-quality analysis content found in the database",
+      "purpose": "Templates for creating missing analyses",
+      "examples": [
+        {
+          "title": "*batteries not included",
+          "year": 1987,
+          "tmdbId": 11548,
+          "fileLocation": "nuclear-static/11548.json",
+          "qualityIndicators": [
+            "Multiple detailed text sections",
+            "Rich movie comparisons with context",
+            "Exploration of themes and cultural impact",
+            "Comprehensive related movie suggestions"
+          ]
+        },
+        {
+          "title": "The Lord of the Rings",
+          "year": 1978,
+          "tmdbId": 123,
+          "fileLocation": "nuclear-static/123.json",
+          "qualityIndicators": [
+            "Technical innovation analysis",
+            "Cultural impact discussion",
+            "Voice casting analysis",
+            "5 explore further topics",
+            "10 related movies with detailed descriptions"
+          ]
+        }
+      ]
+    }
+  },
+  "recommendations": {
+    "priority1": {
+      "description": "Focus on hasAnalysis:false movies in clean-movie-urls.json",
+      "rationale": "These are major, well-known films that should have comprehensive analysis",
+      "estimatedWork": "1000 movies requiring full analysis creation",
+      "impact": "High - covers cinema's most important films"
+    },
+    "priority2": {
+      "description": "Process discovered movies with basic metadata",
+      "rationale": "Large volume of catalogued movies ready for analysis",
+      "estimatedWork": "1772 movies needing complete analysis development",
+      "impact": "Medium - expands database coverage significantly"
+    },
+    "priority3": {
+      "description": "Fill empty episode content sections",
+      "rationale": "Educational content gaps in film movement explanations",
+      "estimatedWork": "5 episodes needing substantial educational content",
+      "impact": "Medium - completes educational film series"
+    },
+    "priority4": {
+      "description": "Quality control review for additional placeholder content",
+      "rationale": "Identify other stub content similar to 'In This Land Lay Graves of Mine'",
+      "estimatedWork": "Database-wide quality audit",
+      "impact": "Low - maintenance and quality assurance"
+    }
+  },
+  "actionItems": [
+    "Create analysis templates based on high-quality examples found",
+    "Develop workflow for processing the 1000 hasAnalysis:false movies",
+    "Establish content creation pipeline for discovered movies",
+    "Fill in the 5 empty episode sections with educational content",
+    "Conduct systematic quality review for additional placeholder content",
+    "Consider prioritizing culturally significant films (Citizen Kane, 2001, etc.) first"
+  ]
+}

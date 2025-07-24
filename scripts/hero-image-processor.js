@@ -13,9 +13,13 @@
  *   node scripts/hero-image-processor.js
  */
 
-const fs = require('fs').promises;
-const path = require('path');
-const readline = require('readline');
+import fs from 'fs/promises';
+import path from 'path';
+import readline from 'readline';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Configuration
 const CONFIG = {
@@ -65,8 +69,9 @@ async function main() {
 4. Interactive image assignment
 5. Bulk update episode JSON files
 6. Generate missing image list
+7. Next episode workflow (generate → specify filename → repeat)
 
-Enter choice (1-6): `);
+Enter choice (1-7): `);
 
     switch (mode.trim()) {
       case '1':
@@ -86,6 +91,9 @@ Enter choice (1-6): `);
         break;
       case '6':
         await generateMissingImageList();
+        break;
+      case '7':
+        await nextEpisodeWorkflow();
         break;
       default:
         console.log('Invalid choice. Exiting.');
@@ -752,12 +760,182 @@ async function generateMissingImageList() {
 }
 
 // Run the script
-if (require.main === module) {
+if (import.meta.url === `file://${process.argv[1]}`) {
   main();
 }
 
-module.exports = {
+/**
+ * Next Episode Workflow - Streamlined for Midjourney generation
+ */
+async function nextEpisodeWorkflow() {
+  console.log('\n🎯 Next Episode Workflow');
+  console.log('========================\n');
+  console.log('This workflow will:');
+  console.log('1. Show you the next episode that needs an image');
+  console.log('2. Wait for you to generate it in Midjourney');
+  console.log('3. Process the image when you provide the filename');
+  console.log('4. Repeat until all episodes have images\n');
+
+  try {
+    // Load all episodes and find ones missing images
+    const episodes = await loadEpisodeData();
+    const episodesNeedingImages = [];
+
+    for (const episode of episodes) {
+      const hasImage = episode.heroImage && !episode.heroImage.includes('placeholder');
+      if (!hasImage) {
+        episodesNeedingImages.push(episode);
+      }
+    }
+
+    if (episodesNeedingImages.length === 0) {
+      console.log('🎉 All episodes already have hero images!');
+      return;
+    }
+
+    // Sort by theme and series for consistent order
+    episodesNeedingImages.sort((a, b) => {
+      const aTheme = a.theme?.title || 'ZZZ';
+      const bTheme = b.theme?.title || 'ZZZ';
+      if (aTheme !== bTheme) return aTheme.localeCompare(bTheme);
+      
+      const aSeries = a.series?.title || 'ZZZ';
+      const bSeries = b.series?.title || 'ZZZ';
+      if (aSeries !== bSeries) return aSeries.localeCompare(bSeries);
+      
+      return a.filename.localeCompare(b.filename);
+    });
+
+    console.log(`Found ${episodesNeedingImages.length} episodes needing images\n`);
+
+    // Process each episode
+    for (let i = 0; i < episodesNeedingImages.length; i++) {
+      const episode = episodesNeedingImages[i];
+      const episodeTitle = episode.episode?.title || 'Untitled';
+      const episodeSubtitle = episode.episode?.subtitle || '';
+      const seriesTitle = episode.series?.title || 'Unknown';
+      const themeTitle = episode.theme?.title || 'Unknown';
+      
+      console.log(`\n📋 NEXT EPISODE (${i + 1}/${episodesNeedingImages.length})`);
+      console.log(`═══════════════════════════════════════`);
+      console.log(`🎬 Title: ${episodeTitle}`);
+      console.log(`📝 Subtitle: ${episodeSubtitle}`);
+      console.log(`📁 Series: ${seriesTitle}`);
+      console.log(`🎭 Theme: ${themeTitle}`);
+      console.log(`📄 File: ${episode.filename}`);
+
+      // Generate visual guidance for this episode
+      const guidance = generateEpisodeGuidance(episode);
+      console.log(`\n🎨 VISUAL GUIDANCE:`);
+      console.log(`────────────────────`);
+      console.log(`Mood: ${guidance.mood}`);
+      console.log(`Colors: ${guidance.colors}`);
+      console.log(`Elements: ${guidance.elements}`);
+      console.log(`Style: ${guidance.style}`);
+      console.log(`\n💡 MIDJOURNEY PROMPT:`);
+      console.log(`─────────────────────────`);
+      console.log(guidance.prompt);
+      console.log(`─────────────────────────\n`);
+
+      // Wait for user to generate image
+      const action = await askQuestion(`Actions:
+- Press ENTER when you've generated the image
+- Type 'skip' to skip this episode
+- Type 'quit' to exit
+
+Action: `);
+
+      if (action.toLowerCase() === 'quit') {
+        console.log('Exiting workflow.');
+        break;
+      }
+
+      if (action.toLowerCase() === 'skip') {
+        console.log('Skipping this episode.\n');
+        continue;
+      }
+
+      // Get filename from user
+      const filename = await askQuestion('Enter the downloaded image filename (e.g., "image_001.png"): ');
+      
+      if (!filename.trim()) {
+        console.log('No filename provided, skipping this episode.\n');
+        continue;
+      }
+
+      // Check if file exists in downloads
+      const sourceFile = path.join(CONFIG.downloadDir, filename.trim());
+      try {
+        await fs.access(sourceFile);
+      } catch (error) {
+        console.log(`❌ File "${filename}" not found in Downloads folder. Skipping.\n`);
+        continue;
+      }
+
+      // Process the image for this episode
+      await processImageForEpisode(filename.trim(), episode);
+      console.log(`\n✅ Successfully processed image for "${episodeTitle}"`);
+      console.log(`Remaining episodes: ${episodesNeedingImages.length - i - 1}\n`);
+    }
+
+    console.log('\n🎉 Workflow complete! All episodes processed.');
+
+  } catch (error) {
+    console.error('Error in next episode workflow:', error.message);
+  }
+}
+
+/**
+ * Generate episode guidance (copied from generate-guidance-report.js)
+ */
+function generateEpisodeGuidance(episode) {
+  const title = episode.episode?.title || '';
+  const subtitle = episode.episode?.subtitle || '';
+  const seriesTitle = episode.series?.title || '';
+  const themeTitle = episode.theme?.title || '';
+  
+  // Basic guidance based on theme and content
+  let guidance = {
+    mood: 'Sophisticated cinematic atmosphere',
+    colors: 'Warm cinematic tones, professional color grading',
+    elements: 'Educational film content, sophisticated presentation',
+    style: 'Professional cinematography, editorial photography style',
+    prompt: `Sophisticated cinematic atmosphere, ${subtitle.toLowerCase()}, warm golden lighting, rich contrast, film study aesthetic, --ar 2:1 --style raw`
+  };
+
+  // Check for specific themes and customize guidance
+  if (themeTitle.toLowerCase().includes('noir') || title.toLowerCase().includes('noir')) {
+    guidance = {
+      mood: 'Dramatic shadows, high contrast, noir atmosphere',
+      colors: 'Black and white with selective color, dramatic chiaroscuro lighting',
+      elements: 'Film noir aesthetics, urban nighttime, venetian blind shadows',
+      style: 'Classic film noir cinematography, dramatic lighting',
+      prompt: `Film noir cinematography, dramatic chiaroscuro lighting, high contrast black and white, venetian blind shadows, urban nighttime streets, 1940s atmosphere, --ar 2:1 --style raw`
+    };
+  } else if (title.toLowerCase().includes('comedy')) {
+    guidance = {
+      mood: 'Light-hearted, energetic comedy atmosphere',
+      colors: 'Bright, vibrant colors with good contrast',
+      elements: 'Comedy film sets, expressive characters, dynamic scenes',
+      style: 'Classic comedy cinematography, engaging composition',
+      prompt: `Comedy cinema atmosphere, ${subtitle.toLowerCase()}, bright engaging lighting, classic Hollywood comedy style, dynamic composition, --ar 2:1 --style raw`
+    };
+  } else if (title.toLowerCase().includes('horror')) {
+    guidance = {
+      mood: 'Dark, suspenseful, atmospheric tension',
+      colors: 'Dark moody palette with selective highlights',
+      elements: 'Horror aesthetics, dramatic shadows, mysterious atmosphere',
+      style: 'Genre cinematography, atmospheric lighting',
+      prompt: `Horror cinema atmosphere, ${subtitle.toLowerCase()}, dramatic atmospheric lighting, psychological tension, dark moody aesthetics, --ar 2:1 --style raw`
+    };
+  }
+
+  return guidance;
+}
+
+export {
   processImage,
   updateEpisodeJson,
-  generateMissingImageList
+  generateMissingImageList,
+  nextEpisodeWorkflow
 };
