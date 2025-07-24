@@ -49,7 +49,7 @@ const nextConfig = {
       })
     );
     
-    // 3. Exclude nuclear-static and file system modules from client bundle
+    // 3. Exclude nuclear-static and server-only modules from client bundle
     if (!isServer) {
       config.resolve.fallback = {
         ...config.resolve.fallback,
@@ -59,7 +59,20 @@ const nextConfig = {
         os: false,
         stream: false,
         util: false,
+        net: false,
+        tls: false,
+        dns: false,
+        child_process: false,
+        cluster: false,
+        dgram: false,
       };
+      
+      // Exclude Redis and other server-only packages from client bundle
+      config.externals = config.externals || [];
+      config.externals.push({
+        'ioredis': 'commonjs ioredis',
+        'redis': 'commonjs redis',
+      });
     }
     
     // 4. Optimize chunk splitting for MovieGenius architecture

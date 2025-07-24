@@ -18,6 +18,9 @@ const ExplorePromptCard = dynamic(() => import('../../components/ExplorePromptCa
 const FeaturedFilmsSection = dynamic(() => import('../../components/FeaturedFilmsSection'), {
   loading: () => <div style={{ padding: '16px' }}>Loading movies...</div>
 });
+const EnhancedFeaturedFilmsSection = dynamic(() => import('../../components/EnhancedFeaturedFilmsSection'), {
+  loading: () => <div style={{ padding: '16px' }}>Loading movies...</div>
+});
 const ExploreFurtherSection = dynamic(() => import('../../components/ExploreFurtherSection'), {
   loading: () => <div style={{ padding: '16px' }}>Loading...</div>
 });
@@ -44,6 +47,7 @@ export default function MovieDetailPage({
   sections: staticSections,
   exploreFurther: staticExploreFurther,
   moreIdeas: staticMoreIdeas,
+  movieData: staticMovieData,
   source,
 }) {
   const router = useRouter();
@@ -55,6 +59,7 @@ export default function MovieDetailPage({
   const sections = staticSections || [];
   const exploreFurther = staticExploreFurther || [];
   const moreIdeas = staticMoreIdeas || null;
+  const movieData = staticMovieData || null;
 
   // Demo Mode: Predictive content loading
   const {
@@ -184,6 +189,7 @@ export default function MovieDetailPage({
                         sections={sections}
                         exploreFurther={exploreFurther}
                         moreIdeas={moreIdeas}
+                        movieData={movieData}
                         title={title}
                         year={year}
                         tmdbId={tmdbId}
@@ -204,7 +210,7 @@ export default function MovieDetailPage({
 }
 
 // Extracted movie content component
-function MovieContent({ sections, exploreFurther, moreIdeas, title, year, tmdbId, router }) {
+function MovieContent({ sections, exploreFurther, moreIdeas, movieData, title, year, tmdbId, router }) {
   const usedExploreFurtherCount = useRef(0);
 
   // Debug logging for Featured Films troubleshooting
@@ -281,7 +287,15 @@ function MovieContent({ sections, exploreFurther, moreIdeas, title, year, tmdbId
 
                 return (
                   <div key={sectionIndex}>
-                    <FeaturedFilmsSection movies={filteredMovies} style={{ marginBottom: '8px' }} />
+                    {movieData ? (
+                      <EnhancedFeaturedFilmsSection 
+                        movieData={movieData} 
+                        currentMovieTmdbId={tmdbId}
+                        style={{ marginBottom: '8px' }} 
+                      />
+                    ) : (
+                      <FeaturedFilmsSection movies={filteredMovies} style={{ marginBottom: '8px' }} />
+                    )}
 
                     {/* Show first explore further after first Featured Films section */}
                     {isFirstMovieSection &&
@@ -456,9 +470,20 @@ function ContentPlaceholder({ source, title, year, tmdbId }) {
   }
 
   if (hasAnalysis && analysisData) {
-    // Analysis found! Redirect to reload page with analysis
-    router.replace(`/movie/${tmdbId}`);
-    return null;
+    // Analysis found! Return analysis data instead of redirecting
+    return (
+      <div style={styles.claudeContent}>
+        <div style={styles.basicInfoContainer}>
+          <div style={styles.basicInfoIcon}>✅</div>
+          <div style={styles.basicInfoText}>
+            Analysis found! Please refresh the page to view the complete analysis.
+          </div>
+          <div style={styles.basicInfoNote}>
+            {title} ({year}) now has detailed analysis available.
+          </div>
+        </div>
+      </div>
+    );
   }
 
   if (error) {
@@ -603,19 +628,12 @@ const styles = {
   },
 };
 
-// Business logic moved to services - import them here
-import { AnalysisService } from '../../lib/services/analysis-service';
-import { processAnalysisContent, splitContentAtSubheads } from '../../lib/movie-analysis-linker';
-import fs from 'fs';
-import path from 'path';
-import { createClient } from '@supabase/supabase-js';
-import { getTMDBMovieDetails } from '../../lib/services/tmdb-search';
-import { createBasicMovieEntry } from '../../lib/services/database-search';
+// Business logic moved to services - server-side imports moved to getStaticProps
 
 // Nuclear capture disabled - happens during build time only
 
 // Nuclear Static Check - check for pre-built static data first
-async function checkNuclearStatic(tmdbId) {
+async function checkNuclearStatic(tmdbId, fs, path) {
   try {
     const nuclearPath = path.join(process.cwd(), 'public', 'nuclear-static', `${tmdbId}.json`);
 
@@ -656,13 +674,22 @@ export async function getStaticProps({ params }) {
   }
 
   // 🚀 NUCLEAR STRATEGY: Temporarily disabled to fix hydration issues
-  // const nuclearData = await checkNuclearStatic(tmdbId);
+  // const nuclearData = await checkNuclearStatic(tmdbId, fs.default, path.default);
   // if (nuclearData) {
   //   console.log(`⚡ Serving nuclear static data for movie ${tmdbId}`);
   //   return nuclearData;
   // }
 
   try {
+    // Server-side imports
+    const { AnalysisService } = await import('../../lib/services/analysis-service');
+    const { processAnalysisContent, splitContentAtSubheads } = await import('../../lib/movie-analysis-linker');
+    const fs = await import('fs');
+    const path = await import('path');
+    const { createClient } = await import('@supabase/supabase-js');
+    const { getTMDBMovieDetails } = await import('../../lib/services/tmdb-search');
+    const { createBasicMovieEntry } = await import('../../lib/services/database-search');
+
     // Check environment variables
     if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
       console.error('Missing Supabase environment variables');
@@ -688,6 +715,8 @@ export async function getStaticProps({ params }) {
 
       try {
         // Import TMDB services
+        const { getTMDBMovieDetails } = await import('../../lib/services/tmdb-search');
+        const { createBasicMovieEntry } = await import('../../lib/services/database-search');
 
         // Fetch movie details from TMDB
         const tmdbMovie = await getTMDBMovieDetails(tmdbId);

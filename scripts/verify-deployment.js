@@ -3,8 +3,8 @@
 // Deployment verification script for MovieGenius production
 // Runs comprehensive health checks after deployments
 
-const https = require('https');
-const http = require('http');
+import https from 'https';
+import http from 'http';
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://moviegenius.ai';
 const TIMEOUT = 10000; // 10 seconds
@@ -235,7 +235,7 @@ class DeploymentVerifier {
 }
 
 // Run verification if called directly
-if (require.main === module) {
+if (import.meta.url === `file://${process.argv[1]}`) {
   const verifier = new DeploymentVerifier();
   verifier.run().catch(error => {
     console.error('Verification failed:', error);
@@ -243,4 +243,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = DeploymentVerifier;
+export default DeploymentVerifier;

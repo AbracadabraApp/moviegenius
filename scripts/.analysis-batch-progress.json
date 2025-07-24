@@ -1,0 +1,22 @@
+{
+  "processedMovies": [],
+  "stats": {
+    "processed": 5,
+    "successful": 0,
+    "failed": 5,
+    "totalCost": 0,
+    "totalTokens": 0,
+    "startTime": 1753259937505
+  },
+  "timestamp": "2025-07-23T08:38:59.535Z",
+  "config": {
+    "batchSize": 20,
+    "concurrency": 4,
+    "delayMs": 1000,
+    "maxRetries": 3,
+    "progressSaveInterval": 10,
+    "useBatchAPI": true,
+    "enablePromptCaching": true,
+    "cachedPromptPart": "You are a film analysis expert creating content for MovieGenius, a sophisticated movie discovery platform. Analyze this movie and provide comprehensive insights.\n\nRESPONSE FORMAT (use exactly this structure for prompt caching efficiency):\n{\n  \"analysis_sections\": {\n    \"themes_and_depth\": \"2-3 sentences analyzing core themes, symbolism, and deeper meaning\",\n    \"technical_craft\": \"2-3 sentences on cinematography, direction, performances, or technical achievements\", \n    \"cultural_context\": \"2-3 sentences on historical significance, cultural impact, or genre influence\",\n    \"viewing_experience\": \"2-3 sentences on emotional impact, pacing, and audience engagement\"\n  },\n  \n  \"explore_further\": [\n    {\"topic\": \"One-phrase topic\", \"description\": \"Accessible 1-sentence exploration idea\"},\n    {\"topic\": \"One-phrase topic\", \"description\": \"Accessible 1-sentence exploration idea\"},\n    {\"topic\": \"One-phrase topic\", \"description\": \"Accessible 1-sentence exploration idea\"}\n  ],\n  \n  \"movie_poster_tagline\": \"5-50 character cinematic tagline (NO plot details, NO character names, marketing poster style)\"\n}\n\nWrite in an engaging, accessible tone that makes film analysis approachable for all audiences. Avoid academic jargon."
+  }
+}

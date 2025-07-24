@@ -128,6 +128,10 @@ async function movieAnalysisHandler(req, res) {
         }
 
         // Generate new analysis with Claude using modular prompt system
+        const processStartTime = Date.now();
+        console.log(`🚀 Starting end-to-end analysis process for ${title} (${year})...`);
+        
+        const claudeStartTime = Date.now();
         console.log(`🤖 Generating fresh Claude analysis for ${title} (${year})`);
         const { Anthropic } = await import('@anthropic-ai/sdk');
         const { buildPrompt } = await import('../../lib/prompts/builder.js');
@@ -153,43 +157,76 @@ async function movieAnalysisHandler(req, res) {
           ],
         });
 
-        const analysis = message.content[0].text;
+        const rawAnalysis = message.content[0].text;
+        const claudeEndTime = Date.now();
+        const claudeDuration = (claudeEndTime - claudeStartTime) / 1000;
+        console.log(`✅ Claude analysis complete (${claudeDuration.toFixed(2)}s)`);
 
-        // Run entity detection to discover new MediaCards (but skip linking for MVP)
-        let entityData = null;
+        // Process movie references and generate linked content
+        const linkingStartTime = Date.now();
+        let linkingEndTime = linkingStartTime; // Initialize to startTime as default
+        let processedAnalysis = rawAnalysis;
+        let movieData = null;
         try {
-          console.log(
-            `🔍 Running entity detection for ${title} (${year}) - creating new MediaCards`
-          );
-          const { EntityDetector } = await import('../../lib/entity-linking/EntityDetector.js');
-          const detector = new EntityDetector();
-          entityData = await detector.detectEntities(analysis, {
-            linkPeople: false, // Skip people linking for MVP
-            linkMovies: false, // Skip movie linking for MVP
-            saveEntities: true, // But still save new entities to database
-          });
-          const newMoviesCount = entityData.stats?.newMoviesCreated || 0;
-          console.log(
-            `✅ Entity detection complete: ${entityData.people.length} people, ${entityData.movies.length} movies detected, ${newMoviesCount} new MediaCards created`
-          );
-        } catch (entityError) {
-          console.warn('Entity detection failed:', entityError.message);
-          // Continue without entity data - don't fail the whole request
+          console.log(`🔗 Processing movie references for ${title} (${year})...`);
+          const { processAnalysisMovies } = await import('../../lib/analysis-movie-linker.js');
+          
+          const movieResult = await processAnalysisMovies(rawAnalysis, movie.tmdb_id);
+          processedAnalysis = movieResult.processedContent;
+          movieData = {
+            featuredMovies: movieResult.featuredMovies,
+            linkedMovies: movieResult.linkedMovies,
+            allMovies: movieResult.allMovies,
+            stats: {
+              totalMoviesProcessed: movieResult.allMovies.length,
+              featuredMoviesCount: movieResult.featuredMovies.length,
+              linkedMoviesCount: movieResult.linkedMovies.length,
+              newMoviesCreated: movieResult.allMovies.filter(m => !m.id).length // Movies without existing DB entry
+            }
+          };
+          
+          linkingEndTime = Date.now();
+          const linkingDuration = (linkingEndTime - linkingStartTime) / 1000;
+          console.log(`✅ Movie processing complete (${linkingDuration.toFixed(2)}s): ${movieData.stats.totalMoviesProcessed} movies processed, ${movieData.stats.newMoviesCreated} new movies created`);
+        } catch (movieError) {
+          linkingEndTime = Date.now();
+          const linkingDuration = (linkingEndTime - linkingStartTime) / 1000;
+          console.warn(`❌ Movie linking failed (${linkingDuration.toFixed(2)}s):`, movieError.message);
+          // Continue with raw analysis - don't fail the whole request
+          processedAnalysis = rawAnalysis;
         }
 
         // Calculate cost estimate (rough)
         const costEstimate =
           (message.usage.input_tokens * 3) / 1000000 + (message.usage.output_tokens * 15) / 1000000;
 
+        // Generate quality metrics for monitoring
+        const qualityStartTime = Date.now();
+        let qualityReport = null;
+        try {
+          console.log(`📊 Generating quality metrics for ${title} (${year})...`);
+          const { generateValidationReport } = await import('../../lib/validation/analysis-validator.js');
+          qualityReport = generateValidationReport(rawAnalysis, `${title} (${year})`);
+          
+          const qualityEndTime = Date.now();
+          const qualityDuration = (qualityEndTime - qualityStartTime) / 1000;
+          console.log(`✅ Quality metrics generated (${qualityDuration.toFixed(2)}s): ${qualityReport.overallScore}/100`);
+        } catch (qualityError) {
+          console.warn(`⚠️ Quality metrics generation failed:`, qualityError.message);
+        }
+
         // Save to database
+        const dbStartTime = Date.now();
         const analysisData = {
-          raw_content: analysis,
+          raw_content: rawAnalysis, // Original Claude response
+          processed_content: processedAnalysis, // Content with HTML links
           generated_at: new Date().toISOString(),
           cost_estimate: costEstimate,
           input_tokens: message.usage.input_tokens,
           output_tokens: message.usage.output_tokens,
           model: promptConfig.model, // Use configurable model from prompt system
-          entity_data: entityData ? { entities: entityData } : null,
+          movie_data: movieData, // Processed movie references for Featured Films
+          linking_enabled: true, // Flag to indicate this analysis has integrated linking
         };
 
         const { error: saveError } = await supabase.from('movie_analyses').insert({
@@ -199,23 +236,68 @@ async function movieAnalysisHandler(req, res) {
           query_text: `Movie page analysis for ${title} (${year})`,
         });
 
+        const dbEndTime = Date.now();
+        const dbDuration = (dbEndTime - dbStartTime) / 1000;
+        
         if (saveError) {
-          console.error('Failed to save analysis to database:', saveError);
+          console.error(`❌ Failed to save analysis to database (${dbDuration.toFixed(2)}s):`, saveError);
           // Don't fail the request, just log the error
         } else {
-          console.log(
-            `💾 Saved analysis for ${title} (${year}) - Cost: $${costEstimate.toFixed(4)}`
-          );
+          console.log(`💾 Saved analysis to database (${dbDuration.toFixed(2)}s) - Cost: $${costEstimate.toFixed(4)}`);
+          
+          // Record quality metrics for monitoring (async, don't block response)
+          if (qualityReport) {
+            const metricsStartTime = Date.now();
+            import('../../lib/analysis-quality-metrics.js').then(({ qualityMetrics }) => {
+              qualityMetrics.recordAnalysisMetrics(movie.id, qualityReport, {
+                model: promptConfig.model,
+                cost: costEstimate,
+                generationTime: claudeDuration,
+                contextType: 'MOVIE_ANALYSIS'
+              }).then(() => {
+                const metricsEndTime = Date.now();
+                const metricsDuration = (metricsEndTime - metricsStartTime) / 1000;
+                console.log(`📊 Quality metrics recorded (${metricsDuration.toFixed(2)}s)`);
+              }).catch(error => {
+                console.warn(`⚠️ Failed to record quality metrics:`, error.message);
+              });
+            }).catch(error => {
+              console.warn(`⚠️ Failed to import quality metrics:`, error.message);
+            });
+          }
         }
+
+        // Calculate and log end-to-end timing
+        const processEndTime = Date.now();
+        const totalDuration = (processEndTime - processStartTime) / 1000;
+        
+        console.log(`🏁 END-TO-END COMPLETE (${totalDuration.toFixed(2)}s total):`);
+        console.log(`   Claude generation: ${claudeDuration.toFixed(2)}s (${((claudeDuration/totalDuration)*100).toFixed(1)}%)`);
+        console.log(`   Movie linking: ${((linkingEndTime || linkingStartTime) - linkingStartTime)/1000}s (${(((linkingEndTime || linkingStartTime) - linkingStartTime)/1000/totalDuration*100).toFixed(1)}%)`);
+        console.log(`   Database save: ${dbDuration.toFixed(2)}s (${((dbDuration/totalDuration)*100).toFixed(1)}%)`);
+        console.log(`   Cost: $${costEstimate.toFixed(4)} | Tokens: ${message.usage.input_tokens}+${message.usage.output_tokens}`);
 
         // Return fresh analysis result for caching
         return {
-          analysis: analysis,
+          analysis: processedAnalysis, // Return content with HTML links
+          rawAnalysis: rawAnalysis, // Include original for debugging
           movie: { title, year },
           cached: false,
-          source: 'claude_fresh',
+          source: 'claude_fresh_with_linking',
           cost: costEstimate,
-          entityData: entityData,
+          movieData: movieData, // Include movie data for Featured Films
+          linkingEnabled: true,
+          timing: {
+            total: totalDuration,
+            claude: claudeDuration,
+            linking: ((linkingEndTime || linkingStartTime) - linkingStartTime) / 1000,
+            database: dbDuration,
+            breakdown: {
+              claude: `${((claudeDuration/totalDuration)*100).toFixed(1)}%`,
+              linking: `${(((linkingEndTime || linkingStartTime) - linkingStartTime)/1000/totalDuration*100).toFixed(1)}%`,
+              database: `${((dbDuration/totalDuration)*100).toFixed(1)}%`
+            }
+          }
         };
       }
     );
