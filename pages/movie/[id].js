@@ -216,8 +216,8 @@ export default function MovieDetailPage({
           });
         `}} />
         
-        {/* Movie Page Test Framework - Production debugging */}
-        <script src="/js/movie-page-test-framework.js" />
+        {/* Testing Framework */}
+        <script src="/js/testing-framework.js" async />
       </PhoneFrame>
     );
   }
@@ -1074,30 +1074,14 @@ export async function getStaticProps({ params }) {
   }
 }
 
-// Simplified getStaticPaths
+// Phase 1: Pre-generate single movie path (Star Wars)
 export async function getStaticPaths() {
-  try {
-    // Check environment variables
-    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
-      console.error('Missing Supabase environment variables in getStaticPaths');
-      return {
-        paths: [],
-        fallback: 'blocking',
-      };
-    }
-
-    // Skip database paths for now due to Supabase client issues in getStaticPaths
-    // Use fallback: 'blocking' to generate paths on demand
-    console.log('Using fallback blocking for all movie paths');
-    return {
-      paths: [],
-      fallback: 'blocking',
-    };
-  } catch (error) {
-    console.error('Static paths error:', error);
-    return {
-      paths: [],
-      fallback: 'blocking',
-    };
-  }
+  console.log('🚀 Phase 1: Pre-generating single movie path (Star Wars ID 11)');
+  
+  return {
+    paths: [
+      { params: { id: '11' } } // Star Wars - pre-generate this path only
+    ],
+    fallback: false // No fallback - only pre-generated paths will work
+  };
 }
