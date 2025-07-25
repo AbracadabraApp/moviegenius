@@ -126,6 +126,9 @@ export default function MovieDetailPage({
     );
   }
 
+  // Debug render flow
+  // Movie page render
+
   return (
     <PhoneFrame>
       <style jsx global>{`
@@ -237,27 +240,6 @@ export default function MovieDetailPage({
 function MovieContent({ sections, exploreFurther, moreIdeas, movieData, title, year, tmdbId, router }) {
   const usedExploreFurtherCount = useRef(0);
 
-  // Debug logging for Featured Films troubleshooting
-  console.log('🎬 MovieContent DEBUG:', {
-    sectionsCount: sections?.length,
-    exploreFurtherCount: exploreFurther?.length,
-    usedExploreFurtherCount: usedExploreFurtherCount.current,
-    sectionsDetails: sections?.map((s, i) => ({
-      index: i,
-      type: s.type,
-      moviesCount: s.movies?.length,
-      firstMovie: s.movies?.[0]
-        ? {
-            title: s.movies[0].title,
-            year: s.movies[0].year,
-            tmdb_id: s.movies[0].tmdb_id,
-            slug: s.movies[0].slug,
-          }
-        : null,
-    })),
-    moreIdeasCount: moreIdeas?.movies?.length,
-    currentMovieTitle: title,
-  });
 
   return (
     <>
@@ -281,12 +263,6 @@ function MovieContent({ sections, exploreFurther, moreIdeas, movieData, title, y
               section.movies &&
               (() => {
                 const filteredMovies = filterCurrentMovie(section.movies, title);
-                console.log(`🎭 Section ${sectionIndex} movies:`, {
-                  originalCount: section.movies.length,
-                  filteredCount: filteredMovies.length,
-                  originalMovies: section.movies.map(m => ({ title: m.title, tmdb_id: m.tmdb_id })),
-                  filteredMovies: filteredMovies.map(m => ({ title: m.title, tmdb_id: m.tmdb_id })),
-                });
 
                 const isFirstMovieSection =
                   sections.findIndex(s => s.type === 'movies') === sectionIndex;
@@ -347,16 +323,7 @@ function MovieContent({ sections, exploreFurther, moreIdeas, movieData, title, y
       {moreIdeas &&
         (() => {
           const filteredRelatedMovies = filterCurrentMovie(moreIdeas.movies, title);
-          console.log('🎭 Related Films section:', {
-            originalCount: moreIdeas.movies?.length,
-            filteredCount: filteredRelatedMovies.length,
-            originalMovies: moreIdeas.movies
-              ?.slice(0, 3)
-              .map(m => ({ title: m.title, tmdb_id: m.tmdb_id })),
-            filteredMovies: filteredRelatedMovies
-              .slice(0, 3)
-              .map(m => ({ title: m.title, tmdb_id: m.tmdb_id })),
-          });
+          // Related Films section processing
 
           return <div style={{ marginTop: '36px' }}><FeaturedFilmsSection movies={filteredRelatedMovies} title="Related Films" /></div>;
         })()}
@@ -380,7 +347,7 @@ const styles = {
   },
   header: {
     backgroundColor: '#ffffff',
-    padding: '16px 32px',
+    padding: '16px 16px',
     gap: '16px',
   },
   content: {
@@ -422,7 +389,7 @@ const styles = {
     color: '#6b7280',
     fontWeight: '300',
     fontFamily: 'inherit',
-    paddingLeft: '20px',
+    paddingLeft: '0px',
   },
   claudeSection: {
     flex: 1,
@@ -439,8 +406,8 @@ const styles = {
     lineHeight: '1.6',
     color: '#374151',
     marginBottom: '16px',
-    paddingLeft: '16px',
-    paddingRight: '12px',
+    paddingLeft: '0px',
+    paddingRight: '0px',
   },
   loadingContainer: {
     padding: '40px 16px',
