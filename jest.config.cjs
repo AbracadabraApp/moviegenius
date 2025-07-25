@@ -1,5 +1,5 @@
-// jest.config.js
-// Fix TextEncoder issue by providing custom Jest config without Next.js loader for API tests
+// jest.config.cjs
+// Jest configuration using CommonJS format for ES module projects
 const isApiTest = process.env.JEST_TEST_TYPE === 'api';
 
 const customJestConfig = {
@@ -57,7 +57,8 @@ const customJestConfig = {
   // Verbose output for better debugging
   verbose: true,
 
-  // Add globals for Node.js environment compatibility
+  // Handle ES modules properly
+  extensionsToTreatAsEsm: ['.ts', '.tsx'],
   globals: {
     'ts-jest': {
       useESM: true,
@@ -71,9 +72,14 @@ if (isApiTest) {
   module.exports = customJestConfig;
 } else {
   // For component tests, use Next.js integration
-  const nextJest = require('next/jest');
-  const createJestConfig = nextJest({
-    dir: './',
-  });
-  module.exports = createJestConfig(customJestConfig);
+  try {
+    const nextJest = require('next/jest');
+    const createJestConfig = nextJest({
+      dir: './',
+    });
+    module.exports = createJestConfig(customJestConfig);
+  } catch (error) {
+    console.warn('Next.js Jest integration failed, using basic config:', error.message);
+    module.exports = customJestConfig;
+  }
 }
