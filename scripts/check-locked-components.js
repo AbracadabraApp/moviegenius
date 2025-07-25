@@ -2,24 +2,20 @@
 
 /**
  * Locked Component Integrity Checker
- *
+ * 
  * Automatically detects modifications to locked/critical components
  * and validates that essential functionality remains intact.
- *
+ * 
  * Usage: node scripts/check-locked-components.js
- *
+ * 
  * Exit codes:
  * 0 = All locked components are valid
  * 1 = Critical components have been modified
  * 2 = Script error
  */
 
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const fs = require('fs');
+const path = require('path');
 
 // Define locked components and their critical sections
 const LOCKED_COMPONENTS = {
@@ -30,51 +26,51 @@ const LOCKED_COMPONENTS = {
         name: 'tmdbId prop in interface',
         pattern: /tmdbId\s*[}),]/,
         required: true,
-        errorMsg: 'CRITICAL: tmdbId prop missing from MediaCard interface',
+        errorMsg: 'CRITICAL: tmdbId prop missing from MediaCard interface'
       },
       {
         name: 'handleCardClick navigation',
-        pattern: /href=\{movieTmdbId \? `\/movie\/\$\{movieTmdbId\}` : '#'\}/,
+        pattern: /router\.push\(`\/movie\/\$\{movieTmdbId\}`\)/,
         required: true,
-        errorMsg: 'CRITICAL: TMDB ID navigation logic modified in handleCardClick',
+        errorMsg: 'CRITICAL: TMDB ID navigation logic modified in handleCardClick'
       },
       {
         name: 'movieTmdbId state',
         pattern: /const \[movieTmdbId, setMovieTmdbId\]/,
         required: true,
-        errorMsg: 'CRITICAL: movieTmdbId state management removed',
+        errorMsg: 'CRITICAL: movieTmdbId state management removed'
       },
       {
         name: 'No fallback navigation (TMDB-first architecture)',
         pattern: /NO fallback navigation - this enforces TMDB-first architecture/,
         required: true,
-        errorMsg: 'CRITICAL: TMDB-first navigation enforcement removed',
+        errorMsg: 'CRITICAL: TMDB-first navigation enforcement removed'
       },
       {
         name: '@locked annotation present',
         pattern: /@locked true/,
         required: true,
-        errorMsg: 'CRITICAL: @locked annotation missing from component header',
+        errorMsg: 'CRITICAL: @locked annotation missing from component header'
       },
       {
         name: 'TMDB plot summary rejection',
         pattern: /!slug\.includes\('Plot:'\)/,
         required: true,
-        errorMsg: 'CRITICAL: TMDB plot summary protection removed - preserves marketing copy',
+        errorMsg: 'CRITICAL: TMDB plot summary protection removed - preserves marketing copy'
       },
       {
         name: 'Protected enhancement logic',
         pattern: /🔒 PROTECTED: Enhanced data fetching/,
         required: true,
-        errorMsg: 'CRITICAL: Protected data fetching annotations removed',
+        errorMsg: 'CRITICAL: Protected data fetching annotations removed'
       },
       {
         name: 'Marketing slug display spacing',
         pattern: /marginTop: '4px'/,
         required: true,
-        errorMsg: 'CRITICAL: Marketing slug spacing modified - should be 4px for taglines',
-      },
-    ],
+        errorMsg: 'CRITICAL: Marketing slug spacing modified - should be 4px for taglines'
+      }
+    ]
   },
   'components/FilmLoadingMessage.js': {
     lockFile: null,
@@ -83,15 +79,15 @@ const LOCKED_COMPONENTS = {
         name: 'No technical message exposure',
         pattern: /film-themed messages from loading-messages\.json/,
         required: true,
-        errorMsg: 'CRITICAL: FilmLoadingMessage component modified to allow technical messages',
+        errorMsg: 'CRITICAL: FilmLoadingMessage component modified to allow technical messages'
       },
       {
         name: 'Film-themed icons only',
         pattern: /film-movie-reel-icon\.png/,
         required: true,
-        errorMsg: 'CRITICAL: Core film icons removed from loading system',
-      },
-    ],
+        errorMsg: 'CRITICAL: Core film icons removed from loading system'
+      }
+    ]
   },
   'pages/movie/[id].js': {
     lockFile: null, // No dedicated lock file yet
@@ -100,21 +96,21 @@ const LOCKED_COMPONENTS = {
         name: 'MediaCard tmdb_id prop passing',
         pattern: /tmdbId=\{.*tmdb_id\}/,
         required: true,
-        errorMsg: 'CRITICAL: MediaCard not receiving tmdb_id prop in movie detail page',
+        errorMsg: 'CRITICAL: MediaCard not receiving tmdb_id prop in movie detail page'
       },
       {
         name: 'Simple content check logic',
         pattern: /Simple content check: Does analysis exist/,
         required: true,
-        errorMsg: 'CRITICAL: Clean analysis existence check logic modified',
+        errorMsg: 'CRITICAL: Clean analysis existence check logic modified'
       },
       {
         name: 'Nuclear decoupling completed',
         pattern: /hasAnalysis.*true/,
         required: true,
-        errorMsg: 'CRITICAL: Nuclear decoupling logic modified - should use hasAnalysis',
-      },
-    ],
+        errorMsg: 'CRITICAL: Nuclear decoupling logic modified - should use hasAnalysis'
+      }
+    ]
   },
   'components/BackButton.js': {
     lockFile: null,
@@ -123,22 +119,22 @@ const LOCKED_COMPONENTS = {
         name: 'Smart navigation logic',
         pattern: /method === 'smart'/,
         required: true,
-        errorMsg: 'CRITICAL: BackButton smart navigation logic modified',
+        errorMsg: 'CRITICAL: BackButton smart navigation logic modified'
       },
       {
         name: 'Context-aware fallbacks',
         pattern: /case 'movie'|case 'person'|case 'list'/,
         required: true,
-        errorMsg: 'CRITICAL: BackButton context-aware fallbacks removed',
+        errorMsg: 'CRITICAL: BackButton context-aware fallbacks removed'
       },
       {
         name: 'Browser history integration',
         pattern: /window\.history\.length/,
         required: true,
-        errorMsg: 'CRITICAL: BackButton browser history detection removed',
-      },
-    ],
-  },
+        errorMsg: 'CRITICAL: BackButton browser history detection removed'
+      }
+    ]
+  }
 };
 
 class ComponentIntegrityChecker {
@@ -147,13 +143,13 @@ class ComponentIntegrityChecker {
       checked: 0,
       passed: 0,
       failed: 0,
-      errors: [],
+      errors: []
     };
   }
 
   checkComponent(componentPath, config) {
     console.log(`\n🔍 Checking locked component: ${componentPath}`);
-
+    
     if (!fs.existsSync(componentPath)) {
       this.results.errors.push(`❌ Component file not found: ${componentPath}`);
       this.results.failed++;
@@ -175,7 +171,7 @@ class ComponentIntegrityChecker {
     // Check each critical section
     for (const section of config.criticalSections) {
       const found = section.pattern.test(content);
-
+      
       if (section.required && !found) {
         this.results.errors.push(`❌ ${section.errorMsg}`);
         componentPassed = false;
@@ -230,14 +226,14 @@ class ComponentIntegrityChecker {
       console.log('2. Restore from backup if navigation is broken');
       console.log('3. Test movie page navigation thoroughly');
       console.log('4. Check MediaCard.LOCK for change protocol');
-
+      
       process.exit(1);
     }
   }
 }
 
 // Run the checker if called directly
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (require.main === module) {
   const checker = new ComponentIntegrityChecker();
   checker.run().catch(error => {
     console.error('Script error:', error);
@@ -245,4 +241,4 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   });
 }
 
-export default ComponentIntegrityChecker;
+module.exports = ComponentIntegrityChecker;

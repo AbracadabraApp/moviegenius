@@ -5,42 +5,34 @@ import { Clapperboard, Sparkles, User } from 'lucide-react';
 import { shouldShowPhoneFrame } from '../lib/platform';
 import Link from 'next/link';
 
-// Fallback navigation items
-const fallbackNavItems = [
-  { label: 'Movies', icon: 'Clapperboard', route: '/movies' },
-  { label: 'Genius', icon: 'Sparkles', route: '/genius' },
-  { label: 'You', icon: 'User', route: '/you' },
-];
-const fallbackRouteValidation = { shouldShowGeniusActive: () => false };
+// Safe imports with fallbacks
+let navItems, routeValidation;
+try {
+  const routes = require('../lib/routes');
+  navItems = routes.navItems || [];
+  routeValidation = routes.routeValidation || { shouldShowGeniusActive: () => false };
+
+  // Validate routes are properly loaded
+  if (!Array.isArray(navItems) || navItems.length === 0) {
+    throw new Error('navItems is empty or invalid');
+  }
+} catch (error) {
+  console.error('NavBar: Failed to load routes, using fallbacks:', error);
+  navItems = [
+    { label: 'Movies', icon: 'Clapperboard', route: '/movies' },
+    { label: 'Genius', icon: 'Sparkles', route: '/genius' },
+    { label: 'You', icon: 'User', route: '/you' },
+  ];
+  routeValidation = { shouldShowGeniusActive: () => false };
+}
 
 export default function NavBar() {
   const router = useRouter();
   const [showFrame, setShowFrame] = useState(true); // Default to frame for SSR
-  const [navItems, setNavItems] = useState(fallbackNavItems);
-  const [routeValidation, setRouteValidation] = useState(fallbackRouteValidation);
-
-  // Load routes dynamically on mount
-  useEffect(() => {
-    async function loadRoutes() {
-      try {
-        const routes = await import('../lib/routes.js');
-        if (routes.navItems && Array.isArray(routes.navItems)) {
-          setNavItems(routes.navItems);
-        }
-        if (routes.routeValidation) {
-          setRouteValidation(routes.routeValidation);
-        }
-      } catch (error) {
-        console.error('NavBar: Failed to load routes, using fallbacks:', error);
-      }
-    }
-    loadRoutes();
-  }, []);
-
   // Calculate initial active state to prevent flashing
-  const getActiveLabel = (pathname, items = navItems, validation = routeValidation) => {
+  const getActiveLabel = pathname => {
     try {
-      return items.find(item => {
+      return navItems.find(item => {
         if (item.route === pathname) return true;
         // Movies active for /movie/[id] and /search pages
         if (
@@ -55,7 +47,7 @@ export default function NavBar() {
         }
         // Use centralized logic for Genius active state
         if (item.route === '/genius') {
-          return validation.shouldShowGeniusActive(pathname);
+          return routeValidation.shouldShowGeniusActive(pathname);
         }
         return false;
       })?.label;
@@ -75,12 +67,12 @@ export default function NavBar() {
   }, []);
 
   useEffect(() => {
-    // Update active state when route changes or items load
+    // Update active state when route changes
     if (router.isReady) {
-      const newActiveLabel = getActiveLabel(router.asPath || router.pathname, navItems, routeValidation);
+      const newActiveLabel = getActiveLabel(router.asPath || router.pathname);
       setActiveLabel(newActiveLabel);
     }
-  }, [router.isReady, router.asPath, router.pathname, navItems, routeValidation]);
+  }, [router.isReady, router.asPath, router.pathname]);
 
   // Icon mapping for nav items
   const iconMap = {
