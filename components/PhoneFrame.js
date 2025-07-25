@@ -4,7 +4,7 @@ import NavBar from './NavBar';
 import { shouldShowPhoneFrame, getPlatformName } from '../lib/platform';
 
 export default function PhoneFrame({ children, navItems, routeValidation }) {
-  const [showFrame, setShowFrame] = useState(true); // Default to frame for SSR
+  const [showFrame, setShowFrame] = useState(true); // Default to desktop frame for SSR consistency
   const [platform, setPlatform] = useState('');
 
   useEffect(() => {
