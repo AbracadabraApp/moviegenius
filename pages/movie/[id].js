@@ -186,6 +186,12 @@ export default function MovieDetailPage({
     hasDebugInfo: !!staticSections?.debugInfo
   });
 
+  // Add visible marker in HTML for debugging
+  if (error || staticSections?.debugInfo) {
+    console.log('📊 VISIBLE DEBUG MARKER - error:', error);
+    console.log('📊 VISIBLE DEBUG MARKER - debugInfo:', staticSections?.debugInfo);
+  }
+
   return (
     <PhoneFrame>
       <style jsx global>{`
@@ -204,6 +210,32 @@ export default function MovieDetailPage({
         <div style={styles.header}>
           <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
         </div>
+
+        {/* DEBUG SECTION - Always visible during debugging */}
+        {(error || debugInfo || staticSections?.debugInfo) && (
+          <div style={{
+            position: 'fixed',
+            top: '10px',
+            left: '10px',
+            right: '10px',
+            backgroundColor: '#000',
+            color: '#00ff00',
+            padding: '10px',
+            borderRadius: '5px',
+            fontSize: '10px',
+            zIndex: 9999,
+            maxHeight: '200px',
+            overflow: 'auto',
+            fontFamily: 'monospace'
+          }}>
+            <div>🚨 DEBUG: Movie {tmdbId}</div>
+            <div>Error: {error || 'none'}</div>
+            <div>Props: title={title}, year={year}</div>
+            <div>Sections: {sections?.length || 0}</div>
+            <div>Source: {source || 'unknown'}</div>
+            <div>Time: {new Date().toLocaleTimeString()}</div>
+          </div>
+        )}
 
         {/* Content */}
         <div style={styles.content}>
