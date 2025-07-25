@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function NavBar({ navItems = [], routeValidation = {} }) {
   const router = useRouter();
-  const [showFrame, setShowFrame] = useState(false); // Consistent SSR/client default
+  const [showFrame, setShowFrame] = useState(true); // Default to desktop frame for SSR consistency
   // Calculate initial active state to prevent flashing
   const getActiveLabel = pathname => {
     try {
