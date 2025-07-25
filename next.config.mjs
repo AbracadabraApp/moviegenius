@@ -85,12 +85,12 @@ const nextConfig = {
         dgram: false,
       };
       
-      // Exclude Redis and other server-only packages from client bundle
+      // Exclude Redis and other server-only packages from client bundle completely
       config.externals = config.externals || [];
-      config.externals.push({
-        'ioredis': 'commonjs ioredis',
-        'redis': 'commonjs redis',
-      });
+      config.externals.push(
+        'ioredis',
+        'redis'
+      );
       
       // Force ES module resolution for client-side code
       config.resolve.extensionAlias = {
