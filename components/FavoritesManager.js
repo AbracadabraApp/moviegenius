@@ -22,6 +22,11 @@ export const FavoritesManager = {
 
   // Debounced save to localStorage
   _debouncedSave: (type, data) => {
+    // SSR guard - skip on server
+    if (typeof window === 'undefined') {
+      return;
+    }
+
     // Clear existing timeout
     if (FavoritesManager._saveTimeouts[type]) {
       clearTimeout(FavoritesManager._saveTimeouts[type]);
@@ -62,6 +67,10 @@ export const FavoritesManager = {
     if (FavoritesManager._cache.hearted !== null) {
       return FavoritesManager._cache.hearted;
     }
+    // SSR guard - return empty array on server
+    if (typeof window === 'undefined') {
+      return [];
+    }
     try {
       const saved = localStorage.getItem('heartedMovies');
       const movies = saved ? JSON.parse(saved) : [];
@@ -77,6 +86,10 @@ export const FavoritesManager = {
   getBookmarkedMovies: () => {
     if (FavoritesManager._cache.bookmarked !== null) {
       return FavoritesManager._cache.bookmarked;
+    }
+    // SSR guard - return empty array on server
+    if (typeof window === 'undefined') {
+      return [];
     }
     try {
       const saved = localStorage.getItem('bookmarkedMovies');
@@ -226,6 +239,10 @@ export const FavoritesManager = {
     if (FavoritesManager._cache.peopleHearted !== null) {
       return FavoritesManager._cache.peopleHearted;
     }
+    // SSR guard - return empty array on server
+    if (typeof window === 'undefined') {
+      return [];
+    }
     try {
       const saved = localStorage.getItem('heartedPeople');
       const people = saved ? JSON.parse(saved) : [];
@@ -241,6 +258,10 @@ export const FavoritesManager = {
   getBookmarkedPeople: () => {
     if (FavoritesManager._cache.peopleBookmarked !== null) {
       return FavoritesManager._cache.peopleBookmarked;
+    }
+    // SSR guard - return empty array on server
+    if (typeof window === 'undefined') {
+      return [];
     }
     try {
       const saved = localStorage.getItem('bookmarkedPeople');
