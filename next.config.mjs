@@ -164,8 +164,8 @@ const nextConfig = {
   },
 
   eslint: {
-    // ESLint temporarily disabled for simplified movie page testing
-    ignoreDuringBuilds: true,
+    // ESLint enabled for production builds - only fail on errors, not warnings
+    ignoreDuringBuilds: false,
     dirs: ['pages', 'components', 'lib', 'hooks'],
   },
 
