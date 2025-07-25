@@ -171,6 +171,50 @@ export default function MovieDetailPage({
             </div>
           </div>
         </div>
+        
+        {/* Client-side error capture script */}
+        <script dangerouslySetInnerHTML={{__html: `
+          // Track page lifecycle and capture redirects
+          console.log('🔍 CLIENT: Movie page script loaded', {
+            url: window.location.href,
+            tmdbId: '${tmdbId}',
+            timestamp: new Date().toISOString()
+          });
+          
+          // Capture any redirects or navigation changes
+          const originalPushState = history.pushState;
+          const originalReplaceState = history.replaceState;
+          
+          history.pushState = function() {
+            console.log('🚨 CLIENT: Navigation pushState detected', arguments);
+            return originalPushState.apply(this, arguments);
+          };
+          
+          history.replaceState = function() {
+            console.log('🚨 CLIENT: Navigation replaceState detected', arguments);
+            return originalReplaceState.apply(this, arguments);
+          };
+          
+          // Capture unhandled errors that could cause redirects
+          window.addEventListener('error', function(e) {
+            console.log('🚨 CLIENT: Window error detected', {
+              message: e.message,
+              filename: e.filename,
+              lineno: e.lineno,
+              colno: e.colno,
+              stack: e.error?.stack
+            });
+          });
+          
+          // Track DOM ready state
+          document.addEventListener('DOMContentLoaded', function() {
+            console.log('🔍 CLIENT: DOM loaded, checking for error elements');
+            const errorElements = document.querySelectorAll('[class*="error"], .debug-overlay');
+            if (errorElements.length > 0) {
+              console.log('🚨 CLIENT: Error elements found', errorElements.length);
+            }
+          });
+        `}} />
       </PhoneFrame>
     );
   }
@@ -178,19 +222,7 @@ export default function MovieDetailPage({
   // Debug render flow
   // Movie page render
   
-  // Show debug info for successful pages too
-  console.log('🎬 Movie page render with props:', {
-    title, year, tmdbId, hasAnalysis, 
-    sectionsLength: sections?.length,
-    source,
-    hasDebugInfo: !!staticSections?.debugInfo
-  });
-
-  // Add visible marker in HTML for debugging
-  if (error || staticSections?.debugInfo) {
-    console.log('📊 VISIBLE DEBUG MARKER - error:', error);
-    console.log('📊 VISIBLE DEBUG MARKER - debugInfo:', staticSections?.debugInfo);
-  }
+  // Note: Console.log statements removed from render to prevent hydration mismatches
 
   return (
     <PhoneFrame>
@@ -212,7 +244,7 @@ export default function MovieDetailPage({
         </div>
 
         {/* DEBUG SECTION - Always visible during debugging */}
-        {(error || debugInfo || staticSections?.debugInfo) && (
+        {(error || staticSections?.debugInfo || true) && (
           <div style={{
             position: 'fixed',
             top: '10px',
@@ -230,9 +262,13 @@ export default function MovieDetailPage({
           }}>
             <div>🚨 DEBUG: Movie {tmdbId}</div>
             <div>Error: {error || 'none'}</div>
-            <div>Props: title={title}, year={year}</div>
+            <div>Props: title={title}, year={year}, hasAnalysis={hasAnalysis}</div>
             <div>Sections: {sections?.length || 0}</div>
             <div>Source: {source || 'unknown'}</div>
+            <div>Env: {staticSections?.debugInfo?.environment?.NODE_ENV || 'unknown'}</div>
+            <div>Railway: {staticSections?.debugInfo?.environment?.RAILWAY_ENVIRONMENT_NAME || 'none'}</div>
+            <div>Debug Steps: {staticSections?.debugInfo?.steps?.length || 0}</div>
+            <div>Debug Errors: {staticSections?.debugInfo?.errors?.length || 0}</div>
             <div>Time: {new Date().toLocaleTimeString()}</div>
           </div>
         )}
@@ -630,6 +666,16 @@ export async function getStaticProps({ params }) {
       NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ? 'present' : 'missing',
       ANTHROPIC_API_KEY: process.env.ANTHROPIC_API_KEY ? 'present' : 'missing',
       NEXT_PUBLIC_TMDB_API_KEY: process.env.NEXT_PUBLIC_TMDB_API_KEY ? 'present' : 'missing',
+    },
+    hydrationCheck: {
+      serverRenderTime: new Date().toISOString(),
+      nodeEnv: process.env.NODE_ENV,
+      railwayEnv: process.env.RAILWAY_ENVIRONMENT_NAME,
+      hasConsoleDebug: process.env.NODE_ENV === 'development',
+      ssrMarkers: {
+        tmdbId: params.id,
+        buildType: 'getStaticProps'
+      }
     },
     steps: [],
     errors: [],
