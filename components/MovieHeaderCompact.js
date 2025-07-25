@@ -48,7 +48,7 @@ export default function MovieHeaderCompact({
   // Progressive loading states
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   const [isImageError, setIsImageError] = useState(false);
-  const [showContent, setShowContent] = useState(false);
+  const [showContent, setShowContent] = useState(true);
 
   // Trailer states
   const [trailerVideoId, setTrailerVideoId] = useState(null);
@@ -80,14 +80,7 @@ export default function MovieHeaderCompact({
     }
   }, [mediaId]);
 
-  // Progressive loading: Show content immediately for faster UX
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowContent(true);
-    }, 100); // Faster than MovieHeaderLarge for search results
-
-    return () => clearTimeout(timer);
-  }, []);
+  // Progressive loading: Content shown immediately for hydration consistency
 
   // Reset loading state when poster changes
   useEffect(() => {
