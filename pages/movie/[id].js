@@ -47,6 +47,8 @@ export default function MovieDetailPage({
   moreIdeas: staticMoreIdeas,
   movieData: staticMovieData,
   source,
+  navItems,
+  routeValidation,
 }) {
   const router = useRouter();
   const { id } = router.query;
@@ -113,7 +115,7 @@ export default function MovieDetailPage({
 
   if (error) {
     return (
-      <PhoneFrame>
+      <PhoneFrame navItems={navItems} routeValidation={routeValidation}>
         <div style={styles.container}>
           <div style={styles.header}>
             <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
@@ -228,7 +230,7 @@ export default function MovieDetailPage({
   // Note: Console.log statements removed from render to prevent hydration mismatches
 
   return (
-    <PhoneFrame>
+    <PhoneFrame navItems={navItems} routeValidation={routeValidation}>
       <style jsx global>{`
         .movie-title {
           color: #2563eb;
@@ -246,7 +248,7 @@ export default function MovieDetailPage({
           <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
         </div>
 
-        {/* DEBUG SECTION - Always visible during debugging */}
+        {/* DEBUG SECTION - COMMENTED OUT
         {(error || staticSections?.debugInfo || true) && (
           <div style={{
             position: 'fixed',
@@ -272,9 +274,10 @@ export default function MovieDetailPage({
             <div>Railway: {staticSections?.debugInfo?.environment?.RAILWAY_ENVIRONMENT_NAME || 'none'}</div>
             <div>Debug Steps: {staticSections?.debugInfo?.steps?.length || 0}</div>
             <div>Debug Errors: {staticSections?.debugInfo?.errors?.length || 0}</div>
-            <div>Time: {new Date().toLocaleTimeString()}</div>
+            <div>Time: hydrated</div>
           </div>
         )}
+        */}
 
         {/* Content */}
         <div style={styles.content}>
@@ -659,7 +662,7 @@ async function checkNuclearStatic(tmdbId, fs, path) {
 export async function getStaticProps({ params }) {
   const startTime = Date.now();
   const debugInfo = {
-    timestamp: new Date().toISOString(),
+    timestamp: 'static-build-time',
     params,
     environment: {
       NODE_ENV: process.env.NODE_ENV || 'unknown',
@@ -671,7 +674,7 @@ export async function getStaticProps({ params }) {
       NEXT_PUBLIC_TMDB_API_KEY: process.env.NEXT_PUBLIC_TMDB_API_KEY ? 'present' : 'missing',
     },
     hydrationCheck: {
-      serverRenderTime: new Date().toISOString(),
+      serverRenderTime: 'static-build-time',
       nodeEnv: process.env.NODE_ENV || 'unknown',
       railwayEnv: process.env.RAILWAY_ENVIRONMENT_NAME || null,
       hasConsoleDebug: process.env.NODE_ENV === 'development',
@@ -902,6 +905,9 @@ export async function getStaticProps({ params }) {
           `✅ TMDB movie discovered: "${tmdbMovie.title}" (${tmdbMovie.release_date?.substring(0, 4)})`
         );
 
+        // Add navigation data to prevent client-side require
+        const { navItems, routeValidation } = await import('../../lib/routes');
+
         // Build response with analysis if available
         const response = {
           props: {
@@ -916,6 +922,8 @@ export async function getStaticProps({ params }) {
             error: null,
             hasAnalysis: false, // Will be updated if analysis exists
             source: 'tmdb_discovery',
+            navItems: navItems || [],
+            routeValidation: routeValidation || {},
             // Note: overview intentionally omitted to prevent TMDB summary contamination
           },
           revalidate: 3600, // ISR for TMDB discoveries - 1 hour (was 60s)
@@ -980,6 +988,9 @@ export async function getStaticProps({ params }) {
       }
     }
 
+    // Add navigation data to prevent client-side require
+    const { navItems, routeValidation } = await import('../../lib/routes');
+
     // Base response
     const response = {
       props: {
@@ -991,6 +1002,8 @@ export async function getStaticProps({ params }) {
         tmdbId: movieEntry.tmdb_id,
         error: null,
         hasAnalysis: false, // Will be set to true if analysis exists
+        navItems: navItems || [],
+        routeValidation: routeValidation || {},
       },
     };
 

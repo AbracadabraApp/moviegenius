@@ -5,30 +5,9 @@ import { Clapperboard, Sparkles, User } from 'lucide-react';
 import { shouldShowPhoneFrame } from '../lib/platform';
 import Link from 'next/link';
 
-// Safe imports with fallbacks
-let navItems, routeValidation;
-try {
-  const routes = require('../lib/routes');
-  navItems = routes.navItems || [];
-  routeValidation = routes.routeValidation || { shouldShowGeniusActive: () => false };
-
-  // Validate routes are properly loaded
-  if (!Array.isArray(navItems) || navItems.length === 0) {
-    throw new Error('navItems is empty or invalid');
-  }
-} catch (error) {
-  console.error('NavBar: Failed to load routes, using fallbacks:', error);
-  navItems = [
-    { label: 'Movies', icon: 'Clapperboard', route: '/movies' },
-    { label: 'Genius', icon: 'Sparkles', route: '/genius' },
-    { label: 'You', icon: 'User', route: '/you' },
-  ];
-  routeValidation = { shouldShowGeniusActive: () => false };
-}
-
-export default function NavBar() {
+export default function NavBar({ navItems = [], routeValidation = {} }) {
   const router = useRouter();
-  const [showFrame, setShowFrame] = useState(true); // Default to frame for SSR
+  const [showFrame, setShowFrame] = useState(false); // Consistent SSR/client default
   // Calculate initial active state to prevent flashing
   const getActiveLabel = pathname => {
     try {
@@ -47,7 +26,7 @@ export default function NavBar() {
         }
         // Use centralized logic for Genius active state
         if (item.route === '/genius') {
-          return routeValidation.shouldShowGeniusActive(pathname);
+          return routeValidation.shouldShowGeniusActive ? routeValidation.shouldShowGeniusActive(pathname) : false;
         }
         return false;
       })?.label;
