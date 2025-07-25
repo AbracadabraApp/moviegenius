@@ -216,8 +216,8 @@ export default function MovieDetailPage({
           });
         `}} />
         
-        {/* Movie Page Test Framework - Systematic debugging */}
-        <script src="/js/movie-page-test-framework.js" async />
+        {/* Movie Page Test Framework - Production debugging */}
+        <script src="/js/movie-page-test-framework.js" />
       </PhoneFrame>
     );
   }
