@@ -338,6 +338,33 @@ export default function MovieHeaderLarge({
       </div>
       
       {/* Streaming availability - only show if we have valid data (not TBD placeholder) 
+=======
+          )}
+
+          {/* Error fallback */}
+          {isImageError && (
+            <div style={styles.headerPlaceholder}>
+              <div style={styles.headerErrorText}>📷</div>
+              <div style={styles.headerErrorSubtext}>Poster unavailable</div>
+            </div>
+          )}
+
+          {/* Initial loading state (first 300ms) */}
+          {!showContent && (
+            <div style={styles.headerPlaceholder}>
+              <div style={styles.headerLoadingText}>•••</div>
+            </div>
+          )}
+          {showAddedAnimation && <div style={styles.addedAnimation}>+ added</div>}
+        </div>
+
+        {/* Title and year below poster */}
+        <div style={styles.titleContainer}>
+          <div style={styles.title}>{title}</div>
+          <div style={styles.year}>({year})</div>
+        </div>
+
+        {/* Streaming availability - only show if we have valid data (not TBD placeholder) 
           TBD = placeholder when TMDB/Claude APIs haven't provided streaming data yet */}
       {initialStreaming && initialStreaming.length > 0 && initialStreaming !== 'TBD' && (
         <div style={styles.streamingInfo}>
