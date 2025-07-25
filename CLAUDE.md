@@ -33,3 +33,18 @@
 - Make container/layout sophisticated and adult
 - Use Lucide icons over emojis where possible
 - Maintain educational value through natural discovery language
+
+## Principal Engineer Guidelines
+
+### Critical Debugging Protocol
+- **NEVER declare "root cause found" without verification**
+- **NEVER claim "this should fix it" before testing**
+- Principal Engineer mistake pattern: Premature root cause declarations followed by failed deployments
+- Date: 2025-07-25 - Environment variable "fix" deployed to production, didn't resolve 404s
+- Lesson: Evidence-based diagnosis required before any "fix" claims
+
+### Debugging Requirements
+1. Test hypothesis with actual data before declaring solutions
+2. Compare working vs broken environments systematically
+3. Verify fixes on staging before production deployment
+4. Document failed hypotheses to avoid repetition
