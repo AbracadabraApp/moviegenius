@@ -46,7 +46,7 @@ export default function MovieHeaderLarge({
   // Progressive loading states
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   const [isImageError, setIsImageError] = useState(false);
-  const [showContent, setShowContent] = useState(false);
+  const [showContent, setShowContent] = useState(true);
 
   // Action bar states
   const [addedToList, setAddedToList] = useState(false);
@@ -89,10 +89,7 @@ export default function MovieHeaderLarge({
     }
   }, [mediaId]);
 
-  // Progressive loading: Show content immediately for production stability
-  useEffect(() => {
-    setShowContent(true);
-  }, []);
+  // Progressive loading: Content shown immediately for hydration consistency
 
   // Reset loading state when poster changes
   useEffect(() => {
@@ -435,8 +432,8 @@ const styles = {
     display: 'flex',
     justifyContent: 'flex-start',
     marginBottom: '0px',
-    paddingLeft: '20px',
-    paddingRight: '20px',
+    paddingLeft: '16px',
+    paddingRight: '16px',
     paddingTop: '0px',
     paddingBottom: '0px',
   },
@@ -457,7 +454,7 @@ const styles = {
     marginTop: '0px',
     gap: '8px',
     width: '100%',
-    paddingLeft: '20px',
+    paddingLeft: '16px',
   },
   title: {
     fontSize: '22px', // Slightly larger than MovieHeader (20px -> 22px)
@@ -488,7 +485,7 @@ const styles = {
     textAlign: 'left',
     marginBottom: '0px',
     marginTop: '4px',
-    paddingLeft: '20px',
+    paddingLeft: '16px',
   },
   streamingText: {
     fontSize: '14px',
