@@ -506,21 +506,12 @@ export async function getStaticProps({ params }) {
     return { props: { error: 'Invalid movie ID' } };
   }
 
-  // 🚀 NUCLEAR STRATEGY: Check for pre-built static data first
-  console.log(`🔍 Starting nuclear static check for ${tmdbId}...`);
-  const nuclearStart = Date.now();
-  const fs = await import('fs');
-  const path = await import('path');
-  const nuclearData = await checkNuclearStatic(tmdbId, fs.default, path.default);
-  console.log(`⏱️ Nuclear check took ${Date.now() - nuclearStart}ms`);
-  
-  if (nuclearData) {
-    console.log(`⚡ Serving nuclear static data for movie ${tmdbId} (total time: ${Date.now() - startTime}ms)`);
-    return nuclearData;
-  }
-  
-  console.log(`❌ No nuclear static found for ${tmdbId}, proceeding with dynamic generation...`);
-  const dynamicStart = Date.now();
+  // 🚀 NUCLEAR STRATEGY: Temporarily disabled to fix hydration issues
+  // const nuclearData = await checkNuclearStatic(tmdbId, fs.default, path.default);
+  // if (nuclearData) {
+  //   console.log(`⚡ Serving nuclear static data for movie ${tmdbId}`);
+  //   return nuclearData;
+  // }
 
   try {
     // Server-side imports
@@ -529,6 +520,8 @@ export async function getStaticProps({ params }) {
     
     const { AnalysisService } = await import('../../lib/services/analysis-service');
     const { processAnalysisContent, splitContentAtSubheads } = await import('../../lib/movie-analysis-linker');
+    const fs = await import('fs');
+    const path = await import('path');
     const { createClient } = await import('@supabase/supabase-js');
     const { getTMDBMovieDetails } = await import('../../lib/services/tmdb-search');
     const { createBasicMovieEntry } = await import('../../lib/services/database-search');
