@@ -119,7 +119,56 @@ export default function MovieDetailPage({
             <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
           </div>
           <div style={styles.errorContainer}>
-            <div style={styles.errorText}>Error: {error}</div>
+            <div style={styles.errorText}>🚨 MOVIE PAGE DEBUG INFO 🚨</div>
+            <div style={styles.debugContent}>
+              <h3>Primary Error:</h3>
+              <pre style={styles.debugPre}>{error}</pre>
+              
+              {staticSections?.debugInfo && (
+                <>
+                  <h3>Environment:</h3>
+                  <pre style={styles.debugPre}>{JSON.stringify(staticSections.debugInfo.environment, null, 2)}</pre>
+                  
+                  <h3>Steps Completed:</h3>
+                  <ul style={styles.debugList}>
+                    {staticSections.debugInfo.steps.map((step, i) => (
+                      <li key={i} style={styles.debugStep}>{step}</li>
+                    ))}
+                  </ul>
+                  
+                  <h3>Timings:</h3>
+                  <pre style={styles.debugPre}>{JSON.stringify(staticSections.debugInfo.timings, null, 2)}</pre>
+                  
+                  {staticSections.debugInfo.errors.length > 0 && (
+                    <>
+                      <h3>Errors:</h3>
+                      <ul style={styles.debugList}>
+                        {staticSections.debugInfo.errors.map((err, i) => (
+                          <li key={i} style={styles.debugError}>{err}</li>
+                        ))}
+                      </ul>
+                    </>
+                  )}
+                  
+                  {staticSections.debugInfo.movieEntry && (
+                    <>
+                      <h3>Movie Data Found:</h3>
+                      <pre style={styles.debugPre}>{JSON.stringify(staticSections.debugInfo.movieEntry, null, 2)}</pre>
+                    </>
+                  )}
+                  
+                  <h3>Full Debug Object:</h3>
+                  <pre style={styles.debugPre}>{JSON.stringify(staticSections.debugInfo, null, 2)}</pre>
+                </>
+              )}
+              
+              {staticMovieData?.stack && (
+                <>
+                  <h3>Stack Trace:</h3>
+                  <pre style={styles.debugPre}>{staticMovieData.stack}</pre>
+                </>
+              )}
+            </div>
           </div>
         </div>
       </PhoneFrame>
@@ -128,6 +177,14 @@ export default function MovieDetailPage({
 
   // Debug render flow
   // Movie page render
+  
+  // Show debug info for successful pages too
+  console.log('🎬 Movie page render with props:', {
+    title, year, tmdbId, hasAnalysis, 
+    sectionsLength: sections?.length,
+    source,
+    hasDebugInfo: !!staticSections?.debugInfo
+  });
 
   return (
     <PhoneFrame>
@@ -448,8 +505,46 @@ const styles = {
     textAlign: 'center',
   },
   errorText: {
-    fontSize: '16px',
+    fontSize: '18px',
     color: '#dc2626',
+    fontWeight: 'bold',
+    marginBottom: '20px',
+    textAlign: 'center',
+  },
+  debugContent: {
+    textAlign: 'left',
+    fontSize: '12px',
+    lineHeight: '1.4',
+    maxHeight: '80vh',
+    overflowY: 'auto',
+    backgroundColor: '#f8f9fa',
+    padding: '16px',
+    border: '1px solid #e9ecef',
+    borderRadius: '4px',
+  },
+  debugPre: {
+    backgroundColor: '#000',
+    color: '#0f0',
+    padding: '8px',
+    borderRadius: '4px',
+    fontSize: '11px',
+    overflow: 'auto',
+    whiteSpace: 'pre-wrap',
+    wordBreak: 'break-all',
+    marginBottom: '16px',
+  },
+  debugList: {
+    margin: '8px 0',
+    paddingLeft: '20px',
+  },
+  debugStep: {
+    color: '#28a745',
+    marginBottom: '4px',
+  },
+  debugError: {
+    color: '#dc3545',
+    marginBottom: '4px',
+    fontWeight: 'bold',
   },
 };
 
@@ -492,14 +587,41 @@ async function checkNuclearStatic(tmdbId, fs, path) {
 // Simplified getStaticProps - most logic moved to services
 export async function getStaticProps({ params }) {
   const startTime = Date.now();
-  console.log(`🚀 getStaticProps START for movie ${params.id} at ${new Date().toISOString()}`);
+  const debugInfo = {
+    timestamp: new Date().toISOString(),
+    params,
+    environment: {
+      NODE_ENV: process.env.NODE_ENV,
+      RAILWAY_ENVIRONMENT_NAME: process.env.RAILWAY_ENVIRONMENT_NAME,
+      NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL ? 'present' : 'missing',
+      SUPABASE_SERVICE_ROLE_KEY: process.env.SUPABASE_SERVICE_ROLE_KEY ? 'present' : 'missing',
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ? 'present' : 'missing',
+      ANTHROPIC_API_KEY: process.env.ANTHROPIC_API_KEY ? 'present' : 'missing',
+      NEXT_PUBLIC_TMDB_API_KEY: process.env.NEXT_PUBLIC_TMDB_API_KEY ? 'present' : 'missing',
+    },
+    steps: [],
+    errors: [],
+    timings: {}
+  };
+  
+  console.log(`🚀 getStaticProps START for movie ${params.id} at ${debugInfo.timestamp}`);
+  debugInfo.steps.push(`Started getStaticProps for movie ${params.id}`);
   
   const { id } = params;
   const tmdbId = parseInt(id, 10);
 
   if (isNaN(tmdbId) || tmdbId <= 0) {
-    return { props: { error: 'Invalid movie ID' } };
+    debugInfo.errors.push(`Invalid movie ID: ${id} -> ${tmdbId}`);
+    return { 
+      props: { 
+        error: 'Invalid movie ID',
+        debugInfo 
+      } 
+    };
   }
+
+  debugInfo.steps.push(`Parsed tmdbId: ${tmdbId}`);
+  debugInfo.tmdbId = tmdbId;
 
   // 🚀 NUCLEAR STRATEGY: Temporarily disabled - need to fix file deployment
   // const fs = await import('fs');
@@ -514,41 +636,121 @@ export async function getStaticProps({ params }) {
     // Server-side imports
     console.log(`📦 Starting imports...`);
     const importStart = Date.now();
+    debugInfo.steps.push('Starting dynamic imports...');
     
-    const { AnalysisService } = await import('../../lib/services/analysis-service');
-    const { processAnalysisContent, splitContentAtSubheads } = await import('../../lib/movie-analysis-linker');
-    const fs = await import('fs');
-    const path = await import('path');
-    const { createClient } = await import('@supabase/supabase-js');
-    const { getTMDBMovieDetails } = await import('../../lib/services/tmdb-search');
-    const { createBasicMovieEntry } = await import('../../lib/services/database-search');
+    try {
+      const { AnalysisService } = await import('../../lib/services/analysis-service');
+      debugInfo.steps.push('✅ AnalysisService imported');
+      
+      const { processAnalysisContent, splitContentAtSubheads } = await import('../../lib/movie-analysis-linker');
+      debugInfo.steps.push('✅ movie-analysis-linker imported');
+      
+      const fs = await import('fs');
+      debugInfo.steps.push('✅ fs imported');
+      
+      const path = await import('path');
+      debugInfo.steps.push('✅ path imported');
+      
+      const { createClient } = await import('@supabase/supabase-js');
+      debugInfo.steps.push('✅ Supabase client imported');
+      
+      const { getTMDBMovieDetails } = await import('../../lib/services/tmdb-search');
+      debugInfo.steps.push('✅ TMDB service imported');
+      
+      const { createBasicMovieEntry } = await import('../../lib/services/database-search');
+      debugInfo.steps.push('✅ Database service imported');
+    } catch (importError) {
+      debugInfo.errors.push(`Import failed: ${importError.message}`);
+      debugInfo.errors.push(`Import stack: ${importError.stack}`);
+      throw importError;
+    }
     
-    console.log(`📦 Imports took ${Date.now() - importStart}ms`);
+    debugInfo.timings.imports = Date.now() - importStart;
+    console.log(`📦 Imports took ${debugInfo.timings.imports}ms`);
 
     // Check environment variables
+    debugInfo.steps.push('Checking environment variables...');
     if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
+      const missingVars = [];
+      if (!process.env.NEXT_PUBLIC_SUPABASE_URL) missingVars.push('NEXT_PUBLIC_SUPABASE_URL');
+      if (!process.env.SUPABASE_SERVICE_ROLE_KEY) missingVars.push('SUPABASE_SERVICE_ROLE_KEY');
+      
+      debugInfo.errors.push(`Missing Supabase environment variables: ${missingVars.join(', ')}`);
       console.error('Missing Supabase environment variables');
-      return { notFound: true };
+      return { 
+        props: { 
+          error: `Missing environment variables: ${missingVars.join(', ')}`,
+          debugInfo 
+        } 
+      };
     }
+    debugInfo.steps.push('✅ Environment variables present');
 
     // Create supabase client using the working pattern from 3 weeks ago
     console.log(`🔌 Creating Supabase client...`);
     const supabaseStart = Date.now();
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
-    console.log(`🔌 Supabase client created in ${Date.now() - supabaseStart}ms`);
+    debugInfo.steps.push('Creating Supabase client...');
+    
+    let supabase;
+    try {
+      supabase = createClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL,
+        process.env.SUPABASE_SERVICE_ROLE_KEY
+      );
+      debugInfo.steps.push('✅ Supabase client created');
+      debugInfo.timings.supabaseClient = Date.now() - supabaseStart;
+      console.log(`🔌 Supabase client created in ${debugInfo.timings.supabaseClient}ms`);
+    } catch (supabaseError) {
+      debugInfo.errors.push(`Supabase client creation failed: ${supabaseError.message}`);
+      throw supabaseError;
+    }
 
     // Get movie from database
     console.log(`🗄️ Querying database for movie ${tmdbId}...`);
     const dbQueryStart = Date.now();
-    const { data: movieEntry, error } = await supabase
-      .from('movies')
-      .select('id, title, year, slug, poster_url, streaming_data, tmdb_id')
-      .eq('tmdb_id', tmdbId)
-      .single();
-    console.log(`🗄️ Database query took ${Date.now() - dbQueryStart}ms`);
+    debugInfo.steps.push(`Querying database for TMDB ID ${tmdbId}...`);
+    
+    let movieEntry, error;
+    try {
+      const result = await supabase
+        .from('movies')
+        .select('id, title, year, slug, poster_url, streaming_data, tmdb_id')
+        .eq('tmdb_id', tmdbId)
+        .single();
+      
+      movieEntry = result.data;
+      error = result.error;
+      
+      debugInfo.timings.dbQuery = Date.now() - dbQueryStart;
+      debugInfo.steps.push(`Database query completed in ${debugInfo.timings.dbQuery}ms`);
+      
+      if (error) {
+        debugInfo.errors.push(`Database query error: ${error.message}`);
+        debugInfo.errors.push(`Error code: ${error.code}`);
+        debugInfo.errors.push(`Error details: ${JSON.stringify(error.details)}`);
+      }
+      
+      if (movieEntry) {
+        debugInfo.steps.push(`✅ Movie found: ${movieEntry.title} (${movieEntry.year})`);
+        debugInfo.movieEntry = {
+          id: movieEntry.id,
+          title: movieEntry.title,
+          year: movieEntry.year,
+          tmdb_id: movieEntry.tmdb_id,
+          hasSlug: !!movieEntry.slug,
+          hasPoster: !!movieEntry.poster_url,
+          hasStreaming: !!movieEntry.streaming_data
+        };
+      } else {
+        debugInfo.steps.push('❌ Movie not found in database');
+      }
+      
+      console.log(`🗄️ Database query took ${debugInfo.timings.dbQuery}ms`);
+    } catch (dbError) {
+      debugInfo.errors.push(`Database query exception: ${dbError.message}`);
+      debugInfo.errors.push(`Database stack: ${dbError.stack}`);
+      throw dbError;
+    }
 
     if (!movieEntry || error) {
       // Movie not in database - try TMDB discovery
@@ -751,11 +953,30 @@ export async function getStaticProps({ params }) {
     // 🚀 NUCLEAR STRATEGY: Long revalidation for pre-built nuclear pages - aggressive caching
     response.revalidate = response.props.hasAnalysis ? 604800 : 86400; // 7 days for nuclear movies, 24h for others
 
-    console.log(`✅ Dynamic generation completed for ${tmdbId} (total time: ${Date.now() - startTime}ms)`);
+    debugInfo.timings.total = Date.now() - startTime;
+    debugInfo.steps.push(`✅ Dynamic generation completed for ${tmdbId} (total time: ${debugInfo.timings.total}ms)`);
+    console.log(`✅ Dynamic generation completed for ${tmdbId} (total time: ${debugInfo.timings.total}ms)`);
+    
+    // Add debug info to successful response
+    response.props.debugInfo = debugInfo;
     return response;
   } catch (error) {
+    debugInfo.errors.push(`FATAL ERROR: ${error.message}`);
+    debugInfo.errors.push(`FATAL STACK: ${error.stack}`);
+    debugInfo.timings.total = Date.now() - startTime;
+    debugInfo.steps.push(`❌ Failed after ${debugInfo.timings.total}ms`);
+    
     console.error('Static generation error:', error);
-    return { notFound: true };
+    console.error('Debug info:', JSON.stringify(debugInfo, null, 2));
+    
+    // Return error with full debugging information instead of notFound
+    return { 
+      props: { 
+        error: `Static generation failed: ${error.message}`,
+        debugInfo,
+        stack: error.stack
+      } 
+    };
   }
 }
 

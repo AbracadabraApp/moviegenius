@@ -48,3 +48,35 @@
 2. Compare working vs broken environments systematically
 3. Verify fixes on staging before production deployment
 4. Document failed hypotheses to avoid repetition
+
+### Professional Commit Message Standards
+
+**NEVER use these words/phrases in commit messages:**
+- "FIX" / "FIXED" (until verified)
+- "PRODUCTION FIX" (claim before testing)
+- "This should work" / "This will fix"
+- "Now working" / "Now fast"
+- Assumptions about causation without evidence
+
+**Required format for reverts:**
+```
+Revert "original commit title"
+
+This reverts commit [hash].
+
+[Factual reason for revert - no assumptions about what it will accomplish]
+```
+
+**Required format for changes:**
+```
+[type]: [factual description of change]
+
+[Optional: Context about why change was made]
+[No predictions about outcomes]
+```
+
+**Examples:**
+- ❌ "PRODUCTION FIX: Remove API calls causing 404s"
+- ✅ "Revert automatic slug generation from movie creation"
+- ❌ "Fix hydration issues - should resolve 404s"  
+- ✅ "Remove console.log statements from JSX components"
