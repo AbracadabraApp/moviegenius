@@ -501,12 +501,14 @@ export async function getStaticProps({ params }) {
     return { props: { error: 'Invalid movie ID' } };
   }
 
-  // 🚀 NUCLEAR STRATEGY: Temporarily disabled to fix hydration issues
-  // const nuclearData = await checkNuclearStatic(tmdbId, fs.default, path.default);
-  // if (nuclearData) {
-  //   console.log(`⚡ Serving nuclear static data for movie ${tmdbId}`);
-  //   return nuclearData;
-  // }
+  // 🚀 NUCLEAR STRATEGY: Check for pre-built static data first
+  const fs = await import('fs');
+  const path = await import('path');
+  const nuclearData = await checkNuclearStatic(tmdbId, fs.default, path.default);
+  if (nuclearData) {
+    console.log(`⚡ Serving nuclear static data for movie ${tmdbId} in ${Date.now() - startTime}ms`);
+    return nuclearData;
+  }
 
   try {
     // Server-side imports
