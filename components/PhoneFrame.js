@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import NavBar from './NavBar';
 import { shouldShowPhoneFrame, getPlatformName } from '../lib/platform';
 
-export default function PhoneFrame({ children }) {
+export default function PhoneFrame({ children, navItems, routeValidation }) {
   const [showFrame, setShowFrame] = useState(true); // Default to frame for SSR
   const [platform, setPlatform] = useState('');
 
@@ -18,7 +18,7 @@ export default function PhoneFrame({ children }) {
     return (
       <div style={styles.mobileContainer}>
         <div style={styles.mobileContent}>{children}</div>
-        <NavBar />
+        <NavBar navItems={navItems} routeValidation={routeValidation} />
       </div>
     );
   }
@@ -29,7 +29,7 @@ export default function PhoneFrame({ children }) {
       <div style={styles.phoneFrame}>
         <div style={styles.screen}>
           <div style={styles.content}>{children}</div>
-          <NavBar />
+          <NavBar navItems={navItems} routeValidation={routeValidation} />
         </div>
       </div>
     </div>
