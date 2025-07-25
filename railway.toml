@@ -5,13 +5,11 @@ buildCommand = "npm run build"
 [deploy]
 startCommand = "npm start"
 restartPolicyType = "on_failure"
-healthcheckPath = "/api/health"
-healthcheckTimeout = 300
 
 [env]
 NEXT_TELEMETRY_DISABLED = "1"
 NODE_ENV = "production"
-FORCE_DEPLOY = "2025-07-24T20:50:00Z"
+FORCE_DEPLOY = "2025-07-25T00:45:00Z"
 
 # Force nixpacks override - Railway should not use Docker
 [settings]
