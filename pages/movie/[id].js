@@ -217,7 +217,7 @@ export default function MovieDetailPage({
         `}} />
         
         {/* Movie Page Test Framework - Systematic debugging */}
-        <script src="/js/movie-page-test-framework.js" />
+        <script src="/js/movie-page-test-framework.js" async />
       </PhoneFrame>
     );
   }
@@ -719,26 +719,28 @@ export async function getStaticProps({ params }) {
     const importStart = Date.now();
     debugInfo.steps.push('Starting dynamic imports...');
     
+    let AnalysisService, processAnalysisContent, splitContentAtSubheads, fs, path, createClient, getTMDBMovieDetails, createBasicMovieEntry;
+    
     try {
-      const { AnalysisService } = await import('../../lib/services/analysis-service');
+      ({ AnalysisService } = await import('../../lib/services/analysis-service'));
       debugInfo.steps.push('✅ AnalysisService imported');
       
-      const { processAnalysisContent, splitContentAtSubheads } = await import('../../lib/movie-analysis-linker');
+      ({ processAnalysisContent, splitContentAtSubheads } = await import('../../lib/movie-analysis-linker'));
       debugInfo.steps.push('✅ movie-analysis-linker imported');
       
-      const fs = await import('fs');
+      fs = await import('fs');
       debugInfo.steps.push('✅ fs imported');
       
-      const path = await import('path');
+      path = await import('path');
       debugInfo.steps.push('✅ path imported');
       
-      const { createClient } = await import('@supabase/supabase-js');
+      ({ createClient } = await import('@supabase/supabase-js'));
       debugInfo.steps.push('✅ Supabase client imported');
       
-      const { getTMDBMovieDetails } = await import('../../lib/services/tmdb-search');
+      ({ getTMDBMovieDetails } = await import('../../lib/services/tmdb-search'));
       debugInfo.steps.push('✅ TMDB service imported');
       
-      const { createBasicMovieEntry } = await import('../../lib/services/database-search');
+      ({ createBasicMovieEntry } = await import('../../lib/services/database-search'));
       debugInfo.steps.push('✅ Database service imported');
     } catch (importError) {
       debugInfo.errors.push(`Import failed: ${importError.message}`);
