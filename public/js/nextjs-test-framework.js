@@ -1,20 +1,24 @@
-// Next.js Testing Framework for 404, Flicker, and Webpack Issues
-class NextJsTestFramework {
+// Refined Next.js Testing Framework for Movie Page Fixes
+class RefinedNextJsTestFramework {
   constructor(config = {}) {
     this.config = {
-      hydrationTimeout: config.hydrationTimeout || 10000, // 10s timeout
-      rootSelector: config.rootSelector || '[data-app-root]', // Custom root
+      hydrationTimeout: config.hydrationTimeout || 10000,
+      rootSelector: config.rootSelector || '#__next',
       reportStorage: config.reportStorage || 'localStorage',
-      nextRoute: config.nextRoute || window.__NEXT_DATA__?.props?.pageProps, // Next.js route data
+      nextRoute: config.nextRoute || window.__NEXT_DATA__?.props?.pageProps,
+      staticAssets: config.staticAssets || ['/favicon.ico', '/_next/static/chunks'],
+      tmdbApiUrl: config.tmdbApiUrl || '/api/movie', // API route for TMDB
     };
     this.logs = [];
     this.bundleErrors = [];
     this.requireErrors = [];
     this.networkErrors = [];
     this.hydrationErrors = [];
+    this.staticAssetErrors = [];
+    this.tmdbErrors = [];
     this.hydrationStatus = 'pending';
     this.is404Page = false;
-    this.staticAssetErrors = [];
+    this.performanceMetrics = [];
   }
 
   // Utility: Generate timestamp
@@ -26,7 +30,7 @@ class NextJsTestFramework {
   log(message, data = {}) {
     const logEntry = { timestamp: this.getTimestamp(), message, data };
     this.logs.push(logEntry);
-    console.log('[NEXTJS-TEST]', logEntry);
+    console.log('[REFINED-NEXTJS-TEST]', logEntry);
   }
 
   // Test for require availability
@@ -48,21 +52,13 @@ class NextJsTestFramework {
     }
   }
 
-  // Monitor Webpack/require and React errors
+  // Monitor Webpack, React, and hydration errors
   interceptErrors() {
     const originalError = window.onerror;
     const self = this;
 
     window.onerror = function (message, source, lineno, colno, error) {
-      const errorEntry = {
-        timestamp: self.getTimestamp(),
-        message,
-        source,
-        lineno,
-        colno,
-        error: error?.stack,
-      };
-
+      const errorEntry = { timestamp: self.getTimestamp(), message, source, lineno, colno, error: error?.stack };
       if (message.includes('require') || message.includes('webpack')) {
         self.bundleErrors.push(errorEntry);
         self.log('🚨 Webpack/require error detected', errorEntry);
@@ -97,9 +93,12 @@ class NextJsTestFramework {
         requestInfo.duration = performance.now() - startTime;
         if (response.status === 404) {
           self.networkErrors.push(requestInfo);
-          if (requestInfo.url.includes('favicon.ico') || requestInfo.url.includes('.js') || requestInfo.url.includes('.css')) {
+          if (self.config.staticAssets.some((asset) => requestInfo.url.includes(asset))) {
             self.staticAssetErrors.push(requestInfo);
             self.log('🚨 Static asset 404 detected', requestInfo);
+          } else if (requestInfo.url.includes(self.config.tmdbApiUrl)) {
+            self.tmdbErrors.push(requestInfo);
+            self.log('🚨 TMDB API 404 detected', requestInfo);
           } else {
             self.is404Page = true;
             self.log('🚨 Resource 404 detected', requestInfo);
@@ -154,13 +153,54 @@ class NextJsTestFramework {
       return false;
     }
     const { asPath, pathname, query } = this.config.nextRoute;
-    const isValidRoute = asPath && pathname && query;
-    this.log(isValidRoute ? '✅ Valid Next.js route data' : '❌ Invalid Next.js route data', {
-      asPath,
-      pathname,
-      query,
-    });
+    const isValidRoute = asPath && pathname && query && query.id;
+    this.log(isValidRoute ? '✅ Valid Next.js route data' : '❌ Invalid Next.js route data', { asPath, pathname, query });
     return isValidRoute;
+  }
+
+  // Test static asset availability
+  testStaticAssets() {
+    const results = this.config.staticAssets.map((asset) => {
+      const isAvailable = !this.staticAssetErrors.some((err) => err.url.includes(asset));
+      this.log(isAvailable ? `✅ Static asset available: ${asset}` : `❌ Static asset missing: ${asset}`);
+      return isAvailable;
+    });
+    return results.every((r) => r);
+  }
+
+  // Test TMDB API fallback
+  async testTmdbFallback(id = '550') {
+    try {
+      const response = await fetch(`${this.config.tmdbApiUrl}/${id}`);
+      const isSuccess = response.ok;
+      this.log(isSuccess ? '✅ TMDB API fallback successful' : '❌ TMDB API fallback failed', { status: response.status });
+      return isSuccess;
+    } catch (error) {
+      this.tmdbErrors.push({ timestamp: this.getTimestamp(), error: error.message });
+      this.log('🚨 TMDB API error', { error: error.message });
+      return false;
+    }
+  }
+
+  // Measure performance metrics
+  measurePerformance() {
+    const metrics = {
+      timestamp: this.getTimestamp(),
+      domContentLoaded: performance.timing.domContentLoadedEventEnd - performance.timing.navigationStart,
+      loadTime: performance.timing.loadEventEnd - performance.timing.navigationStart,
+      paintTiming: this.getPaintTiming(),
+    };
+    this.performanceMetrics.push(metrics);
+    this.log('Performance metrics', metrics);
+    return metrics.loadTime < 200; // Target <200ms
+  }
+
+  getPaintTiming() {
+    const paintEntries = performance.getEntriesByType('paint');
+    return paintEntries.reduce((acc, entry) => {
+      acc[entry.name] = entry.startTime;
+      return acc;
+    }, {});
   }
 
   // Capture require-specific errors
@@ -190,16 +230,22 @@ class NextJsTestFramework {
       requireAvailable: this.testRequireAvailability(),
       hydrationStatus: this.hydrationStatus,
       nextRouteValid: this.testNextRoute(),
+      staticAssetsAvailable: this.testStaticAssets(),
+      tmdbFallbackSuccess: false, // Updated after async test
+      performanceAcceptable: this.measurePerformance(),
       bundleErrorCount: this.bundleErrors.length,
       requireErrorCount: this.requireErrors.length,
       networkErrorCount: this.networkErrors.length,
       hydrationErrorCount: this.hydrationErrors.length,
       staticAssetErrorCount: this.staticAssetErrors.length,
+      tmdbErrorCount: this.tmdbErrors.length,
       bundleErrors: this.bundleErrors,
       requireErrors: this.requireErrors,
       networkErrors: this.networkErrors,
       hydrationErrors: this.hydrationErrors,
       staticAssetErrors: this.staticAssetErrors,
+      tmdbErrors: this.tmdbErrors,
+      performanceMetrics: this.performanceMetrics,
       testResults: {
         no404Errors: !this.is404Page,
         webpackBundlesLoaded: this.bundleErrors.length === 0,
@@ -208,58 +254,67 @@ class NextJsTestFramework {
         noNetworkErrors: this.networkErrors.length === 0,
         noHydrationErrors: this.hydrationErrors.length === 0,
         noStaticAssetErrors: this.staticAssetErrors.length === 0,
+        noTmdbErrors: this.tmdbErrors.length === 0,
         validNextRoute: this.testNextRoute(),
+        staticAssetsAvailable: this.testStaticAssets(),
+        performanceAcceptable: this.measurePerformance(),
       },
     };
 
-    report.validationPassed =
-      report.testResults.no404Errors &&
-      report.testResults.webpackBundlesLoaded &&
-      report.testResults.clientSideWorking &&
-      report.testResults.noRequireErrors &&
-      report.testResults.noNetworkErrors &&
-      report.testResults.noHydrationErrors &&
-      report.testResults.noStaticAssetErrors &&
-      report.testResults.validNextRoute;
+    // Run async TMDB test
+    this.testTmdbFallback().then((success) => {
+      report.tmdbFallbackSuccess = success;
+      report.testResults.noTmdbErrors = success && report.tmdbErrorCount === 0;
+      report.validationPassed =
+        report.testResults.no404Errors &&
+        report.testResults.webpackBundlesLoaded &&
+        report.testResults.clientSideWorking &&
+        report.testResults.noRequireErrors &&
+        report.testResults.noNetworkErrors &&
+        report.testResults.noHydrationErrors &&
+        report.testResults.noStaticAssetErrors &&
+        report.testResults.noTmdbErrors &&
+        report.testResults.validNextRoute &&
+        report.testResults.staticAssetsAvailable &&
+        report.testResults.performanceAcceptable;
 
-    if (this.config.reportStorage === 'localStorage') {
-      localStorage.setItem('nextJsTestReport', JSON.stringify(report));
-    }
+      if (this.config.reportStorage === 'localStorage') {
+        localStorage.setItem('refinedNextJsTestReport', JSON.stringify(report));
+      }
+
+      console.log('📊 REFINED NEXTJS VALIDATION REPORT:', report);
+      console.log(report.validationPassed ? '✅ All tests PASSED' : '❌ Validation FAILED');
+    });
 
     return report;
   }
 
   // Initialize framework
   init() {
-    this.log('Next.js testing framework initializing');
+    this.log('Refined Next.js testing framework initializing');
     this.detect404Page();
     this.interceptNetwork();
     this.interceptErrors();
     this.testHydrationComplete();
     this.testNextRoute();
+    this.measurePerformance();
 
     window.addEventListener('load', () => {
-      setTimeout(() => {
-        const report = this.generateValidationReport();
-        console.log('📊 NEXTJS VALIDATION REPORT:', report);
-        if (report.validationPassed) {
-          console.log('✅ All tests PASSED');
-        } else {
-          console.log('❌ Validation FAILED');
-        }
-      }, 2000);
+      setTimeout(() => this.generateValidationReport(), 2000);
     });
   }
 }
 
 // Auto-initialize with Next.js-specific config
-const tester = new NextJsTestFramework({
+const tester = new RefinedNextJsTestFramework({
   hydrationTimeout: 10000,
-  rootSelector: '#__next', // Next.js default root
+  rootSelector: '#__next',
   reportStorage: 'localStorage',
   nextRoute: window.__NEXT_DATA__?.props?.pageProps,
+  staticAssets: ['/favicon.ico', '/_next/static/chunks'],
+  tmdbApiUrl: '/api/movie',
 });
 tester.init();
 
 // Expose report generation
-window.generateNextJsReport = () => tester.generateValidationReport();
+window.generateRefinedNextJsReport = () => tester.generateValidationReport();

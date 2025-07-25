@@ -26,7 +26,6 @@ export default function MyApp({ Component, pageProps }) {
         from: router.pathname,
         to: url,
         timestamp: new Date().toISOString(),
-        navigationCount: navigationStats.totalNavigations + 1,
       });
     };
 
@@ -63,7 +62,6 @@ export default function MyApp({ Component, pageProps }) {
         url,
         duration: `${duration}ms`,
         timestamp: new Date().toISOString(),
-        totalNavigations: navigationStats.totalNavigations + 1,
       });
 
       window.scrollTo(0, 0);
@@ -95,7 +93,6 @@ export default function MyApp({ Component, pageProps }) {
         lastSuccessfulRoute,
         stack: err.stack,
         timestamp: new Date().toISOString(),
-        navigationHistory: navigationStats.navigationHistory,
       });
 
       // Add error recovery attempt
@@ -156,7 +153,7 @@ export default function MyApp({ Component, pageProps }) {
       router.events.off('beforeHistoryChange', handleBeforeHistoryChange);
       document.removeEventListener('keydown', handleKeyDown);
     };
-  }, [router, navigationStats]);
+  }, [router]);
 
   return (
     <>
