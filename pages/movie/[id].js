@@ -659,8 +659,8 @@ export async function getStaticProps({ params }) {
     timestamp: new Date().toISOString(),
     params,
     environment: {
-      NODE_ENV: process.env.NODE_ENV,
-      RAILWAY_ENVIRONMENT_NAME: process.env.RAILWAY_ENVIRONMENT_NAME,
+      NODE_ENV: process.env.NODE_ENV || 'unknown',
+      RAILWAY_ENVIRONMENT_NAME: process.env.RAILWAY_ENVIRONMENT_NAME || null,
       NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL ? 'present' : 'missing',
       SUPABASE_SERVICE_ROLE_KEY: process.env.SUPABASE_SERVICE_ROLE_KEY ? 'present' : 'missing',
       NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ? 'present' : 'missing',
@@ -669,8 +669,8 @@ export async function getStaticProps({ params }) {
     },
     hydrationCheck: {
       serverRenderTime: new Date().toISOString(),
-      nodeEnv: process.env.NODE_ENV,
-      railwayEnv: process.env.RAILWAY_ENVIRONMENT_NAME,
+      nodeEnv: process.env.NODE_ENV || 'unknown',
+      railwayEnv: process.env.RAILWAY_ENVIRONMENT_NAME || null,
       hasConsoleDebug: process.env.NODE_ENV === 'development',
       ssrMarkers: {
         tmdbId: params.id,
