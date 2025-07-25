@@ -1,0 +1,50 @@
+From c10d7f01ce0114e1ce8cb54ce5a4aaa6626cbc00 Mon Sep 17 00:00:00 2001
+From: AbracadabraApp <josh.petersen@gmail.com>
+Date: Wed, 23 Jul 2025 00:43:04 -0700
+Subject: [PATCH] fix: Apply validation to MediaCard useEffect slug updates
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Resolves slug display issue where MediaCard useEffect was bypassing
+validation and overwriting properly validated slugs. The useEffect
+now respects the same validation rules as the initial state.
+
+Movies affected: Double Indemnity (996), Out of the Past (678),
+Criss Cross (22112) now display their slugs correctly.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>
+---
+ components/MediaCard.js | 12 ++++++++++--
+ 1 file changed, 10 insertions(+), 2 deletions(-)
+
+diff --git a/components/MediaCard.js b/components/MediaCard.js
+index 24efe5d8..bb99265b 100644
+--- a/components/MediaCard.js
++++ b/components/MediaCard.js
+@@ -71,10 +71,18 @@ export default function MediaCard({
+     setMovieTmdbId(tmdbId);
+   }, [tmdbId]);
+ 
+-  // Update slug when initialSlug prop changes
++  // Update slug when initialSlug prop changes (with validation)
+   useEffect(() => {
+-    if (initialSlug) {
++    const isValid = initialSlug &&
++      !initialSlug.includes('Plot:') && 
++      !initialSlug.includes('Overview:') && 
++      !initialSlug.includes('Synopsis:') && 
++      !initialSlug.includes('Summary:');
++    
++    if (isValid) {
+       setSlug(initialSlug);
++    } else {
++      setSlug('');
+     }
+   }, [initialSlug]);
+   const [isEnhancing, setIsEnhancing] = useState(false);
+-- 
+2.39.5 (Apple Git-154)
+
