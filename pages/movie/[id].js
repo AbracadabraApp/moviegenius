@@ -174,52 +174,6 @@ export default function MovieDetailPage({
           </div>
         </div>
         
-        {/* Client-side error capture script */}
-        <script dangerouslySetInnerHTML={{__html: `
-          // Track page lifecycle and capture redirects
-          console.log('🔍 CLIENT: Movie page script loaded', {
-            url: window.location.href,
-            tmdbId: '${tmdbId}',
-            timestamp: new Date().toISOString()
-          });
-          
-          // Capture any redirects or navigation changes
-          const originalPushState = history.pushState;
-          const originalReplaceState = history.replaceState;
-          
-          history.pushState = function() {
-            console.log('🚨 CLIENT: Navigation pushState detected', arguments);
-            return originalPushState.apply(this, arguments);
-          };
-          
-          history.replaceState = function() {
-            console.log('🚨 CLIENT: Navigation replaceState detected', arguments);
-            return originalReplaceState.apply(this, arguments);
-          };
-          
-          // Capture unhandled errors that could cause redirects
-          window.addEventListener('error', function(e) {
-            console.log('🚨 CLIENT: Window error detected', {
-              message: e.message,
-              filename: e.filename,
-              lineno: e.lineno,
-              colno: e.colno,
-              stack: e.error?.stack
-            });
-          });
-          
-          // Track DOM ready state
-          document.addEventListener('DOMContentLoaded', function() {
-            console.log('🔍 CLIENT: DOM loaded, checking for error elements');
-            const errorElements = document.querySelectorAll('[class*="error"], .debug-overlay');
-            if (errorElements.length > 0) {
-              console.log('🚨 CLIENT: Error elements found', errorElements.length);
-            }
-          });
-        `}} />
-        
-        {/* Movie Page Test Framework - Production debugging */}
-        <script src="/js/movie-page-test-framework.js" async />
       </PhoneFrame>
     );
   }
