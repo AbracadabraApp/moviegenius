@@ -765,7 +765,18 @@ export async function getStaticProps({ params }) {
         const tmdbMovie = await getTMDBMovieDetails(tmdbId);
 
         if (!tmdbMovie) {
-          return { notFound: true };
+          debugInfo.errors.push(`TMDB movie not found for ID: ${tmdbId}`);
+          debugInfo.errors.push(`Total processing time: ${Date.now() - startTime}ms`);
+          
+          return {
+            props: {
+              error: `Movie not found: TMDB ID ${tmdbId} does not exist`,
+              staticSections: { debugInfo },
+              title: `Movie ${tmdbId}`,
+              year: 'Unknown',
+              tmdbId: tmdbId
+            }
+          };
         }
 
         // Create basic movie entry in database for future reference (skip if no database)
