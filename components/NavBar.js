@@ -7,6 +7,7 @@ import Link from 'next/link';
 
 export default function NavBar({ navItems = [], routeValidation = {} }) {
   const router = useRouter();
+  const [isClient, setIsClient] = useState(false);
   const [showFrame, setShowFrame] = useState(true); // Default to desktop frame for SSR consistency
   // Calculate initial active state to prevent flashing
   const getActiveLabel = pathname => {
@@ -41,7 +42,8 @@ export default function NavBar({ navItems = [], routeValidation = {} }) {
   );
 
   useEffect(() => {
-    // Client-side detection for frame
+    // Mark as client-side rendered and detect platform
+    setIsClient(true);
     setShowFrame(shouldShowPhoneFrame());
   }, []);
 
@@ -59,6 +61,68 @@ export default function NavBar({ navItems = [], routeValidation = {} }) {
     Sparkles: Sparkles,
     User: User,
   };
+
+  // During SSR or before client-side detection, always render desktop layout
+  if (!isClient) {
+    return (
+      <nav
+        style={{
+          ...styles.nav,
+          ...styles.navDesktop,
+        }}
+      >
+        {navItems.map(item => {
+          try {
+            const Icon = iconMap[item.icon];
+            const isActive = activeLabel === item.label;
+
+            if (!Icon) {
+              console.error(`NavBar: Icon ${item.icon} not found in iconMap`);
+              return null;
+            }
+
+            if (!item.route || typeof item.route !== 'string') {
+              console.error(`NavBar: Invalid route for ${item.label}:`, item.route);
+              return null;
+            }
+
+            return (
+              <Link key={item.label} href={item.route} passHref legacyBehavior>
+                <a style={{ textDecoration: 'none' }}>
+                  <div
+                    style={{
+                      ...styles.navItem,
+                      opacity: isActive ? 1 : 0.6,
+                      transform: isActive ? 'translateY(-2px)' : 'none',
+                    }}
+                  >
+                    <Icon
+                      size={28}
+                      style={{
+                        ...styles.icon,
+                        transform: isActive ? 'scale(1.15)' : 'scale(1)',
+                      }}
+                    />
+                    <span style={styles.labelContainer}>
+                      <span style={styles.label}>{item.label}</span>
+                      {isActive && <div style={styles.underline} />}
+                    </span>
+                  </div>
+                </a>
+              </Link>
+            );
+          } catch (error) {
+            console.error(`NavBar: Error rendering nav item ${item.label}:`, error);
+            return (
+              <div key={item.label} style={{ ...styles.navItem, opacity: 0.4 }}>
+                <span style={styles.label}>{item.label}</span>
+              </div>
+            );
+          }
+        })}
+      </nav>
+    );
+  }
 
   return (
     <nav
