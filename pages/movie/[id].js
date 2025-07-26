@@ -928,19 +928,24 @@ export async function getStaticProps({ params }) {
       } catch (tmdbError) {
         console.error('TMDB discovery failed:', tmdbError);
 
-        // Fallback to placeholder data
+        // Fallback to placeholder data - avoid 404s, provide user-friendly message
+        const { navItems, routeValidation } = await import('../../lib/routes');
+        
         return {
           props: {
-            title: 'Movie Not Found',
+            title: `Movie ${tmdbId}`,
             year: new Date().getFullYear(),
-            initialSlug: 'Movie information unavailable',
+            initialSlug: null,
             initialPoster: '/images/placeholder-poster.jpg',
             initialStreaming: null,
             tmdbId: tmdbId,
-            error: 'Movie not found in database or TMDB',
+            error: `Movie information currently unavailable for TMDB ID ${tmdbId}. This movie may not exist or may not be discoverable.`,
             hasAnalysis: false,
+            navItems: navItems || [],
+            routeValidation: routeValidation || {},
+            source: 'fallback_placeholder'
           },
-          revalidate: 3600, // 1 hour for TMDB discovery (was 60s)
+          revalidate: 86400, // 24 hour for fallback cases
         };
       }
     }
@@ -1034,9 +1039,26 @@ export async function getStaticProps({ params }) {
     console.error('Debug info:', JSON.stringify(debugInfo, null, 2));
     
     // Return error with full debugging information instead of notFound
+    // Ensure navigation data is included even in error cases
+    let navItems = [], routeValidation = {};
+    try {
+      const routes = await import('../../lib/routes');
+      navItems = routes.navItems || [];
+      routeValidation = routes.routeValidation || {};
+    } catch (routeError) {
+      console.error('Could not load navigation data:', routeError);
+    }
+    
     return { 
       props: { 
+        title: `Movie ${params?.id || 'Unknown'}`,
+        year: new Date().getFullYear(),
+        tmdbId: parseInt(params?.id || '0', 10),
         error: `Static generation failed: ${error.message}`,
+        hasAnalysis: false,
+        navItems,
+        routeValidation,
+        source: 'error_fallback',
         debugInfo,
         stack: error.stack
       } 
@@ -1053,8 +1075,16 @@ export async function getStaticPaths() {
     const nuclearHealth = await diagnoseNuclearStatic();
     console.log('📊 Nuclear static health check:', nuclearHealth);
     
-    // Prebuild key movie paths for testing
-    const keyMovieIds = ['11', '550', '238']; // Star Wars, Fight Club, Godfather
+    // Prebuild key movie paths for testing and common access
+    const keyMovieIds = [
+      '11', '550', '238',      // Star Wars, Fight Club, Godfather  
+      '123', '348', '78',      // LOTR Fellowship, Alien, Blade Runner
+      '120', '121', '122',     // LOTR trilogy
+      '679', '1891', '1892',   // Aliens, Empire Strikes Back, Return of Jedi
+      '13', '155', '62',       // Forrest Gump, Dark Knight, 2001
+      '329', '105', '85',      // Jurassic Park, Back to Future, Raiders
+      '18', '19', '20'         // The Fifth Element, Goodfellas, Matrix
+    ];
     const paths = keyMovieIds.map(id => ({
       params: { id }
     }));
