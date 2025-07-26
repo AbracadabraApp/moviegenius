@@ -5,10 +5,11 @@ import { Clapperboard, Sparkles, User } from 'lucide-react';
 import { shouldShowPhoneFrame } from '../lib/platform';
 import Link from 'next/link';
 
-export default function NavBar({ navItems = [], routeValidation = {} }) {
+export default function NavBar({ navItems = [], routeValidation = {}, isMobile = false }) {
   const router = useRouter();
   const [isClient, setIsClient] = useState(false);
-  const [showFrame, setShowFrame] = useState(true); // Default to desktop frame for SSR consistency
+  const [showFrame, setShowFrame] = useState(true); // Always start with desktop frame
+  
   // Calculate initial active state to prevent flashing
   const getActiveLabel = pathname => {
     try {
@@ -32,7 +33,7 @@ export default function NavBar({ navItems = [], routeValidation = {} }) {
         return false;
       })?.label;
     } catch (error) {
-      console.warn('NavBar: Error determining active state:', error);
+      // Remove console.warn to prevent hydration mismatches
       return null;
     }
   };
@@ -42,10 +43,47 @@ export default function NavBar({ navItems = [], routeValidation = {} }) {
   );
 
   useEffect(() => {
-    // Mark as client-side rendered and detect platform
+    // Set client flag first to prevent hydration mismatch
     setIsClient(true);
+    // Update frame visibility only after client hydration  
     setShowFrame(shouldShowPhoneFrame());
   }, []);
+
+  // During SSR, always render desktop layout to prevent hydration mismatch
+  if (!isClient) {
+    return (
+      <nav style={{...styles.nav, ...styles.navDesktop}}>
+        {navItems.map(item => {
+          try {
+            const Icon = iconMap[item.icon];
+            const isActive = activeLabel === item.label;
+
+            if (!Icon || !item.route || typeof item.route !== 'string') {
+              return null;
+            }
+
+            return (
+              <Link key={item.label} href={item.route} style={{ textDecoration: 'none' }}>
+                <div style={{...styles.navItem, opacity: isActive ? 1 : 0.6, transform: isActive ? 'translateY(-2px)' : 'none'}}>
+                  <Icon size={28} style={{...styles.icon, transform: isActive ? 'scale(1.15)' : 'scale(1)'}} />
+                  <span style={styles.labelContainer}>
+                    <span style={styles.label}>{item.label}</span>
+                    {isActive && <div style={styles.underline} />}
+                  </span>
+                </div>
+              </Link>
+            );
+          } catch (error) {
+            return (
+              <div key={item.label} style={{ ...styles.navItem, opacity: 0.4 }}>
+                <span style={styles.label}>{item.label}</span>
+              </div>
+            );
+          }
+        })}
+      </nav>
+    );
+  }
 
   useEffect(() => {
     // Update active state when route changes
@@ -62,72 +100,13 @@ export default function NavBar({ navItems = [], routeValidation = {} }) {
     User: User,
   };
 
-  // During SSR or before client-side detection, always render desktop layout
-  if (!isClient) {
-    return (
-      <nav
-        style={{
-          ...styles.nav,
-          ...styles.navDesktop,
-        }}
-      >
-        {navItems.map(item => {
-          try {
-            const Icon = iconMap[item.icon];
-            const isActive = activeLabel === item.label;
-
-            if (!Icon) {
-              console.error(`NavBar: Icon ${item.icon} not found in iconMap`);
-              return null;
-            }
-
-            if (!item.route || typeof item.route !== 'string') {
-              console.error(`NavBar: Invalid route for ${item.label}:`, item.route);
-              return null;
-            }
-
-            return (
-              <Link key={item.label} href={item.route} passHref legacyBehavior>
-                <a style={{ textDecoration: 'none' }}>
-                  <div
-                    style={{
-                      ...styles.navItem,
-                      opacity: isActive ? 1 : 0.6,
-                      transform: isActive ? 'translateY(-2px)' : 'none',
-                    }}
-                  >
-                    <Icon
-                      size={28}
-                      style={{
-                        ...styles.icon,
-                        transform: isActive ? 'scale(1.15)' : 'scale(1)',
-                      }}
-                    />
-                    <span style={styles.labelContainer}>
-                      <span style={styles.label}>{item.label}</span>
-                      {isActive && <div style={styles.underline} />}
-                    </span>
-                  </div>
-                </a>
-              </Link>
-            );
-          } catch (error) {
-            console.error(`NavBar: Error rendering nav item ${item.label}:`, error);
-            return (
-              <div key={item.label} style={{ ...styles.navItem, opacity: 0.4 }}>
-                <span style={styles.label}>{item.label}</span>
-              </div>
-            );
-          }
-        })}
-      </nav>
-    );
-  }
-
+  // Always render same DOM structure, use CSS for positioning differences  
+  // This prevents hydration mismatches by keeping DOM identical
   return (
     <nav
       style={{
         ...styles.nav,
+        // Apply mobile/desktop positioning via CSS instead of conditional rendering
         ...(showFrame ? styles.navDesktop : styles.navMobile),
       }}
     >
@@ -138,43 +117,41 @@ export default function NavBar({ navItems = [], routeValidation = {} }) {
 
           // Ensure Icon is valid before rendering
           if (!Icon) {
-            console.error(`NavBar: Icon ${item.icon} not found in iconMap`);
+            // Remove console.error to prevent hydration mismatches
             return null;
           }
 
           // Ensure route is valid
           if (!item.route || typeof item.route !== 'string') {
-            console.error(`NavBar: Invalid route for ${item.label}:`, item.route);
+            // Remove console.error to prevent hydration mismatches
             return null;
           }
 
           return (
-            <Link key={item.label} href={item.route} passHref legacyBehavior>
-              <a style={{ textDecoration: 'none' }}>
-                <div
+            <Link key={item.label} href={item.route} style={{ textDecoration: 'none' }}>
+              <div
+                style={{
+                  ...styles.navItem,
+                  opacity: isActive ? 1 : 0.6,
+                  transform: isActive ? 'translateY(-2px)' : 'none',
+                }}
+              >
+                <Icon
+                  size={28}
                   style={{
-                    ...styles.navItem,
-                    opacity: isActive ? 1 : 0.6,
-                    transform: isActive ? 'translateY(-2px)' : 'none',
+                    ...styles.icon,
+                    transform: isActive ? 'scale(1.15)' : 'scale(1)',
                   }}
-                >
-                  <Icon
-                    size={28}
-                    style={{
-                      ...styles.icon,
-                      transform: isActive ? 'scale(1.15)' : 'scale(1)',
-                    }}
-                  />
-                  <span style={styles.labelContainer}>
-                    <span style={styles.label}>{item.label}</span>
-                    {isActive && <div style={styles.underline} />}
-                  </span>
-                </div>
-              </a>
+                />
+                <span style={styles.labelContainer}>
+                  <span style={styles.label}>{item.label}</span>
+                  {isActive && <div style={styles.underline} />}
+                </span>
+              </div>
             </Link>
           );
         } catch (error) {
-          console.error(`NavBar: Error rendering nav item ${item.label}:`, error);
+          // Remove console.error to prevent hydration mismatches
           // Return fallback nav item without Link
           return (
             <div key={item.label} style={{ ...styles.navItem, opacity: 0.4 }}>

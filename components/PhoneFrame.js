@@ -5,48 +5,53 @@ import { shouldShowPhoneFrame, getPlatformName } from '../lib/platform';
 
 export default function PhoneFrame({ children, navItems, routeValidation }) {
   const [isClient, setIsClient] = useState(false);
-  const [showFrame, setShowFrame] = useState(true); // Default to desktop frame for SSR consistency
+  const [showFrame, setShowFrame] = useState(true); // Always start with desktop frame
   const [platform, setPlatform] = useState('');
 
   useEffect(() => {
-    // Mark as client-side rendered and detect platform
+    // Set client flag first to prevent hydration mismatch
     setIsClient(true);
+    // Update frame visibility only after client hydration
     setShowFrame(shouldShowPhoneFrame());
     setPlatform(getPlatformName());
   }, []);
 
-  // During SSR or before client-side detection, always render desktop layout
-  // This prevents hydration mismatches
+  // During SSR, always render desktop layout to prevent hydration mismatch
   if (!isClient) {
     return (
       <div style={styles.pageContainer}>
         <div style={styles.phoneFrame}>
           <div style={styles.screen}>
             <div style={styles.content}>{children}</div>
-            <NavBar navItems={navItems} routeValidation={routeValidation} />
+            <NavBar navItems={navItems} routeValidation={routeValidation} isMobile={false} />
           </div>
         </div>
       </div>
     );
   }
 
-  // Mobile layout (no frame) - only rendered after client hydration
-  if (!showFrame) {
-    return (
-      <div style={styles.mobileContainer}>
-        <div style={styles.mobileContent}>{children}</div>
-        <NavBar navItems={navItems} routeValidation={routeValidation} />
-      </div>
-    );
-  }
-
-  // Desktop layout (with phone frame)
+  // Always render same DOM structure, use CSS for responsive layout differences
+  // This prevents hydration mismatches by keeping DOM identical
   return (
-    <div style={styles.pageContainer}>
-      <div style={styles.phoneFrame}>
-        <div style={styles.screen}>
-          <div style={styles.content}>{children}</div>
-          <NavBar navItems={navItems} routeValidation={routeValidation} />
+    <div style={{
+      ...styles.pageContainer,
+      // Apply mobile-specific styles via CSS instead of conditional rendering
+      ...(showFrame ? {} : styles.mobileOverrides)
+    }}>
+      <div style={{
+        ...styles.phoneFrame,
+        // Hide frame styling on mobile, keep structure
+        ...(showFrame ? {} : styles.mobileFrameOverrides)
+      }}>
+        <div style={{
+          ...styles.screen,
+          ...(showFrame ? {} : styles.mobileScreenOverrides)
+        }}>
+          <div style={{
+            ...styles.content,
+            ...(showFrame ? {} : styles.mobileContentOverrides)
+          }}>{children}</div>
+          <NavBar navItems={navItems} routeValidation={routeValidation} isMobile={!showFrame} />
         </div>
       </div>
     </div>
@@ -96,25 +101,30 @@ const styles = {
     paddingBottom: '120px', // Space for sticky navbar and content
   },
 
-  // Mobile layout (full screen)
-  mobileContainer: {
-    display: 'flex',
-    flexDirection: 'column',
+  // Mobile overrides - applied via CSS instead of conditional rendering
+  mobileOverrides: {
     minHeight: '100vh',
     width: '100vw',
     backgroundColor: '#000000',
-    overflow: 'hidden',
+    padding: 0,
     paddingTop: 'env(safe-area-inset-top)',
     paddingBottom: 'env(safe-area-inset-bottom)',
     paddingLeft: 'env(safe-area-inset-left)',
     paddingRight: 'env(safe-area-inset-right)',
   },
-  mobileContent: {
-    flex: 1,
-    overflowY: 'scroll',
-    scrollbarWidth: 'none',
-    msOverflowStyle: 'none',
+  mobileFrameOverrides: {
     width: '100%',
-    paddingBottom: '120px', // Space for sticky navbar and content
+    height: '100vh',
+    backgroundColor: '#000000',
+    borderRadius: 0,
+    border: 'none',
+    boxShadow: 'none',
+    padding: 0,
+  },
+  mobileScreenOverrides: {
+    borderRadius: 0,
+  },
+  mobileContentOverrides: {
+    width: '100%',
   },
 };
