@@ -107,8 +107,13 @@ class BuildValidator {
     
     for (const envVar of requiredEnvVars) {
       if (!process.env[envVar]) {
-        this.error(`Missing environment variable: ${envVar}`);
-        missingVars++;
+        // Make TMDB key warning instead of error for Railway builds
+        if (process.env.RAILWAY_ENVIRONMENT_NAME) {
+          this.warn(`Missing environment variable in Railway: ${envVar}`);
+        } else {
+          this.error(`Missing environment variable: ${envVar}`);
+          missingVars++;
+        }
       }
     }
 
