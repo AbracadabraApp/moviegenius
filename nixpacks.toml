@@ -31,7 +31,7 @@ export ANTHROPIC_API_KEY="${ANTHROPIC_API_KEY:-placeholder-anthropic-key}"
 export NODE_OPTIONS="--max-old-space-size=4096"
 
 # Build with verbose output for debugging
-npm run build --verbose
+npm run build
 '''
 
 [start]
