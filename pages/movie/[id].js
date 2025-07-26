@@ -174,6 +174,9 @@ export default function MovieDetailPage({
           </div>
         </div>
         
+        
+        {/* Production Testing Framework */}
+        <script src="/js/production-test-framework.js" async />
       </PhoneFrame>
     );
   }
@@ -580,37 +583,8 @@ const styles = {
 
 // Nuclear capture disabled - happens during build time only
 
-// Nuclear Static Check - check for pre-built static data first
-async function checkNuclearStatic(tmdbId, fs, path) {
-  try {
-    const nuclearPath = path.join(process.cwd(), 'public', 'nuclear-static', `${tmdbId}.json`);
-
-    if (fs.existsSync(nuclearPath)) {
-      console.log(`🚀 Nuclear cache HIT for movie ${tmdbId}`);
-      const staticData = fs.readFileSync(nuclearPath, 'utf8');
-      const data = JSON.parse(staticData);
-
-      // Validate nuclear data structure
-      if (!data.props || typeof data.props !== 'object') {
-        console.log(`⚠️ Invalid nuclear data structure for ${tmdbId}`);
-        return null;
-      }
-
-      // Add nuclear identifier and clean up Next.js internal properties
-      data.props.nuclear = true;
-      data.props.source = 'nuclear_static';
-
-      // Remove Next.js internal properties that can't be returned from getStaticProps
-      delete data.__N_SSG;
-
-      return data;
-    }
-  } catch (error) {
-    console.log(`Nuclear check failed for ${tmdbId}:`, error.message);
-  }
-
-  return null;
-}
+// Import enhanced nuclear static checking
+import { checkNuclearStatic, diagnoseNuclearStatic } from '../../lib/nuclear-static';
 
 // Simplified getStaticProps - most logic moved to services
 export async function getStaticProps({ params }) {
@@ -662,12 +636,41 @@ export async function getStaticProps({ params }) {
   debugInfo.tmdbId = tmdbId;
 
   // 🚀 NUCLEAR STRATEGY: Check for pre-built static data first
-  const fs = await import('fs');
-  const path = await import('path');
-  const nuclearData = await checkNuclearStatic(tmdbId, fs.default, path.default);
+  debugInfo.steps.push('Checking nuclear static data...');
+  const nuclearData = await checkNuclearStatic(tmdbId);
   if (nuclearData) {
+    debugInfo.steps.push('Nuclear static data found - using static content');
     console.log(`⚡ Serving nuclear static data for movie ${tmdbId} in ${Date.now() - startTime}ms`);
-    return nuclearData;
+    
+    // Import routes for NavBar
+    const { navItems, routeValidation } = await import('../../lib/routes');
+    
+    // Return nuclear data in proper Next.js format
+    if (nuclearData.props) {
+      // Nuclear data already has props structure
+      return {
+        ...nuclearData,
+        props: {
+          ...nuclearData.props,
+          navItems,
+          routeValidation,
+          source: 'nuclear_static'
+        }
+      };
+    } else {
+      // Nuclear data is raw movie data
+      return {
+        props: {
+          title: nuclearData.title,
+          year: nuclearData.year,
+          tmdbId: nuclearData.tmdb_id || tmdbId,
+          movieData: nuclearData,
+          navItems,
+          routeValidation,
+          source: 'nuclear_static'
+        }
+      };
+    }
   }
 
   try {
@@ -1041,27 +1044,35 @@ export async function getStaticProps({ params }) {
   }
 }
 
-// Simplified getStaticPaths
+// Enhanced getStaticPaths with diagnostic and prebuild support
 export async function getStaticPaths() {
   try {
-    // Check environment variables
-    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
-      console.error('Missing Supabase environment variables in getStaticPaths');
-      return {
-        paths: [],
-        fallback: 'blocking',
-      };
-    }
-
-    // Skip database paths for now due to Supabase client issues in getStaticPaths
-    // Use fallback: 'blocking' to generate paths on demand
-    console.log('Using fallback blocking for all movie paths');
+    console.log('🚀 getStaticPaths START - generating movie paths');
+    
+    // Diagnose nuclear static directory health
+    const nuclearHealth = await diagnoseNuclearStatic();
+    console.log('📊 Nuclear static health check:', nuclearHealth);
+    
+    // Prebuild key movie paths for testing
+    const keyMovieIds = ['11', '550', '238']; // Star Wars, Fight Club, Godfather
+    const paths = keyMovieIds.map(id => ({
+      params: { id }
+    }));
+    
+    console.log(`📋 getStaticPaths generated ${paths.length} prebuild paths:`, 
+      paths.map(p => `/movie/${p.params.id}`));
+    
     return {
-      paths: [],
-      fallback: 'blocking',
+      paths,
+      fallback: 'blocking', // Generate other paths on demand
     };
   } catch (error) {
-    console.error('Static paths error:', error);
+    console.error('❌ getStaticPaths error:', {
+      error: error.message,
+      stack: error.stack
+    });
+    
+    // Fallback to ISR only
     return {
       paths: [],
       fallback: 'blocking',
