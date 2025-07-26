@@ -10,13 +10,12 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Movie ID is required' });
   }
 
-  const TMDB_KEY = process.env.NEXT_PUBLIC_TMDB_API_KEY || process.env.TMDB_API_KEY;
+  const TMDB_KEY = process.env.NEXT_PUBLIC_TMDB_API_KEY;
 
   if (!TMDB_KEY) {
     return res.status(500).json({
       error: 'TMDB API key not configured',
       env_check: {
-        NEXT_PUBLIC_TMDB_API_KEY: !!process.env.NEXT_PUBLIC_TMDB_API_KEY,
         TMDB_API_KEY: !!process.env.TMDB_API_KEY,
       },
     });
@@ -35,7 +34,28 @@ export default async function handler(req, res) {
     );
 
     if (!response.ok) {
-      throw new Error(`TMDB API returned ${response.status}: ${response.statusText}`);
+      // Try to get error details from response
+      let errorText = 'Unknown error';
+      try {
+        const errorData = await response.json();
+        errorText = errorData.status_message || errorData.error || `HTTP ${response.status}`;
+      } catch (parseError) {
+        // If JSON parsing fails, try to get text
+        try {
+          errorText = await response.text() || `HTTP ${response.status}: ${response.statusText}`;
+        } catch (textError) {
+          errorText = `HTTP ${response.status}: ${response.statusText}`;
+        }
+      }
+      
+      console.error(`❌ TMDB API Error: ${response.status} - ${errorText}`);
+      
+      return res.status(response.status).json({
+        error: `TMDB API Error: ${errorText}`,
+        movie_id: id,
+        status_code: response.status,
+        timestamp: new Date().toISOString(),
+      });
     }
 
     const data = await response.json();
@@ -47,7 +67,7 @@ export default async function handler(req, res) {
     console.error('❌ TMDB movie fetch failed:', error);
 
     return res.status(500).json({
-      error: error.message,
+      error: `Network or parsing error: ${error.message}`,
       movie_id: id,
       timestamp: new Date().toISOString(),
     });
