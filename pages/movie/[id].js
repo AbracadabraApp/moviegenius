@@ -11,7 +11,7 @@ export default function MovieDetailPage() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    if (!id) return;
+    if (!router.isReady || !id) return;
 
     const fetchMovie = async () => {
       try {
@@ -33,7 +33,7 @@ export default function MovieDetailPage() {
     };
 
     fetchMovie();
-  }, [id]);
+  }, [router.isReady, id]);
 
   if (loading) {
     return (
