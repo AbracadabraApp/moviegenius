@@ -7,25 +7,68 @@ export default function MovieDetailPage() {
   const router = useRouter();
   const { id } = router.query;
   const [movie, setMovie] = useState(null);
+  const [streaming, setStreaming] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    if (!router.isReady || !id) return;
+    // Router debugging
+    console.log('🛣️ Router Debug:', {
+      isReady: router.isReady,
+      id: id,
+      pathname: router.pathname,
+      asPath: router.asPath,
+      query: router.query,
+      timestamp: new Date().toISOString()
+    });
+
+    if (!router.isReady || !id) {
+      console.log('⏳ Router not ready or no ID, waiting...', { isReady: router.isReady, id });
+      return;
+    }
+
+    console.log('✅ Router ready, fetching movie data for ID:', id);
 
     const fetchMovie = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`/api/tmdb-movie?id=${id}`);
+        console.log('🎬 Fetching movie data for ID:', id);
         
-        if (!response.ok) {
-          const errorData = await response.json().catch(() => ({}));
-          throw new Error(errorData.error || `Failed to fetch movie: ${response.status}`);
+        // Fetch TMDB data (title, year, overview, poster)
+        const tmdbResponse = await fetch(`/api/tmdb-movie?id=${id}`);
+        console.log('📡 TMDB Response:', { status: tmdbResponse.status, ok: tmdbResponse.ok });
+        
+        if (!tmdbResponse.ok) {
+          const errorData = await tmdbResponse.json().catch(() => ({}));
+          console.error('❌ TMDB Error:', errorData);
+          throw new Error(errorData.error || `Failed to fetch movie: ${tmdbResponse.status}`);
         }
         
-        const data = await response.json();
-        setMovie(data);
+        const tmdbData = await tmdbResponse.json();
+        console.log('✅ TMDB data received:', { 
+          title: tmdbData.title, 
+          year: tmdbData.release_date?.substring(0, 4),
+          id: tmdbData.id,
+          hasPoster: !!tmdbData.poster_path
+        });
+        setMovie(tmdbData);
+        
+        // Fetch streaming data from database
+        console.log('📺 Fetching streaming data for movie ID:', id);
+        const streamingResponse = await fetch(`/api/movie-streaming?id=${id}`);
+        console.log('📡 Streaming Response:', { status: streamingResponse.status, ok: streamingResponse.ok });
+        
+        if (streamingResponse.ok) {
+          const streamingData = await streamingResponse.json();
+          console.log('✅ Streaming data received:', streamingData.streaming_data);
+          setStreaming(streamingData);
+        } else {
+          console.log('⚠️ No streaming data found in database');
+          setStreaming({ streaming_data: null });
+        }
+        
       } catch (err) {
+        console.error('💥 Fetch error:', err.message);
         setError(err.message);
       } finally {
         setLoading(false);
@@ -68,6 +111,15 @@ export default function MovieDetailPage() {
           <h1 style={styles.title}>
             {movie?.title || `Movie: ${id}`} {year && `(${year})`}
           </h1>
+          {movie?.overview && (
+            <p style={styles.overview}>{movie.overview}</p>
+          )}
+          <div style={styles.streamingInfo}>
+            <span style={styles.streamingLabel}>Streaming:</span>
+            <span style={styles.streamingText}>
+              {streaming?.streaming_data || 'Not currently tracked'}
+            </span>
+          </div>
         </div>
       </div>
     </PhoneFrame>
@@ -92,5 +144,26 @@ const styles = {
     fontWeight: '700',
     color: '#374151',
     margin: '0',
+  },
+  overview: {
+    fontSize: '14px',
+    lineHeight: '1.5',
+    color: '#6b7280',
+    margin: '12px 0 0 0',
+  },
+  streamingInfo: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '8px',
+    marginTop: '16px',
+  },
+  streamingLabel: {
+    fontSize: '14px',
+    fontWeight: '600',
+    color: '#374151',
+  },
+  streamingText: {
+    fontSize: '14px',
+    color: '#6b7280',
   },
 };
