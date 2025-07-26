@@ -46,7 +46,7 @@ export default function MovieHeaderLarge({
   // Progressive loading states
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   const [isImageError, setIsImageError] = useState(false);
-  const [showContent, setShowContent] = useState(false);
+  const [showContent, setShowContent] = useState(true); // Always show content to prevent hydration mismatches
   
   // Action bar states
   const [addedToList, setAddedToList] = useState(false);
@@ -82,21 +82,15 @@ export default function MovieHeaderLarge({
       setHearted(FavoritesManager.isMovieHearted(mediaId));
       setBookmarked(FavoritesManager.isMovieBookmarked(mediaId));
     } catch (error) {
-      console.error('Failed to load favorites state:', error);
+      // Remove console.error to prevent hydration mismatches
       // Set safe defaults
       setHearted(false);
       setBookmarked(false);
     }
   }, [mediaId]);
 
-  // Progressive loading: Show content after a brief delay to allow images to load
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowContent(true);
-    }, 300); // Give 300ms for hero image loading (longer than MediaCard)
-    
-    return () => clearTimeout(timer);
-  }, []);
+  // Progressive loading disabled to prevent hydration mismatches
+  // Images will load with opacity transition instead of conditional rendering
 
   // Reset loading state when poster changes
   useEffect(() => {
@@ -278,34 +272,32 @@ export default function MovieHeaderLarge({
       
       {/* Large poster at top, left-aligned */}
       <div style={styles.posterContainer}>
-        {showContent && (
-          <img 
-            src={poster} 
-            alt={`Poster for ${title}`} 
-            style={{
-              ...styles.largePoster,
-              opacity: isImageLoaded ? 1 : 0,
-              transition: 'opacity 0.4s ease-in-out'
-            }}
-            onLoad={() => {
-              setIsImageLoaded(true);
-              setIsImageError(false);
-            }}
-            onError={() => {
-              setIsImageError(true);
-              setIsImageLoaded(false);
-            }}
-            onDoubleClick={() => {
-              setAddedToList(!addedToList);
-              setShowAddedAnimation(true);
-              setTimeout(() => setShowAddedAnimation(false), 1500);
-            }}
-          />
-        )}
+        <img 
+          src={poster} 
+          alt={`Poster for ${title}`} 
+          style={{
+            ...styles.largePoster,
+            opacity: isImageLoaded ? 1 : 0.1, // Start with low opacity instead of hiding
+            transition: 'opacity 0.4s ease-in-out'
+          }}
+          onLoad={() => {
+            setIsImageLoaded(true);
+            setIsImageError(false);
+          }}
+          onError={() => {
+            setIsImageError(true);
+            setIsImageLoaded(false);
+          }}
+          onDoubleClick={() => {
+            setAddedToList(!addedToList);
+            setShowAddedAnimation(true);
+            setTimeout(() => setShowAddedAnimation(false), 1500);
+          }}
+        />
         
         {/* Loading placeholder that shows until image loads */}
-        {showContent && !isImageLoaded && !isImageError && (
-          <div style={styles.headerPlaceholder}>
+        {!isImageLoaded && !isImageError && (
+          <div style={{...styles.headerPlaceholder, opacity: isImageLoaded ? 0 : 1}}>
             <div style={styles.headerLoadingText}>Loading poster...</div>
           </div>
         )}
@@ -318,12 +310,6 @@ export default function MovieHeaderLarge({
           </div>
         )}
         
-        {/* Initial loading state (first 300ms) */}
-        {!showContent && (
-          <div style={styles.headerPlaceholder}>
-            <div style={styles.headerLoadingText}>•••</div>
-          </div>
-        )}
         {showAddedAnimation && (
           <div style={styles.addedAnimation}>
             + added
@@ -333,7 +319,7 @@ export default function MovieHeaderLarge({
       
       {/* Title and year below poster */}
       <div style={styles.titleContainer}>
-        <div style={styles.title}>{title}</div>
+        <h1 style={styles.title}>{title}</h1>
         <div style={styles.year}>({year})</div>
       </div>
       

@@ -1,6 +1,6 @@
 [phases.setup]
 nixPkgs = [
-  'nodejs_22', 
+  'nodejs_20', 
   'npm-9_x',
   # Puppeteer dependencies
   'chromium',

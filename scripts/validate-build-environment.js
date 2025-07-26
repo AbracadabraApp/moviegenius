@@ -17,10 +17,14 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import dotenv from 'dotenv';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const PROJECT_ROOT = path.resolve(__dirname, '..');
+
+// Load environment variables from .env.local
+dotenv.config({ path: path.join(PROJECT_ROOT, '.env.local') });
 
 // Configuration
 const CONFIG = {
@@ -169,6 +173,71 @@ async function validateKeyMovieFiles() {
 }
 
 /**
+ * Test 3.5: Environment Variables Validation
+ */
+async function validateEnvironmentVariables() {
+  const requiredVars = {
+    // Core environment
+    'NODE_ENV': { required: false, description: 'Node environment' },
+    
+    // Database
+    'NEXT_PUBLIC_SUPABASE_URL': { required: true, description: 'Supabase URL' },
+    'NEXT_PUBLIC_SUPABASE_ANON_KEY': { required: true, description: 'Supabase anon key' },
+    'SUPABASE_SERVICE_ROLE_KEY': { required: true, description: 'Supabase service key' },
+    
+    // APIs
+    'NEXT_PUBLIC_TMDB_API_KEY': { required: CONFIG.isProduction, description: 'TMDB API key' },
+    'ANTHROPIC_API_KEY': { required: false, description: 'Anthropic API key' },
+    
+    // Railway specific
+    'RAILWAY_ENVIRONMENT_NAME': { required: false, description: 'Railway environment' },
+    'PORT': { required: false, description: 'Server port' }
+  };
+  
+  const missing = [];
+  const present = [];
+  const details = {};
+  
+  for (const [varName, config] of Object.entries(requiredVars)) {
+    const value = process.env[varName];
+    const isPresent = !!value;
+    
+    details[varName] = {
+      present: isPresent,
+      required: config.required,
+      description: config.description,
+      valueLength: value ? value.length : 0
+    };
+    
+    if (isPresent) {
+      present.push(varName);
+    } else if (config.required) {
+      missing.push(varName);
+    }
+  }
+  
+  const isValid = missing.length === 0;
+  
+  if (isValid) {
+    logResult('passed', 'Environment Variables', `All ${missing.length + present.length} required variables present`, {
+      present: present.length,
+      missing: missing.length,
+      environment: CONFIG.environment,
+      railway: CONFIG.isRailway
+    });
+  } else {
+    logResult('failed', 'Environment Variables', `${missing.length} required variables missing`, {
+      missing,
+      present: present.length,
+      details,
+      solution: `Set missing variables: ${missing.join(', ')}`
+    });
+  }
+  
+  return isValid;
+}
+
+/**
  * Test 4: Railway Environment Compatibility
  */
 async function validateRailwayCompatibility() {
@@ -287,12 +356,17 @@ async function validateBuildPrerequisites() {
     prerequisites.push({ check: 'Package.json', passed: false, error: error.message });
   }
   
-  // Check next.config.js
+  // Check next.config.js or next.config.mjs
   try {
-    await fs.access(path.join(PROJECT_ROOT, 'next.config.js'));
+    await fs.access(path.join(PROJECT_ROOT, 'next.config.mjs'));
     prerequisites.push({ check: 'Next.js config', passed: true });
-  } catch (error) {
-    prerequisites.push({ check: 'Next.js config', passed: false, issue: 'next.config.js not found' });
+  } catch {
+    try {
+      await fs.access(path.join(PROJECT_ROOT, 'next.config.js'));
+      prerequisites.push({ check: 'Next.js config', passed: true });
+    } catch (error) {
+      prerequisites.push({ check: 'Next.js config', passed: false, issue: 'next.config.js or next.config.mjs not found' });
+    }
   }
   
   const failedPrereqs = prerequisites.filter(p => !p.passed);
@@ -318,6 +392,7 @@ async function runAllValidations() {
     { name: 'Nuclear Directory', fn: validateNuclearDirectory },
     { name: 'File Duplication', fn: detectFileDuplication },
     { name: 'Key Movie Files', fn: validateKeyMovieFiles },
+    { name: 'Environment Variables', fn: validateEnvironmentVariables },
     { name: 'Railway Compatibility', fn: validateRailwayCompatibility },
     { name: 'File Permissions', fn: validateFilePermissions },
     { name: 'Build Prerequisites', fn: validateBuildPrerequisites }

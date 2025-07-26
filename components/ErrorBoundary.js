@@ -26,10 +26,8 @@ class ErrorBoundary extends React.Component {
       errorInfo: errorInfo
     });
 
-    // Defensive logging - check if console exists
-    if (typeof window !== 'undefined' && window.console) {
-      console.error('ErrorBoundary caught an error:', error, errorInfo);
-    }
+    // Remove console logging to prevent hydration mismatches
+    // Error is tracked in state for development display
 
     // Future: Add monitoring service integration
     // if (process.env.NODE_ENV === 'production') {
