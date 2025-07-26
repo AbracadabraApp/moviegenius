@@ -1057,16 +1057,22 @@ export async function getStaticPaths() {
   try {
     console.log('🚀 getStaticPaths START - Step 1: Single movie path generation');
     
-    // Step 1: ONLY pre-generate Star Wars (movie 11) to test Railway deployment
+    // Pre-generate common movie IDs to avoid 404s
     const paths = [
-      { params: { id: '11' } } // Star Wars - single movie test
+      { params: { id: '11' } },    // Star Wars
+      { params: { id: '550' } },   // Fight Club  
+      { params: { id: '157336' } }, // Interstellar
+      { params: { id: '348' } },   // Alien
+      { params: { id: '78' } },    // Blade Runner
+      { params: { id: '120' } },   // The Lord of the Rings
+      { params: { id: '329' } },   // Jurassic Park
     ];
     
-    console.log(`📋 Step 1: Pre-generating single movie path: /movie/11`);
+    console.log(`📋 Pre-generating ${paths.length} movie paths`);
     
     return {
       paths,
-      fallback: 'blocking', // Allow ISR for all movie pages
+      fallback: false, // Keep false but add more pre-generated paths
     };
   } catch (error) {
     console.error('❌ getStaticPaths Step 1 error:', {
@@ -1074,10 +1080,10 @@ export async function getStaticPaths() {
       stack: error.stack
     });
     
-    // Minimal fallback for Step 1
+    // Minimal fallback on error
     return {
       paths: [{ params: { id: '11' } }],
-      fallback: 'blocking', // Allow ISR even on error
+      fallback: false, // Keep consistent with main path
     };
   }
 }
