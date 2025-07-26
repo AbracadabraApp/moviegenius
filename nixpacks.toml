@@ -47,8 +47,11 @@ export ANTHROPIC_API_KEY="${ANTHROPIC_API_KEY:-placeholder-anthropic-key}"
 # Increase Node.js memory limit for large builds
 export NODE_OPTIONS="--max-old-space-size=4096"
 
-# Build with verbose output for debugging
-npm run build
+# Disable Puppeteer download during build
+export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+
+# Build with error output
+npm run build 2>&1 || (echo "Build failed:" && cat .next/trace || echo "No trace available" && exit 1)
 '''
 
 [start]
