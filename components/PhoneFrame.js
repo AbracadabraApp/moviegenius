@@ -4,16 +4,33 @@ import NavBar from './NavBar';
 import { shouldShowPhoneFrame, getPlatformName } from '../lib/platform';
 
 export default function PhoneFrame({ children, navItems, routeValidation }) {
+  const [isClient, setIsClient] = useState(false);
   const [showFrame, setShowFrame] = useState(true); // Default to desktop frame for SSR consistency
   const [platform, setPlatform] = useState('');
 
   useEffect(() => {
-    // Client-side detection
+    // Mark as client-side rendered and detect platform
+    setIsClient(true);
     setShowFrame(shouldShowPhoneFrame());
     setPlatform(getPlatformName());
   }, []);
 
-  // Mobile layout (no frame)
+  // During SSR or before client-side detection, always render desktop layout
+  // This prevents hydration mismatches
+  if (!isClient) {
+    return (
+      <div style={styles.pageContainer}>
+        <div style={styles.phoneFrame}>
+          <div style={styles.screen}>
+            <div style={styles.content}>{children}</div>
+            <NavBar navItems={navItems} routeValidation={routeValidation} />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Mobile layout (no frame) - only rendered after client hydration
   if (!showFrame) {
     return (
       <div style={styles.mobileContainer}>
