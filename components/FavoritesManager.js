@@ -206,6 +206,10 @@ export const FavoritesManager = {
 
   // Clear all hearted movies
   clearHeartedMovies: () => {
+    // SSR guard - skip on server
+    if (typeof window === 'undefined') {
+      return;
+    }
     localStorage.removeItem('heartedMovies');
     FavoritesManager._cache.hearted = [];
     window.dispatchEvent(new CustomEvent('moviesUpdated'));
@@ -213,6 +217,10 @@ export const FavoritesManager = {
 
   // Clear all bookmarked movies
   clearBookmarkedMovies: () => {
+    // SSR guard - skip on server
+    if (typeof window === 'undefined') {
+      return;
+    }
     localStorage.removeItem('bookmarkedMovies');
     FavoritesManager._cache.bookmarked = [];
     window.dispatchEvent(new CustomEvent('moviesUpdated'));
@@ -220,6 +228,10 @@ export const FavoritesManager = {
 
   // Clear all favorites data
   clearAllFavorites: () => {
+    // SSR guard - skip on server
+    if (typeof window === 'undefined') {
+      return;
+    }
     localStorage.removeItem('heartedMovies');
     localStorage.removeItem('bookmarkedMovies');
     localStorage.removeItem('heartedPeople');
@@ -380,6 +392,10 @@ export const FavoritesManager = {
 
   // Clear all hearted people
   clearHeartedPeople: () => {
+    // SSR guard - skip on server
+    if (typeof window === 'undefined') {
+      return;
+    }
     localStorage.removeItem('heartedPeople');
     FavoritesManager._cache.peopleHearted = [];
     window.dispatchEvent(new CustomEvent('peopleUpdated'));
@@ -387,6 +403,10 @@ export const FavoritesManager = {
 
   // Clear all bookmarked people
   clearBookmarkedPeople: () => {
+    // SSR guard - skip on server
+    if (typeof window === 'undefined') {
+      return;
+    }
     localStorage.removeItem('bookmarkedPeople');
     FavoritesManager._cache.peopleBookmarked = [];
     window.dispatchEvent(new CustomEvent('peopleUpdated'));
