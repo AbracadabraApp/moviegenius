@@ -1,0 +1,4 @@
+# Railway Cache Clear Trigger
+# Cache clear initiated at: 2025-07-25 17:25:00
+# Purpose: Force Railway to rebuild with fresh nuclear-static files
+# Expected: Nuclear static diagnostics should show proper filesystem access
