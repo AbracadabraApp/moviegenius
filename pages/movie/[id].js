@@ -642,8 +642,10 @@ export async function getStaticProps({ params }) {
 
   // 🚀 NUCLEAR STRATEGY: Check for pre-built static data first
   debugInfo.steps.push('Checking nuclear static data...');
+  console.log(`🚀 ATTEMPTING nuclear static check for movie ${tmdbId}`);
   const { checkNuclearStatic } = await import('../../lib/nuclear-static');
   const nuclearData = await checkNuclearStatic(tmdbId);
+  console.log(`🚀 NUCLEAR RESULT for movie ${tmdbId}:`, !!nuclearData);
   if (nuclearData) {
     debugInfo.steps.push('Nuclear static data found - using static content');
     console.log(`⚡ Serving nuclear static data for movie ${tmdbId} in ${Date.now() - startTime}ms`);
@@ -655,7 +657,13 @@ export async function getStaticProps({ params }) {
     const props = {
       title: nuclearData.title,
       year: nuclearData.year,
+      initialSlug: nuclearData.overview, // Use overview as slug fallback
+      initialPoster: nuclearData.posterPath 
+        ? `https://image.tmdb.org/t/p/w500${nuclearData.posterPath}`
+        : '/images/placeholder-poster.jpg',
+      initialStreaming: null, // Nuclear data doesn't have streaming info
       tmdbId: nuclearData.tmdbId || nuclearData.tmdb_id || tmdbId,
+      hasAnalysis: !!nuclearData.sections, // Check if analysis exists in nuclear data
       movieData: nuclearData,
       navItems,
       source: 'nuclear_static'
