@@ -1,0 +1,65 @@
+# Dependencies
+node_modules
+npm-debug.log*
+
+# Next.js build output
+.next
+out
+
+# Environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs
+
+# Testing
+coverage
+test-reports
+__tests__
+
+# Development tools
+dev-tools
+
+# Cache directories
+.cache
+.npm
+.eslintcache
+
+# Temporary files
+tmp
+temp
+.tmp
+
+# Documentation (optional - include if needed)
+docs
+*.md
+!README.md
+
+# Railway specific
+railway.json
+nixpacks.toml
+
+# Backup files
+*.backup
+*.bak
+.git-backups
