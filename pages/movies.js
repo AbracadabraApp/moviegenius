@@ -1,13 +1,14 @@
-// pages/movies.js - Minimal text display test page
+// pages/movies.js - Minimal text display test page with navbar
 import PhoneFrame from '../components/PhoneFrame';
 import { useRouter } from 'next/router';
+import { navItems, routeValidation } from '../lib/routes';
 
 export default function MoviesPage() {
   const router = useRouter();
   const { text } = router.query;
   
   return (
-    <PhoneFrame>
+    <PhoneFrame navItems={navItems} routeValidation={routeValidation}>
       <div style={styles.container}>
         <div style={styles.header}>
           <h1 style={styles.title}>
