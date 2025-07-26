@@ -104,6 +104,7 @@ export default function EpisodePage({ theme, episode, episodeData, themeData }) 
                   'noirs-legacy': '6-noirs-legacy.jpg',
                 };
                 const imageName = heroImageMap[episode];
+                // Correct path: /images/hero/theme-1-noir/series-1-classic/ (includes /hero/)
                 return imageName ? `/images/hero/theme-1-noir/series-1-classic/${imageName}` : null;
               })();
 
