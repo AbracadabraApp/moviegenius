@@ -57,10 +57,16 @@ async function ensureNuclearStaticFiles() {
   }
   
   // Production build without nuclear files - skip generation to avoid build failures
-  if (process.env.NODE_ENV === 'production' || process.env.VERCEL || process.env.RAILWAY_ENVIRONMENT) {
+  if (process.env.NODE_ENV === 'production' || process.env.VERCEL || process.env.RAILWAY_ENVIRONMENT_NAME) {
     console.log('🚀 Production build detected - nuclear static files missing');
     console.log('🔄 Pages will fallback to dynamic generation (SSR)');
     console.log('💡 Nuclear static files can be generated post-deployment via API');
+    
+    // Create empty nuclear directory if it doesn't exist to prevent build errors
+    if (!fs.existsSync(nuclearDir)) {
+      fs.mkdirSync(nuclearDir, { recursive: true });
+      console.log('📁 Created empty nuclear-static directory for build compatibility');
+    }
     
     return;
   }
