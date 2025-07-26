@@ -177,6 +177,7 @@ export default function MovieDetailPage({
         
         {/* Production Testing Framework */}
         <script src="/js/prod-movie-test-framework.js" async />
+        <script src="/js/404-monitor.js" async />
       </PhoneFrame>
     );
   }
