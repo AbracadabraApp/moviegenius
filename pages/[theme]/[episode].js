@@ -105,6 +105,7 @@ export default function EpisodePage({ theme, episode, episodeData, themeData }) 
                 };
                 const imageName = heroImageMap[episode];
                 // Correct path: /images/hero/theme-1-noir/series-1-classic/ (includes /hero/)
+                // Note: Workaround images also exist at /images/theme-1-noir/series-1-classic/ for build compatibility
                 return imageName ? `/images/hero/theme-1-noir/series-1-classic/${imageName}` : null;
               })();
 
