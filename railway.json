@@ -2,7 +2,7 @@
   "build": {
     "builder": "nixpacks",
     "buildCommand": "npm run build",
-    "watchPatterns": ["nuclear-static/**", "public/**", "pages/**", "components/**", "lib/**"]
+    "watchPatterns": ["nuclear-static/**", "scripts/**", "pages/**", "components/**", "lib/**", "package.json"]
   },
   "deploy": {
     "healthcheckPath": "/api/health",
