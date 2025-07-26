@@ -48,7 +48,6 @@ export default function MovieDetailPage({
   movieData: staticMovieData,
   source,
   navItems,
-  routeValidation,
 }) {
   const router = useRouter();
   const { id } = router.query;
@@ -90,7 +89,10 @@ export default function MovieDetailPage({
 
   // Navigation scroll reset - always scroll to top on page load
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // Only access window on client-side to prevent hydration issues
+    if (typeof window !== 'undefined') {
+      window.scrollTo(0, 0);
+    }
   }, [id]); // Reset whenever the movie ID changes
 
   // Nuclear capture disabled on client-side - happens during build time instead
@@ -108,14 +110,17 @@ export default function MovieDetailPage({
         setBookmarked(FavoritesManager.isMovieBookmarked(mediaId));
       };
 
-      window.addEventListener('moviesUpdated', handleMoviesUpdate);
-      return () => window.removeEventListener('moviesUpdated', handleMoviesUpdate);
+      // Only access window on client-side to prevent hydration issues
+      if (typeof window !== 'undefined') {
+        window.addEventListener('moviesUpdated', handleMoviesUpdate);
+        return () => window.removeEventListener('moviesUpdated', handleMoviesUpdate);
+      }
     }
   }, [title, year]);
 
   if (error) {
     return (
-      <PhoneFrame navItems={navItems} routeValidation={routeValidation}>
+      <PhoneFrame navItems={navItems}>
         <div style={styles.container}>
           <div style={styles.header}>
             <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
@@ -175,9 +180,9 @@ export default function MovieDetailPage({
         </div>
         
         
-        {/* Production Testing Framework */}
-        <script src="/js/prod-movie-test-framework.js" async />
-        <script src="/js/404-monitor.js" async />
+        {/* Production Testing Framework - DISABLED for Step 0 debugging */}
+        {/* <script src="/js/prod-movie-test-framework.js" async /> */}
+        {/* <script src="/js/404-monitor.js" async /> */}
       </PhoneFrame>
     );
   }
@@ -188,7 +193,7 @@ export default function MovieDetailPage({
   // Note: Console.log statements removed from render to prevent hydration mismatches
 
   return (
-    <PhoneFrame navItems={navItems} routeValidation={routeValidation}>
+    <PhoneFrame navItems={navItems}>
       <style jsx global>{`
         .movie-title {
           color: #2563eb;
@@ -584,8 +589,7 @@ const styles = {
 
 // Nuclear capture disabled - happens during build time only
 
-// Import enhanced nuclear static checking
-import { checkNuclearStatic, diagnoseNuclearStatic } from '../../lib/nuclear-static';
+// Nuclear static imports moved to getStaticProps to prevent client-side bundle issues
 
 // Simplified getStaticProps - most logic moved to services
 export async function getStaticProps({ params }) {
@@ -638,40 +642,26 @@ export async function getStaticProps({ params }) {
 
   // 🚀 NUCLEAR STRATEGY: Check for pre-built static data first
   debugInfo.steps.push('Checking nuclear static data...');
+  const { checkNuclearStatic } = await import('../../lib/nuclear-static');
   const nuclearData = await checkNuclearStatic(tmdbId);
   if (nuclearData) {
     debugInfo.steps.push('Nuclear static data found - using static content');
     console.log(`⚡ Serving nuclear static data for movie ${tmdbId} in ${Date.now() - startTime}ms`);
     
     // Import routes for NavBar
-    const { navItems, routeValidation } = await import('../../lib/routes');
+    const { navItems } = await import('../../lib/routes');
     
     // Return nuclear data in proper Next.js format
-    if (nuclearData.props) {
-      // Nuclear data already has props structure
-      return {
-        ...nuclearData,
-        props: {
-          ...nuclearData.props,
-          navItems,
-          routeValidation,
-          source: 'nuclear_static'
-        }
-      };
-    } else {
-      // Nuclear data is raw movie data
-      return {
-        props: {
-          title: nuclearData.title,
-          year: nuclearData.year,
-          tmdbId: nuclearData.tmdb_id || tmdbId,
-          movieData: nuclearData,
-          navItems,
-          routeValidation,
-          source: 'nuclear_static'
-        }
-      };
-    }
+    return {
+      props: {
+        title: nuclearData.title,
+        year: nuclearData.year,
+        tmdbId: nuclearData.tmdbId || nuclearData.tmdb_id || tmdbId,
+        movieData: nuclearData,
+        navItems,
+        source: 'nuclear_static'
+      }
+    };
   }
 
   try {
@@ -864,7 +854,7 @@ export async function getStaticProps({ params }) {
         );
 
         // Add navigation data to prevent client-side require
-        const { navItems, routeValidation } = await import('../../lib/routes');
+        const { navItems } = await import('../../lib/routes');
 
         // Build response with analysis if available
         const response = {
@@ -881,7 +871,6 @@ export async function getStaticProps({ params }) {
             hasAnalysis: false, // Will be updated if analysis exists
             source: 'tmdb_discovery',
             navItems: navItems || [],
-            routeValidation: routeValidation || {},
             // Note: overview intentionally omitted to prevent TMDB summary contamination
           },
           revalidate: 3600, // ISR for TMDB discoveries - 1 hour (was 60s)
@@ -930,7 +919,7 @@ export async function getStaticProps({ params }) {
         console.error('TMDB discovery failed:', tmdbError);
 
         // Fallback to placeholder data - avoid 404s, provide user-friendly message
-        const { navItems, routeValidation } = await import('../../lib/routes');
+        const { navItems } = await import('../../lib/routes');
         
         return {
           props: {
@@ -943,7 +932,6 @@ export async function getStaticProps({ params }) {
             error: `Movie information currently unavailable for TMDB ID ${tmdbId}. This movie may not exist or may not be discoverable.`,
             hasAnalysis: false,
             navItems: navItems || [],
-            routeValidation: routeValidation || {},
             source: 'fallback_placeholder'
           },
           revalidate: 86400, // 24 hour for fallback cases
@@ -952,7 +940,7 @@ export async function getStaticProps({ params }) {
     }
 
     // Add navigation data to prevent client-side require
-    const { navItems, routeValidation } = await import('../../lib/routes');
+    const { navItems } = await import('../../lib/routes');
 
     // Base response
     const response = {
@@ -966,7 +954,6 @@ export async function getStaticProps({ params }) {
         error: null,
         hasAnalysis: false, // Will be set to true if analysis exists
         navItems: navItems || [],
-        routeValidation: routeValidation || {},
       },
     };
 
@@ -1041,11 +1028,10 @@ export async function getStaticProps({ params }) {
     
     // Return error with full debugging information instead of notFound
     // Ensure navigation data is included even in error cases
-    let navItems = [], routeValidation = {};
+    let navItems = [];
     try {
       const routes = await import('../../lib/routes');
       navItems = routes.navItems || [];
-      routeValidation = routes.routeValidation || {};
     } catch (routeError) {
       console.error('Could not load navigation data:', routeError);
     }
@@ -1058,7 +1044,6 @@ export async function getStaticProps({ params }) {
         error: `Static generation failed: ${error.message}`,
         hasAnalysis: false,
         navItems,
-        routeValidation,
         source: 'error_fallback',
         debugInfo,
         stack: error.stack
@@ -1067,46 +1052,32 @@ export async function getStaticProps({ params }) {
   }
 }
 
-// Enhanced getStaticPaths with diagnostic and prebuild support
+// Step 1: Fixed getStaticPaths - Railway-compatible (fallback: false for single movie)
 export async function getStaticPaths() {
   try {
-    console.log('🚀 getStaticPaths START - generating movie paths');
+    console.log('🚀 getStaticPaths START - Step 1: Single movie path generation');
     
-    // Diagnose nuclear static directory health
-    const nuclearHealth = await diagnoseNuclearStatic();
-    console.log('📊 Nuclear static health check:', nuclearHealth);
-    
-    // Prebuild key movie paths for testing and common access
-    const keyMovieIds = [
-      '11', '550', '238',      // Star Wars, Fight Club, Godfather  
-      '123', '348', '78',      // LOTR Fellowship, Alien, Blade Runner
-      '120', '121', '122',     // LOTR trilogy
-      '679', '1891', '1892',   // Aliens, Empire Strikes Back, Return of Jedi
-      '13', '155', '62',       // Forrest Gump, Dark Knight, 2001
-      '329', '105', '85',      // Jurassic Park, Back to Future, Raiders
-      '18', '19', '20'         // The Fifth Element, Goodfellas, Matrix
+    // Step 1: ONLY pre-generate Star Wars (movie 11) to test Railway deployment
+    const paths = [
+      { params: { id: '11' } } // Star Wars - single movie test
     ];
-    const paths = keyMovieIds.map(id => ({
-      params: { id }
-    }));
     
-    console.log(`📋 getStaticPaths generated ${paths.length} prebuild paths:`, 
-      paths.map(p => `/movie/${p.params.id}`));
+    console.log(`📋 Step 1: Pre-generating single movie path: /movie/11`);
     
     return {
       paths,
-      fallback: 'blocking', // Generate other paths on demand
+      fallback: 'blocking', // Allow ISR for all movie pages
     };
   } catch (error) {
-    console.error('❌ getStaticPaths error:', {
+    console.error('❌ getStaticPaths Step 1 error:', {
       error: error.message,
       stack: error.stack
     });
     
-    // Fallback to ISR only
+    // Minimal fallback for Step 1
     return {
-      paths: [],
-      fallback: 'blocking',
+      paths: [{ params: { id: '11' } }],
+      fallback: 'blocking', // Allow ISR even on error
     };
   }
 }
