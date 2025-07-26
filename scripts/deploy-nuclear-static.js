@@ -14,6 +14,29 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const PROJECT_ROOT = path.resolve(__dirname, '..');
 
+async function deployToPublicDirectory(nuclearDir) {
+  const publicTargetDir = path.join(PROJECT_ROOT, 'public', 'static', 'nuclear-data');
+  
+  // Ensure public target directory exists
+  if (!fs.existsSync(publicTargetDir)) {
+    fs.mkdirSync(publicTargetDir, { recursive: true });
+  }
+  
+  // Copy nuclear static files to public directory for HTTP serving
+  const files = fs.readdirSync(nuclearDir);
+  const jsonFiles = files.filter(f => f.endsWith('.json'));
+  
+  console.log(`📁 Copying ${jsonFiles.length} nuclear static files to public directory...`);
+  
+  for (const file of jsonFiles) {
+    const sourcePath = path.join(nuclearDir, file);
+    const targetPath = path.join(publicTargetDir, file);
+    fs.copyFileSync(sourcePath, targetPath);
+  }
+  
+  console.log(`✅ Nuclear static files deployed to /static/nuclear-data/`);
+}
+
 async function ensureNuclearStaticFiles() {
   const nuclearDir = path.join(PROJECT_ROOT, 'nuclear-static');
   
@@ -27,20 +50,17 @@ async function ensureNuclearStaticFiles() {
   const files = fs.readdirSync(nuclearDir);
   const jsonFiles = files.filter(f => f.endsWith('.json'));
   
-  if (jsonFiles.length > 100) {
-    console.log(`✅ Found ${jsonFiles.length} nuclear static files, ready for production`);
+  if (jsonFiles.length > 0) {
+    console.log(`✅ Found ${jsonFiles.length} nuclear static files, deploying for production`);
+    await deployToPublicDirectory(nuclearDir);
     return;
   }
   
-  // Production build without nuclear files - attempt to generate them
+  // Production build without nuclear files - skip generation to avoid build failures
   if (process.env.NODE_ENV === 'production' || process.env.VERCEL || process.env.RAILWAY_ENVIRONMENT) {
-    console.log('🚀 Production build detected - attempting nuclear static generation');
-    
-    console.log('🚀 Nuclear Batch Processing');
-    console.log('Options: { count: 100, start: 1, end: null, dryRun: false, maxConcurrency: 2 }');
-    console.log('⚠️ Nuclear static generation failed: generateEssentialNuclearFiles is not a function');
-    console.log('🔄 Pages will fallback to dynamic generation');
-    console.log('❌ No nuclear candidates found');
+    console.log('🚀 Production build detected - nuclear static files missing');
+    console.log('🔄 Pages will fallback to dynamic generation (SSR)');
+    console.log('💡 Nuclear static files can be generated post-deployment via API');
     
     return;
   }

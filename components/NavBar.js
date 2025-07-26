@@ -10,10 +10,20 @@ export default function NavBar({ navItems = [], routeValidation = {}, isMobile =
   const [isClient, setIsClient] = useState(false);
   const [showFrame, setShowFrame] = useState(true); // Always start with desktop frame
   
-  // Calculate initial active state to prevent flashing
+  // Calculate initial active state to prevent flashing - enhanced safety
   const getActiveLabel = pathname => {
     try {
-      return navItems.find(item => {
+      // Safety checks for edge cases
+      if (!pathname || typeof pathname !== 'string' || !Array.isArray(navItems)) {
+        return null;
+      }
+      
+      const activeItem = navItems.find(item => {
+        // Ensure item has required properties
+        if (!item || !item.route || typeof item.route !== 'string') {
+          return false;
+        }
+        
         if (item.route === pathname) return true;
         // Movies active for /movie/[id] and /search pages
         if (
@@ -31,9 +41,11 @@ export default function NavBar({ navItems = [], routeValidation = {}, isMobile =
           return routeValidation.shouldShowGeniusActive ? routeValidation.shouldShowGeniusActive(pathname) : false;
         }
         return false;
-      })?.label;
+      });
+      
+      return activeItem?.label || null;
     } catch (error) {
-      // Remove console.warn to prevent hydration mismatches
+      // Silently handle errors to prevent hydration mismatches
       return null;
     }
   };
@@ -42,6 +54,8 @@ export default function NavBar({ navItems = [], routeValidation = {}, isMobile =
     getActiveLabel(router.asPath || router.pathname)
   );
 
+  // HOOK ORDER FIX: Move ALL useEffect hooks before any early returns
+  // First useEffect: Client detection and frame setup
   useEffect(() => {
     // Set client flag first to prevent hydration mismatch
     setIsClient(true);
@@ -49,7 +63,23 @@ export default function NavBar({ navItems = [], routeValidation = {}, isMobile =
     setShowFrame(shouldShowPhoneFrame());
   }, []);
 
-  // During SSR, always render desktop layout to prevent hydration mismatch
+  // Second useEffect: Route change handling (now always called)
+  useEffect(() => {
+    // Conditional logic INSIDE the hook instead of conditional hook execution
+    if (router.isReady) {
+      const newActiveLabel = getActiveLabel(router.asPath || router.pathname);
+      setActiveLabel(newActiveLabel);
+    }
+  }, [router.isReady, router.asPath, router.pathname]);
+
+  // Icon mapping for nav items (moved before early return)
+  const iconMap = {
+    Clapperboard: Clapperboard,
+    Sparkles: Sparkles,
+    User: User,
+  };
+
+  // Early return AFTER all hooks to prevent hook order violations
   if (!isClient) {
     return (
       <nav style={{...styles.nav, ...styles.navDesktop}}>
@@ -84,21 +114,6 @@ export default function NavBar({ navItems = [], routeValidation = {}, isMobile =
       </nav>
     );
   }
-
-  useEffect(() => {
-    // Update active state when route changes
-    if (router.isReady) {
-      const newActiveLabel = getActiveLabel(router.asPath || router.pathname);
-      setActiveLabel(newActiveLabel);
-    }
-  }, [router.isReady, router.asPath, router.pathname]);
-
-  // Icon mapping for nav items
-  const iconMap = {
-    Clapperboard: Clapperboard,
-    Sparkles: Sparkles,
-    User: User,
-  };
 
   // Always render same DOM structure, use CSS for positioning differences  
   // This prevents hydration mismatches by keeping DOM identical

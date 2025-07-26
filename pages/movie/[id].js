@@ -652,16 +652,24 @@ export async function getStaticProps({ params }) {
     const { navItems } = await import('../../lib/routes');
     
     // Return nuclear data in proper Next.js format
-    return {
-      props: {
-        title: nuclearData.title,
-        year: nuclearData.year,
-        tmdbId: nuclearData.tmdbId || nuclearData.tmdb_id || tmdbId,
-        movieData: nuclearData,
-        navItems,
-        source: 'nuclear_static'
-      }
+    const props = {
+      title: nuclearData.title,
+      year: nuclearData.year,
+      tmdbId: nuclearData.tmdbId || nuclearData.tmdb_id || tmdbId,
+      movieData: nuclearData,
+      navItems,
+      source: 'nuclear_static'
     };
+    
+    console.log(`📊 PROPS DEBUG - Nuclear static props for ${tmdbId}:`, {
+      title: props.title,
+      year: props.year,
+      tmdbId: props.tmdbId,
+      hasMovieData: !!props.movieData,
+      source: props.source
+    });
+    
+    return { props };
   }
 
   try {
@@ -1016,6 +1024,16 @@ export async function getStaticProps({ params }) {
     
     // Add debug info to successful response
     response.props.debugInfo = debugInfo;
+    
+    console.log(`📊 PROPS DEBUG - Final props for ${tmdbId}:`, {
+      title: response.props.title,
+      year: response.props.year,
+      tmdbId: response.props.tmdbId,
+      hasMovieData: !!response.props.movieData,
+      hasAnalysis: response.props.hasAnalysis,
+      source: response.props.source || 'database'
+    });
+    
     return response;
   } catch (error) {
     debugInfo.errors.push(`FATAL ERROR: ${error.message}`);

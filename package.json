@@ -3,15 +3,19 @@
   "version": "1.0.3",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "clean": "rm -rf .next && rm -rf node_modules/.cache",
     "fix:cache": "rm -rf .next && npm run dev",
     "fix:cache:deep": "rm -rf .next && rm -rf node_modules/.cache && npm run dev",
     "fix:cache:nuclear": "rm -rf .next && rm -rf node_modules && npm install && npm run dev",
-    "dev": "next dev",
+    "dev": "next dev --turbo",
+    "dev:fast": "NEXT_TELEMETRY_DISABLED=1 next dev --turbo",
     "validate:build-env": "node scripts/validate-build-environment.js",
     "validate-build": "node scripts/validate-build.js",
-    "build": "npm run validate-build && npm run validate:build-env && node scripts/deploy-nuclear-static.js && NODE_OPTIONS='--max-old-space-size=4096' next build",
+    "build": "npm run validate-build && npm run validate:build-env && node scripts/deploy-nuclear-static.js && NODE_OPTIONS='--max-old-space-size=4096' next build --debug",
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
@@ -72,6 +76,8 @@
     "test:nuclear-performance": "jest nuclear-performance-validation.test.js",
     "test:nuclear-production": "jest nuclear-production-reality.test.js",
     "test:nuclear-build": "jest nuclear-build-process.test.js",
+    "test:production-404": "jest tests/production-404-validation.test.js --testTimeout=60000",
+    "test:production-full": "node scripts/test-production-404-fixes.js",
     "build:nuclear-static": "echo 'Nuclear static build not implemented yet - run tests to validate requirements'",
     "validate:nuclear-static": "npm run test:nuclear",
     "deploy:nuclear-static": "echo 'Deploy process not implemented - ensure all tests pass first'"
