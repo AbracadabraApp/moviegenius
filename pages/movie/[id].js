@@ -103,10 +103,24 @@ export default function MovieDetailPage() {
   }
 
   const year = movie?.release_date ? new Date(movie.release_date).getFullYear() : '';
+  const posterUrl = movie?.poster_path 
+    ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+    : '/images/placeholder-poster.jpg';
 
   return (
     <PhoneFrame>
       <div style={styles.container}>
+        {/* Movie Poster */}
+        {movie?.poster_path && (
+          <div style={styles.posterContainer}>
+            <img 
+              src={posterUrl}
+              alt={`${movie.title} poster`}
+              style={styles.poster}
+            />
+          </div>
+        )}
+        
         <div style={styles.header}>
           <h1 style={styles.title}>
             {movie?.title || `Movie: ${id}`} {year && `(${year})`}
@@ -134,6 +148,19 @@ const styles = {
     fontFamily:
       '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     backgroundColor: '#f9fafb',
+  },
+  posterContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    padding: '16px',
+    backgroundColor: '#ffffff',
+  },
+  poster: {
+    width: '200px',
+    height: '300px',
+    objectFit: 'cover',
+    borderRadius: '8px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
   },
   header: {
     backgroundColor: '#ffffff',
