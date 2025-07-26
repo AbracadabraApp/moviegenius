@@ -1,6 +1,7 @@
 [build]
 builder = "nixpacks"
 buildCommand = "npm run build"
+watchPatterns = ["nuclear-static/**/*.json", "pages/**", "lib/**", "scripts/**", "package.json", "next.config.js"]
 
 [deploy]
 startCommand = "npm start"
