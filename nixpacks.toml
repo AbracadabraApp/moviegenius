@@ -1,12 +1,29 @@
 [phases.setup]
 nixPkgs = [
   'nodejs_20', 
-  'npm-9_x'
+  'npm-9_x',
+  'chromium',
+  'nss',
+  'freetype',
+  'harfbuzz',
+  'ca-certificates',
+  'ttf-freefont'
 ]
 
-# Minimal apt packages - only essential ones
+# Required apt packages for Puppeteer and Next.js build
 aptPkgs = [
-  'ca-certificates'
+  'ca-certificates',
+  'fonts-liberation',
+  'libxss1',
+  'libgconf-2-4',
+  'libxtst6',
+  'libxrandr2',
+  'libasound2',
+  'libpangocairo-1.0-0',
+  'libatk1.0-0',
+  'libcairo-gobject2',
+  'libgtk-3-0',
+  'libgdk-pixbuf2.0-0'
 ]
 
 [phases.install]

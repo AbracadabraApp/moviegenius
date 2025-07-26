@@ -1088,7 +1088,7 @@ export async function getStaticPaths() {
     
     return {
       paths,
-      fallback: false, // Keep false but add more pre-generated paths
+      fallback: 'blocking', // Enable SSR for non-pregenerated routes
     };
   } catch (error) {
     console.error('❌ getStaticPaths Step 1 error:', {
@@ -1099,7 +1099,7 @@ export async function getStaticPaths() {
     // Minimal fallback on error
     return {
       paths: [{ params: { id: '11' } }],
-      fallback: false, // Keep consistent with main path
+      fallback: 'blocking', // Enable SSR for non-pregenerated routes
     };
   }
 }
