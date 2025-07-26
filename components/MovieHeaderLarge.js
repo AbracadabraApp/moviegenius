@@ -38,6 +38,16 @@ export default function MovieHeaderLarge({
   initialStreaming,
   tmdbId 
 }) {
+  // Debug logging
+  console.log('🎬 MovieHeaderLarge props:', {
+    title,
+    year,
+    initialSlug,
+    initialPoster,
+    initialStreaming,
+    tmdbId
+  });
+
   const [hearted, setHearted] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
   const [slug, setSlug] = useState(initialSlug || '');
@@ -47,6 +57,7 @@ export default function MovieHeaderLarge({
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   const [isImageError, setIsImageError] = useState(false);
   const [showContent, setShowContent] = useState(true); // Always show content to prevent hydration mismatches
+  const [isHydrated, setIsHydrated] = useState(false);
   
   // Action bar states
   const [addedToList, setAddedToList] = useState(false);
@@ -63,12 +74,27 @@ export default function MovieHeaderLarge({
   // Movie data object for FavoritesManager
   const movieData = { title, year, slug, poster, id: mediaId };
 
+  // Hydration delay - the 300ms fix!
+  useEffect(() => {
+    const hydrationDelay = setTimeout(() => {
+      setIsHydrated(true);
+      console.log('🔄 Hydration delay complete - enabling poster loading');
+    }, 300);
+    
+    return () => clearTimeout(hydrationDelay);
+  }, []);
+
   // Update state when props change (navigation between movies)
   useEffect(() => {
-    if (initialPoster) {
+    if (initialPoster && isHydrated) {
+      console.log('📸 Setting poster after hydration:', initialPoster);
       setPoster(initialPoster);
+      // Force image to show immediately - bypass onLoad event issues
+      setIsImageLoaded(true);
+      setIsImageError(false);
+      console.log('🖼️ Forcing poster display (bypassing onLoad)');
     }
-  }, [initialPoster]);
+  }, [initialPoster, isHydrated]);
 
   useEffect(() => {
     if (initialSlug) {
@@ -92,11 +118,13 @@ export default function MovieHeaderLarge({
   // Progressive loading disabled to prevent hydration mismatches
   // Images will load with opacity transition instead of conditional rendering
 
-  // Reset loading state when poster changes
+  // Reset loading state when poster changes - simplified
   useEffect(() => {
-    setIsImageLoaded(false);
-    setIsImageError(false);
-  }, [poster]);
+    if (poster !== initialPoster) {
+      setIsImageLoaded(false);
+      setIsImageError(false);
+    }
+  }, [poster, initialPoster]);
 
   // Listen for favorites updates from other components
   useEffect(() => {
@@ -277,14 +305,16 @@ export default function MovieHeaderLarge({
           alt={`Poster for ${title}`} 
           style={{
             ...styles.largePoster,
-            opacity: isImageLoaded ? 1 : 0.1, // Start with low opacity instead of hiding
-            transition: 'opacity 0.4s ease-in-out'
+            opacity: isImageLoaded ? 1 : 0.3, // Higher starting opacity for better visibility
+            transition: 'opacity 0.2s ease-in-out'
           }}
           onLoad={() => {
+            console.log('🖼️ Image onLoad fired for:', poster);
             setIsImageLoaded(true);
             setIsImageError(false);
           }}
           onError={() => {
+            console.log('❌ Image onError fired for:', poster);
             setIsImageError(true);
             setIsImageLoaded(false);
           }}
