@@ -4,6 +4,7 @@ import SimpleSearch from '../components/SimpleSearch';
 import MediaCard from '../components/MediaCard';
 import CategoryBrowse from '../components/CategoryBrowse';
 import ErrorBoundary from '../components/ErrorBoundary';
+import { navItems, routeValidation } from '../lib/routes';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 
@@ -33,7 +34,7 @@ export default function MoviesPage() {
   };
 
   return (
-    <PhoneFrame>
+    <PhoneFrame navItems={navItems} routeValidation={routeValidation}>
       <div style={styles.container}>
         {/* Simple search header */}
         <div style={styles.header}>
