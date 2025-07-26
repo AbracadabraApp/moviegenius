@@ -16,7 +16,7 @@ export default function MovieDetailPage() {
     const fetchMovie = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.NEXT_PUBLIC_TMDB_API_KEY}`);
+        const response = await fetch(`/api/tmdb-movie?id=${id}`);
         
         if (!response.ok) {
           throw new Error(`Failed to fetch movie: ${response.status}`);
