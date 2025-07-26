@@ -2,6 +2,7 @@
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import PhoneFrame from '../../components/PhoneFrame';
+import MovieHeaderLarge from '../../components/MovieHeaderLarge';
 
 export default function MovieDetailPage() {
   const router = useRouter();
@@ -60,15 +61,20 @@ export default function MovieDetailPage() {
   }
 
   const year = movie?.release_date ? new Date(movie.release_date).getFullYear() : '';
+  const posterUrl = movie?.poster_path 
+    ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+    : '/images/placeholder-poster.jpg';
 
   return (
     <PhoneFrame>
       <div style={styles.container}>
-        <div style={styles.header}>
-          <h1 style={styles.title}>
-            {movie?.title || `Movie: ${id}`} {year && `(${year})`}
-          </h1>
-        </div>
+        <MovieHeaderLarge
+          title={movie?.title || `Movie: ${id}`}
+          year={year}
+          initialSlug={movie?.overview}
+          initialPoster={posterUrl}
+          tmdbId={movie?.id}
+        />
       </div>
     </PhoneFrame>
   );
