@@ -1,12 +1,18 @@
-// pages/movies.js - Minimal test page - zero routing
+// pages/movies.js - Minimal text display test page
 import PhoneFrame from '../components/PhoneFrame';
+import { useRouter } from 'next/router';
 
 export default function MoviesPage() {
+  const router = useRouter();
+  const { text } = router.query;
+  
   return (
     <PhoneFrame>
       <div style={styles.container}>
         <div style={styles.header}>
-          <h1 style={styles.title}>Movies</h1>
+          <h1 style={styles.title}>
+            {text || 'Movies'}
+          </h1>
         </div>
       </div>
     </PhoneFrame>
