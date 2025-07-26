@@ -15,7 +15,7 @@
     "dev:fast": "NEXT_TELEMETRY_DISABLED=1 next dev --turbo",
     "validate:build-env": "node scripts/validate-build-environment.js",
     "validate-build": "node scripts/validate-build.js",
-    "build": "npm run validate-build && npm run validate:build-env && node scripts/deploy-nuclear-static.js && NODE_OPTIONS='--max-old-space-size=4096' next build --debug",
+    "build": "next build --debug",
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
