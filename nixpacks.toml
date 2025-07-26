@@ -1,28 +1,12 @@
 [phases.setup]
 nixPkgs = [
   'nodejs_20', 
-  'npm-9_x',
-  # Puppeteer dependencies
-  'chromium',
-  'nss',
-  'freetype',
-  'harfbuzz',
-  'ca-certificates',
-  'ttf-freefont'
+  'npm-9_x'
 ]
 
+# Minimal apt packages - only essential ones
 aptPkgs = [
-  'fonts-liberation',
-  'libxss1',
-  'libgconf-2-4',
-  'libxtst6',
-  'libxrandr2',
-  'libasound2',
-  'libpangocairo-1.0-0',
-  'libatk1.0-0',
-  'libcairo-gobject2',
-  'libgtk-3-0',
-  'libgdk-pixbuf2.0-0'
+  'ca-certificates'
 ]
 
 [phases.install]
@@ -42,10 +26,6 @@ export NEXT_PUBLIC_SUPABASE_ANON_KEY="${NEXT_PUBLIC_SUPABASE_ANON_KEY:-placehold
 export SUPABASE_SERVICE_ROLE_KEY="${SUPABASE_SERVICE_ROLE_KEY:-placeholder-service-key}"
 export NEXT_PUBLIC_TMDB_API_KEY="${NEXT_PUBLIC_TMDB_API_KEY:-placeholder-tmdb-key}"
 export ANTHROPIC_API_KEY="${ANTHROPIC_API_KEY:-placeholder-anthropic-key}"
-
-# Puppeteer configuration
-export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
-export PUPPETEER_EXECUTABLE_PATH=/nix/store/*/bin/chromium
 
 # Increase Node.js memory limit for large builds
 export NODE_OPTIONS="--max-old-space-size=4096"
