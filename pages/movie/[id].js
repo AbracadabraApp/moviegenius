@@ -1057,15 +1057,13 @@ export async function getStaticPaths() {
   try {
     console.log('🚀 getStaticPaths START - Step 1: Single movie path generation');
     
-    // Pre-generate common movie IDs to avoid 404s
+    // Pre-generate movie IDs that have nuclear static files
     const paths = [
       { params: { id: '11' } },    // Star Wars
       { params: { id: '550' } },   // Fight Club  
-      { params: { id: '157336' } }, // Interstellar
-      { params: { id: '348' } },   // Alien
+      { params: { id: '238' } },   // The Godfather
       { params: { id: '78' } },    // Blade Runner
-      { params: { id: '120' } },   // The Lord of the Rings
-      { params: { id: '329' } },   // Jurassic Park
+      { params: { id: '155' } },   // The Dark Knight
     ];
     
     console.log(`📋 Pre-generating ${paths.length} movie paths`);

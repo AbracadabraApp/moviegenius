@@ -55,7 +55,7 @@ class BuildValidator {
       });
 
       // Validate key movie files exist
-      const keyMovieIds = ['11', '550', '238', '348', '78', '120'];
+      const keyMovieIds = ['11', '550', '238', '78', '155'];
       let missingFiles = 0;
       
       for (const movieId of keyMovieIds) {
