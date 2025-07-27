@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import PhoneFrame from '../../components/PhoneFrame';
 import MovieHeaderLarge from '../../components/MovieHeaderLarge';
 import SimpleSearch from '../../components/SimpleSearch';
+import DiscoveryFooter from '../../components/DiscoveryFooter';
 
 export default function MovieDetailPage() {
   const router = useRouter();
@@ -104,6 +105,9 @@ export default function MovieDetailPage() {
           initialStreaming={streaming?.streaming_data}
           tmdbId={parseInt(id)}
         />
+
+        {/* Discovery Footer */}
+        <DiscoveryFooter />
       </div>
     </PhoneFrame>
   );
