@@ -11,11 +11,13 @@ export default function MovieDetailPage() {
   const router = useRouter();
   const { id } = router.query;
   
+  // Feature flag for page-level loading (can be enabled later if needed)
+  const ENABLE_PAGE_LOADING = false;
+  
   // API data state
   const [movie, setMovie] = useState(null);
   const [streaming, setStreaming] = useState(null);
   const [analysis, setAnalysis] = useState(null);
-  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   // API data fetching
@@ -26,8 +28,6 @@ export default function MovieDetailPage() {
 
     const fetchMovie = async () => {
       try {
-        setLoading(true);
-        
         // Fetch TMDB data
         const tmdbResponse = await fetch(`/api/tmdb-movie?id=${id}`);
         if (!tmdbResponse.ok) {
@@ -52,14 +52,17 @@ export default function MovieDetailPage() {
         if (analysisResponse.ok) {
           const analysisData = await analysisResponse.json();
           // Format analysis data for MovieAnalysisWithEntities component
+          
           const formattedAnalysis = {
             claude_response: {
               raw_content: analysisData.analysis || analysisData.rawAnalysis
             },
-            entity_linking_data: analysisData.movieData ? {
-              entityData: analysisData.movieData,
+            entity_linking_data: (analysisData.entityData || analysisData.movieData) ? {
+              entityData: analysisData.entityData || analysisData.movieData,
               processedAt: new Date().toISOString()
-            } : null
+            } : null,
+            // Also include the movie data directly for easier access
+            entityData: analysisData.entityData || analysisData.movieData
           };
           setAnalysis(formattedAnalysis);
         } else {
@@ -68,21 +71,11 @@ export default function MovieDetailPage() {
         
       } catch (err) {
         setError(err.message);
-      } finally {
-        setLoading(false);
       }
     };
 
     fetchMovie();
   }, [router.isReady, id]);
-
-  if (loading) {
-    return (
-      <PhoneFrame>
-        <div>Loading...</div>
-      </PhoneFrame>
-    );
-  }
 
   if (error) {
     return (
@@ -92,7 +85,27 @@ export default function MovieDetailPage() {
     );
   }
 
-  if (!movie) return null;
+  // Always render the frame - let components handle their own loading
+  if (!movie && !error) {
+    return (
+      <PhoneFrame>
+        <div style={{ backgroundColor: '#ffffff', minHeight: '100%' }}>
+          {/* Simple Search Bar */}
+          <div style={{ padding: '16px 16px 8px 16px' }}>
+            <SimpleSearch
+              onResults={() => {}}
+              placeholder="Search movies..."
+              useUnifiedSearch={true}
+            />
+          </div>
+          <div style={{ padding: '16px', textAlign: 'center', color: '#666' }}>
+            {router.isReady && id ? 'Loading movie data...' : 'Initializing...'}
+          </div>
+          <DiscoveryFooter />
+        </div>
+      </PhoneFrame>
+    );
+  }
 
   const year = movie?.release_date ? new Date(movie.release_date).getFullYear() : '';
   const posterUrl = movie?.poster_path 
