@@ -47,27 +47,27 @@ export default function MediaCard({
   const [bookmarked, setBookmarked] = useState(false);
   const performanceMonitor = getPerformanceMonitor();
   
-  // Track MediaCard render start
-  useEffect(() => {
-    const renderStart = performance.now();
-    performanceMonitor.trackMetric('mediacard_render_start', renderStart, {
-      title,
-      year,
-      hasSlug: !!initialSlug,
-      hasPoster: !!initialPoster,
-      tmdbId
-    });
-    
-    return () => {
-      // Track render completion on unmount
-      const renderEnd = performance.now();
-      performanceMonitor.trackMetric('mediacard_render_complete', renderEnd, {
-        title,
-        year,
-        renderDuration: renderEnd - renderStart
-      });
-    };
-  }, [title, year]);
+  // Performance tracking disabled for stability
+  // useEffect(() => {
+  //   const renderStart = performance.now();
+  //   performanceMonitor.trackMetric('mediacard_render_start', renderStart, {
+  //     title,
+  //     year,
+  //     hasSlug: !!initialSlug,
+  //     hasPoster: !!initialPoster,
+  //     tmdbId
+  //   });
+  //   
+  //   return () => {
+  //     // Track render completion on unmount
+  //     const renderEnd = performance.now();
+  //     performanceMonitor.trackMetric('mediacard_render_complete', renderEnd, {
+  //       title,
+  //       year,
+  //       renderDuration: renderEnd - renderStart
+  //     });
+  //   };
+  // }, [title, year]);
   // 🔒 LOCKED: TMDB plot summary protection - only use valid Claude slugs
   const isValidClaudeSlug =
     initialSlug &&
