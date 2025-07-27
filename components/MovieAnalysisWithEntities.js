@@ -6,6 +6,8 @@
 
 import { useState, useEffect } from 'react';
 import EntityLinkedText from './EntityLinkedText';
+import MediaCard from './MediaCard';
+import ExplorePromptCard from './ExplorePromptCard';
 
 export default function MovieAnalysisWithEntities({
   analysis,
@@ -36,10 +38,41 @@ export default function MovieAnalysisWithEntities({
       const entityData = analysis.entity_linking_data;
 
       if (entityData) {
+        // Convert entity data to the format expected by MediaCards
+        const entities = entityData.entityData || entityData;
+        
+        // Handle both old entity format and new movieData format
+        let featuredMovies = [];
+        
+        if (entities.featuredMovies) {
+          // New movieData format: featuredMovies array with direct properties
+          featuredMovies = entities.featuredMovies.map(movie => ({
+            title: movie.title,
+            year: movie.year,
+            slug: movie.slug,
+            poster_url: movie.poster_url,
+            streaming: movie.streaming,
+            tmdb_id: movie.tmdb_id
+          })).filter(movie => movie.title && movie.year);
+        } else if (entities.movies) {
+          // Old entity format: movies array with nested movie objects
+          featuredMovies = entities.movies.map(movie => ({
+            title: movie.movie?.title || movie.title,
+            year: movie.movie?.year || movie.year,
+            slug: movie.movie?.slug,
+            poster_url: movie.movie?.poster_url,
+            streaming: movie.movie?.streaming_data,
+            tmdb_id: movie.movie?.tmdb_id
+          })).filter(movie => movie.title && movie.year);
+        }
+
         // Use pre-processed entities
         setProcessedAnalysis({
           content: content,
-          entities: entityData.entityData,
+          entities: {
+            ...entities,
+            featuredMovies: featuredMovies
+          },
           processedAt: entityData.processedAt,
         });
 
@@ -68,37 +101,118 @@ export default function MovieAnalysisWithEntities({
     }
   };
 
-  const parseAnalysisContent = content => {
-    // Parse Claude's structured analysis format
-    const sections = {
-      paragraphs: [],
-      movies: [],
-      exploreTopics: [],
-      moreIdeas: [],
-    };
-
+  const parseModernAnalysisContent = content => {
+    // Parse modern analysis format into strict alternating sections
+    // FIXED: Proper boundary detection to prevent content mixing
     const lines = content.split('\n').filter(line => line.trim());
-    const currentSection = 'paragraphs';
-
+    const alternatingContent = [];
+    const exploreTopics = [];
+    const moreIdeasMovies = [];
+    
+    let currentTextSection = '';
+    let currentMovieGroup = [];
+    let collectingMoreIdeas = false;
+    
+    // Helper function to flush pending content with clean boundaries
+    const flushPendingContent = () => {
+      if (currentTextSection.trim()) {
+        alternatingContent.push({ type: 'text', content: currentTextSection.trim() });
+        currentTextSection = '';
+      }
+      if (currentMovieGroup.length > 0) {
+        alternatingContent.push({ type: 'movies', movies: [...currentMovieGroup] });
+        currentMovieGroup = [];
+      }
+    };
+    
     for (const line of lines) {
-      if (line.startsWith('PARAGRAPH:')) {
-        sections.paragraphs.push(line.replace('PARAGRAPH:', '').trim());
-      } else if (line.startsWith('MOVIES:')) {
-        const movieData = line.replace('MOVIES:', '').trim();
-        if (movieData) {
-          sections.movies.push(movieData);
+      const trimmed = line.trim();
+      if (!trimmed) continue;
+      
+      if (trimmed.startsWith('MOVIES:') && !collectingMoreIdeas) {
+        // FLUSH TEXT FIRST: Respect natural alternating order
+        if (currentTextSection.trim()) {
+          alternatingContent.push({ type: 'text', content: currentTextSection.trim() });
+          currentTextSection = '';
         }
-      } else if (line.startsWith('EXPLORE_FURTHER:')) {
-        sections.exploreTopics.push(line.replace('EXPLORE_FURTHER:', '').trim());
-      } else if (line.startsWith('MORE_IDEAS:')) {
-        sections.moreIdeas.push(line.replace('MORE_IDEAS:', '').trim());
-      } else if (line.trim() && !line.includes(':')) {
-        // Plain paragraph
-        sections.paragraphs.push(line.trim());
+        
+        // Parse movie data - CLEAN BOUNDARY: only extract pipe-separated data
+        const movieData = trimmed.replace('MOVIES:', '').trim();
+        const [title, year, description, streaming] = movieData.split('|').map(s => s?.trim());
+        
+        if (title && year) {
+          currentMovieGroup.push({
+            title,
+            year: parseInt(year),
+            slug: description || null, // ONLY the pipe-separated description
+            streaming: streaming || null, // ONLY the pipe-separated streaming
+            tmdb_id: null // Will be enhanced if entityData exists
+          });
+        }
+      } else if (trimmed.startsWith('SUBHEAD:')) {
+        // CLEAN BOUNDARY: Flush all pending content before SUBHEAD
+        flushPendingContent();
+        
+        // Add SUBHEAD as separate section
+        alternatingContent.push({ 
+          type: 'subhead', 
+          content: trimmed.replace('SUBHEAD:', '').trim() 
+        });
+      } else if (trimmed.startsWith('EXPLORE_FURTHER:')) {
+        exploreTopics.push(trimmed.replace('EXPLORE_FURTHER:', '').trim());
+      } else if (trimmed.startsWith('MORE_IDEAS:')) {
+        collectingMoreIdeas = true;
+        // CLEAN BOUNDARY: Flush all pending content before MORE_IDEAS
+        flushPendingContent();
+        
+        // Parse MORE_IDEAS movie - handle both formats
+        const movieData = trimmed.replace('MORE_IDEAS:', '').trim();
+        if (movieData) {
+          const [title, year, description, streaming] = movieData.split('|').map(s => s?.trim());
+          
+          if (title && year) {
+            moreIdeasMovies.push({
+              title,
+              year: parseInt(year),
+              slug: description || null,
+              streaming: streaming || null,
+              tmdb_id: null
+            });
+          }
+        }
+      } else if (collectingMoreIdeas && !trimmed.includes(':')) {
+        // Parse MORE_IDEAS continuation lines
+        const [title, year, description, streaming] = trimmed.split('|').map(s => s?.trim());
+        
+        if (title && year) {
+          moreIdeasMovies.push({
+            title,
+            year: parseInt(year),
+            slug: description || null,
+            streaming: streaming || null,
+            tmdb_id: null
+          });
+        }
+      } else if (!collectingMoreIdeas && !trimmed.includes(':')) {
+        // CLEAN BOUNDARY: Flush movies before adding text, keep text separate
+        if (currentMovieGroup.length > 0) {
+          alternatingContent.push({ type: 'movies', movies: [...currentMovieGroup] });
+          currentMovieGroup = [];
+        }
+        
+        // Regular text content - STRICT BOUNDARY: only paragraph text here
+        currentTextSection += (currentTextSection ? '\n' : '') + trimmed;
       }
     }
-
-    return sections;
+    
+    // CLEAN BOUNDARY: Final flush with proper separation
+    flushPendingContent();
+    
+    return {
+      alternatingContent,
+      exploreTopics,
+      moreIdeasMovies
+    };
   };
 
   if (isLoading) {
@@ -119,16 +233,43 @@ export default function MovieAnalysisWithEntities({
     );
   }
 
-  const sections = parseAnalysisContent(processedAnalysis.content);
+  const { alternatingContent, exploreTopics, moreIdeasMovies } = parseModernAnalysisContent(processedAnalysis.content);
 
-  return (
-    <div style={styles.container}>
-      {/* Main Analysis Content */}
-      <div style={styles.analysisContent}>
-        {sections.paragraphs.map((paragraph, index) => (
-          <div key={index} style={styles.paragraph}>
+  // Enhance parsed movies with entityData if available
+  const enhanceMovieData = (parsedMovie) => {
+    if (processedAnalysis.entities?.featuredMovies) {
+      // Find matching enhanced movie data
+      const enhanced = processedAnalysis.entities.featuredMovies.find(
+        enhanced => enhanced.title.toLowerCase() === parsedMovie.title.toLowerCase() && 
+        enhanced.year === parsedMovie.year
+      );
+      if (enhanced) {
+        return {
+          ...parsedMovie,
+          poster_url: enhanced.poster_url,
+          tmdb_id: enhanced.tmdb_id,
+          streaming: enhanced.streaming || parsedMovie.streaming
+        };
+      }
+    }
+    return {
+      ...parsedMovie,
+      poster_url: '/images/placeholder-poster.jpg'
+    };
+  };
+
+  // Render the complete alternating layout
+  const renderAlternatingContent = () => {
+    const content = [];
+    let exploreIndex = 0;
+    
+    alternatingContent.forEach((section, sectionIndex) => {
+      if (section.type === 'text') {
+        // Text content
+        content.push(
+          <div key={`text-${sectionIndex}`} style={styles.paragraph}>
             <EntityLinkedText
-              text={paragraph}
+              text={section.content}
               linkingIntensity={linkingIntensity}
               context="movie-analysis"
               currentEntity={{
@@ -138,60 +279,140 @@ export default function MovieAnalysisWithEntities({
               }}
             />
           </div>
-        ))}
-      </div>
-
-      {/* Movie References */}
-      {sections.movies.length > 0 && (
-        <div className="movie-references mt-6">
-          <h3 className="text-lg font-semibold mb-3 text-gray-900">Referenced Films</h3>
-          <div className="space-y-2">
-            {sections.movies.map((movieRef, index) => {
-              const [title, year, description] = movieRef.split('|');
-              return (
-                <div key={index} className="movie-reference p-3 bg-gray-50 rounded-lg">
-                  <EntityLinkedText
-                    text={`${title} (${year})`}
-                    linkingIntensity={linkingIntensity}
-                    context="movie-reference"
-                  />
-                  {description && (
-                    <EntityLinkedText
-                      text={description}
-                      linkingIntensity="conservative"
-                      context="movie-description"
-                    />
-                  )}
-                </div>
-              );
-            })}
+        );
+      } else if (section.type === 'subhead') {
+        // SUBHEAD section with gold all-caps styling
+        content.push(
+          <div key={`subhead-${sectionIndex}`} style={styles.subheadSection}>
+            <h3 style={styles.subheadText}>{section.content}</h3>
           </div>
-        </div>
-      )}
-
-      {/* Exploration Topics */}
-      {sections.exploreTopics.length > 0 && (
-        <div style={styles.exploreSection}>
+        );
+      } else if (section.type === 'movies') {
+        // FEATURED FILMS section - filter out self-referential movies
+        const enhancedMovies = section.movies
+          .map(enhanceMovieData)
+          .filter(movieItem => {
+            // Remove self-referential movies (case-insensitive comparison)
+            const currentTitle = movie?.title?.toLowerCase().trim();
+            const movieTitle = movieItem.title?.toLowerCase().trim();
+            return currentTitle && movieTitle && currentTitle !== movieTitle;
+          });
+        
+        // Only render section if there are movies to show after filtering
+        if (enhancedMovies.length > 0) {
+          content.push(
+            <div key={`movies-${sectionIndex}`} style={styles.movieSection}>
+              <div style={styles.movieSectionHeader}>
+                <div style={styles.sectionDivider} />
+                <span style={styles.sectionLabel}>FEATURED FILMS</span>
+                <div style={styles.sectionDivider} />
+              </div>
+              <div style={styles.movieList}>
+                {enhancedMovies.map((movieItem, movieIndex) => (
+                  <MediaCard
+                    key={`featured-${sectionIndex}-${movieIndex}`}
+                    title={movieItem.title}
+                    year={movieItem.year}
+                    initialSlug={movieItem.slug}
+                    initialPoster={movieItem.poster_url}
+                    initialStreaming={movieItem.streaming}
+                    tmdbId={movieItem.tmdb_id}
+                  />
+                ))}
+              </div>
+            </div>
+          );
+        }
+        
+        // Add single EXPLORE FURTHER card after FEATURED FILMS
+        if (exploreIndex < exploreTopics.length) {
+          content.push(
+            <div key={`explore-${sectionIndex}`} style={styles.exploreSection}>
+              <div style={styles.sectionHeader}>
+                <div style={styles.sectionDivider} />
+                <span style={styles.sectionLabel}>EXPLORE FURTHER</span>
+                <div style={styles.sectionDivider} />
+              </div>
+              <ExplorePromptCard 
+                prompt={exploreTopics[exploreIndex]}
+                contextPrefix={movie?.title}
+              />
+            </div>
+          );
+          exploreIndex++;
+        }
+      }
+    });
+    
+    // Add remaining EXPLORE FURTHER cards if any
+    if (exploreIndex < exploreTopics.length) {
+      content.push(
+        <div key="remaining-explore" style={styles.exploreSection}>
           <div style={styles.sectionHeader}>
             <div style={styles.sectionDivider} />
             <span style={styles.sectionLabel}>EXPLORE FURTHER</span>
             <div style={styles.sectionDivider} />
           </div>
           <div style={styles.exploreGrid}>
-            {sections.exploreTopics.map((topic, index) => (
-              <div key={index} style={styles.exploreTopic}>
-                <div style={styles.exploreText}>
-                  <EntityLinkedText
-                    text={topic}
-                    linkingIntensity="conservative"
-                    context="exploration-topic"
-                  />
-                </div>
-              </div>
+            {exploreTopics.slice(exploreIndex).map((topic, index) => (
+              <ExplorePromptCard 
+                key={`remaining-${index}`}
+                prompt={topic}
+                contextPrefix={movie?.title}
+              />
             ))}
           </div>
         </div>
-      )}
+      );
+    }
+    
+    // Add MORE IDEAS section - filter out self-referential movies
+    if (moreIdeasMovies.length > 0) {
+      const enhancedMoreIdeas = moreIdeasMovies
+        .map(enhanceMovieData)
+        .filter(movieItem => {
+          // Remove self-referential movies (case-insensitive comparison)
+          const currentTitle = movie?.title?.toLowerCase().trim();
+          const movieTitle = movieItem.title?.toLowerCase().trim();
+          return currentTitle && movieTitle && currentTitle !== movieTitle;
+        });
+      
+      // Only render section if there are movies to show after filtering
+      if (enhancedMoreIdeas.length > 0) {
+        content.push(
+          <div key="more-ideas" style={styles.movieSection}>
+            <div style={styles.movieSectionHeader}>
+              <div style={styles.sectionDivider} />
+              <span style={styles.sectionLabel}>MORE IDEAS</span>
+              <div style={styles.sectionDivider} />
+            </div>
+            <div style={styles.movieList}>
+              {enhancedMoreIdeas.map((movieItem, movieIndex) => (
+                <MediaCard
+                  key={`more-ideas-${movieIndex}`}
+                  title={movieItem.title}
+                  year={movieItem.year}
+                  initialSlug={movieItem.slug}
+                  initialPoster={movieItem.poster_url}
+                  initialStreaming={movieItem.streaming}
+                  tmdbId={movieItem.tmdb_id}
+                />
+              ))}
+            </div>
+          </div>
+        );
+      }
+    }
+    
+    return content;
+  };
+
+  return (
+    <div style={styles.container}>
+      {/* Modern Alternating Layout: Text -> Featured Films -> Explore Further -> Repeat */}
+      <div style={styles.analysisContent}>
+        {renderAlternatingContent()}
+      </div>
 
       {/* Entity Statistics (Debug/Admin View) */}
       {entityStats && process.env.NODE_ENV === 'development' && (
@@ -275,8 +496,36 @@ const styles = {
     lineHeight: '1.5',
     color: '#6b7280',
   },
+  movieSection: {
+    marginTop: '16px',
+    marginBottom: '16px',
+  },
+  movieSectionHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '16px',
+    marginBottom: '12px',
+  },
+  movieList: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '8px',
+  },
   exploreSection: {
     marginTop: '32px',
+  },
+  subheadSection: {
+    marginTop: '24px',
+    marginBottom: '16px',
+  },
+  subheadText: {
+    fontSize: '14px',
+    fontWeight: '700',
+    textTransform: 'uppercase',
+    letterSpacing: '1px',
+    color: '#d4af37',
+    margin: 0,
+    textAlign: 'left',
   },
   exploreGrid: {
     display: 'grid',

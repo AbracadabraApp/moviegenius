@@ -10,6 +10,8 @@ import { useRouter } from 'next/router';
 
 const DiscoveryFooter = ({ title = 'Browse by Category', compact = false, style = {} }) => {
   const router = useRouter();
+  
+  console.log('DiscoveryFooter rendering...', { title, compact });
 
   const handleCategoryClick = categorySlug => {
     router.push(`/search?category=${categorySlug}`);

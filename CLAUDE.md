@@ -80,3 +80,28 @@ This reverts commit [hash].
 - ✅ "Revert automatic slug generation from movie creation"
 - ❌ "Fix hydration issues - should resolve 404s"  
 - ✅ "Remove console.log statements from JSX components"
+
+### Coding Philosophy
+- slow down and think about what you are doing - respect the code.
+
+### MovieAnalysisWithEntities Component Structure
+
+- Comprehensive component layout for movie analysis page
+- Key sections include:
+  1. Simple Search Bar at the top
+  2. MovieHeaderLarge component with:
+    - Movie title
+    - Year
+    - Movie overview (as initialSlug)
+    - Poster image
+    - Streaming data
+    - TMDB ID
+  3. MovieAnalysisWithEntities main content structure:
+    - Alternating pattern of content:
+      * Text paragraphs
+      * FEATURED FILMS + MediaCards
+      * EXPLORE FURTHER + single card
+      * Repeating pattern
+      * Final EXPLORE FURTHER + remaining cards
+      * MORE IDEAS + related films
+  4. DiscoveryFooter at the bottom

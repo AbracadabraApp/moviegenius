@@ -108,22 +108,87 @@ async function movieAnalysisHandler(req, res) {
           };
         }
 
-        // Check database cache (fallback)
-        const { data: existingAnalysis, error: analysisError } = await supabase
+        // Check database cache (prefer newer movie_analysis, fallback to page_analysis)
+        let existingAnalysis = null;
+        let analysisError = null;
+        
+        // Try newer movie_analysis type first
+        const { data: movieAnalysis, error: movieAnalysisError } = await supabase
           .from('movie_analyses')
           .select('claude_response')
           .eq('movie_id', movie.id)
-          .eq('analysis_type', 'page_analysis')
+          .eq('analysis_type', 'movie_analysis')
           .single();
+          
+        if (movieAnalysis && !movieAnalysisError) {
+          existingAnalysis = movieAnalysis;
+        } else {
+          // Fallback to older page_analysis type
+          const { data: pageAnalysis, error: pageError } = await supabase
+            .from('movie_analyses')
+            .select('claude_response')
+            .eq('movie_id', movie.id)
+            .eq('analysis_type', 'page_analysis')
+            .single();
+            
+          existingAnalysis = pageAnalysis;
+          analysisError = pageError;
+        }
 
         if (existingAnalysis && !analysisError) {
           console.log(`📦 Using database cached analysis for ${title} (${year})`);
+          
+          const rawAnalysis = existingAnalysis.claude_response.raw_content;
+          let processedAnalysis = rawAnalysis;
+          let movieData = existingAnalysis.claude_response.movie_data || null;
+          
+          // If no movie_data exists, process MOVIES: lines to enhance with TMDB IDs
+          if (!movieData && rawAnalysis.includes('MOVIES:')) {
+            try {
+              console.log(`🔗 Processing MOVIES: lines for cached analysis ${title} (${year})`);
+              
+              // Look up current movie's TMDB ID for self-reference prevention
+              const { data: currentMovieData } = await supabase
+                .from('movies')
+                .select('tmdb_id')
+                .eq('title', title)
+                .eq('year', year)
+                .single();
+              
+              const currentTmdbId = currentMovieData?.tmdb_id || null;
+              
+              // Process movie references
+              const { processAnalysisMovies } = await import('../../lib/analysis-movie-linker.js');
+              const movieResult = await processAnalysisMovies(rawAnalysis, currentTmdbId);
+              
+              processedAnalysis = movieResult.processedContent;
+              movieData = {
+                featuredMovies: movieResult.featuredMovies,
+                linkedMovies: movieResult.linkedMovies,
+                allMovies: movieResult.allMovies,
+                stats: {
+                  totalMoviesProcessed: movieResult.allMovies.length,
+                  featuredMoviesCount: movieResult.featuredMovies.length,
+                  linkedMoviesCount: movieResult.linkedMovies.length,
+                  newMoviesCreated: movieResult.allMovies.filter(m => !m.id).length
+                }
+              };
+              
+              console.log(`✅ Enhanced cached analysis: ${movieData.stats.featuredMoviesCount} featured movies, ${movieData.stats.linkedMoviesCount} linked movies`);
+            } catch (linkingError) {
+              console.warn(`⚠️ Movie linking failed for cached analysis:`, linkingError.message);
+              // Continue with raw analysis if enhancement fails
+            }
+          }
+          
           return {
-            analysis: existingAnalysis.claude_response.raw_content,
+            analysis: processedAnalysis, // Return enhanced content with links if processed
+            rawAnalysis: rawAnalysis, // Include original for debugging
             movie: { title, year },
             cached: true,
-            source: 'database',
+            source: movieData ? 'database_enhanced' : 'database',
             entityData: existingAnalysis.claude_response.entity_data?.entities || null,
+            movieData: movieData, // Include enhanced movie data for MediaCards
           };
         }
 
