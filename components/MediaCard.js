@@ -54,8 +54,6 @@ export default function MediaCard({
 
   const [slug, setSlug] = useState(isValidClaudeSlug ? initialSlug : '');
   
-  // Debug slug handling
-  console.log(`MediaCard ${title}: initialSlug="${initialSlug}", isValidClaudeSlug=${isValidClaudeSlug}, finalSlug="${slug}"`);
   const [poster, setPoster] = useState(initialPoster || '/images/placeholder-poster.jpg');
   const [movieTmdbId, setMovieTmdbId] = useState(tmdbId);
 
@@ -121,7 +119,6 @@ export default function MediaCard({
 
         // Fetch TMDB poster if using placeholder
         if (poster === '/images/placeholder-poster.jpg') {
-          console.log('Fetching TMDB poster for:', title, year);
           const response = await fetch('/api/tmdb-poster', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -153,7 +150,6 @@ export default function MediaCard({
                 dataSource: 'afi100', // For now, assume AFI100. Could be made dynamic.
               }),
             });
-            console.log('Cached enhanced poster data for:', title, year);
           } catch (cacheError) {
             console.warn('Failed to cache enhanced data:', cacheError);
             // Don't fail the whole operation if caching fails

@@ -3,21 +3,9 @@ import React, { memo } from 'react';
 import MediaCard from './MediaCard';
 
 function FeaturedFilmsSection({ movies, title = 'Featured Films', style = {} }) {
-  // Debug logging
-  console.log('FeaturedFilmsSection:', {
-    title,
-    moviesCount: movies?.length,
-    movies: movies?.slice(0, 3).map(m => ({
-      title: m.title,
-      year: m.year,
-      tmdb_id: m.tmdb_id,
-      slug: m.slug?.substring(0, 60) + (m.slug?.length > 60 ? '...' : ''),
-      slugLength: m.slug?.length,
-    })),
-  });
+  // Production ready - no debug logging
 
   if (!movies || movies.length === 0) {
-    console.log('FeaturedFilmsSection: No movies to display');
     return null;
   }
 
@@ -56,15 +44,7 @@ function FeaturedFilmsSection({ movies, title = 'Featured Films', style = {} }) 
             // Pass through any slug - let MediaCard validation handle filtering
             const isValidClaudeSlug = !!movie.slug;
 
-            // Debug MediaCard props being passed
-            console.log(`MediaCard props for ${movie.title}:`, {
-              title: movie.title,
-              year: movie.year,
-              originalSlug: movie.slug,
-              isValidClaudeSlug,
-              finalSlugPassed: isValidClaudeSlug ? movie.slug : null,
-              tmdbId: movie.tmdb_id || movie.tmdbId
-            });
+            // Production ready - no debug logging
 
             return (
               <div
