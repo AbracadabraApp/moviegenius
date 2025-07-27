@@ -6,6 +6,7 @@ import MovieHeaderLarge from '../../components/MovieHeaderLarge';
 import SimpleSearch from '../../components/SimpleSearch';
 import DiscoveryFooter from '../../components/DiscoveryFooter';
 import MovieAnalysisWithEntities from '../../components/MovieAnalysisWithEntities';
+import ErrorBoundary from '../../components/ErrorBoundary';
 
 export default function MovieDetailPage() {
   const router = useRouter();
@@ -119,37 +120,46 @@ export default function MovieDetailPage() {
   };
 
   return (
-    <PhoneFrame>
-      <div style={{ backgroundColor: '#ffffff', minHeight: '100%' }}>
-        {/* Simple Search Bar */}
-        <div style={{ padding: '16px 16px 8px 16px' }}>
-          <SimpleSearch
-            onResults={handleSearchResults}
-            placeholder="Search movies..."
-            useUnifiedSearch={true}
-          />
+    <ErrorBoundary level="page">
+      <PhoneFrame>
+        <div style={{ backgroundColor: '#ffffff', minHeight: '100%' }}>
+          {/* Simple Search Bar */}
+          <ErrorBoundary level="section">
+            <div style={{ padding: '16px 16px 8px 16px' }}>
+              <SimpleSearch
+                onResults={handleSearchResults}
+                placeholder="Search movies..."
+                useUnifiedSearch={true}
+              />
+            </div>
+          </ErrorBoundary>
+
+          {/* Movie Header */}
+          <ErrorBoundary level="section">
+            <MovieHeaderLarge
+              title={movie.title}
+              year={year}
+              initialSlug={movie.overview}
+              initialPoster={posterUrl}
+              initialStreaming={streaming?.streaming_data}
+              tmdbId={parseInt(id)}
+            />
+          </ErrorBoundary>
+
+          {/* Movie Analysis with Entity Linking */}
+          <ErrorBoundary level="section">
+            <MovieAnalysisWithEntities
+              analysis={analysis}
+              movie={movie}
+            />
+          </ErrorBoundary>
+
+          {/* Discovery Footer */}
+          <ErrorBoundary level="section">
+            <DiscoveryFooter />
+          </ErrorBoundary>
         </div>
-
-        {/* Movie Header */}
-        <MovieHeaderLarge
-          title={movie.title}
-          year={year}
-          initialSlug={movie.overview}
-          initialPoster={posterUrl}
-          initialStreaming={streaming?.streaming_data}
-          tmdbId={parseInt(id)}
-        />
-
-        {/* Movie Analysis with Entity Linking */}
-        <MovieAnalysisWithEntities
-          analysis={analysis}
-          movie={movie}
-        />
-
-
-        {/* Discovery Footer */}
-        <DiscoveryFooter />
-      </div>
-    </PhoneFrame>
+      </PhoneFrame>
+    </ErrorBoundary>
   );
 }

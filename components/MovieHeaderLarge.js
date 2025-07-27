@@ -38,15 +38,6 @@ export default function MovieHeaderLarge({
   initialStreaming,
   tmdbId 
 }) {
-  // Debug logging
-  console.log('🎬 MovieHeaderLarge props:', {
-    title,
-    year,
-    initialSlug,
-    initialPoster,
-    initialStreaming,
-    tmdbId
-  });
 
   const [hearted, setHearted] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
@@ -78,7 +69,6 @@ export default function MovieHeaderLarge({
   useEffect(() => {
     const hydrationDelay = setTimeout(() => {
       setIsHydrated(true);
-      console.log('🔄 Hydration delay complete - enabling poster loading');
     }, 300);
     
     return () => clearTimeout(hydrationDelay);
@@ -87,12 +77,10 @@ export default function MovieHeaderLarge({
   // Update state when props change (navigation between movies)
   useEffect(() => {
     if (initialPoster && isHydrated) {
-      console.log('📸 Setting poster after hydration:', initialPoster);
       setPoster(initialPoster);
       // Force image to show immediately - bypass onLoad event issues
       setIsImageLoaded(true);
       setIsImageError(false);
-      console.log('🖼️ Forcing poster display (bypassing onLoad)');
     }
   }, [initialPoster, isHydrated]);
 
@@ -181,7 +169,6 @@ export default function MovieHeaderLarge({
           setTrailerVideoId(data.videoId);
           setShowTrailer(true); // Show trailer after loading
         } else {
-          console.log('No trailer available for this movie');
         }
       } catch (error) {
         console.error('Error fetching trailer:', error);
@@ -309,12 +296,10 @@ export default function MovieHeaderLarge({
             transition: 'opacity 0.2s ease-in-out'
           }}
           onLoad={() => {
-            console.log('🖼️ Image onLoad fired for:', poster);
             setIsImageLoaded(true);
             setIsImageError(false);
           }}
           onError={() => {
-            console.log('❌ Image onError fired for:', poster);
             setIsImageError(true);
             setIsImageLoaded(false);
           }}

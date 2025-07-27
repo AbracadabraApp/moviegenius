@@ -31,32 +31,27 @@ function EnhancedFeaturedFilmsSection({
     }));
   } else {
     // No valid movie data
-    console.log('EnhancedFeaturedFilmsSection: No valid movie data provided');
     return null;
   }
 
   // Step 1: Combine both pools (already combined in allMovies)
-  console.log('EnhancedFeaturedFilmsSection: Processing', allMovies.length, 'total movies');
 
   // Step 2: Remove duplicates by tmdb_id
   const uniqueMovies = allMovies.filter((movie, index, arr) => 
     movie.tmdb_id && arr.findIndex(m => m.tmdb_id === movie.tmdb_id) === index
   );
 
-  console.log('EnhancedFeaturedFilmsSection: After deduplication:', uniqueMovies.length, 'unique movies');
 
   // Step 3: Never feature self-referential title
   const nonSelfMovies = uniqueMovies.filter(movie => 
     !currentMovieTmdbId || movie.tmdb_id !== currentMovieTmdbId
   );
 
-  console.log('EnhancedFeaturedFilmsSection: After self-reference removal:', nonSelfMovies.length, 'movies');
 
   // Step 4: Random 2-4 bucket size (doesn't interrupt text flow)
   const bucketSize = Math.floor(Math.random() * 3) + 2; // 2, 3, or 4
   const featuredMovies = nonSelfMovies.slice(0, bucketSize);
 
-  console.log('EnhancedFeaturedFilmsSection: Selected', featuredMovies.length, 'movies for display (bucket size:', bucketSize + ')');
 
   // Filter out movies missing required fields (same as original)
   const validMovies = featuredMovies.filter(movie =>
@@ -68,11 +63,9 @@ function EnhancedFeaturedFilmsSection({
   );
 
   if (validMovies.length === 0) {
-    console.log('EnhancedFeaturedFilmsSection: No valid movies to display after filtering');
     return null;
   }
 
-  console.log('EnhancedFeaturedFilmsSection: Final display:', validMovies.length, 'valid movies');
 
   return (
     <div style={{ ...styles.movieSection, ...style }}>
@@ -87,15 +80,7 @@ function EnhancedFeaturedFilmsSection({
           const movieSlug = movie.slug || movie.database_title || movie.title;
           const isValidClaudeSlug = !!movieSlug;
 
-          // Debug MediaCard props
-          console.log(`EnhancedFeaturedFilmsSection MediaCard props for ${movie.title}:`, {
-            title: movie.title,
-            year: movie.year,
-            source: movie.source,
-            tmdbId: movie.tmdb_id,
-            slug: movieSlug,
-            streaming: movie.streaming || movie.initialStreaming
-          });
+          // Production ready - no debug logging
 
           return (
             <div

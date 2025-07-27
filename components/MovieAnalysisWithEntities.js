@@ -8,6 +8,9 @@ import { useState, useEffect } from 'react';
 import EntityLinkedText from './EntityLinkedText';
 import MediaCard from './MediaCard';
 import ExplorePromptCard from './ExplorePromptCard';
+import ErrorBoundary from './ErrorBoundary';
+import MediaCardErrorFallback from './MediaCardErrorFallback';
+import ExplorePromptErrorFallback from './ExplorePromptErrorFallback';
 
 export default function MovieAnalysisWithEntities({
   analysis,
@@ -268,16 +271,18 @@ export default function MovieAnalysisWithEntities({
         // Text content
         content.push(
           <div key={`text-${sectionIndex}`} style={styles.paragraph}>
-            <EntityLinkedText
-              text={section.content}
-              linkingIntensity={linkingIntensity}
-              context="movie-analysis"
-              currentEntity={{
-                type: 'movie',
-                slug: movie?.slug,
-                title: movie?.title,
-              }}
-            />
+            <ErrorBoundary level="section">
+              <EntityLinkedText
+                text={section.content}
+                linkingIntensity={linkingIntensity}
+                context="movie-analysis"
+                currentEntity={{
+                  type: 'movie',
+                  slug: movie?.slug,
+                  title: movie?.title,
+                }}
+              />
+            </ErrorBoundary>
           </div>
         );
       } else if (section.type === 'subhead') {
@@ -309,15 +314,21 @@ export default function MovieAnalysisWithEntities({
               </div>
               <div style={styles.movieList}>
                 {enhancedMovies.map((movieItem, movieIndex) => (
-                  <MediaCard
-                    key={`featured-${sectionIndex}-${movieIndex}`}
-                    title={movieItem.title}
-                    year={movieItem.year}
-                    initialSlug={movieItem.slug}
-                    initialPoster={movieItem.poster_url}
-                    initialStreaming={movieItem.streaming}
-                    tmdbId={movieItem.tmdb_id}
-                  />
+                  <ErrorBoundary 
+                    key={`featured-error-${sectionIndex}-${movieIndex}`} 
+                    level="section"
+                    fallback={MediaCardErrorFallback}
+                  >
+                    <MediaCard
+                      key={`featured-${sectionIndex}-${movieIndex}`}
+                      title={movieItem.title}
+                      year={movieItem.year}
+                      initialSlug={movieItem.slug}
+                      initialPoster={movieItem.poster_url}
+                      initialStreaming={movieItem.streaming}
+                      tmdbId={movieItem.tmdb_id}
+                    />
+                  </ErrorBoundary>
                 ))}
               </div>
             </div>
@@ -333,10 +344,12 @@ export default function MovieAnalysisWithEntities({
                 <span style={styles.sectionLabel}>EXPLORE FURTHER</span>
                 <div style={styles.sectionDivider} />
               </div>
-              <ExplorePromptCard 
-                prompt={exploreTopics[exploreIndex]}
-                contextPrefix={movie?.title}
-              />
+              <ErrorBoundary level="section" fallback={ExplorePromptErrorFallback}>
+                <ExplorePromptCard 
+                  prompt={exploreTopics[exploreIndex]}
+                  contextPrefix={movie?.title}
+                />
+              </ErrorBoundary>
             </div>
           );
           exploreIndex++;
@@ -355,11 +368,17 @@ export default function MovieAnalysisWithEntities({
           </div>
           <div style={styles.exploreGrid}>
             {exploreTopics.slice(exploreIndex).map((topic, index) => (
-              <ExplorePromptCard 
-                key={`remaining-${index}`}
-                prompt={topic}
-                contextPrefix={movie?.title}
-              />
+              <ErrorBoundary 
+                key={`remaining-error-${index}`} 
+                level="section"
+                fallback={ExplorePromptErrorFallback}
+              >
+                <ExplorePromptCard 
+                  key={`remaining-${index}`}
+                  prompt={topic}
+                  contextPrefix={movie?.title}
+                />
+              </ErrorBoundary>
             ))}
           </div>
         </div>
@@ -388,15 +407,21 @@ export default function MovieAnalysisWithEntities({
             </div>
             <div style={styles.movieList}>
               {enhancedMoreIdeas.map((movieItem, movieIndex) => (
-                <MediaCard
-                  key={`more-ideas-${movieIndex}`}
-                  title={movieItem.title}
-                  year={movieItem.year}
-                  initialSlug={movieItem.slug}
-                  initialPoster={movieItem.poster_url}
-                  initialStreaming={movieItem.streaming}
-                  tmdbId={movieItem.tmdb_id}
-                />
+                <ErrorBoundary 
+                  key={`more-ideas-error-${movieIndex}`} 
+                  level="section"
+                  fallback={MediaCardErrorFallback}
+                >
+                  <MediaCard
+                    key={`more-ideas-${movieIndex}`}
+                    title={movieItem.title}
+                    year={movieItem.year}
+                    initialSlug={movieItem.slug}
+                    initialPoster={movieItem.poster_url}
+                    initialStreaming={movieItem.streaming}
+                    tmdbId={movieItem.tmdb_id}
+                  />
+                </ErrorBoundary>
               ))}
             </div>
           </div>

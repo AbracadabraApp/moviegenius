@@ -42,14 +42,12 @@ export default function SimpleSearch({
 
     // Prevent multiple concurrent searches
     if (isLoading) {
-      console.log(`⏸️  Skipping search - already loading`);
       return;
     }
 
     setIsLoading(true);
     setFallback(null);
 
-    console.log(`🔍 [${searchId}] Searching for: "${q}"`);
 
     try {
       const response = await fetch('/api/multi-search', {
@@ -60,19 +58,16 @@ export default function SimpleSearch({
 
       // Check if this search was cancelled by a newer search
       if (currentSearchRef.current !== searchId) {
-        console.log(`🚫 [${searchId}] Search cancelled - newer search in progress`);
         return;
       }
 
       if (response.ok) {
         const data = await response.json();
-        console.log(`✅ [${searchId}] Search results:`, data);
 
         // V1 Feature: Auto-navigate to single movie result
         if (data.movies && data.movies.length === 1) {
           const movie = data.movies[0];
           if (movie.tmdb_id) {
-            console.log(`🎬 [${searchId}] Auto-navigating to: ${movie.title}`);
             router.push(`/movie/${movie.tmdb_id}`);
             return;
           }
@@ -85,12 +80,12 @@ export default function SimpleSearch({
           setFallback(data.fallback);
         }
       } else {
-        console.error(`❌ [${searchId}] Search failed:`, response.status, response.statusText);
+        // Search failed - continue gracefully
         if (onResults) onResults({ movies: [], people: [] });
         setFallback({ message: 'Search failed. Please try again.' });
       }
     } catch (error) {
-      console.error(`💥 [${searchId}] Search error:`, error);
+      // Search error - continue gracefully
       if (onResults) onResults({ movies: [], people: [] });
       setFallback({ message: 'Search failed. Please try again.' });
     } finally {
