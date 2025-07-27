@@ -19,6 +19,7 @@
 import { Check, Plus } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { FavoritesManager } from './FavoritesManager';
+import { getPerformanceMonitor } from '../lib/performance-monitor';
 // import useStreamingData from '../hooks/useStreamingData'; // Stubbed out
 
 /**
@@ -44,6 +45,29 @@ export default function MediaCard({
 }) {
   const [hearted, setHearted] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
+  const performanceMonitor = getPerformanceMonitor();
+  
+  // Track MediaCard render start
+  useEffect(() => {
+    const renderStart = performance.now();
+    performanceMonitor.trackMetric('mediacard_render_start', renderStart, {
+      title,
+      year,
+      hasSlug: !!initialSlug,
+      hasPoster: !!initialPoster,
+      tmdbId
+    });
+    
+    return () => {
+      // Track render completion on unmount
+      const renderEnd = performance.now();
+      performanceMonitor.trackMetric('mediacard_render_complete', renderEnd, {
+        title,
+        year,
+        renderDuration: renderEnd - renderStart
+      });
+    };
+  }, [title, year]);
   // 🔒 LOCKED: TMDB plot summary protection - only use valid Claude slugs
   const isValidClaudeSlug =
     initialSlug &&

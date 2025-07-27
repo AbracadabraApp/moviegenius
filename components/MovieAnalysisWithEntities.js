@@ -11,6 +11,7 @@ import ExplorePromptCard from './ExplorePromptCard';
 import ErrorBoundary from './ErrorBoundary';
 import MediaCardErrorFallback from './MediaCardErrorFallback';
 import ExplorePromptErrorFallback from './ExplorePromptErrorFallback';
+import { getPerformanceMonitor } from '../lib/performance-monitor';
 
 export default function MovieAnalysisWithEntities({
   analysis,
@@ -21,6 +22,7 @@ export default function MovieAnalysisWithEntities({
   const [processedAnalysis, setProcessedAnalysis] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [entityStats, setEntityStats] = useState(null);
+  const performanceMonitor = getPerformanceMonitor();
 
   useEffect(() => {
     if (!analysis?.claude_response?.raw_content) {
@@ -28,10 +30,20 @@ export default function MovieAnalysisWithEntities({
       return;
     }
 
+    // Start performance tracking for component processing
+    const processingStart = performance.now();
+    performanceMonitor.trackMetric('analysis_component_start', processingStart, {
+      movieId: movie?.id,
+      hasEntityData: !!analysis.entityData,
+      contentLength: analysis.claude_response.raw_content.length
+    });
+
     processAnalysisContent();
   }, [analysis, linkingIntensity]);
 
   const processAnalysisContent = async () => {
+    const processingStart = performance.now();
+    
     try {
       setIsLoading(true);
 
@@ -92,7 +104,25 @@ export default function MovieAnalysisWithEntities({
           realTime: true,
         });
       }
+      
+      // Track successful component processing completion
+      const processingEnd = performance.now();
+      performanceMonitor.trackMetric('analysis_component_complete', processingEnd, {
+        movieId: movie?.id,
+        processingTime: processingEnd - processingStart,
+        hasEntities: !!entityData,
+        featuredMoviesCount: featuredMovies?.length || 0
+      });
+      
     } catch (error) {
+      // Track processing error
+      const processingEnd = performance.now();
+      performanceMonitor.trackMetric('analysis_component_error', processingEnd, {
+        movieId: movie?.id,
+        processingTime: processingEnd - processingStart,
+        error: error.message
+      });
+      
       console.error('Error processing analysis:', error);
       setProcessedAnalysis({
         content: analysis.claude_response.raw_content,
