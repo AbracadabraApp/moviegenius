@@ -1,9 +1,10 @@
-// components/PhoneFrame.js
+// components/PhoneFrame.js - WITH MY CLEAN NAVBAR
 import { useEffect, useState } from 'react';
-import NavBar from './NavBar';
 import { shouldShowPhoneFrame, getPlatformName } from '../lib/platform';
+import NavBar from './NavBar';
+import { routeValidation } from '../lib/routes';
 
-export default function PhoneFrame({ children, navItems, routeValidation }) {
+export default function PhoneFrame({ children }) {
   const [isClient, setIsClient] = useState(false);
   const [showFrame, setShowFrame] = useState(true); // Always start with desktop frame
   const [platform, setPlatform] = useState('');
@@ -15,6 +16,13 @@ export default function PhoneFrame({ children, navItems, routeValidation }) {
     setShowFrame(shouldShowPhoneFrame());
     setPlatform(getPlatformName());
   }, []);
+
+  // NavBar configuration - using MY clean implementation
+  const navItems = [
+    { label: 'Movies', route: '/movies', icon: 'Clapperboard' },
+    { label: 'Genius', route: '/genius', icon: 'Sparkles' },
+    { label: 'You', route: '/you', icon: 'User' }
+  ];
 
   // During SSR, always render desktop layout to prevent hydration mismatch
   if (!isClient) {
