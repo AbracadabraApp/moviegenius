@@ -7,10 +7,15 @@ import SimpleSearch from '../../components/SimpleSearch';
 import DiscoveryFooter from '../../components/DiscoveryFooter';
 import MovieAnalysisWithEntities from '../../components/MovieAnalysisWithEntities';
 import ErrorBoundary from '../../components/ErrorBoundary';
+import PerformanceDashboard from '../../components/PerformanceDashboard';
+import { getPerformanceMonitor } from '../../lib/performance-monitor';
 
 export default function MovieDetailPage() {
   const router = useRouter();
   const { id } = router.query;
+  
+  // Performance monitoring
+  const performanceMonitor = getPerformanceMonitor();
   
   // Feature flag for page-level loading (can be enabled later if needed)
   const ENABLE_PAGE_LOADING = false;
@@ -28,6 +33,10 @@ export default function MovieDetailPage() {
     }
 
     const fetchMovie = async () => {
+      // Start performance tracking
+      // const pageLoadId = `movie_page_${id}_load`;
+      // performanceMonitor.trackMetric('page_load_start', performance.now(), { movieId: id });
+      
       try {
         // Fetch TMDB data
         const tmdbResponse = await fetch(`/api/tmdb-movie?id=${id}`);
@@ -53,7 +62,6 @@ export default function MovieDetailPage() {
         if (analysisResponse.ok) {
           const analysisData = await analysisResponse.json();
           // Format analysis data for MovieAnalysisWithEntities component
-          
           const formattedAnalysis = {
             claude_response: {
               raw_content: analysisData.analysis || analysisData.rawAnalysis
@@ -65,12 +73,26 @@ export default function MovieDetailPage() {
             // Also include the movie data directly for easier access
             entityData: analysisData.entityData || analysisData.movieData
           };
+          
           setAnalysis(formattedAnalysis);
         } else {
+          console.error('❌ Analysis API failed:', analysisResponse.status, analysisResponse.statusText);
           setAnalysis(null);
         }
         
+        // Track successful page load completion
+        // performanceMonitor.trackMetric('page_load_complete', performance.now(), { 
+        //   movieId: id,
+        //   hasAnalysis: !!analysisData,
+        //   hasStreaming: !!streamingData
+        // });
+        
       } catch (err) {
+        // Track failed page load
+        // performanceMonitor.trackMetric('page_load_error', performance.now(), { 
+        //   movieId: id,
+        //   error: err.message
+        // });
         setError(err.message);
       }
     };
@@ -160,6 +182,9 @@ export default function MovieDetailPage() {
           </ErrorBoundary>
         </div>
       </PhoneFrame>
+      
+      {/* Performance Dashboard (dev only) */}
+      <PerformanceDashboard />
     </ErrorBoundary>
   );
 }
