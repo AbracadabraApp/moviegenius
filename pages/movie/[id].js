@@ -5,6 +5,7 @@ import PhoneFrame from '../../components/PhoneFrame';
 import MovieHeaderLarge from '../../components/MovieHeaderLarge';
 import SimpleSearch from '../../components/SimpleSearch';
 import DiscoveryFooter from '../../components/DiscoveryFooter';
+import MovieAnalysisWithEntities from '../../components/MovieAnalysisWithEntities';
 
 export default function MovieDetailPage() {
   const router = useRouter();
@@ -13,6 +14,7 @@ export default function MovieDetailPage() {
   // API data state
   const [movie, setMovie] = useState(null);
   const [streaming, setStreaming] = useState(null);
+  const [analysis, setAnalysis] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -43,6 +45,25 @@ export default function MovieDetailPage() {
           setStreaming(streamingData);
         } else {
           setStreaming({ streaming_data: null });
+        }
+
+        // Fetch analysis data
+        const analysisResponse = await fetch(`/api/movie-analysis?tmdbId=${id}`);
+        if (analysisResponse.ok) {
+          const analysisData = await analysisResponse.json();
+          // Format analysis data for MovieAnalysisWithEntities component
+          const formattedAnalysis = {
+            claude_response: {
+              raw_content: analysisData.analysis || analysisData.rawAnalysis
+            },
+            entity_linking_data: analysisData.movieData ? {
+              entityData: analysisData.movieData,
+              processedAt: new Date().toISOString()
+            } : null
+          };
+          setAnalysis(formattedAnalysis);
+        } else {
+          setAnalysis(null);
         }
         
       } catch (err) {
@@ -105,6 +126,13 @@ export default function MovieDetailPage() {
           initialStreaming={streaming?.streaming_data}
           tmdbId={parseInt(id)}
         />
+
+        {/* Movie Analysis with Entity Linking */}
+        <MovieAnalysisWithEntities
+          analysis={analysis}
+          movie={movie}
+        />
+
 
         {/* Discovery Footer */}
         <DiscoveryFooter />
