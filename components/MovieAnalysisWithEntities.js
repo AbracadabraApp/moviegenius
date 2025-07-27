@@ -30,19 +30,20 @@ export default function MovieAnalysisWithEntities({
       return;
     }
 
-    // Start performance tracking for component processing
-    const processingStart = performance.now();
-    performanceMonitor.trackMetric('analysis_component_start', processingStart, {
-      movieId: movie?.id,
-      hasEntityData: !!analysis.entityData,
-      contentLength: analysis.claude_response.raw_content.length
-    });
+    // Performance tracking disabled for stability
+    // const processingStart = performance.now();
+    // performanceMonitor.trackMetric('analysis_component_start', processingStart, {
+    //   movieId: movie?.id,
+    //   hasEntityData: !!analysis.entityData,
+    //   contentLength: analysis.claude_response.raw_content.length
+    // });
 
     processAnalysisContent();
   }, [analysis, linkingIntensity]);
 
   const processAnalysisContent = async () => {
     const processingStart = performance.now();
+    let featuredMovies = []; // Move declaration to function scope
     
     try {
       setIsLoading(true);
@@ -57,7 +58,6 @@ export default function MovieAnalysisWithEntities({
         const entities = entityData.entityData || entityData;
         
         // Handle both old entity format and new movieData format
-        let featuredMovies = [];
         
         if (entities.featuredMovies) {
           // New movieData format: featuredMovies array with direct properties
@@ -105,23 +105,23 @@ export default function MovieAnalysisWithEntities({
         });
       }
       
-      // Track successful component processing completion
-      const processingEnd = performance.now();
-      performanceMonitor.trackMetric('analysis_component_complete', processingEnd, {
-        movieId: movie?.id,
-        processingTime: processingEnd - processingStart,
-        hasEntities: !!entityData,
-        featuredMoviesCount: featuredMovies?.length || 0
-      });
+      // Performance tracking disabled for stability
+      // const processingEnd = performance.now();
+      // performanceMonitor.trackMetric('analysis_component_complete', processingEnd, {
+      //   movieId: movie?.id,
+      //   processingTime: processingEnd - processingStart,
+      //   hasEntities: !!entityData,
+      //   featuredMoviesCount: featuredMovies?.length || 0
+      // });
       
     } catch (error) {
-      // Track processing error
-      const processingEnd = performance.now();
-      performanceMonitor.trackMetric('analysis_component_error', processingEnd, {
-        movieId: movie?.id,
-        processingTime: processingEnd - processingStart,
-        error: error.message
-      });
+      // Performance tracking disabled for stability
+      // const processingEnd = performance.now();
+      // performanceMonitor.trackMetric('analysis_component_error', processingEnd, {
+      //   movieId: movie?.id,
+      //   processingTime: processingEnd - processingStart,
+      //   error: error.message
+      // });
       
       console.error('Error processing analysis:', error);
       setProcessedAnalysis({
