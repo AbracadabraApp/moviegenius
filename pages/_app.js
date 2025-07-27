@@ -3,6 +3,7 @@
 import '../styles/globals.css';
 import '../styles/movieTitle.css';
 import ErrorBoundary from '../components/ErrorBoundary';
+import { FavoritesProvider } from '../contexts/FavoritesContext';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
@@ -162,7 +163,9 @@ export default function MyApp({ Component, pageProps }) {
       </Head>
 
       <ErrorBoundary>
-        <Component {...pageProps} />
+        <FavoritesProvider>
+          <Component {...pageProps} />
+        </FavoritesProvider>
       </ErrorBoundary>
     </>
   );
