@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import PhoneFrame from '../../components/PhoneFrame';
 import MovieHeaderLarge from '../../components/MovieHeaderLarge';
+import SimpleSearch from '../../components/SimpleSearch';
 
 export default function MovieDetailPage() {
   const router = useRouter();
@@ -76,9 +77,25 @@ export default function MovieDetailPage() {
     ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
     : '/images/placeholder-poster.jpg';
 
+  // Simple search handler (SimpleSearch handles navigation automatically)
+  const handleSearchResults = (results) => {
+    // SimpleSearch component handles navigation automatically
+    // This is just for any additional result processing if needed
+  };
+
   return (
     <PhoneFrame>
       <div style={{ backgroundColor: '#ffffff', minHeight: '100%' }}>
+        {/* Simple Search Bar */}
+        <div style={{ padding: '16px 16px 8px 16px' }}>
+          <SimpleSearch
+            onResults={handleSearchResults}
+            placeholder="Search movies..."
+            useUnifiedSearch={true}
+          />
+        </div>
+
+        {/* Movie Header */}
         <MovieHeaderLarge
           title={movie.title}
           year={year}
