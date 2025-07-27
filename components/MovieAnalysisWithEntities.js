@@ -122,11 +122,11 @@ export default function MovieAnalysisWithEntities({
   const sections = parseAnalysisContent(processedAnalysis.content);
 
   return (
-    <div className={`movie-analysis-with-entities ${className}`}>
+    <div style={styles.container}>
       {/* Main Analysis Content */}
-      <div className="analysis-content space-y-4">
+      <div style={styles.analysisContent}>
         {sections.paragraphs.map((paragraph, index) => (
-          <div key={index} className="analysis-paragraph">
+          <div key={index} style={styles.paragraph}>
             <EntityLinkedText
               text={paragraph}
               linkingIntensity={linkingIntensity}
@@ -136,7 +136,6 @@ export default function MovieAnalysisWithEntities({
                 slug: movie?.slug,
                 title: movie?.title,
               }}
-              className="text-gray-800 leading-relaxed"
             />
           </div>
         ))}
@@ -155,14 +154,12 @@ export default function MovieAnalysisWithEntities({
                     text={`${title} (${year})`}
                     linkingIntensity={linkingIntensity}
                     context="movie-reference"
-                    className="font-medium text-gray-900"
                   />
                   {description && (
                     <EntityLinkedText
                       text={description}
                       linkingIntensity="conservative"
                       context="movie-description"
-                      className="text-sm text-gray-600 mt-1"
                     />
                   )}
                 </div>
@@ -174,17 +171,22 @@ export default function MovieAnalysisWithEntities({
 
       {/* Exploration Topics */}
       {sections.exploreTopics.length > 0 && (
-        <div className="explore-topics mt-6">
-          <h3 className="text-lg font-semibold mb-3 text-gray-900">Explore Further</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div style={styles.exploreSection}>
+          <div style={styles.sectionHeader}>
+            <div style={styles.sectionDivider} />
+            <span style={styles.sectionLabel}>EXPLORE FURTHER</span>
+            <div style={styles.sectionDivider} />
+          </div>
+          <div style={styles.exploreGrid}>
             {sections.exploreTopics.map((topic, index) => (
-              <div key={index} className="explore-topic p-3 bg-blue-50 rounded-lg">
-                <EntityLinkedText
-                  text={topic}
-                  linkingIntensity="conservative"
-                  context="exploration-topic"
-                  className="text-sm text-blue-800"
-                />
+              <div key={index} style={styles.exploreTopic}>
+                <div style={styles.exploreText}>
+                  <EntityLinkedText
+                    text={topic}
+                    linkingIntensity="conservative"
+                    context="exploration-topic"
+                  />
+                </div>
               </div>
             ))}
           </div>
@@ -193,11 +195,11 @@ export default function MovieAnalysisWithEntities({
 
       {/* Entity Statistics (Debug/Admin View) */}
       {entityStats && process.env.NODE_ENV === 'development' && (
-        <div className="entity-stats mt-6 p-3 bg-yellow-50 rounded-lg text-xs text-yellow-800">
+        <div style={styles.debugStats}>
           <strong>Entity Stats:</strong> {entityStats.totalEntities} total ({entityStats.movies}{' '}
           movies, {entityStats.people} people)
           {processedAnalysis.processedAt && (
-            <span className="ml-2">
+            <span style={{ marginLeft: '8px' }}>
               • Processed: {new Date(processedAnalysis.processedAt).toLocaleDateString()}
             </span>
           )}
@@ -206,13 +208,111 @@ export default function MovieAnalysisWithEntities({
 
       {/* Error Display */}
       {processedAnalysis.error && (
-        <div className="error-display mt-4 p-3 bg-red-50 rounded-lg">
-          <p className="text-red-700 text-sm">Entity linking error: {processedAnalysis.error}</p>
+        <div style={styles.errorDisplay}>
+          <p style={styles.errorText}>Entity linking error: {processedAnalysis.error}</p>
         </div>
       )}
     </div>
   );
 }
+
+const styles = {
+  container: {
+    padding: '16px',
+    backgroundColor: '#ffffff',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+  },
+  analysisContent: {
+    marginBottom: '24px',
+  },
+  paragraph: {
+    fontSize: '16px',
+    lineHeight: '1.6',
+    color: '#374151',
+    marginBottom: '16px',
+  },
+  movieReferencesSection: {
+    marginTop: '32px',
+    marginBottom: '24px',
+  },
+  sectionHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    marginBottom: '20px',
+    gap: '16px',
+  },
+  sectionDivider: {
+    flex: 1,
+    height: '1px',
+    background: 'linear-gradient(90deg, transparent, #d4af37, transparent)',
+  },
+  sectionLabel: {
+    fontSize: '12px',
+    fontWeight: '600',
+    textTransform: 'uppercase',
+    letterSpacing: '1px',
+    color: '#d4af37',
+  },
+  movieReferences: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '12px',
+  },
+  movieReference: {
+    padding: '16px',
+    backgroundColor: '#f9fafb',
+    borderRadius: '8px',
+    border: '1px solid #e5e7eb',
+  },
+  movieTitle: {
+    fontSize: '16px',
+    fontWeight: '600',
+    color: '#374151',
+    marginBottom: '8px',
+  },
+  movieDescription: {
+    fontSize: '14px',
+    lineHeight: '1.5',
+    color: '#6b7280',
+  },
+  exploreSection: {
+    marginTop: '32px',
+  },
+  exploreGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(1, 1fr)',
+    gap: '12px',
+  },
+  exploreTopic: {
+    padding: '16px',
+    backgroundColor: '#f0f9ff',
+    borderRadius: '8px',
+    border: '1px solid #bae6fd',
+  },
+  exploreText: {
+    fontSize: '14px',
+    color: '#0c4a6e',
+    fontWeight: '500',
+  },
+  debugStats: {
+    marginTop: '24px',
+    padding: '12px',
+    backgroundColor: '#fefce8',
+    borderRadius: '8px',
+    fontSize: '12px',
+    color: '#92400e',
+  },
+  errorDisplay: {
+    marginTop: '16px',
+    padding: '12px',
+    backgroundColor: '#fef2f2',
+    borderRadius: '8px',
+  },
+  errorText: {
+    fontSize: '14px',
+    color: '#dc2626',
+  },
+};
 
 // Hook for getting entity statistics
 export function useEntityStats(analysis) {
