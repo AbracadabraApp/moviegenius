@@ -633,7 +633,7 @@ const styles = {
   },
 };
 
-// Render JSON format analysis with proper alternating layout
+// Render JSON format analysis
 function renderJsonAnalysis(jsonData, movie, linkingIntensity, className) {
   const enhanceMovieWithTmdb = (movieItem) => {
     // Enhanced movie data should come from the linking process
@@ -668,145 +668,54 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className) {
     });
   };
 
-  // Build alternating content pattern
   const content = [];
-  
-  // Get data arrays with filtering
-  const textSections = jsonData.content || [];
-  const featuredMovies = filterSelfReferential(
-    (jsonData.featuredMovies || []).map(enhanceMovieWithTmdb)
-  );
-  const exploreTopics = jsonData.exploreTopics || [];
-  const moreIdeas = filterSelfReferential(
-    (jsonData.moreIdeas || []).map(enhanceMovieWithTmdb)
-  );
+  let sectionIndex = 0;
 
-
-  let exploreIndex = 0;
-  let movieGroupIndex = 0;
-  const moviesPerGroup = 2; // Split featured movies into groups
-
-  // Create alternating pattern: Text → Featured Films → Text → Explore Further → Repeat
-  textSections.forEach((section, textIndex) => {
-    // Add text section
-    content.push(
-      <div key={`json-text-${textIndex}`} style={styles.paragraph} data-testid={`section-${section.type}`}>
-        <ErrorBoundary level="section">
-          <EntityLinkedText
-            text={section.text}
-            linkingIntensity={linkingIntensity}
-            context="movie-analysis"
-            currentEntity={{
-              type: 'movie',
-              slug: movie?.slug,
-              title: movie?.title,
-            }}
-          />
-        </ErrorBoundary>
-      </div>
-    );
-
-    // Add SUBHEAD support based on content section type
-    if (section.type === 'technicalAnalysis' || section.type === 'legacyAndImpact') {
-      const subheadText = section.type === 'technicalAnalysis' 
-        ? 'Technical Excellence'
-        : 'Legacy and Modern Impact';
-      
+  // Render content sections
+  if (jsonData.content && Array.isArray(jsonData.content)) {
+    jsonData.content.forEach((section, index) => {
       content.push(
-        <div key={`subhead-${textIndex}`} style={styles.subheadSection}>
-          <h3 style={styles.subheadText}>{subheadText}</h3>
-        </div>
-      );
-    }
-
-    // Add featured movies at strategic points (after intro and technical analysis)
-    if ((textIndex === 1 || textIndex === 3) && featuredMovies.length > 0) {
-      const startIndex = movieGroupIndex * moviesPerGroup;
-      const endIndex = Math.min(startIndex + moviesPerGroup, featuredMovies.length);
-      const movieGroup = featuredMovies.slice(startIndex, endIndex);
-
-      if (movieGroup.length > 0) {
-        content.push(
-          <div key={`json-featured-${movieGroupIndex}`} style={styles.movieSection}>
-            <div style={styles.movieSectionHeader}>
-              <div style={styles.sectionDivider} />
-              <span style={styles.sectionLabel}>FEATURED FILMS</span>
-              <div style={styles.sectionDivider} />
-            </div>
-            <div style={styles.movieList}>
-              {movieGroup.map((movieItem, movieIndex) => (
-                <ErrorBoundary 
-                  key={`json-featured-error-${movieGroupIndex}-${movieIndex}`} 
-                  level="section"
-                  fallback={MediaCardErrorFallback}
-                >
-                  <div data-testid="featured-movie-card">
-                    <MediaCard
-                      key={`json-featured-${movieGroupIndex}-${movieIndex}`}
-                      title={movieItem.title}
-                      year={movieItem.year}
-                      initialSlug={movieItem.slug}
-                      initialPoster={movieItem.poster_url}
-                      initialStreaming={movieItem.streaming}
-                      tmdbId={movieItem.tmdb_id}
-                    />
-                  </div>
-                </ErrorBoundary>
-              ))}
-            </div>
-          </div>
-        );
-        movieGroupIndex++;
-      }
-    }
-
-    // Add single explore topic after featured movies (alternating pattern)
-    if ((textIndex === 2 || textIndex === 4) && exploreIndex < exploreTopics.length) {
-      const topic = exploreTopics[exploreIndex];
-      content.push(
-        <div key={`json-explore-single-${exploreIndex}`} style={styles.exploreSection}>
-          <div style={styles.sectionHeader}>
-            <div style={styles.sectionDivider} />
-            <span style={styles.sectionLabel}>EXPLORE FURTHER</span>
-            <div style={styles.sectionDivider} />
-          </div>
-          <ErrorBoundary 
-            level="section"
-            fallback={ExplorePromptErrorFallback}
-          >
-            <div data-testid="explore-topic-card">
-              <ExplorePromptCard 
-                prompt={`${topic.topic} (${topic.category})`}
-                contextPrefix={movie?.title}
-              />
-            </div>
+        <div key={`json-text-${index}`} style={styles.paragraph}>
+          <ErrorBoundary level="section">
+            <EntityLinkedText
+              text={section.text}
+              linkingIntensity={linkingIntensity}
+              context="movie-analysis"
+              currentEntity={{
+                type: 'movie',
+                slug: movie?.slug,
+                title: movie?.title,
+              }}
+            />
           </ErrorBoundary>
         </div>
       );
-      exploreIndex++;
-    }
-  });
+    });
+  }
 
-  // Add remaining featured movies if any
-  if (movieGroupIndex * moviesPerGroup < featuredMovies.length) {
-    const remainingMovies = featuredMovies.slice(movieGroupIndex * moviesPerGroup);
-    content.push(
-      <div key="json-featured-remaining" style={styles.movieSection}>
-        <div style={styles.movieSectionHeader}>
-          <div style={styles.sectionDivider} />
-          <span style={styles.sectionLabel}>FEATURED FILMS</span>
-          <div style={styles.sectionDivider} />
-        </div>
-        <div style={styles.movieList}>
-          {remainingMovies.map((movieItem, movieIndex) => (
-            <ErrorBoundary 
-              key={`json-featured-remaining-error-${movieIndex}`} 
-              level="section"
-              fallback={MediaCardErrorFallback}
-            >
-              <div data-testid="featured-movie-card">
+  // Render featured movies
+  if (jsonData.featuredMovies && jsonData.featuredMovies.length > 0) {
+    const enhancedFeatured = filterSelfReferential(
+      jsonData.featuredMovies.map(enhanceMovieWithTmdb)
+    );
+
+    if (enhancedFeatured.length > 0) {
+      content.push(
+        <div key="json-featured-movies" style={styles.movieSection}>
+          <div style={styles.movieSectionHeader}>
+            <div style={styles.sectionDivider} />
+            <span style={styles.sectionLabel}>FEATURED FILMS</span>
+            <div style={styles.sectionDivider} />
+          </div>
+          <div style={styles.movieList}>
+            {enhancedFeatured.map((movieItem, movieIndex) => (
+              <ErrorBoundary 
+                key={`json-featured-error-${movieIndex}`} 
+                level="section"
+                fallback={MediaCardErrorFallback}
+              >
                 <MediaCard
-                  key={`json-featured-remaining-${movieIndex}`}
+                  key={`json-featured-${movieIndex}`}
                   title={movieItem.title}
                   year={movieItem.year}
                   initialSlug={movieItem.slug}
@@ -814,38 +723,35 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className) {
                   initialStreaming={movieItem.streaming}
                   tmdbId={movieItem.tmdb_id}
                 />
-              </div>
-            </ErrorBoundary>
-          ))}
+              </ErrorBoundary>
+            ))}
+          </div>
         </div>
-      </div>
-    );
+      );
+    }
   }
 
-  // Add remaining explore topics
-  if (exploreIndex < exploreTopics.length) {
-    const remainingTopics = exploreTopics.slice(exploreIndex);
+  // Render explore topics
+  if (jsonData.exploreTopics && jsonData.exploreTopics.length > 0) {
     content.push(
-      <div key="json-explore-remaining" style={styles.exploreSection}>
+      <div key="json-explore-topics" style={styles.exploreSection}>
         <div style={styles.sectionHeader}>
           <div style={styles.sectionDivider} />
           <span style={styles.sectionLabel}>EXPLORE FURTHER</span>
           <div style={styles.sectionDivider} />
         </div>
         <div style={styles.exploreGrid}>
-          {remainingTopics.map((topic, index) => (
+          {jsonData.exploreTopics.map((topic, index) => (
             <ErrorBoundary 
-              key={`json-explore-remaining-error-${index}`} 
+              key={`json-explore-error-${index}`} 
               level="section"
               fallback={ExplorePromptErrorFallback}
             >
-              <div data-testid="explore-topic-card">
-                <ExplorePromptCard 
-                  key={`json-explore-remaining-${index}`}
-                  prompt={`${topic.topic} (${topic.category})`}
-                  contextPrefix={movie?.title}
-                />
-              </div>
+              <ExplorePromptCard 
+                key={`json-explore-${index}`}
+                prompt={`${topic.topic} (${topic.category})`}
+                contextPrefix={movie?.title}
+              />
             </ErrorBoundary>
           ))}
         </div>
@@ -853,23 +759,27 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className) {
     );
   }
 
-  // Add MORE IDEAS section at the end
-  if (moreIdeas.length > 0) {
-    content.push(
-      <div key="json-more-ideas" style={styles.movieSection}>
-        <div style={styles.movieSectionHeader}>
-          <div style={styles.sectionDivider} />
-          <span style={styles.sectionLabel}>MORE IDEAS</span>
-          <div style={styles.sectionDivider} />
-        </div>
-        <div style={styles.movieList}>
-          {moreIdeas.map((movieItem, movieIndex) => (
-            <ErrorBoundary 
-              key={`json-more-error-${movieIndex}`} 
-              level="section"
-              fallback={MediaCardErrorFallback}
-            >
-              <div data-testid="more-ideas-movie-card">
+  // Render more ideas
+  if (jsonData.moreIdeas && jsonData.moreIdeas.length > 0) {
+    const enhancedMoreIdeas = filterSelfReferential(
+      jsonData.moreIdeas.map(enhanceMovieWithTmdb)
+    );
+
+    if (enhancedMoreIdeas.length > 0) {
+      content.push(
+        <div key="json-more-ideas" style={styles.movieSection}>
+          <div style={styles.movieSectionHeader}>
+            <div style={styles.sectionDivider} />
+            <span style={styles.sectionLabel}>MORE IDEAS</span>
+            <div style={styles.sectionDivider} />
+          </div>
+          <div style={styles.movieList}>
+            {enhancedMoreIdeas.map((movieItem, movieIndex) => (
+              <ErrorBoundary 
+                key={`json-more-error-${movieIndex}`} 
+                level="section"
+                fallback={MediaCardErrorFallback}
+              >
                 <MediaCard
                   key={`json-more-${movieIndex}`}
                   title={movieItem.title}
@@ -879,17 +789,17 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className) {
                   initialStreaming={movieItem.streaming}
                   tmdbId={movieItem.tmdb_id}
                 />
-              </div>
-            </ErrorBoundary>
-          ))}
+              </ErrorBoundary>
+            ))}
+          </div>
         </div>
-      </div>
-    );
+      );
+    }
   }
 
   return (
     <div style={styles.container} className={className}>
-      <div style={styles.analysisContent} data-testid="analysis-content">
+      <div style={styles.analysisContent}>
         {content}
       </div>
     </div>

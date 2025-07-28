@@ -211,6 +211,12 @@ async function movieAnalysisHandler(req, res) {
           'Include 3-5 Explore Further topics for deeper analysis'
         );
         const userPrompt = `${title} (${year})`;
+        
+        // DEBUG: Log the actual system prompt being sent
+        console.log(`🔍 PROMPT DEBUG: System prompt for ${title} (${year}):`);
+        console.log(`📝 First 500 chars: ${promptConfig.system[0].text.substring(0, 500)}...`);
+        console.log(`🎯 Model: ${promptConfig.model}`);
+        console.log(`🔧 Temperature: ${promptConfig.temperature}`);
 
         const message = await anthropic.messages.create({
           ...promptConfig,
