@@ -1,0 +1,171 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Movie Analysis JSON Schema",
+  "description": "Validation schema for C3 JSON movie analysis format",
+  "type": "object",
+  "required": [
+    "metadata",
+    "keyElements", 
+    "whyWatch",
+    "content",
+    "featuredMovies",
+    "exploreTopics",
+    "linkedReferences",
+    "moreIdeas",
+    "generationMetadata"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["title", "year", "analysisType", "wordCount", "targetRange", "confidenceScore"],
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "year": { "type": "integer", "minimum": 1888, "maximum": 2030 },
+        "analysisType": { "const": "comprehensive" },
+        "wordCount": { "type": "integer", "minimum": 700, "maximum": 1100 },
+        "targetRange": { "const": "800-1000" },
+        "confidenceScore": { "type": "integer", "minimum": 0, "maximum": 100 }
+      }
+    },
+    "keyElements": {
+      "type": "object",
+      "required": ["director", "writers", "stars", "genre", "releaseYear"],
+      "properties": {
+        "director": { "type": "string", "minLength": 1 },
+        "writers": { 
+          "type": "array", 
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "stars": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "genre": { "type": "string", "minLength": 1 },
+        "releaseYear": { "type": "integer", "minimum": 1888, "maximum": 2030 },
+        "cinematographer": { "type": "string" },
+        "composer": { "type": "string" },
+        "studio": { "type": "string" }
+      }
+    },
+    "whyWatch": {
+      "type": "array",
+      "items": { 
+        "type": "string",
+        "minLength": 20,
+        "maxLength": 100
+      },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "content": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "text"],
+        "properties": {
+          "type": {
+            "enum": [
+              "introduction",
+              "technicalAnalysis",
+              "culturalContext", 
+              "thematicExploration",
+              "legacyAndImpact",
+              "contemporaryRelevance",
+              "conclusion"
+            ]
+          },
+          "text": { 
+            "type": "string", 
+            "minLength": 100,
+            "pattern": ".*\\*\\*[^*]+\\*\\*.*"
+          }
+        }
+      },
+      "minItems": 7,
+      "maxItems": 7
+    },
+    "featuredMovies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "year", "description"],
+        "properties": {
+          "title": { "type": "string", "minLength": 1 },
+          "year": { "type": "integer", "minimum": 1888, "maximum": 2030 },
+          "description": { "type": "string", "minLength": 10 }
+        }
+      },
+      "minItems": 3,
+      "maxItems": 6
+    },
+    "exploreTopics": {
+      "type": "array", 
+      "items": {
+        "type": "object",
+        "required": ["topic", "category", "difficulty"],
+        "properties": {
+          "topic": { "type": "string", "minLength": 5 },
+          "category": { "type": "string", "minLength": 3 },
+          "difficulty": { "enum": ["Beginner", "Intermediate", "Advanced"] }
+        }
+      },
+      "minItems": 5,
+      "maxItems": 5
+    },
+    "linkedReferences": {
+      "type": "array",
+      "items": {
+        "type": "object", 
+        "required": ["type", "title", "year", "originalText", "relationship", "importance"],
+        "properties": {
+          "type": { "enum": ["film", "person"] },
+          "title": { "type": "string", "minLength": 1 },
+          "year": { "type": "integer", "minimum": 0, "maximum": 2030 },
+          "originalText": { "type": "string", "minLength": 1 },
+          "relationship": {
+            "enum": [
+              "influence", 
+              "comparison",
+              "stylistic_similarity",
+              "thematic_connection", 
+              "same_director",
+              "genre_evolution",
+              "direct_influence",
+              "director"
+            ]
+          },
+          "importance": { "type": "integer", "minimum": 1, "maximum": 5 }
+        }
+      },
+      "minItems": 1
+    },
+    "moreIdeas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "year", "connection"],
+        "properties": {
+          "title": { "type": "string", "minLength": 1 },
+          "year": { "type": "integer", "minimum": 1888, "maximum": 2030 },
+          "connection": { "type": "string", "minLength": 10 }
+        }
+      },
+      "minItems": 5,
+      "maxItems": 50
+    },
+    "generationMetadata": {
+      "type": "object",
+      "required": ["timestamp", "processingTime", "version"],
+      "properties": {
+        "timestamp": { 
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"
+        },
+        "processingTime": { "type": "integer", "minimum": 0 },
+        "version": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}
