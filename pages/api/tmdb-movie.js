@@ -4,10 +4,30 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Only GET method allowed' });
   }
 
-  const { id } = req.query;
+  const { id, test } = req.query;
 
   if (!id) {
     return res.status(400).json({ error: 'Movie ID is required' });
+  }
+
+  // TEMPORARY: Test service import if test=1
+  if (test === '1') {
+    try {
+      const { getTMDBMovieDetails } = await import('../../lib/services/tmdb-search');
+      const result = await getTMDBMovieDetails(parseInt(id));
+      return res.status(200).json({
+        test: 'service_import_success',
+        result: result ? { title: result.title, year: result.release_date?.substring(0, 4) } : null,
+        timestamp: new Date().toISOString()
+      });
+    } catch (error) {
+      return res.status(500).json({
+        test: 'service_import_failed',
+        error: error.message,
+        stack: error.stack?.substring(0, 500),
+        timestamp: new Date().toISOString()
+      });
+    }
   }
 
   const TMDB_BEARER_TOKEN = (process.env.TMDB_BEARER_TOKEN || process.env.NEXT_PUBLIC_TMDB_API_KEY)?.replace(/\s+/g, '');
