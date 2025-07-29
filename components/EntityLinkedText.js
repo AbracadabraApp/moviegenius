@@ -20,18 +20,21 @@ export default function EntityLinkedText({
   style = {},
   linkingStyle = 'on',
 }) {
+  // Strip ** markers for clean presentation while keeping stored data unchanged
+  const cleanText = text ? text.replace(/\*\*([^*]+)\*\*/g, '$1') : '';
+
   // If linking is disabled, return plain text
-  if (!text || linkingStyle === 'off' || !linkMovies) {
+  if (!cleanText || linkingStyle === 'off' || !linkMovies) {
     return (
       <span className={className} style={style}>
-        {text}
+        {cleanText}
       </span>
     );
   }
 
-  // For now, just render the text as-is since processing should happen server-side
+  // For now, just render the cleaned text since processing should happen server-side
   // TODO: Integrate with movie-analysis-linker.js for server-side processing
-  return <span className={className} style={style} dangerouslySetInnerHTML={{ __html: text }} />;
+  return <span className={className} style={style}>{cleanText}</span>;
 }
 
 /**
