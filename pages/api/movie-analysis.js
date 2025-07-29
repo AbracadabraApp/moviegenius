@@ -35,24 +35,33 @@ async function movieAnalysisHandler(req, res) {
         .single();
 
       if (movieError || !movie) {
+        console.log(`🎬 Movie ${tmdbId} not in database (error: ${movieError?.message || 'not found'}), attempting TMDB lookup for analysis request`);
+        
         // For TMDB discovery scenarios, try to create the movie entry if it doesn't exist
         try {
-          console.log(`🎬 Movie ${tmdbId} not in database, attempting TMDB lookup for analysis request`);
           const { getTMDBMovieDetails } = await import('../../lib/services/tmdb-search');
           const { createBasicMovieEntry } = await import('../../lib/services/database-search');
           
+          console.log(`🔍 Fetching TMDB details for ID ${tmdbId}...`);
           const tmdbMovie = await getTMDBMovieDetails(parseInt(tmdbId));
+          
           if (tmdbMovie) {
+            console.log(`✅ Found TMDB movie: ${tmdbMovie.title} (${tmdbMovie.year})`);
             const newMovieEntry = await createBasicMovieEntry(tmdbMovie);
             title = newMovieEntry.title;
             year = newMovieEntry.year;
             console.log(`💾 Created movie entry for analysis: ${title} (${year})`);
           } else {
+            console.log(`❌ No TMDB movie found for ID ${tmdbId}`);
             return res.status(404).json({ error: 'Movie not found in TMDB' });
           }
         } catch (tmdbError) {
-          console.log('TMDB lookup failed for analysis request:', tmdbError.message);
-          return res.status(404).json({ error: 'Movie not found' });
+          console.error('TMDB lookup failed for analysis request:', tmdbError);
+          return res.status(404).json({ 
+            error: 'Movie not found in TMDB',
+            details: tmdbError.message,
+            tmdbId: parseInt(tmdbId)
+          });
         }
       } else {
         title = movie.title;
