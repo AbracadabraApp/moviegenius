@@ -39,11 +39,19 @@ async function movieAnalysisHandler(req, res) {
         
         // For TMDB discovery scenarios, try to create the movie entry if it doesn't exist
         try {
+          console.log(`🔍 ENVIRONMENT DEBUG: TMDB_KEY=${!!process.env.NEXT_PUBLIC_TMDB_API_KEY}, SUPABASE_URL=${!!process.env.NEXT_PUBLIC_SUPABASE_URL}, SUPABASE_KEY=${!!process.env.SUPABASE_SERVICE_ROLE_KEY}`);
+          
+          console.log(`🔍 Attempting dynamic import of tmdb-search service...`);
           const { getTMDBMovieDetails } = await import('../../lib/services/tmdb-search');
+          console.log(`✅ Successfully imported getTMDBMovieDetails function`);
+          
+          console.log(`🔍 Attempting dynamic import of database-search service...`);
           const { createBasicMovieEntry } = await import('../../lib/services/database-search');
+          console.log(`✅ Successfully imported createBasicMovieEntry function`);
           
           console.log(`🔍 Fetching TMDB details for ID ${tmdbId}...`);
           const tmdbMovie = await getTMDBMovieDetails(parseInt(tmdbId));
+          console.log(`🔍 TMDB result:`, tmdbMovie ? `${tmdbMovie.title} (${tmdbMovie.release_date})` : 'null');
           
           if (tmdbMovie) {
             console.log(`✅ Found TMDB movie: ${tmdbMovie.title} (${tmdbMovie.year})`);
