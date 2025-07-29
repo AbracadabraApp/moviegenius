@@ -31,13 +31,54 @@ async function movieAnalysisHandler(req, res) {
         process.env.SUPABASE_SERVICE_ROLE_KEY
       );
 
-      const { data: movie, error: movieError } = await supabase
+      // Try to find movie by tmdb_id first
+      let { data: movie, error: movieError } = await supabase
         .from('movies')
-        .select('title, year')
+        .select('title, year, tmdb_id')
         .eq('tmdb_id', parseInt(tmdbId))
         .single();
       
-      console.log(`🔍 API DEBUG: Database lookup result - movie=${!!movie}, error=${movieError?.message || 'none'}`);
+      console.log(`🔍 API DEBUG: TMDB ID lookup result - movie=${!!movie}, error=${movieError?.message || 'none'}`);
+      
+      // If tmdb_id lookup fails, try to find by title from TMDB API first
+      if (movieError || !movie) {
+        console.log(`🔍 API DEBUG: TMDB ID lookup failed, trying to get title from TMDB and search by title/year`);
+        try {
+          // Get movie details from TMDB to find the title/year
+          const response = await fetch(`https://api.themoviedb.org/3/movie/${tmdbId}`, {
+            headers: {
+              'Authorization': `Bearer ${process.env.TMDB_BEARER_TOKEN}`,
+              'Accept': 'application/json',
+            },
+          });
+          
+          if (response.ok) {
+            const tmdbData = await response.json();
+            const movieTitle = tmdbData.title;
+            const movieYear = parseInt(tmdbData.release_date?.substring(0, 4));
+            
+            console.log(`🔍 API DEBUG: Got from TMDB - title: "${movieTitle}", year: ${movieYear}`);
+            
+            // Now try to find by title/year
+            const { data: titleMovie, error: titleError } = await supabase
+              .from('movies')
+              .select('title, year, tmdb_id')
+              .eq('title', movieTitle)
+              .eq('year', movieYear)
+              .single();
+            
+            if (titleMovie && !titleError) {
+              console.log(`✅ API DEBUG: Found movie by title/year - tmdb_id in DB: ${titleMovie.tmdb_id}`);
+              movie = titleMovie;
+              movieError = null;
+            } else {
+              console.log(`❌ API DEBUG: Title/year lookup also failed - ${titleError?.message || 'not found'}`);
+            }
+          }
+        } catch (tmdbLookupError) {
+          console.log(`❌ API DEBUG: TMDB lookup for title/year failed - ${tmdbLookupError.message}`);
+        }
+      }
 
       if (movieError || !movie) {
         console.log(`🎬 Movie ${tmdbId} not in database (error: ${movieError?.message || 'not found'}), attempting TMDB lookup for analysis request`);
