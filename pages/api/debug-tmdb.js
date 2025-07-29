@@ -8,7 +8,9 @@ export default async function handler(req, res) {
     tmdbId: parseInt(tmdbId),
     environment: {
       hasTmdbKey: !!process.env.NEXT_PUBLIC_TMDB_API_KEY,
-      tmdbKeyLength: process.env.NEXT_PUBLIC_TMDB_API_KEY?.length || 0
+      tmdbKeyLength: process.env.NEXT_PUBLIC_TMDB_API_KEY?.length || 0,
+      hasTmdbBearerToken: !!process.env.TMDB_BEARER_TOKEN,
+      tmdbBearerTokenLength: process.env.TMDB_BEARER_TOKEN?.length || 0
     },
     test: {},
     directFetch: {}
