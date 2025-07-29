@@ -142,7 +142,6 @@ export default function MovieAnalysisWithEntities({
     let currentTextSection = '';
     let currentMovieGroup = [];
     let collectingMoreIdeas = false;
-    let awaitingSubheadParagraph = false;
     
     // Helper function to flush pending content with clean boundaries
     const flushPendingContent = () => {
@@ -181,25 +180,10 @@ export default function MovieAnalysisWithEntities({
           });
         }
       } else if (trimmed.startsWith('SUBHEAD:')) {
-        // CLEAN BOUNDARY: Flush text content before SUBHEAD
-        if (currentTextSection.trim()) {
-          alternatingContent.push({ type: 'text', content: currentTextSection.trim() });
-          currentTextSection = '';
-        }
-        // Flush any pending movies
-        if (currentMovieGroup.length > 0) {
-          alternatingContent.push({ type: 'movies', movies: [...currentMovieGroup] });
-          currentMovieGroup = [];
-        }
-        
-        // Start new text section with SUBHEAD and set flag
-        currentTextSection = trimmed.replace('SUBHEAD:', '').trim();
-        awaitingSubheadParagraph = true;
+        // Just add subhead to current text - don't treat as section boundary
+        currentTextSection += (currentTextSection ? '\n' : '') + trimmed.replace('SUBHEAD:', '').trim();
       } else if (trimmed.startsWith('EXPLORE_FURTHER:')) {
-        // Only collect EXPLORE_FURTHER if we're not waiting for a subhead paragraph
-        if (!awaitingSubheadParagraph) {
-          exploreTopics.push(trimmed.replace('EXPLORE_FURTHER:', '').trim());
-        }
+        exploreTopics.push(trimmed.replace('EXPLORE_FURTHER:', '').trim());
       } else if (trimmed.startsWith('MORE_IDEAS:')) {
         collectingMoreIdeas = true;
         // CLEAN BOUNDARY: Flush all pending content before MORE_IDEAS
@@ -242,11 +226,6 @@ export default function MovieAnalysisWithEntities({
         
         // Regular text content - STRICT BOUNDARY: only paragraph text here
         currentTextSection += (currentTextSection ? '\n' : '') + trimmed;
-        
-        // If we were waiting for a subhead paragraph, we just got it
-        if (awaitingSubheadParagraph) {
-          awaitingSubheadParagraph = false;
-        }
       }
     }
     
