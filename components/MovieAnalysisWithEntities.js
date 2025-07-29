@@ -180,14 +180,19 @@ export default function MovieAnalysisWithEntities({
           });
         }
       } else if (trimmed.startsWith('SUBHEAD:')) {
-        // CLEAN BOUNDARY: Flush all pending content before SUBHEAD
-        flushPendingContent();
+        // CLEAN BOUNDARY: Flush text content before SUBHEAD
+        if (currentTextSection.trim()) {
+          alternatingContent.push({ type: 'text', content: currentTextSection.trim() });
+          currentTextSection = '';
+        }
+        // Flush any pending movies
+        if (currentMovieGroup.length > 0) {
+          alternatingContent.push({ type: 'movies', movies: [...currentMovieGroup] });
+          currentMovieGroup = [];
+        }
         
-        // Add SUBHEAD as separate section
-        alternatingContent.push({ 
-          type: 'subhead', 
-          content: trimmed.replace('SUBHEAD:', '').trim() 
-        });
+        // Start new text section with SUBHEAD
+        currentTextSection = trimmed.replace('SUBHEAD:', '').trim();
       } else if (trimmed.startsWith('EXPLORE_FURTHER:')) {
         exploreTopics.push(trimmed.replace('EXPLORE_FURTHER:', '').trim());
       } else if (trimmed.startsWith('MORE_IDEAS:')) {
@@ -301,25 +306,59 @@ export default function MovieAnalysisWithEntities({
     
     alternatingContent.forEach((section, sectionIndex) => {
       if (section.type === 'text') {
-        // Text content
-        content.push(
-          <div key={`text-${sectionIndex}`} style={styles.paragraph}>
-            <ErrorBoundary level="section">
-              <EntityLinkedText
-                text={section.content}
-                linkingIntensity={linkingIntensity}
-                context="movie-analysis"
-                currentEntity={{
-                  type: 'movie',
-                  slug: movie?.slug,
-                  title: movie?.title,
-                }}
-              />
-            </ErrorBoundary>
-          </div>
-        );
+        // Check if content starts with a SUBHEAD (now part of text)
+        const lines = section.content.split('\n');
+        const firstLine = lines[0]?.trim();
+        const restOfContent = lines.slice(1).join('\n').trim();
+        
+        // If first line looks like a subhead, render it as such
+        if (firstLine && firstLine.toUpperCase() === firstLine && firstLine.length < 100) {
+          content.push(
+            <div key={`text-${sectionIndex}`}>
+              {/* Subhead styling */}
+              <div style={styles.subheadSection}>
+                <h3 style={styles.subheadText}>{firstLine}</h3>
+              </div>
+              {/* Regular text content */}
+              {restOfContent && (
+                <div style={styles.paragraph}>
+                  <ErrorBoundary level="section">
+                    <EntityLinkedText
+                      text={restOfContent}
+                      linkingIntensity={linkingIntensity}
+                      context="movie-analysis"
+                      currentEntity={{
+                        type: 'movie',
+                        slug: movie?.slug,
+                        title: movie?.title,
+                      }}
+                    />
+                  </ErrorBoundary>
+                </div>
+              )}
+            </div>
+          );
+        } else {
+          // Regular text content without subhead
+          content.push(
+            <div key={`text-${sectionIndex}`} style={styles.paragraph}>
+              <ErrorBoundary level="section">
+                <EntityLinkedText
+                  text={section.content}
+                  linkingIntensity={linkingIntensity}
+                  context="movie-analysis"
+                  currentEntity={{
+                    type: 'movie',
+                    slug: movie?.slug,
+                    title: movie?.title,
+                  }}
+                />
+              </ErrorBoundary>
+            </div>
+          );
+        }
       } else if (section.type === 'subhead') {
-        // SUBHEAD section with gold all-caps styling
+        // Legacy standalone subhead handling (should not occur with new parsing)
         content.push(
           <div key={`subhead-${sectionIndex}`} style={styles.subheadSection}>
             <h3 style={styles.subheadText}>{section.content}</h3>
