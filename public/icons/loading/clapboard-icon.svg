@@ -1,0 +1,29 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main clapboard body -->
+  <rect x="6" y="16" width="28" height="18" rx="2" fill="#6b7280" stroke="#4b5563" stroke-width="1"/>
+  
+  <!-- Clapboard top (clapper) -->
+  <rect x="6" y="12" width="28" height="6" rx="1" fill="#9ca3af" stroke="#6b7280" stroke-width="1"/>
+  
+  <!-- Black and white stripes on clapper -->
+  <rect x="8" y="13" width="3" height="4" fill="#000"/>
+  <rect x="11" y="13" width="3" height="4" fill="#fff"/>
+  <rect x="14" y="13" width="3" height="4" fill="#000"/>
+  <rect x="17" y="13" width="3" height="4" fill="#fff"/>
+  <rect x="20" y="13" width="3" height="4" fill="#000"/>
+  <rect x="23" y="13" width="3" height="4" fill="#fff"/>
+  <rect x="26" y="13" width="3" height="4" fill="#000"/>
+  <rect x="29" y="13" width="3" height="4" fill="#fff"/>
+  
+  <!-- Information fields -->
+  <rect x="8" y="18" width="8" height="4" rx="0.5" fill="#f9fafb" stroke="#d1d5db" stroke-width="0.5"/>
+  <rect x="18" y="18" width="8" height="4" rx="0.5" fill="#f9fafb" stroke="#d1d5db" stroke-width="0.5"/>
+  <rect x="28" y="18" width="4" height="4" rx="0.5" fill="#f9fafb" stroke="#d1d5db" stroke-width="0.5"/>
+  
+  <rect x="8" y="24" width="10" height="4" rx="0.5" fill="#f9fafb" stroke="#d1d5db" stroke-width="0.5"/>
+  <rect x="20" y="24" width="10" height="4" rx="0.5" fill="#f9fafb" stroke="#d1d5db" stroke-width="0.5"/>
+  
+  <!-- Hinge -->
+  <circle cx="6" cy="15" r="1.5" fill="#4b5563"/>
+  <circle cx="6" cy="15" r="0.5" fill="#374151"/>
+</svg>
