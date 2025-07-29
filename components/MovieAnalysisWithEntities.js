@@ -180,8 +180,12 @@ export default function MovieAnalysisWithEntities({
           });
         }
       } else if (trimmed.startsWith('SUBHEAD:')) {
-        // Just add subhead to current text - don't treat as section boundary
-        currentTextSection += (currentTextSection ? '\n' : '') + trimmed.replace('SUBHEAD:', '').trim();
+        // SUBHEAD should start a new section with the subhead as header
+        flushPendingContent(); // Flush current section first
+        
+        // Start new section with subhead
+        const subheadText = trimmed.replace('SUBHEAD:', '').trim();
+        currentTextSection = `**${subheadText}**\n\n`; // Make subhead bold and add spacing
       } else if (trimmed.startsWith('EXPLORE_FURTHER:')) {
         exploreTopics.push(trimmed.replace('EXPLORE_FURTHER:', '').trim());
       } else if (trimmed.startsWith('MORE_IDEAS:')) {
