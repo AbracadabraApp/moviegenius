@@ -22,6 +22,9 @@ async function movieAnalysisHandler(req, res) {
 
     // Look up movie by tmdbId to get title and year
     try {
+      console.log(`🔍 API DEBUG: Looking up movie with tmdbId=${tmdbId}`);
+      console.log(`🔍 API DEBUG: ENV vars - SUPABASE_URL=${!!process.env.NEXT_PUBLIC_SUPABASE_URL}, SUPABASE_KEY=${!!process.env.SUPABASE_SERVICE_ROLE_KEY}`);
+      
       const { createClient } = await import('@supabase/supabase-js');
       const supabase = createClient(
         process.env.NEXT_PUBLIC_SUPABASE_URL,
@@ -33,6 +36,8 @@ async function movieAnalysisHandler(req, res) {
         .select('title, year')
         .eq('tmdb_id', parseInt(tmdbId))
         .single();
+      
+      console.log(`🔍 API DEBUG: Database lookup result - movie=${!!movie}, error=${movieError?.message || 'none'}`);
 
       if (movieError || !movie) {
         console.log(`🎬 Movie ${tmdbId} not in database (error: ${movieError?.message || 'not found'}), attempting TMDB lookup for analysis request`);
