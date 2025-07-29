@@ -20,6 +20,7 @@ import { Check, Plus } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { FavoritesManager } from './FavoritesManager';
 import { getPerformanceMonitor } from '../lib/performance-monitor';
+import MoviePlaceholder from './MoviePlaceholder';
 // import useStreamingData from '../hooks/useStreamingData'; // Stubbed out
 
 /**
@@ -247,7 +248,13 @@ export default function MediaCard({
     >
       {/* Row 1: Poster + Text Content */}
       <div style={styles.topRow}>
-        <img src={poster} alt={`Poster for ${title}`} style={styles.poster} />
+        {poster === '/images/placeholder-poster.jpg' ? (
+          <div style={styles.poster}>
+            <MoviePlaceholder title={title} year={year} compact={true} />
+          </div>
+        ) : (
+          <img src={poster} alt={`Poster for ${title}`} style={styles.poster} />
+        )}
         <div style={styles.textContainer}>
           <div style={styles.header}>
             <div style={styles.title}>{title}</div>

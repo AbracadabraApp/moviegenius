@@ -168,7 +168,6 @@ export default function MovieHeaderLarge({
         if (data.videoId) {
           setTrailerVideoId(data.videoId);
           setShowTrailer(true); // Show trailer after loading
-        } else {
         }
       } catch (error) {
         console.error('Error fetching trailer:', error);
