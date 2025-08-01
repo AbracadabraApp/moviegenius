@@ -106,3 +106,21 @@ img {
   margin-top: 24px;
   margin-bottom: 12px;
 }
+
+/* Remove drop cap effects from analysis content */
+p::first-letter,
+div::first-letter {
+  float: none !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  font-weight: inherit !important;
+  color: inherit !important;
+  text-transform: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Search input placeholder styling */
+.search-input-placeholder::placeholder {
+  color: #9ca3af; /* Medium grey for placeholder */
+}
