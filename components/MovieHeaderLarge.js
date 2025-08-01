@@ -331,11 +331,6 @@ export default function MovieHeaderLarge({
         )}
       </div>
       
-      {/* Title and year below poster */}
-      <div style={styles.titleContainer}>
-        <h1 style={styles.title}>{title}</h1>
-        <div style={styles.year}>({year})</div>
-      </div>
       
       {/* Streaming availability - only show if we have valid data (not TBD placeholder) 
           TBD = placeholder when TMDB/Claude APIs haven't provided streaming data yet */}
@@ -436,7 +431,7 @@ const styles = {
     display: 'flex',
     justifyContent: 'flex-start',
     marginBottom: '5px',
-    paddingLeft: '20px',
+    paddingLeft: '0px',
     paddingRight: '20px',
     paddingTop: '0px',
     paddingBottom: '5px',
@@ -447,33 +442,6 @@ const styles = {
     objectFit: 'cover', // Intelligent center cropping
     borderRadius: '12px',
     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)', // Add some shadow for depth
-  },
-  titleContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-    textAlign: 'left',
-    marginBottom: '3px',
-    marginTop: '0px',
-    gap: '8px',
-    width: '100%',
-    paddingLeft: '20px',
-  },
-  title: {
-    fontSize: '22px', // Slightly larger than MovieHeader (20px -> 22px)
-    fontWeight: '400', // Reduced from 600 to 400
-    lineHeight: '1.2',
-    fontFamily: 'inherit',
-    color: '#000',
-    margin: 0,
-  },
-  year: {
-    fontSize: '18px', // Slightly larger than MovieHeader (20px -> 18px but more prominent)
-    color: '#666',
-    fontWeight: '300',
-    fontFamily: 'inherit',
-    margin: 0,
   },
   slug: {
     fontSize: '16px',
@@ -489,7 +457,7 @@ const styles = {
     textAlign: 'left',
     marginBottom: '0px',
     marginTop: '-2px',
-    paddingLeft: '20px',
+    paddingLeft: '0px',
   },
   streamingText: {
     fontSize: '14px',

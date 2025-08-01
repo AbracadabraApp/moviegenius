@@ -114,10 +114,10 @@ export default function MovieDetailPage() {
       <PhoneFrame>
         <div style={{ backgroundColor: '#ffffff', minHeight: '100%' }}>
           {/* Simple Search Bar */}
-          <div style={{ padding: '16px 16px 8px 16px' }}>
+          <div style={{ padding: '16px 20px 16px 20px' }}>
             <SimpleSearch
               onResults={() => {}}
-              placeholder="Search movies..."
+              placeholder="Search Movies . . ."
               useUnifiedSearch={true}
             />
           </div>
@@ -147,10 +147,10 @@ export default function MovieDetailPage() {
         <div style={{ backgroundColor: '#ffffff', minHeight: '100%' }}>
           {/* Simple Search Bar */}
           <ErrorBoundary level="section">
-            <div style={{ padding: '16px 16px 8px 16px' }}>
+            <div style={{ padding: '16px 20px 16px 20px' }}>
               <SimpleSearch
                 onResults={handleSearchResults}
-                placeholder="Search movies..."
+                placeholder="Search Movies . . ."
                 useUnifiedSearch={true}
               />
             </div>
@@ -158,14 +158,16 @@ export default function MovieDetailPage() {
 
           {/* Movie Header */}
           <ErrorBoundary level="section">
-            <MovieHeaderLarge
-              title={movie.title}
-              year={year}
-              initialSlug={movie.overview}
-              initialPoster={posterUrl}
-              initialStreaming={streaming?.streaming_data}
-              tmdbId={parseInt(id)}
-            />
+            <div style={{ paddingLeft: '20px' }}>
+              <MovieHeaderLarge
+                title={movie.title}
+                year={year}
+                initialSlug={movie.overview}
+                initialPoster={posterUrl}
+                initialStreaming={streaming?.streaming_data}
+                tmdbId={parseInt(id)}
+              />
+            </div>
           </ErrorBoundary>
 
           {/* Movie Analysis with Entity Linking */}

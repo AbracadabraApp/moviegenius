@@ -180,12 +180,27 @@ export default function MovieAnalysisWithEntities({
           });
         }
       } else if (trimmed.startsWith('SUBHEAD:')) {
-        // SUBHEAD should start a new section with the subhead as header
-        flushPendingContent(); // Flush current section first
+        // SUBHEAD validation: Only process if next non-empty line is paragraph text
+        const currentIndex = lines.indexOf(line);
+        let nextLine = '';
+        for (let i = currentIndex + 1; i < lines.length; i++) {
+          const nextTrimmed = lines[i].trim();
+          if (nextTrimmed) {
+            nextLine = nextTrimmed;
+            break;
+          }
+        }
         
-        // Start new section with subhead
-        const subheadText = trimmed.replace('SUBHEAD:', '').trim();
-        currentTextSection = `**${subheadText}**\n\n`; // Make subhead bold and add spacing
+        // Only process SUBHEAD if followed by paragraph text (not MOVIES:, EXPLORE_FURTHER:, etc.)
+        if (nextLine && !nextLine.includes(':')) {
+          // SUBHEAD should start a new section with the subhead as header
+          flushPendingContent(); // Flush current section first
+          
+          // Start new section with subhead
+          const subheadText = trimmed.replace('SUBHEAD:', '').trim();
+          currentTextSection = `**${subheadText}**\n\n`; // Make subhead bold and add spacing
+        }
+        // If SUBHEAD is not followed by paragraph, ignore it (treat as invalid)
       } else if (trimmed.startsWith('EXPLORE_FURTHER:')) {
         exploreTopics.push(trimmed.replace('EXPLORE_FURTHER:', '').trim());
       } else if (trimmed.startsWith('MORE_IDEAS:')) {
@@ -541,7 +556,7 @@ export default function MovieAnalysisWithEntities({
 
 const styles = {
   container: {
-    padding: '16px',
+    padding: '16px 20px',
     backgroundColor: '#ffffff',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },

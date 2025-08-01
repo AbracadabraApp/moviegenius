@@ -118,6 +118,7 @@ export default function SimpleSearch({
             onChange={e => setQuery(e.target.value)}
             placeholder={isLoading ? 'Searching...' : placeholder}
             style={styles.input}
+            className="search-input-placeholder"
             autoComplete="off"
             disabled={isLoading}
           />
@@ -153,7 +154,7 @@ const styles = {
     background: 'linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)',
     border: '1px solid #e2e8f0',
     borderRadius: '12px',
-    padding: '8px 16px',
+    padding: '10px 16px',
     gap: '8px',
     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.1)',
     transition: 'all 0.2s ease',
@@ -166,10 +167,10 @@ const styles = {
     flex: 1,
     border: 'none',
     outline: 'none',
-    fontSize: '14px',
-    color: '#374151',
+    fontSize: '16px',
+    color: '#000000',
     backgroundColor: 'transparent',
-    fontFamily: 'inherit',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   clearButton: {
     background: 'none',
