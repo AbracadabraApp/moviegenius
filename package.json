@@ -93,8 +93,9 @@
     "test:validation": "jest __tests__/validation/system-validation.test.js",
     "test:quick": "node scripts/quick-validation.js",
     "test:production-ready": "npm run test:quick",
-    "batch:test": "node scripts/batch-processor.js --test --individual-api",
-    "batch:production": "node scripts/batch-processor.js --production --batch-api --count 1000",
+    "migrate:archive": "node scripts/archive-and-migrate.js",
+    "batch:test": "node scripts/batch-processor.js --test --batch-api --count 1000",
+    "batch:production": "node scripts/batch-processor.js --production --batch-api --count 17000",
     "batch:resume": "node scripts/batch-processor.js --resume --batch-api"
   },
   "dependencies": {

@@ -30,13 +30,14 @@ export default async function handler(req, res) {
     }
   }
 
-  const TMDB_BEARER_TOKEN = (process.env.TMDB_BEARER_TOKEN || process.env.NEXT_PUBLIC_TMDB_API_KEY)?.replace(/\s+/g, '');
+  // Use consistent API key approach (same as tmdb-search.js)
+  const TMDB_API_KEY = process.env.TMDB_API_KEY || process.env.NEXT_PUBLIC_TMDB_API_KEY;
 
-  if (!TMDB_BEARER_TOKEN) {
+  if (!TMDB_API_KEY) {
     return res.status(500).json({
-      error: 'TMDB Bearer token not configured',
+      error: 'TMDB API key not configured',
       env_check: {
-        TMDB_BEARER_TOKEN: !!process.env.TMDB_BEARER_TOKEN,
+        TMDB_API_KEY: !!process.env.TMDB_API_KEY,
         NEXT_PUBLIC_TMDB_API_KEY: !!process.env.NEXT_PUBLIC_TMDB_API_KEY,
       },
     });
@@ -46,10 +47,9 @@ export default async function handler(req, res) {
     console.log(`🎬 Fetching movie details for ID: ${id}`);
 
     const response = await fetch(
-      `https://api.themoviedb.org/3/movie/${id}?language=en-US`,
+      `https://api.themoviedb.org/3/movie/${id}?api_key=${TMDB_API_KEY}&language=en-US`,
       {
         headers: {
-          'Authorization': `Bearer ${TMDB_BEARER_TOKEN}`,
           'Accept': 'application/json',
         },
       }

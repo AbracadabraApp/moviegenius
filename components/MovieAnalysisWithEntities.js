@@ -61,6 +61,17 @@ export default function MovieAnalysisWithEntities({
 
       if (analysisData) {
         // New JSON format processing
+        console.log('🔍 JSON Analysis Debug:', {
+          hasContent: !!analysisData.content,
+          contentLength: analysisData.content?.length || 0,
+          hasFeaturedMovies: !!analysisData.featuredMovies,
+          featuredMoviesLength: analysisData.featuredMovies?.length || 0,
+          hasExploreTopics: !!analysisData.exploreTopics,
+          exploreTopicsLength: analysisData.exploreTopics?.length || 0,
+          hasMoreIdeas: !!analysisData.moreIdeas,
+          moreIdeasLength: analysisData.moreIdeas?.length || 0
+        });
+        
         setProcessedAnalysis({
           jsonData: analysisData,
           isJsonFormat: true,
