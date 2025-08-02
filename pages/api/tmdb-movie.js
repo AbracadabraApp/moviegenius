@@ -30,13 +30,30 @@ export default async function handler(req, res) {
     }
   }
 
-  // Use consistent API key approach (same as tmdb-search.js)
-  const TMDB_API_KEY = process.env.TMDB_API_KEY || process.env.NEXT_PUBLIC_TMDB_API_KEY;
-
-  if (!TMDB_API_KEY) {
+  // Use dual authentication approach (Bearer token + API key fallback)
+  const bearerToken = process.env.TMDB_BEARER_TOKEN;
+  const apiKey = process.env.TMDB_API_KEY || process.env.NEXT_PUBLIC_TMDB_API_KEY;
+  
+  let url, headers;
+  
+  if (bearerToken && bearerToken.split('.').length === 3) {
+    // Use Bearer token method (production preference)
+    url = `https://api.themoviedb.org/3/movie/${id}?language=en-US`;
+    headers = {
+      'Authorization': `Bearer ${bearerToken}`,
+      'Accept': 'application/json',
+    };
+  } else if (apiKey) {
+    // Use API key method (development fallback)
+    url = `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}&language=en-US`;
+    headers = {
+      'Accept': 'application/json',
+    };
+  } else {
     return res.status(500).json({
-      error: 'TMDB API key not configured',
+      error: 'TMDB authentication not configured',
       env_check: {
+        TMDB_BEARER_TOKEN: !!process.env.TMDB_BEARER_TOKEN,
         TMDB_API_KEY: !!process.env.TMDB_API_KEY,
         NEXT_PUBLIC_TMDB_API_KEY: !!process.env.NEXT_PUBLIC_TMDB_API_KEY,
       },
@@ -46,14 +63,7 @@ export default async function handler(req, res) {
   try {
     console.log(`🎬 Fetching movie details for ID: ${id}`);
 
-    const response = await fetch(
-      `https://api.themoviedb.org/3/movie/${id}?api_key=${TMDB_API_KEY}&language=en-US`,
-      {
-        headers: {
-          'Accept': 'application/json',
-        },
-      }
-    );
+    const response = await fetch(url, { headers });
 
     if (!response.ok) {
       // Try to get error details from response
