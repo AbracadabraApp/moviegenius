@@ -122,7 +122,7 @@ export default function EnhancedHeroPlaceholder({
       <div style={styles.placeholderMain}>
         <div style={styles.iconSection}>
           <div style={styles.mainIcon}>{guidance.icon}</div>
-          <Camera size={24} style={styles.cameraIcon} />
+          <Camera size={18} style={styles.cameraIcon} />
         </div>
         
         <div style={styles.contentSection}>

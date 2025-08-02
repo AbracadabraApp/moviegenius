@@ -16,49 +16,39 @@ const supabase = createClient(
 );
 
 async function testDatabase() {
-  console.log('🔍 Testing current database state...');
+  console.log('🔍 Clearing existing analysis for Double Indemnity (996)...');
 
-  // Test 1: Check if UUID movies from backup exist in current database
-  const backupMovieIds = [
-    '1516db96-f862-4f8f-a57e-13e5c13cf297',
-    '4c926c1c-1599-47fd-a91b-0f8cd60f1125', 
-    'faf6b1ce-6992-4bfc-963a-b4b6ef7f9551'
-  ];
+  // Get movie info for Sunset Boulevard
+  const { data: movie, error: movieError } = await supabase
+    .from('movies')
+    .select('id, title, year, tmdb_id')
+    .eq('tmdb_id', 599)
+    .single();
 
-  console.log('\n📊 Checking if backup movies exist in current database:');
-  for (const movieId of backupMovieIds) {
-    const { data, error } = await supabase
-      .from('movies')
-      .select('id, title, year, tmdb_id')
-      .eq('id', movieId)
-      .single();
-
-    if (data) {
-      console.log(`✅ Found: ${data.title} (${data.year}) - TMDB: ${data.tmdb_id}`);
-    } else {
-      console.log(`❌ Not found: ${movieId}`);
-    }
+  if (!movie) {
+    console.log('❌ Double Indemnity (996) not found in movies table');
+    return;
   }
 
-  // Test 2: Check current analysis count
-  const { count: currentAnalyses } = await supabase
+  console.log(`✅ Movie found: "${movie.title}" (${movie.year}) - Internal ID: ${movie.id}`);
+  
+  // Delete existing analyses for clean testing
+  const { data: deletedAnalyses, error: deleteError } = await supabase
     .from('movie_analyses')
-    .select('*', { count: 'exact', head: true })
-    .eq('analysis_type', 'page_analysis');
+    .delete()
+    .eq('movie_id', movie.id)
+    .select('id, analysis_type');
+  
+  if (deleteError) {
+    console.error('❌ Error deleting analyses:', deleteError);
+  } else {
+    console.log(`✅ Deleted ${deletedAnalyses?.length || 0} existing analyses`);
+    deletedAnalyses?.forEach((analysis, i) => {
+      console.log(`   ${i+1}. Deleted ${analysis.analysis_type} (${analysis.id})`);
+    });
+  }
 
-  console.log(`\n📊 Current analyses in database: ${currentAnalyses}`);
-
-  // Test 3: Check movie schema
-  const { data: sampleMovies } = await supabase
-    .from('movies')
-    .select('id, title, year, tmdb_id, created_at')
-    .order('created_at', { ascending: false })
-    .limit(5);
-
-  console.log('\n📋 Sample current movies:');
-  sampleMovies?.forEach((movie, i) => {
-    console.log(`${i+1}. ${movie.title} (${movie.year}) - ID: ${movie.id} - TMDB: ${movie.tmdb_id}`);
-  });
+  console.log('\n🧪 Ready for fresh JSON analysis test!');
 }
 
 testDatabase().catch(console.error);

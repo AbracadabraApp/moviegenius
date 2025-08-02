@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The L Word Mississippi: Hate the Sin (2014) - Your Actual Movie Page</title>
+    <style>
+        /* Your actual MovieGenius styles - extracted from components */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
+        
+        /* Exact PhoneFrame dimensions from your component */
+        .page-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f3f4f6;
+            min-height: 100vh;
+            padding: 20px;
+            width: 100vw;
+            max-width: 100vw;
+            overflow-x: hidden;
+        }
+        
+        .phone-frame {
+            width: 375px;
+            height: 667px;
+            background-color: #000000;
+            border-radius: 24px;
+            border: 4px solid #9ca3af;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .screen {
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        
+        .content {
+            flex: 1;
+            overflow-y: scroll;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            padding-bottom: 120px;
+            background: #ffffff;
+        }
+        
+        .content::-webkit-scrollbar {
+            display: none;
+        }
+        
+        /* Simple Search Bar - actual component styling */
+        .search-container {
+            padding: 16px 16px 8px 16px;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: inherit;
+        }
+        
+        /* MovieHeaderLarge - actual component styling */
+        .movie-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px 16px 0px 16px;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: inherit;
+            position: relative;
+        }
+        
+        .action-bar-container {
+            position: absolute;
+            right: 16px;
+            bottom: 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 13px 4.5px;
+            background-color: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(12px);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        
+        .action-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 6px 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+        }
+        
+        .icon-with-text {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-direction: column;
+        }
+        
+        .icon-label {
+            font-size: 11px;
+            line-height: 1;
+            text-align: center;
+            color: #1f2937;
+            font-weight: 400;
+        }
+        
+        .poster-container {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 0px;
+            padding-bottom: 5px;
+        }
+        
+        .large-poster {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .title-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: left;
+            margin-bottom: 3px;
+            margin-top: 0px;
+            gap: 8px;
+            width: 100%;
+            padding-left: 20px;
+        }
+        
+        .title {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 1.2;
+            color: #000;
+            margin: 0;
+        }
+        
+        .year {
+            font-size: 18px;
+            color: #666;
+            font-weight: 300;
+            margin: 0;
+        }
+        
+        .streaming-info {
+            width: 100%;
+            text-align: left;
+            margin-bottom: 0px;
+            margin-top: -2px;
+            padding-left: 20px;
+        }
+        
+        .streaming-text {
+            font-size: 14px;
+            color: #6b7280;
+            font-weight: 300;
+            word-wrap: break-word;
+            line-height: 1.3;
+        }
+        
+        /* MovieAnalysisWithEntities - actual component styling */
+        .analysis-container {
+            padding: 16px;
+            background-color: #ffffff;
+            font-family: inherit;
+        }
+        
+        .analysis-content {
+            margin-bottom: 24px;
+        }
+        
+        .paragraph {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #374151;
+            margin-bottom: 16px;
+        }
+        
+        .subhead-section {
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        
+        .subhead-text {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #d4af37;
+            margin: 0;
+            text-align: left;
+        }
+        
+        .movie-section {
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+        
+        .movie-section-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 12px;
+        }
+        
+        .section-divider {
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #d4af37, transparent);
+        }
+        
+        .section-label {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #d4af37;
+        }
+        
+        .movie-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        /* MediaCard - your actual styling */
+        .media-card {
+            display: flex;
+            gap: 12px;
+            padding: 12px;
+            background: #f9fafb;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .card-poster {
+            width: 60px;
+            height: 90px;
+            background: #ddd;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+        
+        .card-content {
+            flex: 1;
+        }
+        
+        .card-title {
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 4px;
+            color: #374151;
+        }
+        
+        .card-year {
+            color: #6b7280;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+        
+        .card-description {
+            font-size: 12px;
+            color: #6b7280;
+            line-height: 1.4;
+        }
+        
+        .explore-section {
+            margin-top: 32px;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 16px;
+        }
+        
+        .explore-card {
+            padding: 16px;
+            background: #f0f9ff;
+            border-radius: 8px;
+            border: 1px solid #bae6fd;
+        }
+        
+        .explore-text {
+            font-size: 14px;
+            color: #0c4a6e;
+            font-weight: 500;
+        }
+        
+        /* DiscoveryFooter - your actual styling */
+        .discovery-footer {
+            background: #f8f9fa;
+            padding: 40px 20px;
+            margin-top: 40px;
+            border-top: 1px solid #e5e7eb;
+            text-align: center;
+        }
+        
+        .footer-title {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            color: #374151;
+        }
+        
+        .footer-text {
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="phone-frame">
+            <div class="screen">
+                <div class="content">
+        <!-- Simple Search Bar -->
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search movies...">
+        </div>
+
+        <!-- MovieHeaderLarge Component -->
+        <div class="movie-header">
+            <!-- Action Bar -->
+            <div class="action-bar-container">
+                <button class="action-button">
+                    <div class="icon-with-text">
+                        <span>+</span>
+                        <span class="icon-label">Add</span>
+                    </div>
+                </button>
+                <button class="action-button">
+                    <div class="icon-with-text">
+                        <span>✓</span>
+                        <span class="icon-label">Seen</span>
+                    </div>
+                </button>
+                <button class="action-button">
+                    <div class="icon-with-text">
+                        <span>▶</span>
+                        <span class="icon-label">Play</span>
+                    </div>
+                </button>
+            </div>
+            
+            <!-- Large poster at top, left-aligned -->
+            <div class="poster-container">
+                <img class="large-poster" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDMwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjZGRkIi8+Cjx0ZXh0IHg9IjE1MCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNjY2IiBmb250LXNpemU9IjE2cHgiPk1vdmllIFBvc3RlcjwvdGV4dD4KPC9zdmc+" alt="Movie Poster">
+            </div>
+            
+            <!-- Title and year below poster -->
+            <div class="title-container">
+                <h1 class="title">The L Word Mississippi: Hate the Sin</h1>
+                <div class="year">(2014)</div>
+            </div>
+            
+            <!-- Streaming availability -->
+            <div class="streaming-info">
+                <span class="streaming-text">Streaming on Netflix, Hulu</span>
+            </div>
+        </div>
+
+        <!-- MovieAnalysisWithEntities Component -->
+        <div class="analysis-container">
+            <div class="analysis-content">
+                
+                <!-- First paragraph -->
+                <div class="paragraph">
+                    This groundbreaking documentary offers an unflinching examination of LGBTQ+ life in one of America's most conservative states. Director Lauren Wolkstein takes viewers deep into Mississippi's complex social fabric, where religious tradition and personal identity often collide in profound and sometimes painful ways.
+                </div>
+
+                <!-- SUBHEAD properly placed BEFORE its paragraph -->
+                <div class="subhead-section">
+                    <h3 class="subhead-text">CULTURAL CONTEXT AND RELIGIOUS TENSIONS</h3>
+                </div>
+                <div class="paragraph">
+                    The film expertly navigates the challenging terrain between deeply held religious beliefs and individual sexual identity. Through intimate interviews with local residents, clergy members, and LGBTQ+ advocates, it reveals how faith communities grapple with inclusion and acceptance while maintaining traditional values.
+                </div>
+
+                <!-- Featured Films section -->
+                <div class="movie-section">
+                    <div class="movie-section-header">
+                        <div class="section-divider"></div>
+                        <span class="section-label">FEATURED FILMS</span>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="movie-list">
+                        <div class="media-card">
+                            <div class="card-poster"></div>
+                            <div class="card-content">
+                                <div class="card-title">Milk</div>
+                                <div class="card-year">2008</div>
+                                <div class="card-description">Harvey Milk's political activism and tragic assassination in San Francisco</div>
+                            </div>
+                        </div>
+                        <div class="media-card">
+                            <div class="card-poster"></div>
+                            <div class="card-content">
+                                <div class="card-title">Moonlight</div>
+                                <div class="card-year">2016</div>
+                                <div class="card-description">Coming-of-age story exploring identity in conservative community</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Another SUBHEAD properly placed -->
+                <div class="subhead-section">
+                    <h3 class="subhead-text">PERSONAL STORIES AND COMMUNITY IMPACT</h3>
+                </div>
+                <div class="paragraph">
+                    What makes this documentary particularly powerful is its focus on personal narratives rather than political rhetoric. Each subject brings a unique perspective to the broader conversation about LGBTQ+ rights in the South, creating a nuanced portrait that avoids easy categorization.
+                </div>
+
+                <!-- Explore Further section -->
+                <div class="explore-section">
+                    <div class="section-header">
+                        <div class="section-divider"></div>
+                        <span class="section-label">EXPLORE FURTHER</span>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="explore-card">
+                        <div class="explore-text">LGBTQ+ Rights in the American South</div>
+                    </div>
+                </div>
+
+                <div class="paragraph">
+                    The documentary's cinematography deserves special mention, using natural lighting and handheld camera work to create an intimate, almost confessional atmosphere. This visual approach reinforces the personal nature of the stories being told.
+                </div>
+
+                <!-- More Ideas section -->
+                <div class="movie-section">
+                    <div class="movie-section-header">
+                        <div class="section-divider"></div>
+                        <span class="section-label">MORE IDEAS</span>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="movie-list">
+                        <div class="media-card">
+                            <div class="card-poster"></div>
+                            <div class="card-content">
+                                <div class="card-title">Paris Is Burning</div>
+                                <div class="card-year">1990</div>
+                                <div class="card-description">Documentary exploring NYC's drag ball culture and community</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Final Explore Further -->
+                <div class="explore-section">
+                    <div class="section-header">
+                        <div class="section-divider"></div>
+                        <span class="section-label">EXPLORE FURTHER</span>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="explore-card">
+                        <div class="explore-text">Documentary Filmmaking and Social Change</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DiscoveryFooter Component -->
+        <div class="discovery-footer">
+            <h3 class="footer-title">Continue Your Cinematic Journey</h3>
+            <p class="footer-text">
+                Discover more films that challenge perspectives, explore identity, and illuminate the human experience through the art of cinema.
+            </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

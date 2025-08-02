@@ -94,11 +94,14 @@ async function movieAnalysisHandler(req, res) {
           console.log(`🔍 TMDB result:`, tmdbMovie ? `${tmdbMovie.title} (${tmdbMovie.release_date})` : 'null');
           
           if (tmdbMovie) {
+            // Extract year from release_date for database entry
             const movieYear = tmdbMovie.release_date ? parseInt(tmdbMovie.release_date.substring(0, 4)) : null;
             console.log(`✅ Found TMDB movie: ${tmdbMovie.title} (${movieYear})`);
+            
+            // Create database entry with extracted year
             const newMovieEntry = await createBasicMovieEntry(tmdbMovie);
             title = newMovieEntry.title;
-            year = newMovieEntry.year;
+            year = movieYear; // Use extracted year, not release_date
             console.log(`💾 Created movie entry for analysis: ${title} (${year})`);
           } else {
             console.log(`❌ No TMDB movie found for ID ${tmdbId}`);

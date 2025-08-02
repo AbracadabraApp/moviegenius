@@ -139,7 +139,6 @@ async function movieAnalysisDirectHandler(req, res) {
     const claudeDuration = (claudeEndTime - claudeStartTime) / 1000;
     
     console.log(`✅ DIRECT: Claude analysis complete (${claudeDuration.toFixed(2)}s)`);
-    console.log(`📊 DIRECT: Token usage - Input: ${message.usage.input_tokens} | Output: ${message.usage.output_tokens}`);
     
     // Log detailed cache information if available
     if (message.usage.cache_creation_input_tokens || message.usage.cache_read_input_tokens) {
@@ -214,12 +213,17 @@ async function movieAnalysisDirectHandler(req, res) {
           direct_api_generated: true, // Flag to distinguish from cached API
         };
 
-        const { error: saveError } = await supabase.from('movie_analyses').insert({
-          movie_id: movie_id,
-          analysis_type: 'page_analysis',
-          claude_response: analysisData,
-          query_text: `Direct API analysis for ${title} (${year})`,
-        });
+        // Use UPSERT to handle duplicate key constraint
+        const { error: saveError } = await supabase
+          .from('movie_analyses')
+          .upsert({
+            movie_id: movie_id,
+            analysis_type: 'page_analysis',
+            claude_response: analysisData,
+            query_text: `Direct API analysis for ${title} (${year})`,
+          }, {
+            onConflict: 'movie_id,analysis_type'
+          });
 
         if (saveError) {
           console.error(`❌ DIRECT: Failed to save analysis: ${saveError.message}`);
