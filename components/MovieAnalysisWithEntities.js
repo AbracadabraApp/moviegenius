@@ -271,7 +271,7 @@ export default function MovieAnalysisWithEntities({
   if (!processedAnalysis) {
     return (
       <div className={className}>
-        <p className="text-gray-500">No analysis content available.</p>
+        <p className="text-gray-500">***</p>
       </div>
     );
   }
