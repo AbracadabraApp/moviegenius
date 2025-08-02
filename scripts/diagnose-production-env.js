@@ -7,7 +7,8 @@
 // Use Node.js built-in fetch (available in Node 18+)
 
 const PRODUCTION_URL = 'https://moviegenius.ai';
-const TEST_MOVIE_ID = 257; // Oliver Twist - we know this exists in TMDB
+const { getConsistentTestId } = require('../lib/test-config.js');
+const TEST_MOVIE_ID = getConsistentTestId(); // Use diverse test ID instead of hardcoded Oliver Twist
 
 async function testEnvironmentConditions() {
   console.log('🔍 Production Environment Diagnostics');

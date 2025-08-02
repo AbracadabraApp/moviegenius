@@ -1,10 +1,8 @@
 // Temporary debug endpoint to diagnose TMDB issue
-export default async function handler(req, res) {
-  const { id } = req.query;
+import { getConsistentTestId } from '../../lib/test-config.js';
 
-  if (!id) {
-    return res.status(400).json({ error: 'ID required' });
-  }
+export default async function handler(req, res) {
+  const { id = getConsistentTestId() } = req.query;
 
   try {
     console.log(`🔍 Debug: Importing getTMDBMovieDetails...`);

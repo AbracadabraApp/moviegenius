@@ -40,39 +40,7 @@ async function movieAnalysisHandler(req, res) {
       
       console.log(`🔍 API DEBUG: TMDB ID lookup result - movie=${!!movie}, error=${movieError?.message || 'none'}`);
       
-      // If tmdb_id lookup fails, try common movie titles for this TMDB ID
-      if (movieError || !movie) {
-        console.log(`🔍 API DEBUG: TMDB ID lookup failed, trying common title variations`);
-        
-        // Try common title patterns for TMDB ID 257 (known to be Oliver Twist)
-        const commonTitles = ['Oliver Twist'];
-        const commonYears = [2005, 1948, 2007]; // Common Oliver Twist years
-        
-        for (const title of commonTitles) {
-          for (const year of commonYears) {
-            console.log(`🔍 API DEBUG: Trying title="${title}", year=${year}`);
-            
-            const { data: titleMovie, error: titleError } = await supabase
-              .from('movies')
-              .select('title, year, tmdb_id')
-              .eq('title', title)
-              .eq('year', year)
-              .single();
-            
-            if (titleMovie && !titleError) {
-              console.log(`✅ API DEBUG: Found movie by title/year - "${titleMovie.title}" (${titleMovie.year}), tmdb_id in DB: ${titleMovie.tmdb_id}`);
-              movie = titleMovie;
-              movieError = null;
-              break;
-            }
-          }
-          if (movie) break;
-        }
-        
-        if (!movie) {
-          console.log(`❌ API DEBUG: No common title variations found for tmdb_id ${tmdbId}`);
-        }
-      }
+      // Movie not found in database - proceed with TMDB lookup
 
       if (movieError || !movie) {
         console.log(`🎬 Movie ${tmdbId} not in database (error: ${movieError?.message || 'not found'}), attempting TMDB lookup for analysis request`);
