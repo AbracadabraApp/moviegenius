@@ -14,12 +14,10 @@ import { useRouter } from 'next/router';
 import PhoneFrame from '../../components/PhoneFrame';
 import SimpleSearch from '../../components/SimpleSearch';
 import MediaCard from '../../components/MediaCard';
-import BackButton from '../../components/BackButton';
-import EntityLinkedText from '../../components/EntityLinkedText';
 import StreamingAnalysisDisplay from '../../components/StreamingAnalysisDisplay';
 import { filterCurrentMovie } from '../../lib/filterCurrentMovie';
 
-export default function ExplorePage({ pageData, error, topic, context }) {
+export default function ExplorePage({ pageData, error, topic, context, movieTitle, tmdbId }) {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(!pageData);
 
@@ -35,9 +33,11 @@ export default function ExplorePage({ pageData, error, topic, context }) {
     return (
       <PhoneFrame>
         <div style={styles.container}>
-          <div style={styles.inputArea}>
-            <BackButton variant="icon" context="explore" position="top-left" />
+          <div style={styles.searchSection}>
             <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
+          </div>
+          <div style={styles.titleSection}>
+            <h1 style={styles.title}>Explore Topic</h1>
           </div>
           <div style={styles.errorContainer}>
             <div style={styles.errorText}>Unable to load this explore topic</div>
@@ -55,9 +55,11 @@ export default function ExplorePage({ pageData, error, topic, context }) {
     return (
       <PhoneFrame>
         <div style={styles.container}>
-          <div style={styles.inputArea}>
-            <BackButton variant="icon" context="explore" position="top-left" />
+          <div style={styles.searchSection}>
             <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
+          </div>
+          <div style={styles.titleSection}>
+            <h1 style={styles.title}>Explore Topic</h1>
           </div>
           <div style={styles.loadingContainer}>
             <div style={styles.loadingRow}>
@@ -77,24 +79,46 @@ export default function ExplorePage({ pageData, error, topic, context }) {
   return (
     <PhoneFrame>
       <div style={styles.container}>
-        {/* Input Area */}
-        <div style={styles.inputArea}>
-          <BackButton variant="icon" context="explore" position="top-left" />
+        {/* Search bar */}
+        <div style={styles.searchSection}>
           <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
         </div>
 
-        {/* Page Header */}
-        <div style={styles.headerSection}>
-          <h1 style={styles.pageTitle}>{pageData.title}</h1>
-          {context && <p style={styles.contextText}>Exploring in relation to {context}</p>}
+        {/* Back button and movie link */}
+        {(movieTitle || context) && (
+          <div style={styles.backSection}>
+            <button 
+              onClick={() => {
+                if (tmdbId) {
+                  router.push(`/movie/${tmdbId}`);
+                } else {
+                  router.back();
+                }
+              }}
+              style={styles.backButton}
+              className="back-button"
+            >
+              ← <span className="movie-title">{movieTitle || context}</span>
+            </button>
+          </div>
+        )}
+        
+        {/* Page title */}
+        <div style={styles.titleSection}>
+          <h1 style={styles.title}>{pageData.title}</h1>
         </div>
 
         {/* Main Content - Streaming Typewriter */}
         <div style={styles.contentSection}>
+          {/* Debug info */}
+          <div style={{padding: '10px', background: '#f0f0f0', margin: '10px 0', fontSize: '12px'}}>
+            Debug: topic="{topic}", context="{context}", movieTitle="{movieTitle}", 
+            movieId="explore-{topic.replace(/\s+/g, '-')}"
+          </div>
           <StreamingAnalysisDisplay
             movieId={`explore-${topic.replace(/\s+/g, '-')}`}
             movieTitle={pageData.title}
-            movieYear={context}
+            movieYear={movieTitle || context}
             onComplete={() => console.log('Explore content streaming complete')}
             onError={(error) => console.error('Explore streaming error:', error)}
             settings={{
@@ -307,7 +331,63 @@ export async function getStaticProps({ params }) {
   // Parse slug to extract topic and context
   const slugParts = slug || [];
   const topic = slugParts[0] ? slugParts[0].replace(/-/g, ' ') : 'Film Topic';
-  const context = slugParts[1] ? slugParts[1].replace(/-/g, ' ') : '';
+  const contextPart = slugParts[1] || '';
+  
+  let context = '';
+  let movieTitle = '';
+  let tmdbId = null;
+  
+  // Check if context is in Movie/ID format
+  if (contextPart.toLowerCase().startsWith('movie/')) {
+    const movieId = contextPart.split('/')[1];
+    if (movieId && /^\d+$/.test(movieId)) {
+      tmdbId = parseInt(movieId);
+      
+      try {
+        // Look up movie title from database
+        const { data: movie } = await supabase
+          .from('movies')
+          .select('title, year')
+          .eq('tmdb_id', tmdbId)
+          .single();
+          
+        if (movie) {
+          movieTitle = movie.title;
+          context = movie.title;
+        } else {
+          context = `Movie ${movieId}`;
+        }
+      } catch (error) {
+        console.warn('Could not look up movie for TMDB ID:', movieId, error);
+        context = `Movie ${movieId}`;
+      }
+    }
+  } else if (contextPart) {
+    // Regular context (movie title as slug) - try to look up in database
+    const titleFromSlug = contextPart.replace(/-/g, ' ');
+    
+    try {
+      // Try to find movie by title (case insensitive)
+      const { data: movie } = await supabase
+        .from('movies')
+        .select('title, year, tmdb_id')
+        .ilike('title', titleFromSlug)
+        .single();
+        
+      if (movie) {
+        movieTitle = movie.title;
+        context = movie.title;
+        tmdbId = movie.tmdb_id;
+      } else {
+        // Fallback to title case of slug
+        context = titleFromSlug.replace(/\b\w/g, l => l.toUpperCase());
+      }
+    } catch (error) {
+      console.warn('Could not look up movie by title:', titleFromSlug, error);
+      // Fallback to title case of slug
+      context = titleFromSlug.replace(/\b\w/g, l => l.toUpperCase());
+    }
+  }
 
   try {
     // Generate content directly without HTTP calls
@@ -318,6 +398,8 @@ export async function getStaticProps({ params }) {
         pageData,
         topic,
         context,
+        movieTitle,
+        tmdbId,
         error: null,
       },
       revalidate: 86400, // Revalidate once per day
@@ -333,6 +415,8 @@ export async function getStaticProps({ params }) {
         pageData: fallbackData,
         topic,
         context,
+        movieTitle,
+        tmdbId,
         error: null, // Don't show error to users, use fallback
       },
       revalidate: 300, // Retry sooner
@@ -374,32 +458,48 @@ const styles = {
     fontFamily:
       '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
-  inputArea: {
-    padding: '5px',
+  searchSection: {
+    padding: '20px 20px 16px',
     backgroundColor: '#ffffff',
-    position: 'relative',
   },
-  headerSection: {
-    padding: '24px 36px 16px',
+  backSection: {
+    padding: '12px 20px 0',
+    backgroundColor: '#ffffff',
+    wordWrap: 'break-word',
+    overflowWrap: 'break-word',
+    hyphens: 'auto',
+  },
+  titleSection: {
+    padding: '8px 20px 16px',
     backgroundColor: '#ffffff',
     borderBottom: '1px solid #f3f4f6',
   },
-  pageTitle: {
-    fontSize: '24px',
-    fontWeight: '700',
+  title: {
+    fontSize: '18px',
+    fontWeight: '600',
     color: '#111827',
     margin: 0,
     lineHeight: '1.2',
   },
-  contextText: {
-    fontSize: '14px',
-    color: '#6b7280',
-    margin: '8px 0 0 0',
-    fontStyle: 'italic',
+  backButton: {
+    background: 'none',
+    border: 'none',
+    fontSize: '16px',
+    color: '#374151',
+    cursor: 'pointer',
+    padding: '4px 0',
+    fontWeight: '500',
+    textDecoration: 'none',
+    textAlign: 'left',
+    width: '100%',
+    wordWrap: 'break-word',
+    overflowWrap: 'break-word',
+    whiteSpace: 'normal',
+    lineHeight: '1.4',
   },
   contentSection: {
     flex: 1,
-    padding: '0 36px 24px',
+    padding: '0 20px 24px',
   },
   sectionContainer: {
     marginBottom: '24px',

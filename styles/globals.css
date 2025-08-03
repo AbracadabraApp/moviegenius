@@ -124,3 +124,16 @@ div::first-letter {
 .search-input-placeholder::placeholder {
   color: #9ca3af; /* Medium grey for placeholder */
 }
+
+/* Back button styling */
+.back-button {
+  transition: opacity 0.2s ease;
+}
+
+.back-button:hover {
+  opacity: 0.8;
+}
+
+.back-button:active {
+  opacity: 0.6;
+}

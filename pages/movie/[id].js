@@ -121,9 +121,6 @@ export default function MovieDetailPage() {
               useUnifiedSearch={true}
             />
           </div>
-          <div style={{ padding: '16px', textAlign: 'center', color: '#666' }}>
-            {router.isReady && id ? 'Loading movie data...' : 'Initializing...'}
-          </div>
           <DiscoveryFooter />
         </div>
       </PhoneFrame>

@@ -94,7 +94,7 @@ const styles = {
   screen: {
     width: '100%',
     height: '100%',
-    backgroundColor: '#000000',
+    backgroundColor: '#ffffff',
     borderRadius: '16px',
     overflow: 'hidden',
     display: 'flex',
@@ -113,7 +113,7 @@ const styles = {
   mobileOverrides: {
     minHeight: '100vh',
     width: '100vw',
-    backgroundColor: '#000000',
+    backgroundColor: '#ffffff',
     padding: 0,
     paddingTop: 'env(safe-area-inset-top)',
     paddingBottom: 'env(safe-area-inset-bottom)',
@@ -123,7 +123,7 @@ const styles = {
   mobileFrameOverrides: {
     width: '100%',
     height: '100vh',
-    backgroundColor: '#000000',
+    backgroundColor: '#ffffff',
     borderRadius: 0,
     border: 'none',
     boxShadow: 'none',
