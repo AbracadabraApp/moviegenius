@@ -1,5 +1,7 @@
 // Debug endpoint to test production database connectivity
-export default async function handler(req, res) {
+import { withCache } from '../../lib/cache.js';
+
+async function debugHandler(req, res) {
   const tests = [];
   let overallStatus = 'ok';
 
@@ -189,3 +191,6 @@ export default async function handler(req, res) {
     }
   });
 }
+
+// Export with cache middleware (same as movie-analysis)
+export default withCache(debugHandler);
