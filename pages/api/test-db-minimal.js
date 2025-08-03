@@ -16,7 +16,7 @@ export default async function handler(req, res) {
         test: 'Basic select with limit',
         success: !error,
         error: error?.message,
-        hasData: !!data && data.length > 0
+        hasData: !!movie && movie.length > 0
       });
     } catch (e) {
       tests.push({
