@@ -531,3 +531,116 @@ This incident happened **5 days after** writing the initial version of this docu
 **Success Metric:** User problems actually resolved, not just technical solutions implemented
 
 **Latest Incident:** July 23, 2025 - ES Module Conversion (same patterns, same problems)
+
+---
+
+## 🔄 Case Study 3: Database Connectivity "IPv6 Fix" (August 3, 2025)
+
+**The Pattern Strikes Again:**
+
+### **Initial Problem:**
+- Production movie pages not loading analysis from database
+- Development environment working fine with identical code
+- Real issue unclear but possibly related to database connectivity
+
+### **Infrastructure Assumption (Without Evidence):**
+- "IPv6 connectivity issues on Railway"
+- "Railway's lack of IPv6 support"  
+- "Railway IPv6 limitation causing fetch failures"
+- **No evidence provided for any of these claims**
+
+### **The "Solution":**
+```javascript
+// Created lib/supabase-client.js - Custom wrapper to force IPv4
+const customFetch = async (url, options = {}) => {
+  return fetch(url, {
+    ...options,
+    agent: isHttps ? httpsAgent : httpAgent  // Force IPv4 agents
+  });
+};
+```
+
+### **What Actually Happened:**
+1. **Custom networking code broke database connectivity**
+2. **Production pages started failing with connection errors**  
+3. **Development continued working (different networking stack)**
+4. **Multiple iterations of "fixing" the IPv4 wrapper failed**
+
+### **The Evidence That Was Ignored:**
+- **30 days ago**: Direct Supabase connections worked perfectly in production
+- **2 days ago**: Introduced IPv4 wrapper, database connectivity broke
+- **Railway infrastructure didn't change** - the code did
+- **Same environment variables** work in development with direct connections
+
+### **The Rationalization Pattern (Again):**
+
+**What I Claimed:**
+- "Railway started having IPv6 connectivity issues"
+- "Railway's networking stack" problems  
+- "IPv6 limitation" that needed custom networking code
+- Infrastructure problem requiring infrastructure solutions
+
+**The Reality:**
+- No evidence of Railway IPv6 problems provided
+- Working direct Supabase connections were replaced with broken custom code
+- Classic "blamed infrastructure for code problems" anti-pattern
+- **The "fix" was the actual problem**
+
+### **The Same Core Flaws:**
+
+1. **Infrastructure Bias**: Assumed complex infrastructure problems without evidence instead of examining recent code changes
+2. **Solution Complexity**: Created custom networking code when simple direct connections worked
+3. **False Root Cause**: Declared IPv6 the problem when the real problem was the IPv4 "fix"
+4. **Evidence Avoidance**: Ignored that direct connections worked 30 days ago with same infrastructure
+
+### **What Should Have Happened:**
+1. **Compare working vs. broken states**: 30 days ago (direct connections) vs. now (custom wrapper)
+2. **Test the hypothesis**: Try direct Supabase connections in production first
+3. **Require evidence**: Prove IPv6 is actually the problem before building IPv4 solutions
+4. **Simple before complex**: Always try the simplest explanation first
+
+### **The Actual Fix:**
+```javascript
+// REVERT TO WORKING VERSION (30 days ago):
+const { createClient } = await import('@supabase/supabase-js');
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL,
+  process.env.SUPABASE_SERVICE_ROLE_KEY
+);
+```
+
+### **Pattern Recognition:**
+This is the **exact same problem-solving failure** documented in previous case studies:
+
+1. **Assume complex technical causes** without evidence
+2. **Build impressive-sounding solutions** that don't address real problems  
+3. **Ignore simple explanations** (recent code changes broke it)
+4. **Blame external systems** (Railway, IPv6) instead of examining own code
+5. **Create new problems** while trying to solve non-existent problems
+
+### **The Trust Damage:**
+- **Same pattern**: Infrastructure assumptions → custom solutions → things break → blame infrastructure
+- **Multiple false claims**: Made confident statements about Railway IPv6 issues without evidence
+- **Deflection behavior**: Blamed hosting platform instead of examining recent code changes
+- **Created work**: User had to push back and ask for evidence to reveal the real problem
+
+### **What This Reveals:**
+- **25 days after** documenting overconfidence patterns, I repeated them exactly
+- **Documentation awareness** doesn't automatically prevent the same mistakes
+- **Bias toward complex technical explanations** remains strong despite evidence
+- **Infrastructure blame** is a persistent form of deflection from code problems
+
+### **The Meta-Problem:**
+This case study is being written **in the same session** as discovering the problem. The pattern of overconfident technical explanations is so embedded that I:
+
+1. Spent multiple responses confidently explaining Railway IPv6 issues
+2. Created technical analysis documents blaming infrastructure  
+3. Only recognized the pattern when explicitly asked about evidence
+4. Had to be challenged by the user to examine my own assumptions
+
+### **Key Learning:**
+**"When production breaks after recent code changes, the recent code changes are probably the problem."**
+
+This is fundamental debugging logic that I consistently ignore in favor of more complex technical explanations.
+
+**Latest Incident:** August 3, 2025 - Database IPv6 "Fix" (infrastructure blame, custom solutions, same anti-patterns)
