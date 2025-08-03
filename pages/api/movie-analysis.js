@@ -12,12 +12,6 @@ import { getCache, withCache } from '../../lib/cache.js';
 async function movieAnalysisHandler(req, res) {
   let title, year;
 
-  // Basic environment validation for Supabase
-  if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
-    console.error('🔴 Missing Supabase configuration');
-    return res.status(500).json({ error: 'Database configuration missing' });
-  }
-
   // Handle both GET (with tmdbId) and POST (with title/year) requests
   if (req.method === 'GET') {
     const { tmdbId } = req.query;
@@ -25,45 +19,32 @@ async function movieAnalysisHandler(req, res) {
     if (!tmdbId) {
       return res.status(400).json({ error: 'tmdbId parameter is required for GET requests' });
     }
-    
-    // Validate tmdbId is a valid number to prevent NaN crashes
-    const tmdbIdNum = parseInt(tmdbId, 10);
-    if (isNaN(tmdbIdNum)) {
-      return res.status(400).json({ error: 'Invalid tmdbId parameter - must be a number' });
-    }
 
     // Look up movie by tmdbId to get title and year
     try {
       console.log(`🔍 API DEBUG: Looking up movie with tmdbId=${tmdbId}`);
       console.log(`🔍 API DEBUG: ENV vars - SUPABASE_URL=${!!process.env.NEXT_PUBLIC_SUPABASE_URL}, SUPABASE_KEY=${!!process.env.SUPABASE_SERVICE_ROLE_KEY}`);
       
-      const { createSupabaseClient } = await import('../../lib/supabase-client.js');
-      const supabase = createSupabaseClient();
+      const { createClient } = await import('@supabase/supabase-js');
+      const supabase = createClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL,
+        process.env.SUPABASE_SERVICE_ROLE_KEY
+      );
 
       // Try to find movie by tmdb_id first
       let { data: movie, error: movieError } = await supabase
         .from('movies')
         .select('title, year, tmdb_id')
-        .eq('tmdb_id', tmdbIdNum)
+        .eq('tmdb_id', parseInt(tmdbId))
         .single();
       
       console.log(`🔍 API DEBUG: TMDB ID lookup result - movie=${!!movie}, error=${movieError?.message || 'none'}`);
       
-      // PHASE 1: COMMENTED OUT TMDB GENERATION - FOCUS ON 13K EXISTING ANALYSES
-      // Movie not found in database - return error (skip TMDB lookup for Phase 1)
+      // Movie not found in database - proceed with TMDB lookup
 
       if (movieError || !movie) {
-        console.log(`🎬 Movie ${tmdbId} not in database (error: ${movieError?.message || 'not found'})`);
-        console.log(`📋 PHASE 1: Skipping TMDB generation - focusing on existing 13k analyses only`);
+        console.log(`🎬 Movie ${tmdbId} not in database (error: ${movieError?.message || 'not found'}), attempting TMDB lookup for analysis request`);
         
-        return res.status(404).json({ 
-          error: 'Movie not found in database',
-          phase: 'Phase 1 - existing analyses only',
-          tmdbId: tmdbIdNum,
-          note: 'TMDB generation disabled for Phase 1 scope'
-        });
-
-        /* PHASE 3 - RESTORE DYNAMIC PAGES (TMDB GENERATION) - COMMENTED OUT FOR PHASE 1
         // For TMDB discovery scenarios, try to create the movie entry if it doesn't exist
         try {
           console.log(`🔍 ENVIRONMENT DEBUG: TMDB_KEY=${!!process.env.NEXT_PUBLIC_TMDB_API_KEY}, SUPABASE_URL=${!!process.env.NEXT_PUBLIC_SUPABASE_URL}, SUPABASE_KEY=${!!process.env.SUPABASE_SERVICE_ROLE_KEY}`);
@@ -102,7 +83,6 @@ async function movieAnalysisHandler(req, res) {
             tmdbId: parseInt(tmdbId)
           });
         }
-        */
       } else {
         title = movie.title;
         year = movie.year;
@@ -135,8 +115,11 @@ async function movieAnalysisHandler(req, res) {
       async () => {
         console.log(`🔄 Cache miss - generating fresh analysis for ${title} (${year})`);
 
-        const { createSupabaseClient } = await import('../../lib/supabase-client.js');
-        const supabase = createSupabaseClient();
+        const { createClient } = await import('@supabase/supabase-js');
+        const supabase = createClient(
+          process.env.NEXT_PUBLIC_SUPABASE_URL,
+          process.env.SUPABASE_SERVICE_ROLE_KEY
+        );
 
         // First, try to find the movie in database
         const { data: movie, error: movieError } = await supabase
@@ -238,18 +221,6 @@ async function movieAnalysisHandler(req, res) {
           };
         }
 
-        // PHASE 1: NO ANALYSIS GENERATION - RETURN ERROR FOR MISSING ANALYSIS
-        console.log(`📋 PHASE 1: No existing analysis found for ${title} (${year}) - skipping generation`);
-        return {
-          error: 'Analysis not found in database',
-          phase: 'Phase 1 - existing analyses only',
-          movie: { title, year },
-          note: 'Claude generation disabled for Phase 1 scope'
-        };
-
-        // END OF PHASE 3 COMMENTED OUT CODE
-
-        /* PHASE 3 - RESTORE DYNAMIC PAGES (CLAUDE ANALYSIS GENERATION) - COMMENTED OUT FOR PHASE 1
         // Generate new analysis with Claude using modular prompt system
         const processStartTime = Date.now();
         console.log(`🚀 Starting end-to-end analysis process for ${title} (${year})...`);
@@ -428,7 +399,6 @@ async function movieAnalysisHandler(req, res) {
             }
           }
         };
-        */
       }
     );
 
