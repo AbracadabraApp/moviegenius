@@ -4,7 +4,7 @@
  * Endpoint for coordinating specialized development agents
  */
 
-const MultiAgentOrchestrator = require('../../../lib/orchestrator/multi-agent-orchestrator');
+import MultiAgentOrchestrator from '../../../lib/orchestrator/multi-agent-orchestrator.js';
 
 // Singleton orchestrator instance
 let orchestrator = null;
