@@ -36,7 +36,7 @@ export default async function handler(req, res) {
   
   let url, headers;
   
-  if (bearerToken && bearerToken.split('.').length === 3) {
+  if (bearerToken && bearerToken.length > 50) {
     // Use Bearer token method (production preference)
     url = `https://api.themoviedb.org/3/movie/${id}?language=en-US`;
     headers = {
