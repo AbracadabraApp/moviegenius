@@ -13,16 +13,22 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Invalid movie ID' });
   }
   
-  // Check for TMDB API key
-  if (!process.env.NEXT_PUBLIC_TMDB_API_KEY) {
-    console.error('TMDB API key not configured');
+  // Use proper TMDB authentication with placeholder validation
+  const apiKey = process.env.TMDB_API_KEY || process.env.NEXT_PUBLIC_TMDB_API_KEY;
+  
+  if (!apiKey || apiKey === 'placeholder' || apiKey.startsWith('placehol')) {
+    console.error('TMDB API key not configured properly:', {
+      hasServerKey: !!process.env.TMDB_API_KEY,
+      hasPublicKey: !!process.env.NEXT_PUBLIC_TMDB_API_KEY,
+      publicKeyValue: process.env.NEXT_PUBLIC_TMDB_API_KEY?.substring(0, 8) + '...'
+    });
     return res.status(500).json({ error: 'TMDB service unavailable' });
   }
   
   try {
-    // Fetch from TMDB with server-side API key (secure)
+    // Fetch from TMDB with proper API key
     const response = await fetch(
-      `https://api.themoviedb.org/3/movie/${tmdbId}?api_key=${process.env.NEXT_PUBLIC_TMDB_API_KEY}`
+      `https://api.themoviedb.org/3/movie/${tmdbId}?api_key=${apiKey}`
     );
     
     if (!response.ok) {
