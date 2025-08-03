@@ -8,7 +8,7 @@ export default async function handler(req, res) {
 
     // Test 1: Working pattern (same as movie-analysis)
     try {
-      const { data: movie, error } = await supabase
+      const { data, error } = await supabase
         .from('movies')
         .select('id, title')
         .limit(1);
@@ -16,7 +16,7 @@ export default async function handler(req, res) {
         test: 'Basic select with limit',
         success: !error,
         error: error?.message,
-        hasData: !!movie && movie.length > 0
+        hasData: !!data && data.length > 0
       });
     } catch (e) {
       tests.push({
