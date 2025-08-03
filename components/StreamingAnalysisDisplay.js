@@ -319,11 +319,12 @@ Watch *2001: A Space Odyssey* for Kubrick's unmatched visual poetry and philosop
       className="streaming-analysis-display"
       style={{
         position: 'relative',
-        fontFamily: '"Inter", -apple-system, BlinkMacSystemFont, sans-serif',
-        fontSize: '1.1rem',
-        lineHeight: '1.7',
+        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+        fontSize: '16px',
+        lineHeight: '1.6',
         color: '#374151',
         minHeight: '200px',
+        marginBottom: '16px',
       }}
     >
       {/* Skip button */}

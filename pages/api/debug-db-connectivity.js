@@ -29,11 +29,8 @@ async function debugHandler(req, res) {
     // Test 2: Supabase client creation
     let supabase = null;
     try {
-      const { createClient } = await import('@supabase/supabase-js');
-      supabase = createClient(
-        process.env.NEXT_PUBLIC_SUPABASE_URL,
-        process.env.SUPABASE_SERVICE_ROLE_KEY
-      );
+      const { createSupabaseClient } = await import('../../lib/supabase-client.js');
+      supabase = createSupabaseClient();
       tests.push({
         test: 'Supabase Client Creation',
         status: 'pass',
