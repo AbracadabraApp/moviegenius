@@ -19,24 +19,15 @@ export default function MovieAnalysisWithEntities({
   linkingIntensity = 'moderate',
   className = '',
 }) {
+  console.log('🔄 UPDATED MovieAnalysisWithEntities component loaded - no loading states!');
   const [processedAnalysis, setProcessedAnalysis] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
   const [entityStats, setEntityStats] = useState(null);
   const performanceMonitor = getPerformanceMonitor();
 
   useEffect(() => {
     if (!analysis?.claude_response?.raw_content) {
-      setIsLoading(false);
       return;
     }
-
-    // Performance tracking disabled for stability
-    // const processingStart = performance.now();
-    // performanceMonitor.trackMetric('analysis_component_start', processingStart, {
-    //   movieId: movie?.id,
-    //   hasEntityData: !!analysis.entityData,
-    //   contentLength: analysis.claude_response.raw_content.length
-    // });
 
     processAnalysisContent();
   }, [analysis, linkingIntensity]);
@@ -45,7 +36,6 @@ export default function MovieAnalysisWithEntities({
     const processingStart = performance.now();
     
     try {
-      setIsLoading(true);
 
       const rawContent = analysis.claude_response.raw_content;
 
@@ -138,7 +128,7 @@ export default function MovieAnalysisWithEntities({
         error: error.message,
       });
     } finally {
-      setIsLoading(false);
+      // Removed loading state
     }
   };
 
@@ -269,12 +259,26 @@ export default function MovieAnalysisWithEntities({
     };
   };
 
-  if (isLoading) {
+  // Process analysis immediately if we have data but processedAnalysis isn't ready yet
+  if (!processedAnalysis && analysis?.claude_response?.raw_content) {
+    // Render with raw content while processing happens in background
+    const rawContent = analysis.claude_response.raw_content;
+    let analysisData;
+    try {
+      analysisData = JSON.parse(rawContent);
+      if (analysisData) {
+        return renderJsonAnalysis(analysisData, movie, linkingIntensity, className);
+      }
+    } catch (e) {
+      // JSON parsing failed - log for debugging and fall back to text processing
+      console.warn('Failed to parse analysis JSON, using raw content:', e.message);
+    }
+    
     return (
-      <div className={`${className} animate-pulse`}>
-        <div className="h-4 bg-gray-200 rounded w-3/4 mb-4"></div>
-        <div className="h-4 bg-gray-200 rounded w-full mb-2"></div>
-        <div className="h-4 bg-gray-200 rounded w-5/6"></div>
+      <div className={className}>
+        <div style={styles.paragraph}>
+          <p>{rawContent || 'Analysis content loading...'}</p>
+        </div>
       </div>
     );
   }

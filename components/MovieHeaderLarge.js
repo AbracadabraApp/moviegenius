@@ -38,17 +38,15 @@ export default function MovieHeaderLarge({
   initialStreaming,
   tmdbId 
 }) {
+  console.log('🖼️ UPDATED MovieHeaderLarge component loaded - no loading poster states!');
 
   const [hearted, setHearted] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
   const [slug, setSlug] = useState(initialSlug || '');
   const [poster, setPoster] = useState(initialPoster || '/images/placeholder-poster.jpg');
   
-  // Progressive loading states
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
+  // Error state only - removed loading states for immediate render (loading state removal task)
   const [isImageError, setIsImageError] = useState(false);
-  const [showContent, setShowContent] = useState(true); // Always show content to prevent hydration mismatches
-  const [isHydrated, setIsHydrated] = useState(false);
   
   // Action bar states
   const [addedToList, setAddedToList] = useState(false);
@@ -65,24 +63,13 @@ export default function MovieHeaderLarge({
   // Movie data object for FavoritesManager
   const movieData = { title, year, slug, poster, id: mediaId };
 
-  // Hydration delay - the 300ms fix!
-  useEffect(() => {
-    const hydrationDelay = setTimeout(() => {
-      setIsHydrated(true);
-    }, 300);
-    
-    return () => clearTimeout(hydrationDelay);
-  }, []);
-
   // Update state when props change (navigation between movies)
   useEffect(() => {
-    if (initialPoster && isHydrated) {
+    if (initialPoster) {
       setPoster(initialPoster);
-      // Force image to show immediately - bypass onLoad event issues
-      setIsImageLoaded(true);
       setIsImageError(false);
     }
-  }, [initialPoster, isHydrated]);
+  }, [initialPoster]);
 
   useEffect(() => {
     if (initialSlug) {
@@ -106,10 +93,9 @@ export default function MovieHeaderLarge({
   // Progressive loading disabled to prevent hydration mismatches
   // Images will load with opacity transition instead of conditional rendering
 
-  // Reset loading state when poster changes - simplified
+  // Reset error state when poster changes
   useEffect(() => {
     if (poster !== initialPoster) {
-      setIsImageLoaded(false);
       setIsImageError(false);
     }
   }, [poster, initialPoster]);
@@ -291,16 +277,10 @@ export default function MovieHeaderLarge({
           alt={`Poster for ${title}`} 
           style={{
             ...styles.largePoster,
-            opacity: isImageLoaded ? 1 : 0.3, // Higher starting opacity for better visibility
-            transition: 'opacity 0.2s ease-in-out'
-          }}
-          onLoad={() => {
-            setIsImageLoaded(true);
-            setIsImageError(false);
+            opacity: 1 // Always show image immediately
           }}
           onError={() => {
             setIsImageError(true);
-            setIsImageLoaded(false);
           }}
           onDoubleClick={() => {
             setAddedToList(!addedToList);
@@ -309,14 +289,7 @@ export default function MovieHeaderLarge({
           }}
         />
         
-        {/* Loading placeholder that shows until image loads */}
-        {!isImageLoaded && !isImageError && (
-          <div style={{...styles.headerPlaceholder, opacity: isImageLoaded ? 0 : 1}}>
-            <div style={styles.headerLoadingText}>Loading poster...</div>
-          </div>
-        )}
-        
-        {/* Error fallback */}
+        {/* Error fallback only - no loading placeholder */}
         {isImageError && (
           <div style={styles.headerPlaceholder}>
             <div style={styles.headerErrorText}>📷</div>
