@@ -1,0 +1,191 @@
+// Debug endpoint to test production database connectivity
+export default async function handler(req, res) {
+  const tests = [];
+  let overallStatus = 'ok';
+
+  try {
+    // Test 1: Environment variables
+    tests.push({
+      test: 'Environment Variables',
+      status: 'checking',
+      details: {
+        NEXT_PUBLIC_SUPABASE_URL: !!process.env.NEXT_PUBLIC_SUPABASE_URL,
+        SUPABASE_SERVICE_ROLE_KEY: !!process.env.SUPABASE_SERVICE_ROLE_KEY,
+        supabaseUrlLength: process.env.NEXT_PUBLIC_SUPABASE_URL?.length || 0,
+        supabaseKeyLength: process.env.SUPABASE_SERVICE_ROLE_KEY?.length || 0
+      }
+    });
+
+    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
+      tests[0].status = 'fail';
+      tests[0].error = 'Missing required environment variables';
+      overallStatus = 'fail';
+    } else {
+      tests[0].status = 'pass';
+    }
+
+    // Test 2: Supabase client creation
+    let supabase = null;
+    try {
+      const { createClient } = await import('@supabase/supabase-js');
+      supabase = createClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL,
+        process.env.SUPABASE_SERVICE_ROLE_KEY
+      );
+      tests.push({
+        test: 'Supabase Client Creation',
+        status: 'pass',
+        details: 'Client created successfully'
+      });
+    } catch (error) {
+      tests.push({
+        test: 'Supabase Client Creation',
+        status: 'fail',
+        error: error.message
+      });
+      overallStatus = 'fail';
+    }
+
+    // Test 3: Basic database connection
+    if (supabase) {
+      try {
+        const { data, error } = await supabase.from('movies').select('count(*)', { count: 'exact', head: true });
+        if (error) {
+          tests.push({
+            test: 'Database Connection',
+            status: 'fail',
+            error: error.message,
+            details: error
+          });
+          overallStatus = 'fail';
+        } else {
+          tests.push({
+            test: 'Database Connection',
+            status: 'pass',
+            details: `Movies table accessible, count: ${data?.length || 'unknown'}`
+          });
+        }
+      } catch (error) {
+        tests.push({
+          test: 'Database Connection',
+          status: 'fail',
+          error: error.message
+        });
+        overallStatus = 'fail';
+      }
+    }
+
+    // Test 4: Movies table structure
+    if (supabase && overallStatus !== 'fail') {
+      try {
+        const { data, error } = await supabase.from('movies').select('id, title, year, tmdb_id').limit(1);
+        if (error) {
+          tests.push({
+            test: 'Movies Table Structure',
+            status: 'fail',
+            error: error.message
+          });
+          overallStatus = 'fail';
+        } else {
+          tests.push({
+            test: 'Movies Table Structure',
+            status: 'pass',
+            details: `Sample row: ${data?.length ? JSON.stringify(data[0]) : 'No data'}`
+          });
+        }
+      } catch (error) {
+        tests.push({
+          test: 'Movies Table Structure',
+          status: 'fail',
+          error: error.message
+        });
+        overallStatus = 'fail';
+      }
+    }
+
+    // Test 5: Movie analyses table
+    if (supabase && overallStatus !== 'fail') {
+      try {
+        const { data, error } = await supabase.from('movie_analyses').select('id, movie_id, analysis_type').limit(1);
+        if (error) {
+          tests.push({
+            test: 'Movie Analyses Table',
+            status: 'fail',
+            error: error.message
+          });
+          overallStatus = 'fail';
+        } else {
+          tests.push({
+            test: 'Movie Analyses Table',
+            status: 'pass',
+            details: `Sample analysis: ${data?.length ? JSON.stringify(data[0]) : 'No analyses found'}`
+          });
+        }
+      } catch (error) {
+        tests.push({
+          test: 'Movie Analyses Table',
+          status: 'fail',
+          error: error.message
+        });
+        overallStatus = 'fail';
+      }
+    }
+
+    // Test 6: Specific movie lookup (Fight Club)
+    if (supabase && overallStatus !== 'fail') {
+      try {
+        const { data, error } = await supabase
+          .from('movies')
+          .select('id, title, year, tmdb_id')
+          .eq('tmdb_id', 550)
+          .single();
+        
+        if (error) {
+          tests.push({
+            test: 'Fight Club Lookup (tmdb_id=550)',
+            status: 'fail',
+            error: error.message
+          });
+        } else if (!data) {
+          tests.push({
+            test: 'Fight Club Lookup (tmdb_id=550)',
+            status: 'fail',
+            error: 'Movie not found in database'
+          });
+        } else {
+          tests.push({
+            test: 'Fight Club Lookup (tmdb_id=550)',
+            status: 'pass',
+            details: data
+          });
+        }
+      } catch (error) {
+        tests.push({
+          test: 'Fight Club Lookup (tmdb_id=550)',
+          status: 'fail',
+          error: error.message
+        });
+      }
+    }
+
+  } catch (error) {
+    overallStatus = 'fail';
+    tests.push({
+      test: 'Overall Test Suite',
+      status: 'fail',
+      error: error.message
+    });
+  }
+
+  res.status(200).json({
+    status: overallStatus,
+    timestamp: new Date().toISOString(),
+    environment: process.env.NODE_ENV || 'unknown',
+    tests: tests,
+    summary: {
+      total: tests.length,
+      passed: tests.filter(t => t.status === 'pass').length,
+      failed: tests.filter(t => t.status === 'fail').length
+    }
+  });
+}
