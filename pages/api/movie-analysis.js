@@ -90,15 +90,21 @@ async function movieAnalysisHandler(req, res) {
           const tmdbMovie = await getTMDBMovieDetails(parseInt(tmdbId));
           console.log(`🔍 TMDB result:`, tmdbMovie ? `${tmdbMovie.title} (${tmdbMovie.release_date})` : 'null');
           
-          if (tmdbMovie) {
-            console.log(`✅ Found TMDB movie: ${tmdbMovie.title} (${tmdbMovie.year})`);
+          if (tmdbMovie && tmdbMovie.title) {
+            const movieYear = tmdbMovie.release_date ? parseInt(tmdbMovie.release_date.substring(0, 4)) : null;
+            console.log(`✅ Found TMDB movie: ${tmdbMovie.title} (${movieYear})`);
             const newMovieEntry = await createBasicMovieEntry(tmdbMovie);
             title = newMovieEntry.title;
             year = newMovieEntry.year;
             console.log(`💾 Created movie entry for analysis: ${title} (${year})`);
           } else {
-            console.log(`❌ No TMDB movie found for ID ${tmdbId}`);
-            return res.status(404).json({ error: 'Movie not found in TMDB' });
+            console.log(`❌ No TMDB movie found for ID ${tmdbId} - tmdbMovie:`, tmdbMovie);
+            return res.status(404).json({ 
+              error: 'Movie not found in TMDB', 
+              details: 'TMDB API returned invalid or null response',
+              tmdbId: parseInt(tmdbId),
+              debug: { tmdbMovie: !!tmdbMovie, hasTitle: !!(tmdbMovie?.title) }
+            });
           }
         } catch (tmdbError) {
           console.error('TMDB lookup failed for analysis request:', tmdbError);
