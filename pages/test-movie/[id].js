@@ -76,9 +76,15 @@ export async function getStaticProps({ params }) {
   const { id } = params;
   
   try {
-    // Simple TMDB API call for basic movie data
+    // Use proper TMDB authentication - server-side API key only
+    const apiKey = process.env.TMDB_API_KEY || process.env.NEXT_PUBLIC_TMDB_API_KEY;
+    
+    if (!apiKey || apiKey === 'placeholder' || apiKey.startsWith('placehol')) {
+      throw new Error('No valid TMDB API key configured');
+    }
+    
     const tmdbResponse = await fetch(
-      `https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.NEXT_PUBLIC_TMDB_API_KEY}`
+      `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`
     );
     
     if (tmdbResponse.ok) {
