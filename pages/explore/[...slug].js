@@ -110,11 +110,6 @@ export default function ExplorePage({ pageData, error, topic, context, movieTitl
 
         {/* Main Content - Streaming Typewriter */}
         <div style={styles.contentSection}>
-          {/* Debug info */}
-          <div style={{padding: '10px', background: '#f0f0f0', margin: '10px 0', fontSize: '12px'}}>
-            Debug: topic="{topic}", context="{context}", movieTitle="{movieTitle}", 
-            movieId="explore-{topic.replace(/\s+/g, '-')}"
-          </div>
           <StreamingAnalysisDisplay
             movieId={`explore-${topic.replace(/\s+/g, '-')}`}
             movieTitle={pageData.title}

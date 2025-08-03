@@ -29,14 +29,18 @@ async function debugHandler(req, res) {
     // Test 2: Supabase client creation
     let supabase = null;
     try {
+      console.log('DEBUG ENDPOINT: About to import createSupabaseClient');
       const { createSupabaseClient } = await import('../../lib/supabase-client.js');
+      console.log('DEBUG ENDPOINT: Import successful, calling createSupabaseClient');
       supabase = createSupabaseClient();
+      console.log('DEBUG ENDPOINT: Client creation completed');
       tests.push({
         test: 'Supabase Client Creation',
         status: 'pass',
-        details: 'Client created successfully'
+        details: `Client created successfully. URL: ${process.env.NEXT_PUBLIC_SUPABASE_URL}`
       });
     } catch (error) {
+      console.log('DEBUG ENDPOINT: Client creation failed:', error.message);
       tests.push({
         test: 'Supabase Client Creation',
         status: 'fail',
