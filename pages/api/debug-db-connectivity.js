@@ -48,23 +48,29 @@ async function debugHandler(req, res) {
       overallStatus = 'fail';
     }
 
-    // Test 3: Basic database connection
+    // Test 3: Basic database connection (using EXACT pattern from working movie-analysis)
     if (supabase) {
       try {
-        const { data, error } = await supabase.from('movies').select('count(*)', { count: 'exact', head: true });
-        if (error) {
+        // Copy exact working pattern from movie-analysis.js line 47-51
+        let { data: movie, error: movieError } = await supabase
+          .from('movies')
+          .select('title, year, tmdb_id')
+          .eq('tmdb_id', 550)
+          .single();
+        
+        if (movieError || !movie) {
           tests.push({
             test: 'Database Connection',
             status: 'fail',
-            error: error.message,
-            details: error
+            error: movieError?.message || 'No data returned',
+            details: movieError
           });
           overallStatus = 'fail';
         } else {
           tests.push({
-            test: 'Database Connection',
+            test: 'Database Connection', 
             status: 'pass',
-            details: `Movies table accessible, count: ${data?.length || 'unknown'}`
+            details: `Successfully queried movie: ${movie.title} (${movie.year})`
           });
         }
       } catch (error) {
