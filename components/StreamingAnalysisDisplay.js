@@ -108,8 +108,9 @@ export default function StreamingAnalysisDisplay({
         // Use explore streaming API for explore topics
         const topicName = movieId.replace('explore-', '').replace(/-/g, ' ');
         const apiUrl = `/api/explore-stream?topic=${encodeURIComponent(topicName)}${movieYear ? `&context=${encodeURIComponent(movieYear)}` : ''}`;
+        console.log('🚀 Calling explore API:', apiUrl);
         response = await fetch(apiUrl);
-        console.log('📡 Connected to explore streaming endpoint');
+        console.log('📡 Connected to explore streaming endpoint, status:', response.status);
       } else {
         // Use the movie analysis streaming POC endpoint
         response = await fetch('/api/streaming-poc');
