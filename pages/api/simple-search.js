@@ -12,7 +12,7 @@ export default async function handler(req, res) {
     }
 
     const searchQuery = query.trim();
-    console.log(`🔍 TMDB search: "${searchQuery}"`);
+    console.log(`🔍 TMDB search: "${searchQuery}" [with popularity scores]`);
 
     // Search TMDB directly - 100% coverage with TMDB IDs
     const { searchTMDB } = await import('../../lib/services/tmdb-search.js');
