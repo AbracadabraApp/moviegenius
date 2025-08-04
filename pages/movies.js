@@ -12,12 +12,21 @@ export default function MoviesPage() {
   const [searchResults, setSearchResults] = useState([]);
   const [showSearchResults, setShowSearchResults] = useState(false);
 
-  // Handle search results from multi-search API
+  // Handle search results from simple-search API  
   const handleSearchResults = results => {
-    // Multi-search returns {movies: [], people: []} - extract movies array
+    // Simple-search returns {movies: [], people: [], hasResults, query} - extract movies array
     const movies = results.movies || results || [];
-    setSearchResults(movies);
-    setShowSearchResults(movies.length > 0);
+    
+    // Clean up movie data for MediaCard compatibility
+    const cleanedMovies = movies.map(movie => ({
+      ...movie,
+      // Ensure slug and streaming_data are not null to prevent MediaCard issues
+      slug: movie.slug || `${movie.title} (${movie.year}) movie details`,
+      streaming_data: movie.streaming_data || null, // MediaCard handles null streaming data
+    }));
+    
+    setSearchResults(cleanedMovies);
+    setShowSearchResults(cleanedMovies.length > 0);
   };
 
   // Handle movie click - navigate to movie detail page
