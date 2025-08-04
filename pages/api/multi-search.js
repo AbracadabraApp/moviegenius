@@ -61,14 +61,42 @@ export default async function handler(req, res) {
     const searchQuery = query.trim();
     console.log(`🔍 Multi-search: "${searchQuery}"`);
 
+    // Use Bearer token authentication (same as working search endpoint)
+    const bearerToken = process.env.TMDB_BEARER_TOKEN;
+    
+    if (!bearerToken || bearerToken.split('.').length !== 3) {
+      console.error('TMDB Bearer token not configured properly for multi-search:', {
+        hasBearerToken: !!bearerToken,
+        isValidJWT: bearerToken?.split('.').length === 3
+      });
+      return res.status(500).json({
+        error: 'Search unavailable',
+        movies: [],
+        people: [],
+        fallback: { message: 'Search authentication not configured' }
+      });
+    }
+
     // Fetch multiple pages to get broader results (up to 40 total)
     const allResults = [];
+    const headers = {
+      'Authorization': `Bearer ${bearerToken}`,
+      'Accept': 'application/json'
+    };
 
     for (let page = 1; page <= 2; page++) {
-      const tmdbUrl = `https://api.themoviedb.org/3/search/multi?api_key=${process.env.NEXT_PUBLIC_TMDB_API_KEY}&query=${encodeURIComponent(searchQuery)}&page=${page}`;
-      const response = await fetch(tmdbUrl);
+      const tmdbUrl = `https://api.themoviedb.org/3/search/multi?query=${encodeURIComponent(searchQuery)}&page=${page}`;
+      const response = await fetch(tmdbUrl, { headers });
 
       if (!response.ok) {
+        if (response.status === 401) {
+          console.error('TMDB multi-search 401 Unauthorized:', {
+            page,
+            authMethod: 'Bearer Token',
+            tokenLength: bearerToken.length,
+            possibleCauses: ['Invalid/expired token', 'Rate limit exceeded', 'Wrong scope']
+          });
+        }
         console.error(`TMDB API error page ${page}:`, response.status);
         break;
       }
