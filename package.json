@@ -128,5 +128,24 @@
     "ts-jest": "^29.4.0",
     "typescript": "^5.8.3",
     "webpack-bundle-analyzer": "^4.10.2"
-  }
+  },
+  "description": "**AI-Powered Movie Discovery Platform**",
+  "main": ".commitlintrc.js",
+  "directories": {
+    "doc": "docs",
+    "example": "examples",
+    "lib": "lib",
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbracadabraApp/moviegenius.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbracadabraApp/moviegenius/issues"
+  },
+  "homepage": "https://github.com/AbracadabraApp/moviegenius#readme"
 }

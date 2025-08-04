@@ -25,8 +25,11 @@ async function movieAnalysisHandler(req, res) {
       console.log(`🔍 API DEBUG: Looking up movie with tmdbId=${tmdbId}`);
       console.log(`🔍 API DEBUG: ENV vars - SUPABASE_URL=${!!process.env.NEXT_PUBLIC_SUPABASE_URL}, SUPABASE_KEY=${!!process.env.SUPABASE_SERVICE_ROLE_KEY}`);
       
-      const { createSupabaseClient } = await import('../../lib/supabase-client.js');
-      const supabase = createSupabaseClient();
+      const { createClient } = await import('@supabase/supabase-js');
+      const supabase = createClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL,
+        process.env.SUPABASE_SERVICE_ROLE_KEY
+      );
 
       // Try to find movie by tmdb_id first
       let { data: movie, error: movieError } = await supabase
