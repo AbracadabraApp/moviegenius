@@ -1,0 +1,45 @@
+/**
+ * GENIUS PAGE LOCK FILE
+ * 
+ * This file defines the protected elements of the Genius page that must not be modified.
+ * The Genius page serves as the main entry point and contains the core brand manifesto.
+ * 
+ * CRITICAL PROTECTED ELEMENTS:
+ * - Personal manifesto text in modal
+ * - Theme navigation structure
+ * - Hero messaging
+ * - Modal presentation
+ * 
+ * LOCK RULES:
+ * 1. MANIFESTO TEXT: The manifesto text is the owner's personal statement about the product
+ *    and must NEVER be rewritten by AI or developers
+ * 2. THEME NAVIGATION: The theme routing logic must remain functional
+ * 3. HERO MESSAGING: The core value proposition text must be preserved
+ * 4. MODAL STRUCTURE: The welcome modal structure must remain intact
+ * 
+ * PROTECTED CONTENT:
+ * - "Welcome to MovieGenius" modal title
+ * - Manifesto text: "Streaming platforms put great films at our fingertips, then hid them under time-wasting junk. MovieGenius is your intelligence filter—no more mindless scrolling through endless mediocre 'shows'. Discover quality cinema and make deliberate choices again."
+ * - "DON'T BINGE WATCH TV" / "FEAST ON GREAT FILMS INSTEAD" hero text
+ * - Theme navigation routes and functionality
+ * 
+ * ALLOWED CHANGES:
+ * - CSS styling improvements
+ * - Performance optimizations
+ * - Bug fixes that don't alter content
+ * - Technical implementation changes that preserve functionality
+ * 
+ * FORBIDDEN CHANGES:
+ * - Rewriting or "improving" the manifesto text
+ * - Changing the core messaging or value proposition
+ * - Removing or replacing the personal statement
+ * - Altering the tone or voice of the brand messaging
+ * 
+ * CHANGE PROTOCOL:
+ * Any changes to protected content must be explicitly approved by the product owner.
+ * This is a personal statement about the product vision and must not be modified by AI.
+ */
+
+// LOCK VERSION: 1.0.0
+// LAST UPDATED: 2025-07-11
+// PROTECTED ELEMENTS: manifesto-text, hero-messaging, theme-navigation, modal-structure

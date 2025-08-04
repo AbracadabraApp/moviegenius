@@ -1,0 +1,212 @@
+{
+  "system": "genius",
+  "themeId": 1,
+  "seriesId": 1,
+  "episodeId": 4,
+  "theme": {
+    "id": 1,
+    "title": "Genres",
+    "description": "Film genres and their evolution",
+    "slug": "genres"
+  },
+  "series": {
+    "id": 1,
+    "title": "Classic Film Noir",
+    "description": "The birth and golden age of film noir"
+  },
+  "episode": {
+    "id": 4,
+    "title": "Femme Fatales",
+    "subtitle": "Dangerous women and desire"
+  },
+  "content": {
+    "opener": "The femme fatale archetype in film noir represents cinema's most seductive and dangerous incarnation of female power, emerging from the anxieties of post-war America and forever changing how sexuality and gender dynamics were portrayed on screen.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "The classic film noir femme fatale emerged in the 1940s as a direct response to shifting gender roles during and after World War II. With millions of women entering the workforce and gaining unprecedented independence, Hollywood reflected growing male anxiety through characters who weaponized their sexuality and intelligence. Double Indemnity (1944) established the archetypal femme fatale through Barbara Stanwyck's masterful portrayal of Phyllis Dietrichson, a calculating wife who manipulates an insurance salesman into murdering her husband. Director Billy Wilder and cinematographer John F. Seitz used shadowy lighting and Dutch angles to emphasize her predatory nature, while the script by Raymond Chandler and Wilder crafted dialogue dripping with innuendo and menace."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Double Indemnity",
+            "year": 1944,
+            "slug": "Barbara Stanwyck stars as the ultimate femme fatale who seduces an insurance agent into murder",
+            "streaming": "Prime Video",
+            "tmdb_id": 996,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rVNYZZgfhwqVMMWlBmxOfWqnwCj.jpg"
+          },
+          {
+            "title": "Gilda",
+            "year": 1946,
+            "slug": "Rita Hayworth's iconic performance as the sultry wife of a casino owner defined feminine allure in noir",
+            "streaming": "Prime Video",
+            "tmdb_id": 3767,
+            "poster_url": "https://image.tmdb.org/t/p/w500/46eKPjoWEyNBAQKDoXEcDFBcaUw.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "The Psychology of Desire and Destruction"
+      },
+      {
+        "type": "text",
+        "content": "The femme fatale represents a complex intersection of male desire and fear, particularly in post-war America's struggle with changing gender dynamics. In Out of the Past (1947), Jane Greer's Kathie Moffat embodies this duality as a woman whose beauty masks lethal intentions. Director Jacques Tourneur crafted scenes where shadow and light play across Greer's face, suggesting the duplicitous nature beneath her angelic appearance. The film's complicated narrative structure, told largely through flashbacks, mirrors the psychological complexity of the femme fatale herself. This approach influenced later neo-noir films like Body Heat (1981), where Kathleen Turner's Matty Walker consciously plays with the archetype while updating it for a more sexually liberated era."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Out of the Past",
+            "year": 1947,
+            "slug": "Jane Greer delivers a career-defining performance as a manipulative woman who destroys every man she encounters",
+            "streaming": "TCM",
+            "tmdb_id": 678,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lnUK6Cg5ARM0qaq0B5SG20VAM0h.jpg"
+          },
+          {
+            "title": "Body Heat",
+            "year": 1981,
+            "slug": "Kathleen Turner stars in this neo-noir homage that updates the femme fatale for the modern era",
+            "streaming": "HBO Max",
+            "tmdb_id": 14412,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5LipPcaW1J9IjAP7TOTesw8OcMS.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The visual language of the femme fatale became codified through specific cinematographic techniques that emphasized both allure and danger. In The Killers (1946), Ava Gardner's Kitty Collins is introduced through a series of increasingly intimate close-ups, each revealing another layer of her dangerous beauty. Cinematographer Elwood Bredell utilized high-contrast lighting to create stark shadows across her face, suggesting hidden depths and ulterior motives. This visual approach was further refined in The Lady from Shanghai (1947), where Rita Hayworth's character is frequently shot through distorting mirrors and reflective surfaces, fragmenting her image to represent her fractured morality."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Killers",
+            "year": 1946,
+            "slug": "Ava Gardner's breakthrough role as a duplicitous singer who leads men to their doom",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 14638,
+            "poster_url": "https://image.tmdb.org/t/p/w500/uXnuc6pW01s1MDwb6QwBWg2JQeX.jpg"
+          },
+          {
+            "title": "The Lady from Shanghai",
+            "year": 1947,
+            "slug": "Rita Hayworth stars in Orson Welles' twisted noir featuring the famous hall of mirrors finale",
+            "streaming": "Prime Video",
+            "tmdb_id": 3766,
+            "poster_url": "https://image.tmdb.org/t/p/w500/whqdqWavNMSoeXTx1X3DauO1LG6.jpg"
+          }
+        ]
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The femme fatale's power often stems from her ability to manipulate masculine systems of control through sexuality and intelligence. In The Maltese Falcon (1941), Mary Astor's Brigid O'Shaughnessy uses performed vulnerability to mask her ruthless nature, playing on societal expectations of feminine weakness. The film's director, John Huston, subverts these expectations by gradually revealing her true nature through subtle performance cues and strategic camera placement. This theme reached its apex in Gun Crazy (1950), where Peggy Cummins' Annie Laurie Starr actively participates in violence rather than merely orchestrating it, representing a more direct challenge to gender norms."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Maltese Falcon",
+            "year": 1941,
+            "slug": "Mary Astor plays a deceptive woman who entangles Humphrey Bogart in a deadly treasure hunt",
+            "streaming": "HBO Max",
+            "tmdb_id": 963,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bf4o6Uzw5wqLjdKwRuiDrN1xyvl.jpg"
+          },
+          {
+            "title": "Gun Crazy",
+            "year": 1950,
+            "slug": "Peggy Cummins portrays a sharpshooting femme fatale who leads her lover on a crime spree",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 18671,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kC1IIitCJTZLwZyuQnKw4zaOaXc.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The 1950s saw the femme fatale evolve beyond simple villainy into more psychologically complex territory. In Pickup on South Street (1953), Jean Peters' character subverts expectations by transitioning from apparent femme fatale to sympathetic protagonist, reflecting changing attitudes toward female agency. This evolution continued in Kiss Me Deadly (1955), where Velda and Christina represent different aspects of the archetype, combining sexuality with atomic-age apocalyptic themes. Director Robert Aldrich used their characters to comment on Cold War paranoia while maintaining noir's trademark visual style."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Pickup on South Street",
+            "year": 1953,
+            "slug": "Jean Peters stars as a complex character who transcends the typical femme fatale role",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 25955,
+            "poster_url": "https://image.tmdb.org/t/p/w500/et4fY4BxLyAPwxvUFUbzCUrGsjR.jpg"
+          },
+          {
+            "title": "Kiss Me Deadly",
+            "year": 1955,
+            "slug": "Ralph Meeker faces multiple dangerous women in this Cold War noir thriller",
+            "streaming": "TCM",
+            "tmdb_id": 18030,
+            "poster_url": "https://image.tmdb.org/t/p/w500/z7me91nrpWLHY1mZOB2v20cK0zY.jpg"
+          }
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Scarlet Street",
+          "year": 1945,
+          "slug": "Joan Bennett plays a ruthless woman who manipulates an artist into crime",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 17058,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eGEDor1BWSQGaLtOntPHUSqNzRC.jpg"
+        },
+        {
+          "title": "Leave Her to Heaven",
+          "year": 1945,
+          "slug": "Gene Tierney stars as a possessive woman whose love turns murderous",
+          "streaming": "Prime Video",
+          "tmdb_id": 17645,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aUzQZt2UlaurZ3wlhzVXQb6PQk8.jpg"
+        },
+        {
+          "title": "Basic Instinct",
+          "year": 1992,
+          "slug": "Sharon Stone updates the femme fatale for the modern thriller era",
+          "streaming": "Netflix",
+          "tmdb_id": 402,
+          "poster_url": "https://image.tmdb.org/t/p/w500/76Ts0yoHk8kVQj9MMnoMixhRWoh.jpg"
+        },
+        {
+          "title": "Mulholland Drive",
+          "year": 2001,
+          "slug": "David Lynch deconstructs the femme fatale archetype in this neo-noir masterpiece",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 1018,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x7A59t6ySylr1L7aubOQEA480vM.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-17T22:05:32.502Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-17T22:05:32.502Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-1-noir/series-1-classic/4-femme-fateles.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:30:58.813Z",
+    "hasLinks": false,
+    "linksAdded": 0,
+    "tier": "tier2_link_only"
+  }
+}

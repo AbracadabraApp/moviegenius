@@ -1,6 +1,6 @@
 /**
  * Railway Batch Processing API - Lists
- * 
+ *
  * Endpoint for automated list analysis generation
  * Processes movie lists missing Claude analysis
  */
@@ -73,14 +73,16 @@ Content Guidelines:
     try {
       const { data: listMovies, error } = await supabase
         .from('list_movies')
-        .select(`
+        .select(
+          `
           movies (
             id,
             title,
             year,
             tmdb_id
           )
-        `)
+        `
+        )
         .eq('list_id', listId)
         .limit(10); // Get sample of movies for analysis
 
@@ -96,7 +98,7 @@ Content Guidelines:
     try {
       const movies = await this.getListMovies(list.id);
       const movieTitles = movies.map(m => `${m.title} (${m.year})`).join(', ');
-      
+
       const prompt = `Analyze the curated film collection "${list.name}".
 
 Description: ${list.description || 'No description provided'}
@@ -132,10 +134,12 @@ EXPLORE_FURTHER
         model: 'claude-3-5-sonnet-20241022',
         max_tokens: 1000,
         system: this.systemPrompt,
-        messages: [{
-          role: 'user',
-          content: prompt
-        }]
+        messages: [
+          {
+            role: 'user',
+            content: prompt,
+          },
+        ],
       });
 
       return response.content[0].text;
@@ -147,18 +151,16 @@ EXPLORE_FURTHER
 
   async saveListAnalysis(listId, analysis) {
     try {
-      const { error } = await supabase
-        .from('list_analyses')
-        .insert({
-          list_id: listId,
-          analysis_type: 'comprehensive',
-          claude_response: {
-            content: analysis,
-            model: 'claude-3-5-sonnet-20241022',
-            timestamp: new Date().toISOString()
-          },
-          created_at: new Date().toISOString()
-        });
+      const { error } = await supabase.from('list_analyses').insert({
+        list_id: listId,
+        analysis_type: 'comprehensive',
+        claude_response: {
+          content: analysis,
+          model: 'claude-3-5-sonnet-20241022',
+          timestamp: new Date().toISOString(),
+        },
+        created_at: new Date().toISOString(),
+      });
 
       if (error) throw error;
       return true;
@@ -171,12 +173,12 @@ EXPLORE_FURTHER
   async processBatch() {
     try {
       const lists = await this.findListsMissingAnalysis(this.maxBatchSize);
-      
+
       if (lists.length === 0) {
         return {
           success: true,
           message: 'No lists needing analysis',
-          processed: 0
+          processed: 0,
         };
       }
 
@@ -188,35 +190,34 @@ EXPLORE_FURTHER
       for (const list of lists) {
         try {
           console.log(`Processing list: ${list.name}`);
-          
+
           const analysis = await this.generateListAnalysis(list);
           const saved = await this.saveListAnalysis(list.id, analysis);
-          
+
           if (saved) {
             succeeded++;
             results.push({
               list_name: list.name,
-              status: 'success'
+              status: 'success',
             });
           } else {
             failed++;
             results.push({
               list_name: list.name,
-              status: 'save_failed'
+              status: 'save_failed',
             });
           }
-          
+
           processed++;
-          
+
           // Small delay to avoid rate limiting
           await new Promise(resolve => setTimeout(resolve, 2000));
-          
         } catch (error) {
           failed++;
           results.push({
             list_name: list.name,
             status: 'error',
-            error: error.message
+            error: error.message,
           });
           processed++;
         }
@@ -229,13 +230,13 @@ EXPLORE_FURTHER
         failed: failed,
         estimated_cost: (succeeded * 0.015).toFixed(3),
         results: results,
-        message: `Processed ${processed} lists, ${succeeded} successful`
+        message: `Processed ${processed} lists, ${succeeded} successful`,
       };
     } catch (error) {
       console.error('List batch processing failed:', error);
       return {
         success: false,
-        error: error.message
+        error: error.message,
       };
     }
   }
@@ -265,7 +266,7 @@ export default async function handler(req, res) {
     console.error('List batch processing error:', error);
     return res.status(500).json({
       success: false,
-      error: error.message
+      error: error.message,
     });
   }
 }

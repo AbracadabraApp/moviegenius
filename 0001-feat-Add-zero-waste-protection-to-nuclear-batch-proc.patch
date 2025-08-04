@@ -1,0 +1,64 @@
+From 8779688e73ee7d2ad1a855715c9cf9c0c3b1b06d Mon Sep 17 00:00:00 2001
+From: AbracadabraApp <josh.petersen@gmail.com>
+Date: Wed, 23 Jul 2025 01:04:23 -0700
+Subject: [PATCH] feat: Add zero-waste protection to nuclear batch process
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Nuclear script now respects slug_complete and has_linked_analysis flags
+to prevent regenerating existing content. Adds logging to show how many
+movies are skipped due to completion.
+
+Fixes continuous slug overwriting waste identified in zero-waste.md
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>
+---
+ scripts/nuclear-batch.js | 19 +++++++++++++++----
+ 1 file changed, 15 insertions(+), 4 deletions(-)
+
+diff --git a/scripts/nuclear-batch.js b/scripts/nuclear-batch.js
+index cbc6478c..853c106b 100644
+--- a/scripts/nuclear-batch.js
++++ b/scripts/nuclear-batch.js
+@@ -68,20 +68,31 @@ async function main() {
+   console.log('');
+ 
+   try {
+-    // Get nuclear candidates (top 1,000 movies)
++    // First, get total count for comparison
++    const { count: totalMovies } = await supabase
++      .from('movies')
++      .select('*', { count: 'exact', head: true })
++      .not('tmdb_id', 'is', null);
++
++    // Get nuclear candidates (top 1,000 movies) - respecting completion flags
+     const { data: nuclearCandidates } = await supabase
+       .from('movies')
+-      .select('id, title, year, tmdb_id')
++      .select('id, title, year, tmdb_id, has_linked_analysis, slug_complete')
+       .not('tmdb_id', 'is', null)
++      .not('has_linked_analysis', 'is', true)  // Skip movies with complete analysis
++      .not('slug_complete', 'is', true)        // Skip movies with complete slugs
+       .order('created_at', { ascending: false })
+       .limit(1000);
+ 
+     if (!nuclearCandidates || nuclearCandidates.length === 0) {
+-      console.log('❌ No nuclear candidates found');
+-      process.exit(1);
++      console.log('❌ No nuclear candidates found - all movies have complete analysis/slugs');
++      console.log(`✅ Zero-waste protection: Skipped ${totalMovies} movies with complete content`);
++      process.exit(0);
+     }
+ 
++    const skippedCount = totalMovies - nuclearCandidates.length;
+     console.log(`📊 Found ${nuclearCandidates.length} nuclear candidates`);
++    console.log(`✅ Zero-waste protection: Skipped ${skippedCount} movies with complete content`);
+ 
+     // Determine which movies to process
+     let moviesToProcess;
+-- 
+2.39.5 (Apple Git-154)
+

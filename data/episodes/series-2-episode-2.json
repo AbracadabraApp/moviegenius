@@ -1,0 +1,261 @@
+{
+  "seriesId": "2",
+  "episodeId": "2",
+  "series": {
+    "id": 2,
+    "title": "Cinema Through Time - 1970-2025",
+    "description": "How film evolved from the auteur renaissance through the present day"
+  },
+  "episode": {
+    "id": 2,
+    "title": "1980s: Blockbuster Revolution",
+    "subtitle": "High-concept cinema and spectacle filmmaking",
+    "posters": [
+      "https://image.tmdb.org/t/p/w200/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
+      "https://image.tmdb.org/t/p/w200/iuAQVI4mvjI83wnirpD8GVNRVuY.jpg",
+      "https://image.tmdb.org/t/p/w200/fxq0gKLqnXx2N8LUuN6w2KiCJaP.jpg",
+      "https://image.tmdb.org/t/p/w200/ridz7OMqff52dLtPdpHIzUB8R6z.jpg"
+    ]
+  },
+  "content": {
+    "opener": "The 1980s transformed Hollywood into a theme park of spectacle, where high-concept premises and cutting-edge special effects created the modern blockbuster template that prioritized visual excitement and broad audience appeal over intimate character studies.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "The decade began with a seismic shift toward high-concept filmmaking, where movies could be pitched in a single sentence and marketed with maximum impact. Star Wars had proven that audiences craved escapist entertainment, leading to a wave of science fiction spectacles like Blade Runner and E.T. the Extra-Terrestrial that combined emotional storytelling with groundbreaking visual effects. These films established the template for modern blockbuster filmmaking, where technological innovation served narrative ambition on an unprecedented scale."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Blade Runner",
+            "year": 1982,
+            "slug": "Scott's dystopian masterpiece redefines science fiction cinema",
+            "tmdb_id": "78",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "E.T. the Extra-Terrestrial",
+            "year": 1982,
+            "slug": "Spielberg's emotional alien friendship becomes cultural phenomenon",
+            "tmdb_id": "601",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "The Empire Strikes Back",
+            "year": 1980,
+            "slug": "Lucas deepens Star Wars mythology with darker sequel",
+            "tmdb_id": "1891",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Action cinema evolved into a carefully choreographed spectacle machine, with directors like John McTiernan and James Cameron perfecting the art of sustained tension and explosive payoffs. Die Hard revolutionized the action genre by confining its hero to a single location, while The Terminator proved that low-budget creativity could compete with major studio productions. These filmmakers understood that visceral thrills needed to be grounded in compelling characters and tight plotting to achieve lasting impact."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Die Hard",
+            "year": 1988,
+            "slug": "McTiernan's contained thriller perfects action movie formula",
+            "tmdb_id": "562",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "The Terminator",
+            "year": 1984,
+            "slug": "Cameron's time-travel thriller launches franchise filmmaking",
+            "tmdb_id": "218",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Raiders of the Lost Ark",
+            "year": 1981,
+            "slug": "Spielberg and Lucas create perfect adventure entertainment",
+            "tmdb_id": "85",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Comedy filmmakers embraced the decade's excess, creating larger-than-life characters and situations that reflected the era's cultural optimism and material ambition. Beverly Hills Cop proved that star charisma could drive massive box office success, while Ghostbusters demonstrated how supernatural comedy could become a merchandising empire. These films showed that humor could be packaged and sold with the same precision as any other entertainment product, leading to the modern concept of comedy as blockbuster entertainment."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Beverly Hills Cop",
+            "year": 1984,
+            "slug": "Murphy's star power drives action-comedy to massive success",
+            "tmdb_id": "90",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Ghostbusters",
+            "year": 1984,
+            "slug": "Reitman's supernatural comedy becomes cultural phenomenon",
+            "tmdb_id": "620",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Big",
+            "year": 1988,
+            "slug": "Marshall's body-swap fantasy showcases Hanks' versatility",
+            "tmdb_id": "2949",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Technology revolutionized filmmaking as digital effects began supplementing practical wizardry, while sound design reached new levels of sophistication that immersed audiences in sonic landscapes. Tron pioneered computer-generated imagery in mainstream cinema, while films like The Abyss pushed the boundaries of underwater filming and digital water effects. The decade established the foundation for the digital revolution that would transform cinema in the following decades, proving that technical innovation could enhance rather than replace storytelling craft."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Tron",
+            "year": 1982,
+            "slug": "Lisberger's digital world pioneers computer-generated imagery",
+            "tmdb_id": "97",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "The Abyss",
+            "year": 1989,
+            "slug": "Cameron's underwater epic showcases practical effects mastery",
+            "tmdb_id": "2756",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "An American Werewolf in London",
+            "year": 1981,
+            "slug": "Landis combines horror and comedy with groundbreaking makeup",
+            "tmdb_id": "11234",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The cultural impact of 1980s blockbuster cinema extended far beyond entertainment, creating a new economic model for Hollywood that prioritized opening weekend numbers and franchise potential over critical acclaim. Top Gun became a recruiting tool for the U.S. Navy while simultaneously defining the decade's aesthetic of masculine bravado and technological fetishism. The era's films reflected America's renewed confidence and global ambitions, establishing patterns of international distribution and marketing that continue to shape the film industry today."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Top Gun",
+            "year": 1986,
+            "slug": "Scott's aviation thriller defines 80s masculine spectacle",
+            "tmdb_id": "744",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Back to the Future",
+            "year": 1985,
+            "slug": "Zemeckis perfects time-travel adventure with heart and humor",
+            "tmdb_id": "105",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "The Breakfast Club",
+            "year": 1985,
+            "slug": "Hughes defines teen angst for the MTV generation",
+            "tmdb_id": "2105",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More 1980s Blockbuster Films",
+      "movies": [
+        {
+          "title": "Aliens",
+          "year": 1986,
+          "slug": "Cameron's action-horror sequel perfects the franchise model",
+          "tmdb_id": "679",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "The Shining",
+          "year": 1980,
+          "slug": "Kubrick's psychological horror achieves disturbing perfection",
+          "tmdb_id": "694",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Scarface",
+          "year": 1983,
+          "slug": "De Palma's crime epic captures decade's excess and ambition",
+          "tmdb_id": "111",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "The Princess Bride",
+          "year": 1987,
+          "slug": "Reiner's fairy tale adventure becomes beloved classic",
+          "tmdb_id": "2493",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Ferris Bueller's Day Off",
+          "year": 1986,
+          "slug": "Hughes' teen comedy defines youthful rebellion",
+          "tmdb_id": "9377",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "The Thing",
+          "year": 1982,
+          "slug": "Carpenter's paranoid horror showcases practical effects mastery",
+          "tmdb_id": "1091",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "RoboCop",
+          "year": 1987,
+          "slug": "Verhoeven's satire disguised as action entertainment",
+          "tmdb_id": "5548",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "When Harry Met Sally",
+          "year": 1989,
+          "slug": "Reiner's romantic comedy redefines modern relationships",
+          "tmdb_id": "639",
+          "poster_url": null,
+          "streaming": null
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-11T10:33:00.000Z",
+  "version": "1.0"
+}

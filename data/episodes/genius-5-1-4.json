@@ -1,0 +1,247 @@
+{
+  "system": "genius",
+  "themeId": 5,
+  "seriesId": 1,
+  "episodeId": 4,
+  "theme": {
+    "id": 5,
+    "title": "Topics",
+    "description": "Cultural and historical contexts in cinema",
+    "slug": "topics"
+  },
+  "series": {
+    "id": 1,
+    "title": "Decades",
+    "description": "Cinema through the decades"
+  },
+  "episode": {
+    "id": 4,
+    "title": "2000s: The Streaming Wars",
+    "subtitle": "Digital distribution emerges"
+  },
+  "content": {
+    "opener": "The dawn of digital streaming in the 2000s fundamentally transformed not just how we consume media, but how films are conceived, produced, and distributed.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "The early 2000s marked a pivotal transition as broadband internet became widespread and Netflix, founded in 1997 as a DVD-by-mail service, began laying groundwork for streaming. This technological shift coincided with significant changes in filmmaking itself. David Lynch's \"Inland Empire\" (2006) became one of the first major features shot entirely on digital video, while Michael Mann's \"Collateral\" (2004) used HD digital cameras to capture Los Angeles' nighttime landscape in ways film couldn't match. These technical innovations presaged how digital would democratize both production and distribution."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Inland Empire",
+            "year": 2006,
+            "slug": "Lynch's surreal digital experiment marked a decisive break from traditional film",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 1730,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fw9Bzwel5VkBKy9qLD2MzAMnu5I.jpg"
+          },
+          {
+            "title": "Collateral",
+            "year": 2004,
+            "slug": "Mann's innovative use of Thomson Viper digital cameras revolutionized night cinematography",
+            "streaming": "Netflix",
+            "tmdb_id": 1538,
+            "poster_url": "https://image.tmdb.org/t/p/w500/nV5316WUsVij8sVXLCF1g7TFitg.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "The YouTube Revolution"
+      },
+      {
+        "type": "text",
+        "content": "The 2005 launch of YouTube created an entirely new ecosystem for video content. While initially focused on user-generated content, it quickly became apparent that traditional barriers between amateur and professional were dissolving. Films like \"Paranormal Activity\" (2007) demonstrated how digital distribution could transform micro-budget productions into global phenomena. The \"found footage\" aesthetic, enabled by affordable digital cameras, became a legitimate artistic choice rather than merely a budget constraint. This democratization of both production and distribution challenged conventional wisdom about what constituted \"cinema.\""
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Paranormal Activity",
+            "year": 2007,
+            "slug": "Micro-budget horror that became a streaming-era phenomenon",
+            "streaming": "Paramount+",
+            "tmdb_id": 23827,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tmclkEpjeo4Zu564gf3KrwIOuKw.jpg"
+          },
+          {
+            "title": "Cloverfield",
+            "year": 2008,
+            "slug": "Found footage monster movie that leveraged viral marketing",
+            "streaming": "Amazon Prime",
+            "tmdb_id": 7191,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qIegUGJqyMMCRjkKV1s7A9MqdJ8.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Traditional Studios Adapt"
+      },
+      {
+        "type": "text",
+        "content": "Major studios initially viewed digital distribution with skepticism, but by 2008 were forced to confront changing viewer habits. This period saw experiments with simultaneous theatrical and digital releases, though theaters strongly resisted. Steven Soderbergh emerged as a key figure in this transition, with \"Bubble\" (2005) becoming one of the first films to receive a simultaneous theatrical, DVD, and digital release. The director would later become a vocal advocate for digital production and distribution, arguing that traditional models were becoming obsolete."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Bubble",
+            "year": 2005,
+            "slug": "Soderbergh's experimental simultaneous release drama",
+            "streaming": "Tubi",
+            "tmdb_id": 14788,
+            "poster_url": "https://image.tmdb.org/t/p/w500/w56oo9nREcF54sNXVYuE9QxZFjT.jpg"
+          },
+          {
+            "title": "Zodiac",
+            "year": 2007,
+            "slug": "Fincher's digital masterpiece showing high-end digital cinematography",
+            "streaming": "Netflix",
+            "tmdb_id": 1949,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6YmeO4pB7XTh8P8F960O1uA14JO.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "The Netflix Original Era Begins"
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "By the late 2000s, Netflix began transitioning from distribution to production, laying groundwork for what would become \"Netflix Originals.\" This shift was preceded by experiments in direct-to-streaming releases that bypassed traditional theatrical windows. The Duplass Brothers became early adopters of this model, with films like \"The Puffy Chair\" (2005) finding audiences through digital platforms rather than traditional theatrical release. This period also saw the emergence of \"day-and-date\" releases, where films would simultaneously appear in theaters and on streaming platforms."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Puffy Chair",
+            "year": 2005,
+            "slug": "Mumblecore pioneer that found its audience through digital distribution",
+            "streaming": "Amazon Prime",
+            "tmdb_id": 24055,
+            "poster_url": "https://image.tmdb.org/t/p/w500/p9WtAHP4JeuvGBglmymJpHpLvLZ.jpg"
+          },
+          {
+            "title": "Two Lovers",
+            "year": 2008,
+            "slug": "Early experiment in premium video-on-demand release",
+            "streaming": "Hulu",
+            "tmdb_id": 10362,
+            "poster_url": "https://image.tmdb.org/t/p/w500/skwYEUcxhUub9QCSwPDMvBySphS.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Technical Innovation and Artistic Expression"
+      },
+      {
+        "type": "text",
+        "content": "Digital distribution enabled new forms of artistic expression previously impossible. Interactive films began emerging, though still experimental. Documentary filmmakers particularly benefited, with works like \"The Corporation\" (2003) finding global audiences through digital platforms. The ability to reach niche audiences economically transformed documentary distribution. Meanwhile, filmmakers like David Fincher pushed digital cinematography's boundaries with \"Zodiac\" (2007), shot on Thomson Viper cameras, demonstrating that digital could match or exceed film's quality."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Corporation",
+            "year": 2003,
+            "slug": "Landmark documentary that found global audience through digital",
+            "streaming": "YouTube",
+            "tmdb_id": 11420,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aN7LHIKHkq6x16a4pXlaiB7PHiP.jpg"
+          },
+          {
+            "title": "Russian Ark",
+            "year": 2002,
+            "slug": "Single-take digital masterpiece only possible with new technology",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 16646,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ceEMxpXrbWo823I3KZlS5t54Nwo.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Global Cinema in the Digital Age"
+      },
+      {
+        "type": "text",
+        "content": "Digital distribution dramatically expanded access to international cinema. Films like \"City of God\" (2002) and \"Oldboy\" (2003) found global audiences through digital platforms in ways previously impossible. The Korean New Wave particularly benefited, with directors like Park Chan-wook and Bong Joon-ho gaining international recognition through digital distribution. This democratization of access challenged Hollywood's global dominance and exposed audiences to diverse storytelling traditions."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "City of God",
+            "year": 2002,
+            "slug": "Brazilian crime epic that gained global audience through digital",
+            "streaming": "HBO Max",
+            "tmdb_id": 598,
+            "poster_url": "https://image.tmdb.org/t/p/w500/k7eYdWvhYQyRQoU2TB2A2Xu2TfD.jpg"
+          },
+          {
+            "title": "Oldboy",
+            "year": 2003,
+            "slug": "Korean thriller that became streaming cult classic",
+            "streaming": "Amazon Prime",
+            "tmdb_id": 670,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pWDtjs568ZfOTMbURQBYuT4Qxka.jpg"
+          }
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Primer",
+          "year": 2004,
+          "slug": "Ultra-low-budget sci-fi that found audience through digital word-of-mouth",
+          "streaming": "Hulu",
+          "tmdb_id": 14337,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xEoq2WmDzpzxhkHEsmOYOg6BPg6.jpg"
+        },
+        {
+          "title": "Once",
+          "year": 2007,
+          "slug": "Independent Irish musical that leveraged digital distribution",
+          "streaming": "Disney+",
+          "tmdb_id": 5723,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pNrBQVwYbdnipkBq1HXl52UIePq.jpg"
+        },
+        {
+          "title": "Man on Wire",
+          "year": 2008,
+          "slug": "Documentary that exemplified new distribution possibilities",
+          "streaming": "HBO Max",
+          "tmdb_id": 14048,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1mS4rhIgHZcHIvf1beP9Av0Ui33.jpg"
+        },
+        {
+          "title": "Let the Right One In",
+          "year": 2008,
+          "slug": "Swedish horror that found global audience through streaming",
+          "streaming": "Hulu",
+          "tmdb_id": 13310,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7IG4WjaAOVDlLvLUkh513HSwhW8.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-18T17:29:17.456Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-18T17:29:17.456Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-5-topics/series-1-decades//4-2000s-the-streaming-wars.jpg"
+}

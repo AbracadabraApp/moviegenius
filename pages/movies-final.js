@@ -32,7 +32,7 @@ export default function MoviesVariation3Page() {
     router.push('/you#platforms');
   };
 
-  const handleEraExplore = (era) => {
+  const handleEraExplore = era => {
     router.push(`/genius/era/${era}`);
   };
 
@@ -46,9 +46,9 @@ export default function MoviesVariation3Page() {
         <div style={styles.scrollableContent}>
           {/* Full-width Genius Header */}
           <div style={styles.heroHeader}>
-            <img 
-              src="/images/genius-header-noir.jpg" 
-              alt="MovieGenius.AI - Classic Cinema" 
+            <img
+              src="/images/genius-header-noir.jpg"
+              alt="MovieGenius.AI - Classic Cinema"
               style={styles.heroImage}
             />
           </div>
@@ -60,7 +60,6 @@ export default function MoviesVariation3Page() {
               <h1 style={styles.stickyTitle}>Cinema Through Time</h1>
             </div>
           </div>
-          
 
           {/* This Week's Focus */}
           <div style={styles.featuredSection}>
@@ -68,16 +67,32 @@ export default function MoviesVariation3Page() {
               <div style={styles.featuredBadge}>This Week</div>
               <h2 style={styles.featuredTitle}>French New Wave Essentials</h2>
               <p style={styles.featuredDescription}>
-                Revolutionary cinema that changed filmmaking forever. Explore the movement that broke all the rules.
+                Revolutionary cinema that changed filmmaking forever. Explore the movement that
+                broke all the rules.
               </p>
             </div>
             <div style={styles.movieGrid}>
-              <MediaCard title="Breathless" year="1960" initialSlug="breathless-1960" tmdbId={756} />
-              <MediaCard title="The 400 Blows" year="1959" initialSlug="the-400-blows-1959" tmdbId={12477} />
-              <MediaCard title="Jules and Jim" year="1962" initialSlug="jules-and-jim-1962" tmdbId={14337} />
+              <MediaCard
+                title="Breathless"
+                year="1960"
+                initialSlug="breathless-1960"
+                tmdbId={756}
+              />
+              <MediaCard
+                title="The 400 Blows"
+                year="1959"
+                initialSlug="the-400-blows-1959"
+                tmdbId={12477}
+              />
+              <MediaCard
+                title="Jules and Jim"
+                year="1962"
+                initialSlug="jules-and-jim-1962"
+                tmdbId={14337}
+              />
             </div>
             <div style={styles.sectionFooter}>
-              <button 
+              <button
                 onClick={() => handleEraExplore('french-new-wave')}
                 style={styles.sectionButton}
               >
@@ -96,15 +111,22 @@ export default function MoviesVariation3Page() {
               </div>
             </div>
             <div style={styles.movieRow}>
-              <MediaCard title="The Godfather" year="1972" initialSlug="the-godfather-1972" tmdbId={238} />
+              <MediaCard
+                title="The Godfather"
+                year="1972"
+                initialSlug="the-godfather-1972"
+                tmdbId={238}
+              />
               <MediaCard title="Chinatown" year="1974" initialSlug="chinatown-1974" tmdbId={2091} />
-              <MediaCard title="Annie Hall" year="1977" initialSlug="annie-hall-1977" tmdbId={1049} />
+              <MediaCard
+                title="Annie Hall"
+                year="1977"
+                initialSlug="annie-hall-1977"
+                tmdbId={1049}
+              />
             </div>
             <div style={styles.sectionFooter}>
-              <button 
-                onClick={() => handleEraExplore('70s-auteurs')}
-                style={styles.sectionButton}
-              >
+              <button onClick={() => handleEraExplore('70s-auteurs')} style={styles.sectionButton}>
                 Dive Deeper <span style={styles.playTriangle}>▶</span>
               </button>
             </div>
@@ -119,15 +141,22 @@ export default function MoviesVariation3Page() {
               </div>
             </div>
             <div style={styles.movieRow}>
-              <MediaCard title="Pulp Fiction" year="1994" initialSlug="pulp-fiction-1994" tmdbId={680} />
+              <MediaCard
+                title="Pulp Fiction"
+                year="1994"
+                initialSlug="pulp-fiction-1994"
+                tmdbId={680}
+              />
               <MediaCard title="Fargo" year="1996" initialSlug="fargo-1996" tmdbId={275} />
-              <MediaCard title="The Thin Red Line" year="1998" initialSlug="the-thin-red-line-1998" tmdbId={8741} />
+              <MediaCard
+                title="The Thin Red Line"
+                year="1998"
+                initialSlug="the-thin-red-line-1998"
+                tmdbId={8741}
+              />
             </div>
             <div style={styles.sectionFooter}>
-              <button 
-                onClick={() => handleEraExplore('90s-indie')}
-                style={styles.sectionButton}
-              >
+              <button onClick={() => handleEraExplore('90s-indie')} style={styles.sectionButton}>
                 Dive Deeper <span style={styles.playTriangle}>▶</span>
               </button>
             </div>
@@ -144,13 +173,15 @@ export default function MoviesVariation3Page() {
             <div style={styles.movieRow}>
               <MediaCard title="Parasite" year="2019" initialSlug="parasite-2019" tmdbId={496243} />
               <MediaCard title="Roma" year="2018" initialSlug="roma-2018" tmdbId={548473} />
-              <MediaCard title="Moonlight" year="2016" initialSlug="moonlight-2016" tmdbId={376867} />
+              <MediaCard
+                title="Moonlight"
+                year="2016"
+                initialSlug="moonlight-2016"
+                tmdbId={376867}
+              />
             </div>
             <div style={styles.sectionFooter}>
-              <button 
-                onClick={() => handleEraExplore('2010s-global')}
-                style={styles.sectionButton}
-              >
+              <button onClick={() => handleEraExplore('2010s-global')} style={styles.sectionButton}>
                 Dive Deeper <span style={styles.playTriangle}>▶</span>
               </button>
             </div>
@@ -160,7 +191,7 @@ export default function MoviesVariation3Page() {
           <div style={styles.movementsSection}>
             <h2 style={styles.movementsTitle}>Explore Film Movements</h2>
             <div style={styles.movementGrid}>
-              <div 
+              <div
                 style={styles.movementCard}
                 onClick={() => handleEraExplore('italian-neorealism')}
               >
@@ -168,8 +199,8 @@ export default function MoviesVariation3Page() {
                 <h4 style={styles.movementName}>Italian Neorealism</h4>
                 <p style={styles.movementPeriod}>1940s-1950s</p>
               </div>
-              
-              <div 
+
+              <div
                 style={styles.movementCard}
                 onClick={() => handleEraExplore('german-expressionism')}
               >
@@ -177,8 +208,8 @@ export default function MoviesVariation3Page() {
                 <h4 style={styles.movementName}>German Expressionism</h4>
                 <p style={styles.movementPeriod}>1920s-1930s</p>
               </div>
-              
-              <div 
+
+              <div
                 style={styles.movementCard}
                 onClick={() => handleEraExplore('hong-kong-new-wave')}
               >
@@ -186,18 +217,14 @@ export default function MoviesVariation3Page() {
                 <h4 style={styles.movementName}>Hong Kong New Wave</h4>
                 <p style={styles.movementPeriod}>1980s-1990s</p>
               </div>
-              
-              <div 
-                style={styles.movementCard}
-                onClick={() => handleEraExplore('dogme-95')}
-              >
+
+              <div style={styles.movementCard} onClick={() => handleEraExplore('dogme-95')}>
                 <span style={styles.movementEmoji}>📜</span>
                 <h4 style={styles.movementName}>Dogme 95</h4>
                 <p style={styles.movementPeriod}>1990s-2000s</p>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </PhoneFrame>
@@ -209,7 +236,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     height: '100%',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     backgroundColor: '#f9fafb',
   },
   heroHeader: {

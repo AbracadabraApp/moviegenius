@@ -1,0 +1,197 @@
+{
+  "system": "genius",
+  "themeId": 2,
+  "seriesId": 2,
+  "episodeId": 5,
+  "theme": {
+    "id": 2,
+    "title": "Directors",
+    "description": "Visionary filmmakers and their personal cinema",
+    "slug": "directors"
+  },
+  "series": {
+    "id": 2,
+    "title": "International Masters",
+    "description": "Global cinematic visionaries"
+  },
+  "episode": {
+    "id": 5,
+    "title": "Wong Kar-wai's Romantic Melancholy",
+    "subtitle": "Hong Kong mood master"
+  },
+  "content": {
+    "opener": "Wong Kar-wai's hypnotic blend of neon-soaked visuals, fractured narratives, and profound emotional longing has redefined the language of romantic cinema while capturing Hong Kong's unique temporal anxieties.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "Wong emerged during Hong Kong's New Wave cinema movement in the late 1980s, developing his distinctive style with cinematographer Christopher Doyle. Their collaboration began with Days of Being Wild (1990), which established Wong's core themes of unrequited love, missed connections, and the fluid nature of time. The film's groundbreaking visual approach – featuring step-printed action sequences, saturated colors, and unconventional framing – created a dreamlike atmosphere that would become his signature. Set in 1960s Hong Kong, the film follows Yuddy (Leslie Cheung), a rebellious young man whose romantic entanglements with two women reflect the director's preoccupation with memory and longing."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Days of Being Wild",
+            "year": 1990,
+            "slug": "A haunting exploration of unfulfilled romance in 1960s Hong Kong featuring Leslie Cheung",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 18311,
+            "poster_url": "https://image.tmdb.org/t/p/w500/acfLUO8E61u0ooWS6htbzTHDBcI.jpg"
+          },
+          {
+            "title": "Chungking Express",
+            "year": 1994,
+            "slug": "Two interweaving stories of lovesick cops in Hong Kong, featuring Tony Leung and Faye Wong",
+            "streaming": "HBO Max",
+            "tmdb_id": 11104,
+            "poster_url": "https://image.tmdb.org/t/p/w500/43I9DcNoCzpyzK8JCkJYpHqHqGG.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "The Masterwork Years"
+      },
+      {
+        "type": "text",
+        "content": "In the mid-1990s, Wong reached new heights with Chungking Express (1994) and Fallen Angels (1995), both shot in a kinetic style that captured Hong Kong's frenetic urban energy while exploring themes of isolation and connection. Chungking Express, with its split narrative structure and pop-culture infused energy, became his international breakthrough. The film's innovative use of step-printing, whip pans, and handheld camera work created a visual language that influenced filmmakers worldwide. Christopher Doyle's cinematography emphasized the city's claustrophobic spaces and neon-lit streets, while Wong's direction extracted remarkably intimate performances from stars Tony Leung and Faye Wong."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Fallen Angels",
+            "year": 1995,
+            "slug": "Neo-noir tale of assassins and misfits in nighttime Hong Kong",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 11220,
+            "poster_url": "https://image.tmdb.org/t/p/w500/yyM9BPdwttK5LKZSLvHae7QPKo1.jpg"
+          },
+          {
+            "title": "Happy Together",
+            "year": 1997,
+            "slug": "Story of two Hong Kong men in a turbulent relationship in Argentina",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 18329,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kO4KjUkQOfWSBw06Bdl7m6AlEP7.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Wong's examination of love and longing reached its apex with In the Mood for Love (2000), widely considered his masterpiece. Set in 1962 Hong Kong, the film follows two neighbors (Tony Leung and Maggie Cheung) who discover their spouses are having an affair. Wong's restraint in depicting their unconsummated romance, coupled with Christopher Doyle and Mark Lee Ping-bin's sumptuous cinematography, created an unparalleled study of repressed desire. The film's careful attention to period detail, including Cheung's stunning cheongsam dresses and the atmospheric set design, perfectly captured the era's social constraints."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "In the Mood for Love",
+            "year": 2000,
+            "slug": "Masterful romance about two neighbors bound by their spouses' infidelity",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 843,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iYypPT4bhqXfq1b6EnmxvRt6b2Y.jpg"
+          },
+          {
+            "title": "2046",
+            "year": 2004,
+            "slug": "Sci-fi tinged sequel to In the Mood for Love exploring memory and loss",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 844,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jIN65qw0Giplo4CshzMrxz204Wn.jpg"
+          }
+        ]
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The experimental 2046 (2004) continued the themes of In the Mood for Love while pushing into science fiction territory. The film's complex narrative structure, weaving between past, present, and an imagined future, represented Wong's most ambitious exploration of time and memory. The production, which took five years to complete, showcased his perfectionist tendencies and willingness to reshape projects during filming. The result combined retro-futuristic imagery with his signature romantic melancholy, creating a meditation on how past loves haunt our present."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "My Blueberry Nights",
+            "year": 2007,
+            "slug": "Wong's English-language debut starring Norah Jones",
+            "streaming": "Amazon Prime",
+            "tmdb_id": 1989,
+            "poster_url": "https://image.tmdb.org/t/p/w500/w9w3m2IB9QRZXxi6R51ZamKv3HS.jpg"
+          },
+          {
+            "title": "The Grandmaster",
+            "year": 2013,
+            "slug": "Stylized biographical film about Ip Man starring Tony Leung",
+            "streaming": "Netflix",
+            "tmdb_id": 44865,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ydBVVIscL6TsX5hYztA5YpBCwJ3.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Wong's meticulous attention to visual detail extends to his use of music, which often combines Chinese pop songs, Latin American ballads, and Western classical pieces to create a distinctive emotional atmosphere. His films frequently employ recurring musical motifs – most famously Nat King Cole's \"Quizás, Quizás, Quizás\" in In the Mood for Love – that become inextricably linked with specific characters or emotional states. This musical approach, combined with his signature slow-motion sequences and emphasis on gesture over dialogue, creates a cinema of mood that transcends cultural and linguistic barriers."
+      },
+      {
+        "type": "text",
+        "content": "The director's influence on contemporary cinema cannot be overstated. His visual style has inspired filmmakers from Barry Jenkins to Sofia Coppola, while his approach to narrative and emotion has influenced a generation of Asian directors. Wong's portrayal of Hong Kong, particularly in the years leading up to the 1997 handover to China, captured the city's unique position between East and West, tradition and modernity. His films often reflect the collective anxiety about time and identity that permeated Hong Kong society during this period."
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Wong's most recent work, The Grandmaster (2013), applied his distinctive style to the martial arts genre, focusing on the life of Wing Chun grandmaster Ip Man. The film's elaborate fight sequences, choreographed by Yuen Woo-ping, were filmed with Wong's characteristic attention to detail and emotional resonance. While more traditionally structured than his earlier works, the film maintained his themes of lost time and unfulfilled relationships, proving his ability to work within genre constraints while maintaining his artistic vision."
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Ashes of Time",
+          "year": 1994,
+          "slug": "Experimental wuxia film with an all-star cast",
+          "streaming": "Not Currently Streaming",
+          "tmdb_id": 40751,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2MvwmEDXm0Mp5gC67jDLxqgmHUK.jpg"
+        },
+        {
+          "title": "As Tears Go By",
+          "year": 1988,
+          "slug": "Wong's debut film, a Hong Kong gangster drama",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 24163,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2ePFbsguw4d9UZ3hA61vCUQOBhh.jpg"
+        },
+        {
+          "title": "The Hand",
+          "year": 2004,
+          "slug": "Short film contribution to Eros anthology",
+          "streaming": "Criterion Channel",
+          "tmdb_id": null,
+          "poster_url": null
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-17T23:02:20.965Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-17T23:02:20.965Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-2-directors/series-2-international-masters//5-wong-kar-wai-s-romantic-melancholy.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:27.376Z",
+    "hasLinks": false,
+    "linksAdded": 0,
+    "tier": "tier2_link_only"
+  }
+}

@@ -1,7 +1,7 @@
 // pages/api/educational-list-analysis.js
 /**
  * Educational List Analysis API
- * 
+ *
  * Generates engaging educational analysis for film studies and academic content.
  * Uses same interactive format as ask responses for consistent user experience.
  * Focuses on film movements, techniques, and cultural topics with learning insights.
@@ -38,7 +38,7 @@ export default async function handler(req, res) {
       return res.status(200).json({
         analysis: existingAnalysis.claude_response.raw_content,
         listName: listName,
-        cached: true
+        cached: true,
       });
     }
 
@@ -46,29 +46,33 @@ export default async function handler(req, res) {
     console.log(`Generating new educational analysis for: ${listName}`);
     const { Anthropic } = await import('@anthropic-ai/sdk');
     const { buildPrompt } = await import('../../lib/prompts/builder.js');
-    
+
     const anthropic = new Anthropic({
       apiKey: process.env.ANTHROPIC_API_KEY,
     });
 
     // Use modular prompt system for EDUCATIONAL context (same format as ASK)
-    const promptConfig = buildPrompt('EDUCATIONAL', 'Focus on educational insights and learning opportunities for film students and enthusiasts');
+    const promptConfig = buildPrompt(
+      'EDUCATIONAL',
+      'Focus on educational insights and learning opportunities for film students and enthusiasts'
+    );
 
     const message = await anthropic.messages.create({
       ...promptConfig,
       messages: [
         {
           role: 'user',
-          content: claudePrompt
-        }
-      ]
+          content: claudePrompt,
+        },
+      ],
     });
 
     const analysis = message.content[0].text;
-    
+
     // Calculate cost estimate (rough)
-    const costEstimate = (message.usage.input_tokens * 3 / 1000000) + (message.usage.output_tokens * 15 / 1000000);
-    
+    const costEstimate =
+      (message.usage.input_tokens * 3) / 1000000 + (message.usage.output_tokens * 15) / 1000000;
+
     // Save to database
     const analysisData = {
       raw_content: analysis,
@@ -76,17 +80,15 @@ export default async function handler(req, res) {
       cost_estimate: costEstimate,
       input_tokens: message.usage.input_tokens,
       output_tokens: message.usage.output_tokens,
-      model: promptConfig.model // Use configurable model from prompt system
+      model: promptConfig.model, // Use configurable model from prompt system
     };
 
-    const { error: saveError } = await supabase
-      .from('list_analyses')
-      .insert({
-        list_id: listId,
-        analysis_type: 'educational_analysis',
-        claude_response: analysisData,
-        query_text: `Educational analysis for ${listName}`
-      });
+    const { error: saveError } = await supabase.from('list_analyses').insert({
+      list_id: listId,
+      analysis_type: 'educational_analysis',
+      claude_response: analysisData,
+      query_text: `Educational analysis for ${listName}`,
+    });
 
     if (saveError) {
       console.error('Failed to save educational analysis to database:', saveError);
@@ -95,18 +97,17 @@ export default async function handler(req, res) {
       console.log(`Saved educational analysis for ${listName} - Cost: $${costEstimate.toFixed(4)}`);
     }
 
-    res.status(200).json({ 
+    res.status(200).json({
       analysis: analysis,
       listName: listName,
       cached: false,
-      cost: costEstimate
+      cost: costEstimate,
     });
-
   } catch (error) {
     console.error('Error generating educational analysis:', error);
-    res.status(500).json({ 
+    res.status(500).json({
       error: 'Failed to generate educational analysis',
-      analysis: `${listName} represents a significant area of cinematic study that has shaped our understanding of film as both art and cultural expression. This topic encompasses key developments in filmmaking technique, artistic vision, and cultural impact that continue to influence contemporary cinema.`
+      analysis: `${listName} represents a significant area of cinematic study that has shaped our understanding of film as both art and cultural expression. This topic encompasses key developments in filmmaking technique, artistic vision, and cultural impact that continue to influence contemporary cinema.`,
     });
   }
 }

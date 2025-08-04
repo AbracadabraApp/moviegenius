@@ -1,0 +1,253 @@
+{
+  "system": "genius",
+  "themeId": 1,
+  "seriesId": 3,
+  "episodeId": 3,
+  "theme": {
+    "id": 1,
+    "title": "Genres",
+    "description": "Film genres and their evolution",
+    "slug": "genres"
+  },
+  "series": {
+    "id": 3,
+    "title": "Comedy Through the Ages",
+    "description": "Laughter and social commentary"
+  },
+  "episode": {
+    "id": 3,
+    "title": "British Comedy: Ealing to Python",
+    "subtitle": "Dry wit and social satire"
+  },
+  "content": {
+    "opener": "From the genteel satire of Ealing Studios to the anarchic surrealism of Monty Python, British comedy has wielded wit as a weapon of social commentary and cultural revolution.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "The golden age of Ealing Studios (1947-1957) established the template for British comedy's distinctive blend of gentle satire and social observation. Under Michael Balcon's leadership, Ealing produced comedies that reflected post-war Britain's class anxieties and changing social landscape. The studio's masterpiece <a href=\"/movie/11898\" class=\"movie-title\" data-tmdb-id=\"11898\">Kind Hearts and Coronets</a> (1949) used pitch-black humor to skewer aristocratic pretension, with Alec Guinness's tour-de-force performance playing eight different characters. Director Robert Hamer employed sophisticated visual composition and subtle editing to enhance the film's mordant wit, while Dennis Price's silky narration added layers of ironic distance."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Kind Hearts and Coronets",
+            "year": 1949,
+            "slug": "Aristocratic serial killer comedy with Alec Guinness in multiple roles",
+            "streaming": "BritBox",
+            "tmdb_id": 11898,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eBvpyRjD3DcCsWgdV6Y9oqPS7dO.jpg"
+          },
+          {
+            "title": "The Lavender Hill Mob",
+            "year": 1951,
+            "slug": "Bank heist comedy about mild-mannered clerk turned criminal",
+            "streaming": "HBO Max",
+            "tmdb_id": 32961,
+            "poster_url": "https://image.tmdb.org/t/p/w500/k0MfdrAshO2247Z9xu1FyulK5i9.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "The Working Class Takes Center Stage"
+      },
+      {
+        "type": "text",
+        "content": "By the early 1960s, British comedy shifted toward \"kitchen sink\" realism and working-class perspectives. Films like <a href=\"/movie/26535\" class=\"movie-title\" data-tmdb-id=\"26535\">Billy Liar</a> (1963) and <a href=\"/movie/33765\" class=\"movie-title\" data-tmdb-id=\"33765\">A Kind of Loving</a> (1962) mixed humor with social commentary, while the \"Carry On\" series began its long run of innuendo-laden farce. Director Tony Richardson's <a href=\"/movie/16103\" class=\"movie-title\" data-tmdb-id=\"16103\">The Loneliness of the Long Distance Runner</a> (1962) exemplified this new wave, using comedy to explore class consciousness and rebellion. Cinematographer Walter Lassally's documentary-style photography brought gritty authenticity to these stories, while writers like Keith Waterhouse and Willis Hall infused scripts with regional dialects and contemporary attitudes."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Billy Liar",
+            "year": 1963,
+            "slug": "Fantasy-tinged comedy about a working-class dreamer",
+            "streaming": "BritBox",
+            "tmdb_id": 26535,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8YUzVyN3HdedaK7oGVf2nVrsf4R.jpg"
+          },
+          {
+            "title": "Carry On Sergeant",
+            "year": 1958,
+            "slug": "First in the long-running comedy series",
+            "streaming": "BritBox",
+            "tmdb_id": 32110,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5nb596JUBIugTkBFugD9Ek6TKJl.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "The Satire Boom"
+      },
+      {
+        "type": "text",
+        "content": "The early 1960s saw British comedy turn sharply satirical with \"Beyond the Fringe\" and \"That Was The Week That Was\" influencing a new generation of filmmakers. Richard Lester's <a href=\"/movie/704\" class=\"movie-title\" data-tmdb-id=\"704\">A Hard Day's Night</a> (1964) revolutionized comedy filmmaking with its quick-cut style and documentary techniques. The film's influence extended beyond its Beatles showcase, establishing a new visual grammar for comedy. Meanwhile, <a href=\"/movie/935\" class=\"movie-title\" data-tmdb-id=\"935\">Dr. Strangelove</a> (1964), though American-produced, represented the apex of British satirical sensibility through Peter Sellers' multiple performances and Stanley Kubrick's mordant direction."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "A Hard Day's Night",
+            "year": 1964,
+            "slug": "Revolutionary Beatles comedy that defined an era",
+            "streaming": "Amazon Prime",
+            "tmdb_id": 704,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6Ulsccp2VkaVU5qbya3bxm9JG4x.jpg"
+          },
+          {
+            "title": "Dr. Strangelove",
+            "year": 1964,
+            "slug": "Cold War satire with Peter Sellers in multiple roles",
+            "streaming": "Netflix",
+            "tmdb_id": 935,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6x7MzQ6BOMlRzam1StcmPO9v61g.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "The Python Revolution"
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Monty Python's transition from television to film marked a seismic shift in comedy. <a href=\"/movie/762\" class=\"movie-title\" data-tmdb-id=\"762\">Monty Python and the Holy Grail</a> (1975) combined medieval satire with absurdist humor, while <a href=\"/movie/583\" class=\"movie-title\" data-tmdb-id=\"583\">Life of Brian</a> (1979) daringly tackled religious themes with unprecedented irreverence. Directors Terry Jones and Terry Gilliam developed a distinctive visual style that matched the group's surreal comedy. Their innovative use of animation, fourth-wall breaking, and non-linear narrative influenced generations of comedic filmmakers. The Python team's intellectual approach to comedy, mixing high culture references with low comedy, created a new paradigm for sophisticated humor."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Monty Python and the Holy Grail",
+            "year": 1975,
+            "slug": "Medieval comedy classic with surreal twists",
+            "streaming": "Netflix",
+            "tmdb_id": 762,
+            "poster_url": "https://image.tmdb.org/t/p/w500/hWx1ANiWEWWyzKPN0us35HCGnhQ.jpg"
+          },
+          {
+            "title": "Life of Brian",
+            "year": 1979,
+            "slug": "Religious satire that sparked controversy",
+            "streaming": "Netflix",
+            "tmdb_id": 583,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lSSA64WF0M0BXnjwr2quMh6shCl.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "The Handmade Films Era"
+      },
+      {
+        "type": "text",
+        "content": "George Harrison's Handmade Films produced some of the most distinctive British comedies of the 1980s. \"Withnail and I\" (1987) captured the end of the 1960s dream with dark humor and literary flair, while <a href=\"/movie/57565\" class=\"movie-title\" data-tmdb-id=\"57565\">A Private Function</a> (1984) returned to Ealing-style social satire in its story of post-war rationing. Director Bruce Robinson's work on \"Withnail\" created a new template for cult comedy, combining quotable dialogue with genuine pathos. Cinematographer Peter Hannan's atmospheric photography elevated these films beyond mere comedy into genuine cultural documents."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Withnail and I",
+            "year": 1987,
+            "slug": "Cult classic about two out-of-work actors",
+            "streaming": "BritBox",
+            "tmdb_id": 13446,
+            "poster_url": "https://image.tmdb.org/t/p/w500/i18cIp8A10A2JgByrfA9oIC9299.jpg"
+          },
+          {
+            "title": "Time Bandits",
+            "year": 1981,
+            "slug": "Fantasy comedy from Terry Gilliam",
+            "streaming": "HBO Max",
+            "tmdb_id": 36819,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4VZtpwdhHQSa4LUkvujyGAHb1hG.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Working Title and Modern British Comedy"
+      },
+      {
+        "type": "text",
+        "content": "The 1990s saw Working Title Films establish a new brand of British comedy with international appeal. <a href=\"/movie/712\" class=\"movie-title\" data-tmdb-id=\"712\">Four Weddings and a Funeral</a> (1994) created the template for the modern British romantic comedy, while <a href=\"/movie/1281\" class=\"movie-title\" data-tmdb-id=\"1281\">Bean</a> (1997) successfully translated television comedy to the global screen. Richard Curtis emerged as a dominant voice, crafting films that balanced specifically British humor with universal themes. These films often employed a more polished, commercial visual style than their predecessors, shot by cinematographers like Michael Coulter who brought a glossy sheen to British comedy."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Four Weddings and a Funeral",
+            "year": 1994,
+            "slug": "Romantic comedy that defined an era",
+            "streaming": "Amazon Prime",
+            "tmdb_id": 712,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qa72G2VS0bpxms6yo0tI9vsHm2e.jpg"
+          },
+          {
+            "title": "Bean",
+            "year": 1997,
+            "slug": "Mr. Bean's first theatrical film",
+            "streaming": "Netflix",
+            "tmdb_id": 1281,
+            "poster_url": "https://image.tmdb.org/t/p/w500/IwrDPrB4d2DMcpnGkvan46yINL.jpg"
+          }
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "The Man in the White Suit",
+          "year": 1951,
+          "slug": "Ealing sci-fi comedy about industrial progress",
+          "streaming": "BritBox",
+          "tmdb_id": 32568,
+          "poster_url": "https://image.tmdb.org/t/p/w500/laTLoNZB7Ar3ZDoQmspBDVa5mbC.jpg"
+        },
+        {
+          "title": "Local Hero",
+          "year": 1983,
+          "slug": "Gentle Scottish comedy about American businessman",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 11235,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jqxD0H9a1rg5bXftsm6gsNOjt4n.jpg"
+        },
+        {
+          "title": "A Fish Called Wanda",
+          "year": 1988,
+          "slug": "Anglo-American heist comedy",
+          "streaming": "Amazon Prime",
+          "tmdb_id": 623,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hkSGFNVfEEUXFCxRZDITFHVhUlu.jpg"
+        },
+        {
+          "title": "Shaun of the Dead",
+          "year": 2004,
+          "slug": "Zombie comedy that reinvented British humor",
+          "streaming": "Netflix",
+          "tmdb_id": 747,
+          "poster_url": "https://image.tmdb.org/t/p/w500/dgXPhzNJH8HFTBjXPB177yNx6RI.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-17T22:55:55.775Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-17T22:55:55.775Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-1-genres/series-3-comedy-through-the-ages//3-british-comedy-ealing-to-python.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:12.160Z",
+    "hasLinks": true,
+    "linksAdded": 6,
+    "tier": "tier2_link_only"
+  }
+}

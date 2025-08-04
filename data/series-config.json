@@ -1,0 +1,476 @@
+{
+  "1": {
+    "id": 1,
+    "title": "Classic Film Noir",
+    "description": "The birth and golden age of film noir",
+    "episodes": [
+      {
+        "id": 1,
+        "title": "German Expressionism",
+        "subtitle": "The template for noir morality",
+        "posters": []
+      },
+      {
+        "id": 2,
+        "title": "From Novels to Noir",
+        "subtitle": "Detective fiction meets cinema",
+        "posters": []
+      },
+      {
+        "id": 3,
+        "title": "Urban Anxiety",
+        "subtitle": "City streets and moral decay",
+        "posters": []
+      },
+      {
+        "id": 4,
+        "title": "Femme Fatales",
+        "subtitle": "Dangerous women and desire",
+        "posters": []
+      },
+      {
+        "id": 5,
+        "title": "Moral Ambiguity",
+        "subtitle": "Heroes and villains blur together",
+        "posters": []
+      },
+      {
+        "id": 6,
+        "title": "Noir's Legacy",
+        "subtitle": "How shadows shaped modern cinema",
+        "posters": []
+      }
+    ]
+  },
+  "2": {
+    "id": 2,
+    "title": "Suspense & Horror",
+    "description": "Fear, tension, and psychological terror",
+    "episodes": [
+      {
+        "id": 1,
+        "title": "Giallo: Italian Horror Aesthetics",
+        "subtitle": "Argento's stylized violence",
+        "posters": []
+      },
+      {
+        "id": 2,
+        "title": "Cronenberg's Body Horror",
+        "subtitle": "Flesh and psychological terror",
+        "posters": []
+      },
+      {
+        "id": 3,
+        "title": "Modern Psychological Thrillers",
+        "subtitle": "Mind games and manipulation",
+        "posters": []
+      },
+      {
+        "id": 4,
+        "title": "Elevated Horror: A24 & Beyond",
+        "subtitle": "Art house fear",
+        "posters": []
+      }
+    ]
+  },
+  "3": {
+    "id": 3,
+    "title": "Comedy Through the Ages",
+    "description": "Laughter and social commentary",
+    "episodes": [
+      {
+        "id": 1,
+        "title": "Silent Comedy Stars",
+        "subtitle": "Chaplin, Keaton, and visual humor",
+        "posters": []
+      },
+      {
+        "id": 2,
+        "title": "Screwball Comedy: Battle of the Sexes",
+        "subtitle": "Rapid-fire wit and romance",
+        "posters": []
+      },
+      {
+        "id": 3,
+        "title": "British Comedy: Ealing to Python",
+        "subtitle": "Dry wit and social satire",
+        "posters": []
+      },
+      {
+        "id": 4,
+        "title": "Saturday Night Live Cinema",
+        "subtitle": "TV comedy goes to movies",
+        "posters": []
+      },
+      {
+        "id": 5,
+        "title": "Judd Apatow & The New Comedy",
+        "subtitle": "Bromance and improvisation",
+        "posters": []
+      }
+    ]
+  },
+  "4": {
+    "id": 4,
+    "title": "Women Directors",
+    "description": "Pioneering female voices in cinema",
+    "episodes": [
+      {
+        "id": 1,
+        "title": "Silent Era Pioneers: Weber & Pickford",
+        "subtitle": "Early women behind the camera",
+        "posters": []
+      },
+      {
+        "id": 2,
+        "title": "Ida Lupino: The Forgotten Auteur",
+        "subtitle": "Actor-director breaking barriers",
+        "posters": []
+      },
+      {
+        "id": 3,
+        "title": "Chantal Akerman: Radical Minimalism",
+        "subtitle": "Feminist time and space",
+        "posters": []
+      },
+      {
+        "id": 4,
+        "title": "Jane Campion: Feminine Gothic",
+        "subtitle": "New Zealand's poetic vision",
+        "posters": []
+      },
+      {
+        "id": 5,
+        "title": "Kathryn Bigelow: Action Auteur",
+        "subtitle": "Redefining genre filmmaking",
+        "posters": []
+      },
+      {
+        "id": 6,
+        "title": "Contemporary Voices: Gerwig to Zhao",
+        "subtitle": "New generation storytellers",
+        "posters": []
+      }
+    ]
+  },
+  "5": {
+    "id": 5,
+    "title": "International Masters",
+    "description": "Global cinematic visionaries",
+    "episodes": [
+      {
+        "id": 1,
+        "title": "Kurosawa's Epic Vision",
+        "subtitle": "Japanese cinema giant",
+        "posters": []
+      },
+      {
+        "id": 2,
+        "title": "Bergman's Psychological Landscapes",
+        "subtitle": "Swedish introspection",
+        "posters": []
+      },
+      {
+        "id": 3,
+        "title": "Fellini's Surreal Italy",
+        "subtitle": "Dreams and reality collide",
+        "posters": []
+      },
+      {
+        "id": 4,
+        "title": "Tarkovsky's Spiritual Cinema",
+        "subtitle": "Soviet poetry in motion",
+        "posters": []
+      },
+      {
+        "id": 5,
+        "title": "Wong Kar-wai's Romantic Melancholy",
+        "subtitle": "Hong Kong mood master",
+        "posters": []
+      },
+      {
+        "id": 6,
+        "title": "Bong Joon-ho's Genre Mastery",
+        "subtitle": "Korean social commentary",
+        "posters": []
+      }
+    ]
+  },
+  "6": {
+    "id": 6,
+    "title": "Documentary Masters",
+    "description": "Truth and reality in cinema",
+    "episodes": [
+      {
+        "id": 1,
+        "title": "Frederick Wiseman: Institutional Observer",
+        "subtitle": "Fly-on-the-wall realism",
+        "posters": []
+      },
+      {
+        "id": 2,
+        "title": "Errol Morris: Truth Detective",
+        "subtitle": "Investigation through film",
+        "posters": []
+      },
+      {
+        "id": 3,
+        "title": "Michael Moore: Provocateur Documentarian",
+        "subtitle": "Political activism through cinema",
+        "posters": []
+      }
+    ]
+  },
+  "7": {
+    "id": 7,
+    "title": "Contemporary Auteurs",
+    "description": "Modern visionary filmmakers",
+    "episodes": [
+      {
+        "id": 1,
+        "title": "The Coen Brothers: Genre Pastiche & Visual Wit",
+        "subtitle": "Postmodern storytellers",
+        "posters": []
+      },
+      {
+        "id": 2,
+        "title": "Christopher Nolan: Time, Memory & IMAX Spectacle",
+        "subtitle": "Puzzle box narratives",
+        "posters": []
+      },
+      {
+        "id": 3,
+        "title": "Denis Villeneuve: Sci-Fi Atmosphere & Scale",
+        "subtitle": "Thoughtful spectacle",
+        "posters": []
+      },
+      {
+        "id": 4,
+        "title": "Jordan Peele: Horror Through Social Commentary",
+        "subtitle": "Genre as activism",
+        "posters": []
+      }
+    ]
+  },
+  "8": {
+    "id": 8,
+    "title": "New Waves",
+    "description": "Revolutionary movements that changed cinema",
+    "episodes": [
+      {
+        "id": 1,
+        "title": "French New Wave: Breathless Revolution",
+        "subtitle": "Godard and Truffaut's innovation",
+        "posters": []
+      },
+      {
+        "id": 2,
+        "title": "Italian Neorealism: Truth in Cinema",
+        "subtitle": "Post-war authenticity",
+        "posters": []
+      },
+      {
+        "id": 3,
+        "title": "British Kitchen Sink & Social Realism",
+        "subtitle": "Working class stories",
+        "posters": []
+      },
+      {
+        "id": 4,
+        "title": "Japanese New Wave: Oshima & Imamura",
+        "subtitle": "Breaking tradition",
+        "posters": []
+      },
+      {
+        "id": 5,
+        "title": "Czech New Wave: Behind Iron Curtain",
+        "subtitle": "Political allegory and freedom",
+        "posters": []
+      },
+      {
+        "id": 6,
+        "title": "German New Cinema: Herzog & Fassbinder",
+        "subtitle": "Post-war artistic renewal",
+        "posters": []
+      }
+    ]
+  },
+  "9": {
+    "id": 9,
+    "title": "German Cinema Heritage",
+    "description": "From Weimar to Hollywood influence",
+    "episodes": [
+      {
+        "id": 1,
+        "title": "German Expressionism & Silent Era",
+        "subtitle": "Visual psychology emerges",
+        "posters": []
+      },
+      {
+        "id": 2,
+        "title": "Murnau's Camera Movement Revolution",
+        "subtitle": "Unchaining the camera",
+        "posters": []
+      },
+      {
+        "id": 3,
+        "title": "Fritz Lang's Architectural Psychology",
+        "subtitle": "Space as character",
+        "posters": []
+      },
+      {
+        "id": 4,
+        "title": "From Weimar to Hollywood: The Émigré Influence",
+        "subtitle": "European artistry in America",
+        "posters": []
+      }
+    ]
+  },
+  "10": {
+    "id": 10,
+    "title": "Technical Evolution",
+    "description": "How cinema technology shapes storytelling",
+    "episodes": [
+      {
+        "id": 1,
+        "title": "Hitchcock's Camera Psychology",
+        "subtitle": "Visual manipulation master",
+        "posters": []
+      },
+      {
+        "id": 2,
+        "title": "Birth of Cinema: Méliès to Griffith",
+        "subtitle": "Magic and narrative emerge",
+        "posters": []
+      },
+      {
+        "id": 3,
+        "title": "Studio System & Star Power",
+        "subtitle": "Hollywood's golden age machine",
+        "posters": []
+      },
+      {
+        "id": 4,
+        "title": "Technicolor Revolution",
+        "subtitle": "Color transforms cinema",
+        "posters": []
+      },
+      {
+        "id": 5,
+        "title": "Digital Revolution Begins",
+        "subtitle": "CGI changes everything",
+        "posters": []
+      },
+      {
+        "id": 6,
+        "title": "Virtual Production Revolution",
+        "subtitle": "LED walls and real-time rendering",
+        "posters": []
+      },
+      {
+        "id": 7,
+        "title": "AI & the Future of Filmmaking",
+        "subtitle": "Artificial intelligence enters cinema",
+        "posters": []
+      }
+    ]
+  },
+  "11": {
+    "id": 11,
+    "title": "Decades",
+    "description": "Cinema through the decades",
+    "episodes": [
+      {
+        "id": 1,
+        "title": "1970s: The Auteur Renaissance",
+        "subtitle": "Directors take control",
+        "posters": []
+      },
+      {
+        "id": 2,
+        "title": "1980s: Blockbuster Revolution",
+        "subtitle": "High concept and spectacle",
+        "posters": []
+      },
+      {
+        "id": 3,
+        "title": "1990s: Independent Renaissance",
+        "subtitle": "Sundance and artistic freedom",
+        "posters": []
+      },
+      {
+        "id": 4,
+        "title": "2000s: The Streaming Wars",
+        "subtitle": "Digital distribution emerges",
+        "posters": []
+      },
+      {
+        "id": 5,
+        "title": "2010s: Global Cinema Rising",
+        "subtitle": "International voices gain prominence",
+        "posters": []
+      }
+    ]
+  },
+  "12": {
+    "id": 12,
+    "title": "Historical Periods",
+    "description": "How cinema reflects and shapes history",
+    "episodes": [
+      {
+        "id": 1,
+        "title": "WWII & Cinema's War Effort",
+        "subtitle": "Movies as propaganda and art",
+        "posters": []
+      },
+      {
+        "id": 2,
+        "title": "Independent Film Renaissance",
+        "subtitle": "Breaking free from studios",
+        "posters": []
+      },
+      {
+        "id": 3,
+        "title": "International Cinema Breaks Through",
+        "subtitle": "World cinema reaches America",
+        "posters": []
+      },
+      {
+        "id": 4,
+        "title": "Franchise Filmmaking Dominance",
+        "subtitle": "Sequels and shared universes",
+        "posters": []
+      },
+      {
+        "id": 5,
+        "title": "Streaming Changes Everything",
+        "subtitle": "Netflix revolutionizes distribution",
+        "posters": []
+      },
+      {
+        "id": 6,
+        "title": "Marvel & the Cinematic Universe",
+        "subtitle": "Superhero storytelling dominates",
+        "posters": []
+      },
+      {
+        "id": 7,
+        "title": "A24 & Independent Prestige",
+        "subtitle": "Art house meets commercial success",
+        "posters": []
+      },
+      {
+        "id": 8,
+        "title": "International Streaming Wars",
+        "subtitle": "Global content competition",
+        "posters": []
+      },
+      {
+        "id": 9,
+        "title": "Post-Pandemic Cinema",
+        "subtitle": "How COVID changed moviegoing",
+        "posters": []
+      }
+    ]
+  }
+}

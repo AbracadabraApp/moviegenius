@@ -1,0 +1,268 @@
+{
+  "system": "genius",
+  "themeId": 5,
+  "seriesId": 2,
+  "episodeId": 4,
+  "theme": {
+    "id": 5,
+    "title": "Topics",
+    "description": "Cultural and historical contexts in cinema",
+    "slug": "topics"
+  },
+  "series": {
+    "id": 2,
+    "title": "Historical Periods",
+    "description": "How cinema reflects and shapes history"
+  },
+  "episode": {
+    "id": 4,
+    "title": "Franchise Filmmaking Dominance",
+    "subtitle": "Sequels and shared universes"
+  },
+  "content": {
+    "opener": "The rise of franchise filmmaking has fundamentally transformed Hollywood's business model, creative processes, and storytelling approaches since the late 20th century.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "The modern franchise era can be traced to the phenomenal success of Star Wars (1977), which demonstrated the immense potential of merchandising and expanded universe storytelling. George Lucas's groundbreaking approach to world-building created a template that would influence decades of filmmaking. The film's success led to an intentionally planned trilogy, with The Empire Strikes Back (1980) and Return of the Jedi (1983) expanding the narrative scope while maintaining consistent visual and thematic elements. This model proved that audiences would invest in long-form storytelling across multiple films, setting the stage for future franchise development."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Star Wars",
+            "year": 1977,
+            "slug": "George Lucas's space opera that launched modern franchise filmmaking",
+            "streaming": "Disney+",
+            "tmdb_id": 11,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg"
+          },
+          {
+            "title": "Raiders of the Lost Ark",
+            "year": 1981,
+            "slug": "First Indiana Jones film establishing another major Lucas/Spielberg franchise",
+            "streaming": "Paramount+",
+            "tmdb_id": 85,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "The Marvel Revolution"
+      },
+      {
+        "type": "text",
+        "content": "The Marvel Cinematic Universe, launched with Iron Man (2008), revolutionized franchise filmmaking by introducing the concept of an interconnected cinematic universe. Producer Kevin Feige's ambitious vision created a new template for long-form storytelling across multiple films and characters. The MCU's approach to maintaining consistent tone while allowing directorial freedom within established parameters has influenced every major studio. The careful planning of phases, strategic character introductions, and deliberate narrative threading culminated in Avengers: Infinity War (2018) and Endgame (2019), demonstrating the commercial potential of long-term narrative investment."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Iron Man",
+            "year": 2008,
+            "slug": "The film that launched the MCU and established its signature tone",
+            "streaming": "Disney+",
+            "tmdb_id": 1726,
+            "poster_url": "https://image.tmdb.org/t/p/w500/78lPtwv72eTNqFW9COBYI0dWDJa.jpg"
+          },
+          {
+            "title": "The Avengers",
+            "year": 2012,
+            "slug": "First major superhero team-up film proving the shared universe concept",
+            "streaming": "Disney+",
+            "tmdb_id": 24428,
+            "poster_url": "https://image.tmdb.org/t/p/w500/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The success of franchises has dramatically impacted production budgets and risk assessment in Hollywood. Studios now prioritize \"pre-awareness\" properties with built-in audiences, leading to the acquisition and development of intellectual property portfolios. Warner Bros.' attempt to replicate Marvel's success with the DC Extended Universe illustrates both the allure and challenges of shared universe filmmaking. Films like Man of Steel (2013) and Batman v Superman: Dawn of Justice (2016) show how different creative approaches within the same universe can lead to varying results, both critically and commercially."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Man of Steel",
+            "year": 2013,
+            "slug": "Superman reboot launching DC's shared universe",
+            "streaming": "HBO Max",
+            "tmdb_id": 49521,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8GFtkImmK0K1VaUChR0n9O61CFU.jpg"
+          },
+          {
+            "title": "Wonder Woman",
+            "year": 2017,
+            "slug": "DC's first critically acclaimed shared universe entry",
+            "streaming": "HBO Max",
+            "tmdb_id": 297762,
+            "poster_url": "https://image.tmdb.org/t/p/w500/v4ncgZjG2Zu8ZW5al1vIZTsSjqX.jpg"
+          }
+        ]
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The influence of franchise filmmaking extends beyond superhero films. Universal's attempt to create the Dark Universe with The Mummy (2017) demonstrates the risks of forcing interconnected narratives without proper foundation. Conversely, the Fast & Furious franchise evolved organically from modest beginnings into a global action phenomenon, proving that franchises can grow beyond their original conception. The series' transformation from street racing films to international heist and spy adventures shows how franchises can adapt to changing audience tastes while maintaining core character relationships."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Fast and the Furious",
+            "year": 2001,
+            "slug": "Street racing film that launched a global franchise",
+            "streaming": "Netflix",
+            "tmdb_id": 9799,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gqY0ITBgT7A82poL9jv851qdnIb.jpg"
+          },
+          {
+            "title": "Fast Five",
+            "year": 2011,
+            "slug": "Pivotal entry that redefined the franchise's scope",
+            "streaming": "HBO Max",
+            "tmdb_id": 51497,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gEfQjjQwY7fh5bI4GlG0RrBu7Pz.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The rise of streaming platforms has further complicated franchise development. Netflix's strategy of creating original content has led to franchise attempts like Bright (2017) and The Old Guard (2020), while Disney+ has expanded existing franchises through series like The Mandalorian. This evolution shows how streaming platforms are changing how franchises are developed and consumed, with different release strategies and narrative approaches becoming viable."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Mandalorian",
+            "year": 2019,
+            "slug": "Star Wars streaming series expanding the franchise",
+            "streaming": "Disney+",
+            "tmdb_id": null,
+            "poster_url": null
+          },
+          {
+            "title": "Extraction",
+            "year": 2020,
+            "slug": "Netflix original spawning a planned action franchise",
+            "streaming": "Netflix",
+            "tmdb_id": 545609,
+            "poster_url": "https://image.tmdb.org/t/p/w500/nygOUcBKPHFTbxsYRFZVePqgPK6.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Legacy sequels have emerged as a significant trend, attempting to bridge nostalgia with new storytelling. Films like Blade Runner 2049 (2017), Mad Max: Fury Road (2015), and Top Gun: Maverick (2022) demonstrate how dormant properties can be successfully revived while respecting their origins. These films often grapple with themes of generational change and legacy, both narratively and meta-textually."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Blade Runner 2049",
+            "year": 2017,
+            "slug": "Critically acclaimed sequel to the 1982 classic",
+            "streaming": "HBO Max",
+            "tmdb_id": 335984,
+            "poster_url": "https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg"
+          },
+          {
+            "title": "Top Gun: Maverick",
+            "year": 2022,
+            "slug": "Legacy sequel that became a global phenomenon",
+            "streaming": "Paramount+",
+            "tmdb_id": 361743,
+            "poster_url": "https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg"
+          }
+        ]
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The impact of franchise dominance on original filmmaking remains a contentious issue. While mid-budget original films have become rarer in theatrical release, some filmmakers have adapted by incorporating franchise elements into original works. Christopher Nolan's Inception (2010) and Tenet (2020) show how original high-concept films can succeed by adopting the scale and marketing approach of franchises while maintaining creative independence."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Inception",
+            "year": 2010,
+            "slug": "Original blockbuster with franchise-level production values",
+            "streaming": "Netflix",
+            "tmdb_id": 27205,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg"
+          },
+          {
+            "title": "Tenet",
+            "year": 2020,
+            "slug": "High-concept original film marketed like a franchise",
+            "streaming": "HBO Max",
+            "tmdb_id": 577922,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aCIFMriQh8rvhxpN1IWGgvH0Tlg.jpg"
+          }
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "The Lord of the Rings",
+          "year": 2001,
+          "slug": "Fantasy trilogy setting new standards for adaptation",
+          "streaming": "HBO Max",
+          "tmdb_id": 123,
+          "poster_url": "https://image.tmdb.org/t/p/w500/liW0mjvTyLs7UCumaHhx3PpU4VT.jpg"
+        },
+        {
+          "title": "Harry Potter series",
+          "year": 2001,
+          "slug": "Young adult franchise that proved the value of consistent world-building",
+          "streaming": "HBO Max",
+          "tmdb_id": null,
+          "poster_url": null
+        },
+        {
+          "title": "Mission: Impossible series",
+          "year": 1996,
+          "slug": "Long-running franchise that consistently reinvents itself",
+          "streaming": "Paramount+",
+          "tmdb_id": null,
+          "poster_url": null
+        },
+        {
+          "title": "Jurassic World",
+          "year": 2015,
+          "slug": "Legacy sequel launching new trilogy",
+          "streaming": "Peacock",
+          "tmdb_id": 135397,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rhr4y79GpxQF9IsfJItRXVaoGs4.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-18T17:32:01.835Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-18T17:32:01.835Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-5-topics/series-2-historical-periods//4-franchise-filmmaking-dominance.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:32:03.172Z",
+    "hasLinks": false,
+    "linksAdded": 0,
+    "tier": "tier2_link_only"
+  }
+}

@@ -7,7 +7,7 @@
   },
   {
     "name": "Nolan",
-    "canonicalSlug": "christopher-nolan", 
+    "canonicalSlug": "christopher-nolan",
     "confidence": 0.85,
     "context": "film-discussion",
     "requireContext": true
@@ -15,7 +15,7 @@
   {
     "name": "Leo DiCaprio",
     "canonicalSlug": "leonardo-dicaprio",
-    "confidence": 0.90
+    "confidence": 0.9
   },
   {
     "name": "DiCaprio",
@@ -41,7 +41,7 @@
   {
     "name": "Marty Scorsese",
     "canonicalSlug": "martin-scorsese",
-    "confidence": 0.90
+    "confidence": 0.9
   },
   {
     "name": "Tarantino",
@@ -53,7 +53,7 @@
   {
     "name": "QT",
     "canonicalSlug": "quentin-tarantino",
-    "confidence": 0.70,
+    "confidence": 0.7,
     "context": "film-discussion",
     "requireContext": true
   },
@@ -74,28 +74,28 @@
   {
     "name": "Eggers",
     "canonicalSlug": "robert-eggers",
-    "confidence": 0.80,
+    "confidence": 0.8,
     "context": "film-discussion",
     "requireContext": true
   },
   {
     "name": "Peele",
     "canonicalSlug": "jordan-peele",
-    "confidence": 0.80,
+    "confidence": 0.8,
     "context": "film-discussion",
     "requireContext": true
   },
   {
     "name": "Aster",
     "canonicalSlug": "ari-aster",
-    "confidence": 0.80,
+    "confidence": 0.8,
     "context": "film-discussion",
     "requireContext": true
   },
   {
     "name": "Gerwig",
     "canonicalSlug": "greta-gerwig",
-    "confidence": 0.80,
+    "confidence": 0.8,
     "context": "film-discussion",
     "requireContext": true
   }

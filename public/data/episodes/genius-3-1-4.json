@@ -1,0 +1,221 @@
+{
+  "system": "genius",
+  "themeId": 3,
+  "seriesId": 1,
+  "episodeId": 4,
+  "theme": {
+    "id": 3,
+    "title": "Movements",
+    "description": "Revolutionary cinema movements that changed film",
+    "slug": "movements"
+  },
+  "series": {
+    "id": 1,
+    "title": "New Waves",
+    "description": "Revolutionary movements that changed cinema"
+  },
+  "episode": {
+    "id": 4,
+    "title": "Japanese New Wave: Oshima & Imamura",
+    "subtitle": "Breaking tradition"
+  },
+  "content": {
+    "opener": "The Japanese New Wave of the 1960s represented a radical break from traditional Japanese cinema, with directors Nagisa Oshima and Shohei Imamura leading a revolutionary movement that challenged both artistic and social conventions.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "The Japanese New Wave emerged in the late 1950s as a direct response to the studio system's rigid controls and Japan's post-war transformation. Nagisa Oshima, often called the \"Japanese Godard,\" began his career at Shochiku Studios before breaking away to make more provocative independent films. His 1960 film \"Night and Fog in Japan\" directly confronted Japan's political turmoil, using complex camera movements and non-linear narrative structures to examine the failure of leftist movements. The film was pulled from theaters after just three days, cementing Oshima's reputation as a controversial figure willing to challenge authority."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Night and Fog in Japan",
+            "year": 1960,
+            "slug": "Political drama examining leftist movements through innovative narrative structure",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 109276,
+            "poster_url": "https://image.tmdb.org/t/p/w500/aISevPUvqMcElqyL4nilpkxusSg.jpg"
+          },
+          {
+            "title": "Death By Hanging",
+            "year": 1968,
+            "slug": "Surrealist critique of capital punishment and Japanese nationalism",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 98193,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tszrnBe8XACsDxLJjt1rKfFHfHi.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Breaking Social Taboos and Cinematic Conventions"
+      },
+      {
+        "type": "text",
+        "content": "Shohei Imamura approached the New Wave from a different angle, focusing on what he called \"the lower part of the human body\" - the messy, primitive aspects of Japanese society that polite cinema ignored. His 1966 masterpiece \"The Pornographers\" exemplified this approach, following a pornographic filmmaker through the lower depths of Osaka society. Imamura's documentary background influenced his style, combining realistic handheld camera work with complex metaphorical structures. Both he and Oshima rejected the carefully composed aesthetics of classical Japanese cinema, embracing a more immediate, visceral visual style."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Pornographers",
+            "year": 1966,
+            "slug": "Dark comedy examining Japanese society through the lens of a porn filmmaker",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 42718,
+            "poster_url": "https://image.tmdb.org/t/p/w500/seIiQOJDUmOUQ6bx2AanzuHXncH.jpg"
+          },
+          {
+            "title": "The Insect Woman",
+            "year": 1963,
+            "slug": "Epic study of a working-class woman's survival through decades of Japanese history",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 42984,
+            "poster_url": "https://image.tmdb.org/t/p/w500/tIY9Phiuk1rQOSpXLe4d4j0Msd0.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Oshima's <a href=\"/movie/5879\" class=\"movie-title\" data-tmdb-id=\"5879\">In the Realm of the Senses</a> (1976) marked a culmination of the movement's transgressive tendencies, pushing boundaries with its explicit sexuality and political metaphors. The film's examination of obsessive love and death challenged both Japanese censorship and traditional narrative conventions. Shot in careful compositions that contrasted with its shocking content, it demonstrated how the New Wave directors could combine classical technique with revolutionary content. The film's international success helped establish Japanese New Wave cinema's global influence."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "In the Realm of the Senses",
+            "year": 1976,
+            "slug": "Controversial examination of sexuality and politics in pre-war Japan",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 5879,
+            "poster_url": "https://image.tmdb.org/t/p/w500/AiFQbgjgSXWPfbi9iIYT39iXWMW.jpg"
+          },
+          {
+            "title": "Empire of Passion",
+            "year": 1978,
+            "slug": "Ghost story exploring forbidden love and social constraints",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 49096,
+            "poster_url": "https://image.tmdb.org/t/p/w500/x7Kr9Q1riDmFzrNsacdXb68d6fZ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Imamura's anthropological interests led him to explore Japan's rural traditions and marginalized communities. <a href=\"/movie/42113\" class=\"movie-title\" data-tmdb-id=\"42113\">The Ballad of Narayama</a> (1983) represented a mature evolution of New Wave principles, combining documentary-like observation with powerful symbolism. His focus on strong female characters and social outcasts challenged Japanese cinema's traditional gender roles and class representations. The film's success, winning the Palme d'Or at Cannes, demonstrated how New Wave directors could maintain their radical perspective while achieving international recognition."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Ballad of Narayama",
+            "year": 1983,
+            "slug": "Powerful drama about rural traditions and elderly sacrifice",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 42113,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ewYZmeoqzE5XsL0Jlcorlu9iwGe.jpg"
+          },
+          {
+            "title": "Vengeance Is Mine",
+            "year": 1979,
+            "slug": "Based on true story of serial killer, examining post-war Japanese society",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 42170,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7mzlay0miUkplT0EsKdR8znOVpe.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Technical innovation was central to the movement's impact. Oshima's <a href=\"/movie/941152\" class=\"movie-title\" data-tmdb-id=\"941152\">Boy</a> (1969) used color symbolism and wide-screen composition to create a critique of contemporary Japan, while Imamura's <a href=\"/movie/31104\" class=\"movie-title\" data-tmdb-id=\"31104\">Pigs and Battleships</a> (1961) employed dynamic camera movement and experimental editing to capture the chaos of post-war Yokosuka. These technical choices weren't merely stylistic - they represented a fundamental break with the measured, traditional aesthetic of Japanese cinema."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Boy",
+            "year": 1969,
+            "slug": "Story of family exploiting child for insurance fraud",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 941152,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jX7x55A1DAsiigkytvNaztRzch6.jpg"
+          },
+          {
+            "title": "Pigs and Battleships",
+            "year": 1961,
+            "slug": "Dark comedy about post-war Japan's American occupation",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 31104,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9WfCDU8hF3zgFGf9IXdyL0j7Rot.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The movement's influence extended beyond Japan, inspiring international filmmakers and contributing to the global art cinema discourse. Oshima's \"Merry Christmas, Mr. Lawrence\" (1983) demonstrated how New Wave directors could work within international co-productions while maintaining their distinctive voices. The film's exploration of cultural conflict and masculine identity showed how the movement's themes could resonate with global audiences."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Merry Christmas, Mr. Lawrence",
+            "year": 1983,
+            "slug": "POW drama starring David Bowie, examining cultural clash",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 11948,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qxlu6aiWxD16gkOUyGkcWDzrfwV.jpg"
+          },
+          {
+            "title": "Violence at Noon",
+            "year": 1966,
+            "slug": "Experimental narrative about a serial rapist, using over 2000 cuts",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 42720,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4c2JVOW4rsumhXhRS8CIbSzAU1M.jpg"
+          }
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "The Man Who Left His Will on Film",
+          "year": 1970,
+          "slug": "Experimental film about student activism and cinema",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 104343,
+          "poster_url": "https://image.tmdb.org/t/p/w500/2kCrkdG9r8kXTUotItRPLGzDACf.jpg"
+        },
+        {
+          "title": "Black Rain",
+          "year": 1989,
+          "slug": "Imamura's powerful examination of atomic bomb survivors",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 4105,
+          "poster_url": "https://image.tmdb.org/t/p/w500/funhGWt9ee3Uwb6Ar8SGCCvbJdV.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-18T17:03:24.628Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-18T17:03:24.628Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-3-movements/series-1-new-waves//4-japanese-new-wave-oshima-imamura.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:38.224Z",
+    "hasLinks": true,
+    "linksAdded": 3,
+    "tier": "tier2_link_only"
+  }
+}

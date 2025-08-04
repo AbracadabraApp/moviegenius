@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-07-26T01:24:08.454Z",
+  "productionUrl": "https://moviegenius-production.up.railway.app",
+  "results": {
+    "deploymentReady": true,
+    "smokeTestsPassed": true,
+    "fullTestsPassed": false,
+    "overallStatus": "FAILURE"
+  },
+  "summary": {
+    "criticalRoutes": [
+      "/movie/11",
+      "/movie/550",
+      "/movie/238",
+      "/movie/155",
+      "/movie/78"
+    ],
+    "expectedBehavior": "All routes should return 200 status with proper movie content",
+    "nuclearStaticFixes": "Deployment includes populated nuclear-static directory and validation"
+  }
+}

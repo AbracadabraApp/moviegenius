@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming Analysis Proof of Concept</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .movie-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .movie-title {
+            font-size: 2.5em;
+            margin: 0;
+            color: #fff;
+        }
+        
+        .movie-year {
+            font-size: 1.2em;
+            color: #888;
+            margin-top: 5px;
+        }
+        
+        .streaming-container {
+            background: #2a2a2a;
+            padding: 30px;
+            border-radius: 8px;
+            min-height: 400px;
+            position: relative;
+        }
+        
+        .analysis-text {
+            font-size: 1.1em;
+            line-height: 1.8;
+            white-space: pre-wrap;
+        }
+        
+        .cursor {
+            display: inline-block;
+            background: #fff;
+            width: 2px;
+            height: 1.2em;
+            animation: blink 1s infinite;
+            margin-left: 2px;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        
+        .status {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 0.9em;
+            color: #666;
+        }
+        
+        .complete-indicator {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        
+        .start-button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1em;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        
+        .start-button:hover {
+            background: #0056b3;
+        }
+        
+        .start-button:disabled {
+            background: #666;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="movie-header">
+        <h1 class="movie-title">2001: A Space Odyssey</h1>
+        <div class="movie-year">1968</div>
+    </div>
+    
+    <button id="startButton" class="start-button">Start Streaming Analysis</button>
+    
+    <div class="streaming-container">
+        <div class="status" id="status">Ready to stream...</div>
+        <div class="analysis-text" id="analysisText"></div>
+        <span class="cursor" id="cursor" style="display: none;"></span>
+    </div>
+
+    <script>
+        const startButton = document.getElementById('startButton');
+        const analysisText = document.getElementById('analysisText');
+        const cursor = document.getElementById('cursor');
+        const status = document.getElementById('status');
+        
+        let isStreaming = false;
+        
+        startButton.addEventListener('click', startStreaming);
+        
+        async function startStreaming() {
+            if (isStreaming) return;
+            
+            isStreaming = true;
+            startButton.disabled = true;
+            startButton.textContent = 'Streaming...';
+            
+            // Clear previous content
+            analysisText.textContent = '';
+            cursor.style.display = 'inline-block';
+            status.textContent = 'Streaming analysis...';
+            
+            try {
+                console.log('🚀 Starting streaming request...');
+                
+                const response = await fetch('/api/streaming-poc');
+                const reader = response.body.getReader();
+                
+                let buffer = '';
+                
+                while (true) {
+                    const { done, value } = await reader.read();
+                    
+                    if (done) {
+                        console.log('✅ Stream complete');
+                        break;
+                    }
+                    
+                    const chunk = new TextDecoder().decode(value);
+                    console.log('📝 Received chunk:', chunk.substring(0, 50) + '...');
+                    
+                    if (chunk.includes('__STREAMING_COMPLETE__')) {
+                        cursor.style.display = 'none';
+                        status.textContent = '✅ Analysis Complete';
+                        status.className = 'status complete-indicator';
+                        break;
+                    } else {
+                        // Add chunk to buffer and display with typewriter effect
+                        buffer += chunk;
+                        await typewriterEffect(chunk);
+                    }
+                }
+                
+            } catch (error) {
+                console.error('❌ Streaming failed:', error);
+                status.textContent = '❌ Streaming failed';
+                cursor.style.display = 'none';
+            }
+            
+            isStreaming = false;
+            startButton.disabled = false;
+            startButton.textContent = 'Start Streaming Analysis';
+        }
+        
+        async function typewriterEffect(text) {
+            // Add text character by character for typewriter effect
+            for (let i = 0; i < text.length; i++) {
+                analysisText.textContent += text[i];
+                
+                // Small delay for typewriter effect (faster than actual typing)
+                await new Promise(resolve => setTimeout(resolve, 20));
+            }
+        }
+    </script>
+</body>
+</html>

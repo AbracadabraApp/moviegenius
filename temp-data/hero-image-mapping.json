@@ -1,0 +1,129 @@
+{
+  "mappings": {
+    "film-noir": {
+      "theme_image": "/images/hero/film-noir/theme.jpg",
+      "default_image": "/images/hero/film-noir/1-german-expressionism.jpg",
+      "episodes": {
+        "german-expressionism": "/images/hero/film-noir/1-german-expressionism.jpg",
+        "from-novels-to-noir": "/images/hero/film-noir/2-novel.jpg",
+        "urban-anxiety": "/images/hero/film-noir/3-mitchum.jpg",
+        "femme-fatales": "/images/hero/film-noir/4-femme-fateles.jpg",
+        "moral-ambiguity": "/images/hero/film-noir/5-moral-ambiguity.jpg",
+        "noirs-legacy": "/images/hero/film-noir/6-noirs-legacy.jpg"
+      }
+    },
+    "horror-suspense": {
+      "theme_image": "/images/hero/horror-suspense/1-giallo.jpg",
+      "default_image": "/images/hero/horror-suspense/1-giallo.jpg",
+      "episodes": {
+        "giallo-italian-horror": "/images/hero/horror-suspense/1-giallo.jpg",
+        "cronenberg-body-horror": "/images/hero/horror-suspense/2-cronenberG.jpg",
+        "modern-psychological-thrillers": "/images/hero/horror-suspense/1-giallo.jpg",
+        "elevated-horror-a24": "/images/hero/horror-suspense/2-cronenberG.jpg"
+      }
+    },
+    "comedy-through-time": {
+      "theme_image": "/images/hero/default.jpg",
+      "default_image": "/images/hero/default.jpg",
+      "episodes": {
+        "silent-comedy-stars": "/images/hero/default.jpg",
+        "screwball-comedy": "/images/hero/default.jpg",
+        "british-comedy": "/images/hero/default.jpg",
+        "saturday-night-live-cinema": "/images/hero/default.jpg",
+        "judd-apatow-new-comedy": "/images/hero/default.jpg"
+      }
+    },
+    "women-directors": {
+      "theme_image": "/images/hero/default.jpg",
+      "default_image": "/images/hero/default.jpg",
+      "episodes": {
+        "silent-era-pioneers": "/images/hero/default.jpg",
+        "ida-lupino-forgotten-auteur": "/images/hero/default.jpg",
+        "chantal-akerman-radical-minimalism": "/images/hero/default.jpg",
+        "jane-campion-feminine-gothic": "/images/hero/default.jpg",
+        "kathryn-bigelow-action-auteur": "/images/hero/default.jpg",
+        "contemporary-voices": "/images/hero/default.jpg"
+      }
+    },
+    "world-cinema": {
+      "theme_image": "/images/hero/theme-5-world/theme.jpg",
+      "default_image": "/images/hero/theme-5-world/theme.jpg",
+      "episodes": {
+        "kurosawa-epic-vision": "/images/hero/theme-5-world/theme.jpg",
+        "bergman-psychological-landscapes": "/images/hero/theme-5-world/theme.jpg",
+        "fellini-surreal-italy": "/images/hero/theme-5-world/theme.jpg",
+        "tarkovsky-spiritual-cinema": "/images/hero/theme-5-world/theme.jpg",
+        "wong-kar-wai-romantic-melancholy": "/images/hero/theme-5-world/theme.jpg",
+        "bong-joon-ho-genre-mastery": "/images/hero/theme-5-world/theme.jpg"
+      }
+    },
+    "acclaimed-directors": {
+      "theme_image": "/images/hero/theme-3-auteur/theme.jpg",
+      "default_image": "/images/hero/theme-3-auteur/theme.jpg",
+      "episodes": {
+        "coen-brothers-genre-pastiche": "/images/hero/theme-3-auteur/theme.jpg",
+        "christopher-nolan-time-memory": "/images/hero/theme-3-auteur/theme.jpg",
+        "denis-villeneuve-sci-fi": "/images/hero/theme-2-scifi/theme.jpg",
+        "jordan-peele-horror-social": "/images/hero/horror-suspense/1-giallo.jpg",
+        "frederick-wiseman-institutional": "/images/hero/theme-3-auteur/theme.jpg",
+        "errol-morris-truth-detective": "/images/hero/theme-3-auteur/theme.jpg",
+        "michael-moore-provocateur": "/images/hero/theme-3-auteur/theme.jpg",
+        "fritz-lang-architectural-psychology": "/images/hero/film-noir/1-german-expressionism.jpg"
+      }
+    },
+    "avant-garde-film": {
+      "theme_image": "/images/hero/theme-4-genre/theme.jpg",
+      "default_image": "/images/hero/theme-4-genre/theme.jpg",
+      "episodes": {
+        "french-new-wave": "/images/hero/theme-4-genre/theme.jpg",
+        "italian-neorealism": "/images/hero/theme-4-genre/theme.jpg",
+        "british-kitchen-sink": "/images/hero/theme-4-genre/theme.jpg",
+        "japanese-new-wave": "/images/hero/theme-5-world/theme.jpg",
+        "czech-new-wave": "/images/hero/theme-4-genre/theme.jpg",
+        "german-new-cinema": "/images/hero/theme-4-genre/theme.jpg",
+        "german-expressionism-silent": "/images/hero/film-noir/1-german-expressionism.jpg"
+      }
+    },
+    "magic-of-moviemaking": {
+      "theme_image": "/images/hero/theme-6-technical/theme.jpg",
+      "default_image": "/images/hero/theme-6-technical/theme.jpg",
+      "episodes": {
+        "hitchcock-camera-psychology": "/images/hero/theme-6-technical/theme.jpg",
+        "birth-of-cinema": "/images/hero/theme-6-technical/theme.jpg",
+        "studio-system-star-power": "/images/hero/theme-6-technical/theme.jpg",
+        "technicolor-revolution": "/images/hero/theme-6-technical/theme.jpg",
+        "digital-revolution-begins": "/images/hero/theme-6-technical/theme.jpg",
+        "virtual-production-revolution": "/images/hero/theme-6-technical/theme.jpg",
+        "ai-future-filmmaking": "/images/hero/theme-6-technical/theme.jpg",
+        "murnau-camera-movement": "/images/hero/theme-6-technical/theme.jpg"
+      }
+    },
+    "cinema-through-decades": {
+      "theme_image": "/images/hero/theme-4-genre/theme.jpg",
+      "default_image": "/images/hero/theme-4-genre/theme.jpg",
+      "episodes": {
+        "1970s-auteur-renaissance": "/images/hero/theme-3-auteur/theme.jpg",
+        "1980s-blockbuster-revolution": "/images/hero/theme-4-genre/theme.jpg",
+        "1990s-independent-renaissance": "/images/hero/theme-4-genre/theme.jpg",
+        "2000s-streaming-wars": "/images/hero/theme-6-technical/theme.jpg",
+        "2010s-global-cinema-rising": "/images/hero/theme-5-world/theme.jpg"
+      }
+    },
+    "cinema-cultural-impact": {
+      "theme_image": "/images/hero/theme-4-genre/theme.jpg",
+      "default_image": "/images/hero/theme-4-genre/theme.jpg",
+      "episodes": {
+        "wwii-cinema-war-effort": "/images/hero/theme-4-genre/theme.jpg",
+        "independent-film-renaissance": "/images/hero/theme-4-genre/theme.jpg",
+        "international-cinema-breaks-through": "/images/hero/theme-5-world/theme.jpg",
+        "franchise-filmmaking-dominance": "/images/hero/theme-4-genre/theme.jpg",
+        "streaming-changes-everything": "/images/hero/theme-6-technical/theme.jpg",
+        "marvel-cinematic-universe": "/images/hero/theme-4-genre/theme.jpg",
+        "a24-independent-prestige": "/images/hero/theme-4-genre/theme.jpg",
+        "international-streaming-wars": "/images/hero/theme-6-technical/theme.jpg",
+        "post-pandemic-cinema": "/images/hero/theme-4-genre/theme.jpg",
+        "weimar-to-hollywood": "/images/hero/film-noir/1-german-expressionism.jpg"
+      }
+    }
+  }
+}

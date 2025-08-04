@@ -1,0 +1,232 @@
+{
+  "system": "genius",
+  "themeId": 2,
+  "seriesId": 1,
+  "episodeId": 2,
+  "theme": {
+    "id": 2,
+    "title": "Directors",
+    "description": "Visionary filmmakers and their personal cinema",
+    "slug": "directors"
+  },
+  "series": {
+    "id": 1,
+    "title": "Women Directors",
+    "description": "Pioneering female voices in cinema"
+  },
+  "episode": {
+    "id": 2,
+    "title": "Ida Lupino: The Forgotten Auteur",
+    "subtitle": "Actor-director breaking barriers"
+  },
+  "content": {
+    "opener": "In an era when female directors were virtually nonexistent in Hollywood, Ida Lupino blazed a revolutionary trail as both a celebrated actress and groundbreaking director, tackling controversial subjects that major studios wouldn't touch.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "Lupino's transition from actress to director in the late 1940s marked a singular achievement in Hollywood history. After establishing herself as a compelling dramatic actress in films like <a href=\"/movie/27725\" class=\"movie-title\" data-tmdb-id=\"27725\">High Sierra</a> (1941) and <a href=\"/movie/36612\" class=\"movie-title\" data-tmdb-id=\"36612\">The Hard Way</a> (1943), Lupino became frustrated with the limitations of studio system roles. In 1949, she co-founded The Filmakers, an independent production company, becoming the first woman to produce, direct, and write major American films since Dorothy Arzner. Her directorial debut <a href=\"/movie/126265\" class=\"movie-title\" data-tmdb-id=\"126265\">Not Wanted</a> (1949) demonstrated her willingness to tackle taboo subjects, focusing on unwed motherhood with a documentary-like realism that distinguished her work from mainstream Hollywood productions."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Not Wanted",
+            "year": 1949,
+            "slug": "Groundbreaking drama about unwed motherhood and social stigma",
+            "streaming": "Available on The Criterion Channel",
+            "tmdb_id": 126265,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ubSC4Ryy1RjNmGPutHedrwCdPEN.jpg"
+          },
+          {
+            "title": "High Sierra",
+            "year": 1941,
+            "slug": "Crime drama starring Lupino opposite Humphrey Bogart",
+            "streaming": "HBO Max",
+            "tmdb_id": 27725,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fkP6yy25Wja6Sn3AIlZ4F1BWsy0.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Breaking Taboos Through Neo-Realism"
+      },
+      {
+        "type": "text",
+        "content": "Lupino's directorial style emerged from both necessity and artistic vision. Working with limited budgets, she developed a neo-realist approach that emphasized location shooting and naturalistic performances. Her 1950 film \"Outrage\" was one of the first American films to deal directly with rape and its psychological aftermath. The film showcased Lupino's ability to handle sensitive subject matter with both gravity and empathy, using innovative cinematography and editing techniques to convey trauma without exploitation. Her use of subjective camera angles and expressionistic lighting would influence later filmmakers dealing with psychological subjects."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Outrage",
+            "year": 1950,
+            "slug": "Groundbreaking exploration of sexual assault and trauma",
+            "streaming": "The Criterion Channel",
+            "tmdb_id": 73492,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2zGupaPiJBU3iR9WgY1kMpYalY2.jpg"
+          },
+          {
+            "title": "The Hitch-Hiker",
+            "year": 1953,
+            "slug": "First film noir directed by a woman",
+            "streaming": "Available on YouTube",
+            "tmdb_id": 41462,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9ORvQWC2o0FwIEl6zYU1jw9qH0X.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Technical Innovation and Visual Style"
+      },
+      {
+        "type": "text",
+        "content": "<a href=\"/movie/41462\" class=\"movie-title\" data-tmdb-id=\"41462\">The Hitch-Hiker</a> (1953) represents Lupino's masterpiece of tension and technical precision. As the first film noir directed by a woman, it showcases her mastery of the genre's visual language while subverting its typical gender dynamics. Shot by Nicholas Musuraca, who had photographed many classic noirs, the film demonstrates Lupino's sophisticated understanding of light and shadow. She employed unusual camera angles and claustrophobic framing to heighten tension, particularly in the car scenes where three characters are trapped in close quarters. The film's desert locations are used to create both physical and psychological isolation, with Lupino's direction emphasizing the vastness of the landscape against the intimate human drama."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Bigamist",
+            "year": 1953,
+            "slug": "Social drama examining marriage and infidelity",
+            "streaming": "Prime Video",
+            "tmdb_id": 74122,
+            "poster_url": "https://image.tmdb.org/t/p/w500/iht6xFLrObIoQvvuC3XOmnocc9u.jpg"
+          },
+          {
+            "title": "Hard, Fast and Beautiful",
+            "year": 1951,
+            "slug": "Drama exploring women's athletics and ambition",
+            "streaming": "The Criterion Channel",
+            "tmdb_id": 83670,
+            "poster_url": "https://image.tmdb.org/t/p/w500/cQwbEqCiluAyS61CBZDqw23FP3M.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Television Pioneer"
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Lupino's influence extended beyond feature films into television, where she became one of the medium's most prolific directors. Between 1956 and 1968, she directed episodes of over 100 television series, including \"The Twilight Zone,\" \"Alfred Hitchcock Presents,\" and \"The Fugitive.\" Her television work demonstrated remarkable versatility across genres while maintaining her characteristic attention to psychological detail and social issues. These contributions helped establish the visual language of television drama, with her innovative use of close-ups and subjective camera work becoming standard techniques in television direction."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Have Gun – Will Travel",
+            "year": 1959,
+            "slug": "Multiple episodes directed by Lupino",
+            "streaming": "MeTV",
+            "tmdb_id": null,
+            "poster_url": null
+          },
+          {
+            "title": "The Twilight Zone",
+            "year": 1964,
+            "slug": "\"The Masks\" episode directed by Lupino",
+            "streaming": "Paramount+",
+            "tmdb_id": null,
+            "poster_url": null
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Acting Career and Directorial Influence"
+      },
+      {
+        "type": "text",
+        "content": "Throughout her directorial career, Lupino continued acting, bringing nuanced performances to films like <a href=\"/movie/31152\" class=\"movie-title\" data-tmdb-id=\"31152\">On Dangerous Ground</a> (1951) and <a href=\"/movie/36786\" class=\"movie-title\" data-tmdb-id=\"36786\">While the City Sleeps</a> (1956). This dual career provided her with unique insights into performance direction. Her experience in front of the camera informed her directorial approach, particularly in working with actors to achieve naturalistic performances. She developed a reputation for being able to elicit powerful emotional performances while maintaining technical precision, a skill that influenced later actor-directors like Clint Eastwood and Robert Redford."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "On Dangerous Ground",
+            "year": 1951,
+            "slug": "Film noir featuring Lupino's acclaimed performance",
+            "streaming": "TCM",
+            "tmdb_id": 31152,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dJiSzEf5uGV0l9bQbaCyk7ob2YP.jpg"
+          },
+          {
+            "title": "While the City Sleeps",
+            "year": 1956,
+            "slug": "Newspaper drama showcasing Lupino's later acting work",
+            "streaming": "Prime Video",
+            "tmdb_id": 36786,
+            "poster_url": "https://image.tmdb.org/t/p/w500/yxcHaWVdHXf6FbI0TYa43nnQeVo.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Legacy and Contemporary Impact"
+      },
+      {
+        "type": "text",
+        "content": "Lupino's groundbreaking career created a template for independent filmmaking that remains relevant today. Her ability to work outside the studio system while addressing controversial subjects anticipated the American independent film movement of the 1960s and 1970s. Contemporary filmmakers like Kathryn Bigelow and Jane Campion have acknowledged Lupino's influence, particularly in handling genre material with psychological depth. Her work demonstrated that films addressing serious social issues could be both commercially viable and artistically significant, helping pave the way for issue-driven cinema of subsequent decades."
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Road House",
+          "year": 1948,
+          "slug": "Film noir showcasing Lupino's acting range",
+          "streaming": "TCM",
+          "tmdb_id": 30624,
+          "poster_url": "https://image.tmdb.org/t/p/w500/wCH0AtTWpwr4YpIftfl1wVydokZ.jpg"
+        },
+        {
+          "title": "Never Fear",
+          "year": 1949,
+          "slug": "Lupino's semi-autobiographical directorial work about polio",
+          "streaming": "Criterion Channel",
+          "tmdb_id": null,
+          "poster_url": null
+        },
+        {
+          "title": "Beware, My Lovely",
+          "year": 1952,
+          "slug": "Psychological thriller starring Lupino",
+          "streaming": "Prime Video",
+          "tmdb_id": 43191,
+          "poster_url": "https://image.tmdb.org/t/p/w500/eAbmuXqrmNxF8OG3yQaiBnt6Y0s.jpg"
+        },
+        {
+          "title": "The Trouble with Angels",
+          "year": 1966,
+          "slug": "Comedy demonstrating Lupino's versatility as director",
+          "streaming": "TCM",
+          "tmdb_id": 38606,
+          "poster_url": "https://image.tmdb.org/t/p/w500/bv0yTpB2so7mtjG7VIbZyfuJaO1.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-17T22:58:01.230Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-17T22:58:01.230Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-2-directors/series-1-women-directors//2-ida-lupino-the-forgotten-auteur.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:16.732Z",
+    "hasLinks": true,
+    "linksAdded": 3,
+    "tier": "tier2_link_only"
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "system": "genius",
+  "themeId": 3,
+  "seriesId": 1,
+  "episodeId": 1,
+  "theme": {
+    "id": 3,
+    "title": "Movements",
+    "description": "Revolutionary cinema movements that changed film",
+    "slug": "movements"
+  },
+  "series": {
+    "id": 1,
+    "title": "New Waves",
+    "description": "Revolutionary movements that changed cinema"
+  },
+  "episode": {
+    "id": 1,
+    "title": "French New Wave: Breathless Revolution",
+    "subtitle": "Godard and Truffaut's innovation"
+  },
+  "content": {
+    "opener": "The French New Wave (Nouvelle Vague) of the late 1950s and early 1960s revolutionized cinema by shattering conventional filmmaking rules through radical experimentation and youthful rebellion.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "The movement emerged from the film criticism of Cahiers du Cinéma, where future directors Jean-Luc Godard and François Truffaut developed their auteur theory, arguing for directors as primary creative forces. Their transition from critics to filmmakers produced groundbreaking works that challenged traditional cinema. Godard's <a href=\"/movie/269\" class=\"movie-title\" data-tmdb-id=\"269\">Breathless</a> (1960) deliberately violated established editing conventions with jump cuts, handheld cameras, and location shooting, while Truffaut's <a href=\"/movie/147\" class=\"movie-title\" data-tmdb-id=\"147\">The 400 Blows</a> (1959) brought unprecedented authenticity to youth narratives through natural lighting and documentary-style techniques. These innovations reflected both their deep knowledge of film history and their desire to break free from the \"tradition of quality\" they criticized in French cinema."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Breathless",
+            "year": 1960,
+            "slug": "Godard's revolutionary crime film starring Jean-Paul Belmondo that redefined editing and narrative structure",
+            "streaming": "HBO Max",
+            "tmdb_id": 269,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9Wx0Wdn2EOqeCZU4SP6tlS3LOml.jpg"
+          },
+          {
+            "title": "The 400 Blows",
+            "year": 1959,
+            "slug": "Truffaut's semi-autobiographical masterpiece following a troubled youth in Paris",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 147,
+            "poster_url": "https://image.tmdb.org/t/p/w500/12PuU23kkDLvTd0nb8hMlE3oShB.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Technical Innovation and Visual Style"
+      },
+      {
+        "type": "text",
+        "content": "The technical innovations of the French New Wave fundamentally changed how films could be made. Using lightweight cameras like the Éclair NPR, cinematographers could move freely through real locations, abandoning studio constraints. Raoul Coutard, who shot many of Godard's films, developed a distinctive visual style using natural light and handheld techniques. In <a href=\"/movie/8073\" class=\"movie-title\" data-tmdb-id=\"8073\">Band of Outsiders</a> (1964), Godard and Coutard created iconic sequences like the Madison dance scene with a raw, immediate aesthetic that influenced generations of filmmakers. Similarly, Henri Decaë's work on Truffaut's <a href=\"/movie/1628\" class=\"movie-title\" data-tmdb-id=\"1628\">Jules and Jim</a> (1962) demonstrated how mobile camerawork could capture the spontaneity and energy of youth culture."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Band of Outsiders",
+            "year": 1964,
+            "slug": "Godard's playful crime film featuring the famous Madison dance sequence",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 8073,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9oqyj79xmcypxLajJdefOtrYx64.jpg"
+          },
+          {
+            "title": "Jules and Jim",
+            "year": 1962,
+            "slug": "Truffaut's innovative exploration of a complex love triangle",
+            "streaming": "HBO Max",
+            "tmdb_id": 1628,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kuFjZlcZhQFDtIjuI3GQJjsQG03.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Narrative Innovation and Character"
+      },
+      {
+        "type": "text",
+        "content": "The New Wave directors revolutionized storytelling by rejecting traditional plot structures in favor of more fluid, personal narratives. Godard's <a href=\"/movie/1626\" class=\"movie-title\" data-tmdb-id=\"1626\">Vivre Sa Vie</a> (1962) broke its story into twelve distinct tableaux, each examining different aspects of its protagonist's life with documentary-like detachment. Truffaut's <a href=\"/movie/1818\" class=\"movie-title\" data-tmdb-id=\"1818\">Shoot the Piano Player</a> (1960) mixed genres freely, moving between comedy, tragedy, and noir with unprecedented freedom. These films emphasized character psychology and emotional truth over conventional plot mechanics, often incorporating direct address to the camera and other techniques that acknowledged the artificial nature of cinema."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Vivre Sa Vie",
+            "year": 1962,
+            "slug": "Godard's experimental character study told in twelve episodes",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 1626,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lYTAYclvYIa1SR4wRwMW7OwGp86.jpg"
+          },
+          {
+            "title": "Shoot the Piano Player",
+            "year": 1960,
+            "slug": "Truffaut's genre-bending noir about a classical pianist turned bar performer",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 1818,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6UhMIZaaoe2HUU7sEIwYpuYgugh.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Political and Social Context"
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The movement emerged during a period of significant social change in France, reflecting the rebellious spirit of post-war youth culture. Godard's <a href=\"/movie/1629\" class=\"movie-title\" data-tmdb-id=\"1629\">La Chinoise</a> (1967) directly engaged with contemporary radical politics, while Truffaut's <a href=\"/movie/1714\" class=\"movie-title\" data-tmdb-id=\"1714\">Fahrenheit 451</a> (1966) addressed censorship and conformity through science fiction. These films weren't just stylistically revolutionary; they captured the zeitgeist of their era, documenting social upheaval and generational conflict. The directors' approach to filming on location in Paris created a valuable historical record of the city during this transformative period."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "La Chinoise",
+            "year": 1967,
+            "slug": "Godard's examination of young Maoist revolutionaries in Paris",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 1629,
+            "poster_url": "https://image.tmdb.org/t/p/w500/hfGzYErvwi8hB38kCsSNy6OjdPv.jpg"
+          },
+          {
+            "title": "Fahrenheit 451",
+            "year": 1966,
+            "slug": "Truffaut's adaptation of Ray Bradbury's dystopian novel",
+            "streaming": "Amazon Prime",
+            "tmdb_id": 1714,
+            "poster_url": "https://image.tmdb.org/t/p/w500/k2CTpexoS9MO9lKVFfnzwVdJuM.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Influence on Global Cinema"
+      },
+      {
+        "type": "text",
+        "content": "The impact of the French New Wave extended far beyond France, inspiring new movements worldwide. American directors like Martin Scorsese and Francis Ford Coppola directly acknowledged their debt to the movement, while the jump cuts and handheld camera work became standard techniques in modern cinema. The movement's influence can be seen in everything from the American New Hollywood of the 1970s to contemporary independent film. Godard's deconstruction of genre in films like <a href=\"/movie/8072\" class=\"movie-title\" data-tmdb-id=\"8072\">Alphaville</a> (1965) continued to influence experimental filmmakers, while Truffaut's naturalistic approach to character and performance shaped modern drama."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Alphaville",
+            "year": 1965,
+            "slug": "Godard's avant-garde science fiction noir",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 8072,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fFJP3D5fJDFxN7ChqSye1DZ0fTL.jpg"
+          },
+          {
+            "title": "Day for Night",
+            "year": 1973,
+            "slug": "Truffaut's Oscar-winning film about filmmaking",
+            "streaming": "HBO Max",
+            "tmdb_id": 1675,
+            "poster_url": "https://image.tmdb.org/t/p/w500/e5xDrSx6zDEUlMe2dWKGhv88PDZ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Legacy and Contemporary Relevance"
+      },
+      {
+        "type": "text",
+        "content": "The technical and narrative innovations of the French New Wave remain relevant in contemporary cinema. The movement's emphasis on personal vision and low-budget, location-based production anticipated modern independent filmmaking. Digital technology has made the movement's guerrilla filmmaking techniques more accessible than ever, while its questioning of traditional narrative continues to influence experimental cinema. The philosophical and political concerns of films like Godard's <a href=\"/movie/651058\" class=\"movie-title\" data-tmdb-id=\"651058\">Weekend</a> (1967) resonate with current discussions about consumerism and social collapse."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Weekend",
+            "year": 1967,
+            "slug": "Godard's apocalyptic satire of modern society",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 651058,
+            "poster_url": null
+          },
+          {
+            "title": "Antoine and Colette",
+            "year": 1962,
+            "slug": "Truffaut's short film continuation of The 400 Blows",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 256,
+            "poster_url": "https://image.tmdb.org/t/p/w500/nfP8J7pv75KOAliIM3RG7h6Zos5.jpg"
+          }
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Pierrot le Fou",
+          "year": 1965,
+          "slug": "Godard's colorful crime romance with Jean-Paul Belmondo",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 2786,
+          "poster_url": "https://image.tmdb.org/t/p/w500/i124H6iQB4CawrgFW9aZaZs7OBO.jpg"
+        },
+        {
+          "title": "The Soft Skin",
+          "year": 1964,
+          "slug": "Truffaut's precise examination of an extramarital affair",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 1719,
+          "poster_url": "https://image.tmdb.org/t/p/w500/nYo083NgJCAQQByHzYrayxQ5xBV.jpg"
+        },
+        {
+          "title": "Made in USA",
+          "year": 1966,
+          "slug": "Godard's pop-art tribute to American crime films",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 29369,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gStAcnmSNzBtbEru3avvjKu54zg.jpg"
+        },
+        {
+          "title": "The Last Metro",
+          "year": 1980,
+          "slug": "Truffaut's drama set in occupied France",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 1716,
+          "poster_url": "https://image.tmdb.org/t/p/w500/yJbA6jjuj9h8x2tZSgTkzpQ8PzS.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-18T17:01:57.445Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-18T17:01:57.445Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-3-movements/series-1-new-waves//1-french-new-wave-breathless-revolution.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:35.547Z",
+    "hasLinks": true,
+    "linksAdded": 6,
+    "tier": "tier2_link_only"
+  }
+}

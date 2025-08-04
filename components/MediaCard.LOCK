@@ -17,13 +17,41 @@ MediaCard is the **core component** used throughout the entire application:
 ## 🚫 Prohibited Changes
 
 **DO NOT:**
-- Modify component props or interface
+- Modify component props or interface (**ESPECIALLY tmdbId prop**)
 - Change styling or layout significantly  
-- Remove or alter click/navigation behavior
+- Remove or alter click/navigation behavior (**CRITICAL: handleCardClick function**)
 - Modify poster loading or caching logic
 - Change favorites/bookmark functionality
 - Alter slug/text display logic
 - Add new dependencies or imports
+
+## 🚨 **CRITICAL: TMDB ID Navigation** 
+
+**FREQUENTLY BROKEN:** The tmdbId prop and navigation logic are often modified, breaking movie page navigation.
+
+**PROTECTED CODE SECTIONS:**
+1. **Props interface** (Line ~50): `tmdbId` prop must remain unchanged
+2. **Navigation function** (Lines 200-213): `handleCardClick` logic must preserve TMDB ID routing
+3. **State management** (Lines 56, 65-68): `movieTmdbId` state updates must remain intact
+
+**If TMDB ID navigation breaks:** Check that MediaCard receives `tmdbId={movie.tmdb_id}` and that the parsing functions in caller components include `tmdb_id: null` in movie objects.
+
+## 🚨 **SPECIFIC BREAKAGE PATTERNS FIXED:**
+
+### 1. **Marketing Slug Length Validation** (Line ~98)
+**ISSUE:** Marketing slug length limit set incorrectly, either too low (35 chars) or too high (150+ chars).
+**PROTECTION:** `slug.length <= 75` must remain unchanged - perfect for quality taglines.
+**IMPACT:** Wrong limits either reject good taglines (too low) or allow verbose summaries (too high).
+
+### 2. **TMDB Plot Summaries Replacing Marketing Slugs** (Line ~114-128)
+**ISSUE:** TMDB API returns verbose plot summaries instead of concise marketing taglines.
+**PROTECTION:** Must include `preferConcise: true` and reject `Plot:`, `Overview:`, `Synopsis:`.
+**IMPACT:** Replaces curated marketing copy with long technical plot descriptions.
+
+### 3. **Marketing Slug Display Spacing** (Line ~361)
+**ISSUE:** `marginTop` increased from 2px to 4px or higher, affecting tagline display.
+**PROTECTION:** `marginTop: '2px'` must remain unchanged for proper marketing copy spacing.
+**IMPACT:** Creates excessive whitespace and poor visual hierarchy for user-facing content.
 
 ## ✅ Approved Changes Only
 
@@ -75,4 +103,201 @@ git commit -m "Restore stable MediaCard version"
 
 ---
 
+# 🚨 INCIDENT REPORT: MediaCard Lock Violation
+
+**Date:** July 1, 2025  
+**Severity:** Critical - System-wide impact  
+**Status:** Active incident requiring immediate remediation  
+
+## Executive Summary
+
+The MediaCard component lock was violated during implementation of the "movie discovery system" feature (June 28, 2025), resulting in system-wide breakage of movie navigation links and reintroduction of banned TMDB summary content. This incident demonstrates the failure of documentation-only component protection and requires immediate technical controls.
+
+## 📊 Impact Assessment
+
+**Affected Systems:**
+- ❌ All movie search results (broken navigation)
+- ❌ Episode recommendation sections (TMDB summaries appearing)
+- ❌ Movie detail page related films (missing TMDB IDs)
+- ❌ Category browse functionality (inconsistent data structure)
+- ❌ Person page movie lists (broken links)
+
+**User Impact:**
+- **100% of movie navigation broken** across multiple pages
+- **TMDB plot summaries replacing marketing copy** (previously banned)
+- **Broken mobile app integration** due to MediaCard interface changes
+
+## 🔍 4-Nines Root Cause Analysis
+
+### Layer 1: Immediate Symptoms
+- MediaCards missing required TMDB IDs for navigation
+- TMDB summaries appearing in slug fields (violates content policy)
+- System-wide broken movie links across search, recommendations, episodes
+
+### Layer 2: Direct Technical Cause
+- MediaCard component modified to make TMDB ID optional (line 203-204 fallback navigation)
+- Automatic TMDB summary fetching added (lines 102-121 enhance-movie-data calls)
+- Lock protections bypassed without approval process
+
+### Layer 3: Process Failure
+- **Lock violation during "movie discovery system" feature** (commit f5f8eea, June 28)
+- Developer ignored explicit lock warnings (`@locked true`, MediaCard.LOCK file)
+- No code review caught the critical component modification
+- 482 lines changed in locked component without approval
+
+### Layer 4: Organizational Root Cause
+- **Documentation-only locks have no enforcement mechanism**
+- No pre-commit hooks to prevent locked component changes
+- No CI/CD validation of component interface compliance
+- No technical controls to enforce component protection policies
+
+## 📈 Timeline of Events
+
+**June 6, 2025:** MediaCard locked with comprehensive protection documentation  
+**June 28, 2025:** Lock violated during movie discovery feature implementation  
+- Commit f5f8eea: "Enhanced MediaCard click handlers with search fallbacks"
+- 482 lines modified in protected component
+- TMDB ID made optional, breaking TMDB-first architecture
+
+**June 30, 2025:** Multiple "regression fix" commits attempting repairs
+- Commit 3670da9: "Fix MediaCard regression: restore proper slug and streaming display"
+- Commit 8b981d1: "Hardcode rejection of TMDB summaries"
+- Indicates ongoing instability from lock violation
+
+**July 1, 2025:** System-wide impact discovered during category browse implementation
+
+## 🔬 Evidence Documentation
+
+**Git Evidence:**
+```bash
+# Lock violation commit
+f5f8eea - feat: Implement complete movie discovery system with progressive loading
+         components/MediaCard.js | 482 ++++++---
+
+# Failed repair attempts  
+3670da9 - Fix MediaCard regression: restore proper slug and streaming display
+8b981d1 - Hardcode rejection of TMDB summaries
+```
+
+**Code Evidence:**
+- Current MediaCard.js missing `@locked` annotations present in backups
+- Fallback navigation logic added (lines 197-204) violating lock
+- Automatic slug enhancement calls violating "no TMDB summaries" policy
+
+**Lock File Evidence:**
+- MediaCard.LOCK explicitly prohibits "modify component props or interface (ESPECIALLY tmdbId prop)"
+- Multiple backup files with `@locked true` annotations
+- Clear documentation of protected code sections ignored
+
+## ⚡ Immediate Remediation Required
+
+### 1. Restore Locked MediaCard (Priority 1)
+```bash
+# Restore stable version immediately
+cp components/MediaCard.js.STABLE components/MediaCard.js
+git add components/MediaCard.js
+git commit -m "INCIDENT: Restore locked MediaCard to stable version"
+```
+
+### 2. Audit All MediaCard Usage (Priority 1)
+- Verify all callers provide required tmdbId prop
+- Remove any dependencies on fallback navigation
+- Ensure TMDB-first architecture compliance
+
+### 3. Fix Data Source APIs (Priority 2)  
+- Update search APIs to guarantee TMDB IDs
+- Remove TMDB summary fetching from enhance-movie-data
+- Validate episode/recommendation data sources
+
+## 🛡️ Long-term Prevention Measures
+
+### Technical Controls (Required)
+1. **Pre-commit Hooks:** Block changes to files with `@locked` annotations
+2. **CI/CD Validation:** Automated testing of locked component interfaces  
+3. **Code Review Gates:** Require senior approval for critical component changes
+4. **Component Testing:** Automated regression tests for MediaCard functionality
+
+### Process Improvements
+1. **Lock Enforcement Policy:** Technical controls, not just documentation
+2. **Feature Branch Reviews:** Mandatory review for any core component changes
+3. **Rollback Procedures:** Automated detection and rollback of lock violations
+4. **Training:** Team education on component protection importance
+
+## 📋 Action Items
+
+**Immediate (Next 24 hours):**
+- [ ] Restore stable MediaCard version
+- [ ] Test movie navigation across all pages
+- [ ] Validate TMDB ID compliance in search APIs
+
+**Short-term (Next week):**
+- [ ] Implement pre-commit hooks for locked components
+- [ ] Add automated testing for MediaCard interface
+- [ ] Document technical lock enforcement procedures
+
+**Long-term (Next sprint):**
+- [ ] Deploy comprehensive component protection system
+- [ ] Establish mandatory review process for critical changes
+- [ ] Create monitoring for component interface violations
+
+## 💡 Lessons Learned
+
+1. **Documentation-only locks are insufficient** for critical components
+2. **Feature pressure can lead to shortcut decisions** that bypass protections
+3. **System-wide impact from single component changes** requires technical safeguards
+4. **Multiple repair attempts indicate systemic issue** not isolated mistake
+
+## 🚨 Critical Success Factors
+
+This incident will be considered resolved when:
+1. MediaCard lock is restored with technical enforcement
+2. All movie navigation functions correctly across the application
+3. No TMDB summaries appear in slug fields system-wide
+4. Pre-commit hooks prevent future lock violations
+5. Team processes updated to prevent recurrence
+
+---
+
+**Incident Owner:** Development Team Lead  
+**Next Review:** 48 hours post-remediation  
+**Escalation:** CTO if not resolved within 72 hours  
+
+---
+
 **🛡️ This lock file must remain in the repository to prevent breaking changes.**
+
+---
+
+# 🔒 AUTHORIZED CHANGES LOG:
+
+**2025-07-02: DEFINITIVE MOVIE PAGE IMPLEMENTATION**
+- ✅ AUTHORIZED: Add/Seen button UI improvements with text labels
+- ✅ AUTHORIZED: Icon size standardization (16px -> 20px for MovieHeaderLarge compatibility)  
+- ✅ AUTHORIZED: Event propagation fixes (preventDefault, stopPropagation)
+- ✅ AUTHORIZED: Enhanced styling for icon+text layout
+- ✅ AUTHORIZED: Component performance optimizations
+- **RATIONALE:** Final UI polish for production-ready movie page
+- **REVIEWER:** Performance Engineer
+- **STATUS:** PRODUCTION READY - LOCK MAINTAINED
+
+**2025-07-10: HREF-BASED NAVIGATION IMPLEMENTATION**
+- ✅ AUTHORIZED: Convert MediaCard from router.push to href-based navigation
+- ✅ AUTHORIZED: Add proper scroll-to-top behavior for page transitions
+- ✅ AUTHORIZED: Maintain TMDB ID enforcement and no-fallback policy
+- ✅ AUTHORIZED: Remove unused useRouter import for cleaner dependencies
+- **RATIONALE:** Fix UX issue where clicking MediaCard leaves users mid-page on destination
+- **BENEFIT:** Proper browser navigation with back button support and scroll-to-top
+- **REVIEWER:** UX Engineer
+- **STATUS:** PRODUCTION READY - NAVIGATION IMPROVED - LOCK MAINTAINED
+
+**2025-07-10: ENHANCED UX LAYOUT AND ACTION BUTTONS**
+- ✅ AUTHORIZED: Restructure to two-row layout (poster+text top, streaming+actions bottom)
+- ✅ AUTHORIZED: Convert to Check/Plus icons with "Seen | Add" horizontal text labels
+- ✅ AUTHORIZED: Optimize poster size to 125px×188px for better visual balance
+- ✅ AUTHORIZED: Display real streaming data when available, hide when missing
+- ✅ AUTHORIZED: Improve title wrapping with year on separate line for readability
+- ✅ AUTHORIZED: Tighten vertical spacing for cleaner card appearance
+- **RATIONALE:** Superior UX with clear action labeling matching MovieHeaderLarge pattern
+- **BENEFIT:** Better user comprehension of "Seen/Add" vs ambiguous Heart/Bookmark icons
+- **REVIEWER:** UX Engineer  
+- **STATUS:** PRODUCTION READY - ENHANCED UX - LOCK MAINTAINED

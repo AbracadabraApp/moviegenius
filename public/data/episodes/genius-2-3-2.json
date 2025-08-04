@@ -1,0 +1,220 @@
+{
+  "system": "genius",
+  "themeId": 2,
+  "seriesId": 3,
+  "episodeId": 2,
+  "theme": {
+    "id": 2,
+    "title": "Directors",
+    "description": "Visionary filmmakers and their personal cinema",
+    "slug": "directors"
+  },
+  "series": {
+    "id": 3,
+    "title": "Documentary Masters",
+    "description": "Truth and reality in cinema"
+  },
+  "episode": {
+    "id": 2,
+    "title": "Errol Morris: Truth Detective",
+    "subtitle": "Investigation through film"
+  },
+  "content": {
+    "opener": "Errol Morris revolutionized documentary filmmaking by introducing the \"Interrotron\" camera technique and pursuing uncomfortable truths through his signature investigative style.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "Morris's groundbreaking approach emerged with <a href=\"/movie/24998\" class=\"movie-title\" data-tmdb-id=\"24998\">Gates of Heaven</a> (1978), a seemingly simple documentary about pet cemeteries that legendary filmmaker Werner Herzog famously promised to eat his shoe if Morris completed it. The film demonstrated Morris's extraordinary ability to reveal profound truths through seemingly mundane subjects. His patient, observational style and willingness to let subjects speak at length created intimate portraits that went far beyond the surface narrative. This approach challenged the then-dominant cinéma vérité style, proving that staged interviews and carefully composed shots could reveal deeper truths than purely observational filmmaking."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Gates of Heaven",
+            "year": 1978,
+            "slug": "An exploration of pet cemeteries that reveals deep human truths about death, dignity, and dreams",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 24998,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2VGQsyCvd2XJKpKZXHF4AWsADoA.jpg"
+          },
+          {
+            "title": "Vernon, Florida",
+            "year": 1981,
+            "slug": "A portrait of eccentric residents in a small Southern town that delves into American character",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 30142,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dqcUISuve7pUcGT75Kwa0E8Sz6H.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "The Interrotron Revolution"
+      },
+      {
+        "type": "text",
+        "content": "Morris's invention of the Interrotron camera system in 1988 marked a crucial technical innovation in documentary filmmaking. The device allows subjects to look directly into the camera while seeing Morris's face projected onto a two-way mirror, creating his signature direct-to-camera interview style. This technique reached its powerful apex in <a href=\"/movie/14285\" class=\"movie-title\" data-tmdb-id=\"14285\">The Thin Blue Line</a> (1988), where Morris used it to investigate the wrongful conviction of Randall Dale Adams. The film combined stylized reenactments, Philip Glass's hypnotic score, and penetrating interviews to not only tell a story but actually solve a crime, leading to Adams's release from prison. This revolutionary approach demonstrated documentary film's potential as an instrument of justice."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Thin Blue Line",
+            "year": 1988,
+            "slug": "A groundbreaking investigation that freed an innocent man from death row",
+            "streaming": "HBO Max",
+            "tmdb_id": 14285,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4w4BJk3l8y9gYwPPLRs6uPHOmGL.jpg"
+          },
+          {
+            "title": "Fast, Cheap & Out of Control",
+            "year": 1997,
+            "slug": "An intricate weaving of four seemingly unrelated stories that explore human obsession",
+            "streaming": "Amazon Prime",
+            "tmdb_id": 25099,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8uXV6w3ZQUtefqjCgxXswCwPSjk.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Political Power and Historical Truth"
+      },
+      {
+        "type": "text",
+        "content": "With <a href=\"/movie/12698\" class=\"movie-title\" data-tmdb-id=\"12698\">The Fog of War</a> (2003), Morris turned his investigative lens toward former Secretary of Defense Robert McNamara, creating an extraordinary examination of power, war, and responsibility. The film showcased Morris's ability to extract startling admissions from powerful figures through his patient, persistent interviewing style. His use of archival footage, graphics, and multiple film formats created a dense visual tapestry that complemented McNamara's revelations. The film won the Academy Award for Best Documentary Feature and established a new standard for political documentary filmmaking."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Fog of War",
+            "year": 2003,
+            "slug": "Robert McNamara reflects on Vietnam War decisions and modern warfare",
+            "streaming": "Netflix",
+            "tmdb_id": 12698,
+            "poster_url": "https://image.tmdb.org/t/p/w500/m1dEnkrdJGBSLeAyJepuGrU9sNI.jpg"
+          },
+          {
+            "title": "Standard Operating Procedure",
+            "year": 2008,
+            "slug": "Investigation of Abu Ghraib prison photos and military culture",
+            "streaming": "Amazon Prime",
+            "tmdb_id": 8847,
+            "poster_url": "https://image.tmdb.org/t/p/w500/v2QCXsisMLYsozC2qJtYGa3Rvsi.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Visual Innovation and Truth-Seeking"
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Morris's technical innovations extended beyond the Interrotron. His use of multiple camera speeds, formats, and perspectives created a distinctive visual style that influenced countless filmmakers. In <a href=\"/movie/69480\" class=\"movie-title\" data-tmdb-id=\"69480\">Tabloid</a> (2010), he employed split screens, newspaper headlines, and archival footage to tell the bizarre story of Joyce McKinney. The film demonstrated his ability to approach sensational subject matter with both humor and gravity, while still pursuing deeper truths about human nature and media manipulation."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Tabloid",
+            "year": 2010,
+            "slug": "A twisted tale of tabloid sensation and obsessive love",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 69480,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eTjP19ezcIb2fMLOgjWheBVcGV.jpg"
+          },
+          {
+            "title": "Wormwood",
+            "year": 2017,
+            "slug": "A six-part investigation into CIA experiments and a mysterious death",
+            "streaming": "Netflix",
+            "tmdb_id": 482806,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fDNeVq8JJq7BWxVuKnzQ84e88Xw.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Method and Philosophy"
+      },
+      {
+        "type": "text",
+        "content": "Throughout his career, Morris has challenged traditional documentary ethics and methods. His willingness to pay interview subjects, use reenactments, and manipulate imagery sparked debates about documentary truth. In \"Mr. Death: The Rise and Fall of Fred A. Leuchter, Jr.\" (1999), Morris allowed his subject to reveal his Holocaust denial beliefs gradually, creating a complex portrait of self-deception and pseudo-science. This approach demonstrated Morris's belief that truth emerges not through objective observation but through careful investigation and the exposure of human self-deception."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Mr. Death",
+            "year": 1999,
+            "slug": "Portrait of an execution equipment expert who becomes a Holocaust denier",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 28216,
+            "poster_url": "https://image.tmdb.org/t/p/w500/buoMN4p95mvB2JgyglMb5gKxurV.jpg"
+          },
+          {
+            "title": "A Brief History of Time",
+            "year": 1991,
+            "slug": "Exploration of Stephen Hawking's life and theories",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 1358,
+            "poster_url": "https://image.tmdb.org/t/p/w500/A3sVrDThz8Xthfq2EglWoypKEfU.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Morris's influence extends beyond documentary film into journalism, true crime, and even fiction filmmaking. His methodical approach to investigation and his ability to extract truth through careful questioning has influenced modern investigative podcasts and television series. The dramatic reenactments in \"The Thin Blue Line\" paved the way for hybrid documentaries and true crime series that blend fact and dramatic recreation. His technical innovations, particularly the Interrotron, have become standard tools in documentary filmmaking."
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "American Dharma",
+          "year": 2018,
+          "slug": "Portrait of controversial political strategist Steve Bannon",
+          "streaming": "Amazon Prime",
+          "tmdb_id": 537976,
+          "poster_url": "https://image.tmdb.org/t/p/w500/7l2OyHmbQqwVF7X7XgS1q3upaP2.jpg"
+        },
+        {
+          "title": "The B-Side: Elsa Dorfman's Portrait Photography",
+          "year": 2016,
+          "slug": "Intimate look at large-format photography and artistic legacy",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 411011,
+          "poster_url": "https://image.tmdb.org/t/p/w500/mq9kHiTSi7npNP8wND4unVVsrV6.jpg"
+        },
+        {
+          "title": "The Unknown Known",
+          "year": 2013,
+          "slug": "Probing interview with Donald Rumsfeld about Iraq War decisions",
+          "streaming": "Hulu",
+          "tmdb_id": 209799,
+          "poster_url": "https://image.tmdb.org/t/p/w500/8BiCtoif98SAhSRRNfshRL75xCW.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-17T23:03:45.340Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-17T23:03:45.340Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-2-directors/series-3-documentary-masters//2-errol-morris-truth-detective.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:31.276Z",
+    "hasLinks": true,
+    "linksAdded": 4,
+    "tier": "tier2_link_only"
+  }
+}

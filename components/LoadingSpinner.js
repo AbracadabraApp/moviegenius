@@ -1,24 +1,20 @@
 /**
  * Loading Spinner Component
- * 
+ *
  * A reusable loading indicator with customizable size and color.
  * Provides visual feedback during async operations.
  */
-import React from 'react';
+import React, { memo } from 'react';
 
 /**
  * LoadingSpinner - displays an animated loading indicator
- * 
+ *
  * @param {Object} props
  * @param {('small'|'medium'|'large')} props.size - Size of the spinner
  * @param {string} props.color - Color of the spinner (CSS color value)
  * @param {string} props.className - Additional CSS classes
  */
-export default function LoadingSpinner({ 
-  size = 'medium', 
-  color = '#3b82f6',
-  className = '' 
-}) {
+function LoadingSpinner({ size = 'medium', color = '#3b82f6', className = '' }) {
   const sizeMap = {
     small: 16,
     medium: 24,
@@ -28,7 +24,7 @@ export default function LoadingSpinner({
   const spinnerSize = sizeMap[size] || sizeMap.medium;
 
   return (
-    <div 
+    <div
       className={`loading-spinner ${className}`}
       style={styles.container}
       role="status"
@@ -77,3 +73,8 @@ const styles = {
     transformOrigin: 'center',
   },
 };
+
+/**
+ * LoadingSpinner rarely changes props, so default shallow comparison is sufficient
+ */
+export default memo(LoadingSpinner);

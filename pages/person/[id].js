@@ -5,13 +5,23 @@ import { createClient } from '@supabase/supabase-js';
 import PhoneFrame from '../../components/PhoneFrame';
 import PersonHeader from '../../components/PersonHeader';
 import MediaCard from '../../components/MediaCard';
-import AskInputBar from '../../components/AskInputBar';
+import SimpleSearch from '../../components/SimpleSearch';
+import BackButton from '../../components/BackButton';
 import { ArrowLeft, Heart, Bookmark } from 'lucide-react';
 import { FavoritesManager } from '../../components/FavoritesManager';
 import { underlineProperNames } from '../../lib/proper-names';
 import loadingMessages from '../../data/loading-messages.json';
 
-export default function PersonDetailPage({ name, birthYear, deathYear, initialBiography, initialProfile, knownForDepartment, tmdbId, error }) {
+export default function PersonDetailPage({
+  name,
+  birthYear,
+  deathYear,
+  initialBiography,
+  initialProfile,
+  knownForDepartment,
+  tmdbId,
+  error,
+}) {
   const router = useRouter();
   const { id } = router.query;
   const [isLoadingAnalysis, setIsLoadingAnalysis] = useState(true);
@@ -23,12 +33,20 @@ export default function PersonDetailPage({ name, birthYear, deathYear, initialBi
   const [exploreFurther, setExploreFurther] = useState([]);
   const [moreIdeas, setMoreIdeas] = useState(null);
 
-  // Handle ask input
-  const handleAsk = (query) => {
-    router.push({
-      pathname: '/ask',
-      query: { q: query }
-    });
+  // Handle search results
+  const handleSearchResults = results => {
+    // Auto-navigate to single results
+    if (results.length === 1) {
+      const movie = results[0];
+      if (movie.tmdb_id) {
+        router.push(`/movie/${movie.tmdb_id}`);
+        return;
+      }
+    }
+    // For multiple results, redirect to search page
+    if (results.length > 1) {
+      router.push('/search');
+    }
   };
 
   useEffect(() => {
@@ -50,15 +68,15 @@ export default function PersonDetailPage({ name, birthYear, deathYear, initialBi
 
     const fetchClaudeAnalysis = async () => {
       let cycleInterval;
-      
+
       try {
         // Start cycling loading messages and icons
         const iconFiles = [
           'film-movie-reel-icon.png',
           'film-movie-icon.png',
-          'chair-director-outline-icon.png'
+          'chair-director-outline-icon.png',
         ];
-        
+
         // Set initial message and icon
         const setRandomLoadingContent = () => {
           const randomMessage = loadingMessages[Math.floor(Math.random() * loadingMessages.length)];
@@ -66,18 +84,18 @@ export default function PersonDetailPage({ name, birthYear, deathYear, initialBi
           setLoadingMessage(randomMessage);
           setLoadingIcon(randomIcon);
         };
-        
+
         // Set initial content
         setRandomLoadingContent();
-        
+
         // Cycle every 5 seconds
         cycleInterval = setInterval(setRandomLoadingContent, 5000);
-        
+
         console.log('🔍 Fetching analysis for:', name, birthYear);
-        
+
         const requestBody = { name: name, birthYear: birthYear, deathYear: deathYear };
         console.log('Request body:', requestBody);
-        
+
         const claudeResponse = await fetch('/api/person-analysis', {
           method: 'POST',
           headers: {
@@ -89,11 +107,13 @@ export default function PersonDetailPage({ name, birthYear, deathYear, initialBi
         if (!claudeResponse.ok) {
           const errorText = await claudeResponse.text();
           console.error('Person analysis API error:', claudeResponse.status, errorText);
-          throw new Error(`Failed to fetch person analysis: ${claudeResponse.status} - ${errorText}`);
+          throw new Error(
+            `Failed to fetch person analysis: ${claudeResponse.status} - ${errorText}`
+          );
         }
 
         const data = await claudeResponse.json();
-        
+
         // Parse the response like ask page does
         const parsedData = parseClaudeResponse(data.analysis);
         const sections = parsedData.sections || [];
@@ -101,9 +121,9 @@ export default function PersonDetailPage({ name, birthYear, deathYear, initialBi
         const moreIdeas = parsedData.moreIdeas || null;
 
         // Fetch movie data for all movies in sections and moreIdeas
-        const fetchMovieData = async (sectionsToUpdate) => {
+        const fetchMovieData = async sectionsToUpdate => {
           const updatedSections = [];
-          
+
           for (const section of sectionsToUpdate) {
             if (section.type === 'movies' && section.movies) {
               const updatedMovies = [];
@@ -116,10 +136,10 @@ export default function PersonDetailPage({ name, birthYear, deathYear, initialBi
                   });
                   if (dbResponse.ok) {
                     const dbData = await dbResponse.json();
-                    updatedMovies.push({ 
-                      ...movie, 
+                    updatedMovies.push({
+                      ...movie,
                       poster: dbData.poster_url || movie.poster,
-                      tmdb_id: dbData.tmdb_id 
+                      tmdb_id: dbData.tmdb_id,
                     });
                   } else {
                     updatedMovies.push(movie);
@@ -155,10 +175,10 @@ export default function PersonDetailPage({ name, birthYear, deathYear, initialBi
                 });
                 if (dbResponse.ok) {
                   const dbData = await dbResponse.json();
-                  updatedMoreIdeasMovies.push({ 
-                    ...movie, 
+                  updatedMoreIdeasMovies.push({
+                    ...movie,
                     poster: dbData.poster_url || movie.poster,
-                    tmdb_id: dbData.tmdb_id 
+                    tmdb_id: dbData.tmdb_id,
                   });
                 } else {
                   updatedMoreIdeasMovies.push(movie);
@@ -178,7 +198,6 @@ export default function PersonDetailPage({ name, birthYear, deathYear, initialBi
         setIsLoadingAnalysis(false);
         clearInterval(cycleInterval);
         console.log('✅ Person analysis complete for:', name);
-
       } catch (err) {
         console.error('Error fetching person analysis:', err);
         setIsLoadingAnalysis(false);
@@ -214,18 +233,18 @@ export default function PersonDetailPage({ name, birthYear, deathYear, initialBi
     const sections = [];
     const moreIdeasMovies = [];
     const exploreFurtherTopics = [];
-    
+
     const lines = responseText.split('\n');
     let currentSection = null;
     let currentMovies = [];
     let inMoreIdeas = false;
-    
+
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i];
       const trimmedLine = line.trim();
-      
+
       if (!trimmedLine) continue; // Skip empty lines
-      
+
       if (trimmedLine.startsWith('PARAGRAPH:')) {
         // Push previous text section first
         if (currentSection) {
@@ -235,30 +254,31 @@ export default function PersonDetailPage({ name, birthYear, deathYear, initialBi
         if (currentMovies.length > 0) {
           sections.push({
             type: 'movies',
-            movies: [...currentMovies]
+            movies: [...currentMovies],
           });
           currentMovies = [];
         }
         // Start new text section
         currentSection = {
           type: 'text',
-          content: trimmedLine.replace('PARAGRAPH:', '').trim()
+          content: trimmedLine.replace('PARAGRAPH:', '').trim(),
         };
       } else if (trimmedLine.startsWith('MOVIES:')) {
         const movieLine = trimmedLine.replace('MOVIES:', '').trim();
-        
+
         if (movieLine) {
           const parts = movieLine.split('|');
-          
-          if (parts.length >= 2) { // At least title and year
+
+          if (parts.length >= 2) {
+            // At least title and year
             const [title, year, description, streaming] = parts;
             const movieObj = {
               title: title?.trim() || 'Unknown Title',
               year: parseInt(year?.trim()) || new Date().getFullYear(),
               slug: description?.trim() || 'No description available',
-              poster: '/images/placeholder-poster.jpg' // Default poster
+              poster: '/images/placeholder-poster.jpg', // Default poster
             };
-            
+
             currentMovies.push(movieObj);
           }
         }
@@ -272,53 +292,53 @@ export default function PersonDetailPage({ name, birthYear, deathYear, initialBi
         const movieLine = trimmedLine.replace('MORE_IDEAS:', '').trim();
         if (movieLine) {
           const parts = movieLine.split('|');
-          
+
           const [title, year, description, streaming] = parts;
           const movieObj = {
             title: title?.trim() || 'Unknown Title',
             year: parseInt(year?.trim()) || new Date().getFullYear(),
             slug: description?.trim() || 'No description available',
-            poster: '/images/placeholder-poster.jpg' // Default poster
+            poster: '/images/placeholder-poster.jpg', // Default poster
           };
-          
+
           moreIdeasMovies.push(movieObj);
         }
       } else if (inMoreIdeas && trimmedLine.includes('|')) {
         const parts = trimmedLine.split('|');
-        
+
         const [title, year, description, streaming] = parts;
         const movieObj = {
           title: title?.trim() || 'Unknown Title',
           year: parseInt(year?.trim()) || new Date().getFullYear(),
           slug: description?.trim() || 'No description available',
-          poster: '/images/placeholder-poster.jpg' // Default poster
+          poster: '/images/placeholder-poster.jpg', // Default poster
         };
-        
+
         moreIdeasMovies.push(movieObj);
       } else if (currentSection && trimmedLine) {
         currentSection.content += ' ' + trimmedLine;
       }
     }
-    
+
     // Handle final sections - text first, then movies
     if (currentSection) {
       sections.push(currentSection);
     }
-    
+
     if (currentMovies.length > 0) {
       sections.push({
         type: 'movies',
-        movies: [...currentMovies]
+        movies: [...currentMovies],
       });
     }
-    
+
     return {
       sections,
       exploreFurther: exploreFurtherTopics,
       moreIdeas: {
         title: 'Related Films',
-        movies: moreIdeasMovies
-      }
+        movies: moreIdeasMovies,
+      },
     };
   }
 
@@ -326,8 +346,11 @@ export default function PersonDetailPage({ name, birthYear, deathYear, initialBi
     return (
       <PhoneFrame>
         <div style={styles.container}>
+          {/* Back button for navigation */}
+          <BackButton variant="icon" context="person" position="top-left" />
+
           <div style={styles.inputArea}>
-            <AskInputBar onSubmit={handleAsk} />
+            <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
           </div>
           <div style={styles.errorContainer}>
             <div style={styles.errorText}>Error: {error}</div>
@@ -340,10 +363,13 @@ export default function PersonDetailPage({ name, birthYear, deathYear, initialBi
   return (
     <PhoneFrame>
       <div style={styles.container}>
+        {/* Back button for navigation */}
+        <BackButton variant="icon" context="person" position="top-left" />
+
         <div style={styles.inputArea}>
-          <AskInputBar onSubmit={handleAsk} />
+          <SimpleSearch onResults={handleSearchResults} />
         </div>
-        
+
         {/* Person header using dedicated PersonHeader component */}
         <PersonHeader
           name={name}
@@ -360,9 +386,9 @@ export default function PersonDetailPage({ name, birthYear, deathYear, initialBi
             <div style={styles.loadingContainer}>
               <div style={styles.loadingRow}>
                 {loadingIcon && (
-                  <img 
-                    src={`/icons/loading/${loadingIcon}`} 
-                    alt="Loading..." 
+                  <img
+                    src={`/icons/loading/${loadingIcon}`}
+                    alt="Loading..."
                     style={styles.filmIcon}
                   />
                 )}
@@ -373,51 +399,50 @@ export default function PersonDetailPage({ name, birthYear, deathYear, initialBi
             <div style={styles.claudeContent}>
               {/* About the Person header */}
               <h3 style={styles.aboutThePersonTitle}>About {name}</h3>
-              
+
               {/* Render interleaved sections exactly like movie page */}
-              {sections && sections.map((section, sectionIndex) => (
-                <div key={`section-${sectionIndex}`}>
-                  {section.type === 'text' && (
-                    <div style={styles.textSection}>
-                      {underlineProperNames(section.content)}
-                    </div>
-                  )}
-                  {section.type === 'movies' && section.movies && (
-                    <div style={styles.movieList}>
-                      {section.movies.map((movie, movieIndex) => (
-                        <MediaCard
-                          key={`${movie.title}-${movie.year}-${sectionIndex}-${movieIndex}`}
-                          title={movie.title}
-                          year={movie.year}
-                          initialSlug={movie.slug}
-                          initialPoster={movie.poster}
-                          initialStreaming={movie.streaming}
-                          tmdbId={movie.tmdb_id}
-                        />
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ))}
-              
+              {sections &&
+                sections.map((section, sectionIndex) => (
+                  <div key={`section-${sectionIndex}`}>
+                    {section.type === 'text' && (
+                      <div style={styles.textSection}>{underlineProperNames(section.content)}</div>
+                    )}
+                    {section.type === 'movies' && section.movies && (
+                      <div style={styles.movieList}>
+                        {section.movies.map((movie, movieIndex) => (
+                          <MediaCard
+                            key={`${movie.title}-${movie.year}-${sectionIndex}-${movieIndex}`}
+                            title={movie.title}
+                            year={movie.year}
+                            initialSlug={movie.slug}
+                            initialPoster={movie.poster}
+                            initialStreaming={movie.streaming}
+                            tmdbId={movie.tmdb_id}
+                          />
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ))}
+
               {/* Render Explore Further section */}
               {exploreFurther && exploreFurther.length > 0 && (
                 <div style={styles.exploreFurtherSection}>
                   <h3 style={styles.exploreFurtherTitle}>Explore Further</h3>
                   <div style={styles.topicList}>
                     {exploreFurther.map((topic, index) => (
-                      <div 
-                        key={`topic-${index}`} 
+                      <div
+                        key={`topic-${index}`}
                         style={styles.topicItem}
                         onClick={() => {
                           const contextualQuery = `${name} (${birthYear ? `b. ${birthYear}` : 'filmmaker'}): ${topic}`;
                           router.push(`/ask?q=${encodeURIComponent(contextualQuery)}`);
                         }}
-                        onMouseEnter={(e) => {
+                        onMouseEnter={e => {
                           e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
                           e.currentTarget.style.transform = 'translateY(-2px)';
                         }}
-                        onMouseLeave={(e) => {
+                        onMouseLeave={e => {
                           e.currentTarget.style.boxShadow = '0 2px 6px rgba(0, 0, 0, 0.12)';
                           e.currentTarget.style.transform = 'translateY(0)';
                         }}
@@ -428,7 +453,7 @@ export default function PersonDetailPage({ name, birthYear, deathYear, initialBi
                   </div>
                 </div>
               )}
-              
+
               {/* Render Related Films section */}
               {moreIdeas && (
                 <div style={styles.moreIdeasSection}>
@@ -461,7 +486,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100%',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   inputArea: {
     padding: '16px',
@@ -573,12 +599,12 @@ const styles = {
 // Server-Side Rendering: Fetch person data by TMDB ID
 export async function getStaticProps({ params }) {
   const { id } = params;
-  
+
   try {
     const tmdbId = parseInt(id, 10);
     if (isNaN(tmdbId) || tmdbId <= 0) {
       return {
-        notFound: true
+        notFound: true,
       };
     }
 
@@ -591,7 +617,9 @@ export async function getStaticProps({ params }) {
     // Query person from Supabase by TMDB ID
     const { data: personEntry, error } = await supabase
       .from('people')
-      .select('id, name, birth_year, death_year, biography, profile_url, known_for_department, tmdb_id')
+      .select(
+        'id, name, birth_year, death_year, biography, profile_url, known_for_department, tmdb_id'
+      )
       .eq('tmdb_id', tmdbId)
       .single();
 
@@ -606,46 +634,33 @@ export async function getStaticProps({ params }) {
           initialProfile: personEntry.profile_url,
           knownForDepartment: personEntry.known_for_department,
           tmdbId: personEntry.tmdb_id,
-          error: null
-        }
+          error: null,
+        },
       };
 
       // Add ISR revalidation (24 hours like movie pages)
-      const isMobileBuild = process.env.BUILD_TARGET === 'mobile';
-      if (!isMobileBuild) {
-        response.revalidate = 86400; // 24 hour revalidation for web
-      }
+      response.revalidate = 86400; // 24 hour revalidation
 
       return response;
     } else {
       // Person not found
       return {
-        notFound: true
+        notFound: true,
       };
     }
   } catch (error) {
     console.error('Static generation error:', error);
-    
+
     return {
-      notFound: true
+      notFound: true,
     };
   }
 }
 
 export async function getStaticPaths() {
-  const isMobile = process.env.BUILD_TARGET === 'mobile';
-  
-  // For mobile builds, we still need static export
-  if (isMobile) {
-    return {
-      paths: [],
-      fallback: false
-    };
-  }
-  
-  // Web: Generate all person pages on-demand for fast builds
+  // Generate all person pages on-demand for fast builds
   return {
     paths: [], // No pre-generation
-    fallback: 'blocking' // Generate on first request
+    fallback: 'blocking', // Generate on first request
   };
 }

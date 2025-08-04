@@ -1,0 +1,234 @@
+{
+  "system": "genius",
+  "themeId": 2,
+  "seriesId": 3,
+  "episodeId": 3,
+  "theme": {
+    "id": 2,
+    "title": "Directors",
+    "description": "Visionary filmmakers and their personal cinema",
+    "slug": "directors"
+  },
+  "series": {
+    "id": 3,
+    "title": "Documentary Masters",
+    "description": "Truth and reality in cinema"
+  },
+  "episode": {
+    "id": 3,
+    "title": "Michael Moore: Provocateur Documentarian",
+    "subtitle": "Political activism through cinema"
+  },
+  "content": {
+    "opener": "Michael Moore revolutionized documentary filmmaking by combining investigative journalism, personal narrative, and provocative activism into a distinctive style that transformed political documentaries into mainstream entertainment.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "Moore emerged in 1989 with \"Roger & Me,\" establishing his signature approach of pursuing powerful figures while advocating for working-class Americans. The film chronicled his attempts to confront General Motors CEO Roger Smith about plant closures devastating his hometown of Flint, Michigan. Moore's use of humor, personal narrative, and confrontational tactics created a new documentary language that prioritized entertainment and emotional impact alongside journalistic inquiry. His everyman persona – complete with baseball cap and casual attire – became both his trademark and a conscious rejection of detached documentary objectivity."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Roger & Me",
+            "year": 1989,
+            "slug": "Moore's debut film examining GM plant closures in Flint",
+            "streaming": "HBO Max",
+            "tmdb_id": 1779,
+            "poster_url": "https://image.tmdb.org/t/p/w500/nsLrWqKnyOKgtBMD6OYLk6fAyTG.jpg"
+          },
+          {
+            "title": "The Big One",
+            "year": 1997,
+            "slug": "Following Moore's book tour while investigating corporate downsizing",
+            "streaming": "Amazon Prime",
+            "tmdb_id": 1774,
+            "poster_url": "https://image.tmdb.org/t/p/w500/jodI8ifzMO2IvuE0oBnqLZ2LCgF.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Breakthrough and Controversy"
+      },
+      {
+        "type": "text",
+        "content": "<a href=\"/movie/1430\" class=\"movie-title\" data-tmdb-id=\"1430\">Bowling for Columbine</a> (2002) marked Moore's emergence as a major cultural force, winning the Academy Award for Best Documentary Feature. The film examined America's relationship with guns and violence through a combination of interviews, animation, and Moore's trademark confrontational scenes – most notably his interview with Charlton Heston. The film showcased Moore's evolved style: using dark humor, pop culture references, and emotional manipulation to craft compelling narratives. Critics accused Moore of selective editing and oversimplification, but his techniques undeniably created powerful cinema that reached mainstream audiences."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Bowling for Columbine",
+            "year": 2002,
+            "slug": "Investigation of gun violence in America",
+            "streaming": "Netflix",
+            "tmdb_id": 1430,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5AlgeysilsfLdEwlTlYO7fqgsLn.jpg"
+          },
+          {
+            "title": "Canadian Bacon",
+            "year": 1995,
+            "slug": "Moore's only narrative film, a political satire",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 1775,
+            "poster_url": "https://image.tmdb.org/t/p/w500/bzK2aQ8xUB67kwCR5LHTSY99HtT.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Peak Influence and Political Impact"
+      },
+      {
+        "type": "text",
+        "content": "<a href=\"/movie/1777\" class=\"movie-title\" data-tmdb-id=\"1777\">Fahrenheit 9/11</a> (2004) represented Moore's most significant cultural impact, becoming the highest-grossing documentary of all time and winning the Palme d'Or at Cannes. The film's criticism of the Bush administration and the War on Terror sparked intense debate about documentary ethics and political activism through cinema. Moore's techniques – including juxtaposition of contradictory statements, emotional manipulation through music and editing, and confrontational interviews – reached their zenith. The film's commercial success demonstrated documentary's potential for mass appeal while intensifying criticism of Moore's methods."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Fahrenheit 9/11",
+            "year": 2004,
+            "slug": "Critique of Bush administration and War on Terror",
+            "streaming": "Amazon Prime",
+            "tmdb_id": 1777,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1WQgOCJj22zF7Bsr0pIBgGBr71q.jpg"
+          },
+          {
+            "title": "Fahrenheit 11/9",
+            "year": 2018,
+            "slug": "Examination of Trump presidency and American democracy",
+            "streaming": "Hulu",
+            "tmdb_id": 532908,
+            "poster_url": "https://image.tmdb.org/t/p/w500/k2G8IO5oGHezde70Xv7falXhuWC.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Technical Innovation and Style"
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Moore's technical approach revolutionized documentary filmmaking through several key innovations. His use of archival footage manipulation, often recontextualizing clips for satirical effect, became influential. The \"Moore shot\" – following the filmmaker as he attempts to confront corporate executives – created a new visual grammar for activist documentaries. His integration of graphics, animation, and popular music helped make complex political issues accessible to general audiences. <a href=\"/movie/2359\" class=\"movie-title\" data-tmdb-id=\"2359\">Sicko</a> (2007) demonstrated these techniques in examining healthcare, using personal stories and international comparisons to craft a compelling narrative."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Sicko",
+            "year": 2007,
+            "slug": "Investigation of American healthcare system",
+            "streaming": "Netflix",
+            "tmdb_id": 2359,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8PxUhW78Oy4DWZNRyUkKYmhGUaH.jpg"
+          },
+          {
+            "title": "Where to Invade Next",
+            "year": 2015,
+            "slug": "Exploration of social policies in other nations",
+            "streaming": "Amazon Prime",
+            "tmdb_id": 352208,
+            "poster_url": "https://image.tmdb.org/t/p/w500/58gW2Uty2cAsgBgwC58vT2Z9SVt.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Evolution and Later Work"
+      },
+      {
+        "type": "text",
+        "content": "Moore's later works showed both refinement and adaptation of his style. <a href=\"/movie/22074\" class=\"movie-title\" data-tmdb-id=\"22074\">Capitalism: A Love Story</a> (2009) returned to economic themes while incorporating the context of the 2008 financial crisis. The film demonstrated Moore's ability to evolve, using more sophisticated graphics and explanatory sequences to tackle complex financial concepts. His techniques influenced a generation of documentary filmmakers who adopted his confrontational style and personal narrative approach, though often with more nuanced execution."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Capitalism: A Love Story",
+            "year": 2009,
+            "slug": "Examination of 2008 financial crisis and capitalism",
+            "streaming": "Hulu",
+            "tmdb_id": 22074,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zJBkIPakBXdu3cEgGqKCPHUNXVE.jpg"
+          },
+          {
+            "title": "Planet of the Humans",
+            "year": 2019,
+            "slug": "Executive producer role examining environmental movement",
+            "streaming": "YouTube",
+            "tmdb_id": 622014,
+            "poster_url": "https://image.tmdb.org/t/p/w500/91UfoJxsLVRt3A6M2GGbTTzMMD8.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Critical Analysis and Legacy"
+      },
+      {
+        "type": "text",
+        "content": "Moore's impact on documentary filmmaking extends beyond his individual works. He demonstrated that documentaries could be both commercially successful and politically influential, opening doors for activist filmmakers. His techniques – while controversial – created a new language for advocacy documentaries. Critics argue his work prioritizes persuasion over journalistic objectivity, but supporters contend this transparency about perspective is more honest than claimed objectivity. His influence can be seen in contemporary documentaries that blend entertainment, advocacy, and investigation."
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Moore's technical innovations include the development of the \"participatory documentary\" style, where the filmmaker becomes an active character in the narrative. His use of humor and entertainment techniques to address serious subjects created a template for contemporary documentary filmmakers. The \"ambush interview\" technique, while not invented by Moore, was perfected in his works and became a standard tool for investigative documentaries. His impact on the genre continues to generate debate about documentary ethics and the role of objectivity in non-fiction filmmaking."
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Manufacturing Dissent",
+          "year": 2007,
+          "slug": "Documentary about Moore's methods",
+          "streaming": "Amazon Prime",
+          "tmdb_id": 27827,
+          "poster_url": "https://image.tmdb.org/t/p/w500/3OkdoxIC6v2afGttvSpZFxPMkod.jpg"
+        },
+        {
+          "title": "Slacker Uprising",
+          "year": 2007,
+          "slug": "Moore's free release about youth voting",
+          "streaming": "YouTube",
+          "tmdb_id": 13516,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aZappNo0qadtT2qyrPREAZ6GVoZ.jpg"
+        },
+        {
+          "title": "The Terms of My Surrender",
+          "year": 2017,
+          "slug": "Moore's Broadway show adaptation",
+          "streaming": "N/A",
+          "tmdb_id": null,
+          "poster_url": null
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-18T16:59:32.219Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-18T16:59:32.219Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-2-directors/series-3-documentary-masters//3-michael-moore-provocateur-documentarian.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:31.981Z",
+    "hasLinks": true,
+    "linksAdded": 4,
+    "tier": "tier2_link_only"
+  }
+}

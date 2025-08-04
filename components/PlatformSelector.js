@@ -1,32 +1,32 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 
-export default function PlatformSelector({ 
-  onSelectionChange, 
+export default function PlatformSelector({
+  onSelectionChange,
   initialSelected = [],
   showSelectedSection = true,
-  showHeader = true
+  showHeader = true,
 }) {
-  const [showMore, setShowMore] = useState(false)
-  const [selectedPlatforms, setSelectedPlatforms] = useState(new Set(initialSelected))
-  const [pendingPlatforms, setPendingPlatforms] = useState(new Set(initialSelected))
+  const [showMore, setShowMore] = useState(false);
+  const [selectedPlatforms, setSelectedPlatforms] = useState(new Set(initialSelected));
+  const [pendingPlatforms, setPendingPlatforms] = useState(new Set(initialSelected));
 
   // Load existing selections from localStorage on component mount
   useEffect(() => {
     try {
-      const saved = localStorage.getItem('selectedPlatforms')
+      const saved = localStorage.getItem('selectedPlatforms');
       if (saved) {
-        const platforms = JSON.parse(saved)
-        setSelectedPlatforms(new Set(platforms))
-        setPendingPlatforms(new Set(platforms))
+        const platforms = JSON.parse(saved);
+        setSelectedPlatforms(new Set(platforms));
+        setPendingPlatforms(new Set(platforms));
       }
     } catch (error) {
-      console.error('Error loading platforms from localStorage:', error)
+      console.error('Error loading platforms from localStorage:', error);
     }
-  }, [])
-  
+  }, []);
+
   const mainPlatforms = [
     'None',
-    'Netflix', 
+    'Netflix',
     'Amazon Prime Video',
     'Disney+',
     'Apple TV+',
@@ -34,9 +34,9 @@ export default function PlatformSelector({
     'Paramount+',
     'ESPN+',
     'Peacock',
-    'Hulu'
-  ]
-  
+    'Hulu',
+  ];
+
   const additionalPlatforms = [
     'Tencent Video',
     'iQIYI',
@@ -58,46 +58,44 @@ export default function PlatformSelector({
     'Funimation',
     'VRV',
     'Acorn TV',
-    'IFC Films Unlimited'
-  ]
-  
-  const handlePlatformChange = (platform) => {
-    const newPending = new Set(pendingPlatforms)
+    'IFC Films Unlimited',
+  ];
+
+  const handlePlatformChange = platform => {
+    const newPending = new Set(pendingPlatforms);
     if (newPending.has(platform)) {
-      newPending.delete(platform)
+      newPending.delete(platform);
     } else {
-      newPending.add(platform)
+      newPending.add(platform);
     }
-    setPendingPlatforms(newPending)
-  }
+    setPendingPlatforms(newPending);
+  };
 
   const handleSave = () => {
-    setSelectedPlatforms(new Set(pendingPlatforms))
-    
+    setSelectedPlatforms(new Set(pendingPlatforms));
+
     // Notify parent component of selection change
     if (onSelectionChange) {
-      onSelectionChange(Array.from(pendingPlatforms))
+      onSelectionChange(Array.from(pendingPlatforms));
     }
-  }
+  };
 
   const handleCancel = () => {
-    setPendingPlatforms(new Set(selectedPlatforms))
-  }
+    setPendingPlatforms(new Set(selectedPlatforms));
+  };
 
   const hasChanges = () => {
-    const current = Array.from(selectedPlatforms).sort()
-    const pending = Array.from(pendingPlatforms).sort()
-    return JSON.stringify(current) !== JSON.stringify(pending)
-  }
-  
+    const current = Array.from(selectedPlatforms).sort();
+    const pending = Array.from(pendingPlatforms).sort();
+    return JSON.stringify(current) !== JSON.stringify(pending);
+  };
+
   return (
     <div>
-      {showHeader && (
-        <h2 style={styles.questionHeader}>Do you subscribe to any of these?</h2>
-      )}
-      
+      {showHeader && <h2 style={styles.questionHeader}>Do you subscribe to any of these?</h2>}
+
       <div style={styles.platformGrid}>
-        {mainPlatforms.map((platform) => (
+        {mainPlatforms.map(platform => (
           <div key={platform} style={styles.platformItem}>
             <input
               type="checkbox"
@@ -111,55 +109,47 @@ export default function PlatformSelector({
             </label>
           </div>
         ))}
-        
-        {showMore && additionalPlatforms.map((platform) => (
-          <div key={platform} style={styles.platformItem}>
-            <input
-              type="checkbox"
-              id={platform}
-              checked={pendingPlatforms.has(platform)}
-              onChange={() => handlePlatformChange(platform)}
-              style={styles.checkbox}
-            />
-            <label htmlFor={platform} style={styles.platformLabel}>
-              {platform}
-            </label>
-          </div>
-        ))}
+
+        {showMore &&
+          additionalPlatforms.map(platform => (
+            <div key={platform} style={styles.platformItem}>
+              <input
+                type="checkbox"
+                id={platform}
+                checked={pendingPlatforms.has(platform)}
+                onChange={() => handlePlatformChange(platform)}
+                style={styles.checkbox}
+              />
+              <label htmlFor={platform} style={styles.platformLabel}>
+                {platform}
+              </label>
+            </div>
+          ))}
       </div>
-      
+
       <div style={styles.seeMoreContainer}>
-        <button 
-          onClick={() => setShowMore(!showMore)}
-          style={styles.seeMoreButton}
-        >
+        <button onClick={() => setShowMore(!showMore)} style={styles.seeMoreButton}>
           {showMore ? 'See less' : 'See more'}
         </button>
       </div>
-      
+
       {/* Save/Cancel Actions */}
       {hasChanges() && (
         <div style={styles.actionContainer}>
-          <button 
-            onClick={handleCancel}
-            style={styles.cancelButton}
-          >
+          <button onClick={handleCancel} style={styles.cancelButton}>
             Cancel
           </button>
-          <button 
-            onClick={handleSave}
-            style={styles.saveButton}
-          >
+          <button onClick={handleSave} style={styles.saveButton}>
             Done
           </button>
         </div>
       )}
-      
+
       {showSelectedSection && selectedPlatforms.size > 0 && (
         <div style={styles.selectedSection}>
           <h3 style={styles.selectedHeader}>Your Streaming Services</h3>
           <div style={styles.selectedList}>
-            {Array.from(selectedPlatforms).map((platform) => (
+            {Array.from(selectedPlatforms).map(platform => (
               <div key={platform} style={styles.selectedItem}>
                 {platform}
               </div>
@@ -168,7 +158,7 @@ export default function PlatformSelector({
         </div>
       )}
     </div>
-  )
+  );
 }
 
 const styles = {
@@ -273,4 +263,4 @@ const styles = {
     borderRadius: '6px',
     border: '1px solid #e5e7eb',
   },
-}
+};

@@ -1,608 +1,930 @@
-// pages/recs.js - Curated movie recommendations and series
-import { createClient } from '@supabase/supabase-js'
-import PhoneFrame from '../components/PhoneFrame'
-import AskInputBar from '../components/AskInputBar'
-import MediaCard from '../components/MediaCard'
-import { useRouter } from 'next/router'
-import { underlineProperNames } from '../lib/proper-names'
-import { useState, useEffect } from 'react'
+/**
+ * Landing Page - MovieGenius Onboarding Experience
+ *
+ * Captures user preferences, explains features, and provides personalized recommendations.
+ * Flow: Streaming → Episode Testing → Queue Tutorial → Recommendations → Footer
+ */
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
+import PhoneFrame from '../components/PhoneFrame';
+import { Play, Plus, Heart, ChevronRight, Star } from 'lucide-react';
 
-export default function RecsPage({ featuredList, otherLists, error }) {
-  const router = useRouter()
-  const [selectedPlatforms, setSelectedPlatforms] = useState([])
-  const [currentHeroImage, setCurrentHeroImage] = useState(1)
+export default function Landing() {
+  const router = useRouter();
 
-  // Hero image text color settings - adjust per image
-  const heroTextSettings = {
-    1: 'light',   // hero-1.jpg - use white text (dark image)
-    2: 'light',   // hero-2.jpg - use white text  
-    3: 'light',   // hero-3.jpg - use white text
-    4: 'dark',    // hero-4.jpg - use dark text (light image)
-    5: 'light',   // hero-5.jpg - use white text
-    6: 'light',   // hero-6.jpg - use white text
-    7: 'light',   // hero-7.jpg - use white text
-    8: 'light',   // hero-8.jpg - use white text
-    9: 'light',   // hero-9.jpg - use white text
-    10: 'light',  // hero-10.jpg - use white text
-    11: 'dark',   // hero-11.jpg - use dark text (light image)
-  }
+  // Multi-step form state
+  const [currentStep, setCurrentStep] = useState('streaming'); // streaming, episodes, queue, recommendations
+  const [formData, setFormData] = useState({
+    streamingServices: [],
+    episodePreferences: [],
+    completedTutorial: false,
+  });
+  const [showAllPlatforms, setShowAllPlatforms] = useState(false);
+  const [currentRotation, setCurrentRotation] = useState(0); // Fixed rotation for SSR
 
-  const currentTextStyle = heroTextSettings[currentHeroImage] || 'light'
-
-  // Load selected platforms from localStorage
+  // Set rotation based on time only on client-side
   useEffect(() => {
-    const loadSelectedPlatforms = () => {
-      try {
-        const saved = localStorage.getItem('selectedPlatforms')
-        if (saved) {
-          const platforms = JSON.parse(saved)
-          setSelectedPlatforms(platforms)
-        }
-      } catch (error) {
-        console.error('Error loading platforms from localStorage:', error)
-        setSelectedPlatforms([])
-      }
+    const rotation = Math.floor(Date.now() / (1000 * 60 * 5)) % 3;
+    setCurrentRotation(rotation);
+  }, []);
+
+  // Available streaming services using site structure
+  const streamingServices = [
+    'Netflix',
+    'Amazon Prime Video',
+    'Disney+',
+    'Apple TV+',
+    'HBO Max',
+    'Hulu',
+    'Paramount+',
+    'Peacock',
+  ];
+
+  const additionalPlatforms = [
+    'YouTube TV',
+    'Crunchyroll',
+    'Showtime',
+    'Starz',
+    'Tubi',
+    'Pluto TV',
+    'IMDb TV',
+    'Vudu',
+    'Kanopy',
+    'Hoopla',
+    'The Criterion Channel',
+    'Shudder',
+  ];
+
+  const displayedServices = showAllPlatforms
+    ? [...streamingServices, ...additionalPlatforms]
+    : streamingServices;
+
+  // Sample episodes for testing preferences - rotating through available local images
+  const movieRotations = [
+    [
+      '/images/posters/raiders-of-the-lost-ark.jpg',
+      '/images/posters/jaws.jpg',
+      '/images/posters/star-wars.jpg',
+    ],
+    [
+      '/images/posters/citizen-kane.jpg',
+      '/images/posters/casablanca.jpg',
+      '/images/posters/the-godfather.jpg',
+    ],
+    [
+      '/images/posters/blade-runner.jpg',
+      '/images/posters/2001-a-space-odyssey.jpg',
+      '/images/posters/e-t-the-extra-terrestrial.jpg',
+    ],
+    [
+      '/images/posters/psycho.jpg',
+      '/images/posters/the-silence-of-the-lambs.jpg',
+      '/images/posters/vertigo.jpg',
+    ],
+  ];
+
+  const testEpisodes = [
+    {
+      id: 'action-thriller',
+      title: 'Action & Adventure',
+      description: 'High-octane sequences and thrilling adventures',
+      genre: 'Action/Adventure',
+      image: movieRotations[0][currentRotation],
+    },
+    {
+      id: 'indie-drama',
+      title: 'Classic Drama',
+      description: 'Character-driven stories and masterful performances',
+      genre: 'Drama/Classic',
+      image: movieRotations[1][currentRotation],
+    },
+    {
+      id: 'sci-fi',
+      title: 'Science Fiction',
+      description: 'Futuristic concepts and visual innovation',
+      genre: 'Sci-Fi/Fantasy',
+      image: movieRotations[2][currentRotation],
+    },
+    {
+      id: 'horror',
+      title: 'Thriller & Suspense',
+      description: 'Psychological tension and masterful direction',
+      genre: 'Horror/Thriller',
+      image: movieRotations[3][currentRotation],
+    },
+  ];
+
+  // Sample recommendations
+  const movieRecommendations = [
+    { title: 'The Dark Knight', year: 2008, genre: 'Action', rating: 9.0 },
+    { title: 'Parasite', year: 2019, genre: 'Thriller', rating: 8.6 },
+    { title: 'Spirited Away', year: 2001, genre: 'Animation', rating: 9.3 },
+    { title: 'Pulp Fiction', year: 1994, genre: 'Crime', rating: 8.9 },
+    { title: 'The Godfather', year: 1972, genre: 'Drama', rating: 9.2 },
+  ];
+
+  const episodeRecommendations = [
+    { title: 'Breaking Bad Analysis', type: 'Character Study', duration: '12 min' },
+    { title: 'Cinematography in Drive', type: 'Visual Essay', duration: '8 min' },
+    { title: "Kubrick's Symmetry", type: 'Director Focus', duration: '15 min' },
+    { title: 'Color in Her', type: 'Technical Analysis', duration: '10 min' },
+    { title: "Hitchcock's Suspense", type: 'Genre Study', duration: '14 min' },
+  ];
+
+  const popularTags = [
+    'Character Development',
+    'Cinematography',
+    'Plot Twists',
+    'Director Study',
+    'Genre Analysis',
+    'Visual Effects',
+    'Sound Design',
+    'Editing',
+    'Themes',
+    'Cultural Impact',
+    'Historical Context',
+    'Acting Techniques',
+    'Symbolism',
+  ];
+
+  // Handle streaming service selection
+  const toggleStreamingService = service => {
+    const newServices = formData.streamingServices.includes(service)
+      ? formData.streamingServices.filter(s => s !== service)
+      : [...formData.streamingServices, service];
+
+    setFormData({ ...formData, streamingServices: newServices });
+  };
+
+  // Handle episode preference selection
+  const toggleEpisodePreference = episodeId => {
+    const newPreferences = formData.episodePreferences.includes(episodeId)
+      ? formData.episodePreferences.filter(id => id !== episodeId)
+      : [...formData.episodePreferences, episodeId];
+
+    setFormData({ ...formData, episodePreferences: newPreferences });
+  };
+
+  // Navigate to next step
+  const nextStep = () => {
+    const steps = ['streaming', 'episodes', 'queue', 'recommendations'];
+    const currentIndex = steps.indexOf(currentStep);
+    if (currentIndex < steps.length - 1) {
+      setCurrentStep(steps[currentIndex + 1]);
     }
+  };
 
-    loadSelectedPlatforms()
-
-    // Listen for platform updates
-    const handlePlatformUpdate = () => {
-      loadSelectedPlatforms()
-    }
-    
-    window.addEventListener('platformsUpdated', handlePlatformUpdate)
-    return () => window.removeEventListener('platformsUpdated', handlePlatformUpdate)
-  }, [])
-
-  const handleAsk = (query) => {
-    router.push({
-      pathname: '/ask',
-      query: { q: query }
-    })
-  }
-
-  const handleEditPlatforms = () => {
-    // Navigate to You page with platforms section expanded
-    router.push('/you#platforms')
-  }
-
-  if (error) {
-    return (
-      <PhoneFrame active="recs">
-        <div style={styles.container}>
-          <div style={styles.fixedInputArea}>
-            <AskInputBar onSubmit={handleAsk} />
-          </div>
-          <div style={styles.error}>
-            Error loading recommendations: {error}
-          </div>
-        </div>
-      </PhoneFrame>
-    )
-  }
+  // Complete onboarding
+  const completeOnboarding = () => {
+    // Save preferences to localStorage or API
+    localStorage.setItem('movieGenius_preferences', JSON.stringify(formData));
+    router.push('/');
+  };
 
   return (
-    <PhoneFrame active="recs">
+    <PhoneFrame>
       <div style={styles.container}>
-        {/* Fixed Ask Input Bar - Always on top */}
-        <div style={styles.fixedInputArea}>
-          <AskInputBar onSubmit={handleAsk} />
-        </div>
-        
-        {/* Scrollable Content - Everything scrolls under ask bar */}
-        <div style={styles.scrollableContent}>
-          {/* Hero Image - Scrolls normally */}
-          <div style={styles.heroImageContainer}>
-            <img 
-              src={`/images/hero-rotation/hero-${currentHeroImage}.jpg`} 
-              alt="Cinema Through Time"
-              style={styles.heroImage}
-            />
-          </div>
-          
-          {/* Sticky Series Header - Sticks when it hits ask bar */}
-          <div style={styles.stickySeriesHeader}>
-            <div style={styles.seriesHeaderField}>
-              <div style={styles.seriesLabelPill}>Series</div>
-              <div style={styles.seriesTitle}>Cinema Through Time</div>
-              <div style={styles.seriesSubhead}>Discover how film evolved through the decades</div>
-            </div>
-          </div>
-        
-          <div style={styles.content}>
-            {/* Cinema Through Time Episode Cards */}
-            <div style={styles.episodesSection}>
-              {/* Episode 1 */}
-              <div 
-                style={styles.episodeCard}
-                onClick={() => router.push('/recs/series/2/1')}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.35)';
-                  e.currentTarget.style.transform = 'translateY(-2px)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
-                  e.currentTarget.style.transform = 'translateY(0)';
-                }}
-              >
-                <div style={styles.episodeContent}>
-                  <h3 style={styles.episodeTitle}>1970s: The Auteur Renaissance</h3>
-                  <p style={styles.episodeSubtitle}>When directors became superstars</p>
-                </div>
-                <div style={styles.episodeImageRow}>
-                  <img src="/images/posters/the-godfather.jpg" alt="The Godfather" style={styles.episodeMovieImage} />
-                  <img src="/images/posters/taxi-driver.jpg" alt="Taxi Driver" style={styles.episodeMovieImage} />
-                  <img src="/images/posters/apocalypse-now.jpg" alt="Apocalypse Now" style={styles.episodeMovieImage} />
-                  <img src="/images/posters/annie-hall.jpg" alt="Annie Hall" style={styles.episodeMovieImage} />
-                </div>
-              </div>
-
-              {/* Episode 2 */}
-              <div 
-                style={styles.episodeCard}
-                onClick={() => router.push('/recs/series/2/2')}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.35)';
-                  e.currentTarget.style.transform = 'translateY(-2px)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
-                  e.currentTarget.style.transform = 'translateY(0)';
-                }}
-              >
-                <div style={styles.episodeContent}>
-                  <h3 style={styles.episodeTitle}>1980s: Blockbuster Revolution</h3>
-                  <p style={styles.episodeSubtitle}>High-concept cinema takes over</p>
-                </div>
-                <div style={styles.episodeImageRow}>
-                  <img src="/images/posters/star-wars.jpg" alt="Star Wars" style={styles.episodeMovieImage} />
-                  <img src="/images/posters/raiders-of-the-lost-ark.jpg" alt="Raiders of the Lost Ark" style={styles.episodeMovieImage} />
-                  <img src="/images/posters/e-t-the-extra-terrestrial.jpg" alt="E.T." style={styles.episodeMovieImage} />
-                  <img src="/images/posters/blade-runner.jpg" alt="Blade Runner" style={styles.episodeMovieImage} />
-                </div>
-              </div>
-
-              {/* Episode 3 */}
-              <div 
-                style={styles.episodeCard}
-                onClick={() => router.push('/recs/series/2/3')}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.35)';
-                  e.currentTarget.style.transform = 'translateY(-2px)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
-                  e.currentTarget.style.transform = 'translateY(0)';
-                }}
-              >
-                <div style={styles.episodeContent}>
-                  <h3 style={styles.episodeTitle}>1990s: Independent Renaissance</h3>
-                  <p style={styles.episodeSubtitle}>Bold voices outside the system</p>
-                </div>
-                <div style={styles.episodeImageRow}>
-                  <img src="/images/posters/pulp-fiction.jpg" alt="Pulp Fiction" style={styles.episodeMovieImage} />
-                  <img src="/images/posters/goodfellas.jpg" alt="Goodfellas" style={styles.episodeMovieImage} />
-                  <img src="/images/posters/forrest-gump.jpg" alt="Forrest Gump" style={styles.episodeMovieImage} />
-                  <img src="/images/posters/the-silence-of-the-lambs.jpg" alt="The Silence of the Lambs" style={styles.episodeMovieImage} />
-                </div>
-              </div>
-
-              {/* Episode 4 */}
-              <div 
-                style={styles.episodeCard}
-                onClick={() => router.push('/recs/series/2/4')}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.35)';
-                  e.currentTarget.style.transform = 'translateY(-2px)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
-                  e.currentTarget.style.transform = 'translateY(0)';
-                }}
-              >
-                <div style={styles.episodeContent}>
-                  <h3 style={styles.episodeTitle}>2010s-2020s: Global Cinema Rising</h3>
-                  <p style={styles.episodeSubtitle}>World cinema goes mainstream</p>
-                </div>
-                <div style={styles.episodeImageRow}>
-                  <img src="/images/posters/the-lord-of-the-rings-the-fellowship-of-the-ring.jpg" alt="Lord of the Rings" style={styles.episodeMovieImage} />
-                  <img src="/images/posters/the-sixth-sense.jpg" alt="The Sixth Sense" style={styles.episodeMovieImage} />
-                  <img src="/images/posters/saving-private-ryan.jpg" alt="Saving Private Ryan" style={styles.episodeMovieImage} />
-                  <img src="/images/posters/titanic.jpg" alt="Titanic" style={styles.episodeMovieImage} />
-                </div>
-              </div>
+        {/* Streaming Services Section */}
+        {currentStep === 'streaming' && (
+          <div style={styles.section}>
+            <div style={styles.heroSection}>
+              <p style={styles.goldSubtitle}>
+                <span style={{ fontSize: '30px', color: '#ffffff', letterSpacing: '1px' }}>
+                  DON'T BINGE TV
+                </span>
+                <br />
+                STREAM FILM SCHOOL INSTEAD
+              </p>
+              <img
+                src="/images/hero-rotation/hero-1.jpg"
+                alt="MovieGenius Hero"
+                style={styles.heroImage}
+              />
             </div>
 
-            {/* Featured List */}
-            {featuredList && (
-              <div style={styles.featuredSection}>
-                <h2 style={styles.featuredTitle}>{featuredList.name}</h2>
-                {featuredList.claude_description && (
-                  <div style={styles.featuredContent}>
-                    <div style={styles.textSection}>
-                      {underlineProperNames(featuredList.claude_description)}
-                    </div>
+            <div style={styles.contentSection}>
+              <p style={styles.sectionQuestion}>What streaming services do you use?</p>
+              <div style={styles.streamingGrid}>
+                {displayedServices.map(service => (
+                  <button
+                    key={service}
+                    onClick={() => toggleStreamingService(service)}
+                    style={{
+                      ...styles.streamingButton,
+                      backgroundColor: formData.streamingServices.includes(service)
+                        ? '#374151'
+                        : '#f3f4f6',
+                      color: formData.streamingServices.includes(service) ? '#ffffff' : '#374151',
+                      borderColor: formData.streamingServices.includes(service)
+                        ? '#374151'
+                        : '#d1d5db',
+                    }}
+                  >
+                    {service}
+                  </button>
+                ))}
+                {!showAllPlatforms && (
+                  <div style={{ ...styles.moreLink, gridColumn: '1 / -1' }}>
+                    <span style={styles.moreLinkText} onClick={() => setShowAllPlatforms(true)}>
+                      More streaming services?
+                    </span>
                   </div>
                 )}
-                {featuredList.movies && featuredList.movies.length > 0 && (
-                  <div style={styles.movieList}>
-                    {featuredList.movies.slice(0, 6).map((movie) => (
-                      <MediaCard
-                        key={movie.id}
-                        title={movie.title}
-                        year={movie.year}
-                        initialSlug={movie.slug}
-                        initialPoster={movie.poster_url}
-                        initialStreaming={movie.streaming_data}
-                        tmdbId={movie.tmdb_id}
-                      />
-                    ))}
-                  </div>
-                )}
-                <button 
-                  style={styles.exploreButton}
-                  onClick={() => router.push(`/genius/list/${featuredList.id}`)}
+              </div>
+
+              <button
+                onClick={nextStep}
+                disabled={formData.streamingServices.length === 0}
+                style={{
+                  ...styles.saveButton,
+                  opacity: formData.streamingServices.length === 0 ? 0.5 : 1,
+                  marginTop: showAllPlatforms ? '10px' : '0px',
+                }}
+              >
+                Continue <ChevronRight size={20} />
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Episode Testing Section */}
+        {currentStep === 'episodes' && (
+          <div style={styles.section}>
+            <div style={styles.header}>
+              <h2 style={styles.title}>Find Your Style</h2>
+              <p style={styles.subtitle}>Which of these appeals to you most?</p>
+            </div>
+
+            <div style={styles.episodeGrid}>
+              {testEpisodes.map(episode => (
+                <div
+                  key={episode.id}
+                  onClick={() => toggleEpisodePreference(episode.id)}
+                  style={{
+                    ...styles.episodeCard,
+                    borderColor: formData.episodePreferences.includes(episode.id)
+                      ? '#3b82f6'
+                      : '#e5e7eb',
+                  }}
                 >
-                  Explore Full List
-                </button>
-              </div>
-            )}
-
-            {/* Other Lists */}
-            {otherLists && otherLists.length > 0 && (
-              <div style={styles.otherListsSection}>
-                <h3 style={styles.otherListsTitle}>More Curated Lists</h3>
-                <div style={styles.buttonGrid}>
-                  {otherLists.map((list) => (
-                    <button
-                      key={list.id}
-                      style={styles.listButton}
-                      onClick={() => router.push(`/genius/list/${list.id}`)}
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
-                        e.currentTarget.style.transform = 'translateY(-2px)';
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.boxShadow = '0 2px 6px rgba(0, 0, 0, 0.12)';
-                        e.currentTarget.style.transform = 'translateY(0)';
-                      }}
-                    >
-                      {list.name}
-                    </button>
-                  ))}
+                  <img
+                    src={episode.image}
+                    alt={episode.title}
+                    style={styles.episodeImage}
+                    onError={e => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div
+                    style={{ ...styles.episodeImage, ...styles.imagePlaceholder, display: 'none' }}
+                  >
+                    <span style={styles.placeholderText}>{episode.genre}</span>
+                  </div>
+                  <div style={styles.episodeContent}>
+                    <h3 style={styles.episodeTitle}>{episode.title}</h3>
+                    <p style={styles.episodeGenre}>{episode.genre}</p>
+                    <p style={styles.episodeDescription}>{episode.description}</p>
+                  </div>
                 </div>
-              </div>
-            )}
-          </div>
-          
-          {/* Streaming Services Box - Moved to bottom */}
-          <div style={styles.streamingBoxBottom}>
-            <span style={styles.streamingText}>
-              Your streaming services: {selectedPlatforms.length > 0 ? selectedPlatforms.join(', ') : 'None selected'}
-            </span>
-            <button 
-              style={styles.editButton}
-              onClick={handleEditPlatforms}
+              ))}
+            </div>
+
+            <button
+              onClick={nextStep}
+              disabled={formData.episodePreferences.length === 0}
+              style={{
+                ...styles.saveButton,
+                opacity: formData.episodePreferences.length === 0 ? 0.5 : 1,
+              }}
             >
-              (edit)
+              Continue <ChevronRight size={20} />
             </button>
           </div>
-        </div>
+        )}
+
+        {/* Queue Tutorial Section */}
+        {currentStep === 'queue' && (
+          <div style={styles.section}>
+            <div style={styles.header}>
+              <h2 style={styles.title}>Your Personal Queue</h2>
+              <p style={styles.subtitle}>Save movies and episodes to watch later</p>
+            </div>
+
+            <div style={styles.tutorialCard}>
+              <div style={styles.tutorialImage}>
+                <div style={styles.mockPoster}>
+                  <Plus size={24} color="#6b7280" />
+                </div>
+              </div>
+
+              <div style={styles.tutorialSteps}>
+                <div style={styles.step}>
+                  <div style={styles.stepNumber}>1</div>
+                  <p style={styles.stepText}>
+                    Tap the <Plus size={16} style={{ display: 'inline' }} /> icon on any movie
+                    poster
+                  </p>
+                </div>
+
+                <div style={styles.step}>
+                  <div style={styles.stepNumber}>2</div>
+                  <p style={styles.stepText}>Double-tap any poster for quick add</p>
+                </div>
+
+                <div style={styles.step}>
+                  <div style={styles.stepNumber}>3</div>
+                  <p style={styles.stepText}>Access your queue anytime from the menu</p>
+                </div>
+              </div>
+            </div>
+
+            <button onClick={nextStep} style={styles.saveButton}>
+              Got it! <ChevronRight size={20} />
+            </button>
+          </div>
+        )}
+
+        {/* Recommendations Section */}
+        {currentStep === 'recommendations' && (
+          <div style={styles.section}>
+            <div style={styles.header}>
+              <h2 style={styles.title}>Recommended for You</h2>
+              <p style={styles.subtitle}>Based on your preferences</p>
+            </div>
+
+            {/* Movie Recommendations */}
+            <div style={styles.recommendationSection}>
+              <h3 style={styles.sectionTitle}>Movies to Watch</h3>
+              <div style={styles.movieList}>
+                {movieRecommendations.map((movie, index) => (
+                  <div key={index} style={styles.movieItem}>
+                    <div style={styles.movieInfo}>
+                      <span style={styles.movieTitle}>{movie.title}</span>
+                      <span style={styles.movieMeta}>
+                        {movie.year} • {movie.genre}
+                      </span>
+                    </div>
+                    <div style={styles.rating}>
+                      <Star size={14} fill="#fbbf24" color="#fbbf24" />
+                      <span>{movie.rating}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Episode Recommendations */}
+            <div style={styles.recommendationSection}>
+              <h3 style={styles.sectionTitle}>Episodes to Explore</h3>
+              <div style={styles.episodeList}>
+                {episodeRecommendations.map((episode, index) => (
+                  <div key={index} style={styles.episodeItem}>
+                    <Play size={16} color="#6b7280" />
+                    <div style={styles.episodeInfo}>
+                      <span style={styles.episodeItemTitle}>{episode.title}</span>
+                      <span style={styles.episodeItemMeta}>
+                        {episode.type} • {episode.duration}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Tag Cloud */}
+            <div style={styles.recommendationSection}>
+              <h3 style={styles.sectionTitle}>Popular Topics</h3>
+              <div style={styles.tagCloud}>
+                {popularTags.map((tag, index) => (
+                  <span
+                    key={index}
+                    style={{
+                      ...styles.tag,
+                      fontSize: Math.random() > 0.5 ? '14px' : '12px',
+                      opacity: Math.random() * 0.4 + 0.6,
+                    }}
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <button onClick={completeOnboarding} style={styles.saveButton}>
+              Start Exploring
+            </button>
+          </div>
+        )}
+
+        {/* Footer - Always visible on recommendations step */}
+        {currentStep === 'recommendations' && (
+          <div style={styles.footer}>
+            <div style={styles.footerSection}>
+              <h4 style={styles.footerTitle}>Featured Episodes</h4>
+              <div style={styles.footerEpisodes}>
+                <span style={styles.footerEpisode}>Kubrick's Visual Language</span>
+                <span style={styles.footerEpisode}>Tarantino's Dialogue</span>
+                <span style={styles.footerEpisode}>Nolan's Time</span>
+              </div>
+            </div>
+
+            <div style={styles.footerSection}>
+              <h4 style={styles.footerTitle}>Platform</h4>
+              <div style={styles.platformPicker}>
+                <button style={styles.platformButton}>Web</button>
+                <button
+                  style={{ ...styles.platformButton, backgroundColor: '#3b82f6', color: '#ffffff' }}
+                >
+                  Mobile
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </PhoneFrame>
-  )
-}
-
-// Server-Side Rendering: Fetch curated lists from Supabase
-export async function getServerSideProps({ res }) {
-  try {
-    // Set cache headers - lists don't change often
-    res.setHeader(
-      'Cache-Control',
-      'public, s-maxage=1800, stale-while-revalidate=3600'
-    );
-    
-    // Server-side Supabase client with service role
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    )
-
-    // Get one featured list with movies
-    const { data: featuredData, error: featuredError } = await supabase
-      .from('movie_lists')
-      .select(`
-        id,
-        name,
-        slug,
-        claude_description,
-        movies:movie_list_items(
-          movies(
-            id,
-            title,
-            year,
-            slug,
-            poster_url,
-            streaming_data,
-            tmdb_id
-          )
-        )
-      `)
-      .eq('is_active', true)
-      .eq('content_type', 'declarative')
-      .limit(1)
-      .single();
-
-    if (featuredError && featuredError.code !== 'PGRST116') { // PGRST116 = no rows returned
-      console.error('Featured list query error:', featuredError);
-    }
-
-    // Get all other lists for grid
-    const { data: otherLists, error: otherError } = await supabase
-      .from('movie_lists')
-      .select('id, name, slug')
-      .eq('is_active', true)
-      .eq('content_type', 'declarative')
-      .neq('id', featuredData?.id || 0) // Exclude featured list
-      .order('name');
-
-    if (otherError) {
-      console.error('Other lists query error:', otherError);
-    }
-
-    // Transform featured list movies
-    const featuredList = featuredData ? {
-      ...featuredData,
-      movies: featuredData.movies?.map(item => item.movies).filter(Boolean) || []
-    } : null;
-
-    return {
-      props: {
-        featuredList,
-        otherLists: otherLists || [],
-        error: null
-      }
-    }
-  } catch (error) {
-    console.error('Server-side fetch error:', error)
-    
-    return {
-      props: {
-        featuredList: null,
-        otherLists: [],
-        error: error.message
-      }
-    }
-  }
+  );
 }
 
 const styles = {
   container: {
     display: 'flex',
     flexDirection: 'column',
-    height: '100%',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    minHeight: '100vh',
+    backgroundColor: '#ffffff',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
-  fixedInputArea: {
-    position: 'sticky',
-    top: 0,
-    zIndex: 100,
-    padding: '16px',
-    background: 'linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%)',
-  },
-  scrollableContent: {
+
+  section: {
     flex: 1,
-    overflowY: 'scroll',
-    scrollbarWidth: 'none',
-    msOverflowStyle: 'none',
-  },
-  streamingBoxBottom: {
-    padding: '16px',
-    backgroundColor: '#f8f9fa',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    fontSize: '14px',
-    marginTop: '24px',
-  },
-  streamingText: {
-    color: '#374151',
-    flex: 1,
-  },
-  editButton: {
-    backgroundColor: 'transparent',
-    border: 'none',
-    color: '#007AFF',
-    cursor: 'pointer',
-    fontSize: '14px',
-    textDecoration: 'underline',
-    padding: '0',
-    marginLeft: '8px',
-  },
-  content: {
-    padding: '16px',
-  },
-  episodesSection: {
-    marginBottom: '32px',
-  },
-  episodeCard: {
     display: 'flex',
     flexDirection: 'column',
-    backgroundColor: '#ffffff',
-    borderRadius: '12px',
-    border: '1px solid #d1d5db',
-    boxShadow: '0 6px 20px rgba(0, 0, 0, 0.25)',
-    marginBottom: '30px',
-    cursor: 'pointer',
-    transition: 'all 0.3s ease',
-    overflow: 'hidden',
   },
-  episodeImageRow: {
-    display: 'flex',
+
+  heroSection: {
+    position: 'relative',
+    minHeight: 'auto',
     width: '100%',
-    height: '80px',
+    background: 'linear-gradient(to bottom, #000000 0%, #374151 100%)',
+    marginBottom: '0px',
     overflow: 'hidden',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    paddingTop: '20px',
   },
-  episodeMovieImage: {
-    flex: 1,
-    height: '100%',
+
+  heroImage: {
+    width: '100%',
+    height: '25vh',
     objectFit: 'cover',
-    objectPosition: 'center top',
-    filter: 'brightness(0.8) contrast(0.9) saturate(0.7)',
-    opacity: 0.85,
+    borderRadius: '1px',
+    marginTop: '1px',
   },
+
+  heroOverlay: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    background:
+      'linear-gradient(to bottom, rgba(52, 58, 64, 0.5) 0%, rgba(52, 58, 64, 0.6) 50%, rgba(52, 58, 64, 0.4) 100%)',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    textAlign: 'center',
+    paddingTop: '20px',
+  },
+
+  header: {
+    textAlign: 'center',
+    marginBottom: '32px',
+    padding: '0 24px',
+  },
+
+  title: {
+    fontSize: '24px',
+    fontWeight: '700',
+    color: '#111827',
+    margin: '0 0 8px 0',
+    lineHeight: '1.2',
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+  },
+
+  heroTitle: {
+    fontSize: '32px',
+    fontWeight: '700',
+    color: '#ffffff',
+    margin: '0 0 8px 0',
+    lineHeight: '1.2',
+    textShadow: '0 2px 8px rgba(0, 0, 0, 0.8)',
+  },
+
+  heroSubtitle: {
+    fontSize: '16px',
+    color: '#ffffff',
+    margin: 0,
+    lineHeight: '1.5',
+    textShadow: '0 1px 4px rgba(0, 0, 0, 0.8)',
+  },
+
+  goldSubtitle: {
+    fontSize: '18px',
+    color: '#d4af37',
+    margin: '10px 0 16px 0',
+    lineHeight: '1.5',
+    textTransform: 'uppercase',
+    letterSpacing: '1px',
+    fontWeight: '600',
+    textAlign: 'center',
+  },
+
+  subtitle: {
+    fontSize: '16px',
+    color: '#6b7280',
+    margin: 0,
+    lineHeight: '1.5',
+  },
+
+  // Streaming Services Styles
+  streamingGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+    gap: '12px',
+    marginBottom: '0px',
+  },
+
+  streamingButton: {
+    padding: '12px',
+    border: '1px solid transparent',
+    borderRadius: '8px',
+    fontSize: '13px',
+    fontWeight: '500',
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+    textAlign: 'center',
+    fontFamily: 'inherit',
+  },
+
+  moreLink: {
+    display: 'flex',
+    justifyContent: 'flex-end',
+    marginTop: '2px',
+    marginBottom: '24px',
+  },
+
+  moreLinkText: {
+    fontSize: '14px',
+    color: '#ffffff',
+    cursor: 'pointer',
+    fontWeight: '500',
+    textDecoration: 'underline',
+  },
+
+  // Episode Testing Styles
+  episodeGrid: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '16px',
+    marginBottom: '32px',
+  },
+
+  episodeCard: {
+    display: 'flex',
+    border: '2px solid #e5e7eb',
+    borderRadius: '12px',
+    padding: '16px',
+    cursor: 'pointer',
+    transition: 'border-color 0.2s ease',
+  },
+
+  episodeImage: {
+    width: '80px',
+    height: '120px',
+    borderRadius: '8px',
+    objectFit: 'cover',
+    marginRight: '16px',
+  },
+
+  imagePlaceholder: {
+    backgroundColor: '#f3f4f6',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    border: '1px solid #e5e7eb',
+  },
+
+  placeholderText: {
+    fontSize: '11px',
+    color: '#6b7280',
+    textAlign: 'center',
+    fontWeight: '500',
+    lineHeight: '1.2',
+  },
+
   episodeContent: {
-    padding: '24px',
-    backgroundColor: '#ffffff',
+    flex: 1,
   },
+
   episodeTitle: {
     fontSize: '16px',
     fontWeight: '600',
     color: '#111827',
-    marginBottom: '4px',
+    margin: '0 0 4px 0',
     lineHeight: '1.3',
-    margin: 0,
-    marginBottom: '6px',
   },
-  episodeSubtitle: {
+
+  episodeGenre: {
+    fontSize: '12px',
+    color: '#3b82f6',
+    margin: '0 0 8px 0',
+    fontWeight: '500',
+  },
+
+  episodeDescription: {
     fontSize: '14px',
     color: '#6b7280',
-    lineHeight: '1.3',
     margin: 0,
+    lineHeight: '1.4',
   },
-  featuredSection: {
+
+  // Tutorial Styles
+  tutorialCard: {
+    backgroundColor: '#f9fafb',
+    borderRadius: '16px',
+    padding: '24px',
     marginBottom: '32px',
-    paddingTop: '24px',
   },
-  featuredTitle: {
-    fontSize: '20px',
+
+  tutorialImage: {
+    display: 'flex',
+    justifyContent: 'center',
+    marginBottom: '24px',
+  },
+
+  mockPoster: {
+    width: '120px',
+    height: '180px',
+    backgroundColor: '#e5e7eb',
+    borderRadius: '12px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'relative',
+  },
+
+  tutorialSteps: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '16px',
+  },
+
+  step: {
+    display: 'flex',
+    alignItems: 'flex-start',
+    gap: '12px',
+  },
+
+  stepNumber: {
+    width: '24px',
+    height: '24px',
+    backgroundColor: '#3b82f6',
+    color: '#ffffff',
+    borderRadius: '50%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: '12px',
     fontWeight: '600',
+    flexShrink: 0,
+  },
+
+  stepText: {
+    fontSize: '14px',
     color: '#374151',
-    marginBottom: '12px',
-    textAlign: 'left',
+    margin: 0,
+    lineHeight: '1.5',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '4px',
   },
-  featuredContent: {
-    marginBottom: '16px',
+
+  // Recommendations Styles
+  recommendationSection: {
+    marginBottom: '32px',
   },
-  textSection: {
-    fontSize: '15px',
-    lineHeight: '1.6',
-    color: '#374151',
-    marginBottom: '16px',
+
+  sectionTitle: {
+    fontSize: '18px',
+    fontWeight: '600',
+    color: '#111827',
+    margin: '0 0 16px 0',
   },
+
   movieList: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '8px',
-    marginBottom: '16px',
-  },
-  exploreButton: {
-    backgroundColor: '#007AFF',
-    color: 'white',
-    border: 'none',
-    padding: '12px 24px',
-    borderRadius: '8px',
-    fontSize: '16px',
-    fontWeight: '600',
-    cursor: 'pointer',
-    width: '100%',
-    fontFamily: 'inherit',
-  },
-  otherListsSection: {
-    marginTop: '24px',
-  },
-  otherListsTitle: {
-    fontSize: '18px',
-    fontWeight: '600',
-    color: '#374151',
-    marginBottom: '16px',
-    textAlign: 'left',
-  },
-  buttonGrid: {
-    display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
     gap: '12px',
   },
-  listButton: {
-    padding: '16px 12px',
-    backgroundColor: '#f3f4f6',
+
+  movieItem: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: '12px',
+    backgroundColor: '#f9fafb',
     borderRadius: '8px',
+  },
+
+  movieInfo: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
+
+  movieTitle: {
     fontSize: '14px',
-    fontWeight: '500',
-    color: '#374151',
-    cursor: 'pointer',
-    transition: 'box-shadow 0.2s ease, transform 0.2s ease',
-    textAlign: 'center',
-    lineHeight: '1.4',
-    fontFamily: 'inherit',
-    boxShadow: '0 2px 6px rgba(0, 0, 0, 0.12)',
-    border: 'none',
+    fontWeight: '600',
+    color: '#111827',
   },
-  heroImageContainer: {
-    position: 'relative',
-    width: '100%',
-    height: '200px',
-    overflow: 'hidden',
+
+  movieMeta: {
+    fontSize: '12px',
+    color: '#6b7280',
   },
-  heroImage: {
-    width: '100%',
-    height: '100%',
-    objectFit: 'cover',
-  },
-  heroOverlay: {
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    padding: '24px 16px 16px 16px',
-  },
-  heroOverlayTitle: {
-    fontSize: '24px',
-    fontWeight: '700',
-    margin: 0,
-    marginBottom: '4px',
-  },
-  heroOverlaySubtitle: {
-    fontSize: '16px',
-    margin: 0,
-  },
-  seriesHeaderField: {
-    padding: '20px 16px',
-    background: 'linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%)',
-  },
-  seriesLabelPill: {
-    display: 'inline-block',
+
+  rating: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '4px',
     fontSize: '12px',
     fontWeight: '600',
-    color: '#000000',
-    textTransform: 'uppercase',
-    letterSpacing: '0.5px',
-    marginBottom: '8px',
-    padding: '6px 12px',
-    backgroundColor: '#ffffff',
-    borderRadius: '20px',
+    color: '#111827',
   },
-  seriesTitle: {
-    fontSize: '20px',
-    fontWeight: '700',
-    color: '#ffffff',
-    margin: 0,
-    marginBottom: '6px',
+
+  episodeList: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '12px',
   },
-  seriesSubhead: {
-    fontSize: '14px',
-    fontWeight: '400',
-    color: '#d1d5db',
-    margin: 0,
-    lineHeight: '1.4',
-  },
-  error: {
-    padding: '20px',
-    textAlign: 'center',
-    color: '#dc2626',
-    backgroundColor: '#fef2f2',
+
+  episodeItem: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '12px',
+    padding: '12px',
+    backgroundColor: '#f9fafb',
     borderRadius: '8px',
-    margin: '16px',
+  },
+
+  episodeInfo: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
+
+  episodeItemTitle: {
+    fontSize: '14px',
+    fontWeight: '500',
+    color: '#111827',
+  },
+
+  episodeItemMeta: {
+    fontSize: '12px',
+    color: '#6b7280',
+  },
+
+  // Tag Cloud Styles
+  tagCloud: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    gap: '8px',
+  },
+
+  tag: {
+    padding: '6px 12px',
+    backgroundColor: '#e5e7eb',
+    color: '#374151',
+    borderRadius: '20px',
+    fontSize: '12px',
+    fontWeight: '500',
+  },
+
+  // Button Styles
+  saveButton: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '8px',
+    backgroundColor: '#ffd700',
+    color: '#000000',
+    border: 'none',
+    borderRadius: '8px',
+    padding: '12px 16px',
+    fontSize: '14px',
+    fontWeight: '500',
+    cursor: 'pointer',
+    marginTop: '0px',
+    fontFamily: 'inherit',
+  },
+
+  continueButton: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '8px',
+    backgroundColor: '#374151',
+    color: '#ffffff',
+    border: 'none',
+    borderRadius: '8px',
+    padding: '12px 16px',
+    fontSize: '14px',
+    fontWeight: '500',
+    cursor: 'pointer',
+    marginTop: 'auto',
+    fontFamily: 'inherit',
+  },
+
+  completeButton: {
+    backgroundColor: '#374151',
+    color: '#ffffff',
+    border: 'none',
+    borderRadius: '8px',
+    padding: '12px 16px',
+    fontSize: '14px',
+    fontWeight: '500',
+    cursor: 'pointer',
+    marginTop: '16px',
+    fontFamily: 'inherit',
+  },
+
+  // Footer Styles
+  footer: {
+    backgroundColor: '#f9fafb',
+    padding: '20px',
+    borderTop: '1px solid #e5e7eb',
+  },
+
+  footerSection: {
+    marginBottom: '20px',
+  },
+
+  footerTitle: {
+    fontSize: '14px',
+    fontWeight: '600',
+    color: '#111827',
+    margin: '0 0 8px 0',
+  },
+
+  footerEpisodes: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '4px',
+  },
+
+  footerEpisode: {
+    fontSize: '12px',
+    color: '#6b7280',
+  },
+
+  platformPicker: {
+    display: 'flex',
+    gap: '8px',
+  },
+
+  contentSection: {
+    padding: '0px 20px 24px 20px',
+    flex: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    background: 'linear-gradient(to bottom, #000000 0%, #6b7280 100%)',
+  },
+
+  sectionQuestion: {
+    fontSize: '18px',
+    fontWeight: '500',
+    color: '#ffffff',
+    margin: '30px 0 20px 0',
+    textAlign: 'center',
+    lineHeight: '1.3',
+    letterSpacing: '-0.5px',
+    textShadow: '0 1px 2px rgba(0, 0, 0, 0.05)',
+  },
+
+  platformButton: {
+    padding: '6px 12px',
+    border: '1px solid #d1d5db',
+    backgroundColor: '#f3f4f6',
+    color: '#374151',
+    borderRadius: '6px',
+    fontSize: '12px',
+    fontWeight: '500',
+    cursor: 'pointer',
+    fontFamily: 'inherit',
   },
 };

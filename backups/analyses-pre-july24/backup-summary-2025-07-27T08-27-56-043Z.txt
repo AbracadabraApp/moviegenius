@@ -1,0 +1,13 @@
+Pre-July 24 Analyses Backup
+Created: 2025-07-27T08:27:56.411Z
+Total analyses: 6170
+Date range: 2025-07-24T00:00:00 and earlier
+Reason: Quality reprocessing with modern MOVIE_ANALYSIS_CONTEXT prompts
+
+Files:
+- Full backup: analyses-backup-2025-07-27T08-27-56-043Z.json
+- This summary: backup-summary-2025-07-27T08-27-56-043Z.txt
+
+Restoration:
+If needed, these analyses can be restored to the movie_analyses table.
+Contact developer for restoration script.

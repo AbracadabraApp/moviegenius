@@ -1,19 +1,58 @@
 [phases.setup]
-nixPkgs = ['nodejs-18_x', 'npm-9_x']
+nixPkgs = [
+  'nodejs_22', 
+  'npm-9_x',
+  'chromium',
+  'nss',
+  'freetype',
+  'harfbuzz',
+  'ca-certificates',
+  'ttf-freefont'
+]
+
+# Required apt packages for Puppeteer and Next.js build
+aptPkgs = [
+  'ca-certificates',
+  'fonts-liberation',
+  'libxss1',
+  'libgconf-2-4',
+  'libxtst6',
+  'libxrandr2',
+  'libasound2',
+  'libpangocairo-1.0-0',
+  'libatk1.0-0',
+  'libcairo-gobject2',
+  'libgtk-3-0',
+  'libgdk-pixbuf2.0-0'
+]
 
 [phases.install]
-cmd = 'npm ci'
+cmd = '''
+# Set memory limit for npm install
+export NODE_OPTIONS="--max-old-space-size=4096"
+
+# Install with verbose output for debugging
+npm ci --verbose
+'''
 
 [phases.build]
 cmd = '''
-# Set build-time environment variables to prevent build failures
-export NEXT_PUBLIC_SUPABASE_URL="${NEXT_PUBLIC_SUPABASE_URL:-https://placeholder.supabase.co}"
-export NEXT_PUBLIC_SUPABASE_ANON_KEY="${NEXT_PUBLIC_SUPABASE_ANON_KEY:-placeholder-anon-key}"
-export SUPABASE_SERVICE_ROLE_KEY="${SUPABASE_SERVICE_ROLE_KEY:-placeholder-service-key}"
-export NEXT_PUBLIC_TMDB_API_KEY="${NEXT_PUBLIC_TMDB_API_KEY:-placeholder-tmdb-key}"
-export ANTHROPIC_API_KEY="${ANTHROPIC_API_KEY:-placeholder-anthropic-key}"
+# Clear Next.js cache to fix environment variable issue
+rm -rf .next
 
-npm run build
+# Increase Node.js memory limit for large builds
+export NODE_OPTIONS="--max-old-space-size=4096"
+
+# Disable Puppeteer download during build  
+export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+
+# CRITICAL ANALYSIS FIX: Explicitly set environment variables for build
+echo "🔧 ANALYSIS FIX: Setting environment variables explicitly for build"
+export NEXT_PUBLIC_SUPABASE_URL="https://tjvaplqqibvlmazdvcwx.supabase.co"
+echo "✅ Set NEXT_PUBLIC_SUPABASE_URL=$NEXT_PUBLIC_SUPABASE_URL"
+
+# Build with error output
+npm run build 2>&1 || (echo "Build failed:" && cat .next/trace || echo "No trace available" && exit 1)
 '''
 
 [start]

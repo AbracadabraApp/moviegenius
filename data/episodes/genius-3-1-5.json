@@ -1,0 +1,194 @@
+{
+  "system": "genius",
+  "themeId": 3,
+  "seriesId": 1,
+  "episodeId": 5,
+  "theme": {
+    "id": 3,
+    "title": "Movements",
+    "description": "Revolutionary cinema movements that changed film",
+    "slug": "movements"
+  },
+  "series": {
+    "id": 1,
+    "title": "New Waves",
+    "description": "Revolutionary movements that changed cinema"
+  },
+  "episode": {
+    "id": 5,
+    "title": "Czech New Wave: Behind Iron Curtain",
+    "subtitle": "Political allegory and freedom"
+  },
+  "content": {
+    "opener": "The Czech New Wave emerged in the 1960s as one of cinema's most defiant and innovative movements, challenging communist authority through sophisticated allegory and surrealist expression.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "The movement arose during Czechoslovakia's brief cultural liberalization in the 1960s, with filmmakers trained at Prague's prestigious FAMU film school leading a creative renaissance. Directors like Miloš Forman, Věra Chytilová, and Jiří Menzel crafted works that combined dark humor with pointed social criticism, using absurdist elements to bypass censorship. Their films featured non-professional actors, documentary-style cinematography, and improvisational techniques that broke sharply from Soviet-approved socialist realism. This new aesthetic approach allowed filmmakers to explore contemporary social issues while embedding subtle critiques of authoritarian control."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Closely Watched Trains",
+            "year": 1966,
+            "slug": "Jiří Menzel's Oscar-winning dark comedy about a young railway worker during Nazi occupation, serving as allegory for contemporary Czech society",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 789,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oKiOhsSRWO6fRqxtvda8WuCiXBm.jpg"
+          },
+          {
+            "title": "The Firemen's Ball",
+            "year": 1967,
+            "slug": "Miloš Forman's satirical masterpiece mocking bureaucratic incompetence through a small-town fire department celebration",
+            "streaming": "HBO Max",
+            "tmdb_id": 38442,
+            "poster_url": "https://image.tmdb.org/t/p/w500/yylEjPttmTDar0o92StlrO5ghmw.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Technical Innovation and Visual Style"
+      },
+      {
+        "type": "text",
+        "content": "Czech New Wave cinematography developed a distinctive visual language characterized by handheld cameras, natural lighting, and documentary-like immediacy. Cinematographers like Miroslav Ondříček pioneered techniques that influenced global cinema. The movement's visual style often incorporated surrealist elements and experimental techniques, breaking traditional narrative structures. Films like Věra Chytilová's \"Daisies\" (1966) employed revolutionary editing techniques, color experimentation, and non-linear storytelling to create provocative statements about female agency and social rebellion."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Daisies",
+            "year": 1966,
+            "slug": "Chytilová's feminist masterpiece following two young women's anarchic rebellion against societal norms",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 46919,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8sxMhdn3i1Pn8OlGCBBjr9rjP1y.jpg"
+          },
+          {
+            "title": "Loves of a Blonde",
+            "year": 1965,
+            "slug": "Forman's intimate portrait of youth culture using revolutionary naturalistic cinematography",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 39387,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fyRg6Qh4oN1KRfkx8Q3DFzA642P.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Political Allegory and Resistance"
+      },
+      {
+        "type": "text",
+        "content": "The movement's directors developed sophisticated methods of embedding political critique within seemingly innocent narratives. Jan Němec's \"A Report on the Party and Guests\" (1966) used absurdist scenarios to comment on power structures and social conformity. The films often featured protagonists who were passive observers of society's absurdities, their very passivity serving as commentary on life under totalitarianism. This approach allowed filmmakers to explore themes of individual freedom, bureaucratic oppression, and moral compromise while avoiding direct confrontation with authorities."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "A Report on the Party and Guests",
+            "year": 1966,
+            "slug": "Němec's surrealist allegory about conformity and political power",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 105348,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8mYG2PpBwI1fkTC2x81VpCFYtSj.jpg"
+          },
+          {
+            "title": "The Shop on Main Street",
+            "year": 1965,
+            "slug": "Oscar-winning drama examining moral choices during the Holocaust as allegory for contemporary compliance",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 25905,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pOjsOzPzYrCFsMsatKxAwYzIeCg.jpg"
+          }
+        ]
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The movement's impact extended beyond pure politics into explorations of Czech identity and cultural memory. Films like Karel Kachyňa's \"The Ear\" (1970) examined surveillance culture and paranoia, while Ivan Passer's \"Intimate Lighting\" (1965) focused on subtle human interactions against the backdrop of societal control. These works demonstrated how personal stories could carry powerful political resonance without explicit messaging."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Ear",
+            "year": 1970,
+            "slug": "Kachyňa's tense drama about surveillance and paranoia in communist society",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 88953,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ksWSkXKfGd3WnXlHu2Xca2GmsLw.jpg"
+          },
+          {
+            "title": "Intimate Lighting",
+            "year": 1965,
+            "slug": "Passer's subtle examination of everyday life and artistic freedom",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 77381,
+            "poster_url": "https://image.tmdb.org/t/p/w500/a4VpypMjarRltCu7TIN8KGq1qpU.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Czech New Wave's influence on global cinema cannot be overstated. Its techniques for embedding political critique within artistic expression influenced filmmakers worldwide, particularly in other Soviet bloc countries. The movement's emphasis on black humor, visual experimentation, and narrative innovation created a template for politically engaged cinema that remains relevant today. Directors like Pavel Juráček pioneered science fiction allegory with works like \"Case for a Rookie Hangman\" (1969), expanding the movement's scope beyond realism."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Case for a Rookie Hangman",
+            "year": 1969,
+            "slug": "Juráček's surrealist adaptation of Gulliver's Travels as political allegory",
+            "streaming": "Criterion Channel",
+            "tmdb_id": null,
+            "poster_url": null
+          }
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Valerie and Her Week of Wonders",
+          "year": 1970,
+          "slug": "Jaromil Jireš's surrealist fantasy examining female coming-of-age",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 46315,
+          "poster_url": "https://image.tmdb.org/t/p/w500/x9fZJORCZS0DshbxLSdnzyvU94V.jpg"
+        },
+        {
+          "title": "The Cremator",
+          "year": 1969,
+          "slug": "Juraj Herz's dark comedy about a crematorium worker's descent into fascism",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 18352,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9or2Jzw9HOE4gp9niwXBkZdpTVx.jpg"
+        },
+        {
+          "title": "Pearls of the Deep",
+          "year": 1966,
+          "slug": "Anthology film featuring works by five major Czech New Wave directors",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 106124,
+          "poster_url": "https://image.tmdb.org/t/p/w500/spwskcYw4Uid4y2TyyN7CCPgn3F.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-18T17:03:51.481Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-18T17:03:51.481Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-3-movements/series-1-new-waves//5-czech-new-wave-behind-iron-curtain.jpg"
+}

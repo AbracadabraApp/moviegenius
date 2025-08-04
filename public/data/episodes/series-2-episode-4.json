@@ -1,0 +1,300 @@
+{
+  "seriesId": "2",
+  "episodeId": "4",
+  "series": {
+    "id": 2,
+    "title": "Cinema Through Time - 1970-2025",
+    "description": "How film evolved from the auteur renaissance through the present day"
+  },
+  "episode": {
+    "id": 4,
+    "title": "2000s: The Streaming Wars",
+    "subtitle": "Digital revolution and franchise filmmaking",
+    "posters": [
+      "https://image.tmdb.org/t/p/w200/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+      "https://image.tmdb.org/t/p/w200/6EiRUJpuoeQPghrs3YNktfnqOVh.jpg",
+      "https://image.tmdb.org/t/p/w200/eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg",
+      "https://image.tmdb.org/t/p/w200/c2SQMd00CCGTiDxGXVqA2J9lmzF.jpg"
+    ]
+  },
+  "content": {
+    "opener": "The 2000s marked cinema's digital transformation, where CGI effects reached photorealistic heights, franchise filmmaking became the dominant business model, and new distribution technologies began reshaping how audiences discovered and consumed movies.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "The decade opened with a digital revolution that fundamentally altered both filmmaking techniques and storytelling possibilities, as computer-generated imagery matured from novelty to essential tool. The Matrix trilogy redefined action cinema through bullet-time photography and wire-fu choreography, while The Lord of the Rings demonstrated how digital effects could serve epic storytelling without overwhelming narrative purpose. These technical breakthroughs established new visual languages that influenced everything from independent films to television production, proving that digital tools could enhance rather than replace traditional filmmaking crafts."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Matrix",
+            "year": 1999,
+            "slug": "Wachowskis blend philosophy with groundbreaking action",
+            "tmdb_id": "603",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "The Lord of the Rings: The Fellowship of the Ring",
+            "year": 2001,
+            "slug": "Jackson's epic fantasy proves digital effects can serve story",
+            "tmdb_id": "120",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Gladiator",
+            "year": 2000,
+            "slug": "Scott's historical epic combines practical and digital effects",
+            "tmdb_id": "98",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Franchise filmmaking emerged as Hollywood's dominant strategy, with studios investing heavily in properties that could generate multiple sequels, spin-offs, and merchandising opportunities. The Spider-Man trilogy proved that superhero films could achieve both critical respect and massive commercial success, while Pirates of the Caribbean demonstrated how theme park attractions could become blockbuster entertainment. This shift toward branded content fundamentally altered development processes, as studios prioritized recognizable intellectual property over original screenplays, establishing patterns that continue to define contemporary filmmaking."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Spider-Man",
+            "year": 2002,
+            "slug": "Raimi's superhero film launches modern comic book era",
+            "tmdb_id": "557",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+            "year": 2003,
+            "slug": "Verbinski transforms theme park ride into swashbuckling adventure",
+            "tmdb_id": "22",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "X-Men",
+            "year": 2000,
+            "slug": "Singer's mutant allegory treats comic book seriously",
+            "tmdb_id": "36657",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Independent filmmakers embraced digital technology to achieve professional results with unprecedented accessibility, leading to a democratization of film production that challenged traditional industry gatekeepers. Films like 28 Days Later and Collateral showcased how digital cinematography could create distinctive visual styles, while documentaries like Fahrenheit 9/11 proved that non-fiction films could achieve blockbuster-level cultural impact. This technological revolution allowed for more diverse voices and experimental approaches, as the barriers to entry continued to lower throughout the decade."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "28 Days Later",
+            "year": 2002,
+            "slug": "Boyle's digital zombie film revitalizes horror genre",
+            "tmdb_id": "170",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Collateral",
+            "year": 2004,
+            "slug": "Mann's night thriller showcases digital cinematography",
+            "tmdb_id": "1422",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Fahrenheit 9/11",
+            "year": 2004,
+            "slug": "Moore's documentary becomes highest-grossing non-fiction film",
+            "tmdb_id": "9735",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Distribution models began evolving as Netflix transitioned from DVD-by-mail to streaming service, while iTunes launched digital movie purchases that challenged traditional home video sales. This shift toward on-demand viewing started reshaping audience expectations and consumption patterns, as viewers gained unprecedented control over when and how they accessed content. The decade also saw the rise of file-sharing and digital piracy, forcing the industry to confront new economic realities and consumer behaviors that would accelerate changes in distribution strategies."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Eternal Sunshine of the Spotless Mind",
+            "year": 2004,
+            "slug": "Gondry's memory-erasing romance explores love and identity",
+            "tmdb_id": "38",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Lost in Translation",
+            "year": 2003,
+            "slug": "Coppola's Tokyo meditation on isolation and connection",
+            "tmdb_id": "153",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "There Will Be Blood",
+            "year": 2007,
+            "slug": "Anderson's oil epic showcases Day-Lewis at his most intense",
+            "tmdb_id": "7345",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The decade's cultural impact extended beyond entertainment, as films began reflecting post-9/11 anxieties and America's complex relationship with global politics and technology. The Dark Knight explored themes of surveillance and moral ambiguity that resonated with contemporary concerns about security and civil liberties, while WALL-E addressed environmental concerns through the lens of animated entertainment. These films demonstrated that popular cinema could tackle serious subjects without sacrificing commercial appeal, establishing a template for socially conscious blockbuster filmmaking."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Dark Knight",
+            "year": 2008,
+            "slug": "Nolan's Batman sequel transcends superhero genre",
+            "tmdb_id": "155",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "WALL-E",
+            "year": 2008,
+            "slug": "Stanton's robot romance addresses environmental concerns",
+            "tmdb_id": "10681",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "No Country for Old Men",
+            "year": 2007,
+            "slug": "Coens' violent thriller wins Best Picture Oscar",
+            "tmdb_id": "6977",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The 2000s established technological and business foundations that would define the next two decades of filmmaking, as digital production workflows became standard practice and franchise development drove studio decision-making. Avatar closed the decade by demonstrating 3D technology's commercial potential, while Iron Man launched the Marvel Cinematic Universe that would dominate the following decade. These developments proved that the 2000s represented not just technological evolution but a fundamental transformation in how films were conceived, produced, and distributed to global audiences."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Avatar",
+            "year": 2009,
+            "slug": "Cameron's 3D epic becomes highest-grossing film",
+            "tmdb_id": "19995",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Iron Man",
+            "year": 2008,
+            "slug": "Favreau launches Marvel Cinematic Universe",
+            "tmdb_id": "1726",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Slumdog Millionaire",
+            "year": 2008,
+            "slug": "Boyle's Mumbai fairy tale wins Best Picture",
+            "tmdb_id": "12405",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More 2000s Digital Revolution Films",
+      "movies": [
+        {
+          "title": "Minority Report",
+          "year": 2002,
+          "slug": "Spielberg's sci-fi thriller predicts future technology",
+          "tmdb_id": "180",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Kill Bill: Vol. 1",
+          "year": 2003,
+          "slug": "Tarantino's revenge saga pays homage to martial arts cinema",
+          "tmdb_id": "24",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Memento",
+          "year": 2000,
+          "slug": "Nolan's reverse-chronology thriller launches his career",
+          "tmdb_id": "77",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Finding Nemo",
+          "year": 2003,
+          "slug": "Stanton's underwater adventure showcases Pixar's artistry",
+          "tmdb_id": "12",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Crash",
+          "year": 2004,
+          "slug": "Haggis' controversial racial drama wins Best Picture",
+          "tmdb_id": "96",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "The Departed",
+          "year": 2006,
+          "slug": "Scorsese's undercover thriller finally wins him Oscar",
+          "tmdb_id": "1422",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Children of Men",
+          "year": 2006,
+          "slug": "Cuarón's dystopian thriller showcases long-take mastery",
+          "tmdb_id": "924",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Juno",
+          "year": 2007,
+          "slug": "Reitman's indie comedy becomes unexpected hit",
+          "tmdb_id": "9693",
+          "poster_url": null,
+          "streaming": null
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-11T10:33:00.000Z",
+  "version": "1.0",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:32:10.913Z",
+    "hasLinks": false,
+    "linksAdded": 0,
+    "tier": "tier2_link_only"
+  }
+}

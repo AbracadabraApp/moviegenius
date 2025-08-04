@@ -1,14 +1,27 @@
+import { getCache } from '../../lib/cache.js';
+
 export default async function handler(req, res) {
   const page = req.query.page || 1;
 
   try {
-    const tmdbRes = await fetch(
-      `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.NEXT_PUBLIC_TMDB_API_KEY}&page=${page}`
-    );
-    const { results } = await tmdbRes.json();
+    // Cache popular movies with Redis (12-hour TTL)
+    const cache = getCache();
+    const { results } = await cache.cacheTMDBResponse('popular_movies', { page }, async () => {
+      console.log(`🔄 Cache miss - fetching TMDB popular movies page: ${page}`);
+
+      const tmdbRes = await fetch(
+        `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.NEXT_PUBLIC_TMDB_API_KEY}&page=${page}`
+      );
+      const data = await tmdbRes.json();
+
+      console.log(
+        `💾 Cached TMDB popular movies page ${page} - ${data.results?.length || 0} movies`
+      );
+      return data;
+    });
 
     const movies = await Promise.all(
-      results.map(async (m) => {
+      results.map(async m => {
         let slug = 'Popular pick!';
         try {
           const aiRes = await fetch(`${process.env.HOST}/api/get-slug`, {

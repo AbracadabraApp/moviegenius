@@ -1,7 +1,7 @@
 // pages/api/movie-list.js
 /**
  * Movie List API
- * 
+ *
  * Retrieves a specific movie list with its movies and cached Claude description.
  * Supports the new list-based content system.
  */
@@ -9,10 +9,72 @@
 import { createClient } from '@supabase/supabase-js';
 
 export default async function handler(req, res) {
-  if (req.method !== 'GET') {
-    return res.status(405).json({ error: 'Only GET method allowed' });
+  if (req.method === 'GET') {
+    return handleGet(req, res);
+  } else if (req.method === 'POST') {
+    return handlePost(req, res);
+  } else {
+    return res.status(405).json({ error: 'Only GET and POST methods allowed' });
+  }
+}
+
+async function handlePost(req, res) {
+  const { name, description, content_type, claude_prompt } = req.body;
+
+  if (!name) {
+    return res.status(400).json({ error: 'List name is required' });
   }
 
+  try {
+    const supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL,
+      process.env.SUPABASE_SERVICE_ROLE_KEY
+    );
+
+    // Generate slug from name
+    const slug = name
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-|-$/g, '');
+
+    // Create new list
+    const { data: newList, error: createError } = await supabase
+      .from('movie_lists')
+      .insert({
+        name,
+        slug,
+        description: description || null,
+        content_type: content_type || 'declarative',
+        claude_prompt: claude_prompt || null,
+        is_active: true,
+        created_at: new Date().toISOString(),
+      })
+      .select()
+      .single();
+
+    if (createError) {
+      if (createError.code === '23505') {
+        // Unique constraint violation
+        return res.status(409).json({ error: 'List with this name already exists' });
+      }
+      throw createError;
+    }
+
+    res.status(201).json({
+      success: true,
+      message: 'List created successfully',
+      list: newList,
+    });
+  } catch (error) {
+    console.error('Error creating list:', error);
+    res.status(500).json({
+      error: 'Failed to create list',
+      details: error.message,
+    });
+  }
+}
+
+async function handleGet(req, res) {
   const { slug } = req.query;
 
   if (!slug) {
@@ -40,7 +102,8 @@ export default async function handler(req, res) {
     // Get movies in the list with their details
     const { data: listItems, error: itemsError } = await supabase
       .from('movie_list_items')
-      .select(`
+      .select(
+        `
         order_index,
         movies (
           id,
@@ -51,7 +114,8 @@ export default async function handler(req, res) {
           tmdb_id,
           streaming_data
         )
-      `)
+      `
+      )
       .eq('list_id', list.id)
       .order('order_index', { ascending: true });
 
@@ -61,10 +125,11 @@ export default async function handler(req, res) {
     }
 
     // Extract movies from the join result
-    const movies = listItems?.map(item => ({
-      ...item.movies,
-      order_index: item.order_index
-    })) || [];
+    const movies =
+      listItems?.map(item => ({
+        ...item.movies,
+        order_index: item.order_index,
+      })) || [];
 
     // Get the appropriate analysis based on content type
     let analysisType = 'list_description';
@@ -73,7 +138,7 @@ export default async function handler(req, res) {
     } else if (list.content_type === 'declarative') {
       analysisType = 'list_description_and_movies';
     }
-    
+
     const { data: cachedAnalysis } = await supabase
       .from('list_analyses')
       .select('claude_response')
@@ -89,18 +154,17 @@ export default async function handler(req, res) {
         description: list.description,
         claude_prompt: list.claude_prompt,
         content_type: list.content_type,
-        created_at: list.created_at
+        created_at: list.created_at,
       },
       movies: movies,
       movieCount: movies.length,
       claudeDescription: cachedAnalysis?.claude_response?.raw_content || null,
-      cached: !!cachedAnalysis
+      cached: !!cachedAnalysis,
     };
 
     // Cache movie lists for 6 hours - lists change infrequently
     res.setHeader('Cache-Control', 'public, s-maxage=21600, stale-while-revalidate=43200');
     res.status(200).json(response);
-
   } catch (error) {
     console.error('Movie list API error:', error);
     res.status(500).json({ error: 'Internal server error' });

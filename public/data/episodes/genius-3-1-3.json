@@ -1,0 +1,216 @@
+{
+  "system": "genius",
+  "themeId": 3,
+  "seriesId": 1,
+  "episodeId": 3,
+  "theme": {
+    "id": 3,
+    "title": "Movements",
+    "description": "Revolutionary cinema movements that changed film",
+    "slug": "movements"
+  },
+  "series": {
+    "id": 1,
+    "title": "New Waves",
+    "description": "Revolutionary movements that changed cinema"
+  },
+  "episode": {
+    "id": 3,
+    "title": "British Kitchen Sink & Social Realism",
+    "subtitle": "Working class stories"
+  },
+  "content": {
+    "opener": "British Kitchen Sink Realism revolutionized cinema in the late 1950s and early 1960s by turning its unflinching lens on working-class life, creating a new visual and narrative language that continues to influence filmmakers today.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "The movement emerged from Britain's post-war social transformation, when young directors like Tony Richardson, Karel Reisz, and Lindsay Anderson rejected the polished artifice of mainstream cinema in favor of documentary-style authenticity. <a href=\"/movie/50011\" class=\"movie-title\" data-tmdb-id=\"50011\">Look Back in Anger</a> (1959) marked a decisive break from traditional British cinema, with Richard Burton embodying the angry young man archetype that would define the movement. Shot in stark black and white by cinematographer Oswald Morris, these films employed natural lighting, location shooting, and regional accents previously considered too \"rough\" for mainstream cinema. The movement coincided with broader cultural changes, including the rise of working-class writers like Alan Sillitoe and Shelagh Delaney."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Look Back in Anger",
+            "year": 1959,
+            "slug": "Richard Burton stars in this adaptation of John Osborne's play about a disillusioned working-class husband",
+            "streaming": "BritBox",
+            "tmdb_id": 50011,
+            "poster_url": "https://image.tmdb.org/t/p/w500/TCukFyvrXbIVp9KSt5Yr2HFy77.jpg"
+          },
+          {
+            "title": "Saturday Night and Sunday Morning",
+            "year": 1960,
+            "slug": "Albert Finney's breakthrough as a rebellious factory worker in Nottingham",
+            "streaming": "BFI Player",
+            "tmdb_id": 37230,
+            "poster_url": "https://image.tmdb.org/t/p/w500/fHHKxB71EzVzny3ZakxZRGe5Evw.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Visual Style and Technical Innovation"
+      },
+      {
+        "type": "text",
+        "content": "Kitchen Sink films developed a distinctive visual aesthetic that emphasized authenticity over glamour. Cinematographers like Walter Lassally brought documentary techniques to narrative filmmaking, using handheld cameras and available light to capture the texture of working-class life. <a href=\"/movie/25062\" class=\"movie-title\" data-tmdb-id=\"25062\">A Taste of Honey</a> (1961) exemplifies this approach, with Lassally's camera following Rita Tushingham through Manchester's industrial landscapes with unprecedented intimacy. The movement also pioneered location shooting in working-class neighborhoods, factories, and dockyards, creating a visual record of a rapidly changing Britain. Directors favored long takes and medium shots that allowed actors to inhabit their environments naturally."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "A Taste of Honey",
+            "year": 1961,
+            "slug": "Rita Tushingham stars in this groundbreaking drama about a working-class teenage girl",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 25062,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5psrZNVZ9E6Eck7OtpO47A8zTbQ.jpg"
+          },
+          {
+            "title": "This Sporting Life",
+            "year": 1963,
+            "slug": "Richard Harris as a rugby player trying to escape his working-class roots",
+            "streaming": "BFI Player",
+            "tmdb_id": 18774,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qDxSje4EpTfD9IzO8EJtPEpg6RL.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Social Commentary and Political Context"
+      },
+      {
+        "type": "text",
+        "content": "These films emerged during a period of significant social change in Britain, addressing issues of class, gender, and sexuality with unprecedented frankness. <a href=\"/movie/43103\" class=\"movie-title\" data-tmdb-id=\"43103\">Room at the Top</a> (1959) exposed the rigid class barriers that persisted in post-war Britain, while <a href=\"/movie/16103\" class=\"movie-title\" data-tmdb-id=\"16103\">The Loneliness of the Long Distance Runner</a> (1962) critiqued the institutional control of working-class youth. The movement's political edge was sharpened by the involvement of left-wing intellectuals and artists associated with journals like Sequence and Sight and Sound. Directors like Lindsay Anderson saw their work as explicitly political, using cinema to challenge social hierarchies and give voice to marginalized communities."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Room at the Top",
+            "year": 1959,
+            "slug": "Laurence Harvey stars in this story of class ambition and sexual politics",
+            "streaming": "StudioCanal",
+            "tmdb_id": 43103,
+            "poster_url": "https://image.tmdb.org/t/p/w500/uuyruoqh7oBtjwN1mJyOF04CPjO.jpg"
+          },
+          {
+            "title": "The Loneliness of the Long Distance Runner",
+            "year": 1962,
+            "slug": "Tom Courtenay as a rebellious youth in a detention center",
+            "streaming": "BFI Player",
+            "tmdb_id": 16103,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ePhZKUNyFGc8lzx0E0LiCcKs4y4.jpg"
+          }
+        ]
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The movement's influence extended beyond Britain, inspiring filmmakers worldwide to address social issues through realistic narrative techniques. Ken Loach emerged from this tradition, developing it further with films like <a href=\"/movie/76072\" class=\"movie-title\" data-tmdb-id=\"76072\">Poor Cow</a> (1967) and <a href=\"/movie/13384\" class=\"movie-title\" data-tmdb-id=\"13384\">Kes</a> (1969), which maintained the movement's commitment to social realism while introducing more sophisticated storytelling techniques. The use of non-professional actors, regional dialects, and documentary-style cinematography became hallmarks of social realist cinema globally, influencing everything from Czech New Wave to American independent film."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Poor Cow",
+            "year": 1967,
+            "slug": "Carol White stars in Ken Loach's debut feature about a young mother's struggles",
+            "streaming": "BFI Player",
+            "tmdb_id": 76072,
+            "poster_url": "https://image.tmdb.org/t/p/w500/w7ANsKsrbphsx21hGVRGZl1tydj.jpg"
+          },
+          {
+            "title": "Kes",
+            "year": 1969,
+            "slug": "Ken Loach's masterpiece about a working-class boy and his kestrel",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 13384,
+            "poster_url": "https://image.tmdb.org/t/p/w500/r1FMq75irhsQBVGjXhPU4xA9SDo.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The movement's treatment of gender and sexuality was particularly revolutionary for its time. Films like <a href=\"/movie/33765\" class=\"movie-title\" data-tmdb-id=\"33765\">A Kind of Loving</a> (1962) and <a href=\"/movie/26535\" class=\"movie-title\" data-tmdb-id=\"26535\">Billy Liar</a> (1963) explored changing sexual mores and women's increasing independence, while <a href=\"/movie/76000\" class=\"movie-title\" data-tmdb-id=\"76000\">The L-Shaped Room</a> (1962) tackled previously taboo subjects like unwed motherhood. These films gave unprecedented agency to female characters and addressed sexuality with a frankness that challenged censorship restrictions and social conventions."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "A Kind of Loving",
+            "year": 1962,
+            "slug": "Alan Bates stars in this story of a young couple forced into marriage",
+            "streaming": "BFI Player",
+            "tmdb_id": 33765,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ArE4ox7MWPIJcGZYonvRpOYPlTT.jpg"
+          },
+          {
+            "title": "The L-Shaped Room",
+            "year": 1962,
+            "slug": "Leslie Caron as a pregnant French woman in London",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 76000,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ie8EArW3CjO2gLMYtJEMLU4CAQN.jpg"
+          }
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Up the Junction",
+          "year": 1968,
+          "slug": "Working-class women's lives in South London",
+          "streaming": "BFI Player",
+          "tmdb_id": 47069,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fOQqU0xdqx1zWRrsGwcLzcxCKi3.jpg"
+        },
+        {
+          "title": "Spring and Port Wine",
+          "year": 1970,
+          "slug": "Family drama set in working-class Bolton",
+          "streaming": "StudioCanal",
+          "tmdb_id": 157031,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kO1McmrXypeixIwXCtjDjIhiIpU.jpg"
+        },
+        {
+          "title": "The Entertainer",
+          "year": 1960,
+          "slug": "Laurence Olivier as a failing music hall performer",
+          "streaming": "BritBox",
+          "tmdb_id": 18929,
+          "poster_url": "https://image.tmdb.org/t/p/w500/s549IYn0XDUlFHJpOLIrWE1uYXv.jpg"
+        },
+        {
+          "title": "A Taste of Honey",
+          "year": 1961,
+          "slug": "Groundbreaking exploration of race, class, and sexuality",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 25062,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5psrZNVZ9E6Eck7OtpO47A8zTbQ.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-18T17:02:54.224Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-18T17:02:54.224Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-3-movements/series-1-new-waves//3-british-kitchen-sink-social-realism.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:36.983Z",
+    "hasLinks": true,
+    "linksAdded": 5,
+    "tier": "tier2_link_only"
+  }
+}

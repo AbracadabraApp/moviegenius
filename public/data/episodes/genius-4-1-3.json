@@ -1,0 +1,249 @@
+{
+  "system": "genius",
+  "themeId": 4,
+  "seriesId": 1,
+  "episodeId": 3,
+  "theme": {
+    "id": 4,
+    "title": "Filmmaking",
+    "description": "The craft and technology of cinema",
+    "slug": "filmmaking"
+  },
+  "series": {
+    "id": 1,
+    "title": "Technical Evolution",
+    "description": "How cinema technology shapes storytelling"
+  },
+  "episode": {
+    "id": 3,
+    "title": "Studio System & Star Power",
+    "subtitle": "Hollywood's golden age machine"
+  },
+  "content": {
+    "opener": "Hollywood's Studio System (1920s-1960s) revolutionized entertainment by creating a vertically integrated machine that controlled everything from talent contracts to theater distribution, fundamentally shaping how movies were made and marketed.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "The foundation of Hollywood's Golden Age rested on the \"Big Five\" studios - MGM, Paramount, Warner Bros., RKO, and 20th Century Fox - which operated as entertainment factories, producing over 400 films annually during their peak. MGM, under Louis B. Mayer's leadership, exemplified the system's efficiency with its motto \"More stars than there are in heaven.\" The studio maintained over 2,000 employees, including contracted actors, directors, writers, and craftspeople. This assembly-line approach to filmmaking enabled MGM to produce classics like \"Gone with the Wind\" while maintaining consistent quality across dozens of annual releases."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Gone with the Wind",
+            "year": 1939,
+            "slug": "Epic historical romance showcasing MGM's production capabilities and star power",
+            "streaming": "HBO Max",
+            "tmdb_id": 770,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lNz2Ow0wGCAvzckW7EOjE03KcYv.jpg"
+          },
+          {
+            "title": "The Wizard of Oz",
+            "year": 1939,
+            "slug": "Technicolor masterpiece demonstrating studio technical innovation",
+            "streaming": "HBO Max",
+            "tmdb_id": 630,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pfAZFD7I2hxW9HCChTuAzsdE6UX.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Star Creation and Management"
+      },
+      {
+        "type": "text",
+        "content": "Studios developed sophisticated systems for discovering, developing, and marketing new talent. Actors were molded into specific personas through careful image management, publicity campaigns, and strategic role selection. The transformation of Norma Jeane Baker into Marilyn Monroe by 20th Century Fox exemplifies this process. Studios controlled every aspect of their stars' public lives, from arranged marriages to carefully orchestrated public appearances. This system created enduring icons like Clark Gable, Katharine Hepburn, and Humphrey Bogart, whose images were carefully crafted through both on-screen roles and off-screen publicity."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "All About Eve",
+            "year": 1950,
+            "slug": "Behind-the-scenes look at star-making machinery",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 705,
+            "poster_url": "https://image.tmdb.org/t/p/w500/blBzZaatPWVuWpXEnPscMA4Xp6m.jpg"
+          },
+          {
+            "title": "A Star Is Born",
+            "year": 1937,
+            "slug": "Hollywood's own commentary on its star system",
+            "streaming": "TCM",
+            "tmdb_id": 22692,
+            "poster_url": "https://image.tmdb.org/t/p/w500/90EfCmXXWOs5dy7rHTNvGT9T8Kz.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Technical Innovation and Style"
+      },
+      {
+        "type": "text",
+        "content": "The studio system fostered technical innovation through dedicated departments and standardized practices. Warner Bros. pioneered synchronized sound with \"The Jazz Singer,\" while Technicolor's relationship with Disney and MGM advanced color filmmaking. Each studio developed signature visual styles: MGM's glossy sophistication, Warner's gritty realism, and Universal's Gothic horror aesthetics. Cinematographers like James Wong Howe and Gregg Toland developed distinctive looks while working within studio constraints, creating innovations like deep focus photography and more dynamic lighting techniques."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Citizen Kane",
+            "year": 1941,
+            "slug": "Revolutionary cinematography by Gregg Toland",
+            "streaming": "HBO Max",
+            "tmdb_id": 15,
+            "poster_url": "https://image.tmdb.org/t/p/w500/sav0jxhqiH0bPr2vZFU0Kjt2nZL.jpg"
+          },
+          {
+            "title": "The Jazz Singer",
+            "year": 1927,
+            "slug": "First feature-length talkie",
+            "streaming": "Warner Archive",
+            "tmdb_id": 939,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wr8Pt1GO87cwB3210TO3JTNDsUc.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Genre Specialization"
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Studios became known for specific genres, developing efficient production methods and accumulated expertise. Warner Bros. specialized in gangster films and social commentary, Universal in horror, MGM in musicals and prestigious literary adaptations. This specialization allowed studios to reuse sets, costumes, and technical crews while building audience expectations. RKO's partnership with Val Lewton produced sophisticated horror films like \"Cat People,\" while Warner Bros.' crime films with James Cagney and Edward G. Robinson defined the gangster genre."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Public Enemy",
+            "year": 1931,
+            "slug": "Definitive Warner Bros. gangster film",
+            "streaming": "TCM",
+            "tmdb_id": 17687,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vVxdaRMprQO2DM4AFyJ6C4qZSFO.jpg"
+          },
+          {
+            "title": "Cat People",
+            "year": 1942,
+            "slug": "Sophisticated RKO horror production",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 25508,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zSNTDd5Q6No5BmY39Zp5BVgl8XE.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Distribution and Exhibition Control"
+      },
+      {
+        "type": "text",
+        "content": "Vertical integration gave studios unprecedented control over film distribution and exhibition. Owning theater chains ensured guaranteed venues for their products and allowed for sophisticated marketing campaigns. The studio system pioneered modern marketing techniques, including star tours, merchandising, and coordinated publicity campaigns. This control extended to newsreels, short subjects, and animated cartoons, creating complete entertainment packages that dominated American cultural life."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Sunset Boulevard",
+            "year": 1950,
+            "slug": "Dark look at studio system's impact",
+            "streaming": "Paramount+",
+            "tmdb_id": 599,
+            "poster_url": "https://image.tmdb.org/t/p/w500/sC4Dpmn87oz9AuxZ15Lmip0Ftgr.jpg"
+          },
+          {
+            "title": "Singin' in the Rain",
+            "year": 1952,
+            "slug": "Musical celebration of studio era",
+            "streaming": "HBO Max",
+            "tmdb_id": 872,
+            "poster_url": "https://image.tmdb.org/t/p/w500/w03EiJVHP8Un77boQeE7hg9DVdU.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The system's efficiency reached its peak in the 1940s, when studios produced sophisticated entertainments like \"Casablanca\" on tight schedules and budgets. Production units headed by producers like David O. Selznick and Hal B. Wallis maintained quality while meeting release schedules. This period saw the perfect balance of artistic achievement and commercial success, producing enduring classics that combined popular appeal with technical excellence."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Casablanca",
+            "year": 1942,
+            "slug": "Classic example of studio system efficiency",
+            "streaming": "HBO Max",
+            "tmdb_id": 289,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oyGRZVIthHJjc98ekKpeWpDh8Ws.jpg"
+          },
+          {
+            "title": "Rebecca",
+            "year": 1940,
+            "slug": "Selznick production showcasing system's capabilities",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 223,
+            "poster_url": "https://image.tmdb.org/t/p/w500/1qz3qUOHnVy7dL7M7G8jSErxE4b.jpg"
+          }
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Double Indemnity",
+          "year": 1944,
+          "slug": "Film noir masterpiece from Paramount's peak",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 996,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rVNYZZgfhwqVMMWlBmxOfWqnwCj.jpg"
+        },
+        {
+          "title": "Meet Me in St. Louis",
+          "year": 1944,
+          "slug": "MGM musical showcasing Technicolor mastery",
+          "streaming": "HBO Max",
+          "tmdb_id": 909,
+          "poster_url": "https://image.tmdb.org/t/p/w500/ekVeUvG81pidsv2LMtWf5yYcNbq.jpg"
+        },
+        {
+          "title": "The Big Sleep",
+          "year": 1946,
+          "slug": "Warner Bros. noir highlighting star power",
+          "streaming": "TCM",
+          "tmdb_id": 910,
+          "poster_url": "https://image.tmdb.org/t/p/w500/lraHo9D8c0YWfxsKqT5P5sVqMKN.jpg"
+        },
+        {
+          "title": "The Searchers",
+          "year": 1956,
+          "slug": "Late studio system masterpiece",
+          "streaming": "HBO Max",
+          "tmdb_id": 3114,
+          "poster_url": "https://image.tmdb.org/t/p/w500/jLBmgW0epNzJ1N9uzaVCjbyT94v.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-18T17:08:04.455Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-18T17:08:04.455Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-4-filmmaking/series-1-technical-evolution//3-studio-system-star-power.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:48.072Z",
+    "hasLinks": false,
+    "linksAdded": 0,
+    "tier": "tier2_link_only"
+  }
+}

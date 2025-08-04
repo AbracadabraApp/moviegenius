@@ -6,7 +6,7 @@
 import { useState, useEffect } from 'react';
 import PhoneFrame from '../components/PhoneFrame';
 import MediaCard from '../components/MediaCard';
-import AskInputBar from '../components/AskInputBar';
+import SimpleSearch from '../components/SimpleSearch';
 import { useRouter } from 'next/router';
 
 export default function NewReleasesPage() {
@@ -15,11 +15,10 @@ export default function NewReleasesPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const handleAsk = (query) => {
-    router.push({
-      pathname: '/ask',
-      query: { q: query }
-    });
+  const handleSearchResults = results => {
+    // For now, just log the search results
+    // In the future, could show search results in a modal or navigate to search page
+    console.log('Search results on New page:', results);
   };
 
   useEffect(() => {
@@ -31,7 +30,7 @@ export default function NewReleasesPage() {
       setIsLoading(true);
       const response = await fetch('/api/new-releases');
       const data = await response.json();
-      
+
       if (data.success) {
         setNewReleases(data.releases);
       } else {
@@ -49,8 +48,8 @@ export default function NewReleasesPage() {
     <PhoneFrame>
       <div style={styles.container}>
         <div style={styles.inputArea}>
-          <AskInputBar 
-            onSubmit={handleAsk}
+          <SimpleSearch
+            onResults={handleSearchResults}
             placeholder="Ask about new releases or discover cinema..."
           />
         </div>
@@ -71,9 +70,7 @@ export default function NewReleasesPage() {
 
           {error && (
             <div style={styles.error}>
-              <div style={styles.errorText}>
-                Unable to load new releases: {error}
-              </div>
+              <div style={styles.errorText}>Unable to load new releases: {error}</div>
             </div>
           )}
 
@@ -104,10 +101,12 @@ export default function NewReleasesPage() {
               <div style={styles.comingSoon}>
                 <h3 style={styles.comingSoonTitle}>Coming Soon</h3>
                 <div style={styles.comingSoonText}>
-                  • Daily auto-discovery of quality new releases<br/>
-                  • Claude analysis for noteworthy films<br/>
-                  • Curated recommendations for film enthusiasts<br/>
-                  • Integration with your existing favorites
+                  • Daily auto-discovery of quality new releases
+                  <br />
+                  • Claude analysis for noteworthy films
+                  <br />
+                  • Curated recommendations for film enthusiasts
+                  <br />• Integration with your existing favorites
                 </div>
               </div>
             </>
@@ -123,7 +122,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100%',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   inputArea: {
     padding: '16px',
