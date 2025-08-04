@@ -46,8 +46,10 @@ export NODE_OPTIONS="--max-old-space-size=4096"
 # Disable Puppeteer download during build  
 export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 
-# Force environment variable reload - CRITICAL ANALYSIS FIX
-echo "🔧 ANALYSIS FIX: Clearing cache and rebuilding with fresh environment variables"
+# CRITICAL ANALYSIS FIX: Explicitly set environment variables for build
+echo "🔧 ANALYSIS FIX: Setting environment variables explicitly for build"
+export NEXT_PUBLIC_SUPABASE_URL="https://tjvaplqqibvlmazdvcwx.supabase.co"
+echo "✅ Set NEXT_PUBLIC_SUPABASE_URL=$NEXT_PUBLIC_SUPABASE_URL"
 
 # Build with error output
 npm run build 2>&1 || (echo "Build failed:" && cat .next/trace || echo "No trace available" && exit 1)
