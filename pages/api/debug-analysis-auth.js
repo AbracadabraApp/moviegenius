@@ -37,14 +37,14 @@ export default async function handler(req, res) {
     // Test 2: Simulate analysis endpoint initialization (like explore/[...slug].js)
     const { createClient } = await import('@supabase/supabase-js');
     
-    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
-    const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || 'placeholder-key';
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
     
     const initializationCheck = {
       resolvedSupabaseUrl: supabaseUrl,
-      resolvedSupabaseKey: supabaseKey.substring(0, 10) + '...',
-      isUsingPlaceholderURL: supabaseUrl.includes('placeholder'),
-      isUsingPlaceholderKey: supabaseKey.includes('placeholder')
+      resolvedSupabaseKey: supabaseKey ? supabaseKey.substring(0, 10) + '...' : 'NULL',
+      isUsingPlaceholderURL: supabaseUrl ? supabaseUrl.includes('placeholder') : false,
+      isUsingPlaceholderKey: supabaseKey ? supabaseKey.includes('placeholder') : false
     };
 
     // Test 3: Try to create Supabase client (like analysis endpoints do)
@@ -73,9 +73,9 @@ export default async function handler(req, res) {
       initialization: initializationCheck,
       supabase_connection_test: supabaseConnectionTest,
       analysis: {
-        placeholder_urls_found: supabaseUrl.includes('placeholder'),
-        placeholder_keys_found: supabaseKey.includes('placeholder'),
-        ready_for_analysis: !supabaseUrl.includes('placeholder') && !supabaseKey.includes('placeholder')
+        placeholder_urls_found: supabaseUrl ? supabaseUrl.includes('placeholder') : false,
+        placeholder_keys_found: supabaseKey ? supabaseKey.includes('placeholder') : false,
+        ready_for_analysis: supabaseUrl && supabaseKey && !supabaseUrl.includes('placeholder') && !supabaseKey.includes('placeholder')
       }
     });
     
