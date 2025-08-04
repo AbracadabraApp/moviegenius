@@ -94,6 +94,12 @@ async function movieAnalysisHandler(req, res) {
             const movieYear = tmdbMovie.release_date ? parseInt(tmdbMovie.release_date.substring(0, 4)) : null;
             console.log(`✅ Found TMDB movie: ${tmdbMovie.title} (${movieYear})`);
             const newMovieEntry = await createBasicMovieEntry(tmdbMovie);
+            
+            if (!newMovieEntry) {
+              console.error(`❌ Failed to create movie entry for ${tmdbMovie.title} (${movieYear})`);
+              throw new Error('Failed to create movie database entry');
+            }
+            
             title = newMovieEntry.title;
             year = newMovieEntry.year;
             console.log(`💾 Created movie entry for analysis: ${title} (${year})`);
