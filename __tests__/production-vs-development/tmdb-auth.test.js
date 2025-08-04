@@ -172,14 +172,15 @@ describe('TMDB Authentication Production vs Development', () => {
       // The specific bug that caused the 4-5 day outage
       const validTMDBBearerToken = 'eyJhbGciOiJIUzI1NiJ9LeyJhdWQiOiI4MmU1M2QyZDY4ZmY0MjQ1YjhkNmQzNGVkOWNhMjgwNyIsInN1YiI6IjY2NTYwMWYyNzQ1NTNiYzM2MzVjNDlhZiIsInNjb3BlcyI6W10sInZlcnNpb24iOjF9';
       
-      // This should NOT be validated as a JWT (which would be 3 parts separated by dots)
+      // TMDB v4 Bearer tokens ARE JWTs (header.payload.signature)
       const parts = validTMDBBearerToken.split('.');
       
-      // TMDB tokens are NOT 3-part JWTs
-      expect(parts.length).not.toBe(3);
+      // TMDB Bearer tokens ARE 3-part JWTs
+      expect(parts.length).toBe(3);
       
-      // Our new validation should work (length > 50)
+      // Should have substantial length and proper JWT structure
       expect(validTMDBBearerToken.length).toBeGreaterThan(50);
+      expect(validTMDBBearerToken).toMatch(/^eyJ/);
     });
 
     it('should prevent placeholder fallback in production', async () => {

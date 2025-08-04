@@ -167,12 +167,13 @@ describe('Movie Analysis API Regression Tests', () => {
       // The specific regression: JWT validation for non-JWT tokens
       const tmdbBearerToken = 'eyJhbGciOiJIUzI1NiJ9LeyJhdWQiOiI4MmU1M2QyZDY4ZmY0MjQ1YjhkNmQzNGVkOWNhMjgwNyIsInN1YiI6IjY2NTYwMWYyNzQ1NTNiYzM2MzVjNDlhZiIsInNjb3BlcyI6W10sInZlcnNpb24iOjF9';
       
-      // Old broken validation (this should NOT be 3)
+      // TMDB v4 Bearer tokens ARE JWTs with 3 parts (header.payload.signature)
       const jwtParts = tmdbBearerToken.split('.');
-      expect(jwtParts.length).not.toBe(3); // TMDB tokens are NOT JWTs
+      expect(jwtParts.length).toBe(3); // TMDB Bearer tokens are JWTs
       
-      // New working validation (this should pass)
+      // Should also be substantial length and start with eyJ (base64 JWT header)
       expect(tmdbBearerToken.length).toBeGreaterThan(50);
+      expect(tmdbBearerToken).toMatch(/^eyJ/);
     });
 
     it('should prevent placeholder API key usage in production', async () => {
