@@ -13,27 +13,54 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Invalid movie ID' });
   }
   
-  // Use proper TMDB authentication with placeholder validation
-  const apiKey = process.env.TMDB_API_KEY || process.env.NEXT_PUBLIC_TMDB_API_KEY;
+  // Use proper TMDB authentication hierarchy (Bearer token preferred)
+  const bearerToken = process.env.TMDB_BEARER_TOKEN;
+  let url, headers;
   
-  if (!apiKey || apiKey === 'placeholder' || apiKey.startsWith('placehol')) {
-    console.error('TMDB API key not configured properly:', {
-      hasServerKey: !!process.env.TMDB_API_KEY,
-      hasPublicKey: !!process.env.NEXT_PUBLIC_TMDB_API_KEY,
-      publicKeyValue: process.env.NEXT_PUBLIC_TMDB_API_KEY?.substring(0, 8) + '...'
-    });
-    return res.status(500).json({ error: 'TMDB service unavailable' });
+  if (bearerToken && bearerToken.split('.').length === 3) {
+    // Use Bearer token method (TMDB v4)
+    url = `https://api.themoviedb.org/3/movie/${tmdbId}`;
+    headers = {
+      'Authorization': `Bearer ${bearerToken}`,
+      'Accept': 'application/json'
+    };
+  } else {
+    // Fall back to API key method (TMDB v3)
+    const apiKey = process.env.TMDB_API_KEY || process.env.NEXT_PUBLIC_TMDB_API_KEY;
+    
+    if (!apiKey || apiKey === 'placeholder' || apiKey.startsWith('placehol')) {
+      console.error('TMDB authentication not configured properly:', {
+        hasBearerToken: !!bearerToken,
+        hasServerKey: !!process.env.TMDB_API_KEY,
+        hasPublicKey: !!process.env.NEXT_PUBLIC_TMDB_API_KEY
+      });
+      return res.status(500).json({ error: 'TMDB service unavailable' });
+    }
+    
+    url = `https://api.themoviedb.org/3/movie/${tmdbId}?api_key=${apiKey}`;
+    headers = { 'Accept': 'application/json' };
   }
   
   try {
-    // Fetch from TMDB with proper API key
-    const response = await fetch(
-      `https://api.themoviedb.org/3/movie/${tmdbId}?api_key=${apiKey}`
-    );
+    // Fetch from TMDB with proper authentication
+    const response = await fetch(url, { headers });
     
     if (!response.ok) {
       if (response.status === 404) {
         return res.status(404).json({ error: 'Movie not found' });
+      }
+      if (response.status === 401) {
+        // Check rate limit headers for 401s
+        const rateLimitRemaining = response.headers.get('X-RateLimit-Remaining');
+        console.error('TMDB 401 Unauthorized:', {
+          authMethod: bearerToken ? 'Bearer' : 'API Key',
+          rateLimitRemaining,
+          possibleCauses: ['Invalid/expired token', 'Rate limit exceeded', 'Wrong scope']
+        });
+        return res.status(401).json({ 
+          error: 'TMDB authentication failed',
+          details: rateLimitRemaining === '0' ? 'Rate limit exceeded' : 'Invalid or expired credentials'
+        });
       }
       throw new Error(`TMDB API error: ${response.status}`);
     }
