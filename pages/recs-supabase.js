@@ -6,9 +6,13 @@ import SimpleSearch from '../components/SimpleSearch';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
-// Initialize Supabase client with build-safe fallbacks
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key';
+// Use proper authentication without placeholder fallbacks (like fixed search endpoints)
+if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
+  console.error('❌ Recommendations authentication failed: Supabase credentials not configured');
+}
+
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 export default function RecsSupabasePage({ movies, error, stats }) {
