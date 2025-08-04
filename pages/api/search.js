@@ -19,15 +19,13 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Query must be at least 2 characters' });
   }
 
-  // Search endpoints require API key (Bearer tokens have limited scope for search)
-  const apiKey = process.env.TMDB_API_KEY || process.env.NEXT_PUBLIC_TMDB_API_KEY;
+  // Use Bearer token for search (proven to work in production via health test)
+  const bearerToken = process.env.TMDB_BEARER_TOKEN;
   
-  if (!apiKey || apiKey === 'placeholder' || apiKey.startsWith('placehol')) {
-    console.error('TMDB search authentication not configured properly:', {
-      hasServerKey: !!process.env.TMDB_API_KEY,
-      hasPublicKey: !!process.env.NEXT_PUBLIC_TMDB_API_KEY,
-      publicKeyValue: process.env.NEXT_PUBLIC_TMDB_API_KEY,
-      reason: 'Search endpoints require API key (Bearer tokens have limited scope)'
+  if (!bearerToken || bearerToken.split('.').length !== 3) {
+    console.error('TMDB Bearer token not configured properly for search:', {
+      hasBearerToken: !!bearerToken,
+      isValidJWT: bearerToken?.split('.').length === 3
     });
     return res.status(500).json({
       error: 'Search unavailable',
@@ -37,11 +35,14 @@ export default async function handler(req, res) {
   }
   
   const searchQuery = encodeURIComponent(query.trim());
-  const url = `https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&query=${searchQuery}&include_adult=false&language=en-US`;
-  const headers = { 'Accept': 'application/json' };
+  const url = `https://api.themoviedb.org/3/search/multi?query=${searchQuery}&include_adult=false&language=en-US`;
+  const headers = {
+    'Authorization': `Bearer ${bearerToken}`,
+    'Accept': 'application/json'
+  };
 
   try {
-    console.log(`🔍 TMDB search: "${query.trim()}" using API key (${process.env.TMDB_API_KEY ? 'server' : 'public'})`);
+    console.log(`🔍 TMDB search: "${query.trim()}" using Bearer token`);
 
     const response = await fetch(url, { headers });
 
@@ -49,11 +50,10 @@ export default async function handler(req, res) {
       if (response.status === 401) {
         const rateLimitRemaining = response.headers.get('X-RateLimit-Remaining');
         console.error('TMDB search 401 Unauthorized:', {
-          authMethod: 'API Key',
-          keySource: process.env.TMDB_API_KEY ? 'server' : 'public',
-          keyValue: process.env.NEXT_PUBLIC_TMDB_API_KEY || 'hidden',
+          authMethod: 'Bearer Token',
+          tokenLength: bearerToken.length,
           rateLimitRemaining,
-          possibleCauses: ['Invalid API key', 'Rate limit exceeded', 'Scope restrictions']
+          possibleCauses: ['Invalid/expired token', 'Rate limit exceeded', 'Wrong scope']
         });
       }
       throw new Error(`TMDB API failed: ${response.status}`);
