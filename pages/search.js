@@ -74,8 +74,8 @@ export default function SearchPage() {
 
     setLoading(true);
     try {
-      // Use the working multi-search API for all searches
-      const response = await fetch('/api/multi-search', {
+      // Use the working simple-search API for all searches (matches SimpleSearch component)
+      const response = await fetch('/api/simple-search', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query }),
@@ -186,8 +186,10 @@ export default function SearchPage() {
   };
 
   const handleSearchResults = results => {
-    // This is for when SimpleSearch redirects here, results will be empty
-    // The search will be performed by the useEffect when the URL query changes
+    // Handle results from SimpleSearch component directly
+    if (results && results.movies) {
+      setSearchResults(results.movies);
+    }
   };
 
   const handleMovieClick = movie => {
