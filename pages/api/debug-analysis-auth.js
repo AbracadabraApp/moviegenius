@@ -69,6 +69,7 @@ export default async function handler(req, res) {
 
     return res.status(200).json({
       timestamp: new Date().toISOString(),
+      ipv4_addon_status: "ENABLED - Testing connectivity",
       environment_variables: envCheck,
       initialization: initializationCheck,
       supabase_connection_test: supabaseConnectionTest,
