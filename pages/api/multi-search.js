@@ -123,6 +123,8 @@ export default async function handler(req, res) {
         poster_url: movie.poster_path
           ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
           : '/images/placeholder-poster.jpg',
+        popularity: movie.popularity || 0, // Include TMDB popularity score
+        relevanceScore: movie.relevanceScore, // Custom relevance score for debugging
         media_type: 'movie',
       }));
 

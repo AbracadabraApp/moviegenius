@@ -29,6 +29,7 @@ export default async function handler(req, res) {
         poster_url: movie.poster_path
           ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
           : '/images/placeholder-poster.jpg',
+        popularity: movie.popularity || 0, // Include TMDB popularity score for ranking
         streaming_data: null, // Will be fetched organically if needed
         slug: null,
       }));
