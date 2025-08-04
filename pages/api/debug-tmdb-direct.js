@@ -9,7 +9,8 @@ export default async function handler(req, res) {
     const results = {
       environment: {
         NODE_ENV: process.env.NODE_ENV,
-        RAILWAY_ENVIRONMENT_NAME: process.env.RAILWAY_ENVIRONMENT_NAME
+        RAILWAY_ENVIRONMENT_NAME: process.env.RAILWAY_ENVIRONMENT_NAME,
+        timestamp: new Date().toISOString()
       },
       authentication: {},
       tests: []
