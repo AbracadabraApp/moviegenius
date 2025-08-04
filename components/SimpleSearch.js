@@ -50,7 +50,7 @@ export default function SimpleSearch({
 
 
     try {
-      const response = await fetch('/api/multi-search', {
+      const response = await fetch('/api/simple-search', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query: q }),
@@ -73,7 +73,15 @@ export default function SimpleSearch({
           }
         }
 
-        if (onResults) onResults(data || { movies: [], people: [] });
+        // Simple-search only returns movies, so add empty people array for compatibility
+        const results = {
+          movies: data.movies || [],
+          people: [], // Simple-search doesn't return people
+          hasResults: data.hasResults,
+          query: data.query
+        };
+
+        if (onResults) onResults(results);
 
         // Handle fallback for empty results
         if (data.fallback) {
