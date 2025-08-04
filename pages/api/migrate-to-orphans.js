@@ -25,7 +25,7 @@ export default async function handler(req, res) {
       return res.status(200).json({
         success: true,
         message: 'No movies to migrate - all movies already have TMDB IDs',
-        migratedMovies: 0
+        migratedMovies: 0,
       });
     }
 
@@ -50,13 +50,11 @@ export default async function handler(req, res) {
       mention_count: 1,
       first_mentioned_at: movie.created_at || new Date().toISOString(),
       last_mentioned_at: movie.created_at || new Date().toISOString(),
-      created_at: movie.created_at || new Date().toISOString()
+      created_at: movie.created_at || new Date().toISOString(),
     }));
 
     // Step 4: Insert into orphan_movies table
-    const { error: insertError } = await supabase
-      .from('orphan_movies')
-      .insert(orphanData);
+    const { error: insertError } = await supabase.from('orphan_movies').insert(orphanData);
 
     if (insertError) {
       throw new Error(`Failed to insert orphans: ${insertError.message}`);
@@ -65,10 +63,7 @@ export default async function handler(req, res) {
     console.log(`Successfully migrated ${nullMovies.length} movies to orphan_movies`);
 
     // Step 5: Delete null TMDB movies from main table
-    const { error: deleteError } = await supabase
-      .from('movies')
-      .delete()
-      .is('tmdb_id', null);
+    const { error: deleteError } = await supabase.from('movies').delete().is('tmdb_id', null);
 
     if (deleteError) {
       throw new Error(`Failed to delete null movies: ${deleteError.message}`);
@@ -95,15 +90,14 @@ export default async function handler(req, res) {
       message: `Successfully migrated ${nullMovies.length} movies to orphan_movies table`,
       details: {
         moviesWithTmdbIds: finalMovieCount,
-        totalOrphans: orphanCount
-      }
+        totalOrphans: orphanCount,
+      },
     });
-
   } catch (error) {
     console.error('Migration error:', error);
-    res.status(500).json({ 
+    res.status(500).json({
       error: 'Migration failed',
-      details: error.message 
+      details: error.message,
     });
   }
 }

@@ -1,0 +1,247 @@
+{
+  "system": "genius",
+  "themeId": 5,
+  "seriesId": 2,
+  "episodeId": 7,
+  "theme": {
+    "id": 5,
+    "title": "Topics",
+    "description": "Cultural and historical contexts in cinema",
+    "slug": "topics"
+  },
+  "series": {
+    "id": 2,
+    "title": "Historical Periods",
+    "description": "How cinema reflects and shapes history"
+  },
+  "episode": {
+    "id": 7,
+    "title": "A24 & Independent Prestige",
+    "subtitle": "Art house meets commercial success"
+  },
+  "content": {
+    "opener": "A24's meteoric rise since 2012 has redefined independent cinema, creating a new model where artistic innovation meets mainstream appeal.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "A24's emergence marked a significant shift in independent film distribution and production. Founded by Daniel Katz, David Fenkel, and John Hodges, the company's early success with Spring Breakers (2013) established their willingness to take risks on unconventional narratives. Their breakthrough came with Room (2015), which earned Brie Larson an Academy Award and demonstrated A24's ability to balance artistic merit with commercial viability. The company's curatorial eye and marketing prowess transformed how independent films reach audiences, particularly younger demographics, through social media-savvy campaigns and distinctive branding."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Spring Breakers",
+            "year": 2013,
+            "slug": "Harmony Korine's neon-soaked crime drama featuring James Franco",
+            "streaming": "Netflix",
+            "tmdb_id": 122081,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9tyPnyEkL44qbAliM9jMRWc6bjg.jpg"
+          },
+          {
+            "title": "Room",
+            "year": 2015,
+            "slug": "Claustrophobic drama about captivity and survival directed by Lenny Abrahamson",
+            "streaming": "Prime Video",
+            "tmdb_id": 264644,
+            "poster_url": "https://image.tmdb.org/t/p/w500/pCURNjeomWbMSdiP64gj8NVVHTQ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Visual Innovation and Auteur Support"
+      },
+      {
+        "type": "text",
+        "content": "A24's commitment to visual distinctiveness became evident through collaborations with bold filmmakers. Robert Eggers' The Witch (2015) showcased their willingness to support period-accurate historical horror with uncompromising artistic vision. The film's success paved the way for more ambitious projects like Barry Jenkins' Moonlight (2016), which revolutionized cinematographic approaches to depicting Black stories through James Laxton's intimate camera work and distinctive color palettes. These films established A24's reputation for prioritizing director-driven visions while maintaining high production values."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Witch",
+            "year": 2015,
+            "slug": "Period horror film exploring religious paranoia in colonial New England",
+            "streaming": "Showtime",
+            "tmdb_id": 310131,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zap5hpFCWSvdWSuPGAQyjUv2wAC.jpg"
+          },
+          {
+            "title": "Moonlight",
+            "year": 2016,
+            "slug": "Academy Award-winning coming-of-age drama",
+            "streaming": "Netflix",
+            "tmdb_id": 376867,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rcICfiL9fvwRjoWHxW8QeroLYrJ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Genre Redefinition and Cultural Impact"
+      },
+      {
+        "type": "text",
+        "content": "The company's approach to genre filmmaking has consistently pushed boundaries. Ari Aster's Hereditary (2018) and Midsommar (2019) redefined horror cinema through their emphasis on psychological depth and artistic composition. Meanwhile, The Florida Project (2017) demonstrated A24's ability to tackle social realism with both gravity and visual poetry. Director Sean Baker's use of 35mm film and vibrant cinematography created a striking contrast with the film's exploration of poverty, establishing A24's knack for finding beauty in unexpected places."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Hereditary",
+            "year": 2018,
+            "slug": "Psychological horror exploring family trauma",
+            "streaming": "Showtime",
+            "tmdb_id": 493922,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4GFPuL14eXi66V96xBWY73Y9PfR.jpg"
+          },
+          {
+            "title": "The Florida Project",
+            "year": 2017,
+            "slug": "Social realist drama set in Orlando's hidden homeless community",
+            "streaming": "Netflix",
+            "tmdb_id": 394117,
+            "poster_url": "https://image.tmdb.org/t/p/w500/eE1J6nCMw8UhsAOI6HhhItarWmN.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Technical Innovation and Artistic Excellence"
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "A24's technical achievements have set new standards for independent cinema. Ex Machina (2014) proved their ability to produce sophisticated science fiction with limited budgets, winning an Academy Award for visual effects. The film's minimalist approach to CGI and emphasis on practical effects influenced subsequent science fiction productions. Similarly, Under the Skin (2013) showcased their commitment to experimental storytelling, with Jonathan Glazer's bold direction and Mica Levi's revolutionary score creating an entirely new cinematic language."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Ex Machina",
+            "year": 2014,
+            "slug": "Sci-fi thriller exploring artificial intelligence",
+            "streaming": "Prime Video",
+            "tmdb_id": 264660,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dmJW8IAKHKxFNiUnoDR7JfsK7Rp.jpg"
+          },
+          {
+            "title": "Under the Skin",
+            "year": 2013,
+            "slug": "Experimental sci-fi featuring Scarlett Johansson",
+            "streaming": "Prime Video",
+            "tmdb_id": 97370,
+            "poster_url": "https://image.tmdb.org/t/p/w500/55wmcXJIDYITr7JDijJTdvwSaAv.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Contemporary Storytelling and Social Commentary"
+      },
+      {
+        "type": "text",
+        "content": "The company's recent output has demonstrated an increasing focus on contemporary issues through innovative storytelling. Everything Everywhere All at Once (2022) broke new ground in both narrative structure and representation, becoming A24's highest-grossing film while tackling themes of generational trauma and immigrant experience. Uncut Gems (2019) pushed cinematic anxiety to new heights through the Safdie brothers' frenetic direction and Daniel Lopatin's stress-inducing score, while examining addiction and capitalism in modern America."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Everything Everywhere All at Once",
+            "year": 2022,
+            "slug": "Genre-bending multiverse family drama",
+            "streaming": "Showtime",
+            "tmdb_id": 545611,
+            "poster_url": "https://image.tmdb.org/t/p/w500/u68AjlvlutfEIcpmbYpKcdi09ut.jpg"
+          },
+          {
+            "title": "Uncut Gems",
+            "year": 2019,
+            "slug": "High-tension thriller set in New York's Diamond District",
+            "streaming": "Netflix",
+            "tmdb_id": 473033,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6XN1vxHc7kUSqNWtaQKN45J5x2v.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "International Expansion and Influence"
+      },
+      {
+        "type": "text",
+        "content": "A24's influence has extended beyond American cinema, with international collaborations expanding their artistic reach. The company's distribution of films like The Souvenir (2019) and First Cow (2020) has helped bridge the gap between European art house traditions and American independent cinema. Their support of international filmmakers has created new pathways for global storytelling, while maintaining their distinctive approach to marketing and distribution."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Souvenir",
+            "year": 2019,
+            "slug": "British coming-of-age drama directed by Joanna Hogg",
+            "streaming": "Prime Video",
+            "tmdb_id": 473019,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2Nj04HsZ0lNkv07JnfBZ0bAIECn.jpg"
+          },
+          {
+            "title": "First Cow",
+            "year": 2020,
+            "slug": "Historical drama exploring friendship and capitalism in the American frontier",
+            "streaming": "Showtime",
+            "tmdb_id": 558582,
+            "poster_url": "https://image.tmdb.org/t/p/w500/yS41crZ1i0fFxCQbuL7I1Y1VBwm.jpg"
+          }
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Lady Bird",
+          "year": 2017,
+          "slug": "Greta Gerwig's semi-autobiographical coming-of-age story",
+          "streaming": "Netflix",
+          "tmdb_id": 391713,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gl66K7zRdtNYGrxyS2YDUP5ASZd.jpg"
+        },
+        {
+          "title": "The Green Knight",
+          "year": 2021,
+          "slug": "Medieval fantasy adaptation with modern sensibilities",
+          "streaming": "Prime Video",
+          "tmdb_id": 559907,
+          "poster_url": "https://image.tmdb.org/t/p/w500/if4hw3Ou5Sav9Em7WWHj66mnywp.jpg"
+        },
+        {
+          "title": "C'mon C'mon",
+          "year": 2021,
+          "slug": "Black-and-white drama exploring family relationships",
+          "streaming": "Prime Video",
+          "tmdb_id": 632617,
+          "poster_url": "https://image.tmdb.org/t/p/w500/1oOyJsdcJnnE7cl9bZdUQvBjKNH.jpg"
+        },
+        {
+          "title": "The Lighthouse",
+          "year": 2019,
+          "slug": "Psychological horror featuring Willem Dafoe and Robert Pattinson",
+          "streaming": "Prime Video",
+          "tmdb_id": 503919,
+          "poster_url": "https://image.tmdb.org/t/p/w500/f1tIYarTbkBdIT1aW0gzelDwknv.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-18T17:33:34.486Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-18T17:33:34.486Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-5-topics/series-2-historical-periods//7-a24-independent-prestige.jpg"
+}

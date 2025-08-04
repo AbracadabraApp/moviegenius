@@ -1,7 +1,7 @@
 // pages/api/genius-list.js
 /**
  * Genius List API
- * 
+ *
  * Fetches list data by ID and generates Claude description if needed.
  * Supports the unified genius template for both ask results and lists.
  */
@@ -33,9 +33,9 @@ export default async function handler(req, res) {
       .single();
 
     if (listError || !list) {
-      return res.status(404).json({ 
+      return res.status(404).json({
         error: 'List not found',
-        details: listError?.message 
+        details: listError?.message,
       });
     }
 
@@ -46,8 +46,8 @@ export default async function handler(req, res) {
           id: list.id,
           name: list.name,
           slug: list.slug,
-          description: list.description
-        }
+          description: list.description,
+        },
       });
     }
 
@@ -66,7 +66,7 @@ export default async function handler(req, res) {
     } else if (list.claude_prompt) {
       // Generate new Claude description
       console.log(`Generating new description for list: ${list.name}`);
-      
+
       try {
         const { Anthropic } = await import('@anthropic-ai/sdk');
         const anthropic = new Anthropic({
@@ -93,24 +93,25 @@ Use:
           temperature: 0.3,
           system: [
             {
-              type: "text",
+              type: 'text',
               text: systemPrompt,
-              cache_control: { type: "ephemeral" }
-            }
+              cache_control: { type: 'ephemeral' },
+            },
           ],
           messages: [
             {
               role: 'user',
-              content: list.claude_prompt
-            }
-          ]
+              content: list.claude_prompt,
+            },
+          ],
         });
 
         claudeDescription = message.content[0].text;
-        
+
         // Calculate cost estimate
-        const costEstimate = (message.usage.input_tokens * 3 / 1000000) + (message.usage.output_tokens * 15 / 1000000);
-        
+        const costEstimate =
+          (message.usage.input_tokens * 3) / 1000000 + (message.usage.output_tokens * 15) / 1000000;
+
         // Save to database for caching
         const analysisData = {
           raw_content: claudeDescription,
@@ -118,25 +119,24 @@ Use:
           cost_estimate: costEstimate,
           input_tokens: message.usage.input_tokens,
           output_tokens: message.usage.output_tokens,
-          model: 'claude-3-5-sonnet-20241022'
+          model: 'claude-3-5-sonnet-20241022',
         };
 
-        const { error: saveError } = await supabase
-          .from('list_analyses')
-          .insert({
-            list_id: id,
-            analysis_type: 'list_description',
-            claude_response: analysisData,
-            query_text: `List description for ${list.name}`
-          });
+        const { error: saveError } = await supabase.from('list_analyses').insert({
+          list_id: id,
+          analysis_type: 'list_description',
+          claude_response: analysisData,
+          query_text: `List description for ${list.name}`,
+        });
 
         if (saveError) {
           console.error('Failed to save list analysis to database:', saveError);
           // Don't fail the request, just log the error
         } else {
-          console.log(`Saved description for list ${list.name} - Cost: $${costEstimate.toFixed(4)}`);
+          console.log(
+            `Saved description for list ${list.name} - Cost: $${costEstimate.toFixed(4)}`
+          );
         }
-
       } catch (claudeError) {
         console.error('Error generating Claude description:', claudeError);
         // Fall back to manual description
@@ -150,11 +150,12 @@ Use:
     // Fetch movies in this list from two sources:
     // 1. Traditional movie_list_items (manual curation)
     // 2. Movies mentioned in Claude analysis (auto-generated MediaCards)
-    
+
     // Fetch manually curated movies
     const { data: listItems, error: itemsError } = await supabase
       .from('movie_list_items')
-      .select(`
+      .select(
+        `
         movies (
           id,
           title,
@@ -164,19 +165,21 @@ Use:
           streaming_data,
           tmdb_id
         )
-      `)
+      `
+      )
       .eq('list_id', id);
 
-    let movies = listItems?.map(item => ({
-      id: item.movies.id,
-      title: item.movies.title,
-      year: item.movies.year,
-      slug: item.movies.slug,
-      poster: item.movies.poster_url,
-      streaming: item.movies.streaming_data,
-      tmdb_id: item.movies.tmdb_id,
-      source: 'curated'
-    })) || [];
+    let movies =
+      listItems?.map(item => ({
+        id: item.movies.id,
+        title: item.movies.title,
+        year: item.movies.year,
+        slug: item.movies.slug,
+        poster: item.movies.poster_url,
+        streaming: item.movies.streaming_data,
+        tmdb_id: item.movies.tmdb_id,
+        source: 'curated',
+      })) || [];
 
     // Fetch movies mentioned in Claude analysis (generated MediaCards)
     const { data: analysisData, error: analysisMovieError } = await supabase
@@ -196,7 +199,7 @@ Use:
             .select('id, title, year, slug, poster_url, streaming_data, tmdb_id')
             .eq('tmdb_id', movieData.tmdb_id)
             .single();
-          
+
           if (dbMovie && !movieError) {
             // Check if not already in curated list
             const existsInCurated = movies.some(m => m.tmdb_id === dbMovie.tmdb_id);
@@ -211,13 +214,13 @@ Use:
                 tmdb_id: dbMovie.tmdb_id,
                 source: 'analysis',
                 rank: movieData.rank,
-                reason: movieData.reason
+                reason: movieData.reason,
               });
             }
           }
         }
       }
-      
+
       // Combine curated and analysis movies
       movies = [...movies, ...analysisMovies];
     }
@@ -228,19 +231,18 @@ Use:
         id: list.id,
         name: list.name,
         slug: list.slug,
-        description: list.description
+        description: list.description,
       },
       claudeDescription,
       movies,
       movieCount: movies.length,
-      cached: existingAnalysis && !analysisError
+      cached: existingAnalysis && !analysisError,
     });
-
   } catch (error) {
     console.error('Error in genius-list API:', error);
-    res.status(500).json({ 
+    res.status(500).json({
       error: 'Failed to fetch list data',
-      details: error.message
+      details: error.message,
     });
   }
 }

@@ -1,0 +1,2421 @@
+{
+  "timestamp": "2025-07-26T00:45:43.000Z",
+  "config": {
+    "baseUrl": "https://moviegenius.ai",
+    "testMovieIds": [
+      "11",
+      "550",
+      "238"
+    ],
+    "headless": true,
+    "slowMo": 50,
+    "timeout": 15000,
+    "captureScreenshots": true,
+    "captureNetworkLogs": true,
+    "outputDir": "./puppeteer-results"
+  },
+  "summary": {
+    "totalTests": 3,
+    "passed": 0,
+    "failed": 3,
+    "flashDetected": 0,
+    "redirectsDetected": 3,
+    "avgLoadTime": 1206
+  },
+  "results": [
+    {
+      "tmdbId": "11",
+      "timestamp": "2025-07-26T00:45:28.779Z",
+      "url": "https://moviegenius.ai/movie/11",
+      "success": false,
+      "flashDetected": false,
+      "redirectDetected": true,
+      "finalUrl": "https://moviegenius.ai/movie/11",
+      "loadTime": 1434,
+      "errors": [
+        {
+          "type": "page_error",
+          "message": "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+          "timestamp": 1753490729441
+        },
+        {
+          "type": "page_error",
+          "message": "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+          "timestamp": 1753490729441
+        },
+        {
+          "type": "page_error",
+          "message": "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+          "timestamp": 1753490729441
+        },
+        {
+          "type": "page_error",
+          "message": "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+          "timestamp": 1753490729442
+        },
+        {
+          "type": "page_error",
+          "message": "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+          "timestamp": 1753490729442
+        },
+        {
+          "type": "page_error",
+          "message": "Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+          "timestamp": 1753490729442
+        },
+        {
+          "type": "final_404_state",
+          "message": "Page ended in 404 state",
+          "timestamp": 1753490733462,
+          "pageTitle": ""
+        }
+      ],
+      "console": [
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490729268
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490729268
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490729269
+        },
+        {
+          "type": "error",
+          "text": "JSHandle@error",
+          "timestamp": 1753490729329
+        },
+        {
+          "type": "error",
+          "text": "A client-side exception has occurred, see here for more info: https://nextjs.org/docs/messages/client-side-exception-occurred",
+          "timestamp": 1753490729330
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490729373
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490729440
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490729441
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490729441
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490729441
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490729442
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490729442
+        },
+        {
+          "type": "log",
+          "text": "🏠 App initialized with route: JSHandle@object",
+          "timestamp": 1753490729442
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490731583
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490731583
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490731583
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490731583
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490731583
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490731583
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490731583
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490731583
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490731583
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490731700
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490731700
+        },
+        {
+          "type": "log",
+          "text": "📊 REFINED NEXTJS VALIDATION REPORT: JSHandle@object",
+          "timestamp": 1753490731700
+        },
+        {
+          "type": "log",
+          "text": "❌ Validation FAILED",
+          "timestamp": 1753490731700
+        }
+      ],
+      "network": [
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/movie/11",
+          "method": "GET",
+          "timestamp": 1753490728914
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/movie/11",
+          "status": 200,
+          "timestamp": 1753490729085
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/js/nextjs-test-framework.js",
+          "method": "GET",
+          "timestamp": 1753490729107
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/css/141db5a4ffecef6c.css",
+          "method": "GET",
+          "timestamp": 1753490729107
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/9KCDlmhNmzDaMJmddc2bQMhtY9n.jpg",
+          "method": "GET",
+          "timestamp": 1753490729107
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/A7oAHTjtYnIEQjJs62IONRufooq.jpg",
+          "method": "GET",
+          "timestamp": 1753490729108
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/eExDr6W0A3XRTItD5X05tAl1avO.jpg",
+          "method": "GET",
+          "timestamp": 1753490729108
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/2dyMDv6W3ugMfaC8DEXPiqMcurD.jpg",
+          "method": "GET",
+          "timestamp": 1753490729108
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/eTdEaRjtVnFbd5KVhxLRfbYW46e.jpg",
+          "method": "GET",
+          "timestamp": 1753490729108
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/3167.f4caf2dca9065147.js",
+          "method": "GET",
+          "timestamp": 1753490729108
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/3531.6e0180b17987cc67.js",
+          "method": "GET",
+          "timestamp": 1753490729109
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/webpack-15abfa65640b905b.js",
+          "method": "GET",
+          "timestamp": 1753490729109
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-f67df17f-9b92c2f0f3079969.js",
+          "method": "GET",
+          "timestamp": 1753490729109
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-3bd5d65d-e57967c9b80ab9e8.js",
+          "method": "GET",
+          "timestamp": 1753490729109
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-351e52ed-3522e6415a492077.js",
+          "method": "GET",
+          "timestamp": 1753490729109
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-0fbe0e3f-cd0e955d2950d06a.js",
+          "method": "GET",
+          "timestamp": 1753490729110
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-9a5e4ce4-5d999d9bfd95a0a1.js",
+          "method": "GET",
+          "timestamp": 1753490729110
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-42bbf998-1d37de65af2a3c29.js",
+          "method": "GET",
+          "timestamp": 1753490729110
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-9a66d3c2-825449461e3a4d17.js",
+          "method": "GET",
+          "timestamp": 1753490729110
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-2898f16f-1f13c5a8393ce80b.js",
+          "method": "GET",
+          "timestamp": 1753490729110
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-d031d8a3-1f7fa4f08ccdcb6b.js",
+          "method": "GET",
+          "timestamp": 1753490729110
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-b49fab05-709f1d7b56d49eca.js",
+          "method": "GET",
+          "timestamp": 1753490729111
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-44d075c1-76587b6c931ee71a.js",
+          "method": "GET",
+          "timestamp": 1753490729111
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-55776fae-0f94336967b3bc8e.js",
+          "method": "GET",
+          "timestamp": 1753490729111
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-0d08456b-ca8875d7714360dd.js",
+          "method": "GET",
+          "timestamp": 1753490729112
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-0582c947-d93ebcfc89cb617b.js",
+          "method": "GET",
+          "timestamp": 1753490729112
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/main-6f6cf3ac727dee11.js",
+          "method": "GET",
+          "timestamp": 1753490729112
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/pages/_app-f438e986a4d7306b.js",
+          "method": "GET",
+          "timestamp": 1753490729112
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-f3956634-95ab25cdc231b327.js",
+          "method": "GET",
+          "timestamp": 1753490729112
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-ea386b09-3bb8eb801a4c00c1.js",
+          "method": "GET",
+          "timestamp": 1753490729112
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-69626fbe-5cb88163241fd770.js",
+          "method": "GET",
+          "timestamp": 1753490729112
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-40f6a9af-0ae3b64a0cd4fac1.js",
+          "method": "GET",
+          "timestamp": 1753490729112
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-5000d8f2-503ac161e238c1d0.js",
+          "method": "GET",
+          "timestamp": 1753490729113
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/pages/movie/%5Bid%5D-227851105c18f400.js",
+          "method": "GET",
+          "timestamp": 1753490729113
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/7nouAA9p33CC21IbjoIey/_buildManifest.js",
+          "method": "GET",
+          "timestamp": 1753490729113
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/7nouAA9p33CC21IbjoIey/_ssgManifest.js",
+          "method": "GET",
+          "timestamp": 1753490729113
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/92fghstMdnJQPxoqWPGtRhbUb8G.jpg",
+          "method": "GET",
+          "timestamp": 1753490729113
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/96ETJEnHoVuptkCNMtxcEZ5iWzN.jpg",
+          "method": "GET",
+          "timestamp": 1753490729113
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/gLUYuY5dc4zE44zQ5tHN58Dy0vO.jpg",
+          "method": "GET",
+          "timestamp": 1753490729113
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/tv2iZbQYWwKcWOUWVFxOhcchKZT.jpg",
+          "method": "GET",
+          "timestamp": 1753490729113
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/6g1Kh73qQRosyhRJpL3euQpMxOE.jpg",
+          "method": "GET",
+          "timestamp": 1753490729114
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/zwSFEczP7AzqugAHHIX3zHniT0t.jpg",
+          "method": "GET",
+          "timestamp": 1753490729114
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/4kJmUCE7mkVJjXa7A0g2rY4IGTm.jpg",
+          "method": "GET",
+          "timestamp": 1753490729114
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/bsGP4IhqHluCuRVSOs04fOniBq2.jpg",
+          "method": "GET",
+          "timestamp": 1753490729114
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/xCHWT7xy9WVHgew6gkOfISIPtFF.jpg",
+          "method": "GET",
+          "timestamp": 1753490729114
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/wDYo6qgyrAkPDWYaKxXIxeMdki0.jpg",
+          "method": "GET",
+          "timestamp": 1753490729114
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg",
+          "method": "GET",
+          "timestamp": 1753490729114
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/css/141db5a4ffecef6c.css",
+          "status": 200,
+          "timestamp": 1753490729200
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/js/nextjs-test-framework.js",
+          "status": 200,
+          "timestamp": 1753490729258
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/3167.f4caf2dca9065147.js",
+          "status": 200,
+          "timestamp": 1753490729258
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/webpack-15abfa65640b905b.js",
+          "status": 200,
+          "timestamp": 1753490729258
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/3531.6e0180b17987cc67.js",
+          "status": 200,
+          "timestamp": 1753490729258
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-351e52ed-3522e6415a492077.js",
+          "status": 200,
+          "timestamp": 1753490729260
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-f67df17f-9b92c2f0f3079969.js",
+          "status": 200,
+          "timestamp": 1753490729261
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-3bd5d65d-e57967c9b80ab9e8.js",
+          "status": 200,
+          "timestamp": 1753490729261
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-0fbe0e3f-cd0e955d2950d06a.js",
+          "status": 200,
+          "timestamp": 1753490729262
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-2898f16f-1f13c5a8393ce80b.js",
+          "status": 200,
+          "timestamp": 1753490729262
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-42bbf998-1d37de65af2a3c29.js",
+          "status": 200,
+          "timestamp": 1753490729263
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-0d08456b-ca8875d7714360dd.js",
+          "status": 200,
+          "timestamp": 1753490729263
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/main-6f6cf3ac727dee11.js",
+          "status": 200,
+          "timestamp": 1753490729263
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-9a5e4ce4-5d999d9bfd95a0a1.js",
+          "status": 200,
+          "timestamp": 1753490729263
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/pages/_app-f438e986a4d7306b.js",
+          "status": 200,
+          "timestamp": 1753490729269
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-0582c947-d93ebcfc89cb617b.js",
+          "status": 200,
+          "timestamp": 1753490729270
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-ea386b09-3bb8eb801a4c00c1.js",
+          "status": 200,
+          "timestamp": 1753490729270
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-b49fab05-709f1d7b56d49eca.js",
+          "status": 200,
+          "timestamp": 1753490729270
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-55776fae-0f94336967b3bc8e.js",
+          "status": 200,
+          "timestamp": 1753490729270
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-9a66d3c2-825449461e3a4d17.js",
+          "status": 200,
+          "timestamp": 1753490729270
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-44d075c1-76587b6c931ee71a.js",
+          "status": 200,
+          "timestamp": 1753490729270
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/7nouAA9p33CC21IbjoIey/_buildManifest.js",
+          "status": 200,
+          "timestamp": 1753490729280
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-f3956634-95ab25cdc231b327.js",
+          "status": 200,
+          "timestamp": 1753490729281
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/7nouAA9p33CC21IbjoIey/_ssgManifest.js",
+          "status": 200,
+          "timestamp": 1753490729285
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-69626fbe-5cb88163241fd770.js",
+          "status": 200,
+          "timestamp": 1753490729285
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-40f6a9af-0ae3b64a0cd4fac1.js",
+          "status": 200,
+          "timestamp": 1753490729287
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/pages/movie/%5Bid%5D-227851105c18f400.js",
+          "status": 200,
+          "timestamp": 1753490729287
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-5000d8f2-503ac161e238c1d0.js",
+          "status": 200,
+          "timestamp": 1753490729287
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-d031d8a3-1f7fa4f08ccdcb6b.js",
+          "status": 200,
+          "timestamp": 1753490729287
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/pages/_error-45236fb3dc6f7852.js",
+          "method": "GET",
+          "timestamp": 1753490729331
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/9KCDlmhNmzDaMJmddc2bQMhtY9n.jpg",
+          "status": 200,
+          "timestamp": 1753490729363
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/A7oAHTjtYnIEQjJs62IONRufooq.jpg",
+          "status": 200,
+          "timestamp": 1753490729397
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/pages/_error-45236fb3dc6f7852.js",
+          "status": 200,
+          "timestamp": 1753490729426
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/2dyMDv6W3ugMfaC8DEXPiqMcurD.jpg",
+          "status": 200,
+          "timestamp": 1753490729448
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/eExDr6W0A3XRTItD5X05tAl1avO.jpg",
+          "status": 200,
+          "timestamp": 1753490729466
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/eTdEaRjtVnFbd5KVhxLRfbYW46e.jpg",
+          "status": 200,
+          "timestamp": 1753490729485
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/92fghstMdnJQPxoqWPGtRhbUb8G.jpg",
+          "status": 200,
+          "timestamp": 1753490729506
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/96ETJEnHoVuptkCNMtxcEZ5iWzN.jpg",
+          "status": 200,
+          "timestamp": 1753490729513
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/gLUYuY5dc4zE44zQ5tHN58Dy0vO.jpg",
+          "status": 200,
+          "timestamp": 1753490729526
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/tv2iZbQYWwKcWOUWVFxOhcchKZT.jpg",
+          "status": 200,
+          "timestamp": 1753490729543
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/6g1Kh73qQRosyhRJpL3euQpMxOE.jpg",
+          "status": 200,
+          "timestamp": 1753490729543
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/zwSFEczP7AzqugAHHIX3zHniT0t.jpg",
+          "status": 200,
+          "timestamp": 1753490729555
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/4kJmUCE7mkVJjXa7A0g2rY4IGTm.jpg",
+          "status": 200,
+          "timestamp": 1753490729556
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/bsGP4IhqHluCuRVSOs04fOniBq2.jpg",
+          "status": 200,
+          "timestamp": 1753490729556
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/xCHWT7xy9WVHgew6gkOfISIPtFF.jpg",
+          "status": 200,
+          "timestamp": 1753490729569
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/wDYo6qgyrAkPDWYaKxXIxeMdki0.jpg",
+          "status": 200,
+          "timestamp": 1753490729572
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg",
+          "status": 200,
+          "timestamp": 1753490729572
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/favicon.ico",
+          "method": "GET",
+          "timestamp": 1753490729581
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/favicon.ico",
+          "status": 200,
+          "timestamp": 1753490729677
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/api/movie/550",
+          "method": "GET",
+          "timestamp": 1753490731583
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/api/movie/550",
+          "status": 200,
+          "timestamp": 1753490731700
+        }
+      ],
+      "screenshots": [
+        {
+          "name": "before_navigation",
+          "path": "puppeteer-results/movie-11-before.png",
+          "timestamp": 1753490728837
+        },
+        {
+          "name": "after_load",
+          "path": "puppeteer-results/movie-11-after.png",
+          "timestamp": 1753490733411
+        }
+      ],
+      "contentHistory": [
+        {
+          "change": 1,
+          "timestamp": 1753490730425,
+          "content": {
+            "title": "",
+            "hasMovieContent": false,
+            "hasNavBar": false,
+            "hasErrorContent": false,
+            "url": "https://moviegenius.ai/movie/11",
+            "bodyText": "An error 404 occurred on server.{\"props\":{\"pageProps\":{\"title\":\"Star Wars\",\"year\":1977,\"initialSlug\":\"A farm boy's journey to save a galaxy far, far away\",\"initialPoster\":\"/images/posters/star-wars.jp",
+            "nextData": true,
+            "hydrated": true
+          }
+        }
+      ],
+      "validation": {
+        "hasTitle": false,
+        "hasNavBar": false,
+        "hasMovieContent": true,
+        "hasErrors": false,
+        "is404Page": true,
+        "currentUrl": "https://moviegenius.ai/movie/11",
+        "hasRequireErrors": false,
+        "hasHydrationErrors": false,
+        "pageTitle": ""
+      }
+    },
+    {
+      "tmdbId": "550",
+      "timestamp": "2025-07-26T00:45:33.859Z",
+      "url": "https://moviegenius.ai/movie/550",
+      "success": false,
+      "flashDetected": false,
+      "redirectDetected": true,
+      "finalUrl": "https://moviegenius.ai/movie/550",
+      "loadTime": 1032,
+      "errors": [
+        {
+          "type": "page_error",
+          "message": "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+          "timestamp": 1753490734261
+        },
+        {
+          "type": "page_error",
+          "message": "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+          "timestamp": 1753490734261
+        },
+        {
+          "type": "page_error",
+          "message": "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+          "timestamp": 1753490734262
+        },
+        {
+          "type": "page_error",
+          "message": "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+          "timestamp": 1753490734262
+        },
+        {
+          "type": "page_error",
+          "message": "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+          "timestamp": 1753490734262
+        },
+        {
+          "type": "page_error",
+          "message": "Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+          "timestamp": 1753490734262
+        },
+        {
+          "type": "final_404_state",
+          "message": "Page ended in 404 state",
+          "timestamp": 1753490738143,
+          "pageTitle": ""
+        }
+      ],
+      "console": [
+        {
+          "type": "error",
+          "text": "JSHandle@error",
+          "timestamp": 1753490734202
+        },
+        {
+          "type": "error",
+          "text": "A client-side exception has occurred, see here for more info: https://nextjs.org/docs/messages/client-side-exception-occurred",
+          "timestamp": 1753490734202
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490734205
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490734205
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490734205
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490734261
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490734261
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490734261
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490734262
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490734262
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490734262
+        },
+        {
+          "type": "log",
+          "text": "🏠 App initialized with route: JSHandle@object",
+          "timestamp": 1753490734262
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490736287
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490736287
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490736287
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490736287
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490736287
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490736287
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490736287
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490736287
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490736287
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490736341
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490736341
+        },
+        {
+          "type": "log",
+          "text": "📊 REFINED NEXTJS VALIDATION REPORT: JSHandle@object",
+          "timestamp": 1753490736341
+        },
+        {
+          "type": "log",
+          "text": "❌ Validation FAILED",
+          "timestamp": 1753490736341
+        }
+      ],
+      "network": [
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/movie/550",
+          "method": "GET",
+          "timestamp": 1753490733980
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/movie/550",
+          "status": 200,
+          "timestamp": 1753490734085
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/js/nextjs-test-framework.js",
+          "method": "GET",
+          "timestamp": 1753490734094
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/css/141db5a4ffecef6c.css",
+          "method": "GET",
+          "timestamp": 1753490734094
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/fKTPH2WvH8nHTXeBYBVhawtRqtR.jpg",
+          "method": "GET",
+          "timestamp": 1753490734094
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/9uGHEgsiUXjCNq8wdq4r49YL8A1.jpg",
+          "method": "GET",
+          "timestamp": 1753490734094
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/diAYqR4xdF9Hnj7qun6DEQhRrT2.jpg",
+          "method": "GET",
+          "timestamp": 1753490734094
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/x7A59t6ySylr1L7aubOQEA480vM.jpg",
+          "method": "GET",
+          "timestamp": 1753490734095
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/ts996lKsxvjkO2yiYG0ht4qAicO.jpg",
+          "method": "GET",
+          "timestamp": 1753490734096
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/3167.f4caf2dca9065147.js",
+          "method": "GET",
+          "timestamp": 1753490734096
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/3531.6e0180b17987cc67.js",
+          "method": "GET",
+          "timestamp": 1753490734096
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/webpack-15abfa65640b905b.js",
+          "method": "GET",
+          "timestamp": 1753490734097
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-f67df17f-9b92c2f0f3079969.js",
+          "method": "GET",
+          "timestamp": 1753490734098
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-3bd5d65d-e57967c9b80ab9e8.js",
+          "method": "GET",
+          "timestamp": 1753490734099
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-351e52ed-3522e6415a492077.js",
+          "method": "GET",
+          "timestamp": 1753490734099
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-0fbe0e3f-cd0e955d2950d06a.js",
+          "method": "GET",
+          "timestamp": 1753490734099
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-9a5e4ce4-5d999d9bfd95a0a1.js",
+          "method": "GET",
+          "timestamp": 1753490734100
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-42bbf998-1d37de65af2a3c29.js",
+          "method": "GET",
+          "timestamp": 1753490734100
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-9a66d3c2-825449461e3a4d17.js",
+          "method": "GET",
+          "timestamp": 1753490734100
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-2898f16f-1f13c5a8393ce80b.js",
+          "method": "GET",
+          "timestamp": 1753490734101
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-d031d8a3-1f7fa4f08ccdcb6b.js",
+          "method": "GET",
+          "timestamp": 1753490734101
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-b49fab05-709f1d7b56d49eca.js",
+          "method": "GET",
+          "timestamp": 1753490734102
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-44d075c1-76587b6c931ee71a.js",
+          "method": "GET",
+          "timestamp": 1753490734102
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-55776fae-0f94336967b3bc8e.js",
+          "method": "GET",
+          "timestamp": 1753490734102
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-0d08456b-ca8875d7714360dd.js",
+          "method": "GET",
+          "timestamp": 1753490734103
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-0582c947-d93ebcfc89cb617b.js",
+          "method": "GET",
+          "timestamp": 1753490734103
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/main-6f6cf3ac727dee11.js",
+          "method": "GET",
+          "timestamp": 1753490734106
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/pages/_app-f438e986a4d7306b.js",
+          "method": "GET",
+          "timestamp": 1753490734107
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-f3956634-95ab25cdc231b327.js",
+          "method": "GET",
+          "timestamp": 1753490734108
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-ea386b09-3bb8eb801a4c00c1.js",
+          "method": "GET",
+          "timestamp": 1753490734109
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-69626fbe-5cb88163241fd770.js",
+          "method": "GET",
+          "timestamp": 1753490734113
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-40f6a9af-0ae3b64a0cd4fac1.js",
+          "method": "GET",
+          "timestamp": 1753490734114
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-5000d8f2-503ac161e238c1d0.js",
+          "method": "GET",
+          "timestamp": 1753490734114
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/pages/movie/%5Bid%5D-227851105c18f400.js",
+          "method": "GET",
+          "timestamp": 1753490734114
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/7nouAA9p33CC21IbjoIey/_buildManifest.js",
+          "method": "GET",
+          "timestamp": 1753490734115
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/7nouAA9p33CC21IbjoIey/_ssgManifest.js",
+          "method": "GET",
+          "timestamp": 1753490734115
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/4UOa079915QjiTA2u5hT2yKVgUu.jpg",
+          "method": "GET",
+          "timestamp": 1753490734115
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/cAh2pCiNPftsY3aSqJuIOde7uWr.jpg",
+          "method": "GET",
+          "timestamp": 1753490734116
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/fJA22FjlAW8rzrOw9Mwanl6oTc9.jpg",
+          "method": "GET",
+          "timestamp": 1753490734116
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/ekstpH614fwDX8DUln1a2Opz0N8.jpg",
+          "method": "GET",
+          "timestamp": 1753490734116
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/99X2SgyFunJFXGAYnDv3sb9pnUD.jpg",
+          "method": "GET",
+          "timestamp": 1753490734116
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/bnidwEvWNAVJ3Uco9wWtuzWAfrx.jpg",
+          "method": "GET",
+          "timestamp": 1753490734116
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/ffEmHQAiD0m5dEQ6rlsuA9vlllW.jpg",
+          "method": "GET",
+          "timestamp": 1753490734117
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/css/141db5a4ffecef6c.css",
+          "status": 200,
+          "timestamp": 1753490734168
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/3167.f4caf2dca9065147.js",
+          "status": 200,
+          "timestamp": 1753490734175
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/3531.6e0180b17987cc67.js",
+          "status": 200,
+          "timestamp": 1753490734175
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/webpack-15abfa65640b905b.js",
+          "status": 200,
+          "timestamp": 1753490734175
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-f67df17f-9b92c2f0f3079969.js",
+          "status": 200,
+          "timestamp": 1753490734175
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-3bd5d65d-e57967c9b80ab9e8.js",
+          "status": 200,
+          "timestamp": 1753490734175
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-0fbe0e3f-cd0e955d2950d06a.js",
+          "status": 200,
+          "timestamp": 1753490734175
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-351e52ed-3522e6415a492077.js",
+          "status": 200,
+          "timestamp": 1753490734175
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-42bbf998-1d37de65af2a3c29.js",
+          "status": 200,
+          "timestamp": 1753490734177
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-9a5e4ce4-5d999d9bfd95a0a1.js",
+          "status": 200,
+          "timestamp": 1753490734177
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-9a66d3c2-825449461e3a4d17.js",
+          "status": 200,
+          "timestamp": 1753490734177
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-2898f16f-1f13c5a8393ce80b.js",
+          "status": 200,
+          "timestamp": 1753490734177
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-0d08456b-ca8875d7714360dd.js",
+          "status": 200,
+          "timestamp": 1753490734177
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-55776fae-0f94336967b3bc8e.js",
+          "status": 200,
+          "timestamp": 1753490734177
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-b49fab05-709f1d7b56d49eca.js",
+          "status": 200,
+          "timestamp": 1753490734178
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-44d075c1-76587b6c931ee71a.js",
+          "status": 200,
+          "timestamp": 1753490734178
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/main-6f6cf3ac727dee11.js",
+          "status": 200,
+          "timestamp": 1753490734178
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-0582c947-d93ebcfc89cb617b.js",
+          "status": 200,
+          "timestamp": 1753490734178
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/pages/_app-f438e986a4d7306b.js",
+          "status": 200,
+          "timestamp": 1753490734178
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-f3956634-95ab25cdc231b327.js",
+          "status": 200,
+          "timestamp": 1753490734179
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-d031d8a3-1f7fa4f08ccdcb6b.js",
+          "status": 200,
+          "timestamp": 1753490734180
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-ea386b09-3bb8eb801a4c00c1.js",
+          "status": 200,
+          "timestamp": 1753490734185
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-69626fbe-5cb88163241fd770.js",
+          "status": 200,
+          "timestamp": 1753490734185
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-40f6a9af-0ae3b64a0cd4fac1.js",
+          "status": 200,
+          "timestamp": 1753490734186
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/pages/movie/%5Bid%5D-227851105c18f400.js",
+          "status": 200,
+          "timestamp": 1753490734186
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/7nouAA9p33CC21IbjoIey/_buildManifest.js",
+          "status": 200,
+          "timestamp": 1753490734186
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/7nouAA9p33CC21IbjoIey/_ssgManifest.js",
+          "status": 200,
+          "timestamp": 1753490734186
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-5000d8f2-503ac161e238c1d0.js",
+          "status": 200,
+          "timestamp": 1753490734186
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/pages/_error-45236fb3dc6f7852.js",
+          "method": "GET",
+          "timestamp": 1753490734205
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/fKTPH2WvH8nHTXeBYBVhawtRqtR.jpg",
+          "status": 200,
+          "timestamp": 1753490734205
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/x7A59t6ySylr1L7aubOQEA480vM.jpg",
+          "status": 200,
+          "timestamp": 1753490734205
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/9uGHEgsiUXjCNq8wdq4r49YL8A1.jpg",
+          "status": 200,
+          "timestamp": 1753490734205
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/ts996lKsxvjkO2yiYG0ht4qAicO.jpg",
+          "status": 200,
+          "timestamp": 1753490734205
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/diAYqR4xdF9Hnj7qun6DEQhRrT2.jpg",
+          "status": 200,
+          "timestamp": 1753490734205
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/js/nextjs-test-framework.js",
+          "status": 304,
+          "timestamp": 1753490734205
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/fJA22FjlAW8rzrOw9Mwanl6oTc9.jpg",
+          "status": 200,
+          "timestamp": 1753490734214
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/4UOa079915QjiTA2u5hT2yKVgUu.jpg",
+          "status": 200,
+          "timestamp": 1753490734214
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/cAh2pCiNPftsY3aSqJuIOde7uWr.jpg",
+          "status": 200,
+          "timestamp": 1753490734218
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/99X2SgyFunJFXGAYnDv3sb9pnUD.jpg",
+          "status": 200,
+          "timestamp": 1753490734224
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/bnidwEvWNAVJ3Uco9wWtuzWAfrx.jpg",
+          "status": 200,
+          "timestamp": 1753490734226
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/ekstpH614fwDX8DUln1a2Opz0N8.jpg",
+          "status": 200,
+          "timestamp": 1753490734229
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/ffEmHQAiD0m5dEQ6rlsuA9vlllW.jpg",
+          "status": 200,
+          "timestamp": 1753490734231
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/pages/_error-45236fb3dc6f7852.js",
+          "status": 200,
+          "timestamp": 1753490734256
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/favicon.ico",
+          "method": "GET",
+          "timestamp": 1753490734265
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/favicon.ico",
+          "status": 304,
+          "timestamp": 1753490734350
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/api/movie/550",
+          "method": "GET",
+          "timestamp": 1753490736287
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/api/movie/550",
+          "status": 200,
+          "timestamp": 1753490736341
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/api/movie/550",
+          "method": "GET",
+          "timestamp": 1753490736407
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/api/movie/550",
+          "status": 304,
+          "timestamp": 1753490736520
+        }
+      ],
+      "screenshots": [
+        {
+          "name": "before_navigation",
+          "path": "puppeteer-results/movie-550-before.png",
+          "timestamp": 1753490733911
+        },
+        {
+          "name": "after_load",
+          "path": "puppeteer-results/movie-550-after.png",
+          "timestamp": 1753490738090
+        }
+      ],
+      "contentHistory": [
+        {
+          "change": 1,
+          "timestamp": 1753490735096,
+          "content": {
+            "title": "",
+            "hasMovieContent": false,
+            "hasNavBar": false,
+            "hasErrorContent": false,
+            "url": "https://moviegenius.ai/movie/550",
+            "bodyText": "An error 404 occurred on server.{\"props\":{\"pageProps\":{\"title\":\"Fight Club\",\"year\":1999,\"initialSlug\":\"An insomniac's dark journey into anarchic liberation\",\"initialPoster\":\"https://image.tmdb.org/t/p",
+            "nextData": true,
+            "hydrated": true
+          }
+        }
+      ],
+      "validation": {
+        "hasTitle": false,
+        "hasNavBar": false,
+        "hasMovieContent": true,
+        "hasErrors": false,
+        "is404Page": true,
+        "currentUrl": "https://moviegenius.ai/movie/550",
+        "hasRequireErrors": false,
+        "hasHydrationErrors": false,
+        "pageTitle": ""
+      }
+    },
+    {
+      "tmdbId": "238",
+      "timestamp": "2025-07-26T00:45:38.537Z",
+      "url": "https://moviegenius.ai/movie/238",
+      "success": false,
+      "flashDetected": false,
+      "redirectDetected": true,
+      "finalUrl": "https://moviegenius.ai/movie/238",
+      "loadTime": 1153,
+      "errors": [
+        {
+          "type": "page_error",
+          "message": "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+          "timestamp": 1753490738940
+        },
+        {
+          "type": "page_error",
+          "message": "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+          "timestamp": 1753490738940
+        },
+        {
+          "type": "page_error",
+          "message": "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+          "timestamp": 1753490738940
+        },
+        {
+          "type": "page_error",
+          "message": "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+          "timestamp": 1753490738940
+        },
+        {
+          "type": "page_error",
+          "message": "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+          "timestamp": 1753490738940
+        },
+        {
+          "type": "page_error",
+          "message": "Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+          "timestamp": 1753490738940
+        },
+        {
+          "type": "final_404_state",
+          "message": "Page ended in 404 state",
+          "timestamp": 1753490742940,
+          "pageTitle": ""
+        }
+      ],
+      "console": [
+        {
+          "type": "error",
+          "text": "JSHandle@error",
+          "timestamp": 1753490738884
+        },
+        {
+          "type": "error",
+          "text": "A client-side exception has occurred, see here for more info: https://nextjs.org/docs/messages/client-side-exception-occurred",
+          "timestamp": 1753490738884
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490738885
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490738885
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490738885
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490738940
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490738940
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490738940
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490738940
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490738940
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490738940
+        },
+        {
+          "type": "log",
+          "text": "🏠 App initialized with route: JSHandle@object",
+          "timestamp": 1753490738940
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490741058
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490741058
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490741058
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490741058
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490741058
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490741058
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490741058
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490741058
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490741058
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490741112
+        },
+        {
+          "type": "log",
+          "text": "[REFINED-NEXTJS-TEST] JSHandle@object",
+          "timestamp": 1753490741112
+        },
+        {
+          "type": "log",
+          "text": "📊 REFINED NEXTJS VALIDATION REPORT: JSHandle@object",
+          "timestamp": 1753490741112
+        },
+        {
+          "type": "log",
+          "text": "❌ Validation FAILED",
+          "timestamp": 1753490741112
+        }
+      ],
+      "network": [
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/movie/238",
+          "method": "GET",
+          "timestamp": 1753490738662
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/movie/238",
+          "status": 200,
+          "timestamp": 1753490738754
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/js/nextjs-test-framework.js",
+          "method": "GET",
+          "timestamp": 1753490738769
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/css/141db5a4ffecef6c.css",
+          "method": "GET",
+          "timestamp": 1753490738769
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg",
+          "method": "GET",
+          "timestamp": 1753490738770
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/i0enkzsL5dPeneWnjl1fCWm6L7k.jpg",
+          "method": "GET",
+          "timestamp": 1753490738770
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/ab3pnsTKp3BgcAFy0FgWBFBg9FL.jpg",
+          "method": "GET",
+          "timestamp": 1753490738770
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/4ZeKN0jnXHlyloMFba1Xe4C1ell.jpg",
+          "method": "GET",
+          "timestamp": 1753490738770
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/sDbO6LmLYtyqAoFTPpRcMgPSCEO.jpg",
+          "method": "GET",
+          "timestamp": 1753490738770
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/3167.f4caf2dca9065147.js",
+          "method": "GET",
+          "timestamp": 1753490738770
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/3531.6e0180b17987cc67.js",
+          "method": "GET",
+          "timestamp": 1753490738771
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/webpack-15abfa65640b905b.js",
+          "method": "GET",
+          "timestamp": 1753490738771
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-f67df17f-9b92c2f0f3079969.js",
+          "method": "GET",
+          "timestamp": 1753490738771
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-3bd5d65d-e57967c9b80ab9e8.js",
+          "method": "GET",
+          "timestamp": 1753490738772
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-351e52ed-3522e6415a492077.js",
+          "method": "GET",
+          "timestamp": 1753490738772
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-0fbe0e3f-cd0e955d2950d06a.js",
+          "method": "GET",
+          "timestamp": 1753490738773
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-9a5e4ce4-5d999d9bfd95a0a1.js",
+          "method": "GET",
+          "timestamp": 1753490738775
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-42bbf998-1d37de65af2a3c29.js",
+          "method": "GET",
+          "timestamp": 1753490738775
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-9a66d3c2-825449461e3a4d17.js",
+          "method": "GET",
+          "timestamp": 1753490738775
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-2898f16f-1f13c5a8393ce80b.js",
+          "method": "GET",
+          "timestamp": 1753490738775
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-d031d8a3-1f7fa4f08ccdcb6b.js",
+          "method": "GET",
+          "timestamp": 1753490738776
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-b49fab05-709f1d7b56d49eca.js",
+          "method": "GET",
+          "timestamp": 1753490738777
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-44d075c1-76587b6c931ee71a.js",
+          "method": "GET",
+          "timestamp": 1753490738777
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-55776fae-0f94336967b3bc8e.js",
+          "method": "GET",
+          "timestamp": 1753490738779
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-0d08456b-ca8875d7714360dd.js",
+          "method": "GET",
+          "timestamp": 1753490738779
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-0582c947-d93ebcfc89cb617b.js",
+          "method": "GET",
+          "timestamp": 1753490738779
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/main-6f6cf3ac727dee11.js",
+          "method": "GET",
+          "timestamp": 1753490738782
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/pages/_app-f438e986a4d7306b.js",
+          "method": "GET",
+          "timestamp": 1753490738784
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-f3956634-95ab25cdc231b327.js",
+          "method": "GET",
+          "timestamp": 1753490738785
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-ea386b09-3bb8eb801a4c00c1.js",
+          "method": "GET",
+          "timestamp": 1753490738785
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-69626fbe-5cb88163241fd770.js",
+          "method": "GET",
+          "timestamp": 1753490738786
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-40f6a9af-0ae3b64a0cd4fac1.js",
+          "method": "GET",
+          "timestamp": 1753490738786
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-5000d8f2-503ac161e238c1d0.js",
+          "method": "GET",
+          "timestamp": 1753490738787
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/pages/movie/%5Bid%5D-227851105c18f400.js",
+          "method": "GET",
+          "timestamp": 1753490738787
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/7nouAA9p33CC21IbjoIey/_buildManifest.js",
+          "method": "GET",
+          "timestamp": 1753490738788
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/7nouAA9p33CC21IbjoIey/_ssgManifest.js",
+          "method": "GET",
+          "timestamp": 1753490738788
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/xtKLvpOfARi1XVm8u2FTdhY5Piq.jpg",
+          "method": "GET",
+          "timestamp": 1753490738788
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/vVxdaRMprQO2DM4AFyJ6C4qZSFO.jpg",
+          "method": "GET",
+          "timestamp": 1753490738788
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/v7cPOHKKZI9qChi7HDUxNIhEcLR.jpg",
+          "method": "GET",
+          "timestamp": 1753490738789
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/1K3Q1tAHHA5Sdtja2pPALBQevA7.jpg",
+          "method": "GET",
+          "timestamp": 1753490738789
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/k23E4UAcow8eczLRmVCMdukL4Mx.jpg",
+          "method": "GET",
+          "timestamp": 1753490738789
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/8BquGK22zCcsmBWiaIakaaPpSZb.jpg",
+          "method": "GET",
+          "timestamp": 1753490738789
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/g6D7mjQtndu768cusGmoEQY9fTB.jpg",
+          "method": "GET",
+          "timestamp": 1753490738789
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/k9VjzXyGElRAxXyXgPvtRRSznyL.jpg",
+          "method": "GET",
+          "timestamp": 1753490738789
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/1MyH4MJAJZJbb6wDVeOc2bTECtK.jpg",
+          "method": "GET",
+          "timestamp": 1753490738789
+        },
+        {
+          "type": "request",
+          "url": "https://image.tmdb.org/t/p/w500/8sV6nWuKczuXRt0C6EWoXqJAj6G.jpg",
+          "method": "GET",
+          "timestamp": 1753490738790
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/css/141db5a4ffecef6c.css",
+          "status": 200,
+          "timestamp": 1753490738841
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/3167.f4caf2dca9065147.js",
+          "status": 200,
+          "timestamp": 1753490738856
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/3531.6e0180b17987cc67.js",
+          "status": 200,
+          "timestamp": 1753490738857
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/webpack-15abfa65640b905b.js",
+          "status": 200,
+          "timestamp": 1753490738857
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-f67df17f-9b92c2f0f3079969.js",
+          "status": 200,
+          "timestamp": 1753490738858
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-3bd5d65d-e57967c9b80ab9e8.js",
+          "status": 200,
+          "timestamp": 1753490738858
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-351e52ed-3522e6415a492077.js",
+          "status": 200,
+          "timestamp": 1753490738858
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-0fbe0e3f-cd0e955d2950d06a.js",
+          "status": 200,
+          "timestamp": 1753490738858
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-9a5e4ce4-5d999d9bfd95a0a1.js",
+          "status": 200,
+          "timestamp": 1753490738858
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-42bbf998-1d37de65af2a3c29.js",
+          "status": 200,
+          "timestamp": 1753490738859
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-9a66d3c2-825449461e3a4d17.js",
+          "status": 200,
+          "timestamp": 1753490738859
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-2898f16f-1f13c5a8393ce80b.js",
+          "status": 200,
+          "timestamp": 1753490738859
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/framework-d031d8a3-1f7fa4f08ccdcb6b.js",
+          "status": 200,
+          "timestamp": 1753490738859
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-b49fab05-709f1d7b56d49eca.js",
+          "status": 200,
+          "timestamp": 1753490738859
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-44d075c1-76587b6c931ee71a.js",
+          "status": 200,
+          "timestamp": 1753490738859
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-55776fae-0f94336967b3bc8e.js",
+          "status": 200,
+          "timestamp": 1753490738859
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-0d08456b-ca8875d7714360dd.js",
+          "status": 200,
+          "timestamp": 1753490738859
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/vendors-0582c947-d93ebcfc89cb617b.js",
+          "status": 200,
+          "timestamp": 1753490738859
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/main-6f6cf3ac727dee11.js",
+          "status": 200,
+          "timestamp": 1753490738859
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/pages/_app-f438e986a4d7306b.js",
+          "status": 200,
+          "timestamp": 1753490738861
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-f3956634-95ab25cdc231b327.js",
+          "status": 200,
+          "timestamp": 1753490738862
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-ea386b09-3bb8eb801a4c00c1.js",
+          "status": 200,
+          "timestamp": 1753490738863
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-69626fbe-5cb88163241fd770.js",
+          "status": 200,
+          "timestamp": 1753490738863
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-40f6a9af-0ae3b64a0cd4fac1.js",
+          "status": 200,
+          "timestamp": 1753490738863
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/pages/movie/%5Bid%5D-227851105c18f400.js",
+          "status": 200,
+          "timestamp": 1753490738863
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/common-5000d8f2-503ac161e238c1d0.js",
+          "status": 200,
+          "timestamp": 1753490738863
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/7nouAA9p33CC21IbjoIey/_buildManifest.js",
+          "status": 200,
+          "timestamp": 1753490738884
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/7nouAA9p33CC21IbjoIey/_ssgManifest.js",
+          "status": 200,
+          "timestamp": 1753490738884
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/_next/static/chunks/pages/_error-45236fb3dc6f7852.js",
+          "method": "GET",
+          "timestamp": 1753490738884
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg",
+          "status": 200,
+          "timestamp": 1753490738884
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/js/nextjs-test-framework.js",
+          "status": 304,
+          "timestamp": 1753490738884
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/i0enkzsL5dPeneWnjl1fCWm6L7k.jpg",
+          "status": 200,
+          "timestamp": 1753490738896
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/sDbO6LmLYtyqAoFTPpRcMgPSCEO.jpg",
+          "status": 200,
+          "timestamp": 1753490738896
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/ab3pnsTKp3BgcAFy0FgWBFBg9FL.jpg",
+          "status": 200,
+          "timestamp": 1753490738900
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/4ZeKN0jnXHlyloMFba1Xe4C1ell.jpg",
+          "status": 200,
+          "timestamp": 1753490738903
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/vVxdaRMprQO2DM4AFyJ6C4qZSFO.jpg",
+          "status": 200,
+          "timestamp": 1753490738909
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/k23E4UAcow8eczLRmVCMdukL4Mx.jpg",
+          "status": 200,
+          "timestamp": 1753490738909
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/v7cPOHKKZI9qChi7HDUxNIhEcLR.jpg",
+          "status": 200,
+          "timestamp": 1753490738909
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/8BquGK22zCcsmBWiaIakaaPpSZb.jpg",
+          "status": 200,
+          "timestamp": 1753490738919
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/1K3Q1tAHHA5Sdtja2pPALBQevA7.jpg",
+          "status": 200,
+          "timestamp": 1753490738919
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/g6D7mjQtndu768cusGmoEQY9fTB.jpg",
+          "status": 200,
+          "timestamp": 1753490738919
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/1MyH4MJAJZJbb6wDVeOc2bTECtK.jpg",
+          "status": 200,
+          "timestamp": 1753490738923
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/_next/static/chunks/pages/_error-45236fb3dc6f7852.js",
+          "status": 200,
+          "timestamp": 1753490738935
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/xtKLvpOfARi1XVm8u2FTdhY5Piq.jpg",
+          "status": 200,
+          "timestamp": 1753490738988
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/k9VjzXyGElRAxXyXgPvtRRSznyL.jpg",
+          "status": 200,
+          "timestamp": 1753490739006
+        },
+        {
+          "type": "response",
+          "url": "https://image.tmdb.org/t/p/w500/8sV6nWuKczuXRt0C6EWoXqJAj6G.jpg",
+          "status": 200,
+          "timestamp": 1753490739035
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/favicon.ico",
+          "method": "GET",
+          "timestamp": 1753490739035
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/favicon.ico",
+          "status": 304,
+          "timestamp": 1753490739121
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/api/movie/550",
+          "method": "GET",
+          "timestamp": 1753490741059
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/api/movie/550",
+          "status": 200,
+          "timestamp": 1753490741112
+        },
+        {
+          "type": "request",
+          "url": "https://moviegenius.ai/api/movie/550",
+          "method": "GET",
+          "timestamp": 1753490741184
+        },
+        {
+          "type": "response",
+          "url": "https://moviegenius.ai/api/movie/550",
+          "status": 304,
+          "timestamp": 1753490741294
+        }
+      ],
+      "screenshots": [
+        {
+          "name": "before_navigation",
+          "path": "puppeteer-results/movie-238-before.png",
+          "timestamp": 1753490738590
+        },
+        {
+          "name": "after_load",
+          "path": "puppeteer-results/movie-238-after.png",
+          "timestamp": 1753490742887
+        }
+      ],
+      "contentHistory": [
+        {
+          "change": 1,
+          "timestamp": 1753490739895,
+          "content": {
+            "title": "",
+            "hasMovieContent": false,
+            "hasNavBar": false,
+            "hasErrorContent": false,
+            "url": "https://moviegenius.ai/movie/238",
+            "bodyText": "An error 404 occurred on server.{\"props\":{\"pageProps\":{\"title\":\"The Godfather\",\"year\":1972,\"initialSlug\":\"A mafia heir's dark journey into family power\",\"initialPoster\":\"https://image.tmdb.org/t/p/w50",
+            "nextData": true,
+            "hydrated": true
+          }
+        }
+      ],
+      "validation": {
+        "hasTitle": false,
+        "hasNavBar": false,
+        "hasMovieContent": true,
+        "hasErrors": false,
+        "is404Page": true,
+        "currentUrl": "https://moviegenius.ai/movie/238",
+        "hasRequireErrors": false,
+        "hasHydrationErrors": false,
+        "pageTitle": ""
+      }
+    }
+  ],
+  "errorPatterns": [
+    {
+      "type": "page_error",
+      "count": 18
+    },
+    {
+      "type": "final_404_state",
+      "count": 3
+    }
+  ],
+  "recommendations": [
+    "🚨 Critical: Movie pages are redirecting to 404 - immediate fix required"
+  ]
+}

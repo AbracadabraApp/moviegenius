@@ -1,0 +1,4 @@
+Force deployment trigger - TMDB auth fix
+Timestamp: 2025-08-03T23:28:00Z
+Commit: f7ba04a1
+Fix: TMDB authentication fallback to prevent placeholder API key usage

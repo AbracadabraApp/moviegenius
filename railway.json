@@ -1,0 +1,13 @@
+{
+  "build": {
+    "builder": "nixpacks",
+    "buildCommand": "npm run build",
+    "watchPatterns": ["nuclear-static/**", "scripts/**", "pages/**", "components/**", "lib/**", "package.json"]
+  },
+  "deploy": {
+    "healthcheckPath": "/api/health",
+    "healthcheckTimeout": 300,
+    "restartPolicyType": "ON_FAILURE",
+    "staticPublicPath": "/public"
+  }
+}

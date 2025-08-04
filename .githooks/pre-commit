@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Pre-commit hook to protect locked components
+# This script runs the component integrity checker before allowing commits
+
+echo "🔒 Checking locked component integrity..."
+
+# Run the component integrity checker
+node scripts/check-locked-components.js
+
+# Check the exit code
+if [ $? -ne 0 ]; then
+    echo ""
+    echo "❌ COMMIT BLOCKED: Locked component violations detected!"
+    echo ""
+    echo "🚨 Critical components have been modified without approval."
+    echo "   Review MediaCard.LOCK for the change protocol."
+    echo ""
+    echo "🔧 To override this check (emergency only):"
+    echo "   git commit --no-verify"
+    echo ""
+    exit 1
+fi
+
+echo "✅ All locked components are intact - commit allowed"
+exit 0

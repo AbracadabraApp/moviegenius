@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieGenius Default Placeholder</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #1a1a1a;
+            font-family: 'Arial Black', 'Helvetica', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .poster {
+            width: 300px;
+            height: 450px;
+            background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 50%, #0f0f0f 100%);
+            border: 1px solid #333;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+        }
+        
+        /* Main clapboard */
+        .clapboard {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-12deg);
+            width: 200px;
+            height: 140px;
+        }
+        
+        .clap-top {
+            width: 100%;
+            height: 35px;
+            background: linear-gradient(to bottom, #2c2c2c, #1a1a1a);
+            border: 2px solid #444;
+            border-radius: 4px 4px 0 0;
+            position: relative;
+            transform-origin: left bottom;
+            animation: clapAnimation 3s ease-in-out infinite;
+        }
+        
+        .clap-bottom {
+            width: 100%;
+            height: 105px;
+            background: linear-gradient(to bottom, #1a1a1a, #0f0f0f);
+            border: 2px solid #444;
+            border-top: none;
+            border-radius: 0 0 4px 4px;
+            position: relative;
+        }
+        
+        /* Clapboard stripes */
+        .clap-top::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            height: 4px;
+            background: repeating-linear-gradient(
+                90deg,
+                #000 0px,
+                #000 15px,
+                #fff 15px,
+                #fff 30px
+            );
+        }
+        
+        .clap-top::after {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 5px;
+            right: 5px;
+            height: 4px;
+            background: repeating-linear-gradient(
+                90deg,
+                #fff 0px,
+                #fff 15px,
+                #000 15px,
+                #000 30px
+            );
+        }
+        
+        /* Clapboard fields */
+        .field {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid #666;
+            color: #000;
+            font-size: 10px;
+            font-weight: bold;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .field-1 { top: 35px; left: 10px; width: 60px; height: 25px; }
+        .field-2 { top: 35px; left: 80px; width: 60px; height: 25px; }
+        .field-3 { top: 35px; left: 150px; width: 40px; height: 25px; }
+        .field-4 { top: 70px; left: 10px; width: 85px; height: 25px; }
+        .field-5 { top: 70px; left: 105px; width: 85px; height: 25px; }
+        
+        /* Site branding */
+        .logo-area {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: #d4af37;
+        }
+        
+        .site-name {
+            font-size: 24px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            margin-bottom: 5px;
+        }
+        
+        .tagline {
+            font-size: 11px;
+            color: #999;
+            font-weight: normal;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        /* Loading indicator */
+        .loading-text {
+            position: absolute;
+            bottom: 60px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: #666;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        /* Film strip decoration */
+        .film-strip-left {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 20px;
+            height: 100%;
+            background: #333;
+            border-right: 1px solid #555;
+        }
+        
+        .film-strip-left::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 3px;
+            width: 14px;
+            height: 100%;
+            background-image: repeating-linear-gradient(
+                to bottom,
+                transparent 0px,
+                transparent 12px,
+                #555 12px,
+                #555 18px
+            );
+        }
+        
+        .film-strip-right {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 20px;
+            height: 100%;
+            background: #333;
+            border-left: 1px solid #555;
+        }
+        
+        .film-strip-right::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 3px;
+            width: 14px;
+            height: 100%;
+            background-image: repeating-linear-gradient(
+                to bottom,
+                transparent 0px,
+                transparent 12px,
+                #555 12px,
+                #555 18px
+            );
+        }
+        
+        /* Spotlight effect */
+        .spotlight {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(
+                ellipse at center,
+                rgba(212, 175, 55, 0.03) 0%,
+                transparent 70%
+            );
+        }
+        
+        /* Animations */
+        @keyframes clapAnimation {
+            0%, 80%, 100% { transform: rotateX(0deg); }
+            10%, 70% { transform: rotateX(-25deg); }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 1; }
+        }
+        
+        /* Grain overlay */
+        .grain {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.02) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.01) 0%, transparent 50%);
+            opacity: 0.8;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="poster">
+        <div class="film-strip-left"></div>
+        <div class="film-strip-right"></div>
+        <div class="spotlight"></div>
+        
+        <div class="logo-area">
+            <div class="site-name">MovieGenius</div>
+            <div class="tagline">Cinema Intelligence</div>
+        </div>
+        
+        <div class="clapboard">
+            <div class="clap-top"></div>
+            <div class="clap-bottom">
+                <div class="field field-1">SCENE</div>
+                <div class="field field-2">TAKE</div>
+                <div class="field field-3">ROLL</div>
+                <div class="field field-4">DIRECTOR</div>
+                <div class="field field-5">CAMERA</div>
+            </div>
+        </div>
+        
+        <div class="loading-text">Loading Movie Data</div>
+        
+        <div class="grain"></div>
+    </div>
+</body>
+</html>

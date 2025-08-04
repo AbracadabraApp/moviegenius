@@ -1,0 +1,4851 @@
+{
+  "timestamp": "2025-06-26T00:27:45.705Z",
+  "totalFindings": 536,
+  "byType": {
+    "error": 217,
+    "log": 299,
+    "warning": 16,
+    "other": 4
+  },
+  "byRisk": {
+    "medium": 447,
+    "high": 69,
+    "low": 20
+  },
+  "safeToRemove": [
+    {
+      "file": "pages/api/test-stream.js",
+      "line": 7,
+      "content": "console.log('Starting test stream...');",
+      "type": "log",
+      "shouldPreserve": false,
+      "isCritical": false,
+      "risk": "low"
+    },
+    {
+      "file": "pages/api/test-stream.js",
+      "line": 19,
+      "content": "console.log('Sent: Hello ');",
+      "type": "log",
+      "shouldPreserve": false,
+      "isCritical": false,
+      "risk": "low"
+    },
+    {
+      "file": "pages/api/test-stream.js",
+      "line": 24,
+      "content": "console.log('Sent: streaming ');",
+      "type": "log",
+      "shouldPreserve": false,
+      "isCritical": false,
+      "risk": "low"
+    },
+    {
+      "file": "pages/api/test-stream.js",
+      "line": 29,
+      "content": "console.log('Sent: world!');",
+      "type": "log",
+      "shouldPreserve": false,
+      "isCritical": false,
+      "risk": "low"
+    },
+    {
+      "file": "pages/api/test-stream.js",
+      "line": 32,
+      "content": "console.log('Stream ended');",
+      "type": "log",
+      "shouldPreserve": false,
+      "isCritical": false,
+      "risk": "low"
+    },
+    {
+      "file": "pages/index.js",
+      "line": 29,
+      "content": "console.log('🔄 Homepage redirect triggered at:', new Date().toISOString());",
+      "type": "log",
+      "shouldPreserve": false,
+      "isCritical": false,
+      "risk": "low"
+    }
+  ],
+  "requiresReview": [
+    {
+      "file": "pages/test/genius-episodes.js",
+      "line": 195,
+      "content": "onClick={() => console.log('Positive feedback for linking')}",
+      "type": "log",
+      "shouldPreserve": false,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/test/genius-episodes.js",
+      "line": 201,
+      "content": "onClick={() => console.log('Neutral feedback for linking')}",
+      "type": "log",
+      "shouldPreserve": false,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/test/genius-episodes.js",
+      "line": 207,
+      "content": "onClick={() => console.log('Negative feedback for linking')}",
+      "type": "log",
+      "shouldPreserve": false,
+      "isCritical": false,
+      "risk": "medium"
+    }
+  ],
+  "preserve": [
+    {
+      "file": "components/BackButton.js",
+      "line": 90,
+      "content": "console.error('BackButton navigation error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/CinematicProfile.js",
+      "line": 21,
+      "content": "console.log('Loading profile for userData:', userData);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/CinematicProfile.js",
+      "line": 23,
+      "content": "console.log('Generated profile:', newProfile);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/CinematicProfile.js",
+      "line": 29,
+      "content": "console.error('Error loading cinematic profile:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/CinematicProfile.js",
+      "line": 56,
+      "content": "console.error('Error refreshing profile:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/ErrorBoundary.js",
+      "line": 24,
+      "content": "console.error('ErrorBoundary caught an error:', error, errorInfo);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 49,
+      "content": "console.log(`Debounced save completed for ${type}:`, data.length);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 56,
+      "content": "console.error(`Error in debounced save for ${type}:`, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 71,
+      "content": "console.error('Error loading hearted movies:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 87,
+      "content": "console.error('Error loading bookmarked movies:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 107,
+      "content": "console.log('toggleHeart called with movie:', movie);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 110,
+      "content": "console.error('Invalid movie data:', movie);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 118,
+      "content": "console.log('Generated movieId:', movieId);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 119,
+      "content": "console.log('Current hearted movies:', hearted.length);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 122,
+      "content": "console.log('Existing index:', existingIndex);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 127,
+      "content": "console.log('Removed movie from hearts');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 131,
+      "content": "console.log('Added movie to hearts');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 139,
+      "content": "console.log('Scheduled debounced save for hearted movies');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 143,
+      "content": "console.error('Error in toggleHeart:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 151,
+      "content": "console.log('toggleBookmark called with movie:', movie);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 154,
+      "content": "console.error('Invalid movie data:', movie);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 162,
+      "content": "console.log('Generated movieId:', movieId);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 163,
+      "content": "console.log('Current bookmarked movies:', bookmarked.length);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 166,
+      "content": "console.log('Existing index:', existingIndex);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 171,
+      "content": "console.log('Removed movie from bookmarks');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 175,
+      "content": "console.log('Added movie to bookmarks');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 183,
+      "content": "console.log('Scheduled debounced save for bookmarked movies');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 187,
+      "content": "console.error('Error in toggleBookmark:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 233,
+      "content": "console.error('Error loading hearted people:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 249,
+      "content": "console.error('Error loading bookmarked people:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 269,
+      "content": "console.log('togglePersonHeart called with person:', person);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 272,
+      "content": "console.error('Invalid person data:', person);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 280,
+      "content": "console.log('Generated personId:', personId);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 281,
+      "content": "console.log('Current hearted people:', hearted.length);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 284,
+      "content": "console.log('Existing index:', existingIndex);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 289,
+      "content": "console.log('Removed person from hearts');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 293,
+      "content": "console.log('Added person to hearts');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 301,
+      "content": "console.log('Scheduled debounced save for hearted people');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 305,
+      "content": "console.error('Error in togglePersonHeart:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 313,
+      "content": "console.log('togglePersonBookmark called with person:', person);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 316,
+      "content": "console.error('Invalid person data:', person);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 324,
+      "content": "console.log('Generated personId:', personId);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 325,
+      "content": "console.log('Current bookmarked people:', bookmarked.length);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 328,
+      "content": "console.log('Existing index:', existingIndex);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 333,
+      "content": "console.log('Removed person from bookmarks');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 337,
+      "content": "console.log('Added person to bookmarks');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 345,
+      "content": "console.log('Scheduled debounced save for bookmarked people');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/FavoritesManager.js",
+      "line": 349,
+      "content": "console.error('Error in togglePersonBookmark:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/GeniusEpisodeTemplate.js",
+      "line": 43,
+      "content": "console.log('Episode people loaded:', summary);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/GeniusEpisodeTemplate.js",
+      "line": 45,
+      "content": "console.error('Failed to load episode people:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/MediaCard.js",
+      "line": 128,
+      "content": "console.log('Fetching enhanced slug for:', title, year);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "components/MediaCard.js",
+      "line": 167,
+      "content": "console.log('Fetching TMDB poster for:', title, year);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "components/MediaCard.js",
+      "line": 193,
+      "content": "console.error('TMDB poster fetch failed:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "components/MediaCard.js",
+      "line": 214,
+      "content": "console.log('Cached enhanced data for:', title, year);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "components/MediaCard.js",
+      "line": 216,
+      "content": "console.warn('Failed to cache enhanced data:', cacheError);",
+      "type": "warning",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "medium"
+    },
+    {
+      "file": "components/MediaCard.js",
+      "line": 222,
+      "content": "console.error('Error enhancing movie data:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "components/MediaCard.js",
+      "line": 256,
+      "content": "console.warn('MediaCard: Missing TMDB ID, using fallback navigation for:', title, year);",
+      "type": "warning",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "medium"
+    },
+    {
+      "file": "components/MovieAnalysisWithEntities.js",
+      "line": 61,
+      "content": "console.error('Error processing analysis:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/MovieHeaderAB.js",
+      "line": 43,
+      "content": "console.warn('A/B test under emergency rollback, serving A variant');",
+      "type": "warning",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "low"
+    },
+    {
+      "file": "components/MovieHeaderAB.js",
+      "line": 65,
+      "content": "console.error('Error determining A/B test variant:', err);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/MovieHeaderAB.js",
+      "line": 81,
+      "content": "console.warn('A/B test fallback: serving A variant due to error:', error);",
+      "type": "warning",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/MovieHeaderAB.js",
+      "line": 111,
+      "content": "console.error('Error rendering header variant:', renderError);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/MovieHeaderAB.js",
+      "line": 128,
+      "content": "console.warn('forceVariant only works in development');",
+      "type": "warning",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "low"
+    },
+    {
+      "file": "components/MovieHeaderAB.js",
+      "line": 134,
+      "content": "console.log(`Forced header variant to: ${forceVariant}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/MovieHeaderAB.js",
+      "line": 143,
+      "content": "console.warn('debugVariant only works in development');",
+      "type": "warning",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/MovieHeaderAB.js",
+      "line": 150,
+      "content": "console.table({",
+      "type": "other",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "low"
+    },
+    {
+      "file": "components/MovieHeaderLarge.js",
+      "line": 80,
+      "content": "console.error('Failed to load favorites state:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/MovieHeaderLarge.js",
+      "line": 94,
+      "content": "console.error('Failed to update favorites state:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/MovieHeaderLarge.js",
+      "line": 114,
+      "content": "console.log(`✅ Trailer found for ${title}: ${data.title} (${data.site})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/MovieHeaderLarge.js",
+      "line": 116,
+      "content": "console.log(`❌ No trailer found for ${title} (TMDB ID: ${tmdbId})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/MovieHeaderLarge.js",
+      "line": 119,
+      "content": "console.error('Error fetching trailer:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/MovieHeaderLarge.js",
+      "line": 176,
+      "content": "console.error('Failed to toggle heart state:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/OnboardingPlatformPicker.js",
+      "line": 28,
+      "content": "console.error('Error loading existing platforms:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "components/OnboardingPlatformPicker.js",
+      "line": 89,
+      "content": "console.log('Platforms saved:', Array.from(selectedPlatforms));",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "components/OnboardingPlatformPicker.js",
+      "line": 105,
+      "content": "console.error('Error saving platforms:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "components/PersonCard.js",
+      "line": 96,
+      "content": "console.log('Fetching enhanced biography for:', name);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/PersonCard.js",
+      "line": 114,
+      "content": "console.log('Fetching TMDB profile for:', name);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/PersonCard.js",
+      "line": 145,
+      "content": "console.log('Cached enhanced data for:', name);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/PersonCard.js",
+      "line": 147,
+      "content": "console.warn('Failed to cache enhanced data:', cacheError);",
+      "type": "warning",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "low"
+    },
+    {
+      "file": "components/PersonCard.js",
+      "line": 153,
+      "content": "console.error('Error enhancing person data:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/PersonCard.js",
+      "line": 191,
+      "content": "console.error('PersonCard: Missing TMDB ID for person:', name, birthYear);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/PlatformSelector.js",
+      "line": 23,
+      "content": "console.error('Error loading platforms from localStorage:', error)",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "components/StreamingPlatformBox.js",
+      "line": 18,
+      "content": "console.error('Error loading platforms from localStorage:', error)",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/admin/lists.js",
+      "line": 97,
+      "content": "console.error('Error fetching existing lists:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/admin/lists.js",
+      "line": 150,
+      "content": "console.error('Error creating list:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/admin/lists.js",
+      "line": 177,
+      "content": "console.error(`Failed to create ${listKey}:`, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/admin/populate-lists.js",
+      "line": 105,
+      "content": "console.error('Error fetching existing lists:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/admin/populate-lists.js",
+      "line": 153,
+      "content": "console.error('Error populating list:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/admin/populate-lists.js",
+      "line": 174,
+      "content": "console.error(`Failed to populate ${list.name}:`, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 84,
+      "content": "console.log(`Enhanced existing movie with slug: ${movieData.title} (${movieData.year})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 87,
+      "content": "console.log(`Movie already has slug, skipping: ${movieData.title} (${movieData.year})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 92,
+      "content": "console.log(`New movie discovered: ${movieData.title} (${movieData.year})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 105,
+      "content": "console.log(`Movie already exists with TMDB ID ${tmdbData.tmdb_id}: ${existingTmdbMovie.title} (${existingTmdbMovie.year})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 119,
+      "content": "console.log(`Enhanced existing movie with slug: ${existingTmdbMovie.title} (${existingTmdbMovie.year})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 151,
+      "content": "console.log(`Created complete movie record: ${movieData.title} (${movieData.year}) with TMDB ID: ${tmdbData?.tmdb_id || 'none'}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 155,
+      "content": "console.error('Error saving movie data to Supabase:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 200,
+      "content": "console.log(`🔄 Cache miss - fetching TMDB data for: ${title} (${year})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 224,
+      "content": "console.log(`💾 Cached TMDB data for: ${title} (${year}) - TMDB ID: ${movie.id}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 229,
+      "content": "console.error(`Failed to fetch TMDB data for ${title}:`, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 274,
+      "content": "console.log(`🔄 Cache miss - generating fresh Claude response for: \"${question.substring(0, 100)}...\"`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 298,
+      "content": "console.log(`💾 Cached fresh Claude response for: \"${question.substring(0, 50)}...\"`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 301,
+      "content": "console.error('🔴 Claude API Error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 335,
+      "content": "console.log('\\n=== CLAUDE RESPONSE DEBUG ===');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 336,
+      "content": "console.log('Full response text:', responseText);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 337,
+      "content": "console.log('=== END RESPONSE ===\\n');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 347,
+      "content": "console.log('Total lines to parse:', lines.length);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 353,
+      "content": "console.log(`Line ${i}: \"${trimmedLine}\"`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 358,
+      "content": "console.log('Found PARAGRAPH line');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 362,
+      "content": "console.log('Pushed previous section:', currentSection);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 370,
+      "content": "console.log('Pushed movie section with', currentMovies.length, 'movies');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 378,
+      "content": "console.log('Started new text section:', currentSection.content);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 381,
+      "content": "console.log('Found MOVIES line:', movieLine);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 385,
+      "content": "console.log('Split into parts:', parts);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 396,
+      "content": "console.log('Created movie object:', movieObj);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 399,
+      "content": "console.warn('Movie line has insufficient parts:', parts);",
+      "type": "warning",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 407,
+      "content": "console.log('Parsing MORE_IDEAS line:', movieLine);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 408,
+      "content": "console.log('Split parts:', parts);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 418,
+      "content": "console.log('Created MORE_IDEAS movie object:', movieObj);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 423,
+      "content": "console.log('Parsing additional MORE_IDEAS line:', trimmedLine);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 424,
+      "content": "console.log('Split parts:', parts);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 434,
+      "content": "console.log('Created additional MORE_IDEAS movie object:', movieObj);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 683,
+      "content": "console.log('\\n=== FINAL RESPONSE DEBUG ===');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 684,
+      "content": "console.log('Sections count:', claudeResponse.sections.length);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 686,
+      "content": "console.log(`Section ${i}:`, section.type);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 688,
+      "content": "console.log(`  Movies count: ${section.movies.length}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 690,
+      "content": "console.log(`    Movie ${j}: \"${movie.title}\" (${movie.year})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 694,
+      "content": "console.log('More Ideas count:', claudeResponse.moreIdeas?.movies?.length || 0);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 695,
+      "content": "console.log('=== END FINAL RESPONSE DEBUG ===\\n');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/ask-claude.js",
+      "line": 710,
+      "content": "console.error('Claude API Error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/background-analysis-warming.js",
+      "line": 50,
+      "content": "console.error('Background warming error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/background-analysis-warming.js",
+      "line": 92,
+      "content": "console.error('Background job error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/background-analysis-warming.js",
+      "line": 114,
+      "content": "console.log(`🧠 Starting analysis warming for ${movies.length} movies`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/background-analysis-warming.js",
+      "line": 119,
+      "content": "console.log(`⏸️  Job paused/stopped at movie ${i}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/background-analysis-warming.js",
+      "line": 126,
+      "content": "console.log(`🔄 Processing batch ${currentJob.progress.currentBatch} (movies ${i + 1}-${Math.min(i + currentJob.config.batchSize, movies.length)})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/background-analysis-warming.js",
+      "line": 145,
+      "content": "console.error(`Failed to warm analysis for ${movie.title}:`, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/background-analysis-warming.js",
+      "line": 164,
+      "content": "console.log(`✅ Analysis warming job completed in ${Math.floor(currentJob.duration / 60000)} minutes`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/background-analysis-warming.js",
+      "line": 165,
+      "content": "console.log(`📊 Generated: ${currentJob.progress.generated}, Cached: ${currentJob.progress.cached}, Errors: ${currentJob.progress.errors}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/background-analysis-warming.js",
+      "line": 166,
+      "content": "console.log(`💰 Estimated cost: $${currentJob.estimatedCost.toFixed(2)}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/background-analysis-warming.js",
+      "line": 171,
+      "content": "console.error('Analysis warming job failed:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/background-analysis-warming.js",
+      "line": 241,
+      "content": "console.log(`✨ Generated analysis for ${movie.title} (${movie.year})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/background-analysis-warming.js",
+      "line": 247,
+      "content": "console.error(`Failed to generate analysis for ${movie.title}:`, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/background-analysis-warming.js",
+      "line": 274,
+      "content": "console.error('Resume job error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/batch/lists.js",
+      "line": 67,
+      "content": "console.error('Error finding lists missing analysis:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/lists.js",
+      "line": 90,
+      "content": "console.error(`Error getting movies for list ${listId}:`, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/lists.js",
+      "line": 143,
+      "content": "console.error(`Error generating analysis for list ${list.name}:`, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/lists.js",
+      "line": 166,
+      "content": "console.error(`Error saving analysis for list ${listId}:`, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/lists.js",
+      "line": 190,
+      "content": "console.log(`Processing list: ${list.name}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/lists.js",
+      "line": 235,
+      "content": "console.error('List batch processing failed:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/lists.js",
+      "line": 261,
+      "content": "console.log('List batch processing result:', result);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/lists.js",
+      "line": 265,
+      "content": "console.error('List batch processing error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/movies.js",
+      "line": 79,
+      "content": "console.error('Error finding movies missing analysis:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/movies.js",
+      "line": 124,
+      "content": "console.error('Error creating batch:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/movies.js",
+      "line": 152,
+      "content": "console.error('Batch processing failed:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/movies.js",
+      "line": 178,
+      "content": "console.log('Movie batch processing result:', result);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/movies.js",
+      "line": 182,
+      "content": "console.error('Movie batch processing error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/orchestrator.js",
+      "line": 31,
+      "content": "console.log(`🤖 Batch Orchestrator running at ${now.toISOString()}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/orchestrator.js",
+      "line": 50,
+      "content": "console.log('✅ Status check completed');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/orchestrator.js",
+      "line": 58,
+      "content": "console.error('❌ Status check failed:', error.message);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/orchestrator.js",
+      "line": 64,
+      "content": "console.log('🎬 Running movie batch analysis...');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/orchestrator.js",
+      "line": 80,
+      "content": "console.log('✅ Movie batch created:', movieData.batch_id);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/orchestrator.js",
+      "line": 88,
+      "content": "console.error('❌ Movie batch failed:', error.message);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/orchestrator.js",
+      "line": 95,
+      "content": "console.log('👥 Running people discovery...');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/orchestrator.js",
+      "line": 111,
+      "content": "console.log('✅ People discovery completed:', peopleData.people_created);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/orchestrator.js",
+      "line": 119,
+      "content": "console.error('❌ People discovery failed:', error.message);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/orchestrator.js",
+      "line": 126,
+      "content": "console.log('📋 Running list analysis...');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/orchestrator.js",
+      "line": 142,
+      "content": "console.log('✅ List analysis completed:', listData.lists_processed);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/orchestrator.js",
+      "line": 150,
+      "content": "console.error('❌ List analysis failed:', error.message);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/orchestrator.js",
+      "line": 158,
+      "content": "console.log(`📊 Orchestrator completed: ${successful} successful, ${failed} failed`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/orchestrator.js",
+      "line": 174,
+      "content": "console.error('💥 Orchestrator failed:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/people.js",
+      "line": 70,
+      "content": "console.error('Error extracting people from analyses:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/people.js",
+      "line": 129,
+      "content": "console.error(`Error enriching person ${personData.name}:`, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/people.js",
+      "line": 162,
+      "content": "console.error(`Error creating person record for ${personData.name}:`, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/people.js",
+      "line": 213,
+      "content": "console.error('People batch processing failed:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/people.js",
+      "line": 239,
+      "content": "console.log('People batch processing result:', result);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/people.js",
+      "line": 243,
+      "content": "console.error('People batch processing error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/slugs.js",
+      "line": 59,
+      "content": "console.error('Error finding movies missing slugs:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/slugs.js",
+      "line": 88,
+      "content": "console.error(`Error generating slug for ${title} (${year}):`, error.message);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/slugs.js",
+      "line": 109,
+      "content": "console.error(`Error updating slug for movie ${movieId}:`, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/slugs.js",
+      "line": 135,
+      "content": "console.log(`🎬 [${processed + 1}/${missingMovies.length}] ${movie.title} (${movie.year})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/slugs.js",
+      "line": 143,
+      "content": "console.log(`   ✅ Generated: \"${slug}\"`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/slugs.js",
+      "line": 153,
+      "content": "console.log(`   ❌ Failed to save slug`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/slugs.js",
+      "line": 162,
+      "content": "console.log(`   ❌ Failed to generate slug`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/slugs.js",
+      "line": 179,
+      "content": "console.error(`   💥 Error processing ${movie.title}:`, error.message);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/slugs.js",
+      "line": 202,
+      "content": "console.error('Slug batch processing failed:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/slugs.js",
+      "line": 239,
+      "content": "console.error('Error getting slug status:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/slugs.js",
+      "line": 280,
+      "content": "console.log('Slug batch processing result:', result);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/slugs.js",
+      "line": 284,
+      "content": "console.error('Slug batch processing error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/status.js",
+      "line": 37,
+      "content": "console.error('Error getting active batches:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/status.js",
+      "line": 57,
+      "content": "console.error(`Error checking batch ${batch.batch_id}:`, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/status.js",
+      "line": 64,
+      "content": "console.log(`Processing completed batch: ${batch.batch_id}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/status.js",
+      "line": 96,
+      "content": "console.warn(`Batch result failed for ${result.custom_id}:`, result.result.error);",
+      "type": "warning",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/status.js",
+      "line": 100,
+      "content": "console.error(`Error saving result for ${result.custom_id}:`, saveError);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/status.js",
+      "line": 117,
+      "content": "console.error(`Error processing completed batch ${batch.batch_id}:`, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/status.js",
+      "line": 181,
+      "content": "console.error(`Error processing batch ${batch.batch_id}:`, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/status.js",
+      "line": 201,
+      "content": "console.error('Batch status processing failed:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/status.js",
+      "line": 220,
+      "content": "console.error('Error getting batch summary:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/status.js",
+      "line": 261,
+      "content": "console.log('Batch status processing result:', result);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/status.js",
+      "line": 265,
+      "content": "console.error('Batch status processing error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/test-movies.js",
+      "line": 58,
+      "content": "console.error('Error finding movies missing analysis:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/test-movies.js",
+      "line": 87,
+      "content": "console.error('Test batch processing failed:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/test-movies.js",
+      "line": 118,
+      "content": "console.log('Test movie batch result:', result);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch/test-movies.js",
+      "line": 121,
+      "content": "console.error('Test movie batch error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch-populate-all-lists.js",
+      "line": 32,
+      "content": "console.log('🚀 BATCH POPULATION: Starting full list population...');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch-populate-all-lists.js",
+      "line": 33,
+      "content": "console.log(`⚙️  Config: startFrom=${startFrom}, batchSize=${batchSize}, dryRun=${dryRun}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch-populate-all-lists.js",
+      "line": 39,
+      "content": "console.log(`📊 Source data: ${discoveredMovies.length} movies available`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch-populate-all-lists.js",
+      "line": 63,
+      "content": "console.log(`🎯 Found ${emptyLists.length} empty lists total`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch-populate-all-lists.js",
+      "line": 67,
+      "content": "console.log(`📋 Processing batch: ${startFrom + 1}-${startFrom + batchLists.length} of ${emptyLists.length}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch-populate-all-lists.js",
+      "line": 95,
+      "content": "console.log('⏰ Approaching timeout, stopping batch processing');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch-populate-all-lists.js",
+      "line": 100,
+      "content": "console.log(`\\n📝 Processing ${startFrom + i + 1}/${emptyLists.length}: \"${list.name}\"`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch-populate-all-lists.js",
+      "line": 106,
+      "content": "console.log(`⚠️  No suitable movies found for: \"${list.name}\"`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch-populate-all-lists.js",
+      "line": 115,
+      "content": "console.log(`🎬 Selected ${selectedMovies.length} movies for \"${list.name}\"`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch-populate-all-lists.js",
+      "line": 130,
+      "content": "console.log(`✅ Populated \"${list.name}\" with ${populatedCount} movies`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch-populate-all-lists.js",
+      "line": 143,
+      "content": "console.error(`❌ Error processing \"${list.name}\":`, error.message);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch-populate-all-lists.js",
+      "line": 156,
+      "content": "console.log(`\\n🏁 BATCH COMPLETE: Processed ${processedCount} lists`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch-populate-all-lists.js",
+      "line": 157,
+      "content": "console.log(`📊 Success: ${successCount}, Errors: ${errorCount}, Remaining: ${remainingLists}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch-populate-all-lists.js",
+      "line": 188,
+      "content": "console.error('🚨 BATCH POPULATION FAILED:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch-populate-all-lists.js",
+      "line": 397,
+      "content": "console.log(`✅ Matched rule: ${rule.description} - ${rule.movies.length} movies available`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch-populate-all-lists.js",
+      "line": 403,
+      "content": "console.log(`🔀 Using diverse fallback selection for: \"${listName}\"`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/batch-populate-all-lists.js",
+      "line": 483,
+      "content": "console.error(`Error adding movie \"${movie.title}\":`, error.message);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/cache-movie-data.js",
+      "line": 54,
+      "content": "console.warn(`🚫 BLOCKED URL-format slug for ${title} (${year}): \"${slug}\"`);",
+      "type": "warning",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "low"
+    },
+    {
+      "file": "pages/api/cache-movie-data.js",
+      "line": 85,
+      "content": "console.log(`Updated Supabase record for: ${title} (${year})`)",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/cache-movie-data.js",
+      "line": 88,
+      "content": "console.log(`No updates needed for: ${title} (${year})`)",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/cache-movie-data.js",
+      "line": 112,
+      "content": "console.log(`Created new Supabase record for: ${title} (${year})`)",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/cache-movie-data.js",
+      "line": 136,
+      "content": "console.error('Supabase cache error:', error)",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/cache-person-data.js",
+      "line": 30,
+      "content": "console.log('Person data cache request:', {",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/cache-person-data.js",
+      "line": 48,
+      "content": "console.error('Error caching person data:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/cache-warming.js",
+      "line": 47,
+      "content": "console.error('Cache warming error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/cache-warming.js",
+      "line": 85,
+      "content": "console.error(`Failed to warm movie ${movie.tmdb_id}:`, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/cache-warming.js",
+      "line": 132,
+      "content": "console.error(`Failed to warm poster for ${movie.tmdb_id}:`, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/cache-warming.js",
+      "line": 195,
+      "content": "console.error(`Failed to warm analysis for ${movie.tmdb_id}:`, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/cache-warming.js",
+      "line": 253,
+      "content": "console.error(`Failed to warm priority movie ${movie.tmdb_id}:`, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/cache-warming.js",
+      "line": 258,
+      "content": "console.error('Popular content warming error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/cache-warming.js",
+      "line": 289,
+      "content": "console.error(`Failed to warm series movie ${movie.tmdb_id}:`, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/cache-warming.js",
+      "line": 344,
+      "content": "console.log(`Would warm analysis for ${movie.title} (${movie.tmdb_id})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/check-tmdb-stats.js",
+      "line": 39,
+      "content": "console.log('📊 TMDB ID Statistics:');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/check-tmdb-stats.js",
+      "line": 40,
+      "content": "console.log(`Total movies: ${totalMovies}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/check-tmdb-stats.js",
+      "line": 41,
+      "content": "console.log(`Movies with TMDB IDs: ${withTmdbMovies}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/check-tmdb-stats.js",
+      "line": 42,
+      "content": "console.log(`Movies with NULL TMDB IDs: ${nullTmdbMovies}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/check-tmdb-stats.js",
+      "line": 43,
+      "content": "console.log(`Percentage with TMDB IDs: ${((withTmdbMovies / totalMovies) * 100).toFixed(1)}%`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/check-tmdb-stats.js",
+      "line": 45,
+      "content": "console.log('\\n🔍 Examples of movies with NULL TMDB IDs:');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/check-tmdb-stats.js",
+      "line": 48,
+      "content": "console.log(`- \"${movie.title}\" (${movie.year}) - ${hasPoster ? 'HAS POSTER' : 'no poster'} - Created: ${movie.created_at}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/check-tmdb-stats.js",
+      "line": 60,
+      "content": "console.error('Error checking TMDB IDs:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/create-media-card.js",
+      "line": 47,
+      "content": "console.log('🎬 Creating MediaCard for:', { title, year, tmdb_id });",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/create-media-card.js",
+      "line": 76,
+      "content": "console.log('✅ Complete movie already exists:', existingMovie.title, existingMovie.year);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/create-media-card.js",
+      "line": 85,
+      "content": "console.log('🔄 Found placeholder movie, will update with TMDB data:', existingMovie.title);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/create-media-card.js",
+      "line": 88,
+      "content": "console.log('🆕 Movie not found, creating new MediaCard...');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/create-media-card.js",
+      "line": 100,
+      "content": "console.log(`🔄 Cache miss - fetching TMDB movie details for ID: ${tmdb_id}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/create-media-card.js",
+      "line": 111,
+      "content": "console.log(`💾 Cached TMDB movie details for ID: ${tmdb_id} - ${movie.title} (${movie.release_date})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/create-media-card.js",
+      "line": 122,
+      "content": "console.log(`🔄 Cache miss - searching TMDB for: ${title} (${year})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/create-media-card.js",
+      "line": 133,
+      "content": "console.log(`💾 Cached TMDB search for: ${title} (${year}) - ${data.results?.length || 0} results`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/create-media-card.js",
+      "line": 152,
+      "content": "console.log('🤖 Generating Claude slug...');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/create-media-card.js",
+      "line": 199,
+      "content": "console.log('✅ Created new MediaCard:', savedMovie.title, savedMovie.year);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/create-media-card.js",
+      "line": 211,
+      "content": "console.error('❌ MediaCard creation failed:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/create-orphan-table.js",
+      "line": 32,
+      "content": "console.log('Table creation error:', error);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/create-orphan-table.js",
+      "line": 52,
+      "content": "console.error('Error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/educational-list-analysis.js",
+      "line": 37,
+      "content": "console.log(`Using cached educational analysis for: ${listName}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/educational-list-analysis.js",
+      "line": 46,
+      "content": "console.log(`Generating new educational analysis for: ${listName}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/educational-list-analysis.js",
+      "line": 92,
+      "content": "console.error('Failed to save educational analysis to database:', saveError);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/educational-list-analysis.js",
+      "line": 95,
+      "content": "console.log(`Saved educational analysis for ${listName} - Cost: $${costEstimate.toFixed(4)}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/educational-list-analysis.js",
+      "line": 106,
+      "content": "console.error('Error generating educational analysis:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/enhance-movie-data.js",
+      "line": 31,
+      "content": "console.log('Checking for existing slug for:', title, year);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/enhance-movie-data.js",
+      "line": 42,
+      "content": "console.log('✅ Found existing good short slug, not overwriting');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/enhance-movie-data.js",
+      "line": 51,
+      "content": "console.log('Generating new short slug for:', title, year);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/enhance-movie-data.js",
+      "line": 73,
+      "content": "console.log('Generated new slug:', slug);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/enhance-movie-data.js",
+      "line": 84,
+      "content": "console.error('Error enhancing movie data:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/enhance-person-data.js",
+      "line": 58,
+      "content": "console.error('Error enhancing person data:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/episode-migration.js",
+      "line": 209,
+      "content": "console.error('Episode migration API error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": true,
+      "risk": "high"
+    },
+    {
+      "file": "pages/api/fetch-tmdb-poster.js",
+      "line": 26,
+      "content": "console.error('TMDb error:', err.message);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/full-recovery-system.js",
+      "line": 25,
+      "content": "console.log('🔄 FULL RECOVERY: Starting comprehensive list population...');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/full-recovery-system.js",
+      "line": 26,
+      "content": "console.log(`📊 Available movie data: ${discoveredMovies.length} movies with TMDB IDs`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/full-recovery-system.js",
+      "line": 40,
+      "content": "console.log(`🎯 Found ${emptyLists.length} empty lists to populate`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/full-recovery-system.js",
+      "line": 123,
+      "content": "console.log(`\\n📋 Processing: \"${list.name}\" (${list.slug})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/full-recovery-system.js",
+      "line": 129,
+      "content": "console.log(`⚠️  No movies found for: \"${list.name}\"`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/full-recovery-system.js",
+      "line": 171,
+      "content": "console.log(`✅ Populated: \"${list.name}\" with ${populatedItems.length} movies`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/full-recovery-system.js",
+      "line": 175,
+      "content": "console.error(`❌ Error populating \"${list.name}\":`, error.message);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/full-recovery-system.js",
+      "line": 185,
+      "content": "console.log(`\\n🏁 FULL RECOVERY COMPLETE:`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/full-recovery-system.js",
+      "line": 186,
+      "content": "console.log(`✅ Successfully populated: ${successCount} lists`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/full-recovery-system.js",
+      "line": 187,
+      "content": "console.log(`❌ Errors: ${errorCount} lists`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/full-recovery-system.js",
+      "line": 202,
+      "content": "console.error('🚨 FULL RECOVERY FAILED:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/full-recovery-system.js",
+      "line": 220,
+      "content": "console.log(`🎯 Matched pattern \"${pattern}\" for list: ${list.name}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/full-recovery-system.js",
+      "line": 226,
+      "content": "console.log(`🔀 Using default selection for: ${list.name}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/full-recovery-system.js",
+      "line": 384,
+      "content": "console.error(`Error ensuring movie exists: ${item.title}`, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/generate-explore-topics.js",
+      "line": 52,
+      "content": "console.error('Error generating explore topics:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/generate-list-content.js",
+      "line": 37,
+      "content": "console.log(`Generating ${contentType} content for: ${listName}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/generate-list-content.js",
+      "line": 50,
+      "content": "console.log(`Warning: List \"${listName}\" has content_type \"${contentType}\", defaulting to declarative`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/generate-list-content.js",
+      "line": 80,
+      "content": "console.error('Error in list content routing:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/generate-list-content.js",
+      "line": 110,
+      "content": "console.error('Educational analysis error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/generate-list-content.js",
+      "line": 137,
+      "content": "console.error('Declarative analysis error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/generate-movie-list.js",
+      "line": 17,
+      "content": "console.error('❌ Failed to load afi100.json:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/genius-list.js",
+      "line": 64,
+      "content": "console.log(`Using cached description for list: ${list.name}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/genius-list.js",
+      "line": 68,
+      "content": "console.log(`Generating new description for list: ${list.name}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/genius-list.js",
+      "line": 134,
+      "content": "console.error('Failed to save list analysis to database:', saveError);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/genius-list.js",
+      "line": 137,
+      "content": "console.log(`Saved description for list ${list.name} - Cost: $${costEstimate.toFixed(4)}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/genius-list.js",
+      "line": 141,
+      "content": "console.error('Error generating Claude description:', claudeError);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/genius-list.js",
+      "line": 240,
+      "content": "console.error('Error in genius-list API:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/get-streaming-info.js",
+      "line": 20,
+      "content": "console.log('Fetching streaming info for:', title, year);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/get-streaming-info.js",
+      "line": 36,
+      "content": "console.log('Claude streaming response:', streamingText);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/get-streaming-info.js",
+      "line": 45,
+      "content": "console.error('Error fetching streaming info:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/list-analysis.js",
+      "line": 86,
+      "content": "console.warn(`Claude slug generation failed for ${tmdbMovie.title}, saving without slug`);",
+      "type": "warning",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "low"
+    },
+    {
+      "file": "pages/api/list-analysis.js",
+      "line": 175,
+      "content": "console.log(`Using cached analysis for list: ${listName}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/list-analysis.js",
+      "line": 188,
+      "content": "console.log(`Generating new analysis for list: ${listName}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/list-analysis.js",
+      "line": 242,
+      "content": "console.log(`✅ Created MediaCard for ${movieData.title} (${movieData.year}) from list analysis`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/list-analysis.js",
+      "line": 252,
+      "content": "console.log(`⚠️ Failed to create MediaCard for ${movieData.title} (${movieData.year}):`, mediaCardResult.error);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/list-analysis.js",
+      "line": 256,
+      "content": "console.error(`❌ Error creating MediaCard for ${movieData.title}:`, error.message);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/list-analysis.js",
+      "line": 288,
+      "content": "console.error('Failed to save list analysis to database:', saveError);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/list-analysis.js",
+      "line": 291,
+      "content": "console.log(`Saved combined analysis for list ${listName} - ${movies.length} movies - Cost: $${costEstimate.toFixed(4)}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/list-analysis.js",
+      "line": 304,
+      "content": "console.error('Error generating list analysis:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/load-more.js",
+      "line": 13,
+      "content": "console.log(`🔄 Cache miss - fetching TMDB popular movies page: ${page}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/load-more.js",
+      "line": 20,
+      "content": "console.log(`💾 Cached TMDB popular movies page ${page} - ${data.results?.length || 0} movies`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/load-more.js",
+      "line": 37,
+      "content": "console.warn('Slug fallback for:', m.title);",
+      "type": "warning",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "low"
+    },
+    {
+      "file": "pages/api/load-more.js",
+      "line": 55,
+      "content": "console.error('load-more error:', err);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/load-movie-page.js",
+      "line": 93,
+      "content": "console.log('📄 Loading movie page for TMDB ID:', tmdb_id);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/load-movie-page.js",
+      "line": 105,
+      "content": "console.log(`Movie ${tmdb_id} not found in database, attempting to create from TMDB...`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/load-movie-page.js",
+      "line": 117,
+      "content": "console.log('✅ Created movie from TMDB:', mediaCardData.movie.title);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/load-movie-page.js",
+      "line": 122,
+      "content": "console.error('❌ Failed to create movie from TMDB:', mediaCardResponse.status);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/load-movie-page.js",
+      "line": 126,
+      "content": "console.error('❌ Error creating movie from TMDB:', createError);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/load-movie-page.js",
+      "line": 131,
+      "content": "console.log('🎬 Found movie:', movie.title, movie.year);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/load-movie-page.js",
+      "line": 138,
+      "content": "console.log('🔄 Movie needs TMDB data, calling create-media-card...');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/load-movie-page.js",
+      "line": 150,
+      "content": "console.log('✅ MediaCard data updated:', completeMovie.title, completeMovie.year);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/load-movie-page.js",
+      "line": 152,
+      "content": "console.warn('⚠️ MediaCard update failed, proceeding with existing data');",
+      "type": "warning",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "low"
+    },
+    {
+      "file": "pages/api/load-movie-page.js",
+      "line": 165,
+      "content": "console.log('✅ Using existing analysis for:', completeMovie.title);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/load-movie-page.js",
+      "line": 180,
+      "content": "console.log('🤖 Generating new analysis for:', completeMovie.title, completeMovie.year);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/load-movie-page.js",
+      "line": 197,
+      "content": "console.log('🔍 Running Related Movie Discovery...');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/load-movie-page.js",
+      "line": 201,
+      "content": "console.log(`🎬 Found ${movieMentions.length} movie mentions in analysis`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/load-movie-page.js",
+      "line": 219,
+      "content": "console.log(`✅ Created MediaCard: ${movieMention.title} (${movieMention.year})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/load-movie-page.js",
+      "line": 223,
+      "content": "console.warn(`⚠️ Failed to create MediaCard for ${movieMention.title}:`, movieError.message);",
+      "type": "warning",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "low"
+    },
+    {
+      "file": "pages/api/load-movie-page.js",
+      "line": 227,
+      "content": "console.log(`✅ Related Movie Discovery: ${newMoviesCreated} new MediaCards created`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/load-movie-page.js",
+      "line": 237,
+      "content": "console.warn('⚠️ Related Movie Discovery failed:', discoveryError.message);",
+      "type": "warning",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "low"
+    },
+    {
+      "file": "pages/api/load-movie-page.js",
+      "line": 264,
+      "content": "console.error('❌ Failed to save analysis:', saveError);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/load-movie-page.js",
+      "line": 266,
+      "content": "console.log(`✅ Saved analysis for ${completeMovie.title} - Cost: $${costEstimate.toFixed(4)}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/load-movie-page.js",
+      "line": 282,
+      "content": "console.error('❌ Movie page loading failed:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/lookup-movie.js",
+      "line": 23,
+      "content": "console.log(`🔍 Looking up movie: \"${title}\" (${year})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/lookup-movie.js",
+      "line": 33,
+      "content": "console.log(`📊 Database result:`, { movie, error: error?.message });",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/lookup-movie.js",
+      "line": 43,
+      "content": "console.log(`🔍 Similar titles found:`, similarMovies);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/lookup-movie.js",
+      "line": 51,
+      "content": "console.log(`Movie not in database, trying TMDB lookup: ${title} (${year})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/lookup-movie.js",
+      "line": 60,
+      "content": "console.log(`🔄 Cache miss - fetching TMDB data for lookup: ${title} (${year})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/lookup-movie.js",
+      "line": 74,
+      "content": "console.log(`💾 Cached TMDB lookup for: ${title} (${year}) - TMDB ID: ${movie.id}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/lookup-movie.js",
+      "line": 90,
+      "content": "console.log(`Movie already exists with TMDB ID ${tmdbMovie.id}: ${existingMovie.title} (${existingMovie.year})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/lookup-movie.js",
+      "line": 118,
+      "content": "console.log(`Successfully saved new movie: ${title} (${year}) with TMDB ID: ${tmdbMovie.id}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/lookup-movie.js",
+      "line": 121,
+      "content": "console.error('Error saving movie to database:', saveError);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/lookup-movie.js",
+      "line": 129,
+      "content": "console.error('TMDB lookup error:', tmdbError);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/lookup-movie.js",
+      "line": 134,
+      "content": "console.error('Database lookup error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/lookup-person.js",
+      "line": 43,
+      "content": "console.error('Database lookup error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/migrate-to-orphans.js",
+      "line": 22,
+      "content": "console.log(`Found ${nullCount} movies with null TMDB IDs to migrate`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/migrate-to-orphans.js",
+      "line": 65,
+      "content": "console.log(`Successfully migrated ${nullMovies.length} movies to orphan_movies`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/migrate-to-orphans.js",
+      "line": 86,
+      "content": "console.log(`Migration complete:`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/migrate-to-orphans.js",
+      "line": 87,
+      "content": "console.log(`- Movies table: ${finalMovieCount} movies (all with TMDB IDs)`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/migrate-to-orphans.js",
+      "line": 88,
+      "content": "console.log(`- Orphan table: ${orphanCount} orphaned movies`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/migrate-to-orphans.js",
+      "line": 103,
+      "content": "console.error('Migration error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/movie-analysis.js",
+      "line": 24,
+      "content": "console.time(`🎬 API analysis for ${title} (${year})`);",
+      "type": "other",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "low"
+    },
+    {
+      "file": "pages/api/movie-analysis.js",
+      "line": 34,
+      "content": "console.log(`🔄 Cache miss - generating fresh analysis for ${title} (${year})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/movie-analysis.js",
+      "line": 67,
+      "content": "console.log(`📦 Using database cached analysis for ${title} (${year})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/movie-analysis.js",
+      "line": 78,
+      "content": "console.log(`🤖 Generating fresh Claude analysis for ${title} (${year})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/movie-analysis.js",
+      "line": 105,
+      "content": "console.log(`🔍 Running entity detection for ${title} (${year}) - creating new MediaCards`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/movie-analysis.js",
+      "line": 114,
+      "content": "console.log(`✅ Entity detection complete: ${entityData.people.length} people, ${entityData.movies.length} movies detected, ${newMoviesCount} new MediaCards created`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/movie-analysis.js",
+      "line": 116,
+      "content": "console.warn('Entity detection failed:', entityError.message);",
+      "type": "warning",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "low"
+    },
+    {
+      "file": "pages/api/movie-analysis.js",
+      "line": 144,
+      "content": "console.error('Failed to save analysis to database:', saveError);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/movie-analysis.js",
+      "line": 147,
+      "content": "console.log(`💾 Saved analysis for ${title} (${year}) - Cost: $${costEstimate.toFixed(4)}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/movie-analysis.js",
+      "line": 163,
+      "content": "console.timeEnd(`🎬 API analysis for ${title} (${year})`);",
+      "type": "other",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "low"
+    },
+    {
+      "file": "pages/api/movie-analysis.js",
+      "line": 168,
+      "content": "console.timeEnd(`🎬 API analysis for ${title} (${year})`);",
+      "type": "other",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "low"
+    },
+    {
+      "file": "pages/api/movie-analysis.js",
+      "line": 169,
+      "content": "console.error('🔴 Error generating movie analysis:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/movie-credits.js",
+      "line": 33,
+      "content": "console.log(`🔄 Cache miss - fetching TMDB credits for movie ID: ${tmdbId}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/movie-credits.js",
+      "line": 44,
+      "content": "console.log(`💾 Cached TMDB credits for movie ID: ${tmdbId} - ${creditsData.cast?.length || 0} cast, ${creditsData.crew?.length || 0} crew`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/movie-credits.js",
+      "line": 148,
+      "content": "console.error('Error fetching movie credits:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/movie-list.js",
+      "line": 68,
+      "content": "console.error('Error creating list:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/movie-list.js",
+      "line": 120,
+      "content": "console.error('Error fetching list items:', itemsError);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/movie-list.js",
+      "line": 166,
+      "content": "console.error('Movie list API error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/new-releases.js",
+      "line": 20,
+      "content": "console.log('🎬 Fetching TMDB daily export:', exportUrl);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/new-releases.js",
+      "line": 43,
+      "content": "console.error('Error fetching new releases:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/person-analysis.js",
+      "line": 57,
+      "content": "console.log(`Using cached analysis for ${name} (${birthYear || 'unknown'})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/person-analysis.js",
+      "line": 68,
+      "content": "console.log(`Generating new analysis for ${name} (${birthYear || 'unknown'})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/person-analysis.js",
+      "line": 122,
+      "content": "console.error('Failed to save analysis to database:', saveError);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/person-analysis.js",
+      "line": 125,
+      "content": "console.log(`Saved analysis for ${name} (${birthYear || 'unknown'}) - Cost: $${costEstimate.toFixed(4)}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/person-analysis.js",
+      "line": 138,
+      "content": "console.error('Error generating person analysis:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/recover-definitive-lists.js",
+      "line": 23,
+      "content": "console.log('🚨 EMERGENCY RECOVERY: Restoring definitive lists...');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/recover-definitive-lists.js",
+      "line": 100,
+      "content": "console.log(`📋 Recovering list: \"${listData.name}\"`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/recover-definitive-lists.js",
+      "line": 128,
+      "content": "console.log(`📝 Updated existing list: \"${listData.name}\"`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/recover-definitive-lists.js",
+      "line": 151,
+      "content": "console.log(`✨ Created new list: \"${listData.name}\"`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/recover-definitive-lists.js",
+      "line": 205,
+      "content": "console.log(`🎬 Created movie: \"${movie.title}\" (${movie.year})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/recover-definitive-lists.js",
+      "line": 223,
+      "content": "console.error(`Error processing movie \"${movie.title}\":`, movieError);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/recover-definitive-lists.js",
+      "line": 250,
+      "content": "console.log(`✅ Recovered list: \"${listData.name}\" with ${listItems.length} movies`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/recover-definitive-lists.js",
+      "line": 253,
+      "content": "console.error(`Error recovering list \"${listData.name}\":`, listError);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/recover-definitive-lists.js",
+      "line": 266,
+      "content": "console.log(`🏁 Recovery complete: ${successCount} lists recovered, ${errorCount} errors`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/recover-definitive-lists.js",
+      "line": 280,
+      "content": "console.error('🚨 RECOVERY FAILED:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/run-migration.js",
+      "line": 18,
+      "content": "console.log('Checking if orphan_movies table exists...');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/run-migration.js",
+      "line": 36,
+      "content": "console.log(`Found ${nullCount} movies with null TMDB IDs to migrate`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/run-migration.js",
+      "line": 86,
+      "content": "console.log(`Migration complete:`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/run-migration.js",
+      "line": 87,
+      "content": "console.log(`- Movies table: ${finalMovieCount} movies (all with TMDB IDs)`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/run-migration.js",
+      "line": 88,
+      "content": "console.log(`- Orphan table: ${orphanCount} orphaned movies`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/run-migration.js",
+      "line": 99,
+      "content": "console.error('Migration error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/series-episode.js",
+      "line": 23,
+      "content": "console.error('Series config file not found:', filePath);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/series-episode.js",
+      "line": 34,
+      "content": "console.error('Invalid series config structure');",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/series-episode.js",
+      "line": 38,
+      "content": "console.log(`Loaded ${Object.keys(seriesData).length} series from config`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/series-episode.js",
+      "line": 42,
+      "content": "console.error('Error loading series config:', error.message);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/series-episode.js",
+      "line": 101,
+      "content": "console.log(`Loaded episode content from database: theme ${mapping.themeId}, series ${mapping.seriesId}, episode ${episodeId}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/series-episode.js",
+      "line": 112,
+      "content": "console.log(`Loaded episode content from file system: series ${seriesId}, episode ${episodeId}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/series-episode.js",
+      "line": 115,
+      "content": "console.log(`Episode content not found in database or file system: series ${seriesId}, episode ${episodeId}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/series-episode.js",
+      "line": 119,
+      "content": "console.error(`Error loading episode content for Series ${seriesId}, Episode ${episodeId}:`, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/series-episode.js",
+      "line": 128,
+      "content": "console.log(`Loaded episode content from file system as error fallback: series ${seriesId}, episode ${episodeId}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/series-episode.js",
+      "line": 132,
+      "content": "console.error(`File system fallback also failed for series ${seriesId}, episode ${episodeId}:`, fallbackError);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/series-episode.js",
+      "line": 141,
+      "content": "console.log(`Generating content for Series ${seriesId}, Episode ${episodeId}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/series-episode.js",
+      "line": 156,
+      "content": "console.log('Topic Title:', topicTitle);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/series-episode.js",
+      "line": 157,
+      "content": "console.log('Context Description:', contextDescription);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/series-episode.js",
+      "line": 201,
+      "content": "console.error('Error generating episode content:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/series-episode.js",
+      "line": 413,
+      "content": "console.error('Error checking episode lock:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/series-episode.js",
+      "line": 432,
+      "content": "console.log(`Episode ${seriesId}-${seriesId}-${episodeId} is locked, blocking regeneration`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/series-episode.js",
+      "line": 501,
+      "content": "console.error('Error in series-episode API:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/smart-list-populator.js",
+      "line": 26,
+      "content": "console.log('🎯 SMART POPULATION: Starting intelligent list population...');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/smart-list-populator.js",
+      "line": 32,
+      "content": "console.log(`📊 Source data: ${discoveredMovies.length} movies available`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/smart-list-populator.js",
+      "line": 55,
+      "content": "console.log(`🎯 Found ${emptyLists.length} empty lists to populate`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/smart-list-populator.js",
+      "line": 59,
+      "content": "console.log(`📋 Categorized movies into ${Object.keys(movieCategories).length} categories`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/smart-list-populator.js",
+      "line": 67,
+      "content": "console.log(`\\n📝 Processing: \"${list.name}\"`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/smart-list-populator.js",
+      "line": 73,
+      "content": "console.log(`⚠️  No suitable movies found for: \"${list.name}\"`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/smart-list-populator.js",
+      "line": 82,
+      "content": "console.log(`🎬 Selected ${selectedMovies.length} movies for \"${list.name}\"`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/smart-list-populator.js",
+      "line": 96,
+      "content": "console.log(`✅ Populated \"${list.name}\" with ${populatedCount} movies`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/smart-list-populator.js",
+      "line": 110,
+      "content": "console.error(`❌ Error processing \"${list.name}\":`, error.message);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/smart-list-populator.js",
+      "line": 126,
+      "content": "console.log(`\\n🏁 BATCH COMPLETE: Processed ${processedCount}/${emptyLists.length} lists`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/smart-list-populator.js",
+      "line": 140,
+      "content": "console.error('🚨 SMART POPULATION FAILED:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/smart-list-populator.js",
+      "line": 265,
+      "content": "console.log(`🔍 Matching for: \"${listName}\"`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/smart-list-populator.js",
+      "line": 365,
+      "content": "console.log(`✅ Matched rule for \"${listName}\" - found ${rule.movies.length} potential movies`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/smart-list-populator.js",
+      "line": 371,
+      "content": "console.log(`🔀 Using fallback selection for: \"${listName}\"`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/smart-list-populator.js",
+      "line": 442,
+      "content": "console.error(`Error adding movie \"${movie.title}\":`, error.message);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/tag-cloud.js",
+      "line": 40,
+      "content": "console.error('Error fetching lists for tag cloud:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/tag-cloud.js",
+      "line": 64,
+      "content": "console.error('Error in tag-cloud API:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/tmdb-credits.js",
+      "line": 46,
+      "content": "console.error('TMDB credits error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/tmdb-person-details.js",
+      "line": 70,
+      "content": "console.error('Error fetching TMDB person details:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/tmdb-person-profile.js",
+      "line": 32,
+      "content": "console.log(`🔄 Cache miss - fetching TMDB person profile for: ${name}${birthYear ? ` (${birthYear})` : ''}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/tmdb-person-profile.js",
+      "line": 43,
+      "content": "console.log(`💾 Cached TMDB person search for: ${name} - ${data.results?.length || 0} results`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/tmdb-person-profile.js",
+      "line": 88,
+      "content": "console.error('Error fetching TMDB person profile:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/tmdb-poster.js",
+      "line": 57,
+      "content": "console.error('Error fetching TMDB poster:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/tmdb-trailer.js",
+      "line": 22,
+      "content": "console.log('TMDB API key not configured');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/tmdb-trailer.js",
+      "line": 30,
+      "content": "console.log(`🎬 Fetching trailers for TMDB ID: ${tmdbId}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/tmdb-trailer.js",
+      "line": 36,
+      "content": "console.error('TMDB API error:', data);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/tmdb-trailer.js",
+      "line": 41,
+      "content": "console.log(`No videos found for TMDB ID: ${tmdbId}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/tmdb-trailer.js",
+      "line": 52,
+      "content": "console.log(`✅ Found trailer: ${trailer.name} (${trailer.site})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/tmdb-trailer.js",
+      "line": 64,
+      "content": "console.error('Error fetching trailer:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/upload-list-movies.js",
+      "line": 31,
+      "content": "console.log(`🆕 Creating/updating list: \"${name}\" with ${movies.length} movies`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/upload-list-movies.js",
+      "line": 64,
+      "content": "console.log(`📝 Updated existing list: \"${name}\" (ID: ${listId})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/upload-list-movies.js",
+      "line": 73,
+      "content": "console.log(`🗑️  Cleared existing items for list: \"${name}\"`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/upload-list-movies.js",
+      "line": 93,
+      "content": "console.log(`✨ Created new list: \"${name}\" (ID: ${listId})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/upload-list-movies.js",
+      "line": 147,
+      "content": "console.log(`🎬 Created new movie: \"${movie.title}\" (${movie.year})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/upload-list-movies.js",
+      "line": 165,
+      "content": "console.error(`Error processing movie \"${movie.title}\":`, movieError);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/upload-list-movies.js",
+      "line": 183,
+      "content": "console.log(`📋 Added ${listItems.length} movies to list: \"${name}\"`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/upload-list-movies.js",
+      "line": 199,
+      "content": "console.error('Error creating/updating list:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/youtube-trailer-search.js",
+      "line": 22,
+      "content": "console.log('TMDB API key not configured');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/youtube-trailer-search.js",
+      "line": 30,
+      "content": "console.log(`🎬 Fetching trailers for TMDB ID: ${tmdbId}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/youtube-trailer-search.js",
+      "line": 36,
+      "content": "console.error('TMDB API error:', data);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/youtube-trailer-search.js",
+      "line": 41,
+      "content": "console.log(`No videos found for TMDB ID: ${tmdbId}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/youtube-trailer-search.js",
+      "line": 52,
+      "content": "console.log(`✅ Found trailer: ${trailer.name} (${trailer.site})`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/api/youtube-trailer-search.js",
+      "line": 64,
+      "content": "console.error('Error fetching trailer:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/ask-new.js",
+      "line": 36,
+      "content": "console.error('Failed to load educational lists from database');",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/ask-new.js",
+      "line": 40,
+      "content": "console.error('Error loading educational lists:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/ask-new.js",
+      "line": 108,
+      "content": "console.error('Error asking question:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/ask.js",
+      "line": 36,
+      "content": "console.error('Failed to load lists from database');",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/ask.js",
+      "line": 41,
+      "content": "console.error('Error loading lists:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/ask.js",
+      "line": 157,
+      "content": "console.error('Error loading explore topics:', exploreError);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/ask.js",
+      "line": 166,
+      "content": "console.error('Error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/genius/[...params].js",
+      "line": 346,
+      "content": "console.log('Generated paths count:', paths.length);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/genius/[...params].js",
+      "line": 347,
+      "content": "console.log('Sample paths:', paths.slice(0, 5));",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/genius/[...params].js",
+      "line": 424,
+      "content": "console.log(`Loaded episode ${themeId}-${seriesId}-${episodeId} from JSON file`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/genius/[...params].js",
+      "line": 426,
+      "content": "console.log(`Episode file not found: ${contentPath}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/genius/[...params].js",
+      "line": 429,
+      "content": "console.error(`Error loading episode content for genius ${themeId}-${seriesId}-${episodeId}:`, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/genius/list/[id].js",
+      "line": 43,
+      "content": "console.log(`🔍 Fetching list content for ID: ${id}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/genius/list/[id].js",
+      "line": 125,
+      "content": "console.log(`✅ List content loaded: ${data.list.name}`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/genius/list/[id].js",
+      "line": 128,
+      "content": "console.error('Error fetching list content:', err);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/list/[slug].js",
+      "line": 124,
+      "content": "console.error('Error fetching movie data for', movie.title, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/list/[slug].js",
+      "line": 197,
+      "content": "console.error('Error fetching list:', err);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movie/[id]/cast.js",
+      "line": 37,
+      "content": "console.log('🎬 Fetching credits for movie ID:', tmdbId);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movie/[id]/cast.js",
+      "line": 49,
+      "content": "console.error('Movie credits API error:', response.status, errorText);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movie/[id]/cast.js",
+      "line": 55,
+      "content": "console.log('✅ Credits loaded:', data.totals);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movie/[id]/cast.js",
+      "line": 58,
+      "content": "console.error('Error fetching movie credits:', err);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movie/[id]/cast.js",
+      "line": 336,
+      "content": "console.error('Server-side fetch error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movie/[id].js",
+      "line": 63,
+      "content": "console.log('📄 Loading movie page for TMDB ID:', tmdbId);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movie/[id].js",
+      "line": 75,
+      "content": "console.log('✅ Movie page loaded:', data.movie.title, data.cached ? '(cached)' : '(fresh)');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movie/[id].js",
+      "line": 79,
+      "content": "console.log('🔄 Movie data updated, refreshing page...');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movie/[id].js",
+      "line": 83,
+      "content": "console.log('🔄 Initial TMDB data loaded, updating URL...');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movie/[id].js",
+      "line": 91,
+      "content": "console.log('🔍 Parsed sections:', parsedSections.sections.length);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movie/[id].js",
+      "line": 92,
+      "content": "console.log('🔍 Explore Further topics:', parsedSections.exploreFurther);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movie/[id].js",
+      "line": 93,
+      "content": "console.log('🔍 More Ideas:', parsedSections.moreIdeas);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movie/[id].js",
+      "line": 101,
+      "content": "console.error('❌ Movie page loading failed:', response.status);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movie/[id].js",
+      "line": 107,
+      "content": "console.error('❌ Error loading movie page:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movie/[id].js",
+      "line": 118,
+      "content": "console.log('🎬 Movie page component loaded!', { id, title, year });",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movie/[id].js",
+      "line": 122,
+      "content": "console.log('🔄 Resetting state for new movie:', id);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movie/[id].js",
+      "line": 574,
+      "content": "console.log(`Movie ${tmdbId} not found in database, attempting to create...`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movie/[id].js",
+      "line": 591,
+      "content": "console.error('Static generation fetch error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movie/[id].js",
+      "line": 616,
+      "content": "console.error('Failed to fetch movie IDs for static generation:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movie/[id].js",
+      "line": 628,
+      "content": "console.log(`🚀 Pre-generating ${paths.length} movie pages for instant loading`);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movie/[id].js",
+      "line": 636,
+      "content": "console.error('Static paths generation error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movie-test/[id].js",
+      "line": 69,
+      "content": "console.error('Error loading movie data:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movie-test/[id].js",
+      "line": 95,
+      "content": "console.error('Error analyzing movie:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movies-final.js",
+      "line": 20,
+      "content": "console.error('Error loading platforms from localStorage:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movies-new.js",
+      "line": 21,
+      "content": "console.error('Error loading platforms from localStorage:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/movies-variation-2.js",
+      "line": 21,
+      "content": "console.error('Error loading platforms from localStorage:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/new.js",
+      "line": 42,
+      "content": "console.error('Error fetching new releases:', err);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/person/[id].js",
+      "line": 77,
+      "content": "console.log('🔍 Fetching analysis for:', name, birthYear);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/person/[id].js",
+      "line": 80,
+      "content": "console.log('Request body:', requestBody);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/person/[id].js",
+      "line": 92,
+      "content": "console.error('Person analysis API error:', claudeResponse.status, errorText);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/person/[id].js",
+      "line": 129,
+      "content": "console.error('Error fetching movie data for', movie.title, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/person/[id].js",
+      "line": 168,
+      "content": "console.error('Error fetching movie data for', movie.title, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/person/[id].js",
+      "line": 174,
+      "content": "console.error('Error updating more ideas movie data:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/person/[id].js",
+      "line": 181,
+      "content": "console.log('✅ Person analysis complete for:', name);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/person/[id].js",
+      "line": 184,
+      "content": "console.error('Error fetching person analysis:', err);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/person/[id].js",
+      "line": 631,
+      "content": "console.error('Static generation error:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/recs/[seriesId]/[episodeId].js",
+      "line": 89,
+      "content": "console.error('Error generating explore topics:', exploreError);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/recs/[seriesId]/[episodeId].js",
+      "line": 98,
+      "content": "console.error('Error loading episode:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/recs/series/[seriesId]/[episodeId].js",
+      "line": 44,
+      "content": "console.error('Error generating explore topics:', exploreError);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/recs/series/[seriesId]/[episodeId].js",
+      "line": 540,
+      "content": "console.error(`Error loading episode content for series ${seriesId} episode ${episodeId}:`, error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/recs/series/[seriesId]/index.js",
+      "line": 166,
+      "content": "console.error('Error loading series data:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/recs/series/index.js",
+      "line": 138,
+      "content": "console.error('Error loading series data:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/recs-new.js",
+      "line": 39,
+      "content": "console.error('Error initializing Movies home page:', error)",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/recs-redesign.js",
+      "line": 42,
+      "content": "console.error('Error initializing Movies home page:', error)",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/recs-supabase.js",
+      "line": 94,
+      "content": "console.error('Supabase query error:', error)",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/recs-supabase.js",
+      "line": 109,
+      "content": "console.error('Server-side fetch error:', error)",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/test/people-linking.js",
+      "line": 38,
+      "content": "console.log('Test people loaded:', getEpisodePeopleSummary(people));",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/test/people-linking.js",
+      "line": 40,
+      "content": "console.error('Failed to load people:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/you-redesign.js",
+      "line": 47,
+      "content": "console.log('All user data cleared');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/you-redesign.js",
+      "line": 63,
+      "content": "console.error('Error loading platforms from localStorage:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/you-redesign.js",
+      "line": 78,
+      "content": "console.error('Error loading hearted movies from localStorage:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/you-redesign.js",
+      "line": 93,
+      "content": "console.error('Error loading bookmarked movies from localStorage:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/you.js",
+      "line": 47,
+      "content": "console.log('All user data cleared');",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/you.js",
+      "line": 59,
+      "content": "console.log('Loaded platforms from localStorage:', platforms);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/you.js",
+      "line": 64,
+      "content": "console.error('Error loading platforms from localStorage:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/you.js",
+      "line": 75,
+      "content": "console.log('Loaded hearted movies from localStorage:', movies);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/you.js",
+      "line": 80,
+      "content": "console.error('Error loading hearted movies from localStorage:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/you.js",
+      "line": 91,
+      "content": "console.log('Loaded bookmarked movies from localStorage:', movies);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/you.js",
+      "line": 96,
+      "content": "console.error('Error loading bookmarked movies from localStorage:', error);",
+      "type": "error",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    },
+    {
+      "file": "pages/you.js",
+      "line": 159,
+      "content": "console.log('Saved platforms to localStorage:', selectedPlatforms);",
+      "type": "log",
+      "shouldPreserve": true,
+      "isCritical": false,
+      "risk": "medium"
+    }
+  ],
+  "summary": {
+    "canSafelyRemove": 6,
+    "needsReview": 3,
+    "shouldPreserve": 527,
+    "estimatedPerformanceGain": "0.6%"
+  }
+}

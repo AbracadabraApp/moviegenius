@@ -1,0 +1,4 @@
+# Redirects for Railway deployment
+# Root redirects to recs, but preserve movie pages for nuclear plan
+/    /recs    301
+# Note: /movie/* paths should NOT redirect - they are static pages

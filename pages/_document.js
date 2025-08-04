@@ -5,9 +5,9 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        {/* Web app optimized for desktop and web browsers */}
+        <link rel="icon" href="/favicon.ico" />
+        <script src="/js/nextjs-test-framework.js" async></script>
       </Head>
       <body>
         <Main />

@@ -1,6 +1,6 @@
 /**
  * MovieHeader Component
- * 
+ *
  * Large format movie header for detail pages with flat design.
  * Similar functionality to MediaCard but with different visual presentation.
  */
@@ -9,13 +9,13 @@ import { useState, useEffect } from 'react';
 import { FavoritesManager } from './FavoritesManager';
 // import useStreamingData from '../hooks/useStreamingData'; // Stubbed out
 
-export default function MovieHeader({ 
-  title, 
-  year, 
-  initialSlug, 
-  initialPoster, 
+export default function MovieHeader({
+  title,
+  year,
+  initialSlug,
+  initialPoster,
   initialStreaming,
-  tmdbId 
+  tmdbId,
 }) {
   const [hearted, setHearted] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
@@ -23,17 +23,17 @@ export default function MovieHeader({
   const [poster, setPoster] = useState(initialPoster || '/images/placeholder-poster.jpg');
 
   // Streaming feature stubbed out - will be replaced with real provider
-  // const { 
-  //   hasStreaming, 
-  //   getDisplayText, 
+  // const {
+  //   hasStreaming,
+  //   getDisplayText,
   //   primaryService,
   //   freeOptions,
-  //   isLoading: streamingLoading 
+  //   isLoading: streamingLoading
   // } = useStreamingData(title, year, initialStreaming);
 
   // Generate media ID from title and year
   const mediaId = `${title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${year}`;
-  
+
   // Movie data object for FavoritesManager
   const movieData = { title, year, slug, poster, id: mediaId };
 
@@ -73,19 +73,17 @@ export default function MovieHeader({
         <img src={poster} alt={`Poster for ${title}`} style={styles.largePoster} />
         <div style={styles.textContainer}>
           <div style={styles.titleColumn}>
-            <div style={styles.title}>{title}</div>
-            <div style={styles.year}>({year})</div>
+            <div style={styles.title}>b {title}</div>
+            <div style={styles.year}>b ({year})</div>
           </div>
           <div style={styles.slug}>{slug}</div>
         </div>
       </div>
-      
+
       {/* Bottom row: streaming left, icons right - positioned below poster/text */}
       <div style={styles.bottomRow}>
         <div style={styles.streamingInfo}>
-          <span style={styles.streamingText}>
-            Streaming on TBD
-          </span>
+          <span style={styles.streamingText}>Streaming on TBD</span>
         </div>
         <div style={styles.iconRow}>
           <button
@@ -131,7 +129,8 @@ const styles = {
     padding: '16px', // Same as MediaCard container padding
     width: '100%',
     boxSizing: 'border-box',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     // No shadows, borders, or rounded corners - flat design
   },
   contentRow: {
@@ -142,7 +141,7 @@ const styles = {
     marginBottom: '12px',
   },
   largePoster: {
-    width: '150px',  // 1.5x larger than MediaCard (100px -> 150px)
+    width: '150px', // 1.5x larger than MediaCard (100px -> 150px)
     height: '225px', // 1.5x larger than MediaCard (150px -> 225px)
     objectFit: 'cover',
     borderRadius: '12px', // Keep some rounding on the poster itself

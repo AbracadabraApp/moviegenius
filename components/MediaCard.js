@@ -1,36 +1,31 @@
 /**
  * MediaCard Component - 🔒 LOCKED COMPONENT 🔒
- * 
- * ⚠️  CRITICAL: This component is used throughout the entire application.
- * ⚠️  Changes to this component can break multiple pages and features.
- * ⚠️  DO NOT MODIFY without approval and thorough testing.
- * ⚠️  See components/MediaCard.LOCK for change protocol.
- * 
- * Self-contained movie card with intelligent data fetching and caching.
- * Handles its own streaming data, slug enhancement, and favorites management.
- * Provides consistent functionality across all pages.
- * 
- * @component
- * @version STABLE-2025-06-06
  * @locked true
+ *
+ * Self-contained movie card with intelligent data fetching and caching.
+ * Handles its own streaming data, poster enhancement, and favorites management.
+ * NO slug fallback - Claude slugs only, rejects TMDB plot summaries.
+ * Provides consistent functionality across all pages.
+ *
+ * @component
  * @example
- * <MediaCard 
- *   title="The Matrix" 
- *   year={1999} 
- *   initialSlug="Reality is a simulation" 
- *   initialPoster="/images/matrix.jpg" 
+ * <MediaCard
+ *   title="The Matrix"
+ *   year={1999}
+ *   initialSlug="Reality is a simulation"
+ *   initialPoster="/images/matrix.jpg"
  * />
  */
-import { Heart, Bookmark } from 'lucide-react';
+import { Check, Plus } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
-import Image from 'next/image';
 import { FavoritesManager } from './FavoritesManager';
+import { getPerformanceMonitor } from '../lib/performance-monitor';
+import MoviePlaceholder from './MoviePlaceholder';
 // import useStreamingData from '../hooks/useStreamingData'; // Stubbed out
 
 /**
  * MediaCard - Self-contained interactive movie card component
- * 
+ *
  * @param {Object} props
  * @param {string} props.title - Movie title (required)
  * @param {number} props.year - Release year (required)
@@ -40,18 +35,50 @@ import { FavoritesManager } from './FavoritesManager';
  * @param {boolean} props.isDetailPage - Whether this is on a detail page (optional)
  * @param {number} props.tmdbId - TMDB ID for navigation (optional)
  */
-export default function MediaCard({ 
-  title, 
-  year, 
-  initialSlug, 
-  initialPoster, 
-  initialStreaming, 
+export default function MediaCard({
+  title,
+  year,
+  initialSlug,
+  initialPoster,
+  initialStreaming,
   isDetailPage = false,
-  tmdbId 
+  tmdbId,
 }) {
   const [hearted, setHearted] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
-  const [slug, setSlug] = useState(initialSlug || '');
+  const performanceMonitor = getPerformanceMonitor();
+  
+  // Performance tracking disabled for stability
+  // useEffect(() => {
+  //   const renderStart = performance.now();
+  //   performanceMonitor.trackMetric('mediacard_render_start', renderStart, {
+  //     title,
+  //     year,
+  //     hasSlug: !!initialSlug,
+  //     hasPoster: !!initialPoster,
+  //     tmdbId
+  //   });
+  //   
+  //   return () => {
+  //     // Track render completion on unmount
+  //     const renderEnd = performance.now();
+  //     performanceMonitor.trackMetric('mediacard_render_complete', renderEnd, {
+  //       title,
+  //       year,
+  //       renderDuration: renderEnd - renderStart
+  //     });
+  //   };
+  // }, [title, year]);
+  // 🔒 LOCKED: TMDB plot summary protection - only use valid Claude slugs
+  const isValidClaudeSlug =
+    initialSlug &&
+    !initialSlug.includes('Plot:') && // Reject TMDB plot summaries
+    !initialSlug.includes('Overview:') && // Reject TMDB overviews
+    !initialSlug.includes('Synopsis:') && // Reject TMDB synopses
+    !initialSlug.includes('Summary:'); // Reject other summary formats
+
+  const [slug, setSlug] = useState(isValidClaudeSlug ? initialSlug : '');
+  
   const [poster, setPoster] = useState(initialPoster || '/images/placeholder-poster.jpg');
   const [movieTmdbId, setMovieTmdbId] = useState(tmdbId);
 
@@ -74,69 +101,55 @@ export default function MediaCard({
     }
   }, [initialSlug]);
   const [isEnhancing, setIsEnhancing] = useState(false);
-  const router = useRouter();
 
   // Streaming feature stubbed out - will be replaced with real provider
-  // const { 
-  //   hasStreaming, 
-  //   getDisplayText, 
+  // const {
+  //   hasStreaming,
+  //   getDisplayText,
   //   primaryService,
   //   freeOptions,
-  //   isLoading: streamingLoading 
+  //   isLoading: streamingLoading
   // } = useStreamingData(title, year, initialStreaming);
 
   // Generate media ID from title and year
   const mediaId = `${title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${year}`;
-  
+
   // Movie data object for FavoritesManager
   const movieData = { title, year, slug, poster, id: mediaId };
 
-  // Enhanced data fetching for missing slug or poster
+  // 🔒 PROTECTED: Enhanced data fetching for missing poster only
+  // Claude-only slug approach: No fallback slug fetching, only show Claude-provided slugs
   useEffect(() => {
     const enhanceMovieData = async () => {
-      // Check if slug is actually good (not URL-formatted or corrupted)
-      const isGoodSlug = slug && slug.length <= 35 && slug.length > 5 && !slug.includes('-') && slug !== slug.toLowerCase();
-      const hasGoodPoster = poster !== '/images/placeholder-poster.jpg';
-      
-      // Skip if we have both good slug and poster, or if already enhancing
-      if (isGoodSlug && hasGoodPoster) {
+      // 🔒 LOCKED: TMDB plot summary protection - reject verbose technical descriptions
+      const isValidClaudeSlug =
+        slug &&
+        slug !== '' &&
+        !slug.includes('Plot:') && // Reject TMDB plot summaries
+        !slug.includes('Overview:') && // Reject TMDB overviews
+        !slug.includes('Synopsis:') && // Reject TMDB synopses
+        !slug.includes('Summary:'); // Reject other summary formats
+
+      // Skip if we have poster, or if already enhancing
+      // NO slug fallback - Claude slugs only
+      if (poster !== '/images/placeholder-poster.jpg') {
         return;
       }
-      
+
       if (isEnhancing) return;
       setIsEnhancing(true);
-      
+
       try {
-        let newSlug = slug;
         let newPoster = poster;
-        
-        // Fetch enhanced data if slug is missing or corrupted
-        if (!isGoodSlug) {
-          console.log('Fetching enhanced slug for:', title, year);
-          const response = await fetch('/api/enhance-movie-data', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ title, year, needsSlug: true, needsPoster: false })
-          });
-          
-          if (response.ok) {
-            const data = await response.json();
-            if (data.slug) {
-              newSlug = data.slug;
-              setSlug(data.slug);
-            }
-          }
-        }
-        
+
         // Fetch TMDB poster if using placeholder
         if (poster === '/images/placeholder-poster.jpg') {
-          console.log('Fetching TMDB poster for:', title, year);
           const response = await fetch('/api/tmdb-poster', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ title, year })
+            body: JSON.stringify({ title, year }),
           });
-          
+
           if (response.ok) {
             const data = await response.json();
             if (data.poster) {
@@ -148,37 +161,34 @@ export default function MediaCard({
             }
           }
         }
-        
-        // Cache the enhanced data back to JSON files if we got new data
-        if ((newSlug !== slug && newSlug) || (newPoster !== poster && newPoster !== '/images/placeholder-poster.jpg')) {
+
+        // Cache the enhanced poster data if we got new poster
+        if (newPoster !== poster && newPoster !== '/images/placeholder-poster.jpg') {
           try {
             await fetch('/api/cache-movie-data', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ 
-                title, 
-                year, 
-                slug: newSlug, 
+              body: JSON.stringify({
+                title,
+                year,
                 poster: newPoster,
-                dataSource: 'afi100' // For now, assume AFI100. Could be made dynamic.
-              })
+                dataSource: 'afi100', // For now, assume AFI100. Could be made dynamic.
+              }),
             });
-            console.log('Cached enhanced data for:', title, year);
           } catch (cacheError) {
             console.warn('Failed to cache enhanced data:', cacheError);
             // Don't fail the whole operation if caching fails
           }
         }
-        
       } catch (error) {
         console.error('Error enhancing movie data:', error);
       } finally {
         setIsEnhancing(false);
       }
     };
-    
+
     enhanceMovieData();
-  }, [title, year, slug, poster, isEnhancing]);
+  }, [title, year, poster, isEnhancing]);
 
   // Load initial state from localStorage
   useEffect(() => {
@@ -197,83 +207,96 @@ export default function MediaCard({
     return () => window.removeEventListener('moviesUpdated', handleMoviesUpdate);
   }, [mediaId]);
 
-  const handleCardClick = (e) => {
+  const handleCardClick = e => {
     // Don't navigate if clicking on action buttons or if this is a detail page
-    if (e.target.closest('button') || isDetailPage) return;
-    
-    // Immediate navigation without preventDefault - let browser handle naturally
-    if (movieTmdbId) {
-      router.push(`/movie/${movieTmdbId}`);
-    } else {
-      console.warn('MediaCard: Missing TMDB ID, using fallback navigation for:', title, year);
-      // Fallback to media page using title-year format
-      const fallbackId = `${title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${year}`;
-      router.push(`/media/${fallbackId}`);
+    if (e.target.closest('button') || isDetailPage) {
+      e.preventDefault();
+      return;
     }
+
+    // 🔒 LOCKED: NO fallback navigation - this enforces TMDB-first architecture
+    // For href-based navigation, prevent default if no TMDB ID available
+    if (!movieTmdbId) {
+      e.preventDefault();
+      console.warn('MediaCard: Missing TMDB ID, cannot navigate. No fallback allowed.');
+      // NO fallback navigation - enforces data quality and TMDB-first architecture
+    }
+    // If movieTmdbId exists, let browser handle href navigation naturally
   };
 
   return (
-    <article
+    <a
+      href={movieTmdbId ? `/movie/${movieTmdbId}` : '#'}
       style={styles.card}
       role="article"
       onClick={handleCardClick}
-      onMouseDown={(e) => {
+      onMouseDown={e => {
         // Immediate visual feedback on click
         e.currentTarget.style.transform = 'translateY(1px) scale(0.98)';
       }}
-      onMouseUp={(e) => {
+      onMouseUp={e => {
         e.currentTarget.style.transform = 'translateY(-2px) scale(1)';
       }}
-      onMouseEnter={(e) => {
+      onMouseEnter={e => {
         e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 0, 0, 0.30)';
         e.currentTarget.style.transform = 'translateY(-2px)';
       }}
-      onMouseLeave={(e) => {
+      onMouseLeave={e => {
         e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.20)';
         e.currentTarget.style.transform = 'translateY(0)';
       }}
     >
-      <div style={styles.posterContainer}>
-        <Image
-          src={poster}
-          alt={`Poster for ${title}`}
-          width={100}
-          height={150}
-          style={styles.poster}
-          placeholder="blur"
-          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8A0XqoC0WAk0eO0ZJZjMN8CvfaQhCEKdlOqmFCKNL5SqbTcLiWJKMpXa0Qk5WkGOyqmJN9V4ZDJ1ioqWk+RJ/BCHZTZV5FqPE="
-          sizes="100px"
-        />
-      </div>
-      <div style={styles.textContainer}>
-        <div style={styles.header}>
-          <div style={styles.title}>{title}</div>
-          <div style={styles.year}>({year})</div>
-        </div>
-        <div style={styles.slug}>{slug}</div>
-        
-        {/* Bottom row: streaming left, icons right */}
-        <div style={styles.bottomRow}>
-          <div style={styles.streamingInfo}>
-            <span style={styles.streamingText}>
-              Streaming on TBD
-            </span>
+      {/* Row 1: Poster + Text Content */}
+      <div style={styles.topRow}>
+        {poster === '/images/placeholder-poster.jpg' ? (
+          <div style={styles.poster}>
+            <MoviePlaceholder title={title} year={year} compact={true} />
           </div>
-          <div style={styles.iconRow}>
+        ) : (
+          <img src={poster} alt={`Poster for ${title}`} style={styles.poster} />
+        )}
+        <div style={styles.textContainer}>
+          <div style={styles.header}>
+            <div style={styles.title}>{title}</div>
+          </div>
+          <div style={styles.year}>({year})</div>
+          <div style={styles.slug}>{slug}</div>
+        </div>
+      </div>
+
+      {/* Row 2: Streaming + Actions */}
+      <div style={styles.bottomRow}>
+        <div style={styles.streamingInfo}>
+          {initialStreaming && (
+            <span style={styles.streamingText}>Streaming on {initialStreaming}</span>
+          )}
+        </div>
+        <div style={styles.iconRow}>
           <button
             onClick={() => {
               const newState = FavoritesManager.toggleHeart(movieData);
               setHearted(newState);
             }}
             style={styles.iconButton}
-            aria-label={hearted ? 'Remove from favorites' : 'Add to favorites'}
+            aria-label={hearted ? 'Mark as unseen' : 'Mark as seen'}
             role="button"
           >
-            <Heart
-              size={18}
-              color={hearted ? '#ef4444' : '#374151'}
-              fill={hearted ? '#ef4444' : 'none'}
-            />
+            <div style={styles.iconWithTextHorizontal}>
+              <Check
+                size={16}
+                color={hearted ? '#374151' : '#9ca3af'}
+                strokeWidth={hearted ? 2.5 : 1.5}
+              />
+              <span
+                style={{
+                  ...styles.iconLabel,
+                  color: hearted ? '#374151' : '#9ca3af',
+                  fontWeight: hearted ? '600' : '400',
+                }}
+              >
+                Seen
+              </span>
+            </div>
           </button>
           <button
             onClick={() => {
@@ -281,19 +304,25 @@ export default function MediaCard({
               setBookmarked(newState);
             }}
             style={styles.iconButton}
-            aria-label={bookmarked ? 'Remove bookmark' : 'Bookmark movie'}
+            aria-label={bookmarked ? 'Remove from list' : 'Add to list'}
             role="button"
           >
-            <Bookmark
-              size={18}
-              color={bookmarked ? '#6b7280' : '#374151'}
-              fill={bookmarked ? '#6b7280' : 'none'}
-            />
+            <div style={styles.iconWithTextHorizontal}>
+              <Plus size={16} color={bookmarked ? '#374151' : '#9ca3af'} />
+              <span
+                style={{
+                  ...styles.iconLabel,
+                  color: bookmarked ? '#374151' : '#9ca3af',
+                  fontWeight: bookmarked ? '600' : '400',
+                }}
+              >
+                Add
+              </span>
+            </div>
           </button>
-          </div>
         </div>
       </div>
-    </article>
+    </a>
   );
 }
 
@@ -301,45 +330,45 @@ const styles = {
   card: {
     position: 'relative',
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'column',
     borderRadius: '12px',
     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.20)',
     padding: '12px',
     backgroundColor: 'white',
-    alignItems: 'flex-start',
     width: '100%',
     maxWidth: '100%', // Prevent expansion beyond container
     boxSizing: 'border-box', // Include padding in width calculation
     transition: 'box-shadow 0.15s ease, transform 0.1s ease',
     cursor: 'pointer',
     marginBottom: '8px',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    // Reset link styles for proper card appearance
+    textDecoration: 'none',
+    color: 'inherit',
   },
-  posterContainer: {
-    position: 'relative',
-    width: '100px',
-    height: '150px',
-    borderRadius: '8px',
-    marginRight: '12px',
-    overflow: 'hidden',
+  topRow: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    marginBottom: '2px',
   },
   poster: {
+    width: '125px',
+    height: '188px',
     objectFit: 'cover',
     borderRadius: '8px',
+    marginRight: '12px',
+    flexShrink: 0, // Prevent poster from shrinking
   },
   textContainer: {
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
-    minHeight: '150px', // Restored original working height
-    position: 'relative',
     minWidth: 0, // Allow flex child to shrink below content size
     overflow: 'hidden', // Prevent text overflow
   },
   header: {
-    display: 'flex',
-    flexDirection: 'row',
-    gap: '6px',
     fontSize: '18px',
     lineHeight: '1.2',
     fontFamily: 'inherit',
@@ -351,9 +380,12 @@ const styles = {
     color: '#000',
   },
   year: {
+    fontSize: '14px',
     color: '#666',
     fontWeight: 'normal',
     fontFamily: 'inherit',
+    marginTop: '2px',
+    marginBottom: '2px',
   },
   slug: {
     fontSize: '14px',
@@ -365,8 +397,7 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginTop: 'auto', // Pushes to bottom of flex container
-    paddingTop: '8px',
+    paddingTop: '2px',
   },
   streamingInfo: {
     flex: 1,
@@ -391,11 +422,28 @@ const styles = {
     background: 'none',
     border: 'none',
     cursor: 'pointer',
-    padding: '4px',
+    padding: '4px 6px',
     borderRadius: '4px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     transition: 'background-color 0.2s ease',
+  },
+  iconWithText: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '2px',
+  },
+  iconWithTextHorizontal: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: '4px',
+  },
+  iconLabel: {
+    fontSize: '11px',
+    fontFamily: 'inherit',
+    lineHeight: '1',
   },
 };

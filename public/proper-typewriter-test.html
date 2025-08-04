@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proper Typewriter Effect</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #0a0a0a;
+            color: #00ff00;
+            line-height: 1.6;
+        }
+        
+        .movie-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .movie-title {
+            font-size: 2.5em;
+            margin: 0;
+            color: #fff;
+        }
+        
+        .terminal-container {
+            background: #111;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            min-height: 400px;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .analysis-text {
+            font-size: 1.1em;
+            line-height: 1.8;
+            white-space: pre-wrap;
+        }
+        
+        .cursor {
+            display: inline-block;
+            background: #00ff00;
+            color: #0a0a0a;
+            width: 8px;
+            height: 1.2em;
+            animation: blink 1s infinite;
+            margin-left: 1px;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        
+        .status-line {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        
+        .start-button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1em;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .start-button:hover {
+            background: #0056b3;
+        }
+        
+        .start-button:disabled {
+            background: #666;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="movie-header">
+        <h1 class="movie-title">2001: A Space Odyssey</h1>
+    </div>
+    
+    <button id="startButton" class="start-button">Start Analysis</button>
+    
+    <div class="terminal-container">
+        <div class="status-line" id="statusLine"></div>
+        <div class="analysis-text" id="analysisText"></div>
+        <span class="cursor" id="cursor">█</span>
+    </div>
+
+    <script>
+        const startButton = document.getElementById('startButton');
+        const analysisText = document.getElementById('analysisText');
+        const cursor = document.getElementById('cursor');
+        const statusLine = document.getElementById('statusLine');
+        
+        let isTyping = false;
+        
+        startButton.addEventListener('click', startAnalysis);
+        
+        async function startAnalysis() {
+            if (isTyping) return;
+            
+            isTyping = true;
+            startButton.disabled = true;
+            startButton.textContent = 'Analyzing...';
+            
+            // Clear previous content
+            analysisText.textContent = '';
+            cursor.style.display = 'inline-block';
+            
+            try {
+                // Phase 1: Show "ANALYSIS STARTING" with animated dots
+                await typeStartupMessage();
+                
+                // Phase 2: Fetch and type the analysis
+                await fetchAndTypeAnalysis();
+                
+            } catch (error) {
+                console.error('❌ Analysis failed:', error);
+                statusLine.textContent = '❌ Analysis failed: ' + error.message;
+                cursor.style.display = 'none';
+            }
+            
+            isTyping = false;
+            startButton.disabled = false;
+            startButton.textContent = 'Start Analysis';
+        }
+        
+        async function typeStartupMessage() {
+            // Type "ANALYSIS STARTING"
+            const startupMsg = "ANALYSIS STARTING";
+            
+            for (let i = 0; i < startupMsg.length; i++) {
+                analysisText.textContent += startupMsg[i];
+                await sleep(80); // Slower for startup message
+            }
+            
+            // Animate dots
+            for (let dots = 0; dots < 3; dots++) {
+                for (let i = 0; i < 3; i++) {
+                    analysisText.textContent += '.';
+                    await sleep(300);
+                }
+                // Clear dots and restart
+                if (dots < 2) {
+                    analysisText.textContent = analysisText.textContent.slice(0, -3);
+                    await sleep(200);
+                }
+            }
+            
+            // Clear startup message and prepare for analysis
+            await sleep(500);
+            analysisText.textContent = '';
+            statusLine.textContent = 'Generating analysis...';
+        }
+        
+        async function fetchAndTypeAnalysis() {
+            console.log('🚀 Fetching analysis...');
+            
+            // For demo, use the static content from our API
+            const response = await fetch('/api/streaming-poc');
+            
+            if (!response.body) {
+                throw new Error('No response body received');
+            }
+            
+            const reader = response.body.getReader();
+            let fullText = '';
+            
+            // First, collect all the streamed content
+            while (true) {
+                const { done, value } = await reader.read();
+                
+                if (done) break;
+                
+                const chunk = new TextDecoder().decode(value);
+                
+                if (chunk.includes('__STREAMING_COMPLETE__')) {
+                    break;
+                } else {
+                    fullText += chunk;
+                }
+            }
+            
+            console.log('📝 Full text received, starting typewriter effect...');
+            statusLine.textContent = 'Analysis complete - displaying results...';
+            
+            // Now type it out character by character
+            for (let i = 0; i < fullText.length; i++) {
+                analysisText.textContent += fullText[i];
+                
+                // Variable speed: slower for punctuation, faster for spaces
+                let delay = 25; // Base speed
+                
+                if (fullText[i] === '.' || fullText[i] === '!' || fullText[i] === '?') {
+                    delay = 150; // Pause after sentences
+                } else if (fullText[i] === ',') {
+                    delay = 100; // Brief pause for commas
+                } else if (fullText[i] === ' ') {
+                    delay = 15; // Fast for spaces
+                }
+                
+                await sleep(delay);
+            }
+            
+            // Analysis complete
+            cursor.style.display = 'none';
+            statusLine.textContent = '✅ Analysis complete';
+            console.log('✅ Typewriter effect complete');
+        }
+        
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+    </script>
+</body>
+</html>

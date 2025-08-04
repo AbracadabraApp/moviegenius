@@ -1,0 +1,173 @@
+{
+  "system": "genius",
+  "themeId": 2,
+  "seriesId": 2,
+  "episodeId": 6,
+  "theme": {
+    "id": 2,
+    "title": "Directors",
+    "description": "Visionary filmmakers and their personal cinema",
+    "slug": "directors"
+  },
+  "series": {
+    "id": 2,
+    "title": "International Masters",
+    "description": "Global cinematic visionaries"
+  },
+  "episode": {
+    "id": 6,
+    "title": "Bong Joon-ho's Genre Mastery",
+    "subtitle": "Korean social commentary"
+  },
+  "content": {
+    "opener": "Bong Joon-ho's masterful ability to weave incisive social commentary into genre-bending narratives has revolutionized both Korean and global cinema, culminating in his historic Oscar sweep with \"Parasite.\"",
+    "sections": [
+      {
+        "type": "text",
+        "content": "Bong's emergence in the late 1990s coincided with the Korean New Wave, a period of increased creative freedom following decades of government censorship. His debut feature <a href=\"/movie/21531\" class=\"movie-title\" data-tmdb-id=\"21531\">Barking Dogs Never Bite</a> (2000) established his signature approach of blending dark comedy with social criticism, examining class disparities in urban South Korea through an absurdist lens. The film's innovative use of apartment complex architecture as both setting and metaphor for social hierarchy would later evolve into the vertical spaces of \"Parasite.\" This early work demonstrated Bong's ability to craft multilayered narratives that function both as entertaining genre pieces and as sharp critiques of contemporary society."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Barking Dogs Never Bite",
+            "year": 2000,
+            "slug": "A frustrated academic pursues barking dogs in his apartment complex, revealing class tensions and urban alienation",
+            "streaming": "Available on Arrow",
+            "tmdb_id": 21531,
+            "poster_url": "https://image.tmdb.org/t/p/w500/6jTxgTN3rS2p1DH36IsBsVpdF5e.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "The Monster Movie as Social Metaphor"
+      },
+      {
+        "type": "text",
+        "content": "<a href=\"/movie/1255\" class=\"movie-title\" data-tmdb-id=\"1255\">The Host</a> (2006) marked Bong's international breakthrough, reinventing the monster movie genre while delivering a scathing critique of American military presence in South Korea and governmental incompetence. The film's creature, emerging from Seoul's Han River after American military personnel dump toxic chemicals, becomes a catalyst for examining family dynamics, environmental degradation, and political corruption. Bong's technical mastery shines through in the seamless integration of CGI with practical effects, while cinematographer Kim Hyung-koo's wide-angle compositions emphasize the urban landscape as both sanctuary and threat."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Host",
+            "year": 2006,
+            "slug": "A family battles a mutant creature while confronting government corruption and American military influence",
+            "streaming": "Hulu",
+            "tmdb_id": 1255,
+            "poster_url": "https://image.tmdb.org/t/p/w500/qJc9na2UN7TvKqDWkxBkocPUUjT.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "<a href=\"/movie/698885\" class=\"movie-title\" data-tmdb-id=\"698885\">Mother</a> (2009) showcased Bong's ability to subvert genre expectations while delving deeper into Korean social issues. This noir-tinged mystery follows a mother's desperate investigation to clear her mentally challenged son of murder charges. Through this premise, Bong examines the Korean education system's intense pressure, societal treatment of the disabled, and the complex dynamics of maternal devotion. The film's careful composition and use of negative space, captured by cinematographer Hong Kyung-pyo, creates a visual language that emphasizes isolation and psychological tension."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Mother",
+            "year": 2009,
+            "slug": "A determined mother investigates a murder to prove her son's innocence",
+            "streaming": "Available on Criterion Channel",
+            "tmdb_id": 698885,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lkcYWbWC2hlOyiaC649Br4qLjoW.jpg"
+          }
+        ]
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "With <a href=\"/movie/110415\" class=\"movie-title\" data-tmdb-id=\"110415\">Snowpiercer</a> (2013), Bong made his English-language debut while maintaining his thematic focus on class warfare and environmental catastrophe. Based on the French graphic novel \"Le Transperceneige,\" the film uses its post-apocalyptic train setting as an allegory for global capitalism, with each car representing different social classes. The linear progression through the train becomes a literal visualization of class struggle, while Bong's collaboration with cinematographer Hong Kyung-pyo creates distinct visual identities for each social stratum. The film's international cast and production demonstrated Bong's ability to translate his concerns to a global context."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Snowpiercer",
+            "year": 2013,
+            "slug": "Class warfare erupts on a train carrying the last survivors of humanity",
+            "streaming": "Netflix",
+            "tmdb_id": 110415,
+            "poster_url": "https://image.tmdb.org/t/p/w500/nzccOvhrLGI0nvAknCEAk8bchD9.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "<a href=\"/movie/387426\" class=\"movie-title\" data-tmdb-id=\"387426\">Okja</a> (2017) continued Bong's exploration of global themes while incorporating elements of fantasy and adventure. The story of a young girl trying to save her genetically modified super-pig from a multinational corporation allowed Bong to address animal rights, corporate greed, and environmental exploitation. The film's seamless blend of practical and digital effects, coupled with Darius Khondji's cinematography, creates a visual style that shifts between pastoral beauty and corporate sterility, reinforcing the narrative's thematic concerns."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Okja",
+            "year": 2017,
+            "slug": "A girl fights to save her beloved super-pig from a multinational corporation",
+            "streaming": "Netflix",
+            "tmdb_id": 387426,
+            "poster_url": "https://image.tmdb.org/t/p/w500/lHBYG2NcBMW7UpFL4rSCpsgvz4m.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The culmination of Bong's thematic and stylistic development arrived with <a href=\"/movie/496243\" class=\"movie-title\" data-tmdb-id=\"496243\">Parasite</a> (2019), which made history as the first non-English language film to win the Academy Award for Best Picture. The film's intricate examination of class warfare through the interconnected lives of two families represents the perfect synthesis of Bong's career-long preoccupations. Working again with cinematographer Hong Kyung-pyo, Bong creates a visual language where architecture becomes character, with the Park family's modernist home serving as both setting and symbol of class division."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Parasite",
+            "year": 2019,
+            "slug": "Two families become entangled in a complex web of class warfare and deception",
+            "streaming": "Hulu",
+            "tmdb_id": 496243,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
+          }
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Memories of Murder",
+          "year": 2003,
+          "slug": "A true-crime investigation becomes a meditation on South Korea's authoritarian past",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 11423,
+          "poster_url": "https://image.tmdb.org/t/p/w500/rxndHKwUeFgTHx0PuuhZS4dMtrB.jpg"
+        },
+        {
+          "title": "Sea Fog",
+          "year": 2014,
+          "slug": "Bong-produced maritime thriller examining human trafficking and desperation",
+          "streaming": "Amazon Prime",
+          "tmdb_id": 272691,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gnqv8hSNKfNZXKsJXMxJocDVGK7.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-17T23:02:47.417Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-17T23:02:47.417Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-2-directors/series-2-international-masters//6-bong-joon-ho-s-genre-mastery.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:28.258Z",
+    "hasLinks": true,
+    "linksAdded": 6,
+    "tier": "tier2_link_only"
+  }
+}

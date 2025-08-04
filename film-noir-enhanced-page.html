@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The L Word Mississippi: Hate the Sin (2014) - Film Noir Enhanced</title>
+    <style>
+        /* Film Noir + New Yorker Magazine Enhancement */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a; /* Deeper black for film noir */
+            background-color: #fefdf8; /* Cream instead of pure white */
+        }
+        
+        /* Exact PhoneFrame dimensions preserved */
+        .page-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f3f4f6;
+            min-height: 100vh;
+            padding: 20px;
+            width: 100vw;
+            max-width: 100vw;
+            overflow-x: hidden;
+        }
+        
+        .phone-frame {
+            width: 375px;
+            height: 667px;
+            background-color: #000000;
+            border-radius: 24px;
+            border: 4px solid #9ca3af;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .screen {
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        
+        .content {
+            flex: 1;
+            overflow-y: scroll;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            padding-bottom: 120px;
+            background: linear-gradient(180deg, #fefdf8 0%, #faf9f2 100%); /* Subtle cream gradient */
+        }
+        
+        .content::-webkit-scrollbar {
+            display: none;
+        }
+        
+        /* Search Bar - enhanced with gold accent */
+        .search-container {
+            padding: 20px 20px 12px 20px; /* More generous spacing */
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); /* Film noir gradient */
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 14px 18px;
+            border: 2px solid #d4af37; /* Your gold as primary accent */
+            border-radius: 6px;
+            font-size: 16px;
+            font-family: inherit;
+            background: #fefdf8;
+            color: #1a1a1a;
+            transition: all 0.2s ease;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: #b8941f; /* Deeper gold on focus */
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+        
+        /* MovieHeaderLarge - more sophisticated */
+        .movie-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 24px 20px 20px 20px; /* More breathing room */
+            width: 100%;
+            box-sizing: border-box;
+            font-family: inherit;
+            position: relative;
+            background: linear-gradient(180deg, #fefdf8 0%, #faf9f2 100%);
+        }
+        
+        .action-bar-container {
+            position: absolute;
+            right: 20px;
+            bottom: 120px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 16px 6px;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.95) 0%, rgba(184, 148, 31, 0.95) 100%); /* Gold gradient */
+            backdrop-filter: blur(12px);
+            border-radius: 12px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(212, 175, 55, 0.2);
+            z-index: 1000;
+        }
+        
+        .action-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+        
+        .icon-with-text {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-direction: column;
+        }
+        
+        .icon-label {
+            font-size: 11px;
+            line-height: 1;
+            text-align: center;
+            color: #1a1a1a; /* Dark text on gold background */
+            font-weight: 500;
+        }
+        
+        .poster-container {
+            display: flex;
+            justify-content: center; /* Center the poster for more editorial feel */
+            margin-bottom: 20px; /* More space */
+            padding: 0 24px; /* Generous margins */
+        }
+        
+        .large-poster {
+            width: 280px; /* Slightly smaller, more refined */
+            height: 380px;
+            object-fit: cover;
+            border-radius: 8px; /* Less rounded, more classic */
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(212, 175, 55, 0.1); /* Film noir shadow with gold hint */
+            border: 1px solid rgba(212, 175, 55, 0.2); /* Subtle gold border */
+        }
+        
+        .title-container {
+            display: flex;
+            flex-direction: column; /* Stack title and year for more editorial feel */
+            align-items: center;
+            text-align: center;
+            margin-bottom: 16px;
+            margin-top: 8px;
+            width: 100%;
+            padding: 0 24px;
+        }
+        
+        .title {
+            font-size: 26px; /* Larger, more confident */
+            font-weight: 600; /* Stronger weight for impact */
+            line-height: 1.2;
+            color: #1a1a1a;
+            margin: 0 0 8px 0;
+            text-align: center;
+        }
+        
+        .year {
+            font-size: 16px;
+            color: #d4af37; /* Year in gold for accent */
+            font-weight: 400;
+            margin: 0;
+            letter-spacing: 0.5px; /* Film credit styling */
+        }
+        
+        .streaming-info {
+            width: 100%;
+            text-align: center; /* Center for editorial feel */
+            margin-bottom: 8px;
+            margin-top: 4px;
+            padding: 0 24px;
+        }
+        
+        .streaming-text {
+            font-size: 14px;
+            color: #666;
+            font-weight: 300;
+            font-style: italic; /* Editorial styling */
+            letter-spacing: 0.3px;
+        }
+        
+        /* Analysis Section - New Yorker magazine feel */
+        .analysis-container {
+            padding: 32px 24px 16px 24px; /* More generous margins */
+            background: linear-gradient(180deg, #fefdf8 0%, #faf9f2 100%);
+            font-family: inherit;
+        }
+        
+        .analysis-content {
+            margin-bottom: 32px;
+        }
+        
+        /* Enhanced typography hierarchy */
+        .paragraph {
+            font-size: 17px; /* Slightly larger for readability */
+            line-height: 1.7; /* More generous line spacing */
+            color: #2d2d2d; /* Softer black */
+            margin-bottom: 24px; /* More space between paragraphs */
+            text-align: justify; /* Magazine-style justified text */
+        }
+        
+        /* Drop cap for first paragraph - classic magazine style */
+        .paragraph:first-of-type::first-letter {
+            float: left;
+            font-size: 3.2em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: #d4af37; /* Gold drop cap */
+            font-weight: 600;
+        }
+        
+        /* Enhanced SUBHEAD - more editorial */
+        .subhead-section {
+            margin-top: 40px; /* More dramatic spacing */
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .subhead-text {
+            font-size: 16px; /* Slightly larger */
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px; /* More dramatic letter spacing */
+            color: #d4af37; /* Your gold */
+            margin: 0;
+            text-align: center; /* Centered for editorial impact */
+            position: relative;
+            padding: 0 20px;
+            background: linear-gradient(180deg, #fefdf8 0%, #faf9f2 100%);
+        }
+        
+        /* Add decorative line behind subhead */
+        .subhead-text::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #d4af37, transparent);
+            z-index: -1;
+        }
+        
+        /* Enhanced section dividers with more gold */
+        .movie-section {
+            margin-top: 32px;
+            margin-bottom: 32px;
+            padding: 24px 0; /* Add padding around sections */
+        }
+        
+        .movie-section-header {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* More space */
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .section-divider {
+            flex: 1;
+            height: 2px; /* Thicker line */
+            background: linear-gradient(90deg, transparent, #d4af37 20%, #b8941f 50%, #d4af37 80%, transparent);
+        }
+        
+        .section-label {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #d4af37;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); /* Dark background */
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 1px solid #d4af37;
+        }
+        
+        .movie-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px; /* More space between cards */
+        }
+        
+        /* Enhanced MediaCard with film noir styling */
+        .media-card {
+            display: flex;
+            gap: 16px;
+            padding: 18px;
+            background: linear-gradient(135deg, #fefdf8 0%, #f8f6ef 100%);
+            border-radius: 8px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(212, 175, 55, 0.1);
+            transition: all 0.2s ease;
+        }
+        
+        .media-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(212, 175, 55, 0.2);
+        }
+        
+        .card-poster {
+            width: 70px; /* Slightly larger */
+            height: 105px;
+            background: linear-gradient(135deg, #e8e8e8 0%, #d0d0d0 100%);
+            border-radius: 4px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            flex-shrink: 0;
+        }
+        
+        .card-content {
+            flex: 1;
+        }
+        
+        .card-title {
+            font-weight: 600;
+            font-size: 15px; /* Slightly larger */
+            margin-bottom: 6px;
+            color: #1a1a1a;
+        }
+        
+        .card-year {
+            color: #d4af37; /* Year in gold */
+            font-size: 13px;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        
+        .card-description {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.5;
+            font-style: italic; /* Editorial styling */
+        }
+        
+        /* Enhanced Explore Further sections */
+        .explore-section {
+            margin-top: 48px; /* More dramatic spacing */
+            margin-bottom: 32px;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+            gap: 20px;
+        }
+        
+        .explore-card {
+            padding: 24px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); /* Film noir dark background */
+            border-radius: 8px;
+            border: 2px solid #d4af37; /* Bold gold border */
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+        
+        .explore-text {
+            font-size: 16px;
+            color: #d4af37; /* Gold text on dark */
+            font-weight: 600;
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        /* Enhanced Discovery Footer */
+        .discovery-footer {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); /* Film noir gradient */
+            padding: 48px 24px;
+            margin-top: 48px;
+            border-top: 3px solid #d4af37; /* Bold gold border */
+            text-align: center;
+        }
+        
+        .footer-title {
+            font-size: 24px; /* Larger, more dramatic */
+            margin-bottom: 20px;
+            color: #d4af37; /* Gold title */
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        .footer-text {
+            color: #fefdf8; /* Cream text on dark */
+            max-width: 280px;
+            margin: 0 auto;
+            line-height: 1.6;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="phone-frame">
+            <div class="screen">
+                <div class="content">
+                    <!-- Enhanced Search Bar -->
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search for a film...">
+                    </div>
+
+                    <!-- Enhanced MovieHeaderLarge -->
+                    <div class="movie-header">
+                        <!-- Enhanced Action Bar with gold theme -->
+                        <div class="action-bar-container">
+                            <button class="action-button">
+                                <div class="icon-with-text">
+                                    <span>+</span>
+                                    <span class="icon-label">Add</span>
+                                </div>
+                            </button>
+                            <button class="action-button">
+                                <div class="icon-with-text">
+                                    <span>✓</span>
+                                    <span class="icon-label">Seen</span>
+                                </div>
+                            </button>
+                            <button class="action-button">
+                                <div class="icon-with-text">
+                                    <span>▶</span>
+                                    <span class="icon-label">Play</span>
+                                </div>
+                            </button>
+                        </div>
+                        
+                        <!-- Centered poster with film noir styling -->
+                        <div class="poster-container">
+                            <img class="large-poster" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjM4MCIgdmlld0JveD0iMCAwIDI4MCAzODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMzgwIiBmaWxsPSIjMWExYTFhIi8+CjxyZWN0IHg9IjIwIiB5PSIyMCIgd2lkdGg9IjI0MCIgaGVpZ2h0PSIzNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Q0YWYzNyIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjE0MCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjZDRhZjM3IiBmb250LXNpemU9IjE2cHgiIGZvbnQtZmFtaWx5PSJzZXJpZiI+Rk9SIFlPVVIgQ09OU0lERVJBVElPTjwvdGV4dD4KPHRleHQgeD0iMTQwIiB5PSIyMjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNkNGFmMzciIGZvbnQtc2l6ZT0iMTJweCIgZm9udC1mYW1pbHk9InNlcmlmIj5Nb3ZpZSBQb3N0ZXI8L3RleHQ+Cjwvc3ZnPg==" alt="Movie Poster">
+                        </div>
+                        
+                        <!-- Centered title layout -->
+                        <div class="title-container">
+                            <h1 class="title">The L Word Mississippi: Hate the Sin</h1>
+                            <div class="year">2014</div>
+                        </div>
+                        
+                        <!-- Centered streaming info -->
+                        <div class="streaming-info">
+                            <span class="streaming-text">Available on Netflix, Hulu</span>
+                        </div>
+                    </div>
+
+                    <!-- Enhanced Analysis Section -->
+                    <div class="analysis-container">
+                        <div class="analysis-content">
+                            
+                            <!-- First paragraph with drop cap -->
+                            <div class="paragraph">
+                                This groundbreaking documentary offers an unflinching examination of LGBTQ+ life in one of America's most conservative states. Director Lauren Wolkstein takes viewers deep into Mississippi's complex social fabric, where religious tradition and personal identity often collide in profound and sometimes painful ways.
+                            </div>
+
+                            <!-- Enhanced SUBHEAD with decorative line -->
+                            <div class="subhead-section">
+                                <h3 class="subhead-text">Cultural Context and Religious Tensions</h3>
+                            </div>
+                            <div class="paragraph">
+                                The film expertly navigates the challenging terrain between deeply held religious beliefs and individual sexual identity. Through intimate interviews with local residents, clergy members, and LGBTQ+ advocates, it reveals how faith communities grapple with inclusion and acceptance while maintaining traditional values.
+                            </div>
+
+                            <!-- Enhanced Featured Films section -->
+                            <div class="movie-section">
+                                <div class="movie-section-header">
+                                    <div class="section-divider"></div>
+                                    <span class="section-label">Featured Films</span>
+                                    <div class="section-divider"></div>
+                                </div>
+                                <div class="movie-list">
+                                    <div class="media-card">
+                                        <div class="card-poster"></div>
+                                        <div class="card-content">
+                                            <div class="card-title">Milk</div>
+                                            <div class="card-year">2008</div>
+                                            <div class="card-description">Harvey Milk's political activism and tragic assassination in San Francisco</div>
+                                        </div>
+                                    </div>
+                                    <div class="media-card">
+                                        <div class="card-poster"></div>
+                                        <div class="card-content">
+                                            <div class="card-title">Moonlight</div>
+                                            <div class="card-year">2016</div>
+                                            <div class="card-description">Coming-of-age story exploring identity in conservative community</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Another enhanced SUBHEAD -->
+                            <div class="subhead-section">
+                                <h3 class="subhead-text">Personal Stories and Community Impact</h3>
+                            </div>
+                            <div class="paragraph">
+                                What makes this documentary particularly powerful is its focus on personal narratives rather than political rhetoric. Each subject brings a unique perspective to the broader conversation about LGBTQ+ rights in the South, creating a nuanced portrait that avoids easy categorization.
+                            </div>
+
+                            <!-- Enhanced Explore Further section -->
+                            <div class="explore-section">
+                                <div class="section-header">
+                                    <div class="section-divider"></div>
+                                    <span class="section-label">Explore Further</span>
+                                    <div class="section-divider"></div>
+                                </div>
+                                <div class="explore-card">
+                                    <div class="explore-text">LGBTQ+ Rights in the American South</div>
+                                </div>
+                            </div>
+
+                            <div class="paragraph">
+                                The documentary's cinematography deserves special mention, using natural lighting and handheld camera work to create an intimate, almost confessional atmosphere. This visual approach reinforces the personal nature of the stories being told.
+                            </div>
+
+                            <!-- Enhanced More Ideas section -->
+                            <div class="movie-section">
+                                <div class="movie-section-header">
+                                    <div class="section-divider"></div>
+                                    <span class="section-label">More Ideas</span>
+                                    <div class="section-divider"></div>
+                                </div>
+                                <div class="movie-list">
+                                    <div class="media-card">
+                                        <div class="card-poster"></div>
+                                        <div class="card-content">
+                                            <div class="card-title">Paris Is Burning</div>
+                                            <div class="card-year">1990</div>
+                                            <div class="card-description">Documentary exploring NYC's drag ball culture and community</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Final Enhanced Explore Further -->
+                            <div class="explore-section">
+                                <div class="section-header">
+                                    <div class="section-divider"></div>
+                                    <span class="section-label">Explore Further</span>
+                                    <div class="section-divider"></div>
+                                </div>
+                                <div class="explore-card">
+                                    <div class="explore-text">Documentary Filmmaking and Social Change</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Enhanced Discovery Footer -->
+                    <div class="discovery-footer">
+                        <h3 class="footer-title">Continue Your Cinematic Journey</h3>
+                        <p class="footer-text">
+                            Discover more films that challenge perspectives, explore identity, and illuminate the human experience through the art of cinema.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

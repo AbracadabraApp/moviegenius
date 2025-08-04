@@ -1,0 +1,189 @@
+{
+  "system": "genius",
+  "themeId": 4,
+  "seriesId": 1,
+  "episodeId": 5,
+  "theme": {
+    "id": 4,
+    "title": "Filmmaking",
+    "description": "The craft and technology of cinema",
+    "slug": "filmmaking"
+  },
+  "series": {
+    "id": 1,
+    "title": "Technical Evolution",
+    "description": "How cinema technology shapes storytelling"
+  },
+  "episode": {
+    "id": 5,
+    "title": "Digital Revolution Begins",
+    "subtitle": "CGI changes everything"
+  },
+  "content": {
+    "opener": "The digital revolution that began in the early 1990s fundamentally transformed cinema, moving beyond practical effects and miniatures to create worlds limited only by imagination. This technological shift didn't just change how movies looked—it revolutionized storytelling possibilities, production workflows, and the very nature of what audiences could experience in theaters.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "The first major breakthrough came with \"Terminator 2: Judgment Day\" (1991), where Industrial Light & Magic's liquid metal T-1000 demonstrated CGI's potential for character creation. Dennis Muren's team used Silicon Graphics workstations to create a villain that was physically impossible to achieve through traditional effects. The seamless morphing sequences, particularly the T-1000's recovery from bullet impacts and its transformations between human and liquid states, proved that computer graphics could serve narrative purposes beyond mere spectacle. James Cameron's insistence on integrating digital effects with practical elements established a template that would influence digital filmmaking for decades."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Terminator 2: Judgment Day",
+            "year": 1991,
+            "slug": "Groundbreaking CGI morphing effects for the T-1000 character",
+            "streaming": "Netflix",
+            "tmdb_id": 280,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5M0j0B18abtBI5gi2RhfjjurTqb.jpg"
+          },
+          {
+            "title": "Jurassic Park",
+            "year": 1993,
+            "slug": "Revolutionary dinosaur animation combining CGI with animatronics",
+            "streaming": "HBO Max",
+            "tmdb_id": 329,
+            "poster_url": "https://image.tmdb.org/t/p/w500/b1xCNnyrPebIc7EWNZIa6BYgRjg.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "The Photorealistic Challenge"
+      },
+      {
+        "type": "text",
+        "content": "Steven Spielberg's \"Jurassic Park\" (1993) established photorealism as the new standard for digital effects. Phil Tippett's traditional stop-motion expertise combined with ILM's computer animation to create dinosaurs that felt genuinely alive. The key innovation lay not just in the technology but in the restraint—digital dinosaurs appeared in daylight for only six minutes of screen time, with practical animatronics handling close-up work. This hybrid approach recognized that successful digital effects required understanding both technical capabilities and dramatic necessity. The film's success launched an industry-wide race toward increasingly complex digital environments and characters."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Toy Story",
+            "year": 1995,
+            "slug": "First fully computer-animated feature film from Pixar",
+            "streaming": "Disney+",
+            "tmdb_id": 862,
+            "poster_url": "https://image.tmdb.org/t/p/w500/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg"
+          },
+          {
+            "title": "The Mask",
+            "year": 1994,
+            "slug": "Early digital face morphing and cartoon-style effects",
+            "streaming": "Amazon Prime",
+            "tmdb_id": 525,
+            "poster_url": "https://image.tmdb.org/t/p/w500/xVCuyW4RiA3Wjqxnn8Wn0WkKKpH.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Virtual Worlds and Digital Cinematography"
+      },
+      {
+        "type": "text",
+        "content": "The late 1990s saw digital technology expand from individual effects to entire virtual environments. \"The Matrix\" (1999) introduced bullet-time photography using an array of still cameras, while its digital environment sequences demonstrated how virtual sets could serve philosophical themes. The Wachowskis worked with effects supervisor John Gaeta to create digital techniques that weren't just technically impressive but narratively essential—the contrast between digital and practical photography reinforced the film's themes about reality and simulation. Meanwhile, \"Titanic\" (1997) proved that digital technology could enhance historical drama, with Digital Domain creating water simulations and crowd extensions that made intimate human stories possible on an epic scale."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Matrix",
+            "year": 1999,
+            "slug": "Revolutionary bullet-time effects and virtual world creation",
+            "streaming": "HBO Max",
+            "tmdb_id": 603,
+            "poster_url": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg"
+          },
+          {
+            "title": "Titanic",
+            "year": 1997,
+            "slug": "Digital water simulation and crowd extension techniques",
+            "streaming": "Amazon Prime",
+            "tmdb_id": 597,
+            "poster_url": "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "The Digital Production Pipeline"
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did digital technology change the role of cinematographers and directors?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The introduction of digital effects fundamentally altered film production workflows. Directors like George Lucas pioneered the use of digital environments in \"Star Wars Episode II\" (2002), shooting actors against blue screens and creating backgrounds entirely in post-production. This approach required new forms of collaboration between directors, cinematographers, and visual effects supervisors. Roger Deakins' work on films like \"The Man Who Wasn't There\" (2001) demonstrated how digital intermediate processing could enhance traditional cinematography, while Robert Rodriguez's \"Sin City\" (2005) showed how digital backlots could create stylized noir environments impossible to achieve practically. These innovations established digital technology as both a creative tool and a new grammar for cinematic expression."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Star Wars: Episode II - Attack of the Clones",
+            "year": 2002,
+            "slug": "Extensive use of digital environments and characters",
+            "streaming": "Disney+",
+            "tmdb_id": 1893,
+            "poster_url": "https://image.tmdb.org/t/p/w500/oZNPzxqM2s5DyVWab09NTQScDQt.jpg"
+          },
+          {
+            "title": "Sin City",
+            "year": 2005,
+            "slug": "Digital backlot technique creating stylized noir environments",
+            "streaming": "Netflix",
+            "tmdb_id": 187,
+            "poster_url": "https://image.tmdb.org/t/p/w500/vKJVGOKPyWqp9d2PZWN5vz3Ysn1.jpg"
+          }
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Terminator 2: Judgment Day",
+          "year": 1991,
+          "slug": "First use of morphing CGI effects for major character",
+          "streaming": "Netflix",
+          "tmdb_id": 280,
+          "poster_url": "https://image.tmdb.org/t/p/w500/5M0j0B18abtBI5gi2RhfjjurTqb.jpg"
+        },
+        {
+          "title": "The Matrix",
+          "year": 1999,
+          "slug": "Revolutionary digital effects and virtual world creation",
+          "streaming": "HBO Max",
+          "tmdb_id": 603,
+          "poster_url": "https://image.tmdb.org/t/p/w500/p96dm7sCMn4VYAStA6siNz30G1r.jpg"
+        },
+        {
+          "title": "Gravity",
+          "year": 2013,
+          "slug": "Groundbreaking space environment creation",
+          "streaming": "Amazon Prime",
+          "tmdb_id": 49047,
+          "poster_url": "https://image.tmdb.org/t/p/w500/kZ2nZw8D681aphje8NJi8EfbL1U.jpg"
+        },
+        {
+          "title": "Ready Player One",
+          "year": 2018,
+          "slug": "Advanced virtual world and character creation",
+          "streaming": "HBO Max",
+          "tmdb_id": 333339,
+          "poster_url": "https://image.tmdb.org/t/p/w500/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-18T17:09:02.413Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-18T17:09:02.413Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/technical-evolution/5-digital-revolution.jpg"
+}

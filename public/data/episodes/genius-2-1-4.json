@@ -1,0 +1,204 @@
+{
+  "system": "genius",
+  "themeId": 2,
+  "seriesId": 1,
+  "episodeId": 4,
+  "theme": {
+    "id": 2,
+    "title": "Directors",
+    "description": "Visionary filmmakers and their personal cinema",
+    "slug": "directors"
+  },
+  "series": {
+    "id": 1,
+    "title": "Women Directors",
+    "description": "Pioneering female voices in cinema"
+  },
+  "episode": {
+    "id": 4,
+    "title": "Jane Campion: Feminine Gothic",
+    "subtitle": "New Zealand's poetic vision"
+  },
+  "content": {
+    "opener": "Jane Campion's distinctive cinematic voice has redefined Gothic storytelling through a feminine lens, merging New Zealand's haunting landscapes with psychologically complex narratives that explore power, desire, and female autonomy.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "Emerging from the Australian New Wave of the 1980s, Campion established her unique visual grammar with her debut feature <a href=\"/movie/65015\" class=\"movie-title\" data-tmdb-id=\"65015\">Sweetie</a> (1989), which introduced themes that would become hallmarks of her work: dysfunctional family dynamics, female sexuality, and the intersection of beauty and grotesque. The film's unconventional framing and bold color palette, shot by cinematographer Sally Bongers, challenged traditional narrative structures while establishing Campion's ability to create unsettling yet mesmerizing atmospheric tensions. Her use of canted angles and deliberately awkward compositions reflected the psychological instability of her characters while setting a new precedent for feminist cinema."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Sweetie",
+            "year": 1989,
+            "slug": "A disturbing family drama exploring sisterly relationships and mental illness",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 65015,
+            "poster_url": "https://image.tmdb.org/t/p/w500/25lpQtxNWXzOimnXmbwF0Y0GYej.jpg"
+          },
+          {
+            "title": "An Angel at My Table",
+            "year": 1990,
+            "slug": "Janet Frame's autobiographical journey through mental institutions and literary awakening",
+            "streaming": "HBO Max",
+            "tmdb_id": 2891,
+            "poster_url": "https://image.tmdb.org/t/p/w500/sDICHxQRDkS4TvIDcUgO9URJxu1.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "The Piano and International Recognition"
+      },
+      {
+        "type": "text",
+        "content": "<a href=\"/movie/713\" class=\"movie-title\" data-tmdb-id=\"713\">The Piano</a> (1993) marked Campion's emergence as a major international filmmaker and remains a masterwork of feminine Gothic cinema. Shot by Stuart Dryburgh, the film's rich visual palette contrasts the untamed New Zealand coastline with the confined domestic spaces that trap Ada McGrath (Holly Hunter). Campion's treatment of Victorian-era sexuality and power dynamics earned her the distinction of being the first woman to win the Palme d'Or at Cannes. The film's exploration of female desire, communication, and autonomy through the metaphor of Ada's piano created a new visual language for depicting female experience on screen."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Piano",
+            "year": 1993,
+            "slug": "A mute woman uses her piano as expression in colonial New Zealand",
+            "streaming": "Amazon Prime",
+            "tmdb_id": 713,
+            "poster_url": "https://image.tmdb.org/t/p/w500/rx8RKXn8OtuS6lqloYsjyrGOUp4.jpg"
+          },
+          {
+            "title": "The Portrait of a Lady",
+            "year": 1996,
+            "slug": "Henry James adaptation exploring female independence in Victorian society",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 36758,
+            "poster_url": "https://image.tmdb.org/t/p/w500/yoUuMtWTQXzfARYE0nF7Nn7gRuS.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Evolution and Experimentation"
+      },
+      {
+        "type": "text",
+        "content": "In the late 1990s and early 2000s, Campion continued to push boundaries with works that explored female sexuality and power dynamics in increasingly complex ways. <a href=\"/movie/13787\" class=\"movie-title\" data-tmdb-id=\"13787\">Holy Smoke</a> (1999) examined spiritual awakening and gender dynamics through the lens of cult deprogramming, while <a href=\"/movie/10944\" class=\"movie-title\" data-tmdb-id=\"10944\">In the Cut</a> (2003) subverted the erotic thriller genre by presenting female desire from an explicitly feminine perspective. These films, though sometimes controversial, demonstrated Campion's unwavering commitment to exploring female subjectivity and challenging patriarchal narrative conventions."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Holy Smoke",
+            "year": 1999,
+            "slug": "A cult deprogrammer meets his match in a strong-willed young woman",
+            "streaming": "Hulu",
+            "tmdb_id": 13787,
+            "poster_url": "https://image.tmdb.org/t/p/w500/utBNYz1cX43SQKZFH1JmMZU34Dy.jpg"
+          },
+          {
+            "title": "In the Cut",
+            "year": 2003,
+            "slug": "A literature professor becomes entangled in a dangerous sexual relationship",
+            "streaming": "Netflix",
+            "tmdb_id": 10944,
+            "poster_url": "https://image.tmdb.org/t/p/w500/c8Xg0yc8UQwDXooffBNLLs2BvQH.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Literary Adaptations and Period Drama"
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Campion's gift for literary adaptation reached new heights with <a href=\"/movie/29963\" class=\"movie-title\" data-tmdb-id=\"29963\">Bright Star</a> (2009), her exquisite portrayal of the romance between John Keats and Fanny Brawne. Cinematographer Greig Fraser created a visual poetry that matched Keats' verses, while Campion's direction brought a tactile sensuality to the period drama genre. The film demonstrated her ability to work within historical constraints while maintaining her distinctive voice, particularly in its attention to feminine perspective and sensory detail."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Bright Star",
+            "year": 2009,
+            "slug": "The tragic romance between poet John Keats and Fanny Brawne",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 29963,
+            "poster_url": "https://image.tmdb.org/t/p/w500/csN6y4nq2kaBiegHaGw0DGp4plf.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Return to Form: The Power of the Dog"
+      },
+      {
+        "type": "text",
+        "content": "After a twelve-year absence from feature filmmaking, Campion returned triumphantly with <a href=\"/movie/600583\" class=\"movie-title\" data-tmdb-id=\"600583\">The Power of the Dog</a> (2021), which earned her the Academy Award for Best Director. Working with cinematographer Ari Wegner, Campion transformed Thomas Savage's novel into a masterful exploration of toxic masculinity and repressed desire. The film's use of the Western landscape as psychological space and its subversion of genre conventions demonstrated Campion's continued evolution as a filmmaker while maintaining her core interests in power dynamics and hidden desires."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "The Power of the Dog",
+            "year": 2021,
+            "slug": "A rancher's life is disrupted by his brother's new wife and her son",
+            "streaming": "Netflix",
+            "tmdb_id": 600583,
+            "poster_url": "https://image.tmdb.org/t/p/w500/kEy48iCzGnp0ao1cZbNeWR6yIhC.jpg"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Throughout her career, Campion's influence on contemporary cinema has been profound. Her work has paved the way for other female directors while establishing a new visual language for depicting female experience. Her attention to the sensory aspects of filmmaking - texture, touch, and unspoken communication - has influenced a generation of filmmakers. The psychological complexity of her characters and her willingness to explore uncomfortable truths about human nature have expanded the possibilities of narrative cinema."
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Top of the Lake",
+          "year": 2013,
+          "slug": "Mini-series exploring crime and corruption in rural New Zealand",
+          "streaming": "Hulu",
+          "tmdb_id": null,
+          "poster_url": null
+        },
+        {
+          "title": "The Water Diary",
+          "year": 2006,
+          "slug": "Short film addressing environmental concerns through a child's perspective",
+          "streaming": "YouTube",
+          "tmdb_id": 277821,
+          "poster_url": "https://image.tmdb.org/t/p/w500/qxm2huLx6GrkMNcSxoYEfSvVzO7.jpg"
+        },
+        {
+          "title": "Two Friends",
+          "year": 1986,
+          "slug": "Early TV film exploring female friendship through reverse chronology",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 123067,
+          "poster_url": "https://image.tmdb.org/t/p/w500/AuXOXyg6uYFkvQoTB617mq7sQPg.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-17T22:58:57.493Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-17T22:58:57.493Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-2-directors/series-1-women-directors//4-jane-campion-feminine-gothic.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:19.769Z",
+    "hasLinks": true,
+    "linksAdded": 5,
+    "tier": "tier2_link_only"
+  }
+}

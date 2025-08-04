@@ -1,0 +1,464 @@
+{
+  "themes": {
+    "film-noir": {
+      "id": "film-noir",
+      "title": "Film Noir",
+      "description": "Dark characters and broken dreams",
+      "episodes": [
+        {
+          "file": "genius-1-1-1.json",
+          "id": "german-expressionism",
+          "title": "German Expressionism",
+          "subtitle": "The template for noir morality"
+        },
+        {
+          "file": "genius-1-1-2.json",
+          "id": "from-novels-to-noir",
+          "title": "From Novels to Noir",
+          "subtitle": "Detective fiction meets cinema"
+        },
+        {
+          "file": "genius-1-1-3.json",
+          "id": "urban-anxiety",
+          "title": "Urban Anxiety",
+          "subtitle": "City streets and moral decay"
+        },
+        {
+          "file": "genius-1-1-4.json",
+          "id": "femme-fatales",
+          "title": "Femme Fatales",
+          "subtitle": "Dangerous women and desire"
+        },
+        {
+          "file": "genius-1-1-5.json",
+          "id": "moral-ambiguity",
+          "title": "Moral Ambiguity",
+          "subtitle": "Heroes and villains blur together"
+        },
+        {
+          "file": "genius-1-1-6.json",
+          "id": "noirs-legacy",
+          "title": "Noir's Legacy",
+          "subtitle": "How shadows shaped modern cinema"
+        }
+      ]
+    },
+    "horror-suspense": {
+      "id": "horror-suspense",
+      "title": "Horror & Suspense",
+      "description": "When nightmares come alive",
+      "episodes": [
+        {
+          "file": "genius-1-2-1.json",
+          "id": "giallo-italian-horror",
+          "title": "Giallo: Italian Horror Aesthetics",
+          "subtitle": "Argento's stylized violence"
+        },
+        {
+          "file": "genius-1-2-2.json",
+          "id": "cronenberg-body-horror",
+          "title": "Cronenberg's Body Horror",
+          "subtitle": "Flesh and psychological terror"
+        },
+        {
+          "file": "genius-1-2-3.json",
+          "id": "modern-psychological-thrillers",
+          "title": "Modern Psychological Thrillers",
+          "subtitle": "Mind games and manipulation"
+        },
+        {
+          "file": "genius-1-2-4.json",
+          "id": "elevated-horror-a24",
+          "title": "Elevated Horror: A24 & Beyond",
+          "subtitle": "Art house fear"
+        }
+      ]
+    },
+    "comedy-through-time": {
+      "id": "comedy-through-time",
+      "title": "Comedy",
+      "description": "Life's absurdities made bearable",
+      "episodes": [
+        {
+          "file": "genius-1-3-1.json",
+          "id": "silent-comedy-stars",
+          "title": "Silent Comedy Stars",
+          "subtitle": "Chaplin, Keaton, and visual humor"
+        },
+        {
+          "file": "genius-1-3-2.json",
+          "id": "screwball-comedy",
+          "title": "Screwball Comedy: Battle of the Sexes",
+          "subtitle": "Rapid-fire wit and romance"
+        },
+        {
+          "file": "genius-1-3-3.json",
+          "id": "british-comedy",
+          "title": "British Comedy: Ealing to Python",
+          "subtitle": "Dry wit and social satire"
+        },
+        {
+          "file": "genius-1-3-4.json",
+          "id": "saturday-night-live-cinema",
+          "title": "Saturday Night Live Cinema",
+          "subtitle": "TV comedy goes to movies"
+        },
+        {
+          "file": "genius-1-3-5.json",
+          "id": "judd-apatow-new-comedy",
+          "title": "Judd Apatow & The New Comedy",
+          "subtitle": "Bromance and improvisation"
+        }
+      ]
+    },
+    "women-directors": {
+      "id": "women-directors",
+      "title": "Women Directors",
+      "description": "Breaking barriers, making masterpieces",
+      "episodes": [
+        {
+          "file": "genius-2-1-1.json",
+          "id": "silent-era-pioneers",
+          "title": "Silent Era Pioneers: Weber & Pickford",
+          "subtitle": "Early women behind the camera"
+        },
+        {
+          "file": "genius-2-1-2.json",
+          "id": "ida-lupino-forgotten-auteur",
+          "title": "Ida Lupino: The Forgotten Auteur",
+          "subtitle": "Actor-director breaking barriers"
+        },
+        {
+          "file": "genius-2-1-3.json",
+          "id": "chantal-akerman-radical-minimalism",
+          "title": "Chantal Akerman: Radical Minimalism",
+          "subtitle": "Feminist time and space"
+        },
+        {
+          "file": "genius-2-1-4.json",
+          "id": "jane-campion-feminine-gothic",
+          "title": "Jane Campion: Feminine Gothic",
+          "subtitle": "New Zealand's poetic vision"
+        },
+        {
+          "file": "genius-2-1-5.json",
+          "id": "kathryn-bigelow-action-auteur",
+          "title": "Kathryn Bigelow: Action Auteur",
+          "subtitle": "Redefining genre filmmaking"
+        },
+        {
+          "file": "genius-2-1-6.json",
+          "id": "contemporary-voices",
+          "title": "Contemporary Voices: Gerwig to Zhao",
+          "subtitle": "New generation storytellers"
+        }
+      ]
+    },
+    "world-cinema": {
+      "id": "world-cinema",
+      "title": "International Masters",
+      "description": "Stories that transcend borders",
+      "episodes": [
+        {
+          "file": "genius-2-2-1.json",
+          "id": "kurosawa-epic-vision",
+          "title": "Kurosawa's Epic Vision",
+          "subtitle": "Japanese cinema giant"
+        },
+        {
+          "file": "genius-2-2-2.json",
+          "id": "bergman-psychological-landscapes",
+          "title": "Bergman's Psychological Landscapes",
+          "subtitle": "Swedish introspection"
+        },
+        {
+          "file": "genius-2-2-3.json",
+          "id": "fellini-surreal-italy",
+          "title": "Fellini's Surreal Italy",
+          "subtitle": "Dreams and reality collide"
+        },
+        {
+          "file": "genius-2-2-4.json",
+          "id": "tarkovsky-spiritual-cinema",
+          "title": "Tarkovsky's Spiritual Cinema",
+          "subtitle": "Soviet poetry in motion"
+        },
+        {
+          "file": "genius-2-2-5.json",
+          "id": "wong-kar-wai-romantic-melancholy",
+          "title": "Wong Kar-wai's Romantic Melancholy",
+          "subtitle": "Hong Kong mood master"
+        },
+        {
+          "file": "genius-2-2-6.json",
+          "id": "bong-joon-ho-genre-mastery",
+          "title": "Bong Joon-ho's Genre Mastery",
+          "subtitle": "Korean social commentary"
+        }
+      ]
+    },
+    "acclaimed-directors": {
+      "id": "acclaimed-directors",
+      "title": "Acclaimed Directors",
+      "description": "Auteurs who redefined movies",
+      "episodes": [
+        {
+          "file": "genius-2-4-1.json",
+          "id": "coen-brothers-genre-pastiche",
+          "title": "The Coen Brothers: Genre Pastiche & Visual Wit",
+          "subtitle": "Postmodern storytellers"
+        },
+        {
+          "file": "genius-2-4-2.json",
+          "id": "christopher-nolan-time-memory",
+          "title": "Christopher Nolan: Time, Memory & IMAX Spectacle",
+          "subtitle": "Puzzle box narratives"
+        },
+        {
+          "file": "genius-2-4-3.json",
+          "id": "denis-villeneuve-sci-fi",
+          "title": "Denis Villeneuve: Sci-Fi Atmosphere & Scale",
+          "subtitle": "Thoughtful spectacle"
+        },
+        {
+          "file": "genius-2-4-4.json",
+          "id": "jordan-peele-horror-social",
+          "title": "Jordan Peele: Horror Through Social Commentary",
+          "subtitle": "Genre as activism"
+        },
+        {
+          "file": "genius-2-3-1.json",
+          "id": "frederick-wiseman-institutional",
+          "title": "Frederick Wiseman: Institutional Observer",
+          "subtitle": "Fly-on-the-wall realism"
+        },
+        {
+          "file": "genius-2-3-2.json",
+          "id": "errol-morris-truth-detective",
+          "title": "Errol Morris: Truth Detective",
+          "subtitle": "Investigation through film"
+        },
+        {
+          "file": "genius-2-3-3.json",
+          "id": "michael-moore-provocateur",
+          "title": "Michael Moore: Provocateur Documentarian",
+          "subtitle": "Political activism through cinema"
+        },
+        {
+          "file": "genius-3-2-3.json",
+          "id": "fritz-lang-architectural-psychology",
+          "title": "Fritz Lang's Architectural Psychology",
+          "subtitle": "Space as character"
+        }
+      ]
+    },
+    "avant-garde-film": {
+      "id": "avant-garde-film",
+      "title": "Movements in Film",
+      "description": "Rebels who rewrote the playbook",
+      "episodes": [
+        {
+          "file": "genius-3-1-1.json",
+          "id": "french-new-wave",
+          "title": "French New Wave: Breathless Revolution",
+          "subtitle": "Godard and Truffaut's innovation"
+        },
+        {
+          "file": "genius-3-1-2.json",
+          "id": "italian-neorealism",
+          "title": "Italian Neorealism: Truth in Cinema",
+          "subtitle": "Post-war authenticity"
+        },
+        {
+          "file": "genius-3-1-3.json",
+          "id": "british-kitchen-sink",
+          "title": "British Kitchen Sink & Social Realism",
+          "subtitle": "Working class stories"
+        },
+        {
+          "file": "genius-3-1-4.json",
+          "id": "japanese-new-wave",
+          "title": "Japanese New Wave: Oshima & Imamura",
+          "subtitle": "Breaking tradition"
+        },
+        {
+          "file": "genius-3-1-5.json",
+          "id": "czech-new-wave",
+          "title": "Czech New Wave: Behind Iron Curtain",
+          "subtitle": "Political allegory and freedom"
+        },
+        {
+          "file": "genius-3-1-6.json",
+          "id": "german-new-cinema",
+          "title": "German New Cinema: Herzog & Fassbinder",
+          "subtitle": "Post-war artistic renewal"
+        },
+        {
+          "file": "genius-3-2-1.json",
+          "id": "german-expressionism-silent",
+          "title": "German Expressionism & Silent Era",
+          "subtitle": "Visual psychology emerges"
+        }
+      ]
+    },
+    "magic-of-moviemaking": {
+      "id": "magic-of-moviemaking",
+      "title": "The Magic of Moviemaking",
+      "description": "Where technology meets imagination",
+      "episodes": [
+        {
+          "file": "genius-4-1-1.json",
+          "id": "hitchcock-camera-psychology",
+          "title": "Hitchcock's Camera Psychology",
+          "subtitle": "Visual manipulation master"
+        },
+        {
+          "file": "genius-4-1-2.json",
+          "id": "birth-of-cinema",
+          "title": "Birth of Cinema: Méliès to Griffith",
+          "subtitle": "Magic and narrative emerge"
+        },
+        {
+          "file": "genius-4-1-3.json",
+          "id": "studio-system-star-power",
+          "title": "Studio System & Star Power",
+          "subtitle": "Hollywood's golden age machine"
+        },
+        {
+          "file": "genius-4-1-4.json",
+          "id": "technicolor-revolution",
+          "title": "Technicolor Revolution",
+          "subtitle": "Color transforms cinema"
+        },
+        {
+          "file": "genius-4-1-5.json",
+          "id": "digital-revolution-begins",
+          "title": "Digital Revolution Begins",
+          "subtitle": "CGI changes everything"
+        },
+        {
+          "file": "genius-4-1-6.json",
+          "id": "virtual-production-revolution",
+          "title": "Virtual Production Revolution",
+          "subtitle": "LED walls and real-time rendering"
+        },
+        {
+          "file": "genius-4-1-7.json",
+          "id": "ai-future-filmmaking",
+          "title": "AI & the Future of Filmmaking",
+          "subtitle": "Artificial intelligence enters cinema"
+        },
+        {
+          "file": "genius-3-2-2.json",
+          "id": "murnau-camera-movement",
+          "title": "Murnau's Camera Movement Revolution",
+          "subtitle": "Unchaining the camera"
+        }
+      ]
+    },
+    "cinema-through-decades": {
+      "id": "cinema-through-decades",
+      "title": "Cinema Through the Decades",
+      "description": "Movies that defined their era",
+      "episodes": [
+        {
+          "file": "genius-5-1-1.json",
+          "id": "1970s-auteur-renaissance",
+          "title": "1970s: The Auteur Renaissance",
+          "subtitle": "Directors take control"
+        },
+        {
+          "file": "genius-5-1-2.json",
+          "id": "1980s-blockbuster-revolution",
+          "title": "1980s: Blockbuster Revolution",
+          "subtitle": "High concept and spectacle"
+        },
+        {
+          "file": "genius-5-1-3.json",
+          "id": "1990s-independent-renaissance",
+          "title": "1990s: Independent Renaissance",
+          "subtitle": "Sundance and artistic freedom"
+        },
+        {
+          "file": "genius-5-1-4.json",
+          "id": "2000s-streaming-wars",
+          "title": "2000s: The Streaming Wars",
+          "subtitle": "Digital distribution emerges"
+        },
+        {
+          "file": "genius-5-1-5.json",
+          "id": "2010s-global-cinema-rising",
+          "title": "2010s: Global Cinema Rising",
+          "subtitle": "International voices gain prominence"
+        }
+      ]
+    },
+    "cinema-cultural-impact": {
+      "id": "cinema-cultural-impact",
+      "title": "Hollywood Transformed",
+      "description": "From studios to streaming wars",
+      "episodes": [
+        {
+          "file": "genius-5-2-1.json",
+          "id": "wwii-cinema-war-effort",
+          "title": "WWII & Cinema's War Effort",
+          "subtitle": "Movies as propaganda and art"
+        },
+        {
+          "file": "genius-5-2-2.json",
+          "id": "independent-film-renaissance",
+          "title": "Independent Film Renaissance",
+          "subtitle": "Breaking free from studios"
+        },
+        {
+          "file": "genius-5-2-3.json",
+          "id": "international-cinema-breaks-through",
+          "title": "International Cinema Breaks Through",
+          "subtitle": "World cinema reaches America"
+        },
+        {
+          "file": "genius-5-2-4.json",
+          "id": "franchise-filmmaking-dominance",
+          "title": "Franchise Filmmaking Dominance",
+          "subtitle": "Sequels and shared universes"
+        },
+        {
+          "file": "genius-5-2-5.json",
+          "id": "streaming-changes-everything",
+          "title": "Streaming Changes Everything",
+          "subtitle": "Netflix revolutionizes distribution"
+        },
+        {
+          "file": "genius-5-2-6.json",
+          "id": "marvel-cinematic-universe",
+          "title": "Marvel & the Cinematic Universe",
+          "subtitle": "Superhero storytelling dominates"
+        },
+        {
+          "file": "genius-5-2-7.json",
+          "id": "a24-independent-prestige",
+          "title": "A24 & Independent Prestige",
+          "subtitle": "Art house meets commercial success"
+        },
+        {
+          "file": "genius-5-2-8.json",
+          "id": "international-streaming-wars",
+          "title": "International Streaming Wars",
+          "subtitle": "Global content competition"
+        },
+        {
+          "file": "genius-5-2-9.json",
+          "id": "post-pandemic-cinema",
+          "title": "Post-Pandemic Cinema",
+          "subtitle": "How COVID changed moviegoing"
+        },
+        {
+          "file": "genius-3-2-4.json",
+          "id": "weimar-to-hollywood",
+          "title": "From Weimar to Hollywood: The Émigré Influence",
+          "subtitle": "European artistry in America"
+        }
+      ]
+    }
+  }
+}

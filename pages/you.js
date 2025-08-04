@@ -1,503 +1,680 @@
-// pages/you.js
+// pages/you.js - Apple-inspired minimal You page design
 import PhoneFrame from '../components/PhoneFrame';
-import AskInputBar from '../components/AskInputBar';
-import SelectedPlatforms from '../components/SelectedPlatforms';
+import SimpleSearch from '../components/SimpleSearch';
 import MediaCard from '../components/MediaCard';
-import PlatformSelector from '../components/PlatformSelector';
-import { Heart, Bookmark } from 'lucide-react';
+import CinematicProfile from '../components/CinematicProfile';
+import ThemeFooter from '../components/ThemeFooter';
+import {
+  Check,
+  Plus,
+  Film,
+  ChevronRight,
+  Star,
+  TrendingUp,
+  CirclePlus,
+  CheckCircle,
+} from 'lucide-react';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
+import {
+  colors,
+  spacing,
+  typography,
+  borderRadius,
+  shadows,
+  components,
+} from '../lib/design-tokens';
+import { getThemeRepresentatives } from '../data/essential-movies';
+import { routeHelpers } from '../lib/routes';
 
 export default function YouPage() {
   const router = useRouter();
-  const [selectedPlatforms, setSelectedPlatforms] = useState([]);
   const [heartedMovies, setHeartedMovies] = useState([]);
   const [bookmarkedMovies, setBookmarkedMovies] = useState([]);
-  const [expandedSections, setExpandedSections] = useState({
-    hearted: false,
-    bookmarked: false,
-    platforms: false
-  });
-
-  const toggleSection = (section) => {
-    setExpandedSections(prev => ({
-      ...prev,
-      [section]: !prev[section]
-    }));
-  };
-
-  const handleWipeData = () => {
-    if (window.confirm('Are you sure you want to clear all your data? This will remove all selected platforms, hearted movies, and bookmarked movies.')) {
-      localStorage.removeItem('selectedPlatforms');
-      localStorage.removeItem('heartedMovies');
-      localStorage.removeItem('bookmarkedMovies');
-      
-      // Update local state
-      setSelectedPlatforms([]);
-      setHeartedMovies([]);
-      setBookmarkedMovies([]);
-      
-      // Notify other components
-      window.dispatchEvent(new CustomEvent('platformsUpdated'));
-      window.dispatchEvent(new CustomEvent('moviesUpdated'));
-      
-      console.log('All user data cleared');
-    }
-  };
+  const [selectedPlatforms, setSelectedPlatforms] = useState([]);
+  const [activeProfileType, setActiveProfileType] = useState('cinematic-dna');
 
   // Load data from localStorage
   useEffect(() => {
-    const loadSelectedPlatforms = () => {
+    const loadStoredData = () => {
       try {
-        const saved = localStorage.getItem('selectedPlatforms');
-        if (saved) {
-          const platforms = JSON.parse(saved);
-          setSelectedPlatforms(platforms);
-          console.log('Loaded platforms from localStorage:', platforms);
-        } else {
-          setSelectedPlatforms([]);
-        }
+        const storedHearted = localStorage.getItem('heartedMovies');
+        const storedBookmarked = localStorage.getItem('bookmarkedMovies');
+        const storedPlatforms = localStorage.getItem('selectedPlatforms');
+
+        if (storedHearted) setHeartedMovies(JSON.parse(storedHearted));
+        if (storedBookmarked) setBookmarkedMovies(JSON.parse(storedBookmarked));
+        if (storedPlatforms) setSelectedPlatforms(JSON.parse(storedPlatforms));
       } catch (error) {
-        console.error('Error loading platforms from localStorage:', error);
-        setSelectedPlatforms([]);
+        console.error('Error loading stored data:', error);
       }
     };
 
-    const loadHeartedMovies = () => {
-      try {
-        const saved = localStorage.getItem('heartedMovies');
-        if (saved) {
-          const movies = JSON.parse(saved);
-          setHeartedMovies(movies);
-          console.log('Loaded hearted movies from localStorage:', movies);
-        } else {
-          setHeartedMovies([]);
-        }
-      } catch (error) {
-        console.error('Error loading hearted movies from localStorage:', error);
-        setHeartedMovies([]);
-      }
-    };
+    loadStoredData();
 
-    const loadBookmarkedMovies = () => {
-      try {
-        const saved = localStorage.getItem('bookmarkedMovies');
-        if (saved) {
-          const movies = JSON.parse(saved);
-          setBookmarkedMovies(movies);
-          console.log('Loaded bookmarked movies from localStorage:', movies);
-        } else {
-          setBookmarkedMovies([]);
-        }
-      } catch (error) {
-        console.error('Error loading bookmarked movies from localStorage:', error);
-        setBookmarkedMovies([]);
-      }
-    };
-
-    loadSelectedPlatforms();
-    loadHeartedMovies();
-    loadBookmarkedMovies();
-
-    // Listen for storage changes
-    const handleStorageChange = (e) => {
-      if (e.key === 'selectedPlatforms') {
-        loadSelectedPlatforms();
-      } else if (e.key === 'heartedMovies') {
-        loadHeartedMovies();
-      } else if (e.key === 'bookmarkedMovies') {
-        loadBookmarkedMovies();
-      }
-    };
-
+    // Listen for storage changes from other components
+    const handleStorageChange = () => loadStoredData();
     window.addEventListener('storage', handleStorageChange);
-    
-    // Also listen for custom events for same-tab updates
-    const handlePlatformUpdate = () => {
-      loadSelectedPlatforms();
-    };
-    
-    const handleMoviesUpdate = () => {
-      loadHeartedMovies();
-      loadBookmarkedMovies();
-    };
-    
-    window.addEventListener('platformsUpdated', handlePlatformUpdate);
-    window.addEventListener('moviesUpdated', handleMoviesUpdate);
-
-    return () => {
-      window.removeEventListener('storage', handleStorageChange);
-      window.removeEventListener('platformsUpdated', handlePlatformUpdate);
-      window.removeEventListener('moviesUpdated', handleMoviesUpdate);
-    };
+    return () => window.removeEventListener('storage', handleStorageChange);
   }, []);
 
-  // Handle hash navigation to auto-expand sections
-  useEffect(() => {
-    const hash = window.location.hash;
-    if (hash === '#platforms') {
-      setExpandedSections(prev => ({ ...prev, platforms: true }));
-      // Clear the hash after expanding
-      window.history.replaceState(null, null, window.location.pathname);
+  const totalMovies = heartedMovies.length + bookmarkedMovies.length;
+  const hasContent = totalMovies > 0;
+
+  const navigateToCollection = type => {
+    if (type === 'hearted' || type === 'bookmarked') {
+      // Route to movies page where users can browse/search
+      router.push('/movies');
+    } else {
+      router.push('/you'); // Safe fallback
     }
-  }, [router.asPath]);
-
-  const handleAsk = (query) => {
-    // Navigate to Ask page with the query
-    router.push({
-      pathname: '/ask',
-      query: { q: query }
-    });
   };
 
-  const handlePlatformSelectionChange = (selectedPlatforms) => {
-    // Save to localStorage so other components can access the data
-    localStorage.setItem('selectedPlatforms', JSON.stringify(selectedPlatforms));
-    console.log('Saved platforms to localStorage:', selectedPlatforms);
-    
-    // Update local state
-    setSelectedPlatforms(selectedPlatforms);
-    
-    // Dispatch custom event for same-tab updates
-    window.dispatchEvent(new CustomEvent('platformsUpdated'));
+  const navigateToDiscovery = () => {
+    // Use existing genius page for discovery
+    router.push('/genius');
   };
+
+  // Render cinematic profile section
+  const renderCinematicProfileSection = () => {
+    return (
+      <div
+        style={{
+          marginBottom: spacing[3],
+        }}
+      >
+        {/* Header with profile and seen count */}
+        {hasContent && (
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              marginBottom: spacing[2],
+              padding: `0 ${spacing[4]}`,
+            }}
+          >
+            <div style={{ flex: 1 }}>
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '4px',
+                  flexWrap: 'nowrap',
+                }}
+              >
+                <Check size={16} color={components.youPage.goldAccent} strokeWidth={2.5} />
+                <span
+                  style={{
+                    fontSize: typography.fontSize.base,
+                    fontWeight: typography.fontWeight.normal,
+                    color: colors.gray[700],
+                    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                    whiteSpace: 'nowrap',
+                  }}
+                >
+                  based on
+                </span>
+                <button
+                  onClick={() => router.push('/seen')}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    cursor: 'pointer',
+                    fontSize: typography.fontSize.base,
+                    color: components.youPage.goldAccent,
+                    fontWeight: typography.fontWeight.normal,
+                    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                    textDecoration: 'underline',
+                    whiteSpace: 'nowrap',
+                  }}
+                >
+                  {heartedMovies.length} {heartedMovies.length === 1 ? 'film' : 'films'}
+                </button>
+                <button
+                  onClick={() => router.push('/you/suggestions')}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    cursor: 'pointer',
+                    fontSize: typography.fontSize.base,
+                    color: colors.gray[500],
+                    fontWeight: typography.fontWeight.light,
+                    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                    textDecoration: 'underline',
+                    whiteSpace: 'nowrap',
+                  }}
+                >
+                  (add more)
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Cinematic Profile */}
+        {hasContent ? (
+          <div
+            style={{
+              backgroundColor: colors.gold[100],
+              borderRadius: borderRadius.md,
+              padding: spacing[4],
+              border: `1px solid ${colors.gold[200]}`,
+              margin: `0 ${spacing[4]}`,
+            }}
+          >
+            <CinematicProfile
+              userData={{
+                heartedMovies,
+                bookmarkedMovies,
+                selectedPlatforms,
+              }}
+              profileType={activeProfileType}
+              minimal={true}
+            />
+          </div>
+        ) : (
+          <div
+            style={{
+              textAlign: 'center',
+              padding: `${spacing[4]} ${spacing[4]}`,
+              color: colors.gray[700],
+            }}
+          >
+            <Film size={48} color={colors.gray[300]} style={{ margin: '0 auto 16px' }} />
+            <div
+              style={{
+                fontSize: typography.fontSize.base,
+                fontWeight: typography.fontWeight.normal,
+                margin: 0,
+                fontFamily: 'system-ui, -apple-system, sans-serif',
+                textAlign: 'center',
+                lineHeight: typography.lineHeight.relaxed,
+              }}
+            >
+              <div style={{ marginBottom: '8px' }}>Track the movies you've seen.</div>
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '4px',
+                  marginBottom: '8px',
+                }}
+              >
+                <span>Use</span>
+                <CheckCircle size={16} color={colors.gray[600]} />
+                <span>to add films to your "seen" list.</span>
+              </div>
+              <button
+                onClick={() => router.push('/you/suggestions')}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  cursor: 'pointer',
+                  fontSize: '14px',
+                  color: colors.gray[500],
+                  fontWeight: typography.fontWeight.light,
+                  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                  textDecoration: 'underline',
+                  textDecorationColor: colors.gray[500],
+                  textDecorationThickness: '1px',
+                  textUnderlineOffset: '2px',
+                }}
+              >
+                Suggestions
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  };
+
+  // Render watchlist section (primary content)
+  const renderWatchlistSection = () => {
+    return (
+      <div
+        style={{
+          marginBottom: spacing[3],
+        }}
+      >
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            marginBottom: spacing[2],
+            gap: '16px',
+            padding: `0 ${spacing[4]}`,
+          }}
+        >
+          <div
+            style={{
+              flex: 1,
+              height: '1px',
+              background: 'linear-gradient(90deg, transparent, #FFD700, transparent)',
+            }}
+          />
+          <span
+            style={{
+              fontSize: '12px',
+              fontWeight: '600',
+              textTransform: 'uppercase',
+              letterSpacing: '1px',
+              color: '#d4af37',
+              fontFamily: 'system-ui, -apple-system, sans-serif',
+            }}
+          >
+            Movies to Watch
+          </span>
+          <div
+            style={{
+              flex: 1,
+              height: '1px',
+              background: 'linear-gradient(90deg, transparent, #FFD700, transparent)',
+            }}
+          />
+        </div>
+
+        {bookmarkedMovies.length > 0 ? (
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: '1fr 1fr',
+              gap: spacing[4],
+              padding: `0 ${spacing[4]}`,
+            }}
+          >
+            {bookmarkedMovies.slice(0, 4).map(movie => (
+              <div
+                key={`${movie.tmdb_id || movie.id}-watchlist`}
+                style={{
+                  aspectRatio: '2/3',
+                  borderRadius: borderRadius.md,
+                  overflow: 'hidden',
+                  backgroundColor: colors.gray[100],
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              >
+                {movie.poster ? (
+                  <img
+                    src={movie.poster}
+                    alt={movie.title}
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                    }}
+                  />
+                ) : (
+                  <Film size={32} color={colors.gray[400]} />
+                )}
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div
+            style={{
+              textAlign: 'center',
+              padding: `${spacing[4]} ${spacing[4]}`,
+              color: colors.gray[700],
+            }}
+          >
+            <Plus size={48} color={colors.gray[300]} style={{ margin: '0 auto 8px' }} />
+            <div
+              style={{
+                fontSize: typography.fontSize.base,
+                fontWeight: typography.fontWeight.normal,
+                margin: 0,
+                fontFamily: 'system-ui, -apple-system, sans-serif',
+                textAlign: 'center',
+                lineHeight: typography.lineHeight.relaxed,
+              }}
+            >
+              <div>Track the movies you want to watch.</div>
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '4px',
+                  marginTop: '4px',
+                  marginBottom: '8px',
+                }}
+              >
+                <span>Use</span>
+                <CirclePlus size={16} color={colors.gray[600]} />
+                <span>to add them to your "watch" list.</span>
+              </div>
+              <button
+                onClick={() => router.push('/you/suggestions')}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  cursor: 'pointer',
+                  fontSize: '14px',
+                  color: colors.gray[500],
+                  fontWeight: typography.fontWeight.light,
+                  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                  textDecoration: 'underline',
+                  textDecorationColor: colors.gray[500],
+                  textDecorationThickness: '1px',
+                  textUnderlineOffset: '2px',
+                }}
+              >
+                Suggestions
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  };
+
+  // Render suggestions section (from mockup)
+  const renderSuggestionsSection = () => {
+    // Get one representative movie from each theme
+    const themeRepresentatives = getThemeRepresentatives();
+    const suggestions = themeRepresentatives.map(movie => ({
+      title: movie.title,
+      year: movie.year.toString(),
+      tmdbId: movie.tmdb_id,
+    }));
+
+    return (
+      <div
+        style={{
+          marginBottom: spacing[3],
+        }}
+      >
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            marginBottom: spacing[2],
+            gap: '16px',
+            padding: `0 ${spacing[4]}`,
+          }}
+        >
+          <div
+            style={{
+              flex: 1,
+              height: '1px',
+              background: 'linear-gradient(90deg, transparent, #FFD700, transparent)',
+            }}
+          />
+          <span
+            style={{
+              fontSize: '12px',
+              fontWeight: '600',
+              textTransform: 'uppercase',
+              letterSpacing: '1px',
+              color: '#d4af37',
+              fontFamily: 'system-ui, -apple-system, sans-serif',
+            }}
+          >
+            Suggestions
+          </span>
+          <div
+            style={{
+              flex: 1,
+              height: '1px',
+              background: 'linear-gradient(90deg, transparent, #FFD700, transparent)',
+            }}
+          />
+        </div>
+
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '2px',
+            padding: `0 ${spacing[4]}`,
+          }}
+        >
+          {suggestions.map((suggestion, index) => (
+            <div
+              key={index}
+              style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                padding: '4px 0',
+              }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'baseline',
+                  flex: 1,
+                  gap: '4px',
+                }}
+              >
+                <span
+                  onClick={() => router.push(routeHelpers.getMovieRoute(suggestion.tmdbId))}
+                  style={{
+                    fontSize: '14px',
+                    color: '#374151',
+                    textDecoration: 'underline',
+                    textDecorationColor: '#d4af37',
+                    textDecorationThickness: '1px',
+                    textUnderlineOffset: '2px',
+                    fontWeight: '500',
+                    cursor: 'pointer',
+                    transition: 'all 0.2s ease',
+                  }}
+                >
+                  {suggestion.title}
+                </span>
+                <span
+                  style={{
+                    fontSize: '12px',
+                    color: '#9ca3af',
+                    fontWeight: '300',
+                  }}
+                >
+                  ({suggestion.year})
+                </span>
+              </div>
+              <div
+                style={{
+                  display: 'flex',
+                  flexDirection: 'row',
+                  gap: '6px',
+                  alignItems: 'center',
+                }}
+              >
+                <button
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    cursor: 'pointer',
+                    padding: '2px 4px',
+                    borderRadius: '4px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    transition: 'background-color 0.2s ease',
+                  }}
+                >
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '3px',
+                    }}
+                  >
+                    <Check size={16} color="#9ca3af" strokeWidth={1.5} />
+                    <span
+                      style={{
+                        fontSize: '12px',
+                        lineHeight: '1',
+                        userSelect: 'none',
+                        color: '#9ca3af',
+                        fontWeight: '400',
+                      }}
+                    >
+                      Seen
+                    </span>
+                  </div>
+                </button>
+                <button
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    cursor: 'pointer',
+                    padding: '2px 4px',
+                    borderRadius: '4px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    transition: 'background-color 0.2s ease',
+                  }}
+                >
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '3px',
+                    }}
+                  >
+                    <Plus size={16} color="#9ca3af" />
+                    <span
+                      style={{
+                        fontSize: '12px',
+                        lineHeight: '1',
+                        userSelect: 'none',
+                        color: '#9ca3af',
+                        fontWeight: '400',
+                      }}
+                    >
+                      Add
+                    </span>
+                  </div>
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* More suggestions link */}
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'flex-end',
+            padding: `8px ${spacing[4]} 0`,
+          }}
+        >
+          <button
+            onClick={() => router.push('/suggestions')}
+            style={{
+              background: 'none',
+              border: 'none',
+              cursor: 'pointer',
+              fontSize: '12px',
+              color: colors.gray[500],
+              fontWeight: typography.fontWeight.light,
+              fontFamily: 'system-ui, -apple-system, sans-serif',
+              textDecoration: 'underline',
+              textDecorationColor: colors.gray[500],
+              textDecorationThickness: '1px',
+              textUnderlineOffset: '2px',
+            }}
+          >
+            More Suggestions
+          </button>
+        </div>
+      </div>
+    );
+  };
+
+  // Render discovery section
+  const renderDiscoverySection = () => (
+    <div
+      style={{
+        marginBottom: spacing[2],
+      }}
+    >
+      <ThemeFooter />
+    </div>
+  );
 
   return (
-    <PhoneFrame active="you">
-      <div style={styles.container}>
-        {/* Fixed Ask Input Bar */}
-        <div style={styles.fixedInputArea}>
-          <AskInputBar onSubmit={handleAsk} />
+    <PhoneFrame>
+      <div
+        style={{
+          minHeight: '100vh',
+          backgroundColor: '#ffffff',
+          paddingBottom: '100px',
+        }}
+      >
+        {/* Header */}
+        <div
+          style={{
+            backgroundColor: '#ffffff',
+            borderBottom: `1px solid ${colors.border}`,
+            padding: spacing[4],
+            position: 'sticky',
+            top: 0,
+            zIndex: 10,
+          }}
+        >
+          <SimpleSearch placeholder="Search movies..." />
         </div>
-        
-        {/* Scrollable Content */}
-        <div style={styles.scrollableContent}>
-          <div style={styles.miniNav}>
-          <div style={styles.navItem}>
-            <Heart size={16} color="#ef4444" fill="#ef4444" />
-            <span style={styles.navCount}>{heartedMovies.length}</span>
-          </div>
-          <div style={styles.navSeparator}>|</div>
-          <div style={styles.navItem}>
-            <Bookmark size={16} color="#374151" fill="#374151" />
-            <span style={styles.navCount}>{bookmarkedMovies.length}</span>
-          </div>
-          <div style={styles.navSeparator}>|</div>
-          <div style={styles.navItem}>
-            <span style={styles.tvIcon}>📺</span>
-            <span style={styles.navCount}>{selectedPlatforms.length}</span>
-          </div>
-        </div>
-        
-        <div style={styles.content}>
-          <div style={styles.mainContent}>
-            <div style={styles.movieSection}>
-              <div 
-                style={styles.movieHeader}
-                onClick={() => toggleSection('hearted')}
-              >
-                <div style={styles.movieHeaderLeft}>
-                  <span style={styles.heartIcon}>❤️</span>
-                  <h2 style={styles.movieTitle}>Movies You Love</h2>
-                </div>
-                <div style={styles.movieHeaderRight}>
-                  <div style={styles.movieCount}>({heartedMovies.length})</div>
-                  <span style={styles.expandIcon}>
-                    {expandedSections.hearted ? '▼' : '▶'}
-                  </span>
-                </div>
-              </div>
-              {expandedSections.hearted && (
-                <div style={styles.movieList}>
-                  {heartedMovies.length === 0 ? (
-                    <p style={styles.emptyMessage}>No hearted movies yet. Heart some movies to see them here!</p>
-                  ) : (
-                    heartedMovies.map((movie) => (
-                      <div key={movie.id} style={styles.movieCardWrapper}>
-                        <MediaCard 
-                          title={movie.title}
-                          year={movie.year}
-                          initialSlug={movie.slug}
-                          initialPoster={movie.poster}
-                          tmdbId={movie.tmdb_id}
-                        />
-                      </div>
-                    ))
-                  )}
-                </div>
-              )}
-            </div>
 
-            <div style={styles.movieSection}>
-              <div 
-                style={styles.movieHeader}
-                onClick={() => toggleSection('bookmarked')}
-              >
-                <div style={styles.movieHeaderLeft}>
-                  <Bookmark
-                    size={20}
-                    color="#374151"
-                    fill="#374151"
-                    style={styles.bookmarkIcon}
-                  />
-                  <h2 style={styles.movieTitle}>Movies To Watch</h2>
-                </div>
-                <div style={styles.movieHeaderRight}>
-                  <div style={styles.movieCount}>({bookmarkedMovies.length})</div>
-                  <span style={styles.expandIcon}>
-                    {expandedSections.bookmarked ? '▼' : '▶'}
-                  </span>
-                </div>
-              </div>
-              {expandedSections.bookmarked && (
-                <div style={styles.movieList}>
-                  {bookmarkedMovies.length === 0 ? (
-                    <p style={styles.emptyMessage}>No bookmarked movies yet. Bookmark some movies to see them here!</p>
-                  ) : (
-                    bookmarkedMovies.map((movie) => (
-                      <div key={movie.id} style={styles.movieCardWrapper}>
-                        <MediaCard 
-                          title={movie.title}
-                          year={movie.year}
-                          initialSlug={movie.slug}
-                          initialPoster={movie.poster}
-                          tmdbId={movie.tmdb_id}
-                        />
-                      </div>
-                    ))
-                  )}
-                </div>
-              )}
-            </div>
-
-            <div style={styles.movieSection}>
-              <div 
-                style={styles.movieHeader}
-                onClick={() => toggleSection('platforms')}
-              >
-                <div style={styles.movieHeaderLeft}>
-                  <span style={styles.platformIcon}>📺</span>
-                  <h2 style={styles.movieTitle}>Edit Streaming Platforms</h2>
-                </div>
-                <div style={styles.movieHeaderRight}>
-                  <div style={styles.movieCount}>({selectedPlatforms.length})</div>
-                  <span style={styles.expandIcon}>
-                    {expandedSections.platforms ? '▼' : '▶'}
-                  </span>
-                </div>
-              </div>
-              {expandedSections.platforms && (
-                <div style={styles.platformSelectorContainer}>
-                  <PlatformSelector 
-                    onSelectionChange={handlePlatformSelectionChange}
-                    initialSelected={selectedPlatforms}
-                    showSelectedSection={false}
-                    showHeader={false}
-                  />
-                </div>
-              )}
-            </div>
-          </div>
-
-          <div style={styles.wipeSection}>
-            <button 
-              onClick={handleWipeData}
-              style={styles.wipeButton}
+        {/* Main Content */}
+        <div
+          style={{
+            padding: spacing[4],
+            paddingTop: spacing[4],
+          }}
+        >
+          {/* Cinematic Profile Header */}
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              marginBottom: spacing[3],
+              gap: '16px',
+              padding: `0 ${spacing[4]}`,
+            }}
+          >
+            <div
+              style={{
+                flex: 1,
+                height: '1px',
+                background: 'linear-gradient(90deg, transparent, #FFD700, transparent)',
+              }}
+            />
+            <span
+              style={{
+                fontSize: '12px',
+                fontWeight: '600',
+                textTransform: 'uppercase',
+                letterSpacing: '1px',
+                color: '#d4af37',
+                fontFamily: 'system-ui, -apple-system, sans-serif',
+              }}
             >
-              Clear All Data
-            </button>
-            <p style={styles.wipeText}>Reset all preferences and start fresh</p>
+              Cinematic Profile
+            </span>
+            <div
+              style={{
+                flex: 1,
+                height: '1px',
+                background: 'linear-gradient(90deg, transparent, #FFD700, transparent)',
+              }}
+            />
           </div>
-        </div>
+
+          {renderCinematicProfileSection()}
+          {renderWatchlistSection()}
+          {renderSuggestionsSection()}
+          {renderDiscoverySection()}
         </div>
       </div>
     </PhoneFrame>
   );
 }
-
-const styles = {
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    height: '100%',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-  },
-  fixedInputArea: {
-    position: 'sticky',
-    top: 0,
-    zIndex: 100,
-    padding: '16px',
-    backgroundColor: '#ffffff',
-    borderBottom: '1px solid #e5e7eb',
-    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
-  },
-  scrollableContent: {
-    flex: 1,
-    overflowY: 'scroll',
-    scrollbarWidth: 'none',
-    msOverflowStyle: 'none',
-  },
-  miniNav: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: '12px 16px',
-    backgroundColor: '#ffffff',
-    borderBottom: '1px solid #e9ecef',
-    gap: '16px',
-  },
-  navItem: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '6px',
-  },
-  navCount: {
-    fontSize: '14px',
-    fontWeight: '500',
-    color: '#374151',
-  },
-  navSeparator: {
-    fontSize: '16px',
-    color: '#d1d5db',
-    fontWeight: '300',
-  },
-  tvIcon: {
-    fontSize: '16px',
-  },
-  content: {
-    flex: 1,
-    padding: '16px',
-    overflowY: 'scroll',
-    scrollbarWidth: 'none',
-    msOverflowStyle: 'none',
-    display: 'flex',
-    flexDirection: 'column',
-  },
-  mainContent: {
-    flex: 1,
-  },
-  heading: {
-    fontSize: '18px',
-    fontWeight: '600',
-    marginBottom: '12px',
-    fontFamily: 'inherit',
-  },
-  text: {
-    fontSize: '14px',
-    fontFamily: 'inherit',
-    marginBottom: '8px',
-  },
-  movieSection: {
-    marginBottom: '20px',
-  },
-  movieHeader: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    padding: '12px 16px',
-    backgroundColor: '#f8f9fa',
-    borderRadius: '12px',
-    border: '1px solid #e9ecef',
-    cursor: 'pointer',
-    transition: 'background-color 0.2s ease',
-  },
-  movieHeaderRight: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '8px',
-  },
-  movieHeaderLeft: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '8px',
-  },
-  heartIcon: {
-    fontSize: '20px',
-  },
-  bookmarkIcon: {
-    fontSize: '20px',
-  },
-  platformIcon: {
-    fontSize: '20px',
-  },
-  movieTitle: {
-    fontSize: '18px',
-    fontWeight: '600',
-    color: '#333',
-    margin: 0,
-  },
-  movieCount: {
-    fontSize: '16px',
-    fontWeight: '500',
-    color: '#666',
-  },
-  expandIcon: {
-    fontSize: '12px',
-    color: '#666',
-    transition: 'transform 0.2s ease',
-  },
-  movieList: {
-    marginTop: '12px',
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '12px',
-  },
-  movieCardWrapper: {
-    backgroundColor: 'white',
-    borderRadius: '8px',
-    border: '1px solid #e9ecef',
-    overflow: 'hidden',
-  },
-  platformList: {
-    marginTop: '12px',
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '8px',
-  },
-  platformItem: {
-    fontSize: '16px',
-    color: '#333',
-    padding: '8px 12px',
-    backgroundColor: 'white',
-    borderRadius: '8px',
-    border: '1px solid #e9ecef',
-  },
-  emptyMessage: {
-    fontSize: '14px',
-    color: '#666',
-    fontStyle: 'italic',
-    textAlign: 'center',
-    margin: '16px 0',
-  },
-  platformSelectorContainer: {
-    marginTop: '12px',
-    padding: '16px',
-    backgroundColor: 'white',
-    borderRadius: '8px',
-    border: '1px solid #e9ecef',
-  },
-  wipeSection: {
-    marginTop: '40px',
-    paddingTop: '20px',
-    borderTop: '1px solid #e9ecef',
-    textAlign: 'center',
-  },
-  wipeButton: {
-    backgroundColor: '#dc3545',
-    color: 'white',
-    border: 'none',
-    padding: '10px 20px',
-    borderRadius: '8px',
-    fontSize: '14px',
-    fontWeight: '600',
-    cursor: 'pointer',
-    fontFamily: 'inherit',
-    transition: 'background-color 0.2s ease',
-  },
-  wipeText: {
-    fontSize: '12px',
-    color: '#666',
-    margin: '8px 0 0 0',
-    fontStyle: 'italic',
-  },
-};

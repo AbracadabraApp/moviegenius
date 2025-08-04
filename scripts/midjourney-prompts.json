@@ -1,0 +1,125 @@
+{
+  "templates": {
+    "film-noir": {
+      "basePrompt": "Cinematic still from classic film noir, dramatic chiaroscuro lighting, high contrast black and white shadows, urban nighttime setting, venetian blind shadows, cigarette smoke atmosphere, 1940s cinematography style",
+      "variations": [
+        "rain-soaked city street, neon reflections",
+        "detective's office with dramatic window light",
+        "dark alleyway with single street lamp",
+        "femme fatale silhouette in doorway",
+        "jazz club interior with stage lighting"
+      ],
+      "episodes": {
+        "german-expressionism": "German Expressionist influence, distorted angular shadows, painted backdrop aesthetic, The Cabinet of Dr. Caligari style, geometric shadows, tilted perspectives",
+        "from-novels-to-noir": "Literary adaptation atmosphere, classic books and manuscripts, typewriter and papers, vintage detective novel cover aesthetic",
+        "urban-anxiety": "Claustrophobic city atmosphere, crowded streets, urban decay, psychological tension, overwhelming architecture",
+        "femme-fatales": "Mysterious woman silhouette, red lips in black and white, dangerous beauty, seductive lighting, glamorous yet threatening",
+        "moral-ambiguity": "Split lighting on face, good and evil duality, moral crossroads, conflicted character, ethical dilemma visualization",
+        "noirs-legacy": "Modern noir influence, contemporary city at night, neo-noir aesthetic, timeless criminal atmosphere"
+      }
+    },
+    "contemporary-auteurs": {
+      "basePrompt": "Modern cinematic composition, auteur filmmaker style, sophisticated camera work, contemporary film aesthetic, directorial vision, artistic cinematography",
+      "variations": [
+        "film set with professional equipment",
+        "director's viewfinder perspective",
+        "movie theater screening room",
+        "film festival red carpet atmosphere",
+        "editing room with multiple monitors"
+      ],
+      "episodes": {
+        "coen-brothers": "Quirky americana landscape, vintage roadside diner, desert highway, eccentric character silhouettes, retro americana with dark humor undertones, wide angle composition"
+      }
+    },
+    "technical-evolution": {
+      "basePrompt": "Evolution of cinema technology, behind-the-scenes filmmaking, innovative camera techniques, special effects development, technical innovation in movies",
+      "variations": [
+        "vintage film equipment progression",
+        "special effects workshop",
+        "sound recording studio",
+        "digital vs analog comparison",
+        "motion capture technology"
+      ],
+      "episodes": {
+        "digital-revolution": "Computer graphics workstation, digital effects creation, CGI wireframes overlaying real footage, technological transformation, futuristic film production, digital vs practical effects split screen"
+      }
+    },
+    "decades": {
+      "basePrompt": "Cinematic time period representation, decade-specific film aesthetic, historical movie atmosphere, era-defining cinematography, cultural zeitgeist through film",
+      "variations": [
+        "movie theater marquee from specific era",
+        "film production from the decade",
+        "iconic movie poster designs",
+        "period-accurate film equipment",
+        "cultural moments captured on film"
+      ],
+      "episodes": {
+        "1970s-auteur": "1970s New Hollywood atmosphere, young filmmaker with long hair, vintage film camera, counterculture influence, Easy Rider aesthetic, rebellious cinematic spirit",
+        "1990s-independent": "Sundance Film Festival atmosphere, indie film production, handheld camera aesthetic, alternative culture influence, Pulp Fiction style, independent filmmaker workspace"
+      }
+    }
+  },
+  "styleModifiers": {
+    "aspect": "--ar 2:1",
+    "quality": "--style raw --quality 2",
+    "cinematography": [
+      "professional cinematography",
+      "film photography aesthetic",
+      "35mm film grain",
+      "anamorphic lens flare",
+      "shallow depth of field",
+      "dramatic lighting setup"
+    ],
+    "mood": [
+      "sophisticated atmosphere",
+      "intellectual ambiance",
+      "artistic composition",
+      "museum quality",
+      "editorial photography style",
+      "criterion collection aesthetic"
+    ],
+    "colors": [
+      "warm golden hour lighting",
+      "rich cinematic color grading",
+      "deep shadows and highlights",
+      "film noir contrast",
+      "vintage color palette",
+      "muted earth tones with gold accents"
+    ]
+  },
+  "quickPrompts": {
+    "general-episode": "Sophisticated cinematic still, film studies aesthetic, dramatic lighting, editorial photography style, museum quality composition, warm golden lighting, rich contrast, --ar 2:1 --style raw",
+    "noir-generic": "Classic film noir atmosphere, dramatic shadows, high contrast lighting, urban nighttime, cinematographic excellence, --ar 2:1 --style raw",
+    "modern-cinema": "Contemporary film production, sophisticated cinematography, artistic direction, professional film aesthetic, warm cinematic lighting, --ar 2:1 --style raw"
+  },
+  "promptBuilder": {
+    "structure": "[SUBJECT] + [STYLE] + [LIGHTING] + [MOOD] + [TECHNICAL]",
+    "examples": [
+      {
+        "episode": "German Expressionism",
+        "prompt": "German Expressionist film set with dramatic angular shadows + silent film era aesthetic + high contrast chiaroscuro lighting + psychological tension atmosphere + professional cinematography --ar 2:1 --style raw"
+      },
+      {
+        "episode": "Digital Revolution",
+        "prompt": "CGI creation workspace with wireframe graphics + modern film production aesthetic + dramatic studio lighting + technological innovation mood + professional cinematography --ar 2:1 --style raw"
+      }
+    ]
+  },
+  "usage": {
+    "instructions": [
+      "1. Choose your episode theme from the templates",
+      "2. Use the base prompt + episode-specific details",
+      "3. Add 2-3 style modifiers from different categories",
+      "4. Always include --ar 2:1 for correct aspect ratio",
+      "5. Use --style raw for more cinematic results",
+      "6. Test variations by swapping elements"
+    ],
+    "tips": [
+      "Include 'professional cinematography' for film-quality results",
+      "Add 'editorial photography' for sophisticated compositions",
+      "Use 'criterion collection aesthetic' for artistic gravitas",
+      "Combine 'warm golden lighting' with 'deep shadows' for cinematic look",
+      "Add decade-specific elements for historical episodes"
+    ]
+  }
+}

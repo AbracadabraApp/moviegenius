@@ -22,7 +22,7 @@
     "updatedAt": "2025-01-01T00:00:00.000Z"
   },
   {
-    "slug": "meryl-streep", 
+    "slug": "meryl-streep",
     "name": "Meryl Streep",
     "category": "actor",
     "subCategories": ["producer"],
@@ -30,7 +30,7 @@
     "nationality": "American",
     "knownFor": [
       "The Devil Wears Prada",
-      "Sophie's Choice", 
+      "Sophie's Choice",
       "Kramer vs. Kramer",
       "The Iron Lady",
       "Doubt",
@@ -137,12 +137,7 @@
     "subCategories": ["screenwriter", "producer", "actor"],
     "birthYear": 1979,
     "nationality": "American",
-    "knownFor": [
-      "Get Out",
-      "Us",
-      "Nope",
-      "Key & Peele"
-    ],
+    "knownFor": ["Get Out", "Us", "Nope", "Key & Peele"],
     "tmdbId": 291263,
     "imdbId": "nm1443502",
     "bio": "Jordan Peele is an American filmmaker and comedian. He is known for his horror films that explore social and racial themes through a thriller genre framework.",
@@ -157,10 +152,7 @@
     "subCategories": ["screenwriter"],
     "birthYear": 1986,
     "nationality": "American",
-    "knownFor": [
-      "Hereditary",
-      "Midsommar"
-    ],
+    "knownFor": ["Hereditary", "Midsommar"],
     "tmdbId": 1625558,
     "imdbId": "nm4170048",
     "bio": "Ari Aster is an American writer and director known for his horror films. His work is characterized by elaborate production design and disturbing imagery.",
@@ -196,11 +188,7 @@
     "subCategories": ["screenwriter"],
     "birthYear": 1983,
     "nationality": "American",
-    "knownFor": [
-      "The Witch",
-      "The Lighthouse",
-      "The Northman"
-    ],
+    "knownFor": ["The Witch", "The Lighthouse", "The Northman"],
     "tmdbId": 1208719,
     "imdbId": "nm4738517",
     "bio": "Robert Eggers is an American filmmaker known for his period horror films. His work is characterized by meticulous historical research and atmospheric storytelling.",

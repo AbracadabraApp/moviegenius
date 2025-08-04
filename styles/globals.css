@@ -3,6 +3,9 @@
 /* Import entity linking styles */
 @import './entity-linking.css';
 
+/* Import movie title styles */
+@import './movieTitle.css';
+
 /* Hide all scrollbars globally */
 * {
   scrollbar-width: none; /* Firefox */
@@ -13,7 +16,8 @@
   display: none; /* Chrome, Safari, and Opera */
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden; /* Prevent horizontal scrolling */
   width: 100%;
   max-width: 100vw;
@@ -22,13 +26,23 @@ html, body {
 }
 
 /* Ensure all containers don't exceed viewport width */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   max-width: 100%;
 }
 
 /* Ensure text wraps and doesn't cause horizontal overflow */
-p, div, span, h1, h2, h3, h4, h5, h6 {
+p,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   word-wrap: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
@@ -42,19 +56,33 @@ img {
 
 /* Film reel spinner animations */
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes filmRoll {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 /* Cursor blink animation */
 @keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
 }
 
 /* Screen reader only content */
@@ -68,4 +96,44 @@ img {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+/* SUBHEAD formatting */
+.subhead {
+  font-size: 16px;
+  color: #d4af37;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+/* Remove drop cap effects from analysis content */
+p::first-letter,
+div::first-letter {
+  float: none !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  font-weight: inherit !important;
+  color: inherit !important;
+  text-transform: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Search input placeholder styling */
+.search-input-placeholder::placeholder {
+  color: #9ca3af; /* Medium grey for placeholder */
+}
+
+/* Back button styling */
+.back-button {
+  transition: opacity 0.2s ease;
+}
+
+.back-button:hover {
+  opacity: 0.8;
+}
+
+.back-button:active {
+  opacity: 0.6;
 }

@@ -1,0 +1,76 @@
+{
+  "system": "genius",
+  "themeId": 5,
+  "seriesId": 1,
+  "episodeId": 3,
+  "theme": {
+    "id": 5,
+    "title": "Topics",
+    "description": "Cultural and historical contexts in cinema",
+    "slug": "topics"
+  },
+  "series": {
+    "id": 1,
+    "title": "Decades",
+    "description": "Cinema through the decades"
+  },
+  "episode": {
+    "id": 3,
+    "title": "1990s: Independent Renaissance",
+    "subtitle": "Sundance and artistic freedom"
+  },
+  "content": {
+    "opener": null,
+    "sections": [],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Clerks",
+          "year": 1994,
+          "slug": "Kevin Smith's micro-budget convenience store comedy",
+          "streaming": "Netflix",
+          "tmdb_id": 2292,
+          "poster_url": "https://image.tmdb.org/t/p/w500/9IiSgiq4h4siTIS9H3o4nZ3h5L9.jpg"
+        },
+        {
+          "title": "Welcome to the Dollhouse",
+          "year": 1995,
+          "slug": "Todd Solondz's dark suburban comedy",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 11446,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fsMMOVto87pvUQyozOF9CaT9aMR.jpg"
+        },
+        {
+          "title": "The Sweet Hereafter",
+          "year": 1997,
+          "slug": "Atom Egoyan's haunting drama about community tragedy",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 10217,
+          "poster_url": "https://image.tmdb.org/t/p/w500/gJy7LMq4b5qO5fsSUSoBgm24BHf.jpg"
+        },
+        {
+          "title": "Metropolitan",
+          "year": 1990,
+          "slug": "Whit Stillman's sophisticated comedy of manners",
+          "streaming": "HBO Max",
+          "tmdb_id": 15389,
+          "poster_url": "https://image.tmdb.org/t/p/w500/852ZwTRj9tRxkGOT0Pu0Ep8yimk.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-18T17:28:47.471Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-18T17:28:47.471Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-5-topics/series-1-decades//3-1990s-independent-renaissance.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:55.884Z",
+    "hasLinks": false,
+    "linksAdded": 0,
+    "tier": "tier2_link_only"
+  }
+}

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Page Static Template</title>
+    <style>
+        /* Base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Movie Header */
+        .movie-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+            margin-bottom: 40px;
+        }
+        
+        .movie-info {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+        }
+        
+        .poster {
+            width: 200px;
+            height: 300px;
+            background: #ddd;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+        
+        .movie-details h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .movie-meta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .movie-description {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+        
+        /* Analysis Section */
+        .analysis-section {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .analysis-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        /* SUBHEAD styling */
+        .subhead {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #34495e;
+            margin: 30px 0 15px 0;
+            padding-left: 15px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .analysis-paragraph {
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            color: #555;
+        }
+        
+        /* MediaCards */
+        .media-cards {
+            margin: 40px 0;
+        }
+        
+        .media-cards h3 {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        
+        .media-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        
+        .media-card:hover {
+            transform: translateY(-2px);
+        }
+        
+        .card-poster {
+            width: 100%;
+            height: 225px;
+            background: #ddd;
+        }
+        
+        .card-info {
+            padding: 12px;
+        }
+        
+        .card-title {
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 4px;
+        }
+        
+        .card-year {
+            color: #666;
+            font-size: 0.8rem;
+        }
+        
+        /* Explore Further */
+        .explore-further {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 30px;
+            margin: 40px 0;
+        }
+        
+        .explore-further h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .explore-topics {
+            list-style: none;
+        }
+        
+        .explore-topics li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 1rem;
+        }
+        
+        .explore-topics li:last-child {
+            border-bottom: none;
+        }
+        
+        /* Mobile-first responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .movie-header {
+                padding: 30px 0;
+            }
+            
+            .movie-info {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+            
+            .poster {
+                width: 120px;
+                height: 180px;
+                margin: 0 auto;
+            }
+            
+            .movie-details h1 {
+                font-size: 1.8rem;
+                line-height: 1.3;
+            }
+            
+            .movie-meta {
+                font-size: 1rem;
+                gap: 15px;
+                justify-content: center;
+            }
+            
+            .movie-description {
+                font-size: 1rem;
+            }
+            
+            .analysis-section {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+            
+            .analysis-section h2 {
+                font-size: 1.5rem;
+            }
+            
+            .subhead {
+                font-size: 1.2rem;
+                margin: 25px 0 12px 0;
+            }
+            
+            .analysis-paragraph {
+                font-size: 0.95rem;
+                margin-bottom: 20px;
+            }
+            
+            .cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+            
+            .media-card {
+                font-size: 0.85rem;
+            }
+            
+            .card-poster {
+                height: 160px;
+            }
+            
+            .explore-further {
+                padding: 20px;
+                margin: 30px 0;
+            }
+            
+            .explore-further h3 {
+                font-size: 1.3rem;
+            }
+            
+            .explore-topics li {
+                font-size: 0.95rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 12px;
+            }
+            
+            .movie-details h1 {
+                font-size: 1.6rem;
+            }
+            
+            .analysis-section {
+                padding: 15px;
+            }
+            
+            .cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            
+            .card-poster {
+                height: 140px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Movie Header -->
+    <div class="movie-header">
+        <div class="container">
+            <div class="movie-info">
+                <div class="poster"></div>
+                <div class="movie-details">
+                    <h1>The L Word Mississippi: Hate the Sin</h1>
+                    <div class="movie-meta">
+                        <span>2014</span>
+                        <span>•</span>
+                        <span>Documentary</span>
+                        <span>•</span>
+                        <span>1h 24m</span>
+                    </div>
+                    <div class="movie-description">
+                        A documentary exploring LGBTQ+ life in Mississippi, examining the intersection of religion, sexuality, and Southern culture through personal stories and community perspectives.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Analysis Section -->
+        <div class="analysis-section">
+            <h2>Analysis</h2>
+            
+            <div class="analysis-paragraph">
+                This groundbreaking documentary offers an unflinching examination of LGBTQ+ life in one of America's most conservative states. Director takes viewers deep into Mississippi's complex social fabric, where religious tradition and personal identity often collide.
+            </div>
+
+            <div class="subhead">Cultural Context and Religious Tensions</div>
+            <div class="analysis-paragraph">
+                The film expertly navigates the challenging terrain between deeply held religious beliefs and individual sexual identity. Through intimate interviews with local residents, it reveals how faith communities grapple with inclusion and acceptance while maintaining traditional values.
+            </div>
+
+            <div class="subhead">Personal Stories and Community Impact</div>
+            <div class="analysis-paragraph">
+                What makes this documentary particularly powerful is its focus on personal narratives rather than political rhetoric. Each subject brings a unique perspective to the broader conversation about LGBTQ+ rights in the South, creating a nuanced portrait that avoids easy categorization.
+            </div>
+
+            <!-- MediaCards Section -->
+            <div class="media-cards">
+                <h3>Featured Films</h3>
+                <div class="cards-grid">
+                    <div class="media-card">
+                        <div class="card-poster"></div>
+                        <div class="card-info">
+                            <div class="card-title">Milk</div>
+                            <div class="card-year">2008</div>
+                        </div>
+                    </div>
+                    <div class="media-card">
+                        <div class="card-poster"></div>
+                        <div class="card-info">
+                            <div class="card-title">Moonlight</div>
+                            <div class="card-year">2016</div>
+                        </div>
+                    </div>
+                    <div class="media-card">
+                        <div class="card-poster"></div>
+                        <div class="card-info">
+                            <div class="card-title">Paris Is Burning</div>
+                            <div class="card-year">1990</div>
+                        </div>
+                    </div>
+                    <div class="media-card">
+                        <div class="card-poster"></div>
+                        <div class="card-info">
+                            <div class="card-title">Boys Don't Cry</div>
+                            <div class="card-year">1999</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="analysis-paragraph">
+                The documentary's cinematography deserves special mention, using natural lighting and handheld camera work to create an intimate, almost confessional atmosphere. This visual approach reinforces the personal nature of the stories being told.
+            </div>
+
+            <!-- Explore Further Section -->
+            <div class="explore-further">
+                <h3>Explore Further</h3>
+                <ul class="explore-topics">
+                    <li>LGBTQ+ Rights in the American South</li>
+                    <li>Religion and Sexual Identity in Conservative Communities</li>
+                    <li>Documentary Filmmaking and Social Change</li>
+                    <li>Mississippi's Cultural and Political Landscape</li>
+                    <li>Community Building and Acceptance</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

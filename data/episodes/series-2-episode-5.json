@@ -1,0 +1,294 @@
+{
+  "seriesId": "2",
+  "episodeId": "5",
+  "series": {
+    "id": 2,
+    "title": "Cinema Through Time - 1970-2025",
+    "description": "How film evolved from the auteur renaissance through the present day"
+  },
+  "episode": {
+    "id": 5,
+    "title": "2010s: Global Cinema Rising",
+    "subtitle": "International voices reshape Hollywood and streaming",
+    "posters": [
+      "https://image.tmdb.org/t/p/w200/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+      "https://image.tmdb.org/t/p/w200/zzWGRw277MNoCs3zhyG3YmYQsXv.jpg",
+      "https://image.tmdb.org/t/p/w200/iGkziJ7aNdMGtTRrJBNYl8RrBRP.jpg",
+      "https://image.tmdb.org/t/p/w200/TU9NIjwzjoKPwQHoHshkBhDmiliE.jpg"
+    ]
+  },
+  "content": {
+    "opener": "The 2010s witnessed the globalization of cinema, as international filmmakers gained unprecedented influence in Hollywood while streaming platforms democratized distribution, creating a more diverse and interconnected film ecosystem than ever before.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "The decade opened with international directors bringing fresh perspectives to major studio productions, as filmmakers like Denis Villeneuve, Chloé Zhao, and Bong Joon-ho transitioned from art house success to blockbuster filmmaking. Arrival demonstrated how science fiction could explore complex themes of communication and time, while Parasite became the first non-English film to win Best Picture, breaking down long-standing barriers between international and American cinema. These successes proved that global voices could enhance rather than threaten Hollywood's commercial appeal, leading to more diverse hiring practices and storytelling approaches."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Arrival",
+            "year": 2016,
+            "slug": "Villeneuve's alien contact film explores language and time",
+            "tmdb_id": "329865",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Parasite",
+            "year": 2019,
+            "slug": "Bong's class satire makes history at Academy Awards",
+            "tmdb_id": "496243",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "The Shape of Water",
+            "year": 2017,
+            "slug": "del Toro's monster romance wins Best Picture",
+            "tmdb_id": "399055",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Streaming platforms fundamentally altered distribution and consumption patterns, as Netflix, Amazon, and Hulu began producing original content that competed directly with theatrical releases for talent and audience attention. The success of House of Cards and Stranger Things proved that streaming series could achieve cinematic production values, while films like Roma and The Irishman demonstrated that streaming platforms could support auteur filmmaking at the highest level. This shift created new opportunities for experimental and diverse content while challenging traditional theatrical exhibition models that had dominated for over a century."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Roma",
+            "year": 2018,
+            "slug": "Cuarón's personal masterpiece elevates Netflix's prestige",
+            "tmdb_id": "447332",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "The Irishman",
+            "year": 2019,
+            "slug": "Scorsese's mob epic gets Netflix's biggest budget",
+            "tmdb_id": "398978",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Marriage Story",
+            "year": 2019,
+            "slug": "Baumbach's divorce drama showcases streaming's dramatic power",
+            "tmdb_id": "492188",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Marvel Studios perfected the cinematic universe model, creating an interconnected narrative spanning multiple films that redefined how audiences engage with franchise entertainment. Avengers: Endgame became a cultural event that demonstrated the power of long-form storytelling across multiple films, while Black Panther proved that superhero films could address serious social issues while achieving massive commercial success. This success influenced other studios to attempt their own cinematic universes, fundamentally altering development strategies across the industry."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Avengers: Endgame",
+            "year": 2019,
+            "slug": "Russos conclude MCU's Infinity Saga with record-breaking event",
+            "tmdb_id": "299534",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Black Panther",
+            "year": 2018,
+            "slug": "Coogler's superhero film becomes cultural phenomenon",
+            "tmdb_id": "284054",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Spider-Man: Into the Spider-Verse",
+            "year": 2018,
+            "slug": "Animation breakthrough wins Oscar for visual innovation",
+            "tmdb_id": "324857",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Independent filmmakers gained new platforms and recognition through film festivals and streaming distribution, while movements like #MeToo and #OscarsSoWhite forced the industry to confront systemic issues of representation and workplace culture. Films like Moonlight and Lady Bird demonstrated that intimate personal stories could achieve both critical acclaim and commercial success, while Get Out proved that genre filmmaking could address contemporary social issues with sophistication and commercial appeal. These successes led to more diverse voices receiving financing and distribution opportunities throughout the decade."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Moonlight",
+            "year": 2016,
+            "slug": "Jenkins' coming-of-age drama wins surprise Best Picture",
+            "tmdb_id": "376867",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Lady Bird",
+            "year": 2017,
+            "slug": "Gerwig's directorial debut captures adolescent authenticity",
+            "tmdb_id": "391713",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Get Out",
+            "year": 2017,
+            "slug": "Peele's horror debut launches social thriller renaissance",
+            "tmdb_id": "419704",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Technology continued evolving with virtual reality, high frame rate projection, and advanced motion capture, while social media transformed marketing and audience engagement strategies. Films like Mad Max: Fury Road demonstrated how practical effects could still create spectacular action sequences, while advances in digital de-aging technology allowed filmmakers to explore new narrative possibilities. The decade also saw the rise of international co-productions as studios sought to access global markets, particularly China, leading to films designed for worldwide rather than primarily American audiences."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Mad Max: Fury Road",
+            "year": 2015,
+            "slug": "Miller's practical effects masterpiece revives action cinema",
+            "tmdb_id": "76341",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Blade Runner 2049",
+            "year": 2017,
+            "slug": "Villeneuve's sequel honors original while expanding mythology",
+            "tmdb_id": "335984",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "1917",
+            "year": 2019,
+            "slug": "Mendes' WWI epic showcases long-take cinematography",
+            "tmdb_id": "424785",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The decade's conclusion with the COVID-19 pandemic accelerated existing trends toward streaming consumption while forcing the industry to reconsider theatrical distribution models. Films like Parasite and Roma proved that audiences would embrace subtitled and international content when it was readily accessible, while the success of diverse voices behind and in front of the camera demonstrated that inclusion enhanced rather than limited commercial appeal. The 2010s established foundations for a more global, diverse, and technologically sophisticated film industry that would define the following decade's development."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Once Upon a Time in Hollywood",
+            "year": 2019,
+            "slug": "Tarantino's love letter to 1960s Los Angeles",
+            "tmdb_id": "466272",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "Joker",
+            "year": 2019,
+            "slug": "Phillips' character study becomes billion-dollar success",
+            "tmdb_id": "475557",
+            "poster_url": null,
+            "streaming": null
+          },
+          {
+            "title": "The Grand Budapest Hotel",
+            "year": 2014,
+            "slug": "Anderson's whimsical caper perfects his distinctive style",
+            "tmdb_id": "120467",
+            "poster_url": null,
+            "streaming": null
+          }
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More 2010s Global Cinema",
+      "movies": [
+        {
+          "title": "Call Me by Your Name",
+          "year": 2017,
+          "slug": "Guadagnino's Italian summer romance becomes cultural touchstone",
+          "tmdb_id": "395982",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "The Favourite",
+          "year": 2018,
+          "slug": "Lanthimos' period satire showcases twisted royal court",
+          "tmdb_id": "419430",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Hereditary",
+          "year": 2018,
+          "slug": "Aster's horror debut redefines contemporary scary movies",
+          "tmdb_id": "493922",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "The Social Network",
+          "year": 2010,
+          "slug": "Fincher chronicles Facebook's creation and consequences",
+          "tmdb_id": "37799",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Whiplash",
+          "year": 2014,
+          "slug": "Chazelle's music drama explores perfectionism and abuse",
+          "tmdb_id": "244786",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Her",
+          "year": 2013,
+          "slug": "Jonze's AI romance predicts digital intimacy",
+          "tmdb_id": "152601",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "The Master",
+          "year": 2012,
+          "slug": "Anderson's psychological drama explores post-war trauma",
+          "tmdb_id": "124935",
+          "poster_url": null,
+          "streaming": null
+        },
+        {
+          "title": "Knives Out",
+          "year": 2019,
+          "slug": "Johnson's murder mystery revives classic whodunit format",
+          "tmdb_id": "546554",
+          "poster_url": null,
+          "streaming": null
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-11T10:33:00.000Z",
+  "version": "1.0"
+}

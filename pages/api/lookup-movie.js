@@ -1,5 +1,6 @@
 // pages/api/lookup-movie.js
 import { createClient } from '@supabase/supabase-js';
+import { getCache } from '../../lib/cache.js';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -38,7 +39,7 @@ export default async function handler(req, res) {
         .select('title, year, tmdb_id')
         .ilike('title', `%${title.split(':')[0].trim()}%`)
         .limit(5);
-      
+
       console.log(`🔍 Similar titles found:`, similarMovies);
     }
 
@@ -48,20 +49,35 @@ export default async function handler(req, res) {
     } else {
       // Movie not found in database - try TMDB lookup and save
       console.log(`Movie not in database, trying TMDB lookup: ${title} (${year})`);
-      
-      try {
-        // Look up movie in TMDB
-        const tmdbResponse = await fetch(
-          `https://api.themoviedb.org/3/search/movie?api_key=${process.env.TMDB_API_KEY}&query=${encodeURIComponent(title)}&year=${year}`
-        );
-        
-        if (!tmdbResponse.ok) {
-          throw new Error('TMDB API request failed');
-        }
 
-        const tmdbData = await tmdbResponse.json();
-        const tmdbMovie = tmdbData.results?.[0];
-        
+      try {
+        // Look up movie in TMDB with Redis caching
+        const cache = getCache();
+        const tmdbMovie = await cache.cacheTMDBResponse(
+          'search_movie',
+          { title, year },
+          async () => {
+            console.log(`🔄 Cache miss - fetching TMDB data for lookup: ${title} (${year})`);
+
+            const tmdbResponse = await fetch(
+              `https://api.themoviedb.org/3/search/movie?api_key=${process.env.TMDB_API_KEY}&query=${encodeURIComponent(title)}&year=${year}`
+            );
+
+            if (!tmdbResponse.ok) {
+              throw new Error('TMDB API request failed');
+            }
+
+            const tmdbData = await tmdbResponse.json();
+            const movie = tmdbData.results?.[0];
+
+            if (movie) {
+              console.log(`💾 Cached TMDB lookup for: ${title} (${year}) - TMDB ID: ${movie.id}`);
+            }
+
+            return movie;
+          }
+        );
+
         if (tmdbMovie) {
           // Check if movie with this TMDB ID already exists
           const { data: existingMovie } = await supabase
@@ -71,7 +87,9 @@ export default async function handler(req, res) {
             .single();
 
           if (existingMovie) {
-            console.log(`Movie already exists with TMDB ID ${tmdbMovie.id}: ${existingMovie.title} (${existingMovie.year})`);
+            console.log(
+              `Movie already exists with TMDB ID ${tmdbMovie.id}: ${existingMovie.title} (${existingMovie.year})`
+            );
             res.status(200).json(existingMovie);
             return;
           }
@@ -83,12 +101,12 @@ export default async function handler(req, res) {
             year: year,
             official_title: tmdbMovie.title,
             release_date: tmdbMovie.release_date || null,
-            poster_url: tmdbMovie.poster_path 
+            poster_url: tmdbMovie.poster_path
               ? `https://image.tmdb.org/t/p/w500${tmdbMovie.poster_path}`
               : null,
             slug: null, // Will be added by Claude later if needed
             streaming_data: null,
-            created_at: new Date().toISOString()
+            created_at: new Date().toISOString(),
           };
 
           // Save to database
@@ -99,7 +117,9 @@ export default async function handler(req, res) {
             .single();
 
           if (savedMovie && !saveError) {
-            console.log(`Successfully saved new movie: ${title} (${year}) with TMDB ID: ${tmdbMovie.id}`);
+            console.log(
+              `Successfully saved new movie: ${title} (${year}) with TMDB ID: ${tmdbMovie.id}`
+            );
             res.status(200).json(savedMovie);
           } else {
             console.error('Error saving movie to database:', saveError);

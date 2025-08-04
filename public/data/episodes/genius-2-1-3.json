@@ -1,0 +1,216 @@
+{
+  "system": "genius",
+  "themeId": 2,
+  "seriesId": 1,
+  "episodeId": 3,
+  "theme": {
+    "id": 2,
+    "title": "Directors",
+    "description": "Visionary filmmakers and their personal cinema",
+    "slug": "directors"
+  },
+  "series": {
+    "id": 1,
+    "title": "Women Directors",
+    "description": "Pioneering female voices in cinema"
+  },
+  "episode": {
+    "id": 3,
+    "title": "Chantal Akerman: Radical Minimalism",
+    "subtitle": "Feminist time and space"
+  },
+  "content": {
+    "opener": "Chantal Akerman revolutionized feminist cinema through her radical approach to time, space, and the female experience, most notably in her masterpiece <a href=\"/movie/44012\" class=\"movie-title\" data-tmdb-id=\"44012\">Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles</a> (1975).",
+    "sections": [
+      {
+        "type": "text",
+        "content": "Akerman emerged in the 1970s as part of a wave of feminist filmmakers challenging traditional cinematic language. Her distinctive style developed from both structural film influences and her Jewish-Belgian background, particularly her mother's experiences as a Holocaust survivor. Akerman's approach to duration and the mundane aspects of women's lives created a new feminist aesthetic that forced viewers to confront the reality of domestic labor and female isolation. Her use of static camera positions, long takes, and minimal dialogue established a formal rigor that influenced generations of experimental filmmakers."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles",
+            "year": 1975,
+            "slug": "A masterwork of feminist cinema following three days in a widow's life through rigid domestic routines",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 44012,
+            "poster_url": "https://image.tmdb.org/t/p/w500/yeL8c24oBUQSdms8f7GmRvx3DIZ.jpg"
+          },
+          {
+            "title": "News from Home",
+            "year": 1977,
+            "slug": "Akerman reads letters from her mother over long takes of 1970s New York City",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 86814,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5LqgIR3npCOswRefM5f437Xx9Hb.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "The Politics of Duration and Domestic Space"
+      },
+      {
+        "type": "text",
+        "content": "In \"Jeanne Dielman,\" Akerman's most celebrated work, she transforms over three hours of screen time into a radical feminist statement. The film meticulously documents a widow's daily routines - making beds, preparing meals, entertaining male clients - through fixed camera positions and real-time duration. This approach forces viewers to experience the weight of domestic labor typically rendered invisible in cinema. The film's infamous conclusion, where the protagonist commits a shocking act of violence, emerges organically from the accumulated tension of these precisely observed routines."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Hotel Monterey",
+            "year": 1972,
+            "slug": "A silent study of a cheap hotel's spaces and inhabitants through static compositions",
+            "streaming": "MUBI",
+            "tmdb_id": null,
+            "poster_url": null
+          },
+          {
+            "title": "Je Tu Il Elle",
+            "year": 1974,
+            "slug": "A minimalist exploration of isolation and desire through three distinct episodes",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 93934,
+            "poster_url": "https://image.tmdb.org/t/p/w500/4arnTs41WSLWsnENWdljFKo0pu1.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Autobiography and Displacement"
+      },
+      {
+        "type": "text",
+        "content": "Akerman's Jewish identity and her family's Holocaust history profoundly influenced her work on displacement and memory. <a href=\"/movie/86814\" class=\"movie-title\" data-tmdb-id=\"86814\">News from Home</a> (1977) creates a powerful meditation on distance and belonging by contrasting images of New York City with letters from her mother in Brussels. The film's extended shots of urban spaces, combined with the intimate voiceover, establish a complex dialogue between presence and absence. Similarly, \"D'Est\" (1993) traces a journey through Eastern Europe after the fall of communism, creating a haunting document of transition and cultural memory through Akerman's characteristic long takes and careful attention to faces and spaces."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "D'Est",
+            "year": 1993,
+            "slug": "A wordless journey through post-Soviet Eastern Europe examining faces, places, and waiting",
+            "streaming": "MUBI",
+            "tmdb_id": 104739,
+            "poster_url": "https://image.tmdb.org/t/p/w500/o5Qi0fiB2xteF3T1E4VK6q3l5VX.jpg"
+          },
+          {
+            "title": "From the East",
+            "year": 1993,
+            "slug": "Documentary exploring post-communist Eastern Europe through extended observations",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 104739,
+            "poster_url": "https://image.tmdb.org/t/p/w500/o5Qi0fiB2xteF3T1E4VK6q3l5VX.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Formal Innovation and Visual Strategy"
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Akerman's visual strategy consistently emphasized what she called \"images between images.\" Her static camera positions and extended durational shots create a contemplative space where viewers must actively engage with time and composition. In \"Les Rendez-vous d'Anna\" (1978), she uses architectural framing and empty spaces to emphasize the protagonist's alienation during a promotional tour. The film's careful composition of hotel rooms, train stations, and transitional spaces reflects Akerman's ongoing interest in how physical environments shape human experience and memory."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Les Rendez-vous d'Anna",
+            "year": 1978,
+            "slug": "A film director's lonely journey through European cities examining displacement",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 93669,
+            "poster_url": "https://image.tmdb.org/t/p/w500/5EU7BNT3m5TG4UfSzTiSOaC0Hrg.jpg"
+          },
+          {
+            "title": "Toute une nuit",
+            "year": 1982,
+            "slug": "A series of nocturnal encounters in Brussels exploring love and loneliness",
+            "streaming": "MUBI",
+            "tmdb_id": 63215,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ruXSiqpZCWeq1KBNxAWPC0OrnAt.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Legacy and Influence"
+      },
+      {
+        "type": "text",
+        "content": "Akerman's influence extends far beyond feminist cinema, impacting contemporary art and experimental film. Her installation work, including \"NOW\" (2015), transferred her cinematic concerns with time and space into gallery contexts. Her approach to duration and domestic space can be seen in the work of contemporary filmmakers like Kelly Reichardt and Joanna Hogg. The recent restoration and wider availability of \"Jeanne Dielman\" has introduced her work to new generations, confirming her position as a pivotal figure in both feminist and avant-garde cinema."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "La Captive",
+            "year": 2000,
+            "slug": "Adaptation of Proust exploring obsession and surveillance",
+            "streaming": "MUBI",
+            "tmdb_id": 47244,
+            "poster_url": "https://image.tmdb.org/t/p/w500/h7M7jy1tzLR5Il0jZptEYw0ECnt.jpg"
+          },
+          {
+            "title": "No Home Movie",
+            "year": 2015,
+            "slug": "Akerman's final film documenting conversations with her mother",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 354388,
+            "poster_url": "https://image.tmdb.org/t/p/w500/nJkqzHITCxf1pLQyQpV7w72QhWF.jpg"
+          }
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "South",
+          "year": 1999,
+          "slug": "Documentary examining American racial history through James Baldwin's perspective",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 76796,
+          "poster_url": "https://image.tmdb.org/t/p/w500/xQSChz9j9NZbUKUPiLoSwmKUMoD.jpg"
+        },
+        {
+          "title": "Tomorrow We Move",
+          "year": 2004,
+          "slug": "Comedy about mother-daughter relationships and displacement",
+          "streaming": "MUBI",
+          "tmdb_id": 78789,
+          "poster_url": "https://image.tmdb.org/t/p/w500/394noZRcTo3tNSR6nyXM4z1l8E2.jpg"
+        },
+        {
+          "title": "Almayer's Folly",
+          "year": 2011,
+          "slug": "Adaptation of Joseph Conrad exploring colonialism and identity",
+          "streaming": "Criterion Channel",
+          "tmdb_id": 86815,
+          "poster_url": "https://image.tmdb.org/t/p/w500/o2mDwohumCDQ81d9alJLtddtJnj.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-17T22:58:29.472Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-17T22:58:29.472Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-2-directors/series-1-women-directors//3-chantal-akerman-radical-minimalism.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:18.854Z",
+    "hasLinks": true,
+    "linksAdded": 2,
+    "tier": "tier2_link_only"
+  }
+}

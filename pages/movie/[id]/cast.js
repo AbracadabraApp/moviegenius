@@ -1,25 +1,41 @@
 // pages/movie/[id]/cast.js - Cast and Crew page for movies
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
-import { createClient } from '@supabase/supabase-js';
+import { supabase } from '../../../lib/supabase';
 import PhoneFrame from '../../../components/PhoneFrame';
 import MovieHeader from '../../../components/MovieHeader';
 import PersonCard from '../../../components/PersonCard';
-import AskInputBar from '../../../components/AskInputBar';
+import SimpleSearch from '../../../components/SimpleSearch';
 import { ArrowLeft } from 'lucide-react';
 
-export default function MovieCastPage({ title, year, initialSlug, initialPoster, initialStreaming, tmdbId, error }) {
+export default function MovieCastPage({
+  title,
+  year,
+  initialSlug,
+  initialPoster,
+  initialStreaming,
+  tmdbId,
+  error,
+}) {
   const router = useRouter();
   const { id } = router.query;
   const [isLoadingCredits, setIsLoadingCredits] = useState(true);
   const [credits, setCredits] = useState(null);
 
-  // Handle ask input
-  const handleAsk = (query) => {
-    router.push({
-      pathname: '/ask',
-      query: { q: query }
-    });
+  // Handle search results
+  const handleSearchResults = results => {
+    // Auto-navigate to single results
+    if (results.length === 1) {
+      const movie = results[0];
+      if (movie.tmdb_id) {
+        router.push(`/movie/${movie.tmdb_id}`);
+        return;
+      }
+    }
+    // For multiple results, redirect to search page
+    if (results.length > 1) {
+      router.push('/search');
+    }
   };
 
   // Handle back navigation
@@ -32,10 +48,10 @@ export default function MovieCastPage({ title, year, initialSlug, initialPoster,
 
     const fetchCredits = async () => {
       setIsLoadingCredits(true);
-      
+
       try {
         console.log('🎬 Fetching credits for movie ID:', tmdbId);
-        
+
         const response = await fetch('/api/movie-credits', {
           method: 'POST',
           headers: {
@@ -53,7 +69,6 @@ export default function MovieCastPage({ title, year, initialSlug, initialPoster,
         const data = await response.json();
         setCredits(data);
         console.log('✅ Credits loaded:', data.totals);
-
       } catch (err) {
         console.error('Error fetching movie credits:', err);
       } finally {
@@ -64,13 +79,12 @@ export default function MovieCastPage({ title, year, initialSlug, initialPoster,
     fetchCredits();
   }, [tmdbId]);
 
-
   if (error) {
     return (
       <PhoneFrame>
         <div style={styles.container}>
           <div style={styles.inputArea}>
-            <AskInputBar onSubmit={handleAsk} />
+            <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
           </div>
           <div style={styles.errorContainer}>
             <div style={styles.errorText}>Error: {error}</div>
@@ -84,15 +98,15 @@ export default function MovieCastPage({ title, year, initialSlug, initialPoster,
     <PhoneFrame>
       <div style={styles.container}>
         <div style={styles.inputArea}>
-          <AskInputBar onSubmit={handleAsk} />
+          <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
         </div>
-        
+
         {/* Back button */}
         <div style={styles.backButton} onClick={handleBack}>
           <ArrowLeft size={20} />
           <span style={styles.backText}>Back to Movie</span>
         </div>
-        
+
         {/* Movie header */}
         <MovieHeader
           title={title}
@@ -117,7 +131,7 @@ export default function MovieCastPage({ title, year, initialSlug, initialPoster,
                     {credits.directors.length === 1 ? 'Director' : 'Directors'}
                   </h4>
                   <div style={styles.personList}>
-                    {credits.directors.map((person) => (
+                    {credits.directors.map(person => (
                       <PersonCard
                         key={`director-${person.id}`}
                         name={person.name}
@@ -136,7 +150,7 @@ export default function MovieCastPage({ title, year, initialSlug, initialPoster,
                 <div style={styles.subsection}>
                   <h4 style={styles.subsectionTitle}>Cast ({credits.allCast.length})</h4>
                   <div style={styles.textList}>
-                    {credits.allCast.map((person) => (
+                    {credits.allCast.map(person => (
                       <div key={`cast-${person.id}`} style={styles.listItem}>
                         <span style={styles.listName}>{person.name}</span>
                         <span style={styles.listRole}>as {person.character}</span>
@@ -154,7 +168,7 @@ export default function MovieCastPage({ title, year, initialSlug, initialPoster,
                     {Object.entries(credits.otherCrew).map(([department, people]) => (
                       <div key={department}>
                         <h5 style={styles.departmentTitle}>{department}</h5>
-                        {people.map((person) => (
+                        {people.map(person => (
                           <div key={`${department}-${person.id}`} style={styles.listItem}>
                             <span style={styles.listName}>{person.name}</span>
                             <span style={styles.listRole}>{person.job}</span>
@@ -182,7 +196,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100%',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   inputArea: {
     padding: '16px',
@@ -287,25 +302,42 @@ const styles = {
 // Server-Side Rendering: Fetch movie data by TMDB ID (same as movie detail page)
 export async function getServerSideProps({ params }) {
   const { id } = params;
-  
+
   try {
     const tmdbId = parseInt(id, 10);
     if (isNaN(tmdbId) || tmdbId <= 0) {
       return {
         props: {
-          error: 'Invalid movie ID'
-        }
+          error: 'Invalid movie ID',
+        },
       };
     }
 
-    // Initialize Supabase client
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
+    // Create supabase client with fallback
+    let supabaseClient;
+    try {
+      const { createClient } = await import('@supabase/supabase-js');
+      // Use proper authentication without placeholder fallbacks (like fixed search endpoints)
+      if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
+        console.error('❌ Cast page authentication failed: Supabase credentials not configured');
+        throw new Error('Supabase authentication not configured');
+      }
+      
+      supabaseClient = createClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL,
+        process.env.SUPABASE_SERVICE_ROLE_KEY
+      );
+    } catch (error) {
+      console.error('Failed to create supabase client:', error);
+      return {
+        props: {
+          error: 'Database connection failed',
+        },
+      };
+    }
 
     // Query movie from Supabase by TMDB ID
-    const { data: movieEntry, error } = await supabase
+    const { data: movieEntry, error } = await supabaseClient
       .from('movies')
       .select('id, title, year, slug, poster_url, streaming_data, tmdb_id')
       .eq('tmdb_id', tmdbId)
@@ -321,24 +353,24 @@ export async function getServerSideProps({ params }) {
           initialPoster: movieEntry.poster_url,
           initialStreaming: movieEntry.streaming_data,
           tmdbId: movieEntry.tmdb_id,
-          error: null
-        }
+          error: null,
+        },
       };
     } else {
       // Movie not found
       return {
         props: {
-          error: `Movie with ID ${tmdbId} not found`
-        }
+          error: `Movie with ID ${tmdbId} not found`,
+        },
       };
     }
   } catch (error) {
     console.error('Server-side fetch error:', error);
-    
+
     return {
       props: {
-        error: error.message
-      }
+        error: error.message,
+      },
     };
   }
 }

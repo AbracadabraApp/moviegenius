@@ -10,10 +10,32 @@ export default function CinematicProfile({ userData, className = '', onProfileCh
   const [isRefreshing, setIsRefreshing] = useState(false);
 
   useEffect(() => {
-    if (userData && (userData.heartedMovies || userData.bookmarkedMovies || userData.selectedPlatforms)) {
+    if (
+      userData &&
+      (userData.heartedMovies || userData.bookmarkedMovies || userData.selectedPlatforms)
+    ) {
       loadProfile();
     }
-  }, [userData.heartedMovies?.length, userData.bookmarkedMovies?.length, userData.selectedPlatforms?.length]);
+  }, [
+    userData.heartedMovies?.length,
+    userData.bookmarkedMovies?.length,
+    userData.selectedPlatforms?.length,
+  ]);
+
+  // Listen for refresh events from parent components
+  useEffect(() => {
+    const handleRefreshEvent = () => {
+      if (
+        userData &&
+        (userData.heartedMovies || userData.bookmarkedMovies || userData.selectedPlatforms)
+      ) {
+        handleRefresh();
+      }
+    };
+
+    window.addEventListener('refresh-cinematic-profile', handleRefreshEvent);
+    return () => window.removeEventListener('refresh-cinematic-profile', handleRefreshEvent);
+  }, []);
 
   const loadProfile = async () => {
     try {
@@ -33,7 +55,7 @@ export default function CinematicProfile({ userData, className = '', onProfileCh
         title: 'Your Cinematic Journey',
         content: 'Building your film profile...',
         icon: '🎬',
-        recommendationHeader: 'More Ideas'
+        recommendationHeader: 'More Ideas',
       };
       setProfile(fallback);
       if (onProfileChange) {
@@ -88,16 +110,16 @@ export default function CinematicProfile({ userData, className = '', onProfileCh
             disabled={isRefreshing}
             title="Get new analysis"
           >
-            <RefreshCw 
-              size={16} 
+            <RefreshCw
+              size={16}
               style={{
                 transform: isRefreshing ? 'rotate(180deg)' : 'rotate(0deg)',
-                transition: 'transform 0.3s ease'
-              }} 
+                transition: 'transform 0.3s ease',
+              }}
             />
           </button>
         </div>
-        
+
         <div style={styles.content}>
           {profile.content.split('\n').map((line, index) => {
             if (line.startsWith('**') && line.endsWith('**')) {
@@ -127,12 +149,10 @@ export default function CinematicProfile({ userData, className = '', onProfileCh
             }
           })}
         </div>
-        
+
         <div style={styles.footer}>
           <span style={styles.profileType}>{profile.type}</span>
-          <span style={styles.updateTime}>
-            {new Date().toLocaleDateString()}
-          </span>
+          <span style={styles.updateTime}>{new Date().toLocaleDateString()}</span>
         </div>
       </div>
     </div>

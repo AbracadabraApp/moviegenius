@@ -1,0 +1,261 @@
+{
+  "system": "genius",
+  "themeId": 5,
+  "seriesId": 1,
+  "episodeId": 5,
+  "theme": {
+    "id": 5,
+    "title": "Topics",
+    "description": "Cultural and historical contexts in cinema",
+    "slug": "topics"
+  },
+  "series": {
+    "id": 1,
+    "title": "Decades",
+    "description": "Cinema through the decades"
+  },
+  "episode": {
+    "id": 5,
+    "title": "2010s: Global Cinema Rising",
+    "subtitle": "International voices gain prominence"
+  },
+  "content": {
+    "opener": "The 2010s marked a transformative decade where international cinema forcefully challenged Hollywood's cultural hegemony, bringing diverse voices and perspectives to global audiences.",
+    "sections": [
+      {
+        "type": "text",
+        "content": "South Korean cinema emerged as a particularly powerful force, culminating in Bong Joon-ho's \"Parasite\" making history as the first non-English language film to win the Academy Award for Best Picture. This breakthrough represented more than just a single film's success – it symbolized the growing global appreciation for Korean storytelling, which had been building through works like Park Chan-wook's \"The Handmaiden\" and Lee Chang-dong's \"Burning.\" These films demonstrated sophisticated technical mastery while addressing universal themes of class struggle, desire, and social inequality through a distinctly Korean lens."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Parasite",
+            "year": 2019,
+            "slug": "A darkly comic exploration of class warfare and social inequality",
+            "streaming": "HBO Max",
+            "tmdb_id": 496243,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
+          },
+          {
+            "title": "The Handmaiden",
+            "year": 2016,
+            "slug": "A sumptuous period thriller about deception and forbidden love",
+            "streaming": "Amazon Prime",
+            "tmdb_id": 290098,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dLlH4aNHdnmf62umnInL8xPlPzw.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "The Rise of New Asian Cinema"
+      },
+      {
+        "type": "text",
+        "content": "Chinese cinema experienced unprecedented growth, both commercially and artistically. Films like Bi Gan's \"Long Day's Journey Into Night\" pushed technical boundaries with its ambitious 59-minute 3D sequence shot, while Zhang Yimou continued his evolution with visually stunning works like \"Shadow.\" Meanwhile, Japanese animation reached new heights of global recognition, with Makoto Shinkai's \"Your Name\" becoming the highest-grossing anime film worldwide, demonstrating how animation could tackle complex themes of identity, time, and connection with profound emotional depth."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Long Day's Journey Into Night",
+            "year": 2018,
+            "slug": "Mesmerizing noir featuring groundbreaking 3D sequence",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 486898,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8wUxYW7v2sahnFwipwzjRo8Z3sP.jpg"
+          },
+          {
+            "title": "Your Name",
+            "year": 2016,
+            "slug": "Metaphysical romance exploring identity and time",
+            "streaming": "Netflix",
+            "tmdb_id": 372058,
+            "poster_url": "https://image.tmdb.org/t/p/w500/8GJsy7w7frGquw1cy9jasOGNNI1.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Latin American Renaissance"
+      },
+      {
+        "type": "text",
+        "content": "Mexican filmmakers continued their ascendancy, with Alfonso Cuarón's \"Roma\" representing a pinnacle of personal filmmaking while pushing technical boundaries in digital cinematography. The film's success on Netflix demonstrated how streaming platforms could amplify international voices. Simultaneously, Brazilian cinema found renewed vigor through works like Kleber Mendonça Filho's \"Bacurau\" and \"Aquarius,\" which boldly addressed political and social issues while experimenting with genre conventions. Throughout Latin America, filmmakers increasingly merged social commentary with innovative storytelling techniques."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Roma",
+            "year": 2018,
+            "slug": "Intimate portrait of domestic worker in 1970s Mexico City",
+            "streaming": "Netflix",
+            "tmdb_id": 426426,
+            "poster_url": "https://image.tmdb.org/t/p/w500/dtIIyQyALk57ko5bjac7hi01YQ.jpg"
+          },
+          {
+            "title": "Bacurau",
+            "year": 2019,
+            "slug": "Genre-bending thriller about a Brazilian community under siege",
+            "streaming": "Criterion Channel",
+            "tmdb_id": 446159,
+            "poster_url": "https://image.tmdb.org/t/p/w500/ojfHP9yLL7V69c5CSVChLCjpWp.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "European Evolution"
+      },
+      {
+        "type": "explore_further",
+        "prompts": [
+          "How did this aspect of the topic influence cinema?"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "European cinema demonstrated remarkable vitality through emerging voices and established masters. Greek director Yorgos Lanthimos crossed into international prominence with \"The Favourite\" and \"The Lobster,\" establishing his distinctive absurdist style while attracting A-list talent. French cinema continued its artistic leadership through works like Céline Sciamma's \"Portrait of a Lady on Fire,\" which reinvented period drama conventions while exploring themes of female gaze and artistic creation. These films showed how European cinema could maintain its artistic traditions while embracing contemporary sensibilities."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Portrait of a Lady on Fire",
+            "year": 2019,
+            "slug": "Sublime period romance about art and desire",
+            "streaming": "Hulu",
+            "tmdb_id": 531428,
+            "poster_url": "https://image.tmdb.org/t/p/w500/2LquGwEhbg3soxSCs9VNyh5VJd9.jpg"
+          },
+          {
+            "title": "The Lobster",
+            "year": 2015,
+            "slug": "Dystopian satire about relationships and societal pressure",
+            "streaming": "Netflix",
+            "tmdb_id": 254320,
+            "poster_url": "https://image.tmdb.org/t/p/w500/7Y9ILV1unpW9mLpGcqyGQU72LUy.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "Middle Eastern Voices"
+      },
+      {
+        "type": "text",
+        "content": "Iranian cinema maintained its vital voice despite political constraints, with Asghar Farhadi's \"A Separation\" and \"The Salesman\" winning Academy Awards and demonstrating how universal human drama could transcend cultural barriers. Lebanese director Nadine Labaki's \"Capernaum\" brought attention to social issues through powerful neorealist techniques, while Saudi Arabian cinema emerged with groundbreaking works like Haifaa al-Mansour's \"Wadjda,\" the first feature film shot entirely in Saudi Arabia by a female director."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "A Separation",
+            "year": 2011,
+            "slug": "Complex moral drama about family and class in Iran",
+            "streaming": "Amazon Prime",
+            "tmdb_id": 60243,
+            "poster_url": "https://image.tmdb.org/t/p/w500/wQVvASmpm8jGhJBQU20OkoMcNzi.jpg"
+          },
+          {
+            "title": "Capernaum",
+            "year": 2018,
+            "slug": "Powerful story of childhood in crisis",
+            "streaming": "Netflix",
+            "tmdb_id": 517814,
+            "poster_url": "https://image.tmdb.org/t/p/w500/mFnfTVADj8yOxwzprYOmTPselk8.jpg"
+          }
+        ]
+      },
+      {
+        "type": "subhead",
+        "content": "African Cinema's New Wave"
+      },
+      {
+        "type": "text",
+        "content": "African cinema experienced a renaissance with filmmakers like Senegal's Mati Diop making history as the first black female director to compete at Cannes with \"Atlantics.\" South African production values reached new heights with films like \"District 9\" and \"Queen of Katwe,\" while Nigerian cinema (\"Nollywood\") continued its evolution toward higher production values and international recognition. These developments represented a crucial shift in how African stories were told, increasingly by African voices rather than through a colonial lens."
+      },
+      {
+        "type": "movies",
+        "movies": [
+          {
+            "title": "Atlantics",
+            "year": 2019,
+            "slug": "Supernatural romance addressing migration and inequality",
+            "streaming": "Netflix",
+            "tmdb_id": 496967,
+            "poster_url": "https://image.tmdb.org/t/p/w500/zRnZM6HqglFK31MYyrTSQVlj1dQ.jpg"
+          },
+          {
+            "title": "Queen of Katwe",
+            "year": 2016,
+            "slug": "Inspiring true story of Ugandan chess prodigy",
+            "streaming": "Disney+",
+            "tmdb_id": 317557,
+            "poster_url": "https://image.tmdb.org/t/p/w500/m8V2ud6uhV7qH6wEDoQ4Ujw99ji.jpg"
+          }
+        ]
+      }
+    ],
+    "moreIdeas": {
+      "title": "More Ideas",
+      "movies": [
+        {
+          "title": "Burning",
+          "year": 2018,
+          "slug": "Mysterious psychological thriller based on Murakami story",
+          "streaming": "Netflix",
+          "tmdb_id": 813106,
+          "poster_url": "https://image.tmdb.org/t/p/w500/hxGv1O2W5SOJTmiBc45CL842mrx.jpg"
+        },
+        {
+          "title": "Shadow",
+          "year": 2018,
+          "slug": "Visually stunning wuxia drama",
+          "streaming": "Amazon Prime",
+          "tmdb_id": 525700,
+          "poster_url": "https://image.tmdb.org/t/p/w500/d9nGxZW04JtT6PPJk6iaeB7IOfm.jpg"
+        },
+        {
+          "title": "Cold War",
+          "year": 2018,
+          "slug": "Romance across decades of European history",
+          "streaming": "Amazon Prime",
+          "tmdb_id": 517104,
+          "poster_url": "https://image.tmdb.org/t/p/w500/fNtvmW8vkxmsmQbYUdRrPZHxeRM.jpg"
+        },
+        {
+          "title": "Shoplifters",
+          "year": 2018,
+          "slug": "Tender exploration of chosen family in Japan",
+          "streaming": "Hulu",
+          "tmdb_id": 505192,
+          "poster_url": "https://image.tmdb.org/t/p/w500/4nfRUOv3LX5zLn98WS1WqVBk9E9.jpg"
+        },
+        {
+          "title": "The Wailing",
+          "year": 2016,
+          "slug": "Genre-defying Korean horror thriller",
+          "streaming": "Amazon Prime",
+          "tmdb_id": 293670,
+          "poster_url": "https://image.tmdb.org/t/p/w500/aXlL7yYwpXInhltamtzKQFBG08G.jpg"
+        }
+      ]
+    }
+  },
+  "generatedAt": "2025-06-18T17:29:48.184Z",
+  "version": "3.0",
+  "type": "educational",
+  "locked": true,
+  "lockedAt": "2025-06-18T17:29:48.184Z",
+  "lockedBy": "claude-generation-enhanced",
+  "heroImage": "/images/hero/theme-5-topics/series-1-decades//5-2010s-global-cinema-rising.jpg",
+  "_zeroWaste": {
+    "linkedAt": "2025-07-22T16:31:58.028Z",
+    "hasLinks": false,
+    "linksAdded": 0,
+    "tier": "tier2_link_only"
+  }
+}

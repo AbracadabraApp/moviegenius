@@ -1,0 +1,88 @@
+// pages/api/simple-search.js - 100% TMDB-based movie search API
+export default async function handler(req, res) {
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: 'Method not allowed' });
+  }
+
+  // Check if TMDB API key is available
+  if (!process.env.NEXT_PUBLIC_TMDB_API_KEY && !process.env.TMDB_API_KEY) {
+    console.error('🚨 TMDB API key missing in production environment');
+    return res.status(500).json({ 
+      error: 'Search service unavailable',
+      movies: [],
+      fallback: {
+        message: "Search is temporarily unavailable. Would you like to try Movie Genius instead?",
+        askUrl: `/genius?q=${encodeURIComponent(req.body.query || '')}`
+      }
+    });
+  }
+
+  try {
+    const { query } = req.body;
+
+    if (!query || typeof query !== 'string' || query.trim().length < 2) {
+      return res.status(400).json({ error: 'Query must be at least 2 characters' });
+    }
+
+    const searchQuery = query.trim();
+    console.log(`🔍 TMDB search: "${searchQuery}"`);
+
+    // Search TMDB directly - 100% coverage with TMDB IDs
+    const { searchTMDB } = await import('../../lib/services/tmdb-search.js');
+    const tmdbResults = await searchTMDB(searchQuery);
+    
+    let movies = [];
+    if (tmdbResults && tmdbResults.length > 0) {
+      // Convert TMDB results to our format - includes movies and people
+      movies = tmdbResults.slice(0, 20).map(item => {
+        if (item.type === 'movie') {
+          return {
+            id: `tmdb_movie_${item.id}`, // Temporary ID for frontend
+            title: item.title,
+            year: item.release_date ? parseInt(item.release_date.substring(0, 4)) : null,
+            tmdb_id: item.id, // 100% guaranteed TMDB ID
+            poster_url: item.poster_path ? `https://image.tmdb.org/t/p/w500${item.poster_path}` : null,
+            streaming_data: null, // Will be fetched organically if needed
+            slug: null,
+            type: 'movie'
+          };
+        } else if (item.type === 'person') {
+          return {
+            id: `tmdb_person_${item.id}`, // Temporary ID for frontend
+            title: item.title, // Person's name
+            year: null, // People don't have release years
+            tmdb_id: null, // People don't navigate to movie pages
+            poster_url: item.poster_path ? `https://image.tmdb.org/t/p/w500${item.poster_path}` : null,
+            streaming_data: null,
+            slug: `${item.known_for_department || 'Actor'} • Known for: ${item.known_for?.slice(0, 2).map(m => m.title || m.name).join(', ') || 'Various films'}`,
+            type: 'person',
+            known_for_department: item.known_for_department,
+            known_for: item.known_for
+          };
+        }
+      }).filter(Boolean);
+      
+      console.log(`🎬 Found ${movies.length} TMDB results for "${searchQuery}" (${movies.filter(m => m.type === 'movie').length} movies, ${movies.filter(m => m.type === 'person').length} people)`);
+    }
+
+    // V1 Feature: Provide fallback info for empty results
+    const hasResults = movies && movies.length > 0;
+    
+    res.status(200).json({
+      movies: movies || [],
+      query: searchQuery,
+      hasResults,
+      fallback: !hasResults ? {
+        message: "We didn't find a result, but would you like to pass it on to our Movie Genius?",
+        askUrl: `/genius?q=${encodeURIComponent(searchQuery)}`
+      } : null
+    });
+
+  } catch (error) {
+    console.error('Simple search error:', error);
+    res.status(500).json({
+      error: 'Search failed',
+      message: error.message
+    });
+  }
+}

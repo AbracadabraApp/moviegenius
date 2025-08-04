@@ -1,0 +1,237 @@
+# BackButton Component Lock File
+# 🔒 STANDARDIZED NAVIGATION PROTECTION 🔒
+
+## LOCK STATUS: ACTIVE
+- Component: BackButton.js
+- Lock Date: 2025-06-25
+- Lock Reason: Prevents navigation fragmentation and ensures consistent UX
+- Locked By: Senior Systems Engineer
+
+## PROBLEM BEING SOLVED
+
+**Recurring Issue:** Back navigation is fragmented across MovieGenius:
+- ❌ Movie/person pages missing back buttons entirely
+- ❌ Inconsistent navigation methods (router.push vs window.history.back)
+- ❌ Different visual styles (CircleChevronLeft vs ArrowLeft vs text)
+- ❌ Browser back/forward buttons work inconsistently
+- ❌ Users feel "trapped" on detail pages
+
+**Impact:** Poor user experience and unpredictable navigation patterns.
+
+## CRITICAL SECTIONS - DO NOT MODIFY:
+
+### 1. Smart Navigation Logic (Lines 46-68)
+```javascript
+const handleBack = () => {
+  try {
+    if (method === 'smart') {
+      // Smart detection: use history if available, otherwise fallback
+      if (canGoBack && window.history.length > 1) {
+        window.history.back();
+      } else {
+        router.push(getFallbackRoute());
+      }
+    }
+  } catch (error) {
+    // Emergency fallback
+    router.push(fallbackRoute);
+  }
+};
+```
+
+### 2. Context-Aware Fallbacks (Lines 70-83)
+```javascript
+const getFallbackRoute = () => {
+  switch (context) {
+    case 'movie':
+      return '/ask'; // Return to search/ask page
+    case 'person':
+      return '/ask'; // Return to search/ask page  
+    case 'list':
+      return '/recs'; // Return to recommendations
+    case 'episode':
+      return '/recs'; // Return to series list
+    default:
+      return fallbackRoute;
+  }
+};
+```
+
+### 3. Browser History Integration (Lines 33-42)
+```javascript
+useEffect(() => {
+  setIsClient(true);
+  
+  // Check if there's history to go back to
+  if (typeof window !== 'undefined') {
+    setCanGoBack(window.history.length > 1);
+  }
+}, []);
+```
+
+## STANDARDIZED USAGE PATTERNS:
+
+### ✅ **Correct Implementation (All Detail Pages)**
+```javascript
+import BackButton from '../../components/BackButton';
+
+// Movie detail pages
+<BackButton variant="icon" context="movie" position="top-left" />
+
+// Person detail pages  
+<BackButton variant="icon" context="person" position="top-left" />
+
+// List detail pages
+<BackButton variant="icon" context="list" position="top-left" />
+
+// Episode pages
+<BackButton variant="icon" context="episode" position="top-left" />
+```
+
+### ❌ **Prohibited Custom Implementations**
+```javascript
+// DON'T create custom back buttons
+<button onClick={() => router.back()}>Back</button>
+
+// DON'T use different icons
+<ArrowLeft onClick={() => window.history.back()} />
+
+// DON'T use different navigation methods
+<ChevronLeft onClick={() => router.push('/ask')} />
+```
+
+## REQUIRED USAGE LOCATIONS:
+
+### **High Priority (Already Implemented):**
+- ✅ `/pages/movie/[id].js` - Movie detail pages
+- ✅ `/pages/person/[id].js` - Person detail pages
+- ✅ `/pages/list/[slug].js` - List detail pages
+
+### **Medium Priority (Needs Implementation):**
+- 🔲 `/pages/genius/[...params].js` - Episode pages
+- 🔲 `/pages/media/[id].js` - Media detail pages
+- 🔲 `/pages/recs/[seriesId]/[episodeId].js` - Series episodes
+
+### **Admin/Test Pages (Needs Implementation):**
+- 🔲 `/pages/admin/lists.js` - Admin tools
+- 🔲 `/pages/test/*.js` - Test pages
+
+## COMPONENT VARIANTS:
+
+### **Variant Specifications:**
+1. **variant="icon"** - Circular chevron icon (default for detail pages)
+2. **variant="text"** - Text-only back link (for admin/test pages)  
+3. **variant="iconText"** - Icon + text combination (special cases)
+
+### **Position Options:**
+1. **position="top-left"** - Standard detail page position (default)
+2. **position="top-right"** - Alternative positioning
+3. **position="inline"** - Inline with other content
+
+### **Size Options:**
+1. **size="medium"** - Standard size (default)
+2. **size="small"** - Compact areas
+3. **size="large"** - Prominent placement
+
+## NAVIGATION METHOD PROTECTION:
+
+### **Smart Navigation (Required)**
+- **Primary:** Use browser history when available
+- **Fallback:** Context-aware route navigation
+- **Emergency:** Default fallback route
+- **SSR Safe:** Client-side detection only
+
+### **Context-Aware Routes:**
+- **Movie pages:** Fallback to `/ask` (search context)
+- **Person pages:** Fallback to `/ask` (search context)
+- **List pages:** Fallback to `/recs` (recommendations)
+- **Episode pages:** Fallback to `/recs` (series context)
+
+## VISUAL CONSISTENCY REQUIREMENTS:
+
+### **Icon Standardization:**
+- **Primary:** `CircleChevronLeft` from lucide-react
+- **Alternative:** `ArrowLeft` for iconText variant
+- **Prohibited:** `ChevronLeft`, custom icons, different libraries
+
+### **Styling Standards:**
+- **Color:** `#6b7280` (gray-500)
+- **Hover:** `scale(1.05)` + light background
+- **Size:** 24px default, 20px small, 28px large
+- **Border radius:** 8px
+- **Transition:** `all 0.2s ease`
+
+## CHANGE PROTOCOL:
+
+### **Before Modifying:**
+1. **Check this lock file** for restrictions
+2. **Review existing implementations** on detail pages
+3. **Test browser integration** - forward/back buttons must work
+4. **Verify context fallbacks** - ensure logical navigation
+
+### **Adding to New Pages:**
+1. **Import BackButton** component
+2. **Use appropriate variant** and context
+3. **Position consistently** (usually top-left)
+4. **Test navigation flow** from multiple entry points
+
+### **Prohibited Changes:**
+- ❌ Creating alternative back button components
+- ❌ Using different navigation methods
+- ❌ Changing icon libraries or visual styles
+- ❌ Removing browser history integration
+- ❌ Modifying context-aware fallback logic
+
+## TESTING REQUIREMENTS:
+
+### **Manual Testing Checklist:**
+- [ ] Back button appears on all detail pages
+- [ ] Browser back/forward buttons work correctly
+- [ ] Navigation respects user journey context
+- [ ] Fallback routes work when no history
+- [ ] Visual consistency across all pages
+- [ ] Hover effects work properly
+- [ ] SSR hydration doesn't break functionality
+
+### **Automated Testing:**
+```bash
+npm run check-locks  # Validates component integrity
+```
+
+## MONITORING:
+
+### **Check for Violations:**
+```bash
+# Search for custom back button implementations
+grep -r "router\.back\|history\.back" --include="*.js" --include="*.jsx" pages/ components/ | grep -v BackButton
+
+# Search for different back navigation icons  
+grep -r "ArrowLeft\|ChevronLeft" --include="*.js" --include="*.jsx" pages/ | grep -v BackButton
+
+# Verify BackButton usage
+grep -r "BackButton" --include="*.js" --include="*.jsx" pages/
+```
+
+### **User Experience Validation:**
+- All detail pages have visible back navigation
+- Browser buttons work consistently across app
+- Navigation context is preserved correctly
+- No pages feel like "dead ends"
+
+## BENEFITS:
+
+### **User Experience:**
+- **Consistent:** Same navigation pattern everywhere
+- **Predictable:** Users know how to go back
+- **Accessible:** Proper ARIA labels and keyboard support
+- **Mobile-Friendly:** Touch-optimized button sizing
+
+### **Technical Benefits:**
+- **Maintainable:** Single component to update
+- **Robust:** Smart fallbacks prevent broken navigation
+- **Future-Proof:** Easy to enhance globally
+- **Browser Compatible:** Works with forward/back buttons
+
+---
+
+**🧭 This standardization ensures users never feel trapped and provides consistent, predictable navigation throughout MovieGenius.**
