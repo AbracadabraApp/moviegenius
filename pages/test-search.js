@@ -1,84 +1,62 @@
-// Test page to debug search functionality
+/**
+ * Test page to verify SimpleSearch component is using simple-search endpoint
+ */
+
 import { useState } from 'react';
+import SimpleSearch from '../components/SimpleSearch';
 
-export default function TestSearch() {
-  const [query, setQuery] = useState('');
+export default function TestSearchPage() {
   const [results, setResults] = useState(null);
-  const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(false);
-
-  const testSearch = async () => {
-    if (!query.trim()) return;
-
-    setLoading(true);
-    setError(null);
-    setResults(null);
-
-    try {
-      console.log('Testing search API...');
-      const response = await fetch('/api/multi-search', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query: query.trim() }),
-      });
-
-      console.log('Response status:', response.status);
-
-      if (response.ok) {
-        const data = await response.json();
-        console.log('Response data:', data);
-        setResults(data);
-      } else {
-        const errorText = await response.text();
-        console.error('API Error:', response.status, errorText);
-        setError(`API Error: ${response.status} - ${errorText}`);
-      }
-    } catch (err) {
-      console.error('Network Error:', err);
-      setError(`Network Error: ${err.message}`);
-    } finally {
-      setLoading(false);
-    }
+  
+  const handleResults = (data) => {
+    console.log('Search results received:', data);
+    setResults(data);
   };
-
+  
   return (
-    <div style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
-      <h1>Search API Test</h1>
-
+    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+      <h1>Search Test Page</h1>
+      <p>This page tests if SimpleSearch component is using the simple-search endpoint.</p>
+      
       <div style={{ marginBottom: '20px' }}>
-        <input
-          type="text"
-          value={query}
-          onChange={e => setQuery(e.target.value)}
-          placeholder="Enter search query..."
-          style={{ padding: '10px', width: '300px', marginRight: '10px' }}
+        <SimpleSearch 
+          onResults={handleResults}
+          useUnifiedSearch={false}
+          placeholder="Test search functionality..."
         />
-        <button onClick={testSearch} disabled={loading} style={{ padding: '10px 20px' }}>
-          {loading ? 'Searching...' : 'Test Search'}
-        </button>
       </div>
-
-      <div>
-        <h3>Environment Check:</h3>
-        <p>
-          NEXT_PUBLIC_TMDB_API_KEY: {process.env.NEXT_PUBLIC_TMDB_API_KEY ? '✅ Set' : '❌ Missing'}
-        </p>
-        <p>Key value: {process.env.NEXT_PUBLIC_TMDB_API_KEY || 'undefined'}</p>
-      </div>
-
-      {error && (
-        <div style={{ color: 'red', background: '#ffe6e6', padding: '10px', margin: '10px 0' }}>
-          <h3>Error:</h3>
-          <pre>{error}</pre>
-        </div>
-      )}
-
+      
       {results && (
-        <div style={{ background: '#e6ffe6', padding: '10px', margin: '10px 0' }}>
-          <h3>Results:</h3>
-          <pre>{JSON.stringify(results, null, 2)}</pre>
+        <div>
+          <h2>Results:</h2>
+          <p><strong>Query:</strong> {results.query}</p>
+          <p><strong>Has Results:</strong> {results.hasResults ? 'Yes' : 'No'}</p>
+          <p><strong>Movies Found:</strong> {results.movies?.length || 0}</p>
+          <p><strong>People Found:</strong> {results.people?.length || 0}</p>
+          
+          {results.movies?.length > 0 && (
+            <div>
+              <h3>First 3 Movies:</h3>
+              <ul>
+                {results.movies.slice(0, 3).map((movie, i) => (
+                  <li key={i}>{movie.title} ({movie.year}) - TMDB ID: {movie.tmdb_id}</li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       )}
+      
+      <div style={{ marginTop: '40px', padding: '20px', backgroundColor: '#f5f5f5', borderRadius: '8px' }}>
+        <h3>Instructions:</h3>
+        <ol>
+          <li>Open browser developer tools (F12)</li>
+          <li>Go to Network tab</li>
+          <li>Type a search query above and press Enter</li>
+          <li>Check if the API call goes to <code>/api/simple-search</code> (good) or <code>/api/multi-search</code> (old)</li>
+          <li>Verify the response returns movie results</li>
+        </ol>
+      </div>
     </div>
   );
 }
