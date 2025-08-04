@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+// Force rebuild to clear environment variable cache - CRITICAL ANALYSIS FIX
 const nextConfig = {
   images: {
     remotePatterns: [
