@@ -199,7 +199,7 @@ const anthropic = new Anthropic({
 if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
   console.error('❌ Analysis authentication failed: Supabase credentials not configured');
 }
-console.log('🔧 Analysis endpoint initialized [NO PLACEHOLDERS]');
+console.log('🔧 Analysis endpoint initialized [NO PLACEHOLDERS] - BUILD:', new Date().toISOString());
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL,
