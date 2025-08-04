@@ -155,8 +155,11 @@ async function movieAnalysisHandler(req, res) {
       async () => {
         console.log(`🔄 Cache miss - generating fresh analysis for ${title} (${year})`);
 
-        const { createSupabaseClient } = await import('../../lib/supabase-client.js');
-        const supabase = createSupabaseClient();
+        const { createClient } = await import('@supabase/supabase-js');
+        const supabase = createClient(
+          process.env.NEXT_PUBLIC_SUPABASE_URL,
+          process.env.SUPABASE_SERVICE_ROLE_KEY
+        );
 
         // First, try to find the movie in database
         const { data: movie, error: movieError } = await supabase

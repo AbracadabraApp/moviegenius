@@ -18,8 +18,8 @@ const mockMovieAnalysisHandler = async (req, res) => {
 };
 
 // Mock Supabase
-jest.mock('../../lib/supabase-client.js', () => ({
-  createSupabaseClient: () => ({
+jest.mock('@supabase/supabase-js', () => ({
+  createClient: () => ({
     from: jest.fn().mockReturnValue({
       select: jest.fn().mockReturnValue({
         eq: jest.fn().mockReturnValue({
