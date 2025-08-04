@@ -57,27 +57,55 @@ export default function MovieDetailPage() {
           setStreaming({ streaming_data: null });
         }
 
-        // Fetch analysis data
-        const analysisResponse = await fetch(`/api/movie-analysis?tmdbId=${id}`);
-        if (analysisResponse.ok) {
-          const analysisData = await analysisResponse.json();
-          // Format analysis data for MovieAnalysisWithEntities component
-          const formattedAnalysis = {
-            claude_response: {
-              raw_content: analysisData.analysis || analysisData.rawAnalysis
-            },
-            entity_linking_data: (analysisData.entityData || analysisData.movieData) ? {
-              entityData: analysisData.entityData || analysisData.movieData,
-              processedAt: new Date().toISOString()
-            } : null,
-            // Also include the movie data directly for easier access
-            entityData: analysisData.entityData || analysisData.movieData
-          };
-          
-          setAnalysis(formattedAnalysis);
-        } else {
-          console.error('❌ Analysis API failed:', analysisResponse.status, analysisResponse.statusText);
-          setAnalysis(null);
+        // Try to fetch processed static file with links first
+        let analysisData = null;
+        try {
+          const staticResponse = await fetch(`/static/nuclear-data/${id}.json`);
+          if (staticResponse.ok) {
+            const staticData = await staticResponse.json();
+            if (staticData.props && staticData.props.sections) {
+              console.log('✅ Using processed static file with links');
+              const formattedAnalysis = {
+                claude_response: {
+                  raw_content: staticData.props.sections.map(s => s.content).join('\n\n')
+                },
+                entity_linking_data: staticData.props.exploreFurther ? {
+                  entityData: { featuredMovies: staticData.props.exploreFurther },
+                  processedAt: staticData.props.nuclearTimestamp
+                } : null,
+                entityData: staticData.props.exploreFurther || null
+              };
+              setAnalysis(formattedAnalysis);
+              analysisData = formattedAnalysis;
+            }
+          }
+        } catch (staticError) {
+          console.log('📝 No processed static file, trying database');
+        }
+
+        // Fallback to database analysis if no static file
+        if (!analysisData) {
+          const analysisResponse = await fetch(`/api/movie-analysis?tmdbId=${id}`);
+          if (analysisResponse.ok) {
+            const apiData = await analysisResponse.json();
+            // Format analysis data for MovieAnalysisWithEntities component
+            const formattedAnalysis = {
+              claude_response: {
+                raw_content: apiData.analysis || apiData.rawAnalysis
+              },
+              entity_linking_data: (apiData.entityData || apiData.movieData) ? {
+                entityData: apiData.entityData || apiData.movieData,
+                processedAt: new Date().toISOString()
+              } : null,
+              // Also include the movie data directly for easier access
+              entityData: apiData.entityData || apiData.movieData
+            };
+            
+            setAnalysis(formattedAnalysis);
+          } else {
+            console.error('❌ Analysis API failed:', analysisResponse.status, analysisResponse.statusText);
+            setAnalysis(null);
+          }
         }
         
         // Track successful page load completion
