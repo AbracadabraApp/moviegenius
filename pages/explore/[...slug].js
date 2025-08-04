@@ -186,13 +186,24 @@ import { getCache } from '../../lib/cache.js';
 import { Anthropic } from '@anthropic-ai/sdk';
 
 // Initialize clients for static generation
+// Use proper authentication without placeholder fallbacks
+if (!process.env.ANTHROPIC_API_KEY) {
+  console.error('❌ Analysis authentication failed: Anthropic API key not configured');
+}
+
 const anthropic = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY || 'placeholder-key',
+  apiKey: process.env.ANTHROPIC_API_KEY,
 });
 
+// Use proper authentication without placeholder fallbacks (like fixed search endpoints)
+if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
+  console.error('❌ Analysis authentication failed: Supabase credentials not configured');
+}
+console.log('🔧 Analysis endpoint initialized [NO PLACEHOLDERS]');
+
 const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co',
-  process.env.SUPABASE_SERVICE_ROLE_KEY || 'placeholder-key'
+  process.env.NEXT_PUBLIC_SUPABASE_URL,
+  process.env.SUPABASE_SERVICE_ROLE_KEY
 );
 
 // Direct generation function for static props

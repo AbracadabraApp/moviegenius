@@ -317,11 +317,15 @@ export async function getServerSideProps({ params }) {
     let supabaseClient;
     try {
       const { createClient } = await import('@supabase/supabase-js');
+      // Use proper authentication without placeholder fallbacks (like fixed search endpoints)
+      if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
+        console.error('❌ Cast page authentication failed: Supabase credentials not configured');
+        throw new Error('Supabase authentication not configured');
+      }
+      
       supabaseClient = createClient(
-        process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co',
-        process.env.SUPABASE_SERVICE_ROLE_KEY ||
-          process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
-          'placeholder-key'
+        process.env.NEXT_PUBLIC_SUPABASE_URL,
+        process.env.SUPABASE_SERVICE_ROLE_KEY
       );
     } catch (error) {
       console.error('Failed to create supabase client:', error);
