@@ -89,9 +89,12 @@ export default function MovieDetailPage() {
           if (analysisResponse.ok) {
             const apiData = await analysisResponse.json();
             // Format analysis data for MovieAnalysisWithEntities component
+            // Our API returns processed content, so use it in the correct field
+            const analysisContent = apiData.analysis || apiData.rawAnalysis;
             const formattedAnalysis = {
               claude_response: {
-                raw_content: apiData.analysis || apiData.rawAnalysis
+                processed_content: analysisContent, // Correct field for JSON analysis
+                raw_content: analysisContent // Keep fallback for compatibility
               },
               entity_linking_data: (apiData.entityData || apiData.movieData) ? {
                 entityData: apiData.entityData || apiData.movieData,
