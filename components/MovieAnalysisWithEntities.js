@@ -582,7 +582,7 @@ export default function MovieAnalysisWithEntities({
 
 const styles = {
   container: {
-    padding: '0 24px', // Increased horizontal padding
+    padding: '0 20px',
     backgroundColor: '#ffffff',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },

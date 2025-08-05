@@ -71,7 +71,7 @@ const browseCategories = [
 const styles = {
   container: {
     marginTop: '32px',
-    padding: '0 16px',
+    padding: '0 20px',
   },
 
   // Regular size

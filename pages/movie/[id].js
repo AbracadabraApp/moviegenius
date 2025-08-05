@@ -199,7 +199,7 @@ export default function MovieDetailPage() {
 
           {/* Movie Header */}
           <ErrorBoundary level="section">
-            <div style={{ paddingLeft: '20px' }}>
+            <div style={{ paddingLeft: '0px' }}>
               <MovieHeaderLarge
                 title={movie?.title}
                 year={year}
