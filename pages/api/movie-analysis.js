@@ -183,23 +183,144 @@ export default async function movieAnalysisHandler(req, res) {
       dbLogger.dbQuery(analysisQuery, [movie.id], analysisQueryTime, analysisResult.rowCount);
       
       if (analysisResult.rows.length === 0) {
-        logger.movieAnalysis(tmdbId, 'completed', { 
-          status: 'no_analysis',
-          duration: Date.now() - startTime,
-          source: 'database'
+        console.log(`🤖 No analysis found for ${movie.title} (${movie.year}), generating fresh Claude analysis...`);
+        logger.movieAnalysis(tmdbId, 'claude_generation_started', { 
+          title: movie.title,
+          year: movie.year
         });
-        apiLogger.apiResponse('GET', '/api/movie-analysis', 200, Date.now() - startTime);
-        return res.status(200).json({
-          success: true,
-          movie: {
-            title: movie.title,
-            year: movie.year,
-            tmdb_id: movie.tmdb_id
-          },
-          analysis: null,
-          message: 'Movie found but no analysis available',
-          source: 'railway-postgresql'
-        });
+
+        // Generate new analysis with Claude using modular prompt system
+        try {
+          const claudeStartTime = Date.now();
+          console.log(`🤖 Generating fresh Claude analysis for ${movie.title} (${movie.year})`);
+          
+          const { Anthropic } = await import('@anthropic-ai/sdk');
+          const { buildPrompt } = await import('../../lib/prompts/builder.js');
+
+          const anthropic = new Anthropic({
+            apiKey: process.env.ANTHROPIC_API_KEY,
+          });
+
+          // Use modular prompt system for MOVIE_ANALYSIS context
+          const promptConfig = buildPrompt(
+            'MOVIE_ANALYSIS',
+            'Include 3-5 Explore Further topics for deeper analysis'
+          );
+          const userPrompt = `${movie.title} (${movie.year})`;
+          
+          // DEBUG: Log the actual system prompt being sent
+          console.log(`🔍 PROMPT DEBUG: System prompt for ${movie.title} (${movie.year}):`);
+          console.log(`📝 First 500 chars: ${promptConfig.system[0].text.substring(0, 500)}...`);
+          console.log(`🎯 Model: ${promptConfig.model}`);
+          console.log(`🔧 Temperature: ${promptConfig.temperature}`);
+
+          const message = await anthropic.messages.create({
+            ...promptConfig,
+            messages: [
+              {
+                role: 'user',
+                content: userPrompt,
+              },
+            ],
+          });
+
+          const rawAnalysis = message.content[0].text;
+          const claudeEndTime = Date.now();
+          const claudeDuration = (claudeEndTime - claudeStartTime) / 1000;
+          console.log(`✅ Claude analysis complete (${claudeDuration.toFixed(2)}s)`);
+
+          // Calculate cost estimate (rough)
+          const costEstimate =
+            (message.usage.input_tokens * 3) / 1000000 + (message.usage.output_tokens * 15) / 1000000;
+
+          // Save to database
+          const dbStartTime = Date.now();
+          const analysisData = {
+            raw_content: rawAnalysis, // Original Claude response
+            generated_at: new Date().toISOString(),
+            cost_estimate: costEstimate,
+            input_tokens: message.usage.input_tokens,
+            output_tokens: message.usage.output_tokens,
+            model: promptConfig.model, // Use configurable model from prompt system
+          };
+
+          const insertAnalysisQuery = `
+            INSERT INTO movie_analyses (movie_id, analysis_type, claude_response, query_text, created_at)
+            VALUES ($1, $2, $3, $4, NOW())
+            RETURNING *
+          `;
+          
+          const insertResult = await client.query(insertAnalysisQuery, [
+            movie.id,
+            'page_analysis',
+            analysisData,
+            `Movie page analysis for ${movie.title} (${movie.year})`
+          ]);
+
+          const dbEndTime = Date.now();
+          const dbDuration = (dbEndTime - dbStartTime) / 1000;
+          
+          if (insertResult.rows.length > 0) {
+            console.log(`💾 Saved analysis to database (${dbDuration.toFixed(2)}s) - Cost: $${costEstimate.toFixed(4)}`);
+            logger.movieAnalysis(tmdbId, 'claude_analysis_saved', { 
+              cost: costEstimate,
+              tokens: message.usage.input_tokens + message.usage.output_tokens,
+              duration: claudeDuration
+            });
+          } else {
+            console.error(`❌ Failed to save analysis to database`);
+          }
+
+          // Return fresh analysis result
+          logger.movieAnalysis(tmdbId, 'completed', { 
+            status: 'fresh_analysis',
+            duration: Date.now() - startTime,
+            source: 'claude_fresh',
+            cost: costEstimate
+          });
+          apiLogger.apiResponse('GET', '/api/movie-analysis', 200, Date.now() - startTime);
+          return res.status(200).json({
+            success: true,
+            analysis: rawAnalysis,
+            rawAnalysis: rawAnalysis,
+            movie: {
+              title: movie.title,
+              year: movie.year,
+              tmdb_id: movie.tmdb_id
+            },
+            cached: false,
+            source: 'claude_fresh',
+            cost: costEstimate,
+            timing: {
+              claude: claudeDuration,
+              database: dbDuration,
+              total: (Date.now() - startTime) / 1000
+            }
+          });
+
+        } catch (claudeError) {
+          console.error('❌ Claude analysis generation failed:', claudeError);
+          logger.movieAnalysis(tmdbId, 'failed', { 
+            reason: 'claude_error',
+            error: claudeError.message,
+            duration: Date.now() - startTime 
+          });
+          
+          // Fallback: return movie found but no analysis  
+          apiLogger.apiResponse('GET', '/api/movie-analysis', 200, Date.now() - startTime);
+          return res.status(200).json({
+            success: true,
+            movie: {
+              title: movie.title,
+              year: movie.year,
+              tmdb_id: movie.tmdb_id
+            },
+            analysis: `${movie.title} (${movie.year}) is a notable film that has made significant contributions to cinema.`,
+            cached: false,
+            source: 'error_fallback',
+            error: 'Failed to generate fresh analysis'
+          });
+        }
       }
 
       const analysis = analysisResult.rows[0];
