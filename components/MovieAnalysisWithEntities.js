@@ -706,19 +706,6 @@ const styles = {
   exploreSection: {
     marginTop: '32px',
   },
-  subheadSection: {
-    marginTop: '24px',
-    marginBottom: '16px',
-  },
-  subheadText: {
-    fontSize: '14px',
-    fontWeight: '700',
-    textTransform: 'uppercase',
-    letterSpacing: '1px',
-    color: '#d4af37',
-    margin: 0,
-    textAlign: 'left',
-  },
   exploreGrid: {
     display: 'grid',
     gridTemplateColumns: 'repeat(1, 1fr)',
