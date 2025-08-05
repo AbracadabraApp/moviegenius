@@ -88,14 +88,27 @@ export default function MovieDetailPage() {
           const analysisResponse = await fetch(`/api/movie-analysis?tmdbId=${id}`);
           if (analysisResponse.ok) {
             const apiData = await analysisResponse.json();
+            
+            // Defensive data validator - prevents future developer breaks
+            function validateAnalysisData(data) {
+              if (!data?.analysis && !data?.rawAnalysis) return null;
+              const content = data.analysis || data.rawAnalysis;
+              return {
+                processed_content: content, // Primary field for JSON rendering
+                raw_content: content // Fallback for compatibility
+              };
+            }
+            
+            const validatedContent = validateAnalysisData(apiData);
+            if (!validatedContent) {
+              console.error('❌ Invalid analysis data structure:', apiData);
+              setAnalysis(null);
+              return;
+            }
+            
             // Format analysis data for MovieAnalysisWithEntities component
-            // Our API returns processed content, so use it in the correct field
-            const analysisContent = apiData.analysis || apiData.rawAnalysis;
             const formattedAnalysis = {
-              claude_response: {
-                processed_content: analysisContent, // Correct field for JSON analysis
-                raw_content: analysisContent // Keep fallback for compatibility
-              },
+              claude_response: validatedContent,
               entity_linking_data: (apiData.entityData || apiData.movieData) ? {
                 entityData: apiData.entityData || apiData.movieData,
                 processedAt: new Date().toISOString()
@@ -198,8 +211,18 @@ export default function MovieDetailPage() {
             </div>
           </ErrorBoundary>
 
-          {/* Movie Analysis */}
-          <ErrorBoundary level="section">
+          {/* Movie Analysis - Enhanced error boundary for analysis rendering issues */}
+          <ErrorBoundary 
+            level="section"
+            fallback={
+              <div style={{ padding: '20px', textAlign: 'center', color: '#6b7280' }}>
+                <p>Analysis temporarily unavailable</p>
+                <p style={{ fontSize: '14px', marginTop: '8px' }}>
+                  Please refresh the page or try again later
+                </p>
+              </div>
+            }
+          >
             <MovieAnalysisWithEntities
               analysis={analysis}
               movie={movie}
