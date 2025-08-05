@@ -12,6 +12,7 @@
     "fix:cache:deep": "rm -rf .next && rm -rf node_modules/.cache && npm run dev",
     "fix:cache:nuclear": "rm -rf .next && rm -rf node_modules && npm install && npm run dev",
     "dev": "next dev",
+    "dev:clean": "rm -rf .next && next dev",
     "dev:fast": "NEXT_TELEMETRY_DISABLED=1 next dev --turbo",
     "validate:build-env": "node scripts/validate-build-environment.js",
     "validate-build": "node scripts/validate-build.js",
