@@ -747,6 +747,25 @@ const styles = {
 
 // Render JSON format analysis with proper alternating layout
 function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisible) {
+  // Defensive logging to catch future rendering issues
+  if (!jsonData) {
+    console.warn('⚠️ renderJsonAnalysis called with null/undefined jsonData');
+    return null;
+  }
+  
+  if (typeof jsonData === 'string') {
+    try {
+      jsonData = JSON.parse(jsonData);
+    } catch (e) {
+      console.error('❌ Failed to parse JSON analysis data:', e.message);
+      return null;
+    }
+  }
+  
+  if (!jsonData.content || !Array.isArray(jsonData.content)) {
+    console.warn('⚠️ Invalid JSON analysis structure - missing content array:', jsonData);
+  }
+
   const enhanceMovieWithTmdb = (movieItem) => {
     // Enhanced movie data should come from the linking process
     // For now, use the data as provided by the JSON structure
