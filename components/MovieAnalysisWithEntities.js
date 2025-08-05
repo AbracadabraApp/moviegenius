@@ -582,18 +582,57 @@ export default function MovieAnalysisWithEntities({
 
 const styles = {
   container: {
-    padding: '16px 20px',
+    padding: '0 24px', // Increased horizontal padding
     backgroundColor: '#ffffff',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   analysisContent: {
-    marginBottom: '24px',
+    marginBottom: '32px', // Increased section spacing
   },
   paragraph: {
-    fontSize: '16px',
-    lineHeight: '1.6',
-    color: '#374151',
+    fontSize: '17px', // Slightly larger text
+    lineHeight: '1.65', // Better readability
+    color: '#1f2937', // Darker text for better contrast
+    marginBottom: '20px', // More generous paragraph spacing
+    letterSpacing: '0.01em', // Subtle letter spacing
+  },
+  sectionTitle: {
+    fontSize: '18px',
+    fontWeight: '600',
+    color: '#111827',
     marginBottom: '16px',
+    marginTop: '32px',
+  },
+  reasonsToWatchSection: {
+    marginTop: '28px',
+    marginBottom: '32px',
+    padding: '20px',
+    backgroundColor: '#f8fafc',
+    borderRadius: '12px',
+    border: '1px solid #e2e8f0',
+  },
+  reasonsList: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '12px',
+  },
+  reasonItem: {
+    display: 'flex',
+    alignItems: 'flex-start',
+    gap: '12px',
+  },
+  reasonBullet: {
+    color: '#d4af37',
+    fontSize: '18px',
+    fontWeight: 'bold',
+    marginTop: '2px',
+    minWidth: '12px',
+  },
+  reasonText: {
+    fontSize: '16px',
+    lineHeight: '1.5',
+    color: '#374151',
+    flex: 1,
   },
   movieReferencesSection: {
     marginTop: '32px',
@@ -753,13 +792,14 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
   const moreIdeas = filterSelfReferential(
     (jsonData.moreIdeas || []).map(enhanceMovieWithTmdb)
   );
+  const whyWatch = jsonData.whyWatch || []; // Reasons to Watch data
 
 
   let exploreIndex = 0;
   let movieGroupIndex = 0;
   const moviesPerGroup = 2; // Split featured movies into groups
 
-  // Create alternating pattern: Text → Featured Films → Text → Explore Further → Repeat
+  // Create alternating pattern: Reasons to Watch → Text → Featured Films → Text → Explore Further → Repeat
   textSections.forEach((section, textIndex) => {
     // Add text section
     content.push(
@@ -778,6 +818,23 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
         </ErrorBoundary>
       </div>
     );
+
+    // Add "Reasons to Watch" after the first text section (introduction)
+    if (textIndex === 0 && whyWatch.length > 0) {
+      content.push(
+        <div key="reasons-to-watch" style={styles.reasonsToWatchSection}>
+          <h3 style={styles.sectionTitle}>Why Watch This Film</h3>
+          <div style={styles.reasonsList}>
+            {whyWatch.map((reason, reasonIndex) => (
+              <div key={`reason-${reasonIndex}`} style={styles.reasonItem}>
+                <div style={styles.reasonBullet}>•</div>
+                <div style={styles.reasonText}>{reason}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+    }
 
     // Add SUBHEAD support based on content section type
     if (section.type === 'technicalAnalysis' || section.type === 'legacyAndImpact') {

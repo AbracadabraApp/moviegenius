@@ -89,14 +89,9 @@ export default function MovieDetailPage() {
           if (analysisResponse.ok) {
             const apiData = await analysisResponse.json();
             // Format analysis data for MovieAnalysisWithEntities component
-            // Our API now returns processed content, so use it appropriately
-            const analysisContent = apiData.analysis || apiData.rawAnalysis;
             const formattedAnalysis = {
               claude_response: {
-                // If content is already processed (HTML or clean text), use as processed_content
-                // If it's JSON, the component will handle parsing
-                processed_content: analysisContent,
-                raw_content: analysisContent // Keep fallback for compatibility
+                raw_content: apiData.analysis || apiData.rawAnalysis
               },
               entity_linking_data: (apiData.entityData || apiData.movieData) ? {
                 entityData: apiData.entityData || apiData.movieData,
@@ -186,15 +181,9 @@ export default function MovieDetailPage() {
             </div>
           </ErrorBoundary>
 
-          {/* Movie Header (Poster & Streaming) - 0ms delay */}
+          {/* Movie Header */}
           <ErrorBoundary level="section">
-            <div style={{ 
-              paddingLeft: '20px',
-              opacity: movie ? 1 : 0,
-              transform: movie ? 'translateY(0px)' : 'translateY(6px)',
-              transition: 'opacity 0.2s ease-out, transform 0.2s ease-out',
-              transitionDelay: '0ms',
-            }}>
+            <div style={{ paddingLeft: '20px' }}>
               <MovieHeaderLarge
                 title={movie?.title}
                 year={year}
@@ -206,31 +195,17 @@ export default function MovieDetailPage() {
             </div>
           </ErrorBoundary>
 
-          {/* Movie Analysis - flowing cascade from top to bottom - 25ms delay */}
+          {/* Movie Analysis */}
           <ErrorBoundary level="section">
-            <div style={{ 
-              opacity: movie ? 1 : 0,
-              transform: movie ? 'translateY(0px)' : 'translateY(6px)',
-              transition: 'opacity 0.2s ease-out, transform 0.2s ease-out',
-              transitionDelay: '25ms',
-            }}>
-              <MovieAnalysisWithEntities
-                analysis={analysis}
-                movie={movie}
-              />
-            </div>
+            <MovieAnalysisWithEntities
+              analysis={analysis}
+              movie={movie}
+            />
           </ErrorBoundary>
 
-          {/* Discovery Footer - final cascade - 50ms delay */}
+          {/* Discovery Footer */}
           <ErrorBoundary level="section">
-            <div style={{ 
-              opacity: movie ? 1 : 0,
-              transform: movie ? 'translateY(0px)' : 'translateY(6px)',
-              transition: 'opacity 0.2s ease-out, transform 0.2s ease-out',
-              transitionDelay: '50ms',
-            }}>
-              <DiscoveryFooter />
-            </div>
+            <DiscoveryFooter />
           </ErrorBoundary>
         </div>
       </PhoneFrame>
