@@ -634,6 +634,16 @@ const styles = {
     color: '#374151',
     flex: 1,
   },
+  subheadSection: {
+    marginTop: '32px',
+    marginBottom: '16px',
+  },
+  subheadText: {
+    fontSize: '18px',
+    fontWeight: '600',
+    color: '#111827',
+    margin: 0,
+  },
   movieReferencesSection: {
     marginTop: '32px',
     marginBottom: '24px',
@@ -820,7 +830,20 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
 
   // Create alternating pattern: Reasons to Watch → Text → Featured Films → Text → Explore Further → Repeat
   textSections.forEach((section, textIndex) => {
-    // Add text section
+    // Add section header IMMEDIATELY before its paragraph text (not after)
+    if (section.type === 'technicalAnalysis' || section.type === 'legacyAndImpact') {
+      const subheadText = section.type === 'technicalAnalysis' 
+        ? 'Technical Excellence'
+        : 'Legacy and Modern Impact';
+      
+      content.push(
+        <div key={`subhead-${textIndex}`} style={styles.subheadSection}>
+          <h3 style={styles.subheadText}>{subheadText}</h3>
+        </div>
+      );
+    }
+    
+    // Add text section (immediately after its header)
     content.push(
       <div key={`json-text-${textIndex}`} style={styles.paragraph} data-testid={`section-${section.type}`}>
         <ErrorBoundary level="section">
@@ -851,19 +874,6 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
               </div>
             ))}
           </div>
-        </div>
-      );
-    }
-
-    // Add SUBHEAD support based on content section type
-    if (section.type === 'technicalAnalysis' || section.type === 'legacyAndImpact') {
-      const subheadText = section.type === 'technicalAnalysis' 
-        ? 'Technical Excellence'
-        : 'Legacy and Modern Impact';
-      
-      content.push(
-        <div key={`subhead-${textIndex}`} style={styles.subheadSection}>
-          <h3 style={styles.subheadText}>{subheadText}</h3>
         </div>
       );
     }
