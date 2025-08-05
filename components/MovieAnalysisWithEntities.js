@@ -275,16 +275,32 @@ export default function MovieAnalysisWithEntities({
     // Render with raw content while processing happens in background
     const rawContent = analysis.claude_response.raw_content;
     let analysisData;
+    
     try {
       analysisData = JSON.parse(rawContent);
-      if (analysisData) {
+      if (analysisData && analysisData.content && Array.isArray(analysisData.content)) {
+        // Valid JSON analysis structure detected - render immediately
         return renderJsonAnalysis(analysisData, movie, linkingIntensity, className);
       }
     } catch (e) {
-      // JSON parsing failed - log for debugging and fall back to text processing
-      console.warn('Failed to parse analysis JSON, using raw content:', e.message);
+      // JSON parsing failed - this is expected for legacy text format analyses
+      // Continue to fallback logic below
     }
     
+    // Fallback for non-JSON or invalid JSON content
+    // Check if it looks like JSON that should be parsed (starts with { and has reasonable length)
+    if (rawContent && rawContent.trim().startsWith('{') && rawContent.length > 100) {
+      // This looks like JSON but parsing failed - display a better error message
+      return (
+        <div className={className}>
+          <div style={styles.paragraph}>
+            <p>Analysis data is loading... Please refresh if this persists.</p>
+          </div>
+        </div>
+      );
+    }
+    
+    // For text content, display as-is
     return (
       <div className={className}>
         <div style={styles.paragraph}>
@@ -591,7 +607,7 @@ const styles = {
   },
   paragraph: {
     fontSize: '17px', // Slightly larger text
-    lineHeight: '1.65', // Better readability
+    lineHeight: '1.6', // Standard readability
     color: '#1f2937', // Darker text for better contrast
     marginBottom: '20px', // More generous paragraph spacing
     letterSpacing: '0.01em', // Subtle letter spacing
@@ -761,6 +777,13 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
   
   if (!jsonData.content || !Array.isArray(jsonData.content)) {
     console.warn('⚠️ Invalid JSON analysis structure - missing content array:', jsonData);
+    return (
+      <div style={styles.container} className={className}>
+        <div style={styles.paragraph}>
+          <p>Analysis data format not supported</p>
+        </div>
+      </div>
+    );
   }
 
   const enhanceMovieWithTmdb = (movieItem) => {

@@ -32,8 +32,21 @@ export default function EntityLinkedText({
     );
   }
 
-  // For now, just render the cleaned text since processing should happen server-side
-  // TODO: Integrate with movie-analysis-linker.js for server-side processing
+  // Check if the text contains HTML links (from processed_content)
+  const containsHtmlLinks = cleanText.includes('<a href=');
+  
+  if (containsHtmlLinks) {
+    // Render HTML content with links using dangerouslySetInnerHTML
+    return (
+      <span 
+        className={className} 
+        style={style}
+        dangerouslySetInnerHTML={{ __html: cleanText }}
+      />
+    );
+  }
+
+  // For plain text content, render as normal
   return <span className={className} style={style}>{cleanText}</span>;
 }
 
