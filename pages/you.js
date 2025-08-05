@@ -506,14 +506,14 @@ export default function YouPage() {
                       gap: '3px',
                     }}
                   >
-                    <Check size={16} color="#9ca3af" strokeWidth={1.5} />
+                    <Check size={16} color="#6b7280" strokeWidth={2} />
                     <span
                       style={{
                         fontSize: '12px',
                         lineHeight: '1',
                         userSelect: 'none',
-                        color: '#9ca3af',
-                        fontWeight: '400',
+                        color: '#6b7280',
+                        fontWeight: '500',
                       }}
                     >
                       Seen
@@ -540,14 +540,14 @@ export default function YouPage() {
                       gap: '3px',
                     }}
                   >
-                    <Plus size={16} color="#9ca3af" />
+                    <Plus size={16} color="#6b7280" strokeWidth={2} />
                     <span
                       style={{
                         fontSize: '12px',
                         lineHeight: '1',
                         userSelect: 'none',
-                        color: '#9ca3af',
-                        fontWeight: '400',
+                        color: '#6b7280',
+                        fontWeight: '500',
                       }}
                     >
                       Add

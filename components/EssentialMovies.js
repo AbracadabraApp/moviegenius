@@ -292,14 +292,14 @@ export default function EssentialMovies({ theme }) {
                   <div style={styles.iconWithText}>
                     <Check
                       size={16}
-                      color={heartedMovies.has(movie.tmdb_id) ? '#374151' : '#9ca3af'}
-                      strokeWidth={heartedMovies.has(movie.tmdb_id) ? 2.5 : 1.5}
+                      color={heartedMovies.has(movie.tmdb_id) ? '#000000' : '#6b7280'}
+                      strokeWidth={heartedMovies.has(movie.tmdb_id) ? 3 : 2}
                     />
                     <span
                       style={{
                         ...styles.iconLabel,
-                        color: heartedMovies.has(movie.tmdb_id) ? '#374151' : '#9ca3af',
-                        fontWeight: heartedMovies.has(movie.tmdb_id) ? '600' : '400',
+                        color: heartedMovies.has(movie.tmdb_id) ? '#000000' : '#6b7280',
+                        fontWeight: heartedMovies.has(movie.tmdb_id) ? '700' : '500',
                       }}
                     >
                       Seen
@@ -316,13 +316,14 @@ export default function EssentialMovies({ theme }) {
                   <div style={styles.iconWithText}>
                     <Plus
                       size={16}
-                      color={bookmarkedMovies.has(movie.tmdb_id) ? '#374151' : '#9ca3af'}
+                      color={bookmarkedMovies.has(movie.tmdb_id) ? '#000000' : '#6b7280'}
+                      strokeWidth={bookmarkedMovies.has(movie.tmdb_id) ? 3 : 2}
                     />
                     <span
                       style={{
                         ...styles.iconLabel,
-                        color: bookmarkedMovies.has(movie.tmdb_id) ? '#374151' : '#9ca3af',
-                        fontWeight: bookmarkedMovies.has(movie.tmdb_id) ? '600' : '400',
+                        color: bookmarkedMovies.has(movie.tmdb_id) ? '#000000' : '#6b7280',
+                        fontWeight: bookmarkedMovies.has(movie.tmdb_id) ? '700' : '500',
                       }}
                     >
                       Add

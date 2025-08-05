@@ -284,14 +284,14 @@ export default function MediaCard({
             <div style={styles.iconWithTextHorizontal}>
               <Check
                 size={16}
-                color={hearted ? '#374151' : '#9ca3af'}
-                strokeWidth={hearted ? 2.5 : 1.5}
+                color={hearted ? '#000000' : '#6b7280'}
+                strokeWidth={hearted ? 3 : 2}
               />
               <span
                 style={{
                   ...styles.iconLabel,
-                  color: hearted ? '#374151' : '#9ca3af',
-                  fontWeight: hearted ? '600' : '400',
+                  color: hearted ? '#000000' : '#6b7280',
+                  fontWeight: hearted ? '700' : '500',
                 }}
               >
                 Seen
@@ -308,12 +308,12 @@ export default function MediaCard({
             role="button"
           >
             <div style={styles.iconWithTextHorizontal}>
-              <Plus size={16} color={bookmarked ? '#374151' : '#9ca3af'} />
+              <Plus size={16} color={bookmarked ? '#000000' : '#6b7280'} strokeWidth={bookmarked ? 3 : 2} />
               <span
                 style={{
                   ...styles.iconLabel,
-                  color: bookmarked ? '#374151' : '#9ca3af',
-                  fontWeight: bookmarked ? '600' : '400',
+                  color: bookmarked ? '#000000' : '#6b7280',
+                  fontWeight: bookmarked ? '700' : '500',
                 }}
               >
                 Add
