@@ -1,9 +1,10 @@
 /**
- * Error Boundary Component
+ * Enhanced Error Boundary Component with Production Observability
  *
  * Catches JavaScript errors anywhere in the child component tree,
- * logs those errors, and displays a fallback UI instead of crashing.
- * Enhanced with defensive patterns and recovery options.
+ * logs those errors with full context for production monitoring,
+ * and displays a fallback UI instead of crashing.
+ * Integrated with MovieGenius observability system.
  *
  * @see https://reactjs.org/docs/error-boundaries.html
  */
@@ -26,13 +27,60 @@ class ErrorBoundary extends React.Component {
       errorInfo: errorInfo
     });
 
-    // Remove console logging to prevent hydration mismatches
-    // Error is tracked in state for development display
+    // Log error to production observability system
+    this.logErrorToObservability(error, errorInfo);
+  }
 
-    // Future: Add monitoring service integration
-    // if (process.env.NODE_ENV === 'production') {
-    //   logErrorToService(error, errorInfo);
-    // }
+  // Enhanced error logging with full context
+  logErrorToObservability = (error, errorInfo) => {
+    const errorData = {
+      error_boundary: true,
+      level: this.props.level || 'section',
+      component_stack: errorInfo?.componentStack,
+      error_message: error?.message,
+      error_name: error?.name,
+      error_stack: error?.stack,
+      retry_count: this.state.retryCount,
+      timestamp: new Date().toISOString(),
+      url: typeof window !== 'undefined' ? window.location.href : 'unknown',
+      user_agent: typeof navigator !== 'undefined' ? navigator.userAgent : 'unknown',
+      viewport: typeof window !== 'undefined' ? {
+        width: window.innerWidth,
+        height: window.innerHeight
+      } : null,
+      memory: typeof performance !== 'undefined' && performance.memory ? {
+        used: Math.round(performance.memory.usedJSHeapSize / 1024 / 1024),
+        total: Math.round(performance.memory.totalJSHeapSize / 1024 / 1024)
+      } : null
+    };
+
+    // Send to error tracking endpoint
+    if (typeof fetch !== 'undefined') {
+      fetch('/api/error-tracking', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          type: 'frontend_error',
+          source: 'error_boundary',
+          data: errorData
+        })
+      }).catch(fetchError => {
+        // Fallback: log to console in development
+        if (process.env.NODE_ENV === 'development') {
+          console.error('Failed to send error to tracking:', fetchError);
+          console.error('Original error:', error, errorInfo);
+        }
+      });
+    }
+
+    // Development logging
+    if (process.env.NODE_ENV === 'development') {
+      console.error('ErrorBoundary caught an error:', error);
+      console.error('Error info:', errorInfo);
+      console.error('Context:', errorData);
+    }
   }
 
   handleRetry = () => {

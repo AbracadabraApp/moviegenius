@@ -1,19 +1,104 @@
-// pages/api/health.js - Health check + Search Authentication Testing
+// pages/api/health.js - Comprehensive health monitoring for MovieGenius
+import { healthChecker, quickHealthCheck, fullHealthCheck } from '../../lib/observability/health-checker.js';
+import { logger, apiLogger } from '../../lib/observability/logger.js';
+
 export default async function handler(req, res) {
+  const startTime = Date.now();
+  
   if (req.method === 'GET') {
-    const { test } = req.query;
+    const { test, check, format } = req.query;
     
-    // If test=search parameter, run search authentication tests
-    if (test === 'search') {
-      return await runSearchTests(req, res);
+    apiLogger.apiRequest('GET', '/api/health', req.query);
+    
+    try {
+      // Legacy search tests (kept for backward compatibility)
+      if (test === 'search') {
+        const result = await runSearchTests(req, res);
+        apiLogger.apiResponse('GET', '/api/health', 200, Date.now() - startTime);
+        return result;
+      }
+      
+      // Comprehensive health checks
+      let healthResult;
+      
+      switch (check) {
+        case 'quick':
+          healthResult = await quickHealthCheck();
+          break;
+        case 'full':
+          healthResult = await fullHealthCheck();
+          break;
+        case 'history':
+          const history = healthChecker.getHealthHistory(parseInt(req.query.limit) || 10);
+          apiLogger.apiResponse('GET', '/api/health', 200, Date.now() - startTime);
+          return res.status(200).json({
+            service: 'MovieGenius Health History',
+            timestamp: new Date().toISOString(),
+            history
+          });
+        case 'last':
+          const lastCheck = healthChecker.getLastHealthCheck();
+          apiLogger.apiResponse('GET', '/api/health', 200, Date.now() - startTime);
+          return res.status(200).json({
+            service: 'MovieGenius Last Health Check',
+            timestamp: new Date().toISOString(),
+            lastCheck
+          });
+        default:
+          // Default: quick health check
+          healthResult = await quickHealthCheck();
+      }
+      
+      // Determine HTTP status based on health
+      let statusCode = 200;
+      if (healthResult.overall === 'critical') {
+        statusCode = 503; // Service Unavailable
+      } else if (healthResult.overall === 'degraded') {
+        statusCode = 200; // OK but with warnings
+      }
+      
+      // Format response
+      const response = {
+        service: 'MovieGenius',
+        timestamp: new Date().toISOString(),
+        health: healthResult,
+        links: {
+          self: '/api/health',
+          quick: '/api/health?check=quick',
+          full: '/api/health?check=full',
+          history: '/api/health?check=history',
+          dashboard: '/health-dashboard'
+        }
+      };
+      
+      // Simple format for monitoring systems
+      if (format === 'simple') {
+        const simpleResponse = {
+          status: healthResult.overall,
+          timestamp: healthResult.timestamp,
+          checks_passed: healthResult.summary.passed,
+          checks_failed: healthResult.summary.failed,
+          critical_failures: healthResult.summary.critical_failed
+        };
+        apiLogger.apiResponse('GET', '/api/health', statusCode, Date.now() - startTime);
+        return res.status(statusCode).json(simpleResponse);
+      }
+      
+      apiLogger.apiResponse('GET', '/api/health', statusCode, Date.now() - startTime, JSON.stringify(response).length);
+      return res.status(statusCode).json(response);
+      
+    } catch (error) {
+      logger.error('Health check endpoint failed', { error: error.message }, error);
+      apiLogger.apiResponse('GET', '/api/health', 500, Date.now() - startTime);
+      
+      return res.status(500).json({
+        service: 'MovieGenius',
+        status: 'error',
+        timestamp: new Date().toISOString(),
+        error: error.message,
+        message: 'Health check system failure'
+      });
     }
-    
-    // Default health check
-    return res.status(200).json({
-      status: 'ok',
-      timestamp: new Date().toISOString(),
-      service: 'MovieGenius'
-    });
   }
   
   return res.status(405).json({ error: 'Method not allowed' });

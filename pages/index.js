@@ -13,6 +13,31 @@ import { themeLinks } from '../lib/routes';
 export default function HomePage() {
   const router = useRouter();
 
+  // Debug helper for localStorage state
+  const checkManifestoState = () => {
+    if (typeof window !== 'undefined') {
+      const state = localStorage.getItem('moviegenius_manifesto_seen');
+      console.log('Manifesto state check:', { 
+        value: state, 
+        type: typeof state, 
+        shouldShow: state !== 'true' 
+      });
+      return state;
+    }
+    return null;
+  };
+
+  // Development helper: Add to window for debugging
+  useEffect(() => {
+    if (typeof window !== 'undefined' && process.env.NODE_ENV === 'development') {
+      window.resetManifesto = () => {
+        localStorage.removeItem('moviegenius_manifesto_seen');
+        console.log('Manifesto state reset - will show on next page load');
+      };
+      console.log('Dev helper: Use window.resetManifesto() to test modal again');
+    }
+  }, []);
+
   // Multi-step form state
   const [currentStep, setCurrentStep] = useState('themes'); // themes, episodes, recommendations
   const [formData, setFormData] = useState({
@@ -30,12 +55,24 @@ export default function HomePage() {
   useEffect(() => {
     setIsClient(true);
 
-    // Check if user has seen the manifesto before
-    const hasSeenManifesto = localStorage.getItem('moviegenius_manifesto_seen');
-
-    if (!hasSeenManifesto) {
-      // First time visitor - show the manifesto
-      setModalStep('manifesto');
+    // Only check localStorage after client-side hydration
+    if (typeof window !== 'undefined') {
+      try {
+        // Check if user has seen the manifesto before using debug helper
+        const hasSeenManifesto = checkManifestoState();
+        
+        // Only show modal if explicitly NOT seen (null or undefined)
+        if (hasSeenManifesto !== 'true') {
+          console.log('Showing manifesto modal - first time visitor');
+          setModalStep('manifesto');
+        } else {
+          console.log('Manifesto already seen - skipping modal');
+        }
+      } catch (error) {
+        // If localStorage fails, default to showing the modal
+        console.warn('Failed to access localStorage:', error);
+        setModalStep('manifesto');
+      }
     }
     // Platform selector is no longer shown automatically - keep component for future use
   }, []);
@@ -241,8 +278,13 @@ export default function HomePage() {
                   </p>
                   <button
                     onClick={() => {
-                      // Mark manifesto as seen so it never shows again
-                      localStorage.setItem('moviegenius_manifesto_seen', 'true');
+                      try {
+                        // Mark manifesto as seen so it never shows again
+                        localStorage.setItem('moviegenius_manifesto_seen', 'true');
+                        console.log('Manifesto dismissed - will not show again');
+                      } catch (error) {
+                        console.warn('Failed to save manifesto dismissal to localStorage:', error);
+                      }
                       // Skip platform selector and go straight to themes
                       setModalStep(null);
                     }}
@@ -904,7 +946,7 @@ const styles = {
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.9),',
+    backgroundColor: 'rgba(0, 0, 0, 0.9)',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
