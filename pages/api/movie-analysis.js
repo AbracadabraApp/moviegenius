@@ -3,13 +3,21 @@
 
 import { Client } from 'pg';
 
-// Railway PostgreSQL connection helper
+// Railway PostgreSQL connection helper (build-safe)
 const getRailwayClient = () => {
   const dbUrl = process.env.RAILWAY_DATABASE_URL || process.env.DATABASE_URL;
   
+  // During build time, environment variables may not be available
   if (!dbUrl) {
-    console.error('❌ DATABASE CONNECTION ERROR: No database URL found');
-    throw new Error('DATABASE_URL or RAILWAY_DATABASE_URL must be set');
+    if (process.env.NODE_ENV === 'production') {
+      console.error('❌ DATABASE CONNECTION ERROR: No database URL found');
+      console.error('Available env vars:', Object.keys(process.env).filter(k => k.includes('DATABASE')));
+      throw new Error('DATABASE_URL or RAILWAY_DATABASE_URL must be set in environment variables');
+    } else {
+      // During build, return a placeholder that won't be used
+      console.warn('⚠️ DATABASE_URL not found during build - this is normal');
+      return null;
+    }
   }
   
   return new Client({ connectionString: dbUrl });
@@ -30,6 +38,14 @@ export default async function movieAnalysisHandler(req, res) {
     console.log(`🔍 RAILWAY API: Looking up movie with tmdbId=${tmdbId}`);
     
     const client = getRailwayClient();
+    
+    if (!client) {
+      return res.status(500).json({
+        error: 'Database connection not available',
+        message: 'DATABASE_URL not configured'
+      });
+    }
+    
     await client.connect();
     
     try {
