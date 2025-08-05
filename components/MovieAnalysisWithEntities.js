@@ -18,11 +18,15 @@ export default function MovieAnalysisWithEntities({
   movie,
   linkingIntensity = 'moderate',
   className = '',
+  animationDelay = 0,
 }) {
   console.log('🔄 UPDATED MovieAnalysisWithEntities component loaded - no loading states!');
   const [processedAnalysis, setProcessedAnalysis] = useState(null);
   const [entityStats, setEntityStats] = useState(null);
   const performanceMonitor = getPerformanceMonitor();
+  
+  // Animation state for smooth entrance
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     if (!analysis?.claude_response?.raw_content) {
@@ -31,6 +35,13 @@ export default function MovieAnalysisWithEntities({
 
     processAnalysisContent();
   }, [analysis, linkingIntensity]);
+
+  // Trigger smooth entrance animation when content is ready
+  useEffect(() => {
+    if (analysis?.claude_response?.raw_content) {
+      setIsVisible(true);
+    }
+  }, [analysis]);
 
   const processAnalysisContent = async () => {
     const processingStart = performance.now();
@@ -293,7 +304,7 @@ export default function MovieAnalysisWithEntities({
 
   // Handle JSON format vs legacy text format
   if (processedAnalysis.isJsonFormat) {
-    return renderJsonAnalysis(processedAnalysis.jsonData, movie, linkingIntensity, className);
+    return renderJsonAnalysis(processedAnalysis.jsonData, movie, linkingIntensity, className, isVisible);
   }
 
   // Legacy text format processing
@@ -696,7 +707,7 @@ const styles = {
 };
 
 // Render JSON format analysis with proper alternating layout
-function renderJsonAnalysis(jsonData, movie, linkingIntensity, className) {
+function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisible) {
   const enhanceMovieWithTmdb = (movieItem) => {
     // Enhanced movie data should come from the linking process
     // For now, use the data as provided by the JSON structure

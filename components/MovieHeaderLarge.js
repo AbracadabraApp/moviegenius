@@ -36,7 +36,8 @@ export default function MovieHeaderLarge({
   initialSlug, 
   initialPoster, 
   initialStreaming,
-  tmdbId 
+  tmdbId,
+  animationDelay = 0
 }) {
   console.log('🖼️ UPDATED MovieHeaderLarge component loaded - no loading poster states!');
 
@@ -47,6 +48,14 @@ export default function MovieHeaderLarge({
   
   // Error state only - removed loading states for immediate render (loading state removal task)
   const [isImageError, setIsImageError] = useState(false);
+  
+  // Animation state for smooth entrance
+  const [isVisible, setIsVisible] = useState(false);
+  
+  // Trigger smooth entrance animation immediately
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
   
   // Action bar states
   const [addedToList, setAddedToList] = useState(false);

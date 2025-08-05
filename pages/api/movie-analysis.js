@@ -88,6 +88,8 @@ export default async function movieAnalysisHandler(req, res) {
       
       dbLogger.dbQuery(movieQuery, [parseInt(tmdbId)], movieQueryTime, movieResult.rowCount);
       
+      let movie; // Declare movie variable in proper scope
+      
       if (movieResult.rows.length === 0) {
         console.log(`🎬 Movie ${tmdbId} not in Railway database, attempting TMDB lookup for analysis request`);
         logger.movieAnalysis(tmdbId, 'tmdb_discovery_started', { reason: 'movie_not_found' });
@@ -325,17 +327,35 @@ export default async function movieAnalysisHandler(req, res) {
 
       const analysis = analysisResult.rows[0];
       
-      // Extract analysis content (handle both string and object formats)
+      // Helper function to clean ** patterns for readable text
+      function cleanMovieTitlePatterns(content) {
+        if (!content || typeof content !== 'string') return content;
+        
+        // Pattern 1: **Movie Title** (Year) → Movie Title (Year)
+        content = content.replace(/\*\*([^*]+)\*\*\s*\((\d{4})\)/g, '$1 ($2)');
+        
+        // Pattern 2: **Movie Title** → Movie Title  
+        content = content.replace(/\*\*([^*]+)\*\*/g, '$1');
+        
+        return content;
+      }
+
+      // NEW 3-TIER CONTENT SERVING LOGIC
       let analysisContent = '';
       const claudeResponse = analysis.claude_response;
       
       if (typeof claudeResponse === 'string') {
-        analysisContent = claudeResponse;
+        // Tier 2: String format - clean ** patterns
+        analysisContent = cleanMovieTitlePatterns(claudeResponse);
+      } else if (claudeResponse && claudeResponse.processed_content && claudeResponse.processed_content.trim()) {
+        // Tier 1: Processed content (HTML movie links) - BEST
+        analysisContent = claudeResponse.processed_content;
       } else if (claudeResponse && claudeResponse.raw_content) {
-        analysisContent = claudeResponse.raw_content;
-      } else if (claudeResponse && claudeResponse.content) {
-        // Handle the JSON format we saw in testing
-        analysisContent = JSON.stringify(claudeResponse, null, 2);
+        // Tier 2: Raw content - clean ** patterns  
+        analysisContent = cleanMovieTitlePatterns(claudeResponse.raw_content);
+      } else {
+        // Tier 3: Fallback message
+        analysisContent = 'Analysis content unavailable for this movie.';
       }
 
       // Log successful analysis retrieval

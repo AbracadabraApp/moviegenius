@@ -1,0 +1,437 @@
+# MovieGenius Test Automation CI/CD Pipeline
+# Comprehensive testing for Railway PostgreSQL integration and critical user paths
+
+name: Test Automation
+
+on:
+  push:
+    branches: [main, develop, feature/*, fix/*]
+  pull_request:
+    branches: [main, develop]
+  schedule:
+    # Run tests daily at 6 AM UTC to catch regressions
+    - cron: '0 6 * * *'
+
+env:
+  NODE_VERSION: '20.x'
+  RAILWAY_DATABASE_URL_TEST: 'postgresql://test:test@localhost:5432/moviegenius_test'
+
+jobs:
+  # Lint and validate code quality
+  lint-and-validate:
+    runs-on: ubuntu-latest
+    name: Code Quality Check
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run ESLint
+        run: npm run lint
+
+      - name: Validate JSX syntax
+        run: npm run validate:jsx
+
+      - name: Check TypeScript types
+        run: npm run typecheck
+
+      - name: Validate locked components
+        run: npm run check-locks
+
+  # Unit and integration tests
+  test-suite:
+    runs-on: ubuntu-latest
+    name: Test Suite
+    needs: lint-and-validate
+    
+    strategy:
+      matrix:
+        test-group: 
+          - 'unit'
+          - 'integration' 
+          - 'api-endpoints'
+          - 'components'
+          - 'critical-paths'
+          - 'railway-integration'
+          - 'performance'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Setup test environment
+        run: |
+          echo "Setting up test environment for ${{ matrix.test-group }}"
+          export NODE_ENV=test
+          export RAILWAY_DATABASE_URL=${{ env.RAILWAY_DATABASE_URL_TEST }}
+
+      - name: Run unit tests
+        if: matrix.test-group == 'unit'
+        run: |
+          npm run test -- __tests__/unit/ --coverage --coverageDirectory=coverage/unit
+          echo "Unit tests completed"
+
+      - name: Run integration tests  
+        if: matrix.test-group == 'integration'
+        run: |
+          npm run test -- __tests__/integration/ --coverage --coverageDirectory=coverage/integration
+          echo "Integration tests completed"
+
+      - name: Run API endpoint tests
+        if: matrix.test-group == 'api-endpoints'
+        run: |
+          JEST_TEST_TYPE=api npm run test -- __tests__/api-endpoints/ --coverage --coverageDirectory=coverage/api
+          echo "API endpoint tests completed"
+
+      - name: Run component tests
+        if: matrix.test-group == 'components'
+        run: |
+          npm run test -- __tests__/components/ --coverage --coverageDirectory=coverage/components
+          echo "Component tests completed"
+
+      - name: Run critical path tests
+        if: matrix.test-group == 'critical-paths'
+        run: |
+          npm run test -- __tests__/critical-paths/ --coverage --coverageDirectory=coverage/critical-paths --testTimeout=30000
+          echo "Critical path tests completed"
+
+      - name: Run Railway PostgreSQL integration tests
+        if: matrix.test-group == 'railway-integration'
+        run: |
+          JEST_TEST_TYPE=api npm run test -- __tests__/railway-integration/ --coverage --coverageDirectory=coverage/railway
+          echo "Railway integration tests completed"
+
+      - name: Run performance benchmark tests
+        if: matrix.test-group == 'performance'
+        run: |
+          JEST_TEST_TYPE=api npm run test -- __tests__/performance/ --coverage --coverageDirectory=coverage/performance --testTimeout=60000
+          echo "Performance tests completed"
+
+      - name: Upload coverage reports
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: coverage-${{ matrix.test-group }}
+          path: coverage/
+          retention-days: 7
+
+  # Combine coverage reports and check thresholds
+  coverage-report:
+    runs-on: ubuntu-latest
+    name: Coverage Analysis
+    needs: test-suite
+    if: always()
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Download all coverage reports
+        uses: actions/download-artifact@v3
+        with:
+          path: coverage-reports/
+
+      - name: Combine coverage reports
+        run: |
+          echo "Combining coverage reports..."
+          npx nyc merge coverage-reports/ coverage/combined.json
+          npx nyc report --reporter=html --reporter=text --reporter=lcov --temp-dir=coverage/ --report-dir=coverage/combined/
+          
+      - name: Check coverage thresholds
+        run: |
+          echo "Checking coverage thresholds..."
+          npx nyc check-coverage --lines 60 --functions 60 --branches 60 --statements 60 --temp-dir=coverage/
+          
+      - name: Generate coverage summary
+        run: |
+          echo "## Test Coverage Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          npx nyc report --reporter=text-summary --temp-dir=coverage/ >> $GITHUB_STEP_SUMMARY
+
+      - name: Upload combined coverage
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-combined
+          path: coverage/combined/
+          retention-days: 30
+
+      - name: Comment coverage on PR
+        if: github.event_name == 'pull_request' 
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            const path = 'coverage/combined/lcov-report/index.html';
+            if (fs.existsSync(path)) {
+              const coverage = fs.readFileSync('coverage/combined/coverage-summary.json', 'utf8');
+              const summary = JSON.parse(coverage);
+              
+              const comment = `## 📊 Test Coverage Report
+              
+              | Metric | Percentage | Status |
+              |--------|------------|--------|
+              | Lines | ${summary.total.lines.pct}% | ${summary.total.lines.pct >= 60 ? '✅' : '❌'} |
+              | Functions | ${summary.total.functions.pct}% | ${summary.total.functions.pct >= 60 ? '✅' : '❌'} |
+              | Branches | ${summary.total.branches.pct}% | ${summary.total.branches.pct >= 60 ? '✅' : '❌'} |
+              | Statements | ${summary.total.statements.pct}% | ${summary.total.statements.pct >= 60 ? '✅' : '❌'} |
+              
+              View detailed coverage report in the artifacts.`;
+              
+              github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: comment
+              });
+            }
+
+  # Performance regression detection
+  performance-regression:
+    runs-on: ubuntu-latest
+    name: Performance Regression Check
+    needs: test-suite
+    if: github.event_name == 'pull_request'
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run performance benchmarks
+        run: |
+          echo "Running performance regression tests..."
+          JEST_TEST_TYPE=api npm run test -- __tests__/performance/ --json --outputFile=performance-results.json --testTimeout=60000
+
+      - name: Analyze performance results
+        run: |
+          echo "Analyzing performance results..."
+          node -e "
+            const results = JSON.parse(require('fs').readFileSync('performance-results.json', 'utf8'));
+            const failures = results.testResults.filter(test => test.status === 'failed');
+            
+            if (failures.length > 0) {
+              console.log('❌ Performance regressions detected:');
+              failures.forEach(failure => {
+                console.log(\`- \${failure.name}\`);
+              });
+              process.exit(1);
+            } else {
+              console.log('✅ No performance regressions detected');
+            }
+          "
+
+  # Build verification
+  build-verification:
+    runs-on: ubuntu-latest
+    name: Build Verification
+    needs: lint-and-validate
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate build environment
+        run: npm run validate:build-env
+
+      - name: Build application
+        run: |
+          echo "Building application..."
+          NODE_ENV=production npm run build
+          
+      - name: Validate build output
+        run: |
+          echo "Validating build output..."
+          npm run validate-build
+          
+      - name: Check bundle size
+        run: |
+          echo "Checking bundle size..."
+          npm run bundle:check
+
+  # Security and dependency checks
+  security-scan:
+    runs-on: ubuntu-latest
+    name: Security Scan
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run npm audit
+        run: |
+          echo "Running security audit..."
+          npm audit --audit-level=moderate
+          
+      - name: Check for vulnerable dependencies
+        run: |
+          echo "Checking for vulnerable dependencies..."
+          npx audit-ci --moderate
+
+  # Railway deployment readiness check
+  railway-readiness:
+    runs-on: ubuntu-latest
+    name: Railway Deployment Readiness
+    needs: [test-suite, build-verification]
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js  
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate Railway configuration
+        run: |
+          echo "Validating Railway deployment configuration..."
+          if [ ! -f "railway.toml" ]; then
+            echo "❌ railway.toml not found"
+            exit 1
+          fi
+          
+          if [ ! -f "nixpacks.toml" ]; then
+            echo "❌ nixpacks.toml not found" 
+            exit 1
+          fi
+          
+          echo "✅ Railway configuration files present"
+
+      - name: Check environment variables
+        run: |
+          echo "Checking required environment variables for Railway..."
+          node -e "
+            const requiredVars = [
+              'RAILWAY_DATABASE_URL',
+              'TMDB_API_KEY', 
+              'ANTHROPIC_API_KEY'
+            ];
+            
+            const missing = requiredVars.filter(v => !process.env[v] && !process.env[\`\${v}_SECRET\`]);
+            
+            if (missing.length > 0) {
+              console.log('⚠️  The following environment variables need to be set in Railway:');
+              missing.forEach(v => console.log(\`- \${v}\`));
+            } else {
+              console.log('✅ All required environment variables configured');
+            }
+          "
+
+      - name: Run deployment verification tests
+        run: |
+          echo "Running deployment verification tests..."
+          npm run test -- __tests__/railway-integration/ --testTimeout=30000
+
+  # Test results summary
+  test-summary:
+    runs-on: ubuntu-latest
+    name: Test Summary
+    needs: [test-suite, coverage-report, performance-regression, build-verification, security-scan]
+    if: always()
+    
+    steps:
+      - name: Generate test summary
+        run: |
+          echo "## 🧪 Test Automation Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ needs.test-suite.result }}" == "success" ]; then
+            echo "✅ **Test Suite**: All tests passed" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ **Test Suite**: Some tests failed" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          if [ "${{ needs.coverage-report.result }}" == "success" ]; then
+            echo "✅ **Coverage**: Meets requirements" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ **Coverage**: Below threshold" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          if [ "${{ needs.build-verification.result }}" == "success" ]; then
+            echo "✅ **Build**: Successful" >> $GITHUB_STEP_SUMMARY
+          else  
+            echo "❌ **Build**: Failed" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          if [ "${{ needs.security-scan.result }}" == "success" ]; then
+            echo "✅ **Security**: No vulnerabilities detected" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "⚠️ **Security**: Vulnerabilities found" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Next Steps" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ github.event_name }}" == "pull_request" ]; then
+            echo "- Review test results and coverage reports" >> $GITHUB_STEP_SUMMARY
+            echo "- Address any failing tests or performance regressions" >> $GITHUB_STEP_SUMMARY
+            echo "- Ensure all checks pass before merging" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- Monitor performance metrics after deployment" >> $GITHUB_STEP_SUMMARY
+            echo "- Check Railway deployment logs for any issues" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "🚨 Test automation pipeline failed!"
+          echo "Check the failed jobs above and address issues before deploying."
+          exit 1

@@ -181,13 +181,19 @@ export default function MovieDetailPage() {
             </div>
           </ErrorBoundary>
 
-          {/* Movie Header */}
+          {/* Movie Header - 0ms delay */}
           <ErrorBoundary level="section">
-            <div style={{ paddingLeft: '20px' }}>
+            <div style={{ 
+              paddingLeft: '20px',
+              opacity: movie ? 1 : 0,
+              transform: movie ? 'translateY(0px)' : 'translateY(8px)',
+              transition: 'opacity 0.15s ease-out, transform 0.15s ease-out',
+              transitionDelay: '0ms',
+            }}>
               <MovieHeaderLarge
-                title={movie.title}
+                title={movie?.title}
                 year={year}
-                initialSlug={movie.overview}
+                initialSlug={movie?.overview}
                 initialPoster={posterUrl}
                 initialStreaming={streaming?.streaming_data}
                 tmdbId={parseInt(id)}
@@ -195,17 +201,31 @@ export default function MovieDetailPage() {
             </div>
           </ErrorBoundary>
 
-          {/* Movie Analysis with Entity Linking */}
+          {/* Movie Analysis - 50ms delay */}
           <ErrorBoundary level="section">
-            <MovieAnalysisWithEntities
-              analysis={analysis}
-              movie={movie}
-            />
+            <div style={{ 
+              opacity: movie ? 1 : 0,
+              transform: movie ? 'translateY(0px)' : 'translateY(8px)',
+              transition: 'opacity 0.15s ease-out, transform 0.15s ease-out',
+              transitionDelay: '50ms',
+            }}>
+              <MovieAnalysisWithEntities
+                analysis={analysis}
+                movie={movie}
+              />
+            </div>
           </ErrorBoundary>
 
-          {/* Discovery Footer */}
+          {/* Discovery Footer - 100ms delay */}
           <ErrorBoundary level="section">
-            <DiscoveryFooter />
+            <div style={{ 
+              opacity: movie ? 1 : 0,
+              transform: movie ? 'translateY(0px)' : 'translateY(8px)',
+              transition: 'opacity 0.15s ease-out, transform 0.15s ease-out',
+              transitionDelay: '100ms',
+            }}>
+              <DiscoveryFooter />
+            </div>
           </ErrorBoundary>
         </div>
       </PhoneFrame>
