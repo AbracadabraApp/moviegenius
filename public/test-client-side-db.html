@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Client-Side Supabase Test</title>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <h1>Client-Side Database Test</h1>
+    <button onclick="testSupabase()">Test Supabase Connection</button>
+    <div id="results"></div>
+
+    <script>
+        // Same credentials that fail server-side
+        const supabaseUrl = 'https://tjvaplqqibvlmazdvcwx.supabase.co'
+        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRqdmFwbHFxaWJ2bG1hemR2Y3d4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDg3OTcyMjEsImV4cCI6MjA2NDM3MzIyMX0.DqIQ3Q1GXjc6Dfug9pVa_olugopsZrt-Lryd6447k74'
+        
+        console.log('Using URL:', supabaseUrl)
+        console.log('Using Key:', supabaseKey.substring(0, 50) + '...')
+        
+        const supabase = window.supabase.createClient(supabaseUrl, supabaseKey)
+        
+        async function testSupabase() {
+            const results = document.getElementById('results')
+            results.innerHTML = 'Testing...'
+            
+            try {
+                console.log('Testing client-side Supabase connection...')
+                
+                // Same query that fails server-side
+                const { data, error } = await supabase
+                    .from('movies')
+                    .select('id, title, year')
+                    .limit(1)
+                
+                if (error) {
+                    results.innerHTML = `<p style="color: red;">ERROR: ${error.message}</p>`
+                    console.error('Supabase error:', error)
+                } else {
+                    results.innerHTML = `<p style="color: green;">SUCCESS: ${JSON.stringify(data)}</p>`
+                    console.log('Supabase success:', data)
+                }
+                
+            } catch (err) {
+                results.innerHTML = `<p style="color: red;">EXCEPTION: ${err.message}</p>`
+                console.error('Exception:', err)
+            }
+        }
+    </script>
+</body>
+</html>

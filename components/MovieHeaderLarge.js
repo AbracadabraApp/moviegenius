@@ -362,7 +362,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center', // Center everything
-    padding: '0px 16px 0px 16px',
+    padding: '0px 20px 0px 20px',
     width: '100%',
     boxSizing: 'border-box',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
@@ -414,7 +414,7 @@ const styles = {
     justifyContent: 'flex-start',
     marginBottom: '5px',
     paddingLeft: '0px',
-    paddingRight: '20px',
+    paddingRight: '0px',
     paddingTop: '0px',
     paddingBottom: '5px',
   },
