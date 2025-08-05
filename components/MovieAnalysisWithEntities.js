@@ -13,6 +13,9 @@ import MediaCardErrorFallback from './MediaCardErrorFallback';
 import ExplorePromptErrorFallback from './ExplorePromptErrorFallback';
 import { getPerformanceMonitor } from '../lib/performance-monitor';
 
+// Feature flag for Explore Further functionality
+const ENABLE_EXPLORE_FURTHER = false; // Set to true when explore pages are ready
+
 export default function MovieAnalysisWithEntities({
   analysis,
   movie,
@@ -313,7 +316,7 @@ export default function MovieAnalysisWithEntities({
   if (!processedAnalysis) {
     return (
       <div className={className}>
-        <p className="text-gray-500">***</p>
+        {/* Loading state - no placeholder needed */}
       </div>
     );
   }
@@ -366,8 +369,10 @@ export default function MovieAnalysisWithEntities({
           content.push(
             <div key={`text-${sectionIndex}`}>
               {/* Subhead styling */}
-              <div style={styles.subheadSection}>
-                <h3 style={styles.subheadText}>{firstLine}</h3>
+              <div style={{...styles.subheadSection, borderLeft: '3px solid #d4af37', paddingLeft: '16px'}}>
+                <h3 style={styles.subheadText}>
+                  {firstLine.toUpperCase()}
+                </h3>
               </div>
               {/* Regular text content */}
               {restOfContent && (
@@ -410,8 +415,10 @@ export default function MovieAnalysisWithEntities({
       } else if (section.type === 'subhead') {
         // Legacy standalone subhead handling (should not occur with new parsing)
         content.push(
-          <div key={`subhead-${sectionIndex}`} style={styles.subheadSection}>
-            <h3 style={styles.subheadText}>{section.content}</h3>
+          <div key={`subhead-${sectionIndex}`} style={{...styles.subheadSection, borderLeft: '3px solid #d4af37', paddingLeft: '16px'}}>
+            <h3 style={styles.subheadText}>
+              {section.content.toUpperCase()}
+            </h3>
           </div>
         );
       } else if (section.type === 'movies') {
@@ -470,7 +477,7 @@ export default function MovieAnalysisWithEntities({
         }
         
         // Add single EXPLORE FURTHER card after FEATURED FILMS
-        if (exploreIndex < exploreTopics.length) {
+        if (ENABLE_EXPLORE_FURTHER && exploreIndex < exploreTopics.length) {
           content.push(
             <div key={`explore-${sectionIndex}`} style={styles.exploreSection}>
               <div style={styles.sectionHeader}>
@@ -492,7 +499,7 @@ export default function MovieAnalysisWithEntities({
     });
     
     // Add remaining EXPLORE FURTHER cards if any
-    if (exploreIndex < exploreTopics.length) {
+    if (ENABLE_EXPLORE_FURTHER && exploreIndex < exploreTopics.length) {
       content.push(
         <div key="remaining-explore" style={styles.exploreSection}>
           <div style={styles.sectionHeader}>
@@ -621,16 +628,17 @@ const styles = {
   },
   reasonsToWatchSection: {
     marginTop: '28px',
-    marginBottom: '32px',
-    padding: '20px',
-    backgroundColor: '#f8fafc',
+    marginBottom: '36px',
+    padding: '0',
+    background: 'linear-gradient(135deg, #e6d4a1 0%, #fef3c7 50%, #f6c73a 100%)',
     borderRadius: '12px',
-    border: '1px solid #e2e8f0',
+    border: '2px solid #9ca3af',
+    boxShadow: '0 8px 24px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(217, 119, 6, 0.2)',
   },
   reasonsList: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '12px',
+    gap: '10px',
   },
   reasonItem: {
     display: 'flex',
@@ -638,17 +646,21 @@ const styles = {
     gap: '12px',
   },
   reasonBullet: {
-    color: '#d4af37',
-    fontSize: '18px',
+    color: '#000000',
+    fontSize: '16px',
     fontWeight: 'bold',
-    marginTop: '2px',
-    minWidth: '12px',
+    marginTop: '1px',
+    minWidth: '10px',
   },
   reasonText: {
-    fontSize: '16px',
-    lineHeight: '1.5',
+    fontSize: '14px',
+    lineHeight: '1.3',
     color: '#374151',
     flex: 1,
+    wordBreak: 'normal',
+    overflowWrap: 'break-word',
+    hyphens: 'none',
+    textAlign: 'left',
   },
   subheadSection: {
     marginTop: '32px',
@@ -838,16 +850,33 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
   let movieGroupIndex = 0;
   const moviesPerGroup = 2; // Split featured movies into groups
 
-  // Create alternating pattern: Reasons to Watch → Text → Featured Films → Text → Explore Further → Repeat
+  // Add "Reasons to Watch" at the very beginning (above first paragraph)
+  if (whyWatch.length > 0) {
+    content.push(
+      <div key="reasons-to-watch" style={{marginTop: '4px', borderLeft: '3px solid #d4af37', paddingLeft: '16px'}}>
+        <h3 style={{...styles.sectionTitle, fontSize: '16px', lineHeight: '1.2', margin: '0 0 12px 0', padding: '0'}}>Why You Should Watch This Movie:</h3>
+        <div style={{...styles.reasonsList, padding: '0'}}>
+          {whyWatch.slice(0, 3).map((reason, reasonIndex) => (
+            <div key={`reason-${reasonIndex}`} style={styles.reasonItem}>
+              <div style={styles.reasonBullet}>•</div>
+              <div style={styles.reasonText}>{reason}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  // Create alternating pattern: Text → Featured Films → Text → Explore Further → Repeat
   textSections.forEach((section, textIndex) => {
     // Add section header IMMEDIATELY before its paragraph text (not after)
     if (section.type === 'technicalAnalysis' || section.type === 'legacyAndImpact') {
       const subheadText = section.type === 'technicalAnalysis' 
-        ? 'Technical Excellence'
-        : 'Legacy and Modern Impact';
+        ? 'TECHNICAL EXCELLENCE'
+        : 'LEGACY AND MODERN IMPACT';
       
       content.push(
-        <div key={`subhead-${textIndex}`} style={styles.subheadSection}>
+        <div key={`subhead-${textIndex}`} style={{...styles.subheadSection, borderLeft: '3px solid #d4af37', paddingLeft: '16px'}}>
           <h3 style={styles.subheadText}>{subheadText}</h3>
         </div>
       );
@@ -855,7 +884,7 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
     
     // Add text section (immediately after its header)
     content.push(
-      <div key={`json-text-${textIndex}`} style={styles.paragraph} data-testid={`section-${section.type}`}>
+      <div key={`json-text-${textIndex}`} style={{...styles.paragraph, paddingTop: textIndex === 0 ? '16px' : '0'}} data-testid={`section-${section.type}`}>
         <ErrorBoundary level="section">
           <EntityLinkedText
             text={section.text}
@@ -871,22 +900,6 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
       </div>
     );
 
-    // Add "Reasons to Watch" after the first text section (introduction)
-    if (textIndex === 0 && whyWatch.length > 0) {
-      content.push(
-        <div key="reasons-to-watch" style={styles.reasonsToWatchSection}>
-          <h3 style={styles.sectionTitle}>Why Watch This Film</h3>
-          <div style={styles.reasonsList}>
-            {whyWatch.map((reason, reasonIndex) => (
-              <div key={`reason-${reasonIndex}`} style={styles.reasonItem}>
-                <div style={styles.reasonBullet}>•</div>
-                <div style={styles.reasonText}>{reason}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      );
-    }
 
     // Add featured movies at strategic points (after intro and technical analysis)
     if ((textIndex === 1 || textIndex === 3) && featuredMovies.length > 0) {
@@ -930,7 +943,7 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
     }
 
     // Add single explore topic after featured movies (alternating pattern)
-    if ((textIndex === 2 || textIndex === 4) && exploreIndex < exploreTopics.length) {
+    if (ENABLE_EXPLORE_FURTHER && (textIndex === 2 || textIndex === 4) && exploreIndex < exploreTopics.length) {
       const topic = exploreTopics[exploreIndex];
       content.push(
         <div key={`json-explore-single-${exploreIndex}`} style={styles.exploreSection}>
@@ -992,7 +1005,7 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
   }
 
   // Add remaining explore topics
-  if (exploreIndex < exploreTopics.length) {
+  if (ENABLE_EXPLORE_FURTHER && exploreIndex < exploreTopics.length) {
     const remainingTopics = exploreTopics.slice(exploreIndex);
     content.push(
       <div key="json-explore-remaining" style={styles.exploreSection}>

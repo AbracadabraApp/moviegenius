@@ -214,12 +214,13 @@ export default function MovieHeaderLarge({
           <div style={styles.iconWithText}>
             <Plus
               size={20}
-              color="#6b7280"
+              color={bookmarked ? '#000000' : '#6b7280'}
+              strokeWidth={bookmarked ? 3 : 2}
             />
             <span style={{
               ...styles.iconLabel,
-              color: '#1f2937',
-              fontWeight: bookmarked ? '600' : '400'
+              color: bookmarked ? '#000000' : '#6b7280',
+              fontWeight: bookmarked ? '700' : '500'
             }}>
               Add
             </span>
@@ -241,13 +242,13 @@ export default function MovieHeaderLarge({
           <div style={styles.iconWithText}>
             <Check
               size={20}
-              color="#6b7280"
-              strokeWidth={hearted ? 2.5 : 1.5}
+              color={hearted ? '#000000' : '#6b7280'}
+              strokeWidth={hearted ? 3 : 2}
             />
             <span style={{
               ...styles.iconLabel,
-              color: '#1f2937',
-              fontWeight: hearted ? '600' : '400'
+              color: hearted ? '#000000' : '#6b7280',
+              fontWeight: hearted ? '700' : '500'
             }}>
               Seen
             </span>
@@ -362,7 +363,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center', // Center everything
-    padding: '0px 20px 0px 20px',
+    padding: '0px',
     width: '100%',
     boxSizing: 'border-box',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
@@ -411,7 +412,7 @@ const styles = {
   },
   posterContainer: {
     display: 'flex',
-    justifyContent: 'flex-start',
+    justifyContent: 'center',
     marginBottom: '5px',
     paddingLeft: '0px',
     paddingRight: '0px',
@@ -419,9 +420,10 @@ const styles = {
     paddingBottom: '5px',
   },
   largePoster: {
-    width: '100%',     // Fill container width
-    height: '400px',   // Fixed height for consistent layout
-    objectFit: 'cover', // Intelligent center cropping
+    maxWidth: '267px',  // Width for 2:3 aspect ratio at 400px height
+    width: 'auto',      // Let width be determined by aspect ratio
+    height: '400px',    // Fixed height for consistent layout
+    objectFit: 'contain', // Show full poster, no cropping
     borderRadius: '12px',
     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)', // Add some shadow for depth
   },
