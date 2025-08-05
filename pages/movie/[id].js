@@ -60,7 +60,7 @@ export default function MovieDetailPage() {
         // Try to fetch processed static file with links first
         let analysisData = null;
         try {
-          const staticResponse = await fetch(`/static/nuclear-data/${id}.json`);
+          const staticResponse = await fetch(`/nuclear-static/${id}.json`);
           if (staticResponse.ok) {
             const staticData = await staticResponse.json();
             if (staticData.props && staticData.props.sections) {
