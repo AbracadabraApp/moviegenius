@@ -102,9 +102,9 @@ export default async function movieAnalysisHandler(req, res) {
           const { getTMDBMovieDetails } = await import('../../lib/services/tmdb-search.js');
           console.log(`✅ Successfully imported getTMDBMovieDetails function`);
           
-          console.log(`🔍 Attempting dynamic import of database-search service...`);
-          const { createBasicMovieEntry } = await import('../../lib/services/database-search.js');
-          console.log(`✅ Successfully imported createBasicMovieEntry function`);
+          console.log(`🔍 Attempting dynamic import of railway-database-search service...`);
+          const { createBasicMovieEntryRailway } = await import('../../lib/services/railway-database-search.js');
+          console.log(`✅ Successfully imported createBasicMovieEntryRailway function`);
           
           console.log(`🔍 Fetching TMDB details for ID ${tmdbId}...`);
           const tmdbMovie = await getTMDBMovieDetails(parseInt(tmdbId));
@@ -115,7 +115,7 @@ export default async function movieAnalysisHandler(req, res) {
             console.log(`✅ Found TMDB movie: ${tmdbMovie.title} (${movieYear})`);
             logger.movieAnalysis(tmdbId, 'tmdb_movie_found', { title: tmdbMovie.title, year: movieYear });
             
-            const newMovieEntry = await createBasicMovieEntry(tmdbMovie);
+            const newMovieEntry = await createBasicMovieEntryRailway(tmdbMovie);
             
             if (!newMovieEntry) {
               console.error(`❌ Failed to create movie entry for ${tmdbMovie.title} (${movieYear})`);
@@ -269,6 +269,10 @@ export default async function movieAnalysisHandler(req, res) {
               tokens: message.usage.input_tokens + message.usage.output_tokens,
               duration: claudeDuration
             });
+
+            // 🚀 IMMEDIATE ASYNC LINK PROCESSING - Fire and forget, no blocking
+            const { triggerAsyncLinkProcessing } = await import('../../lib/async-link-processor.js');
+            triggerAsyncLinkProcessing(insertResult.rows[0].id, parseInt(tmdbId));
           } else {
             console.error(`❌ Failed to save analysis to database`);
           }
