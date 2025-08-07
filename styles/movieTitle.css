@@ -104,3 +104,21 @@
 .movie-title--medium-text {
   color: #4a5568;
 }
+
+/* Person names - same styling as movie titles for consistency */
+.person-name {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #d4af37;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  font-weight: 500;
+  font-style: normal;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.person-name:hover {
+  text-decoration-color: #b8941f;
+  color: inherit;
+}
