@@ -24,6 +24,16 @@ export default function PersonDetailPage({
 }) {
   const router = useRouter();
   const { id } = router.query;
+  
+  // Detect if this is a name slug (contains non-numeric characters) or TMDB ID (numeric)
+  const isNameSlug = id && isNaN(parseInt(id));
+  const isTmdbId = id && !isNaN(parseInt(id));
+  
+  // For name slugs, convert back to person name
+  const personNameFromSlug = isNameSlug ? id.split('-').map(word => 
+    word.charAt(0).toUpperCase() + word.slice(1)
+  ).join(' ') : null;
+  // State for TMDB-based person pages
   const [isLoadingAnalysis, setIsLoadingAnalysis] = useState(true);
   const [hearted, setHearted] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
@@ -32,6 +42,12 @@ export default function PersonDetailPage({
   const [sections, setSections] = useState([]);
   const [exploreFurther, setExploreFurther] = useState([]);
   const [moreIdeas, setMoreIdeas] = useState(null);
+  
+  // State for name-based person pages (Phase 1 internal system)
+  const [nameBasedMovies, setNameBasedMovies] = useState([]);
+  const [nameBasedStats, setNameBasedStats] = useState(null);
+  const [nameBasedLoading, setNameBasedLoading] = useState(false);
+  const [nameBasedError, setNameBasedError] = useState(null);
 
   // Handle search results
   const handleSearchResults = results => {
@@ -49,8 +65,43 @@ export default function PersonDetailPage({
     }
   };
 
+  // UseEffect for name-based person pages (Phase 1 internal system)
   useEffect(() => {
-    if (!id || !name) return;
+    if (!isNameSlug || !personNameFromSlug) return;
+    
+    const fetchNameBasedPersonMovies = async () => {
+      setNameBasedLoading(true);
+      setNameBasedError(null);
+      
+      try {
+        const response = await fetch('/api/person-movies', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ personName: personNameFromSlug })
+        });
+        
+        if (!response.ok) {
+          throw new Error(`Failed to fetch movies: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        setNameBasedMovies(data.movies || []);
+        setNameBasedStats(data.stats || null);
+        
+      } catch (err) {
+        console.error('Error fetching name-based person movies:', err);
+        setNameBasedError(err.message);
+      } finally {
+        setNameBasedLoading(false);
+      }
+    };
+    
+    fetchNameBasedPersonMovies();
+  }, [isNameSlug, personNameFromSlug]);
+
+  // UseEffect for TMDB ID-based person pages (existing system)
+  useEffect(() => {
+    if (!isTmdbId || !name) return;
 
     const initializeAnalysis = async () => {
       // Reset analysis state when id changes (navigation between people)
@@ -342,6 +393,104 @@ export default function PersonDetailPage({
     };
   }
 
+  // Handle name-based person pages (Phase 1 internal system)
+  if (isNameSlug) {
+    if (nameBasedError) {
+      return (
+        <PhoneFrame>
+          <div style={styles.container}>
+            <BackButton variant="icon" context="person" position="top-left" />
+            <div style={styles.inputArea}>
+              <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
+            </div>
+            <div style={styles.errorContainer}>
+              <div style={styles.errorText}>Error: {nameBasedError}</div>
+              <div style={styles.errorSubtext}>
+                Person "{personNameFromSlug}" may not exist in our database.
+              </div>
+            </div>
+          </div>
+        </PhoneFrame>
+      );
+    }
+
+    return (
+      <PhoneFrame>
+        <div style={styles.container}>
+          <BackButton variant="icon" context="person" position="top-left" />
+          
+          <div style={styles.inputArea}>
+            <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
+          </div>
+
+          {/* Simple person header for name-based pages */}
+          <div style={styles.personHeader}>
+            <h1 style={styles.personName}>{personNameFromSlug}</h1>
+            {nameBasedStats && (
+              <div style={styles.personStats}>
+                <span style={styles.movieCount}>
+                  {nameBasedStats.movieCount} movie{nameBasedStats.movieCount !== 1 ? 's' : ''}
+                </span>
+                {nameBasedStats.roles && nameBasedStats.roles.length > 0 && (
+                  <span style={styles.roles}>
+                    {nameBasedStats.roles.join(', ')}
+                  </span>
+                )}
+              </div>
+            )}
+          </div>
+
+          {/* Movies section */}
+          <div style={styles.moviesSection}>
+            {nameBasedLoading ? (
+              <div style={styles.loadingContainer}>
+                <div style={styles.loadingText}>Loading movies...</div>
+              </div>
+            ) : nameBasedMovies.length === 0 ? (
+              <div style={styles.noMoviesContainer}>
+                <div style={styles.noMoviesText}>
+                  No movies found for {personNameFromSlug}
+                </div>
+              </div>
+            ) : (
+              <>
+                <h2 style={styles.sectionTitle}>
+                  Movies featuring {personNameFromSlug}
+                </h2>
+                <div style={styles.moviesList}>
+                  {nameBasedMovies.map((movie, index) => (
+                    <div key={`${movie.tmdb_id}-${index}`} style={styles.movieItem}>
+                      <div style={styles.movieInfo}>
+                        <h3 style={styles.movieTitle}>{movie.title} ({movie.year})</h3>
+                        <div style={styles.movieRoles}>
+                          {movie.roles.map((role, i) => (
+                            <span key={role} style={styles.roleTag}>
+                              {role}{i < movie.roles.length - 1 && ', '}
+                            </span>
+                          ))}
+                        </div>
+                        {movie.overview && (
+                          <p style={styles.movieOverview}>{movie.overview}</p>
+                        )}
+                      </div>
+                      <div 
+                        style={styles.viewMovieButton}
+                        onClick={() => router.push(`/movie/${movie.tmdb_id}`)}
+                      >
+                        View Movie
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+      </PhoneFrame>
+    );
+  }
+
+  // Handle TMDB ID-based person pages (existing system)
   if (error) {
     return (
       <PhoneFrame>
@@ -594,13 +743,145 @@ const styles = {
     lineHeight: '1.4',
     fontFamily: 'inherit',
   },
+
+  // Styles for name-based person pages (Phase 1 internal system)
+  personHeader: {
+    padding: '20px',
+    borderBottom: '1px solid #e5e7eb',
+    backgroundColor: '#ffffff',
+  },
+  
+  personName: {
+    fontSize: '24px',
+    fontWeight: '700',
+    color: '#111827',
+    margin: '0 0 8px 0',
+  },
+  
+  personStats: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '4px',
+  },
+  
+  movieCount: {
+    fontSize: '16px',
+    color: '#6b7280',
+    fontWeight: '500',
+  },
+  
+  roles: {
+    fontSize: '14px',
+    color: '#9ca3af',
+    textTransform: 'capitalize',
+  },
+  
+  moviesSection: {
+    flex: 1,
+    padding: '0 16px 24px',
+  },
+  
+  sectionTitle: {
+    fontSize: '18px',
+    fontWeight: '600',
+    color: '#374151',
+    margin: '24px 0 16px 0',
+  },
+  
+  moviesList: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '12px',
+  },
+  
+  movieItem: {
+    backgroundColor: '#ffffff',
+    border: '1px solid #e5e7eb',
+    borderRadius: '8px',
+    padding: '16px',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+  },
+  
+  movieInfo: {
+    flex: 1,
+  },
+  
+  movieTitle: {
+    fontSize: '16px',
+    fontWeight: '600',
+    color: '#111827',
+    margin: '0 0 8px 0',
+  },
+  
+  movieRoles: {
+    marginBottom: '8px',
+  },
+  
+  roleTag: {
+    fontSize: '12px',
+    color: '#6b7280',
+    textTransform: 'capitalize',
+  },
+  
+  movieOverview: {
+    fontSize: '14px',
+    color: '#6b7280',
+    lineHeight: '1.4',
+    margin: '0',
+  },
+  
+  viewMovieButton: {
+    backgroundColor: '#3b82f6',
+    color: '#ffffff',
+    padding: '8px 16px',
+    borderRadius: '6px',
+    fontSize: '14px',
+    fontWeight: '500',
+    cursor: 'pointer',
+    border: 'none',
+    transition: 'background-color 0.2s ease',
+  },
+  
+  noMoviesContainer: {
+    padding: '40px 16px',
+    textAlign: 'center',
+  },
+  
+  noMoviesText: {
+    fontSize: '16px',
+    color: '#374151',
+    marginBottom: '8px',
+  },
+  
+  errorSubtext: {
+    fontSize: '14px',
+    color: '#6b7280',
+    marginTop: '8px',
+  },
 };
 
-// Server-Side Rendering: Fetch person data by TMDB ID
+// Server-Side Rendering: Fetch person data by TMDB ID or return props for name-based routing
 export async function getStaticProps({ params }) {
   const { id } = params;
 
   try {
+    // Check if this is a name slug (contains non-numeric characters) or TMDB ID (numeric)
+    const isNameSlug = id && isNaN(parseInt(id));
+    
+    // For name slugs, return empty props - client-side rendering will handle the API call
+    if (isNameSlug) {
+      return {
+        props: {
+          name: null, // Will be handled client-side
+          error: null,
+        },
+        revalidate: 86400, // 24 hour revalidation
+      };
+    }
+    
+    // Handle TMDB ID-based routing (existing logic)
     const tmdbId = parseInt(id, 10);
     if (isNaN(tmdbId) || tmdbId <= 0) {
       return {

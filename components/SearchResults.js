@@ -211,7 +211,7 @@ const styles = {
     gap: '8px',
   },
   resultsCount: {
-    fontSize: '14px',
+    fontSize: '18px',
     fontWeight: '600',
     color: '#374151',
   },
