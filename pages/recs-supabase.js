@@ -1,19 +1,10 @@
-// pages/recs-supabase.js - Supabase-powered version for testing
-import { createClient } from '@supabase/supabase-js';
+// pages/recs-supabase.js - Railway-powered version for testing
+import { MovieService } from '../lib/railway-db.js';
 import MediaCard from '../components/MediaCard';
 import PhoneFrame from '../components/PhoneFrame';
 import SimpleSearch from '../components/SimpleSearch';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-
-// Use proper authentication without placeholder fallbacks (like fixed search endpoints)
-if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
-  console.error('❌ Recommendations authentication failed: Supabase credentials not configured');
-}
-
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-const supabase = createClient(supabaseUrl, supabaseKey);
 
 export default function RecsSupabasePage({ movies, error, stats }) {
   const router = useRouter();
@@ -41,7 +32,7 @@ export default function RecsSupabasePage({ movies, error, stats }) {
     <PhoneFrame active="recs">
       <div style={styles.container}>
         <div style={styles.header}>
-          <h2 style={styles.title}>🚀 Supabase-Powered Recommendations</h2>
+          <h2 style={styles.title}>🚀 Railway-Powered Recommendations</h2>
           <div style={styles.stats}>
             <span>📊 Loaded {movies.length} movies from database</span>
             <span>⚡ Query time: {stats.queryTime}ms</span>
@@ -74,35 +65,19 @@ export default function RecsSupabasePage({ movies, error, stats }) {
   );
 }
 
-// Server-Side Rendering: Fetch from Supabase before page loads
+// Server-Side Rendering: Fetch from Railway before page loads
 export async function getServerSideProps() {
   const startTime = Date.now();
 
   try {
-    // Server-side Supabase client with service role
-    const serverSupabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
-
-    // Query equivalent to current recs.js filter
-    const { data: movies, error } = await serverSupabase
-      .from('movies')
-      .select('id, title, year, slug, poster_url, streaming_data, tmdb_id')
-      .not('tmdb_id', 'is', null) // Only movies with TMDB IDs (like current filter)
-      .order('title') // Alphabetical order
-      .limit(100); // Same performance limit as current
+    // Get movies with TMDB IDs
+    const movies = await MovieService.getMoviesWithTMDB();
 
     const queryTime = Date.now() - startTime;
 
-    if (error) {
-      console.error('Supabase query error:', error);
-      throw error;
-    }
-
     return {
       props: {
-        movies: movies || [],
+        movies: movies.slice(0, 100) || [], // Same performance limit as current
         error: null,
         stats: {
           queryTime,

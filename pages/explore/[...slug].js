@@ -181,12 +181,11 @@ export default function ExplorePage({ pageData, error, topic, context, movieTitl
 }
 
 // Import the explore page generation logic directly
-import { createClient } from '@supabase/supabase-js';
+import { MovieService } from '../../lib/railway-db.js';
 import { getCache } from '../../lib/cache.js';
 import { Anthropic } from '@anthropic-ai/sdk';
 
 // Initialize clients for static generation
-// Use proper authentication without placeholder fallbacks
 if (!process.env.ANTHROPIC_API_KEY) {
   console.error('❌ Analysis authentication failed: Anthropic API key not configured');
 }
@@ -194,17 +193,6 @@ if (!process.env.ANTHROPIC_API_KEY) {
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
 });
-
-// Use proper authentication without placeholder fallbacks (like fixed search endpoints)
-if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
-  console.error('❌ Analysis authentication failed: Supabase credentials not configured');
-}
-console.log('🔧 Analysis endpoint initialized [NO PLACEHOLDERS] - BUILD:', new Date().toISOString());
-
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_ROLE_KEY
-);
 
 // Direct generation function for static props
 async function generateExplorePageDirect(topic, context = '') {
@@ -351,11 +339,7 @@ export async function getStaticProps({ params }) {
       
       try {
         // Look up movie title from database
-        const { data: movie } = await supabase
-          .from('movies')
-          .select('title, year')
-          .eq('tmdb_id', tmdbId)
-          .single();
+        const movie = await MovieService.getMovieByTMDBId(tmdbId);
           
         if (movie) {
           movieTitle = movie.title;
@@ -374,11 +358,7 @@ export async function getStaticProps({ params }) {
     
     try {
       // Try to find movie by title (case insensitive)
-      const { data: movie } = await supabase
-        .from('movies')
-        .select('title, year, tmdb_id')
-        .ilike('title', titleFromSlug)
-        .single();
+      const movie = await MovieService.getMovieByTitle(titleFromSlug);
         
       if (movie) {
         movieTitle = movie.title;

@@ -1,7 +1,7 @@
 // pages/movie/[id]/cast.js - Cast and Crew page for movies
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
-import { supabase } from '../../../lib/supabase';
+import { MovieService } from '../../../lib/railway-db';
 import PhoneFrame from '../../../components/PhoneFrame';
 import MovieHeader from '../../../components/MovieHeader';
 import PersonCard from '../../../components/PersonCard';
@@ -313,38 +313,12 @@ export async function getServerSideProps({ params }) {
       };
     }
 
-    // Create supabase client with fallback
-    let supabaseClient;
-    try {
-      const { createClient } = await import('@supabase/supabase-js');
-      // Use proper authentication without placeholder fallbacks (like fixed search endpoints)
-      if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
-        console.error('❌ Cast page authentication failed: Supabase credentials not configured');
-        throw new Error('Supabase authentication not configured');
-      }
-      
-      supabaseClient = createClient(
-        process.env.NEXT_PUBLIC_SUPABASE_URL,
-        process.env.SUPABASE_SERVICE_ROLE_KEY
-      );
-    } catch (error) {
-      console.error('Failed to create supabase client:', error);
-      return {
-        props: {
-          error: 'Database connection failed',
-        },
-      };
-    }
-
-    // Query movie from Supabase by TMDB ID
-    const { data: movieEntry, error } = await supabaseClient
-      .from('movies')
-      .select('id, title, year, slug, poster_url, streaming_data, tmdb_id')
-      .eq('tmdb_id', tmdbId)
-      .single();
+    // Query movie from Railway by TMDB ID
+    const movieEntry = await MovieService.getMovieByTMDBId(tmdbId);
+    const error = !movieEntry;
 
     if (movieEntry && !error) {
-      // Movie found in Supabase - return as props
+      // Movie found in Railway - return as props
       return {
         props: {
           title: movieEntry.title,
