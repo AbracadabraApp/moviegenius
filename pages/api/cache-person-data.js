@@ -6,7 +6,7 @@
  * Similar to cache-movie-data but for people.
  */
 
-import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from './railway-db.js';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {

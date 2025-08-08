@@ -7,9 +7,9 @@
 //
 // @version LOCKED-2025-07-02 - DO NOT MODIFY
 
-import { createClient, supabase } from '../lib/railway-adapter.js';
+import { createClient, supabase } from './railway-adapter.js';
 
-import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from './railway-db.js';
 
 const pool = getPool();
 
