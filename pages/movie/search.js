@@ -12,7 +12,6 @@ import SimpleSearch from '../../components/SimpleSearch';
 import MediaCard from '../../components/MediaCard';
 import { searchOurDatabase } from '../../lib/services/database-search';
 import { searchAndCategorize, getTMDBMovieDetails } from '../../lib/services/tmdb-search';
-import { flagForNuclearPromotion } from '../../lib/services/nuclear-promotion';
 
 export default function MovieSearchPage({ searchType, query, results, error, redirectInfo }) {
   const router = useRouter();
@@ -37,11 +36,28 @@ export default function MovieSearchPage({ searchType, query, results, error, red
     try {
       console.log(`🎬 Creating movie from TMDB: "${tmdbMovie.title}" (ID: ${tmdbMovie.id})`);
 
-      // Track nuclear promotion
-      await flagForNuclearPromotion(tmdbMovie.id, 'search_click', {
-        query: query,
-        userAgent: navigator.userAgent,
-      });
+      // Track nuclear promotion via API endpoint
+      try {
+        await fetch('/api/nuclear-promotion', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            tmdbId: tmdbMovie.id,
+            source: 'search_click',
+            metadata: {
+              query: query,
+              userAgent: navigator.userAgent,
+            }
+          })
+        });
+        
+        console.log(`✅ Nuclear promotion flagged for TMDB ${tmdbMovie.id}`);
+      } catch (promotionError) {
+        console.warn('Nuclear promotion failed (non-blocking):', promotionError);
+        // Don't block navigation if nuclear promotion fails
+      }
 
       // Navigate to movie page (will be created via getServerSideProps)
       router.push(`/movie/${tmdbMovie.id}`);
