@@ -33,6 +33,7 @@ function getRailwayClient() {
 
 /**
  * Extract contributors from Railway keyElements format
+ * Railway analyses have keyElements in raw_content with director, writers, stars, etc.
  */
 function extractContributorsFromRailwayData(claudeResponse) {
   if (!claudeResponse || !claudeResponse.raw_content) return [];
@@ -91,21 +92,21 @@ function createKeyContributorsString(contributors) {
 function extractAnalysisText(claudeResponse) {
   if (!claudeResponse) return '';
   
-  // Try processed_content first
+  // Try processed_content first (this is the main analysis text)
   if (claudeResponse.processed_content) {
     return typeof claudeResponse.processed_content === 'string' 
       ? claudeResponse.processed_content 
       : JSON.stringify(claudeResponse.processed_content);
   }
   
-  // Fall back to raw_content
+  // Fall back to raw_content content field
   if (claudeResponse.raw_content) {
     try {
       const rawContent = typeof claudeResponse.raw_content === 'string' 
         ? JSON.parse(claudeResponse.raw_content) 
         : claudeResponse.raw_content;
       
-      return rawContent.analysis || rawContent.text || '';
+      return rawContent.content || rawContent.analysis || rawContent.text || '';
     } catch (error) {
       return typeof claudeResponse.raw_content === 'string' 
         ? claudeResponse.raw_content 
@@ -206,26 +207,37 @@ async function processRailwayAnalysis(client, analysis, options = {}) {
     return { skipped: true, reason: 'no_content' };
   }
   
-  // Create compatible rawContent string for universal linking logic
+  // Extract contributors from Railway keyElements format
   const contributors = extractContributorsFromRailwayData(claudeResponse);
-  const keyContributorsString = createKeyContributorsString(contributors);
-  const compatibleRawContent = keyContributorsString; // For contributor extraction
-  
-  // Also support direct extraction from Railway data format
-  const universalContributors = extractContributorsFromKeyElements(compatibleRawContent);
   
   console.log(`   👥 Found ${contributors.length} contributors: ${contributors.map(c => c.name).join(', ')}`);
   
-  // Process content with universal linker
+  // Check for data quality - skip if too many "Unknown" values
+  const unknownCount = contributors.filter(c => c.name === 'Unknown').length;
+  if (unknownCount > 0 && unknownCount === contributors.length) {
+    console.log(`   ⚠️ Skipping - all contributors are "Unknown" (poor data quality)`);
+    return { skipped: true, reason: 'poor_data_quality' };
+  }
+  
+  if (unknownCount > contributors.length / 2) {
+    console.log(`   ⚠️ Warning - ${unknownCount}/${contributors.length} contributors are "Unknown"`);
+  }
+  
+  // Create KEY_CONTRIBUTORS format for universal linker compatibility
+  const keyContributorsString = createKeyContributorsString(contributors);
+  
+  // Process content using universal linker
   let processedText = analysisText;
   
   if (processContributors && contributors.length > 0) {
+    console.log('   👥 Processing contributor links with universal linker');
+    
     // Use universal linker for contributor processing
     processedText = await processAnalysisContent(
       processedText,
       movieTitle,
       'Railway batch processing',
-      compatibleRawContent,
+      keyContributorsString, // Provide KEY_CONTRIBUTORS format for extraction
       {
         processMovies: false,
         processContributors: true,
@@ -242,7 +254,7 @@ async function processRailwayAnalysis(client, analysis, options = {}) {
       processedText,
       movieTitle,
       'Railway batch processing',
-      compatibleRawContent,
+      '', // No rawContent needed for movie linking
       {
         processMovies: true,
         processContributors: false, // Already done above
@@ -295,6 +307,7 @@ async function processRailwayAnalysis(client, analysis, options = {}) {
 
 /**
  * Get analyses that need link processing
+ * Prioritizes analyses with good contributor data (non-"Unknown" values)
  */
 async function getAnalysesToProcess(client, limit = 100, options = {}) {
   const { force = false } = options;
@@ -313,11 +326,17 @@ async function getAnalysesToProcess(client, limit = 100, options = {}) {
       ma.link_count,
       m.title,
       m.year,
-      m.tmdb_id
+      m.tmdb_id,
+      -- Score analyses by data quality (lower score = higher priority)
+      CASE 
+        WHEN ma.claude_response->>'raw_content' IS NULL THEN 100
+        WHEN ma.claude_response->>'raw_content' LIKE '%"Unknown"%' THEN 50
+        ELSE 1
+      END as data_quality_score
     FROM movie_analyses ma
     JOIN movies m ON ma.movie_id = m.id
     WHERE ${whereClause}
-    ORDER BY ma.created_at DESC
+    ORDER BY data_quality_score ASC, ma.created_at DESC
     LIMIT $1
   `;
   
