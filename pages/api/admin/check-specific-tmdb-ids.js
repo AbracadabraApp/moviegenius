@@ -1,11 +1,8 @@
 // pages/api/admin/check-specific-tmdb-ids.js - Check specific TMDB IDs for slug data
 
-import { createClient } from '@supabase/supabase-js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_ROLE_KEY
-);
+const pool = getPool();
 
 const TMDB_IDS_TO_CHECK = [996, 678, 22112, 17218];
 
@@ -31,7 +28,7 @@ export default async function handler(req, res) {
         movie_data: null
       };
 
-      if (error && error.code === 'PGRST116') {
+      if (error && !result) {
         result.error = 'Movie not found in database';
       } else if (error) {
         result.error = error.message;

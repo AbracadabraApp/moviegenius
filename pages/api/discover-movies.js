@@ -1,10 +1,7 @@
 // pages/api/discover-movies.js - Movie discovery API for curated sections
-import { createClient } from '@supabase/supabase-js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_ROLE_KEY
-);
+const pool = getPool();
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -118,8 +115,8 @@ async function getPopularMovies(limit = 12) {
       ])
       .limit(limit);
 
-    if (classicMovies.data && classicMovies.data.length > 0) {
-      return classicMovies.data;
+    if (classicMovies && classicMovies.length > 0) {
+      return classicMovies;
     }
 
     // Fallback to recent popular movies if classics not available

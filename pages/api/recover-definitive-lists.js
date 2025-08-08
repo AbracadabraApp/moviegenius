@@ -6,7 +6,7 @@
  * Emergency recovery endpoint for demo preparation.
  */
 
-import { createClient } from '@supabase/supabase-js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 import afi100Data from '../../data/afi100.json';
 
 export default async function handler(req, res) {
@@ -15,10 +15,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
+    const pool = getPool();
 
     console.log('🚨 EMERGENCY RECOVERY: Restoring definitive lists...');
 

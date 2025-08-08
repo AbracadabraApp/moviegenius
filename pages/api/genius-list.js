@@ -19,10 +19,7 @@ export default async function handler(req, res) {
 
   try {
     const { createClient } = await import('@supabase/supabase-js');
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
+    const pool = getPool();
 
     // Fetch list data
     const { data: list, error: listError } = await supabase
@@ -32,7 +29,7 @@ export default async function handler(req, res) {
       .eq('is_active', true)
       .single();
 
-    if (listError || !list) {
+    if (!list) {
       return res.status(404).json({
         error: 'List not found',
         details: listError?.message,

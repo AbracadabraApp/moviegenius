@@ -1,6 +1,6 @@
 // Migrate null TMDB movies to orphan_movies table
 // Assumes orphan_movies table already exists
-import { createClient } from '@supabase/supabase-js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -8,10 +8,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
+    const pool = getPool();
 
     // Step 1: Get count of movies to migrate
     const { count: nullCount } = await supabase

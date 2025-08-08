@@ -1,5 +1,5 @@
 // pages/api/tmdb-bulk.js - TMDB Bulk Fetching API with Rate Limiting and Error Handling
-import { createClient } from '@supabase/supabase-js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 
 const TMDB_API_KEY = process.env.TMDB_API_KEY;
 const TMDB_BASE_URL = 'https://api.themoviedb.org/3';
@@ -278,15 +278,12 @@ async function processTMDBRequest(request) {
  */
 async function cacheResults(results) {
   try {
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
+    const pool = getPool();
 
     const cachePromises = results
       .filter(result => result.success && result.type === 'movie_details')
       .map(async result => {
-        const movieData = result.data;
+        const movieData = result;
 
         // 🔒 CRITICAL FIX: Check if movie already exists to preserve Claude slugs
         // DO NOT overwrite existing Claude-generated slugs with TMDB overview text

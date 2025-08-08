@@ -6,7 +6,7 @@
  * Uses the smart list populator with optimized batch processing.
  */
 
-import { createClient } from '@supabase/supabase-js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 import fs from 'fs';
 import path from 'path';
 
@@ -23,10 +23,7 @@ export default async function handler(req, res) {
   } = req.body;
 
   try {
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
+    const pool = getPool();
 
     const startTime = Date.now();
     console.log('🚀 BATCH POPULATION: Starting full list population...');

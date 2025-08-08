@@ -111,6 +111,7 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.53.0",
+    "@supabase/supabase-js": "^2.54.0",
     "dotenv": "^16.6.1",
     "ioredis": "^5.4.1",
     "lucide-react": "^0.511.0",

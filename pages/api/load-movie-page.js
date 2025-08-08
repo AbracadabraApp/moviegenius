@@ -19,7 +19,7 @@
  * 5. Return complete movie page data
  */
 
-import { createClient } from '@supabase/supabase-js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 import { Anthropic } from '@anthropic-ai/sdk';
 import { buildPrompt } from '../../lib/prompts/builder.js';
 
@@ -27,10 +27,7 @@ const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
 });
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_ROLE_KEY
-);
+const pool = getPool();
 
 /**
  * Extract movie titles and years from Claude's analysis text
@@ -102,7 +99,7 @@ export default async function handler(req, res) {
 
     let movie = movieData;
 
-    if (movieError || !movie) {
+    if (!movie) {
       // Movie not found, creating from TMDB
 
       // Try to create the movie via create-media-card API

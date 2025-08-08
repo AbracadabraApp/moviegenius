@@ -12,7 +12,7 @@
  * - Batch database operations for efficiency
  */
 
-import { createClient } from '@supabase/supabase-js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 import { getBatchOptimizer } from '../../lib/batch-optimizer.js';
 import { getCache } from '../../lib/cache.js';
 import { getPerformanceMonitor } from '../../lib/performance-monitor.js';
@@ -23,10 +23,7 @@ import {
   checkRateLimit,
 } from '../../lib/api-utils.js';
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_ROLE_KEY
-);
+const pool = getPool();
 
 /**
  * Optimized Cache Warming Processor

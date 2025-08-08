@@ -6,7 +6,7 @@
  * and intelligent list categorization based on list names.
  */
 
-import { createClient } from '@supabase/supabase-js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 import discoveredMovies from '../../data/discovered-movies.json';
 import fs from 'fs';
 import path from 'path';
@@ -17,10 +17,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
+    const pool = getPool();
 
     console.log('🔄 FULL RECOVERY: Starting comprehensive list population...');
     console.log(`📊 Available movie data: ${discoveredMovies.length} movies with TMDB IDs`);

@@ -24,12 +24,9 @@ export default async function handler(req, res) {
     
     // Test 1: Create Supabase client
     const { createClient } = await import('@supabase/supabase-js');
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
+    const pool = getPool();
     
-    result.database.clientCreated = true;
+    resultbase.clientCreated = true;
     console.log(`✅ Supabase client created successfully`);
 
     // Test 2: Basic database connection test
@@ -39,7 +36,7 @@ export default async function handler(req, res) {
       .select('count')
       .limit(1);
     
-    result.database.connectionTest = {
+    resultbase.connectionTest = {
       success: !testError,
       error: testError?.message || null
     };
