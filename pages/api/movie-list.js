@@ -25,12 +25,8 @@ async function handlePost(req, res) {
     return res.status(400).json({ error: 'List name is required' });
   }
 
+  const client = await getPool().connect();
   try {
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
-
     // Generate slug from name
     const slug = name
       .toLowerCase()
@@ -38,27 +34,23 @@ async function handlePost(req, res) {
       .replace(/^-|-$/g, '');
 
     // Create new list
-    const { data: newList, error: createError } = await supabase
-      .from('movie_lists')
-      .insert({
-        name,
-        slug,
-        description: description || null,
-        content_type: content_type || 'declarative',
-        claude_prompt: claude_prompt || null,
-        is_active: true,
-        created_at: new Date().toISOString(),
-      })
-      .select()
-      .single();
+    const insertQuery = `
+      INSERT INTO movie_lists (name, slug, description, content_type, claude_prompt, is_active, created_at)
+      VALUES ($1, $2, $3, $4, $5, $6, $7)
+      RETURNING *
+    `;
+    
+    const result = await client.query(insertQuery, [
+      name,
+      slug,
+      description || null,
+      content_type || 'declarative',
+      claude_prompt || null,
+      true,
+      new Date().toISOString()
+    ]);
 
-    if (createError) {
-      if (createError.code === '23505') {
-        // Unique constraint violation
-        return res.status(409).json({ error: 'List with this name already exists' });
-      }
-      throw createError;
-    }
+    const newList = result.rows[0];
 
     res.status(201).json({
       success: true,
@@ -67,10 +59,16 @@ async function handlePost(req, res) {
     });
   } catch (error) {
     console.error('Error creating list:', error);
+    if (error.code === '23505') {
+      // Unique constraint violation
+      return res.status(409).json({ error: 'List with this name already exists' });
+    }
     res.status(500).json({
       error: 'Failed to create list',
       details: error.message,
     });
+  } finally {
+    client.release();
   }
 }
 
@@ -81,55 +79,31 @@ async function handleGet(req, res) {
     return res.status(400).json({ error: 'List slug is required' });
   }
 
+  const client = await getPool().connect();
   try {
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
-
     // Get the list details
-    const { data: list, error: listError } = await supabase
-      .from('movie_lists')
-      .select('*')
-      .eq('slug', slug)
-      .eq('is_active', true)
-      .single();
-
-    if (listError || !list) {
+    const listQuery = 'SELECT * FROM movie_lists WHERE slug = $1 AND is_active = true';
+    const listResult = await client.query(listQuery, [slug]);
+    
+    if (listResult.rows.length === 0) {
       return res.status(404).json({ error: 'Movie list not found' });
     }
+    
+    const list = listResult.rows[0];
 
     // Get movies in the list with their details
-    const { data: listItems, error: itemsError } = await supabase
-      .from('movie_list_items')
-      .select(
-        `
-        order_index,
-        movies (
-          id,
-          title,
-          year,
-          slug,
-          poster_url,
-          tmdb_id,
-          streaming_data
-        )
-      `
-      )
-      .eq('list_id', list.id)
-      .order('order_index', { ascending: true });
-
-    if (itemsError) {
-      console.error('Error fetching list items:', itemsError);
-      return res.status(500).json({ error: 'Failed to fetch list movies' });
-    }
-
-    // Extract movies from the join result
-    const movies =
-      listItems?.map(item => ({
-        ...item.movies,
-        order_index: item.order_index,
-      })) || [];
+    const itemsQuery = `
+      SELECT 
+        mli.order_index,
+        m.id, m.title, m.year, m.slug, m.poster_url, m.tmdb_id, m.streaming_data
+      FROM movie_list_items mli
+      JOIN movies m ON mli.movie_id = m.id
+      WHERE mli.list_id = $1
+      ORDER BY mli.order_index ASC
+    `;
+    
+    const itemsResult = await client.query(itemsQuery, [list.id]);
+    const movies = itemsResult.rows;
 
     // Get the appropriate analysis based on content type
     let analysisType = 'list_description';
@@ -139,12 +113,9 @@ async function handleGet(req, res) {
       analysisType = 'list_description_and_movies';
     }
 
-    const { data: cachedAnalysis } = await supabase
-      .from('list_analyses')
-      .select('claude_response')
-      .eq('list_id', list.id)
-      .eq('analysis_type', analysisType)
-      .single();
+    const analysisQuery = 'SELECT claude_response FROM list_analyses WHERE list_id = $1 AND analysis_type = $2';
+    const analysisResult = await client.query(analysisQuery, [list.id, analysisType]);
+    const cachedAnalysis = analysisResult.rows[0];
 
     const response = {
       list: {
@@ -168,5 +139,7 @@ async function handleGet(req, res) {
   } catch (error) {
     console.error('Movie list API error:', error);
     res.status(500).json({ error: 'Internal server error' });
+  } finally {
+    client.release();
   }
 }
