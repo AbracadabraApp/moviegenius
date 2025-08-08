@@ -2,12 +2,9 @@
 // Designed to run slowly over 24-48 hours to avoid rate limits and costs
 
 import getCache from '../../lib/cache.js';
-import { createClient } from '@supabase/supabase-js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_ROLE_KEY
-);
+const pool = getPool();
 
 // Job state management
 let currentJob = null;
@@ -203,8 +200,8 @@ async function getMoviesToProcess() {
   const allMovies = [];
 
   results.forEach(result => {
-    if (result.status === 'fulfilled' && result.value.data) {
-      allMovies.push(...result.value.data);
+    if (result.status === 'fulfilled' && result.value) {
+      allMovies.push(...result.value);
     }
   });
 
@@ -220,7 +217,7 @@ async function warmMovieAnalysis(cache, movie) {
   const analysisCacheKey = cache.redis.generateKey('movie_analysis', movie.tmdb_id);
   const exists = await cache.redis.get(analysisCacheKey);
 
-  if (exists && exists.data) {
+  if (exists && exists) {
     return { wasGenerated: false, cached: true };
   }
 

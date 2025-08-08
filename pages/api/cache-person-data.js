@@ -6,7 +6,7 @@
  * Similar to cache-movie-data but for people.
  */
 
-import { createClient } from '@supabase/supabase-js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -21,10 +21,7 @@ export default async function handler(req, res) {
 
   try {
     // Initialize Supabase client
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
+    const pool = getPool();
 
     // For now, we'll just log the cache request since we don't have auto-discovery yet
     console.log('Person data cache request:', {

@@ -1,5 +1,5 @@
 // Simple API to create orphan_movies table structure using Supabase client
-import { createClient } from '@supabase/supabase-js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -7,10 +7,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
+    const pool = getPool();
 
     // Try to insert a test record to create the table structure
     const testOrphan = {

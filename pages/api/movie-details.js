@@ -1,5 +1,5 @@
 // pages/api/movie-details.js - Combined movie details from database and TMDB
-import { createClient } from '@supabase/supabase-js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 
 export default async function handler(req, res) {
   if (req.method !== 'GET') {
@@ -32,10 +32,7 @@ export default async function handler(req, res) {
     console.log(`🔍 Fetching combined movie details for TMDB ID: ${id}`);
 
     // Create Supabase client
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
+    const pool = getPool();
 
     // First, try to get movie from database
     const { data: dbMovie, error: dbError } = await supabase

@@ -17,10 +17,7 @@ export default async function handler(req, res) {
 
   try {
     const { createClient } = await import('@supabase/supabase-js');
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
+    const pool = getPool();
 
     // Step 1: Get the list's content type
     const { data: listData, error: listError } = await supabase
@@ -29,7 +26,7 @@ export default async function handler(req, res) {
       .eq('id', listId)
       .single();
 
-    if (listError || !listData) {
+    if (!listData) {
       return res.status(404).json({ error: 'List not found or missing content type' });
     }
 

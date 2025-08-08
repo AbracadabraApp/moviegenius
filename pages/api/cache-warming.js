@@ -2,12 +2,9 @@
 // Designed for 8k movie collection - pre-populates all caches for instant UX
 
 import getCache from '../../lib/cache.js';
-import { createClient } from '@supabase/supabase-js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_ROLE_KEY
-);
+const pool = getPool();
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {

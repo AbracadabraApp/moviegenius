@@ -16,7 +16,7 @@
  * 5. Return MediaCard data
  */
 
-import { createClient } from '@supabase/supabase-js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 import { getCache } from '../../lib/cache.js';
 import { Anthropic } from '@anthropic-ai/sdk';
 
@@ -24,10 +24,7 @@ const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
 });
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_ROLE_KEY
-);
+const pool = getPool();
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -50,7 +47,7 @@ export default async function handler(req, res) {
     let existingMovie = null;
 
     if (tmdb_id) {
-      const { data } = await supabase.from('movies').select('*').eq('tmdb_id', tmdb_id).single();
+      const { data } = await MovieService.getMovieByTMDBId(tmdb_id);
       existingMovie = data;
     } else {
       const { data } = await supabase

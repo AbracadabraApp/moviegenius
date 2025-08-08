@@ -20,10 +20,7 @@ export default async function handler(req, res) {
 
   try {
     const { createClient } = await import('@supabase/supabase-js');
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
+    const pool = getPool();
 
     // Check if we already have a cached analysis
     const { data: existingAnalysis, error: analysisError } = await supabase

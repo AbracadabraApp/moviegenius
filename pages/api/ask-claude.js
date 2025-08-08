@@ -10,7 +10,7 @@
  * - Redis caching for Claude responses
  * - Cost tracking for API usage monitoring
  */
-import { createClient } from '@supabase/supabase-js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 import {
   withErrorHandling,
   ApiErrors,
@@ -58,10 +58,7 @@ const REQUEST_DEDUP_TTL = 30000; // 30 seconds
 async function saveMovieData(movieData) {
   try {
     // Initialize Supabase client
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
+    const pool = getPool();
 
     // Step 1: Check if movie already exists in Supabase
     const { data: existingMovie, error: findError } = await supabase

@@ -1,5 +1,5 @@
 // API to run the orphan movies migration
-import { createClient } from '@supabase/supabase-js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 import fs from 'fs';
 import path from 'path';
 
@@ -9,10 +9,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
+    const pool = getPool();
 
     // Step 1: Try to create orphan_movies table (skip if exists)
     console.log('Checking if orphan_movies table exists...');

@@ -1,11 +1,8 @@
 // pages/api/admin/count-movie-analyses.js - Count movies with analysis in movie_analyses table
 
-import { createClient } from '@supabase/supabase-js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_ROLE_KEY
-);
+const pool = getPool();
 
 export default async function handler(req, res) {
   try {
@@ -40,7 +37,7 @@ export default async function handler(req, res) {
 
     let moviesWithAnalysis;
 
-    if (uniqueError || !uniqueMoviesData) {
+    if (!uniqueMoviesData) {
       console.log('RPC failed, trying alternative method...');
       // Fallback: Use distinct count if RPC doesn't exist
       const { count: distinctCount, error: distinctError } = await supabase

@@ -13,7 +13,7 @@
  * 4. Return structured data for rendering
  */
 
-import { createClient } from '@supabase/supabase-js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 import {
   withErrorHandling,
   ApiErrors,
@@ -27,10 +27,7 @@ const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
 });
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_ROLE_KEY
-);
+const pool = getPool();
 
 /**
  * Generate static content for Explore Further topics

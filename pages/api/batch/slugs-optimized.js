@@ -13,7 +13,7 @@
  * - Circuit breaker protection for API stability
  */
 
-import { createClient } from '@supabase/supabase-js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 import { Anthropic } from '@anthropic-ai/sdk';
 import { getBatchOptimizer } from '../../../lib/batch-optimizer.js';
 import { getPerformanceMonitor } from '../../../lib/performance-monitor.js';
@@ -24,10 +24,7 @@ import {
   checkRateLimit,
 } from '../../../lib/api-utils.js';
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_ROLE_KEY
-);
+const pool = getPool();
 
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
@@ -233,7 +230,7 @@ Return ONLY the tagline, nothing else.`;
       // Use batch optimizer for database operations
       const result = await this.batchOptimizer.batchDatabaseOperation('update', updateData, {
         table: 'movies',
-        batchSize: this.config.databaseBatchSize,
+        batchSize: this.configbaseBatchSize,
         operation: 'upsert',
       });
 

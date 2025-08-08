@@ -62,7 +62,7 @@ async function debugHandler(req, res) {
           .eq('tmdb_id', 550)
           .single();
         
-        if (movieError || !movie) {
+        if (!movie) {
           tests.push({
             test: 'Database Connection',
             status: 'fail',

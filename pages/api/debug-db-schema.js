@@ -13,10 +13,7 @@ export default async function handler(req, res) {
     }
 
     const { createClient } = await import('@supabase/supabase-js');
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
+    const pool = getPool();
 
     // Test 1: Check if movies table exists and has data
     try {

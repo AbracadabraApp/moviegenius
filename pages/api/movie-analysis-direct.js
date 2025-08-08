@@ -6,12 +6,9 @@
  * Used for testing the new JSON prompt format
  */
 
-import { createClient } from '@supabase/supabase-js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_ROLE_KEY
-);
+const pool = getPool();
 
 async function movieAnalysisDirectHandler(req, res) {
   let title, year;
@@ -33,7 +30,7 @@ async function movieAnalysisDirectHandler(req, res) {
         .eq('tmdb_id', parseInt(tmdbId))
         .single();
 
-      if (movieError || !movie) {
+      if (!movie) {
         return res.status(404).json({ error: 'Movie not found' });
       }
 

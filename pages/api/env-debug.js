@@ -1,5 +1,6 @@
 // Environment variable diagnostic endpoint
 export default async function handler(req, res) {
+  try {
   const env = {
     // TMDB environment variables
     TMDB_API_KEY: {
@@ -42,4 +43,8 @@ export default async function handler(req, res) {
     },
     timestamp: new Date().toISOString()
   });
+  } catch (error) {
+    console.error('Railway database error:', error);
+    return res.status(500).json({ error: 'Internal server error', message: error.message });
+  }
 }

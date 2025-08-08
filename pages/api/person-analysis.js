@@ -20,10 +20,7 @@ export default async function handler(req, res) {
 
   try {
     const { createClient } = await import('@supabase/supabase-js');
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
+    const pool = getPool();
 
     // First, try to find the person in database
     let query = supabase.from('people').select('id').eq('name', name);
@@ -35,7 +32,7 @@ export default async function handler(req, res) {
 
     const { data: person, error: personError } = await query.single();
 
-    if (personError || !person) {
+    if (!person) {
       return res.status(404).json({
         error: 'Person not found in database',
         analysis: `${name} ${birthYear ? `(${birthYear}${deathYear ? `–${deathYear}` : ''})` : ''} is a notable figure in cinema who has made significant contributions to the film industry.`,

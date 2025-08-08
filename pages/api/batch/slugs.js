@@ -6,13 +6,10 @@
  * Use scripts/one-time-slug-backfill.js for backfilling existing movies.
  */
 
-import { createClient } from '@supabase/supabase-js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 import { Anthropic } from '@anthropic-ai/sdk';
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_ROLE_KEY
-);
+const pool = getPool();
 
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
