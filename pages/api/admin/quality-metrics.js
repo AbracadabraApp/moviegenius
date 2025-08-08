@@ -5,8 +5,8 @@
  * and identifying improvement opportunities.
  */
 
-import { qualityMetrics } from '../../../lib/analysis-quality-metrics.js';
-import { withErrorHandling, successResponse } from '../../../lib/api-utils.js';
+import { qualityMetrics } from '../../../../lib/analysis-quality-metrics.js';
+import { withErrorHandling, successResponse } from '../../../../lib/api-utils.js';
 
 async function qualityMetricsHandler(req, res) {
   if (req.method !== 'GET') {

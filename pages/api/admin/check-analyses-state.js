@@ -1,6 +1,8 @@
 // pages/api/admin/check-analyses-state.js - Check movie_analyses table state
 
-import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
+import { createClient, supabase } from '../../../lib/railway-adapter.js';
+
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../../lib/railway-db.js';
 
 const pool = getPool();
 

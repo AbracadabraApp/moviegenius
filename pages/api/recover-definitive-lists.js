@@ -6,6 +6,8 @@
  * Emergency recovery endpoint for demo preparation.
  */
 
+import { createClient, supabase } from '../lib/railway-adapter.js';
+
 import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 import afi100Data from '../../data/afi100.json';
 

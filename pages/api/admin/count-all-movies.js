@@ -1,6 +1,8 @@
 // pages/api/admin/count-all-movies.js - Count all movies in database
 
-import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
+import { createClient, supabase } from '../../../lib/railway-adapter.js';
+
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../../lib/railway-db.js';
 
 const pool = getPool();
 

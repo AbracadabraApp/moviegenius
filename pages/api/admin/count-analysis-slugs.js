@@ -1,6 +1,8 @@
 // pages/api/admin/count-analysis-slugs.js - Count analyzed movies with/without slugs
 
-import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
+import { createClient, supabase } from '../../../lib/railway-adapter.js';
+
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../../lib/railway-db.js';
 
 const pool = getPool();
 

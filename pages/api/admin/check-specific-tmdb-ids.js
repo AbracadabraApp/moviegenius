@@ -1,6 +1,8 @@
 // pages/api/admin/check-specific-tmdb-ids.js - Check specific TMDB IDs for slug data
 
-import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
+import { createClient, supabase } from '../../../lib/railway-adapter.js';
+
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../../lib/railway-db.js';
 
 const pool = getPool();
 

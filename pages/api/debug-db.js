@@ -1,3 +1,7 @@
+import { getPool } from '../lib/railway-db.js';
+import { createClient, supabase } from '../lib/railway-adapter.js';
+
+
 // Debug database connection and specific movie lookup
 export default async function handler(req, res) {
   const { tmdbId = 257 } = req.query;
@@ -26,7 +30,7 @@ export default async function handler(req, res) {
     const { createClient } = await import('@supabase/supabase-js');
     const pool = getPool();
     
-    resultbase.clientCreated = true;
+    supabase.clientCreated = true;
     console.log(`✅ Supabase client created successfully`);
 
     // Test 2: Basic database connection test
@@ -36,7 +40,7 @@ export default async function handler(req, res) {
       .select('count')
       .limit(1);
     
-    resultbase.connectionTest = {
+    supabase.connectionTest = {
       success: !testError,
       error: testError?.message || null
     };

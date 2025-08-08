@@ -1,3 +1,7 @@
+import { getPool } from '../lib/railway-db.js';
+import { createClient, supabase } from '../lib/railway-adapter.js';
+
+
 // pages/api/verify-movie.js
 /**
  * Verify if a movie exists in our database

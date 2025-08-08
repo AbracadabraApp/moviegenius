@@ -13,16 +13,18 @@
  * - Circuit breaker protection for API stability
  */
 
-import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
+import { createClient, supabase } from '../../../lib/railway-adapter.js';
+
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../../lib/railway-db.js';
 import { Anthropic } from '@anthropic-ai/sdk';
-import { getBatchOptimizer } from '../../../lib/batch-optimizer.js';
-import { getPerformanceMonitor } from '../../../lib/performance-monitor.js';
+import { getBatchOptimizer } from '../../../../lib/batch-optimizer.js';
+import { getPerformanceMonitor } from '../../../../lib/performance-monitor.js';
 import {
   withErrorHandling,
   ApiErrors,
   successResponse,
   checkRateLimit,
-} from '../../../lib/api-utils.js';
+} from '../../../../lib/api-utils.js';
 
 const pool = getPool();
 

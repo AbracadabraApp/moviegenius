@@ -1,4 +1,6 @@
 // pages/api/tmdb-bulk.js - TMDB Bulk Fetching API with Rate Limiting and Error Handling
+import { createClient, supabase } from '../lib/railway-adapter.js';
+
 import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 
 const TMDB_API_KEY = process.env.TMDB_API_KEY;

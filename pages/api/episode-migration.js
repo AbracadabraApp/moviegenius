@@ -9,7 +9,9 @@
  *   POST /api/episode-migration - Execute migration
  */
 
-import { EpisodeService } from '../../lib/supabase.js';
+import { createClient, supabase } from '../lib/railway-adapter.js';
+
+import { EpisodeService } from '../../lib/railway-db.js';
 import fs from 'fs';
 import path from 'path';
 
