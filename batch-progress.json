@@ -13645,7 +13645,12 @@
     "285024",
     "285258",
     "285368",
-    "285664"
+    "285664",
+    "58",
+    "166",
+    "254",
+    "496",
+    "464"
   ],
   "failed": [
     {
@@ -14261,9 +14266,9 @@
       "error": "Unknown"
     }
   ],
-  "totalCost": 100.14111300000027,
-  "lastSaved": "2025-08-01T23:48:41.677Z",
+  "totalCost": 0.11887365,
+  "lastSaved": "2025-08-06T16:39:42.626Z",
   "lastProcessedOffset": 13798,
-  "resumeStrategy": "offset-based",
-  "mode": "batch"
+  "resumeStrategy": "id-based",
+  "mode": "individual"
 }

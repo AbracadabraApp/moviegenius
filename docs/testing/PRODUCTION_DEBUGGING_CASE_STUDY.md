@@ -170,3 +170,114 @@ This incident highlights a common pattern where senior developers overcomplicate
 ---
 
 *This case study serves as a reminder that good debugging practices apply regardless of experience level. Trust your diagnostic tools, follow the evidence, and resist the urge to overcomplicate simple problems.*
+
+---
+
+## Second Case Study: Movie Linking Analysis Failures
+
+**Date**: August 6, 2025  
+**Issue**: Investigating movie linking system scope and database flags  
+**Resolution Time**: 3+ hours of inefficient investigation  
+**Root Cause**: Repeated failure to follow user instructions and flawed database query logic  
+
+### The Problem
+
+**Initial Request**: "We should have thousands more movies with processed content and movie references for linking"  
+**User Goal**: Understand actual scope of movie linking vs database flags  
+**What Happened**: Agent went in circles with over-analysis instead of systematic data gathering  
+
+### Pattern of Mistakes Made
+
+#### ❌ Mistake 1: Over-Theorizing Instead of Following Instructions
+**What happened**: User asked simple question: "scan processed content and count mentions of href="/movie""  
+**Agent response**: Went into complex analysis of component code, JSON vs HTML formats, theoretical linking methods  
+**Should have done**: Execute the exact request - count `href="/movie"` mentions  
+
+#### ❌ Mistake 2: Jumping to Conclusions from Single Data Points  
+**What happened**: Found Psycho (539) had HTML movie links, declared "hypothesis proven"  
+**User correction**: "It's not proven - it's a piece"  
+**Engineering docs warning**: This exact behavior is documented as a failure pattern  
+**Should have done**: Systematic sampling across multiple movies before drawing conclusions  
+
+#### ❌ Mistake 3: Ignoring Contradictions in Own Data
+**What happened**: 
+- Showed Psycho had HTML links: `<a href="/movie/948">Halloween</a>`
+- Later query showed Psycho as having "no HTML links"  
+- Continued analysis instead of investigating the contradiction  
+**Should have done**: Stop immediately and resolve the data inconsistency  
+
+#### ❌ Mistake 4: Flawed Database Query Logic
+**Query flaw**:
+```sql
+-- Step 1: Find TMDB IDs with HTML (excludes at movie level)
+SELECT DISTINCT m.tmdb_id WHERE ... LIKE '%href="/movie%'
+
+-- Step 2: Find records without HTML (selects at record level)  
+SELECT * WHERE m.tmdb_id NOT IN (list from step 1)
+```
+**Problem**: Movies can have multiple analysis records - some with HTML, some without  
+**Result**: Reality Bites (2788) appeared in "no HTML" list despite having HTML links  
+**Should have done**: Query at the same granularity level (record vs movie)  
+
+#### ❌ Mistake 5: Not Following User Evidence
+**What happened**: User provided specific evidence: "Psycho HAS LINKS... references to HALLOWEEN - 948; Dressed to Kill - 11033"  
+**Agent response**: Continued with theoretical analysis instead of investigating the specific evidence  
+**Should have done**: Immediately examine the provided evidence to understand the system  
+
+#### ❌ Mistake 6: Ignoring Documentation Guidance
+**Available guidance**: 
+- ENGINEERING-DECISION-RULES.md: "Have I tested to actually understand the current behavior?"
+- Case Study: "Trust your diagnostic tools, follow the evidence"  
+**Agent behavior**: Continued making assumptions without systematic verification  
+**Should have done**: Follow documented debugging practices from previous lessons  
+
+### What This Reveals About System Architecture
+
+**Actual findings** (when finally executed correctly):
+- 16,106 analyses with processed_content
+- 87 analyses contain HTML movie links (`href="/movie"`)  
+- 459 total movie link mentions across those 87 analyses
+- 3,334 analyses flagged as `has_links=true` (database flags clearly wrong)
+
+**Key insight**: Multiple analysis records per movie can have different linking states
+
+### Correct Approach Should Have Been
+
+1. **Execute user request directly**: Count `href="/movie"` mentions first
+2. **Follow specific evidence**: Check Psycho's actual content when user provided TMDB IDs
+3. **Resolve contradictions immediately**: When data shows conflicts, stop and investigate
+4. **Query consistently**: Same granularity for comparisons (record vs movie level)
+5. **Apply documented practices**: Use engineering decision rules and debugging guidance
+
+### Lessons for Future Debugging
+
+#### ✅ Do This
+1. **Execute direct requests first** - Don't theorize before gathering requested data
+2. **Investigate user-provided evidence immediately** - Specific examples reveal system behavior
+3. **Stop on contradictions** - Resolve data inconsistencies before continuing analysis
+4. **Query at consistent granularity** - Understand record vs entity level differences
+5. **Follow documented debugging practices** - Apply lessons from previous case studies
+
+#### ❌ Don't Do This  
+1. **Over-analyze before data gathering** - Theories without data lead to wrong conclusions
+2. **Jump to conclusions from single examples** - One data point doesn't prove system behavior
+3. **Ignore contradictions in your own data** - Conflicting results indicate flawed approach
+4. **Mix granularity levels in queries** - Record-level vs movie-level comparisons fail
+5. **Dismiss user evidence** - User testing often reveals what queries miss
+
+### Root Cause Analysis
+
+**Primary failure**: Not following user instructions systematically  
+**Secondary failure**: Flawed database query logic with mixed granularity  
+**Underlying issue**: Over-confidence in complex analysis vs simple, direct investigation  
+
+**Time wasted**: 3+ hours of circular analysis  
+**Time needed**: 30 minutes to count HTML links and examine specific examples  
+
+### Key Takeaway
+
+The same debugging principles apply at all levels: **trust the evidence, follow instructions directly, and resolve contradictions before proceeding**. Complex theoretical analysis is often a sign of avoiding the simple, direct approach that would reveal the actual system behavior.
+
+---
+
+*Updated: August 6, 2025 - Added movie linking analysis case study*

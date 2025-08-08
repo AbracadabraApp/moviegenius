@@ -1,16 +1,15 @@
 /**
- * Movie Analysis Linking Script - V1 Production
+ * Static File Link Processor - Nuclear Cache Processing
  *
- * Processes static movie pages to create proper movie links in analysis content.
- * Run with: node scripts/process-movie-analysis-links.js [--dry-run] [--test-count=20]
+ * Processes static movie analysis files in /public/nuclear-static/ to add movie and contributor links.
+ * For Railway database processing, use: scripts/process-railway-links.js
  *
  * This script:
- * 1. Finds **Movie Title** (Year) and **Movie Title** patterns in analysis content
- * 2. Looks up movies in database
- * 3. Adds missing movies via TMDB (like MediaCard logic)
- * 4. Creates direct /movie/TMDB_ID links
- * 5. Strips ** marks for unlinked movies as fallback
- * 6. Prevents self-referential links (movies don't link to themselves)
+ * 1. Finds **Movie Title** (Year) and **Movie Title** patterns in analysis content  
+ * 2. Links contributor names from KEY_CONTRIBUTORS to analysis text
+ * 3. Looks up movies in database, adds missing via TMDB
+ * 4. Creates direct /movie/TMDB_ID and /person/name-slug links
+ * 5. Prevents self-referential links
  */
 
 import { processStaticPages, testMovieAnalysisLinking } from '../lib/movie-analysis-linker.js';
@@ -22,9 +21,24 @@ const testMode = args.includes('--test');
 const testCountArg = args.find(arg => arg.startsWith('--test-count='));
 const testCount = testCountArg ? parseInt(testCountArg.split('=')[1]) : 20;
 
+// New linking control flags
+const enableMovies = args.includes('--movies');
+const enableContributors = args.includes('--contributors');
+const enableAll = args.includes('--all');
+
+// Default: if no flags specified, enable both (backward compatibility)
+const processMovies = enableAll || enableMovies || (!enableMovies && !enableContributors);
+const processContributors = enableAll || enableContributors || (!enableMovies && !enableContributors);
+
 async function main() {
   console.log('🎬 Movie Analysis Linking Script - V1');
   console.log('=====================================\n');
+  
+  // Show linking configuration
+  console.log('🔧 Linking Configuration:');
+  console.log(`   Movies: ${processMovies ? '✅ Enabled' : '❌ Disabled'}`);
+  console.log(`   Contributors: ${processContributors ? '✅ Enabled' : '❌ Disabled'}`);
+  console.log('');
 
   // Validate environment
   if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
@@ -32,8 +46,8 @@ async function main() {
     process.exit(1);
   }
 
-  if (!process.env.NEXT_PUBLIC_TMDB_API_KEY) {
-    console.error('❌ Missing TMDB API key');
+  if (processMovies && !process.env.NEXT_PUBLIC_TMDB_API_KEY) {
+    console.error('❌ Missing TMDB API key (required for movie linking)');
     process.exit(1);
   }
 
@@ -54,7 +68,10 @@ Contemporary horror directors often cite **Psycho** and **The Exorcist** as majo
     } else {
       // Process static pages
       const startTime = Date.now();
-      const result = await processStaticPages(testCount, dryRun);
+      const result = await processStaticPages(testCount, dryRun, {
+        processMovies,
+        processContributors
+      });
       const duration = Math.round((Date.now() - startTime) / 1000);
 
       console.log(`\n⏱️  Completed in ${duration} seconds`);
@@ -84,8 +101,17 @@ Movie Analysis Linking Script Usage:
   # Dry run on 20 static pages (show what would be changed):
   node scripts/process-movie-analysis-links.js --dry-run
 
-  # Dry run on 50 static pages:
-  node scripts/process-movie-analysis-links.js --dry-run --test-count=50
+  # Process only movie links:
+  node scripts/process-movie-analysis-links.js --movies
+
+  # Process only contributor links:
+  node scripts/process-movie-analysis-links.js --contributors
+
+  # Process both (default behavior):
+  node scripts/process-movie-analysis-links.js --all
+
+  # Dry run with specific linking types:
+  node scripts/process-movie-analysis-links.js --dry-run --contributors --test-count=50
 
   # Process 20 static pages (LIVE - modifies data):
   node scripts/process-movie-analysis-links.js
@@ -93,12 +119,19 @@ Movie Analysis Linking Script Usage:
   # Process all available static pages:
   node scripts/process-movie-analysis-links.js --test-count=1000
 
-Features:
-  • Finds **Movie Title** (Year) and **Movie Title** patterns
-  • Looks up movies in database by title and year
-  • Adds missing movies via TMDB API (like MediaCard)
-  • Creates direct /movie/TMDB_ID links using movie-title class
-  • Strips ** marks for unlinked movies as fallback
+Linking Features:
+  • Movie Links: **Movie Title** (Year) → /movie/TMDB_ID
+  • Contributor Links: First mentions of KEY_CONTRIBUTORS → /person/name-slug
+  • Conservative matching to avoid character name conflicts
+  • Gold underline styling for consistent UI
+
+Flags:
+  --movies        Enable movie linking only
+  --contributors  Enable contributor linking only
+  --all          Enable both types (default if no flags)
+  --dry-run      Show changes without modifying files
+  --test         Run with sample content instead of files
+  --test-count=N Process N static pages (default: 20)
   • Prevents self-referential links (movies don't link to themselves)
   • Processes both sections and exploreFurther content
   • Rate limited to avoid API overload

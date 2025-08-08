@@ -1,18 +1,5 @@
 /**
- * Railway Analysis Link Processor - V2 JSON Extraction
- *
- * Extracts HTML movie links from JSON-structured processed_content and 
- * converts to clean HTML text format for Railway PostgreSQL database.
- * 
- * Run with: node scripts/process-railway-analysis-links.js [--dry-run] [--test-count=20]
- *
- * This script:
- * 1. Reads JSON-structured processed_content from Railway database
- * 2. Extracts text content containing HTML movie links  
- * 3. Converts to clean HTML text format
- * 4. Updates processed_content with clean HTML
- * 5. Sets has_links and link_count metadata properly
- * 6. No TMDB lookups needed - links already exist in JSON
+ * Process analyses WITHOUT links to find any missed movie links
  */
 
 import { Client } from 'pg';
@@ -22,7 +9,7 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-dotenv.config({ path: resolve(__dirname, '../.env.local') });
+dotenv.config({ path: resolve(__dirname, '.env.local') });
 
 // Railway PostgreSQL connection helper
 function getRailwayClient() {
@@ -80,7 +67,7 @@ function countMovieLinks(htmlContent) {
     return 0;
   }
   
-  const movieLinkPattern = /<a href="\/movie\/\d+"[^>]*>/g;
+  const movieLinkPattern = /<a[^>]*href="\/movie\/\d+"[^>]*>/g;
   const matches = htmlContent.match(movieLinkPattern);
   return matches ? matches.length : 0;
 }
@@ -95,30 +82,24 @@ async function processAnalysisRecord(client, analysis, dryRun = false) {
 
   console.log(`\n📄 Processing: ${movieTitle}`);
 
-  // Check if already processed correctly
-  if (analysis.has_links && analysis.link_count > 0) {
-    console.log(`   ⏭️ Already processed (${analysis.link_count} links) - skipping`);
-    return { skipped: true, reason: 'already_processed' };
-  }
-
   const claudeResponse = analysis.claude_response;
   
-  // Extract HTML from JSON structure
+  // Extract HTML from JSON structure - use raw_content for missing processed_content
   let extractedHTML = null;
   
-  if (claudeResponse && claudeResponse.processed_content) {
-    if (typeof claudeResponse.processed_content === 'string') {
+  if (claudeResponse && claudeResponse.raw_content) {
+    if (typeof claudeResponse.raw_content === 'string') {
       // Check if it's JSON string that needs parsing
       try {
-        const parsedContent = JSON.parse(claudeResponse.processed_content);
+        const parsedContent = JSON.parse(claudeResponse.raw_content);
         extractedHTML = extractHTMLFromJSON(parsedContent);
       } catch (e) {
         // Not JSON, use as-is
-        extractedHTML = claudeResponse.processed_content;
+        extractedHTML = claudeResponse.raw_content;
       }
-    } else if (typeof claudeResponse.processed_content === 'object') {
+    } else if (typeof claudeResponse.raw_content === 'object') {
       // Already parsed JSON object
-      extractedHTML = extractHTMLFromJSON(claudeResponse.processed_content);
+      extractedHTML = extractHTMLFromJSON(claudeResponse.raw_content);
     }
   }
 
@@ -135,13 +116,13 @@ async function processAnalysisRecord(client, analysis, dryRun = false) {
 
   if (linkCount > 0) {
     // Show sample links
-    const sampleLinks = extractedHTML.match(/<a href="\/movie\/\d+"[^>]*>[^<]+<\/a>/g);
+    const sampleLinks = extractedHTML.match(/<a[^>]*href="\/movie\/\d+"[^>]*>[^<]+<\/a>/g);
     if (sampleLinks) {
       console.log(`   🔗 Sample links: ${sampleLinks.slice(0, 2).join(', ')}`);
     }
   }
 
-  if (!dryRun) {
+  if (!dryRun && hasLinks) {
     // Update database with clean HTML and correct metadata
     const updatedClaudeResponse = {
       ...claudeResponse,
@@ -166,6 +147,8 @@ async function processAnalysisRecord(client, analysis, dryRun = false) {
     ]);
 
     console.log(`   ✅ Updated database - has_links: ${hasLinks}, link_count: ${linkCount}`);
+  } else if (!dryRun && !hasLinks) {
+    console.log(`   ⚠️ No links found - keeping has_links=false`);
   } else {
     console.log(`   🔍 DRY RUN - would set has_links: ${hasLinks}, link_count: ${linkCount}`);
   }
@@ -174,15 +157,16 @@ async function processAnalysisRecord(client, analysis, dryRun = false) {
     processed: true, 
     hasLinks, 
     linkCount, 
-    contentLength: extractedHTML.length 
+    contentLength: extractedHTML.length,
+    foundNewLinks: hasLinks 
   };
 }
 
 /**
- * Get analyses that need processing
+ * Get analyses that need processing (currently flagged as has_links=false)
  */
-async function getAnalysesToProcess(client, limit = 20) {
-  console.log(`📋 Finding analyses to process (limit: ${limit})...`);
+async function getAnalysesToProcess(client, limit = 2000) {
+  console.log(`📋 Finding analyses WITHOUT links to process (limit: ${limit})...`);
   
   const query = `
     SELECT 
@@ -197,13 +181,14 @@ async function getAnalysesToProcess(client, limit = 20) {
     JOIN movies m ON ma.movie_id = m.id
     WHERE 
       ma.claude_response IS NOT NULL
-      AND (ma.claude_response->>'processed_content') IS NOT NULL
+      AND (ma.has_links IS NULL OR ma.has_links = false)
+      AND (ma.claude_response->>'raw_content') IS NOT NULL
     ORDER BY ma.created_at DESC
     LIMIT $1
   `;
 
   const result = await client.query(query, [limit]);
-  console.log(`📊 Found ${result.rows.length} analyses with processed_content`);
+  console.log(`📊 Found ${result.rows.length} analyses without links to check`);
   
   return result.rows;
 }
@@ -211,11 +196,11 @@ async function getAnalysesToProcess(client, limit = 20) {
 /**
  * Main processing function
  */
-async function processRailwayAnalysisLinks(testCount = 20, dryRun = false) {
-  console.log('🚂 Railway Analysis Link Processor - V2 JSON Extraction');
-  console.log('========================================================');
+async function processAnalysesWithoutLinks(testCount = 2000, dryRun = false) {
+  console.log('🚂 Railway Analysis Link Processor - Find Missing Links');
+  console.log('=====================================================');
   console.log(`Mode: ${dryRun ? 'DRY RUN' : 'LIVE PROCESSING'}`);
-  console.log(`Processing: ${testCount} analyses\n`);
+  console.log(`Processing: ${testCount} analyses without links\n`);
 
   const client = getRailwayClient();
   
@@ -227,13 +212,14 @@ async function processRailwayAnalysisLinks(testCount = 20, dryRun = false) {
     const analyses = await getAnalysesToProcess(client, testCount);
     
     if (analyses.length === 0) {
-      console.log('✅ No analyses need processing');
+      console.log('✅ No analyses without links need processing');
       return;
     }
 
     let totalProcessed = 0;
     let totalSkipped = 0;
     let totalLinksFound = 0;
+    let totalNewLinksFound = 0;
     let totalErrors = 0;
 
     console.log(`🔄 Processing ${analyses.length} analyses...\n`);
@@ -250,6 +236,9 @@ async function processRailwayAnalysisLinks(testCount = 20, dryRun = false) {
         } else if (result.processed) {
           totalProcessed++;
           totalLinksFound += result.linkCount;
+          if (result.foundNewLinks) {
+            totalNewLinksFound++;
+          }
         }
 
         // Small delay to avoid overwhelming the database
@@ -267,12 +256,14 @@ async function processRailwayAnalysisLinks(testCount = 20, dryRun = false) {
     console.log(`  • Skipped: ${totalSkipped}`);
     console.log(`  • Errors: ${totalErrors}`);
     console.log(`  • Total movie links found: ${totalLinksFound}`);
+    console.log(`  • Analyses that got new links: ${totalNewLinksFound}`);
     console.log(`  • Mode: ${dryRun ? 'DRY RUN - No data modified' : 'LIVE - Database updated'}`);
 
     return {
       totalProcessed,
       totalSkipped, 
       totalLinksFound,
+      totalNewLinksFound,
       totalErrors
     };
 
@@ -291,27 +282,23 @@ async function main() {
   
   const dryRun = args.includes('--dry-run');
   const testCountArg = args.find(arg => arg.startsWith('--test-count='));
-  const testCount = testCountArg ? parseInt(testCountArg.split('=')[1]) : 20;
+  const testCount = testCountArg ? parseInt(testCountArg.split('=')[1]) : 2000;
 
   // Show help
   if (args.includes('--help')) {
     console.log(`
-Railway Analysis Link Processor Usage:
+Process Analyses Without Links Usage:
 
-  # Dry run on 10 analyses (show what would be changed):
-  node scripts/process-railway-analysis-links.js --dry-run --test-count=10
+  # Dry run on analyses without links:
+  node process-no-links.js --dry-run --test-count=100
 
-  # Process 20 analyses (LIVE - modifies database):
-  node scripts/process-railway-analysis-links.js --test-count=20
-
-  # Process all analyses needing extraction:
-  node scripts/process-railway-analysis-links.js --test-count=20000
+  # Process all analyses without links (LIVE):
+  node process-no-links.js --test-count=2000
 
 Features:
-  • Extracts HTML movie links from JSON structured content
-  • Converts complex JSON to clean HTML text format  
-  • Updates has_links and link_count metadata properly
-  • No TMDB API calls needed - uses existing link data
+  • Targets analyses currently flagged as has_links=false
+  • Extracts HTML movie links from raw_content JSON structures
+  • Updates has_links and link_count metadata for newly found links
   • Safe dry-run mode for testing before live processing
 
 Environment Variables Required:
@@ -321,7 +308,7 @@ Environment Variables Required:
   }
 
   try {
-    await processRailwayAnalysisLinks(testCount, dryRun);
+    await processAnalysesWithoutLinks(testCount, dryRun);
   } catch (error) {
     console.error('\n💥 FATAL ERROR:', error.message);
     process.exit(1);
