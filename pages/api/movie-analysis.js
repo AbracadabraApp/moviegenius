@@ -1,39 +1,8 @@
-// Railway PostgreSQL movie-analysis API endpoint with comprehensive observability
-// Enhanced with error logging, performance monitoring, and health tracking
+// Railway PostgreSQL movie-analysis API endpoint - UNIFIED VERSION
+// Uses the new lib/railway-db.js for all database operations
 
-import { Client } from 'pg';
+import { MovieService } from '../../lib/railway-db.js';
 import { logger, dbLogger, apiLogger, railwayLogger } from '../../lib/observability/logger.js';
-
-// Railway PostgreSQL connection helper with comprehensive logging
-const getRailwayClient = () => {
-  const dbUrl = process.env.RAILWAY_DATABASE_URL || process.env.DATABASE_URL;
-  
-  // During build time, environment variables may not be available
-  if (!dbUrl) {
-    if (process.env.NODE_ENV === 'production') {
-      railwayLogger.error('Database connection failed - no URL configured', {
-        available_env_vars: Object.keys(process.env).filter(k => k.includes('DATABASE')),
-        node_env: process.env.NODE_ENV,
-        build_context: 'runtime'
-      });
-      throw new Error('DATABASE_URL or RAILWAY_DATABASE_URL must be set in environment variables');
-    } else {
-      // During build, return a placeholder that won't be used
-      railwayLogger.warn('Database URL not found during build', {
-        node_env: process.env.NODE_ENV,
-        build_context: 'build-time'
-      });
-      return null;
-    }
-  }
-  
-  railwayLogger.info('Creating Railway PostgreSQL client', {
-    has_ssl: dbUrl.includes('sslmode=require'),
-    host: dbUrl.match(/host=([^&\s]+)/)?.[1] || 'unknown'
-  });
-  
-  return new Client({ connectionString: dbUrl });
-};
 
 export default async function movieAnalysisHandler(req, res) {
   const startTime = Date.now();
@@ -56,41 +25,13 @@ export default async function movieAnalysisHandler(req, res) {
   // Start movie analysis tracking
   logger.movieAnalysis(tmdbId, 'started', { source: 'api_request' });
 
-  let client = null;
   try {
-    client = getRailwayClient();
+    // Look up movie by TMDB ID using MovieService
+    const movieQueryStart = Date.now();
+    let movie = await MovieService.getMovieByTMDBId(tmdbId);
+    const movieQueryTime = Date.now() - movieQueryStart;
     
-    if (!client) {
-      logger.movieAnalysis(tmdbId, 'failed', { 
-        reason: 'no_database_client',
-        duration: Date.now() - startTime 
-      });
-      apiLogger.apiResponse('GET', '/api/movie-analysis', 500, Date.now() - startTime);
-      return res.status(500).json({
-        error: 'Database connection not available',
-        message: 'DATABASE_URL not configured'
-      });
-    }
-    
-    // Connect with timing
-    const connectStart = Date.now();
-    await client.connect();
-    const connectTime = Date.now() - connectStart;
-    
-    railwayLogger.railwayConnection('connected', { connectionTime: connectTime });
-    
-    try {
-      // Look up movie by TMDB ID with timing
-      const movieQueryStart = Date.now();
-      const movieQuery = 'SELECT * FROM movies WHERE tmdb_id = $1';
-      const movieResult = await client.query(movieQuery, [parseInt(tmdbId)]);
-      const movieQueryTime = Date.now() - movieQueryStart;
-      
-      dbLogger.dbQuery(movieQuery, [parseInt(tmdbId)], movieQueryTime, movieResult.rowCount);
-      
-      let movie; // Declare movie variable in proper scope
-      
-      if (movieResult.rows.length === 0) {
+    if (!movie) {
         console.log(`🎬 Movie ${tmdbId} not in Railway database, attempting TMDB lookup for analysis request`);
         logger.movieAnalysis(tmdbId, 'tmdb_discovery_started', { reason: 'movie_not_found' });
         
@@ -130,10 +71,9 @@ export default async function movieAnalysisHandler(req, res) {
             });
             
             // Use the newly created movie - requery to get full movie data
-            const newMovieResult = await client.query(movieQuery, [parseInt(tmdbId)]);
+            movie = await MovieService.getMovieByTMDBId(tmdbId);
             
-            if (newMovieResult.rows.length > 0) {
-              movie = newMovieResult.rows[0];
+            if (movie) {
               console.log(`✅ RAILWAY API: Using newly created movie - ${movie.title} (${movie.year})`);
             } else {
               throw new Error('Failed to retrieve newly created movie entry');
@@ -166,25 +106,21 @@ export default async function movieAnalysisHandler(req, res) {
             tmdbId: parseInt(tmdbId)
           });
         }
-      } else {
-        movie = movieResult.rows[0];
       }
-      logger.info('Movie found in Railway database', {
-        tmdbId,
-        title: movie.title,
-        year: movie.year,
-        movieId: movie.id
-      });
+    
+    logger.info('Movie found in Railway database', {
+      tmdbId,
+      title: movie.title,
+      year: movie.year,
+      movieId: movie.id
+    });
 
-      // Get existing analysis with timing
-      const analysisQueryStart = Date.now();
-      const analysisQuery = 'SELECT * FROM movie_analyses WHERE movie_id = $1 ORDER BY created_at DESC LIMIT 1';
-      const analysisResult = await client.query(analysisQuery, [movie.id]);
-      const analysisQueryTime = Date.now() - analysisQueryStart;
-      
-      dbLogger.dbQuery(analysisQuery, [movie.id], analysisQueryTime, analysisResult.rowCount);
-      
-      if (analysisResult.rows.length === 0) {
+    // Get existing analysis using MovieService
+    const analysisQueryStart = Date.now();
+    const analysis = await MovieService.getMovieAnalysis(movie.id);
+    const analysisQueryTime = Date.now() - analysisQueryStart;
+    
+    if (!analysis) {
         console.log(`🤖 No analysis found for ${movie.title} (${movie.year}), generating fresh Claude analysis...`);
         logger.movieAnalysis(tmdbId, 'claude_generation_started', { 
           title: movie.title,
@@ -246,23 +182,13 @@ export default async function movieAnalysisHandler(req, res) {
             model: promptConfig.model, // Use configurable model from prompt system
           };
 
-          const insertAnalysisQuery = `
-            INSERT INTO movie_analyses (movie_id, analysis_type, claude_response, query_text, created_at)
-            VALUES ($1, $2, $3, $4, NOW())
-            RETURNING *
-          `;
-          
-          const insertResult = await client.query(insertAnalysisQuery, [
-            movie.id,
-            'page_analysis',
-            analysisData,
-            `Movie page analysis for ${movie.title} (${movie.year})`
-          ]);
+          // Save using MovieService
+          const insertResult = await MovieService.upsertMovieAnalysis(movie.id, analysisData);
 
           const dbEndTime = Date.now();
           const dbDuration = (dbEndTime - dbStartTime) / 1000;
           
-          if (insertResult.rows.length > 0) {
+          if (insertResult) {
             console.log(`💾 Saved analysis to database (${dbDuration.toFixed(2)}s) - Cost: $${costEstimate.toFixed(4)}`);
             logger.movieAnalysis(tmdbId, 'claude_analysis_saved', { 
               cost: costEstimate,
@@ -272,7 +198,7 @@ export default async function movieAnalysisHandler(req, res) {
 
             // 🚀 IMMEDIATE ASYNC LINK PROCESSING - Fire and forget, no blocking
             const { triggerAsyncLinkProcessing } = await import('../../lib/async-link-processor.js');
-            triggerAsyncLinkProcessing(insertResult.rows[0].id, parseInt(tmdbId));
+            triggerAsyncLinkProcessing(insertResult.id, parseInt(tmdbId));
           } else {
             console.error(`❌ Failed to save analysis to database`);
           }
@@ -328,8 +254,6 @@ export default async function movieAnalysisHandler(req, res) {
           });
         }
       }
-
-      const analysis = analysisResult.rows[0];
       
       // Helper function to clean ** patterns for readable text
       function cleanMovieTitlePatterns(content) {
@@ -371,35 +295,27 @@ export default async function movieAnalysisHandler(req, res) {
         analysisCreated: analysis.created_at
       });
 
-      // Return successful response - match the format expected by MovieAnalysisWithEntities
-      const response = {
-        success: true,
-        analysis: analysisContent,
-        rawAnalysis: analysisContent,
-        movie: {
-          title: movie.title,
-          year: movie.year,
-          tmdb_id: movie.tmdb_id
-        },
-        cached: true,
-        source: 'railway-postgresql',
-        performance: {
-          total_time: Date.now() - startTime,
-          connect_time: connectTime,
-          movie_query_time: movieQueryTime,
-          analysis_query_time: analysisQueryTime
-        }
-      };
-      
-      apiLogger.apiResponse('GET', '/api/movie-analysis', 200, Date.now() - startTime, JSON.stringify(response).length);
-      return res.status(200).json(response);
-      
-    } finally {
-      if (client) {
-        await client.end();
-        railwayLogger.info('Database connection closed', { tmdbId, duration: Date.now() - startTime });
+    // Return successful response - match the format expected by MovieAnalysisWithEntities
+    const response = {
+      success: true,
+      analysis: analysisContent,
+      rawAnalysis: analysisContent,
+      movie: {
+        title: movie.title,
+        year: movie.year,
+        tmdb_id: movie.tmdb_id
+      },
+      cached: true,
+      source: 'railway-postgresql',
+      performance: {
+        total_time: Date.now() - startTime,
+        movie_query_time: movieQueryTime,
+        analysis_query_time: analysisQueryTime
       }
-    }
+    };
+    
+    apiLogger.apiResponse('GET', '/api/movie-analysis', 200, Date.now() - startTime, JSON.stringify(response).length);
+    return res.status(200).json(response);
 
   } catch (error) {
     // Comprehensive error logging
@@ -417,15 +333,6 @@ export default async function movieAnalysisHandler(req, res) {
       code: error.code,
       duration: Date.now() - startTime
     });
-    
-    // Close connection if it exists
-    if (client) {
-      try {
-        await client.end();
-      } catch (closeError) {
-        logger.error('Failed to close database connection', { tmdbId }, closeError);
-      }
-    }
     
     apiLogger.apiResponse('GET', '/api/movie-analysis', 500, Date.now() - startTime);
     return res.status(500).json({

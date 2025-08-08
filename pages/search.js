@@ -228,11 +228,11 @@ export default function SearchPage() {
           <div style={styles.resultsHeader}>
             <h1 style={styles.resultsTitle}>{getCategoryTitle()}</h1>
             {(searchResults.length > 0 || loading) && (
-              <span style={styles.resultsCount}>
+              <div style={styles.resultsCount}>
                 {loading
                   ? 'Searching...'
                   : `${searchResults.length} movie${searchResults.length !== 1 ? 's' : ''} found`}
-              </span>
+              </div>
             )}
           </div>
 
@@ -307,18 +307,22 @@ const styles = {
   },
 
   resultsHeader: {
-    marginBottom: '20px',
-    padding: '0 16px',
+    marginBottom: '24px',
+    padding: '20px 16px 0 16px',
+    borderBottom: '1px solid rgba(0, 0, 0, 0.1)',
+    paddingBottom: '16px',
   },
   resultsTitle: {
-    fontSize: '24px',
+    fontSize: '28px',
     fontWeight: '700',
     color: '#111827',
-    margin: '0 0 8px 0',
+    margin: '0 0 12px 0',
+    letterSpacing: '-0.02em',
   },
   resultsCount: {
-    fontSize: '14px',
+    fontSize: '18px',
     color: '#6b7280',
+    fontWeight: '500',
   },
 
   movieGrid: {
@@ -339,7 +343,7 @@ const styles = {
 
   noResults: {
     textAlign: 'center',
-    padding: '60px 20px',
+    padding: '40px 20px',
   },
   noResultsIcon: {
     fontSize: '48px',
@@ -359,7 +363,7 @@ const styles = {
 
   emptyState: {
     textAlign: 'center',
-    padding: '80px 20px',
+    padding: '60px 20px',
   },
   emptyIcon: {
     fontSize: '64px',

@@ -70,10 +70,16 @@ const MovieCreativeFooter = ({ analysis, movie }) => {
   };
 
   // Handle person click - navigate to person page
-  const handlePersonClick = (personName) => {
-    // Convert person name to URL slug
-    const nameSlug = personName.toLowerCase().replace(/[^a-z0-9]/g, '-');
-    router.push(`/person/${nameSlug}`);
+  const handlePersonClick = (person) => {
+    // If person is an object with personId, use ID-based system
+    if (typeof person === 'object' && person.personId) {
+      router.push(`/person/${person.personId}`);
+    } else {
+      // Fallback to name-based system for legacy data
+      const personName = typeof person === 'string' ? person : person.name || person;
+      const nameSlug = personName.toLowerCase().replace(/[^a-z0-9]/g, '-');
+      router.push(`/person/${nameSlug}`);
+    }
   };
 
   // Show loading state while fetching contributors
@@ -86,81 +92,97 @@ const MovieCreativeFooter = ({ analysis, movie }) => {
   }
   
   // Don't show footer if no contributors and no legacy keyElements
-  if (Object.keys(keyElements).length === 0) return null;
+  const hasContributors = contributors && Object.keys(contributors).length > 0;
+  if (!hasContributors && Object.keys(keyElements).length === 0) return null;
+  
+  // Build display data - prioritize contributors (with person IDs) over legacy keyElements
+  const displayData = hasContributors ? {
+    stars: contributors.star || [],
+    director: contributors.director?.[0] || null,
+    writers: contributors.writer || [],
+    cinematographer: contributors.cinematographer?.[0] || null,
+    composer: contributors.composer?.[0] || null
+  } : keyElements;
 
   return (
     <div style={styles.container}>
       {/* Starring */}
-      {keyElements.stars && keyElements.stars.length > 0 && (
+      {displayData.stars && displayData.stars.length > 0 && (
         <div style={styles.row}>
           <span style={styles.label}>Starring: </span>
-          {keyElements.stars.map((star, index) => (
-            <span key={index}>
-              <span 
-                className="person-name"
-                onClick={() => handlePersonClick(star)}
-              >
-                {star}
+          {displayData.stars.map((star, index) => {
+            const displayName = typeof star === 'string' ? star : star.name || star.legacyName;
+            return (
+              <span key={index}>
+                <span 
+                  className="person-name"
+                  onClick={() => handlePersonClick(star)}
+                >
+                  {displayName}
+                </span>
+                {index < displayData.stars.length - 1 && ', '}
               </span>
-              {index < keyElements.stars.length - 1 && ', '}
-            </span>
-          ))}
+            );
+          })}
         </div>
       )}
 
       {/* Director */}
-      {keyElements.director && (
+      {displayData.director && (
         <div style={styles.row}>
           <span style={styles.label}>Director: </span>
           <span 
             className="person-name"
-            onClick={() => handlePersonClick(keyElements.director)}
+            onClick={() => handlePersonClick(displayData.director)}
           >
-            {keyElements.director}
+            {typeof displayData.director === 'string' ? displayData.director : displayData.director.name || displayData.director.legacyName}
           </span>
         </div>
       )}
 
       {/* Writers */}
-      {keyElements.writers && keyElements.writers.length > 0 && (
+      {displayData.writers && displayData.writers.length > 0 && (
         <div style={styles.row}>
           <span style={styles.label}>Written by: </span>
-          {keyElements.writers.map((writer, index) => (
-            <span key={index}>
-              <span 
-                className="person-name"
-                onClick={() => handlePersonClick(writer)}
-              >
-                {writer}
+          {displayData.writers.map((writer, index) => {
+            const displayName = typeof writer === 'string' ? writer : writer.name || writer.legacyName;
+            return (
+              <span key={index}>
+                <span 
+                  className="person-name"
+                  onClick={() => handlePersonClick(writer)}
+                >
+                  {displayName}
+                </span>
+                {index < displayData.writers.length - 1 && ', '}
               </span>
-              {index < keyElements.writers.length - 1 && ', '}
-            </span>
-          ))}
+            );
+          })}
         </div>
       )}
 
       {/* Cinematographer */}
-      {keyElements.cinematographer && (
+      {displayData.cinematographer && (
         <div style={styles.row}>
           <span style={styles.label}>Cinematographer: </span>
           <span 
             className="person-name"
-            onClick={() => handlePersonClick(keyElements.cinematographer)}
+            onClick={() => handlePersonClick(displayData.cinematographer)}
           >
-            {keyElements.cinematographer}
+            {typeof displayData.cinematographer === 'string' ? displayData.cinematographer : displayData.cinematographer.name || displayData.cinematographer.legacyName}
           </span>
         </div>
       )}
 
       {/* Composer */}
-      {keyElements.composer && (
+      {displayData.composer && (
         <div style={styles.row}>
           <span style={styles.label}>Composer: </span>
           <span 
             className="person-name"
-            onClick={() => handlePersonClick(keyElements.composer)}
+            onClick={() => handlePersonClick(displayData.composer)}
           >
-            {keyElements.composer}
+            {typeof displayData.composer === 'string' ? displayData.composer : displayData.composer.name || displayData.composer.legacyName}
           </span>
         </div>
       )}

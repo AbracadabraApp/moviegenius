@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import PhoneFrame from '../../components/PhoneFrame';
 import MovieHeaderLarge from '../../components/MovieHeaderLarge';
 import SimpleSearch from '../../components/SimpleSearch';
-import DiscoveryFooter from '../../components/DiscoveryFooter';
+import MovieCreativeFooter from '../../components/MovieCreativeFooter';
 import MovieAnalysisWithEntities from '../../components/MovieAnalysisWithEntities';
 import ErrorBoundary from '../../components/ErrorBoundary';
 import PerformanceDashboard from '../../components/PerformanceDashboard';
@@ -165,7 +165,6 @@ export default function MovieDetailPage() {
               useUnifiedSearch={true}
             />
           </div>
-          <DiscoveryFooter />
         </div>
       </PhoneFrame>
     );
@@ -229,9 +228,12 @@ export default function MovieDetailPage() {
             />
           </ErrorBoundary>
 
-          {/* Discovery Footer */}
+          {/* Movie Creative Footer */}
           <ErrorBoundary level="section">
-            <DiscoveryFooter />
+            <MovieCreativeFooter 
+              analysis={analysis}
+              movie={movie}
+            />
           </ErrorBoundary>
         </div>
       </PhoneFrame>

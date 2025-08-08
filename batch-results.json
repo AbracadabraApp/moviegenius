@@ -104181,6 +104181,46 @@
       "success": true,
       "cost": 0.015753,
       "tokens": 2110
+    },
+    {
+      "tmdbId": "166",
+      "title": "The Party",
+      "year": 1980,
+      "format": "json",
+      "timing": 30.492,
+      "cost": 0.03686775,
+      "tokens": "13+2015",
+      "success": true
+    },
+    {
+      "tmdbId": "254",
+      "title": "King Kong",
+      "year": 2005,
+      "format": "json",
+      "timing": 30.522,
+      "cost": 0.0267993,
+      "tokens": "13+2101",
+      "success": true
+    },
+    {
+      "tmdbId": "496",
+      "title": "Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan",
+      "year": 2006,
+      "format": "json",
+      "timing": 31.468,
+      "cost": 0.0263733,
+      "tokens": "31+2069",
+      "success": true
+    },
+    {
+      "tmdbId": "464",
+      "title": "As It Is in Heaven",
+      "year": 2004,
+      "format": "json",
+      "timing": 35.326,
+      "cost": 0.0288333,
+      "tokens": "16+2236",
+      "success": true
     }
   ],
   "failed": [

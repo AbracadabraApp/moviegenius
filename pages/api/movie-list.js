@@ -1,12 +1,12 @@
 // pages/api/movie-list.js
 /**
- * Movie List API
+ * Movie List API - RAILWAY VERSION
  *
  * Retrieves a specific movie list with its movies and cached Claude description.
- * Supports the new list-based content system.
+ * Uses Railway PostgreSQL exclusively.
  */
 
-import { createClient } from '@supabase/supabase-js';
+import { getPool } from '../../lib/railway-db.js';
 
 export default async function handler(req, res) {
   if (req.method === 'GET') {

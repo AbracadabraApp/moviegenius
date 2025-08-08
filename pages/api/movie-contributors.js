@@ -36,12 +36,13 @@ export default async function handler(req, res) {
   try {
     await client.connect();
     
-    // Get contributors for this movie grouped by role
+    // Get contributors for this movie grouped by role (include person_id for new system)
     const contributorsResult = await client.query(`
-      SELECT person_name, role
-      FROM movie_contributors
-      WHERE movie_tmdb_id = $1
-      ORDER BY role, person_name
+      SELECT mc.person_name, mc.person_id, mc.role, p.name
+      FROM movie_contributors mc
+      JOIN persons p ON mc.person_id = p.id
+      WHERE mc.movie_tmdb_id = $1
+      ORDER BY mc.role, p.name
     `, [tmdbId]);
 
     if (contributorsResult.rows.length === 0) {
@@ -52,16 +53,20 @@ export default async function handler(req, res) {
       });
     }
 
-    // Group contributors by role
+    // Group contributors by role (include person IDs)
     const contributors = {};
     contributorsResult.rows.forEach(row => {
       const role = row.role;
-      const name = row.person_name;
+      const person = {
+        name: row.name, // Use the canonical name from persons table
+        personId: row.person_id,
+        legacyName: row.person_name // Keep legacy name for backward compatibility
+      };
       
       if (!contributors[role]) {
         contributors[role] = [];
       }
-      contributors[role].push(name);
+      contributors[role].push(person);
     });
 
     res.status(200).json({
