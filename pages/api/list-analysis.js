@@ -1,3 +1,7 @@
+import { getPool } from '../lib/railway-db.js';
+import { createClient, supabase } from '../lib/railway-adapter.js';
+
+
 // pages/api/list-analysis.js
 /**
  * List Analysis API

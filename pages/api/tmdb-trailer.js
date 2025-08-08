@@ -4,6 +4,8 @@
  * Check database first, fetch from TMDB if needed, cache result
  */
 
+import { createClient, supabase } from '../lib/railway-adapter.js';
+
 import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 
 const pool = getPool();

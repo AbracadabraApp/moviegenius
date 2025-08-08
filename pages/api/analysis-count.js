@@ -1,3 +1,6 @@
+import { getPool } from '../lib/railway-db.js';
+import { createClient, supabase } from '../lib/railway-adapter.js';
+
 /**
  * Simple Analysis Count API
  * 

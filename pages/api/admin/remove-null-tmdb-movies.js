@@ -1,5 +1,7 @@
 // API endpoint to remove movies with null TMDB IDs
-import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
+import { createClient, supabase } from '../../../lib/railway-adapter.js';
+
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../../lib/railway-db.js';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {

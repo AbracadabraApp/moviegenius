@@ -1,5 +1,7 @@
 // pages/api/cache-movie-data.js
 // Cache enhanced movie data to Supabase instead of JSON files
+import { createClient, supabase } from '../lib/railway-adapter.js';
+
 import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 
 export default async function handler(req, res) {

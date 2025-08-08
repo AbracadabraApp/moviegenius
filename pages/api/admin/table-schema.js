@@ -1,13 +1,13 @@
 // pages/api/admin/table-schema.js - Show table columns
 
-import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../../lib/railway-db.js';
 
 const pool = getPool();
 
 export default async function handler(req, res) {
   try {
     // Get a sample movie to see all columns
-    const { data: sampleMovies, error } = await supabase.from('movies').select('*').limit(3);
+    const { data: sampleMovies, error } = await getPool().from('movies').select('*').limit(3);
 
     if (error) {
       console.error('❌ Error fetching sample movies:', error);

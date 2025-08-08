@@ -3,6 +3,8 @@
  * Tests if Railway environment variables are actually being set
  */
 
+import { createClient, supabase } from '../lib/railway-adapter.js';
+
 export default async function handler(req, res) {
   try {
   if (req.method !== 'GET') {
