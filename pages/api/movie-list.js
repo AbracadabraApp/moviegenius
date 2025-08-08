@@ -6,7 +6,7 @@
  * Uses Railway PostgreSQL exclusively.
  */
 
-import { getPool } from '../../lib/railway-db.js';
+import { getPool } from './railway-db.js';
 
 export default async function handler(req, res) {
   if (req.method === 'GET') {

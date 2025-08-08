@@ -1,10 +1,10 @@
 // Background job for warming Claude analysis cache
 // Designed to run slowly over 24-48 hours to avoid rate limits and costs
 
-import { createClient, supabase } from '../lib/railway-adapter.js';
+import { createClient, supabase } from './railway-adapter.js';
 
 import getCache from '../../lib/cache.js';
-import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from './railway-db.js';
 
 const pool = getPool();
 

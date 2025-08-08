@@ -6,7 +6,7 @@
  */
 
 // Import series configuration
-import { createClient, supabase } from '../lib/railway-adapter.js';
+import { createClient, supabase } from './railway-adapter.js';
 
 import fs from 'fs';
 import path from 'path';
@@ -83,7 +83,7 @@ function processMovieData(movieData) {
 async function loadEpisodeContent(seriesId, episodeId) {
   try {
     // First try database for Genius episodes (theme determined by series mapping)
-    const { EpisodeService } = await import('../../lib/railway-db.js');
+    const { EpisodeService } = await import('./railway-db.js');
 
     // Map series ID to theme ID (this mapping should match your genius-config.json)
     const seriesThemeMapping = {
@@ -399,7 +399,7 @@ function parseClaudeResponse(responseText) {
 async function checkEpisodeLock(seriesId, episodeId, forceRegenerate = false) {
   try {
     // First try database
-    const { EpisodeService } = await import('../../lib/railway-db.js');
+    const { EpisodeService } = await import('./railway-db.js');
 
     // Map series ID to theme ID
     const seriesThemeMapping = {

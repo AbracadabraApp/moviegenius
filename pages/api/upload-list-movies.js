@@ -6,9 +6,9 @@
  * Handles batch creation of lists and movie-list relationships.
  */
 
-import { createClient, supabase } from '../lib/railway-adapter.js';
+import { createClient, supabase } from './railway-adapter.js';
 
-import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from './railway-db.js';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {

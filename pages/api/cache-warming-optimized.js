@@ -12,9 +12,9 @@
  * - Batch database operations for efficiency
  */
 
-import { createClient, supabase } from '../lib/railway-adapter.js';
+import { createClient, supabase } from './railway-adapter.js';
 
-import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from './railway-db.js';
 import { getBatchOptimizer } from '../../lib/batch-optimizer.js';
 import { getCache } from '../../lib/cache.js';
 import { getPerformanceMonitor } from '../../lib/performance-monitor.js';

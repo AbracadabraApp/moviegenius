@@ -5,9 +5,9 @@
 // ⚠️  PROTECTED against TMDB summary contamination
 //
 // @version LOCKED-2025-07-02
-import { createClient, supabase } from '../lib/railway-adapter.js';
+import { createClient, supabase } from './railway-adapter.js';
 
-import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from './railway-db.js';
 import { Anthropic } from '@anthropic-ai/sdk';
 
 const pool = getPool();
