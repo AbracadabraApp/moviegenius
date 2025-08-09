@@ -10,25 +10,30 @@
  *   node scripts/process-railway-links.js [--dry-run] [--limit=100] [--movies-only] [--contributors-only]
  */
 
-import { Client } from 'pg';
+import { Pool } from 'pg';
 import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { processAnalysisContent, extractContributorsFromKeyElements } from '../lib/movie-analysis-linker.js';
+import { processAnalysisContent } from '../lib/movie-analysis-linker.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 dotenv.config({ path: path.resolve(__dirname, '..', '.env.local') });
 
-// Railway PostgreSQL connection
-function getRailwayClient() {
+// Railway PostgreSQL connection pool
+function getRailwayPool() {
   const dbUrl = process.env.RAILWAY_DATABASE_URL || process.env.DATABASE_URL;
   
   if (!dbUrl) {
     throw new Error('DATABASE_URL or RAILWAY_DATABASE_URL must be set');
   }
   
-  return new Client({ connectionString: dbUrl });
+  return new Pool({
+    connectionString: dbUrl,
+    max: 12, // Conservative max connections for concurrency=10
+    connectionTimeoutMillis: 5000,
+    idleTimeoutMillis: 30000,
+  });
 }
 
 /**
@@ -213,7 +218,7 @@ async function processRailwayAnalysis(client, analysis, options = {}) {
   console.log(`   👥 Found ${contributors.length} contributors: ${contributors.map(c => c.name).join(', ')}`);
   
   // Check for data quality - skip if too many "Unknown" values
-  const unknownCount = contributors.filter(c => c.name === 'Unknown').length;
+  const unknownCount = contributors.filter(c => c.name.toLowerCase() === 'unknown').length;
   if (unknownCount > 0 && unknownCount === contributors.length) {
     console.log(`   ⚠️ Skipping - all contributors are "Unknown" (poor data quality)`);
     return { skipped: true, reason: 'poor_data_quality' };
@@ -226,41 +231,24 @@ async function processRailwayAnalysis(client, analysis, options = {}) {
   // Create KEY_CONTRIBUTORS format for universal linker compatibility
   const keyContributorsString = createKeyContributorsString(contributors);
   
-  // Process content using universal linker
-  let processedText = analysisText;
+  // Process content using universal linker in single pass
+  console.log('   🔗 Processing links with universal linker');
+  let processedText = await processAnalysisContent(
+    analysisText,
+    movieTitle,
+    'Railway batch processing',
+    keyContributorsString,
+    {
+      processMovies,
+      processContributors,
+      dbClient: client
+    }
+  );
   
-  if (processContributors && contributors.length > 0) {
-    console.log('   👥 Processing contributor links with universal linker');
-    
-    // Use universal linker for contributor processing
-    processedText = await processAnalysisContent(
-      processedText,
-      movieTitle,
-      'Railway batch processing',
-      keyContributorsString, // Provide KEY_CONTRIBUTORS format for extraction
-      {
-        processMovies: false,
-        processContributors: true,
-        dbClient: client
-      }
-    );
-  }
-  
-  if (processMovies) {
-    console.log('   🎬 Processing movie links with universal linker');
-    
-    // Use the universal movie analysis linker for movie links
-    processedText = await processAnalysisContent(
-      processedText,
-      movieTitle,
-      'Railway batch processing',
-      '', // No rawContent needed for movie linking
-      {
-        processMovies: true,
-        processContributors: false, // Already done above
-        dbClient: client
-      }
-    );
+  // Ensure processedText is a string
+  if (typeof processedText !== 'string') {
+    console.log(`   ⚠️ Warning: processedText is not a string, got ${typeof processedText}`);
+    processedText = String(processedText);
   }
   
   // Count links in processed content
@@ -330,7 +318,7 @@ async function getAnalysesToProcess(client, limit = 100, options = {}) {
       -- Score analyses by data quality (lower score = higher priority)
       CASE 
         WHEN ma.claude_response->>'raw_content' IS NULL THEN 100
-        WHEN ma.claude_response->>'raw_content' LIKE '%"Unknown"%' THEN 50
+        WHEN ma.claude_response->>'raw_content' ILIKE '%"unknown"%' THEN 50
         ELSE 1
       END as data_quality_score
     FROM movie_analyses ma
@@ -363,13 +351,12 @@ async function processRailwayLinks(options = {}) {
   console.log(`Movies: ${processMovies ? 'Enabled' : 'Disabled'}, Contributors: ${processContributors ? 'Enabled' : 'Disabled'}`);
   console.log(`Force reprocess: ${force ? 'Yes' : 'No'}\n`);
   
-  const client = getRailwayClient();
+  const pool = getRailwayPool();
   
   try {
-    await client.connect();
-    console.log('✅ Connected to Railway PostgreSQL\n');
+    console.log('✅ Connected to Railway PostgreSQL pool\n');
     
-    const analyses = await getAnalysesToProcess(client, limit, { force });
+    const analyses = await getAnalysesToProcess(pool, limit, { force });
     console.log(`📋 Found ${analyses.length} analyses to process\n`);
     
     if (analyses.length === 0) {
@@ -383,33 +370,52 @@ async function processRailwayLinks(options = {}) {
     let totalMovieLinks = 0;
     let totalContributorLinks = 0;
     
-    for (let i = 0; i < analyses.length; i++) {
-      const analysis = analyses[i];
-      
-      try {
-        console.log(`[${i + 1}/${analyses.length}]`);
-        const result = await processRailwayAnalysis(client, analysis, { 
-          dryRun, 
-          processMovies, 
-          processContributors,
-          force 
-        });
+    // Process with higher concurrency using connection pool
+    const concurrency = 10; // Increased concurrency with pool support
+    const chunks = [];
+    for (let i = 0; i < analyses.length; i += concurrency) {
+      chunks.push(analyses.slice(i, i + concurrency));
+    }
+    
+    let processed = 0;
+    for (const chunk of chunks) {
+      const promises = chunk.map(async (analysis, index) => {
+        const globalIndex = processed + index + 1;
+        console.log(`[${globalIndex}/${analyses.length}]`);
         
-        if (result.skipped) {
+        try {
+          const result = await processRailwayAnalysis(pool, analysis, { 
+            dryRun, 
+            processMovies, 
+            processContributors,
+            force 
+          });
+          
+          return result;
+        } catch (error) {
+          console.error(`   ❌ Error processing analysis: ${error.message}`);
+          return { error: true };
+        }
+      });
+      
+      const results = await Promise.all(promises);
+      
+      // Update counters
+      for (const result of results) {
+        if (result.error) {
+          totalErrors++;
+        } else if (result.skipped) {
           totalSkipped++;
         } else if (result.processed) {
           totalProcessed++;
           totalMovieLinks += result.movieLinks;
           totalContributorLinks += result.contributorLinks;
         }
-        
-        // Rate limiting
-        await new Promise(resolve => setTimeout(resolve, 200));
-        
-      } catch (error) {
-        console.error(`   ❌ Error processing analysis: ${error.message}`);
-        totalErrors++;
       }
+      
+      processed += chunk.length;
+      
+      // No delay needed with connection pool management
     }
     
     // Final summary
@@ -434,8 +440,8 @@ async function processRailwayLinks(options = {}) {
     console.error('💥 Script failed:', error.message);
     throw error;
   } finally {
-    await client.end();
-    console.log('\n🔒 Database connection closed');
+    await pool.end();
+    console.log('\n🔒 Database connection pool closed');
   }
 }
 
@@ -485,7 +491,7 @@ Environment Variables:
   
   const limitArg = args.find(arg => arg.startsWith('--limit='));
   if (limitArg) {
-    options.limit = parseInt(limitArg.split('=')[1]) || 100;
+    options.limit = parseInt(limitArg.split('=')[1], 10) || 100;
   }
   
   try {
