@@ -1,6 +1,7 @@
 // pages/api/cache-movie-data.js
 // Cache enhanced movie data to Supabase instead of JSON files
 import { createClient, supabase } from './railway-adapter.js';
+import { isValidPosterUrl } from '../../lib/poster-validation-utils.js';
 
 import { getPool, MovieService, EpisodeService, CacheService, PersonService } from './railway-db.js';
 
@@ -65,13 +66,20 @@ export default async function handler(req, res) {
         updated = true;
       }
 
+      // 🛡️ POSTER CORRUPTION PREVENTION
       if (
         poster &&
         poster !== '/images/placeholder-poster.jpg' &&
         (!existingMovie.poster_url || poster !== existingMovie.poster_url)
       ) {
-        updates.poster_url = poster;
-        updated = true;
+        // Validate poster URL before updating
+        if (isValidPosterUrl(poster, `${title} (${year})`)) {
+          updates.poster_url = poster;
+          updated = true;
+        } else {
+          console.warn(`🚫 Cache API: Blocked invalid poster for "${title}" (${year}): ${poster}`);
+          // Don't update poster_url, keep existing one
+        }
       }
 
       if (
