@@ -8,6 +8,13 @@ export default function Document() {
         {/* Web app optimized for desktop and web browsers */}
         <link rel="icon" href="/favicon.ico" />
         <script src="/js/nextjs-test-framework.js" async></script>
+        
+        {/* Google AdSense */}
+        <script 
+          async 
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9145665803926258"
+          crossOrigin="anonymous"
+        ></script>
       </Head>
       <body>
         <Main />
