@@ -7,10 +7,10 @@ const MovieCreativeFooter = ({ analysis, movie }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   
-  // Get movie ID from movie prop or router
-  const movieId = movie?.tmdb_id || router.query.id;
+  // Get movie ID from movie prop or router - handle both tmdb_id and id fields
+  const movieId = movie?.tmdb_id || movie?.id || router.query.id;
   
-  // Fetch contributors from Railway database
+  // Fetch contributors using fast contributors_json approach
   useEffect(() => {
     if (!movieId) {
       setLoading(false);
@@ -20,7 +20,8 @@ const MovieCreativeFooter = ({ analysis, movie }) => {
     const fetchContributors = async () => {
       try {
         setLoading(true);
-        const response = await fetch('/api/movie-contributors', {
+        // Use simple contributors API (reliable core tables)
+        const response = await fetch('/api/movie-contributors-simple', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ movieId })
@@ -69,17 +70,13 @@ const MovieCreativeFooter = ({ analysis, movie }) => {
     composer: contributors.composer?.[0] || legacyKeyElements.composer
   };
 
-  // Handle person click - navigate to person page
+  // Handle person click - navigate to person page (only if we have person ID)
   const handlePersonClick = (person) => {
-    // If person is an object with personId, use ID-based system
+    // Only navigate if we have a valid person ID
     if (typeof person === 'object' && person.personId) {
       router.push(`/person/${person.personId}`);
-    } else {
-      // Fallback to name-based system for legacy data
-      const personName = typeof person === 'string' ? person : person.name || person;
-      const nameSlug = personName.toLowerCase().replace(/[^a-z0-9]/g, '-');
-      router.push(`/person/${nameSlug}`);
     }
+    // If no person ID, do nothing (names won't be clickable)
   };
 
   // Show loading state while fetching contributors
@@ -112,11 +109,13 @@ const MovieCreativeFooter = ({ analysis, movie }) => {
           <span style={styles.label}>Starring: </span>
           {displayData.stars.map((star, index) => {
             const displayName = typeof star === 'string' ? star : star.name || star.legacyName;
+            const hasPersonId = typeof star === 'object' && star.personId;
             return (
               <span key={index}>
                 <span 
-                  className="person-name"
-                  onClick={() => handlePersonClick(star)}
+                  className={hasPersonId ? "person-name" : "person-name-no-link"}
+                  onClick={hasPersonId ? () => handlePersonClick(star) : undefined}
+                  style={hasPersonId ? { cursor: 'pointer' } : { cursor: 'default' }}
                 >
                   {displayName}
                 </span>
@@ -131,12 +130,19 @@ const MovieCreativeFooter = ({ analysis, movie }) => {
       {displayData.director && (
         <div style={styles.row}>
           <span style={styles.label}>Director: </span>
-          <span 
-            className="person-name"
-            onClick={() => handlePersonClick(displayData.director)}
-          >
-            {typeof displayData.director === 'string' ? displayData.director : displayData.director.name || displayData.director.legacyName}
-          </span>
+          {(() => {
+            const hasPersonId = typeof displayData.director === 'object' && displayData.director.personId;
+            const displayName = typeof displayData.director === 'string' ? displayData.director : displayData.director.name || displayData.director.legacyName;
+            return (
+              <span 
+                className={hasPersonId ? "person-name" : "person-name-no-link"}
+                onClick={hasPersonId ? () => handlePersonClick(displayData.director) : undefined}
+                style={hasPersonId ? { cursor: 'pointer' } : { cursor: 'default' }}
+              >
+                {displayName}
+              </span>
+            );
+          })()}
         </div>
       )}
 
@@ -146,11 +152,13 @@ const MovieCreativeFooter = ({ analysis, movie }) => {
           <span style={styles.label}>Written by: </span>
           {displayData.writers.map((writer, index) => {
             const displayName = typeof writer === 'string' ? writer : writer.name || writer.legacyName;
+            const hasPersonId = typeof writer === 'object' && writer.personId;
             return (
               <span key={index}>
                 <span 
-                  className="person-name"
-                  onClick={() => handlePersonClick(writer)}
+                  className={hasPersonId ? "person-name" : "person-name-no-link"}
+                  onClick={hasPersonId ? () => handlePersonClick(writer) : undefined}
+                  style={hasPersonId ? { cursor: 'pointer' } : { cursor: 'default' }}
                 >
                   {displayName}
                 </span>
@@ -165,12 +173,19 @@ const MovieCreativeFooter = ({ analysis, movie }) => {
       {displayData.cinematographer && (
         <div style={styles.row}>
           <span style={styles.label}>Cinematographer: </span>
-          <span 
-            className="person-name"
-            onClick={() => handlePersonClick(displayData.cinematographer)}
-          >
-            {typeof displayData.cinematographer === 'string' ? displayData.cinematographer : displayData.cinematographer.name || displayData.cinematographer.legacyName}
-          </span>
+          {(() => {
+            const hasPersonId = typeof displayData.cinematographer === 'object' && displayData.cinematographer.personId;
+            const displayName = typeof displayData.cinematographer === 'string' ? displayData.cinematographer : displayData.cinematographer.name || displayData.cinematographer.legacyName;
+            return (
+              <span 
+                className={hasPersonId ? "person-name" : "person-name-no-link"}
+                onClick={hasPersonId ? () => handlePersonClick(displayData.cinematographer) : undefined}
+                style={hasPersonId ? { cursor: 'pointer' } : { cursor: 'default' }}
+              >
+                {displayName}
+              </span>
+            );
+          })()}
         </div>
       )}
 
@@ -178,12 +193,19 @@ const MovieCreativeFooter = ({ analysis, movie }) => {
       {displayData.composer && (
         <div style={styles.row}>
           <span style={styles.label}>Composer: </span>
-          <span 
-            className="person-name"
-            onClick={() => handlePersonClick(displayData.composer)}
-          >
-            {typeof displayData.composer === 'string' ? displayData.composer : displayData.composer.name || displayData.composer.legacyName}
-          </span>
+          {(() => {
+            const hasPersonId = typeof displayData.composer === 'object' && displayData.composer.personId;
+            const displayName = typeof displayData.composer === 'string' ? displayData.composer : displayData.composer.name || displayData.composer.legacyName;
+            return (
+              <span 
+                className={hasPersonId ? "person-name" : "person-name-no-link"}
+                onClick={hasPersonId ? () => handlePersonClick(displayData.composer) : undefined}
+                style={hasPersonId ? { cursor: 'pointer' } : { cursor: 'default' }}
+              >
+                {displayName}
+              </span>
+            );
+          })()}
         </div>
       )}
     </div>
