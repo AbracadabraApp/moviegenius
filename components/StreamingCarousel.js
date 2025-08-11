@@ -128,11 +128,6 @@ export default function StreamingCarousel({ onMovieClick }) {
 
   return (
     <div style={styles.carousel}>
-      <div style={styles.header}>
-        <h2 style={styles.title}>Best Movies on Streaming</h2>
-        <div style={styles.subtitle}>Handpicked favorites from every platform</div>
-      </div>
-
       <div style={styles.carouselContainer}>
         {/* Circular side-swipe container */}
         <div style={styles.circularContainer}>
@@ -221,7 +216,7 @@ export default function StreamingCarousel({ onMovieClick }) {
             style={styles.moreText}
             onClick={() => handlePlatformClick(streamingShowcase[currentIndex], { stopPropagation: () => {} })}
           >
-            + {getMoreCount()} more
+            + {getMoreCount()} more Great Films on {streamingShowcase[currentIndex].platform}
           </span>
         </div>
 
@@ -271,26 +266,6 @@ const styles = {
     backgroundColor: '#ffffff',
     padding: '16px 20px 20px 20px',
     borderBottom: '1px solid #f0f0f0'
-  },
-
-  header: {
-    textAlign: 'center',
-    marginBottom: '16px'
-  },
-
-  title: {
-    fontSize: '20px',
-    fontWeight: '700',
-    color: '#111827',
-    margin: '0 0 4px 0',
-    lineHeight: '1.2'
-  },
-
-  subtitle: {
-    fontSize: '14px',
-    color: '#6b7280',
-    margin: 0,
-    fontWeight: '500'
   },
 
   carouselContainer: {

@@ -405,15 +405,7 @@ export default function HomePage() {
           </div>
         )}
 
-        {/* Brand Statement - Top of page */}
-        {!modalStep && (
-          <div style={styles.brandStatement}>
-            <div style={styles.brandLine1}>DON'T BINGE WATCH TV</div>
-            <div style={styles.brandLine2}>FEAST ON GREAT FILMS INSTEAD</div>
-          </div>
-        )}
-
-        {/* Search Bar - Always visible at top */}
+        {/* Search Bar - At very top */}
         {!modalStep && (
           <div style={styles.searchSection}>
             <SimpleSearch
@@ -421,6 +413,14 @@ export default function HomePage() {
               placeholder="Search movies..."
               useUnifiedSearch={true}
             />
+          </div>
+        )}
+
+        {/* Brand Statement */}
+        {!modalStep && (
+          <div style={styles.brandStatement}>
+            <div style={styles.brandLine1}>DON'T BINGE WATCH TV</div>
+            <div style={styles.brandLine2}>FEAST ON GREAT FILMS INSTEAD</div>
           </div>
         )}
 
