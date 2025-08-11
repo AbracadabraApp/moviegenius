@@ -14,6 +14,21 @@ export default function MovieDetailPage() {
   const router = useRouter();
   const { id } = router.query;
   
+  // Add fallback ID extraction from URL path for SSR compatibility
+  // During SSR, asPath is '/movie/[id]', so we need to wait for client-side hydration
+  const movieId = id || (typeof window !== 'undefined' && window.location.pathname.match(/\/movie\/(\d+)/)?.[1]);
+  
+  // Final movie ID for rendering components
+  const [finalMovieId, setFinalMovieId] = useState(movieId);
+  
+  // Update finalMovieId when router is ready
+  useEffect(() => {
+    if (router.isReady) {
+      const extractedId = id || (typeof window !== 'undefined' && window.location.pathname.match(/\/movie\/(\d+)/)?.[1]);
+      setFinalMovieId(extractedId);
+    }
+  }, [router.isReady, id]);
+  
   // Performance monitoring
   const performanceMonitor = getPerformanceMonitor();
   
@@ -28,7 +43,7 @@ export default function MovieDetailPage() {
 
   // API data fetching
   useEffect(() => {
-    if (!router.isReady || !id) {
+    if (!router.isReady || !finalMovieId) {
       return;
     }
 
@@ -39,7 +54,7 @@ export default function MovieDetailPage() {
       
       try {
         // Fetch TMDB data
-        const tmdbResponse = await fetch(`/api/tmdb-movie?id=${id}`);
+        const tmdbResponse = await fetch(`/api/tmdb-movie?id=${finalMovieId}`);
         if (!tmdbResponse.ok) {
           const errorData = await tmdbResponse.json().catch(() => ({}));
           throw new Error(errorData.error || `Failed to fetch movie: ${tmdbResponse.status}`);
@@ -49,7 +64,7 @@ export default function MovieDetailPage() {
         setMovie(tmdbData);
         
         // Fetch streaming data from database
-        const streamingResponse = await fetch(`/api/movie-streaming?id=${id}`);
+        const streamingResponse = await fetch(`/api/movie-streaming?id=${finalMovieId}`);
         if (streamingResponse.ok) {
           const streamingData = await streamingResponse.json();
           setStreaming(streamingData);
@@ -60,7 +75,7 @@ export default function MovieDetailPage() {
         // Try to fetch processed static file with links first
         let analysisData = null;
         try {
-          const staticResponse = await fetch(`/nuclear-static/${id}.json`);
+          const staticResponse = await fetch(`/nuclear-static/${finalMovieId}.json`);
           if (staticResponse.ok) {
             const staticData = await staticResponse.json();
             if (staticData.props && staticData.props.sections) {
@@ -85,7 +100,7 @@ export default function MovieDetailPage() {
 
         // Fallback to database analysis if no static file
         if (!analysisData) {
-          const analysisResponse = await fetch(`/api/movie-analysis?tmdbId=${id}`);
+          const analysisResponse = await fetch(`/api/movie-analysis?tmdbId=${finalMovieId}`);
           if (analysisResponse.ok) {
             const apiData = await analysisResponse.json();
             
@@ -142,7 +157,7 @@ export default function MovieDetailPage() {
     };
 
     fetchMovie();
-  }, [router.isReady, id]);
+  }, [router.isReady, finalMovieId]);
 
   if (error) {
     return (
@@ -205,7 +220,7 @@ export default function MovieDetailPage() {
                 initialSlug={movie?.overview}
                 initialPoster={posterUrl}
                 initialStreaming={streaming?.streaming_data}
-                tmdbId={parseInt(id)}
+                tmdbId={parseInt(finalMovieId)}
               />
             </div>
           </ErrorBoundary>
