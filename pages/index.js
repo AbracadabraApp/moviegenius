@@ -1155,17 +1155,19 @@ const styles = {
   },
 
   brandLine1: {
-    fontSize: '22px',
+    fontSize: '23px',
     fontWeight: '700',
     color: '#ffffff',
     letterSpacing: '1px',
     lineHeight: '1.2',
-    marginBottom: '2px'
+    marginBottom: '2px',
+    textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 0 1px rgba(0,0,0,0.5)',
+    WebkitTextStroke: '0.5px rgba(0,0,0,0.3)'
   },
 
   brandLine2: {
-    fontSize: '14px',
-    fontWeight: '600',
+    fontSize: '16px',
+    fontWeight: '700',
     color: '#000000',
     letterSpacing: '0.5px',
     lineHeight: '1.2'
