@@ -405,6 +405,14 @@ export default function HomePage() {
           </div>
         )}
 
+        {/* Brand Statement - Top of page */}
+        {!modalStep && (
+          <div style={styles.brandStatement}>
+            <div style={styles.brandLine1}>DON'T BINGE WATCH TV</div>
+            <div style={styles.brandLine2}>FEAST ON GREAT FILMS INSTEAD</div>
+          </div>
+        )}
+
         {/* Search Bar - Always visible at top */}
         {!modalStep && (
           <div style={styles.searchSection}>
@@ -425,13 +433,6 @@ export default function HomePage() {
         {currentStep === 'themes' && (
           <div style={styles.section}>
             <div style={styles.heroSection}>
-              <p style={styles.goldSubtitle}>
-                <span style={{ fontSize: '28px', color: '#ffffff', letterSpacing: '1px' }}>
-                  DON'T BINGE WATCH TV
-                </span>
-                <br />
-                <span style={{ fontSize: '18px' }}>FEAST ON GREAT FILMS INSTEAD</span>
-              </p>
               <img
                 src="/images/hero-rotation/hero-8.jpg"
                 alt="Film Education Hero"
@@ -1144,5 +1145,29 @@ const styles = {
     padding: '16px 20px 8px 20px',
     backgroundColor: '#ffffff',
     borderBottom: '1px solid #f0f0f0',
+  },
+
+  brandStatement: {
+    background: 'linear-gradient(135deg, #1a1a1a 0%, #2d3748 100%)',
+    padding: '20px 20px 16px 20px',
+    textAlign: 'center',
+    borderBottom: '1px solid #f0f0f0'
+  },
+
+  brandLine1: {
+    fontSize: '22px',
+    fontWeight: '700',
+    color: '#ffffff',
+    letterSpacing: '1px',
+    lineHeight: '1.2',
+    marginBottom: '2px'
+  },
+
+  brandLine2: {
+    fontSize: '14px',
+    fontWeight: '600',
+    color: '#d4af37',
+    letterSpacing: '0.5px',
+    lineHeight: '1.2'
   },
 };
