@@ -1143,13 +1143,13 @@ const styles = {
 
   searchSection: {
     padding: '16px 20px 8px 20px',
-    backgroundColor: '#ffffff',
-    borderBottom: '1px solid #f0f0f0',
+    background: 'linear-gradient(135deg, #1a1a1a 0%, #2d3748 100%)',
+    borderBottom: 'none',
   },
 
   brandStatement: {
     background: 'linear-gradient(135deg, #1a1a1a 0%, #2d3748 100%)',
-    padding: '20px 20px 16px 20px',
+    padding: '8px 20px 20px 20px',
     textAlign: 'center',
     borderBottom: '1px solid #f0f0f0'
   },
