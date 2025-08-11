@@ -1166,7 +1166,7 @@ const styles = {
   brandLine2: {
     fontSize: '14px',
     fontWeight: '600',
-    color: '#d4af37',
+    color: '#000000',
     letterSpacing: '0.5px',
     lineHeight: '1.2'
   },
