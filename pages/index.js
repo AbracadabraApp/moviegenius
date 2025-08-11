@@ -7,6 +7,8 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import PhoneFrame from '../components/PhoneFrame';
+import SimpleSearch from '../components/SimpleSearch';
+import StreamingCarousel from '../components/StreamingCarousel';
 import { Play, Plus, Heart, ChevronRight, Star, Book } from 'lucide-react';
 import { themeLinks } from '../lib/routes';
 
@@ -255,6 +257,19 @@ export default function HomePage() {
     router.push('/genius');
   };
 
+  // Handle search results
+  const handleSearchResults = (results) => {
+    // Navigate to search page with results
+    if (results && results.length > 0) {
+      router.push(`/search?q=${encodeURIComponent(results[0].query || '')}`);
+    }
+  };
+
+  // Handle streaming carousel movie click
+  const handleCarouselMovieClick = (movie) => {
+    router.push(`/movie/${movie.tmdbId}`);
+  };
+
   return (
     <PhoneFrame>
       <div style={styles.container}>
@@ -388,6 +403,22 @@ export default function HomePage() {
               </div>
             )}
           </div>
+        )}
+
+        {/* Search Bar - Always visible at top */}
+        {!modalStep && (
+          <div style={styles.searchSection}>
+            <SimpleSearch
+              onResults={handleSearchResults}
+              placeholder="Search movies..."
+              useUnifiedSearch={true}
+            />
+          </div>
+        )}
+
+        {/* Streaming Carousel - High profile homepage feature */}
+        {!modalStep && currentStep === 'themes' && (
+          <StreamingCarousel onMovieClick={handleCarouselMovieClick} />
         )}
 
         {/* Theme Selection Section */}
@@ -1107,5 +1138,11 @@ const styles = {
     cursor: 'pointer',
     fontFamily: 'inherit',
     transition: 'all 0.2s ease',
+  },
+
+  searchSection: {
+    padding: '16px 20px 8px 20px',
+    backgroundColor: '#ffffff',
+    borderBottom: '1px solid #f0f0f0',
   },
 };
