@@ -6,7 +6,7 @@
  */
 
 import { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Triangle } from 'lucide-react';
 
 export default function StreamingCarousel({ onMovieClick }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -97,6 +97,21 @@ export default function StreamingCarousel({ onMovieClick }) {
     setCurrentIndex((prev) => (prev - 1 + streamingShowcase.length) % streamingShowcase.length);
   };
 
+  const goToSlide = (index) => {
+    setIsAutoPlaying(false);
+    setCurrentIndex(index);
+  };
+
+  // Get adjacent movie indices for hints
+  const getPrevIndex = () => (currentIndex - 1 + streamingShowcase.length) % streamingShowcase.length;
+  const getNextIndex = () => (currentIndex + 1) % streamingShowcase.length;
+
+  // Calculate stable "more" count based on platform
+  const getMoreCount = () => {
+    const baseCounts = { 'Netflix': 24, 'Amazon Prime': 19, 'HBO Max': 16, 'Apple TV+': 12, 'Disney+': 28, 'Hulu': 21 };
+    return baseCounts[streamingShowcase[currentIndex].platform] || 20;
+  };
+
   const handlePosterClick = (movie) => {
     if (onMovieClick) {
       onMovieClick(movie);
@@ -119,111 +134,131 @@ export default function StreamingCarousel({ onMovieClick }) {
       </div>
 
       <div style={styles.carouselContainer}>
-        {/* Navigation arrows */}
-        <button 
-          style={{...styles.navButton, ...styles.navButtonLeft}} 
-          onClick={prevSlide}
-          onMouseEnter={() => setIsAutoPlaying(false)}
-        >
-          <ChevronLeft size={20} color="#ffffff" />
-        </button>
-        
-        <button 
-          style={{...styles.navButton, ...styles.navButtonRight}} 
-          onClick={nextSlide}
-          onMouseEnter={() => setIsAutoPlaying(false)}
-        >
-          <ChevronRight size={20} color="#ffffff" />
-        </button>
-
-        {/* Main featured item */}
-        <div style={styles.featuredItem}>
+        {/* Circular side-swipe container */}
+        <div style={styles.circularContainer}>
+          
+          {/* Previous movie hint (left) */}
           <div 
-            style={styles.posterContainer}
-            onClick={() => handlePosterClick(streamingShowcase[currentIndex])}
+            style={styles.hintContainer}
+            onClick={prevSlide}
+            onMouseEnter={() => setIsAutoPlaying(false)}
           >
-            <img
-              src={streamingShowcase[currentIndex].poster}
-              alt={streamingShowcase[currentIndex].title}
-              style={styles.posterImage}
-              onError={(e) => {
-                e.target.src = '/images/placeholder-poster.jpg';
-              }}
-            />
-            
-            {/* Platform badge */}
-            <div 
-              style={{
-                ...styles.platformBadge,
-                backgroundColor: streamingShowcase[currentIndex].platformColor
-              }}
-              onClick={(e) => handlePlatformClick(streamingShowcase[currentIndex], e)}
-            >
-              <span style={styles.platformText}>
-                {streamingShowcase[currentIndex].platform}
-              </span>
-            </div>
-
-            {/* Movie info overlay */}
-            <div style={styles.movieInfo}>
-              <div style={styles.movieTitle}>
-                {streamingShowcase[currentIndex].title}
-              </div>
-              <div style={styles.movieDescription}>
-                {streamingShowcase[currentIndex].description}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Thumbnail strip */}
-        <div style={styles.thumbnailStrip}>
-          {streamingShowcase.map((movie, index) => (
-            <div
-              key={movie.tmdbId}
-              style={{
-                ...styles.thumbnail,
-                opacity: index === currentIndex ? 1 : 0.6,
-                transform: index === currentIndex ? 'scale(1.1)' : 'scale(1)'
-              }}
-              onClick={() => {
-                setCurrentIndex(index);
-                setIsAutoPlaying(false);
-              }}
-            >
+            <div style={styles.hintPoster}>
               <img
-                src={movie.poster}
-                alt={movie.title}
-                style={styles.thumbnailImage}
+                src={streamingShowcase[getPrevIndex()].poster}
+                alt="Previous"
+                style={styles.hintImage}
                 onError={(e) => {
                   e.target.src = '/images/placeholder-poster.jpg';
                 }}
               />
+            </div>
+          </div>
+
+          {/* Main featured movie (center) */}
+          <div style={styles.mainContainer}>
+            <div 
+              style={styles.posterContainer}
+              onClick={() => handlePosterClick(streamingShowcase[currentIndex])}
+            >
+              <img
+                src={streamingShowcase[currentIndex].poster}
+                alt={streamingShowcase[currentIndex].title}
+                style={styles.posterImage}
+                onError={(e) => {
+                  e.target.src = '/images/placeholder-poster.jpg';
+                }}
+              />
+              
+              {/* Platform badge */}
               <div 
                 style={{
-                  ...styles.thumbnailBadge,
-                  backgroundColor: movie.platformColor
+                  ...styles.platformBadge,
+                  backgroundColor: streamingShowcase[currentIndex].platformColor
+                }}
+                onClick={(e) => handlePlatformClick(streamingShowcase[currentIndex], e)}
+              >
+                <span style={styles.platformText}>
+                  {streamingShowcase[currentIndex].platform}
+                </span>
+              </div>
+
+              {/* Movie info overlay */}
+              <div style={styles.movieInfo}>
+                <div style={styles.movieTitle}>
+                  {streamingShowcase[currentIndex].title}
+                </div>
+                <div style={styles.movieDescription}>
+                  {streamingShowcase[currentIndex].description}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Next movie hint (right) */}
+          <div 
+            style={styles.hintContainer}
+            onClick={nextSlide}
+            onMouseEnter={() => setIsAutoPlaying(false)}
+          >
+            <div style={styles.hintPoster}>
+              <img
+                src={streamingShowcase[getNextIndex()].poster}
+                alt="Next"
+                style={styles.hintImage}
+                onError={(e) => {
+                  e.target.src = '/images/placeholder-poster.jpg';
                 }}
               />
             </div>
-          ))}
+          </div>
+
         </div>
 
-        {/* Progress indicators */}
-        <div style={styles.indicators}>
-          {streamingShowcase.map((_, index) => (
-            <div
-              key={index}
-              style={{
-                ...styles.indicator,
-                backgroundColor: index === currentIndex ? '#d4af37' : '#e5e7eb'
-              }}
-              onClick={() => {
-                setCurrentIndex(index);
-                setIsAutoPlaying(false);
-              }}
-            />
-          ))}
+        {/* "+ X more" indicator */}
+        <div style={styles.moreIndicator}>
+          <span 
+            style={styles.moreText}
+            onClick={() => handlePlatformClick(streamingShowcase[currentIndex], { stopPropagation: () => {} })}
+          >
+            + {getMoreCount()} more
+          </span>
+        </div>
+
+        {/* Navigation bar with triangles and dots */}
+        <div style={styles.navigationBar}>
+          {/* Previous triangle */}
+          <button 
+            style={styles.triangleButton}
+            onClick={prevSlide}
+            onMouseEnter={() => setIsAutoPlaying(false)}
+          >
+            <Triangle size={12} color="#6b7280" style={{ transform: 'rotate(270deg)' }} />
+          </button>
+
+          {/* Dot indicators */}
+          <div style={styles.dotContainer}>
+            {streamingShowcase.map((_, index) => (
+              <div
+                key={index}
+                style={{
+                  ...styles.dot,
+                  backgroundColor: index === currentIndex ? '#d4af37' : '#e5e7eb',
+                  transform: index === currentIndex ? 'scale(1.2)' : 'scale(1)'
+                }}
+                onClick={() => goToSlide(index)}
+              />
+            ))}
+          </div>
+
+          {/* Next triangle */}
+          <button 
+            style={styles.triangleButton}
+            onClick={nextSlide}
+            onMouseEnter={() => setIsAutoPlaying(false)}
+          >
+            <Triangle size={12} color="#6b7280" style={{ transform: 'rotate(90deg)' }} />
+          </button>
         </div>
       </div>
     </div>
@@ -263,36 +298,43 @@ const styles = {
     width: '100%'
   },
 
-  navButton: {
-    position: 'absolute',
-    top: '50%',
-    transform: 'translateY(-50%)',
-    zIndex: 10,
-    backgroundColor: 'rgba(0, 0, 0, 0.7)',
-    border: 'none',
-    borderRadius: '50%',
-    width: '36px',
-    height: '36px',
+  // New circular container styles
+  circularContainer: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    gap: '8px',
+    marginBottom: '16px',
+    height: '240px'
+  },
+
+  hintContainer: {
     cursor: 'pointer',
     transition: 'all 0.2s ease',
-    boxShadow: '0 2px 8px rgba(0,0,0,0.3)'
+    opacity: 0.4,
+    ':hover': {
+      opacity: 0.7,
+      transform: 'scale(1.05)'
+    }
   },
 
-  navButtonLeft: {
-    left: '8px'
+  hintPoster: {
+    borderRadius: '8px',
+    overflow: 'hidden',
+    boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+    width: '50px',
+    height: '75px'
   },
 
-  navButtonRight: {
-    right: '8px'
+  hintImage: {
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+    display: 'block'
   },
 
-  featuredItem: {
-    display: 'flex',
-    justifyContent: 'center',
-    marginBottom: '12px'
+  mainContainer: {
+    flex: '0 0 auto'
   },
 
   posterContainer: {
@@ -355,52 +397,63 @@ const styles = {
     textShadow: '0 1px 2px rgba(0,0,0,0.8)'
   },
 
-  thumbnailStrip: {
-    display: 'flex',
-    justifyContent: 'center',
-    gap: '6px',
-    marginBottom: '12px',
-    padding: '0 10px'
+  // "+ X more" indicator styles
+  moreIndicator: {
+    textAlign: 'center',
+    marginBottom: '12px'
   },
 
-  thumbnail: {
-    position: 'relative',
-    width: '32px',
-    height: '48px',
-    borderRadius: '4px',
-    overflow: 'hidden',
+  moreText: {
+    fontSize: '12px',
+    color: '#6b7280',
+    fontWeight: '500',
+    opacity: 0.8,
     cursor: 'pointer',
-    transition: 'all 0.3s ease',
-    boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+    transition: 'all 0.2s ease',
+    ':hover': {
+      color: '#d4af37',
+      opacity: 1
+    }
   },
 
-  thumbnailImage: {
-    width: '100%',
-    height: '100%',
-    objectFit: 'cover'
-  },
-
-  thumbnailBadge: {
-    position: 'absolute',
-    bottom: '2px',
-    right: '2px',
-    width: '6px',
-    height: '6px',
-    borderRadius: '50%',
-    border: '1px solid #ffffff'
-  },
-
-  indicators: {
+  // New navigation bar styles
+  navigationBar: {
     display: 'flex',
+    alignItems: 'center',
     justifyContent: 'center',
-    gap: '6px'
+    gap: '16px',
+    padding: '8px 0'
   },
 
-  indicator: {
-    width: '6px',
-    height: '6px',
+  triangleButton: {
+    backgroundColor: 'transparent',
+    border: 'none',
+    cursor: 'pointer',
+    padding: '8px',
+    borderRadius: '50%',
+    transition: 'all 0.2s ease',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    opacity: 0.6,
+    ':hover': {
+      backgroundColor: 'rgba(0,0,0,0.05)',
+      opacity: 1
+    }
+  },
+
+  dotContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '8px',
+    padding: '0 8px'
+  },
+
+  dot: {
+    width: '8px',
+    height: '8px',
     borderRadius: '50%',
     cursor: 'pointer',
-    transition: 'background-color 0.2s ease'
+    transition: 'all 0.3s ease'
   }
 };
