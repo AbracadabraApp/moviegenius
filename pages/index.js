@@ -432,6 +432,12 @@ export default function HomePage() {
         {/* Theme Selection Section */}
         {currentStep === 'themes' && (
           <div style={styles.section}>
+            {/* Brand Statement Above Hero */}
+            <div style={styles.brandStatementGold}>
+              <div style={styles.brandLine1Gold}>GET SCHOOLED</div>
+              <div style={styles.brandLine2Gold}>LEARN ABOUT GREAT CINEMA</div>
+            </div>
+
             <div style={styles.heroSection}>
               <img
                 src="/images/hero-rotation/hero-8.jpg"
@@ -441,7 +447,6 @@ export default function HomePage() {
             </div>
 
             <div style={styles.contentSection}>
-              <p style={styles.sectionQuestion}>Which film topics interest you most?</p>
               <div style={styles.themeGrid}>
                 {allEducationThemes.map(theme => (
                   <button
@@ -1149,7 +1154,7 @@ const styles = {
 
   brandStatement: {
     background: 'linear-gradient(135deg, #E50914 0%, #B20610 100%)',
-    padding: '8px 20px 20px 20px',
+    padding: '8px 20px 16px 20px',
     textAlign: 'center',
     borderBottom: '1px solid #f0f0f0'
   },
@@ -1171,5 +1176,31 @@ const styles = {
     color: '#000000',
     letterSpacing: '0.5px',
     lineHeight: '1.2'
+  },
+
+  brandStatementGold: {
+    background: '#000000',
+    padding: '8px 20px 16px 20px',
+    textAlign: 'center'
+  },
+
+  brandLine1Gold: {
+    fontSize: '23px',
+    fontWeight: '700',
+    color: '#d4af37',
+    letterSpacing: '1px',
+    lineHeight: '1.2',
+    marginBottom: '2px',
+    textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 0 1px rgba(0,0,0,0.5)',
+    WebkitTextStroke: '0.5px rgba(0,0,0,0.3)'
+  },
+
+  brandLine2Gold: {
+    fontSize: '16px',
+    fontWeight: '700',
+    color: '#d4af37',
+    letterSpacing: '0.5px',
+    lineHeight: '1.2',
+    marginBottom: '2px'
   },
 };
