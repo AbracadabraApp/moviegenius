@@ -111,6 +111,15 @@ function extractAnalysisText(claudeResponse) {
         ? JSON.parse(claudeResponse.raw_content) 
         : claudeResponse.raw_content;
       
+      // Handle new JSON format with content array
+      if (rawContent.content && Array.isArray(rawContent.content)) {
+        return rawContent.content
+          .map(section => section.text || '')
+          .filter(text => text.trim().length > 0)
+          .join('\n\n');
+      }
+      
+      // Handle legacy formats
       return rawContent.content || rawContent.analysis || rawContent.text || '';
     } catch (error) {
       return typeof claudeResponse.raw_content === 'string' 
