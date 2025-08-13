@@ -1,4 +1,17 @@
 // pages/api/popular-movies.js - TMDB Popular & Top Rated Movies API
+import { Client } from 'pg';
+
+// Railway PostgreSQL connection helper
+function getRailwayClient() {
+  const dbUrl = process.env.RAILWAY_DATABASE_URL || process.env.DATABASE_URL;
+  
+  if (!dbUrl) {
+    throw new Error('DATABASE_URL or RAILWAY_DATABASE_URL must be set');
+  }
+  
+  return new Client({ connectionString: dbUrl });
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
@@ -26,9 +39,9 @@ export default async function handler(req, res) {
 
     switch (category) {
       case 'popular-all-time':
-        // Use TMDB popular endpoint - these are the most popular movies
-        tmdbUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${TMDB_API_KEY}&language=en-US&page=1`;
-        categoryTitle = 'Most Popular All Time';
+        // Use TMDB top rated endpoint - these are classic acclaimed movies
+        tmdbUrl = `https://api.themoviedb.org/3/movie/top_rated?api_key=${TMDB_API_KEY}&language=en-US&page=1`;
+        categoryTitle = 'Greatest Films of All Time';
         break;
 
       case 'top-rated':
@@ -62,6 +75,9 @@ export default async function handler(req, res) {
         title: movie.title,
         year: movie.release_date ? parseInt(movie.release_date.substring(0, 4)) : null,
         tmdb_id: movie.id,
+        slug: null,
+        overview: movie.overview || '',
+        contributors: null, // Will be fetched from our database
         poster_url: movie.poster_path
           ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
           : '/images/placeholder-poster.jpg',
@@ -69,16 +85,85 @@ export default async function handler(req, res) {
         vote_average: movie.vote_average || 0,
         vote_count: movie.vote_count || 0,
         release_date: movie.release_date,
+        streaming_data: null, // Will be fetched from our database
       }));
 
-    console.log(`✅ Popular movies success: ${category} -> ${movies.length} movies`);
+    // Fetch movie data with contributors_json from single table
+    const client = getRailwayClient();
+    let enrichedMovies = movies;
+    
+    try {
+      await client.connect();
+      
+      const tmdbIds = movies.map(m => m.tmdb_id);
+      
+      if (tmdbIds.length > 0) {
+        // Single fast query with contributors_json
+        const movieDataResult = await client.query(`
+          SELECT tmdb_id, streaming_data, slug, contributors_json
+          FROM movies 
+          WHERE tmdb_id = ANY($1::int[])
+        `, [tmdbIds]);
+
+        // Create lookup map
+        const movieDataMap = {};
+        movieDataResult.rows.forEach(row => {
+          movieDataMap[row.tmdb_id] = {
+            streaming_data: row.streaming_data,
+            slug: row.slug,
+            contributors_json: row.contributors_json
+          };
+        });
+
+        // Enrich movies with database data
+        enrichedMovies = movies.map(movie => {
+          const movieData = movieDataMap[movie.tmdb_id];
+          
+          // Use your template approach for contributors
+          const getDisplayContributors = (contributors_json) => {
+            if (!contributors_json) return null;
+
+            const director = contributors_json.director?.[0];
+            const topActors = contributors_json.star?.slice(0, 3) || [];
+
+            const parts = [];
+            if (topActors.length > 0) {
+              parts.push(`Starring:`);
+              parts.push(topActors.join(', '));
+            }
+            if (director) {
+              parts.push(`Director:`);
+              parts.push(director);
+            }
+            
+            return parts.length > 0 ? parts.join('\n') : null;
+          };
+
+          const contributorsText = getDisplayContributors(movieData?.contributors_json);
+          
+          return {
+            ...movie,
+            contributors: contributorsText,
+            streaming_data: movieData?.streaming_data || null,
+            slug: movieData?.slug || null
+          };
+        });
+      }
+    } catch (error) {
+      console.error('Error fetching movie data:', error);
+      // Continue with TMDB-only data if database fails
+    } finally {
+      await client.end();
+    }
+
+    console.log(`✅ Popular movies success: ${category} -> ${enrichedMovies.length} movies`);
 
     res.status(200).json({
-      movies,
+      movies: enrichedMovies,
       category,
       categoryTitle,
-      hasResults: movies.length > 0,
-      totalResults: data.total_results || movies.length,
+      hasResults: enrichedMovies.length > 0,
+      totalResults: data.total_results || enrichedMovies.length,
     });
   } catch (error) {
     console.error('Popular movies error:', error);

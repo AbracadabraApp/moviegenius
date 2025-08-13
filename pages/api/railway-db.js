@@ -11,7 +11,7 @@ const isBrowser = typeof window !== 'undefined';
 // Database connection management
 let globalPool = null;
 
-// Railway PostgreSQL connection configuration
+// Railway PostgreSQL connection configuration - Optimized to prevent deadlocks
 function getRailwayConfig() {
   const dbUrl = process.env.RAILWAY_DATABASE_URL || process.env.DATABASE_URL;
   
@@ -24,9 +24,19 @@ function getRailwayConfig() {
   return {
     connectionString: dbUrl,
     ssl: false, // Railway PostgreSQL doesn't require SSL in this configuration
-    max: 20, // Maximum number of clients in pool
-    idleTimeoutMillis: 30000,
-    connectionTimeoutMillis: 2000,
+    
+    // 🚨 DEADLOCK PREVENTION: Optimized pool settings
+    max: 10, // Reduced from 20 to prevent connection exhaustion
+    min: 2,  // Keep minimum connections alive
+    acquireTimeoutMillis: 1000, // Shorter timeout to fail fast
+    idleTimeoutMillis: 10000,   // Shorter idle timeout
+    connectionTimeoutMillis: 3000, // Slightly longer connection timeout
+    
+    // 🛡️ STABILITY SETTINGS
+    allowExitOnIdle: false, // Keep pool alive
+    statement_timeout: 5000, // 5 second query timeout
+    query_timeout: 5000,     // 5 second query timeout
+    application_name: 'moviegenius-api', // For monitoring
   };
 }
 
@@ -71,8 +81,9 @@ async function closePool() {
 export const MovieService = {
   // Insert or update movie with focused fields
   async upsertMovie(movieData, client = null) {
-    const shouldReleaseClient = !client;
-    const dbClient = client || getPool();
+    const pool = getPool();
+    const dbClient = client || await pool.connect();
+    const shouldRelease = !client; // Only release if we created the connection
     
     try {
       const query = `
@@ -109,9 +120,12 @@ export const MovieService = {
       const result = await dbClient.query(query, values);
       return result.rows[0];
       
+    } catch (error) {
+      console.error('❌ MovieService.upsertMovie error:', error.message);
+      throw error;
     } finally {
-      if (shouldReleaseClient && client) {
-        client.release();
+      if (shouldRelease) {
+        dbClient.release();
       }
     }
   },

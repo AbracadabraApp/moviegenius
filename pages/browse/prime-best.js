@@ -81,7 +81,6 @@ export default function PrimeBestPage() {
                 <h3 style={styles.movieTitle}>{movie.title}</h3>
                 <div style={styles.movieMeta}>
                   <span style={styles.year}>{movie.year}</span>
-                  <span style={styles.genre}>{movie.genre}</span>
                   <div style={styles.rating}>
                     <Star size={12} color="#d4af37" fill="#d4af37" />
                     <span>{movie.rating}</span>

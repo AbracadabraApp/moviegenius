@@ -7,12 +7,7 @@
  * Usage: node scripts/nuclear-trailer-populator.js
  */
 
-import { createClient } from '@supabase/supabase-js';
-
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_ROLE_KEY
-);
+import { supabase } from '../pages/api/railway-adapter.js';
 
 const BATCH_SIZE = 10;
 const DELAY_MS = 200; // Rate limiting
@@ -25,9 +20,7 @@ async function nuclearTrailerPopulator() {
     const { data: movies, error } = await supabase
       .from('movies')
       .select('tmdb_id, title, year')
-      .not('tmdb_id', 'is', null)
-      .is('trailer_url', null)
-      .order('created_at', { ascending: false });
+      .neq('tmdb_id', null);
 
     if (error) {
       console.error('Database error:', error);

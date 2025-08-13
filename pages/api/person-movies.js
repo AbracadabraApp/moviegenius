@@ -67,20 +67,38 @@ export default async function handler(req, res) {
       
       person = personResult.rows[0];
       
-      // Get movies and roles using person_id
+      // Get movies and roles using person_id - simple approach
+      // Step 1: Get all movie_tmdb_ids for this person
+      const movieIds = await client.query(`
+        SELECT DISTINCT movie_tmdb_id 
+        FROM movie_contributors 
+        WHERE person_id = $1
+      `, [personId]);
+      
+      if (movieIds.rows.length === 0) {
+        await client.end();
+        return res.status(200).json({
+          person: { id: personId, name: person.name, movieCount: 0, roles: [] },
+          movies: [],
+          source: 'id_based_system'
+        });
+      }
+      
+      // Step 2: Get movie details for each tmdb_id
+      const tmdbIds = movieIds.rows.map(row => row.movie_tmdb_id);
       const moviesResult = await client.query(`
-        SELECT 
-          m.tmdb_id,
-          m.title,
-          m.year,
-          m.slug as overview,
-          m.poster_url,
-          ARRAY_AGG(DISTINCT mc.role ORDER BY mc.role) as roles
-        FROM movie_contributors mc
-        JOIN movies m ON m.tmdb_id = mc.movie_tmdb_id
-        WHERE mc.person_id = $1
-        GROUP BY m.tmdb_id, m.title, m.year, m.slug, m.poster_url
-        ORDER BY m.year DESC, m.title
+        SELECT tmdb_id, title, year, slug, poster_url
+        FROM movies 
+        WHERE tmdb_id = ANY($1)
+        ORDER BY year DESC, title
+      `, [tmdbIds]);
+      
+      // Step 3: Get roles for each movie
+      const rolesResult = await client.query(`
+        SELECT movie_tmdb_id, ARRAY_AGG(DISTINCT role ORDER BY role) as roles
+        FROM movie_contributors 
+        WHERE person_id = $1
+        GROUP BY movie_tmdb_id
       `, [personId]);
 
       // Get person statistics
@@ -92,13 +110,19 @@ export default async function handler(req, res) {
         WHERE person_id = $1
       `, [personId]);
 
+      // Step 4: Combine movie details with roles
+      const rolesByMovie = {};
+      rolesResult.rows.forEach(row => {
+        rolesByMovie[row.movie_tmdb_id] = row.roles;
+      });
+      
       movies = moviesResult.rows.map(movie => ({
         tmdb_id: movie.tmdb_id,
         title: movie.title,
         year: movie.year,
-        overview: movie.overview,
+        overview: movie.slug,
         poster_url: movie.poster_url,
-        roles: movie.roles
+        roles: rolesByMovie[movie.tmdb_id] || []
       }));
 
       const stats = statsResult.rows[0] ? {

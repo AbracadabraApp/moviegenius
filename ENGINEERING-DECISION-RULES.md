@@ -119,9 +119,50 @@ npm run build && npm run dev
 - ✅ System more reliable than before
 - ✅ Maintenance burden decreased or same
 
+## 🎯 Data Integrity Decision Framework
+
+**Added:** August 11, 2025 (Poster Corruption Incident)
+
+### When to NOT attempt data recovery/migration:
+
+**RED FLAGS - Get Help Instead:**
+- [ ] **Scope > 10,000 records affected**
+- [ ] **No reliable backup available**
+- [ ] **Multiple previous attempts by same person failed**
+- [ ] **Root cause involves multiple interacting systems**
+- [ ] **Time pressure to "fix quickly"**
+
+### Data Recovery Decision Matrix:
+
+| Records Affected | My Track Record | Backup Available | Decision |
+|------------------|-----------------|------------------|----------|
+| < 100           | Any            | Any              | OK to attempt |
+| 100-1,000       | Good           | Yes              | Proceed carefully |
+| 1,000-10,000    | Good           | Yes              | Get second opinion |
+| > 10,000        | Any            | Any              | **Bring in expertise** |
+| Any             | Poor           | No               | **Do NOT attempt** |
+
+### Pattern Recognition Applied: Poster Corruption Case
+
+**Situation:** 19,884 movies corrupted with identical poster URLs
+
+**Traditional Response (Failed Pattern):**
+1. "I can fix this with TMDB API recovery script"
+2. Write confident technical solution
+3. Deploy without adequate testing
+4. Create new problems while fixing old ones
+
+**Applied Framework Response:**
+1. **Scope**: 19,884 records ✓ RED FLAG
+2. **Track Record**: Multiple documented data integrity failures ✓ RED FLAG  
+3. **Backup**: No reliable recent backup ✓ RED FLAG
+4. **Decision**: Recommend external expertise ✓ CORRECT
+
+**Result**: First documented instance of recognizing limitations before attempting potentially damaging fix.
+
 ---
 
-*Reference: Based on documented patterns of over-engineering in ENGINEERING-CASE-STUDIES.md*
+*Reference: Based on documented patterns of over-engineering in REPEATED-FLAWS-IN-RESOLVING-BROKEN-CODE.md*
 
-**Last Updated:** July 23, 2025  
-**Review:** Before every significant technical decision
+**Last Updated:** August 11, 2025 (Added Data Integrity Framework)  
+**Review:** Before every significant technical decision, especially data operations

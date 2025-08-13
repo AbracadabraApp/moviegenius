@@ -1,9 +1,7 @@
 // pages/api/cache-movie-data.js
-// Cache enhanced movie data to Supabase instead of JSON files
-import { createClient, supabase } from './railway-adapter.js';
+// Cache enhanced movie data to Railway PostgreSQL directly (zero Supabase dependencies)
+import { getPool, MovieService } from './railway-db.js';
 import { isValidPosterUrl } from '../../lib/poster-validation-utils.js';
-
-import { getPool, MovieService, EpisodeService, CacheService, PersonService } from './railway-db.js';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -17,21 +15,10 @@ export default async function handler(req, res) {
   }
 
   try {
-    // Initialize Supabase client
-    const pool = getPool();
+    // Find existing movie using Railway PostgreSQL directly
+    const existingMovie = await MovieService.getMovie(title, year);
 
-    // Find existing movie in Supabase
-    const { data: existingMovie, error: findError } = await supabase
-      .from('movies')
-      .select('*')
-      .eq('title', title)
-      .eq('year', year)
-      .single();
-
-    if (findError && findError.code !== 'PGRST116') {
-      // PGRST116 is "not found" error, which is ok for new movies
-      throw findError;
-    }
+    // No error handling needed - MovieService.getMovie returns null if not found
 
     let result;
     let updated = false;
@@ -91,42 +78,75 @@ export default async function handler(req, res) {
       }
 
       if (updated) {
-        updates.updated_at = new Date().toISOString();
-
-        const { data, error } = await supabase
-          .from('movies')
-          .update(updates)
-          .eq('id', existingMovie.id)
-          .select()
-          .single();
-
-        if (error) throw error;
-
-        result = data;
-        console.log(`Updated Supabase record for: ${title} (${year})`);
+        // Use Railway PostgreSQL directly for updates
+        const pool = getPool();
+        const client = await pool.connect();
+        
+        try {
+          // Build update query dynamically
+          const updateFields = Object.keys(updates);
+          const setClause = updateFields.map((key, i) => `${key} = $${i + 1}`).join(', ');
+          const values = [...Object.values(updates), existingMovie.id];
+          
+          const query = `
+            UPDATE movies 
+            SET ${setClause}, updated_at = NOW()
+            WHERE id = $${values.length}
+            RETURNING *
+          `;
+          
+          const updateResult = await client.query(query, values);
+          result = updateResult.rows[0];
+          console.log(`✅ Updated Railway record for: ${title} (${year})`);
+          
+        } finally {
+          client.release();
+        }
       } else {
         result = existingMovie;
         console.log(`No updates needed for: ${title} (${year})`);
       }
     } else {
       // Create new movie entry (rare since we pre-populate via migration)
-      const newMovie = {
-        title,
-        year,
-        slug: slug || null,
-        poster_url: poster || null,
-        streaming_data: streaming || null,
-        // Note: tmdb_id and other fields would need separate lookup
-        created_at: new Date().toISOString(),
-      };
-
-      const { data, error } = await supabase.from('movies').insert(newMovie).select().single();
-
-      if (error) throw error;
-
-      result = data;
-      updated = true;
-      console.log(`Created new Supabase record for: ${title} (${year})`);
+      let validatedPoster = null;
+      
+      // Validate poster URL for new movies too
+      if (poster && poster !== '/images/placeholder-poster.jpg') {
+        if (isValidPosterUrl(poster, `${title} (${year})`)) {
+          validatedPoster = poster;
+        } else {
+          console.warn(`🚫 Cache API: Blocked invalid poster for new movie "${title}" (${year}): ${poster}`);
+          // Don't include the poster_url, leave as null
+        }
+      }
+      
+      // Use Railway PostgreSQL directly for inserts
+      const pool = getPool();
+      const client = await pool.connect();
+      
+      try {
+        const query = `
+          INSERT INTO movies (title, year, slug, poster_url, streaming_data, created_at, updated_at)
+          VALUES ($1, $2, $3, $4, $5, NOW(), NOW())
+          RETURNING *
+        `;
+        
+        const values = [
+          title,
+          year,
+          slug || null,
+          validatedPoster,
+          streaming ? JSON.stringify(streaming) : null
+        ];
+        
+        const insertResult = await client.query(query, values);
+        result = insertResult.rows[0];
+        updated = true;
+        console.log(`✅ Created new Railway record for: ${title} (${year})`);
+        
+      } finally {
+        client.release();
+      }
     }
 
     // Return response in format MediaCard expects
@@ -145,14 +165,14 @@ export default async function handler(req, res) {
         poster: result.poster_url, // Map database field to MediaCard format
         streaming: result.streaming_data, // Map database field to MediaCard format
         id: result.id,
-        dataSource: 'supabase',
+        dataSource: 'railway',
       },
     });
   } catch (error) {
-    console.error('Supabase cache error:', error);
+    console.error('❌ Railway cache error:', error);
 
     res.status(500).json({
-      error: 'Failed to cache movie data to Supabase',
+      error: 'Failed to cache movie data to Railway PostgreSQL',
       details: error.message,
     });
   }

@@ -231,9 +231,6 @@ const styles = {
     backgroundColor: '#ffffff',
     borderBottom: `1px solid ${colors.border}`,
     padding: spacing[4],
-    position: 'sticky',
-    top: 0,
-    zIndex: 10,
   },
   headerTop: {
     display: 'flex',

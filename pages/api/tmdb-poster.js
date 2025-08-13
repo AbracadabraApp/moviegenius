@@ -1,9 +1,24 @@
 // pages/api/tmdb-poster.js
 /**
- * TMDB Poster API Route
- *
- * Fetches movie poster from TMDB API using title and year.
+ * TMDB Poster API Route - Direct Implementation
+ * 
+ * Smart caching: Database-first lookup, TMDB fallback, safe validation
+ * NO PROXY - Direct implementation to prevent state bleeding
  */
+
+import { Client } from 'pg';
+import { isValidPosterUrl } from '../../lib/poster-validation-utils.js';
+
+// Railway PostgreSQL connection
+function getRailwayClient() {
+  const dbUrl = process.env.RAILWAY_DATABASE_URL || process.env.DATABASE_URL;
+  
+  if (!dbUrl) {
+    throw new Error('DATABASE_URL required for poster lookup');
+  }
+  
+  return new Client({ connectionString: dbUrl });
+}
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -16,48 +31,93 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Movie title and year are required' });
   }
 
-  if (!process.env.TMDB_API_KEY) {
-    return res.status(500).json({ error: 'TMDB API key not configured' });
-  }
+  const client = getRailwayClient();
 
   try {
-    const tmdbResponse = await fetch(
-      `https://api.themoviedb.org/3/search/movie?api_key=${process.env.TMDB_API_KEY}&query=${encodeURIComponent(title)}&year=${year}`
+    await client.connect();
+    console.log(`🎬 Poster request: "${title}" (${year})`);
+
+    // Step 1: Database-first lookup (smart caching principle)
+    const dbResult = await client.query(
+      'SELECT tmdb_id, title, year, poster_url FROM movies WHERE LOWER(title) = LOWER($1) AND year = $2',
+      [title, year]
     );
 
-    if (!tmdbResponse.ok) {
-      throw new Error('TMDB API request failed');
+    if (dbResult.rows.length > 0) {
+      const movie = dbResult.rows[0];
+      
+      if (movie.poster_url && movie.poster_url !== '/images/placeholder-poster.jpg') {
+        // Validate existing poster before returning
+        if (isValidPosterUrl(movie.poster_url, `${movie.title} (${movie.year})`)) {
+          console.log(`✅ Database hit: "${movie.title}" (${movie.year})`);
+          res.setHeader('Cache-Control', 'public, s-maxage=2592000, stale-while-revalidate=5184000');
+          return res.status(200).json({
+            poster: movie.poster_url,
+            tmdb_id: movie.tmdb_id,
+          });
+        } else {
+          console.warn(`⚠️ Existing poster failed validation for "${movie.title}" (${movie.year}), fetching new one`);
+        }
+      }
     }
 
-    const tmdbData = await tmdbResponse.json();
-    const movie = tmdbData.results?.[0];
-
-    if (movie) {
-      const posterUrl = movie.poster_path
-        ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
-        : '/images/placeholder-poster.jpg';
-
-      // Cache TMDB data for 30 days - movie metadata is permanent (was 7 days)
-      res.setHeader('Cache-Control', 'public, s-maxage=2592000, stale-while-revalidate=5184000');
-      res.status(200).json({
-        poster: posterUrl,
-        tmdb_id: movie.id,
-        // Note: overview intentionally omitted to prevent TMDB summary contamination
-      });
-    } else {
-      // Cache "not found" results for 24 hours (was 1 hour)
-      res.setHeader('Cache-Control', 'public, s-maxage=86400, stale-while-revalidate=172800');
-      res.status(200).json({
+    // Step 2: TMDB Fallback (if not in database or invalid poster)
+    const TMDB_API_KEY = process.env.TMDB_API_KEY || process.env.NEXT_PUBLIC_TMDB_API_KEY;
+    if (!TMDB_API_KEY) {
+      console.error('❌ TMDB API key not configured');
+      res.setHeader('Cache-Control', 'public, s-maxage=86400');
+      return res.status(200).json({
         poster: '/images/placeholder-poster.jpg',
-        // Note: overview intentionally omitted to prevent TMDB summary contamination
+        tmdb_id: null,
       });
     }
-  } catch (error) {
-    console.error('Error fetching TMDB poster:', error);
-    res.status(500).json({
-      error: 'Failed to fetch poster',
-      poster: '/images/placeholder-poster.jpg', // Fallback
-      // Note: overview intentionally omitted to prevent TMDB summary contamination
+
+    console.log(`🔄 Fetching from TMDB: "${title}" (${year})`);
+    
+    // Search TMDB by title and year
+    const searchUrl = `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(title)}&year=${year}`;
+    const searchResponse = await fetch(searchUrl);
+    
+    if (!searchResponse.ok) {
+      throw new Error(`TMDB search failed: ${searchResponse.status}`);
+    }
+    
+    const searchData = await searchResponse.json();
+    const tmdbMovie = searchData.results?.[0];
+    
+    if (tmdbMovie?.poster_path) {
+      const posterUrl = `https://image.tmdb.org/t/p/w500${tmdbMovie.poster_path}`;
+      
+      // Step 3: Validate TMDB poster before using
+      if (isValidPosterUrl(posterUrl, `${title} (${year})`)) {
+        console.log(`📸 TMDB poster validated: "${title}" (${year})`);
+        
+        // Cache for future (smart caching pattern - but don't update here, leave to cache-movie-data API)
+        res.setHeader('Cache-Control', 'public, s-maxage=2592000, stale-while-revalidate=5184000');
+        return res.status(200).json({
+          poster: posterUrl,
+          tmdb_id: tmdbMovie.id,
+        });
+      } else {
+        console.warn(`🚫 TMDB poster failed validation for "${title}" (${year}): ${posterUrl}`);
+      }
+    }
+
+    // Step 4: No valid poster found
+    console.log(`⚠️ No valid poster found for "${title}" (${year})`);
+    res.setHeader('Cache-Control', 'public, s-maxage=86400');
+    return res.status(200).json({
+      poster: '/images/placeholder-poster.jpg',
+      tmdb_id: tmdbMovie?.id || null,
     });
+
+  } catch (error) {
+    console.error('TMDB poster API error:', error);
+    return res.status(500).json({
+      error: 'Failed to fetch poster',
+      poster: '/images/placeholder-poster.jpg',
+    });
+  } finally {
+    await client.end();
   }
 }

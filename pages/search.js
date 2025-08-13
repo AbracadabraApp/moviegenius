@@ -9,7 +9,8 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import PhoneFrame from '../components/PhoneFrame';
 import SimpleSearch from '../components/SimpleSearch';
-import MovieHeaderCompact from '../components/MovieHeaderCompact';
+import SearchResultCard from '../components/SearchResultCard';
+import TrailerModal from '../components/TrailerModal';
 import ErrorBoundary from '../components/ErrorBoundary';
 
 export default function SearchPage() {
@@ -19,6 +20,7 @@ export default function SearchPage() {
   const [searchResults, setSearchResults] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentQuery, setCurrentQuery] = useState('');
+  const [trailerModal, setTrailerModal] = useState({ isOpen: false, videoId: null, title: null });
 
   // Category to search query mapping
   const categoryQueries = {
@@ -202,6 +204,15 @@ export default function SearchPage() {
     }
   };
 
+  const handleTrailerPlay = (videoId, title) => {
+    console.log('Playing trailer:', videoId, 'for', title);
+    setTrailerModal({ isOpen: true, videoId, title });
+  };
+
+  const closeTrailerModal = () => {
+    setTrailerModal({ isOpen: false, videoId: null, title: null });
+  };
+
   const getCategoryTitle = () => {
     if (category && categoryQueries[category]) {
       return categoryQueries[category].charAt(0).toUpperCase() + categoryQueries[category].slice(1);
@@ -245,20 +256,24 @@ export default function SearchPage() {
             <ErrorBoundary level="section">
               <div style={styles.movieGrid}>
                 {console.log(
-                  '🔍 Rendering search results with MovieHeaderCompact:',
+                  '🔍 Rendering search results with SearchResultCard:',
                   searchResults.length,
                   'movies'
                 )}
                 {searchResults.map((movie, index) => (
-                  <MovieHeaderCompact
+                  <SearchResultCard
                     key={`${movie.tmdb_id || movie.title}-${index}`}
                     title={movie.title}
                     year={movie.year}
+                    initialSlug={movie.slug}
+                    overview={movie.overview}
+                    contributors={movie.contributors}
+                    initialPoster={movie.poster_url}
+                    initialStreaming={movie.streaming_data}
                     tmdbId={movie.tmdb_id}
-                    posterUrl={movie.poster_url}
-                    voteAverage={movie.vote_average}
-                    streamingInfo={movie.streaming_data}
-                    onMovieClick={() => handleMovieClick(movie)}
+                    showTrailer={true}
+                    onMovieClick={handleMovieClick}
+                    onTrailerPlay={handleTrailerPlay}
                   />
                 ))}
               </div>
@@ -281,6 +296,14 @@ export default function SearchPage() {
             </div>
           )}
         </div>
+
+        {/* Trailer Modal */}
+        <TrailerModal
+          isOpen={trailerModal.isOpen}
+          onClose={closeTrailerModal}
+          videoId={trailerModal.videoId}
+          movieTitle={trailerModal.title}
+        />
       </div>
     </PhoneFrame>
   );
@@ -328,6 +351,11 @@ const styles = {
   movieGrid: {
     display: 'flex',
     flexDirection: 'column',
+    gap: '1px',
+    backgroundColor: '#f3f4f6',
+  },
+  movieGridItem: {
+    cursor: 'pointer',
   },
 
   loadingContainer: {

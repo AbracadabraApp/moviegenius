@@ -27,7 +27,7 @@ export default function PersonDetailPage() {
       setError(null);
       
       try {
-        const response = await fetch('/api/person-movies', {
+        const response = await fetch('/api/person-movies-simple', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ personId: personId })

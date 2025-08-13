@@ -1,6 +1,7 @@
 // Enhanced migration script for full Supabase → Railway PostgreSQL migration
 import { createClient } from '@supabase/supabase-js';
 import { Client } from 'pg';
+import { generateSafePosterUpdateSQL } from './lib/poster-validation-utils.js';
 import dotenv from 'dotenv';
 
 dotenv.config({ path: '.env.local' });
@@ -86,7 +87,7 @@ async function migrateMovieBatch(movies, progress, batchNum) {
             official_title = EXCLUDED.official_title,
             release_date = EXCLUDED.release_date,
             slug = EXCLUDED.slug,
-            poster_url = EXCLUDED.poster_url,
+            poster_url = ${generateSafePosterUpdateSQL()},
             streaming_data = EXCLUDED.streaming_data,
             updated_at = NOW()
           RETURNING id;

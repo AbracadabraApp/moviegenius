@@ -118,8 +118,12 @@ async function warmAllPosters(res, cache, batchSize, offset) {
     try {
       // This will trigger Cloudflare worker to cache the poster
       const posterResponse = await fetch(
-        `${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/tmdb-poster?tmdb_id=${movie.tmdb_id}`,
-        { method: 'HEAD' } // Just trigger cache, don't download
+        `${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/poster-zero-waste`,
+        { 
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ title: movie.title, year: movie.year })
+        }
       );
 
       if (posterResponse.ok) {

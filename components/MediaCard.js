@@ -144,7 +144,7 @@ export default function MediaCard({
 
         // Fetch TMDB poster if using placeholder
         if (poster === '/images/placeholder-poster.jpg') {
-          const response = await fetch('/api/tmdb-poster', {
+          const response = await fetch('/api/poster-zero-waste', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ title, year }),
@@ -162,22 +162,37 @@ export default function MediaCard({
           }
         }
 
-        // Cache the enhanced poster data if we got new poster
+        // 🛡️ CORRUPTION PROTECTION: Cache the enhanced poster data if we got new poster
         if (newPoster !== poster && newPoster !== '/images/placeholder-poster.jpg') {
-          try {
-            await fetch('/api/cache-movie-data', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({
-                title,
-                year,
-                poster: newPoster,
-                dataSource: 'afi100', // For now, assume AFI100. Could be made dynamic.
-              }),
-            });
-          } catch (cacheError) {
-            console.warn('Failed to cache enhanced data:', cacheError);
-            // Don't fail the whole operation if caching fails
+          // 🚨 SAFETY CHECK: Block known corrupted poster patterns
+          const knownCorruptedPosters = [
+            'h7Lcio0c9ohxPhSZg42eTlKIVVY', // Previous corruption
+            '7kNcpmP1Pe9fWLKEbEOX5GEWueC', // Persona corruption  
+            'rI3MKBDsWzQHi9PWDAMKkgmYcff', // Love, Simon corruption
+            'snIsqVPmlu4LPjvToHpDotxa7Eh', // Love, Simon corruption
+          ];
+          
+          const posterIdMatch = newPoster.match(/\/([^\/]+)\.jpg$/);
+          const posterId = posterIdMatch ? posterIdMatch[1] : '';
+          
+          if (knownCorruptedPosters.includes(posterId)) {
+            console.warn(`🚫 MediaCard: BLOCKED caching of known corrupted poster ${posterId} for "${title}" (${year})`);
+          } else {
+            try {
+              await fetch('/api/cache-movie-data', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  title,
+                  year,
+                  poster: newPoster,
+                  dataSource: 'afi100', // For now, assume AFI100. Could be made dynamic.
+                }),
+              });
+            } catch (cacheError) {
+              console.warn('Failed to cache enhanced data:', cacheError);
+              // Don't fail the whole operation if caching fails
+            }
           }
         }
       } catch (error) {

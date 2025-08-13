@@ -324,9 +324,6 @@ const styles = {
       '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   fixedInputArea: {
-    position: 'sticky',
-    top: 0,
-    zIndex: 100,
     padding: '16px',
     backgroundColor: '#ffffff',
   },

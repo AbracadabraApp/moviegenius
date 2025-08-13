@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { shouldShowPhoneFrame, getPlatformName } from '../lib/platform';
 import NavBar from './NavBar';
 import { routeValidation } from '../lib/routes';
+import { ChevronLeft, ChevronRight, Copy, Share, RotateCcw } from 'lucide-react';
 
 export default function PhoneFrame({ children }) {
   const [isClient, setIsClient] = useState(false);
@@ -32,6 +33,26 @@ export default function PhoneFrame({ children }) {
           <div style={styles.screen}>
             <div style={styles.content}>{children}</div>
             <NavBar navItems={navItems} routeValidation={routeValidation} isMobile={false} />
+            {/* iPhone Safari Bottom Bar */}
+            <div style={styles.safariBottomBar}>
+              <div style={styles.safariControls}>
+                <button style={styles.safariButton} disabled>
+                  <ChevronLeft size={20} color="rgba(0, 0, 0, 0.3)" strokeWidth={2.5} />
+                </button>
+                <button style={styles.safariButton} disabled>
+                  <ChevronRight size={20} color="rgba(0, 0, 0, 0.3)" strokeWidth={2.5} />
+                </button>
+                <button style={styles.safariButton}>
+                  <Share size={18} color="rgba(0, 0, 0, 0.7)" strokeWidth={2} />
+                </button>
+                <button style={styles.safariButton}>
+                  <div style={styles.tabsIcon}>
+                    <div style={styles.tabsIconInner}>1</div>
+                  </div>
+                </button>
+              </div>
+              <div style={styles.homeIndicator}></div>
+            </div>
           </div>
         </div>
       </div>
@@ -60,6 +81,28 @@ export default function PhoneFrame({ children }) {
             ...(showFrame ? {} : styles.mobileContentOverrides)
           }}>{children}</div>
           <NavBar navItems={navItems} routeValidation={routeValidation} isMobile={!showFrame} />
+          {/* iPhone Safari Bottom Bar - only show in desktop phone frame */}
+          {showFrame && (
+            <div style={styles.safariBottomBar}>
+              <div style={styles.safariControls}>
+                <button style={styles.safariButton} disabled>
+                  <ChevronLeft size={20} color="rgba(0, 0, 0, 0.3)" strokeWidth={2.5} />
+                </button>
+                <button style={styles.safariButton} disabled>
+                  <ChevronRight size={20} color="rgba(0, 0, 0, 0.3)" strokeWidth={2.5} />
+                </button>
+                <button style={styles.safariButton}>
+                  <Share size={18} color="rgba(0, 0, 0, 0.7)" strokeWidth={2} />
+                </button>
+                <button style={styles.safariButton}>
+                  <div style={styles.tabsIcon}>
+                    <div style={styles.tabsIconInner}>1</div>
+                  </div>
+                </button>
+              </div>
+              <div style={styles.homeIndicator}></div>
+            </div>
+          )}
         </div>
       </div>
     </div>
@@ -104,9 +147,80 @@ const styles = {
   content: {
     flex: 1,
     overflowY: 'scroll',
+    overflowX: 'hidden', // Prevent horizontal scroll
     scrollbarWidth: 'none',
     msOverflowStyle: 'none',
     paddingBottom: '120px', // Space for sticky navbar and content
+    width: '100%',
+    boxSizing: 'border-box',
+  },
+  
+  // iPhone Safari Bottom Bar - Light grey placeholder frame like in screenshot
+  safariBottomBar: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    height: '49px',
+    backgroundColor: 'rgba(248, 248, 248, 0.94)',
+    borderBottomLeftRadius: '16px',
+    borderBottomRightRadius: '16px',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    paddingTop: '6px',
+    paddingBottom: '8px',
+    backdropFilter: 'blur(20px)',
+    borderTop: '0.5px solid rgba(0, 0, 0, 0.08)',
+    zIndex: 1001, // Above navbar
+  },
+  
+  safariControls: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingLeft: '16px',
+    paddingRight: '16px',
+    height: '30px',
+  },
+  
+  safariButton: {
+    background: 'none',
+    border: 'none',
+    cursor: 'pointer',
+    padding: '6px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: '6px',
+    minWidth: '44px',
+    minHeight: '44px',
+  },
+  
+  tabsIcon: {
+    width: '20px',
+    height: '16px',
+    border: '1.5px solid #007AFF',
+    borderRadius: '2px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'transparent',
+  },
+  
+  tabsIconInner: {
+    fontSize: '10px',
+    fontWeight: '600',
+    color: '#007AFF',
+    lineHeight: 1,
+  },
+  
+  homeIndicator: {
+    width: '134px',
+    height: '5px',
+    backgroundColor: 'rgba(0, 0, 0, 0.3)',
+    borderRadius: '2.5px',
+    alignSelf: 'center',
   },
 
   // Mobile overrides - applied via CSS instead of conditional rendering

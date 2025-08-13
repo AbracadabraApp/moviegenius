@@ -176,7 +176,7 @@ class OptimizedCacheWarmingProcessor {
       'tmdb_poster_warming',
       async () => {
         // Simulate poster fetch and cache
-        const response = await fetch('/api/tmdb-poster', {
+        const response = await fetch('/api/poster-zero-waste', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({

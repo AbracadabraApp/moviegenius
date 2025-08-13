@@ -131,9 +131,6 @@ const styles = {
       '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   fixedInputArea: {
-    position: 'sticky',
-    top: 0,
-    zIndex: 100,
     padding: '16px',
     background:
       'linear-gradient(to right, rgba(0,0,0,1.0) 0%, rgba(0,0,0,0.7) 100%), linear-gradient(to bottom, rgba(0,0,0,1.0) 0%, rgba(0,0,0,1.0) 50%, rgba(0,0,0,0.3) 100%)',

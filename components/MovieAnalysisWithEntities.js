@@ -64,16 +64,20 @@ export default function MovieAnalysisWithEntities({
       }
 
       if (analysisData) {
-        // New JSON format processing
+        // New JSON format processing - match database structure
         console.log('🔍 JSON Analysis Debug:', {
           hasContent: !!analysisData.content,
           contentLength: analysisData.content?.length || 0,
+          hasProcessedContent: !!analysisData.processed_content,
+          processedContentLength: analysisData.processed_content?.length || 0,
           hasFeaturedMovies: !!analysisData.featuredMovies,
           featuredMoviesLength: analysisData.featuredMovies?.length || 0,
           hasExploreTopics: !!analysisData.exploreTopics,
           exploreTopicsLength: analysisData.exploreTopics?.length || 0,
           hasMoreIdeas: !!analysisData.moreIdeas,
-          moreIdeasLength: analysisData.moreIdeas?.length || 0
+          moreIdeasLength: analysisData.moreIdeas?.length || 0,
+          hasWhyWatch: !!analysisData.whyWatch,
+          whyWatchLength: analysisData.whyWatch?.length || 0
         });
         
         setProcessedAnalysis({
@@ -835,7 +839,11 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
   const content = [];
   
   // Get data arrays with filtering
-  const textSections = jsonData.content || [];
+  // Priority: Use processed_content with person links if available, fall back to parsed content
+  const useProcessedContent = jsonData.processed_content && jsonData.processed_content.trim();
+  const textSections = useProcessedContent 
+    ? [{ type: 'text', content: jsonData.processed_content }] // Single processed text block with links
+    : (jsonData.content || []); // Parsed content sections
   const featuredMovies = filterSelfReferential(
     (jsonData.featuredMovies || []).map(enhanceMovieWithTmdb)
   );

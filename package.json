@@ -7,6 +7,7 @@
     "node": ">=20.0.0"
   },
   "scripts": {
+    "check:contributors": "node scripts/check_movie_contributors.js",
     "clean": "rm -rf .next && rm -rf node_modules/.cache",
     "fix:cache": "rm -rf .next && npm run dev",
     "fix:cache:deep": "rm -rf .next && rm -rf node_modules/.cache && npm run dev",
@@ -132,6 +133,7 @@
     "eslint-config-next": "^15.3.2",
     "jest": "^30.0.3",
     "jest-environment-jsdom": "^30.0.2",
+    "node-fetch": "^3.3.2",
     "node-mocks-http": "^1.17.2",
     "puppeteer": "^24.16.0",
     "supertest": "^7.1.1",

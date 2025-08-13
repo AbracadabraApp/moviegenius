@@ -26,6 +26,7 @@ import {
 } from '../lib/design-tokens';
 import { getThemeRepresentatives } from '../data/essential-movies';
 import { routeHelpers } from '../lib/routes';
+import { FavoritesManager } from '../components/FavoritesManager';
 
 export default function YouPage() {
   const router = useRouter();
@@ -33,6 +34,8 @@ export default function YouPage() {
   const [bookmarkedMovies, setBookmarkedMovies] = useState([]);
   const [selectedPlatforms, setSelectedPlatforms] = useState([]);
   const [activeProfileType, setActiveProfileType] = useState('cinematic-dna');
+  const [heartedSet, setHeartedSet] = useState(new Set());
+  const [bookmarkedSet, setBookmarkedSet] = useState(new Set());
 
   // Load data from localStorage
   useEffect(() => {
@@ -42,8 +45,22 @@ export default function YouPage() {
         const storedBookmarked = localStorage.getItem('bookmarkedMovies');
         const storedPlatforms = localStorage.getItem('selectedPlatforms');
 
-        if (storedHearted) setHeartedMovies(JSON.parse(storedHearted));
-        if (storedBookmarked) setBookmarkedMovies(JSON.parse(storedBookmarked));
+        if (storedHearted) {
+          const hearted = JSON.parse(storedHearted);
+          setHeartedMovies(hearted);
+          // Create a Set of IDs for quick lookup
+          const heartedIds = new Set(hearted.map(movie => movie.id || `${movie.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${movie.year}`));
+          setHeartedSet(heartedIds);
+        }
+        
+        if (storedBookmarked) {
+          const bookmarked = JSON.parse(storedBookmarked);
+          setBookmarkedMovies(bookmarked);
+          // Create a Set of IDs for quick lookup
+          const bookmarkedIds = new Set(bookmarked.map(movie => movie.id || `${movie.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${movie.year}`));
+          setBookmarkedSet(bookmarkedIds);
+        }
+        
         if (storedPlatforms) setSelectedPlatforms(JSON.parse(storedPlatforms));
       } catch (error) {
         console.error('Error loading stored data:', error);
@@ -55,11 +72,63 @@ export default function YouPage() {
     // Listen for storage changes from other components
     const handleStorageChange = () => loadStoredData();
     window.addEventListener('storage', handleStorageChange);
-    return () => window.removeEventListener('storage', handleStorageChange);
+    window.addEventListener('moviesUpdated', handleStorageChange);
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+      window.removeEventListener('moviesUpdated', handleStorageChange);
+    };
   }, []);
 
   const totalMovies = heartedMovies.length + bookmarkedMovies.length;
   const hasContent = totalMovies > 0;
+
+  // Toggle heart status (seen)
+  const toggleHeart = (suggestion) => {
+    const movieData = { 
+      title: suggestion.title, 
+      year: suggestion.year, 
+      tmdb_id: suggestion.tmdbId 
+    };
+    const movieId = `${suggestion.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${suggestion.year}`;
+    
+    const newState = FavoritesManager.toggleHeart(movieData);
+    
+    const newHeartedSet = new Set(heartedSet);
+    if (newState) {
+      newHeartedSet.add(movieId);
+    } else {
+      newHeartedSet.delete(movieId);
+    }
+    setHeartedSet(newHeartedSet);
+    
+    // Update the hearted movies list
+    const updatedHearted = FavoritesManager.getHeartedMovies();
+    setHeartedMovies(updatedHearted);
+  };
+
+  // Toggle bookmark status (add to watch list)
+  const toggleBookmark = (suggestion) => {
+    const movieData = { 
+      title: suggestion.title, 
+      year: suggestion.year, 
+      tmdb_id: suggestion.tmdbId 
+    };
+    const movieId = `${suggestion.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${suggestion.year}`;
+    
+    const newState = FavoritesManager.toggleBookmark(movieData);
+    
+    const newBookmarkedSet = new Set(bookmarkedSet);
+    if (newState) {
+      newBookmarkedSet.add(movieId);
+    } else {
+      newBookmarkedSet.delete(movieId);
+    }
+    setBookmarkedSet(newBookmarkedSet);
+    
+    // Update the bookmarked movies list
+    const updatedBookmarked = FavoritesManager.getBookmarkedMovies();
+    setBookmarkedMovies(updatedBookmarked);
+  };
 
   const navigateToCollection = type => {
     if (type === 'hearted' || type === 'bookmarked') {
@@ -487,6 +556,7 @@ export default function YouPage() {
                 }}
               >
                 <button
+                  onClick={() => toggleHeart(suggestion)}
                   style={{
                     background: 'none',
                     border: 'none',
@@ -506,14 +576,18 @@ export default function YouPage() {
                       gap: '3px',
                     }}
                   >
-                    <Check size={16} color="#6b7280" strokeWidth={2} />
+                    <Check 
+                      size={16} 
+                      color={heartedSet.has(`${suggestion.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${suggestion.year}`) ? '#374151' : '#9ca3af'} 
+                      strokeWidth={heartedSet.has(`${suggestion.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${suggestion.year}`) ? 2.5 : 1.5} 
+                    />
                     <span
                       style={{
                         fontSize: '12px',
                         lineHeight: '1',
                         userSelect: 'none',
-                        color: '#6b7280',
-                        fontWeight: '500',
+                        color: heartedSet.has(`${suggestion.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${suggestion.year}`) ? '#374151' : '#9ca3af',
+                        fontWeight: heartedSet.has(`${suggestion.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${suggestion.year}`) ? '600' : '400',
                       }}
                     >
                       Seen
@@ -521,6 +595,7 @@ export default function YouPage() {
                   </div>
                 </button>
                 <button
+                  onClick={() => toggleBookmark(suggestion)}
                   style={{
                     background: 'none',
                     border: 'none',
@@ -540,14 +615,18 @@ export default function YouPage() {
                       gap: '3px',
                     }}
                   >
-                    <Plus size={16} color="#6b7280" strokeWidth={2} />
+                    <Plus 
+                      size={16} 
+                      color={bookmarkedSet.has(`${suggestion.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${suggestion.year}`) ? '#374151' : '#9ca3af'} 
+                      strokeWidth={bookmarkedSet.has(`${suggestion.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${suggestion.year}`) ? 2.5 : 1.5}
+                    />
                     <span
                       style={{
                         fontSize: '12px',
                         lineHeight: '1',
                         userSelect: 'none',
-                        color: '#6b7280',
-                        fontWeight: '500',
+                        color: bookmarkedSet.has(`${suggestion.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${suggestion.year}`) ? '#374151' : '#9ca3af',
+                        fontWeight: bookmarkedSet.has(`${suggestion.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${suggestion.year}`) ? '600' : '400',
                       }}
                     >
                       Add
@@ -616,9 +695,6 @@ export default function YouPage() {
             backgroundColor: '#ffffff',
             borderBottom: `1px solid ${colors.border}`,
             padding: spacing[4],
-            position: 'sticky',
-            top: 0,
-            zIndex: 10,
           }}
         >
           <SimpleSearch placeholder="Search movies..." />

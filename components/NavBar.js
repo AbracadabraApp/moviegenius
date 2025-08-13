@@ -95,7 +95,7 @@ export default function NavBar({ navItems = [], routeValidation = {}, isMobile =
             return (
               <Link key={item.label} href={item.route} style={{ textDecoration: 'none' }}>
                 <div style={{...styles.navItem, opacity: isActive ? 1 : 0.6, transform: isActive ? 'translateY(-2px)' : 'none'}}>
-                  <Icon size={28} style={{...styles.icon, transform: isActive ? 'scale(1.15)' : 'scale(1)'}} />
+                  <Icon size={22} style={{...styles.icon, transform: isActive ? 'scale(1.15)' : 'scale(1)'}} />
                   <span style={styles.labelContainer}>
                     <span style={styles.label}>{item.label}</span>
                     {isActive && <div style={styles.underline} />}
@@ -152,7 +152,7 @@ export default function NavBar({ navItems = [], routeValidation = {}, isMobile =
                 }}
               >
                 <Icon
-                  size={28}
+                  size={22} // Reduced from 28 to 22 for more compact look
                   style={{
                     ...styles.icon,
                     transform: isActive ? 'scale(1.15)' : 'scale(1)',
@@ -187,38 +187,43 @@ const styles = {
     backgroundColor: '#222',
     borderTopLeftRadius: '20px',
     borderTopRightRadius: '20px',
-    padding: '11px 0 15px 0',
+    padding: '0', // Remove nav padding so touch targets can fill full height
     boxShadow: '0 -4px 20px rgba(0,0,0,0.4)',
-    margin: '0 -1px',
+    boxSizing: 'border-box',
   },
   navMobile: {
     position: 'fixed',
     bottom: 0,
     left: 0,
     right: 0,
-    width: '100%',
+    width: '100vw',
     zIndex: 1000,
+    margin: 0,
   },
   navDesktop: {
     position: 'absolute',
-    bottom: 0,
+    bottom: '49px', // Above Safari bottom bar (updated height)
     left: 0,
     right: 0,
     width: '100%',
     zIndex: 1000,
+    borderBottomLeftRadius: 0, // Remove bottom radius since Safari bar is below
+    borderBottomRightRadius: 0,
   },
   navItem: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    gap: '6px',
+    justifyContent: 'center', // Center content within full height
+    gap: '2px', // Further reduced from 3px to 2px for ultra-compact
     color: 'white',
     fontFamily: 'sans-serif',
-    fontSize: '14px',
+    fontSize: '12px', // Keep same font size for readability
     cursor: 'pointer',
     textDecoration: 'none',
     transition: 'all 0.3s ease',
-    padding: '10px 20px',
+    padding: '6px 17px', // Add back vertical spacing for icons within full-height touch targets
+    height: '100%', // Extend touch target to full nav bar height
   },
   icon: {
     transition: 'all 0.3s ease',
@@ -232,10 +237,10 @@ const styles = {
   },
   underline: {
     position: 'absolute',
-    bottom: -4,
-    left: '10%',
-    right: '10%',
-    height: '2px',
+    bottom: -2, // Further reduced from -3 to -2 for ultra-compact
+    left: '15%',
+    right: '15%',
+    height: '1.5px', // Keep same thickness for visibility
     backgroundColor: '#ffffff',
     borderRadius: '1px',
     opacity: 0.9,

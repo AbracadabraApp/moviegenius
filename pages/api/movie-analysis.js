@@ -3,6 +3,7 @@
 
 import { MovieService } from './railway-db.js';
 import { logger, dbLogger, apiLogger, railwayLogger } from '../../lib/observability/logger.js';
+import { processAnalysisContent } from '../../lib/movie-analysis-linker.js';
 
 export default async function movieAnalysisHandler(req, res) {
   const startTime = Date.now();
@@ -268,21 +269,35 @@ export default async function movieAnalysisHandler(req, res) {
         return content;
       }
 
-      // NEW 3-TIER CONTENT SERVING LOGIC
+      // NEW 4-TIER CONTENT SERVING WITH JSON PROCESSING
       let analysisContent = '';
+      let enhancedAnalysis = null;
       const claudeResponse = analysis.claude_response;
       
       if (typeof claudeResponse === 'string') {
-        // Tier 2: String format - clean ** patterns
+        // Tier 3: String format - clean ** patterns
         analysisContent = cleanMovieTitlePatterns(claudeResponse);
       } else if (claudeResponse && claudeResponse.processed_content && claudeResponse.processed_content.trim()) {
         // Tier 1: Processed content (HTML movie links) - BEST
         analysisContent = claudeResponse.processed_content;
       } else if (claudeResponse && claudeResponse.raw_content) {
-        // Tier 2: Raw content - clean ** patterns  
-        analysisContent = cleanMovieTitlePatterns(claudeResponse.raw_content);
+        // Check if raw_content is JSON (enhanced analysis)
+        try {
+          const parsedContent = JSON.parse(claudeResponse.raw_content);
+          if (parsedContent && parsedContent.content && Array.isArray(parsedContent.content)) {
+            // Tier 1: Enhanced JSON format - process movie links
+            enhancedAnalysis = await processJsonAnalysisForLinks(parsedContent, movie.title);
+            analysisContent = enhancedAnalysis.processed_content || claudeResponse.raw_content;
+          } else {
+            // Tier 2: Raw content - clean ** patterns  
+            analysisContent = cleanMovieTitlePatterns(claudeResponse.raw_content);
+          }
+        } catch (e) {
+          // Tier 2: Raw content (not JSON) - clean ** patterns  
+          analysisContent = cleanMovieTitlePatterns(claudeResponse.raw_content);
+        }
       } else {
-        // Tier 3: Fallback message
+        // Tier 4: Fallback message
         analysisContent = 'Analysis content unavailable for this movie.';
       }
 
