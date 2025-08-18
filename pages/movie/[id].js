@@ -160,9 +160,44 @@ export default function MovieDetailPage() {
   }, [router.isReady, finalMovieId]);
 
   if (error) {
+    // Handle TMDB "not found" errors gracefully
+    const isNotFound = error.includes('could not be found') || error.includes('404');
+    
     return (
       <PhoneFrame>
-        <div>Error: {error}</div>
+        <div style={{ backgroundColor: '#ffffff', minHeight: '100%', padding: '20px', textAlign: 'center' }}>
+          {/* Simple Search Bar */}
+          <div style={{ padding: '16px 20px 16px 20px' }}>
+            <SimpleSearch
+              onResults={() => {}}
+              placeholder="Search Movies . . ."
+              useUnifiedSearch={true}
+            />
+          </div>
+          
+          {isNotFound ? (
+            <div style={{ marginTop: '60px' }}>
+              <h2 style={{ fontSize: '24px', color: '#374151', marginBottom: '12px' }}>
+                Movie Not Found
+              </h2>
+              <p style={{ fontSize: '16px', color: '#6b7280', marginBottom: '24px' }}>
+                Movie ID {finalMovieId} doesn't exist in our database.
+              </p>
+              <p style={{ fontSize: '14px', color: '#9ca3af' }}>
+                Try searching for a movie above or visit our homepage.
+              </p>
+            </div>
+          ) : (
+            <div style={{ marginTop: '60px' }}>
+              <h2 style={{ fontSize: '20px', color: '#374151', marginBottom: '12px' }}>
+                Something went wrong
+              </h2>
+              <p style={{ fontSize: '14px', color: '#6b7280' }}>
+                {error}
+              </p>
+            </div>
+          )}
+        </div>
       </PhoneFrame>
     );
   }
@@ -261,27 +296,12 @@ export default function MovieDetailPage() {
 
 // Static generation for production
 export async function getStaticPaths() {
-  // Generate static paths for movie ID ranges
-  const movieIds = [];
-  
-  // Range 1: 1-100 (early classics)
-  for (let i = 1; i <= 100; i++) {
-    movieIds.push(i.toString());
-  }
-  
-  // Range 2: 150-250 (more classics) 
-  for (let i = 150; i <= 250; i++) {
-    movieIds.push(i.toString());
-  }
-  
-  // Range 3: 500-600 (popular range)
-  for (let i = 500; i <= 600; i++) {
-    movieIds.push(i.toString());
-  }
+  // Valid TMDB IDs from database (only movies with analyses)
+  const movieIds = ['2', '3', '5', '16', '18', '19', '20', '21', '22', '24', '25', '27', '28', '33', '35', '38', '55', '58', '59', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '85', '86', '87', '88', '89', '90', '91', '93', '95', '96', '97', '98', '99', '100', '150', '152', '153', '154', '155', '156', '157', '160', '161', '162', '163', '164', '165', '166', '167', '168', '169', '170', '172', '173', '174', '176', '177', '179', '180', '182', '183', '184', '185', '186', '187', '189', '191', '192', '193', '194', '195', '196', '197', '198', '199', '200', '201', '203', '204', '205', '207', '211', '212', '213', '216', '217', '218', '219', '220', '221', '222', '223', '224', '225', '226', '227', '228', '229', '231', '232', '233', '234', '235', '236', '237', '239', '240', '241', '242', '243', '244', '245', '246', '247', '248', '249', '250', '500', '502', '503', '504', '506', '507', '508', '509', '510', '511', '512', '521', '522', '523', '524', '525', '526', '527', '530', '531', '532', '533', '535', '537', '539', '540', '541', '543', '544', '546', '547', '548', '549', '550', '551', '552', '553', '557', '558', '559', '560', '561', '562', '563', '564', '565', '567', '568', '570', '571', '573', '574', '575', '576', '577', '578', '579', '581', '582', '583', '584', '585', '586', '587', '588', '590', '591', '592', '593', '594', '595', '596', '597', '598', '599', '600'];
   
   const paths = movieIds.map(id => ({ params: { id } }));
   
-  console.log(`🚀 Pre-generating ${paths.length} movie paths (ranges: 1-100, 150-250, 500-600)`);
+  console.log(`🚀 Pre-generating ${paths.length} movie paths (valid TMDB IDs from database)`);
   
   return {
     paths,

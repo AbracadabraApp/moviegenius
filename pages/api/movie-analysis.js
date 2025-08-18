@@ -261,7 +261,7 @@ export default async function movieAnalysisHandler(req, res) {
               year: movie.year,
               tmdb_id: movie.tmdb_id
             },
-            analysis: `${movie.title} (${movie.year}) is a notable film that has made significant contributions to cinema.`,
+            analysis: null,
             cached: false,
             source: 'error_fallback',
             error: 'Failed to generate fresh analysis'
