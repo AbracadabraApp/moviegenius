@@ -56,7 +56,14 @@ export default function MovieAnalysisWithEntities({
       // Check if content is JSON format (new structure)
       let analysisData;
       try {
-        analysisData = JSON.parse(rawContent);
+        // Unescape JSON content safely
+        const unescapedContent = rawContent
+          .replace(/\\\\n/g, '\\n')  // Unescape newlines
+          .replace(/\\\\"/g, '"')    // Unescape quotes
+          .replace(/\\\\t/g, '\\t')  // Unescape tabs
+          .replace(/\\\\r/g, '\\r'); // Unescape carriage returns
+
+        analysisData = JSON.parse(unescapedContent);
         console.log('✅ Detected JSON format analysis');
       } catch (e) {
         console.log('📝 Using legacy text format analysis');

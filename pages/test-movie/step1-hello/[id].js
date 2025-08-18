@@ -105,6 +105,6 @@ export async function getStaticPaths() {
       { params: { id: '550' } },  // Fight Club  
       { params: { id: '238' } }   // Godfather
     ],
-    fallback: 'blocking'
+    fallback: false
   };
 }

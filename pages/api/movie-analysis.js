@@ -5,6 +5,19 @@ import { MovieService } from './railway-db.js';
 import { logger, dbLogger, apiLogger, railwayLogger } from '../../lib/observability/logger.js';
 import { processAnalysisContent } from '../../lib/movie-analysis-linker.js';
 
+// Minimal implementation for JSON analysis link processing
+async function processJsonAnalysisForLinks(parsedContent, currentMovieTitle) {
+  if (!parsedContent || !parsedContent.content) {
+    return { processed_content: JSON.stringify(parsedContent) };
+  }
+
+  // Minimal processing to prevent errors
+  return {
+    processed_content: JSON.stringify(parsedContent),
+    content: parsedContent.content
+  };
+}
+
 export default async function movieAnalysisHandler(req, res) {
   const startTime = Date.now();
   
