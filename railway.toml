@@ -10,7 +10,7 @@ restartPolicyType = "on_failure"
 [env]
 NEXT_TELEMETRY_DISABLED = "1"
 NODE_ENV = "production"
-FORCE_DEPLOY = "2025-07-25T00:45:00Z"
+FORCE_DEPLOY = "2025-08-18T19:35:00Z"
 
 # Force nixpacks override - Railway should not use Docker
 [settings]
