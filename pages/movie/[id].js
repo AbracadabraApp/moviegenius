@@ -258,3 +258,48 @@ export default function MovieDetailPage() {
     </ErrorBoundary>
   );
 }
+
+// Static generation for production
+export async function getStaticPaths() {
+  // Generate static paths for movie ID ranges
+  const movieIds = [];
+  
+  // Range 1: 1-100 (early classics)
+  for (let i = 1; i <= 100; i++) {
+    movieIds.push(i.toString());
+  }
+  
+  // Range 2: 150-250 (more classics) 
+  for (let i = 150; i <= 250; i++) {
+    movieIds.push(i.toString());
+  }
+  
+  // Range 3: 500-600 (popular range)
+  for (let i = 500; i <= 600; i++) {
+    movieIds.push(i.toString());
+  }
+  
+  const paths = movieIds.map(id => ({ params: { id } }));
+  
+  console.log(`🚀 Pre-generating ${paths.length} movie paths (ranges: 1-100, 150-250, 500-600)`);
+  
+  return {
+    paths,
+    fallback: false  // Use proven pattern that works in production
+  };
+}
+
+export async function getStaticProps({ params }) {
+  const { id } = params;
+  
+  // For static generation, we don't pre-fetch data
+  // The client-side code will handle all data fetching
+  // This keeps the static generation simple and fast
+  
+  return {
+    props: {
+      movieId: id
+    },
+    revalidate: 86400 // Revalidate once per day
+  };
+}
