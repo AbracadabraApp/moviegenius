@@ -113,23 +113,22 @@ class ErrorBoundary extends React.Component {
       }
 
       const isPageLevel = level === 'page';
-      const containerClass = isPageLevel 
-        ? 'min-h-screen flex items-center justify-center bg-gray-50 px-4'
-        : 'py-8 px-4 bg-red-50 border border-red-200 rounded-lg my-4';
+      
+      // Silent failure for section-level errors - return null
+      if (!isPageLevel) {
+        return null;
+      }
       
       return (
-        <div className={containerClass}>
+        <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
           <div className="text-center max-w-md mx-auto">
             <div className="mb-6">
               <AlertCircle className="h-16 w-16 text-red-500 mx-auto mb-4" />
-              <h2 className={`${isPageLevel ? 'text-2xl' : 'text-lg'} font-semibold text-gray-900 mb-2`}>
-                {isPageLevel ? 'Something went wrong' : 'Content unavailable'}
+              <h2 className="text-2xl font-semibold text-gray-900 mb-2">
+                404 - Page Not Found
               </h2>
               <p className="text-gray-600 mb-6">
-                {isPageLevel 
-                  ? 'We encountered an unexpected error. Please try refreshing the page or navigating to a different section.'
-                  : 'This section is temporarily unavailable. You can try refreshing or continue browsing other content.'
-                }
+                The page you're looking for doesn't exist.
               </p>
             </div>
 

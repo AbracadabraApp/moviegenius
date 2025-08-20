@@ -1,0 +1,89 @@
+{
+  "title": "Drama",
+  "year": 2012,
+  "tmdbId": "test_04a6d217",
+  "hasAnalysis": true,
+  "sections": [
+    {
+      "type": "text",
+      "content": "Set in a Chilean drama school, the film follows three acting students who become entangled in an increasingly intense psychological experiment. As their teacher pushes them to blur the lines between performance and reality, their personal relationships become dangerously intertwined with their theatrical exercises. The story explores the limits of method acting and the psychological toll of fully immersing oneself in character work."
+    },
+    {
+      "type": "text",
+      "content": "While the young cast commits fully to their roles, the performances often tip into melodrama rather than authentic emotional depth. Director <a href=\"/person/person_writer_409_0\" class=\"person-name\"><a href=\"/person/person_writer_409_0\" class=\"person-name\">Matías Lira</a></a>'s vision emphasizes raw physicality and psychological tension, but the execution feels more like a filmed theater exercise than a fully realized cinematic experience. The claustrophobic setting effectively creates tension but ultimately becomes limiting."
+    },
+    {
+      "type": "text",
+      "content": "The film attempts to examine Chile's post-dictatorship generation through the lens of artistic expression and emotional repression. However, these themes remain underdeveloped in favor of more immediate interpersonal drama. The exploration of power dynamics in artistic education recalls films like <a href=\"/movie/test_b461b79e\" class=\"movie-title\" data-tmdb-id=\"test_b461b79e\">Whiplash</a> (2014) and <a href=\"/movie/test_f58ede55\" class=\"movie-title\" data-tmdb-id=\"test_f58ede55\">Black Swan</a> (2010), though without achieving their narrative clarity or emotional impact."
+    },
+    {
+      "type": "text",
+      "content": "Within the tradition of films about theater and performance, 'Drama' follows similar themes to <a href=\"/movie/test_4f6ffcb8\" class=\"movie-title\" data-tmdb-id=\"test_4f6ffcb8\">All About Eve</a> (1950) and <a href=\"/movie/test_7a292cb6\" class=\"movie-title\" data-tmdb-id=\"test_7a292cb6\">Opening Night</a> (1977), examining the psychological cost of acting. However, where those classics balanced artistry with compelling narrative, this film gets lost in its own metatheatrical experiments."
+    },
+    {
+      "type": "text",
+      "content": "The film's exploration of identity and performance in youth culture remains relevant, especially in an era of constant social media performance. Yet its approach feels dated compared to more nuanced examinations like <a href=\"/movie/test_c60fcd2c\" class=\"movie-title\" data-tmdb-id=\"test_c60fcd2c\">The Square</a> (2017) or <a href=\"/movie/test_90d78a12\" class=\"movie-title\" data-tmdb-id=\"test_90d78a12\">Clouds of Sils Maria</a> (2014)."
+    }
+  ],
+  "featuredMovies": [
+    {
+      "title": "Black Swan",
+      "year": 2010,
+      "description": "Superior exploration of artistic obsession and psychological breakdown"
+    },
+    {
+      "title": "Whiplash",
+      "year": 2014,
+      "description": "More compelling examination of artistic education and power dynamics"
+    }
+  ],
+  "exploreTopics": [
+    {
+      "topic": "Method Acting History",
+      "category": "performance_theory",
+      "difficulty": "intermediate"
+    },
+    {
+      "topic": "Chilean Cinema",
+      "category": "world_cinema",
+      "difficulty": "advanced"
+    }
+  ],
+  "moreIdeas": [
+    {
+      "title": "The Square",
+      "year": 2017,
+      "connection": "Modern examination of art world psychology"
+    }
+  ],
+  "whyWatch": {
+    "recommendation": "NO",
+    "reasons": [
+      "The experimental theater premise becomes repetitive and self-indulgent",
+      "Character development remains surface-level despite intense situations",
+      "Watch **Birdman** (2014) instead for a more compelling exploration of theater and artistic obsession"
+    ]
+  },
+  "director": "Matías Lira",
+  "genre": "Drama",
+  "overview": "Set in a Chilean drama school, the film follows three acting students who become entangled in an increasingly intense psychological experiment. As their teacher pushes them to blur the lines between p...",
+  "poster_url": "/images/placeholder-poster.jpg",
+  "keyElements": {
+    "director": "Matías Lira",
+    "writers": [
+      "Matías Lira"
+    ],
+    "stars": [
+      "Eusebio Arenas",
+      "Isidora Urrejola",
+      "Diego Ruiz"
+    ],
+    "genre": "Drama",
+    "releaseYear": 2012,
+    "cinematographer": "Miguel Ioan Littin",
+    "composer": "Carlos Cabezas",
+    "studio": "Ceneca Producciones"
+  },
+  "processedAt": "2025-08-19T04:47:39.064Z",
+  "source": "test_linking_system"
+}

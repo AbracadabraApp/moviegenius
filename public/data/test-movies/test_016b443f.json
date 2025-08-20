@@ -1,0 +1,89 @@
+{
+  "title": "King of the Zombies",
+  "year": 1941,
+  "tmdbId": "test_016b443f",
+  "hasAnalysis": true,
+  "sections": [
+    {
+      "type": "text",
+      "content": "A plane carrying James McCarthy, Bill Summers, and their Black servant Jeff crashes on a mysterious Caribbean island. They discover a mansion inhabited by Dr. Miklos Sangre, who's secretly conducting Nazi spy operations while experimenting with zombie-making voodoo. The film attempts to blend horror and comedy, primarily through Jeff's scared reactions, though these scenes rely heavily on racial stereotypes common to the era."
+    },
+    {
+      "type": "text",
+      "content": "<a href=\"/person/person_star_105_2\" class=\"person-name\">Mantan Moreland</a>'s performance as Jeff dominates the film, though his talented physical comedy is unfortunately wrapped in stereotypical characterization. The horror elements are minimal, with director <a href=\"/person/person_director_16033\" class=\"person-name\">Jean Yarbrough</a> struggling to balance the comedy-horror tone. The film's B-movie production values reflect Monogram Pictures' notorious budget constraints, resulting in limited sets and basic special effects."
+    },
+    {
+      "type": "text",
+      "content": "The film represents both the emergence of zombie films in American cinema and the problematic portrayal of Black characters in 1940s Hollywood. While <a href=\"/movie/test_0597c6ab\" class=\"movie-title\" data-tmdb-id=\"test_0597c6ab\">White Zombie</a> (1932) established serious zombie horror, this film attempted to create a horror-comedy hybrid, predating later successes like <a href=\"/movie/test_98b7b94c\" class=\"movie-title\" data-tmdb-id=\"test_98b7b94c\">Abbott and Costello Meet Frankenstein</a> (1948). However, its reliance on racial stereotypes makes it more valuable as a historical document than entertainment."
+    },
+    {
+      "type": "text",
+      "content": "Early zombie films drew heavily from Haitian folklore and voodoo traditions, unlike modern zombie interpretations that emerged with <a href=\"/movie/test_a26a82c7\" class=\"movie-title\" data-tmdb-id=\"test_a26a82c7\">Night of the Living Dead</a> (1968). The film's World War II subplot reflects Hollywood's growing focus on Nazi antagonists, though the execution is simplistic compared to contemporary wartime thrillers like <a href=\"/movie/test_b7b8dd3d\" class=\"movie-title\" data-tmdb-id=\"test_b7b8dd3d\">Foreign Correspondent</a> (1940)."
+    },
+    {
+      "type": "text",
+      "content": "The film's primary relevance today is as a study of how early horror films incorporated supernatural elements from Caribbean culture, though often through a distorted, culturally insensitive lens. Its attempt to mix horror and comedy anticipates later successful genre hybrids like <a href=\"/movie/test_9d4def52\" class=\"movie-title\" data-tmdb-id=\"test_9d4def52\">An American Werewolf in London</a> (1981) and <a href=\"/movie/test_f7f9b929\" class=\"movie-title\" data-tmdb-id=\"test_f7f9b929\">Evil Dead II</a> (1987)."
+    }
+  ],
+  "featuredMovies": [
+    {
+      "title": "White Zombie",
+      "year": 1932,
+      "description": "The first feature-length zombie film, establishing many genre conventions"
+    },
+    {
+      "title": "Night of the Living Dead",
+      "year": 1968,
+      "description": "Revolutionized zombie cinema with modern interpretations"
+    }
+  ],
+  "exploreTopics": [
+    {
+      "topic": "Early Zombie Cinema",
+      "category": "Genre History",
+      "difficulty": "intermediate"
+    },
+    {
+      "topic": "Racial Representation in Classic Horror",
+      "category": "Social Analysis",
+      "difficulty": "advanced"
+    }
+  ],
+  "moreIdeas": [
+    {
+      "title": "I Walked with a Zombie",
+      "year": 1943,
+      "connection": "Superior treatment of Caribbean zombie themes"
+    }
+  ],
+  "whyWatch": {
+    "recommendation": "NO",
+    "reasons": [
+      "Dated racial stereotypes make viewing uncomfortable",
+      "Weak plot and production values even by B-movie standards",
+      "Watch **White Zombie** (1932) instead for superior early zombie cinema"
+    ]
+  },
+  "director": "Jean Yarbrough",
+  "genre": "Horror Comedy",
+  "overview": "A plane carrying James McCarthy, Bill Summers, and their Black servant Jeff crashes on a mysterious Caribbean island. They discover a mansion inhabited by Dr. Miklos Sangre, who's secretly conducting ...",
+  "poster_url": "/images/placeholder-poster.jpg",
+  "keyElements": {
+    "director": "Jean Yarbrough",
+    "writers": [
+      "Edmond Kelso"
+    ],
+    "stars": [
+      "Dick Purcell",
+      "Joan Woodbury",
+      "Mantan Moreland"
+    ],
+    "genre": "Horror Comedy",
+    "releaseYear": 1941,
+    "cinematographer": "Mack Stengler",
+    "composer": "Edward Kay",
+    "studio": "Monogram Pictures"
+  },
+  "processedAt": "2025-08-19T04:47:38.886Z",
+  "source": "test_linking_system"
+}

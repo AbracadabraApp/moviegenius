@@ -26,6 +26,23 @@
   /* People can have same styling or slight variation */
 }
 
+/* Movie link specific styling - inherits from entity-link base */
+.movie-link {
+  color: #777777; /* Even lighter grey - very soft */
+  text-decoration: underline;
+  text-decoration-color: #e0e0e0; /* Perfect medium grey underline */
+  text-decoration-thickness: 1px; /* Light weight underline */
+  text-underline-offset: 2px; /* Subtle spacing */
+  font-weight: 700; /* Bold weight - strong contrast */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.movie-link:hover {
+  color: #1a1a1a; /* Slightly darker on hover */
+  text-decoration-color: #c0c0c0; /* More visible underline on hover */
+}
+
 /* Styling variants for different modes */
 
 /* Subtle mode (default) - lighter color with more weight */

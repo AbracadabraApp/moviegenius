@@ -1,0 +1,89 @@
+{
+  "title": "The Bank",
+  "year": 2001,
+  "tmdbId": "test_015f5f50",
+  "hasAnalysis": true,
+  "sections": [
+    {
+      "type": "text",
+      "content": "The Bank follows Jim Doyle (<a href=\"/person/person_star_21242_1\" class=\"person-name\">David Wenham</a>), a mathematical genius who develops a algorithm to predict stock market crashes. He's hired by Simon O'Reily (<a href=\"/person/person_star_20826_2\" class=\"person-name\">Anthony LaPaglia</a>), the ruthless CEO of Centabank, who sees the potential to make billions. The film masterfully weaves together two narrative threads: Doyle's apparent collaboration with the bank and a parallel story of a couple fighting Centabank over their home loan, creating a tense exploration of corporate morality and revenge."
+    },
+    {
+      "type": "text",
+      "content": "Wenham delivers a nuanced performance as the enigmatic Doyle, carefully balancing intellectual brilliance with moral ambiguity. LaPaglia embodies corporate ruthlessness with chilling precision, reminiscent of Michael Douglas in <a href=\"/movie/test_60dfae3e\" class=\"movie-title\" data-tmdb-id=\"test_60dfae3e\">Wall Street</a> (1987). Director <a href=\"/person/person_writer_7213_0\" class=\"person-name\"><a href=\"/person/person_writer_7213_0\" class=\"person-name\">Robert Connolly</a></a> crafts a sophisticated thriller that maintains tension through intellectual rather than physical confrontations, similar to the approach taken in <a href=\"/movie/test_06be5bfd\" class=\"movie-title\" data-tmdb-id=\"test_06be5bfd\">Margin Call</a> (2011)."
+    },
+    {
+      "type": "text",
+      "content": "Released in 2001, the film presciently tackles themes that would become even more relevant after the 2008 financial crisis. It shares DNA with films like <a href=\"/movie/test_625fe398\" class=\"movie-title\" data-tmdb-id=\"test_625fe398\">Inside Job</a> (2010) and <a href=\"/movie/test_d47ebd91\" class=\"movie-title\" data-tmdb-id=\"test_d47ebd91\">The Big Short</a> (2015) in its examination of financial institutions' moral bankruptcy. The Australian setting provides a fresh perspective on corporate malfeasance, showing how banking corruption transcends national boundaries."
+    },
+    {
+      "type": "text",
+      "content": "The Bank belongs to a lineage of financial thrillers that includes <a href=\"/movie/test_bb5ddf43\" class=\"movie-title\" data-tmdb-id=\"test_bb5ddf43\">Rogue Trader</a> (1999) and <a href=\"/movie/test_509dc045\" class=\"movie-title\" data-tmdb-id=\"test_509dc045\">Boiler Room</a> (2000). It distinguishes itself by incorporating complex mathematics as a plot device, similar to how <a href=\"/movie/test_48e4a4c4\" class=\"movie-title\" data-tmdb-id=\"test_48e4a4c4\">A Beautiful Mind</a> (2001) used game theory to drive its narrative. The film's approach to corporate thriller elements would later be echoed in works like <a href=\"/movie/test_d6a75a9f\" class=\"movie-title\" data-tmdb-id=\"test_d6a75a9f\">The International</a> (2009)."
+    },
+    {
+      "type": "text",
+      "content": "The film's themes of algorithmic trading, corporate responsibility, and the human cost of financial manipulation remain startlingly relevant. Its exploration of technology's role in financial markets anticipates contemporary debates about AI in banking, while its moral questions about corporate responsibility echo through recent films like <a href=\"/movie/test_d9b13955\" class=\"movie-title\" data-tmdb-id=\"test_d9b13955\">The Laundromat</a> (2019)."
+    }
+  ],
+  "featuredMovies": [
+    {
+      "title": "Wall Street",
+      "year": 1987,
+      "description": "Definitive corporate greed thriller that established many genre conventions"
+    },
+    {
+      "title": "Margin Call",
+      "year": 2011,
+      "description": "Similar intellectual approach to financial crisis storytelling"
+    }
+  ],
+  "exploreTopics": [
+    {
+      "topic": "Financial Mathematics in Film",
+      "category": "Theme Analysis",
+      "difficulty": "Advanced"
+    },
+    {
+      "topic": "Corporate Thriller Conventions",
+      "category": "Genre Studies",
+      "difficulty": "Intermediate"
+    }
+  ],
+  "moreIdeas": [
+    {
+      "title": "Inside Job",
+      "year": 2010,
+      "connection": "Documentary perspective on similar themes"
+    }
+  ],
+  "whyWatch": {
+    "recommendation": "YES",
+    "reasons": [
+      "Sharp critique of corporate greed with intelligent mathematical undertones",
+      "David Wenham's compelling performance as the brilliant mathematician",
+      "Clever plot twists that reward attentive viewing"
+    ]
+  },
+  "director": "Robert Connolly",
+  "genre": "Thriller",
+  "overview": "The Bank follows Jim Doyle (David Wenham), a mathematical genius who develops a algorithm to predict stock market crashes. He's hired by Simon O'Reily (Anthony LaPaglia), the ruthless CEO of Centabank...",
+  "poster_url": "/images/placeholder-poster.jpg",
+  "keyElements": {
+    "director": "Robert Connolly",
+    "writers": [
+      "Robert Connolly"
+    ],
+    "stars": [
+      "David Wenham",
+      "Anthony LaPaglia",
+      "Sibylla Budd"
+    ],
+    "genre": "Thriller",
+    "releaseYear": 2001,
+    "cinematographer": "Tristan Milani",
+    "composer": "Alan John",
+    "studio": "Arena Films"
+  },
+  "processedAt": "2025-08-19T04:47:38.884Z",
+  "source": "test_linking_system"
+}

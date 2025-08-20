@@ -438,8 +438,8 @@ const styles = {
   },
   streamingInfo: {
     width: '100%',
-    textAlign: 'left',
-    marginBottom: '0px',
+    textAlign: 'center',
+    marginBottom: '8px',
     marginTop: '-2px',
     paddingLeft: '0px',
   },

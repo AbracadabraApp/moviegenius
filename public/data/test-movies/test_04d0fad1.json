@@ -1,0 +1,85 @@
+{
+  "title": "The Bad and the Beautiful",
+  "year": 1952,
+  "tmdbId": "test_04d0fad1",
+  "hasAnalysis": true,
+  "sections": [
+    {
+      "type": "text",
+      "content": "The Bad and the Beautiful presents Hollywood through a Citizen Kane-like structure, telling the story of ruthless film producer Jonathan Shields (<a href=\"/person/person_star_20943_1\" class=\"person-name\">Kirk Douglas</a>) through the perspectives of three people he betrayed: director Fred Amiel, actress Georgia Lorrison, and writer James Lee Bartlow. Each segment reveals how Shields helped launch their careers while ultimately destroying their trust, painting a complex portrait of ambition, creativity, and betrayal in the film industry. Douglas's Shields emerges as a fascinating antihero - charismatic and genuinely passionate about filmmaking, yet willing to sacrifice anyone for success."
+    },
+    {
+      "type": "text",
+      "content": "<a href=\"/person/person_star_20943_1\" class=\"person-name\">Kirk Douglas</a> dominates the film with a magnetic performance that rivals his work in <a href=\"/movie/test_2bd9d0aa\" class=\"movie-title\" data-tmdb-id=\"test_2bd9d0aa\">Ace in the Hole</a> (1951), bringing depth to a character who could have been simply villainous. <a href=\"/person/person_star_17774_2\" class=\"person-name\">Lana Turner</a> delivers one of her finest dramatic performances as the alcoholic actress Georgia, while <a href=\"/person/person_star_19636_1\" class=\"person-name\">Gloria Grahame</a> won an Oscar for her supporting role. Minnelli's direction is sophisticated and nuanced, using the multiple-perspective narrative structure to explore the same character from different angles, much like <a href=\"/movie/test_f73d8720\" class=\"movie-title\" data-tmdb-id=\"test_f73d8720\">Rashomon</a> (1950)."
+    },
+    {
+      "type": "text",
+      "content": "The film stands as one of Hollywood's most honest self-examinations, predating later industry critiques like <a href=\"/movie/test_b8feae2a\" class=\"movie-title\" data-tmdb-id=\"test_b8feae2a\">Sunset Boulevard</a> (1950) and <a href=\"/movie/test_981feb80\" class=\"movie-title\" data-tmdb-id=\"test_981feb80\">The Player</a> (1992). It exposes the moral compromises and personal costs of the studio system while simultaneously celebrating the collaborative magic of filmmaking. The film's exploration of power dynamics and artistic integrity remains startlingly relevant to contemporary discussions about Hollywood ethics."
+    },
+    {
+      "type": "text",
+      "content": "As a Hollywood story, it sets itself apart by focusing on the creative process rather than just the glamour, influencing later films like <a href=\"/movie/test_4f6ffcb8\" class=\"movie-title\" data-tmdb-id=\"test_4f6ffcb8\">All About Eve</a> (1950) and <a href=\"/movie/test_ab8b81ad\" class=\"movie-title\" data-tmdb-id=\"test_ab8b81ad\">Day for Night</a> (1973). Its noir-tinged examination of ambition and corruption would later echo in works like <a href=\"/movie/test_f7fc8872\" class=\"movie-title\" data-tmdb-id=\"test_f7fc8872\">Sweet Smell of Success</a> (1957)."
+    },
+    {
+      "type": "text",
+      "content": "The film's themes of artistic compromise, toxic ambition, and the personal cost of success resonate strongly in today's entertainment industry. Its exploration of power dynamics feels particularly relevant in the post-#MeToo era, while its depiction of the tension between art and commerce remains eternally pertinent."
+    }
+  ],
+  "featuredMovies": [
+    {
+      "title": "Citizen Kane",
+      "year": 1941,
+      "description": "Similar narrative structure and exploration of power's corrupting influence"
+    }
+  ],
+  "exploreTopics": [
+    {
+      "topic": "Hollywood Golden Age",
+      "category": "Film History",
+      "difficulty": "intermediate"
+    },
+    {
+      "topic": "Multiple Narrative Perspectives",
+      "category": "Storytelling",
+      "difficulty": "advanced"
+    }
+  ],
+  "moreIdeas": [
+    {
+      "title": "Network",
+      "year": 1976,
+      "connection": "Media industry critique and moral corruption"
+    }
+  ],
+  "whyWatch": {
+    "recommendation": "YES",
+    "reasons": [
+      "Kirk Douglas delivers one of his most complex and compelling performances as the ruthless yet charismatic producer",
+      "The film offers a rare, unflinching look at Hollywood's golden age from the inside",
+      "Vincente Minnelli's direction masterfully balances multiple storylines while maintaining dramatic tension"
+    ]
+  },
+  "director": "Vincente Minnelli",
+  "genre": "Drama",
+  "overview": "The Bad and the Beautiful presents Hollywood through a Citizen Kane-like structure, telling the story of ruthless film producer Jonathan Shields (Kirk Douglas) through the perspectives of three people...",
+  "poster_url": "/images/placeholder-poster.jpg",
+  "keyElements": {
+    "director": "Vincente Minnelli",
+    "writers": [
+      "Charles Schnee"
+    ],
+    "stars": [
+      "Kirk Douglas",
+      "Lana Turner",
+      "Dick Powell",
+      "Gloria Grahame"
+    ],
+    "genre": "Drama",
+    "releaseYear": 1952,
+    "cinematographer": "Robert Surtees",
+    "composer": "David Raksin",
+    "studio": "MGM"
+  },
+  "processedAt": "2025-08-19T04:47:39.074Z",
+  "source": "test_linking_system"
+}

@@ -1,0 +1,90 @@
+{
+  "title": "The Snows of Kilimanjaro",
+  "year": 1952,
+  "tmdbId": "test_03454bd9",
+  "hasAnalysis": true,
+  "sections": [
+    {
+      "type": "text",
+      "content": "The film follows Harry Street, a writer lying wounded in the shadow of Mount Kilimanjaro, reflecting on his life as he faces death. Through fevered memories, we witness his passionate but failed romance with Cynthia Green, his adventures across Europe and Africa, and his current relationship with Helen. The narrative weaves between past and present, creating a rich tapestry of regret, love, and artistic ambition. Like in <a href=\"/movie/test_776649fc\" class=\"movie-title\" data-tmdb-id=\"test_776649fc\">Out of Africa</a> (1985), the African setting becomes both literal backdrop and metaphorical landscape for exploring life's greatest questions."
+    },
+    {
+      "type": "text",
+      "content": "<a href=\"/person/person_star_20899_1\" class=\"person-name\">Gregory Peck</a> brings tremendous depth to Harry Street, capturing both the character's rugged exterior and inner turmoil. His performance echoes the masculine vulnerability he would later perfect in <a href=\"/movie/test_3c809d30\" class=\"movie-title\" data-tmdb-id=\"test_3c809d30\">To Kill a Mockingbird</a> (1962). <a href=\"/person/person_star_19803_0\" class=\"person-name\">Ava Gardner</a> shines as Cynthia, while <a href=\"/person/person_star_20715_0\" class=\"person-name\">Susan Hayward</a> delivers a nuanced portrayal of Helen. Director <a href=\"/person/person_director_20871\" class=\"person-name\">Henry King</a>, known for his work on <a href=\"/movie/test_f79e92cb\" class=\"movie-title\" data-tmdb-id=\"test_f79e92cb\">The Song of Bernadette</a> (1943), masterfully handles the complex flashback structure, creating a seamless flow between memory and reality."
+    },
+    {
+      "type": "text",
+      "content": "Released in 1952, the film reflects post-war America's fascination with adventure and exotic locations, while exploring themes of masculine identity and artistic integrity. It shares DNA with other literary adaptations of the era like <a href=\"/movie/test_e3a0d739\" class=\"movie-title\" data-tmdb-id=\"test_e3a0d739\">The Old Man and the Sea</a> (1958), examining the price of artistic pursuit and the nature of regret. The film's treatment of memory and lost love influenced later works like <a href=\"/movie/test_85d541c6\" class=\"movie-title\" data-tmdb-id=\"test_85d541c6\">The English Patient</a> (1996)."
+    },
+    {
+      "type": "text",
+      "content": "As an adventure-drama, the film bridges Hollywood's golden age epics with more introspective character studies. Its blend of spectacular location footage with intimate psychological drama created a template followed by films like <a href=\"/movie/test_884c3965\" class=\"movie-title\" data-tmdb-id=\"test_884c3965\">Lawrence of Arabia</a> (1962) and <a href=\"/movie/test_ff11fc48\" class=\"movie-title\" data-tmdb-id=\"test_ff11fc48\">The African Queen</a> (1951). The adaptation successfully translates Hemingway's modernist narrative techniques to the screen, paving the way for more experimental storytelling in mainstream cinema."
+    },
+    {
+      "type": "text",
+      "content": "The film's themes of regret, artistic purpose, and mortality remain startlingly relevant. Its exploration of a life examined in its final moments resonates with contemporary works like <a href=\"/movie/test_0a2bf032\" class=\"movie-title\" data-tmdb-id=\"test_0a2bf032\">The Curious Case of Benjamin Button</a> (2008). The questions it poses about the cost of ambition and the nature of love continue to engage modern audiences, while its stunning visuals hold up remarkably well."
+    }
+  ],
+  "featuredMovies": [
+    {
+      "title": "Out of Africa",
+      "year": 1985,
+      "description": "Similar themes of love and loss against African landscapes"
+    },
+    {
+      "title": "The African Queen",
+      "year": 1951,
+      "description": "Contemporary adventure-drama set in Africa"
+    }
+  ],
+  "exploreTopics": [
+    {
+      "topic": "Hemingway Adaptations",
+      "category": "Literary Cinema",
+      "difficulty": "intermediate"
+    },
+    {
+      "topic": "Golden Age Hollywood",
+      "category": "Film History",
+      "difficulty": "beginner"
+    }
+  ],
+  "moreIdeas": [
+    {
+      "title": "A Farewell to Arms",
+      "year": 1932,
+      "connection": "Earlier Hemingway adaptation with similar themes"
+    }
+  ],
+  "whyWatch": {
+    "recommendation": "YES",
+    "reasons": [
+      "Masterful adaptation of Hemingway's complex narrative structure",
+      "Gregory Peck's powerful performance as the dying writer Harry Street",
+      "Stunning Technicolor cinematography of African landscapes"
+    ]
+  },
+  "director": "Henry King",
+  "genre": "Adventure Drama",
+  "overview": "The film follows Harry Street, a writer lying wounded in the shadow of Mount Kilimanjaro, reflecting on his life as he faces death. Through fevered memories, we witness his passionate but failed roman...",
+  "poster_url": "/images/placeholder-poster.jpg",
+  "keyElements": {
+    "director": "Henry King",
+    "writers": [
+      "Casey Robinson",
+      "Ernest Hemingway"
+    ],
+    "stars": [
+      "Gregory Peck",
+      "Susan Hayward",
+      "Ava Gardner"
+    ],
+    "genre": "Adventure Drama",
+    "releaseYear": 1952,
+    "cinematographer": "Leon Shamroy",
+    "composer": "Bernard Herrmann",
+    "studio": "20th Century Fox"
+  },
+  "processedAt": "2025-08-19T04:47:38.982Z",
+  "source": "test_linking_system"
+}

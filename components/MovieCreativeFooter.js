@@ -17,6 +17,12 @@ const MovieCreativeFooter = ({ analysis, movie }) => {
       return;
     }
     
+    // Skip API calls if we have static data with keyElements
+    if (movie?.staticData && (movie?.keyElements || analysis?.keyElements)) {
+      setLoading(false);
+      return;
+    }
+    
     const fetchContributors = async () => {
       try {
         setLoading(true);
@@ -43,7 +49,7 @@ const MovieCreativeFooter = ({ analysis, movie }) => {
     };
     
     fetchContributors();
-  }, [movieId]);
+  }, [movieId, movie, analysis]);
   
   // Also try to extract keyElements from legacy analysis format as fallback
   let legacyKeyElements = {};
@@ -90,7 +96,15 @@ const MovieCreativeFooter = ({ analysis, movie }) => {
   
   // Don't show footer if no contributors and no legacy keyElements
   const hasContributors = contributors && Object.keys(contributors).length > 0;
-  if (!hasContributors && Object.keys(keyElements).length === 0) return null;
+  const hasKeyElements = keyElements && (
+    keyElements.director || 
+    (keyElements.writers && keyElements.writers.length > 0) ||
+    (keyElements.stars && keyElements.stars.length > 0) ||
+    keyElements.cinematographer ||
+    keyElements.composer
+  );
+  
+  if (!hasContributors && !hasKeyElements) return null;
   
   // Build display data - prioritize contributors (with person IDs) over legacy keyElements
   const displayData = hasContributors ? {

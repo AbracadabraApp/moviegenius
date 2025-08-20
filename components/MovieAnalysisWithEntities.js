@@ -50,7 +50,6 @@ export default function MovieAnalysisWithEntities({
     const processingStart = performance.now();
     
     try {
-
       const rawContent = analysis.claude_response.raw_content;
 
       // Check if content is JSON format (new structure)
@@ -160,10 +159,23 @@ export default function MovieAnalysisWithEntities({
   const parseModernAnalysisContent = content => {
     // Parse modern analysis format into strict alternating sections
     // FIXED: Proper boundary detection to prevent content mixing
+    
+    // Handle case where content is not a string (object from new API structure)
+    if (typeof content !== 'string') {
+      console.warn('parseModernAnalysisContent called with non-string content:', typeof content);
+      return {
+        alternatingContent: [],
+        exploreTopics: [],
+        moreIdeasMovies: [],
+        whyWatch: []
+      };
+    }
+    
     const lines = content.split('\n').filter(line => line.trim());
     const alternatingContent = [];
     const exploreTopics = [];
     const moreIdeasMovies = [];
+    const whyWatchReasons = []; // Extract Why Watch reasons from legacy text
     
     let currentTextSection = '';
     let currentMovieGroup = [];
@@ -181,9 +193,35 @@ export default function MovieAnalysisWithEntities({
       }
     };
     
+    // Extract Why Watch reasons from text using common patterns
+    const extractWhyWatchFromText = (text) => {
+      const reasons = [];
+      const patterns = [
+        /(?:why\s+(?:you\s+)?should\s+watch|reasons?\s+to\s+watch|must-watch\s+because)[:\s]+(.+?)(?:\n|$)/gi,
+        /^\s*[•\-\*]\s*(.+?)(?:\n|$)/gm, // Bullet points
+        /^\s*\d+\.\s*(.+?)(?:\n|$)/gm,   // Numbered lists
+      ];
+      
+      patterns.forEach(pattern => {
+        let match;
+        while ((match = pattern.exec(text)) !== null) {
+          const reason = match[1]?.trim();
+          if (reason && reason.length > 10 && reason.length < 200) {
+            reasons.push(reason);
+          }
+        }
+      });
+      
+      return reasons.slice(0, 3); // Max 3 reasons
+    };
+
     for (const line of lines) {
       const trimmed = line.trim();
       if (!trimmed) continue;
+      
+      // Check for Why Watch patterns in current line
+      const lineWhyWatch = extractWhyWatchFromText(trimmed);
+      whyWatchReasons.push(...lineWhyWatch);
       
       if (trimmed.startsWith('MOVIES:') && !collectingMoreIdeas) {
         // FLUSH TEXT FIRST: Respect natural alternating order
@@ -280,7 +318,8 @@ export default function MovieAnalysisWithEntities({
     return {
       alternatingContent,
       exploreTopics,
-      moreIdeasMovies
+      moreIdeasMovies,
+      whyWatch: whyWatchReasons.slice(0, 3) // Return extracted Why Watch reasons
     };
   };
 
@@ -292,8 +331,15 @@ export default function MovieAnalysisWithEntities({
     
     try {
       analysisData = JSON.parse(rawContent);
+      
       if (analysisData && analysisData.content && Array.isArray(analysisData.content)) {
         // Valid JSON analysis structure detected - render immediately
+        // Check if we have processed content with links
+        const processedContent = analysis.claude_response.processed_content;
+        if (processedContent) {
+          // Add processed content to the analysis data for link processing
+          analysisData.processed_content = processedContent;
+        }
         return renderJsonAnalysis(analysisData, movie, linkingIntensity, className);
       }
     } catch (e) {
@@ -303,7 +349,7 @@ export default function MovieAnalysisWithEntities({
     
     // Fallback for non-JSON or invalid JSON content
     // Check if it looks like JSON that should be parsed (starts with { and has reasonable length)
-    if (rawContent && rawContent.trim().startsWith('{') && rawContent.length > 100) {
+    if (rawContent && typeof rawContent === 'string' && rawContent.trim().startsWith('{') && rawContent.length > 100) {
       // This looks like JSON but parsing failed - display a better error message
       return (
         <div className={className}>
@@ -315,10 +361,11 @@ export default function MovieAnalysisWithEntities({
     }
     
     // For text content, display as-is
+    const displayContent = typeof rawContent === 'string' ? rawContent : 'Analysis content loading...';
     return (
       <div className={className}>
         <div style={styles.paragraph}>
-          <p>{rawContent || 'Analysis content loading...'}</p>
+          <p>{displayContent}</p>
         </div>
       </div>
     );
@@ -338,7 +385,7 @@ export default function MovieAnalysisWithEntities({
   }
 
   // Legacy text format processing
-  const { alternatingContent, exploreTopics, moreIdeasMovies } = parseModernAnalysisContent(processedAnalysis.content);
+  const { alternatingContent, exploreTopics, moreIdeasMovies, whyWatch } = parseModernAnalysisContent(processedAnalysis.content);
 
   // Enhance parsed movies with entityData if available
   const enhanceMovieData = (parsedMovie) => {
@@ -781,6 +828,21 @@ const styles = {
   },
 };
 
+// Format subhead text from content type
+function formatSubheadFromType(type) {
+  const typeMapping = {
+    'plotAndCharacters': 'PLOT & CHARACTERS',
+    'performancesAndVision': 'PERFORMANCES & VISION', 
+    'socialAndCultural': 'SOCIAL & CULTURAL CONTEXT',
+    'genreContext': 'GENRE CONTEXT',
+    'contemporaryRelevance': 'CONTEMPORARY RELEVANCE',
+    'technicalAnalysis': 'TECHNICAL EXCELLENCE',
+    'legacyAndImpact': 'LEGACY & MODERN IMPACT'
+  };
+  
+  return typeMapping[type] || type.replace(/([A-Z])/g, ' $1').trim().toUpperCase();
+}
+
 // Render JSON format analysis with proper alternating layout
 function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisible) {
   // Defensive logging to catch future rendering issues
@@ -800,13 +862,8 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
   
   if (!jsonData.content || !Array.isArray(jsonData.content)) {
     console.warn('⚠️ Invalid JSON analysis structure - missing content array:', jsonData);
-    return (
-      <div style={styles.container} className={className}>
-        <div style={styles.paragraph}>
-          <p>Analysis data format not supported</p>
-        </div>
-      </div>
-    );
+    // Return null for graceful degradation - no error message shown to user
+    return null;
   }
 
   const enhanceMovieWithTmdb = (movieItem) => {
@@ -846,11 +903,24 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
   const content = [];
   
   // Get data arrays with filtering
-  // Priority: Use processed_content with person links if available, fall back to parsed content
-  const useProcessedContent = jsonData.processed_content && jsonData.processed_content.trim();
-  const textSections = useProcessedContent 
-    ? [{ type: 'text', content: jsonData.processed_content }] // Single processed text block with links
-    : (jsonData.content || []); // Parsed content sections
+  // Priority: Use processed_content with HTML links if available, fall back to raw content
+  let textSections = jsonData.content || [];
+  
+  // Check if we have processed content with links
+  if (jsonData.processed_content && jsonData.processed_content.trim()) {
+    try {
+      const processedData = JSON.parse(jsonData.processed_content);
+      if (processedData.content && Array.isArray(processedData.content)) {
+        // Use the processed content sections (they contain HTML links)
+        textSections = processedData.content;
+        console.log('✅ Using processed content with HTML links');
+      }
+    } catch (e) {
+      // If processed_content isn't JSON, treat it as a single text block
+      textSections = [{ type: 'text', text: jsonData.processed_content }];
+      console.log('✅ Using processed content as single text block');
+    }
+  }
   const featuredMovies = filterSelfReferential(
     (jsonData.featuredMovies || []).map(enhanceMovieWithTmdb)
   );
@@ -858,7 +928,7 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
   const moreIdeas = filterSelfReferential(
     (jsonData.moreIdeas || []).map(enhanceMovieWithTmdb)
   );
-  const whyWatch = jsonData.whyWatch || []; // Reasons to Watch data
+  const whyWatch = jsonData.whyWatch?.reasons || jsonData.whyWatch || []; // Reasons to Watch data
 
 
   let exploreIndex = 0;
@@ -884,33 +954,40 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
 
   // Create alternating pattern: Text → Featured Films → Text → Explore Further → Repeat
   textSections.forEach((section, textIndex) => {
-    // Add section header IMMEDIATELY before its paragraph text (not after)
-    if (section.type === 'technicalAnalysis' || section.type === 'legacyAndImpact') {
-      const subheadText = section.type === 'technicalAnalysis' 
-        ? 'TECHNICAL EXCELLENCE'
-        : 'LEGACY AND MODERN IMPACT';
+    // Add section header based on content type (skip first section subhead per user request)
+    if (section.type && section.type !== 'text' && textIndex !== 0) {
+      const subheadText = formatSubheadFromType(section.type);
       
-      content.push(
-        <div key={`subhead-${textIndex}`} style={{...styles.subheadSection, borderLeft: '3px solid #d4af37', paddingLeft: '16px'}}>
-          <h3 style={styles.subheadText}>{subheadText}</h3>
-        </div>
-      );
+      if (subheadText) {
+        content.push(
+          <div key={`subhead-${textIndex}`} style={{...styles.subheadSection, borderLeft: '3px solid #d4af37', paddingLeft: '16px'}}>
+            <h3 style={styles.subheadText}>{subheadText}</h3>
+          </div>
+        );
+      }
     }
     
     // Add text section (immediately after its header)
+    // Check if text already contains HTML links from processed content
+    const hasHtmlLinks = section.text && section.text.includes('<a href=');
+    
     content.push(
       <div key={`json-text-${textIndex}`} style={{...styles.paragraph, paddingTop: textIndex === 0 ? '16px' : '0'}} data-testid={`section-${section.type}`}>
         <ErrorBoundary level="section">
-          <EntityLinkedText
-            text={section.text}
-            linkingIntensity={linkingIntensity}
-            context="movie-analysis"
-            currentEntity={{
-              type: 'movie',
-              slug: movie?.slug,
-              title: movie?.title,
-            }}
-          />
+          {hasHtmlLinks ? (
+            <div dangerouslySetInnerHTML={{ __html: section.text }} />
+          ) : (
+            <EntityLinkedText
+              text={section.text}
+              linkingIntensity={linkingIntensity}
+              context="movie-analysis"
+              currentEntity={{
+                type: 'movie',
+                slug: movie?.slug,
+                title: movie?.title,
+              }}
+            />
+          )}
         </ErrorBoundary>
       </div>
     );

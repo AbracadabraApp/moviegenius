@@ -282,36 +282,19 @@ export default async function movieAnalysisHandler(req, res) {
         return content;
       }
 
-      // NEW 4-TIER CONTENT SERVING WITH JSON PROCESSING
+      // Return analysis content based on what's available in the database
       let analysisContent = '';
-      let enhancedAnalysis = null;
-      const claudeResponse = analysis.claude_response;
       
-      if (typeof claudeResponse === 'string') {
-        // Tier 3: String format - clean ** patterns
-        analysisContent = cleanMovieTitlePatterns(claudeResponse);
-      } else if (claudeResponse && claudeResponse.processed_content && claudeResponse.processed_content.trim()) {
-        // Tier 1: Processed content (HTML movie links) - BEST
-        analysisContent = claudeResponse.processed_content;
-      } else if (claudeResponse && claudeResponse.raw_content) {
-        // Check if raw_content is JSON (enhanced analysis)
-        try {
-          const parsedContent = JSON.parse(claudeResponse.raw_content);
-          if (parsedContent && parsedContent.content && Array.isArray(parsedContent.content)) {
-            // Tier 1: Enhanced JSON format - process movie links
-            enhancedAnalysis = await processJsonAnalysisForLinks(parsedContent, movie.title);
-            analysisContent = enhancedAnalysis.processed_content || claudeResponse.raw_content;
-          } else {
-            // Tier 2: Raw content - clean ** patterns  
-            analysisContent = cleanMovieTitlePatterns(claudeResponse.raw_content);
-          }
-        } catch (e) {
-          // Tier 2: Raw content (not JSON) - clean ** patterns  
-          analysisContent = cleanMovieTitlePatterns(claudeResponse.raw_content);
+      if (analysis.claude_response) {
+        if (typeof analysis.claude_response === 'string') {
+          // Legacy string format
+          analysisContent = analysis.claude_response;
+        } else if (analysis.claude_response.raw_content) {
+          // Object format with raw_content
+          analysisContent = analysis.claude_response.raw_content;
         }
       } else {
-        // Tier 4: Fallback message
-        analysisContent = 'Analysis content unavailable for this movie.';
+        analysisContent = null;
       }
 
       // Log successful analysis retrieval

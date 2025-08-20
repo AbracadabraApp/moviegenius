@@ -1,0 +1,90 @@
+{
+  "title": "The Rite of Spring",
+  "year": 2022,
+  "tmdbId": "test_02f8291f",
+  "hasAnalysis": true,
+  "sections": [
+    {
+      "type": "text",
+      "content": "This ambitious documentary captures the revolutionary spirit of Stravinsky's 'The Rite of Spring' through a contemporary lens, weaving together historical footage with modern performance. The film follows the Bolshoi Ballet's preparation for a centennial celebration, while simultaneously exploring the riot-inducing premiere of 1913. Through parallel narratives, we witness the physical and emotional demands placed on today's dancers as they grapple with Stravinsky's challenging composition and Nijinsky's original choreography."
+    },
+    {
+      "type": "text",
+      "content": "Director <a href=\"/person/person_writer_235_0\" class=\"person-name\"><a href=\"/person/person_writer_235_0\" class=\"person-name\">Igor Ivanov</a></a> brilliantly captures the raw intensity of the dancers' performances, employing intimate camera work reminiscent of Wim Wenders' <a href=\"/movie/test_de94f69d\" class=\"movie-title\" data-tmdb-id=\"test_de94f69d\">Pina</a> (2011). Prima ballerina <a href=\"/person/person_star_19209_2\" class=\"person-name\">Svetlana Zakharova</a>'s interpretation of the Chosen One brings new depth to the role, while the film's innovative use of split-screen techniques allows viewers to simultaneously witness historical reconstructions and modern interpretations."
+    },
+    {
+      "type": "text",
+      "content": "The documentary expertly positions 'The Rite of Spring' within both its historical context and contemporary relevance, drawing parallels between the artistic revolution of 1913 and today's cultural upheavals. Like <a href=\"/movie/test_f58ede55\" class=\"movie-title\" data-tmdb-id=\"test_f58ede55\">Black Swan</a> (2010), the film explores the physical and psychological demands of ballet, while echoing the behind-the-scenes tension of <a href=\"/movie/test_b461b79e\" class=\"movie-title\" data-tmdb-id=\"test_b461b79e\">Whiplash</a> (2014) in its examination of artistic perfection."
+    },
+    {
+      "type": "text",
+      "content": "Following in the tradition of great dance documentaries like <a href=\"/movie/test_4c4d2bd2\" class=\"movie-title\" data-tmdb-id=\"test_4c4d2bd2\">First Position</a> (2011) and La Danse (2009), 'The Rite of Spring' elevates the form through its innovative combination of historical documentation and artistic interpretation. The film's approach to capturing dance on camera creates a new standard for the genre, similar to how <a href=\"/movie/test_95db4f66\" class=\"movie-title\" data-tmdb-id=\"test_95db4f66\">The Red Shoes</a> (1948) revolutionized the ballet film."
+    },
+    {
+      "type": "text",
+      "content": "In an era of increasing cultural division, the film demonstrates how revolutionary art continues to challenge and unite audiences. Its exploration of tradition versus innovation mirrors contemporary debates about artistic expression, while its focus on the physical toll of excellence resonates with modern discussions about performer wellness and artistic sacrifice."
+    }
+  ],
+  "featuredMovies": [
+    {
+      "title": "Pina",
+      "year": 2011,
+      "description": "Revolutionary 3D dance documentary that redefined how choreography could be captured on film"
+    },
+    {
+      "title": "The Red Shoes",
+      "year": 1948,
+      "description": "Classic tale of artistic dedication that influenced generations of dance films"
+    }
+  ],
+  "exploreTopics": [
+    {
+      "topic": "History of Modern Ballet",
+      "category": "Dance",
+      "difficulty": "intermediate"
+    },
+    {
+      "topic": "Documentary Cinematography",
+      "category": "Film Technique",
+      "difficulty": "advanced"
+    }
+  ],
+  "moreIdeas": [
+    {
+      "title": "First Position",
+      "year": 2011,
+      "connection": "Contemporary ballet documentary exploring performer dedication"
+    }
+  ],
+  "whyWatch": {
+    "recommendation": "YES",
+    "reasons": [
+      "Stunning visual documentation of Stravinsky's revolutionary ballet",
+      "Masterful blend of historical context and contemporary performance",
+      "Groundbreaking approach to filming classical dance"
+    ]
+  },
+  "director": "Igor Ivanov",
+  "genre": "Documentary/Performance Art",
+  "overview": "This ambitious documentary captures the revolutionary spirit of Stravinsky's 'The Rite of Spring' through a contemporary lens, weaving together historical footage with modern performance. The film fol...",
+  "poster_url": "/images/placeholder-poster.jpg",
+  "keyElements": {
+    "director": "Igor Ivanov",
+    "writers": [
+      "Igor Ivanov",
+      "Maria Petrova"
+    ],
+    "stars": [
+      "Svetlana Zakharova",
+      "Vladimir Vasiliev",
+      "Natalia Osipova"
+    ],
+    "genre": "Documentary/Performance Art",
+    "releaseYear": 2022,
+    "cinematographer": "Mikhail Krichman",
+    "composer": "Igor Stravinsky",
+    "studio": "Bolshoi Films"
+  },
+  "processedAt": "2025-08-19T04:47:38.965Z",
+  "source": "test_linking_system"
+}

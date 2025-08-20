@@ -1,0 +1,96 @@
+{
+  "title": "Gone with the Wind",
+  "year": 1939,
+  "tmdbId": "test_03e2e67c",
+  "hasAnalysis": true,
+  "sections": [
+    {
+      "type": "text",
+      "content": "Set against the backdrop of the American Civil War, Gone with the Wind follows the ruthlessly ambitious Scarlett O'Hara, whose life transforms from Southern belle to survivor as her world burns around her. The film's sprawling narrative captures both epic historical moments and intimate personal drama, centered on Scarlett's complicated relationships with the roguish Rhett Butler and the honorable Ashley Wilkes. Unlike many female protagonists of its era, Scarlett is deeply flawed - selfish, manipulative, and often cruel - yet compelling in her determination to survive at any cost."
+    },
+    {
+      "type": "text",
+      "content": "<a href=\"/person/person_star_18162_1\" class=\"person-name\">Vivien Leigh</a>'s portrayal of Scarlett O'Hara remains one of cinema's most memorable performances, bringing nuance and fire to a character who could have been merely unlikeable. <a href=\"/person/person_star_19704_0\" class=\"person-name\">Clark Gable</a>'s Rhett Butler perfectly matches her energy with charm and cynicism. The film's technical achievements were revolutionary - its use of Technicolor set new standards for cinematography, while its elaborate production design created a detailed vision of the antebellum South that influenced historical epics like <a href=\"/movie/test_1c28c0b7\" class=\"movie-title\" data-tmdb-id=\"test_1c28c0b7\">Ben-Hur</a> (1959) and <a href=\"/movie/test_faef6dca\" class=\"movie-title\" data-tmdb-id=\"test_faef6dca\">Doctor Zhivago</a> (1965)."
+    },
+    {
+      "type": "text",
+      "content": "While the film's portrayal of slavery and race relations is deeply problematic by modern standards, it represents a crucial historical document of Hollywood's romanticized view of the Old South. <a href=\"/person/person_star_9425_3\" class=\"person-name\">Hattie McDaniel</a>'s Oscar win as Mammy marked a breakthrough for African American actors, though her role embodied painful stereotypes. The film's themes of survival and adaptation amid social upheaval continue to resonate, echoing through later works like The Godfather (1972) and <a href=\"/movie/test_be831eed\" class=\"movie-title\" data-tmdb-id=\"test_be831eed\">There Will Be Blood</a> (2007)."
+    },
+    {
+      "type": "text",
+      "content": "Gone with the Wind established the template for the American epic, influencing everything from <a href=\"/movie/test_884c3965\" class=\"movie-title\" data-tmdb-id=\"test_884c3965\">Lawrence of Arabia</a> (1962) to <a href=\"/movie/test_bbae0756\" class=\"movie-title\" data-tmdb-id=\"test_bbae0756\">Titanic</a> (1997). Its blend of personal drama against historical backdrop became the standard for prestigious Hollywood productions, while its technical innovations in color cinematography and production design raised the bar for what cinema could achieve."
+    },
+    {
+      "type": "text",
+      "content": "Modern viewers may struggle with the film's problematic politics and racial depictions, but its exploration of survival, ambition, and moral compromise remains powerful. Its influence can be seen in contemporary epics like <a href=\"/movie/test_85d541c6\" class=\"movie-title\" data-tmdb-id=\"test_85d541c6\">The English Patient</a> (1996) and <a href=\"/movie/test_940a12e5\" class=\"movie-title\" data-tmdb-id=\"test_940a12e5\">Cold Mountain</a> (2003), while Scarlett O'Hara's complex characterization paved the way for morally ambiguous protagonists in works like <a href=\"/movie/test_814d96c7\" class=\"movie-title\" data-tmdb-id=\"test_814d96c7\">The Crown</a> (2016)."
+    }
+  ],
+  "featuredMovies": [
+    {
+      "title": "Ben-Hur",
+      "year": 1959,
+      "description": "Similarly epic historical drama that built on GWTW's technical achievements"
+    },
+    {
+      "title": "Doctor Zhivago",
+      "year": 1965,
+      "description": "Epic romance set against historical upheaval, following GWTW's template"
+    }
+  ],
+  "exploreTopics": [
+    {
+      "topic": "Technicolor Revolution",
+      "category": "technical_innovation",
+      "difficulty": "intermediate"
+    },
+    {
+      "topic": "Civil War in Cinema",
+      "category": "historical_context",
+      "difficulty": "advanced"
+    },
+    {
+      "topic": "Race Representation",
+      "category": "social_analysis",
+      "difficulty": "advanced"
+    }
+  ],
+  "moreIdeas": [
+    {
+      "title": "Cold Mountain",
+      "year": 2003,
+      "connection": "Civil War romance with complex female protagonist"
+    }
+  ],
+  "whyWatch": {
+    "recommendation": "YES",
+    "reasons": [
+      "Groundbreaking technical achievements and epic scope that still impress today",
+      "Complex character study of Scarlett O'Hara that defied female stereotypes of the era",
+      "Historical significance as both a cinematic milestone and cultural touchstone"
+    ]
+  },
+  "director": "Victor Fleming",
+  "genre": "Historical Epic Romance",
+  "overview": "Set against the backdrop of the American Civil War, Gone with the Wind follows the ruthlessly ambitious Scarlett O'Hara, whose life transforms from Southern belle to survivor as her world burns around...",
+  "poster_url": "/images/placeholder-poster.jpg",
+  "keyElements": {
+    "director": "Victor Fleming",
+    "writers": [
+      "Sidney Howard",
+      "Margaret Mitchell"
+    ],
+    "stars": [
+      "Vivien Leigh",
+      "Clark Gable",
+      "Olivia de Havilland",
+      "Hattie McDaniel"
+    ],
+    "genre": "Historical Epic Romance",
+    "releaseYear": 1939,
+    "cinematographer": "Ernest Haller",
+    "composer": "Max Steiner",
+    "studio": "Selznick International Pictures"
+  },
+  "processedAt": "2025-08-19T04:47:39.017Z",
+  "source": "test_linking_system"
+}
