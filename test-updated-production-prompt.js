@@ -42,7 +42,9 @@ async function testPrompt(movieTitle, movieYear) {
     });
     
     console.log(`\n✅ ACTUAL word count: ${actualWords} words`);
-    console.log(`🎯 Target adherence: ${actualWords >= 400 && actualWords <= 550 ? '✅ In range' : '❌ Out of range'}`);
+    const targetRange = analysis.metadata.targetRange || '375-425';
+    const [min, max] = targetRange.split('-').map(n => parseInt(n.trim()));
+    console.log(`🎯 Target adherence: ${actualWords >= min && actualWords <= max ? '✅ In range' : '❌ Out of range'}`);
     console.log(`📈 Accuracy: Claude reported ${analysis.metadata.wordCount}, actual is ${actualWords} (${Math.abs(analysis.metadata.wordCount - actualWords)} word difference)`);
     
     console.log(`\n💰 Cost: $${((response.usage.input_tokens * 0.003 + response.usage.output_tokens * 0.015) / 1000).toFixed(4)}`);
