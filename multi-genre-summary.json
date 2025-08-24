@@ -1,0 +1,24 @@
+{
+  "startTime": "2025-08-21T06:06:04.982Z",
+  "genres": {
+    "Action": {
+      "genre": "Action",
+      "status": "partial",
+      "error": "Progress file not found after execution"
+    },
+    "Adventure": {
+      "genre": "Adventure",
+      "status": "partial",
+      "error": "Progress file not found after execution"
+    }
+  },
+  "totalCost": 0,
+  "totalLists": 0,
+  "totalMovies": 0,
+  "completedGenres": [
+    "Action",
+    "Adventure"
+  ],
+  "failedGenres": [],
+  "endTime": "2025-08-21T10:06:09.829Z"
+}

@@ -1,0 +1,35 @@
+{
+  "totalPureDrama": 3276,
+  "subGenreSplits": [
+    {
+      "name": "Contemporary Drama",
+      "description": "Modern dramas (2000+)",
+      "estimatedSize": 1435,
+      "filter": "year >= 2000"
+    },
+    {
+      "name": "Classic Drama",
+      "description": "Older dramas (1990-1999)",
+      "estimatedSize": 425,
+      "filter": "1990 <= year < 2000"
+    },
+    {
+      "name": "Vintage Drama",
+      "description": "Historical dramas (pre-1990)",
+      "estimatedSize": 1416,
+      "filter": "year < 1990"
+    },
+    {
+      "name": "Independent Drama",
+      "description": "Lower budget/art house dramas",
+      "estimatedSize": 982,
+      "filter": "Title patterns + metadata"
+    }
+  ],
+  "costSavings": {
+    "originalCost": 54.082600000000006,
+    "pureDramaCost": 19.983600000000003,
+    "savings": 34.099000000000004,
+    "savingsPercent": 63.049853372434015
+  }
+}

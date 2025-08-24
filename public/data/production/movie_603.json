@@ -1,0 +1,133 @@
+{
+  "enhancedFormat": true,
+  "title": "The Matrix",
+  "year": 1999,
+  "tmdbId": 603,
+  "movieHeader": {
+    "title": "The Matrix",
+    "year": 1999,
+    "posterUrl": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+    "trailerVideoId": "vKQi3bBA1y8",
+    "streaming": {
+      "streaming_data": "Available on HBO Max, Netflix"
+    },
+    "overview": "Thomas A. Anderson is a man living two lives. By day he is an average computer programmer and by night a hacker known as Neo. Neo has always questioned his reality, but the truth is far beyond his imagination."
+  },
+  "analysis": {
+    "sections": [
+      {
+        "type": "text",
+        "content": "The Wachowski sisters' groundbreaking sci-fi masterpiece revolutionized both cinema and popular culture, introducing audiences to a reality-bending narrative that questioned the very nature of existence. <a href=\"/person/6384\" class=\"person-name\">Keanu Reeves</a> stars as Neo, a computer programmer who discovers that his perceived reality is actually a computer simulation designed to subjugate humanity. The film's philosophical depth, combined with revolutionary action sequences, created a new template for intelligent blockbuster entertainment."
+      },
+      {
+        "type": "technicalAnalysis",
+        "content": "The Matrix introduced 'bullet time' photography and pioneered digital effects that have become industry standard. Cinematographer Bill Pope's work creates a distinctive visual language that differentiates the sterile green-tinted Matrix from the harsh reality of Zion. The film's action choreography, influenced by Hong Kong cinema and anime, elevated fight scenes to balletic art form. <a href=\"/person/6384\" class=\"person-name\">Keanu Reeves'</a> physical transformation and wire work training set new standards for actor commitment to action roles."
+      },
+      {
+        "type": "socialAndCultural", 
+        "content": "Released at the dawn of the internet age, The Matrix captured anxieties about technology, reality, and human agency that feel prophetic today. The film's exploration of simulated reality, artificial intelligence, and digital control systems resonated with audiences entering the new millennium. Its influence extends far beyond cinema, inspiring philosophical discourse, academic study, and countless references in popular culture. The red pill/blue pill choice has become shorthand for awakening to hidden truths."
+      },
+      {
+        "type": "contemporaryRelevance",
+        "content": "In our current era of social media manipulation, deepfakes, and virtual reality, The Matrix feels more relevant than ever. The film's themes of manufactured consent, algorithmic control, and the difficulty of distinguishing authentic experience from simulation speak directly to contemporary concerns about technology and truth. Its influence can be seen in films like <a href=\"/movie/27205\" class=\"movie-title\">Inception</a> and <a href=\"/movie/419704\" class=\"movie-title\">Ad Astra</a>."
+      }
+    ],
+    "featuredMovies": [
+      {
+        "title": "Blade Runner",
+        "year": 1982,
+        "tmdbId": 78,
+        "posterUrl": "https://image.tmdb.org/t/p/w500/63N9uy8nd9j7Eog2axPQ8lbr3Wj.jpg",
+        "slug": "/movie/78",
+        "description": "Ridley Scott's neo-noir explores artificial consciousness and reality"
+      },
+      {
+        "title": "Ghost in the Shell",
+        "year": 1995,
+        "tmdbId": 9323,
+        "posterUrl": "https://image.tmdb.org/t/p/w500/fTz3K5HrsMnF7wq3SEyKR5LYhGl.jpg",
+        "slug": "/movie/9323",
+        "description": "Anime masterpiece examining consciousness in digital age"
+      },
+      {
+        "title": "Total Recall",
+        "year": 1990,
+        "tmdbId": 861,
+        "posterUrl": "https://image.tmdb.org/t/p/w500/q8hX6C6DXbJYAPWv7fCG7tgZkZq.jpg",
+        "slug": "/movie/861",
+        "description": "Philip K. Dick adaptation questioning memory and identity"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Cyberpunk Cinema Evolution",
+        "category": "Film History",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Philosophy of Simulated Reality", 
+        "category": "Philosophy",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Revolutionary Action Cinematography",
+        "category": "Film Technique",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Digital Effects Innovation",
+        "category": "Technology",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Sci-Fi Social Commentary",
+        "category": "Cultural Studies",
+        "difficulty": "Beginner"
+      }
+    ],
+    "moreIdeas": [
+      {
+        "title": "Inception",
+        "year": 2010,
+        "connection": "Reality-bending narrative structure"
+      },
+      {
+        "title": "Dark City",
+        "year": 1998, 
+        "connection": "Similar themes of manufactured reality"
+      },
+      {
+        "title": "eXistenZ",
+        "year": 1999,
+        "connection": "Virtual reality psychological thriller"
+      },
+      {
+        "title": "The Thirteenth Floor",
+        "year": 1999,
+        "connection": "Computer simulation reality premise"
+      },
+      {
+        "title": "Strange Days",
+        "year": 1995,
+        "connection": "Technology-mediated experience themes"
+      }
+    ],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Revolutionary visual effects that changed cinema forever",
+        "Philosophical depth wrapped in accessible entertainment",
+        "Iconic characters and endlessly quotable dialogue"
+      ]
+    }
+  },
+  "keyElements": {
+    "director": "The Wachowskis",
+    "writers": ["The Wachowskis"],
+    "stars": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
+    "genre": "Science Fiction",
+    "cinematographer": "Bill Pope",
+    "composer": "Don Davis",
+    "studio": "Warner Bros."
+  }
+}

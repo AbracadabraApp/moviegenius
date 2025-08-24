@@ -1,0 +1,296 @@
+{
+  "totalMovies": 1913,
+  "totalTerms": 1914,
+  "topDistinctive": [
+    {
+      "term": "man",
+      "termFreq": 30,
+      "docFreq": 30,
+      "idf": 4.155230587778098,
+      "tfidf": 124.65691763334293,
+      "docPercentage": "1.6"
+    },
+    {
+      "term": "black",
+      "termFreq": 29,
+      "docFreq": 29,
+      "idf": 4.189132139453779,
+      "tfidf": 121.48483204415959,
+      "docPercentage": "1.5"
+    },
+    {
+      "term": "night",
+      "termFreq": 28,
+      "docFreq": 28,
+      "idf": 4.2242234592650485,
+      "tfidf": 118.27825685942136,
+      "docPercentage": "1.5"
+    },
+    {
+      "term": "dead",
+      "termFreq": 20,
+      "docFreq": 20,
+      "idf": 4.560695695886262,
+      "tfidf": 91.21391391772525,
+      "docPercentage": "1.0"
+    },
+    {
+      "term": "dark",
+      "termFreq": 18,
+      "docFreq": 18,
+      "idf": 4.666056211544088,
+      "tfidf": 83.98901180779359,
+      "docPercentage": "0.9"
+    },
+    {
+      "term": "devil",
+      "termFreq": 16,
+      "docFreq": 16,
+      "idf": 4.783839247200472,
+      "tfidf": 76.54142795520755,
+      "docPercentage": "0.8"
+    },
+    {
+      "term": "house",
+      "termFreq": 15,
+      "docFreq": 15,
+      "idf": 4.848377768338043,
+      "tfidf": 72.72566652507065,
+      "docPercentage": "0.8"
+    },
+    {
+      "term": "last",
+      "termFreq": 15,
+      "docFreq": 15,
+      "idf": 4.848377768338043,
+      "tfidf": 72.72566652507065,
+      "docPercentage": "0.8"
+    },
+    {
+      "term": "killer",
+      "termFreq": 15,
+      "docFreq": 15,
+      "idf": 4.848377768338043,
+      "tfidf": 72.72566652507065,
+      "docPercentage": "0.8"
+    },
+    {
+      "term": "days",
+      "termFreq": 13,
+      "docFreq": 13,
+      "idf": 4.9914786119787165,
+      "tfidf": 64.88922195572331,
+      "docPercentage": "0.7"
+    },
+    {
+      "term": "death",
+      "termFreq": 13,
+      "docFreq": 13,
+      "idf": 4.9914786119787165,
+      "tfidf": 64.88922195572331,
+      "docPercentage": "0.7"
+    },
+    {
+      "term": "day",
+      "termFreq": 13,
+      "docFreq": 13,
+      "idf": 4.9914786119787165,
+      "tfidf": 64.88922195572331,
+      "docPercentage": "0.7"
+    },
+    {
+      "term": "kill",
+      "termFreq": 13,
+      "docFreq": 13,
+      "idf": 4.9914786119787165,
+      "tfidf": 64.88922195572331,
+      "docPercentage": "0.7"
+    },
+    {
+      "term": "eye",
+      "termFreq": 13,
+      "docFreq": 13,
+      "idf": 4.9914786119787165,
+      "tfidf": 64.88922195572331,
+      "docPercentage": "0.7"
+    },
+    {
+      "term": "time",
+      "termFreq": 13,
+      "docFreq": 13,
+      "idf": 4.9914786119787165,
+      "tfidf": 64.88922195572331,
+      "docPercentage": "0.7"
+    }
+  ],
+  "commonThemes": [
+    {
+      "term": "man",
+      "termFreq": 30,
+      "docFreq": 30,
+      "idf": 4.155230587778098,
+      "tfidf": 124.65691763334293,
+      "docPercentage": "1.6"
+    },
+    {
+      "term": "black",
+      "termFreq": 29,
+      "docFreq": 29,
+      "idf": 4.189132139453779,
+      "tfidf": 121.48483204415959,
+      "docPercentage": "1.5"
+    },
+    {
+      "term": "night",
+      "termFreq": 28,
+      "docFreq": 28,
+      "idf": 4.2242234592650485,
+      "tfidf": 118.27825685942136,
+      "docPercentage": "1.5"
+    },
+    {
+      "term": "dead",
+      "termFreq": 20,
+      "docFreq": 20,
+      "idf": 4.560695695886262,
+      "tfidf": 91.21391391772525,
+      "docPercentage": "1.0"
+    },
+    {
+      "term": "dark",
+      "termFreq": 18,
+      "docFreq": 18,
+      "idf": 4.666056211544088,
+      "tfidf": 83.98901180779359,
+      "docPercentage": "0.9"
+    },
+    {
+      "term": "devil",
+      "termFreq": 16,
+      "docFreq": 16,
+      "idf": 4.783839247200472,
+      "tfidf": 76.54142795520755,
+      "docPercentage": "0.8"
+    },
+    {
+      "term": "house",
+      "termFreq": 15,
+      "docFreq": 15,
+      "idf": 4.848377768338043,
+      "tfidf": 72.72566652507065,
+      "docPercentage": "0.8"
+    },
+    {
+      "term": "last",
+      "termFreq": 15,
+      "docFreq": 15,
+      "idf": 4.848377768338043,
+      "tfidf": 72.72566652507065,
+      "docPercentage": "0.8"
+    },
+    {
+      "term": "killer",
+      "termFreq": 15,
+      "docFreq": 15,
+      "idf": 4.848377768338043,
+      "tfidf": 72.72566652507065,
+      "docPercentage": "0.8"
+    },
+    {
+      "term": "days",
+      "termFreq": 13,
+      "docFreq": 13,
+      "idf": 4.9914786119787165,
+      "tfidf": 64.88922195572331,
+      "docPercentage": "0.7"
+    },
+    {
+      "term": "death",
+      "termFreq": 13,
+      "docFreq": 13,
+      "idf": 4.9914786119787165,
+      "tfidf": 64.88922195572331,
+      "docPercentage": "0.7"
+    },
+    {
+      "term": "day",
+      "termFreq": 13,
+      "docFreq": 13,
+      "idf": 4.9914786119787165,
+      "tfidf": 64.88922195572331,
+      "docPercentage": "0.7"
+    },
+    {
+      "term": "kill",
+      "termFreq": 13,
+      "docFreq": 13,
+      "idf": 4.9914786119787165,
+      "tfidf": 64.88922195572331,
+      "docPercentage": "0.7"
+    },
+    {
+      "term": "eye",
+      "termFreq": 13,
+      "docFreq": 13,
+      "idf": 4.9914786119787165,
+      "tfidf": 64.88922195572331,
+      "docPercentage": "0.7"
+    },
+    {
+      "term": "time",
+      "termFreq": 13,
+      "docFreq": 13,
+      "idf": 4.9914786119787165,
+      "tfidf": 64.88922195572331,
+      "docPercentage": "0.7"
+    }
+  ],
+  "thematicClusters": {},
+  "subGenreProposals": [
+    {
+      "name": "Psychological Thrillers",
+      "estimatedSize": 478,
+      "costEstimate": 2.92,
+      "description": "Mind games, supernatural elements, identity crises",
+      "keyThemes": [],
+      "clusters": []
+    },
+    {
+      "name": "Investigation Thrillers",
+      "estimatedSize": 573,
+      "costEstimate": 3.5,
+      "description": "Crime solving, legal drama, medical mysteries",
+      "keyThemes": [
+        "killer",
+        "murder",
+        "crime"
+      ],
+      "clusters": [
+        "Crime Thrillers"
+      ]
+    },
+    {
+      "name": "Action Thrillers",
+      "estimatedSize": 478,
+      "costEstimate": 2.92,
+      "description": "High-stakes action, espionage, survival scenarios",
+      "keyThemes": [
+        "escape",
+        "operation",
+        "agent"
+      ],
+      "clusters": [
+        "Action Thrillers"
+      ]
+    },
+    {
+      "name": "Conspiracy Thrillers",
+      "estimatedSize": 382,
+      "costEstimate": 2.33,
+      "description": "Government plots, tech conspiracies, system corruption",
+      "keyThemes": [],
+      "clusters": []
+    }
+  ],
+  "vocabularyComplexity": 1.0005227391531626
+}

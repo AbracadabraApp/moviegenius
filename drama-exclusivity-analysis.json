@@ -1,0 +1,371 @@
+{
+  "totalDramaMovies": 8866,
+  "exclusiveMovies": 3276,
+  "exclusivePercentage": 36.950146627565985,
+  "multiGenreMovies": 5590,
+  "multiGenrePercentage": 63.049853372434015,
+  "topOverlaps": [
+    [
+      "comedy",
+      1001
+    ],
+    [
+      "crime",
+      806
+    ],
+    [
+      "comedy-drama",
+      804
+    ],
+    [
+      "romance",
+      567
+    ],
+    [
+      "historical",
+      566
+    ],
+    [
+      "war",
+      552
+    ],
+    [
+      "music",
+      298
+    ],
+    [
+      "biographical",
+      290
+    ],
+    [
+      "thriller",
+      222
+    ],
+    [
+      "musical",
+      203
+    ],
+    [
+      "action",
+      202
+    ],
+    [
+      "adventure",
+      175
+    ],
+    [
+      "fantasy",
+      162
+    ],
+    [
+      "sports",
+      155
+    ],
+    [
+      "horror",
+      149
+    ]
+  ],
+  "exclusiveMoviesSample": [
+    {
+      "title": "-30-",
+      "year": 1959,
+      "tmdbId": 35924,
+      "id": "25bd967b-5926-49c3-bb4d-594ed0f9a456"
+    },
+    {
+      "title": "11’09”01—September 11: India",
+      "year": 2002,
+      "tmdbId": 515360,
+      "id": "7b1f8572-79dd-42ee-b5e5-895f3ec5ab56"
+    },
+    {
+      "title": "12 Angry Men",
+      "year": 1957,
+      "tmdbId": 389,
+      "id": "f1fe348d-8b36-4f23-8ba5-9f1ef37948f6"
+    },
+    {
+      "title": "127 Hours",
+      "year": 2010,
+      "tmdbId": 44115,
+      "id": "8a22b7dd-56be-4045-a40e-798412236c6e"
+    },
+    {
+      "title": "2 or 3 Things I Know About Her",
+      "year": 1967,
+      "tmdbId": 8074,
+      "id": "c96f9583-a4a5-4c4b-8ea3-91bd21d3f58e"
+    },
+    {
+      "title": "200 Meters",
+      "year": 2020,
+      "tmdbId": 727012,
+      "id": "6225be56-a132-414b-9f92-52660514fc7b"
+    },
+    {
+      "title": "2021 Together Again",
+      "year": 2021,
+      "tmdbId": 1116900,
+      "id": "993aab3e-f1ab-43c5-b02a-57b08c14c497"
+    },
+    {
+      "title": "25th Hour",
+      "year": 2002,
+      "tmdbId": 1429,
+      "id": "bbff3203-4cac-40e2-9f00-763d0265a84f"
+    },
+    {
+      "title": "28 Days",
+      "year": 2000,
+      "tmdbId": 10468,
+      "id": "8c997115-c3e9-498d-85b7-1828c91cb49f"
+    },
+    {
+      "title": "3 Faces",
+      "year": 2018,
+      "tmdbId": 517731,
+      "id": "6988a03c-6467-4330-bbe1-7aa58ecb6e67"
+    },
+    {
+      "title": "3 Generations",
+      "year": 2016,
+      "tmdbId": 300667,
+      "id": "53f8948d-957a-4dd2-a2eb-c2a7cd1e7859"
+    },
+    {
+      "title": "3 Needles",
+      "year": 2005,
+      "tmdbId": 18166,
+      "id": "46dae319-5f3e-4c8e-a7da-dc4709992ff8"
+    },
+    {
+      "title": "35 Shots of Rum",
+      "year": 2008,
+      "tmdbId": 26191,
+      "id": "e5f909e0-51a5-437a-95df-b674784d5dca"
+    },
+    {
+      "title": "36 Chowringhee Lane",
+      "year": 1981,
+      "tmdbId": 90835,
+      "id": "53d667ff-6e83-4299-8b4d-dc2ebbe502fc"
+    },
+    {
+      "title": "360",
+      "year": 2011,
+      "tmdbId": 89455,
+      "id": "487e14d6-80f7-4445-b630-dc286729d46b"
+    },
+    {
+      "title": "37 Seconds",
+      "year": 2019,
+      "tmdbId": 570735,
+      "id": "0b9c2d79-ce10-4cc7-a8e3-5a9dfa2afd0a"
+    },
+    {
+      "title": "4 Months, 3 Weeks and 2 Days",
+      "year": 2007,
+      "tmdbId": 2009,
+      "id": "74ef3d4d-2038-4365-9421-2d2d8c44d1af"
+    },
+    {
+      "title": "40 Square Meters of Germany",
+      "year": 1986,
+      "tmdbId": 279669,
+      "id": "1048b984-07b8-4c46-b846-08c523f131d8"
+    },
+    {
+      "title": "45 Years",
+      "year": 2015,
+      "tmdbId": 311291,
+      "id": "546ebc37-f27f-441d-84cd-7de0f6f1272a"
+    },
+    {
+      "title": "5 Centimeters Per Second",
+      "year": 2007,
+      "tmdbId": 38142,
+      "id": "f9c0c1b4-4e4e-4ffe-8b6a-01497a8957f1"
+    },
+    {
+      "title": "52 Tuesdays",
+      "year": 2013,
+      "tmdbId": 244801,
+      "id": "0fb960a5-6f7f-49a1-bcd7-ad1765eea336"
+    },
+    {
+      "title": "54",
+      "year": 1998,
+      "tmdbId": 3682,
+      "id": "22443084-bf51-4f82-94b7-998cecc42ace"
+    },
+    {
+      "title": "5x Favela: Now By Ourselves",
+      "year": 2010,
+      "tmdbId": 45534,
+      "id": "6eb27df9-fa6f-4fb8-82bf-cd169d5d3437"
+    },
+    {
+      "title": "7 Days in Havana",
+      "year": 2012,
+      "tmdbId": 94904,
+      "id": "9ef4f275-f50f-489e-97cc-542c5571e0bc"
+    },
+    {
+      "title": "71 Fragments of a Chronology of Chance",
+      "year": 1994,
+      "tmdbId": 32764,
+      "id": "f034f767-c1b8-4ea0-a385-ad3ec560069f"
+    },
+    {
+      "title": "8½",
+      "year": 1963,
+      "tmdbId": 422,
+      "id": "ea1d0e8f-d836-464a-976b-997f4f647a3b"
+    },
+    {
+      "title": "8½ Women",
+      "year": 1999,
+      "tmdbId": 11332,
+      "id": "b5ae7cc0-50c5-45e7-ae30-0fc940463531"
+    },
+    {
+      "title": "84 Charing Cross Road",
+      "year": 1987,
+      "tmdbId": 15677,
+      "id": "9cb03f48-e502-441a-89c0-04c63798ff42"
+    },
+    {
+      "title": "A Beautiful Day in the Neighborhood",
+      "year": 2019,
+      "tmdbId": 501907,
+      "id": "8f63cbde-abf1-4673-8268-e33064d8ebcb"
+    },
+    {
+      "title": "A Beautiful Mind",
+      "year": 2001,
+      "tmdbId": 453,
+      "id": "56b4cbba-818d-46d3-9a28-104e500cdf1a"
+    },
+    {
+      "title": "A Better Life",
+      "year": 2011,
+      "tmdbId": 85546,
+      "id": "62f0712f-ac2a-45ee-9ce4-181309e12f4a"
+    },
+    {
+      "title": "A Christmas Tale",
+      "year": 2008,
+      "tmdbId": 75725,
+      "id": "7d7b9068-bb4a-4a46-9516-eaecba2c058a"
+    },
+    {
+      "title": "A Corner in Wheat",
+      "year": 1909,
+      "tmdbId": 49270,
+      "id": "738fd38d-f315-47e9-a762-d0661118677f"
+    },
+    {
+      "title": "A Couple",
+      "year": 2022,
+      "tmdbId": 1004657,
+      "id": "2fac6342-17f0-42cf-ab44-70d81c2e345b"
+    },
+    {
+      "title": "A Cry in the Dark",
+      "year": 1988,
+      "tmdbId": 35119,
+      "id": "9033538c-a5c4-4065-98a8-8f7e24ed157f"
+    },
+    {
+      "title": "A Delicate Balance",
+      "year": 1973,
+      "tmdbId": 38729,
+      "id": "1e6345d6-f231-4585-94e9-adf85da5f50c"
+    },
+    {
+      "title": "A Dry White Season",
+      "year": 1989,
+      "tmdbId": 32075,
+      "id": "a201701e-c06d-41a6-bb98-4a44781a7b74"
+    },
+    {
+      "title": "A Face in the Crowd",
+      "year": 1957,
+      "tmdbId": 21849,
+      "id": "8b9c4bde-ed71-44c8-86c2-8a33db7bfa18"
+    },
+    {
+      "title": "A Family Thing",
+      "year": 1996,
+      "tmdbId": 41852,
+      "id": "bb578b91-154d-4714-b9e2-17554249ae7d"
+    },
+    {
+      "title": "A Fantastic Woman",
+      "year": 2017,
+      "tmdbId": 429191,
+      "id": "89a7b2eb-783a-4a29-91ee-5f0c2ab03e5c"
+    },
+    {
+      "title": "A Geisha",
+      "year": 1953,
+      "tmdbId": 45991,
+      "id": "c2c74466-f4ad-403f-ad6a-911f918fcc70"
+    },
+    {
+      "title": "A Girl at My Door",
+      "year": 2014,
+      "tmdbId": 266058,
+      "id": "ac3667e1-3c7c-485d-bffb-851dda5976bb"
+    },
+    {
+      "title": "A Girl Named Tamiko",
+      "year": 1962,
+      "tmdbId": 173654,
+      "id": "798857f3-20ad-42c4-8589-2dd8e1f83f32"
+    },
+    {
+      "title": "A Good Marriage",
+      "year": 1982,
+      "tmdbId": 2861,
+      "id": "63d29704-04c7-4112-9eb3-494f3ed527fa"
+    },
+    {
+      "title": "A Guide to Recognizing Your Saints",
+      "year": 2006,
+      "tmdbId": 8194,
+      "id": "e481f84c-03e9-4bdf-94e0-cc72e49a3dae"
+    },
+    {
+      "title": "A Hen in the Wind",
+      "year": 1948,
+      "tmdbId": 126219,
+      "id": "b9518d7b-a17d-4f43-ae60-32e7be4f969b"
+    },
+    {
+      "title": "A Hero",
+      "year": 2021,
+      "tmdbId": 31900,
+      "id": "cc003444-e21d-43cc-9355-74583329222a"
+    },
+    {
+      "title": "A Kind of Loving",
+      "year": 1962,
+      "tmdbId": 33765,
+      "id": "d2e2f9df-61c3-4c05-b331-241fefb86bec"
+    },
+    {
+      "title": "A Late Quartet",
+      "year": 2012,
+      "tmdbId": 121879,
+      "id": "0f232099-b022-42f0-bdcf-f88b1ec38fd6"
+    },
+    {
+      "title": "A Lion Is in the Streets",
+      "year": 1953,
+      "tmdbId": 109332,
+      "id": "2691a770-7773-4a57-a4bf-ff1649cc8203"
+    }
+  ]
+}

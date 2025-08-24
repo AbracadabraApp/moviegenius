@@ -1,0 +1,5704 @@
+{
+  "consolidationPhase": 1,
+  "totalMoviesProcessed": 644,
+  "totalAssignments": 280,
+  "totalCost": 0.01991175,
+  "failures": 0,
+  "startTime": "2025-08-21T05:40:19.188Z",
+  "endTime": "2025-08-21T05:47:38.699Z",
+  "assignmentsByList": [
+    {
+      "listName": "Jazz Age Entertainment Spectacles",
+      "newMovies": [
+        {
+          "movieId": "649ed81c-53e9-411e-b596-60d35c297330",
+          "title": "Paris",
+          "year": 1929
+        },
+        {
+          "movieId": "a1bb98de-fe9f-49d0-9ae4-e5b25ee14878",
+          "title": "The Hollywood Revue of 1929",
+          "year": 1929
+        },
+        {
+          "movieId": "efddb3f6-101a-4bc0-8eba-3945a54bc056",
+          "title": "The Show of Shows",
+          "year": 1929
+        },
+        {
+          "movieId": "2fb93dbc-c59b-4220-9a65-faf24830ca06",
+          "title": "No, No, Nanette",
+          "year": 1930
+        },
+        {
+          "movieId": "bad45b61-0230-4549-805f-90d49ca06800",
+          "title": "Paramount on Parade",
+          "year": 1930
+        },
+        {
+          "movieId": "a3516016-57b6-4f4a-8c07-057651f7fe24",
+          "title": "One Hour with You",
+          "year": 1932
+        },
+        {
+          "movieId": "6a8c3f25-ae09-4a9f-be38-20121a103058",
+          "title": "Flying Down to Rio",
+          "year": 1933
+        },
+        {
+          "movieId": "d5b417c4-c721-4350-9f88-6cbaa7130462",
+          "title": "Go Into Your Dance",
+          "year": 1935
+        },
+        {
+          "movieId": "6cd4f4f0-8bb0-49e6-8268-14b5141f8f19",
+          "title": "Alexander's Ragtime Band",
+          "year": 1938
+        },
+        {
+          "movieId": "4c454a93-d785-4661-a947-90a82a220759",
+          "title": "The Big Broadcast of 1938",
+          "year": 1938
+        }
+      ],
+      "count": 10
+    },
+    {
+      "listName": "Theatrical Revue Spectacles",
+      "newMovies": [
+        {
+          "movieId": "de469ba9-e108-42d7-b568-3d37511cc1a3",
+          "title": "Fox Movietone Follies of 1929",
+          "year": 1929
+        },
+        {
+          "movieId": "a1bb98de-fe9f-49d0-9ae4-e5b25ee14878",
+          "title": "The Hollywood Revue of 1929",
+          "year": 1929
+        },
+        {
+          "movieId": "efddb3f6-101a-4bc0-8eba-3945a54bc056",
+          "title": "The Show of Shows",
+          "year": 1929
+        },
+        {
+          "movieId": "2fb93dbc-c59b-4220-9a65-faf24830ca06",
+          "title": "No, No, Nanette",
+          "year": 1930
+        },
+        {
+          "movieId": "bad45b61-0230-4549-805f-90d49ca06800",
+          "title": "Paramount on Parade",
+          "year": 1930
+        },
+        {
+          "movieId": "6a8c3f25-ae09-4a9f-be38-20121a103058",
+          "title": "Flying Down to Rio",
+          "year": 1933
+        },
+        {
+          "movieId": "872d1745-c4d0-49f0-abdf-9532817aa282",
+          "title": "Murder at the Vanities",
+          "year": 1934
+        }
+      ],
+      "count": 7
+    },
+    {
+      "listName": "Berkeley Spectacular Production Numbers",
+      "newMovies": [
+        {
+          "movieId": "c70f610b-7a02-4acd-8acc-82ce3d80ad71",
+          "title": "Footlight Parade",
+          "year": 1933
+        },
+        {
+          "movieId": "9ecaac45-ec52-4110-8339-2134ca07467d",
+          "title": "Gold Diggers of 1933",
+          "year": 1933
+        },
+        {
+          "movieId": "0ef48c0a-e30a-4651-a09d-cf369fd7ee0e",
+          "title": "Roman Scandals",
+          "year": 1933
+        },
+        {
+          "movieId": "c569638e-4145-40b6-9f46-f758db9287e5",
+          "title": "Dames",
+          "year": 1934
+        },
+        {
+          "movieId": "177f98ae-4940-4004-8f5d-1fca9cec2b5f",
+          "title": "Wonder Bar",
+          "year": 1934
+        },
+        {
+          "movieId": "fe2067fc-26de-43be-bbf2-f2d68538cb72",
+          "title": "Gold Diggers of 1935",
+          "year": 1935
+        },
+        {
+          "movieId": "e5583674-0b7a-4fb9-800a-857001854d34",
+          "title": "Varsity Show",
+          "year": 1937
+        }
+      ],
+      "count": 7
+    },
+    {
+      "listName": "Depression Era Social Commentary Musicals",
+      "newMovies": [
+        {
+          "movieId": "c70f610b-7a02-4acd-8acc-82ce3d80ad71",
+          "title": "Footlight Parade",
+          "year": 1933
+        },
+        {
+          "movieId": "9ecaac45-ec52-4110-8339-2134ca07467d",
+          "title": "Gold Diggers of 1933",
+          "year": 1933
+        },
+        {
+          "movieId": "01a24a08-7bd6-40bc-9319-1908d232cb0d",
+          "title": "Hallelujah, I'm a Bum",
+          "year": 1933
+        },
+        {
+          "movieId": "0ef48c0a-e30a-4651-a09d-cf369fd7ee0e",
+          "title": "Roman Scandals",
+          "year": 1933
+        },
+        {
+          "movieId": "fe2067fc-26de-43be-bbf2-f2d68538cb72",
+          "title": "Gold Diggers of 1935",
+          "year": 1935
+        },
+        {
+          "movieId": "e5583674-0b7a-4fb9-800a-857001854d34",
+          "title": "Varsity Show",
+          "year": 1937
+        }
+      ],
+      "count": 6
+    },
+    {
+      "listName": "Royal Court Romance Operettas",
+      "newMovies": [
+        {
+          "movieId": "ae8b8e41-207e-43a3-a6d4-13dc849e1254",
+          "title": "The Love Parade",
+          "year": 1929
+        },
+        {
+          "movieId": "80caaa50-4cf7-4dea-84bd-e80fda75d842",
+          "title": "The Smiling Lieutenant",
+          "year": 1931
+        },
+        {
+          "movieId": "feb2e93c-f824-469a-8eec-ac8f5bda8ce6",
+          "title": "The Merry Widow",
+          "year": 1934
+        },
+        {
+          "movieId": "a45a7eb5-d79f-44bb-b179-59d1df2a2f25",
+          "title": "Last Love",
+          "year": 1935
+        },
+        {
+          "movieId": "574a1a76-a80a-4e9f-bfe6-53e896913e44",
+          "title": "Rosalie",
+          "year": 1937
+        }
+      ],
+      "count": 5
+    },
+    {
+      "listName": "Campus Musical Comedies",
+      "newMovies": [
+        {
+          "movieId": "1a1c9eb0-1aaf-48c1-8d8e-7a4fc00e544e",
+          "title": "Words and Music",
+          "year": 1929
+        },
+        {
+          "movieId": "83547cbf-76a8-408b-b2cf-9a8af6382738",
+          "title": "College Humor",
+          "year": 1933
+        },
+        {
+          "movieId": "f64e0697-3bd9-430c-9442-7499aa95aa88",
+          "title": "Pigskin Parade",
+          "year": 1936
+        },
+        {
+          "movieId": "e5583674-0b7a-4fb9-800a-857001854d34",
+          "title": "Varsity Show",
+          "year": 1937
+        },
+        {
+          "movieId": "95bb6b47-c64e-4888-8e8c-6b462c761421",
+          "title": "College Swing",
+          "year": 1938
+        }
+      ],
+      "count": 5
+    },
+    {
+      "listName": "Early Radio Entertainment Musicals",
+      "newMovies": [
+        {
+          "movieId": "6c1b4eaa-d390-4301-b106-59eaf2bf613b",
+          "title": "The Big Broadcast",
+          "year": 1932
+        },
+        {
+          "movieId": "554c139b-08b4-474e-9f69-cf1beecd1e37",
+          "title": "Broadway Gondolier",
+          "year": 1935
+        },
+        {
+          "movieId": "db1cf9df-84f7-4dca-8309-78dacfb94ff1",
+          "title": "The Big Broadcast of 1936",
+          "year": 1935
+        },
+        {
+          "movieId": "0ddced43-2412-4ca7-818b-6102f849d11b",
+          "title": "Rebecca of Sunnybrook Farm",
+          "year": 1938
+        },
+        {
+          "movieId": "4c454a93-d785-4661-a947-90a82a220759",
+          "title": "The Big Broadcast of 1938",
+          "year": 1938
+        }
+      ],
+      "count": 5
+    },
+    {
+      "listName": "Celebrity Cameo Revue Films",
+      "newMovies": [
+        {
+          "movieId": "6c1b4eaa-d390-4301-b106-59eaf2bf613b",
+          "title": "The Big Broadcast",
+          "year": 1932
+        },
+        {
+          "movieId": "c8ab394e-aa50-411e-84b2-bb099dd1db53",
+          "title": "Hollywood Party",
+          "year": 1934
+        },
+        {
+          "movieId": "db1cf9df-84f7-4dca-8309-78dacfb94ff1",
+          "title": "The Big Broadcast of 1936",
+          "year": 1935
+        },
+        {
+          "movieId": "0ddced43-2412-4ca7-818b-6102f849d11b",
+          "title": "Rebecca of Sunnybrook Farm",
+          "year": 1938
+        },
+        {
+          "movieId": "4c454a93-d785-4661-a947-90a82a220759",
+          "title": "The Big Broadcast of 1938",
+          "year": 1938
+        }
+      ],
+      "count": 5
+    },
+    {
+      "listName": "Pioneering Color Musical Features",
+      "newMovies": [
+        {
+          "movieId": "ff0a7f23-82e5-4521-8529-2a9087cb0ff7",
+          "title": "On with the Show!",
+          "year": 1929
+        },
+        {
+          "movieId": "3b29491e-01e2-42e7-b5a2-ce3cfd90567e",
+          "title": "Sally",
+          "year": 1929
+        },
+        {
+          "movieId": "956b02b3-1b5b-4ae5-9cb4-edad53c0fffc",
+          "title": "The Rogue Song",
+          "year": 1930
+        },
+        {
+          "movieId": "bbfcb1fc-5784-4aba-9107-4ceca4e0f4d7",
+          "title": "La Cucaracha",
+          "year": 1934
+        }
+      ],
+      "count": 4
+    },
+    {
+      "listName": "Interracial Relationship Dramas",
+      "newMovies": [
+        {
+          "movieId": "b66871cd-d9ae-4a07-93a8-ca5c958ea30b",
+          "title": "Show Boat",
+          "year": 1929
+        },
+        {
+          "movieId": "560b7643-c16b-4833-b50d-f0a5f83b3ed1",
+          "title": "Bright Lights",
+          "year": 1930
+        },
+        {
+          "movieId": "16749a62-b7f1-481e-bdcd-3b482cf7f7ec",
+          "title": "Mississippi",
+          "year": 1935
+        },
+        {
+          "movieId": "b31512b6-6d5d-4210-a578-ff6578e06f5a",
+          "title": "Show Boat",
+          "year": 1936
+        }
+      ],
+      "count": 4
+    },
+    {
+      "listName": "Riverboat Entertainment Sagas",
+      "newMovies": [
+        {
+          "movieId": "b66871cd-d9ae-4a07-93a8-ca5c958ea30b",
+          "title": "Show Boat",
+          "year": 1929
+        },
+        {
+          "movieId": "560b7643-c16b-4833-b50d-f0a5f83b3ed1",
+          "title": "Bright Lights",
+          "year": 1930
+        },
+        {
+          "movieId": "16749a62-b7f1-481e-bdcd-3b482cf7f7ec",
+          "title": "Mississippi",
+          "year": 1935
+        },
+        {
+          "movieId": "b31512b6-6d5d-4210-a578-ff6578e06f5a",
+          "title": "Show Boat",
+          "year": 1936
+        }
+      ],
+      "count": 4
+    },
+    {
+      "listName": "Vaudeville to Broadway Transitions",
+      "newMovies": [
+        {
+          "movieId": "13ee47b8-3ced-49e0-801a-68b08dbed63a",
+          "title": "The Broadway Melody",
+          "year": 1929
+        },
+        {
+          "movieId": "92c83178-d374-4ae3-91ef-591042b3b681",
+          "title": "The Dance of Life",
+          "year": 1929
+        },
+        {
+          "movieId": "217e3643-b5b3-402b-a222-18d3758319bb",
+          "title": "Stage Struck",
+          "year": 1936
+        },
+        {
+          "movieId": "51b14822-c48a-4fde-add8-7f02295c6ad1",
+          "title": "Babes in Arms",
+          "year": 1939
+        }
+      ],
+      "count": 4
+    },
+    {
+      "listName": "Military Romance Musical Comedies",
+      "newMovies": [
+        {
+          "movieId": "80caaa50-4cf7-4dea-84bd-e80fda75d842",
+          "title": "The Smiling Lieutenant",
+          "year": 1931
+        },
+        {
+          "movieId": "a8226fa4-c89b-4be0-b3b0-dcba95ef81c8",
+          "title": "Born to Dance",
+          "year": 1936
+        },
+        {
+          "movieId": "be1d2c81-e267-4959-9c39-525596b40195",
+          "title": "Follow the Fleet",
+          "year": 1936
+        },
+        {
+          "movieId": "574a1a76-a80a-4e9f-bfe6-53e896913e44",
+          "title": "Rosalie",
+          "year": 1937
+        }
+      ],
+      "count": 4
+    },
+    {
+      "listName": "Lubitsch Sophisticated Operettas",
+      "newMovies": [
+        {
+          "movieId": "80caaa50-4cf7-4dea-84bd-e80fda75d842",
+          "title": "The Smiling Lieutenant",
+          "year": 1931
+        },
+        {
+          "movieId": "a3516016-57b6-4f4a-8c07-057651f7fe24",
+          "title": "One Hour with You",
+          "year": 1932
+        },
+        {
+          "movieId": "feb2e93c-f824-469a-8eec-ac8f5bda8ce6",
+          "title": "The Merry Widow",
+          "year": 1934
+        },
+        {
+          "movieId": "a45a7eb5-d79f-44bb-b179-59d1df2a2f25",
+          "title": "Last Love",
+          "year": 1935
+        }
+      ],
+      "count": 4
+    },
+    {
+      "listName": "Depression Era Hope Films",
+      "newMovies": [
+        {
+          "movieId": "9ecaac45-ec52-4110-8339-2134ca07467d",
+          "title": "Gold Diggers of 1933",
+          "year": 1933
+        },
+        {
+          "movieId": "fe2067fc-26de-43be-bbf2-f2d68538cb72",
+          "title": "Gold Diggers of 1935",
+          "year": 1935
+        },
+        {
+          "movieId": "e5583674-0b7a-4fb9-800a-857001854d34",
+          "title": "Varsity Show",
+          "year": 1937
+        },
+        {
+          "movieId": "51b14822-c48a-4fde-add8-7f02295c6ad1",
+          "title": "Babes in Arms",
+          "year": 1939
+        }
+      ],
+      "count": 4
+    },
+    {
+      "listName": "Classical Music Origin Stories",
+      "newMovies": [
+        {
+          "movieId": "8cec371b-d315-4bc6-bcd1-5b931e7aa86d",
+          "title": "One Night of Love",
+          "year": 1934
+        },
+        {
+          "movieId": "a45a7eb5-d79f-44bb-b179-59d1df2a2f25",
+          "title": "Last Love",
+          "year": 1935
+        },
+        {
+          "movieId": "93206caf-f20a-4c45-ac3e-6d30e40c7a1b",
+          "title": "One Hundred Men and a Girl",
+          "year": 1937
+        },
+        {
+          "movieId": "498ce5db-4439-43f4-8238-af07dfe01129",
+          "title": "The Great Waltz",
+          "year": 1938
+        }
+      ],
+      "count": 4
+    },
+    {
+      "listName": "Blackface Musical Controversies",
+      "newMovies": [
+        {
+          "movieId": "587699ae-77d4-4947-a01b-dedc9880c888",
+          "title": "The Jazz Singer",
+          "year": 1927
+        },
+        {
+          "movieId": "4fc4dafe-3162-460b-8a5a-a6f078971584",
+          "title": "The Singing Fool",
+          "year": 1928
+        },
+        {
+          "movieId": "177f98ae-4940-4004-8f5d-1fca9cec2b5f",
+          "title": "Wonder Bar",
+          "year": 1934
+        }
+      ],
+      "count": 3
+    },
+    {
+      "listName": "Hollywood Romance Crossovers",
+      "newMovies": [
+        {
+          "movieId": "edcd46f3-1e5c-42dc-a92f-5e3165571ff5",
+          "title": "Married in Hollywood",
+          "year": 1929
+        },
+        {
+          "movieId": "944b3df9-2bf7-4163-9533-319289ad2462",
+          "title": "The Gay Divorcee",
+          "year": 1934
+        },
+        {
+          "movieId": "db9a6ea3-99c2-4ec5-a901-bc5fafd48cd4",
+          "title": "Sweethearts",
+          "year": 1938
+        }
+      ],
+      "count": 3
+    },
+    {
+      "listName": "French Nightlife Musicals",
+      "newMovies": [
+        {
+          "movieId": "649ed81c-53e9-411e-b596-60d35c297330",
+          "title": "Paris",
+          "year": 1929
+        },
+        {
+          "movieId": "a3516016-57b6-4f4a-8c07-057651f7fe24",
+          "title": "One Hour with You",
+          "year": 1932
+        },
+        {
+          "movieId": "177f98ae-4940-4004-8f5d-1fca9cec2b5f",
+          "title": "Wonder Bar",
+          "year": 1934
+        }
+      ],
+      "count": 3
+    },
+    {
+      "listName": "Exotic Adventure Musicals",
+      "newMovies": [
+        {
+          "movieId": "ca82d8fb-4719-4558-aac0-ed638b13ce85",
+          "title": "The Desert Song",
+          "year": 1929
+        },
+        {
+          "movieId": "6a8c3f25-ae09-4a9f-be38-20121a103058",
+          "title": "Flying Down to Rio",
+          "year": 1933
+        },
+        {
+          "movieId": "c6d11e53-0c64-464a-819c-10180af188c7",
+          "title": "Ali Baba",
+          "year": 1936
+        }
+      ],
+      "count": 3
+    },
+    {
+      "listName": "Early Talkie Star Parades",
+      "newMovies": [
+        {
+          "movieId": "a1bb98de-fe9f-49d0-9ae4-e5b25ee14878",
+          "title": "The Hollywood Revue of 1929",
+          "year": 1929
+        },
+        {
+          "movieId": "efddb3f6-101a-4bc0-8eba-3945a54bc056",
+          "title": "The Show of Shows",
+          "year": 1929
+        },
+        {
+          "movieId": "bad45b61-0230-4549-805f-90d49ca06800",
+          "title": "Paramount on Parade",
+          "year": 1930
+        }
+      ],
+      "count": 3
+    },
+    {
+      "listName": "Aristocratic Mistaken Identity Comedies",
+      "newMovies": [
+        {
+          "movieId": "85803358-a5f8-4f0c-89d5-f7b4034a1749",
+          "title": "Monte Carlo",
+          "year": 1930
+        },
+        {
+          "movieId": "da702623-a4a5-4d44-b9c7-ab791315d5c8",
+          "title": "Love Me Tonight",
+          "year": 1932
+        },
+        {
+          "movieId": "f7de8b17-18d4-4b7b-9408-335167c6b6b7",
+          "title": "A Damsel in Distress",
+          "year": 1937
+        }
+      ],
+      "count": 3
+    },
+    {
+      "listName": "Viennese Classical Music Romances",
+      "newMovies": [
+        {
+          "movieId": "aa836596-37d2-4665-9335-6616f2474615",
+          "title": "Two Hearts in Waltz Time",
+          "year": 1930
+        },
+        {
+          "movieId": "a45a7eb5-d79f-44bb-b179-59d1df2a2f25",
+          "title": "Last Love",
+          "year": 1935
+        },
+        {
+          "movieId": "498ce5db-4439-43f4-8238-af07dfe01129",
+          "title": "The Great Waltz",
+          "year": 1938
+        }
+      ],
+      "count": 3
+    },
+    {
+      "listName": "European Musical Pioneers",
+      "newMovies": [
+        {
+          "movieId": "aa836596-37d2-4665-9335-6616f2474615",
+          "title": "Two Hearts in Waltz Time",
+          "year": 1930
+        },
+        {
+          "movieId": "a45a7eb5-d79f-44bb-b179-59d1df2a2f25",
+          "title": "Last Love",
+          "year": 1935
+        },
+        {
+          "movieId": "498ce5db-4439-43f4-8238-af07dfe01129",
+          "title": "The Great Waltz",
+          "year": 1938
+        }
+      ],
+      "count": 3
+    },
+    {
+      "listName": "Prohibition Era Entertainment",
+      "newMovies": [
+        {
+          "movieId": "7d94fbc0-b871-4b27-8d7d-1d7ec05851bc",
+          "title": "Broadway",
+          "year": 1929
+        },
+        {
+          "movieId": "74a3aaa5-d7ec-43ad-a1ec-41bc78a0609e",
+          "title": "Cocoanuts",
+          "year": 1929
+        }
+      ],
+      "count": 2
+    },
+    {
+      "listName": "Gold Rush Era Social Commentary",
+      "newMovies": [
+        {
+          "movieId": "531a50fd-f75e-49d1-839f-a77c905b2835",
+          "title": "Gold Diggers of Broadway",
+          "year": 1929
+        },
+        {
+          "movieId": "1accd25a-748f-42ed-9056-4d432f818296",
+          "title": "The Girl of the Golden West",
+          "year": 1938
+        }
+      ],
+      "count": 2
+    },
+    {
+      "listName": "Chorus Girl Romance Stories",
+      "newMovies": [
+        {
+          "movieId": "531a50fd-f75e-49d1-839f-a77c905b2835",
+          "title": "Gold Diggers of Broadway",
+          "year": 1929
+        },
+        {
+          "movieId": "8bf0aaf4-a6a1-41cf-8d22-06408abd7578",
+          "title": "42nd Street",
+          "year": 1933
+        }
+      ],
+      "count": 2
+    },
+    {
+      "listName": "Southern Religious Musical Dramas",
+      "newMovies": [
+        {
+          "movieId": "fb5fd0dd-a46e-40eb-97d2-067bc9bbed4c",
+          "title": "Hallelujah",
+          "year": 1929
+        },
+        {
+          "movieId": "3266ee7d-b145-4666-ad0a-90c3da761715",
+          "title": "Hearts in Dixie",
+          "year": 1929
+        }
+      ],
+      "count": 2
+    },
+    {
+      "listName": "Spiritual Music Heritage Films",
+      "newMovies": [
+        {
+          "movieId": "fb5fd0dd-a46e-40eb-97d2-067bc9bbed4c",
+          "title": "Hallelujah",
+          "year": 1929
+        },
+        {
+          "movieId": "3266ee7d-b145-4666-ad0a-90c3da761715",
+          "title": "Hearts in Dixie",
+          "year": 1929
+        }
+      ],
+      "count": 2
+    },
+    {
+      "listName": "Mexican-American Frontier Musicals",
+      "newMovies": [
+        {
+          "movieId": "8ce03757-469a-4ec6-b490-705f67dfd3fa",
+          "title": "Rio Rita",
+          "year": 1929
+        },
+        {
+          "movieId": "031417d4-2c8b-41ad-973d-9a918f48ea67",
+          "title": "Rose of the Rio Grande",
+          "year": 1938
+        }
+      ],
+      "count": 2
+    },
+    {
+      "listName": "Ziegfeld Production Adaptations",
+      "newMovies": [
+        {
+          "movieId": "3b29491e-01e2-42e7-b5a2-ce3cfd90567e",
+          "title": "Sally",
+          "year": 1929
+        },
+        {
+          "movieId": "2f6211e1-a16b-42ee-8da6-13b586fc1ff6",
+          "title": "The Great Ziegfeld",
+          "year": 1936
+        }
+      ],
+      "count": 2
+    },
+    {
+      "listName": "Sibling Rivalry Performance Stories",
+      "newMovies": [
+        {
+          "movieId": "13ee47b8-3ced-49e0-801a-68b08dbed63a",
+          "title": "The Broadway Melody",
+          "year": 1929
+        },
+        {
+          "movieId": "bb0f15e4-d0be-4672-a54b-b519e29bf72e",
+          "title": "Three Smart Girls",
+          "year": 1936
+        }
+      ],
+      "count": 2
+    },
+    {
+      "listName": "Desert Adventure Operettas",
+      "newMovies": [
+        {
+          "movieId": "ca82d8fb-4719-4558-aac0-ed638b13ce85",
+          "title": "The Desert Song",
+          "year": 1929
+        },
+        {
+          "movieId": "c6d11e53-0c64-464a-819c-10180af188c7",
+          "title": "Ali Baba",
+          "year": 1936
+        }
+      ],
+      "count": 2
+    },
+    {
+      "listName": "Psychological Performance Dramas",
+      "newMovies": [
+        {
+          "movieId": "72348219-6a2e-4a45-8773-8a4fda44c6fa",
+          "title": "The Great Gabbo",
+          "year": 1929
+        },
+        {
+          "movieId": "872d1745-c4d0-49f0-abdf-9532817aa282",
+          "title": "Murder at the Vanities",
+          "year": 1934
+        }
+      ],
+      "count": 2
+    },
+    {
+      "listName": "Gender Role Reversal Musicals",
+      "newMovies": [
+        {
+          "movieId": "ae8b8e41-207e-43a3-a6d4-13dc849e1254",
+          "title": "The Love Parade",
+          "year": 1929
+        },
+        {
+          "movieId": "18846298-89a1-41f6-90d9-a3bbd948a389",
+          "title": "Viktor und Viktoria",
+          "year": 1933
+        }
+      ],
+      "count": 2
+    },
+    {
+      "listName": "Broadway to Hollywood Transitions",
+      "newMovies": [
+        {
+          "movieId": "ecd56f43-c4f0-45d5-b2e2-c26d4d40f2a6",
+          "title": "Show Girl in Hollywood",
+          "year": 1930
+        },
+        {
+          "movieId": "2f6211e1-a16b-42ee-8da6-13b586fc1ff6",
+          "title": "The Great Ziegfeld",
+          "year": 1936
+        }
+      ],
+      "count": 2
+    },
+    {
+      "listName": "Waltz Era Romance Tales",
+      "newMovies": [
+        {
+          "movieId": "aa836596-37d2-4665-9335-6616f2474615",
+          "title": "Two Hearts in Waltz Time",
+          "year": 1930
+        },
+        {
+          "movieId": "a45a7eb5-d79f-44bb-b179-59d1df2a2f25",
+          "title": "Last Love",
+          "year": 1935
+        }
+      ],
+      "count": 2
+    },
+    {
+      "listName": "Weimar Republic Cinema",
+      "newMovies": [
+        {
+          "movieId": "2355bf9f-a539-4c96-815e-cf710369d61b",
+          "title": "The Threepenny Opera",
+          "year": 1931
+        },
+        {
+          "movieId": "18846298-89a1-41f6-90d9-a3bbd948a389",
+          "title": "Viktor und Viktoria",
+          "year": 1933
+        }
+      ],
+      "count": 2
+    },
+    {
+      "listName": "Great Depression Era Hope Films",
+      "newMovies": [
+        {
+          "movieId": "8bf0aaf4-a6a1-41cf-8d22-06408abd7578",
+          "title": "42nd Street",
+          "year": 1933
+        },
+        {
+          "movieId": "01a24a08-7bd6-40bc-9319-1908d232cb0d",
+          "title": "Hallelujah, I'm a Bum",
+          "year": 1933
+        }
+      ],
+      "count": 2
+    },
+    {
+      "listName": "Class Barrier Performance Stories",
+      "newMovies": [
+        {
+          "movieId": "3c2ec34f-febd-40dc-9829-0c5258cdd561",
+          "title": "Dancing Lady",
+          "year": 1933
+        },
+        {
+          "movieId": "93206caf-f20a-4c45-ac3e-6d30e40c7a1b",
+          "title": "One Hundred Men and a Girl",
+          "year": 1937
+        }
+      ],
+      "count": 2
+    },
+    {
+      "listName": "Ancient World Fantasy Musicals",
+      "newMovies": [
+        {
+          "movieId": "0ef48c0a-e30a-4651-a09d-cf369fd7ee0e",
+          "title": "Roman Scandals",
+          "year": 1933
+        },
+        {
+          "movieId": "c6d11e53-0c64-464a-819c-10180af188c7",
+          "title": "Ali Baba",
+          "year": 1936
+        }
+      ],
+      "count": 2
+    },
+    {
+      "listName": "European Operetta Adaptations",
+      "newMovies": [
+        {
+          "movieId": "feb2e93c-f824-469a-8eec-ac8f5bda8ce6",
+          "title": "The Merry Widow",
+          "year": 1934
+        },
+        {
+          "movieId": "a45a7eb5-d79f-44bb-b179-59d1df2a2f25",
+          "title": "Last Love",
+          "year": 1935
+        }
+      ],
+      "count": 2
+    },
+    {
+      "listName": "Classic Hollywood Musicals",
+      "newMovies": [
+        {
+          "movieId": "e0c921b4-de4f-42df-a4d5-e81f906ff145",
+          "title": "Top Hat",
+          "year": 1935
+        },
+        {
+          "movieId": "6c1a5d3f-9eb0-4ea9-a75f-63e0ea5e965b",
+          "title": "Anything Goes",
+          "year": 1936
+        }
+      ],
+      "count": 2
+    },
+    {
+      "listName": "Naval Romance Dance Musicals",
+      "newMovies": [
+        {
+          "movieId": "a8226fa4-c89b-4be0-b3b0-dcba95ef81c8",
+          "title": "Born to Dance",
+          "year": 1936
+        },
+        {
+          "movieId": "be1d2c81-e267-4959-9c39-525596b40195",
+          "title": "Follow the Fleet",
+          "year": 1936
+        }
+      ],
+      "count": 2
+    },
+    {
+      "listName": "Jewish Identity Stories",
+      "newMovies": [
+        {
+          "movieId": "587699ae-77d4-4947-a01b-dedc9880c888",
+          "title": "The Jazz Singer",
+          "year": 1927
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Tragic Parent-Child Separation Stories",
+      "newMovies": [
+        {
+          "movieId": "4fc4dafe-3162-460b-8a5a-a6f078971584",
+          "title": "The Singing Fool",
+          "year": 1928
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Real Estate Scheme Comedies",
+      "newMovies": [
+        {
+          "movieId": "74a3aaa5-d7ec-43ad-a1ec-41bc78a0609e",
+          "title": "Cocoanuts",
+          "year": 1929
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Napoleonic Era Period Pieces",
+      "newMovies": [
+        {
+          "movieId": "034b01a1-86ac-4ece-99f0-4c4921292dcf",
+          "title": "Devil-May-Care",
+          "year": 1929
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Cultural Identity Period Dramas",
+      "newMovies": [
+        {
+          "movieId": "fb5fd0dd-a46e-40eb-97d2-067bc9bbed4c",
+          "title": "Hallelujah",
+          "year": 1929
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Border Romance Adventures",
+      "newMovies": [
+        {
+          "movieId": "8ce03757-469a-4ec6-b490-705f67dfd3fa",
+          "title": "Rio Rita",
+          "year": 1929
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Addiction Struggle Performance Stories",
+      "newMovies": [
+        {
+          "movieId": "92c83178-d374-4ae3-91ef-591042b3b681",
+          "title": "The Dance of Life",
+          "year": 1929
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Burlesque Entertainment Chronicles",
+      "newMovies": [
+        {
+          "movieId": "92c83178-d374-4ae3-91ef-591042b3b681",
+          "title": "The Dance of Life",
+          "year": 1929
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Vaudeville Character Studies",
+      "newMovies": [
+        {
+          "movieId": "72348219-6a2e-4a45-8773-8a4fda44c6fa",
+          "title": "The Great Gabbo",
+          "year": 1929
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Songwriting Partnership Stories",
+      "newMovies": [
+        {
+          "movieId": "1a1c9eb0-1aaf-48c1-8d8e-7a4fc00e544e",
+          "title": "Words and Music",
+          "year": 1929
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Futuristic Society Musicals",
+      "newMovies": [
+        {
+          "movieId": "41d18db8-8a92-40dd-8e51-55767f2a9916",
+          "title": "Just Imagine",
+          "year": 1930
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Science Fiction Musical Hybrids",
+      "newMovies": [
+        {
+          "movieId": "41d18db8-8a92-40dd-8e51-55767f2a9916",
+          "title": "Just Imagine",
+          "year": 1930
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "European Casino Romance Tales",
+      "newMovies": [
+        {
+          "movieId": "85803358-a5f8-4f0c-89d5-f7b4034a1749",
+          "title": "Monte Carlo",
+          "year": 1930
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Flapper Era Social Commentary",
+      "newMovies": [
+        {
+          "movieId": "2fb93dbc-c59b-4220-9a65-faf24830ca06",
+          "title": "No, No, Nanette",
+          "year": 1930
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Studio Star Parade Features",
+      "newMovies": [
+        {
+          "movieId": "bad45b61-0230-4549-805f-90d49ca06800",
+          "title": "Paramount on Parade",
+          "year": 1930
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Early Talkies Industry Commentary",
+      "newMovies": [
+        {
+          "movieId": "ecd56f43-c4f0-45d5-b2e2-c26d4d40f2a6",
+          "title": "Show Girl in Hollywood",
+          "year": 1930
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Russian Folk Opera Adaptations",
+      "newMovies": [
+        {
+          "movieId": "956b02b3-1b5b-4ae5-9cb4-edad53c0fffc",
+          "title": "The Rogue Song",
+          "year": 1930
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Bandit Romance Operettas",
+      "newMovies": [
+        {
+          "movieId": "956b02b3-1b5b-4ae5-9cb4-edad53c0fffc",
+          "title": "The Rogue Song",
+          "year": 1930
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Medieval French Court Musicals",
+      "newMovies": [
+        {
+          "movieId": "39997aca-05c8-4daf-bbce-d7a4a0b0c065",
+          "title": "The Vagabond King",
+          "year": 1930
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Poetic Outlaw Romance Tales",
+      "newMovies": [
+        {
+          "movieId": "39997aca-05c8-4daf-bbce-d7a4a0b0c065",
+          "title": "The Vagabond King",
+          "year": 1930
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Royal Impostor Adventure Musicals",
+      "newMovies": [
+        {
+          "movieId": "39997aca-05c8-4daf-bbce-d7a4a0b0c065",
+          "title": "The Vagabond King",
+          "year": 1930
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Criminal Underworld Operas",
+      "newMovies": [
+        {
+          "movieId": "2355bf9f-a539-4c96-815e-cf710369d61b",
+          "title": "The Threepenny Opera",
+          "year": 1931
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Innovative Musical Storytelling Pioneers",
+      "newMovies": [
+        {
+          "movieId": "da702623-a4a5-4d44-b9c7-ab791315d5c8",
+          "title": "Love Me Tonight",
+          "year": 1932
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Parisian Romantic Farces",
+      "newMovies": [
+        {
+          "movieId": "a3516016-57b6-4f4a-8c07-057651f7fe24",
+          "title": "One Hour with You",
+          "year": 1932
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Broadway Understudy Success Stories",
+      "newMovies": [
+        {
+          "movieId": "8bf0aaf4-a6a1-41cf-8d22-06408abd7578",
+          "title": "42nd Street",
+          "year": 1933
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Depression Era Youth Stories",
+      "newMovies": [
+        {
+          "movieId": "83547cbf-76a8-408b-b2cf-9a8af6382738",
+          "title": "College Humor",
+          "year": 1933
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Collegiate Romance Musicals",
+      "newMovies": [
+        {
+          "movieId": "83547cbf-76a8-408b-b2cf-9a8af6382738",
+          "title": "College Humor",
+          "year": 1933
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Star Breakthrough Dance Musicals",
+      "newMovies": [
+        {
+          "movieId": "3c2ec34f-febd-40dc-9829-0c5258cdd561",
+          "title": "Dancing Lady",
+          "year": 1933
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Aquatic Musical Spectacles",
+      "newMovies": [
+        {
+          "movieId": "6a8c3f25-ae09-4a9f-be38-20121a103058",
+          "title": "Flying Down to Rio",
+          "year": 1933
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Depression Era Innovation Musicals",
+      "newMovies": [
+        {
+          "movieId": "c70f610b-7a02-4acd-8acc-82ce3d80ad71",
+          "title": "Footlight Parade",
+          "year": 1933
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Theater Adaptation Survival Stories",
+      "newMovies": [
+        {
+          "movieId": "c70f610b-7a02-4acd-8acc-82ce3d80ad71",
+          "title": "Footlight Parade",
+          "year": 1933
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Economic Hardship Romance Stories",
+      "newMovies": [
+        {
+          "movieId": "9ecaac45-ec52-4110-8339-2134ca07467d",
+          "title": "Gold Diggers of 1933",
+          "year": 1933
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Urban Poverty Musical Stories",
+      "newMovies": [
+        {
+          "movieId": "01a24a08-7bd6-40bc-9319-1908d232cb0d",
+          "title": "Hallelujah, I'm a Bum",
+          "year": 1933
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Hobo Life Character Studies",
+      "newMovies": [
+        {
+          "movieId": "01a24a08-7bd6-40bc-9319-1908d232cb0d",
+          "title": "Hallelujah, I'm a Bum",
+          "year": 1933
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Cabaret Culture Musicals",
+      "newMovies": [
+        {
+          "movieId": "18846298-89a1-41f6-90d9-a3bbd948a389",
+          "title": "Viktor und Viktoria",
+          "year": 1933
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Moral Crusade vs Arts Conflicts",
+      "newMovies": [
+        {
+          "movieId": "c569638e-4145-40b6-9f46-f758db9287e5",
+          "title": "Dames",
+          "year": 1934
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Family Fortune Theater Stories",
+      "newMovies": [
+        {
+          "movieId": "c569638e-4145-40b6-9f46-f758db9287e5",
+          "title": "Dames",
+          "year": 1934
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Satirical Hollywood Party Films",
+      "newMovies": [
+        {
+          "movieId": "c8ab394e-aa50-411e-84b2-bb099dd1db53",
+          "title": "Hollywood Party",
+          "year": 1934
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Studio Crossover Ensemble Features",
+      "newMovies": [
+        {
+          "movieId": "c8ab394e-aa50-411e-84b2-bb099dd1db53",
+          "title": "Hollywood Party",
+          "year": 1934
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Mexican Folk Music Adaptations",
+      "newMovies": [
+        {
+          "movieId": "bbfcb1fc-5784-4aba-9107-4ceca4e0f4d7",
+          "title": "La Cucaracha",
+          "year": 1934
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Theatrical Opening Night Dramas",
+      "newMovies": [
+        {
+          "movieId": "872d1745-c4d0-49f0-abdf-9532817aa282",
+          "title": "Murder at the Vanities",
+          "year": 1934
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Murder Mystery Musical Hybrids",
+      "newMovies": [
+        {
+          "movieId": "872d1745-c4d0-49f0-abdf-9532817aa282",
+          "title": "Murder at the Vanities",
+          "year": 1934
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Classical Opera Career Dramas",
+      "newMovies": [
+        {
+          "movieId": "8cec371b-d315-4bc6-bcd1-5b931e7aa86d",
+          "title": "One Night of Love",
+          "year": 1934
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Divorce Plot Musical Comedies",
+      "newMovies": [
+        {
+          "movieId": "944b3df9-2bf7-4163-9533-319289ad2462",
+          "title": "The Gay Divorcee",
+          "year": 1934
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Astaire-Rogers Dance Features",
+      "newMovies": [
+        {
+          "movieId": "944b3df9-2bf7-4163-9533-319289ad2462",
+          "title": "The Gay Divorcee",
+          "year": 1934
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Fictional Kingdom Musicals",
+      "newMovies": [
+        {
+          "movieId": "feb2e93c-f824-469a-8eec-ac8f5bda8ce6",
+          "title": "The Merry Widow",
+          "year": 1934
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Wealthy Widow Romance Tales",
+      "newMovies": [
+        {
+          "movieId": "feb2e93c-f824-469a-8eec-ac8f5bda8ce6",
+          "title": "The Merry Widow",
+          "year": 1934
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Nightclub Drama Musicals",
+      "newMovies": [
+        {
+          "movieId": "177f98ae-4940-4004-8f5d-1fca9cec2b5f",
+          "title": "Wonder Bar",
+          "year": 1934
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Multi-Character Ensemble Musicals",
+      "newMovies": [
+        {
+          "movieId": "177f98ae-4940-4004-8f5d-1fca9cec2b5f",
+          "title": "Wonder Bar",
+          "year": 1934
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Radio Star Dream Pursuit Films",
+      "newMovies": [
+        {
+          "movieId": "554c139b-08b4-474e-9f69-cf1beecd1e37",
+          "title": "Broadway Gondolier",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Musical Identity Transformation Stories",
+      "newMovies": [
+        {
+          "movieId": "554c139b-08b4-474e-9f69-cf1beecd1e37",
+          "title": "Broadway Gondolier",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Theatrical Press Stories",
+      "newMovies": [
+        {
+          "movieId": "2562e344-11da-431e-91dc-d320b7b83e5c",
+          "title": "Broadway Melody of 1936",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Star Making Performance Tales",
+      "newMovies": [
+        {
+          "movieId": "2562e344-11da-431e-91dc-d320b7b83e5c",
+          "title": "Broadway Melody of 1936",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Gangster-Theatre Crossover Musicals",
+      "newMovies": [
+        {
+          "movieId": "d5b417c4-c721-4350-9f88-6cbaa7130462",
+          "title": "Go Into Your Dance",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Resort Setting Musical Comedies",
+      "newMovies": [
+        {
+          "movieId": "fe2067fc-26de-43be-bbf2-f2d68538cb72",
+          "title": "Gold Diggers of 1935",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Money Scheme Musical Plots",
+      "newMovies": [
+        {
+          "movieId": "fe2067fc-26de-43be-bbf2-f2d68538cb72",
+          "title": "Gold Diggers of 1935",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Exotic Location Dance Spectacles",
+      "newMovies": [
+        {
+          "movieId": "0f3dce3a-b054-4844-8fda-590077d158c7",
+          "title": "In Caliente",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Resort Romance Musicals",
+      "newMovies": [
+        {
+          "movieId": "0f3dce3a-b054-4844-8fda-590077d158c7",
+          "title": "In Caliente",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Critics and Artists Stories",
+      "newMovies": [
+        {
+          "movieId": "0f3dce3a-b054-4844-8fda-590077d158c7",
+          "title": "In Caliente",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Classical Operetta Adaptations",
+      "newMovies": [
+        {
+          "movieId": "a45a7eb5-d79f-44bb-b179-59d1df2a2f25",
+          "title": "Last Love",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Riverboat Romance Tales",
+      "newMovies": [
+        {
+          "movieId": "16749a62-b7f1-481e-bdcd-3b482cf7f7ec",
+          "title": "Mississippi",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Honor Code Musical Dramas",
+      "newMovies": [
+        {
+          "movieId": "16749a62-b7f1-481e-bdcd-3b482cf7f7ec",
+          "title": "Mississippi",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Animated Musical Allegories",
+      "newMovies": [
+        {
+          "movieId": "b25bbd65-bb57-4c91-a691-394c220c4ce0",
+          "title": "Music Land",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Classical vs Jazz Commentary",
+      "newMovies": [
+        {
+          "movieId": "b25bbd65-bb57-4c91-a691-394c220c4ce0",
+          "title": "Music Land",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Musical Instrument Characters",
+      "newMovies": [
+        {
+          "movieId": "b25bbd65-bb57-4c91-a691-394c220c4ce0",
+          "title": "Music Land",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Colonial America Period Musicals",
+      "newMovies": [
+        {
+          "movieId": "14528279-a24a-49a2-8e83-1764e9c97863",
+          "title": "Naughty Marietta",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Arranged Marriage Escape Stories",
+      "newMovies": [
+        {
+          "movieId": "14528279-a24a-49a2-8e83-1764e9c97863",
+          "title": "Naughty Marietta",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Paris Fashion World Musicals",
+      "newMovies": [
+        {
+          "movieId": "bf721171-9b60-48ef-92b8-40a37e1b825d",
+          "title": "Roberta",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Fashion House Musical Stories",
+      "newMovies": [
+        {
+          "movieId": "bf721171-9b60-48ef-92b8-40a37e1b825d",
+          "title": "Roberta",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Talent Scout Discovery Tales",
+      "newMovies": [
+        {
+          "movieId": "158623f1-45a9-411c-95d1-44cf484d0fc7",
+          "title": "Stars Over Broadway",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Classical Crossover Career Stories",
+      "newMovies": [
+        {
+          "movieId": "158623f1-45a9-411c-95d1-44cf484d0fc7",
+          "title": "Stars Over Broadway",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Radio Variety Show Spectacles",
+      "newMovies": [
+        {
+          "movieId": "db1cf9df-84f7-4dca-8309-78dacfb94ff1",
+          "title": "The Big Broadcast of 1936",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Sophisticated Comedy Dance Films",
+      "newMovies": [
+        {
+          "movieId": "e0c921b4-de4f-42df-a4d5-e81f906ff145",
+          "title": "Top Hat",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Art Deco Luxury Musicals",
+      "newMovies": [
+        {
+          "movieId": "e0c921b4-de4f-42df-a4d5-e81f906ff145",
+          "title": "Top Hat",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "European Romance Operettas",
+      "newMovies": [
+        {
+          "movieId": "e0c921b4-de4f-42df-a4d5-e81f906ff145",
+          "title": "Top Hat",
+          "year": 1935
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Middle Eastern Folk Tale Adaptations",
+      "newMovies": [
+        {
+          "movieId": "c6d11e53-0c64-464a-819c-10180af188c7",
+          "title": "Ali Baba",
+          "year": 1936
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Swimming Sports Musical Stories",
+      "newMovies": [
+        {
+          "movieId": "c6d11e53-0c64-464a-819c-10180af188c7",
+          "title": "Ali Baba",
+          "year": 1936
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Ocean Liner Musical Adventures",
+      "newMovies": [
+        {
+          "movieId": "6c1a5d3f-9eb0-4ea9-a75f-63e0ea5e965b",
+          "title": "Anything Goes",
+          "year": 1936
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Cole Porter Musical Adaptations",
+      "newMovies": [
+        {
+          "movieId": "6c1a5d3f-9eb0-4ea9-a75f-63e0ea5e965b",
+          "title": "Anything Goes",
+          "year": 1936
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Naval Entertainment Musicals",
+      "newMovies": [
+        {
+          "movieId": "be1d2c81-e267-4959-9c39-525596b40195",
+          "title": "Follow the Fleet",
+          "year": 1936
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Dance Hall Romance Stories",
+      "newMovies": [
+        {
+          "movieId": "be1d2c81-e267-4959-9c39-525596b40195",
+          "title": "Follow the Fleet",
+          "year": 1936
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Sports Theme Musical Comedies",
+      "newMovies": [
+        {
+          "movieId": "f64e0697-3bd9-430c-9442-7499aa95aa88",
+          "title": "Pigskin Parade",
+          "year": 1936
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Fish Out of Water Stories",
+      "newMovies": [
+        {
+          "movieId": "f64e0697-3bd9-430c-9442-7499aa95aa88",
+          "title": "Pigskin Parade",
+          "year": 1936
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Wilderness Romance Adventures",
+      "newMovies": [
+        {
+          "movieId": "28cfbf7f-b635-4c67-b78c-97598572651c",
+          "title": "Rose Marie",
+          "year": 1936
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Law Enforcement Love Stories",
+      "newMovies": [
+        {
+          "movieId": "28cfbf7f-b635-4c67-b78c-97598572651c",
+          "title": "Rose Marie",
+          "year": 1936
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Canadian Frontier Musicals",
+      "newMovies": [
+        {
+          "movieId": "28cfbf7f-b635-4c67-b78c-97598572651c",
+          "title": "Rose Marie",
+          "year": 1936
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Moral Redemption Musicals",
+      "newMovies": [
+        {
+          "movieId": "826d98cb-20c1-43ca-910b-0e2742ea5bb4",
+          "title": "San Francisco",
+          "year": 1936
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Natural Disaster Period Dramas",
+      "newMovies": [
+        {
+          "movieId": "826d98cb-20c1-43ca-910b-0e2742ea5bb4",
+          "title": "San Francisco",
+          "year": 1936
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Turn-of-Century Entertainment Stories",
+      "newMovies": [
+        {
+          "movieId": "826d98cb-20c1-43ca-910b-0e2742ea5bb4",
+          "title": "San Francisco",
+          "year": 1936
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Racial Identity Period Dramas",
+      "newMovies": [
+        {
+          "movieId": "b31512b6-6d5d-4210-a578-ff6578e06f5a",
+          "title": "Show Boat",
+          "year": 1936
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Multigenerational Performance Legacy",
+      "newMovies": [
+        {
+          "movieId": "b31512b6-6d5d-4210-a578-ff6578e06f5a",
+          "title": "Show Boat",
+          "year": 1936
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Mississippi River Cultural Stories",
+      "newMovies": [
+        {
+          "movieId": "b31512b6-6d5d-4210-a578-ff6578e06f5a",
+          "title": "Show Boat",
+          "year": 1936
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Small Town Dreams to Broadway",
+      "newMovies": [
+        {
+          "movieId": "217e3643-b5b3-402b-a222-18d3758319bb",
+          "title": "Stage Struck",
+          "year": 1936
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Depression Era Elegance Musicals",
+      "newMovies": [
+        {
+          "movieId": "6b6c709e-ed76-4c0a-bd28-c1ca35f72c25",
+          "title": "Swing Time",
+          "year": 1936
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Professional Gambler Romance Stories",
+      "newMovies": [
+        {
+          "movieId": "6b6c709e-ed76-4c0a-bd28-c1ca35f72c25",
+          "title": "Swing Time",
+          "year": 1936
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Dance School Romance Tales",
+      "newMovies": [
+        {
+          "movieId": "6b6c709e-ed76-4c0a-bd28-c1ca35f72c25",
+          "title": "Swing Time",
+          "year": 1936
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Theatrical Empire Building Tales",
+      "newMovies": [
+        {
+          "movieId": "2f6211e1-a16b-42ee-8da6-13b586fc1ff6",
+          "title": "The Great Ziegfeld",
+          "year": 1936
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Parent Reunion Romance Tales",
+      "newMovies": [
+        {
+          "movieId": "bb0f15e4-d0be-4672-a54b-b519e29bf72e",
+          "title": "Three Smart Girls",
+          "year": 1936
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Sister Bond Musical Stories",
+      "newMovies": [
+        {
+          "movieId": "bb0f15e4-d0be-4672-a54b-b519e29bf72e",
+          "title": "Three Smart Girls",
+          "year": 1936
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "British Manor House Musicals",
+      "newMovies": [
+        {
+          "movieId": "f7de8b17-18d4-4b7b-9408-335167c6b6b7",
+          "title": "A Damsel in Distress",
+          "year": 1937
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Music Industry Crossover Tales",
+      "newMovies": [
+        {
+          "movieId": "3d1b5832-e40d-4b92-890c-b1ef5b5aa3f0",
+          "title": "Hollywood Hotel",
+          "year": 1937
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Hollywood Dream Factory Musicals",
+      "newMovies": [
+        {
+          "movieId": "3d1b5832-e40d-4b92-890c-b1ef5b5aa3f0",
+          "title": "Hollywood Hotel",
+          "year": 1937
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Sacrifice and Regret Love Stories",
+      "newMovies": [
+        {
+          "movieId": "3ca74665-f9f5-4911-aa22-dabd3b2bb68e",
+          "title": "Maytime",
+          "year": 1937
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Flashback Narrative Musicals",
+      "newMovies": [
+        {
+          "movieId": "3ca74665-f9f5-4911-aa22-dabd3b2bb68e",
+          "title": "Maytime",
+          "year": 1937
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Operatic Crossover Adaptations",
+      "newMovies": [
+        {
+          "movieId": "3ca74665-f9f5-4911-aa22-dabd3b2bb68e",
+          "title": "Maytime",
+          "year": 1937
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Classical Music Education Stories",
+      "newMovies": [
+        {
+          "movieId": "93206caf-f20a-4c45-ac3e-6d30e40c7a1b",
+          "title": "One Hundred Men and a Girl",
+          "year": 1937
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Artist Mentorship Dramas",
+      "newMovies": [
+        {
+          "movieId": "93206caf-f20a-4c45-ac3e-6d30e40c7a1b",
+          "title": "One Hundred Men and a Girl",
+          "year": 1937
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Youth Musical Leadership Tales",
+      "newMovies": [
+        {
+          "movieId": "93206caf-f20a-4c45-ac3e-6d30e40c7a1b",
+          "title": "One Hundred Men and a Girl",
+          "year": 1937
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Ocean Liner Entertainment Stories",
+      "newMovies": [
+        {
+          "movieId": "bb842255-8f89-47ec-a89f-517d4f4a45d1",
+          "title": "Shall We Dance",
+          "year": 1937
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Press Manipulation Narratives",
+      "newMovies": [
+        {
+          "movieId": "bb842255-8f89-47ec-a89f-517d4f4a45d1",
+          "title": "Shall We Dance",
+          "year": 1937
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Ragtime to Jazz Transitions",
+      "newMovies": [
+        {
+          "movieId": "6cd4f4f0-8bb0-49e6-8268-14b5141f8f19",
+          "title": "Alexander's Ragtime Band",
+          "year": 1938
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "American Music Evolution Sagas",
+      "newMovies": [
+        {
+          "movieId": "6cd4f4f0-8bb0-49e6-8268-14b5141f8f19",
+          "title": "Alexander's Ragtime Band",
+          "year": 1938
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Screwball Musical Comedies",
+      "newMovies": [
+        {
+          "movieId": "75068598-00b9-4d16-aec3-6d9b63eda35d",
+          "title": "Carefree",
+          "year": 1938
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Psychological Romance Musicals",
+      "newMovies": [
+        {
+          "movieId": "75068598-00b9-4d16-aec3-6d9b63eda35d",
+          "title": "Carefree",
+          "year": 1938
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Educational Satire Musicals",
+      "newMovies": [
+        {
+          "movieId": "95bb6b47-c64e-4888-8e8c-6b462c761421",
+          "title": "College Swing",
+          "year": 1938
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Academic Inheritance Comedies",
+      "newMovies": [
+        {
+          "movieId": "95bb6b47-c64e-4888-8e8c-6b462c761421",
+          "title": "College Swing",
+          "year": 1938
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Band Leader Career Stories",
+      "newMovies": [
+        {
+          "movieId": "f642a402-8b07-48d3-99e8-cc586f9743c9",
+          "title": "Garden of the Moon",
+          "year": 1938
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Nightclub Management Conflicts",
+      "newMovies": [
+        {
+          "movieId": "f642a402-8b07-48d3-99e8-cc586f9743c9",
+          "title": "Garden of the Moon",
+          "year": 1938
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Spanish Colonial Period Romances",
+      "newMovies": [
+        {
+          "movieId": "031417d4-2c8b-41ad-973d-9a918f48ea67",
+          "title": "Rose of the Rio Grande",
+          "year": 1938
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Broadway vs Hollywood Career Conflicts",
+      "newMovies": [
+        {
+          "movieId": "db9a6ea3-99c2-4ec5-a901-bc5fafd48cd4",
+          "title": "Sweethearts",
+          "year": 1938
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Swing Era Performance Films",
+      "newMovies": [
+        {
+          "movieId": "56ae78a6-6105-4510-8922-438a90b1f097",
+          "title": "Swing!",
+          "year": 1938
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Jazz Culture Musical Portraits",
+      "newMovies": [
+        {
+          "movieId": "56ae78a6-6105-4510-8922-438a90b1f097",
+          "title": "Swing!",
+          "year": 1938
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Radio Stars Compilation Films",
+      "newMovies": [
+        {
+          "movieId": "4c454a93-d785-4661-a947-90a82a220759",
+          "title": "The Big Broadcast of 1938",
+          "year": 1938
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Frontier Romance Dramas",
+      "newMovies": [
+        {
+          "movieId": "1accd25a-748f-42ed-9056-4d432f818296",
+          "title": "The Girl of the Golden West",
+          "year": 1938
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Frontier Musical Adventures",
+      "newMovies": [
+        {
+          "movieId": "1accd25a-748f-42ed-9056-4d432f818296",
+          "title": "The Girl of the Golden West",
+          "year": 1938
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Classical Composer Biographical Musicals",
+      "newMovies": [
+        {
+          "movieId": "498ce5db-4439-43f4-8238-af07dfe01129",
+          "title": "The Great Waltz",
+          "year": 1938
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Musical Legacy Stories",
+      "newMovies": [
+        {
+          "movieId": "498ce5db-4439-43f4-8238-af07dfe01129",
+          "title": "The Great Waltz",
+          "year": 1938
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Unconventional Casting Musicals",
+      "newMovies": [
+        {
+          "movieId": "a174f53c-0222-4655-bfb3-6e644aa101a7",
+          "title": "The Terror of Tiny Town",
+          "year": 1938
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Exploitation Musical Features",
+      "newMovies": [
+        {
+          "movieId": "a174f53c-0222-4655-bfb3-6e644aa101a7",
+          "title": "The Terror of Tiny Town",
+          "year": 1938
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Novelty Cast Productions",
+      "newMovies": [
+        {
+          "movieId": "a174f53c-0222-4655-bfb3-6e644aa101a7",
+          "title": "The Terror of Tiny Town",
+          "year": 1938
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Youth Performance Determination Stories",
+      "newMovies": [
+        {
+          "movieId": "51b14822-c48a-4fde-add8-7f02295c6ad1",
+          "title": "Babes in Arms",
+          "year": 1939
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Mickey-Judy Musical Partnerships",
+      "newMovies": [
+        {
+          "movieId": "51b14822-c48a-4fde-add8-7f02295c6ad1",
+          "title": "Babes in Arms",
+          "year": 1939
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Show-Saving Teen Musicals",
+      "newMovies": [
+        {
+          "movieId": "51b14822-c48a-4fde-add8-7f02295c6ad1",
+          "title": "Babes in Arms",
+          "year": 1939
+        }
+      ],
+      "count": 1
+    },
+    {
+      "listName": "Marriage Success Balance Dramas",
+      "newMovies": [
+        {
+          "movieId": "fd6e646e-be7a-4f8e-a7c5-28da8f48ac31",
+          "title": "Broadway Serenade",
+          "year": 1939
+        }
+      ],
+      "count": 1
+    }
+  ],
+  "assignmentsByMovie": [
+    {
+      "movieId": "a45a7eb5-d79f-44bb-b179-59d1df2a2f25",
+      "title": "Last Love",
+      "year": 1935,
+      "lists": [
+        {
+          "listName": "Royal Court Romance Operettas"
+        },
+        {
+          "listName": "Viennese Classical Music Romances"
+        },
+        {
+          "listName": "European Operetta Adaptations"
+        },
+        {
+          "listName": "Waltz Era Romance Tales"
+        },
+        {
+          "listName": "Lubitsch Sophisticated Operettas"
+        },
+        {
+          "listName": "Classical Operetta Adaptations"
+        },
+        {
+          "listName": "European Musical Pioneers"
+        },
+        {
+          "listName": "Classical Music Origin Stories"
+        }
+      ]
+    },
+    {
+      "movieId": "feb2e93c-f824-469a-8eec-ac8f5bda8ce6",
+      "title": "The Merry Widow",
+      "year": 1934,
+      "lists": [
+        {
+          "listName": "Royal Court Romance Operettas"
+        },
+        {
+          "listName": "European Operetta Adaptations"
+        },
+        {
+          "listName": "Fictional Kingdom Musicals"
+        },
+        {
+          "listName": "Lubitsch Sophisticated Operettas"
+        },
+        {
+          "listName": "Wealthy Widow Romance Tales"
+        }
+      ]
+    },
+    {
+      "movieId": "177f98ae-4940-4004-8f5d-1fca9cec2b5f",
+      "title": "Wonder Bar",
+      "year": 1934,
+      "lists": [
+        {
+          "listName": "Blackface Musical Controversies"
+        },
+        {
+          "listName": "Nightclub Drama Musicals"
+        },
+        {
+          "listName": "Multi-Character Ensemble Musicals"
+        },
+        {
+          "listName": "French Nightlife Musicals"
+        },
+        {
+          "listName": "Berkeley Spectacular Production Numbers"
+        }
+      ]
+    },
+    {
+      "movieId": "fe2067fc-26de-43be-bbf2-f2d68538cb72",
+      "title": "Gold Diggers of 1935",
+      "year": 1935,
+      "lists": [
+        {
+          "listName": "Resort Setting Musical Comedies"
+        },
+        {
+          "listName": "Money Scheme Musical Plots"
+        },
+        {
+          "listName": "Depression Era Social Commentary Musicals"
+        },
+        {
+          "listName": "Berkeley Spectacular Production Numbers"
+        },
+        {
+          "listName": "Depression Era Hope Films"
+        }
+      ]
+    },
+    {
+      "movieId": "c6d11e53-0c64-464a-819c-10180af188c7",
+      "title": "Ali Baba",
+      "year": 1936,
+      "lists": [
+        {
+          "listName": "Exotic Adventure Musicals"
+        },
+        {
+          "listName": "Middle Eastern Folk Tale Adaptations"
+        },
+        {
+          "listName": "Desert Adventure Operettas"
+        },
+        {
+          "listName": "Ancient World Fantasy Musicals"
+        },
+        {
+          "listName": "Swimming Sports Musical Stories"
+        }
+      ]
+    },
+    {
+      "movieId": "b31512b6-6d5d-4210-a578-ff6578e06f5a",
+      "title": "Show Boat",
+      "year": 1936,
+      "lists": [
+        {
+          "listName": "Racial Identity Period Dramas"
+        },
+        {
+          "listName": "Multigenerational Performance Legacy"
+        },
+        {
+          "listName": "Mississippi River Cultural Stories"
+        },
+        {
+          "listName": "Interracial Relationship Dramas"
+        },
+        {
+          "listName": "Riverboat Entertainment Sagas"
+        }
+      ]
+    },
+    {
+      "movieId": "93206caf-f20a-4c45-ac3e-6d30e40c7a1b",
+      "title": "One Hundred Men and a Girl",
+      "year": 1937,
+      "lists": [
+        {
+          "listName": "Classical Music Education Stories"
+        },
+        {
+          "listName": "Classical Music Origin Stories"
+        },
+        {
+          "listName": "Artist Mentorship Dramas"
+        },
+        {
+          "listName": "Youth Musical Leadership Tales"
+        },
+        {
+          "listName": "Class Barrier Performance Stories"
+        }
+      ]
+    },
+    {
+      "movieId": "498ce5db-4439-43f4-8238-af07dfe01129",
+      "title": "The Great Waltz",
+      "year": 1938,
+      "lists": [
+        {
+          "listName": "Viennese Classical Music Romances"
+        },
+        {
+          "listName": "European Musical Pioneers"
+        },
+        {
+          "listName": "Classical Music Origin Stories"
+        },
+        {
+          "listName": "Classical Composer Biographical Musicals"
+        },
+        {
+          "listName": "Musical Legacy Stories"
+        }
+      ]
+    },
+    {
+      "movieId": "51b14822-c48a-4fde-add8-7f02295c6ad1",
+      "title": "Babes in Arms",
+      "year": 1939,
+      "lists": [
+        {
+          "listName": "Vaudeville to Broadway Transitions"
+        },
+        {
+          "listName": "Youth Performance Determination Stories"
+        },
+        {
+          "listName": "Mickey-Judy Musical Partnerships"
+        },
+        {
+          "listName": "Show-Saving Teen Musicals"
+        },
+        {
+          "listName": "Depression Era Hope Films"
+        }
+      ]
+    },
+    {
+      "movieId": "bad45b61-0230-4549-805f-90d49ca06800",
+      "title": "Paramount on Parade",
+      "year": 1930,
+      "lists": [
+        {
+          "listName": "Theatrical Revue Spectacles"
+        },
+        {
+          "listName": "Jazz Age Entertainment Spectacles"
+        },
+        {
+          "listName": "Early Talkie Star Parades"
+        },
+        {
+          "listName": "Studio Star Parade Features"
+        }
+      ]
+    },
+    {
+      "movieId": "a3516016-57b6-4f4a-8c07-057651f7fe24",
+      "title": "One Hour with You",
+      "year": 1932,
+      "lists": [
+        {
+          "listName": "French Nightlife Musicals"
+        },
+        {
+          "listName": "Jazz Age Entertainment Spectacles"
+        },
+        {
+          "listName": "Lubitsch Sophisticated Operettas"
+        },
+        {
+          "listName": "Parisian Romantic Farces"
+        }
+      ]
+    },
+    {
+      "movieId": "6a8c3f25-ae09-4a9f-be38-20121a103058",
+      "title": "Flying Down to Rio",
+      "year": 1933,
+      "lists": [
+        {
+          "listName": "Theatrical Revue Spectacles"
+        },
+        {
+          "listName": "Jazz Age Entertainment Spectacles"
+        },
+        {
+          "listName": "Exotic Adventure Musicals"
+        },
+        {
+          "listName": "Aquatic Musical Spectacles"
+        }
+      ]
+    },
+    {
+      "movieId": "c70f610b-7a02-4acd-8acc-82ce3d80ad71",
+      "title": "Footlight Parade",
+      "year": 1933,
+      "lists": [
+        {
+          "listName": "Depression Era Innovation Musicals"
+        },
+        {
+          "listName": "Depression Era Social Commentary Musicals"
+        },
+        {
+          "listName": "Theater Adaptation Survival Stories"
+        },
+        {
+          "listName": "Berkeley Spectacular Production Numbers"
+        }
+      ]
+    },
+    {
+      "movieId": "9ecaac45-ec52-4110-8339-2134ca07467d",
+      "title": "Gold Diggers of 1933",
+      "year": 1933,
+      "lists": [
+        {
+          "listName": "Depression Era Social Commentary Musicals"
+        },
+        {
+          "listName": "Depression Era Hope Films"
+        },
+        {
+          "listName": "Berkeley Spectacular Production Numbers"
+        },
+        {
+          "listName": "Economic Hardship Romance Stories"
+        }
+      ]
+    },
+    {
+      "movieId": "01a24a08-7bd6-40bc-9319-1908d232cb0d",
+      "title": "Hallelujah, I'm a Bum",
+      "year": 1933,
+      "lists": [
+        {
+          "listName": "Depression Era Social Commentary Musicals"
+        },
+        {
+          "listName": "Urban Poverty Musical Stories"
+        },
+        {
+          "listName": "Hobo Life Character Studies"
+        },
+        {
+          "listName": "Great Depression Era Hope Films"
+        }
+      ]
+    },
+    {
+      "movieId": "872d1745-c4d0-49f0-abdf-9532817aa282",
+      "title": "Murder at the Vanities",
+      "year": 1934,
+      "lists": [
+        {
+          "listName": "Theatrical Revue Spectacles"
+        },
+        {
+          "listName": "Psychological Performance Dramas"
+        },
+        {
+          "listName": "Theatrical Opening Night Dramas"
+        },
+        {
+          "listName": "Murder Mystery Musical Hybrids"
+        }
+      ]
+    },
+    {
+      "movieId": "16749a62-b7f1-481e-bdcd-3b482cf7f7ec",
+      "title": "Mississippi",
+      "year": 1935,
+      "lists": [
+        {
+          "listName": "Riverboat Entertainment Sagas"
+        },
+        {
+          "listName": "Riverboat Romance Tales"
+        },
+        {
+          "listName": "Interracial Relationship Dramas"
+        },
+        {
+          "listName": "Honor Code Musical Dramas"
+        }
+      ]
+    },
+    {
+      "movieId": "e0c921b4-de4f-42df-a4d5-e81f906ff145",
+      "title": "Top Hat",
+      "year": 1935,
+      "lists": [
+        {
+          "listName": "Sophisticated Comedy Dance Films"
+        },
+        {
+          "listName": "Art Deco Luxury Musicals"
+        },
+        {
+          "listName": "European Romance Operettas"
+        },
+        {
+          "listName": "Classic Hollywood Musicals"
+        }
+      ]
+    },
+    {
+      "movieId": "be1d2c81-e267-4959-9c39-525596b40195",
+      "title": "Follow the Fleet",
+      "year": 1936,
+      "lists": [
+        {
+          "listName": "Naval Entertainment Musicals"
+        },
+        {
+          "listName": "Dance Hall Romance Stories"
+        },
+        {
+          "listName": "Naval Romance Dance Musicals"
+        },
+        {
+          "listName": "Military Romance Musical Comedies"
+        }
+      ]
+    },
+    {
+      "movieId": "e5583674-0b7a-4fb9-800a-857001854d34",
+      "title": "Varsity Show",
+      "year": 1937,
+      "lists": [
+        {
+          "listName": "Campus Musical Comedies"
+        },
+        {
+          "listName": "Depression Era Hope Films"
+        },
+        {
+          "listName": "Berkeley Spectacular Production Numbers"
+        },
+        {
+          "listName": "Depression Era Social Commentary Musicals"
+        }
+      ]
+    },
+    {
+      "movieId": "4c454a93-d785-4661-a947-90a82a220759",
+      "title": "The Big Broadcast of 1938",
+      "year": 1938,
+      "lists": [
+        {
+          "listName": "Early Radio Entertainment Musicals"
+        },
+        {
+          "listName": "Celebrity Cameo Revue Films"
+        },
+        {
+          "listName": "Jazz Age Entertainment Spectacles"
+        },
+        {
+          "listName": "Radio Stars Compilation Films"
+        }
+      ]
+    },
+    {
+      "movieId": "fb5fd0dd-a46e-40eb-97d2-067bc9bbed4c",
+      "title": "Hallelujah",
+      "year": 1929,
+      "lists": [
+        {
+          "listName": "Southern Religious Musical Dramas"
+        },
+        {
+          "listName": "Spiritual Music Heritage Films"
+        },
+        {
+          "listName": "Cultural Identity Period Dramas"
+        }
+      ]
+    },
+    {
+      "movieId": "92c83178-d374-4ae3-91ef-591042b3b681",
+      "title": "The Dance of Life",
+      "year": 1929,
+      "lists": [
+        {
+          "listName": "Addiction Struggle Performance Stories"
+        },
+        {
+          "listName": "Burlesque Entertainment Chronicles"
+        },
+        {
+          "listName": "Vaudeville to Broadway Transitions"
+        }
+      ]
+    },
+    {
+      "movieId": "a1bb98de-fe9f-49d0-9ae4-e5b25ee14878",
+      "title": "The Hollywood Revue of 1929",
+      "year": 1929,
+      "lists": [
+        {
+          "listName": "Theatrical Revue Spectacles"
+        },
+        {
+          "listName": "Jazz Age Entertainment Spectacles"
+        },
+        {
+          "listName": "Early Talkie Star Parades"
+        }
+      ]
+    },
+    {
+      "movieId": "efddb3f6-101a-4bc0-8eba-3945a54bc056",
+      "title": "The Show of Shows",
+      "year": 1929,
+      "lists": [
+        {
+          "listName": "Early Talkie Star Parades"
+        },
+        {
+          "listName": "Jazz Age Entertainment Spectacles"
+        },
+        {
+          "listName": "Theatrical Revue Spectacles"
+        }
+      ]
+    },
+    {
+      "movieId": "2fb93dbc-c59b-4220-9a65-faf24830ca06",
+      "title": "No, No, Nanette",
+      "year": 1930,
+      "lists": [
+        {
+          "listName": "Theatrical Revue Spectacles"
+        },
+        {
+          "listName": "Jazz Age Entertainment Spectacles"
+        },
+        {
+          "listName": "Flapper Era Social Commentary"
+        }
+      ]
+    },
+    {
+      "movieId": "956b02b3-1b5b-4ae5-9cb4-edad53c0fffc",
+      "title": "The Rogue Song",
+      "year": 1930,
+      "lists": [
+        {
+          "listName": "Russian Folk Opera Adaptations"
+        },
+        {
+          "listName": "Bandit Romance Operettas"
+        },
+        {
+          "listName": "Pioneering Color Musical Features"
+        }
+      ]
+    },
+    {
+      "movieId": "39997aca-05c8-4daf-bbce-d7a4a0b0c065",
+      "title": "The Vagabond King",
+      "year": 1930,
+      "lists": [
+        {
+          "listName": "Medieval French Court Musicals"
+        },
+        {
+          "listName": "Poetic Outlaw Romance Tales"
+        },
+        {
+          "listName": "Royal Impostor Adventure Musicals"
+        }
+      ]
+    },
+    {
+      "movieId": "aa836596-37d2-4665-9335-6616f2474615",
+      "title": "Two Hearts in Waltz Time",
+      "year": 1930,
+      "lists": [
+        {
+          "listName": "Viennese Classical Music Romances"
+        },
+        {
+          "listName": "European Musical Pioneers"
+        },
+        {
+          "listName": "Waltz Era Romance Tales"
+        }
+      ]
+    },
+    {
+      "movieId": "80caaa50-4cf7-4dea-84bd-e80fda75d842",
+      "title": "The Smiling Lieutenant",
+      "year": 1931,
+      "lists": [
+        {
+          "listName": "Military Romance Musical Comedies"
+        },
+        {
+          "listName": "Lubitsch Sophisticated Operettas"
+        },
+        {
+          "listName": "Royal Court Romance Operettas"
+        }
+      ]
+    },
+    {
+      "movieId": "8bf0aaf4-a6a1-41cf-8d22-06408abd7578",
+      "title": "42nd Street",
+      "year": 1933,
+      "lists": [
+        {
+          "listName": "Chorus Girl Romance Stories"
+        },
+        {
+          "listName": "Great Depression Era Hope Films"
+        },
+        {
+          "listName": "Broadway Understudy Success Stories"
+        }
+      ]
+    },
+    {
+      "movieId": "83547cbf-76a8-408b-b2cf-9a8af6382738",
+      "title": "College Humor",
+      "year": 1933,
+      "lists": [
+        {
+          "listName": "Campus Musical Comedies"
+        },
+        {
+          "listName": "Depression Era Youth Stories"
+        },
+        {
+          "listName": "Collegiate Romance Musicals"
+        }
+      ]
+    },
+    {
+      "movieId": "0ef48c0a-e30a-4651-a09d-cf369fd7ee0e",
+      "title": "Roman Scandals",
+      "year": 1933,
+      "lists": [
+        {
+          "listName": "Ancient World Fantasy Musicals"
+        },
+        {
+          "listName": "Depression Era Social Commentary Musicals"
+        },
+        {
+          "listName": "Berkeley Spectacular Production Numbers"
+        }
+      ]
+    },
+    {
+      "movieId": "18846298-89a1-41f6-90d9-a3bbd948a389",
+      "title": "Viktor und Viktoria",
+      "year": 1933,
+      "lists": [
+        {
+          "listName": "Gender Role Reversal Musicals"
+        },
+        {
+          "listName": "Weimar Republic Cinema"
+        },
+        {
+          "listName": "Cabaret Culture Musicals"
+        }
+      ]
+    },
+    {
+      "movieId": "c569638e-4145-40b6-9f46-f758db9287e5",
+      "title": "Dames",
+      "year": 1934,
+      "lists": [
+        {
+          "listName": "Moral Crusade vs Arts Conflicts"
+        },
+        {
+          "listName": "Family Fortune Theater Stories"
+        },
+        {
+          "listName": "Berkeley Spectacular Production Numbers"
+        }
+      ]
+    },
+    {
+      "movieId": "c8ab394e-aa50-411e-84b2-bb099dd1db53",
+      "title": "Hollywood Party",
+      "year": 1934,
+      "lists": [
+        {
+          "listName": "Satirical Hollywood Party Films"
+        },
+        {
+          "listName": "Studio Crossover Ensemble Features"
+        },
+        {
+          "listName": "Celebrity Cameo Revue Films"
+        }
+      ]
+    },
+    {
+      "movieId": "944b3df9-2bf7-4163-9533-319289ad2462",
+      "title": "The Gay Divorcee",
+      "year": 1934,
+      "lists": [
+        {
+          "listName": "Divorce Plot Musical Comedies"
+        },
+        {
+          "listName": "Astaire-Rogers Dance Features"
+        },
+        {
+          "listName": "Hollywood Romance Crossovers"
+        }
+      ]
+    },
+    {
+      "movieId": "554c139b-08b4-474e-9f69-cf1beecd1e37",
+      "title": "Broadway Gondolier",
+      "year": 1935,
+      "lists": [
+        {
+          "listName": "Early Radio Entertainment Musicals"
+        },
+        {
+          "listName": "Radio Star Dream Pursuit Films"
+        },
+        {
+          "listName": "Musical Identity Transformation Stories"
+        }
+      ]
+    },
+    {
+      "movieId": "0f3dce3a-b054-4844-8fda-590077d158c7",
+      "title": "In Caliente",
+      "year": 1935,
+      "lists": [
+        {
+          "listName": "Exotic Location Dance Spectacles"
+        },
+        {
+          "listName": "Resort Romance Musicals"
+        },
+        {
+          "listName": "Critics and Artists Stories"
+        }
+      ]
+    },
+    {
+      "movieId": "b25bbd65-bb57-4c91-a691-394c220c4ce0",
+      "title": "Music Land",
+      "year": 1935,
+      "lists": [
+        {
+          "listName": "Animated Musical Allegories"
+        },
+        {
+          "listName": "Classical vs Jazz Commentary"
+        },
+        {
+          "listName": "Musical Instrument Characters"
+        }
+      ]
+    },
+    {
+      "movieId": "db1cf9df-84f7-4dca-8309-78dacfb94ff1",
+      "title": "The Big Broadcast of 1936",
+      "year": 1935,
+      "lists": [
+        {
+          "listName": "Early Radio Entertainment Musicals"
+        },
+        {
+          "listName": "Celebrity Cameo Revue Films"
+        },
+        {
+          "listName": "Radio Variety Show Spectacles"
+        }
+      ]
+    },
+    {
+      "movieId": "6c1a5d3f-9eb0-4ea9-a75f-63e0ea5e965b",
+      "title": "Anything Goes",
+      "year": 1936,
+      "lists": [
+        {
+          "listName": "Ocean Liner Musical Adventures"
+        },
+        {
+          "listName": "Cole Porter Musical Adaptations"
+        },
+        {
+          "listName": "Classic Hollywood Musicals"
+        }
+      ]
+    },
+    {
+      "movieId": "f64e0697-3bd9-430c-9442-7499aa95aa88",
+      "title": "Pigskin Parade",
+      "year": 1936,
+      "lists": [
+        {
+          "listName": "Sports Theme Musical Comedies"
+        },
+        {
+          "listName": "Fish Out of Water Stories"
+        },
+        {
+          "listName": "Campus Musical Comedies"
+        }
+      ]
+    },
+    {
+      "movieId": "28cfbf7f-b635-4c67-b78c-97598572651c",
+      "title": "Rose Marie",
+      "year": 1936,
+      "lists": [
+        {
+          "listName": "Wilderness Romance Adventures"
+        },
+        {
+          "listName": "Law Enforcement Love Stories"
+        },
+        {
+          "listName": "Canadian Frontier Musicals"
+        }
+      ]
+    },
+    {
+      "movieId": "826d98cb-20c1-43ca-910b-0e2742ea5bb4",
+      "title": "San Francisco",
+      "year": 1936,
+      "lists": [
+        {
+          "listName": "Moral Redemption Musicals"
+        },
+        {
+          "listName": "Natural Disaster Period Dramas"
+        },
+        {
+          "listName": "Turn-of-Century Entertainment Stories"
+        }
+      ]
+    },
+    {
+      "movieId": "6b6c709e-ed76-4c0a-bd28-c1ca35f72c25",
+      "title": "Swing Time",
+      "year": 1936,
+      "lists": [
+        {
+          "listName": "Depression Era Elegance Musicals"
+        },
+        {
+          "listName": "Professional Gambler Romance Stories"
+        },
+        {
+          "listName": "Dance School Romance Tales"
+        }
+      ]
+    },
+    {
+      "movieId": "2f6211e1-a16b-42ee-8da6-13b586fc1ff6",
+      "title": "The Great Ziegfeld",
+      "year": 1936,
+      "lists": [
+        {
+          "listName": "Ziegfeld Production Adaptations"
+        },
+        {
+          "listName": "Theatrical Empire Building Tales"
+        },
+        {
+          "listName": "Broadway to Hollywood Transitions"
+        }
+      ]
+    },
+    {
+      "movieId": "bb0f15e4-d0be-4672-a54b-b519e29bf72e",
+      "title": "Three Smart Girls",
+      "year": 1936,
+      "lists": [
+        {
+          "listName": "Sibling Rivalry Performance Stories"
+        },
+        {
+          "listName": "Parent Reunion Romance Tales"
+        },
+        {
+          "listName": "Sister Bond Musical Stories"
+        }
+      ]
+    },
+    {
+      "movieId": "3ca74665-f9f5-4911-aa22-dabd3b2bb68e",
+      "title": "Maytime",
+      "year": 1937,
+      "lists": [
+        {
+          "listName": "Sacrifice and Regret Love Stories"
+        },
+        {
+          "listName": "Flashback Narrative Musicals"
+        },
+        {
+          "listName": "Operatic Crossover Adaptations"
+        }
+      ]
+    },
+    {
+      "movieId": "6cd4f4f0-8bb0-49e6-8268-14b5141f8f19",
+      "title": "Alexander's Ragtime Band",
+      "year": 1938,
+      "lists": [
+        {
+          "listName": "Jazz Age Entertainment Spectacles"
+        },
+        {
+          "listName": "Ragtime to Jazz Transitions"
+        },
+        {
+          "listName": "American Music Evolution Sagas"
+        }
+      ]
+    },
+    {
+      "movieId": "95bb6b47-c64e-4888-8e8c-6b462c761421",
+      "title": "College Swing",
+      "year": 1938,
+      "lists": [
+        {
+          "listName": "Campus Musical Comedies"
+        },
+        {
+          "listName": "Educational Satire Musicals"
+        },
+        {
+          "listName": "Academic Inheritance Comedies"
+        }
+      ]
+    },
+    {
+      "movieId": "1accd25a-748f-42ed-9056-4d432f818296",
+      "title": "The Girl of the Golden West",
+      "year": 1938,
+      "lists": [
+        {
+          "listName": "Gold Rush Era Social Commentary"
+        },
+        {
+          "listName": "Frontier Romance Dramas"
+        },
+        {
+          "listName": "Frontier Musical Adventures"
+        }
+      ]
+    },
+    {
+      "movieId": "a174f53c-0222-4655-bfb3-6e644aa101a7",
+      "title": "The Terror of Tiny Town",
+      "year": 1938,
+      "lists": [
+        {
+          "listName": "Unconventional Casting Musicals"
+        },
+        {
+          "listName": "Exploitation Musical Features"
+        },
+        {
+          "listName": "Novelty Cast Productions"
+        }
+      ]
+    },
+    {
+      "movieId": "587699ae-77d4-4947-a01b-dedc9880c888",
+      "title": "The Jazz Singer",
+      "year": 1927,
+      "lists": [
+        {
+          "listName": "Jewish Identity Stories"
+        },
+        {
+          "listName": "Blackface Musical Controversies"
+        }
+      ]
+    },
+    {
+      "movieId": "4fc4dafe-3162-460b-8a5a-a6f078971584",
+      "title": "The Singing Fool",
+      "year": 1928,
+      "lists": [
+        {
+          "listName": "Blackface Musical Controversies"
+        },
+        {
+          "listName": "Tragic Parent-Child Separation Stories"
+        }
+      ]
+    },
+    {
+      "movieId": "74a3aaa5-d7ec-43ad-a1ec-41bc78a0609e",
+      "title": "Cocoanuts",
+      "year": 1929,
+      "lists": [
+        {
+          "listName": "Prohibition Era Entertainment"
+        },
+        {
+          "listName": "Real Estate Scheme Comedies"
+        }
+      ]
+    },
+    {
+      "movieId": "531a50fd-f75e-49d1-839f-a77c905b2835",
+      "title": "Gold Diggers of Broadway",
+      "year": 1929,
+      "lists": [
+        {
+          "listName": "Gold Rush Era Social Commentary"
+        },
+        {
+          "listName": "Chorus Girl Romance Stories"
+        }
+      ]
+    },
+    {
+      "movieId": "3266ee7d-b145-4666-ad0a-90c3da761715",
+      "title": "Hearts in Dixie",
+      "year": 1929,
+      "lists": [
+        {
+          "listName": "Southern Religious Musical Dramas"
+        },
+        {
+          "listName": "Spiritual Music Heritage Films"
+        }
+      ]
+    },
+    {
+      "movieId": "649ed81c-53e9-411e-b596-60d35c297330",
+      "title": "Paris",
+      "year": 1929,
+      "lists": [
+        {
+          "listName": "French Nightlife Musicals"
+        },
+        {
+          "listName": "Jazz Age Entertainment Spectacles"
+        }
+      ]
+    },
+    {
+      "movieId": "8ce03757-469a-4ec6-b490-705f67dfd3fa",
+      "title": "Rio Rita",
+      "year": 1929,
+      "lists": [
+        {
+          "listName": "Border Romance Adventures"
+        },
+        {
+          "listName": "Mexican-American Frontier Musicals"
+        }
+      ]
+    },
+    {
+      "movieId": "3b29491e-01e2-42e7-b5a2-ce3cfd90567e",
+      "title": "Sally",
+      "year": 1929,
+      "lists": [
+        {
+          "listName": "Pioneering Color Musical Features"
+        },
+        {
+          "listName": "Ziegfeld Production Adaptations"
+        }
+      ]
+    },
+    {
+      "movieId": "b66871cd-d9ae-4a07-93a8-ca5c958ea30b",
+      "title": "Show Boat",
+      "year": 1929,
+      "lists": [
+        {
+          "listName": "Interracial Relationship Dramas"
+        },
+        {
+          "listName": "Riverboat Entertainment Sagas"
+        }
+      ]
+    },
+    {
+      "movieId": "13ee47b8-3ced-49e0-801a-68b08dbed63a",
+      "title": "The Broadway Melody",
+      "year": 1929,
+      "lists": [
+        {
+          "listName": "Vaudeville to Broadway Transitions"
+        },
+        {
+          "listName": "Sibling Rivalry Performance Stories"
+        }
+      ]
+    },
+    {
+      "movieId": "ca82d8fb-4719-4558-aac0-ed638b13ce85",
+      "title": "The Desert Song",
+      "year": 1929,
+      "lists": [
+        {
+          "listName": "Desert Adventure Operettas"
+        },
+        {
+          "listName": "Exotic Adventure Musicals"
+        }
+      ]
+    },
+    {
+      "movieId": "72348219-6a2e-4a45-8773-8a4fda44c6fa",
+      "title": "The Great Gabbo",
+      "year": 1929,
+      "lists": [
+        {
+          "listName": "Psychological Performance Dramas"
+        },
+        {
+          "listName": "Vaudeville Character Studies"
+        }
+      ]
+    },
+    {
+      "movieId": "ae8b8e41-207e-43a3-a6d4-13dc849e1254",
+      "title": "The Love Parade",
+      "year": 1929,
+      "lists": [
+        {
+          "listName": "Gender Role Reversal Musicals"
+        },
+        {
+          "listName": "Royal Court Romance Operettas"
+        }
+      ]
+    },
+    {
+      "movieId": "1a1c9eb0-1aaf-48c1-8d8e-7a4fc00e544e",
+      "title": "Words and Music",
+      "year": 1929,
+      "lists": [
+        {
+          "listName": "Songwriting Partnership Stories"
+        },
+        {
+          "listName": "Campus Musical Comedies"
+        }
+      ]
+    },
+    {
+      "movieId": "560b7643-c16b-4833-b50d-f0a5f83b3ed1",
+      "title": "Bright Lights",
+      "year": 1930,
+      "lists": [
+        {
+          "listName": "Riverboat Entertainment Sagas"
+        },
+        {
+          "listName": "Interracial Relationship Dramas"
+        }
+      ]
+    },
+    {
+      "movieId": "41d18db8-8a92-40dd-8e51-55767f2a9916",
+      "title": "Just Imagine",
+      "year": 1930,
+      "lists": [
+        {
+          "listName": "Futuristic Society Musicals"
+        },
+        {
+          "listName": "Science Fiction Musical Hybrids"
+        }
+      ]
+    },
+    {
+      "movieId": "85803358-a5f8-4f0c-89d5-f7b4034a1749",
+      "title": "Monte Carlo",
+      "year": 1930,
+      "lists": [
+        {
+          "listName": "European Casino Romance Tales"
+        },
+        {
+          "listName": "Aristocratic Mistaken Identity Comedies"
+        }
+      ]
+    },
+    {
+      "movieId": "ecd56f43-c4f0-45d5-b2e2-c26d4d40f2a6",
+      "title": "Show Girl in Hollywood",
+      "year": 1930,
+      "lists": [
+        {
+          "listName": "Broadway to Hollywood Transitions"
+        },
+        {
+          "listName": "Early Talkies Industry Commentary"
+        }
+      ]
+    },
+    {
+      "movieId": "2355bf9f-a539-4c96-815e-cf710369d61b",
+      "title": "The Threepenny Opera",
+      "year": 1931,
+      "lists": [
+        {
+          "listName": "Criminal Underworld Operas"
+        },
+        {
+          "listName": "Weimar Republic Cinema"
+        }
+      ]
+    },
+    {
+      "movieId": "da702623-a4a5-4d44-b9c7-ab791315d5c8",
+      "title": "Love Me Tonight",
+      "year": 1932,
+      "lists": [
+        {
+          "listName": "Aristocratic Mistaken Identity Comedies"
+        },
+        {
+          "listName": "Innovative Musical Storytelling Pioneers"
+        }
+      ]
+    },
+    {
+      "movieId": "6c1b4eaa-d390-4301-b106-59eaf2bf613b",
+      "title": "The Big Broadcast",
+      "year": 1932,
+      "lists": [
+        {
+          "listName": "Early Radio Entertainment Musicals"
+        },
+        {
+          "listName": "Celebrity Cameo Revue Films"
+        }
+      ]
+    },
+    {
+      "movieId": "3c2ec34f-febd-40dc-9829-0c5258cdd561",
+      "title": "Dancing Lady",
+      "year": 1933,
+      "lists": [
+        {
+          "listName": "Star Breakthrough Dance Musicals"
+        },
+        {
+          "listName": "Class Barrier Performance Stories"
+        }
+      ]
+    },
+    {
+      "movieId": "bbfcb1fc-5784-4aba-9107-4ceca4e0f4d7",
+      "title": "La Cucaracha",
+      "year": 1934,
+      "lists": [
+        {
+          "listName": "Pioneering Color Musical Features"
+        },
+        {
+          "listName": "Mexican Folk Music Adaptations"
+        }
+      ]
+    },
+    {
+      "movieId": "8cec371b-d315-4bc6-bcd1-5b931e7aa86d",
+      "title": "One Night of Love",
+      "year": 1934,
+      "lists": [
+        {
+          "listName": "Classical Opera Career Dramas"
+        },
+        {
+          "listName": "Classical Music Origin Stories"
+        }
+      ]
+    },
+    {
+      "movieId": "2562e344-11da-431e-91dc-d320b7b83e5c",
+      "title": "Broadway Melody of 1936",
+      "year": 1935,
+      "lists": [
+        {
+          "listName": "Theatrical Press Stories"
+        },
+        {
+          "listName": "Star Making Performance Tales"
+        }
+      ]
+    },
+    {
+      "movieId": "d5b417c4-c721-4350-9f88-6cbaa7130462",
+      "title": "Go Into Your Dance",
+      "year": 1935,
+      "lists": [
+        {
+          "listName": "Gangster-Theatre Crossover Musicals"
+        },
+        {
+          "listName": "Jazz Age Entertainment Spectacles"
+        }
+      ]
+    },
+    {
+      "movieId": "14528279-a24a-49a2-8e83-1764e9c97863",
+      "title": "Naughty Marietta",
+      "year": 1935,
+      "lists": [
+        {
+          "listName": "Colonial America Period Musicals"
+        },
+        {
+          "listName": "Arranged Marriage Escape Stories"
+        }
+      ]
+    },
+    {
+      "movieId": "bf721171-9b60-48ef-92b8-40a37e1b825d",
+      "title": "Roberta",
+      "year": 1935,
+      "lists": [
+        {
+          "listName": "Paris Fashion World Musicals"
+        },
+        {
+          "listName": "Fashion House Musical Stories"
+        }
+      ]
+    },
+    {
+      "movieId": "158623f1-45a9-411c-95d1-44cf484d0fc7",
+      "title": "Stars Over Broadway",
+      "year": 1935,
+      "lists": [
+        {
+          "listName": "Talent Scout Discovery Tales"
+        },
+        {
+          "listName": "Classical Crossover Career Stories"
+        }
+      ]
+    },
+    {
+      "movieId": "a8226fa4-c89b-4be0-b3b0-dcba95ef81c8",
+      "title": "Born to Dance",
+      "year": 1936,
+      "lists": [
+        {
+          "listName": "Military Romance Musical Comedies"
+        },
+        {
+          "listName": "Naval Romance Dance Musicals"
+        }
+      ]
+    },
+    {
+      "movieId": "217e3643-b5b3-402b-a222-18d3758319bb",
+      "title": "Stage Struck",
+      "year": 1936,
+      "lists": [
+        {
+          "listName": "Small Town Dreams to Broadway"
+        },
+        {
+          "listName": "Vaudeville to Broadway Transitions"
+        }
+      ]
+    },
+    {
+      "movieId": "f7de8b17-18d4-4b7b-9408-335167c6b6b7",
+      "title": "A Damsel in Distress",
+      "year": 1937,
+      "lists": [
+        {
+          "listName": "British Manor House Musicals"
+        },
+        {
+          "listName": "Aristocratic Mistaken Identity Comedies"
+        }
+      ]
+    },
+    {
+      "movieId": "3d1b5832-e40d-4b92-890c-b1ef5b5aa3f0",
+      "title": "Hollywood Hotel",
+      "year": 1937,
+      "lists": [
+        {
+          "listName": "Music Industry Crossover Tales"
+        },
+        {
+          "listName": "Hollywood Dream Factory Musicals"
+        }
+      ]
+    },
+    {
+      "movieId": "574a1a76-a80a-4e9f-bfe6-53e896913e44",
+      "title": "Rosalie",
+      "year": 1937,
+      "lists": [
+        {
+          "listName": "Royal Court Romance Operettas"
+        },
+        {
+          "listName": "Military Romance Musical Comedies"
+        }
+      ]
+    },
+    {
+      "movieId": "bb842255-8f89-47ec-a89f-517d4f4a45d1",
+      "title": "Shall We Dance",
+      "year": 1937,
+      "lists": [
+        {
+          "listName": "Ocean Liner Entertainment Stories"
+        },
+        {
+          "listName": "Press Manipulation Narratives"
+        }
+      ]
+    },
+    {
+      "movieId": "75068598-00b9-4d16-aec3-6d9b63eda35d",
+      "title": "Carefree",
+      "year": 1938,
+      "lists": [
+        {
+          "listName": "Screwball Musical Comedies"
+        },
+        {
+          "listName": "Psychological Romance Musicals"
+        }
+      ]
+    },
+    {
+      "movieId": "f642a402-8b07-48d3-99e8-cc586f9743c9",
+      "title": "Garden of the Moon",
+      "year": 1938,
+      "lists": [
+        {
+          "listName": "Band Leader Career Stories"
+        },
+        {
+          "listName": "Nightclub Management Conflicts"
+        }
+      ]
+    },
+    {
+      "movieId": "0ddced43-2412-4ca7-818b-6102f849d11b",
+      "title": "Rebecca of Sunnybrook Farm",
+      "year": 1938,
+      "lists": [
+        {
+          "listName": "Early Radio Entertainment Musicals"
+        },
+        {
+          "listName": "Celebrity Cameo Revue Films"
+        }
+      ]
+    },
+    {
+      "movieId": "031417d4-2c8b-41ad-973d-9a918f48ea67",
+      "title": "Rose of the Rio Grande",
+      "year": 1938,
+      "lists": [
+        {
+          "listName": "Mexican-American Frontier Musicals"
+        },
+        {
+          "listName": "Spanish Colonial Period Romances"
+        }
+      ]
+    },
+    {
+      "movieId": "db9a6ea3-99c2-4ec5-a901-bc5fafd48cd4",
+      "title": "Sweethearts",
+      "year": 1938,
+      "lists": [
+        {
+          "listName": "Hollywood Romance Crossovers"
+        },
+        {
+          "listName": "Broadway vs Hollywood Career Conflicts"
+        }
+      ]
+    },
+    {
+      "movieId": "56ae78a6-6105-4510-8922-438a90b1f097",
+      "title": "Swing!",
+      "year": 1938,
+      "lists": [
+        {
+          "listName": "Swing Era Performance Films"
+        },
+        {
+          "listName": "Jazz Culture Musical Portraits"
+        }
+      ]
+    },
+    {
+      "movieId": "7d94fbc0-b871-4b27-8d7d-1d7ec05851bc",
+      "title": "Broadway",
+      "year": 1929,
+      "lists": [
+        {
+          "listName": "Prohibition Era Entertainment"
+        }
+      ]
+    },
+    {
+      "movieId": "034b01a1-86ac-4ece-99f0-4c4921292dcf",
+      "title": "Devil-May-Care",
+      "year": 1929,
+      "lists": [
+        {
+          "listName": "Napoleonic Era Period Pieces"
+        }
+      ]
+    },
+    {
+      "movieId": "de469ba9-e108-42d7-b568-3d37511cc1a3",
+      "title": "Fox Movietone Follies of 1929",
+      "year": 1929,
+      "lists": [
+        {
+          "listName": "Theatrical Revue Spectacles"
+        }
+      ]
+    },
+    {
+      "movieId": "edcd46f3-1e5c-42dc-a92f-5e3165571ff5",
+      "title": "Married in Hollywood",
+      "year": 1929,
+      "lists": [
+        {
+          "listName": "Hollywood Romance Crossovers"
+        }
+      ]
+    },
+    {
+      "movieId": "ff0a7f23-82e5-4521-8529-2a9087cb0ff7",
+      "title": "On with the Show!",
+      "year": 1929,
+      "lists": [
+        {
+          "listName": "Pioneering Color Musical Features"
+        }
+      ]
+    },
+    {
+      "movieId": "fd6e646e-be7a-4f8e-a7c5-28da8f48ac31",
+      "title": "Broadway Serenade",
+      "year": 1939,
+      "lists": [
+        {
+          "listName": "Marriage Success Balance Dramas"
+        }
+      ]
+    }
+  ],
+  "allAssignments": [
+    {
+      "movieId": "587699ae-77d4-4947-a01b-dedc9880c888",
+      "movieTitle": "The Jazz Singer",
+      "movieYear": 1927,
+      "listName": "Jewish Identity Stories"
+    },
+    {
+      "movieId": "587699ae-77d4-4947-a01b-dedc9880c888",
+      "movieTitle": "The Jazz Singer",
+      "movieYear": 1927,
+      "listName": "Blackface Musical Controversies"
+    },
+    {
+      "movieId": "4fc4dafe-3162-460b-8a5a-a6f078971584",
+      "movieTitle": "The Singing Fool",
+      "movieYear": 1928,
+      "listName": "Blackface Musical Controversies"
+    },
+    {
+      "movieId": "4fc4dafe-3162-460b-8a5a-a6f078971584",
+      "movieTitle": "The Singing Fool",
+      "movieYear": 1928,
+      "listName": "Tragic Parent-Child Separation Stories"
+    },
+    {
+      "movieId": "7d94fbc0-b871-4b27-8d7d-1d7ec05851bc",
+      "movieTitle": "Broadway",
+      "movieYear": 1929,
+      "listName": "Prohibition Era Entertainment"
+    },
+    {
+      "movieId": "74a3aaa5-d7ec-43ad-a1ec-41bc78a0609e",
+      "movieTitle": "Cocoanuts",
+      "movieYear": 1929,
+      "listName": "Prohibition Era Entertainment"
+    },
+    {
+      "movieId": "74a3aaa5-d7ec-43ad-a1ec-41bc78a0609e",
+      "movieTitle": "Cocoanuts",
+      "movieYear": 1929,
+      "listName": "Real Estate Scheme Comedies"
+    },
+    {
+      "movieId": "034b01a1-86ac-4ece-99f0-4c4921292dcf",
+      "movieTitle": "Devil-May-Care",
+      "movieYear": 1929,
+      "listName": "Napoleonic Era Period Pieces"
+    },
+    {
+      "movieId": "de469ba9-e108-42d7-b568-3d37511cc1a3",
+      "movieTitle": "Fox Movietone Follies of 1929",
+      "movieYear": 1929,
+      "listName": "Theatrical Revue Spectacles"
+    },
+    {
+      "movieId": "531a50fd-f75e-49d1-839f-a77c905b2835",
+      "movieTitle": "Gold Diggers of Broadway",
+      "movieYear": 1929,
+      "listName": "Gold Rush Era Social Commentary"
+    },
+    {
+      "movieId": "531a50fd-f75e-49d1-839f-a77c905b2835",
+      "movieTitle": "Gold Diggers of Broadway",
+      "movieYear": 1929,
+      "listName": "Chorus Girl Romance Stories"
+    },
+    {
+      "movieId": "fb5fd0dd-a46e-40eb-97d2-067bc9bbed4c",
+      "movieTitle": "Hallelujah",
+      "movieYear": 1929,
+      "listName": "Southern Religious Musical Dramas"
+    },
+    {
+      "movieId": "fb5fd0dd-a46e-40eb-97d2-067bc9bbed4c",
+      "movieTitle": "Hallelujah",
+      "movieYear": 1929,
+      "listName": "Spiritual Music Heritage Films"
+    },
+    {
+      "movieId": "fb5fd0dd-a46e-40eb-97d2-067bc9bbed4c",
+      "movieTitle": "Hallelujah",
+      "movieYear": 1929,
+      "listName": "Cultural Identity Period Dramas"
+    },
+    {
+      "movieId": "3266ee7d-b145-4666-ad0a-90c3da761715",
+      "movieTitle": "Hearts in Dixie",
+      "movieYear": 1929,
+      "listName": "Southern Religious Musical Dramas"
+    },
+    {
+      "movieId": "3266ee7d-b145-4666-ad0a-90c3da761715",
+      "movieTitle": "Hearts in Dixie",
+      "movieYear": 1929,
+      "listName": "Spiritual Music Heritage Films"
+    },
+    {
+      "movieId": "edcd46f3-1e5c-42dc-a92f-5e3165571ff5",
+      "movieTitle": "Married in Hollywood",
+      "movieYear": 1929,
+      "listName": "Hollywood Romance Crossovers"
+    },
+    {
+      "movieId": "ff0a7f23-82e5-4521-8529-2a9087cb0ff7",
+      "movieTitle": "On with the Show!",
+      "movieYear": 1929,
+      "listName": "Pioneering Color Musical Features"
+    },
+    {
+      "movieId": "649ed81c-53e9-411e-b596-60d35c297330",
+      "movieTitle": "Paris",
+      "movieYear": 1929,
+      "listName": "French Nightlife Musicals"
+    },
+    {
+      "movieId": "649ed81c-53e9-411e-b596-60d35c297330",
+      "movieTitle": "Paris",
+      "movieYear": 1929,
+      "listName": "Jazz Age Entertainment Spectacles"
+    },
+    {
+      "movieId": "8ce03757-469a-4ec6-b490-705f67dfd3fa",
+      "movieTitle": "Rio Rita",
+      "movieYear": 1929,
+      "listName": "Border Romance Adventures"
+    },
+    {
+      "movieId": "8ce03757-469a-4ec6-b490-705f67dfd3fa",
+      "movieTitle": "Rio Rita",
+      "movieYear": 1929,
+      "listName": "Mexican-American Frontier Musicals"
+    },
+    {
+      "movieId": "3b29491e-01e2-42e7-b5a2-ce3cfd90567e",
+      "movieTitle": "Sally",
+      "movieYear": 1929,
+      "listName": "Pioneering Color Musical Features"
+    },
+    {
+      "movieId": "3b29491e-01e2-42e7-b5a2-ce3cfd90567e",
+      "movieTitle": "Sally",
+      "movieYear": 1929,
+      "listName": "Ziegfeld Production Adaptations"
+    },
+    {
+      "movieId": "b66871cd-d9ae-4a07-93a8-ca5c958ea30b",
+      "movieTitle": "Show Boat",
+      "movieYear": 1929,
+      "listName": "Interracial Relationship Dramas"
+    },
+    {
+      "movieId": "b66871cd-d9ae-4a07-93a8-ca5c958ea30b",
+      "movieTitle": "Show Boat",
+      "movieYear": 1929,
+      "listName": "Riverboat Entertainment Sagas"
+    },
+    {
+      "movieId": "13ee47b8-3ced-49e0-801a-68b08dbed63a",
+      "movieTitle": "The Broadway Melody",
+      "movieYear": 1929,
+      "listName": "Vaudeville to Broadway Transitions"
+    },
+    {
+      "movieId": "13ee47b8-3ced-49e0-801a-68b08dbed63a",
+      "movieTitle": "The Broadway Melody",
+      "movieYear": 1929,
+      "listName": "Sibling Rivalry Performance Stories"
+    },
+    {
+      "movieId": "92c83178-d374-4ae3-91ef-591042b3b681",
+      "movieTitle": "The Dance of Life",
+      "movieYear": 1929,
+      "listName": "Addiction Struggle Performance Stories"
+    },
+    {
+      "movieId": "92c83178-d374-4ae3-91ef-591042b3b681",
+      "movieTitle": "The Dance of Life",
+      "movieYear": 1929,
+      "listName": "Burlesque Entertainment Chronicles"
+    },
+    {
+      "movieId": "92c83178-d374-4ae3-91ef-591042b3b681",
+      "movieTitle": "The Dance of Life",
+      "movieYear": 1929,
+      "listName": "Vaudeville to Broadway Transitions"
+    },
+    {
+      "movieId": "ca82d8fb-4719-4558-aac0-ed638b13ce85",
+      "movieTitle": "The Desert Song",
+      "movieYear": 1929,
+      "listName": "Desert Adventure Operettas"
+    },
+    {
+      "movieId": "ca82d8fb-4719-4558-aac0-ed638b13ce85",
+      "movieTitle": "The Desert Song",
+      "movieYear": 1929,
+      "listName": "Exotic Adventure Musicals"
+    },
+    {
+      "movieId": "72348219-6a2e-4a45-8773-8a4fda44c6fa",
+      "movieTitle": "The Great Gabbo",
+      "movieYear": 1929,
+      "listName": "Psychological Performance Dramas"
+    },
+    {
+      "movieId": "72348219-6a2e-4a45-8773-8a4fda44c6fa",
+      "movieTitle": "The Great Gabbo",
+      "movieYear": 1929,
+      "listName": "Vaudeville Character Studies"
+    },
+    {
+      "movieId": "a1bb98de-fe9f-49d0-9ae4-e5b25ee14878",
+      "movieTitle": "The Hollywood Revue of 1929",
+      "movieYear": 1929,
+      "listName": "Theatrical Revue Spectacles"
+    },
+    {
+      "movieId": "a1bb98de-fe9f-49d0-9ae4-e5b25ee14878",
+      "movieTitle": "The Hollywood Revue of 1929",
+      "movieYear": 1929,
+      "listName": "Jazz Age Entertainment Spectacles"
+    },
+    {
+      "movieId": "a1bb98de-fe9f-49d0-9ae4-e5b25ee14878",
+      "movieTitle": "The Hollywood Revue of 1929",
+      "movieYear": 1929,
+      "listName": "Early Talkie Star Parades"
+    },
+    {
+      "movieId": "ae8b8e41-207e-43a3-a6d4-13dc849e1254",
+      "movieTitle": "The Love Parade",
+      "movieYear": 1929,
+      "listName": "Gender Role Reversal Musicals"
+    },
+    {
+      "movieId": "ae8b8e41-207e-43a3-a6d4-13dc849e1254",
+      "movieTitle": "The Love Parade",
+      "movieYear": 1929,
+      "listName": "Royal Court Romance Operettas"
+    },
+    {
+      "movieId": "efddb3f6-101a-4bc0-8eba-3945a54bc056",
+      "movieTitle": "The Show of Shows",
+      "movieYear": 1929,
+      "listName": "Early Talkie Star Parades"
+    },
+    {
+      "movieId": "efddb3f6-101a-4bc0-8eba-3945a54bc056",
+      "movieTitle": "The Show of Shows",
+      "movieYear": 1929,
+      "listName": "Jazz Age Entertainment Spectacles"
+    },
+    {
+      "movieId": "efddb3f6-101a-4bc0-8eba-3945a54bc056",
+      "movieTitle": "The Show of Shows",
+      "movieYear": 1929,
+      "listName": "Theatrical Revue Spectacles"
+    },
+    {
+      "movieId": "1a1c9eb0-1aaf-48c1-8d8e-7a4fc00e544e",
+      "movieTitle": "Words and Music",
+      "movieYear": 1929,
+      "listName": "Songwriting Partnership Stories"
+    },
+    {
+      "movieId": "1a1c9eb0-1aaf-48c1-8d8e-7a4fc00e544e",
+      "movieTitle": "Words and Music",
+      "movieYear": 1929,
+      "listName": "Campus Musical Comedies"
+    },
+    {
+      "movieId": "560b7643-c16b-4833-b50d-f0a5f83b3ed1",
+      "movieTitle": "Bright Lights",
+      "movieYear": 1930,
+      "listName": "Riverboat Entertainment Sagas"
+    },
+    {
+      "movieId": "560b7643-c16b-4833-b50d-f0a5f83b3ed1",
+      "movieTitle": "Bright Lights",
+      "movieYear": 1930,
+      "listName": "Interracial Relationship Dramas"
+    },
+    {
+      "movieId": "41d18db8-8a92-40dd-8e51-55767f2a9916",
+      "movieTitle": "Just Imagine",
+      "movieYear": 1930,
+      "listName": "Futuristic Society Musicals"
+    },
+    {
+      "movieId": "41d18db8-8a92-40dd-8e51-55767f2a9916",
+      "movieTitle": "Just Imagine",
+      "movieYear": 1930,
+      "listName": "Science Fiction Musical Hybrids"
+    },
+    {
+      "movieId": "85803358-a5f8-4f0c-89d5-f7b4034a1749",
+      "movieTitle": "Monte Carlo",
+      "movieYear": 1930,
+      "listName": "European Casino Romance Tales"
+    },
+    {
+      "movieId": "85803358-a5f8-4f0c-89d5-f7b4034a1749",
+      "movieTitle": "Monte Carlo",
+      "movieYear": 1930,
+      "listName": "Aristocratic Mistaken Identity Comedies"
+    },
+    {
+      "movieId": "2fb93dbc-c59b-4220-9a65-faf24830ca06",
+      "movieTitle": "No, No, Nanette",
+      "movieYear": 1930,
+      "listName": "Theatrical Revue Spectacles"
+    },
+    {
+      "movieId": "2fb93dbc-c59b-4220-9a65-faf24830ca06",
+      "movieTitle": "No, No, Nanette",
+      "movieYear": 1930,
+      "listName": "Jazz Age Entertainment Spectacles"
+    },
+    {
+      "movieId": "2fb93dbc-c59b-4220-9a65-faf24830ca06",
+      "movieTitle": "No, No, Nanette",
+      "movieYear": 1930,
+      "listName": "Flapper Era Social Commentary"
+    },
+    {
+      "movieId": "bad45b61-0230-4549-805f-90d49ca06800",
+      "movieTitle": "Paramount on Parade",
+      "movieYear": 1930,
+      "listName": "Theatrical Revue Spectacles"
+    },
+    {
+      "movieId": "bad45b61-0230-4549-805f-90d49ca06800",
+      "movieTitle": "Paramount on Parade",
+      "movieYear": 1930,
+      "listName": "Jazz Age Entertainment Spectacles"
+    },
+    {
+      "movieId": "bad45b61-0230-4549-805f-90d49ca06800",
+      "movieTitle": "Paramount on Parade",
+      "movieYear": 1930,
+      "listName": "Early Talkie Star Parades"
+    },
+    {
+      "movieId": "bad45b61-0230-4549-805f-90d49ca06800",
+      "movieTitle": "Paramount on Parade",
+      "movieYear": 1930,
+      "listName": "Studio Star Parade Features"
+    },
+    {
+      "movieId": "ecd56f43-c4f0-45d5-b2e2-c26d4d40f2a6",
+      "movieTitle": "Show Girl in Hollywood",
+      "movieYear": 1930,
+      "listName": "Broadway to Hollywood Transitions"
+    },
+    {
+      "movieId": "ecd56f43-c4f0-45d5-b2e2-c26d4d40f2a6",
+      "movieTitle": "Show Girl in Hollywood",
+      "movieYear": 1930,
+      "listName": "Early Talkies Industry Commentary"
+    },
+    {
+      "movieId": "956b02b3-1b5b-4ae5-9cb4-edad53c0fffc",
+      "movieTitle": "The Rogue Song",
+      "movieYear": 1930,
+      "listName": "Russian Folk Opera Adaptations"
+    },
+    {
+      "movieId": "956b02b3-1b5b-4ae5-9cb4-edad53c0fffc",
+      "movieTitle": "The Rogue Song",
+      "movieYear": 1930,
+      "listName": "Bandit Romance Operettas"
+    },
+    {
+      "movieId": "956b02b3-1b5b-4ae5-9cb4-edad53c0fffc",
+      "movieTitle": "The Rogue Song",
+      "movieYear": 1930,
+      "listName": "Pioneering Color Musical Features"
+    },
+    {
+      "movieId": "39997aca-05c8-4daf-bbce-d7a4a0b0c065",
+      "movieTitle": "The Vagabond King",
+      "movieYear": 1930,
+      "listName": "Medieval French Court Musicals"
+    },
+    {
+      "movieId": "39997aca-05c8-4daf-bbce-d7a4a0b0c065",
+      "movieTitle": "The Vagabond King",
+      "movieYear": 1930,
+      "listName": "Poetic Outlaw Romance Tales"
+    },
+    {
+      "movieId": "39997aca-05c8-4daf-bbce-d7a4a0b0c065",
+      "movieTitle": "The Vagabond King",
+      "movieYear": 1930,
+      "listName": "Royal Impostor Adventure Musicals"
+    },
+    {
+      "movieId": "aa836596-37d2-4665-9335-6616f2474615",
+      "movieTitle": "Two Hearts in Waltz Time",
+      "movieYear": 1930,
+      "listName": "Viennese Classical Music Romances"
+    },
+    {
+      "movieId": "aa836596-37d2-4665-9335-6616f2474615",
+      "movieTitle": "Two Hearts in Waltz Time",
+      "movieYear": 1930,
+      "listName": "European Musical Pioneers"
+    },
+    {
+      "movieId": "aa836596-37d2-4665-9335-6616f2474615",
+      "movieTitle": "Two Hearts in Waltz Time",
+      "movieYear": 1930,
+      "listName": "Waltz Era Romance Tales"
+    },
+    {
+      "movieId": "80caaa50-4cf7-4dea-84bd-e80fda75d842",
+      "movieTitle": "The Smiling Lieutenant",
+      "movieYear": 1931,
+      "listName": "Military Romance Musical Comedies"
+    },
+    {
+      "movieId": "80caaa50-4cf7-4dea-84bd-e80fda75d842",
+      "movieTitle": "The Smiling Lieutenant",
+      "movieYear": 1931,
+      "listName": "Lubitsch Sophisticated Operettas"
+    },
+    {
+      "movieId": "80caaa50-4cf7-4dea-84bd-e80fda75d842",
+      "movieTitle": "The Smiling Lieutenant",
+      "movieYear": 1931,
+      "listName": "Royal Court Romance Operettas"
+    },
+    {
+      "movieId": "2355bf9f-a539-4c96-815e-cf710369d61b",
+      "movieTitle": "The Threepenny Opera",
+      "movieYear": 1931,
+      "listName": "Criminal Underworld Operas"
+    },
+    {
+      "movieId": "2355bf9f-a539-4c96-815e-cf710369d61b",
+      "movieTitle": "The Threepenny Opera",
+      "movieYear": 1931,
+      "listName": "Weimar Republic Cinema"
+    },
+    {
+      "movieId": "da702623-a4a5-4d44-b9c7-ab791315d5c8",
+      "movieTitle": "Love Me Tonight",
+      "movieYear": 1932,
+      "listName": "Aristocratic Mistaken Identity Comedies"
+    },
+    {
+      "movieId": "da702623-a4a5-4d44-b9c7-ab791315d5c8",
+      "movieTitle": "Love Me Tonight",
+      "movieYear": 1932,
+      "listName": "Innovative Musical Storytelling Pioneers"
+    },
+    {
+      "movieId": "a3516016-57b6-4f4a-8c07-057651f7fe24",
+      "movieTitle": "One Hour with You",
+      "movieYear": 1932,
+      "listName": "French Nightlife Musicals"
+    },
+    {
+      "movieId": "a3516016-57b6-4f4a-8c07-057651f7fe24",
+      "movieTitle": "One Hour with You",
+      "movieYear": 1932,
+      "listName": "Jazz Age Entertainment Spectacles"
+    },
+    {
+      "movieId": "a3516016-57b6-4f4a-8c07-057651f7fe24",
+      "movieTitle": "One Hour with You",
+      "movieYear": 1932,
+      "listName": "Lubitsch Sophisticated Operettas"
+    },
+    {
+      "movieId": "a3516016-57b6-4f4a-8c07-057651f7fe24",
+      "movieTitle": "One Hour with You",
+      "movieYear": 1932,
+      "listName": "Parisian Romantic Farces"
+    },
+    {
+      "movieId": "6c1b4eaa-d390-4301-b106-59eaf2bf613b",
+      "movieTitle": "The Big Broadcast",
+      "movieYear": 1932,
+      "listName": "Early Radio Entertainment Musicals"
+    },
+    {
+      "movieId": "6c1b4eaa-d390-4301-b106-59eaf2bf613b",
+      "movieTitle": "The Big Broadcast",
+      "movieYear": 1932,
+      "listName": "Celebrity Cameo Revue Films"
+    },
+    {
+      "movieId": "8bf0aaf4-a6a1-41cf-8d22-06408abd7578",
+      "movieTitle": "42nd Street",
+      "movieYear": 1933,
+      "listName": "Chorus Girl Romance Stories"
+    },
+    {
+      "movieId": "8bf0aaf4-a6a1-41cf-8d22-06408abd7578",
+      "movieTitle": "42nd Street",
+      "movieYear": 1933,
+      "listName": "Great Depression Era Hope Films"
+    },
+    {
+      "movieId": "8bf0aaf4-a6a1-41cf-8d22-06408abd7578",
+      "movieTitle": "42nd Street",
+      "movieYear": 1933,
+      "listName": "Broadway Understudy Success Stories"
+    },
+    {
+      "movieId": "83547cbf-76a8-408b-b2cf-9a8af6382738",
+      "movieTitle": "College Humor",
+      "movieYear": 1933,
+      "listName": "Campus Musical Comedies"
+    },
+    {
+      "movieId": "83547cbf-76a8-408b-b2cf-9a8af6382738",
+      "movieTitle": "College Humor",
+      "movieYear": 1933,
+      "listName": "Depression Era Youth Stories"
+    },
+    {
+      "movieId": "83547cbf-76a8-408b-b2cf-9a8af6382738",
+      "movieTitle": "College Humor",
+      "movieYear": 1933,
+      "listName": "Collegiate Romance Musicals"
+    },
+    {
+      "movieId": "3c2ec34f-febd-40dc-9829-0c5258cdd561",
+      "movieTitle": "Dancing Lady",
+      "movieYear": 1933,
+      "listName": "Star Breakthrough Dance Musicals"
+    },
+    {
+      "movieId": "3c2ec34f-febd-40dc-9829-0c5258cdd561",
+      "movieTitle": "Dancing Lady",
+      "movieYear": 1933,
+      "listName": "Class Barrier Performance Stories"
+    },
+    {
+      "movieId": "6a8c3f25-ae09-4a9f-be38-20121a103058",
+      "movieTitle": "Flying Down to Rio",
+      "movieYear": 1933,
+      "listName": "Theatrical Revue Spectacles"
+    },
+    {
+      "movieId": "6a8c3f25-ae09-4a9f-be38-20121a103058",
+      "movieTitle": "Flying Down to Rio",
+      "movieYear": 1933,
+      "listName": "Jazz Age Entertainment Spectacles"
+    },
+    {
+      "movieId": "6a8c3f25-ae09-4a9f-be38-20121a103058",
+      "movieTitle": "Flying Down to Rio",
+      "movieYear": 1933,
+      "listName": "Exotic Adventure Musicals"
+    },
+    {
+      "movieId": "6a8c3f25-ae09-4a9f-be38-20121a103058",
+      "movieTitle": "Flying Down to Rio",
+      "movieYear": 1933,
+      "listName": "Aquatic Musical Spectacles"
+    },
+    {
+      "movieId": "c70f610b-7a02-4acd-8acc-82ce3d80ad71",
+      "movieTitle": "Footlight Parade",
+      "movieYear": 1933,
+      "listName": "Depression Era Innovation Musicals"
+    },
+    {
+      "movieId": "c70f610b-7a02-4acd-8acc-82ce3d80ad71",
+      "movieTitle": "Footlight Parade",
+      "movieYear": 1933,
+      "listName": "Depression Era Social Commentary Musicals"
+    },
+    {
+      "movieId": "c70f610b-7a02-4acd-8acc-82ce3d80ad71",
+      "movieTitle": "Footlight Parade",
+      "movieYear": 1933,
+      "listName": "Theater Adaptation Survival Stories"
+    },
+    {
+      "movieId": "c70f610b-7a02-4acd-8acc-82ce3d80ad71",
+      "movieTitle": "Footlight Parade",
+      "movieYear": 1933,
+      "listName": "Berkeley Spectacular Production Numbers"
+    },
+    {
+      "movieId": "9ecaac45-ec52-4110-8339-2134ca07467d",
+      "movieTitle": "Gold Diggers of 1933",
+      "movieYear": 1933,
+      "listName": "Depression Era Social Commentary Musicals"
+    },
+    {
+      "movieId": "9ecaac45-ec52-4110-8339-2134ca07467d",
+      "movieTitle": "Gold Diggers of 1933",
+      "movieYear": 1933,
+      "listName": "Depression Era Hope Films"
+    },
+    {
+      "movieId": "9ecaac45-ec52-4110-8339-2134ca07467d",
+      "movieTitle": "Gold Diggers of 1933",
+      "movieYear": 1933,
+      "listName": "Berkeley Spectacular Production Numbers"
+    },
+    {
+      "movieId": "9ecaac45-ec52-4110-8339-2134ca07467d",
+      "movieTitle": "Gold Diggers of 1933",
+      "movieYear": 1933,
+      "listName": "Economic Hardship Romance Stories"
+    },
+    {
+      "movieId": "01a24a08-7bd6-40bc-9319-1908d232cb0d",
+      "movieTitle": "Hallelujah, I'm a Bum",
+      "movieYear": 1933,
+      "listName": "Depression Era Social Commentary Musicals"
+    },
+    {
+      "movieId": "01a24a08-7bd6-40bc-9319-1908d232cb0d",
+      "movieTitle": "Hallelujah, I'm a Bum",
+      "movieYear": 1933,
+      "listName": "Urban Poverty Musical Stories"
+    },
+    {
+      "movieId": "01a24a08-7bd6-40bc-9319-1908d232cb0d",
+      "movieTitle": "Hallelujah, I'm a Bum",
+      "movieYear": 1933,
+      "listName": "Hobo Life Character Studies"
+    },
+    {
+      "movieId": "01a24a08-7bd6-40bc-9319-1908d232cb0d",
+      "movieTitle": "Hallelujah, I'm a Bum",
+      "movieYear": 1933,
+      "listName": "Great Depression Era Hope Films"
+    },
+    {
+      "movieId": "0ef48c0a-e30a-4651-a09d-cf369fd7ee0e",
+      "movieTitle": "Roman Scandals",
+      "movieYear": 1933,
+      "listName": "Ancient World Fantasy Musicals"
+    },
+    {
+      "movieId": "0ef48c0a-e30a-4651-a09d-cf369fd7ee0e",
+      "movieTitle": "Roman Scandals",
+      "movieYear": 1933,
+      "listName": "Depression Era Social Commentary Musicals"
+    },
+    {
+      "movieId": "0ef48c0a-e30a-4651-a09d-cf369fd7ee0e",
+      "movieTitle": "Roman Scandals",
+      "movieYear": 1933,
+      "listName": "Berkeley Spectacular Production Numbers"
+    },
+    {
+      "movieId": "18846298-89a1-41f6-90d9-a3bbd948a389",
+      "movieTitle": "Viktor und Viktoria",
+      "movieYear": 1933,
+      "listName": "Gender Role Reversal Musicals"
+    },
+    {
+      "movieId": "18846298-89a1-41f6-90d9-a3bbd948a389",
+      "movieTitle": "Viktor und Viktoria",
+      "movieYear": 1933,
+      "listName": "Weimar Republic Cinema"
+    },
+    {
+      "movieId": "18846298-89a1-41f6-90d9-a3bbd948a389",
+      "movieTitle": "Viktor und Viktoria",
+      "movieYear": 1933,
+      "listName": "Cabaret Culture Musicals"
+    },
+    {
+      "movieId": "c569638e-4145-40b6-9f46-f758db9287e5",
+      "movieTitle": "Dames",
+      "movieYear": 1934,
+      "listName": "Moral Crusade vs Arts Conflicts"
+    },
+    {
+      "movieId": "c569638e-4145-40b6-9f46-f758db9287e5",
+      "movieTitle": "Dames",
+      "movieYear": 1934,
+      "listName": "Family Fortune Theater Stories"
+    },
+    {
+      "movieId": "c569638e-4145-40b6-9f46-f758db9287e5",
+      "movieTitle": "Dames",
+      "movieYear": 1934,
+      "listName": "Berkeley Spectacular Production Numbers"
+    },
+    {
+      "movieId": "c8ab394e-aa50-411e-84b2-bb099dd1db53",
+      "movieTitle": "Hollywood Party",
+      "movieYear": 1934,
+      "listName": "Satirical Hollywood Party Films"
+    },
+    {
+      "movieId": "c8ab394e-aa50-411e-84b2-bb099dd1db53",
+      "movieTitle": "Hollywood Party",
+      "movieYear": 1934,
+      "listName": "Studio Crossover Ensemble Features"
+    },
+    {
+      "movieId": "c8ab394e-aa50-411e-84b2-bb099dd1db53",
+      "movieTitle": "Hollywood Party",
+      "movieYear": 1934,
+      "listName": "Celebrity Cameo Revue Films"
+    },
+    {
+      "movieId": "bbfcb1fc-5784-4aba-9107-4ceca4e0f4d7",
+      "movieTitle": "La Cucaracha",
+      "movieYear": 1934,
+      "listName": "Pioneering Color Musical Features"
+    },
+    {
+      "movieId": "bbfcb1fc-5784-4aba-9107-4ceca4e0f4d7",
+      "movieTitle": "La Cucaracha",
+      "movieYear": 1934,
+      "listName": "Mexican Folk Music Adaptations"
+    },
+    {
+      "movieId": "872d1745-c4d0-49f0-abdf-9532817aa282",
+      "movieTitle": "Murder at the Vanities",
+      "movieYear": 1934,
+      "listName": "Theatrical Revue Spectacles"
+    },
+    {
+      "movieId": "872d1745-c4d0-49f0-abdf-9532817aa282",
+      "movieTitle": "Murder at the Vanities",
+      "movieYear": 1934,
+      "listName": "Psychological Performance Dramas"
+    },
+    {
+      "movieId": "872d1745-c4d0-49f0-abdf-9532817aa282",
+      "movieTitle": "Murder at the Vanities",
+      "movieYear": 1934,
+      "listName": "Theatrical Opening Night Dramas"
+    },
+    {
+      "movieId": "872d1745-c4d0-49f0-abdf-9532817aa282",
+      "movieTitle": "Murder at the Vanities",
+      "movieYear": 1934,
+      "listName": "Murder Mystery Musical Hybrids"
+    },
+    {
+      "movieId": "8cec371b-d315-4bc6-bcd1-5b931e7aa86d",
+      "movieTitle": "One Night of Love",
+      "movieYear": 1934,
+      "listName": "Classical Opera Career Dramas"
+    },
+    {
+      "movieId": "8cec371b-d315-4bc6-bcd1-5b931e7aa86d",
+      "movieTitle": "One Night of Love",
+      "movieYear": 1934,
+      "listName": "Classical Music Origin Stories"
+    },
+    {
+      "movieId": "944b3df9-2bf7-4163-9533-319289ad2462",
+      "movieTitle": "The Gay Divorcee",
+      "movieYear": 1934,
+      "listName": "Divorce Plot Musical Comedies"
+    },
+    {
+      "movieId": "944b3df9-2bf7-4163-9533-319289ad2462",
+      "movieTitle": "The Gay Divorcee",
+      "movieYear": 1934,
+      "listName": "Astaire-Rogers Dance Features"
+    },
+    {
+      "movieId": "944b3df9-2bf7-4163-9533-319289ad2462",
+      "movieTitle": "The Gay Divorcee",
+      "movieYear": 1934,
+      "listName": "Hollywood Romance Crossovers"
+    },
+    {
+      "movieId": "feb2e93c-f824-469a-8eec-ac8f5bda8ce6",
+      "movieTitle": "The Merry Widow",
+      "movieYear": 1934,
+      "listName": "Royal Court Romance Operettas"
+    },
+    {
+      "movieId": "feb2e93c-f824-469a-8eec-ac8f5bda8ce6",
+      "movieTitle": "The Merry Widow",
+      "movieYear": 1934,
+      "listName": "European Operetta Adaptations"
+    },
+    {
+      "movieId": "feb2e93c-f824-469a-8eec-ac8f5bda8ce6",
+      "movieTitle": "The Merry Widow",
+      "movieYear": 1934,
+      "listName": "Fictional Kingdom Musicals"
+    },
+    {
+      "movieId": "feb2e93c-f824-469a-8eec-ac8f5bda8ce6",
+      "movieTitle": "The Merry Widow",
+      "movieYear": 1934,
+      "listName": "Lubitsch Sophisticated Operettas"
+    },
+    {
+      "movieId": "feb2e93c-f824-469a-8eec-ac8f5bda8ce6",
+      "movieTitle": "The Merry Widow",
+      "movieYear": 1934,
+      "listName": "Wealthy Widow Romance Tales"
+    },
+    {
+      "movieId": "177f98ae-4940-4004-8f5d-1fca9cec2b5f",
+      "movieTitle": "Wonder Bar",
+      "movieYear": 1934,
+      "listName": "Blackface Musical Controversies"
+    },
+    {
+      "movieId": "177f98ae-4940-4004-8f5d-1fca9cec2b5f",
+      "movieTitle": "Wonder Bar",
+      "movieYear": 1934,
+      "listName": "Nightclub Drama Musicals"
+    },
+    {
+      "movieId": "177f98ae-4940-4004-8f5d-1fca9cec2b5f",
+      "movieTitle": "Wonder Bar",
+      "movieYear": 1934,
+      "listName": "Multi-Character Ensemble Musicals"
+    },
+    {
+      "movieId": "177f98ae-4940-4004-8f5d-1fca9cec2b5f",
+      "movieTitle": "Wonder Bar",
+      "movieYear": 1934,
+      "listName": "French Nightlife Musicals"
+    },
+    {
+      "movieId": "177f98ae-4940-4004-8f5d-1fca9cec2b5f",
+      "movieTitle": "Wonder Bar",
+      "movieYear": 1934,
+      "listName": "Berkeley Spectacular Production Numbers"
+    },
+    {
+      "movieId": "554c139b-08b4-474e-9f69-cf1beecd1e37",
+      "movieTitle": "Broadway Gondolier",
+      "movieYear": 1935,
+      "listName": "Early Radio Entertainment Musicals"
+    },
+    {
+      "movieId": "554c139b-08b4-474e-9f69-cf1beecd1e37",
+      "movieTitle": "Broadway Gondolier",
+      "movieYear": 1935,
+      "listName": "Radio Star Dream Pursuit Films"
+    },
+    {
+      "movieId": "554c139b-08b4-474e-9f69-cf1beecd1e37",
+      "movieTitle": "Broadway Gondolier",
+      "movieYear": 1935,
+      "listName": "Musical Identity Transformation Stories"
+    },
+    {
+      "movieId": "2562e344-11da-431e-91dc-d320b7b83e5c",
+      "movieTitle": "Broadway Melody of 1936",
+      "movieYear": 1935,
+      "listName": "Theatrical Press Stories"
+    },
+    {
+      "movieId": "2562e344-11da-431e-91dc-d320b7b83e5c",
+      "movieTitle": "Broadway Melody of 1936",
+      "movieYear": 1935,
+      "listName": "Star Making Performance Tales"
+    },
+    {
+      "movieId": "d5b417c4-c721-4350-9f88-6cbaa7130462",
+      "movieTitle": "Go Into Your Dance",
+      "movieYear": 1935,
+      "listName": "Gangster-Theatre Crossover Musicals"
+    },
+    {
+      "movieId": "d5b417c4-c721-4350-9f88-6cbaa7130462",
+      "movieTitle": "Go Into Your Dance",
+      "movieYear": 1935,
+      "listName": "Jazz Age Entertainment Spectacles"
+    },
+    {
+      "movieId": "fe2067fc-26de-43be-bbf2-f2d68538cb72",
+      "movieTitle": "Gold Diggers of 1935",
+      "movieYear": 1935,
+      "listName": "Resort Setting Musical Comedies"
+    },
+    {
+      "movieId": "fe2067fc-26de-43be-bbf2-f2d68538cb72",
+      "movieTitle": "Gold Diggers of 1935",
+      "movieYear": 1935,
+      "listName": "Money Scheme Musical Plots"
+    },
+    {
+      "movieId": "fe2067fc-26de-43be-bbf2-f2d68538cb72",
+      "movieTitle": "Gold Diggers of 1935",
+      "movieYear": 1935,
+      "listName": "Depression Era Social Commentary Musicals"
+    },
+    {
+      "movieId": "fe2067fc-26de-43be-bbf2-f2d68538cb72",
+      "movieTitle": "Gold Diggers of 1935",
+      "movieYear": 1935,
+      "listName": "Berkeley Spectacular Production Numbers"
+    },
+    {
+      "movieId": "fe2067fc-26de-43be-bbf2-f2d68538cb72",
+      "movieTitle": "Gold Diggers of 1935",
+      "movieYear": 1935,
+      "listName": "Depression Era Hope Films"
+    },
+    {
+      "movieId": "0f3dce3a-b054-4844-8fda-590077d158c7",
+      "movieTitle": "In Caliente",
+      "movieYear": 1935,
+      "listName": "Exotic Location Dance Spectacles"
+    },
+    {
+      "movieId": "0f3dce3a-b054-4844-8fda-590077d158c7",
+      "movieTitle": "In Caliente",
+      "movieYear": 1935,
+      "listName": "Resort Romance Musicals"
+    },
+    {
+      "movieId": "0f3dce3a-b054-4844-8fda-590077d158c7",
+      "movieTitle": "In Caliente",
+      "movieYear": 1935,
+      "listName": "Critics and Artists Stories"
+    },
+    {
+      "movieId": "a45a7eb5-d79f-44bb-b179-59d1df2a2f25",
+      "movieTitle": "Last Love",
+      "movieYear": 1935,
+      "listName": "Royal Court Romance Operettas"
+    },
+    {
+      "movieId": "a45a7eb5-d79f-44bb-b179-59d1df2a2f25",
+      "movieTitle": "Last Love",
+      "movieYear": 1935,
+      "listName": "Viennese Classical Music Romances"
+    },
+    {
+      "movieId": "a45a7eb5-d79f-44bb-b179-59d1df2a2f25",
+      "movieTitle": "Last Love",
+      "movieYear": 1935,
+      "listName": "European Operetta Adaptations"
+    },
+    {
+      "movieId": "a45a7eb5-d79f-44bb-b179-59d1df2a2f25",
+      "movieTitle": "Last Love",
+      "movieYear": 1935,
+      "listName": "Waltz Era Romance Tales"
+    },
+    {
+      "movieId": "a45a7eb5-d79f-44bb-b179-59d1df2a2f25",
+      "movieTitle": "Last Love",
+      "movieYear": 1935,
+      "listName": "Lubitsch Sophisticated Operettas"
+    },
+    {
+      "movieId": "a45a7eb5-d79f-44bb-b179-59d1df2a2f25",
+      "movieTitle": "Last Love",
+      "movieYear": 1935,
+      "listName": "Classical Operetta Adaptations"
+    },
+    {
+      "movieId": "a45a7eb5-d79f-44bb-b179-59d1df2a2f25",
+      "movieTitle": "Last Love",
+      "movieYear": 1935,
+      "listName": "European Musical Pioneers"
+    },
+    {
+      "movieId": "a45a7eb5-d79f-44bb-b179-59d1df2a2f25",
+      "movieTitle": "Last Love",
+      "movieYear": 1935,
+      "listName": "Classical Music Origin Stories"
+    },
+    {
+      "movieId": "16749a62-b7f1-481e-bdcd-3b482cf7f7ec",
+      "movieTitle": "Mississippi",
+      "movieYear": 1935,
+      "listName": "Riverboat Entertainment Sagas"
+    },
+    {
+      "movieId": "16749a62-b7f1-481e-bdcd-3b482cf7f7ec",
+      "movieTitle": "Mississippi",
+      "movieYear": 1935,
+      "listName": "Riverboat Romance Tales"
+    },
+    {
+      "movieId": "16749a62-b7f1-481e-bdcd-3b482cf7f7ec",
+      "movieTitle": "Mississippi",
+      "movieYear": 1935,
+      "listName": "Interracial Relationship Dramas"
+    },
+    {
+      "movieId": "16749a62-b7f1-481e-bdcd-3b482cf7f7ec",
+      "movieTitle": "Mississippi",
+      "movieYear": 1935,
+      "listName": "Honor Code Musical Dramas"
+    },
+    {
+      "movieId": "b25bbd65-bb57-4c91-a691-394c220c4ce0",
+      "movieTitle": "Music Land",
+      "movieYear": 1935,
+      "listName": "Animated Musical Allegories"
+    },
+    {
+      "movieId": "b25bbd65-bb57-4c91-a691-394c220c4ce0",
+      "movieTitle": "Music Land",
+      "movieYear": 1935,
+      "listName": "Classical vs Jazz Commentary"
+    },
+    {
+      "movieId": "b25bbd65-bb57-4c91-a691-394c220c4ce0",
+      "movieTitle": "Music Land",
+      "movieYear": 1935,
+      "listName": "Musical Instrument Characters"
+    },
+    {
+      "movieId": "14528279-a24a-49a2-8e83-1764e9c97863",
+      "movieTitle": "Naughty Marietta",
+      "movieYear": 1935,
+      "listName": "Colonial America Period Musicals"
+    },
+    {
+      "movieId": "14528279-a24a-49a2-8e83-1764e9c97863",
+      "movieTitle": "Naughty Marietta",
+      "movieYear": 1935,
+      "listName": "Arranged Marriage Escape Stories"
+    },
+    {
+      "movieId": "bf721171-9b60-48ef-92b8-40a37e1b825d",
+      "movieTitle": "Roberta",
+      "movieYear": 1935,
+      "listName": "Paris Fashion World Musicals"
+    },
+    {
+      "movieId": "bf721171-9b60-48ef-92b8-40a37e1b825d",
+      "movieTitle": "Roberta",
+      "movieYear": 1935,
+      "listName": "Fashion House Musical Stories"
+    },
+    {
+      "movieId": "158623f1-45a9-411c-95d1-44cf484d0fc7",
+      "movieTitle": "Stars Over Broadway",
+      "movieYear": 1935,
+      "listName": "Talent Scout Discovery Tales"
+    },
+    {
+      "movieId": "158623f1-45a9-411c-95d1-44cf484d0fc7",
+      "movieTitle": "Stars Over Broadway",
+      "movieYear": 1935,
+      "listName": "Classical Crossover Career Stories"
+    },
+    {
+      "movieId": "db1cf9df-84f7-4dca-8309-78dacfb94ff1",
+      "movieTitle": "The Big Broadcast of 1936",
+      "movieYear": 1935,
+      "listName": "Early Radio Entertainment Musicals"
+    },
+    {
+      "movieId": "db1cf9df-84f7-4dca-8309-78dacfb94ff1",
+      "movieTitle": "The Big Broadcast of 1936",
+      "movieYear": 1935,
+      "listName": "Celebrity Cameo Revue Films"
+    },
+    {
+      "movieId": "db1cf9df-84f7-4dca-8309-78dacfb94ff1",
+      "movieTitle": "The Big Broadcast of 1936",
+      "movieYear": 1935,
+      "listName": "Radio Variety Show Spectacles"
+    },
+    {
+      "movieId": "e0c921b4-de4f-42df-a4d5-e81f906ff145",
+      "movieTitle": "Top Hat",
+      "movieYear": 1935,
+      "listName": "Sophisticated Comedy Dance Films"
+    },
+    {
+      "movieId": "e0c921b4-de4f-42df-a4d5-e81f906ff145",
+      "movieTitle": "Top Hat",
+      "movieYear": 1935,
+      "listName": "Art Deco Luxury Musicals"
+    },
+    {
+      "movieId": "e0c921b4-de4f-42df-a4d5-e81f906ff145",
+      "movieTitle": "Top Hat",
+      "movieYear": 1935,
+      "listName": "European Romance Operettas"
+    },
+    {
+      "movieId": "e0c921b4-de4f-42df-a4d5-e81f906ff145",
+      "movieTitle": "Top Hat",
+      "movieYear": 1935,
+      "listName": "Classic Hollywood Musicals"
+    },
+    {
+      "movieId": "c6d11e53-0c64-464a-819c-10180af188c7",
+      "movieTitle": "Ali Baba",
+      "movieYear": 1936,
+      "listName": "Exotic Adventure Musicals"
+    },
+    {
+      "movieId": "c6d11e53-0c64-464a-819c-10180af188c7",
+      "movieTitle": "Ali Baba",
+      "movieYear": 1936,
+      "listName": "Middle Eastern Folk Tale Adaptations"
+    },
+    {
+      "movieId": "c6d11e53-0c64-464a-819c-10180af188c7",
+      "movieTitle": "Ali Baba",
+      "movieYear": 1936,
+      "listName": "Desert Adventure Operettas"
+    },
+    {
+      "movieId": "c6d11e53-0c64-464a-819c-10180af188c7",
+      "movieTitle": "Ali Baba",
+      "movieYear": 1936,
+      "listName": "Ancient World Fantasy Musicals"
+    },
+    {
+      "movieId": "c6d11e53-0c64-464a-819c-10180af188c7",
+      "movieTitle": "Ali Baba",
+      "movieYear": 1936,
+      "listName": "Swimming Sports Musical Stories"
+    },
+    {
+      "movieId": "6c1a5d3f-9eb0-4ea9-a75f-63e0ea5e965b",
+      "movieTitle": "Anything Goes",
+      "movieYear": 1936,
+      "listName": "Ocean Liner Musical Adventures"
+    },
+    {
+      "movieId": "6c1a5d3f-9eb0-4ea9-a75f-63e0ea5e965b",
+      "movieTitle": "Anything Goes",
+      "movieYear": 1936,
+      "listName": "Cole Porter Musical Adaptations"
+    },
+    {
+      "movieId": "6c1a5d3f-9eb0-4ea9-a75f-63e0ea5e965b",
+      "movieTitle": "Anything Goes",
+      "movieYear": 1936,
+      "listName": "Classic Hollywood Musicals"
+    },
+    {
+      "movieId": "a8226fa4-c89b-4be0-b3b0-dcba95ef81c8",
+      "movieTitle": "Born to Dance",
+      "movieYear": 1936,
+      "listName": "Military Romance Musical Comedies"
+    },
+    {
+      "movieId": "a8226fa4-c89b-4be0-b3b0-dcba95ef81c8",
+      "movieTitle": "Born to Dance",
+      "movieYear": 1936,
+      "listName": "Naval Romance Dance Musicals"
+    },
+    {
+      "movieId": "be1d2c81-e267-4959-9c39-525596b40195",
+      "movieTitle": "Follow the Fleet",
+      "movieYear": 1936,
+      "listName": "Naval Entertainment Musicals"
+    },
+    {
+      "movieId": "be1d2c81-e267-4959-9c39-525596b40195",
+      "movieTitle": "Follow the Fleet",
+      "movieYear": 1936,
+      "listName": "Dance Hall Romance Stories"
+    },
+    {
+      "movieId": "be1d2c81-e267-4959-9c39-525596b40195",
+      "movieTitle": "Follow the Fleet",
+      "movieYear": 1936,
+      "listName": "Naval Romance Dance Musicals"
+    },
+    {
+      "movieId": "be1d2c81-e267-4959-9c39-525596b40195",
+      "movieTitle": "Follow the Fleet",
+      "movieYear": 1936,
+      "listName": "Military Romance Musical Comedies"
+    },
+    {
+      "movieId": "f64e0697-3bd9-430c-9442-7499aa95aa88",
+      "movieTitle": "Pigskin Parade",
+      "movieYear": 1936,
+      "listName": "Sports Theme Musical Comedies"
+    },
+    {
+      "movieId": "f64e0697-3bd9-430c-9442-7499aa95aa88",
+      "movieTitle": "Pigskin Parade",
+      "movieYear": 1936,
+      "listName": "Fish Out of Water Stories"
+    },
+    {
+      "movieId": "f64e0697-3bd9-430c-9442-7499aa95aa88",
+      "movieTitle": "Pigskin Parade",
+      "movieYear": 1936,
+      "listName": "Campus Musical Comedies"
+    },
+    {
+      "movieId": "28cfbf7f-b635-4c67-b78c-97598572651c",
+      "movieTitle": "Rose Marie",
+      "movieYear": 1936,
+      "listName": "Wilderness Romance Adventures"
+    },
+    {
+      "movieId": "28cfbf7f-b635-4c67-b78c-97598572651c",
+      "movieTitle": "Rose Marie",
+      "movieYear": 1936,
+      "listName": "Law Enforcement Love Stories"
+    },
+    {
+      "movieId": "28cfbf7f-b635-4c67-b78c-97598572651c",
+      "movieTitle": "Rose Marie",
+      "movieYear": 1936,
+      "listName": "Canadian Frontier Musicals"
+    },
+    {
+      "movieId": "826d98cb-20c1-43ca-910b-0e2742ea5bb4",
+      "movieTitle": "San Francisco",
+      "movieYear": 1936,
+      "listName": "Moral Redemption Musicals"
+    },
+    {
+      "movieId": "826d98cb-20c1-43ca-910b-0e2742ea5bb4",
+      "movieTitle": "San Francisco",
+      "movieYear": 1936,
+      "listName": "Natural Disaster Period Dramas"
+    },
+    {
+      "movieId": "826d98cb-20c1-43ca-910b-0e2742ea5bb4",
+      "movieTitle": "San Francisco",
+      "movieYear": 1936,
+      "listName": "Turn-of-Century Entertainment Stories"
+    },
+    {
+      "movieId": "b31512b6-6d5d-4210-a578-ff6578e06f5a",
+      "movieTitle": "Show Boat",
+      "movieYear": 1936,
+      "listName": "Racial Identity Period Dramas"
+    },
+    {
+      "movieId": "b31512b6-6d5d-4210-a578-ff6578e06f5a",
+      "movieTitle": "Show Boat",
+      "movieYear": 1936,
+      "listName": "Multigenerational Performance Legacy"
+    },
+    {
+      "movieId": "b31512b6-6d5d-4210-a578-ff6578e06f5a",
+      "movieTitle": "Show Boat",
+      "movieYear": 1936,
+      "listName": "Mississippi River Cultural Stories"
+    },
+    {
+      "movieId": "b31512b6-6d5d-4210-a578-ff6578e06f5a",
+      "movieTitle": "Show Boat",
+      "movieYear": 1936,
+      "listName": "Interracial Relationship Dramas"
+    },
+    {
+      "movieId": "b31512b6-6d5d-4210-a578-ff6578e06f5a",
+      "movieTitle": "Show Boat",
+      "movieYear": 1936,
+      "listName": "Riverboat Entertainment Sagas"
+    },
+    {
+      "movieId": "217e3643-b5b3-402b-a222-18d3758319bb",
+      "movieTitle": "Stage Struck",
+      "movieYear": 1936,
+      "listName": "Small Town Dreams to Broadway"
+    },
+    {
+      "movieId": "217e3643-b5b3-402b-a222-18d3758319bb",
+      "movieTitle": "Stage Struck",
+      "movieYear": 1936,
+      "listName": "Vaudeville to Broadway Transitions"
+    },
+    {
+      "movieId": "6b6c709e-ed76-4c0a-bd28-c1ca35f72c25",
+      "movieTitle": "Swing Time",
+      "movieYear": 1936,
+      "listName": "Depression Era Elegance Musicals"
+    },
+    {
+      "movieId": "6b6c709e-ed76-4c0a-bd28-c1ca35f72c25",
+      "movieTitle": "Swing Time",
+      "movieYear": 1936,
+      "listName": "Professional Gambler Romance Stories"
+    },
+    {
+      "movieId": "6b6c709e-ed76-4c0a-bd28-c1ca35f72c25",
+      "movieTitle": "Swing Time",
+      "movieYear": 1936,
+      "listName": "Dance School Romance Tales"
+    },
+    {
+      "movieId": "2f6211e1-a16b-42ee-8da6-13b586fc1ff6",
+      "movieTitle": "The Great Ziegfeld",
+      "movieYear": 1936,
+      "listName": "Ziegfeld Production Adaptations"
+    },
+    {
+      "movieId": "2f6211e1-a16b-42ee-8da6-13b586fc1ff6",
+      "movieTitle": "The Great Ziegfeld",
+      "movieYear": 1936,
+      "listName": "Theatrical Empire Building Tales"
+    },
+    {
+      "movieId": "2f6211e1-a16b-42ee-8da6-13b586fc1ff6",
+      "movieTitle": "The Great Ziegfeld",
+      "movieYear": 1936,
+      "listName": "Broadway to Hollywood Transitions"
+    },
+    {
+      "movieId": "bb0f15e4-d0be-4672-a54b-b519e29bf72e",
+      "movieTitle": "Three Smart Girls",
+      "movieYear": 1936,
+      "listName": "Sibling Rivalry Performance Stories"
+    },
+    {
+      "movieId": "bb0f15e4-d0be-4672-a54b-b519e29bf72e",
+      "movieTitle": "Three Smart Girls",
+      "movieYear": 1936,
+      "listName": "Parent Reunion Romance Tales"
+    },
+    {
+      "movieId": "bb0f15e4-d0be-4672-a54b-b519e29bf72e",
+      "movieTitle": "Three Smart Girls",
+      "movieYear": 1936,
+      "listName": "Sister Bond Musical Stories"
+    },
+    {
+      "movieId": "f7de8b17-18d4-4b7b-9408-335167c6b6b7",
+      "movieTitle": "A Damsel in Distress",
+      "movieYear": 1937,
+      "listName": "British Manor House Musicals"
+    },
+    {
+      "movieId": "f7de8b17-18d4-4b7b-9408-335167c6b6b7",
+      "movieTitle": "A Damsel in Distress",
+      "movieYear": 1937,
+      "listName": "Aristocratic Mistaken Identity Comedies"
+    },
+    {
+      "movieId": "3d1b5832-e40d-4b92-890c-b1ef5b5aa3f0",
+      "movieTitle": "Hollywood Hotel",
+      "movieYear": 1937,
+      "listName": "Music Industry Crossover Tales"
+    },
+    {
+      "movieId": "3d1b5832-e40d-4b92-890c-b1ef5b5aa3f0",
+      "movieTitle": "Hollywood Hotel",
+      "movieYear": 1937,
+      "listName": "Hollywood Dream Factory Musicals"
+    },
+    {
+      "movieId": "3ca74665-f9f5-4911-aa22-dabd3b2bb68e",
+      "movieTitle": "Maytime",
+      "movieYear": 1937,
+      "listName": "Sacrifice and Regret Love Stories"
+    },
+    {
+      "movieId": "3ca74665-f9f5-4911-aa22-dabd3b2bb68e",
+      "movieTitle": "Maytime",
+      "movieYear": 1937,
+      "listName": "Flashback Narrative Musicals"
+    },
+    {
+      "movieId": "3ca74665-f9f5-4911-aa22-dabd3b2bb68e",
+      "movieTitle": "Maytime",
+      "movieYear": 1937,
+      "listName": "Operatic Crossover Adaptations"
+    },
+    {
+      "movieId": "93206caf-f20a-4c45-ac3e-6d30e40c7a1b",
+      "movieTitle": "One Hundred Men and a Girl",
+      "movieYear": 1937,
+      "listName": "Classical Music Education Stories"
+    },
+    {
+      "movieId": "93206caf-f20a-4c45-ac3e-6d30e40c7a1b",
+      "movieTitle": "One Hundred Men and a Girl",
+      "movieYear": 1937,
+      "listName": "Classical Music Origin Stories"
+    },
+    {
+      "movieId": "93206caf-f20a-4c45-ac3e-6d30e40c7a1b",
+      "movieTitle": "One Hundred Men and a Girl",
+      "movieYear": 1937,
+      "listName": "Artist Mentorship Dramas"
+    },
+    {
+      "movieId": "93206caf-f20a-4c45-ac3e-6d30e40c7a1b",
+      "movieTitle": "One Hundred Men and a Girl",
+      "movieYear": 1937,
+      "listName": "Youth Musical Leadership Tales"
+    },
+    {
+      "movieId": "93206caf-f20a-4c45-ac3e-6d30e40c7a1b",
+      "movieTitle": "One Hundred Men and a Girl",
+      "movieYear": 1937,
+      "listName": "Class Barrier Performance Stories"
+    },
+    {
+      "movieId": "574a1a76-a80a-4e9f-bfe6-53e896913e44",
+      "movieTitle": "Rosalie",
+      "movieYear": 1937,
+      "listName": "Royal Court Romance Operettas"
+    },
+    {
+      "movieId": "574a1a76-a80a-4e9f-bfe6-53e896913e44",
+      "movieTitle": "Rosalie",
+      "movieYear": 1937,
+      "listName": "Military Romance Musical Comedies"
+    },
+    {
+      "movieId": "bb842255-8f89-47ec-a89f-517d4f4a45d1",
+      "movieTitle": "Shall We Dance",
+      "movieYear": 1937,
+      "listName": "Ocean Liner Entertainment Stories"
+    },
+    {
+      "movieId": "bb842255-8f89-47ec-a89f-517d4f4a45d1",
+      "movieTitle": "Shall We Dance",
+      "movieYear": 1937,
+      "listName": "Press Manipulation Narratives"
+    },
+    {
+      "movieId": "e5583674-0b7a-4fb9-800a-857001854d34",
+      "movieTitle": "Varsity Show",
+      "movieYear": 1937,
+      "listName": "Campus Musical Comedies"
+    },
+    {
+      "movieId": "e5583674-0b7a-4fb9-800a-857001854d34",
+      "movieTitle": "Varsity Show",
+      "movieYear": 1937,
+      "listName": "Depression Era Hope Films"
+    },
+    {
+      "movieId": "e5583674-0b7a-4fb9-800a-857001854d34",
+      "movieTitle": "Varsity Show",
+      "movieYear": 1937,
+      "listName": "Berkeley Spectacular Production Numbers"
+    },
+    {
+      "movieId": "e5583674-0b7a-4fb9-800a-857001854d34",
+      "movieTitle": "Varsity Show",
+      "movieYear": 1937,
+      "listName": "Depression Era Social Commentary Musicals"
+    },
+    {
+      "movieId": "6cd4f4f0-8bb0-49e6-8268-14b5141f8f19",
+      "movieTitle": "Alexander's Ragtime Band",
+      "movieYear": 1938,
+      "listName": "Jazz Age Entertainment Spectacles"
+    },
+    {
+      "movieId": "6cd4f4f0-8bb0-49e6-8268-14b5141f8f19",
+      "movieTitle": "Alexander's Ragtime Band",
+      "movieYear": 1938,
+      "listName": "Ragtime to Jazz Transitions"
+    },
+    {
+      "movieId": "6cd4f4f0-8bb0-49e6-8268-14b5141f8f19",
+      "movieTitle": "Alexander's Ragtime Band",
+      "movieYear": 1938,
+      "listName": "American Music Evolution Sagas"
+    },
+    {
+      "movieId": "75068598-00b9-4d16-aec3-6d9b63eda35d",
+      "movieTitle": "Carefree",
+      "movieYear": 1938,
+      "listName": "Screwball Musical Comedies"
+    },
+    {
+      "movieId": "75068598-00b9-4d16-aec3-6d9b63eda35d",
+      "movieTitle": "Carefree",
+      "movieYear": 1938,
+      "listName": "Psychological Romance Musicals"
+    },
+    {
+      "movieId": "95bb6b47-c64e-4888-8e8c-6b462c761421",
+      "movieTitle": "College Swing",
+      "movieYear": 1938,
+      "listName": "Campus Musical Comedies"
+    },
+    {
+      "movieId": "95bb6b47-c64e-4888-8e8c-6b462c761421",
+      "movieTitle": "College Swing",
+      "movieYear": 1938,
+      "listName": "Educational Satire Musicals"
+    },
+    {
+      "movieId": "95bb6b47-c64e-4888-8e8c-6b462c761421",
+      "movieTitle": "College Swing",
+      "movieYear": 1938,
+      "listName": "Academic Inheritance Comedies"
+    },
+    {
+      "movieId": "f642a402-8b07-48d3-99e8-cc586f9743c9",
+      "movieTitle": "Garden of the Moon",
+      "movieYear": 1938,
+      "listName": "Band Leader Career Stories"
+    },
+    {
+      "movieId": "f642a402-8b07-48d3-99e8-cc586f9743c9",
+      "movieTitle": "Garden of the Moon",
+      "movieYear": 1938,
+      "listName": "Nightclub Management Conflicts"
+    },
+    {
+      "movieId": "0ddced43-2412-4ca7-818b-6102f849d11b",
+      "movieTitle": "Rebecca of Sunnybrook Farm",
+      "movieYear": 1938,
+      "listName": "Early Radio Entertainment Musicals"
+    },
+    {
+      "movieId": "0ddced43-2412-4ca7-818b-6102f849d11b",
+      "movieTitle": "Rebecca of Sunnybrook Farm",
+      "movieYear": 1938,
+      "listName": "Celebrity Cameo Revue Films"
+    },
+    {
+      "movieId": "031417d4-2c8b-41ad-973d-9a918f48ea67",
+      "movieTitle": "Rose of the Rio Grande",
+      "movieYear": 1938,
+      "listName": "Mexican-American Frontier Musicals"
+    },
+    {
+      "movieId": "031417d4-2c8b-41ad-973d-9a918f48ea67",
+      "movieTitle": "Rose of the Rio Grande",
+      "movieYear": 1938,
+      "listName": "Spanish Colonial Period Romances"
+    },
+    {
+      "movieId": "db9a6ea3-99c2-4ec5-a901-bc5fafd48cd4",
+      "movieTitle": "Sweethearts",
+      "movieYear": 1938,
+      "listName": "Hollywood Romance Crossovers"
+    },
+    {
+      "movieId": "db9a6ea3-99c2-4ec5-a901-bc5fafd48cd4",
+      "movieTitle": "Sweethearts",
+      "movieYear": 1938,
+      "listName": "Broadway vs Hollywood Career Conflicts"
+    },
+    {
+      "movieId": "56ae78a6-6105-4510-8922-438a90b1f097",
+      "movieTitle": "Swing!",
+      "movieYear": 1938,
+      "listName": "Swing Era Performance Films"
+    },
+    {
+      "movieId": "56ae78a6-6105-4510-8922-438a90b1f097",
+      "movieTitle": "Swing!",
+      "movieYear": 1938,
+      "listName": "Jazz Culture Musical Portraits"
+    },
+    {
+      "movieId": "4c454a93-d785-4661-a947-90a82a220759",
+      "movieTitle": "The Big Broadcast of 1938",
+      "movieYear": 1938,
+      "listName": "Early Radio Entertainment Musicals"
+    },
+    {
+      "movieId": "4c454a93-d785-4661-a947-90a82a220759",
+      "movieTitle": "The Big Broadcast of 1938",
+      "movieYear": 1938,
+      "listName": "Celebrity Cameo Revue Films"
+    },
+    {
+      "movieId": "4c454a93-d785-4661-a947-90a82a220759",
+      "movieTitle": "The Big Broadcast of 1938",
+      "movieYear": 1938,
+      "listName": "Jazz Age Entertainment Spectacles"
+    },
+    {
+      "movieId": "4c454a93-d785-4661-a947-90a82a220759",
+      "movieTitle": "The Big Broadcast of 1938",
+      "movieYear": 1938,
+      "listName": "Radio Stars Compilation Films"
+    },
+    {
+      "movieId": "1accd25a-748f-42ed-9056-4d432f818296",
+      "movieTitle": "The Girl of the Golden West",
+      "movieYear": 1938,
+      "listName": "Gold Rush Era Social Commentary"
+    },
+    {
+      "movieId": "1accd25a-748f-42ed-9056-4d432f818296",
+      "movieTitle": "The Girl of the Golden West",
+      "movieYear": 1938,
+      "listName": "Frontier Romance Dramas"
+    },
+    {
+      "movieId": "1accd25a-748f-42ed-9056-4d432f818296",
+      "movieTitle": "The Girl of the Golden West",
+      "movieYear": 1938,
+      "listName": "Frontier Musical Adventures"
+    },
+    {
+      "movieId": "498ce5db-4439-43f4-8238-af07dfe01129",
+      "movieTitle": "The Great Waltz",
+      "movieYear": 1938,
+      "listName": "Viennese Classical Music Romances"
+    },
+    {
+      "movieId": "498ce5db-4439-43f4-8238-af07dfe01129",
+      "movieTitle": "The Great Waltz",
+      "movieYear": 1938,
+      "listName": "European Musical Pioneers"
+    },
+    {
+      "movieId": "498ce5db-4439-43f4-8238-af07dfe01129",
+      "movieTitle": "The Great Waltz",
+      "movieYear": 1938,
+      "listName": "Classical Music Origin Stories"
+    },
+    {
+      "movieId": "498ce5db-4439-43f4-8238-af07dfe01129",
+      "movieTitle": "The Great Waltz",
+      "movieYear": 1938,
+      "listName": "Classical Composer Biographical Musicals"
+    },
+    {
+      "movieId": "498ce5db-4439-43f4-8238-af07dfe01129",
+      "movieTitle": "The Great Waltz",
+      "movieYear": 1938,
+      "listName": "Musical Legacy Stories"
+    },
+    {
+      "movieId": "a174f53c-0222-4655-bfb3-6e644aa101a7",
+      "movieTitle": "The Terror of Tiny Town",
+      "movieYear": 1938,
+      "listName": "Unconventional Casting Musicals"
+    },
+    {
+      "movieId": "a174f53c-0222-4655-bfb3-6e644aa101a7",
+      "movieTitle": "The Terror of Tiny Town",
+      "movieYear": 1938,
+      "listName": "Exploitation Musical Features"
+    },
+    {
+      "movieId": "a174f53c-0222-4655-bfb3-6e644aa101a7",
+      "movieTitle": "The Terror of Tiny Town",
+      "movieYear": 1938,
+      "listName": "Novelty Cast Productions"
+    },
+    {
+      "movieId": "51b14822-c48a-4fde-add8-7f02295c6ad1",
+      "movieTitle": "Babes in Arms",
+      "movieYear": 1939,
+      "listName": "Vaudeville to Broadway Transitions"
+    },
+    {
+      "movieId": "51b14822-c48a-4fde-add8-7f02295c6ad1",
+      "movieTitle": "Babes in Arms",
+      "movieYear": 1939,
+      "listName": "Youth Performance Determination Stories"
+    },
+    {
+      "movieId": "51b14822-c48a-4fde-add8-7f02295c6ad1",
+      "movieTitle": "Babes in Arms",
+      "movieYear": 1939,
+      "listName": "Mickey-Judy Musical Partnerships"
+    },
+    {
+      "movieId": "51b14822-c48a-4fde-add8-7f02295c6ad1",
+      "movieTitle": "Babes in Arms",
+      "movieYear": 1939,
+      "listName": "Show-Saving Teen Musicals"
+    },
+    {
+      "movieId": "51b14822-c48a-4fde-add8-7f02295c6ad1",
+      "movieTitle": "Babes in Arms",
+      "movieYear": 1939,
+      "listName": "Depression Era Hope Films"
+    },
+    {
+      "movieId": "fd6e646e-be7a-4f8e-a7c5-28da8f48ac31",
+      "movieTitle": "Broadway Serenade",
+      "movieYear": 1939,
+      "listName": "Marriage Success Balance Dramas"
+    }
+  ],
+  "allFailures": []
+}

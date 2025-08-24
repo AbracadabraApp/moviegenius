@@ -1,0 +1,115 @@
+{
+  "enhancedFormat": true,
+  "title": "Blade Runner",
+  "year": 1982,
+  "tmdbId": 78,
+  "movieHeader": {
+    "title": "Blade Runner",
+    "year": 1982,
+    "posterUrl": "https://image.tmdb.org/t/p/w500/63N9uy8nd9j7Eog2axPQ8lbr3Wj.jpg",
+    "trailerVideoId": "eogpIG53Cis",
+    "streaming": {
+      "streaming_data": "TBD"
+    },
+    "overview": "In the year 2019, a former police officer is hired to hunt down a fugitive group of replicants living on Earth. As he tracks them down, he begins to question what makes someone human."
+  },
+  "analysis": {
+    "sections": [
+      {
+        "type": "text", 
+        "content": "Ridley Scott's neo-noir masterpiece transformed Philip K. Dick's philosophical musings into a visually stunning meditation on consciousness and humanity. Set in a dystopian 2019 Los Angeles, <a href=\"/person/78\" class=\"person-name\">Harrison Ford</a> plays Rick Deckard, a blade runner tasked with hunting down escaped replicants—bio-engineered beings virtually indistinguishable from humans. The film's central question—what defines humanity—remains as compelling today as it was four decades ago."
+      },
+      {
+        "type": "technicalAnalysis",
+        "content": "Scott's direction creates a noir atmosphere through perpetual rain, neon-soaked streets, and towering corporate structures that dwarf human existence. Cinematographer Jordan Cronenweth's work establishes the template for cyberpunk visual design, while Vangelis's synthesizer score perfectly captures the film's melancholic futurism. The production design by Lawrence G. Paull creates a lived-in future that feels both alien and familiar, influencing decades of science fiction cinema."
+      },
+      {
+        "type": "socialAndCultural",
+        "content": "Initially misunderstood by audiences expecting a traditional action film, Blade Runner has grown into one of cinema's most influential works. Its exploration of corporate power, environmental decay, and artificial intelligence proved remarkably prescient. The film's multiple versions—including the director's cut that removed Ford's narration—demonstrate how different editorial choices can fundamentally alter a work's meaning and impact."
+      },
+      {
+        "type": "contemporaryRelevance",
+        "content": "In an era of advancing AI and genetic engineering, Blade Runner's questions about consciousness and identity feel urgent rather than speculative. The film's depiction of corporate dominance, environmental collapse, and social stratification resonates with contemporary concerns about technology's role in society. Its influence extends beyond cinema into literature, video games, and popular culture, establishing visual and thematic templates still being explored today."
+      }
+    ],
+    "featuredMovies": [
+      {
+        "title": "Alien",
+        "year": 1979,
+        "tmdbId": 348,
+        "posterUrl": "https://image.tmdb.org/t/p/w500/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg",
+        "slug": "/movie/348",
+        "description": "Ridley Scott's earlier sci-fi horror masterpiece"
+      },
+      {
+        "title": "2001: A Space Odyssey", 
+        "year": 1968,
+        "tmdbId": 62,
+        "posterUrl": "https://image.tmdb.org/t/p/w500/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg",
+        "slug": "/movie/62",
+        "description": "Kubrick's philosophical science fiction epic"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Neo-Noir Visual Style",
+        "category": "Cinematography",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Philip K. Dick Adaptations",
+        "category": "Literature",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Artificial Intelligence in Cinema",
+        "category": "Technology",
+        "difficulty": "Beginner"
+      },
+      {
+        "topic": "Cyberpunk Aesthetics",
+        "category": "Design",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Director's Cut Phenomenon",
+        "category": "Film History",
+        "difficulty": "Advanced"
+      }
+    ],
+    "moreIdeas": [
+      {
+        "title": "Akira", 
+        "year": 1988,
+        "connection": "Dystopian future with similar visual style"
+      },
+      {
+        "title": "The Fifth Element",
+        "year": 1997,
+        "connection": "Visually rich future noir atmosphere"
+      },
+      {
+        "title": "Minority Report",
+        "year": 2002,
+        "connection": "Another Philip K. Dick adaptation"
+      }
+    ],
+    "whyWatch": {
+      "recommendation": "YES", 
+      "reasons": [
+        "Seminal influence on modern science fiction cinema",
+        "Stunning visual design that created cyberpunk aesthetic",
+        "Philosophical depth exploring consciousness and identity"
+      ]
+    }
+  },
+  "keyElements": {
+    "director": "Ridley Scott",
+    "writers": ["Hampton Fancher", "David Webb Peoples"],
+    "stars": ["Harrison Ford", "Rutger Hauer", "Sean Young"],
+    "genre": "Science Fiction",
+    "cinematographer": "Jordan Cronenweth", 
+    "composer": "Vangelis",
+    "studio": "Warner Bros."
+  }
+}

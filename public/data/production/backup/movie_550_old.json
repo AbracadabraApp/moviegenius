@@ -1,5 +1,4 @@
 {
-  "enhancedFormat": true,
   "title": "Fight Club",
   "year": 1999,
   "tmdbId": 550,
@@ -49,89 +48,85 @@
         "title": "The Matrix",
         "year": 1999,
         "tmdbId": 603,
-        "posterUrl": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+        "posterUrl": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg", 
         "slug": "/movie/603",
-        "description": "Reality-questioning thriller with similar philosophical depth"
+        "description": "Explores similar themes of reality, control, and rebellion against the system"
       },
       {
         "title": "American Beauty",
         "year": 1999,
         "tmdbId": 14,
         "posterUrl": "https://image.tmdb.org/t/p/w500/wby9315QzVKdW9BonAefg8jGTTb.jpg",
-        "slug": "/movie/14",
-        "description": "Sam Mendes' critique of suburban conformity and consumer culture"
-      }
-    ],
-    "exploreTopics": [
-      {
-        "topic": "Toxic Masculinity in Cinema",
-        "category": "Social Commentary",
-        "difficulty": "Intermediate"
-      },
-      {
-        "topic": "Consumer Culture Critique",
-        "category": "Cultural Studies",
-        "difficulty": "Beginner"
-      },
-      {
-        "topic": "Unreliable Narrator Techniques",
-        "category": "Film Technique",
-        "difficulty": "Advanced"
-      },
-      {
-        "topic": "Digital Effects Revolution",
-        "category": "Technology",
-        "difficulty": "Intermediate"
-      },
-      {
-        "topic": "Anti-Establishment Cinema",
-        "category": "Film History",
-        "difficulty": "Advanced"
-      }
-    ],
-    "moreIdeas": [
-      {
-        "title": "The Graduate",
-        "year": 1967,
-        "connection": "Early exploration of generational alienation and consumer culture"
-      },
-      {
-        "title": "Network",
-        "year": 1976,
-        "connection": "Media satire with similar anti-establishment themes"
-      },
-      {
-        "title": "Taxi Driver",
-        "year": 1976,
-        "connection": "Urban alienation and psychological breakdown"
-      },
-      {
-        "title": "Clockwork Orange",
-        "year": 1971,
-        "connection": "Controversial violence and social commentary"
-      },
-      {
-        "title": "Falling Down",
-        "year": 1993,
-        "connection": "Middle-aged male rage against modern society"
+        "slug": "/movie/14", 
+        "description": "Examines suburban alienation and the dark underbelly of the American Dream"
       }
     ],
     "whyWatch": {
       "recommendation": "YES",
       "reasons": [
-        "Groundbreaking filmmaking that influenced a generation",
-        "Provocative social commentary still relevant today", 
-        "Career-defining performances from Norton and Pitt"
+        "Groundbreaking filmmaking that influenced a generation of directors",
+        "Provocative social commentary that remains relevant today",
+        "Outstanding performances from Norton, Pitt, and Bonham Carter",
+        "Technical mastery in cinematography, editing, and sound design"
+      ],
+      "bullets": [
+        "Essential viewing for understanding late 20th century cinema",
+        "Perfect introduction to David Fincher's distinctive style",
+        "Culturally significant film that sparked widespread debate",
+        "Masterclass in unreliable narrator techniques"
       ]
-    }
+    },
+    "moreIdeas": [
+      {
+        "title": "Seven",
+        "year": 1995,
+        "tmdbId": 807,
+        "posterUrl": "https://image.tmdb.org/t/p/w500/6yoghtyTpznpBik8EngEmJskVUO.jpg",
+        "connection": "Earlier Fincher film exploring dark themes of morality and obsession"
+      },
+      {
+        "title": "Zodiac", 
+        "year": 2007,
+        "tmdbId": 1271,
+        "posterUrl": "https://image.tmdb.org/t/p/w500/6Xzl0lrY2zWz3REyMJhaVNTHPY7.jpg",
+        "connection": "Later Fincher film showcasing his meticulous attention to detail"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Toxic Masculinity in Film",
+        "category": "Gender Studies",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Consumer Culture Critique", 
+        "category": "Social Commentary",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Unreliable Narrators",
+        "category": "Film Technique",
+        "difficulty": "Intermediate"
+      }
+    ]
   },
   "keyElements": {
-    "director": "David Fincher",
-    "writers": ["Chuck Palahniuk", "Jim Uhls"],
-    "stars": ["Brad Pitt", "Edward Norton", "Helena Bonham Carter"],
-    "genre": "Psychological Thriller",
-    "cinematographer": "Jeff Cronenweth",
-    "composer": "The Dust Brothers",
-    "studio": "20th Century Fox"
+    "director": {"name": "David Fincher", "personId": "7467"},
+    "stars": [
+      {"name": "Brad Pitt", "personId": "287"},
+      {"name": "Edward Norton", "personId": "819"},
+      {"name": "Helena Bonham Carter", "personId": "147"}
+    ],
+    "cinematographer": {"name": "Jeff Cronenweth", "personId": "1769"},
+    "composer": {"name": "The Dust Brothers", "personId": "21970"}
+  },
+  "staticGenerated": true,
+  "enhancedFormat": true,
+  "lastUpdated": "2025-08-20T18:15:00Z",
+  "buildData": {
+    "posterValidated": true,
+    "trailerResolved": true,
+    "streamingCurrent": true,
+    "contributorsResolved": true
   }
 }

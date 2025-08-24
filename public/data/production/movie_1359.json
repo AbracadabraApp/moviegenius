@@ -1,0 +1,128 @@
+{
+  "enhancedFormat": true,
+  "title": "American Psycho", 
+  "year": 2000,
+  "tmdbId": 1359,
+  "movieHeader": {
+    "title": "American Psycho",
+    "year": 2000,
+    "posterUrl": "https://image.tmdb.org/t/p/w500/9uGHEgsiUXjCNq8wdq4r49YL8A1.jpg",
+    "trailerVideoId": "5YnGhW4UEhc",
+    "streaming": {
+      "streaming_data": "Available on Amazon Prime, Peacock"
+    },
+    "overview": "A wealthy New York investment banking executive hides his alternate psychopathic ego from his co-workers and friends as he escalates deeper into his illogical, gratuitous fantasies."
+  },
+  "analysis": {
+    "sections": [
+      {
+        "type": "text",
+        "content": "Mary Harron's adaptation of Bret Easton Ellis's controversial novel transforms literary satire into a razor-sharp cultural critique. <a href=\"/person/73421\" class=\"person-name\">Christian Bale</a> delivers a tour-de-force performance as Patrick Bateman, a Wall Street executive whose obsession with status symbols masks his homicidal tendencies. The film functions simultaneously as horror, dark comedy, and social commentary, skewering 1980s excess with surgical precision."
+      },
+      {
+        "type": "performancesAndVision",
+        "content": "Bale's commitment to the role is legendary, transforming himself physically and psychologically into the perfect embodiment of narcissistic capitalism. His performance walks the tightrope between comedy and horror, making Bateman both repulsive and charismatic. Harron's direction maintains the novel's satirical edge while creating a distinctly cinematic experience, using meticulous production design to capture the soulless perfection of 1980s consumer culture."
+      },
+      {
+        "type": "socialAndCultural",
+        "content": "American Psycho arrived as a scathing indictment of late-stage capitalism and masculine toxicity. The film's portrayal of Wall Street culture, brand obsession, and emotional vacancy struck a nerve with audiences experiencing similar anxieties about corporate America. Its unflinching examination of violence and consumerism sparked controversy and debate about the relationship between material success and moral decay."
+      },
+      {
+        "type": "contemporaryRelevance", 
+        "content": "Two decades later, the film reads like a prophetic warning about unchecked capitalism and toxic masculinity. Bateman's obsession with brands, status, and appearances feels remarkably contemporary in our social media age. The film's themes of superficial perfection masking inner emptiness resonate strongly with current discussions about mental health, authenticity, and the psychological costs of success culture."
+      }
+    ],
+    "featuredMovies": [
+      {
+        "title": "Wall Street",
+        "year": 1987,
+        "tmdbId": 808,
+        "posterUrl": "https://image.tmdb.org/t/p/w500/2Aak2MhSGzkHHYD4aP6A5onYZEL.jpg", 
+        "slug": "/movie/808",
+        "description": "Oliver Stone's earlier critique of 1980s financial excess"
+      },
+      {
+        "title": "The Wolf of Wall Street",
+        "year": 2013,
+        "tmdbId": 106646,
+        "posterUrl": "https://image.tmdb.org/t/p/w500/34m2tygAYBGqA9MXKhRDtzYd4MR.jpg",
+        "slug": "/movie/106646", 
+        "description": "Scorsese's later examination of financial corruption and excess"
+      },
+      {
+        "title": "Fight Club",
+        "year": 1999,
+        "tmdbId": 550,
+        "posterUrl": "https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+        "slug": "/movie/550",
+        "description": "Companion piece exploring masculinity and consumer culture"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Satirical Horror Cinema",
+        "category": "Film Genre",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "1980s Cultural Critique",
+        "category": "Social Commentary", 
+        "difficulty": "Beginner"
+      },
+      {
+        "topic": "Controversial Literary Adaptations",
+        "category": "Literature",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Method Acting Transformations",
+        "category": "Performance",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Consumer Culture in Film",
+        "category": "Cultural Studies",
+        "difficulty": "Beginner"
+      }
+    ],
+    "moreIdeas": [
+      {
+        "title": "Taxi Driver",
+        "year": 1976,
+        "connection": "Urban alienation and psychological breakdown"
+      },
+      {
+        "title": "American Beauty", 
+        "year": 1999,
+        "connection": "Suburban middle-class spiritual emptiness"
+      },
+      {
+        "title": "There Will Be Blood",
+        "year": 2007,
+        "connection": "Capitalist sociopathy and moral decay"
+      },
+      {
+        "title": "Nightcrawler",
+        "year": 2014,
+        "connection": "Modern media-obsessed sociopathy"
+      }
+    ],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Christian Bale's transformative career-defining performance",
+        "Sharp social satire disguised as psychological horror",
+        "Influential cultural critique of capitalism and masculinity"
+      ]
+    }
+  },
+  "keyElements": {
+    "director": "Mary Harron",
+    "writers": ["Mary Harron", "Guinevere Turner"],
+    "stars": ["Christian Bale", "Willem Dafoe", "Jared Leto"],
+    "genre": "Psychological Horror",
+    "cinematographer": "Andrzej Sekuła",
+    "composer": "John Cale", 
+    "studio": "Lionsgate"
+  }
+}

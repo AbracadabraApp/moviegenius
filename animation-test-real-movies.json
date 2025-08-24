@@ -1,0 +1,56 @@
+{
+  "movieCount": 10,
+  "category": "Animation", 
+  "movieData": [
+    {
+      "id": "test-001",
+      "title": "Toy Story",
+      "year": 1995
+    },
+    {
+      "id": "test-002", 
+      "title": "Spirited Away",
+      "year": 2001
+    },
+    {
+      "id": "test-003",
+      "title": "The Lion King", 
+      "year": 1994
+    },
+    {
+      "id": "test-004",
+      "title": "Finding Nemo",
+      "year": 2003
+    },
+    {
+      "id": "test-005",
+      "title": "Shrek",
+      "year": 2001
+    },
+    {
+      "id": "test-006",
+      "title": "Inside Out",
+      "year": 2015
+    },
+    {
+      "id": "test-007",
+      "title": "Frozen",
+      "year": 2013
+    },
+    {
+      "id": "test-008", 
+      "title": "WALL-E",
+      "year": 2008
+    },
+    {
+      "id": "test-009",
+      "title": "Moana", 
+      "year": 2016
+    },
+    {
+      "id": "test-010",
+      "title": "Coco",
+      "year": 2017
+    }
+  ]
+}

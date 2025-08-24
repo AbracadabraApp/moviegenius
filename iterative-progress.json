@@ -1,0 +1,116 @@
+{
+  "batch": 2,
+  "totalBatches": 2,
+  "processedMovies": 50,
+  "totalMovies": 50,
+  "currentLists": 11,
+  "totalCost": 0.04583999999999999,
+  "lists": [
+    {
+      "name": "Pre-Code Sparklers",
+      "movieIds": [
+        "0ef48c0a-e30a-4651-a09d-cf369fd7ee0e",
+        "18846298-89a1-41f6-90d9-a3bbd948a389",
+        "c569638e-4145-40b6-9f46-f758db9287e5"
+      ]
+    },
+    {
+      "name": "Hollywood Glitz",
+      "movieIds": [
+        "c8ab394e-aa50-411e-84b2-bb099dd1db53",
+        "872d1745-c4d0-49f0-abdf-9532817aa282",
+        "177f98ae-4940-4004-8f5d-1fca9cec2b5f",
+        "e0c921b4-de4f-42df-a4d5-e81f906ff145",
+        "3d1b5832-e40d-4b92-890c-b1ef5b5aa3f0",
+        "f642a402-8b07-48d3-99e8-cc586f9743c9"
+      ]
+    },
+    {
+      "name": "Romance & Rhythm",
+      "movieIds": [
+        "944b3df9-2bf7-4163-9533-319289ad2462",
+        "feb2e93c-f824-469a-8eec-ac8f5bda8ce6",
+        "a45a7eb5-d79f-44bb-b179-59d1df2a2f25",
+        "14528279-a24a-49a2-8e83-1764e9c97863",
+        "6b6c709e-ed76-4c0a-bd28-c1ca35f72c25",
+        "bb842255-8f89-47ec-a89f-517d4f4a45d1",
+        "75068598-00b9-4d16-aec3-6d9b63eda35d"
+      ]
+    },
+    {
+      "name": "Broadway Bound",
+      "movieIds": [
+        "554c139b-08b4-474e-9f69-cf1beecd1e37",
+        "2562e344-11da-431e-91dc-d320b7b83e5c",
+        "d5b417c4-c721-4350-9f88-6cbaa7130462",
+        "158623f1-45a9-411c-95d1-44cf484d0fc7",
+        "6c1a5d3f-9eb0-4ea9-a75f-63e0ea5e965b",
+        "b31512b6-6d5d-4210-a578-ff6578e06f5a",
+        "217e3643-b5b3-402b-a222-18d3758319bb",
+        "2f6211e1-a16b-42ee-8da6-13b586fc1ff6"
+      ]
+    },
+    {
+      "name": "Exotic Escapes",
+      "movieIds": [
+        "bbfcb1fc-5784-4aba-9107-4ceca4e0f4d7",
+        "0f3dce3a-b054-4844-8fda-590077d158c7",
+        "c6d11e53-0c64-464a-819c-10180af188c7",
+        "031417d4-2c8b-41ad-973d-9a918f48ea67"
+      ]
+    },
+    {
+      "name": "Musical Potpourri",
+      "movieIds": [
+        "8cec371b-d315-4bc6-bcd1-5b931e7aa86d",
+        "fe2067fc-26de-43be-bbf2-f2d68538cb72",
+        "16749a62-b7f1-481e-bdcd-3b482cf7f7ec",
+        "b25bbd65-bb57-4c91-a691-394c220c4ce0",
+        "bf721171-9b60-48ef-92b8-40a37e1b825d",
+        "db1cf9df-84f7-4dca-8309-78dacfb94ff1",
+        "28cfbf7f-b635-4c67-b78c-97598572651c",
+        "3ca74665-f9f5-4911-aa22-dabd3b2bb68e",
+        "93206caf-f20a-4c45-ac3e-6d30e40c7a1b",
+        "574a1a76-a80a-4e9f-bfe6-53e896913e44",
+        "db9a6ea3-99c2-4ec5-a901-bc5fafd48cd4"
+      ]
+    },
+    {
+      "name": "Campus Capers",
+      "movieIds": [
+        "f64e0697-3bd9-430c-9442-7499aa95aa88",
+        "e5583674-0b7a-4fb9-800a-857001854d34",
+        "95bb6b47-c64e-4888-8e8c-6b462c761421"
+      ]
+    },
+    {
+      "name": "Maritime Musicals",
+      "movieIds": [
+        "be1d2c81-e267-4959-9c39-525596b40195",
+        "826d98cb-20c1-43ca-910b-0e2742ea5bb4"
+      ]
+    },
+    {
+      "name": "Americana Songs",
+      "movieIds": [
+        "6cd4f4f0-8bb0-49e6-8268-14b5141f8f19",
+        "0ddced43-2412-4ca7-818b-6102f849d11b"
+      ]
+    },
+    {
+      "name": "Dance Spectaculars",
+      "movieIds": [
+        "a8226fa4-c89b-4be0-b3b0-dcba95ef81c8",
+        "f7de8b17-18d4-4b7b-9408-335167c6b6b7",
+        "56ae78a6-6105-4510-8922-438a90b1f097"
+      ]
+    },
+    {
+      "name": "Family Harmonies",
+      "movieIds": [
+        "bb0f15e4-d0be-4672-a54b-b519e29bf72e"
+      ]
+    }
+  ],
+  "timestamp": "2025-08-20T20:30:51.157Z"
+}

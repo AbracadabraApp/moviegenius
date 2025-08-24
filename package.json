@@ -28,6 +28,8 @@
     "test:comprehensive:coverage": "node scripts/run-comprehensive-tests.js --coverage",
     "test:critical-paths": "npm test -- __tests__/critical-paths/ --testTimeout=30000",
     "test:railway-integration": "JEST_TEST_TYPE=api npm test -- __tests__/railway-integration/ --testTimeout=20000",
+    "build:animation": "DOTENV_CONFIG_PATH=.env.local node browse-collection-generator.js Animation",
+    "build:all-genres": "DOTENV_CONFIG_PATH=.env.local node build-all-genres.js",
     "test:api-endpoints": "JEST_TEST_TYPE=api npm test -- __tests__/api-endpoints/ --testTimeout=15000",
     "test:components": "npm test -- __tests__/components/ --testTimeout=10000",
     "test:performance": "JEST_TEST_TYPE=api npm test -- __tests__/performance/ --testTimeout=60000",

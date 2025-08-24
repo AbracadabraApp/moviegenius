@@ -11,6 +11,8 @@ import ExplorePromptCard from './ExplorePromptCard';
 import ErrorBoundary from './ErrorBoundary';
 import MediaCardErrorFallback from './MediaCardErrorFallback';
 import ExplorePromptErrorFallback from './ExplorePromptErrorFallback';
+import WhyWatchSection from './WhyWatchSection';
+import StreamingAvailabilityLink from './StreamingAvailabilityLink';
 import { getPerformanceMonitor } from '../lib/performance-monitor';
 
 // Feature flag for Explore Further functionality
@@ -693,33 +695,6 @@ const styles = {
     border: '2px solid #9ca3af',
     boxShadow: '0 8px 24px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(217, 119, 6, 0.2)',
   },
-  reasonsList: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '10px',
-  },
-  reasonItem: {
-    display: 'flex',
-    alignItems: 'flex-start',
-    gap: '12px',
-  },
-  reasonBullet: {
-    color: '#000000',
-    fontSize: '16px',
-    fontWeight: 'bold',
-    marginTop: '1px',
-    minWidth: '10px',
-  },
-  reasonText: {
-    fontSize: '14px',
-    lineHeight: '1.3',
-    color: '#374151',
-    flex: 1,
-    wordBreak: 'normal',
-    overflowWrap: 'break-word',
-    hyphens: 'none',
-    textAlign: 'left',
-  },
   subheadSection: {
     marginTop: '32px',
     marginBottom: '16px',
@@ -938,17 +913,23 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
   // Add "Reasons to Watch" at the very beginning (above first paragraph)
   if (whyWatch.length > 0) {
     content.push(
-      <div key="reasons-to-watch" style={{marginTop: '4px', borderLeft: '3px solid #d4af37', paddingLeft: '16px'}}>
-        <h3 style={{...styles.sectionTitle, fontSize: '16px', lineHeight: '1.2', margin: '0 0 12px 0', padding: '0'}}>Why You Should Watch This Movie:</h3>
-        <div style={{...styles.reasonsList, padding: '0'}}>
-          {whyWatch.slice(0, 3).map((reason, reasonIndex) => (
-            <div key={`reason-${reasonIndex}`} style={styles.reasonItem}>
-              <div style={styles.reasonBullet}>•</div>
-              <div style={styles.reasonText}>{reason}</div>
-            </div>
-          ))}
-        </div>
-      </div>
+      <WhyWatchSection
+        key="reasons-to-watch"
+        reasons={whyWatch}
+        recommendation="YES"
+      />
+    );
+  }
+  
+  // Add streaming search section after Why Watch
+  if (movie?.title) {
+    content.push(
+      <StreamingAvailabilityLink
+        key="streaming-search"
+        movieTitle={movie.title}
+        year={movie.release_date ? new Date(movie.release_date).getFullYear() : undefined}
+        provider="google"
+      />
     );
   }
 

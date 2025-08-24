@@ -1,0 +1,128 @@
+{
+  "enhancedFormat": true,
+  "title": "Se7en",
+  "year": 1995,
+  "tmdbId": 807,
+  "movieHeader": {
+    "title": "Se7en",
+    "year": 1995,
+    "posterUrl": "https://image.tmdb.org/t/p/w500/6yoghtyTpznpBik8EngEmJskVUO.jpg",
+    "trailerVideoId": "znmZoVkCjpI",
+    "streaming": {
+      "streaming_data": "Available on Netflix, Hulu"
+    },
+    "overview": "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives in this dark and gritty thriller."
+  },
+  "analysis": {
+    "sections": [
+      {
+        "type": "text",
+        "content": "David Fincher's breakthrough thriller established him as a master of atmospheric dread and psychological complexity. <a href=\"/person/819\" class=\"person-name\">Brad Pitt</a> and <a href=\"/person/192\" class=\"person-name\">Morgan Freeman</a> play mismatched detectives pursuing a methodical killer who orchestrates murders based on the seven deadly sins. The film's unflinching examination of urban decay and moral corruption created a new template for intelligent horror that influenced a generation of filmmakers."
+      },
+      {
+        "type": "technicalAnalysis",
+        "content": "Fincher's meticulous visual style transforms the unnamed city into a character itself—perpetually rain-soaked, shrouded in shadows, and suffused with moral ambiguity. Cinematographer Darius Khondji's work creates a distinctive palette of sickly greens and institutional browns that reinforce the film's themes of decay and corruption. The production design by Arthur Max creates environments that feel authentically lived-in yet symbolically loaded, while Howard Shore's minimalist score amplifies the psychological tension."
+      },
+      {
+        "type": "socialAndCultural",
+        "content": "Se7en arrived during a period of rising anxiety about urban crime and moral decline in American cities. The film's exploration of religious symbolism, police procedure, and psychological profiling reflected contemporary fascination with criminal psychology and forensic science. Its unflinching portrayal of violence and moral complexity challenged audiences accustomed to cleaner resolution in police thrillers, establishing new standards for adult-oriented genre entertainment."
+      },
+      {
+        "type": "contemporaryRelevance",
+        "content": "The film's themes of moral relativism, institutional failure, and psychological manipulation remain disturbingly relevant. In an era of increasing social division and moral uncertainty, the killer's twisted logic and methodical approach feel prophetic of later real-world events. The film's influence on subsequent thrillers is unmistakable, establishing visual and narrative conventions still being employed in contemporary crime cinema like <a href=\"/movie/1124\" class=\"movie-title\">The Prestige</a> and <a href=\"/movie/27205\" class=\"movie-title\">Inception</a>."
+      }
+    ],
+    "featuredMovies": [
+      {
+        "title": "The Silence of the Lambs",
+        "year": 1991,
+        "tmdbId": 274,
+        "posterUrl": "https://image.tmdb.org/t/p/w500/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg",
+        "slug": "/movie/274", 
+        "description": "Another psychological thriller featuring methodical serial killer"
+      },
+      {
+        "title": "Zodiac",
+        "year": 2007,
+        "tmdbId": 1949,
+        "posterUrl": "https://image.tmdb.org/t/p/w500/6YmeO4pB7XTh8P8F960O1uA14JO.jpg",
+        "slug": "/movie/1949",
+        "description": "Fincher's later true-crime procedural masterpiece"
+      },
+      {
+        "title": "Heat",
+        "year": 1995,
+        "tmdbId": 949,
+        "posterUrl": "https://image.tmdb.org/t/p/w500/zMyfPUelumio3tiDKPffaUpsQTD.jpg",
+        "slug": "/movie/949",
+        "description": "Mann's crime epic exploring moral complexity in law enforcement"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Serial Killer Cinema Evolution",
+        "category": "Film Genre",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Religious Symbolism in Horror",
+        "category": "Film Analysis",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Police Procedural Realism",
+        "category": "Film Technique",
+        "difficulty": "Beginner"
+      },
+      {
+        "topic": "Fincher's Visual Style Development", 
+        "category": "Auteur Study",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Urban Decay in 1990s Cinema",
+        "category": "Cultural Studies",
+        "difficulty": "Intermediate"
+      }
+    ],
+    "moreIdeas": [
+      {
+        "title": "The Game",
+        "year": 1997,
+        "connection": "Fincher's follow-up psychological thriller"
+      },
+      {
+        "title": "Manhunter",
+        "year": 1986,
+        "connection": "Earlier Michael Mann serial killer procedural"
+      },
+      {
+        "title": "Copycat",
+        "year": 1995,
+        "connection": "Contemporary serial killer thriller"
+      },
+      {
+        "title": "Kiss the Girls",
+        "year": 1997,
+        "connection": "Similar police investigation of methodical killer"
+      }
+    ],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Fincher's masterful direction creates sustained atmospheric dread",
+        "Exceptional performances from Pitt and Freeman anchor complex narrative",
+        "Influential thriller that redefined genre expectations and visual style"
+      ]
+    }
+  },
+  "keyElements": {
+    "director": "David Fincher",
+    "writers": ["Andrew Kevin Walker"],
+    "stars": ["Brad Pitt", "Morgan Freeman", "Gwyneth Paltrow"],
+    "genre": "Thriller",
+    "cinematographer": "Darius Khondji",
+    "composer": "Howard Shore",
+    "studio": "New Line Cinema"
+  }
+}

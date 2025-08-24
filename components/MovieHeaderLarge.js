@@ -315,16 +315,17 @@ export default function MovieHeaderLarge({
       </div>
       
       
-      {/* Streaming availability - only show if we have valid data (not TBD placeholder) 
+      {/* Streaming availability - commented out due to often incorrect data 
           TBD = placeholder when TMDB/Claude APIs haven't provided streaming data yet */}
-      {initialStreaming && initialStreaming.length > 0 && initialStreaming !== 'TBD' && (
+      {/* {initialStreaming && initialStreaming.length > 0 && initialStreaming !== 'TBD' && (
         <div style={styles.streamingInfo}>
           <span style={styles.streamingText}>
             {`Streaming on ${initialStreaming}`}
           </span>
           {/* TODO: Add data freshness indicator - track when streaming data was last updated */}
-        </div>
-      )}
+        {/* </div>
+      )} */}
+      
       
       {/* YouTube Trailer Modal */}
       {showTrailer && trailerVideoId && (
@@ -438,10 +439,10 @@ const styles = {
   },
   streamingInfo: {
     width: '100%',
-    textAlign: 'center',
+    textAlign: 'left',
     marginBottom: '8px',
-    marginTop: '-2px',
-    paddingLeft: '0px',
+    marginTop: '2px',
+    paddingLeft: '25px',
   },
   streamingText: {
     fontSize: '14px',
@@ -450,6 +451,18 @@ const styles = {
     fontFamily: 'inherit',
     wordWrap: 'break-word',
     lineHeight: '1.3',
+  },
+  streamingLink: {
+    color: '#777777',
+    textDecoration: 'underline',
+    textDecorationColor: '#e0e0e0',
+    textDecorationThickness: '1px',
+    textUnderlineOffset: '2px',
+    fontSize: '14px',
+    fontWeight: '400',
+    fontFamily: 'inherit',
+    transition: 'all 0.2s ease',
+    cursor: 'pointer',
   },
   addedAnimation: {
     position: 'absolute',

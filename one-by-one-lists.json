@@ -1,0 +1,223 @@
+{
+  "method": "one-by-one-analysis",
+  "totalLists": 26,
+  "moviesProcessed": 10,
+  "totalCost": 0.11090100000000001,
+  "currentBatch": {
+    "startIndex": 10,
+    "processed": 10,
+    "total": 20
+  },
+  "allLists": [
+    {
+      "name": "Early Sound Films",
+      "movieIds": [
+        "587699ae-77d4-4947-a01b-dedc9880c888",
+        "4fc4dafe-3162-460b-8a5a-a6f078971584",
+        "7d94fbc0-b871-4b27-8d7d-1d7ec05851bc",
+        "74a3aaa5-d7ec-43ad-a1ec-41bc78a0609e",
+        "034b01a1-86ac-4ece-99f0-4c4921292dcf",
+        "de469ba9-e108-42d7-b568-3d37511cc1a3",
+        "531a50fd-f75e-49d1-839f-a77c905b2835",
+        "fb5fd0dd-a46e-40eb-97d2-067bc9bbed4c",
+        "3266ee7d-b145-4666-ad0a-90c3da761715",
+        "edcd46f3-1e5c-42dc-a92f-5e3165571ff5",
+        "ff0a7f23-82e5-4521-8529-2a9087cb0ff7",
+        "649ed81c-53e9-411e-b596-60d35c297330",
+        "8ce03757-469a-4ec6-b490-705f67dfd3fa",
+        "3b29491e-01e2-42e7-b5a2-ce3cfd90567e",
+        "b66871cd-d9ae-4a07-93a8-ca5c958ea30b",
+        "13ee47b8-3ced-49e0-801a-68b08dbed63a",
+        "92c83178-d374-4ae3-91ef-591042b3b681",
+        "ca82d8fb-4719-4558-aac0-ed638b13ce85",
+        "72348219-6a2e-4a45-8773-8a4fda44c6fa",
+        "a1bb98de-fe9f-49d0-9ae4-e5b25ee14878"
+      ]
+    },
+    {
+      "name": "Jewish Family Drama",
+      "movieIds": [
+        "587699ae-77d4-4947-a01b-dedc9880c888"
+      ]
+    },
+    {
+      "name": "Jazz Age Musicals",
+      "movieIds": [
+        "587699ae-77d4-4947-a01b-dedc9880c888",
+        "4fc4dafe-3162-460b-8a5a-a6f078971584",
+        "7d94fbc0-b871-4b27-8d7d-1d7ec05851bc",
+        "74a3aaa5-d7ec-43ad-a1ec-41bc78a0609e",
+        "de469ba9-e108-42d7-b568-3d37511cc1a3",
+        "531a50fd-f75e-49d1-839f-a77c905b2835"
+      ]
+    },
+    {
+      "name": "Showbusiness Drama Films",
+      "movieIds": [
+        "4fc4dafe-3162-460b-8a5a-a6f078971584",
+        "7d94fbc0-b871-4b27-8d7d-1d7ec05851bc",
+        "531a50fd-f75e-49d1-839f-a77c905b2835",
+        "edcd46f3-1e5c-42dc-a92f-5e3165571ff5",
+        "ff0a7f23-82e5-4521-8529-2a9087cb0ff7",
+        "649ed81c-53e9-411e-b596-60d35c297330",
+        "3b29491e-01e2-42e7-b5a2-ce3cfd90567e",
+        "b66871cd-d9ae-4a07-93a8-ca5c958ea30b",
+        "13ee47b8-3ced-49e0-801a-68b08dbed63a",
+        "92c83178-d374-4ae3-91ef-591042b3b681",
+        "72348219-6a2e-4a45-8773-8a4fda44c6fa"
+      ]
+    },
+    {
+      "name": "Parent Child Relationships",
+      "movieIds": [
+        "4fc4dafe-3162-460b-8a5a-a6f078971584",
+        "b66871cd-d9ae-4a07-93a8-ca5c958ea30b"
+      ]
+    },
+    {
+      "name": "Broadway Theater Films",
+      "movieIds": [
+        "7d94fbc0-b871-4b27-8d7d-1d7ec05851bc",
+        "74a3aaa5-d7ec-43ad-a1ec-41bc78a0609e",
+        "531a50fd-f75e-49d1-839f-a77c905b2835",
+        "ff0a7f23-82e5-4521-8529-2a9087cb0ff7",
+        "3b29491e-01e2-42e7-b5a2-ce3cfd90567e",
+        "13ee47b8-3ced-49e0-801a-68b08dbed63a",
+        "92c83178-d374-4ae3-91ef-591042b3b681"
+      ]
+    },
+    {
+      "name": "Vaudeville Comedy Musicals",
+      "movieIds": [
+        "74a3aaa5-d7ec-43ad-a1ec-41bc78a0609e",
+        "92c83178-d374-4ae3-91ef-591042b3b681",
+        "72348219-6a2e-4a45-8773-8a4fda44c6fa"
+      ]
+    },
+    {
+      "name": "Romantic Period Musicals",
+      "movieIds": [
+        "034b01a1-86ac-4ece-99f0-4c4921292dcf",
+        "8ce03757-469a-4ec6-b490-705f67dfd3fa",
+        "ca82d8fb-4719-4558-aac0-ed638b13ce85"
+      ]
+    },
+    {
+      "name": "Musical Revue Films",
+      "movieIds": [
+        "de469ba9-e108-42d7-b568-3d37511cc1a3",
+        "a1bb98de-fe9f-49d0-9ae4-e5b25ee14878"
+      ]
+    },
+    {
+      "name": "Backstage Musical Films",
+      "movieIds": [
+        "531a50fd-f75e-49d1-839f-a77c905b2835",
+        "ff0a7f23-82e5-4521-8529-2a9087cb0ff7",
+        "3b29491e-01e2-42e7-b5a2-ce3cfd90567e",
+        "13ee47b8-3ced-49e0-801a-68b08dbed63a",
+        "92c83178-d374-4ae3-91ef-591042b3b681"
+      ]
+    },
+    {
+      "name": "African American Musicals",
+      "movieIds": [
+        "fb5fd0dd-a46e-40eb-97d2-067bc9bbed4c",
+        "3266ee7d-b145-4666-ad0a-90c3da761715"
+      ]
+    },
+    {
+      "name": "Religious Musical Films",
+      "movieIds": [
+        "fb5fd0dd-a46e-40eb-97d2-067bc9bbed4c"
+      ]
+    },
+    {
+      "name": "Southern Cultural Musicals",
+      "movieIds": [
+        "3266ee7d-b145-4666-ad0a-90c3da761715",
+        "b66871cd-d9ae-4a07-93a8-ca5c958ea30b"
+      ]
+    },
+    {
+      "name": "Hollywood Musical Films",
+      "movieIds": [
+        "edcd46f3-1e5c-42dc-a92f-5e3165571ff5",
+        "a1bb98de-fe9f-49d0-9ae4-e5b25ee14878"
+      ]
+    },
+    {
+      "name": "Early Color Musicals",
+      "movieIds": [
+        "ff0a7f23-82e5-4521-8529-2a9087cb0ff7"
+      ]
+    },
+    {
+      "name": "European Setting Musicals",
+      "movieIds": [
+        "649ed81c-53e9-411e-b596-60d35c297330"
+      ]
+    },
+    {
+      "name": "Mexican Border Musicals",
+      "movieIds": [
+        "8ce03757-469a-4ec6-b490-705f67dfd3fa"
+      ]
+    },
+    {
+      "name": "Rags to Riches Musicals",
+      "movieIds": [
+        "3b29491e-01e2-42e7-b5a2-ce3cfd90567e"
+      ]
+    },
+    {
+      "name": "River Setting Musicals",
+      "movieIds": [
+        "b66871cd-d9ae-4a07-93a8-ca5c958ea30b"
+      ]
+    },
+    {
+      "name": "Best Picture Winners",
+      "movieIds": [
+        "13ee47b8-3ced-49e0-801a-68b08dbed63a"
+      ]
+    },
+    {
+      "name": "Sister Story Musicals",
+      "movieIds": [
+        "13ee47b8-3ced-49e0-801a-68b08dbed63a"
+      ]
+    },
+    {
+      "name": "Burlesque Theater Musicals",
+      "movieIds": [
+        "92c83178-d374-4ae3-91ef-591042b3b681"
+      ]
+    },
+    {
+      "name": "Desert Adventure Musicals",
+      "movieIds": [
+        "ca82d8fb-4719-4558-aac0-ed638b13ce85"
+      ]
+    },
+    {
+      "name": "Operetta Adaptation Films",
+      "movieIds": [
+        "ca82d8fb-4719-4558-aac0-ed638b13ce85"
+      ]
+    },
+    {
+      "name": "Ventriloquist Performance Films",
+      "movieIds": [
+        "72348219-6a2e-4a45-8773-8a4fda44c6fa"
+      ]
+    },
+    {
+      "name": "Star Ensemble Musicals",
+      "movieIds": [
+        "a1bb98de-fe9f-49d0-9ae4-e5b25ee14878"
+      ]
+    }
+  ],
+  "timestamp": "2025-08-20T20:46:07.596Z"
+}
