@@ -21,6 +21,7 @@ const ENABLE_EXPLORE_FURTHER = false; // Set to true when explore pages are read
 export default function MovieAnalysisWithEntities({
   analysis,
   movie,
+  browseCollections = null,
   linkingIntensity = 'moderate',
   className = '',
   animationDelay = 0,
@@ -586,6 +587,17 @@ export default function MovieAnalysisWithEntities({
       );
     }
     
+    // Browse Collections section temporarily disabled - component not integrated
+    // if (browseCollections && browseCollections.lists && browseCollections.lists.length > 0) {
+    //   content.push(
+    //     <BrowseCollectionsSection 
+    //       key="browse-collections"
+    //       collections={browseCollections.lists}
+    //       totalCollections={browseCollections.totalLists}
+    //     />
+    //   );
+    // }
+    
     // Add MORE IDEAS section - filter out self-referential movies
     if (moreIdeasMovies.length > 0) {
       const enhancedMoreIdeas = moreIdeasMovies
@@ -1108,6 +1120,17 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
       </div>
     );
   }
+
+  // Browse Collections section temporarily disabled - component not integrated
+  // if (browseCollections && browseCollections.lists && browseCollections.lists.length > 0) {
+  //   content.push(
+  //     <BrowseCollectionsSection 
+  //       key="json-browse-collections"
+  //       collections={browseCollections.lists}
+  //       totalCollections={browseCollections.totalLists}
+  //     />
+  //   );
+  // }
 
   // Add MORE IDEAS section at the end
   if (moreIdeas.length > 0) {

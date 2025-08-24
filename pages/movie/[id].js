@@ -395,7 +395,7 @@ export async function getStaticPaths() {
       
       return {
         paths,
-        fallback: false  // Use proven pattern that works in production
+        fallback: 'blocking'  // Enable discovery - new movies generate on demand
       };
       
     } finally {
@@ -414,7 +414,7 @@ export async function getStaticPaths() {
     
     return {
       paths: fallbackPaths,
-      fallback: false
+      fallback: 'blocking'  // Enable discovery even in fallback mode
     };
   }
 }
