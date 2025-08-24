@@ -40,3 +40,22 @@ dev.log
 
 # Cache
 .cache/
+
+# Backup files
+analyses-backup-*.json
+analyses-test-*.json
+*backup*.json
+railway_backup_*.json
+
+# Test and debug files
+*test*.json
+*debug*.js
+*temp*.js
+test-*.js
+debug-*.js
+simple-api-test.js
+
+# Generated data files
+*-test-data.json
+*-test-*.json
+batch-test.log
