@@ -37,7 +37,7 @@ async function testPrompt(movieTitle, movieYear) {
     let actualWords = 0;
     analysis.content.forEach((section, index) => {
       const words = section.text.split(/\s+/).length;
-      console.log(`Section ${index + 1} (${section.type}): ${words} words`);
+      console.log(`Section ${index + 1} (${section.subhead || section.title || section.type || 'untitled'}): ${words} words`);
       actualWords += words;
     });
     
@@ -56,7 +56,7 @@ async function testPrompt(movieTitle, movieYear) {
     console.log(`\n📄 ANALYSIS CONTENT:`);
     console.log(`=====================`);
     analysis.content.forEach((section, index) => {
-      console.log(`\n**Section ${index + 1}: ${section.type}**`);
+      console.log(`\n**Section ${index + 1}: ${section.subhead || section.title || section.type || 'Untitled'}**`);
       console.log(section.text);
     });
     
