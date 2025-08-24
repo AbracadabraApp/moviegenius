@@ -1,0 +1,219 @@
+{
+  "metadata": {
+    "genre": "Mixed",
+    "totalMovies": 10,
+    "processedMovies": 10,
+    "lastCheckpoint": "2025-08-22T03:46:54.961Z",
+    "processingBatch": 0,
+    "totalCost": 0.047880599999999995
+  },
+  "allLists": {
+    "Modern South Asian Cinema": {
+      "id": "build-1755834420552-t4umc28",
+      "name": "Modern South Asian Cinema",
+      "description": "Thematic collection for Mixed films",
+      "movieIds": [
+        "db-uuid-1"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T03:47:00.552Z",
+      "lastUpdated": "2025-08-22T03:47:00.552Z"
+    },
+    "Cross-Cultural Romance Stories": {
+      "id": "build-1755834420552-qylmyhx",
+      "name": "Cross-Cultural Romance Stories",
+      "description": "Thematic collection for Mixed films",
+      "movieIds": [
+        "db-uuid-1"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T03:47:00.552Z",
+      "lastUpdated": "2025-08-22T03:47:00.552Z"
+    },
+    "Contemporary Wedding Films": {
+      "id": "build-1755834420552-cddpnn4",
+      "name": "Contemporary Wedding Films",
+      "description": "Thematic collection for Mixed films",
+      "movieIds": [
+        "db-uuid-1"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T03:47:00.552Z",
+      "lastUpdated": "2025-08-22T03:47:00.552Z"
+    },
+    "Political Revolution Documentaries": {
+      "id": "build-1755834420552-kbuy2oe",
+      "name": "Political Revolution Documentaries",
+      "description": "Thematic collection for Mixed films",
+      "movieIds": [
+        "db-uuid-2",
+        "db-uuid-6"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T03:47:00.552Z",
+      "lastUpdated": "2025-08-22T03:47:08.948Z"
+    },
+    "Personal Archive Films": {
+      "id": "build-1755834420552-bu5nua9",
+      "name": "Personal Archive Films",
+      "description": "Thematic collection for Mixed films",
+      "movieIds": [
+        "db-uuid-2",
+        "db-uuid-5"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T03:47:00.552Z",
+      "lastUpdated": "2025-08-22T03:47:08.947Z"
+    },
+    "1960s Cultural Movements": {
+      "id": "build-1755834420552-s79tgne",
+      "name": "1960s Cultural Movements",
+      "description": "Thematic collection for Mixed films",
+      "movieIds": [
+        "db-uuid-2",
+        "db-uuid-5",
+        "db-uuid-6"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T03:47:00.552Z",
+      "lastUpdated": "2025-08-22T03:47:08.948Z"
+    },
+    "Japanese Slice of Life": {
+      "id": "build-1755834420553-30g5fhf",
+      "name": "Japanese Slice of Life",
+      "description": "Thematic collection for Mixed films",
+      "movieIds": [
+        "db-uuid-3"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T03:47:00.553Z",
+      "lastUpdated": "2025-08-22T03:47:00.553Z"
+    },
+    "Food and Culture": {
+      "id": "build-1755834420553-a2pfwde",
+      "name": "Food and Culture",
+      "description": "Thematic collection for Mixed films",
+      "movieIds": [
+        "db-uuid-3"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T03:47:00.553Z",
+      "lastUpdated": "2025-08-22T03:47:00.553Z"
+    },
+    "Intergenerational Relationships": {
+      "id": "build-1755834420553-vvpxzrx",
+      "name": "Intergenerational Relationships",
+      "description": "Thematic collection for Mixed films",
+      "movieIds": [
+        "db-uuid-3"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T03:47:00.553Z",
+      "lastUpdated": "2025-08-22T03:47:00.553Z"
+    },
+    "Comedy Superhero Movies": {
+      "id": "build-1755834420553-1ntbkhh",
+      "name": "Comedy Superhero Movies",
+      "description": "Thematic collection for Mixed films",
+      "movieIds": [
+        "db-uuid-4",
+        "db-uuid-7"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T03:47:00.553Z",
+      "lastUpdated": "2025-08-22T03:47:08.948Z"
+    },
+    "Female Buddy Action": {
+      "id": "build-1755834420553-vdnohtu",
+      "name": "Female Buddy Action",
+      "description": "Thematic collection for Mixed films",
+      "movieIds": [
+        "db-uuid-4"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T03:47:00.553Z",
+      "lastUpdated": "2025-08-22T03:47:00.553Z"
+    },
+    "Netflix Original Films": {
+      "id": "build-1755834420553-kke23s9",
+      "name": "Netflix Original Films",
+      "description": "Thematic collection for Mixed films",
+      "movieIds": [
+        "db-uuid-4"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T03:47:00.553Z",
+      "lastUpdated": "2025-08-22T03:47:00.553Z"
+    },
+    "Art World Documentaries": {
+      "id": "build-1755834428947-6643lqt",
+      "name": "Art World Documentaries",
+      "description": "Thematic collection for Mixed films",
+      "movieIds": [
+        "db-uuid-5"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T03:47:08.947Z",
+      "lastUpdated": "2025-08-22T03:47:08.947Z"
+    },
+    "LGBTQ+ Historical Stories": {
+      "id": "build-1755834428948-871jzz7",
+      "name": "LGBTQ+ Historical Stories",
+      "description": "Thematic collection for Mixed films",
+      "movieIds": [
+        "db-uuid-6"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T03:47:08.948Z",
+      "lastUpdated": "2025-08-22T03:47:08.948Z"
+    },
+    "Animated Detective Stories": {
+      "id": "build-1755834428948-um1g8n2",
+      "name": "Animated Detective Stories",
+      "description": "Thematic collection for Mixed films",
+      "movieIds": [
+        "db-uuid-7"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T03:47:08.948Z",
+      "lastUpdated": "2025-08-22T03:47:08.948Z"
+    },
+    "Climate Change Documentaries": {
+      "id": "build-1755834428948-5qb54ku",
+      "name": "Climate Change Documentaries",
+      "description": "Thematic collection for Mixed films",
+      "movieIds": [
+        "db-uuid-8"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T03:47:08.948Z",
+      "lastUpdated": "2025-08-22T03:47:08.948Z"
+    },
+    "Post-Apocalyptic Species Conflict": {
+      "id": "build-1755834437016-9tzqysu",
+      "name": "Post-Apocalyptic Species Conflict",
+      "description": "Thematic collection for Mixed films",
+      "movieIds": [
+        "db-uuid-9"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T03:47:17.016Z",
+      "lastUpdated": "2025-08-22T03:47:17.016Z"
+    },
+    "Dark Comedy Mysteries": {
+      "id": "build-1755834437016-cspdmi4",
+      "name": "Dark Comedy Mysteries",
+      "description": "Thematic collection for Mixed films",
+      "movieIds": [
+        "db-uuid-10"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T03:47:17.016Z",
+      "lastUpdated": "2025-08-22T03:47:17.016Z"
+    }
+  },
+  "processingState": {
+    "completedBatches": [],
+    "failedMovies": []
+  }
+}

@@ -1,0 +1,899 @@
+{
+  "metadata": {
+    "genre": "Period",
+    "totalMovies": 99,
+    "processedMovies": 98,
+    "lastCheckpoint": "2025-08-23T23:22:05.020Z",
+    "processingBatch": 0,
+    "totalCost": 0.6260081999999999
+  },
+  "allLists": {
+    "Royal Court Dramas": {
+      "id": "build-1755991330510-g0f5lwv",
+      "name": "Royal Court Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "9fcd9cba-b9a5-490d-b800-7db6cb4383dc",
+        "9cb0e7e4-4e9a-440e-8531-bdce11f22428",
+        "690f48fd-358f-4d73-af67-fd7335db0348",
+        "d967140f-883f-43f0-924c-c76a27a066e0",
+        "646e0d3b-3fd9-42e1-ab1b-7998400403b8",
+        "7a7ae27d-8227-49b9-ad1b-978abbaa96d5",
+        "f0c9cb84-94e5-462e-ade6-f185582de8a4",
+        "80b03dbc-a3c4-4874-95ac-8839fa5a214a",
+        "42107d3b-6e85-4b08-9000-57ee43ce33ee",
+        "47657c9f-e47e-404e-b261-08e3fed06f71",
+        "ae2f800a-30dc-462b-8167-ae3c01962d27",
+        "893abb51-03ca-4381-82cc-d1a45c451019",
+        "5df20054-4e60-4062-b3cb-b6d25e5d5c0a",
+        "894f5df8-2592-41a9-9c70-0d7a9d2bb126",
+        "0c2576b2-377a-43d9-9e3f-973ff06840ce",
+        "58d096dc-d664-48dd-bbb5-866edc8b37b8",
+        "ee0925a9-70f1-4a47-a827-3340ff1027b2",
+        "85f524e5-f24c-4342-b8fe-89f090974391"
+      ],
+      "size": 18,
+      "createdAt": "2025-08-23T23:22:10.510Z",
+      "lastUpdated": "2025-08-23T23:26:22.914Z"
+    },
+    "Historical Garden Films": {
+      "id": "build-1755991330510-tuy31tk",
+      "name": "Historical Garden Films",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "9fcd9cba-b9a5-490d-b800-7db6cb4383dc"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:22:10.510Z",
+      "lastUpdated": "2025-08-23T23:22:10.510Z"
+    },
+    "Female Pioneer Stories": {
+      "id": "build-1755991330510-m0gilqv",
+      "name": "Female Pioneer Stories",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "9fcd9cba-b9a5-490d-b800-7db6cb4383dc",
+        "9cb0e7e4-4e9a-440e-8531-bdce11f22428",
+        "4677b1db-3c06-46fd-8bf0-f8a6dad9a0d0",
+        "91168438-4eb0-47ec-8c67-630b28cd4a35",
+        "ed356baf-5f44-4c9e-bc85-3bf5358e0f30",
+        "84ec963f-ce51-4e0f-8d38-1e26c8e0c6ea",
+        "d22bee83-9976-48c0-83fe-c30005950c41",
+        "8439ec62-7a25-4711-9dea-c5009f39a8e2"
+      ],
+      "size": 8,
+      "createdAt": "2025-08-23T23:22:10.510Z",
+      "lastUpdated": "2025-08-23T23:25:07.785Z"
+    },
+    "Edwardian Romance Dramas": {
+      "id": "build-1755991330511-vmn6pwu",
+      "name": "Edwardian Romance Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "6a1955a2-da90-4e62-b3ff-571b54e4e457",
+        "c868a1e7-5f3b-42b7-827f-f9df3c8460b0",
+        "7d25dd27-c738-40e3-a71d-97baa3a3c385",
+        "50f271e4-4a05-45a3-80f1-3b2fb0cb9d37"
+      ],
+      "size": 4,
+      "createdAt": "2025-08-23T23:22:10.511Z",
+      "lastUpdated": "2025-08-23T23:26:12.230Z"
+    },
+    "Merchant Ivory Classics": {
+      "id": "build-1755991330511-77ss7uv",
+      "name": "Merchant Ivory Classics",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "6a1955a2-da90-4e62-b3ff-571b54e4e457",
+        "d8e0f93c-b347-4bb8-b12a-5e375e2a3b86",
+        "7d25dd27-c738-40e3-a71d-97baa3a3c385",
+        "654c96e5-d316-4415-bfe4-28692f286994",
+        "8439ec62-7a25-4711-9dea-c5009f39a8e2",
+        "f92e428a-06c5-45e5-83e0-46840d2d55be",
+        "1fe85ccb-e279-4e4a-8d46-5f5e27a5f95b",
+        "2f53df56-acaf-4432-bc43-1908cda16645",
+        "0c2576b2-377a-43d9-9e3f-973ff06840ce"
+      ],
+      "size": 9,
+      "createdAt": "2025-08-23T23:22:10.511Z",
+      "lastUpdated": "2025-08-23T23:26:01.243Z"
+    },
+    "British Literary Adaptations": {
+      "id": "build-1755991330511-s81iljz",
+      "name": "British Literary Adaptations",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "6a1955a2-da90-4e62-b3ff-571b54e4e457",
+        "690f48fd-358f-4d73-af67-fd7335db0348",
+        "d967140f-883f-43f0-924c-c76a27a066e0",
+        "646e0d3b-3fd9-42e1-ab1b-7998400403b8",
+        "4677b1db-3c06-46fd-8bf0-f8a6dad9a0d0",
+        "7a7ae27d-8227-49b9-ad1b-978abbaa96d5",
+        "eae91a2f-9c38-41d2-a0cc-88990f8b1ced",
+        "d8e0f93c-b347-4bb8-b12a-5e375e2a3b86",
+        "f0c9cb84-94e5-462e-ade6-f185582de8a4",
+        "47657c9f-e47e-404e-b261-08e3fed06f71",
+        "adfdded7-4adb-43f5-98b7-c3a49443c372",
+        "c868a1e7-5f3b-42b7-827f-f9df3c8460b0",
+        "aeb818ea-27c3-445a-8ff4-4ad4831723eb",
+        "ed356baf-5f44-4c9e-bc85-3bf5358e0f30",
+        "84ec963f-ce51-4e0f-8d38-1e26c8e0c6ea",
+        "7133c7e4-7c29-4550-a556-208dae937c42",
+        "3c912b7d-3600-425b-8a21-d1c48c20193a",
+        "7d25dd27-c738-40e3-a71d-97baa3a3c385",
+        "6096c8da-7761-4c6a-8dfb-7509ac17164b",
+        "926bbec0-828b-4833-855e-72ec547a066a",
+        "ab106a73-b15e-4617-8803-fa3533f77029",
+        "a0edcaff-4cde-4113-ba46-cbfb8617eb3c",
+        "eb043cb7-37cc-4cf1-a3d7-c6faaef556a2",
+        "4d0638b0-67d8-44ec-8b63-cce32480a684",
+        "136f6873-3e6c-49a0-b4ab-6950ff5db1a6",
+        "99c76802-97ed-4cec-959d-f2ea3d94e6a7",
+        "222271c7-53a1-4e3c-9cb6-d66d1feca3d7",
+        "fa170d5a-9227-4393-b312-77e35f3f9fa0",
+        "afce8f63-de13-4fdc-8640-591fcc860e76",
+        "b1f8f8ad-c26e-42be-afc4-009715877759",
+        "654c96e5-d316-4415-bfe4-28692f286994",
+        "a76a8706-94e3-48e6-9e57-cc44a5b4af73",
+        "8439ec62-7a25-4711-9dea-c5009f39a8e2",
+        "f92e428a-06c5-45e5-83e0-46840d2d55be",
+        "2bfe3298-73ab-447d-a993-d3b7352dd25f",
+        "259e6641-3290-401d-a777-7aef4bcf7a30",
+        "1fe85ccb-e279-4e4a-8d46-5f5e27a5f95b",
+        "44a528c5-8189-4c1b-85d2-36735e158f9e",
+        "37b7f285-ad06-4211-99cb-1484ace40713",
+        "d1c3bb40-6c3e-4ab0-8b9a-96f985af64aa",
+        "2f53df56-acaf-4432-bc43-1908cda16645",
+        "0c2576b2-377a-43d9-9e3f-973ff06840ce",
+        "7e959000-595f-4009-b39b-83e586afe754",
+        "50f271e4-4a05-45a3-80f1-3b2fb0cb9d37",
+        "85f524e5-f24c-4342-b8fe-89f090974391",
+        "5872580f-46d3-468e-9de5-403e03f4dfec"
+      ],
+      "size": 46,
+      "createdAt": "2025-08-23T23:22:10.511Z",
+      "lastUpdated": "2025-08-23T23:26:33.557Z"
+    },
+    "Edo Period Dramas": {
+      "id": "build-1755991330511-0v1ariw",
+      "name": "Edo Period Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "cc443136-6ada-4367-bd00-327916105027",
+        "25649bbf-c1fa-4c3d-8b37-b7793340f0c9",
+        "7b9da1ae-6e48-4b50-a465-53056a7540aa",
+        "fbd47a76-965d-41d0-bf80-ebecf6a61f13",
+        "5f790cf4-00af-4ba2-9b46-d46384a90a05",
+        "a5393cb9-ef8e-4f9a-8da4-e24540137e02",
+        "1263d26d-e500-47d7-8cf8-8080c8ef2f9b",
+        "d09fec2d-2664-4352-b530-f6206a985562",
+        "a103a7aa-b6c8-46ae-883c-3d34e3f5c556",
+        "274cfd5e-648f-4f3b-adcc-3188fab4e190",
+        "219fde8a-524e-4c31-ab68-366af3d914e7"
+      ],
+      "size": 11,
+      "createdAt": "2025-08-23T23:22:10.511Z",
+      "lastUpdated": "2025-08-23T23:26:22.913Z"
+    },
+    "Samurai Family Stories": {
+      "id": "build-1755991330511-ogp8tnh",
+      "name": "Samurai Family Stories",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "cc443136-6ada-4367-bd00-327916105027",
+        "5f790cf4-00af-4ba2-9b46-d46384a90a05",
+        "a103a7aa-b6c8-46ae-883c-3d34e3f5c556",
+        "274cfd5e-648f-4f3b-adcc-3188fab4e190"
+      ],
+      "size": 4,
+      "createdAt": "2025-08-23T23:22:10.511Z",
+      "lastUpdated": "2025-08-23T23:26:12.228Z"
+    },
+    "Economic History Films": {
+      "id": "build-1755991330511-gndkweb",
+      "name": "Economic History Films",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "cc443136-6ada-4367-bd00-327916105027",
+        "7a7ae27d-8227-49b9-ad1b-978abbaa96d5",
+        "ec6df9a4-fe30-45fd-bfe9-d29e0b52d597",
+        "5fb10fa0-ab62-4f53-b163-cd537386c1dc",
+        "ca3a1e49-9bf5-4c16-a77a-2b03c4c72b71"
+      ],
+      "size": 5,
+      "createdAt": "2025-08-23T23:22:10.511Z",
+      "lastUpdated": "2025-08-23T23:26:12.230Z"
+    },
+    "Japanese Period Dramas": {
+      "id": "build-1755991330513-u61y4jr",
+      "name": "Japanese Period Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "a9bf07db-daae-40c3-89c2-0a6755e97a43",
+        "ae2f800a-30dc-462b-8167-ae3c01962d27",
+        "25649bbf-c1fa-4c3d-8b37-b7793340f0c9",
+        "7b9da1ae-6e48-4b50-a465-53056a7540aa",
+        "fbd47a76-965d-41d0-bf80-ebecf6a61f13",
+        "5f790cf4-00af-4ba2-9b46-d46384a90a05",
+        "a5393cb9-ef8e-4f9a-8da4-e24540137e02",
+        "1263d26d-e500-47d7-8cf8-8080c8ef2f9b",
+        "8dc5f88b-f4a1-45df-9f4f-cdb1ce2201b5",
+        "a6cb7969-9b58-44b7-bf8e-0251c3a63a13",
+        "d09fec2d-2664-4352-b530-f6206a985562",
+        "a103a7aa-b6c8-46ae-883c-3d34e3f5c556",
+        "7d285325-2656-4646-a7f6-d08946706980",
+        "58d096dc-d664-48dd-bbb5-866edc8b37b8",
+        "274cfd5e-648f-4f3b-adcc-3188fab4e190",
+        "219fde8a-524e-4c31-ab68-366af3d914e7",
+        "3aa673b4-098e-44c1-8839-b8c49f1b19ce"
+      ],
+      "size": 17,
+      "createdAt": "2025-08-23T23:22:10.513Z",
+      "lastUpdated": "2025-08-23T23:26:33.558Z"
+    },
+    "Martial Arts Cinema": {
+      "id": "build-1755991330513-pksz6lb",
+      "name": "Martial Arts Cinema",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "a9bf07db-daae-40c3-89c2-0a6755e97a43",
+        "894f5df8-2592-41a9-9c70-0d7a9d2bb126",
+        "7d285325-2656-4646-a7f6-d08946706980"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-23T23:22:10.513Z",
+      "lastUpdated": "2025-08-23T23:26:01.245Z"
+    },
+    "Kurosawa Legacy Films": {
+      "id": "build-1755991330513-54oymkr",
+      "name": "Kurosawa Legacy Films",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "a9bf07db-daae-40c3-89c2-0a6755e97a43"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:22:10.513Z",
+      "lastUpdated": "2025-08-23T23:22:10.513Z"
+    },
+    "Samurai Honor Stories": {
+      "id": "build-1755991330513-2uke88r",
+      "name": "Samurai Honor Stories",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "a9bf07db-daae-40c3-89c2-0a6755e97a43",
+        "ae2f800a-30dc-462b-8167-ae3c01962d27",
+        "25649bbf-c1fa-4c3d-8b37-b7793340f0c9",
+        "7b9da1ae-6e48-4b50-a465-53056a7540aa",
+        "5f790cf4-00af-4ba2-9b46-d46384a90a05",
+        "a5393cb9-ef8e-4f9a-8da4-e24540137e02",
+        "d09fec2d-2664-4352-b530-f6206a985562",
+        "7d285325-2656-4646-a7f6-d08946706980"
+      ],
+      "size": 8,
+      "createdAt": "2025-08-23T23:22:10.513Z",
+      "lastUpdated": "2025-08-23T23:26:01.245Z"
+    },
+    "French Society Scandals": {
+      "id": "build-1755991341353-b7f3ygy",
+      "name": "French Society Scandals",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "9cb0e7e4-4e9a-440e-8531-bdce11f22428",
+        "80b03dbc-a3c4-4874-95ac-8839fa5a214a",
+        "dd835a69-367b-4506-b853-22a58159aba8",
+        "1f7f02cc-edbc-43af-8638-84bd99b90045",
+        "42107d3b-6e85-4b08-9000-57ee43ce33ee",
+        "adfdded7-4adb-43f5-98b7-c3a49443c372",
+        "46865a69-afa4-43a9-accc-db1aa9434b36",
+        "a0edcaff-4cde-4113-ba46-cbfb8617eb3c",
+        "937e286b-5ff8-4968-a3a1-9c4a8210d6f0",
+        "4f38069f-0b22-48ed-b2f7-25084a7015d3",
+        "26b459bd-f0c5-4efb-a512-03fc1b4b4d1c",
+        "7eb7d880-b89f-4cfb-96b9-85cd0c520d5e",
+        "9ba5a8e4-41d8-400f-b1c1-f1cbffcf5971",
+        "510c0bd0-8ef0-414d-ba03-69ce03a2fc3f",
+        "ee0925a9-70f1-4a47-a827-3340ff1027b2"
+      ],
+      "size": 15,
+      "createdAt": "2025-08-23T23:22:21.353Z",
+      "lastUpdated": "2025-08-23T23:26:22.914Z"
+    },
+    "Russian Society Dramas": {
+      "id": "build-1755991341354-ns31xfm",
+      "name": "Russian Society Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "690f48fd-358f-4d73-af67-fd7335db0348",
+        "d967140f-883f-43f0-924c-c76a27a066e0",
+        "646e0d3b-3fd9-42e1-ab1b-7998400403b8",
+        "99c76802-97ed-4cec-959d-f2ea3d94e6a7"
+      ],
+      "size": 4,
+      "createdAt": "2025-08-23T23:22:21.354Z",
+      "lastUpdated": "2025-08-23T23:24:24.811Z"
+    },
+    "Social Climber Tragedies": {
+      "id": "build-1755991351784-f6y3jqr",
+      "name": "Social Climber Tragedies",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "7a7ae27d-8227-49b9-ad1b-978abbaa96d5",
+        "f0c9cb84-94e5-462e-ade6-f185582de8a4",
+        "dd835a69-367b-4506-b853-22a58159aba8",
+        "1f7f02cc-edbc-43af-8638-84bd99b90045",
+        "42107d3b-6e85-4b08-9000-57ee43ce33ee",
+        "adfdded7-4adb-43f5-98b7-c3a49443c372",
+        "c868a1e7-5f3b-42b7-827f-f9df3c8460b0",
+        "aeb818ea-27c3-445a-8ff4-4ad4831723eb",
+        "ec6df9a4-fe30-45fd-bfe9-d29e0b52d597",
+        "7133c7e4-7c29-4550-a556-208dae937c42",
+        "3c912b7d-3600-425b-8a21-d1c48c20193a",
+        "7d25dd27-c738-40e3-a71d-97baa3a3c385",
+        "6096c8da-7761-4c6a-8dfb-7509ac17164b",
+        "926bbec0-828b-4833-855e-72ec547a066a",
+        "893abb51-03ca-4381-82cc-d1a45c451019",
+        "deac7f27-fa54-4fb1-b155-f5c6ddcf478f",
+        "fbd47a76-965d-41d0-bf80-ebecf6a61f13",
+        "46865a69-afa4-43a9-accc-db1aa9434b36",
+        "ab106a73-b15e-4617-8803-fa3533f77029",
+        "5fb10fa0-ab62-4f53-b163-cd537386c1dc",
+        "a0edcaff-4cde-4113-ba46-cbfb8617eb3c",
+        "eb043cb7-37cc-4cf1-a3d7-c6faaef556a2",
+        "937e286b-5ff8-4968-a3a1-9c4a8210d6f0",
+        "613f88b0-4a19-4815-a51d-2f5e74217858",
+        "d22bee83-9976-48c0-83fe-c30005950c41",
+        "4d0638b0-67d8-44ec-8b63-cce32480a684",
+        "136f6873-3e6c-49a0-b4ab-6950ff5db1a6",
+        "99c76802-97ed-4cec-959d-f2ea3d94e6a7",
+        "222271c7-53a1-4e3c-9cb6-d66d1feca3d7",
+        "fa170d5a-9227-4393-b312-77e35f3f9fa0",
+        "c76641f4-a6cc-4d90-aacb-57554cc2b6c9",
+        "e82287dd-294f-4677-b6b6-d577e6c4d5fa",
+        "afce8f63-de13-4fdc-8640-591fcc860e76",
+        "b1f8f8ad-c26e-42be-afc4-009715877759",
+        "1263d26d-e500-47d7-8cf8-8080c8ef2f9b",
+        "8dc5f88b-f4a1-45df-9f4f-cdb1ce2201b5",
+        "654c96e5-d316-4415-bfe4-28692f286994",
+        "5df20054-4e60-4062-b3cb-b6d25e5d5c0a",
+        "a76a8706-94e3-48e6-9e57-cc44a5b4af73",
+        "26b459bd-f0c5-4efb-a512-03fc1b4b4d1c",
+        "f92e428a-06c5-45e5-83e0-46840d2d55be",
+        "2bfe3298-73ab-447d-a993-d3b7352dd25f",
+        "259e6641-3290-401d-a777-7aef4bcf7a30",
+        "1fe85ccb-e279-4e4a-8d46-5f5e27a5f95b",
+        "44a528c5-8189-4c1b-85d2-36735e158f9e",
+        "9ba5a8e4-41d8-400f-b1c1-f1cbffcf5971",
+        "37b7f285-ad06-4211-99cb-1484ace40713",
+        "510c0bd0-8ef0-414d-ba03-69ce03a2fc3f",
+        "d1c3bb40-6c3e-4ab0-8b9a-96f985af64aa",
+        "2f53df56-acaf-4432-bc43-1908cda16645",
+        "0c2576b2-377a-43d9-9e3f-973ff06840ce",
+        "7e959000-595f-4009-b39b-83e586afe754",
+        "50f271e4-4a05-45a3-80f1-3b2fb0cb9d37",
+        "ca3a1e49-9bf5-4c16-a77a-2b03c4c72b71",
+        "42d4e44c-057f-4698-b17c-cc307b874977",
+        "ee0925a9-70f1-4a47-a827-3340ff1027b2",
+        "85f524e5-f24c-4342-b8fe-89f090974391",
+        "5872580f-46d3-468e-9de5-403e03f4dfec",
+        "e0f5a1c8-33a1-4c72-8a34-1cfc2c1fab38"
+      ],
+      "size": 59,
+      "createdAt": "2025-08-23T23:22:31.784Z",
+      "lastUpdated": "2025-08-23T23:26:33.558Z"
+    },
+    "Medical Reform Dramas": {
+      "id": "build-1755991351784-s2c87ik",
+      "name": "Medical Reform Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "eae91a2f-9c38-41d2-a0cc-88990f8b1ced"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:22:31.784Z",
+      "lastUpdated": "2025-08-23T23:22:31.784Z"
+    },
+    "Colonial India Dramas": {
+      "id": "build-1755991351784-j7sj1g4",
+      "name": "Colonial India Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "d8e0f93c-b347-4bb8-b12a-5e375e2a3b86"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:22:31.784Z",
+      "lastUpdated": "2025-08-23T23:22:31.784Z"
+    },
+    "Legal Justice Dramas": {
+      "id": "build-1755991362088-qhdnn70",
+      "name": "Legal Justice Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "f0c9cb84-94e5-462e-ade6-f185582de8a4"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:22:42.088Z",
+      "lastUpdated": "2025-08-23T23:22:42.088Z"
+    },
+    "Immigration Journey Dramas": {
+      "id": "build-1755991362089-p6e1fve",
+      "name": "Immigration Journey Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "91168438-4eb0-47ec-8c67-630b28cd4a35"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:22:42.089Z",
+      "lastUpdated": "2025-08-23T23:22:42.089Z"
+    },
+    "Historical Mystery Thrillers": {
+      "id": "build-1755991362089-8fd6a2m",
+      "name": "Historical Mystery Thrillers",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "80b03dbc-a3c4-4874-95ac-8839fa5a214a",
+        "4cbc8c61-41ed-47a0-81ce-6acb9d2c7e35",
+        "5fb10fa0-ab62-4f53-b163-cd537386c1dc",
+        "e82287dd-294f-4677-b6b6-d577e6c4d5fa",
+        "a6cb7969-9b58-44b7-bf8e-0251c3a63a13",
+        "894f5df8-2592-41a9-9c70-0d7a9d2bb126",
+        "237574ff-e50e-4245-8368-8e3fd5eec54d",
+        "c4238fca-ee62-4703-afa2-510897276aec",
+        "42d4e44c-057f-4698-b17c-cc307b874977"
+      ],
+      "size": 9,
+      "createdAt": "2025-08-23T23:22:42.089Z",
+      "lastUpdated": "2025-08-23T23:26:22.913Z"
+    },
+    "WWII Superhero Origins": {
+      "id": "build-1755991362089-ovv1cmu",
+      "name": "WWII Superhero Origins",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "a6d0ee0e-07ad-480c-a5d4-907f2a41d2cc"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:22:42.089Z",
+      "lastUpdated": "2025-08-23T23:22:42.089Z"
+    },
+    "Military Romance Dramas": {
+      "id": "build-1755991372397-wnzswgo",
+      "name": "Military Romance Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "1f7f02cc-edbc-43af-8638-84bd99b90045",
+        "613f88b0-4a19-4815-a51d-2f5e74217858",
+        "fa170d5a-9227-4393-b312-77e35f3f9fa0",
+        "7eb7d880-b89f-4cfb-96b9-85cd0c520d5e",
+        "791f5117-7121-4c41-a9f9-68fbc492193c"
+      ],
+      "size": 5,
+      "createdAt": "2025-08-23T23:22:52.397Z",
+      "lastUpdated": "2025-08-23T23:25:40.176Z"
+    },
+    "German Society Dramas": {
+      "id": "build-1755991383631-u8ci8h8",
+      "name": "German Society Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "adfdded7-4adb-43f5-98b7-c3a49443c372"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:23:03.631Z",
+      "lastUpdated": "2025-08-23T23:23:03.631Z"
+    },
+    "Victorian Rural Dramas": {
+      "id": "build-1755991383633-s5qw5b3",
+      "name": "Victorian Rural Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "ed356baf-5f44-4c9e-bc85-3bf5358e0f30",
+        "84ec963f-ce51-4e0f-8d38-1e26c8e0c6ea",
+        "3c912b7d-3600-425b-8a21-d1c48c20193a",
+        "6096c8da-7761-4c6a-8dfb-7509ac17164b",
+        "deac7f27-fa54-4fb1-b155-f5c6ddcf478f",
+        "ab106a73-b15e-4617-8803-fa3533f77029",
+        "eb043cb7-37cc-4cf1-a3d7-c6faaef556a2",
+        "613f88b0-4a19-4815-a51d-2f5e74217858",
+        "d22bee83-9976-48c0-83fe-c30005950c41",
+        "4d0638b0-67d8-44ec-8b63-cce32480a684",
+        "222271c7-53a1-4e3c-9cb6-d66d1feca3d7",
+        "237574ff-e50e-4245-8368-8e3fd5eec54d",
+        "2bfe3298-73ab-447d-a993-d3b7352dd25f",
+        "259e6641-3290-401d-a777-7aef4bcf7a30",
+        "791f5117-7121-4c41-a9f9-68fbc492193c",
+        "d1c3bb40-6c3e-4ab0-8b9a-96f985af64aa",
+        "85f524e5-f24c-4342-b8fe-89f090974391"
+      ],
+      "size": 17,
+      "createdAt": "2025-08-23T23:23:03.633Z",
+      "lastUpdated": "2025-08-23T23:26:22.914Z"
+    },
+    "Chinese Courtesan Dramas": {
+      "id": "build-1755991393891-70q083f",
+      "name": "Chinese Courtesan Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "ec6df9a4-fe30-45fd-bfe9-d29e0b52d597"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:23:13.891Z",
+      "lastUpdated": "2025-08-23T23:23:13.891Z"
+    },
+    "Artist Muse Dramas": {
+      "id": "build-1755991393892-no249ul",
+      "name": "Artist Muse Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "7133c7e4-7c29-4550-a556-208dae937c42",
+        "4f38069f-0b22-48ed-b2f7-25084a7015d3",
+        "219fde8a-524e-4c31-ab68-366af3d914e7"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-23T23:23:13.892Z",
+      "lastUpdated": "2025-08-23T23:26:22.913Z"
+    },
+    "Partition Era Romances": {
+      "id": "build-1755991423326-u3osv51",
+      "name": "Partition Era Romances",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "893abb51-03ca-4381-82cc-d1a45c451019"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:23:43.326Z",
+      "lastUpdated": "2025-08-23T23:23:43.326Z"
+    },
+    "Dutch Working Class Sagas": {
+      "id": "build-1755991433752-xn33z26",
+      "name": "Dutch Working Class Sagas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "deac7f27-fa54-4fb1-b155-f5c6ddcf478f"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:23:53.752Z",
+      "lastUpdated": "2025-08-23T23:23:53.752Z"
+    },
+    "Joseon Horror Dramas": {
+      "id": "build-1755991433753-3zxbdge",
+      "name": "Joseon Horror Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "4cbc8c61-41ed-47a0-81ce-6acb9d2c7e35"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:23:53.753Z",
+      "lastUpdated": "2025-08-23T23:23:53.753Z"
+    },
+    "Italian Aristocracy Dramas": {
+      "id": "build-1755991433753-knua64h",
+      "name": "Italian Aristocracy Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "46865a69-afa4-43a9-accc-db1aa9434b36",
+        "c76641f4-a6cc-4d90-aacb-57554cc2b6c9",
+        "1fe85ccb-e279-4e4a-8d46-5f5e27a5f95b",
+        "510c0bd0-8ef0-414d-ba03-69ce03a2fc3f"
+      ],
+      "size": 4,
+      "createdAt": "2025-08-23T23:23:53.753Z",
+      "lastUpdated": "2025-08-23T23:25:50.942Z"
+    },
+    "Gothic Marriage Thrillers": {
+      "id": "build-1755991443793-ngdxqzr",
+      "name": "Gothic Marriage Thrillers",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "ab106a73-b15e-4617-8803-fa3533f77029",
+        "136f6873-3e6c-49a0-b4ab-6950ff5db1a6",
+        "d69737f3-19b8-473d-a8d4-bc5f751c450f",
+        "37b7f285-ad06-4211-99cb-1484ace40713",
+        "2f53df56-acaf-4432-bc43-1908cda16645",
+        "42d4e44c-057f-4698-b17c-cc307b874977"
+      ],
+      "size": 6,
+      "createdAt": "2025-08-23T23:24:03.793Z",
+      "lastUpdated": "2025-08-23T23:26:22.913Z"
+    },
+    "Post-Independence India Dramas": {
+      "id": "build-1755991443794-d2p1g4z",
+      "name": "Post-Independence India Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "5fb10fa0-ab62-4f53-b163-cd537386c1dc"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:24:03.794Z",
+      "lastUpdated": "2025-08-23T23:24:03.794Z"
+    },
+    "Theatrical Artist Biopics": {
+      "id": "build-1755991454263-uf4awp4",
+      "name": "Theatrical Artist Biopics",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "937e286b-5ff8-4968-a3a1-9c4a8210d6f0",
+        "5df20054-4e60-4062-b3cb-b6d25e5d5c0a"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-23T23:24:14.263Z",
+      "lastUpdated": "2025-08-23T23:24:57.329Z"
+    },
+    "Southern Race Relations": {
+      "id": "build-1755991454263-tzxyb4j",
+      "name": "Southern Race Relations",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "613f88b0-4a19-4815-a51d-2f5e74217858"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:24:14.263Z",
+      "lastUpdated": "2025-08-23T23:24:14.263Z"
+    },
+    "Victorian Religious Dramas": {
+      "id": "build-1755991464811-8u8s9ky",
+      "name": "Victorian Religious Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "222271c7-53a1-4e3c-9cb6-d66d1feca3d7",
+        "d69737f3-19b8-473d-a8d4-bc5f751c450f",
+        "ca3a1e49-9bf5-4c16-a77a-2b03c4c72b71",
+        "3aa673b4-098e-44c1-8839-b8c49f1b19ce"
+      ],
+      "size": 4,
+      "createdAt": "2025-08-23T23:24:24.811Z",
+      "lastUpdated": "2025-08-23T23:26:33.558Z"
+    },
+    "Italian Independence Dramas": {
+      "id": "build-1755991474584-84ploez",
+      "name": "Italian Independence Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "c76641f4-a6cc-4d90-aacb-57554cc2b6c9",
+        "7eb7d880-b89f-4cfb-96b9-85cd0c520d5e"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-23T23:24:34.584Z",
+      "lastUpdated": "2025-08-23T23:25:29.262Z"
+    },
+    "Georgian Crime Dramas": {
+      "id": "build-1755991474584-crtrjvj",
+      "name": "Georgian Crime Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "e82287dd-294f-4677-b6b6-d577e6c4d5fa",
+        "afce8f63-de13-4fdc-8640-591fcc860e76",
+        "b1f8f8ad-c26e-42be-afc4-009715877759",
+        "237574ff-e50e-4245-8368-8e3fd5eec54d",
+        "7e959000-595f-4009-b39b-83e586afe754"
+      ],
+      "size": 5,
+      "createdAt": "2025-08-23T23:24:34.584Z",
+      "lastUpdated": "2025-08-23T23:26:12.229Z"
+    },
+    "Forbidden Love Stories": {
+      "id": "build-1755991474585-xzbjvl5",
+      "name": "Forbidden Love Stories",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "4f38069f-0b22-48ed-b2f7-25084a7015d3",
+        "a76a8706-94e3-48e6-9e57-cc44a5b4af73",
+        "26b459bd-f0c5-4efb-a512-03fc1b4b4d1c",
+        "2bfe3298-73ab-447d-a993-d3b7352dd25f",
+        "259e6641-3290-401d-a777-7aef4bcf7a30",
+        "9ba5a8e4-41d8-400f-b1c1-f1cbffcf5971",
+        "d69737f3-19b8-473d-a8d4-bc5f751c450f",
+        "a103a7aa-b6c8-46ae-883c-3d34e3f5c556",
+        "58d096dc-d664-48dd-bbb5-866edc8b37b8",
+        "50f271e4-4a05-45a3-80f1-3b2fb0cb9d37",
+        "ee0925a9-70f1-4a47-a827-3340ff1027b2",
+        "5872580f-46d3-468e-9de5-403e03f4dfec",
+        "e0f5a1c8-33a1-4c72-8a34-1cfc2c1fab38"
+      ],
+      "size": 13,
+      "createdAt": "2025-08-23T23:24:34.585Z",
+      "lastUpdated": "2025-08-23T23:26:33.558Z"
+    },
+    "Japanese Courtesan Stories": {
+      "id": "build-1755991486475-byrutgh",
+      "name": "Japanese Courtesan Stories",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "1263d26d-e500-47d7-8cf8-8080c8ef2f9b"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:24:46.475Z",
+      "lastUpdated": "2025-08-23T23:24:46.475Z"
+    },
+    "Medieval Slavery Dramas": {
+      "id": "build-1755991497327-6abc7a6",
+      "name": "Medieval Slavery Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "8dc5f88b-f4a1-45df-9f4f-cdb1ce2201b5"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:24:57.327Z",
+      "lastUpdated": "2025-08-23T23:24:57.327Z"
+    },
+    "Gender Identity Dramas": {
+      "id": "build-1755991497329-nekrl4k",
+      "name": "Gender Identity Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "5df20054-4e60-4062-b3cb-b6d25e5d5c0a"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:24:57.329Z",
+      "lastUpdated": "2025-08-23T23:24:57.329Z"
+    },
+    "Gilded Age Society": {
+      "id": "build-1755991497329-svy86jb",
+      "name": "Gilded Age Society",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "a76a8706-94e3-48e6-9e57-cc44a5b4af73",
+        "44a528c5-8189-4c1b-85d2-36735e158f9e"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-23T23:24:57.329Z",
+      "lastUpdated": "2025-08-23T23:25:29.262Z"
+    },
+    "Colonial Resistance Dramas": {
+      "id": "build-1755991507783-8dg51hv",
+      "name": "Colonial Resistance Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "a6cb7969-9b58-44b7-bf8e-0251c3a63a13"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:25:07.783Z",
+      "lastUpdated": "2025-08-23T23:25:07.783Z"
+    },
+    "Asian Shakespeare Adaptations": {
+      "id": "build-1755991507784-h79l3vl",
+      "name": "Asian Shakespeare Adaptations",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "894f5df8-2592-41a9-9c70-0d7a9d2bb126"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:25:07.784Z",
+      "lastUpdated": "2025-08-23T23:25:07.784Z"
+    },
+    "Suffragette Movement Dramas": {
+      "id": "build-1755991507785-jv01p4c",
+      "name": "Suffragette Movement Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "8439ec62-7a25-4711-9dea-c5009f39a8e2"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:25:07.785Z",
+      "lastUpdated": "2025-08-23T23:25:07.785Z"
+    },
+    "Victorian Heist Films": {
+      "id": "build-1755991518072-qxyv2mh",
+      "name": "Victorian Heist Films",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "237574ff-e50e-4245-8368-8e3fd5eec54d"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:25:18.072Z",
+      "lastUpdated": "2025-08-23T23:25:18.072Z"
+    },
+    "Epidemic Crisis Dramas": {
+      "id": "build-1755991529262-h1mcs99",
+      "name": "Epidemic Crisis Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "7eb7d880-b89f-4cfb-96b9-85cd0c520d5e",
+        "c4238fca-ee62-4703-afa2-510897276aec"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-23T23:25:29.262Z",
+      "lastUpdated": "2025-08-23T23:25:50.943Z"
+    },
+    "Religious Horror Dramas": {
+      "id": "build-1755991540175-33bs646",
+      "name": "Religious Horror Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "d69737f3-19b8-473d-a8d4-bc5f751c450f",
+        "c4238fca-ee62-4703-afa2-510897276aec"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-23T23:25:40.175Z",
+      "lastUpdated": "2025-08-23T23:25:50.943Z"
+    },
+    "Moral Justice Dramas": {
+      "id": "build-1755991540176-enbunco",
+      "name": "Moral Justice Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "791f5117-7121-4c41-a9f9-68fbc492193c"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:25:40.176Z",
+      "lastUpdated": "2025-08-23T23:25:40.176Z"
+    },
+    "Lighthouse Keeper Stories": {
+      "id": "build-1755991540176-bx08x9d",
+      "name": "Lighthouse Keeper Stories",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "791f5117-7121-4c41-a9f9-68fbc492193c"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:25:40.176Z",
+      "lastUpdated": "2025-08-23T23:25:40.176Z"
+    },
+    "Witch Trial Dramas": {
+      "id": "build-1755991550943-eqv9aut",
+      "name": "Witch Trial Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "c4238fca-ee62-4703-afa2-510897276aec"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:25:50.943Z",
+      "lastUpdated": "2025-08-23T23:25:50.943Z"
+    },
+    "Oil Baron Sagas": {
+      "id": "build-1755991572230-tfdgkdi",
+      "name": "Oil Baron Sagas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "ca3a1e49-9bf5-4c16-a77a-2b03c4c72b71"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:26:12.230Z",
+      "lastUpdated": "2025-08-23T23:26:12.230Z"
+    },
+    "Colonial Australia Dramas": {
+      "id": "build-1755991582913-5bzxdct",
+      "name": "Colonial Australia Dramas",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "42d4e44c-057f-4698-b17c-cc307b874977"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:26:22.913Z",
+      "lastUpdated": "2025-08-23T23:26:22.913Z"
+    },
+    "Depression Era Circus": {
+      "id": "build-1755991593558-1k9augc",
+      "name": "Depression Era Circus",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "e0f5a1c8-33a1-4c72-8a34-1cfc2c1fab38"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:26:33.558Z",
+      "lastUpdated": "2025-08-23T23:26:33.558Z"
+    },
+    "Buddhist Spiritual Journeys": {
+      "id": "build-1755991593558-37eacf2",
+      "name": "Buddhist Spiritual Journeys",
+      "description": "Thematic collection for Period films",
+      "movieIds": [
+        "3aa673b4-098e-44c1-8839-b8c49f1b19ce"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-23T23:26:33.558Z",
+      "lastUpdated": "2025-08-23T23:26:33.558Z"
+    }
+  },
+  "processingState": {
+    "completedBatches": [],
+    "failedMovies": [
+      {
+        "movieId": "6fb9351a-2bec-4b09-923d-a9ee1834c411",
+        "title": "His Grace's Will",
+        "year": 1940,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-23T23:23:33.800Z"
+      }
+    ]
+  }
+}

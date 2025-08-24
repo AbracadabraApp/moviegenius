@@ -1,0 +1,3346 @@
+{
+  "metadata": {
+    "genre": "Psychological",
+    "totalMovies": 417,
+    "processedMovies": 407,
+    "lastCheckpoint": "2025-08-22T07:26:01.264Z",
+    "processingBatch": 0,
+    "totalCost": 2.565403800000001
+  },
+  "allLists": {
+    "Modern Psychological Thrillers": {
+      "id": "build-1755847605487-ywngskt",
+      "name": "Modern Psychological Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "750270db-4e7f-4fa2-92f7-c76f8e0291dc",
+        "b98393a0-0e27-487d-9572-870a678dc445",
+        "f66d4002-80a3-41c6-8e49-4fea052cc8c6",
+        "134aa20f-9f7f-4925-8ff2-7ea9cc65e3c6",
+        "cbe2c089-1837-44b8-85b9-074e19b3f515",
+        "552bc3e8-d89c-4dd8-a018-6804b7a1a58a",
+        "0fc85a96-41ac-4c40-b896-40df4bbc9c22",
+        "03152c08-9d58-4758-834c-941d509c276c",
+        "4f1d806a-32cc-4514-b83d-ea96ae8dfac5",
+        "1d4150c2-9cff-4bfa-b75d-7ee01dbe3da7",
+        "9cc6a802-741e-49c6-b1ee-9cde2e295ae9",
+        "4e0c6060-825a-46cf-b019-78fc5ec9315b",
+        "5cf4d2c1-f0dd-4683-a7f3-91af2b0e6255",
+        "889aae45-a435-419b-9b8b-7d851decbaff",
+        "36315b0e-852c-4d01-9c5a-1c4b76c33dc1",
+        "789ef42a-2ac4-4e48-98ba-2c88f079e08b",
+        "63b44236-05c0-4c57-921f-c9e0c37e6f97",
+        "e77dbe6d-fb0e-42a2-af0f-626903eea836",
+        "7acfe40d-5674-4839-9408-e7ec18e6fa97",
+        "07184388-762d-4363-8694-78580257c456",
+        "b8cfb46f-2556-4d80-921e-01df1b6ded4e",
+        "2ad3a0c3-7630-4a5e-9619-16afaafe6f70",
+        "93737662-46c6-4cb1-8ae1-bc465c0791a8",
+        "f833266d-af7c-402a-9491-de1d561ffbb6",
+        "65b9e9fd-d769-4ea8-b472-6003436d283a",
+        "77864d46-8375-460e-8cd9-aa20e841de3b",
+        "08d41ce9-a39e-4bb8-ae1e-030d7e0f619e",
+        "b1155481-3c82-48c8-b649-1fb9e50b7a4c",
+        "6b17b864-bd17-4228-ba1c-05dec95416be",
+        "fd756142-cbf2-4b7e-88dc-877ed61a370b",
+        "b7038c25-a54a-403b-b8cf-71996134992f",
+        "e3960053-0ace-47e5-8cef-b7f912c7dc10",
+        "d28761ac-48ea-4081-b589-a437afc61676",
+        "d5f35cd4-427d-434a-a1b9-50fdb9ed6d67",
+        "25326a17-5e81-432c-ab5b-c2672997835b",
+        "1c165d50-a20b-4744-8993-cde3f30bef64",
+        "9ef18f14-86c2-47bc-bf99-a437aef95b92",
+        "1af7c37a-3c78-478d-adb3-77b9e0312e8c",
+        "f9662d14-dde7-49fc-a87d-40082ca8ad5f",
+        "cfe0c80b-311d-4ea6-aa53-af4099bbc217",
+        "0de4c51b-213f-4c3a-9d2f-e20537f292ff",
+        "450af5ad-1832-4542-8aed-e7594ea2af09",
+        "3a32ee95-fb8c-4e82-8ae2-448e554528ab",
+        "0c0df86e-00dc-480e-969e-9a6ef784125f",
+        "7797b621-dd5e-4e75-b149-b4f712a4349a",
+        "84f1a5f3-1617-4d1d-aaea-c0c6e48f1764",
+        "edb4b054-567b-411a-b2cd-85b4e134bf81",
+        "6f543fee-0653-4823-8497-613a0f1af8d0",
+        "c1d9aee4-961f-44c9-9f26-8c2becec5b77",
+        "211bfff2-51cd-4d3d-8700-cfedd77a1722",
+        "1097ac84-6d18-4816-880f-144d5938e0bc",
+        "806d5de5-02b4-4887-92fe-279bd0e817d6",
+        "d58b3f07-49bb-43f0-ae99-3826f611ed1b",
+        "6f72bd0f-f1c5-46a0-8cf8-f71c0e53fc78",
+        "810ec206-d185-4e9e-9db2-f24784619b32",
+        "e6686923-7e76-4a93-8529-5df19a2a0bdd",
+        "49ed3c4d-9f1e-4379-9bf2-d4c7b9465e0f",
+        "f92209a9-7b6f-4b1f-8ded-135575630c1a",
+        "b0d5ea49-4ceb-4896-8d9f-a511174696fa",
+        "5dc834ae-72cc-442b-bfd3-c8fbb52cd99c",
+        "65f5b833-5426-41d9-8e09-e54fa85ae647",
+        "76284396-4ce9-418a-9009-abcd5cf7e4ea",
+        "a7f565c5-0d8e-43a5-9cda-1d976c3d0c22",
+        "5fe99084-5419-4ee0-9e60-10ceb454823f",
+        "cafc26b5-cbb0-4404-8b1d-cd55c23d55cf",
+        "a6e4bdf9-f2ce-4cf5-a7c7-c1ad12fe7e28",
+        "e2f7cfbd-ac72-48f6-8e84-fc922341224e",
+        "f7dc7d1d-d42b-4eaa-a7a0-6e36599f79b7",
+        "bc53384c-c74e-4332-81e2-934ce8a8a538",
+        "5d1fc742-1333-4d9f-bd11-6fa298cfcdc1",
+        "91dca0b5-75dc-4240-baf5-1983477640a8",
+        "3226ed75-b174-41b5-9d07-ccbd5cd41b91",
+        "feba0b32-7f84-4b77-a2de-f67073857f1e",
+        "dee0ee19-5521-47ad-927e-8a9ee3349613",
+        "9ed3be4d-58e5-4f21-99f0-a30bf826c953",
+        "54b6a96a-05e2-49b6-8f54-0489cbb78786",
+        "792fd171-8785-4242-a4ae-ec3ccca91a11",
+        "46a4768c-15b1-48a3-8004-83171595942d",
+        "3736ebc1-76d0-440f-9f33-bf1caac30203",
+        "e9e8be28-cb62-4db5-bfd8-c2cfe3057c96",
+        "66030fc7-3804-4558-873b-a8ea96bebdab",
+        "06b96a30-0351-442d-be22-2fb2a62e8b86",
+        "554caf13-ca3b-4f3d-8614-9dc70175b0a0",
+        "fc2274fe-b488-44f5-9f98-5fc7733c21d7",
+        "6f8b3452-1807-4e5f-9f68-b6eab37d6b8c",
+        "3947233a-0170-4111-a675-f57e9f0381af",
+        "d48a8774-3dcb-4872-8a50-4d3ec2b8cecb",
+        "ac3bab19-835f-4a9b-8e87-61334b94186b",
+        "dd95b2e9-a6c8-45af-ad11-0f36295e0539",
+        "cd83385b-d140-4ab8-9c27-8b3c98c56c21",
+        "418f7521-8bbe-4b58-9f8a-121a4b518746",
+        "1cce7234-804a-4ed2-ad75-5820343629f0",
+        "80bb71d0-36d0-46aa-b83f-933056ac25da",
+        "637d24e6-b867-4cf3-b496-8c4ea206f411",
+        "eedbfdeb-5535-4eb1-a1b5-91e577ad1166",
+        "ab618bcf-ffb6-4d64-9f10-44278deb93b0",
+        "3125ba7b-a7f2-4e48-885b-689a892d8cf0",
+        "631abc7a-73d1-4990-8af9-81381383566d",
+        "05a26c97-3a4c-44bd-bf90-0097e54cd322",
+        "22cbfa59-4bac-4525-a3fc-16f5735044b2",
+        "b9ae31ca-1b60-42db-868c-0833059a6942",
+        "b23d3ac3-0058-4ddb-876f-466f0978b328",
+        "ffa94035-63f6-41b0-b730-a01cd8fa5e77",
+        "f0b5596a-951c-4201-88cc-805bd1204b03",
+        "a0bbc025-9021-46a8-821e-39cdd95907e3",
+        "2d3fedf1-7fd3-4c9e-a29c-f21c7092b7b4",
+        "abc77c75-cd38-45b7-94f0-8f9cb8af2020",
+        "a484ffd5-f6f8-4edb-96df-b5d6b540e19b",
+        "e92b0877-5b53-44b1-bb37-03366e3ff17d",
+        "b585daac-a50e-49e5-a730-491cfed85aea",
+        "d47e12eb-f9aa-4c56-b8ef-f65d9594ddfe",
+        "1b5a24a3-67fd-4785-86ed-77e37a8013b9",
+        "3c1e8850-892b-434c-ada1-fe5f512b0890",
+        "ae97cf5e-177c-4558-8fab-8bbc927dd967",
+        "0930f8a0-9dc7-4fc1-84ef-817221955073",
+        "b1160a5e-b329-4844-82b8-c52cee8988d4",
+        "f73b28a2-d164-4ef5-9084-ba0113cd0685",
+        "7be71184-0993-48b9-9db8-a6e8f6082128",
+        "a9294f57-b709-421f-b74f-bb2acff3bc3a",
+        "34aa27c2-6aac-4b0e-9eb1-ff73e37eccc6",
+        "7407c60a-a000-41aa-baad-6093757e4aa7",
+        "10df8d6f-4e28-473c-a549-e7d12ada7330",
+        "3d9d2c9a-61cd-48ef-aed4-c8fcca366219",
+        "27198255-3bff-4dd2-b09e-3dff1e3fef78",
+        "ed7892ef-229a-4457-a9c1-f8fb2cc67370",
+        "9c9f74e3-d686-4812-b917-553678367e36",
+        "2f1be50c-6292-449a-af67-c1e7c1891209",
+        "59a15e0a-7523-495d-a5d4-b30c8e26bae7",
+        "aab29b45-7e36-4a23-90b8-b62f5acd74fa",
+        "ed4db786-42d0-4a5e-936e-2bcf84bee14e",
+        "5f75e9f0-428d-4f94-8c71-a39ea91d4d52",
+        "6ac65753-6543-4b72-b0e5-4e9616f23ca5",
+        "8f32070f-9c5a-4174-b4e7-0c4379cb19e7",
+        "5517a7bf-586c-42cd-9071-46510899b705",
+        "091daaf8-ddc1-4f3f-aa57-97cde1b0f8d0",
+        "746dc4b7-b69a-43a3-a450-ed41fb021873",
+        "ddad1e8d-e6cb-4d73-90e1-3d104123cfef",
+        "4723d63d-22a1-474d-9a74-0beb287558de",
+        "17006ecc-9499-4ba9-b81f-281197884775",
+        "58a20eed-3fa3-408f-9078-75f8c32069d0",
+        "0cee5b30-110b-4a35-b697-23a2a4a023a7",
+        "43fcc571-8c46-4ecc-92f2-9105d74e8f4f",
+        "1f2a2207-ee7c-44a4-a5f7-398df6587619",
+        "2ba0a6d1-b02b-438a-92bf-3d3ce0786115",
+        "e1a0b415-601b-492b-b3cd-f4e6df949090",
+        "ac55d546-a49a-4e5e-911f-04c7e7a6c0b5",
+        "ba6347cf-c8f1-416a-9e57-efb711b5ece7",
+        "b828fe00-1c80-4dcc-8143-8e734718c8e2",
+        "c750e661-0b0c-46c5-8eca-c142d40de1f9",
+        "0751667b-89e1-428b-a4bb-46e8bd3ab65d",
+        "e4e48257-ebbe-4eb2-82c8-d00f6543fd0c",
+        "3472efec-6000-4ed7-8f84-ec2b280993ff",
+        "154381c5-2281-4d7e-948e-acce5d7cd802",
+        "e7f098bd-1571-4500-af48-1f44717dc3f1",
+        "e7b36b8e-7909-46b8-a513-8e873d84f66a",
+        "0807d7d7-c622-4d0c-b257-7de1ded486ba",
+        "6c5b83cb-33e5-484a-8ea7-30711c36927a",
+        "35ff3877-f261-479b-b0d5-d178c98f2dab",
+        "783e26e7-7cbc-4293-b661-1fc8da9289f6",
+        "98d8071e-0208-4165-9972-a47da8e3849b",
+        "a6a3cf0e-6efe-4809-8e7e-443ba5d0ff61",
+        "aeac39f4-fad7-48dc-b8f9-596954c9093d",
+        "c6042622-eccb-4301-bb29-32fd5ec57b3e",
+        "059f8bc3-0d24-4ccd-9d8f-fa23b0db9134",
+        "c8d9d4f5-263e-4304-875f-248c93083173",
+        "2a564eae-0ae6-41a8-ba62-b0eb59683097",
+        "394f1c64-8924-4174-9084-4d2414ce89f0",
+        "3f7ecde6-20cd-44f8-a1d5-87a6984ef759",
+        "23438305-896d-45ac-80c9-dbf2b3fa52c8",
+        "9602c017-8055-4cca-aa51-705c92c7c06c",
+        "aa01d90f-b481-44f6-b5fc-d0cc282037e5",
+        "728ec840-0170-4186-af9a-2934703470e6",
+        "b67fb10a-9277-4c61-8eac-6fe61d4ded5b",
+        "5206d315-ec51-498b-a45d-0c70df4356d4",
+        "d42a31b2-abed-44bb-9ac3-117a5e981e81",
+        "8d144b36-76c0-4124-a68a-bb93dcf40060",
+        "220b4cb7-c76a-44c2-83a8-2d3efc28b756",
+        "8a8ecf54-5c74-4b14-b7be-b501354b804a",
+        "18d8e5f7-7b73-4fc9-b1ad-34a960f12aa7",
+        "7c56bf9b-fa61-435a-8735-49acba992a94",
+        "ffdfd727-81db-404e-9850-2e8223ab0143",
+        "a134a30a-3bfb-4954-8ec8-1d511028f7a8",
+        "05b1b1ba-dac3-42d3-ad11-1bcf14d00257",
+        "dd5ade94-6cb9-45b8-b7d8-059a76fb8dfb",
+        "59e3d88e-a57f-4422-8051-4e4c47b44694",
+        "a234c026-c40f-4324-a004-7c365dff20ec",
+        "bbd77267-d8fc-4297-a1d5-cc353d33c31e",
+        "0f4285fe-d1dc-4dc9-9538-3c1551bcae8a",
+        "3e8ae456-ec8b-4e46-ade2-40348a1afbd5",
+        "078bc44f-1afb-4937-b059-eab3e808cceb",
+        "051f6d07-0a7f-434c-b661-28dcdd27fd38",
+        "86ea1573-b6fb-4743-a6af-eccb3ee27374",
+        "514ecbbb-e8a2-49e5-b6cd-375012369879",
+        "f1922fb0-ed27-4612-a6cf-f4d5aebe86a1",
+        "94c97568-40f3-43de-b05f-f8f3794e196c",
+        "3f58fb92-1238-4217-a484-4d848bd46cc4",
+        "8ebcfe8b-e9c2-40db-b364-3732d7e90bbe",
+        "fca7f83a-359e-448a-966a-cd44059a98db",
+        "76b4d4a4-bd97-4fe3-8a95-628a39bb6272",
+        "f97933d4-b84e-4f0a-8fd5-485aea73dd2c",
+        "56301ad1-b05c-43c1-ae50-c4d269734ff4",
+        "8c882a24-6c02-446e-a4b6-d2ae3b0409f0",
+        "1551aedc-8301-40fa-85c7-36c4e3f4ab55"
+      ],
+      "size": 203,
+      "createdAt": "2025-08-22T07:26:45.487Z",
+      "lastUpdated": "2025-08-22T07:46:11.338Z"
+    },
+    "Claustrophobic Single-Location Films": {
+      "id": "build-1755847605487-k6ux7r8",
+      "name": "Claustrophobic Single-Location Films",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "750270db-4e7f-4fa2-92f7-c76f8e0291dc",
+        "134aa20f-9f7f-4925-8ff2-7ea9cc65e3c6",
+        "26971f2f-d4df-4025-a89e-ebc3924928fb",
+        "789ef42a-2ac4-4e48-98ba-2c88f079e08b",
+        "f81dd64d-2365-424c-8863-bb53dc8e81bc",
+        "07184388-762d-4363-8694-78580257c456",
+        "e67d0f96-cacb-4051-a185-86f9d12be61d",
+        "08d41ce9-a39e-4bb8-ae1e-030d7e0f619e",
+        "9fe5981b-8eb8-42f8-9a08-732ff07799d3",
+        "25326a17-5e81-432c-ab5b-c2672997835b",
+        "0c0df86e-00dc-480e-969e-9a6ef784125f",
+        "c1d9aee4-961f-44c9-9f26-8c2becec5b77",
+        "211bfff2-51cd-4d3d-8700-cfedd77a1722",
+        "6f72bd0f-f1c5-46a0-8cf8-f71c0e53fc78",
+        "810ec206-d185-4e9e-9db2-f24784619b32",
+        "e6686923-7e76-4a93-8529-5df19a2a0bdd",
+        "76284396-4ce9-418a-9009-abcd5cf7e4ea",
+        "a6e4bdf9-f2ce-4cf5-a7c7-c1ad12fe7e28",
+        "a31ebe8f-3d81-4e02-948c-e5a280061998",
+        "46a4768c-15b1-48a3-8004-83171595942d",
+        "3736ebc1-76d0-440f-9f33-bf1caac30203",
+        "e9e8be28-cb62-4db5-bfd8-c2cfe3057c96",
+        "1cce7234-804a-4ed2-ad75-5820343629f0",
+        "05a26c97-3a4c-44bd-bf90-0097e54cd322",
+        "b7608ccd-b11f-46f3-9b14-2e90344fdfe7",
+        "a484ffd5-f6f8-4edb-96df-b5d6b540e19b",
+        "de199708-f83c-4ce5-9229-f64d3c8e083b",
+        "3c1e8850-892b-434c-ada1-fe5f512b0890",
+        "9b156c46-a22f-4503-a681-d15c5f3bc142",
+        "0c667923-2f42-490c-833d-1a150ff844f5",
+        "8f32070f-9c5a-4174-b4e7-0c4379cb19e7",
+        "93519a72-fb35-48fd-9257-7c42d1f3d7aa",
+        "6f73f3ee-c2f0-459b-b19b-8ab5f73ef70e",
+        "0cde0a5a-38b1-4714-b8c5-614abe1fb55d",
+        "ddad1e8d-e6cb-4d73-90e1-3d104123cfef",
+        "b828fe00-1c80-4dcc-8143-8e734718c8e2",
+        "979a70ad-1295-42d7-9c52-aafdcf271fc5",
+        "c8d9d4f5-263e-4304-875f-248c93083173",
+        "055cf0ab-10a2-421a-8cfd-de043b4abea5",
+        "05eecb34-619c-49a4-b0fa-1c33db9063aa",
+        "79a863a0-d17d-430d-a355-e875718b1076",
+        "f2ddf071-d1e2-4f77-871a-633f0fe011f1",
+        "c53dd9a6-cb04-42a5-8ff4-ca7ac39e8f5e",
+        "59e3d88e-a57f-4422-8051-4e4c47b44694",
+        "a4c23213-382c-46cb-9170-43a4b3de83ed",
+        "97290f66-95bc-4838-a720-e28de33e3d14",
+        "b6baa95a-e1c6-4612-9103-b99e1305d853",
+        "051f6d07-0a7f-434c-b661-28dcdd27fd38",
+        "5e89f48f-779d-4c76-a876-393799bfbe8f",
+        "dfb3377b-92d6-44e8-ac41-3fc42994b940",
+        "c9915c97-8316-4a2a-9641-2cdfff3c4092",
+        "68d5ef3e-2ad3-4bdc-93a6-0ae961913c7a",
+        "ffdb21e2-6354-44ae-85ce-378df0ffcdbf",
+        "b03cf569-85a9-499e-a237-4709c8f1fed1",
+        "4980ad6f-361b-4473-98d2-fdb7ddfdee1a",
+        "9dc4a5a1-8d70-45c8-8822-888f7194cccc"
+      ],
+      "size": 56,
+      "createdAt": "2025-08-22T07:26:45.487Z",
+      "lastUpdated": "2025-08-22T07:46:11.340Z"
+    },
+    "Apocalyptic Character Studies": {
+      "id": "build-1755847605487-hridec3",
+      "name": "Apocalyptic Character Studies",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "750270db-4e7f-4fa2-92f7-c76f8e0291dc",
+        "38985349-dccd-453c-ba82-70330fcf7286",
+        "3c1e8850-892b-434c-ada1-fe5f512b0890",
+        "5335e365-fb16-40cb-97af-bf9f9817a78a",
+        "2db88871-adc3-482f-b700-b48cbb86c060",
+        "57e72801-63c4-4534-91dd-7dd670f2551b",
+        "05eecb34-619c-49a4-b0fa-1c33db9063aa"
+      ],
+      "size": 7,
+      "createdAt": "2025-08-22T07:26:45.487Z",
+      "lastUpdated": "2025-08-22T07:41:39.573Z"
+    },
+    "Haunted Location Thrillers": {
+      "id": "build-1755847605487-s1qt7r2",
+      "name": "Haunted Location Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "735780d1-70f1-4892-b14a-85615ff4e91c",
+        "552bc3e8-d89c-4dd8-a018-6804b7a1a58a",
+        "e67d0f96-cacb-4051-a185-86f9d12be61d",
+        "5a6ef6e4-d76b-42af-afe0-6a52e3a08944",
+        "26f66cdd-c1ba-4a24-bf54-425955a9acd0",
+        "5dc834ae-72cc-442b-bfd3-c8fbb52cd99c",
+        "91dca0b5-75dc-4240-baf5-1983477640a8",
+        "fc2274fe-b488-44f5-9f98-5fc7733c21d7",
+        "a0bbc025-9021-46a8-821e-39cdd95907e3",
+        "1b5a24a3-67fd-4785-86ed-77e37a8013b9",
+        "154381c5-2281-4d7e-948e-acce5d7cd802",
+        "98d8071e-0208-4165-9972-a47da8e3849b",
+        "f2ddf071-d1e2-4f77-871a-633f0fe011f1",
+        "b72c27af-a46f-4bda-9ea2-58dc8d31433f",
+        "0f4285fe-d1dc-4dc9-9538-3c1551bcae8a",
+        "bcd731fb-2b17-4808-a0b6-a406651ab17f",
+        "281dbbf3-ade4-45ad-9b25-4d5dc6ea3876"
+      ],
+      "size": 17,
+      "createdAt": "2025-08-22T07:26:45.487Z",
+      "lastUpdated": "2025-08-22T07:44:03.677Z"
+    },
+    "Stephen King Adaptations": {
+      "id": "build-1755847605488-mtejw34",
+      "name": "Stephen King Adaptations",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "735780d1-70f1-4892-b14a-85615ff4e91c",
+        "cafc26b5-cbb0-4404-8b1d-cd55c23d55cf",
+        "6f73f3ee-c2f0-459b-b19b-8ab5f73ef70e",
+        "9861fdb6-f46b-42bf-8500-d3eb350149f2",
+        "8bebdbef-859b-41e2-a8cc-2ebdcfc6cd61",
+        "281dbbf3-ade4-45ad-9b25-4d5dc6ea3876"
+      ],
+      "size": 6,
+      "createdAt": "2025-08-22T07:26:45.488Z",
+      "lastUpdated": "2025-08-22T07:44:03.677Z"
+    },
+    "Psychological Horror 2000s": {
+      "id": "build-1755847605488-q9ufxzu",
+      "name": "Psychological Horror 2000s",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "735780d1-70f1-4892-b14a-85615ff4e91c",
+        "134aa20f-9f7f-4925-8ff2-7ea9cc65e3c6",
+        "03152c08-9d58-4758-834c-941d509c276c",
+        "9cc6a802-741e-49c6-b1ee-9cde2e295ae9",
+        "4e0c6060-825a-46cf-b019-78fc5ec9315b",
+        "889aae45-a435-419b-9b8b-7d851decbaff",
+        "63b44236-05c0-4c57-921f-c9e0c37e6f97",
+        "e77dbe6d-fb0e-42a2-af0f-626903eea836",
+        "f81dd64d-2365-424c-8863-bb53dc8e81bc",
+        "2ad3a0c3-7630-4a5e-9619-16afaafe6f70",
+        "25326a17-5e81-432c-ab5b-c2672997835b",
+        "f9662d14-dde7-49fc-a87d-40082ca8ad5f",
+        "bf23106c-5f90-4ad9-a554-cc9059b44f35",
+        "0cde0a5a-38b1-4714-b8c5-614abe1fb55d"
+      ],
+      "size": 14,
+      "createdAt": "2025-08-22T07:26:45.488Z",
+      "lastUpdated": "2025-08-22T07:35:53.561Z"
+    },
+    "Nonlinear Narrative Dramas": {
+      "id": "build-1755847605488-98u0s63",
+      "name": "Nonlinear Narrative Dramas",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "21669e60-c1af-4821-93f0-b419d5b801df",
+        "b98393a0-0e27-487d-9572-870a678dc445",
+        "f66d4002-80a3-41c6-8e49-4fea052cc8c6",
+        "03152c08-9d58-4758-834c-941d509c276c",
+        "4f1d806a-32cc-4514-b83d-ea96ae8dfac5",
+        "26971f2f-d4df-4025-a89e-ebc3924928fb",
+        "4e0c6060-825a-46cf-b019-78fc5ec9315b",
+        "63b44236-05c0-4c57-921f-c9e0c37e6f97",
+        "6670745f-71dd-4314-8a2c-9d4c1e63024f",
+        "7acfe40d-5674-4839-9408-e7ec18e6fa97",
+        "f833266d-af7c-402a-9491-de1d561ffbb6",
+        "db8519dc-9feb-4781-8c4b-62916fec6ebf",
+        "b1155481-3c82-48c8-b649-1fb9e50b7a4c",
+        "d28761ac-48ea-4081-b589-a437afc61676",
+        "7797b621-dd5e-4e75-b149-b4f712a4349a",
+        "6f543fee-0653-4823-8497-613a0f1af8d0",
+        "cafc26b5-cbb0-4404-8b1d-cd55c23d55cf",
+        "d12075c3-36ec-4bd2-9dc5-28c6d306b0ce",
+        "bc53384c-c74e-4332-81e2-934ce8a8a538",
+        "91dca0b5-75dc-4240-baf5-1983477640a8",
+        "792fd171-8785-4242-a4ae-ec3ccca91a11",
+        "dd95b2e9-a6c8-45af-ad11-0f36295e0539",
+        "b44fd50d-c354-4d16-96dd-bb6de9ca75e7",
+        "aa4e3bed-a6f4-4ef6-9fe1-ff1948f14dc3",
+        "a9c9f8f1-107e-446b-9ba0-3c22b237fd92",
+        "ed7892ef-229a-4457-a9c1-f8fb2cc67370",
+        "9c9f74e3-d686-4812-b917-553678367e36",
+        "9bb84cf4-2f04-4654-9ec8-bab391719837",
+        "6ac65753-6543-4b72-b0e5-4e9616f23ca5",
+        "75197239-e656-4d10-ac3f-eacce6e7427c",
+        "5517a7bf-586c-42cd-9071-46510899b705",
+        "2bacf44a-12af-42fb-ad73-80a417bd1ae3",
+        "dc79f724-0564-44c0-8b95-f205559c9561",
+        "e1a0b415-601b-492b-b3cd-f4e6df949090",
+        "136836c0-e850-407c-a2cf-6a7fde54520f",
+        "959b3941-031f-40e8-9730-84f72056bbb3",
+        "f7240969-ec99-4b47-aa4d-d72d4410a82a",
+        "a1166677-7639-4bb8-8bfe-ac918232c994",
+        "dfef9c0f-6320-4c30-82df-700202b3e446",
+        "86ea1573-b6fb-4743-a6af-eccb3ee27374",
+        "2ce5d7d0-e690-45aa-bf81-991e4e7e6976",
+        "f37c75c6-b482-4815-961a-d4f2de56134c",
+        "d9dce2a4-adc2-42a8-abde-bef6024666ec",
+        "1136f72f-25e5-4d95-ae03-3ed94f223b8e"
+      ],
+      "size": 44,
+      "createdAt": "2025-08-22T07:26:45.488Z",
+      "lastUpdated": "2025-08-22T07:45:51.160Z"
+    },
+    "Mortality Meditation Films": {
+      "id": "build-1755847605488-rt3ks8n",
+      "name": "Mortality Meditation Films",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "21669e60-c1af-4821-93f0-b419d5b801df",
+        "26971f2f-d4df-4025-a89e-ebc3924928fb",
+        "5cf4d2c1-f0dd-4683-a7f3-91af2b0e6255",
+        "789ef42a-2ac4-4e48-98ba-2c88f079e08b",
+        "6670745f-71dd-4314-8a2c-9d4c1e63024f",
+        "38985349-dccd-453c-ba82-70330fcf7286",
+        "b8cfb46f-2556-4d80-921e-01df1b6ded4e",
+        "d5f35cd4-427d-434a-a1b9-50fdb9ed6d67",
+        "5a6ef6e4-d76b-42af-afe0-6a52e3a08944",
+        "d12075c3-36ec-4bd2-9dc5-28c6d306b0ce",
+        "54b6a96a-05e2-49b6-8f54-0489cbb78786",
+        "5478960e-a515-4255-8a63-88bdc64d54eb",
+        "6f8b3452-1807-4e5f-9f68-b6eab37d6b8c",
+        "ac3bab19-835f-4a9b-8e87-61334b94186b",
+        "af2b39e3-4f96-4c94-98c1-603ea5117d5c",
+        "9bb84cf4-2f04-4654-9ec8-bab391719837",
+        "bf23106c-5f90-4ad9-a554-cc9059b44f35",
+        "5335e365-fb16-40cb-97af-bf9f9817a78a",
+        "93519a72-fb35-48fd-9257-7c42d1f3d7aa",
+        "b8dc9c6c-3370-48c0-9eb8-1d4ab9bd04af",
+        "dfef9c0f-6320-4c30-82df-700202b3e446"
+      ],
+      "size": 21,
+      "createdAt": "2025-08-22T07:26:45.488Z",
+      "lastUpdated": "2025-08-22T07:43:02.103Z"
+    },
+    "2000s Character Intersections": {
+      "id": "build-1755847605488-2ocwkfz",
+      "name": "2000s Character Intersections",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "21669e60-c1af-4821-93f0-b419d5b801df"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:26:45.488Z",
+      "lastUpdated": "2025-08-22T07:26:45.488Z"
+    },
+    "Japanese Psychological Thrillers": {
+      "id": "build-1755847605488-kxmdn42",
+      "name": "Japanese Psychological Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "43d4a99c-e140-4175-bdc1-eecabe2b8948",
+        "9cc6a802-741e-49c6-b1ee-9cde2e295ae9",
+        "e77dbe6d-fb0e-42a2-af0f-626903eea836",
+        "6f543fee-0653-4823-8497-613a0f1af8d0",
+        "806d5de5-02b4-4887-92fe-279bd0e817d6",
+        "d58b3f07-49bb-43f0-ae99-3826f611ed1b",
+        "26f66cdd-c1ba-4a24-bf54-425955a9acd0",
+        "49ed3c4d-9f1e-4379-9bf2-d4c7b9465e0f",
+        "22cbfa59-4bac-4525-a3fc-16f5735044b2",
+        "1b5a24a3-67fd-4785-86ed-77e37a8013b9",
+        "0930f8a0-9dc7-4fc1-84ef-817221955073",
+        "1fac7e79-37e8-455b-8961-d6c10cf3ab96",
+        "c164b93a-2a13-4751-87a8-228d23db4773",
+        "a6710bd4-78d9-4d44-b94f-534d98eb3c48",
+        "b4156f09-0fdc-4012-bbfc-d46e9ffb7e80",
+        "62626532-3203-4c56-adbd-aef635040daa",
+        "f7240969-ec99-4b47-aa4d-d72d4410a82a",
+        "526d8fd7-e33a-4528-9b4f-73063cd0f9af",
+        "f00c336f-44e2-48d0-84e1-7683427a68f6",
+        "7cd01231-11f7-4127-bf87-c0c5de54e3f2",
+        "9dc4a5a1-8d70-45c8-8822-888f7194cccc"
+      ],
+      "size": 21,
+      "createdAt": "2025-08-22T07:26:45.488Z",
+      "lastUpdated": "2025-08-22T07:46:11.340Z"
+    },
+    "Single Location Showdowns": {
+      "id": "build-1755847605488-ot343d2",
+      "name": "Single Location Showdowns",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "43d4a99c-e140-4175-bdc1-eecabe2b8948",
+        "6e8c05b9-2c86-481f-8253-d3c5f6e7f683"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T07:26:45.488Z",
+      "lastUpdated": "2025-08-22T07:29:13.690Z"
+    },
+    "Female Rivalry Dramas": {
+      "id": "build-1755847605488-p7oiaus",
+      "name": "Female Rivalry Dramas",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "43d4a99c-e140-4175-bdc1-eecabe2b8948",
+        "b98393a0-0e27-487d-9572-870a678dc445",
+        "f66d4002-80a3-41c6-8e49-4fea052cc8c6",
+        "cbe2c089-1837-44b8-85b9-074e19b3f515",
+        "0fc85a96-41ac-4c40-b896-40df4bbc9c22",
+        "36315b0e-852c-4d01-9c5a-1c4b76c33dc1",
+        "edb4b054-567b-411a-b2cd-85b4e134bf81",
+        "6799ae15-c8a2-4ca6-8921-b3bac3661e3d",
+        "5dc834ae-72cc-442b-bfd3-c8fbb52cd99c",
+        "65f5b833-5426-41d9-8e09-e54fa85ae647",
+        "2f1be50c-6292-449a-af67-c1e7c1891209",
+        "0cee5b30-110b-4a35-b697-23a2a4a023a7",
+        "c6042622-eccb-4301-bb29-32fd5ec57b3e",
+        "3e8ae456-ec8b-4e46-ade2-40348a1afbd5",
+        "7f5c5d63-6ab2-47df-ab21-c221ba054b57",
+        "4980ad6f-361b-4473-98d2-fdb7ddfdee1a"
+      ],
+      "size": 16,
+      "createdAt": "2025-08-22T07:26:45.488Z",
+      "lastUpdated": "2025-08-22T07:45:51.160Z"
+    },
+    "Identity Merging Films": {
+      "id": "build-1755847615965-p2ttg5z",
+      "name": "Identity Merging Films",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "b98393a0-0e27-487d-9572-870a678dc445",
+        "07184388-762d-4363-8694-78580257c456",
+        "93737662-46c6-4cb1-8ae1-bc465c0791a8",
+        "db8519dc-9feb-4781-8c4b-62916fec6ebf",
+        "08d41ce9-a39e-4bb8-ae1e-030d7e0f619e",
+        "6b17b864-bd17-4228-ba1c-05dec95416be",
+        "d28761ac-48ea-4081-b589-a437afc61676",
+        "1c165d50-a20b-4744-8993-cde3f30bef64",
+        "f9662d14-dde7-49fc-a87d-40082ca8ad5f",
+        "450af5ad-1832-4542-8aed-e7594ea2af09",
+        "7797b621-dd5e-4e75-b149-b4f712a4349a",
+        "a77f2abe-9c6b-4b7c-9de6-52febe14bfb6",
+        "810ec206-d185-4e9e-9db2-f24784619b32",
+        "6799ae15-c8a2-4ca6-8921-b3bac3661e3d",
+        "5fab7060-ed6d-4782-b489-be8e5d302c4d",
+        "600298a7-97c7-43ef-ab33-02b08f15029d",
+        "b0d5ea49-4ceb-4896-8d9f-a511174696fa",
+        "a31ebe8f-3d81-4e02-948c-e5a280061998",
+        "5d1fc742-1333-4d9f-bd11-6fa298cfcdc1",
+        "91dca0b5-75dc-4240-baf5-1983477640a8",
+        "b6226cab-c098-4451-b446-ade1070f5f91",
+        "dee0ee19-5521-47ad-927e-8a9ee3349613",
+        "792fd171-8785-4242-a4ae-ec3ccca91a11",
+        "ca54e982-8dd3-4138-955f-ba8c1b050233",
+        "3947233a-0170-4111-a675-f57e9f0381af",
+        "3125ba7b-a7f2-4e48-885b-689a892d8cf0",
+        "22cbfa59-4bac-4525-a3fc-16f5735044b2",
+        "b23d3ac3-0058-4ddb-876f-466f0978b328",
+        "b44fd50d-c354-4d16-96dd-bb6de9ca75e7",
+        "a484ffd5-f6f8-4edb-96df-b5d6b540e19b",
+        "b20910a7-6d3f-4de5-8ea1-02f163a3750b",
+        "aa4e3bed-a6f4-4ef6-9fe1-ff1948f14dc3",
+        "0930f8a0-9dc7-4fc1-84ef-817221955073",
+        "a9294f57-b709-421f-b74f-bb2acff3bc3a",
+        "34aa27c2-6aac-4b0e-9eb1-ff73e37eccc6",
+        "ed7892ef-229a-4457-a9c1-f8fb2cc67370",
+        "d5a64320-4631-490f-9c85-9e5a82a7777f",
+        "9c9f74e3-d686-4812-b917-553678367e36",
+        "5f75e9f0-428d-4f94-8c71-a39ea91d4d52",
+        "5517a7bf-586c-42cd-9071-46510899b705",
+        "c164b93a-2a13-4751-87a8-228d23db4773",
+        "43fcc571-8c46-4ecc-92f2-9105d74e8f4f",
+        "e1a0b415-601b-492b-b3cd-f4e6df949090",
+        "b4156f09-0fdc-4012-bbfc-d46e9ffb7e80",
+        "355cb6e8-b500-4660-9139-eb795fc0b238",
+        "0525e3f6-2ac6-44a1-be7d-927809c2adc8",
+        "e7f098bd-1571-4500-af48-1f44717dc3f1",
+        "feda0880-49bc-4ea3-b73b-723bb0fb812a",
+        "6c5b83cb-33e5-484a-8ea7-30711c36927a",
+        "23e1c1a7-bbab-4b36-9ca9-d39240db56a3",
+        "d07403ad-21fe-41a7-bc3f-01544223120f",
+        "ed8a41bd-04d0-43ff-9054-196fc00a21c1",
+        "ff94d9f3-4d77-41fa-a4dd-fbd4ec77d830",
+        "c6042622-eccb-4301-bb29-32fd5ec57b3e",
+        "4f4082a0-ecb9-44ad-98a9-e0cb19bf1b80",
+        "c8d9d4f5-263e-4304-875f-248c93083173",
+        "a1166677-7639-4bb8-8bfe-ac918232c994",
+        "526d8fd7-e33a-4528-9b4f-73063cd0f9af",
+        "91154b05-d503-4503-8c74-29ba0bb9e84a",
+        "aa01d90f-b481-44f6-b5fc-d0cc282037e5",
+        "8bebdbef-859b-41e2-a8cc-2ebdcfc6cd61",
+        "f954ef41-5a67-4e1d-bccc-3dfeee3e75eb",
+        "390e11ad-e1d4-4c73-9a1b-a9af892b1c64",
+        "f00c336f-44e2-48d0-84e1-7683427a68f6",
+        "3ad43d5c-bf05-4af0-966c-88be5ae79472",
+        "f434b789-c64f-4f3b-89de-24ee1e3ff17b",
+        "69d05f7e-429d-4b2b-aa94-db5d388f75a0",
+        "38c60dd7-2ff2-4754-bfbc-87177bd18b03",
+        "ca187504-edd3-411d-bed5-631f2979ba1b",
+        "657236df-1623-4d9b-966a-3ed1b47ba075",
+        "dfb3377b-92d6-44e8-ac41-3fc42994b940",
+        "dc5625ff-43f3-4d40-980c-ae4f782c6e9f",
+        "d9dce2a4-adc2-42a8-abde-bef6024666ec",
+        "67a8e33b-a696-4f33-aa2a-23c98c03c357"
+      ],
+      "size": 74,
+      "createdAt": "2025-08-22T07:26:55.965Z",
+      "lastUpdated": "2025-08-22T07:45:41.398Z"
+    },
+    "Identity Absorption Films": {
+      "id": "build-1755847615966-chdwpqh",
+      "name": "Identity Absorption Films",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "f66d4002-80a3-41c6-8e49-4fea052cc8c6"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:26:55.966Z",
+      "lastUpdated": "2025-08-22T07:26:55.966Z"
+    },
+    "Isolation Experiment Thrillers": {
+      "id": "build-1755847615966-seamcfm",
+      "name": "Isolation Experiment Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "134aa20f-9f7f-4925-8ff2-7ea9cc65e3c6",
+        "552bc3e8-d89c-4dd8-a018-6804b7a1a58a",
+        "25326a17-5e81-432c-ab5b-c2672997835b",
+        "0c0df86e-00dc-480e-969e-9a6ef784125f",
+        "5fe99084-5419-4ee0-9e60-10ceb454823f",
+        "3736ebc1-76d0-440f-9f33-bf1caac30203",
+        "b7608ccd-b11f-46f3-9b14-2e90344fdfe7",
+        "8f32070f-9c5a-4174-b4e7-0c4379cb19e7",
+        "5206d315-ec51-498b-a45d-0c70df4356d4",
+        "b63ea3eb-5b1d-48f1-ba4e-6f44a0a7d4e8",
+        "a4c23213-382c-46cb-9170-43a4b3de83ed",
+        "9dc4a5a1-8d70-45c8-8822-888f7194cccc"
+      ],
+      "size": 12,
+      "createdAt": "2025-08-22T07:26:55.966Z",
+      "lastUpdated": "2025-08-22T07:46:11.340Z"
+    },
+    "Mediterranean Erotic Thrillers": {
+      "id": "build-1755847615966-uah2mr7",
+      "name": "Mediterranean Erotic Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "cbe2c089-1837-44b8-85b9-074e19b3f515",
+        "4f1d806a-32cc-4514-b83d-ea96ae8dfac5",
+        "1d4150c2-9cff-4bfa-b75d-7ee01dbe3da7",
+        "c7138e0a-a342-4f90-acbf-abbea95b5430",
+        "d5a64320-4631-490f-9c85-9e5a82a7777f",
+        "feda0880-49bc-4ea3-b73b-723bb0fb812a",
+        "4d8764ab-33af-4b18-9bac-f3651647d176",
+        "8d8d66a0-837a-4a32-8313-660b154a9c5e",
+        "7f5c5d63-6ab2-47df-ab21-c221ba054b57",
+        "38c60dd7-2ff2-4754-bfbc-87177bd18b03",
+        "9dfee9cb-3890-4502-af0c-dcea0e77bfd2"
+      ],
+      "size": 11,
+      "createdAt": "2025-08-22T07:26:55.966Z",
+      "lastUpdated": "2025-08-22T07:44:34.463Z"
+    },
+    "Medical Institution Horror": {
+      "id": "build-1755847625288-zz2n1kf",
+      "name": "Medical Institution Horror",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "552bc3e8-d89c-4dd8-a018-6804b7a1a58a",
+        "2ad3a0c3-7630-4a5e-9619-16afaafe6f70",
+        "84f1a5f3-1617-4d1d-aaea-c0c6e48f1764",
+        "a77f2abe-9c6b-4b7c-9de6-52febe14bfb6",
+        "5fab7060-ed6d-4782-b489-be8e5d302c4d",
+        "feba0b32-7f84-4b77-a2de-f67073857f1e",
+        "a8a6fa97-bc16-40f4-98e8-cff567bfea5a",
+        "d1947c8c-0900-4599-bf16-8f2046f1de98",
+        "fc2274fe-b488-44f5-9f98-5fc7733c21d7",
+        "d48a8774-3dcb-4872-8a50-4d3ec2b8cecb",
+        "ac3bab19-835f-4a9b-8e87-61334b94186b",
+        "e92b0877-5b53-44b1-bb37-03366e3ff17d",
+        "89021201-9839-4384-b5f7-03fb3c2f20c9",
+        "bf23106c-5f90-4ad9-a554-cc9059b44f35",
+        "74845f78-9886-4382-ae1e-50c7a25510da",
+        "5e578a7c-f3b5-4684-b26c-d67e25230cae",
+        "e7b36b8e-7909-46b8-a513-8e873d84f66a",
+        "23e1c1a7-bbab-4b36-9ca9-d39240db56a3",
+        "d07403ad-21fe-41a7-bc3f-01544223120f",
+        "98d8071e-0208-4165-9972-a47da8e3849b",
+        "26c295e4-b4f3-4180-aef6-63a1d2e0617b",
+        "4865c362-42c6-48ea-a20e-7909dbb6e7ef",
+        "ba344374-dedb-444c-a4c4-0a054abfead1",
+        "9b42a5bf-a693-445d-a91a-b41c4cedad6b",
+        "9fe2646c-3902-4fe8-881c-cf6c4020dc9c",
+        "9aa1c2b7-b7e1-4f4b-90fa-bd8afacc0720",
+        "d8fb0419-2c09-45bb-8504-9be8cb48f0d7",
+        "e6966854-0edd-4790-a333-eaca77e4fb73",
+        "3979ed04-f967-40a5-8823-0bde70a83f41",
+        "1d4ec790-83c6-4ac7-8ff7-2bcbd624288c",
+        "85513fa4-bba0-433e-b35b-5f659329b8a7",
+        "18d8e5f7-7b73-4fc9-b1ad-34a960f12aa7",
+        "3274bf6a-49d7-4b1b-9201-c0737578586d",
+        "42f00bab-3b8e-447f-b411-2d2a142b45b3",
+        "7a7963f2-34f9-45fa-b30e-cfbdc3704d84",
+        "62cee0a9-73d3-4afd-84f7-c47931ac54cd",
+        "bbd77267-d8fc-4297-a1d5-cc353d33c31e",
+        "c00eb9ab-427b-49c2-807d-93f0f51d54c4",
+        "69d05f7e-429d-4b2b-aa94-db5d388f75a0",
+        "21e8fd42-41e7-49ae-8be7-be235480a7f6",
+        "657236df-1623-4d9b-966a-3ed1b47ba075",
+        "dfb3377b-92d6-44e8-ac41-3fc42994b940",
+        "68d5ef3e-2ad3-4bdc-93a6-0ae961913c7a",
+        "f97933d4-b84e-4f0a-8fd5-485aea73dd2c",
+        "7cd01231-11f7-4127-bf87-c0c5de54e3f2"
+      ],
+      "size": 45,
+      "createdAt": "2025-08-22T07:27:05.288Z",
+      "lastUpdated": "2025-08-22T07:45:41.399Z"
+    },
+    "French Family Noir": {
+      "id": "build-1755847625288-rmd7yeb",
+      "name": "French Family Noir",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "0fc85a96-41ac-4c40-b896-40df4bbc9c22",
+        "7be71184-0993-48b9-9db8-a6e8f6082128",
+        "10df8d6f-4e28-473c-a549-e7d12ada7330",
+        "3b3c9c9a-c375-4b5b-b9f3-3d68ee117232",
+        "8970d8b6-4334-4a37-aafd-c7738fc1d86c",
+        "1551aedc-8301-40fa-85c7-36c4e3f4ab55"
+      ],
+      "size": 6,
+      "createdAt": "2025-08-22T07:27:05.288Z",
+      "lastUpdated": "2025-08-22T07:46:11.338Z"
+    },
+    "Psychedelic Period Films": {
+      "id": "build-1755847625288-cvamoqe",
+      "name": "Psychedelic Period Films",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "03152c08-9d58-4758-834c-941d509c276c",
+        "1d4150c2-9cff-4bfa-b75d-7ee01dbe3da7",
+        "d2e9628d-4922-434b-a7df-106fef99f79c",
+        "db8519dc-9feb-4781-8c4b-62916fec6ebf",
+        "75197239-e656-4d10-ac3f-eacce6e7427c",
+        "355cb6e8-b500-4660-9139-eb795fc0b238"
+      ],
+      "size": 6,
+      "createdAt": "2025-08-22T07:27:05.288Z",
+      "lastUpdated": "2025-08-22T07:37:34.834Z"
+    },
+    "Asian Family Horror": {
+      "id": "build-1755847634787-y9id8e6",
+      "name": "Asian Family Horror",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "4e0c6060-825a-46cf-b019-78fc5ec9315b",
+        "889aae45-a435-419b-9b8b-7d851decbaff",
+        "65b9e9fd-d769-4ea8-b472-6003436d283a",
+        "26f66cdd-c1ba-4a24-bf54-425955a9acd0"
+      ],
+      "size": 4,
+      "createdAt": "2025-08-22T07:27:14.788Z",
+      "lastUpdated": "2025-08-22T07:29:44.206Z"
+    },
+    "Grief Obsession Studies": {
+      "id": "build-1755847643608-l0fwmaz",
+      "name": "Grief Obsession Studies",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "5cf4d2c1-f0dd-4683-a7f3-91af2b0e6255",
+        "b8cfb46f-2556-4d80-921e-01df1b6ded4e",
+        "a7f565c5-0d8e-43a5-9cda-1d976c3d0c22",
+        "d12075c3-36ec-4bd2-9dc5-28c6d306b0ce",
+        "b6226cab-c098-4451-b446-ade1070f5f91",
+        "54b6a96a-05e2-49b6-8f54-0489cbb78786",
+        "3125ba7b-a7f2-4e48-885b-689a892d8cf0",
+        "fba2a627-2f6f-4820-8cda-f3ea83184ac4",
+        "27198255-3bff-4dd2-b09e-3dff1e3fef78",
+        "dc79f724-0564-44c0-8b95-f205559c9561",
+        "43fcc571-8c46-4ecc-92f2-9105d74e8f4f",
+        "aed68e37-5919-4bb5-b64c-eb567c443ffb",
+        "728ec840-0170-4186-af9a-2934703470e6",
+        "5206d315-ec51-498b-a45d-0c70df4356d4",
+        "d7bf5681-a0a5-4a11-9241-eae00fcdf231",
+        "dd5ade94-6cb9-45b8-b7d8-059a76fb8dfb",
+        "59e3d88e-a57f-4422-8051-4e4c47b44694",
+        "8d8d66a0-837a-4a32-8313-660b154a9c5e",
+        "0f4285fe-d1dc-4dc9-9538-3c1551bcae8a",
+        "514ecbbb-e8a2-49e5-b6cd-375012369879",
+        "dc2c78fe-9015-4c90-81c3-39c18f349ae4",
+        "f37c75c6-b482-4815-961a-d4f2de56134c",
+        "7cd01231-11f7-4127-bf87-c0c5de54e3f2"
+      ],
+      "size": 23,
+      "createdAt": "2025-08-22T07:27:23.608Z",
+      "lastUpdated": "2025-08-22T07:45:41.399Z"
+    },
+    "Artistic Obsession Thrillers": {
+      "id": "build-1755847643609-se7eign",
+      "name": "Artistic Obsession Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "889aae45-a435-419b-9b8b-7d851decbaff",
+        "e67d0f96-cacb-4051-a185-86f9d12be61d",
+        "b1155481-3c82-48c8-b649-1fb9e50b7a4c",
+        "6b17b864-bd17-4228-ba1c-05dec95416be",
+        "356a731a-b5de-40a5-b0c6-5c3eb46de941",
+        "ffa94035-63f6-41b0-b730-a01cd8fa5e77",
+        "c0b4d3c8-2fca-4eb8-9bcb-a526cacc37d9",
+        "3ad2e1ab-91fd-42a6-a79a-483c6ea8def6",
+        "3dd767f5-78a0-4738-a571-c8fc3ac520c3",
+        "bf8dcc50-9284-43f6-841d-4a5af576e033"
+      ],
+      "size": 10,
+      "createdAt": "2025-08-22T07:27:23.609Z",
+      "lastUpdated": "2025-08-22T07:44:03.677Z"
+    },
+    "Revenge Obsession Thrillers": {
+      "id": "build-1755847643609-3f7kcq7",
+      "name": "Revenge Obsession Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "36315b0e-852c-4d01-9c5a-1c4b76c33dc1",
+        "65b9e9fd-d769-4ea8-b472-6003436d283a",
+        "cfe0c80b-311d-4ea6-aa53-af4099bbc217",
+        "0de4c51b-213f-4c3a-9d2f-e20537f292ff",
+        "3a32ee95-fb8c-4e82-8ae2-448e554528ab",
+        "6f543fee-0653-4823-8497-613a0f1af8d0",
+        "6799ae15-c8a2-4ca6-8921-b3bac3661e3d",
+        "e6686923-7e76-4a93-8529-5df19a2a0bdd",
+        "76284396-4ce9-418a-9009-abcd5cf7e4ea",
+        "e2f7cfbd-ac72-48f6-8e84-fc922341224e",
+        "9ed3be4d-58e5-4f21-99f0-a30bf826c953",
+        "05a26c97-3a4c-44bd-bf90-0097e54cd322",
+        "2d3fedf1-7fd3-4c9e-a29c-f21c7092b7b4",
+        "de199708-f83c-4ce5-9229-f64d3c8e083b",
+        "3d9d2c9a-61cd-48ef-aed4-c8fcca366219",
+        "6ac65753-6543-4b72-b0e5-4e9616f23ca5",
+        "2bacf44a-12af-42fb-ad73-80a417bd1ae3",
+        "210e5d90-7048-465f-80e1-d3e0dbfd8d45",
+        "e4e48257-ebbe-4eb2-82c8-d00f6543fd0c",
+        "ffdfd727-81db-404e-9850-2e8223ab0143",
+        "f983baf8-e023-4342-b804-def61c3df496",
+        "3dd767f5-78a0-4738-a571-c8fc3ac520c3",
+        "8970d8b6-4334-4a37-aafd-c7738fc1d86c"
+      ],
+      "size": 23,
+      "createdAt": "2025-08-22T07:27:23.609Z",
+      "lastUpdated": "2025-08-22T07:45:04.140Z"
+    },
+    "Corporate Culture Horror": {
+      "id": "build-1755847653233-41l62bg",
+      "name": "Corporate Culture Horror",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "63b44236-05c0-4c57-921f-c9e0c37e6f97",
+        "1f2a2207-ee7c-44a4-a5f7-398df6587619",
+        "ff94d9f3-4d77-41fa-a4dd-fbd4ec77d830",
+        "d80698cf-dc12-45bb-963c-88c6639291ea",
+        "b6baa95a-e1c6-4612-9103-b99e1305d853"
+      ],
+      "size": 5,
+      "createdAt": "2025-08-22T07:27:33.233Z",
+      "lastUpdated": "2025-08-22T07:43:12.305Z"
+    },
+    "Death Moment Time-Dilation": {
+      "id": "build-1755847653233-88akk7u",
+      "name": "Death Moment Time-Dilation",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "6670745f-71dd-4314-8a2c-9d4c1e63024f",
+        "5a6ef6e4-d76b-42af-afe0-6a52e3a08944",
+        "ac3bab19-835f-4a9b-8e87-61334b94186b",
+        "af2b39e3-4f96-4c94-98c1-603ea5117d5c",
+        "75197239-e656-4d10-ac3f-eacce6e7427c",
+        "a1166677-7639-4bb8-8bfe-ac918232c994"
+      ],
+      "size": 6,
+      "createdAt": "2025-08-22T07:27:33.233Z",
+      "lastUpdated": "2025-08-22T07:39:37.411Z"
+    },
+    "Occult Detective Noir": {
+      "id": "build-1755847653234-e8aha6z",
+      "name": "Occult Detective Noir",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "7acfe40d-5674-4839-9408-e7ec18e6fa97"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:27:33.234Z",
+      "lastUpdated": "2025-08-22T07:27:33.234Z"
+    },
+    "Religious Allegory Films": {
+      "id": "build-1755847662425-2sai9sp",
+      "name": "Religious Allegory Films",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "38985349-dccd-453c-ba82-70330fcf7286",
+        "d2e9628d-4922-434b-a7df-106fef99f79c",
+        "9fe5981b-8eb8-42f8-9a08-732ff07799d3",
+        "76284396-4ce9-418a-9009-abcd5cf7e4ea",
+        "dd95b2e9-a6c8-45af-ad11-0f36295e0539",
+        "bf23106c-5f90-4ad9-a554-cc9059b44f35",
+        "0cde0a5a-38b1-4714-b8c5-614abe1fb55d",
+        "2db88871-adc3-482f-b700-b48cbb86c060",
+        "210e5d90-7048-465f-80e1-d3e0dbfd8d45",
+        "82552d85-a208-4ad4-97d5-5768aedfafeb",
+        "35ff3877-f261-479b-b0d5-d178c98f2dab",
+        "5206d315-ec51-498b-a45d-0c70df4356d4",
+        "b70d52d9-36b9-4f55-8f9e-611be84a0124",
+        "18d8e5f7-7b73-4fc9-b1ad-34a960f12aa7",
+        "f82d7bf0-270d-4257-b1e3-d4c723f1feb8",
+        "a234c026-c40f-4324-a004-7c365dff20ec",
+        "c00eb9ab-427b-49c2-807d-93f0f51d54c4",
+        "bd1044b2-10f1-4a29-8d69-31e2e349853f"
+      ],
+      "size": 18,
+      "createdAt": "2025-08-22T07:27:42.425Z",
+      "lastUpdated": "2025-08-22T07:43:51.814Z"
+    },
+    "Killer POV Studies": {
+      "id": "build-1755847662426-75fll7w",
+      "name": "Killer POV Studies",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "f81dd64d-2365-424c-8863-bb53dc8e81bc",
+        "77864d46-8375-460e-8cd9-aa20e841de3b",
+        "b7038c25-a54a-403b-b8cf-71996134992f",
+        "24282bd8-838b-494c-9c20-5342f3a0a7c4",
+        "84f1a5f3-1617-4d1d-aaea-c0c6e48f1764",
+        "c1d9aee4-961f-44c9-9f26-8c2becec5b77",
+        "d58b3f07-49bb-43f0-ae99-3826f611ed1b",
+        "49ed3c4d-9f1e-4379-9bf2-d4c7b9465e0f",
+        "e2f7cfbd-ac72-48f6-8e84-fc922341224e",
+        "feba0b32-7f84-4b77-a2de-f67073857f1e",
+        "66030fc7-3804-4558-873b-a8ea96bebdab",
+        "dd95b2e9-a6c8-45af-ad11-0f36295e0539",
+        "cd83385b-d140-4ab8-9c27-8b3c98c56c21",
+        "356a731a-b5de-40a5-b0c6-5c3eb46de941",
+        "631abc7a-73d1-4990-8af9-81381383566d",
+        "b9ae31ca-1b60-42db-868c-0833059a6942",
+        "2d3fedf1-7fd3-4c9e-a29c-f21c7092b7b4",
+        "abc77c75-cd38-45b7-94f0-8f9cb8af2020",
+        "d47e12eb-f9aa-4c56-b8ef-f65d9594ddfe",
+        "59a15e0a-7523-495d-a5d4-b30c8e26bae7",
+        "aab29b45-7e36-4a23-90b8-b62f5acd74fa",
+        "091daaf8-ddc1-4f3f-aa57-97cde1b0f8d0",
+        "746dc4b7-b69a-43a3-a450-ed41fb021873",
+        "e857dd79-9de4-4345-bd00-b9a36a8a340c",
+        "e7f098bd-1571-4500-af48-1f44717dc3f1",
+        "0807d7d7-c622-4d0c-b257-7de1ded486ba",
+        "5b924dc7-dd1c-4354-a124-062c266128dd",
+        "aa01d90f-b481-44f6-b5fc-d0cc282037e5",
+        "b67fb10a-9277-4c61-8eac-6fe61d4ded5b",
+        "9eb4d04f-5e50-450b-a46f-dc574e416b17",
+        "c0b4d3c8-2fca-4eb8-9bcb-a526cacc37d9",
+        "18d8e5f7-7b73-4fc9-b1ad-34a960f12aa7",
+        "8983a40d-0d88-4927-aaf8-d3217a1ba698",
+        "68b3846c-4a86-48b1-b92d-c6c37196f890",
+        "078bc44f-1afb-4937-b059-eab3e808cceb",
+        "854cbbe8-fb8c-403c-a632-dc1ebc3d52b1",
+        "94c97568-40f3-43de-b05f-f8f3794e196c",
+        "fca7f83a-359e-448a-966a-cd44059a98db"
+      ],
+      "size": 38,
+      "createdAt": "2025-08-22T07:27:42.426Z",
+      "lastUpdated": "2025-08-22T07:45:15.331Z"
+    },
+    "Existential Crisis Studies": {
+      "id": "build-1755847662426-cin47kf",
+      "name": "Existential Crisis Studies",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "07184388-762d-4363-8694-78580257c456",
+        "d5f35cd4-427d-434a-a1b9-50fdb9ed6d67",
+        "211bfff2-51cd-4d3d-8700-cfedd77a1722",
+        "600298a7-97c7-43ef-ab33-02b08f15029d",
+        "bc53384c-c74e-4332-81e2-934ce8a8a538",
+        "a31ebe8f-3d81-4e02-948c-e5a280061998",
+        "ca54e982-8dd3-4138-955f-ba8c1b050233",
+        "d1947c8c-0900-4599-bf16-8f2046f1de98",
+        "5478960e-a515-4255-8a63-88bdc64d54eb",
+        "6f8b3452-1807-4e5f-9f68-b6eab37d6b8c",
+        "cd83385b-d140-4ab8-9c27-8b3c98c56c21",
+        "b44fd50d-c354-4d16-96dd-bb6de9ca75e7",
+        "af2b39e3-4f96-4c94-98c1-603ea5117d5c",
+        "9bb84cf4-2f04-4654-9ec8-bab391719837",
+        "5335e365-fb16-40cb-97af-bf9f9817a78a",
+        "93519a72-fb35-48fd-9257-7c42d1f3d7aa",
+        "2db88871-adc3-482f-b700-b48cbb86c060",
+        "c750e661-0b0c-46c5-8eca-c142d40de1f9",
+        "62626532-3203-4c56-adbd-aef635040daa",
+        "23e1c1a7-bbab-4b36-9ca9-d39240db56a3",
+        "d07403ad-21fe-41a7-bc3f-01544223120f",
+        "a6a3cf0e-6efe-4809-8e7e-443ba5d0ff61",
+        "e93128f5-ac8f-42ba-a577-8c93c235cbad",
+        "f00c336f-44e2-48d0-84e1-7683427a68f6",
+        "8983a40d-0d88-4927-aaf8-d3217a1ba698",
+        "16772ce2-f7bb-4804-a5ad-9211b4cc419a",
+        "bd1044b2-10f1-4a29-8d69-31e2e349853f",
+        "5e89f48f-779d-4c76-a876-393799bfbe8f",
+        "9dc4a5a1-8d70-45c8-8822-888f7194cccc",
+        "6339cff4-b9c7-4c45-9982-1d794e49da89"
+      ],
+      "size": 30,
+      "createdAt": "2025-08-22T07:27:42.426Z",
+      "lastUpdated": "2025-08-22T07:46:20.153Z"
+    },
+    "Nature Horror Philosophy": {
+      "id": "build-1755847662426-1vf0miv",
+      "name": "Nature Horror Philosophy",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "b8cfb46f-2556-4d80-921e-01df1b6ded4e"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:27:42.426Z",
+      "lastUpdated": "2025-08-22T07:27:42.426Z"
+    },
+    "Medical Procedure Thrillers": {
+      "id": "build-1755847671696-v3asd78",
+      "name": "Medical Procedure Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "2ad3a0c3-7630-4a5e-9619-16afaafe6f70",
+        "5d1fc742-1333-4d9f-bd11-6fa298cfcdc1",
+        "aeac39f4-fad7-48dc-b8f9-596954c9093d",
+        "d8fb0419-2c09-45bb-8504-9be8cb48f0d7",
+        "62cee0a9-73d3-4afd-84f7-c47931ac54cd"
+      ],
+      "size": 5,
+      "createdAt": "2025-08-22T07:27:51.696Z",
+      "lastUpdated": "2025-08-22T07:43:21.902Z"
+    },
+    "Corrupting Influence Thrillers": {
+      "id": "build-1755847671697-oar89vf",
+      "name": "Corrupting Influence Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "93737662-46c6-4cb1-8ae1-bc465c0791a8",
+        "d2e9628d-4922-434b-a7df-106fef99f79c",
+        "77864d46-8375-460e-8cd9-aa20e841de3b",
+        "c7138e0a-a342-4f90-acbf-abbea95b5430",
+        "9fe5981b-8eb8-42f8-9a08-732ff07799d3",
+        "fd756142-cbf2-4b7e-88dc-877ed61a370b",
+        "b7038c25-a54a-403b-b8cf-71996134992f",
+        "9ef18f14-86c2-47bc-bf99-a437aef95b92",
+        "1af7c37a-3c78-478d-adb3-77b9e0312e8c",
+        "cfe0c80b-311d-4ea6-aa53-af4099bbc217",
+        "0de4c51b-213f-4c3a-9d2f-e20537f292ff",
+        "3a32ee95-fb8c-4e82-8ae2-448e554528ab",
+        "6e8c05b9-2c86-481f-8253-d3c5f6e7f683",
+        "24282bd8-838b-494c-9c20-5342f3a0a7c4",
+        "84f1a5f3-1617-4d1d-aaea-c0c6e48f1764",
+        "1097ac84-6d18-4816-880f-144d5938e0bc",
+        "806d5de5-02b4-4887-92fe-279bd0e817d6",
+        "d58b3f07-49bb-43f0-ae99-3826f611ed1b",
+        "6f72bd0f-f1c5-46a0-8cf8-f71c0e53fc78",
+        "49ed3c4d-9f1e-4379-9bf2-d4c7b9465e0f",
+        "f92209a9-7b6f-4b1f-8ded-135575630c1a",
+        "b0d5ea49-4ceb-4896-8d9f-a511174696fa",
+        "65f5b833-5426-41d9-8e09-e54fa85ae647",
+        "5fe99084-5419-4ee0-9e60-10ceb454823f",
+        "f7dc7d1d-d42b-4eaa-a7a0-6e36599f79b7",
+        "5d1fc742-1333-4d9f-bd11-6fa298cfcdc1",
+        "3226ed75-b174-41b5-9d07-ccbd5cd41b91",
+        "dee0ee19-5521-47ad-927e-8a9ee3349613",
+        "3736ebc1-76d0-440f-9f33-bf1caac30203",
+        "66030fc7-3804-4558-873b-a8ea96bebdab",
+        "a8a6fa97-bc16-40f4-98e8-cff567bfea5a",
+        "06b96a30-0351-442d-be22-2fb2a62e8b86",
+        "554caf13-ca3b-4f3d-8614-9dc70175b0a0",
+        "3947233a-0170-4111-a675-f57e9f0381af",
+        "d48a8774-3dcb-4872-8a50-4d3ec2b8cecb",
+        "637d24e6-b867-4cf3-b496-8c4ea206f411",
+        "eedbfdeb-5535-4eb1-a1b5-91e577ad1166",
+        "631abc7a-73d1-4990-8af9-81381383566d",
+        "f0b5596a-951c-4201-88cc-805bd1204b03",
+        "2d3fedf1-7fd3-4c9e-a29c-f21c7092b7b4",
+        "de199708-f83c-4ce5-9229-f64d3c8e083b",
+        "b1160a5e-b329-4844-82b8-c52cee8988d4",
+        "f73b28a2-d164-4ef5-9084-ba0113cd0685",
+        "10df8d6f-4e28-473c-a549-e7d12ada7330",
+        "3b3c9c9a-c375-4b5b-b9f3-3d68ee117232",
+        "ab106a73-b15e-4617-8803-fa3533f77029",
+        "3d9d2c9a-61cd-48ef-aed4-c8fcca366219",
+        "2f1be50c-6292-449a-af67-c1e7c1891209",
+        "746dc4b7-b69a-43a3-a450-ed41fb021873",
+        "17006ecc-9499-4ba9-b81f-281197884775",
+        "ac55d546-a49a-4e5e-911f-04c7e7a6c0b5",
+        "ba6347cf-c8f1-416a-9e57-efb711b5ece7",
+        "e4e48257-ebbe-4eb2-82c8-d00f6543fd0c",
+        "feda0880-49bc-4ea3-b73b-723bb0fb812a",
+        "979a70ad-1295-42d7-9c52-aafdcf271fc5",
+        "783e26e7-7cbc-4293-b661-1fc8da9289f6",
+        "5b924dc7-dd1c-4354-a124-062c266128dd",
+        "26c295e4-b4f3-4180-aef6-63a1d2e0617b",
+        "394f1c64-8924-4174-9084-4d2414ce89f0",
+        "3f7ecde6-20cd-44f8-a1d5-87a6984ef759",
+        "f4a9fc05-8916-4dde-8760-cc303186a355",
+        "d42a31b2-abed-44bb-9ac3-117a5e981e81",
+        "e399891e-248d-41eb-aca7-a5c172162a22",
+        "4d8764ab-33af-4b18-9bac-f3651647d176",
+        "3274bf6a-49d7-4b1b-9201-c0737578586d",
+        "22d59af3-b5cc-4413-9187-acfb17ea5efd",
+        "53022ea4-f856-48e1-a44b-3e04e2b8b028",
+        "7f5c5d63-6ab2-47df-ab21-c221ba054b57",
+        "76b4d4a4-bd97-4fe3-8a95-628a39bb6272",
+        "a371ae79-a601-442b-a0ce-4f1e604f9f72",
+        "1551aedc-8301-40fa-85c7-36c4e3f4ab55"
+      ],
+      "size": 71,
+      "createdAt": "2025-08-22T07:27:51.697Z",
+      "lastUpdated": "2025-08-22T07:46:11.338Z"
+    },
+    "Toxic Relationship Studies": {
+      "id": "build-1755847671697-ape5dzb",
+      "name": "Toxic Relationship Studies",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "f833266d-af7c-402a-9491-de1d561ffbb6",
+        "c7138e0a-a342-4f90-acbf-abbea95b5430",
+        "e3960053-0ace-47e5-8cef-b7f912c7dc10",
+        "6e8c05b9-2c86-481f-8253-d3c5f6e7f683",
+        "5fab7060-ed6d-4782-b489-be8e5d302c4d",
+        "f92209a9-7b6f-4b1f-8ded-135575630c1a",
+        "3226ed75-b174-41b5-9d07-ccbd5cd41b91",
+        "0e4b125e-b9aa-46dc-91dd-298276591d0d",
+        "9ed3be4d-58e5-4f21-99f0-a30bf826c953",
+        "a8a6fa97-bc16-40f4-98e8-cff567bfea5a",
+        "06b96a30-0351-442d-be22-2fb2a62e8b86",
+        "554caf13-ca3b-4f3d-8614-9dc70175b0a0",
+        "637d24e6-b867-4cf3-b496-8c4ea206f411",
+        "eedbfdeb-5535-4eb1-a1b5-91e577ad1166",
+        "ab618bcf-ffb6-4d64-9f10-44278deb93b0",
+        "9b156c46-a22f-4503-a681-d15c5f3bc142",
+        "7407c60a-a000-41aa-baad-6093757e4aa7",
+        "3b3c9c9a-c375-4b5b-b9f3-3d68ee117232",
+        "d5a64320-4631-490f-9c85-9e5a82a7777f",
+        "2bacf44a-12af-42fb-ad73-80a417bd1ae3",
+        "210e5d90-7048-465f-80e1-d3e0dbfd8d45",
+        "b828fe00-1c80-4dcc-8143-8e734718c8e2",
+        "74845f78-9886-4382-ae1e-50c7a25510da",
+        "3472efec-6000-4ed7-8f84-ec2b280993ff",
+        "f501dbee-e9a1-4703-bed6-d5f510213faf",
+        "783e26e7-7cbc-4293-b661-1fc8da9289f6",
+        "ed8a41bd-04d0-43ff-9054-196fc00a21c1",
+        "c6042622-eccb-4301-bb29-32fd5ec57b3e",
+        "13754d26-e1d6-4ae9-b1bb-650584a78e57",
+        "aed68e37-5919-4bb5-b64c-eb567c443ffb",
+        "059f8bc3-0d24-4ccd-9d8f-fa23b0db9134",
+        "6014c8ae-7881-4e92-8b9b-f685be8176fd",
+        "fe592524-48f3-4d3a-a91a-27ab1b7a3ca3",
+        "3979ed04-f967-40a5-8823-0bde70a83f41",
+        "4d8764ab-33af-4b18-9bac-f3651647d176",
+        "c53dd9a6-cb04-42a5-8ff4-ca7ac39e8f5e",
+        "22d59af3-b5cc-4413-9187-acfb17ea5efd",
+        "df4b999f-bb8e-470e-9a7e-a034b418c693",
+        "68b3846c-4a86-48b1-b92d-c6c37196f890",
+        "dfeb020b-6af7-40f1-aa6a-89931b0743de",
+        "16772ce2-f7bb-4804-a5ad-9211b4cc419a",
+        "b2649896-a150-4a81-8fcb-a4cea9170270",
+        "3c44d90b-60dd-4bf4-bc73-2198ab0c54c1",
+        "fc4fae6f-a20d-4d22-b2f2-54ea6cbefda7"
+      ],
+      "size": 44,
+      "createdAt": "2025-08-22T07:27:51.697Z",
+      "lastUpdated": "2025-08-22T07:46:01.525Z"
+    },
+    "Writers Block Nightmares": {
+      "id": "build-1755847671697-n234ew9",
+      "name": "Writers Block Nightmares",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "e67d0f96-cacb-4051-a185-86f9d12be61d",
+        "9602c017-8055-4cca-aa51-705c92c7c06c",
+        "8bebdbef-859b-41e2-a8cc-2ebdcfc6cd61"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T07:27:51.697Z",
+      "lastUpdated": "2025-08-22T07:41:28.513Z"
+    },
+    "Rural Isolation Horror": {
+      "id": "build-1755847681397-rxocepl",
+      "name": "Rural Isolation Horror",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "65b9e9fd-d769-4ea8-b472-6003436d283a",
+        "ffa94035-63f6-41b0-b730-a01cd8fa5e77",
+        "b20910a7-6d3f-4de5-8ea1-02f163a3750b",
+        "3c1e8850-892b-434c-ada1-fe5f512b0890",
+        "f9d88c13-3d81-47b1-a36b-f3b67c6baf40",
+        "9861fdb6-f46b-42bf-8500-d3eb350149f2",
+        "aed68e37-5919-4bb5-b64c-eb567c443ffb",
+        "f7240969-ec99-4b47-aa4d-d72d4410a82a",
+        "a6e86f2a-2a9d-4576-9ad2-782014bbc010",
+        "b70d52d9-36b9-4f55-8f9e-611be84a0124",
+        "9f5294d4-ce29-4836-89f7-5b8888318ea6",
+        "339f1b23-a788-46d4-b078-92e0a3c282e0",
+        "16772ce2-f7bb-4804-a5ad-9211b4cc419a",
+        "bcd731fb-2b17-4808-a0b6-a406651ab17f",
+        "281dbbf3-ade4-45ad-9b25-4d5dc6ea3876",
+        "5e89f48f-779d-4c76-a876-393799bfbe8f",
+        "a371ae79-a601-442b-a0ce-4f1e604f9f72"
+      ],
+      "size": 17,
+      "createdAt": "2025-08-22T07:28:01.397Z",
+      "lastUpdated": "2025-08-22T07:45:51.158Z"
+    },
+    "Feminist Revenge Fantasy": {
+      "id": "build-1755847681397-m1f3qy5",
+      "name": "Feminist Revenge Fantasy",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "d2e9628d-4922-434b-a7df-106fef99f79c"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:28:01.397Z",
+      "lastUpdated": "2025-08-22T07:28:01.397Z"
+    },
+    "Sexual Repression Studies": {
+      "id": "build-1755847681397-68phydr",
+      "name": "Sexual Repression Studies",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "db8519dc-9feb-4781-8c4b-62916fec6ebf",
+        "9fe5981b-8eb8-42f8-9a08-732ff07799d3",
+        "fd756142-cbf2-4b7e-88dc-877ed61a370b",
+        "1097ac84-6d18-4816-880f-144d5938e0bc",
+        "a7f565c5-0d8e-43a5-9cda-1d976c3d0c22",
+        "ed4db786-42d0-4a5e-936e-2bcf84bee14e",
+        "d6b16ee4-e8a9-4618-9120-e3294be0f878",
+        "394f1c64-8924-4174-9084-4d2414ce89f0",
+        "e6966854-0edd-4790-a333-eaca77e4fb73",
+        "4f1cf4d6-e7f0-44af-bc4a-1e9d2b9dd291",
+        "9eb4d04f-5e50-450b-a46f-dc574e416b17",
+        "f82d7bf0-270d-4257-b1e3-d4c723f1feb8",
+        "eef90226-63c7-4b97-a2c4-a80c63e71023",
+        "b72c27af-a46f-4bda-9ea2-58dc8d31433f",
+        "df4b999f-bb8e-470e-9a7e-a034b418c693",
+        "b2649896-a150-4a81-8fcb-a4cea9170270",
+        "e263c7e0-9d3a-4099-81ac-aef709642809"
+      ],
+      "size": 17,
+      "createdAt": "2025-08-22T07:28:01.397Z",
+      "lastUpdated": "2025-08-22T07:45:04.141Z"
+    },
+    "Media Violence Commentary": {
+      "id": "build-1755847681397-7i5bl4u",
+      "name": "Media Violence Commentary",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "77864d46-8375-460e-8cd9-aa20e841de3b",
+        "450af5ad-1832-4542-8aed-e7594ea2af09",
+        "418f7521-8bbe-4b58-9f8a-121a4b518746",
+        "1cce7234-804a-4ed2-ad75-5820343629f0",
+        "ab618bcf-ffb6-4d64-9f10-44278deb93b0",
+        "b9ae31ca-1b60-42db-868c-0833059a6942",
+        "e857dd79-9de4-4345-bd00-b9a36a8a340c"
+      ],
+      "size": 7,
+      "createdAt": "2025-08-22T07:28:01.397Z",
+      "lastUpdated": "2025-08-22T07:37:25.518Z"
+    },
+    "Meta Horror Films": {
+      "id": "build-1755847700441-b0znp8k",
+      "name": "Meta Horror Films",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "08d41ce9-a39e-4bb8-ae1e-030d7e0f619e",
+        "418f7521-8bbe-4b58-9f8a-121a4b518746",
+        "1cce7234-804a-4ed2-ad75-5820343629f0",
+        "b585daac-a50e-49e5-a730-491cfed85aea"
+      ],
+      "size": 4,
+      "createdAt": "2025-08-22T07:28:20.441Z",
+      "lastUpdated": "2025-08-22T07:33:24.756Z"
+    },
+    "Meta-Filmmaking Psychology": {
+      "id": "build-1755847700441-rrl93tj",
+      "name": "Meta-Filmmaking Psychology",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "b1155481-3c82-48c8-b649-1fb9e50b7a4c",
+        "450af5ad-1832-4542-8aed-e7594ea2af09",
+        "aa4e3bed-a6f4-4ef6-9fe1-ff1948f14dc3",
+        "e857dd79-9de4-4345-bd00-b9a36a8a340c",
+        "e93128f5-ac8f-42ba-a577-8c93c235cbad",
+        "ffdb21e2-6354-44ae-85ce-378df0ffcdbf"
+      ],
+      "size": 6,
+      "createdAt": "2025-08-22T07:28:20.441Z",
+      "lastUpdated": "2025-08-22T07:45:41.397Z"
+    },
+    "Small Town Noir": {
+      "id": "build-1755847711221-jrid3dd",
+      "name": "Small Town Noir",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "fd756142-cbf2-4b7e-88dc-877ed61a370b",
+        "0de4c51b-213f-4c3a-9d2f-e20537f292ff",
+        "cafc26b5-cbb0-4404-8b1d-cd55c23d55cf",
+        "ae97cf5e-177c-4558-8fab-8bbc927dd967",
+        "5b924dc7-dd1c-4354-a124-062c266128dd",
+        "8d144b36-76c0-4124-a68a-bb93dcf40060",
+        "2ce5d7d0-e690-45aa-bf81-991e4e7e6976"
+      ],
+      "size": 7,
+      "createdAt": "2025-08-22T07:28:31.221Z",
+      "lastUpdated": "2025-08-22T07:45:15.331Z"
+    },
+    "Voyeuristic Obsession Thrillers": {
+      "id": "build-1755847711221-mt4f3vd",
+      "name": "Voyeuristic Obsession Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "b7038c25-a54a-403b-b8cf-71996134992f",
+        "1af7c37a-3c78-478d-adb3-77b9e0312e8c",
+        "feba0b32-7f84-4b77-a2de-f67073857f1e",
+        "80bb71d0-36d0-46aa-b83f-933056ac25da",
+        "ae97cf5e-177c-4558-8fab-8bbc927dd967",
+        "1fac7e79-37e8-455b-8961-d6c10cf3ab96",
+        "2ba0a6d1-b02b-438a-92bf-3d3ce0786115",
+        "e857dd79-9de4-4345-bd00-b9a36a8a340c",
+        "4f4082a0-ecb9-44ad-98a9-e0cb19bf1b80",
+        "220b4cb7-c76a-44c2-83a8-2d3efc28b756",
+        "566cccc7-db74-4dd4-a8c0-d0518435d8bb",
+        "7c56bf9b-fa61-435a-8735-49acba992a94",
+        "aedcf9d1-1aa8-4dbf-9af8-f56b2c5373e8",
+        "a134a30a-3bfb-4954-8ec8-1d511028f7a8",
+        "05b1b1ba-dac3-42d3-ad11-1bcf14d00257",
+        "c53dd9a6-cb04-42a5-8ff4-ca7ac39e8f5e",
+        "3f58fb92-1238-4217-a484-4d848bd46cc4",
+        "c9915c97-8316-4a2a-9641-2cdfff3c4092",
+        "3f15bb49-4b81-4cf3-9d0a-53edfbbf3912",
+        "baf096fb-a129-427c-8480-f2364861ef27"
+      ],
+      "size": 20,
+      "createdAt": "2025-08-22T07:28:31.221Z",
+      "lastUpdated": "2025-08-22T07:46:11.340Z"
+    },
+    "Obsessive Love Thrillers": {
+      "id": "build-1755847721896-qj9ymrc",
+      "name": "Obsessive Love Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "e3960053-0ace-47e5-8cef-b7f912c7dc10",
+        "9ef18f14-86c2-47bc-bf99-a437aef95b92",
+        "24282bd8-838b-494c-9c20-5342f3a0a7c4",
+        "edb4b054-567b-411a-b2cd-85b4e134bf81",
+        "f92209a9-7b6f-4b1f-8ded-135575630c1a",
+        "0e4b125e-b9aa-46dc-91dd-298276591d0d",
+        "54b6a96a-05e2-49b6-8f54-0489cbb78786",
+        "06b96a30-0351-442d-be22-2fb2a62e8b86",
+        "554caf13-ca3b-4f3d-8614-9dc70175b0a0",
+        "d48a8774-3dcb-4872-8a50-4d3ec2b8cecb",
+        "7407c60a-a000-41aa-baad-6093757e4aa7",
+        "f6402fe8-95ae-4064-b300-2793a71e58e5",
+        "6f73f3ee-c2f0-459b-b19b-8ab5f73ef70e",
+        "0cee5b30-110b-4a35-b697-23a2a4a023a7",
+        "43fcc571-8c46-4ecc-92f2-9105d74e8f4f",
+        "3472efec-6000-4ed7-8f84-ec2b280993ff",
+        "136836c0-e850-407c-a2cf-6a7fde54520f",
+        "c6042622-eccb-4301-bb29-32fd5ec57b3e",
+        "3f7ecde6-20cd-44f8-a1d5-87a6984ef759",
+        "fe592524-48f3-4d3a-a91a-27ab1b7a3ca3",
+        "4f1cf4d6-e7f0-44af-bc4a-1e9d2b9dd291",
+        "055cf0ab-10a2-421a-8cfd-de043b4abea5",
+        "8a8ecf54-5c74-4b14-b7be-b501354b804a",
+        "7c56bf9b-fa61-435a-8735-49acba992a94",
+        "aedcf9d1-1aa8-4dbf-9af8-f56b2c5373e8",
+        "f82d7bf0-270d-4257-b1e3-d4c723f1feb8",
+        "dfeb020b-6af7-40f1-aa6a-89931b0743de",
+        "3e8ae456-ec8b-4e46-ade2-40348a1afbd5",
+        "f434b789-c64f-4f3b-89de-24ee1e3ff17b",
+        "f1922fb0-ed27-4612-a6cf-f4d5aebe86a1",
+        "94c97568-40f3-43de-b05f-f8f3794e196c",
+        "dc5625ff-43f3-4d40-980c-ae4f782c6e9f",
+        "67a8e33b-a696-4f33-aa2a-23c98c03c357",
+        "fc4fae6f-a20d-4d22-b2f2-54ea6cbefda7",
+        "3f15bb49-4b81-4cf3-9d0a-53edfbbf3912",
+        "baf096fb-a129-427c-8480-f2364861ef27"
+      ],
+      "size": 36,
+      "createdAt": "2025-08-22T07:28:41.896Z",
+      "lastUpdated": "2025-08-22T07:46:11.340Z"
+    },
+    "Body Modification Horror": {
+      "id": "build-1755847721896-ogyrb8h",
+      "name": "Body Modification Horror",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "e3960053-0ace-47e5-8cef-b7f912c7dc10",
+        "22cbfa59-4bac-4525-a3fc-16f5735044b2",
+        "1d4ec790-83c6-4ac7-8ff7-2bcbd624288c"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T07:28:41.896Z",
+      "lastUpdated": "2025-08-22T07:40:58.039Z"
+    },
+    "Reality Game Thrillers": {
+      "id": "build-1755847721896-c238z6w",
+      "name": "Reality Game Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "d28761ac-48ea-4081-b589-a437afc61676",
+        "46a4768c-15b1-48a3-8004-83171595942d"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T07:28:41.896Z",
+      "lastUpdated": "2025-08-22T07:31:18.825Z"
+    },
+    "Urban Night Shift Horror": {
+      "id": "build-1755847721897-ojri37v",
+      "name": "Urban Night Shift Horror",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "d5f35cd4-427d-434a-a1b9-50fdb9ed6d67"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:28:41.897Z",
+      "lastUpdated": "2025-08-22T07:28:41.897Z"
+    },
+    "Shared Delusion Thrillers": {
+      "id": "build-1755847721897-3yea4j1",
+      "name": "Shared Delusion Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "25326a17-5e81-432c-ab5b-c2672997835b",
+        "1c165d50-a20b-4744-8993-cde3f30bef64",
+        "b585daac-a50e-49e5-a730-491cfed85aea",
+        "a6a3cf0e-6efe-4809-8e7e-443ba5d0ff61",
+        "8ebcfe8b-e9c2-40db-b364-3732d7e90bbe"
+      ],
+      "size": 5,
+      "createdAt": "2025-08-22T07:28:41.897Z",
+      "lastUpdated": "2025-08-22T07:45:04.140Z"
+    },
+    "Missing Person Paranoia": {
+      "id": "build-1755847732204-zjo4u5r",
+      "name": "Missing Person Paranoia",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "1c165d50-a20b-4744-8993-cde3f30bef64",
+        "d7bf5681-a0a5-4a11-9241-eae00fcdf231",
+        "86ea1573-b6fb-4743-a6af-eccb3ee27374",
+        "f1922fb0-ed27-4612-a6cf-f4d5aebe86a1",
+        "94c97568-40f3-43de-b05f-f8f3794e196c"
+      ],
+      "size": 5,
+      "createdAt": "2025-08-22T07:28:52.204Z",
+      "lastUpdated": "2025-08-22T07:44:44.386Z"
+    },
+    "Class Divide Mysteries": {
+      "id": "build-1755847732205-qbwfvmp",
+      "name": "Class Divide Mysteries",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "9ef18f14-86c2-47bc-bf99-a437aef95b92",
+        "9b156c46-a22f-4503-a681-d15c5f3bc142",
+        "10df8d6f-4e28-473c-a549-e7d12ada7330",
+        "a10494b2-d0d9-4d0c-b96a-a448639ca8d7",
+        "53022ea4-f856-48e1-a44b-3e04e2b8b028"
+      ],
+      "size": 5,
+      "createdAt": "2025-08-22T07:28:52.205Z",
+      "lastUpdated": "2025-08-22T07:44:03.676Z"
+    },
+    "Colonial Guilt Thrillers": {
+      "id": "build-1755847732205-xo0yzht",
+      "name": "Colonial Guilt Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "1af7c37a-3c78-478d-adb3-77b9e0312e8c",
+        "220b4cb7-c76a-44c2-83a8-2d3efc28b756"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T07:28:52.205Z",
+      "lastUpdated": "2025-08-22T07:41:08.720Z"
+    },
+    "Digital Identity Horror": {
+      "id": "build-1755847732205-wdtk1wh",
+      "name": "Digital Identity Horror",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "f9662d14-dde7-49fc-a87d-40082ca8ad5f"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:28:52.205Z",
+      "lastUpdated": "2025-08-22T07:28:52.205Z"
+    },
+    "Liminal Existence Horror": {
+      "id": "build-1755847742835-sqjy8k8",
+      "name": "Liminal Existence Horror",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "5a6ef6e4-d76b-42af-afe0-6a52e3a08944"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:29:02.835Z",
+      "lastUpdated": "2025-08-22T07:29:02.835Z"
+    },
+    "Video Nasty Era": {
+      "id": "build-1755847742836-sf19h35",
+      "name": "Video Nasty Era",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "450af5ad-1832-4542-8aed-e7594ea2af09"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:29:02.836Z",
+      "lastUpdated": "2025-08-22T07:29:02.836Z"
+    },
+    "Truth Game Thrillers": {
+      "id": "build-1755847753690-dw8qorw",
+      "name": "Truth Game Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "6e8c05b9-2c86-481f-8253-d3c5f6e7f683",
+        "e6686923-7e76-4a93-8529-5df19a2a0bdd",
+        "e9e8be28-cb62-4db5-bfd8-c2cfe3057c96"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T07:29:13.690Z",
+      "lastUpdated": "2025-08-22T07:31:29.098Z"
+    },
+    "Holiday Season Horror": {
+      "id": "build-1755847753690-c57h5ls",
+      "name": "Holiday Season Horror",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "24282bd8-838b-494c-9c20-5342f3a0a7c4"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:29:13.690Z",
+      "lastUpdated": "2025-08-22T07:29:13.690Z"
+    },
+    "Social Experiment Horror": {
+      "id": "build-1755847753690-7a8y53t",
+      "name": "Social Experiment Horror",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "0c0df86e-00dc-480e-969e-9a6ef784125f",
+        "f7dc7d1d-d42b-4eaa-a7a0-6e36599f79b7",
+        "46a4768c-15b1-48a3-8004-83171595942d",
+        "e9e8be28-cb62-4db5-bfd8-c2cfe3057c96",
+        "d42a31b2-abed-44bb-9ac3-117a5e981e81",
+        "b63ea3eb-5b1d-48f1-ba4e-6f44a0a7d4e8",
+        "a4c23213-382c-46cb-9170-43a4b3de83ed",
+        "b6baa95a-e1c6-4612-9103-b99e1305d853"
+      ],
+      "size": 8,
+      "createdAt": "2025-08-22T07:29:13.690Z",
+      "lastUpdated": "2025-08-22T07:43:12.305Z"
+    },
+    "Mental Illness POV": {
+      "id": "build-1755847763038-vvz9hnm",
+      "name": "Mental Illness POV",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "7797b621-dd5e-4e75-b149-b4f712a4349a",
+        "a77f2abe-9c6b-4b7c-9de6-52febe14bfb6",
+        "600298a7-97c7-43ef-ab33-02b08f15029d",
+        "a6e4bdf9-f2ce-4cf5-a7c7-c1ad12fe7e28",
+        "bc53384c-c74e-4332-81e2-934ce8a8a538",
+        "b6226cab-c098-4451-b446-ade1070f5f91",
+        "0e4b125e-b9aa-46dc-91dd-298276591d0d",
+        "ca54e982-8dd3-4138-955f-ba8c1b050233",
+        "d1947c8c-0900-4599-bf16-8f2046f1de98",
+        "5478960e-a515-4255-8a63-88bdc64d54eb",
+        "3947233a-0170-4111-a675-f57e9f0381af",
+        "cd83385b-d140-4ab8-9c27-8b3c98c56c21",
+        "80bb71d0-36d0-46aa-b83f-933056ac25da",
+        "eedbfdeb-5535-4eb1-a1b5-91e577ad1166",
+        "356a731a-b5de-40a5-b0c6-5c3eb46de941",
+        "b23d3ac3-0058-4ddb-876f-466f0978b328",
+        "ffa94035-63f6-41b0-b730-a01cd8fa5e77",
+        "abc77c75-cd38-45b7-94f0-8f9cb8af2020",
+        "a484ffd5-f6f8-4edb-96df-b5d6b540e19b",
+        "b20910a7-6d3f-4de5-8ea1-02f163a3750b",
+        "e92b0877-5b53-44b1-bb37-03366e3ff17d",
+        "89021201-9839-4384-b5f7-03fb3c2f20c9",
+        "b1160a5e-b329-4844-82b8-c52cee8988d4",
+        "a9294f57-b709-421f-b74f-bb2acff3bc3a",
+        "fba2a627-2f6f-4820-8cda-f3ea83184ac4",
+        "7407c60a-a000-41aa-baad-6093757e4aa7",
+        "a9c9f8f1-107e-446b-9ba0-3c22b237fd92",
+        "f9d88c13-3d81-47b1-a36b-f3b67c6baf40",
+        "aab29b45-7e36-4a23-90b8-b62f5acd74fa",
+        "ed4db786-42d0-4a5e-936e-2bcf84bee14e",
+        "5335e365-fb16-40cb-97af-bf9f9817a78a",
+        "9ed5a061-b271-426f-90b9-ee4481628b29",
+        "58a20eed-3fa3-408f-9078-75f8c32069d0",
+        "2ba0a6d1-b02b-438a-92bf-3d3ce0786115",
+        "b4156f09-0fdc-4012-bbfc-d46e9ffb7e80",
+        "c750e661-0b0c-46c5-8eca-c142d40de1f9",
+        "0751667b-89e1-428b-a4bb-46e8bd3ab65d",
+        "74845f78-9886-4382-ae1e-50c7a25510da",
+        "136836c0-e850-407c-a2cf-6a7fde54520f",
+        "a040d16c-9124-42fb-9913-5694400f8358",
+        "5e578a7c-f3b5-4684-b26c-d67e25230cae",
+        "e7f098bd-1571-4500-af48-1f44717dc3f1",
+        "e7b36b8e-7909-46b8-a513-8e873d84f66a",
+        "0807d7d7-c622-4d0c-b257-7de1ded486ba",
+        "6c5b83cb-33e5-484a-8ea7-30711c36927a",
+        "d6b16ee4-e8a9-4618-9120-e3294be0f878",
+        "959b3941-031f-40e8-9730-84f72056bbb3",
+        "35ff3877-f261-479b-b0d5-d178c98f2dab",
+        "f501dbee-e9a1-4703-bed6-d5f510213faf",
+        "ed8a41bd-04d0-43ff-9054-196fc00a21c1",
+        "9861fdb6-f46b-42bf-8500-d3eb350149f2",
+        "4865c362-42c6-48ea-a20e-7909dbb6e7ef",
+        "9b42a5bf-a693-445d-a91a-b41c4cedad6b",
+        "9fe2646c-3902-4fe8-881c-cf6c4020dc9c",
+        "724a9a81-96d0-49ee-81aa-2a893b810c76",
+        "c8d9d4f5-263e-4304-875f-248c93083173",
+        "9aa1c2b7-b7e1-4f4b-90fa-bd8afacc0720",
+        "57e72801-63c4-4534-91dd-7dd670f2551b",
+        "74e3f80d-5140-4b6a-87d5-6f279e9c2a13",
+        "728ec840-0170-4186-af9a-2934703470e6",
+        "1d4ec790-83c6-4ac7-8ff7-2bcbd624288c",
+        "05b1b1ba-dac3-42d3-ad11-1bcf14d00257",
+        "3ad2e1ab-91fd-42a6-a79a-483c6ea8def6",
+        "f2ddf071-d1e2-4f77-871a-633f0fe011f1",
+        "a10494b2-d0d9-4d0c-b96a-a448639ca8d7",
+        "42f00bab-3b8e-447f-b411-2d2a142b45b3",
+        "68b3846c-4a86-48b1-b92d-c6c37196f890",
+        "7a7963f2-34f9-45fa-b30e-cfbdc3704d84",
+        "a9a89c7d-0e93-44c3-b0b3-9d0eb8fde1ae",
+        "c00eb9ab-427b-49c2-807d-93f0f51d54c4",
+        "7aa9b37d-b5bc-436a-8c0d-d2c3a08ba12f",
+        "3e8ae456-ec8b-4e46-ade2-40348a1afbd5",
+        "bf8dcc50-9284-43f6-841d-4a5af576e033",
+        "281dbbf3-ade4-45ad-9b25-4d5dc6ea3876",
+        "21e8fd42-41e7-49ae-8be7-be235480a7f6",
+        "657236df-1623-4d9b-966a-3ed1b47ba075",
+        "514ecbbb-e8a2-49e5-b6cd-375012369879",
+        "dfb3377b-92d6-44e8-ac41-3fc42994b940",
+        "d8130ff4-1f93-4767-a8c4-636e9706b101",
+        "c9915c97-8316-4a2a-9641-2cdfff3c4092",
+        "68d5ef3e-2ad3-4bdc-93a6-0ae961913c7a",
+        "8ebcfe8b-e9c2-40db-b364-3732d7e90bbe",
+        "e263c7e0-9d3a-4099-81ac-aef709642809",
+        "dc2c78fe-9015-4c90-81c3-39c18f349ae4",
+        "f37c75c6-b482-4815-961a-d4f2de56134c",
+        "4980ad6f-361b-4473-98d2-fdb7ddfdee1a",
+        "345cb235-8e75-45bf-9be7-80cc571c2d1b",
+        "a42e773b-ffd7-4cb3-946f-889f059d1f5f",
+        "6339cff4-b9c7-4c45-9982-1d794e49da89"
+      ],
+      "size": 89,
+      "createdAt": "2025-08-22T07:29:23.038Z",
+      "lastUpdated": "2025-08-22T07:46:20.153Z"
+    },
+    "Food Obsession Thrillers": {
+      "id": "build-1755847763039-f7aews5",
+      "name": "Food Obsession Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "edb4b054-567b-411a-b2cd-85b4e134bf81"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:29:23.039Z",
+      "lastUpdated": "2025-08-22T07:29:23.039Z"
+    },
+    "Serial Killer Methodology": {
+      "id": "build-1755847774268-wcthq3a",
+      "name": "Serial Killer Methodology",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "c1d9aee4-961f-44c9-9f26-8c2becec5b77"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:29:34.268Z",
+      "lastUpdated": "2025-08-22T07:29:34.268Z"
+    },
+    "Capitalist Decay Thrillers": {
+      "id": "build-1755847774269-u5afmot",
+      "name": "Capitalist Decay Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "211bfff2-51cd-4d3d-8700-cfedd77a1722"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:29:34.269Z",
+      "lastUpdated": "2025-08-22T07:29:34.269Z"
+    },
+    "Technology Fetish Thrillers": {
+      "id": "build-1755847774270-2rsy44a",
+      "name": "Technology Fetish Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "1097ac84-6d18-4816-880f-144d5938e0bc",
+        "a6710bd4-78d9-4d44-b94f-534d98eb3c48"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T07:29:34.270Z",
+      "lastUpdated": "2025-08-22T07:37:25.517Z"
+    },
+    "Suburban Paranoia Thrillers": {
+      "id": "build-1755847774270-zpbou81",
+      "name": "Suburban Paranoia Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "806d5de5-02b4-4887-92fe-279bd0e817d6",
+        "f7dc7d1d-d42b-4eaa-a7a0-6e36599f79b7",
+        "23438305-896d-45ac-80c9-dbf2b3fa52c8",
+        "220b4cb7-c76a-44c2-83a8-2d3efc28b756",
+        "d486436c-733b-4f26-9528-ae01574a2a20",
+        "854cbbe8-fb8c-403c-a632-dc1ebc3d52b1",
+        "3f58fb92-1238-4217-a484-4d848bd46cc4",
+        "76b4d4a4-bd97-4fe3-8a95-628a39bb6272"
+      ],
+      "size": 8,
+      "createdAt": "2025-08-22T07:29:34.270Z",
+      "lastUpdated": "2025-08-22T07:45:31.495Z"
+    },
+    "Maternal Anxiety Horror": {
+      "id": "build-1755847784206-s2r1b09",
+      "name": "Maternal Anxiety Horror",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "26f66cdd-c1ba-4a24-bf54-425955a9acd0",
+        "3125ba7b-a7f2-4e48-885b-689a892d8cf0",
+        "f73b28a2-d164-4ef5-9084-ba0113cd0685",
+        "aab29b45-7e36-4a23-90b8-b62f5acd74fa",
+        "82552d85-a208-4ad4-97d5-5768aedfafeb",
+        "728ec840-0170-4186-af9a-2934703470e6",
+        "b67fb10a-9277-4c61-8eac-6fe61d4ded5b",
+        "1d4ec790-83c6-4ac7-8ff7-2bcbd624288c",
+        "f983baf8-e023-4342-b804-def61c3df496",
+        "9f5294d4-ce29-4836-89f7-5b8888318ea6",
+        "8d8d66a0-837a-4a32-8313-660b154a9c5e",
+        "782289fc-7863-44f8-948c-cd194ea8e8c9",
+        "d486436c-733b-4f26-9528-ae01574a2a20",
+        "06e44d53-69f4-4673-97cb-3916ef166caa",
+        "1136f72f-25e5-4d95-ae03-3ed94f223b8e",
+        "345cb235-8e75-45bf-9be7-80cc571c2d1b",
+        "fc4fae6f-a20d-4d22-b2f2-54ea6cbefda7"
+      ],
+      "size": 17,
+      "createdAt": "2025-08-22T07:29:44.206Z",
+      "lastUpdated": "2025-08-22T07:46:01.525Z"
+    },
+    "Maritime Isolation Thrillers": {
+      "id": "build-1755847784207-oscatj0",
+      "name": "Maritime Isolation Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "6f72bd0f-f1c5-46a0-8cf8-f71c0e53fc78",
+        "9b156c46-a22f-4503-a681-d15c5f3bc142",
+        "b8dc9c6c-3370-48c0-9eb8-1d4ab9bd04af",
+        "79a863a0-d17d-430d-a355-e875718b1076",
+        "df4b999f-bb8e-470e-9a7e-a034b418c693",
+        "97290f66-95bc-4838-a720-e28de33e3d14",
+        "06e44d53-69f4-4673-97cb-3916ef166caa"
+      ],
+      "size": 7,
+      "createdAt": "2025-08-22T07:29:44.207Z",
+      "lastUpdated": "2025-08-22T07:45:15.329Z"
+    },
+    "Twin Psychology Thrillers": {
+      "id": "build-1755847793787-jeiqxn2",
+      "name": "Twin Psychology Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "5fab7060-ed6d-4782-b489-be8e5d302c4d",
+        "34aa27c2-6aac-4b0e-9eb1-ff73e37eccc6",
+        "4f4082a0-ecb9-44ad-98a9-e0cb19bf1b80",
+        "f954ef41-5a67-4e1d-bccc-3dfeee3e75eb",
+        "3ad43d5c-bf05-4af0-966c-88be5ae79472"
+      ],
+      "size": 5,
+      "createdAt": "2025-08-22T07:29:53.787Z",
+      "lastUpdated": "2025-08-22T07:43:42.872Z"
+    },
+    "Amnesia Identity Thrillers": {
+      "id": "build-1755847826086-2t1fxcy",
+      "name": "Amnesia Identity Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "b0d5ea49-4ceb-4896-8d9f-a511174696fa",
+        "9fe2646c-3902-4fe8-881c-cf6c4020dc9c",
+        "91154b05-d503-4503-8c74-29ba0bb9e84a",
+        "7a7963f2-34f9-45fa-b30e-cfbdc3704d84"
+      ],
+      "size": 4,
+      "createdAt": "2025-08-22T07:30:26.086Z",
+      "lastUpdated": "2025-08-22T07:43:12.304Z"
+    },
+    "Parental Control Horror": {
+      "id": "build-1755847837030-kz1yw3p",
+      "name": "Parental Control Horror",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "5fe99084-5419-4ee0-9e60-10ceb454823f"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:30:37.030Z",
+      "lastUpdated": "2025-08-22T07:30:37.030Z"
+    },
+    "Childhood Trauma Vengeance": {
+      "id": "build-1755847847668-47xbbvv",
+      "name": "Childhood Trauma Vengeance",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "e2f7cfbd-ac72-48f6-8e84-fc922341224e",
+        "a040d16c-9124-42fb-9913-5694400f8358",
+        "0807d7d7-c622-4d0c-b257-7de1ded486ba",
+        "724a9a81-96d0-49ee-81aa-2a893b810c76",
+        "9aa1c2b7-b7e1-4f4b-90fa-bd8afacc0720",
+        "ffdfd727-81db-404e-9850-2e8223ab0143",
+        "3dd767f5-78a0-4738-a571-c8fc3ac520c3",
+        "d8130ff4-1f93-4767-a8c4-636e9706b101",
+        "2ce5d7d0-e690-45aa-bf81-991e4e7e6976",
+        "a42e773b-ffd7-4cb3-946f-889f059d1f5f"
+      ],
+      "size": 10,
+      "createdAt": "2025-08-22T07:30:47.668Z",
+      "lastUpdated": "2025-08-22T07:46:11.340Z"
+    },
+    "Precognition Horror Thrillers": {
+      "id": "build-1755847847668-op626b2",
+      "name": "Precognition Horror Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "d12075c3-36ec-4bd2-9dc5-28c6d306b0ce",
+        "e92b0877-5b53-44b1-bb37-03366e3ff17d",
+        "57e72801-63c4-4534-91dd-7dd670f2551b"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T07:30:47.668Z",
+      "lastUpdated": "2025-08-22T07:40:27.588Z"
+    },
+    "Retro Utopia Horror": {
+      "id": "build-1755847847669-d7ocozz",
+      "name": "Retro Utopia Horror",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "f7dc7d1d-d42b-4eaa-a7a0-6e36599f79b7"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:30:47.669Z",
+      "lastUpdated": "2025-08-22T07:30:47.669Z"
+    },
+    "Time Loop Philosophy": {
+      "id": "build-1755847847669-6dg4d4j",
+      "name": "Time Loop Philosophy",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "bc53384c-c74e-4332-81e2-934ce8a8a538"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:30:47.669Z",
+      "lastUpdated": "2025-08-22T07:30:47.669Z"
+    },
+    "Recursive Reality Horror": {
+      "id": "build-1755847857669-mz4vsx0",
+      "name": "Recursive Reality Horror",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "a31ebe8f-3d81-4e02-948c-e5a280061998"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:30:57.669Z",
+      "lastUpdated": "2025-08-22T07:30:57.669Z"
+    },
+    "Identity Deception Thrillers": {
+      "id": "build-1755847857670-34g3vbn",
+      "name": "Identity Deception Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "3226ed75-b174-41b5-9d07-ccbd5cd41b91",
+        "ab618bcf-ffb6-4d64-9f10-44278deb93b0",
+        "ac55d546-a49a-4e5e-911f-04c7e7a6c0b5",
+        "059f8bc3-0d24-4ccd-9d8f-fa23b0db9134",
+        "aa01d90f-b481-44f6-b5fc-d0cc282037e5",
+        "eef90226-63c7-4b97-a2c4-a80c63e71023",
+        "854cbbe8-fb8c-403c-a632-dc1ebc3d52b1"
+      ],
+      "size": 7,
+      "createdAt": "2025-08-22T07:30:57.670Z",
+      "lastUpdated": "2025-08-22T07:44:24.553Z"
+    },
+    "Gender Identity Thrillers": {
+      "id": "build-1755847867966-mjrdeh1",
+      "name": "Gender Identity Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "feba0b32-7f84-4b77-a2de-f67073857f1e",
+        "69d05f7e-429d-4b2b-aa94-db5d388f75a0"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T07:31:07.966Z",
+      "lastUpdated": "2025-08-22T07:44:14.297Z"
+    },
+    "Doppelganger Identity Thrillers": {
+      "id": "build-1755847867966-vx64bor",
+      "name": "Doppelganger Identity Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "dee0ee19-5521-47ad-927e-8a9ee3349613",
+        "792fd171-8785-4242-a4ae-ec3ccca91a11",
+        "390e11ad-e1d4-4c73-9a1b-a9af892b1c64",
+        "9f5294d4-ce29-4836-89f7-5b8888318ea6"
+      ],
+      "size": 4,
+      "createdAt": "2025-08-22T07:31:07.966Z",
+      "lastUpdated": "2025-08-22T07:42:31.985Z"
+    },
+    "Female Power Dynamics": {
+      "id": "build-1755847878824-dmwjd93",
+      "name": "Female Power Dynamics",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "9ed3be4d-58e5-4f21-99f0-a30bf826c953",
+        "ab106a73-b15e-4617-8803-fa3533f77029",
+        "f6402fe8-95ae-4064-b300-2793a71e58e5",
+        "d5a64320-4631-490f-9c85-9e5a82a7777f",
+        "d80698cf-dc12-45bb-963c-88c6639291ea",
+        "eef90226-63c7-4b97-a2c4-a80c63e71023",
+        "ffdb21e2-6354-44ae-85ce-378df0ffcdbf"
+      ],
+      "size": 7,
+      "createdAt": "2025-08-22T07:31:18.824Z",
+      "lastUpdated": "2025-08-22T07:45:41.397Z"
+    },
+    "AI Consciousness Thrillers": {
+      "id": "build-1755847889098-ha1c0e5",
+      "name": "AI Consciousness Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "3736ebc1-76d0-440f-9f33-bf1caac30203"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:31:29.098Z",
+      "lastUpdated": "2025-08-22T07:31:29.098Z"
+    },
+    "Professional Identity Crisis": {
+      "id": "build-1755847898635-1yr5rtm",
+      "name": "Professional Identity Crisis",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "ca54e982-8dd3-4138-955f-ba8c1b050233",
+        "f0b5596a-951c-4201-88cc-805bd1204b03",
+        "0930f8a0-9dc7-4fc1-84ef-817221955073",
+        "a9294f57-b709-421f-b74f-bb2acff3bc3a",
+        "a9c9f8f1-107e-446b-9ba0-3c22b237fd92",
+        "2f1be50c-6292-449a-af67-c1e7c1891209",
+        "59a15e0a-7523-495d-a5d4-b30c8e26bae7",
+        "9ed5a061-b271-426f-90b9-ee4481628b29",
+        "1f2a2207-ee7c-44a4-a5f7-398df6587619",
+        "0525e3f6-2ac6-44a1-be7d-927809c2adc8",
+        "26c295e4-b4f3-4180-aef6-63a1d2e0617b",
+        "4865c362-42c6-48ea-a20e-7909dbb6e7ef",
+        "2a564eae-0ae6-41a8-ba62-b0eb59683097",
+        "e93128f5-ac8f-42ba-a577-8c93c235cbad",
+        "f4a9fc05-8916-4dde-8760-cc303186a355",
+        "d80698cf-dc12-45bb-963c-88c6639291ea",
+        "85513fa4-bba0-433e-b35b-5f659329b8a7",
+        "566cccc7-db74-4dd4-a8c0-d0518435d8bb",
+        "390e11ad-e1d4-4c73-9a1b-a9af892b1c64",
+        "3274bf6a-49d7-4b1b-9201-c0737578586d",
+        "3ad2e1ab-91fd-42a6-a79a-483c6ea8def6",
+        "8d8d66a0-837a-4a32-8313-660b154a9c5e",
+        "bbd77267-d8fc-4297-a1d5-cc353d33c31e",
+        "b2649896-a150-4a81-8fcb-a4cea9170270",
+        "3c44d90b-60dd-4bf4-bc73-2198ab0c54c1",
+        "fca7f83a-359e-448a-966a-cd44059a98db",
+        "7cd01231-11f7-4127-bf87-c0c5de54e3f2"
+      ],
+      "size": 27,
+      "createdAt": "2025-08-22T07:31:38.635Z",
+      "lastUpdated": "2025-08-22T07:45:41.399Z"
+    },
+    "Survivor Guilt Studies": {
+      "id": "build-1755847919640-3j10m5u",
+      "name": "Survivor Guilt Studies",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "6f8b3452-1807-4e5f-9f68-b6eab37d6b8c",
+        "9bb84cf4-2f04-4654-9ec8-bab391719837",
+        "aed68e37-5919-4bb5-b64c-eb567c443ffb",
+        "23438305-896d-45ac-80c9-dbf2b3fa52c8",
+        "dfef9c0f-6320-4c30-82df-700202b3e446",
+        "a9a89c7d-0e93-44c3-b0b3-9d0eb8fde1ae"
+      ],
+      "size": 6,
+      "createdAt": "2025-08-22T07:31:59.640Z",
+      "lastUpdated": "2025-08-22T07:43:12.305Z"
+    },
+    "Anti-Consumer Revolution Thrillers": {
+      "id": "build-1755847930784-c96zm69",
+      "name": "Anti-Consumer Revolution Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "3947233a-0170-4111-a675-f57e9f0381af"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:32:10.784Z",
+      "lastUpdated": "2025-08-22T07:32:10.784Z"
+    },
+    "Divine Mission Thrillers": {
+      "id": "build-1755847930785-wmao3zu",
+      "name": "Divine Mission Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "dd95b2e9-a6c8-45af-ad11-0f36295e0539"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:32:10.785Z",
+      "lastUpdated": "2025-08-22T07:32:10.785Z"
+    },
+    "Home Invasion Thrillers": {
+      "id": "build-1755847941391-arom6rd",
+      "name": "Home Invasion Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "418f7521-8bbe-4b58-9f8a-121a4b518746",
+        "0c667923-2f42-490c-833d-1a150ff844f5",
+        "a6e86f2a-2a9d-4576-9ad2-782014bbc010",
+        "f983baf8-e023-4342-b804-def61c3df496",
+        "3f58fb92-1238-4217-a484-4d848bd46cc4",
+        "b03cf569-85a9-499e-a237-4709c8f1fed1"
+      ],
+      "size": 6,
+      "createdAt": "2025-08-22T07:32:21.391Z",
+      "lastUpdated": "2025-08-22T07:45:41.399Z"
+    },
+    "Urban Isolation Studies": {
+      "id": "build-1755847941391-zjk73o5",
+      "name": "Urban Isolation Studies",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "80bb71d0-36d0-46aa-b83f-933056ac25da",
+        "abc77c75-cd38-45b7-94f0-8f9cb8af2020",
+        "fba2a627-2f6f-4820-8cda-f3ea83184ac4",
+        "1fac7e79-37e8-455b-8961-d6c10cf3ab96",
+        "2ba0a6d1-b02b-438a-92bf-3d3ce0786115",
+        "d6b16ee4-e8a9-4618-9120-e3294be0f878",
+        "82552d85-a208-4ad4-97d5-5768aedfafeb",
+        "23e1c1a7-bbab-4b36-9ca9-d39240db56a3",
+        "74e3f80d-5140-4b6a-87d5-6f279e9c2a13",
+        "4f1cf4d6-e7f0-44af-bc4a-1e9d2b9dd291",
+        "566cccc7-db74-4dd4-a8c0-d0518435d8bb",
+        "60fe2c80-d0f9-462b-997b-3219a682b465",
+        "d7bf5681-a0a5-4a11-9241-eae00fcdf231",
+        "c0b4d3c8-2fca-4eb8-9bcb-a526cacc37d9",
+        "ca187504-edd3-411d-bed5-631f2979ba1b",
+        "3f15bb49-4b81-4cf3-9d0a-53edfbbf3912"
+      ],
+      "size": 16,
+      "createdAt": "2025-08-22T07:32:21.391Z",
+      "lastUpdated": "2025-08-22T07:46:01.526Z"
+    },
+    "Psychological Manipulation Thrillers": {
+      "id": "build-1755847954017-zshh1ub",
+      "name": "Psychological Manipulation Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "637d24e6-b867-4cf3-b496-8c4ea206f411",
+        "eedbfdeb-5535-4eb1-a1b5-91e577ad1166",
+        "631abc7a-73d1-4990-8af9-81381383566d",
+        "05a26c97-3a4c-44bd-bf90-0097e54cd322",
+        "f0b5596a-951c-4201-88cc-805bd1204b03",
+        "b7608ccd-b11f-46f3-9b14-2e90344fdfe7",
+        "a0bbc025-9021-46a8-821e-39cdd95907e3",
+        "de199708-f83c-4ce5-9229-f64d3c8e083b",
+        "d47e12eb-f9aa-4c56-b8ef-f65d9594ddfe",
+        "89021201-9839-4384-b5f7-03fb3c2f20c9",
+        "f73b28a2-d164-4ef5-9084-ba0113cd0685",
+        "34aa27c2-6aac-4b0e-9eb1-ff73e37eccc6",
+        "0c667923-2f42-490c-833d-1a150ff844f5",
+        "f6402fe8-95ae-4064-b300-2793a71e58e5",
+        "ed4db786-42d0-4a5e-936e-2bcf84bee14e",
+        "5f75e9f0-428d-4f94-8c71-a39ea91d4d52",
+        "8f32070f-9c5a-4174-b4e7-0c4379cb19e7",
+        "6f73f3ee-c2f0-459b-b19b-8ab5f73ef70e",
+        "091daaf8-ddc1-4f3f-aa57-97cde1b0f8d0",
+        "746dc4b7-b69a-43a3-a450-ed41fb021873",
+        "ddad1e8d-e6cb-4d73-90e1-3d104123cfef",
+        "17006ecc-9499-4ba9-b81f-281197884775",
+        "2bacf44a-12af-42fb-ad73-80a417bd1ae3",
+        "0cee5b30-110b-4a35-b697-23a2a4a023a7",
+        "ac55d546-a49a-4e5e-911f-04c7e7a6c0b5",
+        "ba6347cf-c8f1-416a-9e57-efb711b5ece7",
+        "b828fe00-1c80-4dcc-8143-8e734718c8e2",
+        "355cb6e8-b500-4660-9139-eb795fc0b238",
+        "0525e3f6-2ac6-44a1-be7d-927809c2adc8",
+        "0751667b-89e1-428b-a4bb-46e8bd3ab65d",
+        "5e578a7c-f3b5-4684-b26c-d67e25230cae",
+        "6c5b83cb-33e5-484a-8ea7-30711c36927a",
+        "979a70ad-1295-42d7-9c52-aafdcf271fc5",
+        "82552d85-a208-4ad4-97d5-5768aedfafeb",
+        "f501dbee-e9a1-4703-bed6-d5f510213faf",
+        "ed8a41bd-04d0-43ff-9054-196fc00a21c1",
+        "ff94d9f3-4d77-41fa-a4dd-fbd4ec77d830",
+        "5b924dc7-dd1c-4354-a124-062c266128dd",
+        "26c295e4-b4f3-4180-aef6-63a1d2e0617b",
+        "ba344374-dedb-444c-a4c4-0a054abfead1",
+        "9b42a5bf-a693-445d-a91a-b41c4cedad6b",
+        "aeac39f4-fad7-48dc-b8f9-596954c9093d",
+        "4f4082a0-ecb9-44ad-98a9-e0cb19bf1b80",
+        "13754d26-e1d6-4ae9-b1bb-650584a78e57",
+        "059f8bc3-0d24-4ccd-9d8f-fa23b0db9134",
+        "9fe2646c-3902-4fe8-881c-cf6c4020dc9c",
+        "2a564eae-0ae6-41a8-ba62-b0eb59683097",
+        "394f1c64-8924-4174-9084-4d2414ce89f0",
+        "9aa1c2b7-b7e1-4f4b-90fa-bd8afacc0720",
+        "3f7ecde6-20cd-44f8-a1d5-87a6984ef759",
+        "e6966854-0edd-4790-a333-eaca77e4fb73",
+        "6014c8ae-7881-4e92-8b9b-f685be8176fd",
+        "fe592524-48f3-4d3a-a91a-27ab1b7a3ca3",
+        "f4a9fc05-8916-4dde-8760-cc303186a355",
+        "4f1cf4d6-e7f0-44af-bc4a-1e9d2b9dd291",
+        "3979ed04-f967-40a5-8823-0bde70a83f41",
+        "d80698cf-dc12-45bb-963c-88c6639291ea",
+        "055cf0ab-10a2-421a-8cfd-de043b4abea5",
+        "4d8764ab-33af-4b18-9bac-f3651647d176",
+        "8a8ecf54-5c74-4b14-b7be-b501354b804a",
+        "f954ef41-5a67-4e1d-bccc-3dfeee3e75eb",
+        "05eecb34-619c-49a4-b0fa-1c33db9063aa",
+        "b63ea3eb-5b1d-48f1-ba4e-6f44a0a7d4e8",
+        "7b175f6f-dd20-4d4e-b617-ffac28c8cdb9",
+        "7c56bf9b-fa61-435a-8735-49acba992a94",
+        "aedcf9d1-1aa8-4dbf-9af8-f56b2c5373e8",
+        "79a863a0-d17d-430d-a355-e875718b1076",
+        "ffdfd727-81db-404e-9850-2e8223ab0143",
+        "a134a30a-3bfb-4954-8ec8-1d511028f7a8",
+        "dd5ade94-6cb9-45b8-b7d8-059a76fb8dfb",
+        "f983baf8-e023-4342-b804-def61c3df496",
+        "eef90226-63c7-4b97-a2c4-a80c63e71023",
+        "c53dd9a6-cb04-42a5-8ff4-ca7ac39e8f5e",
+        "59e3d88e-a57f-4422-8051-4e4c47b44694",
+        "a234c026-c40f-4324-a004-7c365dff20ec",
+        "a4c23213-382c-46cb-9170-43a4b3de83ed",
+        "339f1b23-a788-46d4-b078-92e0a3c282e0",
+        "b6baa95a-e1c6-4612-9103-b99e1305d853",
+        "62cee0a9-73d3-4afd-84f7-c47931ac54cd",
+        "782289fc-7863-44f8-948c-cd194ea8e8c9",
+        "dfeb020b-6af7-40f1-aa6a-89931b0743de",
+        "7aa9b37d-b5bc-436a-8c0d-d2c3a08ba12f",
+        "d486436c-733b-4f26-9528-ae01574a2a20",
+        "3dd767f5-78a0-4738-a571-c8fc3ac520c3",
+        "16772ce2-f7bb-4804-a5ad-9211b4cc419a",
+        "b2649896-a150-4a81-8fcb-a4cea9170270",
+        "bcd731fb-2b17-4808-a0b6-a406651ab17f",
+        "f434b789-c64f-4f3b-89de-24ee1e3ff17b",
+        "53022ea4-f856-48e1-a44b-3e04e2b8b028",
+        "bf8dcc50-9284-43f6-841d-4a5af576e033",
+        "078bc44f-1afb-4937-b059-eab3e808cceb",
+        "69d05f7e-429d-4b2b-aa94-db5d388f75a0",
+        "3c44d90b-60dd-4bf4-bc73-2198ab0c54c1",
+        "051f6d07-0a7f-434c-b661-28dcdd27fd38",
+        "38c60dd7-2ff2-4754-bfbc-87177bd18b03",
+        "ca187504-edd3-411d-bed5-631f2979ba1b",
+        "9dfee9cb-3890-4502-af0c-dcea0e77bfd2",
+        "f1922fb0-ed27-4612-a6cf-f4d5aebe86a1",
+        "06e44d53-69f4-4673-97cb-3916ef166caa",
+        "76b4d4a4-bd97-4fe3-8a95-628a39bb6272",
+        "f97933d4-b84e-4f0a-8fd5-485aea73dd2c",
+        "ffdb21e2-6354-44ae-85ce-378df0ffcdbf",
+        "67a8e33b-a696-4f33-aa2a-23c98c03c357",
+        "b03cf569-85a9-499e-a237-4709c8f1fed1",
+        "56301ad1-b05c-43c1-ae50-c4d269734ff4",
+        "4980ad6f-361b-4473-98d2-fdb7ddfdee1a",
+        "fc4fae6f-a20d-4d22-b2f2-54ea6cbefda7",
+        "3f15bb49-4b81-4cf3-9d0a-53edfbbf3912",
+        "1551aedc-8301-40fa-85c7-36c4e3f4ab55",
+        "baf096fb-a129-427c-8480-f2364861ef27"
+      ],
+      "size": 110,
+      "createdAt": "2025-08-22T07:32:34.017Z",
+      "lastUpdated": "2025-08-22T07:46:11.340Z"
+    },
+    "Vigilante Justice Thrillers": {
+      "id": "build-1755847964548-xlpu683",
+      "name": "Vigilante Justice Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "05a26c97-3a4c-44bd-bf90-0097e54cd322",
+        "74e3f80d-5140-4b6a-87d5-6f279e9c2a13",
+        "a42e773b-ffd7-4cb3-946f-889f059d1f5f"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T07:32:44.548Z",
+      "lastUpdated": "2025-08-22T07:46:11.340Z"
+    },
+    "Beauty Industry Horror": {
+      "id": "build-1755847964549-goqrv19",
+      "name": "Beauty Industry Horror",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "22cbfa59-4bac-4525-a3fc-16f5735044b2"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:32:44.549Z",
+      "lastUpdated": "2025-08-22T07:32:44.549Z"
+    },
+    "Serial Killer Character Studies": {
+      "id": "build-1755847974695-j8lucz3",
+      "name": "Serial Killer Character Studies",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "b9ae31ca-1b60-42db-868c-0833059a6942",
+        "59a15e0a-7523-495d-a5d4-b30c8e26bae7",
+        "8983a40d-0d88-4927-aaf8-d3217a1ba698",
+        "078bc44f-1afb-4937-b059-eab3e808cceb",
+        "051f6d07-0a7f-434c-b661-28dcdd27fd38",
+        "8c882a24-6c02-446e-a4b6-d2ae3b0409f0"
+      ],
+      "size": 6,
+      "createdAt": "2025-08-22T07:32:54.695Z",
+      "lastUpdated": "2025-08-22T07:46:01.526Z"
+    },
+    "Reality Perception Breakdown": {
+      "id": "build-1755847974695-p0jn2a5",
+      "name": "Reality Perception Breakdown",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "b23d3ac3-0058-4ddb-876f-466f0978b328",
+        "b44fd50d-c354-4d16-96dd-bb6de9ca75e7",
+        "b20910a7-6d3f-4de5-8ea1-02f163a3750b",
+        "b585daac-a50e-49e5-a730-491cfed85aea",
+        "aa4e3bed-a6f4-4ef6-9fe1-ff1948f14dc3",
+        "af2b39e3-4f96-4c94-98c1-603ea5117d5c",
+        "b1160a5e-b329-4844-82b8-c52cee8988d4",
+        "fba2a627-2f6f-4820-8cda-f3ea83184ac4",
+        "27198255-3bff-4dd2-b09e-3dff1e3fef78",
+        "ed7892ef-229a-4457-a9c1-f8fb2cc67370",
+        "f9d88c13-3d81-47b1-a36b-f3b67c6baf40",
+        "9c9f74e3-d686-4812-b917-553678367e36",
+        "1fac7e79-37e8-455b-8961-d6c10cf3ab96",
+        "5f75e9f0-428d-4f94-8c71-a39ea91d4d52",
+        "6ac65753-6543-4b72-b0e5-4e9616f23ca5",
+        "75197239-e656-4d10-ac3f-eacce6e7427c",
+        "0cde0a5a-38b1-4714-b8c5-614abe1fb55d",
+        "5517a7bf-586c-42cd-9071-46510899b705",
+        "2db88871-adc3-482f-b700-b48cbb86c060",
+        "4723d63d-22a1-474d-9a74-0beb287558de",
+        "c164b93a-2a13-4751-87a8-228d23db4773",
+        "dc79f724-0564-44c0-8b95-f205559c9561",
+        "e1a0b415-601b-492b-b3cd-f4e6df949090",
+        "122506eb-1a8b-418b-b533-4cbfcad94396",
+        "a6710bd4-78d9-4d44-b94f-534d98eb3c48",
+        "b4156f09-0fdc-4012-bbfc-d46e9ffb7e80",
+        "355cb6e8-b500-4660-9139-eb795fc0b238",
+        "0525e3f6-2ac6-44a1-be7d-927809c2adc8",
+        "c750e661-0b0c-46c5-8eca-c142d40de1f9",
+        "62626532-3203-4c56-adbd-aef635040daa",
+        "136836c0-e850-407c-a2cf-6a7fde54520f",
+        "154381c5-2281-4d7e-948e-acce5d7cd802",
+        "e7b36b8e-7909-46b8-a513-8e873d84f66a",
+        "d6b16ee4-e8a9-4618-9120-e3294be0f878",
+        "959b3941-031f-40e8-9730-84f72056bbb3",
+        "35ff3877-f261-479b-b0d5-d178c98f2dab",
+        "d07403ad-21fe-41a7-bc3f-01544223120f",
+        "9861fdb6-f46b-42bf-8500-d3eb350149f2",
+        "98d8071e-0208-4165-9972-a47da8e3849b",
+        "ff94d9f3-4d77-41fa-a4dd-fbd4ec77d830",
+        "a6a3cf0e-6efe-4809-8e7e-443ba5d0ff61",
+        "4865c362-42c6-48ea-a20e-7909dbb6e7ef",
+        "ba344374-dedb-444c-a4c4-0a054abfead1",
+        "9b42a5bf-a693-445d-a91a-b41c4cedad6b",
+        "13754d26-e1d6-4ae9-b1bb-650584a78e57",
+        "724a9a81-96d0-49ee-81aa-2a893b810c76",
+        "f7240969-ec99-4b47-aa4d-d72d4410a82a",
+        "a1166677-7639-4bb8-8bfe-ac918232c994",
+        "526d8fd7-e33a-4528-9b4f-73063cd0f9af",
+        "d8fb0419-2c09-45bb-8504-9be8cb48f0d7",
+        "6014c8ae-7881-4e92-8b9b-f685be8176fd",
+        "91154b05-d503-4503-8c74-29ba0bb9e84a",
+        "9602c017-8055-4cca-aa51-705c92c7c06c",
+        "e93128f5-ac8f-42ba-a577-8c93c235cbad",
+        "57e72801-63c4-4534-91dd-7dd670f2551b",
+        "9eb4d04f-5e50-450b-a46f-dc574e416b17",
+        "60fe2c80-d0f9-462b-997b-3219a682b465",
+        "d7bf5681-a0a5-4a11-9241-eae00fcdf231",
+        "390e11ad-e1d4-4c73-9a1b-a9af892b1c64",
+        "f00c336f-44e2-48d0-84e1-7683427a68f6",
+        "7b175f6f-dd20-4d4e-b617-ffac28c8cdb9",
+        "f82d7bf0-270d-4257-b1e3-d4c723f1feb8",
+        "05b1b1ba-dac3-42d3-ad11-1bcf14d00257",
+        "3ad2e1ab-91fd-42a6-a79a-483c6ea8def6",
+        "f2ddf071-d1e2-4f77-871a-633f0fe011f1",
+        "a10494b2-d0d9-4d0c-b96a-a448639ca8d7",
+        "b72c27af-a46f-4bda-9ea2-58dc8d31433f",
+        "42f00bab-3b8e-447f-b411-2d2a142b45b3",
+        "dfef9c0f-6320-4c30-82df-700202b3e446",
+        "97290f66-95bc-4838-a720-e28de33e3d14",
+        "339f1b23-a788-46d4-b078-92e0a3c282e0",
+        "7a7963f2-34f9-45fa-b30e-cfbdc3704d84",
+        "a9a89c7d-0e93-44c3-b0b3-9d0eb8fde1ae",
+        "7aa9b37d-b5bc-436a-8c0d-d2c3a08ba12f",
+        "3ad43d5c-bf05-4af0-966c-88be5ae79472",
+        "bd1044b2-10f1-4a29-8d69-31e2e349853f",
+        "21e8fd42-41e7-49ae-8be7-be235480a7f6",
+        "86ea1573-b6fb-4743-a6af-eccb3ee27374",
+        "ca187504-edd3-411d-bed5-631f2979ba1b",
+        "514ecbbb-e8a2-49e5-b6cd-375012369879",
+        "d8130ff4-1f93-4767-a8c4-636e9706b101",
+        "c9915c97-8316-4a2a-9641-2cdfff3c4092",
+        "68d5ef3e-2ad3-4bdc-93a6-0ae961913c7a",
+        "8ebcfe8b-e9c2-40db-b364-3732d7e90bbe",
+        "dc5625ff-43f3-4d40-980c-ae4f782c6e9f",
+        "e263c7e0-9d3a-4099-81ac-aef709642809",
+        "06e44d53-69f4-4673-97cb-3916ef166caa",
+        "2ce5d7d0-e690-45aa-bf81-991e4e7e6976",
+        "fca7f83a-359e-448a-966a-cd44059a98db",
+        "dc2c78fe-9015-4c90-81c3-39c18f349ae4",
+        "f37c75c6-b482-4815-961a-d4f2de56134c",
+        "f97933d4-b84e-4f0a-8fd5-485aea73dd2c",
+        "d9dce2a4-adc2-42a8-abde-bef6024666ec",
+        "67a8e33b-a696-4f33-aa2a-23c98c03c357",
+        "345cb235-8e75-45bf-9be7-80cc571c2d1b",
+        "6339cff4-b9c7-4c45-9982-1d794e49da89"
+      ],
+      "size": 96,
+      "createdAt": "2025-08-22T07:32:54.695Z",
+      "lastUpdated": "2025-08-22T07:46:20.153Z"
+    },
+    "Con Artist Psychology": {
+      "id": "build-1755847974695-9zdzttv",
+      "name": "Con Artist Psychology",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "f0b5596a-951c-4201-88cc-805bd1204b03",
+        "9dfee9cb-3890-4502-af0c-dcea0e77bfd2",
+        "b03cf569-85a9-499e-a237-4709c8f1fed1"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T07:32:54.695Z",
+      "lastUpdated": "2025-08-22T07:45:41.399Z"
+    },
+    "Arctic Survival Psychology": {
+      "id": "build-1755847984358-c7cuk56",
+      "name": "Arctic Survival Psychology",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "b7608ccd-b11f-46f3-9b14-2e90344fdfe7"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:33:04.358Z",
+      "lastUpdated": "2025-08-22T07:33:04.358Z"
+    },
+    "Southern Gothic Psychodramas": {
+      "id": "build-1755847984363-1q7q8xb",
+      "name": "Southern Gothic Psychodramas",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "a0bbc025-9021-46a8-821e-39cdd95907e3",
+        "e6966854-0edd-4790-a333-eaca77e4fb73",
+        "b70d52d9-36b9-4f55-8f9e-611be84a0124"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T07:33:04.363Z",
+      "lastUpdated": "2025-08-22T07:41:28.513Z"
+    },
+    "Moral Decay Character Studies": {
+      "id": "build-1755847984363-e01s87o",
+      "name": "Moral Decay Character Studies",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "abc77c75-cd38-45b7-94f0-8f9cb8af2020",
+        "d47e12eb-f9aa-4c56-b8ef-f65d9594ddfe",
+        "7be71184-0993-48b9-9db8-a6e8f6082128",
+        "3b3c9c9a-c375-4b5b-b9f3-3d68ee117232",
+        "ab106a73-b15e-4617-8803-fa3533f77029",
+        "f6402fe8-95ae-4064-b300-2793a71e58e5",
+        "17006ecc-9499-4ba9-b81f-281197884775",
+        "58a20eed-3fa3-408f-9078-75f8c32069d0",
+        "210e5d90-7048-465f-80e1-d3e0dbfd8d45",
+        "e4e48257-ebbe-4eb2-82c8-d00f6543fd0c",
+        "feda0880-49bc-4ea3-b73b-723bb0fb812a",
+        "959b3941-031f-40e8-9730-84f72056bbb3",
+        "979a70ad-1295-42d7-9c52-aafdcf271fc5",
+        "a6e86f2a-2a9d-4576-9ad2-782014bbc010",
+        "23438305-896d-45ac-80c9-dbf2b3fa52c8",
+        "f4a9fc05-8916-4dde-8760-cc303186a355",
+        "74e3f80d-5140-4b6a-87d5-6f279e9c2a13",
+        "d42a31b2-abed-44bb-9ac3-117a5e981e81",
+        "e399891e-248d-41eb-aca7-a5c172162a22",
+        "85513fa4-bba0-433e-b35b-5f659329b8a7",
+        "b70d52d9-36b9-4f55-8f9e-611be84a0124",
+        "05eecb34-619c-49a4-b0fa-1c33db9063aa",
+        "c0b4d3c8-2fca-4eb8-9bcb-a526cacc37d9",
+        "b63ea3eb-5b1d-48f1-ba4e-6f44a0a7d4e8",
+        "7b175f6f-dd20-4d4e-b617-ffac28c8cdb9",
+        "3274bf6a-49d7-4b1b-9201-c0737578586d",
+        "a10494b2-d0d9-4d0c-b96a-a448639ca8d7",
+        "8983a40d-0d88-4927-aaf8-d3217a1ba698",
+        "22d59af3-b5cc-4413-9187-acfb17ea5efd",
+        "68b3846c-4a86-48b1-b92d-c6c37196f890",
+        "a234c026-c40f-4324-a004-7c365dff20ec",
+        "dfeb020b-6af7-40f1-aa6a-89931b0743de",
+        "53022ea4-f856-48e1-a44b-3e04e2b8b028",
+        "854cbbe8-fb8c-403c-a632-dc1ebc3d52b1",
+        "38c60dd7-2ff2-4754-bfbc-87177bd18b03",
+        "9dfee9cb-3890-4502-af0c-dcea0e77bfd2",
+        "8970d8b6-4334-4a37-aafd-c7738fc1d86c",
+        "a371ae79-a601-442b-a0ce-4f1e604f9f72",
+        "1136f72f-25e5-4d95-ae03-3ed94f223b8e",
+        "56301ad1-b05c-43c1-ae50-c4d269734ff4"
+      ],
+      "size": 40,
+      "createdAt": "2025-08-22T07:33:04.363Z",
+      "lastUpdated": "2025-08-22T07:45:51.160Z"
+    },
+    "Fiction Reality Blur": {
+      "id": "build-1755848004756-7ochyp8",
+      "name": "Fiction Reality Blur",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "b585daac-a50e-49e5-a730-491cfed85aea",
+        "122506eb-1a8b-418b-b533-4cbfcad94396",
+        "526d8fd7-e33a-4528-9b4f-73063cd0f9af",
+        "9602c017-8055-4cca-aa51-705c92c7c06c",
+        "8bebdbef-859b-41e2-a8cc-2ebdcfc6cd61"
+      ],
+      "size": 5,
+      "createdAt": "2025-08-22T07:33:24.756Z",
+      "lastUpdated": "2025-08-22T07:41:28.513Z"
+    },
+    "Sleep Deprivation Thrillers": {
+      "id": "build-1755848004757-lp6dire",
+      "name": "Sleep Deprivation Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "d47e12eb-f9aa-4c56-b8ef-f65d9594ddfe",
+        "a9a89c7d-0e93-44c3-b0b3-9d0eb8fde1ae"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T07:33:24.757Z",
+      "lastUpdated": "2025-08-22T07:43:12.305Z"
+    },
+    "Primal Nature Studies": {
+      "id": "build-1755848014823-lv2w98e",
+      "name": "Primal Nature Studies",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "89021201-9839-4384-b5f7-03fb3c2f20c9",
+        "a6e86f2a-2a9d-4576-9ad2-782014bbc010",
+        "97290f66-95bc-4838-a720-e28de33e3d14",
+        "a371ae79-a601-442b-a0ce-4f1e604f9f72"
+      ],
+      "size": 4,
+      "createdAt": "2025-08-22T07:33:34.823Z",
+      "lastUpdated": "2025-08-22T07:45:51.158Z"
+    },
+    "Mirror Reality Horror": {
+      "id": "build-1755848014823-tqf1mfq",
+      "name": "Mirror Reality Horror",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "1b5a24a3-67fd-4785-86ed-77e37a8013b9"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:33:34.823Z",
+      "lastUpdated": "2025-08-22T07:33:34.823Z"
+    },
+    "War Trauma Hallucinations": {
+      "id": "build-1755848014824-6b5wj3y",
+      "name": "War Trauma Hallucinations",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "af2b39e3-4f96-4c94-98c1-603ea5117d5c",
+        "9ed5a061-b271-426f-90b9-ee4481628b29",
+        "42f00bab-3b8e-447f-b411-2d2a142b45b3",
+        "c00eb9ab-427b-49c2-807d-93f0f51d54c4",
+        "a42e773b-ffd7-4cb3-946f-889f059d1f5f"
+      ],
+      "size": 5,
+      "createdAt": "2025-08-22T07:33:34.824Z",
+      "lastUpdated": "2025-08-22T07:46:11.340Z"
+    },
+    "Political Allegory Thrillers": {
+      "id": "build-1755848024999-f6or33h",
+      "name": "Political Allegory Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "0930f8a0-9dc7-4fc1-84ef-817221955073",
+        "e399891e-248d-41eb-aca7-a5c172162a22"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T07:33:44.999Z",
+      "lastUpdated": "2025-08-22T07:41:08.721Z"
+    },
+    "Social Outcasts Revolution": {
+      "id": "build-1755848025000-rb8xpfw",
+      "name": "Social Outcasts Revolution",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "b1160a5e-b329-4844-82b8-c52cee8988d4",
+        "58a20eed-3fa3-408f-9078-75f8c32069d0"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T07:33:45.000Z",
+      "lastUpdated": "2025-08-22T07:36:36.367Z"
+    },
+    "Dream Analysis Films": {
+      "id": "build-1755848055340-mt4mveu",
+      "name": "Dream Analysis Films",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "a9c9f8f1-107e-446b-9ba0-3c22b237fd92",
+        "122506eb-1a8b-418b-b533-4cbfcad94396",
+        "a6710bd4-78d9-4d44-b94f-534d98eb3c48",
+        "d9dce2a4-adc2-42a8-abde-bef6024666ec"
+      ],
+      "size": 4,
+      "createdAt": "2025-08-22T07:34:15.340Z",
+      "lastUpdated": "2025-08-22T07:45:31.496Z"
+    },
+    "Victorian Social Rebellion": {
+      "id": "build-1755848055340-pnwx8m2",
+      "name": "Victorian Social Rebellion",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "ab106a73-b15e-4617-8803-fa3533f77029"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:34:15.340Z",
+      "lastUpdated": "2025-08-22T07:34:15.340Z"
+    },
+    "Collective Justice Thrillers": {
+      "id": "build-1755848055340-awctdyc",
+      "name": "Collective Justice Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "3d9d2c9a-61cd-48ef-aed4-c8fcca366219"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:34:15.340Z",
+      "lastUpdated": "2025-08-22T07:34:15.340Z"
+    },
+    "Ghost Documentary Style": {
+      "id": "build-1755848065702-brosimo",
+      "name": "Ghost Documentary Style",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "27198255-3bff-4dd2-b09e-3dff1e3fef78"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:34:25.702Z",
+      "lastUpdated": "2025-08-22T07:34:25.702Z"
+    },
+    "Retro Time Travel Horror": {
+      "id": "build-1755848065703-z2r6z1w",
+      "name": "Retro Time Travel Horror",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "ed7892ef-229a-4457-a9c1-f8fb2cc67370"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:34:25.703Z",
+      "lastUpdated": "2025-08-22T07:34:25.703Z"
+    },
+    "Compulsive Behavior Thrillers": {
+      "id": "build-1755848116189-b2m2591",
+      "name": "Compulsive Behavior Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "ed4db786-42d0-4a5e-936e-2bcf84bee14e",
+        "9eb4d04f-5e50-450b-a46f-dc574e416b17",
+        "7aa9b37d-b5bc-436a-8c0d-d2c3a08ba12f"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T07:35:16.189Z",
+      "lastUpdated": "2025-08-22T07:43:32.828Z"
+    },
+    "Cult Escape Aftermath": {
+      "id": "build-1755848116189-mh1efg0",
+      "name": "Cult Escape Aftermath",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "5f75e9f0-428d-4f94-8c71-a39ea91d4d52"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:35:16.189Z",
+      "lastUpdated": "2025-08-22T07:35:16.189Z"
+    },
+    "Transcendent Suffering Films": {
+      "id": "build-1755848126937-xkg2gxx",
+      "name": "Transcendent Suffering Films",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "bf23106c-5f90-4ad9-a554-cc9059b44f35"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:35:26.937Z",
+      "lastUpdated": "2025-08-22T07:35:26.937Z"
+    },
+    "Desert Survival Thrillers": {
+      "id": "build-1755848136770-a2f10dn",
+      "name": "Desert Survival Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "93519a72-fb35-48fd-9257-7c42d1f3d7aa",
+        "8c882a24-6c02-446e-a4b6-d2ae3b0409f0"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T07:35:36.770Z",
+      "lastUpdated": "2025-08-22T07:46:01.526Z"
+    },
+    "Environmental Allegory Horror": {
+      "id": "build-1755848153561-zk0xbzt",
+      "name": "Environmental Allegory Horror",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "0cde0a5a-38b1-4714-b8c5-614abe1fb55d"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:35:53.561Z",
+      "lastUpdated": "2025-08-22T07:35:53.561Z"
+    },
+    "Hollywood Dream Deconstruction": {
+      "id": "build-1755848153561-9ayiuz8",
+      "name": "Hollywood Dream Deconstruction",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "5517a7bf-586c-42cd-9071-46510899b705",
+        "345cb235-8e75-45bf-9be7-80cc571c2d1b"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T07:35:53.561Z",
+      "lastUpdated": "2025-08-22T07:46:01.524Z"
+    },
+    "Human Instrumentality Films": {
+      "id": "build-1755848153561-t5vvqi9",
+      "name": "Human Instrumentality Films",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "2db88871-adc3-482f-b700-b48cbb86c060"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:35:53.561Z",
+      "lastUpdated": "2025-08-22T07:35:53.561Z"
+    },
+    "Carnival Noir Thrillers": {
+      "id": "build-1755848196367-9f2mitj",
+      "name": "Carnival Noir Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "17006ecc-9499-4ba9-b81f-281197884775"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:36:36.367Z",
+      "lastUpdated": "2025-08-22T07:36:36.367Z"
+    },
+    "Fiction Within Fiction": {
+      "id": "build-1755848196367-7gzmn5u",
+      "name": "Fiction Within Fiction",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "2bacf44a-12af-42fb-ad73-80a417bd1ae3"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:36:36.367Z",
+      "lastUpdated": "2025-08-22T07:36:36.367Z"
+    },
+    "Family Identity Performance": {
+      "id": "build-1755848214767-vctpr98",
+      "name": "Family Identity Performance",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "c164b93a-2a13-4751-87a8-228d23db4773"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:36:54.767Z",
+      "lastUpdated": "2025-08-22T07:36:54.767Z"
+    },
+    "Survival Psychology Thrillers": {
+      "id": "build-1755848224935-4d0uv6y",
+      "name": "Survival Psychology Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "b8dc9c6c-3370-48c0-9eb8-1d4ab9bd04af"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:37:04.935Z",
+      "lastUpdated": "2025-08-22T07:37:04.935Z"
+    },
+    "Cryogenic Dream Thrillers": {
+      "id": "build-1755848235080-phlk8fk",
+      "name": "Cryogenic Dream Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "e1a0b415-601b-492b-b3cd-f4e6df949090",
+        "d9dce2a4-adc2-42a8-abde-bef6024666ec"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T07:37:15.080Z",
+      "lastUpdated": "2025-08-22T07:45:31.496Z"
+    },
+    "Property Dispute Thrillers": {
+      "id": "build-1755848235081-5me40wq",
+      "name": "Property Dispute Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "ba6347cf-c8f1-416a-9e57-efb711b5ece7"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:37:15.081Z",
+      "lastUpdated": "2025-08-22T07:37:15.081Z"
+    },
+    "Childhood Fantasy Horror": {
+      "id": "build-1755848235081-3vi9mne",
+      "name": "Childhood Fantasy Horror",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "122506eb-1a8b-418b-b533-4cbfcad94396",
+        "60fe2c80-d0f9-462b-997b-3219a682b465"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T07:37:15.081Z",
+      "lastUpdated": "2025-08-22T07:41:28.512Z"
+    },
+    "Dream Technology Invasion": {
+      "id": "build-1755848245517-fztabk0",
+      "name": "Dream Technology Invasion",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "a6710bd4-78d9-4d44-b94f-534d98eb3c48"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:37:25.517Z",
+      "lastUpdated": "2025-08-22T07:37:25.517Z"
+    },
+    "Celebrity Identity Crisis": {
+      "id": "build-1755848245518-hzuctud",
+      "name": "Celebrity Identity Crisis",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "b4156f09-0fdc-4012-bbfc-d46e9ffb7e80"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:37:25.518Z",
+      "lastUpdated": "2025-08-22T07:37:25.518Z"
+    },
+    "Mathematical Obsession Thrillers": {
+      "id": "build-1755848254835-f9xa59v",
+      "name": "Mathematical Obsession Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "c750e661-0b0c-46c5-8eca-c142d40de1f9",
+        "6339cff4-b9c7-4c45-9982-1d794e49da89"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T07:37:34.835Z",
+      "lastUpdated": "2025-08-22T07:46:20.153Z"
+    },
+    "Inanimate Object Obsession": {
+      "id": "build-1755848264872-15h565d",
+      "name": "Inanimate Object Obsession",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "74845f78-9886-4382-ae1e-50c7a25510da",
+        "a040d16c-9124-42fb-9913-5694400f8358",
+        "783e26e7-7cbc-4293-b661-1fc8da9289f6"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T07:37:44.872Z",
+      "lastUpdated": "2025-08-22T07:38:36.076Z"
+    },
+    "Labor Rights Horror": {
+      "id": "build-1755848264872-jexna5o",
+      "name": "Labor Rights Horror",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "62626532-3203-4c56-adbd-aef635040daa"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:37:44.872Z",
+      "lastUpdated": "2025-08-22T07:37:44.872Z"
+    },
+    "Racial Tension Therapy": {
+      "id": "build-1755848274091-r0hd9wm",
+      "name": "Racial Tension Therapy",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "5e578a7c-f3b5-4684-b26c-d67e25230cae"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:37:54.091Z",
+      "lastUpdated": "2025-08-22T07:37:54.091Z"
+    },
+    "Addiction Spiral Films": {
+      "id": "build-1755848293852-oqwc43i",
+      "name": "Addiction Spiral Films",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "959b3941-031f-40e8-9730-84f72056bbb3"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:38:13.852Z",
+      "lastUpdated": "2025-08-22T07:38:13.852Z"
+    },
+    "Environmental Illness Horror": {
+      "id": "build-1755848305219-d4ynx9i",
+      "name": "Environmental Illness Horror",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "23e1c1a7-bbab-4b36-9ca9-d39240db56a3"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:38:25.219Z",
+      "lastUpdated": "2025-08-22T07:38:25.219Z"
+    },
+    "Religious Delusion Horror": {
+      "id": "build-1755848305219-q0ofwwb",
+      "name": "Religious Delusion Horror",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "35ff3877-f261-479b-b0d5-d178c98f2dab",
+        "339f1b23-a788-46d4-b078-92e0a3c282e0"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T07:38:25.219Z",
+      "lastUpdated": "2025-08-22T07:43:02.103Z"
+    },
+    "Fraudulent Medium Thrillers": {
+      "id": "build-1755848305219-cyqmsgy",
+      "name": "Fraudulent Medium Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "f501dbee-e9a1-4703-bed6-d5f510213faf"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:38:25.219Z",
+      "lastUpdated": "2025-08-22T07:38:25.219Z"
+    },
+    "Memory Separation Thrillers": {
+      "id": "build-1755848325650-40g30z5",
+      "name": "Memory Separation Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "ff94d9f3-4d77-41fa-a4dd-fbd4ec77d830"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:38:45.650Z",
+      "lastUpdated": "2025-08-22T07:38:45.650Z"
+    },
+    "Contagious Anxiety Films": {
+      "id": "build-1755848325650-acaxe3y",
+      "name": "Contagious Anxiety Films",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "a6a3cf0e-6efe-4809-8e7e-443ba5d0ff61"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:38:45.650Z",
+      "lastUpdated": "2025-08-22T07:38:45.650Z"
+    },
+    "Pharmaceutical Conspiracy Thrillers": {
+      "id": "build-1755848356747-fqo9jee",
+      "name": "Pharmaceutical Conspiracy Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "aeac39f4-fad7-48dc-b8f9-596954c9093d"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:39:16.747Z",
+      "lastUpdated": "2025-08-22T07:39:16.747Z"
+    },
+    "Domestic Abuse Escape": {
+      "id": "build-1755848366898-6a9ukk3",
+      "name": "Domestic Abuse Escape",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "059f8bc3-0d24-4ccd-9d8f-fa23b0db9134",
+        "22d59af3-b5cc-4413-9187-acfb17ea5efd"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T07:39:26.898Z",
+      "lastUpdated": "2025-08-22T07:42:41.946Z"
+    },
+    "Teen Friendship Destruction": {
+      "id": "build-1755848417446-2smwnxj",
+      "name": "Teen Friendship Destruction",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "23438305-896d-45ac-80c9-dbf2b3fa52c8"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:40:17.446Z",
+      "lastUpdated": "2025-08-22T07:40:17.446Z"
+    },
+    "Racial Identity Subversion": {
+      "id": "build-1755848417447-u0v61ca",
+      "name": "Racial Identity Subversion",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "91154b05-d503-4503-8c74-29ba0bb9e84a"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:40:17.447Z",
+      "lastUpdated": "2025-08-22T07:40:17.447Z"
+    },
+    "Art Mirrors Life": {
+      "id": "build-1755848427588-fk8s79v",
+      "name": "Art Mirrors Life",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "e93128f5-ac8f-42ba-a577-8c93c235cbad"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:40:27.588Z",
+      "lastUpdated": "2025-08-22T07:40:27.588Z"
+    },
+    "Artistic Power Abuse": {
+      "id": "build-1755848437979-f8euqut",
+      "name": "Artistic Power Abuse",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "f4a9fc05-8916-4dde-8760-cc303186a355"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:40:37.979Z",
+      "lastUpdated": "2025-08-22T07:40:37.979Z"
+    },
+    "Forced Regression Horror": {
+      "id": "build-1755848448988-h0kn8wk",
+      "name": "Forced Regression Horror",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "3979ed04-f967-40a5-8823-0bde70a83f41"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:40:48.988Z",
+      "lastUpdated": "2025-08-22T07:40:48.988Z"
+    },
+    "Nature vs Nurture Thrillers": {
+      "id": "build-1755848448989-k7cl603",
+      "name": "Nature vs Nurture Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "b67fb10a-9277-4c61-8eac-6fe61d4ded5b"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:40:48.989Z",
+      "lastUpdated": "2025-08-22T07:40:48.989Z"
+    },
+    "Evil Child Thrillers": {
+      "id": "build-1755848448989-s3f8gq4",
+      "name": "Evil Child Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "b67fb10a-9277-4c61-8eac-6fe61d4ded5b",
+        "dd5ade94-6cb9-45b8-b7d8-059a76fb8dfb",
+        "3ad43d5c-bf05-4af0-966c-88be5ae79472",
+        "1136f72f-25e5-4d95-ae03-3ed94f223b8e"
+      ],
+      "size": 4,
+      "createdAt": "2025-08-22T07:40:48.989Z",
+      "lastUpdated": "2025-08-22T07:45:51.160Z"
+    },
+    "Dictator Origin Stories": {
+      "id": "build-1755848468721-z0acjun",
+      "name": "Dictator Origin Stories",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "e399891e-248d-41eb-aca7-a5c172162a22"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:41:08.721Z",
+      "lastUpdated": "2025-08-22T07:41:08.721Z"
+    },
+    "Institutional Power Struggles": {
+      "id": "build-1755848468721-uyqzkit",
+      "name": "Institutional Power Struggles",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "85513fa4-bba0-433e-b35b-5f659329b8a7"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:41:08.721Z",
+      "lastUpdated": "2025-08-22T07:41:08.722Z"
+    },
+    "Captivity Psychology Thrillers": {
+      "id": "build-1755848468722-hknamkr",
+      "name": "Captivity Psychology Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "055cf0ab-10a2-421a-8cfd-de043b4abea5"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:41:08.722Z",
+      "lastUpdated": "2025-08-22T07:41:08.722Z"
+    },
+    "Paranoia Thrillers": {
+      "id": "build-1755848479000-f0qhzpl",
+      "name": "Paranoia Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "566cccc7-db74-4dd4-a8c0-d0518435d8bb"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:41:19.000Z",
+      "lastUpdated": "2025-08-22T07:41:19.000Z"
+    },
+    "Audio Evidence Obsession": {
+      "id": "build-1755848479000-fo3nk41",
+      "name": "Audio Evidence Obsession",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "566cccc7-db74-4dd4-a8c0-d0518435d8bb"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:41:19.000Z",
+      "lastUpdated": "2025-08-22T07:41:19.000Z"
+    },
+    "Child Perspective Thrillers": {
+      "id": "build-1755848510364-yyzz703",
+      "name": "Child Perspective Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "7b175f6f-dd20-4d4e-b617-ffac28c8cdb9",
+        "b72c27af-a46f-4bda-9ea2-58dc8d31433f",
+        "782289fc-7863-44f8-948c-cd194ea8e8c9"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T07:41:50.364Z",
+      "lastUpdated": "2025-08-22T07:43:21.903Z"
+    },
+    "Colonial Era Deception": {
+      "id": "build-1755848542044-jnb9pqx",
+      "name": "Colonial Era Deception",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "eef90226-63c7-4b97-a2c4-a80c63e71023"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:42:22.044Z",
+      "lastUpdated": "2025-08-22T07:42:22.044Z"
+    },
+    "Artistic Violence Philosophy": {
+      "id": "build-1755848561945-l713gdb",
+      "name": "Artistic Violence Philosophy",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "8983a40d-0d88-4927-aaf8-d3217a1ba698"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:42:41.945Z",
+      "lastUpdated": "2025-08-22T07:42:41.945Z"
+    },
+    "Class Warfare Domesticity": {
+      "id": "build-1755848561946-3b24p5p",
+      "name": "Class Warfare Domesticity",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "22d59af3-b5cc-4413-9187-acfb17ea5efd"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:42:41.946Z",
+      "lastUpdated": "2025-08-22T07:42:41.946Z"
+    },
+    "Experimental Treatment Timetravel": {
+      "id": "build-1755848572264-atpdlio",
+      "name": "Experimental Treatment Timetravel",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "42f00bab-3b8e-447f-b411-2d2a142b45b3"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:42:52.264Z",
+      "lastUpdated": "2025-08-22T07:42:52.264Z"
+    },
+    "Greek Tragedy Adaptations": {
+      "id": "build-1755848572265-vwibaxf",
+      "name": "Greek Tragedy Adaptations",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "a234c026-c40f-4324-a004-7c365dff20ec"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:42:52.265Z",
+      "lastUpdated": "2025-08-22T07:42:52.265Z"
+    },
+    "Maternal Abandonment Guilt": {
+      "id": "build-1755848592304-nw3hwnv",
+      "name": "Maternal Abandonment Guilt",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "8d8d66a0-837a-4a32-8313-660b154a9c5e"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:43:12.304Z",
+      "lastUpdated": "2025-08-22T07:43:12.304Z"
+    },
+    "Military Experiment Horror": {
+      "id": "build-1755848601902-rulpypr",
+      "name": "Military Experiment Horror",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "62cee0a9-73d3-4afd-84f7-c47931ac54cd"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:43:21.902Z",
+      "lastUpdated": "2025-08-22T07:43:21.902Z"
+    },
+    "War Trauma Romance": {
+      "id": "build-1755848612827-qe12s0c",
+      "name": "War Trauma Romance",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "dfeb020b-6af7-40f1-aa6a-89931b0743de"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:43:32.827Z",
+      "lastUpdated": "2025-08-22T07:43:32.827Z"
+    },
+    "Numerical Obsession Thrillers": {
+      "id": "build-1755848612828-pjxc4ps",
+      "name": "Numerical Obsession Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "7aa9b37d-b5bc-436a-8c0d-d2c3a08ba12f"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:43:32.828Z",
+      "lastUpdated": "2025-08-22T07:43:32.828Z"
+    },
+    "Classical Music Obsession": {
+      "id": "build-1755848622873-r9ban49",
+      "name": "Classical Music Obsession",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "b2649896-a150-4a81-8fcb-a4cea9170270",
+        "bf8dcc50-9284-43f6-841d-4a5af576e033"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T07:43:42.873Z",
+      "lastUpdated": "2025-08-22T07:44:03.677Z"
+    },
+    "Apocalyptic Faith Crisis": {
+      "id": "build-1755848631814-jytk5lz",
+      "name": "Apocalyptic Faith Crisis",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "bd1044b2-10f1-4a29-8d69-31e2e349853f"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:43:51.814Z",
+      "lastUpdated": "2025-08-22T07:43:51.814Z"
+    },
+    "Surgical Revenge Thrillers": {
+      "id": "build-1755848654297-9o0ukxp",
+      "name": "Surgical Revenge Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "69d05f7e-429d-4b2b-aa94-db5d388f75a0"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:44:14.297Z",
+      "lastUpdated": "2025-08-22T07:44:14.297Z"
+    },
+    "Family Ideal Obsession": {
+      "id": "build-1755848664553-o2t4w1q",
+      "name": "Family Ideal Obsession",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "854cbbe8-fb8c-403c-a632-dc1ebc3d52b1"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:44:24.553Z",
+      "lastUpdated": "2025-08-22T07:44:24.553Z"
+    },
+    "Giallo-Inspired Surrealism": {
+      "id": "build-1755848664554-nm9kmre",
+      "name": "Giallo-Inspired Surrealism",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "86ea1573-b6fb-4743-a6af-eccb3ee27374"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:44:24.554Z",
+      "lastUpdated": "2025-08-22T07:44:24.554Z"
+    },
+    "Victorian Medical Confinement": {
+      "id": "build-1755848693888-nn51ng0",
+      "name": "Victorian Medical Confinement",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "68d5ef3e-2ad3-4bdc-93a6-0ae961913c7a"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:44:53.888Z",
+      "lastUpdated": "2025-08-22T07:44:53.888Z"
+    },
+    "Body Identity Transformation": {
+      "id": "build-1755848704141-en7dhx9",
+      "name": "Body Identity Transformation",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "dc5625ff-43f3-4d40-980c-ae4f782c6e9f"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:45:04.141Z",
+      "lastUpdated": "2025-08-22T07:45:04.141Z"
+    },
+    "Maternal Loss Delusions": {
+      "id": "build-1755848704141-wwmpp4z",
+      "name": "Maternal Loss Delusions",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "e263c7e0-9d3a-4099-81ac-aef709642809"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:45:04.141Z",
+      "lastUpdated": "2025-08-22T07:45:04.141Z"
+    },
+    "Time Loop Guilt": {
+      "id": "build-1755848715329-xfrvubf",
+      "name": "Time Loop Guilt",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "06e44d53-69f4-4673-97cb-3916ef166caa"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:45:15.329Z",
+      "lastUpdated": "2025-08-22T07:45:15.329Z"
+    },
+    "Supernatural Crime Investigation": {
+      "id": "build-1755848715331-zyku5wb",
+      "name": "Supernatural Crime Investigation",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "2ce5d7d0-e690-45aa-bf81-991e4e7e6976"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:45:15.331Z",
+      "lastUpdated": "2025-08-22T07:45:15.331Z"
+    },
+    "Child Star Breakdown": {
+      "id": "build-1755848751160-v5cxfrv",
+      "name": "Child Star Breakdown",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "4980ad6f-361b-4473-98d2-fdb7ddfdee1a"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:45:51.160Z",
+      "lastUpdated": "2025-08-22T07:45:51.160Z"
+    },
+    "Audio Expertise Thrillers": {
+      "id": "build-1755848761526-zv6xiib",
+      "name": "Audio Expertise Thrillers",
+      "description": "Thematic collection for Psychological films",
+      "movieIds": [
+        "8c882a24-6c02-446e-a4b6-d2ae3b0409f0"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T07:46:01.526Z",
+      "lastUpdated": "2025-08-22T07:46:01.526Z"
+    }
+  },
+  "processingState": {
+    "completedBatches": [],
+    "failedMovies": [
+      {
+        "movieId": "db8966d4-1efb-47a9-926d-7388e5ba01d1",
+        "title": "Black Mirror",
+        "year": 2011,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T07:28:20.441Z"
+      },
+      {
+        "movieId": "260c3a5c-4381-48f9-bed2-73f7f0a34c7d",
+        "title": "Demons",
+        "year": 1971,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T07:30:15.848Z"
+      },
+      {
+        "movieId": "b577b78d-b82d-48e5-bbe1-c8d7b6871265",
+        "title": "Fear Factor",
+        "year": 2023,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T07:31:59.640Z"
+      },
+      {
+        "movieId": "1179eaa1-86e6-49a5-8b3e-fee939b0452f",
+        "title": "Loneliness",
+        "year": 2024,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T07:34:46.204Z"
+      },
+      {
+        "movieId": "d346a648-4a60-4695-8a68-2436be8978db",
+        "title": "Los",
+        "year": 2000,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T07:34:46.204Z"
+      },
+      {
+        "movieId": "95fa6994-ef02-4e98-8b1d-35e2ab7dcb2c",
+        "title": "Martha",
+        "year": 1974,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T07:35:16.189Z"
+      },
+      {
+        "movieId": "4de957af-b9ab-49a5-858f-08cc4f044964",
+        "title": "Nevermind",
+        "year": 2018,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T07:35:53.561Z"
+      },
+      {
+        "movieId": "e75ca649-fd53-4fae-bfc2-25b23f38cd9a",
+        "title": "Nightcap",
+        "year": 2000,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T07:36:36.367Z"
+      },
+      {
+        "movieId": "0a2e88f3-e2b1-4870-97d9-d74c32a71abe",
+        "title": "Short Cuts: David Cronenberg's Crash",
+        "year": 2025,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T07:39:07.099Z"
+      },
+      {
+        "movieId": "4d41c8a6-db92-42cb-9c40-d30e127a1db0",
+        "title": "Success",
+        "year": 2018,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T07:40:07.517Z"
+      }
+    ]
+  }
+}
