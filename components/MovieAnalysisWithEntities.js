@@ -954,9 +954,10 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
 
   // Create alternating pattern: Text → Featured Films → Text → Explore Further → Repeat
   textSections.forEach((section, textIndex) => {
-    // Add section header based on content type (skip first section subhead per user request)
-    if (section.type && section.type !== 'text' && textIndex !== 0) {
-      const subheadText = formatSubheadFromType(section.type);
+    // Add section header - support both new dynamic subheads and legacy types (skip first section per user request)
+    if ((section.subhead || section.type) && section.type !== 'text' && textIndex !== 0) {
+      // Use dynamic subhead if available, otherwise fall back to formatted type
+      const subheadText = section.subhead || formatSubheadFromType(section.type);
       
       if (subheadText) {
         content.push(
