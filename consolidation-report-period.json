@@ -1,0 +1,491 @@
+{
+  "summary": {
+    "originalTotalLists": 56,
+    "originalLargeLists": 13,
+    "originalSmallLists": 43,
+    "finalTotalLists": 19,
+    "preservedLargeLists": 13,
+    "newConsolidatedLists": 6,
+    "unusedSmallLists": 2,
+    "moviesInSmallLists": 79,
+    "moviesInNewConsolidated": 44
+  },
+  "consolidatedCollections": {
+    "Royal Court Dramas": {
+      "name": "Royal Court Dramas",
+      "movieIds": [
+        "9fcd9cba-b9a5-490d-b800-7db6cb4383dc",
+        "9cb0e7e4-4e9a-440e-8531-bdce11f22428",
+        "690f48fd-358f-4d73-af67-fd7335db0348",
+        "d967140f-883f-43f0-924c-c76a27a066e0",
+        "646e0d3b-3fd9-42e1-ab1b-7998400403b8",
+        "7a7ae27d-8227-49b9-ad1b-978abbaa96d5",
+        "f0c9cb84-94e5-462e-ade6-f185582de8a4",
+        "80b03dbc-a3c4-4874-95ac-8839fa5a214a",
+        "42107d3b-6e85-4b08-9000-57ee43ce33ee",
+        "47657c9f-e47e-404e-b261-08e3fed06f71",
+        "ae2f800a-30dc-462b-8167-ae3c01962d27",
+        "893abb51-03ca-4381-82cc-d1a45c451019",
+        "5df20054-4e60-4062-b3cb-b6d25e5d5c0a",
+        "894f5df8-2592-41a9-9c70-0d7a9d2bb126",
+        "0c2576b2-377a-43d9-9e3f-973ff06840ce",
+        "58d096dc-d664-48dd-bbb5-866edc8b37b8",
+        "ee0925a9-70f1-4a47-a827-3340ff1027b2",
+        "85f524e5-f24c-4342-b8fe-89f090974391"
+      ],
+      "movieCount": 18,
+      "type": "preserved_large_list"
+    },
+    "Female Pioneer Stories": {
+      "name": "Female Pioneer Stories",
+      "movieIds": [
+        "9fcd9cba-b9a5-490d-b800-7db6cb4383dc",
+        "9cb0e7e4-4e9a-440e-8531-bdce11f22428",
+        "4677b1db-3c06-46fd-8bf0-f8a6dad9a0d0",
+        "91168438-4eb0-47ec-8c67-630b28cd4a35",
+        "ed356baf-5f44-4c9e-bc85-3bf5358e0f30",
+        "84ec963f-ce51-4e0f-8d38-1e26c8e0c6ea",
+        "d22bee83-9976-48c0-83fe-c30005950c41",
+        "8439ec62-7a25-4711-9dea-c5009f39a8e2"
+      ],
+      "movieCount": 8,
+      "type": "preserved_large_list"
+    },
+    "Merchant Ivory Classics": {
+      "name": "Merchant Ivory Classics",
+      "movieIds": [
+        "6a1955a2-da90-4e62-b3ff-571b54e4e457",
+        "d8e0f93c-b347-4bb8-b12a-5e375e2a3b86",
+        "7d25dd27-c738-40e3-a71d-97baa3a3c385",
+        "654c96e5-d316-4415-bfe4-28692f286994",
+        "8439ec62-7a25-4711-9dea-c5009f39a8e2",
+        "f92e428a-06c5-45e5-83e0-46840d2d55be",
+        "1fe85ccb-e279-4e4a-8d46-5f5e27a5f95b",
+        "2f53df56-acaf-4432-bc43-1908cda16645",
+        "0c2576b2-377a-43d9-9e3f-973ff06840ce"
+      ],
+      "movieCount": 9,
+      "type": "preserved_large_list"
+    },
+    "British Literary Adaptations": {
+      "name": "British Literary Adaptations",
+      "movieIds": [
+        "6a1955a2-da90-4e62-b3ff-571b54e4e457",
+        "690f48fd-358f-4d73-af67-fd7335db0348",
+        "d967140f-883f-43f0-924c-c76a27a066e0",
+        "646e0d3b-3fd9-42e1-ab1b-7998400403b8",
+        "4677b1db-3c06-46fd-8bf0-f8a6dad9a0d0",
+        "7a7ae27d-8227-49b9-ad1b-978abbaa96d5",
+        "eae91a2f-9c38-41d2-a0cc-88990f8b1ced",
+        "d8e0f93c-b347-4bb8-b12a-5e375e2a3b86",
+        "f0c9cb84-94e5-462e-ade6-f185582de8a4",
+        "47657c9f-e47e-404e-b261-08e3fed06f71",
+        "adfdded7-4adb-43f5-98b7-c3a49443c372",
+        "c868a1e7-5f3b-42b7-827f-f9df3c8460b0",
+        "aeb818ea-27c3-445a-8ff4-4ad4831723eb",
+        "ed356baf-5f44-4c9e-bc85-3bf5358e0f30",
+        "84ec963f-ce51-4e0f-8d38-1e26c8e0c6ea",
+        "7133c7e4-7c29-4550-a556-208dae937c42",
+        "3c912b7d-3600-425b-8a21-d1c48c20193a",
+        "7d25dd27-c738-40e3-a71d-97baa3a3c385",
+        "6096c8da-7761-4c6a-8dfb-7509ac17164b",
+        "926bbec0-828b-4833-855e-72ec547a066a",
+        "ab106a73-b15e-4617-8803-fa3533f77029",
+        "a0edcaff-4cde-4113-ba46-cbfb8617eb3c",
+        "eb043cb7-37cc-4cf1-a3d7-c6faaef556a2",
+        "4d0638b0-67d8-44ec-8b63-cce32480a684",
+        "136f6873-3e6c-49a0-b4ab-6950ff5db1a6",
+        "99c76802-97ed-4cec-959d-f2ea3d94e6a7",
+        "222271c7-53a1-4e3c-9cb6-d66d1feca3d7",
+        "fa170d5a-9227-4393-b312-77e35f3f9fa0",
+        "afce8f63-de13-4fdc-8640-591fcc860e76",
+        "b1f8f8ad-c26e-42be-afc4-009715877759",
+        "654c96e5-d316-4415-bfe4-28692f286994",
+        "a76a8706-94e3-48e6-9e57-cc44a5b4af73",
+        "8439ec62-7a25-4711-9dea-c5009f39a8e2",
+        "f92e428a-06c5-45e5-83e0-46840d2d55be",
+        "2bfe3298-73ab-447d-a993-d3b7352dd25f",
+        "259e6641-3290-401d-a777-7aef4bcf7a30",
+        "1fe85ccb-e279-4e4a-8d46-5f5e27a5f95b",
+        "44a528c5-8189-4c1b-85d2-36735e158f9e",
+        "37b7f285-ad06-4211-99cb-1484ace40713",
+        "d1c3bb40-6c3e-4ab0-8b9a-96f985af64aa",
+        "2f53df56-acaf-4432-bc43-1908cda16645",
+        "0c2576b2-377a-43d9-9e3f-973ff06840ce",
+        "7e959000-595f-4009-b39b-83e586afe754",
+        "50f271e4-4a05-45a3-80f1-3b2fb0cb9d37",
+        "85f524e5-f24c-4342-b8fe-89f090974391",
+        "5872580f-46d3-468e-9de5-403e03f4dfec"
+      ],
+      "movieCount": 46,
+      "type": "preserved_large_list"
+    },
+    "Edo Period Dramas": {
+      "name": "Edo Period Dramas",
+      "movieIds": [
+        "cc443136-6ada-4367-bd00-327916105027",
+        "25649bbf-c1fa-4c3d-8b37-b7793340f0c9",
+        "7b9da1ae-6e48-4b50-a465-53056a7540aa",
+        "fbd47a76-965d-41d0-bf80-ebecf6a61f13",
+        "5f790cf4-00af-4ba2-9b46-d46384a90a05",
+        "a5393cb9-ef8e-4f9a-8da4-e24540137e02",
+        "1263d26d-e500-47d7-8cf8-8080c8ef2f9b",
+        "d09fec2d-2664-4352-b530-f6206a985562",
+        "a103a7aa-b6c8-46ae-883c-3d34e3f5c556",
+        "274cfd5e-648f-4f3b-adcc-3188fab4e190",
+        "219fde8a-524e-4c31-ab68-366af3d914e7"
+      ],
+      "movieCount": 11,
+      "type": "preserved_large_list"
+    },
+    "Japanese Period Dramas": {
+      "name": "Japanese Period Dramas",
+      "movieIds": [
+        "a9bf07db-daae-40c3-89c2-0a6755e97a43",
+        "ae2f800a-30dc-462b-8167-ae3c01962d27",
+        "25649bbf-c1fa-4c3d-8b37-b7793340f0c9",
+        "7b9da1ae-6e48-4b50-a465-53056a7540aa",
+        "fbd47a76-965d-41d0-bf80-ebecf6a61f13",
+        "5f790cf4-00af-4ba2-9b46-d46384a90a05",
+        "a5393cb9-ef8e-4f9a-8da4-e24540137e02",
+        "1263d26d-e500-47d7-8cf8-8080c8ef2f9b",
+        "8dc5f88b-f4a1-45df-9f4f-cdb1ce2201b5",
+        "a6cb7969-9b58-44b7-bf8e-0251c3a63a13",
+        "d09fec2d-2664-4352-b530-f6206a985562",
+        "a103a7aa-b6c8-46ae-883c-3d34e3f5c556",
+        "7d285325-2656-4646-a7f6-d08946706980",
+        "58d096dc-d664-48dd-bbb5-866edc8b37b8",
+        "274cfd5e-648f-4f3b-adcc-3188fab4e190",
+        "219fde8a-524e-4c31-ab68-366af3d914e7",
+        "3aa673b4-098e-44c1-8839-b8c49f1b19ce"
+      ],
+      "movieCount": 17,
+      "type": "preserved_large_list"
+    },
+    "Samurai Honor Stories": {
+      "name": "Samurai Honor Stories",
+      "movieIds": [
+        "a9bf07db-daae-40c3-89c2-0a6755e97a43",
+        "ae2f800a-30dc-462b-8167-ae3c01962d27",
+        "25649bbf-c1fa-4c3d-8b37-b7793340f0c9",
+        "7b9da1ae-6e48-4b50-a465-53056a7540aa",
+        "5f790cf4-00af-4ba2-9b46-d46384a90a05",
+        "a5393cb9-ef8e-4f9a-8da4-e24540137e02",
+        "d09fec2d-2664-4352-b530-f6206a985562",
+        "7d285325-2656-4646-a7f6-d08946706980"
+      ],
+      "movieCount": 8,
+      "type": "preserved_large_list"
+    },
+    "French Society Scandals": {
+      "name": "French Society Scandals",
+      "movieIds": [
+        "9cb0e7e4-4e9a-440e-8531-bdce11f22428",
+        "80b03dbc-a3c4-4874-95ac-8839fa5a214a",
+        "dd835a69-367b-4506-b853-22a58159aba8",
+        "1f7f02cc-edbc-43af-8638-84bd99b90045",
+        "42107d3b-6e85-4b08-9000-57ee43ce33ee",
+        "adfdded7-4adb-43f5-98b7-c3a49443c372",
+        "46865a69-afa4-43a9-accc-db1aa9434b36",
+        "a0edcaff-4cde-4113-ba46-cbfb8617eb3c",
+        "937e286b-5ff8-4968-a3a1-9c4a8210d6f0",
+        "4f38069f-0b22-48ed-b2f7-25084a7015d3",
+        "26b459bd-f0c5-4efb-a512-03fc1b4b4d1c",
+        "7eb7d880-b89f-4cfb-96b9-85cd0c520d5e",
+        "9ba5a8e4-41d8-400f-b1c1-f1cbffcf5971",
+        "510c0bd0-8ef0-414d-ba03-69ce03a2fc3f",
+        "ee0925a9-70f1-4a47-a827-3340ff1027b2"
+      ],
+      "movieCount": 15,
+      "type": "preserved_large_list"
+    },
+    "Social Climber Tragedies": {
+      "name": "Social Climber Tragedies",
+      "movieIds": [
+        "7a7ae27d-8227-49b9-ad1b-978abbaa96d5",
+        "f0c9cb84-94e5-462e-ade6-f185582de8a4",
+        "dd835a69-367b-4506-b853-22a58159aba8",
+        "1f7f02cc-edbc-43af-8638-84bd99b90045",
+        "42107d3b-6e85-4b08-9000-57ee43ce33ee",
+        "adfdded7-4adb-43f5-98b7-c3a49443c372",
+        "c868a1e7-5f3b-42b7-827f-f9df3c8460b0",
+        "aeb818ea-27c3-445a-8ff4-4ad4831723eb",
+        "ec6df9a4-fe30-45fd-bfe9-d29e0b52d597",
+        "7133c7e4-7c29-4550-a556-208dae937c42",
+        "3c912b7d-3600-425b-8a21-d1c48c20193a",
+        "7d25dd27-c738-40e3-a71d-97baa3a3c385",
+        "6096c8da-7761-4c6a-8dfb-7509ac17164b",
+        "926bbec0-828b-4833-855e-72ec547a066a",
+        "893abb51-03ca-4381-82cc-d1a45c451019",
+        "deac7f27-fa54-4fb1-b155-f5c6ddcf478f",
+        "fbd47a76-965d-41d0-bf80-ebecf6a61f13",
+        "46865a69-afa4-43a9-accc-db1aa9434b36",
+        "ab106a73-b15e-4617-8803-fa3533f77029",
+        "5fb10fa0-ab62-4f53-b163-cd537386c1dc",
+        "a0edcaff-4cde-4113-ba46-cbfb8617eb3c",
+        "eb043cb7-37cc-4cf1-a3d7-c6faaef556a2",
+        "937e286b-5ff8-4968-a3a1-9c4a8210d6f0",
+        "613f88b0-4a19-4815-a51d-2f5e74217858",
+        "d22bee83-9976-48c0-83fe-c30005950c41",
+        "4d0638b0-67d8-44ec-8b63-cce32480a684",
+        "136f6873-3e6c-49a0-b4ab-6950ff5db1a6",
+        "99c76802-97ed-4cec-959d-f2ea3d94e6a7",
+        "222271c7-53a1-4e3c-9cb6-d66d1feca3d7",
+        "fa170d5a-9227-4393-b312-77e35f3f9fa0",
+        "c76641f4-a6cc-4d90-aacb-57554cc2b6c9",
+        "e82287dd-294f-4677-b6b6-d577e6c4d5fa",
+        "afce8f63-de13-4fdc-8640-591fcc860e76",
+        "b1f8f8ad-c26e-42be-afc4-009715877759",
+        "1263d26d-e500-47d7-8cf8-8080c8ef2f9b",
+        "8dc5f88b-f4a1-45df-9f4f-cdb1ce2201b5",
+        "654c96e5-d316-4415-bfe4-28692f286994",
+        "5df20054-4e60-4062-b3cb-b6d25e5d5c0a",
+        "a76a8706-94e3-48e6-9e57-cc44a5b4af73",
+        "26b459bd-f0c5-4efb-a512-03fc1b4b4d1c",
+        "f92e428a-06c5-45e5-83e0-46840d2d55be",
+        "2bfe3298-73ab-447d-a993-d3b7352dd25f",
+        "259e6641-3290-401d-a777-7aef4bcf7a30",
+        "1fe85ccb-e279-4e4a-8d46-5f5e27a5f95b",
+        "44a528c5-8189-4c1b-85d2-36735e158f9e",
+        "9ba5a8e4-41d8-400f-b1c1-f1cbffcf5971",
+        "37b7f285-ad06-4211-99cb-1484ace40713",
+        "510c0bd0-8ef0-414d-ba03-69ce03a2fc3f",
+        "d1c3bb40-6c3e-4ab0-8b9a-96f985af64aa",
+        "2f53df56-acaf-4432-bc43-1908cda16645",
+        "0c2576b2-377a-43d9-9e3f-973ff06840ce",
+        "7e959000-595f-4009-b39b-83e586afe754",
+        "50f271e4-4a05-45a3-80f1-3b2fb0cb9d37",
+        "ca3a1e49-9bf5-4c16-a77a-2b03c4c72b71",
+        "42d4e44c-057f-4698-b17c-cc307b874977",
+        "ee0925a9-70f1-4a47-a827-3340ff1027b2",
+        "85f524e5-f24c-4342-b8fe-89f090974391",
+        "5872580f-46d3-468e-9de5-403e03f4dfec",
+        "e0f5a1c8-33a1-4c72-8a34-1cfc2c1fab38"
+      ],
+      "movieCount": 59,
+      "type": "preserved_large_list"
+    },
+    "Historical Mystery Thrillers": {
+      "name": "Historical Mystery Thrillers",
+      "movieIds": [
+        "80b03dbc-a3c4-4874-95ac-8839fa5a214a",
+        "4cbc8c61-41ed-47a0-81ce-6acb9d2c7e35",
+        "5fb10fa0-ab62-4f53-b163-cd537386c1dc",
+        "e82287dd-294f-4677-b6b6-d577e6c4d5fa",
+        "a6cb7969-9b58-44b7-bf8e-0251c3a63a13",
+        "894f5df8-2592-41a9-9c70-0d7a9d2bb126",
+        "237574ff-e50e-4245-8368-8e3fd5eec54d",
+        "c4238fca-ee62-4703-afa2-510897276aec",
+        "42d4e44c-057f-4698-b17c-cc307b874977"
+      ],
+      "movieCount": 9,
+      "type": "preserved_large_list"
+    },
+    "Victorian Rural Dramas": {
+      "name": "Victorian Rural Dramas",
+      "movieIds": [
+        "ed356baf-5f44-4c9e-bc85-3bf5358e0f30",
+        "84ec963f-ce51-4e0f-8d38-1e26c8e0c6ea",
+        "3c912b7d-3600-425b-8a21-d1c48c20193a",
+        "6096c8da-7761-4c6a-8dfb-7509ac17164b",
+        "deac7f27-fa54-4fb1-b155-f5c6ddcf478f",
+        "ab106a73-b15e-4617-8803-fa3533f77029",
+        "eb043cb7-37cc-4cf1-a3d7-c6faaef556a2",
+        "613f88b0-4a19-4815-a51d-2f5e74217858",
+        "d22bee83-9976-48c0-83fe-c30005950c41",
+        "4d0638b0-67d8-44ec-8b63-cce32480a684",
+        "222271c7-53a1-4e3c-9cb6-d66d1feca3d7",
+        "237574ff-e50e-4245-8368-8e3fd5eec54d",
+        "2bfe3298-73ab-447d-a993-d3b7352dd25f",
+        "259e6641-3290-401d-a777-7aef4bcf7a30",
+        "791f5117-7121-4c41-a9f9-68fbc492193c",
+        "d1c3bb40-6c3e-4ab0-8b9a-96f985af64aa",
+        "85f524e5-f24c-4342-b8fe-89f090974391"
+      ],
+      "movieCount": 17,
+      "type": "preserved_large_list"
+    },
+    "Gothic Marriage Thrillers": {
+      "name": "Gothic Marriage Thrillers",
+      "movieIds": [
+        "ab106a73-b15e-4617-8803-fa3533f77029",
+        "136f6873-3e6c-49a0-b4ab-6950ff5db1a6",
+        "d69737f3-19b8-473d-a8d4-bc5f751c450f",
+        "37b7f285-ad06-4211-99cb-1484ace40713",
+        "2f53df56-acaf-4432-bc43-1908cda16645",
+        "42d4e44c-057f-4698-b17c-cc307b874977"
+      ],
+      "movieCount": 6,
+      "type": "preserved_large_list"
+    },
+    "Forbidden Love Stories": {
+      "name": "Forbidden Love Stories",
+      "movieIds": [
+        "4f38069f-0b22-48ed-b2f7-25084a7015d3",
+        "a76a8706-94e3-48e6-9e57-cc44a5b4af73",
+        "26b459bd-f0c5-4efb-a512-03fc1b4b4d1c",
+        "2bfe3298-73ab-447d-a993-d3b7352dd25f",
+        "259e6641-3290-401d-a777-7aef4bcf7a30",
+        "9ba5a8e4-41d8-400f-b1c1-f1cbffcf5971",
+        "d69737f3-19b8-473d-a8d4-bc5f751c450f",
+        "a103a7aa-b6c8-46ae-883c-3d34e3f5c556",
+        "58d096dc-d664-48dd-bbb5-866edc8b37b8",
+        "50f271e4-4a05-45a3-80f1-3b2fb0cb9d37",
+        "ee0925a9-70f1-4a47-a827-3340ff1027b2",
+        "5872580f-46d3-468e-9de5-403e03f4dfec",
+        "e0f5a1c8-33a1-4c72-8a34-1cfc2c1fab38"
+      ],
+      "movieCount": 13,
+      "type": "preserved_large_list"
+    },
+    "Character-Driven Stories": {
+      "name": "Character-Driven Stories",
+      "movieIds": [
+        "cc443136-6ada-4367-bd00-327916105027",
+        "7a7ae27d-8227-49b9-ad1b-978abbaa96d5",
+        "ec6df9a4-fe30-45fd-bfe9-d29e0b52d597",
+        "5fb10fa0-ab62-4f53-b163-cd537386c1dc",
+        "ca3a1e49-9bf5-4c16-a77a-2b03c4c72b71",
+        "91168438-4eb0-47ec-8c67-630b28cd4a35",
+        "a6d0ee0e-07ad-480c-a5d4-907f2a41d2cc",
+        "3aa673b4-098e-44c1-8839-b8c49f1b19ce"
+      ],
+      "movieCount": 8,
+      "sourceCollections": [
+        "Economic History Films",
+        "Immigration Journey Dramas",
+        "WWII Superhero Origins",
+        "Buddhist Spiritual Journeys"
+      ],
+      "consolidationRule": "character, hero, protagonist, journey, story",
+      "type": "consolidated_from_small_lists"
+    },
+    "Romance and Relationships": {
+      "name": "Romance and Relationships",
+      "movieIds": [
+        "6a1955a2-da90-4e62-b3ff-571b54e4e457",
+        "c868a1e7-5f3b-42b7-827f-f9df3c8460b0",
+        "7d25dd27-c738-40e3-a71d-97baa3a3c385",
+        "50f271e4-4a05-45a3-80f1-3b2fb0cb9d37",
+        "1f7f02cc-edbc-43af-8638-84bd99b90045",
+        "613f88b0-4a19-4815-a51d-2f5e74217858",
+        "fa170d5a-9227-4393-b312-77e35f3f9fa0"
+      ],
+      "movieCount": 7,
+      "sourceCollections": [
+        "Edwardian Romance Dramas",
+        "Military Romance Dramas",
+        "Partition Era Romances"
+      ],
+      "consolidationRule": "romance, love, relationship, couple, marriage",
+      "type": "consolidated_from_small_lists"
+    },
+    "Colonial & Cultural Identity": {
+      "name": "Colonial & Cultural Identity",
+      "movieIds": [
+        "d8e0f93c-b347-4bb8-b12a-5e375e2a3b86",
+        "deac7f27-fa54-4fb1-b155-f5c6ddcf478f",
+        "5fb10fa0-ab62-4f53-b163-cd537386c1dc",
+        "c76641f4-a6cc-4d90-aacb-57554cc2b6c9",
+        "7eb7d880-b89f-4cfb-96b9-85cd0c520d5e",
+        "5df20054-4e60-4062-b3cb-b6d25e5d5c0a",
+        "a6cb7969-9b58-44b7-bf8e-0251c3a63a13",
+        "42d4e44c-057f-4698-b17c-cc307b874977"
+      ],
+      "movieCount": 8,
+      "sourceCollections": [
+        "Colonial India Dramas",
+        "Dutch Working Class Sagas",
+        "Post-Independence India Dramas",
+        "Italian Independence Dramas",
+        "Gender Identity Dramas",
+        "Colonial Resistance Dramas",
+        "Colonial Australia Dramas"
+      ],
+      "consolidationRule": "colonial, independence, cultural, identity, resistance, working, class",
+      "type": "consolidated_from_small_lists"
+    },
+    "European Society & Politics": {
+      "name": "European Society & Politics",
+      "movieIds": [
+        "690f48fd-358f-4d73-af67-fd7335db0348",
+        "d967140f-883f-43f0-924c-c76a27a066e0",
+        "646e0d3b-3fd9-42e1-ab1b-7998400403b8",
+        "99c76802-97ed-4cec-959d-f2ea3d94e6a7",
+        "adfdded7-4adb-43f5-98b7-c3a49443c372",
+        "46865a69-afa4-43a9-accc-db1aa9434b36",
+        "c76641f4-a6cc-4d90-aacb-57554cc2b6c9",
+        "1fe85ccb-e279-4e4a-8d46-5f5e27a5f95b"
+      ],
+      "movieCount": 8,
+      "sourceCollections": [
+        "Russian Society Dramas",
+        "German Society Dramas",
+        "Italian Aristocracy Dramas",
+        "Gilded Age Society"
+      ],
+      "consolidationRule": "russian, italian, german, aristocracy, society, political",
+      "type": "consolidated_from_small_lists"
+    },
+    "Religious & Moral Conflicts": {
+      "name": "Religious & Moral Conflicts",
+      "movieIds": [
+        "4cbc8c61-41ed-47a0-81ce-6acb9d2c7e35",
+        "222271c7-53a1-4e3c-9cb6-d66d1feca3d7",
+        "d69737f3-19b8-473d-a8d4-bc5f751c450f",
+        "ca3a1e49-9bf5-4c16-a77a-2b03c4c72b71",
+        "3aa673b4-098e-44c1-8839-b8c49f1b19ce",
+        "237574ff-e50e-4245-8368-8e3fd5eec54d",
+        "c4238fca-ee62-4703-afa2-510897276aec"
+      ],
+      "movieCount": 7,
+      "sourceCollections": [
+        "Joseon Horror Dramas",
+        "Victorian Religious Dramas",
+        "Victorian Heist Films",
+        "Religious Horror Dramas",
+        "Moral Justice Dramas",
+        "Witch Trial Dramas"
+      ],
+      "consolidationRule": "religious, victorian, moral, witch, trial, horror",
+      "type": "consolidated_from_small_lists"
+    },
+    "Arts & Cultural Movements": {
+      "name": "Arts & Cultural Movements",
+      "movieIds": [
+        "a9bf07db-daae-40c3-89c2-0a6755e97a43",
+        "7133c7e4-7c29-4550-a556-208dae937c42",
+        "4f38069f-0b22-48ed-b2f7-25084a7015d3",
+        "219fde8a-524e-4c31-ab68-366af3d914e7",
+        "937e286b-5ff8-4968-a3a1-9c4a8210d6f0",
+        "5df20054-4e60-4062-b3cb-b6d25e5d5c0a"
+      ],
+      "movieCount": 6,
+      "sourceCollections": [
+        "Kurosawa Legacy Films",
+        "Artist Muse Dramas",
+        "Theatrical Artist Biopics",
+        "Asian Shakespeare Adaptations"
+      ],
+      "consolidationRule": "artist, muse, theatrical, shakespeare, kurosawa, cultural",
+      "type": "consolidated_from_small_lists"
+    }
+  },
+  "unusedLists": [
+    {
+      "name": "Historical Garden Films",
+      "size": 1
+    },
+    {
+      "name": "Depression Era Circus",
+      "size": 1
+    }
+  ],
+  "recommendations": [
+    "Consider creating additional consolidation rules for unused lists",
+    "Some movies may need manual curation for better thematic fit",
+    "2 small lists remain unconsolidated - may need genre-specific rules",
+    "Large lists (6+ movies) should be reviewed separately for over-consolidation",
+    "Apply this process to other genres after refining rules"
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "testMovie": "After Hours (1985)",
+  "timestamp": "2025-08-24T05:54:10.922Z",
+  "original": {
+    "content": "{\n  \"metadata\": {\n    \"title\": \"After Hours\",\n    \"year\": 1985,\n    \"analysisType\": \"contextual\",\n    \"wordCount\": 512,\n    \"targetRange\": \"400-550\"\n  },\n  \"keyElements\": {\n    \"director\": \"Martin Scorsese\",\n    \"writers\": [\"Joseph Minion\"],\n    \"stars\": [\"Griffin Dunne\", \"Rosanna Arquette\", \"Linda Fiorentino\"],\n    \"genre\": \"Black Comedy\",\n    \"releaseYear\": 1985,\n    \"cinematographer\": \"Michael Ballhaus\",\n    \"composer\": \"Howard Shore\",\n    \"studio\": \"Warner Bros.\"\n  },\n  \"content\": [\n    {\n      \"type\": \"plotAndCharacters\",\n      \"text\": \"Paul Hackett's surreal nocturnal odyssey through SoHo begins as a simple pursuit of romance but spirals into an increasingly nightmarish journey. After meeting the enigmatic Marcy at a cafe, this mild-mannered word processor ventures downtown, where a series of bizarre encounters transforms his night into a kafka-esque nightmare. Each character he meets - from the unstable Marcy to the obsessive sculptor Kiki, the protective bartender Tom, and the volatile mob of local residents - adds another layer of absurdity and danger to his desperate attempt to return home. The film masterfully builds tension through accumulating misunderstandings, missed connections, and mounting paranoia, turning Manhattan's after-hours landscape into a labyrinthine trap where logic and reason gradually dissolve.\"\n    },\n    {\n      \"type\": \"performancesAndVision\",\n      \"text\": \"Scorsese's departure from his trademark gangster films reveals his versatility as a director, crafting a tightly-wound comedy of anxiety that owes as much to German Expressionism as it does to film noir. Griffin Dunne delivers a perfectly calibrated performance as Paul, his mounting desperation and disbelief becoming increasingly palpable as the night progresses. Michael Ballhaus's cinematography transforms SoHo's streets into a disorienting maze of shadows and neon, while Howard Shore's score amplifies the mounting tension. The film's pacing occasionally lags in its middle section, but this mirrors Paul's exhausting night. Like **Taxi Driver** (1976), Scorsese turns New York into a character itself, though here the city becomes a funhouse mirror rather than a hell-scape.\"\n    },\n    {\n      \"type\": \"socialCulturalAndRelevance\",\n      \"text\": \"The film captures the cultural anxiety of mid-1980s New York, when the downtown art scene collided with yuppie culture and gentrification. Its themes of urban alienation and class disconnect resonate even more strongly today, as cities become increasingly segregated by wealth and culture. The film's influence can be seen in later works like **Lost in Translation** (2003) and **Good Time** (2017), which similarly explore urban isolation and night-long odysseys. Its depiction of downtown New York's art scene, while dated in specifics, captures a timeless tension between authenticity and pretension. The film's portrayal of male anxiety and urban paranoia prefigures later works like **Collateral** (2004), though some of its gender politics feel dated by contemporary standards. Its mix of comedy and creeping dread established a template for smart urban thrillers that blend genres and tones.\"\n    }\n  ],\n  \"featuredMovies\": [\n    {\n      \"title\": \"After Hours\",\n      \"year\": 1985,\n      \"description\": \"A word processor's night out in Manhattan descends into a surreal odyssey of misadventures and mounting danger.\"\n    }\n  ],\n  \"linkedReferences\": [\n    {\n      \"type\": \"influence\",\n      \"title\": \"Taxi Driver\",\n      \"year\": 1976,\n      \"originalText\": \"Like Taxi Driver, transforms New York into a character\",\n      \"relationship\": \"similar_themes\",\n      \"importance\": 3\n    },\n    {\n      \"type\": \"influenced\",\n      \"title\": \"Lost in Translation\",\n      \"year\": 2003,\n      \"originalText\": \"Urban isolation themes\",\n      \"relationship\": \"thematic_successor\",\n      \"importance\": 2\n    },\n    {\n      \"type\": \"influenced\",\n      \"title\": \"Good Time\",\n      \"year\": 2017,\n      \"originalText\": \"Night-long urban odyssey\",\n      \"relationship\": \"spiritual_successor\",\n      \"importance\": 2\n    },\n    {\n      \"type\": \"influenced\",\n      \"title\": \"Collateral\",\n      \"year\": 2004,\n      \"originalText\": \"Urban paranoia and nocturnal journey\",\n      \"relationship\": \"thematic_successor\",\n      \"importance\": 2\n    }\n  ],\n  \"generationMetadata\": {\n    \"timestamp\": \"2024-01-11T12:00:00Z\",\n    \"processingTime\": 15,\n    \"version\": \"2.0\"\n  }\n}",
+    "usage": {
+      "input_tokens": 13,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1583,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 1190,
+      "service_tier": "standard"
+    },
+    "processingTime": 18107,
+    "cost": 0.017889
+  },
+  "enhanced": {
+    "content": "{\n  \"metadata\": {\n    \"title\": \"After Hours\",\n    \"year\": 1985,\n    \"analysisType\": \"contextual\",\n    \"wordCount\": 547,\n    \"targetRange\": \"500-600\"\n  },\n  \"keyElements\": {\n    \"director\": \"Martin Scorsese\",\n    \"writers\": [\"Joseph Minion\"],\n    \"stars\": [\"Griffin Dunne\", \"Rosanna Arquette\", \"Linda Fiorentino\"],\n    \"genre\": \"Black Comedy\",\n    \"releaseYear\": 1985,\n    \"cinematographer\": \"Michael Ballhaus\",\n    \"composer\": \"Howard Shore\",\n    \"studio\": \"Warner Bros.\"\n  },\n  \"content\": [\n    {\n      \"type\": \"plotAndCharacters\",\n      \"text\": \"Paul Hackett's mundane life as a word processor takes a surreal turn when he ventures into downtown Manhattan for a late-night coffee date. What begins as a simple meeting with the mysterious Marcy spirals into an increasingly nightmarish odyssey through SoHo's after-dark labyrinth. Each encounter becomes more bizarre than the last - from an obsessive papier-mâché artist to punk rock thieves and vigilante mob justice. Paul finds himself trapped in a kafka-esque nightmare where every attempt to return home is thwarted by increasingly absurd circumstances, turning his ordinary world upside down in the span of a single night.\"\n    },\n    {\n      \"type\": \"performancesAndActing\",\n      \"text\": \"Griffin Dunne delivers a masterfully frantic performance as Paul, perfectly embodying the mounting desperation of an ordinary man caught in extraordinary circumstances. His transformation from mild-mannered office worker to paranoid fugitive carries echoes of Gene Wilder's neurotic energy in **Young Frankenstein** (1974), while adding his own distinct brand of urban anxiety. Rosanna Arquette brings an enigmatic quality to Marcy that keeps audiences guessing about her true nature. The supporting cast, including Catherine O'Hara and John Heard, craft memorably eccentric characters, though some of the more exaggerated performances occasionally tip into caricature.\"\n    },\n    {\n      \"type\": \"directionAndTechnicalElements\",\n      \"text\": \"Scorsese's direction marks a radical departure from his earlier work, channeling the paranoid atmosphere of **Taxi Driver** (1976) into dark comedy. The film's feverish pacing and delirious camera movements capture downtown Manhattan's nocturnal menace through a surrealist lens. Michael Ballhaus's cinematography transforms SoHo into a shadowy maze of neon-lit streets and mysterious doorways, while Howard Shore's score amplifies the mounting tension. The technical execution occasionally sacrifices clarity for style, with some sequences becoming almost too chaotic to follow.\"\n    },\n    {\n      \"type\": \"socialCulturalAndRelevance\",\n      \"text\": \"After Hours perfectly captures the zeitgeist of 1980s New York, when downtown Manhattan was still considered a dangerous, artistic frontier. The film's themes of urban alienation and loss of control resonate with later works like **Fight Club** (1999) and **Lost in Translation** (2003), while its surreal narrative structure influenced **Mulholland Drive** (2001). It serves as both a time capsule of pre-gentrification SoHo and a prescient commentary on modern urban anxiety. The film's exploration of yuppie culture clashing with bohemian art world reflects the era's social tensions, though its portrayal of certain characters now feels dated through a contemporary lens. Despite its period-specific elements, the core experience of feeling lost in an increasingly incomprehensible urban landscape remains startlingly relevant.\"\n    }\n  ],\n  \"featuredMovies\": [\n    {\n      \"title\": \"Taxi Driver\",\n      \"year\": 1976,\n      \"description\": \"Earlier Scorsese exploration of nocturnal New York's psychological impact\"\n    },\n    {\n      \"title\": \"Mulholland Drive\",\n      \"year\": 2001,\n      \"description\": \"Similarly surreal narrative exploring urban nightmares and identity\"\n    },\n    {\n      \"title\": \"Lost in Translation\",\n      \"year\": 2003,\n      \"description\": \"Modern take on urban alienation and nocturnal wandering\"\n    }\n  ],\n  \"linkedReferences\": [\n    {\n      \"type\": \"stylistic\",\n      \"title\": \"Young Frankenstein\",\n      \"year\": 1974,\n      \"originalText\": \"echoes of Gene Wilder's neurotic energy\",\n      \"relationship\": \"performance_comparison\",\n      \"importance\": 1\n    },\n    {\n      \"type\": \"thematic\",\n      \"title\": \"Taxi Driver\",\n      \"year\": 1976,\n      \"originalText\": \"channeling the paranoid atmosphere of Taxi Driver into dark comedy\",\n      \"relationship\": \"influenced_by\",\n      \"importance\": 2\n    },\n    {\n      \"type\": \"cultural\",\n      \"title\": \"Fight Club\",\n      \"year\": 1999,\n      \"originalText\": \"themes of urban alienation and loss of control\",\n      \"relationship\": \"thematic_parallel\",\n      \"importance\": 1\n    }\n  ],\n  \"generationMetadata\": {\n    \"timestamp\": \"2024-01-12T12:00:00Z\",\n    \"processingTime\": 15,\n    \"version\": \"2.0\"\n  }\n}",
+    "usage": {
+      "input_tokens": 13,
+      "cache_creation_input_tokens": 1877,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 1877,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 1288,
+      "service_tier": "standard"
+    },
+    "processingTime": 19667,
+    "cost": 0.019359
+  },
+  "comparison": {
+    "wordCount": {
+      "original": 363,
+      "enhanced": 385,
+      "difference": 22
+    },
+    "filmReferences": {
+      "original": 4,
+      "enhanced": 5,
+      "difference": 1
+    },
+    "linkedTitles": {
+      "original": 0,
+      "enhanced": 0,
+      "difference": 0
+    },
+    "linkedNames": {
+      "original": 0,
+      "enhanced": 0,
+      "difference": 0
+    },
+    "featuredMovies": {
+      "original": 1,
+      "enhanced": 3,
+      "difference": 2
+    },
+    "jsonValid": {
+      "original": true,
+      "enhanced": true
+    },
+    "processingTime": {
+      "original": 18107,
+      "enhanced": 19667,
+      "difference": 1560
+    },
+    "cost": {
+      "original": 0.017889,
+      "enhanced": 0.019359,
+      "difference": 0.0014700000000000026
+    },
+    "costBreakdown": {
+      "original": {
+        "input": 0.000039,
+        "output": 0.017849999999999998,
+        "caching": "enabled"
+      },
+      "enhanced": {
+        "input": 0.000039,
+        "output": 0.01932,
+        "caching": "enabled"
+      }
+    },
+    "model": {
+      "original": "claude-3-5-sonnet-20241022",
+      "enhanced": "claude-3-5-sonnet-20241022"
+    },
+    "structure": {
+      "original": {
+        "metadata": {
+          "title": "After Hours",
+          "year": 1985,
+          "analysisType": "contextual",
+          "wordCount": 512,
+          "targetRange": "400-550"
+        },
+        "keyElements": {
+          "director": "Martin Scorsese",
+          "writers": [
+            "Joseph Minion"
+          ],
+          "stars": [
+            "Griffin Dunne",
+            "Rosanna Arquette",
+            "Linda Fiorentino"
+          ],
+          "genre": "Black Comedy",
+          "releaseYear": 1985,
+          "cinematographer": "Michael Ballhaus",
+          "composer": "Howard Shore",
+          "studio": "Warner Bros."
+        },
+        "content": [
+          {
+            "type": "plotAndCharacters",
+            "text": "Paul Hackett's surreal nocturnal odyssey through SoHo begins as a simple pursuit of romance but spirals into an increasingly nightmarish journey. After meeting the enigmatic Marcy at a cafe, this mild-mannered word processor ventures downtown, where a series of bizarre encounters transforms his night into a kafka-esque nightmare. Each character he meets - from the unstable Marcy to the obsessive sculptor Kiki, the protective bartender Tom, and the volatile mob of local residents - adds another layer of absurdity and danger to his desperate attempt to return home. The film masterfully builds tension through accumulating misunderstandings, missed connections, and mounting paranoia, turning Manhattan's after-hours landscape into a labyrinthine trap where logic and reason gradually dissolve."
+          },
+          {
+            "type": "performancesAndVision",
+            "text": "Scorsese's departure from his trademark gangster films reveals his versatility as a director, crafting a tightly-wound comedy of anxiety that owes as much to German Expressionism as it does to film noir. Griffin Dunne delivers a perfectly calibrated performance as Paul, his mounting desperation and disbelief becoming increasingly palpable as the night progresses. Michael Ballhaus's cinematography transforms SoHo's streets into a disorienting maze of shadows and neon, while Howard Shore's score amplifies the mounting tension. The film's pacing occasionally lags in its middle section, but this mirrors Paul's exhausting night. Like **Taxi Driver** (1976), Scorsese turns New York into a character itself, though here the city becomes a funhouse mirror rather than a hell-scape."
+          },
+          {
+            "type": "socialCulturalAndRelevance",
+            "text": "The film captures the cultural anxiety of mid-1980s New York, when the downtown art scene collided with yuppie culture and gentrification. Its themes of urban alienation and class disconnect resonate even more strongly today, as cities become increasingly segregated by wealth and culture. The film's influence can be seen in later works like **Lost in Translation** (2003) and **Good Time** (2017), which similarly explore urban isolation and night-long odysseys. Its depiction of downtown New York's art scene, while dated in specifics, captures a timeless tension between authenticity and pretension. The film's portrayal of male anxiety and urban paranoia prefigures later works like **Collateral** (2004), though some of its gender politics feel dated by contemporary standards. Its mix of comedy and creeping dread established a template for smart urban thrillers that blend genres and tones."
+          }
+        ],
+        "featuredMovies": [
+          {
+            "title": "After Hours",
+            "year": 1985,
+            "description": "A word processor's night out in Manhattan descends into a surreal odyssey of misadventures and mounting danger."
+          }
+        ],
+        "linkedReferences": [
+          {
+            "type": "influence",
+            "title": "Taxi Driver",
+            "year": 1976,
+            "originalText": "Like Taxi Driver, transforms New York into a character",
+            "relationship": "similar_themes",
+            "importance": 3
+          },
+          {
+            "type": "influenced",
+            "title": "Lost in Translation",
+            "year": 2003,
+            "originalText": "Urban isolation themes",
+            "relationship": "thematic_successor",
+            "importance": 2
+          },
+          {
+            "type": "influenced",
+            "title": "Good Time",
+            "year": 2017,
+            "originalText": "Night-long urban odyssey",
+            "relationship": "spiritual_successor",
+            "importance": 2
+          },
+          {
+            "type": "influenced",
+            "title": "Collateral",
+            "year": 2004,
+            "originalText": "Urban paranoia and nocturnal journey",
+            "relationship": "thematic_successor",
+            "importance": 2
+          }
+        ],
+        "generationMetadata": {
+          "timestamp": "2024-01-11T12:00:00Z",
+          "processingTime": 15,
+          "version": "2.0"
+        }
+      },
+      "enhanced": {
+        "metadata": {
+          "title": "After Hours",
+          "year": 1985,
+          "analysisType": "contextual",
+          "wordCount": 547,
+          "targetRange": "500-600"
+        },
+        "keyElements": {
+          "director": "Martin Scorsese",
+          "writers": [
+            "Joseph Minion"
+          ],
+          "stars": [
+            "Griffin Dunne",
+            "Rosanna Arquette",
+            "Linda Fiorentino"
+          ],
+          "genre": "Black Comedy",
+          "releaseYear": 1985,
+          "cinematographer": "Michael Ballhaus",
+          "composer": "Howard Shore",
+          "studio": "Warner Bros."
+        },
+        "content": [
+          {
+            "type": "plotAndCharacters",
+            "text": "Paul Hackett's mundane life as a word processor takes a surreal turn when he ventures into downtown Manhattan for a late-night coffee date. What begins as a simple meeting with the mysterious Marcy spirals into an increasingly nightmarish odyssey through SoHo's after-dark labyrinth. Each encounter becomes more bizarre than the last - from an obsessive papier-mâché artist to punk rock thieves and vigilante mob justice. Paul finds himself trapped in a kafka-esque nightmare where every attempt to return home is thwarted by increasingly absurd circumstances, turning his ordinary world upside down in the span of a single night."
+          },
+          {
+            "type": "performancesAndActing",
+            "text": "Griffin Dunne delivers a masterfully frantic performance as Paul, perfectly embodying the mounting desperation of an ordinary man caught in extraordinary circumstances. His transformation from mild-mannered office worker to paranoid fugitive carries echoes of Gene Wilder's neurotic energy in **Young Frankenstein** (1974), while adding his own distinct brand of urban anxiety. Rosanna Arquette brings an enigmatic quality to Marcy that keeps audiences guessing about her true nature. The supporting cast, including Catherine O'Hara and John Heard, craft memorably eccentric characters, though some of the more exaggerated performances occasionally tip into caricature."
+          },
+          {
+            "type": "directionAndTechnicalElements",
+            "text": "Scorsese's direction marks a radical departure from his earlier work, channeling the paranoid atmosphere of **Taxi Driver** (1976) into dark comedy. The film's feverish pacing and delirious camera movements capture downtown Manhattan's nocturnal menace through a surrealist lens. Michael Ballhaus's cinematography transforms SoHo into a shadowy maze of neon-lit streets and mysterious doorways, while Howard Shore's score amplifies the mounting tension. The technical execution occasionally sacrifices clarity for style, with some sequences becoming almost too chaotic to follow."
+          },
+          {
+            "type": "socialCulturalAndRelevance",
+            "text": "After Hours perfectly captures the zeitgeist of 1980s New York, when downtown Manhattan was still considered a dangerous, artistic frontier. The film's themes of urban alienation and loss of control resonate with later works like **Fight Club** (1999) and **Lost in Translation** (2003), while its surreal narrative structure influenced **Mulholland Drive** (2001). It serves as both a time capsule of pre-gentrification SoHo and a prescient commentary on modern urban anxiety. The film's exploration of yuppie culture clashing with bohemian art world reflects the era's social tensions, though its portrayal of certain characters now feels dated through a contemporary lens. Despite its period-specific elements, the core experience of feeling lost in an increasingly incomprehensible urban landscape remains startlingly relevant."
+          }
+        ],
+        "featuredMovies": [
+          {
+            "title": "Taxi Driver",
+            "year": 1976,
+            "description": "Earlier Scorsese exploration of nocturnal New York's psychological impact"
+          },
+          {
+            "title": "Mulholland Drive",
+            "year": 2001,
+            "description": "Similarly surreal narrative exploring urban nightmares and identity"
+          },
+          {
+            "title": "Lost in Translation",
+            "year": 2003,
+            "description": "Modern take on urban alienation and nocturnal wandering"
+          }
+        ],
+        "linkedReferences": [
+          {
+            "type": "stylistic",
+            "title": "Young Frankenstein",
+            "year": 1974,
+            "originalText": "echoes of Gene Wilder's neurotic energy",
+            "relationship": "performance_comparison",
+            "importance": 1
+          },
+          {
+            "type": "thematic",
+            "title": "Taxi Driver",
+            "year": 1976,
+            "originalText": "channeling the paranoid atmosphere of Taxi Driver into dark comedy",
+            "relationship": "influenced_by",
+            "importance": 2
+          },
+          {
+            "type": "cultural",
+            "title": "Fight Club",
+            "year": 1999,
+            "originalText": "themes of urban alienation and loss of control",
+            "relationship": "thematic_parallel",
+            "importance": 1
+          }
+        ],
+        "generationMetadata": {
+          "timestamp": "2024-01-12T12:00:00Z",
+          "processingTime": 15,
+          "version": "2.0"
+        }
+      }
+    },
+    "qualitativeMetrics": {
+      "original": {
+        "hasSpecificScenes": false,
+        "hasTechnicalDetails": true,
+        "hasCulturalContext": true,
+        "criticalAssessment": true,
+        "decadeSpread": 3
+      },
+      "enhanced": {
+        "hasSpecificScenes": false,
+        "hasTechnicalDetails": true,
+        "hasCulturalContext": true,
+        "criticalAssessment": true,
+        "decadeSpread": 3
+      }
+    }
+  }
+}

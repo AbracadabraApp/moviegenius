@@ -106,18 +106,32 @@ This reverts commit [hash].
       * MORE IDEAS + related films
   4. DiscoveryFooter at the bottom
 
-## Production Optimization Roadmap
+## Database and Static Page Status
 
-### V1: Immediate Production Optimizations (Launch Ready)
+### Railway Database (Primary Production Database)
+- **Total Analyses**: 21,275 complete movie analyses
+- **Structure**: All analyses contain structured content sections, featuredMovies, whyWatch (YES/NO format), keyElements
+- **Why Watch Status**: ✅ Already exists in database (implemented enhanced binary YES/NO system)
+- **Connection**: Use `DATABASE_URL` from .env.local with pg.Pool
+- **Access Command**: `node -e "const { Pool } = require('pg'); /* query */" --env-file=.env.local`
 
-Critical optimizations for the nuclear static system:
-1. Unified Entity Format - Standardize movie references across both prompts for consistent database linking
-2. Cost Optimization - Remove the planning phase wrapper from Prompt 2 to reduce token usage by ~20-30%
-3. Streaming Data Fallbacks - Add handling for missing streaming info to prevent JSON parsing errors
-4. JSON Structure Cleanup - Simplify the output format to match existing processing pipeline
-5. Error Handling - Add fallback behaviors for edge cases in batch processing
+### Enhanced Static Generation Status
+Based on STATIC_GENERATION_STRATEGY.md and ENHANCED_WHYWATCH_IMPLEMENTATION.md:
+- **Goal**: Convert 21,275 database analyses into enhanced static JSON files
+- **Current**: ~6 enhanced static files exist (like movie_550.json)
+- **Cost**: $0 for Why Watch (already exists) + $43 for enhanced static file generation (21,275 × $0.002)
+- **Why Watch System**: Binary YES/NO with 3 reasons implemented and tested
 
-Goal: Optimize existing prompts for reliability and cost efficiency
+### Production Optimization Roadmap
+
+#### V1: Enhanced Static File Generation (Ready to Execute)
+1. **Database to Static**: Convert Railway database analyses to enhanced static JSON format
+2. **Pre-resolved Data**: Include poster URLs, streaming data, trailer IDs in static files
+3. **2-Tier Architecture**: Static files (Tier 1) + dynamic fallback (Tier 2)
+4. **Why Watch Integration**: Use existing YES/NO recommendations from database
+5. **Performance Target**: <100ms load time for static pages
+
+Goal: Transform 21K+ database analyses into lightning-fast static pages
 
 ### V2: User Experience & Educational Enhancement (Future Growth)
 

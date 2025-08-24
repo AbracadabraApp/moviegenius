@@ -1,0 +1,287 @@
+{
+  "testMovie": "After Hours (1985)",
+  "timestamp": "2025-08-24T05:51:36.123Z",
+  "original": {
+    "content": "{\n  \"metadata\": {\n    \"title\": \"After Hours\",\n    \"year\": 1985,\n    \"analysisType\": \"contextual\",\n    \"wordCount\": 487,\n    \"targetRange\": \"400-550\"\n  },\n  \"keyElements\": {\n    \"director\": \"Martin Scorsese\",\n    \"writers\": [\"Joseph Minion\"],\n    \"stars\": [\"Griffin Dunne\", \"Rosanna Arquette\", \"Linda Fiorentino\"],\n    \"genre\": \"Black Comedy\",\n    \"releaseYear\": 1985,\n    \"cinematographer\": \"Michael Ballhaus\",\n    \"composer\": \"Howard Shore\",\n    \"studio\": \"Warner Bros.\"\n  },\n  \"content\": [\n    {\n      \"type\": \"plotAndCharacters\",\n      \"text\": \"Paul Hackett's nightmarish journey through SoHo begins as a simple pursuit of romance but spirals into an absurdist descent into urban chaos. After meeting the mysterious Marcy at a cafe, this mild-mannered word processor ventures downtown for what he thinks will be a casual date. Instead, he becomes trapped in an increasingly bizarre series of misadventures involving punk rockers, angry mobs, unhinged artists, and stolen sculpture. Each attempt to return home to his safe Upper East Side apartment only drags him deeper into the surreal underbelly of 1980s downtown Manhattan, where every stranger seems to harbor sinister intentions and every escape route leads to another trap.\"\n    },\n    {\n      \"type\": \"performancesAndVision\",\n      \"text\": \"Griffin Dunne delivers a perfectly calibrated performance as Paul, expertly balancing everyman relatability with mounting hysteria as his night unravels. Scorsese's direction is a masterclass in controlled chaos, using his signature kinetic camera moves and precise editing to create a sense of escalating paranoia and disorientation. The film marks a striking departure from his previous work like **Raging Bull** (1980), demonstrating his versatility by infusing dark comedy with genuine tension. However, some of the supporting performances occasionally drift into caricature, particularly in the film's more outlandish sequences.\"\n    },\n    {\n      \"type\": \"socialCulturalAndRelevance\",\n      \"text\": \"After Hours captures a specific moment in New York City's history, when downtown Manhattan was still a dangerous, artistic frontier rather than a sanitized tourist destination. The film's themes of urban alienation and class division echo earlier works like **Taxi Driver** (1976), while its surrealist approach to city life influenced later films like **Lost in Translation** (2003) and **Good Time** (2017). The story's exploration of yuppie culture colliding with bohemian art world extremes remains particularly resonant, though its portrayal of certain female characters reflects some dated 1980s attitudes. The film's vision of nocturnal anxiety and urban paranoia feels especially prescient in our era of heightened social isolation and digital disconnection.\"\n    }\n  ],\n  \"featuredMovies\": [\n    {\n      \"title\": \"After Hours\",\n      \"year\": 1985,\n      \"description\": \"A word processor's night out in Manhattan transforms into a kafka-esque nightmare of urban paranoia and absurdist misadventures.\"\n    }\n  ],\n  \"linkedReferences\": [\n    {\n      \"type\": \"influence\",\n      \"title\": \"Taxi Driver\",\n      \"year\": 1976,\n      \"originalText\": \"urban alienation themes\",\n      \"relationship\": \"thematic_predecessor\",\n      \"importance\": 2\n    },\n    {\n      \"type\": \"style_comparison\",\n      \"title\": \"Raging Bull\",\n      \"year\": 1980,\n      \"originalText\": \"directorial contrast\",\n      \"relationship\": \"director_evolution\",\n      \"importance\": 2\n    },\n    {\n      \"type\": \"influence_on\",\n      \"title\": \"Lost in Translation\",\n      \"year\": 2003,\n      \"originalText\": \"urban alienation in modern context\",\n      \"relationship\": \"thematic_successor\",\n      \"importance\": 1\n    },\n    {\n      \"type\": \"influence_on\",\n      \"title\": \"Good Time\",\n      \"year\": 2017,\n      \"originalText\": \"nocturnal urban anxiety\",\n      \"relationship\": \"spiritual_successor\",\n      \"importance\": 1\n    }\n  ],\n  \"generationMetadata\": {\n    \"timestamp\": \"2024-01-11T12:00:00Z\",\n    \"processingTime\": 12,\n    \"version\": \"2.0\"\n  }\n}",
+    "usage": {
+      "input_tokens": 13,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1583,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 1085,
+      "service_tier": "standard"
+    },
+    "processingTime": 16837,
+    "cost": 0.016314
+  },
+  "enhanced": {
+    "content": "{\n  \"metadata\": {\n    \"title\": \"After Hours\",\n    \"year\": 1985,\n    \"analysisType\": \"contextual\",\n    \"wordCount\": 512,\n    \"targetRange\": \"400-550\"\n  },\n  \"keyElements\": {\n    \"director\": \"Martin Scorsese\",\n    \"writers\": [\"Joseph Minion\"],\n    \"stars\": [\"Griffin Dunne\", \"Rosanna Arquette\", \"Linda Fiorentino\"],\n    \"genre\": \"Black Comedy\",\n    \"releaseYear\": 1985,\n    \"cinematographer\": \"Michael Ballhaus\",\n    \"composer\": \"Howard Shore\",\n    \"studio\": \"Warner Bros.\"\n  },\n  \"content\": [\n    {\n      \"type\": \"plotAndCharacters\",\n      \"text\": \"Paul Hackett's surreal descent into downtown Manhattan's nocturnal madness begins with a chance meeting in a cafe. What starts as a promising late-night rendezvous spirals into an increasingly bizarre series of misadventures, with Paul becoming an unwitting prisoner of New York's SoHo district. Each new encounter - from obsessive sculptors to unhinged waitresses to vigilante mob drivers - pushes him further from his sterile uptown existence and deeper into a nightmarish web of coincidences and complications. As his cash disappears, his desperation grows, and the neighborhood's eccentric inhabitants become increasingly hostile, Paul's ordinary world dissolves into a kafka-esque ordeal where escape seems impossible and dawn feels like a distant dream.\"\n    },\n    {\n      \"type\": \"performancesAndActing\",\n      \"text\": \"Griffin Dunne delivers a masterclass in escalating anxiety as Paul, his transformation from mild-mannered word processor to frantic prey unfolding with precise psychological detail. His performance channels the everyman panic of Gene Wilder in **Silver Streak** (1976), but with a darker, more existential edge. Rosanna Arquette brings an enigmatic quality to Marcy, while Linda Fiorentino and Catherine O'Hara craft memorably unhinged supporting characters. The ensemble's timing occasionally feels theatrical rather than naturalistic, which sometimes undermines the film's intended atmosphere of urban realism.\"\n    },\n    {\n      \"type\": \"directionAndTechnicalElements\",\n      \"text\": \"Scorsese's direction marks a radical departure from his previous work, employing German Expressionist techniques reminiscent of **The Cabinet of Dr. Caligari** (1920) to transform SoHo into a labyrinthine nightmare. Michael Ballhaus's cinematography creates a disorienting visual experience through canted angles and relentless tracking shots, while Howard Shore's score amplifies the mounting tension. The film's pacing occasionally stumbles in its middle section, where some sequences feel repetitive rather than building upon the established tension.\"\n    },\n    {\n      \"type\": \"socialCulturalAndRelevance\",\n      \"text\": \"As a time capsule of mid-1980s downtown Manhattan, After Hours captures the collision between yuppie culture and bohemian art scenes that defined the era. Its influence can be seen in later urban nightmare narratives like **Good Time** (2017) and **Inside Llewyn Davis** (2013), while its blend of comedy and paranoia prefigures **Lost in Translation** (2003). The film's exploration of urban alienation and class divisions remains startlingly relevant, though its portrayal of certain character types occasionally falls into dated stereotypes. Beyond its historical significance, it stands as a critique of urban disconnection that feels increasingly prescient in our era of digital isolation and neighborhood gentrification.\"\n    }\n  ],\n  \"featuredMovies\": [\n    {\n      \"title\": \"Good Time\",\n      \"year\": 2017,\n      \"description\": \"Modern urban nightmare with similar themes of nocturnal chaos\"\n    },\n    {\n      \"title\": \"Lost in Translation\",\n      \"year\": 2003,\n      \"description\": \"Explores urban alienation and nighttime wandering\"\n    },\n    {\n      \"title\": \"The Cabinet of Dr. Caligari\",\n      \"year\": 1920,\n      \"description\": \"Visual influence on the film's expressionist style\"\n    }\n  ],\n  \"linkedReferences\": [\n    {\n      \"type\": \"stylistic\",\n      \"title\": \"The Cabinet of Dr. Caligari\",\n      \"year\": 1920,\n      \"originalText\": \"German Expressionist techniques reminiscent of The Cabinet of Dr. Caligari\",\n      \"relationship\": \"influenced_by\",\n      \"importance\": 1\n    },\n    {\n      \"type\": \"performance\",\n      \"title\": \"Silver Streak\",\n      \"year\": 1976,\n      \"originalText\": \"channels the everyman panic of Gene Wilder in Silver Streak\",\n      \"relationship\": \"similar_to\",\n      \"importance\": 2\n    },\n    {\n      \"type\": \"thematic\",\n      \"title\": \"Good Time\",\n      \"year\": 2017,\n      \"originalText\": \"influence can be seen in later urban nightmare narratives like Good Time\",\n      \"relationship\": \"influenced\",\n      \"importance\": 1\n    }\n  ],\n  \"generationMetadata\": {\n    \"timestamp\": \"2024-01-22T12:00:00Z\",\n    \"processingTime\": 15,\n    \"version\": \"2.0\"\n  }\n}",
+    "usage": {
+      "input_tokens": 13,
+      "cache_creation_input_tokens": 1877,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 1877,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 1279,
+      "service_tier": "standard"
+    },
+    "processingTime": 19788,
+    "cost": 0.019224
+  },
+  "comparison": {
+    "wordCount": {
+      "original": 303,
+      "enhanced": 369,
+      "difference": 66
+    },
+    "filmReferences": {
+      "original": 4,
+      "enhanced": 5,
+      "difference": 1
+    },
+    "linkedTitles": {
+      "original": 0,
+      "enhanced": 0,
+      "difference": 0
+    },
+    "linkedNames": {
+      "original": 0,
+      "enhanced": 0,
+      "difference": 0
+    },
+    "featuredMovies": {
+      "original": 1,
+      "enhanced": 3,
+      "difference": 2
+    },
+    "jsonValid": {
+      "original": true,
+      "enhanced": true
+    },
+    "processingTime": {
+      "original": 16837,
+      "enhanced": 19788,
+      "difference": 2951
+    },
+    "cost": {
+      "original": 0.016314,
+      "enhanced": 0.019224,
+      "difference": 0.002910000000000003
+    },
+    "costBreakdown": {
+      "original": {
+        "input": 0.000039,
+        "output": 0.016274999999999998,
+        "caching": "enabled"
+      },
+      "enhanced": {
+        "input": 0.000039,
+        "output": 0.019184999999999997,
+        "caching": "enabled"
+      }
+    },
+    "model": {
+      "original": "claude-3-5-sonnet-20241022",
+      "enhanced": "claude-3-5-sonnet-20241022"
+    },
+    "structure": {
+      "original": {
+        "metadata": {
+          "title": "After Hours",
+          "year": 1985,
+          "analysisType": "contextual",
+          "wordCount": 487,
+          "targetRange": "400-550"
+        },
+        "keyElements": {
+          "director": "Martin Scorsese",
+          "writers": [
+            "Joseph Minion"
+          ],
+          "stars": [
+            "Griffin Dunne",
+            "Rosanna Arquette",
+            "Linda Fiorentino"
+          ],
+          "genre": "Black Comedy",
+          "releaseYear": 1985,
+          "cinematographer": "Michael Ballhaus",
+          "composer": "Howard Shore",
+          "studio": "Warner Bros."
+        },
+        "content": [
+          {
+            "type": "plotAndCharacters",
+            "text": "Paul Hackett's nightmarish journey through SoHo begins as a simple pursuit of romance but spirals into an absurdist descent into urban chaos. After meeting the mysterious Marcy at a cafe, this mild-mannered word processor ventures downtown for what he thinks will be a casual date. Instead, he becomes trapped in an increasingly bizarre series of misadventures involving punk rockers, angry mobs, unhinged artists, and stolen sculpture. Each attempt to return home to his safe Upper East Side apartment only drags him deeper into the surreal underbelly of 1980s downtown Manhattan, where every stranger seems to harbor sinister intentions and every escape route leads to another trap."
+          },
+          {
+            "type": "performancesAndVision",
+            "text": "Griffin Dunne delivers a perfectly calibrated performance as Paul, expertly balancing everyman relatability with mounting hysteria as his night unravels. Scorsese's direction is a masterclass in controlled chaos, using his signature kinetic camera moves and precise editing to create a sense of escalating paranoia and disorientation. The film marks a striking departure from his previous work like **Raging Bull** (1980), demonstrating his versatility by infusing dark comedy with genuine tension. However, some of the supporting performances occasionally drift into caricature, particularly in the film's more outlandish sequences."
+          },
+          {
+            "type": "socialCulturalAndRelevance",
+            "text": "After Hours captures a specific moment in New York City's history, when downtown Manhattan was still a dangerous, artistic frontier rather than a sanitized tourist destination. The film's themes of urban alienation and class division echo earlier works like **Taxi Driver** (1976), while its surrealist approach to city life influenced later films like **Lost in Translation** (2003) and **Good Time** (2017). The story's exploration of yuppie culture colliding with bohemian art world extremes remains particularly resonant, though its portrayal of certain female characters reflects some dated 1980s attitudes. The film's vision of nocturnal anxiety and urban paranoia feels especially prescient in our era of heightened social isolation and digital disconnection."
+          }
+        ],
+        "featuredMovies": [
+          {
+            "title": "After Hours",
+            "year": 1985,
+            "description": "A word processor's night out in Manhattan transforms into a kafka-esque nightmare of urban paranoia and absurdist misadventures."
+          }
+        ],
+        "linkedReferences": [
+          {
+            "type": "influence",
+            "title": "Taxi Driver",
+            "year": 1976,
+            "originalText": "urban alienation themes",
+            "relationship": "thematic_predecessor",
+            "importance": 2
+          },
+          {
+            "type": "style_comparison",
+            "title": "Raging Bull",
+            "year": 1980,
+            "originalText": "directorial contrast",
+            "relationship": "director_evolution",
+            "importance": 2
+          },
+          {
+            "type": "influence_on",
+            "title": "Lost in Translation",
+            "year": 2003,
+            "originalText": "urban alienation in modern context",
+            "relationship": "thematic_successor",
+            "importance": 1
+          },
+          {
+            "type": "influence_on",
+            "title": "Good Time",
+            "year": 2017,
+            "originalText": "nocturnal urban anxiety",
+            "relationship": "spiritual_successor",
+            "importance": 1
+          }
+        ],
+        "generationMetadata": {
+          "timestamp": "2024-01-11T12:00:00Z",
+          "processingTime": 12,
+          "version": "2.0"
+        }
+      },
+      "enhanced": {
+        "metadata": {
+          "title": "After Hours",
+          "year": 1985,
+          "analysisType": "contextual",
+          "wordCount": 512,
+          "targetRange": "400-550"
+        },
+        "keyElements": {
+          "director": "Martin Scorsese",
+          "writers": [
+            "Joseph Minion"
+          ],
+          "stars": [
+            "Griffin Dunne",
+            "Rosanna Arquette",
+            "Linda Fiorentino"
+          ],
+          "genre": "Black Comedy",
+          "releaseYear": 1985,
+          "cinematographer": "Michael Ballhaus",
+          "composer": "Howard Shore",
+          "studio": "Warner Bros."
+        },
+        "content": [
+          {
+            "type": "plotAndCharacters",
+            "text": "Paul Hackett's surreal descent into downtown Manhattan's nocturnal madness begins with a chance meeting in a cafe. What starts as a promising late-night rendezvous spirals into an increasingly bizarre series of misadventures, with Paul becoming an unwitting prisoner of New York's SoHo district. Each new encounter - from obsessive sculptors to unhinged waitresses to vigilante mob drivers - pushes him further from his sterile uptown existence and deeper into a nightmarish web of coincidences and complications. As his cash disappears, his desperation grows, and the neighborhood's eccentric inhabitants become increasingly hostile, Paul's ordinary world dissolves into a kafka-esque ordeal where escape seems impossible and dawn feels like a distant dream."
+          },
+          {
+            "type": "performancesAndActing",
+            "text": "Griffin Dunne delivers a masterclass in escalating anxiety as Paul, his transformation from mild-mannered word processor to frantic prey unfolding with precise psychological detail. His performance channels the everyman panic of Gene Wilder in **Silver Streak** (1976), but with a darker, more existential edge. Rosanna Arquette brings an enigmatic quality to Marcy, while Linda Fiorentino and Catherine O'Hara craft memorably unhinged supporting characters. The ensemble's timing occasionally feels theatrical rather than naturalistic, which sometimes undermines the film's intended atmosphere of urban realism."
+          },
+          {
+            "type": "directionAndTechnicalElements",
+            "text": "Scorsese's direction marks a radical departure from his previous work, employing German Expressionist techniques reminiscent of **The Cabinet of Dr. Caligari** (1920) to transform SoHo into a labyrinthine nightmare. Michael Ballhaus's cinematography creates a disorienting visual experience through canted angles and relentless tracking shots, while Howard Shore's score amplifies the mounting tension. The film's pacing occasionally stumbles in its middle section, where some sequences feel repetitive rather than building upon the established tension."
+          },
+          {
+            "type": "socialCulturalAndRelevance",
+            "text": "As a time capsule of mid-1980s downtown Manhattan, After Hours captures the collision between yuppie culture and bohemian art scenes that defined the era. Its influence can be seen in later urban nightmare narratives like **Good Time** (2017) and **Inside Llewyn Davis** (2013), while its blend of comedy and paranoia prefigures **Lost in Translation** (2003). The film's exploration of urban alienation and class divisions remains startlingly relevant, though its portrayal of certain character types occasionally falls into dated stereotypes. Beyond its historical significance, it stands as a critique of urban disconnection that feels increasingly prescient in our era of digital isolation and neighborhood gentrification."
+          }
+        ],
+        "featuredMovies": [
+          {
+            "title": "Good Time",
+            "year": 2017,
+            "description": "Modern urban nightmare with similar themes of nocturnal chaos"
+          },
+          {
+            "title": "Lost in Translation",
+            "year": 2003,
+            "description": "Explores urban alienation and nighttime wandering"
+          },
+          {
+            "title": "The Cabinet of Dr. Caligari",
+            "year": 1920,
+            "description": "Visual influence on the film's expressionist style"
+          }
+        ],
+        "linkedReferences": [
+          {
+            "type": "stylistic",
+            "title": "The Cabinet of Dr. Caligari",
+            "year": 1920,
+            "originalText": "German Expressionist techniques reminiscent of The Cabinet of Dr. Caligari",
+            "relationship": "influenced_by",
+            "importance": 1
+          },
+          {
+            "type": "performance",
+            "title": "Silver Streak",
+            "year": 1976,
+            "originalText": "channels the everyman panic of Gene Wilder in Silver Streak",
+            "relationship": "similar_to",
+            "importance": 2
+          },
+          {
+            "type": "thematic",
+            "title": "Good Time",
+            "year": 2017,
+            "originalText": "influence can be seen in later urban nightmare narratives like Good Time",
+            "relationship": "influenced",
+            "importance": 1
+          }
+        ],
+        "generationMetadata": {
+          "timestamp": "2024-01-22T12:00:00Z",
+          "processingTime": 15,
+          "version": "2.0"
+        }
+      }
+    },
+    "qualitativeMetrics": {
+      "original": {
+        "hasSpecificScenes": false,
+        "hasTechnicalDetails": true,
+        "hasCulturalContext": true,
+        "criticalAssessment": true,
+        "decadeSpread": 4
+      },
+      "enhanced": {
+        "hasSpecificScenes": false,
+        "hasTechnicalDetails": true,
+        "hasCulturalContext": true,
+        "criticalAssessment": true,
+        "decadeSpread": 4
+      }
+    }
+  }
+}
