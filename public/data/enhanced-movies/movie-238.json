@@ -1,0 +1,127 @@
+{
+  "tmdbId": 238,
+  "title": "The Godfather",
+  "year": 1972,
+  "analysis": {
+    "keyElements": {
+      "genre": "Crime",
+      "director": "Francis Ford Coppola",
+      "stars": "Marlon Brando, Al Pacino",
+      "year": 1972
+    },
+    "sections": [
+      {
+        "type": "overview",
+        "content": "Epic crime saga of the Corleone family"
+      },
+      {
+        "type": "legacy",
+        "content": "Widely considered one of the greatest films ever made"
+      }
+    ],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful storytelling",
+        "Iconic performances",
+        "Cinematic perfection"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "tmdbId": 240,
+        "title": "The Godfather: Part II",
+        "year": 1974
+      },
+      {
+        "tmdbId": 769,
+        "title": "GoodFellas",
+        "year": 1990
+      }
+    ],
+    "exploreTopics": [
+      "Crime Films",
+      "American Cinema"
+    ]
+  },
+  "browseCollections": {
+    "lists": [
+      {
+        "id": "dark-psychological-thrillers",
+        "name": "Dark Psychological Thrillers",
+        "description": "Films exploring fractured psyches and unreliable reality",
+        "genre": "thriller",
+        "size": 23
+      }
+    ],
+    "totalLists": 1
+  },
+  "contributors": {
+    "director": {
+      "name": "Francis Ford Coppola",
+      "personId": 1776,
+      "slug": "/person/1776"
+    },
+    "writers": [
+      {
+        "name": "Mario Puzo",
+        "personId": 1777,
+        "slug": "/person/1777"
+      },
+      {
+        "name": "Francis Ford Coppola",
+        "personId": 1776,
+        "slug": "/person/1776"
+      }
+    ],
+    "stars": [
+      {
+        "name": "Marlon Brando",
+        "personId": 3084,
+        "slug": "/person/3084"
+      },
+      {
+        "name": "Al Pacino",
+        "personId": 1158,
+        "slug": "/person/1158"
+      },
+      {
+        "name": "James Caan",
+        "personId": 1159,
+        "slug": "/person/1159"
+      }
+    ],
+    "cinematographer": {
+      "name": "Gordon Willis",
+      "personId": 1778,
+      "slug": "/person/1778"
+    },
+    "composer": {
+      "name": "Nino Rota",
+      "personId": 1779,
+      "slug": "/person/1779"
+    }
+  },
+  "moreIdeas": {
+    "recommendations": [
+      {
+        "title": "The Matrix",
+        "year": 1999,
+        "connection": "Similar themes of reality questioning"
+      },
+      {
+        "title": "American Beauty",
+        "year": 1999,
+        "connection": "Critique of American suburban life"
+      }
+    ],
+    "totalRecommendations": 2
+  },
+  "generatedAt": "2025-08-24T01:04:30.643Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": "static_files",
+    "contributors": "movie_contributors_table",
+    "moreIdeas": "sample_data"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "tmdbId": 550,
+  "title": "Fight Club",
+  "year": 1999,
+  "analysis": {
+    "keyElements": {
+      "genre": "Drama",
+      "director": "David Fincher",
+      "stars": "Brad Pitt, Edward Norton",
+      "year": 1999
+    },
+    "sections": [
+      {
+        "type": "overview",
+        "content": "A dark psychological thriller exploring consumer culture"
+      },
+      {
+        "type": "themes",
+        "content": "Identity crisis, capitalism critique, toxic masculinity"
+      }
+    ],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Mind-bending plot twists",
+        "Outstanding performances",
+        "Cultural significance"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "tmdbId": 807,
+        "title": "Se7en",
+        "year": 1995
+      },
+      {
+        "tmdbId": 13,
+        "title": "Forrest Gump",
+        "year": 1994
+      }
+    ],
+    "exploreTopics": [
+      "Film Noir",
+      "Psychological Thriller"
+    ]
+  },
+  "browseCollections": {
+    "lists": [
+      {
+        "id": "dark-psychological-thrillers",
+        "name": "Dark Psychological Thrillers",
+        "description": "Films exploring fractured psyches and unreliable reality",
+        "genre": "thriller",
+        "size": 23
+      }
+    ],
+    "totalLists": 1
+  },
+  "contributors": {
+    "director": {
+      "name": "David Fincher",
+      "personId": 7467,
+      "slug": "/person/7467"
+    },
+    "writers": [
+      {
+        "name": "Chuck Palahniuk",
+        "personId": 7468,
+        "slug": "/person/7468"
+      },
+      {
+        "name": "Jim Uhls",
+        "personId": 7469,
+        "slug": "/person/7469"
+      }
+    ],
+    "stars": [
+      {
+        "name": "Brad Pitt",
+        "personId": 287,
+        "slug": "/person/287"
+      },
+      {
+        "name": "Edward Norton",
+        "personId": 819,
+        "slug": "/person/819"
+      },
+      {
+        "name": "Helena Bonham Carter",
+        "personId": 1230,
+        "slug": "/person/1230"
+      }
+    ],
+    "cinematographer": {
+      "name": "Jeff Cronenweth",
+      "personId": 7470,
+      "slug": "/person/7470"
+    },
+    "composer": {
+      "name": "The Dust Brothers",
+      "personId": 7471,
+      "slug": "/person/7471"
+    }
+  },
+  "moreIdeas": {
+    "recommendations": [
+      {
+        "title": "The Matrix",
+        "year": 1999,
+        "connection": "Similar themes of reality questioning"
+      },
+      {
+        "title": "American Beauty",
+        "year": 1999,
+        "connection": "Critique of American suburban life"
+      }
+    ],
+    "totalRecommendations": 2
+  },
+  "generatedAt": "2025-08-24T01:04:30.642Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": "static_files",
+    "contributors": "movie_contributors_table",
+    "moreIdeas": "sample_data"
+  }
+}
