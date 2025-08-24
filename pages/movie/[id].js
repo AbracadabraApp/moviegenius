@@ -368,17 +368,55 @@ export async function getStaticPaths() {
     };
   }
   
-  // Production: Valid TMDB IDs from database (only movies with analyses)
-  const movieIds = ['2', '3', '5', '16', '18', '19', '20', '21', '22', '24', '25', '27', '28', '33', '35', '38', '55', '58', '59', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '85', '86', '87', '88', '89', '90', '91', '93', '95', '96', '97', '98', '99', '100', '150', '152', '153', '154', '155', '156', '157', '160', '161', '162', '163', '164', '165', '166', '167', '168', '169', '170', '172', '173', '174', '176', '177', '179', '180', '182', '183', '184', '185', '186', '187', '189', '191', '192', '193', '194', '195', '196', '197', '198', '199', '200', '201', '203', '204', '205', '207', '211', '212', '213', '216', '217', '218', '219', '220', '221', '222', '223', '224', '225', '226', '227', '228', '229', '231', '232', '233', '234', '235', '236', '237', '239', '240', '241', '242', '243', '244', '245', '246', '247', '248', '249', '250', '500', '502', '503', '504', '506', '507', '508', '509', '510', '511', '512', '521', '522', '523', '524', '525', '526', '527', '530', '531', '532', '533', '535', '537', '539', '540', '541', '543', '544', '546', '547', '548', '549', '550', '551', '552', '553', '557', '558', '559', '560', '561', '562', '563', '564', '565', '567', '568', '570', '571', '573', '574', '575', '576', '577', '578', '579', '581', '582', '583', '584', '585', '586', '587', '588', '590', '591', '592', '593', '594', '595', '596', '597', '598', '599', '600'];
-  
-  const paths = movieIds.map(id => ({ params: { id } }));
-  
-  console.log(`🚀 Pre-generating ${paths.length} movie paths (valid TMDB IDs from database)`);
-  
-  return {
-    paths,
-    fallback: false  // Use proven pattern that works in production
-  };
+  // Production: Get TMDB IDs dynamically from database (DISTINCT query to avoid duplicates)
+  try {
+    const { Pool } = require('pg');
+    const pool = new Pool({
+      connectionString: process.env.DATABASE_URL
+    });
+    
+    const client = await pool.connect();
+    
+    try {
+      const result = await client.query(`
+        SELECT DISTINCT m.tmdb_id
+        FROM movies m 
+        JOIN movie_analyses ma ON m.id = ma.movie_id 
+        WHERE ma.claude_response IS NOT NULL 
+          AND m.tmdb_id IS NOT NULL
+        ORDER BY m.tmdb_id
+      `);
+      
+      const movieIds = result.rows.map(row => row.tmdb_id.toString());
+      const paths = movieIds.map(id => ({ params: { id } }));
+      
+      console.log(`🚀 Pre-generating ${paths.length} movie paths from database (DISTINCT query)`);
+      console.log(`   Range: ${movieIds[0]} to ${movieIds[movieIds.length - 1]}`);
+      
+      return {
+        paths,
+        fallback: false  // Use proven pattern that works in production
+      };
+      
+    } finally {
+      client.release();
+      await pool.end();
+    }
+    
+  } catch (error) {
+    console.error('❌ Database error in getStaticPaths:', error);
+    
+    // Fallback to a minimal set if database fails
+    const fallbackIds = ['153', '550', '996', '2', '3', '5'];
+    const fallbackPaths = fallbackIds.map(id => ({ params: { id } }));
+    
+    console.log(`⚠️  Using fallback paths (${fallbackPaths.length} movies) due to database error`);
+    
+    return {
+      paths: fallbackPaths,
+      fallback: false
+    };
+  }
 }
 
 export async function getStaticProps({ params }) {
