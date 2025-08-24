@@ -39,4 +39,4 @@ server.log
 dev.log
 
 # Cache
-.cache/
+.cache/analyses-backup-*.json
