@@ -1,0 +1,492 @@
+{
+  "movieCount": 81,
+  "category": "Supernatural",
+  "movieData": [
+    {
+      "id": "5ccf8261-a47c-476d-9426-99c1dd6d5b22",
+      "title": "A Ghost Story",
+      "year": 2017,
+      "tmdbId": 428449
+    },
+    {
+      "id": "8f74bf96-2c92-43ef-806d-dd4925de85b5",
+      "title": "Audrey Rose",
+      "year": 1977,
+      "tmdbId": 49126
+    },
+    {
+      "id": "4da1a7ee-8502-4efb-b07b-a69a33964ecd",
+      "title": "Black Butler: Book of the Atlantic",
+      "year": 2017,
+      "tmdbId": 432131
+    },
+    {
+      "id": "6d9f0f2e-61da-4945-ba7f-d3498d94e7be",
+      "title": "Constantine",
+      "year": 2005,
+      "tmdbId": 561
+    },
+    {
+      "id": "a8e86265-98c7-470e-bbd6-b9125d12d6a0",
+      "title": "Crowhaven Farm",
+      "year": 1970,
+      "tmdbId": 28760
+    },
+    {
+      "id": "f16b2ac2-591a-455f-8e24-3e089b8389c0",
+      "title": "Dead Silence",
+      "year": 2007,
+      "tmdbId": 14001
+    },
+    {
+      "id": "a5df0c2e-9bdc-4329-9a9a-d35fabfcc83f",
+      "title": "Death Note",
+      "year": 2017,
+      "tmdbId": 351460
+    },
+    {
+      "id": "84688a94-cadd-47e5-89e8-12a7d1d1c369",
+      "title": "Doctor Sleep",
+      "year": 2019,
+      "tmdbId": 501170
+    },
+    {
+      "id": "7481e817-250d-453d-b3b7-42625b72b02c",
+      "title": "Dragonfly",
+      "year": 2002,
+      "tmdbId": 10052
+    },
+    {
+      "id": "9c6a948a-e9b7-4097-8a19-adda38741e10",
+      "title": "Enchanting Shadow",
+      "year": 1960,
+      "tmdbId": 133531
+    },
+    {
+      "id": "bf43cb13-2af4-49ab-8a9a-97552f506ab9",
+      "title": "Fallen",
+      "year": 1998,
+      "tmdbId": 9411
+    },
+    {
+      "id": "ab4da873-d593-4de4-ba58-f39947a77e64",
+      "title": "Faust: Love of the Damned",
+      "year": 2000,
+      "tmdbId": 64883
+    },
+    {
+      "id": "3621a830-76a0-4284-a134-4669fcf6b889",
+      "title": "Ghostbusters",
+      "year": 1984,
+      "tmdbId": 620
+    },
+    {
+      "id": "19a239dd-f8d2-458e-9003-fa8b2f723c04",
+      "title": "Ghostbusters II",
+      "year": 1989,
+      "tmdbId": 2978
+    },
+    {
+      "id": "aa4b00c1-601c-41af-9ff9-defc1295da97",
+      "title": "Ghostbusters: Afterlife",
+      "year": 2021,
+      "tmdbId": 425909
+    },
+    {
+      "id": "442cb797-e909-4b49-9c73-1b99a4bddcac",
+      "title": "Ghostbusters: Answer the Call",
+      "year": 2016,
+      "tmdbId": 43074
+    },
+    {
+      "id": "132d678b-531c-4254-920d-54a6f4995db2",
+      "title": "Hellboy",
+      "year": 2004,
+      "tmdbId": 1487
+    },
+    {
+      "id": "2ff59694-0d33-4c8c-ae7c-3273458d82af",
+      "title": "Insidious",
+      "year": 2010,
+      "tmdbId": 49018
+    },
+    {
+      "id": "4442e732-e1d9-4a61-8f7a-c8f999e5a39a",
+      "title": "Jessabelle",
+      "year": 2014,
+      "tmdbId": 203834
+    },
+    {
+      "id": "4fd3ec85-fa94-47f7-a3a9-4f8eb1f1dd65",
+      "title": "Jonah Hex",
+      "year": 2010,
+      "tmdbId": 20533
+    },
+    {
+      "id": "605f97d8-8ea5-4016-bfa7-a1a6a0533926",
+      "title": "Karz",
+      "year": 1980,
+      "tmdbId": 23715
+    },
+    {
+      "id": "814f6d50-4e43-4603-92d8-d412ccc69454",
+      "title": "Lady in White",
+      "year": 1988,
+      "tmdbId": 49365
+    },
+    {
+      "id": "676c8910-541b-40af-a28f-4d9233a79146",
+      "title": "Lost Souls",
+      "year": 2000,
+      "tmdbId": 10383
+    },
+    {
+      "id": "d4e8c73a-abbf-4ac0-9613-60ff7799af3a",
+      "title": "Madhumati",
+      "year": 1958,
+      "tmdbId": 168069
+    },
+    {
+      "id": "2f572eab-cb97-47c6-af97-29976bc0b08a",
+      "title": "Mama",
+      "year": 2013,
+      "tmdbId": 132232
+    },
+    {
+      "id": "2f2dbff1-0c65-4ee7-a7f9-419aa0d75b45",
+      "title": "Mirrors",
+      "year": 2008,
+      "tmdbId": 13515
+    },
+    {
+      "id": "6a65f64f-0f0e-490b-948b-011cb0af87fd",
+      "title": "Night of the Demon",
+      "year": 1957,
+      "tmdbId": 25103
+    },
+    {
+      "id": "d2a87e26-c4e7-4985-a2bb-a765d4fe32b7",
+      "title": "Night of the Eagle",
+      "year": 1962,
+      "tmdbId": 45714
+    },
+    {
+      "id": "776c2cc1-fd49-418c-afe4-c3d59de2507f",
+      "title": "Oculus",
+      "year": 2013,
+      "tmdbId": 157547
+    },
+    {
+      "id": "0b3b6458-2721-41dd-b4d9-7055a500d9e4",
+      "title": "Personal Shopper",
+      "year": 2016,
+      "tmdbId": 340676
+    },
+    {
+      "id": "15c050e0-6ba4-4bfe-8ecd-d16693824e45",
+      "title": "Premonition",
+      "year": 2004,
+      "tmdbId": 40069
+    },
+    {
+      "id": "761ad985-a39d-421d-a20a-3b19a0b26358",
+      "title": "Pumpkinhead",
+      "year": 1988,
+      "tmdbId": 26515
+    },
+    {
+      "id": "bb14c65b-04a6-499a-af2d-8b4477f4f1fd",
+      "title": "Reside",
+      "year": 2018,
+      "tmdbId": 569040
+    },
+    {
+      "id": "fb44fbf2-609e-4990-9a59-c6ebf2ecb73a",
+      "title": "Salem",
+      "year": 2014,
+      "tmdbId": 285664
+    },
+    {
+      "id": "f06f5274-d245-431d-b4fe-75075d0d67ef",
+      "title": "Séance",
+      "year": 2000,
+      "tmdbId": 27742
+    },
+    {
+      "id": "b9bbb51a-9be3-4822-b715-afce32cf55fe",
+      "title": "Sinister",
+      "year": 2012,
+      "tmdbId": 82507
+    },
+    {
+      "id": "a15aa967-4281-457a-b35a-0545dd8a173b",
+      "title": "Spawn",
+      "year": 1997,
+      "tmdbId": 10336
+    },
+    {
+      "id": "694c3b6e-deca-4b22-97dd-04f85cf8d7d7",
+      "title": "Stigmata",
+      "year": 1999,
+      "tmdbId": 10307
+    },
+    {
+      "id": "8bcfd255-9d68-4114-baf7-b82d5e12fca2",
+      "title": "Stir of Echoes",
+      "year": 1999,
+      "tmdbId": 11601
+    },
+    {
+      "id": "abadcb99-b89c-493d-81ae-afb4dd7b5415",
+      "title": "The Awakening",
+      "year": 1980,
+      "tmdbId": 39176
+    },
+    {
+      "id": "73b60ee4-f53a-4c9f-b766-3700e02ce2a3",
+      "title": "The Changeling",
+      "year": 1980,
+      "tmdbId": 13550
+    },
+    {
+      "id": "9938aa7b-8737-49c4-8c0c-e09dc20bc67d",
+      "title": "The Covenant",
+      "year": 2006,
+      "tmdbId": 9954
+    },
+    {
+      "id": "85321b2b-69ea-41b2-8917-2cce7cd7ec35",
+      "title": "The Craft",
+      "year": 1996,
+      "tmdbId": 9100
+    },
+    {
+      "id": "0e54a920-4d50-454f-9dc5-51e8d361bc9a",
+      "title": "The Craft: Legacy",
+      "year": 2020,
+      "tmdbId": 590995
+    },
+    {
+      "id": "979ee7f3-2586-4518-89bb-52a445f1d691",
+      "title": "The Dead Zone",
+      "year": 1983,
+      "tmdbId": 11336
+    },
+    {
+      "id": "52e9cb70-b400-4dfb-846a-eefb0ab18055",
+      "title": "The Dead Zone",
+      "year": 2002,
+      "tmdbId": 352128
+    },
+    {
+      "id": "36bed627-2a05-4755-990c-74a767d03185",
+      "title": "The Devil's Advocate",
+      "year": 1997,
+      "tmdbId": 1813
+    },
+    {
+      "id": "6e2ea2f7-2b99-4756-bae5-f608f2668106",
+      "title": "The Eclipse",
+      "year": 2009,
+      "tmdbId": 39563
+    },
+    {
+      "id": "90217a28-12e2-473c-b17e-38a38c326c46",
+      "title": "The Entity",
+      "year": 1982,
+      "tmdbId": 24740
+    },
+    {
+      "id": "a5b15e45-abb1-461b-bfee-bbe2758ceb87",
+      "title": "The Eye",
+      "year": 2002,
+      "tmdbId": 10389
+    },
+    {
+      "id": "4e19d812-1814-423a-b84b-7cd5fe813755",
+      "title": "The Eye 2",
+      "year": 2004,
+      "tmdbId": 24674
+    },
+    {
+      "id": "3540ef8e-d22c-40d5-83ed-45fc2dbed4fd",
+      "title": "The First Power",
+      "year": 1990,
+      "tmdbId": 41374
+    },
+    {
+      "id": "6c44be84-2244-42c2-9f14-cc773b76d9bf",
+      "title": "The Gift",
+      "year": 2000,
+      "tmdbId": 2046
+    },
+    {
+      "id": "c23e3c25-54b6-4586-960f-12bb9d324403",
+      "title": "The Haunting",
+      "year": 1999,
+      "tmdbId": 11618
+    },
+    {
+      "id": "65904cc2-bf97-4ef0-b238-740cbdac2073",
+      "title": "The Haunting of Julia",
+      "year": 1977,
+      "tmdbId": 102283
+    },
+    {
+      "id": "548fecfd-e606-4f68-af5d-f4110e375603",
+      "title": "The In Between",
+      "year": 2022,
+      "tmdbId": 818750
+    },
+    {
+      "id": "d1db1976-3e4e-4dd1-b38e-65d748187c5d",
+      "title": "The Invisible",
+      "year": 2007,
+      "tmdbId": 9785
+    },
+    {
+      "id": "0f5a0abf-4c15-439c-acc7-a3a9dc7b25f5",
+      "title": "The Last Wave",
+      "year": 1977,
+      "tmdbId": 72277
+    },
+    {
+      "id": "f41bf16c-e25f-4d03-815c-71db8f8b18b5",
+      "title": "The Last Will and Testament of Rosalind Leigh",
+      "year": 2012,
+      "tmdbId": 106717
+    },
+    {
+      "id": "4f6bf494-538c-4076-a82b-34fa450f8a63",
+      "title": "The Legacy",
+      "year": 1978,
+      "tmdbId": 42215
+    },
+    {
+      "id": "b78f96d4-2cfd-4e14-865e-9ef073ddb0be",
+      "title": "The Medusa Touch",
+      "year": 1978,
+      "tmdbId": 11623
+    },
+    {
+      "id": "1d411713-f08f-4940-8924-440c2ea4f601",
+      "title": "The Mothman Prophecies",
+      "year": 2002,
+      "tmdbId": 2637
+    },
+    {
+      "id": "3fc3d192-c42b-451e-bbdf-efc4a25a9748",
+      "title": "The Others",
+      "year": 2001,
+      "tmdbId": 1933
+    },
+    {
+      "id": "e683d3d2-8afc-4a48-a8ab-2fbe8db6b791",
+      "title": "The Pope's Exorcist",
+      "year": 2023,
+      "tmdbId": 758323
+    },
+    {
+      "id": "4ec0fd56-fe26-4064-863f-fedb21b1bc8b",
+      "title": "The Premonition",
+      "year": 1976,
+      "tmdbId": 139349
+    },
+    {
+      "id": "dec751c1-db69-4621-9473-6bbe23d0c8e7",
+      "title": "The Rite",
+      "year": 2011,
+      "tmdbId": 48171
+    },
+    {
+      "id": "c2e678ec-67a1-4673-8d69-33d757a36637",
+      "title": "The Sentinel",
+      "year": 1992,
+      "tmdbId": 71401
+    },
+    {
+      "id": "5a6ce834-38d6-4c9f-8381-ee1d915ea64c",
+      "title": "The Serpent and the Rainbow",
+      "year": 1988,
+      "tmdbId": 11503
+    },
+    {
+      "id": "22db256f-a272-49a1-b5d4-754a4f873d5b",
+      "title": "The Seventh Sign",
+      "year": 1988,
+      "tmdbId": 11082
+    },
+    {
+      "id": "2ccd112f-9068-42c5-b8c5-e4af3e656c49",
+      "title": "The Sixth Sense",
+      "year": 1999,
+      "tmdbId": 745
+    },
+    {
+      "id": "f9fdec3e-08f4-4583-8c3e-28df36808148",
+      "title": "The Skeleton Key",
+      "year": 2005,
+      "tmdbId": 9913
+    },
+    {
+      "id": "3b75faaf-2c0d-481c-aadc-9fde47910dd7",
+      "title": "The Unholy",
+      "year": 2021,
+      "tmdbId": 632357
+    },
+    {
+      "id": "a92ee5ce-bed5-43c6-8d61-97a6b86adf41",
+      "title": "The Uninvited",
+      "year": 1944,
+      "tmdbId": 16373
+    },
+    {
+      "id": "bf602efe-81d3-43fa-bb18-39eb6ed1e973",
+      "title": "The Woman in Black 2: Angel of Death",
+      "year": 2014,
+      "tmdbId": 288158
+    },
+    {
+      "id": "c6c158d0-7353-404d-b0ca-fc1bb297abbf",
+      "title": "The Wraith",
+      "year": 1986,
+      "tmdbId": 10017
+    },
+    {
+      "id": "a591758d-9e93-4b91-a9ed-d1e7fe0fe898",
+      "title": "Thelma",
+      "year": 2017,
+      "tmdbId": 401898
+    },
+    {
+      "id": "e5f7141d-6a91-4012-bdc8-07fa823bfa12",
+      "title": "Tokyo Babylon 1",
+      "year": 1992,
+      "tmdbId": 1454850
+    },
+    {
+      "id": "2f557ee9-33f7-447d-83ea-60afcd0e518e",
+      "title": "Unbreakable",
+      "year": 2000,
+      "tmdbId": 9741
+    },
+    {
+      "id": "4fa3d1ce-0700-4270-929b-b1d3a35f2958",
+      "title": "What Lies Beneath",
+      "year": 2000,
+      "tmdbId": 2655
+    },
+    {
+      "id": "d899eb18-ac11-41c1-af77-344cf7006bbd",
+      "title": "White Noise",
+      "year": 2005,
+      "tmdbId": 11804
+    },
+    {
+      "id": "47eee759-9e2f-443f-b7cc-68d364d37136",
+      "title": "Winchester",
+      "year": 2018,
+      "tmdbId": 416234
+    }
+  ]
+}

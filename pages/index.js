@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import PhoneFrame from '../components/PhoneFrame';
 import SimpleSearch from '../components/SimpleSearch';
-import StreamingCarousel from '../components/StreamingCarousel';
+import EssentialMoviesCarousel from '../components/EssentialMoviesCarousel';
 import { Play, Plus, Heart, ChevronRight, Star, Book } from 'lucide-react';
 import { themeLinks } from '../lib/routes';
 
@@ -424,9 +424,9 @@ export default function HomePage() {
           </div>
         )}
 
-        {/* Streaming Carousel - High profile homepage feature */}
+        {/* Essential Movies Carousel - Curated films with streaming availability */}
         {!modalStep && currentStep === 'themes' && (
-          <StreamingCarousel onMovieClick={handleCarouselMovieClick} />
+          <EssentialMoviesCarousel onMovieClick={handleCarouselMovieClick} />
         )}
 
         {/* Theme Selection Section */}

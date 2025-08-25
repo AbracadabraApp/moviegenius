@@ -1,0 +1,696 @@
+{
+  "movieCount": 115,
+  "category": "Superhero",
+  "movieData": [
+    {
+      "id": "1873249b-d6f7-4222-941e-9850db655d68",
+      "title": "A Fan's Guide to Ms. Marvel",
+      "year": 2022,
+      "tmdbId": 979160
+    },
+    {
+      "id": "7ba30421-fe22-4617-88ee-4ea79e61c240",
+      "title": "Adventures of Captain Marvel",
+      "year": 1941,
+      "tmdbId": 61020
+    },
+    {
+      "id": "b95012e8-66aa-4e39-8e8b-353d4013da18",
+      "title": "All-Star Superman",
+      "year": 2011,
+      "tmdbId": 56590
+    },
+    {
+      "id": "94c4e9e4-3714-49c7-94db-50ce7627b93a",
+      "title": "Ant-Man",
+      "year": 2015,
+      "tmdbId": 102899
+    },
+    {
+      "id": "053d7989-1147-4882-ba96-979edb1d6579",
+      "title": "Ant-Man and the Wasp",
+      "year": 2018,
+      "tmdbId": 363088
+    },
+    {
+      "id": "bc629f0c-7321-44ad-9960-0092dad6daac",
+      "title": "Aquaman",
+      "year": 2018,
+      "tmdbId": 297802
+    },
+    {
+      "id": "d39d5230-d97a-4a45-b478-9b911b81d491",
+      "title": "Aquaman: Heroines of Atlantis",
+      "year": 2019,
+      "tmdbId": 645488
+    },
+    {
+      "id": "8ac29c4a-a752-47be-a9f8-1a953d4c29d2",
+      "title": "Avengers: Age of Ultron",
+      "year": 2015,
+      "tmdbId": 99861
+    },
+    {
+      "id": "87ec85e2-9d5e-479d-949e-2d7b29372274",
+      "title": "Avengers: Endgame",
+      "year": 2019,
+      "tmdbId": 299534
+    },
+    {
+      "id": "c010f58b-d17c-4ca7-b1dd-ceeca200dff0",
+      "title": "Avengers: Infinity War",
+      "year": 2018,
+      "tmdbId": 299536
+    },
+    {
+      "id": "07f2261f-ff06-4ab6-851c-9f1cae6fd7a3",
+      "title": "Batman",
+      "year": 1989,
+      "tmdbId": 268
+    },
+    {
+      "id": "403db9ad-3c6d-4546-a821-0df8c7c9bab5",
+      "title": "Batman & Robin",
+      "year": 1997,
+      "tmdbId": 415
+    },
+    {
+      "id": "7493cd9f-4cdc-470e-bf22-d87e9aef5ad3",
+      "title": "Batman Begins",
+      "year": 2005,
+      "tmdbId": 272
+    },
+    {
+      "id": "cd8a46e5-d3a0-490a-b4a8-281f0bfce855",
+      "title": "Batman Returns",
+      "year": 1992,
+      "tmdbId": 364
+    },
+    {
+      "id": "10230d80-fe7c-4546-8e5f-3c11dde9434f",
+      "title": "Batman v Superman: Dawn of Justice",
+      "year": 2016,
+      "tmdbId": 209112
+    },
+    {
+      "id": "ec7a4f71-7c15-47ee-8195-ac5601088466",
+      "title": "Batman: The Animated Series - The Legend Begins",
+      "year": 2002,
+      "tmdbId": 498471
+    },
+    {
+      "id": "ccfe45ef-345d-4e27-8cdb-5cef27e04fdc",
+      "title": "Black Adam",
+      "year": 2022,
+      "tmdbId": 436270
+    },
+    {
+      "id": "af8fc2e3-7a06-4089-bcf6-d87d7f7f367e",
+      "title": "Black Lightning",
+      "year": 2009,
+      "tmdbId": 31162
+    },
+    {
+      "id": "8990eec2-9122-4034-a486-57414d480150",
+      "title": "Black Panther",
+      "year": 2018,
+      "tmdbId": 284054
+    },
+    {
+      "id": "6b47d8b4-2856-44cd-9413-5ec1912c1c97",
+      "title": "Black Panther: Wakanda Forever",
+      "year": 2022,
+      "tmdbId": 505642
+    },
+    {
+      "id": "92cc1f62-c37e-4f65-a278-7e180972dd74",
+      "title": "Brightburn",
+      "year": 2019,
+      "tmdbId": 531309
+    },
+    {
+      "id": "fb4fcc02-7ba7-4e82-a5e5-5efde4c14f17",
+      "title": "Captain America: Civil War",
+      "year": 2016,
+      "tmdbId": 271110
+    },
+    {
+      "id": "a6d0ee0e-07ad-480c-a5d4-907f2a41d2cc",
+      "title": "Captain America: The First Avenger",
+      "year": 2011,
+      "tmdbId": 1771
+    },
+    {
+      "id": "97c094a4-92f9-4a71-8ae2-3f6b22511e97",
+      "title": "Captain America: The Winter Soldier",
+      "year": 2014,
+      "tmdbId": 100402
+    },
+    {
+      "id": "a21fdf13-169c-4fe9-999b-686ecea5ab93",
+      "title": "Captain Marvel",
+      "year": 2019,
+      "tmdbId": 299537
+    },
+    {
+      "id": "7e57fae3-63d9-4a2c-ac2d-65bf5dd21e06",
+      "title": "Catwoman",
+      "year": 2004,
+      "tmdbId": 314
+    },
+    {
+      "id": "f90c215b-d586-4ba2-8cc2-5c6710fa7dcf",
+      "title": "Daredevil",
+      "year": 2003,
+      "tmdbId": 9480
+    },
+    {
+      "id": "6f326fae-f41d-48a6-a2b5-5959c939e99a",
+      "title": "Daredevil",
+      "year": 2015,
+      "tmdbId": 332422
+    },
+    {
+      "id": "8ecbb8c6-a820-4835-af7d-e5a40648e460",
+      "title": "Darkman",
+      "year": 1990,
+      "tmdbId": 9556
+    },
+    {
+      "id": "7c189506-c729-4064-88cd-a0233a00c8ba",
+      "title": "Deadpool",
+      "year": 2016,
+      "tmdbId": 293660
+    },
+    {
+      "id": "3445db8b-bc34-424c-801c-20b5af41a91b",
+      "title": "Deadpool & Wolverine",
+      "year": 2024,
+      "tmdbId": 533535
+    },
+    {
+      "id": "b34b4e69-7027-4eec-8c44-7ddaf263fdbc",
+      "title": "Defendor",
+      "year": 2009,
+      "tmdbId": 34769
+    },
+    {
+      "id": "fedd4245-cf29-4698-b929-c2fd719427d8",
+      "title": "Doctor Strange",
+      "year": 2007,
+      "tmdbId": 14830
+    },
+    {
+      "id": "55ef82c7-e1eb-46b3-97e6-0bfeb325b332",
+      "title": "Doctor Strange",
+      "year": 2016,
+      "tmdbId": 284052
+    },
+    {
+      "id": "0b1f0db9-89cc-4ea8-b8dd-321517bea2ab",
+      "title": "Doctor Strange in the Multiverse of Madness",
+      "year": 2022,
+      "tmdbId": 453395
+    },
+    {
+      "id": "a0a99ebc-0652-4cda-a14e-492a0e977177",
+      "title": "Elektra",
+      "year": 2005,
+      "tmdbId": 9947
+    },
+    {
+      "id": "e22e25d9-8f14-44c2-b369-933214eed6f4",
+      "title": "Eternals",
+      "year": 2021,
+      "tmdbId": 524434
+    },
+    {
+      "id": "b71574af-05d4-46c4-ad3a-122ccbc56588",
+      "title": "Fantastic Four",
+      "year": 2015,
+      "tmdbId": 166424
+    },
+    {
+      "id": "f545691e-d3cc-4ac3-8798-9a2e4a5d8e6c",
+      "title": "Fantastic Four: Rise of the Silver Surfer",
+      "year": 2007,
+      "tmdbId": 1979
+    },
+    {
+      "id": "3a9fad44-e3bf-4f2b-8de3-f45eb25677c1",
+      "title": "Ghost Rider",
+      "year": 2007,
+      "tmdbId": 1250
+    },
+    {
+      "id": "a059b159-4e1d-4c7a-acd6-9a7b4d8037a2",
+      "title": "Glass",
+      "year": 2019,
+      "tmdbId": 450465
+    },
+    {
+      "id": "86466915-59fd-4c21-a5f7-896f333c1d17",
+      "title": "Green Lantern: First Flight",
+      "year": 2009,
+      "tmdbId": 17445
+    },
+    {
+      "id": "7ffc0c57-74f6-46ea-9db2-06e5c2fd05a6",
+      "title": "Hancock",
+      "year": 2008,
+      "tmdbId": 8960
+    },
+    {
+      "id": "088a8c45-a13b-467b-9959-20b825707a0b",
+      "title": "Hulk",
+      "year": 2003,
+      "tmdbId": 1927
+    },
+    {
+      "id": "88e4c4c3-fcae-4fab-8f01-9b94b25c2bfb",
+      "title": "Hulk vs. Wolverine",
+      "year": 2009,
+      "tmdbId": 15257
+    },
+    {
+      "id": "3f85b477-4444-4c04-8b86-0150509d11f0",
+      "title": "Invincible",
+      "year": 2021,
+      "tmdbId": 844251
+    },
+    {
+      "id": "fe787a08-7ff2-48d8-9d46-cbcf1a46b898",
+      "title": "Iron Man",
+      "year": 2008,
+      "tmdbId": 1726
+    },
+    {
+      "id": "885cd50d-dba7-4cc6-817e-7df36e31079a",
+      "title": "Justice League",
+      "year": 2017,
+      "tmdbId": 141052
+    },
+    {
+      "id": "b9e0d97d-5ca8-460d-b323-092794d7d619",
+      "title": "Justice League: The Flashpoint Paradox",
+      "year": 2013,
+      "tmdbId": 183011
+    },
+    {
+      "id": "d5cfab33-7d2a-473a-8191-e94ef9b18527",
+      "title": "Logan",
+      "year": 2017,
+      "tmdbId": 263115
+    },
+    {
+      "id": "6a2d32c6-0870-4140-96c9-270ede835d62",
+      "title": "Man of Steel",
+      "year": 2013,
+      "tmdbId": 49521
+    },
+    {
+      "id": "84ae7003-2161-4ff0-9a3d-a99f1f9be0a3",
+      "title": "Miraculous: Ladybug & Cat Noir, The Movie",
+      "year": 2023,
+      "tmdbId": 496450
+    },
+    {
+      "id": "5e9435b8-21aa-459f-949a-375e9575c187",
+      "title": "Morbius",
+      "year": 2022,
+      "tmdbId": 526896
+    },
+    {
+      "id": "28bf6674-5398-4428-9694-f36e158e6b27",
+      "title": "My Super Ex-Girlfriend",
+      "year": 2006,
+      "tmdbId": 4474
+    },
+    {
+      "id": "c016e60e-aca3-49c7-a223-c968db8bef90",
+      "title": "Mystery Men",
+      "year": 1999,
+      "tmdbId": 9824
+    },
+    {
+      "id": "d755b7ec-43e9-4221-b41d-2ef428d3ea0b",
+      "title": "Secret Headquarters",
+      "year": 2022,
+      "tmdbId": 791155
+    },
+    {
+      "id": "1da9479d-4946-4dee-ab0f-22284bcd9433",
+      "title": "Shazam!",
+      "year": 2019,
+      "tmdbId": 287947
+    },
+    {
+      "id": "cd9722e1-bfd3-4fd8-8fcf-fda68b439466",
+      "title": "Sky High",
+      "year": 2005,
+      "tmdbId": 11459
+    },
+    {
+      "id": "e07ac5e4-230a-4a9f-a3df-3a5bc273f71a",
+      "title": "Spider-Man",
+      "year": 2002,
+      "tmdbId": 557
+    },
+    {
+      "id": "96407c8a-2df0-4ffb-8236-aba28b978173",
+      "title": "Spider-Man 2",
+      "year": 2004,
+      "tmdbId": 558
+    },
+    {
+      "id": "ca1c55d4-0acc-438f-85fc-384e4b9c5e98",
+      "title": "Spider-Man 3",
+      "year": 2007,
+      "tmdbId": 559
+    },
+    {
+      "id": "61982342-b3b9-4f6a-b891-462343dc0509",
+      "title": "Spider-Man: Across the Spider-Verse",
+      "year": 2023,
+      "tmdbId": 569094
+    },
+    {
+      "id": "15c7e29f-02e5-4312-968b-3b0d7c219133",
+      "title": "Spider-Man: Far From Home",
+      "year": 2019,
+      "tmdbId": 429617
+    },
+    {
+      "id": "8df14dde-20ab-4b19-9720-d881c75ff554",
+      "title": "Spider-Man: Homecoming",
+      "year": 2017,
+      "tmdbId": 315635
+    },
+    {
+      "id": "5d5250e7-1678-4627-ba62-664ef54b0fb9",
+      "title": "Spider-Man: Into the Spider-Verse",
+      "year": 2018,
+      "tmdbId": 324857
+    },
+    {
+      "id": "0171c7aa-bcea-47fe-bee2-a7c1226bed4f",
+      "title": "Spider-Man: No Way Home",
+      "year": 2021,
+      "tmdbId": 634649
+    },
+    {
+      "id": "14dc680e-eb94-487f-b6a3-65b7f3b460c6",
+      "title": "Steel",
+      "year": 1997,
+      "tmdbId": 8854
+    },
+    {
+      "id": "4b791117-098b-46de-883b-23ffa2efa91f",
+      "title": "Suicide Squad",
+      "year": 2016,
+      "tmdbId": 297761
+    },
+    {
+      "id": "2d155d74-ac03-427f-afe6-69a9c296cf77",
+      "title": "Super",
+      "year": 2010,
+      "tmdbId": 45132
+    },
+    {
+      "id": "1a41f17e-e4a5-45c3-b46c-c3ef4313dc5d",
+      "title": "Supergirl",
+      "year": 1984,
+      "tmdbId": 9651
+    },
+    {
+      "id": "194149bf-405a-419a-b479-ba3729866e83",
+      "title": "Superman",
+      "year": 1978,
+      "tmdbId": 1924
+    },
+    {
+      "id": "1daae0e6-e17e-4640-a84b-12c449086224",
+      "title": "Superman II",
+      "year": 1980,
+      "tmdbId": 8536
+    },
+    {
+      "id": "c755b6e9-3da1-46f1-a785-6fd680fe2e07",
+      "title": "Superman II: The Richard Donner Cut",
+      "year": 2006,
+      "tmdbId": 624479
+    },
+    {
+      "id": "a8c0defe-dde0-42e4-a9f3-e5977875733c",
+      "title": "Superman IV: The Quest for Peace",
+      "year": 1987,
+      "tmdbId": 11411
+    },
+    {
+      "id": "8dac72f3-5ac5-48ea-97de-852a2dbcc1f5",
+      "title": "Superman Returns",
+      "year": 2006,
+      "tmdbId": 1452
+    },
+    {
+      "id": "1e0c6462-558f-4a8a-b848-38fab8494033",
+      "title": "Superman: Doomsday",
+      "year": 2007,
+      "tmdbId": 13640
+    },
+    {
+      "id": "3fe07cc2-5b24-4f53-b8bf-a128324ddffe",
+      "title": "Superman/Batman: Public Enemies",
+      "year": 2009,
+      "tmdbId": 22855
+    },
+    {
+      "id": "782cf7cf-7f51-4864-baac-2ae7e6724996",
+      "title": "Süpermen Dönüyor",
+      "year": 1979,
+      "tmdbId": 106913
+    },
+    {
+      "id": "2a843fc9-1631-4429-80d2-7b7b5e19effe",
+      "title": "Teen Titans Go! To the Movies",
+      "year": 2018,
+      "tmdbId": 474395
+    },
+    {
+      "id": "ae24e6fe-b85e-42d3-9584-24e25a941844",
+      "title": "The Amazing Bulk",
+      "year": 2012,
+      "tmdbId": 109125
+    },
+    {
+      "id": "48d2491c-22e6-4648-b4ff-f2477a6e9530",
+      "title": "The Amazing Spider-Man",
+      "year": 2012,
+      "tmdbId": 1930
+    },
+    {
+      "id": "cc346a51-0502-4e32-bb5a-e2079f4ad2c3",
+      "title": "The Amazing Spider-Man 2",
+      "year": 2014,
+      "tmdbId": 102382
+    },
+    {
+      "id": "def954e1-08ce-4175-b03a-13cb30b89852",
+      "title": "The Avengers",
+      "year": 2012,
+      "tmdbId": 24428
+    },
+    {
+      "id": "197712dc-ef43-4210-a33b-1de2f4420df8",
+      "title": "The Batman",
+      "year": 2022,
+      "tmdbId": 414906
+    },
+    {
+      "id": "7e02a838-5366-4236-b126-e737b3e6904c",
+      "title": "The Dark Knight",
+      "year": 2008,
+      "tmdbId": 155
+    },
+    {
+      "id": "47dd9aa6-c9cd-4cb4-b6d1-d42f4406faa5",
+      "title": "The Death of Superman",
+      "year": 2018,
+      "tmdbId": 487670
+    },
+    {
+      "id": "ecf7ed6f-22df-4df8-bf3a-585f8c38f881",
+      "title": "The Fantastic Four",
+      "year": 2005,
+      "tmdbId": 9738
+    },
+    {
+      "id": "7aae3afb-630a-435a-9ff2-536fd4efefa7",
+      "title": "The Flash",
+      "year": 2023,
+      "tmdbId": 298618
+    },
+    {
+      "id": "8cfbfb85-aae7-43de-99e4-7de711692aeb",
+      "title": "The Incredible Hulk",
+      "year": 2008,
+      "tmdbId": 1724
+    },
+    {
+      "id": "b740ccd4-dc90-467c-a57f-0ec1061ed045",
+      "title": "The Incredibles",
+      "year": 2004,
+      "tmdbId": 9806
+    },
+    {
+      "id": "da580294-5692-4913-b50b-0f219f7d26e4",
+      "title": "The Incredibles 2",
+      "year": 2018,
+      "tmdbId": 260513
+    },
+    {
+      "id": "a1019c07-96df-4d4c-9ad8-523739ae79d7",
+      "title": "The Last Son of Krypton",
+      "year": 1996,
+      "tmdbId": 49076
+    },
+    {
+      "id": "223bb597-a227-46b8-91fd-23b0191d5be8",
+      "title": "The Lego Batman Movie",
+      "year": 2017,
+      "tmdbId": 324849
+    },
+    {
+      "id": "de1ea5eb-5bb7-4004-a19e-a4d0cd181222",
+      "title": "The New Mutants",
+      "year": 2020,
+      "tmdbId": 340102
+    },
+    {
+      "id": "cde3937d-d9e3-4dcc-9ec6-a081389c62cf",
+      "title": "The Suicide Squad",
+      "year": 2021,
+      "tmdbId": 436969
+    },
+    {
+      "id": "395e2624-25b3-4dac-99ac-a7c5b37a464d",
+      "title": "The Tick",
+      "year": 1994,
+      "tmdbId": 958277
+    },
+    {
+      "id": "5f840b64-8a44-42dd-a9d3-6ed0fa7c1ea4",
+      "title": "The Wild World of Batwoman",
+      "year": 1966,
+      "tmdbId": 31258
+    },
+    {
+      "id": "0ecbf982-bcec-4944-a437-f29c184924c9",
+      "title": "The Wolverine",
+      "year": 2013,
+      "tmdbId": 76170
+    },
+    {
+      "id": "60980c9d-6e60-40a4-a73c-01a14e1113d3",
+      "title": "Thor",
+      "year": 2011,
+      "tmdbId": 10195
+    },
+    {
+      "id": "e5689764-edaa-4949-89d4-9e8c28e77e7b",
+      "title": "Thor: Love and Thunder",
+      "year": 2022,
+      "tmdbId": 616037
+    },
+    {
+      "id": "bae1c237-0b96-41c0-bd6d-260fa4e6a425",
+      "title": "Thor: Ragnarok",
+      "year": 2017,
+      "tmdbId": 284053
+    },
+    {
+      "id": "0686f1cc-0a28-49e4-a6a3-505eab3c9f59",
+      "title": "Three Giant Men",
+      "year": 1973,
+      "tmdbId": 58447
+    },
+    {
+      "id": "334caeae-02a5-4eff-9108-3ebc3f7c6554",
+      "title": "Ultimate Avengers: The Movie",
+      "year": 2006,
+      "tmdbId": 14609
+    },
+    {
+      "id": "5900ab96-1d15-4eb1-a590-11c9d46b2e18",
+      "title": "Watchmen",
+      "year": 2009,
+      "tmdbId": 13183
+    },
+    {
+      "id": "848f79d8-ff6d-4c4f-857d-5dad67091418",
+      "title": "We Can Be Heroes",
+      "year": 2020,
+      "tmdbId": 615677
+    },
+    {
+      "id": "78edc2e4-7412-496d-99df-771c965fd5ae",
+      "title": "Wonder Woman",
+      "year": 2017,
+      "tmdbId": 297762
+    },
+    {
+      "id": "75b8a469-1949-4946-8b4b-32f7b1d47314",
+      "title": "Wonder Woman 1984",
+      "year": 2020,
+      "tmdbId": 464052
+    },
+    {
+      "id": "e53bda27-191b-4809-a865-4aab54818a12",
+      "title": "X-Men",
+      "year": 2000,
+      "tmdbId": 36657
+    },
+    {
+      "id": "73491fe5-024a-424e-819a-9f80a59c5f2b",
+      "title": "X-Men: Days of Future Past",
+      "year": 2014,
+      "tmdbId": 127585
+    },
+    {
+      "id": "3f4c3f6a-bc1c-4a83-93c6-dd071b1c452b",
+      "title": "X-Men: First Class",
+      "year": 2011,
+      "tmdbId": 49538
+    },
+    {
+      "id": "f9ecf1f1-084c-4763-9087-7d865b455d36",
+      "title": "X-Men: The Last Stand",
+      "year": 2006,
+      "tmdbId": 36668
+    },
+    {
+      "id": "76e0421c-e75b-4305-8b02-7a0850e74316",
+      "title": "X2: X-Men United",
+      "year": 2003,
+      "tmdbId": 36658
+    },
+    {
+      "id": "a2568400-2c29-490c-bde6-7890687498b3",
+      "title": "Zack Snyder's Justice League",
+      "year": 2021,
+      "tmdbId": 791373
+    },
+    {
+      "id": "acb68a41-cc9d-4301-b96d-bd976a2ddb87",
+      "title": "Zod",
+      "year": 2013,
+      "tmdbId": 98567
+    },
+    {
+      "id": "993c49ab-7288-4e3f-8dbf-b2d8df1f1626",
+      "title": "Zoom",
+      "year": 2006,
+      "tmdbId": 14113
+    }
+  ]
+}

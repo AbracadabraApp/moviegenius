@@ -1,0 +1,2042 @@
+{
+  "metadata": {
+    "genre": "Experimental",
+    "totalMovies": 224,
+    "processedMovies": 219,
+    "lastCheckpoint": "2025-08-22T05:51:28.634Z",
+    "processingBatch": 0,
+    "totalCost": 1.3684614000000004
+  },
+  "allLists": {
+    "1960s Structural Films": {
+      "id": "build-1755841895254-55b91gq",
+      "name": "1960s Structural Films",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "648b4bee-21ea-4d0c-9569-7daca641f588",
+        "2205af3f-ece8-4595-b6a3-981cd4469fc3",
+        "002e790c-7c76-45f5-9973-4c1b949cd5f2",
+        "9ae7cf0b-3076-4672-990a-1d4b8cafe004",
+        "9deefff3-46ad-4d00-9892-506266cd6da9",
+        "0319d102-f985-4487-9e75-cbc3a42765f7",
+        "9e4ce201-deb5-4d6f-8161-00e45982e6f2",
+        "483a51b7-26c8-4aed-b72a-e7b47816db6e",
+        "d6e13702-3dab-4bf5-b6cb-66b975836691"
+      ],
+      "size": 9,
+      "createdAt": "2025-08-22T05:51:35.254Z",
+      "lastUpdated": "2025-08-22T06:01:24.282Z"
+    },
+    "Single Shot Films": {
+      "id": "build-1755841895254-fda3f8h",
+      "name": "Single Shot Films",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "648b4bee-21ea-4d0c-9569-7daca641f588",
+        "a580202f-e96d-4d5f-8c2a-077a8659c137",
+        "00fc6442-d691-4774-8857-0926e893b5e9",
+        "6cb76993-db40-4fde-9906-04165c60989b",
+        "b19768cc-c0ec-4a0f-9fc7-95ff594d8315",
+        "0e9ca690-5ab8-44a3-9143-80a6f7c2ac4b",
+        "b3c7f660-2d4f-45b0-9033-a37966f0e9cb",
+        "7cf06c81-7111-475e-8563-a6e099e1e2d8",
+        "5b83bf8d-6078-4f0b-8d5d-e64725b1493e",
+        "6c36a95e-af56-4857-b7ee-3205c40c44c2",
+        "2205af3f-ece8-4595-b6a3-981cd4469fc3",
+        "bc2350d6-b64e-470a-b192-6a69d982e0d8",
+        "2eb381d1-81e9-48c0-affd-f8d9afcc96fa",
+        "a430e068-df30-4cbf-a01a-d7776dd440e5",
+        "9ae7cf0b-3076-4672-990a-1d4b8cafe004",
+        "1e82a441-9fad-4dce-8d8d-b8f6ee5d44e7",
+        "9e4ce201-deb5-4d6f-8161-00e45982e6f2",
+        "73703274-b7b9-438a-9f96-ee2c84175de0",
+        "9e96d463-2d0d-483c-ad93-7a7ba11e925f",
+        "5f39e230-f62f-46f2-959b-dea2b6f33b9a",
+        "3c4e9d65-9ebd-4b56-83ed-7ec0468f2d42",
+        "14ea0069-9185-4318-a231-f2c3ec63389a",
+        "96898c41-2f36-42a0-8403-521c5f13624e",
+        "c2ed5ac1-252d-45a0-9244-030d451e35fd",
+        "0adbef4e-acd8-4946-a3a0-5f28cf1a4b67"
+      ],
+      "size": 25,
+      "createdAt": "2025-08-22T05:51:35.254Z",
+      "lastUpdated": "2025-08-22T06:00:56.129Z"
+    },
+    "Light and Flicker": {
+      "id": "build-1755841895254-ashcgj2",
+      "name": "Light and Flicker",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "648b4bee-21ea-4d0c-9569-7daca641f588",
+        "f6d68ba8-9d93-4ad6-a793-32c3cf3a82eb",
+        "91180a9f-a4dd-4b9f-a077-b01e38e49806",
+        "0e9ca690-5ab8-44a3-9143-80a6f7c2ac4b",
+        "0fab3282-acd1-4d49-ba0c-8fcce78d170a",
+        "8d0b001c-2fc0-4750-b09f-980adc24739c",
+        "585799ec-17ed-4c6f-9e9e-879b0366978a",
+        "41eee1f8-0052-477b-9b60-97abb5b947a8",
+        "f5a1a0f4-abed-4d3d-b4f9-a703e8f7d21d",
+        "0319d102-f985-4487-9e75-cbc3a42765f7",
+        "8fa625ff-b514-4214-9927-8b8f48715d87",
+        "22df0608-113f-42d1-8b3d-f8b1f2f412d3",
+        "73e26b62-b9b0-45c8-b6ea-f0a88115cd96",
+        "3cf496f2-294b-4cfe-8855-84a0b0245280"
+      ],
+      "size": 14,
+      "createdAt": "2025-08-22T05:51:35.254Z",
+      "lastUpdated": "2025-08-22T06:01:24.281Z"
+    },
+    "1960s Avant-Garde": {
+      "id": "build-1755841895255-v9ebtqi",
+      "name": "1960s Avant-Garde",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "4f5ba4a1-ff3a-4d15-b3d8-1c9262cd609f",
+        "81db97b8-2ab4-4b2d-83a9-b6682bb27bf8",
+        "f6d68ba8-9d93-4ad6-a793-32c3cf3a82eb",
+        "6cb76993-db40-4fde-9906-04165c60989b",
+        "91180a9f-a4dd-4b9f-a077-b01e38e49806",
+        "7f7ceb2a-fde1-4d99-bd47-fe92d4fe6a14",
+        "b19768cc-c0ec-4a0f-9fc7-95ff594d8315",
+        "348fee7e-ff2a-4e0b-bf3d-268d9632f0ea",
+        "63dff7b1-b593-4a36-9ca5-e30dbace94da",
+        "bf9d40a0-3daa-4408-af18-538fb66c7b3a",
+        "f883490c-e75e-4383-8c57-2079c90fc2ad",
+        "0fab3282-acd1-4d49-ba0c-8fcce78d170a",
+        "5b83bf8d-6078-4f0b-8d5d-e64725b1493e",
+        "de5ca98e-61e3-49db-bd4d-b1626ffdcce1",
+        "350c3aa8-f9c4-456b-baf5-9aab7e783d71",
+        "8d0b001c-2fc0-4750-b09f-980adc24739c",
+        "38e6fc28-4bce-4704-8191-32296a40d131",
+        "2205af3f-ece8-4595-b6a3-981cd4469fc3",
+        "e9f12744-8c67-4474-ad1c-4c9a0f7af637",
+        "65736414-bfa4-4f26-ab1b-7caf48612f9e",
+        "7d64789e-df5c-46f6-a6d6-287a35d9122f",
+        "5dfe206c-cd4f-4fd2-9519-aaedee298b74",
+        "f9aee9d0-5d1c-4798-b79e-1931fcc19b7f",
+        "7cc9bb1e-5cf9-4606-9126-d9cb2d247ab7",
+        "831df6dc-36e5-43d0-8d7b-f9c7b7e91f70",
+        "949f6836-c26b-453c-b3fc-c41404067b58",
+        "9ae7cf0b-3076-4672-990a-1d4b8cafe004",
+        "9deefff3-46ad-4d00-9892-506266cd6da9",
+        "5c57c39a-88ee-467a-8926-25cbf26ec3d4",
+        "53bff5e5-b05d-4839-aa47-e93ada00687c",
+        "a5a02b0c-5798-42d0-af41-48bd7ffaa9b4",
+        "f841883d-decf-400d-a2b4-96d46e8e5b3a",
+        "b566bc26-d396-49ed-996f-f94fd801448e",
+        "0d1f49aa-9087-4ce6-aaa0-36c43df4c594",
+        "abf83cfb-7202-42ce-be15-7c87f653a916",
+        "f5a1a0f4-abed-4d3d-b4f9-a703e8f7d21d",
+        "0319d102-f985-4487-9e75-cbc3a42765f7",
+        "be457ad5-cebb-422b-8606-99a876839b10",
+        "8fa625ff-b514-4214-9927-8b8f48715d87",
+        "5c9cf6d8-56fa-417b-88fe-675d872a338a",
+        "fc3ed3df-0b41-4382-8b0e-5d0ea0e5e72c",
+        "e7724286-5a02-423f-a54a-b5426155b363",
+        "4c9d53a4-66e2-42b8-93cb-7da25ece8863",
+        "8f8209b9-ed57-4cad-ba95-7baf57af0c77",
+        "dab80721-26d4-441a-986b-932e832ef4b7",
+        "7c89666b-b2f3-4aee-a1ab-9fa7beea51a7",
+        "e9019abd-a43a-41ea-802b-5548b40f64ef",
+        "798b6186-576a-41f8-abd1-aedc0ab90aac",
+        "96fe113c-ec33-4e8a-bafe-3ab711e50e14",
+        "73e26b62-b9b0-45c8-b6ea-f0a88115cd96",
+        "483a51b7-26c8-4aed-b72a-e7b47816db6e",
+        "a7d278ea-260d-4043-a2f5-19b253aa4d4a",
+        "c2ed5ac1-252d-45a0-9244-030d451e35fd",
+        "fd2f7d72-0493-4d31-8f55-38b12d9765a1",
+        "4a01099d-c383-4f12-932b-9c718c090e40",
+        "4898203f-4b28-40d7-92ea-035d47d18521",
+        "c472cab1-c820-4c5c-bffc-3d8a69b84b46",
+        "55f018b9-0398-4c68-8739-0404a2d58787",
+        "d6e13702-3dab-4bf5-b6cb-66b975836691",
+        "cf5fc950-1326-49fd-923a-4c2b48b5cd21"
+      ],
+      "size": 60,
+      "createdAt": "2025-08-22T05:51:35.255Z",
+      "lastUpdated": "2025-08-22T06:01:45.402Z"
+    },
+    "Body Performance Art": {
+      "id": "build-1755841895255-j57innk",
+      "name": "Body Performance Art",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "4f5ba4a1-ff3a-4d15-b3d8-1c9262cd609f",
+        "9c09792d-dbe0-47be-a46b-e4497c96eb72",
+        "81db97b8-2ab4-4b2d-83a9-b6682bb27bf8",
+        "6cb76993-db40-4fde-9906-04165c60989b",
+        "3a76dfc0-14c1-48c2-8b1e-7fe480308ac5",
+        "348fee7e-ff2a-4e0b-bf3d-268d9632f0ea",
+        "d19c6fd5-d85c-465d-9fc6-82f911e96ba3",
+        "aaf966be-55b0-485e-8c0c-9f57f0059618",
+        "483f00cc-19bf-4bf7-bd44-278be5f72b58",
+        "7d64789e-df5c-46f6-a6d6-287a35d9122f",
+        "944277c4-3b44-49e2-935f-6a7f50ab695f",
+        "5dfe206c-cd4f-4fd2-9519-aaedee298b74",
+        "8b364591-f18e-46c5-a583-6431894157f2",
+        "831df6dc-36e5-43d0-8d7b-f9c7b7e91f70",
+        "9ae7cf0b-3076-4672-990a-1d4b8cafe004",
+        "81769be3-00cf-4e4a-9b68-e1992e320d96",
+        "a3b5eda1-e22c-42e8-88d2-0c27ce57d2d3",
+        "5c9cf6d8-56fa-417b-88fe-675d872a338a",
+        "e7724286-5a02-423f-a54a-b5426155b363",
+        "23ed1003-004d-45a7-b762-6b730ebbd327",
+        "bfd3dac9-f5e1-4324-82b8-a1339f9ca954",
+        "b384e05a-4e39-4683-84b7-51402eb334f0",
+        "efd1fe8d-ee87-419c-92e9-3c7ebb88fbb8",
+        "fd2f7d72-0493-4d31-8f55-38b12d9765a1",
+        "55f018b9-0398-4c68-8739-0404a2d58787",
+        "cf5fc950-1326-49fd-923a-4c2b48b5cd21"
+      ],
+      "size": 26,
+      "createdAt": "2025-08-22T05:51:35.255Z",
+      "lastUpdated": "2025-08-22T06:01:45.402Z"
+    },
+    "Transgressive Cinema": {
+      "id": "build-1755841895255-w73z1l4",
+      "name": "Transgressive Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "4f5ba4a1-ff3a-4d15-b3d8-1c9262cd609f",
+        "9c09792d-dbe0-47be-a46b-e4497c96eb72",
+        "3a76dfc0-14c1-48c2-8b1e-7fe480308ac5",
+        "7f7ceb2a-fde1-4d99-bd47-fe92d4fe6a14",
+        "1d387ca7-0a46-464d-baf9-2271fe985182",
+        "348fee7e-ff2a-4e0b-bf3d-268d9632f0ea",
+        "72d69a24-b46a-4067-880c-7b9f8d62f593",
+        "50e0fb36-2357-4f59-8be2-b4f6de92e911",
+        "63dff7b1-b593-4a36-9ca5-e30dbace94da",
+        "ac3dea58-ade7-4ab8-b7ec-b8007f4a6a59",
+        "bf9d40a0-3daa-4408-af18-538fb66c7b3a",
+        "f883490c-e75e-4383-8c57-2079c90fc2ad",
+        "5b83bf8d-6078-4f0b-8d5d-e64725b1493e",
+        "aaf966be-55b0-485e-8c0c-9f57f0059618",
+        "935831c5-96a4-4ccb-aacf-e1ad2bc62d5f",
+        "008e08d0-df55-4570-a4c9-aa564fb1fdd8",
+        "38e6fc28-4bce-4704-8191-32296a40d131",
+        "3d6767dc-a22c-459d-ac06-1e8f2e28f84c",
+        "1135220f-3334-4a1b-b5ee-7a1024194878",
+        "a39e9d37-7a74-4989-bd16-7d8bbf25db12",
+        "614c3195-ddd1-4571-ab2c-f4cb795323d2",
+        "7d64789e-df5c-46f6-a6d6-287a35d9122f",
+        "944277c4-3b44-49e2-935f-6a7f50ab695f",
+        "5dfe206c-cd4f-4fd2-9519-aaedee298b74",
+        "560792d6-bb16-411d-83e2-bc66c261ce89",
+        "8b364591-f18e-46c5-a583-6431894157f2",
+        "b0c470b2-95c6-49a7-a811-20c89e68ced1",
+        "f9aee9d0-5d1c-4798-b79e-1931fcc19b7f",
+        "d34ad988-6ef7-4cf3-b307-584bb02274ba",
+        "aa4e3bed-a6f4-4ef6-9fe1-ff1948f14dc3",
+        "0f9f15ce-a8f6-4a21-b25e-cf94d8ded18e",
+        "949f6836-c26b-453c-b3fc-c41404067b58",
+        "1f40266e-9499-4d07-9d15-e40cb0e89703",
+        "5c57c39a-88ee-467a-8926-25cbf26ec3d4",
+        "0d1f49aa-9087-4ce6-aaa0-36c43df4c594",
+        "4e931525-2f7f-4509-b8ea-8cabc86a50cb",
+        "abf83cfb-7202-42ce-be15-7c87f653a916",
+        "be457ad5-cebb-422b-8606-99a876839b10",
+        "42b4d074-641b-4915-82f1-b1fbcdcab16e",
+        "5c9cf6d8-56fa-417b-88fe-675d872a338a",
+        "5be6f544-626a-4c36-ab2c-97bc82f5c634",
+        "bfd3dac9-f5e1-4324-82b8-a1339f9ca954",
+        "352e947a-8e07-44a4-9753-e8a16fef3e5d",
+        "dab80721-26d4-441a-986b-932e832ef4b7",
+        "7c89666b-b2f3-4aee-a1ab-9fa7beea51a7",
+        "9584f6bc-af26-4ef1-b4e1-e0be5753a3fc",
+        "2559bc61-4ab1-4542-a03a-f8adbba8ef84",
+        "7d78ce69-4ed7-4812-9e95-40dabb182f69",
+        "a691b8b8-f70a-41bd-8ec2-a1f1d10d495b",
+        "a4cfd594-6cfc-4854-89e4-9147db0b7276"
+      ],
+      "size": 50,
+      "createdAt": "2025-08-22T05:51:35.255Z",
+      "lastUpdated": "2025-08-22T06:01:05.618Z"
+    },
+    "Landscape Meditation Films": {
+      "id": "build-1755841895255-c56tp4t",
+      "name": "Landscape Meditation Films",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "144c872a-be28-48ac-a9a9-25f32a854b47",
+        "bb763675-09ce-4dbb-aa58-50b126f14fd8",
+        "a580202f-e96d-4d5f-8c2a-077a8659c137",
+        "81db97b8-2ab4-4b2d-83a9-b6682bb27bf8",
+        "4425f30d-9fe1-48f9-b0f5-59c962306ba4",
+        "c6c5069e-d9c5-4de4-bed6-60a972f3888e",
+        "65736414-bfa4-4f26-ab1b-7caf48612f9e",
+        "bc2350d6-b64e-470a-b192-6a69d982e0d8",
+        "2eb381d1-81e9-48c0-affd-f8d9afcc96fa",
+        "5713c694-f755-4285-b44e-6b7bd9f4fec6",
+        "a430e068-df30-4cbf-a01a-d7776dd440e5",
+        "a5208deb-409c-47d1-adb9-a67f49aa2ad9",
+        "0b198369-dfa6-4208-bd18-8992a3d9b711",
+        "00ae59db-84e5-4a6b-821b-64f8e3961335",
+        "b8a6f1d9-2107-4c62-a8b1-8ceacad8d895",
+        "73703274-b7b9-438a-9f96-ee2c84175de0",
+        "9e96d463-2d0d-483c-ad93-7a7ba11e925f",
+        "8fe74afe-2019-4ceb-9c51-b3cf8994e3b9",
+        "702a80ec-120b-4052-848a-035d6b80d607",
+        "b4512da0-61c8-4dbd-ad3f-ed3b9628ac81",
+        "5f39e230-f62f-46f2-959b-dea2b6f33b9a",
+        "0861631d-cd51-4219-b393-b9a893160181",
+        "3c4e9d65-9ebd-4b56-83ed-7ec0468f2d42",
+        "9c6b2a3e-e13f-4b37-8992-57a22f8485d5",
+        "9917fca0-a389-472f-b6c5-2b04864099d9"
+      ],
+      "size": 25,
+      "createdAt": "2025-08-22T05:51:35.255Z",
+      "lastUpdated": "2025-08-22T06:01:05.619Z"
+    },
+    "Structural Film Movement": {
+      "id": "build-1755841895255-j73qngj",
+      "name": "Structural Film Movement",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "144c872a-be28-48ac-a9a9-25f32a854b47",
+        "bb763675-09ce-4dbb-aa58-50b126f14fd8",
+        "a580202f-e96d-4d5f-8c2a-077a8659c137",
+        "00fc6442-d691-4774-8857-0926e893b5e9",
+        "f6d68ba8-9d93-4ad6-a793-32c3cf3a82eb",
+        "6cb76993-db40-4fde-9906-04165c60989b",
+        "b19768cc-c0ec-4a0f-9fc7-95ff594d8315",
+        "f883490c-e75e-4383-8c57-2079c90fc2ad",
+        "0fab3282-acd1-4d49-ba0c-8fcce78d170a",
+        "de5ca98e-61e3-49db-bd4d-b1626ffdcce1",
+        "6c36a95e-af56-4857-b7ee-3205c40c44c2",
+        "8d0b001c-2fc0-4750-b09f-980adc24739c",
+        "2205af3f-ece8-4595-b6a3-981cd4469fc3",
+        "002e790c-7c76-45f5-9973-4c1b949cd5f2",
+        "bc2350d6-b64e-470a-b192-6a69d982e0d8",
+        "2eb381d1-81e9-48c0-affd-f8d9afcc96fa",
+        "9deefff3-46ad-4d00-9892-506266cd6da9",
+        "0b198369-dfa6-4208-bd18-8992a3d9b711",
+        "00ae59db-84e5-4a6b-821b-64f8e3961335",
+        "f5a1a0f4-abed-4d3d-b4f9-a703e8f7d21d",
+        "0319d102-f985-4487-9e75-cbc3a42765f7",
+        "b8a6f1d9-2107-4c62-a8b1-8ceacad8d895",
+        "9e4ce201-deb5-4d6f-8161-00e45982e6f2",
+        "73703274-b7b9-438a-9f96-ee2c84175de0",
+        "73e26b62-b9b0-45c8-b6ea-f0a88115cd96",
+        "d6e13702-3dab-4bf5-b6cb-66b975836691"
+      ],
+      "size": 26,
+      "createdAt": "2025-08-22T05:51:35.255Z",
+      "lastUpdated": "2025-08-22T06:01:24.282Z"
+    },
+    "Environmental Documentary Art": {
+      "id": "build-1755841895256-z8l3k1f",
+      "name": "Environmental Documentary Art",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "144c872a-be28-48ac-a9a9-25f32a854b47",
+        "4425f30d-9fe1-48f9-b0f5-59c962306ba4",
+        "a176a35d-9a9f-42a3-af4f-2bac91143257",
+        "5713c694-f755-4285-b44e-6b7bd9f4fec6",
+        "a5208deb-409c-47d1-adb9-a67f49aa2ad9",
+        "0861631d-cd51-4219-b393-b9a893160181"
+      ],
+      "size": 6,
+      "createdAt": "2025-08-22T05:51:35.256Z",
+      "lastUpdated": "2025-08-22T05:58:35.342Z"
+    },
+    "Digital Age Identity": {
+      "id": "build-1755841895256-jro8gzf",
+      "name": "Digital Age Identity",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "f8d4551d-247e-43c1-9d2b-a3a2827d9516",
+        "df27ee2f-370e-4d8d-a9a1-f7761e4547e6",
+        "c6c5069e-d9c5-4de4-bed6-60a972f3888e",
+        "a176a35d-9a9f-42a3-af4f-2bac91143257",
+        "d81e6cbd-e7d1-48ee-96e3-0dd2ab8fcb22",
+        "7ca49280-62fd-45e2-89fb-143789989ffc",
+        "e444fe6b-8460-4690-84cb-589f4a96df36",
+        "58dfdc68-9fbf-413a-bc09-29a8e4f0c85a",
+        "dce095c0-7b00-47bc-8abf-b02ddec8087f"
+      ],
+      "size": 9,
+      "createdAt": "2025-08-22T05:51:35.256Z",
+      "lastUpdated": "2025-08-22T06:01:14.872Z"
+    },
+    "Race and Technology": {
+      "id": "build-1755841895256-est4uhj",
+      "name": "Race and Technology",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "f8d4551d-247e-43c1-9d2b-a3a2827d9516",
+        "72d69a24-b46a-4067-880c-7b9f8d62f593",
+        "a176a35d-9a9f-42a3-af4f-2bac91143257",
+        "818fbe85-94e5-4911-b347-6ead2b460ae3"
+      ],
+      "size": 4,
+      "createdAt": "2025-08-22T05:51:35.256Z",
+      "lastUpdated": "2025-08-22T05:59:10.825Z"
+    },
+    "Experimental Digital Art": {
+      "id": "build-1755841895256-dsgdl6g",
+      "name": "Experimental Digital Art",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "f8d4551d-247e-43c1-9d2b-a3a2827d9516",
+        "bb763675-09ce-4dbb-aa58-50b126f14fd8",
+        "df27ee2f-370e-4d8d-a9a1-f7761e4547e6",
+        "d81e6cbd-e7d1-48ee-96e3-0dd2ab8fcb22",
+        "7ca49280-62fd-45e2-89fb-143789989ffc",
+        "b4512da0-61c8-4dbd-ad3f-ed3b9628ac81",
+        "e444fe6b-8460-4690-84cb-589f4a96df36",
+        "58dfdc68-9fbf-413a-bc09-29a8e4f0c85a",
+        "3cf496f2-294b-4cfe-8855-84a0b0245280"
+      ],
+      "size": 9,
+      "createdAt": "2025-08-22T05:51:35.256Z",
+      "lastUpdated": "2025-08-22T06:01:24.281Z"
+    },
+    "Still Image Animation": {
+      "id": "build-1755841904792-lr8rls3",
+      "name": "Still Image Animation",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "bb763675-09ce-4dbb-aa58-50b126f14fd8",
+        "1d387ca7-0a46-464d-baf9-2271fe985182",
+        "bf9d40a0-3daa-4408-af18-538fb66c7b3a",
+        "de5ca98e-61e3-49db-bd4d-b1626ffdcce1",
+        "9ccbe80d-e129-40cf-8637-818744111a20",
+        "53bff5e5-b05d-4839-aa47-e93ada00687c",
+        "a5a02b0c-5798-42d0-af41-48bd7ffaa9b4",
+        "1e82a441-9fad-4dce-8d8d-b8f6ee5d44e7",
+        "9171ecd3-096f-4f3d-9d4f-4f3e57bfd6ae",
+        "e58a7f55-5d75-4ec5-94fe-347630e1e105"
+      ],
+      "size": 10,
+      "createdAt": "2025-08-22T05:51:44.792Z",
+      "lastUpdated": "2025-08-22T06:00:56.129Z"
+    },
+    "Memory and Place": {
+      "id": "build-1755841904793-jg9ax8l",
+      "name": "Memory and Place",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "a580202f-e96d-4d5f-8c2a-077a8659c137",
+        "b3c7f660-2d4f-45b0-9033-a37966f0e9cb",
+        "4425f30d-9fe1-48f9-b0f5-59c962306ba4",
+        "9ccbe80d-e129-40cf-8637-818744111a20",
+        "1135220f-3334-4a1b-b5ee-7a1024194878",
+        "f67f876c-f715-44e5-b3d7-7126bedaa5a7",
+        "5713c694-f755-4285-b44e-6b7bd9f4fec6",
+        "b4813f97-19df-4049-8bf5-fd5c4c0ecc0e",
+        "c8288837-cd6c-4ece-80cc-18143bf0f975",
+        "329741d6-88f3-4c12-a972-9e7f00c1e128",
+        "9238e989-acf9-4122-aa57-ca1afceef210",
+        "53bff5e5-b05d-4839-aa47-e93ada00687c",
+        "00ae59db-84e5-4a6b-821b-64f8e3961335",
+        "b3fc2588-6481-4f73-839e-1a0d7b8d3031",
+        "c504b943-dd0a-492b-912b-8af89c53e82c",
+        "2984b6ea-81a0-4d5f-aa73-7fb46f360c5f",
+        "b24a9873-0673-4c81-bf40-7260f75c3040",
+        "862cbb5e-2fb7-4776-bd99-6344349ab88e",
+        "97c7b599-298c-419c-81c1-5bafa85d7e2c",
+        "b4756272-87f8-45ae-ae19-5666160583c2",
+        "9171ecd3-096f-4f3d-9d4f-4f3e57bfd6ae",
+        "8fe74afe-2019-4ceb-9c51-b3cf8994e3b9",
+        "2513237a-acbd-4cd8-9814-7851e96e9f82",
+        "954d053a-b988-4477-87d7-3f952e4bc7ed",
+        "de4cb404-0b1e-4604-86e4-101dd21a9932",
+        "c3883768-df94-4f9d-b53b-def048ae8e08",
+        "275ec522-28f0-4275-85af-6c9e338dea64",
+        "19ccb03f-4ba2-41c5-8976-5b1fce120094",
+        "2d657e65-0b1d-4512-aa60-80ba65c38269",
+        "9c6b2a3e-e13f-4b37-8992-57a22f8485d5",
+        "bc327e0e-a649-4b71-8f4a-0bc43d87e62c"
+      ],
+      "size": 31,
+      "createdAt": "2025-08-22T05:51:44.793Z",
+      "lastUpdated": "2025-08-22T06:01:24.282Z"
+    },
+    "Archive and Memory": {
+      "id": "build-1755841904793-aytmlhc",
+      "name": "Archive and Memory",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "df27ee2f-370e-4d8d-a9a1-f7761e4547e6",
+        "9ccbe80d-e129-40cf-8637-818744111a20",
+        "b840accc-3b49-458b-be4d-7fc94e05a3ae",
+        "6436deee-c7ad-4723-a3d5-cf4b2d4cd5a4",
+        "b3fc2588-6481-4f73-839e-1a0d7b8d3031",
+        "27a6e6cf-431e-4761-83b3-4df712137693",
+        "885e08c1-072e-4c77-bfd5-4f4b4687a242",
+        "e5a744fa-0563-4df6-809a-7e05db6d0ffb",
+        "af4c7f14-3bb8-4b02-b8f8-e0dd3371686e",
+        "c3883768-df94-4f9d-b53b-def048ae8e08",
+        "275ec522-28f0-4275-85af-6c9e338dea64",
+        "19ccb03f-4ba2-41c5-8976-5b1fce120094",
+        "bc327e0e-a649-4b71-8f4a-0bc43d87e62c",
+        "69e67546-2323-4110-aa48-4209ac2262fe"
+      ],
+      "size": 14,
+      "createdAt": "2025-08-22T05:51:44.793Z",
+      "lastUpdated": "2025-08-22T06:01:45.401Z"
+    },
+    "Feminist Meta-Cinema": {
+      "id": "build-1755841904793-rrsg0uw",
+      "name": "Feminist Meta-Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "9c09792d-dbe0-47be-a46b-e4497c96eb72",
+        "81db97b8-2ab4-4b2d-83a9-b6682bb27bf8",
+        "50e0fb36-2357-4f59-8be2-b4f6de92e911",
+        "2591160e-3e28-47d4-8884-7b212c87d980",
+        "75e77258-6002-4446-8f47-ad057b43322e",
+        "270ead1f-0f88-47dc-bbfe-51864142d89a"
+      ],
+      "size": 6,
+      "createdAt": "2025-08-22T05:51:44.793Z",
+      "lastUpdated": "2025-08-22T06:00:01.961Z"
+    },
+    "Machine Age Cinema": {
+      "id": "build-1755841914110-g3joe10",
+      "name": "Machine Age Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "f6d68ba8-9d93-4ad6-a793-32c3cf3a82eb",
+        "6c36a95e-af56-4857-b7ee-3205c40c44c2",
+        "002e790c-7c76-45f5-9973-4c1b949cd5f2",
+        "a5208deb-409c-47d1-adb9-a67f49aa2ad9",
+        "0b198369-dfa6-4208-bd18-8992a3d9b711",
+        "fc3ed3df-0b41-4382-8b0e-5d0ea0e5e72c",
+        "702a80ec-120b-4052-848a-035d6b80d607",
+        "45a9cc3e-7f49-4113-9c6c-7310677a288d"
+      ],
+      "size": 8,
+      "createdAt": "2025-08-22T05:51:54.110Z",
+      "lastUpdated": "2025-08-22T05:59:31.247Z"
+    },
+    "Mythological Horror Cinema": {
+      "id": "build-1755841922924-fo21l6k",
+      "name": "Mythological Horror Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "3a76dfc0-14c1-48c2-8b1e-7fe480308ac5",
+        "50e0fb36-2357-4f59-8be2-b4f6de92e911",
+        "aaf966be-55b0-485e-8c0c-9f57f0059618",
+        "935831c5-96a4-4ccb-aacf-e1ad2bc62d5f",
+        "483f00cc-19bf-4bf7-bd44-278be5f72b58",
+        "560792d6-bb16-411d-83e2-bc66c261ce89",
+        "d34ad988-6ef7-4cf3-b307-584bb02274ba",
+        "4e931525-2f7f-4509-b8ea-8cabc86a50cb",
+        "18b3619c-4094-473b-bbf2-2c90fcf87b8c",
+        "d6bb0482-4cb5-4f51-844c-40344b5601a6",
+        "b4512da0-61c8-4dbd-ad3f-ed3b9628ac81",
+        "efd1fe8d-ee87-419c-92e9-3c7ebb88fbb8",
+        "15613e89-5502-4eb8-a7cc-c8da35ac21c3"
+      ],
+      "size": 13,
+      "createdAt": "2025-08-22T05:52:02.924Z",
+      "lastUpdated": "2025-08-22T06:01:14.872Z"
+    },
+    "Poetic Voice-Over Films": {
+      "id": "build-1755841922925-kwbsqtn",
+      "name": "Poetic Voice-Over Films",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "91180a9f-a4dd-4b9f-a077-b01e38e49806",
+        "0e9ca690-5ab8-44a3-9143-80a6f7c2ac4b",
+        "b3c7f660-2d4f-45b0-9033-a37966f0e9cb",
+        "d19c6fd5-d85c-465d-9fc6-82f911e96ba3",
+        "935831c5-96a4-4ccb-aacf-e1ad2bc62d5f",
+        "65736414-bfa4-4f26-ab1b-7caf48612f9e",
+        "5713c694-f755-4285-b44e-6b7bd9f4fec6",
+        "2591160e-3e28-47d4-8884-7b212c87d980",
+        "53bff5e5-b05d-4839-aa47-e93ada00687c",
+        "c504b943-dd0a-492b-912b-8af89c53e82c",
+        "f51c0f43-d05b-48bc-acaf-dba91673b677",
+        "275ec522-28f0-4275-85af-6c9e338dea64",
+        "9c6b2a3e-e13f-4b37-8992-57a22f8485d5",
+        "bc327e0e-a649-4b71-8f4a-0bc43d87e62c"
+      ],
+      "size": 14,
+      "createdAt": "2025-08-22T05:52:02.925Z",
+      "lastUpdated": "2025-08-22T06:01:24.282Z"
+    },
+    "Handcrafted Animation Art": {
+      "id": "build-1755841922925-frpcjdu",
+      "name": "Handcrafted Animation Art",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "1d387ca7-0a46-464d-baf9-2271fe985182",
+        "ac3dea58-ade7-4ab8-b7ec-b8007f4a6a59",
+        "1712eb96-a11f-427d-8be0-909254fbb742",
+        "d8096fed-6c95-42aa-8320-4a859ca35d80",
+        "9238e989-acf9-4122-aa57-ca1afceef210",
+        "d890d423-8a5d-4d8b-9a06-daa81f8e47a4",
+        "d6bb0482-4cb5-4f51-844c-40344b5601a6",
+        "8fa625ff-b514-4214-9927-8b8f48715d87",
+        "6c2b7cfa-f593-4f8e-956b-4e42bb9af95f",
+        "97c7b599-298c-419c-81c1-5bafa85d7e2c",
+        "57d16203-7867-4730-8e3c-b2f78078ad04",
+        "270d63df-b55f-4735-bcf0-cd2e7abd4b9b"
+      ],
+      "size": 12,
+      "createdAt": "2025-08-22T05:52:02.925Z",
+      "lastUpdated": "2025-08-22T05:59:40.441Z"
+    },
+    "Illness and Mortality": {
+      "id": "build-1755841931829-k9lv4jn",
+      "name": "Illness and Mortality",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "0e9ca690-5ab8-44a3-9143-80a6f7c2ac4b",
+        "ac3dea58-ade7-4ab8-b7ec-b8007f4a6a59",
+        "831df6dc-36e5-43d0-8d7b-f9c7b7e91f70",
+        "9238e989-acf9-4122-aa57-ca1afceef210",
+        "e5deb2db-1c46-420a-a779-5a5f7d2a8fc0",
+        "954d053a-b988-4477-87d7-3f952e4bc7ed"
+      ],
+      "size": 6,
+      "createdAt": "2025-08-22T05:52:11.829Z",
+      "lastUpdated": "2025-08-22T06:00:01.961Z"
+    },
+    "Medical Identity Films": {
+      "id": "build-1755841931829-b7exwau",
+      "name": "Medical Identity Films",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "b3c7f660-2d4f-45b0-9033-a37966f0e9cb",
+        "585799ec-17ed-4c6f-9e9e-879b0366978a"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T05:52:11.829Z",
+      "lastUpdated": "2025-08-22T05:54:47.479Z"
+    },
+    "Sexual Liberation Cinema": {
+      "id": "build-1755841931829-w9rftrg",
+      "name": "Sexual Liberation Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "348fee7e-ff2a-4e0b-bf3d-268d9632f0ea",
+        "7d64789e-df5c-46f6-a6d6-287a35d9122f",
+        "5dfe206c-cd4f-4fd2-9519-aaedee298b74",
+        "0f9f15ce-a8f6-4a21-b25e-cf94d8ded18e",
+        "75e77258-6002-4446-8f47-ad057b43322e",
+        "0d1f49aa-9087-4ce6-aaa0-36c43df4c594",
+        "be457ad5-cebb-422b-8606-99a876839b10",
+        "42b4d074-641b-4915-82f1-b1fbcdcab16e",
+        "d0f24b8c-3ae8-428b-95a1-ed948b61df18",
+        "8c6196df-d161-4d71-8da0-4773131ddcaf",
+        "7c89666b-b2f3-4aee-a1ab-9fa7beea51a7",
+        "9584f6bc-af26-4ef1-b4e1-e0be5753a3fc",
+        "2559bc61-4ab1-4542-a03a-f8adbba8ef84",
+        "7ba82721-418f-4cc2-bbc2-5e6468051978"
+      ],
+      "size": 14,
+      "createdAt": "2025-08-22T05:52:11.829Z",
+      "lastUpdated": "2025-08-22T06:01:24.281Z"
+    },
+    "Psychological Boundary Films": {
+      "id": "build-1755841940635-y8h6i9l",
+      "name": "Psychological Boundary Films",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "72d69a24-b46a-4067-880c-7b9f8d62f593",
+        "5b83bf8d-6078-4f0b-8d5d-e64725b1493e",
+        "d19c6fd5-d85c-465d-9fc6-82f911e96ba3",
+        "c6c5069e-d9c5-4de4-bed6-60a972f3888e",
+        "350c3aa8-f9c4-456b-baf5-9aab7e783d71",
+        "008e08d0-df55-4570-a4c9-aa564fb1fdd8",
+        "1712eb96-a11f-427d-8be0-909254fbb742",
+        "d8096fed-6c95-42aa-8320-4a859ca35d80",
+        "38e6fc28-4bce-4704-8191-32296a40d131",
+        "3d6767dc-a22c-459d-ac06-1e8f2e28f84c",
+        "1135220f-3334-4a1b-b5ee-7a1024194878",
+        "a39e9d37-7a74-4989-bd16-7d8bbf25db12",
+        "614c3195-ddd1-4571-ab2c-f4cb795323d2",
+        "560792d6-bb16-411d-83e2-bc66c261ce89",
+        "a430e068-df30-4cbf-a01a-d7776dd440e5",
+        "8b364591-f18e-46c5-a583-6431894157f2",
+        "b0c470b2-95c6-49a7-a811-20c89e68ced1",
+        "7cc9bb1e-5cf9-4606-9126-d9cb2d247ab7",
+        "831df6dc-36e5-43d0-8d7b-f9c7b7e91f70",
+        "585799ec-17ed-4c6f-9e9e-879b0366978a",
+        "aa4e3bed-a6f4-4ef6-9fe1-ff1948f14dc3",
+        "329741d6-88f3-4c12-a972-9e7f00c1e128",
+        "9238e989-acf9-4122-aa57-ca1afceef210",
+        "75e77258-6002-4446-8f47-ad057b43322e",
+        "1f40266e-9499-4d07-9d15-e40cb0e89703",
+        "81769be3-00cf-4e4a-9b68-e1992e320d96",
+        "70a39852-4c5c-4066-83cd-cf05c656725f",
+        "0f1f7bc6-9504-493e-ae1a-4b1132d5a1e4",
+        "285f1195-557e-4883-93aa-810819498a88",
+        "483a51b7-26c8-4aed-b72a-e7b47816db6e",
+        "270d63df-b55f-4735-bcf0-cd2e7abd4b9b",
+        "a3a5c2f6-3236-40ca-abba-686ffc3e03ab",
+        "bc8abc69-97ab-41db-952f-448509af746b",
+        "c472cab1-c820-4c5c-bffc-3d8a69b84b46",
+        "dbcff25c-e48b-491b-b8da-6c00640e7562",
+        "8c360718-e094-4614-92fe-47991ab4ee10"
+      ],
+      "size": 36,
+      "createdAt": "2025-08-22T05:52:20.635Z",
+      "lastUpdated": "2025-08-22T06:01:45.402Z"
+    },
+    "Early Ethnographic Cinema": {
+      "id": "build-1755841940636-hcz37tl",
+      "name": "Early Ethnographic Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "7cf06c81-7111-475e-8563-a6e099e1e2d8"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:52:20.636Z",
+      "lastUpdated": "2025-08-22T05:52:20.636Z"
+    },
+    "Folk Horror Experimentation": {
+      "id": "build-1755841940636-76usit1",
+      "name": "Folk Horror Experimentation",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "50e0fb36-2357-4f59-8be2-b4f6de92e911"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:52:20.636Z",
+      "lastUpdated": "2025-08-22T05:52:20.636Z"
+    },
+    "Early Cinema Pastiche": {
+      "id": "build-1755841940636-d06r6fv",
+      "name": "Early Cinema Pastiche",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "63dff7b1-b593-4a36-9ca5-e30dbace94da",
+        "483f00cc-19bf-4bf7-bd44-278be5f72b58",
+        "e9f12744-8c67-4474-ad1c-4c9a0f7af637",
+        "05ac5bdb-5a1e-499d-bd1e-f993cf8d3fce",
+        "4e931525-2f7f-4509-b8ea-8cabc86a50cb",
+        "b24a9873-0673-4c81-bf40-7260f75c3040",
+        "14ea0069-9185-4318-a231-f2c3ec63389a",
+        "09d063c3-bf34-4fa9-b80b-c7fc71b57b56",
+        "de4cb404-0b1e-4604-86e4-101dd21a9932",
+        "e58a7f55-5d75-4ec5-94fe-347630e1e105",
+        "13f8ebeb-dd1d-4b14-8590-044ef0da97df"
+      ],
+      "size": 11,
+      "createdAt": "2025-08-22T05:52:20.636Z",
+      "lastUpdated": "2025-08-22T06:01:14.871Z"
+    },
+    "Surreal Animated Dreams": {
+      "id": "build-1755841949758-fce4sd3",
+      "name": "Surreal Animated Dreams",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "ac3dea58-ade7-4ab8-b7ec-b8007f4a6a59",
+        "1712eb96-a11f-427d-8be0-909254fbb742",
+        "d8096fed-6c95-42aa-8320-4a859ca35d80",
+        "e9f12744-8c67-4474-ad1c-4c9a0f7af637",
+        "a39e9d37-7a74-4989-bd16-7d8bbf25db12",
+        "614c3195-ddd1-4571-ab2c-f4cb795323d2",
+        "944277c4-3b44-49e2-935f-6a7f50ab695f",
+        "41eee1f8-0052-477b-9b60-97abb5b947a8",
+        "d34ad988-6ef7-4cf3-b307-584bb02274ba",
+        "329741d6-88f3-4c12-a972-9e7f00c1e128",
+        "d890d423-8a5d-4d8b-9a06-daa81f8e47a4",
+        "d6bb0482-4cb5-4f51-844c-40344b5601a6",
+        "70a39852-4c5c-4066-83cd-cf05c656725f",
+        "6c2b7cfa-f593-4f8e-956b-4e42bb9af95f",
+        "8c6196df-d161-4d71-8da0-4773131ddcaf",
+        "b4756272-87f8-45ae-ae19-5666160583c2",
+        "2513237a-acbd-4cd8-9814-7851e96e9f82",
+        "57d16203-7867-4730-8e3c-b2f78078ad04",
+        "270d63df-b55f-4735-bcf0-cd2e7abd4b9b",
+        "58dfdc68-9fbf-413a-bc09-29a8e4f0c85a",
+        "6f8c71ba-5900-4f31-b31f-5c8c87763e2b",
+        "a3a5c2f6-3236-40ca-abba-686ffc3e03ab",
+        "bc8abc69-97ab-41db-952f-448509af746b",
+        "fd2f7d72-0493-4d31-8f55-38b12d9765a1",
+        "7d78ce69-4ed7-4812-9e95-40dabb182f69",
+        "bdb8b8ec-2f7f-4f20-9dca-29799143799e",
+        "dbcff25c-e48b-491b-b8da-6c00640e7562"
+      ],
+      "size": 27,
+      "createdAt": "2025-08-22T05:52:29.758Z",
+      "lastUpdated": "2025-08-22T06:01:05.619Z"
+    },
+    "Media Analysis Cinema": {
+      "id": "build-1755841960294-im18exz",
+      "name": "Media Analysis Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "de5ca98e-61e3-49db-bd4d-b1626ffdcce1",
+        "350c3aa8-f9c4-456b-baf5-9aab7e783d71",
+        "008e08d0-df55-4570-a4c9-aa564fb1fdd8",
+        "f67f876c-f715-44e5-b3d7-7126bedaa5a7",
+        "a176a35d-9a9f-42a3-af4f-2bac91143257",
+        "b4813f97-19df-4049-8bf5-fd5c4c0ecc0e",
+        "d81e6cbd-e7d1-48ee-96e3-0dd2ab8fcb22",
+        "b840accc-3b49-458b-be4d-7fc94e05a3ae",
+        "c8288837-cd6c-4ece-80cc-18143bf0f975",
+        "f9aee9d0-5d1c-4798-b79e-1931fcc19b7f",
+        "aa4e3bed-a6f4-4ef6-9fe1-ff1948f14dc3",
+        "6436deee-c7ad-4723-a3d5-cf4b2d4cd5a4",
+        "0f9f15ce-a8f6-4a21-b25e-cf94d8ded18e",
+        "ef7ebc7f-f5b0-42de-9465-daa8c698e39f",
+        "a5208deb-409c-47d1-adb9-a67f49aa2ad9",
+        "5c57c39a-88ee-467a-8926-25cbf26ec3d4",
+        "996755b3-a1a9-425d-8f14-1db05344b6a7",
+        "a5a02b0c-5798-42d0-af41-48bd7ffaa9b4",
+        "f841883d-decf-400d-a2b4-96d46e8e5b3a",
+        "b566bc26-d396-49ed-996f-f94fd801448e",
+        "27a6e6cf-431e-4761-83b3-4df712137693",
+        "7ca49280-62fd-45e2-89fb-143789989ffc",
+        "885e08c1-072e-4c77-bfd5-4f4b4687a242",
+        "d0f24b8c-3ae8-428b-95a1-ed948b61df18",
+        "22df0608-113f-42d1-8b3d-f8b1f2f412d3",
+        "12f9090d-3ffb-4f8e-8777-7fdb6276fd6d",
+        "497f1f07-78b9-43e5-b0d6-bd4daac6aa15",
+        "2f643080-7719-458f-86a2-b8912bdf8783",
+        "e5deb2db-1c46-420a-a779-5a5f7d2a8fc0",
+        "e9019abd-a43a-41ea-802b-5548b40f64ef",
+        "798b6186-576a-41f8-abd1-aedc0ab90aac",
+        "e444fe6b-8460-4690-84cb-589f4a96df36",
+        "14ea0069-9185-4318-a231-f2c3ec63389a",
+        "b384e05a-4e39-4683-84b7-51402eb334f0",
+        "e5a744fa-0563-4df6-809a-7e05db6d0ffb",
+        "6f4f62b5-2a46-4c02-8055-ad4bd4898d9b",
+        "270ead1f-0f88-47dc-bbfe-51864142d89a",
+        "de4cb404-0b1e-4604-86e4-101dd21a9932",
+        "af4c7f14-3bb8-4b02-b8f8-e0dd3371686e",
+        "a09b95af-58b2-43f4-8737-9541b3b81553",
+        "0adbef4e-acd8-4946-a3a0-5f28cf1a4b67",
+        "dce095c0-7b00-47bc-8abf-b02ddec8087f"
+      ],
+      "size": 42,
+      "createdAt": "2025-08-22T05:52:40.294Z",
+      "lastUpdated": "2025-08-22T06:01:14.872Z"
+    },
+    "Architectural Body Horror": {
+      "id": "build-1755841968995-rts62dv",
+      "name": "Architectural Body Horror",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "aaf966be-55b0-485e-8c0c-9f57f0059618"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:52:48.995Z",
+      "lastUpdated": "2025-08-22T05:52:48.995Z"
+    },
+    "Documentary Self-Reflection": {
+      "id": "build-1755841968997-q2qzozq",
+      "name": "Documentary Self-Reflection",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "350c3aa8-f9c4-456b-baf5-9aab7e783d71",
+        "f67f876c-f715-44e5-b3d7-7126bedaa5a7",
+        "b4813f97-19df-4049-8bf5-fd5c4c0ecc0e",
+        "2591160e-3e28-47d4-8884-7b212c87d980",
+        "b0c470b2-95c6-49a7-a811-20c89e68ced1",
+        "c8288837-cd6c-4ece-80cc-18143bf0f975",
+        "7cc9bb1e-5cf9-4606-9126-d9cb2d247ab7",
+        "6436deee-c7ad-4723-a3d5-cf4b2d4cd5a4",
+        "0f9f15ce-a8f6-4a21-b25e-cf94d8ded18e",
+        "ef7ebc7f-f5b0-42de-9465-daa8c698e39f",
+        "996755b3-a1a9-425d-8f14-1db05344b6a7",
+        "00ae59db-84e5-4a6b-821b-64f8e3961335",
+        "b566bc26-d396-49ed-996f-f94fd801448e",
+        "b3fc2588-6481-4f73-839e-1a0d7b8d3031",
+        "c504b943-dd0a-492b-912b-8af89c53e82c",
+        "2984b6ea-81a0-4d5f-aa73-7fb46f360c5f",
+        "27a6e6cf-431e-4761-83b3-4df712137693",
+        "b24a9873-0673-4c81-bf40-7260f75c3040",
+        "862cbb5e-2fb7-4776-bd99-6344349ab88e",
+        "885e08c1-072e-4c77-bfd5-4f4b4687a242",
+        "97c7b599-298c-419c-81c1-5bafa85d7e2c",
+        "5be6f544-626a-4c36-ab2c-97bc82f5c634",
+        "4c9d53a4-66e2-42b8-93cb-7da25ece8863",
+        "8f8209b9-ed57-4cad-ba95-7baf57af0c77",
+        "9adaa02f-d6b6-4669-b2bd-ee70a8acc359",
+        "b501a888-f602-4bc4-bac0-c58cc8f1baea",
+        "2f643080-7719-458f-86a2-b8912bdf8783",
+        "285f1195-557e-4883-93aa-810819498a88",
+        "9584f6bc-af26-4ef1-b4e1-e0be5753a3fc",
+        "e5deb2db-1c46-420a-a779-5a5f7d2a8fc0",
+        "e9019abd-a43a-41ea-802b-5548b40f64ef",
+        "798b6186-576a-41f8-abd1-aedc0ab90aac",
+        "b384e05a-4e39-4683-84b7-51402eb334f0",
+        "a7d278ea-260d-4043-a2f5-19b253aa4d4a",
+        "efd1fe8d-ee87-419c-92e9-3c7ebb88fbb8",
+        "66340017-9dc6-4a6b-bccd-c6f31fe0cf59",
+        "6f4f62b5-2a46-4c02-8055-ad4bd4898d9b",
+        "954d053a-b988-4477-87d7-3f952e4bc7ed",
+        "af4c7f14-3bb8-4b02-b8f8-e0dd3371686e",
+        "a09b95af-58b2-43f4-8737-9541b3b81553",
+        "275ec522-28f0-4275-85af-6c9e338dea64",
+        "19ccb03f-4ba2-41c5-8976-5b1fce120094",
+        "2d657e65-0b1d-4512-aa60-80ba65c38269",
+        "9917fca0-a389-472f-b6c5-2b04864099d9",
+        "7ba82721-418f-4cc2-bbc2-5e6468051978",
+        "69e67546-2323-4110-aa48-4209ac2262fe",
+        "cf5fc950-1326-49fd-923a-4c2b48b5cd21"
+      ],
+      "size": 47,
+      "createdAt": "2025-08-22T05:52:48.997Z",
+      "lastUpdated": "2025-08-22T06:01:45.402Z"
+    },
+    "Deteriorating Film Art": {
+      "id": "build-1755841987430-ybehfr7",
+      "name": "Deteriorating Film Art",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "9ccbe80d-e129-40cf-8637-818744111a20",
+        "41eee1f8-0052-477b-9b60-97abb5b947a8",
+        "885e08c1-072e-4c77-bfd5-4f4b4687a242",
+        "09d063c3-bf34-4fa9-b80b-c7fc71b57b56"
+      ],
+      "size": 4,
+      "createdAt": "2025-08-22T05:53:07.430Z",
+      "lastUpdated": "2025-08-22T06:00:01.961Z"
+    },
+    "Sound Control Cinema": {
+      "id": "build-1755841987431-3cftm27",
+      "name": "Sound Control Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "008e08d0-df55-4570-a4c9-aa564fb1fdd8"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:53:07.431Z",
+      "lastUpdated": "2025-08-22T05:53:07.431Z"
+    },
+    "Kinetic Chain Reactions": {
+      "id": "build-1755841987431-lvm6rwn",
+      "name": "Kinetic Chain Reactions",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "6c36a95e-af56-4857-b7ee-3205c40c44c2"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:53:07.431Z",
+      "lastUpdated": "2025-08-22T05:53:07.431Z"
+    },
+    "Cosmic Personal Mythology": {
+      "id": "build-1755841997304-293vlek",
+      "name": "Cosmic Personal Mythology",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "8d0b001c-2fc0-4750-b09f-980adc24739c"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:53:17.304Z",
+      "lastUpdated": "2025-08-22T05:53:17.304Z"
+    },
+    "Childhood Fear Cinema": {
+      "id": "build-1755841997304-o5dmtit",
+      "name": "Childhood Fear Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "1712eb96-a11f-427d-8be0-909254fbb742",
+        "3d6767dc-a22c-459d-ac06-1e8f2e28f84c",
+        "d890d423-8a5d-4d8b-9a06-daa81f8e47a4",
+        "a3a5c2f6-3236-40ca-abba-686ffc3e03ab"
+      ],
+      "size": 4,
+      "createdAt": "2025-08-22T05:53:17.304Z",
+      "lastUpdated": "2025-08-22T06:00:13.024Z"
+    },
+    "Artist Collaboration Films": {
+      "id": "build-1755841997305-ig1t3sg",
+      "name": "Artist Collaboration Films",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "d8096fed-6c95-42aa-8320-4a859ca35d80",
+        "97c7b599-298c-419c-81c1-5bafa85d7e2c",
+        "57d16203-7867-4730-8e3c-b2f78078ad04",
+        "efd1fe8d-ee87-419c-92e9-3c7ebb88fbb8",
+        "6f4f62b5-2a46-4c02-8055-ad4bd4898d9b",
+        "c2ed5ac1-252d-45a0-9244-030d451e35fd"
+      ],
+      "size": 6,
+      "createdAt": "2025-08-22T05:53:17.305Z",
+      "lastUpdated": "2025-08-22T06:00:35.456Z"
+    },
+    "Electric Body Cinema": {
+      "id": "build-1755842005817-ieu9ike",
+      "name": "Electric Body Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "3d6767dc-a22c-459d-ac06-1e8f2e28f84c"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:53:25.817Z",
+      "lastUpdated": "2025-08-22T05:53:25.817Z"
+    },
+    "Psychedelic Death Experience": {
+      "id": "build-1755842005817-iwsgthc",
+      "name": "Psychedelic Death Experience",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "1135220f-3334-4a1b-b5ee-7a1024194878"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:53:25.817Z",
+      "lastUpdated": "2025-08-22T05:53:25.817Z"
+    },
+    "Dadaist Cinema Movement": {
+      "id": "build-1755842015077-mjbat7f",
+      "name": "Dadaist Cinema Movement",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "e9f12744-8c67-4474-ad1c-4c9a0f7af637"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:53:35.077Z",
+      "lastUpdated": "2025-08-22T05:53:35.077Z"
+    },
+    "Industrial Horror Dreams": {
+      "id": "build-1755842015078-4nxdnwb",
+      "name": "Industrial Horror Dreams",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "a39e9d37-7a74-4989-bd16-7d8bbf25db12",
+        "d6bb0482-4cb5-4f51-844c-40344b5601a6",
+        "bfd3dac9-f5e1-4324-82b8-a1339f9ca954",
+        "bdb8b8ec-2f7f-4f20-9dca-29799143799e"
+      ],
+      "size": 4,
+      "createdAt": "2025-08-22T05:53:35.078Z",
+      "lastUpdated": "2025-08-22T06:00:56.129Z"
+    },
+    "Desert Mirage Cinema": {
+      "id": "build-1755842015079-t4p5rva",
+      "name": "Desert Mirage Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "65736414-bfa4-4f26-ab1b-7caf48612f9e"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:53:35.079Z",
+      "lastUpdated": "2025-08-22T05:53:35.079Z"
+    },
+    "Digital Language Essays": {
+      "id": "build-1755842024909-e1b9y4h",
+      "name": "Digital Language Essays",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "f67f876c-f715-44e5-b3d7-7126bedaa5a7"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:53:44.909Z",
+      "lastUpdated": "2025-08-22T05:53:44.909Z"
+    },
+    "1940s Avant-Garde": {
+      "id": "build-1755842024910-oo5ptll",
+      "name": "1940s Avant-Garde",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "614c3195-ddd1-4571-ab2c-f4cb795323d2",
+        "70a39852-4c5c-4066-83cd-cf05c656725f",
+        "23ed1003-004d-45a7-b762-6b730ebbd327"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T05:53:44.910Z",
+      "lastUpdated": "2025-08-22T05:57:55.600Z"
+    },
+    "Surreal Body Comedy": {
+      "id": "build-1755842034142-qa4syaa",
+      "name": "Surreal Body Comedy",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "944277c4-3b44-49e2-935f-6a7f50ab695f",
+        "05ac5bdb-5a1e-499d-bd1e-f993cf8d3fce"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T05:53:54.142Z",
+      "lastUpdated": "2025-08-22T05:54:32.425Z"
+    },
+    "Black Identity Horror": {
+      "id": "build-1755842043645-tnv4hs4",
+      "name": "Black Identity Horror",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "560792d6-bb16-411d-83e2-bc66c261ce89"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:54:03.645Z",
+      "lastUpdated": "2025-08-22T05:54:03.645Z"
+    },
+    "Political Border Cinema": {
+      "id": "build-1755842043646-0umyb1d",
+      "name": "Political Border Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "b4813f97-19df-4049-8bf5-fd5c4c0ecc0e"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:54:03.646Z",
+      "lastUpdated": "2025-08-22T05:54:03.646Z"
+    },
+    "Language Deconstruction Films": {
+      "id": "build-1755842052558-gy5rrn3",
+      "name": "Language Deconstruction Films",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "d81e6cbd-e7d1-48ee-96e3-0dd2ab8fcb22",
+        "b840accc-3b49-458b-be4d-7fc94e05a3ae",
+        "ef7ebc7f-f5b0-42de-9465-daa8c698e39f",
+        "f841883d-decf-400d-a2b4-96d46e8e5b3a",
+        "dda971a8-ce78-461a-933b-01bbc623a805",
+        "66340017-9dc6-4a6b-bccd-c6f31fe0cf59",
+        "a691b8b8-f70a-41bd-8ec2-a1f1d10d495b"
+      ],
+      "size": 7,
+      "createdAt": "2025-08-22T05:54:12.558Z",
+      "lastUpdated": "2025-08-22T06:00:45.748Z"
+    },
+    "Cybernetic Body Horror": {
+      "id": "build-1755842052559-qy0ztru",
+      "name": "Cybernetic Body Horror",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "8b364591-f18e-46c5-a583-6431894157f2",
+        "ff0800a5-9c55-44f3-b83d-ee65e209479a"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T05:54:12.559Z",
+      "lastUpdated": "2025-08-22T05:58:55.710Z"
+    },
+    "American Poverty Portraits": {
+      "id": "build-1755842052560-rduvuzr",
+      "name": "American Poverty Portraits",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "b0c470b2-95c6-49a7-a811-20c89e68ced1"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:54:12.560Z",
+      "lastUpdated": "2025-08-22T05:54:12.560Z"
+    },
+    "Historical Memory Theatre": {
+      "id": "build-1755842072426-syye85d",
+      "name": "Historical Memory Theatre",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "c8288837-cd6c-4ece-80cc-18143bf0f975",
+        "bc327e0e-a649-4b71-8f4a-0bc43d87e62c"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T05:54:32.426Z",
+      "lastUpdated": "2025-08-22T06:01:24.282Z"
+    },
+    "Political Resistance Cinema": {
+      "id": "build-1755842087478-j1mostx",
+      "name": "Political Resistance Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "7cc9bb1e-5cf9-4606-9126-d9cb2d247ab7",
+        "abf83cfb-7202-42ce-be15-7c87f653a916",
+        "2559bc61-4ab1-4542-a03a-f8adbba8ef84",
+        "798b6186-576a-41f8-abd1-aedc0ab90aac",
+        "af4c7f14-3bb8-4b02-b8f8-e0dd3371686e",
+        "c3883768-df94-4f9d-b53b-def048ae8e08",
+        "19ccb03f-4ba2-41c5-8976-5b1fce120094",
+        "a691b8b8-f70a-41bd-8ec2-a1f1d10d495b",
+        "7ba82721-418f-4cc2-bbc2-5e6468051978",
+        "69e67546-2323-4110-aa48-4209ac2262fe"
+      ],
+      "size": 10,
+      "createdAt": "2025-08-22T05:54:47.478Z",
+      "lastUpdated": "2025-08-22T06:01:45.401Z"
+    },
+    "Occult Ritual Cinema": {
+      "id": "build-1755842096895-70gqqc8",
+      "name": "Occult Ritual Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "d34ad988-6ef7-4cf3-b307-584bb02274ba",
+        "949f6836-c26b-453c-b3fc-c41404067b58",
+        "18b3619c-4094-473b-bbf2-2c90fcf87b8c",
+        "bfd3dac9-f5e1-4324-82b8-a1339f9ca954",
+        "dab80721-26d4-441a-986b-932e832ef4b7"
+      ],
+      "size": 5,
+      "createdAt": "2025-08-22T05:54:56.895Z",
+      "lastUpdated": "2025-08-22T05:58:06.044Z"
+    },
+    "Reality Fracture Films": {
+      "id": "build-1755842096896-edalpkd",
+      "name": "Reality Fracture Films",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "aa4e3bed-a6f4-4ef6-9fe1-ff1948f14dc3",
+        "1f40266e-9499-4d07-9d15-e40cb0e89703",
+        "996755b3-a1a9-425d-8f14-1db05344b6a7",
+        "2984b6ea-81a0-4d5f-aa73-7fb46f360c5f",
+        "70a39852-4c5c-4066-83cd-cf05c656725f",
+        "b24a9873-0673-4c81-bf40-7260f75c3040",
+        "862cbb5e-2fb7-4776-bd99-6344349ab88e",
+        "6c2b7cfa-f593-4f8e-956b-4e42bb9af95f",
+        "d0f24b8c-3ae8-428b-95a1-ed948b61df18",
+        "fc3ed3df-0b41-4382-8b0e-5d0ea0e5e72c",
+        "0f1f7bc6-9504-493e-ae1a-4b1132d5a1e4",
+        "8c6196df-d161-4d71-8da0-4773131ddcaf",
+        "5be6f544-626a-4c36-ab2c-97bc82f5c634",
+        "b4756272-87f8-45ae-ae19-5666160583c2",
+        "12f9090d-3ffb-4f8e-8777-7fdb6276fd6d",
+        "9adaa02f-d6b6-4669-b2bd-ee70a8acc359",
+        "b501a888-f602-4bc4-bac0-c58cc8f1baea",
+        "23ed1003-004d-45a7-b762-6b730ebbd327",
+        "497f1f07-78b9-43e5-b0d6-bd4daac6aa15",
+        "dda971a8-ce78-461a-933b-01bbc623a805",
+        "b4512da0-61c8-4dbd-ad3f-ed3b9628ac81",
+        "2559bc61-4ab1-4542-a03a-f8adbba8ef84",
+        "e9019abd-a43a-41ea-802b-5548b40f64ef",
+        "96fe113c-ec33-4e8a-bafe-3ab711e50e14",
+        "ff0800a5-9c55-44f3-b83d-ee65e209479a",
+        "f51c0f43-d05b-48bc-acaf-dba91673b677",
+        "818fbe85-94e5-4911-b347-6ead2b460ae3",
+        "58dfdc68-9fbf-413a-bc09-29a8e4f0c85a",
+        "6f8c71ba-5900-4f31-b31f-5c8c87763e2b",
+        "09d063c3-bf34-4fa9-b80b-c7fc71b57b56",
+        "a3a5c2f6-3236-40ca-abba-686ffc3e03ab",
+        "a09b95af-58b2-43f4-8737-9541b3b81553",
+        "c3883768-df94-4f9d-b53b-def048ae8e08",
+        "bc8abc69-97ab-41db-952f-448509af746b",
+        "3fad77e0-edb2-4c6e-a2ab-c7ea4bc1e596",
+        "4a01099d-c383-4f12-932b-9c718c090e40",
+        "4898203f-4b28-40d7-92ea-035d47d18521",
+        "a4cfd594-6cfc-4854-89e4-9147db0b7276",
+        "c472cab1-c820-4c5c-bffc-3d8a69b84b46",
+        "dbcff25c-e48b-491b-b8da-6c00640e7562",
+        "15613e89-5502-4eb8-a7cc-c8da35ac21c3",
+        "dce095c0-7b00-47bc-8abf-b02ddec8087f",
+        "3cf496f2-294b-4cfe-8855-84a0b0245280",
+        "8c360718-e094-4614-92fe-47991ab4ee10"
+      ],
+      "size": 44,
+      "createdAt": "2025-08-22T05:54:56.896Z",
+      "lastUpdated": "2025-08-22T06:01:45.402Z"
+    },
+    "Political Archive Remix": {
+      "id": "build-1755842096896-j2ecovv",
+      "name": "Political Archive Remix",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "6436deee-c7ad-4723-a3d5-cf4b2d4cd5a4"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:54:56.896Z",
+      "lastUpdated": "2025-08-22T05:54:56.896Z"
+    },
+    "Institutional Power Cinema": {
+      "id": "build-1755842107954-7j6o73l",
+      "name": "Institutional Power Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "329741d6-88f3-4c12-a972-9e7f00c1e128",
+        "818fbe85-94e5-4911-b347-6ead2b460ae3",
+        "a7d278ea-260d-4043-a2f5-19b253aa4d4a"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T05:55:07.954Z",
+      "lastUpdated": "2025-08-22T05:59:31.247Z"
+    },
+    "Psychedelic Occult Films": {
+      "id": "build-1755842107955-gxgltcv",
+      "name": "Psychedelic Occult Films",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "949f6836-c26b-453c-b3fc-c41404067b58",
+        "18b3619c-4094-473b-bbf2-2c90fcf87b8c"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T05:55:07.955Z",
+      "lastUpdated": "2025-08-22T05:56:14.362Z"
+    },
+    "Animated Object Theatre": {
+      "id": "build-1755842117110-06suep0",
+      "name": "Animated Object Theatre",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "d890d423-8a5d-4d8b-9a06-daa81f8e47a4",
+        "2513237a-acbd-4cd8-9814-7851e96e9f82",
+        "57d16203-7867-4730-8e3c-b2f78078ad04",
+        "6f8c71ba-5900-4f31-b31f-5c8c87763e2b",
+        "bdb8b8ec-2f7f-4f20-9dca-29799143799e"
+      ],
+      "size": 5,
+      "createdAt": "2025-08-22T05:55:17.110Z",
+      "lastUpdated": "2025-08-22T06:00:56.129Z"
+    },
+    "Mental Illness Portraits": {
+      "id": "build-1755842117112-spieb2n",
+      "name": "Mental Illness Portraits",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "1f40266e-9499-4d07-9d15-e40cb0e89703",
+        "81769be3-00cf-4e4a-9b68-e1992e320d96",
+        "8c360718-e094-4614-92fe-47991ab4ee10"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T05:55:17.112Z",
+      "lastUpdated": "2025-08-22T06:01:45.402Z"
+    },
+    "Consumer Culture Critique": {
+      "id": "build-1755842126714-r6bbyul",
+      "name": "Consumer Culture Critique",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "5c57c39a-88ee-467a-8926-25cbf26ec3d4"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:55:26.714Z",
+      "lastUpdated": "2025-08-22T05:55:26.714Z"
+    },
+    "Genre Deconstruction Cinema": {
+      "id": "build-1755842136195-uldtos0",
+      "name": "Genre Deconstruction Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "996755b3-a1a9-425d-8f14-1db05344b6a7",
+        "0d1f49aa-9087-4ce6-aaa0-36c43df4c594",
+        "22df0608-113f-42d1-8b3d-f8b1f2f412d3",
+        "5be6f544-626a-4c36-ab2c-97bc82f5c634",
+        "12f9090d-3ffb-4f8e-8777-7fdb6276fd6d",
+        "497f1f07-78b9-43e5-b0d6-bd4daac6aa15",
+        "dda971a8-ce78-461a-933b-01bbc623a805",
+        "7c89666b-b2f3-4aee-a1ab-9fa7beea51a7",
+        "9584f6bc-af26-4ef1-b4e1-e0be5753a3fc",
+        "e5deb2db-1c46-420a-a779-5a5f7d2a8fc0",
+        "66340017-9dc6-4a6b-bccd-c6f31fe0cf59",
+        "6f4f62b5-2a46-4c02-8055-ad4bd4898d9b",
+        "09d063c3-bf34-4fa9-b80b-c7fc71b57b56",
+        "270ead1f-0f88-47dc-bbfe-51864142d89a",
+        "de4cb404-0b1e-4604-86e4-101dd21a9932",
+        "a09b95af-58b2-43f4-8737-9541b3b81553",
+        "3fad77e0-edb2-4c6e-a2ab-c7ea4bc1e596",
+        "7d78ce69-4ed7-4812-9e95-40dabb182f69",
+        "0adbef4e-acd8-4946-a3a0-5f28cf1a4b67",
+        "4898203f-4b28-40d7-92ea-035d47d18521",
+        "a4cfd594-6cfc-4854-89e4-9147db0b7276",
+        "13f8ebeb-dd1d-4b14-8590-044ef0da97df",
+        "15613e89-5502-4eb8-a7cc-c8da35ac21c3",
+        "55f018b9-0398-4c68-8739-0404a2d58787",
+        "7ba82721-418f-4cc2-bbc2-5e6468051978"
+      ],
+      "size": 25,
+      "createdAt": "2025-08-22T05:55:36.195Z",
+      "lastUpdated": "2025-08-22T06:01:24.281Z"
+    },
+    "Counterculture Identity Films": {
+      "id": "build-1755842156325-sfhj3d7",
+      "name": "Counterculture Identity Films",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "b566bc26-d396-49ed-996f-f94fd801448e",
+        "be457ad5-cebb-422b-8606-99a876839b10",
+        "42b4d074-641b-4915-82f1-b1fbcdcab16e",
+        "4c9d53a4-66e2-42b8-93cb-7da25ece8863",
+        "8f8209b9-ed57-4cad-ba95-7baf57af0c77",
+        "dab80721-26d4-441a-986b-932e832ef4b7",
+        "798b6186-576a-41f8-abd1-aedc0ab90aac",
+        "13f8ebeb-dd1d-4b14-8590-044ef0da97df"
+      ],
+      "size": 8,
+      "createdAt": "2025-08-22T05:55:56.325Z",
+      "lastUpdated": "2025-08-22T06:01:14.871Z"
+    },
+    "Queer Historical Portraits": {
+      "id": "build-1755842165465-r0vgrm3",
+      "name": "Queer Historical Portraits",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "b3fc2588-6481-4f73-839e-1a0d7b8d3031"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:56:05.465Z",
+      "lastUpdated": "2025-08-22T05:56:05.465Z"
+    },
+    "Urban Observation Cinema": {
+      "id": "build-1755842165466-hsbw5be",
+      "name": "Urban Observation Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "c504b943-dd0a-492b-912b-8af89c53e82c",
+        "b8a6f1d9-2107-4c62-a8b1-8ceacad8d895",
+        "9adaa02f-d6b6-4669-b2bd-ee70a8acc359",
+        "702a80ec-120b-4052-848a-035d6b80d607",
+        "0861631d-cd51-4219-b393-b9a893160181",
+        "285f1195-557e-4883-93aa-810819498a88",
+        "45a9cc3e-7f49-4113-9c6c-7310677a288d",
+        "4a01099d-c383-4f12-932b-9c718c090e40"
+      ],
+      "size": 8,
+      "createdAt": "2025-08-22T05:56:05.466Z",
+      "lastUpdated": "2025-08-22T06:00:45.747Z"
+    },
+    "Biblical Avant-Garde Cinema": {
+      "id": "build-1755842165466-cdjqg7o",
+      "name": "Biblical Avant-Garde Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "4e931525-2f7f-4509-b8ea-8cabc86a50cb",
+        "954d053a-b988-4477-87d7-3f952e4bc7ed",
+        "9c6b2a3e-e13f-4b37-8992-57a22f8485d5"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T05:56:05.466Z",
+      "lastUpdated": "2025-08-22T06:00:35.456Z"
+    },
+    "Theater Reality Blur": {
+      "id": "build-1755842174363-knm3oz5",
+      "name": "Theater Reality Blur",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "81769be3-00cf-4e4a-9b68-e1992e320d96",
+        "0f1f7bc6-9504-493e-ae1a-4b1132d5a1e4",
+        "e7724286-5a02-423f-a54a-b5426155b363",
+        "12f9090d-3ffb-4f8e-8777-7fdb6276fd6d",
+        "b501a888-f602-4bc4-bac0-c58cc8f1baea",
+        "23ed1003-004d-45a7-b762-6b730ebbd327",
+        "352e947a-8e07-44a4-9753-e8a16fef3e5d",
+        "2f643080-7719-458f-86a2-b8912bdf8783",
+        "9171ecd3-096f-4f3d-9d4f-4f3e57bfd6ae",
+        "96fe113c-ec33-4e8a-bafe-3ab711e50e14",
+        "a7d278ea-260d-4043-a2f5-19b253aa4d4a",
+        "2d657e65-0b1d-4512-aa60-80ba65c38269",
+        "3fad77e0-edb2-4c6e-a2ab-c7ea4bc1e596",
+        "4898203f-4b28-40d7-92ea-035d47d18521",
+        "55f018b9-0398-4c68-8739-0404a2d58787"
+      ],
+      "size": 15,
+      "createdAt": "2025-08-22T05:56:14.363Z",
+      "lastUpdated": "2025-08-22T06:01:14.872Z"
+    },
+    "Early Motion Studies": {
+      "id": "build-1755842183019-tmiawlc",
+      "name": "Early Motion Studies",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "1e82a441-9fad-4dce-8d8d-b8f6ee5d44e7",
+        "a3b5eda1-e22c-42e8-88d2-0c27ce57d2d3",
+        "96898c41-2f36-42a0-8403-521c5f13624e"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T05:56:23.019Z",
+      "lastUpdated": "2025-08-22T05:59:51.723Z"
+    },
+    "Natural Decay Films": {
+      "id": "build-1755842183020-0db6gob",
+      "name": "Natural Decay Films",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "f5a1a0f4-abed-4d3d-b4f9-a703e8f7d21d",
+        "8fe74afe-2019-4ceb-9c51-b3cf8994e3b9"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T05:56:23.020Z",
+      "lastUpdated": "2025-08-22T05:58:16.896Z"
+    },
+    "Scientific Theory Cinema": {
+      "id": "build-1755842205151-zpxcycz",
+      "name": "Scientific Theory Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "27a6e6cf-431e-4761-83b3-4df712137693"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:56:45.151Z",
+      "lastUpdated": "2025-08-22T05:56:45.151Z"
+    },
+    "Direct Film Manipulation": {
+      "id": "build-1755842205152-vvq62zm",
+      "name": "Direct Film Manipulation",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "8fa625ff-b514-4214-9927-8b8f48715d87",
+        "22df0608-113f-42d1-8b3d-f8b1f2f412d3"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T05:56:45.152Z",
+      "lastUpdated": "2025-08-22T05:57:24.675Z"
+    },
+    "Collective Storytelling Cinema": {
+      "id": "build-1755842214468-kk6vj8z",
+      "name": "Collective Storytelling Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "862cbb5e-2fb7-4776-bd99-6344349ab88e"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:56:54.468Z",
+      "lastUpdated": "2025-08-22T05:56:54.468Z"
+    },
+    "Technology Impact Films": {
+      "id": "build-1755842214468-rog9hs6",
+      "name": "Technology Impact Films",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "7ca49280-62fd-45e2-89fb-143789989ffc",
+        "5f39e230-f62f-46f2-959b-dea2b6f33b9a",
+        "e444fe6b-8460-4690-84cb-589f4a96df36",
+        "ff0800a5-9c55-44f3-b83d-ee65e209479a",
+        "dce095c0-7b00-47bc-8abf-b02ddec8087f"
+      ],
+      "size": 5,
+      "createdAt": "2025-08-22T05:56:54.468Z",
+      "lastUpdated": "2025-08-22T06:01:14.872Z"
+    },
+    "Queer Archive Recovery": {
+      "id": "build-1755842224302-0q7yu4q",
+      "name": "Queer Archive Recovery",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "885e08c1-072e-4c77-bfd5-4f4b4687a242"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:57:04.302Z",
+      "lastUpdated": "2025-08-22T05:57:04.302Z"
+    },
+    "Punk DIY Cinema": {
+      "id": "build-1755842224302-br3uh3l",
+      "name": "Punk DIY Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "42b4d074-641b-4915-82f1-b1fbcdcab16e",
+        "352e947a-8e07-44a4-9753-e8a16fef3e5d"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T05:57:04.302Z",
+      "lastUpdated": "2025-08-22T05:57:55.601Z"
+    },
+    "Domestic Power Relations": {
+      "id": "build-1755842234679-1xwveh9",
+      "name": "Domestic Power Relations",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "d0f24b8c-3ae8-428b-95a1-ed948b61df18"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:57:14.679Z",
+      "lastUpdated": "2025-08-22T05:57:14.679Z"
+    },
+    "Speed and Motion Studies": {
+      "id": "build-1755842234679-wbuib8d",
+      "name": "Speed and Motion Studies",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "fc3ed3df-0b41-4382-8b0e-5d0ea0e5e72c"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:57:14.679Z",
+      "lastUpdated": "2025-08-22T05:57:14.679Z"
+    },
+    "Extended Duration Cinema": {
+      "id": "build-1755842234679-raaxhs8",
+      "name": "Extended Duration Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "0f1f7bc6-9504-493e-ae1a-4b1132d5a1e4",
+        "9e96d463-2d0d-483c-ad93-7a7ba11e925f",
+        "3c4e9d65-9ebd-4b56-83ed-7ec0468f2d42",
+        "73e26b62-b9b0-45c8-b6ea-f0a88115cd96",
+        "e5a744fa-0563-4df6-809a-7e05db6d0ffb",
+        "66340017-9dc6-4a6b-bccd-c6f31fe0cf59",
+        "9917fca0-a389-472f-b6c5-2b04864099d9",
+        "d6e13702-3dab-4bf5-b6cb-66b975836691"
+      ],
+      "size": 8,
+      "createdAt": "2025-08-22T05:57:14.679Z",
+      "lastUpdated": "2025-08-22T06:01:24.282Z"
+    },
+    "Ritual Death Cinema": {
+      "id": "build-1755842244676-tax69fz",
+      "name": "Ritual Death Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "e7724286-5a02-423f-a54a-b5426155b363"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:57:24.676Z",
+      "lastUpdated": "2025-08-22T05:57:24.676Z"
+    },
+    "Queer Fantasy Cinema": {
+      "id": "build-1755842244676-o0y5ydb",
+      "name": "Queer Fantasy Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "8c6196df-d161-4d71-8da0-4773131ddcaf",
+        "f51c0f43-d05b-48bc-acaf-dba91673b677",
+        "7d78ce69-4ed7-4812-9e95-40dabb182f69"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T05:57:24.676Z",
+      "lastUpdated": "2025-08-22T06:00:45.748Z"
+    },
+    "Rural Class Dynamics": {
+      "id": "build-1755842254656-pemuw2c",
+      "name": "Rural Class Dynamics",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "b4756272-87f8-45ae-ae19-5666160583c2"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:57:34.656Z",
+      "lastUpdated": "2025-08-22T05:57:34.656Z"
+    },
+    "Literary Text Visualization": {
+      "id": "build-1755842265165-pnq1d9s",
+      "name": "Literary Text Visualization",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "12f9090d-3ffb-4f8e-8777-7fdb6276fd6d",
+        "2513237a-acbd-4cd8-9814-7851e96e9f82",
+        "f51c0f43-d05b-48bc-acaf-dba91673b677",
+        "8c360718-e094-4614-92fe-47991ab4ee10"
+      ],
+      "size": 4,
+      "createdAt": "2025-08-22T05:57:45.165Z",
+      "lastUpdated": "2025-08-22T06:01:45.402Z"
+    },
+    "Beat Generation Cinema": {
+      "id": "build-1755842265166-sfnahsg",
+      "name": "Beat Generation Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "8f8209b9-ed57-4cad-ba95-7baf57af0c77"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:57:45.166Z",
+      "lastUpdated": "2025-08-22T05:57:45.166Z"
+    },
+    "Real-Time Cinema Experiments": {
+      "id": "build-1755842265166-samy42g",
+      "name": "Real-Time Cinema Experiments",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "9adaa02f-d6b6-4669-b2bd-ee70a8acc359",
+        "e5a744fa-0563-4df6-809a-7e05db6d0ffb",
+        "0adbef4e-acd8-4946-a3a0-5f28cf1a4b67"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T05:57:45.166Z",
+      "lastUpdated": "2025-08-22T06:00:56.129Z"
+    },
+    "Musical Identity Cinema": {
+      "id": "build-1755842265167-ecn02bw",
+      "name": "Musical Identity Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "b501a888-f602-4bc4-bac0-c58cc8f1baea"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:57:45.167Z",
+      "lastUpdated": "2025-08-22T05:57:45.167Z"
+    },
+    "Ritual Movement Cinema": {
+      "id": "build-1755842275600-ldcoruc",
+      "name": "Ritual Movement Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "23ed1003-004d-45a7-b762-6b730ebbd327",
+        "fd2f7d72-0493-4d31-8f55-38b12d9765a1"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T05:57:55.600Z",
+      "lastUpdated": "2025-08-22T06:00:45.747Z"
+    },
+    "Mythological Transformation Cinema": {
+      "id": "build-1755842275600-kix0ozd",
+      "name": "Mythological Transformation Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "bfd3dac9-f5e1-4324-82b8-a1339f9ca954",
+        "96fe113c-ec33-4e8a-bafe-3ab711e50e14",
+        "b384e05a-4e39-4683-84b7-51402eb334f0",
+        "bdb8b8ec-2f7f-4f20-9dca-29799143799e",
+        "c472cab1-c820-4c5c-bffc-3d8a69b84b46"
+      ],
+      "size": 5,
+      "createdAt": "2025-08-22T05:57:55.600Z",
+      "lastUpdated": "2025-08-22T06:01:05.619Z"
+    },
+    "Historical Period Subversion": {
+      "id": "build-1755842275601-jji11c9",
+      "name": "Historical Period Subversion",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "352e947a-8e07-44a4-9753-e8a16fef3e5d"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:57:55.601Z",
+      "lastUpdated": "2025-08-22T05:57:55.601Z"
+    },
+    "Industrial Transport Cinema": {
+      "id": "build-1755842275601-sfk4q8q",
+      "name": "Industrial Transport Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "73703274-b7b9-438a-9f96-ee2c84175de0",
+        "9e96d463-2d0d-483c-ad93-7a7ba11e925f"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T05:57:55.601Z",
+      "lastUpdated": "2025-08-22T05:58:06.043Z"
+    },
+    "Time Loop Cinema": {
+      "id": "build-1755842286044-cdizmrs",
+      "name": "Time Loop Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "497f1f07-78b9-43e5-b0d6-bd4daac6aa15"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:58:06.044Z",
+      "lastUpdated": "2025-08-22T05:58:06.044Z"
+    },
+    "Audience Reaction Cinema": {
+      "id": "build-1755842296896-19b7j11",
+      "name": "Audience Reaction Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "2f643080-7719-458f-86a2-b8912bdf8783"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:58:16.896Z",
+      "lastUpdated": "2025-08-22T05:58:16.896Z"
+    },
+    "Painting to Cinema": {
+      "id": "build-1755842296896-g85xdvr",
+      "name": "Painting to Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "9171ecd3-096f-4f3d-9d4f-4f3e57bfd6ae"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:58:16.896Z",
+      "lastUpdated": "2025-08-22T05:58:16.896Z"
+    },
+    "Camp Sci-Fi Parody": {
+      "id": "build-1755842296896-8mxocwt",
+      "name": "Camp Sci-Fi Parody",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "7c89666b-b2f3-4aee-a1ab-9fa7beea51a7"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:58:16.896Z",
+      "lastUpdated": "2025-08-22T05:58:16.896Z"
+    },
+    "Urban Isolation Cinema": {
+      "id": "build-1755842315342-66fvtnj",
+      "name": "Urban Isolation Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "285f1195-557e-4883-93aa-810819498a88"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:58:35.343Z",
+      "lastUpdated": "2025-08-22T05:58:35.343Z"
+    },
+    "Doll Performance Cinema": {
+      "id": "build-1755842315343-5zayzu4",
+      "name": "Doll Performance Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "e5deb2db-1c46-420a-a779-5a5f7d2a8fc0"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:58:35.343Z",
+      "lastUpdated": "2025-08-22T05:58:35.343Z"
+    },
+    "Digital Manifesto Films": {
+      "id": "build-1755842335709-ed0dsdv",
+      "name": "Digital Manifesto Films",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "e444fe6b-8460-4690-84cb-589f4a96df36"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:58:55.709Z",
+      "lastUpdated": "2025-08-22T05:58:55.709Z"
+    },
+    "Japanese Cyberpunk Cinema": {
+      "id": "build-1755842335710-7gmttwh",
+      "name": "Japanese Cyberpunk Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "ff0800a5-9c55-44f3-b83d-ee65e209479a"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:58:55.710Z",
+      "lastUpdated": "2025-08-22T05:58:55.710Z"
+    },
+    "Museum Power Dynamics": {
+      "id": "build-1755842350825-2gahcr5",
+      "name": "Museum Power Dynamics",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "818fbe85-94e5-4911-b347-6ead2b460ae3"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:59:10.825Z",
+      "lastUpdated": "2025-08-22T05:59:10.825Z"
+    },
+    "1920s Avant-Garde": {
+      "id": "build-1755842371247-ntjpi0h",
+      "name": "1920s Avant-Garde",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "45a9cc3e-7f49-4113-9c6c-7310677a288d",
+        "dbcff25c-e48b-491b-b8da-6c00640e7562"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T05:59:31.247Z",
+      "lastUpdated": "2025-08-22T06:01:05.619Z"
+    },
+    "Architectural Film Studies": {
+      "id": "build-1755842371247-an4gssq",
+      "name": "Architectural Film Studies",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "45a9cc3e-7f49-4113-9c6c-7310677a288d"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:59:31.247Z",
+      "lastUpdated": "2025-08-22T05:59:31.247Z"
+    },
+    "Early Sound Experiments": {
+      "id": "build-1755842391723-53qt5ym",
+      "name": "Early Sound Experiments",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "96898c41-2f36-42a0-8403-521c5f13624e"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:59:51.723Z",
+      "lastUpdated": "2025-08-22T05:59:51.723Z"
+    },
+    "Encyclopedic Fiction Films": {
+      "id": "build-1755842391725-9myqx5q",
+      "name": "Encyclopedic Fiction Films",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "66340017-9dc6-4a6b-bccd-c6f31fe0cf59"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T05:59:51.725Z",
+      "lastUpdated": "2025-08-22T05:59:51.725Z"
+    },
+    "Domestic Space Horror": {
+      "id": "build-1755842401961-gms3jjo",
+      "name": "Domestic Space Horror",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "6f8c71ba-5900-4f31-b31f-5c8c87763e2b"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:00:01.961Z",
+      "lastUpdated": "2025-08-22T06:00:01.961Z"
+    },
+    "Economic Power Cinema": {
+      "id": "build-1755842401961-ibypyz9",
+      "name": "Economic Power Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "270ead1f-0f88-47dc-bbfe-51864142d89a"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:00:01.961Z",
+      "lastUpdated": "2025-08-22T06:00:01.961Z"
+    },
+    "Colonial Cinema Critique": {
+      "id": "build-1755842413026-2ob679u",
+      "name": "Colonial Cinema Critique",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "a09b95af-58b2-43f4-8737-9541b3b81553"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:00:13.026Z",
+      "lastUpdated": "2025-08-22T06:00:13.026Z"
+    },
+    "Black British Identity": {
+      "id": "build-1755842425410-ffresap",
+      "name": "Black British Identity",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "19ccb03f-4ba2-41c5-8976-5b1fce120094",
+        "69e67546-2323-4110-aa48-4209ac2262fe"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T06:00:25.410Z",
+      "lastUpdated": "2025-08-22T06:01:45.401Z"
+    },
+    "Recursive Dream Cinema": {
+      "id": "build-1755842425410-gxy7kmw",
+      "name": "Recursive Dream Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "bc8abc69-97ab-41db-952f-448509af746b"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:00:25.410Z",
+      "lastUpdated": "2025-08-22T06:00:25.410Z"
+    },
+    "Classical Music Cinema": {
+      "id": "build-1755842435454-y0xa483",
+      "name": "Classical Music Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "2d657e65-0b1d-4512-aa60-80ba65c38269"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:00:35.454Z",
+      "lastUpdated": "2025-08-22T06:00:35.454Z"
+    },
+    "Shakespeare Experimental Adaptations": {
+      "id": "build-1755842435455-jeqovtj",
+      "name": "Shakespeare Experimental Adaptations",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "3fad77e0-edb2-4c6e-a2ab-c7ea4bc1e596"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:00:35.455Z",
+      "lastUpdated": "2025-08-22T06:00:35.455Z"
+    },
+    "Cosmic Origin Cinema": {
+      "id": "build-1755842435456-6qajfju",
+      "name": "Cosmic Origin Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "9c6b2a3e-e13f-4b37-8992-57a22f8485d5"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:00:35.456Z",
+      "lastUpdated": "2025-08-22T06:00:35.456Z"
+    },
+    "Music Performance Documentation": {
+      "id": "build-1755842435456-uepegky",
+      "name": "Music Performance Documentation",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "c2ed5ac1-252d-45a0-9244-030d451e35fd"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:00:35.456Z",
+      "lastUpdated": "2025-08-22T06:00:35.456Z"
+    },
+    "Gender Transformation Cinema": {
+      "id": "build-1755842445748-si6f2i1",
+      "name": "Gender Transformation Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "7d78ce69-4ed7-4812-9e95-40dabb182f69"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:00:45.748Z",
+      "lastUpdated": "2025-08-22T06:00:45.748Z"
+    },
+    "Primal Regression Cinema": {
+      "id": "build-1755842445748-0svjocu",
+      "name": "Primal Regression Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "a691b8b8-f70a-41bd-8ec2-a1f1d10d495b"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:00:45.748Z",
+      "lastUpdated": "2025-08-22T06:00:45.748Z"
+    },
+    "Early Color Films": {
+      "id": "build-1755842456129-1zz85b9",
+      "name": "Early Color Films",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "e58a7f55-5d75-4ec5-94fe-347630e1e105"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:00:56.129Z",
+      "lastUpdated": "2025-08-22T06:00:56.129Z"
+    },
+    "Multi-Screen Narrative Cinema": {
+      "id": "build-1755842456129-ac8u0qu",
+      "name": "Multi-Screen Narrative Cinema",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "0adbef4e-acd8-4946-a3a0-5f28cf1a4b67"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:00:56.129Z",
+      "lastUpdated": "2025-08-22T06:00:56.129Z"
+    },
+    "VHS Aesthetic Horror": {
+      "id": "build-1755842465618-xa968yo",
+      "name": "VHS Aesthetic Horror",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "a4cfd594-6cfc-4854-89e4-9147db0b7276"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:01:05.618Z",
+      "lastUpdated": "2025-08-22T06:01:05.618Z"
+    },
+    "Video Synthesis Art": {
+      "id": "build-1755842484281-6lbc2iw",
+      "name": "Video Synthesis Art",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "3cf496f2-294b-4cfe-8855-84a0b0245280"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:01:24.281Z",
+      "lastUpdated": "2025-08-22T06:01:24.281Z"
+    },
+    "Birth and Family": {
+      "id": "build-1755842505402-br72c74",
+      "name": "Birth and Family",
+      "description": "Thematic collection for Experimental films",
+      "movieIds": [
+        "cf5fc950-1326-49fd-923a-4c2b48b5cd21"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:01:45.402Z",
+      "lastUpdated": "2025-08-22T06:01:45.402Z"
+    }
+  },
+  "processingState": {
+    "completedBatches": [],
+    "failedMovies": [
+      {
+        "movieId": "3155156a-a276-40cb-afcc-9757d66a1b10",
+        "title": "Deeper",
+        "year": 2010,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T05:53:07.431Z"
+      },
+      {
+        "movieId": "c0b1718e-84a3-4a1c-9290-b75f48aacfe0",
+        "title": "Heißes Blut oder Vivienne del Vargos' letzter Vorhang",
+        "year": 2006,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T05:54:32.425Z"
+      },
+      {
+        "movieId": "59ebb4f6-9914-4186-acc5-37a5748707df",
+        "title": "Lan Ling 40th: Experimental Actors Studio",
+        "year": 2023,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T05:55:56.324Z"
+      },
+      {
+        "movieId": "2f1199ec-4eb1-4128-b01f-d6a9793078c8",
+        "title": "The Bitterness of the Singer in Front of the Utility of Barbed Wire",
+        "year": 2002,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T05:59:31.246Z"
+      },
+      {
+        "movieId": "01e934d4-6aa5-4557-9af3-d9a0999861d9",
+        "title": "White Song",
+        "year": 2006,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T06:01:45.401Z"
+      }
+    ]
+  }
+}

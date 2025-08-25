@@ -1,0 +1,2473 @@
+{
+  "metadata": {
+    "genre": "Action Thriller",
+    "totalMovies": 357,
+    "processedMovies": 346,
+    "lastCheckpoint": "2025-08-22T06:13:13.134Z",
+    "processingBatch": 0,
+    "totalCost": 2.0142599999999997
+  },
+  "allLists": {
+    "WWII Espionage Thrillers": {
+      "id": "build-1755843200192-hnz4fcm",
+      "name": "WWII Espionage Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "2066b528-5fab-4e1b-b2d7-3b9bbc54b865",
+        "87e6d4f7-9376-4a9f-bec5-3796a902320d",
+        "e3b7f5da-2608-41a0-82b5-b34d6656ec84",
+        "eb5fde1e-5c8f-4041-ae2b-240001ff4acc",
+        "00ef13e1-092d-48cd-a760-0c4a206ce99d",
+        "fcdfbb43-1dc4-4c4e-838e-9f035ba9efec",
+        "416d240a-9784-424b-9103-cadb2635214e",
+        "9cda3c04-b045-4e6c-85d0-209e909c8933",
+        "007b8683-26f3-49e0-8206-803917f8ef7d",
+        "63028075-8976-43de-b1c0-968bcb9ad97c",
+        "0cad5411-d737-49d1-82f9-c72c5bce3dcd",
+        "d91e42df-e8af-4650-808b-b07f5fb69e33",
+        "a93f0c2d-a5a2-42eb-93b3-e832bb1e0a93",
+        "1b580e00-5309-420d-ae2e-02532cde53b8",
+        "14224832-e364-49a1-916e-5829236a832d",
+        "805c19ff-b766-4f73-9085-e4d56ac6e26d",
+        "5baa8f8d-d8e2-4d4c-9f25-4f71b2a08e18",
+        "7ff21260-bc7a-4acf-aebd-595d066e1bb7",
+        "44e99d23-5269-47cb-97cf-2e4947efddb0",
+        "aaa49950-e79f-4c5d-91dc-05db24fc6bed",
+        "8af46d10-4dc9-4207-b5ea-b80a03ccdc2c",
+        "808ce3ba-c5b5-4940-a705-46b687375d53",
+        "dd209e87-f97d-4a01-b4e9-131ec3168a85",
+        "2077d069-fb69-44c7-9cae-fa743ccbcba0",
+        "33186cc2-b958-47d6-817c-7ed947ca95a0",
+        "23d9dce0-f3cb-488a-bb5f-2f4d78fe6ff2"
+      ],
+      "size": 26,
+      "createdAt": "2025-08-22T06:13:20.192Z",
+      "lastUpdated": "2025-08-22T06:30:38.534Z"
+    },
+    "1940s Film Noir": {
+      "id": "build-1755843200192-aakeea2",
+      "name": "1940s Film Noir",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "2066b528-5fab-4e1b-b2d7-3b9bbc54b865",
+        "eb5fde1e-5c8f-4041-ae2b-240001ff4acc",
+        "00ef13e1-092d-48cd-a760-0c4a206ce99d",
+        "fcdfbb43-1dc4-4c4e-838e-9f035ba9efec",
+        "9cda3c04-b045-4e6c-85d0-209e909c8933",
+        "007b8683-26f3-49e0-8206-803917f8ef7d",
+        "63028075-8976-43de-b1c0-968bcb9ad97c",
+        "1b580e00-5309-420d-ae2e-02532cde53b8",
+        "808ce3ba-c5b5-4940-a705-46b687375d53",
+        "1e634e93-248d-4572-bf2d-7d4193826d7b",
+        "2077d069-fb69-44c7-9cae-fa743ccbcba0"
+      ],
+      "size": 11,
+      "createdAt": "2025-08-22T06:13:20.192Z",
+      "lastUpdated": "2025-08-22T06:26:25.808Z"
+    },
+    "OSS Intelligence Films": {
+      "id": "build-1755843200192-8ezybas",
+      "name": "OSS Intelligence Films",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "2066b528-5fab-4e1b-b2d7-3b9bbc54b865",
+        "87e6d4f7-9376-4a9f-bec5-3796a902320d",
+        "9139812a-e1b5-4d97-87b9-486f9589732b",
+        "70f107f9-81e5-45d1-99fb-42c94f8490ea",
+        "e3b7f5da-2608-41a0-82b5-b34d6656ec84",
+        "eb5fde1e-5c8f-4041-ae2b-240001ff4acc",
+        "00ef13e1-092d-48cd-a760-0c4a206ce99d",
+        "8934830c-deca-40ce-ae02-1e63990998d1",
+        "416d240a-9784-424b-9103-cadb2635214e",
+        "2e1161a0-6343-4f11-9998-2dfc2f4206c0",
+        "1fdfbd27-0ebd-4af4-9a75-5636db6f7d8e",
+        "9cda3c04-b045-4e6c-85d0-209e909c8933",
+        "d0cbbf95-ceb3-4219-8353-a866602ca9c3",
+        "ea9580b0-8c0c-4010-8bb3-c6372da7d208",
+        "0990f9ea-9cf3-4b9c-8846-89045b5c5e04",
+        "c6a2bddb-3d8a-4c38-88bb-75d945243692",
+        "cd6b69d9-8986-4d02-98f4-51688d41e045",
+        "d91e42df-e8af-4650-808b-b07f5fb69e33",
+        "a93f0c2d-a5a2-42eb-93b3-e832bb1e0a93",
+        "1b580e00-5309-420d-ae2e-02532cde53b8",
+        "14224832-e364-49a1-916e-5829236a832d",
+        "d1fb3a4d-7e06-470b-8c7e-d78a7deff326",
+        "5e8d0f25-514b-4b6f-82c8-41cf5d1a2d5c",
+        "c298df1c-ec09-444c-83de-93349065cb14",
+        "5baa8f8d-d8e2-4d4c-9f25-4f71b2a08e18",
+        "8171962a-d8c6-4916-8ed4-f971ec12d44f",
+        "d81d7353-3d35-445b-a956-f29d638bccba",
+        "feb207ca-524a-4894-93ee-7b6cb0b452a4",
+        "587ff6d1-ac74-4a99-83cb-f784721c0022",
+        "ee729685-5917-4fe9-bcb8-031b8808c4ec",
+        "cdc24ffb-da4e-49d9-b02c-a4f12c4c25ef",
+        "89bd3e21-229c-48db-9a20-a59054cf3352",
+        "8af46d10-4dc9-4207-b5ea-b80a03ccdc2c",
+        "75a8376b-7545-4e10-9634-0765830066c5",
+        "a66b886d-be0d-4d2f-bbea-434af8d51ee1",
+        "808ce3ba-c5b5-4940-a705-46b687375d53",
+        "1e798810-274a-4c73-87be-a7400d022212",
+        "9e2b6175-fcbb-4f20-a5b0-144b5be4aa19",
+        "6790beb4-8c48-4268-b842-0abfce3fc0a8",
+        "4cb5f79d-57ad-41ab-8c51-c3ded2dbe537",
+        "2882a7ff-08ae-470b-98d9-c682f743e100",
+        "e69a2656-44b9-4900-813e-e3b795b25c3e",
+        "ddd5d8a7-f461-4555-92fd-b87a23a1b716",
+        "b466c035-e0c6-431d-bec1-fa7280ec2b1f",
+        "21c22c46-c03e-4349-91f9-110b97c73330",
+        "7619cfa3-4c97-42db-94cb-7dec3577bb4f"
+      ],
+      "size": 46,
+      "createdAt": "2025-08-22T06:13:20.192Z",
+      "lastUpdated": "2025-08-22T06:28:54.849Z"
+    },
+    "Urban Police Thrillers": {
+      "id": "build-1755843200192-36a6bu0",
+      "name": "Urban Police Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "6e525d4e-55d3-46c9-b8d0-650625f519cc",
+        "61b1e5e3-f391-4f0a-8d1e-77146e72f032",
+        "3901ddf8-7a21-4caa-a682-55d507342f10",
+        "3400aecb-c000-48e4-870a-8ef006d16c0f",
+        "16e42d9f-db46-48ee-8a9c-333816448522",
+        "42bfe89e-8573-4eaa-8eb2-0c590e05b43e",
+        "20fee7ff-4f0e-48b2-9276-72f745164b9d",
+        "5adc982f-1fe4-42e3-8744-0464a5088398",
+        "326eec21-481c-41fc-a4be-4a7ebdb33587",
+        "ab706e61-a6b5-4542-a5b4-9ef7ad1d8851",
+        "0089f8da-8680-40cb-9462-e67eae0c2540",
+        "d2e08abe-72e7-4316-81f1-012ac3319b1a",
+        "e13a4962-2815-4ae8-8eb9-a4f5137cd76a",
+        "12d73385-faa9-4f9d-b150-f17dface231f",
+        "76a149d5-963d-4940-bc9b-28c20882f89d",
+        "ed8fa11f-4e0f-4318-a5af-60be7b993262",
+        "2d5de442-b050-41c7-bb5d-93f18eeb3b09",
+        "0f066f96-9add-45a9-8e44-c01fee0f1d70"
+      ],
+      "size": 18,
+      "createdAt": "2025-08-22T06:13:20.192Z",
+      "lastUpdated": "2025-08-22T06:28:44.759Z"
+    },
+    "Real-Time Action Films": {
+      "id": "build-1755843200192-ioxwe21",
+      "name": "Real-Time Action Films",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "6e525d4e-55d3-46c9-b8d0-650625f519cc",
+        "f7ff6c8d-f538-4c5a-bba8-c67b24d7e33d",
+        "87aa198c-2f2d-40c3-8bf7-c943ce2d60cc",
+        "e06f6cf3-0e99-4804-b5f9-e063a1780701",
+        "78c48bc3-7aed-4b12-b622-d01a47e10219",
+        "b08d2db7-c745-46b9-88e2-e81329c680dd",
+        "173f0360-56aa-4892-818f-ae993189513f",
+        "412aef7b-68d1-4ea4-917a-7c84e8d5135c",
+        "89603932-2788-42e6-b8f5-29577485a297",
+        "f9496300-1c73-4901-b54d-bdb0dda9c4b9",
+        "b2bbb14a-0059-4d1c-8139-a789f2c164d1",
+        "0f066f96-9add-45a9-8e44-c01fee0f1d70",
+        "a545fed8-6e21-4b94-8350-53a16c067270",
+        "d065a389-7112-470c-892c-216719246b7c"
+      ],
+      "size": 14,
+      "createdAt": "2025-08-22T06:13:20.192Z",
+      "lastUpdated": "2025-08-22T06:30:05.336Z"
+    },
+    "Redemption Through Protection": {
+      "id": "build-1755843200192-g3lsstz",
+      "name": "Redemption Through Protection",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "6e525d4e-55d3-46c9-b8d0-650625f519cc",
+        "e2a32cd0-af1d-491e-a40f-2e8157ed45f9",
+        "6110d6f4-cac3-4fa1-ae03-bcebdb6b4f16",
+        "4401c757-6e6b-4610-84b6-0caf51307164",
+        "1612b25e-860c-42e4-9391-5d416738f99f",
+        "5bfda14f-7bb2-443b-8ddd-9134c94aa1ee",
+        "01eea89f-0186-4010-8d08-1aaa88a91cd5",
+        "02655ac5-59d9-4e3c-a2f9-3975fcd75c9e",
+        "b2250a11-b903-42a7-a97b-d7b7fb723a80",
+        "bd1e6acb-0f7c-4d55-bc38-c2d99bb94b61",
+        "6f8739c0-b34f-4adc-b0e5-0022079a1aa1",
+        "062351d3-f89d-4982-ab47-3f3bd6aa8480",
+        "3bdc8424-b58c-4aac-992b-22514ca9546a",
+        "f48ef1e2-e467-4a6c-a42e-1e2cf8ac46aa",
+        "53596258-5ebf-4749-aae9-4f729d256e61",
+        "06020814-cdf3-4bdd-91c6-742666cb4d16",
+        "4df3d11f-57c0-49d9-a78e-c5476c655afb",
+        "abb6bd34-4e85-473d-bc4e-dc92ccb9ab03",
+        "9c1b355c-d6c6-4e1d-a1ac-2dd812acce0e",
+        "2a38831f-51b7-4f51-947f-dea9ef578934",
+        "b227d08c-1a43-49aa-ae20-8a456c6f6b3f",
+        "c6844011-b928-4651-9b78-d35aad056f76",
+        "da7ed1e0-cbf6-473c-b6ba-fa5e0aaacbab",
+        "4de5cc23-3549-4d42-83c7-488b8096ab49",
+        "73d78aaa-9e82-4ad1-870a-8a8564e0c93c",
+        "b51915a1-9550-44e8-bf80-4b7011bd8921",
+        "dfe37e5b-eeae-47b9-973b-2033a9481db7",
+        "14a09796-accd-475d-a401-8a3b96345b59",
+        "04c49287-00c9-4b64-9f93-4302f4383efc",
+        "547c3649-390b-438e-9bd5-cd75e5b53483",
+        "48e9a9cb-0fb4-4e7a-a017-83366eaa13bd",
+        "5b327baa-b8de-4912-97ad-dce5c6f4bba2",
+        "f32a8730-a573-458f-9060-44cfb723e99a",
+        "2f9921b9-576c-479f-a4ff-19ce3e209213",
+        "0fe0e5e4-7d00-4e7c-8816-90cc24430c8d",
+        "4c95687c-a79a-4dc1-bc2b-cae72e167652",
+        "8c3f94d7-6384-4b68-bdfc-8b48bbe42fdf",
+        "5d841895-f04e-4e05-bb20-c07a21305e31",
+        "3731982f-1b9d-4d18-b7ef-2bba054fecbf",
+        "76d84ed5-476e-47de-a3d1-1c86522e9155",
+        "8f700802-5945-4544-b37c-ab13ae9e0d23",
+        "4b79a61d-d150-47a3-be89-7a58332c8448",
+        "4b5d5861-5e23-4615-b68d-16f07d3f9cf4",
+        "16629f3c-f56c-421d-bf0c-849e2dc18f83",
+        "ea65ddf3-011a-4a4f-b7c3-46cd0fab0921"
+      ],
+      "size": 45,
+      "createdAt": "2025-08-22T06:13:20.192Z",
+      "lastUpdated": "2025-08-22T06:30:38.534Z"
+    },
+    "Modern Police Thrillers": {
+      "id": "build-1755843200193-4n9x2vg",
+      "name": "Modern Police Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "36175939-ad68-4761-b976-08d861c2f829",
+        "61b1e5e3-f391-4f0a-8d1e-77146e72f032",
+        "16e42d9f-db46-48ee-8a9c-333816448522",
+        "21e12c51-2536-4062-af09-07a3f0979f64",
+        "3bb599f9-df66-4964-8e4c-eae781cba5aa",
+        "67f61568-a29d-4bb6-b40c-13049b599a68"
+      ],
+      "size": 6,
+      "createdAt": "2025-08-22T06:13:20.193Z",
+      "lastUpdated": "2025-08-22T06:17:55.414Z"
+    },
+    "One Night Timeline": {
+      "id": "build-1755843200193-wjmnce5",
+      "name": "One Night Timeline",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "36175939-ad68-4761-b976-08d861c2f829",
+        "f7ff6c8d-f538-4c5a-bba8-c67b24d7e33d",
+        "87aa198c-2f2d-40c3-8bf7-c943ce2d60cc",
+        "8a55b714-7dfc-41c2-ad71-0157738584b6",
+        "3901ddf8-7a21-4caa-a682-55d507342f10",
+        "06e2e6f6-8946-4424-86b0-4d7e5c6124dd",
+        "3400aecb-c000-48e4-870a-8ef006d16c0f",
+        "e06f6cf3-0e99-4804-b5f9-e063a1780701",
+        "bd1e6acb-0f7c-4d55-bc38-c2d99bb94b61",
+        "78c48bc3-7aed-4b12-b622-d01a47e10219",
+        "b08d2db7-c745-46b9-88e2-e81329c680dd",
+        "f48ef1e2-e467-4a6c-a42e-1e2cf8ac46aa",
+        "481d3bce-7cd4-4372-8176-0363e44ebba1",
+        "c3c1677d-5b97-425f-a76e-19d72bac9687",
+        "ebadcf9e-3425-4461-87a9-961761c1ef3d",
+        "a5fa1e9e-4978-4d77-b577-acc86ba7e06c",
+        "0089f8da-8680-40cb-9462-e67eae0c2540",
+        "9c1b355c-d6c6-4e1d-a1ac-2dd812acce0e",
+        "181bd6e3-cb9e-41d7-a999-58d18ab9180f",
+        "11d7f804-a69b-4bfe-8d4b-615822491cb3",
+        "433c8aad-2826-4da9-9e63-6f418f666a3b",
+        "f9496300-1c73-4901-b54d-bdb0dda9c4b9",
+        "a569f77e-cd46-4b03-86e6-9fa38aeb9cad",
+        "04c49287-00c9-4b64-9f93-4302f4383efc",
+        "547c3649-390b-438e-9bd5-cd75e5b53483",
+        "91f5e3f1-5137-40dd-aea7-36b2c51ee905",
+        "b2bbb14a-0059-4d1c-8139-a789f2c164d1",
+        "cb9e1292-f6bf-4b9f-9a5d-569c8af1abe7",
+        "403349e3-5550-4f87-8505-79cbbc0659c6",
+        "5d841895-f04e-4e05-bb20-c07a21305e31",
+        "0f066f96-9add-45a9-8e44-c01fee0f1d70",
+        "0483273b-2b59-425b-84f5-f90e82b5765c",
+        "bbdb708a-8b7c-4202-a2dd-3dd2c2304c0f",
+        "068d6def-56b6-46f4-9e9a-4bc35656d0ed",
+        "d065a389-7112-470c-892c-216719246b7c",
+        "16629f3c-f56c-421d-bf0c-849e2dc18f83",
+        "ea65ddf3-011a-4a4f-b7c3-46cd0fab0921"
+      ],
+      "size": 37,
+      "createdAt": "2025-08-22T06:13:20.193Z",
+      "lastUpdated": "2025-08-22T06:30:38.534Z"
+    },
+    "Urban Manhunt Films": {
+      "id": "build-1755843200193-w4b4u4d",
+      "name": "Urban Manhunt Films",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "36175939-ad68-4761-b976-08d861c2f829",
+        "6110d6f4-cac3-4fa1-ae03-bcebdb6b4f16",
+        "61b1e5e3-f391-4f0a-8d1e-77146e72f032",
+        "fcdfbb43-1dc4-4c4e-838e-9f035ba9efec",
+        "87aa198c-2f2d-40c3-8bf7-c943ce2d60cc",
+        "49d3d8e2-50b1-40ce-92a9-3006007d643d",
+        "2e1161a0-6343-4f11-9998-2dfc2f4206c0",
+        "8a55b714-7dfc-41c2-ad71-0157738584b6",
+        "e2c3764f-4e64-4246-b762-c5627ecd0ea6",
+        "0275cf94-8c9d-4d9e-9263-71bdc851d163",
+        "06e2e6f6-8946-4424-86b0-4d7e5c6124dd",
+        "3400aecb-c000-48e4-870a-8ef006d16c0f",
+        "612c99e9-055a-4719-9b92-95e132f55bb8",
+        "02655ac5-59d9-4e3c-a2f9-3975fcd75c9e",
+        "a93f0c2d-a5a2-42eb-93b3-e832bb1e0a93",
+        "3bb599f9-df66-4964-8e4c-eae781cba5aa",
+        "5adc982f-1fe4-42e3-8744-0464a5088398",
+        "6f8739c0-b34f-4adc-b0e5-0022079a1aa1",
+        "326eec21-481c-41fc-a4be-4a7ebdb33587",
+        "ab706e61-a6b5-4542-a5b4-9ef7ad1d8851",
+        "b08d2db7-c745-46b9-88e2-e81329c680dd",
+        "4a780ff3-bb49-4e1e-b3fd-eb02800add9f",
+        "c72cc4cd-dc32-4970-b3a3-234a472f1a0e",
+        "67f61568-a29d-4bb6-b40c-13049b599a68",
+        "ca8a0db6-4d35-48d1-b4b9-e74635474bbc",
+        "f48ef1e2-e467-4a6c-a42e-1e2cf8ac46aa",
+        "53596258-5ebf-4749-aae9-4f729d256e61",
+        "805c19ff-b766-4f73-9085-e4d56ac6e26d",
+        "9a3b3127-e903-4196-a6f3-7973196dc3a1",
+        "ebadcf9e-3425-4461-87a9-961761c1ef3d",
+        "54d7f623-df2d-4bdc-89c3-85c5cdaa84aa",
+        "62ea81a1-8f2a-4910-91a0-7a78bbb9367f",
+        "efcf0efa-695d-4250-8e93-d3040919f6b2",
+        "ee459c63-c111-4045-8045-6b67c432a2ef",
+        "b8bcc427-417b-4a83-885a-3a707ed07b07",
+        "70d934b5-a391-40b8-97fc-45223dbf6302",
+        "2a38831f-51b7-4f51-947f-dea9ef578934",
+        "723bcb75-3ed5-4c9a-b8a7-f53456944b73",
+        "b227d08c-1a43-49aa-ae20-8a456c6f6b3f",
+        "412aef7b-68d1-4ea4-917a-7c84e8d5135c",
+        "11d7f804-a69b-4bfe-8d4b-615822491cb3",
+        "a5de1059-025b-4f44-96b2-41a960779dd8",
+        "a569f77e-cd46-4b03-86e6-9fa38aeb9cad",
+        "71535608-8abb-4c60-a0d9-e9330892350c",
+        "04c49287-00c9-4b64-9f93-4302f4383efc",
+        "91f5e3f1-5137-40dd-aea7-36b2c51ee905",
+        "dc29f810-aae7-430a-9e1b-31349f1c51f6",
+        "c5fe2553-d7ba-40ae-af51-5a16be3ef7e1",
+        "7dccde96-d397-4565-bb13-cbf8801a004d",
+        "290c2815-4fa8-476d-a53b-2f347afa78a2",
+        "5b327baa-b8de-4912-97ad-dce5c6f4bba2",
+        "f32a8730-a573-458f-9060-44cfb723e99a",
+        "f31d68f2-0611-4021-8368-6ff946a3f7c6",
+        "2b62aa89-f1af-4ca5-ba0e-7b9175d8bf03",
+        "d8cd1f6f-9c1a-404c-b5c9-d7e76e7732fe",
+        "2a967609-542b-400e-afd2-669efed3f3d2",
+        "cb9e1292-f6bf-4b9f-9a5d-569c8af1abe7",
+        "2f9921b9-576c-479f-a4ff-19ce3e209213",
+        "1e634e93-248d-4572-bf2d-7d4193826d7b",
+        "cf17a90d-6f1f-47ef-9baa-321acca70ff7",
+        "51a0317d-0f4b-4200-a636-f88dfa21c350",
+        "2077d069-fb69-44c7-9cae-fa743ccbcba0",
+        "f21f3558-86ab-4b0d-9db9-dfe267dfe4cf",
+        "bb05b4ef-46b6-4018-b9cd-f19cba13ce9e",
+        "4c95687c-a79a-4dc1-bc2b-cae72e167652",
+        "5d841895-f04e-4e05-bb20-c07a21305e31",
+        "8f700802-5945-4544-b37c-ab13ae9e0d23",
+        "2dfdd9c7-84a6-4a85-89be-42f60d557152",
+        "037df060-ec2f-4e3e-a45e-7115a23d6e9e",
+        "0483273b-2b59-425b-84f5-f90e82b5765c",
+        "01ca7931-1b53-4e3b-826d-a0e7828a08a7",
+        "53ae5dcf-a387-46f4-9f51-5c3abeac8fcd",
+        "60e7feda-3dd5-466b-a6bf-b71b3156dc61"
+      ],
+      "size": 73,
+      "createdAt": "2025-08-22T06:13:20.193Z",
+      "lastUpdated": "2025-08-22T06:30:05.337Z"
+    },
+    "Post-9/11 Political Thrillers": {
+      "id": "build-1755843200193-8ccyw0a",
+      "name": "Post-9/11 Political Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "39ef3e92-47b5-4025-ba21-4634b62738bc",
+        "ea9580b0-8c0c-4010-8bb3-c6372da7d208",
+        "8c6f9dc7-1b23-479c-ad16-1536d1113011",
+        "a8d48afa-5dd9-4d88-98d2-f81d9eb351bd",
+        "d2a442a4-ca87-41ba-b3fc-8fdc144613f3",
+        "a2aeaf27-f228-423f-a18f-4c15f86932cf",
+        "d2e08abe-72e7-4316-81f1-012ac3319b1a",
+        "7ba41d3c-712d-4880-ac10-af65f74357f0",
+        "2d5de442-b050-41c7-bb5d-93f18eeb3b09",
+        "de3dddd7-64f0-4318-b599-ed20760a47cb"
+      ],
+      "size": 10,
+      "createdAt": "2025-08-22T06:13:20.193Z",
+      "lastUpdated": "2025-08-22T06:29:32.584Z"
+    },
+    "Real-Time Action Series": {
+      "id": "build-1755843200193-d6a2640",
+      "name": "Real-Time Action Series",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "39ef3e92-47b5-4025-ba21-4634b62738bc"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:13:20.193Z",
+      "lastUpdated": "2025-08-22T06:13:20.193Z"
+    },
+    "Counter-Terrorism Action": {
+      "id": "build-1755843200193-py6fotj",
+      "name": "Counter-Terrorism Action",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "39ef3e92-47b5-4025-ba21-4634b62738bc",
+        "f7ff6c8d-f538-4c5a-bba8-c67b24d7e33d",
+        "49d3d8e2-50b1-40ce-92a9-3006007d643d",
+        "06e2e6f6-8946-4424-86b0-4d7e5c6124dd",
+        "ea9580b0-8c0c-4010-8bb3-c6372da7d208",
+        "5a21806d-9fe5-4fa5-abd7-d9ca28d26efa",
+        "73efedb8-f4eb-47d2-8a7f-cc948e3eea1e",
+        "8c6f9dc7-1b23-479c-ad16-1536d1113011",
+        "a8d48afa-5dd9-4d88-98d2-f81d9eb351bd",
+        "84bc29e7-9b87-4c6f-ab88-3818b2fcf41e",
+        "78c48bc3-7aed-4b12-b622-d01a47e10219",
+        "ca8a0db6-4d35-48d1-b4b9-e74635474bbc",
+        "173f0360-56aa-4892-818f-ae993189513f",
+        "82b3da37-1daa-4d07-b8c1-6d1190f8a7dc",
+        "481d3bce-7cd4-4372-8176-0363e44ebba1",
+        "a2aeaf27-f228-423f-a18f-4c15f86932cf",
+        "d2e08abe-72e7-4316-81f1-012ac3319b1a",
+        "9c1b355c-d6c6-4e1d-a1ac-2dd812acce0e",
+        "412aef7b-68d1-4ea4-917a-7c84e8d5135c",
+        "444d183d-f342-4636-9555-9343779d9255",
+        "89603932-2788-42e6-b8f5-29577485a297",
+        "433c8aad-2826-4da9-9e63-6f418f666a3b",
+        "f9496300-1c73-4901-b54d-bdb0dda9c4b9",
+        "aa0a1b14-3248-4f10-bb0b-7f7be6458de4",
+        "73d78aaa-9e82-4ad1-870a-8a8564e0c93c",
+        "97509ab9-f3aa-40fa-8cf6-ef41b9bc2962",
+        "67ed6844-e281-40e8-989b-d46662313169",
+        "290c2815-4fa8-476d-a53b-2f347afa78a2",
+        "5bac4094-d7c6-4233-afe2-a2f8c2018305",
+        "65890e5e-b0f5-4a1a-b53b-b4991924ae88",
+        "cf17a90d-6f1f-47ef-9baa-321acca70ff7",
+        "7ba41d3c-712d-4880-ac10-af65f74357f0",
+        "f7b75e8c-e698-48e7-be97-f1b77c34e009",
+        "95055ce5-5208-4f6e-b6e2-7b12d06d0b93",
+        "2d5de442-b050-41c7-bb5d-93f18eeb3b09",
+        "e9b56c06-9954-4042-94d7-742e676b12ea",
+        "d065a389-7112-470c-892c-216719246b7c"
+      ],
+      "size": 37,
+      "createdAt": "2025-08-22T06:13:20.193Z",
+      "lastUpdated": "2025-08-22T06:30:05.336Z"
+    },
+    "Vigilante Team Operations": {
+      "id": "build-1755843209953-styocri",
+      "name": "Vigilante Team Operations",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "e2a32cd0-af1d-491e-a40f-2e8157ed45f9"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:13:29.953Z",
+      "lastUpdated": "2025-08-22T06:13:29.953Z"
+    },
+    "Female Spy Films": {
+      "id": "build-1755843209953-hguedvi",
+      "name": "Female Spy Films",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "87e6d4f7-9376-4a9f-bec5-3796a902320d",
+        "e3b7f5da-2608-41a0-82b5-b34d6656ec84",
+        "924fc4dc-e6f8-4e02-87ed-4e59c9f4e0d6",
+        "0275cf94-8c9d-4d9e-9263-71bdc851d163",
+        "409ab766-862e-4679-a7dc-287c698bc31f",
+        "01eea89f-0186-4010-8d08-1aaa88a91cd5",
+        "5a21806d-9fe5-4fa5-abd7-d9ca28d26efa",
+        "0cad5411-d737-49d1-82f9-c72c5bce3dcd",
+        "f5dd936a-cb58-43da-bd31-27689a06c7e2",
+        "02b3884b-6679-415d-aa1c-cf4fa79271b8",
+        "223d5414-47ef-4b10-bd9f-f29c07e67cb7",
+        "a71df8ab-5fe6-493d-b776-6f5845a291f4",
+        "25b8b4ae-eaea-4e35-a870-a090a1760011",
+        "c298df1c-ec09-444c-83de-93349065cb14",
+        "06020814-cdf3-4bdd-91c6-742666cb4d16",
+        "16187442-4c06-472f-a34f-f7dbcb71a0b1",
+        "5d8ded9c-6e27-48cc-92f8-74141fe6c5bd",
+        "32487bbe-61fb-44e5-9b8e-6936f0314993",
+        "681e080b-6874-406e-ad2f-45389019e0e4",
+        "7ff21260-bc7a-4acf-aebd-595d066e1bb7",
+        "3f508a5a-a290-4e46-b1d5-4df4a0a8b637",
+        "94fd5526-a2a9-44a3-b6bf-cd3e4db428d4",
+        "2f93c10c-11d0-4649-b758-69f0a3fb942e",
+        "8af46d10-4dc9-4207-b5ea-b80a03ccdc2c",
+        "7d7eb576-e7b7-4f31-b322-169202b09a0a",
+        "da95e273-68f1-47f2-a0ed-8d677e8e906b",
+        "953071ec-abec-4352-9ac0-61f842f17052",
+        "0b61310b-8d86-4f04-941b-d8e496beef42",
+        "1fa670c5-c21b-453d-84eb-f99dc3903e23",
+        "65890e5e-b0f5-4a1a-b53b-b4991924ae88",
+        "53d20b4a-e514-4bbc-bd59-21cdc5057698",
+        "2882a7ff-08ae-470b-98d9-c682f743e100",
+        "2f350e80-0b30-4dce-8513-e9e693655666",
+        "33186cc2-b958-47d6-817c-7ed947ca95a0",
+        "4202fc55-bf4d-4188-84f7-2e5bb43e7cfe",
+        "3de00a9d-b515-4c74-99a2-0af3039e62fe",
+        "4df41032-d658-42b3-9c13-e2838ee21aa9",
+        "e59b28c8-59f2-4143-864d-3eb0d0fda7e6",
+        "95055ce5-5208-4f6e-b6e2-7b12d06d0b93",
+        "23d9dce0-f3cb-488a-bb5f-2f4d78fe6ff2"
+      ],
+      "size": 40,
+      "createdAt": "2025-08-22T06:13:29.953Z",
+      "lastUpdated": "2025-08-22T06:30:38.534Z"
+    },
+    "Corporate Crime Thrillers": {
+      "id": "build-1755843209954-jidhxel",
+      "name": "Corporate Crime Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "6110d6f4-cac3-4fa1-ae03-bcebdb6b4f16",
+        "e2c3764f-4e64-4246-b762-c5627ecd0ea6",
+        "d0cbbf95-ceb3-4219-8353-a866602ca9c3",
+        "612c99e9-055a-4719-9b92-95e132f55bb8",
+        "a71df8ab-5fe6-493d-b776-6f5845a291f4",
+        "d1fb3a4d-7e06-470b-8c7e-d78a7deff326",
+        "286bba96-db40-4114-bee2-854bc1dbdda7",
+        "56855703-5abc-48b7-8d5d-dda54ae7b533",
+        "6b408ba5-8aeb-4f2f-a004-f617b10f86cf",
+        "71535608-8abb-4c60-a0d9-e9330892350c",
+        "5bac4094-d7c6-4233-afe2-a2f8c2018305",
+        "1bda2704-1e56-4a0e-817d-5c650bc1a2a7",
+        "51a0317d-0f4b-4200-a636-f88dfa21c350",
+        "bb05b4ef-46b6-4018-b9cd-f19cba13ce9e",
+        "e9b56c06-9954-4042-94d7-742e676b12ea",
+        "de3dddd7-64f0-4318-b599-ed20760a47cb"
+      ],
+      "size": 16,
+      "createdAt": "2025-08-22T06:13:29.954Z",
+      "lastUpdated": "2025-08-22T06:29:32.584Z"
+    },
+    "Cold War Double Agents": {
+      "id": "build-1755843209954-wfdsly6",
+      "name": "Cold War Double Agents",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "9139812a-e1b5-4d97-87b9-486f9589732b",
+        "70f107f9-81e5-45d1-99fb-42c94f8490ea",
+        "ec5b71a2-5326-454b-acd0-54754350f06c",
+        "924fc4dc-e6f8-4e02-87ed-4e59c9f4e0d6",
+        "0275cf94-8c9d-4d9e-9263-71bdc851d163",
+        "a63fe171-8c56-46ba-b2a8-d9fe92db9ba6",
+        "d0cbbf95-ceb3-4219-8353-a866602ca9c3",
+        "0990f9ea-9cf3-4b9c-8846-89045b5c5e04",
+        "63028075-8976-43de-b1c0-968bcb9ad97c",
+        "c6a2bddb-3d8a-4c38-88bb-75d945243692",
+        "9f0f1afe-5771-4576-a239-624e65ff9618",
+        "cd6b69d9-8986-4d02-98f4-51688d41e045",
+        "b2250a11-b903-42a7-a97b-d7b7fb723a80",
+        "02b3884b-6679-415d-aa1c-cf4fa79271b8",
+        "8bb97f06-77a4-414c-9c18-228c4b207c11",
+        "5e8d0f25-514b-4b6f-82c8-41cf5d1a2d5c",
+        "805c19ff-b766-4f73-9085-e4d56ac6e26d",
+        "2b03e4de-56e7-4753-9c9c-7b5674d5b83c",
+        "5baa8f8d-d8e2-4d4c-9f25-4f71b2a08e18",
+        "4d361df9-5489-415b-8b7a-c722c633bb98",
+        "06735d39-7c00-4b51-bb9f-6fbe3fe0d163",
+        "8171962a-d8c6-4916-8ed4-f971ec12d44f",
+        "d81d7353-3d35-445b-a956-f29d638bccba",
+        "b970fb34-c3d6-4aa9-be39-16b9e08ad5b8",
+        "feb207ca-524a-4894-93ee-7b6cb0b452a4",
+        "ee729685-5917-4fe9-bcb8-031b8808c4ec",
+        "f2c942e9-32bf-468f-9e2a-69d5caed988d",
+        "89bd3e21-229c-48db-9a20-a59054cf3352",
+        "84027d29-747d-4a28-a7c2-4a95b62bc0f0",
+        "a834297b-28c9-456d-b581-06f288036ac2",
+        "a0659511-b96f-4408-9389-0581a1419360",
+        "da95e273-68f1-47f2-a0ed-8d677e8e906b",
+        "953071ec-abec-4352-9ac0-61f842f17052",
+        "6790beb4-8c48-4268-b842-0abfce3fc0a8",
+        "4cb5f79d-57ad-41ab-8c51-c3ded2dbe537",
+        "f31d68f2-0611-4021-8368-6ff946a3f7c6",
+        "464a3a53-4148-4cfa-9f06-ab3bfe4e4e64",
+        "080046be-bbbb-4a9e-843a-3d404ffe8bc0",
+        "2882a7ff-08ae-470b-98d9-c682f743e100",
+        "ef383557-01e3-4350-be9e-1e906669e60a",
+        "c712f37b-abae-4e59-a1e9-149e3c5f121f",
+        "77e66de0-f669-453a-a8a1-7562444655b7",
+        "95655c0a-4076-45b4-bf4c-675678446d09",
+        "3d0eb615-46fa-4f45-9e66-143fb5472c37",
+        "20dbcd94-906f-47fe-8844-57187e9d7c0a",
+        "7dc0a064-eeb4-433c-8f81-c19646dfaa06",
+        "e69a2656-44b9-4900-813e-e3b795b25c3e",
+        "7aa8932f-c2ea-4809-a455-ce70117d15d4",
+        "b466c035-e0c6-431d-bec1-fa7280ec2b1f",
+        "4202fc55-bf4d-4188-84f7-2e5bb43e7cfe",
+        "fbeea720-0c34-4d4b-bf2b-bc6c37d8a04d",
+        "a4c67bce-0b95-4385-9d76-6b6c5a60059b",
+        "3731982f-1b9d-4d18-b7ef-2bba054fecbf",
+        "92dbcc76-24d4-49f4-b8cb-51c25a9f0c24",
+        "b6d1d199-93d4-4c42-ae1d-30cfb62a5b98",
+        "9b98f237-1b2c-4e8d-a6fb-789ec11737c0",
+        "0499b0d5-ff4e-4d4d-9bfe-a23897e303d6",
+        "1844443c-ab1c-455f-ae45-17082fba2a34",
+        "807acbc5-8258-424c-a3d0-0cc32dd2dd93",
+        "0d16e162-0a61-4951-a257-658f87770762",
+        "2c9b192f-e321-45b6-84e8-79670dc147ec",
+        "7e8e428f-066a-4082-8ead-968acea58f87",
+        "3f081b35-9204-40a6-a7db-9c4429e54157",
+        "00d8ac56-6c25-4f5d-a03e-7c4cdbcfa7e7",
+        "8163701b-58a9-4f4e-bd59-4b60c57b521b"
+      ],
+      "size": 65,
+      "createdAt": "2025-08-22T06:13:29.954Z",
+      "lastUpdated": "2025-08-22T06:30:49.087Z"
+    },
+    "Spy Film Parodies": {
+      "id": "build-1755843236564-2ocw04v",
+      "name": "Spy Film Parodies",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "70f107f9-81e5-45d1-99fb-42c94f8490ea",
+        "ec5b71a2-5326-454b-acd0-54754350f06c",
+        "8934830c-deca-40ce-ae02-1e63990998d1",
+        "1fdfbd27-0ebd-4af4-9a75-5636db6f7d8e",
+        "a63fe171-8c56-46ba-b2a8-d9fe92db9ba6",
+        "0cad5411-d737-49d1-82f9-c72c5bce3dcd",
+        "9f0f1afe-5771-4576-a239-624e65ff9618",
+        "223d5414-47ef-4b10-bd9f-f29c07e67cb7",
+        "a71df8ab-5fe6-493d-b776-6f5845a291f4",
+        "8bb97f06-77a4-414c-9c18-228c4b207c11",
+        "6c874ee0-94cf-4ba4-b43f-fe0574f8a183",
+        "4ec8bdf2-1623-433a-b8cd-f02f9af089ca",
+        "587ff6d1-ac74-4a99-83cb-f784721c0022",
+        "2f93c10c-11d0-4649-b758-69f0a3fb942e",
+        "84027d29-747d-4a28-a7c2-4a95b62bc0f0",
+        "2162ca45-7550-4d8f-a92e-9dac58a59103",
+        "084d1105-82c6-427c-99c3-00cf1d7cc797",
+        "75a8376b-7545-4e10-9634-0765830066c5",
+        "c8baf9f4-e73d-4044-85e6-4993373debc5",
+        "a66b886d-be0d-4d2f-bbea-434af8d51ee1",
+        "9e2b6175-fcbb-4f20-a5b0-144b5be4aa19",
+        "4eafc69b-bd0a-4916-be27-e8767bb1cf06",
+        "53d20b4a-e514-4bbc-bd59-21cdc5057698",
+        "2f350e80-0b30-4dce-8513-e9e693655666",
+        "3d0eb615-46fa-4f45-9e66-143fb5472c37",
+        "7dc0a064-eeb4-433c-8f81-c19646dfaa06",
+        "33186cc2-b958-47d6-817c-7ed947ca95a0",
+        "ddd5d8a7-f461-4555-92fd-b87a23a1b716",
+        "b466c035-e0c6-431d-bec1-fa7280ec2b1f",
+        "a4c67bce-0b95-4385-9d76-6b6c5a60059b",
+        "403349e3-5550-4f87-8505-79cbbc0659c6",
+        "4df41032-d658-42b3-9c13-e2838ee21aa9",
+        "b3964bd8-0eb5-4df2-8929-d8cf411f24e1",
+        "21c22c46-c03e-4349-91f9-110b97c73330",
+        "ed5ff2ac-b0af-4d11-a9a8-c333ab639561"
+      ],
+      "size": 35,
+      "createdAt": "2025-08-22T06:13:56.564Z",
+      "lastUpdated": "2025-08-22T06:28:54.850Z"
+    },
+    "Teen Identity Thrillers": {
+      "id": "build-1755843236565-3hm1a3p",
+      "name": "Teen Identity Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "4401c757-6e6b-4610-84b6-0caf51307164",
+        "b2250a11-b903-42a7-a97b-d7b7fb723a80",
+        "16187442-4c06-472f-a34f-f7dbcb71a0b1",
+        "f2c942e9-32bf-468f-9e2a-69d5caed988d"
+      ],
+      "size": 4,
+      "createdAt": "2025-08-22T06:13:56.565Z",
+      "lastUpdated": "2025-08-22T06:20:20.537Z"
+    },
+    "Presidential Action Thrillers": {
+      "id": "build-1755843245592-ca8s0ie",
+      "name": "Presidential Action Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "f7ff6c8d-f538-4c5a-bba8-c67b24d7e33d",
+        "49d3d8e2-50b1-40ce-92a9-3006007d643d",
+        "9c1b355c-d6c6-4e1d-a1ac-2dd812acce0e",
+        "433c8aad-2826-4da9-9e63-6f418f666a3b",
+        "2dfdd9c7-84a6-4a85-89be-42f60d557152",
+        "d065a389-7112-470c-892c-216719246b7c",
+        "16629f3c-f56c-421d-bf0c-849e2dc18f83"
+      ],
+      "size": 7,
+      "createdAt": "2025-08-22T06:14:05.592Z",
+      "lastUpdated": "2025-08-22T06:30:38.533Z"
+    },
+    "Serial Killer Pursuit": {
+      "id": "build-1755843266014-qhnteal",
+      "name": "Serial Killer Pursuit",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "61b1e5e3-f391-4f0a-8d1e-77146e72f032",
+        "16e42d9f-db46-48ee-8a9c-333816448522",
+        "3e4fa060-19fc-429e-8458-7da7cdd601be",
+        "12d73385-faa9-4f9d-b150-f17dface231f",
+        "60e7feda-3dd5-466b-a6bf-b71b3156dc61"
+      ],
+      "size": 5,
+      "createdAt": "2025-08-22T06:14:26.014Z",
+      "lastUpdated": "2025-08-22T06:30:05.337Z"
+    },
+    "Vehicle Chase Thrillers": {
+      "id": "build-1755843266014-ajltqae",
+      "name": "Vehicle Chase Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "87aa198c-2f2d-40c3-8bf7-c943ce2d60cc",
+        "2e1161a0-6343-4f11-9998-2dfc2f4206c0",
+        "5bfda14f-7bb2-443b-8ddd-9134c94aa1ee",
+        "73efedb8-f4eb-47d2-8a7f-cc948e3eea1e",
+        "e06f6cf3-0e99-4804-b5f9-e063a1780701",
+        "20fee7ff-4f0e-48b2-9276-72f745164b9d",
+        "35be18b5-b701-432a-b27a-09405ebcfb64",
+        "02655ac5-59d9-4e3c-a2f9-3975fcd75c9e",
+        "bd1e6acb-0f7c-4d55-bc38-c2d99bb94b61",
+        "ab706e61-a6b5-4542-a5b4-9ef7ad1d8851",
+        "b08d2db7-c745-46b9-88e2-e81329c680dd",
+        "9a3b3127-e903-4196-a6f3-7973196dc3a1",
+        "b970fb34-c3d6-4aa9-be39-16b9e08ad5b8",
+        "c3c1677d-5b97-425f-a76e-19d72bac9687",
+        "3e4fa060-19fc-429e-8458-7da7cdd601be",
+        "54d7f623-df2d-4bdc-89c3-85c5cdaa84aa",
+        "62ea81a1-8f2a-4910-91a0-7a78bbb9367f",
+        "c2bbc653-79fa-42ba-bb4a-0904df481aa1",
+        "0089f8da-8680-40cb-9462-e67eae0c2540",
+        "70d934b5-a391-40b8-97fc-45223dbf6302",
+        "03fdd77f-0882-4dfe-8b23-5b6131419c59",
+        "e13a4962-2815-4ae8-8eb9-a4f5137cd76a",
+        "a569f77e-cd46-4b03-86e6-9fa38aeb9cad",
+        "c179ecf4-2c18-49fd-8c96-8704cab3e3fa",
+        "5b67826b-e56b-4385-bcc6-0ef571da71f9",
+        "f9598637-a698-4129-bff0-7c7cb197f688",
+        "c5fe2553-d7ba-40ae-af51-5a16be3ef7e1",
+        "b2bbb14a-0059-4d1c-8139-a789f2c164d1",
+        "efd0618b-c38d-4244-8159-bfbc49508f62",
+        "9a227713-c14f-49b6-b0c2-e074b5a5c736",
+        "4b79a61d-d150-47a3-be89-7a58332c8448",
+        "6cde924c-2df3-4f63-85c0-d33c01ea67f1",
+        "a545fed8-6e21-4b94-8350-53a16c067270",
+        "10eb700a-83a1-489f-a254-00eaa7769439"
+      ],
+      "size": 34,
+      "createdAt": "2025-08-22T06:14:26.014Z",
+      "lastUpdated": "2025-08-22T06:30:05.337Z"
+    },
+    "Underground Fighting Thrillers": {
+      "id": "build-1755843296956-w8plu4y",
+      "name": "Underground Fighting Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "34446d45-f67b-4da0-987f-60cc01b9daef",
+        "181bd6e3-cb9e-41d7-a999-58d18ab9180f"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T06:14:56.956Z",
+      "lastUpdated": "2025-08-22T06:20:51.598Z"
+    },
+    "Professional Assassin Rivalry": {
+      "id": "build-1755843296957-6ygpdt5",
+      "name": "Professional Assassin Rivalry",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "8a55b714-7dfc-41c2-ad71-0157738584b6",
+        "409ab766-862e-4679-a7dc-287c698bc31f",
+        "1612b25e-860c-42e4-9391-5d416738f99f",
+        "01eea89f-0186-4010-8d08-1aaa88a91cd5",
+        "8c6f9dc7-1b23-479c-ad16-1536d1113011",
+        "f5dd936a-cb58-43da-bd31-27689a06c7e2",
+        "a71df8ab-5fe6-493d-b776-6f5845a291f4",
+        "062351d3-f89d-4982-ab47-3f3bd6aa8480",
+        "d1fb3a4d-7e06-470b-8c7e-d78a7deff326",
+        "82b3da37-1daa-4d07-b8c1-6d1190f8a7dc",
+        "c25a3059-3196-4569-9529-465850bafd8a",
+        "35009709-0927-4a45-9227-af9bee8e2be8",
+        "c5bebf65-a186-4c97-a4c6-5bab7ef177b5",
+        "f29309a4-2ada-42b3-9952-5ba8d971108d",
+        "06020814-cdf3-4bdd-91c6-742666cb4d16",
+        "32487bbe-61fb-44e5-9b8e-6936f0314993",
+        "efcf0efa-695d-4250-8e93-d3040919f6b2",
+        "ee459c63-c111-4045-8045-6b67c432a2ef",
+        "b8bcc427-417b-4a83-885a-3a707ed07b07",
+        "a5fa1e9e-4978-4d77-b577-acc86ba7e06c",
+        "4df3d11f-57c0-49d9-a78e-c5476c655afb",
+        "181bd6e3-cb9e-41d7-a999-58d18ab9180f",
+        "da7ed1e0-cbf6-473c-b6ba-fa5e0aaacbab",
+        "3b537862-9abe-48fc-86d9-3469a7f534d0",
+        "dfe37e5b-eeae-47b9-973b-2033a9481db7",
+        "14a09796-accd-475d-a401-8a3b96345b59",
+        "5b67826b-e56b-4385-bcc6-0ef571da71f9",
+        "ad06995f-2994-4c8e-8245-6fa51d167008",
+        "1bda2704-1e56-4a0e-817d-5c650bc1a2a7",
+        "b7602de9-3672-433a-bf21-a7a553946d70",
+        "42cb55f9-ab72-4204-b614-494b1c8e492b",
+        "0fe0e5e4-7d00-4e7c-8816-90cc24430c8d",
+        "46c8ab1c-5373-4bf7-8d3b-78c865f0fcdd",
+        "76a149d5-963d-4940-bc9b-28c20882f89d",
+        "b466c035-e0c6-431d-bec1-fa7280ec2b1f",
+        "2c98866f-b07c-44fc-b0be-0df2a2031b4a",
+        "86464abe-14e5-4876-8f0b-24d2ac1f5991",
+        "1f605310-060b-4f27-95b1-a2a0c94eaf76",
+        "76d84ed5-476e-47de-a3d1-1c86522e9155",
+        "d14f1823-ddd2-4295-948a-eec211da5aee",
+        "8f700802-5945-4544-b37c-ab13ae9e0d23",
+        "65f3506a-7d34-4518-ba8c-5319b1dc318e",
+        "80fef151-542b-402e-a536-95d03bccd81a",
+        "0483273b-2b59-425b-84f5-f90e82b5765c",
+        "4b5d5861-5e23-4615-b68d-16f07d3f9cf4",
+        "01ca7931-1b53-4e3b-826d-a0e7828a08a7",
+        "947394d4-44a1-4613-8607-29d451853b64",
+        "799b7c76-d58a-44bb-a27a-4a6ee24bf6b2"
+      ],
+      "size": 48,
+      "createdAt": "2025-08-22T06:14:56.957Z",
+      "lastUpdated": "2025-08-22T06:30:28.794Z"
+    },
+    "Siege Defense Thrillers": {
+      "id": "build-1755843296957-y13g6q5",
+      "name": "Siege Defense Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "3901ddf8-7a21-4caa-a682-55d507342f10",
+        "78c48bc3-7aed-4b12-b622-d01a47e10219",
+        "481d3bce-7cd4-4372-8176-0363e44ebba1",
+        "a5a99e07-1a10-4f89-bd42-f5fa90465f0f",
+        "89603932-2788-42e6-b8f5-29577485a297",
+        "433c8aad-2826-4da9-9e63-6f418f666a3b",
+        "547c3649-390b-438e-9bd5-cd75e5b53483",
+        "48e9a9cb-0fb4-4e7a-a017-83366eaa13bd",
+        "f204c6be-089b-4c35-ab69-b6c2aaf045b7",
+        "068d6def-56b6-46f4-9e9a-4bc35656d0ed",
+        "da4824b6-8ff5-4e59-8a16-b95ab5a5c86d",
+        "16629f3c-f56c-421d-bf0c-849e2dc18f83"
+      ],
+      "size": 12,
+      "createdAt": "2025-08-22T06:14:56.957Z",
+      "lastUpdated": "2025-08-22T06:30:38.533Z"
+    },
+    "Financial Revenge Thrillers": {
+      "id": "build-1755843296957-ia8f7lr",
+      "name": "Financial Revenge Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "e2c3764f-4e64-4246-b762-c5627ecd0ea6",
+        "35be18b5-b701-432a-b27a-09405ebcfb64",
+        "a2aeaf27-f228-423f-a18f-4c15f86932cf"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T06:14:56.957Z",
+      "lastUpdated": "2025-08-22T06:19:30.548Z"
+    },
+    "Rogue Agent Survival": {
+      "id": "build-1755843306574-bb6x6j3",
+      "name": "Rogue Agent Survival",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "409ab766-862e-4679-a7dc-287c698bc31f",
+        "06e2e6f6-8946-4424-86b0-4d7e5c6124dd",
+        "73efedb8-f4eb-47d2-8a7f-cc948e3eea1e",
+        "cd6b69d9-8986-4d02-98f4-51688d41e045",
+        "84bc29e7-9b87-4c6f-ab88-3818b2fcf41e",
+        "b970fb34-c3d6-4aa9-be39-16b9e08ad5b8",
+        "32487bbe-61fb-44e5-9b8e-6936f0314993",
+        "681e080b-6874-406e-ad2f-45389019e0e4",
+        "62ea81a1-8f2a-4910-91a0-7a78bbb9367f",
+        "c2bbc653-79fa-42ba-bb4a-0904df481aa1",
+        "9c2523e5-5bd9-47c0-b3f9-ae6a663ae339",
+        "6604371e-a1a0-42db-8645-dfb9e49632f3",
+        "2b36fdd5-4cb3-4632-bde6-6a29536e0dc9",
+        "444d183d-f342-4636-9555-9343779d9255",
+        "2d8e6905-a862-42ab-ae3f-5232c3d5195c",
+        "08969037-bf83-4fb2-84af-09b085a15b27",
+        "4de5cc23-3549-4d42-83c7-488b8096ab49",
+        "aa0a1b14-3248-4f10-bb0b-7f7be6458de4",
+        "45b44a03-465f-4723-acc3-9121ee437a69",
+        "dc29f810-aae7-430a-9e1b-31349f1c51f6",
+        "953071ec-abec-4352-9ac0-61f842f17052",
+        "ad84774c-7ae5-409c-9ac1-c878b68eaf24",
+        "ad06995f-2994-4c8e-8245-6fa51d167008",
+        "290c2815-4fa8-476d-a53b-2f347afa78a2",
+        "080046be-bbbb-4a9e-843a-3d404ffe8bc0",
+        "ef383557-01e3-4350-be9e-1e906669e60a",
+        "16091d5f-7e03-4eee-bca4-a3ce0e40ca37",
+        "2b62aa89-f1af-4ca5-ba0e-7b9175d8bf03",
+        "d8cd1f6f-9c1a-404c-b5c9-d7e76e7732fe",
+        "2a967609-542b-400e-afd2-669efed3f3d2",
+        "5d199f46-2c86-4c4b-99e0-422775a7a299",
+        "2f9921b9-576c-479f-a4ff-19ce3e209213",
+        "42cb55f9-ab72-4204-b614-494b1c8e492b",
+        "fbeea720-0c34-4d4b-bf2b-bc6c37d8a04d",
+        "3de00a9d-b515-4c74-99a2-0af3039e62fe",
+        "3731982f-1b9d-4d18-b7ef-2bba054fecbf",
+        "0370a1b1-f74e-4bc5-b313-953f9798578a",
+        "2dfdd9c7-84a6-4a85-89be-42f60d557152",
+        "b3964bd8-0eb5-4df2-8929-d8cf411f24e1",
+        "65f3506a-7d34-4518-ba8c-5319b1dc318e",
+        "80fef151-542b-402e-a536-95d03bccd81a",
+        "de3dddd7-64f0-4318-b599-ed20760a47cb",
+        "53ae5dcf-a387-46f4-9f51-5c3abeac8fcd",
+        "799b7c76-d58a-44bb-a27a-4a6ee24bf6b2",
+        "5b5370fa-e6fe-4c74-820d-06e6ffe86db6"
+      ],
+      "size": 45,
+      "createdAt": "2025-08-22T06:15:06.574Z",
+      "lastUpdated": "2025-08-22T06:30:38.534Z"
+    },
+    "Asian Underworld Thrillers": {
+      "id": "build-1755843315692-2uh0hch",
+      "name": "Asian Underworld Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "1612b25e-860c-42e4-9391-5d416738f99f",
+        "21e12c51-2536-4062-af09-07a3f0979f64",
+        "062351d3-f89d-4982-ab47-3f3bd6aa8480",
+        "f48ef1e2-e467-4a6c-a42e-1e2cf8ac46aa",
+        "c25a3059-3196-4569-9529-465850bafd8a",
+        "35009709-0927-4a45-9227-af9bee8e2be8",
+        "c5bebf65-a186-4c97-a4c6-5bab7ef177b5",
+        "f29309a4-2ada-42b3-9952-5ba8d971108d",
+        "a5fa1e9e-4978-4d77-b577-acc86ba7e06c",
+        "abb6bd34-4e85-473d-bc4e-dc92ccb9ab03",
+        "da7ed1e0-cbf6-473c-b6ba-fa5e0aaacbab",
+        "45b44a03-465f-4723-acc3-9121ee437a69",
+        "14a09796-accd-475d-a401-8a3b96345b59",
+        "91f5e3f1-5137-40dd-aea7-36b2c51ee905",
+        "dd209e87-f97d-4a01-b4e9-131ec3168a85",
+        "48e9a9cb-0fb4-4e7a-a017-83366eaa13bd",
+        "4cb5f79d-57ad-41ab-8c51-c3ded2dbe537",
+        "0fe0e5e4-7d00-4e7c-8816-90cc24430c8d",
+        "4c95687c-a79a-4dc1-bc2b-cae72e167652",
+        "2c98866f-b07c-44fc-b0be-0df2a2031b4a",
+        "5d841895-f04e-4e05-bb20-c07a21305e31",
+        "8f700802-5945-4544-b37c-ab13ae9e0d23",
+        "01ca7931-1b53-4e3b-826d-a0e7828a08a7",
+        "bae3489d-ee72-4edd-ab4b-c9d373b8ecee",
+        "947394d4-44a1-4613-8607-29d451853b64"
+      ],
+      "size": 25,
+      "createdAt": "2025-08-22T06:15:15.693Z",
+      "lastUpdated": "2025-08-22T06:30:28.794Z"
+    },
+    "Police Corruption Exposure": {
+      "id": "build-1755843325721-i8mo905",
+      "name": "Police Corruption Exposure",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "3400aecb-c000-48e4-870a-8ef006d16c0f",
+        "42bfe89e-8573-4eaa-8eb2-0c590e05b43e",
+        "20fee7ff-4f0e-48b2-9276-72f745164b9d",
+        "21e12c51-2536-4062-af09-07a3f0979f64",
+        "54d7f623-df2d-4bdc-89c3-85c5cdaa84aa",
+        "abb6bd34-4e85-473d-bc4e-dc92ccb9ab03",
+        "0089f8da-8680-40cb-9462-e67eae0c2540",
+        "70d934b5-a391-40b8-97fc-45223dbf6302",
+        "723bcb75-3ed5-4c9a-b8a7-f53456944b73",
+        "a569f77e-cd46-4b03-86e6-9fa38aeb9cad",
+        "c712f37b-abae-4e59-a1e9-149e3c5f121f",
+        "9a227713-c14f-49b6-b0c2-e074b5a5c736",
+        "76a149d5-963d-4940-bc9b-28c20882f89d",
+        "ed8fa11f-4e0f-4318-a5af-60be7b993262",
+        "2dfdd9c7-84a6-4a85-89be-42f60d557152",
+        "a9e06e86-5988-4ecd-8ed5-6463381e9f4b"
+      ],
+      "size": 16,
+      "createdAt": "2025-08-22T06:15:25.721Z",
+      "lastUpdated": "2025-08-22T06:28:35.147Z"
+    },
+    "Trucking Crime Thrillers": {
+      "id": "build-1755843325722-rtf30rm",
+      "name": "Trucking Crime Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "5bfda14f-7bb2-443b-8ddd-9134c94aa1ee",
+        "35be18b5-b701-432a-b27a-09405ebcfb64",
+        "10eb700a-83a1-489f-a254-00eaa7769439"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T06:15:25.722Z",
+      "lastUpdated": "2025-08-22T06:30:05.337Z"
+    },
+    "Identity Replacement Thrillers": {
+      "id": "build-1755843325722-422ml6e",
+      "name": "Identity Replacement Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "007b8683-26f3-49e0-8206-803917f8ef7d",
+        "5a21806d-9fe5-4fa5-abd7-d9ca28d26efa",
+        "c72cc4cd-dc32-4970-b3a3-234a472f1a0e",
+        "82b3da37-1daa-4d07-b8c1-6d1190f8a7dc",
+        "2d908989-5604-427b-8b84-c7545677c025",
+        "3c91a6bc-7490-4859-9956-f29eaef0c7d3",
+        "3f508a5a-a290-4e46-b1d5-4df4a0a8b637",
+        "723bcb75-3ed5-4c9a-b8a7-f53456944b73",
+        "2162ca45-7550-4d8f-a92e-9dac58a59103",
+        "44e99d23-5269-47cb-97cf-2e4947efddb0",
+        "aaa49950-e79f-4c5d-91dc-05db24fc6bed",
+        "06d08d56-100d-4468-b987-e53ca6020951",
+        "6b408ba5-8aeb-4f2f-a004-f617b10f86cf",
+        "f1ba403a-7435-4982-a8da-980761ee53bf",
+        "953071ec-abec-4352-9ac0-61f842f17052",
+        "4a5c8c23-0e50-4006-8ca1-74161a7d8406",
+        "16091d5f-7e03-4eee-bca4-a3ce0e40ca37",
+        "d8cd1f6f-9c1a-404c-b5c9-d7e76e7732fe",
+        "2a967609-542b-400e-afd2-669efed3f3d2",
+        "33186cc2-b958-47d6-817c-7ed947ca95a0",
+        "3de00a9d-b515-4c74-99a2-0af3039e62fe",
+        "403349e3-5550-4f87-8505-79cbbc0659c6",
+        "807acbc5-8258-424c-a3d0-0cc32dd2dd93",
+        "947394d4-44a1-4613-8607-29d451853b64"
+      ],
+      "size": 24,
+      "createdAt": "2025-08-22T06:15:25.722Z",
+      "lastUpdated": "2025-08-22T06:30:28.794Z"
+    },
+    "Covert Program Exposure": {
+      "id": "build-1755843325723-4zjt1rs",
+      "name": "Covert Program Exposure",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "01eea89f-0186-4010-8d08-1aaa88a91cd5",
+        "42bfe89e-8573-4eaa-8eb2-0c590e05b43e",
+        "612c99e9-055a-4719-9b92-95e132f55bb8",
+        "a8d48afa-5dd9-4d88-98d2-f81d9eb351bd",
+        "ca8a0db6-4d35-48d1-b4b9-e74635474bbc",
+        "3bdc8424-b58c-4aac-992b-22514ca9546a",
+        "286bba96-db40-4114-bee2-854bc1dbdda7",
+        "2b03e4de-56e7-4753-9c9c-7b5674d5b83c",
+        "d2a442a4-ca87-41ba-b3fc-8fdc144613f3",
+        "16187442-4c06-472f-a34f-f7dbcb71a0b1",
+        "5d8ded9c-6e27-48cc-92f8-74141fe6c5bd",
+        "32487bbe-61fb-44e5-9b8e-6936f0314993",
+        "681e080b-6874-406e-ad2f-45389019e0e4",
+        "6c874ee0-94cf-4ba4-b43f-fe0574f8a183",
+        "a2aeaf27-f228-423f-a18f-4c15f86932cf",
+        "62ea81a1-8f2a-4910-91a0-7a78bbb9367f",
+        "4ec8bdf2-1623-433a-b8cd-f02f9af089ca",
+        "b227d08c-1a43-49aa-ae20-8a456c6f6b3f",
+        "6604371e-a1a0-42db-8645-dfb9e49632f3",
+        "89bd3e21-229c-48db-9a20-a59054cf3352",
+        "2b36fdd5-4cb3-4632-bde6-6a29536e0dc9",
+        "08969037-bf83-4fb2-84af-09b085a15b27",
+        "a0659511-b96f-4408-9389-0581a1419360",
+        "56855703-5abc-48b7-8d5d-dda54ae7b533",
+        "a66b886d-be0d-4d2f-bbea-434af8d51ee1",
+        "f1ba403a-7435-4982-a8da-980761ee53bf",
+        "45b44a03-465f-4723-acc3-9121ee437a69",
+        "c179ecf4-2c18-49fd-8c96-8704cab3e3fa",
+        "dc29f810-aae7-430a-9e1b-31349f1c51f6",
+        "ad84774c-7ae5-409c-9ac1-c878b68eaf24",
+        "ad06995f-2994-4c8e-8245-6fa51d167008",
+        "1a3c7aeb-7d46-4bf4-8964-1afca23734be",
+        "6790beb4-8c48-4268-b842-0abfce3fc0a8",
+        "5bac4094-d7c6-4233-afe2-a2f8c2018305",
+        "f31d68f2-0611-4021-8368-6ff946a3f7c6",
+        "16091d5f-7e03-4eee-bca4-a3ce0e40ca37",
+        "2b62aa89-f1af-4ca5-ba0e-7b9175d8bf03",
+        "d8cd1f6f-9c1a-404c-b5c9-d7e76e7732fe",
+        "2a967609-542b-400e-afd2-669efed3f3d2",
+        "5d199f46-2c86-4c4b-99e0-422775a7a299",
+        "c712f37b-abae-4e59-a1e9-149e3c5f121f",
+        "77e66de0-f669-453a-a8a1-7562444655b7",
+        "95655c0a-4076-45b4-bf4c-675678446d09",
+        "42cb55f9-ab72-4204-b614-494b1c8e492b",
+        "20dbcd94-906f-47fe-8844-57187e9d7c0a",
+        "e69a2656-44b9-4900-813e-e3b795b25c3e",
+        "7aa8932f-c2ea-4809-a455-ce70117d15d4",
+        "3de00a9d-b515-4c74-99a2-0af3039e62fe",
+        "3731982f-1b9d-4d18-b7ef-2bba054fecbf",
+        "0370a1b1-f74e-4bc5-b313-953f9798578a",
+        "b6d1d199-93d4-4c42-ae1d-30cfb62a5b98",
+        "0499b0d5-ff4e-4d4d-9bfe-a23897e303d6",
+        "807acbc5-8258-424c-a3d0-0cc32dd2dd93",
+        "a53bfb0c-d767-4850-ac8a-3264c44992c5",
+        "7619cfa3-4c97-42db-94cb-7dec3577bb4f",
+        "2c9b192f-e321-45b6-84e8-79670dc147ec",
+        "7e8e428f-066a-4082-8ead-968acea58f87",
+        "53ae5dcf-a387-46f4-9f51-5c3abeac8fcd",
+        "3f081b35-9204-40a6-a7db-9c4429e54157",
+        "799b7c76-d58a-44bb-a27a-4a6ee24bf6b2",
+        "5b5370fa-e6fe-4c74-820d-06e6ffe86db6"
+      ],
+      "size": 61,
+      "createdAt": "2025-08-22T06:15:25.723Z",
+      "lastUpdated": "2025-08-22T06:30:38.534Z"
+    },
+    "Middle East Intelligence Operations": {
+      "id": "build-1755843334703-tqs10by",
+      "name": "Middle East Intelligence Operations",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "ea9580b0-8c0c-4010-8bb3-c6372da7d208",
+        "c6a2bddb-3d8a-4c38-88bb-75d945243692",
+        "d2a442a4-ca87-41ba-b3fc-8fdc144613f3",
+        "7ba41d3c-712d-4880-ac10-af65f74357f0",
+        "4202fc55-bf4d-4188-84f7-2e5bb43e7cfe",
+        "00d8ac56-6c25-4f5d-a03e-7c4cdbcfa7e7"
+      ],
+      "size": 6,
+      "createdAt": "2025-08-22T06:15:34.703Z",
+      "lastUpdated": "2025-08-22T06:30:28.794Z"
+    },
+    "Hidden Heritage Thrillers": {
+      "id": "build-1755843334703-icp590b",
+      "name": "Hidden Heritage Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "5a21806d-9fe5-4fa5-abd7-d9ca28d26efa",
+        "06735d39-7c00-4b51-bb9f-6fbe3fe0d163",
+        "5d8ded9c-6e27-48cc-92f8-74141fe6c5bd",
+        "3c91a6bc-7490-4859-9956-f29eaef0c7d3",
+        "f2c942e9-32bf-468f-9e2a-69d5caed988d",
+        "4de5cc23-3549-4d42-83c7-488b8096ab49",
+        "7d7eb576-e7b7-4f31-b322-169202b09a0a",
+        "c515190f-328b-443f-9cdf-1061fc228402"
+      ],
+      "size": 8,
+      "createdAt": "2025-08-22T06:15:34.703Z",
+      "lastUpdated": "2025-08-22T06:30:28.793Z"
+    },
+    "Revolutionary Period Espionage": {
+      "id": "build-1755843351736-t4s24rv",
+      "name": "Revolutionary Period Espionage",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "0990f9ea-9cf3-4b9c-8846-89045b5c5e04"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:15:51.736Z",
+      "lastUpdated": "2025-08-22T06:15:51.736Z"
+    },
+    "Nuclear Weapons Recovery": {
+      "id": "build-1755843351737-u35x7oj",
+      "name": "Nuclear Weapons Recovery",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "73efedb8-f4eb-47d2-8a7f-cc948e3eea1e",
+        "d91e42df-e8af-4650-808b-b07f5fb69e33",
+        "25b8b4ae-eaea-4e35-a870-a090a1760011",
+        "4d361df9-5489-415b-8b7a-c722c633bb98",
+        "a5a99e07-1a10-4f89-bd42-f5fa90465f0f",
+        "ee729685-5917-4fe9-bcb8-031b8808c4ec",
+        "2d8e6905-a862-42ab-ae3f-5232c3d5195c",
+        "a834297b-28c9-456d-b581-06f288036ac2",
+        "0b61310b-8d86-4f04-941b-d8e496beef42",
+        "464a3a53-4148-4cfa-9f06-ab3bfe4e4e64",
+        "95655c0a-4076-45b4-bf4c-675678446d09",
+        "a4c67bce-0b95-4385-9d76-6b6c5a60059b",
+        "f7b75e8c-e698-48e7-be97-f1b77c34e009",
+        "b3964bd8-0eb5-4df2-8929-d8cf411f24e1",
+        "e9b56c06-9954-4042-94d7-742e676b12ea",
+        "0d16e162-0a61-4951-a257-658f87770762",
+        "068d6def-56b6-46f4-9e9a-4bc35656d0ed"
+      ],
+      "size": 17,
+      "createdAt": "2025-08-22T06:15:51.737Z",
+      "lastUpdated": "2025-08-22T06:29:53.931Z"
+    },
+    "Transport Disaster Thrillers": {
+      "id": "build-1755843351737-46z1vyv",
+      "name": "Transport Disaster Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "e06f6cf3-0e99-4804-b5f9-e063a1780701",
+        "173f0360-56aa-4892-818f-ae993189513f",
+        "89603932-2788-42e6-b8f5-29577485a297",
+        "3b537862-9abe-48fc-86d9-3469a7f534d0",
+        "f9598637-a698-4129-bff0-7c7cb197f688",
+        "b2bbb14a-0059-4d1c-8139-a789f2c164d1",
+        "efd0618b-c38d-4244-8159-bfbc49508f62",
+        "cb9e1292-f6bf-4b9f-9a5d-569c8af1abe7",
+        "bbdb708a-8b7c-4202-a2dd-3dd2c2304c0f",
+        "da4824b6-8ff5-4e59-8a16-b95ab5a5c86d",
+        "a545fed8-6e21-4b94-8350-53a16c067270",
+        "10eb700a-83a1-489f-a254-00eaa7769439"
+      ],
+      "size": 12,
+      "createdAt": "2025-08-22T06:15:51.737Z",
+      "lastUpdated": "2025-08-22T06:30:05.337Z"
+    },
+    "High-Stakes Gambling Thrillers": {
+      "id": "build-1755843383495-i5imuqc",
+      "name": "High-Stakes Gambling Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "8c6f9dc7-1b23-479c-ad16-1536d1113011",
+        "ea65ddf3-011a-4a4f-b7c3-46cd0fab0921"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T06:16:23.495Z",
+      "lastUpdated": "2025-08-22T06:30:38.533Z"
+    },
+    "Scientific Discovery Thrillers": {
+      "id": "build-1755843383495-xj1dae5",
+      "name": "Scientific Discovery Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "612c99e9-055a-4719-9b92-95e132f55bb8",
+        "5e8d0f25-514b-4b6f-82c8-41cf5d1a2d5c",
+        "6b408ba5-8aeb-4f2f-a004-f617b10f86cf",
+        "3d0eb615-46fa-4f45-9e66-143fb5472c37",
+        "3f081b35-9204-40a6-a7db-9c4429e54157"
+      ],
+      "size": 5,
+      "createdAt": "2025-08-22T06:16:23.495Z",
+      "lastUpdated": "2025-08-22T06:30:05.337Z"
+    },
+    "Drug Cartel Operations": {
+      "id": "build-1755843393228-k2gnjmb",
+      "name": "Drug Cartel Operations",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "a8d48afa-5dd9-4d88-98d2-f81d9eb351bd",
+        "f5dd936a-cb58-43da-bd31-27689a06c7e2",
+        "c2bbc653-79fa-42ba-bb4a-0904df481aa1",
+        "9c2523e5-5bd9-47c0-b3f9-ae6a663ae339",
+        "cdc24ffb-da4e-49d9-b02c-a4f12c4c25ef",
+        "c6844011-b928-4651-9b78-d35aad056f76",
+        "b51915a1-9550-44e8-bf80-4b7011bd8921",
+        "67ed6844-e281-40e8-989b-d46662313169",
+        "3a92c230-4d45-4153-b911-d58a44cb7948",
+        "8c3f94d7-6384-4b68-bdfc-8b48bbe42fdf",
+        "a9e06e86-5988-4ecd-8ed5-6463381e9f4b",
+        "e7e986cf-39a9-4892-a25e-96c2218ac9e6"
+      ],
+      "size": 12,
+      "createdAt": "2025-08-22T06:16:33.228Z",
+      "lastUpdated": "2025-08-22T06:29:32.582Z"
+    },
+    "Snow-Bound Revenge Thrillers": {
+      "id": "build-1755843393229-tmh1lfs",
+      "name": "Snow-Bound Revenge Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "02655ac5-59d9-4e3c-a2f9-3975fcd75c9e"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:16:33.229Z",
+      "lastUpdated": "2025-08-22T06:16:33.229Z"
+    },
+    "Childhood Trauma Revenge": {
+      "id": "build-1755843402497-619hlae",
+      "name": "Childhood Trauma Revenge",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "f5dd936a-cb58-43da-bd31-27689a06c7e2",
+        "06d08d56-100d-4468-b987-e53ca6020951"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T06:16:42.497Z",
+      "lastUpdated": "2025-08-22T06:22:02.464Z"
+    },
+    "Korean Peninsula Espionage": {
+      "id": "build-1755843402497-zawp3c5",
+      "name": "Korean Peninsula Espionage",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "b2250a11-b903-42a7-a97b-d7b7fb723a80",
+        "3bb599f9-df66-4964-8e4c-eae781cba5aa",
+        "84bc29e7-9b87-4c6f-ab88-3818b2fcf41e",
+        "da7ed1e0-cbf6-473c-b6ba-fa5e0aaacbab",
+        "97509ab9-f3aa-40fa-8cf6-ef41b9bc2962",
+        "af46d022-960e-43fc-979e-1553190f0e15",
+        "a6cb7969-9b58-44b7-bf8e-0251c3a63a13",
+        "ef383557-01e3-4350-be9e-1e906669e60a",
+        "037df060-ec2f-4e3e-a45e-7115a23d6e9e",
+        "ab15c52e-f80b-4642-976b-d4a4c7f53fc8"
+      ],
+      "size": 10,
+      "createdAt": "2025-08-22T06:16:42.497Z",
+      "lastUpdated": "2025-08-22T06:28:44.760Z"
+    },
+    "Prisoner Transport Thrillers": {
+      "id": "build-1755843402497-wni9x1u",
+      "name": "Prisoner Transport Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "bd1e6acb-0f7c-4d55-bc38-c2d99bb94b61",
+        "5adc982f-1fe4-42e3-8744-0464a5088398",
+        "67f61568-a29d-4bb6-b40c-13049b599a68",
+        "412aef7b-68d1-4ea4-917a-7c84e8d5135c",
+        "3b537862-9abe-48fc-86d9-3469a7f534d0",
+        "af46d022-960e-43fc-979e-1553190f0e15",
+        "9a227713-c14f-49b6-b0c2-e074b5a5c736",
+        "bbdb708a-8b7c-4202-a2dd-3dd2c2304c0f"
+      ],
+      "size": 8,
+      "createdAt": "2025-08-22T06:16:42.497Z",
+      "lastUpdated": "2025-08-22T06:29:32.583Z"
+    },
+    "Pre-War Nazi Infiltration": {
+      "id": "build-1755843412969-7gb0js7",
+      "name": "Pre-War Nazi Infiltration",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "a93f0c2d-a5a2-42eb-93b3-e832bb1e0a93",
+        "14224832-e364-49a1-916e-5829236a832d",
+        "2d908989-5604-427b-8b84-c7545677c025",
+        "3c91a6bc-7490-4859-9956-f29eaef0c7d3",
+        "7ff21260-bc7a-4acf-aebd-595d066e1bb7",
+        "44e99d23-5269-47cb-97cf-2e4947efddb0",
+        "aaa49950-e79f-4c5d-91dc-05db24fc6bed",
+        "dd209e87-f97d-4a01-b4e9-131ec3168a85",
+        "1e634e93-248d-4572-bf2d-7d4193826d7b",
+        "2077d069-fb69-44c7-9cae-fa743ccbcba0",
+        "92dbcc76-24d4-49f4-b8cb-51c25a9f0c24",
+        "74049044-722e-4b89-bc47-970ac2b598e4"
+      ],
+      "size": 12,
+      "createdAt": "2025-08-22T06:16:52.969Z",
+      "lastUpdated": "2025-08-22T06:28:24.498Z"
+    },
+    "WWI Espionage Romance": {
+      "id": "build-1755843422952-dxs3plg",
+      "name": "WWI Espionage Romance",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "02b3884b-6679-415d-aa1c-cf4fa79271b8",
+        "94fd5526-a2a9-44a3-b6bf-cd3e4db428d4",
+        "1e798810-274a-4c73-87be-a7400d022212",
+        "1fa670c5-c21b-453d-84eb-f99dc3903e23",
+        "e59b28c8-59f2-4143-864d-3eb0d0fda7e6",
+        "98cedc17-e951-4e0f-8452-02090f01455c",
+        "a75c5b41-170d-45f4-8b80-7460cfb620d3"
+      ],
+      "size": 7,
+      "createdAt": "2025-08-22T06:17:02.952Z",
+      "lastUpdated": "2025-08-22T06:29:12.925Z"
+    },
+    "Musical Espionage Films": {
+      "id": "build-1755843422952-x29g9a5",
+      "name": "Musical Espionage Films",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "223d5414-47ef-4b10-bd9f-f29c07e67cb7"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:17:02.952Z",
+      "lastUpdated": "2025-08-22T06:17:02.952Z"
+    },
+    "Family Vengeance Thrillers": {
+      "id": "build-1755843432884-pg3ihbi",
+      "name": "Family Vengeance Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "6f8739c0-b34f-4adc-b0e5-0022079a1aa1",
+        "f29309a4-2ada-42b3-9952-5ba8d971108d",
+        "3e4fa060-19fc-429e-8458-7da7cdd601be",
+        "efcf0efa-695d-4250-8e93-d3040919f6b2",
+        "9c2523e5-5bd9-47c0-b3f9-ae6a663ae339",
+        "2a38831f-51b7-4f51-947f-dea9ef578934",
+        "11d7f804-a69b-4bfe-8d4b-615822491cb3",
+        "06d08d56-100d-4468-b987-e53ca6020951",
+        "03fdd77f-0882-4dfe-8b23-5b6131419c59",
+        "73d78aaa-9e82-4ad1-870a-8a8564e0c93c",
+        "c179ecf4-2c18-49fd-8c96-8704cab3e3fa",
+        "04c49287-00c9-4b64-9f93-4302f4383efc",
+        "48e9a9cb-0fb4-4e7a-a017-83366eaa13bd",
+        "7dccde96-d397-4565-bb13-cbf8801a004d",
+        "5b327baa-b8de-4912-97ad-dce5c6f4bba2",
+        "f32a8730-a573-458f-9060-44cfb723e99a",
+        "080046be-bbbb-4a9e-843a-3d404ffe8bc0",
+        "cf17a90d-6f1f-47ef-9baa-321acca70ff7",
+        "d14f1823-ddd2-4295-948a-eec211da5aee",
+        "95055ce5-5208-4f6e-b6e2-7b12d06d0b93",
+        "65f3506a-7d34-4518-ba8c-5319b1dc318e",
+        "80fef151-542b-402e-a536-95d03bccd81a",
+        "ab15c52e-f80b-4642-976b-d4a4c7f53fc8",
+        "6cde924c-2df3-4f63-85c0-d33c01ea67f1",
+        "947394d4-44a1-4613-8607-29d451853b64",
+        "5b5370fa-e6fe-4c74-820d-06e6ffe86db6"
+      ],
+      "size": 26,
+      "createdAt": "2025-08-22T06:17:12.884Z",
+      "lastUpdated": "2025-08-22T06:30:38.534Z"
+    },
+    "Civilian Vigilante Justice": {
+      "id": "build-1755843432884-gnz3e30",
+      "name": "Civilian Vigilante Justice",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "326eec21-481c-41fc-a4be-4a7ebdb33587",
+        "03fdd77f-0882-4dfe-8b23-5b6131419c59",
+        "2f9921b9-576c-479f-a4ff-19ce3e209213",
+        "cf17a90d-6f1f-47ef-9baa-321acca70ff7"
+      ],
+      "size": 4,
+      "createdAt": "2025-08-22T06:17:12.884Z",
+      "lastUpdated": "2025-08-22T06:26:06.033Z"
+    },
+    "High-Speed Heist Films": {
+      "id": "build-1755843432885-4jv4avd",
+      "name": "High-Speed Heist Films",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "ab706e61-a6b5-4542-a5b4-9ef7ad1d8851",
+        "a5de1059-025b-4f44-96b2-41a960779dd8",
+        "e13a4962-2815-4ae8-8eb9-a4f5137cd76a"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T06:17:12.885Z",
+      "lastUpdated": "2025-08-22T06:23:01.065Z"
+    },
+    "International Smuggling Operations": {
+      "id": "build-1755843441546-wjgffif",
+      "name": "International Smuggling Operations",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "d1fb3a4d-7e06-470b-8c7e-d78a7deff326",
+        "4a780ff3-bb49-4e1e-b3fd-eb02800add9f",
+        "c72cc4cd-dc32-4970-b3a3-234a472f1a0e",
+        "3bdc8424-b58c-4aac-992b-22514ca9546a",
+        "c298df1c-ec09-444c-83de-93349065cb14",
+        "2b03e4de-56e7-4753-9c9c-7b5674d5b83c",
+        "4d361df9-5489-415b-8b7a-c722c633bb98",
+        "06735d39-7c00-4b51-bb9f-6fbe3fe0d163",
+        "8171962a-d8c6-4916-8ed4-f971ec12d44f",
+        "d81d7353-3d35-445b-a956-f29d638bccba",
+        "feb207ca-524a-4894-93ee-7b6cb0b452a4",
+        "35009709-0927-4a45-9227-af9bee8e2be8",
+        "c5bebf65-a186-4c97-a4c6-5bab7ef177b5",
+        "c3c1677d-5b97-425f-a76e-19d72bac9687",
+        "ebadcf9e-3425-4461-87a9-961761c1ef3d",
+        "ee459c63-c111-4045-8045-6b67c432a2ef",
+        "4ec8bdf2-1623-433a-b8cd-f02f9af089ca",
+        "4df3d11f-57c0-49d9-a78e-c5476c655afb",
+        "c2bbc653-79fa-42ba-bb4a-0904df481aa1",
+        "9c2523e5-5bd9-47c0-b3f9-ae6a663ae339",
+        "cdc24ffb-da4e-49d9-b02c-a4f12c4c25ef",
+        "2a38831f-51b7-4f51-947f-dea9ef578934",
+        "723bcb75-3ed5-4c9a-b8a7-f53456944b73",
+        "c6844011-b928-4651-9b78-d35aad056f76",
+        "6604371e-a1a0-42db-8645-dfb9e49632f3",
+        "2b36fdd5-4cb3-4632-bde6-6a29536e0dc9",
+        "444d183d-f342-4636-9555-9343779d9255",
+        "2f93c10c-11d0-4649-b758-69f0a3fb942e",
+        "2162ca45-7550-4d8f-a92e-9dac58a59103",
+        "2d8e6905-a862-42ab-ae3f-5232c3d5195c",
+        "a834297b-28c9-456d-b581-06f288036ac2",
+        "084d1105-82c6-427c-99c3-00cf1d7cc797",
+        "56855703-5abc-48b7-8d5d-dda54ae7b533",
+        "aa0a1b14-3248-4f10-bb0b-7f7be6458de4",
+        "a5de1059-025b-4f44-96b2-41a960779dd8",
+        "b51915a1-9550-44e8-bf80-4b7011bd8921",
+        "c179ecf4-2c18-49fd-8c96-8704cab3e3fa",
+        "afdd2b21-7290-4821-b236-f7fb16f1cec3",
+        "5b67826b-e56b-4385-bcc6-0ef571da71f9",
+        "9e2b6175-fcbb-4f20-a5b0-144b5be4aa19",
+        "c5fe2553-d7ba-40ae-af51-5a16be3ef7e1",
+        "67ed6844-e281-40e8-989b-d46662313169",
+        "0b61310b-8d86-4f04-941b-d8e496beef42",
+        "1a3c7aeb-7d46-4bf4-8964-1afca23734be",
+        "3a92c230-4d45-4153-b911-d58a44cb7948",
+        "5b327baa-b8de-4912-97ad-dce5c6f4bba2",
+        "4a5c8c23-0e50-4006-8ca1-74161a7d8406",
+        "464a3a53-4148-4cfa-9f06-ab3bfe4e4e64",
+        "65890e5e-b0f5-4a1a-b53b-b4991924ae88",
+        "1bda2704-1e56-4a0e-817d-5c650bc1a2a7",
+        "5d199f46-2c86-4c4b-99e0-422775a7a299",
+        "b7602de9-3672-433a-bf21-a7a553946d70",
+        "77e66de0-f669-453a-a8a1-7562444655b7",
+        "42cb55f9-ab72-4204-b614-494b1c8e492b",
+        "bb05b4ef-46b6-4018-b9cd-f19cba13ce9e",
+        "fbeea720-0c34-4d4b-bf2b-bc6c37d8a04d",
+        "4c95687c-a79a-4dc1-bc2b-cae72e167652",
+        "a4c67bce-0b95-4385-9d76-6b6c5a60059b",
+        "f7b75e8c-e698-48e7-be97-f1b77c34e009",
+        "9b98f237-1b2c-4e8d-a6fb-789ec11737c0",
+        "21c22c46-c03e-4349-91f9-110b97c73330",
+        "1844443c-ab1c-455f-ae45-17082fba2a34",
+        "a53bfb0c-d767-4850-ac8a-3264c44992c5",
+        "e9b56c06-9954-4042-94d7-742e676b12ea",
+        "ed5ff2ac-b0af-4d11-a9a8-c333ab639561",
+        "0d16e162-0a61-4951-a257-658f87770762",
+        "bae3489d-ee72-4edd-ab4b-c9d373b8ecee",
+        "6cde924c-2df3-4f63-85c0-d33c01ea67f1",
+        "e7e986cf-39a9-4892-a25e-96c2218ac9e6",
+        "8163701b-58a9-4f4e-bd59-4b60c57b521b"
+      ],
+      "size": 70,
+      "createdAt": "2025-08-22T06:17:21.546Z",
+      "lastUpdated": "2025-08-22T06:30:49.087Z"
+    },
+    "Medical Crime Thrillers": {
+      "id": "build-1755843464475-ja3suje",
+      "name": "Medical Crime Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "4a780ff3-bb49-4e1e-b3fd-eb02800add9f",
+        "71535608-8abb-4c60-a0d9-e9330892350c",
+        "2b62aa89-f1af-4ca5-ba0e-7b9175d8bf03",
+        "51a0317d-0f4b-4200-a636-f88dfa21c350",
+        "037df060-ec2f-4e3e-a45e-7115a23d6e9e"
+      ],
+      "size": 5,
+      "createdAt": "2025-08-22T06:17:44.475Z",
+      "lastUpdated": "2025-08-22T06:28:44.760Z"
+    },
+    "Criminal Empire Takeover": {
+      "id": "build-1755843464477-sqrcknl",
+      "name": "Criminal Empire Takeover",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "c72cc4cd-dc32-4970-b3a3-234a472f1a0e"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:17:44.477Z",
+      "lastUpdated": "2025-08-22T06:17:44.477Z"
+    },
+    "Mad Scientist Schemes": {
+      "id": "build-1755843464478-o018rrg",
+      "name": "Mad Scientist Schemes",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "8bb97f06-77a4-414c-9c18-228c4b207c11",
+        "6c874ee0-94cf-4ba4-b43f-fe0574f8a183",
+        "587ff6d1-ac74-4a99-83cb-f784721c0022",
+        "4f839901-9d7a-4c85-8951-5f25539d7dda",
+        "84027d29-747d-4a28-a7c2-4a95b62bc0f0",
+        "084d1105-82c6-427c-99c3-00cf1d7cc797",
+        "c8baf9f4-e73d-4044-85e6-4993373debc5",
+        "9e2b6175-fcbb-4f20-a5b0-144b5be4aa19",
+        "4eafc69b-bd0a-4916-be27-e8767bb1cf06",
+        "7619cfa3-4c97-42db-94cb-7dec3577bb4f"
+      ],
+      "size": 10,
+      "createdAt": "2025-08-22T06:17:44.478Z",
+      "lastUpdated": "2025-08-22T06:28:54.849Z"
+    },
+    "Supervillain Base Thrillers": {
+      "id": "build-1755843464478-fgch1av",
+      "name": "Supervillain Base Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "5e8d0f25-514b-4b6f-82c8-41cf5d1a2d5c",
+        "4f839901-9d7a-4c85-8951-5f25539d7dda",
+        "c8baf9f4-e73d-4044-85e6-4993373debc5",
+        "2f350e80-0b30-4dce-8513-e9e693655666",
+        "1844443c-ab1c-455f-ae45-17082fba2a34",
+        "8163701b-58a9-4f4e-bd59-4b60c57b521b"
+      ],
+      "size": 6,
+      "createdAt": "2025-08-22T06:17:44.478Z",
+      "lastUpdated": "2025-08-22T06:30:49.087Z"
+    },
+    "Skydiving Action Thrillers": {
+      "id": "build-1755843475414-zcsss21",
+      "name": "Skydiving Action Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "67f61568-a29d-4bb6-b40c-13049b599a68",
+        "25b8b4ae-eaea-4e35-a870-a090a1760011",
+        "4a5c8c23-0e50-4006-8ca1-74161a7d8406"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T06:17:55.414Z",
+      "lastUpdated": "2025-08-22T06:25:16.681Z"
+    },
+    "AI Control Thrillers": {
+      "id": "build-1755843475415-w77n3v9",
+      "name": "AI Control Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "ca8a0db6-4d35-48d1-b4b9-e74635474bbc",
+        "681e080b-6874-406e-ad2f-45389019e0e4",
+        "2b36fdd5-4cb3-4632-bde6-6a29536e0dc9",
+        "60e7feda-3dd5-466b-a6bf-b71b3156dc61"
+      ],
+      "size": 4,
+      "createdAt": "2025-08-22T06:17:55.415Z",
+      "lastUpdated": "2025-08-22T06:30:05.337Z"
+    },
+    "Prison Break Thrillers": {
+      "id": "build-1755843475415-jdymcit",
+      "name": "Prison Break Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "286bba96-db40-4114-bee2-854bc1dbdda7",
+        "53596258-5ebf-4749-aae9-4f729d256e61",
+        "9a3b3127-e903-4196-a6f3-7973196dc3a1",
+        "f9598637-a698-4129-bff0-7c7cb197f688",
+        "f204c6be-089b-4c35-ab69-b6c2aaf045b7"
+      ],
+      "size": 5,
+      "createdAt": "2025-08-22T06:17:55.415Z",
+      "lastUpdated": "2025-08-22T06:28:06.872Z"
+    },
+    "High-Tech Prison Escapes": {
+      "id": "build-1755843475415-wmb20yd",
+      "name": "High-Tech Prison Escapes",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "286bba96-db40-4114-bee2-854bc1dbdda7"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:17:55.415Z",
+      "lastUpdated": "2025-08-22T06:17:55.415Z"
+    },
+    "Midair Aircraft Takeovers": {
+      "id": "build-1755843484894-oi2lf3q",
+      "name": "Midair Aircraft Takeovers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "173f0360-56aa-4892-818f-ae993189513f",
+        "bbdb708a-8b7c-4202-a2dd-3dd2c2304c0f"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T06:18:04.894Z",
+      "lastUpdated": "2025-08-22T06:29:32.583Z"
+    },
+    "Winter Combat Extraction": {
+      "id": "build-1755843484895-f2s4br9",
+      "name": "Winter Combat Extraction",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "53596258-5ebf-4749-aae9-4f729d256e61"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:18:04.895Z",
+      "lastUpdated": "2025-08-22T06:18:04.895Z"
+    },
+    "Stadium Hostage Thrillers": {
+      "id": "build-1755843494278-4to0v47",
+      "name": "Stadium Hostage Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "481d3bce-7cd4-4372-8176-0363e44ebba1"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:18:14.278Z",
+      "lastUpdated": "2025-08-22T06:18:14.278Z"
+    },
+    "Military Technology Theft": {
+      "id": "build-1755843505027-8htnuri",
+      "name": "Military Technology Theft",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "2b03e4de-56e7-4753-9c9c-7b5674d5b83c",
+        "b970fb34-c3d6-4aa9-be39-16b9e08ad5b8",
+        "a5a99e07-1a10-4f89-bd42-f5fa90465f0f",
+        "4f839901-9d7a-4c85-8951-5f25539d7dda",
+        "ad84774c-7ae5-409c-9ac1-c878b68eaf24",
+        "53d20b4a-e514-4bbc-bd59-21cdc5057698",
+        "2c98866f-b07c-44fc-b0be-0df2a2031b4a",
+        "ed8fa11f-4e0f-4318-a5af-60be7b993262",
+        "f204c6be-089b-4c35-ab69-b6c2aaf045b7",
+        "bae3489d-ee72-4edd-ab4b-c9d373b8ecee",
+        "068d6def-56b6-46f4-9e9a-4bc35656d0ed",
+        "da4824b6-8ff5-4e59-8a16-b95ab5a5c86d"
+      ],
+      "size": 12,
+      "createdAt": "2025-08-22T06:18:25.027Z",
+      "lastUpdated": "2025-08-22T06:29:53.931Z"
+    },
+    "Cultural Disguise Espionage": {
+      "id": "build-1755843523898-60k61dd",
+      "name": "Cultural Disguise Espionage",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "2d908989-5604-427b-8b84-c7545677c025",
+        "75a8376b-7545-4e10-9634-0765830066c5",
+        "7d7eb576-e7b7-4f31-b322-169202b09a0a",
+        "1e798810-274a-4c73-87be-a7400d022212",
+        "1fa670c5-c21b-453d-84eb-f99dc3903e23",
+        "a6cb7969-9b58-44b7-bf8e-0251c3a63a13",
+        "20dbcd94-906f-47fe-8844-57187e9d7c0a",
+        "7aa8932f-c2ea-4809-a455-ce70117d15d4",
+        "4202fc55-bf4d-4188-84f7-2e5bb43e7cfe",
+        "e59b28c8-59f2-4143-864d-3eb0d0fda7e6",
+        "92dbcc76-24d4-49f4-b8cb-51c25a9f0c24",
+        "b6d1d199-93d4-4c42-ae1d-30cfb62a5b98",
+        "9b98f237-1b2c-4e8d-a6fb-789ec11737c0",
+        "74049044-722e-4b89-bc47-970ac2b598e4",
+        "98cedc17-e951-4e0f-8452-02090f01455c",
+        "0499b0d5-ff4e-4d4d-9bfe-a23897e303d6",
+        "1844443c-ab1c-455f-ae45-17082fba2a34",
+        "a9e06e86-5988-4ecd-8ed5-6463381e9f4b",
+        "a53bfb0c-d767-4850-ac8a-3264c44992c5",
+        "a75c5b41-170d-45f4-8b80-7460cfb620d3",
+        "2c9b192f-e321-45b6-84e8-79670dc147ec",
+        "7e8e428f-066a-4082-8ead-968acea58f87",
+        "00d8ac56-6c25-4f5d-a03e-7c4cdbcfa7e7",
+        "23d9dce0-f3cb-488a-bb5f-2f4d78fe6ff2",
+        "8163701b-58a9-4f4e-bd59-4b60c57b521b"
+      ],
+      "size": 25,
+      "createdAt": "2025-08-22T06:18:43.898Z",
+      "lastUpdated": "2025-08-22T06:30:49.087Z"
+    },
+    "Gold Heist Thrillers": {
+      "id": "build-1755843523899-syh22bv",
+      "name": "Gold Heist Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "feb207ca-524a-4894-93ee-7b6cb0b452a4"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:18:43.899Z",
+      "lastUpdated": "2025-08-22T06:18:43.899Z"
+    },
+    "Assassin Training Thrillers": {
+      "id": "build-1755843532064-mey89kt",
+      "name": "Assassin Training Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "f29309a4-2ada-42b3-9952-5ba8d971108d",
+        "16187442-4c06-472f-a34f-f7dbcb71a0b1",
+        "3f508a5a-a290-4e46-b1d5-4df4a0a8b637",
+        "f1ba403a-7435-4982-a8da-980761ee53bf",
+        "da95e273-68f1-47f2-a0ed-8d677e8e906b",
+        "6790beb4-8c48-4268-b842-0abfce3fc0a8",
+        "080046be-bbbb-4a9e-843a-3d404ffe8bc0",
+        "f21f3558-86ab-4b0d-9db9-dfe267dfe4cf",
+        "86464abe-14e5-4876-8f0b-24d2ac1f5991",
+        "1f605310-060b-4f27-95b1-a2a0c94eaf76",
+        "76d84ed5-476e-47de-a3d1-1c86522e9155",
+        "d14f1823-ddd2-4295-948a-eec211da5aee",
+        "0370a1b1-f74e-4bc5-b313-953f9798578a",
+        "95055ce5-5208-4f6e-b6e2-7b12d06d0b93",
+        "ab15c52e-f80b-4642-976b-d4a4c7f53fc8",
+        "c515190f-328b-443f-9cdf-1061fc228402"
+      ],
+      "size": 16,
+      "createdAt": "2025-08-22T06:18:52.064Z",
+      "lastUpdated": "2025-08-22T06:30:28.793Z"
+    },
+    "Female Assassin Networks": {
+      "id": "build-1755843532065-csog462",
+      "name": "Female Assassin Networks",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "06020814-cdf3-4bdd-91c6-742666cb4d16",
+        "a5fa1e9e-4978-4d77-b577-acc86ba7e06c",
+        "3f508a5a-a290-4e46-b1d5-4df4a0a8b637",
+        "f1ba403a-7435-4982-a8da-980761ee53bf",
+        "dfe37e5b-eeae-47b9-973b-2033a9481db7",
+        "da95e273-68f1-47f2-a0ed-8d677e8e906b",
+        "97509ab9-f3aa-40fa-8cf6-ef41b9bc2962",
+        "4eafc69b-bd0a-4916-be27-e8767bb1cf06",
+        "2f350e80-0b30-4dce-8513-e9e693655666",
+        "d14f1823-ddd2-4295-948a-eec211da5aee",
+        "ab15c52e-f80b-4642-976b-d4a4c7f53fc8"
+      ],
+      "size": 11,
+      "createdAt": "2025-08-22T06:18:52.065Z",
+      "lastUpdated": "2025-08-22T06:28:44.760Z"
+    },
+    "Teen Assassin Origins": {
+      "id": "build-1755843541771-zb07267",
+      "name": "Teen Assassin Origins",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "5d8ded9c-6e27-48cc-92f8-74141fe6c5bd"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:19:01.771Z",
+      "lastUpdated": "2025-08-22T06:19:01.771Z"
+    },
+    "Natural Disaster Heists": {
+      "id": "build-1755843541771-ia3ugsf",
+      "name": "Natural Disaster Heists",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "c3c1677d-5b97-425f-a76e-19d72bac9687"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:19:01.771Z",
+      "lastUpdated": "2025-08-22T06:19:01.771Z"
+    },
+    "Vehicular Murder Thrillers": {
+      "id": "build-1755843552024-ykdz0l1",
+      "name": "Vehicular Murder Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "3e4fa060-19fc-429e-8458-7da7cdd601be"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:19:12.024Z",
+      "lastUpdated": "2025-08-22T06:19:12.024Z"
+    },
+    "Submarine Warfare Thrillers": {
+      "id": "build-1755843552025-4yhbxfy",
+      "name": "Submarine Warfare Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "a5a99e07-1a10-4f89-bd42-f5fa90465f0f",
+        "98cedc17-e951-4e0f-8452-02090f01455c"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T06:19:12.025Z",
+      "lastUpdated": "2025-08-22T06:28:24.499Z"
+    },
+    "Underground Assassin Societies": {
+      "id": "build-1755843570549-5a91q3g",
+      "name": "Underground Assassin Societies",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "efcf0efa-695d-4250-8e93-d3040919f6b2",
+        "ee459c63-c111-4045-8045-6b67c432a2ef",
+        "b8bcc427-417b-4a83-885a-3a707ed07b07",
+        "1a3c7aeb-7d46-4bf4-8964-1afca23734be",
+        "86464abe-14e5-4876-8f0b-24d2ac1f5991",
+        "4df41032-d658-42b3-9c13-e2838ee21aa9",
+        "c515190f-328b-443f-9cdf-1061fc228402"
+      ],
+      "size": 7,
+      "createdAt": "2025-08-22T06:19:30.549Z",
+      "lastUpdated": "2025-08-22T06:30:28.793Z"
+    },
+    "Occult Criminal Thrillers": {
+      "id": "build-1755843620538-axj3zsj",
+      "name": "Occult Criminal Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "cdc24ffb-da4e-49d9-b02c-a4f12c4c25ef"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:20:20.538Z",
+      "lastUpdated": "2025-08-22T06:20:20.538Z"
+    },
+    "Cyber Infrastructure Terrorism": {
+      "id": "build-1755843620538-fnrvc3n",
+      "name": "Cyber Infrastructure Terrorism",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "d2e08abe-72e7-4316-81f1-012ac3319b1a",
+        "efd0618b-c38d-4244-8159-bfbc49508f62",
+        "5bac4094-d7c6-4233-afe2-a2f8c2018305",
+        "65890e5e-b0f5-4a1a-b53b-b4991924ae88"
+      ],
+      "size": 4,
+      "createdAt": "2025-08-22T06:20:20.538Z",
+      "lastUpdated": "2025-08-22T06:25:16.682Z"
+    },
+    "Battle Royale Thrillers": {
+      "id": "build-1755843651598-q33qr3i",
+      "name": "Battle Royale Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "181bd6e3-cb9e-41d7-a999-58d18ab9180f",
+        "77317ee3-64ea-415f-9191-4236853456d0",
+        "0483273b-2b59-425b-84f5-f90e82b5765c"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T06:20:51.598Z",
+      "lastUpdated": "2025-08-22T06:28:44.760Z"
+    },
+    "Elite Team Infiltration": {
+      "id": "build-1755843661497-qma8fob",
+      "name": "Elite Team Infiltration",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "89bd3e21-229c-48db-9a20-a59054cf3352"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:21:01.497Z",
+      "lastUpdated": "2025-08-22T06:21:01.497Z"
+    },
+    "Biological Weapon Thrillers": {
+      "id": "build-1755843671266-23q7o39",
+      "name": "Biological Weapon Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "444d183d-f342-4636-9555-9343779d9255",
+        "08969037-bf83-4fb2-84af-09b085a15b27",
+        "a0659511-b96f-4408-9389-0581a1419360",
+        "aa0a1b14-3248-4f10-bb0b-7f7be6458de4",
+        "f204c6be-089b-4c35-ab69-b6c2aaf045b7"
+      ],
+      "size": 5,
+      "createdAt": "2025-08-22T06:21:11.266Z",
+      "lastUpdated": "2025-08-22T06:28:06.872Z"
+    },
+    "Space Station Thrillers": {
+      "id": "build-1755843671266-lwglj4c",
+      "name": "Space Station Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "4f839901-9d7a-4c85-8951-5f25539d7dda"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:21:11.266Z",
+      "lastUpdated": "2025-08-22T06:21:11.266Z"
+    },
+    "Political Uprising Survival": {
+      "id": "build-1755843700819-q02bxb2",
+      "name": "Political Uprising Survival",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "11d7f804-a69b-4bfe-8d4b-615822491cb3",
+        "af46d022-960e-43fc-979e-1553190f0e15",
+        "054fb808-918c-48c3-b83d-a1aac7ca042d"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T06:21:40.819Z",
+      "lastUpdated": "2025-08-22T06:26:25.808Z"
+    },
+    "Suburban Warrior Awakening": {
+      "id": "build-1755843712289-egjn6uk",
+      "name": "Suburban Warrior Awakening",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "4de5cc23-3549-4d42-83c7-488b8096ab49"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:21:52.289Z",
+      "lastUpdated": "2025-08-22T06:21:52.289Z"
+    },
+    "Celebrity Revenge Thrillers": {
+      "id": "build-1755843742500-ze3qarh",
+      "name": "Celebrity Revenge Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "03fdd77f-0882-4dfe-8b23-5b6131419c59",
+        "12d73385-faa9-4f9d-b150-f17dface231f"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T06:22:22.500Z",
+      "lastUpdated": "2025-08-22T06:25:55.695Z"
+    },
+    "Airplane Hijacking Thrillers": {
+      "id": "build-1755843742500-fzeoj75",
+      "name": "Airplane Hijacking Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "f9496300-1c73-4901-b54d-bdb0dda9c4b9"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:22:22.500Z",
+      "lastUpdated": "2025-08-22T06:22:22.500Z"
+    },
+    "Memory Erasure Thrillers": {
+      "id": "build-1755843761824-vejdwon",
+      "name": "Memory Erasure Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "6b408ba5-8aeb-4f2f-a004-f617b10f86cf"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:22:41.824Z",
+      "lastUpdated": "2025-08-22T06:22:41.824Z"
+    },
+    "Extreme Sports Thrillers": {
+      "id": "build-1755843761824-dl72ro2",
+      "name": "Extreme Sports Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "a5de1059-025b-4f44-96b2-41a960779dd8",
+        "e13a4962-2815-4ae8-8eb9-a4f5137cd76a",
+        "b7602de9-3672-433a-bf21-a7a553946d70"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T06:22:41.824Z",
+      "lastUpdated": "2025-08-22T06:25:55.696Z"
+    },
+    "Dangerous Animal Thrillers": {
+      "id": "build-1755843791037-pwaq943",
+      "name": "Dangerous Animal Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "3b537862-9abe-48fc-86d9-3469a7f534d0",
+        "afdd2b21-7290-4821-b236-f7fb16f1cec3"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T06:23:11.037Z",
+      "lastUpdated": "2025-08-22T06:23:40.561Z"
+    },
+    "Professional Hostage Negotiation": {
+      "id": "build-1755843791038-dvacjhg",
+      "name": "Professional Hostage Negotiation",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "b51915a1-9550-44e8-bf80-4b7011bd8921",
+        "91f5e3f1-5137-40dd-aea7-36b2c51ee905",
+        "0f066f96-9add-45a9-8e44-c01fee0f1d70"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T06:23:11.038Z",
+      "lastUpdated": "2025-08-22T06:28:44.759Z"
+    },
+    "Psychic Powers Thrillers": {
+      "id": "build-1755843791038-kjh6yzx",
+      "name": "Psychic Powers Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "45b44a03-465f-4723-acc3-9121ee437a69"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:23:11.038Z",
+      "lastUpdated": "2025-08-22T06:23:11.038Z"
+    },
+    "Environmental Resource Thrillers": {
+      "id": "build-1755843810184-4aq8smt",
+      "name": "Environmental Resource Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "c179ecf4-2c18-49fd-8c96-8704cab3e3fa"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:23:30.184Z",
+      "lastUpdated": "2025-08-22T06:23:30.184Z"
+    },
+    "Russian Intelligence Training": {
+      "id": "build-1755843810185-uzswfzu",
+      "name": "Russian Intelligence Training",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "da95e273-68f1-47f2-a0ed-8d677e8e906b"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:23:30.185Z",
+      "lastUpdated": "2025-08-22T06:23:30.185Z"
+    },
+    "Underwater Recovery Thrillers": {
+      "id": "build-1755843820561-onygm7b",
+      "name": "Underwater Recovery Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "afdd2b21-7290-4821-b236-f7fb16f1cec3",
+        "0d16e162-0a61-4951-a257-658f87770762"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T06:23:40.561Z",
+      "lastUpdated": "2025-08-22T06:29:12.926Z"
+    },
+    "Mercenary Team Betrayal": {
+      "id": "build-1755843830361-edjax4i",
+      "name": "Mercenary Team Betrayal",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "5b67826b-e56b-4385-bcc6-0ef571da71f9",
+        "46c8ab1c-5373-4bf7-8d3b-78c865f0fcdd",
+        "1f605310-060b-4f27-95b1-a2a0c94eaf76",
+        "e7e986cf-39a9-4892-a25e-96c2218ac9e6"
+      ],
+      "size": 4,
+      "createdAt": "2025-08-22T06:23:50.361Z",
+      "lastUpdated": "2025-08-22T06:29:32.582Z"
+    },
+    "School Violence Survival": {
+      "id": "build-1755843830362-eeenb5r",
+      "name": "School Violence Survival",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "547c3649-390b-438e-9bd5-cd75e5b53483"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:23:50.362Z",
+      "lastUpdated": "2025-08-22T06:23:50.362Z"
+    },
+    "Pacific Theater Espionage": {
+      "id": "build-1755843860879-z5vsnij",
+      "name": "Pacific Theater Espionage",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "dd209e87-f97d-4a01-b4e9-131ec3168a85"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:24:20.879Z",
+      "lastUpdated": "2025-08-22T06:24:20.879Z"
+    },
+    "Wilderness Pursuit Thrillers": {
+      "id": "build-1755843860880-1dan25o",
+      "name": "Wilderness Pursuit Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "c5fe2553-d7ba-40ae-af51-5a16be3ef7e1",
+        "3a92c230-4d45-4153-b911-d58a44cb7948",
+        "7dccde96-d397-4565-bb13-cbf8801a004d",
+        "77317ee3-64ea-415f-9191-4236853456d0",
+        "054fb808-918c-48c3-b83d-a1aac7ca042d",
+        "f21f3558-86ab-4b0d-9db9-dfe267dfe4cf",
+        "8c3f94d7-6384-4b68-bdfc-8b48bbe42fdf",
+        "4b79a61d-d150-47a3-be89-7a58332c8448",
+        "4b5d5861-5e23-4615-b68d-16f07d3f9cf4"
+      ],
+      "size": 9,
+      "createdAt": "2025-08-22T06:24:20.880Z",
+      "lastUpdated": "2025-08-22T06:28:54.850Z"
+    },
+    "Human Hunting Sport": {
+      "id": "build-1755843898021-dld4zhg",
+      "name": "Human Hunting Sport",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "7dccde96-d397-4565-bb13-cbf8801a004d",
+        "77317ee3-64ea-415f-9191-4236853456d0",
+        "054fb808-918c-48c3-b83d-a1aac7ca042d"
+      ],
+      "size": 3,
+      "createdAt": "2025-08-22T06:24:58.021Z",
+      "lastUpdated": "2025-08-22T06:26:25.808Z"
+    },
+    "Sleeper Agent Activation": {
+      "id": "build-1755843907678-ydtfh4u",
+      "name": "Sleeper Agent Activation",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "f31d68f2-0611-4021-8368-6ff946a3f7c6"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:25:07.678Z",
+      "lastUpdated": "2025-08-22T06:25:07.678Z"
+    },
+    "Neurodivergent Action Heroes": {
+      "id": "build-1755843916682-7p67y9u",
+      "name": "Neurodivergent Action Heroes",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "1bda2704-1e56-4a0e-817d-5c650bc1a2a7"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:25:16.682Z",
+      "lastUpdated": "2025-08-22T06:25:16.682Z"
+    },
+    "Double Agent Survival": {
+      "id": "build-1755843926244-32274h8",
+      "name": "Double Agent Survival",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "a6cb7969-9b58-44b7-bf8e-0251c3a63a13",
+        "a75c5b41-170d-45f4-8b80-7460cfb620d3"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T06:25:26.244Z",
+      "lastUpdated": "2025-08-22T06:29:12.925Z"
+    },
+    "Colonial Resistance Thrillers": {
+      "id": "build-1755843926244-elpwkzt",
+      "name": "Colonial Resistance Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "a6cb7969-9b58-44b7-bf8e-0251c3a63a13"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:25:26.244Z",
+      "lastUpdated": "2025-08-22T06:25:26.244Z"
+    },
+    "European Manhunt Films": {
+      "id": "build-1755843936138-uf95mqb",
+      "name": "European Manhunt Films",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "16091d5f-7e03-4eee-bca4-a3ce0e40ca37"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:25:36.138Z",
+      "lastUpdated": "2025-08-22T06:25:36.138Z"
+    },
+    "Train-Based Action Thrillers": {
+      "id": "build-1755843945498-upj8zpw",
+      "name": "Train-Based Action Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "cb9e1292-f6bf-4b9f-9a5d-569c8af1abe7",
+        "da4824b6-8ff5-4e59-8a16-b95ab5a5c86d"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T06:25:45.498Z",
+      "lastUpdated": "2025-08-22T06:29:53.931Z"
+    },
+    "Private Military Contractors": {
+      "id": "build-1755843945498-s3z8zbs",
+      "name": "Private Military Contractors",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "5d199f46-2c86-4c4b-99e0-422775a7a299",
+        "46c8ab1c-5373-4bf7-8d3b-78c865f0fcdd",
+        "e7e986cf-39a9-4892-a25e-96c2218ac9e6",
+        "de3dddd7-64f0-4318-b599-ed20760a47cb"
+      ],
+      "size": 4,
+      "createdAt": "2025-08-22T06:25:45.498Z",
+      "lastUpdated": "2025-08-22T06:29:32.584Z"
+    },
+    "Mountain Climbing Thrillers": {
+      "id": "build-1755843955696-ilcnfnj",
+      "name": "Mountain Climbing Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "b7602de9-3672-433a-bf21-a7a553946d70"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:25:55.696Z",
+      "lastUpdated": "2025-08-22T06:25:55.696Z"
+    },
+    "Military Trainer Showdowns": {
+      "id": "build-1755843985808-kzu9192",
+      "name": "Military Trainer Showdowns",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "f21f3558-86ab-4b0d-9db9-dfe267dfe4cf"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:26:25.809Z",
+      "lastUpdated": "2025-08-22T06:26:25.809Z"
+    },
+    "Global Banking Conspiracies": {
+      "id": "build-1755843995185-1lwqjhk",
+      "name": "Global Banking Conspiracies",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "bb05b4ef-46b6-4018-b9cd-f19cba13ce9e",
+        "ed5ff2ac-b0af-4d11-a9a8-c333ab639561"
+      ],
+      "size": 2,
+      "createdAt": "2025-08-22T06:26:35.185Z",
+      "lastUpdated": "2025-08-22T06:28:54.850Z"
+    },
+    "Sports Crime Thrillers": {
+      "id": "build-1755844020933-iy9cnfw",
+      "name": "Sports Crime Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "76a149d5-963d-4940-bc9b-28c20882f89d"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:27:00.933Z",
+      "lastUpdated": "2025-08-22T06:27:00.933Z"
+    },
+    "Female Supremacy Organizations": {
+      "id": "build-1755844049090-2pd5tsl",
+      "name": "Female Supremacy Organizations",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "4df41032-d658-42b3-9c13-e2838ee21aa9"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:27:29.090Z",
+      "lastUpdated": "2025-08-22T06:27:29.090Z"
+    },
+    "CIA Training Thrillers": {
+      "id": "build-1755844077960-m4kgrk0",
+      "name": "CIA Training Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "0370a1b1-f74e-4bc5-b313-953f9798578a"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:27:57.960Z",
+      "lastUpdated": "2025-08-22T06:27:57.960Z"
+    },
+    "Explosives Expert Thrillers": {
+      "id": "build-1755844096635-b6hal23",
+      "name": "Explosives Expert Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "65f3506a-7d34-4518-ba8c-5319b1dc318e"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:28:16.635Z",
+      "lastUpdated": "2025-08-22T06:28:16.635Z"
+    },
+    "Explosive Expert Thrillers": {
+      "id": "build-1755844096635-3yk6agq",
+      "name": "Explosive Expert Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "80fef151-542b-402e-a536-95d03bccd81a"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:28:16.635Z",
+      "lastUpdated": "2025-08-22T06:28:16.635Z"
+    },
+    "School Infiltration Thrillers": {
+      "id": "build-1755844115147-5x10pfp",
+      "name": "School Infiltration Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "a9e06e86-5988-4ecd-8ed5-6463381e9f4b"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:28:35.147Z",
+      "lastUpdated": "2025-08-22T06:28:35.147Z"
+    },
+    "Intelligence Fabrication Thrillers": {
+      "id": "build-1755844115147-stncn5t",
+      "name": "Intelligence Fabrication Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "a53bfb0c-d767-4850-ac8a-3264c44992c5"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:28:35.147Z",
+      "lastUpdated": "2025-08-22T06:28:35.147Z"
+    },
+    "Transit System Takeovers": {
+      "id": "build-1755844124759-v7x2e8i",
+      "name": "Transit System Takeovers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "0f066f96-9add-45a9-8e44-c01fee0f1d70"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:28:44.759Z",
+      "lastUpdated": "2025-08-22T06:28:44.759Z"
+    },
+    "Western Spy Adventures": {
+      "id": "build-1755844134849-49oi93i",
+      "name": "Western Spy Adventures",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "7619cfa3-4c97-42db-94cb-7dec3577bb4f"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:28:54.849Z",
+      "lastUpdated": "2025-08-22T06:28:54.849Z"
+    },
+    "Forest Fire Survival": {
+      "id": "build-1755844134850-mgcxdkv",
+      "name": "Forest Fire Survival",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "4b5d5861-5e23-4615-b68d-16f07d3f9cf4"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:28:54.850Z",
+      "lastUpdated": "2025-08-22T06:28:54.850Z"
+    },
+    "Media Manipulation Thrillers": {
+      "id": "build-1755844162450-9mb53n9",
+      "name": "Media Manipulation Thrillers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "bae3489d-ee72-4edd-ab4b-c9d373b8ecee"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:29:22.450Z",
+      "lastUpdated": "2025-08-22T06:29:22.450Z"
+    },
+    "Train Disaster Prevention": {
+      "id": "build-1755844193931-f7zpmde",
+      "name": "Train Disaster Prevention",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "a545fed8-6e21-4b94-8350-53a16c067270"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:29:53.931Z",
+      "lastUpdated": "2025-08-22T06:29:53.931Z"
+    },
+    "Dangerous Cargo Transport": {
+      "id": "build-1755844205337-y4q3uge",
+      "name": "Dangerous Cargo Transport",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "10eb700a-83a1-489f-a254-00eaa7769439"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:30:05.337Z",
+      "lastUpdated": "2025-08-22T06:30:05.337Z"
+    },
+    "Virtual Reality Threats": {
+      "id": "build-1755844205337-a2ukstm",
+      "name": "Virtual Reality Threats",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "60e7feda-3dd5-466b-a6bf-b71b3156dc61"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:30:05.337Z",
+      "lastUpdated": "2025-08-22T06:30:05.337Z"
+    },
+    "Supernatural Assassin Powers": {
+      "id": "build-1755844228793-byb8lk0",
+      "name": "Supernatural Assassin Powers",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "c515190f-328b-443f-9cdf-1061fc228402"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:30:28.793Z",
+      "lastUpdated": "2025-08-22T06:30:28.793Z"
+    },
+    "Civilian Spy Recruitment": {
+      "id": "build-1755844228794-adohlxx",
+      "name": "Civilian Spy Recruitment",
+      "description": "Thematic collection for Action Thriller films",
+      "movieIds": [
+        "00d8ac56-6c25-4f5d-a03e-7c4cdbcfa7e7"
+      ],
+      "size": 1,
+      "createdAt": "2025-08-22T06:30:28.794Z",
+      "lastUpdated": "2025-08-22T06:30:28.794Z"
+    }
+  },
+  "processingState": {
+    "completedBatches": [],
+    "failedMovies": [
+      {
+        "movieId": "771522aa-1544-43fb-ae9c-eaa7f2e77926",
+        "title": "American Boy",
+        "year": 2023,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T06:14:26.014Z"
+      },
+      {
+        "movieId": "377c7bf8-6364-4299-96c8-cd4773e88b33",
+        "title": "Carry-On",
+        "year": 2024,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T06:16:12.988Z"
+      },
+      {
+        "movieId": "70bca229-355b-4510-87f4-5c20db43848b",
+        "title": "Lightning Bolt",
+        "year": 1966,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T06:20:09.111Z"
+      },
+      {
+        "movieId": "b09b79c5-17ce-4710-a95a-f430a5432be9",
+        "title": "Manhunt",
+        "year": 2020,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T06:20:40.663Z"
+      },
+      {
+        "movieId": "c1c2d97a-f5c8-499c-8b05-aff307a75f6a",
+        "title": "Newton's Third Law",
+        "year": 2017,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T06:21:30.712Z"
+      },
+      {
+        "movieId": "aef1c0dd-a2bc-49d2-b8ee-26e05c196908",
+        "title": "Phantom",
+        "year": 2023,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T06:22:41.824Z"
+      },
+      {
+        "movieId": "cc299cde-391c-42c6-89bc-c13a46ee43f8",
+        "title": "Poseidon Code",
+        "year": 2014,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T06:23:01.066Z"
+      },
+      {
+        "movieId": "bb9b2da0-b404-4a43-95c8-82908753c841",
+        "title": "Race",
+        "year": 2008,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T06:23:30.185Z"
+      },
+      {
+        "movieId": "185bc3d8-e229-464c-9dc9-9d7ea92548de",
+        "title": "The Last Resort",
+        "year": 2009,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T06:27:00.934Z"
+      },
+      {
+        "movieId": "cf9e1883-d4f9-4f3f-9d7f-7364b7f6822e",
+        "title": "Throttle",
+        "year": 2005,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T06:29:12.926Z"
+      },
+      {
+        "movieId": "927449bb-0fa0-45fb-90e0-5cc41533c721",
+        "title": "Unstoppable",
+        "year": 2018,
+        "error": "No JSON found in response",
+        "timestamp": "2025-08-22T06:29:53.931Z"
+      }
+    ]
+  }
+}

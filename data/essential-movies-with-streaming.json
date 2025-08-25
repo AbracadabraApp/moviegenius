@@ -1,0 +1,488 @@
+[
+  {
+    "tmdbId": 599,
+    "title": "Sunset Boulevard",
+    "year": 1950,
+    "theme": "Film Noir",
+    "themePage": "film-noir",
+    "streaming_data": "fuboTV, MGM Plus Roku Premium Channel, MGM Plus, Philo",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 539,
+    "title": "Psycho",
+    "year": 1960,
+    "theme": "Horror & Suspense",
+    "themePage": "horror-suspense",
+    "streaming_data": "TCM",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 948,
+    "title": "Halloween",
+    "year": 1978,
+    "theme": "Horror & Suspense",
+    "themePage": "horror-suspense",
+    "streaming_data": "fuboTV, AMC Plus Apple TV Channel , AMC+, Philo, Shudder, IndieFlix, Cultpix, Shudder Apple TV Channel, Plex, Plex Channel, Fawesome",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 10331,
+    "title": "Night of the Living Dead",
+    "year": 1968,
+    "theme": "Horror & Suspense",
+    "themePage": "horror-suspense",
+    "streaming_data": "fuboTV, HBO Max, Peacock Premium, Starz Apple TV Channel, Youtube TV, Starz, Criterion Channel, MGM Plus, Philo, Screambox, Night Flight Plus, Shudder, FlixFling, Cultpix, Shudder Apple TV Channel, Peacock Premium Plus, Kanopy, JustWatchTV, FlixHouse, Plex, Plex Channel, Darkroom, Public Domain Movies, Fawesome",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 805,
+    "title": "Rosemary's Baby",
+    "year": 1968,
+    "theme": "Horror & Suspense",
+    "themePage": "horror-suspense",
+    "streaming_data": "fuboTV, Paramount+, Paramount+ Roku Premium Channel, Kanopy, Hoopla",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 3082,
+    "title": "Modern Times",
+    "year": 1936,
+    "theme": "Comedy Through Time",
+    "themePage": "comedy-through-time",
+    "streaming_data": "Amazon Prime, HBO Max, Youtube TV, Criterion Channel, Amazon Prime Video with Ads, Kanopy",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 239,
+    "title": "Some Like It Hot",
+    "year": 1959,
+    "theme": "Comedy Through Time",
+    "themePage": "comedy-through-time",
+    "streaming_data": "Amazon Prime, Youtube TV, Amazon Prime Video with Ads, Kanopy, Hoopla",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 703,
+    "title": "Annie Hall",
+    "year": 1977,
+    "theme": "Comedy Through Time",
+    "themePage": "comedy-through-time",
+    "streaming_data": "fuboTV, MGM Plus Roku Premium Channel, MGM Plus, Philo, Hoopla, Fawesome",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 19,
+    "title": "Metropolis",
+    "year": 1927,
+    "theme": "Sci-Fi Evolution",
+    "themePage": "sci-fi-evolution",
+    "streaming_data": "fuboTV, FlixFling, Eternal Family, Kino Film Collection, Kanopy, JustWatchTV, Plex, Plex Channel, Darkroom, Fawesome",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 62,
+    "title": "2001: A Space Odyssey",
+    "year": 1968,
+    "theme": "Sci-Fi Evolution",
+    "themePage": "sci-fi-evolution",
+    "streaming_data": "HBO Max, Cinemax, Cinemax Apple TV Channel",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 329865,
+    "title": "Arrival",
+    "year": 2016,
+    "theme": "Sci-Fi Evolution",
+    "themePage": "sci-fi-evolution",
+    "streaming_data": "Kanopy, Hoopla",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 346,
+    "title": "Seven Samurai",
+    "year": 1954,
+    "theme": "Action & Adventure",
+    "themePage": "action-adventure",
+    "streaming_data": "HBO Max, Criterion Channel",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 85,
+    "title": "Raiders of the Lost Ark",
+    "year": 1981,
+    "theme": "Action & Adventure",
+    "themePage": "action-adventure",
+    "streaming_data": "Disney+, fuboTV, Paramount+, Paramount+ Roku Premium Channel",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 280,
+    "title": "Terminator 2: Judgment Day",
+    "year": 1991,
+    "theme": "Action & Adventure",
+    "themePage": "action-adventure",
+    "streaming_data": "Paramount+, Paramount+ Roku Premium Channel, Kanopy, Hoopla",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 76341,
+    "title": "Mad Max: Fury Road",
+    "year": 2015,
+    "theme": "Action & Adventure",
+    "themePage": "action-adventure",
+    "streaming_data": "Netflix, Netflix Standard with Ads",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 770,
+    "title": "Gone with the Wind",
+    "year": 1939,
+    "theme": "Romance Through Decades",
+    "themePage": "romance-through-decades",
+    "streaming_data": "HBO Max, Cinemax, Cinemax Apple TV Channel, FlixHouse",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 289,
+    "title": "Casablanca",
+    "year": 1943,
+    "theme": "Romance Through Decades",
+    "themePage": "romance-through-decades",
+    "streaming_data": "HBO Max, Cinemax, Cinemax Apple TV Channel",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 2493,
+    "title": "The Princess Bride",
+    "year": 1987,
+    "theme": "Romance Through Decades",
+    "themePage": "romance-through-decades",
+    "streaming_data": "Disney+, AMC Plus Apple TV Channel , AMC+ Roku Premium Channel, AMC+, Philo, BBC America",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 238,
+    "title": "The Godfather",
+    "year": 1972,
+    "theme": "Drama & Human Condition",
+    "themePage": "drama-human-condition",
+    "streaming_data": "fuboTV, Paramount+, Paramount+ Roku Premium Channel, MGM Plus, Hoopla",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 389,
+    "title": "12 Angry Men",
+    "year": 1957,
+    "theme": "Drama & Human Condition",
+    "themePage": "drama-human-condition",
+    "streaming_data": "Amazon Prime, MGM Plus Roku Premium Channel, MGM Plus, Amazon Prime Video with Ads, Kanopy, Hoopla",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 3114,
+    "title": "The Searchers",
+    "year": 1956,
+    "theme": "Western Frontier",
+    "themePage": "western-frontier",
+    "streaming_data": "Youtube TV, Fawesome",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 288,
+    "title": "High Noon",
+    "year": 1952,
+    "theme": "Western Frontier",
+    "themePage": "western-frontier",
+    "streaming_data": "fuboTV, MGM Plus Roku Premium Channel, MGM Plus",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 11697,
+    "title": "The Man Who Shot Liberty Valance",
+    "year": 1962,
+    "theme": "Western Frontier",
+    "themePage": "western-frontier",
+    "streaming_data": "fuboTV, MGM Plus Roku Premium Channel, MGM Plus, Philo, Fawesome",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 642,
+    "title": "Butch Cassidy and the Sundance Kid",
+    "year": 1969,
+    "theme": "Western Frontier",
+    "themePage": "western-frontier",
+    "streaming_data": "History Vault",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 408,
+    "title": "Snow White and the Seven Dwarfs",
+    "year": 1937,
+    "theme": "Animation as Art",
+    "themePage": "animation-art",
+    "streaming_data": "Disney+",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 149,
+    "title": "Akira",
+    "year": 1988,
+    "theme": "Animation as Art",
+    "themePage": "animation-art",
+    "streaming_data": "Crunchyroll",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 10020,
+    "title": "Beauty and the Beast",
+    "year": 1991,
+    "theme": "Animation as Art",
+    "themePage": "animation-art",
+    "streaming_data": "Disney+",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 862,
+    "title": "Toy Story",
+    "year": 1995,
+    "theme": "Animation as Art",
+    "themePage": "animation-art",
+    "streaming_data": "Disney+",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 129,
+    "title": "Spirited Away",
+    "year": 2001,
+    "theme": "Animation as Art",
+    "themePage": "animation-art",
+    "streaming_data": "HBO Max",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 422,
+    "title": "8½",
+    "year": 1963,
+    "theme": "World Cinema",
+    "themePage": "world-cinema",
+    "streaming_data": "HBO Max, Criterion Channel, Kanopy",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 776,
+    "title": "The Rules of the Game",
+    "year": 1939,
+    "theme": "World Cinema",
+    "themePage": "world-cinema",
+    "streaming_data": "Criterion Channel, Kanopy",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 18148,
+    "title": "Tokyo Story",
+    "year": 1953,
+    "theme": "World Cinema",
+    "themePage": "world-cinema",
+    "streaming_data": "HBO Max, Criterion Channel, Kanopy, Plex, Plex Channel, Fawesome",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 5156,
+    "title": "Bicycle Thieves",
+    "year": 1948,
+    "theme": "World Cinema",
+    "themePage": "world-cinema",
+    "streaming_data": "Amazon Prime, HBO Max, Criterion Channel, Amazon Prime Video with Ads, Kanopy",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 797,
+    "title": "Persona",
+    "year": 1966,
+    "theme": "World Cinema",
+    "themePage": "world-cinema",
+    "streaming_data": "HBO Max, Criterion Channel, Darkroom",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 269,
+    "title": "Breathless",
+    "year": 1960,
+    "theme": "Avant-garde Film",
+    "themePage": "avant-garde-film",
+    "streaming_data": "HBO Max, Criterion Channel, Kanopy, Darkroom",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 147,
+    "title": "The 400 Blows",
+    "year": 1959,
+    "theme": "Avant-garde Film",
+    "themePage": "avant-garde-film",
+    "streaming_data": "HBO Max, Criterion Channel, Kanopy",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 5165,
+    "title": "L'Avventura",
+    "year": 1960,
+    "theme": "Avant-garde Film",
+    "themePage": "avant-garde-film",
+    "streaming_data": "HBO Max, Criterion Channel, Darkroom",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 797,
+    "title": "Persona",
+    "year": 1966,
+    "theme": "Avant-garde Film",
+    "themePage": "avant-garde-film",
+    "streaming_data": "HBO Max, Criterion Channel, Darkroom",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 391713,
+    "title": "Lady Bird",
+    "year": 2017,
+    "theme": "Women Directors",
+    "themePage": "women-directors",
+    "streaming_data": "Cinemax, Cinemax Apple TV Channel, Plex Channel",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 12162,
+    "title": "The Hurt Locker",
+    "year": 2008,
+    "theme": "Women Directors",
+    "themePage": "women-directors",
+    "streaming_data": "Starz Apple TV Channel, Starz Roku Premium Channel, Starz, Philo, Plex Channel",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 680,
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "theme": "Acclaimed Directors",
+    "themePage": "acclaimed-directors",
+    "streaming_data": "Amazon Prime, fuboTV, Paramount+, Paramount+ Roku Premium Channel, Amazon Prime Video with Ads",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 155,
+    "title": "The Dark Knight",
+    "year": 2008,
+    "theme": "Acclaimed Directors",
+    "themePage": "acclaimed-directors",
+    "streaming_data": "HBO Max",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 769,
+    "title": "Goodfellas",
+    "year": 1990,
+    "theme": "Acclaimed Directors",
+    "themePage": "acclaimed-directors",
+    "streaming_data": "Youtube TV, AMC",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 7345,
+    "title": "There Will Be Blood",
+    "year": 2007,
+    "theme": "Acclaimed Directors",
+    "themePage": "acclaimed-directors",
+    "streaming_data": "fuboTV, Paramount+, Paramount+ Roku Premium Channel, Kanopy, Hoopla",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 62,
+    "title": "2001: A Space Odyssey",
+    "year": 1968,
+    "theme": "The Magic of Moviemaking",
+    "themePage": "magic-of-moviemaking",
+    "streaming_data": "HBO Max, Cinemax, Cinemax Apple TV Channel",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 28,
+    "title": "Apocalypse Now",
+    "year": 1979,
+    "theme": "The Magic of Moviemaking",
+    "themePage": "magic-of-moviemaking",
+    "streaming_data": "Plex Channel",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 872,
+    "title": "Singin' in the Rain",
+    "year": 1952,
+    "theme": "Cinema Through the Decades",
+    "themePage": "cinema-through-decades",
+    "streaming_data": "HBO Max, Cinemax, Cinemax Apple TV Channel",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 238,
+    "title": "The Godfather",
+    "year": 1972,
+    "theme": "Cinema Through the Decades",
+    "themePage": "cinema-through-decades",
+    "streaming_data": "fuboTV, Paramount+, Paramount+ Roku Premium Channel, MGM Plus, Hoopla",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 85,
+    "title": "Raiders of the Lost Ark",
+    "year": 1981,
+    "theme": "Cinema Through the Decades",
+    "themePage": "cinema-through-decades",
+    "streaming_data": "Disney+, fuboTV, Paramount+, Paramount+ Roku Premium Channel",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 680,
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "theme": "Cinema Through the Decades",
+    "themePage": "cinema-through-decades",
+    "streaming_data": "Amazon Prime, fuboTV, Paramount+, Paramount+ Roku Premium Channel, Amazon Prime Video with Ads",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 496243,
+    "title": "Parasite",
+    "year": 2019,
+    "theme": "Cinema Through the Decades",
+    "themePage": "cinema-through-decades",
+    "streaming_data": "Netflix, HBO Max, Netflix Standard with Ads, Kanopy",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 770,
+    "title": "Gone with the Wind",
+    "year": 1939,
+    "theme": "Cinema Cultural Impact",
+    "themePage": "cinema-cultural-impact",
+    "streaming_data": "HBO Max, Cinemax, Cinemax Apple TV Channel, FlixHouse",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 11,
+    "title": "Star Wars",
+    "year": 1977,
+    "theme": "Cinema Cultural Impact",
+    "themePage": "cinema-cultural-impact",
+    "streaming_data": "Disney+",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  },
+  {
+    "tmdbId": 284054,
+    "title": "Black Panther",
+    "year": 2018,
+    "theme": "Cinema Cultural Impact",
+    "themePage": "cinema-cultural-impact",
+    "streaming_data": "Disney+, Youtube TV",
+    "poster": "https://image.tmdb.org/t/p/w500/poster_placeholder.jpg"
+  }
+]
