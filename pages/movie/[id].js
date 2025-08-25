@@ -6,6 +6,7 @@ import MovieHeaderLarge from '../../components/MovieHeaderLarge';
 import SimpleSearch from '../../components/SimpleSearch';
 import MovieCreativeFooter from '../../components/MovieCreativeFooter';
 import MovieAnalysisWithEntities from '../../components/MovieAnalysisWithEntities';
+import StreamingAvailabilityLink from '../../components/StreamingAvailabilityLink';
 import ErrorBoundary from '../../components/ErrorBoundary';
 import PerformanceDashboard from '../../components/PerformanceDashboard';
 import { getPerformanceMonitor } from '../../lib/performance-monitor';
@@ -325,6 +326,11 @@ export default function MovieDetailPage() {
                 tmdbId={parseInt(finalMovieId)}
               />
             </div>
+          </ErrorBoundary>
+
+          {/* Streaming Availability */}
+          <ErrorBoundary level="section">
+            <StreamingAvailabilityLink tmdbId={parseInt(finalMovieId)} />
           </ErrorBoundary>
 
           {/* Movie Analysis - Enhanced error boundary for analysis rendering issues */}
