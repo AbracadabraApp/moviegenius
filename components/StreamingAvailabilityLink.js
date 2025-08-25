@@ -61,7 +61,7 @@ export default function StreamingAvailabilityLink({ tmdbId }) {
     <>
       <div className="streaming-availability-container">
         <span className="streaming-availability-text">
-          <strong className="movie-title">{streamingData.title}</strong> ({streamingData.year}): streaming on {displayPlatforms.join(', ')}
+          <strong className="movie-title-plain">{streamingData.title}</strong> ({streamingData.year}): streaming on {displayPlatforms.join(', ')}
           {hasMore && !expanded && (
             <>
               , and <span className="expand-link" onClick={() => setExpanded(true)}>
@@ -86,21 +86,27 @@ export default function StreamingAvailabilityLink({ tmdbId }) {
           font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         }
         
-        .movie-title {
+        .movie-title-plain {
           font-weight: 600;
+          color: inherit;
         }
         
         .expand-link {
-          color: #007AFF;
+          color: #374151;
           font-size: 14px;
           font-weight: 500;
           cursor: pointer;
           text-decoration: underline;
+          text-decoration-color: #d4af37;
+          text-decoration-thickness: 1px;
+          text-underline-offset: 2px;
           font-family: inherit;
+          transition: all 0.2s ease;
         }
         
         .expand-link:hover {
-          color: #0056b3;
+          text-decoration-color: #b8941f;
+          color: #374151;
         }
       `}</style>
     </>

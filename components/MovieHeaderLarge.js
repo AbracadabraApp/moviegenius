@@ -315,16 +315,6 @@ export default function MovieHeaderLarge({
       </div>
       
       
-      {/* Streaming availability - only show if we have valid data (not TBD placeholder) 
-          TBD = placeholder when TMDB/Claude APIs haven't provided streaming data yet */}
-      {initialStreaming && initialStreaming.length > 0 && initialStreaming !== 'TBD' && (
-        <div style={styles.streamingInfo}>
-          <span style={styles.streamingText}>
-            {`Streaming on ${initialStreaming}`}
-          </span>
-          {/* TODO: Add data freshness indicator - track when streaming data was last updated */}
-        </div>
-      )}
       
       {/* YouTube Trailer Modal */}
       {showTrailer && trailerVideoId && (
@@ -436,17 +426,6 @@ const styles = {
     textAlign: 'center',
     maxWidth: '100%',
   },
-  streamingInfo: {
-    width: '100%',
-    textAlign: 'center',
-    marginBottom: '8px',
-    marginTop: '-2px',
-    paddingLeft: '0px',
-  },
-  streamingText: {
-    fontSize: '14px',
-    color: '#6b7280',
-    fontWeight: '300',
     fontFamily: 'inherit',
     wordWrap: 'break-word',
     lineHeight: '1.3',
