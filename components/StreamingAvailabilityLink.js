@@ -61,10 +61,10 @@ export default function StreamingAvailabilityLink({ tmdbId }) {
     <>
       <div className="streaming-availability-container">
         <span className="streaming-availability-text">
-          <strong className="movie-title-plain">{streamingData.title}</strong> <span className="year-and-streaming">({streamingData.year}): streaming on {displayPlatforms.join(', ')}</span>
+          <strong className="movie-title-plain">{streamingData.title}</strong> <span className="year-plain">({streamingData.year}):</span> <span className="streaming-text">streaming on {displayPlatforms.join(', ')}</span>
           {hasMore && !expanded && (
             <>
-              <span className="year-and-streaming">, and</span> <span className="expand-link" onClick={() => setExpanded(true)}>
+              <span className="streaming-text">, and</span> <span className="expand-link" onClick={() => setExpanded(true)}>
                 {moreCount} more
               </span>
             </>
@@ -91,7 +91,12 @@ export default function StreamingAvailabilityLink({ tmdbId }) {
           color: inherit;
         }
         
-        .year-and-streaming {
+        .year-plain {
+          color: #374151;
+          font-weight: normal;
+        }
+        
+        .streaming-text {
           color: #6b7280;
         }
         
