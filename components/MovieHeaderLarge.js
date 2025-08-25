@@ -426,10 +426,6 @@ const styles = {
     textAlign: 'center',
     maxWidth: '100%',
   },
-    fontFamily: 'inherit',
-    wordWrap: 'break-word',
-    lineHeight: '1.3',
-  },
   addedAnimation: {
     position: 'absolute',
     top: '50%',
