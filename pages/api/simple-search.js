@@ -73,30 +73,13 @@ export default async function handler(req, res) {
             contributorsMap[row.tmdb_id] = row.contributors_json;
           });
 
-          // Use your template approach for contributors
-          const getDisplayContributors = (contributors_json) => {
-            if (!contributors_json) return null;
-
-            const director = contributors_json.director?.[0];
-            const topActors = contributors_json.star?.slice(0, 3) || [];
-
-            const parts = [];
-            if (topActors.length > 0) {
-              parts.push(`Starring:`);
-              parts.push(topActors.join(', '));
-            }
-            if (director) {
-              parts.push(`Director:`);
-              parts.push(director);
-            }
-            
-            return parts.length > 0 ? parts.join('\n') : null;
-          };
+          // Import shared utilities
+          const { formatContributors } = await import('../../lib/hooks/useMovieData.js');
 
           // Enrich movies with contributors
           movies = movies.map(movie => {
             const contributorsJson = contributorsMap[movie.tmdb_id];
-            const contributorText = getDisplayContributors(contributorsJson);
+            const contributorText = formatContributors(contributorsJson);
 
             return {
               ...movie,

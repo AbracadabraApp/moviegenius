@@ -13,100 +13,24 @@ export default function StreamingCarousel({ onMovieClick }) {
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [hoveredPoster, setHoveredPoster] = useState(null);
   const [slideDirection, setSlideDirection] = useState(null);
+  const [streamingShowcase, setStreamingShowcase] = useState([]);
 
-  // Featured movies with their best streaming platform
-  const streamingShowcase = [
-    {
-      tmdbId: 278,
-      title: "The Shawshank Redemption",
-      poster: "https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
-      platform: "Netflix",
-      platformBadge: "/images/streaming/netflix-badge.png",
-      platformColor: "#E50914",
-      category: "Drama Masterpieces",
-      href: "/browse/netflix-best"
-    },
-    {
-      tmdbId: 238,
-      title: "The Godfather", 
-      poster: "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
-      platform: "Amazon Prime",
-      platformBadge: "/images/streaming/prime-badge.png", 
-      platformColor: "#00A8E1",
-      category: "Crime Dramas",
-      href: "/browse/prime-best"
-    },
-    {
-      tmdbId: 424,
-      title: "Schindler's List",
-      poster: "https://image.tmdb.org/t/p/w500/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg",
-      platform: "HBO Max",
-      platformBadge: "/images/streaming/hbo-badge.png",
-      platformColor: "#9146FF", 
-      category: "Historical Dramas",
-      href: "/browse/hbo-best"
-    },
-    {
-      tmdbId: 389,
-      title: "12 Angry Men",
-      poster: "https://image.tmdb.org/t/p/w500/ow3wq89wM8qd5X7hWKxiRfsFf9C.jpg",
-      platform: "Apple TV+",
-      platformBadge: "/images/streaming/apple-badge.png",
-      platformColor: "#000000",
-      category: "Classic Dramas", 
-      href: "/browse/apple-best"
-    },
-    {
-      tmdbId: 129,
-      title: "Spirited Away",
-      poster: "https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg", 
-      platform: "Disney+",
-      platformBadge: "/images/streaming/disney-badge.png",
-      platformColor: "#113CCF",
-      category: "Animated Films",
-      href: "/browse/disney-best"
-    },
-    {
-      tmdbId: 155,
-      title: "The Dark Knight",
-      poster: "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
-      platform: "Hulu", 
-      platformBadge: "/images/streaming/hulu-badge.png",
-      platformColor: "#1CE783",
-      category: "Action Thrillers",
-      href: "/browse/hulu-best"
-    },
-    {
-      tmdbId: 72,
-      title: "The Godfather",
-      poster: "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
-      platform: "Paramount+", 
-      platformBadge: "/images/streaming/paramount-badge.png",
-      platformColor: "#0064FF",
-      category: "Crime Epics",
-      href: "/browse/paramount-best"
-    },
-    {
-      tmdbId: 11216,
-      title: "Cinema Paradiso",
-      poster: "https://image.tmdb.org/t/p/w500/8SRUfRUi6x4O68n0VCbDNRa6iGL.jpg",
-      platform: "Criterion", 
-      platformBadge: "/images/streaming/criterion-badge.png",
-      platformColor: "#000000",
-      category: "Arthouse Films",
-      href: "/browse/criterion-best"
-    },
-    {
-      tmdbId: 475557,
-      title: "Joker",
-      poster: "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
-      platform: "Peacock", 
-      platformBadge: "/images/streaming/peacock-badge.png",
-      platformColor: "#00B4D8",
-      category: "Psychological Dramas",
-      href: "/browse/peacock-best"
+  // Load curated movies from database
+  useEffect(() => {
+    loadCuratedMovies();
+  }, []);
+
+  const loadCuratedMovies = async () => {
+    try {
+      const response = await fetch('/carousel-movies.json');
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const movies = await response.json();
+      
+      setStreamingShowcase(movies);
+    } catch (error) {
+      console.error('Failed to load carousel movies:', error);
     }
-  ];
+  };
 
   // Auto-advance carousel
   useEffect(() => {
@@ -155,20 +79,23 @@ export default function StreamingCarousel({ onMovieClick }) {
   const getPrevIndex = () => (currentIndex - 1 + streamingShowcase.length) % streamingShowcase.length;
   const getNextIndex = () => (currentIndex + 1) % streamingShowcase.length;
 
-  // Calculate stable "more" count based on platform
+  // Calculate how many curated films are on this platform
   const getMoreCount = () => {
-    const baseCounts = { 
-      'Netflix': 24, 
-      'Amazon Prime': 19, 
-      'HBO Max': 16, 
-      'Apple TV+': 12, 
-      'Disney+': 28, 
-      'Hulu': 21,
-      'Paramount+': 18,
-      'Criterion': 15,
-      'Peacock': 22
-    };
-    return baseCounts[streamingShowcase[currentIndex].platform] || 20;
+    if (!streamingShowcase[currentIndex]) return 0;
+    
+    // Use totalOnPlatform field if available, minus 1 for current movie
+    if (streamingShowcase[currentIndex].totalOnPlatform) {
+      return streamingShowcase[currentIndex].totalOnPlatform - 1;
+    }
+    
+    // Fallback: count movies in current carousel data
+    const currentPlatform = streamingShowcase[currentIndex].platform;
+    const count = streamingShowcase.filter(movie => {
+      const platforms = movie.streaming_data ? movie.streaming_data.split(',').map(p => p.trim()) : [];
+      return platforms.includes(currentPlatform);
+    }).length;
+    
+    return Math.max(0, count - 1);
   };
 
   const handlePosterClick = (movie) => {
@@ -184,6 +111,11 @@ export default function StreamingCarousel({ onMovieClick }) {
     e.stopPropagation(); // Prevent poster click
     window.location.href = movie.href;
   };
+
+  // Don't render until we have movies
+  if (streamingShowcase.length === 0) {
+    return null;
+  }
 
   return (
     <div style={styles.carousel}>
@@ -223,7 +155,7 @@ export default function StreamingCarousel({ onMovieClick }) {
           <div 
             className="hint-hover"
             style={styles.leftHintContainer}
-            onClick={() => handlePosterClick(streamingShowcase[getPrevIndex()])}
+            onClick={prevSlide}
             onMouseEnter={() => setIsAutoPlaying(false)}
           >
             <div style={styles.leftHintPoster}>
@@ -255,18 +187,6 @@ export default function StreamingCarousel({ onMovieClick }) {
                 }}
               />
               
-              {/* Platform badge */}
-              <div 
-                style={{
-                  ...styles.platformBadge,
-                  backgroundColor: streamingShowcase[currentIndex].platformColor
-                }}
-                onClick={(e) => handlePlatformClick(streamingShowcase[currentIndex], e)}
-              >
-                <span style={styles.platformText}>
-                  {streamingShowcase[currentIndex].platform}
-                </span>
-              </div>
 
             </div>
           </div>
@@ -275,7 +195,7 @@ export default function StreamingCarousel({ onMovieClick }) {
           <div 
             className="hint-hover"
             style={styles.hintContainer}
-            onClick={() => handlePosterClick(streamingShowcase[getNextIndex()])}
+            onClick={nextSlide}
             onMouseEnter={() => setIsAutoPlaying(false)}
           >
             <div style={styles.hintPoster}>
@@ -293,17 +213,7 @@ export default function StreamingCarousel({ onMovieClick }) {
 
         </div>
 
-        {/* "+ X more" indicator */}
-        <div style={styles.moreIndicator}>
-          <span 
-            style={styles.moreText}
-            onClick={() => handlePlatformClick(streamingShowcase[currentIndex], { stopPropagation: () => {} })}
-          >
-            + {getMoreCount()} more {streamingShowcase[currentIndex].category} on {streamingShowcase[currentIndex].platform}
-          </span>
-        </div>
-
-        {/* Navigation bar with triangles and dots */}
+        {/* "+ X more" indicator with navigation */}
         <div style={styles.navigationBar}>
           {/* Previous triangle */}
           <button 
@@ -311,23 +221,19 @@ export default function StreamingCarousel({ onMovieClick }) {
             onClick={prevSlide}
             onMouseEnter={() => setIsAutoPlaying(false)}
           >
-            <Triangle size={12} color="#6b7280" style={{ transform: 'rotate(270deg)' }} />
+            <Triangle size={12} color="#d4af37" style={{ transform: 'rotate(270deg)' }} />
           </button>
 
-          {/* Dot indicators */}
-          <div style={styles.dotContainer}>
-            {streamingShowcase.map((_, index) => (
-              <div
-                key={index}
-                style={{
-                  ...styles.dot,
-                  backgroundColor: index === currentIndex ? '#d4af37' : '#e5e7eb',
-                  transform: index === currentIndex ? 'scale(1.2)' : 'scale(1)'
-                }}
-                onClick={() => goToSlide(index)}
-              />
-            ))}
-          </div>
+          <span style={styles.moreTextWhite}>
+            and{' '}
+            <span 
+              style={styles.moreTextGoldLink}
+              onClick={() => handlePlatformClick(streamingShowcase[currentIndex], { stopPropagation: () => {} })}
+            >
+              {getMoreCount()} more
+            </span>
+            {' '}on {streamingShowcase[currentIndex].platform}
+          </span>
 
           {/* Next triangle */}
           <button 
@@ -335,7 +241,7 @@ export default function StreamingCarousel({ onMovieClick }) {
             onClick={nextSlide}
             onMouseEnter={() => setIsAutoPlaying(false)}
           >
-            <Triangle size={12} color="#6b7280" style={{ transform: 'rotate(90deg)' }} />
+            <Triangle size={12} color="#d4af37" style={{ transform: 'rotate(90deg)' }} />
           </button>
         </div>
       </div>
@@ -346,9 +252,9 @@ export default function StreamingCarousel({ onMovieClick }) {
 const styles = {
   carousel: {
     width: '100%',
-    backgroundColor: '#ffffff',
+    background: 'linear-gradient(to bottom, #000000 0%, #374151 100%)',
     padding: '16px 0px 12px 0px',
-    borderBottom: '1px solid #f0f0f0'
+    borderBottom: 'none'
   },
 
   carouselContainer: {
@@ -512,15 +418,19 @@ const styles = {
     marginBottom: '-2px'
   },
 
-  moreText: {
-    fontSize: '14px',
-    color: '#6b7280',
+  moreTextWhite: {
+    fontSize: '16px',
+    color: '#ffffff',
     fontWeight: '500',
-    opacity: 0.8,
+    opacity: 0.9
+  },
+
+  moreTextGoldLink: {
+    color: '#d4af37',
+    textDecoration: 'underline',
     cursor: 'pointer',
     transition: 'all 0.2s ease',
     ':hover': {
-      color: '#d4af37',
       opacity: 1
     }
   },
@@ -564,5 +474,18 @@ const styles = {
     borderRadius: '50%',
     cursor: 'pointer',
     transition: 'all 0.3s ease'
+  },
+
+  loadingContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: '40px',
+    minHeight: '200px'
+  },
+
+  loadingText: {
+    fontSize: '14px',
+    color: '#6b7280'
   }
 };

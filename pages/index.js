@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import PhoneFrame from '../components/PhoneFrame';
 import SimpleSearch from '../components/SimpleSearch';
-import EssentialMoviesCarousel from '../components/EssentialMoviesCarousel';
+import StreamingCarousel from '../components/StreamingCarousel';
 import { Play, Plus, Heart, ChevronRight, Star, Book } from 'lucide-react';
 import { themeLinks } from '../lib/routes';
 
@@ -424,9 +424,9 @@ export default function HomePage() {
           </div>
         )}
 
-        {/* Essential Movies Carousel - Curated films with streaming availability */}
+        {/* Streaming Carousel - Curated films with circular side-swipe UX */}
         {!modalStep && currentStep === 'themes' && (
-          <EssentialMoviesCarousel onMovieClick={handleCarouselMovieClick} />
+          <StreamingCarousel onMovieClick={handleCarouselMovieClick} />
         )}
 
         {/* Theme Selection Section */}
@@ -1148,15 +1148,15 @@ const styles = {
 
   searchSection: {
     padding: '16px 20px 8px 20px',
-    background: 'linear-gradient(135deg, #E50914 0%, #B20610 100%)',
+    background: 'linear-gradient(135deg, #000000 0%, #000000 100%)',
     borderBottom: 'none',
   },
 
   brandStatement: {
-    background: 'linear-gradient(135deg, #E50914 0%, #B20610 100%)',
+    background: 'linear-gradient(135deg, #000000 0%, #000000 100%)',
     padding: '8px 20px 16px 20px',
     textAlign: 'center',
-    borderBottom: '1px solid #f0f0f0'
+    borderBottom: 'none'
   },
 
   brandLine1: {
@@ -1166,7 +1166,7 @@ const styles = {
     letterSpacing: '1px',
     lineHeight: '1.2',
     marginBottom: '2px',
-    textShadow: '2px 2px 4px rgba(0,0,0,0.8)'
+    textShadow: '0 0 15px #d4af37, 0 0 30px #d4af37, 2px 2px 8px rgba(0,0,0,1)'
   },
 
   brandLine2: {
@@ -1191,7 +1191,7 @@ const styles = {
     lineHeight: '1.2',
     marginBottom: '2px',
     textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 0 1px rgba(0,0,0,0.5)',
-    WebkitTextStroke: '0.5px rgba(0,0,0,0.3)'
+    WebkitTextStroke: '0.5px #d4af37'
   },
 
   brandLine2Gold: {

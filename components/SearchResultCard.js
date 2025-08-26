@@ -149,14 +149,14 @@ export default function SearchResultCard({
             <span style={styles.year}>({year})</span>
           </div>
           
-          {/* Slug back in Row 1 under title/year */}
+          {/* Slug/tagline section */}
           {initialSlug && (
             <div style={styles.slugSection}>
               <p style={styles.slug}>{initialSlug}</p>
             </div>
           )}
           
-          {/* Contributors - show when we have slug OR when we have contributors but no slug */}
+          {/* Contributors section */}
           {contributors && (
             <div style={styles.contributorsSection}>
               <div style={styles.contributors}>
@@ -299,26 +299,6 @@ export default function SearchResultCard({
         </button>
       </div>
 
-      {/* ROW 4: Overview (only when no slug) */}
-      {!initialSlug && overview && (
-        <div style={styles.overviewRowLast}>
-          <p style={{
-            ...styles.description,
-            ...(isDescriptionExpanded ? {} : styles.descriptionTruncated)
-          }}>
-            {overview}
-          </p>
-          {overview.length > 280 && (
-            <button
-              onClick={handleDescriptionToggle}
-              style={styles.expandButton}
-              aria-label={isDescriptionExpanded ? 'Show less' : 'Show more'}
-            >
-              {isDescriptionExpanded ? 'Show less' : 'Show more'}
-            </button>
-          )}
-        </div>
-      )}
     </div>
   );
 }
@@ -332,12 +312,12 @@ const styles = {
     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.20)',
     padding: '12px',
     backgroundColor: 'white',
-    width: '100%',
-    maxWidth: '100%',
+    width: 'calc(100% - 14px)',
+    maxWidth: 'calc(100% - 14px)',
     boxSizing: 'border-box',
     transition: 'box-shadow 0.15s ease, transform 0.1s ease',
     cursor: 'pointer',
-    marginBottom: '8px',
+    margin: '0 7px 8px 7px',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     textDecoration: 'none',
     color: 'inherit',
@@ -371,32 +351,36 @@ const styles = {
 
   titleRow: {
     display: 'flex',
-    flexWrap: 'wrap',
     alignItems: 'baseline',
+    marginBottom: '4px',
     gap: '6px',
-    marginBottom: '6px',
   },
 
   title: {
-    fontSize: '18px',
-    fontWeight: '600',
-    lineHeight: '1.2',
+    fontSize: '16px', // Standardized at 16px for titles
+    fontWeight: '700',
+    color: '#1f2937',
     fontFamily: 'inherit',
-    color: '#000',
     margin: 0,
+    flex: 1,
+    lineHeight: '1.25', // Better line height for titles
+    minWidth: 0, // Allows text to wrap if needed
+    wordWrap: 'break-word',
   },
 
   year: {
-    fontSize: '16px',
-    color: '#666',
+    fontSize: '14px', // Reduced from 16px
+    color: '#6b7280',
     fontWeight: '500',
     fontFamily: 'inherit',
+    margin: 0,
     flexShrink: 0,
     whiteSpace: 'nowrap', // Keep (XXXX) together
   },
 
   slugSection: {
-    marginTop: '6px',
+    marginTop: '2px',
+    marginBottom: '20px',
   },
 
   slug: {
@@ -416,41 +400,86 @@ const styles = {
   },
 
   contributorsSection: {
-    marginTop: '25px', // White space above contributors
+    marginTop: '8px', // Reduced white space above contributors
   },
 
   contributors: {
     fontSize: '14px', // Back to 14px for names
     fontFamily: 'inherit',
     margin: 0,
-    lineHeight: '1.3',
-    // Remove maxHeight to show all contributors without cutoff
+    lineHeight: '1.4',
   },
 
   contributorLine: {
     marginBottom: '4px',
-    lineHeight: '1.2', // Tighter line height to prevent awkward wrapping
   },
 
   contributorLabel: {
+    fontSize: '13px', // Slight smaller for labels
     color: '#6b7280',
-    fontFamily: 'inherit',
-    fontSize: '13px', // 1px smaller for labels only
+    fontWeight: '500',
   },
 
   contributorNames: {
-    color: '#000000', // Black instead of gray for names
-    fontFamily: 'inherit',
-    textDecoration: 'underline',
-    textDecorationColor: '#D4AF37', // Gold underline like trailer
-    textUnderlineOffset: '2px',
-    textDecorationThickness: '1px',
+    fontSize: '13px', // Match label size
+    color: '#374151',
+    fontWeight: '500',
   },
 
+  // Streaming info styling
+  streamingRowLeft: {
+    marginTop: '8px',
+  },
+
+  streamingText: {
+    fontSize: '12px',
+    color: '#059669',
+    fontWeight: '600',
+    backgroundColor: '#ecfdf5',
+    padding: '3px 8px',
+    borderRadius: '12px',
+    display: 'inline-block',
+  },
+
+  // Action button row - aligned right
+  actionRow: {
+    display: 'flex',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    marginTop: 'auto',
+    paddingTop: '8px',
+    gap: '12px',
+  },
+
+  actionButton: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '4px',
+    backgroundColor: 'transparent',
+    border: 'none',
+    cursor: 'pointer',
+    padding: '4px 0',
+    fontSize: '12px',
+    fontWeight: '500',
+    color: '#6b7280',
+    transition: 'color 0.15s ease',
+  },
+
+  actionLabel: {
+    fontSize: '12px',
+    fontWeight: '500',
+  },
+
+  trailerLabel: {
+    color: '#D4AF37',
+    fontSize: '12px',
+    fontWeight: '500',
+  },
+
+  // Description/Overview styling
   description: {
     fontSize: '14px',
-    color: '#333',
-    marginTop: '4px',
+    color: '#4b5563',
     fontFamily: 'inherit',
     margin: 0,
     lineHeight: '1.4',
@@ -458,28 +487,20 @@ const styles = {
 
   descriptionTruncated: {
     display: '-webkit-box',
-    WebkitLineClamp: 5, // Show 5 lines
+    WebkitLineClamp: 6,
     WebkitBoxOrient: 'vertical',
     overflow: 'hidden',
-    textOverflow: 'ellipsis',
   },
 
   expandButton: {
-    background: 'none',
+    backgroundColor: 'transparent',
     border: 'none',
-    color: '#6b7280',
+    color: '#3b82f6',
+    cursor: 'pointer',
     fontSize: '12px',
     fontWeight: '500',
-    cursor: 'pointer',
-    padding: '4px 0',
     marginTop: '4px',
-    textDecoration: 'underline',
-    fontFamily: 'inherit',
-  },
-
-  // ROW 3: Content sections
-  curatedContentRow: {
-    marginBottom: '8px',
+    padding: 0,
   },
 
   overviewRow: {
@@ -491,65 +512,11 @@ const styles = {
   },
 
   contributorsSectionBelowSlug: {
-    marginTop: '12px',
+    marginTop: '12px', // Different spacing when below slug
   },
 
-  // ROW 2: Streaming info - left aligned
-  streamingRowLeft: {
-    display: 'flex',
-    justifyContent: 'flex-start', // Left-aligned
-    marginBottom: '6px',
-  },
-
-  streamingText: {
-    fontSize: '13px', // Bump up slightly for better readability
-    color: '#6b7280',
-    fontWeight: '400',
-    fontFamily: 'inherit',
-    lineHeight: '1.3',
-  },
-
-  // ROW 3: Action buttons - right aligned
-  actionRow: {
-    display: 'flex',
-    justifyContent: 'flex-end', // Right-aligned like approved layout
-    gap: '4px',
-    alignItems: 'center',
-  },
-
-  actionButton: {
-    background: 'none',
-    border: 'none',
-    cursor: 'pointer',
-    padding: '4px 6px',
-    borderRadius: '6px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    transition: 'all 0.2s ease',
-    minHeight: '32px',
-    gap: '4px',
-  },
-
-  actionLabel: {
-    fontSize: '16px', // Larger font
-    fontFamily: 'inherit',
-    lineHeight: '1',
-    letterSpacing: '0.3px',
-    fontWeight: '600', // Bold
-    color: '#6b7280', // Gray color
-  },
-
-  trailerLabel: {
-    fontSize: '16px', // Larger font to match
-    fontFamily: 'inherit',
-    lineHeight: '1',
-    letterSpacing: '0.3px',
-    fontWeight: '600', // Bold to match
-    color: '#6b7280', // Gray color to match
-    textDecoration: 'underline',
-    textDecorationColor: '#D4AF37', // Gold underline
-    textUnderlineOffset: '2px',
-    textDecorationThickness: '2px',
+  // Improved spacing for contributor text that's below overview
+  contributorsBottomLeft: {
+    marginTop: '6px',
   },
 };
