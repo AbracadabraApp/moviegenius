@@ -319,11 +319,15 @@ export default function EssentialMoviesCarousel({ onMovieClick }) {
   const handlePrevious = () => {
     setIsAutoPlaying(false);
     setCurrentIndex((prev) => (prev - 1 + randomizedMovies.length) % randomizedMovies.length);
+    // Resume auto-play after 10 seconds
+    setTimeout(() => setIsAutoPlaying(true), 10000);
   };
 
   const handleNext = () => {
     setIsAutoPlaying(false);
     setCurrentIndex((prev) => (prev + 1) % randomizedMovies.length);
+    // Resume auto-play after 10 seconds
+    setTimeout(() => setIsAutoPlaying(true), 10000);
   };
 
   const handleMovieClick = (movie) => {
@@ -345,6 +349,23 @@ export default function EssentialMoviesCarousel({ onMovieClick }) {
 
   return (
     <div style={styles.carouselContainer}>
+      <style jsx>{`
+        .nav-button:hover {
+          background-color: rgba(0,0,0,0.7) !important;
+          transform: scale(1.1) !important;
+        }
+        .nav-button:active {
+          transform: scale(0.95) !important;
+        }
+        .movie-poster:hover {
+          transform: scale(1.02) !important;
+          box-shadow: 0 12px 32px rgba(0,0,0,0.6) !important;
+        }
+        .indicator-button:hover {
+          background-color: #d4af37 !important;
+          transform: scale(1.2) !important;
+        }
+      `}</style>
       <div style={styles.carouselHeader}>
         <div style={styles.sectionDivider} />
         <span style={styles.sectionTitle}>ESSENTIAL FILMS TO STREAM</span>
@@ -352,7 +373,13 @@ export default function EssentialMoviesCarousel({ onMovieClick }) {
       </div>
 
       <div style={styles.carousel}>
-        <button onClick={handlePrevious} style={styles.navButton}>
+        <button 
+          onClick={handlePrevious} 
+          style={styles.navButton}
+          className="nav-button"
+          aria-label="Previous movie"
+          title="Previous movie"
+        >
           <ChevronLeft size={20} color="#ffffff" />
         </button>
 
@@ -370,7 +397,7 @@ export default function EssentialMoviesCarousel({ onMovieClick }) {
               onMouseLeave={() => setHoveredPoster(null)}
               onClick={() => handleMovieClick(movie)}
             >
-              <div style={styles.posterContainer}>
+              <div style={styles.posterContainer} className="movie-poster">
                 <img
                   src={movie.poster}
                   alt={`${movie.title} poster`}
@@ -413,7 +440,13 @@ export default function EssentialMoviesCarousel({ onMovieClick }) {
           ))}
         </div>
 
-        <button onClick={handleNext} style={styles.navButton}>
+        <button 
+          onClick={handleNext} 
+          style={styles.navButton}
+          className="nav-button"
+          aria-label="Next movie"
+          title="Next movie"
+        >
           <ChevronRight size={20} color="#ffffff" />
         </button>
       </div>
@@ -422,6 +455,7 @@ export default function EssentialMoviesCarousel({ onMovieClick }) {
         {randomizedMovies.slice(0, 10).map((_, index) => (
           <button
             key={index}
+            className="indicator-button"
             style={{
               ...styles.indicator,
               backgroundColor: index === (currentIndex % 10) ? '#d4af37' : 'rgba(255,255,255,0.3)'
@@ -429,7 +463,10 @@ export default function EssentialMoviesCarousel({ onMovieClick }) {
             onClick={() => {
               setCurrentIndex(index);
               setIsAutoPlaying(false);
+              // Resume auto-play after 10 seconds
+              setTimeout(() => setIsAutoPlaying(true), 10000);
             }}
+            aria-label={`Go to movie ${index + 1}`}
           />
         ))}
       </div>
@@ -449,7 +486,7 @@ const styles = {
   
   carouselContainer: {
     padding: '20px 0',
-    backgroundColor: 'linear-gradient(135deg, #1a1a1a 0%, #2d3748 100%)',
+    background: 'linear-gradient(135deg, #1a1a1a 0%, #2d3748 100%)',
     borderRadius: '0px',
     margin: '0px -20px 20px -20px'
   },
@@ -458,7 +495,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     marginBottom: '20px',
-    paddingHorizontal: '20px',
+    padding: '0 20px',
     gap: '12px',
   },
 
@@ -475,7 +512,7 @@ const styles = {
     letterSpacing: '1px',
     color: '#d4af37',
     textAlign: 'center',
-    paddingHorizontal: '12px'
+    padding: '0 12px'
   },
 
   carousel: {
@@ -483,7 +520,7 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     gap: '16px',
-    paddingHorizontal: '20px'
+    padding: '0 20px'
   },
 
   navButton: {
@@ -606,7 +643,7 @@ const styles = {
     justifyContent: 'center',
     gap: '6px',
     marginTop: '16px',
-    paddingHorizontal: '20px'
+    padding: '0 20px'
   },
 
   indicator: {

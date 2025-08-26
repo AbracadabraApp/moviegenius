@@ -41,6 +41,7 @@ export default function MovieDetailPage() {
   const [streaming, setStreaming] = useState(null);
   const [analysis, setAnalysis] = useState(null);
   const [error, setError] = useState(null);
+  const [browseCollections, setBrowseCollections] = useState(null);
 
   // API data fetching
   useEffect(() => {
@@ -78,12 +79,15 @@ export default function MovieDetailPage() {
         
         // TIER 1: Try enhanced static file first (future enhanced format) - CLIENT-SIDE ONLY
         if (typeof window !== 'undefined') {
+          
           try {
-            const enhancedUrl = `/data/production/movie_${finalMovieId}.json`;
+            const enhancedUrl = `/data/enhanced-movies/movie-${finalMovieId}.json`;
             console.log('🔍 Attempting enhanced static fetch (client-side):', enhancedUrl);
             const enhancedResponse = await fetch(enhancedUrl);
+            
             if (enhancedResponse.ok) {
               const enhancedData = await enhancedResponse.json();
+              
               if (enhancedData.enhancedFormat && enhancedData.analysis) {
                 console.log('⚡ TIER 1: Using enhanced static file - zero API calls');
                 console.info(`🏆 Enhanced static serving SUCCESS for movie ${finalMovieId}`);
@@ -91,7 +95,7 @@ export default function MovieDetailPage() {
                 // Enhanced format has pre-resolved data - convert to expected format  
                 const processedSections = enhancedData.analysis.sections.map(section => ({
                   type: section.type,
-                  text: section.content // Component expects 'text' field, not 'content'
+                  text: section.text // Component expects 'text' field, enhanced file has 'text'
                 }));
                 
                 const componentCompatibleFormat = {
@@ -116,19 +120,32 @@ export default function MovieDetailPage() {
                 };
                 
                 // Update streaming and movie data from enhanced static
-                if (enhancedData.movieHeader.streaming) {
+                if (enhancedData.movieHeader?.streaming) {
                   setStreaming(enhancedData.movieHeader.streaming);
                 }
                 
                 // Update movie object to include staticData flag and keyElements for footer
                 setMovie({
                   ...tmdbData,
-                  staticData: true,
-                  keyElements: enhancedData.keyElements
+                  staticData: enhancedData,
+                  keyElements: enhancedData.analysis?.keyElements
                 });
                 
                 setAnalysis(formattedAnalysis);
                 analysisData = formattedAnalysis;
+                
+                // Simple browse collections fetch for enhanced static
+                console.log('🔍 Fetching browse collections for movie:', finalMovieId);
+                fetch(`/data/movie-lists/movie-${finalMovieId}.json`)
+                  .then(res => {
+                    console.log('📦 Browse fetch response:', res.status);
+                    return res.ok ? res.json() : null;
+                  })
+                  .then(data => {
+                    console.log('📋 Browse data loaded:', data?.lists?.length, 'collections');
+                    setBrowseCollections(data);
+                  })
+                  .catch(() => setBrowseCollections(null));
               }
             }
           } catch (enhancedError) {
@@ -201,6 +218,20 @@ export default function MovieDetailPage() {
             };
             
             setAnalysis(formattedAnalysis);
+            
+            // Simple browse collections fetch
+            console.log('🔍 Fetching browse collections for movie:', finalMovieId);
+            fetch(`/data/movie-lists/movie-${finalMovieId}.json`)
+              .then(res => {
+                console.log('📦 Browse fetch response:', res.status);
+                return res.ok ? res.json() : null;
+              })
+              .then(data => {
+                console.log('📋 Browse data loaded:', data?.lists?.length, 'collections');
+                setBrowseCollections(data);
+              })
+              .catch(() => setBrowseCollections(null));
+              
           } else {
             console.error('❌ Analysis API failed:', analysisResponse.status, analysisResponse.statusText);
             setAnalysis(null);
@@ -343,6 +374,55 @@ export default function MovieDetailPage() {
               movie={movie}
             />
           </ErrorBoundary>
+
+          {/* Browse Collections - Simple inline */}
+          {browseCollections && browseCollections.lists && (
+            <div style={{ margin: '32px 0', paddingLeft: '16px' }}>
+              <h3 style={{ 
+                fontFamily: 'system-ui, -apple-system, sans-serif',
+                fontSize: '18px',
+                fontWeight: '600',
+                marginBottom: '16px',
+                color: '#374151'
+              }}>Featured In Collections</h3>
+              <ul style={{
+                listStyle: 'none',
+                padding: '0',
+                margin: '0'
+              }}>
+                {browseCollections.lists.map((collection, index) => (
+                  <li key={index} style={{
+                    display: 'flex',
+                    alignItems: 'flex-start',
+                    marginBottom: '8px',
+                    fontFamily: 'system-ui, -apple-system, sans-serif'
+                  }}>
+                    <span style={{
+                      color: '#d4af37',
+                      marginRight: '12px',
+                      fontSize: '16px',
+                      lineHeight: '1.4',
+                      minWidth: '12px',
+                      fontWeight: '600'
+                    }}>•</span>
+                    <a 
+                      href={`/browse/${encodeURIComponent(collection.name.toLowerCase().replace(/\s+/g, '-'))}`}
+                      style={{
+                        fontSize: '14px',
+                        color: '#374151',
+                        textDecoration: 'none',
+                        borderBottom: '1px solid #d4af37',
+                        lineHeight: '1.4',
+                        fontFamily: 'inherit'
+                      }}
+                    >
+                      {collection.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           {/* Movie Creative Footer */}
           <ErrorBoundary level="section">

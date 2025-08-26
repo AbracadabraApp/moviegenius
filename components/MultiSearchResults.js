@@ -1,7 +1,7 @@
 // components/MultiSearchResults.js - Display categorized search results
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
-import MediaCard from './MediaCard';
+import SearchResultCard from './SearchResultCard';
 import Image from 'next/image';
 
 export default function MultiSearchResults({ results, query }) {
@@ -52,11 +52,14 @@ export default function MultiSearchResults({ results, query }) {
         <div style={styles.movieGrid}>
           {results.movies.map(movie => (
             <div key={movie.id} style={styles.movieCard}>
-              <MediaCard
+              <SearchResultCard
                 title={movie.title}
                 year={movie.year}
+                contributors={movie.contributors}
+                overview={movie.contributors ? null : movie.overview}
                 initialPoster={movie.poster_url}
                 tmdbId={movie.tmdb_id}
+                onMovieClick={({ tmdb_id }) => router.push(`/movie/${tmdb_id}`)}
               />
             </div>
           ))}

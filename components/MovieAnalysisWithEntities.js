@@ -24,7 +24,7 @@ export default function MovieAnalysisWithEntities({
   className = '',
   animationDelay = 0,
 }) {
-  console.log('🔄 UPDATED MovieAnalysisWithEntities component loaded - no loading states!');
+  console.log('🔄 MovieAnalysisWithEntities called with movie:', movie?.title, 'tmdbId:', movie?.tmdb_id);
   const [processedAnalysis, setProcessedAnalysis] = useState(null);
   const [entityStats, setEntityStats] = useState(null);
   const performanceMonitor = getPerformanceMonitor();
@@ -585,16 +585,6 @@ export default function MovieAnalysisWithEntities({
       );
     }
     
-    // Browse Collections section temporarily disabled - component not integrated
-    // if (browseCollections && browseCollections.lists && browseCollections.lists.length > 0) {
-    //   content.push(
-    //     <BrowseCollectionsSection 
-    //       key="browse-collections"
-    //       collections={browseCollections.lists}
-    //       totalCollections={browseCollections.totalLists}
-    //     />
-    //   );
-    // }
     
     // Add MORE IDEAS section - filter out self-referential movies
     if (moreIdeasMovies.length > 0) {
@@ -966,8 +956,8 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
 
   // Create alternating pattern: Text → Featured Films → Text → Explore Further → Repeat
   textSections.forEach((section, textIndex) => {
-    // Add section header - support both new dynamic subheads and legacy types (skip first section per user request)
-    if ((section.subhead || section.type) && section.type !== 'text' && textIndex !== 0) {
+    // Add section header - support both new dynamic subheads and legacy types
+    if ((section.subhead || section.type) && section.type !== 'text') {
       // Use dynamic subhead if available, otherwise fall back to formatted type
       const subheadText = section.subhead || formatSubheadFromType(section.type);
       
