@@ -47,6 +47,11 @@ if (args.includes('--no-skip')) CONFIG.skipExisting = false;
 if (args.includes('--more-ideas')) CONFIG.generateMoreIdeas = true;
 if (args.includes('--batch')) CONFIG.batchSize = parseInt(args.find(a => a.startsWith('--batch=')).split('=')[1]);
 
+// Add specific movie support
+CONFIG.specificMovie = null;
+const movieArg = args.find(a => a.startsWith('--movie='));
+if (movieArg) CONFIG.specificMovie = parseInt(movieArg.split('=')[1]);
+
 /**
  * Get movies that need enhanced static files
  */
@@ -68,7 +73,9 @@ async function getMoviesToProcess() {
         AND ma.claude_response->>'raw_content' IS NOT NULL
     `;
     
-    if (CONFIG.maxMovies) {
+    if (CONFIG.specificMovie) {
+      query += ` AND m.tmdb_id = ${CONFIG.specificMovie}`;
+    } else if (CONFIG.maxMovies) {
       query += ` LIMIT ${CONFIG.maxMovies}`;
     }
     
@@ -83,6 +90,39 @@ async function getMoviesToProcess() {
   } finally {
     client.release();
   }
+}
+
+/**
+ * Load Why Watch data from enhanced_why_watch table
+ */
+async function loadWhyWatchData(movieId, tmdbId) {
+  const client = await pool.connect();
+  
+  try {
+    const result = await client.query(`
+      SELECT recommendation, reasons
+      FROM enhanced_why_watch 
+      WHERE movie_id = $1 OR tmdb_id = $2
+      ORDER BY created_at DESC
+      LIMIT 1
+    `, [movieId, tmdbId]);
+    
+    if (result.rows.length > 0) {
+      const row = result.rows[0];
+      return {
+        recommendation: row.recommendation || 'NO',
+        reasons: Array.isArray(row.reasons) ? row.reasons : []
+      };
+    }
+  } catch (error) {
+    if (CONFIG.verbose) {
+      console.log(`    ⚠️  No Why Watch data for ${tmdbId}: ${error.message}`);
+    }
+  } finally {
+    client.release();
+  }
+  
+  return { recommendation: 'NO', reasons: [] };
 }
 
 /**
@@ -127,10 +167,13 @@ async function generateEnhancedMovieFile(movie) {
     // 1. Parse Analysis (base data)
     const analysis = JSON.parse(movie.claude_response.raw_content);
     
-    // 2. Load Browse Collections
+    // 2. Load Why Watch Data
+    const whyWatchData = await loadWhyWatchData(movie.id, movie.tmdb_id);
+    
+    // 3. Load Browse Collections
     const browseCollections = await loadBrowseCollections(movie.tmdb_id);
     
-    // 3. Get Contributors
+    // 4. Get Contributors
     let contributors = null;
     try {
       contributors = await getMovieContributors(movie.id, movie.tmdb_id);
@@ -146,6 +189,7 @@ async function generateEnhancedMovieFile(movie) {
     
     // 5. Compose Enhanced Static File
     const enhancedData = {
+      enhancedFormat: true,
       // Core movie data
       movieId: movie.id,
       tmdbId: movie.tmdb_id,
@@ -155,8 +199,8 @@ async function generateEnhancedMovieFile(movie) {
       // Analysis data (main content)
       analysis: {
         keyElements: analysis.keyElements || {},
-        sections: analysis.sections || [],
-        whyWatch: analysis.whyWatch || { recommendation: 'NO', reasons: [] },
+        sections: analysis.content || [],
+        whyWatch: whyWatchData,
         featuredMovies: analysis.featuredMovies || [],
         exploreTopics: analysis.exploreTopics || []
       },

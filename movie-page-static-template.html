@@ -292,9 +292,9 @@
             <div class="movie-info">
                 <div class="poster"></div>
                 <div class="movie-details">
-                    <h1>The L Word Mississippi: Hate the Sin</h1>
+                    <h1>{{MOVIE_TITLE}}</h1>
                     <div class="movie-meta">
-                        <span>2014</span>
+                        <span>{{MOVIE_YEAR}}</span>
                         <span>•</span>
                         <span>Documentary</span>
                         <span>•</span>
@@ -312,20 +312,14 @@
         <!-- Analysis Section -->
         <div class="analysis-section">
             <h2>Analysis</h2>
-            
-            <div class="analysis-paragraph">
-                This groundbreaking documentary offers an unflinching examination of LGBTQ+ life in one of America's most conservative states. Director takes viewers deep into Mississippi's complex social fabric, where religious tradition and personal identity often collide.
-            </div>
+            {{ANALYSIS_SECTIONS}}
+        </div>
 
-            <div class="subhead">Cultural Context and Religious Tensions</div>
-            <div class="analysis-paragraph">
-                The film expertly navigates the challenging terrain between deeply held religious beliefs and individual sexual identity. Through intimate interviews with local residents, it reveals how faith communities grapple with inclusion and acceptance while maintaining traditional values.
-            </div>
+        <!-- Why Watch Section -->
+        {{WHY_WATCH}}
 
-            <div class="subhead">Personal Stories and Community Impact</div>
-            <div class="analysis-paragraph">
-                What makes this documentary particularly powerful is its focus on personal narratives rather than political rhetoric. Each subject brings a unique perspective to the broader conversation about LGBTQ+ rights in the South, creating a nuanced portrait that avoids easy categorization.
-            </div>
+        <!-- Browse Collections Section -->
+        {{BROWSE_COLLECTIONS}}
 
             <!-- MediaCards Section -->
             <div class="media-cards">
